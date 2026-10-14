@@ -1,0 +1,708 @@
+{
+ "meta": {
+  "doc_key": "OPS-SOP-01",
+  "number": "SNX-OPS-SOP-01",
+  "department": "Operation",
+  "title": "Project Management & Delivery",
+  "process_owner": "Service Delivery Manager",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini menetapkan cara SINUX merencanakan, melaksanakan, mengendalikan, dan menutup proyek implementasi dan migrasi pelanggan, sehingga hasilnya sesuai scope, jadwal, mutu, dan persyaratan keamanan informasi yang disepakati."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk seluruh proyek yang dijalankan Divisi Operation: onboarding layanan Nusagrid, migrasi ke cloud, implementasi managed services, backup dan DR, observability, security, serta proyek gabungan bersama partner.",
+  "SOP ini berlaku sejak paket G1 diterima dari Commercial (gate G1) sampai proyek ditutup dan layanan diserahkan ke NOC dan SOC (gate G3).",
+  "Di luar scope SOP ini: pekerjaan app-level pelanggan (Bagian 6.3 butir 4), keputusan harga dan komersial yang diputus Commercial (Bagian 6.4 butir 7), tahap sebelum gate G1, dan layanan yang sudah BAU sesudah gate G3."
+ ],
+ "definitions": [
+  [
+   "App-level pelanggan",
+   "Isi aplikasi, plugin, database aplikasi, dan kode milik pelanggan."
+  ],
+  [
+   "Baseline",
+   "Scope, jadwal, dan biaya yang disetujui pada awal proyek, dipakai sebagai pembanding."
+  ],
+  [
+   "BAST",
+   "Berita Acara Serah Terima, bukti penerimaan hasil implementasi oleh pelanggan."
+  ],
+  [
+   "BAU",
+   "Business as usual, layanan berjalan rutin di bawah NOC dan SOC."
+  ],
+  [
+   "Change request",
+   "Permintaan untuk mengubah scope, jadwal, atau biaya proyek (change request proyek), atau untuk mengerjakan sesuatu di environment production pelanggan; diproses menurut SNX-OPS-SOP-02."
+  ],
+  [
+   "Commercial",
+   "Unit Commercial SINUX. Di tabel peran, VP Commercial bertindak atas nama unit ini."
+  ],
+  [
+   "Direktur (COO)",
+   "Jabatan Direktur SINUX yang disebut COO di dokumen Operation. Selanjutnya ditulis COO."
+  ],
+  [
+   "DR",
+   "Disaster recovery."
+  ],
+  [
+   "Drive proyek",
+   "Tempat penyimpanan dokumen satu proyek di Google Drive."
+  ],
+  [
+   "Gate G1",
+   "Titik serah terima paket G1 dari Commercial ke SD dan PM."
+  ],
+  [
+   "Gate G2",
+   "Titik penerimaan implementasi oleh pelanggan, dibuktikan dengan BAST."
+  ],
+  [
+   "Gate G3",
+   "Titik serah terima layanan dari SD dan PM ke NOC dan SOC."
+  ],
+  [
+   "Go-gate",
+   "Lima syarat sebelum pekerjaan di environment production pelanggan dijalankan: approval, backup, rollback satu perintah, satu langkah satu waktu, dan dokumentasi."
+  ],
+  [
+   "Go-live",
+   "Saat layanan proyek mulai dipakai pelanggan di production."
+  ],
+  [
+   "Hypercare",
+   "Masa pemantauan ketat setelah go-live sebelum layanan dinyatakan BAU."
+  ],
+  [
+   "Jumphost",
+   "Jalur masuk SINUX ke sistem pelanggan."
+  ],
+  [
+   "Main contractor",
+   "Kontraktor utama pada proyek pelanggan pemerintah; SINUX bekerja sebagai subkontraktor."
+  ],
+  [
+   "NOC, SOC, SD dan PM",
+   "Network Operations Center, Security Operations Center, serta Service Delivery dan Project Management: tiga sub divisi Divisi Operation menurut Kebijakan Divisi Operation SINUX (POL-OPS-001). Nama jabatan di dalamnya berstatus (USULAN) sampai POL-OPS-001 disahkan."
+  ],
+  [
+   "Paket G1",
+   "Paket handover dari Commercial yang diperiksa dengan checklist G1 di SNX-OPS-FRM-01."
+  ],
+  [
+   "Password manager",
+   "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+  ],
+  [
+   "PIC",
+   "Person in charge, penanggung jawab dari sisi SINUX atau pelanggan."
+  ],
+  [
+   "PO",
+   "Purchase order dari pelanggan."
+  ],
+  [
+   "Project charter",
+   "Ringkasan proyek yang memuat tujuan, scope, out-of-scope, stakeholder, asumsi, kendala, dan kriteria penerimaan."
+  ],
+  [
+   "UAT",
+   "User acceptance test, uji penerimaan bersama pelanggan."
+  ],
+  [
+   "WBS",
+   "Work Breakdown Structure, pemecahan pekerjaan menjadi paket tugas yang terukur."
+  ],
+  [
+   "Zammad",
+   "Sistem tiket untuk Ops."
+  ]
+ ],
+ "policy": [
+  "4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya sesudah Service Delivery Manager menerima paket G1 dari Commercial, dengan checklist G1 di SNX-OPS-FRM-01 tanpa butir berstatus Belum.",
+  "4.2 Baseline (ISO 9001:2015 8.1): eksekusi tidak dimulai sebelum Service Delivery Manager menyetujui baseline rencana.",
+  "4.3 Pekerjaan production (ISO 9001:2015 8.5.1; Annex A 5.37): pekerjaan pada environment production pelanggan dijalankan melalui change request sesuai SNX-OPS-SOP-02 dan baru dimulai sesudah go-gate terpenuhi.",
+  "4.4 Akses dan kredensial (Annex A 5.8): akses ke sistem pelanggan hanya melalui Jumphost dan akun yang terdaftar di SNX-ISMS-REG-04. Kredensial disimpan di password manager, tidak di chat, tiket, atau dokumen.",
+  "4.5 Keamanan informasi proyek (Annex A 5.8): persyaratan keamanan informasi ditentukan sebelum eksekusi dan risiko keamanan informasi dicatat sejak inisiasi (Bagian 6.1 dan 6.2).",
+  "4.6 Perubahan (ISO 9001:2015 8.2): perubahan scope, jadwal, atau biaya hanya melalui change request proyek (SNX-OPS-SOP-02). Perubahan harga diputus Commercial.",
+  "4.7 Penerimaan dan pelepasan (ISO 9001:2015 8.6): BAST diterbitkan hanya sesudah UAT lolos, dan layanan diserahkan ke NOC dan SOC hanya sesudah checklist G3 lengkap. Checklist G3 yang belum lengkap ditangani sesuai Bagian 9.",
+  "4.8 Prosedur terdokumentasi (Annex A 5.37): langkah, pemilik, dan rekaman proyek ditetapkan di SOP ini dan di SNX-OPS-FRM-01 sampai SNX-OPS-FRM-06."
+ ],
+ "roles": [
+  [
+   "Service Delivery Manager",
+   "Pemilik SOP; mengawal hubungan pelanggan; menerima atau menolak paket G1; menyetujui baseline rencana dan closure report.",
+   "Pemilik gate G1. Memutuskan paket G1 diterima atau ditolak, menyetujui baseline rencana, dan menyetujui closure report."
+  ],
+  [
+   "Project Manager",
+   "Memeriksa paket G1; menyusun dan menjalankan rencana proyek; mengelola risiko, isu, dan laporan progres; menyusun BAST, checklist G3, dan closure report.",
+   "Pemilik gate G2."
+  ],
+  [
+   "NOC Engineer",
+   "Melaksanakan provisioning dan konfigurasi melalui change request; mencatat aset baru.",
+   "Menjalankan perubahan di environment production pelanggan hanya sesudah go-gate terpenuhi."
+  ],
+  [
+   "SOC Analyst",
+   "Melaksanakan provisioning dan konfigurasi bagian SOC melalui change request, bila proyek menyangkut SOC.",
+   "Menjalankan perubahan di environment production pelanggan hanya sesudah go-gate terpenuhi."
+  ],
+  [
+   "Lead NOC",
+   "Memeriksa checklist G3 bersama Head of Operation; menerima layanan di gate G3 untuk NOC.",
+   "Menerima layanan di gate G3 untuk NOC."
+  ],
+  [
+   "Lead SOC",
+   "Memeriksa checklist G3 bersama Head of Operation; menerima layanan di gate G3 untuk SOC, bila proyek menyangkut SOC.",
+   "Menerima layanan di gate G3 untuk SOC."
+  ],
+  [
+   "Manager of Product Tech",
+   "Memberi masukan desain, sizing, dan arsitektur.",
+   "Reviewer teknis."
+  ],
+  [
+   "VP Commercial",
+   "Menyerahkan paket G1 atas nama Commercial.",
+   "Memutus perubahan harga dan scope komersial."
+  ],
+  [
+   "Head of Operation",
+   "Memeriksa checklist G3 bersama Lead NOC dan Lead SOC; menerima eskalasi isu lintas sub divisi dan risiko berstatus Tinggi atau Kritis.",
+   "Pemilik gate G3. Menolak serah terima G3 secara tertulis bila checklist G3 belum lengkap."
+  ],
+  [
+   "COO",
+   "Menerima laporan progres mingguan dan eskalasi deviasi jadwal atau isu biaya.",
+   "Memutus deviasi biaya, scope besar, dan change Major (SNX-OPS-SOP-02)."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Inisiasi (gate G1)",
+   "steps": [
+    [
+     "Terima paket G1 dari Commercial dan periksa dengan checklist G1 di SNX-OPS-FRM-01 (sheet Checklist G1).",
+     "Project Manager",
+     "Checklist G1 terisi di SNX-OPS-FRM-01"
+    ],
+    [
+     "Terima atau tolak paket G1 berdasarkan checklist G1; paket yang ditolak mengikuti Bagian 9.",
+     "Service Delivery Manager",
+     "Keputusan gate G1 (LOLOS atau TAHAN) di SNX-OPS-FRM-01"
+    ],
+    [
+     "Susun project charter di SNX-OPS-FRM-01: tujuan, scope, out-of-scope, stakeholder, asumsi, kendala, dan kriteria penerimaan.",
+     "Project Manager",
+     "Project charter di SNX-OPS-FRM-01"
+    ],
+    [
+     "Identifikasi risiko awal, termasuk risiko keamanan informasi (data pelanggan, akses, migrasi), di SNX-OPS-FRM-02.",
+     "Project Manager",
+     "Risiko awal di SNX-OPS-FRM-02"
+    ],
+    [
+     "Selenggarakan kick-off internal paling lambat 3 hari kerja setelah PO (USULAN), dengan SD dan PM, NOC, SOC bila relevan, dan Manager of Product Tech.",
+     "Project Manager",
+     "Kick-off internal terlaksana"
+    ]
+   ]
+  },
+  {
+   "title": "Perencanaan",
+   "steps": [
+    [
+     "Susun WBS dan jadwal di SNX-OPS-FRM-01 (sheet WBS dan Timeline), lengkap dengan pemilik, tanggal, dan ketergantungan.",
+     "Project Manager",
+     "WBS dan jadwal di SNX-OPS-FRM-01"
+    ],
+    [
+     "Tetapkan milestone dan kriteria uji untuk tiap deliverable; kriteria ini menjadi dasar SNX-OPS-FRM-05.",
+     "Project Manager",
+     "Milestone di SNX-OPS-FRM-01 dan kriteria uji untuk SNX-OPS-FRM-05"
+    ],
+    [
+     "Susun rencana komunikasi: kanal resmi (email dan grup WhatsApp proyek), frekuensi laporan, dan matriks eskalasi pelanggan.",
+     "Project Manager",
+     "Rencana komunikasi proyek"
+    ],
+    [
+     "Untuk migrasi, siapkan rencana rollback dan window waktu yang disetujui pelanggan.",
+     "Project Manager",
+     "Rencana rollback dan window waktu migrasi"
+    ],
+    [
+     "Tentukan persyaratan keamanan informasi proyek: klasifikasi data (SNX-ISMS-PRO-01), kebutuhan akses (SNX-ISMS-SOP-02), dan backup sebelum migrasi (SNX-ISMS-SOP-03).",
+     "Project Manager",
+     "Persyaratan keamanan informasi proyek"
+    ],
+    [
+     "Selenggarakan kick-off pelanggan untuk mengonfirmasi scope, jadwal, PIC, kanal, dan kriteria penerimaan.",
+     "Project Manager",
+     "Kick-off pelanggan terlaksana"
+    ],
+    [
+     "Simpan notulen kick-off pelanggan bersama SNX-OPS-FRM-01.",
+     "Project Manager",
+     "Notulen kick-off pelanggan di Drive proyek"
+    ],
+    [
+     "Setujui baseline rencana sebelum eksekusi.",
+     "Service Delivery Manager",
+     "Baseline rencana disetujui"
+    ]
+   ]
+  },
+  {
+   "title": "Eksekusi",
+   "steps": [
+    [
+     "Jalankan pekerjaan pada environment production pelanggan melalui change request sesuai SNX-OPS-SOP-02, dengan go-gate terpenuhi (butir 4.3).",
+     "NOC Engineer, SOC Analyst",
+     "Change request di SNX-OPS-FRM-04"
+    ],
+    [
+     "Akses sistem pelanggan hanya sesuai butir 4.4.",
+     "NOC Engineer, SOC Analyst",
+     "Akun yang dipakai terdaftar di SNX-ISMS-REG-04"
+    ],
+    [
+     "Catat aset dan konfigurasi baru di SNX-ISMS-REG-01 saat dibuat.",
+     "NOC Engineer, SOC Analyst",
+     "Baris aset baru di SNX-ISMS-REG-01"
+    ],
+    [
+     "Serahkan pekerjaan app-level pelanggan ke developer atau PIC pelanggan.",
+     "NOC Engineer, SOC Analyst",
+     "Pekerjaan app-level diserahkan ke developer atau PIC pelanggan"
+    ]
+   ]
+  },
+  {
+   "title": "Pemantauan dan pengendalian",
+   "steps": [
+    [
+     "Perbarui progres dan status tugas di SNX-OPS-FRM-01 minimal mingguan.",
+     "Project Manager",
+     "SNX-OPS-FRM-01 diperbarui"
+    ],
+    [
+     "Susun laporan progres mingguan dengan SNX-OPS-FRM-03.",
+     "Project Manager",
+     "Laporan progres di SNX-OPS-FRM-03"
+    ],
+    [
+     "Kirim laporan progres ke pelanggan dan COO.",
+     "Project Manager",
+     "Laporan progres terkirim ke pelanggan dan COO"
+    ],
+    [
+     "Tinjau risiko dan isu mingguan di SNX-OPS-FRM-02.",
+     "Project Manager",
+     "Risiko dan isu mutakhir di SNX-OPS-FRM-02"
+    ],
+    [
+     "Laporkan risiko berstatus Tinggi atau Kritis ke Head of Operation.",
+     "Project Manager",
+     "Laporan risiko ke Head of Operation"
+    ],
+    [
+     "Ajukan perubahan scope, jadwal, atau biaya sebagai change request proyek (SNX-OPS-SOP-02).",
+     "Project Manager",
+     "Change request proyek di SNX-OPS-FRM-04"
+    ],
+    [
+     "Putuskan perubahan harga dan scope komersial.",
+     "VP Commercial",
+     "Keputusan perubahan harga dan scope komersial"
+    ],
+    [
+     "Eskalasikan ke COO deviasi jadwal lebih dari 1 minggu dari baseline (USULAN) dan isu yang menyentuh biaya.",
+     "Project Manager",
+     "Eskalasi ke COO"
+    ],
+    [
+     "Putuskan tindak lanjut atas deviasi biaya, scope besar, atau change Major yang dieskalasi.",
+     "COO",
+     "Keputusan COO"
+    ]
+   ]
+  },
+  {
+   "title": "Verifikasi dan penerimaan (gate G2)",
+   "steps": [
+    [
+     "Jalankan uji fungsional, kinerja, dan keamanan sesuai kriteria di SNX-OPS-FRM-05.",
+     "Project Manager",
+     "Hasil uji di SNX-OPS-FRM-05"
+    ],
+    [
+     "Catat temuan uji sebagai defect.",
+     "Project Manager",
+     "Defect tercatat di SNX-OPS-FRM-05"
+    ],
+    [
+     "Perbaiki defect yang tercatat.",
+     "NOC Engineer, SOC Analyst",
+     "Defect diperbaiki"
+    ],
+    [
+     "Uji ulang defect yang sudah diperbaiki.",
+     "Project Manager",
+     "Hasil uji ulang di SNX-OPS-FRM-05"
+    ],
+    [
+     "Laksanakan UAT bersama pelanggan.",
+     "Project Manager",
+     "Hasil UAT di SNX-OPS-FRM-05"
+    ],
+    [
+     "Tanda tangani hasil UAT di SNX-OPS-FRM-05 sesuai blok tanda tangan form.",
+     "Project Manager, Service Delivery Manager",
+     "UAT ditandatangani di SNX-OPS-FRM-05"
+    ],
+    [
+     "Terbitkan BAST implementasi di SNX-OPS-FRM-06 setelah UAT lolos; untuk pelanggan pemerintah melalui main contractor, ikuti Bagian 9.",
+     "Project Manager",
+     "BAST di SNX-OPS-FRM-06"
+    ]
+   ]
+  },
+  {
+   "title": "Serah terima ke operasi (gate G3) dan penutupan",
+   "steps": [
+    [
+     "Lengkapi checklist G3 di SNX-OPS-FRM-06.",
+     "Project Manager",
+     "Checklist G3 di SNX-OPS-FRM-06"
+    ],
+    [
+     "Periksa checklist G3 bersama Lead NOC dan Lead SOC.",
+     "Head of Operation",
+     "Hasil pemeriksaan checklist G3 di SNX-OPS-FRM-06"
+    ],
+    [
+     "Jalankan hypercare 2 minggu setelah go-live (USULAN), kecuali kontrak menetapkan lain.",
+     "Service Delivery Manager, Project Manager",
+     "Layanan dipantau ketat selama hypercare"
+    ],
+    [
+     "Susun closure report di SNX-OPS-FRM-06: pencapaian terhadap baseline, isu sisa, dan lessons learned.",
+     "Project Manager",
+     "Closure report di SNX-OPS-FRM-06"
+    ],
+    [
+     "Setujui closure report.",
+     "Service Delivery Manager",
+     "Closure report disetujui di SNX-OPS-FRM-06"
+    ],
+    [
+     "Masukkan lessons learned proyek ke knowledge base SINUX.",
+     "Project Manager",
+     "Lessons learned di knowledge base SINUX"
+    ],
+    [
+     "Arsipkan dokumen proyek di Drive proyek sesuai masa simpan di Bagian 11.",
+     "Project Manager",
+     "Dokumen proyek terarsip di Drive proyek"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Terima paket G1\ndari Commercial",
+   "b": "Paket G1 diterima\nService Delivery Manager?",
+   "c": "Paket kembali ke Commercial,\ntertulis (Bagian 9)",
+   "d": "Project charter, risiko awal,\nkick-off internal\n(SNX-OPS-FRM-01, SNX-OPS-FRM-02)",
+   "e": "Rencana, kick-off pelanggan,\nbaseline disetujui\nService Delivery Manager",
+   "f": "Eksekusi melalui change request\nSNX-OPS-SOP-02, akses lewat Jumphost",
+   "g": "Change request proyek\nSNX-OPS-SOP-02",
+   "h": "Pantau dan lapor mingguan\nSNX-OPS-FRM-03, SNX-OPS-FRM-02",
+   "i": "UAT lolos?",
+   "j": "Catat defect, perbaiki,\nuji ulang di SNX-OPS-FRM-05",
+   "k": "BAST diterbitkan (gate G2)\nSNX-OPS-FRM-06",
+   "l": "Checklist G3\nlengkap?",
+   "m": "Layanan tetap hypercare,\npemilik Service Delivery Manager\ndan Project Manager",
+   "n": "Hypercare 2 minggu (USULAN),\nclosure report, lessons learned\nke knowledge base"
+  },
+  "shapes": {
+   "b": "diamond",
+   "i": "diamond",
+   "l": "diamond",
+   "c": "ellipse",
+   "n": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c",
+    "Tidak"
+   ],
+   [
+    "b",
+    "d",
+    "Ya"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "e",
+    "f"
+   ],
+   [
+    "f",
+    "g",
+    "Scope berubah"
+   ],
+   [
+    "g",
+    "h",
+    "",
+    "dashed"
+   ],
+   [
+    "f",
+    "h"
+   ],
+   [
+    "h",
+    "i"
+   ],
+   [
+    "i",
+    "j",
+    "Tidak"
+   ],
+   [
+    "j",
+    "i",
+    "Uji ulang"
+   ],
+   [
+    "i",
+    "k",
+    "Ya"
+   ],
+   [
+    "k",
+    "l"
+   ],
+   [
+    "l",
+    "m",
+    "Tidak"
+   ],
+   [
+    "m",
+    "l",
+    "Setelah dilengkapi"
+   ],
+   [
+    "l",
+    "n",
+    "Ya"
+   ]
+  ],
+  "caption": "Gambar 1. Alur proyek dari gate G1 sampai gate G3 dan closure."
+ },
+ "sla": [
+  [
+   "Kick-off internal",
+   "Project Manager",
+   "Paling lambat 3 hari kerja setelah PO (USULAN)"
+  ],
+  [
+   "Pembaruan progres dan status tugas di SNX-OPS-FRM-01",
+   "Project Manager",
+   "Minimal mingguan"
+  ],
+  [
+   "Laporan progres ke pelanggan dan COO",
+   "Project Manager",
+   "Mingguan"
+  ],
+  [
+   "Tinjauan risiko dan isu di SNX-OPS-FRM-02",
+   "Project Manager",
+   "Mingguan"
+  ],
+  [
+   "Eskalasi ke COO",
+   "Project Manager",
+   "Bila deviasi jadwal lebih dari 1 minggu dari baseline (USULAN) atau ada isu yang menyentuh biaya"
+  ],
+  [
+   "Hypercare",
+   "Service Delivery Manager, Project Manager",
+   "2 minggu setelah go-live, kecuali kontrak menetapkan lain (USULAN)"
+  ],
+  [
+   "Proyek selesai sesuai jadwal baseline",
+   "Project Manager",
+   "Target awal 80% (USULAN); sumber data SNX-OPS-FRM-01"
+  ],
+  [
+   "Onboarding live sesuai tanggal kontrak",
+   "Project Manager",
+   "Target awal 90% (USULAN); sumber data SNX-OPS-FRM-01"
+  ],
+  [
+   "Laporan progres terkirim tepat waktu",
+   "Project Manager",
+   "Target awal 100%; sumber data SNX-OPS-FRM-03"
+  ],
+  [
+   "Proyek ditutup dengan BAST dan closure report lengkap",
+   "Project Manager",
+   "Target awal 100%; sumber data SNX-OPS-FRM-06"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Paket G1 ditolak",
+   "Service Delivery Manager mengembalikan paket ke Commercial secara tertulis, dan proyek belum dimulai (butir 4.1)."
+  ],
+  [
+   "Checklist G3 belum lengkap",
+   "Head of Operation menolak serah terima secara tertulis. Layanan tetap hypercare dengan pemilik Service Delivery Manager dan Project Manager sampai checklist G3 lengkap (butir 4.7)."
+  ],
+  [
+   "Kontrak menetapkan durasi hypercare selain 2 minggu",
+   "Service Delivery Manager dan Project Manager memakai durasi di kontrak."
+  ],
+  [
+   "Pelanggan pemerintah melalui main contractor",
+   "Project Manager membuat BAST atas nama SINUX dan menyimpan versi original di Drive proyek. Periode ditetapkan main contractor. Project Manager membuat dokumen teknis tanpa harga, diskon, tier, atau roadmap komersial."
+  ]
+ ],
+ "conclusion": [
+  "Service Delivery Manager memantau kepatuhan terhadap SOP ini lewat empat indikator di Bagian 8 dan melakukan kalibrasi target sesudah 3 bulan data.",
+  "Service Delivery Manager sebagai pemilik SOP meninjau dokumen ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "SNX-OPS-FRM-01",
+   "Project Plan, Scope & Timeline Records; checklist G1, project charter, WBS dan timeline, milestone."
+  ],
+  [
+   "SNX-OPS-FRM-02",
+   "Project Risk Register; risiko awal dan risiko proyek."
+  ],
+  [
+   "SNX-OPS-FRM-03",
+   "Project Progress & Monitoring Report; laporan progres mingguan."
+  ],
+  [
+   "SNX-OPS-FRM-04",
+   "Change Request & Approval Log; log change request."
+  ],
+  [
+   "SNX-OPS-FRM-05",
+   "Testing / UAT & Quality Verification Records; kriteria uji, defect, dan UAT."
+  ],
+  [
+   "SNX-OPS-FRM-06",
+   "Project Handover / BAST & Closure Report; BAST, checklist G3, dan closure report."
+  ],
+  [
+   "SNX-OPS-SOP-02",
+   "SOP Project Change Management; change request proyek dan pekerjaan di production pelanggan."
+  ],
+  [
+   "SNX-OPS-PRC-01",
+   "Operations Business Process Flow; peta proses bisnis Divisi Operation, termasuk gate G1, G2, dan G3."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling; klasifikasi data proyek."
+  ],
+  [
+   "SNX-ISMS-SOP-02",
+   "User Access Control & Authorization; kebutuhan akses proyek."
+  ],
+  [
+   "SNX-ISMS-SOP-03",
+   "Backup & Recovery; backup sebelum migrasi."
+  ],
+  [
+   "SNX-ISMS-REG-01",
+   "Information Asset Register; pencatatan aset dan konfigurasi baru."
+  ],
+  [
+   "SNX-ISMS-REG-04",
+   "User Access Register & Periodic Access Review; akun yang dipakai untuk akses sistem pelanggan."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; jabatan dan garis lapor untuk peran di Bagian 5."
+  ],
+  [
+   "POL-OPS-001",
+   "Kebijakan Divisi Operation SINUX (DRAFT v0.1, penomoran masih USULAN); sub divisi Divisi Operation dan kebijakan gate G1, G2, G3."
+  ],
+  [
+   "PRO-OPS-001",
+   "Prosedur Operasional Divisi Operation SINUX (DRAFT v0.1, penomoran masih USULAN); SDPM-01 Onboarding pelanggan baru, SDPM-02 Siklus proyek, SVC-01 checklist gate."
+  ]
+ ],
+ "records": [
+  [
+   "Project plan, scope, timeline, checklist G1, dan notulen kick-off pelanggan (SNX-OPS-FRM-01)",
+   "Drive proyek; pemilik Project Manager",
+   "Durasi kontrak + 3 tahun"
+  ],
+  [
+   "Project risk register (SNX-OPS-FRM-02)",
+   "Drive proyek; pemilik Project Manager",
+   "Durasi kontrak + 3 tahun"
+  ],
+  [
+   "Laporan progres (SNX-OPS-FRM-03)",
+   "Drive proyek dan email pelanggan; pemilik Project Manager",
+   "Durasi kontrak + 3 tahun"
+  ],
+  [
+   "Change request log (SNX-OPS-FRM-04)",
+   "Google Drive dan tiket change request di Zammad (USULAN); pemilik Head of Operation",
+   "3 tahun"
+  ],
+  [
+   "Record UAT dan verifikasi (SNX-OPS-FRM-05)",
+   "Drive proyek; pemilik Project Manager",
+   "Durasi kontrak + 3 tahun"
+  ],
+  [
+   "BAST, checklist G3, dan closure report (SNX-OPS-FRM-06)",
+   "Drive proyek (original bertanda tangan); pemilik Service Delivery Manager",
+   "Durasi kontrak + 5 tahun"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "8.1 (Operational planning and control), 8.2 (Requirements for products and services, termasuk 8.2.2 dan 8.2.3), 8.5.1 (Control of production and service provision), 8.6 (Release of products and services).",
+  "ISO/IEC 27001:2022": "Annex A 5.8 (Information security in project management), 5.37 (Documented operating procedures)."
+ }
+}

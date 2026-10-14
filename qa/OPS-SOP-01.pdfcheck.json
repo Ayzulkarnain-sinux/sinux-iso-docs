@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS",
+  "pages": 17,
+  "checks": {
+    "A": "ok: sampul baris tengah (STANDARD OPERATIONAL PROCEDURE / DEPARTMENT OPERATION / Project Management & Delivery), 'No : SNX-OPS-SOP-01' = Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat Sinux Office + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada; label berurutan sama dengan acuan (Company Name .. Review Period + baris kosong); nilai terisi; Effective Date kosong; Document Status Draft; Classification RESTRICTED (Internal); Process Owner Service Delivery Manager",
+    "C": "ok: Revision 00 'Draft awal untuk review dan pengesahan'; Approval 3 baris nama/jabatan terisi (Erik Dwi Yanto, Fani Fatullah, Samuel Kristanto Utomo); kolom Signature kosong",
+    "D": "ok: daftar isi 1-11 + 6.1-6.6 cocok persis dengan heading di badan dokumen",
+    "E": "ok: 11 heading bernomor berurutan PURPOSE..RELATED DOCUMENTS & ATTACHMENTS, sub 6.1-6.6, tiap bagian berisi; diagram bagian 7 (hal 13) terbaca pada 110 dpi, tidak terpotong, caption 'Gambar 1. Alur proyek dari gate G1 sampai gate G3 dan closure.' ada",
+    "F": "ok: header kolom tampil di semua tabel; sel isi terisi (kosong hanya baris isian Revision History, baris akhir Identity, kolom Signature, Effective Date seperti acuan); teks sel tidak terpotong; tidak ada pemecahan kata per huruf",
+    "H": "ok: label footer 'RESTRICTED (Internal)' di semua 17 halaman, konsisten dengan Classification RESTRICTED (Internal) sehingga label memang diharuskan; nomor halaman 1-17 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan (pdffonts); nol placeholder [..]; nol teks instruksi template; tidak ada halaman kosong",
+    "J": "ok: urutan halaman pembuka (sampul, Identity, Revision History+Approval, Daftar Isi) sama; gaya heading bernomor, gaya tabel (header bold, grid), posisi header logo/kontak dan footer klasifikasi+halaman+alamat sama dengan acuan"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "12 penanda '(USULAN)' tampil di teks (hal 6, 9, 10, 12, 13, 14, 16, 17): bukan placeholder template, wajar untuk status Draft, tetapi perlu diselesaikan sebelum pengesahan",
+    "Hal 16: header tabel 'Rekaman (records)' yatim di dasar halaman, isi tabel mulai hal 17",
+    "Tabel pecah antarhalaman tanpa ulang header (Definition hal 5-6, Roles hal 7-8, 6.1 hal 8-9, 6.2 hal 9-10, 6.4 hal 10-11, Exception hal 14-15), sama perilakunya dengan acuan",
+    "Diagram bagian 7 berupa flowchart vertikal tanpa swimlane (acuan memakai swimlane per peran); font node kecil (sekitar 6-7 pt cetak) namun terbaca pada 110 dpi",
+    "Hal 12: sekitar setengah halaman kosong karena bagian 7 (diagram tinggi) dipindah ke hal 13",
+    "Kolom Authority tabel Roles (hal 7-8) rata kiri-kanan sehingga spasi antarkata lebar; kolom Kode/Dokumen hal 16 memotong kode di tanda hubung (SNX-ISMS-PRO-/01), sama gaya dengan acuan",
+    "Label 'Dokument Approval' (ejaan campuran) mengikuti acuan apa adanya"
+  ]
+}

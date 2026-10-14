@@ -1,0 +1,73 @@
+{
+ "key": "OPS-SOP-01",
+ "document": "out/07_Ops/SNX-OPS-SOP-01 Project Management & Delivery (Rev00 DRAFT).docx",
+ "sources_checked": [
+  "1lv4ALJnqGG9s9cHnzz38yOTJC57pmPgo (SNX-OPS-SOP-01 sumber tim, read_file_content)",
+  "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv (POL-OPS-001, read_file_content)",
+  "1U8CAdibwBk9x_-Aic2lbev144d6WReTz (PRO-OPS-001, read_file_content)",
+  "config/checklist.json baris 63; config/defaults.json v21 data_conflicts; context/audit/iso-sinux-supdocs-ops-2026-10-14.md bagian SNX-OPS-SOP-01; notes/OPS-SOP-01.md; specs/HR-ORG-01.json; notes OPS-FRM-01 dan OPS-FRM-05; specs/OPS-FRM-06.json; out/07_Ops/OPS-SOP-01_flow.png.dot; qa/OPS-SOP-01.lint.json"
+ ],
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 6.2 butir 3, 5, 8 dan Bagian 6.1 butir 5 (kolom Output / Rekaman)",
+   "masalah": "Keluaran yang menjadi bukti audit Annex A 5.8 dan ISO 9001 8.1 tidak punya lokasi rekaman: 'Persyaratan keamanan informasi proyek', 'Rencana komunikasi proyek', 'Baseline rencana disetujui', 'Kick-off internal terlaksana'. Tabel Rekaman Bagian 11 juga tidak memuatnya. Penyusun sengaja tidak mengarang lokasi (notes asumsi 10).",
+   "bukti": "Sumber 6.2 butir 5 dan 6.2 butir 7 tidak menyebut lokasi simpan; FRM-01 punya sheet Project Charter yang bisa jadi wadah. Usul: tulis lokasi (mis. di SNX-OPS-FRM-01) berlabel USULAN atau jadikan open item untuk Fani."
+  },
+  {
+   "lokasi": "Bagian 6.3 butir 3 dan Bagian 6.5 butir 3 (PIC NOC Engineer, SOC Analyst)",
+   "masalah": "Pelaku pencatatan aset di SNX-ISMS-REG-01 dan perbaikan defect adalah tafsir penyusun; sumber SOP-01 pasif. PRO-OPS-001 SDPM-01 menaruh pendaftaran aset pada pelaksana Project Manager (di Service Hub).",
+   "bukti": "Sumber 6.3: 'Aset dan konfigurasi baru dicatat di SNX-ISMS-REG-01 saat dibuat.' PRO SDPM-01 (Pelaksana: Project Manager): 'Daftarkan pelanggan, aset, dan kontak di Service Hub'. Sudah tercatat di notes open item 10; tetap perlu ACC Fani."
+  },
+  {
+   "lokasi": "Bagian 6.6 butir 3, Bagian 8 baris Hypercare, Bagian 9 baris 2, diagram simpul 'Hypercare 2 minggu (USULAN)'",
+   "masalah": "Pemilik dan urutan hypercare berbeda antarsumber; dokumen mengikuti SOP-01 (SD dan PM, sesudah pemeriksaan G3). Tidak salah fakta, tetapi auditor bisa membaca 4.7 (serah terima sesudah G3 lengkap) dan 6.6 butir 3 (hypercare oleh SDM dan PM sesudah G3 lolos) sebagai dua status berbeda.",
+   "bukti": "PRO tabel 8.1 baris 10: 'Hypercare | Lead NOC | ... (USULAN 2 minggu)' sesudah baris 9 G3; POL bagian 8: 'Selama G3 belum lolos, layanan berstatus hypercare dengan pemilik SD dan PM.' Ditangani di notes open item 3 dan 4."
+  },
+  {
+   "lokasi": "Bagian 4 butir 4.5 dan 4.8",
+   "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui (Project Manager): 'persyaratan keamanan informasi ditentukan sebelum eksekusi dan risiko keamanan informasi dicatat sejak inisiasi'. Butir 4.8 bersifat merujuk diri ('langkah, pemilik, dan rekaman proyek ditetapkan di SOP ini') dan nyaris berlaku di perusahaan mana pun.",
+   "bukti": "RUNBOOK §6a butir 1 dan 3. Usul 4.5: 'Project Manager menetapkan persyaratan keamanan informasi sebelum eksekusi dan mencatat risiko keamanan informasi sejak inisiasi.'"
+  },
+  {
+   "lokasi": "Seluruh dokumen",
+   "masalah": "Sinonim berganti untuk satu hal: 'sesudah' dan 'setelah' dipakai bergantian (sekitar 8 kali masing-masing), mis. 4.1 'sesudah Service Delivery Manager menerima' lawan 6.5 butir 7 'setelah UAT lolos'.",
+   "bukti": "RUNBOOK §6a butir 6. Usul: pilih satu."
+  },
+  {
+   "lokasi": "Bagian 3 definisi 'Zammad' dan 'Password manager'",
+   "masalah": "Istilah 'Ops' dipakai tanpa definisi, sedangkan badan dokumen memakai 'Divisi Operation'.",
+   "bukti": "'Zammad | Sistem tiket untuk Ops.'; 'Status operasional: menunggu konfirmasi Ops.' (RUNBOOK §6a butir 7)."
+  },
+  {
+   "lokasi": "Bagian 6.6 butir 6 dan diagram simpul akhir",
+   "masalah": "'knowledge base SINUX' tidak didefinisikan dan tata cara memasukkan lessons learned tidak punya dokumen; frasa jalur internal di sumber sudah dibuang dengan benar (RUNBOOK §0 butir 6).",
+   "bukti": "Sumber 6.6 butir 5: 'Lessons learned disetor ke knowledge base SINUX melalui jalur staging'. Dokumen: 'Masukkan lessons learned proyek ke knowledge base SINUX.' Notes open item 5."
+  },
+  {
+   "lokasi": "Bagian 6.1 butir 5",
+   "masalah": "Daftar peserta kick-off mencampur nama sub divisi dan nama jabatan: 'dengan SD dan PM, NOC, SOC bila relevan, dan Manager of Product Tech'.",
+   "bukti": "RUNBOOK §6a butir 7 (nama peran sama dengan tabel Bagian 5). Pemetaan 'Tech dan Product' ke Manager of Product Tech didukung HR-ORG-01 JA-05 dan POL bagian 3; hanya konsistensi sebutan."
+  },
+  {
+   "lokasi": "Bagian 6 (beberapa langkah), Bagian 8 baris Hypercare",
+   "masalah": "Beberapa langkah memakai dua PIC sekaligus (NOC Engineer, SOC Analyst; Project Manager, Service Delivery Manager), menyimpang dari 'satu langkah satu pelaku' RUNBOOK §6a butir 2. Dapat diterima untuk tanda tangan UAT (blok tanda tangan FRM-05) dan pekerjaan NOC atau SOC yang bergantung jenis proyek.",
+   "bukti": "6.3 butir 1 sampai 4, 6.5 butir 3 dan 6, 6.6 butir 3."
+  },
+  {
+   "lokasi": "Cek (g) context/audit dan data_conflicts",
+   "masalah": "Tidak ada temuan. Sembilan cacat audit untuk fileId 1lv4ALJnqGG9s9cHnzz38yOTJC57pmPgo plus cacat POL dan PRO yang relevan ditangani atau dijelaskan di notes bagian 5. Sebutan pertama COO di badan = 'Direktur (COO)' (definisi Bagian 3), sesudahnya 'COO'; Direktur Utama tidak muncul di badan; blok approval persis defaults (Erik, Fani, Samuel Kristanto Utomo); klasifikasi RESTRICTED (Internal) ikut label sumber; vault berstatus 'menunggu konfirmasi Ops'; Service Hub diganti Zammad berlabel USULAN.",
+   "bukti": "Ekstrak teks docx baris 94 sampai 96, 104, 117, 218; notes/OPS-SOP-01.md bagian 4 dan 5; lint pass tanpa fails; tanpa em-dash atau en-dash; tanpa rujukan internal AI (pindai SKILL, DOCTRINE, DEC-, HANDOVER, staging, Claude, Altair, Service Hub, GLPI: nol)."
+  }
+ ],
+ "checks": {
+  "a_fakta_cocok_sumber": "Ya. Angka (3 hari kerja, 1 minggu, 2 minggu, 80%, 90%, 100%, 3 bulan, retensi) dari SOP-01; yang berlabel USULAN di POL atau PRO ikut berlabel USULAN. Peran dari SOP-01, POL bagian 8 dan 9, HR-ORG-01.",
+  "b_tanpa_fakta_karangan": "Ya. Tafsir pelaku dan pemetaan peran tercatat di notes asumsi dan open items; tanpa nama orang di badan.",
+  "c_kriteria_description": "Terpenuhi. Description = nama berkas SNX-OPS-SOP-01 (T1). Klausul ISO 9001:2015 8.1, 8.2, 8.5.1, 8.6 dan ISO/IEC 27001:2022 5.8, 5.37 tercantum di Bagian 11 dan tercermin di Bagian 4 dan prosedur.",
+  "d_runbook_0_6": "Patuh. Status Draft, tanggal efektif kosong, tanda tangan kosong, tiga penanda tangan berbeda, nol rujukan internal AI, nol residu konsultan.",
+  "e_konsistensi_peran": "Konsisten. Semua PIC Bagian 6 dan 8 ada di tabel Bagian 5.",
+  "f_bahasa_6a": "Tanpa pelanggaran jelas; temuan minor di nonblocking.",
+  "g_data_conflicts_audit": "Patuh."
+ }
+}

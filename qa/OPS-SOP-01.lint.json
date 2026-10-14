@@ -1,0 +1,9 @@
+{
+ "file": "out/07_Ops/SNX-OPS-SOP-01 Project Management & Delivery (Rev00 DRAFT).docx",
+ "mode": "sop",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "10 butir (USULAN) menunggu ACC"
+ ]
+}

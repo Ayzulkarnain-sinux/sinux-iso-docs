@@ -209,9 +209,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-PRC-01",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-PRC-01 Operations Business Process Flow (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "15GrP-ihMm6MC5szQqlAgGlmWjnQ5TmH0",
@@ -229,13 +229,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 5,
    "open_items": [],
-   "updated_at": "2026-10-14T21:59:46Z",
-   "pen_agent": "aec5c163a887d4bfe"
+   "updated_at": "2026-10-14T22:15:16Z",
+   "pen_agent": "aec5c163a887d4bfe",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 4,
@@ -245,9 +246,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-OPS-SOP-01",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-SOP-01 Project Management & Delivery (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1lv4ALJnqGG9s9cHnzz38yOTJC57pmPgo",
@@ -265,13 +266,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 10,
    "open_items": [],
-   "updated_at": "2026-10-14T21:59:46Z",
-   "pen_agent": "a8af874bc72855d0f"
+   "updated_at": "2026-10-14T22:18:15Z",
+   "pen_agent": "a8af874bc72855d0f",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 5,
@@ -281,9 +283,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-SOP-02",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-SOP-02 Project Change Management (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "15FTuu06HTHoF-Vi0qzqvwmfQH5tEdT63",
@@ -301,13 +303,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 12,
    "open_items": [],
-   "updated_at": "2026-10-14T21:59:46Z",
-   "pen_agent": "a9ac26f8293dae3ca"
+   "updated_at": "2026-10-14T22:16:56Z",
+   "pen_agent": "a9ac26f8293dae3ca",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 6,
@@ -317,9 +320,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-SOP-03",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-SOP-03 Preventive & Corrective Maintenance (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "10odQYr4B2cyaAX9Z98EKxv4HUjgwIoYc",
@@ -337,13 +340,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 1,
    "open_items": [],
-   "updated_at": "2026-10-14T22:02:43Z",
-   "pen_agent": "a952766163f4b8856"
+   "updated_at": "2026-10-14T22:15:23Z",
+   "pen_agent": "a952766163f4b8856",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 7,
@@ -389,7 +393,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-SOP-05",
    "out_path": null,
    "sources": [
@@ -414,7 +418,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:14:52Z",
+   "pen_agent": "a7b85a96bcf1f3b23"
   },
   {
    "wl_index": 9,
@@ -424,7 +429,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-PRO-01",
    "out_path": null,
    "sources": [
@@ -449,7 +454,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:15:34Z",
+   "pen_agent": "aba37cc60eadd71c4"
   },
   {
    "wl_index": 10,
@@ -459,7 +465,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-SOP-01",
    "out_path": null,
    "sources": [
@@ -484,7 +490,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:16:30Z",
+   "pen_agent": "a8fbd98da58cb5bbc"
   },
   {
    "wl_index": 11,
