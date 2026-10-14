@@ -1,0 +1,65 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 6, kalimat pengantar 6.1, 6.2, 6.3",
+      "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui (RUNBOOK 6a.1 dan 6a.6). Langkah di bawahnya sudah berpelaku, jadi tidak memblokir.",
+      "bukti": "\"Proposal disusun dari Business Requirement hasil discovery meeting.\"; \"Review scope dilakukan sesudah draf proposal ada dan sebelum review internal (butir 4.5).\"; \"Lembar harga dan margin disusun untuk setiap penawaran.\" Usul: \"Business Development menyusun proposal dari Business Requirement ...\"."
+    },
+    {
+      "lokasi": "Bagian 1 Purpose, kalimat 2",
+      "masalah": "Pembuka \"Hasil yang dijaga:\" menyalin kata-kata instruksi RUNBOOK 6a.4. Kalimatnya panjang, memakai tiga frasa sejajar (sudah dikonfirmasi, sudah diverifikasi, sudah disetujui), dan ditutup pasif tanpa pelaku (\"lalu dikirim\").",
+      "bukti": "\"Hasil yang dijaga: penawaran memuat scope dan timeline yang sudah dikonfirmasi, harga dan margin yang sudah diverifikasi, dan hanya pengecualian komersial yang sudah disetujui, lalu dikirim sesudah review internal ...\""
+    },
+    {
+      "lokasi": "Butir 4.15 dan rujukan \"(butir 4.15)\" di definisi, tabel peran, bagian 9, bagian 11",
+      "masalah": "Butir 4.15 berisi catatan status penyusunan yang menampung semua USULAN, bukan kebijakan. Rujukan berulang ke butir itu membuat teks terbaca seperti catatan penyusun. Label (USULAN) lebih baik ditaruh langsung pada kalimat yang bersangkutan.",
+      "bukti": "\"4.15 Penetapan berikut berstatus (USULAN) karena belum diputus tertulis oleh pimpinan SINUX. Pelaku: ... Rekaman: ...\""
+    },
+    {
+      "lokasi": "Butir 4.15, definisi, bagian 6.3, bagian 11",
+      "masalah": "Tiga nama rekaman baru tidak ditulis seragam (RUNBOOK 6a.7). \"Catatan review scope\" dan \"Catatan persetujuan penawaran\" selalu berhuruf kapital, sedangkan \"lembar harga dan margin\" berhuruf kecil di badan tetapi \"Lembar harga dan margin\" di tengah kalimat butir 4.15.",
+      "bukti": "Butir 4.15: \"Rekaman: Lembar harga dan margin, Catatan review scope, dan Catatan persetujuan penawaran\"; butir 4.6: \"lembar harga dan margin yang sudah diverifikasi\"."
+    },
+    {
+      "lokasi": "Bagian 9 baris terakhir dan Conclusion",
+      "masalah": "Pelaku \"Personel Commercial\" atau \"Personel itu\" tidak ada di tabel peran bagian 5 dan tidak ada di tabel Definisi, yang hanya memuat \"Commercial\" (RUNBOOK 6a.7).",
+      "bukti": "\"Personel Commercial perlu menyimpang dari prosedur | Personel itu memperoleh persetujuan VP Commercial ...\"; \"... evaluasi kinerja dan probation Personel Commercial.\""
+    },
+    {
+      "lokasi": "Bagian 8 baris terakhir dan bagian 11 tabel Rekaman",
+      "masalah": "Tidak ada yang dikarang. Namun tenggat persetujuan, lokasi berkas (kecuali CRM), dan retensi semua rekaman tertulis \"Belum ditetapkan\". Dengan begitu, tabel rekaman bagian 11 (lokasi, pemilik, retensi) belum memenuhi kebutuhan auditor. Hal ini sudah tercatat di notes sebagai open item 1, 4, dan 17. Usul: beri nilai berlabel (USULAN) atau putuskan sebelum pengesahan.",
+      "bukti": "\"Lama penyelesaian review internal, verifikasi, dan persetujuan | VP Commercial | Belum ditetapkan; tenggat tiap tahap perlu diputus sebelum SOP disahkan\"; kolom Retensi enam baris \"Belum ditetapkan\"."
+    },
+    {
+      "lokasi": "Butir 4.7 dibandingkan SNX-COM-SOP-01 butir 4.10 (specs/COM-SOP-01.json)",
+      "masalah": "Kedua butir selaras tetapi kalimatnya tidak identik. SOP-02 menambahkan \"setiap penawaran memerlukan persetujuan COO atas harga dan margin final\". Notes open item 3 sendiri mensyaratkan kedua butir tetap identik.",
+      "bukti": "SOP-01 4.10: \"sampai ditetapkan, setiap diskon memerlukan persetujuan COO.\" SOP-02 4.7: \"sampai ditetapkan, setiap penawaran memerlukan persetujuan COO atas harga dan margin final, dan setiap diskon memerlukan persetujuan COO.\""
+    },
+    {
+      "lokasi": "Bagian 9, baris konflik kontrak atau isu legal",
+      "masalah": "\"segera\" tanpa batas waktu. Kata ini berasal dari sumber (\"Segera eskalasikan kepada VP Commercial\"), jadi sah, tetapi belum bisa diukur.",
+      "bukti": "\"Business Development segera mengeskalasi kepada VP Commercial dan meminta review Legal & Compliance\""
+    },
+    {
+      "lokasi": "Rujukan butir ke dokumen lain (bagian 4, 6, 9, 11)",
+      "masalah": "Semua rujukan cocok dengan spec saat ini: SOP-01 4.6, 4.10, 4.11, 4.13, 6.3, SLA; FAT-SOP-01 4.5, 4.8; LEG-SOP-02 4.3, 6.1; ISMS-PRO-01 4.10, 4.19 dan definisi RESTRICTED yang memuat harga; HR-ORG-01 K-10, JA-02, Authority Matrix; COM-FRM-01 sesuai judul worklist. Dokumen rujukan itu masih QUEUED atau Draft, sehingga rujukan butir bisa basi bila dokumennya direvisi.",
+      "bukti": "worklist: FAT-SOP-01, LEG-SOP-02, COM-SOP-01 state QUEUED; notes asumsi 12."
+    },
+    {
+      "lokasi": "Bagian 4 butir 4.7 dan open item 1 notes",
+      "masalah": "Opsional. context/audit commercial mencatat target KPI gross margin >=30% (KPI COMMERCIAL & MARKETING.xlsx, bukan sumber dokumen ini). Angka itu adalah target KPI, bukan batas margin per penawaran, jadi pernyataan \"batas margin minimum belum ditetapkan\" tetap benar. Angka tersebut bisa disebut di open item sebagai bahan keputusan owner.",
+      "bukti": "context/audit/iso-sinux-supdocs-commercial-2026-10-14.md baris 377 dan 412."
+    }
+  ],
+  "ringkasan_cek": {
+    "a_fakta": "Fakta inti cocok dengan sumber 19Hex8...: tujuh isi proposal, urutan review internal lalu approval harga lalu approval diskon (jika ada), proposal hanya sesudah Discovery, empat larangan Sales, CRM 24 jam, eskalasi ke VP Commercial, penyimpangan disetujui VP Commercial, kepatuhan masuk evaluasi kinerja dan probation. Fakta inti juga cocok dengan sumber 1m91Wrf...: JA-03 wewenang 1 dan 3 serta uraian 6, JA-05 uraian 3 dan 4 serta wewenang 3, JA-07 wewenang 2 dan 3, JA-08 wewenang 1 dan 2, JA-10 uraian 6, JA-11 uraian 5 dan wewenang 1, batasan Authority Matrix. Penyetuju COO dan Direktur Utama, pemetaan Presales dan Delivery, peran FAT dalam validasi, titik waktu Legal, dan klasifikasi margin berlabel USULAN.",
+    "b_karangan": "Nihil. Satu-satunya angka di dokumen adalah 24 jam, dari sumber. Tidak ada ambang, persentase, durasi, tanggal, atau nama orang di badan dokumen.",
+    "c_kriteria": "Terpenuhi. Penyusunan proposal ada di 6.1, validasi harga dan margin di 6.3, review scope di 6.2, pengecualian komersial di 6.4 dan butir 4.9 sampai 4.10, otorisasi sebelum penawaran dikirim di 6.5 dan butir 4.7 sampai 4.8.",
+    "d_runbook": "Status Draft, tanggal efektif kosong, kolom tanda tangan kosong. Tidak ada rujukan internal AI, residu konsultan, atau kredensial. Ada tiga penanda tangan berbeda, ejaan Kristanto dipakai, judul klausul ISO 9001 (5.3, 7.5.3, 8.2.1 sampai 8.2.4) dan ISO/IEC 27001:2022 (A 5.12, 5.14) benar, dan lint pass.",
+    "e_peran": "Konsisten. Semua PIC di bagian 6 dan 8 serta pelaku diagram ada di tabel peran bagian 5. Semua langkah 25 kata atau kurang.",
+    "f_bahasa": "Tidak ada pelanggaran 6a yang jelas. Catatan bahasa ada di daftar nonblocking.",
+    "g_data_conflicts": "Patuh. Blok persetujuan Laras/VP Commercial, Amirull/Direktur, Samuel Kristanto Utomo/President Director. Badan dokumen memakai Direktur Utama, dan Direktur (COO) disebut pertama kali di Definisi lalu COO. Cacat audit sumber Sales SOP (11 butir) dan HR-JA-001 yang relevan sudah ditangani atau dijelaskan di notes bagian 3."
+  }
+}

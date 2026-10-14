@@ -1,0 +1,277 @@
+{
+ "meta": {
+  "doc_key": "COM-SOP-02",
+  "number": "SNX-COM-SOP-02",
+  "department": "Commercial",
+  "title": "Proposal, Quotation & Pricing Control",
+  "process_owner": "VP Commercial",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Laras Rasmawati / VP Commercial",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini mengatur penyusunan proposal, validasi harga dan margin, review scope, pengecualian komersial, dan otorisasi sebelum penawaran dikirim ke customer di PT Strategi Integrasi Nusantara (SINUX).",
+  "Hasil yang dijaga: penawaran memuat scope dan timeline yang sudah dikonfirmasi, harga dan margin yang sudah diverifikasi, dan hanya pengecualian komersial yang sudah disetujui, lalu dikirim sesudah review internal serta persetujuan harga dan diskon (jika ada) selesai."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk Business Development dan VP Commercial, dan untuk fungsi lain yang memberi masukan atau persetujuan menurut tabel peran di bagian 5.",
+  "Proses yang tercakup: penyusunan proposal dan quotation sesudah discovery meeting selesai, review scope, validasi harga dan margin, pengecualian komersial, review internal, persetujuan harga dan diskon, dan pengiriman penawaran ke customer. Proses berakhir saat Business Development mengirim penawaran dan mencatatnya di CRM.",
+  "Sistem yang dipakai: CRM. Lokasi berkas proposal, quotation, lembar harga dan margin, dan rekaman persetujuan belum ditetapkan.",
+  "Di luar scope SOP ini: prospecting, qualification, discovery meeting, negosiasi, closing, dan handover (SNX-COM-SOP-01), kecuali permintaan pengecualian komersial yang muncul di proses itu dan mengikuti butir 6.4; review dan persetujuan kontrak (SNX-LEG-SOP-02); penagihan dan invoice (SNX-FAT-SOP-01); penetapan ambang diskon dan batas margin minimum."
+ ],
+ "definitions": [
+  ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."],
+  ["Assumptions", "Kondisi yang dianggap benar saat scope, timeline, dan harga ditetapkan."],
+  ["Authority Matrix", "Dokumen yang menetapkan hak tanda tangan kontrak dan otorisasi keuangan per jabatan (SNX-HR-ORG-01)."],
+  ["BOM/BOQ", "Bill of Materials atau Bill of Quantities: daftar item dan jumlahnya yang dibutuhkan untuk solusi yang ditawarkan."],
+  ["Business Requirement", "Kebutuhan bisnis customer yang Business Development catat di CRM sebagai salah satu keluaran discovery meeting."],
+  ["Catatan persetujuan penawaran", "Rekaman hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran."],
+  ["Catatan review scope", "Rekaman hasil review scope untuk satu proposal: kelayakan teknis, konfirmasi timeline dan scope, dan kesesuaian dengan Business Requirement."],
+  ["COGS", "Cost of goods sold: biaya langsung yang SINUX tanggung untuk menyediakan solusi yang dijual."],
+  ["Commercial", "Unit Commercial SINUX menurut SNX-HR-ORG-01: VP Commercial, Business Development, dan Brand & Marketing."],
+  ["CRM", "Customer Relationship Management: sistem tempat Commercial mencatat aktivitas penjualan."],
+  ["Customer", "Perusahaan atau institusi di luar SINUX yang menjadi sasaran penjualan atau sudah membeli solusi SINUX."],
+  ["Direktur (COO)", "Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; sesudah penyebutan ini SOP ini memakai COO."],
+  ["Discovery meeting", "Pertemuan Business Development dengan customer untuk menggali kebutuhan bisnis, diatur di SNX-COM-SOP-01 butir 6.3."],
+  ["Exclusions", "Pekerjaan atau item yang tidak termasuk dalam scope dan harga penawaran."],
+  ["Lembar harga dan margin", "Rekaman perhitungan harga satu penawaran: komponen harga, COGS, diskon (jika ada), dan margin."],
+  ["Margin", "Selisih antara harga penawaran dan COGS."],
+  ["Margin final", "Margin yang COO tetapkan untuk satu penawaran sebelum penawaran dikirim."],
+  ["Opportunity", "Peluang penjualan ke satu customer yang dikelola di CRM."],
+  ["Pengecualian komersial", "Permintaan customer atau isi penawaran yang menyimpang dari yang sudah disetujui atau dari standar: perubahan harga, diskon, scope, atau timeline sesudah persetujuan diberikan; TOP di atas standar; klausul yang menyimpang dari template kontrak; atau komitmen di luar kontrak."],
+  ["Penawaran", "Proposal dan quotation untuk satu opportunity yang dikirim ke customer."],
+  ["Proposal", "Dokumen yang menjelaskan solusi SINUX untuk satu opportunity, dengan isi minimal di butir 4.2."],
+  ["Qualification", "Penilaian opportunity terhadap kriteria di SNX-COM-SOP-01 butir 4.6 untuk menentukan apakah opportunity layak masuk tahap proposal."],
+  ["Quotation", "Dokumen yang memuat harga, diskon (jika ada), dan syarat komersial untuk satu opportunity."],
+  ["RESTRICTED (Internal)", "Tingkat klasifikasi informasi di SNX-ISMS-PRO-01: disimpan di sistem resmi dengan akses terbatas per peran."],
+  ["Review internal", "Pemeriksaan atas proposal, quotation, Catatan review scope, dan lembar harga dan margin sebelum harga dan diskon diajukan untuk persetujuan; pelakunya di butir 4.15."],
+  ["Review scope", "Pemeriksaan bahwa solusi layak secara teknis, timeline dan scope dapat dipenuhi, dan isi proposal sesuai dengan Business Requirement."],
+  ["TOP", "Term of Payment: jangka waktu pembayaran invoice oleh customer sejak tanggal invoice."]
+ ],
+ "policy": [
+  "4.1 Business Development menyusun proposal hanya sesudah qualification dan discovery meeting untuk opportunity itu selesai (SNX-COM-SOP-01 butir 4.6).",
+  "4.2 Proposal memuat Scope of Work, Proposed Solution, Deliverables, Timeline, Commercial Proposal, Assumptions, dan Exclusions.",
+  "4.3 Business Development tidak mengubah pricing sendiri dan tidak memberi diskon tanpa persetujuan (butir 4.7 dan 4.8).",
+  "4.4 Business Development hanya menawarkan fitur yang sudah tersedia, dan tidak menjanjikan timeline sebelum timeline itu dikonfirmasi menurut butir 4.5.",
+  "4.5 Manager of Product Tech menilai kelayakan teknis solusi, dan Service Delivery Manager mengonfirmasi timeline dan scope, sebelum proposal masuk review internal (butir 6.2).",
+  "4.6 Business Development memakai lembar harga dan margin yang sudah diverifikasi Accounting & Tax sebelum review internal untuk setiap penawaran, dengan data margin dan COGS dari Finance (butir 6.3 dan 4.15).",
+  "4.7 Wewenang berikut berstatus (USULAN): VP Commercial merekomendasikan harga dan diskon, dan COO menyetujui harga dan diskon serta menetapkan margin final. Ambang diskon dan batas margin minimum belum ditetapkan; sampai ditetapkan, setiap penawaran memerlukan persetujuan COO atas harga dan margin final, dan setiap diskon memerlukan persetujuan COO. Hak otorisasi per jabatan mengikuti Authority Matrix.",
+  "4.8 Business Development mengirim penawaran hanya sesudah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai, dalam urutan itu. VP Commercial menolak penawaran yang belum lengkap.",
+  "4.9 Business Development tidak menjanjikan pengecualian komersial kepada customer, dan tidak memuatnya dalam penawaran, sebelum pihak yang memutuskan menurut butir 4.10 menyetujuinya. Pengecualian komersial diproses menurut butir 6.4.",
+  "4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah disetujui, harga baru, klausul yang menyimpang dari template kontrak, dan komitmen di luar kontrak, dengan rekomendasi VP Commercial dan, untuk klausul dan komitmen kontrak, rekomendasi Legal & Compliance. Direktur Utama memutuskan TOP di atas standar secara tertulis (SNX-FAT-SOP-01 butir 4.8), sebelum penawaran yang memuatnya dikirim. Perubahan scope atau timeline diproses ulang lewat butir 6.2, dan lewat butir 6.3 dan 6.5 bila harga ikut berubah.",
+  "4.11 Legal & Compliance mereview klausul dan syarat komersial yang menyimpang dari template kontrak dan klausul standar sebelum penawaran yang memuatnya dikirim. Titik waktu ini berstatus (USULAN); SNX-LEG-SOP-02 butir 4.3 mewajibkan Legal terlibat sebelum ada komitmen tertulis kepada pihak luar.",
+  "4.12 Dokumen teknis untuk customer pemerintah tidak memuat harga, diskon, tier, maupun roadmap komersial (SNX-ISMS-PRO-01 butir 4.19). Business Development memisahkan informasi itu dari dokumen teknis.",
+  "4.13 Informasi harga berklasifikasi RESTRICTED (Internal) menurut SNX-COM-SOP-01 butir 4.13, dan COGS, margin, serta lembar harga dan margin memakai tingkat yang sama. Penetapan tingkat ini berstatus (USULAN). Pengiriman penawaran ke customer mengikuti aturan berbagi informasi RESTRICTED di butir itu.",
+  "4.14 Business Development mencatat proposal dan quotation di CRM; batas waktu pembaruannya ada di bagian 8.",
+  "4.15 Penetapan berikut berstatus (USULAN) karena belum diputus tertulis oleh pimpinan SINUX. Pelaku: Finance dan Accounting & Tax mengambil bagian dalam validasi harga dan margin (butir 6.3); Manager of Product Tech mengeskalasi solusi yang tidak feasible kepada VP Commercial; VP Commercial melakukan review internal dan menyimpan Catatan persetujuan penawaran; Legal & Compliance menyimpan hasil reviewnya (bagian 11); Business Development melengkapi penawaran yang ditolak (bagian 9). Rekaman: Lembar harga dan margin, Catatan review scope, dan Catatan persetujuan penawaran adalah rekaman baru dengan pemilik di bagian 11."
+ ],
+ "roles": [
+  ["Business Development", "Menjalankan prosedur di bagian 6 dari penyusunan proposal sampai pengiriman penawaran, dan mencatatnya di CRM (butir 4.14).", "Bernegosiasi dan mengirim penawaran hanya dalam batas yang disetujui; mengeskalasi diskon dan scope yang belum disetujui. Tidak mengubah harga sendiri (butir 4.3)."],
+  ["VP Commercial", "Pemilik SOP ini dan pemilik proses proposal, quotation, dan pricing. Melakukan review internal, mengevaluasi margin, diskon, perubahan scope, dan komitmen di luar kontrak, merekomendasikan harga dan diskon, menerima eskalasi, dan menyimpan Catatan persetujuan penawaran (butir 4.15).", "Merekomendasikan harga dan diskon untuk persetujuan dan menolak penawaran yang belum lengkap (SNX-HR-JA-01). Menyetujui penyimpangan dari prosedur (bagian 9)."],
+  ["COO", "Menyetujui harga dan diskon yang VP Commercial rekomendasikan, menetapkan margin final, dan memutuskan pengecualian komersial selain TOP di atas standar serta perubahan scope dan timeline (butir 4.7 dan 4.10).", "Menyetujui atau menolak harga, diskon, margin final, dan pengecualian komersial di butir 4.10."],
+  ["Direktur Utama", "Memutuskan TOP di atas standar secara tertulis sebelum penawaran yang memuatnya dikirim (butir 4.10).", "Menyetujui atau menolak TOP di atas standar."],
+  ["Manager of Product Tech", "Menilai kelayakan teknis solusi, menyusun solution design, sizing, BOM/BOQ, dan asumsi teknis proposal, dan mereview risiko implementasi, lisensi, kompatibilitas, dan dependensi vendor (butir 6.2). Menjalankan fungsi Presales (USULAN).", "Memberi rekomendasi kelayakan teknis dan mengeskalasi solusi yang tidak feasible."],
+  ["Service Delivery Manager", "Mengonfirmasi timeline dan scope proposal (butir 6.2). Menjalankan fungsi Delivery dalam konfirmasi timeline dan scope (USULAN); jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01.", "Mengonfirmasi atau tidak mengonfirmasi timeline dan scope."],
+  ["Finance", "Menyediakan data margin dan COGS untuk lembar harga dan margin (butir 6.3).", "Tidak ada wewenang persetujuan di SOP ini."],
+  ["Accounting & Tax", "Memverifikasi klasifikasi COGS dan margin, dan perlakuan PPN, di lembar harga dan margin (butir 6.3).", "Meminta koreksi dokumen yang diverifikasi (SNX-HR-JA-01)."],
+  ["Legal & Compliance", "Mereview klausul dan syarat komersial yang menyimpang dari template kontrak dan klausul standar, dan memberi rekomendasi (butir 4.11 dan 6.4).", "Memberi legal clearance atau rekomendasi, dan meminta revisi klausul berisiko."]
+ ],
+ "procedures": [
+  {
+   "title": "Penyusunan Proposal",
+   "intro": [
+    "Proposal disusun dari Business Requirement hasil discovery meeting. Commercial Proposal diisi sesudah harga dan margin terverifikasi (butir 6.3)."
+   ],
+   "steps": [
+    ["Periksa di CRM bahwa qualification dan discovery meeting untuk opportunity itu sudah selesai (butir 4.1).", "Business Development", "Hasil pemeriksaan syarat proposal"],
+    ["Susun Scope of Work, Proposed Solution, Deliverables, dan Timeline dari Business Requirement.", "Business Development", "Draf proposal"],
+    ["Susun Assumptions dan Exclusions untuk scope dan harga yang ditawarkan.", "Business Development", "Assumptions dan Exclusions di draf proposal"],
+    ["Keluarkan harga, diskon, tier, dan roadmap komersial dari dokumen teknis untuk customer pemerintah (butir 4.12).", "Business Development", "Dokumen teknis tanpa informasi komersial"],
+    ["Catat draf proposal di CRM.", "Business Development", "Proposal tercatat di CRM"]
+   ]
+  },
+  {
+   "title": "Review Scope",
+   "intro": [
+    "Review scope dilakukan sesudah draf proposal ada dan sebelum review internal (butir 4.5)."
+   ],
+   "steps": [
+    ["Minta Manager of Product Tech menilai kelayakan teknis dan Service Delivery Manager mengonfirmasi timeline dan scope, dengan melampirkan draf proposal.", "Business Development", "Permintaan review scope"],
+    ["Susun solution design, sizing, BOM/BOQ, dan asumsi teknis untuk proposal.", "Manager of Product Tech", "Solution design, sizing, BOM/BOQ, dan asumsi teknis"],
+    ["Review risiko implementasi, lisensi, kompatibilitas, dan dependensi vendor atas solusi yang ditawarkan.", "Manager of Product Tech", "Hasil review risiko teknis"],
+    ["Eskalasikan solusi yang tidak feasible kepada VP Commercial beserta alasannya (butir 4.15).", "Manager of Product Tech", "Eskalasi solusi yang tidak feasible"],
+    ["Konfirmasi timeline dan scope proposal, atau sampaikan bagian yang tidak dapat dipenuhi.", "Service Delivery Manager", "Konfirmasi timeline dan scope"],
+    ["Sesuaikan Scope of Work, Timeline, Assumptions, dan Exclusions dengan hasil review scope.", "Business Development", "Draf proposal terbarui"],
+    ["Periksa bahwa Scope of Work, Deliverables, dan Timeline sesuai dengan Business Requirement customer.", "Business Development", "Hasil pemeriksaan kesesuaian scope"],
+    ["Catat hasil review scope dari langkah 2 sampai 7 dalam satu Catatan review scope.", "Business Development", "Catatan review scope"]
+   ]
+  },
+  {
+   "title": "Validasi Harga dan Margin",
+   "intro": [
+    "Lembar harga dan margin disusun untuk setiap penawaran. Batas margin minimum belum ditetapkan, sehingga COO menetapkan margin final di butir 6.5 (butir 4.7)."
+   ],
+   "steps": [
+    ["Minta data margin dan COGS kepada Finance untuk item di BOM/BOQ.", "Business Development", "Permintaan data margin dan COGS"],
+    ["Sediakan data margin dan COGS yang relevan untuk item di BOM/BOQ.", "Finance", "Data margin dan COGS"],
+    ["Susun lembar harga dan margin: komponen harga, COGS, diskon (jika ada), dan margin.", "Business Development", "Lembar harga dan margin"],
+    ["Verifikasi klasifikasi COGS, margin, dan perlakuan PPN di lembar harga dan margin (SNX-FAT-SOP-01 butir 4.5 untuk PPN).", "Accounting & Tax", "Lembar harga dan margin terverifikasi"],
+    ["Isi Commercial Proposal dan quotation dengan harga dan diskon dari lembar harga dan margin yang sudah terverifikasi.", "Business Development", "Proposal dan quotation lengkap"]
+   ]
+  },
+  {
+   "title": "Pengecualian Komersial",
+   "intro": [
+    "Prosedur ini berlaku sebelum dan sesudah penawaran dikirim, bila customer meminta atau penawaran memuat pengecualian komersial. Pihak yang memutuskan ditetapkan di butir 4.10."
+   ],
+   "steps": [
+    ["Catat setiap permintaan pengecualian komersial di CRM beserta jenis dan alasannya.", "Business Development", "Permintaan pengecualian tercatat di CRM"],
+    ["Eskalasikan permintaan pengecualian komersial kepada VP Commercial.", "Business Development", "Eskalasi ke VP Commercial"],
+    ["Evaluasi dampak permintaan terhadap margin, diskon, scope, dan komitmen di luar kontrak.", "VP Commercial", "Hasil evaluasi pengecualian"],
+    ["Ajukan permintaan review ke Legal & Compliance bila permintaan menyangkut klausul atau komitmen kontrak (SNX-LEG-SOP-02 butir 6.1).", "Business Development", "Permintaan review diajukan"],
+    ["Beri rekomendasi atas klausul atau komitmen yang menyimpang dari template kontrak dan klausul standar.", "Legal & Compliance", "Rekomendasi Legal & Compliance"],
+    ["Ulangi review scope bila permintaan mengubah scope atau timeline, dan validasi harga dan margin bila harga ikut berubah (butir 6.2 dan 6.3).", "Business Development", "Catatan review scope dan lembar harga dan margin terbarui"],
+    ["Rekomendasikan keputusan atas permintaan kepada pihak yang memutuskan menurut butir 4.10.", "VP Commercial", "Rekomendasi pengecualian"],
+    ["Putuskan diskon di luar yang sudah disetujui, harga baru, klausul, atau komitmen di luar kontrak yang direkomendasikan.", "COO", "Keputusan COO"],
+    ["Putuskan secara tertulis TOP di atas standar yang direkomendasikan (SNX-FAT-SOP-01 butir 4.8).", "Direktur Utama", "Persetujuan atau penolakan tertulis atas TOP"],
+    ["Perbarui penawaran sesuai keputusan: masukkan pengecualian yang disetujui dan hapus yang ditolak.", "Business Development", "Penawaran sesuai keputusan"]
+   ]
+  },
+  {
+   "title": "Otorisasi dan Pengiriman Penawaran",
+   "intro": [
+    "Urutan otorisasi dan syarat pengiriman ada di butir 4.8."
+   ],
+   "steps": [
+    ["Review internal atas proposal, quotation, Catatan review scope, serta margin dan diskon di lembar harga dan margin.", "VP Commercial", "Hasil review internal"],
+    ["Rekomendasikan harga dan diskon (jika ada) kepada COO.", "VP Commercial", "Rekomendasi harga dan diskon"],
+    ["Setujui harga dan tetapkan margin final.", "COO", "Persetujuan harga dan margin final"],
+    ["Setujui diskon (jika ada).", "COO", "Persetujuan diskon"],
+    ["Simpan Catatan persetujuan penawaran: hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial (butir 4.15).", "VP Commercial", "Catatan persetujuan penawaran"],
+    ["Periksa bahwa review internal, persetujuan harga, dan persetujuan diskon (jika ada) sudah selesai dan pengecualian komersial hanya yang disetujui.", "Business Development", "Penawaran lolos pemeriksaan sebelum kirim"],
+    ["Periksa bahwa aturan berbagi informasi RESTRICTED terpenuhi sebelum mengirim penawaran (butir 4.13).", "Business Development", "Penawaran siap dikirim"],
+    ["Kirim penawaran ke customer.", "Business Development", "Penawaran terkirim"],
+    ["Catat penawaran yang terkirim di CRM.", "Business Development", "Penawaran terkirim tercatat di CRM"]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Qualification dan discovery\nmeeting selesai?",
+   "x": "Proposal belum disusun\n(butir 4.1)",
+   "b": "Business Development menyusun proposal\n(butir 6.1)",
+   "c": "Manager of Product Tech menilai kelayakan teknis;\nService Delivery Manager mengonfirmasi timeline dan scope\n(butir 6.2)",
+   "d": "Solusi layak dan timeline\nterkonfirmasi?",
+   "e": "Manager of Product Tech mengeskalasi ke VP Commercial;\nBusiness Development menyesuaikan proposal",
+   "f": "Finance menyediakan data margin dan COGS;\nBusiness Development menyusun lembar harga dan margin;\nAccounting & Tax memverifikasi (butir 6.3)",
+   "g": "Business Development mengisi\nCommercial Proposal dan quotation",
+   "h": "Ada pengecualian\nkomersial?",
+   "i": "Pengecualian diproses menurut butir 6.4",
+   "j": "Pengecualian\ndisetujui?",
+   "k": "Business Development menghapus pengecualian\nyang ditolak dari penawaran",
+   "l": "VP Commercial melakukan review internal\ndan merekomendasikan harga dan diskon",
+   "m": "Penawaran lengkap?",
+   "n": "Business Development melengkapi penawaran",
+   "o": "COO menyetujui harga dan diskon (jika ada)\ndan menetapkan margin final",
+   "p": "Disetujui?",
+   "q": "Penawaran tidak dikirim;\nBusiness Development merevisi (bagian 9)",
+   "r": "VP Commercial menyimpan\nCatatan persetujuan penawaran",
+   "s": "Business Development mengirim penawaran\nke customer dan mencatatnya di CRM"
+  },
+  "shapes": {
+   "a": "diamond",
+   "d": "diamond",
+   "h": "diamond",
+   "j": "diamond",
+   "m": "diamond",
+   "p": "diamond",
+   "x": "ellipse",
+   "s": "ellipse"
+  },
+  "edges": [
+   ["a", "x", "Tidak"],
+   ["a", "b", "Ya"],
+   ["b", "c"],
+   ["c", "d"],
+   ["d", "e", "Tidak"],
+   ["e", "c"],
+   ["d", "f", "Ya"],
+   ["f", "g"],
+   ["g", "h"],
+   ["h", "i", "Ya"],
+   ["h", "l", "Tidak"],
+   ["i", "j"],
+   ["j", "k", "Tidak"],
+   ["j", "l", "Ya"],
+   ["k", "l"],
+   ["l", "m"],
+   ["m", "n", "Tidak"],
+   ["n", "l"],
+   ["m", "o", "Ya"],
+   ["o", "p"],
+   ["p", "q", "Tidak"],
+   ["q", "l"],
+   ["p", "r", "Ya"],
+   ["r", "s"]
+  ],
+  "caption": "Gambar 1. Alur penawaran dari penyusunan proposal sampai pengiriman ke customer. Permintaan pengecualian komersial sesudah pengiriman memakai butir 6.4 dan 6.5."
+ },
+ "sla": [
+  ["Pembaruan CRM atas proposal dan quotation", "Business Development", "Maksimal 24 jam setelah aktivitas dilakukan"],
+  ["Balasan atas pertanyaan customer tentang penawaran", "Business Development", "Mengikuti batas waktu respons di SNX-COM-SOP-01 bagian 8"],
+  ["Konfirmasi timeline dan scope", "Service Delivery Manager", "Sebelum timeline dijanjikan kepada customer (butir 4.4)"],
+  ["Verifikasi lembar harga dan margin", "Accounting & Tax", "Sebelum review internal (butir 4.6)"],
+  ["Review internal", "VP Commercial", "Sebelum harga dan diskon diajukan untuk persetujuan"],
+  ["Persetujuan harga dan margin final", "COO", "Sebelum penawaran dikirim ke customer"],
+  ["Persetujuan diskon (jika ada)", "COO", "Sebelum penawaran dikirim ke customer"],
+  ["Persetujuan tertulis TOP di atas standar", "Direktur Utama", "Sebelum penawaran yang memuat TOP itu dikirim (butir 4.10)"],
+  ["Lama penyelesaian review internal, verifikasi, dan persetujuan", "VP Commercial", "Belum ditetapkan; tenggat tiap tahap perlu diputus sebelum SOP disahkan"]
+ ],
+ "exceptions": [
+  ["Manager of Product Tech menilai solusi tidak feasible", "Manager of Product Tech mengeskalasi kepada VP Commercial (butir 6.2), dan VP Commercial menetapkan tindak lanjut. Business Development tidak melanjutkan ke validasi harga dan margin sampai solusi dan scope disesuaikan."],
+  ["Service Delivery Manager tidak dapat mengonfirmasi timeline atau scope", "Business Development tidak menjanjikan timeline kepada customer dan menyesuaikan timeline atau scope bersama Service Delivery Manager (butir 4.4)."],
+  ["Accounting & Tax menemukan klasifikasi COGS, margin, atau perlakuan PPN yang tidak sesuai", "Accounting & Tax meminta koreksi kepada Business Development. Business Development memperbaiki lembar harga dan margin, dan Accounting & Tax mengulang verifikasi."],
+  ["VP Commercial menolak penawaran karena belum lengkap", "Business Development melengkapi penawaran sesuai alasan penolakan, dan VP Commercial mengulang review internal (butir 4.15)."],
+  ["COO tidak menyetujui harga, diskon, atau margin final", "Business Development tidak mengirim penawaran dan merevisinya sesuai keputusan COO. VP Commercial mengulang review internal dan rekomendasi (butir 6.5)."],
+  ["Customer meminta diskon di luar yang sudah disetujui", "Business Development tidak memberi diskon dan mengeskalasi permintaan kepada VP Commercial. Pemrosesan mengikuti butir 6.4."],
+  ["Penawaran menimbulkan konflik kontrak atau isu legal", "Business Development segera mengeskalasi kepada VP Commercial dan meminta review Legal & Compliance (SNX-LEG-SOP-02 butir 6.1)."],
+  ["COO atau Direktur Utama tidak dapat memberi persetujuan sebelum customer membutuhkan penawaran", "Business Development tidak mengirim penawaran sampai persetujuan, atau delegasi tertulis yang berlaku, diperoleh. Tata cara delegasi belum ditetapkan."],
+  ["Personel Commercial perlu menyimpang dari prosedur", "Personel itu memperoleh persetujuan VP Commercial atau pihak yang berwenang atas penyimpangan tersebut."]
+ ],
+ "conclusion": [
+  "Kepatuhan terhadap SOP ini menjadi bagian dari evaluasi kinerja dan probation Personel Commercial.",
+  "VP Commercial, pemilik SOP ini, meninjau SOP ini setiap tahun, dan lebih awal bila ambang diskon, batas margin minimum, atau Authority Matrix ditetapkan."
+ ],
+ "related_documents": [
+  ["SNX-COM-SOP-01", "Sales Process; memuat butir 4.6 (qualification), butir 4.13 (klasifikasi dan berbagi informasi RESTRICTED), dan butir 6.3 (discovery meeting). Butir 4.8 sampai 4.11 dan 6.4 dokumen itu meringkas proposal, quotation, dan harga; rinciannya ada di SOP ini (USULAN)."],
+  ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; memuat nama jabatan, matriks peran, dan rujukan ke Authority Matrix. Service Delivery Manager adalah jabatan usulan tanpa pemegang (butir K-10)."],
+  ["SNX-HR-JA-01", "Job Analysis dan Uraian Jabatan; memuat tugas dan wewenang jabatan di tabel peran."],
+  ["SNX-FAT-SOP-01", "Billing & Invoicing; mengatur PPN (butir 4.5) dan persetujuan TOP di atas standar (butir 4.8)."],
+  ["SNX-LEG-SOP-02", "Contract Review & Legal Approval, berstatus Draft; mengatur pengajuan permintaan review (butir 6.1) dan keterlibatan Legal sebelum komitmen tertulis kepada pihak luar (butir 4.3)."],
+  ["SNX-ISMS-PRO-01", "Information Classification & Handling; memuat tingkat RESTRICTED (Internal) dan aturan dokumen teknis untuk customer pemerintah (butir 4.19)."],
+  ["SNX-COM-FRM-01", "Customer Requirement & Order Review Record; judul menurut daftar dokumen SINUX. Calon bentuk Catatan review scope (USULAN)."],
+  ["Belum bernomor", "Authority Matrix; tempat hak tanda tangan kontrak dan otorisasi keuangan per jabatan ditetapkan (SNX-HR-ORG-01)."]
+ ],
+ "records": [
+  ["Proposal dan quotation, termasuk versi terkirim", "CRM; dikelola Business Development (butir 4.14). Lokasi berkas belum ditetapkan", "Belum ditetapkan"],
+  ["Catatan review scope", "Lokasi belum ditetapkan; dikelola Business Development. SNX-COM-FRM-01 adalah calon bentuknya (USULAN)", "Belum ditetapkan"],
+  ["Lembar harga dan margin, beserta hasil verifikasi Accounting & Tax", "Lokasi belum ditetapkan; dikelola Business Development; berklasifikasi RESTRICTED (Internal) (butir 4.13)", "Belum ditetapkan"],
+  ["Catatan persetujuan penawaran", "Lokasi belum ditetapkan; pemilik VP Commercial (butir 4.15)", "Belum ditetapkan"],
+  ["Permintaan pengecualian komersial", "CRM; dikelola Business Development (butir 6.4)", "Belum ditetapkan"],
+  ["Rekomendasi Legal & Compliance atas pengecualian komersial", "Lokasi belum ditetapkan; pemilik Legal & Compliance (butir 4.15)", "Belum ditetapkan"]
+ ],
+ "iso_refs": {
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan).",
+  "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang di organisasi), untuk tabel peran dan wewenang harga di butir 4.7; 7.5.3 (Pengendalian informasi terdokumentasi), untuk rekaman di bagian 11 dan pencatatan di CRM di butir 4.14; 8.2.1 (Komunikasi dengan pelanggan), untuk isi proposal dan quotation yang diterima customer di butir 4.2; 8.2.2 (Penentuan persyaratan untuk produk dan jasa), untuk kesesuaian scope dengan Business Requirement di butir 6.2; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk review scope, validasi harga dan margin, review internal, dan persetujuan sebelum penawaran dikirim di butir 6.2, 6.3, dan 6.5; 8.2.4 (Perubahan persyaratan untuk produk dan jasa), untuk perubahan harga, diskon, scope, atau timeline sesudah persetujuan sebagai pengecualian komersial di butir 6.4.",
+  "ISO/IEC 27001:2022": "Annex A 5.12 (Klasifikasi informasi), untuk harga, COGS, dan margin di butir 4.13; Annex A 5.14 (Transfer informasi), untuk pengiriman penawaran ke customer di butir 6.5."
+ }
+}
