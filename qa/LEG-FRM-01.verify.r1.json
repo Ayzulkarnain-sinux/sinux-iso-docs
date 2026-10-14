@@ -1,0 +1,54 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Tujuan dan Lingkup (Lingkup); tabel pengecualian Lingkup; Peran (Unit Kerja Terkait); Rekaman dan Acuan ISO (kolom Hubungan dengan formulir ini)",
+      "masalah": "RUNBOOK §6a.1 (pelaku = peran bagian Peran) dan pola tambahan 'benda diberi kata kerja manusia' muncul jelas dan berulang (7 kalimat): formulir, tabel, aspek, dan Hasil Penelaahan dijadikan pelaku menelaah, memeriksa, atau meminta, padahal pelakunya Staff Legal atau Line Manager Legal. Catatan penyusun (notes/LEG-FRM-01.md bagian 5) mengaku pola ini sudah diperbaiki di Tujuan dan menyatakan tidak ada lagi; klaim itu tidak sesuai isi docx.",
+      "bukti": "(1) 'Formulir ini menelaah kontrak antara SINUX dan pelanggan, termasuk ...' (Lingkup). (2) 'Formulir ini hanya memeriksa ketentuan kontraknya (aspek C5.1 dan C5.2).' (pengecualian). (3) 'Membahas temuan sesuai bidangnya bila Hasil Penelaahan meminta pembahasan lebih lanjut.' (Peran, Unit Kerja Terkait). (4) 'Tabel Daftar Periksa menelaah persyaratan kontrak pelanggan sebelum SINUX berkomitmen menandatangani.' (5) 'Daftar Periksa menelaah kesesuaian ketentuan kontrak dengan hukum yang berlaku dan persyaratan kontraktual.' (6) 'Aspek C5.3 menelaah kepemilikan dan penggunaan kekayaan intelektual dalam kontrak.' (7) 'Aspek C5.2 menelaah ketentuan data pribadi dalam kontrak.' (Acuan ISO). Perbaikan: pelaku manusia, mis. 'Staff Legal memakai formulir ini untuk menelaah kontrak ...', 'Aspek C5.3 memuat pemeriksaan kepemilikan ...', 'bila Hasil Penelaahan yang dicentang Staff Legal adalah pembahasan lebih lanjut'."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "Rekaman dan Acuan ISO, tabel Rekaman (Formulir terisi per kontrak pelanggan; Kontrak yang ditelaah dan korespondensi)",
+      "masalah": "Pemilik rekaman ditulis 'Staff Legal (USULAN)', sedangkan SNX-LEG-SOP-02 (specs/LEG-SOP-02.json records) menetapkan pemilik 'Redline, catatan review, checklist review, dan ringkasan risiko' = Line Manager Legal (butir 4.19). Dua dokumen satu set memberi pemilik berbeda untuk rekaman yang sama.",
+      "bukti": "FRM-01: 'Pemilik: Staff Legal (USULAN).' SOP-02 records: 'Lokasi belum ditetapkan; pencatat Staff Legal; pemilik Line Manager Legal (butir 4.19)'."
+    },
+    {
+      "lokasi": "Dokumen Terkait, baris SNX-LEG-SOP-02",
+      "masalah": "Klaim 'Prosedur itu menyebut Contract Review Checklist' tidak persis: SNX-LEG-SOP-02 memakai 'checklist review' dan menyatakan 'Sumber SOP ini menyebutnya Contract Review Checklist'. Yang menyebut nama itu adalah sumber SOP-02, bukan SOP-02.",
+      "bukti": "specs/LEG-SOP-02.json related_documents: 'Customer Contract Review Checklist; checklist review untuk kontrak pelanggan (USULAN). Sumber SOP ini menyebutnya Contract Review Checklist.'"
+    },
+    {
+      "lokasi": "Istilah dan badan dokumen",
+      "masalah": "Istilah tidak konsisten (§6a.7): tabel Istilah mendefinisikan 'Departemen Legal', tetapi badan memakai 'Legal' tanpa definisi ('temuan serta rekomendasi Legal', 'menunggu keputusan Legal', 'USULAN: diputuskan Legal') dan 'departemen Legal' huruf kecil ('folder Google Drive departemen Legal'). Istilah 'Penelaahan' didefinisikan sebagai 'Pengisian satu formulir ini ...' tetapi dipakai sebagai tindakan menelaah ('Penelaahan disesuaikan dengan jenis layanan ...').",
+      "bukti": "Istilah: 'Departemen Legal | Line Manager Legal dan Staff Legal.'; 'Penelaahan | Pengisian satu formulir ini untuk satu kontrak pelanggan, dari Informasi Kontrak sampai Rekomendasi.'"
+    },
+    {
+      "lokasi": "Ketentuan Penggunaan butir 5 vs Petunjuk Pengisian butir 5 dan Isi Formulir (Ringkasan Hasil Penelaahan)",
+      "masalah": "Sinonim berganti untuk satu tindakan: 'mencentang' vs 'mengganti kotak kosong dengan tanda silang' vs 'Ganti ☐ dengan ☒'.",
+      "bukti": "'Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi ...'; 'Staff Legal mengganti kotak kosong dengan tanda silang pada pilihan yang sesuai'."
+    },
+    {
+      "lokasi": "Tujuan dan Lingkup (Lingkup), kalimat terakhir paragraf",
+      "masalah": "Pasif tanpa pelaku padahal pelaku diketahui (Staff Legal). Kalimat asal tim (T1), boleh dipertahankan, tetapi mudah diaktifkan.",
+      "bukti": "'Penelaahan disesuaikan dengan jenis layanan, karakteristik transaksi, dan risiko tiap kontrak.'"
+    },
+    {
+      "lokasi": "Ketentuan Penggunaan butir 1",
+      "masalah": "Label (USULAN) dipasang pada pernyataan status terbuka, dan pemutus 'Legal' tidak sesuai nama peran di bagian Peran.",
+      "bukti": "'Kewajiban memakai formulir ini untuk setiap kontrak pelanggan belum diputus (USULAN: diputuskan Legal).'"
+    },
+    {
+      "lokasi": "Isi Formulir: Informasi Kontrak dan Ringkasan Hasil Penelaahan",
+      "masalah": "Dua perubahan redaksi atas teks sumber tanpa label di dokumen: field 'Nama Klien' menjadi 'Nama Pelanggan', opsi Hasil 'berdasarkan pemeriksaan yang dilakukan' menjadi 'berdasarkan penelaahan yang dilakukan'. Tercatat di notes (USULAN 21, fakta pendukung 5); substansi tidak berubah.",
+      "bukti": "Sumber Drive 1lsdhtFZ...: 'Nama Klien'; 'Tidak terdapat temuan berdasarkan pemeriksaan yang dilakukan'. Docx: 'Nama Pelanggan'; 'Tidak terdapat temuan berdasarkan penelaahan yang dilakukan.'"
+    }
+  ],
+  "diperiksa": {
+    "fakta_sumber": "Cocok dengan read_file_content 1lsdhtFZrf7bdckagXYtEXxmIyRw3jNw-28iXJpoTeaY: 9 field Informasi Kontrak, 8 kelompok, 22 aspek asal, 3 opsi Hasil, 3 opsi Rekomendasi, blok Disusun/Diperiksa/Disetujui, 3 lokasi penyimpanan, enam jenis layanan di Lingkup. Empat aspek tambahan (C2.4, C4.5, C5.4, C7.3) dan kriteria baru berlabel USULAN.",
+    "rujukan_silang": "Butir SNX-LEG-SOP-02 4.2, 4.7, 4.8 sampai 4.10, 4.14, 6.1, 6.4, 6.7 dan SNX-LEG-SOP-01 4.21, 4.24 dicek terhadap specs; isinya cocok. JA-08/JA-09/K-13 cocok dengan specs/HR-ORG-01.json. ISMS-PRO-01 4.3 mendukung RESTRICTED (Internal). Kode SNX lain ada di config/worklist.json.",
+    "kriteria_description": "Terpenuhi: daftar periksa 26 aspek untuk kontrak pelanggan; risiko hukum dan komersial lewat definisi Istilah, kolom Jenis Risiko (Hukum, Komersial, Hukum dan komersial), kelompok C3 Harga dan Pembayaran.",
+    "batas_keras_dan_6": "Approval sesuai config/defaults.json LEG (Staff Legal, Line Manager Legal, Samuel Kristanto Utomo / President Director); status Draft, Rev 00, tanggal efektif kosong, tanpa tanda tangan; klasifikasi RESTRICTED (Internal) sesuai worklist; nol rujukan internal AI, nol em-dash/en-dash, nol baris contoh, nol nama orang lain; lint_doc.py generic pass true.",
+    "data_conflicts_dan_audit": "Ejaan Samuel benar; badan memakai 'Direktur Utama'; COO tidak muncul. Cacat audit 5.1 dan 5.2.1 sampai 5.2.13 untuk fileId ini ditangani atau dijelaskan di notes/LEG-FRM-01.md bagian 4."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "ISTILAH (Nilai Status dan Tingkat Risiko) dan PETUNJUK PENGISIAN butir 3 dan 6",
+      "masalah": "Isi yang sama diulang di dua bagian (RUNBOOK 6a.6, pengulangan isi antarbagian).",
+      "bukti": "Istilah: 'Kolom Status berisi satu dari tiga nilai berikut (USULAN).' dan 'Kolom Tingkat Risiko pada tabel Temuan Utama dan Risiko berisi nilai Tinggi, Sedang, atau Rendah.' Petunjuk: 'Kolom Status berisi satu dari tiga nilai pada bagian Istilah.' dan 'Kolom Tingkat Risiko memuat Tinggi, Sedang, atau Rendah.' Cukup satu tempat, tempat lain merujuk."
+    },
+    {
+      "lokasi": "ISTILAH tabel Status baris Tidak Berlaku; TUJUAN DAN LINGKUP tabel pengecualian baris pertama",
+      "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui (Staff Legal / Departemen Legal).",
+      "bukti": "'Alasan ditulis di Catatan/Tindak Lanjut.' dan 'Tidak ditelaah dengan formulir ini.' Usul: 'Staff Legal menulis alasannya di Catatan/Tindak Lanjut.' dan 'Departemen Legal tidak menelaahnya dengan formulir ini.'"
+    },
+    {
+      "lokasi": "ISI FORMULIR tabel Informasi Kontrak (Nama Klien) dan aspek C3.2 (klien akhir)",
+      "masalah": "Dua kata untuk satu pihak: 'klien' di samping istilah terdefinisi 'pelanggan' / 'Kontrak pelanggan'. Label sumber sengaja dipertahankan (notes/LEG-FRM-01.md bagian 4), tetapi tabel Istilah tidak menjelaskannya.",
+      "bukti": "Sumber 1lsdht...: '| Nama Klien |'; dokumen: 'Kontrak pelanggan | Kontrak antara SINUX dan pelanggan ...'. Usul: tambah satu kalimat di Istilah atau Petunjuk bahwa Nama Klien = nama pelanggan; 'klien akhir' = pelanggan dari pelanggan."
+    },
+    {
+      "lokasi": "TUJUAN DAN LINGKUP, Tujuan kalimat kedua",
+      "masalah": "Dua 'dan' berderet membuat kalimat kabur batasnya (gaya, minor).",
+      "bukti": "'Departemen Legal mengidentifikasi risiko hukum dan risiko komersial dan memastikan hak dan kewajiban para pihak jelas.' Usul: '... mengidentifikasi risiko hukum serta risiko komersial, dan memastikan ...'"
+    },
+    {
+      "lokasi": "ISI FORMULIR aspek C1.1",
+      "masalah": "Kualifikasi sumber hilang: SOP Contract Review menulis NIB dan izin diperiksa 'jika diperlukan' dan menyebut dokumen pengesahan/penerimaan pemberitahuan; C1.1 menjadikan NIB pemeriksaan tanpa syarat. Bukan fakta karangan, tetapi menggeser bobot kriteria.",
+      "bukti": "Sumber 1E_8...: 'NIB dan izin yang relevan dengan kegiatan usaha, jika diperlukan'; dokumen: 'kesesuaiannya dengan akta pendirian, akta perubahan, dan NIB pelanggan.'"
+    },
+    {
+      "lokasi": "PETUNJUK PENGISIAN butir 1",
+      "masalah": "Nilai isian literal tidak ditandai sehingga kalimat bisa dibaca ganda.",
+      "bukti": "'... dan menulis tidak ada pada field yang tidak ada di kontrak.' Usul: '... menulis tanda strip (-) pada field yang tidak ada di kontrak' atau rumusan setara."
+    }
+  ],
+  "catatan_pemeriksaan": {
+    "a_fakta": "Cocok sumber 1lsdhtFZrf7bdckagXYtEXxmIyRw3jNw-28iXJpoTeaY: 9 field Informasi Kontrak, 8 kelompok, 22 aspek sumber (C1.1 sampai C8.2), 3 opsi Hasil, 3 opsi Rekomendasi, blok Catatan Penelaahan, 3 lokasi penyimpanan. Isi Hal yang Diperiksa dicek terhadap 1E_8SkaHZo8txljia4JhWjRHakimojRCpwivZzrPyamE (tabel aspek, pemeriksaan awal pihak lawan, contoh isu, DoA) dan cocok. Empat aspek tambahan dan pemisahan C1.2/C8.2 berlabel USULAN. Rujukan butir SNX-LEG-SOP-02 (4.2, 4.7, 4.8-4.10, 4.14, 4.19, 6.1, 6.4, 6.7) dan SNX-LEG-SOP-01 (4.21, 4.24) cocok dengan specs. Judul 10 kode SNX cocok worklist.",
+    "b_karangan": "Tidak ditemukan. Satu-satunya nama orang: Samuel Kristanto Utomo / President Director (blok Approval), 'Direktur Utama' di badan. Tidak ada angka waktu, nilai, atau tanggal.",
+    "c_kriteria": "Terpenuhi: tabel Daftar Periksa (26 aspek) untuk meninjau kontrak pelanggan; tabel Temuan Utama dan Risiko dengan Jenis Risiko Hukum/Komersial dan Tingkat Risiko; definisi Risiko hukum dan Risiko komersial.",
+    "d_runbook": "Status Draft, Rev. 00, tanggal efektif kosong, tanda tangan kosong; tiga penanda tangan berbeda sesuai defaults LEG; klasifikasi RESTRICTED (Internal) sesuai worklist; nol rujukan internal AI, nol em/en-dash; lint_doc generic pass (fails kosong, warn 28 USULAN).",
+    "e_peran": "Peran (Staff Legal, Line Manager Legal, Unit Kerja Pemohon, PIC Internal, Unit Kerja Terkait, Pejabat Berwenang) konsisten dengan pelaku di Ketentuan, Petunjuk butir 9, dan tabel Rekaman; rujukan silang butir Ketentuan per peran benar. Pemetaan JA-08/JA-09 (K-13) cocok specs/HR-ORG-01.json.",
+    "g_data_conflicts_audit": "Ejaan Samuel dan sebutan President Director/Direktur Utama sesuai data_conflicts. Cacat audit 5.1 dan 5.2.1 sampai 5.2.13 untuk fileId ini ditangani atau dijelaskan di notes/LEG-FRM-01.md bagian 4."
+  }
+}

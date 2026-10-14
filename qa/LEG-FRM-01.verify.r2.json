@@ -1,0 +1,47 @@
+{
+ "verdict": "FAIL",
+ "blocking": [
+  {
+   "lokasi": "ISI FORMULIR, paragraf pengantar Daftar Periksa Penelaahan Kontrak",
+   "masalah": "Kalimat ini salah tentang isi formulir dan bertentangan dengan Petunjuk Pengisian butir 2. Kolom Hal yang Diperiksa sudah terisi kriteria pada 26 baris (C1.1 sampai C8.2), sedangkan Petunjuk butir 2 memerintahkan Staff Legal membacanya tanpa mengubahnya. Pengisi formulir mendapat dua perintah yang berlawanan.",
+   "bukti": "Isi Formulir: \"Kolom Hal yang Diperiksa, Status, dan Catatan/Tindak Lanjut diisi Staff Legal sesuai Petunjuk Pengisian.\" Petunjuk Pengisian butir 2: \"Staff Legal membaca kolom Hal yang Diperiksa tanpa mengubahnya.\" Perbaikan: hapus \"Hal yang Diperiksa,\" dari kalimat Isi Formulir (menjadi \"Kolom Status dan Catatan/Tindak Lanjut diisi Staff Legal ...\")."
+  }
+ ],
+ "nonblocking": [
+  {
+   "lokasi": "Ketentuan Penggunaan butir 1; Petunjuk Pengisian butir 1, 2, 6",
+   "masalah": "Pasif tanpa pelaku padahal pelakunya Staff Legal (RUNBOOK §6a.6)",
+   "bukti": "\"Satu formulir dipakai untuk satu kontrak pelanggan.\"; \"Field yang tidak ada pada kontrak ditulis tidak ada.\"; \"Hal tambahan yang khusus untuk satu kontrak ditulis di kolom Catatan/Tindak Lanjut.\"; \"Tabel Temuan Utama dan Risiko diisi satu baris per temuan.\""
+  },
+  {
+   "lokasi": "Istilah (Nilai Status dan Tingkat Risiko); Dokumen Terkait baris SNX-LEG-SOP-02",
+   "masalah": "Benda masih diberi kata kerja pelaku (ringan, tidak berulang berat)",
+   "bukti": "\"Kolom Status memakai tiga nilai berikut (USULAN).\"; \"Kolom Tingkat Risiko ... memakai nilai Tinggi, Sedang, atau Rendah.\"; \"Prosedur itu memakai istilah checklist review dan mencantumkan formulir ini ...\""
+  },
+  {
+   "lokasi": "Ketentuan butir 5, Petunjuk Pengisian butir 5, Isi Formulir (Ringkasan Hasil Penelaahan)",
+   "masalah": "Pengulangan isi antarbagian (§6a.6): perintah mencentang dengan tanda ☒ ditulis tiga kali",
+   "bukti": "Petunjuk butir 5: \"Staff Legal mencentang pilihan yang sesuai ... dengan tanda ☒ pada kotak ☐ (Ketentuan butir 5).\" Isi Formulir: \"Staff Legal mencentang pilihan yang sesuai dengan tanda ☒ pada kotak ☐.\""
+  },
+  {
+   "lokasi": "Tujuan dan Lingkup, tabel Butir yang dikecualikan, baris Keputusan bisnis",
+   "masalah": "\"pihak berwenang\" dipakai di samping istilah terdefinisi \"Pejabat Berwenang\"; pembaca bisa mengira keduanya sama (§6a.7)",
+   "bukti": "\"Tetap milik pihak berwenang di bidangnya.\""
+  },
+  {
+   "lokasi": "Peran, baris Unit Kerja Pemohon dan Line Manager Legal",
+   "masalah": "Rujukan silang ke butir Ketentuan kurang tepat: Ketentuan butir 1 dan 2 tidak menyebut Unit Kerja Pemohon; Line Manager Legal juga bertindak di Ketentuan butir 1 (memutuskan kewajiban pakai) dan butir 4 (penerima eskalasi) tetapi tidak dirujuk",
+   "bukti": "Peran Unit Kerja Pemohon: \"(Ketentuan butir 1 dan 2)\"; Peran Line Manager Legal: \"(Ketentuan butir 2, 5, dan 6)\""
+  },
+  {
+   "lokasi": "Dokumen Terkait, baris SNX-HR-ORG-01",
+   "masalah": "Line Manager Legal dan Staff Legal di SNX-HR-ORG-01 adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09), bukan nama jabatan",
+   "bukti": "\"Sumber nama jabatan Line Manager Legal dan Staff Legal.\"; specs/HR-ORG-01.json matriks peran: \"Line Manager Legal | Legal & Compliance (JA-08)\""
+  },
+  {
+   "lokasi": "Petunjuk Pengisian butir 6",
+   "masalah": "Kapitalisasi nilai Jenis Risiko tidak seragam",
+   "bukti": "\"Hukum, Komersial, atau Hukum dan komersial\""
+  }
+ ]
+}

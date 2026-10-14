@@ -1,0 +1,1105 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "LEG-FRM-01",
+    "doc_type_cover": "FORM",
+    "doc_type_label": "Form",
+    "number": "SNX-LEG-FRM-01",
+    "department": "Legal",
+    "title": "Customer Contract Review Checklist",
+    "process_owner": "Line Manager Legal",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Staff Legal",
+      "reviewed": "Line Manager Legal",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Lingkup",
+      "blocks": [
+        {
+          "h2": "Tujuan"
+        },
+        {
+          "p": "Formulir ini memuat daftar periksa yang dipakai Departemen Legal untuk menelaah kontrak yang diajukan pelanggan sebelum kontrak ditandatangani oleh Pejabat Berwenang. Dengan formulir ini Departemen Legal mengidentifikasi risiko hukum dan risiko komersial dan memastikan hak dan kewajiban para pihak jelas."
+        },
+        {
+          "p": "Hasil yang dijaga: setiap kontrak pelanggan sudah ditelaah sebelum ditandatangani, dan temuan serta rekomendasi Departemen Legal tercatat dan dapat ditelusuri."
+        },
+        {
+          "h2": "Lingkup"
+        },
+        {
+          "p": "Departemen Legal memakai formulir ini untuk menelaah kontrak antara SINUX dan pelanggan, termasuk perjanjian layanan teknologi informasi, layanan komputasi awan, penjualan perangkat keras, layanan implementasi, layanan pemeliharaan, dan bentuk kerja sama komersial lainnya. Staff Legal menyesuaikan penelaahan dengan jenis layanan, karakteristik transaksi, dan risiko tiap kontrak."
+        },
+        {
+          "p": "Butir berikut dikecualikan dari formulir ini."
+        },
+        {
+          "table": {
+            "header": [
+              "Butir yang dikecualikan",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "Kontrak dengan vendor, pemasok, mitra kerja sama, dan subkontraktor",
+                "Tidak ditelaah dengan formulir ini. Kontrak vendor dan pemasok memakai SNX-LEG-FRM-02 (USULAN)."
+              ],
+              [
+                "Keputusan bisnis, komersial, keuangan, dan keamanan informasi",
+                "Tetap milik Pejabat Berwenang dan Unit Kerja Terkait sesuai bidangnya. Formulir ini hanya memuat catatan risikonya (SNX-LEG-SOP-02)."
+              ],
+              [
+                "Penerimaan permintaan, negosiasi, persetujuan, penandatanganan, dan pengarsipan kontrak",
+                "Diatur di SNX-LEG-SOP-02. Formulir ini hanya memuat hasil penelaahan."
+              ],
+              [
+                "Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang menyeluruh",
+                "Memakai SNX-LEG-FRM-03 (USULAN). Formulir ini hanya memuat pemeriksaan ketentuan kontraknya (aspek C5.1 dan C5.2)."
+              ]
+            ],
+            "widths_cm": [
+              5.5,
+              10.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {
+          "h2": "Istilah"
+        },
+        {
+          "table": {
+            "header": [
+              "Istilah",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "(USULAN)",
+                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+              ],
+              [
+                "Aspek",
+                "Satu hal pada kontrak yang ditelaah, ditulis satu baris pada tabel Daftar Periksa dengan kode C1.1 dan seterusnya."
+              ],
+              [
+                "Departemen Legal",
+                "Line Manager Legal dan Staff Legal."
+              ],
+              [
+                "DoA",
+                "Delegasi wewenang: pembagian wewenang menyetujui transaksi dan menandatangani kontrak menurut jenis dan nilai transaksi."
+              ],
+              [
+                "Kelompok",
+                "Kumpulan aspek yang sejenis pada tabel Daftar Periksa. Ada delapan kelompok."
+              ],
+              [
+                "Kontrak pelanggan",
+                "Kontrak antara SINUX dan pelanggan yang diajukan untuk ditandatangani."
+              ],
+              [
+                "Pejabat Berwenang",
+                "Pejabat yang menandatangani kontrak atas nama SINUX menurut DoA, anggaran dasar, surat kuasa, atau dasar kewenangan lain yang sah (SNX-LEG-SOP-02)."
+              ],
+              [
+                "Penelaahan",
+                "Pemeriksaan satu kontrak pelanggan dengan formulir ini, dari pengisian Informasi Kontrak sampai Rekomendasi."
+              ],
+              [
+                "Persetujuan Legal",
+                "Persetujuan internal Line Manager Legal bahwa penelaahan hukum atas kontrak sudah dilakukan dan hasilnya sudah disampaikan sesuai prosedur (SNX-LEG-SOP-02)."
+              ],
+              [
+                "PIC Internal",
+                "Orang yang ditunjuk Unit Kerja Pemohon sebagai kontak utama untuk satu kontrak. SNX-LEG-SOP-02 menyebutnya PIC Bisnis (USULAN)."
+              ],
+              [
+                "Risiko hukum",
+                "Akibat merugikan SINUX karena ketentuan kontrak bertentangan dengan hukum yang berlaku, tidak jelas, atau tidak seimbang (USULAN)."
+              ],
+              [
+                "Risiko komersial",
+                "Akibat merugikan SINUX pada harga, pembayaran, biaya, atau kewajiban layanan karena ketentuan kontrak (USULAN)."
+              ],
+              [
+                "Temuan",
+                "Ketentuan kontrak atau kekurangan informasi yang membuat satu aspek berstatus Perlu Tindak Lanjut."
+              ],
+              [
+                "Unit Kerja Pemohon",
+                "Unit kerja SINUX yang mengajukan kontrak pelanggan untuk ditelaah. SNX-LEG-SOP-02 menyebutnya Pemohon."
+              ],
+              [
+                "Unit Kerja Terkait",
+                "Unit kerja selain Departemen Legal yang memberi masukan sesuai bidangnya, misalnya Finance, Accounting & Tax, IT, atau fungsi keamanan informasi (SNX-LEG-SOP-02)."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "h2": "Nilai Status dan Tingkat Risiko"
+        },
+        {
+          "p": "Kolom Status berisi satu dari tiga nilai berikut (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Status",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Sesuai",
+                "Ketentuan kontrak untuk aspek itu memenuhi Hal yang Diperiksa."
+              ],
+              [
+                "Perlu Tindak Lanjut",
+                "Ada ketentuan yang harus diubah, dilengkapi, atau dibahas dengan Unit Kerja Terkait sebelum penandatanganan."
+              ],
+              [
+                "Tidak Berlaku",
+                "Aspek tidak ada pada kontrak ini atau tidak relevan dengan jenis layanannya. Alasan ditulis di Catatan/Tindak Lanjut."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Kolom Tingkat Risiko pada tabel Temuan Utama dan Risiko berisi nilai Tinggi, Sedang, atau Rendah. Kriterianya ada di SNX-LEG-SOP-02 butir 4.8 sampai 4.10."
+        }
+      ]
+    },
+    {
+      "h": "Ketentuan Penggunaan",
+      "blocks": [
+        {
+          "p": "1. Staff Legal memakai satu formulir untuk satu kontrak pelanggan dan mengisinya sesudah Unit Kerja Pemohon menyerahkan permintaan penelaahan secara lengkap (SNX-LEG-SOP-02 butir 6.1). Kewajiban memakai formulir ini untuk setiap kontrak pelanggan belum diputus (USULAN: Line Manager Legal memutuskan)."
+        },
+        {
+          "p": "2. Staff Legal mengisi tabel Informasi Kontrak dari permintaan Unit Kerja Pemohon dan dari kontrak. Line Manager Legal menetapkan Target Penyelesaian pada penugasan."
+        },
+        {
+          "p": "3. Staff Legal menelaah kontrak terhadap semua aspek pada tabel Daftar Periksa, mengisi Status dan Catatan/Tindak Lanjut tiap baris, dan memberi status Tidak Berlaku pada aspek yang tidak relevan (SNX-LEG-SOP-02 butir 4.7)."
+        },
+        {
+          "p": "4. Staff Legal mencatat tiap temuan pada tabel Temuan Utama dan Risiko dengan Jenis Risiko dan Tingkat Risiko, lalu mengeskalasi risiko Tinggi kepada Line Manager Legal (SNX-LEG-SOP-02 butir 6.4)."
+        },
+        {
+          "p": "5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi (cara mencentang di Petunjuk Pengisian butir 5), dan menulis dasar rekomendasi. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN). Line Manager Legal memeriksa formulir terisi."
+        },
+        {
+          "p": "6. Rekomendasi pada formulir ini bukan Persetujuan Legal. Line Manager Legal memberi Persetujuan Legal menurut SNX-LEG-SOP-02, dan Persetujuan Legal bukan pengganti persetujuan Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.2)."
+        },
+        {
+          "p": "7. Staff Legal menelaah ulang kontrak yang berubah material sesudah Persetujuan Legal (SNX-LEG-SOP-02 butir 4.14), dan mengisi formulir baru untuk telaah ulang itu (USULAN)."
+        },
+        {
+          "p": "8. Staff Legal menyimpan formulir terisi bersama berkas kontrak di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Formulir terisi berisi nama pelanggan dan nilai kontrak, sehingga Staff Legal memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
+        }
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Peran",
+              "Tugas pada formulir ini"
+            ],
+            "rows": [
+              [
+                "Staff Legal",
+                "Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi (Ketentuan butir 1 sampai 5, 7, dan 8). Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+              ],
+              [
+                "Line Manager Legal",
+                "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Dipetakan ke Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+              ],
+              [
+                "Unit Kerja Pemohon",
+                "Menyerahkan kontrak pelanggan dan data permintaan lewat PIC Internal (Ketentuan butir 1 dan 2)."
+              ],
+              [
+                "PIC Internal",
+                "Menjadi kontak utama Unit Kerja Pemohon untuk satu kontrak, menjawab pertanyaan Staff Legal, dan memastikan harga serta ketentuan komersial sesuai kesepakatan bisnis (aspek C3.1)."
+              ],
+              [
+                "Unit Kerja Terkait",
+                "Membahas temuan sesuai bidangnya bila Staff Legal mencentang pilihan pembahasan lebih lanjut pada Hasil Penelaahan."
+              ],
+              [
+                "Pejabat Berwenang",
+                "Memutuskan penerimaan risiko Tinggi, menyetujui transaksi, dan menandatangani kontrak menurut DoA. Mengisi baris Disetujui oleh pada tabel Catatan Penelaahan dan Persetujuan (USULAN). Jabatan pemegang peran ini belum ditetapkan karena matriks DoA belum terbit."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Pembuat, pemeriksa, dan penyetuju formulir ini tercantum di blok Approval pada halaman depan."
+        }
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {
+          "p": "1. Staff Legal mengisi sembilan field tabel Informasi Kontrak dari permintaan dan kontrak, dan menulis tidak ada pada field yang tidak ada di kontrak."
+        },
+        {
+          "p": "2. Staff Legal membaca kolom Hal yang Diperiksa tanpa mengubahnya, dan menulis hal tambahan yang khusus untuk satu kontrak di kolom Catatan/Tindak Lanjut."
+        },
+        {
+          "p": "3. Kolom Status berisi satu dari tiga nilai pada bagian Istilah."
+        },
+        {
+          "p": "4. Kolom Catatan/Tindak Lanjut memuat letak klausul (pasal atau halaman), temuan, dan perubahan yang diminta."
+        },
+        {
+          "p": "5. Staff Legal mencentang pilihan yang sesuai pada tabel Hasil Penelaahan dan Rekomendasi dengan tanda ☒ pada kotak ☐. Jumlah pilihan yang boleh dicentang ada di Ketentuan butir 5."
+        },
+        {
+          "p": "6. Staff Legal mengisi satu baris pada tabel Temuan Utama dan Risiko untuk tiap temuan. Kolom Rujukan memuat kode aspek, misalnya C4.3. Kolom Jenis Risiko memuat Hukum, Komersial, atau Hukum dan Komersial. Kolom Tingkat Risiko memuat Tinggi, Sedang, atau Rendah. Kolom Jenis Risiko dan Tingkat Risiko berstatus (USULAN)."
+        },
+        {
+          "p": "7. Kolom Pihak dan Target Selesai memuat jabatan penanggung jawab tindak lanjut dan tanggal targetnya."
+        },
+        {
+          "p": "8. Dasar rekomendasi memuat kode aspek dan temuan yang menjadi alasan rekomendasi."
+        },
+        {
+          "p": "9. Pada tabel Catatan Penelaahan dan Persetujuan, Staff Legal mengisi baris Disusun oleh, Line Manager Legal mengisi baris Diperiksa oleh, dan Pejabat Berwenang mengisi baris Disetujui oleh (USULAN). Tiap pihak menulis nama dan jabatan, tanggal, dan tanda tangan sendiri."
+        },
+        {
+          "p": "10. Tabel Lokasi Penyimpanan Dokumen memuat tautan Google Drive atau lokasi berkas untuk kontrak, hasil penelaahan, dan korespondensi."
+        }
+      ]
+    },
+    {
+      "h": "Isi Formulir",
+      "blocks": [
+        {
+          "p": "Semua sel isian kosong sampai Staff Legal mengisinya untuk satu kontrak pelanggan."
+        },
+        {
+          "h2": "Informasi Kontrak"
+        },
+        {
+          "table": {
+            "header": [
+              "Keterangan",
+              "Informasi"
+            ],
+            "rows": [
+              [
+                "Nama Klien",
+                ""
+              ],
+              [
+                "Nama/Jenis Kontrak",
+                ""
+              ],
+              [
+                "Nomor Kontrak",
+                ""
+              ],
+              [
+                "Nilai Kontrak",
+                ""
+              ],
+              [
+                "Jangka Waktu Kontrak",
+                ""
+              ],
+              [
+                "Unit Kerja Pemohon",
+                ""
+              ],
+              [
+                "PIC Internal",
+                ""
+              ],
+              [
+                "Tanggal Penerimaan",
+                ""
+              ],
+              [
+                "Target Penyelesaian",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              5,
+              11
+            ]
+          }
+        },
+        {
+          "h2": "Daftar Periksa Penelaahan Kontrak"
+        },
+        {
+          "p": "Aspek C1.2, C2.4, C4.5, C5.4, C7.3, dan C8.2 berstatus (USULAN) dan menunggu keputusan Line Manager Legal. Staff Legal mengisi kolom Status dan Catatan/Tindak Lanjut sesuai Petunjuk Pengisian."
+        },
+        {
+          "h2": "Kelompok C1: Identitas dan Kewenangan Para Pihak"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C1.1",
+                "Identitas Para Pihak",
+                "Nama badan hukum dan bentuk badan usaha, alamat, serta kesesuaiannya dengan akta pendirian, akta perubahan, dan NIB pelanggan. Informasi risiko atau sengketa pelanggan yang dapat diverifikasi.",
+                "",
+                ""
+              ],
+              [
+                "C1.2",
+                "Kewenangan Penandatangan Pelanggan",
+                "Identitas penandatangan pelanggan dan dasar kewenangannya, termasuk surat kuasa atau dasar kewenangan lain bila relevan.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C2: Ruang Lingkup dan Pelaksanaan"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C2.1",
+                "Ruang Lingkup Layanan",
+                "Kejelasan layanan, barang, atau pekerjaan yang dikontrakkan dan tanggung jawab tiap pihak. Kesesuaian jenis layanan dengan kegiatan usaha dan perizinan SINUX di SNX-LEG-REG-01 (USULAN).",
+                "",
+                ""
+              ],
+              [
+                "C2.2",
+                "Spesifikasi dan Keluaran",
+                "Kejelasan spesifikasi dan deliverable yang dijanjikan kepada pelanggan.",
+                "",
+                ""
+              ],
+              [
+                "C2.3",
+                "Standar Layanan",
+                "Target SLA, sanksi atau denda atas SLA yang tidak terpenuhi, dan ketentuan kompensasi atau service credit. Kesesuaian target SLA dengan SNX-OPS-SOP-05 (USULAN).",
+                "",
+                ""
+              ],
+              [
+                "C2.4",
+                "Tumpang Tindih dengan Kontrak Lain",
+                "Potensi tumpang tindih wilayah, produk, atau pihak dengan kontrak lain.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C3: Harga dan Pembayaran"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C3.1",
+                "Nilai Kontrak",
+                "Harga dan nilai kontrak sesuai kesepakatan komersial yang dikonfirmasi PIC Internal.",
+                "",
+                ""
+              ],
+              [
+                "C3.2",
+                "Mekanisme Pembayaran",
+                "Jadwal pembayaran, invoice, dan kondisi pembayaran, termasuk apakah pembayaran bergantung pada pembayaran klien akhir.",
+                "",
+                ""
+              ],
+              [
+                "C3.3",
+                "Pajak",
+                "Pengaturan pajak atas harga dan nilai kontrak.",
+                "",
+                ""
+              ],
+              [
+                "C3.4",
+                "Biaya Tambahan",
+                "Biaya di luar harga kontrak dan syarat pengenaannya.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C4: Hak, Kewajiban, dan Risiko Hukum"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C4.1",
+                "Hak dan Kewajiban",
+                "Pembagian kewajiban para pihak dan mekanisme pemenuhannya. Keadaan ingkar janji (wanprestasi), masa perbaikan, dan konsekuensinya.",
+                "",
+                ""
+              ],
+              [
+                "C4.2",
+                "Ganti Rugi",
+                "Ketentuan ganti rugi dan pengecualian yang relevan.",
+                "",
+                ""
+              ],
+              [
+                "C4.3",
+                "Pembatasan Tanggung Jawab",
+                "Apakah tanggung jawab SINUX dibatasi dan proporsional, serta pengecualian yang relevan.",
+                "",
+                ""
+              ],
+              [
+                "C4.4",
+                "Keadaan Kahar",
+                "Keadaan kahar (force majeure), kewajiban pemberitahuan, dan akibat hukumnya.",
+                "",
+                ""
+              ],
+              [
+                "C4.5",
+                "Hak Penangguhan Pembayaran atau Layanan",
+                "Hak penangguhan pembayaran atau layanan.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C5: Data, Kerahasiaan, dan Kekayaan Intelektual"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C5.1",
+                "Kerahasiaan",
+                "Cakupan informasi rahasia, pengecualian, dan kewajiban setelah kontrak berakhir. Tingkat klasifikasi informasi pelanggan menurut SNX-ISMS-PRO-01 (USULAN).",
+                "",
+                ""
+              ],
+              [
+                "C5.2",
+                "Pelindungan Data Pribadi",
+                "Bila kontrak melibatkan data pribadi: dasar dan tujuan pemrosesan, peran para pihak (pengendali atau prosesor), kewajiban keamanan, dan notifikasi insiden (SNX-LEG-SOP-01 butir 4.21).",
+                "",
+                ""
+              ],
+              [
+                "C5.3",
+                "Kekayaan Intelektual",
+                "Kepemilikan, lisensi, penggunaan, dan hasil pekerjaan. Kekayaan intelektual yang didaftarkan atas nama pihak lain.",
+                "",
+                ""
+              ],
+              [
+                "C5.4",
+                "Keamanan Informasi",
+                "Kontrol yang dipersyaratkan, akses, pelaporan insiden, dan tanggung jawab pihak terkait. Kesesuaian kewajiban pemberitahuan insiden kepada pelanggan dengan keputusan notifikasi di SNX-ISMS-SOP-01 (USULAN).",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C6: Jangka Waktu dan Pengakhiran"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C6.1",
+                "Jangka Waktu",
+                "Tanggal efektif, durasi, perpanjangan, dan batas pemberitahuan.",
+                "",
+                ""
+              ],
+              [
+                "C6.2",
+                "Pengakhiran",
+                "Dasar, prosedur, akibat, dan kewajiban setelah pengakhiran. Ada mekanisme pengakhiran yang memadai.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C7: Penyelesaian Sengketa dan Ketentuan Umum"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C7.1",
+                "Hukum yang Berlaku",
+                "Hukum yang berlaku atas kontrak.",
+                "",
+                ""
+              ],
+              [
+                "C7.2",
+                "Penyelesaian Sengketa",
+                "Forum dan mekanisme penyelesaian sengketa.",
+                "",
+                ""
+              ],
+              [
+                "C7.3",
+                "Konsistensi Dokumen",
+                "Kesesuaian kontrak dengan lampiran, addendum, kontrak terkait, dan dokumen transaksi lainnya.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C8: Persetujuan dan Penandatanganan"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C8.1",
+                "Persetujuan",
+                "Persetujuan internal yang dipersyaratkan sebelum penandatanganan: persetujuan bisnis, keuangan, keamanan informasi, dan Pejabat Berwenang menurut DoA. Persetujuan Legal bukan pengganti persetujuan itu (SNX-LEG-SOP-02 butir 4.2).",
+                "",
+                ""
+              ],
+              [
+                "C8.2",
+                "Kewenangan Penandatanganan SINUX",
+                "Dasar kewenangan penandatangan dari pihak SINUX: DoA, anggaran dasar, surat kuasa, atau dasar lain yang sah. Bila matriks DoA belum tersedia atau kewenangan tidak jelas, Line Manager Legal meminta konfirmasi tertulis dari Pejabat Berwenang sebelum kontrak ditandatangani (SNX-LEG-SOP-02 butir 6.7).",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              3.7,
+              5.8,
+              1.9,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Ringkasan Hasil Penelaahan"
+        },
+        {
+          "p": "Cara mencentang ada di Petunjuk Pengisian butir 5."
+        },
+        {
+          "table": {
+            "header": [
+              "Tanda",
+              "Hasil Penelaahan"
+            ],
+            "rows": [
+              [
+                "☐",
+                "Tidak terdapat temuan berdasarkan pemeriksaan yang dilakukan"
+              ],
+              [
+                "☐",
+                "Terdapat temuan yang harus ditindaklanjuti sebelum penandatanganan."
+              ],
+              [
+                "☐",
+                "Diperlukan pembahasan lebih lanjut dengan Unit Kerja Terkait."
+              ]
+            ],
+            "widths_cm": [
+              1.6,
+              14.4
+            ]
+          }
+        },
+        {
+          "h2": "Temuan Utama dan Risiko"
+        },
+        {
+          "table": {
+            "header": [
+              "No",
+              "Rujukan",
+              "Temuan dan Risiko",
+              "Jenis Risiko",
+              "Tingkat Risiko",
+              "Perubahan atau Tindak Lanjut",
+              "Pihak dan Target Selesai"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.0,
+              1.9,
+              3.2,
+              1.8,
+              2.0,
+              3.7,
+              2.4
+            ]
+          }
+        },
+        {
+          "h2": "Rekomendasi"
+        },
+        {
+          "table": {
+            "header": [
+              "Tanda",
+              "Rekomendasi"
+            ],
+            "rows": [
+              [
+                "☐",
+                "Dapat dilanjutkan ke tahap persetujuan dan penandatanganan."
+              ],
+              [
+                "☐",
+                "Dapat dilanjutkan setelah tindak lanjut yang disyaratkan diselesaikan dan diverifikasi."
+              ],
+              [
+                "☐",
+                "Belum direkomendasikan untuk ditandatangani karena terdapat risiko atau isu material yang belum diselesaikan."
+              ]
+            ],
+            "widths_cm": [
+              1.6,
+              14.4
+            ]
+          }
+        },
+        {
+          "table": {
+            "header": [
+              "Keterangan",
+              "Informasi"
+            ],
+            "rows": [
+              [
+                "Dasar rekomendasi",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              5,
+              11
+            ]
+          }
+        },
+        {
+          "h2": "Catatan Penelaahan dan Persetujuan"
+        },
+        {
+          "table": {
+            "header": [
+              "Tahapan",
+              "Nama/Jabatan",
+              "Tanggal",
+              "Tanda Tangan"
+            ],
+            "rows": [
+              [
+                "Disusun oleh",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Diperiksa oleh",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Disetujui oleh",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              6.0,
+              3.0,
+              3.4
+            ]
+          }
+        },
+        {
+          "h2": "Lokasi Penyimpanan Dokumen"
+        },
+        {
+          "table": {
+            "header": [
+              "Keterangan",
+              "Informasi"
+            ],
+            "rows": [
+              [
+                "Lokasi kontrak yang ditelaah",
+                ""
+              ],
+              [
+                "Lokasi hasil penelaahan",
+                ""
+              ],
+              [
+                "Lokasi korespondensi",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              5,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Kode",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "SNX-LEG-SOP-01",
+                "Legal Operational. Butir 4.21 memuat tinjauan pelindungan data pribadi pada kontrak, dan butir 4.24 memuat usulan repositori dokumen legal (USULAN)."
+              ],
+              [
+                "SNX-LEG-SOP-02",
+                "Contract Review & Legal Approval. Prosedur penerimaan permintaan, penelaahan, persetujuan, dan penandatanganan kontrak. Formulir ini tercantum di prosedur itu sebagai SNX-LEG-FRM-01, checklist review untuk kontrak pelanggan (USULAN)."
+              ],
+              [
+                "SNX-LEG-SOP-03",
+                "Legal Document Control & Retention. Tempat usulan periode retensi dokumen legal."
+              ],
+              [
+                "SNX-LEG-FRM-02",
+                "Vendor / Supplier Contract Review Checklist. Daftar periksa untuk kontrak vendor dan pemasok (USULAN)."
+              ],
+              [
+                "SNX-LEG-FRM-03",
+                "Data Protection & Confidentiality Compliance Review. Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang lebih luas dari aspek C5.1 dan C5.2 (USULAN)."
+              ],
+              [
+                "SNX-LEG-REG-01",
+                "Company Licenses & Permits Register. Rujukan kegiatan usaha dan perizinan SINUX untuk aspek C2.1 (USULAN)."
+              ],
+              [
+                "SNX-ISMS-PRO-01",
+                "Information Classification & Handling. Sumber tingkat klasifikasi RESTRICTED (Internal) dan klasifikasi informasi pelanggan."
+              ],
+              [
+                "SNX-ISMS-SOP-01",
+                "Information Security Incident Management. Pembanding kewajiban pemberitahuan insiden pada aspek C5.4 (USULAN)."
+              ],
+              [
+                "SNX-OPS-SOP-05",
+                "Service Level Agreement (SLA) Monitoring. Pembanding target SLA pada aspek C2.3 (USULAN)."
+              ],
+              [
+                "SNX-HR-ORG-01",
+                "Struktur Organisasi SINUX. Line Manager Legal dan Staff Legal adalah nama peran di matriks peran, dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)."
+              ],
+              [
+                "Belum bernomor",
+                "Matriks DoA. Dirujuk pada aspek C8.1 dan C8.2. Belum terbit."
+              ]
+            ],
+            "widths_cm": [
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {
+          "h2": "Rekaman"
+        },
+        {
+          "table": {
+            "header": [
+              "Rekaman",
+              "Lokasi dan pemilik",
+              "Retensi"
+            ],
+            "rows": [
+              [
+                "Formulir terisi per kontrak pelanggan",
+                "Folder Google Drive Departemen Legal bersama berkas kontrak (Ketentuan butir 8). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+              ],
+              [
+                "Kontrak yang ditelaah dan korespondensi",
+                "Lokasi tertulis di tabel Lokasi Penyimpanan Dokumen. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19).",
+                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              7.0,
+              4.5
+            ]
+          }
+        },
+        {
+          "h2": "Acuan ISO"
+        },
+        {
+          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+        },
+        {
+          "table": {
+            "header": [
+              "Standar",
+              "Klausul",
+              "Hubungan dengan formulir ini"
+            ],
+            "rows": [
+              [
+                "ISO 9001:2015",
+                "8.2.3 Peninjauan persyaratan produk dan jasa",
+                "Staff Legal menelaah persyaratan kontrak pelanggan dengan tabel Daftar Periksa sebelum SINUX berkomitmen menandatangani."
+              ],
+              [
+                "ISO 9001:2015",
+                "8.2.4 Perubahan persyaratan produk dan jasa",
+                "Staff Legal menelaah ulang kontrak yang berubah material dengan formulir baru (Ketentuan butir 7)."
+              ],
+              [
+                "ISO 9001:2015",
+                "7.5.3 Pengendalian informasi terdokumentasi",
+                "Staff Legal menyimpan formulir terisi dan mencatat lokasi, pemilik, dan klasifikasinya."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
+                "Staff Legal menelaah kesesuaian ketentuan kontrak dengan hukum yang berlaku dan persyaratan kontraktual lewat tabel Daftar Periksa."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.32 Hak kekayaan intelektual",
+                "Aspek C5.3 mencakup pemeriksaan kepemilikan dan penggunaan kekayaan intelektual dalam kontrak."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.34 Privasi dan pelindungan data pribadi",
+                "Aspek C5.2 mencakup pemeriksaan ketentuan data pribadi dalam kontrak."
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              5.4,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {
+          "p": "Formulir ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau formulir ini setiap tahun."
+        }
+      ]
+    }
+  ]
+}
