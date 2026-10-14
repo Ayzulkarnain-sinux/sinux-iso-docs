@@ -865,9 +865,9 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-SOP-11",
-   "out_path": null,
+   "out_path": "out/02_HR/SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
@@ -875,13 +875,16 @@
      "title": "SINUX_Job_Analysis_2026.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:01:28Z",
-   "pen_agent": "a2cb5b7e1e129cb63"
+   "usulan_count": 44,
+   "open_items": [
+    "Pemeriksa PDF r1: halaman 15 kosong antara bagian 10 dan 11 (page break template + isi bagian 10 pas batas halaman)."
+   ],
+   "updated_at": "2026-10-14T23:13:27Z",
+   "pen_agent": "a2cb5b7e1e129cb63",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 23,
@@ -891,9 +894,9 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-SOP-12",
-   "out_path": null,
+   "out_path": "out/02_HR/SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
@@ -901,13 +904,14 @@
      "title": "SINUX_Job_Analysis_2026.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 46,
    "open_items": [],
-   "updated_at": "2026-10-14T23:01:34Z",
-   "pen_agent": "a03372a682640aa2e"
+   "updated_at": "2026-10-14T23:17:18Z",
+   "pen_agent": "a03372a682640aa2e",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 24,
@@ -917,9 +921,9 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-HR-SOP-13",
-   "out_path": null,
+   "out_path": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
@@ -927,13 +931,14 @@
      "title": "SINUX_Job_Analysis_2026.docx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 42,
    "open_items": [],
-   "updated_at": "2026-10-14T23:02:31Z",
-   "pen_agent": "aec5ea3082629635b"
+   "updated_at": "2026-10-14T23:17:39Z",
+   "pen_agent": "aec5ea3082629635b",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 25,
@@ -1017,7 +1022,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-SOP-02",
    "out_path": null,
    "sources": [
@@ -1037,7 +1042,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:13:09Z",
+   "pen_agent": "a047bde100d8c7081"
   },
   {
    "wl_index": 28,
@@ -1524,7 +1530,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-REG-01",
    "out_path": null,
    "sources": [
@@ -1539,7 +1545,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:13:34Z",
+   "pen_agent": "a3ea3b013a1539209"
   },
   {
    "wl_index": 47,
@@ -2433,8 +2440,17 @@
     "Semua spec: ganti label \"(USULAN, dikonfirmasi konsultan)\" menjadi \"(USULAN, perlu konfirmasi konsultan)\"; FAT-SOP-01 butir 4.15 frasa \"versi tim\"",
     "ISMS-PLN-01: simpul diagram Recovery Lead vs Incident Commander keamanan; label USULAN pelaku kesiapan bagian 4",
     "FAT-SOP-05: pelaku Finance Lead di 4.6 beri label USULAN jelas dan selaraskan dengan bagian 5",
-    "COM-SOP-01: frasa \"SOP sumber\" 6 kali; status Lost di 6.7; dua langkah berisi dua tindakan"
+    "COM-SOP-01: frasa \"SOP sumber\" 6 kali; status Lost di 6.7; dua langkah berisi dua tindakan",
+    "HR-SOP-10: peran Atasan Langsung di bagian 5 merujuk 6.4 tetapi 6.4 tanpa langkah untuk peran itu"
    ]
+  },
+  {
+   "task": "Konsistensi lintas HR-SOP-10/11/12/13 (Promotion, Demotion, Rotation, Mutation): satu rumusan batas antar-SOP, penetap keputusan, dan istilah; perbaiki lewat penyusun masing-masing bila beda.",
+   "added": "2026-10-14T23:10Z"
+  },
+  {
+   "task": "QA W8: pindai halaman kosong (hanya header/footer) di semua docx out/ lewat soffice+pdftotext; dokumen yang kena diperbaiki lewat isi (panjang bagian sebelum page break), bukan renderer (format terkunci).",
+   "added": "2026-10-14T23:15Z"
   }
  ]
 }
