@@ -1,0 +1,31 @@
+{
+ "doc": "out/08_ISMS/SNX-ISMS-SOP-02 User Access Control & Authorization (Rev00 DRAFT).docx",
+ "source": "1JoSiwoMglIxy7Ic3t0EhRfvzJgf5ydzT (SNX-ISMS-SOP-02_SOP_User_Access_Control_Authorization.docx)",
+ "criteria": "checklist baris 84: Description SNX-ISMS-SOP-02_SOP_User_Access_Control_Authorization.docx; ISO 9001:2015 7.1.3; ISO/IEC 27001:2022 5.15, 5.16, 5.17, 5.18, 8.2, 8.3, 8.5",
+ "verdict": "PASS",
+ "blocking": [],
+ "checks": {
+  "a_fakta_cocok_sumber": "Cocok. Tujuan dan scope = kalimat sumber utuh. Semua angka sumber dipertahankan: 12 karakter, 5 hari kerja, hari terakhir kerja, triwulan, semester, 10 hari kerja, 90 hari, 100%, 95%, 3 tahun, minimal 90 hari. Matriks akses per peran cocok sel per sel dengan tabel Bagian 6 sumber dan tetap berlabel (USULAN). Angka tanpa sumber berlabel (USULAN): 2 hari kerja, 1 hari kerja, pemilik dan retensi catatan sampling.",
+  "b_karangan": "Tidak ditemukan fakta karangan. Tambahan di luar SOP-02 punya dasar di korpus: 'satu baris per akun per sistem' dan kolom 'Level akses' (REG-04), sheet 'Review Periodik' dan tindak lanjut 10 hari kerja (REG-04 Cara pakai), pemilik Head of Operation untuk Service Hub, Jumphost, password manager (REG-01 AST-001, 002, 004), sub divisi NOC, SOC, Service Delivery dan PM (POL-OPS-001), pemetaan 8.18 ke SOP-02 (SoA baris 8.18), judul SNX-OPS-SOP-02, SNX-ISMS-SOP-04, SNX-OPS-FRM-06.",
+  "c_kriteria": "Terpenuhi. Nomor SNX-ISMS-SOP-02 dan judul sesuai Description; 7.1.3 dan ketujuh kontrol Annex A tercantum di bagian 11 dengan nama kontrol yang benar dan dipetakan ke prinsip bagian 4.",
+  "d_runbook_0_6": "Lulus. Status Draft, Rev 00, Effective Date kosong, tanda tangan kosong; tiga penanda tangan berbeda sesuai defaults ISMS; klasifikasi RESTRICTED (Internal) mengikuti sumber dan tercetak di footer; password manager ditulis 'vault' dengan 'Status operasional: menunggu konfirmasi Ops'; Zammad dan Service Hub (GLPI) didefinisikan; tidak ada rujukan internal AI, kredensial, hostname, em-dash, atau en-dash (dipindai di seluruh XML docx).",
+  "e_konsistensi_peran": "Lulus. Semua PIC bagian 6 dan 8 serta pemilik rekaman bagian 11 adalah peran di tabel bagian 5 (PIC 'Pemohon atau atasan langsung' = gabungan dua peran terdaftar).",
+  "f_bahasa": "Tidak ada pelanggaran §6a yang jelas. Langkah prosedur aktif dengan PIC, maksimal sekitar 22 kata. Catatan gaya di nonblocking.",
+  "g_data_conflicts_dan_audit": "Lulus. Samuel Kristanto Utomo / President Director, Fani Fatullah / VP Tech Operation and Services, Erik Dwi Yanto sesuai defaults; badan dokumen tidak menyebut COO atau Direktur Utama. Ke-8 cacat di context/audit bagian 5 untuk fileId ini ditangani atau dijelaskan di notes/ISMS-SOP-02.md bagian 5 dan open items."
+ },
+ "nonblocking": [
+  {"lokasi": "Bagian 8 SLA, baris 'Tindak lanjut keputusan Ubah atau Cabut dan temuan review'", "masalah": "Target sumber '95%' hanya untuk 'Temuan review ditutup dalam 10 hari kerja'; dokumen memperluasnya ke keputusan Ubah atau Cabut. Tenggat 10 hari didukung REG-04 ('tindak lanjut maksimal 10 hari kerja'), perluasan target 95% tidak berlabel. Sudah open item 6 di notes; pertimbangkan label (USULAN) pada perluasan itu."},
+  {"lokasi": "Bagian 2 Scope", "masalah": "§6a.4 meminta scope menyebut yang dikecualikan; tidak ada pengecualian karena sumber diam. Tercatat open item 11; tunggu Head of Operation."},
+  {"lokasi": "Bagian 3 Definisi, 'Pemilik sistem'", "masalah": "Definisi melingkar: 'Pemilik sistem | Pemilik sistem yang tercatat di kolom Pemilik SNX-ISMS-REG-01.' Usul: 'Pemegang tanggung jawab atas sistem, sesuai kolom Pemilik SNX-ISMS-REG-01.'"},
+  {"lokasi": "Bagian 3 dan 4", "masalah": "Pengulangan isi antarbagian (§6a.6): definisi Least privilege, Need-to-know, Segregation of duties, Akun break-glass disalin persis ke prinsip bagian 4; 'Jumphost merekam sesi' muncul di definisi, dua kali di bagian 4, dan intro 6.7."},
+  {"lokasi": "6.4 dan definisi 'Mutasi'", "masalah": "Istilah bergantian (§6a.7): judul dan output memakai 'mutasi', langkah 1 sampai 3 memakai 'perpindahan peran'. Juga 'ticketing system' (scope, bagian 4) bergantian dengan 'sistem tiket' (definisi)."},
+  {"lokasi": "Bagian 9 Exception Management", "masalah": "Pasif tanpa pelaku padahal pelaku diketahui: 'Semua akses dicabut segera (butir 6.5).', 'Kredensial dirotasi segera dan dilaporkan sesuai SNX-ISMS-SOP-01 (butir 6.2).', 'Akses privileged diberikan tanpa Jumphost'. Usul: sebut Administrator sistem dan Pengguna akun."},
+  {"lokasi": "Bagian 9 Exception Management, 'Sistem tidak mendukung akses lewat Jumphost'", "masalah": "Bisa dibaca bertentangan dengan prinsip 'Akses production pelanggan hanya melalui Jumphost SINUX yang merekam sesi'; tidak ada kontrol pengganti (mis. pencatatan sesi). Kontradiksi berasal dari sumber; layak jadi open item untuk Head of Operation."},
+  {"lokasi": "Bagian 4, Need-to-know", "masalah": "Hanya menyebut 'RESTRICTED (Internal)'; tingkat SECRET (PRO-01; REG-01 memberi label SECRET pada password manager, Jumphost, Acronis) tidak disebut. Ikut sumber ('RESTRICTED'); catat sebagai open item klasifikasi."},
+  {"lokasi": "Bagian 4, matriks acuan", "masalah": "'Restore production di Acronis butuh approval Lead': peran 'Lead' tidak ada di bagian 5 dan tidak jelas Lead NOC atau Lead SOC (open item 8 notes)."},
+  {"lokasi": "Bagian 4 dan 6.1 langkah 7", "masalah": "Bagian 4 menyebut pemilik sistem mencatat Level akses di REG-04, sedangkan 6.1 langkah 7 memberi pencatatan ke Administrator sistem. Selaraskan: pemilik sistem menetapkan, Administrator sistem mencatat."},
+  {"lokasi": "Bagian 11, Acuan standar", "masalah": "SNX-ISMS-SOA-01 dirujuk untuk 8.18 tetapi tidak ada di tabel Dokumen terkait; SoA masih menunjuk 'SNX-ISMS-SOP-02 Bagian 7.7' sedangkan butir kini 6.7 (open item 9)."},
+  {"lokasi": "Bagian 11, Rekaman", "masalah": "Pemilik rekaman 'Head of Operation' diambil dari REG-01 yang seluruh barisnya bertanda CONTOH ('pemilik dan status harus diverifikasi'); jabatan Head of Operation sendiri berstatus USULAN di POL-OPS-001 (open item 2)."},
+  {"lokasi": "docProps/core.xml", "masalah": "Metadata warisan template: author 'Sita Work', created/modified 2026-10-14. Bukan isi dokumen; sesuai D4 template dipertahankan, cukup diketahui owner."}
+ ]
+}

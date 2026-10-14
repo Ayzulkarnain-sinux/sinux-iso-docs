@@ -1,0 +1,9 @@
+{
+ "file": "out/08_ISMS/SNX-ISMS-SOP-02 User Access Control & Authorization (Rev00 DRAFT).docx",
+ "mode": "sop",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "5 butir (USULAN) menunggu ACC"
+ ]
+}

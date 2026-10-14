@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "doc_key": "ISMS-SOP-02",
+    "number": "SNX-ISMS-SOP-02",
+    "department": "Operation",
+    "title": "User Access Control & Authorization",
+    "process_owner": "Head of Operation",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "purpose": [
+    "SOP ini mengatur pemberian, perubahan, peninjauan, dan pencabutan hak akses ke sistem SINUX dan sistem pelanggan yang dikelola SINUX, berdasarkan prinsip least privilege dan need-to-know, agar hanya orang yang berwenang yang dapat mengakses informasi dan sistem."
+  ],
+  "scope": [
+    "SOP ini berlaku untuk seluruh akun manusia dan service account pada sistem internal dan sistem pelanggan yang dikelola SINUX.",
+    "Sistem internal: email dan Drive, sistem tiket (Zammad dan Service Hub GLPI), knowledge base, password manager, Jumphost, monitoring (Nusametric dan Overseer), SIEM, console Nusagrid, Acronis, Cloudflare, dan AegisWAF.",
+    "Sistem pelanggan yang dikelola SINUX: server, VM, panel hosting (WHM dan cPanel), network device, dan aplikasi manajemen."
+  ],
+  "definitions": [
+    [
+      "Akses privileged",
+      "Akses root, administrator, atau admin panel."
+    ],
+    [
+      "Akun break-glass",
+      "Akun bersama untuk keadaan darurat."
+    ],
+    [
+      "Akun pihak ketiga",
+      "Akun milik vendor atau partner."
+    ],
+    [
+      "Jumphost",
+      "Jalur masuk SINUX ke production pelanggan yang merekam sesi."
+    ],
+    [
+      "Least privilege",
+      "Prinsip hak akses minimum."
+    ],
+    [
+      "MFA",
+      "Multi-factor authentication, autentikasi dengan lebih dari satu faktor."
+    ],
+    [
+      "Mutasi",
+      "Perpindahan peran seseorang."
+    ],
+    [
+      "Need-to-know",
+      "Prinsip akses hanya bagi pihak yang membutuhkan informasi."
+    ],
+    [
+      "NOC, SOC, SD dan PM",
+      "Tiga sub divisi pada Divisi Operation: NOC, SOC, serta Service Delivery dan PM, menurut Kebijakan Divisi Operation SINUX (POL-OPS-001)."
+    ],
+    [
+      "Password manager",
+      "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+    ],
+    [
+      "Pemilik sistem",
+      "Pemegang tanggung jawab atas sistem, sesuai kolom Pemilik SNX-ISMS-REG-01."
+    ],
+    [
+      "RESTRICTED (Internal)",
+      "Salah satu tingkat klasifikasi informasi dalam SNX-ISMS-PRO-01."
+    ],
+    [
+      "Segregation of duties",
+      "Pemisahan peran pemohon dan penyetuju akses."
+    ],
+    [
+      "Service account",
+      "Akun yang dipakai sistem atau aplikasi, bukan orang."
+    ],
+    [
+      "Service Hub",
+      "SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal."
+    ],
+    [
+      "Temuan review",
+      "Akun yatim (akun tanpa pengguna atau pemilik yang jelas), hak berlebih (hak melebihi kebutuhan tugas), atau akun tidak aktif lebih dari 90 hari."
+    ],
+    [
+      "Zammad",
+      "Sistem tiket untuk Ops."
+    ]
+  ],
+  "policy": [
+    "Least privilege (Annex A 5.15, 5.18): hak akses sebatas yang dibutuhkan untuk tugas.",
+    "Need-to-know (Annex A 5.15, 8.3): akses ke informasi RESTRICTED (Internal) hanya untuk peran yang membutuhkan.",
+    "Satu orang satu akun (Annex A 5.16): akun bersama dilarang, kecuali akun break-glass yang disimpan di password manager dan setiap pemakaiannya dicatat.",
+    "Setiap akun tercatat di SNX-ISMS-REG-04, satu baris per akun per sistem (Annex A 5.16).",
+    "Akses privileged (Annex A 8.2) diberikan terpisah dari akun harian dan hanya melalui Jumphost bila sistem mendukung.",
+    "Segregation of duties: pemohon akses tidak menyetujui aksesnya sendiri.",
+    "Akses production pelanggan hanya melalui Jumphost SINUX.",
+    "Autentikasi (Annex A 5.17, 8.5): MFA dan aturan password mengikuti butir 6.2.",
+    "Hak akses (Annex A 5.18): pemberian, perubahan, pencabutan, dan review akses mengikuti butir 6.1 sampai 6.6.",
+    "Pemilik sistem menetapkan tingkat akses tiap akun; Administrator sistem mencatatnya di kolom Level akses SNX-ISMS-REG-04.",
+    "Tingkat akses acuan per peran berikut adalah acuan awal (USULAN).",
+    "NOC Engineer: sistem tiket Agent; monitoring read-only dan acknowledge alert; SIEM dan WAF read-only; console Nusagrid Operator; Acronis Operator; Jumphost sesuai aset yang ditugaskan; password manager collection tim sendiri; knowledge base sesuai peran tech-ops.",
+    "SOC Analyst: sistem tiket Agent; monitoring read-only; SIEM dan WAF Analyst; console Nusagrid read-only; Acronis read-only; Jumphost sesuai investigasi; password manager collection tim sendiri; knowledge base sesuai peran tech-ops.",
+    "Lead NOC dan Lead SOC: sistem tiket Group admin; monitoring Admin; SIEM dan WAF Admin; console Nusagrid Admin; Acronis Admin; Jumphost sesuai kebutuhan; password manager collection manager; knowledge base sesuai peran.",
+    "SD dan PM: sistem tiket Agent; monitoring read-only; SIEM dan WAF tidak ada akses; console Nusagrid read-only; Acronis tidak ada akses; Jumphost tidak ada akses; password manager collection proyek; knowledge base sesuai peran.",
+    "Perubahan rule SIEM dan WAF melalui SNX-OPS-SOP-02. Restore production di Acronis butuh approval Lead NOC atau Lead SOC. Di knowledge base, data di luar scope tidak tampil."
+  ],
+  "roles": [
+    [
+      "Head of Operation",
+      "Pemilik SOP; approver akses privileged ke sistem pelanggan.",
+      "Menyetujui akses privileged ke sistem pelanggan."
+    ],
+    [
+      "Pemilik sistem",
+      "Menyetujui akses ke sistemnya dan menetapkan level aksesnya; reviewer periodik; meninjau pemilik dan tujuan service account.",
+      "Menyetujui atau menolak akses ke sistemnya; memutuskan Tetap, Ubah, atau Cabut tiap akun saat review."
+    ],
+    [
+      "Atasan langsung",
+      "Mengonfirmasi kebutuhan akses pemohon sesuai peran; mengajukan perubahan akses saat mutasi.",
+      "Mengajukan permintaan dan perubahan akses untuk bawahannya."
+    ],
+    [
+      "Administrator sistem",
+      "Membuat, mengubah, dan mencabut akun sesuai approval; mencatat di register.",
+      "Mengeksekusi perubahan akun hanya sesuai approval."
+    ],
+    [
+      "HR atau atasan langsung",
+      "Memberi tahu mutasi dan pemberhentian paling lambat pada hari efektif.",
+      "Memicu perubahan atau pencabutan akses lewat pemberitahuan."
+    ],
+    [
+      "ISMS Coordinator",
+      "Memantau pelaksanaan review akses dan tindak lanjutnya.",
+      "Meminta status review akses dan tindak lanjut dari pemilik sistem."
+    ],
+    [
+      "Lead NOC",
+      "Memberi approval restore production di Acronis.",
+      "Menyetujui atau menolak restore production di Acronis."
+    ],
+    [
+      "Lead SOC",
+      "Meninjau sampling log sesi privileged Jumphost setiap triwulan.",
+      "Mengakses log sesi privileged Jumphost untuk sampling; memberi approval restore production di Acronis."
+    ],
+    [
+      "Pemohon",
+      "Mengajukan permintaan akses di Service Hub.",
+      "Mengajukan permintaan; tidak menyetujui aksesnya sendiri."
+    ],
+    [
+      "Pengguna akun",
+      "Mengganti kredensial awal pada login pertama; mengikuti aturan password; melaporkan kredensial yang terpapar; mengembalikan aset perusahaan saat pemberhentian.",
+      "Memakai akses sebatas yang diberikan."
+    ]
+  ],
+  "procedures": [
+    {
+      "title": "Permintaan dan Pemberian Akses",
+      "steps": [
+        [
+          "Ajukan permintaan akses di Service Hub (GLPI), kategori Access atau Permission, berisi nama, peran, sistem, tingkat akses, alasan, dan masa berlaku.",
+          "Pemohon atau atasan langsung",
+          "Tiket permintaan akses"
+        ],
+        [
+          "Konfirmasi kebutuhan akses sesuai peran pemohon.",
+          "Atasan langsung",
+          "Konfirmasi kebutuhan akses"
+        ],
+        [
+          "Setujui atau tolak permintaan akses ke sistem yang dimiliki.",
+          "Pemilik sistem",
+          "Approval pemilik sistem; alasan penolakan dicatat di tiket"
+        ],
+        [
+          "Tetapkan level akses untuk akun yang disetujui.",
+          "Pemilik sistem",
+          "Level akses akun"
+        ],
+        [
+          "Setujui akses privileged ke sistem pelanggan; bila kontrak mensyaratkan, akses baru diberikan sesudah pelanggan menyetujui.",
+          "Head of Operation",
+          "Approval Head of Operation; persetujuan pelanggan bila disyaratkan"
+        ],
+        [
+          "Buat akun dengan hak sesuai approval.",
+          "Administrator sistem",
+          "Akun baru"
+        ],
+        [
+          "Aktifkan MFA pada akun bila sistem mendukung.",
+          "Administrator sistem",
+          "MFA aktif pada akun"
+        ],
+        [
+          "Catat akun dan level aksesnya di SNX-ISMS-REG-04.",
+          "Administrator sistem",
+          "Baris akun dengan level akses di SNX-ISMS-REG-04"
+        ],
+        [
+          "Serahkan kredensial awal lewat password manager.",
+          "Administrator sistem",
+          "Kredensial awal di password manager"
+        ],
+        [
+          "Ganti kredensial awal pada login pertama.",
+          "Pengguna akun",
+          "Kredensial awal sudah diganti"
+        ]
+      ]
+    },
+    {
+      "title": "Autentikasi (Annex A 5.17, 8.5)",
+      "intro": [
+        "Kredensial tidak dikirim lewat chat, tiket, email, atau dokumen."
+      ],
+      "steps": [
+        [
+          "Aktifkan MFA pada email, password manager, Jumphost, console cloud, Cloudflare, dan semua akses dari internet ke sistem administratif, bila sistem mendukung.",
+          "Administrator sistem",
+          "MFA aktif pada sistem yang mendukung"
+        ],
+        [
+          "Atur password minimal 12 karakter dan unik per sistem.",
+          "Pengguna akun",
+          "Password sesuai aturan"
+        ],
+        [
+          "Simpan password hanya di password manager.",
+          "Pengguna akun",
+          "Password tersimpan di password manager"
+        ],
+        [
+          "Laporkan kredensial yang terpapar sesuai SNX-ISMS-SOP-01.",
+          "Pengguna akun",
+          "Laporan event keamanan sesuai SNX-ISMS-SOP-01"
+        ],
+        [
+          "Rotasi kredensial yang terpapar segera.",
+          "Administrator sistem",
+          "Kredensial baru"
+        ]
+      ]
+    },
+    {
+      "title": "Akses Sementara dan Pihak Ketiga",
+      "steps": [
+        [
+          "Beri akses vendor atau partner dengan masa berlaku, sebatas sistem yang dibutuhkan, dan melalui Jumphost.",
+          "Administrator sistem",
+          "Akses pihak ketiga berbatas waktu"
+        ],
+        [
+          "Catat akses vendor atau partner sebagai akun pihak ketiga di SNX-ISMS-REG-04, dengan status personel Vendor atau partner.",
+          "Administrator sistem",
+          "Baris akun pihak ketiga di SNX-ISMS-REG-04"
+        ],
+        [
+          "Cabut akses sementara tim proyek saat gate G3.",
+          "Administrator sistem",
+          "Akses sementara dicabut (gate G3, SNX-OPS-FRM-06)"
+        ]
+      ]
+    },
+    {
+      "title": "Perubahan Akses saat Mutasi",
+      "steps": [
+        [
+          "Beri tahu mutasi paling lambat pada hari efektif.",
+          "HR atau atasan langsung",
+          "Pemberitahuan mutasi"
+        ],
+        [
+          "Ajukan perubahan akses karena mutasi.",
+          "Atasan langsung",
+          "Permintaan perubahan akses"
+        ],
+        [
+          "Cabut akses lama yang tidak relevan paling lambat 5 hari kerja sesudah mutasi.",
+          "Administrator sistem",
+          "Akses lama dicabut; tercatat di SNX-ISMS-REG-04"
+        ]
+      ]
+    },
+    {
+      "title": "Pencabutan Akses (Annex A 5.18)",
+      "steps": [
+        [
+          "Beri tahu pemberhentian paling lambat pada hari efektif.",
+          "HR atau atasan langsung",
+          "Pemberitahuan pemberhentian"
+        ],
+        [
+          "Cabut semua akses paling lambat pada hari terakhir kerja; untuk pemberhentian mendadak, cabut segera.",
+          "Administrator sistem",
+          "Akses dicabut"
+        ],
+        [
+          "Rotasi kredensial bersama atau darurat yang diketahui orang yang diberhentikan.",
+          "Administrator sistem",
+          "Kredensial baru"
+        ],
+        [
+          "Kembalikan aset perusahaan sesuai SNX-ISMS-SOP-04.",
+          "Pengguna akun",
+          "Aset kembali sesuai SNX-ISMS-SOP-04"
+        ],
+        [
+          "Catat pencabutan di SNX-ISMS-REG-04 dengan tanggal dan pelaksana.",
+          "Administrator sistem",
+          "Baris pencabutan di SNX-ISMS-REG-04"
+        ]
+      ]
+    },
+    {
+      "title": "Review Akses Periodik",
+      "intro": [
+        "Review memakai sheet Review Periodik pada SNX-ISMS-REG-04."
+      ],
+      "steps": [
+        [
+          "Tinjau semua akun di sistem yang dimiliki: akses privileged setiap triwulan, akses biasa setiap semester.",
+          "Pemilik sistem",
+          "Review di sheet Review Periodik"
+        ],
+        [
+          "Putuskan tiap akun: Tetap, Ubah, atau Cabut.",
+          "Pemilik sistem",
+          "Keputusan per akun di sheet Review Periodik"
+        ],
+        [
+          "Tinjau pemilik dan tujuan tiap service account.",
+          "Pemilik sistem",
+          "Hasil tinjauan di sheet Review Periodik"
+        ],
+        [
+          "Tindak lanjuti keputusan Ubah atau Cabut dan temuan review paling lambat 10 hari kerja.",
+          "Administrator sistem",
+          "Tanggal tindak lanjut selesai di sheet Review Periodik"
+        ],
+        [
+          "Rotasi kredensial service account minimal setahun sekali atau saat pengelola berganti.",
+          "Administrator sistem",
+          "Kredensial service account baru"
+        ],
+        [
+          "Pantau pelaksanaan review akses dan tindak lanjutnya.",
+          "ISMS Coordinator",
+          "Ringkasan review terlambat dan temuan terbuka di SNX-ISMS-REG-04"
+        ]
+      ]
+    },
+    {
+      "title": "Penggunaan Akses Privileged (Annex A 8.2, 8.18)",
+      "intro": [
+        "Jumphost merekam sesi privileged."
+      ],
+      "steps": [
+        [
+          "Pakai akses root atau administrator hanya untuk tugas yang membutuhkannya.",
+          "Pengguna akun",
+          "Log sesi Jumphost"
+        ],
+        [
+          "Kerjakan akses privileged di production pelanggan dalam kerangka change request SNX-OPS-SOP-02.",
+          "Pengguna akun",
+          "Change request sesuai SNX-OPS-SOP-02"
+        ],
+        [
+          "Tinjau sampling log sesi privileged Jumphost setiap triwulan.",
+          "Lead SOC",
+          "Catatan hasil sampling log sesi privileged"
+        ]
+      ]
+    }
+  ],
+  "flow": {
+    "rankdir": "TB",
+    "lanes": {
+      "Pemohon atau atasan langsung": [
+        "a"
+      ],
+      "Pemilik sistem": [
+        "b",
+        "c",
+        "g",
+        "h",
+        "i"
+      ],
+      "Head of Operation": [
+        "d",
+        "e"
+      ],
+      "Administrator sistem": [
+        "f",
+        "j",
+        "l"
+      ],
+      "HR atau atasan langsung": [
+        "k"
+      ]
+    },
+    "nodes": {
+      "a": "Ajukan permintaan akses\ndi Service Hub (GLPI)",
+      "b": "Disetujui?",
+      "c": "Ditolak, alasan\ndicatat di tiket",
+      "d": "Akses privileged ke\nsistem pelanggan?",
+      "e": "Setujui akses privileged\n(dan pelanggan bila\nkontrak mensyaratkan)",
+      "f": "Buat akun, aktifkan\nMFA, catat di\nSNX-ISMS-REG-04",
+      "g": "Review periodik:\nprivileged triwulan,\nbiasa semester",
+      "h": "Akses masih sesuai\nkebutuhan?",
+      "i": "Tetap aktif",
+      "j": "Ubah atau cabut akses\npaling lambat\n10 hari kerja",
+      "k": "Beri tahu mutasi atau\npemberhentian paling lambat\npada hari efektif",
+      "l": "Cabut akses lama\n(mutasi: 5 hari kerja)\natau semua akses\n(pemberhentian: hari\nterakhir kerja),\ncatat di SNX-ISMS-REG-04"
+    },
+    "shapes": {
+      "b": "diamond",
+      "d": "diamond",
+      "h": "diamond",
+      "c": "ellipse",
+      "i": "ellipse"
+    },
+    "edges": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "Tidak"
+      ],
+      [
+        "b",
+        "d",
+        "Ya"
+      ],
+      [
+        "d",
+        "e",
+        "Ya"
+      ],
+      [
+        "d",
+        "f",
+        "Tidak"
+      ],
+      [
+        "e",
+        "f"
+      ],
+      [
+        "f",
+        "g"
+      ],
+      [
+        "g",
+        "h"
+      ],
+      [
+        "h",
+        "i",
+        "Ya"
+      ],
+      [
+        "h",
+        "j",
+        "Tidak"
+      ],
+      [
+        "k",
+        "l"
+      ]
+    ],
+    "caption": "Gambar 1. Alur permintaan, pemberian, review, dan pencabutan akses."
+  },
+  "sla": [
+    [
+      "Pemberitahuan mutasi atau pemberhentian",
+      "HR atau atasan langsung",
+      "Paling lambat pada hari efektif"
+    ],
+    [
+      "Keputusan atas permintaan akses",
+      "Pemilik sistem",
+      "2 hari kerja sesudah atasan mengonfirmasi (USULAN)"
+    ],
+    [
+      "Pembuatan akun sesudah approval",
+      "Administrator sistem",
+      "1 hari kerja (USULAN)"
+    ],
+    [
+      "MFA pada sistem administratif yang mendukung",
+      "Administrator sistem",
+      "Aktif pada 100% sistem yang mendukung"
+    ],
+    [
+      "Pencabutan akses lama yang tidak relevan saat mutasi",
+      "Administrator sistem",
+      "Paling lambat 5 hari kerja"
+    ],
+    [
+      "Pencabutan semua akses saat pemberhentian",
+      "Administrator sistem",
+      "Paling lambat hari terakhir kerja; mendadak: segera; target 100%"
+    ],
+    [
+      "Review akses privileged",
+      "Pemilik sistem",
+      "Setiap triwulan; target pelaksanaan 100%"
+    ],
+    [
+      "Review akses biasa",
+      "Pemilik sistem",
+      "Setiap semester"
+    ],
+    [
+      "Tindak lanjut temuan review",
+      "Administrator sistem",
+      "Paling lambat 10 hari kerja; target 95% selesai tepat waktu"
+    ],
+    [
+      "Tindak lanjut keputusan Ubah atau Cabut",
+      "Administrator sistem",
+      "Paling lambat 10 hari kerja, sesuai SNX-ISMS-REG-04"
+    ],
+    [
+      "Rotasi kredensial service account",
+      "Administrator sistem",
+      "Minimal setahun sekali atau saat pengelola berganti"
+    ],
+    [
+      "Sampling log sesi privileged Jumphost",
+      "Lead SOC",
+      "Setiap triwulan"
+    ]
+  ],
+  "exceptions": [
+    [
+      "Pemberhentian mendadak",
+      "Administrator sistem mencabut semua akses segera (butir 6.5)."
+    ],
+    [
+      "Akses privileged ke sistem pelanggan dengan kontrak yang mensyaratkan persetujuan pelanggan",
+      "Administrator sistem membuat akun sesudah Head of Operation dan pelanggan menyetujui (butir 6.1)."
+    ],
+    [
+      "Sistem tidak mendukung MFA",
+      "Administrator sistem mengaktifkan MFA hanya pada sistem yang mendukung. Sistem lain tidak dihitung dalam target MFA 100%."
+    ],
+    [
+      "Sistem internal tidak mendukung akses privileged lewat Jumphost",
+      "Administrator sistem memberi akses privileged langsung, dengan akun terpisah dari akun harian."
+    ],
+    [
+      "Kebutuhan akun bersama",
+      "Akun bersama dilarang. Pengecualian hanya akun break-glass di password manager, dan Pengguna akun mencatat setiap pemakaiannya."
+    ],
+    [
+      "Kredensial terpapar",
+      "Pengguna akun melapor sesuai SNX-ISMS-SOP-01 dan Administrator sistem merotasi kredensial segera (butir 6.2)."
+    ]
+  ],
+  "conclusion": [
+    "ISMS Coordinator memantau kepatuhan terhadap SOP ini lewat pelaksanaan review akses dan tindak lanjut temuannya.",
+    "Head of Operation selaku pemilik SOP meninjau dokumen ini setiap tahun."
+  ],
+  "related_documents": [
+    [
+      "SNX-ISMS-PRO-01",
+      "Information Classification & Handling Procedure; tingkat klasifikasi informasi."
+    ],
+    [
+      "SNX-ISMS-REG-04",
+      "User Access Register & Periodic Access Review; register akun dan sheet Review Periodik."
+    ],
+    [
+      "SNX-ISMS-REG-01",
+      "Information Asset Register; kolom Pemilik menentukan pemilik sistem."
+    ],
+    [
+      "SNX-ISMS-SOP-01",
+      "SOP Information Security Incident Management; pelaporan kredensial yang terpapar."
+    ],
+    [
+      "SNX-ISMS-SOP-04",
+      "SOP IT Asset & Configuration Management; pengembalian aset saat pemberhentian."
+    ],
+    [
+      "SNX-ISMS-SOA-01",
+      "Statement of Applicability (SoA); memetakan Annex A 8.18 ke SOP ini."
+    ],
+    [
+      "SNX-OPS-SOP-02",
+      "SOP Project Change Management; change request di production pelanggan dan perubahan rule SIEM dan WAF."
+    ],
+    [
+      "SNX-OPS-FRM-06",
+      "Project Handover / BAST & Closure Report; Checklist G3 untuk pencabutan akses sementara tim proyek."
+    ],
+    [
+      "POL-OPS-001",
+      "Kebijakan Divisi Operation SINUX; susunan sub divisi NOC, SOC, serta Service Delivery dan PM."
+    ]
+  ],
+  "records": [
+    [
+      "User Access Register & Periodic Access Review (SNX-ISMS-REG-04)",
+      "Google Drive; pemilik Head of Operation",
+      "3 tahun"
+    ],
+    [
+      "Tiket permintaan akses",
+      "Service Hub (GLPI); pemilik Head of Operation",
+      "3 tahun"
+    ],
+    [
+      "Log sesi Jumphost",
+      "Jumphost; pemilik Head of Operation",
+      "Sesuai kapasitas, minimal 90 hari"
+    ],
+    [
+      "Catatan hasil sampling log sesi privileged",
+      "Google Drive; pemilik Lead SOC (USULAN)",
+      "3 tahun (USULAN)"
+    ]
+  ],
+  "iso_refs": {
+    "ISO 9001:2015": "7.1.3 (Infrastruktur)",
+    "ISO/IEC 27001:2022": "Annex A 5.15 (Access control), 5.16 (Identity management), 5.17 (Authentication information), 5.18 (Access rights), 8.2 (Privileged access rights), 8.3 (Information access restriction), 8.5 (Secure authentication). Butir 6.7 juga merujuk Annex A 8.18 (Use of privileged utility programs) sesuai SNX-ISMS-SOA-01."
+  }
+}

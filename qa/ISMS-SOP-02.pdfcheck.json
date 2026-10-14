@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "pages": 16,
+  "checks": {
+    "A": "ok",
+    "B": "ok",
+    "C": "ok",
+    "D": "ok",
+    "E": "ok",
+    "F": "ok",
+    "G": "ok",
+    "H": "ok",
+    "I": "ok",
+    "J": "ok"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Penanda draf masih ada di isi: '(USULAN)' di hal. 6, 13 (2x), 15 (2x), dan 'Status operasional: menunggu konfirmasi Ops.' pada definisi Password manager di hal. 5. Bukan placeholder [..], tetapi perlu diselesaikan sebelum dokumen disahkan.",
+    "Hal. 9: header tabel 6.4 tertinggal sendirian di dasar halaman; semua baris isinya ada di hal. 10 tanpa header diulang.",
+    "Baris tabel pecah antarhalaman: 6.1 baris 10 (hal. 8-9), 6.6 baris 4 (hal. 10-11), Exception 'Sistem tidak mendukung MFA' (hal. 13-14).",
+    "Hal. 7 (bagian 5): kolom Authority sempit dan rata kanan-kiri sehingga ada celah antarkata yang lebar (mis. 'Menyetujui      akses'). Kata tidak terpecah, dan gayanya sama dengan acuan.",
+    "Hal. 15: kolom Kode / Dokumen memotong kode di tanda hubung (SNX-ISMS-PRO- / 01, dst.), tidak per huruf. Lebar kolom sama dengan acuan.",
+    "Hal. 12 diagram: garis panah melintasi label lane 'Pemilik sistem' dan 'Administrator sistem'. Teks simpul terbaca pada 110 dpi.",
+    "Hal. 16 hanya berisi 4 baris lanjutan 'Acuan standar' (ISO/IEC 27001:2022)."
+  ]
+}
