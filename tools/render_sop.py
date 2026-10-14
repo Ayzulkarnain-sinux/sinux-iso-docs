@@ -188,6 +188,9 @@ def render_flow(spec, out_png):
             lines.append(node_line(n))
     for e in f['edges']:
         lab = f'label="{e[2]}"' if len(e) > 2 and e[2] else ''
+        # Garis lapor/alur yang belum terkonfirmasi digambar putus-putus (data_conflicts: "garis putus-putus ... menunggu konfirmasi").
+        if (len(e) > 3 and e[3] == 'dashed') or (len(e) > 2 and str(e[2]).lower().startswith('menunggu konfirmasi')):
+            lab += ', style=dashed' if lab else 'style=dashed'
         lines.append(f'"{e[0]}" -> "{e[1]}" [{lab}];')
     lines.append('}')
     with open(out_png + '.dot', 'w', encoding='utf-8') as fh:

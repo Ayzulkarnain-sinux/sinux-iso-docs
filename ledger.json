@@ -15,6 +15,14 @@
    "fix": "baris dikosongkan mewarisi fill sel baris input pertama di bawahnya yang tidak dikosongkan",
    "evidence": "OPS-FRM-02 Risk Register A5/A6 sebelum: tanpa fill; sesudah: FFFFF2CC sama dengan A7..A26; xlsx_patch pass true; selftest 6 OK",
    "backup": "/tmp/claude-0/xlsx_patch.py.bak"
+  },
+  {
+   "at": "2026-10-14T21:58Z",
+   "tool": "tools/render_sop.py (render_flow)",
+   "bug": "renderer tidak bisa menggambar garis putus-putus, padahal data_conflicts mewajibkan garis lapor putus-putus berlabel menunggu konfirmasi (dilaporkan penyusun HR-ORG-01)",
+   "fix": "edge berlabel diawali \"menunggu konfirmasi\" atau elemen ke-4 \"dashed\" digambar style=dashed",
+   "evidence": "HR-ORG-01 .dot: 7 edge style=dashed; lint pass; OOXML PASSED; selftest 6 OK (format terkunci)",
+   "backup": "/tmp/claude-0/render_sop.py.bak"
   }
  ],
  "env_fixes": [
@@ -114,9 +122,9 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-ORG-01",
-   "out_path": null,
+   "out_path": "out/01_Struktur_Jobdesc/SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
@@ -134,15 +142,16 @@
      "title": "Lampiran 2 Struktur-Organisasi PT. SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 14,
    "open_items": [
     "Checklist kini menautkan berkas 1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0 yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
    ],
-   "updated_at": "2026-10-14T21:25:35Z",
-   "pen_agent": "aa06a366b15fbb9e5"
+   "updated_at": "2026-10-14T21:43:27Z",
+   "pen_agent": "aa06a366b15fbb9e5",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 2,
