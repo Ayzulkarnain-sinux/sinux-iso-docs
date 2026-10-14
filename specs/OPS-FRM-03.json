@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "OPS-FRM-03",
+    "doc_type_cover": "FORM",
+    "doc_type_label": "Form",
+    "number": "SNX-OPS-FRM-03",
+    "department": "Operation",
+    "title": "Project Progress & Monitoring Report",
+    "process_owner": "Project Manager",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Lingkup",
+      "blocks": [
+        {"h2": "Tujuan"},
+        {"p": "Form ini dipakai Project Manager untuk melaporkan progres proyek kepada pelanggan dan Direktur (COO), mingguan atau sesuai rencana komunikasi proyek, sesuai SNX-OPS-SOP-01 Bagian 6.4. Laporan memuat status, progres milestone, pekerjaan periode ini dan periode berikutnya, risiko dan isu, change request, serta keputusan yang dibutuhkan."},
+        {"h2": "Lingkup"},
+        {"p": "Form ini dipakai untuk proyek yang rencananya tercatat di SNX-OPS-FRM-01. Project Manager hanya merangkum data rencana, risiko, dan change request ke dalam laporan ini. Pencatatan rincinya tetap di SNX-OPS-FRM-01, SNX-OPS-FRM-02, dan SNX-OPS-FRM-04."},
+        {"p": "Form ini tidak memuat KPI layanan."}
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {"table": {
+          "header": ["Istilah", "Arti"],
+          "widths_cm": [4.5, 11.5],
+          "rows": [
+            ["Baseline", "Rencana proyek di SNX-OPS-FRM-01 yang menjadi pembanding status jadwal dan scope pada laporan."],
+            ["Milestone", "Titik capaian proyek yang dicatat di SNX-OPS-FRM-01 beserta tanggal rencana selesainya."],
+            ["Change request (CR)", "Permintaan perubahan scope, jadwal, atau biaya proyek. Dicatat di SNX-OPS-FRM-04 dan dikelola menurut SNX-OPS-SOP-02."],
+            ["Go-gate", "Syarat sebelum pekerjaan di environment production pelanggan dijalankan: approval, backup, dan rollback sudah lengkap."],
+            ["Rencana komunikasi proyek", "Kanal resmi, frekuensi laporan, dan matriks eskalasi pelanggan yang disusun saat perencanaan proyek (SNX-OPS-SOP-01 Bagian 6.2 butir 3)."],
+            ["Hijau", "Sesuai baseline."],
+            ["Kuning", "Deviasi bisa dipulihkan tanpa mengubah baseline."],
+            ["Merah", "Butuh keputusan pelanggan atau COO."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {"table": {
+          "header": ["Peran", "Tugas pada form ini"],
+          "widths_cm": [4.5, 11.5],
+          "rows": [
+            ["Project Manager", "Pemilik dokumen. Menyusun dan mengirim laporan ke pelanggan dan COO, mengeskalasi status Merah, dan menyimpan PDF di folder proyek."],
+            ["Service Delivery Manager", "Memeriksa konsistensi dan kelengkapan laporan sebelum dikirim. Penerima laporan."],
+            ["Head of Operation", "Menerima eskalasi bila ada status Merah."],
+            ["COO", "Menerima laporan dan eskalasi status Merah. Memutuskan hal berstatus Merah yang butuh keputusan COO."],
+            ["PIC pelanggan", "Menerima laporan. Memutuskan hal berstatus Merah yang butuh keputusan pelanggan. Paraf Diterima bersifat opsional."]
+          ]
+        }},
+        {"p": "Peran di tabel ini berlaku untuk laporan yang diisi. Penyusun, pemeriksa, dan penyetuju dokumen form ini ada di blok Approval pada halaman depan."}
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {"p": "1. Teks dalam kurung siku adalah petunjuk. Project Manager menghapusnya saat mengisi."},
+        {"p": "2. Project Manager menambah baris tabel bila isi laporan melebihi baris yang tersedia."},
+        {"p": "3. Project Manager menyimpan laporan sebagai PDF dengan nama FRM-03_<KodeProyek>_<YYYY-MM-DD>.pdf di folder proyek."}
+      ]
+    },
+    {
+      "h": "Alur Pengisian",
+      "blocks": [
+        {"flow": {
+          "rankdir": "TB",
+          "nodes": {
+            "a": "Tarik data proyek\nSNX-OPS-FRM-01, SNX-OPS-FRM-02,\nSNX-OPS-FRM-04",
+            "b": "Isi status dan progres\nmilestone, risiko, change request",
+            "c": "Ada status Merah?",
+            "x": "Eskalasi\nHead of Operation, COO",
+            "d": "Review Service Delivery Manager\nkonsistensi dan kelengkapan",
+            "e": "Kirim PDF ke pelanggan dan COO",
+            "f": "Arsip di folder proyek"
+          },
+          "shapes": {"c": "diamond"},
+          "edges": [["a", "b"], ["b", "c"], ["c", "x", "ya"], ["c", "d", "tidak"], ["x", "d"], ["d", "e"], ["e", "f"]],
+          "caption": "Gambar 1. Alur pengisian Project Progress & Monitoring Report. Eskalasi hanya berlaku bila ada status Merah; sesudahnya laporan tetap melalui review Service Delivery Manager."
+        }}
+      ]
+    },
+    {
+      "h": "Isi Laporan",
+      "blocks": [
+        {"h2": "Identitas laporan"},
+        {"table": {
+          "header": ["Item", "Isi"],
+          "widths_cm": [4.5, 11.5],
+          "rows": [
+            ["Nama proyek", "[nama proyek]"],
+            ["Kode proyek", "[kode proyek, sama dengan SNX-OPS-FRM-01]"],
+            ["Pelanggan", "[nama pelanggan]"],
+            ["Nomor laporan", "[urutan laporan, misalnya 05]"],
+            ["Periode laporan", "[tanggal mulai] sampai [tanggal akhir]"],
+            ["Project Manager", "[nama]"],
+            ["Penerima", "[PIC pelanggan, COO, Service Delivery Manager]"],
+            ["Klasifikasi", "RESTRICTED (Internal), dibagikan ke pelanggan terkait"]
+          ]
+        }},
+        {"h2": "Ringkasan status"},
+        {"p": "Project Manager menulis salah satu dari Hijau, Kuning, atau Merah di kolom Status. Arti tiap warna ada di bagian Istilah."},
+        {"p": "Untuk dimensi Jadwal, deviasi lebih dari 1 minggu dari baseline diberi status Merah (USULAN). Ambang ini sama dengan ambang eskalasi ke COO di SNX-OPS-SOP-01 Bagian 6.4."},
+        {"table": {
+          "header": ["Dimensi", "Status (Hijau, Kuning, Merah)", "Keterangan singkat"],
+          "widths_cm": [4, 4, 8],
+          "rows": [
+            ["Keseluruhan", "", ""],
+            ["Jadwal", "", "[deviasi dari baseline dalam hari]"],
+            ["Scope", "", "[ada atau tidak perubahan scope]"],
+            ["Mutu", "", "[hasil uji, defect terbuka]"],
+            ["Risiko dan isu", "", "[jumlah risiko Tinggi atau Kritis]"],
+            ["Keamanan informasi", "", "[insiden, temuan akses, kepatuhan go-gate]"]
+          ]
+        }},
+        {"h2": "Progres milestone"},
+        {"p": "Kolom Status memakai nilai yang sama dengan SNX-OPS-FRM-01: Sesuai rencana, Berisiko, Terlambat, atau Selesai."},
+        {"table": {
+          "header": ["No", "Milestone", "Rencana selesai", "Perkiraan atau aktual selesai", "Progres (%)", "Status"],
+          "widths_cm": [1, 4.5, 2.5, 3, 2, 3],
+          "rows": [
+            ["1", "", "", "", "", ""],
+            ["2", "", "", "", "", ""],
+            ["3", "", "", "", "", ""],
+            ["4", "", "", "", "", ""]
+          ]
+        }},
+        {"p": "Progres keseluruhan proyek: [persen, dari SNX-OPS-FRM-01]"},
+        {"h2": "Pekerjaan periode ini"},
+        {"table": {
+          "header": ["No", "Pekerjaan selesai", "Bukti atau referensi (CR, tiket Zammad, dokumen)"],
+          "widths_cm": [1, 8, 7],
+          "rows": [
+            ["1", "", ""],
+            ["2", "", ""],
+            ["3", "", ""]
+          ]
+        }},
+        {"h2": "Rencana periode berikutnya"},
+        {"table": {
+          "header": ["No", "Pekerjaan", "Pemilik", "Target tanggal"],
+          "widths_cm": [1, 8, 4, 3],
+          "rows": [
+            ["1", "", "", ""],
+            ["2", "", "", ""],
+            ["3", "", "", ""]
+          ]
+        }},
+        {"h2": "Risiko dan isu utama"},
+        {"table": {
+          "header": ["ID (dari SNX-OPS-FRM-02)", "Uraian", "Level", "Tindakan", "Pemilik", "Tenggat"],
+          "widths_cm": [2.6, 3.6, 1.7, 3.3, 2.4, 2.4],
+          "rows": [
+            ["", "", "", "", "", ""],
+            ["", "", "", "", "", ""]
+          ]
+        }},
+        {"h2": "Change request periode ini"},
+        {"table": {
+          "header": ["Nomor CR (dari SNX-OPS-FRM-04)", "Uraian", "Jenis", "Status", "Dampak ke jadwal atau scope"],
+          "widths_cm": [3.2, 4.3, 2, 2.5, 4],
+          "rows": [
+            ["", "", "", "", ""]
+          ]
+        }},
+        {"h2": "Keputusan dan dukungan yang dibutuhkan"},
+        {"table": {
+          "header": ["No", "Keputusan atau dukungan", "Dari siapa", "Dibutuhkan paling lambat"],
+          "widths_cm": [1, 8, 3.5, 3.5],
+          "rows": [
+            ["1", "", "", ""]
+          ]
+        }},
+        {"h2": "Catatan"},
+        {"p": "[Catatan tambahan, misalnya perubahan PIC, kendala akses, ketergantungan pihak ketiga.]"},
+        {"h2": "Distribusi dan persetujuan laporan"},
+        {"table": {
+          "header": ["Peran", "Nama", "Tanggal", "Paraf"],
+          "widths_cm": [6.4, 4, 3, 2.6],
+          "rows": [
+            ["Disusun (Project Manager)", "", "", ""],
+            ["Diperiksa (Service Delivery Manager)", "", "", ""],
+            ["Diterima (PIC pelanggan, opsional)", "", "", ""]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {"table": {
+          "header": ["Kode", "Keterangan"],
+          "widths_cm": [4, 12],
+          "rows": [
+            ["SNX-OPS-SOP-01", "SOP Project Management & Delivery. Bagian 6.2 memuat rencana komunikasi, Bagian 6.4 memuat pemantauan dan laporan progres."],
+            ["SNX-OPS-SOP-02", "SOP Project Change Management. Mengatur change request dan go-gate."],
+            ["SNX-OPS-FRM-01", "Project Plan, Scope & Timeline Records. Sumber baseline, milestone, dan progres keseluruhan."],
+            ["SNX-OPS-FRM-02", "Project Risk Register. Sumber ID, level, dan uraian risiko."],
+            ["SNX-OPS-FRM-04", "Change Request & Approval Log. Sumber nomor change request."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {"h2": "Rekaman"},
+        {"table": {
+          "header": ["Rekaman", "Lokasi dan pemilik", "Retensi"],
+          "widths_cm": [5.5, 6.5, 4],
+          "rows": [
+            ["Laporan FRM-03 per periode (PDF)", "Folder proyek. Pemilik: Project Manager.", "Durasi kontrak + 3 tahun"]
+          ]
+        }},
+        {"h2": "Acuan ISO"},
+        {"table": {
+          "header": ["Standar", "Klausul atau kontrol"],
+          "widths_cm": [6, 10],
+          "rows": [
+            ["ISO 9001:2015", "Klausul 8.5.1, 9.1.1"],
+            ["ISO/IEC 27001:2022", "Kontrol Annex A 5.8"]
+          ]
+        }}
+      ]
+    }
+  ]
+}

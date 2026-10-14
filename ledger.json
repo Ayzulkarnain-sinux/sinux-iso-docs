@@ -1036,7 +1036,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-OPS-FRM-03",
    "out_path": "out/07_Ops/SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx",
    "sources": [
@@ -1051,7 +1051,7 @@
    "loops": 0,
    "usulan_count": 1,
    "open_items": [],
-   "updated_at": "2026-10-14T21:45:03Z",
+   "updated_at": "2026-10-14T21:46:33Z",
    "pen_agent": "ac580ddd80ffb9367",
    "ooxml": "PASSED"
   },
@@ -1245,7 +1245,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-RPT-01",
    "out_path": null,
    "sources": [
@@ -1260,7 +1260,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:46:01Z",
+   "pen_agent": "a53e80272a2118f91"
   },
   {
    "wl_index": 39,
@@ -1270,7 +1271,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-REG-01",
    "out_path": null,
    "sources": [
@@ -1285,7 +1286,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:46:01Z",
+   "pen_agent": "a60131729e520f4ef"
   },
   {
    "wl_index": 40,

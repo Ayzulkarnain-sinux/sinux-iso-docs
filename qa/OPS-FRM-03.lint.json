@@ -1,0 +1,9 @@
+{
+ "file": "out/07_Ops/SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "1 butir (USULAN) menunggu ACC"
+ ]
+}
