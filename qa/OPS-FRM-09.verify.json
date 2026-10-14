@@ -1,0 +1,50 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kontrol Dokumen B26 (legenda) dan A26",
+      "masalah": "Legenda menjelaskan warna biru muda yang tidak lagi muncul di baris data mana pun. Sesudah clear_rows, Parameter SLA dan Downtime Log baris 5 dan 6 berwarna FFF2CC (kuning, sama dengan sel input). Kotak warna E7EEF7 hanya tersisa di A26. Baris legenda ini bisa dikosongkan atau diberi keterangan bahwa warnanya tidak dipakai lagi.",
+      "bukti": "openpyxl: PS/DL baris 5-7 fill FFFFF2CC; Kontrol Dokumen A26 fill FFE7EEF7; B26 \"Biru muda: warna baris contoh, sudah dikosongkan dan tidak dipakai\""
+    },
+    {
+      "lokasi": "Kontrol Dokumen B22 (Cara pakai 5)",
+      "masalah": "Kalimat perintah tanpa pelaku (\"Kirim laporan ke pelanggan paling lambat hari kerja ke-5.\"). Bentuk ini selaras dengan butir 1-4 Cara pakai yang juga perintah dari sumber, jadi tidak dinilai sebagai pelanggaran §6a yang jelas. Pelakunya (Service Delivery Manager menurut SOP-05) hanya tertulis di notes, tidak di form.",
+      "bukti": "B22 hasil; sumber: \"Laporan dikirim ke pelanggan paling lambat hari kerja ke-5.\"; notes bagian 2"
+    },
+    {
+      "lokasi": "Kontrol Dokumen B10, B36-B37; Laporan Bulanan A49-A50",
+      "masalah": "Peran tidak seragam: Pemilik dokumen \"Service Delivery Manager\", pengesahan laporan bulanan \"Disusun (Service Delivery Manager)\" dan \"Diperiksa (Head of Operation)\", sementara penanda tangan dokumen adalah Erik Dwi Yanto dan Fani Fatullah / VP Tech Operation and Services. \"Head of Operation\" tidak ada di defaults.json titles. Semuanya dari sumber atau defaults dan dicatat sebagai open item 1 di notes, jadi nonblocking.",
+      "bukti": "Laporan Bulanan A49/A50; Kontrol Dokumen B10, B36, B37; notes Open items #1"
+    },
+    {
+      "lokasi": "Laporan Bulanan B3",
+      "masalah": "Sel input periode masih berisi 2026-11-01, sisa contoh sumber. Bulan itu lebih akhir dari tanggal draft. Nilai ini tidak membuat fakta karena B3 adalah sel input yang dipakai rumus B4 dan B5, dan sudah dicatat sebagai open item 4.",
+      "bukti": "Laporan Bulanan B3 = 2026-11-01 00:00:00; sumber 01-Nov-2026; notes Open items #4"
+    },
+    {
+      "lokasi": "Kontrol Dokumen B7 dan B31",
+      "masalah": "Tanggal draft 13 Oktober 2026 dari tim dipertahankan, sedangkan uraian revisi C31 diganti menjadi \"Draft awal untuk review dan pengesahan\". Tanggal ini bukan tanggal efektif dan bukan karangan (B8 tetap \"Ditetapkan saat pengesahan\"). Owner perlu memutuskan apakah tanggal draft ikut revisi ini.",
+      "bukti": "Sumber B7/B31 \"13 Oktober 2026\"; notes Open items #10"
+    },
+    {
+      "lokasi": "notes/OPS-FRM-09.md bagian 1",
+      "masalah": "modifiedTime sumber (2026-10-13T06:09:25Z) diambil dari prompt tugas, tidak dari metadata Drive. Ukuran berkas 134604 byte cocok dengan catatan audit.",
+      "bukti": "notes tabel Sumber: \"dari prompt tugas; tidak dicek ulang lewat metadata Drive\""
+    },
+    {
+      "lokasi": "Seluruh workbook",
+      "masalah": "Format xlsx tidak punya tempat untuk Dokumen terkait atau tabel rekaman (lokasi dan pemilik). Masa simpan 3 tahun dan acuan ISO ada di Kontrol Dokumen. Penyusun mencatat ini sebagai open item 7, bukan celah kriteria.",
+      "bukti": "Kontrol Dokumen B12-B14; notes Open items #7"
+    }
+  ],
+  "cek": {
+    "a_fakta": "Penanda tangan, judul, nomor, klasifikasi, pemilik, masa simpan, acuan ISO, dan rumus cocok dengan sumber, atau ditetapkan defaults.json (B11 dan B36-B38 menggantikan COO / ISO/ISMS Coordinator / Service Delivery Manager sesuai D2 dan prepared_reviewed.OPS)",
+    "b_karangan": "Nihil. Dua kalimat baru di A2 (Parameter SLA, Downtime Log) hanya menyatakan perilaku rumus sumber: B5 =DAY(B4)*1440 dan SUMIFS D8 dengan kriteria teks Pelanggan/Layanan serta tanggal Mulai",
+    "c_kriteria": "Description = nama berkas SNX-OPS-FRM-09_SLA_Performance_Monitoring_Report.xlsx. Keluaran berupa xlsx dengan nomor dan judul yang sama, ISO 9001 9.1.1, 9.1.2, 9.1.3 dan Annex A 8.16 sama dengan checklist row 76. Keenam sheet, 1 gambar, 2 data validation, 3 aturan conditional formatting, 202 + 362 rumus tetap utuh",
+    "d_batas": "Tidak ditemukan CONTOH, placeholder [pelanggan, rujukan internal AI, em-dash, atau en-dash. Tanda tangan dan tanggal kosong. Tanggal efektif tidak diisi",
+    "e_peran": "Lihat nonblocking ke-3",
+    "f_bahasa": "Tidak ditemukan pelanggaran §6a yang jelas. Lint pass",
+    "g_data_conflicts": "Ejaan Samuel Kristanto Utomo / President Director benar, jabatan Fani benar, sebutan COO tidak muncul lagi. Kesebelas cacat audit ditangani atau dijelaskan di notes bagian 3"
+  }
+}
