@@ -317,7 +317,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-SOP-03",
    "out_path": null,
    "sources": [
@@ -342,7 +342,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:02:43Z",
+   "pen_agent": "a952766163f4b8856"
   },
   {
    "wl_index": 7,
@@ -352,7 +353,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-SOP-04",
    "out_path": null,
    "sources": [
@@ -377,7 +378,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:02:43Z",
+   "pen_agent": "a2b454e773d7cef13"
   },
   {
    "wl_index": 8,
@@ -1421,9 +1423,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-FRM-02",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-FRM-02 Security Incident Investigation Records (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2",
@@ -1431,12 +1433,12 @@
      "title": "SNX-ISMS-FRM-02_Security_Incident_Investigation_Records.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "11",
    "open_items": [],
-   "updated_at": "2026-10-14T21:55:37Z",
+   "updated_at": "2026-10-14T22:02:30Z",
    "pen_agent": "a7269416acb54714c"
   },
   {
@@ -1447,9 +1449,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-ISMS-FRM-03",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg",
@@ -1457,12 +1459,12 @@
      "title": "SNX-ISMS-FRM-03_Supplier_Technical_Security_Evaluation.xlsx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:55:56Z",
+   "updated_at": "2026-10-14T22:05:19Z",
    "pen_agent": "a50115ee2e70e5937"
   },
   {

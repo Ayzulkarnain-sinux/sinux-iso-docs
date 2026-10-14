@@ -1,0 +1,29 @@
+{
+  "clear_rows": {},
+  "set": {
+    "Kontrol Dokumen!B4": "SNX-ISMS-FRM-03",
+    "Kontrol Dokumen!B5": "Supplier Technical & Security Evaluation Records",
+    "Kontrol Dokumen!B6": "00 (Draft)",
+    "Kontrol Dokumen!B9": "RESTRICTED (Internal)",
+    "Kontrol Dokumen!B10": "Head of Operation",
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B12": "Klausul 8.4",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 5.19, 5.20, 5.21, 5.22, 5.23",
+    "Kontrol Dokumen!B14": "Durasi kontrak + 3 tahun",
+    "Kontrol Dokumen!B19": "Evaluasi supplier berkritikalitas Tinggi setiap semester, Sedang dan Rendah setiap tahun; jadwal berikutnya dihitung otomatis.",
+    "Kontrol Dokumen!B26": "Biru muda: supplier yang sudah teridentifikasi; kontrak, NDA, dan sertifikasinya diverifikasi dengan Commercial dan Legal",
+    "Kontrol Dokumen!C31": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!A32": null,
+    "Kontrol Dokumen!B32": null,
+    "Kontrol Dokumen!C32": null,
+    "Kontrol Dokumen!D32": null,
+    "Kontrol Dokumen!E32": null,
+    "Kontrol Dokumen!B36": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B37": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B38": "Samuel Kristanto Utomo / President Director",
+    "Alur Proses!A2": "Kotak biru = output akhir · kotak oranye = cabang ke tindakan atau prosedur lain · garis putus-putus = kembali ke alur utama · nilai 60 sampai 79 (Disetujui bersyarat) tidak tergambar, lihat sheet Evaluasi",
+    "Daftar Supplier!A2": "Baris biru muda = supplier yang teridentifikasi di knowledge base; status kontrak, NDA, dan sertifikasi wajib diverifikasi dengan Commercial dan Legal. Nama penyedia SUP-001, SUP-002, dan SUP-006 juga diverifikasi dengan Commercial dan Legal (USULAN).",
+    "Daftar Supplier!I12": "Direktur (COO)",
+    "Evaluasi!A2": "Skor 1 (sangat buruk) sampai 5 (sangat baik). Nilai = rata-rata tertimbang dikali 20 (skala 20 sampai 100). 80 ke atas Disetujui · 60 sampai 79 Disetujui bersyarat · di bawah 60 Tinjau ulang."
+  }
+}

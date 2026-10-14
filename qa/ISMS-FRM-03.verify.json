@@ -1,0 +1,51 @@
+{
+  "verdict": "PASS",
+  "doc": "out/08_ISMS/SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx",
+  "source": "1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg",
+  "checks": {
+    "a_fakta_vs_sumber": "Diff sel demi sel /tmp/src/ISMS-FRM-03.xlsx (139666 byte, nilai 'sebelum' cocok dengan read_file_content Drive) lawan out: 18 sel berubah, sama persis dengan daftar di notes. Rumus J5/K5/C5 dan Daftar Supplier K5 utuh; DV 5/1/1, CF 2/1/1, 1 gambar sama sebelum dan sesudah.",
+    "b_karangan": "Tidak ada fakta baru. 'skala 20 sampai 100' terbukti dari J5 (SUMPRODUCT/SUM*20) dan DV D5:I104 = Daftar!D2:D6 (1 sampai 5). Catatan Alur Proses A2 cocok dengan gambar (keputusan tunggal 'Nilai di bawah 60?', tidak ke Disetujui). Warna A26 = E7EEF7 = baris 5 sampai 12.",
+    "c_kriteria_description": "xlsx bernomor SNX-ISMS-FRM-03, judul Supplier Technical & Security Evaluation Records; B12 'Klausul 8.4', B13 'Kontrol Annex A 5.19, 5.20, 5.21, 5.22, 5.23' persis acuan checklist; daftar supplier, evaluasi berkala, kuesioner keamanan ada.",
+    "d_runbook_0_6": "Tanda tangan dan tanggal C36:D38 kosong; B8 'Ditetapkan saat pengesahan'; revisi 00 (Draft); klasifikasi RESTRICTED (Internal) sesuai label sumber; pemindaian pola rujukan internal AI, en-dash, em-dash, CONTOH: nol temuan; xlsx_patch lint pass true.",
+    "e_peran": "PIC internal (Head of Operation, Lead NOC, Lead SOC, Direktur (COO)) sama dengan nama peran specs/HR-ORG-01.json; Pemilik dokumen Head of Operation mengikuti sumber (process_owner).",
+    "g_data_conflicts": "Pengesahan Erik Dwi Yanto / Technical/Operation Engineer L1, Fani Fatullah / VP Tech Operation and Services, Samuel Kristanto Utomo / President Director sesuai prepared_reviewed.ISMS dan approved_by; I12 'Direktur (COO)' sesuai butir sebutan Amirull. 12 butir cacat audit bagian 5 (context/audit/iso-sinux-supdocs-isms-2026-10-14.md baris 659 sampai 671) masing-masing punya penanganan di notes/ISMS-FRM-03.md bagian 3."
+  },
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kontrol Dokumen B26",
+      "masalah": "Legenda baru dapat dibaca sebagai status sudah diverifikasi, padahal H5:H12 'Belum diketahui' untuk 8 dari 8 dan sumber Daftar Supplier A2 menulis 'wajib diverifikasi'. Saran: 'kontrak, NDA, dan sertifikasinya wajib diverifikasi dengan Commercial dan Legal'.",
+      "bukti": "B26: 'Biru muda: supplier yang sudah teridentifikasi; kontrak, NDA, dan sertifikasinya diverifikasi dengan Commercial dan Legal'"
+    },
+    {
+      "lokasi": "Daftar Supplier A2 (kalimat tambahan)",
+      "masalah": "Istilah berganti: 'Nama penyedia' untuk hal yang di header B4 disebut 'Nama supplier' (§6a butir 7). Kalimat ini juga menambah langkah verifikasi yang tidak ada di sumber; sudah berlabel (USULAN) sehingga sah, tetapi butuh putusan Fani.",
+      "bukti": "A2: '... Nama penyedia SUP-001, SUP-002, dan SUP-006 juga diverifikasi dengan Commercial dan Legal (USULAN).'; B4: 'Nama supplier'"
+    },
+    {
+      "lokasi": "Daftar Supplier baris 5 sampai 12 / config/worklist.json catatan ISMS-FRM-03",
+      "masalah": "Worklist meminta 'clear CONTOH', baris tidak dikosongkan. Sumber bertentangan dengan dirinya sendiri: legenda B26 lama menyebut warna E7EEF7 'Baris CONTOH: hapus atau timpa', sedangkan A2 menyebut baris yang sama supplier teridentifikasi. Tafsir penyusun (pertahankan, T1) wajar dan tercatat di notes Asumsi 1 dengan pembalik satu baris; perlu konfirmasi LEAD.",
+      "bukti": "Sumber Kontrol Dokumen B26 'Baris CONTOH: hapus atau timpa saat dipakai', fill A26 FFE7EEF7 = fill Daftar Supplier A5:B12 FFE7EEF7; patch 'clear_rows': {}"
+    },
+    {
+      "lokasi": "Evaluasi M4 'Evaluator', N4 'Disetujui'",
+      "masalah": "Form tidak menyebut peran yang mengevaluasi dan yang menyetujui hasil evaluasi; audit bagian 4 mencatatnya ('peran tidak diberi nama di form') tetapi notes tidak menjadikannya open item atau USULAN.",
+      "bukti": "context/audit/iso-sinux-supdocs-isms-2026-10-14.md baris 645: 'Evaluator, Disetujui (kolom Evaluasi) | Diisi per evaluasi; peran tidak diberi nama di form'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen B15, Daftar Supplier G4, Kuesioner Keamanan B5",
+      "masalah": "Sisa istilah tidak seragam dari sumber: 'A 5.19 sampai 5.23' di B15 lawan 'Kontrol Annex A' di B13; 'ISO 27001' di G4 lawan 'ISO/IEC 27001' di B5 Kuesioner dan B13.",
+      "bukti": "B15: '(A 5.19 sampai 5.23, ISO 9001 klausul 8.4)'; G4: 'Sertifikasi keamanan (misalnya ISO 27001, SOC 2)'"
+    },
+    {
+      "lokasi": "Daftar Supplier A2 'knowledge base'",
+      "masalah": "Sebutan 'knowledge base' dipertahankan dari sumber; tidak masuk daftar larangan §0 butir 6, tetapi perlu putusan serentak lintas dokumen (notes Open item 9).",
+      "bukti": "A2: 'supplier yang teridentifikasi di knowledge base'"
+    },
+    {
+      "lokasi": "Alur Proses (gambar)",
+      "masalah": "Gambar tetap dua tingkat keputusan; hanya legenda A2 yang memberi catatan. Tercatat sebagai Open item 3.",
+      "bukti": "Render /tmp/pen-ISMS-FRM-03/pdf/p-02.png: 'Nilai di bawah 60?' ya ke Tinjau ulang, tidak ke Disetujui"
+    }
+  ]
+}
