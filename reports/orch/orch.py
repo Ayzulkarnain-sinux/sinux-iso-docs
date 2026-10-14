@@ -97,7 +97,7 @@ def pen(key):
         where = {'sop': 'wajib di bagian 11, kontrolnya tercermin di bagian 4', 'generic': 'wajib di bagian Acuan/Rekaman dokumen', 'xlsx': 'wajib di sel Acuan ISO pada Kontrol Dokumen bila ada'}[d['mode']]
         iso = f'Acuan klausul baris ini ({where}): ISO 9001:2015 "{c.get("iso_9001")}"; ISO/IEC 27001:2022 "{c.get("iso_27001")}".'
     else:
-        iso = 'Checklist tidak memberi acuan klausul untuk baris ini: cantumkan klausul ISO 9001:2015 dan/atau ISO/IEC 27001:2022 yang relevan di bagian 11 (atau bagian Acuan untuk mode generic) dengan satu label "(USULAN, dikonfirmasi konsultan)".'
+        iso = 'Checklist tidak memberi acuan klausul untuk baris ini: cantumkan klausul ISO 9001:2015 dan/atau ISO/IEC 27001:2022 yang relevan di bagian 11 (atau bagian Acuan untuk mode generic) dengan satu label "(USULAN, perlu konfirmasi konsultan)".'
     if desc.startswith('SNX-') or not desc:
         crit = f'Kolom Description baris ini berisi nama berkas atau kosong ("{desc}"), jadi kriteria = substansi sumber tim + acuan klausul. ' + iso
     else:
