@@ -1741,8 +1741,10 @@
    "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 13,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:50:45Z",
+   "open_items": [
+    "Ukuran tingkatan dari jumlah garis lapor (USULAN, juga di HR-SOP-12/13) menyamakan VP dengan staf yang sama-sama melapor ke Direktur; pemutus Aziz dan owner (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:50:48Z",
    "pen_agent": "a2a3686f5a29a9f33",
    "ooxml": "PASSED",
    "pdf_queued": "0"
@@ -1755,17 +1757,18 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-HR-FRM-02",
-   "out_path": null,
+   "out_path": "out/02_HR/SNX-HR-FRM-02 Annual Training Plan & Training Matrix (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 18,
    "open_items": [],
-   "updated_at": "2026-10-14T23:40:28Z",
-   "pen_agent": "af534ab6b544a3ea6"
+   "updated_at": "2026-10-14T23:54:59Z",
+   "pen_agent": "af534ab6b544a3ea6",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 54,
@@ -1775,17 +1778,18 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-RPT-01",
-   "out_path": null,
+   "out_path": "out/02_HR/SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 19,
    "open_items": [],
-   "updated_at": "2026-10-14T23:41:19Z",
-   "pen_agent": "a659092717855c2b3"
+   "updated_at": "2026-10-14T23:53:34Z",
+   "pen_agent": "a659092717855c2b3",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 55,
@@ -1795,17 +1799,18 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-FRM-01",
-   "out_path": null,
+   "out_path": "out/03_FAT/SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 13,
    "open_items": [],
-   "updated_at": "2026-10-14T23:41:53Z",
-   "pen_agent": "a2e0550886843b182"
+   "updated_at": "2026-10-14T23:54:16Z",
+   "pen_agent": "a2e0550886843b182",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 56,
@@ -1855,7 +1860,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-RPT-02",
    "out_path": null,
    "sources": [],
@@ -1864,7 +1869,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:51:53Z",
+   "pen_agent": "a41798f7f2a336b69"
   },
   {
    "wl_index": 59,
@@ -1874,7 +1880,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-REG-04",
    "out_path": null,
    "sources": [],
@@ -1883,7 +1889,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:53:34Z",
+   "pen_agent": "afb835975bbe2e803"
   },
   {
    "wl_index": 60,
@@ -1893,7 +1900,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-FRM-01",
    "out_path": null,
    "sources": [],
@@ -1902,7 +1909,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:54:16Z",
+   "pen_agent": "a7326440322dc022c"
   },
   {
    "wl_index": 61,

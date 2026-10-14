@@ -1,0 +1,64 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "KESIMPULAN kalimat 1; CARA MENGISI kalimat pembuka",
+   "masalah": "Pembagian tugas tidak sama dengan tabel PERAN (bagian 5), butir 4.9, 7.5, dan 7.8. Di sana HRGA Officer yang mencatat Tabel 1 dan menurunkan Tabel 2, HR Manager hanya memeriksa, dan hanya Direktur Utama yang menyetujui.",
+   "bukti": "\"baru dipakai sebagai rencana sesudah HR Manager mengisi Tabel 1 dan Tabel 2\"; \"sampai HR Manager dan Direktur Utama mengesahkan form ini\" vs PERAN: HR Manager \"Memeriksa Tabel 1 dan Tabel 2 sebelum disetujui\", Direktur Utama \"Menyetujui form lewat blok Approved By\""
+  },
+  {
+   "lokasi": "4.8, 7.10, 7.11, CARA MENGISI pembuka, REKAMAN; 4.1 vs 4.2",
+   "masalah": "Sinonim berganti untuk satu hal: persetujuan ditulis disetujui, disahkan, dan mengesahkan; kode jabatan ditulis 'kode JA' (4.1) dan 'kode jabatan JA-nn' (4.2, Definisi).",
+   "bukti": "\"baris Tabel 1 yang sudah disetujui\" (4.8); \"yang disahkan\" (REKAMAN); \"Daftar jabatan, kode JA, dan nama jabatan\" (4.1)"
+  },
+  {
+   "lokasi": "Tabel 1 catatan; RUANG LINGKUP tabel pengecualian baris Divisi Operation",
+   "masalah": "Kalimat pasif tanpa pelaku, padahal pelakunya diketahui (HRGA Officer menurut 7.2 dan 7.5)",
+   "bukti": "\"Baris yang tersedia dapat ditambah sesuai jumlah pelatihan.\"; \"Jabatan itu masuk Tabel 2 sesudah disahkan.\""
+  },
+  {
+   "lokasi": "4.9, PERAN, 7.4 sampai 7.6; 4.6 vs 7.8",
+   "masalah": "Isi yang sama diulang di beberapa bagian. Pembagian penetapan dan pencatatan Tabel 1 tertulis tiga kali, dan aturan penurunan Tabel 2 tertulis dua kali (§6a.6).",
+   "bukti": "4.9 \"HR Manager mencatat sendiri baris yang berasal dari SNX-HR-SOP-10 dan SNX-HR-SOP-12\" = PERAN HR Manager = 7.6"
+  },
+  {
+   "lokasi": "7.6",
+   "masalah": "Kata 'karyawan itu' tidak punya rujukan. Kalimat itu dan kalimat sebelumnya tidak menyebut seorang karyawan.",
+   "bukti": "\"dengan kode jabatan karyawan itu sebagai sasaran peserta\""
+  },
+  {
+   "lokasi": "TUJUAN",
+   "masalah": "§6a.4 meminta Tujuan menyebut apa yang diatur dan hasil yang dijaga. Kedua kalimat Tujuan hanya menyebut isi form dan tidak menyebut hasil yang dijaga.",
+   "bukti": "\"Form ini memuat rencana pelatihan ...\"; \"Form ini juga memuat matriks pelatihan ...\""
+  },
+  {
+   "lokasi": "RUANG LINGKUP, pengecualian Anggaran dan biaya pelatihan",
+   "masalah": "Alasannya merujuk 'kriteria form ini', yaitu kriteria checklist penyusunan yang tidak dikenal pembaca form",
+   "bukti": "\"Tidak termasuk kriteria form ini, sehingga form ini tidak memuatnya (USULAN).\""
+  },
+  {
+   "lokasi": "4.4, 4.9, DOKUMEN TERKAIT baris SNX-HR-RPT-01",
+   "masalah": "Konsistensi lintas dokumen: SNX-HR-RPT-01 butir 4.9 menyuruh HRGA Officer mencatat tindakan pelatihan lanjutan di form ini. Daftar dasar kebutuhan dan pembagian pencatat di form ini tidak menyebut sumber itu, sehingga sumber itu hanya tertampung di 'dasar lain'.",
+   "bukti": "specs/HR-RPT-01.json: \"HRGA Officer mencatat tindakan pelatihan lanjutan di SNX-HR-FRM-02 (USULAN)\"; FRM-02 DOKUMEN TERKAIT hanya: \"kehadiran dan evaluasi efektivitas pelatihan di Tabel 1, dikecualikan dari form ini\""
+  },
+  {
+   "lokasi": "RUANG LINGKUP pengecualian; DOKUMEN TERKAIT baris Belum bernomor",
+   "masalah": "Status 'dalam peninjauan' untuk SOP Training & Development tidak tertulis langsung di sumber mana pun. Checklist baris 5 bernilai checked false tanpa link, dan worklist berstatus HOLD dengan catatan 'tim menandai ada'. Notes open item 3 menjelaskannya, dan dokumen saudara memakai konvensi yang sama. Ini bukan fakta karangan yang material.",
+   "bukti": "\"Ada di SOP Training & Development, dalam peninjauan.\""
+  },
+  {
+   "lokasi": "DEFINISI baris Pelatihan; JENIS PELATIHAN baris Teknis",
+   "masalah": "Kalimatnya generik dan bisa berlaku di perusahaan mana pun. Daftar jenis berlabel USULAN dan notes mengakuinya.",
+   "bukti": "\"Pelatihan untuk keterampilan dan pengetahuan yang dipakai langsung dalam tugas sebuah jabatan.\""
+  }
+ ],
+ "checked": {
+  "fakta": "Kode dan nama jabatan JA-01 sampai JA-15 di Tabel 2 sama persis dengan specs/HR-ORG-01.json. K-10 ada di HR-ORG-01. Rujukan ke SNX-HR-SOP-10, SNX-HR-SOP-12, SNX-HR-FRM-01, dan SNX-HR-RPT-01 cocok dengan isi spec masing-masing. Judul dokumen terkait cocok. Kutipan Job Analysis (kontrak pelanggan, kerahasiaan informasi, grading) ada di context/audit hr baris 47 dan 116. Klausul ISO berlabel USULAN.",
+  "T2": "Identitas Rencana, 10 baris Tabel 1, dan kolom Tingkatan, Kode pelatihan, serta Keterangan di Tabel 2 kosong. Tidak ada baris contoh, tanggal, angka bisnis, atau nama pihak luar. Retensi 'Belum ditetapkan'.",
+  "kriteria": "Jadwal (Tabel 1 Jadwal rencana), jenis (kolom Jenis plus bagian 6), dan target peserta menurut jenjang (Sasaran peserta plus Tabel 2 Tingkatan) ada. Butir 4.2 memberi jalan sementara selama SNX-HR-FRM-01 belum terisi. Kriteria terpenuhi.",
+  "batas_keras_6": "Effective Date dan Signature kosong, status Draft, Rev 00. Tidak ditemukan rujukan internal AI (SKILL_, DEC-, Claude, Altair, HANDOVER, staging), COO/CEO, Kristianto, HR Lead, em-dash, en-dash, kutip, atau tebal di badan. Lint generic pass, satu warn USULAN.",
+  "data_conflicts": "Approved By: Samuel Kristanto Utomo / President Director. Prepared: Sita Nadia Salsabila Widodo / HRGA Officer. Reviewed: Aziz Priyo Widakdo / HR Manager. Badan dokumen memakai 'Direktur Utama'. Process Owner: HR Manager. Klasifikasi RESTRICTED (Internal) ada di identity dan footer.",
+  "audit": "fileId di checklist null. grep judul di context/audit hanya kena sintesis:718, dan baris itu tidak berisi cacat. notes/HR-FRM-02.md menangani cacat HR bagian 5, SoA 6.3, dan sintesis 446."
+ }
+}

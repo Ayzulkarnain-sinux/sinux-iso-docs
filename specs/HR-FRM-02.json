@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "HR-FRM-02",
+    "doc_type_cover": "FORM",
+    "doc_type_label": "Form",
+    "number": "SNX-HR-FRM-02",
+    "department": "Human Resources",
+    "title": "Annual Training Plan & Training Matrix",
+    "process_owner": "HR Manager",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+      "reviewed": "Aziz Priyo Widakdo / HR Manager",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan",
+      "blocks": [
+        {"p": "Form ini memuat rencana pelatihan karyawan SINUX untuk satu tahun: pelatihan apa yang diadakan, jenisnya, kapan jadwalnya, dan pemegang jabatan pada tingkatan mana yang menjadi pesertanya."},
+        {"p": "Form ini juga memuat matriks pelatihan yang memasangkan tiap jabatan di SNX-HR-ORG-01 dengan pelatihan yang ditargetkan baginya."}
+      ]
+    },
+    {
+      "h": "Ruang Lingkup",
+      "blocks": [
+        {"p": "Form ini mencakup 15 jabatan aktif di SNX-HR-ORG-01, kode JA-01 sampai JA-15. Untuk tiap pelatihan, form ini memuat jadwal rencana, jenis pelatihan, dan sasaran peserta menurut tingkatan jabatan."},
+        {"p": "Butir berikut dikecualikan dari form ini:"},
+        {"table": {
+          "header": ["Butir yang dikecualikan", "Keterangan"],
+          "widths_cm": [6.5, 9.0],
+          "rows": [
+            ["Standar kompetensi dan sertifikasi yang diwajibkan per tingkatan", "Ada di SNX-HR-FRM-01."],
+            ["Kehadiran peserta dan evaluasi efektivitas pelatihan", "Ada di SNX-HR-RPT-01."],
+            ["Tata cara identifikasi kebutuhan pelatihan dan pelaksanaannya", "Ada di SOP Training & Development, dalam peninjauan."],
+            ["Anggaran dan biaya pelatihan", "Tidak termasuk kriteria form ini, sehingga form ini tidak memuatnya (USULAN)."],
+            ["Pelatihan untuk pelanggan, vendor, dan partner", "Peserta di form ini hanya pemegang jabatan SINUX."],
+            ["Jabatan Divisi Operation yang masih USULAN", "Berstatus USULAN tanpa pemegang di SNX-HR-ORG-01 (butir K-10). Jabatan itu masuk Tabel 2 sesudah disahkan."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Definisi dan Singkatan",
+      "blocks": [
+        {"table": {
+          "header": ["Istilah", "Arti"],
+          "widths_cm": [4.0, 11.5],
+          "rows": [
+            ["Pelatihan", "Kegiatan belajar yang direncanakan untuk menambah keterampilan, pengetahuan, atau perilaku pemegang jabatan."],
+            ["Rencana pelatihan tahunan", "Daftar pelatihan untuk satu tahun, lengkap dengan jenis, jadwal, dan sasaran pesertanya. Isinya ada di Tabel 1."],
+            ["Matriks pelatihan (Training Matrix)", "Tabel yang memasangkan tiap jabatan dengan kode pelatihan yang ditargetkan baginya. Isinya ada di Tabel 2."],
+            ["Kode pelatihan", "Nomor urut sebuah pelatihan di Tabel 1, ditulis P-nn (USULAN), yang dipakai untuk merujuknya di Tabel 2."],
+            ["Jenis pelatihan", "Pengelompokan pelatihan menurut tujuannya. Daftarnya ada di bagian 6."],
+            ["Dasar kebutuhan", "Alasan sebuah pelatihan masuk ke rencana."],
+            ["Sasaran peserta", "Tingkatan jabatan atau kode jabatan yang pemegangnya menjadi peserta sebuah pelatihan."],
+            ["Jadwal rencana", "Bulan dan tahun, atau tanggal, yang direncanakan untuk pelaksanaan sebuah pelatihan."],
+            ["Jabatan", "Kedudukan berkode JA-nn di SNX-HR-ORG-01."],
+            ["Pemegang jabatan", "Karyawan SINUX yang menduduki sebuah jabatan."],
+            ["Tingkatan jabatan", "Kelompok jabatan di SNX-HR-ORG-01 yang kedudukannya sama dalam susunan organisasi."],
+            ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Dasar dan Ketentuan",
+      "blocks": [
+        {"p": "4.1 Daftar jabatan, kode JA, dan nama jabatan di Tabel 2 mengikuti SNX-HR-ORG-01."},
+        {"p": "4.2 Tingkatan jabatan mengikuti Tabel 1 SNX-HR-FRM-01. Selama tabel itu belum terisi, HR Manager menetapkan sasaran peserta dengan kode jabatan JA-nn dan HRGA Officer mengosongkan kolom Tingkatan di Tabel 2 (USULAN)."},
+        {"p": "4.3 Satu salinan form ini berlaku untuk satu tahun rencana (USULAN)."},
+        {"p": "4.4 Tiap baris Tabel 1 memuat satu dasar kebutuhan: standar kompetensi di SNX-HR-FRM-01; kesenjangan keterampilan sesudah rotasi (SNX-HR-SOP-12); syarat kenaikan jabatan (SNX-HR-SOP-10); persyaratan kontrak pelanggan; atau dasar lain beserta alasannya di kolom Keterangan (USULAN)."},
+        {"p": "4.5 Tiap baris Tabel 1 memakai satu jenis pelatihan dari daftar di bagian 6."},
+        {"p": "4.6 Baris sebuah jabatan di Tabel 2 memuat kode setiap pelatihan yang sasaran pesertanya sama dengan tingkatan jabatan itu atau dengan kode jabatan itu (USULAN)."},
+        {"p": "4.7 Form ini mencatat sasaran peserta sampai tingkatan jabatan atau kode jabatan, tidak sampai nama karyawan (USULAN)."},
+        {"p": "4.8 HRGA Officer tidak menghapus baris Tabel 1 yang sudah disetujui dan tidak mengubah kolom Jadwal rencana di baris itu (USULAN)."},
+        {"p": "4.9 HR Manager menetapkan isi Tabel 1: pelatihan, dasar kebutuhan, jenis, sasaran peserta, dan jadwal rencana. HRGA Officer mencatat penetapan itu di Tabel 1 dan menurunkan Tabel 2. HR Manager mencatat sendiri baris yang berasal dari SNX-HR-SOP-10 dan SNX-HR-SOP-12, sesuai rumusan kedua SOP itu (USULAN)."},
+        {"p": "4.10 Klasifikasi form ini RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."}
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {"p": "Pembagian tugas berikut berstatus (USULAN)."},
+        {"table": {
+          "header": ["Peran", "Tugas pada form ini"],
+          "widths_cm": [3.6, 11.9],
+          "rows": [
+            ["HR Manager", "Menetapkan isi Tabel 1 menurut butir 4.9. Mencatat baris yang berasal dari SNX-HR-SOP-10 dan SNX-HR-SOP-12. Memeriksa Tabel 1 dan Tabel 2 sebelum disetujui. Meninjau form setiap tahun."],
+            ["HRGA Officer", "Mencatat penetapan HR Manager di Tabel 1, menurunkan Tabel 2 dari Tabel 1, dan memelihara daftar jabatan di Tabel 2 sesuai SNX-HR-ORG-01."],
+            ["Direktur Utama", "Menyetujui form lewat blok Approved By."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Jenis Pelatihan",
+      "blocks": [
+        {"p": "Daftar jenis berikut dipakai di kolom Jenis Tabel 1 dan berstatus (USULAN)."},
+        {"table": {
+          "header": ["Jenis", "Arti"],
+          "widths_cm": [4.4, 11.1],
+          "rows": [
+            ["Teknis", "Pelatihan untuk keterampilan dan pengetahuan yang dipakai langsung dalam tugas sebuah jabatan."],
+            ["Perilaku", "Pelatihan untuk sikap dan cara bekerja, sama dengan kompetensi perilaku di SNX-HR-FRM-01."],
+            ["Keamanan informasi dan mutu", "Pelatihan untuk pemahaman SOP, kerahasiaan informasi, dan kewajiban karyawan dalam sistem manajemen mutu dan keamanan informasi."],
+            ["Sertifikasi profesi atau vendor", "Pelatihan yang berakhir dengan ujian atau sertifikat dari lembaga profesi atau vendor teknologi."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Cara Mengisi",
+      "blocks": [
+        {"p": "Langkah berikut berstatus (USULAN) sampai HR Manager dan Direktur Utama mengesahkan form ini."},
+        {"p": "7.1 HRGA Officer menyalin form ini untuk tahun rencana dan menulis tahunnya di Identitas Rencana."},
+        {"p": "7.2 HRGA Officer mencocokkan daftar jabatan di Tabel 2 dengan SNX-HR-ORG-01."},
+        {"p": "7.3 HRGA Officer mencatat tingkatan setiap jabatan di Tabel 2 sesuai butir 4.2."},
+        {"p": "7.4 HR Manager menetapkan pelatihan yang masuk rencana tahun itu, beserta dasar kebutuhan, jenis, sasaran peserta, dan jadwal rencananya."},
+        {"p": "7.5 HRGA Officer mencatat satu baris Tabel 1 untuk setiap pelatihan yang ditetapkan HR Manager, dengan kode berurutan P-01, P-02, dan seterusnya."},
+        {"p": "7.6 HR Manager mencatat sendiri baris Tabel 1 yang berasal dari SNX-HR-SOP-10 atau SNX-HR-SOP-12, dengan kode jabatan karyawan itu sebagai sasaran peserta."},
+        {"p": "7.7 HRGA Officer mencatat jadwal rencana sebagai bulan dan tahun, atau sebagai tanggal bila sudah pasti, sesuai penetapan HR Manager."},
+        {"p": "7.8 HRGA Officer menurunkan Tabel 2 dari Tabel 1 sesuai butir 4.6, dengan kode pelatihan dipisah koma dalam satu sel."},
+        {"p": "7.9 HRGA Officer membiarkan kosong sel yang belum ditetapkan HR Manager."},
+        {"p": "7.10 HR Manager memeriksa isi Tabel 1 dan Tabel 2, lalu menyerahkannya ke Direktur Utama untuk disetujui."},
+        {"p": "7.11 Bila jadwal berubah sesudah rencana disetujui, HRGA Officer menulis jadwal baru, alasan, dan tanggal perubahan di kolom Keterangan sesuai penetapan HR Manager (butir 4.8)."}
+      ]
+    },
+    {
+      "h": "Rencana dan Matriks Pelatihan",
+      "blocks": [
+        {"p": "Pengisian Identitas Rencana, Tabel 1, dan Tabel 2 mengikuti bagian 7."},
+        {"h2": "Identitas Rencana"},
+        {"table": {
+          "header": ["Butir", "Isi"],
+          "widths_cm": [6.5, 9.0],
+          "rows": [
+            ["Tahun rencana", ""],
+            ["Tanggal HR Manager menetapkan rencana", ""]
+          ]
+        }},
+        {"h2": "Tabel 1. Rencana Pelatihan Tahunan"},
+        {"p": "Baris yang tersedia dapat ditambah sesuai jumlah pelatihan."},
+        {"table": {
+          "header": ["Kode", "Nama pelatihan", "Jenis", "Dasar kebutuhan", "Sasaran peserta", "Jadwal rencana", "Keterangan"],
+          "widths_cm": [1.5, 3.2, 1.7, 2.6, 2.2, 2.2, 3.0],
+          "rows": [
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", ""]
+          ]
+        }},
+        {"h2": "Tabel 2. Matriks Pelatihan"},
+        {"p": "Kolom Kode dan Jabatan mengikuti SNX-HR-ORG-01. Pengisian kolom lain mengikuti butir 7.3 dan 7.8."},
+        {"table": {
+          "header": ["Kode", "Jabatan", "Tingkatan", "Kode pelatihan yang ditargetkan", "Keterangan"],
+          "widths_cm": [1.6, 6.2, 2.6, 3.0, 2.8],
+          "rows": [
+            ["JA-01", "Direktur Utama", "", "", ""],
+            ["JA-02", "Direktur", "", "", ""],
+            ["JA-03", "VP Commercial", "", "", ""],
+            ["JA-04", "VP Tech Operation and Services", "", "", ""],
+            ["JA-05", "Manager of Product Tech", "", "", ""],
+            ["JA-06", "Brand & Marketing", "", "", ""],
+            ["JA-07", "Business Development", "", "", ""],
+            ["JA-08", "Legal & Compliance", "", "", ""],
+            ["JA-09", "Legal & Compliance", "", "", ""],
+            ["JA-10", "Finance", "", "", ""],
+            ["JA-11", "Accounting & Tax", "", "", ""],
+            ["JA-12", "HRGA Officer", "", "", ""],
+            ["JA-13", "Technical/Operation Engineer L1", "", "", ""],
+            ["JA-14", "HR Manager", "", "", ""],
+            ["JA-15", "Office Helper", "", "", ""]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Rekaman",
+      "blocks": [
+        {"table": {
+          "header": ["Rekaman", "Lokasi dan pemilik", "Retensi"],
+          "widths_cm": [6.0, 6.5, 3.0],
+          "rows": [
+            ["Annual Training Plan & Training Matrix yang disahkan, satu salinan per tahun rencana (Tabel 1 dan Tabel 2)", "Folder Google Drive Departemen HR (USULAN). Pemilik: HR Manager.", "Belum ditetapkan"]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Acuan Klausul ISO",
+      "blocks": [
+        {"p": "Daftar klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."},
+        {"table": {
+          "header": ["Standar", "Klausul", "Hubungan dengan form ini"],
+          "widths_cm": [3.4, 5.6, 6.5],
+          "rows": [
+            ["ISO 9001:2015", "7.2 Kompetensi", "Tabel 1 memuat pelatihan yang direncanakan untuk memperoleh kompetensi yang diperlukan. Evaluasi efektivitasnya ada di luar form ini."],
+            ["ISO 9001:2015", "7.3 Kesadaran", "Baris Tabel 1 berjenis Keamanan informasi dan mutu memuat rencana pemahaman karyawan atas sistem manajemen mutu."],
+            ["ISO/IEC 27001:2022", "7.2 Kompetensi", "Sama dengan ISO 9001:2015 7.2, untuk kinerja keamanan informasi."],
+            ["ISO/IEC 27001:2022", "7.3 Kesadaran", "Sama dengan ISO 9001:2015 7.3, untuk kebijakan keamanan informasi."],
+            ["ISO/IEC 27001:2022", "Annex A 6.3 Kesadaran, pendidikan, dan pelatihan keamanan informasi", "Baris Tabel 1 berjenis Keamanan informasi dan mutu memuat jadwal rencana dan sasaran peserta pelatihan keamanan informasi."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {"table": {
+          "header": ["Kode", "Keterangan"],
+          "widths_cm": [4.0, 11.5],
+          "rows": [
+            ["SNX-HR-ORG-01", "Struktur Organisasi SINUX: sumber daftar jabatan di Tabel 2 (butir 4.1)."],
+            ["SNX-HR-FRM-01", "Employee Competency Matrix: sumber tingkatan jabatan (butir 4.2) dan standar kompetensi yang menjadi dasar kebutuhan pelatihan (butir 4.4)."],
+            ["SNX-HR-RPT-01", "Training Attendance & Training Evaluation Report: kehadiran dan evaluasi efektivitas pelatihan di Tabel 1, dikecualikan dari form ini."],
+            ["SNX-HR-SOP-10", "Promotion: menurut dokumen itu, HR Manager mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9) (USULAN)."],
+            ["SNX-HR-SOP-12", "Rotation: menurut dokumen itu, HR Manager mencatat tindakan pelatihan atas kesenjangan keterampilan di form ini (butir 4.4 dan 4.9) (USULAN)."],
+            ["SNX-ISMS-PRO-01", "Information Classification & Handling Procedure: tingkat klasifikasi RESTRICTED (Internal) untuk form ini (butir 4.10)."],
+            ["Belum bernomor", "SOP Training & Development, dalam peninjauan: tata cara identifikasi kebutuhan pelatihan dan pelaksanaannya, dikecualikan dari form ini."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {"p": "Form ini berstatus Draft, dan baru dipakai sebagai rencana sesudah HR Manager mengisi Tabel 1 dan Tabel 2 dan Direktur Utama menandatangani blok Approved By."},
+        {"p": "HR Manager meninjau form ini setiap tahun, dan lebih awal bila SNX-HR-FRM-01 atau SNX-HR-ORG-01 berubah (USULAN)."}
+      ]
+    }
+  ]
+}
