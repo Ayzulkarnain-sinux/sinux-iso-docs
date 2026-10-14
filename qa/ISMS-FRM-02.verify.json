@@ -1,0 +1,55 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kontrol Dokumen!B22",
+      "masalah": "Kalimat 'Laporan insiden ke pelanggan memakai format laporan insiden baku.' menunjuk format yang tidak bernama dan tidak berlokasi. SKILL_ir-report sudah dibuang dengan benar (RUNBOOK §0 butir 6), tetapi pembaca dan auditor tidak bisa menemukan 'format baku' itu.",
+      "bukti": "Sumber B22: 'format beku SKILL_ir-report'. SNX-ISMS-SOP-01 (audit, Bagian 12 butir 1) juga hanya merujuk SKILL_ir-report. Saran: tunjuk bagian pelaporan SNX-ISMS-SOP-01 sesudah SOP-01 selesai disusun, atau beri nomor SNX untuk format itu. Sudah tercatat sebagai USULAN 6 dan Open item 4 di notes."
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B20",
+      "masalah": "Kalimat 'Direktur (COO) dan Legal memutuskan.' tidak menyebut objeknya. Lebih jelas: 'Direktur (COO) dan Legal memutuskan pemberitahuan.'",
+      "bukti": "Out B20: 'Bila data pribadi terlibat, kolom Notifikasi PDP menandai wajib dikaji dengan batas 3 x 24 jam dari waktu deteksi. Direktur (COO) dan Legal memutuskan.' Isi faktanya cocok dengan rumus Register P5 (B5+3) dan sumber B20."
+    },
+    {
+      "lokasi": "Alur Proses (gambar image1.png)",
+      "masalah": "Gambar masih memakai sebutan 'COO dan Legal', tidak memakai bentuk 'Direktur (COO)'. Ini tidak melanggar data_conflicts karena sebutan pertama di badan dokumen (Kontrol Dokumen B20, sheet pertama) sudah 'Direktur (COO)'. Gambar tidak bisa disunting lewat alat patch.",
+      "bukti": "Audit bagian 3.1: kotak 'Kaji notifikasi PDP<br/>COO dan Legal'. Notes Open item 1."
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B15",
+      "masalah": "Klaim bahwa definisi severity P1 sampai P4 ada di SNX-ISMS-SOP-01 didukung salinan audit SOP-01, belum dicek terhadap draf SOP-01 (ledger: ISMS-SOP-01 masih QUEUED). Perlu dicek ulang saat SOP-01 selesai agar rujukannya tetap benar.",
+      "bukti": "Audit SOP-01 Bagian 8 butir 2: tabel 'Severity | Kriteria insiden keamanan | Ack | Pemberitahuan internal' berisi P1 sampai P4. Notes USULAN 3 dan Open item 6."
+    },
+    {
+      "lokasi": "Register!P5:P155 (keluaran rumus)",
+      "masalah": "Keluaran rumus 'WAJIB DIKAJI' memakai huruf kapital sebagai penekanan. Ini rumus asli sumber dan dipertahankan dengan sah untuk T1. Cukup dicatat, tidak perlu diubah.",
+      "bukti": "Sumber dan out P5: =IF(J5=\"Ya\",\"WAJIB DIKAJI, maksimal \"&TEXT(B5+3,...)...); CF P5:P155 LEFT($P5,5)=\"WAJIB\" bergantung pada teks ini."
+    },
+    {
+      "lokasi": "notes/ISMS-FRM-02.md Open item 2",
+      "masalah": "Notes keliru menggambarkan efek clear_rows pada legenda. Notes menyebut A26 menjadi abu-abu seperti A27, padahal di keluaran A26 tidak berwarna (00000000). Legenda keluaran benar: A25 kuning untuk 'Sel input' dan A27 abu-abu untuk 'Sel rumus', dengan baris 26 kosong. Ini hanya soal kosmetik dan ketepatan notes.",
+      "bukti": "openpyxl fill out: A25 FFFFF2CC, A26 00000000, A27 FFF2F2F2; sumber A26 FFE7EEF7. Register A5 kini FFFFF2CC (warna sel input), tidak lagi biru muda contoh."
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B7, B31",
+      "masalah": "Tanggal draft '13 Oktober 2026' dipertahankan dari sumber, sedangkan uraian revisi C31 diganti. Ini bukan tanggal mundur karena tanggalnya milik draf Rev 00 sumber (modifiedTime 2026-10-13). Owner perlu memutuskan apakah tanggal draft diperbarui saat pengesahan.",
+      "bukti": "Sumber B7 dan B31: '13 Oktober 2026'. Notes Asumsi 3 dan Open item 7."
+    },
+    {
+      "lokasi": "Daftar!D2:D6, Investigasi A12:A13",
+      "masalah": "Bahasa campuran dipertahankan dari sumber. Status memakai 'Containment' dan 'Eradication' di samping 'Investigasi', 'Pemulihan', dan 'Ditutup'. Ini masih dalam batas §6a butir 9 sebagai istilah kerja, jadi cukup dicatat.",
+      "bukti": "Sumber dan out Daftar D2 sampai D6 identik."
+    }
+  ],
+  "ringkasan_cek": {
+    "a_fakta": "Cocok. Diff sel sumber (Drive 1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2, isi read_file_content sama dengan /tmp/src, 151668 byte) terhadap keluaran hanya memuat 18 sel Kontrol Dokumen dan baris CONTOH Register 5. Seluruh perubahan berdasar defaults (D2, prepared_reviewed ISMS), data_conflicts, rumus sumber, atau audit SOP-01.",
+    "b_karangan": "Nihil. Tidak ada nama, angka, tanggal, atau sistem baru. Nilai 3 x 24 jam, 1 desimal, 5 tahun, P1 sampai P4, dan SHA-256 semuanya ada di sumber.",
+    "c_kriteria": "Terpenuhi. Nomor SNX-ISMS-FRM-02, judul sama dengan baris checklist 90, Register, Investigasi, dan Chain of Custody utuh. Acuan B12 'Klausul 10.2' dan B13 'Annex A 5.25, 5.26, 5.27, 5.28' cocok dengan kolom checklist.",
+    "d_runbook": "Status Draft, tanda tangan dan tanggal kosong, tanggal efektif 'Ditetapkan saat pengesahan'. Klasifikasi RESTRICTED (Internal) sesuai sumber. Nol residu SKILL_, CONTOH, em-dash, en-dash, atau placeholder. Tiga penanda tangan berbeda. Struktur tetap utuh: 6 sheet, 1 gambar, 453 rumus, 7 data validation, 2 CF, merged sama.",
+    "e_peran": "Konsisten: Lead SOC sebagai pemilik dan penyetuju lembar investigasi, Incident Commander, Tim investigasi, serta Direktur (COO) dan Legal. Tidak ada bagian 5, 6, atau 8 karena dokumen ini form xlsx.",
+    "f_bahasa": "Tidak ada pelanggaran §6a yang jelas. Kalimat baru pendek dan spesifik. Catatan kecil di nonblocking.",
+    "g_data_conflicts_audit": "Samuel Kristanto Utomo / President Director, Fani Fatullah / VP Tech Operation and Services, Erik Dwi Yanto / Technical/Operation Engineer L1, dan 'Direktur (COO)' pada sebutan pertama sudah benar. Kesepuluh butir audit bagian 5 ditangani atau dijelaskan di notes bagian 3."
+  }
+}
