@@ -45,6 +45,9 @@ def main():
             # Warna baris dikosongkan ikut baris input pertama di bawahnya yang tidak dikosongkan,
             # agar sel isian tetap seragam (tech_fix W1: dulu warna dibuang, baris input jadi putih).
             nxt = next((k for k in range(r + 1, r + 40) if k not in cleared), None)
+            # v2: hanya baris input kosong (tanpa nilai) yang jadi acuan warna; baris legenda/label tidak.
+            if nxt and any(c.value is not None and not (isinstance(c.value, str) and c.value.startswith('=')) for c in ws[nxt]):
+                nxt = None
             for c in ws[r]:
                 if isinstance(c.value, str) and c.value.startswith('='):
                     continue
