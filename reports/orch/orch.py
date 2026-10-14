@@ -17,6 +17,7 @@ NOW = lambda: datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H
 FOLDER = {'HR': '02_HR', 'FAT': '03_FAT', 'LEG': '04_Legal', 'COM': '05_Commercial', 'MKT': '06_Marketing',
           'OPS': '07_Ops', 'ISMS': '08_ISMS'}
 VALIDATOR = '/mnt/skills/public/docx/scripts/office/validate.py'
+DONOR = 'out/07_Ops/SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx'  # sheet Kontrol Dokumen seri SNX untuk add_control_sheet
 
 
 _LOCK = open('/tmp/iso-ledger.lock', 'w')
@@ -111,7 +112,7 @@ def pen(key):
                 f'"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"), decode ke /tmp/src/{key}.xlsx (mkdir -p /tmp/src). '
                 f'Periksa semua sheet (python3 -I + openpyxl). Tulis specs/{key}.patch.json sesuai RUNBOOK §7 mode xlsx: clear_rows untuk baris CONTOH/contoh/data dummy (bukan hapus baris), '
                 f'set untuk menyelaraskan sheet "Kontrol Dokumen" bila ada ke medan template (Nomor {d["number"]}, Judul, Revisi 00, Status Draft, Klasifikasi, Pemilik, Disusun "{prep}", Diperiksa "{rev}", Disetujui "{appr}", Acuan ISO, Masa simpan) '
-                f'dan memperbaiki teks sel yang melanggar §0/§6/§6a. Bila tidak ada sheet "Kontrol Dokumen", JANGAN menambah sheet (alat menolak); catat di notes sebagai open item. '
+                f'dan memperbaiki teks sel yang melanggar §0/§6/§6a. Bila tidak ada sheet "Kontrol Dokumen": tambahkan "add_control_sheet": "{DONOR}" di patch (alat menyalin tata letak sheet itu dari form SNX donor ke posisi pertama, hanya label medan; sheet lain tidak boleh ditambah), lalu isi lewat set: A1 judul, A2 "PT Strategi Integrasi Nusantara (SINUX) · Departemen <dept>", B4 sampai B15 (Nomor, Judul, Revisi "00 (DRAFT)", Tanggal draft, Tanggal efektif "Ditetapkan saat pengesahan", Klasifikasi, Pemilik dokumen, Disetujui oleh, Acuan ISO 9001, Acuan ISO 27001, Masa simpan, Tujuan), Cara pakai A18:B21, riwayat revisi A31:E31, pengesahan B36:B38; label medan donor dibiarkan. '
                 f'Uji: python3 -I tools/xlsx_patch.py /tmp/src/{key}.xlsx specs/{key}.patch.json /tmp/pen-{key}/out.xlsx; ulangi sampai "pass": true.')
         files = f'specs/{key}.patch.json dan notes/{key}.md'
     else:
