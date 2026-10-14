@@ -1,0 +1,22 @@
+{
+  "verdict": "PASS",
+  "pages": 14,
+  "checks": {
+    "A": "ok: sampul 3 baris tengah (STRUKTUR ORGANISASI / DEPARTMENT HUMAN RESOURCES / Struktur Organisasi SINUX), 'No : SNX-HR-ORG-01' = Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, label berurutan sama dengan acuan (Company Name..Review Period + baris kosong akhir), nilai terisi, Effective Date kosong, Status Draft, Classification INTERNAL",
+    "C": "ok: Revision History baris 00 'Draft awal untuk review dan pengesahan'; Approval 3 baris nama/jabatan terisi (Sita Nadia Salsabila Widodo / HRGA Officer; Aziz Priyo Widakdo / HR Manager; Samuel Kristanto Utomo / President Director); Signature kosong",
+    "D": "ok: daftar isi 1-12 cocok dengan 12 heading badan (Tujuan s.d. Kesimpulan)",
+    "E": "ok: bagian bernomor gaya acuan, tabel bergaya acuan; Gambar 1, 2 (hal 7) dan Gambar 3 (hal 9) terbaca di 110 dpi, tidak terpotong, caption ada; citra diagram 270 ppi",
+    "F": "ok: header kolom tampil di semua tabel, sel isi terisi, teks sel tidak terpotong, tidak ada kata pecah per huruf",
+    "H": "ok: tanpa label klasifikasi di footer; nomor halaman 1-14 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) sama dengan acuan; nol placeholder [..]; nol teks instruksi template (kata 'template' hanya rujukan isi ke blok Approved By); tidak ada halaman kosong berlebih",
+    "J": "ok: urutan pembuka Sampul > Identity Document > Revision History + Dokument Approval > Table of Contents > badan sama dengan acuan; gaya heading, gaya tabel, posisi header/footer sama"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Tabel pecah antarhalaman tanpa header berulang: Definisi (hal 5-6), Daftar Jabatan (hal 7-8), Matriks Peran (hal 10-11), Butir Menunggu Konfirmasi (hal 11-12-13; hal 13 hanya sisa baris K-14)",
+    "Teks sel rata kiri-kanan (justify) di kolom sempit menimbulkan spasi renggang, mis. 'Head      of Operation', 'Samuel  Kristanto', '(K-' terpisah dari '14)' (hal 7-12); acuan memakai rata kiri",
+    "Teks dalam kotak Gambar 1-3 kecil (sekitar 5-6 pt di cetak), terbaca di 110 dpi tapi lebih kecil dari diagram acuan",
+    "Garis putus-putus Gambar 1 dan Gambar 2 menyentuh/melintasi label 'menunggu konfirmasi (K-0x)' (hal 7)"
+  ]
+}

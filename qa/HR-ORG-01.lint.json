@@ -1,0 +1,9 @@
+{
+ "file": "out/01_Struktur_Jobdesc/SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "13 butir (USULAN) menunggu ACC"
+ ]
+}

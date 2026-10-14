@@ -1,0 +1,876 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "HR-ORG-01",
+  "doc_type_cover": "STRUKTUR ORGANISASI",
+  "doc_type_label": "Struktur Organisasi",
+  "number": "SNX-HR-ORG-01",
+  "department": "Human Resources",
+  "title": "Struktur Organisasi SINUX",
+  "process_owner": "HR Manager",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Dokumen ini menetapkan susunan jabatan SINUX: jabatan apa saja yang ada, siapa pemegangnya, kepada siapa tiap jabatan melapor, dan peran sistem manajemen apa yang melekat pada jabatan itu."
+    },
+    {
+     "p": "Hasil yang dijaga adalah satu susunan yang sama bagi karyawan dan auditor, sehingga peran, tanggung jawab, dan wewenang yang diminta ISO 9001:2015 dan ISO/IEC 27001:2022 dapat ditunjukkan dari satu dokumen."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Dokumen ini mencakup 15 jabatan aktif di Job Analysis (SNX-HR-JA-01, kode JA-01 sampai JA-15) dan 8 jabatan Divisi Operation yang diusulkan di POL-OPS-001."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari dokumen ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "Posisi kosong dan grading",
+        "Job Analysis tidak mencantumkannya, sehingga dokumen ini juga tidak."
+       ],
+       [
+        "Uraian tugas, persyaratan, dan kompetensi tiap jabatan",
+        "Ada di SNX-HR-JA-01."
+       ],
+       [
+        "KPI per jabatan",
+        "Job Analysis menyerahkannya ke KPI Matrix, dokumen yang berdiri sendiri."
+       ],
+       [
+        "Hak tanda tangan kontrak dan otorisasi keuangan",
+        "Job Analysis menyerahkannya ke Authority Matrix, dokumen yang berdiri sendiri."
+       ],
+       [
+        "Pelanggan, vendor, dan partner",
+        "Tidak digambarkan di bagan karena sumber tidak memuatnya (USULAN)."
+       ]
+      ],
+      "widths_cm": [
+       6.5,
+       9.0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "rows": [
+       [
+        "Jabatan",
+        "Kedudukan dalam susunan organisasi SINUX yang punya tugas dan wewenang tertentu."
+       ],
+       [
+        "Pemegang jabatan",
+        "Orang yang menduduki sebuah jabatan saat dokumen ini disusun."
+       ],
+       [
+        "Atasan langsung",
+        "Jabatan yang menjadi tujuan laporan langsung dari sebuah jabatan."
+       ],
+       [
+        "Garis lapor",
+        "Hubungan antara sebuah jabatan dan atasan langsungnya, digambar sebagai garis pada bagan."
+       ],
+       [
+        "Menunggu konfirmasi",
+        "Label untuk garis lapor atau penamaan yang ditandai belum pasti di sumbernya."
+       ],
+       [
+        "Peran",
+        "Tanggung jawab dalam sistem manajemen yang disebut dokumen SOP, dipegang oleh pemegang satu jabatan atau lebih."
+       ],
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Direktur (COO)",
+        "Jabatan JA-02. Dokumen Operation menyebut jabatan ini COO."
+       ],
+       [
+        "HRGA",
+        "Fungsi HR dan General Affairs: administrasi kepegawaian serta fasilitas dan inventaris kantor."
+       ],
+       [
+        "NOC",
+        "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket."
+       ],
+       [
+        "SOC",
+        "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."
+       ],
+       [
+        "SD dan PM",
+        "Sub divisi Service Delivery dan Project Management dalam Divisi Operation."
+       ],
+       [
+        "ISMS Coordinator",
+        "Peran yang mengoordinasi sistem manajemen keamanan informasi (ISMS) di SINUX."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "Jabatan, pemegang, dan atasan langsung diambil dari Job Analysis (SNX-HR-JA-01) yang berstatus Draft. Delapan jabatan Divisi Operation diambil dari POL-OPS-001 versi DRAFT v0.1."
+    },
+    {
+     "p": "Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi sesudah dokumen ini disahkan, dan garis yang sumbernya sendiri belum menetapkan satu atasan diberi label menunggu konfirmasi."
+    },
+    {
+     "p": "Setiap butir menunggu konfirmasi diberi nomor K pada bagian Butir Menunggu Konfirmasi. Bagan dan tabel merujuk nomor itu dan tidak mengulang uraiannya."
+    },
+    {
+     "p": "Nama jabatan ditulis dalam satu bentuk di seluruh dokumen. Bila sumber memakai sebutan lain, perbedaannya tercatat sebagai butir K."
+    }
+   ]
+  },
+  {
+   "h": "Bagan Organisasi",
+   "blocks": [
+    {
+     "p": "Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label tercantum sebagai satu atasan langsung di sumber. Garis berlabel menunggu konfirmasi merujuk nomor butir K."
+    },
+    {
+     "flow": {
+      "rankdir": "TB",
+      "nodes": {
+       "organ": "Organ perusahaan\nsesuai anggaran dasar",
+       "ja01": "JA-01 Direktur Utama\nSamuel Kristanto Utomo",
+       "ja02": "JA-02 Direktur\nAmirull Yusuf Zulkarnain",
+       "ja03": "JA-03 VP Commercial\nLaras Rasmawati",
+       "ja04": "JA-04 VP Tech Operation\nand Services\nFani Fatullah",
+       "ja05": "JA-05 Manager of\nProduct Tech\nAhmad Rifa'i",
+       "ja06": "JA-06 Brand & Marketing\nZilly Dwinata",
+       "ja07": "JA-07 Business\nDevelopment\nRolin Krisnawati Nababan",
+       "ja13": "JA-13 Technical/Operation\nEngineer L1\nErik Dwi Yanto"
+      },
+      "edges": [
+       [
+        "organ",
+        "ja01",
+        "menunggu konfirmasi (K-05)"
+       ],
+       [
+        "ja01",
+        "ja02"
+       ],
+       [
+        "ja02",
+        "ja03"
+       ],
+       [
+        "ja01",
+        "ja03",
+        "menunggu konfirmasi (K-01)"
+       ],
+       [
+        "ja02",
+        "ja04"
+       ],
+       [
+        "ja02",
+        "ja05"
+       ],
+       [
+        "ja03",
+        "ja05",
+        "menunggu konfirmasi (K-02)"
+       ],
+       [
+        "ja03",
+        "ja06"
+       ],
+       [
+        "ja03",
+        "ja07"
+       ],
+       [
+        "ja04",
+        "ja13"
+       ]
+      ],
+      "caption": "Gambar 1. Pimpinan, Commercial, dan Operation (Job Analysis dan butir K-01)."
+     }
+    },
+    {
+     "flow": {
+      "rankdir": "TB",
+      "nodes": {
+       "ja02": "JA-02 Direktur\nAmirull Yusuf Zulkarnain",
+       "ja08": "JA-08 Legal & Compliance\nEster Febe Utomo",
+       "ja09": "JA-09 Legal & Compliance\nAlif Altamziz",
+       "ja10": "JA-10 Finance\nKana Salsabila\nPutri Koeswologito",
+       "ja11": "JA-11 Accounting & Tax\nPradipta Nugraha",
+       "ja14": "JA-14 HR Manager\nAziz Priyo Widakdo",
+       "ja12": "JA-12 HRGA Officer\nSita Nadia\nSalsabila Widodo",
+       "ja15": "JA-15 Office Helper\nMuhamad Reyhan\nBahtiar"
+      },
+      "edges": [
+       [
+        "ja02",
+        "ja08",
+        "menunggu konfirmasi (K-03)"
+       ],
+       [
+        "ja02",
+        "ja10",
+        "menunggu konfirmasi (K-03)"
+       ],
+       [
+        "ja02",
+        "ja11",
+        "menunggu konfirmasi (K-03)"
+       ],
+       [
+        "ja02",
+        "ja14",
+        "menunggu konfirmasi (K-04)"
+       ],
+       [
+        "ja08",
+        "ja09"
+       ],
+       [
+        "ja14",
+        "ja12"
+       ],
+       [
+        "ja12",
+        "ja15"
+       ]
+      ],
+      "caption": "Gambar 2. Legal, Finance, Accounting & Tax, dan Human Resources menurut Job Analysis."
+     }
+    }
+   ]
+  },
+  {
+   "h": "Daftar Jabatan",
+   "blocks": [
+    {
+     "p": "Kolom Melapor ke memuat atasan langsung menurut Job Analysis."
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Jabatan",
+       "Pemegang",
+       "Unit",
+       "Melapor ke"
+      ],
+      "rows": [
+       [
+        "JA-01",
+        "Direktur Utama",
+        "Samuel Kristanto Utomo",
+        "Management",
+        "Organ perusahaan sesuai anggaran dasar, menunggu konfirmasi (K-05)"
+       ],
+       [
+        "JA-02",
+        "Direktur",
+        "Amirull Yusuf Zulkarnain",
+        "Management",
+        "Direktur Utama (JA-01)"
+       ],
+       [
+        "JA-03",
+        "VP Commercial",
+        "Laras Rasmawati",
+        "Commercial",
+        "Direktur (JA-02); Direktur Utama (JA-01), menunggu konfirmasi (K-01)"
+       ],
+       [
+        "JA-04",
+        "VP Tech Operation and Services",
+        "Fani Fatullah",
+        "Operation",
+        "Direktur (JA-02)"
+       ],
+       [
+        "JA-05",
+        "Manager of Product Tech",
+        "Ahmad Rifa'i",
+        "Operation",
+        "Direktur (JA-02); VP Commercial (JA-03), menunggu konfirmasi (K-02)"
+       ],
+       [
+        "JA-06",
+        "Brand & Marketing",
+        "Zilly Dwinata",
+        "Commercial",
+        "VP Commercial (JA-03)"
+       ],
+       [
+        "JA-07",
+        "Business Development",
+        "Rolin Krisnawati Nababan",
+        "Commercial",
+        "VP Commercial (JA-03)"
+       ],
+       [
+        "JA-08",
+        "Legal & Compliance",
+        "Ester Febe Utomo",
+        "Legal",
+        "Direktur (JA-02), menunggu konfirmasi (K-03)"
+       ],
+       [
+        "JA-09",
+        "Legal & Compliance",
+        "Alif Altamziz",
+        "Legal",
+        "Legal & Compliance (JA-08)"
+       ],
+       [
+        "JA-10",
+        "Finance",
+        "Kana Salsabila Putri Koeswologito",
+        "Finance",
+        "Direktur (JA-02), menunggu konfirmasi (K-03)"
+       ],
+       [
+        "JA-11",
+        "Accounting & Tax",
+        "Pradipta Nugraha",
+        "Accounting & Tax",
+        "Direktur (JA-02), menunggu konfirmasi (K-03)"
+       ],
+       [
+        "JA-12",
+        "HRGA Officer",
+        "Sita Nadia Salsabila Widodo",
+        "Human Resources",
+        "HR Manager (JA-14)"
+       ],
+       [
+        "JA-13",
+        "Technical/Operation Engineer L1",
+        "Erik Dwi Yanto",
+        "Operation",
+        "VP Tech Operation and Services (JA-04)"
+       ],
+       [
+        "JA-14",
+        "HR Manager",
+        "Aziz Priyo Widakdo",
+        "Human Resources",
+        "Direktur (JA-02), menunggu konfirmasi (K-04)"
+       ],
+       [
+        "JA-15",
+        "Office Helper",
+        "Muhamad Reyhan Bahtiar",
+        "Human Resources",
+        "HRGA Officer (JA-12)"
+       ]
+      ],
+      "widths_cm": [
+       1.4,
+       3.3,
+       3.5,
+       2.9,
+       4.4
+      ]
+     }
+    },
+    {
+     "p": "JA-08 dan JA-09 memakai nama jabatan yang sama. Pembedanya garis lapor: JA-09 melapor ke JA-08. Nama unit dan nama jabatan JA-14 mengikuti butir K-06."
+    }
+   ]
+  },
+  {
+   "h": "Struktur Divisi Operation",
+   "blocks": [
+    {
+     "p": "Divisi Operation berada di bawah COO dan terdiri dari tiga sub divisi: NOC, SOC, serta SD dan PM. Nama jabatan, jenjang, headcount, dan garis lapor ke COO di POL-OPS-001 berstatus (USULAN), dan belum ada pemegang bernama (K-10)."
+    },
+    {
+     "flow": {
+      "rankdir": "TB",
+      "nodes": {
+       "coo": "COO\n(Direktur, JA-02)",
+       "hoo": "Head of Operation",
+       "lnoc": "Lead NOC",
+       "lsoc": "Lead SOC",
+       "sdm": "Service Delivery\nManager",
+       "noce": "NOC Engineer",
+       "soca": "SOC Analyst",
+       "pm": "Project Manager",
+       "pc": "Project Coordinator\n(opsional)"
+      },
+      "edges": [
+       [
+        "coo",
+        "hoo"
+       ],
+       [
+        "hoo",
+        "lnoc"
+       ],
+       [
+        "hoo",
+        "lsoc"
+       ],
+       [
+        "hoo",
+        "sdm"
+       ],
+       [
+        "lnoc",
+        "noce"
+       ],
+       [
+        "lsoc",
+        "soca"
+       ],
+       [
+        "sdm",
+        "pm"
+       ],
+       [
+        "sdm",
+        "pc"
+       ]
+      ],
+      "caption": "Gambar 3. Divisi Operation menurut POL-OPS-001. Semua jabatan dan garis lapor berstatus (USULAN)."
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Jabatan",
+       "Sub divisi",
+       "Melapor ke",
+       "Membawahi",
+       "Pola kerja (USULAN)"
+      ],
+      "rows": [
+       [
+        "Head of Operation",
+        "Operation",
+        "COO",
+        "Lead NOC, Lead SOC, Service Delivery Manager",
+        "Tidak disebut di sumber"
+       ],
+       [
+        "Lead NOC",
+        "NOC",
+        "Head of Operation",
+        "NOC Engineer",
+        "Jam kantor, on-call di luar jam"
+       ],
+       [
+        "NOC Engineer",
+        "NOC",
+        "Lead NOC",
+        "Tidak ada",
+        "Shift, 4 regu"
+       ],
+       [
+        "Lead SOC",
+        "SOC",
+        "Head of Operation",
+        "SOC Analyst",
+        "Jam kantor, on-call di luar jam"
+       ],
+       [
+        "SOC Analyst",
+        "SOC",
+        "Lead SOC",
+        "Tidak ada",
+        "Shift, 4 regu"
+       ],
+       [
+        "Service Delivery Manager",
+        "SD dan PM",
+        "Head of Operation",
+        "Project Manager, Project Coordinator",
+        "Jam kantor"
+       ],
+       [
+        "Project Manager",
+        "SD dan PM",
+        "Service Delivery Manager",
+        "Tidak ada",
+        "Jam kantor"
+       ],
+       [
+        "Project Coordinator (opsional bila volume proyek tinggi)",
+        "SD dan PM",
+        "Service Delivery Manager",
+        "Tidak ada",
+        "Jam kantor"
+       ]
+      ],
+      "widths_cm": [
+       3.6,
+       2.2,
+       3.2,
+       3.6,
+       2.9
+      ]
+     }
+    },
+    {
+     "p": "Hubungan Head of Operation dengan VP Tech Operation and Services (JA-04) belum ditetapkan (K-09)."
+    }
+   ]
+  },
+  {
+   "h": "Matriks Peran",
+   "blocks": [
+    {
+     "p": "Matriks ini memasangkan peran yang dipakai dokumen SOP dengan jabatan pemegangnya. Tanggung jawab lengkap tiap jabatan ada di SNX-HR-JA-01 dan POL-OPS-001; kolom Dasar menunjuk dokumen asalnya."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Jabatan pemegang",
+       "Dasar",
+       "Status"
+      ],
+      "rows": [
+       [
+        "Process Owner dokumen HR, termasuk dokumen ini",
+        "HR Manager (JA-14)",
+        "Job Analysis: Process Owner",
+        "Tercantum di sumber"
+       ],
+       [
+        "Penyetuju dokumen ini",
+        "Direktur Utama (JA-01)",
+        "Blok Approved By pada template dokumen SINUX",
+        "Menunggu konfirmasi (K-14)"
+       ],
+       [
+        "Penetap kebijakan mutu, sasaran mutu, dan sumber daya; pemimpin tinjauan manajemen",
+        "Direktur Utama (JA-01)",
+        "Uraian jabatan JA-01",
+        "Tercantum di sumber"
+       ],
+       [
+        "Penanggung jawab kepatuhan terhadap kebijakan dan proses yang disahkan",
+        "Direktur (JA-02)",
+        "Uraian jabatan JA-02",
+        "Tercantum di sumber"
+       ],
+       [
+        "Penanggung jawab kontrol keamanan, akses, backup, dan perubahan teknis",
+        "VP Tech Operation and Services (JA-04)",
+        "Uraian jabatan JA-04",
+        "Tercantum di sumber"
+       ],
+       [
+        "Pemilik gate serah terima G3; pemilik kebijakan dan prosedur Divisi Operation",
+        "Head of Operation",
+        "POL-OPS-001, bagian 8 dan 9.1",
+        "(USULAN), belum ada pemegang (K-10, K-11)"
+       ],
+       [
+        "Pemilik gate kick-off G1",
+        "Service Delivery Manager",
+        "POL-OPS-001, bagian 8",
+        "(USULAN), belum ada pemegang (K-10)"
+       ],
+       [
+        "Pemilik gate UAT dan BAST G2",
+        "Project Manager",
+        "POL-OPS-001, bagian 8",
+        "(USULAN), belum ada pemegang (K-10)"
+       ],
+       [
+        "Peran lain di NOC, SOC, serta SD dan PM",
+        "Lead NOC, Lead SOC, NOC Engineer, SOC Analyst, Project Coordinator",
+        "POL-OPS-001, bagian 9",
+        "(USULAN), belum ada pemegang (K-10)"
+       ],
+       [
+        "ISMS Coordinator",
+        "Belum ditetapkan",
+        "Pemilik dokumen SNX-ISMS-PRO-01",
+        "Belum ditetapkan (K-13)"
+       ],
+       [
+        "Finance Lead",
+        "Belum dipetakan",
+        "Dokumen sumber SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
+        "Belum dipetakan (K-13)"
+       ],
+       [
+        "Finance Staff",
+        "Belum dipetakan",
+        "Dokumen sumber SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
+        "Belum dipetakan (K-13)"
+       ],
+       [
+        "Line Manager Legal",
+        "Legal & Compliance (JA-08)",
+        "Dokumen sumber SNX-LEG-SOP-01",
+        "(USULAN), menunggu konfirmasi (K-13)"
+       ],
+       [
+        "Staff Legal",
+        "Legal & Compliance (JA-09)",
+        "Dokumen sumber SNX-LEG-SOP-01",
+        "(USULAN), menunggu konfirmasi (K-13)"
+       ]
+      ],
+      "widths_cm": [
+       4.8,
+       3.6,
+       3.9,
+       3.2
+      ]
+     }
+    },
+    {
+     "p": "Batas wewenang semua jabatan: keputusan keuangan, legal, perubahan kontrak, pengangkatan atau pemutusan hubungan kerja, dan perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku."
+    }
+   ]
+  },
+  {
+   "h": "Butir Menunggu Konfirmasi",
+   "blocks": [
+    {
+     "p": "Butir berikut perlu dikonfirmasi sebelum dokumen ini disahkan."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Butir",
+       "Keadaan di sumber"
+      ],
+      "rows": [
+       [
+        "K-01",
+        "Garis lapor VP Commercial (JA-03)",
+        "Job Analysis menulis atasan langsung Direktur. Garis ke Direktur Utama berasal dari keterangan tambahan saat dokumen ini disusun dan belum tertulis di Job Analysis."
+       ],
+       [
+        "K-02",
+        "Garis lapor Manager of Product Tech (JA-05)",
+        "JA-05 menulis atasan langsung Direktur. JA-03 menulis bahwa hubungan pelaporan Manager of Product Tech perlu dikonfirmasi."
+       ],
+       [
+        "K-03",
+        "Atasan JA-08, JA-10, dan JA-11",
+        "Job Analysis menulis atasan langsung Management / Direktur. Bagan menaruhnya di bawah Direktur sampai ada penetapan (USULAN)."
+       ],
+       [
+        "K-04",
+        "Atasan HR Manager (JA-14)",
+        "Job Analysis menulis atasan langsung Direktur atau Management sesuai struktur yang disahkan. Bagan menaruhnya di bawah Direktur sampai ada penetapan (USULAN)."
+       ],
+       [
+        "K-05",
+        "Atasan Direktur Utama (JA-01)",
+        "Job Analysis menulis Organ perusahaan sesuai ketentuan dan anggaran dasar (verifikasi). Organ yang dimaksud belum disebut."
+       ],
+       [
+        "K-06",
+        "Penamaan jabatan dan unit",
+        "Job Analysis menulis HR Lead untuk JA-14, dan menulis Operations, Operation, HR / GA, serta HRGA / General Affairs sebagai nama unit. Atasan JA-06 dan JA-07 ditulis Commercial dan nama Laras Rasmawati. Dokumen ini memakai HR Manager, Operation, Human Resources, dan VP Commercial."
+       ],
+       [
+        "K-07",
+        "Penulisan nama dan jabatan Direktur Utama",
+        "Job Analysis menulis Samuel Kristianto Utomo. Dokumen ini memakai Kristanto, ejaan pada blok Approved By template. Dokumen Operation memakai sebutan jabatan lain; badan dokumen ini memakai Direktur Utama."
+       ],
+       [
+        "K-08",
+        "Sebutan Direktur (JA-02)",
+        "Job Analysis menulis Direktur. Dokumen Operation menyebut jabatan yang sama COO. Dokumen ini menulis Direktur, dan COO hanya pada bagian Struktur Divisi Operation."
+       ],
+       [
+        "K-09",
+        "Head of Operation dan VP Tech Operation and Services",
+        "POL-OPS-001 menaruh Head of Operation di bawah COO. Job Analysis menaruh JA-04 di bawah Direktur dengan tim operasional dan layanan teknis di bawahnya. Hubungan kedua jabatan belum ditetapkan."
+       ],
+       [
+        "K-10",
+        "Delapan jabatan Divisi Operation",
+        "Nama jabatan, jenjang, headcount, dan garis lapor ke COO berstatus USULAN di POL-OPS-001, tanpa pemegang bernama. Pemetaan Erik Dwi Yanto (JA-13) ke NOC menunggu keputusan COO."
+       ],
+       [
+        "K-11",
+        "Pemilik POL-OPS-001",
+        "Tabel kontrol dokumen menulis pemilik COO. Bagian 9.1 menulis pemilik Head of Operation."
+       ],
+       [
+        "K-12",
+        "Jabatan Fani Fatullah",
+        "POL-OPS-001 DRAFT v0.1 menulis jabatan Fani Fatullah berbeda dari Job Analysis. Dokumen ini memakai VP Tech Operation and Services dan menunggu penyelarasan POL-OPS-001."
+       ],
+       [
+        "K-13",
+        "Peran tanpa padanan jabatan",
+        "Sumber tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; Job Analysis hanya memuat JA-10 Finance dan JA-11 Accounting & Tax. Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08, tanpa pernyataan di sumber."
+       ],
+       [
+        "K-14",
+        "Penyetuju dokumen ini",
+        "Job Analysis menulis penyetuju Management / Authorized Director. Dokumen Operation menulis COO sebagai penyetuju. Dokumen ini memakai Direktur Utama sesuai blok Approved By pada template."
+       ]
+      ],
+      "widths_cm": [
+       1.3,
+       3.8,
+       10.4
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Acuan Klausul ISO",
+   "blocks": [
+    {
+     "p": "Daftar klausul berikut berstatus (USULAN, dikonfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan dokumen ini"
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "5.3 Peran, tanggung jawab, dan wewenang organisasi",
+        "Bagan, daftar jabatan, dan matriks peran menunjukkan siapa memegang peran dan wewenang apa."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.1.2 Orang",
+        "Daftar jabatan dan status pemegang menunjukkan jabatan yang sudah terisi dan yang masih berupa usulan."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "5.3 Peran, tanggung jawab, dan wewenang organisasi",
+        "Matriks peran menunjukkan peran yang terkait ISMS dan statusnya."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.2 Peran dan tanggung jawab keamanan informasi",
+        "Matriks peran memuat ISMS Coordinator, VP Tech Operation and Services, dan jabatan Divisi Operation."
+       ]
+      ],
+      "widths_cm": [
+       3.4,
+       5.6,
+       6.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan: uraian tugas, persyaratan, kompetensi, dan wewenang tiap jabatan. Sumber jabatan dan garis lapor dokumen ini."
+       ],
+       [
+        "POL-OPS-001",
+        "Kebijakan Divisi Operation SINUX, DRAFT v0.1, penomoran masih USULAN. Sumber delapan jabatan Divisi Operation."
+       ],
+       [
+        "SNX-FAT-SOP-01",
+        "Billing & Invoicing. Dokumen sumbernya memakai peran Finance Lead dan Finance Staff."
+       ],
+       [
+        "SNX-FAT-SOP-05",
+        "Tax Administration & Reporting. Dokumen sumbernya memakai peran Finance Lead dan Finance Staff."
+       ],
+       [
+        "SNX-LEG-SOP-01",
+        "Legal Operational. Dokumen sumbernya memakai peran Line Manager Legal dan Staff Legal."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling. Pemilik dokumennya ISMS Coordinator."
+       ],
+       [
+        "Belum bernomor",
+        "KPI Matrix, tempat KPI per jabatan ditetapkan."
+       ],
+       [
+        "Belum bernomor",
+        "Authority Matrix, tempat hak tanda tangan kontrak dan otorisasi keuangan ditetapkan."
+       ]
+      ],
+      "widths_cm": [
+       3.6,
+       11.9
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir K-01 sampai K-14 akan mengubah Gambar 1, Gambar 2, dan daftar jabatan."
+    },
+    {
+     "p": "HR Manager meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan."
+    }
+   ]
+  }
+ ]
+}

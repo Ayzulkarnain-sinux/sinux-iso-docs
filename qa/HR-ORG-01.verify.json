@@ -1,0 +1,66 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Daftar Jabatan, kalimat pengantar",
+   "masalah": "Kalimat menyatakan semua isi kolom berasal dari Job Analysis. Sel JA-03 juga memuat garis ke Direktur Utama (K-01) dari premis owner, dan nama atasan sudah dinormalisasi (HR Manager, VP Commercial).",
+   "bukti": "\"Kolom Melapor ke memuat atasan langsung menurut Job Analysis.\" lawan sel JA-03 \"Direktur (JA-02); Direktur Utama (JA-01), menunggu konfirmasi (K-01)\". Usul: \"menurut Job Analysis dan butir K\"."
+  },
+  {
+   "lokasi": "Butir Menunggu Konfirmasi, K-01",
+   "masalah": "Sumber keterangan tidak disebut. Garis ke Direktur Utama berasal dari premis owner (RUNBOOK §0 dan data_conflicts), tetapi dokumen tidak menyebut siapa yang memberi keterangan itu.",
+   "bukti": "\"Garis ke Direktur Utama berasal dari keterangan tambahan saat dokumen ini disusun dan belum tertulis di Job Analysis.\""
+  },
+  {
+   "lokasi": "Butir Menunggu Konfirmasi, K-08",
+   "masalah": "Klaim tidak cocok dengan isi dokumen. COO juga muncul di tabel Definisi dan di K-09, K-10, K-11, dan K-14.",
+   "bukti": "\"Dokumen ini menulis Direktur, dan COO hanya pada bagian Struktur Divisi Operation.\""
+  },
+  {
+   "lokasi": "Kesimpulan",
+   "masalah": "Ada tiga masalah. (1) Klaimnya terlalu luas karena K-11, K-12, K-13, dan K-14 tidak mengubah Gambar 1, Gambar 2, atau daftar jabatan. (2) Penyetuju ditulis pasti, padahal K-14 masih menunggu konfirmasi. (3) Kesimpulan berisi tiga kalimat, sedangkan §6a.4 membatasinya 1 sampai 2 kalimat.",
+   "bukti": "\"Konfirmasi butir K-01 sampai K-14 akan mengubah Gambar 1, Gambar 2, dan daftar jabatan.\"; \"baru berlaku sesudah Direktur Utama menandatangani blok Approved By\" lawan Matriks Peran \"Penyetuju dokumen ini ... Menunggu konfirmasi (K-14)\"."
+  },
+  {
+   "lokasi": "Matriks Peran, baris 1",
+   "masalah": "Dasar yang dikutip lebih sempit dari klaimnya. Sumber hanya menyebut HR Lead sebagai Process Owner Job Analysis itu sendiri. Perluasan ke semua dokumen HR didukung JA-14 A.8, tetapi butir itu tidak dikutip.",
+   "bukti": "Dokumen: \"Process Owner dokumen HR, termasuk dokumen ini | HR Manager (JA-14) | Job Analysis: Process Owner | Tercantum di sumber\". Sumber: \"Process Owner | HR Lead – Aziz Priyo Widakdo\" (kontrol dokumen HR-JA-001); JA-14 A.8 \"Menyusun, meninjau, menerapkan dan mengevaluasi SOP/kebijakan HR\"."
+  },
+  {
+   "lokasi": "Definisi, K-07, K-08, K-14",
+   "masalah": "Dua sebutan dipakai bergantian untuk sumber yang sama: \"Dokumen Operation\" dan \"POL-OPS-001\" (§6a.6 dan §6a.7). \"Dokumen Operation\" juga tidak ada di tabel Definisi.",
+   "bukti": "\"Dokumen Operation menyebut jabatan ini COO.\"; \"Dokumen Operation menulis COO sebagai penyetuju.\"; di bagian lain \"POL-OPS-001\"."
+  },
+  {
+   "lokasi": "Matriks Peran, baris \"Peran lain di NOC, SOC, serta SD dan PM\"",
+   "masalah": "Baris ini bukan nama peran. Isinya daftar jabatan tanpa tanggung jawab, jadi SOP lain tidak bisa memakainya sebagai acuan nama peran (§6).",
+   "bukti": "\"Peran lain di NOC, SOC, serta SD dan PM | Lead NOC, Lead SOC, NOC Engineer, SOC Analyst, Project Coordinator | POL-OPS-001, bagian 9\""
+  },
+  {
+   "lokasi": "Struktur Divisi Operation, kolom Membawahi",
+   "masalah": "Isi \"Tidak ada\" adalah kesimpulan penyusun. POL-OPS-001 hanya tidak menyebut bawahan untuk jabatan ini (notes mengakuinya). Lebih tepat \"Tidak disebut di sumber\", seperti sel Pola kerja Head of Operation.",
+   "bukti": "Baris NOC Engineer, SOC Analyst, Project Manager, Project Coordinator: \"Tidak ada\". Sumber 9.2: \"NOC Engineer (shift, 4 regu) Lapor ke: Lead NOC.\", tanpa baris Membawahi."
+  },
+  {
+   "lokasi": "Butir Menunggu Konfirmasi, pengantar dan tabel",
+   "masalah": "Kalimat pengantar pasif tanpa pelaku, dan tabel tidak punya kolom pemutus, padahal notes sudah mencatat pemutus tiap butir K (§6a.1).",
+   "bukti": "\"Butir berikut perlu dikonfirmasi sebelum dokumen ini disahkan.\"; header tabel \"No | Butir | Keadaan di sumber\"."
+  },
+  {
+   "lokasi": "notes/HR-ORG-01.md, GAP 1 dan open item 17",
+   "masalah": "Notes sudah usang. Notes menyebut renderer tidak bisa menggambar garis putus-putus. Gambar hasil render menunjukkan garis berlabel K digambar putus-putus, dan garis JA-02 ke JA-03 tegas. Jadi syarat data_conflicts untuk garis Laras dan Aziz terpenuhi, tetapi notes menyatakan sebaliknya.",
+   "bukti": "word/media/image3.png: garis putus-putus JA-01 ke JA-03 berlabel K-01, garis tegas JA-02 ke JA-03. word/media/image4.png: garis putus-putus JA-02 ke JA-14 berlabel K-04. Notes: \"tools/render_sop.py (render_flow) tidak punya gaya garis\"."
+  },
+  {
+   "lokasi": "Matriks Peran, ISMS Coordinator",
+   "masalah": "Sumber ISMS memakai dua bentuk nama peran: \"ISMS Coordinator\" sebagai pemilik dan \"ISO/ISMS Coordinator\" sebagai pemeriksa. Menurut §6, dokumen ini menjadi acuan nama peran, jadi satu bentuk perlu ditetapkan. Peran SOP departemen lain (mis. Commercial) belum dipetakan (open item 18).",
+   "bukti": "context/audit/iso-sinux-supdocs-isms-2026-10-14.md: \"owner_in_doc: ISMS Coordinator\" (baris 928) dan \"| Diperiksa oleh | ISO/ISMS Coordinator |\" (baris 74)."
+  },
+  {
+   "lokasi": "Kriteria (checklist baris 21, Description null)",
+   "masalah": "Info, bukan cacat. Kriteria diambil dari judul dan catatan worklist: bagan, daftar jabatan, matriks peran ISO, garis lapor berlabel. Semuanya terpenuhi. Hanya garis yang atasannya tidak tunggal yang diberi label, sesuai data_conflicts (\"garis tegas ke Direktur (HR-JA-001)\"), dan data_conflicts mengalahkan catatan worklist. Berkas tim baris 21 (1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0) tidak terbaca, sehingga dokumen bisa berbeda dari versi tim (open item 1).",
+   "bukti": "worklist notes: \"bagan + daftar jabatan + matriks peran ISO; garis lapor dari HR-JA-001 berlabel menunggu konfirmasi\"; Dasar: \"semua garis lapor di dokumen ini baru resmi sesudah dokumen ini disahkan\"."
+  }
+ ]
+}
