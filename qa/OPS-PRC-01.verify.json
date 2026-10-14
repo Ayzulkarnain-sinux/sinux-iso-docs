@@ -1,0 +1,60 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 4, butir tiket; Bagian 3 definisi Zammad dan Service Hub",
+      "masalah": "Kalimat 'Tiket GMF dedicated dan permintaan internal dicatat di Service Hub.' ditulis sebagai fakta tanpa label, padahal definisi menyebut Zammad 'Sistem tiket untuk Operation'. Kalimat 'Batas pemakaian dengan Zammad belum diputus.' adalah catatan open item di badan SOP dan tidak bisa dijalankan pembaca.",
+      "bukti": "Sumber PRC-01 Bagian 8: 'Tiket GMF dedicated dan permintaan internal | SINUX Service Hub (GLPI, ticket.sinux.co.id) | Termasuk change request dan Shift Log'. Isinya konsisten dengan FRM-08, SOP-04, dan sintesis audit (MATCH). Aturan ticketing di defaults terpenuhi lewat label (USULAN) pada butir change request dan Shift Log serta open item 5. Saran: pindahkan kalimat 'belum diputus' ke open items."
+    },
+    {
+      "lokasi": "Bagian 7 (diagram) dan Bagian 6.2",
+      "masalah": "Gambar kedua sumber (Flow Sales sampai Operation, empat jalur) tidak digambar ulang. Langkah Lead dan kualifikasi, Discovery dan sizing oleh Tech dan Product, Proposal dan quote, keputusan Deal dengan cabang 'tidak: nego ulang', serta peran Tech dan Product tidak ada di dokumen. Untuk T1, ini substansi tim yang berkurang.",
+      "bukti": "Audit ops baris 3326-3364 (rId28). Notes asumsi bagian 7 dan open item 12 menjelaskan bahwa spec sop hanya menerima satu diagram. Ini bukan fakta salah."
+    },
+    {
+      "lokasi": "Bagian 11, paragraf Acuan standar",
+      "masalah": "Ada frasa meta dari proses penyusunan: 'Referensi dokumen sumber menambah klausul ...' dan 'keduanya klausul utama standar, bukan kontrol Annex A'. Pembaca dokumen final tidak tahu apa 'dokumen sumber'. Judul ISO/IEC 27001:2022 klausul 4.4 juga ditambah 'dan prosesnya', padahal judul di standar adalah 'Information security management system'.",
+      "bukti": "Teks bagian 11. Saran: 'Dokumen ini juga terkait ISO 9001:2015 klausul 8.6, 8.7, 9.1, 10.2 ...'."
+    },
+    {
+      "lokasi": "Bagian 10 Conclusion",
+      "masalah": "Kalimat pasif tanpa pelaku, padahal pelakunya diketahui (Head of Operation): 'Kepatuhan terhadap alur ini diukur lewat SNX-OPS-RPT-01, dan ketidaksesuaian proses ditangani lewat SNX-OPS-FRM-10.' (§6a.1 dan §6a.6, tingkat nilai verifikator).",
+      "bukti": "Teks conclusion. Kalimat kedua sudah aktif."
+    },
+    {
+      "lokasi": "Bagian 4 dan Bagian 6.2 langkah 4",
+      "masalah": "Ada detail sumber yang hilang. Zammad 'integrasi WhatsApp dan telepon' tidak dibawa. Syarat G3 'Terdaftar di Service Hub' (POL-OPS-001 Bagian 8) dipersingkat menjadi 'aset terdaftar'. Syarat bersyarat 'restore uji pertama berhasil (bila layanan backup ada)' (PRO-OPS-001 8.2) menjadi 'backup dan restore teruji' tanpa syarat.",
+      "bukti": "PRC-01 Bagian 8, POL-OPS-001 Bagian 8, dan PRO-OPS-001 8.2 dibandingkan dengan teks dokumen. Ini bukan karangan, hanya penyederhanaan."
+    },
+    {
+      "lokasi": "Bagian 5 peran COO, Bagian 6.3 langkah 3, blok Approval",
+      "masalah": "COO mengesahkan perubahan proses sebelum revisi, sedangkan dokumen disetujui President Director. Sumber menulis 'Disetujui oleh COO, Amirull Yusuf Zulkarnain'; defaults D2 mengalahkan sumber. Ini sesuai aturan, tetapi pengesah perubahan dan pengesah dokumen berbeda.",
+      "bukti": "Notes open item 1 (pemutus owner, Samuel)."
+    },
+    {
+      "lokasi": "Bagian 6.2, Bagian 6.3, Bagian 9",
+      "masalah": "Beberapa pelaku adalah tafsir penyusun, tidak tertulis di PRC-01, dan tidak berlabel di dokumen: Project Manager mengisi Checklist G3; Head of Operation menangani ketidaksesuaian proses (baris pengecualian 4) dan memeriksa ulang G3; Pemilik proses sebagai pengaju perubahan; Direktur Utama memimpin tinjauan manajemen.",
+      "bukti": "Masing-masing punya dasar di PRO-OPS-001 8.1 baris 9, HR-ORG-01 (matriks peran), dan POL-OPS-001 9.1. Semuanya tercatat di notes asumsi 4, 8, 9, 10 dan open items 8 dan 10. Tidak ada nama orang atau angka yang dikarang."
+    },
+    {
+      "lokasi": "Bagian 4 butir 3, Bagian 6.2, Bagian 9; Bagian 6.3 langkah 4, Bagian 8, Conclusion",
+      "masalah": "Isi berulang antarbagian (§6a.6): penolakan G3 dan hypercare muncul tiga kali; pengukuran bulanan lewat SNX-OPS-RPT-01 muncul tiga kali.",
+      "bukti": "Teks dokumen. Pengulangan dalam batas wajar untuk format template 11 bagian."
+    },
+    {
+      "lokasi": "Bagian 11 tabel Dokumen terkait",
+      "masalah": "Dokumen worklist yang relevan dengan paket handover G1 dan klausul 8.2 tidak dirujuk: SNX-COM-FRM-02 (Project Handover Record) dan SNX-COM-FRM-01 (Customer Requirement & Order Review Record). Perlu dipertimbangkan untuk konsistensi set dokumen.",
+      "bukti": "config/worklist.json memuat SNX-COM-FRM-01 dan SNX-COM-FRM-02. Rekaman proses 1 di dokumen berbunyi 'kontrak dan paket handover G1' dengan retensi 'Belum ditetapkan'."
+    }
+  ],
+  "checks": {
+    "a_fakta_vs_sumber": "Cocok. Delapan proses SIPOC (pemilik, prosedur, rekaman, pelanggan proses) sama dengan PRC-01 Bagian 5. Pemilik gate G1 SDM, G2 PM, G3 Head of Operation, dengan bukti FRM-01, FRM-05, dan FRM-06, sama dengan Bagian 6. Syarat gate berasal dari POL-OPS-001 Bagian 8 dan PRO-OPS-001 8.2. Sistem pendukung sama dengan Bagian 8. Angka: 3 hari kerja (USULAN, PRO SDPM-01), 2 minggu (USULAN, POL Bagian 8), hari kerja ke-5 (PRO SDPM-04, POL KPI, FRM-09), tahunan (defaults). Nama dan judul semua dokumen terkait cocok dengan checklist.",
+    "b_karangan": "Tidak ditemukan nama, angka, nomor, atau sistem karangan. SNX-COM-SOP-01 berlabel (USULAN). Retensi kontrak ditulis 'Belum ditetapkan', tidak diisi angka.",
+    "c_kriteria": "Terpenuhi. Semua bagian sumber T1 terbawa (Tujuan, Ruang lingkup, Referensi, peta proses, SIPOC, gate, sembilan proses pendukung, sistem pendukung, pengendalian proses). Acuan ISO 9001:2015 4.4, 8.1, 8.2, 8.5 dan ISO/IEC 27001:2022 4.4, 8.1 ada di bagian 11 dan tercermin di bagian 4.",
+    "d_runbook_0_6": "Lulus. Nol rujukan internal AI (tidak ada SKILL_, DOCTRINE, DEC-, HANDOVER, §, POLRI, atau nama pihak luar dari POL/PRO). Status Draft, Rev 00, effective date dan tanda tangan kosong. Tiga penanda tangan berbeda. Klasifikasi RESTRICTED (Internal) sesuai label sumber. Vault berstatus 'menunggu konfirmasi Ops'.",
+    "e_konsistensi_peran": "Konsisten. PIC di bagian 6.1, 6.2, 6.3, dan 8 (VP Commercial, Project Manager, Service Delivery Manager, Head of Operation, Lead NOC dan Lead SOC, Pemilik proses, COO, Direktur Utama) semuanya ada di tabel peran bagian 5.",
+    "f_bahasa": "Tidak ada pelanggaran §6a yang jelas. Tidak ada em-dash, en-dash, tanda kutip penekanan, atau frasa slop yang dilarang. Lint pass. Langkah prosedur maksimal sekitar 23 kata. Catatan gaya yang minor ada di nonblocking.",
+    "g_data_conflicts_audit": "Sesuai. Prepared, Reviewed, dan Approved persis mengikuti defaults OPS. Direktur (COO) dipakai pada sebutan pertama, sesudahnya COO; badan dokumen memakai Direktur Utama. Kesepuluh cacat audit PRC-01 serta butir POL dan PRO yang relevan ditangani atau dijelaskan di notes bagian 5."
+  }
+}
