@@ -1,12 +1,12 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T19:35:56Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T21:59:15Z)
 
-Wave berjalan: W0. Hitungan state: {'DONE': 1, 'QUEUED': 69, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 0.
+Wave berjalan: W2. Hitungan state: {'DONE': 16, 'QUEUED': 49, 'LINT_PASS': 2, 'IN_PROGRESS': 3, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 2.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
 | ISMS-SOP-02 | W0 | DONE | SNX-ISMS-SOP-02 User Access Control & Authorization (Rev00 DRAFT).docx | PASS | 5 | 1 |
-| HR-ORG-01 | W1 | QUEUED | - | - | 0 | 1 |
-| HR-JA-01 | W1 | QUEUED | - | - | 0 | 1 |
+| HR-ORG-01 | W1 | DONE | SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).docx | PASS | 14 | 1 |
+| HR-JA-01 | W1 | DONE | SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx | PASS | 29 | 2 |
 | OPS-PRC-01 | W2 | QUEUED | - | - | 0 | 0 |
 | OPS-SOP-01 | W2 | QUEUED | - | - | 0 | 0 |
 | OPS-SOP-02 | W2 | QUEUED | - | - | 0 | 0 |
@@ -32,24 +32,24 @@ Wave berjalan: W0. Hitungan state: {'DONE': 1, 'QUEUED': 69, 'HOLD': 16, 'SKIP':
 | FAT-SOP-04 | W4 | QUEUED | - | - | 0 | 0 |
 | LEG-SOP-03 | W4 | QUEUED | - | - | 0 | 1 |
 | COM-SOP-02 | W4 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-01 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-02 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-03 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-04 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-05 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-06 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-07 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-08 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-09 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-FRM-10 | W5 | QUEUED | - | - | 0 | 0 |
-| OPS-RPT-01 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-REG-01 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-REG-02 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-REG-03 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-REG-04 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-FRM-01 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-FRM-02 | W5 | QUEUED | - | - | 0 | 0 |
-| ISMS-FRM-03 | W5 | QUEUED | - | - | 0 | 0 |
+| OPS-FRM-01 | W5 | DONE | SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx | PASS | 5 | 0 |
+| OPS-FRM-02 | W5 | DONE | SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
+| OPS-FRM-03 | W5 | DONE | SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx | - | 1 | 0 |
+| OPS-FRM-04 | W5 | DONE | SNX-OPS-FRM-04 Change Request Approval Log (Rev00 DRAFT).xlsx | PASS | 7 | 0 |
+| OPS-FRM-05 | W5 | DONE | SNX-OPS-FRM-05 Testing UAT Quality Verification (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
+| OPS-FRM-06 | W5 | DONE | SNX-OPS-FRM-06 Project Handover BAST Closure Report (Rev00 DRAFT).docx | PASS | 10 | 0 |
+| OPS-FRM-07 | W5 | DONE | SNX-OPS-FRM-07 Maintenance Schedule Service Report (Rev00 DRAFT).xlsx | PASS | 6 | 0 |
+| OPS-FRM-08 | W5 | DONE | SNX-OPS-FRM-08 Technical Ticket Incident Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
+| OPS-FRM-09 | W5 | DONE | SNX-OPS-FRM-09 SLA Performance Monitoring Report (Rev00 DRAFT).xlsx | PASS | 7 | 0 |
+| OPS-FRM-10 | W5 | DONE | SNX-OPS-FRM-10 RCA Corrective Action Report (Rev00 DRAFT).docx | PASS | 8 | 0 |
+| OPS-RPT-01 | W5 | DONE | SNX-OPS-RPT-01 Operations KPI Performance Report (Rev00 DRAFT).xlsx | PASS | 10 | 0 |
+| ISMS-REG-01 | W5 | DONE | SNX-ISMS-REG-01 Information Asset Register (Rev00 DRAFT).xlsx | - | 2 | 1 |
+| ISMS-REG-02 | W5 | DONE | SNX-ISMS-REG-02 IS Risk Assessment Register (Rev00 DRAFT).xlsx | PASS | 8 | 1 |
+| ISMS-REG-03 | W5 | LINT_PASS | SNX-ISMS-REG-03 IS Risk Treatment Plan (Rev00 DRAFT).xlsx | - | 7 | 1 |
+| ISMS-REG-04 | W5 | LINT_PASS | SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).xlsx | - | 8 | 0 |
+| ISMS-FRM-01 | W5 | IN_PROGRESS | - | - | 0 | 0 |
+| ISMS-FRM-02 | W5 | IN_PROGRESS | - | - | 0 | 0 |
+| ISMS-FRM-03 | W5 | IN_PROGRESS | - | - | 0 | 0 |
 | LEG-REG-01 | W6 | QUEUED | - | - | 0 | 0 |
 | LEG-FRM-01 | W6 | QUEUED | - | - | 0 | 0 |
 | LEG-FRM-02 | W6 | QUEUED | - | - | 0 | 0 |

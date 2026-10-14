@@ -282,7 +282,7 @@ def pdfp(key):
     L = load(); d = doc(L, key); p = d.get('out_path') or out_path(d)
     od = f'/tmp/claude-0/pdf/{key}'
     r = subprocess.run(['python3', '-I', 'reports/orch/preview.py', p, od, '5', '40'], capture_output=True, text=True)
-    pdf = r.stdout.split()[-1] if r.returncode == 0 else '(gagal render: ' + r.stderr[-200:] + ')'
+    pdf = os.path.join(od, os.path.splitext(os.path.basename(p))[0] + '.pdf') if r.returncode == 0 else '(gagal render: ' + r.stderr[-200:] + ')'
     pages = r.stdout.split()[1] if r.returncode == 0 else '?'
     ref = 'FORMAT-ACUAN SOP (isi dummy).pdf' if d['mode'] == 'sop' else 'FORMAT-ACUAN Generik (isi dummy).pdf'
     cls = (classification(d) or '').upper()
@@ -298,6 +298,21 @@ Tulis {ROOT}/qa/{key}.pdfcheck.json berisi {{"verdict": "PASS"|"FAIL", "pages": 
 Pemblokir: unsur rusak sehingga dokumen tidak layak dikirim ke tim (teks/tabel terpotong, sel isi kosong yang seharusnya terisi, diagram tak terbaca, placeholder, header/footer hilang, tata letak berbeda dari acuan). Kosmetik kecil (garis diagram melintasi label, tabel pecah antarhalaman, header tabel yatim) = nonblocking.
 DILARANG menulis berkas selain {ROOT}/qa/{key}.pdfcheck.json dan isi /tmp/pdfcheck-{key}; dilarang git, Drive, staging.
 Balas maks 60 kata: verdict, jumlah blocking, temuan utama."""
+
+
+def finish(key, verified=True):
+    """vres (bila diverifikasi) -> DONE + commit + push. Cetak satu baris."""
+    if verified:
+        vres(key)
+    L = load(); d = doc(L, key)
+    if verified and d.get('verify_verdict') != 'PASS':
+        print(f'{key} BELUM DONE: verdict {d.get("verify_verdict")}'); return
+    if not verified and d['state'] != 'LINT_PASS':
+        print(f'{key} BELUM DONE: state {d["state"]}'); return
+    d['state'] = 'DONE'; d['updated_at'] = NOW(); save(L)
+    commit(key)
+    r = subprocess.run('git pull --rebase --autostash -q origin main && git push -q origin main', shell=True, capture_output=True, text=True)
+    print(key, 'push', 'OK' if r.returncode == 0 else 'GAGAL ' + (r.stderr or r.stdout)[-200:])
 
 
 def summary():
@@ -320,4 +335,5 @@ if __name__ == '__main__':
     elif cmd == 'vres': vres(sys.argv[2])
     elif cmd == 'report': report(sys.argv[2] if len(sys.argv) > 2 else None)
     elif cmd == 'pdf': print(pdfp(sys.argv[2]))
+    elif cmd == 'finish': finish(sys.argv[2], verified=(len(sys.argv) < 4 or sys.argv[3] != 'noverify'))
     elif cmd == 'summary': summary()
