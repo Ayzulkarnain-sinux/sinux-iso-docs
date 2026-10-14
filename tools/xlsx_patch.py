@@ -2,12 +2,12 @@
 """Perbaiki form xlsx tim (seri SNX) tanpa merusak fitur, lalu buktikan fitur tetap utuh.
 
 Pakai: python3 -I xlsx_patch.py <in.xlsx> <patch.json> <out.xlsx>
-patch.json: {"clear_rows": {"Sheet": [5, 6]}, "set": {"Sheet!B4": "nilai"}}
+patch.json: {"clear_rows": {"Sheet": [5, 6]}, "set": {"Sheet!B4": "nilai"}, "add_control_sheet": "<form SNX donor.xlsx>" (opsional)}
 clear_rows mengosongkan sel non-rumus dan warna isi di baris itu (struktur, rumus,
 validasi tetap); baris TIDAK dihapus agar rujukan rumus tidak bergeser. Keluar 1 bila fitur berkurang
 (sheet, gambar, data validation, conditional formatting) atau masih ada teks CONTOH.
 """
-import json, sys, zipfile
+import copy, json, sys, zipfile
 import openpyxl
 
 
@@ -25,6 +25,37 @@ def features(path):
     return f, media, vba
 
 
+# Label medan "Kontrol Dokumen" seri SNX yang ikut disalin; nilai lain dikosongkan agar isi donor tidak terbawa.
+CONTROL_LABELS = {'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'A11', 'A12', 'A13', 'A14', 'A15', 'A17', 'A29',
+                  'A30', 'B30', 'C30', 'D30', 'E30', 'A34', 'A35', 'B35', 'C35', 'D35', 'A36', 'A37', 'A38'}
+
+
+def add_control_sheet(wb, donor_path):
+    """tech_fix W7b: sumber Google Sheet tanpa sheet Kontrol Dokumen. Salin tata letak sheet itu dari form
+    SNX donor ke posisi pertama; sheet tim tidak disentuh. Hanya bila sumber belum punya sheet itu."""
+    from openpyxl.utils import get_column_letter
+    name = 'Kontrol Dokumen'
+    if name in wb.sheetnames:
+        print(json.dumps({'pass': False, 'why': 'sumber sudah punya sheet Kontrol Dokumen; pakai set'}))
+        sys.exit(1)
+    src = openpyxl.load_workbook(donor_path)[name]
+    ws = wb.create_sheet(name, 0)
+    for row in src.iter_rows():
+        for c in row:
+            n = ws.cell(row=c.row, column=c.column, value=c.value if c.coordinate in CONTROL_LABELS else None)
+            if c.has_style:
+                n.font, n.fill, n.border = copy.copy(c.font), copy.copy(c.fill), copy.copy(c.border)
+                n.alignment, n.number_format, n.protection = copy.copy(c.alignment), c.number_format, copy.copy(c.protection)
+    for m in src.merged_cells.ranges:
+        ws.merge_cells(str(m))
+    for k, d in src.column_dimensions.items():
+        ws.column_dimensions[k].width = d.width
+    for k, d in src.row_dimensions.items():
+        ws.row_dimensions[k].height = d.height
+    wb.active = 0
+    return name
+
+
 def main():
     src, patch_path, out = sys.argv[1:4]
     patch = json.load(open(patch_path, encoding='utf-8'))
@@ -38,6 +69,7 @@ def main():
         print(json.dumps({'pass': False, 'why': 'delete_rows dilarang, pakai clear_rows'}))
         sys.exit(1)
     import copy
+    added = add_control_sheet(wb, patch['add_control_sheet']) if patch.get('add_control_sheet') else None
     for sheet, rows in patch.get('clear_rows', {}).items():
         ws = wb[sheet]
         cleared = set(rows)
@@ -60,6 +92,8 @@ def main():
     wb.save(out)
     after, media1, _ = features(out)
     fails = []
+    if added:
+        before = {added: after[added], **before}
     if list(before) != list(after):
         fails.append(f'sheet berubah: {list(before)} -> {list(after)}')
     for k, v in before.items():

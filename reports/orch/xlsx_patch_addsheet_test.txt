@@ -1,0 +1,16 @@
+# tech_fix xlsx_patch add_control_sheet, uji 2026-10-14 ~23:58Z
+$ python3 -I tools/xlsx_patch.py in.xlsx p.json out.xlsx  (in = workbook uji 1 sheet 'Log' dengan 1 rumus; p = add_control_sheet donor SNX-OPS-FRM-01 + 2 set)
+{"pass": true, "fails": [], "features_before": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "Log": [0, 0, 0, 0, 1]}, "features_after": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "Log": [0, 0, 0, 0, 1]}}
+rc=0
+$ ulang pada keluaran (sudah punya sheet) harus rc=1
+{"pass": false, "why": "sumber sudah punya sheet Kontrol Dokumen; pakai set"}
+rc=1
+$ cek sisa isi donor (Project/OPS) di sheet baru
+[]
+$ bash tools/selftest.sh
+OK template sha
+OK kontrol positif sop
+OK kontrol positif generic
+OK kontrol negatif
+OK format terkunci
+OK kontrol gaya dan dummy

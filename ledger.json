@@ -37,6 +37,14 @@
    "file": "reports/orch/orch.py + reports/orch/blankscan.py",
    "change": "post() docx kini gagal bila ada halaman tanpa teks badan (blankscan); bukan perubahan tools/ atau template",
    "reason": "pemeriksa PDF HR-SOP-11 menemukan halaman kosong; pindai 28 docx: HR-SOP-11 dan HR-SOP-13 hal. 15 kosong, sisanya ok"
+  },
+  {
+   "at": "2026-10-14T23:58Z",
+   "file": "tools/xlsx_patch.py",
+   "change": "opsi add_control_sheet: bila sumber (Google Sheet W7b) tidak punya sheet Kontrol Dokumen, tata letak sheet itu disalin dari form SNX donor ke posisi pertama, hanya label medan yang ikut, nilai lain kosong; sheet tim tidak disentuh; ditolak bila sumber sudah punya sheet itu",
+   "reason": "RUNBOOK mode xlsx mewajibkan Kontrol Dokumen diselaraskan ke medan template; 3 sumber W7b (FAT-REG-01, FAT-FRM-02; FAT-SOP-06 docx tidak terkena) tidak punya sheet itu dan xlsx_patch v2 menolak sheet baru",
+   "backup": "/tmp/claude-0/xlsx_patch.v2.bak",
+   "evidence": "reports/orch/xlsx_patch_addsheet_test.txt (selftest 6 OK)"
   }
  ],
  "env_fixes": [
@@ -1788,8 +1796,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 19,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:56:25Z",
+   "open_items": [
+    "Sweep (b): pasif 4.5-4.7, isi bagian 4 terulang di bagian 6 (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:56:29Z",
    "pen_agent": "a659092717855c2b3",
    "ooxml": "PASSED"
   },
@@ -1842,17 +1852,18 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-REG-03",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-REG-03 Legal & Regulatory Requirements Register (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 20,
    "open_items": [],
-   "updated_at": "2026-10-14T23:48:17Z",
-   "pen_agent": "aa740b69850044e56"
+   "updated_at": "2026-10-14T23:57:48Z",
+   "pen_agent": "aa740b69850044e56",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 58,
@@ -1922,7 +1933,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-FRM-02",
    "out_path": null,
    "sources": [],
@@ -1931,7 +1942,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:57:48Z",
+   "pen_agent": "a2f17674d8f1c06ef"
   },
   {
    "wl_index": 62,
