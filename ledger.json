@@ -507,9 +507,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "VERIFY_FAIL",
    "number": "SNX-ISMS-SOP-03",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-SOP-03 Backup & Recovery (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1z6y_n2i6cTN6C1y7alJsCasuy9hU6Qzc",
@@ -527,13 +527,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
-   "loops": 0,
-   "usulan_count": 0,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
+   "loops": 1,
+   "usulan_count": 16,
    "open_items": [],
-   "updated_at": "2026-10-14T22:18:32Z",
-   "pen_agent": "aa66a464c5f9d8772"
+   "updated_at": "2026-10-14T22:38:01Z",
+   "pen_agent": "aa66a464c5f9d8772",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 12,
@@ -543,9 +544,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-ISMS-SOP-04",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-SOP-04 IT Asset & Configuration Management (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1L6fR1mUiCePwKjyrpSPOrCz-6FpJbDpg",
@@ -563,13 +564,16 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
-   "open_items": [],
-   "updated_at": "2026-10-14T22:22:20Z",
-   "pen_agent": "ada5a02ffcab3fe42"
+   "usulan_count": 3,
+   "open_items": [
+    "Tabel Exception memuat frasa 'tidak menjalankan wipe' yang tidak ada di sumber (instruksi tambahan penyusun); Fani konfirmasi atau hapus."
+   ],
+   "updated_at": "2026-10-14T22:40:51Z",
+   "pen_agent": "ada5a02ffcab3fe42",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 13,
@@ -679,7 +683,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-05",
    "out_path": null,
    "sources": [
@@ -694,7 +698,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:34:27Z",
+   "pen_agent": "a101f4a97710fa3fb"
   },
   {
    "wl_index": 17,

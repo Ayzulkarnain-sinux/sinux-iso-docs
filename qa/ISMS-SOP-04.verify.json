@@ -1,0 +1,61 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 9 Exception, baris 'Media penyimpanan tidak dipakai ulang'",
+   "masalah": "Frasa 'dan tidak menjalankan wipe' menambah larangan yang tidak ada di sumber. Sumber 6.5 hanya menulis 'yang tidak dipakai ulang dihancurkan fisik'; SNX-ISMS-PRO-01 menulis 'media dihancurkan atau di-wipe'. Usul: hapus frasa itu.",
+   "bukti": "Dokumen: 'NOC Engineer memakai langkah 2 butir 6.4 dan tidak menjalankan wipe.'"
+  },
+  {
+   "lokasi": "Bagian 9 Exception",
+   "masalah": "Empat dari lima baris hanya mengulang langkah prosedur 6.3, 6.4, 6.7 dan bukan kondisi pengecualian (pengulangan isi antarbagian, RUNBOOK §6a butir 6).",
+   "bukti": "Baris VM pelanggan, perangkat pribadi, media tidak dipakai ulang, dan konfigurasi hasil generator menunjuk ke langkah yang sudah ada."
+  },
+  {
+   "lokasi": "Bagian 4 Policy",
+   "masalah": "Kalimat pasif padahal pelakunya diketahui, dan 'secara berkala' kabur padahal 6.7 menulis triwulan.",
+   "bukti": "'Konfigurasi aktual CI dibandingkan dengan baseline secara berkala, dan drift ditangani sebagai event keamanan atau ketidaksesuaian' (pelaku Lead SOC); juga 'IP address dan detail teknis sensitif disimpan di register...' dan 'Isi SNX-ISMS-REG-01 dijaga akurat...'."
+  },
+  {
+   "lokasi": "Bagian 1 Purpose",
+   "masalah": "Benda diberi kata kerja manusia ('SOP ini memastikan'). Ini kalimat tim yang dipertahankan sesuai T1, jadi masih bisa diterima.",
+   "bukti": "'SOP ini memastikan seluruh aset TI dan konfigurasi...'"
+  },
+  {
+   "lokasi": "Bagian 5, 6.5, 8, 10",
+   "masalah": "Untuk tindakan yang sama dipakai 'meninjau', 'Tinjau', dan 'Review' bergantian. Begitu juga 'dekomisi' dan 'dipensiunkan'.",
+   "bukti": "Bagian 5 'meninjau asetnya'; 6.5 langkah 1 'Tinjau aset'; bagian 8 'Review aset'; bagian 10 'review aset'."
+  },
+  {
+   "lokasi": "Bagian 7 Process Flow",
+   "masalah": "Cabang 'tidak' pada diamond drift tidak berlabel; keterangannya dimasukkan ke teks diamond. Simpul 'Kembalikan atau musnahkan' ada di lane NOC Engineer, padahal pengembalian aset menurut 6.3 dilakukan Pengguna aset.",
+   "bukti": "Simpul g: 'Drift tanpa change request? (tidak: lanjut ke review aset)'; simpul m di lane NOC Engineer."
+  },
+  {
+   "lokasi": "Bagian 6 PIC (6.2 langkah 2, 6.4, 6.5 langkah 4-5, 6.1 langkah 1, 6.5 langkah 2)",
+   "masalah": "Sumber menulis langkah-langkah ini dalam kalimat pasif tanpa pelaku. Pelaku diisi lewat tafsir: NOC Engineer untuk pencabutan akses, pemusnahan, dan rekonsiliasi; Pemilik aset untuk nilai CIA dan keputusan pensiun. Tafsir ini diungkap di notes (asumsi 1-5, open item 4-5). SNX-ISMS-SOP-02 memakai 'Administrator sistem' untuk pencabutan akses, sehingga nama peran antardokumen belum seragam. Perlu konfirmasi Fani.",
+   "bukti": "Sumber 6.3: 'akses akun terkait segera dicabut atau dirotasi'; dokumen 6.2 langkah 2 PIC 'NOC Engineer'."
+  },
+  {
+   "lokasi": "Bagian 11 Rekaman",
+   "masalah": "Lokasi 'Google Drive' dan pemilik 'Head of Operation' untuk REG-01, berita acara, dan SNX-OPS-FRM-04 tidak ada di sumber SOP-04. Nilai ini diturunkan dari REG-01 (owner_in_doc Head of Operation) dan diungkap di notes (asumsi 8). Faktanya wajar, tetapi tidak berlabel USULAN.",
+   "bukti": "'Information Asset Register (SNX-ISMS-REG-01) | Google Drive; pemilik Head of Operation'."
+  },
+  {
+   "lokasi": "Bagian 6.1 dan SLA, gate G3",
+   "masalah": "Checklist G3 di PRO-OPS-001 8.2 menulis 'Pelanggan, aset, dan kontak terdaftar di Service Hub', sedangkan SOP ini mewajibkan pendaftaran di SNX-ISMS-REG-01. Akibatnya ada dua tempat daftar aset pelanggan. Butir ini sudah tercatat sebagai open item 12.",
+   "bukti": "PRO-OPS-001 8.2 G3; dokumen 6.1 langkah 3."
+  },
+  {
+   "lokasi": "Bagian 11 Acuan standar",
+   "masalah": "SNX-ISMS-SOA-01 juga memetakan Annex A 7.10 Storage media ke SOP-04, tetapi kontrol ini tidak ada di kriteria checklist maupun di sumber. Butir ini sudah tercatat sebagai open item 14. Klaim 'kesembilan kontrol' sudah dicek dan cocok dengan audit SoA.",
+   "bukti": "context/audit isms baris SoA 7.10: 'SNX-ISMS-PRO-01, SNX-ISMS-SOP-04'."
+  },
+  {
+   "lokasi": "Umum (cek g)",
+   "masalah": "Nihil cacat. Penanda tangan cocok dengan defaults ISMS dan data_conflicts (Erik, Fani, Samuel Kristanto Utomo / President Director). Badan dokumen tidak menyebut COO. Cacat audit butir 1-8 untuk fileId 1L6fR1mUiCePwKjyrpSPOrCz-6FpJbDpg ditangani di notes §6 (skala CIA 1-3, sheet Pemusnahan 5 tahun, USULAN batas pengembalian, klausul tambahan).",
+   "bukti": "notes/ISMS-SOP-04.md §4 dan §6."
+  }
+ ]
+}

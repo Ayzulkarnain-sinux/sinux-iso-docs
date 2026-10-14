@@ -1,0 +1,603 @@
+{
+ "meta": {
+  "doc_key": "ISMS-SOP-04",
+  "number": "SNX-ISMS-SOP-04",
+  "department": "Operation",
+  "title": "IT Asset & Configuration Management",
+  "process_owner": "Head of Operation",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini memastikan seluruh aset TI dan konfigurasi yang dikelola SINUX teridentifikasi, memiliki pemilik, terklasifikasi, dikendalikan perubahannya, dan dikembalikan atau dimusnahkan secara aman di akhir siklus hidupnya."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk aset informasi dan aset TI internal SINUX, serta aset pelanggan yang dikelola SINUX sesuai kontrak. Aset pelanggan yang tidak dikelola SINUX menurut kontrak tidak tercakup.",
+  "Hardware: server, network device, laptop kerja, media penyimpanan.",
+  "Aset virtual: VM, container, layanan cloud, nama domain, sertifikat.",
+  "Software dan lisensi: OS, panel hosting, security agent dan backup, aplikasi internal.",
+  "Informasi: database, dokumen, konfigurasi, backup, log.",
+  "Layanan pihak ketiga: platform cloud, DNS dan WAF, email, sistem tiket (Zammad untuk Ops, Service Hub untuk generalist), dan monitoring."
+ ],
+ "definitions": [
+  [
+   "Apply",
+   "Tindakan menerapkan konfigurasi yang dibuat otomatis oleh generator, misalnya vhost WAF, ke sistem."
+  ],
+  [
+   "Aset",
+   "Segala sesuatu yang bernilai bagi SINUX atau pelanggan dan perlu dilindungi."
+  ],
+  [
+   "Baseline hardening",
+   "Baseline konfigurasi untuk satu jenis sistem yang memperketat pengaturan keamanannya."
+  ],
+  [
+   "Baseline konfigurasi",
+   "Konfigurasi standar yang disetujui sebagai acuan."
+  ],
+  [
+   "Change request",
+   "Permintaan perubahan pada konfigurasi atau sistem yang diajukan dan disetujui menurut SNX-OPS-SOP-02."
+  ],
+  [
+   "Configuration item (CI)",
+   "Aset yang konfigurasinya dikendalikan, misalnya VM produksi, network device, WAF."
+  ],
+  [
+   "Drift",
+   "Perbedaan konfigurasi aktual dari baseline konfigurasi tanpa change request yang disetujui."
+  ],
+  [
+   "Gate G3",
+   "Serah terima layanan dari sub divisi SD dan PM ke sub divisi NOC dan SOC. Pemilik gate adalah Head of Operation (POL-OPS-001 bagian 8)."
+  ],
+  [
+   "NOC, SOC, SD dan PM",
+   "Tiga sub divisi pada Divisi Operation: NOC, SOC, serta Service Delivery dan PM, menurut Kebijakan Divisi Operation SINUX (POL-OPS-001)."
+  ],
+  [
+   "Nilai CIA",
+   "Nilai kerahasiaan (confidentiality), integritas (integrity), dan ketersediaan (availability) aset, masing-masing dengan skala 1 (rendah) sampai 3 (tinggi) menurut SNX-ISMS-REG-01."
+  ],
+  [
+   "Password manager",
+   "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+  ],
+  [
+   "Pemilik aset",
+   "Peran yang bertanggung jawab atas perlindungan dan penggunaan aset."
+  ],
+  [
+   "Rekonsiliasi",
+   "Pencocokan isi SNX-ISMS-REG-01 dengan sumber aktual aset. Hasil yang tidak cocok disebut selisih."
+  ],
+  [
+   "RESTRICTED (Internal)",
+   "Salah satu tingkat klasifikasi informasi dalam SNX-ISMS-PRO-01."
+  ],
+  [
+   "Service Hub",
+   "SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist."
+  ],
+  [
+   "Wipe",
+   "Penghapusan seluruh data pada media penyimpanan dengan overwrite atau secure erase."
+  ],
+  [
+   "Zammad",
+   "Sistem tiket untuk Ops."
+  ]
+ ],
+ "policy": [
+  "Setiap aset dalam ruang lingkup memiliki ID aset dan nama yang unik, serta satu baris di SNX-ISMS-REG-01 yang mencatat Pemilik aset dan klasifikasinya (Annex A 5.9; ISO 9001:2015 8.5.2). Lihat butir 6.1.",
+  "IP address dan detail teknis sensitif disimpan di register berklasifikasi RESTRICTED (Internal), yaitu SNX-ISMS-REG-01.",
+  "Aset yang konfigurasinya dikendalikan ditandai sebagai CI di SNX-ISMS-REG-01 dan punya acuan baseline konfigurasi (Annex A 8.9; ISO 9001:2015 7.1.3). Lihat butir 6.6.",
+  "Perubahan konfigurasi CI hanya lewat change request menurut SNX-OPS-SOP-02 (Annex A 8.9).",
+  "Konfigurasi aktual CI dibandingkan dengan baseline secara berkala, dan drift ditangani sebagai event keamanan atau ketidaksesuaian (Annex A 8.9). Lihat butir 6.7.",
+  "Instalasi software pada sistem operasional hanya melalui change request dan dari sumber resmi (Annex A 8.19).",
+  "Aset perusahaan dipakai untuk kepentingan kerja (Annex A 5.10).",
+  "Laptop kerja wajib memakai screen lock otomatis, disk encryption, antivirus atau EDR yang aktif, dan update OS (Annex A 8.1).",
+  "Kredensial tidak disimpan di laptop di luar password manager.",
+  "Laptop dan media yang dibawa ke luar kantor tetap dalam pengawasan Pengguna aset dan tidak ditinggal di kendaraan (Annex A 7.9). Lihat butir 6.2.",
+  "Pengguna aset mengembalikan aset perusahaan dan aset pelanggan yang dipegangnya saat pemberhentian atau mutasi (Annex A 5.11). Lihat butir 6.3.",
+  "NOC Engineer menghapus data media penyimpanan dengan wipe sebelum media dipakai ulang, dan menghancurkannya secara fisik bila tidak dipakai ulang (Annex A 7.14, 8.10). Lihat butir 6.4.",
+  "NOC Engineer menghapus VM dan volume pelanggan hanya sesuai kontrak dan sesudah pelanggan mengonfirmasi tertulis dua kali.",
+  "Isi SNX-ISMS-REG-01 dijaga akurat lewat review oleh Pemilik aset dan rekonsiliasi dengan sumber aktual (Annex A 5.9). Lihat butir 6.5."
+ ],
+ "roles": [
+  [
+   "Head of Operation",
+   "Pemilik SOP; memastikan SNX-ISMS-REG-01 lengkap dan ditinjau; memastikan review aset oleh Pemilik aset terlaksana; memantau target di bagian 8; meninjau SOP ini setiap tahun.",
+   "Menyatakan SNX-ISMS-REG-01 lengkap dan review aset terlaksana."
+  ],
+  [
+   "Pemilik aset",
+   "Menetapkan klasifikasi, akses, dan siklus hidup asetnya; meninjau asetnya minimal sekali setiap semester.",
+   "Menetapkan klasifikasi dan nilai CIA asetnya; memutuskan aset dipensiunkan."
+  ],
+  [
+   "NOC Engineer",
+   "Mendaftarkan dan memperbarui aset dan CI saat provisioning, perubahan, dan dekomisi; melakukan rekonsiliasi; memusnahkan media dan mencatat berita acara; menjalankan perubahan konfigurasi CI lewat change request.",
+   "Mengubah baris di SNX-ISMS-REG-01 sesuai kejadian aset; mengubah konfigurasi CI hanya sesuai change request yang disetujui."
+  ],
+  [
+   "Lead SOC",
+   "Menyusun baseline hardening dan memeriksa drift keamanan.",
+   "Menetapkan baseline hardening; menilai drift sebagai event keamanan atau ketidaksesuaian."
+  ],
+  [
+   "Pengguna aset",
+   "Memakai aset sesuai aturan penggunaan di bagian 4; melaporkan kehilangan atau pencurian aset; mengembalikan aset saat pemberhentian atau mutasi.",
+   "Memakai aset sebatas aturan penggunaan di bagian 4."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Registrasi Aset (Annex A 5.9)",
+   "steps": [
+    [
+     "Tetapkan klasifikasi aset menurut SNX-ISMS-PRO-01 dan nilai CIA-nya.",
+     "Pemilik aset",
+     "Klasifikasi dan nilai CIA aset"
+    ],
+    [
+     "Beri nama aset yang unik dan konsisten dengan penamaan aset lain di SNX-ISMS-REG-01.",
+     "NOC Engineer",
+     "Nama aset"
+    ],
+    [
+     "Daftarkan aset baru di SNX-ISMS-REG-01 paling lambat saat aset mulai dipakai; untuk aset pelanggan, sebelum gate G3.",
+     "NOC Engineer",
+     "Baris aset baru di SNX-ISMS-REG-01"
+    ],
+    [
+     "Lengkapi data minimal pada baris itu: ID aset, nama, jenis, pemilik, pengguna atau pelanggan, lokasi atau platform, klasifikasi, nilai CIA, status, dan tanggal review.",
+     "NOC Engineer",
+     "Data minimal terisi di SNX-ISMS-REG-01"
+    ]
+   ]
+  },
+  {
+   "title": "Aset di Luar Kantor (Annex A 7.9)",
+   "steps": [
+    [
+     "Laporkan kehilangan atau pencurian aset yang dibawa ke luar kantor paling lambat 1 jam sejak mengetahuinya, sesuai SNX-ISMS-SOP-01.",
+     "Pengguna aset",
+     "Laporan event keamanan menurut SNX-ISMS-SOP-01"
+    ],
+    [
+     "Cabut atau rotasi akses akun terkait segera, sesuai SNX-ISMS-SOP-02.",
+     "NOC Engineer",
+     "Akses akun dicabut atau kredensial dirotasi"
+    ]
+   ]
+  },
+  {
+   "title": "Pengembalian Aset (Annex A 5.11)",
+   "steps": [
+    [
+     "Kembalikan semua aset perusahaan dan aset pelanggan yang dipegang saat pemberhentian atau mutasi.",
+     "Pengguna aset",
+     "Aset yang dikembalikan"
+    ],
+    [
+     "Cocokkan aset yang dikembalikan dengan baris aset di SNX-ISMS-REG-01.",
+     "NOC Engineer",
+     "Hasil pencocokan dengan SNX-ISMS-REG-01"
+    ],
+    [
+     "Hapus informasi kerja dari perangkat pribadi, bila perangkat pribadi diizinkan untuk bekerja.",
+     "Pengguna aset",
+     "Informasi kerja terhapus dari perangkat pribadi"
+    ],
+    [
+     "Konfirmasikan penghapusan informasi kerja secara tertulis.",
+     "Pengguna aset",
+     "Konfirmasi tertulis penghapusan"
+    ]
+   ]
+  },
+  {
+   "title": "Penghapusan dan Pemusnahan Aman (Annex A 7.14, 8.10)",
+   "steps": [
+    [
+     "Hapus data media penyimpanan yang akan dipakai ulang dengan wipe.",
+     "NOC Engineer",
+     "Media ter-wipe"
+    ],
+    [
+     "Hancurkan fisik media penyimpanan yang tidak dipakai ulang.",
+     "NOC Engineer",
+     "Media hancur fisik"
+    ],
+    [
+     "Minta konfirmasi tertulis pelanggan dua kali sebelum menghapus VM atau volume pelanggan, sesuai SNX-OPS-SOP-02.",
+     "NOC Engineer",
+     "Dua konfirmasi tertulis pelanggan"
+    ],
+    [
+     "Hapus VM atau volume pelanggan sesuai kontrak sesudah dua konfirmasi diterima.",
+     "NOC Engineer",
+     "VM atau volume pelanggan terhapus"
+    ],
+    [
+     "Catat pemusnahan dengan berita acara: ID aset, metode, tanggal, pelaksana, dan saksi.",
+     "NOC Engineer",
+     "Berita acara di sheet Pemusnahan SNX-ISMS-REG-01"
+    ],
+    [
+     "Ubah status aset di SNX-ISMS-REG-01 menjadi Dimusnahkan.",
+     "NOC Engineer",
+     "Status Dimusnahkan di SNX-ISMS-REG-01"
+    ]
+   ]
+  },
+  {
+   "title": "Review dan Rekonsiliasi SNX-ISMS-REG-01 (Annex A 5.9)",
+   "steps": [
+    [
+     "Tinjau aset yang dimiliki di SNX-ISMS-REG-01 minimal sekali setiap semester dan perbarui tanggal review.",
+     "Pemilik aset",
+     "Tanggal review terbaru di SNX-ISMS-REG-01"
+    ],
+    [
+     "Putuskan apakah aset dipensiunkan; bila ya, aset dikembalikan atau dimusnahkan menurut butir 6.3 dan 6.4.",
+     "Pemilik aset",
+     "Keputusan pensiun aset"
+    ],
+    [
+     "Pastikan review semesteran terlaksana untuk semua aset.",
+     "Head of Operation",
+     "Tidak ada baris review terlambat (berwarna merah) di SNX-ISMS-REG-01"
+    ],
+    [
+     "Lakukan rekonsiliasi SNX-ISMS-REG-01 dengan sumber aktual (console Nusagrid, Overseer, Acronis, Cloudflare, daftar lisensi) setiap triwulan.",
+     "NOC Engineer",
+     "Catatan rekonsiliasi"
+    ],
+    [
+     "Tutup tiap selisih rekonsiliasi dalam 30 hari: daftarkan aset yang belum tercatat atau perbarui baris yang tidak cocok.",
+     "NOC Engineer",
+     "Selisih ditutup; baris SNX-ISMS-REG-01 diperbarui"
+    ]
+   ]
+  },
+  {
+   "title": "Penandaan CI dan Baseline Konfigurasi (Annex A 8.9)",
+   "steps": [
+    [
+     "Susun baseline hardening per jenis sistem, misalnya server Linux, panel hosting, network device, dan WAF.",
+     "Lead SOC",
+     "Baseline hardening per jenis sistem"
+    ],
+    [
+     "Simpan baseline hardening di knowledge base sebagai runbook.",
+     "Lead SOC",
+     "Runbook baseline di knowledge base"
+    ],
+    [
+     "Tandai CI di kolom CI SNX-ISMS-REG-01 beserta acuan baseline konfigurasinya.",
+     "NOC Engineer",
+     "Kolom CI dan acuan baseline terisi"
+    ]
+   ]
+  },
+  {
+   "title": "Perubahan dan Pemeriksaan Konfigurasi (Annex A 8.9, 8.19)",
+   "steps": [
+    [
+     "Ajukan change request menurut SNX-OPS-SOP-02 untuk setiap perubahan konfigurasi CI, termasuk instalasi software di sistem operasional.",
+     "NOC Engineer",
+     "Change request (SNX-OPS-FRM-04)"
+    ],
+    [
+     "Catat konfigurasi sebelum dan sesudah perubahan di change request.",
+     "NOC Engineer",
+     "Konfigurasi sebelum dan sesudah di change request"
+    ],
+    [
+     "Ambil backup konfigurasi CI setiap ada perubahan dan setiap minggu, sesuai SNX-ISMS-SOP-03.",
+     "NOC Engineer",
+     "Backup konfigurasi CI"
+    ],
+    [
+     "Verifikasi ulang konfigurasi hasil generator, misalnya vhost WAF, setelah setiap Apply.",
+     "NOC Engineer",
+     "Hasil verifikasi konfigurasi sesudah Apply"
+    ],
+    [
+     "Bandingkan konfigurasi aktual tiap CI dengan baseline minimal sekali setiap triwulan.",
+     "Lead SOC",
+     "Catatan pemeriksaan drift"
+    ],
+    [
+     "Analisis drift sebagai event keamanan atau ketidaksesuaian.",
+     "Lead SOC",
+     "Hasil analisis drift; event keamanan diproses menurut SNX-ISMS-SOP-01"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "lanes": {
+   "Pemilik aset": [
+    "a",
+    "i",
+    "k",
+    "l"
+   ],
+   "NOC Engineer": [
+    "b",
+    "d",
+    "e",
+    "j",
+    "m"
+   ],
+   "Lead SOC": [
+    "c",
+    "f",
+    "g",
+    "h"
+   ]
+  },
+  "nodes": {
+   "a": "Tetapkan klasifikasi\ndan nilai CIA aset",
+   "b": "Daftarkan aset di\nSNX-ISMS-REG-01\n(aset pelanggan:\nsebelum gate G3)",
+   "c": "Susun baseline hardening\ndan simpan sebagai\nrunbook",
+   "d": "Tandai CI dan acuan\nbaseline di\nSNX-ISMS-REG-01",
+   "e": "Ubah konfigurasi lewat\nchange request\n(SNX-OPS-SOP-02)",
+   "f": "Bandingkan konfigurasi\naktual dengan baseline\n(minimal triwulan)",
+   "g": "Drift tanpa\nchange request?\n(tidak: lanjut ke\nreview aset)",
+   "h": "Analisis sebagai event\nkeamanan (SNX-ISMS-SOP-01)\natau ketidaksesuaian",
+   "i": "Tinjau aset\n(minimal semester)",
+   "j": "Rekonsiliasi dengan\nsumber aktual\n(triwulan)",
+   "k": "Aset dipensiunkan?",
+   "l": "Lanjut operasi",
+   "m": "Kembalikan atau musnahkan\n(wipe, berita acara,\nstatus Dimusnahkan)"
+  },
+  "shapes": {
+   "g": "diamond",
+   "k": "diamond",
+   "l": "ellipse",
+   "m": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "e",
+    "f"
+   ],
+   [
+    "f",
+    "g"
+   ],
+   [
+    "g",
+    "i"
+   ],
+   [
+    "g",
+    "h",
+    "Ya"
+   ],
+   [
+    "h",
+    "i",
+    "",
+    "dashed"
+   ],
+   [
+    "i",
+    "j"
+   ],
+   [
+    "j",
+    "k"
+   ],
+   [
+    "k",
+    "m",
+    "Ya"
+   ],
+   [
+    "k",
+    "l",
+    "Tidak"
+   ],
+   [
+    "l",
+    "i",
+    "siklus berikutnya",
+    "dashed"
+   ]
+  ],
+  "caption": "Gambar 1. Alur aset dari pendaftaran sampai pengembalian atau pemusnahan, dengan review dan pemeriksaan drift."
+ },
+ "sla": [
+  [
+   "Pendaftaran aset baru",
+   "NOC Engineer",
+   "Paling lambat saat aset mulai dipakai"
+  ],
+  [
+   "Pendaftaran aset pelanggan",
+   "NOC Engineer",
+   "Sebelum gate G3; target 100% aset produksi terdaftar sebelum G3"
+  ],
+  [
+   "Laporan kehilangan atau pencurian aset di luar kantor",
+   "Pengguna aset",
+   "Paling lambat 1 jam sejak mengetahui"
+  ],
+  [
+   "Pencabutan atau rotasi akses akun terkait aset yang hilang",
+   "NOC Engineer",
+   "Segera"
+  ],
+  [
+   "Pengembalian aset saat pemberhentian atau mutasi",
+   "Pengguna aset",
+   "Paling lambat hari terakhir kerja (USULAN)"
+  ],
+  [
+   "Review aset",
+   "Pemilik aset",
+   "Minimal sekali setiap semester; target pelaksanaan 100%"
+  ],
+  [
+   "Rekonsiliasi SNX-ISMS-REG-01 dengan sumber aktual",
+   "NOC Engineer",
+   "Setiap triwulan"
+  ],
+  [
+   "Tindak lanjut selisih rekonsiliasi",
+   "NOC Engineer",
+   "Ditutup dalam 30 hari; target 95%"
+  ],
+  [
+   "Backup konfigurasi CI",
+   "NOC Engineer",
+   "Setiap perubahan dan setiap minggu"
+  ],
+  [
+   "Verifikasi konfigurasi hasil generator",
+   "NOC Engineer",
+   "Setelah setiap Apply"
+  ],
+  [
+   "Pemeriksaan drift terhadap baseline",
+   "Lead SOC",
+   "Minimal sekali setiap triwulan; target drift tanpa change request nol"
+  ],
+  [
+   "Review SOP ini",
+   "Head of Operation",
+   "Setiap tahun"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Media penyimpanan tidak dipakai ulang",
+   "NOC Engineer memakai langkah 2 butir 6.4 dan tidak menjalankan wipe."
+  ],
+  [
+   "VM atau volume pelanggan yang akan dihapus",
+   "NOC Engineer memakai langkah 3 dan 4 butir 6.4, bukan wipe atau penghancuran fisik."
+  ],
+  [
+   "Perangkat pribadi diizinkan untuk bekerja",
+   "Pengguna aset menghapus informasi kerja dari perangkat itu dan mengonfirmasinya secara tertulis saat pemberhentian atau mutasi (butir 6.3, langkah 3 dan 4)."
+  ],
+  [
+   "Drift tanpa change request yang disetujui",
+   "Lead SOC menganalisisnya sebagai event keamanan menurut SNX-ISMS-SOP-01 atau sebagai ketidaksesuaian (butir 6.7, langkah 6)."
+  ],
+  [
+   "Perubahan manual pada konfigurasi hasil generator",
+   "NOC Engineer memverifikasi ulang konfigurasi setelah setiap Apply karena perubahan manual dapat tertimpa (butir 6.7)."
+  ]
+ ],
+ "conclusion": [
+  "Head of Operation memantau kepatuhan lewat empat target di bagian 8: pendaftaran aset produksi sebelum gate G3, review aset, penutupan selisih rekonsiliasi, dan drift tanpa change request.",
+  "Head of Operation meninjau SOP ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "SNX-ISMS-REG-01",
+   "Information Asset Register; register aset dan CI, termasuk sheet Pemusnahan untuk berita acara."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling Procedure; tingkat klasifikasi aset."
+  ],
+  [
+   "SNX-ISMS-SOP-01",
+   "SOP Information Security Incident Management; pelaporan kehilangan atau pencurian aset dan event keamanan dari drift."
+  ],
+  [
+   "SNX-ISMS-SOP-02",
+   "SOP User Access Control & Authorization; pencabutan dan rotasi akses akun."
+  ],
+  [
+   "SNX-ISMS-SOP-03",
+   "SOP Backup & Recovery; backup konfigurasi CI."
+  ],
+  [
+   "SNX-ISMS-SOA-01",
+   "Statement of Applicability (SoA); memetakan kontrol Annex A ke dokumen yang menerapkannya, termasuk SOP ini."
+  ],
+  [
+   "SNX-OPS-SOP-02",
+   "Project Change Management; change request untuk perubahan konfigurasi CI dan konfirmasi hapus VM pelanggan."
+  ],
+  [
+   "SNX-OPS-FRM-04",
+   "Change Request & Approval Log; rekaman change request konfigurasi."
+  ],
+  [
+   "POL-OPS-001",
+   "Kebijakan Divisi Operation SINUX (DRAFT v0.1); susunan sub divisi dan gate G3."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; nama jabatan dan peran Divisi Operation."
+  ]
+ ],
+ "records": [
+  [
+   "Information Asset Register (SNX-ISMS-REG-01)",
+   "Google Drive; pemilik Head of Operation",
+   "Berlaku sampai digantikan"
+  ],
+  [
+   "Berita acara pemusnahan (sheet Pemusnahan, SNX-ISMS-REG-01)",
+   "Google Drive; pemilik Head of Operation",
+   "5 tahun"
+  ],
+  [
+   "Change request konfigurasi (SNX-OPS-FRM-04)",
+   "Berkas SNX-OPS-FRM-04; pemilik Head of Operation",
+   "3 tahun"
+  ],
+  [
+   "Catatan rekonsiliasi SNX-ISMS-REG-01 (USULAN)",
+   "Google Drive; pemilik Head of Operation",
+   "3 tahun"
+  ],
+  [
+   "Catatan pemeriksaan drift (USULAN)",
+   "Google Drive; pemilik Lead SOC",
+   "3 tahun"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "7.1.3 (Infrastruktur), 8.5.2 (Identifikasi dan ketertelusuran).",
+  "ISO/IEC 27001:2022": "Annex A 5.9 (Inventory of information and other associated assets), 5.11 (Return of assets), 7.14 (Secure disposal or re-use of equipment), 8.9 (Configuration management), 8.19 (Installation of software on operational systems). Isi SOP ini juga merujuk Annex A 5.10 (Acceptable use of information and other associated assets), 7.9 (Security of assets off-premises), 8.1 (User endpoint devices), dan 8.10 (Information deletion). SNX-ISMS-SOA-01 memetakan kesembilan kontrol itu ke SOP ini."
+ }
+}
