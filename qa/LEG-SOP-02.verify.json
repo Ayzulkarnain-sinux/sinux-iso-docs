@@ -1,0 +1,59 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 4 butir 4.19; Scope kalimat terakhir; Related Documents baris SNX-LEG-SOP-01, SNX-HR-JA-01, SNX-LEG-FRM-01",
+   "masalah": "Catatan proses penyusunan ikut tercetak di SOP. Kalimatnya membahas 'dokumen sumber', bukan mengatur proses, dan membingungkan auditor maupun pelaksana. Label (USULAN) bisa ditaruh langsung di tiap butir, dan penjelasan ketertelusuran dipindah ke notes.",
+   "bukti": "'Dokumen sumber memakai kalimat pasif untuk beberapa langkah.' (4.19); 'Target respons dokumen korporasi dan perizinan tetap dimuat di bagian 8 karena tabel target waktu sumber memuatnya.' (Scope); 'Sumber SOP ini menyebutnya Contract Review Checklist.' (Related Documents)"
+  },
+  {
+   "lokasi": "Butir 4.19 (daftar pelaku USULAN); 6.7 langkah 4",
+   "masalah": "Daftar pelaku yang ditetapkan untuk kalimat pasif sumber tidak lengkap. 6.7 langkah 4 menetapkan Staff Legal sebagai penentu batas persetujuan DoA tanpa label, padahal sumber hanya menulis kalimat pasif. Pelaku di 6.4 langkah 3-4 dan 6.8 langkah 4-6 masih bisa diturunkan dari tabel Tanggung Jawab dan dari sumber lama bagian 4.2.",
+   "bukti": "Sumber 1E_8: 'Batas persetujuan berdasarkan jenis dan nilai transaksi mengacu pada matriks DoA Perusahaan, yaitu [TBD].' Dokumen: '4. Tentukan batas persetujuan menurut jenis dan nilai transaksi dari matriks DoA. | Staff Legal'"
+  },
+  {
+   "lokasi": "6.10 langkah 5; tabel peran baris PIC Bisnis",
+   "masalah": "Pelaku pengajuan perubahan kontrak berjalan (PIC Bisnis) tidak ada di sumber. Penetapan ini juga tidak cocok dengan definisi Pemohon (yang mengajukan perubahan) dan dengan 6.1 langkah 1, yang PIC-nya Pemohon. Butir ini tidak diberi label USULAN.",
+   "bukti": "Sumber: 'Addendum, amandemen, perpanjangan, atau perubahan material mengikuti prosedur penelaahan dan persetujuan dalam SOP ini.' Definisi Pemohon di sumber: 'mengajukan permintaan penyusunan, penelaahan, atau perubahan kontrak'. Dokumen: '5. Ajukan permintaan addendum, perpanjangan, atau perubahan material ... | PIC Bisnis'"
+  },
+  {
+   "lokasi": "Bagian 9 baris perubahan material; diagram (simpul l ke i); 6.6 langkah 5",
+   "masalah": "Bagian 9 dan diagram mewajibkan Line Manager Legal memberi Persetujuan Legal lagi sesudah perubahan material, tetapi bagian 6 tidak punya langkah itu. 6.6 langkah 5 hanya menugaskan Staff Legal me-review ulang.",
+   "bukti": "Bagian 9: 'Staff Legal me-review ulang dokumen, dan Line Manager Legal memberi Persetujuan Legal lagi sebelum persetujuan final (butir 4.14).' 6.6: '5. Review ulang dokumen bila ada perubahan material sesudah Persetujuan Legal (butir 4.14). | Staff Legal'"
+  },
+  {
+   "lokasi": "Tabel peran baris Line Manager Legal",
+   "masalah": "Rujukan butir di kolom tanggung jawab tidak menyebut 6.10, padahal Line Manager Legal menjadi PIC di 6.10 langkah 7.",
+   "bukti": "'(butir 6.1 sampai 6.7, dan bagian 10)' vs 6.10: '7. Tentukan penanganan lebih lanjut atas laporan itu. | Line Manager Legal'"
+  },
+  {
+   "lokasi": "Definisi GLPI",
+   "masalah": "Definisi ini menetapkan batas 'generalist' sebagai fungsi non-Operation tanpa label. config/defaults.json ticketing menyatakan batas generalist belum dirinci owner dan meminta label (USULAN) bila SOP memerlukan batas itu.",
+   "bukti": "'GLPI | Sistem tiket SINUX untuk fungsi non-Operation (generalist).'; defaults: \"Batas lingkup 'generalist' belum dirinci owner: bila SOP perlu batas, tulis berlabel (USULAN)\""
+  },
+  {
+   "lokasi": "6.4 langkah 7; 4.7; 6.3 intro; 4.14 dan bagian 9",
+   "masalah": "Lindung nilai berulang dari kata sumber (dipertahankan karena T1) membuat pemicu tindakan tidak jelas, misalnya kapan Line Manager Legal mengeskalasi ke Pejabat Berwenang. Istilah 'persetujuan final' dipakai tanpa definisi. Penajamannya butuh keputusan Legal, jadi cukup dicatat sebagai open item.",
+   "bukti": "'7. Eskalasikan risiko Tinggi kepada Pejabat Berwenang sesuai kebutuhan.'; '... sebelum persetujuan final atau penandatanganan.' (4.14)"
+  },
+  {
+   "lokasi": "Butir 4.14, 4.16",
+   "masalah": "Kedua butir memakai pasif tanpa pelaku, padahal pelakunya diketahui (Staff Legal menurut 6.6 langkah 5 dan 6.9 langkah 4).",
+   "bukti": "'... membuat kontrak di-review ulang sesuai tingkat materialitasnya'; 'Kontrak yang belum ditandatangani lengkap dicatat berstatus draft ...'"
+  },
+  {
+   "lokasi": "Bagian 9 vs bagian 4",
+   "masalah": "Isi diulang antarbagian (§6a.6). Beberapa baris bagian 9 mengulang butir 4.6, 4.12, 4.14, dan 4.16 hampir kata per kata. Baris-baris itu cukup merujuk butirnya.",
+   "bukti": "Bagian 9: 'Line Manager Legal menyesuaikan target penyelesaian dan mengomunikasikan perubahannya beserta alasannya kepada Pemohon (butir 4.6).' vs 4.6: 'Line Manager Legal mengomunikasikan perubahan target beserta alasannya kepada Pemohon.'"
+  }
+ ],
+ "catatan_pemeriksaan": {
+  "fakta": "Angka 1/2/3-5/5 hari, 2 hari kerja, 90/60/30 hari, bulanan, dan tahunan cocok dengan sumber 1E_8 dan 19pe. Satuan 'hari kerja' diambil dari 19pe. Kanal GLPI, target bagian 8, dan klausul ISO berlabel USULAN. Contoh nama pihak 'Arkana' dihapus. Kode dokumen rujukan cocok dengan config/worklist.json. Pemetaan JA-08/JA-09 (K-13) cocok dengan specs/HR-ORG-01.json (DONE). Rujukan Authority Matrix ada di HR-ORG-01.",
+  "kriteria": "Peninjauan ada di 6.3 dan 6.5, revisi di 6.5 langkah 4 dan 6.6, persetujuan di 6.5 dan 6.7, oleh Divisi Legal, dan gerbang sebelum penandatanganan di 4.1 dan 6.8 langkah 7. Kriteria terpenuhi.",
+  "batas_keras": "Status Draft, tanggal efektif kosong, tanda tangan kosong. Tidak ada rujukan internal AI, TBD, [ISI, em-dash, atau en-dash. Tidak ada kredensial. Tidak ada residu konsultan.",
+  "peran": "PIC di bagian 6 dan 8 semuanya ada di tabel peran bagian 5. Approval cocok dengan defaults LEG: Staff Legal, Line Manager Legal, Samuel Kristanto Utomo / President Director.",
+  "data_conflicts_audit": "Tidak ada nama atau jabatan bermasalah di badan dokumen. Sebutan Direktur Utama, COO, dan CEO tidak dipakai. grep 1E_8 di context/audit tidak menemukan apa pun. Dua belas cacat audit 19pe (baris 1055) ditangani atau dijelaskan di notes/LEG-SOP-02.md bagian 4.",
+  "langkah": "Semua langkah prosedur paling banyak 22 kata."
+ }
+}

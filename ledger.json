@@ -745,7 +745,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-SOP-02",
    "out_path": "out/04_Legal/SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx",
    "sources": [
@@ -761,11 +761,13 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 17,
-   "open_items": [],
-   "updated_at": "2026-10-14T22:57:54Z",
+   "open_items": [
+    "Langkah persetujuan ulang Line Manager Legal sesudah revisi tidak ada di 6.6 (nonblocking verifikator); Legal konfirmasi."
+   ],
+   "updated_at": "2026-10-14T23:01:28Z",
    "pen_agent": "a8415089d8bd9e5d8",
    "ooxml": "PASSED"
   },
@@ -861,7 +863,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-11",
    "out_path": null,
    "sources": [
@@ -876,7 +878,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:01:28Z",
+   "pen_agent": "a2cb5b7e1e129cb63"
   },
   {
    "wl_index": 23,
@@ -2416,7 +2419,10 @@
   },
   {
    "task": "Polish sweep frasa meta (dokumen sumber / di sumber / sumber tim / penyusun bila bukan peran form) di dokumen DONE: HR-JA-01, HR-ORG-01, OPS-FRM-03, OPS-FRM-06, OPS-FRM-10, OPS-PRC-01, OPS-SOP-03, dan dokumen W3+ yang terdeteksi. Ganti dengan kode/nama dokumen yang dirujuk; tanpa perubahan lain; bukti diff teks paragraf; lint ulang.",
-   "added": "2026-10-14T22:52Z"
+   "added": "2026-10-14T22:52Z",
+   "extra": [
+    "LEG-SOP-01"
+   ]
   }
  ]
 }
