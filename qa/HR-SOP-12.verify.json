@@ -1,0 +1,52 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 1 PURPOSE, paragraf 2",
+      "masalah": "Label 'Hasil yang dijaga:' diangkat dari kalimat panduan gaya, terbaca mekanis. Kalimat 'hasilnya dinilai sesudah masa rotasi' pasif padahal pelakunya diketahui (HR Manager, butir 6.5).",
+      "bukti": "\"Hasil yang dijaga: setiap rotasi punya tujuan tertulis dan berlaku sesudah keputusan tertulis. Untuk pengembangan keterampilan, hasilnya dinilai sesudah masa rotasi.\""
+    },
+    {
+      "lokasi": "Butir 4.8; butir 6.4 langkah 4; butir 6.5 langkah 5",
+      "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui: Administrator sistem mencabut akses lama (SNX-ISMS-SOP-02), Atasan Langsung tujuan atau asal mengajukan perubahan. Sekali terjadi per lokasi, tidak berulang secara mengganggu.",
+      "bukti": "4.8: \"hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan\"; 6.4/6.5: \"agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02\""
+    },
+    {
+      "lokasi": "Bagian 6, 8, 9",
+      "masalah": "Sinonim berganti untuk satu hal: 'perubahan hak akses' dan 'perubahan akses' (kolom Output 'Permintaan perubahan akses'); 'sesudah' dan 'setelah' (bagian 9); 'tugas semula' dan 'tugas sebelum rotasi' (6.5 langkah 4). Tidak ada di tabel Definisi, sehingga dampaknya kecil.",
+      "bukti": "6.4 langkah 5 Output: \"Permintaan perubahan akses\"; bagian 9: \"Penilaian berlanjut setelah Atasan Langsung asal mengirim usulan yang lengkap\"; 6.5 langkah 4: \"ke tugas sebelum rotasi\""
+    },
+    {
+      "lokasi": "Butir 4.2 dan bagian 2 SCOPE",
+      "masalah": "Syarat 'satu unit kerja' mempersempit kriteria Description (yang hanya menyebut tingkatan jabatan sama) dan tidak berlabel USULAN di 4.2. Pembagiannya wajar dan konsisten dengan SNX-HR-SOP-13 (yang mengecualikan perpindahan tanpa ubah unit ke SOP-12), dan label USULAN ada di baris bagian 9. Bersama ukuran tingkatan berbasis garis lapor, hanya dua pasangan jabatan yang memenuhi (notes Open items 2). Disarankan beri label USULAN di 4.2.",
+      "bukti": "4.2: \"jabatan tujuan harus satu tingkatan dan satu unit kerja dengan jabatan karyawan\"; SOP-13 bagian 2: \"perpindahan tugas atau fungsi yang tidak mengubah unit kerja, divisi, atau lokasi operasional (SNX-HR-SOP-12)\""
+    },
+    {
+      "lokasi": "Bagian 3, definisi Tingkatan jabatan",
+      "masalah": "Ukuran jumlah garis lapor menempatkan VP Tech Operation and Services (JA-04) dan Manager of Product Tech (JA-05) pada tingkatan yang sama walau sebutan jabatannya berbeda jenjang. Sudah berlabel USULAN dan tercatat di notes; perlu konfirmasi HR Manager.",
+      "bukti": "\"Dua jabatan satu tingkatan bila jumlah garis lapornya sama. SNX-HR-JA-01 tidak memuat grading, sehingga ukuran ini (USULAN).\"; ORG-01: JA-04 dan JA-05 sama-sama melapor ke Direktur (JA-02)"
+    },
+    {
+      "lokasi": "Bagian 11, Acuan standar",
+      "masalah": "Rumusan label terbaca seolah klausul sudah dikonfirmasi konsultan, padahal maksudnya menunggu konfirmasi.",
+      "bukti": "\"Status acuan klausul: (USULAN, dikonfirmasi konsultan)\""
+    },
+    {
+      "lokasi": "Bagian 7 PROCESS FLOW (HR-SOP-12_flow.png.dot)",
+      "masalah": "Simpul 'Kembalikan usulan' untuk pengembalian oleh HR Manager (beda unit, beda tingkatan, tujuan lain) kembali ke simpul pengajuan lewat garis putus-putus, padahal bagian 9 menyatakan usulan itu diproses lewat SOP-10, SOP-11, SOP-13 atau tidak diproses lewat SOP ini. Garis balik hanya tepat untuk usulan tidak lengkap.",
+      "bukti": "dot: \"g\" -> \"x\" [label=\"Tidak\"]; \"x\" -> \"a\" [style=dashed]; bagian 9: \"Usulan itu tidak diproses lewat SOP ini (USULAN).\""
+    },
+    {
+      "lokasi": "Bagian 5 vs bagian 9",
+      "masalah": "Tugas di bagian 9 tidak tercermin di tabel peran: HRGA Officer memberi tahu Atasan Langsung asal bahwa usulan tidak dilanjutkan dan melapor ke HR Manager bila konfirmasi belum ada; Direktur Utama menetapkan garis lapor dan memutuskan penundaan tanggal berlaku. Nama peran di bagian 5, kolom PIC bagian 6 dan 8 sudah konsisten (enam peran yang sama).",
+      "bukti": "Bagian 9: \"HR Manager meminta Direktur Utama menetapkan garis lapor\"; \"HR Manager meminta Direktur Utama memutuskan penundaan tanggal berlaku (USULAN)\"; bagian 5 Direktur Utama hanya menyebut butir 6.3"
+    }
+  ],
+  "catatan_verifikasi": {
+    "fakta": "Penanda tangan sesuai data_conflicts (Sita Nadia Salsabila Widodo / HRGA Officer; Aziz Priyo Widakdo / HR Manager; Samuel Kristanto Utomo / President Director); badan memakai Direktur Utama dan HR Manager. Wewenang JA-12 dan JA-14 cocok dengan sumber 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 (E.1-E.3 dan E.4). Rujukan SNX-HR-JA-01 butir 4.4 (Authority Matrix) dan 4.5 (delegasi tertulis) cocok dengan keluaran JA-01. SNX-ISMS-SOP-02 memuat 'Perubahan Akses saat Mutasi' dan definisi 'Mutasi'. SNX-ISMS-PRO-01 menyebut data karyawan sebagai RESTRICTED (Internal). Sub divisi NOC, SOC, SD dan PM cocok dengan ORG-01. Angka SLA, lokasi simpan, retensi berlabel USULAN.",
+    "kriteria": "Description baris SOP Rotation terpenuhi: definisi Rotasi, tujuan penyegaran atau pengembangan keterampilan (4.1, definisi), tingkatan jabatan sama (4.2, 6.2 langkah 3), penilaian keterampilan sesudah masa rotasi (6.5).",
+    "batas_keras": "lint_doc.py sop: pass, 0 fails; nol em-dash, nol rujukan internal AI, status Draft, tanggal efektif dan tanda tangan kosong.",
+    "audit_konteks": "Cacat 1 sampai 15 di context/audit/iso-sinux-supdocs-hr-2026-10-14.md bagian 5 ditangani di notes/HR-SOP-12.md bagian 5."
+  }
+}

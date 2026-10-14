@@ -1,0 +1,554 @@
+{
+ "meta": {
+  "doc_key": "HR-SOP-12",
+  "number": "SNX-HR-SOP-12",
+  "department": "Human Resources",
+  "title": "Rotation",
+  "process_owner": "HR Manager",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini mengatur cara SINUX memindahkan tugas atau fungsi seorang karyawan ke jabatan lain pada tingkatan jabatan yang sama, untuk penyegaran atau pengembangan keterampilan karyawan itu.",
+  "Hasil yang dijaga: setiap rotasi punya tujuan tertulis dan berlaku sesudah keputusan tertulis. Untuk pengembangan keterampilan, hasilnya dinilai sesudah masa rotasi."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk karyawan SINUX yang menjabat di jabatan yang tercantum di SNX-HR-ORG-01 dan SNX-HR-JA-01 dan akan menjalankan tugas atau fungsi jabatan lain pada unit kerja dan tingkatan jabatan yang sama. Prosesnya mulai dari usulan Atasan Langsung asal sampai penilaian hasil rotasi dan kembalinya karyawan ke tugas semula, termasuk pembaruan data karyawan dan pemberitahuan perubahan hak akses.",
+  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); penurunan jabatan (SNX-HR-SOP-11); pemindahan ke unit kerja, divisi, atau lokasi operasional lain (SNX-HR-SOP-13); perpindahan dengan tujuan selain yang tertulis di butir 4.1 (USULAN); penetapan gaji dan tunjangan akibat rotasi (USULAN)."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Atasan Langsung asal",
+   "Jabatan yang menjadi tujuan laporan langsung dari jabatan karyawan yang dirotasi sebelum rotasi, menurut kolom Melapor ke di SNX-HR-ORG-01."
+  ],
+  [
+   "Atasan Langsung tujuan",
+   "Jabatan yang menjadi tujuan laporan langsung dari jabatan tujuan, menurut kolom Melapor ke di SNX-HR-ORG-01. Jabatan ini bisa sama dengan Atasan Langsung asal."
+  ],
+  [
+   "Hari kerja",
+   "Satuan batas waktu di bagian 8, tidak termasuk hari libur resmi (USULAN)."
+  ],
+  [
+   "Jabatan tujuan",
+   "Jabatan di SNX-HR-ORG-01 yang tugas atau fungsinya akan dijalankan karyawan yang dirotasi."
+  ],
+  [
+   "Karyawan yang dirotasi",
+   "Karyawan SINUX yang tugas atau fungsinya diusulkan berpindah, atau sudah berpindah, lewat rotasi."
+  ],
+  [
+   "Keputusan rotasi",
+   "Persetujuan atau penolakan tertulis atas usulan rotasi."
+  ],
+  [
+   "Keterampilan yang dituju",
+   "Kompetensi teknis atau kompetensi perilaku jabatan tujuan di SNX-HR-JA-01 yang akan ditambah karyawan lewat rotasi."
+  ],
+  [
+   "Masa rotasi",
+   "Jangka waktu karyawan yang dirotasi menjalankan tugas atau fungsi jabatan tujuan, tertulis di keputusan rotasi."
+  ],
+  [
+   "Pengembangan keterampilan",
+   "Tujuan rotasi: karyawan menambah keterampilan yang dituju."
+  ],
+  [
+   "Penyegaran",
+   "Tujuan rotasi: karyawan mengerjakan tugas atau fungsi yang berbeda dari yang biasa ia kerjakan, tanpa keterampilan yang dituju (USULAN)."
+  ],
+  [
+   "Personal file",
+   "Berkas kepegawaian setiap karyawan yang dipelihara HRGA Officer."
+  ],
+  [
+   "Rotasi",
+   "Perpindahan tugas atau fungsi seorang karyawan ke tugas atau fungsi jabatan lain pada tingkatan jabatan yang sama."
+  ],
+  [
+   "Tanggal berlaku",
+   "Tanggal rotasi mulai berlaku, tertulis di keputusan rotasi."
+  ],
+  [
+   "Tingkatan jabatan",
+   "Jenjang sebuah jabatan di SNX-HR-ORG-01, dihitung dari jumlah garis lapor sampai Direktur Utama (JA-01). Dua jabatan satu tingkatan bila jumlah garis lapornya sama. SNX-HR-JA-01 tidak memuat grading, sehingga ukuran ini (USULAN)."
+  ],
+  [
+   "Unit kerja",
+   "Nama di kolom Unit pada SNX-HR-ORG-01, misalnya Commercial, Operation, atau Legal. Sub divisi NOC, SOC, serta SD dan PM berada dalam satu unit Operation (USULAN)."
+  ],
+  [
+   "Uraian jabatan tujuan",
+   "Bagian SNX-HR-JA-01 untuk jabatan tujuan: uraian tugas, persyaratan, kompetensi, dan wewenangnya."
+  ],
+  [
+   "Usulan rotasi",
+   "Pengajuan tertulis dari Atasan Langsung asal untuk merotasi seorang karyawan."
+  ]
+ ],
+ "policy": [
+  "4.1 Tujuan rotasi (ISO 9001:2015 7.2): rotasi hanya dilakukan untuk penyegaran atau pengembangan keterampilan. Usulan rotasi menyebut salah satunya, dan HR Manager memeriksanya sebelum merekomendasikan (butir 6.2).",
+  "4.2 Tingkatan jabatan dan unit kerja (ISO 9001:2015 5.3): jabatan tujuan harus satu tingkatan dan satu unit kerja dengan jabatan karyawan, menurut definisi di bagian 3. HR Manager menilai keduanya dari SNX-HR-ORG-01 (butir 6.2). Bila SNX-HR-FRM-01 sudah disahkan dan menetapkan tingkatan jabatan, HR Manager memakai tingkatan itu (USULAN).",
+  "4.3 Pengembangan keterampilan (ISO 9001:2015 7.2 dan ISO/IEC 27001:2022 7.2): untuk tujuan pengembangan keterampilan, HR Manager memeriksa bahwa keterampilan yang dituju tertulis sebagai kompetensi jabatan tujuan di SNX-HR-JA-01 (butir 6.2). Sesudah masa rotasi, HR Manager menilai kompetensi aktual karyawan terhadap keterampilan itu, mencatat kesenjangan, dan mencatat tindakan pelatihannya di SNX-HR-FRM-02 (butir 6.5, (USULAN)).",
+  "4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung asal mengusulkan, Atasan Langsung tujuan menanggapi, HR Manager menilai dan merekomendasikan, lalu Direktur Utama menetapkan keputusan rotasi. HRGA Officer memperbarui data karyawan dan mengarsipkan rekaman (butir 6.4 dan 6.5).",
+  "4.5 Persetujuan tertulis: SNX-HR-JA-01 butir 4.5 menyatakan keputusan pengangkatan atau pemutusan hubungan kerja dan perubahan kontrak mengikuti delegasi dan persetujuan tertulis yang berlaku. Rotasi tidak disebut di butir itu. Rotasi berlaku hanya sesudah keputusan tertulis Direktur Utama (USULAN).",
+  "4.6 Wewenang selama masa rotasi (ISO 9001:2015 5.3 dan ISO/IEC 27001:2022 Annex A 5.2): karyawan yang dirotasi menjalankan tugas dan wewenang jabatan tujuan menurut SNX-HR-JA-01, dalam batas keputusan rotasi. Rotasi tidak otomatis memberi hak tanda tangan kontrak atau otorisasi keuangan; hak itu mengikuti Authority Matrix (SNX-HR-JA-01 butir 4.4).",
+  "4.7 Komunikasi tanggung jawab (ISO 9001:2015 5.3): karyawan yang dirotasi menerima uraian jabatan tujuan dan mengonfirmasi secara tertulis bahwa ia memahaminya sebelum tanggal berlaku (butir 6.4, (USULAN)).",
+  "4.8 Hak akses (ISO/IEC 27001:2022 Annex A 5.18): SNX-ISMS-SOP-02 memakai kata mutasi untuk perpindahan peran seseorang. Rotasi diperlakukan sebagai mutasi (USULAN): perubahan tugas mengikuti butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02, yaitu hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan (butir 6.4 dan 6.5).",
+  "4.9 Masa rotasi: SNX-HR-JA-01 dan SNX-HR-ORG-01 tidak menetapkan lama atau frekuensi rotasi. Direktur Utama menulis masa rotasi di tiap keputusan rotasi, dan karyawan kembali ke tugas atau fungsi semula sesudah masa rotasi (USULAN).",
+  "4.10 Rekaman dan klasifikasi (ISO 9001:2015 7.5.3): HRGA Officer mengarsipkan rekaman rotasi di personal file karyawan (butir 6.4 dan 6.5). Rekaman itu berisi data karyawan dan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan retensi ada di tabel bagian 11."
+ ],
+ "roles": [
+  [
+   "HR Manager",
+   "Pemilik SOP. Menilai kesetaraan tingkatan jabatan dan unit kerja, tujuan rotasi, dan keterampilan yang dituju; merekomendasikan keputusan ke Direktur Utama; menyampaikan keputusan; menilai keterampilan karyawan sesudah masa rotasi dan mencatat kesenjangannya (butir 6.2, 6.3, dan 6.5).",
+   "Merekomendasikan keputusan kepada Direktur Utama dan tidak memutuskan rotasi, mengikuti wewenang JA-14 di SNX-HR-JA-01 yang merekomendasikan hiring, salary action, dan disciplinary action kepada approver (USULAN). Mengembalikan usulan yang tidak memenuhi bagian 4."
+  ],
+  [
+   "HRGA Officer",
+   "Memeriksa kelengkapan usulan rotasi, memberikan uraian jabatan tujuan kepada karyawan yang dirotasi, memperbarui data karyawan, memberi tahu Atasan Langsung tujuan dan Atasan Langsung asal tentang perubahan tugas, dan mengarsipkan rekaman di personal file (butir 6.2, 6.4, dan 6.5).",
+   "Meminta kelengkapan data atau dokumen, memproses administrasi dalam SOP, dan mengeskalasi keputusan HR ke HR Manager (JA-12 di SNX-HR-JA-01)."
+  ],
+  [
+   "Direktur Utama",
+   "Memutuskan usulan rotasi: setujui atau tolak, dan menetapkan tanggal berlaku dan masa rotasi (butir 6.3).",
+   "Menyetujui atau menolak usulan, dalam batas anggaran dasar dan delegasi tertulis yang berlaku (USULAN)."
+  ],
+  [
+   "Atasan Langsung asal",
+   "Mengisi dan mengirim usulan rotasi, menerima pemberitahuan keputusan, dan mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02 saat masa rotasi berakhir (butir 6.1, 6.3, dan 6.5).",
+   "Mengusulkan rotasi bawahan langsungnya; tidak memutuskannya."
+  ],
+  [
+   "Atasan Langsung tujuan",
+   "Menanggapi usulan rotasi, menerima pemberitahuan keputusan, mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02 saat tanggal berlaku, dan melaporkan hasil kerja karyawan selama masa rotasi (butir 6.2, 6.3, 6.4, dan 6.5).",
+   "Menyatakan bersedia atau tidak menerima karyawan yang dirotasi ke jabatan tujuan (USULAN)."
+  ],
+  [
+   "Karyawan yang dirotasi",
+   "Menerima uraian jabatan tujuan dan mengonfirmasi secara tertulis bahwa ia memahaminya (butir 6.4, (USULAN)).",
+   "Meminta penjelasan atas uraian jabatan tujuan sebelum mengonfirmasi."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Pengajuan usulan",
+   "intro": [
+    "Atasan Langsung asal memulai proses. Langkah di butir 6.1 sampai 6.5 adalah (USULAN) sampai HR Manager dan Direktur Utama mengesahkan SOP ini."
+   ],
+   "steps": [
+    [
+     "Isi usulan rotasi: karyawan, jabatan tujuan, tujuan rotasi, dan keterampilan yang dituju bila tujuannya pengembangan keterampilan.",
+     "Atasan Langsung asal",
+     "Usulan rotasi"
+    ],
+    [
+     "Tambahkan pada usulan rotasi: masa rotasi dan pengaturan pekerjaan yang ditinggalkan karyawan.",
+     "Atasan Langsung asal",
+     "Usulan rotasi dengan rencana masa rotasi"
+    ],
+    [
+     "Kirim usulan rotasi ke Atasan Langsung tujuan dan HRGA Officer.",
+     "Atasan Langsung asal",
+     "Usulan rotasi yang diterima"
+    ]
+   ]
+  },
+  {
+   "title": "Penilaian usulan",
+   "steps": [
+    [
+     "Tanggapi usulan rotasi secara tertulis: bersedia menerima karyawan atau tidak.",
+     "Atasan Langsung tujuan",
+     "Tanggapan Atasan Langsung tujuan (bagian 9 bila tidak bersedia)"
+    ],
+    [
+     "Periksa kelengkapan usulan rotasi dan tanggapan Atasan Langsung tujuan.",
+     "HRGA Officer",
+     "Usulan lengkap, atau daftar kekurangan (bagian 9)"
+    ],
+    [
+     "Nilai kesetaraan tingkatan jabatan dan unit kerja antara jabatan karyawan dan jabatan tujuan di SNX-HR-ORG-01.",
+     "HR Manager",
+     "Kesimpulan kesetaraan, atau alasan pengembalian (bagian 9)"
+    ],
+    [
+     "Nilai tujuan rotasi terhadap butir 4.1, dan keterampilan yang dituju terhadap kompetensi jabatan tujuan di SNX-HR-JA-01.",
+     "HR Manager",
+     "Kesimpulan tujuan rotasi, atau alasan pengembalian (bagian 9)"
+    ]
+   ]
+  },
+  {
+   "title": "Persetujuan",
+   "steps": [
+    [
+     "Kirim rekomendasi (setujui atau tolak) beserta usulan, tanggapan, dan kesimpulan penilaian ke Direktur Utama.",
+     "HR Manager",
+     "Rekomendasi rotasi"
+    ],
+    [
+     "Putuskan usulan rotasi: setujui atau tolak.",
+     "Direktur Utama",
+     "Keputusan rotasi tertulis, memuat tanggal berlaku dan masa rotasi bila disetujui"
+    ],
+    [
+     "Sampaikan keputusan rotasi kepada Atasan Langsung asal, Atasan Langsung tujuan, dan karyawan yang dirotasi.",
+     "HR Manager",
+     "Pemberitahuan keputusan"
+    ]
+   ]
+  },
+  {
+   "title": "Pelaksanaan rotasi",
+   "intro": [
+    "Langkah berikut berjalan sesudah keputusan menyetujui. Untuk keputusan menolak, lihat bagian 9."
+   ],
+   "steps": [
+    [
+     "Berikan uraian jabatan tujuan dari SNX-HR-JA-01, termasuk batas wewenangnya, kepada karyawan yang dirotasi.",
+     "HRGA Officer",
+     "Uraian jabatan tujuan yang diterima karyawan"
+    ],
+    [
+     "Konfirmasi secara tertulis bahwa uraian jabatan tujuan sudah diterima dan dipahami, sebelum tanggal berlaku.",
+     "Karyawan yang dirotasi",
+     "Konfirmasi tertulis karyawan"
+    ],
+    [
+     "Perbarui tugas dan tanggal berlaku di data karyawan.",
+     "HRGA Officer",
+     "Data karyawan yang diperbarui"
+    ],
+    [
+     "Beri tahu Atasan Langsung tujuan tentang perubahan tugas paling lambat pada tanggal berlaku, agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02.",
+     "HRGA Officer",
+     "Pemberitahuan perubahan tugas"
+    ],
+    [
+     "Ajukan perubahan hak akses karyawan yang dirotasi menurut butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02.",
+     "Atasan Langsung tujuan",
+     "Permintaan perubahan akses"
+    ],
+    [
+     "Arsipkan usulan, tanggapan, kesimpulan penilaian, rekomendasi, keputusan rotasi, dan konfirmasi karyawan di personal file.",
+     "HRGA Officer",
+     "Arsip rotasi di personal file"
+    ]
+   ]
+  },
+  {
+   "title": "Evaluasi hasil rotasi",
+   "intro": [
+    "Langkah berikut berjalan pada akhir masa rotasi."
+   ],
+   "steps": [
+    [
+     "Sampaikan hasil kerja karyawan yang dirotasi selama masa rotasi kepada HR Manager.",
+     "Atasan Langsung tujuan",
+     "Laporan hasil rotasi"
+    ],
+    [
+     "Untuk tujuan pengembangan keterampilan, nilai kompetensi aktual karyawan terhadap keterampilan yang dituju.",
+     "HR Manager",
+     "Penilaian keterampilan karyawan"
+    ],
+    [
+     "Catat kesenjangan keterampilan yang ditemukan beserta tindakan pelatihannya di SNX-HR-FRM-02.",
+     "HR Manager",
+     "Tindakan atas kesenjangan di SNX-HR-FRM-02 (USULAN), atau catatan tidak ada kesenjangan"
+    ],
+    [
+     "Kembalikan tugas karyawan di data karyawan ke tugas sebelum rotasi.",
+     "HRGA Officer",
+     "Data karyawan yang diperbarui"
+    ],
+    [
+     "Beri tahu Atasan Langsung asal tentang kembalinya karyawan ke tugas semula paling lambat pada hari masa rotasi berakhir, agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02.",
+     "HRGA Officer",
+     "Pemberitahuan perubahan tugas"
+    ],
+    [
+     "Ajukan perubahan hak akses karyawan yang dirotasi menurut butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02.",
+     "Atasan Langsung asal",
+     "Permintaan perubahan akses"
+    ],
+    [
+     "Arsipkan laporan hasil rotasi dan penilaian keterampilan di personal file.",
+     "HRGA Officer",
+     "Arsip hasil rotasi di personal file"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Isi dan kirim usulan (butir 6.1)\nAtasan Langsung asal",
+   "c": "Atasan Langsung tujuan\nbersedia menerima?",
+   "e": "HRGA Officer:\nusulan lengkap?",
+   "g": "HR Manager: setara dan\ntujuan sesuai?",
+   "x": "Kembalikan usulan (bagian 9)\nHRGA Officer atau HR Manager",
+   "h": "Kirim rekomendasi (butir 6.3)\nHR Manager",
+   "i": "Direktur Utama\nmenyetujui?",
+   "k": "Sampaikan keputusan (butir 6.3)\nHR Manager",
+   "z": "Selesai. Usulan baru\nmulai dari butir 6.1",
+   "l": "Berikan uraian jabatan tujuan (butir 6.4)\nHRGA Officer",
+   "m": "Konfirmasi tertulis (butir 6.4)\nKaryawan yang dirotasi",
+   "n": "Perbarui data, beri tahu, arsipkan (butir 6.4)\nHRGA Officer",
+   "q": "Nilai keterampilan (butir 6.5)\nHR Manager",
+   "r": "Kembalikan tugas, arsipkan (butir 6.5)\nHRGA Officer"
+  },
+  "shapes": {
+   "c": "diamond",
+   "e": "diamond",
+   "g": "diamond",
+   "i": "diamond",
+   "z": "ellipse",
+   "r": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "c"
+   ],
+   [
+    "c",
+    "e",
+    "Ya"
+   ],
+   [
+    "c",
+    "z",
+    "Tidak"
+   ],
+   [
+    "e",
+    "g",
+    "Ya"
+   ],
+   [
+    "e",
+    "x",
+    "Tidak"
+   ],
+   [
+    "x",
+    "a",
+    "",
+    "dashed"
+   ],
+   [
+    "g",
+    "h",
+    "Ya"
+   ],
+   [
+    "g",
+    "x",
+    "Tidak"
+   ],
+   [
+    "h",
+    "i"
+   ],
+   [
+    "i",
+    "k",
+    "Ya"
+   ],
+   [
+    "i",
+    "z",
+    "Tidak"
+   ],
+   [
+    "k",
+    "l"
+   ],
+   [
+    "l",
+    "m"
+   ],
+   [
+    "m",
+    "n"
+   ],
+   [
+    "n",
+    "q"
+   ],
+   [
+    "q",
+    "r"
+   ]
+  ],
+  "caption": "Gambar 1. Alur rotasi (USULAN). Garis putus-putus kembali ke alur utama. Tanggapan, pengajuan perubahan hak akses, dan laporan hasil rotasi oleh Atasan Langsung ada di butir 6.2, 6.4, dan 6.5."
+ },
+ "sla": [
+  [
+   "Tanggapan atas usulan rotasi (butir 6.2)",
+   "Atasan Langsung tujuan",
+   "3 hari kerja sejak usulan diterima (USULAN)"
+  ],
+  [
+   "Pemeriksaan kelengkapan (butir 6.2)",
+   "HRGA Officer",
+   "3 hari kerja sejak tanggapan diterima (USULAN)"
+  ],
+  [
+   "Penilaian dan rekomendasi (butir 6.2 dan 6.3)",
+   "HR Manager",
+   "5 hari kerja sejak usulan lengkap (USULAN)"
+  ],
+  [
+   "Keputusan rotasi (butir 6.3)",
+   "Direktur Utama",
+   "5 hari kerja sejak rekomendasi diterima (USULAN)"
+  ],
+  [
+   "Pemberitahuan keputusan (butir 6.3)",
+   "HR Manager",
+   "2 hari kerja sejak keputusan diterima (USULAN)"
+  ],
+  [
+   "Konfirmasi uraian jabatan tujuan (butir 6.4)",
+   "Karyawan yang dirotasi",
+   "Sebelum tanggal berlaku (USULAN)"
+  ],
+  [
+   "Pemberitahuan perubahan tugas untuk hak akses (butir 6.4 dan 6.5)",
+   "HRGA Officer",
+   "Paling lambat pada tanggal berlaku, dan pada hari masa rotasi berakhir, mengikuti SNX-ISMS-SOP-02"
+  ],
+  [
+   "Laporan hasil rotasi (butir 6.5)",
+   "Atasan Langsung tujuan",
+   "Pada akhir masa rotasi (USULAN)"
+  ],
+  [
+   "Penilaian keterampilan (butir 6.5)",
+   "HR Manager",
+   "5 hari kerja sejak laporan diterima (USULAN)"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Atasan Langsung tujuan tidak bersedia menerima karyawan pada butir 6.2",
+   "HRGA Officer memberi tahu Atasan Langsung asal bahwa usulan tidak dilanjutkan. Usulan baru untuk karyawan yang sama dimulai dari butir 6.1 (USULAN)."
+  ],
+  [
+   "Usulan tidak lengkap pada butir 6.2",
+   "HRGA Officer mengembalikan usulan ke Atasan Langsung asal beserta daftar kekurangan. Penilaian berlanjut setelah Atasan Langsung asal mengirim usulan yang lengkap."
+  ],
+  [
+   "Jabatan tujuan berada di unit kerja lain",
+   "HR Manager mengembalikan usulan ke Atasan Langsung asal beserta alasannya. Pemindahan ke unit kerja lain diproses menurut SNX-HR-SOP-13 (USULAN)."
+  ],
+  [
+   "Jabatan tujuan berada pada tingkatan yang lebih tinggi atau lebih rendah",
+   "HR Manager mengembalikan usulan ke Atasan Langsung asal beserta alasannya. Perpindahan ke tingkatan lebih tinggi mengikuti SNX-HR-SOP-10, dan ke tingkatan lebih rendah mengikuti SNX-HR-SOP-11 (USULAN)."
+  ],
+  [
+   "Tujuan usulan bukan penyegaran atau pengembangan keterampilan",
+   "HR Manager mengembalikan usulan ke Atasan Langsung asal beserta alasannya. Usulan itu tidak diproses lewat SOP ini (USULAN)."
+  ],
+  [
+   "Garis lapor jabatan karyawan atau jabatan tujuan berlabel menunggu konfirmasi di SNX-HR-ORG-01",
+   "HR Manager meminta Direktur Utama menetapkan garis lapor yang dipakai untuk menilai tingkatan jabatan (USULAN)."
+  ],
+  [
+   "Karyawan yang dirotasi atau HR Manager ingin memprakarsai rotasi",
+   "Karyawan yang dirotasi atau HR Manager menyampaikan rencana rotasi kepada Atasan Langsung asal. Atasan Langsung asal memutuskan mengajukan usulan rotasi atau tidak (USULAN)."
+  ],
+  [
+   "Keputusan menolak usulan rotasi",
+   "HR Manager menyampaikan keputusan beserta alasannya kepada Atasan Langsung asal, Atasan Langsung tujuan, dan karyawan yang dirotasi. HRGA Officer mengarsipkan keputusan di personal file. Usulan baru dimulai dari butir 6.1."
+  ],
+  [
+   "Karyawan yang dirotasi belum mengonfirmasi uraian jabatan tujuan pada tanggal berlaku",
+   "HRGA Officer melapor ke HR Manager, lalu HR Manager meminta Direktur Utama memutuskan penundaan tanggal berlaku (USULAN)."
+  ]
+ ],
+ "conclusion": [
+  "HR Manager selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8 (USULAN).",
+  "HR Manager meninjau SOP ini setiap tahun, dan lebih awal bila grading jabatan ditetapkan."
+ ],
+ "related_documents": [
+  [
+   "SNX-HR-JA-01",
+   "Job Analysis dan Uraian Jabatan: kompetensi, uraian tugas, dan wewenang jabatan tujuan (butir 4.3, 4.5, 4.6, dan 6.2 SOP ini)."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX: daftar jabatan, unit, dan garis lapor yang menentukan Atasan Langsung dan tingkatan jabatan, serta nama peran di bagian 5."
+  ],
+  [
+   "SNX-HR-FRM-01",
+   "Employee Competency Matrix, dalam pengerjaan: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; acuan tingkatan jabatan bila sudah disahkan (butir 4.2 SOP ini, (USULAN))."
+  ],
+  [
+   "SNX-HR-FRM-02",
+   "Annual Training Plan & Training Matrix, dalam pengerjaan: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN))."
+  ],
+  [
+   "SNX-HR-SOP-10",
+   "Promotion: kenaikan jabatan, dikecualikan dari SOP ini (bagian 2 dan 9)."
+  ],
+  [
+   "SNX-HR-SOP-11",
+   "Demotion: penurunan jabatan, dikecualikan dari SOP ini (bagian 2 dan 9)."
+  ],
+  [
+   "SNX-HR-SOP-13",
+   "Mutation: pemindahan ke unit kerja, divisi, atau lokasi operasional lain, dikecualikan dari SOP ini (bagian 2 dan 9)."
+  ],
+  [
+   "SNX-ISMS-SOP-02",
+   "User Access Control & Authorization: perubahan akses saat mutasi (butir 4.8, 6.4, dan 6.5 SOP ini)."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling Procedure: tingkat klasifikasi rekaman rotasi (butir 4.10 SOP ini)."
+  ],
+  [
+   "Belum bernomor",
+   "Authority Matrix: hak tanda tangan kontrak dan otorisasi keuangan (butir 4.6 SOP ini)."
+  ]
+ ],
+ "records": [
+  [
+   "Usulan rotasi, tanggapan Atasan Langsung tujuan, dan kesimpulan penilaian",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ],
+  [
+   "Rekomendasi, keputusan rotasi, dan konfirmasi tertulis karyawan",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ],
+  [
+   "Laporan hasil rotasi dan penilaian keterampilan",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), 7.2 (Kompetensi), 7.5.3 (Pengendalian informasi terdokumentasi).",
+  "ISO/IEC 27001:2022": "7.2 (Kompetensi), Annex A 5.2 (Peran dan tanggung jawab keamanan informasi), 5.18 (Hak akses).",
+  "Status acuan klausul": "(USULAN, dikonfirmasi konsultan)"
+ }
+}

@@ -31,6 +31,12 @@
    "fix": "v2: warna hanya diwarisi dari baris input kosong (sel kosong atau hanya rumus); baris legenda yang dikosongkan menjadi polos",
    "evidence": "OPS-FRM-02 RR A5 FFFFF2CC sama dengan A7; KD A26 polos; ISMS-FRM-02 KD A26 polos; xlsx_patch pass; selftest 6 OK",
    "rerender": "semua xlsx W5 dirender ulang dari spec yang sama, nilai sel tidak berubah"
+  },
+  {
+   "at": "2026-10-14T23:25Z",
+   "file": "reports/orch/orch.py + reports/orch/blankscan.py",
+   "change": "post() docx kini gagal bila ada halaman tanpa teks badan (blankscan); bukan perubahan tools/ atau template",
+   "reason": "pemeriksa PDF HR-SOP-11 menemukan halaman kosong; pindai 28 docx: HR-SOP-11 dan HR-SOP-13 hal. 15 kosong, sisanya ok"
   }
  ],
  "env_fixes": [
@@ -865,7 +871,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-11",
    "out_path": "out/02_HR/SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx",
    "sources": [
@@ -877,12 +883,12 @@
    ],
    "lint_pass": true,
    "verify_verdict": null,
-   "loops": 0,
+   "loops": 1,
    "usulan_count": 44,
    "open_items": [
     "Pemeriksa PDF r1: halaman 15 kosong antara bagian 10 dan 11 (page break template + isi bagian 10 pas batas halaman)."
    ],
-   "updated_at": "2026-10-14T23:13:27Z",
+   "updated_at": "2026-10-14T23:17:48Z",
    "pen_agent": "a2cb5b7e1e129cb63",
    "ooxml": "PASSED"
   },
@@ -894,7 +900,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-SOP-12",
    "out_path": "out/02_HR/SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx",
    "sources": [
@@ -905,11 +911,13 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 46,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:17:18Z",
+   "open_items": [
+    "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:21:03Z",
    "pen_agent": "a03372a682640aa2e",
    "ooxml": "PASSED"
   },
@@ -921,7 +929,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-13",
    "out_path": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
    "sources": [
@@ -933,10 +941,13 @@
    ],
    "lint_pass": true,
    "verify_verdict": "PASS",
-   "loops": 0,
+   "loops": 1,
    "usulan_count": 42,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:17:39Z",
+   "open_items": [
+    "Sweep (c): mutasi lokasi saja membuat Atasan Langsung Asal = Tujuan, pemisahan peran 4.3 perlu aturan pengganti (verify nonblocking)",
+    "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi"
+   ],
+   "updated_at": "2026-10-14T23:19:55Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED"
   },
@@ -948,9 +959,9 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-SOP-04",
-   "out_path": null,
+   "out_path": "out/03_FAT/SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io",
@@ -961,15 +972,22 @@
      "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
      "modifiedTime": "2026-10-13T10:34:44.783Z",
      "title": "SINUX_Job_Analysis_2026.docx"
+    },
+    {
+     "id": "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI",
+     "modifiedTime": "2026-10-14T08:06:56.942Z",
+     "title": "1. SOP Billing and Invoicing",
+     "note": "dibaca penyusun read-only (retensi 10 tahun, struktur folder, persetujuan pemusnahan)"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 35,
    "open_items": [],
-   "updated_at": "2026-10-14T23:04:27Z",
-   "pen_agent": "ad5b909ad28816d44"
+   "updated_at": "2026-10-14T23:19:49Z",
+   "pen_agent": "ad5b909ad28816d44",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 26,
@@ -2450,7 +2468,8 @@
   },
   {
    "task": "QA W8: pindai halaman kosong (hanya header/footer) di semua docx out/ lewat soffice+pdftotext; dokumen yang kena diperbaiki lewat isi (panjang bagian sebelum page break), bukan renderer (format terkunci).",
-   "added": "2026-10-14T23:15Z"
+   "added": "2026-10-14T23:15Z",
+   "progress": "23:25Z pindai 28 docx DONE/aktif: HR-SOP-11 dan HR-SOP-13 hal. 15 kosong (loop perbaikan berjalan), lainnya ok. orch.py post kini memeriksa otomatis; ulang pindai penuh di W8 sesudah sweep."
   }
  ]
 }
