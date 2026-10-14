@@ -1,0 +1,24 @@
+{
+  "clear_rows": {
+    "Register Akses": [5, 6],
+    "Review Periodik": [5],
+    "Kontrol Dokumen": [25, 31]
+  },
+  "set": {
+    "Kontrol Dokumen!B4": "SNX-ISMS-REG-04",
+    "Kontrol Dokumen!B5": "User Access Register & Periodic Access Review",
+    "Kontrol Dokumen!B6": "00 (Draft)",
+    "Kontrol Dokumen!B9": "RESTRICTED (Internal)",
+    "Kontrol Dokumen!B10": "Head of Operation",
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B12": "Klausul 7.1.3",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 5.15, 5.18, 8.2",
+    "Kontrol Dokumen!B14": "3 tahun",
+    "Kontrol Dokumen!B20": "Cek = CABUT bila personel berstatus Keluar tetapi akun masih Aktif; Cek = KEDALUWARSA bila Berlaku sampai lewat; Cek = REVIEW bila review terlambat.",
+    "Kontrol Dokumen!C30": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!B35": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B36": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B37": "Samuel Kristanto Utomo / President Director",
+    "Register Akses!A2": "Kolom abu-abu dihitung otomatis."
+  }
+}

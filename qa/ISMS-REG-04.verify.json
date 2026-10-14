@@ -1,0 +1,67 @@
+{
+  "verdict": "PASS",
+  "dokumen": "out/08_ISMS/SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).xlsx",
+  "sumber": {
+    "fileId": "14JtND6eqCuvufrVoPDzKJyrHp4eQsGjT",
+    "modifiedTime": "2026-10-13T06:09:42Z",
+    "fileSize": 159140,
+    "cara_banding": "download_file_content, dekode base64, perbandingan sel demi sel (nilai dan warna isi) sumber vs keluaran dengan openpyxl; bagian zip dibandingkan; image1.png identik byte (cmp)"
+  },
+  "ringkasan_pemeriksaan": {
+    "a_fakta_cocok_sumber": "Semua sel yang berubah tercatat di specs/ISMS-REG-04.patch.json dan notes; tidak ada sel lain berubah. Nilai baru hanya: penanda tangan dari config/defaults.json (Erik Dwi Yanto / Technical/Operation Engineer L1, Fani Fatullah / VP Tech Operation and Services, Samuel Kristanto Utomo / President Director), revision_desc dari defaults, status Draft, B13 'Kontrol Annex A 5.15, 5.18, 8.2' (angka sama dengan checklist), dan klausa KEDALUWARSA di B20 yang cocok dengan rumus R5 sumber.",
+    "b_karangan": "Nihil. Tidak ada nama, angka, tanggal, atau sistem baru di sel. Tanggal draft 13 Oktober 2026 (B7, B30) dan masa simpan 3 tahun (B14) berasal dari sumber.",
+    "c_kriteria": "Terpenuhi. Berkas adalah SNX-ISMS-REG-04 User Access Register & Periodic Review (6 sheet utuh: Kontrol Dokumen, Alur Proses, Daftar, Register Akses, Review Periodik, Ringkasan). Acuan B12 'Klausul 7.1.3' dan B13 '5.15, 5.18, 8.2' sama dengan baris checklist 85. Kolom pemberian, persetujuan, kedaluwarsa, pencabutan, review berkala, dan penanda privileged tersedia.",
+    "d_runbook_0_6": "Baris CONTOH dikosongkan dengan clear_rows (Register Akses 5-6, Review Periodik 5), rumus H/Q/R/L tetap, 4+1 data validation dan 2+1 conditional formatting tetap, gambar tetap. Tanda tangan dan tanggal pengesahan kosong; tanggal efektif 'Ditetapkan saat pengesahan'; status Draft. Pola FORBIDDEN dan STYLE tools/lint_doc.py atas semua sel teks: nol temuan. Tidak ada em-dash/en-dash. docProps tanpa rujukan AI. Klasifikasi RESTRICTED (Internal) sesuai label sumber.",
+    "e_peran": "Pemilik dokumen Head of Operation sesuai sumber dan SOP-02 (process_owner, pemilik rekaman REG-04). Frekuensi review (triwulan/semester), tindak lanjut 10 hari kerja, nama sheet Review Periodik, dan masa simpan 3 tahun sama dengan specs/ISMS-SOP-02.json.",
+    "f_bahasa": "Sel yang ditulis penyusun (B6, B11, B13, B20, C30, B35-B37, Register Akses A2) bersih dari pola slop. Catatan gaya pada teks tim di nonblocking.",
+    "g_data_conflicts_audit": "Nama dan jabatan sesuai data_conflicts; sebutan COO tidak tersisa sehingga aturan 'Direktur (COO)' tidak terpakai. Sembilan butir audit bagian 5 (context/audit/iso-sinux-supdocs-isms-2026-10-14.md baris 1716-1913) ditangani atau dijelaskan di notes/ISMS-REG-04.md."
+  },
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kontrol Dokumen A25:B25 (legenda warna)",
+      "masalah": "Sesudah legenda CONTOH dihapus, A25 diberi warna abu FFF2F2F2 tanpa label, tepat di atas kotak abu 'Sel rumus: jangan diubah' (A26). Legenda tampak punya kotak abu ganda tanpa keterangan.",
+      "bukti": "Sumber A25 fill FFE7EEF7 + B25 'Baris CONTOH: hapus atau timpa saat dipakai'; keluaran A25 fill FFF2F2F2, B25 None. Saran: kosongkan isi warna A25 (tanpa fill) alih-alih menyalin warna baris 26."
+    },
+    {
+      "lokasi": "Kontrol Dokumen baris 31",
+      "masalah": "Baris riwayat revisi kedua dikosongkan tetapi tinggi baris 57,45 tetap, menyisakan baris kosong tinggi di tabel Riwayat revisi. Penghapusan baris tim ini juga keputusan substantif (USULAN 2), wajar karena Revisi 00 tercatat ganda dan topik RTO tidak ada di workbook.",
+      "bukti": "row_dimensions[31].height = 57.45; sumber A31:E31 '00 | 13 Oktober 2026 | Review bahasa dan konsistensi: ... keselarasan RTO dan target pulih | Divisi Operation | Menunggu'."
+    },
+    {
+      "lokasi": "Kontrol Dokumen B19 dan B21 (Cara pakai, teks tim)",
+      "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui dari header Review Periodik F4 'Reviewer (pemilik sistem)' dan K4 'Pelaksana tindak lanjut' (RUNBOOK 6a butir 1 dan 6). Tidak blocking karena kalimat tim pada form T1 dan tetap bisa dijalankan.",
+      "bukti": "B19 '... privileged ditinjau triwulanan, akses biasa semesteran.'; B21 'Hasil review periodik dicatat di sheet Review Periodik; tindak lanjut maksimal 10 hari kerja.' Usulan: 'Pemilik sistem meninjau akun privileged tiap triwulan dan akun biasa tiap semester.'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen B20 (Cara pakai butir 3)",
+      "masalah": "Syarat 'akun masih Aktif' hanya tertulis pada CABUT, padahal rumus R juga mensyaratkan Status akun Aktif untuk KEDALUWARSA dan REVIEW; frasa 'bila Berlaku sampai lewat' agak kaku karena memakai nama kolom tanpa penanda. Tidak salah fakta, hanya kurang lengkap; sudah tercatat di Open item 6 notes.",
+      "bukti": "R5: =IF(A5=\"\",\"\",IF(AND(D5=\"Keluar\",O5=\"Aktif\"),\"CABUT\",IF(AND(M5<>\"\",M5<TODAY(),O5=\"Aktif\"),\"KEDALUWARSA\",IF(AND(Q5<>\"\",Q5<TODAY(),O5=\"Aktif\"),\"REVIEW\",\"OK\"))))"
+    },
+    {
+      "lokasi": "Register Akses A1, Review Periodik A1 vs nama sheet",
+      "masalah": "Satu hal disebut dua cara: judul sheet berbahasa Inggris ('User access register', 'Periodic access review') sedangkan nama tab dan Cara pakai memakai 'Register Akses' dan 'Review Periodik'. Teks tim, istilah English diizinkan 6a butir 9; dicatat untuk konsistensi istilah (6a butir 7).",
+      "bukti": "Register Akses A1 'User access register'; Review Periodik A1 'Periodic access review'; Kontrol Dokumen B21 'sheet Review Periodik'."
+    },
+    {
+      "lokasi": "Register Akses kolom N dan Review Periodik K4 vs SOP-02",
+      "masalah": "SOP-02 menyuruh 'Catat pencabutan di SNX-ISMS-REG-04 dengan tanggal dan pelaksana', tetapi Register Akses hanya punya 'Tgl dicabut' (N4) tanpa kolom pelaksana pencabutan; SOP-02 memakai peran 'Administrator sistem', REG-04 memakai 'Pelaksana tindak lanjut' (K4 Review Periodik). Peran 'Reviewer (pemilik sistem)' cocok dengan 'Pemilik sistem' di SOP-02. Perbaikan lintas dokumen untuk LEAD/Fani, bukan cacat REG-04 semata.",
+      "bukti": "specs/ISMS-SOP-02.json langkah 'Catat pencabutan di SNX-ISMS-REG-04 dengan tanggal dan pelaksana.'; header Register Akses A4:S4 tanpa kolom pelaksana."
+    },
+    {
+      "lokasi": "Alur Proses (gambar image1.png, tidak diubah)",
+      "masalah": "Judul gambar memberi kata kerja manusia pada benda ('Register akses memberi peringatan otomatis untuk dicabut atau direview') dan kotak 'Tindak lanjut' tanpa pelaku. Gambar identik dengan sumber dan tidak bisa diubah lewat xlsx_patch; sudah tercatat di Open item 5 notes.",
+      "bukti": "cmp image1.png sumber vs keluaran: identik; judul gambar menurut context/audit bagian 3.1."
+    },
+    {
+      "lokasi": "Register Akses J4 'Ref tiket'",
+      "masalah": "Sistem tiket tidak disebut (Zammad untuk Ops menurut premis owner), sementara SOP-02 menulis Service Hub (GLPI) untuk tiket permintaan akses. Bukan pelanggaran di REG-04 karena tidak menyebut sistem; sudah USULAN 5 di notes dan perlu diputus owner agar SOP-02 dan REG-04 seragam.",
+      "bukti": "specs/ISMS-SOP-02.json records: 'Tiket permintaan akses' di 'Service Hub (GLPI)'; config/defaults.json ticketing."
+    },
+    {
+      "lokasi": "Keseluruhan Register Akses dan Review Periodik",
+      "masalah": "Register kosong sesudah baris CONTOH dibuang; bukti operasional 5.18/8.2 (akun nyata dan review terisi) belum ada. HUMAN-VERDICT: Ops perlu mengisi akun nyata sebelum audit; sudah Open item 1 notes.",
+      "bukti": "Ringkasan B3:B9 menghitung dari baris kosong; Register Akses baris 5-256 hanya rumus H, Q, R."
+    }
+  ]
+}
