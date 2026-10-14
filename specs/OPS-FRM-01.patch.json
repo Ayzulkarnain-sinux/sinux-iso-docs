@@ -1,0 +1,18 @@
+{
+  "clear_rows": {
+    "WBS dan Timeline": [5, 6, 7, 8, 9],
+    "Milestone": [5],
+    "Stakeholder": [5],
+    "Kontrol Dokumen": [22, 26, 32]
+  },
+  "set": {
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 5.8",
+    "Kontrol Dokumen!C31": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!B36": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B37": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B38": "Samuel Kristanto Utomo / President Director",
+    "Alur Proses!A2": "Kotak biru = output akhir · kotak oranye = cabang ke tindakan atau prosedur lain",
+    "Checklist G1!A1": "Checklist G1: paket handover Commercial ke Service Delivery Manager dan Project Manager"
+  }
+}

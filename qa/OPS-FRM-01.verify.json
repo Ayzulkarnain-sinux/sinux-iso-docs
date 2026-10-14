@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS",
+  "doc": "out/07_Ops/SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx",
+  "source": {"fileId": "1q0cl8mLlUDJ-7nvnzozSbjJhE46-Jk-3", "title": "SNX-OPS-FRM-01_Project_Plan_Scope_Timeline.xlsx", "read": "read_file_content 2026-10-14"},
+  "criteria": "Description = nama berkas SNX-OPS-FRM-01_Project_Plan_Scope_Timeline.xlsx; ISO 9001:2015 8.1, 8.2.2; ISO/IEC 27001:2022 5.8",
+  "blocking": [],
+  "nonblocking": [
+    {"lokasi": "Kontrol Dokumen B7, B31", "masalah": "Tanggal draft dan tanggal riwayat revisi 13 Oktober 2026 dipertahankan dari sumber, sementara uraian C31 diganti ('Draft awal untuk review dan pengesahan'). Bukan tanggal karangan, tetapi baris revisi kini memadukan tanggal tim dengan uraian baru.", "bukti": "Sumber: '00,13 Oktober 2026,Draft awal untuk sertifikasi ISO 9001 dan ISO/IEC 27001'. Sudah jadi open item 1 di notes; owner memutus."},
+    {"lokasi": "Kontrol Dokumen A26; Checklist G1 A5:A12", "masalah": "Legenda warna: baris 26 kini berupa kotak abu-abu (FFF2F2F2) tanpa label di antara 'Sel input' dan 'Sel rumus'. Isian biru muda (FFE7EEF7) di kolom No Checklist G1 tidak lagi dijelaskan legenda sesudah legenda CONTOH dibuang. Kosmetik.", "bukti": "openpyxl: A26 fill FFF2F2F2, B26 kosong; Checklist G1 A5 fill FFE7EEF7. Open item 8 di notes menyebut butir kedua."},
+    {"lokasi": "notes/OPS-FRM-01.md open item 3", "masalah": "Catatan basi: notes menulis clear_rows menghapus isian warna sehingga baris yang dikosongkan berwarna polos, padahal berkas keluaran sudah berisi kuning input.", "bukti": "openpyxl: WBS dan Timeline A5:D5, A9:D9, Milestone A5:D5, Stakeholder A5:D5 fill FFFFF2CC, sama dengan baris kosong lain."},
+    {"lokasi": "Kontrol Dokumen D31 dan B36", "masalah": "Dua sebutan penyusun: riwayat revisi 'Divisi Operation', blok Pengesahan 'Erik Dwi Yanto / Technical/Operation Engineer L1'. Pemilik dokumen B10 'Project Manager' (peran, dari sumber).", "bukti": "D31 = 'Divisi Operation'; B36 = nilai defaults prepared_reviewed OPS."},
+    {"lokasi": "Kontrol Dokumen B11, B36, B37, B38", "masalah": "Nama penanda tangan berasal dari config/defaults.json (dipakai persis, berstatus USULAN di Master List), tanpa label USULAN di sel. Sumber menulis penyetuju 'COO, Amirull Yusuf Zulkarnain' dan penyusun/pemeriksa berupa peran. Sesuai D2 dan data_conflicts; pembalik ada di defaults.", "bukti": "Sumber B11/B38: 'COO, Amirull Yusuf Zulkarnain'; B36 'Project Manager'; B37 'ISO/ISMS Coordinator'. Notes USULAN 1 mencatatnya."},
+    {"lokasi": "Kontrol Dokumen B15; Checklist G1 E4 vs WBS dan Timeline D4", "masalah": "Sinonim ringan dari suara tim: 'WBS dan jadwal' (B15) untuk sheet 'WBS dan Timeline'; 'PIC' dan 'Pemilik' untuk penanggung jawab di dua sheet. T1 mempertahankan kalimat tim; tidak berulang sampai mengaburkan.", "bukti": "B15 'Merekam rencana proyek: checklist penerimaan G1, project charter, WBS dan jadwal, milestone, serta stakeholder dan komunikasi.'"},
+    {"lokasi": "Checklist G1 C14", "masalah": "Rumus gate hanya menghitung 'Belum'; butir yang dibiarkan kosong tidak menahan gate. Cacat fungsi dari sumber (audit bagian 5), dipertahankan dan diusulkan perbaikannya (USULAN 3), belum diterapkan.", "bukti": "=IF(COUNTIF(C5:C12,\"Belum\")=0,\"LOLOS\",\"TAHAN\")"},
+    {"lokasi": "Alur Proses image1.png", "masalah": "Kotak 'Kembalikan ke Commercial' tidak punya jalan kembali ke alur utama; gambar tidak bisa disunting patch. Perubahan legenda A2 (membuang 'garis putus-putus = kembali ke alur utama') benar terhadap gambar.", "bukti": "Gambar dibuka: tidak ada garis putus-putus. Open item 2 dan USULAN 5 di notes."},
+    {"lokasi": "Checklist G1 B5:B12", "masalah": "Checklist G1 memuat 8 butir, PRO-OPS-001 8.2 memuat 7 butir tanpa butir klasifikasi data. Pemilik dokumen perlu memutus daftar yang berlaku.", "bukti": "Audit bagian 5 butir lintas dokumen; notes open item 5."},
+    {"lokasi": "Project Charter A7:A8, Checklist G1 A1:A2", "masalah": "Nama peran Project Manager dan Service Delivery Manager belum dicocokkan dengan HR-ORG-01 (ledger: IN_PROGRESS). Cocokkan sesudah HR-ORG-01 DONE.", "bukti": "ledger.json HR-ORG-01 state IN_PROGRESS; notes open item 6."}
+  ],
+  "checks": {
+    "a_fakta": "Semua sel cocok dengan sumber kecuali 8 sel set dan baris yang dikosongkan; nama/jabatan dari defaults v21. Kontrol Annex A 5.8 benar (5.8 = kontrol Annex A, bukan klausul).",
+    "b_karangan": "Tidak ditemukan. Tidak ada angka, tanggal, atau sistem baru.",
+    "c_kriteria": "Terpenuhi: berkas yang sama (T1) dengan charter (scope in/out, kriteria penerimaan), WBS dan timeline, milestone, stakeholder; acuan 8.1, 8.2.2 dan 5.8 tercantum B12:B13.",
+    "d_runbook_0_6": "Tanda tangan dan tanggal pengesahan kosong; tanggal efektif 'Ditetapkan saat pengesahan'; status 00 (DRAFT); baris CONTOH dan placeholder dibuang; tiga penanda tangan berbeda; klasifikasi RESTRICTED (Internal) sesuai label sumber; pindai XML: nol CONTOH, rujukan internal AI, em-dash, en-dash, RTO, COO.",
+    "e_peran": "Mode xlsx tanpa bagian 5/6/8; peran di form konsisten (Project Manager, Service Delivery Manager, Commercial).",
+    "f_bahasa": "Teks hampir seluruhnya suara tim; 2 sel bebas buatan penyusun (Alur Proses A2, Checklist G1 A1) hanya memotong atau menguraikan singkatan. Tidak ada frasa slop. 'LOLOS'/'TAHAN' kapital = nilai keluaran rumus, bukan penekanan.",
+    "g_data_conflicts_audit": "Ejaan Samuel Kristanto Utomo dan 'President Director' di blok persetujuan benar; Fani benar; COO tidak lagi disebut. Sepuluh butir cacat audit ditangani atau dijelaskan di notes bagian 5."
+  }
+}
