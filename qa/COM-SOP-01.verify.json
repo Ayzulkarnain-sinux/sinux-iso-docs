@@ -1,0 +1,61 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Butir 4.14, 4.15, 4.19; tabel peran bagian 5 (Business Development, Manager of Product Tech, Service Delivery Manager)",
+      "masalah": "Frasa \"SOP sumber\" muncul 6 kali sebagai komentar penyusun di badan dokumen terkendali, tanpa definisi (SOP mana, versi berapa). Pembaca auditor atau karyawan tidak tahu rujukannya.",
+      "bukti": "4.19: \"Penetapan pelaku berikut berstatus (USULAN) karena SOP sumber tidak menyebut pelakunya\"; bagian 5: \"Dipetakan dari Sales dan Sales Executive di SOP sumber (USULAN).\" Usul: ganti dengan nama dokumen (Sales Standard Operating Procedure versi 1.0) atau pindahkan alasan ke notes, label (USULAN) tetap."
+    },
+    {
+      "lokasi": "Butir 4.13",
+      "masalah": "Rujukan SNX-ISMS-PRO-01 butir 4.3 diperluas dari informasi pelanggan ke kontrak dan harga. Sudah berlabel USULAN, jadi bukan karangan, tetapi kalimat \"menurut SNX-ISMS-PRO-01 butir 4.3\" melebihi isi butir itu.",
+      "bukti": "SNX-ISMS-PRO-01 4.3: \"Informasi pelanggan minimal RESTRICTED\". Dokumen: \"Informasi customer, kontrak, dan harga berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3 (USULAN ...)\"."
+    },
+    {
+      "lokasi": "Butir 6.7 langkah 6",
+      "masalah": "Status Lost ditempatkan sesudah PO diterima dan kontrak ditandatangani, padahal pada titik itu hasilnya hanya Win. Tempat pencatatan Lost untuk opportunity yang gagal tidak ada di prosedur (sebagian tercakup open item 4).",
+      "bukti": "\"6. Perbarui Closing Status dan Sales Stage (Win atau Lost) sesuai butir 4.15.\" sesudah langkah 4 \"Terima PO dari customer.\" dan langkah 5 \"Pastikan kontrak ditandatangani\"."
+    },
+    {
+      "lokasi": "Butir 6.3 langkah 7; butir 6.6 langkah 1",
+      "masalah": "RUNBOOK 6a.2: satu langkah satu tindakan. Dua langkah memuat dua tindakan.",
+      "bukti": "\"Tentukan agenda demo yang menjawab kebutuhan customer, dan jelaskan business context kepada customer.\"; \"Negosiasikan dengan customer hanya dalam batas harga dan diskon yang disetujui, dan jaga value solusi.\""
+    },
+    {
+      "lokasi": "Butir 4.1, 4.2, 4.4, 4.12; Conclusion",
+      "masalah": "Kalimat bernada umum dan kelompok tiga dari sumber dipertahankan (T1, suara tim, dinyatakan di notes). 4.12 memakai benda sebagai subjek tanpa pelaku. Tidak berulang sampai mengaburkan prosedur.",
+      "bukti": "4.12: \"Komunikasi dengan customer memakai bahasa yang profesional, jelas, dan berorientasi pada solusi.\"; 4.2: \"harus akurat, transparan, dan dapat dipertanggungjawabkan\"; Conclusion: \"agar proses penjualan tetap sesuai strategi bisnis dan perkembangan pasar\"."
+    },
+    {
+      "lokasi": "Butir 4.19, bagian 8, langkah 6.4.4, diagram",
+      "masalah": "Sinonim berganti untuk pemeriksaan: \"review internal\", \"mereview\", \"meninjau pipeline\", \"Pipeline review\"; juga \"persetujuan internal\" di badan lawan \"Internal approval\" di sumber. Ringan.",
+      "bukti": "4.19: \"meninjau pipeline, forecast, dan opportunity\"; bagian 8: \"Pipeline review, forecast review, dan opportunity review (butir 4.19)\"."
+    },
+    {
+      "lokasi": "Bagian 9 baris eskalasi; butir 4.20",
+      "masalah": "Batas waktu dan pihak kabur dibawa dari sumber: \"segera\" tanpa tenggat dan \"pihak yang berwenang\" tanpa nama peran. Sudah tercatat di open item 3 notes.",
+      "bukti": "\"Business Development segera mengeskalasi kepada VP Commercial.\"; \"persetujuan VP Commercial atau pihak yang berwenang\"."
+    },
+    {
+      "lokasi": "Tabel Definisi (BANT, Future Nurture di 4.7); langkah 6.4.1",
+      "masalah": "Definisi BANT (Budget, Authority, Need, Timeline) dan arti Future Nurture tidak ada di kedua sumber (pengetahuan umum; notes mengakuinya, Future Nurture tercakup USULAN 4.7). \"Asumsi teknis\" sebagai keluaran Manager of Product Tech adalah tafsir dari \"Solution design\" Presales, tanpa label sendiri. Bukan angka, nama, atau jabatan, jadi tidak memblokir.",
+      "bukti": "Sumber SOP hanya menyebut \"BANT atau MEDDICC\"; deck hanya \"Future Nurture\" di daftar Sales Stage; kolaborasi Presales: \"Technical discussion, Demo, Solution design, RFP support\"."
+    },
+    {
+      "lokasi": "Butir 4.15",
+      "masalah": "Perubahan substansi T1: syarat closing keempat sumber (kick-off atau implementasi dimulai) dipindah ke sesudah penerimaan paket handover. Berlabel USULAN, beralasan (bertentangan dengan Stage 9 sumber), dan tercatat open item 8. Perlu ACC owner.",
+      "bukti": "Sumber Stage 8: \"Project Kick-off atau implementasi telah dimulai sesuai dengan ruang lingkup yang disepakati.\"; Stage 9: \"Handover meeting wajib dilakukan sebelum implementasi dimulai.\""
+    },
+    {
+      "lokasi": "data_conflicts sebutan Amirull",
+      "masalah": "\"Direktur (COO)\" hanya muncul sebagai istilah di tabel Definisi; badan kebijakan langsung memakai \"COO\" (butir 4.10). Sesuai bila tabel Definisi dihitung sebagai sebutan pertama; blok tanda tangan sudah \"Direktur\", Samuel \"President Director\", Laras \"VP Commercial\" sesuai defaults COM.",
+      "bukti": "Definisi: \"Direktur (COO) | Jabatan Direktur (JA-02) di SNX-HR-ORG-01 ... Dokumen ini memakai COO sesudah penyebutan pertama.\""
+    },
+    {
+      "lokasi": "Cacat sumber context/audit (fileId 19Hex8udn1JDG4NKY7hZaODjroHeHwMM0 dan 16TIN9Tsv_sBXMrL4KHeO8f6Ao0F-KsAS)",
+      "masalah": "Informasi, bukan cacat: 11 butir bagian 5 audit Sales SOP dan butir deck (slide 9 kosong, typo, ICP tumpang tindih, Commercial Manager, Project Scope lawan Technical Fit, KPI beda) masing-masing ditangani atau dijelaskan di notes/COM-SOP-01.md bagian 3. Klasifikasi INTERNAL mengikuti worklist; sumber sendiri tidak berlabel klasifikasi (tag restricted:commercial adalah sensitivitas indeks audit).",
+      "bukti": "notes/COM-SOP-01.md bagian 3 tabel #1 sampai #17 dan A sampai H."
+    }
+  ]
+}

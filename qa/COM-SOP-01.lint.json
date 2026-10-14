@@ -1,0 +1,9 @@
+{
+ "file": "out/05_Commercial/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx",
+ "mode": "sop",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "12 butir (USULAN) menunggu ACC"
+ ]
+}
