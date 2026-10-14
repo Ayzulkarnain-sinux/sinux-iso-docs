@@ -1765,8 +1765,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 18,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:54:59Z",
+   "open_items": [
+    "Sweep (b): kesimpulan menulis HR Manager mengisi Tabel 1 dan 2, tabel Peran memberi tugas mencatat ke HRGA Officer; lihat qa/HR-FRM-02.verify.json"
+   ],
+   "updated_at": "2026-10-14T23:55:02Z",
    "pen_agent": "af534ab6b544a3ea6",
    "ooxml": "PASSED"
   },
@@ -1778,16 +1780,16 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-RPT-01",
    "out_path": "out/02_HR/SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 19,
    "open_items": [],
-   "updated_at": "2026-10-14T23:53:34Z",
+   "updated_at": "2026-10-14T23:56:25Z",
    "pen_agent": "a659092717855c2b3",
    "ooxml": "PASSED"
   },

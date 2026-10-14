@@ -1,0 +1,46 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 4, butir 4.5 sampai 4.7",
+   "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui (HRGA Officer menurut langkah 6.11, 6.13, 6.19); RUNBOOK §6a.1 dan §6a.6. Pelaku ada di bagian 6, jadi tidak memblokir.",
+   "bukti": "\"Setiap aspek diisi metode, bukti, dan ringkasan hasil, dan bukti disimpan bersama laporan terisi.\" / \"E1 dan E2 diisi sesudah pelatihan selesai.\" / \"Aspek yang tidak dinilai diisi Tidak Dinilai pada Ringkasan Hasil\" / \"Hasil yang tidak punya bukti tidak ditulis.\""
+  },
+  {
+   "lokasi": "Bagian 4 dan bagian 6",
+   "masalah": "Isi diulang antarbagian (§6a.6): 4.3 dengan 6.1, 4.7 dengan 6.13, 4.8 dengan 6.14, 4.9 dengan 6.15 dan 6.16. Langkah 6.1 mengulang isi USULAN butir 4.3 tanpa label.",
+   "bukti": "4.7 \"Aspek yang tidak dinilai diisi Tidak Dinilai pada Ringkasan Hasil, dengan alasan di kolom Catatan\" dan 6.13 \"HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil atau Status Hasil, dan alasannya di kolom Catatan\""
+  },
+  {
+   "lokasi": "Bagian 1, butir 4.6, butir 4.9 dan 4.10",
+   "masalah": "Sinonim bergantian untuk satu hal: 'penilaian efektivitas' (Tujuan) dan 'evaluasi efektivitas' (seluruh dokumen); 'ditentukan HR Manager' (4.6) dan 'menetapkan' (4.3, 6.1, Peran) untuk Tanggal Evaluasi Lanjutan. 'Pelatihan susulan' dan 'pelatihan lanjutan' berbeda arti tetapi tidak ada di tabel Definisi.",
+   "bukti": "Tujuan: \"daftar hadir dan penilaian efektivitas yang berbukti\"; 4.6: \"yang ditentukan HR Manager untuk tiap pelatihan\""
+  },
+  {
+   "lokasi": "Butir 4.11 dan bagian 8",
+   "masalah": "Penyimpanan dan retensi diikat ke SNX-ISMS-PRO-01 butir 4.8 dan 4.15 tanpa label USULAN, padahal Ruang Lingkup SNX-ISMS-PRO-01 menulis Human Resources tidak tercakup (perluasan berstatus USULAN). Nomor butir dan isinya cocok; sudah dicatat sebagai open item 14 di notes.",
+   "bukti": "SNX-ISMS-PRO-01: \"Divisi lain di luar Divisi Operation, misalnya Human Resources, ... tidak tercakup. Perluasan cakupan ke seluruh SINUX adalah (USULAN).\""
+  },
+  {
+   "lokasi": "Bagian 2, tabel pengecualian; Dokumen Terkait",
+   "masalah": "Status SOP Training & Development tidak sama antardokumen: dokumen ini menulis 'belum bernomor' (sesuai worklist: number null, HOLD-T3), sedangkan SNX-HR-FRM-02 menulis 'dalam peninjauan'. Sudah dicatat sebagai open item 5 di notes.",
+   "bukti": "SNX-HR-FRM-02: \"Ada di SOP Training & Development, dalam peninjauan.\""
+  },
+  {
+   "lokasi": "Butir 4.4, bagian 3 (Status Kehadiran)",
+   "masalah": "Bukti hadir hanya tanda tangan, padahal Informasi Pelatihan memuat 'Lokasi atau Media'. Peserta pelatihan daring bisa tercatat Tidak Hadir. Usul: bukti alternatif berlabel USULAN, misalnya rekaman kehadiran rapat daring.",
+   "bukti": "\"Tidak Hadir | Peserta tidak menandatangani Daftar Hadir.\""
+  },
+  {
+   "lokasi": "Bagian 3, nilai Status Hasil",
+   "masalah": "Status Hasil per peserta diukur terhadap Kriteria Keberhasilan, sedangkan Kriteria Keberhasilan didefinisikan sebagai ukuran pada tingkat pelatihan. Untuk tiap peserta, pembanding yang lebih cocok adalah Tujuan Pembelajaran.",
+   "bukti": "\"Memenuhi | Hasil peserta memenuhi Kriteria Keberhasilan.\" dan \"Kriteria Keberhasilan | Ukuran yang menentukan pelatihan dinilai efektif\""
+  },
+  {
+   "lokasi": "Butir 4.9 dan SNX-HR-FRM-02 butir 4.4",
+   "masalah": "Dokumen ini menaruh tindakan pelatihan lanjutan di SNX-HR-FRM-02 (USULAN), tetapi daftar dasar kebutuhan di FRM-02 butir 4.4 tidak menyebut Kesenjangan dari SNX-HR-RPT-01, sehingga baris itu baru masuk lewat 'dasar lain'. Perlu diselaraskan di FRM-02.",
+   "bukti": "FRM-02 4.4: \"standar kompetensi di SNX-HR-FRM-01; kesenjangan keterampilan sesudah rotasi (SNX-HR-SOP-12); syarat kenaikan jabatan (SNX-HR-SOP-10); persyaratan kontrak pelanggan; atau dasar lain\""
+  }
+ ]
+}

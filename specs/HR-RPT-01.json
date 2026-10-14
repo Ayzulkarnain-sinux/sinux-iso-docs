@@ -1,0 +1,1002 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "HR-RPT-01",
+  "doc_type_cover": "REPORT",
+  "doc_type_label": "Report",
+  "number": "SNX-HR-RPT-01",
+  "department": "Human Resources",
+  "title": "Training Attendance & Training Evaluation Report",
+  "process_owner": "HR Manager",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Laporan ini memuat daftar hadir dan hasil evaluasi efektivitas untuk satu pelatihan karyawan SINUX yang sudah diselenggarakan, beserta kesimpulan dan tindak lanjutnya."
+    },
+    {
+     "p": "Hasil yang dijaga: setiap pelatihan punya daftar hadir dan penilaian efektivitas yang berbukti, dan setiap kesenjangan yang ditemukan punya tindak lanjut."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Laporan ini dipakai untuk pelatihan yang sudah diselenggarakan bagi karyawan SINUX, baik oleh SINUX sendiri maupun oleh penyelenggara luar (USULAN). Sesi kesadaran ISO dan keamanan informasi dicatat di laporan ini juga (USULAN)."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari laporan ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       6.5,
+       9.5
+      ],
+      "rows": [
+       [
+        "Rencana pelatihan tahunan dan matriks pelatihan",
+        "Ada di SNX-HR-FRM-02: jadwal rencana, jenis pelatihan, dan sasaran peserta."
+       ],
+       [
+        "Tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan",
+        "Menjadi isi SOP Training & Development (belum bernomor). Laporan ini hanya mencatat pelatihan yang sudah berlangsung."
+       ],
+       [
+        "Standar kompetensi per tingkatan jabatan",
+        "Ada di SNX-HR-FRM-01."
+       ],
+       [
+        "Penilaian kompetensi dan kinerja karyawan secara berkala",
+        "Laporan ini menilai hasil satu pelatihan, bukan kinerja keseluruhan peserta."
+       ],
+       [
+        "Pelatihan untuk pelanggan, vendor, dan partner",
+        "Peserta laporan ini hanya karyawan SINUX (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "Pelatihan",
+        "Kegiatan belajar terjadwal yang dipimpin satu pelatih atau lebih, untuk menambah pengetahuan, keterampilan, atau perilaku kerja karyawan."
+       ],
+       [
+        "Peserta",
+        "Karyawan SINUX yang terdaftar untuk mengikuti satu pelatihan."
+       ],
+       [
+        "Pelatih",
+        "Orang yang menyampaikan materi pelatihan, dari SINUX atau dari penyelenggara luar."
+       ],
+       [
+        "Penyelenggara",
+        "Pihak yang mengatur pelaksanaan pelatihan. Penyelenggara luar adalah penyelenggara selain SINUX."
+       ],
+       [
+        "Daftar Hadir",
+        "Tabel di bagian 7 yang memuat nama peserta, status kehadiran, dan tanda tangan untuk satu pelatihan."
+       ],
+       [
+        "Tujuan Pembelajaran",
+        "Pengetahuan, keterampilan, atau perilaku yang harus dicapai peserta sesudah pelatihan."
+       ],
+       [
+        "Kriteria Keberhasilan",
+        "Ukuran yang menentukan pelatihan dinilai efektif, ditulis sebelum pelatihan dimulai."
+       ],
+       [
+        "Efektivitas",
+        "Sejauh mana hasil pelatihan memenuhi Kriteria Keberhasilan."
+       ],
+       [
+        "Kesenjangan",
+        "Selisih antara hasil peserta dan Tujuan Pembelajaran atau Kriteria Keberhasilan."
+       ],
+       [
+        "Atasan langsung",
+        "Jabatan tujuan lapor langsung seorang peserta menurut SNX-HR-ORG-01."
+       ],
+       [
+        "Tanggal Evaluasi Lanjutan",
+        "Tanggal penilaian E3 dan E4, sesudah peserta kembali bekerja."
+       ],
+       [
+        "E1 Reaksi",
+        "Penilaian peserta atas materi, pelatih, dan penyelenggaraan pelatihan."
+       ],
+       [
+        "E2 Pemahaman",
+        "Pencapaian Tujuan Pembelajaran oleh peserta."
+       ],
+       [
+        "E3 Penerapan",
+        "Penggunaan hasil pelatihan dalam pekerjaan peserta."
+       ],
+       [
+        "E4 Hasil Pekerjaan",
+        "Perubahan hasil kerja yang dituju pelatihan."
+       ],
+       [
+        "Laporan terisi",
+        "Laporan ini sesudah diisi untuk satu pelatihan."
+       ],
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Nilai pada Kolom Status dan Kesimpulan"
+    },
+    {
+     "p": "Daftar nilai berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Kolom",
+       "Nilai",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       3.4,
+       8.6
+      ],
+      "rows": [
+       [
+        "Status Kehadiran",
+        "Hadir",
+        "Peserta mengikuti pelatihan dan menandatangani Daftar Hadir."
+       ],
+       [
+        "Status Kehadiran",
+        "Tidak Hadir",
+        "Peserta tidak menandatangani Daftar Hadir."
+       ],
+       [
+        "Status Hasil",
+        "Memenuhi",
+        "Hasil peserta memenuhi Kriteria Keberhasilan."
+       ],
+       [
+        "Status Hasil",
+        "Belum Memenuhi",
+        "Hasil peserta belum memenuhi Kriteria Keberhasilan."
+       ],
+       [
+        "Status Hasil",
+        "Tidak Dinilai",
+        "Peserta tidak dinilai. Alasannya ditulis di kolom Catatan."
+       ],
+       [
+        "Kesimpulan Efektivitas",
+        "Efektif",
+        "Seluruh Kriteria Keberhasilan terpenuhi."
+       ],
+       [
+        "Kesimpulan Efektivitas",
+        "Sebagian Efektif",
+        "Sebagian Kriteria Keberhasilan terpenuhi."
+       ],
+       [
+        "Kesimpulan Efektivitas",
+        "Belum Efektif",
+        "Tidak ada Kriteria Keberhasilan yang terpenuhi."
+       ],
+       [
+        "Status pada Tindak Lanjut",
+        "Terbuka",
+        "Tindakan belum selesai."
+       ],
+       [
+        "Status pada Tindak Lanjut",
+        "Selesai",
+        "Tindakan sudah dijalankan dan buktinya tercatat."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Satu pelatihan memakai satu laporan. Pelatihan yang sama untuk kelompok peserta lain pada tanggal berbeda memakai laporan terpisah."
+    },
+    {
+     "p": "4.2 Tanggal pada laporan adalah tanggal kejadian sebenarnya. HRGA Officer tidak mengisi kehadiran, hasil evaluasi, atau tanggalnya sebelum peristiwanya terjadi."
+    },
+    {
+     "p": "4.3 HR Manager menetapkan Tujuan Pembelajaran dan Kriteria Keberhasilan sebelum pelatihan dimulai, supaya Kesimpulan Efektivitas punya pembanding (USULAN)."
+    },
+    {
+     "p": "4.4 Tanda tangan peserta pada Daftar Hadir di hari pelatihan menjadi bukti kehadiran (USULAN)."
+    },
+    {
+     "p": "4.5 Evaluasi efektivitas memakai empat aspek, E1 sampai E4 (USULAN). Setiap aspek diisi metode, bukti, dan ringkasan hasil, dan bukti disimpan bersama laporan terisi."
+    },
+    {
+     "p": "4.6 E1 dan E2 diisi sesudah pelatihan selesai. E3 dan E4 diisi pada Tanggal Evaluasi Lanjutan, yang ditentukan HR Manager untuk tiap pelatihan (USULAN)."
+    },
+    {
+     "p": "4.7 Aspek yang tidak dinilai diisi Tidak Dinilai pada Ringkasan Hasil, dengan alasan di kolom Catatan. Hasil yang tidak punya bukti tidak ditulis."
+    },
+    {
+     "p": "4.8 HR Manager membandingkan hasil E1 sampai E4 dengan Kriteria Keberhasilan dan menetapkan Kesimpulan Efektivitas, sesuai uraian jabatan HR Manager di SNX-HR-JA-01 (JA-14 butir 5)."
+    },
+    {
+     "p": "4.9 Untuk tiap Kesenjangan, HR Manager menetapkan tindakan, penanggung jawab, dan target selesai. HRGA Officer mencatat tindakan pelatihan lanjutan di SNX-HR-FRM-02 (USULAN)."
+    },
+    {
+     "p": "4.10 Peserta berstatus Tidak Hadir tidak dinilai pada E2 sampai E4. HR Manager memutuskan perlu tidaknya pelatihan susulan (USULAN)."
+    },
+    {
+     "p": "4.11 Laporan ini dan laporan terisi berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang menyebut data karyawan sebagai contoh tingkat itu. Penyimpanan laporan terisi mengikuti butir 4.8 dokumen itu."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan HRGA Officer (JA-12 butir 6) dan HR Manager (JA-14 butir 5) di SNX-HR-JA-01."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada laporan ini"
+      ],
+      "widths_cm": [
+       3.6,
+       12.4
+      ],
+      "rows": [
+       [
+        "HR Manager",
+        "Menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan. Menetapkan Kesimpulan Efektivitas, tindakan atas Kesenjangan, dan pelatihan susulan. Memeriksa laporan terisi (butir 4.3, 4.6, 4.8 sampai 4.10)."
+       ],
+       [
+        "HRGA Officer",
+        "Mencatat penetapan HR Manager, data pelatihan, kehadiran, hasil evaluasi, dan tindak lanjut di laporan. Mengumpulkan bukti dan menyimpan laporan terisi (butir 4.2, 4.5, 4.9, dan 4.11)."
+       ],
+       [
+        "Peserta",
+        "Menandatangani Daftar Hadir dan mengisi umpan balik E1 (butir 4.4 dan 4.5)."
+       ],
+       [
+        "Pelatih",
+        "Menilai pemahaman peserta (E2) dan menyerahkan hasilnya ke HRGA Officer (butir 4.5)."
+       ],
+       [
+        "Atasan langsung",
+        "Menilai penerapan (E3) dan hasil pekerjaan (E4) peserta, lalu menyerahkan penilaiannya ke HRGA Officer (butir 4.5 dan 4.6)."
+       ],
+       [
+        "Direktur Utama",
+        "Menyetujui laporan ini lewat blok Approved By pada halaman depan."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Petunjuk Pengisian",
+   "blocks": [
+    {
+     "p": "6.1 HR Manager menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan sebelum pelatihan dimulai."
+    },
+    {
+     "p": "6.2 HRGA Officer mencatat penetapan itu dan data pelatihan di tabel Informasi Pelatihan: judul, jenis menurut daftar di SNX-HR-FRM-02, penyelenggara, pelatih, tanggal, dan lokasi atau media."
+    },
+    {
+     "p": "6.3 HRGA Officer menulis di Rujukan Rencana kode pelatihan itu di Tabel 1 SNX-HR-FRM-02. Bila pelatihan tidak ada di sana, kolom dibiarkan kosong."
+    },
+    {
+     "p": "6.4 HRGA Officer menulis nama, jabatan, dan unit peserta terdaftar di Daftar Hadir."
+    },
+    {
+     "p": "6.5 Peserta menandatangani Daftar Hadir pada hari pelatihan."
+    },
+    {
+     "p": "6.6 HRGA Officer mengisi Status Kehadiran tiap peserta dari tanda tangan itu, dan menulis alasan peserta Tidak Hadir di kolom Keterangan."
+    },
+    {
+     "p": "6.7 HRGA Officer menulis jumlah peserta terdaftar, Hadir, dan Tidak Hadir di Ringkasan Kehadiran."
+    },
+    {
+     "p": "6.8 Peserta mengisi umpan balik tentang materi, pelatih, dan penyelenggaraan pada akhir pelatihan."
+    },
+    {
+     "p": "6.9 Pelatih menilai pemahaman tiap peserta Hadir terhadap Tujuan Pembelajaran, lalu menyerahkan hasilnya ke HRGA Officer."
+    },
+    {
+     "p": "6.10 Atasan langsung peserta menilai penerapan dan hasil pekerjaan pada Tanggal Evaluasi Lanjutan, lalu menyerahkan penilaiannya ke HRGA Officer."
+    },
+    {
+     "p": "6.11 HRGA Officer mencatat metode, bukti, dan ringkasan hasil E1 sampai E4 di tabel Evaluasi Efektivitas per Aspek."
+    },
+    {
+     "p": "6.12 HRGA Officer mencatat hasil E2 sampai E4 tiap peserta di tabel Hasil per Peserta, dengan nama sama seperti di Daftar Hadir."
+    },
+    {
+     "p": "6.13 HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil atau Status Hasil, dan alasannya di kolom Catatan, untuk aspek atau peserta yang tidak dinilai."
+    },
+    {
+     "p": "6.14 HR Manager membandingkan hasil dengan Kriteria Keberhasilan, lalu menulis Kesimpulan Efektivitas, Dasar Kesimpulan, dan Kesenjangan yang ditemukan."
+    },
+    {
+     "p": "6.15 HR Manager menetapkan tindakan, penanggung jawab, dan target selesai untuk tiap Kesenjangan."
+    },
+    {
+     "p": "6.16 HRGA Officer mencatat penetapan itu di tabel Tindak Lanjut, dan memperbarui kolom Status sampai Selesai."
+    },
+    {
+     "p": "6.17 HRGA Officer menandatangani baris Pencatat di tabel Pengesahan Laporan Terisi."
+    },
+    {
+     "p": "6.18 HR Manager memeriksa laporan terisi dan menandatangani baris Pemeriksa."
+    },
+    {
+     "p": "6.19 HRGA Officer menyimpan laporan terisi beserta bukti di lokasi pada bagian 8."
+    }
+   ]
+  },
+  {
+   "h": "Isi Laporan",
+   "blocks": [
+    {
+     "p": "Semua sel isian kosong sampai HRGA Officer mengisinya untuk satu pelatihan. Kolom Kode dan Aspek pada tabel Evaluasi Efektivitas per Aspek sudah terisi. Baris pada Daftar Hadir, Hasil per Peserta, dan Tindak Lanjut dapat ditambah sesuai kebutuhan."
+    },
+    {
+     "h2": "Informasi Pelatihan"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Informasi"
+      ],
+      "widths_cm": [
+       6.4,
+       9.6
+      ],
+      "rows": [
+       [
+        "Judul Pelatihan",
+        ""
+       ],
+       [
+        "Rujukan Rencana",
+        ""
+       ],
+       [
+        "Jenis Pelatihan",
+        ""
+       ],
+       [
+        "Penyelenggara",
+        ""
+       ],
+       [
+        "Pelatih (nama dan asal)",
+        ""
+       ],
+       [
+        "Tanggal Pelaksanaan",
+        ""
+       ],
+       [
+        "Lokasi atau Media",
+        ""
+       ],
+       [
+        "Tujuan Pembelajaran",
+        ""
+       ],
+       [
+        "Kriteria Keberhasilan",
+        ""
+       ],
+       [
+        "Tanggal Evaluasi Lanjutan",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Daftar Hadir"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Nama Peserta",
+       "Jabatan",
+       "Unit",
+       "Status Kehadiran",
+       "Tanda Tangan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       1.1,
+       3.2,
+       2.4,
+       1.9,
+       2.5,
+       2.3,
+       2.6
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Ringkasan Kehadiran"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Jumlah"
+      ],
+      "widths_cm": [
+       8.0,
+       8.0
+      ],
+      "rows": [
+       [
+        "Peserta terdaftar",
+        ""
+       ],
+       [
+        "Peserta Hadir",
+        ""
+       ],
+       [
+        "Peserta Tidak Hadir",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Evaluasi Efektivitas per Aspek"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Aspek",
+       "Metode dan Bukti",
+       "Ringkasan Hasil",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.4,
+       3.4,
+       4.0,
+       4.4,
+       2.8
+      ],
+      "rows": [
+       [
+        "E1",
+        "Reaksi",
+        "",
+        "",
+        ""
+       ],
+       [
+        "E2",
+        "Pemahaman",
+        "",
+        "",
+        ""
+       ],
+       [
+        "E3",
+        "Penerapan",
+        "",
+        "",
+        ""
+       ],
+       [
+        "E4",
+        "Hasil Pekerjaan",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Hasil per Peserta"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Nama Peserta",
+       "E2 Pemahaman",
+       "E3 Penerapan",
+       "E4 Hasil Pekerjaan",
+       "Status Hasil",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.1,
+       2.7,
+       3.0,
+       2.6,
+       2.4,
+       2.0,
+       2.2
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Kesimpulan Efektivitas"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Uraian"
+      ],
+      "widths_cm": [
+       5.0,
+       11.0
+      ],
+      "rows": [
+       [
+        "Kesimpulan Efektivitas",
+        ""
+       ],
+       [
+        "Dasar Kesimpulan",
+        ""
+       ],
+       [
+        "Kesenjangan yang Ditemukan",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tindak Lanjut"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Tindakan",
+       "Penanggung Jawab",
+       "Target Selesai",
+       "Status"
+      ],
+      "widths_cm": [
+       1.2,
+       6.6,
+       3.2,
+       2.8,
+       2.2
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Pengesahan Laporan Terisi"
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Nama",
+       "Tanggal",
+       "Tanda Tangan"
+      ],
+      "widths_cm": [
+       4.4,
+       4.6,
+       3.0,
+       4.0
+      ],
+      "rows": [
+       [
+        "Pencatat (HRGA Officer)",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Pemeriksa (HR Manager)",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       4.5,
+       7.0,
+       4.5
+      ],
+      "rows": [
+       [
+        "Laporan terisi, satu per pelatihan",
+        "Folder Google Drive departemen Human Resources (USULAN) dengan akses terbatas per peran (butir 4.11). Pencatat HRGA Officer, pemilik HR Manager (USULAN).",
+        "Mengikuti master list dan kontrak (SNX-ISMS-PRO-01 butir 4.15). HR Manager bersama Legal menetapkan jangka retensinya (USULAN)."
+       ],
+       [
+        "Bukti evaluasi: Daftar Hadir bertanda tangan, umpan balik peserta, hasil penilaian pelatih, dan penilaian atasan langsung",
+        "Folder yang sama dengan laporan terisi. Pencatat HRGA Officer, pemilik HR Manager (USULAN).",
+        "Sama dengan laporan terisi (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Acuan Klausul ISO",
+   "blocks": [
+    {
+     "p": "Daftar klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan laporan ini"
+      ],
+      "widths_cm": [
+       3.4,
+       5.4,
+       7.2
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "7.2 Kompetensi",
+        "Tabel Evaluasi Efektivitas per Aspek memuat evaluasi efektivitas tindakan memperoleh kompetensi, dan laporan terisi menjadi bukti kompetensi peserta. Penetapan kompetensi yang diperlukan ada di SNX-HR-FRM-01."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Laporan terisi disimpan dengan lokasi, pemilik, dan klasifikasi yang tercatat (bagian 8)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "7.2 Kompetensi",
+        "Sama dengan ISO 9001:2015 7.2, untuk kinerja keamanan informasi."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "7.3 Kesadaran",
+        "Daftar Hadir menjadi bukti kehadiran pada sesi kesadaran keamanan informasi yang dicatat di laporan ini (cakupan USULAN di bagian 2)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 6.3 Kesadaran, pendidikan, dan pelatihan keamanan informasi",
+        "Laporan terisi untuk pelatihan keamanan informasi memuat kehadiran dan hasil evaluasinya."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ],
+      "rows": [
+       [
+        "SNX-HR-FRM-01",
+        "Employee Competency Matrix: standar kompetensi per tingkatan jabatan. HR Manager memakainya untuk menulis Tujuan Pembelajaran bila pelatihan menutup Kesenjangan kompetensi (USULAN)."
+       ],
+       [
+        "SNX-HR-FRM-02",
+        "Annual Training Plan & Training Matrix: jadwal rencana, jenis pelatihan, dan sasaran peserta. Sumber kode di kolom Rujukan Rencana dan daftar jenis pelatihan, serta tempat mencatat tindakan pelatihan lanjutan (butir 4.9, USULAN)."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX: sumber nama jabatan HR Manager dan HRGA Officer, dan atasan langsung tiap peserta."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan: uraian tugas HRGA Officer (JA-12 butir 6) dan HR Manager (JA-14 butir 5), dasar pembagian tugas di bagian 5."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling Procedure: tingkat RESTRICTED (Internal), penyimpanan (butir 4.8), dan retensi (butir 4.15)."
+       ],
+       [
+        "Belum bernomor",
+        "SOP Training & Development: tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan. Dikecualikan dari laporan ini."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. HR Manager meninjau laporan ini setiap tahun."
+    }
+   ]
+  }
+ ]
+}
