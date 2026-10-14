@@ -75,7 +75,7 @@
   "live_rows": 87,
   "worklist_rows": 88
  },
- "prompt_addendum": "Tambahan mutu bahasa (permintaan owner: humanize, tanpa AI slop; turunan skill antislop-copywriting, melengkapi RUNBOOK §6a, tidak menggantikannya):\n- Spesifik hanya dari sumber. Jangan menambah fakta, angka, nama, tanggal, atau sistem agar teks terdengar meyakinkan; bila tidak ada sumber, tulis versi polos atau beri label (USULAN).\n- Hindari: atribusi kabur (\"praktik terbaik industri\", \"para ahli\") tanpa sumber; frasa otoritas semu (\"pada intinya\", \"yang terpenting\", \"secara fundamental\"); benda diberi kata kerja manusia (\"sistem memutuskan\", \"data menunjukkan bahwa kita\"); kelompok tiga yang dipaksakan; ekor penegas (\"tanpa terkecuali\", \"tanpa kompromi\"); rentang palsu (\"dari hulu ke hilir\", \"dari awal hingga akhir dan segala di antaranya\"); sinonim berganti untuk satu hal; tebal, huruf kapital, atau tanda kutip untuk penekanan; frasa pengisi (\"dalam rangka\", \"adapun\", \"perlu diketahui\", \"hal ini dikarenakan\"); lindung nilai bertumpuk (\"dapat berpotensi\"); penutup positif generik.\n- Panjang kalimat bervariasi wajar; langkah prosedur tetap satu tindakan, satu pelaku.\n- T1: suara tim dipertahankan; kalimat tim yang sudah jelas tidak diganti hanya agar terdengar rapi.\n- Em-dash dilarang; en-dash tidak dipakai sebagai penyambung kalimat (untuk rentang tulis \"sampai\").\nPelajaran pilot W0 (temuan verifikator yang wajib dicegah sejak draf pertama):\n- Bagian 3 hanya berisi arti istilah; aturannya di bagian 4. Kalimat yang sama tidak disalin ke dua bagian; satu fakta disebut sekali di tempat paling tepat, bagian lain merujuk nomor butirnya.\n- Definisi tidak melingkar (istilah tidak dipakai untuk mendefinisikan dirinya sendiri).\n- Satu istilah untuk satu hal di seluruh dokumen (definisi, langkah, SLA, rekaman). Nama peran persis sama dengan tabel peran bagian 5; tidak ada \"Lead\" atau \"tim\" tanpa keterangan.\n- Angka dari sumber dipakai pada lingkupnya; perluasan ke aktivitas lain diberi label (USULAN).\n- Bagian 9: tiap penanganan menyebut pelakunya. Kontrol pengganti hanya bila ada di sumber; bila tidak, open item.\n- Peran yang menetapkan dan peran yang mencatat dibedakan konsisten di bagian 4, 5, dan 6.\n- Tiap kode dokumen yang dirujuk di badan dokumen tercantum di tabel Dokumen terkait bagian 11 (mode generic: bagian Dokumen terkait).\n- Scope menyebut yang dikecualikan bila sumber menyebutnya; bila sumber diam, tulis pengecualian yang jelas dari kriteria baris itu atau catat open item.",
+ "prompt_addendum": "Tambahan mutu bahasa (permintaan owner: humanize, tanpa AI slop; turunan skill antislop-copywriting, melengkapi RUNBOOK §6a, tidak menggantikannya):\n- Spesifik hanya dari sumber. Jangan menambah fakta, angka, nama, tanggal, atau sistem agar teks terdengar meyakinkan; bila tidak ada sumber, tulis versi polos atau beri label (USULAN).\n- Hindari: atribusi kabur (\"praktik terbaik industri\", \"para ahli\") tanpa sumber; frasa otoritas semu (\"pada intinya\", \"yang terpenting\", \"secara fundamental\"); benda diberi kata kerja manusia (\"sistem memutuskan\", \"data menunjukkan bahwa kita\"); kelompok tiga yang dipaksakan; ekor penegas (\"tanpa terkecuali\", \"tanpa kompromi\"); rentang palsu (\"dari hulu ke hilir\", \"dari awal hingga akhir dan segala di antaranya\"); sinonim berganti untuk satu hal; tebal, huruf kapital, atau tanda kutip untuk penekanan; frasa pengisi (\"dalam rangka\", \"adapun\", \"perlu diketahui\", \"hal ini dikarenakan\"); lindung nilai bertumpuk (\"dapat berpotensi\"); penutup positif generik.\n- Panjang kalimat bervariasi wajar; langkah prosedur tetap satu tindakan, satu pelaku.\n- T1: suara tim dipertahankan; kalimat tim yang sudah jelas tidak diganti hanya agar terdengar rapi.\n- Em-dash dilarang; en-dash tidak dipakai sebagai penyambung kalimat (untuk rentang tulis \"sampai\").\nPelajaran pilot W0 (temuan verifikator yang wajib dicegah sejak draf pertama):\n- Bagian 3 hanya berisi arti istilah; aturannya di bagian 4. Kalimat yang sama tidak disalin ke dua bagian; satu fakta disebut sekali di tempat paling tepat, bagian lain merujuk nomor butirnya.\n- Definisi tidak melingkar (istilah tidak dipakai untuk mendefinisikan dirinya sendiri).\n- Satu istilah untuk satu hal di seluruh dokumen (definisi, langkah, SLA, rekaman). Nama peran persis sama dengan tabel peran bagian 5; tidak ada \"Lead\" atau \"tim\" tanpa keterangan.\n- Angka dari sumber dipakai pada lingkupnya; perluasan ke aktivitas lain diberi label (USULAN).\n- Bagian 9: tiap penanganan menyebut pelakunya. Kontrol pengganti hanya bila ada di sumber; bila tidak, open item.\n- Peran yang menetapkan dan peran yang mencatat dibedakan konsisten di bagian 4, 5, dan 6.\n- Tiap kode dokumen yang dirujuk di badan dokumen tercantum di tabel Dokumen terkait bagian 11 (mode generic: bagian Dokumen terkait).\n- Scope menyebut yang dikecualikan bila sumber menyebutnya; bila sumber diam, tulis pengecualian yang jelas dari kriteria baris itu atau catat open item.\n- xlsx: legenda dan butir Cara pakai yang menjelaskan baris CONTOH (warna biru muda, \"hapus baris CONTOH\") dikosongkan atau ditulis ulang, karena baris CONTOH sudah dihapus; baris riwayat revisi ganda dikosongkan; rumus tidak diubah kecuali sumber jelas salah (catat USULAN).",
  "counts": {},
  "docs": [
   {
@@ -1156,7 +1156,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-OPS-FRM-08",
    "out_path": "out/07_Ops/SNX-OPS-FRM-08 Technical Ticket Incident Register (Rev00 DRAFT).xlsx",
    "sources": [
@@ -1167,11 +1167,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:38:07Z",
+   "updated_at": "2026-10-14T21:40:26Z",
    "pen_agent": "aa687bdb935458b7b"
   },
   {

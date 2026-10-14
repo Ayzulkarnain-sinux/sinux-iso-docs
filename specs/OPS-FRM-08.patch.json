@@ -1,0 +1,24 @@
+{
+  "clear_rows": {
+    "Register": [5]
+  },
+  "set": {
+    "Kontrol Dokumen!B6": "00 (Draft)",
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 5.25, 5.26",
+    "Kontrol Dokumen!B18": "Tiket Ops dibuat di Zammad (Nusagrid), tiket generalist di Service Hub GLPI (USULAN, batas menunggu owner). Register ini adalah rekap audit; ekspor dari ticketing system boleh ditempel di sheet Register dengan kolom yang sama.",
+    "Kontrol Dokumen!B19": "Isi Severity dulu, lalu waktu dalam format tanggal dan jam (WIB).",
+    "Kontrol Dokumen!B20": "Respon (Dilaporkan sampai Ack), durasi pulih (Dilaporkan sampai Pulih), dan status SLA dihitung otomatis memakai sheet Target Severity.",
+    "Kontrol Dokumen!B25": "Biru muda: warna baris contoh, sudah dikosongkan dan tidak dipakai",
+    "Kontrol Dokumen!C30": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!A31": null,
+    "Kontrol Dokumen!B31": null,
+    "Kontrol Dokumen!C31": null,
+    "Kontrol Dokumen!D31": null,
+    "Kontrol Dokumen!E31": null,
+    "Kontrol Dokumen!B35": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B36": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B37": "Samuel Kristanto Utomo / President Director",
+    "Register!A2": "Kolom abu-abu dihitung otomatis. Tiket kelas Keamanan (ke SOC) diserahkan ke SOC; insidennya dicatat di SNX-ISMS-FRM-02. Tiket tanpa waktu Ack atau Pulih belum masuk persentase di sheet Ringkasan."
+  }
+}
