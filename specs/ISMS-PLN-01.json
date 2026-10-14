@@ -1,0 +1,760 @@
+{
+ "meta": {
+  "doc_key": "ISMS-PLN-01",
+  "number": "SNX-ISMS-PLN-01",
+  "department": "Operation",
+  "title": "Business Continuity / IT Recovery Plan",
+  "process_owner": "Head of Operation",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "Rencana ini menetapkan cara SINUX mempertahankan dan memulihkan layanan TI kritis, termasuk keamanan informasinya, saat terjadi gangguan besar. Rencana ini juga menetapkan program pengujian yang membuktikan rencana berjalan."
+ ],
+ "scope": [
+  "Rencana ini berlaku untuk layanan yang dikelola Divisi Operation dan sistem internal yang menopangnya.",
+  "Dikecualikan: kelangsungan fasilitas data center dan platform upstream menjadi tanggung jawab penyedianya sesuai kontrak. Rencana ini hanya mengatur cara SINUX merespons, berkomunikasi, dan memulihkan bagian yang menjadi kendalinya."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Direktur (COO)",
+   "Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO sesudah sebutan ini."
+  ],
+  [
+   "Manajemen",
+   "COO dan Direktur Utama."
+  ],
+  [
+   "Rencana",
+   "Dokumen ini, Business Continuity / IT Recovery Plan."
+  ],
+  [
+   "Gangguan besar",
+   "Gangguan yang memenuhi salah satu kriteria aktivasi di bagian 4."
+  ],
+  [
+   "Aktivasi",
+   "Keputusan yang mulai menjalankan tahapan di butir 6.2 dan 6.3."
+  ],
+  [
+   "Layanan kritis",
+   "Layanan atau sistem yang terdaftar di bagian 4 beserta Tingkat, RTO, dan RPO-nya."
+  ],
+  [
+   "Sistem internal",
+   "Layanan kritis di bagian 4 selain layanan pelanggan Nusagrid dan managed services server pelanggan."
+  ],
+  [
+   "Tingkat",
+   "Angka 1 sampai 3 yang menunjukkan prioritas pemulihan sebuah layanan kritis. Urutan pemulihannya ada di bagian 4."
+  ],
+  [
+   "RTO",
+   "Recovery Time Objective: batas maksimal waktu memulihkan layanan."
+  ],
+  [
+   "RPO",
+   "Recovery Point Objective: batas maksimal data yang boleh hilang, diukur dalam waktu."
+  ],
+  [
+   "Upstream",
+   "Platform dan data center milik penyedia, di luar kendali SINUX."
+  ],
+  [
+   "Insiden P1",
+   "Insiden dengan severity P1 Kritis menurut SNX-OPS-SOP-04."
+  ],
+  [
+   "Recovery Lead",
+   "Peran pemimpin pemulihan teknis selama aktivasi."
+  ],
+  [
+   "Incident Commander keamanan",
+   "Peran pemimpin respons keamanan selama aktivasi."
+  ],
+  [
+   "Penanggung jawab uji",
+   "Peran yang bertanggung jawab atas satu jenis uji di butir 6.5."
+  ],
+  [
+   "Parent ticket",
+   "Tiket induk sebuah insiden di Zammad atau Service Hub (SNX-OPS-SOP-04), satu per insiden (SNX-ISMS-SOP-01)."
+  ],
+  [
+   "Ticketing system",
+   "Zammad, sistem tiket Divisi Operation, dan Service Hub (GLPI), sistem tiket untuk generalist."
+  ],
+  [
+   "Password manager",
+   "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+  ],
+  [
+   "Jumphost",
+   "Server perantara untuk akses ke sistem produksi yang merekam sesi (SNX-ISMS-SOP-02)."
+  ],
+  [
+   "Break-glass",
+   "Akses darurat ke sistem kritis, dipakai bila akses biasa tidak tersedia."
+  ],
+  [
+   "Immutable copy",
+   "Salinan backup yang tidak dapat diubah atau dihapus selama masa retensi (SNX-ISMS-SOP-03)."
+  ],
+  [
+   "Containment",
+   "Menahan penyebaran dampak gangguan atau serangan."
+  ],
+  [
+   "Baseline",
+   "Konfigurasi sistem yang berlaku sebelum gangguan."
+  ],
+  [
+   "RCA",
+   "Root cause analysis: analisis akar penyebab sebuah insiden, ditulis di SNX-OPS-FRM-10."
+  ],
+  [
+   "Tabletop exercise",
+   "Latihan diskusi: peserta menelusuri satu skenario gangguan tanpa menjalankan pemulihan teknis."
+  ],
+  [
+   "Uji pemulihan teknis",
+   "Simulasi yang memulihkan satu layanan Tingkat 1 ke environment pengganti."
+  ],
+  [
+   "Uji restore",
+   "Restore sampel data ke lokasi uji untuk memeriksa bahwa backup dapat dipulihkan (SNX-ISMS-SOP-03)."
+  ],
+  [
+   "Laporan uji",
+   "Rekaman hasil satu uji, yaitu laporan uji BCP dan IT recovery. Isi minimalnya ada di bagian 4."
+  ],
+  [
+   "Personel on-call",
+   "Personel Divisi Operation yang siaga di luar jam kantor (POL-OPS-001 bagian 5)."
+  ],
+  [
+   "NOC",
+   "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket (SNX-HR-ORG-01)."
+  ],
+  [
+   "SOC",
+   "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan (SNX-HR-ORG-01)."
+  ]
+ ],
+ "policy": [
+  "Head of Operation menyesuaikan cakupan dan kedalaman rencana dengan hasil penilaian risiko di SNX-ISMS-REG-02 (ISO 9001:2015 6.1).",
+  "Tiap layanan kritis punya Tingkat, RTO, dan RPO (ISO 9001:2015 7.1.3; Annex A 5.30). RTO dan RPO sistem internal berstatus (USULAN) sampai Head of Operation mengesahkannya. RTO layanan pelanggan mengikuti kontrak. Daftar layanan kritis:",
+  "Layanan pelanggan Nusagrid (VM, storage, network). Tingkat 1. Bergantung pada platform dan data center upstream serta network. Bila mati: SLA pelanggan terganggu pada banyak pelanggan sekaligus. RTO sesuai SLA kontrak; RPO sesuai layanan backup.",
+  "Managed services server pelanggan, termasuk fleet hosting pemerintah. Tingkat 1. Bergantung pada akses Jumphost, kredensial, dan monitoring. Bila mati: SLA dan reputasi terdampak. RTO 4 jam bila kontrak tidak menetapkan RTO (USULAN); RPO sesuai kontrak.",
+  "Monitoring dan alert (Nusametric, Overseer). Tingkat 1. Bergantung pada server monitoring dan notifikasi. Bila mati: insiden tidak terdeteksi. RTO 4 jam; RPO 24 jam.",
+  "Ticketing system (Zammad dan Service Hub). Tingkat 2. Bergantung pada VM, email, dan integrasi WhatsApp. Bila mati: laporan pelanggan tidak tercatat. RTO 8 jam; RPO 24 jam.",
+  "Password manager internal. Tingkat 1. Bergantung pada VM dan backup ter-encrypt. Bila mati: operator tidak dapat mengakses sistem. RTO 4 jam; RPO 24 jam.",
+  "Jumphost. Tingkat 1. Bergantung pada VM dan network. Bila mati: akses production terhambat. RTO 4 jam; RPO 1 minggu untuk konfigurasi.",
+  "WAF dan proxy (AegisWAF, Cloudflare). Tingkat 1. Bergantung pada VM, konfigurasi, dan layanan Cloudflare. Bila mati: website pelanggan tidak terlindungi atau tidak terjangkau. RTO 4 jam; RPO 1 minggu untuk konfigurasi.",
+  "Email dan kolaborasi (Google Workspace). Tingkat 2. Bergantung pada penyedia SaaS. Bila mati: komunikasi terganggu. RTO dan RPO sesuai penyedia.",
+  "Knowledge base dan dokumentasi. Tingkat 3. Bergantung pada VM, database, dan backup. Bila mati: runbook tidak dapat diakses. RTO 24 jam; RPO 24 jam.",
+  "Recovery Lead memulihkan layanan kritis berurutan menurut Tingkat: Tingkat 1 lebih dulu, lalu Tingkat 2, lalu Tingkat 3. Akses (password manager dan Jumphost) dan monitoring dipulihkan paling awal karena menjadi syarat pemulihan lainnya (Annex A 5.30).",
+  "Head of Operation memutuskan aktivasi rencana bila insiden P1 diperkirakan melewati RTO layanan Tingkat 1 yang terdampak, atau bila beberapa layanan kritis terganggu bersamaan. Bila ia tidak tersedia, COO yang memutuskan, dan bila keduanya tidak tersedia, Direktur Utama.",
+  "Recovery Lead mencatat seluruh keputusan dan langkah selama aktivasi secara kronologis di parent ticket.",
+  "Kontrol keamanan informasi tetap berlaku selama gangguan, termasuk perlindungan data dan bukti (Annex A 5.29). Pelonggaran hanya lewat pengecualian di bagian 9.",
+  "Redundansi fasilitas pemrosesan (Annex A 8.14): Recovery Lead memindahkan VM kritis bila kapasitas alternatif tersedia, dan mengalihkan lalu lintas WAF, DNS, atau CDN sesuai konfigurasi cadangan, menurut skenario di bagian 9.",
+  "Head of Operation dan Lead SOC menyiapkan runbook di lokasi kedua, cadangan terlatih per keahlian kritis, akses break-glass, dan daftar kontak darurat sebelum gangguan terjadi (Annex A 5.30). Langkah tiap peran ada di butir 6.4.",
+  "Backup password manager ter-encrypt, dan encryption key-nya tersimpan di password manager (SNX-ISMS-SOP-03). Restore karena itu membutuhkan salinan offline encryption key di luar password manager (USULAN).",
+  "Penanggung jawab uji mencatat setiap uji dalam laporan uji dengan isi minimal: nomor uji berformat BCP-YYYY-nomor urut, tanggal dan durasi, jenis uji, skenario, layanan atau sistem yang diuji, peserta, fasilitator dan pengamat, serta target RTO dan RPO.",
+  "Laporan uji juga memuat hasil tiap langkah uji (hasil diharapkan, hasil aktual, waktu tercapai, lolos atau gagal), temuan beserta tindakan perbaikan, pemilik, dan tenggat, kesimpulan, serta tanda tangan Penanggung jawab uji dan Head of Operation.",
+  "Kesimpulan laporan uji berupa salah satu dari: rencana efektif, efektif dengan perbaikan, atau tidak efektif dengan tanggal uji ulang."
+ ],
+ "roles": [
+  [
+   "Head of Operation",
+   "Pemilik rencana. Menilai kriteria aktivasi dan memutuskan aktivasi. Menunjuk Recovery Lead dan Incident Commander keamanan. Memberi tahu manajemen. Memimpin tabletop exercise, menyetujui laporan uji, dan menetapkan pemilik serta tenggat tindakan perbaikan. Memastikan kesiapan sumber daya (USULAN). Meninjau dan memperbarui rencana.",
+   "Memutuskan aktivasi. Menyetujui pelonggaran kontrol keamanan selama pemulihan. Mengesahkan RTO dan RPO sistem internal."
+  ],
+  [
+   "Recovery Lead",
+   "Penunjukan selama aktivasi, umumnya Lead NOC. Memimpin pemulihan teknis sesuai urutan di bagian 4. Mencatat seluruh keputusan dan langkah di parent ticket. Menghubungi supplier dan menginformasikan personel Divisi Operation lewat grup on-call.",
+   "Memimpin pemulihan teknis selama aktivasi. Tidak memutuskan aktivasi dan tidak menyetujui pelonggaran kontrol keamanan."
+  ],
+  [
+   "Lead NOC",
+   "Memastikan uji restore terlaksana (sampel data pelanggan, password manager, ticketing system, knowledge base, dan konfigurasi WAF). Menjalankan uji pemulihan teknis. Menyusun RCA aspek ketersediaan pasca aktivasi. Menyimpan salinan offline encryption key backup (USULAN).",
+   "Menjalankan uji restore dan uji pemulihan teknis."
+  ],
+  [
+   "Lead SOC",
+   "Incident Commander keamanan bila ada unsur keamanan: memimpin respons keamanan menurut SNX-ISMS-SOP-01. Mencatat hasil tabletop exercise keamanan sebagai laporan uji. Menyusun RCA aspek keamanan pasca aktivasi. Meninjau daftar kontak darurat tiap triwulan dan menyimpan salinannya.",
+   "Memimpin respons keamanan selama aktivasi."
+  ],
+  [
+   "Service Delivery Manager",
+   "Menyampaikan komunikasi aktivasi ke pelanggan terdampak. Menguji daftar kontak darurat. Menyampaikan RTO kontrak ke Recovery Lead (USULAN).",
+   "Mengirim komunikasi ke pelanggan terdampak lewat email resmi dan grup pelanggan."
+  ],
+  [
+   "COO",
+   "Memutuskan aktivasi bila Head of Operation tidak tersedia. Menerima pemberitahuan manajemen. Memutuskan komunikasi ke regulator, aparat, dan media.",
+   "Memutuskan aktivasi bila Head of Operation tidak tersedia. Memutuskan komunikasi ke regulator, aparat, dan media."
+  ],
+  [
+   "Direktur Utama",
+   "Memutuskan aktivasi bila Head of Operation dan COO tidak tersedia. Menerima pemberitahuan manajemen.",
+   "Memutuskan aktivasi bila Head of Operation dan COO tidak tersedia."
+  ],
+  [
+   "Legal & Compliance",
+   "Berkomunikasi dengan regulator, aparat, dan media bersama COO sesuai ketentuan.",
+   "Berkomunikasi dengan regulator, aparat, dan media hanya atas keputusan COO."
+  ],
+  [
+   "Penanggung jawab uji",
+   "Lead NOC, Head of Operation, Lead SOC, atau Service Delivery Manager menurut jenis uji di butir 6.5. Membandingkan hasil uji dengan RTO dan RPO dan mencatat temuan di laporan uji.",
+   "Menandatangani laporan uji sebagai penanggung jawab uji."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Aktivasi Rencana",
+   "intro": [
+    "Kriteria aktivasi dan urutan pemutus ada di bagian 4."
+   ],
+   "steps": [
+    [
+     "Nilai insiden P1 atau gangguan beberapa layanan kritis terhadap kriteria aktivasi.",
+     "Head of Operation",
+     "Penilaian kriteria aktivasi"
+    ],
+    [
+     "Putuskan aktivasi bila kriteria terpenuhi.",
+     "Head of Operation",
+     "Keputusan aktivasi"
+    ],
+    [
+     "Tetapkan insiden tetap ditangani sebagai P1 menurut SNX-OPS-SOP-04 bila kriteria belum terpenuhi.",
+     "Head of Operation",
+     "Penetapan penanganan P1"
+    ],
+    [
+     "Nilai ulang kriteria aktivasi bila perkiraan durasi atau layanan terdampak berubah (USULAN).",
+     "Head of Operation",
+     "Penilaian ulang aktivasi"
+    ],
+    [
+     "Tunjuk Recovery Lead, umumnya Lead NOC.",
+     "Head of Operation",
+     "Penunjukan Recovery Lead"
+    ],
+    [
+     "Tunjuk Lead SOC sebagai Incident Commander keamanan bila ada unsur keamanan.",
+     "Head of Operation",
+     "Penunjukan Incident Commander keamanan"
+    ],
+    [
+     "Catat keputusan aktivasi dan setiap langkah berikutnya secara kronologis.",
+     "Recovery Lead",
+     "Parent ticket"
+    ]
+   ]
+  },
+  {
+   "title": "Respons dan Pemulihan (Annex A 5.29, 5.30)",
+   "intro": [
+    "Komunikasi awal berjalan dalam 1 jam pertama menurut butir 6.3, bersamaan dengan langkah di bawah."
+   ],
+   "steps": [
+    [
+     "Nilai ruang lingkup dampak, layanan terdampak, penyebab awal, dan perkiraan durasi dalam 30 menit sejak aktivasi.",
+     "Recovery Lead",
+     "Penilaian awal di parent ticket"
+    ],
+    [
+     "Tahan penyebaran gangguan (containment) dengan kontrol keamanan tetap berlaku.",
+     "Recovery Lead",
+     "Catatan containment di parent ticket"
+    ],
+    [
+     "Pimpin respons keamanan menurut SNX-ISMS-SOP-01 bila ada unsur keamanan.",
+     "Lead SOC",
+     "Rekaman respons keamanan"
+    ],
+    [
+     "Lindungi data dan bukti selama stabilisasi.",
+     "Recovery Lead",
+     "Catatan perlindungan data dan bukti"
+    ],
+    [
+     "Pulihkan akses (password manager dan Jumphost) dan monitoring lebih dulu.",
+     "Recovery Lead",
+     "Akses dan monitoring pulih"
+    ],
+    [
+     "Pulihkan layanan kritis lain menurut Tingkat; pemulihan dari backup mengikuti SNX-ISMS-SOP-03.",
+     "Recovery Lead",
+     "Layanan pulih, dicatat di parent ticket"
+    ],
+    [
+     "Uji layanan dari sisi pelanggan.",
+     "Recovery Lead",
+     "Hasil uji layanan"
+    ],
+    [
+     "Periksa integritas data.",
+     "Recovery Lead",
+     "Hasil pemeriksaan integritas data"
+    ],
+    [
+     "Hapus jalur sementara yang dipasang selama pemulihan.",
+     "Recovery Lead",
+     "Catatan penghapusan jalur sementara"
+    ],
+    [
+     "Lakukan rotasi kredensial darurat yang dipakai selama pemulihan.",
+     "Recovery Lead",
+     "Catatan rotasi kredensial"
+    ],
+    [
+     "Kembalikan konfigurasi ke baseline.",
+     "Recovery Lead",
+     "Konfigurasi sesuai baseline"
+    ],
+    [
+     "Susun RCA aspek ketersediaan pasca aktivasi.",
+     "Lead NOC",
+     "RCA di SNX-OPS-FRM-10"
+    ],
+    [
+     "Susun RCA aspek keamanan pasca aktivasi bila ada unsur keamanan, menurut SNX-ISMS-SOP-01.",
+     "Lead SOC",
+     "RCA keamanan di SNX-OPS-FRM-10"
+    ],
+    [
+     "Perbarui rencana ini berdasarkan RCA.",
+     "Head of Operation",
+     "Revisi rencana"
+    ]
+   ]
+  },
+  {
+   "title": "Komunikasi",
+   "intro": [
+    "Komunikasi dimulai saat aktivasi. Laporan awal insiden keamanan ke pelanggan mengikuti SNX-ISMS-SOP-01."
+   ],
+   "steps": [
+    [
+     "Beri tahu manajemen lewat telepon dan grup manajemen: komunikasi awal dalam 1 jam sejak aktivasi, lalu tiap 1 jam.",
+     "Head of Operation",
+     "Catatan pemberitahuan di parent ticket"
+    ],
+    [
+     "Kirim komunikasi awal ke pelanggan terdampak lewat email resmi dan grup pelanggan dalam 1 jam sejak aktivasi.",
+     "Service Delivery Manager",
+     "Email dan pesan grup pelanggan"
+    ],
+    [
+     "Kirim pembaruan ke pelanggan terdampak sesuai severity; insiden P1 tiap 1 jam menurut SNX-OPS-SOP-04.",
+     "Service Delivery Manager",
+     "Email dan pesan grup pelanggan"
+    ],
+    [
+     "Informasikan personel Divisi Operation yang terlibat lewat grup on-call selama aktivasi berlangsung.",
+     "Recovery Lead",
+     "Pesan di grup on-call"
+    ],
+    [
+     "Hubungi supplier lewat kanal eskalasi supplier sesuai kebutuhan.",
+     "Recovery Lead",
+     "Catatan kontak supplier di parent ticket"
+    ],
+    [
+     "Putuskan apakah regulator, aparat, atau media perlu diberi tahu.",
+     "COO",
+     "Keputusan komunikasi di parent ticket"
+    ],
+    [
+     "Sampaikan komunikasi ke regulator, aparat, atau media sesuai ketentuan, hanya atas keputusan COO.",
+     "COO; Legal & Compliance",
+     "Catatan komunikasi di parent ticket"
+    ]
+   ]
+  },
+  {
+   "title": "Kesiapan Sumber Daya (Annex A 5.30, 8.14)",
+   "intro": [
+    "Pelaku langkah 1 sampai 4, 7, dan 8 berstatus (USULAN) sampai Head of Operation menetapkannya."
+   ],
+   "steps": [
+    [
+     "Sediakan runbook pemulihan tiap layanan kritis di knowledge base dan simpan salinannya di lokasi kedua.",
+     "Head of Operation",
+     "Runbook dan salinannya"
+    ],
+    [
+     "Siapkan minimal satu cadangan terlatih lewat pelatihan silang untuk tiap keahlian kritis (platform cloud, WAF dan proxy, network, DC fisik, panel hosting, SIEM).",
+     "Head of Operation",
+     "Daftar cadangan per keahlian"
+    ],
+    [
+     "Catat celah cadangan terlatih sebagai risiko di SNX-ISMS-REG-02.",
+     "Head of Operation",
+     "Baris risiko di SNX-ISMS-REG-02"
+    ],
+    [
+     "Simpan akses break-glass ke layanan kritis di password manager, lengkap dengan prosedur pemakaian dan rotasi.",
+     "Head of Operation",
+     "Akses break-glass di password manager"
+    ],
+    [
+     "Simpan salinan offline encryption key backup di luar password manager sesuai SNX-ISMS-SOP-03 (USULAN).",
+     "Lead NOC",
+     "Salinan offline encryption key"
+    ],
+    [
+     "Tinjau daftar kontak darurat internal dan supplier di file kontak berklasifikasi RESTRICTED (Internal) dan di password manager tiap triwulan menurut SNX-ISMS-SOP-01.",
+     "Lead SOC",
+     "Daftar kontak darurat yang sudah ditinjau"
+    ],
+    [
+     "Simpan salinan daftar kontak darurat yang dapat diakses saat sistem utama tidak tersedia.",
+     "Lead SOC",
+     "Salinan daftar kontak darurat"
+    ],
+    [
+     "Siapkan laptop kerja personel on-call agar siap dipakai dari luar kantor.",
+     "Head of Operation",
+     "Laptop kerja siap dipakai"
+    ]
+   ]
+  },
+  {
+   "title": "Pengujian dan Tinjauan Rencana (Annex A 5.30)",
+   "intro": [
+    "Frekuensi tiap uji ada di bagian 8. Setiap uji dicatat di laporan uji."
+   ],
+   "steps": [
+    [
+     "Pastikan uji restore atas sampel data pelanggan berlayanan backup terlaksana menurut SNX-ISMS-SOP-03.",
+     "Lead NOC",
+     "Hasil uji di SNX-ISMS-FRM-01"
+    ],
+    [
+     "Pastikan uji restore atas password manager, ticketing system, knowledge base, dan konfigurasi WAF terlaksana.",
+     "Lead NOC",
+     "Hasil uji di SNX-ISMS-FRM-01"
+    ],
+    [
+     "Pimpin tabletop exercise dengan satu skenario dari bagian 9 per sesi.",
+     "Head of Operation",
+     "Laporan uji"
+    ],
+    [
+     "Catat hasil tabletop exercise keamanan menurut SNX-ISMS-SOP-01 sebagai laporan uji.",
+     "Lead SOC",
+     "Laporan uji"
+    ],
+    [
+     "Jalankan uji pemulihan teknis.",
+     "Lead NOC",
+     "Laporan uji"
+    ],
+    [
+     "Uji daftar kontak darurat internal dan supplier.",
+     "Service Delivery Manager",
+     "Laporan uji"
+    ],
+    [
+     "Bandingkan hasil uji dengan RTO dan RPO.",
+     "Penanggung jawab uji",
+     "Hasil perbandingan di laporan uji"
+    ],
+    [
+     "Catat temuan uji di laporan uji.",
+     "Penanggung jawab uji",
+     "Temuan di laporan uji"
+    ],
+    [
+     "Setujui laporan uji.",
+     "Head of Operation",
+     "Laporan uji yang disetujui"
+    ],
+    [
+     "Tetapkan pemilik dan tenggat untuk tiap tindakan perbaikan dari temuan uji.",
+     "Head of Operation",
+     "Tindakan perbaikan dengan pemilik dan tenggat"
+    ],
+    [
+     "Tinjau rencana ini sesuai jadwal di bagian 8.",
+     "Head of Operation",
+     "Revisi rencana bila diperlukan"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Gangguan besar:\ninsiden P1 atau beberapa\nlayanan kritis terganggu",
+   "b": "Memenuhi kriteria\naktivasi (bagian 4)?",
+   "p": "Tangani sebagai P1\nSNX-OPS-SOP-04",
+   "c": "Aktivasi rencana\nHead of Operation memutuskan",
+   "d": "Tunjuk Recovery Lead\n(Lead SOC bila ada\nunsur keamanan)",
+   "f": "Penilaian awal\ndalam 30 menit",
+   "e": "Komunikasi awal\nmanajemen dan pelanggan,\ndalam 1 jam",
+   "g": "Stabilisasi:\ncontainment, lindungi\ndata dan bukti",
+   "h": "Pulihkan akses dan monitoring,\nlalu layanan menurut Tingkat",
+   "i": "Verifikasi dari sisi pelanggan\ndan integritas data",
+   "j": "Kembali normal:\nhapus jalur sementara,\nrotasi kredensial darurat,\nkonfigurasi ke baseline",
+   "k": "RCA (SNX-OPS-FRM-10)\ndan pembaruan rencana"
+  },
+  "shapes": {
+   "b": "diamond"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "p",
+    "Tidak"
+   ],
+   [
+    "p",
+    "b",
+    "Nilai ulang bila perkiraan berubah (USULAN)",
+    "dashed"
+   ],
+   [
+    "b",
+    "c",
+    "Ya"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "f"
+   ],
+   [
+    "f",
+    "e"
+   ],
+   [
+    "e",
+    "g"
+   ],
+   [
+    "g",
+    "h"
+   ],
+   [
+    "h",
+    "i"
+   ],
+   [
+    "i",
+    "j"
+   ],
+   [
+    "j",
+    "k"
+   ]
+  ],
+  "caption": "Gambar 1. Alur aktivasi dan pemulihan. Garis putus-putus kembali ke alur utama."
+ },
+ "sla": [
+  [
+   "Penilaian awal dampak, layanan terdampak, penyebab awal, dan perkiraan durasi",
+   "Recovery Lead",
+   "Dalam 30 menit sejak aktivasi"
+  ],
+  [
+   "Komunikasi awal ke manajemen, lalu pembaruan",
+   "Head of Operation",
+   "Dalam 1 jam sejak aktivasi, lalu tiap 1 jam"
+  ],
+  [
+   "Komunikasi awal ke pelanggan terdampak, lalu pembaruan",
+   "Service Delivery Manager",
+   "Dalam 1 jam sejak aktivasi, lalu sesuai severity (P1 tiap 1 jam)"
+  ],
+  [
+   "Pemulihan layanan kritis",
+   "Recovery Lead",
+   "Sesuai RTO tiap layanan di bagian 4"
+  ],
+  [
+   "Uji restore atas sampel data pelanggan berlayanan backup",
+   "Lead NOC",
+   "Minimal bulanan"
+  ],
+  [
+   "Uji restore password manager, ticketing system, knowledge base, dan konfigurasi WAF",
+   "Lead NOC",
+   "Minimal triwulanan"
+  ],
+  [
+   "Tabletop exercise",
+   "Head of Operation",
+   "Minimal tahunan"
+  ],
+  [
+   "Tabletop exercise keamanan (SNX-ISMS-SOP-01)",
+   "Lead SOC",
+   "Minimal tahunan"
+  ],
+  [
+   "Uji pemulihan teknis",
+   "Lead NOC",
+   "Minimal tahunan"
+  ],
+  [
+   "Uji daftar kontak darurat",
+   "Service Delivery Manager",
+   "Minimal setiap semester"
+  ],
+  [
+   "Tinjauan daftar kontak darurat",
+   "Lead SOC",
+   "Setiap triwulan"
+  ],
+  [
+   "Peninjauan rencana",
+   "Head of Operation",
+   "Minimal tahunan, setelah aktivasi nyata, dan setelah perubahan besar pada layanan atau supplier"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Kegagalan platform atau data center upstream Nusagrid",
+   "Recovery Lead mengeskalasi ke penyedia sesuai matriks eskalasi di SNX-OPS-SOP-04, dan Service Delivery Manager mengabari pelanggan menurut butir 6.3. Recovery Lead memimpin pemindahan VM kritis bila kapasitas alternatif tersedia, lalu pemulihan dari backup menurut butir 6.2."
+  ],
+  [
+   "Ransomware atau kompromi luas",
+   "Lead SOC memimpin isolasi dan forensik menurut SNX-ISMS-SOP-01. Recovery Lead memimpin pemulihan dari backup bersih menurut SNX-ISMS-SOP-03, dengan immutable copy bila platform mendukung, dan merotasi kredensial secara menyeluruh."
+  ],
+  [
+   "Kehilangan layanan kritis (password manager, Jumphost, ticketing system)",
+   "Recovery Lead merestore layanan itu dari backup ke VM baru menurut SNX-ISMS-SOP-03 dan memakai akses break-glass selama restore. Restore password manager memakai salinan offline encryption key dari butir 6.4 langkah 5."
+  ],
+  [
+   "Gangguan WAF, DNS, atau penyedia CDN",
+   "Recovery Lead mengalihkan lalu lintas sesuai konfigurasi cadangan dan memakai runbook WAF di knowledge base. Service Delivery Manager mengabari pelanggan menurut butir 6.3."
+  ],
+  [
+   "Gangguan internet atau kantor",
+   "Head of Operation meminta personel on-call bekerja jarak jauh dengan laptop kerja dan mengakses sistem lewat Jumphost menurut SNX-ISMS-SOP-02, serta lewat VPN. Pelaku Head of Operation berstatus (USULAN)."
+  ],
+  [
+   "Ketidaktersediaan personel kunci",
+   "Head of Operation memanggil cadangan terlatih dari daftar cadangan per keahlian (butir 6.4 langkah 2) dan mengatur personel on-call bergilir. Cadangan memakai runbook di knowledge base."
+  ],
+  [
+   "Kegagalan supplier kritis (partner SOC, penyedia lisensi, platform monitoring)",
+   "Recovery Lead menghubungi supplier lewat kontak eskalasi di daftar kontak darurat dan menjalankan rencana alternatif per supplier (SNX-ISMS-FRM-03)."
+  ],
+  [
+   "Kontrak pelanggan menetapkan RTO yang berbeda dari bagian 4",
+   "Service Delivery Manager menyampaikan RTO kontrak ke Recovery Lead (USULAN), dan Recovery Lead memakai RTO kontrak itu."
+  ],
+  [
+   "Pemulihan membutuhkan pelonggaran kontrol keamanan demi kecepatan",
+   "Head of Operation menyetujui pelonggaran, dan Recovery Lead mencatat persetujuan serta kontrol yang dilonggarkan di parent ticket (Annex A 5.29). Tanpa persetujuan itu, kontrol keamanan tetap berlaku."
+  ]
+ ],
+ "conclusion": [
+  "Kepatuhan terhadap rencana ini diperiksa lewat hasil program pengujian di butir 6.5, yang dicatat di laporan uji dan SNX-ISMS-FRM-01. Head of Operation, selaku pemilik rencana, meninjau rencana ini sesuai jadwal di bagian 8."
+ ],
+ "related_documents": [
+  [
+   "SNX-ISMS-REG-02",
+   "IS Risk Assessment Register; penilaian risiko yang menjadi dasar cakupan rencana, dan tempat mencatat celah cadangan terlatih."
+  ],
+  [
+   "SNX-ISMS-SOP-03",
+   "Backup & Recovery; backup, restore, uji restore, dan encryption key backup."
+  ],
+  [
+   "SNX-ISMS-SOP-01",
+   "Information Security Incident Management; respons insiden keamanan, tabletop exercise keamanan, RCA keamanan, dan tinjauan daftar kontak."
+  ],
+  [
+   "SNX-ISMS-SOP-02",
+   "User Access Control & Authorization; akses lewat Jumphost saat gangguan internet atau kantor."
+  ],
+  [
+   "SNX-OPS-SOP-04",
+   "Technical Incident Handling & Escalation; penanganan P1, matriks eskalasi, dan pembaruan ke pelanggan."
+  ],
+  [
+   "SNX-ISMS-FRM-01",
+   "Backup Log & Restore Testing Records; bukti uji restore."
+  ],
+  [
+   "SNX-ISMS-FRM-03",
+   "Supplier Technical & Security Evaluation Records; rujukan untuk kegagalan supplier kritis."
+  ],
+  [
+   "SNX-OPS-FRM-10",
+   "RCA & Corrective Action Report; RCA pasca aktivasi."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; dasar nama peran di bagian 5."
+  ],
+  [
+   "POL-OPS-001",
+   "Kebijakan Divisi Operation SINUX (DRAFT v0.1, penomoran masih USULAN); dasar definisi personel on-call."
+  ]
+ ],
+ "records": [
+  [
+   "Business Continuity / IT Recovery Plan (dokumen ini)",
+   "Google Drive (USULAN); pemilik Head of Operation",
+   "Berlaku sampai digantikan"
+  ],
+  [
+   "Laporan uji (laporan uji BCP dan IT recovery)",
+   "Folder Drive Operation; pemilik Head of Operation (USULAN)",
+   "3 tahun (USULAN)"
+  ],
+  [
+   "Parent ticket aktivasi rencana",
+   "Zammad atau Service Hub, sesuai SNX-OPS-SOP-04; pemilik Head of Operation (USULAN)",
+   "3 tahun (USULAN)"
+  ],
+  [
+   "Backup Log & Restore Testing Records (SNX-ISMS-FRM-01)",
+   "Google Drive; pemilik Lead NOC",
+   "3 tahun"
+  ],
+  [
+   "IS Risk Assessment Register (SNX-ISMS-REG-02)",
+   "Google Drive; pemilik sesuai SNX-ISMS-REG-02",
+   "Berlaku sampai digantikan"
+  ],
+  [
+   "RCA & Corrective Action Report (SNX-OPS-FRM-10)",
+   "Folder Drive Operation, subfolder per tahun (USULAN); pemilik Head of Operation",
+   "5 tahun"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "6.1 (Tindakan menangani risiko dan peluang), 7.1.3 (Infrastruktur)",
+  "ISO/IEC 27001:2022": "Annex A 5.29 (Keamanan informasi saat gangguan), 5.30 (Kesiapan TIK untuk kelangsungan bisnis), 8.14 (Redundansi fasilitas pemrosesan informasi)"
+ }
+}

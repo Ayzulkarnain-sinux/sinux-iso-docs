@@ -1,0 +1,87 @@
+{
+  "verdict": "PASS",
+  "doc": "out/08_ISMS/SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx",
+  "sources_checked": [
+    "1vwD5tORDQNQ7SNaQ6w4KitPKTcsw9ZVX (SNX-ISMS-PLN-01 sumber tim, dibaca utuh lewat read_file_content)",
+    "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv (POL-OPS-001, dibaca utuh)",
+    "1U8CAdibwBk9x_-Aic2lbev144d6WReTz (PRO-OPS-001, dibaca utuh)",
+    "pembanding silang di repo: specs/HR-ORG-01.json, ISMS-SOP-01.json, ISMS-SOP-02.json, ISMS-SOP-03.json, OPS-SOP-04.json, notes/ISMS-REG-02.md; context/audit/iso-sinux-supdocs-isms-2026-10-14.md baris 682-912"
+  ],
+  "summary": {
+    "a_fakta": "Sembilan layanan kritis, Tingkat, RTO, RPO, kriteria dan urutan pemutus aktivasi, tahapan, kanal dan frekuensi komunikasi, keahlian kritis, frekuensi dan penanggung jawab uji, isi laporan uji, dan rekaman cocok dengan sumber PLN-01. Angka tambahan dari dokumen lain cocok dengan spec sumbernya: P1 tiap 1 jam (OPS-SOP-04), tinjauan kontak triwulan dan tabletop keamanan tahunan (ISMS-SOP-01), retensi FRM-01 3 tahun (ISMS-SOP-03), retensi FRM-10 5 tahun (OPS-SOP-04), REG-02 'Berlaku sampai digantikan' (B14 REG-02). Tafsir dan angka tanpa sumber berlabel (USULAN).",
+    "b_karangan": "Tidak ditemukan nama, angka, nomor, atau sistem karangan. Nama orang di badan dokumen nol; tanggal nol.",
+    "c_kriteria": "Description = nama berkas SNX-ISMS-PLN-01_Business_Continuity_IT_Recovery_Plan.docx: nomor SNX-ISMS-PLN-01 dan judul Business Continuity / IT Recovery Plan terpenuhi. Acuan ISO 9001:2015 6.1, 7.1.3 dan ISO/IEC 27001:2022 5.29, 5.30, 8.14 ada di bagian 11 dan tercermin di bagian 4 dan 6.",
+    "d_runbook_0_6": "Tidak ada rujukan internal AI, kredensial, tanda tangan, tanggal efektif, atau residu konsultan. Status Draft, Rev 00. Tiga penanda tangan berbeda sesuai defaults ISMS. Zammad untuk Ops dan Service Hub (GLPI) untuk generalist. Vault berstatus menunggu konfirmasi Ops. Salinan offline encryption key (USULAN). Klasifikasi RESTRICTED (Internal) mengikuti sumber. Label restricted:ops sumber diganti tingkat PRO-01.",
+    "e_peran": "Semua PIC bagian 6 dan bagian 8 ada di tabel peran bagian 5 (Head of Operation, Recovery Lead, Lead NOC, Lead SOC, Service Delivery Manager, COO, Legal & Compliance, Penanggung jawab uji). Nama peran sama dengan HR-ORG-01 (DONE).",
+    "f_bahasa": "Lint lulus. Tidak ada pelanggaran 6a yang jelas. Ada temuan kecil, lihat nonblocking.",
+    "g_data_conflicts_audit": "CEO ditulis Direktur Utama; Direktur (COO) pada sebutan pertama (tabel Definisi), sesudahnya COO; blok tanda tangan Samuel Kristanto Utomo / President Director. Sebelas butir cacat PLN-01 di context/audit dan butir POL/PRO yang relevan ditangani atau dijelaskan di notes/ISMS-PLN-01.md."
+  },
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 7, diagram, simpul 'Tunjuk Recovery Lead (Lead SOC bila ada unsur keamanan)'",
+      "masalah": "Label bisa dibaca sebagai Lead SOC menjadi Recovery Lead bila ada unsur keamanan. Sumber dan butir 6.1 langkah 5-6 memisahkan dua penunjukan: Recovery Lead (umumnya Lead NOC) dan Incident Commander keamanan (Lead SOC). Diagram tidak konsisten dengan teks bagian 4, 5, dan 6.1.",
+      "bukti": "Sumber Bagian 6: 'Head of Operation menunjuk Recovery Lead (umumnya Lead NOC) dan Incident Commander keamanan (Lead SOC) bila ada unsur keamanan.' Saran: 'Tunjuk Recovery Lead, dan Incident Commander keamanan (Lead SOC) bila ada unsur keamanan'."
+    },
+    {
+      "lokasi": "Bagian 4 butir kesiapan vs butir 6.4 pengantar",
+      "masalah": "Bagian 4 menyebut pelaku tanpa label ('Head of Operation dan Lead SOC menyiapkan runbook di lokasi kedua, cadangan terlatih ..., akses break-glass, dan daftar kontak darurat'), sedangkan pengantar 6.4 menyatakan pelaku langkah 1-4, 7, 8 berstatus (USULAN). Sumber Bagian 9 pasif tanpa pelaku.",
+      "bukti": "6.4: 'Pelaku langkah 1 sampai 4, 7, dan 8 berstatus (USULAN) sampai Head of Operation menetapkannya.' Saran: tambahkan (USULAN) atau rujukan ke pengantar 6.4 di butir bagian 4."
+    },
+    {
+      "lokasi": "Bagian 4, 5, 6.1 langkah 7, 6.2 langkah 9-11, 6.5 langkah 10",
+      "masalah": "Pelaku ditambahkan pada kalimat sumber yang pasif tanpa label (USULAN): Head of Operation menyesuaikan cakupan dengan REG-02; Recovery Lead mencatat di parent ticket; Recovery Lead menghapus jalur sementara, merotasi kredensial, mengembalikan baseline; Head of Operation menetapkan pemilik dan tenggat tindakan perbaikan. Wajar dan tercatat di notes Asumsi 1 dan 8, tetapi tidak dilabeli seperti pelaku 6.4.",
+      "bukti": "Sumber: 'Cakupan dan kedalaman rencana disesuaikan ...', 'Seluruh keputusan dan langkah dicatat kronologis di parent ticket.', 'Kembali normal: hapus jalur sementara, rotasi kredensial darurat ...', 'temuan menjadi tindakan perbaikan dengan pemilik dan tenggat'."
+    },
+    {
+      "lokasi": "Bagian 4, kriteria aktivasi",
+      "masalah": "Frasa 'RTO layanan Tingkat 1 yang terdampak' adalah tafsir (sumber: 'RTO layanan Tingkat 1') tanpa label; tercatat di notes Asumsi 3 dan open item 9.",
+      "bukti": "Dokumen: 'bila insiden P1 diperkirakan melewati RTO layanan Tingkat 1 yang terdampak'."
+    },
+    {
+      "lokasi": "Tabel Definisi vs badan dokumen",
+      "masalah": "Istilah terdefinisi dipakai dengan bentuk berbeda: 'Manajemen' (definisi) ditulis 'manajemen' 6 kali; 'Rencana' ditulis 'rencana'. Butir 6a.7 meminta istilah tabel Definisi dipakai persis sama.",
+      "bukti": "Definisi: 'Manajemen | COO dan Direktur Utama.' Badan: 'Memberi tahu manajemen', 'Beri tahu manajemen lewat telepon dan grup manajemen'."
+    },
+    {
+      "lokasi": "Bagian 4 daftar layanan, definisi Jumphost, bagian 9",
+      "masalah": "Sinonim berganti untuk satu hal: 'production' dan 'sistem produksi'; 'penyedia' dan 'supplier' untuk pihak luar (penyedia upstream vs supplier lain tidak dibedakan di Definisi).",
+      "bukti": "'Akses production terhambat' vs 'akses ke sistem produksi'; 'Recovery Lead mengeskalasi ke penyedia' vs 'Hubungi supplier lewat kanal eskalasi supplier'."
+    },
+    {
+      "lokasi": "Butir 6.3 langkah 7",
+      "masalah": "Dua pelaku dalam satu langkah (6a.2 satu langkah satu pelaku). Mengikuti sumber 'COO dan Legal'.",
+      "bukti": "'Sampaikan komunikasi ke regulator, aparat, atau media sesuai ketentuan, hanya atas keputusan COO. | COO; Legal & Compliance'."
+    },
+    {
+      "lokasi": "Conclusion",
+      "masalah": "Kalimat pertama pasif tanpa pelaku padahal pelakunya diketahui (Head of Operation).",
+      "bukti": "'Kepatuhan terhadap rencana ini diperiksa lewat hasil program pengujian di butir 6.5 ...'."
+    },
+    {
+      "lokasi": "Butir 6.2 langkah 4",
+      "masalah": "Langkah generik tanpa tindakan konkret, sistem, atau rekaman spesifik; keluaran 'Catatan perlindungan data dan bukti' tidak menyebut tempat. Kalimat sumber, jadi T1 mempertahankan; bisa dirujuk ke SNX-ISMS-SOP-01 (forensik lebih dulu) atau parent ticket.",
+      "bukti": "'Lindungi data dan bukti selama stabilisasi. | Recovery Lead | Catatan perlindungan data dan bukti'."
+    },
+    {
+      "lokasi": "Purpose",
+      "masalah": "Dua kalimat berturut dibuka 'Rencana ini'; 'program pengujian yang membuktikan rencana berjalan' memberi benda kata kerja manusia (dari sumber).",
+      "bukti": "'Rencana ini menetapkan cara SINUX ... Rencana ini juga menetapkan program pengujian yang membuktikan rencana berjalan.'"
+    },
+    {
+      "lokasi": "Bagian 4, sembilan paragraf layanan kritis",
+      "masalah": "Sembilan paragraf berpola identik (Tingkat. Bergantung pada. Bila mati. RTO; RPO.) karena tabel sumber diratakan; sulit dibaca auditor. Keterbatasan template, tercatat di open item 17.",
+      "bukti": "'Jumphost. Tingkat 1. Bergantung pada VM dan network. Bila mati: akses production terhambat. RTO 4 jam; RPO 1 minggu untuk konfigurasi.'"
+    },
+    {
+      "lokasi": "Identity Document, Document Title; sampul",
+      "masalah": "Dokumen jenis rencana (PLN) tampil sebagai 'Operation - SOP Business Continuity / IT Recovery Plan' dan sampul 'STANDARD OPERATIONAL PROCEDURE'. Format terkunci (D4), tercatat di open item 17 untuk Aziz.",
+      "bukti": "Tabel Identity: 'Document Title | Operation - SOP Business Continuity / IT Recovery Plan'."
+    },
+    {
+      "lokasi": "config/checklist.json baris 91 (bukan dokumen)",
+      "masalah": "Link baris checklist menunjuk berkas lain (SNX-ISMS-FRM-02_Security_Incident_Investigation_Records.xlsx, fileId 1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2), tidak sesuai Description. Tidak dicatat di notes; perlu diteruskan ke LEAD sebagai cacat checklist tim.",
+      "bukti": "checklist row 91: description 'SNX-ISMS-PLN-01_Business_Continuity_IT_Recovery_Plan.docx', link_text 'SNX-ISMS-FRM-02_Security_Incident_Investigation_Records.xlsx'."
+    }
+  ]
+}

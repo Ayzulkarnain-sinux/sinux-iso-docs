@@ -1,0 +1,69 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Butir 6.4 (Kesiapan Sumber Daya), kalimat pengantar",
+      "masalah": "Catatan proses penyusunan bocor ke dokumen final: auditor tidak tahu 'sumber' mana yang dimaksud.",
+      "bukti": "\"Pelaku langkah 1 sampai 4, 7, dan 8 berstatus (USULAN), karena sumber tidak menyebut pelaku.\" Usul: \"... berstatus (USULAN) sampai Head of Operation menetapkannya.\""
+    },
+    {
+      "lokasi": "Bagian 4, butir kesiapan",
+      "masalah": "Kalimat pasif tanpa pelaku, padahal pelakunya diketahui (Head of Operation dan Lead SOC di butir 6.4). Rujukan ke 6.4 sudah meredam masalah ini.",
+      "bukti": "\"Runbook di lokasi kedua, cadangan terlatih per keahlian kritis, akses break-glass, dan daftar kontak darurat disiapkan sebelum gangguan terjadi (Annex A 5.30).\""
+    },
+    {
+      "lokasi": "Butir 6.4 langkah 6",
+      "masalah": "Label sensitivitas 'restricted:ops' disalin verbatim dari sumber. Label ini bukan tingkat SNX-ISMS-PRO-01 (PUBLIC, INTERNAL, RESTRICTED (Internal), SECRET), dan pembaca di luar Ops tidak mengenalnya.",
+      "bukti": "\"Tinjau daftar kontak darurat internal dan supplier di file kontak restricted:ops dan di password manager tiap triwulan ...\". Usul: \"file kontak berklasifikasi RESTRICTED (Internal)\"."
+    },
+    {
+      "lokasi": "Bagian 4, butir redundansi (Annex A 8.14)",
+      "masalah": "Kalimat ini membuang syarat sumber 'bila kapasitas alternatif tersedia', sehingga terbaca seolah kapasitas alternatif sudah ada. Syarat itu hanya muncul di baris pertama bagian 9. Open item 5 di notes mencatat bahwa keberadaannya belum terbukti.",
+      "bukti": "Dokumen: \"Recovery Lead memakai kapasitas alternatif untuk memindahkan VM kritis ...\". Sumber Bagian 5: \"pemindahan VM kritis bila kapasitas alternatif tersedia\"."
+    },
+    {
+      "lokasi": "Bagian 3, 5, butir 6.5 dan bagian 8",
+      "masalah": "Lead SOC mencatat hasil latihan tabletop keamanan sebagai laporan uji, tetapi tidak termasuk 'Penanggung jawab uji' yang menurut bagian 4 menandatangani laporan uji. Bagian 8 juga tidak memuat frekuensi tabletop keamanan.",
+      "bukti": "Peran Penanggung jawab uji: \"Lead NOC, Head of Operation, atau Service Delivery Manager menurut jenis uji di butir 6.5.\" Butir 6.5 langkah 4: \"Catat hasil latihan tabletop keamanan menurut SNX-ISMS-SOP-01 sebagai laporan uji. | Lead SOC\"."
+    },
+    {
+      "lokasi": "Definisi dan badan dokumen",
+      "masalah": "Satu hal disebut dengan istilah yang berganti: 'copy' dan 'salinan', serta 'Tabletop exercise' dan 'latihan tabletop keamanan'.",
+      "bukti": "Definisi \"Immutable copy | Copy backup yang tidak dapat diubah ...\" berdampingan dengan \"salinan offline encryption key\" dan \"salinan daftar kontak darurat\"."
+    },
+    {
+      "lokasi": "Bagian 5 (Service Delivery Manager), bagian 9 (Gangguan internet atau kantor), bagian 11 baris dokumen ini",
+      "masalah": "Beberapa pelaku dan lokasi tidak ada di sumber dan tidak berlabel (USULAN). Ini tidak konsisten dengan butir 6.4, yang memberi label USULAN pada pelaku tambahan.",
+      "bukti": "\"Menyampaikan RTO kontrak ke Recovery Lead.\"; \"Head of Operation meminta personel on-call bekerja jarak jauh ...\"; \"Business Continuity / IT Recovery Plan (dokumen ini) | Google Drive; pemilik Head of Operation\"."
+    },
+    {
+      "lokasi": "Bagian 11, Dokumen terkait, baris SNX-ISMS-SOP-02",
+      "masalah": "Rujukan VPN ke SOP-02 setia pada sumber PLN-01, tetapi specs/ISMS-SOP-02.json tidak memuat VPN. Ini ketidakcocokan lintas dokumen.",
+      "bukti": "\"SNX-ISMS-SOP-02 | ... akses lewat Jumphost dan VPN saat gangguan internet atau kantor.\" Grep 'VPN' di specs/ISMS-SOP-02.json: nol."
+    },
+    {
+      "lokasi": "Butir 6.2 langkah 12 dan peran Lead NOC",
+      "masalah": "Lead NOC menyusun semua RCA pasca aktivasi. POL-OPS-001 bagian 10 (RACI) membagi RCA ketersediaan ke NOC dan RCA keamanan ke SOC. Sumber PLN-01 tidak menyebut penyusun RCA.",
+      "bukti": "POL-OPS-001: \"RCA dan laporan IR | R (ketersediaan) | R (keamanan) | C | A\"."
+    },
+    {
+      "lokasi": "Lampiran A sumber",
+      "masalah": "Formulir laporan uji yang siap diisi tidak dibawa sebagai tabel. Kolomnya dipindah menjadi tiga paragraf di bagian 4. Substansi tetap ada, tetapi bagian 4 jadi panjang (21 paragraf). Sudah tercatat di notes (asumsi 12, open item 11 dan 17).",
+      "bukti": "Sumber: \"Laporan uji BCP dan IT recovery | Lampiran A dokumen ini\". Dokumen: \"Penanggung jawab uji mencatat setiap uji dalam laporan uji dengan isi minimal: nomor uji berformat BCP-YYYY-nomor urut, ...\"."
+    },
+    {
+      "lokasi": "Identity Document dan nama berkas",
+      "masalah": "Renderer (format terkunci D4) memberi Document Title berawalan 'SOP' untuk dokumen jenis Rencana. Nama berkas memakai '&' (judul worklist), sedangkan judul dokumen memakai '/' (judul checklist baris 91).",
+      "bukti": "\"Document Title | Operation - SOP Business Continuity / IT Recovery Plan\"; berkas \"SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx\"."
+    }
+  ],
+  "catatan_pemeriksaan": {
+    "fakta": "Sembilan layanan kritis beserta Tingkat, RTO, RPO, dan ketergantungannya cocok dengan tabel Bagian 4 sumber 1vwD5tORDQNQ7SNaQ6w4KitPKTcsw9ZVX. Kriteria dan urutan pemutus aktivasi cocok, dengan CEO ditulis Direktur Utama. Penilaian awal 30 menit dan komunikasi 1 jam cocok. Frekuensi uji dan penanggung jawabnya cocok. Skenario Bagian 5 sumber dipindah ke bagian 9. Angka lintas dokumen dicocokkan dengan specs repo: update P1 tiap 1 jam (OPS-SOP-04, juga POL-OPS-001 bagian 6), tinjauan kontak triwulan (SOP-01), retensi FRM-01 3 tahun dengan pemilik Lead NOC (SOP-03 dan notes FRM-01), retensi FRM-10 5 tahun (OPS-SOP-04), immutable copy bila platform mendukung (SOP-03). Tidak ditemukan angka tanpa sumber yang tidak berlabel USULAN.",
+    "kriteria": "Description baris 91 hanya berupa nama berkas SNX-ISMS-PLN-01_Business_Continuity_IT_Recovery_Plan.docx. Nomor, judul, dan substansi sumber dipertahankan. Acuan ISO 9001:2015 6.1, 7.1.3 dan ISO/IEC 27001:2022 5.29, 5.30, 8.14 lengkap di bagian 11 dan tercermin di bagian 4.",
+    "batas_keras": "Tanda tangan dan tanggal efektif kosong, status Draft. Grep atas pola rujukan internal AI (SKILL_, DOCTRINE, DEC-, HANDOVER, §, nama berkas berhuruf besar dengan garis bawah, staging, Claude, Altair, nama alat KB), en-dash, dan em-dash: nol temuan. Nol kredensial. Nol nama orang di badan dokumen. Lint pass.",
+    "data_conflicts": "Prepared Erik Dwi Yanto / Technical/Operation Engineer L1, Reviewed Fani Fatullah / VP Tech Operation and Services, Approved Samuel Kristanto Utomo / President Director, sesuai defaults ISMS. 'Direktur (COO)' dipakai pada sebutan pertama di tabel Definisi, sesudahnya COO. Direktur Utama menggantikan CEO. Password manager berstatus 'menunggu konfirmasi Ops'. Zammad untuk Ops dan Service Hub (GLPI) untuk generalist.",
+    "peran": "Semua PIC di bagian 6 dan 8 ada di tabel peran bagian 5.",
+    "audit": "Kesebelas butir bagian 5 di context/audit untuk PLN-01, serta butir POL-OPS-001 dan PRO-OPS-001 yang relevan, ditangani atau dijelaskan di notes/ISMS-PLN-01.md."
+  }
+}
