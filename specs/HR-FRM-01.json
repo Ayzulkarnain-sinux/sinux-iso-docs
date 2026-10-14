@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "HR-FRM-01",
+    "doc_type_cover": "FORM",
+    "doc_type_label": "Form",
+    "number": "SNX-HR-FRM-01",
+    "department": "Human Resources",
+    "title": "Employee Competency Matrix",
+    "process_owner": "HR Manager",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+      "reviewed": "Aziz Priyo Widakdo / HR Manager",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan",
+      "blocks": [
+        {"p": "Form ini memuat standar keterampilan, pengetahuan, dan perilaku yang wajib dimiliki pemegang jabatan SINUX pada setiap tingkatan jabatan."},
+        {"p": "Form ini juga mencatat sertifikasi profesi atau vendor yang wajib bagi sebuah jabatan, menurut penetapan HR Manager atau persyaratan kontrak pelanggan."}
+      ]
+    },
+    {
+      "h": "Ruang Lingkup",
+      "blocks": [
+        {"p": "Form ini mencakup 15 jabatan aktif di SNX-HR-ORG-01, kode JA-01 sampai JA-15, dan tiga kelompok kompetensi: keterampilan, pengetahuan, dan perilaku."},
+        {"p": "Butir berikut dikecualikan dari form ini:"},
+        {"table": {
+          "header": ["Butir yang dikecualikan", "Keterangan"],
+          "widths_cm": [6.5, 9.0],
+          "rows": [
+            ["Nilai kompetensi aktual tiap pemegang jabatan", "Form ini memuat standar per tingkatan jabatan dan tidak memuat nilai pemegang jabatan."],
+            ["Rencana pelatihan tahunan dan matriks pelatihan", "Ada di SNX-HR-FRM-02."],
+            ["Uraian tugas, wewenang, dan kompetensi tiap jabatan", "Ada di SNX-HR-JA-01. Form ini hanya memuat standar per tingkatan."],
+            ["KPI per jabatan", "Ada di KPI Matrix, dokumen yang berdiri sendiri (SNX-HR-JA-01 butir 4.6)."],
+            ["Masa pengalaman minimum", "Menurut SNX-HR-JA-01 butir 4.7, masa ini ditentukan sesudah job evaluation. Form ini tidak memuatnya."],
+            ["Jabatan Divisi Operation yang masih USULAN", "Berstatus USULAN tanpa pemegang di SNX-HR-ORG-01 (butir K-10). Jabatan itu masuk Tabel 1 sesudah disahkan."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Definisi dan Singkatan",
+      "blocks": [
+        {"table": {
+          "header": ["Istilah", "Arti"],
+          "widths_cm": [4.0, 11.5],
+          "rows": [
+            ["Kompetensi", "Keterampilan, pengetahuan, dan perilaku yang dibutuhkan untuk menjalankan sebuah jabatan."],
+            ["Keterampilan", "Kemampuan mengerjakan tugas tertentu, terlihat dari cara dan hasil kerja."],
+            ["Pengetahuan", "Hal yang harus diketahui pemegang jabatan agar tugasnya dikerjakan dengan benar, misalnya prosedur kerja dan sistem yang dipakai."],
+            ["Perilaku", "Sikap dan cara bekerja yang terlihat dalam pekerjaan sehari-hari."],
+            ["Jabatan", "Kedudukan berkode JA-nn di SNX-HR-ORG-01."],
+            ["Pemegang jabatan", "Karyawan SINUX yang menduduki sebuah jabatan."],
+            ["Tingkatan jabatan", "Kelompok jabatan di SNX-HR-ORG-01 yang kedudukannya sama dalam susunan organisasi. Dasar penetapannya ada di butir 4.3."],
+            ["Standar kompetensi", "Kompetensi beserta penguasaan minimumnya yang wajib dimiliki pemegang jabatan pada satu tingkatan."],
+            ["Penguasaan minimum", "Angka terendah pada skala di bagian Skala Penguasaan yang dapat diterima untuk satu kompetensi."],
+            ["Sertifikasi profesi atau vendor", "Sertifikat dari lembaga profesi atau vendor teknologi yang menyatakan pemegangnya lulus ujian atau pelatihan tertentu."],
+            ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Dasar dan Ketentuan",
+      "blocks": [
+        {"p": "4.1 Daftar jabatan, kode JA, dan nama jabatan di form ini mengikuti SNX-HR-ORG-01. Kompetensi teknis di SNX-HR-JA-01 mencakup keterampilan dan pengetahuan, dan kompetensi perilaku di sana sama dengan perilaku di form ini (USULAN)."},
+        {"p": "4.2 Standar berlaku per tingkatan. HR Manager menetapkan satu tingkatan untuk setiap jabatan, dan pemegang jabatan pada tingkatan yang sama wajib memiliki kompetensi yang sama menurut Tabel 2."},
+        {"p": "4.3 HR Manager menetapkan tingkatan dari jumlah garis lapor sampai Direktur Utama (JA-01), sama dengan ukuran di SNX-HR-SOP-12 bagian 3 (USULAN). SNX-HR-JA-01 tidak memuat grading. Bila garis lapor sebuah jabatan masih menunggu konfirmasi di SNX-HR-ORG-01, HRGA Officer menulis keterangan menunggu konfirmasi pada tingkatannya."},
+        {"p": "4.4 Standar di Tabel 2 adalah batas bawah. Kompetensi khusus sebuah jabatan tetap mengikuti SNX-HR-JA-01 (USULAN)."},
+        {"p": "4.5 Menurut SNX-HR-JA-01 butir 4.7, sertifikasi profesi atau vendor wajib hanya bila ditetapkan di Competency Matrix atau bila kontrak pelanggan memuat persyaratannya. Form ini dibaca sebagai Competency Matrix itu (USULAN), dan HR Manager menetapkan sertifikasi wajib di Tabel 1. HRGA Officer menulis dasarnya di kolom Dasar sertifikasi: form ini atau kontrak pelanggan."},
+        {"p": "4.6 Klasifikasi form ini RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."}
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {"p": "Pembagian tugas berikut berstatus (USULAN)."},
+        {"table": {
+          "header": ["Peran", "Tugas pada form ini"],
+          "widths_cm": [3.6, 11.9],
+          "rows": [
+            ["HR Manager", "Menetapkan tingkatan, sertifikasi, dan standar kompetensi. Memeriksa isi form sebelum disetujui. Meninjau form setiap tahun."],
+            ["HRGA Officer", "Mencatat penetapan HR Manager di Tabel 1 dan Tabel 2, dan memelihara daftar jabatan di Tabel 1 sesuai SNX-HR-ORG-01."],
+            ["Direktur Utama", "Menyetujui form lewat blok Approved By."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Skala Penguasaan",
+      "blocks": [
+        {"p": "Skala berikut dipakai di Tabel 2 untuk menulis penguasaan minimum (USULAN)."},
+        {"table": {
+          "header": ["Angka", "Nama", "Arti"],
+          "widths_cm": [1.6, 2.6, 11.8],
+          "rows": [
+            ["1", "Dasar", "Memahami konsep dan mengerjakan tugas sederhana dengan arahan."],
+            ["2", "Mandiri", "Mengerjakan tugas rutin tanpa arahan."],
+            ["3", "Mahir", "Mengerjakan tugas yang rumit dan mengatasi masalah yang tidak biasa."],
+            ["4", "Ahli", "Menentukan cara kerja dan membimbing pemegang jabatan lain."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Cara Mengisi",
+      "blocks": [
+        {"p": "7.1 HRGA Officer mencocokkan daftar jabatan di Tabel 1 dengan SNX-HR-ORG-01."},
+        {"p": "7.2 HRGA Officer menambah satu baris di Tabel 1 untuk setiap jabatan baru yang disahkan di SNX-HR-ORG-01."},
+        {"p": "7.3 HRGA Officer mencatat tingkatan setiap jabatan di kolom Tingkatan Tabel 1, sesuai penetapan HR Manager menurut butir 4.3."},
+        {"p": "7.4 HRGA Officer mencatat sertifikasi yang diwajibkan dan dasarnya di Tabel 1, sesuai penetapan HR Manager menurut butir 4.5. HRGA Officer mengosongkan kedua kolom itu bila jabatan tidak mewajibkan sertifikasi."},
+        {"p": "7.5 HRGA Officer menulis satu baris di Tabel 2 untuk setiap tingkatan, dengan tulisan tingkatan yang sama seperti di Tabel 1."},
+        {"p": "7.6 HRGA Officer mencatat kompetensi teknis jabatan pada tingkatan itu di kolom Keterampilan dan Pengetahuan, dan kompetensi perilakunya di kolom Perilaku, sesuai penetapan HR Manager dari SNX-HR-JA-01."},
+        {"p": "7.7 HRGA Officer menulis setiap kompetensi pada baris sendiri di dalam sel, dengan bentuk nama kompetensi (angka skala)."},
+        {"p": "7.8 HRGA Officer membiarkan kosong sel yang belum ditetapkan HR Manager."},
+        {"p": "7.9 HR Manager memeriksa isi Tabel 1 dan Tabel 2, lalu menyerahkannya ke Direktur Utama untuk disetujui."}
+      ]
+    },
+    {
+      "h": "Matriks Kompetensi",
+      "blocks": [
+        {"p": "Kolom Kode dan Jabatan mengikuti SNX-HR-ORG-01. Pengisian kolom lain mengikuti butir 7.3 sampai 7.7."},
+        {"h2": "Tabel 1. Tingkatan dan Sertifikasi per Jabatan"},
+        {"table": {
+          "header": ["Kode", "Jabatan", "Tingkatan", "Sertifikasi profesi atau vendor yang diwajibkan", "Dasar sertifikasi"],
+          "widths_cm": [1.8, 4.6, 2.4, 3.8, 3.4],
+          "rows": [
+            ["JA-01", "Direktur Utama", "", "", ""],
+            ["JA-02", "Direktur", "", "", ""],
+            ["JA-03", "VP Commercial", "", "", ""],
+            ["JA-04", "VP Tech Operation and Services", "", "", ""],
+            ["JA-05", "Manager of Product Tech", "", "", ""],
+            ["JA-06", "Brand & Marketing", "", "", ""],
+            ["JA-07", "Business Development", "", "", ""],
+            ["JA-08", "Legal & Compliance (tempat JA-09 melapor)", "", "", ""],
+            ["JA-09", "Legal & Compliance (melapor ke JA-08)", "", "", ""],
+            ["JA-10", "Finance", "", "", ""],
+            ["JA-11", "Accounting & Tax", "", "", ""],
+            ["JA-12", "HRGA Officer", "", "", ""],
+            ["JA-13", "Technical/Operation Engineer L1", "", "", ""],
+            ["JA-14", "HR Manager", "", "", ""],
+            ["JA-15", "Office Helper", "", "", ""]
+          ]
+        }},
+        {"h2": "Tabel 2. Standar Kompetensi per Tingkatan"},
+        {"p": "HRGA Officer menambah baris bila tingkatan di Tabel 1 lebih banyak dari baris yang tersedia."},
+        {"table": {
+          "header": ["Tingkatan", "Keterampilan", "Pengetahuan", "Perilaku"],
+          "widths_cm": [2.6, 4.4, 4.4, 4.6],
+          "rows": [
+            ["", "", "", ""],
+            ["", "", "", ""],
+            ["", "", "", ""],
+            ["", "", "", ""],
+            ["", "", "", ""],
+            ["", "", "", ""]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Rekaman",
+      "blocks": [
+        {"table": {
+          "header": ["Rekaman", "Lokasi dan pemilik", "Retensi"],
+          "widths_cm": [5.2, 7.1, 3.2],
+          "rows": [
+            ["Employee Competency Matrix yang disahkan (Tabel 1 dan Tabel 2)", "Folder Google Drive Departemen HR (USULAN). Pemilik: HR Manager.", "Belum ditetapkan"]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Acuan Klausul ISO",
+      "blocks": [
+        {"p": "Daftar klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."},
+        {"table": {
+          "header": ["Standar", "Klausul", "Hubungan dengan form ini"],
+          "widths_cm": [3.4, 5.6, 6.5],
+          "rows": [
+            ["ISO 9001:2015", "7.2 Kompetensi", "Tabel 2 memuat kompetensi yang diperlukan pemegang jabatan. Penilaian kompetensi aktual, tindakan memperoleh kompetensi, dan bukti kompetensi pemegang jabatan berada di luar form ini."],
+            ["ISO/IEC 27001:2022", "7.2 Kompetensi", "Sama dengan ISO 9001:2015 7.2, untuk kinerja keamanan informasi."],
+            ["ISO/IEC 27001:2022", "Annex A 6.3 Kesadaran, pendidikan, dan pelatihan keamanan informasi", "Kolom Pengetahuan dan Perilaku di Tabel 2 memuat standar keamanan informasi bila HR Manager menetapkannya."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {"table": {
+          "header": ["Kode", "Keterangan"],
+          "widths_cm": [4.0, 11.5],
+          "rows": [
+            ["SNX-HR-ORG-01", "Struktur Organisasi SINUX: sumber daftar jabatan di Tabel 1 dan garis lapor untuk butir 4.3."],
+            ["SNX-HR-JA-01", "Job Analysis dan Uraian Jabatan: sumber kompetensi teknis dan kompetensi perilaku tiap jabatan (butir 4.1 dan 7.6). Menurut butir 4.7 dokumen itu, sertifikasi wajib hanya bila ditetapkan di Competency Matrix atau bila kontrak pelanggan memuat persyaratannya; form ini dibaca sebagai Competency Matrix itu (USULAN)."],
+            ["SNX-HR-SOP-10", "Promotion: bila form ini disahkan, HR Manager memakainya sebagai acuan tambahan penilaian kualifikasi (USULAN)."],
+            ["SNX-HR-SOP-12", "Rotation: bagian 3 dokumen itu memuat ukuran tingkatan jabatan yang dipakai butir 4.3. Bila form ini disahkan dan memuat tingkatan jabatan, HR Manager memakai tingkatan itu pada butir 4.2 dokumen itu (USULAN)."],
+            ["SNX-HR-FRM-02", "Annual Training Plan & Training Matrix: rencana pelatihan tahunan, dikecualikan dari form ini."],
+            ["SNX-ISMS-PRO-01", "Information Classification & Handling Procedure: tingkat klasifikasi RESTRICTED (Internal) untuk form ini (butir 4.6)."],
+            ["Belum bernomor", "KPI Matrix, tempat KPI per jabatan ditetapkan."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {"p": "Form ini berstatus Draft, dan baru dipakai sebagai standar sesudah HR Manager menetapkan isi Tabel 1 dan Tabel 2 dan Direktur Utama menandatangani blok Approved By."},
+        {"p": "HR Manager meninjau form ini setiap tahun, dan lebih awal bila SNX-HR-ORG-01 atau SNX-HR-JA-01 berubah (USULAN)."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 1 TUJUAN, paragraf 2",
+      "masalah": "Label 'Hasil yang dijaga' diangkat dari kalimat panduan gaya RUNBOOK §6a.4 dan terbaca mekanis. Pemakaian oleh auditor sebagai pembanding adalah klaim tanpa sumber, walau tidak menyangkut angka atau nama.",
+      "bukti": "\"Hasil yang dijaga adalah satu standar tertulis per tingkatan jabatan, yang dipakai HR Manager dan auditor sebagai pembanding kompetensi karyawan.\""
+    },
+    {
+      "lokasi": "Butir 4.3, butir 4.5, bagian 8 (teks di bawah judul Tabel 2)",
+      "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui (HRGA Officer, butir 7.3 sampai 7.5). Dampak kecil karena bagian 7 menyebut pelakunya.",
+      "bukti": "4.3: \"ditulis dengan keterangan menunggu konfirmasi\"; 4.5: \"Dasar sertifikasi ditulis di kolom Dasar sertifikasi\"; bagian 8: \"Baris yang tersedia dapat ditambah sesuai jumlah tingkatan di Tabel 1.\""
+    },
+    {
+      "lokasi": "Bagian 1 TUJUAN; butir 4.2",
+      "masalah": "Benda diberi kata kerja manusia: jabatan yang mewajibkan dan jabatan yang memakai standar. Pelaku sebenarnya HR Manager (penetapan) atau pemegang jabatan.",
+      "bukti": "\"bila suatu jabatan mewajibkannya\"; \"semua jabatan pada tingkatan yang sama memakai standar yang sama di Tabel 2\""
+    },
+    {
+      "lokasi": "Bagian 1 TUJUAN dan tabel Definisi (Standar kompetensi, Tingkatan jabatan)",
+      "masalah": "Sinonim berganti untuk satu hal: 'karyawan' di Tujuan dan 'pemegang jabatan' di Definisi untuk pihak yang wajib memiliki standar; 'tingkatan' dijelaskan dengan 'jenjang'. Istilah definisi tidak dipakai persis di Tujuan.",
+      "bukti": "Tujuan: \"wajib dimiliki karyawan SINUX pada setiap tingkatan jabatan\"; Definisi: \"wajib dimiliki pemegang jabatan pada satu tingkatan\"; \"Tingkatan jabatan | Jenjang sebuah jabatan di SNX-HR-ORG-01.\""
+    },
+    {
+      "lokasi": "Bagian 10 DOKUMEN TERKAIT, baris SNX-HR-JA-01; butir 4.1",
+      "masalah": "Parafrase JA-01 butir 4.7 memangkas alternatif kontrak pelanggan, dan penyamaan form ini dengan 'Competency Matrix' di JA-01 berlabel (USULAN) di dokumen itu tetapi di sini ditulis tanpa label. Butir 4.5 sudah memuat kedua alternatif dengan benar, jadi substansi tidak salah. Butir 4.1 menyamakan 'kompetensi perilaku' JA-01 (\"Sikap dan kemampuan kerja bersama\") dengan definisi Perilaku form ini (\"Sikap dan cara bekerja yang terlihat\"); ini tafsir penyusun tanpa label.",
+      "bukti": "\"Menurut butir 4.7 dokumen itu, sertifikasi ditetapkan di form ini.\" vs specs/HR-JA-01.json 4.7: \"hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan\" dan Dokumen Terkait JA-01: \"Dibaca sebagai Competency Matrix di butir 4.7 (USULAN).\""
+    },
+    {
+      "lokasi": "Seluruh dokumen (bagian 4 dan 11)",
+      "masalah": "Tidak ada tabel rekaman (lokasi, pemilik, retensi) dan tidak ada sistem SINUX (mis. Google Drive) yang disebut, padahal RUNBOOK §6 dan §6a.3 mengarahkannya; retensi boleh ditulis sebagai (USULAN). Notes open item 4 menjelaskan alasannya, jadi tidak diam-diam.",
+      "bukti": "Teks docx tidak memuat 'retensi', 'Google Drive', atau lokasi simpan; notes/HR-FRM-01.md open item 4."
+    },
+    {
+      "lokasi": "Tabel Definisi (Keterampilan, Perilaku) dan bagian 6 Skala Penguasaan",
+      "masalah": "Arti istilah dan arti skala 1 sampai 4 bisa berlaku di perusahaan mana pun. Sifat definisi dan skala, skala sudah berlabel (USULAN), tidak perlu kalimat tambahan.",
+      "bukti": "\"Kemampuan mengerjakan tugas tertentu, terlihat dari cara dan hasil kerja.\"; \"2 | Mandiri | Mengerjakan tugas rutin tanpa arahan.\""
+    }
+  ]
+}

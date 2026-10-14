@@ -1,0 +1,59 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Butir 4.3 (ukuran tingkatan, USULAN)",
+   "masalah": "Ukuran jumlah garis lapor sampai Direktur Utama menaruh JA-03 VP Commercial, JA-04 VP Tech Operation and Services, JA-08, JA-10, JA-11, dan JA-14 pada satu tingkatan karena semuanya melapor ke Direktur di SNX-HR-ORG-01. Hasilnya bisa tidak mencerminkan senioritas. Keterangan menunggu konfirmasi hanya untuk garis lapor jabatan itu sendiri, padahal JA-09, JA-12, dan JA-15 ikut tidak pasti karena atasannya (JA-08, JA-14) menunggu konfirmasi.",
+   "bukti": "Form: 'HR Manager menetapkan tingkatan dari jumlah garis lapor sampai Direktur Utama (JA-01) ... Bila garis lapor sebuah jabatan masih menunggu konfirmasi ...'. ORG-01: JA-03, JA-08, JA-10, JA-11, JA-14 'Direktur (JA-02), menunggu konfirmasi'; JA-04 'Direktur (JA-02)'. Berlabel USULAN dan tercatat open item 1 di notes; untuk diputus Aziz."
+  },
+  {
+   "lokasi": "Ruang Lingkup, baris pengecualian 'Uraian tugas, wewenang, dan kompetensi tiap jabatan'",
+   "masalah": "Kalimat 'Form ini hanya memuat standar per tingkatan' bertentangan dengan Tabel 1 yang memuat sertifikasi wajib per jabatan.",
+   "bukti": "Tabel 1 kolom 'Sertifikasi profesi atau vendor yang diwajibkan' per kode JA-01 sampai JA-15."
+  },
+  {
+   "lokasi": "Tujuan, butir 4.5, Dokumen Terkait baris SNX-HR-JA-01 dan SNX-HR-SOP-12",
+   "masalah": "Pengulangan isi antarbagian (RUNBOOK 6a.6): pembacaan JA-01 butir 4.7 dan form ini sebagai Competency Matrix diulang di butir 4.5 dan Dokumen Terkait; ukuran tingkatan SOP-12 diulang di butir 4.3 dan Dokumen Terkait. Dokumen Terkait cukup menunjuk butir.",
+   "bukti": "Butir 4.5: 'Menurut SNX-HR-JA-01 butir 4.7, sertifikasi profesi atau vendor wajib hanya bila ...'; Dokumen Terkait: 'Menurut butir 4.7 dokumen itu, sertifikasi wajib hanya bila ... form ini dibaca sebagai Competency Matrix itu (USULAN).'"
+  },
+  {
+   "lokasi": "Butir 4.5 dan Tujuan",
+   "masalah": "Butir 4.5 menulis HR Manager menetapkan sertifikasi wajib, sementara Tujuan dan kolom Dasar sertifikasi mengakui sertifikasi bisa datang dari kontrak pelanggan, bukan penetapan HR Manager. Sebaiknya: HR Manager menetapkan sertifikasi berdasar form ini, HRGA Officer mencatat sertifikasi yang diminta kontrak pelanggan.",
+   "bukti": "4.5: 'HR Manager menetapkan sertifikasi wajib di Tabel 1. HRGA Officer menulis dasarnya ...: form ini atau kontrak pelanggan.' Tujuan: 'menurut penetapan HR Manager atau persyaratan kontrak pelanggan.'"
+  },
+  {
+   "lokasi": "Tujuan, kalimat 2",
+   "masalah": "Benda diberi kata kerja manusia ringan; kalimat 1 sudah memakai 'memuat'.",
+   "bukti": "'Form ini juga mencatat sertifikasi profesi atau vendor ...'"
+  },
+  {
+   "lokasi": "Definisi (Keterampilan, Pengetahuan, Perilaku) dan Skala Penguasaan",
+   "masalah": "Kalimat generik yang berlaku di perusahaan mana pun. Wajar untuk definisi dan skala; skala sudah berlabel USULAN. Bisa diberi contoh SINUX (mis. Zammad atau GLPI pada contoh Pengetahuan) bila HR Manager setuju.",
+   "bukti": "'Mahir | Mengerjakan tugas yang rumit dan mengatasi masalah yang tidak biasa.'; 'Perilaku | Sikap dan cara bekerja yang terlihat dalam pekerjaan sehari-hari.'"
+  },
+  {
+   "lokasi": "Rekaman",
+   "masalah": "Lokasi berlabel USULAN tetapi 'Pemilik: HR Manager' tanpa label, padahal process_owner untuk dokumen tanpa sumber berstatus USULAN di config/defaults.json. Pola SOP-10 dan SOP-12 memakai HRGA Officer sebagai pemilik rekaman HR.",
+   "bukti": "'Folder Google Drive Departemen HR (USULAN). Pemilik: HR Manager.'; defaults process_owner.status 'USULAN'."
+  },
+  {
+   "lokasi": "Dokumen Terkait, baris SNX-ISMS-PRO-01",
+   "masalah": "Judul ditulis 'Information Classification & Handling Procedure', sedangkan worklist dan nama berkas keluaran memakai 'Information Classification & Handling'. Sama dengan spec ISMS-PRO-01 dan dokumen lain di set, jadi bukan fakta karangan; selaraskan sekali di seluruh set.",
+   "bukti": "config/worklist.json ISMS-PRO-01 title 'Information Classification & Handling'; out/08_ISMS/SNX-ISMS-PRO-01 Information Classification & Handling (Rev00 DRAFT).docx."
+  },
+  {
+   "lokasi": "Ruang Lingkup, baris 'Rencana pelatihan tahunan dan matriks pelatihan'",
+   "masalah": "'Ada di SNX-HR-FRM-02' ditulis sebagai fakta, sedangkan FRM-02 belum ada di out/ dan SOP-10/SOP-12 menyebutnya 'dalam pengerjaan'. Sudah open item 8 di notes; cek ulang setelah FRM-02 jadi.",
+   "bukti": "ls out/02_HR tidak memuat SNX-HR-FRM-02; SOP-12 Dokumen Terkait: 'SNX-HR-FRM-02 | Annual Training Plan & Training Matrix, dalam pengerjaan'."
+  }
+ ],
+ "catatan_pemeriksaan": {
+  "sumber": "Tidak ada sumber tim (worklist sources []); T2. Seluruh sel faktual Tabel 1 dan Tabel 2 kosong, tanpa baris contoh, tanpa tanggal, tanpa nama pihak luar. Skala 1 sampai 4, pembagian peran, lokasi rekaman, dan klausul ISO berlabel USULAN.",
+  "fakta_dicek": "Kode dan nama JA-01 sampai JA-15 cocok dengan SNX-HR-ORG-01 (out/01_Struktur_Jobdesc); K-10 cocok; JA-01 butir 4.6 (KPI Matrix) dan 4.7 (sertifikasi, job evaluation) cocok; 'grading tidak dicantumkan' cocok; SOP-12 bagian 3 (definisi Tingkatan jabatan) dan butir 4.2 cocok; SOP-10 butir 4.2 cocok; klausul ISO 9001:2015 7.2, ISO/IEC 27001:2022 7.2 dan A 6.3 bertajuk benar.",
+  "data_conflicts": "Approval persis: Sita Nadia Salsabila Widodo / HRGA Officer, Aziz Priyo Widakdo / HR Manager, Samuel Kristanto Utomo / President Director; badan memakai Direktur Utama; COO tidak muncul.",
+  "batas_keras": "Status Draft, effective date kosong, tanda tangan kosong, klasifikasi RESTRICTED (Internal) sesuai worklist; nol rujukan internal AI, nol em-dash/en-dash, nol tebal di badan. Lint generic: pass true, fails kosong.",
+  "kriteria": "Terpenuhi sebagai struktur: Tabel 2 per tingkatan dengan kolom Keterampilan, Pengetahuan, Perilaku; Tabel 1 memetakan jabatan ke tingkatan; butir 4.2 menyatakan kompetensi wajib bagi pemegang jabatan pada tingkatan yang sama.",
+  "audit_context": "Baris checklist tanpa fileId; notes menangani cacat HR-JA-001 bagian 5 butir 2, 4, 11, 13 dan sintesis baris 717."
+ }
+}

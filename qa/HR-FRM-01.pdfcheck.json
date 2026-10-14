@@ -1,0 +1,24 @@
+{
+  "verdict": "PASS",
+  "pages": 9,
+  "checks": {
+    "A": "ok: sampul FORM / DEPARTMENT HUMAN RESOURCES / Employee Competency Matrix di tengah; 'No : SNX-HR-FRM-01' sama dengan Document Number; 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA; header logo SINUX + email/web; footer alamat Sinux Office + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada (italic 'Form'); label berurutan sama dengan acuan (Company Name..Review Period + baris kosong akhir); nilai terisi; Effective Date kosong; Status Draft",
+    "C": "ok: Revision History baris 00 'Draft awal untuk review dan pengesahan'; Approval 3 baris nama/jabatan terisi (Sita Nadia Salsabila Widodo/HRGA Officer, Aziz Priyo Widakdo/HR Manager, Samuel Kristanto Utomo/President Director); kolom Signature kosong",
+    "D": "ok: daftar isi Preliminary Section + 1-11 cocok dengan heading badan (Tujuan..Kesimpulan)",
+    "E": "ok: bagian bernomor bold kapital seperti acuan, subjudul 8.1/8.2 bergaya acuan 3.1, tabel grid header bold; tidak ada diagram/bagan",
+    "F": "ok: semua header kolom tampil; teks sel tidak terpotong (dicek 110 dpi hal 5,7,8); lebar kolom wajar; sel kosong hanya kolom isian form (Tabel 1 Tingkatan/Sertifikasi/Dasar, Tabel 2 seluruh baris) sesuai butir 7.3-7.8",
+    "H": "ok: 'RESTRICTED (Internal) | Page/ Halaman - N' di footer hal 1-9; nomor halaman berurutan 1-9",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan; nol placeholder [..]; nol teks instruksi template; tidak ada halaman kosong",
+    "J": "ok: urutan sampul > Identity > Revision/Approval > TOC > badan sama dengan acuan; gaya heading, tabel, posisi header/footer sama"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Hal 7-8: baris JA-04 Tabel 1 pecah antarhalaman ('VP Tech Operation' / 'and Services' dengan sel Kode kosong di hal 8); header Tabel 1 tidak diulang di hal 8",
+    "Hal 8-9: baris ISO/IEC 27001:2022 klausul 7.2 di tabel Acuan Klausul ISO pecah antarhalaman ('ISO/IEC' / '27001:2022')",
+    "Hal 8-9: sel 'Hubungan dengan form ini' rata kiri-kanan sehingga spasi antarkata melebar",
+    "Footer memakai 'RESTRICTED (Internal)' (huruf kecil 'Internal'), bukan 'RESTRICTED (INTERNAL)'; konsisten dengan field Classification. Acuan Generik tidak memuat label klasifikasi di footer",
+    "Isi (bukan tata letak): JA-08 dan JA-09 sama-sama 'Legal & Compliance', dan beberapa nama di kolom Jabatan berbentuk nama unit (Finance, Accounting & Tax, Brand & Marketing). Perlu dicek terhadap SNX-HR-ORG-01",
+    "Hal 5: tabel Definisi berakhir tepat di atas footer (tidak menimpa)"
+  ]
+}
