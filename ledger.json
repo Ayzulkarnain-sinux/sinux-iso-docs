@@ -1,0 +1,2103 @@
+{
+ "wo": "WO-ISO-01 FINAL rev 1",
+ "runbook": "v19-e",
+ "defaults_version": "v21",
+ "started_at": "2026-10-14T19:01:00Z",
+ "current_wave": "W0",
+ "last_guide_seen": 0,
+ "watchdog_trigger_id": null,
+ "gaspol": false,
+ "tech_fixes": [],
+ "env_fixes": [
+  {
+   "at": "2026-10-14T19:05Z",
+   "what": "apt-get install graphviz (dot 2.43.0): container baru tanpa biner dot; selftest awal 2/6 OK, sesudah pasang 6/6 OK",
+   "evidence": "reports/W0-selftest.txt"
+  }
+ ],
+ "ooxml_validator": "/mnt/skills/public/docx/scripts/office/validate.py",
+ "promoted": [
+  {
+   "row": 27,
+   "title": "SOP Accounting and Financial Report",
+   "key": "FAT-SOP-06",
+   "number": "SNX-FAT-SOP-06",
+   "jenis": "SOP",
+   "mode": "sop",
+   "classification": "INTERNAL",
+   "sources": [
+    "18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs"
+   ],
+   "src_mtime": "2026-10-14T10:51:01.134Z",
+   "wave": "W7b"
+  },
+  {
+   "row": 29,
+   "title": "Billing & Collection Monitoring Register",
+   "key": "FAT-REG-01",
+   "number": "SNX-FAT-REG-01",
+   "jenis": "REG",
+   "mode": "xlsx",
+   "classification": "RESTRICTED (Internal)",
+   "sources": [
+    "1Z9PXCiBgb8c13TGx8BG3ajlbxNEDWMg6KaSy0mi7ehQ"
+   ],
+   "src_mtime": "2026-10-14T08:07:21.851Z",
+   "wave": "W7b"
+  },
+  {
+   "row": 32,
+   "title": "Financial Information Access Authorization Records",
+   "key": "FAT-FRM-02",
+   "number": "SNX-FAT-FRM-02",
+   "jenis": "FRM",
+   "mode": "xlsx",
+   "classification": "RESTRICTED (Internal)",
+   "sources": [
+    "1UqQ-hYKjAFNhevDwOoF59YQXLHjeFBR7UBHKoSA233k"
+   ],
+   "src_mtime": "2026-10-14T09:11:45.648Z",
+   "wave": "W7b"
+  }
+ ],
+ "checklist": {
+  "fileId": "1zlA3Eztm08xkL_V23S5yPhiti-pgOj_T296uUI-stmY",
+  "modifiedTime": "2026-10-14T17:47:13.611Z",
+  "live_rows": 87,
+  "worklist_rows": 88
+ },
+ "prompt_addendum": "Tambahan mutu bahasa (permintaan owner: humanize, tanpa AI slop; turunan skill antislop-copywriting, melengkapi RUNBOOK §6a, tidak menggantikannya):\n- Spesifik hanya dari sumber. Jangan menambah fakta, angka, nama, tanggal, atau sistem agar teks terdengar meyakinkan; bila tidak ada sumber, tulis versi polos atau beri label (USULAN).\n- Hindari: atribusi kabur (\"praktik terbaik industri\", \"para ahli\") tanpa sumber; frasa otoritas semu (\"pada intinya\", \"yang terpenting\", \"secara fundamental\"); benda diberi kata kerja manusia (\"sistem memutuskan\", \"data menunjukkan bahwa kita\"); kelompok tiga yang dipaksakan; ekor penegas (\"tanpa terkecuali\", \"tanpa kompromi\"); rentang palsu (\"dari hulu ke hilir\", \"dari awal hingga akhir dan segala di antaranya\"); sinonim berganti untuk satu hal; tebal, huruf kapital, atau tanda kutip untuk penekanan; frasa pengisi (\"dalam rangka\", \"adapun\", \"perlu diketahui\", \"hal ini dikarenakan\"); lindung nilai bertumpuk (\"dapat berpotensi\"); penutup positif generik.\n- Panjang kalimat bervariasi wajar; langkah prosedur tetap satu tindakan, satu pelaku.\n- T1: suara tim dipertahankan; kalimat tim yang sudah jelas tidak diganti hanya agar terdengar rapi.\n- Em-dash dilarang; en-dash tidak dipakai sebagai penyambung kalimat (untuk rentang tulis \"sampai\").\n",
+ "counts": {},
+ "docs": [
+  {
+   "wl_index": 0,
+   "checklist_row": 84,
+   "key": "ISMS-SOP-02",
+   "wave": "W0",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "IN_PROGRESS",
+   "number": "SNX-ISMS-SOP-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1JoSiwoMglIxy7Ic3t0EhRfvzJgf5ydzT"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": "2026-10-14T19:12Z"
+  },
+  {
+   "wl_index": 1,
+   "checklist_row": 21,
+   "key": "HR-ORG-01",
+   "wave": "W1",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-HR-ORG-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1FaPdUww5zNl0O9ZyYg2_Z2nCoU7QMsEg"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [
+    "Checklist kini menautkan berkas 1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0 yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
+   ],
+   "updated_at": null
+  },
+  {
+   "wl_index": 2,
+   "checklist_row": 8,
+   "key": "HR-JA-01",
+   "wave": "W1",
+   "dept": "HR",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-HR-JA-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    },
+    {
+     "id": "1Mv6TuLy8QsllpA4YTTjmNg7Hsur4yWiL"
+    },
+    {
+     "id": "1dOku3703JwQCVeC39tl9x6k0FMa4f3nW"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [
+    "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
+   ],
+   "updated_at": null
+  },
+  {
+   "wl_index": 3,
+   "checklist_row": 62,
+   "key": "OPS-PRC-01",
+   "wave": "W2",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-OPS-PRC-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "15GrP-ihMm6MC5szQqlAgGlmWjnQ5TmH0"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 4,
+   "checklist_row": 63,
+   "key": "OPS-SOP-01",
+   "wave": "W2",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-OPS-SOP-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1lv4ALJnqGG9s9cHnzz38yOTJC57pmPgo"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 5,
+   "checklist_row": 64,
+   "key": "OPS-SOP-02",
+   "wave": "W2",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-OPS-SOP-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "15FTuu06HTHoF-Vi0qzqvwmfQH5tEdT63"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 6,
+   "checklist_row": 65,
+   "key": "OPS-SOP-03",
+   "wave": "W2",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-OPS-SOP-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "10odQYr4B2cyaAX9Z98EKxv4HUjgwIoYc"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 7,
+   "checklist_row": 66,
+   "key": "OPS-SOP-04",
+   "wave": "W2",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-OPS-SOP-04",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1p9vcA1Sj6xHIbpuIS1Lb8uBTisv2WeuG"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 8,
+   "checklist_row": 67,
+   "key": "OPS-SOP-05",
+   "wave": "W2",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-OPS-SOP-05",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1S4RFEDaTYU9mZYWjHHbYBfo8SRgBAq9-"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 9,
+   "checklist_row": 79,
+   "key": "ISMS-PRO-01",
+   "wave": "W2",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-PRO-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 10,
+   "checklist_row": 83,
+   "key": "ISMS-SOP-01",
+   "wave": "W2",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-SOP-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1MApsp9RPPMO1Xottjb2fGQJlaQas2M99"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 11,
+   "checklist_row": 86,
+   "key": "ISMS-SOP-03",
+   "wave": "W2",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-SOP-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1z6y_n2i6cTN6C1y7alJsCasuy9hU6Qzc"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 12,
+   "checklist_row": 88,
+   "key": "ISMS-SOP-04",
+   "wave": "W2",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-SOP-04",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1L6fR1mUiCePwKjyrpSPOrCz-6FpJbDpg"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 13,
+   "checklist_row": 89,
+   "key": "ISMS-SOP-05",
+   "wave": "W2",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-SOP-05",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "160t8vg9Eb_ItxjLuWxLG17OIAKpxSsKC"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 14,
+   "checklist_row": 91,
+   "key": "ISMS-PLN-01",
+   "wave": "W2",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-PLN-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1vwD5tORDQNQ7SNaQ6w4KitPKTcsw9ZVX"
+    },
+    {
+     "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv"
+    },
+    {
+     "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [
+    "Checklist baris 91 menautkan berkas ISMS-FRM-02 (1ILWYIkw...), bukan PLN-01; dipakai sumber worklist 1vwD5tOR... (SNX-ISMS-PLN-01_Business_Continuity_IT_Recovery_Plan.docx)."
+   ],
+   "updated_at": null
+  },
+  {
+   "wl_index": 15,
+   "checklist_row": 23,
+   "key": "FAT-SOP-01",
+   "wave": "W3",
+   "dept": "FAT",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-FAT-SOP-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 16,
+   "checklist_row": 28,
+   "key": "FAT-SOP-05",
+   "wave": "W3",
+   "dept": "FAT",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-FAT-SOP-05",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1iMKby6u4X8MYyGlrC5qz73D0y2anOv87"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 17,
+   "checklist_row": 34,
+   "key": "LEG-SOP-01",
+   "wave": "W3",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-LEG-SOP-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 18,
+   "checklist_row": 37,
+   "key": "LEG-SOP-02",
+   "wave": "W3",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-LEG-SOP-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1E_8SkaHZo8txljia4JhWjRHakimojRCpwivZzrPyamE"
+    },
+    {
+     "id": "19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 19,
+   "checklist_row": 47,
+   "key": "COM-SOP-01",
+   "wave": "W3",
+   "dept": "COM",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-COM-SOP-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "19Hex8udn1JDG4NKY7hZaODjroHeHwMM0"
+    },
+    {
+     "id": "16TIN9Tsv_sBXMrL4KHeO8f6Ao0F-KsAS",
+     "title": "Commercial Onboarding. Jul 2026.pdf (bahan pendukung, tautan kedua checklist baris 47)"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 20,
+   "checklist_row": 16,
+   "key": "HR-SOP-08",
+   "wave": "W3",
+   "dept": "HR",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-HR-SOP-08",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1i2JaRaQolbKxKL9HjDao2s4F0bzma9-Z"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 21,
+   "checklist_row": 17,
+   "key": "HR-SOP-10",
+   "wave": "W4",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-HR-SOP-10",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 22,
+   "checklist_row": 18,
+   "key": "HR-SOP-11",
+   "wave": "W4",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-HR-SOP-11",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 23,
+   "checklist_row": 19,
+   "key": "HR-SOP-12",
+   "wave": "W4",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-HR-SOP-12",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 24,
+   "checklist_row": 20,
+   "key": "HR-SOP-13",
+   "wave": "W4",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-HR-SOP-13",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 25,
+   "checklist_row": 26,
+   "key": "FAT-SOP-04",
+   "wave": "W4",
+   "dept": "FAT",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-FAT-SOP-04",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io"
+    },
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 26,
+   "checklist_row": 38,
+   "key": "LEG-SOP-03",
+   "wave": "W4",
+   "dept": "LEG",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-LEG-SOP-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0",
+     "modifiedTime": "2026-10-14T10:26:59.642Z",
+     "title": "SOP Legal Document Control & Retention (draf tim, ditemukan W0)"
+    },
+    {
+     "id": "19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb"
+    },
+    {
+     "id": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io"
+    },
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [
+    "Draf tim baru ditemukan di folder Dep. Legal (dibuat 2026-10-14T09:13Z) tanpa tautan di checklist; dipakai sebagai sumber utama (RUNBOOK §6 prioritas dokumen tim terbaru)."
+   ],
+   "updated_at": null
+  },
+  {
+   "wl_index": 27,
+   "checklist_row": 49,
+   "key": "COM-SOP-02",
+   "wave": "W4",
+   "dept": "COM",
+   "action": "T2",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-COM-SOP-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "19Hex8udn1JDG4NKY7hZaODjroHeHwMM0"
+    },
+    {
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 28,
+   "checklist_row": 68,
+   "key": "OPS-FRM-01",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1q0cl8mLlUDJ-7nvnzozSbjJhE46-Jk-3"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 29,
+   "checklist_row": 69,
+   "key": "OPS-FRM-02",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1XvfQ5yYx4H8Y-rgJUKyngfZfn7909L2D"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 30,
+   "checklist_row": 70,
+   "key": "OPS-FRM-03",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "147U5gBLjtLKHau5cQbLUym8iInh2b_RR"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 31,
+   "checklist_row": 71,
+   "key": "OPS-FRM-04",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-04",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1u5P_nturbvTvvi3hSrCy3ZfAIyiXCqWZ"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 32,
+   "checklist_row": 72,
+   "key": "OPS-FRM-05",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-05",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1mTi4unyn2xST8h_ChsS_2w1xTWzSBROs"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 33,
+   "checklist_row": 73,
+   "key": "OPS-FRM-06",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-06",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1BPtjct3hNbhlUILJ7FTm4EX-_Vhk-KUb"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 34,
+   "checklist_row": 74,
+   "key": "OPS-FRM-07",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-07",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1jrnarc0yyoZhx2MLACZePMNEe0-jb3ZB"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 35,
+   "checklist_row": 75,
+   "key": "OPS-FRM-08",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-08",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1E0-sXiP8r-lS34-PVvt3RYRT04O56Lnz"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 36,
+   "checklist_row": 76,
+   "key": "OPS-FRM-09",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-09",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "14o0dFUVZU-ieDbrLFQXTzwmNIL4SAftF"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 37,
+   "checklist_row": 77,
+   "key": "OPS-FRM-10",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-OPS-FRM-10",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1XFMQDye_WWWomRpwmT6KGMRdi4EVbRsS"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 38,
+   "checklist_row": 93,
+   "key": "OPS-RPT-01",
+   "wave": "W5",
+   "dept": "OPS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-OPS-RPT-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1rSuMH8wK5BTGUHLm8KjGig1LZOKWcECO"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 39,
+   "checklist_row": 78,
+   "key": "ISMS-REG-01",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-REG-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1mMx6v0UhAWMQU6I6rAfsZz20nsjv-FkP"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 40,
+   "checklist_row": 80,
+   "key": "ISMS-REG-02",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-REG-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1skCiIY43Vz6qfT71vEKz55EZFGHVCl4Q"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 41,
+   "checklist_row": 81,
+   "key": "ISMS-REG-03",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-REG-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1NdkQrRWevHXuH9thxmoTPsRIf0wNl-MJ"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 42,
+   "checklist_row": 85,
+   "key": "ISMS-REG-04",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-REG-04",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "14JtND6eqCuvufrVoPDzKJyrHp4eQsGjT"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 43,
+   "checklist_row": 87,
+   "key": "ISMS-FRM-01",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-FRM-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1J436lMZJSgowkEeMD6m45N70h7Go6_ZV"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 44,
+   "checklist_row": 90,
+   "key": "ISMS-FRM-02",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-FRM-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 45,
+   "checklist_row": 92,
+   "key": "ISMS-FRM-03",
+   "wave": "W5",
+   "dept": "ISMS",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-ISMS-FRM-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 46,
+   "checklist_row": 40,
+   "key": "LEG-REG-01",
+   "wave": "W6",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-REG-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1a1hDz9zwdRHBAHaU9wALSdg66R4bD8mGD-86TyzJewk"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 47,
+   "checklist_row": 41,
+   "key": "LEG-FRM-01",
+   "wave": "W6",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-FRM-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1lsdhtFZrf7bdckagXYtEXxmIyRw3jNw-28iXJpoTeaY"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 48,
+   "checklist_row": 42,
+   "key": "LEG-FRM-02",
+   "wave": "W6",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-FRM-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1xU1pbum660ZzBCuTA5klCyAVK1iWonLCY0NOejqSlHg"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 49,
+   "checklist_row": 44,
+   "key": "LEG-FRM-03",
+   "wave": "W6",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-FRM-03",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1m9mIkrMmiIY4TNmbV7j_rRuXKPUnfiK_EP80myS6lN8"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 50,
+   "checklist_row": 45,
+   "key": "LEG-REG-02",
+   "wave": "W6",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-REG-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1ysIL0ytnspFGsYpSolSnuBpCG_MFE9IoiTJIhWfIIhA"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 51,
+   "checklist_row": 46,
+   "key": "LEG-RPT-01",
+   "wave": "W6",
+   "dept": "LEG",
+   "action": "T1",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-RPT-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 52,
+   "checklist_row": 9,
+   "key": "HR-FRM-01",
+   "wave": "W7",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-HR-FRM-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 53,
+   "checklist_row": 10,
+   "key": "HR-FRM-02",
+   "wave": "W7",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-HR-FRM-02",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 54,
+   "checklist_row": 11,
+   "key": "HR-RPT-01",
+   "wave": "W7",
+   "dept": "HR",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-HR-RPT-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 55,
+   "checklist_row": 30,
+   "key": "FAT-FRM-01",
+   "wave": "W7",
+   "dept": "FAT",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-FAT-FRM-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 56,
+   "checklist_row": 33,
+   "key": "FAT-RPT-02",
+   "wave": "W7",
+   "dept": "FAT",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-FAT-RPT-02",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 57,
+   "checklist_row": 35,
+   "key": "LEG-REG-03",
+   "wave": "W7",
+   "dept": "LEG",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-REG-03",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 58,
+   "checklist_row": 36,
+   "key": "LEG-RPT-02",
+   "wave": "W7",
+   "dept": "LEG",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-RPT-02",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 59,
+   "checklist_row": 39,
+   "key": "LEG-REG-04",
+   "wave": "W7",
+   "dept": "LEG",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-LEG-REG-04",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 60,
+   "checklist_row": 52,
+   "key": "COM-FRM-01",
+   "wave": "W7",
+   "dept": "COM",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-COM-FRM-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 61,
+   "checklist_row": 53,
+   "key": "COM-FRM-02",
+   "wave": "W7",
+   "dept": "COM",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-COM-FRM-02",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 62,
+   "checklist_row": 54,
+   "key": "COM-REG-01",
+   "wave": "W7",
+   "dept": "COM",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-COM-REG-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 63,
+   "checklist_row": 56,
+   "key": "MKT-RPT-01",
+   "wave": "W7",
+   "dept": "MKT",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-MKT-RPT-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 64,
+   "checklist_row": 57,
+   "key": "MKT-REG-01",
+   "wave": "W7",
+   "dept": "MKT",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-MKT-REG-01",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 65,
+   "checklist_row": 58,
+   "key": "MKT-REG-02",
+   "wave": "W7",
+   "dept": "MKT",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-MKT-REG-02",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 66,
+   "checklist_row": 59,
+   "key": "MKT-REG-03",
+   "wave": "W7",
+   "dept": "MKT",
+   "action": "T2",
+   "mode": "generic",
+   "state": "QUEUED",
+   "number": "SNX-MKT-REG-03",
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 67,
+   "checklist_row": 3,
+   "key": "HOLD-R3",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 68,
+   "checklist_row": 4,
+   "key": "HOLD-R4",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 69,
+   "checklist_row": 5,
+   "key": "HOLD-R5",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 70,
+   "checklist_row": 6,
+   "key": "HOLD-R6",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 71,
+   "checklist_row": 7,
+   "key": "HOLD-R7",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 72,
+   "checklist_row": 12,
+   "key": "HOLD-R12",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 73,
+   "checklist_row": 13,
+   "key": "HOLD-R13",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 74,
+   "checklist_row": 14,
+   "key": "HOLD-R14",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 75,
+   "checklist_row": 15,
+   "key": "HOLD-R15",
+   "wave": "HOLD-T3",
+   "dept": "HR",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 76,
+   "checklist_row": 24,
+   "key": "HOLD-R24",
+   "wave": "HOLD-T3",
+   "dept": "FAT",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 77,
+   "checklist_row": 25,
+   "key": "HOLD-R25",
+   "wave": "HOLD-T3",
+   "dept": "FAT",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 78,
+   "checklist_row": 27,
+   "key": "FAT-SOP-06",
+   "wave": "W7b",
+   "dept": "FAT",
+   "action": "T1",
+   "mode": "sop",
+   "state": "QUEUED",
+   "number": "SNX-FAT-SOP-06",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs",
+     "modifiedTime": "2026-10-14T10:51:01.134Z",
+     "title": "5. SOP Accounting & Financial Report"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null,
+   "classification": "INTERNAL",
+   "promoted_from": "HOLD-T3"
+  },
+  {
+   "wl_index": 79,
+   "checklist_row": 29,
+   "key": "FAT-REG-01",
+   "wave": "W7b",
+   "dept": "FAT",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-FAT-REG-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1Z9PXCiBgb8c13TGx8BG3ajlbxNEDWMg6KaSy0mi7ehQ",
+     "modifiedTime": "2026-10-14T08:07:21.851Z",
+     "title": "7. Billing & Collection Monitoring Register"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null,
+   "classification": "RESTRICTED (Internal)",
+   "promoted_from": "HOLD-T3"
+  },
+  {
+   "wl_index": 80,
+   "checklist_row": 31,
+   "key": "HOLD-R31",
+   "wave": "HOLD-T3",
+   "dept": "FAT",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 81,
+   "checklist_row": 32,
+   "key": "FAT-FRM-02",
+   "wave": "W7b",
+   "dept": "FAT",
+   "action": "T1",
+   "mode": "xlsx",
+   "state": "QUEUED",
+   "number": "SNX-FAT-FRM-02",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1UqQ-hYKjAFNhevDwOoF59YQXLHjeFBR7UBHKoSA233k",
+     "modifiedTime": "2026-10-14T09:11:45.648Z",
+     "title": "10. Financial Information Access Authorization Records"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null,
+   "classification": "RESTRICTED (Internal)",
+   "promoted_from": "HOLD-T3"
+  },
+  {
+   "wl_index": 82,
+   "checklist_row": null,
+   "key": "HOLD-FAT-KPI",
+   "wave": "HOLD-T3",
+   "dept": "FAT",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [
+    "Baris \"FAT KPI & Performance Monitoring Report\" tidak ada lagi di checklist live (modifiedTime 2026-10-14T17:47:13Z; dua kanal: ekspor xlsx dan csv). Konfirmasi tim: dihapus atau dipindah."
+   ],
+   "updated_at": null
+  },
+  {
+   "wl_index": 83,
+   "checklist_row": 43,
+   "key": "HOLD-R43",
+   "wave": "HOLD-T3",
+   "dept": "LEG",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 84,
+   "checklist_row": 50,
+   "key": "HOLD-R50",
+   "wave": "HOLD-T3",
+   "dept": "COM",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 85,
+   "checklist_row": 51,
+   "key": "HOLD-R51",
+   "wave": "HOLD-T3",
+   "dept": "COM",
+   "action": "T3",
+   "mode": null,
+   "state": "HOLD",
+   "number": null,
+   "out_path": null,
+   "sources": [],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 86,
+   "checklist_row": 82,
+   "key": "ISMS-SOA-01",
+   "wave": "K",
+   "dept": "ISMS",
+   "action": "K",
+   "mode": null,
+   "state": "SKIP",
+   "number": "SNX-ISMS-SOA-01",
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1g9Yiuv6EDJP2ikgAbpcnRVE0ZVFkLWG2"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  },
+  {
+   "wl_index": 87,
+   "checklist_row": 22,
+   "key": "HR-TEMPLATE",
+   "wave": "REF",
+   "dept": "HR",
+   "action": "REF",
+   "mode": null,
+   "state": "SKIP",
+   "number": null,
+   "out_path": null,
+   "sources": [
+    {
+     "id": "1n6iPAh7yXLadDkY-bwnuDz9D3fNhBodQ"
+    }
+   ],
+   "lint_pass": null,
+   "verify_verdict": null,
+   "loops": 0,
+   "usulan_count": 0,
+   "open_items": [],
+   "updated_at": null
+  }
+ ]
+}
