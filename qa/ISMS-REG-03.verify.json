@@ -1,0 +1,46 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Kontrol Dokumen B22",
+   "masalah": "\"knowledge base SINUX\" dipertahankan dari teks tim. Tidak masuk daftar larangan RUNBOOK §0 butir 6, tetapi auditor bisa membacanya sebagai rujukan sistem internal yang tidak dijelaskan.",
+   "bukti": "B22: \"Usulan awal Divisi Operation dari riwayat operasi di knowledge base SINUX; wajib divalidasi ISMS Coordinator dan pemilik risiko.\" Sudah dicatat di notes/ISMS-REG-03.md Open item 8."
+  },
+  {
+   "lokasi": "Rencana Penanganan baris 6 (RTP-002) dan baris 9 (RTP-005); Kontrol Dokumen B20",
+   "masalah": "Dua residual masih Tinggi (skor 12 dan 10). Dokumen tidak menyebut siapa yang berwenang menerimanya. B20 menyebut pemilik risiko, sedangkan REG-02 Matriks Risiko B24 menyebut COO untuk level Kritis, dan RTP-002 berlevel awal Kritis.",
+   "bukti": "L6=3, M6=4; L9=2, M9=5 (sama dengan sumber Drive). REG-02 out B24: \"penerimaan risiko hanya oleh COO secara tertulis\". Sudah dijelaskan di notes USULAN 3 dan 6 serta Open item 5."
+  },
+  {
+   "lokasi": "Rencana Penanganan H11",
+   "masalah": "Pemilik \"Tech dan Product\" adalah nama fungsi dan tidak ada sebagai peran di Struktur Organisasi. Empat peran pemilik lain beserta ISMS Coordinator ada di HR-ORG-01.",
+   "bukti": "specs/HR-ORG-01.json: \"Tech dan Product\" 0 kemunculan, \"Manager of Product Tech\" 3. REG-02 out K11 juga menulis \"Tech dan Product\", jadi kedua dokumen tetap sama. Sudah dicatat di notes USULAN 4."
+  },
+  {
+   "lokasi": "Rencana Penanganan C12",
+   "masalah": "\"ticketing system\" tidak menyebut sistemnya. RUNBOOK §6 menetapkan Zammad untuk Ops dan GLPI untuk generalist, dan §6a butir 3 meminta nama sistem disebut.",
+   "bukti": "C12: \"Alert atau notifikasi tidak sampai ke manusia: Notifikasi ticketing system dan monitoring\" (teks tim, sama dengan sumber). Sudah dicatat di notes USULAN 5."
+  },
+  {
+   "lokasi": "Kontrol Dokumen B18 dan Rencana Penanganan F5:F19",
+   "masalah": "Cara pakai butir 1 meminta satu baris per tindakan, tetapi tiap baris RTP memuat dua sampai empat tindakan.",
+   "bukti": "B18: \"Satu baris per tindakan penanganan\"; F5: \"Migrasikan ..., rotasi ..., hapus sumber lama\". Sudah dicatat di notes Open item 7."
+  },
+  {
+   "lokasi": "Kontrol Dokumen B19, B26; Rencana Penanganan A2",
+   "masalah": "§6a butir 1: ada kalimat tanpa pelaku, dan B19 berbunyi telegrafis. Peran yang mengubah nilai dan yang menetapkan usulan sebenarnya diketahui, yaitu pemilik risiko dan ISMS Coordinator.",
+   "bukti": "B19: \"... ubah setelah tindakan selesai. Level otomatis.\"; A2: \"... ditetapkan bersama pemilik risiko.\"; B26: \"... belum divalidasi\". Pelanggaran ringan dan tidak berulang di sel isi."
+  },
+  {
+   "lokasi": "Rencana Penanganan H4 vs Kontrol Dokumen B20, B22, A2",
+   "masalah": "Istilah sedikit bergeser. Header kolom H berbunyi \"Pemilik\", padahal di teks lain tertulis \"pemilik risiko\". C15 menulis \"Data RESTRICTED internal\", sedangkan label baku tingkatnya \"RESTRICTED (Internal)\".",
+   "bukti": "H4 \"Pemilik\"; B20 \"pemilik risiko\"; C15 \"Data RESTRICTED internal dan pelanggan\" (teks tim)."
+  },
+  {
+   "lokasi": "Rencana Penanganan P:Q; Kontrol Dokumen B14",
+   "masalah": "Klausul 6.1.3 juga mensyaratkan persetujuan pemilik risiko atas rencananya. Dokumen hanya menyediakan kolom penerimaan residual, tanpa medan persetujuan rencana. Masa simpan untuk bukti penerimaan juga tidak ada.",
+   "bukti": "Header P4 \"Diterima oleh\", Q4 \"Tgl penerimaan\"; B14 \"Berlaku sampai digantikan\". Kolom I, P, Q, R kosong sesuai sumber (RUNBOOK §6 melarang mengarang). Sudah dicatat di notes Open item 1 dan 4."
+  }
+ ]
+}

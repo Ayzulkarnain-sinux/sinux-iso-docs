@@ -5,7 +5,7 @@
  "started_at": "2026-10-14T19:01:00Z",
  "current_wave": "W2",
  "last_guide_seen": 0,
- "watchdog_trigger_id": "trig_01QakyzYaYqZVYE4QkuZLaqq",
+ "watchdog_trigger_id": "trig_01KHvJMD5Qot3NTrM6vN6HWS",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -201,7 +201,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-PRC-01",
    "out_path": null,
    "sources": [
@@ -226,7 +226,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:59:46Z",
+   "pen_agent": "aec5c163a887d4bfe"
   },
   {
    "wl_index": 4,
@@ -236,7 +237,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-SOP-01",
    "out_path": null,
    "sources": [
@@ -261,7 +262,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:59:46Z",
+   "pen_agent": "a8af874bc72855d0f"
   },
   {
    "wl_index": 5,
@@ -271,7 +273,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-SOP-02",
    "out_path": null,
    "sources": [
@@ -296,7 +298,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:59:46Z",
+   "pen_agent": "a9ac26f8293dae3ca"
   },
   {
    "wl_index": 6,
@@ -1330,7 +1333,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-ISMS-REG-03",
    "out_path": "out/08_ISMS/SNX-ISMS-REG-03 IS Risk Treatment Plan (Rev00 DRAFT).xlsx",
    "sources": [
@@ -1341,13 +1344,13 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": "7",
    "open_items": [
     "15 baris biru dipertahankan sebagai usulan awal tim (bukan CONTOH), konsisten dengan REG-02; LEAD/Fani memutus bila dianggap dummy."
    ],
-   "updated_at": "2026-10-14T21:57:34Z",
+   "updated_at": "2026-10-14T22:00:31Z",
    "pen_agent": "aae60d8571cf17ea2"
   },
   {
@@ -1384,9 +1387,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-FRM-01",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-FRM-01 Backup Log Restore Testing Records (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1J436lMZJSgowkEeMD6m45N70h7Go6_ZV",
@@ -1394,12 +1397,12 @@
      "title": "SNX-ISMS-FRM-01_Backup_Log_Restore_Testing_Records.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:53:04Z",
+   "updated_at": "2026-10-14T21:59:27Z",
    "pen_agent": "ae0edabde24bd95e6"
   },
   {
