@@ -947,9 +947,10 @@
    "usulan_count": 57,
    "open_items": [
     "Sweep (c): mutasi lokasi saja membuat Atasan Langsung Asal = Tujuan, pemisahan peran 4.3 perlu aturan pengganti (verify nonblocking)",
-    "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi"
+    "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi",
+    "Sweep (c): r2 nonblocking, definisi divisi dan rotasi bertabrakan dengan HR-SOP-12 (NOC ke SOC bisa terbaca rotasi sekaligus mutasi)"
    ],
-   "updated_at": "2026-10-14T23:27:05Z",
+   "updated_at": "2026-10-14T23:27:07Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED"
   },
@@ -1001,7 +1002,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-SOP-03",
    "out_path": "out/04_Legal/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
@@ -1027,13 +1028,13 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 44,
    "open_items": [
     "Draf tim baru ditemukan di folder Dep. Legal (dibuat 2026-10-14T09:13Z) tanpa tautan di checklist; dipakai sebagai sumber utama (RUNBOOK §6 prioritas dokumen tim terbaru)."
    ],
-   "updated_at": "2026-10-14T23:26:42Z",
+   "updated_at": "2026-10-14T23:30:09Z",
    "pen_agent": "ab097b242b2cce31c",
    "ooxml": "PASSED"
   },
@@ -1045,9 +1046,9 @@
    "dept": "COM",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-SOP-02",
-   "out_path": null,
+   "out_path": "out/05_Commercial/SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "19Hex8udn1JDG4NKY7hZaODjroHeHwMM0",
@@ -1060,13 +1061,14 @@
      "title": "SINUX_Job_Analysis_2026.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 12,
    "open_items": [],
-   "updated_at": "2026-10-14T23:13:09Z",
-   "pen_agent": "a047bde100d8c7081"
+   "updated_at": "2026-10-14T23:30:01Z",
+   "pen_agent": "a047bde100d8c7081",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 28,
@@ -1686,7 +1688,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-RPT-01",
    "out_path": null,
    "sources": [
@@ -1701,7 +1703,7 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": "2026-10-14T23:27:05Z"
+   "updated_at": "2026-10-14T23:30:01Z"
   },
   {
    "wl_index": 52,
@@ -2478,7 +2480,23 @@
   },
   {
    "task": "Konsistensi lintas HR-SOP-10/11/12/13 (Promotion, Demotion, Rotation, Mutation): satu rumusan batas antar-SOP, penetap keputusan, dan istilah; perbaiki lewat penyusun masing-masing bila beda.",
-   "added": "2026-10-14T23:10Z"
+   "added": "2026-10-14T23:10Z",
+   "brief": {
+    "pemutus_seragam": "Direktur Utama menetapkan keputusan di keempat SOP (sudah seragam, 23:30Z dicek dari policy 4.4/4.6).",
+    "batas_rotasi_mutasi": "Kalimat identik di HR-SOP-12 dan HR-SOP-13 (bagian 2 Scope atau 4.x): \"Batas rotasi dan mutasi: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula sesudah masa rotasi, adalah rotasi (SNX-HR-SOP-12). Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain adalah mutasi (SNX-HR-SOP-13) (USULAN).\" HR-SOP-10 dan HR-SOP-11 merujuk kalimat yang sama pada pengecualian scope bila perlu.",
+    "istilah": "Nama peran \"Atasan Langsung Asal\" dan \"Atasan Langsung Tujuan\" (kapital, seperti HR-SOP-13) di HR-SOP-12.",
+    "per_dokumen": {
+     "HR-SOP-10": "Atasan Langsung 6.4; label konsultan",
+     "HR-SOP-11": "qa/HR-SOP-11.verify.json nonblocking (kasus HRGA Officer bagian 9 vs 4.4; serah terima 6.3 ke 6.4)",
+     "HR-SOP-12": "qa/HR-SOP-12.verify.json nonblocking (4.2 label USULAN; pasif; sinonim)",
+     "HR-SOP-13": "qa/HR-SOP-13.verify.json nonblocking (definisi divisi vs rotasi)"
+    },
+    "pen_agents": {
+     "HR-SOP-11": "a2cb5b7e1e129cb63",
+     "HR-SOP-12": "a03372a682640aa2e",
+     "HR-SOP-13": "aec5ea3082629635b"
+    }
+   }
   },
   {
    "task": "QA W8: pindai halaman kosong (hanya header/footer) di semua docx out/ lewat soffice+pdftotext; dokumen yang kena diperbaiki lewat isi (panjang bagian sebelum page break), bukan renderer (format terkunci).",

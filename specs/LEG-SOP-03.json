@@ -1,0 +1,727 @@
+{
+ "meta": {
+  "doc_key": "LEG-SOP-03",
+  "number": "SNX-LEG-SOP-03",
+  "department": "Legal",
+  "title": "Legal Document Control & Retention",
+  "process_owner": "Departemen Legal",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Staff Legal",
+   "reviewed": "Line Manager Legal",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini menetapkan cara Departemen Legal SINUX mengendalikan dokumen legal: pengelolaan versi, penyimpanan, akses, masa retensi, dan pemusnahan.",
+  "Hasil yang dijaga: dokumen legal tersedia saat diperlukan, terjaga keaslian dan kerahasiaannya, terlindungi dari akses atau perubahan yang tidak sah, dan dapat ditelusuri sepanjang siklus hidupnya."
+ ],
+ "scope": [
+  "SOP ini berlaku bagi Line Manager Legal, Staff Legal, dan Pemohon yang meminta akses ke dokumen legal, untuk dokumen fisik maupun elektronik. Dokumen yang tercakup dibagi dalam tujuh kategori:",
+  "Kategori 1, dokumen kontraktual: NDA, IaaS Contract, Technology Services Contract, Hardware Sale and Purchase Agreement, PKS, KSO, Subcontract, addendum, dan dokumen terkait lainnya.",
+  "Kategori 2, dokumen korporasi: akta pendirian dan perubahan, keputusan atau persetujuan Menteri Hukum, bukti penerimaan pemberitahuan, keputusan RUPS, serta dokumen Direksi dan Dewan Komisaris.",
+  "Kategori 3, dokumen perizinan dan kepatuhan: NIB, perizinan berusaha, sertifikat, persetujuan regulator, dan dokumen pendukung kepatuhan.",
+  "Kategori 4, dokumen penelaahan Legal: legal opinion, legal memorandum, hasil uji tuntas (due diligence), hasil pemeriksaan kepatuhan, dan ringkasan risiko.",
+  "Kategori 5, dokumen sengketa dan penanganan hukum: somasi, surat kuasa, dokumen perkara, korespondensi hukum, dan dokumen penyelesaian sengketa.",
+  "Kategori 6, dokumen internal Departemen Legal: SOP, instruksi kerja, template kontrak, checklist, register, laporan, dan bukti persetujuan.",
+  "Kategori 7, dokumen pelindungan data dan kerahasiaan: dokumen pemrosesan data pribadi, catatan insiden, dan dokumen terkait lainnya yang dikelola Departemen Legal.",
+  "Sistem yang dipakai: Google Drive untuk repositori elektronik (butir 4.8) dan GLPI untuk permintaan akses (butir 4.14).",
+  "Di luar scope SOP ini: pembuatan, review, dan persetujuan kontrak sebelum penandatanganan, yang diatur SNX-LEG-SOP-02; pekerjaan korporasi, perizinan, dan sengketa sebagai proses kerja, yang diatur SNX-LEG-SOP-01; dokumen milik departemen lain, misalnya dokumen keuangan (SNX-FAT-SOP-04); serta aturan tingkat klasifikasi dan penanganan informasi per tingkat, yang diatur SNX-ISMS-PRO-01."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Arsip",
+   "Subfolder Arsip di folder Google Drive departemen Legal, tempat dokumen yang masih disimpan tetapi tidak lagi dipakai aktif (USULAN)."
+  ],
+  [
+   "Departemen Legal",
+   "Line Manager Legal dan Staff Legal."
+  ],
+  [
+   "Dokumen asli",
+   "Dokumen fisik yang ditandatangani para pihak. Salinan elektronik dan salinan kertasnya bukan dokumen asli."
+  ],
+  [
+   "Dokumen Final",
+   "Dokumen yang telah menyelesaikan pemeriksaan dan persetujuan yang dipersyaratkan dan, bila relevan, telah ditandatangani para pihak atau pejabat berwenang."
+  ],
+  [
+   "Dokumen legal",
+   "Dokumen yang dibuat, diterima, ditelaah, digunakan, atau disimpan Departemen Legal sehubungan dengan kegiatan hukum, korporasi, perizinan, kontrak, kepatuhan, atau sengketa SINUX."
+  ],
+  [
+   "Dokumen Terkendali",
+   "Dokumen legal yang tercatat di register dokumen legal, sehingga versi, status, akses, dan masa retensinya dikelola menurut SOP ini."
+  ],
+  [
+   "Dokumen Tidak Berlaku",
+   "Dokumen yang telah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi digunakan untuk tujuan operasional, tetapi mungkin tetap perlu disimpan sebagai rekaman historis atau bukti hukum."
+  ],
+  [
+   "GLPI",
+   "Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation."
+  ],
+  [
+   "Kategori",
+   "Salah satu dari tujuh kelompok jenis dokumen legal yang diberi nomor di bagian 2."
+  ],
+  [
+   "Legal Hold",
+   "Penangguhan pemusnahan atau penghapusan dokumen karena dokumen itu diperlukan untuk sengketa, pemeriksaan, audit, investigasi, permintaan regulator, atau proses hukum lainnya."
+  ],
+  [
+   "Masa retensi",
+   "Jangka waktu penyimpanan dokumen sebelum dievaluasi untuk penyimpanan lebih lanjut, pemindahan ke arsip, atau pemusnahan."
+  ],
+  [
+   "Pemohon",
+   "Departemen SINUX selain Legal yang meminta akses ke dokumen legal. Istilah ini sama dengan di SNX-LEG-SOP-01."
+  ],
+  [
+   "Register dokumen legal",
+   "Catatan yang memuat identitas, versi, status, tingkat klasifikasi, lokasi simpan, dan masa retensi tiap dokumen legal. Disingkat register di SOP ini."
+  ],
+  [
+   "Repositori resmi",
+   "Lokasi simpan dokumen, elektronik atau fisik, yang SINUX tetapkan dan kendalikan aksesnya."
+  ],
+  [
+   "Tanggal pemicu",
+   "Tanggal peristiwa yang memulai penghitungan masa retensi, misalnya tanggal kontrak berakhir."
+  ],
+  [
+   "Tingkat klasifikasi",
+   "PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET menurut SNX-ISMS-PRO-01."
+  ],
+  [
+   "Versi",
+   "Bentuk satu dokumen pada satu titik perubahan isinya, ditandai nomor versi pada nama berkas."
+  ]
+ ],
+ "policy": [
+  "4.1 Staff Legal mencatat setiap dokumen legal di register dokumen legal (register) sebelum menyimpannya. Dokumen yang tidak tercatat di register bukan Dokumen Terkendali.",
+  "4.2 Register dokumen legal memuat kolom berikut: ID register, kategori (Kategori 1 sampai 7 di bagian 2), judul, pihak, nomor versi, status, tingkat klasifikasi, lokasi simpan, tanggal berlaku, tanggal berakhir, tanggal pemicu, tanggal akhir masa retensi, dan penanda Legal Hold. Register dokumen legal dipadankan dengan SNX-LEG-REG-04. Pemadanan itu dan tiga kolom retensi, yaitu tanggal pemicu, tanggal akhir masa retensi, dan penanda Legal Hold, berstatus (USULAN).",
+  "4.3 Status dokumen adalah Draft, Menunggu Tanda Tangan, Final, Tidak Berlaku, atau Dimusnahkan. Dokumen berstatus Final hanya bila memenuhi definisi Dokumen Final di bagian 3. Dokumen yang belum ditandatangani lengkap berstatus Draft atau Menunggu Tanda Tangan, dan tidak dicatat sebagai Final tanpa dasar yang memadai. Status Dimusnahkan mengikuti SNX-ISMS-SOP-04 (USULAN).",
+  "4.4 Staff Legal menamai berkas dengan pola JenisDokumen_NamaPihak_Versi_Tanggal, misalnya IaaSContract_NamaPihak_v02_20261014. Pola yang sama berlaku di SNX-LEG-SOP-02. Untuk dokumen tanpa pihak lawan, bagian NamaPihak diisi SINUX, dan untuk dokumen internal bernomor SNX, nama berkas memuat nomor dan judul dokumen (USULAN).",
+  "4.5 Staff Legal menyimpan setiap perubahan isi dokumen sebagai berkas baru dengan nomor versi berikutnya (v01, v02, dan seterusnya) dan tidak menimpa berkas lama (USULAN). Pencatatan perubahan selama negosiasi kontrak mengikuti SNX-LEG-SOP-02.",
+  "4.6 Satu dokumen hanya punya satu versi berstatus Final yang berlaku. Staff Legal mengubah status versi yang digantikan, dicabut, atau berakhir menjadi Tidak Berlaku, lalu memisahkan versi itu atau menandainya dengan jelas agar tidak tertukar dengan versi yang berlaku. Versi Tidak Berlaku tetap disimpan sebagai rekaman historis sampai masa retensinya berakhir.",
+  "4.7 Staff Legal tidak mengubah isi Dokumen Final. Perubahan atas Dokumen Final dibuat sebagai versi baru yang di-review dan disetujui ulang, atau, untuk kontrak, sebagai addendum menurut SNX-LEG-SOP-02 (USULAN).",
+  "4.8 Staff Legal menyimpan dokumen legal elektronik di repositori resmi, yaitu folder Google Drive departemen Legal (USULAN). Setiap Dokumen Final memiliki salinan elektronik di folder itu, termasuk dokumen yang aslinya fisik.",
+  "4.9 Staff Legal menamai atau mendeskripsikan folder dengan tingkat klasifikasi dokumen di dalamnya, dan Line Manager Legal mengatur izin akses folder sesuai tingkat itu menurut SNX-ISMS-PRO-01.",
+  "4.10 Staff Legal menyimpan dokumen asli di tempat aman. Akses ke dokumen asli terbatas pada Line Manager Legal dan Staff Legal (USULAN).",
+  "4.11 Staff Legal mengusulkan tingkat klasifikasi saat mencatat dokumen, dan Line Manager Legal menetapkannya. Untuk dokumen legal, Line Manager Legal berperan sebagai pemilik informasi menurut SNX-ISMS-PRO-01 (USULAN).",
+  "4.12 Tingkat dasar (USULAN): RESTRICTED (Internal) untuk dokumen legal yang memuat informasi pihak luar, kontrak, sengketa, atau data pribadi; INTERNAL untuk dokumen internal Departemen Legal tanpa informasi itu, misalnya SOP dan template; SECRET untuk dokumen yang memuat contoh SECRET di SNX-ISMS-PRO-01.",
+  "4.13 Akses ke dokumen legal diberikan berdasarkan kebutuhan kerja dan tingkat klasifikasi dokumen. Line Manager Legal menetapkan dan memberikan akses itu.",
+  "4.14 Pemohon meminta akses ke dokumen legal lewat tiket GLPI (USULAN).",
+  "4.15 Line Manager Legal mencabut akses saat peran penerima akses berakhir.",
+  "4.16 Line Manager Legal meninjau daftar akses ke folder Google Drive departemen Legal setiap semester (USULAN, mengikuti irama review akses biasa di SNX-ISMS-SOP-02).",
+  "4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim lewat kanal pribadi. Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01.",
+  "4.18 Pembagian dokumen RESTRICTED (Internal) ke pihak luar memerlukan NDA atau kontrak yang berlaku dan persetujuan Line Manager Legal sebagai pemilik informasi (USULAN). Pembagian dokumen SECRET ke pihak luar mengikuti SNX-ISMS-PRO-01.",
+  "4.19 Masa retensi dokumen legal mengikuti peraturan perundang-undangan, kontrak yang berlaku, dan kebijakan SINUX. Bila ketiganya menetapkan periode berbeda, berlaku periode terpanjang (USULAN).",
+  "4.20 Periode masa retensi tiap kategori dan tanggal pemicunya ada di tabel Rekaman bagian 11. Seluruh periode itu berstatus (USULAN) sampai diputus lewat prosedur 6.5.",
+  "4.21 Saat masa retensi berakhir, Line Manager Legal mengevaluasi dokumen: disimpan lebih lanjut, dipindahkan ke arsip, atau dimusnahkan.",
+  "4.22 Line Manager Legal menetapkan dan mencabut Legal Hold (USULAN) dan memastikan penanganannya. Dokumen bertanda Legal Hold tidak dimusnahkan atau dihapus walau masa retensinya berakhir.",
+  "4.23 Dokumen dimusnahkan hanya sesudah Line Manager Legal menyetujuinya dan bila dokumen tidak bertanda Legal Hold. Metode pemusnahan mengikuti tingkat klasifikasi dokumen di SNX-ISMS-PRO-01.",
+  "4.24 Staff Legal mencatat tiap pemusnahan dalam berita acara pemusnahan yang memuat ID register, metode, tanggal, pelaksana, dan persetujuan Line Manager Legal. Formatnya mengikuti berita acara di SNX-ISMS-SOP-04 (USULAN).",
+  "4.25 Line Manager Legal memantau penerapan SOP ini dan meninjaunya dalam batas waktu di bagian 8.",
+  "4.26 Line Manager Legal menetapkan, Staff Legal mencatat dan menjalankan, dan VP Tech Operation and Services menjalankan wipe atau penghancuran media. Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya. Pelaku langkah ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN)."
+ ],
+ "roles": [
+  [
+   "Line Manager Legal",
+   "Memimpin Departemen Legal dan memantau penerapan SOP ini. Menetapkan klasifikasi dokumen legal (6.1), menetapkan dan memberikan akses serta menyetujui pembagian ke pihak luar (6.4), mengevaluasi dokumen yang masa retensinya berakhir dan menyetujui pemusnahan (6.5), menetapkan dan mencabut Legal Hold (6.6), serta mengevaluasi dan meninjau SOP ini (6.8). Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Menetapkan klasifikasi, akses, dan Legal Hold; menyetujui pemusnahan."
+  ],
+  [
+   "Staff Legal",
+   "Melapor ke Line Manager Legal. Mencatat dokumen di register dan mengusulkan klasifikasi (6.1), menamai berkas dan mengelola versi serta status (6.1 dan 6.2), menyimpan salinan final dan dokumen asli (6.3), memeriksa register setiap bulan (6.5), menandai Legal Hold (6.6), dan memusnahkan dokumen yang disetujui (6.7). Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Mencatat dan menjalankan langkah pengendalian. Tidak menetapkan klasifikasi, akses, atau Legal Hold, dan tidak menyetujui pemusnahan."
+  ],
+  [
+   "Pemohon",
+   "Departemen SINUX selain Legal yang meminta akses ke dokumen legal lewat tiket GLPI dan menyebut dokumen serta kebutuhan kerjanya (6.4). Melapor ke atasan masing-masing.",
+   "Meminta akses. Tidak memberikan akses ke pihak lain."
+  ],
+  [
+   "VP Tech Operation and Services",
+   "Menjalankan wipe atau penghancuran media penyimpan atas permintaan Staff Legal (6.7). Dipetakan dari peran Unit IT/Keamanan Informasi (USULAN).",
+   "Penanggung jawab kontrol keamanan, akses, backup, dan perubahan teknis menurut SNX-HR-ORG-01. Tidak menyetujui akses atau pemusnahan dokumen legal."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Pencatatan dan Klasifikasi Dokumen Legal",
+   "intro": [],
+   "steps": [
+    [
+     "Catat dokumen legal di register dengan kolom menurut butir 4.2.",
+     "Staff Legal",
+     "Baris register dokumen legal"
+    ],
+    [
+     "Usulkan tingkat klasifikasi di register menurut butir 4.12.",
+     "Staff Legal",
+     "Usulan tingkat klasifikasi di register"
+    ],
+    [
+     "Tetapkan tingkat klasifikasi dokumen.",
+     "Line Manager Legal",
+     "Tingkat klasifikasi ditetapkan di register"
+    ],
+    [
+     "Beri nama berkas menurut butir 4.4.",
+     "Staff Legal",
+     "Berkas dengan nama baku"
+    ],
+    [
+     "Simpan berkas di folder repositori resmi yang sesuai tingkat klasifikasinya (butir 4.8 dan 4.9).",
+     "Staff Legal",
+     "Berkas di repositori resmi"
+    ],
+    [
+     "Catat lokasi simpan berkas di register.",
+     "Staff Legal",
+     "Lokasi simpan di register"
+    ]
+   ]
+  },
+  {
+   "title": "Pengelolaan Versi dan Status",
+   "intro": [],
+   "steps": [
+    [
+     "Simpan setiap perubahan isi dokumen sebagai berkas baru dengan nomor versi berikutnya (butir 4.5).",
+     "Staff Legal",
+     "Berkas versi baru"
+    ],
+    [
+     "Catat versi baru dan statusnya di register.",
+     "Staff Legal",
+     "Baris register terbarui"
+    ],
+    [
+     "Ubah status versi yang digantikan, dicabut, atau berakhir menjadi Tidak Berlaku di register.",
+     "Staff Legal",
+     "Status Tidak Berlaku di register"
+    ],
+    [
+     "Pisahkan versi Tidak Berlaku dari versi yang berlaku atau tandai dengan jelas (butir 4.6).",
+     "Staff Legal",
+     "Versi Tidak Berlaku terpisah atau bertanda"
+    ],
+    [
+     "Periksa bahwa pemeriksaan, persetujuan, tanda tangan, dan lampiran dokumen sudah lengkap sebelum memberi status Final.",
+     "Staff Legal",
+     "Hasil pemeriksaan kelengkapan dokumen"
+    ],
+    [
+     "Ubah status dokumen yang lengkap menjadi Final di register.",
+     "Staff Legal",
+     "Status Final di register"
+    ],
+    [
+     "Proses perubahan atas Dokumen Final sebagai versi baru mulai dari langkah 1, atau sebagai addendum menurut SNX-LEG-SOP-02 untuk kontrak (butir 4.7).",
+     "Staff Legal",
+     "Versi baru atau addendum yang masuk review"
+    ]
+   ]
+  },
+  {
+   "title": "Penyimpanan dan Pengarsipan",
+   "intro": [],
+   "steps": [
+    [
+     "Unggah salinan Dokumen Final ke folder repositori resmi dalam batas waktu di bagian 8.",
+     "Staff Legal",
+     "Salinan Dokumen Final di repositori resmi"
+    ],
+    [
+     "Perbarui register dengan nomor versi Dokumen Final dan lokasi simpan salinannya.",
+     "Staff Legal",
+     "Baris register terbarui"
+    ],
+    [
+     "Simpan dokumen asli di tempat aman menurut butir 4.10.",
+     "Staff Legal",
+     "Dokumen asli tersimpan"
+    ],
+    [
+     "Catat lokasi tempat aman dokumen asli di register.",
+     "Staff Legal",
+     "Lokasi dokumen asli di register"
+    ],
+    [
+     "Isi tanggal pemicu dan tanggal akhir masa retensi di register menurut tabel Rekaman bagian 11, saat tanggal pemicu diketahui.",
+     "Staff Legal",
+     "Tanggal masa retensi di register"
+    ]
+   ]
+  },
+  {
+   "title": "Pengelolaan Akses",
+   "intro": [],
+   "steps": [
+    [
+     "Ajukan permintaan akses lewat tiket GLPI dengan menyebut dokumen dan kebutuhan kerjanya (butir 4.14).",
+     "Pemohon",
+     "Tiket permintaan akses di GLPI"
+    ],
+    [
+     "Putuskan permintaan berdasarkan kebutuhan kerja dan tingkat klasifikasi dokumen (butir 4.13).",
+     "Line Manager Legal",
+     "Keputusan setuju atau tolak"
+    ],
+    [
+     "Berikan akses ke folder atau dokumen yang disetujui.",
+     "Line Manager Legal",
+     "Akses diberikan"
+    ],
+    [
+     "Tutup tiket dengan catatan akses yang diberikan atau alasan penolakan.",
+     "Line Manager Legal",
+     "Tiket permintaan akses tertutup"
+    ],
+    [
+     "Tinjau daftar akses ke folder Google Drive departemen Legal dalam batas waktu di bagian 8.",
+     "Line Manager Legal",
+     "Hasil tinjauan daftar akses"
+    ],
+    [
+     "Cabut akses saat peran penerima akses berakhir, atau saat tinjauan menunjukkan akses itu tidak lagi dibutuhkan (butir 4.15).",
+     "Line Manager Legal",
+     "Akses dicabut"
+    ],
+    [
+     "Setujui pembagian dokumen RESTRICTED (Internal) ke pihak luar hanya bila NDA atau kontrak yang berlaku sudah ada (butir 4.18).",
+     "Line Manager Legal",
+     "Persetujuan pembagian ke pihak luar"
+    ]
+   ]
+  },
+  {
+   "title": "Penetapan dan Evaluasi Masa Retensi",
+   "intro": [
+    "Langkah 1 dan 2 dijalankan saat SOP ini disahkan dan pada tiap peninjauan SOP. Langkah 3 sampai 6 dijalankan setiap bulan."
+   ],
+   "steps": [
+    [
+     "Periksa ketentuan masa retensi di UU Nomor 8 Tahun 1997, UU Nomor 27 Tahun 2022, dan peraturan perundang-undangan lain yang relevan dengan jenis dokumen.",
+     "Line Manager Legal",
+     "Hasil pemeriksaan ketentuan masa retensi"
+    ],
+    [
+     "Ajukan periode masa retensi tiap kategori untuk disahkan lewat revisi SOP ini (prosedur 6.8).",
+     "Line Manager Legal",
+     "Revisi SOP dengan periode masa retensi"
+    ],
+    [
+     "Periksa register untuk dokumen yang tanggal akhir masa retensinya jatuh pada bulan berjalan.",
+     "Staff Legal",
+     "Daftar dokumen yang masa retensinya berakhir"
+    ],
+    [
+     "Serahkan daftar itu ke Line Manager Legal beserta penanda Legal Hold tiap dokumen.",
+     "Staff Legal",
+     "Daftar evaluasi masa retensi"
+    ],
+    [
+     "Evaluasi tiap dokumen pada daftar yang tidak bertanda Legal Hold: disimpan lebih lanjut, dipindahkan ke arsip, atau dimusnahkan (butir 4.21).",
+     "Line Manager Legal",
+     "Keputusan evaluasi per dokumen; persetujuan pemusnahan bila diputus dimusnahkan"
+    ],
+    [
+     "Catat keputusan evaluasi di register, termasuk tanggal akhir masa retensi baru untuk dokumen yang disimpan lebih lanjut.",
+     "Staff Legal",
+     "Keputusan evaluasi di register"
+    ]
+   ]
+  },
+  {
+   "title": "Legal Hold",
+   "intro": [
+    "Laporan somasi, klaim, atau surat regulator dari Pemohon mengikuti SNX-LEG-SOP-01 butir 4.14."
+   ],
+   "steps": [
+    [
+     "Tetapkan Legal Hold atas dokumen yang diperlukan untuk sengketa, pemeriksaan, audit, investigasi, permintaan regulator, atau proses hukum lain (butir 4.22).",
+     "Line Manager Legal",
+     "Keputusan Legal Hold"
+    ],
+    [
+     "Tandai dokumen terkait di register dengan penanda Legal Hold, tanggal, dan alasan.",
+     "Staff Legal",
+     "Penanda Legal Hold di register"
+    ],
+    [
+     "Keluarkan dokumen bertanda Legal Hold dari daftar evaluasi masa retensi dan daftar pemusnahan.",
+     "Staff Legal",
+     "Dokumen bertanda tidak masuk daftar"
+    ],
+    [
+     "Cabut Legal Hold bila sengketa, pemeriksaan, audit, atau proses yang menjadi dasarnya selesai.",
+     "Line Manager Legal",
+     "Legal Hold dicabut"
+    ],
+    [
+     "Hapus penanda Legal Hold di register dan catat tanggal pencabutan.",
+     "Staff Legal",
+     "Penanda dihapus dan tanggal pencabutan tercatat"
+    ]
+   ]
+  },
+  {
+   "title": "Pemusnahan Dokumen",
+   "intro": [],
+   "steps": [
+    [
+     "Siapkan daftar pemusnahan dari dokumen yang diputus dimusnahkan pada prosedur 6.5.",
+     "Staff Legal",
+     "Daftar pemusnahan"
+    ],
+    [
+     "Musnahkan salinan elektronik dengan metode untuk tingkat klasifikasinya di SNX-ISMS-PRO-01.",
+     "Staff Legal",
+     "Salinan elektronik dimusnahkan"
+    ],
+    [
+     "Musnahkan dokumen asli dan salinan kertas dengan metode untuk tingkat klasifikasinya di SNX-ISMS-PRO-01.",
+     "Staff Legal",
+     "Dokumen kertas dimusnahkan"
+    ],
+    [
+     "Ajukan wipe atau penghancuran media penyimpan lewat tiket GLPI (USULAN) bila metode untuk tingkat klasifikasinya mensyaratkannya.",
+     "Staff Legal",
+     "Tiket permintaan wipe atau penghancuran media"
+    ],
+    [
+     "Wipe atau hancurkan media penyimpan menurut SNX-ISMS-SOP-04 (USULAN).",
+     "VP Tech Operation and Services",
+     "Media ter-wipe atau dihancurkan"
+    ],
+    [
+     "Buat berita acara pemusnahan menurut butir 4.24.",
+     "Staff Legal",
+     "Berita acara pemusnahan"
+    ],
+    [
+     "Ubah status dokumen di register menjadi Dimusnahkan.",
+     "Staff Legal",
+     "Status Dimusnahkan di register"
+    ]
+   ]
+  },
+  {
+   "title": "Pemantauan dan Peninjauan SOP",
+   "intro": [],
+   "steps": [
+    [
+     "Evaluasi pelaksanaan SOP ini lewat register dokumen legal, ketepatan waktu pengarsipan, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen (USULAN).",
+     "Line Manager Legal",
+     "Catatan evaluasi pelaksanaan SOP"
+    ],
+    [
+     "Tinjau SOP ini, termasuk tabel masa retensi di bagian 11, dalam batas waktu di bagian 8.",
+     "Line Manager Legal",
+     "Hasil peninjauan SOP"
+    ],
+    [
+     "Proses usulan perubahan SOP ini sebagai revisi dengan nomor revisi baru di tabel Revision History dan persetujuan di blok Approval dokumen.",
+     "Line Manager Legal",
+     "Revisi SOP"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Staff Legal mencatat dokumen di register\ndan mengusulkan klasifikasi",
+   "b": "Line Manager Legal\nmenetapkan klasifikasi",
+   "c": "Staff Legal menamai berkas, menyimpan di\nrepositori resmi, dan mencatat lokasi",
+   "d": "Isi dokumen berubah?",
+   "e": "Staff Legal menyimpan versi baru;\nversi lama berstatus Tidak Berlaku",
+   "f": "Ada permintaan akses\nlewat tiket GLPI?",
+   "g": "Line Manager Legal menetapkan akses sesuai\nkebutuhan kerja dan klasifikasi",
+   "h": "Masa retensi berakhir\n(periksa register tiap bulan)?",
+   "i": "Dokumen bertanda Legal Hold?",
+   "j": "Pemusnahan ditahan sampai\nLegal Hold dicabut",
+   "k": "Line Manager Legal memutuskan:\ndimusnahkan?",
+   "l": "Staff Legal memusnahkan, membuat berita\nacara, dan mengubah status Dimusnahkan",
+   "m": "Dokumen disimpan lebih lanjut\natau dipindahkan ke arsip"
+  },
+  "shapes": {
+   "d": "diamond",
+   "f": "diamond",
+   "h": "diamond",
+   "i": "diamond",
+   "k": "diamond",
+   "j": "ellipse",
+   "l": "ellipse",
+   "m": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "e",
+    "Ya"
+   ],
+   [
+    "e",
+    "c"
+   ],
+   [
+    "d",
+    "f",
+    "Tidak"
+   ],
+   [
+    "f",
+    "g",
+    "Ya"
+   ],
+   [
+    "g",
+    "h"
+   ],
+   [
+    "f",
+    "h",
+    "Tidak"
+   ],
+   [
+    "h",
+    "d",
+    "Belum"
+   ],
+   [
+    "h",
+    "i",
+    "Ya"
+   ],
+   [
+    "i",
+    "j",
+    "Ya"
+   ],
+   [
+    "i",
+    "k",
+    "Tidak"
+   ],
+   [
+    "k",
+    "l",
+    "Ya"
+   ],
+   [
+    "k",
+    "m",
+    "Tidak"
+   ]
+  ],
+  "caption": "Gambar 1. Alur pengendalian dokumen legal, dari pencatatan sampai pemusnahan atau penyimpanan lebih lanjut."
+ },
+ "sla": [
+  [
+   "Unggah salinan Dokumen Final kontrak dan perbarui register (6.3 langkah 1 dan 2)",
+   "Staff Legal",
+   "Paling lambat 2 hari kerja sesudah kontrak ditandatangani lengkap oleh para pihak"
+  ],
+  [
+   "Unggah salinan Dokumen Final selain kontrak, yaitu Kategori 2 sampai 7 (6.3 langkah 1 dan 2)",
+   "Staff Legal",
+   "Paling lambat 2 hari kerja sesudah dokumen berstatus Final (USULAN)"
+  ],
+  [
+   "Periksa register untuk dokumen yang masa retensinya berakhir (6.5 langkah 3)",
+   "Staff Legal",
+   "Setiap bulan (USULAN)"
+  ],
+  [
+   "Tinjau daftar akses ke folder Google Drive departemen Legal (6.4 langkah 5)",
+   "Line Manager Legal",
+   "Setiap semester (USULAN)"
+  ],
+  [
+   "Cabut akses saat peran penerima akses berakhir (6.4 langkah 6)",
+   "Line Manager Legal",
+   "Saat peran penerima akses berakhir"
+  ],
+  [
+   "Tinjau SOP ini (6.8 langkah 2)",
+   "Line Manager Legal",
+   "Sekurang-kurangnya satu kali setahun, atau saat ada perubahan regulasi, struktur organisasi, kewenangan persetujuan, proses bisnis, atau kebutuhan pengendalian internal"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Dokumen belum ditandatangani lengkap",
+   "Staff Legal mencatat status Draft atau Menunggu Tanda Tangan di register dan tidak mencatat Final (butir 4.3, 6.2 langkah 2)."
+  ],
+  [
+   "Dokumen Final perlu diubah",
+   "Staff Legal memproses perubahan sebagai versi baru atau, untuk kontrak, sebagai addendum (6.2 langkah 7)."
+  ],
+  [
+   "Masa retensi berakhir saat dokumen bertanda Legal Hold",
+   "Staff Legal mengeluarkan dokumen dari daftar evaluasi dan daftar pemusnahan sampai Line Manager Legal mencabut Legal Hold (6.6 langkah 3 dan 4)."
+  ],
+  [
+   "Peraturan, kontrak, dan kebijakan SINUX menetapkan masa retensi berbeda",
+   "Staff Legal mencatat periode terpanjang di register (butir 4.19)."
+  ],
+  [
+   "Dokumen Tidak Berlaku masih diperlukan sebagai rekaman historis atau bukti hukum",
+   "Staff Legal menyimpannya terpisah dari versi yang berlaku sampai masa retensinya berakhir (butir 4.6)."
+  ],
+  [
+   "Permintaan akses tidak sesuai kebutuhan kerja atau tingkat klasifikasi",
+   "Line Manager Legal menolak permintaan dan menutup tiket dengan alasan penolakan (6.4 langkah 2 dan 4)."
+  ],
+  [
+   "Dokumen RESTRICTED (Internal) atau SECRET dikirim lewat kanal pribadi atau ditangani tidak sesuai tingkatnya",
+   "Staff Legal atau Line Manager Legal yang menemukannya melaporkan kejadian itu sebagai event keamanan menurut SNX-ISMS-SOP-01 (USULAN untuk pelapor; butir 4.17)."
+  ]
+ ],
+ "conclusion": [
+  "Line Manager Legal memantau kepatuhan terhadap SOP ini lewat register dokumen legal dan meninjau SOP beserta tabel masa retensinya dalam batas waktu di bagian 8 (6.8 langkah 1 dan 2)."
+ ],
+ "related_documents": [
+  [
+   "SNX-LEG-SOP-01",
+   "Legal Operational; butir 4.22 sampai 4.27 dan prosedur 6.9 memuat aturan umum klasifikasi, penyimpanan, akses, dan retensi dokumen legal, yang dirinci SOP ini. Butir 4.27 menunjuk SOP ini untuk periode masa retensi, dan butir 4.14 mengatur laporan somasi, klaim, dan surat regulator."
+  ],
+  [
+   "SNX-LEG-SOP-02",
+   "Contract Review & Legal Approval; mengatur review, negosiasi, dan penandatanganan kontrak sampai dokumen masuk SOP ini. Butir 4.15 memuat pola penamaan berkas yang sama."
+  ],
+  [
+   "SNX-LEG-REG-04",
+   "Company Legal Documents Register; dipadankan dengan register dokumen legal di SOP ini (USULAN)."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling Procedure; sumber tingkat klasifikasi dan aturan penanganan per tingkat: penyimpanan, pengiriman, pembagian, retensi, dan pemusnahan."
+  ],
+  [
+   "SNX-ISMS-SOP-01",
+   "Information Security Incident Management; tempat pelaporan penanganan dokumen yang melanggar tingkat klasifikasinya."
+  ],
+  [
+   "SNX-ISMS-SOP-02",
+   "User Access Control & Authorization; sumber irama review akses biasa setiap semester yang dipakai di butir 4.16 (USULAN)."
+  ],
+  [
+   "SNX-ISMS-SOP-04",
+   "IT Asset & Configuration Management; memuat wipe dan penghancuran media serta format berita acara pemusnahan."
+  ],
+  [
+   "SNX-FAT-SOP-04",
+   "Financial Document Control & Retention; mengatur dokumen keuangan, yang di luar scope SOP ini."
+  ],
+  [
+   "SNX-HR-JA-01",
+   "Job Analysis dan Uraian Jabatan; memuat uraian jabatan Legal & Compliance (JA-08 dan JA-09)."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; sumber nama peran. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09, menunggu konfirmasi (K-13). VP Tech Operation and Services adalah JA-04."
+  ],
+  [
+   "UU Nomor 8 Tahun 1997",
+   "Dokumen Perusahaan; ketentuannya diperiksa Line Manager Legal sebelum periode masa retensi ditetapkan (prosedur 6.5)."
+  ],
+  [
+   "UU Nomor 27 Tahun 2022",
+   "Pelindungan Data Pribadi; ketentuannya diperiksa untuk dokumen Kategori 7 sebelum periode masa retensi ditetapkan (prosedur 6.5)."
+  ]
+ ],
+ "records": [
+  [
+   "Kategori 1, dokumen kontraktual",
+   "Folder Google Drive departemen Legal (butir 4.8); dokumen asli di tempat aman (butir 4.10); pemilik Line Manager Legal",
+   "10 tahun sejak kontrak berakhir atau diakhiri (USULAN)"
+  ],
+  [
+   "Kategori 2, dokumen korporasi",
+   "Folder Google Drive departemen Legal (butir 4.8); dokumen asli di tempat aman (butir 4.10); pemilik Line Manager Legal",
+   "Selama SINUX berdiri (USULAN)"
+  ],
+  [
+   "Kategori 3, dokumen perizinan dan kepatuhan",
+   "Folder Google Drive departemen Legal (butir 4.8); dokumen asli di tempat aman (butir 4.10); pemilik Line Manager Legal",
+   "10 tahun sejak izin atau persetujuan berakhir, dicabut, atau digantikan (USULAN)"
+  ],
+  [
+   "Kategori 4, dokumen penelaahan Legal",
+   "Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal",
+   "Sama dengan dokumen yang ditelaah (USULAN)"
+  ],
+  [
+   "Kategori 5, dokumen sengketa dan penanganan hukum",
+   "Folder Google Drive departemen Legal (butir 4.8); dokumen asli di tempat aman (butir 4.10); pemilik Line Manager Legal",
+   "10 tahun sejak sengketa selesai, dan tidak dimusnahkan selama Legal Hold (USULAN)"
+  ],
+  [
+   "Kategori 6, dokumen internal Departemen Legal",
+   "Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal",
+   "Versi berlaku: selama berlaku. Versi Tidak Berlaku: 3 tahun sejak digantikan (USULAN)"
+  ],
+  [
+   "Kategori 7, dokumen pelindungan data dan kerahasiaan",
+   "Folder Google Drive departemen Legal (butir 4.8); dokumen asli di tempat aman (butir 4.10); pemilik Line Manager Legal",
+   "5 tahun sejak pemrosesan berakhir atau insiden ditutup (USULAN); Line Manager Legal memeriksa UU Nomor 27 Tahun 2022 lebih dulu"
+  ],
+  [
+   "Register dokumen legal, termasuk penanda Legal Hold, keputusan evaluasi masa retensi, dan status Dimusnahkan",
+   "Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal",
+   "Berlaku sampai digantikan; baris dokumen yang dimusnahkan tetap disimpan (USULAN)"
+  ],
+  [
+   "Tiket permintaan akses",
+   "GLPI (SINUX Service Hub); pemilik Line Manager Legal",
+   "3 tahun (USULAN)"
+  ],
+  [
+   "Hasil tinjauan daftar akses",
+   "Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal",
+   "3 tahun (USULAN)"
+  ],
+  [
+   "Daftar pemusnahan dan berita acara pemusnahan",
+   "Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal",
+   "5 tahun (USULAN, sama dengan berita acara pemusnahan di SNX-ISMS-SOP-04)"
+  ],
+  [
+   "Catatan evaluasi pelaksanaan SOP",
+   "Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal",
+   "3 tahun (USULAN)"
+  ]
+ ],
+ "iso_refs": {
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan).",
+  "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk bagian 5 dan butir 4.26; 7.5.2 (Pembuatan dan pembaruan), untuk pencatatan, penamaan berkas, dan status di butir 4.1 sampai 4.7; 7.5.3 (Pengendalian informasi terdokumentasi), untuk penyimpanan, akses, pengendalian versi, retensi, dan pemusnahan di butir 4.8 sampai 4.24.",
+  "ISO/IEC 27001:2022": "Annex A 5.12 (Klasifikasi informasi) dan 5.13 (Pelabelan informasi), untuk butir 4.9, 4.11, dan 4.12; Annex A 5.14 (Transfer informasi), untuk butir 4.17 dan 4.18; Annex A 5.15 (Kontrol akses) dan 5.18 (Hak akses), untuk butir 4.13 sampai 4.16; Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak) dan 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.19 dan 4.20; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.1, 4.2, dan 4.21; Annex A 7.10 (Media penyimpanan), untuk butir 4.10; Annex A 8.10 (Penghapusan informasi), untuk butir 4.23 dan 4.24."
+ }
+}

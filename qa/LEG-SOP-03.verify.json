@@ -1,0 +1,36 @@
+{
+ "key": "LEG-SOP-03",
+ "file": "out/04_Legal/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx",
+ "sources_checked": [
+  "12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0",
+  "19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb",
+  "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io",
+  "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1"
+ ],
+ "criteria": "Prosedur standar untuk pengendalian dokumen legal, termasuk pengelolaan versi, penyimpanan, akses, dan masa retensi dokumen.",
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {"lokasi": "Bagian 3 Definisi, baris GLPI", "masalah": "Batas pemakaian GLPI ditulis sebagai fakta tanpa label, padahal config/defaults.json ticketing menyatakan batas 'generalist' belum dirinci owner dan wajib berlabel (USULAN) bila ditulis. Butir 4.14 sudah berlabel; definisinya belum. Rumusan sama persis dengan SNX-LEG-SOP-01, jadi set dokumen tetap konsisten.", "bukti": "'GLPI | Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation.' vs defaults: 'Batas lingkup generalist belum dirinci owner: bila SOP perlu batas, tulis berlabel (USULAN)'"},
+  {"lokasi": "Butir 4.17", "masalah": "Padanan label 'Rahasia' di SOP Divisi Legal ke RESTRICTED (Internal) dan SECRET dipakai tanpa label (USULAN), sedangkan SNX-LEG-SOP-01 butir 4.23 memberi label (USULAN) untuk padanan yang sama.", "bukti": "Sumber 19pe: 'Dokumen rahasia tidak dikirim melalui kanal pribadi.' Dokumen: '4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim lewat kanal pribadi.'"},
+  {"lokasi": "Butir 4.8 kalimat 2; prosedur 6.5 pengantar", "masalah": "Perluasan dari sumber tanpa label di tempat: kewajiban salinan elektronik untuk semua Dokumen Final (sumber hanya kontrak) dan irama bulanan langkah 3 sampai 6 (sumber: tinjauan register kontrak bulanan). Label (USULAN) ada di SLA baris 2 dan 3, tidak di badan.", "bukti": "'Setiap Dokumen Final memiliki salinan elektronik di folder itu, termasuk dokumen yang aslinya fisik.' / 'Langkah 3 sampai 6 dijalankan setiap bulan.'"},
+  {"lokasi": "Butir 4.2", "masalah": "Kolom ID register, kategori, nomor versi, dan tingkat klasifikasi tidak ada di daftar register kontrak sumber; hanya tiga kolom retensi yang diberi label. Wajar untuk T2 (struktur), tetapi status usulan kolom lain tidak dinyatakan.", "bukti": "Sumber 12WUH 7.9.2: nomor dan jenis kontrak, para pihak, tanggal, jangka waktu, nilai, PIC, jatuh tempo, status persetujuan, lokasi penyimpanan."},
+  {"lokasi": "Bagian 2 Scope vs bagian 5 dan 6.7", "masalah": "Konsistensi peran (e): Scope menyebut SOP berlaku bagi Line Manager Legal, Staff Legal, dan Pemohon, sedangkan VP Tech Operation and Services punya baris peran dan menjadi PIC 6.7 langkah 5.", "bukti": "'SOP ini berlaku bagi Line Manager Legal, Staff Legal, dan Pemohon yang meminta akses ke dokumen legal'"},
+  {"lokasi": "Butir 4.3, 4.6; 6.2 langkah 4", "masalah": "Frasa kabur warisan sumber tanpa ukuran: 'tanpa dasar yang memadai' (berulang dengan kalimat sebelumnya yang sudah merujuk definisi Dokumen Final) dan 'tandai dengan jelas' (cara penandaan tidak disebut, mis. status di register atau subfolder Arsip).", "bukti": "'tidak dicatat sebagai Final tanpa dasar yang memadai' / 'menandainya dengan jelas'"},
+  {"lokasi": "Seluruh dokumen", "masalah": "Istilah tidak seragam (§6a butir 7): istilah terdefinisi 'Departemen Legal' muncul 9 kali, bentuk huruf kecil 'departemen Legal' 16 kali dalam frasa 'folder Google Drive departemen Legal'.", "bukti": "Definisi 'Departemen Legal | Line Manager Legal dan Staff Legal.' vs '4.8 ... folder Google Drive departemen Legal (USULAN)'"},
+  {"lokasi": "Kategori 1 dan 7 (Scope)", "masalah": "Penutup daftar generik 'dan dokumen terkait lainnya' (dari sumber) membuat batas kategori kabur.", "bukti": "'... addendum, dan dokumen terkait lainnya.' / '... catatan insiden, dan dokumen terkait lainnya yang dikelola Departemen Legal.'"},
+  {"lokasi": "Identity Document, Process Owner", "masalah": "'Departemen Legal' adalah unit, bukan jabatan atau peran seperti aturan defaults process_owner; SNX-LEG-SOP-01 dan 02 memakai 'Line Manager Legal'. Sudah tercatat di notes open item 14.", "bukti": "Sumber 12WUH: 'Pemilik Dokumen | Departemen Legal'; defaults process_owner: 'Ikuti Pemilik dokumen di sumber (jabatan atau peran, tanpa nama)'"},
+  {"lokasi": "Bagian 5 baris VP Tech Operation and Services; 6.7 langkah 5", "masalah": "Pelaksana wipe di SNX-ISMS-SOP-04 adalah NOC Engineer, di sini VP Tech Operation and Services. Berlabel (USULAN) dan tercatat di notes open item 5; perlu keputusan Fani agar dua SOP tidak bertentangan.", "bukti": "specs/ISMS-SOP-04.json: 'NOC Engineer menghapus data media penyimpanan dengan wipe'"},
+  {"lokasi": "Bagian 11 Rekaman, kolom Retensi", "masalah": "Angka 10, 5, dan 3 tahun dipinjam dari konvensi FAT dan Operation, bukan dari sumber Legal atau teks UU. Semua berlabel (USULAN) dan dasarnya tercatat di notes bagian 2 dan open item 7; perlu keputusan Legal.", "bukti": "'10 tahun sejak kontrak berakhir atau diakhiri (USULAN)'; notes: dasar notes/FAT-SOP-01.md"},
+  {"lokasi": "Cek (g) context/audit", "masalah": "Tidak ada temuan: grep fileId sumber utama 12WUH di context/audit kosong (cocok dengan notes bagian 5), cacat audit untuk 19pe, 1h5P, dan 1m91 dijelaskan di notes bagian 5. Nama dan jabatan sesuai data_conflicts (Samuel Kristanto Utomo / President Director hanya di Approved By; tidak ada nama orang lain, CEO, atau Kristianto di badan).", "bukti": "grep -n 12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0 context/audit/*.md tanpa hasil"}
+ ],
+ "checks": {
+  "a_fakta": "Fakta inti cocok sumber: tujuh kategori, definisi, pola nama berkas, 2 hari kerja unggah kontrak, dokumen asli di tempat aman, akses menurut kebutuhan kerja, pencabutan saat peran berakhir, UU 8/1997 dan UU 27/2022, wewenang Line Manager Legal, aturan PRO-01 (pelabelan folder, berbagi RESTRICTED butuh NDA atau kontrak). Rujukan silang ke SNX-LEG-SOP-01 butir 4.14 dan 4.22-4.27 dan 6.9, SNX-LEG-SOP-02 butir 4.15, ISMS-SOP-02 semester, ISMS-SOP-04, HR-ORG-01 JA-04/JA-08/JA-09/K-13 dicocokkan dengan specs/ dan benar.",
+  "b_karangan": "Tidak ada fakta karangan tanpa label; angka dan sistem tanpa sumber berlabel (USULAN).",
+  "c_kriteria": "Terpenuhi: pengendalian dokumen legal (4.1-4.3, 6.1), pengelolaan versi (4.4-4.7, 6.2), penyimpanan (4.8-4.10, 6.3), akses (4.13-4.18, 6.4), masa retensi (4.19-4.22, 6.5, 6.6, tabel Rekaman), ditambah pemusnahan (6.7).",
+  "d_runbook_0_6": "Status Draft, tanggal efektif dan tanda tangan kosong, tiga penanda tangan berbeda sesuai defaults LEG, klasifikasi INTERNAL sesuai worklist, tingkat PRO-01, tanpa rujukan internal AI, tanpa residu konsultan (Arkana diganti NamaPihak), GLPI untuk Legal.",
+  "e_peran": "Peran bagian 5 (Line Manager Legal, Staff Legal, Pemohon, VP Tech Operation and Services) sama persis dengan PIC bagian 6 dan 8; rujukan prosedur di kolom tanggung jawab cocok.",
+  "f_bahasa": "Kalimat aktif dengan pelaku dari bagian 5, langkah satu tindakan, sistem SINUX disebut; tidak ada em-dash, en-dash, frasa slop, atau tebal untuk penekanan di badan. Catatan minor di nonblocking.",
+  "g_data_conflicts_audit": "Sesuai."
+ }
+}
