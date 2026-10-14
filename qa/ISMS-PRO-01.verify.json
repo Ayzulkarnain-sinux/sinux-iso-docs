@@ -1,0 +1,64 @@
+{
+  "verdict": "PASS",
+  "doc": "out/08_ISMS/SNX-ISMS-PRO-01 Information Classification & Handling (Rev00 DRAFT).docx",
+  "sources_checked": [
+    "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io (SNX-ISMS-PRO-01 sumber, dibaca ulang lewat read_file_content)",
+    "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv (POL-OPS-001)",
+    "1U8CAdibwBk9x_-Aic2lbev144d6WReTz (PRO-OPS-001)",
+    "context/audit isms bagian SNX-ISMS-PRO-01 (cacat 1 sampai 8), SoA baris 5.12/5.13/5.14/5.33/7.10/8.10, FRM-02 dan REG-01 masa simpan",
+    "config/defaults.json v21 data_conflicts, config/checklist.json baris 79, notes/ISMS-PRO-01.md, specs/ISMS-PRO-01.json (flow)"
+  ],
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 4 butir 4.7 sampai 4.16",
+      "masalah": "Aturan per tingkat ditulis pasif tanpa pelaku padahal pelakunya diketahui (Seluruh personel), pola berulang sembilan butir. Langkah 6.3 sudah memberi PIC, jadi tidak memblokir (RUNBOOK 6a butir 6).",
+      "bukti": "\"RESTRICTED dicetak seperlunya, diambil langsung dari printer, dan tidak ditinggal.\"; \"INTERNAL disimpan di sistem resmi SINUX (Drive, Zammad, Service Hub, knowledge base).\""
+    },
+    {
+      "lokasi": "Bagian 4 butir 4.14",
+      "masalah": "Kalimat ambigu: terbaca seolah informasi INTERNAL yang dihindari, bukan removable media untuk INTERNAL. Usul: \"Seluruh personel menghindari removable media untuk informasi INTERNAL.\"",
+      "bukti": "\"Removable media (Annex A 7.10). INTERNAL dihindari.\""
+    },
+    {
+      "lokasi": "Bagian 2 Scope, kalimat ketiga",
+      "masalah": "Pengecualian divisi lain ditulis sebagai fakta, padahal sumber hanya diam soal divisi lain. Ini juga bertentangan dengan definisi RESTRICTED yang dipecah per domain commercial, legal, hr, finance dan dengan skema klasifikasi PRO-01 yang dipakai dokumen semua departemen (config/defaults.json classification). Sudah tercatat sebagai USULAN U1 dan open item 3.",
+      "bukti": "Dokumen: \"Divisi lain di luar Divisi Operation, misalnya Human Resources, Finance, Legal, dan Commercial, tidak tercakup.\" Sumber Bagian 2 hanya: \"personel Divisi Operation dan pihak ketiga yang bekerja atas nama SINUX\"."
+    },
+    {
+      "lokasi": "Seluruh dokumen (bagian 3, 4, 6, 8, 11)",
+      "masalah": "Istilah berganti untuk satu hal: \"retensi\" dan \"masa simpan\"; \"password manager\" dan \"vault\"; \"butir\" dipakai untuk butir kebijakan (4.x) sekaligus subbagian prosedur (6.x), sedangkan bagian lain disebut \"bagian 9\".",
+      "bukti": "Butir 4.13 \"SECRET hanya di vault\" lawan 4.18 \"password manager\"; 4.15 \"Retensi\" lawan 6.5 \"sampai masa simpannya berakhir\"; \"butir 6.2\", \"butir 6.4\", \"bagian 9\"."
+    },
+    {
+      "lokasi": "Bagian 3 Definisi, RESTRICTED (Internal)",
+      "masalah": "Kata tim diganti divisi; pergeseran kecil substansi T1. Sudah dijelaskan di notes (Keputusan data).",
+      "bukti": "Sumber: \"Hanya untuk peran atau tim yang membutuhkan\"; dokumen: \"Informasi hanya untuk peran atau divisi yang membutuhkan\"."
+    },
+    {
+      "lokasi": "Bagian 3 Definisi, Master list",
+      "masalah": "Master list = SNX-OPS-ML-00 ditulis sebagai fakta, padahal itu tafsir (didukung SoA baris 5.33). Tercatat sebagai open item 6; layak diberi penanda tafsir atau USULAN.",
+      "bukti": "Dokumen: \"Daftar dokumen Divisi Operation beserta masa simpan recordnya, yaitu SNX-OPS-ML-00.\" Sumber Bagian 6 hanya \"Sesuai master list\". SoA 5.33: \"SNX-ISMS-PRO-01, master list SNX-OPS-ML-00 (masa simpan)\"."
+    },
+    {
+      "lokasi": "Bagian 7 Process Flow, simpul g",
+      "masalah": "Simpul menyebut Pemilik informasi meninjau tingkat, tetapi prosedur 6.1 hanya punya langkah menurunkan dan mencatat; tidak ada langkah peninjauan.",
+      "bukti": "Spec flow: \"Pemilik informasi meninjau atau menurunkan tingkat, dicatat\"; 6.1 langkah 2 dan 3 hanya \"Turunkan klasifikasi\" dan \"Catat penurunan\"."
+    },
+    {
+      "lokasi": "Bagian 4 butir 4.6",
+      "masalah": "Label (USULAN) di awal butir, tetapi kalimat kedua berasal dari sumber dan kalimat ketiga adalah kewajiban baru; cakupan label kabur.",
+      "bukti": "\"4.6 (USULAN) Label SECRET pada subjek email ... Penyimpanan SECRET di email dilarang (butir 4.8). Seluruh personel melaporkan email berlabel SECRET sebagai pelanggaran (bagian 9).\""
+    },
+    {
+      "lokasi": "Cek (g) dan cacat context/audit",
+      "masalah": "Tidak ada temuan. Penanda tangan sesuai defaults ISMS (Erik Dwi Yanto / Technical/Operation Engineer L1; Fani Fatullah / VP Tech Operation and Services; Samuel Kristanto Utomo / President Director); badan dokumen tidak menyebut COO atau Direktur Utama. Delapan cacat audit (scope, 8.12, label KB, rujukan keluar, master list, label SECRET email, pengesahan, tanpa definisi/KPI) ditangani atau dijelaskan di notes/ISMS-PRO-01.md.",
+      "bukti": "Tabel Dokument Approval; notes/ISMS-PRO-01.md bagian Penanganan cacat context/audit."
+    },
+    {
+      "lokasi": "Cek (a)(b)(c)(d)(e)",
+      "masalah": "Tidak ada temuan. Fakta klasifikasi, pelabelan, penanganan, aturan khusus, pelanggaran, dan pengecualian cocok dengan sumber; angka tanpa sumber (triwulan, 3 tahun) berlabel USULAN; 5 tahun FRM-02 dan Berlaku sampai digantikan REG-01 cocok audit; SoA memetakan keenam kontrol ke PRO-01; acuan 7.5.3 dan 5.12, 5.13, 5.14, 5.33, 7.10, 8.10 ada di bagian 11; tidak ada rujukan internal AI, em-dash, en-dash, kutip penekanan; status Draft, tanggal efektif dan tanda tangan kosong; semua PIC bagian 6 dan 8 ada di tabel peran bagian 5.",
+      "bukti": "Teks docx hasil python-docx; read_file_content 1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io; context/audit isms baris SoA 2019-2076."
+    }
+  ]
+}
