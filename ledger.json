@@ -3,10 +3,10 @@
  "runbook": "v19-e",
  "defaults_version": "v21",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W0",
+ "current_wave": "W1",
  "last_guide_seen": 0,
  "watchdog_trigger_id": null,
- "gaspol": false,
+ "gaspol": true,
  "tech_fixes": [],
  "env_fixes": [
   {
@@ -2279,13 +2279,20 @@
   }
  ],
  "sources_meta": "reports/W0-sources-meta.json",
- "gaspol_owner_quote": "*input kemungkinan akan saya tinggal tidur. tolong ada agent yang pastikan hasil pdf. verifikasi. akan saya serahkan command \"gaspol\" jika verdict aman. make sure no mistakes",
+ "gaspol_owner_quote": "Good, bagus jalankan dan tuntaskan \"Gaspol\" Perhatikam context window skrg 42%, checkloint Dont losing context",
  "gaspol_received_at": "2026-10-14T19:32:34Z",
- "gaspol_status": "MENUNGGU kata \"gaspol\" dari owner. Tafsir \"gaspol bersyarat\" atas pesan owner dicabut worker (pesan owner dibaca: owner sendiri yang akan menyerahkan gaspol bila verdict aman).",
+ "gaspol_status": "Owner mengetik gaspol 2026-10-14T21:23Z.",
  "pilot_gate_evidence": {
   "at": "2026-10-14T19:35:56Z",
   "verify": "qa/ISMS-SOP-02.verify.json PASS blocking 0",
   "pdfcheck": "qa/ISMS-SOP-02.pdfcheck.json PASS blocking 0, 16 halaman, A-J ok",
   "lint": "pass true; OOXML PASSED; selftest 6 OK"
+ },
+ "run_rules": {
+  "concurrency": "penyusun maks 5 serentak; total subagen maks 8 (penyusun + verifikator + pemeriksa PDF)",
+  "order": "W1 DONE sebelum W2 mulai (nama peran). Slot kosong selama W1 diisi W5 xlsx (tidak bergantung pada nama peran HR-ORG-01); sesudah W1, slot mengikuti urutan wave W2..W7b.",
+  "verify": "verifikator buta opus: semua mode sop, W1, W7, W7b; W5 dan W6 sampel 1 dari 3 + semua usulan_count>5",
+  "pdfcheck": "pemeriksa PDF opus: dokumen docx pertama tiap wave + semua W1 (permintaan owner: agen memastikan hasil PDF)",
+  "loops": "lint/verify gagal: perbaikan maks 2 putaran lalu NEEDS_REVIEW"
  }
 }

@@ -278,6 +278,28 @@ def report(wave):
     print('reports ditulis', wave or '')
 
 
+def pdfp(key):
+    L = load(); d = doc(L, key); p = d.get('out_path') or out_path(d)
+    od = f'/tmp/claude-0/pdf/{key}'
+    r = subprocess.run(['python3', '-I', 'reports/orch/preview.py', p, od, '5', '40'], capture_output=True, text=True)
+    pdf = r.stdout.split()[-1] if r.returncode == 0 else '(gagal render: ' + r.stderr[-200:] + ')'
+    pages = r.stdout.split()[1] if r.returncode == 0 else '?'
+    ref = 'FORMAT-ACUAN SOP (isi dummy).pdf' if d['mode'] == 'sop' else 'FORMAT-ACUAN Generik (isi dummy).pdf'
+    cls = (classification(d) or '').upper()
+    lab = f'Label klasifikasi "{cls}" di footer tiap halaman' if cls.startswith(('RESTRICTED', 'SECRET')) else 'Tanpa label klasifikasi di footer (hanya RESTRICTED/SECRET yang berlabel); bila ada label, catat'
+    body = ('E 11 heading bernomor berurutan (PURPOSE sampai RELATED DOCUMENTS & ATTACHMENTS); tiap bagian berisi; diagram bagian 7 terbaca pada ukuran cetak (cek 110 dpi), tidak terpotong, caption ada.'
+            if d['mode'] == 'sop' else
+            'E Badan dokumen mengikuti pola acuan Generik (bagian bernomor, tabel bergaya acuan); diagram atau bagan (bila ada) terbaca pada ukuran cetak (cek 110 dpi), tidak terpotong, caption ada.')
+    return f"""Peran: pemeriksa tampilan PDF (QA visual) dokumen ISO SINUX, buta terhadap penyusun. CLAUDE.md repo Sinux-AIOS tidak berlaku di sini; batas tulismu ditetapkan berkas ini.
+Bandingkan {pdf} (dokumen {d['number']}, {pages} halaman) dengan acuan tampilan yang disetujui owner: "{ROOT}/reference/{ref}". Format acuan dibekukan: isi boleh berbeda, tata letak tidak.
+Langkah: mkdir -p /tmp/pdfcheck-{key}; pdftoppm -r 60 -png "{pdf}" /tmp/pdfcheck-{key}/doc; pdftoppm -r 60 -png "{ROOT}/reference/{ref}" /tmp/pdfcheck-{key}/ref. Lihat SETIAP halaman dokumen dengan alat Read (gambar), jangan sampel; bila ragu perbesar (pdftoppm -r 110 -f N -l N). Jalankan pdftotext -layout "{pdf}" - untuk cek teks terpotong atau placeholder.
+Cek: A sampul (baris tengah, "No : {d['number']}" sama dengan Document Number, "Diterbitkan oleh" + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat + "Page/ Halaman - N"); B Identity Document (disclaimer, label berurutan seperti acuan, nilai terisi kecuali Effective Date kosong, Status Draft); C Revision History baris 00 berdeskripsi, Approval 3 baris nama/jabatan terisi, Signature kosong; D daftar isi cocok dengan heading yang ada; {body} F tabel: header kolom tampil, sel isi tidak kosong kecuali kolom isian form/register yang memang dikosongkan untuk diisi, teks sel tidak terpotong, lebar kolom wajar (tidak memecah kata per huruf); H {lab}; nomor halaman berurutan; I font konsisten seperti acuan, nol placeholder [..], nol teks instruksi template, tidak ada halaman kosong berlebih; J urutan halaman pembuka, gaya heading, gaya tabel, posisi header/footer sama dengan acuan.
+Tulis {ROOT}/qa/{key}.pdfcheck.json berisi {{"verdict": "PASS"|"FAIL", "pages": <jumlah>, "checks": {{"A": "ok" atau "masalah: ...", ...}}, "blocking": [{{"halaman": N, "masalah": "..."}}], "nonblocking": ["..."]}}.
+Pemblokir: unsur rusak sehingga dokumen tidak layak dikirim ke tim (teks/tabel terpotong, sel isi kosong yang seharusnya terisi, diagram tak terbaca, placeholder, header/footer hilang, tata letak berbeda dari acuan). Kosmetik kecil (garis diagram melintasi label, tabel pecah antarhalaman, header tabel yatim) = nonblocking.
+DILARANG menulis berkas selain {ROOT}/qa/{key}.pdfcheck.json dan isi /tmp/pdfcheck-{key}; dilarang git, Drive, staging.
+Balas maks 60 kata: verdict, jumlah blocking, temuan utama."""
+
+
 def summary():
     import collections
     L = load()
@@ -297,4 +319,5 @@ if __name__ == '__main__':
     elif cmd == 'outpath': print(out_path(doc(load(), sys.argv[2])))
     elif cmd == 'vres': vres(sys.argv[2])
     elif cmd == 'report': report(sys.argv[2] if len(sys.argv) > 2 else None)
+    elif cmd == 'pdf': print(pdfp(sys.argv[2]))
     elif cmd == 'summary': summary()
