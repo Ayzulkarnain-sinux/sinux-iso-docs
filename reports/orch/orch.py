@@ -205,6 +205,11 @@ def post(key):
                 ok = False
         else:
             res['ooxml'] = 'UNMEASURED'
+        # Halaman tanpa teks badan (hanya header/footer) = gagal; perbaikan lewat isi, bukan renderer.
+        rc3, o3, e3 = run(['python3', '-I', 'reports/orch/blankscan.py', p])
+        res['blank'] = o3.split('\t')[3].strip() if o3.startswith('BLANK') else ('UNMEASURED' if rc3 or not o3.startswith('ok') else 'none')
+        if res['blank'] not in ('none', 'UNMEASURED'):
+            ok = False; res['fails'].append('halaman kosong ' + res['blank'])
         d['state'] = 'LINT_PASS' if ok else 'LINT_FAIL'
         d['usulan_count'] = res.get('usulan', 0)
     d['lint_pass'] = res['lint_pass'] and d['state'] == 'LINT_PASS'
@@ -306,9 +311,9 @@ def finish(key, verified=True):
         vres(key)
     L = load(); d = doc(L, key)
     if verified and d.get('verify_verdict') != 'PASS':
-        print(f'{key} BELUM DONE: verdict {d.get("verify_verdict")}'); return
+        print(f'{key} BELUM DONE: verdict {d.get("verify_verdict")}'); sys.exit(3)
     if not verified and d['state'] != 'LINT_PASS':
-        print(f'{key} BELUM DONE: state {d["state"]}'); return
+        print(f'{key} BELUM DONE: state {d["state"]}'); sys.exit(3)
     d['state'] = 'DONE'; d['updated_at'] = NOW(); save(L)
     commit(key)
     r = subprocess.run('git pull --rebase --autostash -q origin main && git push -q origin main', shell=True, capture_output=True, text=True)
