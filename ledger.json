@@ -931,7 +931,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-SOP-13",
    "out_path": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
    "sources": [
@@ -949,7 +949,7 @@
     "Sweep (c): mutasi lokasi saja membuat Atasan Langsung Asal = Tujuan, pemisahan peran 4.3 perlu aturan pengganti (verify nonblocking)",
     "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi"
    ],
-   "updated_at": "2026-10-14T23:24:44Z",
+   "updated_at": "2026-10-14T23:27:05Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED"
   },
@@ -1567,8 +1567,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 13,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:26:56Z",
+   "open_items": [
+    "Sweep (b): Departemen Legal tidak ada di tabel Peran; dua kalimat pasif; istilah berganti (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:26:59Z",
    "pen_agent": "a3ea3b013a1539209",
    "ooxml": "PASSED"
   },
@@ -1699,7 +1701,7 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:27:05Z"
   },
   {
    "wl_index": 52,

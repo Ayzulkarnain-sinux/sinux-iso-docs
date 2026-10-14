@@ -1,51 +1,16 @@
 {
-  "verdict": "PASS",
-  "blocking": [],
-  "nonblocking": [
-    {
-      "lokasi": "Butir 4.2, 4.3, definisi Atasan Langsung Asal dan Atasan Langsung Tujuan, butir 6.2 nomor 2 dan 3",
-      "masalah": "Celah logika: pada mutasi ke lokasi operasional lain saja, jabatan tujuan sama dengan jabatan asal, sehingga Atasan Langsung Tujuan dan Atasan Langsung Asal adalah jabatan yang sama. Pemisahan usul dan tanggapan di 4.3 runtuh, dan 6.2 nomor 2 mengirim usulan kembali ke pengusulnya untuk ditanggapi. Hal serupa terjadi bila Atasan Langsung Tujuan adalah Direktur Utama, yang juga memutuskan. Bagian 9 tidak menangani kasus ini.",
-      "bukti": "4.2: \"Mutasi ke lokasi operasional lain menyebut lokasi tujuan, dan jabatan tujuan sama dengan jabatan asal.\" Definisi: \"Atasan Langsung Tujuan | Jabatan yang menjadi tujuan garis lapor dari jabatan tujuan.\" 4.3: \"Atasan Langsung Tujuan mengusulkan dan Atasan Langsung Asal menanggapi.\""
-    },
-    {
-      "lokasi": "Bagian 3 (definisi Atasan Langsung Asal/Tujuan), butir 4.2, 4.3, tabel peran bagian 5",
-      "masalah": "Rancangan pengusul dan penanggap (notes U3: letak \"Bagian 3, 4.3, 5, 6.1, 6.2\") serta aturan 4.2 tidak berlabel (USULAN) di tempatnya. Label hanya ada di intro 6.1. Ini rancangan proses, bukan fakta karangan, jadi tidak memblokir.",
-      "bukti": "4.3 \"Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung Tujuan mengusulkan dan Atasan Langsung Asal menanggapi.\" tanpa (USULAN); intro 6.1: \"Langkah di butir 6.1 sampai 6.4 berstatus (USULAN)\"."
-    },
-    {
-      "lokasi": "Bagian 3, definisi Divisi",
-      "masalah": "Definisi Divisi tanpa label, padahal SNX-HR-ORG-01 menyatakan struktur Divisi Operation berasal dari POL-OPS-001 DRAFT v0.1 dan berstatus (USULAN) tanpa pemegang (K-10).",
-      "bukti": "SOP-13: \"Divisi | Divisi Operation beserta sub divisinya, yaitu NOC, SOC, serta SD dan PM, menurut SNX-HR-ORG-01.\" HR-ORG-01: \"Nama jabatan, jenjang, headcount, dan garis lapor ke COO di POL-OPS-001 berstatus (USULAN), dan belum ada pemegang bernama (K-10).\""
-    },
-    {
-      "lokasi": "Butir 6.2 nomor 4, 6.3 nomor 1, 6.4 nomor 5, bagian 4.4, bagian 5, bagian 8, bagian 9",
-      "masalah": "Satu hal disebut dengan istilah yang berganti: \"kesimpulan kualifikasi\" dan \"kesimpulan penilaian\"; \"menilai kualifikasi\" dan \"menyimpulkan kualifikasi\"; \"sesudah\" dan \"setelah\".",
-      "bukti": "6.2 nomor 4 keluaran \"Kesimpulan kualifikasi\"; 6.3 nomor 1 \"kesimpulan penilaian ke Direktur Utama\"; 6.4 nomor 5 \"kesimpulan penilaian\"; 4.4 \"HR Manager menilai kualifikasi\"; bagian 5 \"Menyimpulkan kualifikasi\"; bagian 9 \"Penilaian berlanjut setelah\" versus 4.6 \"berlaku hanya sesudah\"."
-    },
-    {
-      "lokasi": "Bagian 9 baris 2, butir 6.4 nomor 6, butir 4.1",
-      "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui.",
-      "bukti": "Bagian 9: \"Usulan diproses setelah Direktur Utama mengesahkan revisi itu (USULAN).\" 6.4 nomor 6: \"agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02\". 4.1: \"mutasi dilakukan hanya karena kebutuhan organisasi.\""
-    },
-    {
-      "lokasi": "Purpose, butir 4.7, bagian 5, butir 6.4 nomor 3, bagian 8, bagian 9",
-      "masalah": "Isi berulang antarbagian: konfirmasi tertulis karyawan atas uraian jabatan, garis lapor, dan lokasi operasional ditulis ulang di enam tempat; butir 4.3 mengulang tabel peran. Bisa dipahami untuk keterlacakan, tetapi mendekati §6a butir 6.",
-      "bukti": "4.7 \"lalu mengonfirmasi secara tertulis bahwa ia memahaminya sebelum tanggal berlaku\"; 6.4 nomor 3 \"Konfirmasi secara tertulis bahwa uraian jabatan tujuan, garis lapor, dan lokasi operasional sudah diterima dan dipahami, sebelum tanggal berlaku.\""
-    },
-    {
-      "lokasi": "Bagian 10 Conclusion",
-      "masalah": "Pemicu peninjauan kabur tanpa ukuran.",
-      "bukti": "\"atau struktur di SNX-HR-ORG-01 berubah secara signifikan.\""
-    },
-    {
-      "lokasi": "Butir 6.4 nomor 7, bagian 8",
-      "masalah": "Pengajuan perubahan hak akses oleh Atasan Langsung Tujuan tidak punya batas waktu, padahal pencabutan akses lama 5 hari kerja di SNX-ISMS-SOP-02 bergantung padanya. SNX-ISMS-SOP-02 juga tidak memberi angka untuk langkah itu, jadi ini open item, bukan fakta salah.",
-      "bukti": "Tabel SLA bagian 8 tidak memuat baris untuk 6.4 nomor 7. SNX-ISMS-SOP-02 sla: hanya \"Pemberitahuan mutasi atau pemberhentian\" dan \"Pencabutan akses lama yang tidak relevan saat mutasi\"."
-    },
-    {
-      "lokasi": "Bagian 2 Scope (lintas dokumen) dan notes/HR-SOP-13.md O1",
-      "masalah": "Rumusan batas rotasi belum seragam antar SOP HR. Sudah dicatat di O1, tetapi notes O1 menyebut HR-SOP-11 dan HR-SOP-12 belum ada, padahal specs/HR-SOP-11.json dan specs/HR-SOP-12.json kini ada. Notes perlu diperbarui.",
-      "bukti": "SOP-13: \"perpindahan tugas atau fungsi yang tidak mengubah unit kerja, divisi, atau lokasi operasional (SNX-HR-SOP-12)\"; SOP-10 dan SOP-11: \"perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama (SNX-HR-SOP-12)\"; SOP-12 scope: \"pada unit kerja dan tingkatan jabatan yang sama\"."
-    }
-  ]
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Fakta dicocokkan ke sumber 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 (read_file_content): JA-01 E.1 'dalam batas anggaran dasar', atasan JA-01 'Organ perusahaan sesuai ketentuan dan anggaran dasar', JA-12 E (meminta kelengkapan, memproses administrasi, mengeskalasi ke HR Lead -> HR Manager per data_conflicts), JA-14 E.4 (merekomendasikan hiring, salary action, disciplinary action), JA-08 E.1-E.2 (legal clearance, revisi klausul berisiko), Bagian 2 Authority Matrix, 'Masa pengalaman minimum ditentukan setelah job evaluation' cocok. Rujukan SNX-HR-JA-01 butir 4.3, 4.4, 4.5, 4.7, 4.10, SNX-ISMS-SOP-02 (5 hari kerja, Service Hub (GLPI), definisi Mutasi) dan SNX-HR-ORG-01 (NOC, SOC, SD dan PM; kolom Melapor ke) cocok dengan specs di repo. Angka 3/3/5/5/2/1 hari kerja berlabel (USULAN). Penanda tangan dan sebutan Direktur Utama/HR Manager sesuai data_conflicts. Lint pass, nol rujukan internal AI, nol em/en-dash.",
+  "Lintas dokumen (bagian 2 dan definisi Divisi): SOP ini mengecualikan rotasi sebagai perpindahan 'pada unit kerja, divisi, lokasi operasional, dan tingkatan jabatan yang sama', sedangkan scope SNX-HR-SOP-12 hanya 'unit kerja dan tingkatan jabatan yang sama' dan definisi Unit kerja SOP-12 menaruh NOC, SOC, serta SD dan PM dalam satu unit Operation. Pindah NOC ke SOC jadi rotasi menurut SOP-12 dan mutasi menurut SOP-13. Sudah dicatat di notes O1(a); perlu diselaraskan di SOP-12.",
+  "Definisi 'Tingkatan jabatan': kalimat 'SNX-HR-JA-01 tidak memuat grading, sehingga ukuran ini (USULAN).' tidak berpredikat. Usul: 'sehingga ukuran ini berstatus (USULAN).' (rumusan sama juga ada di SOP-12).",
+  "Definisi 'Divisi': 'Susunan ini mengikuti SNX-HR-ORG-01, yang menandainya (USULAN).' ambigu. Usul: 'SNX-HR-ORG-01 masih menandai susunan ini (USULAN).' Divisi juga dibatasi hanya Divisi Operation; kriteria tetap terpenuhi lewat unit kerja dan lokasi, tetapi pembatasan ini perlu ACC (U19).",
+  "Sinonim berganti: 'setelah' (3 kali, bagian 9) dan 'sesudah' (8 kali); 'perubahan akses' (6.4 no. 7 output, bagian 11) dan 'perubahan hak akses' (4.9, 5, 6.4, 8). Seragamkan ke 'sesudah' dan 'perubahan hak akses'.",
+  "Butir 4.9: 'Atasan Langsung Tujuan mengajukan hak akses baru' mempersempit 'Atasan langsung' dan 'HR atau atasan langsung' di SNX-ISMS-SOP-02 tanpa label (USULAN) di kalimat itu (tertutup intro 6.1, notes U14/O10). Pertimbangkan label inline.",
+  "Bagian 11: retensi 'Selama karyawan bekerja di SINUX (USULAN)' berarti rekaman mutasi bisa hilang saat karyawan keluar, padahal bukti 7.2 dan Annex A 6.5 biasanya diminta sesudah perubahan atau pemutusan kerja. Usul retensi diputus Aziz/konsultan.",
+  "Bagian 11: empat baris rekaman HR memuat lokasi, pemilik, dan retensi yang identik; bisa digabung satu baris agar tidak berulang (§6a.6).",
+  "Gaya: penunjuk '(butir 6.x)' hampir di tiap kalimat bagian 4 dan 5, plus 56 label (USULAN), membuat teks terasa mekanis. Tidak melanggar §6a secara jelas.",
+  "notes/HR-SOP-13.md: modifiedTime sumber tidak diukur ulang (O9); cacat audit butir 1-15 ditangani atau dijelaskan di notes bagian 5."
+ ]
 }

@@ -20,94 +20,276 @@
  "purpose": [
   "SOP ini mengatur cara SINUX memindahkan karyawan ke unit kerja, divisi, atau lokasi operasional lain sesuai kebutuhan organisasi.",
   "Hasil yang dijaga: setiap mutasi punya kebutuhan organisasi yang tertulis dan baru berlaku sesudah keputusan tertulis.",
-  "Karyawan yang dimutasi menerima uraian jabatan, garis lapor, dan lokasi operasional barunya sebelum tanggal berlaku, dan Atasan Langsung Tujuan mengajukan perubahan hak aksesnya."
+  "Karyawan yang dimutasi mengetahui tanggung jawab barunya sebelum tanggal berlaku, dan Atasan Langsung Tujuan mengajukan perubahan hak aksesnya."
  ],
  "scope": [
   "SOP ini berlaku untuk karyawan SINUX yang memegang jabatan di SNX-HR-ORG-01 dan dipindahkan ke unit kerja, divisi, atau lokasi operasional lain karena kebutuhan organisasi. Prosesnya mulai dari usulan Atasan Langsung Tujuan sampai pembaruan data kepegawaian, garis lapor, dan permintaan perubahan hak akses.",
-  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); penurunan jabatan (SNX-HR-SOP-11); perpindahan tugas atau fungsi yang tidak mengubah unit kerja, divisi, atau lokasi operasional (SNX-HR-SOP-12); pemindahan atas permintaan karyawan dan pemindahan sebagai sanksi disiplin (USULAN); penetapan gaji, tunjangan, dan biaya yang timbul karena mutasi (USULAN); mutasi Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN)."
+  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); penurunan jabatan (SNX-HR-SOP-11); perpindahan tugas atau fungsi pada unit kerja, divisi, lokasi operasional, dan tingkatan jabatan yang sama (SNX-HR-SOP-12); pemindahan atas permintaan karyawan dan pemindahan sebagai sanksi disiplin (USULAN); penetapan gaji, tunjangan, dan biaya yang timbul karena mutasi (USULAN); mutasi Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN)."
  ],
  "definitions": [
-  ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."],
-  ["Atasan Langsung Asal", "Jabatan yang menjadi tujuan garis lapor dari jabatan asal."],
-  ["Atasan Langsung Tujuan", "Jabatan yang menjadi tujuan garis lapor dari jabatan tujuan."],
-  ["Divisi", "Divisi Operation beserta sub divisinya, yaitu NOC, SOC, serta SD dan PM, menurut SNX-HR-ORG-01."],
-  ["Garis lapor", "Hubungan antara sebuah jabatan dan jabatan tempatnya melapor, menurut kolom Melapor ke di SNX-HR-ORG-01."],
-  ["Hari kerja", "Satuan batas waktu di bagian 8, tidak termasuk hari libur resmi (USULAN)."],
-  ["Jabatan asal", "Jabatan di SNX-HR-ORG-01 yang dipegang karyawan sebelum mutasi."],
-  ["Jabatan tujuan", "Jabatan di SNX-HR-ORG-01 yang dipegang karyawan sesudah mutasi."],
-  ["Karyawan yang dimutasi", "Karyawan SINUX yang namanya tertulis di usulan mutasi, sejak usulan dibuat sampai mutasi berlaku."],
-  ["Kebutuhan organisasi", "Keperluan SINUX akan tenaga kerja di unit kerja, divisi, atau lokasi operasional tujuan, yang menjadi dasar usulan mutasi."],
-  ["Keputusan mutasi", "Persetujuan, persetujuan dengan syarat, atau penolakan tertulis atas usulan mutasi, disingkat keputusan."],
-  ["Kualifikasi", "Pendidikan, pengalaman, persyaratan tambahan, dan kompetensi yang dibutuhkan sebuah jabatan menurut SNX-HR-JA-01."],
-  ["Lokasi operasional", "Tempat karyawan menjalankan pekerjaannya. Lokasi kerja utama semua jabatan tercantum di SNX-HR-JA-01 butir 4.10; lokasi operasional lain adalah tempat kerja selain itu yang disebut di keputusan mutasi."],
-  ["Mutasi", "Pemindahan karyawan ke unit kerja, divisi, atau lokasi operasional lain."],
-  ["Personal file", "Berkas kepegawaian setiap karyawan yang dipelihara HRGA Officer."],
-  ["Tanggal berlaku", "Tanggal mutasi mulai berlaku, tertulis di keputusan mutasi."],
-  ["Unit kerja", "Unit yang tercantum di kolom Unit pada Daftar Jabatan SNX-HR-ORG-01."],
-  ["Usulan mutasi", "Pengajuan tertulis dari Atasan Langsung Tujuan untuk memindahkan seorang karyawan, disingkat usulan."]
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Atasan Langsung Asal",
+   "Jabatan yang menjadi tujuan garis lapor dari jabatan asal (USULAN)."
+  ],
+  [
+   "Atasan Langsung Tujuan",
+   "Jabatan yang menjadi tujuan garis lapor dari jabatan tujuan (USULAN)."
+  ],
+  [
+   "Divisi",
+   "Divisi Operation beserta sub divisinya, yaitu NOC, SOC, serta SD dan PM. Susunan ini mengikuti SNX-HR-ORG-01, yang menandainya (USULAN)."
+  ],
+  [
+   "Garis lapor",
+   "Hubungan antara sebuah jabatan dan jabatan tempatnya melapor, menurut kolom Melapor ke di SNX-HR-ORG-01."
+  ],
+  [
+   "Hari kerja",
+   "Satuan batas waktu di bagian 8, tidak termasuk hari libur resmi (USULAN)."
+  ],
+  [
+   "Informasi jabatan baru",
+   "Uraian jabatan tujuan dari SNX-HR-JA-01, garis lapor baru, dan lokasi operasional tujuan, yang diberikan kepada karyawan yang dimutasi."
+  ],
+  [
+   "Jabatan asal",
+   "Jabatan di SNX-HR-ORG-01 yang dipegang karyawan sebelum mutasi."
+  ],
+  [
+   "Jabatan tujuan",
+   "Jabatan di SNX-HR-ORG-01 yang dipegang karyawan sesudah mutasi."
+  ],
+  [
+   "Karyawan yang dimutasi",
+   "Karyawan SINUX yang namanya tertulis di usulan mutasi, sejak usulan dibuat sampai mutasi berlaku."
+  ],
+  [
+   "Kebutuhan organisasi",
+   "Keperluan SINUX akan tenaga kerja di unit kerja, divisi, atau lokasi operasional tujuan, yang menjadi dasar usulan mutasi."
+  ],
+  [
+   "Keputusan mutasi",
+   "Persetujuan, persetujuan dengan syarat, atau penolakan tertulis atas usulan mutasi, disingkat keputusan."
+  ],
+  [
+   "Kualifikasi",
+   "Pendidikan, pengalaman, persyaratan tambahan, dan kompetensi yang dibutuhkan sebuah jabatan menurut SNX-HR-JA-01."
+  ],
+  [
+   "Lokasi operasional",
+   "Tempat karyawan menjalankan pekerjaannya. Lokasi kerja utama semua jabatan tercantum di SNX-HR-JA-01 butir 4.10; lokasi operasional lain adalah tempat kerja selain itu yang disebut di keputusan mutasi."
+  ],
+  [
+   "Mutasi",
+   "Pemindahan karyawan ke unit kerja, divisi, atau lokasi operasional lain."
+  ],
+  [
+   "Penanggap alternatif",
+   "Jabatan yang menjadi tujuan garis lapor dari Atasan Langsung Asal, menurut kolom Melapor ke di SNX-HR-ORG-01 (USULAN)."
+  ],
+  [
+   "Personal file",
+   "Berkas kepegawaian setiap karyawan yang dipelihara HRGA Officer."
+  ],
+  [
+   "Tanggal berlaku",
+   "Tanggal mutasi mulai berlaku, tertulis di keputusan mutasi."
+  ],
+  [
+   "Tingkatan jabatan",
+   "Jenjang sebuah jabatan di SNX-HR-ORG-01, dihitung dari jumlah garis lapor sampai Direktur Utama (JA-01). Dua jabatan satu tingkatan bila jumlah garis lapornya sama. SNX-HR-JA-01 tidak memuat grading, sehingga ukuran ini (USULAN)."
+  ],
+  [
+   "Unit kerja",
+   "Unit yang tercantum di kolom Unit pada Daftar Jabatan SNX-HR-ORG-01."
+  ],
+  [
+   "Usulan mutasi",
+   "Pengajuan tertulis dari Atasan Langsung Tujuan untuk memindahkan seorang karyawan, disingkat usulan (USULAN)."
+  ]
  ],
  "policy": [
-  "4.1 Dasar mutasi (ISO 9001:2015 7.1.2): mutasi dilakukan hanya karena kebutuhan organisasi. Atasan Langsung Tujuan menulis kebutuhan itu di usulan (butir 6.1).",
-  "4.2 Tujuan mutasi: usulan menyebut satu tujuan atau lebih, yaitu unit kerja, divisi, atau lokasi operasional. Mutasi ke unit kerja atau divisi lain menyebut jabatan tujuan di SNX-HR-ORG-01 dan Atasan Langsung Tujuan menurut kolom Melapor ke. Mutasi ke lokasi operasional lain menyebut lokasi tujuan, dan jabatan tujuan sama dengan jabatan asal.",
-  "4.3 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung Tujuan mengusulkan dan Atasan Langsung Asal menanggapi. HR Manager menilai dan merekomendasikan, lalu Direktur Utama menetapkan keputusan. HRGA Officer mencatat dan mengarsipkan setiap tahap (butir 6.2 sampai 6.4).",
-  "4.4 Kualifikasi (ISO 9001:2015 7.2): HR Manager menilai kualifikasi karyawan terhadap persyaratan jabatan tujuan di SNX-HR-JA-01 dan mencatat kesenjangan kompetensi beserta tindakannya. SNX-HR-JA-01 butir 4.7 menyatakan masa pengalaman minimum ditentukan sesudah job evaluation. Sampai masa itu ditetapkan, HR Manager menilai pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan dan menulis alasannya (USULAN).",
+  "4.1 Dasar mutasi (ISO 9001:2015 7.1.2): Atasan Langsung Tujuan mengusulkan mutasi hanya karena kebutuhan organisasi dan menulis kebutuhan itu di usulan (butir 6.1) (USULAN).",
+  "4.2 Tujuan mutasi: usulan menyebut satu tujuan atau lebih, yaitu unit kerja, divisi, atau lokasi operasional. Mutasi ke unit kerja atau divisi lain menyebut jabatan tujuan di SNX-HR-ORG-01 dan Atasan Langsung Tujuan menurut kolom Melapor ke (USULAN). Mutasi yang hanya mengubah lokasi operasional menyebut lokasi tujuan, dan jabatan tujuan sama dengan jabatan asal (USULAN).",
+  "4.3 Pemisahan peran (ISO 9001:2015 5.3): jabatan yang mengusulkan, menanggapi, menyimpulkan kualifikasi, menetapkan keputusan, dan mencatat mutasi berbeda satu sama lain; pembagiannya ada di bagian 5. Bila Atasan Langsung Tujuan dan Atasan Langsung Asal adalah jabatan yang sama, Penanggap alternatif menanggapi usulan menurut bagian 9 (USULAN).",
+  "4.4 Kualifikasi (ISO 9001:2015 7.2): HR Manager menyimpulkan kualifikasi karyawan terhadap persyaratan jabatan tujuan di SNX-HR-JA-01 dan mencatat kesenjangan kompetensi beserta tindakannya. SNX-HR-JA-01 butir 4.7 menyatakan masa pengalaman minimum ditentukan sesudah job evaluation. Sampai masa itu ditetapkan, HR Manager menyimpulkan pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan dan menulis alasannya (USULAN).",
   "4.5 Wewenang di tempat baru (ISO 9001:2015 5.3 dan ISO/IEC 27001:2022 Annex A 5.2): karyawan yang dimutasi menjalankan tugas dan wewenang jabatan tujuan menurut SNX-HR-JA-01, dan wewenang jabatan asal berakhir pada tanggal berlaku (USULAN). Mutasi tidak otomatis memberi hak tanda tangan kontrak atau otorisasi keuangan; hak itu mengikuti Authority Matrix (SNX-HR-JA-01 butir 4.4).",
   "4.6 Persetujuan tertulis (ISO 9001:2015 5.3): SNX-HR-JA-01 butir 4.5 menyatakan keputusan pengangkatan atau pemutusan hubungan kerja mengikuti delegasi dan persetujuan tertulis yang berlaku. Mutasi mengikuti ketentuan yang sama: berlaku hanya sesudah keputusan tertulis Direktur Utama (USULAN).",
-  "4.7 Komunikasi tanggung jawab (ISO 9001:2015 5.3): karyawan yang dimutasi menerima uraian jabatan tujuan, garis lapor, dan lokasi operasional barunya, lalu mengonfirmasi secara tertulis bahwa ia memahaminya sebelum tanggal berlaku (butir 6.4) (USULAN).",
+  "4.7 Komunikasi tanggung jawab (ISO 9001:2015 5.3): karyawan yang dimutasi menerima informasi jabatan baru dan mengonfirmasi secara tertulis bahwa ia memahaminya sebelum tanggal berlaku (butir 6.4) (USULAN).",
   "4.8 Serah terima pekerjaan: Atasan Langsung Asal menunjuk pengganti saat menanggapi usulan (butir 6.2) dan mencatat serah terima pekerjaan sebelum tanggal berlaku (butir 6.4) (USULAN).",
   "4.9 Hak akses (ISO/IEC 27001:2022 Annex A 5.18 dan 6.5): SNX-ISMS-SOP-02 mengatur perubahan akses saat mutasi, yaitu perpindahan peran seseorang: pencabutan hak akses lama yang tidak relevan paling lambat 5 hari kerja sesudah mutasi, dan pengajuan hak akses baru. Mutasi dalam SOP ini termasuk di dalamnya, dan Atasan Langsung Tujuan mengajukan hak akses baru (butir 6.4).",
   "4.10 Garis lapor dan dokumen organisasi (ISO 9001:2015 5.3): SNX-HR-JA-01 butir 4.3 menyatakan garis lapor berlabel menunggu konfirmasi belum resmi. Bila jabatan atau garis lapor karyawan berubah, HR Manager memperbarui SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi (butir 6.4).",
   "4.11 Rekaman dan klasifikasi (ISO 9001:2015 7.5.3): HRGA Officer mengarsipkan rekaman mutasi di personal file karyawan (butir 6.4). Rekaman itu berisi data karyawan dan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan retensi ada di tabel bagian 11."
  ],
  "roles": [
-  ["HR Manager", "Pemilik SOP. Menyimpulkan kualifikasi karyawan yang dimutasi, mencatat kesenjangan kompetensi, merekomendasikan keputusan ke Direktur Utama, menyampaikan keputusan, dan memperbarui SNX-HR-ORG-01 serta SNX-HR-JA-01 (butir 6.2 sampai 6.4).", "Merekomendasikan keputusan kepada Direktur Utama dan tidak memutuskan mutasi, mengikuti wewenang JA-14 di SNX-HR-JA-01 untuk hiring, salary action, dan disciplinary action (USULAN)."],
-  ["HRGA Officer", "Memeriksa kelengkapan usulan, meneruskannya ke Atasan Langsung Asal, memberikan uraian jabatan tujuan kepada karyawan, memperbarui data kepegawaian, mengarsipkan rekaman di personal file, dan memberi tahu Atasan Langsung Tujuan tentang mutasi (butir 6.2 dan 6.4).", "Meminta kelengkapan data atau dokumen, memproses administrasi dalam SOP, dan mengeskalasi keputusan HR ke HR Manager (JA-12 di SNX-HR-JA-01)."],
-  ["Direktur Utama", "Memutuskan usulan mutasi: setujui, setujui dengan syarat, atau tolak, dan menetapkan tanggal berlaku (butir 6.3).", "Menyetujui atau menolak usulan, dalam batas anggaran dasar dan delegasi tertulis yang berlaku (USULAN)."],
-  ["Atasan Langsung Tujuan", "Menulis kebutuhan organisasi, mengisi dan mengirim usulan, menerima keputusan, dan mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02 (butir 6.1, 6.3, dan 6.4).", "Mengusulkan mutasi; tidak memutuskannya."],
-  ["Atasan Langsung Asal", "Menanggapi usulan, menunjuk pengganti, dan mencatat serah terima pekerjaan karyawan yang dimutasi (butir 6.2 dan 6.4).", "Menyatakan keberatan atas pelepasan karyawan; tidak memutuskan mutasi."],
-  ["Karyawan yang dimutasi", "Menerima uraian jabatan tujuan, garis lapor, dan lokasi operasional, lalu mengonfirmasi secara tertulis bahwa ia memahaminya (butir 6.4) (USULAN).", "Meminta penjelasan atas uraian jabatan tujuan sebelum mengonfirmasi."],
-  ["Legal & Compliance (JA-08)", "Meninjau perubahan perjanjian kerja bila HR Manager memintanya (bagian 9) (USULAN).", "Memberikan legal clearance dan meminta revisi klausul berisiko (JA-08 di SNX-HR-JA-01)."]
+  [
+   "HR Manager",
+   "Pemilik SOP. Menyimpulkan kualifikasi karyawan yang dimutasi, mencatat kesenjangan kompetensi, merekomendasikan keputusan ke Direktur Utama, menyampaikan keputusan, dan memperbarui SNX-HR-ORG-01 serta SNX-HR-JA-01 (butir 6.2 sampai 6.4).",
+   "Merekomendasikan keputusan kepada Direktur Utama dan tidak memutuskan mutasi, mengikuti wewenang JA-14 di SNX-HR-JA-01 untuk hiring, salary action, dan disciplinary action (USULAN)."
+  ],
+  [
+   "HRGA Officer",
+   "Memeriksa kelengkapan usulan, meneruskannya ke Atasan Langsung Asal, memberikan informasi jabatan baru kepada karyawan, memperbarui data kepegawaian, mengarsipkan rekaman di personal file, dan memberi tahu Atasan Langsung Tujuan tentang mutasi (butir 6.2 dan 6.4).",
+   "Meminta kelengkapan data atau dokumen, memproses administrasi dalam SOP, dan mengeskalasi keputusan HR ke HR Manager (JA-12 di SNX-HR-JA-01)."
+  ],
+  [
+   "Direktur Utama",
+   "Memutuskan usulan mutasi: setujui, setujui dengan syarat, atau tolak, dan menetapkan tanggal berlaku (butir 6.3).",
+   "Menyetujui atau menolak usulan, dalam batas anggaran dasar dan delegasi tertulis yang berlaku (USULAN)."
+  ],
+  [
+   "Atasan Langsung Tujuan",
+   "Pengusul (USULAN). Menulis kebutuhan organisasi, mengisi dan mengirim usulan, menerima keputusan, dan mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02 (butir 6.1, 6.3, dan 6.4).",
+   "Mengusulkan mutasi; tidak memutuskannya."
+  ],
+  [
+   "Atasan Langsung Asal",
+   "Penanggap (USULAN). Menanggapi usulan, menunjuk pengganti, dan mencatat serah terima pekerjaan karyawan yang dimutasi (butir 6.2 dan 6.4).",
+   "Menyatakan keberatan atas pelepasan karyawan; tidak memutuskan mutasi."
+  ],
+  [
+   "Penanggap alternatif",
+   "Menanggapi usulan sebagai ganti Atasan Langsung Asal bila Atasan Langsung Tujuan dan Atasan Langsung Asal adalah jabatan yang sama (bagian 9) (USULAN).",
+   "Menyatakan keberatan atas pelepasan karyawan; tidak memutuskan mutasi."
+  ],
+  [
+   "Karyawan yang dimutasi",
+   "Menerima informasi jabatan baru, lalu mengonfirmasi secara tertulis bahwa ia memahaminya (butir 6.4) (USULAN).",
+   "Meminta penjelasan atas informasi jabatan baru sebelum mengonfirmasi."
+  ],
+  [
+   "Legal & Compliance (JA-08)",
+   "Meninjau perubahan perjanjian kerja bila HR Manager memintanya (bagian 9) (USULAN).",
+   "Memberikan legal clearance dan meminta revisi klausul berisiko (JA-08 di SNX-HR-JA-01)."
+  ]
  ],
  "procedures": [
   {
    "title": "Pengajuan usulan",
-   "intro": ["Atasan Langsung Tujuan memulai proses. Langkah di butir 6.1 sampai 6.4 berstatus (USULAN) sampai Direktur Utama mengesahkan SOP ini."],
+   "intro": [
+    "Atasan Langsung Tujuan memulai proses. Langkah di butir 6.1 sampai 6.4 berstatus (USULAN) sampai Direktur Utama mengesahkan SOP ini."
+   ],
    "steps": [
-    ["Pilih karyawan yang dipindahkan dan tujuannya: unit kerja, divisi, atau lokasi operasional.", "Atasan Langsung Tujuan", "Karyawan dan tujuan mutasi"],
-    ["Isi usulan mutasi sesuai butir 4.1 dan 4.2: kebutuhan organisasi, jabatan asal, jabatan tujuan, tujuan mutasi, dan tanggal berlaku yang diusulkan.", "Atasan Langsung Tujuan", "Usulan mutasi"],
-    ["Kirim usulan mutasi ke HRGA Officer.", "Atasan Langsung Tujuan", "Usulan mutasi yang diterima"]
+    [
+     "Pilih karyawan yang dipindahkan dan tujuannya: unit kerja, divisi, atau lokasi operasional.",
+     "Atasan Langsung Tujuan",
+     "Karyawan dan tujuan mutasi"
+    ],
+    [
+     "Isi usulan mutasi sesuai butir 4.1 dan 4.2: kebutuhan organisasi, jabatan asal, jabatan tujuan, tujuan mutasi, dan tanggal berlaku yang diusulkan.",
+     "Atasan Langsung Tujuan",
+     "Usulan mutasi"
+    ],
+    [
+     "Kirim usulan mutasi ke HRGA Officer.",
+     "Atasan Langsung Tujuan",
+     "Usulan mutasi yang diterima"
+    ]
    ]
   },
   {
-   "title": "Penilaian usulan",
+   "title": "Pemeriksaan usulan dan kualifikasi",
    "steps": [
-    ["Periksa kelengkapan isian usulan mutasi.", "HRGA Officer", "Usulan lengkap, atau daftar kekurangan (bagian 9)"],
-    ["Kirim usulan yang lengkap ke Atasan Langsung Asal untuk ditanggapi.", "HRGA Officer", "Usulan yang diterima Atasan Langsung Asal"],
-    ["Tanggapi usulan: pelepasan karyawan, pengganti yang ditunjuk, dan keberatan bila ada.", "Atasan Langsung Asal", "Tanggapan tertulis Atasan Langsung Asal"],
-    ["Simpulkan kualifikasi karyawan terhadap persyaratan jabatan tujuan di SNX-HR-JA-01.", "HR Manager", "Kesimpulan kualifikasi"],
-    ["Catat kesenjangan kompetensi terhadap jabatan tujuan beserta tindakan yang diperlukan.", "HR Manager", "Daftar kesenjangan kompetensi dan tindakannya"]
+    [
+     "Periksa kelengkapan isian usulan mutasi.",
+     "HRGA Officer",
+     "Usulan lengkap, atau daftar kekurangan (bagian 9)"
+    ],
+    [
+     "Kirim usulan yang lengkap ke Atasan Langsung Asal untuk ditanggapi.",
+     "HRGA Officer",
+     "Usulan yang diterima Atasan Langsung Asal"
+    ],
+    [
+     "Tanggapi usulan: pelepasan karyawan, pengganti yang ditunjuk, dan keberatan bila ada.",
+     "Atasan Langsung Asal",
+     "Tanggapan tertulis Atasan Langsung Asal"
+    ],
+    [
+     "Simpulkan kualifikasi karyawan terhadap persyaratan jabatan tujuan di SNX-HR-JA-01.",
+     "HR Manager",
+     "Kesimpulan kualifikasi"
+    ],
+    [
+     "Catat kesenjangan kompetensi terhadap jabatan tujuan beserta tindakan yang diperlukan.",
+     "HR Manager",
+     "Daftar kesenjangan kompetensi dan tindakannya"
+    ]
+   ],
+   "intro": [
+    "Nomor 2 dan 3 mengikuti bagian 9 bila Atasan Langsung Tujuan dan Atasan Langsung Asal adalah jabatan yang sama."
    ]
   },
   {
    "title": "Persetujuan",
    "steps": [
-    ["Kirim rekomendasi (setujui, setujui dengan syarat, atau tolak) beserta usulan, tanggapan, dan kesimpulan penilaian ke Direktur Utama.", "HR Manager", "Rekomendasi mutasi"],
-    ["Putuskan usulan mutasi: setujui, setujui dengan syarat, atau tolak.", "Direktur Utama", "Keputusan mutasi tertulis, memuat jabatan tujuan, unit kerja, divisi, atau lokasi operasional tujuan, syarat, dan tanggal berlaku bila disetujui"],
-    ["Sampaikan keputusan mutasi kepada Atasan Langsung Tujuan, Atasan Langsung Asal, dan karyawan yang dimutasi.", "HR Manager", "Pemberitahuan keputusan"]
+    [
+     "Kirim rekomendasi (setujui, setujui dengan syarat, atau tolak) beserta usulan, tanggapan, dan kesimpulan kualifikasi ke Direktur Utama.",
+     "HR Manager",
+     "Rekomendasi mutasi"
+    ],
+    [
+     "Putuskan usulan mutasi: setujui, setujui dengan syarat, atau tolak.",
+     "Direktur Utama",
+     "Keputusan mutasi tertulis, memuat jabatan tujuan, unit kerja, divisi, atau lokasi operasional tujuan, syarat, dan tanggal berlaku bila disetujui"
+    ],
+    [
+     "Sampaikan keputusan mutasi kepada Atasan Langsung Tujuan, Atasan Langsung Asal, dan karyawan yang dimutasi.",
+     "HR Manager",
+     "Pemberitahuan keputusan"
+    ]
    ]
   },
   {
    "title": "Pelaksanaan mutasi",
-   "intro": ["Langkah berikut berjalan sesudah keputusan menyetujui. Untuk keputusan menolak, lihat bagian 9."],
+   "intro": [
+    "Langkah berikut berjalan sesudah keputusan menyetujui. Untuk keputusan menolak, lihat bagian 9."
+   ],
    "steps": [
-    ["Catat serah terima pekerjaan karyawan yang dimutasi kepada pengganti, selesai sebelum tanggal berlaku.", "Atasan Langsung Asal", "Catatan serah terima pekerjaan"],
-    ["Berikan uraian jabatan tujuan dari SNX-HR-JA-01, garis lapor baru, dan lokasi operasional tujuan kepada karyawan yang dimutasi.", "HRGA Officer", "Uraian jabatan tujuan, garis lapor, dan lokasi operasional yang diterima karyawan"],
-    ["Konfirmasi secara tertulis bahwa uraian jabatan tujuan, garis lapor, dan lokasi operasional sudah diterima dan dipahami, sebelum tanggal berlaku.", "Karyawan yang dimutasi", "Konfirmasi tertulis karyawan"],
-    ["Perbarui unit kerja, divisi, jabatan, lokasi operasional, dan tanggal berlaku di data kepegawaian karyawan.", "HRGA Officer", "Data kepegawaian yang diperbarui"],
-    ["Arsipkan usulan, tanggapan, kesimpulan penilaian, rekomendasi, keputusan, catatan serah terima, dan konfirmasi karyawan di personal file.", "HRGA Officer", "Arsip mutasi di personal file"],
-    ["Beri tahu Atasan Langsung Tujuan tentang mutasi paling lambat pada tanggal berlaku, agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02.", "HRGA Officer", "Pemberitahuan mutasi"],
-    ["Ajukan perubahan hak akses karyawan yang dimutasi di Service Hub (GLPI) menurut SNX-ISMS-SOP-02.", "Atasan Langsung Tujuan", "Tiket perubahan akses di Service Hub (GLPI)"],
-    ["Perbarui pemegang jabatan dan garis lapor di SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi kedua dokumen, bila jabatan atau garis lapor berubah.", "HR Manager", "Revisi SNX-HR-ORG-01 dan SNX-HR-JA-01"]
+    [
+     "Catat serah terima pekerjaan karyawan yang dimutasi kepada pengganti, selesai sebelum tanggal berlaku.",
+     "Atasan Langsung Asal",
+     "Catatan serah terima pekerjaan"
+    ],
+    [
+     "Berikan informasi jabatan baru kepada karyawan yang dimutasi.",
+     "HRGA Officer",
+     "Informasi jabatan baru yang diterima karyawan"
+    ],
+    [
+     "Konfirmasi secara tertulis bahwa informasi jabatan baru sudah diterima dan dipahami, sebelum tanggal berlaku.",
+     "Karyawan yang dimutasi",
+     "Konfirmasi tertulis karyawan"
+    ],
+    [
+     "Perbarui unit kerja, divisi, jabatan, lokasi operasional, dan tanggal berlaku di data kepegawaian karyawan.",
+     "HRGA Officer",
+     "Data kepegawaian yang diperbarui"
+    ],
+    [
+     "Arsipkan usulan, tanggapan, kesimpulan kualifikasi, rekomendasi, keputusan, catatan serah terima, dan konfirmasi karyawan di personal file.",
+     "HRGA Officer",
+     "Arsip mutasi di personal file"
+    ],
+    [
+     "Beri tahu Atasan Langsung Tujuan tentang mutasi paling lambat pada tanggal berlaku, agar ia mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02.",
+     "HRGA Officer",
+     "Pemberitahuan mutasi"
+    ],
+    [
+     "Ajukan perubahan hak akses karyawan yang dimutasi di Service Hub (GLPI) menurut SNX-ISMS-SOP-02.",
+     "Atasan Langsung Tujuan",
+     "Tiket perubahan akses di Service Hub (GLPI)"
+    ],
+    [
+     "Perbarui pemegang jabatan dan garis lapor di SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi kedua dokumen, bila jabatan atau garis lapor berubah.",
+     "HR Manager",
+     "Revisi SNX-HR-ORG-01 dan SNX-HR-JA-01"
+    ]
    ]
   }
  ],
@@ -126,7 +308,7 @@
    "i": "Keputusan\nmenyetujui?",
    "z": "Selesai. Usulan baru\nmulai dari butir 6.1",
    "j": "Catat serah terima pekerjaan\n(butir 6.4)\nAtasan Langsung Asal",
-   "k": "Berikan uraian jabatan tujuan,\ngaris lapor, lokasi operasional (butir 6.4)\nHRGA Officer",
+   "k": "Berikan informasi jabatan baru\n(butir 6.4)\nHRGA Officer",
    "l": "Konfirmasi tertulis (butir 6.4)\nKaryawan yang dimutasi",
    "m": "Perbarui data, arsipkan, beri tahu\nAtasan Langsung Tujuan (butir 6.4)\nHRGA Officer",
    "n": "Ajukan perubahan hak akses\n(butir 6.4)\nAtasan Langsung Tujuan",
@@ -138,72 +320,244 @@
    "z": "ellipse"
   },
   "edges": [
-   ["a", "b"],
-   ["b", "c", "Ya"],
-   ["b", "x", "Tidak"],
-   ["x", "a", "", "dashed"],
-   ["c", "d"],
-   ["d", "e"],
-   ["e", "f"],
-   ["f", "g"],
-   ["g", "h"],
-   ["h", "i"],
-   ["i", "j", "Ya"],
-   ["i", "z", "Tidak"],
-   ["j", "k"],
-   ["k", "l"],
-   ["l", "m"],
-   ["m", "n"],
-   ["n", "o"]
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c",
+    "Ya"
+   ],
+   [
+    "b",
+    "x",
+    "Tidak"
+   ],
+   [
+    "x",
+    "a",
+    "",
+    "dashed"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "e",
+    "f"
+   ],
+   [
+    "f",
+    "g"
+   ],
+   [
+    "g",
+    "h"
+   ],
+   [
+    "h",
+    "i"
+   ],
+   [
+    "i",
+    "j",
+    "Ya"
+   ],
+   [
+    "i",
+    "z",
+    "Tidak"
+   ],
+   [
+    "j",
+    "k"
+   ],
+   [
+    "k",
+    "l"
+   ],
+   [
+    "l",
+    "m"
+   ],
+   [
+    "m",
+    "n"
+   ],
+   [
+    "n",
+    "o"
+   ]
   ],
   "caption": "Gambar 1. Alur mutasi (USULAN). Garis putus-putus kembali ke alur utama."
  },
  "sla": [
-  ["Pemeriksaan kelengkapan usulan (butir 6.2)", "HRGA Officer", "3 hari kerja sejak usulan diterima (USULAN)"],
-  ["Tanggapan atas usulan (butir 6.2)", "Atasan Langsung Asal", "3 hari kerja sejak usulan lengkap diterima (USULAN)"],
-  ["Kesimpulan kualifikasi dan rekomendasi (butir 6.2 dan 6.3)", "HR Manager", "5 hari kerja sejak tanggapan diterima (USULAN)"],
-  ["Keputusan mutasi (butir 6.3)", "Direktur Utama", "5 hari kerja sejak rekomendasi diterima (USULAN)"],
-  ["Pemberitahuan keputusan (butir 6.3)", "HR Manager", "2 hari kerja sejak keputusan diterima (USULAN)"],
-  ["Serah terima pekerjaan (butir 6.4)", "Atasan Langsung Asal", "Selesai sebelum tanggal berlaku (USULAN)"],
-  ["Konfirmasi uraian jabatan tujuan (butir 6.4)", "Karyawan yang dimutasi", "Sebelum tanggal berlaku (USULAN)"],
-  ["Pemberitahuan mutasi untuk hak akses (butir 6.4)", "HRGA Officer", "Paling lambat pada tanggal berlaku, mengikuti SNX-ISMS-SOP-02"]
+  [
+   "Pemeriksaan kelengkapan usulan (butir 6.2)",
+   "HRGA Officer",
+   "3 hari kerja sejak usulan diterima (USULAN)"
+  ],
+  [
+   "Tanggapan atas usulan (butir 6.2)",
+   "Atasan Langsung Asal",
+   "3 hari kerja sejak usulan lengkap diterima (USULAN)"
+  ],
+  [
+   "Kesimpulan kualifikasi dan rekomendasi (butir 6.2 dan 6.3)",
+   "HR Manager",
+   "5 hari kerja sejak tanggapan diterima (USULAN)"
+  ],
+  [
+   "Keputusan mutasi (butir 6.3)",
+   "Direktur Utama",
+   "5 hari kerja sejak rekomendasi diterima (USULAN)"
+  ],
+  [
+   "Pemberitahuan keputusan (butir 6.3)",
+   "HR Manager",
+   "2 hari kerja sejak keputusan diterima (USULAN)"
+  ],
+  [
+   "Serah terima pekerjaan (butir 6.4)",
+   "Atasan Langsung Asal",
+   "Selesai sebelum tanggal berlaku (USULAN)"
+  ],
+  [
+   "Konfirmasi informasi jabatan baru (butir 6.4)",
+   "Karyawan yang dimutasi",
+   "Sebelum tanggal berlaku (USULAN)"
+  ],
+  [
+   "Pemberitahuan mutasi untuk hak akses (butir 6.4)",
+   "HRGA Officer",
+   "Paling lambat pada tanggal berlaku, mengikuti SNX-ISMS-SOP-02"
+  ],
+  [
+   "Pengajuan perubahan hak akses (butir 6.4)",
+   "Atasan Langsung Tujuan",
+   "1 hari kerja sesudah pemberitahuan mutasi diterima, agar batas pencabutan 5 hari kerja di SNX-ISMS-SOP-02 tercapai (USULAN)"
+  ]
  ],
  "exceptions": [
-  ["Usulan tidak lengkap pada butir 6.2", "HRGA Officer mengembalikan usulan ke Atasan Langsung Tujuan beserta daftar kekurangan. Penilaian berlanjut setelah Atasan Langsung Tujuan mengirim usulan yang lengkap."],
-  ["Jabatan tujuan belum tercantum di SNX-HR-ORG-01 atau SNX-HR-JA-01", "HR Manager menambahkan jabatan itu lewat revisi kedua dokumen. Usulan diproses setelah Direktur Utama mengesahkan revisi itu (USULAN)."],
-  ["Atasan Langsung Tujuan atau Atasan Langsung Asal berlabel menunggu konfirmasi, atau belum ada pemegangnya, di SNX-HR-ORG-01", "Direktur Utama menunjuk jabatan yang mengajukan usulan dan jabatan yang menanggapinya (USULAN)."],
-  ["Jabatan tujuan berkedudukan lebih tinggi atau lebih rendah dari jabatan asal di SNX-HR-ORG-01", "HR Manager mengalihkan usulan ke SNX-HR-SOP-10 untuk kenaikan jabatan atau ke SNX-HR-SOP-11 untuk penurunan jabatan (USULAN)."],
-  ["Atasan Langsung Asal keberatan melepas karyawan", "HR Manager memuat keberatan itu dalam rekomendasi ke Direktur Utama, yang memutuskan (USULAN)."],
-  ["Mutasi mengubah perjanjian kerja karyawan", "HR Manager meminta Legal & Compliance (JA-08) meninjau perubahan itu sebelum rekomendasi dikirim ke Direktur Utama (USULAN)."],
-  ["Keputusan menyetujui dengan syarat", "HR Manager mencatat tindakan pemenuhan syarat dan melapor ke Direktur Utama saat syarat terpenuhi. HRGA Officer memperbarui data kepegawaian sesudah laporan itu (USULAN)."],
-  ["Keputusan menolak usulan", "HR Manager menyampaikan keputusan beserta alasannya kepada Atasan Langsung Tujuan, Atasan Langsung Asal, dan karyawan yang dimutasi. HRGA Officer mengarsipkan keputusan di personal file. Usulan baru untuk karyawan yang sama dimulai dari butir 6.1."],
-  ["Karyawan yang dimutasi menyatakan keberatan atas keputusan", "HRGA Officer mencatat keberatan itu di personal file dan melapor ke HR Manager. HR Manager meminta Direktur Utama memutuskan tindak lanjutnya (USULAN)."],
-  ["Karyawan yang dimutasi belum mengonfirmasi uraian jabatan pada tanggal berlaku", "HRGA Officer melapor ke HR Manager, lalu HR Manager meminta Direktur Utama memutuskan penundaan tanggal berlaku (USULAN)."]
+  [
+   "Usulan tidak lengkap pada butir 6.2",
+   "HRGA Officer mengembalikan usulan ke Atasan Langsung Tujuan beserta daftar kekurangan. Proses berlanjut setelah Atasan Langsung Tujuan mengirim usulan yang lengkap."
+  ],
+  [
+   "Jabatan tujuan belum tercantum di SNX-HR-ORG-01 atau SNX-HR-JA-01",
+   "HR Manager menambahkan jabatan itu lewat revisi kedua dokumen. HRGA Officer melanjutkan proses usulan setelah Direktur Utama mengesahkan revisi itu (USULAN)."
+  ],
+  [
+   "Atasan Langsung Tujuan dan Atasan Langsung Asal adalah jabatan yang sama, mis. pada mutasi yang hanya mengubah lokasi operasional",
+   "HRGA Officer mengirim usulan ke Penanggap alternatif pada butir 6.2 nomor 2, dan Penanggap alternatif menanggapi usulan pada nomor 3 dalam batas waktu bagian 8 (USULAN)."
+  ],
+  [
+   "Atasan Langsung Tujuan atau Atasan Langsung Asal berlabel menunggu konfirmasi, atau tanpa pemegang, di SNX-HR-ORG-01",
+   "Direktur Utama menunjuk jabatan yang mengajukan usulan dan jabatan yang menanggapinya (USULAN)."
+  ],
+  [
+   "Jabatan tujuan berbeda tingkatan jabatan dari jabatan asal",
+   "HR Manager mengalihkan usulan ke SNX-HR-SOP-10 bila tingkatan jabatan tujuan lebih tinggi, atau ke SNX-HR-SOP-11 bila lebih rendah (USULAN)."
+  ],
+  [
+   "Atasan Langsung Asal atau Penanggap alternatif keberatan melepas karyawan",
+   "HR Manager memuat keberatan itu dalam rekomendasi ke Direktur Utama, yang memutuskan (USULAN)."
+  ],
+  [
+   "Mutasi mengubah perjanjian kerja karyawan",
+   "HR Manager meminta Legal & Compliance (JA-08) meninjau perubahan itu sebelum rekomendasi dikirim ke Direktur Utama (USULAN)."
+  ],
+  [
+   "Keputusan menyetujui dengan syarat",
+   "HR Manager mencatat tindakan pemenuhan syarat dan melapor ke Direktur Utama saat syarat terpenuhi. HRGA Officer memperbarui data kepegawaian sesudah laporan itu (USULAN)."
+  ],
+  [
+   "Keputusan menolak usulan",
+   "HR Manager menyampaikan keputusan beserta alasannya kepada Atasan Langsung Tujuan, Atasan Langsung Asal, dan karyawan yang dimutasi. HRGA Officer mengarsipkan keputusan di personal file. Usulan baru untuk karyawan yang sama dimulai dari butir 6.1."
+  ],
+  [
+   "Karyawan yang dimutasi menyatakan keberatan atas keputusan",
+   "HRGA Officer mencatat keberatan itu di personal file dan melapor ke HR Manager. HR Manager meminta Direktur Utama memutuskan tindak lanjutnya (USULAN)."
+  ],
+  [
+   "Karyawan yang dimutasi belum mengonfirmasi informasi jabatan baru pada tanggal berlaku",
+   "HRGA Officer melapor ke HR Manager, lalu HR Manager meminta Direktur Utama memutuskan penundaan tanggal berlaku (USULAN)."
+  ]
  ],
  "conclusion": [
   "HR Manager selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8 (USULAN).",
-  "HR Manager meninjau SOP ini setiap tahun, dan lebih awal bila Direktur Utama mengubah wewenang keputusan mutasi atau struktur di SNX-HR-ORG-01 berubah secara signifikan."
+  "HR Manager meninjau SOP ini setiap tahun, dan lebih awal bila Direktur Utama mengubah penetap keputusan di butir 4.6 atau revisi SNX-HR-ORG-01 menambah atau menghapus unit kerja atau divisi."
  ],
  "related_documents": [
-  ["SNX-HR-JA-01", "Job Analysis dan Uraian Jabatan: uraian jabatan tujuan, persyaratan jabatan, wewenang, status garis lapor, dan lokasi kerja utama."],
-  ["SNX-HR-ORG-01", "Struktur Organisasi SINUX: daftar jabatan, unit, garis lapor yang menentukan Atasan Langsung Asal dan Atasan Langsung Tujuan, dan nama peran di bagian 5."],
-  ["SNX-HR-SOP-10", "Promotion: kenaikan jabatan, dikecualikan dari SOP ini (bagian 2 dan 9)."],
-  ["SNX-HR-SOP-11", "Demotion: penurunan jabatan, dikecualikan dari SOP ini (bagian 2 dan 9)."],
-  ["SNX-HR-SOP-12", "Rotation: perpindahan tugas atau fungsi yang tidak mengubah unit kerja, divisi, atau lokasi operasional, dikecualikan dari SOP ini (bagian 2)."],
-  ["SNX-ISMS-SOP-02", "User Access Control & Authorization: perubahan akses saat mutasi atau perpindahan peran (butir 4.9 dan 6.4)."],
-  ["SNX-ISMS-PRO-01", "Information Classification & Handling Procedure: tingkat klasifikasi rekaman mutasi (butir 4.11)."],
-  ["Belum bernomor", "Authority Matrix: hak tanda tangan kontrak dan otorisasi keuangan (butir 4.5)."]
+  [
+   "SNX-HR-JA-01",
+   "Job Analysis dan Uraian Jabatan: uraian jabatan tujuan, persyaratan jabatan, wewenang, status garis lapor, dan lokasi kerja utama."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX: daftar jabatan, unit, garis lapor yang menentukan Atasan Langsung Asal, Atasan Langsung Tujuan, dan Penanggap alternatif, dan nama peran di bagian 5."
+  ],
+  [
+   "SNX-HR-SOP-10",
+   "Promotion: kenaikan jabatan, dikecualikan dari SOP ini (bagian 2 dan 9)."
+  ],
+  [
+   "SNX-HR-SOP-11",
+   "Demotion: penurunan jabatan, dikecualikan dari SOP ini (bagian 2 dan 9)."
+  ],
+  [
+   "SNX-HR-SOP-12",
+   "Rotation: perpindahan tugas atau fungsi pada unit kerja, divisi, lokasi operasional, dan tingkatan jabatan yang sama, dikecualikan dari SOP ini (bagian 2)."
+  ],
+  [
+   "SNX-ISMS-SOP-02",
+   "User Access Control & Authorization: perubahan akses saat mutasi atau perpindahan peran (butir 4.9 dan 6.4)."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling Procedure: tingkat klasifikasi rekaman mutasi (butir 4.11)."
+  ],
+  [
+   "Belum bernomor",
+   "Authority Matrix: hak tanda tangan kontrak dan otorisasi keuangan (butir 4.5)."
+  ]
  ],
  "records": [
-  ["Usulan mutasi dan tanggapan Atasan Langsung Asal", "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.", "Selama karyawan bekerja di SINUX (USULAN)"],
-  ["Kesimpulan kualifikasi, daftar kesenjangan kompetensi, dan rekomendasi", "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.", "Selama karyawan bekerja di SINUX (USULAN)"],
-  ["Keputusan mutasi dan konfirmasi tertulis karyawan", "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.", "Selama karyawan bekerja di SINUX (USULAN)"],
-  ["Catatan serah terima pekerjaan", "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.", "Selama karyawan bekerja di SINUX (USULAN)"],
-  ["Tiket perubahan akses karena mutasi", "Service Hub (GLPI). Pemilik dan retensi mengikuti SNX-ISMS-SOP-02.", "Mengikuti SNX-ISMS-SOP-02"]
+  [
+   "Usulan mutasi dan tanggapan Atasan Langsung Asal",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ],
+  [
+   "Kesimpulan kualifikasi, daftar kesenjangan kompetensi, dan rekomendasi",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ],
+  [
+   "Keputusan mutasi dan konfirmasi tertulis karyawan",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ],
+  [
+   "Catatan serah terima pekerjaan",
+   "Personal file karyawan di folder Google Drive Departemen HR (USULAN). Pemilik: HRGA Officer.",
+   "Selama karyawan bekerja di SINUX (USULAN)"
+  ],
+  [
+   "Tiket perubahan akses karena mutasi",
+   "Service Hub (GLPI). Pemilik dan retensi mengikuti SNX-ISMS-SOP-02.",
+   "Mengikuti SNX-ISMS-SOP-02"
+  ]
  ],
  "iso_refs": {
   "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), 7.1.2 (Orang), 7.2 (Kompetensi), 7.5.3 (Pengendalian informasi terdokumentasi).",
   "ISO/IEC 27001:2022": "Annex A 5.2 (Peran dan tanggung jawab keamanan informasi), 5.18 (Hak akses), 6.5 (Tanggung jawab setelah pemutusan atau perubahan pekerjaan).",
-  "Status acuan klausul": "(USULAN, dikonfirmasi konsultan)"
+  "Status acuan klausul": "(USULAN, perlu konfirmasi konsultan)"
  }
 }

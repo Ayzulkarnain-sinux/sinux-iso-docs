@@ -4,10 +4,11 @@ Status: DRAFTED (spec + notes ada). Spec: specs/HR-SOP-13.json. Mode sop, aksi T
 
 Hasil uji terakhir (bukti mentah: /tmp/pen-HR-SOP-13/lint.out.txt):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/HR-SOP-13.json /tmp/pen-HR-SOP-13/HR-SOP-13.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-HR-SOP-13/HR-SOP-13.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "41 butir (USULAN) menunggu ACC". Warn PIC SLA nol.
+- `python3 -I tools/lint_doc.py /tmp/pen-HR-SOP-13/HR-SOP-13.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "56 butir (USULAN) menunggu ACC". Warn PIC SLA nol.
+- Uji halaman (putaran perbaikan 1): `soffice --headless --convert-to pdf` lalu `pdftotext` per halaman. 17 halaman, jumlah kata per halaman 20, 75, 56, 73, 290, 273, 402, 214, 216, 184, 174, 18, 237, 230, 80, 208, 116 (bukti: /tmp/pen-HR-SOP-13/page_words.txt). Halaman 15 yang tadinya kosong kini memuat ujung tabel bagian 9 dan seluruh bagian 10. Halaman 12 hanya diagram dengan judul bagian 7 dan keterangan gambar; halaman 1 sampul.
 - Validator OOXML (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!".
-- Diagram /tmp/pen-HR-SOP-13/HR-SOP-13_flow.png dibuka: 16 simpul, rankdir TB, label Ya dan Tidak terbaca, garis putus-putus kembali ke simpul awal.
-- Pemeriksaan tambahan atas spec (skrip python3 -I di scratchpad sesi, bukan di repo): nol em-dash dan en-dash; 19 langkah, terpanjang 21 kata; semua PIC di langkah dan tabel SLA ada di tabel peran bagian 5 (tujuh peran); semua kode SNX yang dirujuk di badan ada di tabel Dokumen terkait; nol kalimat yang berulang antarbagian; nol temuan frasa terlarang prompt (pada intinya, yang terpenting, secara fundamental, dalam rangka, adapun, perlu diketahui, dikarenakan, dapat berpotensi, praktik terbaik, para ahli, tanpa terkecuali, tanpa kompromi, hulu ke hilir), nol "komersil", nol "diagnosa", nol "Lead", nol "tim", nol frasa meta ("dokumen sumber", "sumber tim", "penyusun", "draf ini"); "Atasan Langsung" selalu diikuti Asal atau Tujuan.
+- Diagram /tmp/pen-HR-SOP-13/HR-SOP-13_flow.png dibuka (sebelum putaran 1; hanya label simpul 'Berikan informasi jabatan baru' yang berubah sesudahnya): 16 simpul, rankdir TB, label Ya dan Tidak terbaca, garis putus-putus kembali ke simpul awal.
+- Pemeriksaan tambahan atas spec (skrip python3 -I di scratchpad sesi, bukan di repo): nol em-dash dan en-dash; 19 langkah, terpanjang 21 kata; semua PIC di langkah dan tabel SLA ada di tabel peran bagian 5 (delapan peran); semua kode SNX yang dirujuk di badan ada di tabel Dokumen terkait; nol kalimat yang berulang antarbagian; nol temuan frasa terlarang prompt (pada intinya, yang terpenting, secara fundamental, dalam rangka, adapun, perlu diketahui, dikarenakan, dapat berpotensi, praktik terbaik, para ahli, tanpa terkecuali, tanpa kompromi, hulu ke hilir), nol "komersil", nol "diagnosa", nol "Lead", nol "tim", nol frasa meta ("dokumen sumber", "sumber tim", "penyusun", "draf ini"); "Atasan Langsung" selalu diikuti Asal atau Tujuan.
 - tools/selftest.sh tidak dijalankan (menulis ke direktori bersama penyusun paralel). Berkas tools, template, config, control, reference tidak diubah. Berkas yang ditulis hanya specs/HR-SOP-13.json dan notes/HR-SOP-13.md; hasil render hanya di /tmp/pen-HR-SOP-13/.
 
 ## 1. Sumber
@@ -30,7 +31,7 @@ Kalimat perintah di sumber yang ditujukan ke penyusun atau agen: tidak ada. Kali
 | # | Fakta | Kutipan verbatim sumber | fileId |
 |---|---|---|---|
 | 1 | Garis lapor berlabel usulan atau konfirmasi belum resmi. Dipakai di pengecualian bagian 9 (jabatan atasan berlabel menunggu konfirmasi) dan butir 4.10 | "Hubungan atasan-bawahan bertanda “usulan/konfirmasi” tidak boleh diperlakukan sebagai reporting line resmi sampai disahkan." | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 |
-| 2 | Tanggung jawab dan kewenangan harus ditetapkan, dikomunikasikan, dan dipahami. Dipakai di butir 4.7 dan langkah 6.4 nomor 2 dan 3 (karyawan menerima dan mengonfirmasi uraian jabatan tujuan) | "ISO 9001:2015 klausul 5.3: tanggung jawab dan kewenangan harus ditetapkan, dikomunikasikan dan dipahami." | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 |
+| 2 | Tanggung jawab dan kewenangan harus ditetapkan, dikomunikasikan, dan dipahami. Dipakai di butir 4.7 dan langkah 6.4 nomor 2 dan 3 (karyawan menerima dan mengonfirmasi informasi jabatan baru) | "ISO 9001:2015 klausul 5.3: tanggung jawab dan kewenangan harus ditetapkan, dikomunikasikan dan dipahami." | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 |
 | 3 | Keputusan pengangkatan atau pemutusan hubungan kerja mengikuti delegasi dan persetujuan tertulis. Mutasi diperlakukan sama di butir 4.6 (USULAN) | "Batasan umum: keputusan keuangan, legal, perubahan kontrak, pengangkatan/pemutusan hubungan kerja, serta perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku." | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 |
 
 ## 2. Fakta pendukung dan kutipan verbatim
@@ -69,7 +70,7 @@ Fakta dari dokumen lain di repo (bukan dari sumber Drive), dicocokkan ke spec ya
 | ke lokasi operasional lain | Definisi Lokasi operasional (acuan lokasi kerja utama di HR-JA-01 butir 4.10); butir 4.2; langkah 6.1 nomor 1 dan 2; 6.4 nomor 2 sampai 4 | HR-JA-01 butir 4.10 |
 | sesuai kebutuhan organisasi | Definisi Kebutuhan organisasi; butir 4.1; 6.1 nomor 2 (usulan memuat kebutuhan organisasi); scope (pemindahan atas permintaan karyawan dan sebagai sanksi disiplin dikecualikan, USULAN) | Kriteria baris |
 
-Klausul ISO (checklist tidak memberi acuan; semua satu label "(USULAN, dikonfirmasi konsultan)" di bagian 11, baris "Status acuan klausul"):
+Klausul ISO (checklist tidak memberi acuan; semua satu label "(USULAN, perlu konfirmasi konsultan)" di bagian 11, baris "Status acuan klausul"):
 
 | Klausul | Tercermin di bagian 4 | Prosedur dan rekaman |
 |---|---|---|
@@ -93,6 +94,7 @@ Nomor dan nama klausul berasal dari standar, bukan dari sumber tim, dan ditulis 
 | atasan langsung (kolom tiap jabatan) | Atasan Langsung Asal dan Atasan Langsung Tujuan | HR-ORG-01 mendefinisikan "Atasan langsung" sebagai jabatan tujuan laporan langsung. Mutasi punya dua atasan, sehingga dipecah dengan nama yang didefinisikan di bagian 3 | USULAN (U3) |
 | Legal & Compliance (JA-08) | Legal & Compliance (JA-08) | HR-ORG-01 memberi judul sama untuk JA-08 dan JA-09, kode JA-08 membedakan; sama dengan HR-SOP-10 | USULAN (U11) |
 | Karyawan | Karyawan yang dimutasi | Istilah sumber; bukan jabatan di Daftar Jabatan | Tidak diberi label |
+| atasan langsung bila pengusul dan penanggap satu jabatan | Penanggap alternatif (jabatan tujuan garis lapor dari Atasan Langsung Asal) | Putaran 1: mutasi yang hanya mengubah lokasi operasional membuat Atasan Langsung Tujuan sama dengan Atasan Langsung Asal. Kolom Melapor ke di HR-ORG-01 menunjuk jabatan berikutnya | USULAN (U17) |
 | Administrator sistem (di ISMS-SOP-02) | Tidak dijadikan peran di dokumen ini | Pelaku pencabutan akses diatur ISMS-SOP-02; dokumen ini hanya merujuknya (butir 4.9) | Dicatat di sini |
 
 COO tidak disebut di dokumen ini, sehingga aturan sebutan "Direktur (COO)" tidak terpicu. Samuel di badan dokumen = "Direktur Utama"; "President Director" hanya di blok Approved By.
@@ -104,12 +106,12 @@ Bagian 5 "Catatan kualitas dan celah" di context/audit/iso-sinux-supdocs-hr-2026
 | Butir audit | Relevan? | Penanganan |
 |---|---|---|
 | 1 Status DRAF, nomor "usulan", Effective Date kosong | Ya | Dokumen ini merujuk SNX-HR-JA-01 (nomor SNX hasil W1), bukan HR-JA-001. Status JA-01 tetap Draft, sehingga semua rujukan ke butirnya ikut berstatus belum disahkan. Effective Date dokumen ini kosong |
-| 2 Tidak ada KPI, bagan, grade; posisi kosong tidak dicantumkan | Sebagian | Nihil grade berarti "tingkat jabatan" tidak bisa diukur. Dokumen ini memakai "kedudukan dalam SNX-HR-ORG-01" untuk membedakan mutasi dari kenaikan dan penurunan jabatan (pengecualian bagian 9 baris 4). Dicatat di open item O1 |
+| 2 Tidak ada KPI, bagan, grade; posisi kosong tidak dicantumkan | Sebagian | Nihil grade berarti tingkat jabatan tidak bisa diukur dari sumber. Dokumen ini memakai ukuran Tingkatan jabatan dari HR-SOP-12 (jumlah garis lapor sampai Direktur Utama, USULAN) untuk membedakan mutasi dari kenaikan dan penurunan jabatan (pengecualian bagian 9 baris 5). Dicatat di open item O1 |
 | 3 Kalimat terpotong di Bagian 1 | Tidak | Kalimat itu tidak dikutip. Tidak ada fakta mutasi di dalamnya |
 | 4 Frasa kompetensi rusak (mis. "pihak terkait management", "Risk pemahaman karyawan") | Tidak langsung | Dokumen ini tidak mengutip kompetensi. Langkah 6.2 nomor 4 menunjuk persyaratan jabatan di SNX-HR-JA-01, yang sudah memulihkan frasa itu (USULAN di dokumen itu). Kutipan JA-08 A.1 di bagian 2 notes ini memuat "legal peninjauan" apa adanya (frasa rusak dari sumber) dan tidak masuk badan dokumen |
-| 5 Pelaporan Manager of Product Tech tidak konsisten | Ya | Ditangani lewat pengecualian bagian 9 baris 3 (jabatan berlabel menunggu konfirmasi di SNX-HR-ORG-01): Direktur Utama menunjuk jabatan pengusul dan penanggap (USULAN) |
+| 5 Pelaporan Manager of Product Tech tidak konsisten | Ya | Ditangani lewat pengecualian bagian 9 baris 4 (jabatan berlabel menunggu konfirmasi di SNX-HR-ORG-01): Direktur Utama menunjuk jabatan pengusul dan penanggap (USULAN) |
 | 6 Atasan JA-06 dan JA-07 ditulis "Commercial - Laras Rasmawati" | Ya, tidak langsung | Dokumen ini membaca atasan dari kolom Melapor ke di SNX-HR-ORG-01, yang sudah menormalkan menjadi VP Commercial (JA-03) |
-| 7 Atasan JA-08, JA-10, JA-11, JA-14 tidak satu | Ya | Sama dengan butir 5: pengecualian bagian 9 baris 3 |
+| 7 Atasan JA-08, JA-10, JA-11, JA-14 tidak satu | Ya | Sama dengan butir 5: pengecualian bagian 9 baris 4 |
 | 8 Penamaan unit tidak seragam (Operations, Operation, HR / GA, Human Resources, HRGA / General Affairs) | Ya | Definisi Unit kerja memakai kolom Unit di Daftar Jabatan SNX-HR-ORG-01 (satu bentuk per unit), bukan nama unit di sumber |
 | 9 Dua jabatan berjudul "Legal & Compliance" | Ya | Peran ditulis "Legal & Compliance (JA-08)" |
 | 10 Tidak ada Finance Lead dan Finance Staff | Tidak | Peran itu tidak dipakai di dokumen ini |
@@ -117,7 +119,7 @@ Bagian 5 "Catatan kualitas dan celah" di context/audit/iso-sinux-supdocs-hr-2026
 | 12 Teks B dan F identik, batas nominal wewenang tidak ada | Ya | Batas nominal tidak ada, sehingga hak tanda tangan dan otorisasi keuangan dirujuk ke Authority Matrix (butir 4.5), tanpa angka |
 | 13 Masa pengalaman minimum belum ada | Ya | Butir 4.4: HR Manager menilai pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan sampai masa itu ditetapkan (USULAN) |
 | 14 Jumlah tabel tidak cocok | Tidak | Tidak berpengaruh |
-| 15 Tidak ada rujukan ISO/IEC 27001 | Ya | Annex A 5.2, 5.18, 6.5 ditambahkan di bagian 11 dengan label (USULAN, dikonfirmasi konsultan) |
+| 15 Tidak ada rujukan ISO/IEC 27001 | Ya | Annex A 5.2, 5.18, 6.5 ditambahkan di bagian 11 dengan label (USULAN, perlu konfirmasi konsultan) |
 
 ## 6. Asumsi
 
@@ -125,43 +127,50 @@ Bagian 5 "Catatan kualitas dan celah" di context/audit/iso-sinux-supdocs-hr-2026
 2. Pengusul = jabatan di tempat tujuan (Atasan Langsung Tujuan), karena kriteria menyebut pemindahan ke unit, divisi, atau lokasi "sesuai kebutuhan organisasi" dan kebutuhan itu paling dekat dengan jabatan yang menerima.
 3. Angka batas waktu 3, 3, 5, 5, dan 2 hari kerja mengikuti pola HR-SOP-10 agar satu set SOP HR seragam. Angka itu tidak punya sumber dan berlabel (USULAN). Satu-satunya angka bersumber adalah "paling lambat 5 hari kerja sesudah mutasi" (ISMS-SOP-02), dipakai pada lingkupnya (mutasi) di butir 4.9.
 4. "Lokasi operasional lain" dibaca sebagai tempat kerja selain lokasi kerja utama di HR-JA-01 butir 4.10 yang disebut di keputusan mutasi. Daftar lokasi tidak dibuat.
-5. "Divisi" dibaca sebagai Divisi Operation dan sub divisinya di HR-ORG-01, karena hanya itu yang bernama divisi di dokumen yang sudah DONE.
+5. "Divisi" dibaca sebagai Divisi Operation dan sub divisinya di HR-ORG-01, karena hanya itu yang bernama divisi di dokumen yang sudah DONE. Susunan itu berstatus USULAN di HR-ORG-01 (butir K-10), sehingga definisi Divisi di dokumen ini berlabel (USULAN).
+6. Definisi Tingkatan jabatan (jumlah garis lapor sampai Direktur Utama) disalin dari HR-SOP-12 agar batas kenaikan, penurunan, dan rotasi memakai satu ukuran. Ukuran itu berlabel (USULAN) di kedua dokumen karena HR-JA-01 tidak memuat grading.
+7. Satu istilah satu hal (putaran 1): "informasi jabatan baru" (uraian jabatan tujuan, garis lapor baru, lokasi operasional tujuan) didefinisikan sekali di bagian 3 dan dipakai di 4.7, bagian 5, 6.4 nomor 2 dan 3, SLA, dan bagian 9. "Menyimpulkan kualifikasi" dan "kesimpulan kualifikasi" dipakai di semua tempat (4.3, 4.4, bagian 5, 6.2, 6.3, 6.4, SLA, rekaman); kata "menilai" dan "kesimpulan penilaian" tidak dipakai.
 
 ## USULAN
 
-Hitungan: 41 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beberapa bagian), dikelompokkan menjadi 16 butir keputusan di bawah.
+Hitungan: 56 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beberapa bagian), dikelompokkan menjadi 19 butir keputusan di bawah.
 
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
 | U1 | Seluruh prosedur 6.1 sampai 6.4, diagram, dan pembagian langkah per peran | Bagian 6, 7, intro 6.1 | Aziz (pemilik proses), lalu Samuel mengesahkan |
 | U2 | Direktur Utama menetapkan keputusan mutasi dan HR Manager hanya merekomendasikan. Alternatif: Direktur (JA-02) untuk mutasi lintas departemen (fakta pendukung 11) | 4.3, 4.6, peran Direktur Utama, 6.3 | Samuel |
-| U3 | Atasan Langsung Tujuan sebagai pengusul dan Atasan Langsung Asal sebagai penanggap, termasuk istilah dan definisinya | Bagian 3, 4.3, 5, 6.1, 6.2 | Aziz |
+| U3 | Atasan Langsung Tujuan sebagai pengusul dan Atasan Langsung Asal sebagai penanggap, termasuk istilah dan definisinya (label ditambah di putaran 1) | Bagian 3 (Atasan Langsung Asal, Atasan Langsung Tujuan, Usulan mutasi), 4.1, 4.2, 4.3, 5, 6.1, 6.2 | Aziz |
 | U4 | Pengecualian scope: pemindahan atas permintaan karyawan dan sebagai sanksi disiplin | Bagian 2 | Aziz |
 | U5 | Pengecualian scope: gaji, tunjangan, dan biaya yang timbul karena mutasi | Bagian 2 | FAT (pemutus biaya), Aziz (gaji dan tunjangan) |
 | U6 | Pengecualian scope: mutasi Direktur Utama (JA-01) | Bagian 2 | Samuel |
 | U7 | Batas waktu SLA dan hari kerja tanpa hari libur resmi | Bagian 3 (Hari kerja), bagian 8 | Aziz |
 | U8 | Wewenang jabatan asal berakhir pada tanggal berlaku | 4.5 | Samuel, Aziz |
-| U9 | Konfirmasi tertulis karyawan atas uraian jabatan tujuan, garis lapor, dan lokasi operasional | 4.7, 6.4 nomor 3, peran Karyawan yang dimutasi | Aziz |
+| U9 | Konfirmasi tertulis karyawan atas informasi jabatan baru | 4.7, 6.4 nomor 3, peran Karyawan yang dimutasi | Aziz |
 | U10 | Penunjukan pengganti dan catatan serah terima pekerjaan | 4.8, 6.2 nomor 3, 6.4 nomor 1, bagian 11 | Aziz |
-| U11 | Peninjauan Legal & Compliance (JA-08) atas perubahan perjanjian kerja | Peran Legal & Compliance, bagian 9 baris 6 | Legal |
+| U11 | Peninjauan Legal & Compliance (JA-08) atas perubahan perjanjian kerja | Peran Legal & Compliance, bagian 9 baris 7 | Legal |
 | U12 | Penanganan pengecualian: jabatan atasan berlabel menunggu konfirmasi atau tanpa pemegang, jabatan tujuan belum tercantum, pengalihan ke SOP-10 atau SOP-11, keberatan Atasan Langsung Asal, keputusan dengan syarat, keberatan karyawan, penundaan tanggal berlaku | Bagian 9 | Samuel, Aziz |
 | U13 | Penilaian pengalaman jabatan tujuan sampai masa pengalaman minimum ditetapkan | 4.4 | Aziz |
-| U14 | Atasan Langsung Tujuan yang mengajukan perubahan hak akses (ISMS-SOP-02 hanya menulis "Atasan langsung") | Butir 4.9, 6.4 nomor 7 | Fani (pemilik akses sistem Operation), lalu owner bila lintas unit |
+| U14 | Atasan Langsung Tujuan yang mengajukan perubahan hak akses (ISMS-SOP-02 hanya menulis "Atasan langsung"), dengan batas 1 hari kerja sesudah pemberitahuan mutasi diterima. Alasan angka: ISMS-SOP-02 memberi 5 hari kerja untuk pencabutan akses lama, sehingga pengajuan harus terjadi dini. Angka 1 tidak punya sumber | Butir 4.9, 6.4 nomor 7, SLA baris 8 | Fani (pemilik akses sistem Operation), lalu owner bila lintas unit |
 | U15 | Klasifikasi RESTRICTED (Internal) dan lokasi, pemilik, retensi rekaman (personal file di folder Google Drive Departemen HR, selama karyawan bekerja) | 4.11, bagian 11 | Aziz (lokasi dan retensi), owner (klasifikasi) |
-| U16 | Klausul ISO 9001:2015 dan ISO/IEC 27001:2022 di bagian 11 | Bagian 11 (label "(USULAN, dikonfirmasi konsultan)") | Owner, diteruskan ke konsultan |
+| U17 | Penanggap alternatif (jabatan tujuan garis lapor dari Atasan Langsung Asal) menanggapi usulan bila Atasan Langsung Tujuan dan Atasan Langsung Asal satu jabatan, mis. mutasi lokasi saja | Bagian 3, 4.3, 5, intro 6.2, bagian 9 baris 3 | Aziz |
+| U18 | Tingkatan jabatan diukur dari jumlah garis lapor sampai Direktur Utama (sama dengan HR-SOP-12), dan pengalihan ke HR-SOP-10 atau HR-SOP-11 menurut ukuran itu | Bagian 3, bagian 9 baris 5 | Aziz, owner |
+| U19 | Susunan Divisi Operation (NOC, SOC, SD dan PM) sebagai pengertian Divisi | Bagian 3 (Divisi) | Owner (menunggu K-10 di HR-ORG-01) |
+| U16 | Klausul ISO 9001:2015 dan ISO/IEC 27001:2022 di bagian 11 | Bagian 11 (label "(USULAN, perlu konfirmasi konsultan)") | Owner, diteruskan ke konsultan |
 
 ## Open items
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| O1 | HR-SOP-12 (Rotation) dan HR-SOP-11 belum ada saat penyusunan. Batas mutasi dengan rotasi memakai rumusan "tidak mengubah unit kerja, divisi, atau lokasi operasional", yang berbeda dari rumusan di HR-SOP-10 ("dalam tingkatan jabatan yang sama"). Batas dengan kenaikan dan penurunan jabatan memakai kedudukan di SNX-HR-ORG-01 karena sumber tidak memuat grading. Tiga dokumen perlu satu rumusan | Aziz (lewat orkestrator) |
+| O1 | HR-SOP-11 dan HR-SOP-12 sudah ada di disk (putaran 1) dan dicocokkan. Rotasi di HR-SOP-12 berlaku pada unit kerja dan tingkatan jabatan yang sama; HR-SOP-12 dan HR-SOP-11 sama-sama mengirim pemindahan ke unit, divisi, atau lokasi lain ke HR-SOP-13. Dokumen ini memakai rumusan HR-SOP-12 (scope, definisi Tingkatan jabatan) dan menambahkan divisi dan lokasi operasional sebagai syarat rotasi, sesuai pengecualian di HR-SOP-12. Tiga selisih tersisa untuk orkestrator: (a) definisi Unit kerja di HR-SOP-12 menaruh sub divisi NOC, SOC, serta SD dan PM dalam satu unit Operation (USULAN), sedangkan kriteria baris ini menyebut divisi dan dokumen ini memperlakukan pindah antar sub divisi sebagai mutasi. HR-SOP-12 perlu memuat pindah antar sub divisi di pengecualiannya; (b) HR-SOP-12 menulis "Atasan Langsung asal" dan "Atasan Langsung tujuan" dengan huruf kecil, dokumen ini "Atasan Langsung Asal" dan "Atasan Langsung Tujuan"; (c) HR-SOP-11 mengukur penurunan dengan "tingkat posisi" (grading, belum ditetapkan), dokumen ini mengalihkan penurunan lewat tingkatan jabatan HR-SOP-12 | Aziz (lewat orkestrator) |
 | O2 | Daftar lokasi operasional SINUX selain lokasi kerja utama tidak ada di sumber. Dokumen tidak membuatnya | Aziz, owner |
 | O3 | Mutasi atas permintaan karyawan dan sebagai sanksi disiplin dikecualikan (U4). Perlu keputusan apakah keduanya butuh SOP sendiri | Aziz |
 | O4 | Peraturan Perusahaan lengkap tidak dibaca. Bila memuat ketentuan mutasi, tempat kerja, atau persetujuan karyawan, ketentuan itu harus didahulukan dari butir 4.1 sampai 4.7 | Aziz, Legal |
 | O5 | Pengembalian dan pemindahan aset kerja saat pindah lokasi tidak diatur. SNX-ISMS-SOP-04 hanya mengatur pengembalian aset saat pemberhentian | Fani |
 | O6 | Mutasi mendesak (butuh pindah sebelum keputusan selesai) tidak diatur | Aziz, Samuel |
-| O7 | Butir K-03, K-04, K-05, dan K-10 di SNX-HR-ORG-01 (atasan berlabel menunggu konfirmasi, jabatan Divisi Operation tanpa pemegang) menentukan siapa Atasan Langsung Tujuan dan Asal untuk jabatan itu. Sampai terjawab, bagian 9 baris 3 berlaku | Owner |
+| O7 | Butir K-03, K-04, K-05, dan K-10 di SNX-HR-ORG-01 (atasan berlabel menunggu konfirmasi, jabatan Divisi Operation tanpa pemegang) menentukan siapa Atasan Langsung Tujuan dan Asal untuk jabatan itu. Sampai terjawab, bagian 9 baris 4 berlaku | Owner |
 | O8 | Nama jabatan di dokumen ini mengikuti HR-ORG-01 (HR Manager). Sumber menulis HR Lead. Konfirmasi Aziz atau owner (data_conflicts) | Aziz, owner |
+| O10 | Pengajuan perubahan hak akses dan pencabutan akses lama: SNX-ISMS-SOP-02 tidak membedakan atasan asal dan tujuan. Dokumen ini menunjuk Atasan Langsung Tujuan dan batas 1 hari kerja (U14); pemilik ISMS-SOP-02 perlu mengonfirmasi | Fani |
+| O11 | Penanggap alternatif (U17) hanya dirumuskan untuk kasus pengusul sama dengan penanggap. Bila Atasan Langsung Asal berlabel menunggu konfirmasi atau tanpa pemegang, berlaku bagian 9 baris 4 | Aziz |
 | O9 | modifiedTime sumber dikutip dari prompt tugas dan tidak diukur ulang di sesi ini | Orkestrator |
 
 ## 7. Jawaban dua pertanyaan penutup
@@ -169,13 +178,15 @@ Hitungan: 41 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beber
 Apa yang membuat teks ini terdengar buatan AI?
 - Setiap butir bagian 4 dibuka dengan pola yang sama: judul, kurung klausul, titik dua. Pola ini dipertahankan karena memetakan butir ke klausul untuk auditor, sama dengan HR-SOP-10 dan HR-SOP-08. Butir 4.8 memang tanpa klausul karena saya tidak yakin nomor klausulnya.
 - Rumus kalimat "X mengusulkan, Y menanggapi, Z menetapkan" di 4.3 dan penunjuk "(butir 6.x)" di hampir tiap kalimat terdengar mekanis. Penunjuk dipertahankan karena aturan "satu fakta disebut sekali, bagian lain merujuk nomor butir".
-- Dua kalimat berpelaku hilang: tujuan butir 3 ("perubahan hak aksesnya diajukan") dan butir 4.9 ("dicabut", "diajukan") berbentuk pasif padahal pelakunya diketahui. Sudah diperbaiki: Atasan Langsung Tujuan mengajukan, dan 4.9 menyebut pencabutan menurut SNX-ISMS-SOP-02 dengan batas 5 hari kerja.
+- Kalimat pasif padahal pelakunya diketahui: tujuan butir 3 ("diajukan"), butir 4.9 ("dicabut", "diajukan"), 4.1 ("mutasi dilakukan"), 6.4 nomor 6 ("agar perubahan hak akses diajukan"), dan bagian 9 baris 2 ("usulan diproses"). Semua sudah menyebut pelaku: Atasan Langsung Tujuan, HRGA Officer, atau SNX-ISMS-SOP-02 sebagai pengatur pencabutan dengan batas 5 hari kerja.
+- Pengulangan isi: daftar uraian jabatan, garis lapor, dan lokasi muncul di enam tempat. Kini didefinisikan sekali sebagai "informasi jabatan baru" di bagian 3, dan bagian lain menyebut istilahnya. Butir 4.3 tidak lagi mengulang tabel peran, hanya menunjuk bagian 5.
+- Pemicu peninjauan di bagian 10 ("perubahan secara signifikan") diganti dua pemicu yang bisa dicek: Direktur Utama mengubah penetap keputusan di butir 4.6, atau revisi SNX-HR-ORG-01 menambah atau menghapus unit kerja atau divisi.
 - Tiga kata benda berjejer yang bukan daftar asli: tidak ada. Daftar "unit kerja, divisi, atau lokasi operasional" dan "setujui, setujui dengan syarat, atau tolak" berasal dari kriteria dan dari tiga hasil keputusan yang nyata.
 - Tidak ada pembuka generik, penutup positif, huruf tebal, kapital, atau tanda kutip untuk penekanan di badan dokumen. Lint dan pemeriksaan skrip tidak menemukan frasa terlarang.
 
 Adakah fakta, angka, nama, atau tanggal tanpa sumber?
-- Angka 3, 3, 5, 5, dan 2 hari kerja: tanpa sumber, berlabel (USULAN) di tabel SLA. Angka 5 hari kerja di butir 4.9: bersumber ISMS-SOP-02, dipakai pada lingkup mutasi.
-- Klausul ISO: dari pengetahuan standar, bukan dari sumber, satu label (USULAN, dikonfirmasi konsultan). Annex A 6.5 dan ISO 9001 7.1.2 tidak muncul di sumber sama sekali.
+- Angka 3, 3, 5, 5, dan 2 hari kerja, serta 1 hari kerja untuk pengajuan hak akses: tanpa sumber, berlabel (USULAN) di tabel SLA. Angka 5 hari kerja di butir 4.9 dan di baris SLA pengajuan akses: bersumber ISMS-SOP-02, dipakai pada lingkup mutasi.
+- Klausul ISO: dari pengetahuan standar, bukan dari sumber, satu label (USULAN, perlu konfirmasi konsultan). Annex A 6.5 dan ISO 9001 7.1.2 tidak muncul di sumber sama sekali.
 - Nama orang di badan dokumen: nihil. Nama hanya di blok Prepared, Reviewed, dan Approved dari config/defaults.json.
 - Tanggal: nihil. Effective Date kosong.
 - Sistem: Service Hub (GLPI) dari ISMS-SOP-02; Google Drive (folder Departemen HR) berlabel USULAN. Sistem HR atau HRIS tidak disebut karena sumber hanya menyebut kompetensi "HRIS", bukan sistem yang dipakai.
