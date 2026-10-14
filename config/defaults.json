@@ -1,0 +1,49 @@
+{
+ "version": "v20",
+ "status_note": "DIKUNCI LEAD ISO-A 15 Okt 2026 (default v19-a diterima utuh, owner: 'berikan best recommendation ... Tuntaskan'). Worker TIDAK memutus ulang di W0. Perubahan hanya lewat control/LEAD-GUIDE.md; semua butir bisa diganti lalu render ulang massal dari specs/ dalam menit.",
+ "numbering": {
+  "scheme": "SNX-<AREA>-<JENIS>-<NN>",
+  "area": ["HR", "FAT", "LEG", "COM", "MKT", "OPS", "ISMS"],
+  "jenis": ["SOP", "PRO", "PRC", "PLN", "FRM", "REG", "RPT", "ORG", "JA"],
+  "existing_snx_kept": true,
+  "status": "DIKUNCI (D1)"
+ },
+ "approved_by": {
+  "all": "Samuel Kristanto Utomo / President Director",
+  "status": "DIKUNCI (D2), sesuai template Aziz; pembalik: form operasional disetujui COO bila owner memutus"
+ },
+ "prepared_reviewed": {
+  "HR": {"prepared": "Sita Nadia Scifin / HRGA", "reviewed": "Aziz Priyo Widakdo / HR Manager"},
+  "FAT": {"prepared": "Finance Staff", "reviewed": "Finance Lead"},
+  "LEG": {"prepared": "Staff Legal", "reviewed": "Line Manager Legal"},
+  "COM": {"prepared": "Laras Rasmawati / VP Commercial", "reviewed": "Amirull Yusuf Zulkarnain / Direktur"},
+  "MKT": {"prepared": "Marketing Staff", "reviewed": "Laras Rasmawati / VP Commercial"},
+  "OPS": {"prepared": "Erik Dwi Yanto / Tech Operation", "reviewed": "Fani Fatullah / VP Tech Operation and Services"},
+  "ISMS": {"prepared": "Erik Dwi Yanto / Tech Operation", "reviewed": "Fani Fatullah / VP Tech Operation and Services"},
+  "rule": "Nilai bersih tanpa kurung. Penyusun boleh mengganti jabatan generik dengan nama + jabatan HANYA bila tertulis di Job Analysis (HR-JA-001). Semua baris ini USULAN di Master List."
+ },
+ "department_labels": {
+  "HR": "Human Resources", "FAT": "Finance, Accounting & Tax", "LEG": "Legal", "COM": "Commercial",
+  "MKT": "Marketing", "OPS": "Operation", "ISMS": "Operation"
+ },
+ "classification": {
+  "scheme": "SNX-ISMS-PRO-01",
+  "levels": ["PUBLIC", "INTERNAL", "RESTRICTED (Internal)", "SECRET"],
+  "rule": "Tingkat per dokumen = kolom classification di worklist; bila null: ikuti label sumber; data karyawan, hukum, keuangan, pelanggan = RESTRICTED (Internal); SOP umum = INTERNAL. Label tercetak di footer hanya untuk RESTRICTED/SECRET (renderer otomatis).",
+  "status": "DIKUNCI (D3)"
+ },
+ "review_period": "YEARLY",
+ "status": "Draft",
+ "effective_date": "",
+ "revision": "00",
+ "revision_desc": "Draft awal untuk review dan pengesahan",
+ "template_policy": "DIKUNCI (D4): Pertahankan template Aziz apa adanya, termasuk salah ketik di template; perbaikan template hanya atas keputusan Aziz/owner, lalu render ulang massal",
+ "ticketing": "Zammad untuk Ops (pelanggan), GLPI (SINUX Service Hub) untuk generalist/internal",
+ "titles": {
+  "president_director": "Samuel Kristanto Utomo / President Director",
+  "coo": "Amirull Yusuf Zulkarnain / Direktur",
+  "vp_tech_ops": "Fani Fatullah / VP Tech Operation and Services",
+  "hr_manager": "Aziz Priyo Widakdo / HR Manager",
+  "vp_commercial": "Laras Rasmawati / VP Commercial"
+ }
+}

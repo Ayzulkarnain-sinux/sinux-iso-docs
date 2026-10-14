@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "doc_key": "UJI-RENDER",
+    "number": "SNX-UJI-SOP-00",
+    "department": "Information Security",
+    "title": "Uji Render Pengendalian Akses",
+    "process_owner": "Information Security",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review (uji render, bukan dokumen resmi)",
+    "approval": {
+      "prepared": "Nama Penyusun / Jabatan",
+      "reviewed": "Nama Pemeriksa / Jabatan",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "purpose": ["Dokumen ini hanya untuk menguji mesin render terhadap template SOP SINUX.", "Isi tidak mewakili prosedur nyata."],
+  "scope": ["Berlaku untuk uji teknis render dokumen."],
+  "definitions": [["Akses", "Hak pengguna untuk memakai sistem."], ["PIC", "Person in charge."]],
+  "policy": ["Setiap akses diberikan berdasarkan kebutuhan kerja.", "Akses ditinjau berkala."],
+  "roles": [["Pemohon", "Mengajukan permintaan akses.", "Mengajukan"], ["Atasan", "Menyetujui kebutuhan akses.", "Menyetujui atau menolak"], ["Admin Sistem", "Memberikan dan mencabut akses.", "Mengeksekusi perubahan akses"]],
+  "procedures": [
+    {"title": "Permintaan Akses", "intro": ["Permintaan diajukan melalui tiket."], "steps": [["Ajukan permintaan akses lewat tiket", "Pemohon", "Tiket permintaan"], ["Setujui permintaan", "Atasan", "Persetujuan di tiket"], ["Berikan akses sesuai persetujuan", "Admin Sistem", "Catatan pemberian akses"]]},
+    {"title": "Pencabutan Akses", "steps": [["Terima pemberitahuan pencabutan", "Admin Sistem", "Tiket pencabutan"], ["Cabut akses", "Admin Sistem", "Catatan pencabutan"]]}
+  ],
+  "flow": {
+    "lanes": {"Pemohon": ["a"], "Atasan": ["b"], "Admin Sistem": ["c", "d"]},
+    "nodes": {"a": "Ajukan permintaan", "b": "Setujui?", "c": "Berikan akses", "d": "Selesai"},
+    "shapes": {"b": "diamond", "d": "ellipse"},
+    "edges": [["a", "b"], ["b", "c", "Ya"], ["b", "a", "Tidak"], ["c", "d"]],
+    "caption": "Gambar 1. Alur uji render."
+  },
+  "sla": [["Persetujuan permintaan", "Atasan", "1 hari kerja"], ["Pemberian akses", "Admin Sistem", "1 hari kerja"]],
+  "exceptions": [["Permintaan darurat", "Akses sementara dengan persetujuan lisan, dicatat di tiket dalam 1 hari kerja."]],
+  "conclusion": ["Uji render selesai bila semua bagian terisi."],
+  "related_documents": [["Template SOP SINUX", "Cetakan format"]],
+  "records": [["Tiket permintaan akses", "Sistem tiket, Admin Sistem", "1 tahun"]],
+  "iso_refs": {"ISO/IEC 27001:2022": "A.5.15, A.5.18"}
+}

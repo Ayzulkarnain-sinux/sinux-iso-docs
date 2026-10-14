@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "UJI-GENERIC",
+    "doc_type_cover": "STRUKTUR ORGANISASI",
+    "doc_type_label": "Struktur Organisasi",
+    "number": "SNX-UJI-ORG-00",
+    "department": "Human Resources",
+    "title": "Uji Render Struktur Organisasi",
+    "process_owner": "Human Resources",
+    "classification": "INTERNAL",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review (uji render, bukan dokumen resmi)",
+    "approval": {"prepared": "Nama Penyusun / Jabatan", "reviewed": "Nama Pemeriksa / Jabatan", "approved": "Samuel Kristanto Utomo / President Director"}
+  },
+  "sections": [
+    {"h": "Tujuan", "blocks": [{"p": "Uji render mode dokumen umum. Isi bukan data nyata."}]},
+    {"h": "Bagan Organisasi", "blocks": [
+      {"flow": {"rankdir": "TB", "nodes": {"a": "Direksi", "b": "Divisi A", "c": "Divisi B", "d": "Staf A1"}, "edges": [["a", "b"], ["a", "c"], ["b", "d"]], "caption": "Gambar 1. Bagan uji."}}
+    ]},
+    {"h": "Daftar Jabatan", "blocks": [
+      {"h2": "Ringkasan"},
+      {"table": {"header": ["Kode", "Jabatan", "Atasan Langsung", "Unit", "Catatan"], "widths_cm": [2, 4, 4, 3, 3], "rows": [["X-01", "Jabatan Uji 1", "Direksi", "Divisi A", "-"], ["X-02", "Jabatan Uji 2", "Jabatan Uji 1", "Divisi A", "-"]]}}
+    ]}
+  ]
+}
