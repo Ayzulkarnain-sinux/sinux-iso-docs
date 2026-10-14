@@ -871,7 +871,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-SOP-11",
    "out_path": "out/02_HR/SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx",
    "sources": [
@@ -884,11 +884,11 @@
    "lint_pass": true,
    "verify_verdict": null,
    "loops": 1,
-   "usulan_count": 44,
+   "usulan_count": 52,
    "open_items": [
     "Pemeriksa PDF r1: halaman 15 kosong antara bagian 10 dan 11 (page break template + isi bagian 10 pas batas halaman)."
    ],
-   "updated_at": "2026-10-14T23:17:48Z",
+   "updated_at": "2026-10-14T23:22:33Z",
    "pen_agent": "a2cb5b7e1e129cb63",
    "ooxml": "PASSED"
   },
@@ -915,9 +915,10 @@
    "loops": 0,
    "usulan_count": 46,
    "open_items": [
-    "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking)"
+    "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking)",
+    "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking). qa verify.json diperbaiki sintaksis saja (kurung kurawal ganda di akhir) oleh orkestrator"
    ],
-   "updated_at": "2026-10-14T23:21:03Z",
+   "updated_at": "2026-10-14T23:21:06Z",
    "pen_agent": "a03372a682640aa2e",
    "ooxml": "PASSED"
   },
@@ -959,7 +960,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-FAT-SOP-04",
    "out_path": "out/03_FAT/SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
@@ -981,11 +982,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 35,
    "open_items": [],
-   "updated_at": "2026-10-14T23:19:49Z",
+   "updated_at": "2026-10-14T23:22:54Z",
    "pen_agent": "ad5b909ad28816d44",
    "ooxml": "PASSED"
   },
@@ -1574,7 +1575,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-FRM-01",
    "out_path": null,
    "sources": [
@@ -1589,7 +1590,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:22:33Z",
+   "pen_agent": "a58a04d78c3d99607"
   },
   {
    "wl_index": 48,

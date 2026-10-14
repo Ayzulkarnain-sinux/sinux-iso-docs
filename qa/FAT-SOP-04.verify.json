@@ -1,0 +1,63 @@
+{
+ "verdict": "PASS",
+ "doc": "out/03_FAT/SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx",
+ "sources_checked": [
+  "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io (SNX-ISMS-PRO-01, read_file_content)",
+  "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 (SINUX_Job_Analysis_2026, read_file_content)",
+  "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI (SOP Billing and Invoicing, read_file_content)"
+ ],
+ "criteria": "Description 'SOP ini menjelaskan pengarsipan dokumen baik hardcopy maupun softcopy' terpenuhi: softcopy di butir 4.1, 4.3, 4.4, 4.5 dan 6.2; hardcopy di butir 4.1, 4.3, 4.6, 4.7 dan 6.3; retensi dan pemusnahan keduanya di 4.8, 4.9 dan 6.4.",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 6.1 paragraf pembuka, 6.2 langkah 2 dan 3, SLA baris 2",
+   "masalah": "Pembuka 6.1 dan SLA baris 2 menyatakan Finance Lead menjalankan 6.2 dan 6.3 untuk dokumen perpajakan, tetapi tidak ada langkah 6.2 yang menyimpan softcopy dokumen perpajakan (langkah 2 hanya dokumen penagihan, langkah 3 dibatasi ke dokumen keuangan lain). Kolom PIC 6.1 sampai 6.3 juga hanya Finance Staff. Celah prosedur dan konsistensi peran (cek e), bukan fakta salah.",
+   "bukti": "6.2 langkah 3: 'Simpan PDF dokumen keuangan lain di subfolder yang Finance Lead tetapkan (butir 4.4).' vs 6.1: 'Finance Lead menjalankan butir yang sama untuk dokumen perpajakan'. Usul: langkah 3 mencakup dokumen perpajakan dengan PIC 'Finance Staff atau Finance Lead (dokumen perpajakan)', atau tambah satu langkah ber-PIC Finance Lead."
+  },
+  {
+   "lokasi": "Bagian 8 SLA baris 2",
+   "masalah": "Sel waktu berisi komentar penyusunan, bukan batas waktu yang bisa dijalankan; titik mulai hitung 1 hari tidak disebut.",
+   "bukti": "'1 hari. Angka ini berasal dari SNX-FAT-SOP-05 untuk bukti lapor; perluasan ke bukti potong adalah (USULAN)'. Usul: '1 hari sejak bukti lapor terbit (SNX-FAT-SOP-05); untuk bukti potong (USULAN)'."
+  },
+  {
+   "lokasi": "Butir 4.10 dan 4.2 kalimat kedua",
+   "masalah": "Kalimat meta tentang status draf di dalam bagian Policy; terbaca sebagai catatan penyusun, bukan aturan.",
+   "bukti": "'Penetapan pelaku pada butir 4.1 sampai 4.9, Finance Lead sebagai pemilik rekaman di bagian 11, dan Finance Lead sebagai Pemilik informasi menurut SNX-ISMS-PRO-01 berstatus (USULAN).' dan 'Penerapan SNX-ISMS-PRO-01 ke FAT adalah (USULAN), karena cakupan prosedur itu baru Divisi Operation.'"
+  },
+  {
+   "lokasi": "Bagian 1 Purpose kalimat 2",
+   "masalah": "Pola kelompok tiga dan label 'Hasil yang dijaga:' terasa templat; tidak cukup untuk pemblokir.",
+   "bukti": "'Hasil yang dijaga: dokumen keuangan tersimpan lengkap, terlindungi sesuai klasifikasinya, dan dapat ditemukan kembali selama masa retensi.'"
+  },
+  {
+   "lokasi": "Bagian 9 baris 'Kebutuhan menyimpang dari aturan SOP ini'",
+   "masalah": "Pengaju pengecualian (Finance Staff) tidak ada di sumber PRO-01 dan tidak tercakup label USULAN butir 4.10 (yang hanya meliputi 4.1 sampai 4.9).",
+   "bukti": "PRO-01 Bagian 9: 'Pengecualian hanya sah bila tertulis, berbatas waktu, disetujui pemilik informasi dan ISMS Coordinator.' Dokumen: 'Finance Staff mengajukan pengecualian secara tertulis.' Usul: tambah (USULAN)."
+  },
+  {
+   "lokasi": "Bagian 11 Acuan standar, butir 4.6",
+   "masalah": "Pencetakan dipetakan ke Annex A 7.10 (Media penyimpanan); Annex A 7.7 (Clear desk and clear screen) lebih langsung untuk hasil cetak yang tidak ditinggal di printer. Sudah berlabel USULAN untuk konsultan.",
+   "bukti": "'7.10 (Media penyimpanan), untuk butir 4.6'"
+  },
+  {
+   "lokasi": "Bagian 11 Rekaman, baris Hardcopy dokumen keuangan",
+   "masalah": "Rumusan retensi janggal; tidak jelas bagian mana yang USULAN.",
+   "bukti": "'Minimal 10 tahun; untuk dokumen keuangan lain (USULAN)'. Usul: 'Minimal 10 tahun (dokumen penagihan dan perpajakan); dokumen keuangan lain minimal 10 tahun (USULAN)'."
+  },
+  {
+   "lokasi": "Bagian 11 Rekaman, baris Financial Document Register dan Berita Acara Pemusnahan Dokumen",
+   "masalah": "Retensi 'Belum ditetapkan' dan lokasi belum ditetapkan; rekaman bukti pemusnahan tanpa masa simpan. Tidak dikarang (benar), tetapi perlu open item tersendiri untuk retensi Berita Acara (notes OI-14 hanya menyebut lokasi).",
+   "bukti": "'Berita Acara Pemusnahan Dokumen | Lokasi belum ditetapkan; pemilik Finance Lead (USULAN) | Belum ditetapkan'"
+  },
+  {
+   "lokasi": "Cek (a) fakta, ringkasan",
+   "masalah": "Tidak ada temuan. Dicocokkan ke sumber: struktur folder Tahun / Nama Klien / Nomor Invoice, PDF di folder Google Drive Departemen FAT, retensi minimal 10 tahun, Berita Acara Pemusnahan Dokumen dengan persetujuan Finance Lead dan CEO (dipetakan ke Direktur Utama sesuai data_conflicts), akses personel FAT dan CEO (SOP Billing 8.2, 7.1, 4.2); label sampul atau halaman pertama, label folder, aturan cetak, hapus aman dan kertas dihancurkan, NDA atau kontrak, pengecualian, event keamanan SNX-ISMS-SOP-01 (PRO-01 Bagian 4, 5, 6, 9); payment request, bukti pembayaran, laporan kas, laporan keuangan (JA-10 A.3, A.4, A.7; JA-11 A.3, berlabel USULAN). Pemetaan Rahasia (Confidential) ke RESTRICTED (Internal) berlabel USULAN.",
+   "bukti": "Teks sumber via read_file_content; kode dan judul dokumen terkait cocok config/worklist.json; rujukan butir 6.5 SNX-FAT-SOP-05 dan 1 hari cocok specs/FAT-SOP-05.json; butir 4.9/4.12 SNX-FAT-SOP-01 cocok specs/FAT-SOP-01.json."
+  },
+  {
+   "lokasi": "Cek (d) dan (g), ringkasan",
+   "masalah": "Tidak ada temuan. Nol rujukan internal AI, nol em-dash/en-dash, nol tanda kutip, nol CEO/COO/HR Lead/Kristianto di badan; tanda tangan dan tanggal efektif kosong, status Draft; tiga penanda tangan berbeda sesuai defaults FAT (Finance Staff, Finance Lead, Samuel Kristanto Utomo / President Director). Cacat audit PRO-01 (cakupan Divisi Operation, 8.12, 5.33, master list, ISMS Coordinator), HR-JA-001 (tidak ada jabatan Finance Lead/Staff, ejaan, CEO) dan SOP Billing butir 11, 12, 13 ditangani atau dijelaskan di notes/FAT-SOP-04.md bagian 4.",
+   "bukti": "Pemindaian regex atas paragraf, tabel, header dan footer docx; context/audit fat baris 243-257, isms baris 1099-1107."
+  }
+ ]
+}
