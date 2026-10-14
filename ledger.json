@@ -161,7 +161,7 @@
    "dept": "HR",
    "action": "T1",
    "mode": "generic",
-   "state": "VERIFY_FAIL",
+   "state": "LINT_PASS",
    "number": "SNX-HR-JA-01",
    "out_path": "out/01_Struktur_Jobdesc/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx",
    "sources": [
@@ -184,11 +184,11 @@
    "lint_pass": true,
    "verify_verdict": "FAIL",
    "loops": 1,
-   "usulan_count": 13,
+   "usulan_count": 29,
    "open_items": [
     "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
    ],
-   "updated_at": "2026-10-14T21:47:45Z",
+   "updated_at": "2026-10-14T21:53:06Z",
    "pen_agent": "ac936bff4d35bd19b",
    "ooxml": "PASSED"
   },
@@ -1126,11 +1126,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
-   "loops": 0,
-   "usulan_count": "8",
+   "verify_verdict": "FAIL",
+   "loops": 1,
+   "usulan_count": "10",
    "open_items": [],
-   "updated_at": "2026-10-14T21:48:12Z",
+   "updated_at": "2026-10-14T21:52:09Z",
    "pen_agent": "a28b34ceaae5703a1",
    "ooxml": "PASSED"
   },
@@ -1246,9 +1246,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-OPS-RPT-01",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-RPT-01 Operations KPI Performance Report (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1rSuMH8wK5BTGUHLm8KjGig1LZOKWcECO",
@@ -1256,12 +1256,12 @@
      "title": "SNX-OPS-RPT-01_Operations_KPI_Performance_Report.xlsx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "10",
    "open_items": [],
-   "updated_at": "2026-10-14T21:46:01Z",
+   "updated_at": "2026-10-14T21:53:49Z",
    "pen_agent": "a53e80272a2118f91"
   },
   {
@@ -1298,9 +1298,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-REG-02",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-REG-02 IS Risk Assessment Register (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1skCiIY43Vz6qfT71vEKz55EZFGHVCl4Q",
@@ -1308,12 +1308,12 @@
      "title": "SNX-ISMS-REG-02_IS_Risk_Assessment_Register.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:46:45Z",
+   "updated_at": "2026-10-14T21:52:50Z",
    "pen_agent": "abd5e548ab60689ee"
   },
   {
@@ -1324,7 +1324,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-REG-03",
    "out_path": null,
    "sources": [
@@ -1339,7 +1339,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:50:33Z",
+   "pen_agent": "aae60d8571cf17ea2"
   },
   {
    "wl_index": 42,
@@ -1349,7 +1350,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-REG-04",
    "out_path": null,
    "sources": [
@@ -1364,7 +1365,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:52:23Z",
+   "pen_agent": "a330e96bedbc4832d"
   },
   {
    "wl_index": 43,
@@ -1374,7 +1376,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-FRM-01",
    "out_path": null,
    "sources": [
@@ -1389,7 +1391,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:53:04Z",
+   "pen_agent": "ae0edabde24bd95e6"
   },
   {
    "wl_index": 44,

@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS",
+  "key": "OPS-RPT-01",
+  "dokumen": "out/07_Ops/SNX-OPS-RPT-01 Operations KPI Performance Report (Rev00 DRAFT).xlsx",
+  "sumber": {"fileId": "1rSuMH8wK5BTGUHLm8KjGig1LZOKWcECO", "modifiedTime": "2026-10-13T06:09:47Z", "fileSize": "110990", "cara": "read_file_content + get_file_metadata, dibandingkan dengan teks openpyxl keluaran"},
+  "ringkas_cek": {
+    "a_fakta": "Seluruh sel keluaran cocok dengan sumber kecuali 15 sel yang tercatat di notes: B6, B11, B13, B21, B26, C31, A32:E32 (dikosongkan), B36:B38, Narasi Bulanan A9. 17 KPI (nama, arah, target, sumber), rumus S/T/U/U24, tahun 2027, masa simpan 3 tahun, klasifikasi RESTRICTED (Internal), pemilik Head of Operation sama dengan sumber. Penanda tangan sesuai config/defaults.json (OPS prepared/reviewed, approved_by).",
+    "b_karangan": "Tidak ada angka, nama, atau tanggal baru. Satu-satunya isi baru: penjabaran 'Risk Treatment Plan' (dari REG-03, USULAN 10 di notes) dan teks legenda B26 (dicek: warna E7EEF7 hanya dipakai di A26, jadi pernyataan 'tidak dipakai' benar).",
+    "c_kriteria": "Description = nama berkas SNX-OPS-RPT-01_Operations_KPI_Performance_Report.xlsx: nomor, judul, format xlsx terpenuhi. Acuan ISO 9001:2015 B12 'Klausul 9.1, 9.3.2' dan ISO/IEC 27001:2022 B13 'Klausul 9.1' cocok dengan checklist (sumber 'Annex A 9.1' sudah dikoreksi).",
+    "d_runbook": "Status Draft, tanda tangan dan tanggal pengesahan kosong, tanggal efektif tidak diisi; tiga penanda tangan berbeda; Fani = VP Tech Operation and Services; nol rujukan internal AI, nol em-dash/en-dash, nol kredensial (pencarian pola atas semua sel teks); fitur workbook utuh (1 gambar, 2 CF, 52 rumus).",
+    "e_peran": "Tidak ada bagian 5/6/8 di xlsx. Peran yang muncul: Head of Operation (pemilik), Erik (disusun), Fani (diperiksa), Samuel (disetujui), COO (penerima dan pemeriksa narasi bulanan). Selisih pemeriksa narasi vs pemeriksa dokumen dicatat nonblocking.",
+    "f_bahasa": "Kalimat baru (B21, B26, C31, A9) lugas dan spesifik; teks tim dipertahankan (T1). Tidak ada pelanggaran §6a yang jelas.",
+    "g_data_conflicts": "'Direktur (COO)' pada sebutan pertama di badan (B21), sesudahnya 'COO'; 'Samuel Kristanto Utomo / President Director' di blok persetujuan. 12 cacat audit bagian 5 tiap butir ditangani atau dijelaskan di notes bagian 3."
+  },
+  "blocking": [],
+  "nonblocking": [
+    {"lokasi": "KPI!F13", "masalah": "'Tiket vulnerability' tanpa nama sistem; premis owner: tiket Ops di Zammad. Penyusun menunda dengan alasan lingkup belum pasti (notes open item 2).", "saran": "Tulis 'Tiket vulnerability (Zammad)' sesudah Ops mengonfirmasi, atau beri open item eksplisit di Master List."},
+    {"lokasi": "Narasi Bulanan A3:A16", "masalah": "Butir masukan tinjauan manajemen ISO 9001 9.3.2 belum lengkap: status tindakan dari tinjauan sebelumnya, perubahan isu eksternal/internal, kinerja penyedia eksternal tidak ada. Tidak dicatat di notes.", "saran": "Wajar karena laporan ini masukan dari Operation saja; catat sebagai USULAN atau pastikan butir itu ada di dokumen tinjauan manajemen."},
+    {"lokasi": "KPI!A5:U5", "masalah": "Tidak ada pemilik, rumus numerator/denominator per KPI (ISO 9001 9.1.1 dan ISO/IEC 27001 9.1 meminta siapa mengukur dan menganalisis, serta metodenya). Cacat audit butir 2, sudah USULAN 4 di notes.", "saran": "Keputusan Fani; tambah kolom atau sheet definisi pada revisi berikut."},
+    {"lokasi": "notes/OPS-RPT-01.md bagian 2 baris B26", "masalah": "Notes merujuk 'RUNBOOK §0 butir 29' sebagai dasar menulis ulang legenda; §0 RUNBOOK hanya punya 10 butir.", "saran": "Ganti dasar ke RUNBOOK §6 'buang baris CONTOH' atau prompt penyusun."},
+    {"lokasi": "Kontrol Dokumen!B20 dan KPI!S5", "masalah": "Sinonim untuk satu hal: 'rata-rata tahun berjalan' (B20) dan 'Rata-rata YTD' (S5). Teks tim, T1.", "saran": "Samakan ke 'Rata-rata YTD' bila tim setuju."},
+    {"lokasi": "Narasi Bulanan!A16, Kontrol Dokumen!B10, B37", "masalah": "Narasi bulanan diperiksa COO, dokumen diperiksa Fani, pemilik Head of Operation tanpa pemegang; hubungan peran belum ditetapkan (notes open item 4, HR-ORG-01 K-09).", "saran": "Owner/Fani memetakan Head of Operation ke orang dan menetapkan pemeriksa narasi."},
+    {"lokasi": "Alur Proses (gambar)", "masalah": "Teks gambar 'FRM-01 sampai FRM-09, register' tidak mencakup SNX-OPS-FRM-10 (KPI 14) dan memakai 'COO' saja; xlsx_patch tidak bisa mengubah gambar (notes open item 1).", "saran": "Ganti gambar secara manual pada revisi berikut."},
+    {"lokasi": "Kontrol Dokumen!A32:E32, C31", "masalah": "Baris riwayat revisi kedua milik tim dihapus dan uraian C31 diganti sambil mempertahankan tanggal tim 13 Oktober 2026. Bukan tanggal mundur buatan penyusun, tetapi mengubah rekaman tim (USULAN 2).", "saran": "Owner mengonfirmasi penghapusan baris riwayat."},
+    {"lokasi": "Kontrol Dokumen!B26", "masalah": "Baris legenda untuk warna yang tidak dipakai menambah isi tanpa fungsi.", "saran": "Pertimbangkan mengosongkan B26 dan A26 bila alat mengizinkan; isi sekarang akurat."},
+    {"lokasi": "KPI!S6:U22, U24", "masalah": "Nilai rumus tersimpan tidak ada (openpyxl); penampil tanpa hitung ulang (pratinjau Drive) menampilkan Status kosong, bukan 'Belum diukur'.", "saran": "HUMAN-VERDICT: buka di Excel atau unggah sebagai Google Sheet dan pastikan 17 Status 'Belum diukur' dan '0 dari 0' muncul."},
+    {"lokasi": "Narasi Bulanan!A9", "masalah": "'Risk Treatment Plan' berasal dari REG-03, bukan dari workbook ini; label USULAN hanya di notes, tidak di sel.", "saran": "Konfirmasi Fani (USULAN 10)."}
+  ]
+}
