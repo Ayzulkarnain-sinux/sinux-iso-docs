@@ -1,0 +1,41 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "KESIMPULAN",
+   "masalah": "Tiga kalimat (RUNBOOK §6a butir 4: 1 sampai 2). Kalimat 'Butir berlabel (USULAN) diputus pemeriksa dokumen (Reviewed By) sebelum pengesahan.' tidak sejalan dengan Definisi '(USULAN)' ('belum diputus secara tertulis oleh pemeriksa atau penyetuju dokumen') dan dengan notes yang menyarankan Owner sebagai pemutus sebagian USULAN (mis. Zammad, butir 1).",
+   "bukti": "Kesimpulan paragraf 1; tabel Definisi baris (USULAN); notes/OPS-FRM-06.md tabel USULAN butir 1"
+  },
+  {
+   "lokasi": "REKAMAN DAN RETENSI, paragraf pembuka",
+   "masalah": "Kalimat janggal dan bernada catatan penyusun, bukan ketentuan: 'Baru lokasi BAST original yang ditetapkan, yaitu Drive.'",
+   "bukti": "Saran: 'BAST original disimpan di Drive (P3).' lalu dua kalimat USULAN yang ada."
+  },
+  {
+   "lokasi": "BAGIAN A dan BAGIAN C, kalimat pembuka",
+   "masalah": "Pasif tanpa pelaku (ringan): 'Bagian A dipakai pada G2.' dan 'Bagian C dipakai sesudah layanan diterima sebagai BAU.' Pelakunya diketahui (Project Manager mengisi).",
+   "bukti": "Teks badan Bagian A dan C; tabel Peran baris Project Manager"
+  },
+  {
+   "lokasi": "Seluruh badan",
+   "masalah": "Sebutan berganti untuk satu objek: 'dokumen ini' dan 'form ini' dipakai bergantian.",
+   "bukti": "Ruang Lingkup 'dikecualikan dari dokumen ini' lawan tabel pengecualian 'Form ini hanya merujuk nomor'; tabel Peran 'Pemilik dokumen ini' lawan judul kolom 'Tanggung jawab di form ini'"
+  },
+  {
+   "lokasi": "KETENTUAN PENGISIAN P3, P4; tabel Arsip; REKAMAN",
+   "masalah": "Ejaan tidak baku terbawa dari sumber: 'komersil' (baku: komersial); 'original' (baku: orisinal atau asli). T1 membolehkan perbaikan ejaan.",
+   "bukti": "P4 'roadmap komersil'; P3 'versi original disimpan di Drive'; 'BAST bertanda tangan (original)'"
+  },
+  {
+   "lokasi": "KETENTUAN PENGISIAN P8",
+   "masalah": "Aturan 'butir 3 tidak boleh berstatus Tidak berlaku' adalah turunan penyusun dari bunyi butir 3 sumber ('Semua aset masuk monitoring NOC (dan SIEM bila layanan SOC), alert sudah diuji'). Tafsirnya wajar, tetapi aturan baru ini tanpa label (USULAN); perlu dikonfirmasi pemilik proses.",
+   "bukti": "P8; sumber Bagian B butir 3"
+  },
+  {
+   "lokasi": "PERAN, baris Service Delivery Manager",
+   "masalah": "'Memegang layanan bersama Project Manager selama hypercare' tanpa label, padahal pemetaan 'SD dan PM' ke Service Delivery Manager dan Project Manager berlabel (USULAN) di Definisi.",
+   "bukti": "Tabel Definisi baris 'SD dan PM'; tabel Peran baris Service Delivery Manager"
+  }
+ ]
+}

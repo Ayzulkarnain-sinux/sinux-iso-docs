@@ -1,0 +1,9 @@
+{
+ "file": "out/07_Ops/SNX-OPS-FRM-06 Project Handover BAST Closure Report (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "15 butir (USULAN) menunggu ACC"
+ ]
+}

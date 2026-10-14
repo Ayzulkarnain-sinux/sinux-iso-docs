@@ -1115,7 +1115,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-OPS-FRM-06",
    "out_path": "out/07_Ops/SNX-OPS-FRM-06 Project Handover BAST Closure Report (Rev00 DRAFT).docx",
    "sources": [
@@ -1126,11 +1126,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": "FAIL",
+   "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": "10",
    "open_items": [],
-   "updated_at": "2026-10-14T21:52:09Z",
+   "updated_at": "2026-10-14T21:54:47Z",
    "pen_agent": "a28b34ceaae5703a1",
    "ooxml": "PASSED"
   },
@@ -1220,9 +1220,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-FRM-10",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-FRM-10 RCA Corrective Action Report (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1XFMQDye_WWWomRpwmT6KGMRdi4EVbRsS",
@@ -1230,13 +1230,14 @@
      "title": "SNX-OPS-FRM-10_RCA_Corrective_Action_Report.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:44:17Z",
-   "pen_agent": "abfd60eb73168bddc"
+   "updated_at": "2026-10-14T21:54:30Z",
+   "pen_agent": "abfd60eb73168bddc",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 38,
