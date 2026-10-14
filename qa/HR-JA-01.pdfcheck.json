@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "pages": 30,
+  "checks": {
+    "A": "ok: baris tengah JOB ANALYSIS / DEPARTMENT HUMAN RESOURCES / Job Analysis dan Uraian Jabatan, 'No : SNX-HR-JA-01' sama dengan Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, label berurutan sama dengan acuan (Company Name s.d. Review Period + baris kosong), nilai terisi, Effective Date kosong, Status Draft",
+    "C": "ok: Revision History baris 00 berdeskripsi 'Draft awal untuk review dan pengesahan'; Approval 3 baris nama/jabatan terisi (Sita Nadia Salsabila Widodo / HRGA Officer, Aziz Priyo Widakdo / HR Manager, Samuel Kristanto Utomo / President Director); Signature kosong",
+    "D": "ok: daftar isi 1-11 cocok dengan heading badan (Tujuan s.d. Acuan ISO)",
+    "E": "ok: bagian bernomor 1-11 dengan sub 6.1-6.15 dan 7.1-7.2, tabel bergaya acuan (header tebal tengah, garis tipis); tidak ada diagram/bagan",
+    "F": "ok: semua header kolom tampil, sel isi terisi, tidak ada teks sel terpotong, lebar kolom wajar; beberapa baris/tabel pecah antarhalaman (nonblocking)",
+    "H": "ok: label klasifikasi ada di footer semua 30 halaman, nomor halaman 1-30 berurutan; ejaan label 'RESTRICTED (Internal)' bukan 'RESTRICTED (INTERNAL)' (nonblocking)",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) sama dengan acuan, nol placeholder [..], nol teks instruksi template, tidak ada halaman kosong berlebih",
+    "J": "ok: urutan sampul > Identity Document > Revision History + Approval > Table of Contents > badan sama dengan acuan; gaya heading, gaya tabel, posisi header/footer sama"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Label footer tertulis 'RESTRICTED (Internal)' (huruf kecil), bukan 'RESTRICTED (INTERNAL)' seperti yang diminta; acuan Generik sendiri tidak memuat label klasifikasi di footer",
+    "Baris tabel pecah antarhalaman: hal 5-6 (Definisi, KPI Matrix), 6-7 (K1), 7-8 (JA-10 nama 'Kana Salsabila Putri / Koeswologito' terbelah), 9-10, 10-11, 14-15, 15-16, 16-17, 19-20 (JA-13 tugas 2), 21-22, 24-25, 28-29",
+    "Header tabel yatim di dasar halaman: hal 8, 11 (baris header 'Aspek ... dan / kondisi kerja' terbelah ke halaman berikut), hal 18 (header 'No | Tugas dan tanggung jawab' sendirian)",
+    "Sel teks rata kanan-kiri (justify) memunculkan spasi lebar di sel sempit: hal 7 (JA-10 nama), hal 24, 26, 28 (JA-08/JA-09 di tabel bagian 8), 29-30",
+    "Hal 24: ruang kosong di atas tabel 'No | Bidang | Tanggung jawab utama' (spasi antartabel jatuh di awal halaman)"
+  ]
+}

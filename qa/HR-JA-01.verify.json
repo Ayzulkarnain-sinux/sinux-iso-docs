@@ -1,0 +1,61 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 2 Ruang lingkup lawan bagian 7.1 dan 7.2 (tabel Indikator kinerja)",
+   "masalah": "Ruang lingkup mengecualikan KPI per jabatan beserta target numerik, tetapi bagian 7 memuat KPI berangka untuk JA-08 dan JA-09. Saran: tulis pengecualian 'selain indikator usulan dari jobdesk Legal di bagian 7'.",
+   "bukti": "Bagian 2: 'Yang dikecualikan: ... KPI per jabatan beserta target numerik, bobot, dan sumber datanya (butir 4.6)'. Bagian 7.1: 'Review kontrak sesuai SLA | 90% tepat waktu'; 7.2: 'Draf/review diserahkan sesuai tenggat | 90% tepat waktu'."
+  },
+  {
+   "lokasi": "Bagian 7.1 dan 7.2, paragraf pembuka",
+   "masalah": "Kalimat sumber yang dibawa apa adanya tidak cocok dengan isi bagian, karena bagian ini juga memuat KPI, kualifikasi, hubungan kerja, dan rutinitas.",
+   "bukti": "7.1: 'Bagian ini hanya memuat peran, tanggung jawab, dan wewenang.' 7.2: 'Bagian ini hanya memuat peran, tugas, dan batasan.'"
+  },
+  {
+   "lokasi": "Bagian 6, baris Kondisi kerja (13 dari 15 jabatan)",
+   "masalah": "Frasa lingkungan fisik sama di hampir semua jabatan dan bisa berlaku di perusahaan mana pun (§6a.3, pengulangan §6a.6). Frasa itu juga bertentangan dengan pengantar bagian 6 yang menyebut isinya khusus untuk jabatan itu. Label USULAN sudah benar. Saran: pindahkan frasa bersama ke butir 4.10 sekali saja, lalu sisakan pembeda per jabatan.",
+   "bukti": "'Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah (USULAN)' (JA-01, 02, 08, 09, 10, 11, 14, dan varian di JA-03 sampai 07, 12). Pengantar bagian 6: '... risiko kerja yang khusus untuk jabatan itu.'"
+  },
+  {
+   "lokasi": "Bagian 6, unsur 'Risiko kerja' di baris Kondisi kerja",
+   "masalah": "Isinya kalimat pasif tanpa pelaku dan mengulang wewenang atau uraian yang sudah ada, bukan risiko kerja (§6a.1, §6a.6). Pelaku tersirat dari baris jabatan, jadi tidak memblokir.",
+   "bukti": "JA-03: 'komitmen di luar kontrak, margin, dan diskon dievaluasi sebelum penawaran'; JA-06: 'publikasi dijadwalkan hanya setelah persetujuan (wewenang 2)'; JA-10: 'pembayaran yang belum lengkap ditahan (wewenang 1)'; JA-11: 'posting tanpa dukungan yang memadai ditolak (wewenang 3)'; JA-15: 'APD dipakai bila diwajibkan, potensi bahaya dilaporkan'; JA-01/JA-02: 'keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)'."
+  },
+  {
+   "lokasi": "Butir 4.10, kalimat pertama",
+   "masalah": "Alamat terbukti dari gambar footer template (word/media/image2.png: 'Sinux Office / Midpoint Place Lt.10, Jl. H. Fachrudin, Kp. Bali, Tanah Abang, Jakarta Pusat'). Klaim bahwa alamat itu lokasi kerja utama semua jabatan adalah tafsir penyusun (notes asumsi 14) tanpa label. Saran: beri (USULAN) atau tulis 'Kantor SINUX beralamat di ...'.",
+   "bukti": "'Lokasi kerja utama semua jabatan adalah Sinux Office, Midpoint Place Lt.10, Jakarta Pusat.'"
+  },
+  {
+   "lokasi": "Bagian 6 JA-04 lawan JA-13, baris Kondisi kerja",
+   "masalah": "Satu fakta dari POL-OPS-001 ditulis dengan dua kata kerja dan dua subjek. POL-OPS-001 sendiri berstatus 'DRAFT v0.1, berlaku setelah disahkan COO'. Isi sesuai sumber (P-01 dan Bagian 5). Saran: samakan menjadi 'POL-OPS-001 (draf v0.1) mengatur NOC dan SOC berjalan 24/7'.",
+   "bukti": "JA-04: 'POL-OPS-001 (draf v0.1) menetapkan layanan Operation berjalan 24/7.' JA-13: 'POL-OPS-001 (draf v0.1) mengusulkan NOC dan SOC berjalan 24/7 dalam tiga shift 8 jam'."
+  },
+  {
+   "lokasi": "Bagian 6 JA-14 (dan JA-08, JA-10, JA-11), baris Garis pelaporan",
+   "masalah": "(g) Untuk garis lapor Aziz, data_conflicts memakai 'garis putus-putus ke Direktur, berlabel menunggu konfirmasi', dan SNX-HR-ORG-01 menulis 'Direktur (JA-02), menunggu konfirmasi (K-04)'. Dokumen ini menambah 'atau Management'. Kalimat ini masih sesuai sumber HR-JA-001 dan sudah tercatat sebagai open item 21. Ini bukan fakta salah, tetapi set dokumen belum seragam.",
+   "bukti": "JA-14: 'Atasan langsung: COO atau Management (menunggu konfirmasi).' config/defaults.json data_conflicts butir 'Garis lapor Aziz Priyo Widakdo'. specs/HR-ORG-01.json baris JA-14."
+  },
+  {
+   "lokasi": "Bagian 6 JA-08 dan JA-09, bagian 7",
+   "masalah": "Ada empat sebutan untuk satu kegiatan (§6a.7). 'Tinjauan hukum' ditambahkan penyusun, bukan kata tim.",
+   "bukti": "JA-08 butir 1: 'peninjauan hukum'; JA-09 tujuan: 'telaah hukum'; JA-08 Kondisi kerja: 'tinjauan hukum atas kontrak dan dokumen'; 7.1/7.2: 'reviewer', 'Mereview'."
+  },
+  {
+   "lokasi": "Bagian 8, kalimat sesudah tabel",
+   "masalah": "SNX-HR-ORG-01 mencatat Head of Operation tanpa pemegang jabatan, sehingga kata 'dipetakan' terlalu kuat.",
+   "bukti": "Dokumen: 'Peran lain di dokumen Operation dan ISMS, misalnya Head of Operation, dipetakan di SNX-HR-ORG-01.' specs/HR-ORG-01.json: 'Head of Operation' | '(USULAN), belum ada pemegang (K-10, K-11)'."
+  },
+  {
+   "lokasi": "Bagian 5, kolom Unit",
+   "masalah": "Nama unit diubah dari sumber tanpa label di tabel. Label USULAN baru muncul di bagian 9, dan open item 3 sudah ada.",
+   "bukti": "Sumber: JA-04/JA-05 'Operations', JA-12 'HR / GA', JA-15 'HRGA / General Affairs'. Dokumen: 'Operation', 'Human Resources', 'Human Resources'."
+  },
+  {
+   "lokasi": "Bagian 7.1, tabel Kualifikasi butir 2",
+   "masalah": "Istilah undang-undang (UU 27/2022) adalah 'Pelindungan Data Pribadi'. Sumber menulis 'pelindungan', dan penyeragaman menjadi 'perlindungan' menjauh dari istilah resmi. Masalah kecil.",
+   "bukti": "Sumber: 'Pemahaman regulasi sektor teknologi, OSS/KBLI, dan pelindungan data pribadi.' Dokumen: '... dan perlindungan data pribadi.'"
+  }
+ ]
+}

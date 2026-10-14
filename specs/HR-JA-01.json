@@ -1,0 +1,2382 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "HR-JA-01",
+  "doc_type_cover": "JOB ANALYSIS",
+  "doc_type_label": "Job Analysis",
+  "number": "SNX-HR-JA-01",
+  "department": "Human Resources",
+  "title": "Job Analysis dan Uraian Jabatan",
+  "process_owner": "HR Manager",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Dokumen ini memuat rincian tugas, tanggung jawab, kualifikasi, dan kondisi kerja untuk tiap jabatan dalam struktur organisasi SINUX."
+    },
+    {
+     "p": "Dokumen dipakai untuk rekrutmen, orientasi karyawan baru, performance management, competency assessment, dan sebagai bukti penetapan peran dalam sistem manajemen mutu."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Dokumen ini mencakup 15 jabatan aktif, JA-01 sampai JA-15 (bagian 5 dan 6). Jabatan Legal & Compliance juga diuraikan lebih rinci menurut Jobdesk Line Manager Legal dan Jobdesk Staff Legal (bagian 7)."
+    },
+    {
+     "p": "Yang dikecualikan: jabatan kosong dan grading; KPI per jabatan beserta target numerik, bobot, dan sumber datanya (butir 4.6); hak tanda tangan kontrak dan otorisasi keuangan (butir 4.4); peran di dokumen ISO yang bukan jabatan, yang dipetakan lewat matriks peran (bagian 8)."
+    }
+   ]
+  },
+  {
+   "h": "Definisi",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Job Analysis",
+        "Dokumen yang memuat rincian tugas, tanggung jawab, kualifikasi, dan kondisi kerja tiap jabatan."
+       ],
+       [
+        "Jabatan",
+        "Posisi kerja bernomor JA-nn dalam struktur organisasi SINUX."
+       ],
+       [
+        "Pemegang jabatan",
+        "Orang yang menduduki sebuah jabatan."
+       ],
+       [
+        "Uraian jabatan",
+        "Daftar tugas dan tanggung jawab sebuah jabatan."
+       ],
+       [
+        "Kualifikasi",
+        "Pendidikan, pengalaman, persyaratan tambahan, dan kompetensi yang dibutuhkan sebuah jabatan."
+       ],
+       [
+        "Kompetensi teknis",
+        "Pengetahuan dan keterampilan teknis yang dibutuhkan jabatan (hard skills)."
+       ],
+       [
+        "Kompetensi perilaku",
+        "Sikap dan kemampuan kerja bersama yang dibutuhkan jabatan (soft skills)."
+       ],
+       [
+        "Wewenang",
+        "Hal yang boleh diputuskan, disetujui, diminta, atau ditahan sebuah jabatan dalam batas yang ditetapkan dokumen ini."
+       ],
+       [
+        "Atasan langsung",
+        "Jabatan tempat pemegang jabatan melapor."
+       ],
+       [
+        "Bawahan langsung",
+        "Jabatan yang melapor kepada pemegang jabatan."
+       ],
+       [
+        "Garis pelaporan",
+        "Hubungan atasan langsung dan bawahan langsung antarjabatan."
+       ],
+       [
+        "Management",
+        "Unit tempat JA-01 dan JA-02 berada."
+       ],
+       [
+        "Authority Matrix",
+        "Matriks yang menetapkan batas wewenang tiap jabatan. Istilah matriks otorisasi dan DoA di sumber dibaca sebagai Authority Matrix (USULAN)."
+       ],
+       [
+        "Competency Matrix",
+        "Dokumen yang menetapkan kompetensi yang dibutuhkan tiap jabatan."
+       ],
+       [
+        "KPI Matrix",
+        "Dokumen terpisah yang menetapkan target numerik, bobot, dan sumber data indikator kinerja."
+       ],
+       [
+        "Job evaluation",
+        "Penilaian bobot tiap jabatan."
+       ],
+       [
+        "Peran ISO",
+        "Peran yang disebut di dokumen sistem manajemen, misalnya Line Manager Legal, yang bisa berbeda dari nama jabatan."
+       ],
+       [
+        "Matriks peran",
+        "Tabel yang memetakan peran ISO ke jabatan (bagian 8; lengkapnya di SNX-HR-ORG-01)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Ketentuan Umum",
+   "blocks": [
+    {
+     "p": "4.1 Uraian tugas, persyaratan kompetensi, wewenang, dan garis pelaporan yang belum dinyatakan secara resmi merupakan usulan. Pemegang fungsi meninjaunya dan Management mengesahkannya; sampai pengesahan, isinya bukan fakta yang telah disahkan."
+    },
+    {
+     "p": "4.2 Nama pemegang jabatan dan nama jabatan mengacu pada daftar jabatan yang disampaikan perusahaan."
+    },
+    {
+     "p": "4.3 Garis pelaporan berlabel menunggu konfirmasi belum menjadi garis pelaporan resmi. Management mengonfirmasi atasan langsung dan bawahan langsung yang belum ditetapkan secara resmi sebelum dokumen disahkan."
+    },
+    {
+     "p": "4.4 Authority Matrix membatasi wewenang di dokumen ini. Jabatan tidak otomatis memperoleh hak tanda tangan kontrak atau otorisasi keuangan."
+    },
+    {
+     "p": "4.5 Keputusan keuangan, legal, perubahan kontrak, pengangkatan/pemutusan hubungan kerja, dan perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku. Batasan ini berlaku untuk semua jabatan."
+    },
+    {
+     "p": "4.6 Indikator kinerja di dokumen ini adalah usulan indikator. Target numerik, bobot, dan sumber data ditetapkan di KPI Matrix."
+    },
+    {
+     "p": "4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan. Masa pengalaman minimum ditentukan sesudah job evaluation."
+    },
+    {
+     "p": "4.8 Semua jabatan berkoordinasi secara internal dengan Management, Commercial, Operation, Legal, Finance, Accounting & Tax, dan Human Resources sesuai kebutuhan proses. Koordinasi eksternal dengan pelanggan, vendor, regulator, atau konsultan hanya sesuai mandat dan ruang lingkup jabatan."
+    },
+    {
+     "p": "4.9 Dokumen ini membagi persyaratan pendidikan dan pengalaman dalam empat kelompok."
+    },
+    {
+     "table": {
+      "header": [
+       "Kelompok",
+       "Persyaratan pendidikan dan pengalaman",
+       "Berlaku untuk"
+      ],
+      "widths_cm": [
+       2.4,
+       9.8,
+       3.8
+      ],
+      "rows": [
+       [
+        "K1",
+        "Pendidikan relevan (S1 diutamakan), pengalaman kepemimpinan dan pengelolaan fungsi yang memadai, kemampuan mengambil keputusan berbasis data. Kesetaraan pengalaman dapat dipertimbangkan.",
+        "JA-01, JA-02, JA-03, JA-04, JA-14"
+       ],
+       [
+        "K2",
+        "Pendidikan D3/S1 pada bidang relevan atau pengalaman setara, pengalaman praktis sesuai kompleksitas fungsi, mampu menggunakan aplikasi dan prosedur kerja terkait.",
+        "JA-05 sampai JA-12"
+       ],
+       [
+        "K3",
+        "Pendidikan SMK/D3/S1 bidang IT atau setara, pemahaman dasar jaringan, OS dan troubleshooting, pengalaman helpdesk/NOC merupakan nilai tambah.",
+        "JA-13"
+       ],
+       [
+        "K4",
+        "Pendidikan sesuai kebutuhan operasional, mampu membaca instruksi kerja, bekerja aman dan melaksanakan tugas rutin dengan konsisten.",
+        "JA-15"
+       ]
+      ]
+     }
+    },
+    {
+     "p": "4.10 Lokasi kerja utama semua jabatan adalah Sinux Office, Midpoint Place Lt.10, Jakarta Pusat. Karyawan tidak keluar dari area kantor pada jam kerja tanpa izin dan pemberitahuan sebelumnya kepada atasan langsung (Peraturan Perusahaan Pasal 29)."
+    },
+    {
+     "p": "Karyawan yang berhalangan berangkat ke kantor, bukan karena sakit atau cuti, dapat bekerja dari rumah dengan izin atasan langsung. Karyawan itu tetap dapat dihubungi pada jam kerja lewat saluran komunikasi perusahaan dan melapor kepada atasan (Pasal 31)."
+    },
+    {
+     "p": "Karyawan tidak wajib bekerja pada hari libur resmi. Perusahaan dapat mempekerjakan karyawan pada hari libur resmi bila sifat pekerjaan harus dijalankan terus-menerus atau berdasarkan kesepakatan, dengan upah lembur atau penggantian cuti (Pasal 22)."
+    },
+    {
+     "p": "Jam masuk dan jam pulang mengikuti Peraturan Perusahaan (USULAN)."
+    }
+   ]
+  },
+  {
+   "h": "Daftar Jabatan",
+   "blocks": [
+    {
+     "p": "Tabel berikut mencantumkan 15 jabatan aktif beserta pemegang jabatan dan unitnya."
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Jabatan",
+       "Pemegang jabatan",
+       "Unit"
+      ],
+      "widths_cm": [
+       1.6,
+       5.6,
+       5.4,
+       3.4
+      ],
+      "rows": [
+       [
+        "JA-01",
+        "Direktur Utama",
+        "Samuel Kristanto Utomo",
+        "Management"
+       ],
+       [
+        "JA-02",
+        "Direktur (COO)",
+        "Amirull Yusuf Zulkarnain",
+        "Management"
+       ],
+       [
+        "JA-03",
+        "VP Commercial",
+        "Laras Rasmawati",
+        "Commercial"
+       ],
+       [
+        "JA-04",
+        "VP Tech Operation and Services",
+        "Fani Fatullah",
+        "Operation"
+       ],
+       [
+        "JA-05",
+        "Manager of Product Tech",
+        "Ahmad Rifa'i",
+        "Operation"
+       ],
+       [
+        "JA-06",
+        "Brand & Marketing",
+        "Zilly Dwinata",
+        "Commercial"
+       ],
+       [
+        "JA-07",
+        "Business Development",
+        "Rolin Krisnawati Nababan",
+        "Commercial"
+       ],
+       [
+        "JA-08",
+        "Legal & Compliance (Line Manager Legal)",
+        "Ester Febe Utomo",
+        "Legal"
+       ],
+       [
+        "JA-09",
+        "Legal & Compliance (Staff Legal)",
+        "Alif Altamziz",
+        "Legal"
+       ],
+       [
+        "JA-10",
+        "Finance",
+        "Kana Salsabila Putri Koeswologito",
+        "Finance"
+       ],
+       [
+        "JA-11",
+        "Accounting & Tax",
+        "Pradipta Nugraha",
+        "Accounting & Tax"
+       ],
+       [
+        "JA-12",
+        "HRGA Officer",
+        "Sita Nadia Salsabila Widodo",
+        "Human Resources"
+       ],
+       [
+        "JA-13",
+        "Technical/Operation Engineer L1",
+        "Erik Dwi Yanto",
+        "Operation"
+       ],
+       [
+        "JA-14",
+        "HR Manager",
+        "Aziz Priyo Widakdo",
+        "Human Resources"
+       ],
+       [
+        "JA-15",
+        "Office Helper",
+        "Muhamad Reyhan Bahtiar",
+        "Human Resources"
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal (USULAN) berasal dari HR-JA-001, yang mencatat JA-09 sebagai bawahan langsung JA-08. Jobdesk Line Manager Legal dan Jobdesk Staff Legal tidak menyebut nama pemegang jabatan."
+    }
+   ]
+  },
+  {
+   "h": "Uraian Jabatan",
+   "blocks": [
+    {
+     "p": "Tiap jabatan di bawah ini memuat tujuan jabatan, tugas dan tanggung jawab, kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja. Persyaratan tambahan (butir 4.7), hubungan kerja (butir 4.8), batasan umum wewenang (butir 4.5), dan kondisi kerja semua jabatan (butir 4.10) berlaku untuk semua jabatan. Baris Kondisi kerja tiap jabatan memuat pola kerja, lingkungan dan kondisi fisik, serta risiko kerja yang khusus untuk jabatan itu."
+    },
+    {
+     "h2": "JA-01 Direktur Utama"
+    },
+    {
+     "p": "Tujuan jabatan: Menetapkan arah strategis dan memastikan tata kelola, mutu layanan, serta keberlanjutan usaha."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menetapkan strategi, sasaran bisnis dan prioritas tahunan perusahaan."
+       ],
+       [
+        "2",
+        "Meninjau kinerja keuangan, komersial, operasi, risiko dan kepatuhan melalui rapat berkala."
+       ],
+       [
+        "3",
+        "Memastikan kebijakan mutu, sasaran mutu, dan kebutuhan sumber daya ditetapkan dan dikomunikasikan."
+       ],
+       [
+        "4",
+        "Mengarahkan evaluasi risiko strategis, kontinuitas layanan dan tindak lanjut ketidaksesuaian signifikan."
+       ],
+       [
+        "5",
+        "Menetapkan akuntabilitas pimpinan fungsi dan meninjau pencapaian targetnya."
+       ],
+       [
+        "6",
+        "Mengesahkan kebijakan utama, anggaran dan perubahan organisasi sesuai kewenangan korporasi."
+       ],
+       [
+        "7",
+        "Memimpin tinjauan manajemen dan memastikan keputusan memiliki penanggung jawab serta tenggat tindak lanjut."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K1, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Perencanaan strategis dan penganggaran; 2) Pemahaman laporan keuangan dan manajemen risiko; 3) Tata kelola perusahaan dan sistem manajemen mutu; 4) Analisis portofolio layanan IT dan kontrak bisnis"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Kepemimpinan strategis; 2) Pengambilan keputusan; 3) Komunikasi eksekutif; 4) Integritas; 5) Manajemen perubahan"
+       ],
+       [
+        "Wewenang",
+        "1) Menyetujui strategi, kebijakan dan sumber daya dalam batas anggaran dasar; 2) Mendelegasikan kewenangan dengan bukti tertulis; 3) Meminta tindakan perbaikan lintas fungsi"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: Organ perusahaan sesuai ketentuan dan anggaran dasar (menunggu verifikasi). Bawahan langsung: COO dan pimpinan fungsi sesuai struktur yang disahkan."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: rapat berkala untuk meninjau kinerja dan tinjauan manajemen (uraian butir 2 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-02 COO"
+    },
+    {
+     "p": "Tujuan jabatan: Mengintegrasikan strategi menjadi eksekusi, memastikan target departemen, koordinasi dan pengendalian risiko berjalan."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menerjemahkan strategi perusahaan menjadi target operasional lintas fungsi."
+       ],
+       [
+        "2",
+        "Mengoordinasikan Commercial, Operation, dan fungsi pendukung sesuai penugasan resmi."
+       ],
+       [
+        "3",
+        "Meninjau proyeksi penjualan, delivery proyek, SLA layanan, collection, dan eskalasi klien."
+       ],
+       [
+        "4",
+        "Menyelesaikan hambatan lintas departemen dengan keputusan yang terdokumentasi."
+       ],
+       [
+        "5",
+        "Memastikan kepatuhan terhadap kebijakan dan proses yang disahkan."
+       ],
+       [
+        "6",
+        "Mengevaluasi kebutuhan sumber daya, efektivitas tim, dan usulan perbaikan proses."
+       ],
+       [
+        "7",
+        "Melaporkan pencapaian dan risiko utama kepada Direktur Utama."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K1, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Business operations dan ringkasan kinerja KPI; 2) Commercial/project financial literacy; 3) Risk and issue management; 4) Pengetahuan umum IT infrastructure dan managed services"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Leadership lintas fungsi; 2) Negosiasi; 3) Analytical thinking; 4) Problem solving; 5) Stakeholder management"
+       ],
+       [
+        "Wewenang",
+        "1) Mengarahkan prioritas kerja antar fungsi sesuai mandat; 2) Memberikan peninjauan dan persetujuan operasional sesuai Authority Matrix; 3) Meminta laporan kinerja dan rencana perbaikan"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: Direktur Utama. Bawahan langsung: Pimpinan departemen yang ditetapkan Management."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: rapat dan peninjauan lintas fungsi (uraian butir 1 sampai 4). Insiden P1 dapat membuat COO dihubungi di luar jam kerja (POL-OPS-001, draf v0.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-03 VP Commercial"
+    },
+    {
+     "p": "Tujuan jabatan: Mengelola kinerja komersial dari pipeline, penawaran, kontrak sampai koordinasi billing dan kepuasan account."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menyusun sales plan, target, pipeline dan proyeksi periodik per account/produk."
+       ],
+       [
+        "2",
+        "Memastikan kebutuhan pelanggan terdokumentasi dan diserahkan ke tim teknis untuk solusi."
+       ],
+       [
+        "3",
+        "Mengendalikan proses proposal, peninjauan pricing, negosiasi dan persetujuan sebelum penawaran."
+       ],
+       [
+        "4",
+        "Memastikan kelengkapan kontrak/PO/SPK dan serah terima ke operasi."
+       ],
+       [
+        "5",
+        "Memonitor booking TCV, billing schedule, collection bersama Finance, dan risiko account."
+       ],
+       [
+        "6",
+        "Mengevaluasi margin, diskon, perubahan scope dan potensi komitmen di luar kontrak."
+       ],
+       [
+        "7",
+        "Melakukan peninjauan aktivitas tim komersial dan tindakan perbaikan terhadap kesenjangan target."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K1, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) CRM/pipeline management; 2) Proposal, pricing, TCV dan margin; 3) Account management dan serah terima kontrak; 4) Forecasting dan analisis penjualan"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Commercial judgment; 2) Negosiasi; 3) Customer orientation; 4) Pembinaan; 5) Kolaborasi"
+       ],
+       [
+        "Wewenang",
+        "1) Merekomendasikan harga/diskon untuk persetujuan; 2) Mengatur prioritas pipeline dan account; 3) Menolak submission komersial yang belum lengkap"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO (garis pelaporan ke Direktur Utama menunggu konfirmasi). Bawahan langsung: Business Development dan Brand & Marketing. Hubungan pelaporan Manager of Product Tech menunggu konfirmasi."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: negosiasi, penawaran, dan serah terima kontrak dengan pelanggan dan tim komersial (uraian butir 3 sampai 5). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan pelanggan dapat berlangsung di luar kantor (USULAN). Risiko kerja: komitmen di luar kontrak, margin, dan diskon dievaluasi sebelum penawaran (uraian butir 3 dan 6)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-04 VP Tech Operation and Services"
+    },
+    {
+     "p": "Tujuan jabatan: Memastikan delivery proyek dan layanan teknis memenuhi scope, mutu, SLA dan kebutuhan pelanggan."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menyusun delivery plan, kapasitas teknis, alokasi sumber daya dan prioritas pekerjaan."
+       ],
+       [
+        "2",
+        "Mengawasi implementasi, konfigurasi, uji fungsi, serah terima dan dokumentasi proyek."
+       ],
+       [
+        "3",
+        "Memonitor tiket insiden, permintaan layanan, perubahan konfigurasi dan eskalasi SLA di Zammad."
+       ],
+       [
+        "4",
+        "Memastikan kontrol keamanan, akses, backup dan perubahan sesuai kebijakan teknis."
+       ],
+       [
+        "5",
+        "Mengelola risiko delivery, defect, keterlambatan, serta tindakan korektif."
+       ],
+       [
+        "6",
+        "Menyelaraskan perubahan scope dengan Commercial dan pelanggan melalui persetujuan."
+       ],
+       [
+        "7",
+        "Mengevaluasi kinerja vendor/engineer serta efektivitas pemeliharaan dan layanan."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K1, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Project/service delivery management; 2) IT infrastructure, cloud dan networking; 3) ITSM incident/change/problem; 4) SLA, RCA dan technical documentation"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Prioritization; 2) Incident leadership; 3) Customer communication; 4) Risk awareness; 5) Pembinaan"
+       ],
+       [
+        "Wewenang",
+        "1) Menetapkan penugasan teknis sesuai mandat; 2) Mengeskalasi risiko SLA dan mengusulkan sumber daya; 3) Menahan perubahan berisiko tanpa persetujuan"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO. Bawahan langsung: Tim operasional dan layanan teknis sesuai struktur serta penugasan yang disahkan."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: memantau tiket, SLA, proyek, dan perubahan konfigurasi (uraian butir 2 dan 3). POL-OPS-001 (draf v0.1) menetapkan layanan Operation berjalan 24/7. Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; eskalasi insiden dapat datang di luar jam kerja (USULAN). Risiko kerja: risiko delivery, defect, dan keterlambatan dikelola lewat tindakan korektif (uraian butir 5); perubahan berisiko ditahan tanpa persetujuan (wewenang 3)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-05 Manager of Product Tech"
+    },
+    {
+     "p": "Tujuan jabatan: Memastikan kesiapan solusi dan validitas teknis produk yang ditawarkan perusahaan."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Memelihara product knowledge, katalog layanan dan batasan kapabilitas solusi."
+       ],
+       [
+        "2",
+        "Mengumpulkan kebutuhan teknis dan menilai kelayakan solusi bersama Commercial."
+       ],
+       [
+        "3",
+        "Menyusun desain tingkat tinggi, BOM/BOQ, sizing dan asumsi teknis proposal."
+       ],
+       [
+        "4",
+        "Melakukan peninjauan risiko implementasi, lisensi, kompatibilitas dan dependensi vendor."
+       ],
+       [
+        "5",
+        "Mendukung demo/PoC, technical clarification dan pembahasan solusi pelanggan."
+       ],
+       [
+        "6",
+        "Mengelola knowledge transfer ke tim delivery setelah deal."
+       ],
+       [
+        "7",
+        "Mengevaluasi kesenjangan produk dan mengusulkan improvement berdasarkan feedback pasar."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Solution architecture dasar; 2) Sizing dan BOM/BOQ; 3) Cloud/network/security product knowledge; 4) Vendor technical documentation; 5) PoC dan technical proposal"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Analytical thinking; 2) Consultative communication; 3) Detail orientation; 4) Collaboration; 5) Learning agility"
+       ],
+       [
+        "Wewenang",
+        "1) Memberi rekomendasi kelayakan teknis; 2) Meminta klarifikasi kebutuhan dan peninjauan desain; 3) Mengeskalasi proposal yang tidak feasible"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO (VP Commercial sebagai atasan langsung menunggu konfirmasi). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: menyusun desain, sizing, dan proposal teknis serta mendukung demo dan PoC (uraian butir 3 dan 5). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; demo dapat berlangsung di lokasi pelanggan atau jarak jauh (USULAN). Risiko kerja: risiko implementasi, lisensi, kompatibilitas, dan dependensi vendor ditinjau sebelum proposal (uraian butir 4)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-06 Brand & Marketing"
+    },
+    {
+     "p": "Tujuan jabatan: Membangun awareness dan permintaan pasar melalui aktivitas brand, konten dan campaign yang terukur."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menyusun kalender kampanye, positioning dan target audience sesuai sales priorities."
+       ],
+       [
+        "2",
+        "Menyiapkan materi brand, konten digital, company profile dan sales collateral."
+       ],
+       [
+        "3",
+        "Menjaga konsistensi pesan, identitas visual dan persetujuan publikasi."
+       ],
+       [
+        "4",
+        "Mengelola event/webinar/campaign serta koordinasi vendor bila ada."
+       ],
+       [
+        "5",
+        "Memonitor reach, engagement, lead dan efektivitas biaya pemasaran."
+       ],
+       [
+        "6",
+        "Menyerahkan qualified leads ke Commercial beserta sumber dan statusnya."
+       ],
+       [
+        "7",
+        "Mengarsipkan materi, izin penggunaan aset dan evaluasi kegiatan."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Content planning dan copywriting; 2) Digital analytics dan campaign reporting; 3) Brand guidelines; 4) CRM/lead attribution; 5) Desain materi dasar"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Creativity; 2) Communication; 3) Time management; 4) Customer insight; 5) Collaboration"
+       ],
+       [
+        "Wewenang",
+        "1) Mengusulkan kampanye dan konten; 2) Menjadwalkan publikasi setelah persetujuan; 3) Meminta koreksi materi yang tidak sesuai brand"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: VP Commercial (Laras Rasmawati). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: mengelola event, webinar, dan campaign serta koordinasi vendor bila ada (uraian butir 4). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; event dapat berlangsung di luar kantor dan di luar jam kerja (USULAN). Risiko kerja: publikasi dijadwalkan hanya setelah persetujuan (wewenang 2)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-07 Business Development"
+    },
+    {
+     "p": "Tujuan jabatan: Menghasilkan peluang bisnis baru dan menjaga proses penjualan sampai handover kontrak."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Melakukan prospek, pemetaan account dan identifikasi decision maker."
+       ],
+       [
+        "2",
+        "Menggali kebutuhan pelanggan dan mengkualifikasi peluang."
+       ],
+       [
+        "3",
+        "Mengisi CRM dengan aktivitas, nilai peluang, tahapan dan estimasi closing."
+       ],
+       [
+        "4",
+        "Mengoordinasikan demo/technical discovery dengan Product Tech."
+       ],
+       [
+        "5",
+        "Menyiapkan proposal komersial dan tindak lanjut penawaran sesuai persetujuan."
+       ],
+       [
+        "6",
+        "Menjaga dokumentasi komunikasi, keberatan pelanggan dan status negosiasi."
+       ],
+       [
+        "7",
+        "Melakukan serah terima kontrak/PO dan memonitor billing atau collection bersama fungsi terkait."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Prospecting dan CRM; 2) Discovery dan account mapping; 3) Sales proposal/TCV dasar; 4) Negosiasi komersial; 5) Pemahaman solusi IT infrastructure"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Relationship building; 2) Persistence; 3) Active listening; 4) Ownership; 5) Prioritization"
+       ],
+       [
+        "Wewenang",
+        "1) Mengusulkan peluang dan strategi account; 2) Menegosiasikan dalam batas penawaran disetujui; 3) Mengeskalasi diskon/scope yang belum disetujui"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: VP Commercial (Laras Rasmawati). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: prospek, pemetaan account, dan pertemuan dengan calon pelanggan (uraian butir 1, 2, dan 4). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan dapat berlangsung di lokasi pelanggan (USULAN). Risiko kerja: negosiasi hanya dalam batas penawaran yang disetujui (wewenang 2)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-08 Legal & Compliance"
+    },
+    {
+     "p": "Tujuan jabatan: Mengendalikan risiko hukum perusahaan dan memastikan dokumen serta aktivitas bisnis ditinjau secara legal."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Melakukan peninjauan hukum atas kontrak pelanggan, vendor, tenaga kerja dan kemitraan."
+       ],
+       [
+        "2",
+        "Memelihara template kontrak, klausul standar dan daftar deviasi hukum."
+       ],
+       [
+        "3",
+        "Memantau masa berlaku perizinan, kewajiban pelaporan dan perubahan regulasi relevan."
+       ],
+       [
+        "4",
+        "Memberi advis hukum tertulis atas risiko dan pilihan mitigasi."
+       ],
+       [
+        "5",
+        "Mengelola dokumentasi legal, NDA, surat kuasa dan legal register."
+       ],
+       [
+        "6",
+        "Mendukung penanganan sengketa, klaim dan koordinasi penasihat hukum eksternal."
+       ],
+       [
+        "7",
+        "Meninjau tindak lanjut temuan legal dan menyampaikan eskalasi material ke Management."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Contract drafting/review; 2) Hukum perdata dan perusahaan Indonesia; 3) Legal compliance register; 4) Negotiation support; 5) Pengendalian dokumen"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Judgment; 2) Confidentiality; 3) Attention to detail; 4) Integrity; 5) Advisory communication"
+       ],
+       [
+        "Wewenang",
+        "1) Memberikan legal clearance/rekomendasi; 2) Meminta revisi klausul berisiko; 3) Mengeskalasi risiko yang memerlukan keputusan Management"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: JA-09 (Alif Altamziz). Uraian rinci ada di bagian 7."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: tinjauan hukum atas kontrak dan dokumen, serta koordinasi dengan penasihat hukum eksternal (uraian butir 1 dan 6); laporan kinerja dan risiko legal ke Management bulanan dan triwulanan (bagian 7.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan dengan notaris atau instansi dapat berlangsung di luar kantor (USULAN). Risiko kerja: risiko hukum dikendalikan lewat tinjauan dan eskalasi ke Management (uraian butir 7, wewenang 3); dokumen legal bersifat rahasia (kompetensi perilaku Confidentiality)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-09 Legal & Compliance"
+    },
+    {
+     "p": "Tujuan jabatan: Mendukung administrasi dan telaah hukum dengan akurasi dokumen serta pelacakan tindak lanjut."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Mengumpulkan dokumen dan data untuk proses peninjauan perjanjian."
+       ],
+       [
+        "2",
+        "Menyusun draft awal kontrak dan korespondensi hukum berdasarkan template."
+       ],
+       [
+        "3",
+        "Memperbarui contract register, tanggal berakhir, dan reminder kewajiban."
+       ],
+       [
+        "4",
+        "Memeriksa kelengkapan tanda tangan, lampiran dan arsip dokumen."
+       ],
+       [
+        "5",
+        "Menelusuri regulasi relevan dan merangkum perubahan untuk peninjauan atasan langsung."
+       ],
+       [
+        "6",
+        "Menyiapkan bukti audit dan kepatuhan hukum serta tindak lanjut revisi."
+       ],
+       [
+        "7",
+        "Menjaga kerahasiaan data perusahaan, karyawan dan klien."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Legal document administration; 2) Basic contract drafting; 3) Regulatory research; 4) Spreadsheet register; 5) Document version control"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Accuracy; 2) Confidentiality; 3) Follow-through; 4) Communication; 5) Learning agility"
+       ],
+       [
+        "Wewenang",
+        "1) Meminta kelengkapan dokumen; 2) Menyampaikan temuan untuk peninjauan atasan langsung; 3) Tidak memberi persetujuan hukum final tanpa delegasi"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: JA-08 (Ester Febe Utomo). Bawahan langsung: Tidak ada. Uraian rinci ada di bagian 7."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: rutinitas harian, mingguan, bulanan, dan triwulanan (bagian 7.2). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah (USULAN). Risiko kerja: somasi, klaim, atau surat regulator dilaporkan paling lambat 1 hari kerja dan isu risiko menengah ke atas di hari yang sama (bagian 7.2); data perusahaan, karyawan, dan klien dijaga kerahasiaannya (uraian butir 7)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-10 Finance"
+    },
+    {
+     "p": "Tujuan jabatan: Mengendalikan cash flow, penerimaan dan pengeluaran, serta menyediakan validasi data keuangan operasional."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menyusun proyeksi cash flow dan memantau kebutuhan likuiditas."
+       ],
+       [
+        "2",
+        "Mengelola proses billing, penagihan dan rekonsiliasi penerimaan pelanggan."
+       ],
+       [
+        "3",
+        "Memverifikasi bukti pembayaran aktual untuk eligible collection SIP."
+       ],
+       [
+        "4",
+        "Memeriksa kelengkapan payment request dan kesesuaian dengan persetujuan."
+       ],
+       [
+        "5",
+        "Mengendalikan aging receivable/payable dan eskalasi overdue."
+       ],
+       [
+        "6",
+        "Menyediakan data margin/COGS yang relevan untuk verifikasi komersial bersama Accounting."
+       ],
+       [
+        "7",
+        "Menyusun laporan kas dan exception pembayaran berkala."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Cash management dan reconciliation; 2) AR/AP dan aging analysis; 3) Collection verification; 4) Excel financial modeling; 5) Internal control pembayaran"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Integrity; 2) Numerical accuracy; 3) Risk awareness; 4) Stakeholder coordination; 5) Confidentiality"
+       ],
+       [
+        "Wewenang",
+        "1) Memverifikasi/menahan pembayaran yang belum lengkap; 2) Meminta dokumen pendukung dan klarifikasi; 3) Mengusulkan prioritas cash flow kepada approver"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: siklus penagihan, pembayaran, dan laporan kas berkala (uraian butir 2 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah (USULAN). Risiko kerja: pembayaran yang belum lengkap ditahan (wewenang 1); data keuangan bersifat rahasia (kompetensi perilaku Confidentiality)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-11 Accounting & Tax"
+    },
+    {
+     "p": "Tujuan jabatan: Menjaga akurasi pembukuan, pelaporan keuangan, perpajakan, dan rekonsiliasi transaksi."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Melakukan pencatatan transaksi sesuai kebijakan akuntansi dan dokumen pendukung."
+       ],
+       [
+        "2",
+        "Melakukan closing bulanan, jurnal penyesuaian dan rekonsiliasi buku besar."
+       ],
+       [
+        "3",
+        "Menyusun laporan keuangan dan analisis varians."
+       ],
+       [
+        "4",
+        "Menghitung, menyetor dan melaporkan kewajiban pajak sesuai ketentuan."
+       ],
+       [
+        "5",
+        "Memverifikasi klasifikasi COGS, biaya proyek dan margin yang dilaporkan."
+       ],
+       [
+        "6",
+        "Mengendalikan kelengkapan faktur, bukti potong dan arsip akuntansi."
+       ],
+       [
+        "7",
+        "Menindaklanjuti audit findings serta menyiapkan schedule pendukung."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) PSAK dan general ledger; 2) Tax compliance Indonesia; 3) Month-end closing; 4) COGS/project costing; 5) Financial reporting"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Accuracy; 2) Integrity; 3) Analytical thinking; 4) Deadline discipline; 5) Confidentiality"
+       ],
+       [
+        "Wewenang",
+        "1) Meminta koreksi jurnal/dokumen; 2) Mengusulkan adjustment untuk persetujuan; 3) Menolak posting tanpa dukungan yang memadai"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: closing bulanan dan pelaporan pajak sesuai ketentuan, terikat tenggat (uraian butir 2 dan 4; kompetensi perilaku Deadline discipline). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah (USULAN). Risiko kerja: posting tanpa dukungan yang memadai ditolak (wewenang 3); data keuangan bersifat rahasia (kompetensi perilaku Confidentiality)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-12 HRGA Officer"
+    },
+    {
+     "p": "Tujuan jabatan: Melaksanakan administrasi HR dan general affairs sesuai SOP serta arahan process owner HR."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Memelihara data karyawan, kontrak, personal file dan administrasi orientasi karyawan baru/proses keluar karyawan."
+       ],
+       [
+        "2",
+        "Menyiapkan dokumen absensi, cuti, benefit dan payroll input untuk verifikasi HR Manager."
+       ],
+       [
+        "3",
+        "Mendukung rekrutmen scheduling, administrasi assessment dan komunikasi kandidat."
+       ],
+       [
+        "4",
+        "Mengelola administrasi fasilitas kantor, inventaris dan kebutuhan operasional general affairs."
+       ],
+       [
+        "5",
+        "Memelihara arsip, retensi dokumen dan kontrol akses sesuai kebijakan."
+       ],
+       [
+        "6",
+        "Menyiapkan bukti pelaksanaan pelatihan, evaluasi dan dokumentasi audit HR."
+       ],
+       [
+        "7",
+        "Melaporkan deviasi administrasi dan kebutuhan perbaikan kepada HR Manager."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K2, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) HRIS dan personnel administration; 2) Payroll/attendance input; 3) BPJS administration; 4) Asset and facility administration; 5) Pengendalian dokumen"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Service orientation; 2) Confidentiality; 3) Accuracy; 4) Organization; 5) Responsiveness"
+       ],
+       [
+        "Wewenang",
+        "1) Meminta kelengkapan data/dokumen; 2) Memproses administrasi dalam SOP; 3) Mengeskalasi keputusan HR dan persetujuan ke HR Manager"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: HR Manager (Aziz Priyo Widakdo). Bawahan langsung: Office Helper (Muhamad Reyhan Bahtiar)."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: administrasi HR dan general affairs, termasuk fasilitas kantor, inventaris, dan arsip (uraian butir 1, 4, dan 5). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pengelolaan fasilitas dan inventaris menuntut berpindah di area kantor (USULAN). Risiko kerja: data karyawan dan personal file dijaga kerahasiaannya dengan kontrol akses (uraian butir 1 dan 5)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-13 Technical/Operation Engineer L1"
+    },
+    {
+     "p": "Tujuan jabatan: Memberikan dukungan teknis lini pertama sesuai SOP, runbook dan SLA."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menerima, mengklasifikasikan dan mencatat tiket/permintaan layanan di Zammad."
+       ],
+       [
+        "2",
+        "Melakukan diagnosis awal jaringan, server, cloud atau endpoint sesuai kewenangan."
+       ],
+       [
+        "3",
+        "Menjalankan pemeriksaan rutin atas pemantauan, status backup dan alert."
+       ],
+       [
+        "4",
+        "Melakukan tindakan pemulihan standar sesuai runbook dan persetujuan akses."
+       ],
+       [
+        "5",
+        "Mengeskalasi insiden yang melewati batas kemampuan atau SLA ke engineer senior."
+       ],
+       [
+        "6",
+        "Memperbarui ticket notes, bukti pendukung dan status komunikasi pengguna di Zammad."
+       ],
+       [
+        "7",
+        "Menjaga kerahasiaan credential serta mengikuti kontrol keamanan dan change management."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K3, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Basic TCP/IP dan networking; 2) OS/server troubleshooting; 3) Ticketing/ITSM; 4) Pemantauan dan log analysis; 5) Runbook dan security hygiene"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Customer service; 2) Troubleshooting mindset; 3) Discipline; 4) Communication; 5) Escalation awareness"
+       ],
+       [
+        "Wewenang",
+        "1) Menjalankan tindakan standar yang disetujui; 2) Mengeskalasi insiden prioritas tinggi; 3) Tidak mengubah konfigurasi kritis tanpa persetujuan"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: VP Tech Operation and Services (Fani Fatullah). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: dukungan teknis lini pertama sesuai SOP, runbook, dan SLA (tujuan jabatan). POL-OPS-001 (draf v0.1) mengusulkan NOC dan SOC berjalan 24/7 dalam tiga shift 8 jam: 07:00 sampai 15:00, 15:00 sampai 23:00, dan 23:00 sampai 07:00 WIB. Jam shift dan pemetaan JA-13 ke NOC menunggu keputusan COO. Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan layar monitoring dan komputer, bahaya fisik rendah; penempatan JA-13 pada shift atau jam kantor mengikuti keputusan COO (USULAN). Risiko kerja: akses ke jaringan, server, cloud, endpoint, dan kredensial wajib dijaga kerahasiaannya (uraian butir 2 dan 7); konfigurasi kritis tidak diubah tanpa persetujuan (wewenang 3)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-14 HR Manager"
+    },
+    {
+     "p": "Tujuan jabatan: Memimpin dan bertanggung jawab atas strategi, kepatuhan, efektivitas dan seluruh output Human Resources."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Menyusun rencana kerja tahunan Human Resources, kebutuhan tenaga kerja, usulan anggaran, serta sasaran yang selaras dengan kebutuhan perusahaan."
+       ],
+       [
+        "2",
+        "Memimpin proses rekrutmen dan seleksi, mulai dari persetujuan kebutuhan tenaga kerja, pencarian kandidat, penilaian, penawaran kerja, hingga pemantauan SLA rekrutmen."
+       ],
+       [
+        "3",
+        "Mengendalikan administrasi kepegawaian, termasuk perjanjian kerja, pengelolaan berkas karyawan, orientasi karyawan baru, perubahan data, dan proses pengakhiran hubungan kerja."
+       ],
+       [
+        "4",
+        "Mengendalikan proses manajemen kinerja, termasuk penyusunan KPI, penilaian berkala, kalibrasi hasil, rencana perbaikan kinerja, dan pengarsipan dokumen."
+       ],
+       [
+        "5",
+        "Memastikan kebutuhan kompetensi tiap jabatan telah ditetapkan, kesenjangan kompetensi dievaluasi, serta rencana dan efektivitas pelatihan ditindaklanjuti."
+       ],
+       [
+        "6",
+        "Meninjau data penggajian, tunjangan, kepesertaan BPJS, usulan penyesuaian kompensasi, dan administrasi insentif sesuai kewenangan serta persetujuan yang berlaku."
+       ],
+       [
+        "7",
+        "Menangani hubungan karyawan, pemeriksaan dugaan pelanggaran, penegakan disiplin, penyelesaian keluhan, dan mitigasi risiko ketenagakerjaan secara objektif."
+       ],
+       [
+        "8",
+        "Menyusun, meninjau, menerapkan dan mengevaluasi SOP/kebijakan HR serta kepatuhan regulasi."
+       ],
+       [
+        "9",
+        "Mengawasi hasil kerja HRGA Officer, memberikan pembinaan, membagi tugas dan menilai kinerja pelaksana."
+       ],
+       [
+        "10",
+        "Bertanggung jawab atas kesiapan audit Human Resources, ketersediaan bukti pelaksanaan, tindak lanjut temuan, serta evaluasi efektivitas tindakan perbaikan."
+       ],
+       [
+        "11",
+        "Menyampaikan laporan kinerja Human Resources, risiko yang perlu ditangani, perkembangan tindakan perbaikan, serta hal yang memerlukan keputusan Management."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K1, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) UU ketenagakerjaan dan praktik hubungan industrial Indonesia; 2) Asesmen rekrutmen dan workforce planning; 3) KPI/performance management; 4) Compensation, payroll verification dan BPJS; 5) Competency mapping, TNA dan evaluasi pelatihan; 6) ISO 9001 HR process control dan pengendalian dokumen; 7) HR analytics dan HRIS"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Leadership dan pembinaan; 2) Judgment dan fairness; 3) Confidentiality dan integrity; 4) Conflict resolution; 5) Stakeholder influence; 6) Analytical problem solving; 7) Change management"
+       ],
+       [
+        "Wewenang",
+        "1) Menetapkan prioritas dan pembagian tugas HR; 2) Melakukan peninjauan mutu dan meminta koreksi atas hasil kerja HRGA Officer; 3) Menyetujui dokumen administratif dalam batas Authority Matrix; 4) Merekomendasikan hiring, salary action, disciplinary action dan policy kepada approver; 5) Mengeskalasi risiko ketenagakerjaan dan temuan audit; 6) Mengendalikan akses informasi personal sesuai kebijakan"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: HRGA Officer (Sita Nadia Salsabila Widodo). Pengawasan fungsi Office Helper melalui HRGA Officer."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: pengelolaan rekrutmen, kepegawaian, kinerja, dan hubungan karyawan (uraian butir 2 sampai 4 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: data penggajian, tunjangan, dan perkara disiplin karyawan bersifat rahasia dengan akses dikendalikan (uraian butir 6 dan 7, wewenang 6)."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-15 Office Helper"
+    },
+    {
+     "p": "Tujuan jabatan: Mendukung kelancaran operasional umum dan pemeliharaan area kerja sesuai instruksi dan standar keselamatan."
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tugas dan tanggung jawab"
+      ],
+      "widths_cm": [
+       1.2,
+       14.8
+      ],
+      "rows": [
+       [
+        "1",
+        "Melaksanakan tugas pendukung operasional kantor sesuai work order."
+       ],
+       [
+        "2",
+        "Membantu penataan ruang, logistik internal dan perpindahan barang ringan dengan aman."
+       ],
+       [
+        "3",
+        "Memeriksa kebersihan/kesiapan fasilitas dan melaporkan kerusakan."
+       ],
+       [
+        "4",
+        "Membantu penerimaan, pencatatan dan distribusi barang sesuai prosedur."
+       ],
+       [
+        "5",
+        "Menjaga aset, kunci dan area kerja sesuai pembatasan akses."
+       ],
+       [
+        "6",
+        "Menggunakan alat pelindung diri (APD) bila diwajibkan dan melaporkan potensi bahaya."
+       ],
+       [
+        "7",
+        "Mendokumentasikan penyelesaian tugas serta eskalasi kendala ke penanggung jawab general affairs."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Aspek",
+       "Kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Pendidikan dan pengalaman",
+        "Kelompok K4, lihat butir 4.9."
+       ],
+       [
+        "Kompetensi teknis",
+        "1) Basic inventory handling; 2) Facility checklist; 3) Basic workplace safety; 4) Simple work-order documentation"
+       ],
+       [
+        "Kompetensi perilaku",
+        "1) Reliability; 2) Service orientation; 3) Punctuality; 4) Safety awareness; 5) Teamwork"
+       ],
+       [
+        "Wewenang",
+        "1) Meminta klarifikasi instruksi; 2) Menghentikan aktivitas yang tidak aman dan melapor; 3) Tidak mengakses aset/ruang terbatas tanpa izin"
+       ],
+       [
+        "Garis pelaporan",
+        "Atasan langsung: HRGA Officer (Sita Nadia Salsabila Widodo). Bawahan langsung: Tidak ada."
+       ],
+       [
+        "Kondisi kerja",
+        "Pola kerja: tugas pendukung operasional kantor sesuai work order (uraian butir 1). Lingkungan dan kondisi fisik: area kantor dan fasilitas, kerja sebagian berdiri dan berpindah tempat, bukan kerja layar (USULAN). Risiko kerja: perpindahan barang ringan dilakukan dengan aman, APD dipakai bila diwajibkan, potensi bahaya dilaporkan (uraian butir 2 dan 6); aktivitas tidak aman dihentikan (wewenang 2); aset, kunci, dan ruang terbatas hanya sesuai izin dan pembatasan akses (uraian butir 5, wewenang 3)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Uraian Rinci Jabatan Legal",
+   "blocks": [
+    {
+     "p": "Bagian ini memuat uraian rinci dua jabatan Legal dari Jobdesk Line Manager Legal dan Jobdesk Staff Legal. Alur kerja rinci Legal diatur di SNX-LEG-SOP-01."
+    },
+    {
+     "p": "Kualifikasi di bagian ini lebih spesifik daripada kelompok K2 di butir 4.9. Bila disahkan, kualifikasi ini berlaku untuk JA-08 dan JA-09, dan masa pengalaman minimum butir 4.7 mengikuti angka di sini (USULAN)."
+    },
+    {
+     "h2": "JA-08 Line Manager Legal"
+    },
+    {
+     "p": "Line Manager Legal bertanggung jawab atas seluruh fungsi hukum SINUX dan memimpin Staff Legal. Bagian ini hanya memuat peran, tanggung jawab, dan wewenang."
+    },
+    {
+     "table": {
+      "header": [
+       "Unsur",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ],
+      "rows": [
+       [
+        "Jabatan",
+        "Line Manager Legal"
+       ],
+       [
+        "Unit",
+        "Legal"
+       ],
+       [
+        "Atasan langsung",
+        "Direktur Utama menurut Jobdesk Line Manager Legal. Menunggu konfirmasi, karena JA-08 di bagian 6 menulis COO atau Management."
+       ],
+       [
+        "Bawahan langsung",
+        "Staff Legal"
+       ],
+       [
+        "Mitra kerja utama",
+        "Management, Finance, Commercial, IT/Keamanan, notaris, konsultan hukum, advokat"
+       ],
+       [
+        "Tujuan jabatan",
+        "Memastikan seluruh kegiatan usaha SINUX berjalan sesuai hukum, risiko hukum teridentifikasi dan dikendalikan sebelum menjadi kerugian, serta kepentingan perusahaan terlindungi dalam kontrak, korporasi, perizinan, dan sengketa."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Bidang",
+       "Tanggung jawab utama"
+      ],
+      "widths_cm": [
+       1.0,
+       3.6,
+       11.4
+      ],
+      "rows": [
+       [
+        "1",
+        "Kontrak dan transaksi",
+        "Menjadi reviewer dan approver internal Legal atas kontrak/PKS, NDA, addendum, dan opini hukum sebelum dikirim ke Management atau pihak luar."
+       ],
+       [
+        "2",
+        "Kontrak dan transaksi",
+        "Menetapkan dan memelihara playbook klausul: batas tanggung jawab, pembayaran, penghentian/terminasi, kekayaan intelektual, kerahasiaan, perlindungan data pribadi, dan penyelesaian sengketa."
+       ],
+       [
+        "3",
+        "Kontrak dan transaksi",
+        "Menyusun penilaian risiko hukum bertingkat dan rekomendasi bertahap bagi Management."
+       ],
+       [
+        "4",
+        "Kontrak dan transaksi",
+        "Memimpin negosiasi untuk kontrak berisiko tinggi atau bernilai strategis."
+       ],
+       [
+        "5",
+        "Korporasi dan perizinan",
+        "Mengelola pendirian dan perubahan entitas, termasuk spin-off, anggaran dasar, KBLI, dan perizinan berusaha melalui OSS."
+       ],
+       [
+        "6",
+        "Korporasi dan perizinan",
+        "Memverifikasi akta dan dokumen korporasi dari notaris sebelum dinyatakan selesai."
+       ],
+       [
+        "7",
+        "Korporasi dan perizinan",
+        "Menjaga masa berlaku izin dan kewajiban pelaporan perusahaan."
+       ],
+       [
+        "8",
+        "Kepatuhan dan sengketa",
+        "Memastikan kepatuhan regulasi, termasuk perlindungan data pribadi (UU PDP), dan memantau perubahan regulasi yang berdampak pada bisnis."
+       ],
+       [
+        "9",
+        "Kepatuhan dan sengketa",
+        "Mengoordinasikan penanganan somasi, klaim, dan sengketa bersama Management dan penasihat eksternal."
+       ],
+       [
+        "10",
+        "Kepatuhan dan sengketa",
+        "Mengelola hubungan dengan notaris, konsultan hukum, dan advokat, termasuk ruang lingkup dan biaya."
+       ],
+       [
+        "11",
+        "Kepemimpinan tim dan pelaporan",
+        "Membagi beban kerja, menetapkan tenggat, dan mereview hasil kerja Staff Legal."
+       ],
+       [
+        "12",
+        "Kepemimpinan tim dan pelaporan",
+        "Membina, menilai kinerja, dan mengembangkan kompetensi Staff Legal."
+       ],
+       [
+        "13",
+        "Kepemimpinan tim dan pelaporan",
+        "Memelihara dan memperbarui SOP, template, dan register Legal."
+       ],
+       [
+        "14",
+        "Kepemimpinan tim dan pelaporan",
+        "Melaporkan kinerja dan risiko legal kepada Management secara berkala (bulanan dan triwulanan)."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Wewenang",
+       "Batas"
+      ],
+      "widths_cm": [
+       7.0,
+       9.0
+      ],
+      "rows": [
+       [
+        "Menyetujui draf kontrak dari sisi hukum",
+        "Tidak menggantikan wewenang penandatanganan menurut anggaran dasar dan Authority Matrix"
+       ],
+       [
+        "Menahan kontrak berisiko tinggi sampai ada keputusan Management",
+        "Legal memberi opini; penahanan berlaku hanya atas keputusan Management (USULAN)"
+       ],
+       [
+        "Menunjuk notaris, konsultan, atau advokat",
+        "Belum ditetapkan"
+       ],
+       [
+        "Menugaskan dan menilai Staff Legal",
+        "Sesuai KPI dari Direktur Utama"
+       ],
+       [
+        "Menetapkan standar template dan klausul",
+        "Perubahan material dilaporkan kepada Management"
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Perlu persetujuan atasan langsung: strategi litigasi, penyelesaian sengketa, perubahan struktur korporasi, dan penyimpangan dari playbook pada klausul risiko tinggi."
+    },
+    {
+     "table": {
+      "header": [
+       "Pihak",
+       "Bentuk hubungan"
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ],
+      "rows": [
+       [
+        "Management",
+        "Pelaporan risiko, rekomendasi, dan permintaan keputusan"
+       ],
+       [
+        "Commercial",
+        "Menerima permintaan layanan legal dan memberi opini"
+       ],
+       [
+        "Finance",
+        "Pembayaran, pajak, bea meterai, kewajiban pelaporan"
+       ],
+       [
+        "IT/Keamanan",
+        "Kepatuhan data pribadi, penanganan insiden"
+       ],
+       [
+        "Human Resources",
+        "Kontrak kerja, rekrutmen dan penilaian Staff Legal"
+       ],
+       [
+        "Pihak eksternal",
+        "Notaris, konsultan, advokat, regulator, dan pihak lawan kontrak"
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Indikator kinerja",
+       "Target (USULAN)"
+      ],
+      "widths_cm": [
+       10.0,
+       6.0
+      ],
+      "rows": [
+       [
+        "Review kontrak sesuai SLA",
+        "90% tepat waktu"
+       ],
+       [
+        "Kontrak tercatat lengkap di register",
+        "100%"
+       ],
+       [
+        "Isu risiko tinggi dieskalasi sebelum penandatanganan",
+        "100%"
+       ],
+       [
+        "Izin dan dokumen korporasi kedaluwarsa",
+        "0"
+       ],
+       [
+        "Laporan bulanan ke Management",
+        "Terbit tepat waktu setiap bulan"
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Kualifikasi (USULAN)"
+      ],
+      "widths_cm": [
+       1.0,
+       15.0
+      ],
+      "rows": [
+       [
+        "1",
+        "Pendidikan S1 Hukum; kompetensi hukum kontrak, korporasi, dan perizinan Indonesia."
+       ],
+       [
+        "2",
+        "Pemahaman regulasi sektor teknologi, OSS/KBLI, dan perlindungan data pribadi."
+       ],
+       [
+        "3",
+        "Kemampuan negosiasi, penilaian risiko, dan kepemimpinan tim."
+       ],
+       [
+        "4",
+        "Pengalaman minimal 5 tahun di bidang legal korporasi atau komersial."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "JA-09 Staff Legal"
+    },
+    {
+     "p": "Staff Legal menyiapkan, mereview, dan mengadministrasikan seluruh pekerjaan hukum SINUX di bawah arahan Line Manager Legal. Bagian ini hanya memuat peran, tugas, dan batasan."
+    },
+    {
+     "table": {
+      "header": [
+       "Unsur",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ],
+      "rows": [
+       [
+        "Jabatan",
+        "Staff Legal"
+       ],
+       [
+        "Unit",
+        "Legal"
+       ],
+       [
+        "Atasan langsung",
+        "Line Manager Legal"
+       ],
+       [
+        "Mitra kerja utama",
+        "Commercial, Finance, IT, notaris, dan konsultan hukum"
+       ],
+       [
+        "Tujuan jabatan",
+        "Mendukung Line Manager Legal dengan dokumen hukum yang akurat, tepat waktu, dan tercatat rapi, serta mengangkat risiko hukum sejak dini agar dapat diputuskan oleh pihak yang berwenang."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Bidang",
+       "Tugas pokok"
+      ],
+      "widths_cm": [
+       1.0,
+       3.6,
+       11.4
+      ],
+      "rows": [
+       [
+        "1",
+        "Kontrak dan dokumen hukum",
+        "Menyusun draf kontrak, PKS, NDA, addendum, surat kuasa, dan surat legal berdasarkan template dan playbook."
+       ],
+       [
+        "2",
+        "Kontrak dan dokumen hukum",
+        "Mereview kontrak pihak ketiga, menyusun tabel redline (pasal, isu, risiko, usulan perubahan, prioritas), dan ringkasan risiko untuk Line Manager Legal."
+       ],
+       [
+        "3",
+        "Kontrak dan dokumen hukum",
+        "Mengelola versi dokumen dengan penamaan baku dan mencatat perubahan yang diterima atau ditolak selama negosiasi."
+       ],
+       [
+        "4",
+        "Kontrak dan dokumen hukum",
+        "Mengelola proses penandatanganan, termasuk tanda tangan elektronik dan bea meterai, serta memastikan dokumen final lengkap dan identik dengan versi yang disetujui."
+       ],
+       [
+        "5",
+        "Due diligence, korporasi, dan perizinan",
+        "Melakukan due diligence dasar pihak lawan: akta, SK Kemenkum, NIB, NPWP, kewenangan penandatangan, dan pencarian direktori putusan Mahkamah Agung."
+       ],
+       [
+        "6",
+        "Due diligence, korporasi, dan perizinan",
+        "Menyiapkan berkas pendirian, perubahan data perusahaan, pembaruan NIB/OSS, dan analisis KBLI."
+       ],
+       [
+        "7",
+        "Due diligence, korporasi, dan perizinan",
+        "Berkoordinasi dengan notaris dan memantau progres pengurusan dokumen."
+       ],
+       [
+        "8",
+        "Administrasi dan pemantauan",
+        "Memelihara register permintaan, register kontrak, register perizinan, dan arsip dokumen."
+       ],
+       [
+        "9",
+        "Administrasi dan pemantauan",
+        "Mengirim pengingat jatuh tempo kontrak dan izin kepada PIC bisnis pada 90, 60, dan 30 hari sebelumnya."
+       ],
+       [
+        "10",
+        "Administrasi dan pemantauan",
+        "Menjaga kerahasiaan dan kontrol akses dokumen legal."
+       ],
+       [
+        "11",
+        "Riset dan dukungan kepatuhan",
+        "Meriset regulasi dan menyusun memo singkat atas pertanyaan hukum dari unit bisnis."
+       ],
+       [
+        "12",
+        "Riset dan dukungan kepatuhan",
+        "Membantu pemeriksaan aspek perlindungan data pribadi pada kontrak dan proyek."
+       ],
+       [
+        "13",
+        "Riset dan dukungan kepatuhan",
+        "Menyiapkan kronologi dan bukti pendukung untuk somasi, klaim, atau sengketa."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Frekuensi",
+       "Rutinitas"
+      ],
+      "widths_cm": [
+       3.0,
+       13.0
+      ],
+      "rows": [
+       [
+        "Harian",
+        "Memeriksa permintaan masuk, memberi respons awal, memperbarui status di register"
+       ],
+       [
+        "Mingguan",
+        "Rapat status dengan Line Manager Legal; melaporkan hambatan dan isu risiko"
+       ],
+       [
+        "Bulanan",
+        "Meninjau register kontrak dan izin; menandai yang jatuh tempo dalam 90 hari; menyiapkan bahan laporan bulanan"
+       ],
+       [
+        "Triwulanan",
+        "Membantu memo kepatuhan dan pembaruan template"
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Batasan dan eskalasi"
+      ],
+      "widths_cm": [
+       1.0,
+       15.0
+      ],
+      "rows": [
+       [
+        "1",
+        "Tidak mengirim draf final ke pihak luar atau menandatangani dokumen tanpa persetujuan Line Manager Legal."
+       ],
+       [
+        "2",
+        "Tidak memberikan opini hukum final kepada unit bisnis tanpa persetujuan Line Manager Legal."
+       ],
+       [
+        "3",
+        "Menyampaikan isu risiko menengah ke atas kepada Line Manager Legal di hari yang sama ditemukan."
+       ],
+       [
+        "4",
+        "Melaporkan somasi, klaim, atau surat regulator kepada Line Manager Legal paling lambat 1 hari kerja."
+       ],
+       [
+        "5",
+        "Menanyakan kepada Line Manager Legal bila ruang lingkup atau instruksi tidak jelas, bukan berasumsi."
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "Indikator kinerja",
+       "Target (USULAN)"
+      ],
+      "widths_cm": [
+       10.0,
+       6.0
+      ],
+      "rows": [
+       [
+        "Draf/review diserahkan sesuai tenggat",
+        "90% tepat waktu"
+       ],
+       [
+        "Register kontrak dan izin diperbarui dalam 2 hari kerja setelah penandatanganan",
+        "100%"
+       ],
+       [
+        "Kesalahan material pada dokumen final (pasal, nama pihak, nilai, lampiran)",
+        "Belum ditetapkan"
+       ],
+       [
+        "Isu risiko yang terlambat dieskalasi",
+        "Belum ditetapkan"
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Kualifikasi (USULAN)"
+      ],
+      "widths_cm": [
+       1.0,
+       15.0
+      ],
+      "rows": [
+       [
+        "1",
+        "Pendidikan S1 Hukum."
+       ],
+       [
+        "2",
+        "Memahami dasar hukum perikatan dan kontrak: syarat sah perjanjian, wanprestasi, somasi, dan kontrak elektronik."
+       ],
+       [
+        "3",
+        "Mampu membaca dan menganalisis PKS serta melakukan riset regulasi dasar."
+       ],
+       [
+        "4",
+        "Teliti, rapi dalam administrasi, dan menjaga kerahasiaan."
+       ],
+       [
+        "5",
+        "Pengalaman minimal 1 sampai 2 tahun; fresh graduate dapat dipertimbangkan sesuai level jabatan."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Peran ISO dan Matriks Peran",
+   "blocks": [
+    {
+     "p": "Peran yang disebut di dokumen sistem manajemen tidak selalu sama dengan nama jabatan di bagian 5. SNX-HR-ORG-01 memuat matriks peran yang memetakan peran ISO ke jabatan. Tabel berikut mencatat peran yang dibahas sumber dokumen ini."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran ISO",
+       "Dokumen pemakai",
+       "Jabatan",
+       "Status pemetaan"
+      ],
+      "widths_cm": [
+       2.8,
+       3.6,
+       3.4,
+       6.2
+      ],
+      "rows": [
+       [
+        "Line Manager Legal",
+        "Jobdesk Line Manager Legal",
+        "JA-08 (Ester Febe Utomo)",
+        "(USULAN) dari hubungan atasan dan bawahan JA-08 dan JA-09. Menunggu konfirmasi Legal."
+       ],
+       [
+        "Staff Legal",
+        "Jobdesk Staff Legal",
+        "JA-09 (Alif Altamziz)",
+        "(USULAN) dengan alasan yang sama seperti Line Manager Legal. Menunggu konfirmasi Legal."
+       ],
+       [
+        "Finance Lead",
+        "SNX-FAT-SOP-01, SNX-FAT-SOP-05",
+        "Belum dipetakan",
+        "JA-10 dan JA-11 tidak memuat kata Lead atau Staff. Pemetaan peran ke orang menunggu keputusan Management."
+       ],
+       [
+        "Finance Staff",
+        "SNX-FAT-SOP-01, SNX-FAT-SOP-05",
+        "Belum dipetakan",
+        "Alasan sama dengan Finance Lead."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Peran lain di dokumen Operation dan ISMS, misalnya Head of Operation, dipetakan di SNX-HR-ORG-01."
+    }
+   ]
+  },
+  {
+   "h": "Peninjauan dan Pengendalian Perubahan",
+   "blocks": [
+    {
+     "p": "HR Manager meninjau dokumen ini 12 bulan sejak tanggal efektif atau saat ada perubahan signifikan."
+    },
+    {
+     "p": "HR-JA-001 revisi 03 memuat frasa kompetensi yang rusak, satu kalimat yang terpotong, dan nama unit yang tidak seragam. Dokumen ini memulihkan frasa ke padanan istilah yang paling mungkin, menyambung kalimat di butir 4.1, dan menyamakan nama unit, termasuk Bisnis/Sales di jobdesk Legal menjadi Commercial (USULAN). HR Manager mengonfirmasi pemulihan itu bersama pemegang fungsi."
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Judul dan keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ],
+      "rows": [
+       [
+        "HR-JA-001",
+        "SINUX Job Analysis 2026, revisi 03, status DRAF. Sumber utama dokumen ini."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Memuat matriks peran ISO; dirujuk di bagian 3 dan 8 dokumen ini."
+       ],
+       [
+        "SNX-HR-FRM-01",
+        "Employee Competency Matrix. Dibaca sebagai Competency Matrix di butir 4.7 (USULAN)."
+       ],
+       [
+        "SNX-LEG-SOP-01",
+        "SOP Legal Operational. Mengatur alur kerja rinci Legal (bagian 7)."
+       ],
+       [
+        "SNX-FAT-SOP-01",
+        "Billing & Invoicing. Memakai peran Finance Lead dan Finance Staff (bagian 8)."
+       ],
+       [
+        "SNX-FAT-SOP-05",
+        "Tax Administration & Reporting. Memakai peran Finance Lead dan Finance Staff (bagian 8)."
+       ],
+       [
+        "POL-OPS-001",
+        "Kebijakan Divisi Operation SINUX, DRAFT v0.1, penomoran usulan. Sumber pola shift Operation (bagian 6, JA-02, JA-04, JA-13)."
+       ],
+       [
+        "Belum bernomor",
+        "Peraturan Perusahaan BAB VI, Hari Libur, Cuti, dan Meninggalkan Pekerjaan (berkas PP - Cuti). Sumber butir 4.10 (Pasal 22, 29, 31)."
+       ],
+       [
+        "Belum bernomor",
+        "Jobdesk Line Manager Legal dan Jobdesk Staff Legal. Sumber bagian 7."
+       ],
+       [
+        "Belum bernomor",
+        "Authority Matrix (butir 4.4) dan KPI Matrix (butir 4.6). Dokumen terpisah, belum tersedia saat dokumen ini disusun."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Acuan ISO",
+   "blocks": [
+    {
+     "p": "Acuan klausul berikut berstatus (USULAN, dikonfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Kaitan dengan dokumen"
+      ],
+      "widths_cm": [
+       3.2,
+       4.4,
+       8.4
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "5.3 Peran, tanggung jawab, dan wewenang organisasi",
+        "Dokumen ini menetapkan jabatan, tugas, wewenang, dan garis pelaporan (bagian 4 sampai 7)."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.1.4 Lingkungan untuk operasi proses",
+        "Baris Kondisi kerja tiap jabatan (bagian 6) dan butir 4.10."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.2 Kompetensi",
+        "Dokumen ini menetapkan kompetensi yang diperlukan per jabatan (bagian 4 dan 6). Penilaian kompetensi aktual, tindakan atas kesenjangan, dan penyimpanan bukti berada di luar dokumen ini."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.3 Kesadaran",
+        "Dokumen dipakai untuk orientasi karyawan baru (bagian 1)."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5 Informasi terdokumentasi",
+        "Dokumen menjadi bukti penetapan peran dalam sistem manajemen mutu (bagian 1); status, revisi, dan peninjauan dikendalikan (bagian 9)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "5.3 Peran, tanggung jawab, dan wewenang organisasi",
+        "Sama dengan ISO 9001:2015 klausul 5.3 untuk ISMS."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "7.2 Kompetensi",
+        "Sama dengan ISO 9001:2015 klausul 7.2 untuk ISMS."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "7.3 Kesadaran",
+        "Pemahaman kerahasiaan informasi dipersyaratkan semua jabatan (butir 4.7)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "7.5 Informasi terdokumentasi",
+        "Dokumen berklasifikasi RESTRICTED (Internal) dan dikendalikan lewat status dan revisi."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.2 Peran dan tanggung jawab keamanan informasi",
+        "Tugas keamanan tercatat pada JA-04 dan JA-13; kerahasiaan informasi pada butir 4.7."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 6.7 Kerja jarak jauh",
+        "Bekerja dari rumah dengan izin atasan langsung dan tetap dapat dihubungi (butir 4.10)."
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

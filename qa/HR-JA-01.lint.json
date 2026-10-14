@@ -1,0 +1,9 @@
+{
+ "file": "out/01_Struktur_Jobdesc/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "28 butir (USULAN) menunggu ACC"
+ ]
+}

@@ -161,7 +161,7 @@
    "dept": "HR",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-JA-01",
    "out_path": "out/01_Struktur_Jobdesc/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx",
    "sources": [
@@ -182,13 +182,14 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": "FAIL",
+   "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 29,
    "open_items": [
-    "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
+    "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu.",
+    "Garis lapor JA-14 (HR Manager) belum seragam dengan bagan HR-ORG-01; selaraskan saat konfirmasi K-04 (owner atau Aziz)."
    ],
-   "updated_at": "2026-10-14T21:53:06Z",
+   "updated_at": "2026-10-14T21:59:12Z",
    "pen_agent": "ac936bff4d35bd19b",
    "ooxml": "PASSED"
   },
@@ -1329,9 +1330,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-REG-03",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-REG-03 IS Risk Treatment Plan (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1NdkQrRWevHXuH9thxmoTPsRIf0wNl-MJ",
@@ -1339,12 +1340,14 @@
      "title": "SNX-ISMS-REG-03_IS_Risk_Treatment_Plan.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
-   "open_items": [],
-   "updated_at": "2026-10-14T21:50:33Z",
+   "usulan_count": "7",
+   "open_items": [
+    "15 baris biru dipertahankan sebagai usulan awal tim (bukan CONTOH), konsisten dengan REG-02; LEAD/Fani memutus bila dianggap dummy."
+   ],
+   "updated_at": "2026-10-14T21:57:34Z",
    "pen_agent": "aae60d8571cf17ea2"
   },
   {
@@ -1355,9 +1358,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-REG-04",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "14JtND6eqCuvufrVoPDzKJyrHp4eQsGjT",
@@ -1365,12 +1368,12 @@
      "title": "SNX-ISMS-REG-04_User_Access_Register_Periodic_Review.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:52:23Z",
+   "updated_at": "2026-10-14T21:58:53Z",
    "pen_agent": "a330e96bedbc4832d"
   },
   {

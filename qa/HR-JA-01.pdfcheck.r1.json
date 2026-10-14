@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "pages": 26,
+  "checks": {
+    "A": "ok: baris tengah JOB ANALYSIS / DEPARTMENT HUMAN RESOURCES / Job Analysis dan Uraian Jabatan; 'No : SNX-HR-JA-01' = Document Number; 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA; header logo SINUX + kontak; footer alamat + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada; 10 label identik urutannya dengan acuan + baris kosong penutup; nilai terisi, Effective Date kosong, Document Status Draft, Classification RESTRICTED (Internal)",
+    "C": "ok: Revision 00 berdeskripsi 'Draft awal untuk review dan pengesahan'; Approval 3 baris nama/jabatan terisi (Sita Nadia Salsabila Widodo/HRGA Officer, Aziz Priyo Widakdo/HR Manager, Samuel Kristanto Utomo/President Director); Signature kosong",
+    "D": "ok: daftar isi 1-11 cocok dengan 11 heading badan (Tujuan s.d. Acuan ISO); gaya TOC sama dengan acuan (subjudul bernomor tidak dicantumkan, seperti acuan)",
+    "E": "ok: bagian bernomor 1-11 dengan subbagian 6.1-6.15 dan 7.1-7.2 bergaya seperti '3.1. Ringkasan' acuan; tabel bergaya acuan; tidak ada diagram/bagan di dokumen ini",
+    "F": "ok: semua header kolom tampil, sel isi terisi, teks sel tidak terpotong, lebar kolom wajar (tidak ada pecah kata per huruf); catatan kosmetik di nonblocking",
+    "H": "ok: label 'RESTRICTED (Internal) | Page/ Halaman - N' ada di footer 26/26 halaman; nomor halaman 1-26 berurutan (pdftotext)",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan (pdffonts); nol placeholder [..]; nol teks instruksi template; tidak ada halaman kosong",
+    "J": "ok: urutan pembuka Sampul-Identity Document-Revision History+Dokument Approval-Table of Contents-badan sama dengan acuan; gaya heading, gaya tabel, posisi header/footer sama"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Hal. 22 atas: baris tabel 'Pihak | Bentuk hubungan' kosong (dua sel tanpa teks) akibat baris Commercial pecah antarhalaman 21-22; tidak ada teks yang hilang (pdftotext), tetapi terlihat sebagai baris kosong",
+    "Header tabel yatim di dasar halaman: hal. 9 ('No | Tugas dan tanggung jawab' JA-03) dan hal. 16 ('Aspek | Kualifikasi...' JA-12)",
+    "Banyak tabel dan baris pecah antarhalaman tanpa ulang header (hal. 5-6, 6-7, 8-9, 10-11, 11-12, 13-14, 14-15, 15-16, 17-18, 18-19, 20-21, 22-23, 24-25, 25-26)",
+    "Teks sel rata kiri-kanan (justify) menghasilkan spasi lebar: hal. 7 (JA-10 'Kana Salsabila Putri Koeswologito', JA-11 'Accounting & Tax', JA-02 baris 'JA-05 sampai JA-12'), hal. 24-25 (kolom Jabatan/Status pemetaan), hal. 26 (kolom Kaitan dengan dokumen)",
+    "Footer menulis 'RESTRICTED (Internal)' (bukan huruf kapital semua 'RESTRICTED (INTERNAL)'); konsisten dengan nilai Classification di Identity Document"
+  ]
+}
