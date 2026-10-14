@@ -1,6 +1,6 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:04:15Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:06:13Z)
 
-Wave berjalan: W3. Hitungan state: {'DONE': 37, 'LINT_PASS': 2, 'IN_PROGRESS': 4, 'QUEUED': 27, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 3.
+Wave berjalan: W4. Hitungan state: {'DONE': 39, 'LINT_PASS': 1, 'IN_PROGRESS': 5, 'QUEUED': 25, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 3.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
@@ -20,17 +20,17 @@ Wave berjalan: W3. Hitungan state: {'DONE': 37, 'LINT_PASS': 2, 'IN_PROGRESS': 4
 | ISMS-SOP-05 | W2 | DONE | SNX-ISMS-SOP-05 Vulnerability & Patch Management (Rev00 DRAFT).docx | PASS | 12 | 0 |
 | ISMS-PLN-01 | W2 | DONE | SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx | PASS | 18 | 1 |
 | FAT-SOP-01 | W3 | DONE | SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx | PASS | 7 | 0 |
-| FAT-SOP-05 | W3 | LINT_PASS | SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx | PASS | 28 | 0 |
+| FAT-SOP-05 | W3 | DONE | SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx | PASS | 28 | 0 |
 | LEG-SOP-01 | W3 | DONE | SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).docx | PASS | 22 | 0 |
 | LEG-SOP-02 | W3 | DONE | SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx | PASS | 17 | 1 |
-| COM-SOP-01 | W3 | LINT_PASS | SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx | - | 14 | 0 |
+| COM-SOP-01 | W3 | DONE | SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx | PASS | 14 | 0 |
 | HR-SOP-08 | W3 | DONE | SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx | PASS | 28 | 0 |
-| HR-SOP-10 | W4 | IN_PROGRESS | - | - | 0 | 0 |
+| HR-SOP-10 | W4 | LINT_PASS | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | - | 36 | 0 |
 | HR-SOP-11 | W4 | IN_PROGRESS | - | - | 0 | 0 |
 | HR-SOP-12 | W4 | IN_PROGRESS | - | - | 0 | 0 |
 | HR-SOP-13 | W4 | IN_PROGRESS | - | - | 0 | 0 |
-| FAT-SOP-04 | W4 | QUEUED | - | - | 0 | 0 |
-| LEG-SOP-03 | W4 | QUEUED | - | - | 0 | 1 |
+| FAT-SOP-04 | W4 | IN_PROGRESS | - | - | 0 | 0 |
+| LEG-SOP-03 | W4 | IN_PROGRESS | - | - | 0 | 1 |
 | COM-SOP-02 | W4 | QUEUED | - | - | 0 | 0 |
 | OPS-FRM-01 | W5 | DONE | SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx | PASS | 5 | 0 |
 | OPS-FRM-02 | W5 | DONE | SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |

@@ -3,7 +3,7 @@
  "runbook": "v19-e",
  "defaults_version": "v21",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W3",
+ "current_wave": "W4",
  "last_guide_seen": 0,
  "watchdog_trigger_id": "trig_01N9q5etFzehY1qRX9qtcaz4",
  "gaspol": true,
@@ -2432,7 +2432,8 @@
     "HR-SOP-08 (juga: label USULAN HR Manager di bagian 9, lane diagram vs 6.7)",
     "Semua spec: ganti label \"(USULAN, dikonfirmasi konsultan)\" menjadi \"(USULAN, perlu konfirmasi konsultan)\"; FAT-SOP-01 butir 4.15 frasa \"versi tim\"",
     "ISMS-PLN-01: simpul diagram Recovery Lead vs Incident Commander keamanan; label USULAN pelaku kesiapan bagian 4",
-    "FAT-SOP-05: pelaku Finance Lead di 4.6 beri label USULAN jelas dan selaraskan dengan bagian 5"
+    "FAT-SOP-05: pelaku Finance Lead di 4.6 beri label USULAN jelas dan selaraskan dengan bagian 5",
+    "COM-SOP-01: frasa \"SOP sumber\" 6 kali; status Lost di 6.7; dua langkah berisi dua tindakan"
    ]
   }
  ]
