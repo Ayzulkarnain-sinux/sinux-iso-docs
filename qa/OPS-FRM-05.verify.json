@@ -1,0 +1,53 @@
+{
+  "verdict": "PASS",
+  "key": "OPS-FRM-05",
+  "berkas": "out/07_Ops/SNX-OPS-FRM-05 Testing UAT Quality Verification (Rev00 DRAFT).xlsx",
+  "sumber": "1mTi4unyn2xST8h_ChsS_2w1xTWzSBROs (read_file_content Drive, teks sel cocok dengan /tmp/src/OPS-FRM-05.xlsx 135427 byte)",
+  "ringkasan_cek": {
+    "a_fakta": "Semua sel yang berubah dibandingkan sel per sel dengan sumber (openpyxl). Nama dan jabatan di B11, B35 sampai B37 persis config/defaults.json (approved_by.all, prepared_reviewed.OPS), dicatat USULAN 3 di notes. Kalimat baru di Kasus Uji A2, Defect A2, Ringkasan A9, Kontrol Dokumen B21 diturunkan dari rumus sumber B9 dan B10 (tidak diubah); satu langkah tanpa sumber berlabel (USULAN) di sel.",
+    "b_karangan": "Tidak ada nama, angka, tanggal, atau sistem baru. Tanggal 13 Oktober 2026 dari sumber. Baris CONTOH (Kasus Uji 5 sampai 7, Defect 5) dan contoh kriteria lulus Rencana Uji B8 dikosongkan.",
+    "c_kriteria": "Description = nama berkas SNX-OPS-FRM-05_Testing_UAT_Quality_Verification.xlsx: nomor SNX-OPS-FRM-05 dan judul tetap, nama keluaran sesuai RUNBOOK §1 (W5). Acuan B12 'Klausul 8.6, 8.7' dan B13 'Kontrol Annex A 8.29' cocok checklist baris 72.",
+    "d_runbook_0_6": "Status 00 (Draft), tanggal efektif 'Ditetapkan saat pengesahan', tanda tangan C35:D37 dan blok UAT kosong. Klasifikasi RESTRICTED (Internal) ikut sumber. Tiga penanda tangan berbeda. Pola rujukan internal AI, em-dash, en-dash, Amirull, COO, CONTOH, [penguji]: nol temuan kecuali kata 'contoh' di B25 (lihat nonblocking). Struktur utuh: 7 sheet sama, 1 gambar, data validation (Kasus Uji B5:B87, G5:G87; Defect D5:D45, G5:G45) dan conditional formatting (Kasus Uji G5:G87, Ringkasan B10) identik, merged cells identik, 8 rumus Ringkasan B3 sampai B10 tidak berubah, warna baris 5 sampai 7 dan Defect 5 sekarang kuning input (FFFFF2CC) sama dengan baris 8.",
+    "e_peran": "Form xlsx tidak punya bagian 5, 6, 8. Peran di form: Project Manager (pemilik, Penguji SINUX), Service Delivery Manager, Perwakilan pelanggan, Penguji pelanggan, kolom PIC perbaikan. Selisih istilah dicatat open item 5.",
+    "f_bahasa": "Tidak ada pelanggaran §6a yang jelas di sel yang diubah; temuan kecil di nonblocking.",
+    "g_data_conflicts_audit": "Ejaan 'Samuel Kristanto Utomo' dan sebutan 'President Director' di blok pengesahan sesuai data_conflicts. Delapan cacat audit (context/audit/iso-sinux-supdocs-ops-2026-10-14.md baris 1845 sampai 1854) masing-masing ditangani atau dijelaskan di notes/OPS-FRM-05.md bagian 3."
+  },
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kontrol Dokumen B25 (legenda warna)",
+      "masalah": "Legenda menjelaskan warna yang tidak lagi dipakai di form dan memuat jejak penyusunan ('sudah dikosongkan'), kalimat pasif tanpa pelaku. Pembaca form tidak tahu baris apa yang dikosongkan.",
+      "bukti": "B25 = 'Biru muda: warna baris contoh, sudah dikosongkan dan tidak dipakai'; A25 tetap berwarna FFE7EEF7, tidak ada sel lain berwarna itu di Kasus Uji atau Defect. Keterbatasan alat dicatat open item 9. Saran: hapus baris legenda dan warnanya bila alat mengizinkan."
+    },
+    {
+      "lokasi": "Kasus Uji A2",
+      "masalah": "Kalimat pertama mengulang Kontrol Dokumen B20 kata per kata (pengulangan antarbagian). Kalimat ketiga pasif tanpa pelaku dan mencampur status defect 'Lolos retest' dengan status kasus.",
+      "bukti": "A2 = 'Kasus berstatus Gagal wajib punya Defect ID di sheet Defect. Rekomendasi SIAP mensyaratkan tidak ada kasus Gagal atau Belum. Kasus yang lolos retest diubah menjadi Lolos (USULAN).' Saran: 'Sesudah defect berstatus Lolos retest, penguji mengubah status kasus menjadi Lolos (USULAN).'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen B21, Kasus Uji A2",
+      "masalah": "'SIAP' huruf kapital dipakai sebagai singkatan nilai rumus 'SIAP UAT DITANDATANGANI'; terbaca seperti kapital untuk penekanan. Dapat diterima karena nilai harfiah rumus, tetapi lebih jelas bila menyebut 'rekomendasi otomatis di Ringkasan dan Persetujuan B10'.",
+      "bukti": "B21 = '... UAT ditandatangani bila rekomendasinya SIAP.'; Ringkasan B10 = '=IF(B3=0,\"\",IF(AND(B9=0,B7=0,B5=0),\"SIAP UAT DITANDATANGANI\",\"BELUM SIAP\"))'"
+    },
+    {
+      "lokasi": "Defect A2, Ringkasan dan Persetujuan A9",
+      "masalah": "Teks aturan tim diubah mengikuti perilaku rumus (Terbuka atau Diperbaiki menahan UAT) tanpa label USULAN di sel. Dasarnya rumus sumber B9, jadi bukan karangan; pilihan arah (teks ikut rumus atau rumus ikut teks) tetap keputusan Fani (USULAN 5).",
+      "bukti": "Sumber Defect A2 'Defect berstatus Terbuka dengan severity Kritis atau Tinggi menahan UAT.' menjadi 'Defect Kritis atau Tinggi berstatus Terbuka atau Diperbaiki menahan UAT.'; rumus B9 menjumlahkan COUNTIFS status 'Terbuka' dan 'Diperbaiki'."
+    },
+    {
+      "lokasi": "Kontrol Dokumen B10 dan B35",
+      "masalah": "Pemilik dokumen 'Project Manager' sementara penyusun 'Erik Dwi Yanto / Technical/Operation Engineer L1'. Keduanya sah (sumber dan defaults), tetapi auditor akan melihat dua peran berbeda untuk dokumen yang sama.",
+      "bukti": "B10 = 'Project Manager'; B35 = 'Erik Dwi Yanto / Technical/Operation Engineer L1'; dicatat USULAN 6 dan open item 11 di notes."
+    },
+    {
+      "lokasi": "Defect, status 'Diterima sebagai isu sisa'; Ringkasan A13 sampai A18",
+      "masalah": "ISO 9001 8.7.2 meminta rekaman pihak berwenang yang memutus tindakan atas ketidaksesuaian (konsesi). Form tidak menyebut siapa yang menerima defect sebagai isu sisa dan siapa yang memutus Keputusan UAT. Celah kriteria parsial, sudah dicatat sebagai open item 3 dan 4; tidak bisa diisi tanpa sumber.",
+      "bukti": "Daftar D5 = 'Diterima sebagai isu sisa'; rumus B9 tidak menghitung status itu; kolom Defect A4:I4 tidak punya kolom penyetuju."
+    },
+    {
+      "lokasi": "Rencana Uji A10, Ringkasan dan Persetujuan A17",
+      "masalah": "Dua istilah untuk pihak pelanggan ('Penguji pelanggan' dan 'Perwakilan pelanggan'), istilah dari sumber, tidak diubah. Dicatat open item 5.",
+      "bukti": "Rencana Uji A10 = 'Penguji pelanggan'; Ringkasan A17 = 'Perwakilan pelanggan'."
+    }
+  ]
+}

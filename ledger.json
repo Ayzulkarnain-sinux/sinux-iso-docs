@@ -1026,7 +1026,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-FRM-03",
    "out_path": null,
    "sources": [
@@ -1041,7 +1041,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:37:55Z",
+   "pen_agent": "ac580ddd80ffb9367"
   },
   {
    "wl_index": 31,
@@ -1077,9 +1078,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-OPS-FRM-05",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-FRM-05 Testing UAT Quality Verification (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1mTi4unyn2xST8h_ChsS_2w1xTWzSBROs",
@@ -1087,12 +1088,12 @@
      "title": "SNX-OPS-FRM-05_Testing_UAT_Quality_Verification.xlsx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:31:41Z",
+   "updated_at": "2026-10-14T21:39:39Z",
    "pen_agent": "ac4485f23b705de31"
   },
   {
@@ -1103,7 +1104,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-FRM-06",
    "out_path": null,
    "sources": [
@@ -1118,7 +1119,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:38:16Z",
+   "pen_agent": "a28b34ceaae5703a1"
   },
   {
    "wl_index": 34,
@@ -1128,9 +1130,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-FRM-07",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-FRM-07 Maintenance Schedule Service Report (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1jrnarc0yyoZhx2MLACZePMNEe0-jb3ZB",
@@ -1138,12 +1140,12 @@
      "title": "SNX-OPS-FRM-07_Maintenance_Schedule_Service_Report.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "6",
    "open_items": [],
-   "updated_at": "2026-10-14T21:31:41Z",
+   "updated_at": "2026-10-14T21:37:27Z",
    "pen_agent": "a8c4944fda7ab6f6b"
   },
   {
@@ -1154,9 +1156,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-FRM-08",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-FRM-08 Technical Ticket Incident Register (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1E0-sXiP8r-lS34-PVvt3RYRT04O56Lnz",
@@ -1164,12 +1166,12 @@
      "title": "SNX-OPS-FRM-08_Technical_Ticket_Incident_Register.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:31:41Z",
+   "updated_at": "2026-10-14T21:38:07Z",
    "pen_agent": "aa687bdb935458b7b"
   },
   {
@@ -1180,7 +1182,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-FRM-09",
    "out_path": null,
    "sources": [
@@ -1195,7 +1197,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:37:36Z",
+   "pen_agent": "a486d3c3a26dbfeba"
   },
   {
    "wl_index": 37,
