@@ -1,4 +1,4 @@
-# REVIEW-W5 (2026-10-14T21:59:15Z)
+# REVIEW-W5 (2026-10-14T22:05:40Z)
 
 ## SNX-OPS-FRM-01 Project Plan Scope Timeline
 - State: DONE; lint: True; verifikasi: PASS; putaran perbaikan: 0; OOXML: -
@@ -499,7 +499,7 @@ Label (USULAN) tidak ditulis di sel xlsx karena tidak ada angka atau fakta baru 
 - Merujuk AST-001/005/009/012 yang di REG-01 sudah dikosongkan (baris CONTOH); valid setelah Ops mengisi ulang REG-01.
 
 ## SNX-ISMS-REG-03 IS Risk Treatment Plan
-- State: LINT_PASS; lint: True; verifikasi: None; putaran perbaikan: 0; OOXML: -
+- State: DONE; lint: True; verifikasi: PASS; putaran perbaikan: 0; OOXML: -
 - Berkas: out/08_ISMS/SNX-ISMS-REG-03 IS Risk Treatment Plan (Rev00 DRAFT).xlsx
 - Sumber: SNX-ISMS-REG-03_IS_Risk_Treatment_Plan.xlsx (1NdkQrRWevHXuH9thxmoTPsRIf0wNl-MJ, modifiedTime 2026-10-13T06:09:40Z)
 
@@ -533,7 +533,7 @@ Label (USULAN) tidak ditulis di sel xlsx karena tidak ada angka atau fakta baru 
 - 15 baris biru dipertahankan sebagai usulan awal tim (bukan CONTOH), konsisten dengan REG-02; LEAD/Fani memutus bila dianggap dummy.
 
 ## SNX-ISMS-REG-04 User Access Register Periodic Review
-- State: LINT_PASS; lint: True; verifikasi: None; putaran perbaikan: 0; OOXML: -
+- State: DONE; lint: True; verifikasi: PASS; putaran perbaikan: 0; OOXML: -
 - Berkas: out/08_ISMS/SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).xlsx
 - Sumber: SNX-ISMS-REG-04_User_Access_Register_Periodic_Review.xlsx (14JtND6eqCuvufrVoPDzKJyrHp4eQsGjT, modifiedTime 2026-10-13T06:09:42Z)
 
@@ -570,8 +570,8 @@ Label (USULAN) tidak ditulis di sel xlsx karena tidak ada angka atau fakta baru 
 | 5 |
 
 ## SNX-ISMS-FRM-01 Backup Log Restore Testing Records
-- State: IN_PROGRESS; lint: None; verifikasi: None; putaran perbaikan: 0; OOXML: -
-- Berkas: -
+- State: DONE; lint: True; verifikasi: PASS; putaran perbaikan: 0; OOXML: -
+- Berkas: out/08_ISMS/SNX-ISMS-FRM-01 Backup Log Restore Testing Records (Rev00 DRAFT).xlsx
 - Sumber: SNX-ISMS-FRM-01_Backup_Log_Restore_Testing_Records.xlsx (1J436lMZJSgowkEeMD6m45N70h7Go6_ZV, modifiedTime 2026-10-13T06:09:28Z)
 
 ### Fakta kunci
@@ -602,29 +602,79 @@ Label (USULAN) tidak ditulis di sel xlsx karena tidak ada angka atau fakta baru 
 7. Dropdown Shift berisi Shift 1, Shift 2, Shift 3, sedangkan Cara pakai menyebut shift malam. Baris co
 
 ## SNX-ISMS-FRM-02 Security Incident Investigation Records
-- State: IN_PROGRESS; lint: None; verifikasi: None; putaran perbaikan: 0; OOXML: -
-- Berkas: -
+- State: DONE; lint: True; verifikasi: PASS; putaran perbaikan: 0; OOXML: -
+- Berkas: out/08_ISMS/SNX-ISMS-FRM-02 Security Incident Investigation Records (Rev00 DRAFT).xlsx
 - Sumber: SNX-ISMS-FRM-02_Security_Incident_Investigation_Records.xlsx (1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2, modifiedTime 2026-10-13T06:09:30Z)
 
 ### Fakta kunci
-(tidak ada bagian ini di notes)
+| # | Fakta | Kutipan verbatim sumber | fileId |
+|---|---|---|---|
+| 1 | Notifikasi PDP: bila data pribadi terlibat, kolom menandai kajian dengan batas 3 x 24 jam dari waktu deteksi; keputusan ada di COO dan Legal | Kontrol Dokumen B20: "Bila data pribadi terlibat, kolom Notifikasi PDP otomatis menandai kewajiban pemberitahuan maksimal 3 x 24 jam (keputusan COO dan Legal)." Register P5: `=IF(J5="Ya","WAJIB DIKAJI, maksimal "&TEXT(B5+3,"dd-mmm hh:mm"),IF(J5="","","Tidak"))` | 1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2 |
+| 2 | Insiden P1 dan P2 memakai lembar investigasi per insiden; setiap bukti dicatat di Chain of Custody dengan hash SHA-256 yang diverifikasi tiap perpindahan | Kontrol Dokumen B21: "Untuk insiden P1 dan P2, salin sheet Investigasi per insiden dan isi Chain of Custody untuk setiap bukti." Chain of Custody A2: "Satu baris per perpindahan atau tindakan atas bukti. Hash SHA-256 dihitung saat pengumpulan dan diverifikasi setiap perpindahan." | 1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2 |
+| 3 | Pemilik dokumen Lead SOC; masa simpan 5 tahun; acuan ISO 9001 klausul 10.2 dan Annex A 5.25 sampai 5.28 | Kontrol Dokumen B10: "Lead SOC"; B14: "5 tahun"; B12: "Klausul 10.2"; B13: "Klausul atau kontrol Annex A 5.25, 5.26, 5.27, 5.28" | 1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2 |
+
+Fakta lain dari berkas yang sama: Kontrol Dokumen B15 "Register insiden keamanan informasi, catatan investigasi, dan chain of custody bukti sesuai SNX-ISMS-SOP-01."; B9 "RESTRICTED (Internal)"; Register N5 `=IF(OR(B5="",L5=""),"",ROUND((L5-B5)*24,1))` dan O5 `=IF(OR(B5="",M5=""),"",ROUND((M5-B5)*24,1))`; Daftar kolom B "P1", "P2", "P3", "P4"; Register A4 "ID insiden" dengan Cara pakai B18 "nomor SIR-YYYY-NNN". Rujukan severity di audit SOP-01 (DATA): "2. Event yang terkonfirmasi menjadi insiden dan diberi severity:" d
 
 ### USULAN
-(tidak ada bagian ini di notes)
+| # | Butir | Pemutus yang disarankan |
+|---|---|---|
+| 1 | Penyetuju dokumen: Samuel Kristanto Utomo / President Director (default D2) menggantikan "COO, Amirull Yusuf Zulkarnain" di Kontrol Dokumen B11 dan B38. Defaults memberi pembalik "form operasional disetujui COO bila owner memutuskan". | owner |
+| 2 | Disusun oleh Erik Dwi Yanto / Technical/Operation Engineer L1 dan Diperiksa oleh Fani Fatullah / VP Tech Operation and Services (defaults) menggantikan "Lead SOC" dan "ISO/ISMS Coordinator" di B36 dan B37. | owner |
+| 3 | Kalimat B15 yang menunjuk SNX-ISMS-SOP-01 sebagai tempat definisi severity P1 sampai P4. Dasarnya salinan audit SOP-01 (Bagian 8 butir 2); SOP-01 belum punya spec di repo ini dan belum dibaca langsung dari Drive. | Fani |
+| 4 | Kalimat B20 yang menulis "menandai wajib dikaji" dan "dari waktu deteksi" menggantikan "menandai kewajiban pemberitahuan". Isinya hanya menjelaskan rumus P, tetapi kalimatnya tambahan penyusun. | Legal |
+| 5 | Kalimat B19 yang menyebut hasil jam dibulatkan 1 desimal. Isinya menjelaskan ROUND(...,1) yang sudah ada. | Fani |
+| 6 | B22 tanpa nama SKILL_ dan tanpa nomor dokumen: "format laporan insiden baku". Perlu nomor SNX atau lokasi format laporan insiden untuk pelanggan. | Fani |
+| 7 | Baris riwayat revisi kedua (rev 00 tanggal sama, frasa RTO) dikosongkan dan C31 memakai "Draft awal untuk review dan pengesahan". | Fani |
+| 8 | Titik awal batas 3 x 24 jam: form menghitung dari waktu deteksi, SOP-01 Bagian 11 butir 2 menulis "paling lambat 3 x 24 jam sejak diketahui". Tidak diterapkan di rumus. | Legal |
+| 9 | Kolom waktu pemberitahuan aktual ke lembaga berwenang dan ke subjek data di Register (sekarang hanya "Tgl info pelanggan"). Tidak diterapkan di berkas. | Legal |
+| 10 | Target waktu pulih insiden keamanan (RTO). Tidak
 
 ### Open items
-(tidak ada bagian ini di notes)
+| # | Butir | Pemutus / pemilik |
+|---|---|---|
+| 1 | Gambar "Alur Proses" memakai sebutan "COO dan Legal" pada kotak Kaji notifikasi PDP, tanpa bentuk "Direktur (COO)". Alat patch tidak mengedit gambar; gambar harus dibuat ulang bila sebutannya mau diseragamkan. | LEAD ISO / owner |
+| 2 | Efek samping clear_rows pada legenda warna: baris 26 dikosongkan, tetapi kotak warna A26 berubah mengikuti kotak A27 (abu-abu), sehingga ada dua kotak abu-abu bersebelahan dengan satu label "Sel rumus: jangan diubah". Kosmetik; alat patch tidak bisa menghapus warna tanpa meniru baris bawahnya. | LEAD ISO (tech_fix xlsx_patch) |
+| 3 | Alat patch tidak mengubah tinggi baris. Teks B15, B19, B20 dipendekkan agar muat dalam tinggi baris yang ada (dicek dengan render soffice). | LEAD ISO |
+| 4 | Format laporan insiden untuk pelanggan tidak punya nomor SNX dan isinya tidak ada di korpus (sumber menyebutnya "format beku"). Lihat USULAN 6. | Fani |
+| 5 | Peran tanpa pemegang: Lead SOC (K-10), ISMS Coordinator (K-13). "Incident Commander" tidak ada di HR-ORG-01. | owner |
+| 6 | SNX-ISMS-SOP-01 belum punya spec di repo ini. Verifikator perlu mencocokkan pointer severity di B15 dengan SOP-01 hasil draf W2. | LEAD ISO |
+| 7 | Tanggal draft 13 Oktober 2026 dipertahankan dari sumber; tanggal efektif dan tanda tangan kosong sampai pengesahan. | owner |
+| 8 | Masa simpan 5 tahun berbeda dari beberapa dokumen ISMS dan Ops lain; tidak diubah. Penyeragaman masa simpan antardokumen belum diputus. | Fani |
+| 9 | Dasar hukum PDP tidak disebut di form (UU PDP disebut di SOP-01 menurut audit). Tidak ditambahkan karena sumber form diam. Lihat USULAN 8 dan 9. | Legal |
 
 ## SNX-ISMS-FRM-03 Supplier Technical Security Evaluation
-- State: IN_PROGRESS; lint: None; verifikasi: None; putaran perbaikan: 0; OOXML: -
-- Berkas: -
+- State: DONE; lint: True; verifikasi: PASS; putaran perbaikan: 0; OOXML: -
+- Berkas: out/08_ISMS/SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx
 - Sumber: SNX-ISMS-FRM-03_Supplier_Technical_Security_Evaluation.xlsx (1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg, modifiedTime 2026-10-13T06:09:33Z)
 
 ### Fakta kunci
-(tidak ada bagian ini di notes)
+| # | Fakta | Kutipan verbatim sumber | fileId |
+|---|---|---|---|
+| 1 | Supplier kritikalitas Tinggi dievaluasi setiap semester, Sedang dan Rendah setiap tahun; tanggal evaluasi berikutnya dihitung rumus dari tanggal evaluasi terakhir | Kontrol Dokumen B19: "Evaluasi supplier kritikal Tinggi setiap semester, Sedang dan Rendah setiap tahun; jadwal berikutnya dihitung otomatis." Daftar Supplier K5: `=IF(J5="","Belum pernah",EDATE(J5,IF(E5="Tinggi",6,12)))` | 1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg |
+| 2 | Nilai evaluasi = rata-rata tertimbang enam kriteria berbobot 25, 15, 25, 15, 10, 10 persen, dikali 20; ambang 80 dan 60 menentukan keputusan | Evaluasi A2: "Nilai = rata-rata tertimbang dikali 20 (skala 0 sampai 100). 80 ke atas Disetujui · 60 sampai 79 Disetujui bersyarat · di bawah 60 Tinjau ulang." Evaluasi J5: `=IF(COUNT(D5:I5)<6,"",ROUND(SUMPRODUCT(D5:I5,$D$3:$I$3)/SUM($D$3:$I$3)*20,0))`. Bobot D3 sampai I3: 0.25, 0.15, 0.25, 0.15, 0.1, 0.1 | 1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg |
+| 3 | Daftar berisi 8 supplier (SUP-001 sampai SUP-008) yang status kontrak, NDA, dan sertifikasinya wajib diverifikasi dengan Commercial dan Legal; klausul keamanan di kontrak dan NDA masih "Belum diketahui" untuk 8 dari 8 | Daftar Supplier A2: "Baris biru muda = supplier yang teridentifikasi di knowledge base; status kontrak, NDA, dan sertifikasi wajib diverifikasi dengan Commercial dan Legal." H5 sampai H12: "Belum diketahui". Kontrol Dokumen B14: "Durasi kontrak + 3 tahun" (masa simpan record) | 1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg |
 
 ### USULAN
-(tidak ada bagian ini di notes)
+Label (USULAN) hanya ditulis di sel xlsx untuk langkah verifikasi nama penyedia (Daftar Supplier A2); butir lain di bawah berada di notes ini karena tidak ada angka atau fakta baru yang masuk sel.
+
+| # | USULAN | Di mana | Pemutus yang disarankan |
+|---|---|---|---|
+| 1 | Tiga penanda tangan (Erik Dwi Yanto, Fani Fatullah, Samuel Kristanto Utomo) menggantikan Head of Operation, ISO/ISMS Coordinator, dan COO Amirull Yusuf Zulkarnain di blok Disusun, Diperiksa, dan Disetujui. Semua baris penanda tangan USULAN di Master List menurut defaults.json; pembalik: form operasional disetujui COO bila owner memutus | Kontrol Dokumen B11, B36 sampai B38 | owner (Samuel untuk persetujuannya sendiri) |
+| 2 | Baris riwayat revisi kedua dikosongkan; Revisi 00 cukup satu baris | Kontrol Dokumen A32 sampai E32 | owner |
+| 3 | Langkah verifikasi nama penyedia SUP-001, SUP-002, dan SUP-006 dengan Commercial dan Legal. Sumber hanya meminta verifikasi kontrak, NDA, dan sertifikasi | Daftar Supplier A2 | Fani |
+| 4 | Pertahankan rumus Evaluasi J dan koreksi teks skala menjadi 20 sampai 100 (diterapkan), atau ubah rumus supaya skor 1 menghasilkan 0. Belum ada keputusan, hanya teks yang disesuaikan dengan rumus | Evaluasi A2 dan J5 sampai J104 | Fani |
+| 5 | Rumus nilai (J) dan keputusan (K) hanya terisi bila C bukan "ID tidak ada", supaya ID salah ketik tidak menghasilkan keputusan Disetujui. Belum diterapkan | Evaluasi J5 sampai K104 | Fani |
+| 6 | Tambah rujukan ke ID aset di SNX-ISMS-REG-01 dan ke ID risiko di SNX-ISMS-REG-02 (misalnya SUP-001 ke ISR-005) pada Daftar Supplier. Dibuat sesudah REG-01 diisi ulang oleh Ops, karena ID bisa berubah. Belum diterapkan | Daftar Supplier, kolom baru | Fani |
+| 7 | Tetapkan batas waktu dan pemilik tindak lanjut untuk keputusan "Disetujui bersyarat" dan
 
 ### Open items
-(tidak ada bagian ini di notes)
+| # | Open item | Untuk |
+|---|---|---|
+| 1 | Belum ada evaluasi supplier: Evaluasi terakhir kosong untuk 8 supplier, sheet Evaluasi dan Kuesioner kosong. Siklus evaluasi pertama belum dijadwalkan di sumber; bukti penerapan A 5.19 sampai 5.23 dan klausul 8.4 baru ada sesudah siklus itu berjalan | Fani |
+| 2 | Kontrak dan NDA memuat klausul keamanan: "Belum diketahui" untuk 8 dari 8; sertifikasi keamanan "Belum diketahui" untuk SUP-001, 002, 003, 006, 007. Tiga nilai "Ya" (SUP-004, 005, 008) tidak punya bukti, masa berlaku, atau ruang lingkup sertifikat di form; bukti hanya ada di Kuesioner butir 1 yang kosong. Verifikasi menunggu Commercial dan Legal | Commercial, Legal, Fani |
+| 3 | Gambar Alur Proses tidak bisa diubah lewat xlsx_patch. Cabang "Disetujui bersyarat" (60 sampai 79) tidak ada; jalur "tidak" dari "Nilai di bawah 60?" langsung ke Disetujui; kotak "Tinjau ulang" tidak punya panah lanjutan. Legenda A2 sudah diberi catatan; bila gambar diperbarui, catatan itu ditinjau | Orkestrator, Fani |
+| 4 | Nama penyedia SUP-001 ("Maxcloud atau Awandata"), SUP-002 ("Arktech"), SUP-006 ("Antmedia") belum pasti; sumber dan audit tidak menentukannya. Nama tetap seperti sumber | Commercial, Legal |
+| 5 | Tidak ada batas waktu dan pemilik tindak lanjut untuk "Disetujui bersyarat" dan "Tinjau ulang"; kolom Tindak lanjut bebas isi tanpa validasi. Lihat USULAN 7 | Fani |
+| 6 | Tidak ada rujukan antara FRM-03 dan SNX-ISMS-REG-01 (aset) atau SNX-ISMS-REG-02 (ISR-005). Lihat USULAN 6 | Fani, lane ISMS-REG-01 dan ISMS-REG-02 |
+| 7 | Tidak ada kolom klasifikasi data yang dipegang supplier (SUP-008 berpadanan dengan aset berklasifikasi RESTRICTED di REG-01 menurut audit). Menambah kolom mengubah struktur form | Fani |
+| 8 | SNX-ISMS-PLN-01 menunjuk FRM-03 untuk kontak eskalasi dan renc
