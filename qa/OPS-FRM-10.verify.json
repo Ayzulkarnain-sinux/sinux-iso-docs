@@ -1,0 +1,41 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Petunjuk Pengisian langkah 9 vs langkah 13, tabel Peran, paragraf akhir Petunjuk",
+   "masalah": "Sinonim berganti untuk satu hal (§6a butir 6): 'setelah' dan 'sesudah' dipakai bergantian.",
+   "bukti": "'paling lambat 2 hari kerja setelah layanan pulih' vs 'RCA ditutup hanya sesudah tindakan terbukti efektif' dan 'Menutup RCA sesudah verifikasi (USULAN)'."
+  },
+  {
+   "lokasi": "Lingkup; Petunjuk langkah 5; catatan di bawah tabel Tindakan; paragraf akhir Petunjuk",
+   "masalah": "Kalimat pasif tanpa pelaku. Sumber tim juga tanpa pelaku dan penyusun mencatatnya sebagai open item 3 di notes, jadi bukan karangan; tetap perlu pelaku saat Fani memutus.",
+   "bukti": "'Nomor RCA dicatat di kolom No RCA pada SNX-OPS-FRM-08.'; 'Insiden keamanan informasi dicatat juga di SNX-ISMS-FRM-02.'; 'Risiko baru yang ditemukan ditambahkan ke SNX-ISMS-REG-02.'; 'Pengiriman RCA ke pelanggan terjadi sebelum verifikasi efektivitas.'"
+  },
+  {
+   "lokasi": "Petunjuk langkah 12",
+   "masalah": "Pelaku analisis ulang (Lead NOC atau Lead SOC) tidak tertulis di sumber (gambar sumber hanya 'Tindakan lanjutan, kembali ke analisis') dan tidak berlabel USULAN. Tafsir wajar karena peran ini penyusun RCA; sebaiknya diberi label (USULAN) agar setara langkah 3, 4, 7, 13.",
+   "bukti": "'Bila hasilnya Belum efektif, Lead NOC atau Lead SOC mengulang analisis di bagian Analisis akar masalah.'"
+  },
+  {
+   "lokasi": "Tujuan dan Lingkup",
+   "masalah": "Benda diberi kata kerja manusia (ringan).",
+   "bukti": "'Form ini mencatat penyebab ...'; 'Form ini tidak mewajibkan RCA untuk insiden P3 dan P4 yang tidak berulang.'"
+  },
+  {
+   "lokasi": "Istilah, Lingkup, Dokumen Terkait",
+   "masalah": "Rujukan nomor bagian dokumen lain mengikuti penomoran sumber tim (SNX-OPS-SOP-04 Bagian 4, 6, 7.5; SNX-OPS-SOP-05 Bagian 4, 6.6). Isi rujukan cocok dengan salinan audit, tetapi OPS-SOP-04 dan OPS-SOP-05 masih QUEUED di ledger dan akan dirender ke template 11 bagian, sehingga nomor bagian bisa bergeser. Cek ulang sesudah W2 (open item 13 di notes).",
+   "bukti": "ledger.json: OPS-SOP-04 state QUEUED, OPS-SOP-05 state QUEUED; audit SOP-04 baris '7.5 RCA dan tindakan korektif' butir 1 dan 3, Bagian 4 'Insiden | Gangguan tidak terencana atau penurunan mutu layanan', Bagian 6 P1 Kritis sampai P4 Rendah; audit SOP-05 Bagian 4 Breach dan Downtime yang dihitung, '6.6 Penanganan breach'."
+  },
+  {
+   "lokasi": "Peran dan Petunjuk langkah 9",
+   "masalah": "Peran pengirim RCA berbeda antardokumen: FRM-10 (dan gambar sumbernya) menugaskan Head of Operation menyetujui dan mengirim; SNX-OPS-SOP-04 Bagian 5 menugaskan Service Delivery Manager memastikan RCA terkirim dan Lead NOC menyusun RCA P1 dan P2. Dokumen ini setia pada sumber FRM-10 dan konflik dicatat sebagai open item 5; perlu diselaraskan saat SOP-04 disusun.",
+   "bukti": "Sumber FRM-10 gambar: 'Setujui dan kirim / Head of Operation, maksimal 2 hari kerja' (audit bagian 3.1); audit SOP-04 Bagian 5: 'Service Delivery Manager | Komunikasi formal ke pelanggan untuk P1 dan P2; memastikan RCA terkirim'."
+  },
+  {
+   "lokasi": "Blok Approval halaman depan",
+   "masalah": "Penanda tangan berbeda dari Pengesahan sumber (sumber: Head of Operation, ISO/ISMS Coordinator, COO Amirull Yusuf Zulkarnain). Nilai dokumen sesuai config/defaults.json D2 dan prepared_reviewed.OPS, sudah dicatat USULAN 8 dan open item 10; tidak ada pelanggaran, hanya perlu tampil di Master List sebagai USULAN.",
+   "bukti": "Dokumen: 'Erik Dwi Yanto / Technical/Operation Engineer L1', 'Fani Fatullah / VP Tech Operation and Services', 'Samuel Kristanto Utomo / President Director'; sumber: 'Disetujui oleh | COO, Amirull Yusuf Zulkarnain'."
+  }
+ ]
+}

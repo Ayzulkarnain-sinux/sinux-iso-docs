@@ -1,0 +1,9 @@
+{
+ "file": "out/07_Ops/SNX-OPS-FRM-10 RCA Corrective Action Report (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "9 butir (USULAN) menunggu ACC"
+ ]
+}

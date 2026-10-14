@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "OPS-FRM-10",
+    "doc_type_cover": "FORM",
+    "doc_type_label": "Form",
+    "number": "SNX-OPS-FRM-10",
+    "department": "Operation",
+    "title": "Root Cause Analysis & Corrective Action Report",
+    "process_owner": "Head of Operation",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Lingkup",
+      "blocks": [
+        {"h2": "Tujuan"},
+        {"p": "Form ini mencatat penyebab suatu insiden, breach SLA, atau ketidaksesuaian audit, tindakan yang diambil, dan hasil verifikasi bahwa tindakan itu efektif. Satu RCA memakai satu form dan satu nomor RCA."},
+        {"h2": "Lingkup"},
+        {"p": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 Bagian 7.5), untuk breach SLA (SNX-OPS-SOP-05 Bagian 6.6), dan untuk ketidaksesuaian audit."},
+        {"p": "Form ini tidak mewajibkan RCA untuk insiden P3 dan P4 yang tidak berulang. Pilihan Keluhan pelanggan dan Lainnya di bagian Identitas juga tidak mewajibkan RCA (USULAN)."},
+        {"p": "Tiket tetap dicatat di SNX-OPS-FRM-08 dan change request di SNX-OPS-FRM-04; form ini hanya memuat nomornya. Insiden keamanan informasi dicatat juga di SNX-ISMS-FRM-02."}
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {"table": {
+          "header": ["Istilah", "Arti"],
+          "widths_cm": [4.5, 11.5],
+          "rows": [
+            ["RCA", "Root cause analysis: analisis untuk menemukan akar masalah suatu kejadian, dicatat di form ini."],
+            ["Akar masalah", "Penyebab yang menjelaskan mengapa kejadian terjadi, ditulis sebagai satu pernyataan yang didukung bukti."],
+            ["Insiden", "Gangguan tidak terencana atau penurunan mutu layanan (SNX-OPS-SOP-04 Bagian 4)."],
+            ["Severity", "Tingkat keparahan insiden: P1 Kritis, P2 Tinggi, P3 Sedang, P4 Rendah (SNX-OPS-SOP-04 Bagian 6)."],
+            ["Insiden berulang", "Insiden 3 kali atau lebih pada layanan yang sama dalam 30 hari (SNX-OPS-SOP-04 Bagian 7.5 butir 3)."],
+            ["Breach SLA", "Pencapaian di bawah target kontrak dalam satu periode (SNX-OPS-SOP-05 Bagian 4)."],
+            ["Downtime yang dihitung", "Waktu layanan tidak tersedia, tidak termasuk window maintenance yang sudah dinotifikasi dan gangguan di luar tanggung jawab SINUX sesuai kontrak (SNX-OPS-SOP-05 Bagian 4)."],
+            ["Sisa anggaran", "Anggaran downtime dikurangi downtime yang dihitung (SNX-OPS-FRM-09)."],
+            ["Ketidaksesuaian audit", "Hasil audit yang menyatakan suatu persyaratan tidak dipenuhi."],
+            ["Koreksi", "Tindakan memulihkan layanan atau keadaan yang terdampak."],
+            ["Korektif", "Tindakan menghilangkan akar masalah."],
+            ["Preventif", "Tindakan mencegah kejadian yang sama di tempat lain."],
+            ["5 Why", "Metode analisis yang bertanya mengapa berturut-turut sampai lima tingkat, tiap jawaban berbasis bukti."],
+            ["Fishbone (Ishikawa)", "Metode analisis yang mengelompokkan penyebab ke enam kategori di bagian Analisis akar masalah."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {"table": {
+          "header": ["Peran", "Tugas pada form ini"],
+          "widths_cm": [4.5, 11.5],
+          "rows": [
+            ["Lead NOC atau Lead SOC", "Menyusun dan mencatat RCA dari bagian Identitas sampai Tindakan, dan menandatangani sebagai penyusun."],
+            ["Head of Operation", "Pemilik dokumen. Menyetujui dan mengirim RCA. Menutup RCA sesudah verifikasi (USULAN)."],
+            ["Pemilik tindakan", "Menjalankan tindakan yang tercatat atas namanya di bagian Tindakan sampai tenggat."],
+            ["Pemverifikasi", "Menilai efektivitas tindakan. Head of Operation menunjuknya untuk tiap RCA (USULAN)."],
+            ["Pelanggan", "Menerima RCA insiden via email."]
+          ]
+        }},
+        {"p": "Penyusun, pemeriksa, dan penyetuju dokumen form ini ada di blok Approval pada halaman depan."}
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {"p": "1. Teks dalam kurung siku adalah petunjuk isian; Lead NOC atau Lead SOC menggantinya dengan isi sebenarnya."},
+        {"p": "2. Lead NOC atau Lead SOC mengisi bagian Identitas sampai Tindakan dengan fokus pada sistem dan proses, bukan menyalahkan orang."},
+        {"p": "3. Lead NOC atau Lead SOC mengisi Severity dan item waktu di bagian Identitas hanya untuk RCA insiden (USULAN)."},
+        {"p": "4. Lead NOC atau Lead SOC menghitung Durasi dampak dari Waktu mulai gangguan sampai Waktu pulih (USULAN)."},
+        {"p": "5. Nomor RCA dicatat di kolom No RCA pada SNX-OPS-FRM-08."},
+        {"p": "6. Lead NOC atau Lead SOC menjawab tiap tingkat 5 Why dengan bukti, misalnya tiket, log, atau change request."},
+        {"p": "7. Lead NOC atau Lead SOC menambah baris di tabel Tindakan bila satu jenis tindakan lebih dari satu (USULAN)."},
+        {"p": "8. Head of Operation menyetujui RCA dengan menandatangani bagian Persetujuan RCA."},
+        {"p": "9. Head of Operation mengirim RCA insiden ke pelanggan via email paling lambat 2 hari kerja setelah layanan pulih."},
+        {"p": "10. Pemilik tindakan menjalankan tindakan sampai tenggat, dengan mengikuti catatan di bawah tabel Tindakan."},
+        {"p": "11. Pemverifikasi membandingkan hasil tindakan dengan kriteria efektif dan mengisi tanggal, hasil, dan namanya di bagian Verifikasi efektivitas."},
+        {"p": "12. Bila hasilnya Belum efektif, Lead NOC atau Lead SOC mengulang analisis di bagian Analisis akar masalah."},
+        {"p": "13. Bila hasilnya Efektif, Head of Operation menutup RCA dan mengisi baris Penutupan RCA di bagian Verifikasi efektivitas (USULAN)."},
+        {"p": "Pengiriman RCA ke pelanggan terjadi sebelum verifikasi efektivitas. RCA ditutup hanya sesudah tindakan terbukti efektif."}
+      ]
+    },
+    {
+      "h": "Alur RCA dan Tindakan Korektif",
+      "blocks": [
+        {"flow": {
+          "rankdir": "TB",
+          "nodes": {
+            "a": "Pemicu RCA\nP1 atau P2, berulang,\nbreach SLA, ketidaksesuaian audit",
+            "b": "Kumpulkan kronologi dan bukti\ntiket, log, change request",
+            "c": "Analisis akar masalah\n5 Why, Fishbone, atau metode lain",
+            "d": "Tetapkan tindakan\nkoreksi, korektif, preventif",
+            "e": "Setujui dan kirim\nHead of Operation",
+            "f": "Laksanakan tindakan\nlewat SNX-OPS-SOP-02\nbila mengubah production",
+            "g": "Tindakan efektif?",
+            "x": "Tindakan lanjutan",
+            "h": "Tutup RCA dan perbarui risiko\nSNX-ISMS-REG-02"
+          },
+          "shapes": {"g": "diamond"},
+          "edges": [
+            ["a", "b"],
+            ["b", "c"],
+            ["c", "d"],
+            ["d", "e"],
+            ["e", "f"],
+            ["f", "g"],
+            ["g", "x", "tidak"],
+            ["x", "c", "kembali ke analisis", "dashed"],
+            ["g", "h", "ya"]
+          ],
+          "caption": "Gambar 1. Alur RCA dan tindakan korektif. Garis putus-putus kembali ke analisis."
+        }}
+      ]
+    },
+    {
+      "h": "Isi Form RCA",
+      "blocks": [
+        {"h2": "Identitas"},
+        {"table": {
+          "header": ["Item", "Isi"],
+          "widths_cm": [5, 11],
+          "rows": [
+            ["Nomor RCA", "RCA-[YYYY]-[nomor urut]"],
+            ["Sumber", "[ ] Insiden · [ ] Breach SLA · [ ] Ketidaksesuaian audit · [ ] Keluhan pelanggan · [ ] Lainnya"],
+            ["Referensi", "[nomor tiket Zammad di SNX-OPS-FRM-08, nomor CR di SNX-OPS-FRM-04, atau nomor ketidaksesuaian audit]"],
+            ["Pelanggan dan layanan terdampak", ""],
+            ["Severity", "[P1, P2, P3, P4]"],
+            ["Waktu mulai gangguan", "[tanggal, jam WIB]"],
+            ["Waktu terdeteksi", "[tanggal, jam WIB]"],
+            ["Waktu pulih", "[tanggal, jam WIB]"],
+            ["Durasi dampak", "[menit]"],
+            ["Disusun oleh", ""],
+            ["Tanggal RCA", ""]
+          ]
+        }},
+        {"h2": "Ringkasan"},
+        {"p": "[Dua sampai tiga kalimat: apa yang terjadi, dampaknya, dan apa yang sudah dilakukan.]"},
+        {"h2": "Dampak"},
+        {"table": {
+          "header": ["Aspek", "Uraian"],
+          "widths_cm": [6, 10],
+          "rows": [
+            ["Layanan dan pengguna terdampak", ""],
+            ["Dampak ke SLA", "[menit downtime yang dihitung, sisa anggaran]"],
+            ["Dampak ke data (confidentiality, integrity, availability)", ""],
+            ["Dampak ke pelanggan lain", ""]
+          ]
+        }},
+        {"h2": "Kronologi"},
+        {"table": {
+          "header": ["Waktu (WIB)", "Kejadian atau tindakan", "Oleh"],
+          "widths_cm": [3.5, 9, 3.5],
+          "rows": [["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""]]
+        }},
+        {"h2": "Analisis akar masalah"},
+        {"p": "Metode: [ ] 5 Why · [ ] Fishbone (Ishikawa) · [ ] Lainnya: [sebutkan]"},
+        {"p": "**5 Why**"},
+        {"table": {
+          "header": ["Tingkat", "Pertanyaan: mengapa?", "Jawaban berbasis bukti"],
+          "widths_cm": [2, 6.5, 7.5],
+          "rows": [["1", "", ""], ["2", "", ""], ["3", "", ""], ["4", "", ""], ["5", "", ""]]
+        }},
+        {"p": "**Kategori penyebab (fishbone)**"},
+        {"table": {
+          "header": ["Kategori", "Faktor yang ditemukan"],
+          "widths_cm": [6, 10],
+          "rows": [
+            ["Manusia", ""],
+            ["Proses atau prosedur", ""],
+            ["Teknologi atau sistem", ""],
+            ["Supplier atau pihak ketiga", ""],
+            ["Lingkungan", ""],
+            ["Pengukuran atau monitoring", ""]
+          ]
+        }},
+        {"table": {
+          "header": ["Item", "Isi"],
+          "widths_cm": [6, 10],
+          "rows": [
+            ["Akar masalah", "[satu pernyataan yang jelas, didukung bukti]"],
+            ["Mengapa tidak terdeteksi lebih awal", "[celah monitoring atau prosedur]"]
+          ]
+        }},
+        {"h2": "Tindakan"},
+        {"table": {
+          "header": ["No", "Jenis", "Tindakan", "Pemilik tindakan", "Tenggat", "Status"],
+          "widths_cm": [1, 2.4, 5.6, 3, 2, 2],
+          "rows": [
+            ["1", "Koreksi", "", "", "", ""],
+            ["2", "Korektif", "", "", "", ""],
+            ["3", "Preventif", "", "", "", ""]
+          ]
+        }},
+        {"p": "Tindakan yang mengubah production dijalankan melalui SNX-OPS-SOP-02. Risiko baru yang ditemukan ditambahkan ke SNX-ISMS-REG-02."},
+        {"h2": "Verifikasi efektivitas"},
+        {"table": {
+          "header": ["Item", "Isi"],
+          "widths_cm": [5, 11],
+          "rows": [
+            ["Kriteria efektif", "[misalnya tidak berulang dalam 90 hari, alert baru terbukti menangkap gejala]"],
+            ["Tanggal verifikasi", ""],
+            ["Hasil", "[ ] Efektif · [ ] Belum efektif, tindakan lanjutan:"],
+            ["Diverifikasi oleh", ""],
+            ["Penutupan RCA (USULAN)", "[nama dan jabatan, tanggal]"]
+          ]
+        }},
+        {"h2": "Komunikasi"},
+        {"table": {
+          "header": ["Item", "Isi"],
+          "widths_cm": [5, 11],
+          "rows": [
+            ["Dikirim ke pelanggan", "[tanggal, penerima]"],
+            ["Dibahas internal", "[tanggal, forum]"],
+            ["Lessons learned disimpan di", "[lokasi penyimpanan]"]
+          ]
+        }},
+        {"h2": "Persetujuan RCA"},
+        {"table": {
+          "header": ["Peran", "Nama", "Tanda tangan", "Tanggal"],
+          "widths_cm": [6.4, 4, 3.4, 2.2],
+          "rows": [
+            ["Disusun (Lead NOC atau Lead SOC)", "", "", ""],
+            ["Disetujui (Head of Operation)", "", "", ""]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {"table": {
+          "header": ["Kode", "Keterangan"],
+          "widths_cm": [4, 12],
+          "rows": [
+            ["SNX-OPS-SOP-04", "SOP Technical Incident Handling & Escalation. Bagian 4 memuat definisi insiden, Bagian 6 severity, Bagian 7.5 kewajiban RCA."],
+            ["SNX-OPS-SOP-05", "SOP Service Level Agreement (SLA) Monitoring. Bagian 4 memuat definisi breach dan downtime yang dihitung, Bagian 6.6 penanganan breach."],
+            ["SNX-OPS-FRM-09", "SLA Performance Monitoring Report. Sumber anggaran dan sisa anggaran downtime."],
+            ["SNX-OPS-FRM-08", "Technical Ticket / Incident Register. Sumber nomor tiket; kolom No RCA memuat nomor RCA."],
+            ["SNX-OPS-FRM-04", "Change Request & Approval Log. Sumber nomor change request."],
+            ["SNX-OPS-SOP-02", "SOP Project Change Management. Mengatur tindakan yang mengubah production."],
+            ["SNX-ISMS-FRM-02", "Security Incident & Investigation Records. Tempat pencatatan insiden keamanan informasi."],
+            ["SNX-ISMS-REG-02", "Information Security Risk Assessment Register. Tempat risiko baru dari RCA."]
+          ]
+        }}
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {"h2": "Rekaman"},
+        {"table": {
+          "header": ["Rekaman", "Lokasi dan pemilik", "Retensi"],
+          "widths_cm": [5.5, 7.5, 3],
+          "rows": [
+            ["Form RCA terisi, RCA-[YYYY]-[nomor urut]", "Folder Drive Operation, subfolder per tahun (USULAN). Pemilik: Head of Operation.", "5 tahun"]
+          ]
+        }},
+        {"h2": "Acuan ISO"},
+        {"table": {
+          "header": ["Standar", "Klausul atau kontrol"],
+          "widths_cm": [6, 10],
+          "rows": [
+            ["ISO 9001:2015", "Klausul 10.2"],
+            ["ISO/IEC 27001:2022", "Kontrol Annex A 5.27"]
+          ]
+        }}
+      ]
+    }
+  ]
+}

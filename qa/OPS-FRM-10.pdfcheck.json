@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "pages": 12,
+  "checks": {
+    "A": "ok: header logo SINUX + kontak, baris tengah FORM / DEPARTMENT OPERATION / Root Cause Analysis & Corrective Action Report, 'No : SNX-OPS-FRM-10' = Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, footer alamat Sinux Office + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, label berurutan sama dengan acuan (Company Name..Review Period + baris kosong akhir), nilai terisi, Effective Date kosong, Status Draft, Classification RESTRICTED (Internal)",
+    "C": "ok: Revision History baris 00 'Draft awal untuk review dan pengesahan' + 2 baris kosong seperti acuan; Approval 3 baris nama/jabatan terisi (Erik Dwi Yanto, Fani Fatullah, Samuel Kristanto Utomo); Signature kosong",
+    "D": "ok: daftar isi Preliminary Section + 1-8 cocok dengan heading badan (Tujuan dan Lingkup, Istilah, Peran, Petunjuk Pengisian, Alur RCA dan Tindakan Korektif, Isi Form RCA, Dokumen Terkait, Rekaman dan Acuan ISO)",
+    "E": "ok: bagian bernomor 1-8 dengan subbagian x.y bergaya acuan; Gambar 1 (alur RCA, hal 8) terbaca pada 110 dpi, tidak terpotong, caption ada",
+    "F": "ok: semua header kolom tampil; sel kosong hanya kolom isian form (Identitas, Dampak, Kronologi, 5 Why, Fishbone, Tindakan, Verifikasi, Persetujuan RCA); tidak ada teks sel terpotong; lebar kolom wajar",
+    "H": "ok: footer berlabel 'RESTRICTED (Internal) | Page/ Halaman - N' di semua halaman, sesuai Classification RESTRICTED (label diizinkan); nomor halaman 1-12 berurutan",
+    "I": "ok: font Liberation Sans (Regular/Bold/Italic/BoldItalic) identik dengan acuan; tidak ada placeholder sisa template; teks kurung siku yang ada adalah petunjuk isian form yang didefinisikan di Bagian 4 butir 1 (lihat nonblocking); tidak ada halaman kosong",
+    "J": "ok: urutan sampul > Identity Document > Revision History + Approval > Table of Contents > badan sama dengan acuan; gaya heading, gaya tabel, posisi header/footer sama"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Hal 8-11: petunjuk isian berkurung siku ([tanggal, jam WIB], [menit], RCA-[YYYY]-[nomor urut], [Dua sampai tiga kalimat ...], [sebutkan]) dan kotak centang '[ ]' tampil sebagai teks; disengaja untuk form dan didefinisikan di Bagian 4 butir 1, tetapi orkestrator perlu mengonfirmasi bahwa ini tidak dihitung sebagai placeholder",
+    "Penanda '(USULAN)' muncul sekitar 10 kali di badan (hal 5, 6, 7, 10, 11): penanda status draft, bukan rusak tampilan; perlu dibersihkan sebelum pengesahan bila usulan sudah diputuskan",
+    "Hal 7 hanya terisi sekitar 25%: Bagian 5 beserta diagram terdorong ke hal 8",
+    "Hal 8: header tabel 6.1 Identitas + 1 baris yatim di dasar halaman, sisanya di hal 9",
+    "Hal 9: header tabel 5 Why + baris 1 yatim, baris 2-5 di hal 10",
+    "Hal 5-6: baris '5 Why' tabel Istilah terbelah antarhalaman",
+    "Hal 11-12: baris tabel 8.1 Rekaman terbelah, kata 'Operation.' tersisa sendiri di hal 12",
+    "Hal 8: garis putus-putus 'kembali ke analisis' menyentuh awal label"
+  ]
+}

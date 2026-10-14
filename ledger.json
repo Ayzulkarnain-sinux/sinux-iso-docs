@@ -1220,7 +1220,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-OPS-FRM-10",
    "out_path": "out/07_Ops/SNX-OPS-FRM-10 RCA Corrective Action Report (Rev00 DRAFT).docx",
    "sources": [
@@ -1231,11 +1231,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:54:30Z",
+   "updated_at": "2026-10-14T21:56:36Z",
    "pen_agent": "abfd60eb73168bddc",
    "ooxml": "PASSED"
   },
@@ -1433,7 +1433,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-FRM-03",
    "out_path": null,
    "sources": [
@@ -1448,7 +1448,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T21:55:56Z",
+   "pen_agent": "a50115ee2e70e5937"
   },
   {
    "wl_index": 46,
