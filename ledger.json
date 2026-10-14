@@ -394,9 +394,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-OPS-SOP-05",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-SOP-05 Service Level Agreement (SLA) Monitoring (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1S4RFEDaTYU9mZYWjHHbYBfo8SRgBAq9-",
@@ -414,13 +414,16 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
-   "open_items": [],
-   "updated_at": "2026-10-14T22:14:52Z",
-   "pen_agent": "a7b85a96bcf1f3b23"
+   "usulan_count": 11,
+   "open_items": [
+    "SOP meminta resolution SLA dihitung di FRM-09 Laporan Bulanan, tetapi FRM-09 tidak punya kolom target response/resolution; Fani memutus penambahan kolom."
+   ],
+   "updated_at": "2026-10-14T22:32:08Z",
+   "pen_agent": "a7b85a96bcf1f3b23",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 9,
@@ -430,9 +433,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-PRO-01",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-PRO-01 Information Classification & Handling (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io",
@@ -450,13 +453,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 13,
    "open_items": [],
-   "updated_at": "2026-10-14T22:15:34Z",
-   "pen_agent": "aba37cc60eadd71c4"
+   "updated_at": "2026-10-14T22:31:35Z",
+   "pen_agent": "aba37cc60eadd71c4",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 10,
@@ -466,9 +470,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-SOP-01",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-SOP-01 Information Security Incident Management (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1MApsp9RPPMO1Xottjb2fGQJlaQas2M99",
@@ -486,13 +490,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 9,
    "open_items": [],
-   "updated_at": "2026-10-14T22:16:30Z",
-   "pen_agent": "a8fbd98da58cb5bbc"
+   "updated_at": "2026-10-14T22:30:02Z",
+   "pen_agent": "a8fbd98da58cb5bbc",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 11,
@@ -574,7 +579,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-SOP-05",
    "out_path": null,
    "sources": [
@@ -599,7 +604,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:28:32Z",
+   "pen_agent": "acd4a4da0b5f25143"
   },
   {
    "wl_index": 14,
@@ -609,7 +615,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-PLN-01",
    "out_path": null,
    "sources": [
@@ -636,7 +642,8 @@
    "open_items": [
     "Checklist baris 91 menautkan berkas ISMS-FRM-02 (1ILWYIkw...), bukan PLN-01; dipakai sumber worklist 1vwD5tOR... (SNX-ISMS-PLN-01_Business_Continuity_IT_Recovery_Plan.docx)."
    ],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:30:11Z",
+   "pen_agent": "a3949a67482998148"
   },
   {
    "wl_index": 15,
@@ -646,7 +653,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-01",
    "out_path": null,
    "sources": [
@@ -661,7 +668,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:31:44Z",
+   "pen_agent": "aa815c71d2448334e"
   },
   {
    "wl_index": 16,

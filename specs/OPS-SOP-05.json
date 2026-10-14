@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "doc_key": "OPS-SOP-05",
+    "number": "SNX-OPS-SOP-05",
+    "department": "Operation",
+    "title": "Service Level Agreement (SLA) Monitoring",
+    "process_owner": "Service Delivery Manager",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "purpose": [
+    "SOP ini menetapkan cara SINUX mengukur, memantau, melaporkan, dan menindaklanjuti pencapaian Service Level Agreement (SLA) kepada pelanggan, sehingga komitmen layanan dapat dibuktikan dengan data dan penyimpangan ditangani sebelum menjadi masalah kontrak."
+  ],
+  "scope": [
+    "SOP ini berlaku untuk semua layanan dengan SLA tertulis di kontrak, PKS, atau perjanjian layanan, termasuk SLA yang SINUX terima dari supplier (upstream infrastruktur, partner SOC, penyedia platform) karena memengaruhi SLA ke pelanggan.",
+    "Dikecualikan dari SOP ini: layanan tanpa SLA tertulis, dan penanganan insiden yang menimbulkan downtime, yang diatur di SNX-OPS-SOP-04. SOP ini hanya memakai data tiket insiden untuk menghitung SLA.",
+    "Keputusan harga dan komersial juga dikecualikan. Konsekuensi kontraktual atas breach ditangani VP Commercial (butir 6.6)."
+  ],
+  "definitions": [
+    ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."],
+    ["Ack", "Pengakuan pertama ke pelanggan bahwa tiket diterima dan sedang ditangani."],
+    ["Anggaran downtime", "Jumlah menit downtime yang masih dapat terjadi dalam satu periode tanpa membuat availability turun di bawah target: menit dalam periode dikali (100% dikurangi target availability)."],
+    ["Availability", "Persentase waktu layanan tersedia dalam satu periode: (menit dalam periode dikurangi menit downtime yang dihitung) dibagi menit dalam periode, dikali 100."],
+    ["Breach", "Pencapaian di bawah target kontrak dalam satu periode."],
+    ["Downtime yang dihitung", "Waktu layanan tidak tersedia, tidak termasuk window maintenance yang sudah dinotifikasi dan gangguan di luar tanggung jawab SINUX sesuai kontrak."],
+    ["Gate G1", "Titik serah terima dari VP Commercial ke Service Delivery Manager saat onboarding pelanggan, diatur di SNX-OPS-SOP-01."],
+    ["Menit dalam periode", "Jumlah menit kalender dalam bulan laporan. SNX-OPS-FRM-09 menghitungnya dari jumlah hari dikali 1.440."],
+    ["NOC", "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket."],
+    ["Peringatan dini", "Pemberitahuan bahwa downtime yang dihitung sudah melewati ambang di bagian 8 sebelum akhir bulan; langkahnya ada di butir 6.4."],
+    ["RCA", "Root cause analysis: analisis akar masalah sebuah breach atau insiden, ditulis di SNX-OPS-FRM-10."],
+    ["Resolution SLA", "Persentase tiket yang dipulihkan dalam target pemulihan kontrak."],
+    ["Response SLA", "Persentase tiket yang di-ack dalam target per severity."],
+    ["Service Hub", "SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal."],
+    ["Severity", "Tingkat prioritas tiket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah. Kriteria tiap tingkat ada di SNX-OPS-SOP-04."],
+    ["Sisa anggaran downtime", "Anggaran downtime dikurangi downtime yang dihitung."],
+    ["SLA", "Service Level Agreement: target layanan yang disepakati tertulis dengan pelanggan di kontrak, PKS, atau perjanjian layanan."],
+    ["SLA supplier", "SLA yang SINUX terima dari supplier."],
+    ["SOC", "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."],
+    ["Supplier", "Pihak luar yang menyediakan layanan yang menopang layanan pelanggan: upstream infrastruktur, partner SOC, dan penyedia platform."],
+    ["Tindakan perbaikan", "Tindakan menghilangkan penyebab breach supaya tidak terulang. Padanannya di SNX-OPS-SOP-04 adalah tindakan korektif."],
+    ["Window maintenance", "Jadwal pekerjaan maintenance yang berdampak ke layanan."],
+    ["Zammad", "Sistem tiket untuk Ops."]
+  ],
+  "policy": [
+    "4.1 Persyaratan layanan (ISO 9001:2015 8.2.3): Service Delivery Manager mencatat parameter SLA tiap pelanggan saat onboarding (butir 6.1). Target standar availability yang dikomunikasikan adalah 99.9% per bulan. Bahasa kompensasi atau service credit hanya ada di dokumen kontraktual, tidak di materi pemasaran atau proposal.",
+    "4.2 Pengukuran (ISO 9001:2015 9.1.1): Lead NOC dan Service Delivery Manager mengukur availability, response SLA, dan resolution SLA setiap bulan dari data monitoring dan tiket (butir 6.2 dan 6.3).",
+    "4.3 Pemantauan (Annex A 8.16): Lead NOC memantau anggaran downtime selama bulan berjalan dan memberi peringatan dini (butir 6.4).",
+    "4.4 Kepuasan pelanggan (ISO 9001:2015 9.1.2): Service Delivery Manager mencatat masukan kepuasan pelanggan dari review layanan triwulanan (butir 6.5).",
+    "4.5 Layanan supplier (Annex A 5.22): Service Delivery Manager mencatat SLA supplier bersama SLA pelanggan (butir 6.1). Head of Operation mencatat breach yang disebabkan supplier sebagai bahan evaluasi supplier (butir 6.6).",
+    "4.6 Tindak lanjut breach: Lead NOC atau Lead SOC menyusun RCA tiap breach, dan Head of Operation menetapkan tindakan perbaikan (butir 6.6)."
+  ],
+  "roles": [
+    [
+      "Service Delivery Manager",
+      "Pemilik SOP. Mencatat parameter SLA dan breach di SNX-OPS-FRM-09, menghitung SLA, menyusun dan mengirim laporan SLA, memimpin review layanan, dan mencatat masukan kepuasan pelanggan.",
+      "Mengirim laporan SLA ke pelanggan; menyerahkan breach ke VP Commercial."
+    ],
+    [
+      "Lead NOC",
+      "Menyediakan data availability dan tiket, mencatat downtime, memvalidasi pengecualian downtime, dan memantau anggaran downtime. Menyusun RCA breach layanan NOC.",
+      "Menolak pengecualian downtime yang tidak punya bukti; memberi peringatan dini; meninjau ulang change non-darurat sesudah peringatan dini."
+    ],
+    [
+      "Lead SOC",
+      "Menyediakan data SLA layanan SOC dan menyusun RCA breach layanan SOC.",
+      "Menyerahkan data SLA layanan SOC ke Service Delivery Manager."
+    ],
+    [
+      "Head of Operation",
+      "Meninjau breach dan tindakan perbaikan. Mencatat breach yang disebabkan supplier di SNX-ISMS-FRM-03.",
+      "Menetapkan tindakan perbaikan beserta pemilik dan tenggat; menerima peringatan dini."
+    ],
+    [
+      "VP Commercial",
+      "Menangani konsekuensi kontraktual dari breach (USULAN: sumber menulis Commercial tanpa jabatan).",
+      "Menerima serahan breach dari Service Delivery Manager dan menangani konsekuensi kontraktualnya."
+    ]
+  ],
+  "procedures": [
+    {
+      "title": "Registrasi SLA",
+      "intro": [
+        "Parameter yang dicatat: layanan, target availability, target response dan resolution, jam layanan, pengecualian, dan periode laporan. Sheet Parameter SLA belum punya kolom untuk target response dan resolution; catat keduanya di kolom Catatan (USULAN)."
+      ],
+      "steps": [
+        [
+          "Catat parameter SLA tiap pelanggan di sheet Parameter SLA pada SNX-OPS-FRM-09 saat onboarding (gate G1).",
+          "Service Delivery Manager",
+          "Baris pelanggan di Parameter SLA, SNX-OPS-FRM-09"
+        ],
+        [
+          "Catat SLA supplier yang menopang layanan pelanggan di sheet Parameter SLA, untuk melihat apakah SLA ke pelanggan didukung SLA supplier.",
+          "Service Delivery Manager",
+          "Baris SLA supplier di Parameter SLA, SNX-OPS-FRM-09"
+        ]
+      ]
+    },
+    {
+      "title": "Pengumpulan data",
+      "intro": [
+        "Tiket Ops, termasuk layanan Nusagrid, tercatat di Zammad. Tiket GMF dan internal tercatat di Service Hub (USULAN: batas generalist menunggu owner). Batas waktu pengumpulan data ada di bagian 8."
+      ],
+      "steps": [
+        [
+          "Ambil data availability dari Nusametric, Overseer, dan console Nusagrid.",
+          "Lead NOC",
+          "Data availability"
+        ],
+        [
+          "Ambil data tiket dari SNX-OPS-FRM-08.",
+          "Lead NOC",
+          "Data tiket"
+        ],
+        [
+          "Catat tiap downtime di sheet Downtime Log pada SNX-OPS-FRM-09: waktu mulai, waktu pulih, penyebab, status dihitung atau dikecualikan, dan alasannya.",
+          "Lead NOC",
+          "Baris downtime di Downtime Log, SNX-OPS-FRM-09"
+        ],
+        [
+          "Serahkan data SLA layanan SOC ke Service Delivery Manager.",
+          "Lead SOC",
+          "Data SLA layanan SOC"
+        ]
+      ]
+    },
+    {
+      "title": "Perhitungan dan validasi",
+      "steps": [
+        [
+          "Validasi tiap pengecualian downtime di Downtime Log; tolak pengecualian yang tidak punya bukti notifikasi maintenance atau pengecualian kontrak di Parameter SLA.",
+          "Lead NOC",
+          "Kolom Dihitung dan Alasan pengecualian yang sudah divalidasi"
+        ],
+        [
+          "Isi data respon tiket dari ringkasan SNX-OPS-FRM-08 ke sheet Laporan Bulanan.",
+          "Service Delivery Manager",
+          "Data respon tiket di Laporan Bulanan"
+        ],
+        [
+          "Hitung availability, response SLA, dan resolution SLA tiap pelanggan di sheet Laporan Bulanan.",
+          "Service Delivery Manager",
+          "Hasil perhitungan di Laporan Bulanan, SNX-OPS-FRM-09"
+        ]
+      ]
+    },
+    {
+      "title": "Pemantauan berjalan dan peringatan dini",
+      "steps": [
+        [
+          "Pantau sisa anggaran downtime bulan berjalan di sheet Laporan Bulanan.",
+          "Lead NOC",
+          "Sisa anggaran downtime di Laporan Bulanan, SNX-OPS-FRM-09"
+        ],
+        [
+          "Beri tahu Service Delivery Manager dan Head of Operation bila downtime yang dihitung melewati ambang peringatan dini di bagian 8.",
+          "Lead NOC",
+          "Peringatan dini"
+        ],
+        [
+          "Tinjau ulang change non-darurat pada layanan yang memicu peringatan dini.",
+          "Lead NOC",
+          "Hasil tinjauan ulang change non-darurat"
+        ]
+      ]
+    },
+    {
+      "title": "Pelaporan dan review",
+      "steps": [
+        [
+          "Susun laporan SLA bulanan berisi availability, daftar downtime, response dan resolution SLA, insiden P1 dan P2 beserta status RCA, serta rekomendasi teknis.",
+          "Service Delivery Manager",
+          "Laporan SLA bulanan"
+        ],
+        [
+          "Untuk pelanggan pemerintah, batasi laporan pada data teknis tanpa harga, diskon, tier, atau roadmap komersial.",
+          "Service Delivery Manager",
+          "Laporan teknis pelanggan pemerintah"
+        ],
+        [
+          "Kirim laporan SLA bulanan ke pelanggan dalam batas waktu bagian 8.",
+          "Service Delivery Manager",
+          "Laporan SLA terkirim"
+        ],
+        [
+          "Pimpin review layanan triwulanan bersama pelanggan enterprise utama.",
+          "Service Delivery Manager",
+          "Review layanan triwulanan"
+        ],
+        [
+          "Catat masukan kepuasan pelanggan dari review layanan.",
+          "Service Delivery Manager",
+          "Catatan masukan kepuasan pelanggan"
+        ]
+      ]
+    },
+    {
+      "title": "Penanganan breach",
+      "steps": [
+        [
+          "Catat breach di sheet Laporan Bulanan pada SNX-OPS-FRM-09.",
+          "Service Delivery Manager",
+          "Breach tercatat di SNX-OPS-FRM-09"
+        ],
+        [
+          "Susun RCA breach layanan NOC dengan SNX-OPS-FRM-10.",
+          "Lead NOC",
+          "RCA breach di SNX-OPS-FRM-10"
+        ],
+        [
+          "Susun RCA breach layanan SOC dengan SNX-OPS-FRM-10.",
+          "Lead SOC",
+          "RCA breach di SNX-OPS-FRM-10"
+        ],
+        [
+          "Tetapkan tindakan perbaikan beserta pemilik dan tenggat berdasarkan RCA.",
+          "Head of Operation",
+          "Tindakan perbaikan, pemilik, dan tenggat di SNX-OPS-FRM-10"
+        ],
+        [
+          "Serahkan breach ke VP Commercial untuk penanganan konsekuensi kontraktual.",
+          "Service Delivery Manager",
+          "Breach diserahkan ke VP Commercial"
+        ],
+        [
+          "Tangani konsekuensi kontraktual breach sesuai kontrak pelanggan.",
+          "VP Commercial",
+          "Konsekuensi kontraktual tertangani"
+        ],
+        [
+          "Catat breach yang disebabkan supplier di SNX-ISMS-FRM-03 sebagai bahan evaluasi supplier.",
+          "Head of Operation",
+          "Catatan breach supplier di SNX-ISMS-FRM-03"
+        ]
+      ]
+    }
+  ],
+  "flow": {
+    "rankdir": "TB",
+    "nodes": {
+      "a": "Catat parameter SLA\nsaat onboarding (butir 6.1)",
+      "b": "Kumpulkan data monitoring\ndan tiket (butir 6.2)",
+      "c": "Catat setiap downtime:\ndihitung atau dikecualikan",
+      "d": "Downtime dihitung melewati\nambang peringatan dini?",
+      "w": "Peringatan dini dari Lead NOC ke\nService Delivery Manager dan\nHead of Operation (butir 6.4)",
+      "e": "Validasi pengecualian dan\nhitung SLA (butir 6.3)",
+      "f": "Target kontrak\ntercapai?",
+      "br": "Breach: catat, RCA di SNX-OPS-FRM-10,\nserahkan ke VP Commercial (butir 6.6)",
+      "g": "Kirim laporan SLA bulanan\nke pelanggan (butir 6.5)",
+      "h": "Review layanan triwulanan\n(butir 6.5)"
+    },
+    "shapes": {
+      "d": "diamond",
+      "f": "diamond"
+    },
+    "edges": [
+      ["a", "b"],
+      ["b", "c"],
+      ["c", "d"],
+      ["d", "w", "Ya"],
+      ["d", "e", "Tidak"],
+      ["w", "e", "", "dashed"],
+      ["e", "f"],
+      ["f", "br", "Tidak"],
+      ["f", "g", "Ya"],
+      ["br", "g", "", "dashed"],
+      ["g", "h"]
+    ],
+    "caption": "Gambar 1. Alur pemantauan SLA. Peringatan dini dan breach adalah cabang; garis putus-putus kembali ke alur utama."
+  },
+  "sla": [
+    ["Availability layanan per bulan", "Lead NOC", "Sesuai target kontrak tiap pelanggan; target standar yang dikomunikasikan ada di butir 4.1"],
+    ["Anggaran downtime untuk target availability 99.9%", "Lead NOC", "Sekitar 43 menit per bulan 30 hari"],
+    ["Peringatan dini ke Service Delivery Manager dan Head of Operation", "Lead NOC", "Saat downtime yang dihitung melewati 50% anggaran sebelum akhir bulan"],
+    ["Pengumpulan data availability dan tiket", "Lead NOC", "Paling lambat hari kerja ke-3 bulan berikutnya"],
+    ["Penyerahan data SLA layanan SOC", "Lead SOC", "Paling lambat hari kerja ke-3 bulan berikutnya (USULAN: sumber menyebut batas ini untuk pengumpulan data)"],
+    ["Response SLA", "Service Delivery Manager", "Sesuai target response pelanggan di Parameter SLA; target Ack per severity ada di SNX-OPS-SOP-04 bagian 8"],
+    ["Resolution SLA", "Service Delivery Manager", "Sesuai target pemulihan di kontrak pelanggan; angkanya tidak ditetapkan di SOP ini"],
+    ["Pengiriman laporan SLA bulanan ke pelanggan", "Service Delivery Manager", "Paling lambat hari kerja ke-5 bulan berikutnya"],
+    ["Review layanan bersama pelanggan enterprise utama", "Service Delivery Manager", "Triwulanan"],
+    ["Indikator: laporan SLA terkirim hari kerja ke-5", "Service Delivery Manager", "Target 100%"],
+    ["Indikator: layanan dengan availability sesuai target kontrak", "Service Delivery Manager", "Target 100%"],
+    ["Indikator: breach dengan RCA dan tindakan perbaikan", "Head of Operation", "Target 100%"]
+  ],
+  "exceptions": [
+    ["Pengecualian downtime tanpa bukti notifikasi maintenance atau pengecualian kontrak", "Lead NOC menolak pengecualian itu sehingga downtime tetap dihitung, menurut butir 6.3."],
+    ["Downtime yang dihitung melewati ambang peringatan dini sebelum akhir bulan", "Lead NOC memberi peringatan dini dan meninjau ulang change non-darurat, menurut butir 6.4."],
+    ["Pelanggan pemerintah", "Service Delivery Manager membatasi laporan pada data teknis, menurut butir 6.5."],
+    ["Breach yang disebabkan supplier", "Head of Operation mencatatnya di SNX-ISMS-FRM-03 menurut butir 6.6, di samping penanganan breach ke pelanggan."]
+  ],
+  "conclusion": [
+    "Service Delivery Manager memantau kepatuhan terhadap SOP ini lewat tiga indikator kinerja di bagian 8.",
+    "Service Delivery Manager selaku pemilik SOP juga meninjau dokumen ini setiap tahun."
+  ],
+  "related_documents": [
+    ["SNX-OPS-SOP-01", "SOP Project Management & Delivery; mengatur gate G1, tempat parameter SLA pelanggan dicatat."],
+    ["SNX-OPS-SOP-04", "SOP Technical Incident Handling & Escalation; kriteria severity, target Ack per severity, dan penanganan insiden yang menimbulkan downtime."],
+    ["SNX-OPS-FRM-08", "Technical Ticket / Incident Register; sumber data tiket dan ringkasan respon."],
+    ["SNX-OPS-FRM-09", "SLA Performance Monitoring Report; sheet Parameter SLA, Downtime Log, dan Laporan Bulanan."],
+    ["SNX-OPS-FRM-10", "Root Cause Analysis & Corrective Action Report; RCA breach dan tindakan perbaikan."],
+    ["SNX-ISMS-FRM-03", "Supplier Technical & Security Evaluation Records; evaluasi supplier, tempat breach yang disebabkan supplier dicatat."],
+    ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; jabatan dan matriks peran yang menjadi dasar nama peran di bagian 5."]
+  ],
+  "records": [
+    ["SLA Performance Monitoring Report (SNX-OPS-FRM-09)", "Folder Drive Operation (USULAN). Pemilik: Service Delivery Manager.", "3 tahun"],
+    ["Technical Ticket / Incident Register (SNX-OPS-FRM-08)", "Folder Drive Operation (USULAN); tiket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.", "3 tahun"],
+    ["RCA & Corrective Action Report untuk breach (SNX-OPS-FRM-10)", "Folder Drive Operation, subfolder per tahun (USULAN). Pemilik: Head of Operation.", "5 tahun"],
+    ["Evaluasi supplier (SNX-ISMS-FRM-03)", "Folder Drive Operation (USULAN). Pemilik: Head of Operation.", "Durasi kontrak ditambah 3 tahun"],
+    ["Catatan review layanan triwulanan dan masukan kepuasan pelanggan", "Folder Drive Operation (USULAN). Pemilik: Service Delivery Manager.", "3 tahun (USULAN)"]
+  ],
+  "iso_refs": {
+    "ISO 9001:2015": "8.2.3 (Peninjauan persyaratan produk dan jasa), 9.1.1 (Pemantauan, pengukuran, analisis, dan evaluasi: umum), 9.1.2 (Kepuasan pelanggan).",
+    "ISO/IEC 27001:2022": "Annex A 5.22 (Pemantauan layanan supplier), 8.16 (Aktivitas pemantauan)."
+  }
+}

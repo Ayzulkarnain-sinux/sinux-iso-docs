@@ -1,0 +1,61 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 6.3 langkah 3 dan butir 4.2",
+   "masalah": "Resolution SLA disuruh dihitung di sheet Laporan Bulanan, padahal sheet itu tidak punya kolom resolution SLA. Rekaman yang disebut tidak bisa menampung keluarannya. Ketidakcocokan ini sudah tercatat sebagai open item 1 di notes, tetapi di dokumen tidak berlabel, sedangkan kasus serupa di 6.1 diberi label USULAN (kolom Catatan).",
+   "bukti": "Dokumen: \"3. Hitung availability, response SLA, dan resolution SLA tiap pelanggan di sheet Laporan Bulanan.\" Kolom FRM-09 Laporan Bulanan (out/07_Ops xlsx baris 7): Pelanggan, Layanan, Target, Downtime dihitung (menit), Availability, Status, Anggaran downtime (menit), Sisa anggaran (menit), Tiket P1 dan P2, Di-ack sesuai target, Response SLA, Catatan dan tindakan."
+  },
+  {
+   "lokasi": "Bagian 8, baris pengumpulan data, pengiriman laporan, review triwulanan, dan tiga indikator",
+   "masalah": "Sumber pendukung yang modifiedTime-nya lebih baru (POL/PRO 2026-10-13T09:06Z, SOP-05 06:09Z) melabeli batas hari kerja ke-3, review triwulanan, dan target KPI sebagai USULAN. Dokumen menulisnya tanpa label, tetapi memberi label USULAN pada baris Lead SOC, padahal baris PRO yang sama mencakup data NOC dan SOC. Angkanya bersumber dari SOP-05, jadi ini bukan fakta karangan. Notes sudah mencatatnya sebagai open item 6.",
+   "bukti": "PRO-OPS-001 SDPM-04: \"Kumpulkan data NOC dan SOC paling lambat hari kerja ke-3 bulan berikutnya. (USULAN)\"; \"Review layanan triwulanan dengan pelanggan enterprise utama. (USULAN)\". POL-OPS-001 bagian 11: \"target awal di bawah adalah USULAN\". Dokumen: \"Pengumpulan data availability dan tiket | Lead NOC | Paling lambat hari kerja ke-3 bulan berikutnya\" (tanpa label)."
+  },
+  {
+   "lokasi": "Bagian 2 Scope, paragraf 2",
+   "masalah": "Kalimat ini taksa dan bisa dibaca keliru. Availability diambil dari data monitoring (6.2 langkah 1), dan response SLA mencakup tiket per severity, termasuk permintaan P4, bukan hanya tiket insiden. Pengecualian lingkupnya adalah tafsir penyusun (asumsi 9, open item 9).",
+   "bukti": "\"SOP ini hanya memakai data tiket insiden untuk menghitung SLA.\" bersanding dengan 6.2 langkah 1: \"Ambil data availability dari Nusametric, Overseer, dan console Nusagrid.\""
+  },
+  {
+   "lokasi": "Bagian 5, kolom Authority",
+   "masalah": "Dua sel berisi tugas, bukan wewenang, dan mengulang kolom Responsibilities.",
+   "bukti": "Lead SOC: \"Menyerahkan data SLA layanan SOC ke Service Delivery Manager.\" Head of Operation: \"... menerima peringatan dini.\""
+  },
+  {
+   "lokasi": "Bagian 9 Conclusion",
+   "masalah": "Kalimat ini menyebut Service Delivery Manager memantau ketiga indikator, padahal PIC indikator ketiga di bagian 8 adalah Head of Operation.",
+   "bukti": "\"Service Delivery Manager memantau kepatuhan terhadap SOP ini lewat tiga indikator kinerja di bagian 8.\" lawan \"Indikator: breach dengan RCA dan tindakan perbaikan | Head of Operation | Target 100%\""
+  },
+  {
+   "lokasi": "Scope paragraf 3 dan Definisi Gate G1",
+   "masalah": "Di tabel peran, \"VP Commercial\" berlabel USULAN, tetapi di Scope dan definisi Gate G1 sebutan yang sama ditulis tanpa label. Ada juga beda istilah lintas dokumen: SNX-OPS-SOP-01 mendefinisikan Gate G1 \"dari Commercial ke SD dan PM\". Risiko fakta rendah karena POL P-06 menulis \"Commercial (Laras)\" dan defaults menetapkan Laras = VP Commercial.",
+   "bukti": "SOP-05: \"Gate G1 | Titik serah terima dari VP Commercial ke Service Delivery Manager ...\"; SOP-01: \"Gate G1 | Titik serah terima paket G1 dari Commercial ke SD dan PM.\""
+  },
+  {
+   "lokasi": "Butir 4.1 (ISO 9001:2015 8.2.3)",
+   "masalah": "Klausul 8.2.3 meminta peninjauan persyaratan sebelum SINUX berkomitmen. Dokumen memetakannya ke pencatatan parameter saat onboarding (G1), yang menurut POL bagian 8 terjadi sesudah PO atau kontrak ditandatangani. Pemetaan ini berasal dari sumber, jadi kriteria tetap terpenuhi, tetapi cakupannya tipis untuk auditor. Saran: rujuk checklist G1 \"SLA tertulis\" atau peninjauan SLA di proposal sebagai bukti peninjauan.",
+   "bukti": "\"4.1 Persyaratan layanan (ISO 9001:2015 8.2.3): Service Delivery Manager mencatat parameter SLA tiap pelanggan saat onboarding (butir 6.1).\""
+  },
+  {
+   "lokasi": "Bagian 6.4 langkah 3 dan Authority Lead NOC",
+   "masalah": "Pelaku peninjauan ulang change non-darurat adalah tafsir, karena kalimat sumbernya pasif. Notes sudah mencatatnya (asumsi 3, open item 5). Dasar tafsirnya wajar: POL menulis Lead NOC sebagai approver change Standar dan Normal NOC, tetapi change Major disetujui COO.",
+   "bukti": "Sumber 6.4: \"... dan change non-darurat pada layanan itu ditinjau ulang.\" Dokumen: \"3. Tinjau ulang change non-darurat pada layanan yang memicu peringatan dini. | Lead NOC\""
+  },
+  {
+   "lokasi": "Bagian 6.6 langkah 1 sampai 6, Exception Management",
+   "masalah": "Isi diulang antarbagian (§6a butir 6). Tabel Exception Management mengulang langkah 6.3 sampai 6.6 hampir kata per kata, dan butir 4.x mengulang prosedur. Bentuk ini mengikuti pola template dan dokumen saudara, jadi ringan.",
+   "bukti": "Exception: \"Pelanggan pemerintah | Service Delivery Manager membatasi laporan pada data teknis, menurut butir 6.5.\" lawan 6.5 langkah 2: \"Untuk pelanggan pemerintah, batasi laporan pada data teknis ...\""
+  },
+  {
+   "lokasi": "Bagian 3 dan 6.3 langkah 2",
+   "masalah": "Ejaan dan format angka tidak seragam. \"respon\" (bentuk baku: respons) dipakai berdampingan dengan \"response SLA\". Format angka bercampur: titik desimal pada \"99.9%\" (dari sumber) dan titik ribuan pada \"1.440\", sehingga pembaca bisa salah tafsir. Istilah \"GMF\" juga tidak didefinisikan.",
+   "bukti": "\"Isi data respon tiket dari ringkasan SNX-OPS-FRM-08 ...\"; \"SNX-OPS-FRM-09 menghitungnya dari jumlah hari dikali 1.440.\"; \"Tiket GMF dan internal tercatat di Service Hub\""
+  },
+  {
+   "lokasi": "Bagian 11, Acuan standar",
+   "masalah": "Judul kontrol 5.22 ditulis ringkas mengikuti sumber, sedangkan judul resminya mencakup pemantauan, peninjauan, dan manajemen perubahan layanan supplier. Hal ini tidak menyalahi kriteria.",
+   "bukti": "\"Annex A 5.22 (Pemantauan layanan supplier)\""
+  }
+ ]
+}
