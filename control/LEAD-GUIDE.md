@@ -5,4 +5,4 @@ Hanya LEAD ISO yang menulis berkas ini. Worker membaca di tiap checkpoint (git p
 Format entri: `## G-<n> | <waktu UTC> | berlaku: <wave/KEY/semua>` lalu isi arahan.
 
 ## G-0 | 2026-10-15 | berlaku: semua
-Belum ada arahan. Jalankan WO-ISO-01 dan RUNBOOK v19-c apa adanya.
+Belum ada arahan tambahan. Jalankan WO-ISO-01 dan RUNBOOK v19-e apa adanya, dengan config/defaults.json v21 (termasuk data_conflicts).

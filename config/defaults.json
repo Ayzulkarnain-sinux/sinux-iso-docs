@@ -1,10 +1,28 @@
 {
- "version": "v20",
- "status_note": "DIKUNCI LEAD ISO-A 15 Okt 2026 (default v19-a diterima utuh, owner: 'berikan best recommendation ... Tuntaskan'). Worker TIDAK memutus ulang di W0. Perubahan hanya lewat control/LEAD-GUIDE.md; semua butir bisa diganti lalu render ulang massal dari specs/ dalam menit.",
+ "version": "v21",
+ "status_note": "DIKUNCI LEAD ISO-A 15 Okt 2026 (default v19-a diterima utuh, owner: 'berikan best recommendation ... Tuntaskan'). Worker TIDAK memutus ulang di W0. Perubahan hanya lewat control/LEAD-GUIDE.md; semua butir bisa diganti lalu render ulang massal dari specs/ dalam menit. v21 (LEAD 15 Okt): koreksi data penanda tangan terhadap sumber (Sita, Erik), kata owner tiket verbatim, daftar data_conflicts.",
  "numbering": {
   "scheme": "SNX-<AREA>-<JENIS>-<NN>",
-  "area": ["HR", "FAT", "LEG", "COM", "MKT", "OPS", "ISMS"],
-  "jenis": ["SOP", "PRO", "PRC", "PLN", "FRM", "REG", "RPT", "ORG", "JA"],
+  "area": [
+   "HR",
+   "FAT",
+   "LEG",
+   "COM",
+   "MKT",
+   "OPS",
+   "ISMS"
+  ],
+  "jenis": [
+   "SOP",
+   "PRO",
+   "PRC",
+   "PLN",
+   "FRM",
+   "REG",
+   "RPT",
+   "ORG",
+   "JA"
+  ],
   "existing_snx_kept": true,
   "status": "DIKUNCI (D1)"
  },
@@ -13,22 +31,53 @@
   "status": "DIKUNCI (D2), sesuai template Aziz; pembalik: form operasional disetujui COO bila owner memutus"
  },
  "prepared_reviewed": {
-  "HR": {"prepared": "Sita Nadia Scifin / HRGA", "reviewed": "Aziz Priyo Widakdo / HR Manager"},
-  "FAT": {"prepared": "Finance Staff", "reviewed": "Finance Lead"},
-  "LEG": {"prepared": "Staff Legal", "reviewed": "Line Manager Legal"},
-  "COM": {"prepared": "Laras Rasmawati / VP Commercial", "reviewed": "Amirull Yusuf Zulkarnain / Direktur"},
-  "MKT": {"prepared": "Marketing Staff", "reviewed": "Laras Rasmawati / VP Commercial"},
-  "OPS": {"prepared": "Erik Dwi Yanto / Tech Operation", "reviewed": "Fani Fatullah / VP Tech Operation and Services"},
-  "ISMS": {"prepared": "Erik Dwi Yanto / Tech Operation", "reviewed": "Fani Fatullah / VP Tech Operation and Services"},
-  "rule": "Nilai bersih tanpa kurung. Penyusun boleh mengganti jabatan generik dengan nama + jabatan HANYA bila tertulis di Job Analysis (HR-JA-001). Semua baris ini USULAN di Master List."
+  "HR": {
+   "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+   "reviewed": "Aziz Priyo Widakdo / HR Manager"
+  },
+  "FAT": {
+   "prepared": "Finance Staff",
+   "reviewed": "Finance Lead"
+  },
+  "LEG": {
+   "prepared": "Staff Legal",
+   "reviewed": "Line Manager Legal"
+  },
+  "COM": {
+   "prepared": "Laras Rasmawati / VP Commercial",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur"
+  },
+  "MKT": {
+   "prepared": "Zilly Dwinata / Brand & Marketing",
+   "reviewed": "Laras Rasmawati / VP Commercial"
+  },
+  "OPS": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services"
+  },
+  "ISMS": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services"
+  },
+  "rule": "Nilai dipakai PERSIS di blok Prepared By dan Reviewed By, tanpa substitusi oleh penyusun (mencegah beda antardokumen). Semua baris ini USULAN di Master List. Perubahan hanya lewat control/LEAD-GUIDE.md."
  },
  "department_labels": {
-  "HR": "Human Resources", "FAT": "Finance, Accounting & Tax", "LEG": "Legal", "COM": "Commercial",
-  "MKT": "Marketing", "OPS": "Operation", "ISMS": "Operation"
+  "HR": "Human Resources",
+  "FAT": "Finance, Accounting & Tax",
+  "LEG": "Legal",
+  "COM": "Commercial",
+  "MKT": "Marketing",
+  "OPS": "Operation",
+  "ISMS": "Operation"
  },
  "classification": {
   "scheme": "SNX-ISMS-PRO-01",
-  "levels": ["PUBLIC", "INTERNAL", "RESTRICTED (Internal)", "SECRET"],
+  "levels": [
+   "PUBLIC",
+   "INTERNAL",
+   "RESTRICTED (Internal)",
+   "SECRET"
+  ],
   "rule": "Tingkat per dokumen = kolom classification di worklist; bila null: ikuti label sumber; data karyawan, hukum, keuangan, pelanggan = RESTRICTED (Internal); SOP umum = INTERNAL. Label tercetak di footer hanya untuk RESTRICTED/SECRET (renderer otomatis).",
   "status": "DIKUNCI (D3)"
  },
@@ -38,12 +87,91 @@
  "revision": "00",
  "revision_desc": "Draft awal untuk review dan pengesahan",
  "template_policy": "DIKUNCI (D4): Pertahankan template Aziz apa adanya, termasuk salah ketik di template; perbaikan template hanya atas keputusan Aziz/owner, lalu render ulang massal",
- "ticketing": "Zammad untuk Ops (pelanggan), GLPI (SINUX Service Hub) untuk generalist/internal",
+ "ticketing": "Kata owner 14 Okt: \"sistem tiket zammad untuk ops, glpi untuk generalist\". GLPI = SINUX Service Hub. Batas lingkup 'generalist' belum dirinci owner: bila SOP perlu batas, tulis berlabel (USULAN) dan catat open item.",
  "titles": {
   "president_director": "Samuel Kristanto Utomo / President Director",
   "coo": "Amirull Yusuf Zulkarnain / Direktur",
   "vp_tech_ops": "Fani Fatullah / VP Tech Operation and Services",
   "hr_manager": "Aziz Priyo Widakdo / HR Manager",
   "vp_commercial": "Laras Rasmawati / VP Commercial"
+ },
+ "data_conflicts": {
+  "rule": "Pakai kolom 'pakai' di SEMUA dokumen (termasuk Job Analysis dan Struktur Organisasi) agar set dokumen konsisten; ini mengalahkan catatan worklist bila bentrok. Catat tiap butir yang konfirmasinya bukan 'selesai' sebagai open item di Laporan_Run.md. Jangan memilih nilai lain sendiri.",
+  "items": [
+   {
+    "butir": "Ejaan nama Direktur Utama",
+    "pakai": "Samuel Kristanto Utomo",
+    "sumber_lain": "HR-JA-001 menulis 'Samuel Kristianto Utomo'",
+    "dasar": "template SOP (Approved By) dan SOP Billing menulis Kristanto",
+    "konfirmasi": "owner atau Samuel"
+   },
+   {
+    "butir": "Jabatan Aziz Priyo Widakdo",
+    "pakai": "HR Manager",
+    "sumber_lain": "HR-JA-001 JA-14 menulis 'HR Lead'",
+    "dasar": "kata owner 14 Okt (premis terlindungi)",
+    "konfirmasi": "owner atau Aziz"
+   },
+   {
+    "butir": "Nama HRGA Officer",
+    "pakai": "Sita Nadia Salsabila Widodo",
+    "sumber_lain": "daftar Supporting PIC menulis 'Sita Nadia Scifin'",
+    "dasar": "owner 14 Okt: 'sita nadia itu hanya nama kontak WA saja'; HR-JA-001 JA-12",
+    "konfirmasi": "selesai"
+   },
+   {
+    "butir": "Nama staf Finance",
+    "pakai": "Kana Salsabila Putri Koeswologito",
+    "sumber_lain": "KB dan daftar PIC menulis 'Bila Parwasto'",
+    "dasar": "owner 14 Okt: orang yang sama; HR-JA-001 JA-10",
+    "konfirmasi": "selesai"
+   },
+   {
+    "butir": "Peran Finance Lead dan Finance Staff",
+    "pakai": "peran apa adanya di SOP Billing dan Tax",
+    "sumber_lain": "tidak ada jabatan itu di HR-JA-001 (hanya JA-10 Finance, JA-11 Accounting & Tax)",
+    "dasar": "sumber SOP FAT",
+    "konfirmasi": "owner (pemetaan peran ke orang)"
+   },
+   {
+    "butir": "Sebutan Samuel Kristanto Utomo",
+    "pakai": "blok Approved By: 'President Director' (template); badan dokumen: 'Direktur Utama' (HR-JA-001), termasuk saat sumber menulis CEO",
+    "sumber_lain": "CEO (SOP Billing, Jobdesk Line Manager Legal, POL-OPS-001)",
+    "dasar": "template dan HR-JA-001",
+    "konfirmasi": "owner atau Samuel"
+   },
+   {
+    "butir": "Sebutan Amirull Yusuf Zulkarnain",
+    "pakai": "blok tanda tangan: 'Direktur' (HR-JA-001); badan dokumen Ops dan ISMS yang menyebut peran eskalasi COO: tulis 'Direktur (COO)' pada sebutan pertama, sesudahnya 'COO'",
+    "sumber_lain": "dokumen Ops dan ISMS menulis 'COO, Amirull Yusuf Zulkarnain'",
+    "dasar": "HR-JA-001 dan dokumen Ops",
+    "konfirmasi": "owner"
+   },
+   {
+    "butir": "Nama Legal",
+    "pakai": "Ester Febe Utomo (JA-08) dan Alif Altamziz (JA-09)",
+    "sumber_lain": "daftar Supporting PIC menulis 'Ester Utomo' dan '@a'",
+    "dasar": "HR-JA-001; owner 14 Okt: '@a' = Alif",
+    "konfirmasi": "selesai"
+   },
+   {
+    "butir": "Garis lapor Laras Rasmawati",
+    "pakai": "Struktur Organisasi: garis tegas ke Direktur (HR-JA-001) dan garis putus-putus ke Direktur Utama, berlabel menunggu konfirmasi",
+    "sumber_lain": "HR-JA-001 JA-03: atasan langsung 'Direktur'",
+    "dasar": "kata owner: melapor ke Direktur Utama dan ke Amirull (Direktur)",
+    "konfirmasi": "owner"
+   },
+   {
+    "butir": "Garis lapor Aziz Priyo Widakdo",
+    "pakai": "di atas HRGA Officer (Sita Nadia Salsabila Widodo); ke atas garis putus-putus ke Direktur, berlabel menunggu konfirmasi (sumber tidak menetapkan satu atasan)",
+    "sumber_lain": "HR-JA-001 JA-14: 'Direktur atau Management sesuai struktur yang disahkan'",
+    "dasar": "kata owner dan HR-JA-001",
+    "konfirmasi": "owner atau Aziz"
+   }
+  ]
+ },
+ "process_owner": {
+  "rule": "Ikuti 'Pemilik dokumen' di sumber (jabatan atau peran, tanpa nama). Dokumen baru tanpa sumber: jabatan pada kolom reviewed departemennya, tanpa nama.",
+  "status": "USULAN"
  }
 }

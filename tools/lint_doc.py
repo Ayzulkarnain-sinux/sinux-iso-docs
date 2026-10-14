@@ -14,8 +14,11 @@ SOP_HEADINGS = ["PURPOSE", "SCOPE", "DEFINITION & ABBREVIATIONS", "POLICY & GENE
                 "RELATED DOCUMENTS & ATTACHMENTS"]
 FORBIDDEN = [
     (r'SKILL_', 'rujukan skill AI internal'), (r'\bDOCTRINE\b', 'rujukan DOCTRINE'),
-    (r'\bDEC-20\d\d', 'rujukan DEC'), (r'\bHANDOVER\b', 'rujukan HANDOVER'),
-    (r'\bstaging\b(?!\s+(environment|server|area))', 'jalur staging KB'), (r'packet setor', 'packet setor'),
+    (r'\bDEC-20\d\d', 'rujukan DEC'), (r'\bHANDOVER([_-]\w|\s*§)', 'rujukan HANDOVER internal'),
+    (r'\b(?!ISO\b)[A-Z]{2,}\s*§\s*\d', 'rujukan section kanon (KODE §n)'),
+    (r'\b[A-Z]{2,}_[A-Z][A-Z_]+\b', 'nama berkas internal (HURUF_BESAR_GARIS_BAWAH)'),
+    (r'(?i:submit_to_staging|\bpacket staging\b|\bstaging KB\b|\bantrean staging\b|\bjalur staging\b|\bvia staging\b)', 'jalur staging KB'), (r'packet setor', 'packet setor'),
+    (r'(?i:\b(Claude|Altair|kb_anchor|relay_get|relay_mark|query_kb)\b)', 'rujukan AI internal'),
     (r'\bCONTOH\b', 'baris CONTOH'), (r'Nexus AI', 'produk pensiun'), (r'SecureEdge', 'produk tidak ada'),
     (r'Imunify360', 'POLRI = ImunifyAV'), (r'Komisaris dan Advisor', 'peran Fani keliru'),
     ('—', 'em-dash'), (r'\(Menjelaskan', 'teks instruksi template'), (r'\(Menampilkan', 'teks instruksi template'),
@@ -23,7 +26,7 @@ FORBIDDEN = [
     (r'\[(NAMA|NOMOR|DEPTARTEMEN|DEPARTEMEN|DD|MONTHLY|Prepared|Reviewed|Internal / Confidential)[^\]]*\]', 'placeholder template'),
     (r'\[ISI', 'placeholder [ISI'), (r'\bTBD\b|\bTODO\b|\?\?\?', 'penanda belum selesai'),
     (r'BEGIN (RSA |OPENSSH )?PRIVATE KEY', 'kunci privat'),
-    (r'(password|passwd|pwd|token|api[_ ]?key|secret)\s*[:=]\s*\S+', 'kemungkinan kredensial'),
+    (r'\b(password|passwd|pwd|kata sandi|sandi|token|api[_ ]?key|secret)(\s+\w+)?\s*[:=]\s*(?!SNX-)(?=\S*\d)(?=\S*[A-Za-z])\S{8,}', 'kemungkinan kredensial'),
 ]
 
 # Gaya bahasa (anti AI slop) dan ejaan baku, tidak peka huruf besar-kecil. Sumber: RUNBOOK §6a.
@@ -39,7 +42,7 @@ STYLE = [
     (r'\b(seamless|robust|leverage|cutting-edge|state-of-the-art|best-in-class|world-class|game[- ]changer|next-level)\b', 'kosakata AI'),
     (r'\b(kelas dunia|terdepan di industri|revolusioner)\b', 'klaim tanpa bukti'),
     (r'\b(semoga bermanfaat|mari kita)\b', 'gaya obrolan'),
-    ('[\U0001F300-\U0001FAFF☀-➿]', 'emoji'),
+    ('[\U0001F300-\U0001FAFF\u2600-\u260F\u2613-\u2712\u2718-\u2793\u27B0-\u27BF]', 'emoji (kotak centang, tanda cek, dan panah boleh)'),
     (r'\bresiko\b', 'ejaan: risiko'), (r'\b(menganalisa|analisa)\b', 'ejaan: analisis'),
     (r'\bpraktek\b', 'ejaan: praktik'), (r'\baktifitas\b', 'ejaan: aktivitas'), (r'\bijin\b', 'ejaan: izin'),
     (r'\bmerubah\b', 'ejaan: mengubah'), (r'\bsekedar\b', 'ejaan: sekadar'), (r'\bobyek\b', 'ejaan: objek'),
@@ -47,7 +50,7 @@ STYLE = [
     (r'\b(dibawah|diatas|didalam|diluar|kedalam)\b', 'ejaan: kata depan dipisah'),
 ]
 # Sisa isi dummy/uji; tidak berlaku untuk berkas uji ber-nomor SNX-UJI-.
-DUMMY = r'Nama Penyusun|Nama Pemeriksa|uji render|lorem ipsum|isi dummy'
+DUMMY = r'Nama Penyusun / Jabatan|Nama Pemeriksa / Jabatan|uji render|lorem ipsum|isi dummy'
 
 
 def all_text(d):

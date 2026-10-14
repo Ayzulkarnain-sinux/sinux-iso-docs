@@ -11,7 +11,8 @@ Dari: LEAD ISO-A (chat pengendali), 15 Okt 2026. Untuk: sesi worker Claude Code.
 | Mode | otonom penuh sesudah owner mengetik "gaspol"; nol pertanyaan ke owner sesudahnya |
 | Repo | Ayzulkarnain-sinux/sinux-iso-docs, klon di /home/claude/iso-run |
 | Konektor wajib | Google Drive (baca saja). Konektor KB SINUX opsional |
-| Penamaan | commit "ISO <KEY> <state>"; laporan reports/LEDGER.md dan reports/REVIEW-W<n>.md; packet staging iso-run-20261015-W<n> (bila KB ada); berkas "<NOMOR> <Judul> (Rev00 DRAFT).docx" |
+| Penamaan | commit "ISO <KEY> <state>"; laporan reports/LEDGER.md dan reports/REVIEW-W<n>.md; satu packet staging final iso-run-20261015-final di W8 (bila KB ada; antrean staging penuh, tidak ada packet per wave); berkas "<NOMOR> <Judul> (Rev00 DRAFT).docx" |
+| Gelombang | W0 sampai W8 = gelombang ISO. Lane ORK W2 (Altair) berjalan paralel di sesi lain: jangan menyentuh antrean, repo, atau packet-nya, dan di luar repo tulis "ISO-W<n>" |
 
 ## 2. Misi dan definisi selesai
 Misi: 67 draf dokumen ISO 9001:2015 + ISO/IEC 27001:2022 (44 perbaikan dokumen tim, 23 dokumen baru) dalam template SOP SINUX, dengan tampilan identik reference/ dan bahasa sesuai RUNBOOK §6a, siap direview tim pagi ini. Baris HOLD-T3 hanya dikerjakan bila berkasnya terlihat di ukur ulang W0.
@@ -23,7 +24,7 @@ Selesai = tiap 88 baris worklist punya state akhir di ledger.json dan Master_Lis
 | Format | template/ + tools/render_sop.py, dibekukan pada reference/ | selftest "BEDA format" |
 | Isi wajib | tools/lint_doc.py | status bukan Draft, tanggal efektif terisi, bagian kosong, placeholder, sisa isi uji, rujukan AI |
 | Bahasa | RUNBOOK §6a, ditegakkan lint (frasa slop, ejaan) dan verifikator (butir f) | frasa terlarang, kalimat generik, pasif tanpa pelaku, istilah tidak konsisten |
-| Kebenaran | verifikator buta (Opus) lawan sumber Drive | fakta tanpa sumber yang tidak berlabel (USULAN) |
+| Kebenaran | verifikator buta (Opus) lawan sumber Drive, catatan cacat context/audit/, dan data_conflicts di config/defaults.json | fakta tanpa sumber yang tidak berlabel (USULAN); nama atau jabatan berbeda dari data_conflicts |
 | Validitas Word | lint (id bookmark) + validator skill docx bila ada | docx tidak valid |
 | Tampilan | pratinjau PDF dokumen pertama tiap wave lawan reference/ | tabel pecah, diagram terlalu kecil, sel kosong |
 Skill yang dimuat orkestrator bila tersedia: docx (render dan validasi), antislop-copywriting (audit bahasa sebelum menandai DONE untuk dokumen pertama tiap wave). Penyusun tidak memuat skill; aturannya sudah ada di RUNBOOK §6a.
@@ -31,7 +32,7 @@ Skill yang dimuat orkestrator bila tersedia: docx (render dan validasi), antislo
 ## 4. Tim multi-agent
 | Peran | Bentuk | Model | Jumlah | Boleh menulis |
 |---|---|---|---|---|
-| Orkestrator | sesi utama | Opus 5.5 extra | 1 | ledger.json, out/, qa/<KEY>.lint.json, reports/, git |
+| Orkestrator | sesi utama | Opus 5.5 extra | 1 | ledger.json, out/, qa/<KEY>.lint.json, reports/, config/checklist.json, tools/ (hanya tech_fix, selftest tetap 6 OK), git |
 | Penyusun | subagen (alat Agent) | sonnet | paling banyak 5 serentak, 1 KEY per subagen | specs/<KEY>.*, notes/<KEY>.md |
 | Verifikator buta | subagen (alat Agent) | opus | per dokumen sesuai RUNBOOK §5.5 | qa/<KEY>.verify.json |
 Aturan: subagen tidak saling berkoordinasi; orkestrator yang memverifikasi. Verifikator batch N boleh berjalan bersamaan dengan penyusun batch N+1 (berkas tidak beririsan); total subagen serentak paling banyak 8. Orkestrator tidak membaca isi spec ke konteksnya; cukup validasi JSON, hasil lint, dan putusan verifikator. W1 (Struktur Organisasi dan Job Analysis) selesai dulu sebelum W2, karena nama peran di bagian 5 tiap SOP bergantung padanya.

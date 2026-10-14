@@ -12,7 +12,7 @@ if python3 -I tools/lint_doc.py template/SOP_TEMPLATE.docx sop >/dev/null; then 
 fs=a595f34e6022ab2102c2d25003862493f990944f893ad9cfb55ada7e7888006f
 fg=8c189a863677529c8f9916e38965b0e57a96701a8241e8259512f85ba88ebe88
 if [ "$(python3 -I tools/format_hash.py $T/sop.docx)" = "$fs" ] && [ "$(python3 -I tools/format_hash.py $T/gen.docx)" = "$fg" ]; then echo "OK format terkunci"; else echo "BEDA format: renderer mengubah tata letak acuan, kembalikan perubahan atau minta LEAD"; fi
-# Gerbang gaya harus menembak frasa slop, dan gerbang dummy harus menembak isi uji di nomor resmi.
+# Gerbang gaya harus menembak frasa slop, gerbang dummy menembak isi uji di nomor resmi, dan pola lint lolos uji regresi (tools/lint_spot.py).
 python3 -I -c "
 import json,sys
 s=json.load(open('specs/UJI-RENDER.json')); s['purpose'][0]+=' Proses ini sangat penting untuk menjaga sinergi tim.'
@@ -21,4 +21,4 @@ s=json.load(open('specs/UJI-RENDER.json')); s['meta']['number']='SNX-ISMS-SOP-99
 json.dump(s,open(sys.argv[2],'w'))" $T/slop.json $T/dummy.json
 python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx $T/slop.json $T/slop.docx
 python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx $T/dummy.json $T/dummy.docx
-if python3 -I tools/lint_doc.py $T/slop.docx sop | grep -q '"gaya' && python3 -I tools/lint_doc.py $T/dummy.docx sop | grep -q 'sisa isi uji'; then echo "OK kontrol gaya dan dummy"; else echo "GAGAL kontrol gaya dan dummy: gerbang tidak menembak"; fi
+if python3 -I tools/lint_doc.py $T/slop.docx sop | grep -q '"gaya' && python3 -I tools/lint_doc.py $T/dummy.docx sop | grep -q 'sisa isi uji' && python3 -I tools/lint_spot.py tools/lint_doc.py >/dev/null; then echo "OK kontrol gaya dan dummy"; else echo "GAGAL kontrol gaya dan dummy: gerbang tidak menembak"; fi
