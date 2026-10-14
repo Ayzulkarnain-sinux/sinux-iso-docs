@@ -1,0 +1,62 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 1 Purpose",
+      "masalah": "Frasa kabur 'secepat mungkin' (pola yang §6a butir 1 sebut salah). Kalimat tim dipertahankan sesuai §6a butir 10, tetapi bisa ditautkan ke target pulih bagian 8.",
+      "bukti": "\"... agar layanan pulih secepat mungkin dan insiden besar tidak terulang.\" (sumber 1p9vcA1S... Bagian 1 verbatim)"
+    },
+    {
+      "lokasi": "Bagian 4 Policy",
+      "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui (NOC Engineer, Lead NOC, Head of Operation).",
+      "bukti": "\"Status layanan disampaikan ke pelanggan hanya setelah dicek di monitoring ...\"; \"Kredensial pelanggan hanya diterima melalui direct message atau password manager.\"; \"Tindakan korektif dicatat dengan pemilik dan tenggat, lalu dipantau sampai efektif (butir 6.5).\""
+    },
+    {
+      "lokasi": "Bagian 5 Lead NOC (Authority), butir 6.6 langkah 4-5, bagian 8",
+      "masalah": "Pelaku pemberitahuan P1 ke COO dan Direktur Utama ditetapkan Lead NOC, padahal sumber hanya menulis 'Lead langsung, COO dalam 30 menit, CEO bila COO tidak tersedia' tanpa pelaku, dan Head of Operation (penanggung jawab P1) tidak ada di rantai. Tafsir wajar, tercatat di notes (asumsi 4, open item 2), tetapi tidak berlabel USULAN di dokumen. Sama untuk penetapan problem oleh Lead NOC dan pemantauan tindakan korektif oleh Head of Operation (asumsi 6).",
+      "bukti": "Sumber Bagian 6 kolom Eskalasi hierarki P1; dokumen: \"Beri tahu COO tentang insiden P1. | Lead NOC\""
+    },
+    {
+      "lokasi": "Bagian 9 Exception, baris 'Insiden P1 yang pemulihannya mengubah production'",
+      "masalah": "Sumber memberi pilihan ('P1 boleh sebagai change Emergency'); baris exception menulisnya sebagai keharusan, berbeda dengan butir 6.3 langkah 4 yang memakai 'boleh'.",
+      "bukti": "\"NOC Engineer menjalankan pemulihan sebagai change Emergency sesuai butir 6.3.\" vs sumber 7.3 \"(P1 boleh sebagai change Emergency)\""
+    },
+    {
+      "lokasi": "Bagian 10 Conclusion vs bagian 8",
+      "masalah": "Penutup menyebut Lead NOC memantau keempat indikator, sedangkan kolom PIC bagian 8 membagi indikator ke NOC Engineer, Lead NOC, dan Head of Operation.",
+      "bukti": "\"Lead NOC memantau kepatuhan lewat empat indikator kinerja di bagian 8 ...\"; bagian 8: \"Indikator: RCA P1 dan P2 terkirim dalam 2 hari kerja | Head of Operation\""
+    },
+    {
+      "lokasi": "Bagian 11 tabel Rekaman",
+      "masalah": "Peran 'Lead SOC' dipakai sebagai pemilik rekaman tetapi tidak ada di tabel peran bagian 5 (§6a butir 7). Nilainya benar menurut pemilik SNX-ISMS-FRM-02 di context/audit.",
+      "bukti": "\"Security Incident & Investigation Records (SNX-ISMS-FRM-02) | Folder Drive Operation (USULAN). Pemilik: Lead SOC.\""
+    },
+    {
+      "lokasi": "Butir 6.1 langkah 3",
+      "masalah": "Sistem tiket untuk insiden dari monitoring tidak jelas: 'sesuai kanal laporan' hanya mencakup laporan pelanggan (Zammad) dan GMF/internal (Service Hub). Sudah tercakup open item 6 di notes.",
+      "bukti": "\"Buat tiket di Zammad atau Service Hub sesuai kanal laporan, ...\""
+    },
+    {
+      "lokasi": "Bagian 2, butir 6.2, bagian 9",
+      "masalah": "Pengulangan isi antarbagian dan variasi istilah: serahan keamanan, app-level, dan harga ditulis tiga kali; 'insiden berindikasi keamanan' bergantian dengan 'insiden berindikasi keamanan informasi'.",
+      "bukti": "Scope: \"insiden berindikasi keamanan informasi ...\"; 6.2 langkah 5: \"Serahkan insiden berindikasi keamanan ke SOC Analyst\"; Exception: \"Insiden berindikasi keamanan informasi\""
+    },
+    {
+      "lokasi": "Butir 6.3 judul dan langkah 1, diagram",
+      "masalah": "Ejaan tidak baku 'Diagnosa' (KBBI baku: diagnosis); tidak ditembak lint.",
+      "bukti": "\"Diagnosa dan Pemulihan\"; \"1. Diagnosa dengan blok ukur read-only ...\""
+    },
+    {
+      "lokasi": "Bagian 7 Process Flow",
+      "masalah": "Caption menyatakan garis putus-putus kembali ke alur utama, tetapi edge putus-putus d->x ('eskalasi sesuai severity') adalah garis keluar dari triage.",
+      "bukti": "spec flow edges [\"d\",\"x\",\"eskalasi sesuai severity\",\"dashed\"]; caption \"Garis putus-putus kembali ke alur utama.\""
+    }
+  ],
+  "catatan_cek": {
+    "fakta": "Angka (10 menit, Ack 15/30 menit/2 jam kerja/1 hari kerja, update, target pulih 4/8/24/72 jam USULAN, 30 menit COO, RCA 2 hari kerja, 3 kali dalam 30 hari, KPI 95/100/90%, retensi 3/5 tahun) cocok dengan sumber 1p9vcA1Sj6xHIbpuIS1Lb8uBTisv2WeuG. Sistem dan pihak luar (Nusametric, Overseer, Nusagrid, Acronis, Cloudflare, Zammad, Service Hub/GLPI, Maxcloud, Awandata, Arktech, TelemetryFlow, GMF) dari sumber. Head of Operation menyetujui dan mengirim RCA, kelas 'Keamanan (ke SOC)', kolom 'Eskalasi ke', 'Ack/Pulih sesuai target', sheet Ringkasan KPI 95%, dan rumus Dilaporkan cocok dengan FRM-08 dan FRM-10 di context/audit. Pemetaan VP Commercial, Manager of Product Tech (JA-05), Project Manager berlabel USULAN.",
+    "kriteria": "Description = nama berkas SNX-OPS-SOP-04 SOP Technical Incident Handling & Escalation: nomor dan judul sama; acuan ISO 9001:2015 8.5.1, 8.7, 10.2 dan ISO/IEC 27001:2022 5.24, 5.26, 8.16 tercermin di bagian 4 dan bagian 11.",
+    "runbook_0_6": "Nol rujukan internal AI (SKILL_, HANDOVER, restricted:ops dibuang), nol CEO/om Ipe/WA owner, status Draft, tanggal efektif kosong, tanda tangan kosong, klasifikasi RESTRICTED (Internal) sesuai sumber, penanda tangan sesuai defaults OPS, Fani = VP Tech Operation and Services, Direktur (COO) pada sebutan pertama, Direktur Utama di badan dokumen, vault 'menunggu konfirmasi Ops', Zammad Ops dan GLPI generalist.",
+    "audit": "11 cacat SOP-04 dan cacat relevan POL-OPS-001/PRO-OPS-001 di context/audit ditangani atau dijelaskan di notes/OPS-SOP-04.md bagian 4."
+  }
+}

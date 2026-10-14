@@ -357,9 +357,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-OPS-SOP-04",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-SOP-04 Technical Incident Handling & Escalation (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1p9vcA1Sj6xHIbpuIS1Lb8uBTisv2WeuG",
@@ -377,13 +377,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 13,
    "open_items": [],
-   "updated_at": "2026-10-14T22:02:43Z",
-   "pen_agent": "a2b454e773d7cef13"
+   "updated_at": "2026-10-14T22:26:04Z",
+   "pen_agent": "a2b454e773d7cef13",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 8,
@@ -537,7 +538,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-ISMS-SOP-04",
    "out_path": null,
    "sources": [
@@ -562,7 +563,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:22:20Z",
+   "pen_agent": "ada5a02ffcab3fe42"
   },
   {
    "wl_index": 13,
@@ -2376,5 +2378,11 @@
    "LEG-REG-01",
    "LEG-FRM-03"
   ]
- }
+ },
+ "pending_tasks": [
+  {
+   "task": "Sinkronisasi rujukan nomor bagian SOP W2 di form W5 (mis. FRM-10 merujuk SOP-04 Bagian 4/6/7.5; FRM-01 merujuk SOP-01 Bagian 6.4) setelah semua SOP W2 DONE; perubahan rujukan saja, lint ulang, catat di ledger.",
+   "added": "2026-10-14T22:20Z"
+  }
+ ]
 }
