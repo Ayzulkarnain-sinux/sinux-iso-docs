@@ -283,7 +283,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-OPS-SOP-02",
    "out_path": "out/07_Ops/SNX-OPS-SOP-02 Project Change Management (Rev00 DRAFT).docx",
    "sources": [
@@ -304,11 +304,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 12,
    "open_items": [],
-   "updated_at": "2026-10-14T22:16:56Z",
+   "updated_at": "2026-10-14T22:20:22Z",
    "pen_agent": "a9ac26f8293dae3ca",
    "ooxml": "PASSED"
   },

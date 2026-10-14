@@ -1,0 +1,279 @@
+{
+ "meta": {
+  "doc_key": "OPS-SOP-02",
+  "number": "SNX-OPS-SOP-02",
+  "department": "Operation",
+  "title": "Project Change Management",
+  "process_owner": "Head of Operation",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini mengendalikan setiap perubahan pada scope proyek dan pada environment production pelanggan maupun infrastruktur SINUX, agar perubahan dikaji, disetujui, dapat dikembalikan, dan terdokumentasi sebelum dieksekusi."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk change proyek dan change teknis.",
+  "Change proyek: perubahan scope, jadwal, deliverable, atau sumber daya proyek yang sudah ber-baseline.",
+  "Change teknis: perubahan konfigurasi, kapasitas, versi, network, rule keamanan, data, atau akses pada sistem production pelanggan dan infrastruktur internal SINUX.",
+  "SOP ini tidak berlaku untuk perubahan app-level pelanggan, yang menjadi tanggung jawab developer atau PIC pelanggan."
+ ],
+ "definitions": [
+  ["Ack pelanggan", "Acknowledgment dari pelanggan atas change yang menyentuh layanannya."],
+  ["App-level pelanggan", "Lapisan aplikasi milik pelanggan: isi WordPress, plugin, DB aplikasi, dan kode pelanggan."],
+  ["Baseline", "Versi scope, jadwal, deliverable, dan sumber daya proyek yang sudah disepakati sebagai acuan."],
+  ["Blok ubah", "Kumpulan perintah yang mengubah keadaan sistem."],
+  ["Blok ukur", "Kumpulan perintah read-only yang hanya membaca keadaan sistem."],
+  ["BOQ", "Bill of Quantity, daftar barang atau layanan beserta jumlahnya yang disepakati untuk proyek."],
+  ["Change", "Setiap perubahan yang diatur SOP ini, baik pada proyek maupun pada sistem (bagian 2)."],
+  ["Change request (CR)", "Permintaan untuk melakukan satu change."],
+  ["Go-gate", "Syarat yang harus terpenuhi sebelum sebuah change teknis dieksekusi; daftarnya ada di bagian 4."],
+  ["H-n", "Penanda waktu terhadap hari eksekusi: H-2 adalah dua hari sebelum eksekusi, H-0 adalah hari eksekusi. Satuan hari kalender atau hari kerja belum ditetapkan."],
+  ["Jenis change", "Penggolongan change menjadi Standar, Normal, Major, Emergency, dan Proyek; kriteria tiap jenis ada di bagian 4."],
+  ["Kontrol positif", "Pemeriksaan yang membuktikan hasil change yang diharapkan benar-benar terjadi (USULAN)."],
+  ["NOC", "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket (SNX-HR-ORG-01)."],
+  ["Off-office-hour", "Waktu di luar jam kerja kantor."],
+  ["P1", "Severity tertinggi pada klasifikasi tiket Divisi Operation, ditetapkan di POL-OPS-001."],
+  ["PIC pelanggan", "Orang yang ditunjuk pelanggan sebagai penanggung jawab dan penghubung dengan SINUX."],
+  ["Post implementation review (PIR)", "Tinjauan ulang atas sebuah change sesudah eksekusinya selesai."],
+  ["Rollback", "Mengembalikan sistem ke keadaan sebelum change."],
+  ["SOC", "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan (SNX-HR-ORG-01)."],
+  ["Vantage eksternal", "Titik pemeriksaan di luar jaringan layanan yang diperiksa, bukan dari dalam jaringan atau 127.0.0.1."],
+  ["Zammad", "Sistem tiket Divisi Operation. Pemakaian Zammad untuk CR berstatus (USULAN)."]
+ ],
+ "policy": [
+  "Perencanaan change (ISO 9001:2015 6.3): Pengaju mengajukan setiap change lewat CR, dan Approver mengkaji serta menyetujuinya sebelum dieksekusi (butir 6.1 dan 6.2). Change Emergency dikecualikan sesuai bagian 9.",
+  "Go-gate (Annex A 8.32; ISO 9001:2015 8.5.6): Pelaksana tidak mengeksekusi change teknis sebelum lima syarat berikut terpenuhi. Syarat ini selaras dengan kebijakan P-04 di POL-OPS-001.",
+  "Syarat 1: approval tertulis dari Approver yang berwenang, ditambah ack pelanggan bila change menyentuh layanan pelanggan.",
+  "Syarat 2: backup atau snapshot sudah diambil dan lokasinya dicatat.",
+  "Syarat 3: rollback dapat dijalankan dengan satu perintah atau satu langkah yang sudah ditulis.",
+  "Syarat 4: eksekusi berjalan satu langkah satu waktu, dengan verifikasi di antara langkah.",
+  "Syarat 5: kondisi before dan after terdokumentasi di CR.",
+  "Jenis change berikut, termasuk kriteria dan waktu notifikasi pelanggannya, berstatus (USULAN) sampai disahkan. Approver tiap jenis ada di bagian 5.",
+  "Standar: change pra-disetujui, berulang, berisiko rendah, dengan prosedur baku, misalnya tambah rule firewall Accept untuk IP pelanggan atau reset password atas permintaan PIC pelanggan. Pelanggan menerima konfirmasi di tiket.",
+  "Normal: change berdampak terbatas yang butuh jadwal, misalnya resize VM, ubah konfigurasi web server, instal SSL, atau ubah rule WAF. Notifikasi pelanggan minimal H-2.",
+  "Major: change berdampak luas atau sulit dikembalikan, misalnya migrasi, upgrade versi platform, atau perubahan core network. Notifikasi pelanggan minimal H-5, dengan pengingat H-0.",
+  "Emergency: change yang dibutuhkan segera untuk memulihkan layanan atau menahan insiden, misalnya containment insiden aktif atau pemulihan layanan P1. Pelanggan diberi tahu saat itu juga.",
+  "Proyek: perubahan scope, jadwal, atau deliverable proyek, misalnya tambah VM di luar BOQ atau geser go-live. Pelanggan menerima pemberitahuan tertulis ke PIC pelanggan."
+ ],
+ "roles": [
+  [
+   "Pengaju",
+   "Mengajukan CR di Zammad, mencatatnya di SNX-OPS-FRM-04 dengan nomor CR unik, dan mengisi isi minimal CR (butir 6.1). Dipegang NOC Engineer atau SOC Analyst untuk change teknis dan Service Delivery Manager untuk change proyek, menurut PRO-OPS-001.",
+   "Mengajukan CR."
+  ],
+  [
+   "Pelaksana",
+   "Menjalankan change sesuai CR: persiapan, eksekusi, verifikasi, rollback bila perlu, dan pencatatan hasil (butir 6.3 sampai 6.5). Dipegang NOC Engineer atau SOC Analyst yang ditugaskan di CR, menurut PRO-OPS-001.",
+   "Menjalankan blok ukur; menjalankan blok ubah hanya sesudah approval tertulis."
+  ],
+  [
+   "Approver",
+   "Mengkaji dampak, risiko, kesiapan rollback, dan kecocokan jadwal CR; memastikan ack pelanggan sudah ada; memberi status Disetujui, Ditolak, atau Revisi di SNX-OPS-FRM-04 beserta tanggal (butir 6.2). Pemegang peran ini ditentukan menurut jenis change, di kolom Authority baris Lead NOC, Lead SOC, Service Delivery Manager, dan Direktur (COO).",
+   "Menyetujui, menolak, atau meminta revisi CR sesuai jenis change."
+  ],
+  [
+   "Lead NOC",
+   "Menjalankan peran Approver untuk change sub divisi NOC. Pada change Emergency NOC: mengambil backup bila memungkinkan, mengeksekusi, mencatat setiap langkah, memberi tahu pelanggan dan COO, dan melengkapi CR (butir 6.6).",
+   "Menyetujui change Standar; menyetujui change Normal bersama ack pelanggan; memulai eksekusi change Emergency NOC sebelum CR lengkap."
+  ],
+  [
+   "Lead SOC",
+   "Menjalankan peran Approver untuk change sub divisi SOC. Mengkaji juga change dari sub divisi mana pun yang menyentuh kontrol keamanan (akses, rule WAF atau firewall, encryption, logging). Pada change Emergency SOC, menjalankan tugas yang sama dengan Lead NOC (butir 6.2 dan 6.6).",
+   "Menyetujui change Standar; menyetujui change Normal bersama ack pelanggan; mengkaji change yang menyentuh kontrol keamanan; memulai eksekusi change Emergency SOC sebelum CR lengkap."
+  ],
+  [
+   "Head of Operation",
+   "Pemilik SOP ini. Meninjau CR Emergency sesudah dilengkapi (butir 6.6), meninjau PIR (USULAN), dan memantau indikator kinerja di bagian 8.",
+   "Meninjau CR Emergency dan hasil PIR."
+  ],
+  [
+   "Service Delivery Manager",
+   "Meneruskan change proyek yang mengubah harga ke VP Commercial dan tidak menjanjikan tanggal ke pelanggan sebelum VP Commercial menyetujui (butir 6.2).",
+   "Menyetujui change Proyek."
+  ],
+  [
+   "COO",
+   "Menerima pemberitahuan change Emergency dalam 30 menit sejak eksekusi (butir 6.6).",
+   "Menyetujui change Major bersama ack pelanggan."
+  ],
+  [
+   "VP Commercial",
+   "Memutuskan harga change proyek yang mengubah harga (butir 6.2).",
+   "Menyetujui harga change Proyek."
+  ],
+  [
+   "Pelanggan",
+   "Memberi ack atas change yang menyentuh layanannya, izin sebelum restart VM, dan konfirmasi tertulis dua kali sebelum delete VM (butir 6.2 dan 6.4).",
+   "Memberi izin restart VM dan konfirmasi delete VM miliknya."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Pengajuan",
+   "steps": [
+    ["Buat CR di Zammad.", "Pengaju", "CR di Zammad"],
+    ["Catat CR di SNX-OPS-FRM-04 dengan nomor CR unik.", "Pengaju", "Baris CR dengan nomor CR unik di SNX-OPS-FRM-04"],
+    ["Isi CR dengan tujuan, sistem atau mesin target, jenis change, langkah eksekusi, dampak ke layanan, risiko, rencana backup, perintah rollback, jadwal, dan nama Pelaksana.", "Pengaju", "CR terisi lengkap"],
+    ["Lampirkan dampak terhadap scope, jadwal, dan biaya pada CR change proyek.", "Pengaju", "Lampiran dampak scope, jadwal, dan biaya"]
+   ]
+  },
+  {
+   "title": "Kajian dan Approval",
+   "intro": [
+    "Service Delivery Manager tidak menjanjikan tanggal ke pelanggan sebelum VP Commercial menyetujui change proyek yang mengubah harga."
+   ],
+   "steps": [
+    ["Kaji dampak, risiko, kesiapan rollback, dan kecocokan jadwal; untuk change yang butuh downtime, jadwal yang cocok adalah off-office-hour.", "Approver", "Hasil kajian Approver"],
+    ["Kaji juga change yang menyentuh kontrol keamanan (akses, rule WAF atau firewall, encryption, logging).", "Lead SOC", "Hasil kajian keamanan Lead SOC"],
+    ["Pastikan ack pelanggan sudah ada bila change menyentuh layanan pelanggan.", "Approver", "Ack pelanggan di SNX-OPS-FRM-04"],
+    ["Beri status Disetujui, Ditolak, atau Revisi di SNX-OPS-FRM-04 beserta tanggal.", "Approver", "Status approval dan tanggal di SNX-OPS-FRM-04"],
+    ["Terima kembali CR berstatus Ditolak atau Revisi.", "Pengaju", "CR kembali ke Pengaju"],
+    ["Teruskan change proyek yang mengubah harga ke VP Commercial.", "Service Delivery Manager", "CR change proyek diteruskan ke VP Commercial"],
+    ["Putuskan harga change proyek.", "VP Commercial", "Keputusan harga VP Commercial"]
+   ]
+  },
+  {
+   "title": "Persiapan",
+   "steps": [
+    ["Beri notifikasi ke pelanggan sesuai jenis change (bagian 4).", "Pelaksana", "Notifikasi pelanggan"],
+    ["Jalankan blok ukur read-only terlebih dahulu.", "Pelaksana", "Hasil blok ukur"],
+    ["Baca hasil blok ukur bersama Approver.", "Pelaksana", "Hasil blok ukur yang sudah dibaca bersama Approver"],
+    ["Ambil backup atau snapshot.", "Pelaksana", "Backup atau snapshot"],
+    ["Catat lokasi backup atau snapshot di CR.", "Pelaksana", "Lokasi backup atau snapshot di CR"]
+   ]
+  },
+  {
+   "title": "Eksekusi",
+   "intro": [
+    "Pelaksana tidak menjalankan yum install atau remove perl-* di server cPanel."
+   ],
+   "steps": [
+    ["Awali setiap blok perintah dengan pemeriksaan hostname untuk memastikan mesin yang benar.", "Pelaksana", "Hostname terperiksa sebelum tiap blok"],
+    ["Jalankan blok ubah terpisah dari blok ukur, satu langkah satu waktu.", "Pelaksana", "Blok ubah dijalankan per langkah"],
+    ["Minta izin pelanggan sebelum restart VM pelanggan.", "Pelaksana", "Izin pelanggan atas restart VM"],
+    ["Minta konfirmasi tertulis pelanggan dua kali sebelum delete VM, karena delete VM bersifat unrecoverable.", "Pelaksana", "Dua konfirmasi tertulis pelanggan atas delete VM"]
+   ]
+  },
+  {
+   "title": "Verifikasi, Rollback, dan Penutupan",
+   "steps": [
+    ["Verifikasi hasil change dengan kontrol positif.", "Pelaksana", "Hasil verifikasi dengan kontrol positif"],
+    ["Verifikasi hasil change dari sisi pelanggan (browser nyata, vantage eksternal).", "Pelaksana", "Hasil verifikasi dari sisi pelanggan"],
+    ["Jalankan rollback bila verifikasi gagal; jangan improvisasi.", "Pelaksana", "Sistem kembali ke keadaan sebelum change"],
+    ["Catat rollback di CR.", "Pelaksana", "Catatan rollback di CR"],
+    ["Catat before dan after, status akhir (Berhasil, Rollback, Gagal), dan waktu selesai di SNX-OPS-FRM-04.", "Pelaksana", "Before, after, status akhir, dan waktu selesai di SNX-OPS-FRM-04"],
+    ["Perbarui SNX-ISMS-REG-01 bila konfigurasi atau aset berubah.", "Pelaksana", "Baris aset yang diperbarui di SNX-ISMS-REG-01"],
+    ["Tinjau ulang (PIR) change Major dan change yang berakhir rollback dalam 5 hari kerja.", "Head of Operation (USULAN)", "Hasil PIR"]
+   ]
+  },
+  {
+   "title": "Change Emergency",
+   "steps": [
+    ["Ambil backup bila memungkinkan.", "Lead NOC / Lead SOC", "Backup, bila diambil"],
+    ["Eksekusi change Emergency tanpa menunggu CR lengkap.", "Lead NOC / Lead SOC", "Change Emergency tereksekusi"],
+    ["Catat setiap langkah eksekusi.", "Lead NOC / Lead SOC", "Catatan langkah eksekusi"],
+    ["Beri tahu pelanggan saat itu juga.", "Lead NOC / Lead SOC", "Pemberitahuan ke pelanggan"],
+    ["Beri tahu COO dalam 30 menit sejak eksekusi.", "Lead NOC / Lead SOC", "Pemberitahuan ke COO"],
+    ["Lengkapi CR paling lambat 1 hari kerja sesudah eksekusi.", "Lead NOC / Lead SOC", "CR Emergency lengkap"],
+    ["Tinjau CR Emergency yang sudah lengkap.", "Head of Operation", "Hasil tinjauan CR Emergency"]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Pengaju mengajukan CR di Zammad\ndan mencatatnya di SNX-OPS-FRM-04",
+   "b": "Jenis change?",
+   "c": "Approver mengkaji dampak, risiko,\nkesiapan rollback, dan jadwal;\nLead SOC ikut mengkaji change\nyang menyentuh kontrol keamanan",
+   "pr": "Change proyek yang mengubah harga:\nService Delivery Manager meneruskan\nke VP Commercial untuk keputusan harga",
+   "d": "Ack pelanggan ada\ndan CR disetujui?",
+   "r1": "Ditolak atau Revisi:\nCR kembali ke Pengaju",
+   "e": "Pelaksana memberi notifikasi\npelanggan sesuai jenis change",
+   "f": "Pelaksana menjalankan blok ukur,\nmembacanya bersama Approver,\nlalu mengambil dan mencatat backup",
+   "g": "Pelaksana mengeksekusi blok ubah\nsatu langkah satu waktu",
+   "h": "Verifikasi lolos?",
+   "r2": "Pelaksana menjalankan rollback\ndan mencatatnya di CR",
+   "i": "Pelaksana mencatat before, after,\nstatus akhir, dan waktu selesai\ndi SNX-OPS-FRM-04",
+   "pir": "Head of Operation meninjau (PIR)\nchange Major dan change rollback\ndalam 5 hari kerja",
+   "em1": "Lead NOC atau Lead SOC\nmengeksekusi change Emergency\n(backup bila memungkinkan,\ncatat setiap langkah)",
+   "em2": "COO diberi tahu dalam 30 menit;\nCR dilengkapi dalam 1 hari kerja;\nHead of Operation meninjau CR"
+  },
+  "shapes": {
+   "b": "diamond",
+   "d": "diamond",
+   "h": "diamond",
+   "i": "ellipse",
+   "em2": "ellipse"
+  },
+  "edges": [
+   ["a", "b"],
+   ["b", "c", "Standar, Normal,\nMajor, Proyek"],
+   ["b", "em1", "Emergency"],
+   ["c", "pr", "Proyek,\nharga berubah"],
+   ["pr", "d"],
+   ["c", "d"],
+   ["d", "r1", "Tidak"],
+   ["r1", "a"],
+   ["d", "e", "Ya"],
+   ["e", "f"],
+   ["f", "g"],
+   ["g", "h"],
+   ["h", "r2", "Tidak"],
+   ["h", "i", "Ya"],
+   ["r2", "i"],
+   ["i", "pir", "Major atau rollback"],
+   ["em1", "em2"]
+  ],
+  "caption": "Gambar 1. Alur change management: change Standar, Normal, Major, dan Proyek di jalur utama, change Emergency di jalur terpisah."
+ },
+ "sla": [
+  ["Notifikasi pelanggan, change Normal", "Pelaksana", "Minimal H-2 (USULAN)"],
+  ["Notifikasi pelanggan, change Major", "Pelaksana", "Minimal H-5, dengan pengingat H-0 (USULAN)"],
+  ["Notifikasi pelanggan, change Emergency", "Lead NOC / Lead SOC", "Saat itu juga"],
+  ["Pemberitahuan change Emergency ke COO", "Lead NOC / Lead SOC", "Dalam 30 menit sejak eksekusi (USULAN)"],
+  ["Melengkapi CR change Emergency", "Lead NOC / Lead SOC", "Paling lambat 1 hari kerja sesudah eksekusi"],
+  ["PIR change Major dan change yang berakhir rollback", "Head of Operation", "Dalam 5 hari kerja"],
+  ["Indikator: change dieksekusi dengan CR disetujui sebelum eksekusi (kecuali Emergency)", "Head of Operation", "Target 100% (USULAN)"],
+  ["Indikator: change tanpa rollback darurat", "Head of Operation", "Target 95% (USULAN)"],
+  ["Indikator: CR Emergency dilengkapi dalam 1 hari kerja", "Head of Operation", "Target 100% (USULAN)"],
+  ["Indikator: insiden yang disebabkan change", "Head of Operation", "Dilaporkan bulanan, tren menurun (USULAN)"]
+ ],
+ "exceptions": [
+  ["Change Emergency", "Lead NOC atau Lead SOC yang bertugas mengeksekusi sebelum CR lengkap, mengambil backup bila memungkinkan, dan mencatat setiap langkah (butir 6.6)."],
+  ["Approver memberi status Ditolak atau Revisi", "Pengaju menerima CR kembali (butir 6.2). Pelaksana tidak mengeksekusi change itu sebelum Approver memberi status Disetujui (bagian 4, syarat 1)."],
+  ["Verifikasi gagal", "Pelaksana menjalankan rollback dan mencatatnya di CR (butir 6.5)."],
+  ["Change proyek mengubah harga", "Service Delivery Manager meneruskan CR ke VP Commercial dan tidak menjanjikan tanggal ke pelanggan sebelum VP Commercial menyetujui (butir 6.2)."],
+  ["Izin restart VM atau konfirmasi tertulis dua kali untuk delete VM belum ada", "Pelaksana tidak menjalankan restart atau delete VM itu (butir 6.4)."],
+  ["Perubahan app-level pelanggan", "Developer atau PIC pelanggan bertanggung jawab atasnya; SOP ini tidak berlaku (bagian 2)."]
+ ],
+ "conclusion": [
+  "Head of Operation, pemilik SOP ini, memantau kepatuhan lewat indikator di bagian 8 dan CR di SNX-OPS-FRM-04.",
+  "Head of Operation meninjau SOP ini setiap tahun."
+ ],
+ "related_documents": [
+  ["SNX-OPS-FRM-04", "Change Request & Approval Log; rekap audit semua CR beserta approval dan hasilnya."],
+  ["SNX-ISMS-REG-01", "Information Asset Register; diperbarui bila konfigurasi atau aset berubah."],
+  ["SNX-OPS-FRM-03", "Project Progress & Monitoring Report; laporan progres untuk change proyek."],
+  ["POL-OPS-001", "Kebijakan Divisi Operation SINUX (DRAFT v0.1); kebijakan induk, P-04 memuat syarat go-gate, definisi P1."],
+  ["PRO-OPS-001", "Prosedur Operasional Divisi Operation SINUX (DRAFT v0.1); dasar pemetaan Pengaju dan Pelaksana ke jabatan."],
+  ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; nama jabatan Divisi Operation serta arti NOC dan SOC."]
+ ],
+ "records": [
+  ["Change Request & Approval Log (SNX-OPS-FRM-04)", "Berkas SNX-OPS-FRM-04; pemilik Head of Operation", "3 tahun"],
+  ["Information Asset Register (SNX-ISMS-REG-01), pembaruan konfigurasi", "Berkas SNX-ISMS-REG-01; pemilik Head of Operation", "Berlaku sampai digantikan"],
+  ["Laporan progres proyek (SNX-OPS-FRM-03), change proyek", "Folder proyek; pemilik sesuai SNX-OPS-FRM-03", "Durasi kontrak + 3 tahun"]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "6.3 (Perencanaan perubahan), 8.5.6 (Pengendalian perubahan)",
+  "ISO/IEC 27001:2022": "Annex A 8.32 (Change management)"
+ }
+}

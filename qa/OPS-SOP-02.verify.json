@@ -1,0 +1,51 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 4, butir Proyek dan Emergency",
+   "masalah": "Kalimat janggal dan pasif padahal pelaku diketahui (bahasa §6a.1, nonblocking)",
+   "bukti": "'Pelanggan menerima pemberitahuan tertulis ke PIC pelanggan.' dan 'Pelanggan diberi tahu saat itu juga.' (pelaku Emergency = Lead NOC / Lead SOC di 6.6 langkah 4)"
+  },
+  {
+   "lokasi": "Butir 6.5 langkah 7, 6.6 langkah 5, bagian 5 baris COO, bagian 8",
+   "masalah": "Label (USULAN) tidak konsisten untuk fakta yang sama",
+   "bukti": "PIC PIR 'Head of Operation (USULAN)' di 6.5, tetapi 'Head of Operation' tanpa label di baris SLA PIR bagian 8; '30 menit sejak eksekusi' berlabel (USULAN) hanya di bagian 8, tanpa label di 6.6 langkah 5 dan bagian 5 baris COO"
+  },
+  {
+   "lokasi": "Bagian 4, 6.6, 8",
+   "masalah": "Sinonim berganti untuk satu hal: notifikasi / pemberitahuan / beri tahu pelanggan",
+   "bukti": "'Notifikasi pelanggan minimal H-2' (4), 'Pemberitahuan ke pelanggan' (6.6 output), 'Notifikasi pelanggan, change Emergency' (8)"
+  },
+  {
+   "lokasi": "Bagian 5, 6.2, 9",
+   "masalah": "Pengulangan isi antarbagian (§6a.6)",
+   "bukti": "Aturan SDM tidak menjanjikan tanggal sebelum VP Commercial menyetujui muncul di paragraf 6.2, baris SDM bagian 5, dan baris bagian 9; baris 'Change Emergency' bagian 9 mengulang 6.6"
+  },
+  {
+   "lokasi": "Bagian 7, diagram",
+   "masalah": "Belah ketupat 'Ack pelanggan ada dan CR disetujui?' berlaku untuk semua jenis, termasuk Standar (sumber: 'Konfirmasi di tiket') dan Proyek; jalur Proyek melewati blok ukur, backup, dan blok ubah yang bersifat teknis; jalur Emergency tidak menggambar notifikasi pelanggan saat itu juga",
+   "bukti": "node d, f, g di spec flow; edge b->c 'Standar, Normal, Major, Proyek'; go-gate syarat 1: ack 'bila change menyentuh layanan pelanggan'"
+  },
+  {
+   "lokasi": "Bagian 11, tabel Rekaman kolom lokasi",
+   "masalah": "Kolom lokasi berisi nama berkas, bukan tempat simpan; sumber diam (sudah open item 11 di notes)",
+   "bukti": "'Berkas SNX-OPS-FRM-04; pemilik Head of Operation' dan 'Berkas SNX-ISMS-REG-01; pemilik Head of Operation'"
+  },
+  {
+   "lokasi": "Bagian 3, definisi H-n",
+   "masalah": "Definisi menyisakan ketidakpastian satuan hari di dokumen operasional (sudah open item 4 di notes)",
+   "bukti": "'Satuan hari kalender atau hari kerja belum ditetapkan.'"
+  },
+  {
+   "lokasi": "Butir 6.3 langkah 1 untuk change Proyek",
+   "masalah": "Notifikasi tertulis change Proyek ke PIC pelanggan jatuh ke Pelaksana (NOC Engineer atau SOC Analyst), padahal POL-OPS-001 9.4 menaruh hubungan operasional pelanggan pada Service Delivery Manager; tafsir sudah dicatat open item 6",
+   "bukti": "6.3 langkah 1 PIC 'Pelaksana'; bagian 5 Pelaksana 'Dipegang NOC Engineer atau SOC Analyst'"
+  },
+  {
+   "lokasi": "Bagian 3, definisi Blok ukur",
+   "masalah": "Redundan",
+   "bukti": "'Kumpulan perintah read-only yang hanya membaca keadaan sistem.'"
+  }
+ ]
+}
