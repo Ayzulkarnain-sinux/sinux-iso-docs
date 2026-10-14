@@ -1,0 +1,73 @@
+{
+  "verdict": "PASS",
+  "doc": "out/08_ISMS/SNX-ISMS-SOP-03 Backup & Recovery (Rev00 DRAFT).docx",
+  "sources_checked": [
+    "1z6y_n2i6cTN6C1y7alJsCasuy9hU6Qzc (SNX-ISMS-SOP-03 sumber, read_file_content)",
+    "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv (POL-OPS-001, read_file_content)",
+    "1U8CAdibwBk9x_-Aic2lbev144d6WReTz (PRO-OPS-001, read_file_content)",
+    "context/audit/iso-sinux-supdocs-isms-2026-10-14.md (SOP-03, FRM-01, PLN-01, REG-01 bagian 5)",
+    "config/defaults.json data_conflicts, config/checklist.json baris 86"
+  ],
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 5 NOC Engineer; Bagian 6.5 langkah 2",
+      "masalah": "Pelaku penyerahan atau penghapusan backup saat offboarding ditulis NOC Engineer tanpa label USULAN. Sumber SOP-03 pasif, dan PRO-OPS-001 SDPM-06 menulis Pelaksana Service Delivery Manager untuk langkah itu.",
+      "bukti": "Dokumen: 'Serahkan atau hapus backup pelanggan sesuai kontrak. | NOC Engineer'. PRO-OPS-001 SDPM-06: 'Pelaksana: Service Delivery Manager ... Ekspor data atau backup terakhir sesuai kontrak, serahkan ke pelanggan dengan berita acara.' Sudah dijelaskan di notes (asumsi 6, open item 11). Saran: beri label (USULAN) atau samakan dengan SDPM-06."
+    },
+    {
+      "lokasi": "Bagian 5 Lead NOC; Bagian 6.4 langkah 9; Bagian 6.5 langkah 4",
+      "masalah": "Pelaku yang tidak disebut sumber ditulis tanpa label: Lead NOC memasukkan ringkasan ke SNX-OPS-RPT-01, NOC Engineer memusnahkan media fisik.",
+      "bukti": "Sumber 7.4 butir 4 dan 7.5 butir 3 pasif. Tercatat di notes (asumsi 4 dan 7, open item 10 dan 11). Bukan fakta karangan, tetapi pemetaan peran yang perlu diputuskan Fani."
+    },
+    {
+      "lokasi": "Bagian 4 butir snapshot, butir kapasitas, butir encryption",
+      "masalah": "Kalimat pasif padahal pelakunya diketahui (§6a.1).",
+      "bukti": "'Snapshot sebelum change ... diambil untuk setiap change yang berisiko dan disimpan sampai change dinyatakan stabil'; 'Kapasitas repository backup dipantau sebagai bagian dari infrastruktur layanan' (pelaku NOC Engineer di 6.2 langkah 5); 'Salinan offline (break-glass) encryption key disimpan di luar password manager (USULAN)' (pelaku Lead NOC di bagian 5). Dua yang pertama berasal dari kalimat tim (T1)."
+    },
+    {
+      "lokasi": "Bagian 3, 4, 5",
+      "masalah": "Sinonim berganti untuk satu hal: 'copy' dan 'salinan' dipakai bergantian; 'restore' dan 'dipulihkan atau pemulihan' juga.",
+      "bukti": "'Offsite copy | Salinan di lokasi ...', 'Immutable copy | Copy yang ...', 'Salinan offline (break-glass) encryption key'; 'Data itu hanya dipulihkan atas permintaan' di samping istilah baku 'Restore'."
+    },
+    {
+      "lokasi": "Bagian 4 dan 5",
+      "masalah": "Isi yang sama diulang antarbagian (§6a.6).",
+      "bukti": "'Lead NOC menetapkan dan meninjau kebijakan backup ini', 'Lead SOC memastikan backup terlindungi dari ransomware dan akses tidak sah', dan 'Pemilik sistem menetapkan RPO dan RTO' muncul di bagian 4 lalu diulang di bagian 5 (dan 6.1 langkah 2)."
+    },
+    {
+      "lokasi": "Bagian 9 baris 1",
+      "masalah": "Penanganan tidak nyambung dengan kondisinya: permintaan restore dijawab dengan pengambilan snapshot sebelum perubahan; snapshot itu milik pelaksana change menurut SNX-OPS-SOP-02, bukan tanggapan atas permintaan restore.",
+      "bukti": "'Pelanggan tanpa layanan backup meminta restore | NOC Engineer tidak menjanjikan pemulihan data dan tetap mengambil snapshot sebelum perubahan (bagian 2).' Saran: cukup kalimat pertama, atau arahkan ke tiket dan SNX-OPS-SOP-02."
+    },
+    {
+      "lokasi": "Bagian 6.1 langkah 3",
+      "masalah": "Kolom 'tujuan' diminta di sheet Daftar Job, tetapi FRM-01 tidak punya kolom itu (kolom yang ada: Job ID, Pelanggan atau internal, Sumber, Jenis, Jadwal, Retensi, Offsite, Encryption, RPO, RTO, Pemilik, Catatan).",
+      "bukti": "context/audit FRM-01 sheet Daftar Job. Sudah tercatat di notes open item 8; ketidaksesuaian lintas dokumen, bukan fakta salah di SOP (sumber 7.1 butir 1 memang menyebut 'tujuan')."
+    },
+    {
+      "lokasi": "Bagian 11 tabel rekaman",
+      "masalah": "Rekaman yang dihasilkan langkah prosedur tidak punya lokasi dan retensi: persetujuan tertulis PIC pelanggan (6.3 langkah 4, bukti ISO 9001 8.5.3), penggunaan kapasitas repository (6.2 langkah 5, bukti 7.1.3), change request di SNX-OPS-FRM-04 (6.1 langkah 6).",
+      "bukti": "Tabel Rekaman hanya memuat FRM-01, FRM-08, FRM-07, dua berita acara."
+    },
+    {
+      "lokasi": "Bagian 4 butir 3-2-1; Bagian 11",
+      "masalah": "Annex A 8.14 (Redundancy of information processing facilities) hanya ditopang lewat aturan 3-2-1 untuk data, bukan redundansi fasilitas. Sama dengan sumber; acuan klausul tetap ada sehingga kriteria terpenuhi.",
+      "bukti": "'Data kritis mengikuti aturan 3-2-1 (Annex A 8.13, 8.14).' Notes open item 15."
+    },
+    {
+      "lokasi": "Bagian 8 baris KPI; Bagian 10",
+      "masalah": "PIC empat indikator ditulis NOC Engineer, sedangkan Conclusion menyebut Lead NOC yang memantau keempat indikator itu. Sumber Bagian 9 tidak menyebut penanggung jawab.",
+      "bukti": "'Job backup sukses | NOC Engineer | Target 98%' dan 'Lead NOC memantau kepatuhan terhadap SOP ini lewat empat indikator di bagian 8'."
+    }
+  ],
+  "checks": {
+    "a_fakta": "Cocok sumber: parameter 6.1 (harian/30 hari, harian/30 hari/RPO 24 jam/RTO 4-24 jam, 1 minggu/4 jam/90 hari, snapshot 14 hari), 2 kali berturut-turut P2, 80%, mingguan, bulanan dan triwulanan, KPI 98/100/95/100, retensi 3 tahun, Acronis Cyber Protect, Nusagrid. Tambahan berlabel USULAN (Jumphost, monitoring, Drive, break-glass, shift yang sama, tiket kapasitas, pemulihan insiden, berita acara). Nusametric/Overseer dari POL-OPS-001 dan PLN-01; 5 tahun berita acara pemusnahan dari SOP-04 (audit baris 1292); kolom FRM-01 (Dalam RTO, Integritas terverifikasi, Disetujui oleh, Pemulihan insiden) cocok audit.",
+    "b_karangan": "Tidak ditemukan angka, nama, atau sistem karangan tanpa label.",
+    "c_kriteria": "Nomor SNX-ISMS-SOP-03 dan judul SOP Backup & Recovery sesuai Description; acuan ISO 9001:2015 7.1.3, 8.5.3 dan ISO/IEC 27001:2022 8.13, 8.14 ada di bagian 11 dan tercermin di bagian 4.",
+    "d_runbook": "Status Draft, Effective Date dan tanda tangan kosong, tiga penanda tangan berbeda sesuai defaults, klasifikasi RESTRICTED (Internal) sesuai sumber, nol rujukan internal AI (SKILL_backup-snapshot-ops dibuang), nol baris CONTOH, vault 'menunggu konfirmasi Ops', break-glass USULAN, Zammad untuk Ops dan GLPI generalist.",
+    "e_peran": "Semua PIC bagian 6 dan 8 (Service Delivery Manager, Pemilik sistem, NOC Engineer, Lead NOC, PIC pelanggan) ada di tabel bagian 5; Lead SOC tanpa langkah (open item 9).",
+    "f_bahasa": "Nol em-dash, en-dash, tanda kutip penekanan, frasa lint; Purpose 1 kalimat, Conclusion 2 kalimat; langkah di bawah 25 kata. Temuan gaya hanya nonblocking.",
+    "g_data_conflicts_audit": "Samuel Kristanto Utomo / President Director, Erik Dwi Yanto / Technical/Operation Engineer L1, Fani Fatullah / VP Tech Operation and Services sesuai defaults; badan tidak menyebut COO atau Samuel. Delapan cacat audit SOP-03 ditangani atau dijelaskan di notes bagian 5."
+  }
+}

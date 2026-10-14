@@ -1,0 +1,629 @@
+{
+  "meta": {
+    "doc_key": "ISMS-SOP-03",
+    "number": "SNX-ISMS-SOP-03",
+    "department": "Operation",
+    "title": "Backup & Recovery",
+    "process_owner": "Lead NOC",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "purpose": [
+    "SOP ini memastikan informasi, software, dan konfigurasi sistem dicadangkan sesuai kebutuhan bisnis dan kontrak, dilindungi dari kerusakan dan akses tidak sah, serta terbukti dapat dipulihkan melalui uji restore berkala."
+  ],
+  "scope": [
+    "SOP ini berlaku untuk layanan backup pelanggan (Acronis Cyber Protect, backup VM Nusagrid, backup server dikelola) sesuai kontrak.",
+    "SOP ini juga berlaku untuk sistem internal SINUX yang mendukung operasi: ticketing system (Zammad dan Service Hub), knowledge base dan database pendukungnya, password manager, monitoring (Nusametric dan Overseer), konfigurasi network device dan WAF, Jumphost (USULAN), dan dokumen di Drive.",
+    "Dikecualikan: pelanggan tanpa layanan backup tidak dijanjikan restore data. Snapshot sebelum perubahan tetap diambil sebagai bagian dari SNX-OPS-SOP-02."
+  ],
+  "definitions": [
+    [
+      "RPO",
+      "Recovery Point Objective: batas maksimal data yang boleh hilang, diukur dalam waktu."
+    ],
+    [
+      "RTO",
+      "Recovery Time Objective: batas maksimal waktu memulihkan layanan."
+    ],
+    [
+      "Job",
+      "Tugas backup terjadwal pada platform backup untuk satu sumber data atau sistem."
+    ],
+    [
+      "Platform backup",
+      "Aplikasi atau layanan yang menjalankan job, misalnya Acronis Cyber Protect."
+    ],
+    [
+      "Console dan repository backup",
+      "Console adalah antarmuka administrasi platform backup. Repository adalah tempat penyimpanan copy backup."
+    ],
+    [
+      "Full backup, incremental backup",
+      "Copy seluruh data, atau hanya perubahan sejak backup terakhir."
+    ],
+    [
+      "Offsite copy",
+      "Copy di lokasi atau platform terpisah dari sumber."
+    ],
+    [
+      "Immutable copy",
+      "Copy yang tidak dapat diubah atau dihapus selama masa retensi."
+    ],
+    [
+      "Aturan 3-2-1",
+      "Tiga copy data, pada dua media atau platform berbeda, dengan satu copy di luar lokasi sumber."
+    ],
+    [
+      "Data kritis",
+      "Data pada sistem internal kritis dan data pelanggan yang dicakup layanan backup (USULAN)."
+    ],
+    [
+      "Restore",
+      "Memulihkan data dari copy backup ke lokasi tujuan."
+    ],
+    [
+      "Uji restore",
+      "Restore sampel data ke lokasi uji untuk memeriksa bahwa backup dapat dipulihkan."
+    ],
+    [
+      "Lokasi produksi",
+      "Lokasi tempat data dan sistem yang dipakai pelanggan atau SINUX berjalan."
+    ],
+    [
+      "Lokasi uji",
+      "Lokasi di luar produksi tempat data hasil restore diperiksa."
+    ],
+    [
+      "Shift malam",
+      "Shift 3 pada sheet Backup Log SNX-ISMS-FRM-01. Jam shift tercantum di POL-OPS-001."
+    ],
+    [
+      "Tiket P2",
+      "Tiket dengan severity P2 (Tinggi) menurut SNX-OPS-SOP-04."
+    ],
+    [
+      "Change Normal",
+      "Jenis change yang kriteria dan approval-nya ditetapkan di SNX-OPS-SOP-02."
+    ],
+    [
+      "PIC pelanggan",
+      "Perwakilan pelanggan yang terdaftar dan berwenang atas data backup pelanggan itu."
+    ],
+    [
+      "Pemilik sistem",
+      "Pemegang tanggung jawab atas sistem internal, sesuai kolom Pemilik SNX-ISMS-REG-01."
+    ],
+    [
+      "Password manager",
+      "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+    ],
+    [
+      "Ticketing system",
+      "Zammad, sistem tiket Divisi Operation, dan Service Hub (GLPI), sistem tiket untuk generalist."
+    ],
+    [
+      "NOC",
+      "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket (SNX-HR-ORG-01)."
+    ],
+    [
+      "SOC",
+      "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan (SNX-HR-ORG-01)."
+    ]
+  ],
+  "policy": [
+    "Backup dianggap ada hanya bila restore-nya terbukti lewat uji restore (Annex A 8.13). Frekuensi uji ada di bagian 8.",
+    "Layanan backup pelanggan (Annex A 8.13): frekuensi dan retensi sesuai kontrak, dengan standar harian dan 30 hari; offsite copy sesuai paket; RPO dan RTO sesuai kontrak.",
+    "Sistem internal kritis, yaitu ticketing system, password manager, knowledge base dan database-nya (Annex A 8.13): backup minimal harian, retensi minimal 30 hari, offsite copy wajib, RPO 24 jam, RTO sesuai SNX-ISMS-PLN-01 dengan rentang 4 sampai 24 jam (USULAN). Monitoring termasuk kelompok ini (USULAN).",
+    "Konfigurasi network device, WAF, dan server kritis (Annex A 8.13): backup setiap perubahan dan mingguan, retensi minimal 90 hari, offsite copy wajib, RPO 1 minggu, RTO 4 jam (USULAN). Jumphost termasuk server kritis (USULAN).",
+    "Snapshot sebelum change (Annex A 8.13): NOC Engineer mengambil snapshot untuk setiap change yang berisiko dan menyimpannya sampai change dinyatakan stabil, maksimal 14 hari. Offsite copy tidak wajib, RPO saat change, RTO sesuai rollback.",
+    "Parameter backup dokumen di Drive ditetapkan Lead NOC sebelum SOP ini berlaku (USULAN).",
+    "Peran yang menetapkan parameter backup dan peran yang mencatatnya ada di bagian 5 dan butir 6.1.",
+    "Data kritis mengikuti aturan 3-2-1 (Annex A 8.13, 8.14). Immutable copy dipakai bila platform mendukung.",
+    "Backup di-encrypt saat in transit dan at rest. Encryption key disimpan di password manager, terpisah dari backup. Lead NOC menyimpan copy offline (break-glass) encryption key di luar password manager (USULAN).",
+    "Akses ke console dan repository backup dibatasi pada peran operator dengan MFA, sesuai SNX-ISMS-SOP-02.",
+    "Backup mengikuti klasifikasi data sumbernya (SNX-ISMS-PRO-01).",
+    "Data backup pelanggan adalah properti pelanggan (ISO 9001:2015 8.5.3). Restore data itu hanya atas permintaan atau persetujuan PIC pelanggan yang berwenang. Restore ke lokasi produksi butuh approval Lead NOC serta persetujuan tertulis PIC pelanggan.",
+    "Platform backup menghapus otomatis backup yang melewati masa retensi.",
+    "NOC Engineer memantau kapasitas repository backup sebagai bagian dari infrastruktur layanan (ISO 9001:2015 7.1.3). Langkahnya ada di butir 6.2.",
+    "Perubahan job yang menurunkan frekuensi atau retensi diperlakukan sebagai change Normal."
+  ],
+  "roles": [
+    [
+      "Lead NOC",
+      "Pemilik SOP. Menetapkan dan meninjau kebijakan backup. Menyetujui restore ke lokasi produksi. Menyimpan copy offline encryption key (USULAN). Menganalisis akar penyebab uji restore yang gagal. Memeriksa pelaksanaan uji restore pelanggan tiap bulan. Memasukkan ringkasan uji restore ke SNX-OPS-RPT-01 (USULAN). Memantau empat indikator kinerja di bagian 8.",
+      "Menetapkan kebijakan backup. Menyetujui atau menolak restore ke lokasi produksi."
+    ],
+    [
+      "NOC Engineer",
+      "Memantau job, menangani kegagalan, melaksanakan restore dan uji restore, mengisi log. Mendaftarkan job dan sistem sumbernya. Mencatat permintaan restore sebagai tiket. Mengekspor atau menghapus backup pelanggan di platform backup saat offboarding (USULAN). Memusnahkan media backup fisik yang tidak terpakai (USULAN).",
+      "Menjalankan ulang job yang gagal. Melaksanakan restore sesuai approval dan persetujuan di bagian 4."
+    ],
+    [
+      "Service Delivery Manager",
+      "Mencatat parameter backup pelanggan dari kontrak. Melaporkan hasil uji restore di laporan bulanan pelanggan. Mencatat isi kontrak soal penyerahan atau penghapusan backup, menyerahkan backup ke pelanggan, dan membuat berita acara saat offboarding.",
+      "Mencatat parameter backup pelanggan dari kontrak dan melaporkan hasil uji restore ke pelanggan."
+    ],
+    [
+      "Pemilik sistem",
+      "Menetapkan RPO dan RTO sistem internalnya.",
+      "Menetapkan RPO dan RTO sistem internal yang dimilikinya."
+    ],
+    [
+      "Lead SOC",
+      "Memastikan backup terlindungi dari ransomware dan akses tidak sah.",
+      "Menilai perlindungan backup terhadap ransomware dan akses tidak sah."
+    ],
+    [
+      "PIC pelanggan",
+      "Meminta restore data pelanggan, menyetujui restore ke lokasi produksi secara tertulis, dan memverifikasi hasil restore bersama NOC Engineer.",
+      "Menyetujui atau menolak restore data pelanggan ke lokasi produksi."
+    ]
+  ],
+  "procedures": [
+    {
+      "title": "Konfigurasi Job",
+      "steps": [
+        [
+          "Catat parameter backup pelanggan dari kontrak: frekuensi, retensi, offsite copy, RPO, dan RTO.",
+          "Service Delivery Manager",
+          "Parameter backup pelanggan dari kontrak"
+        ],
+        [
+          "Tetapkan RPO dan RTO tiap sistem internal bersama SNX-ISMS-PLN-01.",
+          "Pemilik sistem",
+          "RPO dan RTO sistem internal"
+        ],
+        [
+          "Daftarkan job baru di sheet Daftar Job SNX-ISMS-FRM-01: sumber, jenis, jadwal, retensi, tujuan, encryption, RPO, RTO, dan pemilik.",
+          "NOC Engineer",
+          "Baris job di sheet Daftar Job"
+        ],
+        [
+          "Daftarkan sistem sumber job di SNX-ISMS-REG-01.",
+          "NOC Engineer",
+          "Baris sistem di SNX-ISMS-REG-01"
+        ],
+        [
+          "Simpan copy offline (break-glass) encryption key di luar password manager (USULAN).",
+          "Lead NOC",
+          "Copy offline encryption key"
+        ],
+        [
+          "Ajukan change request di Zammad, jenis Normal, untuk perubahan job yang menurunkan frekuensi atau retensi.",
+          "NOC Engineer",
+          "Change request di Zammad dan baris di SNX-OPS-FRM-04"
+        ]
+      ]
+    },
+    {
+      "title": "Pemantauan",
+      "steps": [
+        [
+          "Periksa status semua job backup pada shift malam.",
+          "NOC Engineer",
+          "Status job backup"
+        ],
+        [
+          "Catat hasil pemeriksaan di SNX-ISMS-FRM-01 (sheet Backup Log).",
+          "NOC Engineer",
+          "Baris di sheet Backup Log"
+        ],
+        [
+          "Jalankan ulang job yang gagal pada shift yang sama (USULAN).",
+          "NOC Engineer",
+          "Job dijalankan ulang; tindakan di kolom Tindakan bila gagal, sheet Backup Log"
+        ],
+        [
+          "Buat tiket P2 di Zammad bila job gagal 2 kali berturut-turut, sesuai SNX-OPS-SOP-04.",
+          "NOC Engineer",
+          "Tiket P2; Ref tiket di sheet Backup Log; baris di SNX-OPS-FRM-08"
+        ],
+        [
+          "Pantau kapasitas repository backup.",
+          "NOC Engineer",
+          "Penggunaan kapasitas repository; dicatat di tiket bila di atas 80%"
+        ],
+        [
+          "Tindak lanjuti penggunaan repository di atas 80%.",
+          "NOC Engineer",
+          "Tiket tindak lanjut kapasitas di Zammad (USULAN)"
+        ]
+      ]
+    },
+    {
+      "title": "Restore atas Permintaan",
+      "steps": [
+        [
+          "Catat permintaan restore dari PIC pelanggan yang terdaftar sebagai tiket di Zammad.",
+          "NOC Engineer",
+          "Tiket permintaan restore"
+        ],
+        [
+          "Restore data ke lokasi uji lebih dulu bila memungkinkan, agar data terbaru tidak tertimpa.",
+          "NOC Engineer",
+          "Data di lokasi uji"
+        ],
+        [
+          "Setujui restore ke lokasi produksi.",
+          "Lead NOC",
+          "Approval Lead NOC; kolom Disetujui oleh di sheet Restore Record"
+        ],
+        [
+          "Setujui restore ke lokasi produksi secara tertulis.",
+          "PIC pelanggan",
+          "Persetujuan tertulis PIC pelanggan"
+        ],
+        [
+          "Restore data ke lokasi produksi sesudah langkah 3 dan 4.",
+          "NOC Engineer",
+          "Data di-restore ke lokasi produksi"
+        ],
+        [
+          "Verifikasi hasil restore bersama PIC pelanggan.",
+          "NOC Engineer",
+          "Hasil verifikasi restore"
+        ],
+        [
+          "Catat restore di SNX-ISMS-FRM-01 (sheet Restore Record).",
+          "NOC Engineer",
+          "Baris di sheet Restore Record"
+        ]
+      ]
+    },
+    {
+      "title": "Uji Restore Berkala",
+      "steps": [
+        [
+          "Restore sampel data ke lokasi uji sesuai jadwal uji restore (untuk pelanggan: SNX-OPS-FRM-07).",
+          "NOC Engineer",
+          "Sampel data di lokasi uji"
+        ],
+        [
+          "Verifikasi integritas sampel: checksum, pembukaan file, atau start aplikasi.",
+          "NOC Engineer",
+          "Kolom Integritas terverifikasi di sheet Restore Record"
+        ],
+        [
+          "Ukur waktu restore terhadap RTO job.",
+          "NOC Engineer",
+          "Durasi dan kolom Dalam RTO di sheet Restore Record"
+        ],
+        [
+          "Catat hasil uji (berhasil atau gagal, waktu, temuan) di SNX-ISMS-FRM-01 (sheet Restore Record).",
+          "NOC Engineer",
+          "Baris di sheet Restore Record"
+        ],
+        [
+          "Buat tiket P2 di Zammad untuk uji restore yang gagal.",
+          "NOC Engineer",
+          "Tiket P2; baris di SNX-OPS-FRM-08"
+        ],
+        [
+          "Analisis akar penyebab uji restore yang gagal, sesuai SNX-OPS-SOP-04.",
+          "Lead NOC",
+          "Analisis akar di tiket P2"
+        ],
+        [
+          "Perbaiki job yang menyebabkan uji restore gagal.",
+          "NOC Engineer",
+          "Job diperbaiki"
+        ],
+        [
+          "Masukkan ringkasan uji restore ke laporan bulanan pelanggan.",
+          "Service Delivery Manager",
+          "Laporan bulanan pelanggan"
+        ],
+        [
+          "Masukkan ringkasan uji restore ke SNX-OPS-RPT-01 (USULAN).",
+          "Lead NOC",
+          "SNX-OPS-RPT-01"
+        ],
+        [
+          "Periksa tiap bulan bahwa uji restore terlaksana untuk setiap pelanggan berlayanan backup.",
+          "Lead NOC",
+          "Status pelaksanaan di Jadwal PM, SNX-OPS-FRM-07"
+        ]
+      ]
+    },
+    {
+      "title": "Penghapusan Backup",
+      "steps": [
+        [
+          "Catat dari kontrak apakah backup pelanggan diserahkan atau dihapus saat offboarding.",
+          "Service Delivery Manager",
+          "Ketentuan serah atau hapus sesuai kontrak"
+        ],
+        [
+          "Ekspor atau hapus backup pelanggan di platform backup sesuai ketentuan kontrak (USULAN).",
+          "NOC Engineer",
+          "Backup diekspor atau dihapus"
+        ],
+        [
+          "Serahkan backup hasil ekspor ke pelanggan sesuai kontrak.",
+          "Service Delivery Manager",
+          "Backup diserahkan ke pelanggan"
+        ],
+        [
+          "Buat berita acara penyerahan atau penghapusan backup pelanggan.",
+          "Service Delivery Manager",
+          "Berita acara penyerahan atau penghapusan"
+        ],
+        [
+          "Musnahkan media backup fisik yang tidak terpakai sesuai SNX-ISMS-SOP-04 (USULAN).",
+          "NOC Engineer",
+          "Berita acara pemusnahan sesuai SNX-ISMS-SOP-04"
+        ]
+      ]
+    }
+  ],
+  "flow": {
+    "rankdir": "TB",
+    "nodes": {
+      "a": "Daftarkan job di\nSNX-ISMS-FRM-01 dan\nsistemnya di REG-01",
+      "b": "Periksa semua job tiap\nshift malam, catat di\nBackup Log",
+      "c": "Gagal 2 kali\nberturut-turut?",
+      "d": "Buat tiket P2\ndi Zammad",
+      "e": "Uji restore berkala:\nbulanan pelanggan,\ntriwulanan internal",
+      "g": "Catat hasil uji di\nRestore Record",
+      "f": "Uji restore\nlolos?",
+      "t": "Tiket P2, analisis akar,\nperbaiki job",
+      "r": "Masukkan ringkasan ke laporan\nbulanan pelanggan dan\nSNX-OPS-RPT-01"
+    },
+    "shapes": {
+      "c": "diamond",
+      "f": "diamond"
+    },
+    "edges": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "c"
+      ],
+      [
+        "c",
+        "d",
+        "Ya"
+      ],
+      [
+        "c",
+        "e",
+        "Tidak"
+      ],
+      [
+        "d",
+        "e",
+        "",
+        "dashed"
+      ],
+      [
+        "e",
+        "g"
+      ],
+      [
+        "g",
+        "f"
+      ],
+      [
+        "f",
+        "r",
+        "Ya"
+      ],
+      [
+        "f",
+        "t",
+        "Tidak"
+      ],
+      [
+        "t",
+        "r",
+        "",
+        "dashed"
+      ]
+    ],
+    "caption": "Gambar 1. Alur konfigurasi job, pemantauan, dan uji restore. Garis putus-putus kembali ke alur utama."
+  },
+  "sla": [
+    [
+      "Pemeriksaan status semua job backup",
+      "NOC Engineer",
+      "Setiap shift malam"
+    ],
+    [
+      "Job gagal dijalankan ulang",
+      "NOC Engineer",
+      "Pada shift yang sama (USULAN)"
+    ],
+    [
+      "Tiket P2 untuk job gagal 2 kali berturut-turut",
+      "NOC Engineer",
+      "Saat kegagalan kedua tercatat di Backup Log"
+    ],
+    [
+      "Pemantauan kapasitas repository backup",
+      "NOC Engineer",
+      "Setiap minggu; penggunaan di atas 80% ditindaklanjuti"
+    ],
+    [
+      "Uji restore untuk setiap pelanggan berlayanan backup",
+      "NOC Engineer",
+      "Minimal bulanan"
+    ],
+    [
+      "Uji restore sistem internal kritis",
+      "NOC Engineer",
+      "Minimal triwulanan"
+    ],
+    [
+      "Ringkasan uji restore di laporan bulanan pelanggan",
+      "Service Delivery Manager",
+      "Setiap bulan"
+    ],
+    [
+      "Pemeriksaan pelaksanaan uji restore pelanggan",
+      "Lead NOC",
+      "Setiap bulan"
+    ],
+    [
+      "Job backup sukses",
+      "Lead NOC",
+      "Target 98%"
+    ],
+    [
+      "Uji restore bulanan terlaksana per pelanggan backup",
+      "Lead NOC",
+      "Target 100%"
+    ],
+    [
+      "Uji restore berhasil pada percobaan pertama",
+      "Lead NOC",
+      "Target 95%"
+    ],
+    [
+      "Waktu uji restore dalam RTO",
+      "Lead NOC",
+      "Target 100%"
+    ]
+  ],
+  "exceptions": [
+    [
+      "Pelanggan tanpa layanan backup meminta restore",
+      "NOC Engineer tidak menjanjikan restore data kepada pelanggan itu (bagian 2)."
+    ],
+    [
+      "Kontrak pelanggan menetapkan parameter yang berbeda dari standar",
+      "NOC Engineer memakai parameter kontrak yang dicatat Service Delivery Manager (butir 6.1)."
+    ],
+    [
+      "Restore ke lokasi uji tidak memungkinkan",
+      "NOC Engineer melanjutkan ke lokasi produksi dengan ketentuan approval dan persetujuan di bagian 4 (butir 6.3)."
+    ],
+    [
+      "Platform backup tidak mendukung immutable copy",
+      "NOC Engineer tetap menerapkan aturan 3-2-1 tanpa immutable copy."
+    ],
+    [
+      "Restore sistem internal saat insiden (bukan data pelanggan)",
+      "Lead NOC menyetujui restore ke lokasi produksi, dan persetujuan PIC pelanggan tidak berlaku. NOC Engineer mencatatnya sebagai Pemulihan insiden di sheet Restore Record (USULAN)."
+    ]
+  ],
+  "conclusion": [
+    "Lead NOC memantau kepatuhan terhadap SOP ini lewat empat indikator di bagian 8 dan hasil uji restore di SNX-ISMS-FRM-01.",
+    "Lead NOC, selaku pemilik SOP, meninjau dokumen ini setiap tahun."
+  ],
+  "related_documents": [
+    [
+      "SNX-ISMS-FRM-01",
+      "Backup Log & Restore Testing Records; sheet Daftar Job, Backup Log, dan Restore Record."
+    ],
+    [
+      "SNX-ISMS-REG-01",
+      "Information Asset Register; sistem sumber job backup dan kolom Pemilik."
+    ],
+    [
+      "SNX-ISMS-PLN-01",
+      "Business Continuity / IT Recovery Plan; RTO sistem internal."
+    ],
+    [
+      "SNX-ISMS-PRO-01",
+      "Information Classification & Handling Procedure; tingkat klasifikasi backup."
+    ],
+    [
+      "SNX-ISMS-SOP-02",
+      "SOP User Access Control & Authorization; akses ke console dan repository backup."
+    ],
+    [
+      "SNX-ISMS-SOP-04",
+      "SOP IT Asset & Configuration Management; pemusnahan media backup fisik."
+    ],
+    [
+      "SNX-OPS-SOP-02",
+      "SOP Project Change Management; change Normal dan snapshot sebelum change."
+    ],
+    [
+      "SNX-OPS-SOP-04",
+      "SOP Technical Incident Handling & Escalation; severity P2 dan analisis akar."
+    ],
+    [
+      "SNX-OPS-FRM-04",
+      "Change Request & Approval Log; rekap change request perubahan job."
+    ],
+    [
+      "SNX-OPS-FRM-07",
+      "Maintenance Schedule & Service Report; Jadwal PM uji restore."
+    ],
+    [
+      "SNX-OPS-FRM-08",
+      "Technical Ticket / Incident Register; rekap tiket kegagalan backup dan permintaan restore."
+    ],
+    [
+      "SNX-OPS-RPT-01",
+      "Operations KPI & Performance Monitoring Report; tujuan ringkasan uji restore."
+    ],
+    [
+      "SNX-HR-ORG-01",
+      "Struktur Organisasi SINUX; dasar nama peran di bagian 5."
+    ],
+    [
+      "POL-OPS-001",
+      "Kebijakan Divisi Operation SINUX (DRAFT v0.1, penomoran masih USULAN); jam shift."
+    ]
+  ],
+  "records": [
+    [
+      "Backup Log & Restore Testing Records (SNX-ISMS-FRM-01)",
+      "Google Drive; pemilik Lead NOC",
+      "3 tahun"
+    ],
+    [
+      "Tiket kegagalan backup dan permintaan restore (SNX-OPS-FRM-08)",
+      "Tiket di Zammad, rekap di SNX-OPS-FRM-08 (Google Drive); pemilik Lead NOC",
+      "3 tahun"
+    ],
+    [
+      "Jadwal PM uji restore (SNX-OPS-FRM-07)",
+      "Google Drive; pemilik Lead NOC",
+      "3 tahun"
+    ],
+    [
+      "Berita acara penyerahan atau penghapusan backup pelanggan",
+      "Folder Drive Operation; pemilik Service Delivery Manager (USULAN)",
+      "3 tahun (USULAN)"
+    ],
+    [
+      "Berita acara pemusnahan media backup fisik",
+      "Lampiran SNX-ISMS-REG-01, sesuai SNX-ISMS-SOP-04",
+      "5 tahun, sesuai SNX-ISMS-SOP-04"
+    ],
+    [
+      "Persetujuan tertulis PIC pelanggan untuk restore ke lokasi produksi",
+      "Dilampirkan di tiket permintaan restore di Zammad (USULAN); pemilik Lead NOC",
+      "3 tahun, sama dengan tiket permintaan restore"
+    ],
+    [
+      "Change request perubahan job (SNX-OPS-FRM-04)",
+      "Berkas SNX-OPS-FRM-04; pemilik sesuai SNX-OPS-SOP-02",
+      "3 tahun, sesuai SNX-OPS-SOP-02"
+    ],
+    [
+      "Tiket tindak lanjut kapasitas repository backup",
+      "Zammad, hanya bila penggunaan di atas 80%; pemilik Lead NOC (USULAN)",
+      "3 tahun (USULAN)"
+    ]
+  ],
+  "iso_refs": {
+    "ISO 9001:2015": "7.1.3 (Infrastruktur), 8.5.3 (Properti milik pelanggan atau penyedia eksternal)",
+    "ISO/IEC 27001:2022": "Annex A 8.13 (Information backup), 8.14 (Redundancy of information processing facilities)"
+  }
+}

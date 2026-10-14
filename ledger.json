@@ -507,7 +507,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "VERIFY_FAIL",
+   "state": "DONE",
    "number": "SNX-ISMS-SOP-03",
    "out_path": "out/08_ISMS/SNX-ISMS-SOP-03 Backup & Recovery (Rev00 DRAFT).docx",
    "sources": [
@@ -530,9 +530,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 1,
-   "usulan_count": 16,
-   "open_items": [],
-   "updated_at": "2026-10-14T22:38:01Z",
+   "usulan_count": 25,
+   "open_items": [
+    "Rekaman analisis akar kegagalan backup ditulis 'di tiket P2', sedangkan SNX-OPS-SOP-04 memakai SNX-OPS-FRM-10; selaraskan (Fani)."
+   ],
+   "updated_at": "2026-10-14T22:44:13Z",
    "pen_agent": "aa66a464c5f9d8772",
    "ooxml": "PASSED"
   },
@@ -583,9 +585,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-SOP-05",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-SOP-05 Vulnerability & Patch Management (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "160t8vg9Eb_ItxjLuWxLG17OIAKpxSsKC",
@@ -603,13 +605,14 @@
      "title": "PRO-OPS-001_Prosedur_Operasional_Divisi_Operation_SINUX.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 12,
    "open_items": [],
-   "updated_at": "2026-10-14T22:28:32Z",
-   "pen_agent": "acd4a4da0b5f25143"
+   "updated_at": "2026-10-14T22:43:41Z",
+   "pen_agent": "acd4a4da0b5f25143",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 14,
@@ -709,7 +712,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-SOP-01",
    "out_path": null,
    "sources": [
@@ -724,7 +727,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:41:34Z",
+   "pen_agent": "adc9dd25179af16a9"
   },
   {
    "wl_index": 18,
@@ -734,7 +738,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-SOP-02",
    "out_path": null,
    "sources": [
@@ -754,7 +758,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:43:50Z",
+   "pen_agent": "a8415089d8bd9e5d8"
   },
   {
    "wl_index": 19,

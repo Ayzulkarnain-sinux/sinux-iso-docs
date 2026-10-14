@@ -1,0 +1,56 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 6 butir 6.4 langkah 6",
+      "masalah": "Keluaran analisis akar ditulis 'Analisis akar di tiket P2', padahal SNX-OPS-SOP-04 (yang dirujuk langkah ini) mewajibkan RCA insiden P1 dan P2 di SNX-OPS-FRM-10. FRM-10 tidak ada di Dokumen terkait. Sumber SOP-03 tidak menyebut rekamannya, jadi ini bukan fakta salah, tetapi tidak selaras lintas dokumen.",
+      "bukti": "Dokumen: '6. Analisis akar penyebab uji restore yang gagal, sesuai SNX-OPS-SOP-04. | Lead NOC | Analisis akar di tiket P2'. Audit OPS-SOP-04 7.5 butir 1: 'Insiden P1 dan P2 wajib RCA dengan SNX-OPS-FRM-10'."
+    },
+    {
+      "lokasi": "Bagian 4 (snapshot) dan bagian 5 / Conclusion (empat indikator)",
+      "masalah": "Dua pelaku tidak bersumber dan tidak berlabel USULAN: NOC Engineer sebagai pengambil snapshot (sumber pasif; PRO-OPS-001 CHG-01 menyebut 'engineer atau analyst yang ditugaskan') dan Lead NOC sebagai pemantau empat indikator (sumber Bagian 9 tanpa penanggung jawab; notes open item 21 mencatatnya). Tafsir wajar, tetapi konsistensi pelabelan dengan U13 sampai U15 menuntut label.",
+      "bukti": "Dokumen: 'NOC Engineer mengambil snapshot untuk setiap change yang berisiko'; 'Memantau empat indikator kinerja di bagian 8.' Sumber 6.1: 'Snapshot sebelum change | Setiap change yang berisiko'; Bagian 9 hanya 'Indikator | Target'."
+    },
+    {
+      "lokasi": "Bagian 6 butir 6.2 langkah 5 dan 6",
+      "masalah": "Isi berulang dan label tidak konsisten: langkah 5 sudah menulis 'dicatat di tiket bila di atas 80%' tanpa label, langkah 6 menulis tiket yang sama dengan label (USULAN). Langkah 5 juga tidak menyebut frekuensi mingguan (hanya di bagian 8).",
+      "bukti": "'5. Pantau kapasitas repository backup. | NOC Engineer | Penggunaan kapasitas repository; dicatat di tiket bila di atas 80%' dan '6. Tindak lanjuti penggunaan repository di atas 80%. | NOC Engineer | Tiket tindak lanjut kapasitas di Zammad (USULAN)'."
+    },
+    {
+      "lokasi": "Bagian 4 butir akses console",
+      "masalah": "Istilah 'peran operator' tidak ada di tabel peran bagian 5 maupun Definisi (RUNBOOK 6a butir 7). Kalimat tim, tetapi pembaca tidak tahu peran mana yang dimaksud (NOC Engineer saja atau juga Lead NOC).",
+      "bukti": "'Akses ke console dan repository backup dibatasi pada peran operator dengan MFA, sesuai SNX-ISMS-SOP-02.'"
+    },
+    {
+      "lokasi": "Bagian 4",
+      "masalah": "Pola mekanis: label '(Annex A 8.13)' ditempel di lima butir berturut-turut, dan ada kalimat penunjuk tanpa isi.",
+      "bukti": "'Peran yang menetapkan parameter backup dan peran yang mencatatnya ada di bagian 5 dan butir 6.1.'"
+    },
+    {
+      "lokasi": "Bagian 11 dan bagian 4 (kriteria Annex A 8.14)",
+      "masalah": "Annex A 8.14 hanya ditopang aturan 3-2-1, sama dengan sumber; redundansi fasilitas pemrosesan ada di PLN-01. Kriteria tetap terpenuhi karena acuan klausul tercantum dan substansi sumber dipertahankan (notes open item 15).",
+      "bukti": "'Data kritis mengikuti aturan 3-2-1 (Annex A 8.13, 8.14).' satu-satunya kemunculan 8.14 di badan dokumen."
+    },
+    {
+      "lokasi": "Bagian 5 baris Lead SOC",
+      "masalah": "Lead SOC punya tanggung jawab dan wewenang tetapi tidak muncul di langkah bagian 6, SLA bagian 8, atau rekaman; tanggung jawab tanpa langkah sulit diaudit (notes open item 9, sama dengan sumber).",
+      "bukti": "'Lead SOC | Memastikan backup terlindungi dari ransomware dan akses tidak sah.' tidak ada PIC Lead SOC di bagian 6 dan 8."
+    },
+    {
+      "lokasi": "Bagian 8",
+      "masalah": "Empat target KPI (98%, 100%, 95%, 100%) dimasukkan ke kolom 'SLA / Timing' sehingga tabel mencampur jadwal dan target; angka cocok sumber Bagian 9 (notes open item 19).",
+      "bukti": "'Job backup sukses | Lead NOC | Target 98%'."
+    },
+    {
+      "lokasi": "Bagian 11 baris SNX-OPS-FRM-04",
+      "masalah": "Pemilik ditulis 'sesuai SNX-OPS-SOP-02'; berkas FRM-04 menulis pemilik Head of Operation (audit). Tidak salah, tetapi bisa ditulis langsung.",
+      "bukti": "'Change request perubahan job (SNX-OPS-FRM-04) | Berkas SNX-OPS-FRM-04; pemilik sesuai SNX-OPS-SOP-02 | 3 tahun, sesuai SNX-OPS-SOP-02'. Audit OPS-FRM-04: 'Pemilik dokumen | Head of Operation'; audit OPS-SOP-02: 'Change Request & Approval Log | SNX-OPS-FRM-04 | 3 tahun'."
+    },
+    {
+      "lokasi": "Catatan pemeriksaan (informasi)",
+      "masalah": "Diperiksa dan cocok: semua angka tabel 6.1, uji restore bulanan dan triwulanan, 2 kali berturut-turut, 80%, KPI 98/100/95/100, retensi 3 tahun; 5 tahun dan Lampiran SNX-ISMS-REG-01 cocok SOP-04; kolom sheet FRM-01 (Shift 3, Restore Record, Dalam RTO, Integritas terverifikasi, Pemulihan insiden) cocok audit FRM-01; penanda tangan sesuai defaults ISMS dan data_conflicts; nol rujukan internal AI, nol em-dash dan en-dash, nol COO di badan; lint ulang pass. Ketiga cacat audit fileId 1z6y (SKILL_, sheet 'Restore Test dan Request', masa simpan, parameter USULAN, Jumphost, P2) ditangani atau dijelaskan di notes bagian 5.",
+      "bukti": "python3 -I tools/lint_doc.py <out> sop: pass true, fails []; grep SKILL_|DOCTRINE|DEC-|HANDOVER|§|Claude|Altair|staging|—|– atas teks dokumen: nol hasil."
+    }
+  ]
+}
