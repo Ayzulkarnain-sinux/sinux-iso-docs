@@ -1066,8 +1066,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 12,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:33:47Z",
+   "open_items": [
+    "Sweep (b): pengantar 6.1-6.3 pasif tanpa pelaku; 4.15 jadi wadah USULAN; istilah Personel Commercial tidak ada di bagian 5 (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:33:50Z",
    "pen_agent": "a047bde100d8c7081",
    "ooxml": "PASSED"
   },

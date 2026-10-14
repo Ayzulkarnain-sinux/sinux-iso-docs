@@ -1,6 +1,6 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:06:13Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:33:50Z)
 
-Wave berjalan: W4. Hitungan state: {'DONE': 39, 'LINT_PASS': 1, 'IN_PROGRESS': 5, 'QUEUED': 25, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 3.
+Wave berjalan: W4. Hitungan state: {'DONE': 47, 'LINT_PASS': 1, 'IN_PROGRESS': 5, 'QUEUED': 17, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 4.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
@@ -25,13 +25,13 @@ Wave berjalan: W4. Hitungan state: {'DONE': 39, 'LINT_PASS': 1, 'IN_PROGRESS': 5
 | LEG-SOP-02 | W3 | DONE | SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx | PASS | 17 | 1 |
 | COM-SOP-01 | W3 | DONE | SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx | PASS | 14 | 0 |
 | HR-SOP-08 | W3 | DONE | SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx | PASS | 28 | 0 |
-| HR-SOP-10 | W4 | LINT_PASS | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | - | 36 | 0 |
-| HR-SOP-11 | W4 | IN_PROGRESS | - | - | 0 | 0 |
-| HR-SOP-12 | W4 | IN_PROGRESS | - | - | 0 | 0 |
-| HR-SOP-13 | W4 | IN_PROGRESS | - | - | 0 | 0 |
-| FAT-SOP-04 | W4 | IN_PROGRESS | - | - | 0 | 0 |
-| LEG-SOP-03 | W4 | IN_PROGRESS | - | - | 0 | 1 |
-| COM-SOP-02 | W4 | QUEUED | - | - | 0 | 0 |
+| HR-SOP-10 | W4 | DONE | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | PASS | 36 | 0 |
+| HR-SOP-11 | W4 | DONE | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 52 | 2 |
+| HR-SOP-12 | W4 | DONE | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 46 | 2 |
+| HR-SOP-13 | W4 | DONE | SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx | PASS | 57 | 3 |
+| FAT-SOP-04 | W4 | DONE | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 35 | 1 |
+| LEG-SOP-03 | W4 | DONE | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 44 | 2 |
+| COM-SOP-02 | W4 | DONE | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 12 | 1 |
 | OPS-FRM-01 | W5 | DONE | SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx | PASS | 5 | 0 |
 | OPS-FRM-02 | W5 | DONE | SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | OPS-FRM-03 | W5 | DONE | SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx | - | 1 | 0 |
@@ -50,13 +50,13 @@ Wave berjalan: W4. Hitungan state: {'DONE': 39, 'LINT_PASS': 1, 'IN_PROGRESS': 5
 | ISMS-FRM-01 | W5 | DONE | SNX-ISMS-FRM-01 Backup Log Restore Testing Records (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | ISMS-FRM-02 | W5 | DONE | SNX-ISMS-FRM-02 Security Incident Investigation Records (Rev00 DRAFT).xlsx | PASS | 11 | 0 |
 | ISMS-FRM-03 | W5 | DONE | SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
-| LEG-REG-01 | W6 | QUEUED | - | - | 0 | 0 |
-| LEG-FRM-01 | W6 | QUEUED | - | - | 0 | 0 |
-| LEG-FRM-02 | W6 | QUEUED | - | - | 0 | 0 |
-| LEG-FRM-03 | W6 | QUEUED | - | - | 0 | 0 |
-| LEG-REG-02 | W6 | QUEUED | - | - | 0 | 0 |
-| LEG-RPT-01 | W6 | QUEUED | - | - | 0 | 0 |
-| HR-FRM-01 | W7 | QUEUED | - | - | 0 | 0 |
+| LEG-REG-01 | W6 | DONE | SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx | PASS | 13 | 1 |
+| LEG-FRM-01 | W6 | LINT_PASS | SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx | - | 33 | 0 |
+| LEG-FRM-02 | W6 | IN_PROGRESS | - | - | 0 | 0 |
+| LEG-FRM-03 | W6 | IN_PROGRESS | - | - | 0 | 0 |
+| LEG-REG-02 | W6 | IN_PROGRESS | - | - | 0 | 0 |
+| LEG-RPT-01 | W6 | IN_PROGRESS | - | - | 0 | 0 |
+| HR-FRM-01 | W7 | IN_PROGRESS | - | - | 0 | 0 |
 | HR-FRM-02 | W7 | QUEUED | - | - | 0 | 0 |
 | HR-RPT-01 | W7 | QUEUED | - | - | 0 | 0 |
 | FAT-FRM-01 | W7 | QUEUED | - | - | 0 | 0 |
