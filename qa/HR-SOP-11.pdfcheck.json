@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "pages": 17,
+  "checks": {
+    "A": "ok: sampul berbaris tengah (STANDARD OPERATIONAL PROCEDURE / DEPARTMENT HUMAN RESOURCES / Demotion), 'No : SNX-HR-SOP-11' sama dengan Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat Sinux Office + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada; label berurutan sama dengan acuan (Company Name s.d. Review Period + baris kosong); nilai terisi; Effective Date kosong; Document Status Draft; Classification INTERNAL",
+    "C": "ok: Revision History baris 00 'Draft awal untuk review dan pengesahan'; Approval 3 baris nama/jabatan terisi (Sita Nadia Salsabila Widodo / HRGA Officer; Aziz Priyo Widakdo / HR Manager; Samuel Kristanto Utomo / President Director); kolom Signature kosong",
+    "D": "ok: daftar isi (Preliminary Section, 1-11, 6.1-6.5) cocok dengan heading di badan dokumen",
+    "E": "ok: 11 heading bernomor berurutan PURPOSE s.d. RELATED DOCUMENTS & ATTACHMENTS, semua bagian berisi; diagram bagian 7 (hlm 12) utuh, tidak terpotong, terbaca pada 110 dpi (sumber raster 300 ppi), caption 'Gambar 1. Alur penurunan jabatan (USULAN)...' ada",
+    "F": "ok: header kolom tampil di semua tabel; sel isi terisi (sel kosong hanya baris template Revision History/Identity dan kolom Signature, sama seperti acuan); tidak ada teks sel terpotong; tidak ada kata dipecah per huruf (hanya kode dipecah di tanda hubung, lihat nonblocking)",
+    "H": "ok: tanpa label klasifikasi di footer (dokumen INTERNAL); nomor halaman 1-17 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan; nol placeholder [..]; nol teks instruksi template; tidak ada halaman kosong berlebih",
+    "J": "ok: urutan halaman pembuka (sampul, Identity, Revision+Approval, TOC) sama dengan acuan; gaya heading, gaya tabel, posisi header/footer sama dengan acuan"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Baris tabel pecah antarhalaman tanpa header kolom diulang: Definisi 'Karyawan terkait' (hlm 5-6), Roles 'Atasan Langsung' (hlm 8-9), 6.1 langkah 4 (hlm 9-10), 6.4 langkah 3 (hlm 10-11), Exception 'Karyawan terkait tidak mengirim tanggapan' (hlm 13-14), Rekaman baris 2 (hlm 16-17)",
+    "Teks rata kanan-kiri di kolom sempit menimbulkan spasi lebar (Roles hlm 8-9, SLA/Timing hlm 13, Retensi hlm 16-17); gaya sama dengan acuan",
+    "Kode dipecah di tanda hubung pada kolom sempit: 'SNX-ISMS-SOP-/02', 'SNX-ISMS-PRO-/01' (hlm 16), 'SNX-HR-JA-/01' dan 'Legal & Compliance (JA-/08)' (hlm 8-9)",
+    "Teks node diagram bagian 7 kecil (sekitar 5-6 pt pada cetak A4); masih terbaca pada 110 dpi",
+    "Ruang kosong di bawah hlm 11 dan hlm 15 karena bagian 7 dan 11 mulai halaman baru; konsisten dengan acuan"
+  ]
+}

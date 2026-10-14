@@ -871,7 +871,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-SOP-11",
    "out_path": "out/02_HR/SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx",
    "sources": [
@@ -882,13 +882,13 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 52,
    "open_items": [
     "Pemeriksa PDF r1: halaman 15 kosong antara bagian 10 dan 11 (page break template + isi bagian 10 pas batas halaman)."
    ],
-   "updated_at": "2026-10-14T23:22:33Z",
+   "updated_at": "2026-10-14T23:26:32Z",
    "pen_agent": "a2cb5b7e1e129cb63",
    "ooxml": "PASSED"
   },
@@ -930,7 +930,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-SOP-13",
    "out_path": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
    "sources": [
@@ -943,12 +943,12 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 1,
-   "usulan_count": 42,
+   "usulan_count": 57,
    "open_items": [
     "Sweep (c): mutasi lokasi saja membuat Atasan Langsung Asal = Tujuan, pemisahan peran 4.3 perlu aturan pengganti (verify nonblocking)",
     "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi"
    ],
-   "updated_at": "2026-10-14T23:19:55Z",
+   "updated_at": "2026-10-14T23:24:44Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED"
   },
@@ -985,8 +985,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 35,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:22:54Z",
+   "open_items": [
+    "Sweep (b): 6.1 dan SLA baris 2 menyebut Finance Lead menjalankan 6.2-6.3 untuk dokumen pajak, tetapi 6.2 tidak punya langkah simpan softcopy pajak (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:22:57Z",
    "pen_agent": "ad5b909ad28816d44",
    "ooxml": "PASSED"
   },
@@ -998,9 +1000,9 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-SOP-03",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0",
@@ -1023,15 +1025,16 @@
      "title": "SINUX_Job_Analysis_2026.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 44,
    "open_items": [
     "Draf tim baru ditemukan di folder Dep. Legal (dibuat 2026-10-14T09:13Z) tanpa tautan di checklist; dipakai sebagai sumber utama (RUNBOOK §6 prioritas dokumen tim terbaru)."
    ],
-   "updated_at": "2026-10-14T23:06:08Z",
-   "pen_agent": "ab097b242b2cce31c"
+   "updated_at": "2026-10-14T23:26:26Z",
+   "pen_agent": "ab097b242b2cce31c",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 27,
@@ -1549,9 +1552,9 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-REG-01",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1a1hDz9zwdRHBAHaU9wALSdg66R4bD8mGD-86TyzJewk",
@@ -1559,13 +1562,14 @@
      "title": "Company Licenses and Permits Register"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 13,
    "open_items": [],
-   "updated_at": "2026-10-14T23:13:34Z",
-   "pen_agent": "a3ea3b013a1539209"
+   "updated_at": "2026-10-14T23:24:31Z",
+   "pen_agent": "a3ea3b013a1539209",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 47,
@@ -1601,7 +1605,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-FRM-02",
    "out_path": null,
    "sources": [
@@ -1616,7 +1620,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:24:31Z",
+   "pen_agent": "aab72d9fbe45df535"
   },
   {
    "wl_index": 49,
@@ -1626,7 +1631,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-FRM-03",
    "out_path": null,
    "sources": [
@@ -1641,7 +1646,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:26:08Z",
+   "pen_agent": "abeadc3abe601e504"
   },
   {
    "wl_index": 50,
@@ -2461,7 +2467,9 @@
     "ISMS-PLN-01: simpul diagram Recovery Lead vs Incident Commander keamanan; label USULAN pelaku kesiapan bagian 4",
     "FAT-SOP-05: pelaku Finance Lead di 4.6 beri label USULAN jelas dan selaraskan dengan bagian 5",
     "COM-SOP-01: frasa \"SOP sumber\" 6 kali; status Lost di 6.7; dua langkah berisi dua tindakan",
-    "HR-SOP-10: peran Atasan Langsung di bagian 5 merujuk 6.4 tetapi 6.4 tanpa langkah untuk peran itu"
+    "HR-SOP-10: peran Atasan Langsung di bagian 5 merujuk 6.4 tetapi 6.4 tanpa langkah untuk peran itu",
+    "FAT-SOP-04: qa/FAT-SOP-04.verify.json nonblocking 1 (langkah softcopy pajak), 2 (sel SLA berisi komentar penyusunan), 3 (kalimat meta status draf di 4.2/4.10), 5 (pengaju pengecualian tanpa label), 7-8 (rumusan retensi rekaman, retensi Berita Acara jadi open item)",
+    "HR-SOP-12/13 dan HR-SOP-11: lihat pending (c) dan open_items dokumen"
    ]
   },
   {

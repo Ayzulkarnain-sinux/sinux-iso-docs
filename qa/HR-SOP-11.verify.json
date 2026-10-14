@@ -1,0 +1,51 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 9 baris 'Karyawan terkait adalah HRGA Officer (JA-12)' lawan butir 4.4",
+   "masalah": "Bertentangan dengan prinsip 4.4. HR Manager menjadi pengusul (Atasan Langsung) lalu juga menjalankan langkah HRGA Officer di 6.3, termasuk 6.3 butir 1 'Periksa kelengkapan isian usulan', jadi ia memeriksa usulannya sendiri. Baris Office Helper justru mengganti HRGA Officer karena alasan yang sama. Frasa 'tanpa pemberitahuan kepada dirinya sendiri' juga janggal.",
+   "bukti": "4.4: 'Bila satu peran akan mengusulkan sekaligus memutuskan, atau memeriksa usulannya sendiri, bagian 9 menetapkan peran pengganti (USULAN).' Bagian 9: 'HR Manager mengajukan usulan dan menjalankan langkah HRGA Officer di butir 6.3 dan 6.5, tanpa pemberitahuan kepada dirinya sendiri.'"
+  },
+  {
+   "lokasi": "Bagian 6, peralihan 6.3 ke 6.4 dan 6.4 ke 6.5",
+   "masalah": "Serah terima belum lengkap. Tidak ada langkah yang meneruskan usulan, bukti dasar, dan tanggapan dari HRGA Officer ke HR Manager. Penerima tanggapan karyawan di 6.3 butir 4 tidak disebut. HRGA Officer tidak termasuk penerima pemberitahuan keputusan di 6.4 butir 4, padahal ia menjalankan 6.5 dan mengarsipkan keputusan.",
+   "bukti": "6.3 butir 4: 'Kirim tanggapan karyawan atas usulan.' (tanpa tujuan). 6.4 butir 4: 'Sampaikan keputusan kepada Atasan Langsung dan karyawan terkait.' Bagian 9 menyiratkan tanggapan masuk ke HRGA Officer: 'HRGA Officer mencatat bahwa tanggapan tidak diterima dan memberi tahu HR Manager.'"
+  },
+  {
+   "lokasi": "Butir 4.2, definisi 'Penurunan kinerja', Scope kalimat ketiga",
+   "masalah": "Kriteria checklist sudah tercakup, tetapi jalur penurunan kinerja dan penurunan tingkat posisi belum bisa dijalankan. Ambang hasil penilaian kinerja kosong dan grading belum ada. Alasannya jujur karena sumber tidak memuat grading dan skala penilaian (SOP Performance Appraisal berstatus HOLD). Sebaiknya ada aturan sementara berlabel (USULAN), misalnya penilai dan dasar yang dipakai sampai ambang ditetapkan. Pelaku 'SINUX menetapkan grading' perlu diganti peran.",
+   "bukti": "Definisi: 'Hasil penilaian kinerja karyawan yang berada di bawah ambang pada butir 4.2.' 4.2: 'Ambang hasil penilaian kinerja dan lama pelaksanaan rencana perbaikan kinerja belum ditetapkan.' Scope: 'baru bisa berjalan sesudah SINUX menetapkan grading'. Sumber: 'grading tidak dicantumkan.'"
+  },
+  {
+   "lokasi": "Langkah 6.5 butir 4, bagian 9 baris 'Keputusan menolak usulan', tabel rekaman bagian 11",
+   "masalah": "Daftar arsip tidak sama dengan tabel rekaman. Pada jalur pelanggaran terbukti, laporan dugaan pelanggaran dan catatan pemeriksaan tercantum di tabel rekaman, tetapi tidak ada langkah yang mengarsipkannya. Tanda terima salinan usulan dan pemberitahuan keputusan tidak tercatat. Arsip jalur penolakan tidak memuat bukti dasar dan kesimpulan dasar penurunan. Retensi 'selama karyawan bekerja' membuat rekaman disiplin habis masa simpannya saat karyawan keluar, padahal rekaman itu bisa diperlukan untuk sengketa. Ini sudah tercatat di O10.",
+   "bukti": "6.5 butir 4: 'Arsipkan usulan, bukti dasar, tanggapan karyawan, kesimpulan, rekomendasi, keputusan, dan konfirmasi karyawan di personal file.' Bagian 9: 'HRGA Officer mengarsipkan usulan, tanggapan karyawan, rekomendasi, dan keputusan di personal file.' Bagian 11 baris 1: 'Laporan dugaan pelanggaran, catatan pemeriksaan, dan kesimpulan pemeriksaan pelanggaran'."
+  },
+  {
+   "lokasi": "Bagian 5 lawan bagian 9 (pemeriksaan e)",
+   "masalah": "PIC di bagian 6 dan 8 cocok dengan bagian 5. Namun beberapa tugas Direktur Utama dan HR Manager di bagian 9 tidak muncul di kolom tanggung jawab bagian 5: menunjuk pengusul atau pengganti, mengesahkan revisi SNX-HR-ORG-01 dan SNX-HR-JA-01, memutuskan penundaan tanggal berlaku, meminta tinjauan Legal & Compliance, menyertakan usulan kompensasi, dan menambah posisi lewat revisi.",
+   "bukti": "Bagian 5, Direktur Utama: 'Memutuskan usulan penurunan jabatan: setujui atau tolak, dan menetapkan tanggal berlaku (butir 6.4). Menetapkan ambang ...'. Bagian 9: 'Direktur Utama menunjuk jabatan yang mengajukan usulan itu (USULAN).' dan 'HR Manager meminta Direktur Utama memutuskan penundaan tanggal berlaku'."
+  },
+  {
+   "lokasi": "Bagian 3 lawan 6.1 dan bagian 8, Scope, butir 4.9, 6.5",
+   "masalah": "Istilah berganti untuk hal yang sama (§6a.7). Definisi memakai 'Pemeriksaan pelanggaran', sedangkan judul 6.1 dan bagian 8 memakai 'Pemeriksaan dugaan pelanggaran'. Ada 'hak akses' dan 'akses'. Ada 'rekaman penurunan jabatan' dan 'Arsip penurunan jabatan'. 'tingkatan jabatan' (dari checklist Rotation) muncul di samping istilah terdefinisi 'Tingkat posisi'.",
+   "bukti": "Definisi: 'Pemeriksaan pelanggaran'. Judul 6.1: 'Pemeriksaan dugaan pelanggaran'. 6.5 butir 6, output: 'Permintaan perubahan akses'. 4.10: 'rekaman penurunan jabatan'. Output 6.5 butir 4: 'Arsip penurunan jabatan di personal file'."
+  },
+  {
+   "lokasi": "Bagian 6.5 intro, 4.4, Scope (pola tambahan)",
+   "masalah": "Benda diberi kata kerja manusia, jenis pelanggarannya ringan. Tambahan: kalimat Purpose ketiga mengulang isi 4.8 dan 6.5. Usulan baru sesudah penolakan ditulis pasif, padahal pelakunya diketahui (Atasan Langsung).",
+   "bukti": "'Langkah berikut berjalan sesudah keputusan menyetujui.' 'bagian 9 menetapkan peran pengganti' 'SNX-HR-JA-01 menaruh atasan jabatan itu' 'Usulan baru untuk karyawan terkait dimulai dari butir 6.2.' Purpose: 'Karyawan menerima uraian posisi tujuan dan mengonfirmasi pemahamannya sebelum tanggal berlaku.'"
+  },
+  {
+   "lokasi": "Scope, Bagian 11 Dokumen terkait (SOP Performance Appraisal, SOP Employee Offboarding)",
+   "masalah": "Status 'dalam peninjauan' tidak bersumber. Worklist mencatat kedua baris sebagai HOLD-T3 ('tim menandai ada; proses hanya bila berkas terlihat'). Rumusan yang netral adalah 'belum bernomor SNX'.",
+   "bukti": "Dokumen: 'SOP Employee Offboarding, dalam peninjauan' dan 'Dalam peninjauan: penilaian kinerja berkala ...'. config/worklist.json: state 'HOLD', wave 'HOLD-T3'."
+  },
+  {
+   "lokasi": "Definisi 'Pelanggaran aturan perusahaan', bagian 9 baris 'tidak terbukti'",
+   "masalah": "Definisinya generik. Context sudah memuat Peraturan Perusahaan SINUX (berkas PP - Cuti BAB VI, Pasal 34 tentang sanksi SP1 sampai SP3), dan berkas itu sudah dirujuk SNX-HR-JA-01 butir 4.10, jadi bisa dijadikan contoh ketentuan tertulis. Catatan O1 menulis sumber tidak menyebut PP, padahal PP ada di context. Selain itu, karyawan terkait yang sudah dimintai keterangan tidak diberi tahu bila pelanggaran tidak terbukti.",
+   "bukti": "Definisi: 'Perbuatan atau kelalaian karyawan yang bertentangan dengan ketentuan tertulis SINUX yang berlaku.' context/audit/iso-sinux-supdocs-hr-2026-10-14.md baris 1445: '### Pasal 34. Sanksi Atas Pelanggaran Hari Non Kerja'. Bagian 9: 'HR Manager menyampaikan kesimpulan itu ke Atasan Langsung.'"
+  }
+ ]
+}

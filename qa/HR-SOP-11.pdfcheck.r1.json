@@ -1,0 +1,26 @@
+{
+  "verdict": "FAIL",
+  "pages": 17,
+  "checks": {
+    "A": "ok",
+    "B": "ok",
+    "C": "ok",
+    "D": "ok",
+    "E": "ok",
+    "F": "ok",
+    "H": "ok",
+    "I": "masalah: halaman 15 kosong (hanya header/footer, pdftotext hanya berisi 'Page/ Halaman - 15') di antara bagian 10 CONCLUSION (berakhir tepat di dasar hal. 14) dan bagian 11 (hal. 16); kemungkinan paragraf kosong sesudah Conclusion tumpah ke halaman baru lalu page break sebelum bagian 11. Font LiberationSans identik dengan acuan, nol placeholder [..], nol teks instruksi template.",
+    "J": "ok"
+  },
+  "blocking": [
+    {"halaman": 15, "masalah": "Halaman kosong berlebih: hanya header logo SINUX dan footer, tanpa isi, di antara bagian 10 dan bagian 11. Acuan tidak punya halaman kosong."}
+  ],
+  "nonblocking": [
+    "Tabel pecah antarhalaman: Definition (hal. 5-6), Roles (hal. 7-9, baris HR Manager terbelah), 6.5 (hal. 10-11), Exception Management (hal. 13-14), Rekaman (hal. 16-17).",
+    "Sel rata kiri-kanan memberi spasi lebar antarkata di tabel Roles, SLA, dan output 6.x (sama dengan perilaku acuan).",
+    "Kode 'SNX-ISMS-SOP-02' dan 'SNX-ISMS-PRO-01' terbungkus di tanda hubung pada kolom Kode / Dokumen (hal. 16); tidak memecah per huruf.",
+    "Diagram bagian 7 (hal. 12) terbaca pada 110 dpi dan tidak terpotong, tetapi teks node kecil; garis 'Penurunan kinerja' melintas dekat label. Caption 'Gambar 1' ada.",
+    "Klasifikasi INTERNAL, footer tanpa label klasifikasi (sesuai aturan H); acuan berlabel RESTRICTED karena klasifikasi acuan RESTRICTED.",
+    "Penanda isi '(USULAN)' muncul 44 kali; didefinisikan di bagian 3 sebagai label isi, bukan placeholder template."
+  ]
+}

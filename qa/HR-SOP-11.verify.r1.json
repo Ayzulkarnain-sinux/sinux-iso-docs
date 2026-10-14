@@ -1,0 +1,51 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 4 butir 4.4, bagian 5, bagian 9",
+   "masalah": "Pemisahan peran gagal untuk dua kasus yang tidak ditangani bagian 9: JA-02 Direktur, yang Atasan Langsungnya Direktur Utama, sehingga Direktur Utama mengusulkan sekaligus memutuskan; JA-15 Office Helper, yang Atasan Langsungnya HRGA Officer, sehingga HRGA Officer memeriksa kelengkapan usulannya sendiri.",
+   "bukti": "SNX-HR-ORG-01 kolom Melapor ke: 'JA-02 ... Direktur Utama (JA-01)', 'JA-15 ... HRGA Officer (JA-12)'. Butir 4.4: 'Atasan Langsung mengusulkan, HR Manager memeriksa dan merekomendasikan, lalu Direktur Utama menetapkan keputusan (USULAN).' Bagian 9 hanya menangani Atasan Langsung berlabel menunggu konfirmasi atau terlibat pelanggaran, dan karyawan terkait yang memegang peran HR Manager atau HRGA Officer."
+  },
+  {
+   "lokasi": "Bagian 3 definisi Penurunan kinerja; butir 4.2",
+   "masalah": "Jalur penurunan kinerja belum bisa dijalankan karena definisinya bergantung pada ambang yang belum ditetapkan. Ini diungkap jujur dan berlabel USULAN, jadi kriteria tetap terpenuhi secara prosedur, tetapi perlu masuk open item Laporan_Run.",
+   "bukti": "Definisi: 'Hasil penilaian kinerja karyawan yang berada di bawah ambang pada butir 4.2.' Butir 4.2: 'Ambang hasil penilaian kinerja dan lama pelaksanaan rencana perbaikan kinerja belum ditetapkan.'"
+  },
+  {
+   "lokasi": "Purpose, Scope, butir 4.8, bagian 5, butir 6.5",
+   "masalah": "Satu hal disebut dengan dua istilah (§6a.7): 'uraian tanggung jawab posisi tujuan' dan 'uraian posisi tujuan'. Satu rekaman juga disebut 'data jabatan' di Scope tetapi 'data kepegawaian' di 6.5. Istilah itu tidak ada di tabel Definisi.",
+   "bukti": "Purpose: 'Karyawan menerima uraian tanggung jawab posisi tujuannya'; Scope: 'sampai pembaruan data jabatan, termasuk penyerahan uraian tanggung jawab posisi tujuan'; 6.5 langkah 1: 'Berikan uraian posisi tujuan'; 6.5 langkah 3: 'Perbarui posisi dan tanggal berlaku di data kepegawaian'."
+  },
+  {
+   "lokasi": "Butir 4.9, Purpose, bagian 9",
+   "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui (§6a.1/§6a.6). Tidak berulang cukup sering untuk menjadi pemblokir.",
+   "bukti": "4.9: 'Hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan lewat prosedur itu' (pengaju = Atasan Langsung, langkah 6.5 butir 6). Purpose: 'karyawan diberi kesempatan menanggapi usulan'. Bagian 9: 'Penilaian berlanjut setelah ...', 'Usulan diproses setelah ...'."
+  },
+  {
+   "lokasi": "Butir 4.4",
+   "masalah": "Kalimatnya melebihi isi prosedur. HRGA Officer tidak punya langkah di 6.4 dan baru mengarsipkan sekali di 6.5 langkah 4.",
+   "bukti": "4.4: 'HRGA Officer mencatat dan mengarsipkan setiap tahap (butir 6.3 sampai 6.5).' Tabel 6.4 hanya berisi PIC HR Manager dan Direktur Utama."
+  },
+  {
+   "lokasi": "Bagian 4 dan bagian 6",
+   "masalah": "Isi bagian 4 dan bagian 6 berulang (§6a.6). Butir 4.4, 4.5, dan 4.8 menulis ulang langkah 6.3 sampai 6.5 hampir kata per kata. Masalah ringan.",
+   "bukti": "4.8: 'karyawan terkait menerima uraian posisi tujuan dan mengonfirmasi secara tertulis bahwa ia memahaminya sebelum tanggal berlaku' sama dengan 6.5 langkah 1 dan 2."
+  },
+  {
+   "lokasi": "Bagian 3 definisi Pelanggaran aturan perusahaan",
+   "masalah": "Definisinya generik ('ketentuan tertulis SINUX yang berlaku'). SNX-HR-JA-01 butir 4.10 sudah merujuk Peraturan Perusahaan (Pasal 22, 29, 31), jadi rujukan itu tersedia di set dokumen. Keputusannya tetap pada Legal dan Aziz (notes O1).",
+   "bukti": "specs/HR-JA-01.json butir 4.10: '... (Peraturan Perusahaan Pasal 29)'. Notes O1: 'Sumber tidak menyebut ketentuan tertulis mana ...'."
+  },
+  {
+   "lokasi": "Bagian 11, Acuan standar",
+   "masalah": "Label 'dikonfirmasi konsultan' bisa dibaca seolah konsultan sudah mengonfirmasi. 'menunggu konfirmasi konsultan' lebih tepat. Label ini konvensi bersama di 12 spec, jadi perbaikannya lintas dokumen.",
+   "bukti": "'Status acuan klausul: (USULAN, dikonfirmasi konsultan)'."
+  },
+  {
+   "lokasi": "Tabel Approval dan badan dokumen (cek g)",
+   "masalah": "Tidak ada masalah. Nama dan jabatan sesuai data_conflicts: Samuel Kristanto Utomo / President Director hanya di blok approval, 'Direktur Utama' di badan, Aziz = HR Manager, Sita Nadia Salsabila Widodo = HRGA Officer. Ke-15 cacat audit HR-JA-001 dibahas di notes/HR-SOP-11.md. Konfirmasi data_conflicts yang belum selesai (jabatan Aziz, ejaan dan sebutan Samuel) tercatat sebagai O8.",
+   "bukti": "Approval: 'Sita Nadia Salsabila Widodo / HRGA Officer', 'Aziz Priyo Widakdo / HR Manager', 'Samuel Kristanto Utomo / President Director'. Notes bagian 'Penanganan cacat context/audit' butir 1 sampai 15."
+  }
+ ]
+}
