@@ -3,9 +3,9 @@
  "runbook": "v19-e",
  "defaults_version": "v21",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W4",
+ "current_wave": "W7",
  "last_guide_seen": 0,
- "watchdog_trigger_id": "trig_016gtk8gvGiD669oTp8YERqR",
+ "watchdog_trigger_id": "trig_01RBVjRrymMTgNFkNkymM1wz",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -1601,8 +1601,10 @@
    "verify_verdict": "PASS",
    "loops": 2,
    "usulan_count": 34,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:49:44Z",
+   "open_items": [
+    "Sweep (b): r3 nonblocking, klien vs pelanggan, kualifier C1.1 terpangkas, pasif, pengulangan Istilah dan Petunjuk"
+   ],
+   "updated_at": "2026-10-14T23:49:47Z",
    "pen_agent": "a58a04d78c3d99607",
    "ooxml": "PASSED",
    "fix_queued": "0"
@@ -2534,6 +2536,10 @@
   {
    "at": "2026-10-14T23:32Z",
    "event": "trig_01N9q5etFzehY1qRX9qtcaz4 fired while active; run continued; new trig_016gtk8gvGiD669oTp8YERqR fires 2026-10-15T00:18Z"
+  },
+  {
+   "at": "2026-10-14T23:50Z",
+   "event": "checkpoint W6: deleted trig_016gtk8gvGiD669oTp8YERqR, new trig_01RBVjRrymMTgNFkNkymM1wz fires 2026-10-15T00:35Z"
   }
  ]
 }

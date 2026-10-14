@@ -1,6 +1,6 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:33:50Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:49:47Z)
 
-Wave berjalan: W4. Hitungan state: {'DONE': 47, 'LINT_PASS': 1, 'IN_PROGRESS': 5, 'QUEUED': 17, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 4.
+Wave berjalan: W4. Hitungan state: {'DONE': 52, 'LINT_PASS': 1, 'IN_PROGRESS': 5, 'QUEUED': 12, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 4.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
@@ -51,17 +51,17 @@ Wave berjalan: W4. Hitungan state: {'DONE': 47, 'LINT_PASS': 1, 'IN_PROGRESS': 5
 | ISMS-FRM-02 | W5 | DONE | SNX-ISMS-FRM-02 Security Incident Investigation Records (Rev00 DRAFT).xlsx | PASS | 11 | 0 |
 | ISMS-FRM-03 | W5 | DONE | SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | LEG-REG-01 | W6 | DONE | SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx | PASS | 13 | 1 |
-| LEG-FRM-01 | W6 | LINT_PASS | SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx | - | 33 | 0 |
-| LEG-FRM-02 | W6 | IN_PROGRESS | - | - | 0 | 0 |
-| LEG-FRM-03 | W6 | IN_PROGRESS | - | - | 0 | 0 |
-| LEG-REG-02 | W6 | IN_PROGRESS | - | - | 0 | 0 |
-| LEG-RPT-01 | W6 | IN_PROGRESS | - | - | 0 | 0 |
-| HR-FRM-01 | W7 | IN_PROGRESS | - | - | 0 | 0 |
-| HR-FRM-02 | W7 | QUEUED | - | - | 0 | 0 |
-| HR-RPT-01 | W7 | QUEUED | - | - | 0 | 0 |
-| FAT-FRM-01 | W7 | QUEUED | - | - | 0 | 0 |
-| FAT-RPT-02 | W7 | QUEUED | - | - | 0 | 0 |
-| LEG-REG-03 | W7 | QUEUED | - | - | 0 | 0 |
+| LEG-FRM-01 | W6 | DONE | SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx | PASS | 34 | 1 |
+| LEG-FRM-02 | W6 | DONE | SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx | PASS | 21 | 1 |
+| LEG-FRM-03 | W6 | DONE | SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx | PASS | 33 | 1 |
+| LEG-REG-02 | W6 | DONE | SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx | PASS | 16 | 1 |
+| LEG-RPT-01 | W6 | DONE | SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx | PASS | 34 | 1 |
+| HR-FRM-01 | W7 | LINT_PASS | SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx | - | 13 | 0 |
+| HR-FRM-02 | W7 | IN_PROGRESS | - | - | 0 | 0 |
+| HR-RPT-01 | W7 | IN_PROGRESS | - | - | 0 | 0 |
+| FAT-FRM-01 | W7 | IN_PROGRESS | - | - | 0 | 0 |
+| FAT-RPT-02 | W7 | IN_PROGRESS | - | - | 0 | 0 |
+| LEG-REG-03 | W7 | IN_PROGRESS | - | - | 0 | 0 |
 | LEG-RPT-02 | W7 | QUEUED | - | - | 0 | 0 |
 | LEG-REG-04 | W7 | QUEUED | - | - | 0 | 0 |
 | COM-FRM-01 | W7 | QUEUED | - | - | 0 | 0 |
