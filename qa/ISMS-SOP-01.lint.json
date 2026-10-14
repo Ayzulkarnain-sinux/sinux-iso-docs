@@ -1,0 +1,9 @@
+{
+ "file": "out/08_ISMS/SNX-ISMS-SOP-01 Information Security Incident Management (Rev00 DRAFT).docx",
+ "mode": "sop",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "5 butir (USULAN) menunggu ACC"
+ ]
+}

@@ -470,7 +470,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-ISMS-SOP-01",
    "out_path": "out/08_ISMS/SNX-ISMS-SOP-01 Information Security Incident Management (Rev00 DRAFT).docx",
    "sources": [
@@ -491,11 +491,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 9,
    "open_items": [],
-   "updated_at": "2026-10-14T22:30:02Z",
+   "updated_at": "2026-10-14T22:33:39Z",
    "pen_agent": "a8fbd98da58cb5bbc",
    "ooxml": "PASSED"
   },
