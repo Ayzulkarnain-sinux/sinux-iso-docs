@@ -142,8 +142,8 @@
    },
    {
     "butir": "Sebutan Amirull Yusuf Zulkarnain",
-    "pakai": "blok tanda tangan: 'Direktur' (HR-JA-001); badan dokumen Ops dan ISMS yang menyebut peran eskalasi COO: tulis 'Direktur (COO)' pada sebutan pertama, sesudahnya 'COO'",
-    "sumber_lain": "dokumen Ops dan ISMS menulis 'COO, Amirull Yusuf Zulkarnain'",
+    "pakai": "blok tanda tangan: 'Direktur' (HR-JA-001); badan dokumen departemen mana pun yang menyebut peran COO (Ops, ISMS, Legal, FAT, Commercial): tulis 'Direktur (COO)' pada sebutan pertama, sesudahnya 'COO'",
+    "sumber_lain": "dokumen Ops dan ISMS menulis 'COO, Amirull Yusuf Zulkarnain'; SOP Divisi Legal menulis 'Direksi/COO'",
     "dasar": "HR-JA-001 dan dokumen Ops",
     "konfirmasi": "owner"
    },

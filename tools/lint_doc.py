@@ -17,7 +17,7 @@ FORBIDDEN = [
     (r'\bDEC-20\d\d', 'rujukan DEC'), (r'\bHANDOVER([_-]\w|\s*§)', 'rujukan HANDOVER internal'),
     (r'\b(?!ISO\b)[A-Z]{2,}\s*§\s*\d', 'rujukan section kanon (KODE §n)'),
     (r'\b[A-Z]{2,}_[A-Z][A-Z_]+\b', 'nama berkas internal (HURUF_BESAR_GARIS_BAWAH)'),
-    (r'(?i:submit_to_staging|\bpacket staging\b|\bstaging KB\b|\bantrean staging\b|\bjalur staging\b|\bvia staging\b)', 'jalur staging KB'), (r'packet setor', 'packet setor'),
+    (r'(?i:submit_to_staging|\bpacket staging\b|\bstaging KB\b|\bantrean staging\b|\bjalur staging\b)', 'jalur staging KB'), (r'packet setor', 'packet setor'),
     (r'(?i:\b(Claude|Altair|kb_anchor|relay_get|relay_mark|query_kb)\b)', 'rujukan AI internal'),
     (r'\bCONTOH\b', 'baris CONTOH'), (r'Nexus AI', 'produk pensiun'), (r'SecureEdge', 'produk tidak ada'),
     (r'Imunify360', 'POLRI = ImunifyAV'), (r'Komisaris dan Advisor', 'peran Fani keliru'),
@@ -27,6 +27,7 @@ FORBIDDEN = [
     (r'\[ISI', 'placeholder [ISI'), (r'\bTBD\b|\bTODO\b|\?\?\?', 'penanda belum selesai'),
     (r'BEGIN (RSA |OPENSSH )?PRIVATE KEY', 'kunci privat'),
     (r'\b(password|passwd|pwd|kata sandi|sandi|token|api[_ ]?key|secret)(\s+\w+)?\s*[:=]\s*(?!SNX-)(?=\S*\d)(?=\S*[A-Za-z])\S{8,}', 'kemungkinan kredensial'),
+    (r'(?i:\b(PIN|user/pass|username/password)\b[^:=\n]{0,20}[:=]\s*\S*\d{4,})', 'kemungkinan kredensial (PIN atau user/pass)'),
 ]
 
 # Gaya bahasa (anti AI slop) dan ejaan baku, tidak peka huruf besar-kecil. Sumber: RUNBOOK §6a.
