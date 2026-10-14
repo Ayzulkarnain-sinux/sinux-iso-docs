@@ -150,6 +150,18 @@ def label_footer(d, classification):
                     break
 
 
+def dedupe_bookmarks(d):
+    """Hapus bookmark ber-id ganda hasil klon paragraf (Word menganggap id ganda tidak valid)."""
+    for tag in (qn('w:bookmarkStart'), qn('w:bookmarkEnd')):
+        seen = set()
+        for el in list(d.element.body.iter(tag)):
+            i = el.get(qn('w:id'))
+            if i in seen:
+                el.getparent().remove(el)
+            else:
+                seen.add(i)
+
+
 def render_flow(spec, out_png):
     f = spec['flow']
     lines = ['digraph G {', f"rankdir={f.get('rankdir', 'LR')}; compound=true; newrank=true;",
@@ -358,6 +370,7 @@ def main():
             fill_table(docx.table.Table(el, d._body), rest[0], header=rest[1])
         anchor.addnext(el)
         anchor = el
+    dedupe_bookmarks(d)
     label_footer(d, cfg.get('classification', 'INTERNAL'))
     d.save(out)
 
@@ -504,6 +517,7 @@ def render_generic(tpl, spec, out):
                 add_picture_capped(docx.text.paragraph.Paragraph(pe, d._body), png)
                 if b['flow'].get('caption'):
                     add(make_para(ptmpl, b['flow']['caption']))
+    dedupe_bookmarks(d)
     label_footer(d, cfg.get('classification', 'INTERNAL'))
     d.save(out)
 

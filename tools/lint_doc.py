@@ -26,6 +26,29 @@ FORBIDDEN = [
     (r'(password|passwd|pwd|token|api[_ ]?key|secret)\s*[:=]\s*\S+', 'kemungkinan kredensial'),
 ]
 
+# Gaya bahasa (anti AI slop) dan ejaan baku, tidak peka huruf besar-kecil. Sumber: RUNBOOK §6a.
+STYLE = [
+    (r'\b(era digital|era modern|dewasa ini)\b', 'pembuka generik'),
+    (r'\b(sangat|amat) penting (untuk|bagi)\b', 'penegasan kosong'),
+    (r'memegang peran(an)? (yang )?(sangat )?penting', 'penegasan kosong'),
+    (r'\b(holistik|sinergi|bersinergi)\b', 'kata kosong'),
+    (r'secara komprehensif', 'kata kosong'),
+    (r'tidak hanya .{1,80}? tetapi juga', 'paralelisme negatif'),
+    (r'(perlu|penting untuk) dicatat bahwa', 'frasa pengisi'),
+    (r'dengan demikian,? dapat disimpulkan', 'penutup generik'),
+    (r'\b(seamless|robust|leverage|cutting-edge|state-of-the-art|best-in-class|world-class|game[- ]changer|next-level)\b', 'kosakata AI'),
+    (r'\b(kelas dunia|terdepan di industri|revolusioner)\b', 'klaim tanpa bukti'),
+    (r'\b(semoga bermanfaat|mari kita)\b', 'gaya obrolan'),
+    ('[\U0001F300-\U0001FAFF☀-➿]', 'emoji'),
+    (r'\bresiko\b', 'ejaan: risiko'), (r'\b(menganalisa|analisa)\b', 'ejaan: analisis'),
+    (r'\bpraktek\b', 'ejaan: praktik'), (r'\baktifitas\b', 'ejaan: aktivitas'), (r'\bijin\b', 'ejaan: izin'),
+    (r'\bmerubah\b', 'ejaan: mengubah'), (r'\bsekedar\b', 'ejaan: sekadar'), (r'\bobyek\b', 'ejaan: objek'),
+    (r'\bstandarisasi\b', 'ejaan: standardisasi'), (r'\bkwalitas\b', 'ejaan: kualitas'),
+    (r'\b(dibawah|diatas|didalam|diluar|kedalam)\b', 'ejaan: kata depan dipisah'),
+]
+# Sisa isi dummy/uji; tidak berlaku untuk berkas uji ber-nomor SNX-UJI-.
+DUMMY = r'Nama Penyusun|Nama Pemeriksa|uji render|lorem ipsum|isi dummy'
+
 
 def all_text(d):
     parts = []
@@ -53,6 +76,18 @@ def main():
         if m:
             fails.append(f'terlarang ({why}): "{m.group(0)[:40]}"')
 
+    for pat, why in STYLE:
+        m = re.search(pat, txt, flags=re.I)
+        if m:
+            fails.append(f'gaya ({why}): "{m.group(0)[:40]}"')
+    if not (d.tables and len(d.tables[0].rows) > 2 and 'SNX-UJI-' in ' '.join(c.text for r in d.tables[0].rows for c in r.cells)):
+        m = re.search(DUMMY, txt, flags=re.I)
+        if m:
+            fails.append(f'sisa isi uji/dummy: "{m.group(0)}"')
+    for tag in ('w:bookmarkStart', 'w:bookmarkEnd'):
+        ids = [el.get(qn('w:id')) for el in d.element.body.iter(qn(tag))]
+        if len(ids) != len(set(ids)):
+            fails.append(f'id {tag} ganda (docx tidak valid untuk Word)')
     # identitas, status, tanda tangan
     ident = {r.cells[0].text.strip(): r.cells[1].text.strip() for r in d.tables[0].rows if len(r.cells) > 1}
     if ident.get('Document Status') != 'Draft':
