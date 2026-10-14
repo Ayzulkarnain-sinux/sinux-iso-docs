@@ -97,7 +97,7 @@
   "live_rows": 87,
   "worklist_rows": 88
  },
- "prompt_addendum": "Tambahan mutu bahasa (permintaan owner: humanize, tanpa AI slop; turunan skill antislop-copywriting, melengkapi RUNBOOK §6a, tidak menggantikannya):\n- Spesifik hanya dari sumber. Jangan menambah fakta, angka, nama, tanggal, atau sistem agar teks terdengar meyakinkan; bila tidak ada sumber, tulis versi polos atau beri label (USULAN).\n- Hindari: atribusi kabur (\"praktik terbaik industri\", \"para ahli\") tanpa sumber; frasa otoritas semu (\"pada intinya\", \"yang terpenting\", \"secara fundamental\"); benda diberi kata kerja manusia (\"sistem memutuskan\", \"data menunjukkan bahwa kita\"); kelompok tiga yang dipaksakan; ekor penegas (\"tanpa terkecuali\", \"tanpa kompromi\"); rentang palsu (\"dari hulu ke hilir\", \"dari awal hingga akhir dan segala di antaranya\"); sinonim berganti untuk satu hal; tebal, huruf kapital, atau tanda kutip untuk penekanan; frasa pengisi (\"dalam rangka\", \"adapun\", \"perlu diketahui\", \"hal ini dikarenakan\"); lindung nilai bertumpuk (\"dapat berpotensi\"); penutup positif generik.\n- Panjang kalimat bervariasi wajar; langkah prosedur tetap satu tindakan, satu pelaku.\n- T1: suara tim dipertahankan; kalimat tim yang sudah jelas tidak diganti hanya agar terdengar rapi.\n- Em-dash dilarang; en-dash tidak dipakai sebagai penyambung kalimat (untuk rentang tulis \"sampai\").\nPelajaran pilot W0 (temuan verifikator yang wajib dicegah sejak draf pertama):\n- Bagian 3 hanya berisi arti istilah; aturannya di bagian 4. Kalimat yang sama tidak disalin ke dua bagian; satu fakta disebut sekali di tempat paling tepat, bagian lain merujuk nomor butirnya.\n- Definisi tidak melingkar (istilah tidak dipakai untuk mendefinisikan dirinya sendiri).\n- Satu istilah untuk satu hal di seluruh dokumen (definisi, langkah, SLA, rekaman). Nama peran persis sama dengan tabel peran bagian 5; tidak ada \"Lead\" atau \"tim\" tanpa keterangan.\n- Angka dari sumber dipakai pada lingkupnya; perluasan ke aktivitas lain diberi label (USULAN).\n- Bagian 9: tiap penanganan menyebut pelakunya. Kontrol pengganti hanya bila ada di sumber; bila tidak, open item.\n- Peran yang menetapkan dan peran yang mencatat dibedakan konsisten di bagian 4, 5, dan 6.\n- Tiap kode dokumen yang dirujuk di badan dokumen tercantum di tabel Dokumen terkait bagian 11 (mode generic: bagian Dokumen terkait).\n- Scope menyebut yang dikecualikan bila sumber menyebutnya; bila sumber diam, tulis pengecualian yang jelas dari kriteria baris itu atau catat open item.\n- xlsx: legenda dan butir Cara pakai yang menjelaskan baris CONTOH (warna biru muda, \"hapus baris CONTOH\") dikosongkan atau ditulis ulang, karena baris CONTOH sudah dihapus; baris riwayat revisi ganda dikosongkan; rumus tidak diubah kecuali sumber jelas salah (catat USULAN).\n- Ejaan baku tambahan: komersial (bukan komersil), diagnosis (bukan diagnosa), efektif, kualitas, sistem, kategori, frekuensi; Kesimpulan 1 sampai 2 kalimat (RUNBOOK §6a.4).\n- Badan dokumen tidak memuat frasa meta proses penyusunan (\"dokumen sumber\", \"sumber tim\", \"penyusun\", \"draf ini\"); rujuk dokumen lain dengan kode SNX atau nama berkasnya. Jangan menyatakan sesuatu \"belum ada\" atau \"belum berdokumen\" bila checklist menandai baris itu ada (TRUE/on review); tulis \"dalam peninjauan\" atau rujuk dokumennya.",
+ "prompt_addendum": "Tambahan mutu bahasa (permintaan owner: humanize, tanpa AI slop; turunan skill antislop-copywriting, melengkapi RUNBOOK §6a, tidak menggantikannya):\n- Spesifik hanya dari sumber. Jangan menambah fakta, angka, nama, tanggal, atau sistem agar teks terdengar meyakinkan; bila tidak ada sumber, tulis versi polos atau beri label (USULAN).\n- Hindari: atribusi kabur (\"praktik terbaik industri\", \"para ahli\") tanpa sumber; frasa otoritas semu (\"pada intinya\", \"yang terpenting\", \"secara fundamental\"); benda diberi kata kerja manusia (\"sistem memutuskan\", \"data menunjukkan bahwa kita\"); kelompok tiga yang dipaksakan; ekor penegas (\"tanpa terkecuali\", \"tanpa kompromi\"); rentang palsu (\"dari hulu ke hilir\", \"dari awal hingga akhir dan segala di antaranya\"); sinonim berganti untuk satu hal; tebal, huruf kapital, atau tanda kutip untuk penekanan; frasa pengisi (\"dalam rangka\", \"adapun\", \"perlu diketahui\", \"hal ini dikarenakan\"); lindung nilai bertumpuk (\"dapat berpotensi\"); penutup positif generik.\n- Panjang kalimat bervariasi wajar; langkah prosedur tetap satu tindakan, satu pelaku.\n- T1: suara tim dipertahankan; kalimat tim yang sudah jelas tidak diganti hanya agar terdengar rapi.\n- Em-dash dilarang; en-dash tidak dipakai sebagai penyambung kalimat (untuk rentang tulis \"sampai\").\nPelajaran pilot W0 (temuan verifikator yang wajib dicegah sejak draf pertama):\n- Bagian 3 hanya berisi arti istilah; aturannya di bagian 4. Kalimat yang sama tidak disalin ke dua bagian; satu fakta disebut sekali di tempat paling tepat, bagian lain merujuk nomor butirnya.\n- Definisi tidak melingkar (istilah tidak dipakai untuk mendefinisikan dirinya sendiri).\n- Satu istilah untuk satu hal di seluruh dokumen (definisi, langkah, SLA, rekaman). Nama peran persis sama dengan tabel peran bagian 5; tidak ada \"Lead\" atau \"tim\" tanpa keterangan.\n- Angka dari sumber dipakai pada lingkupnya; perluasan ke aktivitas lain diberi label (USULAN).\n- Bagian 9: tiap penanganan menyebut pelakunya. Kontrol pengganti hanya bila ada di sumber; bila tidak, open item.\n- Peran yang menetapkan dan peran yang mencatat dibedakan konsisten di bagian 4, 5, dan 6.\n- Tiap kode dokumen yang dirujuk di badan dokumen tercantum di tabel Dokumen terkait bagian 11 (mode generic: bagian Dokumen terkait).\n- Scope menyebut yang dikecualikan bila sumber menyebutnya; bila sumber diam, tulis pengecualian yang jelas dari kriteria baris itu atau catat open item.\n- xlsx: legenda dan butir Cara pakai yang menjelaskan baris CONTOH (warna biru muda, \"hapus baris CONTOH\") dikosongkan atau ditulis ulang, karena baris CONTOH sudah dihapus; baris riwayat revisi ganda dikosongkan; rumus tidak diubah kecuali sumber jelas salah (catat USULAN).\n- Ejaan baku tambahan: komersial (bukan komersil), diagnosis (bukan diagnosa), efektif, kualitas, sistem, kategori, frekuensi; Kesimpulan 1 sampai 2 kalimat (RUNBOOK §6a.4).\n- Badan dokumen tidak memuat frasa meta proses penyusunan (\"dokumen sumber\", \"sumber tim\", \"penyusun\", \"draf ini\"); rujuk dokumen lain dengan kode SNX atau nama berkasnya. Jangan menyatakan sesuatu \"belum ada\" atau \"belum berdokumen\" bila checklist menandai baris itu ada (TRUE/on review); tulis \"dalam peninjauan\" atau rujuk dokumennya.\n- Benda (formulir, tabel, aspek, sistem, dokumen, hasil) tidak menjadi pelaku kata kerja manusia (menelaah, memeriksa, meminta, memastikan, menyetujui); pelakunya peran dari bagian Peran, atau rumuskan sebagai isi (\"Formulir ini mencatat ...\", \"Aspek C5 mencakup ...\"). Status terbuka ditulis sebagai open item atau USULAN dengan pemutus berupa nama peran.",
  "counts": {},
  "docs": [
   {
@@ -1598,13 +1598,14 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
-   "loops": 0,
+   "verify_verdict": "FAIL",
+   "loops": 1,
    "usulan_count": 33,
    "open_items": [],
-   "updated_at": "2026-10-14T23:33:23Z",
+   "updated_at": "2026-10-14T23:41:19Z",
    "pen_agent": "a58a04d78c3d99607",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "fix_queued": "0"
   },
   {
    "wl_index": 48,
@@ -1614,9 +1615,9 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-LEG-FRM-02",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1xU1pbum660ZzBCuTA5klCyAVK1iWonLCY0NOejqSlHg",
@@ -1624,13 +1625,14 @@
      "title": "Vendor/Supplier Contract Review Checklist"
     }
    ],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 21,
    "open_items": [],
-   "updated_at": "2026-10-14T23:24:31Z",
-   "pen_agent": "aab72d9fbe45df535"
+   "updated_at": "2026-10-14T23:41:31Z",
+   "pen_agent": "aab72d9fbe45df535",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 49,
@@ -1666,9 +1668,9 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-REG-02",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1ysIL0ytnspFGsYpSolSnuBpCG_MFE9IoiTJIhWfIIhA",
@@ -1676,13 +1678,14 @@
      "title": "Legal Risk Register"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 16,
    "open_items": [],
-   "updated_at": "2026-10-14T23:26:42Z",
-   "pen_agent": "adba0b54b654ef887"
+   "updated_at": "2026-10-14T23:40:28Z",
+   "pen_agent": "adba0b54b654ef887",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 51,
@@ -1738,7 +1741,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-FRM-02",
    "out_path": null,
    "sources": [],
@@ -1747,7 +1750,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:40:28Z",
+   "pen_agent": "af534ab6b544a3ea6"
   },
   {
    "wl_index": 54,
@@ -1757,7 +1761,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-RPT-01",
    "out_path": null,
    "sources": [],
@@ -1766,7 +1770,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:41:19Z",
+   "pen_agent": "a659092717855c2b3"
   },
   {
    "wl_index": 55,

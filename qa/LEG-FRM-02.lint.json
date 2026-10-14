@@ -1,0 +1,9 @@
+{
+ "file": "out/04_Legal/SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "19 butir (USULAN) menunggu ACC"
+ ]
+}
