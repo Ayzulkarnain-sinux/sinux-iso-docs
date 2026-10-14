@@ -1,0 +1,22 @@
+{
+  "verdict": "PASS",
+  "pages": 15,
+  "checks": {
+    "A": "ok: sampul 3 baris tengah (STANDARD OPERATIONAL PROCEDURE / DEPARTMENT HUMAN RESOURCES / Promotion), 'No : SNX-HR-SOP-10' = Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat Sinux Office + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, label berurutan sama dengan acuan (Company Name s.d. Review Period + baris kosong akhir seperti acuan), nilai terisi, Effective Date kosong, Status Draft, Classification INTERNAL",
+    "C": "ok: Revision History baris 00 'Draft awal untuk review dan pengesahan', Approval 3 baris nama/jabatan terisi (Prepared/Reviewed/Approved), kolom Signature kosong",
+    "D": "ok: daftar isi (Preliminary Section, 1-11, 6.1-6.4) cocok dengan heading di badan dokumen",
+    "E": "ok: 11 heading bernomor berurutan PURPOSE (h5) s.d. RELATED DOCUMENTS & ATTACHMENTS (h14), semua berisi; diagram bagian 7 (h11) utuh, terbaca pada 110 dpi, caption 'Gambar 1. Alur kenaikan jabatan (USULAN)...' ada",
+    "F": "ok: semua tabel menampilkan header kolom, sel isi terisi, teks sel tidak terpotong, lebar kolom wajar (tidak ada kata terpecah per huruf)",
+    "H": "ok: footer tanpa label klasifikasi (dokumen INTERNAL); kata RESTRICTED hanya muncul di teks butir 4.9 (klasifikasi rekaman), bukan label footer; nomor halaman 1-15 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan, nol placeholder [..], nol teks instruksi template, tidak ada halaman kosong",
+    "J": "ok: urutan pembuka (Sampul, Identity Document, Revision History + Approval, Table of Contents) sama dengan acuan; gaya heading bernomor bold kapital, gaya tabel bergaris penuh dengan header bold, posisi header/footer sama dengan acuan"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Halaman 10: sekitar dua pertiga halaman kosong karena bagian 7 (diagram) dipindah utuh ke halaman 11; wajar, bukan halaman kosong.",
+    "Tabel pecah antarhalaman tanpa header berulang dan dengan baris terbelah: Definition (h5-6, baris Penilaian kinerja), Roles (h7-8, baris Atasan Langsung), 6.2 (h8-9), 6.4 (h9-10, butir 3), Exception (h12-13), Rekaman (h14-15, baris 1). Perilaku sama dengan acuan.",
+    "Teks rata kiri-kanan di sel sempit (tabel Roles h7-8, SLA h12) menimbulkan spasi antarkata lebar; acuan menunjukkan perilaku serupa.",
+    "Label di kotak diagram bagian 7 berukuran kecil (kira-kira 6-7 pt saat cetak) namun masih terbaca."
+  ]
+}

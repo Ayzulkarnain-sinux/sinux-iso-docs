@@ -1,0 +1,49 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 5 baris Atasan Langsung; butir 6.4 langkah 5; kebijakan 4.8",
+   "masalah": "Peran tidak konsisten dengan bagian 6: tabel peran memberi Atasan Langsung tanggung jawab mengajukan perubahan hak akses di butir 6.4, tetapi tidak ada langkah 6.4 dengan PIC Atasan Langsung. Kalimat yang ada pasif tanpa pelaku padahal pelakunya diketahui (Atasan Langsung menurut SNX-ISMS-SOP-02).",
+   "bukti": "6.4 langkah 5: 'agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02'; 4.8: 'hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan lewat prosedur itu'; tabel peran: 'mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02 (butir 6.1, 6.3, dan 6.4)'. Saran: tambah langkah 6.4 'Ajukan perubahan hak akses menurut SNX-ISMS-SOP-02 | Atasan Langsung'."
+  },
+  {
+   "lokasi": "Kebijakan 4.4",
+   "masalah": "Klaim cakupan peran HRGA Officer lebih luas dari langkah: tidak ada langkah HRGA Officer di butir 6.3, dan pengarsipan hanya di 6.4 langkah 4.",
+   "bukti": "4.4: 'HRGA Officer mencatat dan mengarsipkan setiap tahap (butir 6.2 sampai 6.4).' Butir 6.3 hanya berisi PIC HR Manager dan Direktur Utama."
+  },
+  {
+   "lokasi": "Kebijakan 4.8 vs Scope dan Dokumen terkait (SNX-HR-SOP-13)",
+   "masalah": "Satu istilah dua makna: 'mutasi' di 4.8 berarti perpindahan peran (definisi SNX-ISMS-SOP-02) dan mencakup kenaikan jabatan, sementara Mutation (SNX-HR-SOP-13) dikecualikan dari SOP ini. Pembaca bisa salah tafsir. Kalimat 'Kenaikan jabatan termasuk di dalamnya' adalah tafsir tanpa label (USULAN), padahal notes U9 menyebutnya USULAN.",
+   "bukti": "4.8: 'SNX-ISMS-SOP-02 mengatur perubahan akses saat mutasi, yaitu perpindahan peran seseorang. Kenaikan jabatan termasuk di dalamnya'; Dokumen terkait: 'SNX-HR-SOP-13 | Mutation: ... dikecualikan dari SOP ini'."
+  },
+  {
+   "lokasi": "Bagian 11, Dokumen terkait, baris SOP Performance Appraisal",
+   "masalah": "Status 'Dalam peninjauan' tidak bersumber. config/worklist.json menandai baris itu HOLD-T3 ('tim menandai ada; proses hanya bila berkas terlihat di ukur ulang W0'); notes open item 8 menyatakan berkas tidak dibaca.",
+   "bukti": "'SOP Performance Appraisal | Dalam peninjauan: penilaian kinerja berkala ...'. Saran: 'Berkas tim, belum bernomor SNX'."
+  },
+  {
+   "lokasi": "Seluruh dokumen (§6a butir 6 dan 7)",
+   "masalah": "Sinonim berganti untuk hal yang sama.",
+   "bukti": "'setelah' (2 kali, bagian 9) dan 'sesudah' (5 kali); Purpose 'uraian tanggung jawab jabatan barunya' vs badan 'uraian jabatan tujuan'; Scope 'pembaruan data jabatan' vs 6.4 'data kepegawaian'."
+  },
+  {
+   "lokasi": "Bagian 11, tabel Rekaman",
+   "masalah": "Tabel rekaman tidak memuat semua keluaran bagian 6 yang berupa rekaman: pemberitahuan keputusan (6.3 langkah 3), uraian jabatan tujuan yang diterima (6.4 langkah 1), pemberitahuan perubahan jabatan (6.4 langkah 5), data kepegawaian yang diperbarui (6.4 langkah 3).",
+   "bukti": "Tabel Rekaman hanya tiga baris: usulan dan lampiran; kesimpulan, kesenjangan, rekomendasi; keputusan dan konfirmasi tertulis."
+  },
+  {
+   "lokasi": "Bagian 9, baris 'Jabatan tujuan belum tercantum ...'",
+   "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui (HRGA Officer atau HR Manager).",
+   "bukti": "'Usulan diproses setelah Direktur Utama mengesahkan revisi itu (USULAN).'"
+  }
+ ],
+ "catatan_pemeriksaan": {
+  "fakta_sumber": "Cocok dengan SINUX_Job_Analysis_2026.docx (1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1): wewenang JA-14 E.4 (rekomendasi hiring, salary action, disciplinary action ke approver), JA-12 E, JA-08 E, JA-01 atasan organ perusahaan, Batasan umum persetujuan tertulis, Authority Matrix, KPI Matrix, masa pengalaman minimum sesudah job evaluation. Rujukan butir 4.4, 4.5, 4.6, 4.7 SNX-HR-JA-01 cocok dengan specs/HR-JA-01.json. Kolom 'Melapor ke' dan label 'menunggu konfirmasi' ada di specs/HR-ORG-01.json. Kode SNX-HR-SOP-11/12/13, SNX-HR-FRM-01/02, SNX-ISMS-SOP-02 cocok dengan config/worklist.json. Semua angka SLA, retensi, lokasi, klasifikasi rekaman berlabel (USULAN).",
+  "kriteria": "Description baris 'SOP Promotion' terpenuhi: prosedur 6.1 sampai 6.4, prestasi (4.3, 6.2 langkah 2-3), kualifikasi (4.2, 6.2 langkah 4-5), tanggung jawab jabatan baru (4.5, 4.7, 6.4).",
+  "runbook_0_6": "Blok approval persis config/defaults.json; status Draft, Rev 00, tanggal efektif dan tanda tangan kosong; nol rujukan internal AI, nol kredensial, nol residu konsultan; klasifikasi INTERNAL sesuai worklist; acuan klausul di bagian 11 berlabel USULAN.",
+  "data_conflicts": "Aziz = HR Manager, Sita Nadia Salsabila Widodo, Samuel Kristanto Utomo / President Director di blok approval dan Direktur Utama di badan; nol 'CEO', nol 'Kristianto', nol 'HR Lead'.",
+  "audit": "context/audit/iso-sinux-supdocs-hr-2026-10-14.md bagian 5 (15 butir) ditangani satu per satu di notes/HR-SOP-10.md bagian 4.",
+  "bahasa": "lint pass (qa/HR-SOP-10.lint.json); pemindaian ulang: nol em-dash, en-dash, tanda kutip, frasa terlarang §6a butir 5, ejaan tidak baku §6a butir 8; tebal hanya pada judul template dan subjudul bagian 11; langkah terpanjang di bawah 25 kata."
+ }
+}

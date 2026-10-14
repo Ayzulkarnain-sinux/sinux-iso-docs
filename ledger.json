@@ -838,7 +838,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-SOP-10",
    "out_path": "out/02_HR/SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx",
    "sources": [
@@ -849,11 +849,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 36,
    "open_items": [],
-   "updated_at": "2026-10-14T23:06:08Z",
+   "updated_at": "2026-10-14T23:08:24Z",
    "pen_agent": "a475d481a3c9e4aa4",
    "ooxml": "PASSED"
   },
