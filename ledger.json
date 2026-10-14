@@ -1587,7 +1587,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-FRM-01",
    "out_path": "out/04_Legal/SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx",
    "sources": [
@@ -1599,10 +1599,10 @@
    ],
    "lint_pass": true,
    "verify_verdict": "FAIL",
-   "loops": 1,
+   "loops": 2,
    "usulan_count": 33,
    "open_items": [],
-   "updated_at": "2026-10-14T23:41:19Z",
+   "updated_at": "2026-10-14T23:44:48Z",
    "pen_agent": "a58a04d78c3d99607",
    "ooxml": "PASSED",
    "fix_queued": "0"
@@ -1644,7 +1644,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-FRM-03",
    "out_path": "out/04_Legal/SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx",
    "sources": [
@@ -1655,11 +1655,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 33,
    "open_items": [],
-   "updated_at": "2026-10-14T23:41:54Z",
+   "updated_at": "2026-10-14T23:45:09Z",
    "pen_agent": "abeadc3abe601e504",
    "ooxml": "PASSED"
   },
@@ -1685,8 +1685,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 16,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:43:17Z",
+   "open_items": [
+    "Kriteria terpenuhi pada struktur; 8 area risiko kosong karena sumber kosong, Legal mengisi (verify)"
+   ],
+   "updated_at": "2026-10-14T23:43:20Z",
    "pen_agent": "adba0b54b654ef887",
    "ooxml": "PASSED"
   },
@@ -1698,9 +1700,9 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-RPT-01",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA",
@@ -1708,13 +1710,14 @@
      "title": "Legal Compliance Monitoring & Corrective Action"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 34,
    "open_items": [],
-   "updated_at": "2026-10-14T23:30:15Z",
-   "pen_agent": "a66c8287ed6e4a192"
+   "updated_at": "2026-10-14T23:44:07Z",
+   "pen_agent": "a66c8287ed6e4a192",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 52,
@@ -1724,19 +1727,19 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-FRM-01",
    "out_path": "out/02_HR/SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": null,
-   "loops": 0,
+   "loops": 1,
    "usulan_count": 9,
    "open_items": [],
-   "updated_at": "2026-10-14T23:42:14Z",
+   "updated_at": "2026-10-14T23:44:48Z",
    "pen_agent": "a2a3686f5a29a9f33",
    "ooxml": "PASSED",
-   "pdf_queued": 1
+   "pdf_queued": "0"
   },
   {
    "wl_index": 53,

@@ -1,0 +1,1238 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "LEG-FRM-03",
+    "doc_type_cover": "FORM",
+    "doc_type_label": "Form",
+    "number": "SNX-LEG-FRM-03",
+    "department": "Legal",
+    "title": "Data Protection & Confidentiality Compliance Review",
+    "process_owner": "Line Manager Legal",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Staff Legal",
+      "reviewed": "Line Manager Legal",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Lingkup",
+      "blocks": [
+        {
+          "h2": "Tujuan"
+        },
+        {
+          "p": "Form ini dipakai Departemen Legal untuk meninjau kepatuhan SINUX dalam mengelola data pribadi dan informasi rahasia terhadap ketentuan hukum yang berlaku, kewajiban kontraktual, serta kebijakan dan prosedur internal SINUX yang relevan."
+        },
+        {
+          "p": "Departemen Legal meninjau untuk mengidentifikasi potensi ketidaksesuaian, menilai kecukupan pengaturan dan pelaksanaan pengelolaan data, dan menetapkan tindak lanjut atas temuan yang memerlukan perbaikan."
+        },
+        {
+          "h2": "Lingkup"
+        },
+        {
+          "p": "Tinjauan mencakup pengelolaan data pribadi dan informasi rahasia dalam kegiatan operasional SINUX, termasuk delapan hal berikut apabila relevan."
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Hal yang ditinjau"
+            ],
+            "rows": [
+              [
+                "1",
+                "Pengumpulan dan penggunaan data pribadi."
+              ],
+              [
+                "2",
+                "Penyimpanan, akses, dan pengamanan data."
+              ],
+              [
+                "3",
+                "Pengungkapan atau pembagian data kepada pihak lain."
+              ],
+              [
+                "4",
+                "Penggunaan vendor atau penyedia layanan pihak ketiga."
+              ],
+              [
+                "5",
+                "Pemenuhan kewajiban kerahasiaan berdasarkan kontrak."
+              ],
+              [
+                "6",
+                "Penanganan insiden pelindungan data dan keamanan informasi."
+              ],
+              [
+                "7",
+                "Penyimpanan, retensi, pengembalian, dan penghapusan data."
+              ],
+              [
+                "8",
+                "Pemenuhan kewajiban hukum dan kontraktual terkait pelindungan data."
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              14.5
+            ]
+          }
+        },
+        {
+          "p": "Butir berikut dikecualikan dari form ini (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Butir yang dikecualikan",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "Telaah seluruh klausul kontrak",
+                "Dilakukan dengan SNX-LEG-FRM-01 untuk kontrak pelanggan dan SNX-LEG-FRM-02 untuk kontrak vendor. Form ini hanya mencakup klausul kerahasiaan dan pelindungan data pribadi di kontrak itu."
+              ],
+              [
+                "Prosedur penanganan insiden",
+                "Ada di SNX-ISMS-SOP-01. Form ini hanya mencakup pemeriksaan penerapannya."
+              ],
+              [
+                "Penetapan tingkat klasifikasi",
+                "Ada di SNX-ISMS-PRO-01."
+              ],
+              [
+                "Penetapan periode retensi",
+                "Usulannya ada di SNX-LEG-SOP-03."
+              ]
+            ],
+            "widths_cm": [
+              5.0,
+              11.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {
+          "h2": "Istilah"
+        },
+        {
+          "table": {
+            "header": [
+              "Istilah",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "(USULAN)",
+                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+              ],
+              [
+                "Aspek",
+                "Satu hal yang ditelaah pada satu baris daftar evaluasi di bagian 8."
+              ],
+              [
+                "Bukti",
+                "Dokumen atau rekaman yang diperiksa sebagai dasar status satu aspek."
+              ],
+              [
+                "Data pribadi",
+                "Data tentang orang perseorangan yang teridentifikasi atau dapat diidentifikasi."
+              ],
+              [
+                "Departemen Legal",
+                "Line Manager Legal dan Staff Legal."
+              ],
+              [
+                "Hapus aman",
+                "Penghapusan yang tidak menyisakan informasi yang dapat dipulihkan, menurut SNX-ISMS-PRO-01."
+              ],
+              [
+                "Informasi rahasia",
+                "Informasi SINUX atau pihak lain yang wajib dijaga kerahasiaannya berdasarkan perjanjian kerahasiaan, kontrak, atau kebijakan internal SINUX."
+              ],
+              [
+                "Insiden pelindungan data",
+                "Insiden keamanan informasi yang melibatkan data pribadi."
+              ],
+              [
+                "Kegiatan pengelolaan data",
+                "Satu kegiatan di SINUX yang melibatkan pengumpulan, pemakaian, penyimpanan, pembagian, atau penghapusan data pribadi atau informasi rahasia, dan dicatat satu baris di inventaris."
+              ],
+              [
+                "Kewajiban",
+                "Hal yang harus SINUX penuhi berdasarkan ketentuan hukum, kontrak, atau kebijakan internal."
+              ],
+              [
+                "Klasifikasi",
+                "Salah satu dari empat tingkat SNX-ISMS-PRO-01: PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET."
+              ],
+              [
+                "Lembar tinjauan",
+                "Salinan terisi form ini untuk satu periode tinjauan."
+              ],
+              [
+                "NDA",
+                "Non-Disclosure Agreement: perjanjian kerahasiaan antara SINUX dan pihak lain."
+              ],
+              [
+                "Pemrosesan",
+                "Kegiatan terhadap data pribadi, termasuk mengumpulkan, menyimpan, memakai, mengungkapkan, dan menghapusnya."
+              ],
+              [
+                "Pengendali",
+                "Pihak yang menentukan tujuan dan mengendalikan pemrosesan data pribadi."
+              ],
+              [
+                "PIC Unit Kerja",
+                "Orang yang unit kerja tunjuk sebagai penanggung jawab satu kegiatan pengelolaan data, ditulis pada kolom Unit Kerja/PIC."
+              ],
+              [
+                "Prosesor",
+                "Pihak yang memproses data pribadi atas nama pengendali."
+              ],
+              [
+                "Subjek data",
+                "Orang perseorangan yang pada dirinya melekat data pribadi."
+              ],
+              [
+                "Temuan",
+                "Ketidaksesuaian atau kekurangan pada satu aspek yang memerlukan tindak lanjut."
+              ],
+              [
+                "UU PDP",
+                "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Arti data pribadi, subjek data, pemrosesan, pengendali, dan prosesor ditulis dengan bahasa sederhana (USULAN). Line Manager Legal mencocokkannya dengan teks UU PDP sebelum form ini disahkan."
+        },
+        {
+          "h2": "Status Pemeriksaan"
+        },
+        {
+          "p": "Kolom Status pada daftar evaluasi diisi dengan salah satu dari lima nilai berikut."
+        },
+        {
+          "table": {
+            "header": [
+              "Status",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Sesuai",
+                "Persyaratan yang ditinjau telah dipenuhi berdasarkan bukti yang diperiksa."
+              ],
+              [
+                "Tidak Sesuai",
+                "Ditemukan ketidaksesuaian terhadap persyaratan yang berlaku atau ketentuan yang telah ditetapkan."
+              ],
+              [
+                "Perlu Perbaikan",
+                "Terdapat kekurangan yang perlu diperbaiki atau diperjelas."
+              ],
+              [
+                "Belum Diverifikasi",
+                "Pemeriksaan belum selesai atau bukti pendukung belum tersedia."
+              ],
+              [
+                "Tidak Berlaku",
+                "Aspek tersebut tidak relevan dengan kegiatan perusahaan yang ditinjau."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Dasar Peninjauan",
+      "blocks": [
+        {
+          "p": "Peninjauan dilakukan dengan mengacu pada ketentuan yang relevan, termasuk enam dasar berikut. Kolom Diverifikasi Pada ditambahkan (USULAN) dan diisi menurut Ketentuan butir 2."
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Dasar",
+              "Diverifikasi Pada"
+            ],
+            "rows": [
+              [
+                "1",
+                "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi.",
+                ""
+              ],
+              [
+                "2",
+                "Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik beserta perubahannya, sepanjang relevan.",
+                ""
+              ],
+              [
+                "3",
+                "Peraturan pelaksana terkait pelindungan data pribadi dan sistem elektronik yang berlaku. Daftar peraturannya dicatat di SNX-LEG-REG-03 (USULAN).",
+                ""
+              ],
+              [
+                "4",
+                "Perjanjian kerahasiaan, kontrak pelanggan, kontrak vendor, dan perjanjian lain yang relevan.",
+                ""
+              ],
+              [
+                "5",
+                "Kebijakan, prosedur, dan standar internal SINUX yang telah ditetapkan.",
+                ""
+              ],
+              [
+                "6",
+                "Persyaratan ISO/IEC 27001 yang relevan dengan ruang lingkup sistem manajemen keamanan informasi SINUX. Klausul dan kontrol yang dirujuk ada di bagian 12.",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.2,
+              11.8,
+              3.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Ketentuan Tinjauan",
+      "blocks": [
+        {
+          "p": "1. Staff Legal menyusun satu lembar tinjauan untuk setiap periode tinjauan. Periode tinjauan adalah setahun sekali (USULAN)."
+        },
+        {
+          "p": "2. Staff Legal memverifikasi dan memperbarui dasar peninjauan di bagian 3 pada saat pemeriksaan dilakukan, lalu mengisi kolom Diverifikasi Pada."
+        },
+        {
+          "p": "3. PIC Unit Kerja menyampaikan kepada Staff Legal jenis data, tujuan penggunaan, serta sistem atau lokasi penyimpanan tiap kegiatan pengelolaan data di unitnya."
+        },
+        {
+          "p": "4. Staff Legal mengisi inventaris di bagian 7 dari keterangan PIC Unit Kerja."
+        },
+        {
+          "p": "5. Staff Legal menulis di inventaris jenis data dan tingkat klasifikasinya menurut SNX-ISMS-PRO-01, bukan isi datanya."
+        },
+        {
+          "p": "6. VP Tech Operation and Services memberi keterangan teknis yang diminta Staff Legal untuk aspek kelompok B (USULAN)."
+        },
+        {
+          "p": "7. Staff Legal memeriksa tiap aspek di bagian 8 terhadap bukti dan mengisi kolom Status dengan satu dari lima status di bagian 2."
+        },
+        {
+          "p": "8. Staff Legal menulis di kolom Catatan/Tindak Lanjut nama rekaman dan lokasi bukti yang diperiksa."
+        },
+        {
+          "p": "9. Staff Legal memberi status Belum Diverifikasi, bukan Sesuai, pada aspek yang belum punya bukti."
+        },
+        {
+          "p": "10. Staff Legal mencatat setiap aspek berstatus Tidak Sesuai atau Perlu Perbaikan sebagai satu baris temuan di bagian 9 (USULAN)."
+        },
+        {
+          "p": "11. Line Manager Legal menetapkan PIC dan target penyelesaian tiap temuan, dan Staff Legal mencatatnya di bagian 9 (USULAN)."
+        },
+        {
+          "p": "12. Line Manager Legal memeriksa lembar tinjauan yang sudah terisi dan menulis rekomendasi di bagian 10."
+        },
+        {
+          "p": "13. Line Manager Legal memilih satu opsi kesimpulan di bagian 10 menurut status aspek (USULAN). Opsi 2 dipilih bila ada aspek berstatus Tidak Sesuai atau Perlu Perbaikan, opsi 3 bila tidak ada aspek seperti itu tetapi ada yang berstatus Belum Diverifikasi, dan opsi 1 bila semua aspek berstatus Sesuai atau Tidak Berlaku."
+        },
+        {
+          "p": "14. Staff Legal menyimpan lembar tinjauan terisi di folder Google Drive departemen Legal dengan klasifikasi paling rendah RESTRICTED (Internal) (USULAN, SNX-LEG-SOP-01 butir 4.24)."
+        }
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Peran",
+              "Tugas pada form ini"
+            ],
+            "rows": [
+              [
+                "Staff Legal",
+                "Menyusun lembar tinjauan, mengisi inventaris dan daftar evaluasi dari bukti, mencatat temuan, dan menyimpan lembar terisi (Ketentuan butir 1, 2, 4, 5, 7 sampai 11, dan 14). Mengisi tahapan Disusun oleh pada bagian 10."
+              ],
+              [
+                "Line Manager Legal",
+                "Pemilik form ini (USULAN). Menetapkan PIC dan target penyelesaian temuan, memeriksa lembar tinjauan, menulis rekomendasi, dan memilih opsi kesimpulan (Ketentuan butir 11 sampai 13). Mengisi tahapan Diperiksa oleh pada bagian 10 (USULAN)."
+              ],
+              [
+                "VP Tech Operation and Services",
+                "Memberi keterangan teknis tentang sistem, hak akses, penyimpanan, dan pencatatan aktivitas (Ketentuan butir 6). Peran ini dipetakan dari unit IT (USULAN)."
+              ],
+              [
+                "PIC Unit Kerja",
+                "Menyampaikan keterangan kegiatan pengelolaan data di unitnya (Ketentuan butir 3) dan menjalankan tindakan temuan yang ditetapkan atas jabatannya (Ketentuan butir 11)."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar tinjauan tercatat di bagian 10. Jabatan penyetuju lembar tinjauan belum ditetapkan; Legal memutuskannya (USULAN)."
+        }
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {
+          "p": "1. Semua sel data kosong. Staff Legal mengisinya dari bukti yang diperiksa dan menambah baris bila perlu."
+        },
+        {
+          "p": "2. Nomor baris di tabel 7.1 dan 7.2 sama: satu baris untuk satu kegiatan pengelolaan data."
+        },
+        {
+          "p": "3. Kolom Klasifikasi memuat salah satu dari empat tingkat di bagian 2 (USULAN: kolom baru)."
+        },
+        {
+          "p": "4. Kolom Unit Kerja/PIC di bagian 7 dan kolom PIC di bagian 9 memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+        },
+        {
+          "p": "5. Kolom Status Verifikasi memuat Sudah diverifikasi atau Belum Diverifikasi, sesuai hasil mencocokkan baris dengan bukti (USULAN)."
+        },
+        {
+          "p": "6. Kolom Status di bagian 8 memuat satu dari lima status di bagian 2, ditulis persis seperti di tabel itu."
+        },
+        {
+          "p": "7. Aspek yang tidak relevan dengan kegiatan SINUX diberi status Tidak Berlaku, dan alasannya ditulis di kolom Catatan/Tindak Lanjut."
+        },
+        {
+          "p": "8. Kolom Temuan di bagian 9 diawali kode aspek di bagian 8 (USULAN)."
+        },
+        {
+          "p": "9. Di bagian 10, Line Manager Legal mengganti kotak ☐ dengan ☒ pada satu opsi kesimpulan."
+        },
+        {
+          "p": "10. Nama, jabatan, tanggal, dan tanda tangan pada tabel Persetujuan Tinjauan diisi oleh masing-masing pihak yang bersangkutan."
+        }
+      ]
+    },
+    {
+      "h": "Inventaris Kegiatan Pengelolaan Data",
+      "blocks": [
+        {
+          "p": "Tabel 7.1 dan 7.2 memuat kegiatan pengelolaan data yang ditinjau. Kolom Klasifikasi ditambahkan agar tingkat kerahasiaan tiap jenis data terlihat (USULAN)."
+        },
+        {
+          "h2": "Kegiatan dan Data"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Kegiatan",
+              "Jenis Data/Informasi",
+              "Klasifikasi",
+              "Tujuan Penggunaan"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.2,
+              3.8,
+              4.2,
+              2.8,
+              4.0
+            ]
+          }
+        },
+        {
+          "h2": "Penanggung Jawab dan Penyimpanan"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Unit Kerja/PIC",
+              "Sistem/Lokasi Penyimpanan",
+              "Status Verifikasi"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.2,
+              5.0,
+              6.8,
+              3.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Daftar Evaluasi Kepatuhan",
+      "blocks": [
+        {
+          "p": "Daftar ini memuat 23 aspek dalam enam kelompok untuk evaluasi kepatuhan SINUX terhadap kewajiban pelindungan data pribadi dan kerahasiaan informasi. Tabel berikut memuat kewajiban yang diuji tiap kelompok (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Kelompok",
+              "Kewajiban yang diuji"
+            ],
+            "rows": [
+              [
+                "A. Identifikasi dan Dasar Pemrosesan Data",
+                "Pelindungan data pribadi"
+              ],
+              [
+                "B. Akses dan Pengamanan Data",
+                "Pelindungan data pribadi dan kerahasiaan informasi"
+              ],
+              [
+                "C. Kerahasiaan Informasi",
+                "Kerahasiaan informasi"
+              ],
+              [
+                "D. Transfer Data",
+                "Pelindungan data pribadi dan kerahasiaan informasi"
+              ],
+              [
+                "E. Retensi dan Penghapusan Data",
+                "Pelindungan data pribadi dan kerahasiaan informasi"
+              ],
+              [
+                "F. Hak Subjek Data dan Penanganan Insiden",
+                "Pelindungan data pribadi"
+              ]
+            ],
+            "widths_cm": [
+              8.0,
+              8.0
+            ]
+          }
+        },
+        {
+          "p": "Isi kolom Hal yang Diperiksa berstatus (USULAN) sampai Line Manager Legal menyetujuinya. Aspek bertanda (USULAN) pada kolom Aspek yang Ditelaah adalah aspek tambahan."
+        },
+        {
+          "h2": "Kelompok A: Identifikasi dan Dasar Pemrosesan Data"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "A.1",
+                "Inventarisasi Data",
+                "Semua kegiatan pengolahan data pribadi atau informasi rahasia tercatat di inventaris (bagian 7), lengkap dengan jenis data dan lokasi penyimpanannya.",
+                "",
+                ""
+              ],
+              [
+                "A.2",
+                "Tujuan Pemrosesan",
+                "Tiap kegiatan di inventaris punya tujuan penggunaan yang tertulis, dan data dipakai hanya untuk tujuan itu.",
+                "",
+                ""
+              ],
+              [
+                "A.3",
+                "Dasar Pemrosesan",
+                "Tiap kegiatan pemrosesan data pribadi punya dasar pemrosesan yang tertulis (SNX-LEG-SOP-01 butir 4.21).",
+                "",
+                ""
+              ],
+              [
+                "A.4",
+                "Minimalisasi Data",
+                "Data yang dikumpulkan terbatas pada yang diperlukan untuk tujuan pemrosesannya.",
+                "",
+                ""
+              ],
+              [
+                "A.5",
+                "Peran Pengendali atau Prosesor (USULAN)",
+                "Peran SINUX sebagai pengendali atau prosesor tercatat untuk tiap kontrak atau proyek yang melibatkan data pribadi (SNX-LEG-SOP-01 butir 4.21).",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              3.5,
+              6.1,
+              2.2,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok B: Akses dan Pengamanan Data"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "B.1",
+                "Hak Akses",
+                "Akses ke data pribadi dan informasi rahasia diminta lewat tiket dan diberikan menurut kebutuhan kerja dengan approval yang tercatat (SNX-ISMS-SOP-02).",
+                "",
+                ""
+              ],
+              [
+                "B.2",
+                "Pengelolaan Akun",
+                "Akun pengguna dibuat, diubah, dan dicabut sesuai persetujuan, dan akses karyawan yang berhenti dicabut paling lambat pada hari terakhir kerja (SNX-ISMS-SOP-02).",
+                "",
+                ""
+              ],
+              [
+                "B.3",
+                "Pengamanan Penyimpanan",
+                "Data disimpan di sistem resmi SINUX dengan akses terbatas per peran sesuai tingkat klasifikasinya (SNX-ISMS-PRO-01 butir 4.8).",
+                "",
+                ""
+              ],
+              [
+                "B.4",
+                "Pemindahan Data",
+                "Data RESTRICTED (Internal) dan SECRET dikirim lewat kanal resmi kepada penerima yang berhak, tidak lewat kanal pribadi (SNX-LEG-SOP-01 butir 4.23; SNX-ISMS-PRO-01 butir 4.9).",
+                "",
+                ""
+              ],
+              [
+                "B.5",
+                "Pencatatan Aktivitas",
+                "Akses dan perubahan data di sistem yang menyimpan data pribadi tercatat dalam log, dan log itu dapat ditunjukkan sebagai bukti.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              3.5,
+              6.1,
+              2.2,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok C: Kerahasiaan Informasi"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "C.1",
+                "Perjanjian Kerahasiaan",
+                "Pihak luar yang menerima informasi RESTRICTED (Internal) terikat NDA atau kontrak yang berlaku (SNX-ISMS-PRO-01 butir 4.10).",
+                "",
+                ""
+              ],
+              [
+                "C.2",
+                "Kewajiban",
+                "Kewajiban kerahasiaan SINUX dalam tiap NDA atau kontrak tercatat, dan PIC Unit Kerja yang menjalankannya mengetahui kewajiban itu.",
+                "",
+                ""
+              ],
+              [
+                "C.3",
+                "Pengungkapan Informasi",
+                "Informasi RESTRICTED (Internal) dibagikan ke pihak luar hanya dengan persetujuan yang disyaratkan SNX-ISMS-PRO-01 butir 4.10.",
+                "",
+                ""
+              ],
+              [
+                "C.4",
+                "Penggunaan Informasi",
+                "Informasi pihak lain dipakai hanya untuk tujuan yang disebut dalam perjanjian, dan informasi pelanggan diperlakukan paling rendah RESTRICTED (Internal) (SNX-ISMS-PRO-01 butir 4.3).",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              3.5,
+              6.1,
+              2.2,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok D: Transfer Data"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "D.1",
+                "Klausul Kontrak",
+                "Kontrak yang melibatkan pemindahan data pribadi ke pihak lain memuat klausul kerahasiaan, hak audit, dan kepatuhan UU PDP (Kuesioner Keamanan butir 9, SNX-ISMS-FRM-03).",
+                "",
+                ""
+              ],
+              [
+                "D.2",
+                "Perjanjian Pemrosesan Data (USULAN)",
+                "Pihak yang memproses data pribadi untuk SINUX terikat perjanjian pemrosesan data (SNX-LEG-SOP-01 prosedur 6.7).",
+                "",
+                ""
+              ],
+              [
+                "D.3",
+                "Dasar dan Lokasi Transfer (USULAN)",
+                "Dasar transfer dan lokasi data di pihak penerima tercatat untuk tiap transfer, termasuk lokasi di luar wilayah Indonesia.",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              3.5,
+              6.1,
+              2.2,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok E: Retensi dan Penghapusan Data"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "E.1",
+                "Masa Retensi",
+                "Tiap jenis data punya masa retensi tertulis yang sesuai peraturan, kebijakan SINUX, dan kontrak (SNX-LEG-SOP-01 butir 4.27; usulan periode di SNX-LEG-SOP-03).",
+                "",
+                ""
+              ],
+              [
+                "E.2",
+                "Penghapusan Data",
+                "Data yang melewati masa retensi dihapus aman, kertasnya dihancurkan, dan pemusnahan media dicatat dengan berita acara (SNX-ISMS-PRO-01 butir 4.16; SNX-ISMS-SOP-04).",
+                "",
+                ""
+              ],
+              [
+                "E.3",
+                "Pengembalian Data",
+                "Data milik pihak lain dikembalikan atau dihapus saat kontrak berakhir sesuai kontrak, dan prosesnya tercatat (Kuesioner Keamanan butir 10, SNX-ISMS-FRM-03).",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              3.5,
+              6.1,
+              2.2,
+              3.1
+            ]
+          }
+        },
+        {
+          "h2": "Kelompok F: Hak Subjek Data dan Penanganan Insiden"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Ditelaah",
+              "Hal yang Diperiksa",
+              "Status",
+              "Catatan/Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "F.1",
+                "Pemenuhan Hak Subjek Data",
+                "Permintaan subjek data atas data pribadinya diterima lewat jalur yang SINUX tetapkan, tercatat, dan dijawab sesuai peraturan yang berlaku.",
+                "",
+                ""
+              ],
+              [
+                "F.2",
+                "Penanganan Insiden",
+                "Insiden pelindungan data ditangani dan dicatat menurut SNX-ISMS-SOP-01.",
+                "",
+                ""
+              ],
+              [
+                "F.3",
+                "Pemberitahuan Insiden",
+                "Direktur (COO) dan Departemen Legal memutuskan pemberitahuan kepada subjek data dan lembaga berwenang menurut UU PDP, paling lambat 3 x 24 jam sejak diketahui (SNX-ISMS-SOP-01).",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              3.5,
+              6.1,
+              2.2,
+              3.1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Ringkasan Temuan",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Temuan",
+              "Risiko/Dampak",
+              "Tindakan yang Diperlukan",
+              "PIC",
+              "Target Penyelesaian"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.2,
+              3.4,
+              2.8,
+              3.4,
+              2.0,
+              3.2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Hasil dan Rekomendasi Tinjauan",
+      "blocks": [
+        {
+          "h2": "Kesimpulan Pemeriksaan"
+        },
+        {
+          "table": {
+            "header": [
+              "Opsi",
+              "Kesimpulan Pemeriksaan"
+            ],
+            "rows": [
+              [
+                "☐ 1",
+                "Tidak ditemukan ketidaksesuaian berdasarkan pemeriksaan dan bukti yang tersedia."
+              ],
+              [
+                "☐ 2",
+                "Ditemukan ketidaksesuaian yang memerlukan tindakan perbaikan."
+              ],
+              [
+                "☐ 3",
+                "Terdapat aspek yang belum dapat disimpulkan karena bukti belum tersedia atau verifikasi belum selesai."
+              ]
+            ],
+            "widths_cm": [
+              2.0,
+              14.0
+            ]
+          }
+        },
+        {
+          "h2": "Rekomendasi"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Rekomendasi"
+            ],
+            "rows": [
+              [
+                "1",
+                ""
+              ],
+              [
+                "2",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.2,
+              14.8
+            ]
+          }
+        },
+        {
+          "h2": "Persetujuan Tinjauan"
+        },
+        {
+          "table": {
+            "header": [
+              "Tahapan",
+              "Nama/Jabatan",
+              "Tanggal",
+              "Tanda Tangan"
+            ],
+            "rows": [
+              [
+                "Disusun oleh",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Diperiksa oleh",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Disetujui oleh",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              3.5,
+              5.5,
+              3.0,
+              4.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Kode",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "SNX-LEG-SOP-01",
+                "Legal Operational. Butir 4.21 memuat kewajiban meninjau kontrak atau proyek yang melibatkan data pribadi, butir 4.23 sampai 4.27 memuat aturan pengiriman, penyimpanan, akses, dan retensi dokumen legal, dan prosedur 6.7 memuat hasil tinjauan pelindungan data pribadi yang dicatat di form ini (USULAN)."
+              ],
+              [
+                "SNX-LEG-SOP-03",
+                "Legal Document Control & Retention. Kategori 7 memuat dokumen pelindungan data dan kerahasiaan. Usulan periode retensinya ada di sana."
+              ],
+              [
+                "SNX-LEG-FRM-01",
+                "Customer Contract Review Checklist. Telaah lengkap kontrak pelanggan (USULAN)."
+              ],
+              [
+                "SNX-LEG-FRM-02",
+                "Vendor / Supplier Contract Review Checklist. Telaah lengkap kontrak vendor (USULAN)."
+              ],
+              [
+                "SNX-LEG-REG-03",
+                "Legal & Regulatory Requirements Register. Tempat daftar peraturan pelaksana yang menjadi dasar peninjauan (USULAN)."
+              ],
+              [
+                "SNX-ISMS-PRO-01",
+                "Information Classification & Handling. Tingkat klasifikasi dan aturan penyimpanan, pengiriman, pembagian ke pihak luar, retensi, dan pemusnahan."
+              ],
+              [
+                "SNX-ISMS-SOP-01",
+                "Information Security Incident Management. Penanganan insiden dan batas waktu pemberitahuan kegagalan pelindungan data pribadi."
+              ],
+              [
+                "SNX-ISMS-SOP-02",
+                "User Access Control & Authorization. Pemberian, perubahan, dan pencabutan hak akses."
+              ],
+              [
+                "SNX-ISMS-SOP-04",
+                "IT Asset & Configuration Management. Berita acara pemusnahan media."
+              ],
+              [
+                "SNX-ISMS-FRM-03",
+                "Supplier Technical & Security Evaluation Records. Kuesioner Keamanan butir 9 berisi pertanyaan tentang klausul kerahasiaan, hak audit, dan kepatuhan UU PDP di kontrak. Butir 10 berisi pertanyaan tentang proses pengembalian dan penghapusan data saat kontrak berakhir."
+              ],
+              [
+                "SNX-HR-ORG-01",
+                "Struktur Organisasi SINUX. Tempat nama jabatan Line Manager Legal, Staff Legal, dan VP Tech Operation and Services ditetapkan. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09 (USULAN, butir K-13)."
+              ]
+            ],
+            "widths_cm": [
+              4.0,
+              12.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {
+          "h2": "Rekaman"
+        },
+        {
+          "table": {
+            "header": [
+              "Rekaman",
+              "Lokasi dan pemilik",
+              "Retensi"
+            ],
+            "rows": [
+              [
+                "Lembar tinjauan terisi: inventaris, daftar evaluasi, temuan, hasil, dan persetujuan",
+                "Folder Google Drive departemen Legal (Ketentuan butir 14). Pemilik: Staff Legal. Klasifikasi paling rendah RESTRICTED (Internal).",
+                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+              ],
+              [
+                "Bukti yang diperiksa tiap aspek",
+                "Tetap di sistem asalnya. Lokasinya ditulis Staff Legal di kolom Catatan/Tindak Lanjut. Pemilik: PIC Unit Kerja (USULAN).",
+                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              7.0,
+              4.5
+            ]
+          }
+        },
+        {
+          "h2": "Acuan ISO"
+        },
+        {
+          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+        },
+        {
+          "table": {
+            "header": [
+              "Standar",
+              "Klausul",
+              "Hubungan dengan form ini"
+            ],
+            "rows": [
+              [
+                "ISO 9001:2015",
+                "7.5.3 Pengendalian informasi terdokumentasi",
+                "Lembar tinjauan dicatat, disimpan, dan dapat ditelusuri lewat bagian 10."
+              ],
+              [
+                "ISO 9001:2015",
+                "8.4 Pengendalian proses, produk, dan jasa yang disediakan eksternal",
+                "Kelompok C dan D mencakup kerahasiaan dan transfer data pada vendor."
+              ],
+              [
+                "ISO 9001:2015",
+                "8.5.3 Properti milik pelanggan atau penyedia eksternal",
+                "Kelompok B sampai E mencakup penjagaan data pelanggan dan informasi pihak lain yang dipegang SINUX."
+              ],
+              [
+                "ISO 9001:2015",
+                "10.2 Ketidaksesuaian dan tindakan korektif",
+                "Bagian 9 memuat temuan, PIC, dan target penyelesaian."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.12 Klasifikasi informasi",
+                "Kolom Klasifikasi pada inventaris di bagian 7."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.14 Transfer informasi",
+                "Aspek B.4 dan kelompok D."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.15 Kontrol akses dan 5.18 Hak akses",
+                "Aspek B.1 dan B.2."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.20 Penanganan keamanan informasi dalam perjanjian pemasok",
+                "Aspek D.1."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.26 Respons terhadap insiden keamanan informasi",
+                "Aspek F.2 dan F.3."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
+                "Dasar peninjauan di bagian 3 dan seluruh daftar evaluasi."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.33 Perlindungan rekaman",
+                "Aspek E.1 dan rekaman lembar tinjauan."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.34 Privasi dan pelindungan data pribadi",
+                "Kelompok A, D, E, dan F."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.36 Kepatuhan terhadap kebijakan, aturan, dan standar keamanan informasi",
+                "Tinjauan berkala yang diatur Ketentuan butir 1."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 6.6 Perjanjian kerahasiaan atau non-disclosure",
+                "Aspek C.1 dan C.2."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 8.10 Penghapusan informasi",
+                "Aspek E.2 dan E.3."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 8.15 Pencatatan (logging)",
+                "Aspek B.5."
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              5.8,
+              6.6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {
+          "p": "Form ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau form ini setiap tahun, dan Staff Legal menyusun satu lembar tinjauan untuk tiap periode tinjauan (Ketentuan butir 1)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+ "file": "out/04_Legal/SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "29 butir (USULAN) menunggu ACC"
+ ]
+}

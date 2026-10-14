@@ -1,0 +1,59 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 8, aspek A.1 (Hal yang Diperiksa)",
+      "masalah": "Istilah tidak konsisten (RUNBOOK 6a butir 7): 'kegiatan pengolahan data' dipakai sekali, padahal Istilah mendefinisikan 'Kegiatan pengelolaan data' dan 'Pemrosesan'.",
+      "bukti": "A.1: 'Semua kegiatan pengolahan data pribadi atau informasi rahasia tercatat di inventaris (bagian 7)'. 'pengolahan' hanya muncul 1 kali di seluruh docx."
+    },
+    {
+      "lokasi": "Bagian 6, Petunjuk Pengisian butir 5",
+      "masalah": "Kapitalisasi nilai tidak seragam, dan 'Belum Diverifikasi' juga dipakai sebagai nilai kolom Status bagian 8, sehingga dua kolom berbeda berbagi satu nilai.",
+      "bukti": "'Kolom Status Verifikasi memuat Sudah diverifikasi atau Belum Diverifikasi'; tabel Status Pemeriksaan bagian 2 juga memuat 'Belum Diverifikasi'."
+    },
+    {
+      "lokasi": "Bagian 5 Peran, paragraf penutup",
+      "masalah": "'Legal' bukan istilah yang didefinisikan (Istilah memakai 'Departemen Legal'). Selain itu notes/LEG-FRM-03.md U23 dan Open items 3 menyebut Samuel sebagai pemutus jabatan penyetuju lembar tinjauan, sedangkan dokumen menulis Legal yang memutuskan.",
+      "bukti": "'Jabatan penyetuju lembar tinjauan belum ditetapkan; Legal memutuskannya (USULAN).' Notes: 'U23 | Jabatan penyetuju lembar tinjauan | Peran | Samuel'."
+    },
+    {
+      "lokasi": "Bagian 8, aspek B.1 dan B.2",
+      "masalah": "Dua sinonim bergantian untuk satu hal di baris berdampingan (RUNBOOK 6a butir 6).",
+      "bukti": "B.1: 'dengan approval yang tercatat'; B.2: 'dicabut sesuai persetujuan'."
+    },
+    {
+      "lokasi": "Bagian 11, baris SNX-HR-ORG-01; Petunjuk Pengisian butir 4",
+      "masalah": "Fakta kurang tepat: di SNX-HR-ORG-01, Line Manager Legal dan Staff Legal adalah peran di matriks peran. Nama jabatannya 'Legal & Compliance (JA-08/JA-09)'. Petunjuk 4 meminta 'nama jabatan menurut SNX-HR-ORG-01', yang secara harfiah berarti 'Legal & Compliance', bukan nama peran. Kalimat kedua sudah memberi label USULAN K-13.",
+      "bukti": "Docx: 'Tempat nama jabatan Line Manager Legal, Staff Legal, dan VP Tech Operation and Services ditetapkan.' specs/HR-ORG-01.json matriks: ['Line Manager Legal', 'Legal & Compliance (JA-08)', ..., '(USULAN), menunggu konfirmasi (K-13)']."
+    },
+    {
+      "lokasi": "Bagian 3, bagian 7, bagian 8 (paragraf pembuka)",
+      "masalah": "Badan dokumen memuat narasi perubahan seperti 'ditambahkan' atau 'aspek tambahan' tanpa menyebut versi pembandingnya. Pengisi form tidak tahu ditambahkan terhadap versi apa. Label USULAN cukup tanpa narasi revisi.",
+      "bukti": "'Kolom Diverifikasi Pada ditambahkan (USULAN)'; 'Kolom Klasifikasi ditambahkan agar tingkat kerahasiaan tiap jenis data terlihat (USULAN)'; 'Aspek bertanda (USULAN) pada kolom Aspek yang Ditelaah adalah aspek tambahan.'"
+    },
+    {
+      "lokasi": "Bagian 8, aspek E.2 dan B.4",
+      "masalah": "Rujukan SNX-ISMS-PRO-01 diringkas lebih umum daripada sumbernya. Butir 4.16 mewajibkan hapus aman hanya untuk RESTRICTED dan SECRET (INTERNAL cukup hapus biasa), dan butir 4.9 menetapkan kanal yang lebih ketat untuk SECRET (fitur berbagi password manager atau DM yang lalu dihapus). Isi kolom berlabel USULAN, jadi bukan pemblokir.",
+      "bukti": "E.2: 'Data yang melewati masa retensi dihapus aman'; PRO-01 4.16: 'INTERNAL dimusnahkan dengan hapus biasa. RESTRICTED dimusnahkan dengan hapus aman'. B.4: 'RESTRICTED (Internal) dan SECRET dikirim lewat kanal resmi kepada penerima yang berhak'."
+    },
+    {
+      "lokasi": "Bagian 4 Ketentuan butir 2 dan 11",
+      "masalah": "Satu butir memuat dua tindakan atau dua pelaku (RUNBOOK 6a butir 2).",
+      "bukti": "Butir 2: 'memverifikasi dan memperbarui ..., lalu mengisi kolom Diverifikasi Pada'. Butir 11: 'Line Manager Legal menetapkan PIC ..., dan Staff Legal mencatatnya'."
+    },
+    {
+      "lokasi": "Bagian 8, aspek F.3 dibandingkan dengan bagian 5 Peran",
+      "masalah": "Direktur (COO) muncul sebagai pelaku di F.3 tetapi tidak ada di tabel Peran. Ini dapat diterima karena F.3 adalah keadaan yang diperiksa menurut SNX-ISMS-SOP-01, bukan tugas pada form. Sebutan sesuai data_conflicts: 'Direktur (COO)' pada sebutan pertama, dan COO tidak dipakai lagi.",
+      "bukti": "F.3: 'Direktur (COO) dan Departemen Legal memutuskan pemberitahuan ... paling lambat 3 x 24 jam sejak diketahui (SNX-ISMS-SOP-01)'; specs/ISMS-SOP-01.json procedures[5].steps[2]: 'COO dan Legal & Compliance'."
+    }
+  ],
+  "catatan_verifikator": {
+    "sumber": "Teks Drive 1m9mIkrMmiIY4TNmbV7j_rRuXKPUnfiK_EP80myS6lN8 (read_file_content, tanpa komentar) cocok dengan transkripsi audit: 11 bagian, 20 aspek dalam 6 kelompok, 5 status, 3 opsi kesimpulan. Delapan butir lingkup, enam dasar peninjauan, lima status, kolom tabel temuan, dan tiga opsi kesimpulan terbawa utuh ke docx.",
+    "kriteria": "Terpenuhi. Bagian 8 'Daftar Evaluasi Kepatuhan' memuat 23 aspek (20 dari sumber, 3 berlabel USULAN), kolom Hal yang Diperiksa, Status, dan Catatan, serta tabel pemetaan kelompok ke kewajiban pelindungan data pribadi dan kerahasiaan informasi.",
+    "fakta_silang": "Rujukan berikut dicocokkan dengan spec repo dan sesuai: SNX-LEG-SOP-01 butir 4.21, 4.23, 4.24, 4.27, 4.6, dan prosedur 6.7; SNX-ISMS-PRO-01 butir 4.3, 4.8, 4.9, 4.10, dan 4.16; SNX-ISMS-SOP-01 batas 3 x 24 jam dengan pemutus COO dan Legal & Compliance; SNX-ISMS-SOP-02 tentang tiket Service Hub, approval, dan pencabutan paling lambat hari terakhir kerja; SNX-ISMS-SOP-04 tentang berita acara pemusnahan; SNX-LEG-SOP-03 Kategori 7; SNX-HR-ORG-01 butir K-13 dan JA-08/JA-09; Kuesioner butir 9 dan 10 menurut salinan audit isms. Nomor dan judul klausul ISO 9001:2015 dan Annex A ISO/IEC 27001:2022 benar dan berlabel USULAN.",
+    "batas_keras": "Lulus. Status Draft, tanggal efektif dan tanda tangan kosong, tanpa rujukan internal AI, tanpa kredensial, dan tanpa en-dash maupun em-dash. Klasifikasi RESTRICTED (Internal) di footer sesuai worklist. Approved By 'Samuel Kristanto Utomo / President Director'; badan memakai 'Direktur Utama'. Prepared dan Reviewed sesuai defaults LEG. Badan tidak memuat nama orang lain.",
+    "audit": "Ke-14 cacat di context/audit untuk fileId ini, ditambah 3 temuan tambahan, ditangani atau dijelaskan di notes/LEG-FRM-03.md bagian 5.",
+    "lint": "Lint dijalankan ulang oleh verifikator: pass true, fails kosong, warns '29 butir (USULAN) menunggu ACC'."
+  }
+}
