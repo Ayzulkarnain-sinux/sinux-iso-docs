@@ -1,0 +1,70 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Register Risiko B5, B7, B11, B19; Kontrol Dokumen B18",
+      "masalah": "Rujukan silang menggantung: Cara pakai butir 1 menyuruh merujuk ID SNX-ISMS-REG-01, register merujuk AST-001, AST-005, AST-009, AST-012, tetapi keluaran REG-01 tidak memuat satu pun ID AST (baris aset dikosongkan lane REG-01). Hanya 4 dari 15 risiko memakai ID aset.",
+      "bukti": "Pemindaian openpyxl atas out/08_ISMS/SNX-ISMS-REG-01 Information Asset Register (Rev00 DRAFT).xlsx: 0 sel berawalan 'AST-0'. Sudah tercatat di notes Open item 1 dan USULAN 5."
+    },
+    {
+      "lokasi": "Matriks Risiko B24; Register Risiko K6, M6 (ISR-002)",
+      "masalah": "Satu-satunya risiko Kritis (ISR-002, 5 x 4 = 20) berpemilik Lead SOC dengan keputusan Mitigasi, sedangkan B24 mensyaratkan penerimaan risiko hanya oleh COO secara tertulis; tidak ada kolom tenggat atau penerimaan di register ini, dan REG-03 menyebut penerimaan oleh pemilik risiko.",
+      "bukti": "B24: 'Tindakan segera; dilaporkan ke Direktur (COO); penerimaan risiko hanya oleh COO secara tertulis'. Tercatat di notes Open item 5 dan USULAN 3."
+    },
+    {
+      "lokasi": "Register Risiko B12 (ISR-008)",
+      "masalah": "'Notifikasi ticketing system dan monitoring' tidak menyebut sistem tiket SINUX (Zammad untuk Ops, GLPI generalist), padahal RUNBOOK §6 dan §6a.3 meminta sistem disebut. Teks sumber, T1.",
+      "bukti": "Sel B12 sama dengan sumber. Tercatat di notes USULAN 6."
+    },
+    {
+      "lokasi": "Matriks Risiko B23",
+      "masalah": "Merujuk 'register risiko ISMS' yang tidak ada sebagai dokumen terpisah; rujukan kabur.",
+      "bukti": "B23: 'Rencana mitigasi wajib dengan tenggat; dilaporkan ke Head of Operation dan dinaikkan ke register risiko ISMS'. Tercatat di notes USULAN 7."
+    },
+    {
+      "lokasi": "Register Risiko K11 (ISR-007)",
+      "masalah": "Pemilik risiko 'Tech dan Product' adalah nama fungsi, tidak ada di specs/HR-ORG-01.json; lima pemilik lain (Head of Operation, Lead NOC, Lead SOC, Service Delivery Manager, ISMS Coordinator) ada di HR-ORG-01.",
+      "bukti": "grep specs/HR-ORG-01.json: nol kemunculan 'Tech dan Product'. Tercatat di notes USULAN 8."
+    },
+    {
+      "lokasi": "Register Risiko E4, H4; Kontrol Dokumen B18, B21",
+      "masalah": "Huruf 'I' dipakai dua arti (Impact di kolom H, Integrity di kolom CIA); singkatan C, I, A, L, P1 tidak diuraikan di workbook (§6a.7 istilah konsisten).",
+      "bukti": "Header H4 'I', E4 'CIA', B21 '... setelah insiden P1 ...'. Tercatat di notes Open item 7 (HUMAN-VERDICT)."
+    },
+    {
+      "lokasi": "Kontrol Dokumen A32:E32",
+      "masalah": "Baris riwayat revisi tim kedua (review bahasa, keselarasan RTO) dikosongkan. Bukan fakta karangan dan dicatat sebagai USULAN 2, tetapi menghapus catatan tim butuh persetujuan owner.",
+      "bukti": "Diff sel sumber vs keluaran: A32 '00', C32 'Review bahasa dan konsistensi: ... keselarasan RTO dan target pulih' menjadi kosong."
+    },
+    {
+      "lokasi": "Kontrol Dokumen B10, B22; Register Risiko K15",
+      "masalah": "ISMS Coordinator (pemilik dokumen, validator usulan awal, pemilik ISR-011) belum dipetakan ke orang; penyusun di Pengesahan Erik Dwi Yanto. Hubungan Head of Operation dengan VP Tech Operation and Services belum ditetapkan (K-09 HR-ORG-01), padahal B23 melapor ke Head of Operation dan pemeriksa dokumen Fani Fatullah.",
+      "bukti": "B10 'ISMS Coordinator'; B36 'Erik Dwi Yanto / Technical/Operation Engineer L1'; specs/HR-ORG-01.json: 'Hubungan Head of Operation dengan VP Tech Operation and Services (JA-04) belum ditetapkan (K-09).' Tercatat di notes Open item 2."
+    },
+    {
+      "lokasi": "Kontrol Dokumen B12",
+      "masalah": "Acuan ISO 9001:2015 klausul 6.1 mencakup risiko dan peluang, register hanya memuat risiko keamanan informasi tanpa peluang. HUMAN-VERDICT: apakah konsultan menerima pemetaan 6.1 ke register ini. Sama dengan sumber.",
+      "bukti": "B12 'Klausul 6.1'; tidak ada kolom atau baris peluang di sheet mana pun."
+    },
+    {
+      "lokasi": "Kontrol Dokumen B15",
+      "masalah": "Tujuan hanya frasa benda tanpa hasil yang dijaga (§6a.4). Teks sumber, dipertahankan.",
+      "bukti": "B15 'Register penilaian risiko keamanan informasi (ISO/IEC 27001:2022 klausul 6.1.2 dan 8.2).'"
+    },
+    {
+      "lokasi": "Register Risiko D19, F17",
+      "masalah": "Campuran istilah English yang canggung dalam teks tim: 'Encryption disk belum diverifikasi', 'Go-gate production, approval lead'. Minor, T1.",
+      "bukti": "D19 dan F17 sama dengan sumber."
+    }
+  ],
+  "ringkasan_cek": {
+    "a_fakta": "17 sel berubah dari sumber (diff openpyxl sel demi sel, sumber diunduh ulang dari Drive fileId 1skCiIY43Vz6qfT71vEKz55EZFGHVCl4Q); 15 baris risiko, skor, level, rumus, validasi data (4), format kondisional, dan gambar utuh. Semua perubahan bersumber dari defaults.json, data_conflicts, atau sel sumber lain.",
+    "b_karangan": "nihil; tidak ada angka, nama, atau tanggal baru.",
+    "c_kriteria": "Description = nama berkas SNX-ISMS-REG-02_IS_Risk_Assessment_Register.xlsx; keluaran register penilaian risiko dengan kriteria penerimaan, skala L/I, pemilik risiko, CIA, level, penilaian ulang terencana (6.1.2, 8.2). Acuan B12 'Klausul 6.1' dan B13 'Klausul 6.1.2, 8.2' sama dengan checklist.",
+    "d_runbook": "Status Draft, tanggal efektif kosong, tanda tangan kosong, klasifikasi RESTRICTED (Internal) sesuai label sumber, vault 'menunggu konfirmasi Ops', tiga penanda tangan berbeda, nol rujukan internal AI, nol kredensial.",
+    "e_peran": "xlsx tanpa bagian 5/6/8; peran pemilik risiko konsisten antar sheet dan 5 dari 6 ada di HR-ORG-01.",
+    "f_bahasa": "pola FORBIDDEN dan STYLE tools/lint_doc.py plus pola ejaan, em-dash, en-dash atas 323 sel teks: 0 temuan.",
+    "g_data_conflicts": "Erik Dwi Yanto, Fani Fatullah, Samuel Kristanto Utomo / President Director sesuai defaults; sebutan pertama COO di badan 'Direktur (COO)' (Matriks B24). Delapan cacat audit bagian 5 ditangani atau dijelaskan di notes/ISMS-REG-02.md."
+  }
+}
