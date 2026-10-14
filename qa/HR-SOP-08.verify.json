@@ -1,0 +1,59 @@
+{
+  "key": "HR-SOP-08",
+  "document": "out/02_HR/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx",
+  "source": "1i2JaRaQolbKxKL9HjDao2s4F0bzma9-Z (PP - Cuti.docx, read_file_content)",
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Scope kalimat terakhir; pengantar bagian 4; pengantar 6.1 kalimat kedua; Definisi Prorata dan Sistem HR; SLA baris terakhir; bagian 9 baris pertama; Dokumen terkait baris UU 13/2003; sel langkah 6.2-6.7 berbentuk '(USULAN: sumber tidak menyebut ...)'",
+      "masalah": "Catatan penyusun tentang 'sumber' masuk ke badan SOP. Pembaca (auditor, karyawan) tidak tahu 'sumber' yang dimaksud; kalimat ini milik notes, bukan prosedur (RUNBOOK 6a: tulis seperti kepala departemen, bisa dijalankan besok pagi). Berulang, tetapi tidak termasuk pola terlarang 6a.5 dan berfungsi sebagai label USULAN (0.4), jadi nonblocking.",
+      "bukti": "'Hanya pengecualian pertama berasal dari sumber. Sisanya diturunkan dari kriteria aturan dan alur pengajuan berbagai jenis cuti (USULAN).'; 'Aturan di bagian ini diambil dari PP - Cuti BAB VI. ... angka, syarat, dan tenggat sama dengan sumber.'; 'Belum ditetapkan di sumber'; 'Sumber tidak mengatur banding atau pencatatan alasan penolakan.' Saran: cukup label '(USULAN)', pindahkan alasan ke notes."
+    },
+    {
+      "lokasi": "Bagian 9, baris 'Cuti ibadah untuk kedua kalinya atau lebih' dan 'Sakit berkepanjangan saat cuti tahunan'",
+      "masalah": "HR Manager ditetapkan sebagai pelaku tanpa label USULAN, dan kedua tugas ini tidak ada di daftar keputusan HR Manager di tabel peran bagian 5. Sumber Pasal 28 ayat (3) dan Pasal 23 ayat (2) huruf k tidak menyebut pelaku. Baris lain di bagian 9 memakai 'USULAN pelaku'.",
+      "bukti": "'HR Manager menetapkan cuti itu tanpa upah (butir 4.27).'; 'HR Manager menjalankan ketentuan peraturan perundang-undangan dan kebijakan Perusahaan tanpa mengurangi hak normatif pekerja (butir 4.12).' Sumber: 'apabila karyawan akan menjalankan ibadah kembali pada kesempatan berikutnya tidak berhak mendapatkan upah'."
+    },
+    {
+      "lokasi": "Bagian 7 diagram (simpul h dan i di lajur Direktur Utama) lawan 6.7 langkah 3 dan bagian 9",
+      "masalah": "Konsistensi peran (e): diagram menaruh 'Tunda cuti atau panggil kembali' di lajur Direktur Utama, sedangkan 6.7 langkah 3 dan bagian 9 menugaskan pemanggilan kembali ke Atasan langsung.",
+      "bukti": "spec flow: lanes 'Direktur Utama': ['h','i'], i = 'Tunda cuti atau panggil kembali; cuti kompensasi (butir 6.7)'; 6.7 langkah 3 PIC = 'Atasan langsung'."
+    },
+    {
+      "lokasi": "Bagian 5, baris HRGA Officer; 6.4 langkah 1",
+      "masalah": "6.3 langkah 2 dan 6.4 langkah 1 menjadikan HRGA Officer penerima surat keterangan dokter, tetapi tabel peran tidak mencantumkan tugas itu. 6.4 langkah 1 juga tidak berlabel USULAN, padahal 6.3 langkah 2 untuk hal yang sama berlabel 'USULAN: sumber tidak menyebut penerima'.",
+      "bukti": "Tabel peran HRGA Officer: 'Menerima pemberitahuan sakit, haid, penundaan cuti melahirkan, dan kelahiran bayi; ...'; 6.4 langkah 1: 'Serahkan surat keterangan dokter ... kepada HRGA Officer (butir 4.15).' Pasal 33 ayat (1) hanya: 'surat keterangan dokter tersebut harus disetujui oleh Perusahaan'."
+    },
+    {
+      "lokasi": "Scope, kalimat pengecualian",
+      "masalah": "Rujukan pasal kurang tepat: upah lembur diatur di Pasal 22 ayat (4), bukan ayat (1) sampai (3), dan ayat (4) justru dipakai di butir 4.32.",
+      "bukti": "'hari libur resmi dan upah lembur (Pasal 22 ayat (1) sampai (3))'; sumber Pasal 22 ayat (4): 'wajib membayar upah kerja lembur atau memberikan penggantian cuti di hari lain'."
+    },
+    {
+      "lokasi": "Seluruh dokumen (bagian 5, 6, 7, 9)",
+      "masalah": "Istilah tidak konsisten (6a.7): 'butir' dipakai untuk butir kebijakan 4.x dan juga untuk subbagian prosedur 6.x.",
+      "bukti": "'(butir 6.1 sampai 6.7)', '(butir 6.2)', caption 'butir 6.1 dan 6.4' di samping 'butir 4.7', 'butir 4.29'."
+    },
+    {
+      "lokasi": "Bagian 3, Definisi 'Surat Peringatan (SP)'",
+      "masalah": "Singkatan SP1, SP2, SP3 didefinisikan tetapi tidak dipakai; badan dokumen menulis 'Surat Peringatan Pertama/Kedua/Ketiga'.",
+      "bukti": "'Surat sanksi tingkat Pertama (SP1), Kedua (SP2), atau Ketiga (SP3).' lawan 4.34: 'dikenai Surat Peringatan Pertama sampai Surat Peringatan Kedua'."
+    },
+    {
+      "lokasi": "Bagian 8 SLA",
+      "masalah": "Dua baris berisi syarat atau jumlah, bukan waktu.",
+      "bukti": "'Surat keterangan dokter untuk cuti sakit | Karyawan | Untuk sakit lebih dari 1 (satu) hari'; 'Penunjukan penanggung jawab pengganti | Karyawan | Minimal 2 (dua) orang, saat mengajukan cuti'."
+    },
+    {
+      "lokasi": "Bagian 5, baris Atasan langsung",
+      "masalah": "Label USULAN terlalu luas: menyetujui atau menolak permohonan cuti dan menyetujui cuti mendesak berasal dari sumber (Pasal 32 ayat (1), Pasal 23 ayat (2) huruf j); yang USULAN hanya pemanggilan kembali.",
+      "bukti": "'... memanggil kembali karyawan yang sedang cuti (USULAN, butir 6.1, 6.2, dan 6.7).'"
+    },
+    {
+      "lokasi": "Catatan pemeriksaan (bukan cacat)",
+      "masalah": "Hasil yang diperiksa: 35 butir aturan 4.1-4.35 dicocokkan kata per kata dengan teks Drive; semua angka (12, 14, 3 bulan, 6 hari, 30 Juni, 7 hari kerja, 10:00 WIB, 4 bulan, 100/75/50/25%, 3+3 bulan, 1,5 bulan, 2/3/1 hari, 40 hari, 10 minggu) dan rujukan pasal-ayat-huruf cocok. Penomoran ayat/huruf dicek lewat urutan teks read_file_content dan salinan audit (numbering.xml), bukan dekode biner. Penanda tangan dan sebutan sesuai data_conflicts (Samuel Kristanto Utomo: President Director di Approved By, Direktur Utama di badan; Aziz = HR Manager; Sita Nadia Salsabila Widodo = HRGA Officer). JA-01/JA-12 cocok specs/HR-ORG-01.json. Klasifikasi INTERNAL = worklist. Klausul ISO 9001 5.3/7.5.3/8.1 dan 27001 A.6.2/5.33/5.34 benar dan berlabel USULAN. Nol em-dash/en-dash, nol rujukan internal AI (0.6), nol tanda kutip penekanan. Kriteria Description terpenuhi: aturan (bagian 4) dan alur pengajuan (6.1-6.7, diagram, SLA) untuk cuti tahunan, sakit, melahirkan, haid, khusus, ibadah, tanpa dibayar. Cacat audit 1-18 ditangani atau dijelaskan di notes bagian 5.",
+      "bukti": "Teks docx via python-docx; sumber via mcp Google Drive read_file_content; context/audit/iso-sinux-supdocs-hr-2026-10-14.md baris 1259 dst; notes/HR-SOP-08.md."
+    }
+  ]
+}

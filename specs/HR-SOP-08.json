@@ -1,0 +1,571 @@
+{
+ "meta": {
+  "doc_key": "HR-SOP-08",
+  "number": "SNX-HR-SOP-08",
+  "department": "Human Resources",
+  "title": "Company Leaves",
+  "process_owner": "HR Manager",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
+   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini mengatur jenis cuti yang menjadi hak karyawan SINUX, syarat dan dokumen pendukung tiap jenis, serta alur pengajuan dan persetujuannya.",
+  "Hasil yang dijaga: cuti diambil sesuai hak dan syarat di bagian 4, setiap cuti lewat persetujuan atau pemberitahuan sesuai jenisnya, dan pekerjaan yang ditinggalkan punya penanggung jawab pengganti."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk seluruh karyawan SINUX, termasuk calon karyawan tetap dalam masa percobaan, pada jenis cuti berikut: cuti tahunan dan cuti ulang tahun; cuti sakit dan sakit berkepanjangan; cuti haid; cuti melahirkan, keguguran, dan pendampingan istri; cuti khusus; cuti ibadah; cuti tanpa dibayar; serta penggantian cuti untuk kerja pada hari libur resmi.",
+  "Sistem yang tercakup: sistem HR yang dipakai Perusahaan untuk mengajukan cuti.",
+  "Dikecualikan dari SOP ini: bekerja dari rumah (Pasal 31), karena Pasal 31 ayat (1) menyebutnya bukan cuti; hari libur resmi dan upah lembur (Pasal 22 ayat (1) sampai (3)); izin datang terlambat atau meninggalkan pekerjaan pada jam kerja (Pasal 29); dan pemutusan hubungan kerja. Hanya pengecualian pertama berasal dari sumber. Sisanya diturunkan dari kriteria aturan dan alur pengajuan berbagai jenis cuti (USULAN)."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Alfa",
+   "Tidak masuk kerja tanpa izin atau keterangan yang sah. PP - Cuti BAB VI juga menyebutnya mangkir dan tidak masuk kerja tanpa keterangan."
+  ],
+  [
+   "Atasan langsung",
+   "Jabatan yang menjadi tujuan laporan langsung seorang karyawan menurut SNX-HR-ORG-01."
+  ],
+  [
+   "Cuti khusus",
+   "Izin tidak masuk kerja dengan upah tetap dibayar untuk peristiwa yang tercantum di butir 4.25."
+  ],
+  [
+   "Cuti tanpa dibayar",
+   "Cuti untuk kebutuhan pribadi yang tidak disertai pembayaran upah."
+  ],
+  [
+   "Direktur Utama",
+   "Jabatan JA-01 di SNX-HR-ORG-01. PP - Cuti BAB VI menyebut Pimpinan Perusahaan; SOP ini membacanya sebagai Direktur Utama (USULAN)."
+  ],
+  [
+   "HPL",
+   "Hari Perkiraan Lahiran."
+  ],
+  [
+   "HRGA Officer",
+   "Jabatan JA-12 di SNX-HR-ORG-01. PP - Cuti BAB VI menyebut HR; SOP ini membacanya sebagai HRGA Officer (USULAN)."
+  ],
+  [
+   "Masa percobaan",
+   "Masa awal bekerja calon karyawan tetap yang berakhir dengan pernyataan lulus atau tidak lulus."
+  ],
+  [
+   "Penanggung jawab pengganti",
+   "Karyawan yang menggantikan pekerjaan karyawan yang sedang cuti."
+  ],
+  [
+   "Penggantian cuti",
+   "Cuti pada hari lain sebagai pengganti kerja pada hari libur resmi."
+  ],
+  [
+   "Perusahaan",
+   "SINUX, pemberi kerja karyawan."
+  ],
+  [
+   "Prorata",
+   "Perhitungan jatah cuti secara proporsional. Rumusnya belum tertulis di sumber."
+  ],
+  [
+   "Sakit berkepanjangan",
+   "Sakit yang bersifat terus-menerus sehingga karyawan tidak dapat melakukan pekerjaan."
+  ],
+  [
+   "Sistem HR",
+   "Sistem yang dipakai Perusahaan untuk mengajukan permohonan cuti. Nama sistemnya belum tertulis di sumber."
+  ],
+  [
+   "Surat keterangan dokter",
+   "Surat dari dokter yang menerangkan kondisi kesehatan karyawan."
+  ],
+  [
+   "Surat Peringatan (SP)",
+   "Surat sanksi tingkat Pertama (SP1), Kedua (SP2), atau Ketiga (SP3)."
+  ]
+ ],
+ "policy": [
+  "Aturan di bagian ini diambil dari PP - Cuti BAB VI. Nomor pasal dan ayat ada di akhir tiap butir. Istilah subjek disamakan dengan bagian 3; angka, syarat, dan tenggat sama dengan sumber.",
+  "4.1 Hak cuti (Annex A 6.2): Perusahaan wajib memberi waktu istirahat dan cuti kepada karyawan (Pasal 23 ayat (1)).",
+  "4.2 Cuti tahunan: karyawan berhak mendapatkan cuti tahunan sebanyak 12 (dua belas) hari selama satu tahun. Sejak tahun kedua dan seterusnya, karyawan mendapatkan 12 (dua belas) hari cuti tahunan di bulan Januari. Karyawan dengan masa kerja di atas 3 (tiga) tahun berhak cuti selama 14 (empat belas) hari kerja (Pasal 23 ayat (2) huruf a, d, dan h).",
+  "4.3 Syarat cuti tahunan: hak cuti diberikan setelah selesai masa percobaan dan/atau telah memiliki masa kerja minimal 3 (tiga) bulan. Setelah syarat itu terpenuhi, karyawan berhak mendapatkan jatah cuti tahunan penuh berdasarkan perhitungan prorata (Pasal 23 ayat (2) huruf b dan c).",
+  "4.4 Cuti ulang tahun: karyawan berhak mengambil cuti ulang tahun sebanyak 1 (satu) hari kerja yang dapat digunakan pada bulan yang bersangkutan (Pasal 23 ayat (2) huruf e).",
+  "4.5 Sisa cuti tahunan: cuti tahunan yang belum diambil sama sekali masih berlaku untuk tahun yang berjalan dan dapat dibawa ke tahun berikutnya maksimal sebanyak 6 (enam) hari. Sisa cuti yang belum digunakan pada tahun sebelumnya dapat dimanfaatkan pada tahun berjalan dan berlaku hingga 30 Juni tahun tersebut (Pasal 23 ayat (2) huruf f dan g).",
+  "4.6 Persetujuan (ISO 9001:2015 8.1): pengambilan semua jenis cuti, baik cuti tahunan maupun izin cuti kerja dengan dibayar, dilakukan atas persetujuan atasan langsung dan dengan mengajukan permohonan melalui sistem HR (Pasal 32 ayat (1); Pasal 23 ayat (2) huruf i).",
+  "4.7 Tenggat pengajuan: karyawan mengajukan permohonan cuti selambat-lambatnya 7 (tujuh) hari kerja sebelumnya. Dalam kondisi tertentu, pengajuan menyesuaikan ketentuan dan keputusan atasan langsung dan Direktur Utama (Pasal 23 ayat (2) huruf i; Pasal 32 ayat (2)).",
+  "4.8 Penanggung jawab pengganti: karyawan yang mengajukan cuti wajib menunjuk minimal 2 (dua) orang penanggung jawab pengganti atas pekerjaan yang sedang dijalankan (Pasal 32 ayat (5)).",
+  "4.9 Cuti mendesak: dalam kondisi mendesak atau darurat, karyawan dapat langsung mengajukan cuti dengan syarat telah memberi tahu dan mendapat persetujuan atasan langsung, dan pekerjaannya dapat didelegasikan sementara kepada penanggung jawab pengganti (Pasal 23 ayat (2) huruf j).",
+  "4.10 Penundaan cuti: untuk kepentingan Perusahaan, Direktur Utama dapat menunda waktu cuti karyawan. Karyawan yang bersangkutan dapat diberi kompensasi berupa cuti yang lamanya ditentukan sesuai persetujuan Direktur Utama (Pasal 32 ayat (3) dan (4)).",
+  "4.11 Pemanggilan kembali: bila ada kepentingan Perusahaan yang mendesak dan hanya dapat didelegasikan kepada karyawan yang sedang cuti, karyawan dapat dipanggil kembali bekerja dan wajib memenuhi panggilan itu. Cuti yang telah diambil dapat dibatalkan atau dikembalikan (Pasal 23 ayat (2) huruf l).",
+  "4.12 Cuti tahunan saat sakit berkepanjangan: hak cuti tahunan selama periode sakit berkepanjangan dilaksanakan sesuai ketentuan peraturan perundang-undangan dan kebijakan Perusahaan, sepanjang tidak mengurangi hak normatif pekerja (Pasal 23 ayat (2) huruf k).",
+  "4.13 Pemberitahuan sakit: karyawan yang tidak dapat bekerja karena sakit atau dalam kondisi tidak sehat yang bukan disebabkan kecelakaan kerja memberi tahu atasan langsung dan HRGA Officer selambat-lambatnya pukul 10:00 WIB di hari yang sama (Pasal 24 ayat (1)).",
+  "4.14 Surat keterangan dokter: karyawan yang cuti karena sakit lebih dari 1 (satu) hari harus dapat menunjukkan surat keterangan dokter yang sah. Tanpa surat itu, absen sakit dianggap alfa dan gaji dipotong (Pasal 24 ayat (2)).",
+  "4.15 Sakit berkepanjangan: sakit selama 4 (empat) bulan berturut-turut atau untuk waktu yang lama dikenai ketentuan di butir ini dan butir 4.16 (Pasal 24 ayat (3)). Perusahaan wajib tetap membayar upah karyawan yang sakit berkepanjangan dan terus-menerus, dengan syarat dibuktikan surat keterangan dokter yang menyatakan karyawan tidak dapat melakukan pekerjaan dan surat itu disetujui Perusahaan (Pasal 33 ayat (1)).",
+  "4.16 Upah sakit berkepanjangan: upah yang dibayarkan berpedoman pada Undang-Undang No. 13 Tahun 2003 Pasal 93 ayat (3), yaitu 100% (seratus perseratus) dari upah untuk 4 (empat) bulan pertama, 75% (tujuh puluh lima perseratus) untuk 4 (empat) bulan kedua, 50% (lima puluh perseratus) untuk 4 (empat) bulan ketiga, dan 25% (dua puluh lima perseratus) untuk bulan selanjutnya sebelum pemutusan hubungan kerja dilakukan Perusahaan (Pasal 33 ayat (2) huruf a sampai d).",
+  "4.17 Cuti haid: karyawan perempuan yang sedang haid dan merasakan sakit wajib memberi tahu Perusahaan, dan tidak diwajibkan bekerja pada hari pertama serta kedua waktu haid dengan tetap mendapat upah penuh. Kelalaian memberi tahu dianggap alfa dan dapat diberi surat peringatan serta dikenai pemotongan cuti tahunan karyawan (Pasal 25 ayat (1) dan (2)).",
+  "4.18 Cuti melahirkan: karyawan perempuan berhak memperoleh cuti melahirkan paling singkat 3 (tiga) bulan dan dapat memperoleh tambahan paling lama 3 (tiga) bulan berikutnya bila ada kondisi khusus sebagaimana ditentukan peraturan perundang-undangan dan dibuktikan dengan surat keterangan dokter. Cuti melahirkan diambil dengan melampirkan surat dokter yang mencantumkan HPL (Pasal 26 ayat (1) dan (2)).",
+  "4.19 Menunda cuti melahirkan: karyawan perempuan yang tetap bekerja dan menunda jadwal cuti melahirkan wajib memberi tahu atasan langsung dan HRGA Officer, disertai surat keterangan dokter yang menyatakan karyawan dapat bekerja sampai tanggal yang diajukan (Pasal 26 ayat (3)).",
+  "4.20 Keguguran: karyawan perempuan yang mengalami keguguran kandungan berhak istirahat selama 1,5 (satu setengah) bulan atau sesuai surat keterangan dokter kandungan atau bidan (Pasal 26 ayat (5)).",
+  "4.21 Pendampingan istri: karyawan yang mendampingi istri melahirkan atau keguguran berhak cuti tambahan sebanyak 2 (dua) hari di luar cuti tahunan, dengan melampirkan surat dokter yang mencantumkan HPL istri (Pasal 26 ayat (6)). Pasal 27 huruf e mengatur peristiwa dan jumlah hari yang sama; SOP ini membacanya sebagai satu hak 2 (dua) hari, bukan dua hak (USULAN).",
+  "4.22 Kelahiran bayi: bila istri karyawan telah melahirkan, karyawan wajib memberi tahu kelahiran bayinya kepada HRGA Officer untuk didaftarkan dan dilakukan pengkinian tanggungan karyawan (Pasal 26 ayat (4)).",
+  "4.23 Upah saat cuti melahirkan dan keguguran: karyawan yang menggunakan hak cuti melahirkan dan keguguran tetap berhak mendapat upah sesuai ketentuan perundangan yang berlaku (Pasal 26 ayat (8)).",
+  "4.24 Menyusui: karyawan perempuan yang anaknya masih menyusui dapat diberi kesempatan sepatutnya untuk menyusui anaknya bila harus dilakukan selama waktu kerja (Pasal 26 ayat (7)).",
+  "4.25 Cuti khusus: selain cuti di atas, Perusahaan wajib memberi izin dan hak istirahat dengan tetap membayar upah kepada karyawan yang tidak masuk kerja karena alasan berikut (Pasal 27):",
+  "a. Karyawan menikah: izin 3 (tiga) hari.",
+  "b. Karyawan menikahkan anaknya: izin 2 (dua) hari.",
+  "c. Karyawan mengkhitankan anaknya: izin 2 (dua) hari.",
+  "d. Karyawan membaptiskan anaknya: izin 2 (dua) hari.",
+  "e. Istri melahirkan atau keguguran kandungan: izin 2 (dua) hari (lihat butir 4.21).",
+  "f. Suami atau istri, orang tua atau mertua, anak atau menantu, nenek atau kakek, dan saudara kandung meninggal dunia: izin 2 (dua) hari.",
+  "g. Anggota keluarga dalam satu rumah meninggal dunia: izin 1 (satu) hari.",
+  "h. Memenuhi panggilan instansi pemerintah, dibuktikan surat resmi dari instansi itu: izin selama yang tertulis di surat.",
+  "i. Mendapat musibah (kebakaran, kebanjiran, atau hal lain): lamanya ditetapkan berdasarkan pertimbangan Perusahaan.",
+  "4.26 Ibadah wajib: Perusahaan memberi kesempatan secukupnya kepada karyawan untuk melaksanakan ibadah yang diwajibkan agamanya masing-masing (Pasal 28 ayat (1)).",
+  "4.27 Cuti ibadah haji: karyawan beragama Islam yang untuk pertama kalinya menunaikan ibadah haji diberi izin 1 (satu) kali. Cuti untuk ibadah haji atau ibadah kerohanian lainnya hanya diberikan 1 (satu) kali dalam masa kerja karyawan; ibadah berikutnya tidak berhak mendapat upah (Pasal 28 ayat (2) dan (3)).",
+  "4.28 Lama cuti ibadah: jumlah hari cuti untuk ibadah haji atau ibadah kerohanian lainnya sesuai jangka waktu yang diperlukan menurut program yang diambil karyawan. Dalam segala hal, cuti tidak lebih dari 40 (empat puluh) hari atau jangka waktu yang berlaku yang diperlukan untuk ibadah haji, dan karyawan menunjukkan dokumentasi pendukung yang menegaskan jangka waktu itu (Pasal 28 ayat (4) dan (5)).",
+  "4.29 Tenggat cuti ibadah haji: karyawan mengajukan permohonan cuti ibadah haji selambat-lambatnya 10 (sepuluh) minggu sebelum tanggal keberangkatan (Pasal 28 ayat (6)).",
+  "4.30 Umroh: karyawan yang akan beribadah umroh dapat menggunakan hak cuti tahunan (Pasal 28 ayat (7)).",
+  "4.31 Cuti tanpa dibayar: karyawan dapat mengajukan permohonan cuti tanpa dibayar untuk kebutuhan pribadi. Jumlah harinya berdasarkan perjanjian atau kesepakatan dan persetujuan atasan langsung maupun Perusahaan (Pasal 30).",
+  "4.32 Penggantian cuti: Perusahaan yang mempekerjakan karyawan pada hari libur resmi wajib membayar upah lembur atau memberikan penggantian cuti di hari lain sesuai peraturan yang ditetapkan Perusahaan (Pasal 22 ayat (4)).",
+  "4.33 Pelanggaran cuti dan izin: segala pelanggaran terhadap cuti atau izin dianggap pelanggaran hari non kerja dan memotong gaji karyawan yang bersangkutan secara proporsional (Pasal 34 ayat (1)).",
+  "4.34 Sanksi alfa karyawan di luar masa percobaan (USULAN penafsiran: sumber tidak memberi label subjek pada huruf a): alfa 2 sampai 4 hari dikenai Surat Peringatan Pertama sampai Surat Peringatan Kedua; alfa 5 hari tidak berturut-turut dikenai Surat Peringatan Kedua; alfa 5 hari berturut-turut dikenai Surat Peringatan Ketiga dan/atau pemotongan cuti dan/atau pemotongan gaji selama jumlah hari yang ditinggalkan (Pasal 34 ayat (2) huruf a).",
+  "4.35 Sanksi alfa calon karyawan tetap dalam masa percobaan: alfa 1 hari dikenai Surat Peringatan Pertama sampai Surat Peringatan Kedua; alfa 2 hari dikenai Surat Peringatan Kedua; alfa 3 hari dikenai Surat Peringatan Ketiga dan/atau dinyatakan tidak lulus masa percobaan dan/atau pemutusan hubungan kerja (Pasal 34 ayat (2) huruf b).",
+  "4.36 Pembagian peran (ISO 9001:2015 5.3): peran dan wewenang tiap pihak dalam SOP ini ada di bagian 5. Nama jabatan mengikuti SNX-HR-ORG-01.",
+  "4.37 Rekaman cuti (ISO 9001:2015 7.5.3; Annex A 5.33 dan 5.34): permohonan cuti, surat keterangan dokter, dan surat dokter dengan HPL berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan masa simpan ada di tabel bagian 11."
+ ],
+ "roles": [
+  [
+   "Karyawan",
+   "Mengajukan permohonan cuti di sistem HR, melampirkan dokumen pendukung, menunjuk penanggung jawab pengganti, memberi tahu sakit, haid, dan kelahiran bayi, serta memenuhi panggilan kembali bekerja (butir 6.1 sampai 6.7).",
+   "Mengajukan cuti; persetujuan ada pada atasan langsung."
+  ],
+  [
+   "Atasan langsung",
+   "Menyetujui atau menolak permohonan cuti, menyetujui cuti mendesak, menerima pemberitahuan sakit dan haid, dan memanggil kembali karyawan yang sedang cuti (USULAN, butir 6.1, 6.2, dan 6.7).",
+   "Menyetujui atau menolak permohonan cuti karyawan yang melapor kepadanya."
+  ],
+  [
+   "HRGA Officer",
+   "Menerima pemberitahuan sakit, haid, penundaan cuti melahirkan, dan kelahiran bayi; mencatat alfa dan cuti haid; mendaftarkan bayi sebagai tanggungan; mencatat pembatalan cuti; memegang rekaman cuti (USULAN, butir 6.3 sampai 6.7).",
+   "Mencatat alfa dan mengubah data tanggungan karyawan."
+  ],
+  [
+   "HR Manager",
+   "Pemilik SOP. Memutuskan atas nama Perusahaan: cuti tanpa dibayar, lama cuti musibah, persetujuan surat keterangan dokter sakit berkepanjangan, tahap upah sakit berkepanjangan, dan sanksi alfa (USULAN, butir 6.1, 6.4, dan bagian 9).",
+   "Mewakili Perusahaan dalam keputusan tersebut, dalam batas delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
+  ],
+  [
+   "Direktur Utama",
+   "Menunda cuti karyawan untuk kepentingan Perusahaan dan menyetujui lama cuti kompensasi (butir 6.7).",
+   "Menunda cuti dan menyetujui cuti kompensasi."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Pengajuan dan Persetujuan Cuti",
+   "intro": [
+    "Alur ini berlaku untuk cuti yang dijadwalkan: cuti tahunan, cuti ulang tahun, cuti khusus, cuti melahirkan dan pendampingan istri, cuti ibadah, dan cuti tanpa dibayar. Pasal 32 ayat (1) tidak merinci jenis cuti; penerapannya ke cuti melahirkan, cuti ibadah, dan cuti tanpa dibayar adalah USULAN. Cuti mendesak ada di 6.2, cuti sakit di 6.3, dan cuti haid di 6.5."
+   ],
+   "steps": [
+    [
+     "Ajukan permohonan cuti di sistem HR sesuai tenggat butir 4.7; untuk cuti ibadah haji sesuai butir 4.29.",
+     "Karyawan",
+     "Permohonan cuti di sistem HR"
+    ],
+    [
+     "Lampirkan dokumen pendukung yang disyaratkan jenis cuti (butir 4.18, 4.21, 4.25, dan 4.28).",
+     "Karyawan",
+     "Dokumen pendukung terlampir pada permohonan"
+    ],
+    [
+     "Tunjuk penanggung jawab pengganti sesuai butir 4.8.",
+     "Karyawan",
+     "Penanggung jawab pengganti pada permohonan (USULAN: tempat pencatatan)"
+    ],
+    [
+     "Setujui atau tolak permohonan cuti.",
+     "Atasan langsung",
+     "Keputusan atasan langsung atas permohonan cuti"
+    ],
+    [
+     "Setujui atau tolak cuti tanpa dibayar atas nama Perusahaan (butir 4.31).",
+     "HR Manager",
+     "Keputusan HR Manager atas cuti tanpa dibayar"
+    ],
+    [
+     "Tetapkan jumlah hari cuti musibah atas nama Perusahaan (butir 4.25 huruf i).",
+     "HR Manager",
+     "Jumlah hari cuti musibah"
+    ],
+    [
+     "Ambil cuti sesudah permohonan disetujui.",
+     "Karyawan",
+     "Cuti berjalan sesuai persetujuan"
+    ]
+   ]
+  },
+  {
+   "title": "Cuti Mendesak atau Darurat",
+   "intro": [
+    "Alur ini dipakai bila kondisi di butir 4.9 terjadi, sehingga tenggat butir 4.7 tidak dapat dipenuhi."
+   ],
+   "steps": [
+    [
+     "Beri tahu atasan langsung bahwa cuti diperlukan segera karena kondisi mendesak atau darurat.",
+     "Karyawan",
+     "Pemberitahuan ke atasan langsung"
+    ],
+    [
+     "Delegasikan pekerjaan sementara kepada penanggung jawab pengganti (butir 4.9).",
+     "Karyawan",
+     "Pekerjaan terdelegasi"
+    ],
+    [
+     "Setujui atau tolak cuti mendesak.",
+     "Atasan langsung",
+     "Persetujuan atasan langsung"
+    ],
+    [
+     "Ajukan permohonan di sistem HR sesudah persetujuan atasan langsung (USULAN: sumber tidak menyebut urutan).",
+     "Karyawan",
+     "Permohonan cuti di sistem HR"
+    ]
+   ]
+  },
+  {
+   "title": "Pemberitahuan dan Dokumen Cuti Sakit",
+   "steps": [
+    [
+     "Beri tahu atasan langsung dan HRGA Officer bahwa karyawan sakit, sebelum batas waktu butir 4.13.",
+     "Karyawan",
+     "Pemberitahuan sakit"
+    ],
+    [
+     "Tunjukkan surat keterangan dokter kepada HRGA Officer sesuai butir 4.14 (USULAN: sumber tidak menyebut penerima).",
+     "Karyawan",
+     "Surat keterangan dokter"
+    ],
+    [
+     "Catat absen sakit tanpa surat keterangan dokter yang sah sebagai alfa (butir 4.14).",
+     "HRGA Officer",
+     "Catatan alfa (USULAN: pelaku pencatat)"
+    ]
+   ]
+  },
+  {
+   "title": "Sakit Berkepanjangan",
+   "steps": [
+    [
+     "Serahkan surat keterangan dokter yang menyatakan karyawan tidak dapat melakukan pekerjaan kepada HRGA Officer (butir 4.15).",
+     "Karyawan",
+     "Surat keterangan dokter sakit berkepanjangan"
+    ],
+    [
+     "Setujui atau tolak surat keterangan dokter atas nama Perusahaan (butir 4.15).",
+     "HR Manager",
+     "Keputusan HR Manager atas surat keterangan dokter"
+    ],
+    [
+     "Tetapkan persentase upah menurut lama sakit sesuai butir 4.16.",
+     "HR Manager",
+     "Persentase upah per tahap sakit"
+    ]
+   ]
+  },
+  {
+   "title": "Cuti Haid",
+   "steps": [
+    [
+     "Beri tahu atasan langsung dan HRGA Officer bahwa haid terasa sakit (USULAN: sumber menyebut Perusahaan tanpa penerima).",
+     "Karyawan",
+     "Pemberitahuan cuti haid"
+    ],
+    [
+     "Catat hari pertama dan kedua haid sebagai cuti haid dengan upah penuh (butir 4.17).",
+     "HRGA Officer",
+     "Catatan cuti haid (USULAN: pelaku pencatat)"
+    ]
+   ]
+  },
+  {
+   "title": "Cuti Melahirkan, Keguguran, dan Pendampingan Istri",
+   "intro": [
+    "Pengajuan cuti melahirkan dan cuti pendampingan istri mengikuti 6.1. Langkah berikut hanya untuk hal khusus pada jenis cuti ini."
+   ],
+   "steps": [
+    [
+     "Beri tahu atasan langsung dan HRGA Officer bila menunda jadwal cuti melahirkan, disertai surat keterangan dokter (butir 4.19).",
+     "Karyawan",
+     "Pemberitahuan penundaan dan surat keterangan dokter"
+    ],
+    [
+     "Serahkan surat keterangan dokter kandungan atau bidan untuk masa istirahat keguguran (butir 4.20).",
+     "Karyawan",
+     "Surat keterangan dokter kandungan atau bidan"
+    ],
+    [
+     "Beri tahu HRGA Officer bahwa bayi telah lahir (butir 4.22).",
+     "Karyawan",
+     "Pemberitahuan kelahiran"
+    ],
+    [
+     "Daftarkan bayi sebagai tanggungan karyawan (butir 4.22).",
+     "HRGA Officer",
+     "Data tanggungan karyawan terbarui"
+    ]
+   ]
+  },
+  {
+   "title": "Penundaan Cuti dan Pemanggilan Kembali",
+   "steps": [
+    [
+     "Tunda waktu cuti karyawan bila kepentingan Perusahaan menghendaki (butir 4.10).",
+     "Direktur Utama",
+     "Keputusan penundaan cuti"
+    ],
+    [
+     "Setujui lama cuti kompensasi bagi karyawan yang cutinya ditunda (butir 4.10).",
+     "Direktur Utama",
+     "Persetujuan cuti kompensasi"
+    ],
+    [
+     "Panggil kembali karyawan yang sedang cuti bila kondisi butir 4.11 terpenuhi (USULAN: sumber tidak menyebut pemanggil).",
+     "Atasan langsung",
+     "Panggilan kembali bekerja"
+    ],
+    [
+     "Penuhi panggilan kembali bekerja (butir 4.11).",
+     "Karyawan",
+     "Karyawan kembali bekerja"
+    ],
+    [
+     "Batalkan atau kembalikan cuti yang sudah diambil di sistem HR (butir 4.11).",
+     "HRGA Officer",
+     "Cuti dibatalkan atau dikembalikan di sistem HR (USULAN: pelaku pencatat)"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "lanes": {
+   "Karyawan": [
+    "a",
+    "b",
+    "d",
+    "g",
+    "j"
+   ],
+   "HRGA Officer": [
+    "c"
+   ],
+   "Atasan langsung": [
+    "e"
+   ],
+   "Direktur Utama": [
+    "h",
+    "i"
+   ]
+  },
+  "nodes": {
+   "a": "Sakit atau haid?",
+   "b": "Beri tahu atasan langsung\ndan HRGA Officer\n(butir 6.3 dan 6.5)",
+   "c": "Catat sakit atau haid;\nsakit tanpa surat dokter\ndicatat alfa",
+   "d": "Ajukan di sistem HR,\nlampirkan dokumen, tunjuk\npenanggung jawab pengganti\n(butir 6.1 dan 6.2)",
+   "e": "Disetujui?",
+   "f": "Cuti tidak diambil",
+   "g": "Ambil cuti",
+   "h": "Cuti perlu ditunda atau\nkaryawan dipanggil kembali?",
+   "i": "Tunda cuti atau panggil kembali;\ncuti kompensasi\n(butir 6.7)",
+   "j": "Cuti selesai"
+  },
+  "shapes": {
+   "a": "diamond",
+   "e": "diamond",
+   "h": "diamond",
+   "f": "ellipse",
+   "j": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b",
+    "Ya"
+   ],
+   [
+    "a",
+    "d",
+    "Tidak"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "e",
+    "f",
+    "Tidak"
+   ],
+   [
+    "e",
+    "g",
+    "Ya"
+   ],
+   [
+    "g",
+    "h"
+   ],
+   [
+    "h",
+    "i",
+    "Ya"
+   ],
+   [
+    "h",
+    "j",
+    "Tidak"
+   ],
+   [
+    "i",
+    "j"
+   ]
+  ],
+  "caption": "Gambar 1. Alur pengajuan cuti. Cuti tanpa dibayar, cuti musibah, dan sakit berkepanjangan juga memerlukan keputusan HR Manager (butir 6.1 dan 6.4)."
+ },
+ "sla": [
+  [
+   "Pengajuan permohonan cuti di sistem HR",
+   "Karyawan",
+   "Paling lambat 7 (tujuh) hari kerja sebelum cuti (butir 4.7)"
+  ],
+  [
+   "Pengajuan cuti ibadah haji",
+   "Karyawan",
+   "Paling lambat 10 (sepuluh) minggu sebelum tanggal keberangkatan (butir 4.29)"
+  ],
+  [
+   "Pemberitahuan sakit",
+   "Karyawan",
+   "Paling lambat pukul 10:00 WIB di hari yang sama (butir 4.13)"
+  ],
+  [
+   "Surat keterangan dokter untuk cuti sakit",
+   "Karyawan",
+   "Untuk sakit lebih dari 1 (satu) hari (butir 4.14)"
+  ],
+  [
+   "Penunjukan penanggung jawab pengganti",
+   "Karyawan",
+   "Minimal 2 (dua) orang, saat mengajukan cuti (butir 4.8)"
+  ],
+  [
+   "Pemakaian sisa cuti tahun sebelumnya",
+   "Karyawan",
+   "Berlaku sampai 30 Juni tahun berjalan; maksimal 6 (enam) hari dibawa ke tahun berikutnya (butir 4.5)"
+  ],
+  [
+   "Lama cuti ibadah haji",
+   "Karyawan",
+   "Tidak lebih dari 40 (empat puluh) hari atau jangka waktu yang berlaku untuk ibadah haji (butir 4.28)"
+  ],
+  [
+   "Keputusan atas permohonan cuti",
+   "Atasan langsung",
+   "Belum ditetapkan di sumber"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Permohonan cuti ditolak atasan langsung",
+   "Karyawan tidak mengambil cuti itu (USULAN: sumber tidak menyatakan akibat penolakan). Sumber tidak mengatur banding atau pencatatan alasan penolakan."
+  ],
+  [
+   "Kondisi mendesak atau darurat",
+   "Karyawan memberi tahu dan mendapat persetujuan atasan langsung sebelum cuti (butir 6.2)."
+  ],
+  [
+   "Kepentingan Perusahaan mendesak",
+   "Direktur Utama menunda cuti, atau atasan langsung memanggil karyawan kembali (butir 6.7)."
+  ],
+  [
+   "Sakit tanpa surat keterangan dokter yang sah",
+   "HRGA Officer mencatat alfa (butir 6.3, USULAN pelaku). Sumber tidak menyebut pelaku pemotongan gaji."
+  ],
+  [
+   "Haid tidak diberitahukan",
+   "HRGA Officer mencatat alfa, dan HR Manager menentukan surat peringatan serta pemotongan cuti tahunan (butir 4.17, USULAN pelaku)."
+  ],
+  [
+   "Alfa",
+   "HR Manager menentukan sanksi menurut butir 4.34 dan 4.35 (USULAN pelaku)."
+  ],
+  [
+   "Sakit berkepanjangan saat cuti tahunan",
+   "HR Manager menjalankan ketentuan peraturan perundang-undangan dan kebijakan Perusahaan tanpa mengurangi hak normatif pekerja (butir 4.12)."
+  ],
+  [
+   "Cuti ibadah untuk kedua kalinya atau lebih",
+   "HR Manager menetapkan cuti itu tanpa upah (butir 4.27)."
+  ]
+ ],
+ "conclusion": [
+  "HR Manager selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan permohonan cuti di sistem HR dengan aturan di bagian 4 (USULAN).",
+  "HR Manager meninjau SOP ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "PP - Cuti (BAB VI, Pasal 22 sampai 34)",
+   "Dokumen sumber tanpa nomor; asal aturan di bagian 4."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; jabatan dan atasan langsung yang dipakai di bagian 3 dan 5."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling; tingkat klasifikasi rekaman cuti."
+  ],
+  [
+   "Undang-Undang No. 13 Tahun 2003",
+   "Dirujuk Pasal 33 ayat (2) sebagai pedoman besar upah sakit berkepanjangan; dikutip apa adanya dari sumber."
+  ]
+ ],
+ "records": [
+  [
+   "Permohonan dan persetujuan cuti",
+   "Sistem HR; pemilik HRGA Officer (USULAN)",
+   "Belum ditetapkan; HR Manager menetapkan bersama Legal (USULAN)"
+  ],
+  [
+   "Dokumen pendukung cuti: surat keterangan dokter, surat dokter dengan HPL, dokumentasi ibadah haji, surat resmi instansi pemerintah",
+   "Folder Google Drive Departemen HR; pemilik HRGA Officer (USULAN)",
+   "Belum ditetapkan; HR Manager menetapkan bersama Legal (USULAN)"
+  ],
+  [
+   "Catatan alfa, cuti haid, dan Surat Peringatan",
+   "Folder Google Drive Departemen HR; pemilik HRGA Officer (USULAN)",
+   "Belum ditetapkan; HR Manager menetapkan bersama Legal (USULAN)"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), 7.5.3 (Pengendalian informasi terdokumentasi), 8.1 (Perencanaan dan pengendalian operasional).",
+  "ISO/IEC 27001:2022": "Annex A 6.2 (Syarat dan ketentuan kerja), 5.33 (Perlindungan rekaman), 5.34 (Privasi dan perlindungan PII).",
+  "Status acuan klausul": "(USULAN, dikonfirmasi konsultan)"
+ }
+}

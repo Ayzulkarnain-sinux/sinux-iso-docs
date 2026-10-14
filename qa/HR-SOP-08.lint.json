@@ -1,0 +1,9 @@
+{
+ "file": "out/02_HR/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx",
+ "mode": "sop",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "13 butir (USULAN) menunggu ACC"
+ ]
+}
