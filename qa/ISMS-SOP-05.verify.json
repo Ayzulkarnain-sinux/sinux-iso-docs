@@ -1,0 +1,51 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 4 butir 4.4 dan 4.7; intro 6.2",
+   "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui (§6a.1). Langkah prosedur di bagian 6 sudah berpelaku, jadi tidak memblokir.",
+   "bukti": "'patch diuji lebih dulu bila memungkinkan dan dipasang di production lewat change request'; 'tiap temuan dicatat sebagai tiket temuan, ditangani sampai tertutup, dan tiketnya ditutup dengan bukti verifikasi'; 'Tiket temuan dibuat di Zammad dan direkap di SNX-OPS-FRM-08.'"
+  },
+  {
+   "lokasi": "Bagian 4, 6.6 intro, bagian 9",
+   "masalah": "Pengulangan isi antarbagian (§6a.6): aturan pengecualian, mitigasi kompensasi, dan sweep IOC ditulis di butir 4.x, intro 6.x, langkah 6.x, dan tabel Exception dengan isi hampir sama.",
+   "bukti": "4.8 dan baris Exception 'Patch tidak dapat dipasang sesuai tenggat | Lead SOC mencatat pengecualian, Pemilik aset menyetujuinya...' serta 6.6 langkah 1 sampai 4."
+  },
+  {
+   "lokasi": "Bagian 5 dan 6.3",
+   "masalah": "Tiga sebutan untuk satu hal: 'window patch', 'window maintenance', dan 'jadwal pemasangan patch'; 'window patch' tidak ada di tabel Definisi (§6a.7). Asal dari sumber, tetapi bisa diseragamkan.",
+   "bukti": "Peran Pemilik aset 'Menyetujui window patch'; 6.3 langkah 3 'Usulkan jadwal pemasangan patch di window maintenance'; langkah 4 'Setujui window patch.'"
+  },
+  {
+   "lokasi": "Bagian 4 butir 4.10",
+   "masalah": "Huruf kapital di tengah kalimat sesudah titik dua, tidak sama dengan butir lain yang memakai huruf kecil.",
+   "bukti": "'4.10 Instalasi software (Annex A 8.19): Seluruh personel mengunduh software...' bandingkan '4.4 ... (Annex A 8.8, 8.19): patch diuji...'"
+  },
+  {
+   "lokasi": "Bagian 5, kolom Authority",
+   "masalah": "Wewenang Seluruh personel, Pemilik aset, dan Head of Operation hampir sama dengan kolom Responsibilities, jadi kolom itu tidak menambah informasi. Wewenang Seluruh personel bukan wewenang.",
+   "bukti": "'Seluruh personel | Mengunduh software hanya dari sumber resmi... | Mengunduh software sebatas dari sumber resmi.'"
+  },
+  {
+   "lokasi": "Bagian 6 (pelaku), 6.1 langkah 2, 6.2 langkah 6, 6.7 langkah 2, intro 6.4",
+   "masalah": "Pelaku dan serah terima yang tidak ditulis di sumber SOP-05 diisi penyusun tanpa label USULAN di dokumen. Pengisian ini memenuhi §6a.1, berakar pada tabel peran sumber dan POL-OPS-001 9.2 sampai 9.3 serta bagian 7, dan sudah dicatat di notes (asumsi 1 sampai 8, open item 9 dan 11). Tidak dinilai sebagai karangan.",
+   "bukti": "Sumber 7.1: 'Temuan dicatat sebagai tiket...' (tanpa pelaku); dokumen: 'Buat tiket temuan... | SOC Analyst' dan 'Teruskan tiket temuan ke Lead NOC untuk dijadwalkan. | Lead SOC'; POL-OPS-001 9.3: 'vulnerability advisory ke NOC'."
+  },
+  {
+   "lokasi": "Bagian 7, diagram",
+   "masalah": "Panah dari Mitigasi kompensasi ke verifikasi, dan pengecualian sebagai ujung cabang dari 'Tertutup terverifikasi sebelum tenggat?', adalah tafsir penyusun. Gambar sumber tidak punya panah lanjutan. Sudah dicatat di open item 8.",
+   "bukti": "spec flow edges [m,g] dan [g,x,'Tidak']; audit bagian 3.1: Mitigasi kompensasi 'tanpa garis kembali'."
+  },
+  {
+   "lokasi": "Bagian 11, Dokumen terkait",
+   "masalah": "POL-OPS-001 dan PRO-OPS-001 dicantumkan sebagai dokumen terkait walaupun berstatus DRAFT v0.1 dan nomornya masih 'USULAN penomoran'. Catatan worklist menyebut keduanya bahan saja. Statusnya sudah ditulis, jadi bukan fakta salah.",
+   "bukti": "'POL-OPS-001 | Kebijakan Divisi Operation SINUX, DRAFT v0.1; ...yang berstatus usulan.'"
+  },
+  {
+   "lokasi": "Cakupan (g) context/audit",
+   "masalah": "Enam cacat di bagian 5 audit untuk fileId 160t8vg9Eb_ItxjLuWxLG17OIAKpxSsKC semuanya ditangani atau dijelaskan di notes/ISMS-SOP-05.md bagian 4. Tidak ada tindakan.",
+   "bukti": "notes bagian 4 tabel butir 1 sampai 6 plus temuan tambahan A sampai J."
+  }
+ ]
+}

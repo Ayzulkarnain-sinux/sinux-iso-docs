@@ -585,7 +585,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-ISMS-SOP-05",
    "out_path": "out/08_ISMS/SNX-ISMS-SOP-05 Vulnerability & Patch Management (Rev00 DRAFT).docx",
    "sources": [
@@ -606,11 +606,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 12,
    "open_items": [],
-   "updated_at": "2026-10-14T22:43:41Z",
+   "updated_at": "2026-10-14T22:45:57Z",
    "pen_agent": "acd4a4da0b5f25143",
    "ooxml": "PASSED"
   },
@@ -660,9 +660,9 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-SOP-01",
-   "out_path": null,
+   "out_path": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI",
@@ -670,13 +670,14 @@
      "title": "1. SOP Billing and Invoicing"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 7,
    "open_items": [],
-   "updated_at": "2026-10-14T22:31:44Z",
-   "pen_agent": "aa815c71d2448334e"
+   "updated_at": "2026-10-14T22:45:10Z",
+   "pen_agent": "aa815c71d2448334e",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 16,
@@ -769,7 +770,7 @@
    "dept": "COM",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-SOP-01",
    "out_path": null,
    "sources": [
@@ -789,7 +790,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T22:45:25Z",
+   "pen_agent": "ae9eceecd747b5a2d"
   },
   {
    "wl_index": 20,
