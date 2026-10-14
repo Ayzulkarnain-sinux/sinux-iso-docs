@@ -1,10 +1,10 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T19:15:18Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T19:35:56Z)
 
-Wave berjalan: W0. Hitungan state: {'IN_PROGRESS': 1, 'QUEUED': 69, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 0.
+Wave berjalan: W0. Hitungan state: {'DONE': 1, 'QUEUED': 69, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 0.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
-| ISMS-SOP-02 | W0 | IN_PROGRESS | - | - | 0 | 0 |
+| ISMS-SOP-02 | W0 | DONE | SNX-ISMS-SOP-02 User Access Control & Authorization (Rev00 DRAFT).docx | PASS | 5 | 1 |
 | HR-ORG-01 | W1 | QUEUED | - | - | 0 | 1 |
 | HR-JA-01 | W1 | QUEUED | - | - | 0 | 1 |
 | OPS-PRC-01 | W2 | QUEUED | - | - | 0 | 0 |
