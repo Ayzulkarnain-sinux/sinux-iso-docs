@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "doc_key": "OPS-SOP-03",
+    "number": "SNX-OPS-SOP-03",
+    "department": "Operation",
+    "title": "Preventive & Corrective Maintenance",
+    "process_owner": "Lead NOC",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "purpose": [
+    "SOP ini memastikan infrastruktur dan layanan yang dikelola SINUX dirawat secara terencana (preventive maintenance) dan diperbaiki secara terkendali saat terjadi kerusakan atau penurunan kinerja (corrective maintenance), sehingga availability layanan terjaga dan kejadian berulang dapat dicegah."
+  ],
+  "scope": [
+    "Berlaku untuk perangkat, platform, dan layanan yang dikelola SINUX: VM dan platform Nusagrid, server WHM dan cPanel, network device, WAF dan proxy, sistem monitoring, sistem backup, serta sistem internal pendukung operasi (sistem tiket Zammad, Jumphost, password manager).",
+    "Perawatan fisik di data center dijalankan bersama penyedia DC sesuai kontraknya.",
+    "Dikecualikan: app-level pelanggan, yaitu isi WordPress, plugin, database aplikasi, dan kode pelanggan."
+  ],
+  "definitions": [
+    ["Change (Standar, Normal, Emergency)", "Jenis perubahan pada production yang ditetapkan SNX-OPS-SOP-02. SOP ini memakai jenis Standar, Normal, dan Emergency."],
+    ["Corrective maintenance (CM)", "Perbaikan setelah ditemukan kerusakan, kegagalan, atau penurunan kinerja."],
+    ["Jumphost", "Jalur masuk SINUX ke production pelanggan yang merekam sesi."],
+    ["NOC", "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket."],
+    ["Overseer", "Dashboard monitoring yang dipakai NOC. Di SOP ini dipakai untuk memeriksa perangkat internal."],
+    ["Password manager (vault)", "Tempat penyimpanan kredensial SINUX. Status operasional: menunggu konfirmasi Ops."],
+    ["Preventive maintenance (PM)", "Perawatan terjadwal untuk mencegah gangguan. Aktivitas minimalnya ada di bagian 8."],
+    ["Problem", "Penyebab bersama di balik temuan yang berulang pada aset yang sama."],
+    ["RCA", "Root cause analysis: analisis untuk menemukan akar penyebab, bukan sekadar gejala."],
+    ["Service report", "Rekaman satu pelaksanaan PM atau CM di sheet Service Report SNX-OPS-FRM-07."],
+    ["Severity", "Tingkat keparahan tiket dari P1 sampai P4 menurut SNX-OPS-SOP-04."],
+    ["SOC", "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."],
+    ["Window maintenance", "Jadwal yang disepakati untuk pekerjaan yang berdampak ke layanan, umumnya Shift 3 (23:00 sampai 07:00 WIB)."],
+    ["Zammad", "Sistem tiket yang dipakai Operation."]
+  ],
+  "policy": [
+    "Infrastruktur dan layanan yang dikelola SINUX dirawat menurut jadwal PM tahunan di SNX-OPS-FRM-07, sheet Jadwal PM. Aktivitas minimal dan frekuensinya ada di bagian 8 (ISO 9001 7.1.3; Annex A 7.13).",
+    "Kapasitas disk, CPU, memori, dan tren pertumbuhannya diperiksa sebagai bagian dari PM (Annex A 8.6).",
+    "PM yang tidak berdampak ke layanan (pemeriksaan read-only) dijalankan langsung oleh NOC Engineer. PM yang mengubah sistem (patch, restart, perubahan konfigurasi) dijalankan sebagai change Standar atau Normal sesuai SNX-OPS-SOP-02, di window maintenance (ISO 9001 8.5.1).",
+    "PM yang menyentuh kontrol keamanan butuh persetujuan Lead SOC.",
+    "Perbaikan yang mengubah production dijalankan melalui SNX-OPS-SOP-02. Pemulihan P1 boleh dijalankan sebagai change Emergency (ISO 9001 8.5.1).",
+    "Kerusakan, penurunan kinerja, dan temuan PM yang tidak selesai saat PM ditangani sebagai CM dan dicatat sebagai tiket (ISO 9001 10.2).",
+    "Temuan berulang pada aset yang sama dievaluasi sebagai problem dan dapat memicu RCA di SNX-OPS-FRM-10 (ISO 9001 10.2). Temuan dihitung berulang bila terjadi tiga kali atau lebih pada aset yang sama dalam 30 hari, sama dengan ambang insiden berulang di SNX-OPS-SOP-04 (USULAN)."
+  ],
+  "roles": [
+    ["Lead NOC", "Pemilik SOP; menyusun jadwal PM tahunan; meninjau service report; meninjau kepatuhan jadwal PM tiap bulan; mengevaluasi problem; approver change Standar dan Normal.", "Menyetujui atau menolak change Standar dan Normal; memutuskan perlu tidaknya RCA."],
+    ["NOC Engineer", "Melaksanakan PM dan CM; mencatat tiket CM; mengisi service report.", "Menjalankan pemeriksaan read-only kapan saja; mengubah sistem hanya dengan approval change yang tercatat."],
+    ["Lead SOC", "Menyetujui PM yang menyentuh kontrol keamanan; menyuplai daftar patch keamanan; mereview rule firewall, WAF, dan akun tidak terpakai tiap triwulan.", "Menyetujui atau menolak PM yang menyentuh kontrol keamanan."],
+    ["Service Delivery Manager", "Mengomunikasikan jadwal maintenance ke pelanggan; merangkum hasil di laporan bulanan.", "Menyampaikan jadwal maintenance yang berdampak ke layanan kepada pelanggan."],
+    ["Head of Operation", "PIC uji pemulihan tahunan sesuai SNX-ISMS-PLN-01.", "Menjalankan uji pemulihan tahunan sesuai SNX-ISMS-PLN-01."],
+    ["Penyedia DC dan upstream", "Perawatan fasilitas fisik dan platform sesuai kontrak.", "Sebatas yang diatur kontrak dengan SINUX."]
+  ],
+  "procedures": [
+    {
+      "title": "Perencanaan Preventive Maintenance",
+      "steps": [
+        ["Susun jadwal PM tahunan di SNX-OPS-FRM-07 (sheet Jadwal PM), paling lambat Desember untuk tahun berikutnya.", "Lead NOC", "Jadwal PM tahunan di SNX-OPS-FRM-07"],
+        ["Cantumkan di jadwal PM aktivitas minimal dan frekuensi minimalnya sesuai tabel SLA (bagian 8), beserta PIC tiap aktivitas.", "Lead NOC", "Baris aktivitas PM di sheet Jadwal PM"],
+        ["Beri tahu pelanggan jadwal PM yang berdampak ke layanan, sesuai jenis change di SNX-OPS-SOP-02.", "Service Delivery Manager", "Pemberitahuan jadwal maintenance ke pelanggan"]
+      ]
+    },
+    {
+      "title": "Pelaksanaan Preventive Maintenance",
+      "steps": [
+        ["Jalankan langsung PM yang tidak berdampak ke layanan (pemeriksaan read-only).", "NOC Engineer", "Hasil pemeriksaan read-only"],
+        ["Suplai daftar patch keamanan untuk PM patch dan update OS.", "Lead SOC", "Daftar patch keamanan"],
+        ["Ajukan change request untuk PM yang mengubah sistem sesuai SNX-OPS-SOP-02; change Normal diajukan minimal 3 hari kerja sebelum window maintenance.", "NOC Engineer", "Change request di SNX-OPS-FRM-04"],
+        ["Setujui change request Standar atau Normal.", "Lead NOC", "Approval change di SNX-OPS-FRM-04"],
+        ["Setujui PM yang menyentuh kontrol keamanan.", "Lead SOC", "Approval Lead SOC"],
+        ["Jalankan PM yang mengubah sistem di window maintenance sesudah change disetujui.", "NOC Engineer", "PM terlaksana sesuai change request"],
+        ["Tandai realisasi di sheet Jadwal PM: kode S bila siklus selesai, kode T bila tertunda.", "NOC Engineer", "Kode S atau T pada bulan terkait di sheet Jadwal PM"],
+        ["Isi service report di sheet Service Report untuk PM yang mengubah sistem: aktivitas, temuan, tindakan, status, dan bukti.", "NOC Engineer", "Baris service report di SNX-OPS-FRM-07"],
+        ["Tangani temuan PM yang tidak bisa diselesaikan saat PM sebagai CM sesuai butir 6.4.", "NOC Engineer", "Tiket CM (butir 6.4)"]
+      ]
+    },
+    {
+      "title": "Evaluasi Preventive Maintenance",
+      "steps": [
+        ["Tinjau kepatuhan jadwal PM tiap bulan (rencana lawan realisasi) di SNX-OPS-FRM-07.", "Lead NOC", "Kepatuhan jadwal PM bulanan di sheet Jadwal PM"],
+        ["Tinjau service report dan isi kolom Diverifikasi di sheet Service Report.", "Lead NOC", "Kolom Diverifikasi terisi"],
+        ["Evaluasi temuan berulang pada aset yang sama sebagai problem.", "Lead NOC", "Hasil evaluasi problem"],
+        ["Susun RCA di SNX-OPS-FRM-10 bila hasil evaluasi menunjukkan RCA perlu.", "Lead NOC", "RCA di SNX-OPS-FRM-10"],
+        ["Tinjau tiap bulan insiden akibat kerusakan yang seharusnya terdeteksi PM, dengan target tren menurun.", "Lead NOC", "Hasil tinjauan insiden bulanan"],
+        ["Rangkum hasil PM dan CM di laporan bulanan SNX-OPS-RPT-01.", "Service Delivery Manager", "Laporan bulanan SNX-OPS-RPT-01"]
+      ]
+    },
+    {
+      "title": "Corrective Maintenance",
+      "steps": [
+        ["Catat kerusakan atau penurunan kinerja sebagai tiket di Zammad dan di SNX-OPS-FRM-08.", "NOC Engineer", "Tiket di Zammad dan baris di SNX-OPS-FRM-08"],
+        ["Tetapkan severity tiket sesuai SNX-OPS-SOP-04.", "NOC Engineer", "Severity pada tiket"],
+        ["Diagnosa dengan pemeriksaan read-only dan bedakan gejala dari akar penyebab.", "NOC Engineer", "Hasil diagnosis di tiket"],
+        ["Jalankan perbaikan yang mengubah production melalui SNX-OPS-SOP-02; untuk pemulihan P1 boleh sebagai change Emergency.", "NOC Engineer", "Change request dan approval di SNX-OPS-FRM-04"],
+        ["Eskalasikan kerusakan di platform upstream atau fasilitas DC ke penyedia sesuai matriks eskalasi SNX-OPS-SOP-04.", "NOC Engineer", "Eskalasi ke penyedia DC atau upstream"],
+        ["Verifikasi hasil perbaikan dari sisi pelanggan.", "NOC Engineer", "Hasil verifikasi"],
+        ["Catat perbaikan di service report.", "NOC Engineer", "Baris service report di SNX-OPS-FRM-07"],
+        ["Tutup tiket di Zammad.", "NOC Engineer", "Tiket tertutup"],
+        ["Bila perangkat atau media penyimpanan diganti atau dibuang, ikuti SNX-ISMS-SOP-04 (penghapusan data aman).", "NOC Engineer", "Rekaman penghapusan data sesuai SNX-ISMS-SOP-04"]
+      ]
+    }
+  ],
+  "flow": {
+    "rankdir": "TB",
+    "nodes": {
+      "a": "Susun jadwal PM tahunan\nLead NOC, SNX-OPS-FRM-07",
+      "b": "PM berdampak\nke layanan?",
+      "cr": "Ajukan change request\nSNX-OPS-SOP-02,\nwindow maintenance",
+      "c": "Jalankan PM\nNOC Engineer",
+      "d": "Isi service report\ntemuan, tindakan, bukti",
+      "e": "Ada kerusakan?",
+      "z": "Kerusakan atau penurunan\nkinerja di luar PM",
+      "cm": "Corrective maintenance (CM)\ntiket Zammad,\nSNX-OPS-FRM-08,\nSNX-OPS-SOP-04",
+      "f": "Tinjau kepatuhan bulanan\nrencana lawan realisasi",
+      "g": "Temuan berulang?",
+      "rca": "RCA\nSNX-OPS-FRM-10",
+      "h": "Rangkum ke laporan bulanan\nService Delivery Manager,\nSNX-OPS-RPT-01"
+    },
+    "shapes": {
+      "b": "diamond",
+      "e": "diamond",
+      "g": "diamond",
+      "z": "ellipse",
+      "h": "ellipse"
+    },
+    "edges": [
+      ["a", "b"],
+      ["b", "cr", "Ya"],
+      ["b", "c", "Tidak"],
+      ["cr", "c", "", "dashed"],
+      ["c", "d"],
+      ["d", "e"],
+      ["e", "cm", "Ya"],
+      ["e", "f", "Tidak"],
+      ["z", "cm"],
+      ["cm", "f", "", "dashed"],
+      ["f", "g"],
+      ["g", "rca", "Ya"],
+      ["g", "h", "Tidak"],
+      ["rca", "h", "", "dashed"]
+    ],
+    "caption": "Gambar 1. Alur PM dan CM. Garis putus-putus: change request kembali ke Jalankan PM, CM kembali ke Tinjau kepatuhan bulanan, RCA kembali ke Rangkum ke laporan bulanan."
+  },
+  "sla": [
+    ["Penyusunan jadwal PM tahunan", "Lead NOC", "Paling lambat Desember untuk tahun berikutnya"],
+    ["Health check layanan kritis (dashboard, resource, status layanan)", "NOC Engineer", "Tiap awal shift"],
+    ["Pemeriksaan status backup job", "NOC Engineer", "Tiap shift malam"],
+    ["Kapasitas disk, CPU, memori, dan tren pertumbuhan", "NOC Engineer", "Mingguan"],
+    ["Masa berlaku sertifikat SSL (30 hari ke depan)", "NOC Engineer", "Mingguan"],
+    ["Pemeriksaan perangkat internal di Overseer", "NOC Engineer", "Mingguan"],
+    ["Patch keamanan dan update OS sesuai SNX-ISMS-SOP-05", "NOC Engineer", "Bulanan, atau segera untuk patch kritis"],
+    ["Uji restore per pelanggan berlayanan backup", "NOC Engineer", "Bulanan; target 100% terlaksana per pelanggan backup"],
+    ["Review rule firewall, WAF, dan akun tidak terpakai", "Lead SOC", "Triwulanan"],
+    ["Uji pemulihan sesuai SNX-ISMS-PLN-01", "Head of Operation", "Minimal tahunan"],
+    ["Pengajuan change Normal untuk PM", "NOC Engineer", "Minimal 3 hari kerja sebelum window maintenance"],
+    ["Tinjauan kepatuhan jadwal PM", "Lead NOC", "Bulanan; target kepatuhan 95% (realisasi dibanding rencana)"],
+    ["Tinjauan insiden akibat kerusakan yang seharusnya terdeteksi PM", "Lead NOC", "Bulanan; target tren menurun"],
+    ["Respons, update ke pelanggan, dan target pulih tiket CM", "NOC Engineer", "Sesuai severity di SNX-OPS-SOP-04"]
+  ],
+  "exceptions": [
+    ["Patch kritis", "NOC Engineer menjalankan patch segera tanpa menunggu jadwal bulanan, sebagai change sesuai SNX-OPS-SOP-02 (butir 6.2)."],
+    ["Pemulihan P1 yang butuh perbaikan segera", "NOC Engineer menjalankan perbaikan sebagai change Emergency sesuai SNX-OPS-SOP-02 (butir 6.4)."],
+    ["Kerusakan di platform upstream atau fasilitas DC", "NOC Engineer mengeskalasi ke penyedia DC atau upstream sesuai matriks eskalasi SNX-OPS-SOP-04. Penyedia memperbaiki sesuai kontrak (butir 6.4)."],
+    ["Kerusakan di app-level pelanggan", "NOC Engineer menyerahkan ke developer atau PIC pelanggan. SOP ini tidak mengatur perbaikannya."],
+    ["Siklus PM tidak selesai pada bulannya", "NOC Engineer menandai kode T di sheet Jadwal PM. Lead NOC meninjaunya pada tinjauan kepatuhan bulanan (butir 6.3)."],
+    ["Pelanggan tanpa layanan backup", "NOC Engineer tidak menjadwalkan uji restore untuk pelanggan itu dan tidak menyatakan data pelanggan bisa dipulihkan."]
+  ],
+  "conclusion": [
+    "Lead NOC memantau kepatuhan terhadap SOP ini lewat tinjauan kepatuhan jadwal PM bulanan di SNX-OPS-FRM-07.",
+    "Lead NOC selaku pemilik SOP meninjau dokumen ini setiap tahun."
+  ],
+  "related_documents": [
+    ["SNX-OPS-SOP-02", "SOP Project Change Management; jenis change Standar, Normal, dan Emergency serta window maintenance."],
+    ["SNX-OPS-SOP-04", "SOP Technical Incident Handling & Escalation; severity P1 sampai P4 dan matriks eskalasi ke penyedia."],
+    ["SNX-ISMS-SOP-05", "SOP Vulnerability & Patch Management; patch keamanan dan update OS."],
+    ["SNX-ISMS-SOP-04", "SOP IT Asset & Configuration Management; penghapusan data aman saat perangkat dan media penyimpanan diganti atau dibuang."],
+    ["SNX-ISMS-PLN-01", "Business Continuity & IT Recovery Plan; uji pemulihan tahunan."],
+    ["SNX-OPS-FRM-07", "Maintenance Schedule & Service Report; sheet Jadwal PM dan Service Report."],
+    ["SNX-OPS-FRM-08", "Technical Ticket / Incident Register; rekap tiket CM."],
+    ["SNX-OPS-FRM-04", "Change Request & Approval Log; change request dan approval PM dan CM."],
+    ["SNX-OPS-FRM-10", "RCA & Corrective Action Report; RCA atas problem."],
+    ["SNX-ISMS-FRM-01", "Backup Log & Restore Testing Records; record uji restore."],
+    ["SNX-OPS-RPT-01", "Operations KPI & Performance Monitoring Report; laporan bulanan."],
+    ["POL-OPS-001", "Kebijakan Divisi Operation SINUX (DRAFT, penomoran USULAN); susunan NOC dan SOC, jam Shift 3, dan batas app-level pelanggan."],
+    ["PRO-OPS-001", "Prosedur Operasional Divisi Operation SINUX (DRAFT, penomoran USULAN); NOC-04 backup dan restore, NOC-05 cek rutin, NOC-06 window maintenance."]
+  ],
+  "records": [
+    ["Jadwal PM dan service report (SNX-OPS-FRM-07)", "Google Drive; pemilik Lead NOC", "3 tahun"],
+    ["Tiket CM (Zammad dan rekap SNX-OPS-FRM-08)", "Zammad dan Google Drive; pemilik Lead NOC", "3 tahun"],
+    ["Change request maintenance (SNX-OPS-FRM-04)", "Google Drive; pemilik Head of Operation", "3 tahun"],
+    ["Record uji restore (SNX-ISMS-FRM-01)", "Google Drive; pemilik Lead NOC", "3 tahun"],
+    ["RCA (SNX-OPS-FRM-10)", "Google Drive; pemilik Head of Operation", "5 tahun"],
+    ["Laporan bulanan (SNX-OPS-RPT-01)", "Google Drive; pemilik Head of Operation", "3 tahun"]
+  ],
+  "iso_refs": {
+    "ISO 9001:2015": "7.1.3 (Infrastruktur), 8.5.1 (Pengendalian produksi dan penyediaan jasa), 10.2 (Ketidaksesuaian dan tindakan korektif)",
+    "ISO/IEC 27001:2022": "Annex A 7.13 (Equipment maintenance), 8.6 (Capacity management)"
+  }
+}
