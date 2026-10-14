@@ -1,0 +1,9 @@
+{
+ "file": "out/03_FAT/SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "12 butir (USULAN) menunggu ACC"
+ ]
+}

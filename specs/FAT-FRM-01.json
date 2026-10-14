@@ -1,0 +1,738 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "FAT-FRM-01",
+  "doc_type_cover": "FORM",
+  "doc_type_label": "Form",
+  "number": "SNX-FAT-FRM-01",
+  "department": "Finance, Accounting & Tax",
+  "title": "Financial Transaction Approval Records",
+  "process_owner": "Finance Lead",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Finance Staff",
+   "reviewed": "Finance Lead",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Form ini mencatat approval atas setiap transaksi pembayaran yang dikelola FAT di SINUX. Tiap baris memuat Pemohon, nilai, keputusan Finance Lead dan Penyetuju, serta lokasi bukti persetujuan."
+    },
+    {
+     "p": "Hasil yang dijaga adalah satu log yang memungkinkan Finance Lead dan auditor menelusuri tiap pembayaran ke keputusan yang menyetujuinya."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Form ini mencakup setiap transaksi pembayaran yang dikelola FAT: pembayaran invoice, reimbursement, cash advance, dan pembayaran pajak. Transaksi pembayaran jenis lain juga dicatat, dengan nama jenisnya ditulis di kolom Jenis Transaksi."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari form ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       6.5,
+       9.0
+      ],
+      "rows": [
+       [
+        "Penerimaan uang dari pelanggan",
+        "Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection dan Billing & Collection Monitoring Register, keduanya dalam peninjauan dan belum bernomor."
+       ],
+       [
+        "Persetujuan invoice ke klien",
+        "Ada di SNX-FAT-SOP-01 butir 4.4 dan 4.8. Form ini mencatat pembayaran oleh SINUX."
+       ],
+       [
+        "Tata cara pengajuan pembayaran",
+        "Ada di SOP Payment and Disbursement Approval, dalam peninjauan dan belum bernomor. Form ini hanya mencatat hasilnya."
+       ],
+       [
+        "Batas nilai dan tingkat persetujuan",
+        "Tercantum di delegasi tertulis (Authority Matrix, belum bernomor). Form ini tidak menetapkannya."
+       ],
+       [
+        "Perhitungan dan pelaporan pajak",
+        "Ada di SNX-FAT-SOP-05. Form ini hanya mencatat persetujuan pembayaran pajak."
+       ],
+       [
+        "Pencatatan akuntansi",
+        "Ada di SOP Accounting and Financial Report, dalam peninjauan dan belum bernomor."
+       ],
+       [
+        "Pengarsipan dan pemusnahan berkas",
+        "Ada di SNX-FAT-SOP-04. Form ini hanya mencatat lokasi berkas."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "Transaksi pembayaran",
+        "Satu kali pengeluaran uang SINUX kepada pihak lain."
+       ],
+       [
+        "Pengajuan",
+        "Permintaan agar sebuah transaksi pembayaran diproses."
+       ],
+       [
+        "Dokumen dasar",
+        "Dokumen yang menjadi alasan sebuah pengajuan, misalnya invoice dari vendor."
+       ],
+       [
+        "Reimbursement",
+        "Penggantian biaya yang lebih dulu dibayar karyawan untuk keperluan SINUX (USULAN)."
+       ],
+       [
+        "Cash advance",
+        "Uang muka yang diberikan kepada karyawan sebelum biaya dikeluarkan (USULAN)."
+       ],
+       [
+        "Keputusan",
+        "Hasil pemeriksaan atau persetujuan atas satu pengajuan. Nilainya Disetujui (pengajuan boleh diproses), Ditolak (pengajuan tidak diproses), atau Ditahan (pengajuan belum lengkap dan belum diputus)."
+       ],
+       [
+        "Bukti persetujuan",
+        "Berkas tertulis yang menunjukkan siapa menyetujui satu pengajuan dan kapan."
+       ],
+       [
+        "Bukti pembayaran",
+        "Berkas yang menunjukkan sebuah pembayaran sudah dilakukan."
+       ],
+       [
+        "Delegasi tertulis",
+        "Dokumen yang menunjukkan jabatan mana yang berwenang atas keputusan keuangan dan sampai batas apa. Authority Matrix termasuk di sini; dokumen itu belum bernomor."
+       ],
+       [
+        "FAT",
+        "Finance, Accounting & Tax, departemen pemilik form ini."
+       ],
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Satu baris form ini mencatat satu transaksi pembayaran. Tabel 1, Tabel 2, dan Tabel 3 memakai nomor baris yang sama."
+    },
+    {
+     "p": "4.2 Finance Staff mencatat pengajuan di Tabel 1 saat menerimanya dari Pemohon, sebelum Finance Lead memeriksanya."
+    },
+    {
+     "p": "4.3 Finance Lead memeriksa kelengkapan dokumen dasar dan kesesuaiannya dengan persetujuan yang sudah ada, lalu memutuskan. SNX-HR-JA-01 memuat pemeriksaan ini di tugas nomor 4 JA-10, dan wewenang menahan pembayaran yang belum lengkap di baris Wewenang JA-10."
+    },
+    {
+     "p": "4.4 Penyetuju memutuskan sesudah Finance Lead bila delegasi tertulis mensyaratkan tingkat persetujuan itu. Bila delegasi tidak mensyaratkannya, kolom Penyetuju dikosongkan."
+    },
+    {
+     "p": "4.5 Setiap keputusan Ditolak atau Ditahan memuat alasan tertulis."
+    },
+    {
+     "p": "4.6 Tabel 3 terisi hanya untuk baris yang semua keputusannya Disetujui."
+    },
+    {
+     "p": "4.7 Finance Staff mencatat keputusan dan tidak memutuskan. Satu orang juga tidak memutuskan pengajuan yang ia ajukan sendiri. Bila Finance Lead adalah Pemohon, Penyetuju memutuskan pengajuan itu dan kolom Keputusan Finance Lead dikosongkan."
+    },
+    {
+     "p": "4.8 Setiap keputusan Disetujui punya bukti persetujuan. Finance Staff menulis lokasinya di Tabel 3."
+    },
+    {
+     "p": "4.9 Butir 4.2 sampai 4.8 dan struktur kolom Tabel 1 sampai Tabel 3 berstatus (USULAN) sampai FAT menetapkannya."
+    },
+    {
+     "p": "4.10 Klasifikasi form ini RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada form ini"
+      ],
+      "widths_cm": [
+       3.6,
+       11.9
+      ],
+      "rows": [
+       [
+        "Pemohon",
+        "Jabatan atau departemen yang meminta pembayaran. Menyampaikan pengajuan dan dokumen dasar ke Finance Staff (butir 4.2)."
+       ],
+       [
+        "Finance Staff",
+        "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)."
+       ],
+       [
+        "Finance Lead",
+        "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)."
+       ],
+       [
+        "Penyetuju",
+        "Memutuskan sesudah Finance Lead bila delegasi tertulis mensyaratkan, dan atas pengajuan Finance Lead sendiri (butir 4.4 dan 4.7). Jabatan pemegang peran ini belum ditetapkan; penetapannya tercantum di delegasi tertulis."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Direktur Utama menyetujui form ini lewat blok Approval pada halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Cara Mengisi",
+   "blocks": [
+    {
+     "p": "6.1 Finance Staff menulis satu baris di Tabel 1 untuk setiap pengajuan yang diterima (butir 4.1)."
+    },
+    {
+     "p": "6.2 Finance Staff menulis tanggal ia menerima pengajuan di kolom Tanggal Pengajuan."
+    },
+    {
+     "p": "6.3 Finance Staff menulis jabatan atau departemen Pemohon di kolom Pemohon, bukan nama orang."
+    },
+    {
+     "p": "6.4 Finance Staff memilih satu Jenis Transaksi: Pembayaran invoice, Reimbursement, Cash advance, atau Pembayaran pajak. Untuk jenis lain, Finance Staff menulis nama jenisnya."
+    },
+    {
+     "p": "6.5 Finance Staff menyalin penerima pembayaran, nilai, dan mata uang dari dokumen dasar."
+    },
+    {
+     "p": "6.6 Finance Staff menulis nomor atau nama dokumen dasar di kolom Dokumen Dasar. Untuk pembayaran pajak, kolom ini memuat baris utang pajak di dokumen tracker SNX-FAT-SOP-05."
+    },
+    {
+     "p": "6.7 Finance Lead memeriksa dokumen dasar dan memutuskan sesuai butir 4.3."
+    },
+    {
+     "p": "6.8 Finance Staff menulis keputusan Finance Lead dan tanggalnya di Tabel 2."
+    },
+    {
+     "p": "6.9 Finance Staff menulis jabatan Penyetuju, keputusannya, dan tanggalnya di Tabel 2 sesudah Penyetuju memutuskan, sesuai butir 4.4 dan 4.7."
+    },
+    {
+     "p": "6.10 Finance Staff menulis alasan di kolom Alasan Ditolak atau Ditahan sesuai butir 4.5."
+    },
+    {
+     "p": "6.11 Finance Staff menulis lokasi bukti persetujuan di Tabel 3, sesuai lokasi di tabel Rekaman (butir 4.8)."
+    },
+    {
+     "p": "6.12 Finance Staff menulis tanggal pembayaran dan nomor atau nama berkas bukti pembayaran di Tabel 3 saat bukti diterima, sesuai butir 4.6."
+    },
+    {
+     "p": "6.13 Finance Staff membiarkan kosong sel yang datanya belum ada."
+    }
+   ]
+  },
+  {
+   "h": "Log Sheet Approval",
+   "blocks": [
+    {
+     "p": "Baris tersedia untuk 10 transaksi. Finance Staff menambah baris bila perlu. Sel data dikosongkan dan diisi sesuai bagian Cara Mengisi."
+    },
+    {
+     "h2": "Tabel 1. Pengajuan"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tanggal Pengajuan",
+       "Pemohon",
+       "Jenis Transaksi",
+       "Penerima Pembayaran",
+       "Nilai dan Mata Uang",
+       "Dokumen Dasar"
+      ],
+      "widths_cm": [
+       1.0,
+       2.5,
+       2.4,
+       2.3,
+       2.7,
+       2.1,
+       2.5
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 2. Keputusan"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Keputusan Finance Lead",
+       "Tanggal Finance Lead",
+       "Penyetuju",
+       "Keputusan Penyetuju",
+       "Tanggal Penyetuju",
+       "Alasan Ditolak atau Ditahan"
+      ],
+      "widths_cm": [
+       1.0,
+       2.5,
+       2.0,
+       2.5,
+       2.5,
+       2.5,
+       2.5
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 3. Lokasi Bukti dan Pembayaran"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Lokasi Bukti Persetujuan",
+       "Tanggal Pembayaran",
+       "Bukti Pembayaran"
+      ],
+      "widths_cm": [
+       0.9,
+       6.0,
+       2.8,
+       5.8
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       3.8,
+       5.7,
+       6.0
+      ],
+      "rows": [
+       [
+        "Form ini setelah diisi: Tabel 1, Tabel 2, dan Tabel 3",
+        "Folder Google Drive Departemen FAT dan pemilik Finance Lead, keduanya (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+        "Minimal 10 tahun (USULAN). Angka berasal dari retensi dokumen penagihan dan perpajakan (SNX-FAT-SOP-01, SNX-FAT-SOP-05); perluasan ke log ini belum diputus."
+       ],
+       [
+        "Bukti persetujuan dan bukti pembayaran tiap baris",
+        "Lokasi tertulis di Tabel 3. Pemilik: Finance Lead (USULAN). Aturan arsip mengikuti SNX-FAT-SOP-04.",
+        "Minimal 10 tahun (USULAN), sama dengan baris di atas."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan form ini"
+      ],
+      "widths_cm": [
+       3.4,
+       5.6,
+       6.5
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "5.3 Peran, tanggung jawab, dan wewenang organisasi",
+        "Tabel 2 menunjukkan jabatan yang memutuskan atas tiap pembayaran, dan butir 4.4 mengaitkan Penyetuju dengan delegasi tertulis."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Rekaman keputusan dan bukti persetujuan punya lokasi, pemilik, dan retensi yang tercatat di tabel Rekaman."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.3 Pemisahan tugas",
+        "Finance Staff mencatat, Finance Lead dan Penyetuju memutuskan, dan butir 4.7 melarang satu orang memutuskan pengajuannya sendiri."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.33 Perlindungan rekaman",
+        "Log dan bukti persetujuan disimpan di lokasi dan klasifikasi yang tercatat di tabel Rekaman."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX: sumber nama peran Finance Lead dan Finance Staff, yang belum dipetakan ke jabatan (butir K-13)."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan: tugas nomor 4 dan wewenang JA-10 yang dipakai di butir 4.3."
+       ],
+       [
+        "SNX-FAT-SOP-01",
+        "Billing & Invoicing: persetujuan invoice ke klien, dikecualikan dari form ini."
+       ],
+       [
+        "SNX-FAT-SOP-04",
+        "Financial Document Control & Retention: aturan pengarsipan dokumen keuangan, dipakai untuk lokasi dan retensi rekaman form ini (USULAN)."
+       ],
+       [
+        "SNX-FAT-SOP-05",
+        "Tax Administration & Reporting: butir 6.3 menyebut form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (USULAN)."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling Procedure: tingkat RESTRICTED (Internal) untuk form ini (butir 4.10)."
+       ],
+       [
+        "Belum bernomor",
+        "SOP Payment and Disbursement Approval: dalam peninjauan. Mengatur pengajuan pembayaran invoice, reimbursement, dan cash advance; form ini mencatat approval atas pengajuan itu."
+       ],
+       [
+        "Belum bernomor",
+        "SOP Account Receivable & Collection dan Billing & Collection Monitoring Register: dalam peninjauan. Penagihan dan piutang, dikecualikan dari form ini."
+       ],
+       [
+        "Belum bernomor",
+        "SOP Accounting and Financial Report: dalam peninjauan. Pencatatan akuntansi, dikecualikan dari form ini."
+       ],
+       [
+        "Belum bernomor",
+        "Authority Matrix: tempat hak tanda tangan dan otorisasi keuangan ditetapkan. Sumber jabatan Penyetuju (butir 4.4)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Form ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval dan FAT menetapkan struktur kolom serta jabatan Penyetuju. Finance Lead meninjau form ini setiap tahun (USULAN)."
+    }
+   ]
+  }
+ ]
+}

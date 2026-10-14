@@ -1,0 +1,61 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 2 tabel dikecualikan (baris Penerimaan uang dari pelanggan, baris Pencatatan akuntansi); bagian 9 Dokumen Terkait (dua baris Belum bernomor)",
+      "masalah": "Status dua dokumen tetangga sudah basi. Dokumen menulis SOP Accounting and Financial Report dan Billing & Collection Monitoring Register 'dalam peninjauan dan belum bernomor'. Checklist terbaru memberi keduanya berkas tim (bukan 'on review'), dan ledger sudah mempromosikan keduanya ke W7b dengan nomor SNX-FAT-SOP-06 dan SNX-FAT-REG-01 (state QUEUED). Label 'on review' di CONTEXT-PACK baris 74 adalah judul kelompok T3, bukan status per baris; status 'on review' literal hanya ada di baris 24 dan 25. Bukan pemblokir: bukan nama, jabatan, angka, atau sistem, dan nomor W7b belum terbit sebagai dokumen. Perbaiki sebelum atau saat W7b DONE agar set dokumen konsisten.",
+      "bukti": "config/checklist.json baris 27: link_text URL Google Doc, fileId 18OGetq0..., checked true; baris 29: fileId 1Z9PXCiB..., checked true; baris 24 dan 25: link_text 'on review'. ledger.json promoted[0] FAT-SOP-06 / SNX-FAT-SOP-06, promoted[1] FAT-REG-01 / SNX-FAT-REG-01, wave W7b. Kalimat dokumen: 'Penagihan dan piutang ada di SOP Account Receivable & Collection dan Billing & Collection Monitoring Register, keduanya dalam peninjauan dan belum bernomor.' dan 'Belum bernomor | SOP Accounting and Financial Report: dalam peninjauan.'"
+    },
+    {
+      "lokasi": "Butir tambahan prompt: USULAN tanpa label di badan (notes U-13 dan U-14, ditambah U-01 sebagian dan U-12 sebagian)",
+      "masalah": "Keduanya keputusan rancangan form, bukan fakta tanpa sumber. (1) U-13, tabel tujuh pengecualian di Ruang Lingkup: batas cakupan adalah pilihan rancangan. Tiap penunjuk di dalamnya dicek: SNX-FAT-SOP-01 butir 4.4 (persetujuan invoice), SNX-FAT-SOP-05 (pajak), SNX-FAT-SOP-04 (arsip), SOP Payment and Disbursement Approval 'on review' (checklist baris 25), Authority Matrix belum bernomor (SNX-HR-ORG-01) cocok. Pengecualian ada pada dua status basi di butir pertama dan penunjuk butir 4.8 di bawah. (2) U-14, Process Owner Finance Lead di tabel Identity: mengikuti aturan config/defaults.json process_owner ('Dokumen baru tanpa sumber: jabatan pada kolom reviewed departemennya'), dan di badan sudah tercakup label intro Peran. Nilai Keputusan Disetujui/Ditolak di Definisi dan pajak di Ruang Lingkup juga tanpa label setempat, tetapi tercakup butir 4.9 dan label di Dokumen Terkait. Saran: tambah satu label pada kalimat 'Butir berikut dikecualikan dari form ini (USULAN):'.",
+      "bukti": "notes/FAT-FRM-01.md baris 106 dan tabel USULAN U-13, U-14; config/defaults.json process_owner.rule; config/checklist.json baris 25; specs/HR-ORG-01.json baris Authority Matrix 'Belum bernomor'."
+    },
+    {
+      "lokasi": "Bagian 2 tabel dikecualikan, baris Persetujuan invoice ke klien",
+      "masalah": "Penunjuk butir kurang tepat. SNX-FAT-SOP-01 butir 4.8 mengatur persetujuan TOP di atas 14 hari oleh Direktur Utama, bukan persetujuan invoice. Cukup butir 4.4, atau sebut 4.8 sebagai persetujuan TOP.",
+      "bukti": "SNX-FAT-SOP-01 4.4: 'Finance Staff tidak menerbitkan atau mengirim invoice kepada klien tanpa persetujuan tertulis Finance Lead.' 4.8: 'TOP standar adalah 14 hari kalender sejak tanggal invoice (USULAN). Direktur Utama menyetujui TOP di atas 14 hari...'"
+    },
+    {
+      "lokasi": "Langkah 6.11 dan tabel Rekaman baris 2",
+      "masalah": "Rujukan lokasi melingkar, jadi langkah tidak bisa dijalankan dari teks. Langkah 6.11 menunjuk ke tabel Rekaman, dan tabel Rekaman baris 2 menunjuk balik ke Tabel 3. Lokasi bukti persetujuan dan bukti pembayaran tidak pernah disebut. Saran: isi lokasi baris 2 dengan Folder arsip FAT menurut SNX-FAT-SOP-04 (USULAN).",
+      "bukti": "6.11: 'Finance Staff menulis lokasi bukti persetujuan di Tabel 3, sesuai lokasi di tabel Rekaman (butir 4.8).' Rekaman baris 2: 'Lokasi tertulis di Tabel 3. Pemilik: Finance Lead (USULAN). Aturan arsip mengikuti SNX-FAT-SOP-04.'"
+    },
+    {
+      "lokasi": "Butir 4.3 dan 4.7; Peran baris Finance Staff dan Finance Lead",
+      "masalah": "Ada ketegangan dengan data_conflicts. Butir 4.3 memberikan tugas nomor 4 dan wewenang menahan pembayaran JA-10 kepada Finance Lead. Padahal data_conflicts menyebut pemegang JA-10 sebagai staf Finance, dan butir 4.7 melarang Finance Staff memutuskan. Kutipan JA-10 benar (dicek di specs/HR-JA-01.json blok JA-10), pelakunya berlabel USULAN lewat butir 4.9, dan pemetaan K-13 masih terbuka (OI-2). Bukan karangan, tetapi perlu disebut di open item: bila K-13 memetakan JA-10 ke Finance Staff, butir 4.3 atau 4.7 berubah.",
+      "bukti": "config/defaults.json data_conflicts 'Nama staf Finance': pakai Kana Salsabila Putri Koeswologito, dasar 'HR-JA-001 JA-10'. specs/HR-JA-01.json JA-10: tugas '4. Memeriksa kelengkapan payment request dan kesesuaian dengan persetujuan.' dan Wewenang '1) Memverifikasi/menahan pembayaran yang belum lengkap'."
+    },
+    {
+      "lokasi": "Butir 4.7 lawan SNX-FAT-SOP-05 butir 6.3",
+      "masalah": "Konflik lintas dokumen, sudah tercatat sebagai OI-4. Menurut SOP-05 6.3, Finance Lead menyetujui utang pajak lalu mengajukan pembayarannya. Menurut butir 4.7 form ini, setiap pembayaran pajak yang Finance Lead ajukan diputus Penyetuju, padahal jabatan Penyetuju belum ditetapkan. Akibatnya form belum bisa dipakai untuk pajak sebelum Authority Matrix ada. Kesimpulan sudah mensyaratkan penetapan Penyetuju sebelum form dipakai, jadi cukup diputus FAT dan owner.",
+      "bukti": "SNX-FAT-SOP-05 6.3 langkah 2 'Setujui utang pajak yang sudah direkonsiliasi. | Finance Lead | Persetujuan utang pajak, dicatat di SNX-FAT-FRM-01 (USULAN)' dan langkah 3 'Ajukan pembayaran pajak yang sudah disetujui.' PIC Finance Lead; form 4.7 'Bila Finance Lead adalah Pemohon, Penyetuju memutuskan pengajuan itu'."
+    },
+    {
+      "lokasi": "Butir 4.4, 4.6, 4.7 kalimat terakhir; intro bagian Log Sheet Approval",
+      "masalah": "Beberapa kalimat pasif tanpa pelaku, padahal pelakunya (Finance Staff) diketahui (§6a.1). Belum pelanggaran jelas karena Cara Mengisi memberi pelaku di tiap langkah.",
+      "bukti": "'Bila delegasi tidak mensyaratkannya, kolom Penyetuju dikosongkan.'; 'Tabel 3 terisi hanya untuk baris yang semua keputusannya Disetujui.'; '...dan kolom Keputusan Finance Lead dikosongkan.'; 'Sel data dikosongkan dan diisi sesuai bagian Cara Mengisi.'"
+    },
+    {
+      "lokasi": "Tujuan; tabel Rekaman baris 1; seluruh dokumen",
+      "masalah": "Istilah dan kata sambung tidak seragam (§6a.6 dan §6a.7). 'approval' (Tujuan) bergantian dengan 'persetujuan' dan 'keputusan'. 'setelah' muncul 1 kali dan 'sesudah' 4 kali.",
+      "bukti": "'Form ini mencatat approval atas setiap transaksi pembayaran...'; 'Form ini setelah diisi: Tabel 1, Tabel 2, dan Tabel 3' lawan 'sesudah Finance Lead' (4.4), 'sesudah Penyetuju memutuskan' (6.9)."
+    },
+    {
+      "lokasi": "Bagian 5 Peran, bagian 6 Cara Mengisi, Tujuan kalimat 2",
+      "masalah": "Isi berulang antarbagian (§6a.6). Tabel Peran dan langkah 6.7 sampai 6.11 menyalin butir 4.2 sampai 4.8, dan Tujuan kalimat 2 mendaftar kolom tabel. Pembuka 'Hasil yang dijaga adalah' berpola templat. Tidak berulang sampai tingkat pemblokir.",
+      "bukti": "Peran Penyetuju 'Memutuskan sesudah Finance Lead bila delegasi tertulis mensyaratkan, dan atas pengajuan Finance Lead sendiri (butir 4.4 dan 4.7)' sama dengan isi 4.4 dan 4.7."
+    },
+    {
+      "lokasi": "Cek (g) context/audit",
+      "masalah": "Dokumen ini tidak punya fileId. Satu-satunya temuan audit adalah sintesis baris 751 (butir 8 FAT). Verdict sintesis baris 434 dan 446 menempatkan FAT 8 di tier G dan menggabungkannya ke paket DoA keuangan HR+FAT. Form tetap dibuat berdiri sendiri sesuai checklist baris 30 dan worklist T2, dan ketegangan ini dijelaskan di notes OI-11. Ditangani.",
+      "bukti": "context/audit/iso-sinux-supdocs-sintesis-2026-10-14.md baris 446: 'HR: HR-JA-001 final + bagan + wewenang; ... FAT 8 (DoA keuangan, revisi 2) | HR + FAT'; notes/FAT-FRM-01.md OI-11."
+    },
+    {
+      "lokasi": "Ringkasan cek yang lulus (catatan, bukan cacat)",
+      "masalah": "Tidak ada temuan. (a)(b) Nama orang di badan nihil. Samuel Kristanto Utomo / President Director hanya ada di blok Approval, dan badan menulis Direktur Utama. Satu-satunya angka, 10 tahun, berlabel USULAN dan bersumber dari SNX-FAT-SOP-01 serta SNX-FAT-SOP-04 butir 4.8. Kutipan JA-10 dan SNX-FAT-SOP-05 butir 6.3 cocok, dan judul semua kode SNX di Dokumen Terkait cocok dengan spec masing-masing. Klausul ISO berlabel USULAN. (c) Kriteria terpenuhi: Tabel 1, 2, dan 3 berbagi nomor baris, satu baris satu transaksi pembayaran, dengan kolom keputusan Finance Lead dan Penyetuju, tanggal, alasan, dan lokasi bukti persetujuan. (d) Status Draft, Effective Date kosong, tanda tangan kosong, tiga penanda tangan berbeda, klasifikasi RESTRICTED (Internal), dan sel data kosong tanpa baris contoh. Nol rujukan internal AI, nol em-dash dan en-dash, nol tanda kutip, tebal hanya di sampul. (e) Semua pelaku di bagian 6 dan pemilik di bagian 8 (Finance Staff, Finance Lead, Penyetuju, Pemohon) ada di tabel Peran. Lint pass.",
+      "bukti": "Teks dokumen hasil ekstraksi python-docx; qa/FAT-FRM-01.lint.json pass true; config/worklist.json classification RESTRICTED (Internal); specs/FAT-SOP-01.json, FAT-SOP-04.json, FAT-SOP-05.json, HR-JA-01.json, HR-ORG-01.json."
+    }
+  ]
+}
