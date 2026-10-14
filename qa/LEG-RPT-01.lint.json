@@ -1,0 +1,9 @@
+{
+ "file": "out/04_Legal/SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "30 butir (USULAN) menunggu ACC"
+ ]
+}

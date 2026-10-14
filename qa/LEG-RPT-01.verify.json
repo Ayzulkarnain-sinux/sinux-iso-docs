@@ -1,0 +1,46 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Istilah (Nilai Status dan Tingkat Risiko), Petunjuk butir 6; lintas dokumen specs/LEG-REG-02.json",
+      "masalah": "Skala dan kategori sama dengan Legal Risk Register (Rendah, Sedang, Tinggi, Sangat Tinggi), tetapi nama kolom beda. Laporan ini memakai kolom 'Tingkat Risiko' yang diisi satu kategori. LEG-REG-02 memakai kolom 'Kategori Risiko' dan mendefinisikan 'Tingkat risiko' sebagai 'Nilai Risiko beserta Kategori Risiko-nya'. Beda nama saja, tidak bertentangan.",
+      "bukti": "RPT-01: 'Kolom Tingkat Risiko diisi satu kategori: Rendah, Sedang, Tinggi, atau Sangat Tinggi. Nilai dan ambang tiap kategori ada di SNX-LEG-REG-02 (USULAN).' REG-02 Metode Penilaian: header ['Nilai','Kategori Risiko','Penanganan'] dengan baris Rendah/Sedang/Tinggi/Sangat Tinggi; Istilah REG-02: 'Tingkat risiko | Nilai Risiko beserta Kategori Risiko-nya.' Saran: 'Kolom Tingkat Risiko diisi Kategori Risiko menurut SNX-LEG-REG-02'."
+    },
+    {
+      "lokasi": "Istilah 'Aspek'; Petunjuk butir 4 dan 8; Ringkasan Hasil Pemantauan",
+      "masalah": "Definisi 'Aspek' tidak cocok dengan cara hitung. Istilah menyebut satu aspek = satu baris, Petunjuk butir 4 mengizinkan beberapa baris per aspek, dan Petunjuk butir 8 menghitung baris sebagai 'Jumlah aspek'. Sumber menulis 'Jumlah aspek atau kewajiban yang diperiksa'.",
+      "bukti": "'Aspek | Satu hal yang dipantau, ditulis satu baris pada tabel Daftar Periksa Pemantauan'; 'Staff Legal menambah baris bila satu aspek punya lebih dari satu kewajiban.'; 'Jumlah aspek yang diperiksa memuat baris Daftar Periksa berstatus Sesuai, Sebagian Sesuai, atau Tidak Sesuai (USULAN).'"
+    },
+    {
+      "lokasi": "Peran, baris Penanggung Jawab dan Unit Kerja yang Dipantau",
+      "masalah": "Rujukan butir di tabel Peran meleset. Ketentuan butir 10 tidak menyebut Penanggung Jawab menyerahkan Bukti Penyelesaian. Ketentuan butir 5, yang memberi tugas kepada Unit Kerja yang Dipantau, tidak dirujuk.",
+      "bukti": "Peran: 'Penanggung Jawab | ... menyerahkan Bukti Penyelesaian kepada Staff Legal (Ketentuan butir 7 dan 10).' Ketentuan 10: 'Staff Legal mencatat Hasil Verifikasi atas Bukti Penyelesaian. Line Manager Legal menetapkan penutupan temuan...'. Ketentuan 5: '...Unit Kerja yang Dipantau menyerahkan bukti itu sesuai Rekomendasi butir 2 (USULAN).'"
+    },
+    {
+      "lokasi": "Ketentuan butir 7; Petunjuk butir 5 dan 7; Istilah (pengantar tabel Status)",
+      "masalah": "Beberapa kalimat pasif tidak menyebut pelaku, padahal pelakunya Staff Legal (§6a butir 1). Kalimat ini petunjuk isian formulir dan tidak berulang luas, jadi tidak memblokir.",
+      "bukti": "'Penanggung Jawab dan Target Penyelesaian ditulis sesuai kesepakatan kedua pihak.'; 'Catatan Temuan diisi satu tabel per temuan.'; 'Rencana Tindakan Perbaikan diisi satu baris per Tindakan Perbaikan (Ketentuan butir 9).'; 'Kolom Status pada Daftar Periksa Pemantauan diisi satu dari lima nilai berikut.'"
+    },
+    {
+      "lokasi": "Tujuan",
+      "masalah": "Kata 'pencegahan' dari sumber tidak ada di Tujuan. Maknanya hanya tertampung lewat definisi Tindakan Perbaikan. Untuk T1, pertimbangkan mengembalikan kata itu.",
+      "bukti": "Sumber: '...serta menetapkan tindakan perbaikan dan pencegahan yang diperlukan.' Dokumen: '...dan tindakan perbaikan yang ditetapkan atas tiap temuan...'; Istilah: 'Tindakan untuk menghilangkan penyebab satu temuan dan mencegah temuan itu terulang.'"
+    },
+    {
+      "lokasi": "Ruang Lingkup, tabel pengecualian baris terakhir",
+      "masalah": "Butir 4.5 SNX-LEG-SOP-01 hanya menyebut 'Keputusan bisnis tetap pada Manajemen'. Dokumen ini memperluasnya menjadi daftar empat bidang dengan pemutus kabur ('pihak berwenang di bidangnya'). Tabel berlabel USULAN, jadi tidak memblokir.",
+      "bukti": "'Keputusan bisnis, komersial, keuangan, dan keamanan informasi | Tetap pada pihak berwenang di bidangnya. Laporan ini hanya memuat rekomendasi Legal (SNX-LEG-SOP-01 butir 4.5).' SOP-01 4.5: 'Departemen Legal memberi opini dan rekomendasi risiko. Keputusan bisnis tetap pada Manajemen.'"
+    },
+    {
+      "lokasi": "Peran (Staff Legal, Line Manager Legal); Ketentuan butir 1",
+      "masalah": "Badan dokumen memuat catatan status draf: kode butir konfirmasi K-13 dan frasa 'diputuskan Legal'. Keduanya perlu dibersihkan saat USULAN diputus. Ini bukan rujukan internal AI menurut §0 butir 6.",
+      "bukti": "'Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).'; '(USULAN: satu laporan per triwulan, selaras dengan memo kepatuhan di SNX-LEG-SOP-01 prosedur 6.7; diputuskan Legal).'"
+    },
+    {
+      "lokasi": "Cek (g) context/audit dan data_conflicts",
+      "masalah": "Informasi, tidak ada cacat. grep fileId 1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA di context/audit/*.md menghasilkan nol baris. notes/LEG-RPT-01.md bagian 4 menjelaskannya dan menangani 18 cacat yang ditemukan langsung di sumber, termasuk judul sisa 'Legal Risk Register', Nama Perusahaan 'Daftar Risiko Hukum', dan istilah yang tidak konsisten. Nama dan jabatan cocok dengan defaults v21: Approval 'Samuel Kristanto Utomo / President Director', Prepared 'Staff Legal', Reviewed 'Line Manager Legal', badan dokumen memakai 'Direktur Utama', dan COO tidak muncul.",
+      "bukti": "Hasil grep kosong; blok Approval dokumen: 'Staff Legal', 'Line Manager Legal', 'Samuel Kristanto Utomo / President Director'; Kesimpulan: '...sesudah Direktur Utama menandatangani blok Approval.'"
+    }
+  ]
+}

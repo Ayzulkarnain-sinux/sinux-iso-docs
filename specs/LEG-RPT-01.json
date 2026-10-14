@@ -1,0 +1,1029 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "LEG-RPT-01",
+    "doc_type_cover": "REPORT",
+    "doc_type_label": "Report",
+    "number": "SNX-LEG-RPT-01",
+    "department": "Legal",
+    "title": "Legal Compliance Monitoring & Corrective Action Report",
+    "process_owner": "Line Manager Legal",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Staff Legal",
+      "reviewed": "Line Manager Legal",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Ruang Lingkup",
+      "blocks": [
+        {
+          "h2": "Tujuan"
+        },
+        {
+          "p": "Laporan ini memuat hasil pemantauan kepatuhan hukum SINUX, ketidaksesuaian atau potensi risiko hukum yang ditemukan, dan tindakan perbaikan yang ditetapkan atas tiap temuan beserta penanggung jawab dan status penyelesaiannya. Staff Legal melakukan pemantauan untuk mendukung pemenuhan kewajiban hukum dan kontraktual SINUX dan menjaga efektivitas penerapan Sistem Manajemen Keamanan Informasi (SMKI), sepanjang relevan dengan ruang lingkup pemantauan."
+        },
+        {
+          "p": "Hasil yang dijaga: setiap temuan punya tindakan perbaikan, penanggung jawab, target, dan status yang dapat ditelusuri, dan tidak ada aspek yang dinyatakan terpenuhi tanpa bukti."
+        },
+        {
+          "h2": "Ruang Lingkup"
+        },
+        {
+          "p": "Satu laporan mencakup satu periode pemantauan. Tabel berikut memuat delapan aspek yang dapat dipantau. Staff Legal menulis pada tabel Informasi Umum aspek yang masuk ruang lingkup tiap periode."
+        },
+        {
+          "table": {
+            "header": [
+              "Kode",
+              "Aspek yang Dipantau",
+              "Cakupan"
+            ],
+            "rows": [
+              [
+                "M1",
+                "Perizinan Perusahaan",
+                "Pemenuhan perizinan dan legalitas perusahaan."
+              ],
+              [
+                "M2",
+                "Kepatuhan Regulasi",
+                "Kepatuhan terhadap peraturan perundang-undangan yang berlaku."
+              ],
+              [
+                "M3",
+                "Kontrak Pelanggan",
+                "Pemenuhan kewajiban kontraktual dengan pelanggan."
+              ],
+              [
+                "M4",
+                "Kontrak Vendor/Pemasok",
+                "Pemenuhan kewajiban kontraktual dengan vendor, pemasok, dan mitra."
+              ],
+              [
+                "M5",
+                "Pelindungan Data Pribadi dan Kerahasiaan",
+                "Pelindungan data pribadi dan kerahasiaan informasi."
+              ],
+              [
+                "M6",
+                "Keamanan Informasi",
+                "Pemenuhan kewajiban hukum terkait keamanan informasi."
+              ],
+              [
+                "M7",
+                "Kebijakan dan Prosedur Internal",
+                "Kepatuhan terhadap kebijakan dan prosedur internal."
+              ],
+              [
+                "M8",
+                "Tindak Lanjut Temuan Sebelumnya",
+                "Tindak lanjut atas temuan pemantauan atau audit sebelumnya."
+              ]
+            ],
+            "widths_cm": [
+              1.6,
+              5.0,
+              9.4
+            ]
+          }
+        },
+        {
+          "p": "Butir berikut dikecualikan dari laporan ini (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Butir yang dikecualikan",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "Penilaian risiko hukum dan metodenya",
+                "Dicatat di SNX-LEG-REG-02. Laporan ini hanya memuat Tingkat Risiko tiap temuan."
+              ],
+              [
+                "Evaluasi tingkat kepatuhan SINUX secara keseluruhan",
+                "Diatur di SNX-LEG-RPT-02. Laporan ini hanya memuat hasil pemantauan satu periode."
+              ],
+              [
+                "Penelaahan kontrak satu per satu",
+                "Diatur di SNX-LEG-SOP-02, dengan daftar periksa SNX-LEG-FRM-01 dan SNX-LEG-FRM-02. Laporan ini hanya memuat status pemenuhan kewajiban kontraktual."
+              ],
+              [
+                "Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang rinci",
+                "Dilakukan dengan SNX-LEG-FRM-03. Laporan ini hanya memuat status pemenuhan pada aspek M5."
+              ],
+              [
+                "Keputusan bisnis, komersial, keuangan, dan keamanan informasi",
+                "Tetap pada pihak berwenang di bidangnya. Laporan ini hanya memuat rekomendasi Legal (SNX-LEG-SOP-01 butir 4.5)."
+              ]
+            ],
+            "widths_cm": [
+              5.5,
+              10.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {
+          "h2": "Istilah"
+        },
+        {
+          "table": {
+            "header": [
+              "Istilah",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "(USULAN)",
+                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+              ],
+              [
+                "Aspek",
+                "Satu hal yang dipantau, ditulis satu baris pada tabel Daftar Periksa Pemantauan dengan kode M1 sampai M8."
+              ],
+              [
+                "Catatan Temuan",
+                "Tabel isian untuk satu temuan, dari Nomor Temuan sampai Tanggal Penutupan."
+              ],
+              [
+                "Pelaksana Pemantauan",
+                "Orang yang memeriksa bukti dan mengisi laporan untuk satu periode."
+              ],
+              [
+                "Pemantauan",
+                "Pemeriksaan pemenuhan kewajiban hukum SINUX pada aspek M1 sampai M8 untuk satu periode, yang hasilnya ditulis dalam satu laporan."
+              ],
+              [
+                "Penanggung Jawab",
+                "Orang yang menjalankan satu Tindakan Perbaikan sampai selesai, ditulis dengan nama dan jabatan."
+              ],
+              [
+                "Periode Pemantauan",
+                "Rentang waktu yang diperiksa oleh satu laporan."
+              ],
+              [
+                "SMKI",
+                "Sistem Manajemen Keamanan Informasi SINUX, ditulis ISMS pada kode dokumen SNX-ISMS."
+              ],
+              [
+                "Temuan",
+                "Ketidaksesuaian, kekurangan, atau potensi risiko hukum yang memerlukan tindak lanjut."
+              ],
+              [
+                "Tindakan Perbaikan",
+                "Tindakan untuk menghilangkan penyebab satu temuan dan mencegah temuan itu terulang."
+              ],
+              [
+                "Unit Kerja yang Dipantau",
+                "Unit kerja SINUX yang pemenuhan kewajiban hukumnya diperiksa dalam satu laporan."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "h2": "Nilai Status dan Tingkat Risiko"
+        },
+        {
+          "p": "Kolom Status pada Daftar Periksa Pemantauan diisi satu dari lima nilai berikut."
+        },
+        {
+          "table": {
+            "header": [
+              "Status",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Sesuai",
+                "Kewajiban telah dipenuhi menurut bukti yang diperiksa."
+              ],
+              [
+                "Tidak Sesuai",
+                "Ada bukti bahwa kewajiban belum dipenuhi atau ada penyimpangan."
+              ],
+              [
+                "Sebagian Sesuai",
+                "Sebagian kewajiban telah dipenuhi, tetapi masih terdapat kekurangan."
+              ],
+              [
+                "Belum Diverifikasi",
+                "Bukti belum cukup untuk menyimpulkan status kepatuhan."
+              ],
+              [
+                "Tidak Berlaku",
+                "Kewajiban tidak relevan terhadap ruang lingkup yang diperiksa."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Kolom Status Tindak Lanjut pada Catatan Temuan dan Rencana Tindakan Perbaikan diisi satu dari tiga nilai berikut (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Status Tindak Lanjut",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Terbuka",
+                "Tindakan Perbaikan belum selesai, atau Bukti Penyelesaian belum diserahkan."
+              ],
+              [
+                "Menunggu Verifikasi",
+                "Bukti Penyelesaian sudah diserahkan dan belum diverifikasi."
+              ],
+              [
+                "Ditutup",
+                "Tindakan Perbaikan sudah dilaksanakan dan efektif menurut Hasil Verifikasi, dan Tanggal Penutupan sudah diisi."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Kolom Tingkat Risiko diisi satu kategori: Rendah, Sedang, Tinggi, atau Sangat Tinggi. Nilai dan ambang tiap kategori ada di SNX-LEG-REG-02 (USULAN)."
+        }
+      ]
+    },
+    {
+      "h": "Ketentuan Penggunaan",
+      "blocks": [
+        {
+          "p": "1. Satu laporan dipakai untuk satu Periode Pemantauan. Staff Legal mengisi tabel Informasi Umum, termasuk aspek yang dipantau pada periode itu. Frekuensi laporan belum diputus (USULAN: satu laporan per triwulan, selaras dengan memo kepatuhan di SNX-LEG-SOP-01 prosedur 6.7; diputuskan Legal)."
+        },
+        {
+          "p": "2. Staff Legal memberi status Tidak Berlaku pada aspek yang tidak relevan dengan kegiatan atau ruang lingkup SINUX, dan menulis alasannya di kolom Catatan/Temuan."
+        },
+        {
+          "p": "3. Staff Legal memantau dengan satu metode atau lebih dari enam metode berikut."
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Metode Pemantauan"
+            ],
+            "rows": [
+              [
+                "1",
+                "Pemeriksaan dokumen dan catatan SINUX."
+              ],
+              [
+                "2",
+                "Penelaahan peraturan perundang-undangan dan perubahan regulasi."
+              ],
+              [
+                "3",
+                "Pemeriksaan status perizinan dan kewajiban pelaporan."
+              ],
+              [
+                "4",
+                "Penelaahan kontrak dan dokumen pendukung."
+              ],
+              [
+                "5",
+                "Wawancara atau konfirmasi kepada Unit Kerja yang Dipantau."
+              ],
+              [
+                "6",
+                "Pemeriksaan bukti pelaksanaan Tindakan Perbaikan sebelumnya."
+              ]
+            ],
+            "widths_cm": [
+              1.5,
+              14.5
+            ]
+          }
+        },
+        {
+          "p": "4. Setiap kesimpulan didukung bukti yang dapat ditelusuri. Bila bukti belum tersedia atau belum diperiksa, Staff Legal memberi status Belum Diverifikasi dan tidak memberi status Sesuai."
+        },
+        {
+          "p": "5. Staff Legal tidak mencatat aspek berstatus Belum Diverifikasi sebagai temuan. Staff Legal menulis bukti yang masih diperlukan di kolom Catatan/Temuan, dan Unit Kerja yang Dipantau menyerahkan bukti itu sesuai Rekomendasi butir 2 (USULAN)."
+        },
+        {
+          "p": "6. Staff Legal mencatat satu Catatan Temuan untuk setiap ketidaksesuaian, kekurangan, atau potensi risiko hukum yang memerlukan tindak lanjut. Untuk aspek berstatus Tidak Sesuai atau Sebagian Sesuai, Staff Legal mencatat sekurang-kurangnya satu temuan (USULAN)."
+        },
+        {
+          "p": "7. Staff Legal membahas Tindakan Perbaikan dengan Unit Kerja yang Dipantau. Penanggung Jawab dan Target Penyelesaian ditulis sesuai kesepakatan kedua pihak. Bila tidak ada kesepakatan, Line Manager Legal memutuskan (USULAN)."
+        },
+        {
+          "p": "8. Staff Legal mencatat Tingkat Risiko tiap temuan. Line Manager Legal meninjau Tingkat Risiko itu saat memeriksa laporan (USULAN, selaras dengan SNX-LEG-SOP-02 butir 4.11)."
+        },
+        {
+          "p": "9. Staff Legal menyalin Nomor Temuan, Tindakan Perbaikan, Penanggung Jawab, Target Penyelesaian, Bukti Penyelesaian, dan Status Tindak Lanjut dari Catatan Temuan ke tabel Rencana Tindakan Perbaikan. Bila isinya berbeda, Catatan Temuan yang berlaku (USULAN)."
+        },
+        {
+          "p": "10. Staff Legal mencatat Hasil Verifikasi atas Bukti Penyelesaian. Line Manager Legal menetapkan penutupan temuan, lalu Staff Legal mengisi Status Tindak Lanjut Ditutup dan Tanggal Penutupan (USULAN)."
+        },
+        {
+          "p": "11. Line Manager Legal memeriksa laporan terisi sebelum persetujuan (USULAN)."
+        },
+        {
+          "p": "12. Staff Legal menyimpan laporan terisi bersama buktinya di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan menulis lokasi bukti pada kolom Bukti yang Diperiksa dan Bukti Penyelesaian. Laporan terisi memuat temuan hukum, sehingga Staff Legal menandainya RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
+        }
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Peran",
+              "Tugas pada laporan ini"
+            ],
+            "rows": [
+              [
+                "Staff Legal",
+                "Pelaksana Pemantauan (USULAN). Mengisi laporan, memantau aspek, mencatat status, temuan, dan hasil verifikasi, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 10 dan 12). Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+              ],
+              [
+                "Line Manager Legal",
+                "Pemilik dokumen (USULAN). Memutuskan Tindakan Perbaikan bila tidak ada kesepakatan, meninjau Tingkat Risiko, menetapkan penutupan temuan, dan memeriksa laporan terisi (Ketentuan butir 7, 8, 10, dan 11). Dipetakan ke Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+              ],
+              [
+                "Unit Kerja yang Dipantau",
+                "Menyerahkan bukti pemenuhan kewajiban miliknya kepada Staff Legal dan menyepakati Tindakan Perbaikan (Ketentuan butir 7 dan Rekomendasi butir 2)."
+              ],
+              [
+                "Penanggung Jawab",
+                "Menjalankan satu Tindakan Perbaikan sampai selesai dan menyerahkan Bukti Penyelesaian kepada Staff Legal (Ketentuan butir 7 dan 10)."
+              ],
+              [
+                "Penyetuju Laporan",
+                "Menandatangani baris Disetujui oleh pada tabel Persetujuan dan Pengesahan (USULAN). Jabatan pemegang peran ini belum ditetapkan."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+        }
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {
+          "p": "1. Staff Legal mengisi tabel Informasi Umum. Nama Perusahaan sudah terisi. Periode Pemantauan memuat rentang tanggal yang diperiksa, dan Tanggal Pemantauan memuat tanggal pemeriksaan bukti."
+        },
+        {
+          "p": "2. Kolom Pelaksana Pemantauan memuat nama dan jabatan, dan kolom Unit Kerja yang Dipantau memuat nama unit. Kolom Ruang Lingkup memuat kode aspek M1 sampai M8 yang dipantau pada periode itu, dan kolom Dasar Pemantauan memuat dokumen atau penugasan yang menjadi dasar pemantauan periode itu."
+        },
+        {
+          "p": "3. Pada Daftar Periksa Pemantauan, kolom Kewajiban/Kriteria Kepatuhan memuat kewajiban yang diperiksa, dan kolom Dasar Hukum/Dokumen Acuan memuat peraturan, kontrak, atau dokumen internal asal kewajiban itu. Daftar peraturan ada di SNX-LEG-REG-03 dan daftar perizinan di SNX-LEG-REG-01 (USULAN)."
+        },
+        {
+          "p": "4. Kolom Bukti yang Diperiksa memuat nama bukti dan lokasinya. Kolom Status diisi satu dari lima nilai pada bagian Istilah. Kolom Catatan/Temuan memuat uraian singkat dan Nomor Temuan bila ada. Staff Legal menambah baris bila satu aspek punya lebih dari satu kewajiban."
+        },
+        {
+          "p": "5. Catatan Temuan diisi satu tabel per temuan. Staff Legal menyalin tabel kosong untuk temuan berikutnya. Nomor Temuan berupa nomor urut dalam satu laporan, dimulai dari 1 (USULAN). Kolom Aspek Kepatuhan memuat kode dan nama aspek."
+        },
+        {
+          "p": "6. Kolom Tingkat Risiko memuat satu kategori pada bagian Istilah. Kolom Penanggung Jawab memuat nama dan jabatan. Kolom Status Tindak Lanjut memuat satu dari tiga nilai pada bagian Istilah (USULAN). Kolom Hasil Verifikasi memuat hasil pemeriksaan Staff Legal atas Bukti Penyelesaian."
+        },
+        {
+          "p": "7. Rencana Tindakan Perbaikan diisi satu baris per Tindakan Perbaikan (Ketentuan butir 9)."
+        },
+        {
+          "p": "8. Pada Ringkasan Hasil Pemantauan, Jumlah aspek yang diperiksa memuat baris Daftar Periksa berstatus Sesuai, Sebagian Sesuai, atau Tidak Sesuai (USULAN). Jumlah Tindakan Perbaikan yang masih terbuka memuat Tindakan Perbaikan berstatus Terbuka atau Menunggu Verifikasi (USULAN)."
+        },
+        {
+          "p": "9. Staff Legal menguraikan kondisi kepatuhan pada Kesimpulan umum berdasarkan hasil pemeriksaan dan bukti yang tersedia. Staff Legal tidak menyatakan seluruh SINUX telah patuh bila masih ada aspek yang belum diperiksa atau belum diverifikasi."
+        },
+        {
+          "p": "10. Pada tabel Persetujuan dan Pengesahan, Staff Legal mengisi baris Disusun oleh, Line Manager Legal mengisi baris Diperiksa oleh, dan Penyetuju Laporan mengisi baris Disetujui oleh (USULAN). Tiap pihak menulis nama dan jabatan, tanggal, dan tanda tangan sendiri."
+        }
+      ]
+    },
+    {
+      "h": "Isi Laporan",
+      "blocks": [
+        {
+          "p": "Semua sel isian kosong sampai Staff Legal mengisinya untuk satu Periode Pemantauan. Sel Nama Perusahaan serta kode dan nama aspek sudah terisi."
+        },
+        {
+          "h2": "Informasi Umum"
+        },
+        {
+          "table": {
+            "header": [
+              "Keterangan",
+              "Informasi"
+            ],
+            "rows": [
+              [
+                "Nama Perusahaan",
+                "PT Strategi Integrasi Nusantara (SINUX)"
+              ],
+              [
+                "Periode Pemantauan",
+                ""
+              ],
+              [
+                "Tanggal Pemantauan",
+                ""
+              ],
+              [
+                "Pelaksana Pemantauan",
+                ""
+              ],
+              [
+                "Unit Kerja yang Dipantau",
+                ""
+              ],
+              [
+                "Ruang Lingkup",
+                ""
+              ],
+              [
+                "Dasar Pemantauan",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              5,
+              11
+            ]
+          }
+        },
+        {
+          "h2": "Daftar Periksa Pemantauan"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Aspek yang Dipantau",
+              "Kewajiban/Kriteria Kepatuhan",
+              "Dasar Hukum/Dokumen Acuan",
+              "Bukti yang Diperiksa",
+              "Status",
+              "Catatan/Temuan"
+            ],
+            "rows": [
+              [
+                "M1",
+                "Perizinan Perusahaan",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M2",
+                "Kepatuhan Regulasi",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M3",
+                "Kontrak Pelanggan",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M4",
+                "Kontrak Vendor/Pemasok",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M5",
+                "Pelindungan Data Pribadi dan Kerahasiaan",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M6",
+                "Keamanan Informasi",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M7",
+                "Kebijakan dan Prosedur Internal",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "M8",
+                "Tindak Lanjut Temuan Sebelumnya",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.2,
+              3.1,
+              2.6,
+              2.9,
+              2.4,
+              1.8,
+              2.0
+            ]
+          }
+        },
+        {
+          "h2": "Catatan Temuan"
+        },
+        {
+          "p": "Satu tabel per temuan."
+        },
+        {
+          "table": {
+            "header": [
+              "Keterangan",
+              "Uraian"
+            ],
+            "rows": [
+              [
+                "Nomor Temuan",
+                ""
+              ],
+              [
+                "Tanggal Temuan",
+                ""
+              ],
+              [
+                "Aspek Kepatuhan",
+                ""
+              ],
+              [
+                "Uraian Temuan",
+                ""
+              ],
+              [
+                "Persyaratan yang Tidak Terpenuhi",
+                ""
+              ],
+              [
+                "Dasar Hukum/Dokumen Acuan",
+                ""
+              ],
+              [
+                "Bukti Pendukung",
+                ""
+              ],
+              [
+                "Dampak/Potensi Risiko",
+                ""
+              ],
+              [
+                "Tingkat Risiko",
+                ""
+              ],
+              [
+                "Penyebab",
+                ""
+              ],
+              [
+                "Tindakan Perbaikan",
+                ""
+              ],
+              [
+                "Penanggung Jawab",
+                ""
+              ],
+              [
+                "Target Penyelesaian",
+                ""
+              ],
+              [
+                "Bukti Penyelesaian",
+                ""
+              ],
+              [
+                "Status Tindak Lanjut",
+                ""
+              ],
+              [
+                "Hasil Verifikasi",
+                ""
+              ],
+              [
+                "Tanggal Penutupan",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              5,
+              11
+            ]
+          }
+        },
+        {
+          "h2": "Rencana Tindakan Perbaikan"
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Nomor Temuan",
+              "Tindakan Perbaikan",
+              "Penanggung Jawab",
+              "Target Penyelesaian",
+              "Bukti Penyelesaian",
+              "Status Tindak Lanjut"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.1,
+              2.0,
+              2.3,
+              2.9,
+              3.0,
+              3.0,
+              1.7
+            ]
+          }
+        },
+        {
+          "h2": "Ringkasan Hasil Pemantauan"
+        },
+        {
+          "p": "Jumlah berikut berlaku untuk Periode Pemantauan pada tabel Informasi Umum."
+        },
+        {
+          "table": {
+            "header": [
+              "Butir",
+              "Jumlah"
+            ],
+            "rows": [
+              [
+                "Jumlah aspek yang diperiksa",
+                ""
+              ],
+              [
+                "Jumlah aspek berstatus Sesuai",
+                ""
+              ],
+              [
+                "Jumlah temuan",
+                ""
+              ],
+              [
+                "Jumlah aspek berstatus Belum Diverifikasi",
+                ""
+              ],
+              [
+                "Jumlah Tindakan Perbaikan yang masih terbuka",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              12,
+              4
+            ]
+          }
+        },
+        {
+          "table": {
+            "header": [
+              "Keterangan",
+              "Uraian"
+            ],
+            "rows": [
+              [
+                "Kesimpulan umum",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              5,
+              11
+            ]
+          }
+        },
+        {
+          "h2": "Rekomendasi"
+        },
+        {
+          "p": "Rekomendasi berikut berlaku pada setiap laporan."
+        },
+        {
+          "table": {
+            "header": [
+              "No.",
+              "Rekomendasi"
+            ],
+            "rows": [
+              [
+                "1",
+                "Penanggung Jawab melaksanakan Tindakan Perbaikan atas temuan yang belum selesai sesuai Target Penyelesaian yang disepakati."
+              ],
+              [
+                "2",
+                "Unit Kerja yang Dipantau menyampaikan kepada Staff Legal bukti pemenuhan kewajiban yang menjadi tanggung jawabnya."
+              ],
+              [
+                "3",
+                "Staff Legal memantau perubahan peraturan yang berdampak pada kegiatan usaha dan kewajiban SINUX."
+              ],
+              [
+                "4",
+                "Staff Legal memperbarui daftar kewajiban hukum (SNX-LEG-REG-03, USULAN), Legal Risk Register (SNX-LEG-REG-02), dan dokumen terkait bila diperlukan."
+              ],
+              [
+                "5",
+                "Staff Legal memantau ulang temuan berkategori Tinggi atau Sangat Tinggi (USULAN) dan temuan yang berulang."
+              ]
+            ],
+            "widths_cm": [
+              1.4,
+              14.6
+            ]
+          }
+        },
+        {
+          "h2": "Persetujuan dan Pengesahan"
+        },
+        {
+          "table": {
+            "header": [
+              "Tahapan",
+              "Nama/Jabatan",
+              "Tanggal",
+              "Tanda Tangan"
+            ],
+            "rows": [
+              [
+                "Disusun oleh",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Diperiksa oleh",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Disetujui oleh",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              6.0,
+              3.0,
+              3.4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Kode",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "SNX-LEG-SOP-01",
+                "Legal Operational. Memuat peran Legal pada opini dan rekomendasi risiko (butir 4.5), folder Google Drive departemen Legal (butir 4.24, USULAN), dan memo kepatuhan triwulanan (prosedur 6.7)."
+              ],
+              [
+                "SNX-LEG-SOP-02",
+                "Contract Review & Legal Approval. Prosedur penelaahan kontrak satu per satu, dikecualikan dari laporan ini. Memuat acuan peninjauan Tingkat Risiko oleh Line Manager Legal (butir 4.11, USULAN)."
+              ],
+              [
+                "SNX-LEG-SOP-03",
+                "Legal Document Control & Retention. Tempat usulan periode retensi dokumen legal."
+              ],
+              [
+                "SNX-LEG-FRM-01",
+                "Customer Contract Review Checklist. Daftar periksa kontrak pelanggan, dikecualikan dari laporan ini."
+              ],
+              [
+                "SNX-LEG-FRM-02",
+                "Vendor / Supplier Contract Review Checklist. Daftar periksa kontrak vendor dan pemasok, dikecualikan dari laporan ini."
+              ],
+              [
+                "SNX-LEG-FRM-03",
+                "Data Protection & Confidentiality Compliance Review. Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang rinci. Laporan ini hanya memuat statusnya pada aspek M5."
+              ],
+              [
+                "SNX-LEG-REG-01",
+                "Company Licenses & Permits Register. Rujukan daftar perizinan untuk aspek M1 (USULAN)."
+              ],
+              [
+                "SNX-LEG-REG-02",
+                "Legal Risk Register. Tempat penilaian risiko hukum dan sumber kategori Tingkat Risiko (USULAN)."
+              ],
+              [
+                "SNX-LEG-REG-03",
+                "Legal & Regulatory Requirements Register. Rujukan daftar peraturan untuk aspek M2 dan kolom Dasar Hukum/Dokumen Acuan (USULAN)."
+              ],
+              [
+                "SNX-LEG-RPT-02",
+                "Legal Compliance Evaluation Report. Evaluasi tingkat kepatuhan secara keseluruhan, dikecualikan dari laporan ini (USULAN)."
+              ],
+              [
+                "SNX-ISMS-PRO-01",
+                "Information Classification & Handling. Sumber tingkat klasifikasi RESTRICTED (Internal)."
+              ],
+              [
+                "SNX-HR-ORG-01",
+                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal."
+              ]
+            ],
+            "widths_cm": [
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {
+          "h2": "Rekaman"
+        },
+        {
+          "table": {
+            "header": [
+              "Rekaman",
+              "Lokasi dan pemilik",
+              "Retensi"
+            ],
+            "rows": [
+              [
+                "Laporan pemantauan terisi, satu per periode",
+                "Folder Google Drive departemen Legal (Ketentuan butir 12). Pencatat Staff Legal, pemilik Line Manager Legal (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Belum ditetapkan. Kategori 4 (hasil pemeriksaan kepatuhan) atau Kategori 6 (laporan) di SNX-LEG-SOP-03; pemilihan kategori menunggu keputusan Legal (USULAN)."
+              ],
+              [
+                "Bukti pemantauan dan Bukti Penyelesaian",
+                "Folder Google Drive departemen Legal bersama laporan terisi (Ketentuan butir 12). Pencatat Staff Legal, pemilik Line Manager Legal (USULAN).",
+                "Sama dengan laporan terisi (USULAN)."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              7.0,
+              4.5
+            ]
+          }
+        },
+        {
+          "h2": "Acuan ISO"
+        },
+        {
+          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+        },
+        {
+          "table": {
+            "header": [
+              "Standar",
+              "Klausul",
+              "Hubungan dengan dokumen ini"
+            ],
+            "rows": [
+              [
+                "ISO 9001:2015",
+                "10.2 Ketidaksesuaian dan tindakan korektif",
+                "Catatan Temuan dan Rencana Tindakan Perbaikan memuat ketidaksesuaian, tindakan, penanggung jawab, dan hasil verifikasi."
+              ],
+              [
+                "ISO 9001:2015",
+                "7.5.3 Pengendalian informasi terdokumentasi",
+                "Laporan terisi disimpan dengan lokasi, pemilik, dan klasifikasi yang tercatat (bagian Rekaman)."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "9.1 Pemantauan, pengukuran, analisis, dan evaluasi",
+                "Staff Legal memantau pemenuhan kewajiban hukum yang terkait SMKI dan menulis hasilnya di laporan ini."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "10.2 Ketidaksesuaian dan tindakan korektif",
+                "Catatan Temuan dan Rencana Tindakan Perbaikan memuat tindakan, penanggung jawab, dan status penyelesaian."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
+                "Aspek M1 sampai M4 pada Daftar Periksa Pemantauan mencakup pemenuhan persyaratan hukum dan kontrak."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.34 Privasi dan pelindungan data pribadi",
+                "Aspek M5 mencakup pemenuhan kewajiban pelindungan data pribadi."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.36 Kepatuhan terhadap kebijakan, aturan, dan standar keamanan informasi",
+                "Aspek M6 dan M7 mencakup kepatuhan terhadap kewajiban keamanan informasi, kebijakan, dan prosedur internal."
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              5.4,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {
+          "p": "Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun."
+        }
+      ]
+    }
+  ]
+}
