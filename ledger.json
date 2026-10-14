@@ -690,7 +690,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-FAT-SOP-05",
    "out_path": "out/03_FAT/SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx",
    "sources": [
@@ -705,7 +705,7 @@
    "loops": 2,
    "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-14T23:02:23Z",
+   "updated_at": "2026-10-14T23:05:13Z",
    "pen_agent": "a101f4a97710fa3fb",
    "ooxml": "PASSED",
    "fix_queued": "0"
@@ -942,7 +942,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-04",
    "out_path": null,
    "sources": [
@@ -962,7 +962,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:04:27Z",
+   "pen_agent": "ad5b909ad28816d44"
   },
   {
    "wl_index": 26,

@@ -1,0 +1,66 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 4 butir 4.6 dan bagian 5 baris Finance Lead",
+      "masalah": "Pelaku Finance Lead untuk hak kompensasi pajak (Tax Asset) dan ekualisasi tidak ada di sumber. Label (USULAN) menempel di kalimat kedua saja, sehingga penunjukan pelaku di kalimat pertama terbaca seperti fakta. Tanggung jawab ini juga tidak muncul di kolom Responsibilities Finance Lead bagian 5 (konsistensi peran).",
+      "bukti": "4.6: 'Finance Lead mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi antara Laporan Keuangan Komersial dan SPT. Langkah rincinya belum ada di bagian 6 (USULAN).' Sumber Tujuan 4 tanpa pelaku: 'Mengelola hak kompensasi pajak (Tax Asset) secara efektif ...'. Bagian 5 Finance Lead: 'Merekonsiliasi utang pajak ..., menyetujui utang pajak, mengajukan pembayaran, melaporkan pajak, dan mengarsipkan dokumen perpajakan (butir 6.3 dan 6.5).'"
+    },
+    {
+      "lokasi": "Bagian 4 butir 4.6 dan intro butir 6.1",
+      "masalah": "Dua kalimat berisi catatan bahwa isi SOP belum lengkap. Isinya jujur dan berlabel, tetapi lebih tepat menjadi open item di Master List daripada kalimat di dokumen resmi.",
+      "bukti": "'Langkah rincinya belum ada di bagian 6 (USULAN).' dan 'Tahap 6.1 sampai 6.5 berlaku untuk semua jenis pajak di bagian 2 dengan langkah yang sama; alur terpisah per jenis pajak belum ada (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 2 (pengecualian), butir 6.2 langkah 4, dibandingkan dengan SNX-FAT-SOP-01",
+      "masalah": "Penerbitan Faktur Pajak Keluaran diklaim oleh dua SOP. SOP ini memuatnya di tahap perhitungan, sedangkan SNX-FAT-SOP-01 memuat penerbitan e-Faktur Pajak di proses invoice. Asalnya dari sumber tim (Tabel IV baris 2), sudah dicatat open item 7 di notes. Perlu satu pemilik langkah dan satu waktu terbit.",
+      "bukti": "Dokumen: '4. Buat Faktur Pajak Keluaran atas penjualan kepada customer. | Finance Staff'. specs/FAT-SOP-01.json 4.5: 'Finance Staff menerbitkan e-Faktur Pajak secara elektronik lewat CoreTax DJP dalam proses penerbitan invoice'."
+    },
+    {
+      "lokasi": "Bagian 11, baris 'Status acuan klausul'",
+      "masalah": "Label bisa dibaca seolah klausul sudah dikonfirmasi konsultan, padahal maksudnya menunggu konfirmasi. Konvensi lintas dokumen, keputusan orkestrator.",
+      "bukti": "'Status acuan klausul: (USULAN, dikonfirmasi konsultan)'"
+    },
+    {
+      "lokasi": "Bagian 1 Purpose kalimat 2",
+      "masalah": "Dua kelompok tiga berturut-turut dalam satu kalimat, dan kalimatnya generik. Kalimat ini diturunkan dari kalimat tim (T1), jadi boleh dipertahankan. Bisa dipangkas bila tim FAT setuju.",
+      "bukti": "'Finance Staff dan Finance Lead menghitung pajak dengan akurat, membayarnya tepat waktu, dan melaporkannya sesuai peraturan, supaya SINUX terhindar dari denda, bunga administratif, dan sengketa pajak.'"
+    },
+    {
+      "lokasi": "Bagian 2, kalimat pengecualian",
+      "masalah": "Satu label (USULAN) di akhir daftar empat butir bisa dibaca hanya berlaku untuk butir terakhir.",
+      "bukti": "'Dikecualikan dari SOP ini: penerbitan invoice kepada customer (SNX-FAT-SOP-01), kecuali Faktur Pajak Keluaran; pembayaran selain pajak; pencatatan akuntansi dan penyusunan laporan keuangan; pengarsipan dokumen keuangan selain dokumen perpajakan (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 9 baris 1",
+      "masalah": "'Penanganan khusus' tidak dijelaskan isinya, sehingga langkahnya tidak bisa dijalankan dari teks. Sumber juga tidak merinci, jadi ini bukan karangan; cukup jadi open item FAT.",
+      "bukti": "'Finance Staff menerapkan penanganan khusus PPN Pemungut (WAPU/Kode 02) pada Faktur Pajak Keluaran di langkah 4 butir 6.2.'"
+    },
+    {
+      "lokasi": "Bagian 4 butir 4.2 dan 4.6 dibandingkan dengan bagian 2",
+      "masalah": "Ejaan istilah tidak seragam: 'Laporan Keuangan' (huruf besar) dan 'laporan keuangan' (huruf kecil) dipakai untuk hal yang sama.",
+      "bukti": "4.2: 'kesalahan Laporan Keuangan'; bagian 2: 'penyusunan laporan keuangan'."
+    },
+    {
+      "lokasi": "Bagian 3 tabel Definisi",
+      "masalah": "Urutan abjad meleset: 'Ekualisasi' ada sesudah 'FAT'.",
+      "bukti": "Urutan baris: '... Dokumen tracker | FAT | Ekualisasi | Faktur Pajak Keluaran ...'"
+    },
+    {
+      "lokasi": "Bagian 8 SLA",
+      "masalah": "'1 hari' untuk tahap 6.3 (rekonsiliasi tiap akhir Masa Pajak) dan 6.5 (lapor per Masa dan Tahun Pajak) tidak punya titik mulai. Angkanya cocok dengan sumber ('1 day') dan sudah dicatat sebagai open item 4.",
+      "bukti": "'Review dan persetujuan (butir 6.3) | Finance Lead | 1 hari'; 'Pelaporan dan pengarsipan (butir 6.5) | Finance Lead | 1 hari'"
+    },
+    {
+      "lokasi": "Bagian 7, simpul diagram 'Minta dokumen yang kurang ke Unit pengaju'",
+      "masalah": "Teks simpul tidak berlabel USULAN, padahal simpul penyetoran berlabel. Keterangan gambar sudah menyebut cabang ini USULAN, jadi tidak menyesatkan.",
+      "bukti": "Simpul x: 'Minta dokumen yang kurang\\nke Unit pengaju (bagian 9)\\nFinance Staff'; keterangan: 'Cabang dokumen tidak lengkap ... adalah USULAN'."
+    },
+    {
+      "lokasi": "Cek lulus (catatan, bukan cacat)",
+      "masalah": "Hal-hal ini lulus. (a) Fakta (tahap, PIC Staff dan Lead, 1 hari, jenis pajak, Pasal, WAPU/Kode 02, bukti lapor BPE/SPT/kode billing/bukti bayar) cocok dengan sumber 1iMKby6u4X8MYyGlrC5qz73D0y2anOv87. (b) Tambahan (penyetoran, BPN/NTPN, FRM-01, SOP-04, lokasi, retensi 10 tahun, hari kerja, BPE, pengecualian, Unit pengaju) berlabel USULAN. (c) Keempat unsur kriteria (perhitungan, pembayaran, pelaporan, pengarsipan) ada di butir 6.2 sampai 6.5. (d) Status Draft, tanggal efektif dan tanda tangan kosong. Nol rujukan internal AI, nol em-dash dan en-dash, nol tarif PPN kedua. (e) PIC bagian 6 dan 8 hanya Finance Staff dan Finance Lead, keduanya ada di bagian 5. (g) Approval persis sesuai defaults, ada tiga penanda tangan berbeda. Nama Samuel Kristanto Utomo sesuai data_conflicts. Cacat audit 1 sampai 8 ditangani atau dijelaskan di notes/FAT-SOP-05.md bagian 4.",
+      "bukti": "Teks docx hasil python-docx; read_file_content sumber; config/checklist.json baris 28; config/defaults.json; qa/FAT-SOP-05.lint.json pass true."
+    }
+  ]
+}

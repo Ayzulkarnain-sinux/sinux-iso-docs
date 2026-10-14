@@ -1,0 +1,56 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 7 diagram simpul e; Bagian 5 baris Finance Staff kolom Responsibilities",
+   "masalah": "Penyetoran pajak dan pencatatan BPN/NTPN adalah tambahan (sumber tabel IV langkah 4 hanya 'Pembuatan kode billing'). Label USULAN ada di intro 6.4 dan kolom Authority, tetapi tidak di simpul diagram 'Buat kode billing, setor pajak, catat BPN/NTPN' maupun kolom Responsibilities; keterangan gambar hanya menandai cabang dokumen tidak lengkap sebagai USULAN.",
+   "bukti": "Keterangan gambar: 'Cabang dokumen tidak lengkap adalah USULAN'. Saran: tambahkan penyetoran dan BPN/NTPN ke keterangan gambar."
+  },
+  {
+   "lokasi": "Bagian 1 Purpose kalimat 2",
+   "masalah": "Pasif tanpa pelaku dan dua kelompok tiga berurutan. Berasal dari kalimat tim (Latar Belakang), dipertahankan atas dasar T1 dan dijelaskan di notes; tetap terbaca generik.",
+   "bukti": "'Dengan SOP ini pajak dihitung akurat, dibayar tepat waktu, dan dilaporkan sesuai peraturan, supaya SINUX terhindar dari denda, bunga administratif, dan sengketa pajak.'"
+  },
+  {
+   "lokasi": "Bagian 1 dan 5 (substansi T1)",
+   "masalah": "Tujuan 4 sumber (hak kompensasi pajak/Tax Asset, ekualisasi laporan keuangan komersial dengan SPT) dan butir Mitigasi Risiko (keterlambatan setor/lapor, salah faktur, salah catat utang/piutang pajak) tidak dibawa ke Purpose. Alasan dan pemutus tercatat di notes open item 6; T1 meminta substansi tim dipertahankan.",
+   "bukti": "Sumber Tujuan 4: 'Mengelola hak kompensasi pajak (Tax Asset) secara efektif dan memastikan terwujudnya ekualisasi ...'. Purpose dokumen hanya 3 kalimat tanpa butir ini."
+  },
+  {
+   "lokasi": "Bagian 2, 5, 6.1, 6.3",
+   "masalah": "Kata 'pengajuan' dipakai untuk dua hal berbeda: kiriman Unit pengaju ('invoice atau pengajuan') dan permintaan bayar oleh Finance Lead ('pengajuan pembayaran'). Pembaca bisa mengira keduanya satu rekaman.",
+   "bukti": "6.1: 'Unit pengaju menyerahkan invoice atau pengajuan'; 6.3 langkah 3: 'Ajukan pembayaran pajak' dengan output 'Pengajuan pembayaran pajak'."
+  },
+  {
+   "lokasi": "Bagian 4, 6.4 intro, Bagian 9 baris 1",
+   "masalah": "Pengulangan isi antarbagian: kebijakan 4.2 sampai 4.4 menyalin pembagian tahap; intro 6.4 mengulang tiga langkah di bawahnya; pengecualian 'Transaksi dengan Instansi Pemerintah atau BUMN' mengulang 6.2 langkah 4 dan bukan kondisi pengecualian.",
+   "bukti": "Bagian 9: 'Finance Staff menerapkan PPN Pemungut (WAPU/Kode 02) saat membuat Faktur Pajak Keluaran, menurut langkah 4 di butir 6.2.'"
+  },
+  {
+   "lokasi": "Bagian 2 paragraf pengecualian",
+   "masalah": "Frasa 'di luar Faktur Pajak Keluaran' ambigu (maksudnya kecuali) dan tanda baca '... perpajakan. (USULAN).' memisahkan label dari kalimatnya.",
+   "bukti": "'Dikecualikan dari SOP ini: penerbitan invoice kepada customer (SNX-FAT-SOP-01), di luar Faktur Pajak Keluaran; ... selain dokumen perpajakan. (USULAN).'"
+  },
+  {
+   "lokasi": "Bagian 2, 6.1, definisi",
+   "masalah": "Register informal 'punya' berulang (mis. 'yang punya aspek perpajakan', 'yang punya aspek pajak'); 'memiliki' lebih sesuai untuk SOP. Juga 'aspek perpajakan' dan 'aspek pajak' bergantian padahal yang didefinisikan 'Aspek pajak'.",
+   "bukti": "Scope: 'kegiatan operasional di SINUX yang punya aspek perpajakan'; Definisi: 'Aspek pajak'."
+  },
+  {
+   "lokasi": "Bagian 6.2 langkah 4 dan dokumen terkait SNX-FAT-SOP-01",
+   "masalah": "Konsistensi lintas dokumen: penerbitan Faktur Pajak Keluaran juga dimuat SOP Billing (e-Faktur di CoreTax DJP saat penagihan) sedangkan di sini masuk tahap perhitungan. Sudah dicatat di notes open item 7; perlu satu pemilik langkah.",
+   "bukti": "Pengecualian bagian 2 menyebut SNX-FAT-SOP-01 'di luar Faktur Pajak Keluaran'; 6.2 langkah 4 'Buat Faktur Pajak Keluaran atas penjualan kepada customer'."
+  },
+  {
+   "lokasi": "Bagian 11 'Status acuan klausul'",
+   "masalah": "'(USULAN, dikonfirmasi konsultan)' bisa dibaca sebagai sudah dikonfirmasi; maksudnya menunggu konfirmasi. Konvensi ini dipakai juga di spec lain, jadi koreksi sebaiknya serentak. Nomor dan nama klausul (9001 5.3, 7.5.3, 8.1; 27001:2022 A.5.31, A.5.33) sesuai standar.",
+   "bukti": "'Status acuan klausul: (USULAN, dikonfirmasi konsultan)'"
+  },
+  {
+   "lokasi": "Bagian 5 dan blok approval (data_conflicts)",
+   "masalah": "Finance Lead dan Finance Staff dipakai apa adanya sesuai data_conflicts (konfirmasi pemetaan ke orang: owner), Samuel Kristanto Utomo / President Director tepat, tiga penanda tangan berbeda. Peran 'Unit pengaju' bukan nama peran HR-ORG-01, berlabel USULAN. Delapan cacat context/audit untuk fileId ini semuanya ditangani atau dijelaskan di notes bagian 4. Dicatat sebagai konfirmasi, bukan cacat.",
+   "bukti": "Approval: 'Finance Staff' / 'Finance Lead' / 'Samuel Kristanto Utomo / President Director'; notes bagian 4 tabel butir 1 sampai 8."
+  }
+ ]
+}

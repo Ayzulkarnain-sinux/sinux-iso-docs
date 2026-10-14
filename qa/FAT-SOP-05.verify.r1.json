@@ -1,0 +1,48 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 2 paragraf pengecualian; intro 6.1; intro 6.4; definisi BPE dan Hari; peran Unit pengaju; bagian 9 baris 2",
+   "masalah": "Catatan asal-usul penyusunan ditulis di badan dokumen terkendali. Pembaca (auditor, karyawan) membaca riwayat draf, bukan aturan. Isinya benar dan berlabel USULAN, jadi tidak memblokir; lebih rapi bila dipindah ke open items dan badan cukup memuat aturan + (USULAN).",
+   "bukti": "'Sumber tim tidak memuat pengecualian; daftar ini diturunkan dari batas SOP perpajakan (USULAN).'; 'Sumber tim hanya merinci PPN keluaran dan PPh Potong dan Pungut.'; 'Sumber tim hanya menyebut pembuatan kode billing pada tahap ini. Penyetoran pajak dan pencatatan BPN/NTPN ditambahkan dari ruang lingkup dan gambar alur sumber tim'"
+  },
+  {
+   "lokasi": "Bagian 4 butir 4.2 lawan 6.3 dan bagian 8",
+   "masalah": "4.2 menyatakan lima tahap dijalankan berurutan untuk tiap transaksi, tetapi 6.3 langkah 1 berjalan per akhir Masa Pajak dan 6.5 per Masa Pajak/Tahun Pajak; SLA 1 hari per tahap tanpa titik mulai. Bawaan sumber tim (tabel IV) dan sudah tercatat di open item 3 dan 4 notes.",
+   "bukti": "4.2 'menjalankan lima tahap di butir 6.1 sampai 6.5 secara berurutan untuk tiap transaksi yang punya aspek pajak'; 6.3 langkah 1 'Rekonsiliasi utang pajak di dokumen tracker pada setiap akhir Masa Pajak.'"
+  },
+  {
+   "lokasi": "Bagian 4.4 lawan bagian 11; peran Unit pengaju kolom Authority lawan 4.3/6.3",
+   "masalah": "Sinonim berganti untuk satu hal (§6a.6/§6a.7): 'masa simpan' lawan kolom 'Retensi'; 'menetapkan/penetapan' utang pajak lawan 'menyetujui' di 4.3 dan 6.3 langkah 2; 'Divisi' (definisi Unit pengaju) lawan 'departemen' (definisi FAT).",
+   "bukti": "4.4 'Lokasi, pemilik, dan masa simpan tiap rekaman ada di tabel bagian 11'; Unit pengaju 'Tidak menetapkan utang pajak; penetapan ada pada Finance Lead (butir 6.3)'; 6.3 langkah 2 'Setujui utang pajak yang sudah direkonsiliasi.'"
+  },
+  {
+   "lokasi": "Bagian 5, Finance Staff kolom Authority",
+   "masalah": "Tanggung jawab memuat 'menyetor pajak' (6.4 langkah 2, USULAN), tetapi kolom Authority tidak memberi wewenang menyetor; wewenang Finance Lead hanya 'mengajukan pembayaran'. Siapa berwenang melepas dana belum ada (open item 2 notes).",
+   "bukti": "Responsibilities '... membuat kode billing, menyetor pajak, dan mencatat BPN/NTPN'; Authority 'Membuat bukti potong, Faktur Pajak Keluaran, dan kode billing.'"
+  },
+  {
+   "lokasi": "Purpose kalimat 2",
+   "masalah": "Label 'Hasil yang dijaga:' terbaca seperti isian template dan berisi dua kelompok tiga beruntun. Asal kalimat tim (T1), notes menjelaskan sisa yang disengaja.",
+   "bukti": "'Hasil yang dijaga: pajak dihitung akurat, dibayar tepat waktu, dan dilaporkan sesuai peraturan, supaya SINUX terhindar dari denda, bunga administratif, dan sengketa pajak.'"
+  },
+  {
+   "lokasi": "6.2 langkah 4 lawan SNX-FAT-SOP-01",
+   "masalah": "Penerbitan Faktur Pajak Keluaran berpotensi tercatat dua kali (di penagihan SOP-01 dan di perhitungan SOP ini). Pelaku sama (Finance Staff), jadi tidak bentrok peran; sudah open item 7 notes.",
+   "bukti": "6.2 langkah 4 'Buat Faktur Pajak Keluaran atas penjualan kepada customer'; Dokumen terkait SNX-FAT-SOP-01 'dikecualikan dari SOP ini kecuali Faktur Pajak Keluaran'."
+  },
+  {
+   "lokasi": "Identity Document dan bagian 4.5",
+   "masalah": "SOP berlabel INTERNAL (worklist, sah menurut aturan classification) sementara audit menyarankan restricted:finance dan rekaman diusulkan RESTRICTED (Internal). Konsisten dengan aturan; menunggu konfirmasi owner (open item 12 notes).",
+   "bukti": "Identity Document 'Classification | INTERNAL'; 4.5 'rekaman perpajakan di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN)'; audit 'kb_sensitivity_suggest: restricted:finance'."
+  }
+ ],
+ "catatan_pemeriksaan": {
+  "fakta": "Tahap, PIC (Staff/Lead), '1 day', jenis pajak, WAPU/Kode 02, BPN/NTPN, bukti lapor (BPE, SPT, kode billing, bukti bayar) cocok dengan teks sumber 1iMKby6u4X8MYyGlrC5qz73D0y2anOv87. Tambahan (setor, BPN/NTPN, arsip bukti potong, FRM-01, SOP-04, retensi 10 tahun, lokasi Drive, hari kerja, BPE, pengecualian scope, cabang dokumen tidak lengkap) semua berlabel USULAN. Kode dan judul dokumen terkait cocok worklist dan checklist baris 23, 26, 30, 79. Nama klausul ISO benar.",
+  "kriteria": "Description baris 28 terpenuhi: perhitungan (6.1 sampai 6.3), pembayaran (6.3 langkah 3, 6.4), pelaporan (6.5 langkah 1), pengarsipan (6.5 langkah 2 dan 3, 4.4, tabel rekaman).",
+  "batas_keras": "Status Draft, Rev 00, tanggal efektif dan tanda tangan kosong; approval persis config/defaults.json (Finance Staff, Finance Lead, Samuel Kristanto Utomo / President Director); nol rujukan internal AI, nol en-dash/em-dash, nol 'hutang', 'ID Billing'; tidak ada nama orang lain. Lint qa/FAT-SOP-05.lint.json pass.",
+  "peran": "Bagian 5 (Finance Lead, Finance Staff, Unit pengaju) konsisten dengan PIC bagian 6, bagian 8, bagian 9, dan simpul diagram bagian 7 (7 simpul, TB, satu cabang putus-putus).",
+  "data_conflicts_audit": "Butir 'Peran Finance Lead dan Finance Staff' dipakai apa adanya; delapan cacat audit (bagian 5 salinan audit) dan cacat tambahan A sampai J ditangani atau dijelaskan di notes/FAT-SOP-05.md bagian 4."
+ }
+}
