@@ -1,0 +1,9 @@
+{
+ "file": "out/04_Legal/SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "10 butir (USULAN) menunggu ACC"
+ ]
+}

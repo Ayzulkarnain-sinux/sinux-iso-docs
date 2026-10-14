@@ -1,0 +1,24 @@
+{
+  "verdict": "PASS",
+  "pages": 11,
+  "checks": {
+    "A": "ok: 3 baris tengah (REGISTER / DEPARTMENT LEGAL / Company Licenses & Permits Register), 'No : SNX-LEG-REG-01' sama dengan Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat Sinux Office + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, label berurutan sama dengan acuan (Company Name s.d. Review Period + baris kosong akhir seperti acuan), nilai terisi, Effective Date kosong, Status Draft",
+    "C": "ok: Revision History baris 00 berdeskripsi 'Draft awal untuk review dan pengesahan', Effective Date kosong; Approval 3 baris terisi (Staff Legal / Line Manager Legal / Samuel Kristanto Utomo / President Director), Signature kosong",
+    "D": "ok: daftar isi 1-9 (Tujuan dan Lingkup, Istilah, Ketentuan Pengelolaan, Peran, Petunjuk Pengisian, Isi Register, Dokumen Terkait, Rekaman dan Acuan ISO, Kesimpulan) cocok dengan heading badan; format TOC sama dengan acuan",
+    "E": "ok: bagian bernomor kapital tebal + subbagian n.n seperti acuan; tabel gaya acuan (header tebal center, garis tipis); tidak ada diagram/bagan",
+    "F": "ok: semua header kolom tampil; sel kosong hanya kolom isian register (6.1 Nomor/Masa Berlaku/Jadwal/Status, baris 10-11, tabel 6.2/6.3/6.4) yang memang untuk diisi; tidak ada teks sel terpotong (dicek 110 dpi hal. 5, 8, 9, 10); tidak ada kata pecah per huruf",
+    "H": "ok: 'RESTRICTED (Internal) | Page/ Halaman - N' di footer 11/11 halaman; nomor halaman 1-11 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan (pdffonts); nol placeholder [..] (pdftotext + grep); nol teks instruksi template; tidak ada halaman kosong",
+    "J": "ok: urutan sampul > Identity > Revision History+Approval > Table of Contents > badan sama dengan acuan; gaya heading, gaya tabel, posisi header/footer sama"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Label footer ditulis 'RESTRICTED (Internal)', bukan huruf kapital 'RESTRICTED (INTERNAL)' seperti di daftar cek; konsisten di semua halaman dan dengan field Classification.",
+    "Tabel pecah antarhalaman tanpa header berulang: 2.1 Istilah (hal. 5-6), 7 Dokumen Terkait (hal. 9-10, baris SNX-LEG-REG-03 terbelah dua halaman), 8.2 Acuan ISO (hal. 10-11).",
+    "Kolom Jenis Izin pada 6.1 sempit sehingga baris 7-9 membungkus 3-5 baris; terbaca, tidak terpotong.",
+    "Teks justified di kolom Retensi (8.1) dan Hubungan dengan dokumen ini (8.2) menimbulkan spasi antarkata lebar (mis. 'Belum      ditetapkan.').",
+    "Approval baris Prepared/Reviewed hanya berisi jabatan (Staff Legal, Line Manager Legal) tanpa nama orang.",
+    "Kalimat di bagian 4 'tercantum di blok Approval pada halaman depan' kurang tepat: blok Approval ada di halaman 3, bukan sampul."
+  ]
+}

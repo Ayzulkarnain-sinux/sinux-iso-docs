@@ -1,0 +1,57 @@
+{
+  "verdict": "PASS",
+  "doc": "out/04_Legal/SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx",
+  "source": "1a1hDz9zwdRHBAHaU9wALSdg66R4bD8mGD-86TyzJewk (read_file_content sesi ini; isi sama dengan transkripsi context/audit legal baris 8-160)",
+  "ringkasan_cek": {
+    "a_fakta": "Cocok. Satu-satunya nama orang: 'Samuel Kristanto Utomo / President Director' di Approval (defaults approved_by D2, data_conflicts). Prepared 'Staff Legal', Reviewed 'Line Manager Legal' persis defaults prepared_reviewed.LEG. Badan memakai 'Direktur Utama' (Kesimpulan) sesuai data_conflicts. 90 hari: specs/LEG-SOP-01.json SLA 'Pengingat perpanjangan izin (6.6 langkah 9) | Staff Legal | 90 hari sebelum jatuh tempo'. Bulanan + 90 hari: specs/HR-JA-01.json JA-09 'Meninjau register kontrak dan izin; menandai yang jatuh tempo dalam 90 hari'. Verifikasi akta: LEG-SOP-01 6.6 'Verifikasi akta sebelum perubahan data perusahaan dinyatakan selesai. | Line Manager Legal'. Butir 4.24 folder Google Drive departemen Legal (USULAN) cocok. Prosedur 6.5 = Pemantauan Kontrak Berjalan, 6.6 = Korporasi dan Perizinan (urutan procedures di spec). Enam status, tujuh jenis lingkup, lima tugas Legal, dua tugas Unit Kerja Terkait, Pejabat yang Berwenang: cocok sumber. Deskripsi SNX-LEG-REG-03/REG-04/SOP-03 cocok config/checklist.json baris 35, 39, 38.",
+    "b_karangan": "Tidak ada. Sel data register kosong; baris 1-9 hanya nama kategori (lima dari kriteria, empat dari lingkup sumber). 'SK Kemenkum' ada di Jobdesk Staff Legal (notes fakta 17). Angka/tanggal tanpa sumber berlabel USULAN (tanggal target pengajuan, klausul ISO, pengecualian lingkup, nomor lama).",
+    "c_kriteria": "Terpenuhi. Tabel Daftar Perizinan punya kolom Jenis Izin, Nomor, Masa Berlaku, Jadwal Perpanjangan, Status; baris 1-5 = NIB, KBLI, Akta Pendirian, NPWP perusahaan, Anggaran Dasar.",
+    "d_runbook": "Status Draft, Effective Date kosong, tanda tangan kosong, klasifikasi RESTRICTED (Internal) di Identity dan footer, nomor SNX-LEG-REG-01. Pindai docx (semua XML): nol en-dash, em-dash, SKILL_, DOCTRINE, DEC-, HANDOVER, Claude, Altair, staging, relay, kb_anchor, query_kb, CONTOH, Eranya, COO, 'Kristianto'. Lint qa/LEG-REG-01.lint.json pass, fails [].",
+    "e_peran": "Peran (Staff Legal, Line Manager Legal, Unit Kerja Terkait, Penanggung jawab izin, Pejabat yang Berwenang) dipakai di Ketentuan, Petunjuk, dan Rekaman (pemilik Staff Legal) secara konsisten; celah kecil di nonblocking 1.",
+    "f_bahasa": "Tidak ada pelanggaran §6a yang jelas; temuan minor di nonblocking.",
+    "g_data_conflicts_audit": "Nama/jabatan sesuai data_conflicts. Delapan cacat audit (bagian 5, fileId ini) ditangani satu per satu di notes/LEG-REG-01.md bagian 5 (template kosong, placeholder, frekuensi berkala, kolom lokasi bukti, kolom tindak lanjut, '[sengaja dikosongkan]', skema nomor, nama ganda)."
+  },
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Ketentuan Pengelolaan butir 4; tabel Peran baris Staff Legal",
+      "masalah": "Konsistensi peran (e): pelaku butir 4 'Departemen Legal' bukan baris di tabel Peran (hanya didefinisikan di Istilah sebagai Line Manager Legal dan Staff Legal). Peran Staff Legal merujuk 'Ketentuan butir 1, 5 sampai 9, 11' padahal butir 8 tidak berpelaku dan butir 10 ('Staff Legal menulis lokasinya di kolom Lokasi Bukti') tidak dirujuk.",
+      "bukti": "'4. Departemen Legal memverifikasi kewajiban tiap jenis dokumen menurut kondisi dan kegiatan usaha SINUX.'; 'Staff Legal | ... (Ketentuan butir 1, 5 sampai 9, 11).'"
+    },
+    {
+      "lokasi": "Ketentuan Pengelolaan butir 7 dan 10",
+      "masalah": "Pasif tanpa pelaku padahal pelaku diketahui (Staff Legal menurut butir 1 dan SNX-LEG-SOP-01 butir 4.24). Notes menjelaskan butir 10; butir 7 belum.",
+      "bukti": "'Dokumen berstatus Perlu Diperbarui atau Kedaluwarsa diperlakukan sama (USULAN).'; 'Bukti pendukung disimpan di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan dapat diakses pihak yang berwenang.'"
+    },
+    {
+      "lokasi": "Ketentuan Pengelolaan butir 8",
+      "masalah": "Benda diberi kata kerja manusia (dibawa dari sumber VII.D); pelaku pengisian tabel Tindak Lanjut (Staff Legal, Petunjuk 9) bisa disebut langsung.",
+      "bukti": "'8. Setiap tindak lanjut mencantumkan tindakan yang diperlukan, penanggung jawab, dan target penyelesaian pada tabel Tindak Lanjut.'"
+    },
+    {
+      "lokasi": "Ketentuan 5, 6, 10; Petunjuk Pengisian 1; Peran",
+      "masalah": "Istilah bergeser: 'pihak yang berwenang' (Ketentuan 10) berdampingan dengan peran 'Pejabat yang Berwenang'; 'tabel Isi Register' (Petunjuk 1) padahal Isi Register adalah bagian berisi empat tabel (yang dimaksud tabel Daftar Perizinan dan Penerbitan, Penanggung Jawab, dan Lokasi Bukti); baris register disebut bergantian 'izin' dan 'dokumen'.",
+      "bukti": "'dapat diakses pihak yang berwenang'; 'Sel data pada tabel Isi Register kosong.'; '...menandai izin yang jatuh tempo dalam 90 hari' vs '6. Staff Legal memantau dokumen yang punya masa berlaku...'"
+    },
+    {
+      "lokasi": "Istilah (Status Perlu Diperbarui); Ketentuan 6; Peran (Pejabat yang Berwenang)",
+      "masalah": "Frasa rujukan kabur dari sumber (T1, dipertahankan wajar): ketentuan atau mekanisme yang dirujuk tidak disebut. Notes mencatat isi ketentuan perpanjangan per izin dan jabatan Pejabat yang Berwenang sebagai open item 5 dan 10.",
+      "bukti": "'sesuai ketentuan yang berlaku'; 'menurut tanggal berakhir dan ketentuan perpanjangan yang berlaku'; 'sesuai mekanisme internal SINUX yang berlaku'"
+    },
+    {
+      "lokasi": "Tujuan dan Lingkup, paragraf Lingkup kalimat kedua",
+      "masalah": "Kalimat daftar sekitar 45 kata dengan tiga butir berkoma bertumpuk; masih dapat dipecah per jenis dokumen.",
+      "bukti": "'Register juga mencakup perizinan berusaha dan sertifikat standar melalui OSS berbasis risiko (apabila dipersyaratkan), perizinan, persetujuan, atau pendaftaran sektoral yang relevan, dan dokumen legalitas lain yang diwajibkan oleh kegiatan usaha, ketentuan hukum, atau persyaratan kontraktual.'"
+    },
+    {
+      "lokasi": "Ketentuan 5 dan 6; Petunjuk Pengisian 5",
+      "masalah": "Dokumen memakai satu pengingat 90 hari; Jobdesk Staff Legal menulis 90, 60, dan 30 hari untuk kontrak dan izin. Pilihan mengikuti SNX-LEG-SOP-01 bagian 8 dan sudah tercatat open item 2 di notes; perlu diputus Legal.",
+      "bukti": "LEG-SOP-01 SLA: 'Pengingat perpanjangan izin (6.6 langkah 9) | Staff Legal | 90 hari sebelum jatuh tempo'; notes open item 2."
+    },
+    {
+      "lokasi": "docProps/core.xml",
+      "masalah": "Metadata lastModifiedBy 'Sita Work' warisan template, bukan isi badan; tidak menyalahi data_conflicts tetapi ikut terbawa ke berkas keluaran.",
+      "bukti": "core.xml: 'Sita Work  3  2026-10-14T07:09:00Z'"
+    }
+  ]
+}
