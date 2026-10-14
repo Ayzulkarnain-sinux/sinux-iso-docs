@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS",
+  "pages": 16,
+  "checks": {
+    "A": "ok: sampul 3 baris tengah (STANDARD OPERATIONAL PROCEDURE / DEPARTMENT FINANCE, ACCOUNTING & TAX / Billing & Invoicing), 'No : SNX-FAT-SOP-01' = Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, 10 label berurutan sama dengan acuan, nilai terisi, Effective Date kosong, Status Draft, Classification INTERNAL, baris kosong penutup sama dengan acuan",
+    "C": "ok: Revision History baris 00 'Draft awal untuk review dan pengesahan'; Approval 3 baris terisi (Finance Staff, Finance Lead, Samuel Kristanto Utomo / President Director); Signature kosong",
+    "D": "ok: daftar isi (Preliminary Section + 1-11 + 6.1-6.5) cocok dengan heading di badan dokumen",
+    "E": "ok: 11 heading bernomor berurutan PURPOSE sampai RELATED DOCUMENTS & ATTACHMENTS, 6.1-6.5 berurutan, semua bagian berisi; diagram bagian 7 (hal 13) utuh, terbaca pada 110 dpi, caption 'Gambar 1.' ada",
+    "F": "ok: header kolom tampil di semua tabel, sel isi terisi (kosong hanya Effective Date, baris revisi cadangan, Signature, baris penutup Identity, sesuai acuan), tidak ada teks sel terpotong, lebar kolom wajar",
+    "H": "ok: footer tanpa label klasifikasi (Classification INTERNAL), nomor halaman 1-16 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan, nol placeholder [..], nol teks instruksi template, tidak ada halaman kosong",
+    "J": "ok: urutan pembuka (sampul, Identity, Revision/Approval, TOC) sama dengan acuan; gaya heading bernomor kapital tebal, gaya tabel berbingkai header tebal tengah, posisi header/footer sama dengan acuan"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Hal 9: header tabel 6.1 yatim di dasar halaman, baris isi mulai di hal 10",
+    "Hal 10-11, 5-7, 8-9, 15-16: baris/tabel pecah antarhalaman (tabel 6.2 baris 3, Definitions, Roles, Rekaman)",
+    "Hal 13: teks node diagram kecil (sekitar 4-5 pt pada cetak), masih terbaca; gaya flowchart vertikal tanpa swimlane berbeda dengan contoh acuan (isi diagram, bukan tata letak)",
+    "Hal 15: kode 'SNX-ISMS-PRO-01' terbungkus di tanda hubung pada kolom Kode / Dokumen yang sempit",
+    "Hal 8-9: kolom Responsibilities rata kanan-kiri menimbulkan spasi antarkata lebar (gaya sama dengan acuan)",
+    "Hal 3: Approval baris 1-2 hanya berisi jabatan (Finance Staff, Finance Lead) tanpa nama pribadi; acuan memakai format Nama / Jabatan",
+    "Label (USULAN) muncul di badan teks; didefinisikan di tabel bagian 3, bukan placeholder"
+  ]
+}

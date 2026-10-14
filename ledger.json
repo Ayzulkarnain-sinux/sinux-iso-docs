@@ -662,7 +662,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-FAT-SOP-01",
    "out_path": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
    "sources": [
@@ -677,7 +677,7 @@
    "loops": 2,
    "usulan_count": 7,
    "open_items": [],
-   "updated_at": "2026-10-14T22:59:21Z",
+   "updated_at": "2026-10-14T23:02:46Z",
    "pen_agent": "aa815c71d2448334e",
    "ooxml": "PASSED",
    "fix_queued": "0"
@@ -690,7 +690,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "VERIFY_FAIL",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-SOP-05",
    "out_path": "out/03_FAT/SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx",
    "sources": [
@@ -703,9 +703,9 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 2,
-   "usulan_count": 24,
+   "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-14T22:59:12Z",
+   "updated_at": "2026-10-14T23:02:23Z",
    "pen_agent": "a101f4a97710fa3fb",
    "ooxml": "PASSED",
    "fix_queued": "0"
@@ -779,9 +779,9 @@
    "dept": "COM",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-SOP-01",
-   "out_path": null,
+   "out_path": "out/05_Commercial/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "19Hex8udn1JDG4NKY7hZaODjroHeHwMM0",
@@ -794,13 +794,14 @@
      "modifiedTime": "2026-10-05T07:10:01.246Z"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 14,
    "open_items": [],
-   "updated_at": "2026-10-14T22:45:25Z",
-   "pen_agent": "ae9eceecd747b5a2d"
+   "updated_at": "2026-10-14T23:02:32Z",
+   "pen_agent": "ae9eceecd747b5a2d",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 20,
@@ -915,7 +916,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-13",
    "out_path": null,
    "sources": [
@@ -930,7 +931,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:02:31Z",
+   "pen_agent": "aec5ea3082629635b"
   },
   {
    "wl_index": 25,
@@ -2423,7 +2425,8 @@
    "added": "2026-10-14T22:52Z",
    "extra": [
     "LEG-SOP-01",
-    "LEG-SOP-02"
+    "LEG-SOP-02",
+    "HR-SOP-08 (juga: label USULAN HR Manager di bagian 9, lane diagram vs 6.7)"
    ]
   }
  ]

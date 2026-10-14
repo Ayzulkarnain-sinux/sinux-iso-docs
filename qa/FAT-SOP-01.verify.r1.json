@@ -1,0 +1,63 @@
+{
+  "doc": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
+  "source": "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI (read_file_content, dibaca ulang sesi verifikasi)",
+  "criteria": "SOP ini menjelaskan proses penerbitan invoce kepada customer/klien",
+  "verdict": "PASS",
+  "blocking": [],
+  "checks": {
+    "a_fakta_cocok_sumber": "Cocok: 14 hari kalender TOP, PPh Pasal 23 2% dari DPP, retensi minimal 10 tahun, empat dokumen pendukung (PKS, PO/SPK, BAST, NPWP klien; sumber 5.1 dan 9.2), lima data master klien (5.1), status Draf/Terkirim/Lunas/Cancel (8.2), struktur folder Tahun / Nama Klien / Nomor Invoice (8.2), 2FA CoreTax DJP dan KlikBCA Bisnis (7.1), PDF terkunci (7.1), Faktur Pajak Pengganti setelah persetujuan Finance Lead (7.2), log ketidaksesuaian bulanan (7.2), Berita Acara Pemusnahan Dokumen dengan persetujuan Finance Lead dan CEO -> Direktur Utama (8.2). PPN 12% berlabel USULAN (sumber 1.2 menulis 11%, bagian lain 12%). Titik awal TOP berlabel USULAN. RESTRICTED (Internal) berlabel USULAN. Pemetaan Tim Sales -> Business Development berlabel USULAN. Project Manager 'Jabatan Divisi Operation yang belum punya pemegang' cocok dengan SNX-HR-ORG-01 (Project Manager di SD dan PM, K-10). K-13 ada di SNX-HR-ORG-01.",
+    "b_fakta_karangan": "Tidak ditemukan nama, angka, harga, atau tanggal karangan. Satu klaim status tidak bersumber dicatat di nonblocking 1.",
+    "c_kriteria": "Terpenuhi: Purpose kalimat pertama 'SOP ini menjelaskan proses penerbitan invoice kepada klien ...', Scope, dan bagian 6 (lima tahap dari permohonan penagihan sampai pemantauan pelunasan).",
+    "d_runbook_0_6": "Status Draft, Rev. 00, tanggal efektif kosong, tanda tangan kosong. Nol rujukan internal AI (grep SKILL_, DEC-, HANDOVER, Claude, staging, kb_, relay, CORE = 0). Tiga penanda tangan berbeda (Finance Staff / Finance Lead / Samuel Kristanto Utomo / President Director) sesuai defaults FAT. PPN satu rumusan (USULAN). Klasifikasi INTERNAL sesuai worklist. Klausul ISO di bagian 11 berlabel USULAN; judul klausul benar (7.5.3, 8.2, 8.5; A 5.12, 5.15, 5.33, 8.5).",
+    "e_konsistensi_peran": "Peran bagian 5 (Business Development, Project Manager, Finance Staff, Finance Lead, Direktur Utama, Klien) sama persis dengan kolom PIC bagian 6, SLA bagian 8, dan label diagram bagian 7. Klien tidak pernah jadi PIC, konsisten dengan 'pihak luar'.",
+    "f_bahasa_6a": "Lint pass. Nol em-dash/en-dash. Langkah satu tindakan, satu PIC, satu keluaran, di bawah 25 kata. Tidak ada pelanggaran §6a yang jelas; temuan minor di nonblocking.",
+    "g_data_conflicts_audit": "Samuel Kristanto Utomo hanya di Approved By sebagai President Director; badan memakai Direktur Utama (nol 'CEO'); nol COO; Finance Lead/Finance Staff dipakai apa adanya. Ke-14 cacat context/audit untuk fileId ini ditangani atau dijelaskan di notes/FAT-SOP-01.md bagian 3."
+  },
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 9, baris 'Invoice melewati jatuh tempo (Overdue)'",
+      "masalah": "Klaim 'Prosedur itu belum berdokumen' tidak bersumber dan bertentangan dengan data checklist: baris 24 'SOP Account Receivable & Collection' bertanda ada (checked true, 'on review'); worklist: 'tim menandai ada'. Notes open item 6 sendiri mencatat status 'on review'. Pelaku Finance Staff untuk tindak lanjut Overdue juga tafsir (sumber 5.3 pasif) tetapi tidak masuk daftar USULAN butir 4.15.",
+      "saran": "Ganti menjadi 'Prosedur itu belum bernomor SNX dan berada di luar scope SOP ini' atau setara; tambahkan butir ini ke daftar pelaku USULAN di 4.15."
+    },
+    {
+      "lokasi": "Butir 4.15; tabel peran baris Business Development; bagian 11 Dokumen terkait (tiga baris 'Belum bernomor')",
+      "masalah": "Frasa 'dokumen sumber' muncul 5 kali sebagai catatan penyusunan ('karena dokumen sumber tidak menyebut pelakunya', 'dipetakan dari Tim Sales di dokumen sumber', 'berasal dari Lampiran 1 dokumen sumber'). Pembaca (auditor, karyawan) tidak tahu dokumen mana yang dimaksud.",
+      "saran": "Sebut nama dokumen tim (mis. 'SOP Billing dan Invoicing versi tim') atau pindahkan penjelasan asal-usul ke notes; label (USULAN) cukup di dokumen."
+    },
+    {
+      "lokasi": "Bagian 3 Definisi (2FA) dan bagian 11 Acuan standar (Annex A 8.5)",
+      "masalah": "Ejaan berganti untuk satu istilah: 'Otentikasi dua faktor' lawan 'Autentikasi aman'. Bentuk baku KBBI: autentikasi.",
+      "saran": "Seragamkan ke 'Autentikasi dua faktor'."
+    },
+    {
+      "lokasi": "Butir 4.9 lawan bagian 11 tabel Rekaman baris 'Persetujuan tertulis Finance Lead dan Direktur Utama atas invoice dan TOP'",
+      "masalah": "4.9 menaruh bukti persetujuan perubahan invoice di arsip digital FAT (butir 4.12), sedangkan tabel rekaman menulis lokasi persetujuan tertulis 'belum ditetapkan'. Sebagian tumpang tindih.",
+      "saran": "Sebut bahwa bukti persetujuan atas perubahan atau pembatalan disimpan di arsip digital FAT (4.9) dan sisanya belum ditetapkan."
+    },
+    {
+      "lokasi": "Bagian 3 'Dokumen pendukung', bagian 5 Project Manager, langkah 6.1.4",
+      "masalah": "NPWP klien termasuk empat dokumen pendukung, tetapi langkah 6.1.4 hanya melampirkan BAST, PO, dan PKS, sementara Project Manager 'memastikan dokumen pendukung tersedia'. Sumber 9.2 menyebut PM melengkapi NPWP klien; sumber 6.1 tidak. Siapa menyerahkan salinan NPWP tidak tegas.",
+      "saran": "Tambahkan NPWP klien (dari respons Google Form) ke lampiran langkah 6.1.4 atau catat sebagai open item FAT."
+    },
+    {
+      "lokasi": "Bagian 11 Dokumen terkait, baris SNX-FAT-SOP-05",
+      "masalah": "SNX-FAT-SOP-05 menaruh 'penerbitan Faktur Pajak Keluaran atas setiap penjualan kepada customer' di scope-nya, sementara SOP ini menerbitkan e-Faktur Pajak di 6.2 dan menyebut SOP-05 hanya 'mengatur pelaporan dan penyetoran pajak'. Tumpang tindih lintas dokumen (sudah tercatat notes open item 14).",
+      "saran": "Selaraskan batas kedua SOP saat FAT memutus open item 14."
+    },
+    {
+      "lokasi": "Langkah 6.4.6 dan butir 4.8",
+      "masalah": "Tanggal penerimaan resmi dicatat tanpa tempat pencatatan, dan fungsinya di sumber (acuan jatuh tempo, 6.4) dihapus oleh USULAN titik awal TOP. Sudah tercatat notes open item 3.",
+      "saran": "Sebut tempat catat (Register Penagihan dan Penjualan) bila FAT setuju."
+    },
+    {
+      "lokasi": "Bagian 11 Acuan standar, ISO 9001:2015 8.5",
+      "masalah": "Pemeriksaan dan persetujuan sebelum invoice dikirim (4.3, 4.4) dipetakan ke 8.5; klausul 8.6 (Pelepasan produk dan jasa) lebih dekat untuk persetujuan sebelum dilepas ke klien. Masih di bawah label USULAN, dikonfirmasi konsultan.",
+      "saran": "Pertimbangkan menambah 8.6 untuk konsultan."
+    },
+    {
+      "lokasi": "Butir 4.7 kalimat kedua; Purpose kalimat kedua",
+      "masalah": "Minor: pasif 'hanya dikirim bila PKS mensyaratkannya' padahal pelaku diketahui (Finance Staff); 'sesuai ketentuan perpajakan' dan 'tersimpan dengan aman' adalah rujukan kabur (berasal dari sumber 1.2).",
+      "saran": "Opsional: 'Finance Staff mengirim hard copy ... hanya bila PKS mensyaratkannya.'"
+    }
+  ]
+}

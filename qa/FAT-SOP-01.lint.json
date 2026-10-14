@@ -1,0 +1,9 @@
+{
+ "file": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
+ "mode": "sop",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "6 butir (USULAN) menunggu ACC"
+ ]
+}

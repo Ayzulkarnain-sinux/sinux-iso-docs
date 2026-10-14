@@ -1,0 +1,61 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 11, tabel Rekaman, baris Register Penagihan dan Penjualan, Persetujuan tertulis, Log ketidaksesuaian",
+   "masalah": "Retensi ditulis \"Belum ditetapkan\", padahal sumber 8.2 memberi satu aturan untuk seluruh arsip dokumen penagihan. Pilihan ini konservatif, bukan karangan, tetapi lebih lemah daripada aturan sumber. Perlu diputus FAT apakah register dan bukti persetujuan termasuk arsip penagihan.",
+   "bukti": "Sumber 8.2: \"Seluruh arsip dokumen penagihan dan bukti perpajakan wajib disimpan selama minimal 10 (sepuluh) tahun\". Dokumen: \"Register Penagihan dan Penjualan | Google Sheets; ... | Belum ditetapkan\"."
+  },
+  {
+   "lokasi": "Butir 4.9 dan 4.11",
+   "masalah": "Sumber menulis kedua aturan dalam bentuk pasif. Dokumen menunjuk Finance Staff sebagai pelaku, tetapi butir 4.15 (daftar penunjukan pelaku berstatus USULAN) hanya mencakup 4.3, 4.12, 4.14, dan 4.16. Penunjukan ini masuk akal, hanya labelnya belum lengkap.",
+   "bukti": "Sumber 4.2: \"wajib dicatat alasan perubahan beserta bukti persetujuannya dalam sistem pengarsipan\"; sumber 7.1: \"Akun portal CoreTax DJP dan KlikBCA Bisnis wajib menggunakan Otentikasi Dua Faktor (2FA)\". Dokumen 4.15: \"Penetapan pelaku pada butir 4.3, 4.12, 4.14, dan 4.16 ... berstatus (USULAN)\"."
+  },
+  {
+   "lokasi": "Butir 4.8 lawan butir 4.13",
+   "masalah": "Istilah status tidak konsisten. Overdue disebut sebagai status, tetapi daftar status Register tidak memuatnya.",
+   "bukti": "4.8: \"Invoice yang melewati jatuh tempo berstatus Overdue.\" 4.13: \"Statusnya Draf, Terkirim, Lunas, atau Cancel.\""
+  },
+  {
+   "lokasi": "Butir 4.10",
+   "masalah": "Kalimat pembatasan akses tidak punya pelaku (§6a.1). Tidak disebut siapa yang memberi dan mencabut akses ke folder Google Drive Departemen FAT dan Register. Sumber juga tidak menyebut pelakunya, jadi bila ditambahkan perlu label USULAN.",
+   "bukti": "\"Akses ke folder Google Drive Departemen FAT dan Register Penagihan dan Penjualan hanya untuk personel FAT dan Direktur Utama.\""
+  },
+  {
+   "lokasi": "Bagian 6, langkah Pengumpulan Data no. 2 dan Pengiriman Invoice no. 5",
+   "masalah": "Kata kerja \"Pastikan\" tidak menyebut cara memastikan dan keluarannya tidak spesifik (§6a.2). Kata ini berasal dari sumber.",
+   "bukti": "\"Pastikan klien melengkapi data master klien di Google Form.\"; \"Pastikan klien sudah menerima berkas, baik lewat email maupun kurir.\""
+  },
+  {
+   "lokasi": "Bagian 6, langkah Pengiriman Invoice no. 6",
+   "masalah": "Rekaman tanpa lokasi. Langkah ini tidak menyebut tempat mencatat tanggal penerimaan resmi. Sudah tercatat sebagai open item 3 di notes.",
+   "bukti": "\"Catat tanggal penerimaan resmi. | Finance Staff | Tanggal penerimaan resmi tercatat\""
+  },
+  {
+   "lokasi": "Purpose, kalimat kedua",
+   "masalah": "Sebagian frasa generik dan bisa berlaku di perusahaan mana pun. Frasa ini diturunkan dari tujuan sumber, jadi bukan pelanggaran jelas.",
+   "bukti": "\"piutang usaha tercatat tepat waktu; jejak pemeriksaan digital tersimpan dengan aman\""
+  },
+  {
+   "lokasi": "Bagian 4 butir 4.15; Bagian 5; Bagian 11 Dokumen terkait",
+   "masalah": "Catatan penyusunan masuk ke badan dokumen resmi, misalnya penunjukan USULAN, \"versi tim\", dan \"isinya belum tersedia\". Ini wajar untuk Draft, tetapi perlu dibersihkan saat pengesahan agar tidak terbaca sebagai kebijakan.",
+   "bukti": "\"Peran ini dipetakan dari Tim Sales di SOP Billing dan Invoicing versi tim (USULAN).\"; \"Lampiran 1 SOP Billing dan Invoicing versi tim, isinya belum tersedia.\""
+  },
+  {
+   "lokasi": "Definisi dan butir 4.10",
+   "masalah": "Ada istilah ganda atau sinonim. Alias AR Tracker diperkenalkan tetapi tidak dipakai di bagian lain. \"Data penagihan klien\" (4.10) berdampingan dengan istilah terdefinisi \"Data master klien\".",
+   "bukti": "\"Disebut juga AR Tracker.\"; 4.10: \"data penagihan klien\"; definisi: \"Data master klien | Lima data penagihan klien: ...\""
+  },
+  {
+   "lokasi": "Butir 4.4 lawan langkah 6.2.2 (urutan e-Faktur sebelum persetujuan)",
+   "masalah": "Urutan ini setia pada sumber 6.2 dan 6.3, tetapi menyisakan risiko: e-Faktur Pajak terbit sebelum Finance Lead menyetujui. Sudah dicatat sebagai open item 2 di notes untuk diputus FAT.",
+   "bukti": "Langkah 6.2.2: \"Terbitkan e-Faktur Pajak di CoreTax DJP ...\" mendahului 6.3.5 \"Beri persetujuan tertulis untuk pengiriman invoice\"."
+  },
+  {
+   "lokasi": "Cek (g): data_conflicts dan context/audit",
+   "masalah": "Tidak ada masalah. Approved By memakai \"Samuel Kristanto Utomo / President Director\", badan dokumen memakai Direktur Utama (nol CEO), dan Finance Lead serta Finance Staff dipakai apa adanya. Ke-14 cacat di bagian 5 audit untuk fileId ini ditangani atau dijelaskan di notes/FAT-SOP-01.md bagian 3.",
+   "bukti": "Teks Approval: \"3 | Approved By | Samuel Kristanto Utomo / President Director\"; grep CEO/COO di teks docx: 0 hit; notes bagian 3 memuat tabel 14 butir."
+  }
+ ]
+}

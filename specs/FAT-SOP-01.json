@@ -1,0 +1,252 @@
+{
+ "meta": {
+  "doc_key": "FAT-SOP-01",
+  "number": "SNX-FAT-SOP-01",
+  "department": "Finance, Accounting & Tax",
+  "title": "Billing & Invoicing",
+  "process_owner": "Finance Lead",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Finance Staff",
+   "reviewed": "Finance Lead",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini menjelaskan proses penerbitan invoice kepada klien PT Strategi Integrasi Nusantara (SINUX), mulai dari permohonan penagihan sampai pemantauan pelunasan.",
+  "Hasil yang dijaga: nominal invoice sesuai PKS, PO, dan BAST yang sah; e-Faktur Pajak dan pencatatan PPh Pasal 23 sesuai ketentuan perpajakan; piutang usaha tercatat di Register Penagihan dan Penjualan; jejak pemeriksaan tersimpan di arsip digital FAT."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk seluruh aktivitas penagihan atas penjualan jasa dan pekerjaan proyek SINUX, yaitu proyek pengembangan sistem dan layanan IT (IT Service Development) serta layanan konsultasi dan pekerjaan berbasis retainer atau kontrak periodik.",
+  "Proses yang tercakup: pengumpulan data klien dan permohonan penagihan; penerbitan e-Faktur Pajak dan draf invoice; pemeriksaan dan persetujuan; pengiriman invoice ke klien; pencatatan dan pemantauan piutang usaha.",
+  "Sistem yang dipakai: Google Form Data Subskripsi Klien, Master Sales Sheet, Google Sheets, CoreTax DJP, KlikBCA Bisnis, dan Google Drive Departemen FAT.",
+  "Di luar scope SOP ini: invoice yang SINUX terima dari vendor beserta pembayarannya; pelaporan dan penyetoran pajak (SNX-FAT-SOP-05); tindak lanjut invoice yang melewati jatuh tempo (SOP Account Receivable & Collection, sedang dalam peninjauan)."
+ ],
+ "definitions": [
+  ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."],
+  ["2FA", "Autentikasi dua faktor: masuk ke akun dengan dua bukti identitas yang berbeda."],
+  ["3-way matching", "Pencocokan tiga arah antara nominal PKS, acuan PO, dan BAST."],
+  ["BAST", "Berita Acara Serah Terima: bukti tertulis bahwa hasil pekerjaan (deliverable), laporan milestone, atau jasa yang disepakati sudah selesai, diterima, dan disetujui klien."],
+  ["Berita Acara Pemusnahan Dokumen", "Dokumen yang mencatat pemusnahan arsip sesudah masa retensi berakhir."],
+  ["Bukti Potong (Bupot)", "Bukti pemotongan PPh Pasal 23 yang klien serahkan kepada SINUX."],
+  ["CoreTax DJP", "Portal sistem perpajakan terintegrasi milik Direktorat Jenderal Pajak, tempat e-Faktur Pajak diterbitkan."],
+  ["Data master klien", "Lima data klien untuk penagihan: nama lengkap badan usaha sesuai NPWP atau NIB, NPWP, alamat operasional dan alamat surat-menyurat resmi, kontak PIC Finance/AP klien, dan kontak PIC Proyek klien."],
+  ["Dokumen pendukung", "Empat dokumen yang harus lengkap sebelum invoice diproses: PKS, PO/SPK, BAST, dan NPWP klien."],
+  ["DPP", "Dasar Pengenaan Pajak: nilai yang menjadi dasar perhitungan pajak."],
+  ["e-Faktur Pajak", "Faktur Pajak Keluaran elektronik, bukti pemungutan PPN yang SINUX terbitkan lewat CoreTax DJP."],
+  ["Faktur Pajak Pengganti", "Faktur Pajak yang menggantikan e-Faktur Pajak sebelumnya karena kesalahan data atau penolakan invoice."],
+  ["Google Form Data Subskripsi Klien", "Formulir yang klien isi untuk menyerahkan data master klien."],
+  ["Invoice", "Dokumen resmi yang SINUX terbitkan kepada klien sebagai permintaan pembayaran atas jasa yang diserahkan atau pekerjaan proyek yang selesai."],
+  ["KlikBCA Bisnis", "Internet banking perusahaan untuk memverifikasi penerimaan pembayaran (cash-in) dari klien."],
+  ["Klien", "Badan usaha yang memesan jasa SINUX lewat PKS atau PO dan menerima invoice dari SINUX (customer)."],
+  ["Log ketidaksesuaian", "Catatan riwayat pembatalan dan revisi invoice."],
+  ["Master Sales Sheet", "Lembar kerja yang memuat data master klien, status PKS, nilai PO, dan skema pembayaran, dan menjadi rujukan Finance Staff dan Finance Lead."],
+  ["Overdue", "Kategori invoice yang melewati tanggal jatuh tempo."],
+  ["PIC Finance/AP klien", "Kontak klien di bagian Finance atau Accounts Payable yang menerima invoice."],
+  ["PIC Proyek klien", "Kontak operasional klien untuk proyek yang ditagih."],
+  ["Piutang usaha (AR)", "Hak tagih SINUX kepada klien atas penjualan jasa secara kredit."],
+  ["PKS", "Perjanjian Kerja Sama atau kontrak: kesepakatan tertulis SINUX dan klien tentang hak dan kewajiban, nilai proyek, jadwal pembayaran, dan syarat khusus."],
+  ["PO/SPK", "Purchase Order atau Surat Perintah Kerja: dokumen pemesanan resmi dari klien yang menjadi dasar SINUX memulai pekerjaan dan menerbitkan invoice."],
+  ["PPh Pasal 23", "Pajak Penghasilan yang klien potong dari pembayaran atas jasa SINUX."],
+  ["PPN", "Pajak Pertambahan Nilai atas penyerahan Jasa Kena Pajak (JKP) kepada klien."],
+  ["Register Penagihan dan Penjualan", "Lembar Google Sheets untuk mencatat status invoice, jatuh tempo, dan rekonsiliasi piutang."],
+  ["TOP (Term of Payment)", "Jangka waktu klien melunasi invoice sampai tanggal jatuh tempo. Lama dan titik awal hitungannya ada di butir 4.8."]
+ ],
+ "policy": [
+  "4.1 Finance Staff memproses permohonan penagihan hanya bila empat dokumen pendukung (bagian 3) sudah lengkap dan tervalidasi.",
+  "4.2 Sebelum permohonan penagihan diproses, klien sudah mengisi Google Form Data Subskripsi Klien dan Business Development sudah menyinkronkan hasilnya ke Master Sales Sheet.",
+  "4.3 Finance Staff melakukan 3-way matching atas setiap permohonan penagihan sebelum e-Faktur Pajak diterbitkan.",
+  "4.4 Finance Staff tidak menerbitkan atau mengirim invoice kepada klien tanpa persetujuan tertulis Finance Lead.",
+  "4.5 Penyerahan Jasa Kena Pajak (JKP) dikenai PPN 12% (USULAN). Finance Staff menerbitkan e-Faktur Pajak secara elektronik lewat CoreTax DJP dalam proses penerbitan invoice, dengan urutan di butir 6.2.",
+  "4.6 Klien memotong PPh Pasal 23 sebesar 2% dari DPP atas pembayaran jasa. Finance Staff mencatat estimasi pemotongan di Register Penagihan dan Penjualan dan merekonsiliasinya saat Bukti Potong diterima dari klien.",
+  "4.7 Finance Staff mengirim berkas penagihan lewat email resmi ke PIC Finance/AP klien dan PIC Proyek klien sebagai PDF terkunci (non-editable). Finance Staff mengirim hard copy, yaitu cetakan bertanda tangan dan berstempel, lewat kurir hanya bila PKS mensyaratkannya.",
+  "4.8 TOP standar adalah 14 hari kalender sejak tanggal invoice (USULAN). Direktur Utama menyetujui TOP di atas 14 hari secara tertulis sebelum PKS atau PO disepakati. Finance Lead tidak mengubah atau memperpanjang jatuh tempo melebihi TOP standar tanpa persetujuan Direktur Utama. Invoice yang melewati jatuh tempo masuk kategori Overdue.",
+  "4.9 Finance Staff mencatat alasan dan bukti persetujuan untuk setiap perubahan nominal, revisi tanggal, atau pembatalan invoice yang sudah disetujui, di arsip digital FAT (butir 4.12).",
+  "4.10 Dokumen keuangan, daftar harga (rate card), data invoice klien, dan informasi rekening bank berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Akses ke folder Google Drive Departemen FAT dan Register Penagihan dan Penjualan hanya untuk personel FAT dan Direktur Utama.",
+  "4.11 Finance Staff memakai 2FA pada akun CoreTax DJP dan KlikBCA Bisnis dan tidak membagikan akun itu kepada pihak yang tidak berkepentingan.",
+  "4.12 Finance Staff menyimpan invoice, e-Faktur Pajak, PKS, PO, dan BAST sebagai PDF di folder Google Drive Departemen FAT, dengan struktur folder Tahun / Nama Klien / Nomor Invoice. Masa simpannya ada di bagian 11.",
+  "4.13 Finance Staff memperbarui Register Penagihan dan Penjualan setiap status invoice berubah. Statusnya Draf, Terkirim, Lunas, atau Cancel.",
+  "4.14 Finance Staff mencatat riwayat pembatalan dan revisi invoice di log ketidaksesuaian. Finance Lead mengevaluasi log itu setiap bulan sebagai bahan kendali mutu.",
+  "4.15 Penetapan pelaku pada butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16, pemantauan Overdue di bagian 9, serta Finance Lead sebagai pemilik rekaman di bagian 11, berstatus (USULAN).",
+  "4.16 Finance Staff mencatat pemusnahan arsip sesudah masa retensi berakhir dalam Berita Acara Pemusnahan Dokumen. Finance Lead dan Direktur Utama menyetujui pemusnahan itu."
+ ],
+ "roles": [
+  [
+   "Business Development",
+   "Mengirim tautan Google Form Data Subskripsi Klien ke klien baru saat PKS ditandatangani, memastikan klien melengkapi data master klien, dan memperbarui Master Sales Sheet secara rutin (butir 6.1). Peran ini dipetakan dari Tim Sales di SOP Billing dan Invoicing versi tim (USULAN).",
+   "Tidak ada wewenang persetujuan di SOP ini."
+  ],
+  [
+   "Project Manager",
+   "Mengajukan permohonan penagihan ke Finance Staff setelah milestone atau pekerjaan selesai, memastikan dokumen pendukung tersedia, dan mengonfirmasi data master klien sudah lengkap (butir 6.1). Jabatan Divisi Operation yang belum punya pemegang menurut SNX-HR-ORG-01.",
+   "Mengajukan permohonan penagihan; tidak menyetujui invoice."
+  ],
+  [
+   "Finance Staff",
+   "Memeriksa kelengkapan permohonan penagihan, mencocokkan PKS, PO, dan BAST, menerbitkan e-Faktur Pajak, menyusun draf invoice, mengirim invoice ke klien, mencatat transaksi di Register Penagihan dan Penjualan, memantau kas masuk, dan menangani revisi atau pembatalan invoice setelah persetujuan Finance Lead (butir 6.1 sampai 6.5 dan bagian 9). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Menerbitkan e-Faktur Pajak dan mengirim invoice; batas wewenang ada di butir 4.4."
+  ],
+  [
+   "Finance Lead",
+   "Pemilik SOP ini. Memeriksa draf invoice, e-Faktur Pajak, dan dokumen pendukung terhadap Master Sales Sheet dan Google Form Data Subskripsi Klien; memastikan kelengkapan dan keakuratan semua atribut invoice; memeriksa perhitungan PPN dan catatan PPh Pasal 23; meneruskan draf ke Direktur Utama bila TOP di atas standar; memberi persetujuan tertulis sebelum invoice dikirim (butir 6.3). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Menyetujui draf invoice sebelum dikirim, serta revisi dan pembatalan invoice; batas wewenang atas jatuh tempo ada di butir 4.8."
+  ],
+  [
+   "Direktur Utama",
+   "Memberi persetujuan tertulis atas TOP di atas TOP standar (butir 4.8 dan 6.3) dan, bersama Finance Lead, atas pemusnahan arsip (butir 4.16).",
+   "Menyetujui TOP di atas TOP standar dan pemusnahan arsip."
+  ],
+  [
+   "Klien",
+   "Mengisi Google Form Data Subskripsi Klien, menerima invoice dan berkas penagihan, membayar, memotong PPh Pasal 23, dan menyerahkan Bukti Potong. Klien adalah pihak luar SINUX.",
+   "Menolak invoice; penolakan ditangani sesuai bagian 9."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Pengumpulan Data dan Permohonan Penagihan",
+   "steps": [
+    ["Kirim tautan Google Form Data Subskripsi Klien ke klien baru saat PKS ditandatangani.", "Business Development", "Tautan Google Form terkirim ke klien"],
+    ["Cek respons Google Form klien sampai kelima data master klien terisi.", "Business Development", "Respons Google Form dengan lima data master klien terisi"],
+    ["Perbarui Master Sales Sheet dengan respons Google Form, status PKS, nilai PO, dan skema pembayaran.", "Business Development", "Master Sales Sheet terbarui"],
+    ["Ajukan permohonan penagihan ke Finance Staff dengan lampiran BAST bertanda tangan, acuan PO, PKS, dan NPWP klien setelah milestone atau pekerjaan selesai.", "Project Manager", "Form Permohonan Penagihan"],
+    ["Konfirmasi di permohonan bahwa data master klien di Master Sales Sheet dan Google Form sudah lengkap.", "Project Manager", "Konfirmasi data master klien di permohonan"],
+    ["Periksa kelengkapan dokumen pendukung dan kecocokan data antara permohonan penagihan, respons Google Form, dan Master Sales Sheet.", "Finance Staff", "Hasil pemeriksaan kelengkapan"]
+   ]
+  },
+  {
+   "title": "Penerbitan e-Faktur Pajak dan Draf Invoice",
+   "steps": [
+    ["Lakukan 3-way matching atas permohonan penagihan (butir 4.3).", "Finance Staff", "Hasil 3-way matching"],
+    ["Terbitkan e-Faktur Pajak di CoreTax DJP dengan PPN sesuai DPP transaksi (butir 4.5).", "Finance Staff", "e-Faktur Pajak (PDF)"],
+    ["Susun draf invoice di templat resmi Google Sheets: nomor invoice, tanggal penerbitan, rincian pekerjaan, nominal PPN, estimasi PPh Pasal 23, dan jatuh tempo (butir 4.8).", "Finance Staff", "Draf invoice di Google Sheets"]
+   ]
+  },
+  {
+   "title": "Pemeriksaan dan Persetujuan",
+   "steps": [
+    ["Periksa draf invoice, e-Faktur Pajak, dan dokumen pendukung terhadap Master Sales Sheet dan respons Google Form Data Subskripsi Klien.", "Finance Lead", "Hasil pemeriksaan Finance Lead"],
+    ["Periksa perhitungan PPN dan catatan PPh Pasal 23 di draf invoice.", "Finance Lead", "Hasil pemeriksaan pajak"],
+    ["Teruskan draf invoice ke Direktur Utama bila TOP di atas TOP standar (butir 4.8).", "Finance Lead", "Draf invoice diteruskan ke Direktur Utama"],
+    ["Beri persetujuan tertulis atas TOP di atas TOP standar.", "Direktur Utama", "Persetujuan tertulis Direktur Utama"],
+    ["Beri persetujuan tertulis untuk pengiriman invoice bila draf dan dokumen sudah sesuai.", "Finance Lead", "Persetujuan tertulis Finance Lead"]
+   ]
+  },
+  {
+   "title": "Pengiriman Invoice ke Klien",
+   "steps": [
+    ["Kirim email penagihan berisi lampiran PDF invoice, e-Faktur Pajak, BAST, PO, dan PKS ke PIC Finance/AP klien dan PIC Proyek klien.", "Finance Staff", "Email penagihan terkirim"],
+    ["Cetak berkas penagihan bila PKS mensyaratkan hard copy.", "Finance Staff", "Berkas penagihan cetak"],
+    ["Bubuhkan tanda tangan dan stempel perusahaan pada berkas cetak.", "Finance Staff", "Berkas cetak bertanda tangan dan berstempel"],
+    ["Kirim berkas cetak ke alamat penagihan klien lewat kurir.", "Finance Staff", "Berkas cetak terkirim"],
+    ["Konfirmasi ke klien bahwa email atau kiriman kurir sudah diterima.", "Finance Staff", "Konfirmasi penerimaan dari klien"],
+    ["Catat tanggal penerimaan resmi.", "Finance Staff", "Tanggal penerimaan resmi tercatat"]
+   ]
+  },
+  {
+   "title": "Pencatatan dan Pemantauan Piutang",
+   "steps": [
+    ["Catat transaksi penagihan, termasuk tanggal kirim invoice, di Register Penagihan dan Penjualan.", "Finance Staff", "Baris transaksi di Register Penagihan dan Penjualan"],
+    ["Pantau kas masuk dari klien setiap hari lewat KlikBCA Bisnis.", "Finance Staff", "Hasil pemantauan kas masuk"],
+    ["Rekonsiliasi piutang setelah pembayaran klien diterima.", "Finance Staff", "Piutang terekonsiliasi"],
+    ["Ubah status invoice menjadi Lunas di Register Penagihan dan Penjualan.", "Finance Staff", "Status Lunas di Register Penagihan dan Penjualan"],
+    ["Rekonsiliasi estimasi pemotongan PPh Pasal 23 dengan Bukti Potong saat Bukti Potong diterima dari klien (butir 4.6).", "Finance Staff", "Bukti Potong tercatat di Register Penagihan dan Penjualan"]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Business Development mengirim\nGoogle Form ke klien dan memperbarui\nMaster Sales Sheet",
+   "b": "Project Manager mengajukan penagihan:\nBAST, PO, PKS, NPWP klien, konfirmasi data master klien",
+   "c": "Finance Staff memeriksa kelengkapan\ndokumen dan data",
+   "d": "Lengkap?",
+   "x": "Finance Staff tidak memproses\npermohonan (butir 4.1)",
+   "e": "Finance Staff melakukan 3-way matching\nPKS, PO, dan BAST",
+   "f": "Finance Staff menerbitkan\ne-Faktur Pajak di CoreTax DJP",
+   "g": "Finance Staff menyusun draf invoice\ndi Google Sheets",
+   "h": "Finance Lead memeriksa draf invoice,\ne-Faktur Pajak, dan dokumen pendukung",
+   "i": "Sesuai?",
+   "j": "Penanganan kesalahan data\n(bagian 9)",
+   "k": "TOP di atas standar?",
+   "l": "Direktur Utama menyetujui\nTOP secara tertulis",
+   "m": "Finance Lead memberi\npersetujuan tertulis",
+   "n": "Finance Staff mengirim invoice ke klien\n(PDF lewat email; cetak bila PKS mensyaratkan)",
+   "o": "Finance Staff memastikan klien menerima\ndan mencatat tanggal penerimaan",
+   "p": "Finance Staff mencatat transaksi di\nRegister Penagihan dan Penjualan",
+   "q": "Finance Staff memantau kas masuk,\nmerekonsiliasi piutang, mengubah status\nmenjadi Lunas, dan mencatat Bukti Potong"
+  },
+  "shapes": {
+   "d": "diamond",
+   "i": "diamond",
+   "k": "diamond",
+   "x": "ellipse",
+   "j": "ellipse",
+   "q": "ellipse"
+  },
+  "edges": [
+   ["a", "b"],
+   ["b", "c"],
+   ["c", "d"],
+   ["d", "x", "Tidak"],
+   ["d", "e", "Ya"],
+   ["e", "f"],
+   ["f", "g"],
+   ["g", "h"],
+   ["h", "i"],
+   ["i", "j", "Tidak"],
+   ["i", "k", "Ya"],
+   ["k", "l", "Ya"],
+   ["k", "m", "Tidak"],
+   ["l", "m"],
+   ["m", "n"],
+   ["n", "o"],
+   ["o", "p"],
+   ["p", "q"]
+  ],
+  "caption": "Gambar 1. Alur penerbitan invoice kepada klien, dari permohonan penagihan sampai pemantauan pelunasan."
+ },
+ "sla": [
+  ["Pemantauan kas masuk lewat KlikBCA Bisnis", "Finance Staff", "Setiap hari"],
+  ["Pembaruan status invoice di Register Penagihan dan Penjualan", "Finance Staff", "Setiap kali status berubah (butir 4.13)"],
+  ["Evaluasi log ketidaksesuaian", "Finance Lead", "Setiap bulan (butir 4.14)"]
+ ],
+ "exceptions": [
+  ["Dokumen pendukung atau data master klien belum lengkap", "Finance Staff tidak memproses permohonan penagihan itu (butir 4.1 dan 4.2)."],
+  ["Kesalahan data pada draf invoice atau e-Faktur Pajak, atau klien menolak invoice", "Finance Staff menerbitkan Surat Pembatalan atau Revisi Invoice dan Faktur Pajak Pengganti lewat CoreTax DJP setelah Finance Lead menyetujui, lalu mencatat alasan dan bukti persetujuan (butir 4.9) serta riwayatnya di log ketidaksesuaian (butir 4.14)."],
+  ["Draf invoice memuat TOP di atas TOP standar", "Finance Lead meneruskan draf ke Direktur Utama untuk persetujuan tertulis (butir 4.8 dan 6.3)."],
+  ["Invoice melewati jatuh tempo (Overdue)", "Finance Staff meneruskan pemantauan sesuai SOP Account Receivable & Collection. SOP itu sedang dalam peninjauan dan berada di luar scope SOP ini."]
+ ],
+ "conclusion": [
+  "Finance Lead, pemilik SOP ini, memantau kepatuhan terhadap SOP ini lewat Register Penagihan dan Penjualan dan log ketidaksesuaian.",
+  "Finance Lead meninjau SOP ini setiap tahun."
+ ],
+ "related_documents": [
+  ["SNX-FAT-SOP-05", "Tax Administration & Reporting; mengatur pelaporan dan penyetoran pajak, di luar scope SOP ini."],
+  ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; sumber nama jabatan dan matriks peran. Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)."],
+  ["SNX-ISMS-PRO-01", "Information Classification & Handling; sumber tingkat klasifikasi RESTRICTED (Internal)."],
+  ["Belum bernomor", "SOP Account Receivable & Collection; sedang dalam peninjauan; mengatur penagihan invoice kepada klien dan pendataan piutang, termasuk tindak lanjut Overdue."],
+  ["Belum bernomor", "Form Permohonan Penagihan (Billing Request Form), diisi Project Manager; Lampiran 1 SOP Billing dan Invoicing versi tim, isinya belum tersedia."],
+  ["Belum bernomor", "Templat Invoice Resmi FAT; Lampiran 2 SOP Billing dan Invoicing versi tim, isinya belum tersedia."],
+  ["Belum bernomor", "Format Register Penagihan dan Penjualan; Lampiran 4 SOP Billing dan Invoicing versi tim, isinya belum tersedia."]
+ ],
+ "records": [
+  ["Invoice, e-Faktur Pajak, PKS, PO, dan BAST (PDF)", "Folder Google Drive Departemen FAT, struktur Tahun / Nama Klien / Nomor Invoice (butir 4.12); pemilik Finance Lead (butir 4.15)", "Minimal 10 tahun"],
+  ["Bukti Potong PPh Pasal 23 dari klien", "Dicatat di Register Penagihan dan Penjualan (butir 6.5); lokasi berkas belum ditetapkan; pemilik Finance Lead (butir 4.15)", "Minimal 10 tahun"],
+  ["Persetujuan tertulis Finance Lead dan Direktur Utama atas invoice dan TOP", "Bukti persetujuan atas perubahan atau pembatalan invoice di arsip digital FAT (butir 4.9); lokasi persetujuan lainnya belum ditetapkan; pemilik Finance Lead (butir 4.15)", "Minimal 10 tahun"],
+  ["Register Penagihan dan Penjualan", "Google Sheets; akses personel FAT dan Direktur Utama (butir 4.10); pemilik Finance Lead (butir 4.15)", "Minimal 10 tahun"],
+  ["Master Sales Sheet dan respons Google Form Data Subskripsi Klien", "Dikelola Business Development; lokasi belum ditetapkan", "Belum ditetapkan"],
+  ["Log ketidaksesuaian", "Lokasi belum ditetapkan; pemilik Finance Lead (butir 4.15)", "Minimal 10 tahun"],
+  ["Berita Acara Pemusnahan Dokumen", "Lokasi belum ditetapkan; pemilik Finance Lead (butir 4.15)", "Belum ditetapkan"]
+ ],
+ "iso_refs": {
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan).",
+  "ISO 9001:2015": "7.5.3 (Pengendalian informasi terdokumentasi), untuk penyimpanan dan masa simpan arsip di butir 4.12; 8.2 (Persyaratan untuk produk dan jasa), untuk invoice yang mengikuti PKS dan PO di butir 4.1 dan 4.3; 8.5 (Produksi dan penyediaan jasa), untuk pencocokan sebelum e-Faktur Pajak diterbitkan di butir 4.3; 8.6 (Pelepasan produk dan jasa), untuk persetujuan Finance Lead sebelum invoice dikirim ke klien di butir 4.4.",
+  "ISO/IEC 27001:2022": "Annex A 5.12 (Klasifikasi informasi), untuk butir 4.10; Annex A 5.15 (Kontrol akses), untuk pembatasan akses di butir 4.10; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.10 dan 4.12; Annex A 8.5 (Autentikasi aman), untuk 2FA di butir 4.11."
+ }
+}
