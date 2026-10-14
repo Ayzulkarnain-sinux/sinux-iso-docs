@@ -37,14 +37,20 @@ def main():
     if patch.get('delete_rows'):
         print(json.dumps({'pass': False, 'why': 'delete_rows dilarang, pakai clear_rows'}))
         sys.exit(1)
+    import copy
     for sheet, rows in patch.get('clear_rows', {}).items():
         ws = wb[sheet]
+        cleared = set(rows)
         for r in rows:
+            # Warna baris dikosongkan ikut baris input pertama di bawahnya yang tidak dikosongkan,
+            # agar sel isian tetap seragam (tech_fix W1: dulu warna dibuang, baris input jadi putih).
+            nxt = next((k for k in range(r + 1, r + 40) if k not in cleared), None)
             for c in ws[r]:
                 if isinstance(c.value, str) and c.value.startswith('='):
                     continue
                 c.value = None
-                c.fill = PatternFill(fill_type=None)
+                ref = ws.cell(row=nxt, column=c.column) if nxt else None
+                c.fill = copy.copy(ref.fill) if ref is not None and ref.fill is not None and ref.fill.fill_type else PatternFill(fill_type=None)
     for ref, val in patch.get('set', {}).items():
         sheet, cell = ref.rsplit('!', 1)
         wb[sheet][cell] = val
