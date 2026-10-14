@@ -1,0 +1,882 @@
+{
+ "meta": {
+  "doc_key": "LEG-SOP-01",
+  "number": "SNX-LEG-SOP-01",
+  "department": "Legal",
+  "title": "Legal Operational",
+  "process_owner": "Line Manager Legal",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Staff Legal",
+   "reviewed": "Line Manager Legal",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "purpose": [
+  "SOP ini menjadi panduan Departemen Legal SINUX untuk menjalankan pekerjaan hukum (kontrak, korporasi, perizinan, kepatuhan, dan sengketa), dengan koordinasi antara Line Manager Legal dan Staff Legal serta koordinasi dengan departemen lain.",
+  "Hasil yang dijaga: seluruh aspek hukum SINUX ditangani secara tertib, dapat ditelusuri, dan melindungi kepentingan perusahaan."
+ ],
+ "scope": [
+  "SOP ini berlaku bagi Line Manager Legal, Staff Legal, dan Pemohon, yaitu departemen SINUX yang mengajukan permintaan. Scope mencakup juga entitas afiliasi atau turunan, misalnya rencana pendirian PT Nusagrid, sepanjang ditugaskan kepada Departemen Legal SINUX.",
+  "Proses yang tercakup: permintaan ke Departemen Legal, penyusunan dan review kontrak atau PKS, eskalasi risiko, penandatanganan dan pengarsipan, pemantauan kontrak berjalan, korporasi dan perizinan, kepatuhan dan pelindungan data pribadi, sengketa, somasi, dan klaim, kerahasiaan dan pengelolaan dokumen, serta pelaporan.",
+  "Sistem yang dipakai: GLPI untuk permintaan (butir 4.7) dan Google Drive untuk arsip (butir 4.24).",
+  "Di luar scope SOP ini: uraian tugas, wewenang, dan indikator kinerja tiap peran, yang ada di SNX-HR-JA-01; keputusan bisnis, yang tetap pada Manajemen (butir 4.5); dan lampiran yang belum disusun, yaitu template NDA, PKS, dan addendum, playbook klausul, format tabel redline dan ringkasan risiko, format register kontrak dan register perizinan, serta DoA."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Addendum",
+   "Perjanjian tertulis yang mengubah atau menambah isi kontrak yang sudah ditandatangani."
+  ],
+  [
+   "Berkas kasus",
+   "Kumpulan korespondensi dan dokumen satu somasi, klaim, atau sengketa."
+  ],
+  [
+   "Departemen Legal",
+   "Line Manager Legal dan Staff Legal."
+  ],
+  [
+   "DoA",
+   "Delegation of Authority: matriks yang menetapkan pejabat penyetuju serta batas nilai dan jenis kontrak. SNX-HR-JA-01 menyebutnya Authority Matrix (USULAN: satu dokumen)."
+  ],
+  [
+   "Due diligence",
+   "Pemeriksaan legalitas, kewenangan penandatangan, dan rekam jejak sengketa pihak lawan kontrak."
+  ],
+  [
+   "GLPI",
+   "Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation."
+  ],
+  [
+   "KBLI",
+   "Klasifikasi Baku Lapangan Usaha Indonesia: kode kegiatan usaha untuk perizinan berusaha."
+  ],
+  [
+   "Klausul kritis",
+   "Klausul kontrak yang wajib diperiksa Staff Legal. Daftarnya ada di butir 4.16."
+  ],
+  [
+   "LKPM",
+   "Laporan Kegiatan Penanaman Modal: contoh kewajiban pelaporan berkala perusahaan."
+  ],
+  [
+   "Manajemen",
+   "Direktur Utama dan Direktur (COO), yaitu unit Management di SNX-HR-ORG-01."
+  ],
+  [
+   "NDA",
+   "Non-Disclosure Agreement: perjanjian kerahasiaan antara SINUX dan pihak lain."
+  ],
+  [
+   "NIB",
+   "Nomor Induk Berusaha: identitas pelaku usaha yang terbit lewat OSS."
+  ],
+  [
+   "OSS",
+   "Sistem Online Single Submission untuk perizinan berusaha."
+  ],
+  [
+   "Pemohon",
+   "Departemen SINUX selain Legal yang mengajukan permintaan."
+  ],
+  [
+   "Permintaan",
+   "Pengajuan satu pekerjaan hukum oleh Pemohon kepada Departemen Legal, misalnya review kontrak atau pendirian entitas."
+  ],
+  [
+   "PIC bisnis",
+   "Orang yang Pemohon tunjuk sebagai penghubung Departemen Legal untuk satu permintaan."
+  ],
+  [
+   "PKS",
+   "Perjanjian Kerja Sama."
+  ],
+  [
+   "Playbook klausul",
+   "Dokumen yang memuat posisi standar, fallback, dan batas yang tidak boleh dilanggar untuk klausul kontrak."
+  ],
+  [
+   "Register",
+   "Catatan terstruktur Departemen Legal. Ada tiga: register permintaan, register kontrak, dan register perizinan."
+  ],
+  [
+   "Somasi",
+   "Surat teguran tertulis agar pihak lain memenuhi kewajibannya."
+  ],
+  [
+   "Tabel redline",
+   "Tabel yang memuat usulan perubahan Departemen Legal atas dokumen pihak lawan."
+  ],
+  [
+   "Term sheet",
+   "Ringkasan syarat komersial yang disepakati para pihak sebelum kontrak disusun."
+  ],
+  [
+   "Wanprestasi",
+   "Pelanggaran kewajiban yang tertulis dalam kontrak."
+  ]
+ ],
+ "policy": [
+  "4.1 Tidak ada kontrak yang ditandatangani tanpa review Departemen Legal.",
+  "4.2 Departemen Legal mencatat semua pekerjaannya: register, versi dokumen, dan riwayat persetujuan.",
+  "4.3 Departemen Legal mengklasifikasikan risiko dan mengeskalasinya sesuai tingkatnya, tidak menyimpannya sendiri (butir 4.17 sampai 4.19).",
+  "4.4 Departemen Legal menjaga kerahasiaan dokumen dan data.",
+  "4.5 Departemen Legal memberi opini dan rekomendasi risiko. Keputusan bisnis tetap pada Manajemen.",
+  "4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (SOP Divisi Legal versi 0.1) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).",
+  "4.7 Pemohon mengajukan permintaan lewat tiket GLPI (USULAN).",
+  "4.8 Pemohon menyertakan data permintaan: pihak, objek, nilai, jangka waktu, tenggat, dan dokumen pendukung. Untuk kontrak, Pemohon menambahkan term sheet atau kesepakatan komersial dan identitas para pihak.",
+  "4.9 Pemohon melibatkan Departemen Legal sejak tahap negosiasi komersial, sebelum ada komitmen tertulis kepada pihak luar.",
+  "4.10 Pemohon menunjuk satu PIC bisnis untuk setiap permintaan.",
+  "4.11 Pemohon menjawab pertanyaan Departemen Legal dalam batas waktu di bagian 8. Tenggat Departemen Legal bergeser sebesar keterlambatan jawaban.",
+  "4.12 Pemohon tidak menandatangani, menjanjikan, atau mengirim dokumen final sebelum persetujuan Departemen Legal dan pejabat berwenang sesuai DoA.",
+  "4.13 Pemohon tidak mengubah isi dokumen yang sudah direview tanpa melalui Departemen Legal.",
+  "4.14 Pemohon melaporkan kepada Departemen Legal setiap somasi, klaim, surat regulator, atau perubahan fakta yang memengaruhi kontrak, dalam batas waktu di bagian 8.",
+  "4.15 Departemen Legal memberikan kepada Pemohon konfirmasi penerimaan dan nomor register permintaan, draf atau hasil review beserta ringkasan risiko dan rekomendasi, dan dokumen final yang sudah ditandatangani dan tercatat di arsip. Pemohon dapat menanyakan status permintaan kapan saja kepada Staff Legal yang ditugaskan.",
+  "4.16 Staff Legal memeriksa klausul kritis berikut pada setiap kontrak: ruang lingkup dan deliverable; harga dan mekanisme pembayaran, termasuk apakah pembayaran bergantung pada pembayaran klien akhir; batas tanggung jawab dan ganti rugi; hak penangguhan pembayaran atau layanan; masa berlaku, perpanjangan, dan terminasi; kekayaan intelektual dan kepemilikan hasil kerja; kerahasiaan; pelindungan data pribadi; SLA dan sanksi; force majeure; penyelesaian sengketa dan hukum yang berlaku; potensi tumpang tindih wilayah, produk, atau pihak dengan kontrak lain.",
+  "4.17 Risiko hukum Tinggi, misalnya kontrak tanpa batas tanggung jawab, tanpa klausul terminasi, dengan pembayaran bergantung pihak ketiga, dengan kekayaan intelektual didaftarkan atas nama pihak lain, atau dengan risiko sanksi regulasi, wajib dieskalasi dan menunggu keputusan Manajemen (prosedur 6.3).",
+  "4.18 Risiko hukum Sedang, misalnya klausul tidak seimbang yang masih dapat dinegosiasikan, perlu negosiasi (prosedur 6.3).",
+  "4.19 Risiko hukum Rendah, misalnya perbaikan redaksional, dapat diterima dan diperbaiki langsung (prosedur 6.3).",
+  "4.20 Persetujuan internal kontrak mengikuti DoA. Pejabat penyetuju serta batas nilai dan jenis kontrak ada di DoA, yang belum terbit. Sampai DoA terbit, Manajemen memutuskan persetujuan tiap kontrak (USULAN).",
+  "4.21 Setiap kontrak atau proyek yang melibatkan data pribadi ditinjau terhadap UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi: dasar pemrosesan, peran (pengendali atau prosesor), kewajiban keamanan, dan notifikasi insiden.",
+  "4.22 Departemen Legal mengklasifikasikan dokumen legal dengan tingkat di SNX-ISMS-PRO-01: PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET.",
+  "4.23 Dokumen RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi. Padanan label Rahasia di SOP Divisi Legal versi 0.1 dengan kedua tingkat ini berstatus (USULAN).",
+  "4.24 Staff Legal menyimpan dokumen legal di repositori resmi, yaitu folder Google Drive departemen Legal (USULAN).",
+  "4.25 Staff Legal menyimpan dokumen asli di tempat aman. Akses ke dokumen asli terbatas pada Line Manager Legal dan Staff Legal (USULAN).",
+  "4.26 Akses ke dokumen legal diberikan berdasarkan kebutuhan kerja dan dicabut saat peran penerima akses berakhir (prosedur 6.9).",
+  "4.27 Retensi dokumen legal mengikuti peraturan perundang-undangan dan kebijakan perusahaan. Periode retensi belum ditetapkan; usulan penetapannya di SNX-LEG-SOP-03 (USULAN).",
+  "4.28 Manajemen memutuskan strategi penanganan somasi, klaim, dan sengketa, yaitu negosiasi, mediasi, somasi balasan, atau litigasi, berdasarkan rekomendasi Line Manager Legal.",
+  "4.29 Penunjukan advokat eksternal mengikuti batas wewenang Line Manager Legal di SNX-HR-JA-01. Batas itu belum ditetapkan di sana.",
+  "4.30 Departemen Legal menyimpan seluruh korespondensi dan dokumen satu somasi, klaim, atau sengketa dalam satu berkas kasus dengan akses terbatas."
+ ],
+ "roles": [
+  [
+   "Line Manager Legal",
+   "Memimpin Departemen Legal dan melapor ke COO (USULAN, butir K-03 di SNX-HR-ORG-01). Menugaskan Staff Legal dan menetapkan tenggat (prosedur 6.1), menyetujui paket review dan meneruskan kontrak ke persetujuan DoA (6.2), mengeskalasi risiko Tinggi (6.3), memverifikasi akta (6.6), berkoordinasi dengan VP Tech Operation and Services (6.7), merekomendasikan strategi sengketa (6.8), mengatur akses dokumen (6.9), dan melapor ke Manajemen (6.10). Uraian tugas rinci ada di SNX-HR-JA-01.",
+   "Persetujuan akhir internal Departemen Legal; menetapkan penugasan dan tenggat; menghentikan proses yang berisiko Tinggi. Keputusan atas risiko itu ada pada Manajemen (butir 4.5)."
+  ],
+  [
+   "Staff Legal",
+   "Melapor ke Line Manager Legal. Mencatat permintaan di register (6.1), menyusun draf, tabel redline, dan ringkasan risiko (6.2), menyiapkan penandatanganan dan arsip (6.4), memantau register kontrak dan perizinan (6.5 dan 6.6), meninjau pelindungan data pribadi dan menyusun memo kepatuhan (6.7), menyusun berkas kasus (6.8), serta mengelola dokumen legal (6.9). Uraian tugas rinci ada di SNX-HR-JA-01.",
+   "Menyiapkan dan mencatat. Persetujuan ada pada Line Manager Legal."
+  ],
+  [
+   "Pemohon",
+   "Mengajukan permintaan, menyediakan fakta dan dokumen pendukung, menunjuk PIC bisnis, dan menjalankan kewajiban di butir 4.7 sampai 4.14. Pemohon melapor ke atasan masing-masing.",
+   "Mengajukan permintaan. Batas wewenang Pemohon atas dokumen final ada di butir 4.12 dan 4.13."
+  ],
+  [
+   "Manajemen",
+   "Direktur Utama dan COO. Memutuskan persetujuan internal kontrak menurut DoA (6.2), penanganan kontrak berisiko Tinggi (6.3), dan strategi penanganan sengketa (6.8). Menerima laporan bulanan dari Line Manager Legal (6.10).",
+   "Memutuskan atas rekomendasi tertulis Line Manager Legal. Pejabat lain memutuskan bila DoA menetapkannya."
+  ],
+  [
+   "Finance",
+   "Memantau kewajiban pelaporan berkala, misalnya LKPM, bersama Staff Legal (6.6). Peran ini dipetakan dari Finance/Compliance di SOP Divisi Legal versi 0.1 (USULAN).",
+   "Tidak ada wewenang persetujuan di SOP ini."
+  ],
+  [
+   "VP Tech Operation and Services",
+   "Berkoordinasi dengan Line Manager Legal untuk pelaporan insiden dan perjanjian pemrosesan data (6.7). Peran ini dipetakan dari tim keamanan/IT di SOP Divisi Legal versi 0.1 (USULAN).",
+   "Penanggung jawab kontrol keamanan, akses, backup, dan perubahan teknis menurut SNX-HR-ORG-01. Tidak ada wewenang persetujuan di SOP ini."
+  ],
+  [
+   "Notaris",
+   "Pihak luar SINUX. Memproses perubahan data perusahaan (6.6).",
+   "Tidak ada wewenang persetujuan di SOP ini."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Permintaan ke Departemen Legal",
+   "intro": [],
+   "steps": [
+    [
+     "Kirim permintaan lewat tiket GLPI dengan data permintaan menurut butir 4.8.",
+     "Pemohon",
+     "Tiket permintaan di GLPI"
+    ],
+    [
+     "Catat permintaan di register permintaan, beri nomor, dan tentukan prioritas.",
+     "Staff Legal",
+     "Baris register permintaan dengan nomor dan prioritas"
+    ],
+    [
+     "Kirim konfirmasi penerimaan dan nomor register permintaan ke Pemohon.",
+     "Staff Legal",
+     "Konfirmasi penerimaan untuk Pemohon"
+    ],
+    [
+     "Kembalikan permintaan yang tidak lengkap ke Pemohon dengan daftar kekurangan.",
+     "Staff Legal",
+     "Daftar kekurangan untuk Pemohon"
+    ],
+    [
+     "Tugaskan Staff Legal untuk permintaan yang lengkap dan tetapkan tenggat.",
+     "Line Manager Legal",
+     "Penugasan dan tenggat permintaan"
+    ]
+   ]
+  },
+  {
+   "title": "Penyusunan dan Review Kontrak atau PKS",
+   "intro": [
+    "Hasil klasifikasi risiko di langkah 6 menentukan penanganan di prosedur 6.3."
+   ],
+   "steps": [
+    [
+     "Pastikan Pemohon sudah memberikan data kontrak menurut butir 4.8.",
+     "Staff Legal",
+     "Kelengkapan data kontrak terkonfirmasi"
+    ],
+    [
+     "Lakukan due diligence pihak lawan.",
+     "Staff Legal",
+     "Hasil due diligence pihak lawan"
+    ],
+    [
+     "Susun draf kontrak dengan template SINUX.",
+     "Staff Legal",
+     "Draf kontrak"
+    ],
+    [
+     "Buat tabel redline untuk dokumen pihak lawan: pasal, isu, risiko, usulan perubahan, dan tingkat prioritas.",
+     "Staff Legal",
+     "Tabel redline"
+    ],
+    [
+     "Periksa klausul kritis menurut butir 4.16.",
+     "Staff Legal",
+     "Hasil pemeriksaan klausul kritis"
+    ],
+    [
+     "Klasifikasikan risiko kontrak sebagai Tinggi, Sedang, atau Rendah menurut butir 4.17 sampai 4.19.",
+     "Staff Legal",
+     "Ringkasan risiko"
+    ],
+    [
+     "Serahkan draf, tabel redline, dan ringkasan risiko ke Line Manager Legal.",
+     "Staff Legal",
+     "Paket review: draf, tabel redline, dan ringkasan risiko"
+    ],
+    [
+     "Setujui paket review itu atau kembalikan ke Staff Legal dengan catatan.",
+     "Line Manager Legal",
+     "Persetujuan atau catatan pengembalian"
+    ],
+    [
+     "Beri nama setiap versi dokumen negosiasi dengan penamaan baku JenisDokumen_Pihak_vX_Tanggal.",
+     "Staff Legal",
+     "Versi dokumen dengan nama baku"
+    ],
+    [
+     "Catat perubahan yang diterima dan yang ditolak selama negosiasi.",
+     "Staff Legal",
+     "Catatan perubahan negosiasi"
+    ],
+    [
+     "Teruskan kontrak yang sudah disetujui Departemen Legal ke pejabat penyetuju menurut butir 4.20.",
+     "Line Manager Legal",
+     "Permintaan persetujuan menurut DoA"
+    ],
+    [
+     "Putuskan persetujuan internal kontrak.",
+     "Manajemen",
+     "Persetujuan internal kontrak"
+    ]
+   ]
+  },
+  {
+   "title": "Eskalasi Risiko",
+   "intro": [],
+   "steps": [
+    [
+     "Hentikan proses yang berisiko Tinggi di Departemen Legal.",
+     "Line Manager Legal",
+     "Penghentian proses tercatat (butir 4.2)"
+    ],
+    [
+     "Eskalasikan risiko Tinggi itu ke Manajemen dengan rekomendasi tertulis.",
+     "Line Manager Legal",
+     "Rekomendasi tertulis kepada Manajemen"
+    ],
+    [
+     "Putuskan penanganan risiko Tinggi.",
+     "Manajemen",
+     "Keputusan Manajemen"
+    ],
+    [
+     "Negosiasikan klausul berisiko Sedang dan laporkan hasilnya dalam ringkasan risiko.",
+     "Staff Legal",
+     "Ringkasan risiko terbarui"
+    ],
+    [
+     "Perbaiki redaksi draf untuk temuan berisiko Rendah.",
+     "Staff Legal",
+     "Draf terbarui"
+    ]
+   ]
+  },
+  {
+   "title": "Penandatanganan dan Pengarsipan",
+   "intro": [],
+   "steps": [
+    [
+     "Cocokkan versi final dengan versi yang disetujui: halaman, lampiran, dan nomor dokumen.",
+     "Staff Legal",
+     "Hasil pencocokan versi final"
+    ],
+    [
+     "Periksa bahwa penandatangan berwenang menurut anggaran dasar atau surat kuasa.",
+     "Staff Legal",
+     "Hasil pemeriksaan penandatangan"
+    ],
+    [
+     "Siapkan bea meterai sesuai ketentuan yang berlaku.",
+     "Staff Legal",
+     "Bea meterai tersedia untuk penandatanganan"
+    ],
+    [
+     "Gunakan penyelenggara tanda tangan elektronik yang sah untuk kontrak yang ditandatangani secara elektronik.",
+     "Staff Legal",
+     "Kontrak bertanda tangan elektronik"
+    ],
+    [
+     "Simpan bukti penandatanganan elektronik.",
+     "Staff Legal",
+     "Bukti penandatanganan"
+    ],
+    [
+     "Unggah salinan final ke arsip dalam batas waktu di bagian 8.",
+     "Staff Legal",
+     "Salinan final di arsip (butir 4.24)"
+    ],
+    [
+     "Perbarui register kontrak dalam batas waktu di bagian 8: para pihak, nilai, tanggal efektif, jatuh tempo, pengingat perpanjangan atau terminasi, dan PIC bisnis.",
+     "Staff Legal",
+     "Baris register kontrak terbarui"
+    ],
+    [
+     "Simpan dokumen asli sesuai butir 4.25.",
+     "Staff Legal",
+     "Dokumen asli tersimpan"
+    ]
+   ]
+  },
+  {
+   "title": "Pemantauan Kontrak Berjalan",
+   "intro": [],
+   "steps": [
+    [
+     "Tinjau register kontrak dan tandai kontrak yang mendekati jatuh tempo (bagian 8).",
+     "Staff Legal",
+     "Kontrak bertanda di register kontrak"
+    ],
+    [
+     "Kirim pengingat perpanjangan atau terminasi ke PIC bisnis menjelang jatuh tempo atau batas pemberitahuan terminasi (bagian 8).",
+     "Staff Legal",
+     "Pengingat untuk PIC bisnis"
+    ],
+    [
+     "Proses addendum atau amandemen lewat prosedur 6.2 dan 6.4.",
+     "Staff Legal",
+     "Addendum atau amandemen yang sudah direview dan ditandatangani"
+    ],
+    [
+     "Laporkan pelanggaran atau wanprestasi kontrak ke Line Manager Legal segera.",
+     "Staff Legal",
+     "Laporan pelanggaran atau wanprestasi"
+    ]
+   ]
+  },
+  {
+   "title": "Korporasi dan Perizinan",
+   "intro": [],
+   "steps": [
+    [
+     "Analisis KBLI terhadap kegiatan usaha untuk pendirian atau spin-off entitas.",
+     "Staff Legal",
+     "Hasil analisis KBLI"
+    ],
+    [
+     "Periksa persyaratan modal dan perizinan sektor.",
+     "Staff Legal",
+     "Hasil pemeriksaan persyaratan modal dan perizinan sektor"
+    ],
+    [
+     "Siapkan dokumen pendirian.",
+     "Staff Legal",
+     "Dokumen pendirian"
+    ],
+    [
+     "Urus NIB lewat OSS sesuai PP No. 5 Tahun 2021 dan peraturan turunannya.",
+     "Staff Legal",
+     "NIB"
+    ],
+    [
+     "Siapkan berkas perubahan data perusahaan: anggaran dasar, pengurus, alamat, atau KBLI.",
+     "Staff Legal",
+     "Berkas perubahan data perusahaan"
+    ],
+    [
+     "Proses perubahan data perusahaan.",
+     "Notaris",
+     "Akta perubahan"
+    ],
+    [
+     "Verifikasi akta sebelum perubahan data perusahaan dinyatakan selesai.",
+     "Line Manager Legal",
+     "Akta terverifikasi"
+    ],
+    [
+     "Catat setiap izin di register perizinan: jenis izin, nomor, masa berlaku, dan penanggung jawab.",
+     "Staff Legal",
+     "Baris register perizinan"
+    ],
+    [
+     "Kirim pengingat perpanjangan izin ke penanggung jawab izin (bagian 8).",
+     "Staff Legal",
+     "Pengingat perpanjangan izin"
+    ],
+    [
+     "Pantau kewajiban pelaporan berkala, misalnya LKPM, bersama Finance.",
+     "Staff Legal",
+     "Hasil pemantauan pelaporan berkala"
+    ],
+    [
+     "Catat penanggung jawab dan jadwal tiap kewajiban pelaporan berkala di register perizinan (USULAN).",
+     "Staff Legal",
+     "Penanggung jawab dan jadwal pelaporan di register perizinan"
+    ]
+   ]
+  },
+  {
+   "title": "Kepatuhan dan Pelindungan Data Pribadi",
+   "intro": [],
+   "steps": [
+    [
+     "Tinjau kontrak atau proyek yang melibatkan data pribadi menurut butir 4.21.",
+     "Staff Legal",
+     "Hasil tinjauan pelindungan data pribadi"
+    ],
+    [
+     "Koordinasikan pelaporan insiden dan perjanjian pemrosesan data dengan VP Tech Operation and Services.",
+     "Line Manager Legal",
+     "Hasil koordinasi (lokasi catatan belum ditetapkan)"
+    ],
+    [
+     "Pantau perubahan regulasi yang relevan.",
+     "Staff Legal",
+     "Catatan perubahan regulasi"
+    ],
+    [
+     "Ringkas perubahan regulasi yang relevan dalam memo kepatuhan (bagian 8).",
+     "Staff Legal",
+     "Memo kepatuhan"
+    ]
+   ]
+  },
+  {
+   "title": "Sengketa, Somasi, dan Klaim",
+   "intro": [],
+   "steps": [
+    [
+     "Laporkan setiap somasi atau klaim yang diterima atau dikirim ke Line Manager Legal (bagian 8).",
+     "Staff Legal",
+     "Laporan somasi atau klaim"
+    ],
+    [
+     "Susun kronologi somasi, klaim, atau sengketa.",
+     "Staff Legal",
+     "Kronologi"
+    ],
+    [
+     "Kumpulkan bukti: kontrak, korespondensi, dan bukti pembayaran atau penyerahan.",
+     "Staff Legal",
+     "Bukti di berkas kasus"
+    ],
+    [
+     "Petakan dasar hukum: wanprestasi atau perbuatan melawan hukum.",
+     "Staff Legal",
+     "Pemetaan dasar hukum"
+    ],
+    [
+     "Rekomendasikan strategi penanganan ke Manajemen.",
+     "Line Manager Legal",
+     "Rekomendasi strategi penanganan"
+    ],
+    [
+     "Putuskan strategi penanganan menurut butir 4.28.",
+     "Manajemen",
+     "Keputusan strategi penanganan"
+    ],
+    [
+     "Tunjuk advokat eksternal menurut butir 4.29.",
+     "Line Manager Legal",
+     "Penunjukan advokat eksternal"
+    ],
+    [
+     "Simpan korespondensi dan dokumen di berkas kasus menurut butir 4.30.",
+     "Staff Legal",
+     "Berkas kasus"
+    ]
+   ]
+  },
+  {
+   "title": "Kerahasiaan dan Pengelolaan Dokumen",
+   "intro": [],
+   "steps": [
+    [
+     "Klasifikasikan dokumen legal menurut butir 4.22.",
+     "Staff Legal",
+     "Dokumen legal dengan tingkat klasifikasi"
+    ],
+    [
+     "Simpan dokumen legal di repositori resmi menurut butir 4.24.",
+     "Staff Legal",
+     "Dokumen legal di folder Google Drive departemen Legal"
+    ],
+    [
+     "Beri akses ke dokumen legal menurut butir 4.26.",
+     "Line Manager Legal",
+     "Akses diberikan"
+    ],
+    [
+     "Cabut akses ke dokumen legal menurut butir 4.26.",
+     "Line Manager Legal",
+     "Akses dicabut"
+    ]
+   ]
+  },
+  {
+   "title": "Pelaporan",
+   "intro": [],
+   "steps": [
+    [
+     "Adakan rapat singkat dengan Staff Legal: status pekerjaan, hambatan, dan prioritas (bagian 8).",
+     "Line Manager Legal",
+     "Hasil rapat mingguan"
+    ],
+    [
+     "Susun laporan kepada Manajemen: jumlah permintaan, kontrak selesai, risiko Tinggi, dan izin yang akan jatuh tempo (bagian 8).",
+     "Line Manager Legal",
+     "Laporan bulanan kepada Manajemen"
+    ],
+    [
+     "Perbarui playbook klausul dan template (bagian 8).",
+     "Line Manager Legal",
+     "Playbook klausul dan template terbarui"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Pemohon mengirim permintaan\nlewat tiket GLPI",
+   "b": "Staff Legal mencatat di register permintaan,\nmemberi nomor, dan menentukan prioritas",
+   "c": "Permintaan lengkap?",
+   "d": "Staff Legal mengembalikan permintaan\nke Pemohon dengan daftar kekurangan",
+   "e": "Line Manager Legal menugaskan\nStaff Legal dan menetapkan tenggat",
+   "f": "Staff Legal menyusun draf atau tabel redline,\nmemeriksa klausul kritis, dan\nmengklasifikasikan risiko",
+   "g": "Risiko Tinggi?",
+   "h": "Line Manager Legal menghentikan proses dan\nmengeskalasi ke Manajemen;\nManajemen memutuskan (6.3)",
+   "i": "Line Manager Legal menyetujui paket review?",
+   "j": "Line Manager Legal meneruskan kontrak\nke pejabat penyetuju menurut DoA;\nManajemen memutuskan persetujuan",
+   "k": "Staff Legal memeriksa versi final,\npenandatangan, dan bea meterai",
+   "l": "Staff Legal mengunggah salinan final ke arsip\ndan memperbarui register kontrak",
+   "m": "Staff Legal memantau register kontrak dan\nmengirim pengingat jatuh tempo ke PIC bisnis"
+  },
+  "shapes": {
+   "c": "diamond",
+   "g": "diamond",
+   "i": "diamond",
+   "h": "ellipse",
+   "m": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d",
+    "Tidak"
+   ],
+   [
+    "d",
+    "a"
+   ],
+   [
+    "c",
+    "e",
+    "Ya"
+   ],
+   [
+    "e",
+    "f"
+   ],
+   [
+    "f",
+    "g"
+   ],
+   [
+    "g",
+    "h",
+    "Ya"
+   ],
+   [
+    "g",
+    "i",
+    "Tidak"
+   ],
+   [
+    "i",
+    "f",
+    "Dikembalikan dengan catatan"
+   ],
+   [
+    "i",
+    "j",
+    "Ya"
+   ],
+   [
+    "j",
+    "k"
+   ],
+   [
+    "k",
+    "l"
+   ],
+   [
+    "l",
+    "m"
+   ]
+  ],
+  "caption": "Gambar 1. Alur permintaan layanan legal untuk kontrak, dari permintaan Pemohon sampai pemantauan kontrak berjalan."
+ },
+ "sla": [
+  [
+   "NDA standar: respons awal dan penyelesaian",
+   "Staff Legal",
+   "Respons awal 1 hari kerja; penyelesaian 2 hari kerja (USULAN)"
+  ],
+  [
+   "Review kontrak atau PKS: respons awal dan penyelesaian",
+   "Staff Legal",
+   "Respons awal 1 hari kerja; penyelesaian 3 sampai 5 hari kerja (USULAN)"
+  ],
+  [
+   "Draf kontrak baru: respons awal dan penyelesaian",
+   "Staff Legal",
+   "Respons awal 1 hari kerja; penyelesaian 5 hari kerja (USULAN)"
+  ],
+  [
+   "Dokumen korporasi atau perizinan: respons awal dan penyelesaian",
+   "Staff Legal",
+   "Respons awal 2 hari kerja; penyelesaian sesuai proses pihak ketiga (USULAN)"
+  ],
+  [
+   "Permintaan urgent: respons awal dan penyelesaian",
+   "Staff Legal",
+   "Respons awal pada hari yang sama; penyelesaian disepakati Line Manager Legal dan Pemohon (USULAN)"
+  ],
+  [
+   "Jawaban atas pertanyaan Departemen Legal (butir 4.11)",
+   "Pemohon",
+   "2 hari kerja"
+  ],
+  [
+   "Laporan somasi, klaim, surat regulator, atau perubahan fakta yang memengaruhi kontrak (butir 4.14)",
+   "Pemohon",
+   "Paling lambat 1 hari kerja"
+  ],
+  [
+   "Laporan somasi atau klaim ke Line Manager Legal (6.8 langkah 1)",
+   "Staff Legal",
+   "Maksimal 1 hari kerja"
+  ],
+  [
+   "Unggah salinan final dan perbarui register kontrak setelah penandatanganan (6.4 langkah 6 dan 7)",
+   "Staff Legal",
+   "2 hari kerja setelah ditandatangani"
+  ],
+  [
+   "Peninjauan register kontrak (6.5 langkah 1)",
+   "Staff Legal",
+   "Setiap bulan; kontrak yang jatuh tempo dalam 90 hari ditandai"
+  ],
+  [
+   "Pengingat jatuh tempo kontrak atau batas pemberitahuan terminasi ke PIC bisnis (6.5 langkah 2)",
+   "Staff Legal",
+   "90, 60, dan 30 hari sebelum jatuh tempo"
+  ],
+  [
+   "Pengingat perpanjangan izin (6.6 langkah 9)",
+   "Staff Legal",
+   "90 hari sebelum jatuh tempo"
+  ],
+  [
+   "Rapat Line Manager Legal dan Staff Legal (6.10 langkah 1)",
+   "Line Manager Legal",
+   "Mingguan"
+  ],
+  [
+   "Laporan kepada Manajemen (6.10 langkah 2)",
+   "Line Manager Legal",
+   "Bulanan"
+  ],
+  [
+   "Memo kepatuhan (6.7 langkah 4)",
+   "Staff Legal",
+   "Triwulanan"
+  ],
+  [
+   "Pembaruan playbook klausul dan template (6.10 langkah 3)",
+   "Line Manager Legal",
+   "Triwulanan"
+  ],
+  [
+   "Peninjauan SOP ini",
+   "Line Manager Legal",
+   "Minimal setahun sekali, atau saat ada perubahan regulasi atau struktur organisasi"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Permintaan tidak lengkap",
+   "Staff Legal mengembalikan permintaan ke Pemohon dengan daftar kekurangan (6.1 langkah 4)."
+  ],
+  [
+   "Pemohon terlambat menjawab pertanyaan Departemen Legal",
+   "Line Manager Legal menggeser tenggat sebesar keterlambatan jawaban (butir 4.11)."
+  ],
+  [
+   "Paket review dikembalikan Line Manager Legal dengan catatan",
+   "Staff Legal memperbaiki draf, tabel redline, dan ringkasan risiko, lalu menyerahkannya lagi (6.2 langkah 3 sampai 7)."
+  ],
+  [
+   "Risiko Tinggi",
+   "Line Manager Legal menghentikan proses dan mengeskalasi risiko itu ke Manajemen, lalu Manajemen memutuskan (6.3 langkah 1 sampai 3)."
+  ],
+  [
+   "DoA belum terbit",
+   "Manajemen memutuskan persetujuan tiap kontrak (butir 4.20)."
+  ],
+  [
+   "Pemohon melaporkan somasi atau klaim",
+   "Staff Legal menjalankan prosedur 6.8 mulai dari langkah 1."
+  ]
+ ],
+ "conclusion": [
+  "Line Manager Legal, pemilik SOP ini, melaporkan pelaksanaan pekerjaan Departemen Legal kepada Manajemen setiap bulan (6.10 langkah 2).",
+  "Line Manager Legal meninjau SOP ini sesuai periode di bagian 8."
+ ],
+ "related_documents": [
+  [
+   "SNX-HR-JA-01",
+   "Job Analysis dan Uraian Jabatan; memuat uraian tugas, wewenang, dan indikator kinerja Line Manager Legal dan Staff Legal."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; sumber nama peran. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09 (USULAN, butir K-13); atasan JA-08 menunggu konfirmasi (butir K-03)."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling; sumber tingkat klasifikasi dokumen legal."
+  ],
+  [
+   "SNX-LEG-SOP-02",
+   "Contract Review & Legal Approval; judulnya mencakup topik prosedur 6.2 dan 6.3."
+  ],
+  [
+   "SNX-LEG-SOP-03",
+   "Legal Document Control & Retention; tempat usulan penetapan periode retensi (butir 4.27)."
+  ],
+  [
+   "SNX-LEG-REG-01",
+   "Company Licenses & Permits Register; padanan register perizinan (USULAN)."
+  ],
+  [
+   "SNX-LEG-FRM-03",
+   "Data Protection & Confidentiality Compliance Review; padanan hasil tinjauan pelindungan data pribadi di 6.7 langkah 1 (USULAN)."
+  ],
+  [
+   "Belum bernomor",
+   "DoA (Authority Matrix); belum terbit. Dirujuk di butir 4.12 dan 4.20."
+  ],
+  [
+   "Belum bernomor",
+   "Template NDA, PKS, dan addendum; playbook klausul; format tabel redline dan ringkasan risiko; format register kontrak dan register perizinan. Lampiran SOP Divisi Legal versi 0.1 yang belum disusun."
+  ],
+  [
+   "Belum bernomor",
+   "SOP Divisi Legal versi 0.1 (Oktober 2026); draf tim yang menjadi dasar SOP ini."
+  ]
+ ],
+ "records": [
+  [
+   "Register permintaan",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Register kontrak",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Register perizinan",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Draf, tabel redline, ringkasan risiko, dan catatan perubahan negosiasi",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Salinan final kontrak dan bukti penandatanganan",
+   "Arsip di folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Dokumen asli kontrak",
+   "Tempat aman dengan akses terbatas (butir 4.25); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Berkas kasus",
+   "Akses terbatas (butir 4.30); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Memo kepatuhan",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ],
+  [
+   "Laporan bulanan kepada Manajemen",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
+   "Belum ditetapkan (butir 4.27)"
+  ]
+ ],
+ "iso_refs": {
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan).",
+  "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk bagian 5 dan butir 4.6; 7.4 (Komunikasi), untuk koordinasi dengan Pemohon dan departemen lain di prosedur 6.1 dan 6.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk register, versi dokumen, arsip, dan retensi di butir 4.2 dan 4.27; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk review kontrak oleh Departemen Legal sebelum penandatanganan di butir 4.1 dan prosedur 6.2.",
+  "ISO/IEC 27001:2022": "Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak), untuk prosedur 6.2, 6.6, dan 6.7; Annex A 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.21; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.22; Annex A 5.15 (Kontrol akses), untuk butir 4.26; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.27."
+ }
+}

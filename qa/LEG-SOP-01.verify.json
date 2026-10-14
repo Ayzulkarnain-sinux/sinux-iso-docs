@@ -1,0 +1,46 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 4 butir 4.17, 4.18, 4.19, 4.21, 4.23, 4.26",
+      "masalah": "Kalimat pasif tanpa pelaku padahal pelakunya diketahui (RUNBOOK 6a butir 1 dan 6). Pelaku ada di prosedur yang dirujuk (6.3, 6.7 langkah 1, 6.9 langkah 3 dan 4), jadi tidak dinilai pemblokir; sesuai preseden verifikasi dokumen lain.",
+      "bukti": "\"Akses ke dokumen legal diberikan berdasarkan kebutuhan kerja dan dicabut saat peran penerima akses berakhir (prosedur 6.9).\"; \"Setiap kontrak atau proyek yang melibatkan data pribadi ditinjau terhadap UU No. 27 Tahun 2022 ...\" (4.21 tanpa rujukan ke 6.7); \"Risiko hukum Tinggi ... wajib dieskalasi dan menunggu keputusan Manajemen (prosedur 6.3).\""
+    },
+    {
+      "lokasi": "Butir 4.6, butir 4.23, bagian 5 baris Finance dan VP Tech Operation and Services",
+      "masalah": "Catatan proses penyusunan masuk ke badan dokumen (empat kali): merujuk draf tim dan asal pemetaan. Sebaiknya cukup label (USULAN) dan rujukan di bagian 11; riwayat pemetaan tetap di notes atau open items.",
+      "bukti": "\"Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (SOP Divisi Legal versi 0.1) ditetapkan dari pembagian ini ...\"; \"Peran ini dipetakan dari Finance/Compliance di SOP Divisi Legal versi 0.1 (USULAN).\"; \"Peran ini dipetakan dari tim keamanan/IT di SOP Divisi Legal versi 0.1 (USULAN).\""
+    },
+    {
+      "lokasi": "Butir 4.24, 6.4 langkah 6, 6.9 langkah 2, tabel rekaman bagian 11",
+      "masalah": "Sinonim berganti untuk satu tempat simpan: arsip, repositori resmi, folder Google Drive departemen Legal. Istilah terdefinisi Departemen Legal juga ditulis huruf kecil di nama folder (9 kali).",
+      "bukti": "\"Unggah salinan final ke arsip\" (6.4.6); \"repositori resmi, yaitu folder Google Drive departemen Legal (USULAN)\" (4.24); \"Arsip di folder Google Drive departemen Legal (butir 4.24)\" (rekaman)"
+    },
+    {
+      "lokasi": "Scope, kalimat Sistem yang dipakai",
+      "masalah": "GLPI dan Google Drive disebut tanpa label (USULAN) di Scope; label hanya ada di butir yang dirujuk (4.7, 4.24). Sumber berisi placeholder [ISI] untuk keduanya.",
+      "bukti": "\"Sistem yang dipakai: GLPI untuk permintaan (butir 4.7) dan Google Drive untuk arsip (butir 4.24).\"; sumber: \"kanal resmi [ISI: email/tiket/form]\", \"repositori resmi [ISI]\""
+    },
+    {
+      "lokasi": "Bagian 5 baris Line Manager Legal (Authority) dan notes bagian 5 butir 8",
+      "masalah": "Ketegangan lintas dokumen: dokumen memberi Line Manager Legal wewenang menghentikan proses berisiko Tinggi sebelum keputusan Manajemen (sesuai sumber: \"Hentikan proses; eskalasi ke manajemen\"), sedangkan SNX-HR-JA-01 menulis penahanan berlaku hanya atas keputusan Management (USULAN). Notes menyebutnya selaras; lebih tepat dicatat sebagai beda yang menunggu Legal (open item 5 sudah ada).",
+      "bukti": "Dokumen: \"menghentikan proses yang berisiko Tinggi. Keputusan atas risiko itu ada pada Manajemen (butir 4.5).\"; specs/HR-JA-01.json: \"Legal memberi opini; penahanan berlaku hanya atas keputusan Management (USULAN)\""
+    },
+    {
+      "lokasi": "Bagian 5 baris Manajemen (Authority)",
+      "masalah": "Kata tertulis diperluas ke semua keputusan Manajemen. Sumber mewajibkan rekomendasi tertulis hanya untuk eskalasi risiko Tinggi; strategi sengketa cukup berdasarkan rekomendasi Line Manager, dan persetujuan DoA (6.2 langkah 11) tidak memuat rekomendasi tertulis.",
+      "bukti": "Dokumen: \"Memutuskan atas rekomendasi tertulis Line Manager Legal.\"; sumber: \"eskalasi ke manajemen dengan rekomendasi tertulis\" dan \"diputuskan oleh manajemen berdasarkan rekomendasi Line Manager\""
+    },
+    {
+      "lokasi": "Bagian 5 kolom Responsibilities vs PIC bagian 6",
+      "masalah": "Konsistensi peran terpenuhi (semua PIC bagian 6 dan 8 ada di bagian 5), tetapi beberapa langkah tidak tercermin di uraian peran: Line Manager Legal 6.8 langkah 7 (tunjuk advokat) dan 6.10 langkah 3 (playbook dan template); Staff Legal 6.3 langkah 4 dan 5 (negosiasi risiko Sedang, perbaikan risiko Rendah).",
+      "bukti": "Bagian 5 Line Manager Legal: \"merekomendasikan strategi sengketa (6.8) ... melapor ke Manajemen (6.10)\"; 6.8 langkah 7 PIC Line Manager Legal; 6.3 langkah 4 PIC Staff Legal"
+    },
+    {
+      "lokasi": "6.5 langkah 4 dan 6.7 langkah 2",
+      "masalah": "Batas waktu kabur dan rekaman tanpa lokasi: \"segera\" tanpa angka (sumber juga tanpa angka, open item 7) dan keluaran koordinasi tanpa lokasi simpan yang juga tidak ada di tabel rekaman.",
+      "bukti": "\"Laporkan pelanggaran atau wanprestasi kontrak ke Line Manager Legal segera.\"; \"Hasil koordinasi (lokasi catatan belum ditetapkan)\""
+    }
+  ]
+}
