@@ -1051,7 +1051,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-OPS-FRM-04",
    "out_path": "out/07_Ops/SNX-OPS-FRM-04 Change Request Approval Log (Rev00 DRAFT).xlsx",
    "sources": [
@@ -1062,11 +1062,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": "7",
    "open_items": [],
-   "updated_at": "2026-10-14T21:31:31Z",
+   "updated_at": "2026-10-14T21:33:35Z",
    "pen_agent": "ab6fcf21f7ce4042f"
   },
   {

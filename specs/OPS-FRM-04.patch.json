@@ -1,0 +1,21 @@
+{
+  "clear_rows": {
+    "Change Log": [5]
+  },
+  "set": {
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 8.32",
+    "Kontrol Dokumen!B18": "Satu nomor CR per perubahan: CR-YYYY-NNNN. CR juga dibuat sebagai tiket di Zammad (USULAN); log ini menjadi rekap audit.",
+    "Kontrol Dokumen!B25": "Biru muda: warna baris contoh, sudah dikosongkan dan tidak dipakai",
+    "Kontrol Dokumen!C30": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!A31": null,
+    "Kontrol Dokumen!B31": null,
+    "Kontrol Dokumen!C31": null,
+    "Kontrol Dokumen!D31": null,
+    "Kontrol Dokumen!E31": null,
+    "Kontrol Dokumen!B35": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B36": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B37": "Samuel Kristanto Utomo / President Director",
+    "Change Log!A2": "Approver sesuai SNX-OPS-SOP-02 Bagian 5."
+  }
+}

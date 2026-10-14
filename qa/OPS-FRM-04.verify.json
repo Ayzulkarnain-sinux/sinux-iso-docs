@@ -1,0 +1,16 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Cakupan: isi out dibandingkan sel per sel dengan sumber (read_file_content fileId 1u5P_nturbvTvvi3hSrCy3ZfAIyiXCqWZ, dan salinan biner 155160 byte yang ukurannya sama dengan catatan audit). Beda hanya 13 sel Kontrol Dokumen (B11, B13, B18, B25, C30, A31:E31, B35:B37), Change Log A2, dan baris CONTOH 5; semua tercatat di notes. 5 sheet, 1 gambar, 4 data validation, 2 conditional formatting, 302+31 rumus utuh.",
+  "Kontrol Dokumen A25/B25: kotak legenda tetap biru muda (FFE7EEF7) dan B25 'Biru muda: warna baris contoh, sudah dikosongkan dan tidak dipakai' menjelaskan warna yang tidak lagi muncul di Change Log (baris 5 kini berwarna input FFFFF2CC sama dengan baris 6). Legenda basi; pertimbangkan mengosongkan baris legenda ini. Notes open item 9 juga keliru menyebut baris 5 'tanpa warna'.",
+  "Ringkasan A13 'CR dieksekusi tanpa go-gate lengkap (status CEK)' tidak sepadan dengan B13 yang menghitung semua CR berstatus CEK, termasuk yang belum dieksekusi. Cacat bawaan sumber, sudah di notes (open item 3).",
+  "Ringkasan F6 'Tanpa rollback darurat (%)' dihitung 1-D/B untuk semua jenis; Go-gate S tidak memeriksa Ack pelanggan (N). Cacat bawaan sumber, sudah di notes (USULAN 5, 6).",
+  "B18 'CR juga dibuat sebagai tiket di Zammad (USULAN)': sejalan dengan premis owner (Zammad untuk Ops); konsistensi dengan SNX-OPS-SOP-02 belum bisa diperiksa karena OPS-SOP-02 masih QUEUED di ledger. Periksa ulang saat SOP-02 selesai (sistem tiket dan rujukan 'Bagian 5').",
+  "Ringkasan B3/B4 periode bawaan 1 sampai 30 November 2026 dibiarkan; sel input, bukan fakta, tetapi bisa terbaca sebagai sisa contoh. Pertimbangkan dikosongkan.",
+  "Istilah: judul sheet Change Log A1 'Change request and approval log' tidak sama persis dengan judul form 'Change Request & Approval Log' (B5).",
+  "Cara pakai B18 sampai B21 memakai kalimat tanpa pelaku ('CR juga dibuat sebagai tiket di Zammad', 'tinjau dalam 5 hari kerja'). Kalimat tim dipertahankan (T1); menambah pelaku perlu sumber atau label USULAN.",
+  "Pemilik dokumen B10 'Head of Operation' (mengikuti sumber, sesuai aturan process_owner) belum dipetakan ke orang; pemeriksa memakai Fani Fatullah / VP Tech Operation and Services dari defaults. Tercatat di notes open item 7.",
+  "Baris riwayat revisi kedua sumber (A31:E31, 'Review bahasa dan konsistensi ... RTO dan target pulih') dikosongkan; alasan dan teks asli tercatat di notes (USULAN 4). Tidak ada baris Status terpisah; status Draft termuat di B6 '00 (DRAFT)'."
+ ]
+}
