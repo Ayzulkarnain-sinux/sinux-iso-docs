@@ -1,0 +1,15 @@
+{
+  "clear_rows": {
+    "Register Aset": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "Kontrol Dokumen": [23, 27, 33]
+  },
+  "set": {
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 5.9, 5.10, 5.11, 5.12",
+    "Kontrol Dokumen!B14": "Register Aset: berlaku sampai digantikan. Berita acara di sheet Pemusnahan: 5 tahun (SNX-ISMS-SOP-04).",
+    "Kontrol Dokumen!C32": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!B37": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B38": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B39": "Samuel Kristanto Utomo / President Director"
+  }
+}

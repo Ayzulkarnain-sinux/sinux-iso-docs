@@ -1115,9 +1115,9 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-FRM-06",
-   "out_path": null,
+   "out_path": "out/07_Ops/SNX-OPS-FRM-06 Project Handover BAST Closure Report (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1BPtjct3hNbhlUILJ7FTm4EX-_Vhk-KUb",
@@ -1125,13 +1125,14 @@
      "title": "SNX-OPS-FRM-06_Project_Handover_BAST_Closure_Report.docx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T21:38:16Z",
-   "pen_agent": "a28b34ceaae5703a1"
+   "updated_at": "2026-10-14T21:48:12Z",
+   "pen_agent": "a28b34ceaae5703a1",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 34,
@@ -1271,9 +1272,9 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-ISMS-REG-01",
-   "out_path": null,
+   "out_path": "out/08_ISMS/SNX-ISMS-REG-01 Information Asset Register (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1mMx6v0UhAWMQU6I6rAfsZz20nsjv-FkP",
@@ -1281,12 +1282,12 @@
      "title": "SNX-ISMS-REG-01_Information_Asset_Register.xlsx"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": "2",
    "open_items": [],
-   "updated_at": "2026-10-14T21:46:01Z",
+   "updated_at": "2026-10-14T21:50:24Z",
    "pen_agent": "a60131729e520f4ef"
   },
   {
