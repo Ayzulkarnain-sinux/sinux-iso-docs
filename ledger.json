@@ -1395,7 +1395,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-ISMS-FRM-01",
    "out_path": "out/08_ISMS/SNX-ISMS-FRM-01 Backup Log Restore Testing Records (Rev00 DRAFT).xlsx",
    "sources": [
@@ -1406,11 +1406,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": "8",
    "open_items": [],
-   "updated_at": "2026-10-14T22:02:12Z",
+   "updated_at": "2026-10-14T22:02:27Z",
    "pen_agent": "ae0edabde24bd95e6"
   },
   {

@@ -1,0 +1,30 @@
+{
+  "clear_rows": {
+    "Kontrol Dokumen": [
+      25,
+      31
+    ],
+    "Daftar Job": [
+      5,
+      6
+    ],
+    "Backup Log": [
+      2,
+      5,
+      6
+    ],
+    "Restore Record": [
+      5
+    ]
+  },
+  "set": {
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B13": "Kontrol Annex A 8.13",
+    "Kontrol Dokumen!B19": "NOC Engineer shift malam mengisi Backup Log setiap hari; status Gagal dua kali berturut menjadi tiket P2 di Zammad.",
+    "Kontrol Dokumen!C30": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!B35": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+    "Kontrol Dokumen!B36": "Fani Fatullah / VP Tech Operation and Services",
+    "Kontrol Dokumen!B37": "Samuel Kristanto Utomo / President Director",
+    "Daftar Job!A2": "RPO dan RTO dalam jam. Simpan salinan offline (break-glass) kunci enkripsi backup di luar password manager (USULAN)."
+  }
+}
