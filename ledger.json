@@ -1629,8 +1629,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 21,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:41:31Z",
+   "open_items": [
+    "Sweep (b): istilah telaah/penelaahan/review berganti; langkah dengan lebih dari satu tindakan (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-14T23:41:34Z",
    "pen_agent": "aab72d9fbe45df535",
    "ooxml": "PASSED"
   },
@@ -1642,9 +1644,9 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-FRM-03",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "1m9mIkrMmiIY4TNmbV7j_rRuXKPUnfiK_EP80myS6lN8",
@@ -1652,13 +1654,14 @@
      "title": "Data Protection & Confidentiality Compliance Review"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 33,
    "open_items": [],
-   "updated_at": "2026-10-14T23:26:08Z",
-   "pen_agent": "abeadc3abe601e504"
+   "updated_at": "2026-10-14T23:41:54Z",
+   "pen_agent": "abeadc3abe601e504",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 50,
@@ -1668,7 +1671,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-REG-02",
    "out_path": "out/04_Legal/SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx",
    "sources": [
@@ -1679,11 +1682,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 16,
    "open_items": [],
-   "updated_at": "2026-10-14T23:40:28Z",
+   "updated_at": "2026-10-14T23:43:17Z",
    "pen_agent": "adba0b54b654ef887",
    "ooxml": "PASSED"
   },
@@ -1721,17 +1724,19 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-FRM-01",
-   "out_path": null,
+   "out_path": "out/02_HR/SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 9,
    "open_items": [],
-   "updated_at": "2026-10-14T23:33:23Z",
-   "pen_agent": "a2a3686f5a29a9f33"
+   "updated_at": "2026-10-14T23:42:14Z",
+   "pen_agent": "a2a3686f5a29a9f33",
+   "ooxml": "PASSED",
+   "pdf_queued": 1
   },
   {
    "wl_index": 53,
@@ -1781,7 +1786,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-FRM-01",
    "out_path": null,
    "sources": [],
@@ -1790,7 +1795,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-14T23:41:53Z",
+   "pen_agent": "a2e0550886843b182"
   },
   {
    "wl_index": 56,

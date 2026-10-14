@@ -1,0 +1,65 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "7 Isi Register (tabel Identifikasi Risiko dan Penilaian Risiko)",
+      "masalah": "Kriteria 'Daftar risiko hukum yang teridentifikasi' terpenuhi pada tingkat struktur saja: kolom dampak potensial, tingkat risiko (Nilai dan Kategori), dan mitigasi ada, tetapi 0 dari 8 area berisi risiko. Sumber memang kosong, jadi mengisinya berarti mengarang (batas keras 4). Register perlu diisi Legal sebelum audit.",
+      "bukti": "Sumber Drive 1ysIL0yt...: '1\\. | Perizinan Berusaha |   |   |   |   |   |' sampai baris 8 kosong; notes Open item 1 mencatatnya."
+    },
+    {
+      "lokasi": "7 Isi Register, Petunjuk Pengisian butir 1",
+      "masalah": "Uraian Risiko, Penyebab/Pemicu, dan Dampak Potensial disebut diisi 'sesudah risiko dinilai', padahal Ketentuan butir 1 mencatatnya saat identifikasi, sebelum penilaian di butir 3.",
+      "bukti": "'Sel Uraian Risiko, Penyebab/Pemicu, Dampak Potensial, ... kosong. Staff Legal mengisinya sesudah risiko dinilai.' lawan butir 1 'Staff Legal mencatat risiko hukum ... pada tabel Identifikasi Risiko: area, uraian, penyebab, dan dampak potensial.'"
+    },
+    {
+      "lokasi": "Ketentuan butir 17 dan Kesimpulan",
+      "masalah": "Objek yang sama ('register ini' / 'dokumen ini') punya dua frekuensi tinjauan dengan dua pelaku tanpa pembeda (isi register bulanan, dokumen tahunan). Pembaca bisa bingung.",
+      "bukti": "Butir 17 'Staff Legal meninjau register setiap bulan (USULAN)'; Kesimpulan 'Line Manager Legal meninjau dokumen ini setiap tahun.'"
+    },
+    {
+      "lokasi": "9 Rekaman, baris register",
+      "masalah": "Pemilik rekaman register = Staff Legal, sedangkan SNX-LEG-SOP-03 Kategori 6 (register Departemen Legal) menulis pemilik Line Manager Legal. Ketidakselarasan lintas dokumen.",
+      "bukti": "Doc: 'Pemilik: Staff Legal.'; specs/LEG-SOP-03.json: 'Kategori 6, dokumen internal Departemen Legal', 'Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal'."
+    },
+    {
+      "lokasi": "2 Istilah, baris 'Legal dan Compliance'",
+      "masalah": "Disebut 'Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01', tetapi SNX-HR-ORG-01 menulis jabatan itu 'Legal & Compliance'. Selisih ejaan kecil antar dokumen.",
+      "bukti": "specs/HR-ORG-01.json: '\"JA-08\", \"Legal & Compliance\", \"Ester Febe Utomo\"'."
+    },
+    {
+      "lokasi": "Lingkup paragraf 3; Acuan ISO baris Annex A 5.31; Dokumen Terkait baris SNX-OPS-FRM-02",
+      "masalah": "Benda diberi kata kerja manusia ('register mencatat'), tiga kali. Penyusun sudah membersihkan sebagian; sisa ini wajar dalam bahasa Indonesia, tidak berulang berat.",
+      "bukti": "'register mencatat akibat hukumnya (USULAN)'; 'Register tidak mencatat risiko keamanan informasi'; 'Register mencatat risiko tidak terpenuhinya persyaratan hukum dan kontrak.'"
+    },
+    {
+      "lokasi": "6 Petunjuk Pengisian butir 4, 5, 10",
+      "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui (Staff Legal, butir 1 Petunjuk).",
+      "bukti": "'Kemungkinan dan Dampak diisi angka 1 sampai 5 menurut skala.'; 'Nilai Risiko diisi hasil perkalian Kemungkinan dan Dampak.'; 'Tabel Riwayat Penilaian dan Status diisi satu baris untuk tiap perubahan.'"
+    },
+    {
+      "lokasi": "1 Tujuan paragraf 1",
+      "masalah": "Kalimat kedua pasif dan mengulang rumusan kriteria checklist, sebagian mengulang kalimat pertama.",
+      "bukti": "'Tiap risiko dicatat bersama dampak potensial, tingkat risiko, dan langkah mitigasinya.'"
+    },
+    {
+      "lokasi": "3 Metode Penilaian, Gambar 1 simpul Rendah",
+      "masalah": "Simpul memberi pelaku Staff Legal untuk pemantauan risiko Rendah; sumber tidak menyebut pelaku dan tidak ada butir Ketentuan yang khusus untuk Rendah. Tafsir kecil, tidak berlabel.",
+      "bukti": "Flow spec: 'Rendah:\\nStaff Legal memantau lewat\\nprosedur yang relevan'; sumber: '1-4 | Rendah | Dipantau dan dikendalikan melalui prosedur yang relevan.'"
+    },
+    {
+      "lokasi": "Tata letak tabel 7.4 (notes Open item 12)",
+      "masalah": "HUMAN-VERDICT: baris judul tabel Pelaksanaan Mitigasi terbelah antarhalaman di pratinjau PDF penyusun; perlu dilihat di Word. Tidak diukur ulang oleh verifikator.",
+      "bukti": "notes/LEG-REG-02.md Open items 12."
+    }
+  ],
+  "checks": {
+    "a_fakta_sumber": "Cocok: 8 area (salah ketik 'Intelektuan' diperbaiki), skala Kemungkinan verbatim, rumus, 4 kategori dan rentang, teks penanganan, 3 peran, 6 butir pemantauan, aturan Ringkasan Risiko. Tambahan (keterangan Dampak, bulanan, Manajemen = Direktur Utama dan Direktur (COO), pembagian Staff/Line Manager Legal, kolom baru, folder Drive, klausul ISO) berlabel USULAN. Matriks 5 x 5 dihitung ulang: semua 25 sel benar.",
+    "b_fakta_karangan": "Nihil. Rujukan silang dicek: judul SNX-ISMS-REG-02 dan SNX-OPS-FRM-02 (checklist baris 80 dan 69), SNX-ISMS-PRO-01 (register risiko contoh RESTRICTED), SNX-LEG-SOP-01 butir 4.17 sampai 4.19, 4.24, 6.10 (laporan bulanan), SNX-LEG-SOP-03 Kategori 6, SNX-HR-ORG-01 JA-08/JA-09 dan unit Management, ambang REG-02 (audit butir 8).",
+    "c_kriteria": "Terpenuhi pada struktur: identifikasi + dampak potensial, Nilai/Kategori Risiko (tingkat), Rencana dan Pelaksanaan Mitigasi. Isi kosong sesuai sumber (nonblocking 1).",
+    "d_runbook_0_6": "Status Draft, tanggal efektif kosong, tanpa tanda tangan; tiga penanda tangan berbeda sesuai defaults (Staff Legal, Line Manager Legal, Samuel Kristanto Utomo / President Director); klasifikasi RESTRICTED (Internal) sesuai worklist; nol rujukan internal AI (grep spec: SKILL_, DEC-, HANDOVER, Claude, Altair, staging, kb_, pola HURUF_BESAR_GARIS_BAWAH, em/en-dash = nihil); nol baris contoh; lint pass, fails [].",
+    "e_peran": "Konsisten: nomor butir di tabel Peran cocok dengan pelaku di Ketentuan (Staff Legal 1,3,4,5,7,10,11,15-18,20; Line Manager Legal 6,12,13,19; Pemilik Risiko 2,3,8,9; Manajemen 12-14,16); pemilik di tabel Rekaman memakai peran yang sama.",
+    "f_bahasa": "Tidak ada pelanggaran §6a yang jelas; lint pass; tebal hanya di sampul template. Catatan kecil di nonblocking 6 sampai 9.",
+    "g_data_conflicts_audit": "Samuel Kristanto Utomo / President Director di Approval, 'Direktur Utama' di badan, 'Direktur (COO)' sekali; 14 butir cacat audit (context/audit/iso-sinux-supdocs-legal-2026-10-14.md baris 1022 sampai 1035) ditangani atau dijelaskan di notes bagian 5."
+  }
+}
