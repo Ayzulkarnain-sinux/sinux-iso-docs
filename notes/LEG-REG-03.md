@@ -92,7 +92,7 @@ Perintah: `grep -n "Legal & Regulatory Requirement" context/audit/*.md`. Hasil: 
 
 ## USULAN
 
-Teks memuat 20 penanda USULAN: 17 berpola "(USULAN)" (itu yang dihitung lint, termasuk entri definisi di Istilah), 2 berpola "(USULAN, rujukan)" di Ketentuan butir 8 dan 13, dan 1 label klausul ISO "(USULAN, perlu konfirmasi konsultan)". Dikelompokkan menjadi 15 butir keputusan (jumlah USULAN yang dilaporkan):
+Teks memuat 22 penanda USULAN: 19 berpola "(USULAN)" (itu yang dihitung lint, termasuk entri definisi di Istilah), 2 berpola "(USULAN, rujukan)" di Ketentuan butir 8 dan 13, dan 1 label klausul ISO "(USULAN, perlu konfirmasi konsultan)". Dikelompokkan menjadi 16 butir keputusan (jumlah USULAN yang dilaporkan; U16 ditambah pada putaran sweep):
 
 | # | Butir USULAN | Posisi | Pemutus yang disarankan |
 |---|---|---|---|
@@ -106,11 +106,12 @@ Teks memuat 20 penanda USULAN: 17 berpola "(USULAN)" (itu yang dihitung lint, te
 | U8 | Peninjauan register setiap bulan | Ketentuan butir 9 | Legal |
 | U9 | Penanggung Jawab Kegiatan menjalankan tindak lanjut yang tercatat atas jabatannya | Ketentuan butir 12 | owner |
 | U10 | Penyimpanan di folder Google Drive departemen Legal dengan klasifikasi RESTRICTED (Internal); termasuk butir 4.24 SNX-LEG-SOP-01 | Ketentuan butir 13; Dokumen Terkait; Rekaman | Legal (klasifikasi: owner menurut defaults.json) |
-| U11 | Line Manager Legal sebagai pemilik dokumen | Peran; meta process_owner | Legal |
+| U11 | Line Manager Legal sebagai pemilik dokumen dan pemilik rekaman register; Staff Legal pencatat | Peran; Rekaman; meta process_owner | Legal |
 | U12 | Pembagian tugas mengikuti pola SNX-LEG-SOP-03 | Peran | Legal |
 | U13 | Kolom Bidang memakai delapan area SNX-LEG-REG-02; peraturan di luar area diisi Kepatuhan Regulasi | Petunjuk butir 6 | Legal |
 | U14 | Pemetaan tiap dokumen terkait ke register ini | Dokumen Terkait | Legal |
 | U15 | Tujuh klausul ISO: ISO 9001:2015 4.2, 5.1.2, 7.5.3, 8.2.2; ISO/IEC 27001:2022 4.2, Annex A 5.31, Annex A 5.34. Judul klausul dalam bahasa Indonesia terjemahan penyusun | Acuan ISO | owner (konsultan mengonfirmasi) |
+| U16 | Pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance (JA-08 dan JA-09) di SNX-HR-ORG-01, menunggu konfirmasi K-13 | Peran; Dokumen Terkait | owner (K-13 di SNX-HR-ORG-01) |
 
 ## Open items
 
@@ -153,3 +154,19 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber? Pemeriksaan 
 | Sistem | Google Drive (dari SNX-LEG-SOP-01 butir 4.24). Zammad dan GLPI tidak dipakai karena register tidak memuat tiket |
 | Nomor klausul ISO dan judulnya | Dari pengetahuan umum standar, bukan dari sumber repo; seluruhnya berlabel USULAN dan perlu konfirmasi konsultan (U15) |
 | Peran dan pembagian tugas | Staff Legal dan Line Manager Legal dari HR-ORG-01. Pembagian tugas tiap butir berlabel USULAN atau mengikuti pola SOP-03 (U5 sampai U12) |
+
+## Sweep
+
+Putaran sweep sesudah DONE (instruksi /tmp/claude-0/prompts/LEG-REG-03.sweep.txt; temuan nonblocking butir 1 dan 2 di qa/LEG-REG-03.verify.json). Hanya dua butir diubah; temuan nonblocking lain (butir 7 Ketentuan, ejaan Pelindungan, rumus "berstatus (USULAN)", SNX-LEG-SOP-02, UU di open item 2) tidak disentuh karena di luar butir sweep.
+
+| # | Lokasi | Sebelum | Sesudah |
+|---|---|---|---|
+| 1a | Peran, paragraf penjelas | "Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01." | "Line Manager Legal dan Staff Legal adalah nama peran; SNX-HR-ORG-01 memetakannya ke jabatan Legal & Compliance, JA-08 dan JA-09 (USULAN)." |
+| 1b | Dokumen Terkait, baris SNX-HR-ORG-01 | "Sumber nama jabatan Line Manager Legal dan Staff Legal, dan jabatan untuk kolom Penanggung Jawab Kegiatan." | "Matriks Peran memetakan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance, JA-08 dan JA-09 (USULAN). Daftar jabatannya menjadi acuan kolom Penanggung Jawab Kegiatan." |
+| 2a | Rekaman, baris 1 (register) | "Pemilik: Staff Legal." | "Pemilik: Line Manager Legal. Pencatat: Staff Legal (SNX-LEG-SOP-03 butir 4.26)." |
+| 2b | Rekaman, baris 2 (salinan) | "Pemilik: Staff Legal." | "Pemilik: Line Manager Legal. Pencatat: Staff Legal." |
+| 2c | Peran, baris Line Manager Legal | "Pemilik dokumen (USULAN)." | "Pemilik dokumen dan pemilik rekaman register (USULAN)." |
+
+Alasan butir 2: specs/LEG-SOP-03.json butir 4.26 menulis "Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya", dan tabel Rekaman SOP-03 memberi "pemilik Line Manager Legal" untuk dokumen internal departemen Legal. Dokumen ini kini sama. Pembedaan menetapkan (Line Manager Legal) dan mencatat (Staff Legal) tetap konsisten dengan Ketentuan butir 5, 6, 13 dan tabel Peran, jadi tidak ada butir Ketentuan yang diubah.
+
+Uji sesudah sweep: render berhasil; `python3 -I tools/lint_doc.py ... generic` memberi "pass": true, "fails": [] (warns: 19 butir USULAN); validate.py docx "All validations PASSED!"; `python3 -I reports/orch/blankscan.py` memberi "ok 12 LEG-REG-03.docx []". Kode dokumen di badan tetap tercantum di Dokumen Terkait (tidak ada kode baru). Pemindaian em-dash dan en-dash pada notes ini: nol.

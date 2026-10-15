@@ -214,7 +214,7 @@
               ],
               [
                 "Line Manager Legal",
-                "Pemilik dokumen (USULAN). Menetapkan relevansi peraturan bagi SINUX dan memeriksa kelengkapan serta keakuratan register (Ketentuan butir 5 dan 7)."
+                "Pemilik dokumen dan pemilik rekaman register (USULAN). Menetapkan relevansi peraturan bagi SINUX dan memeriksa kelengkapan serta keakuratan register (Ketentuan butir 5 dan 7)."
               ],
               [
                 "Penanggung Jawab Kegiatan",
@@ -228,7 +228,7 @@
           }
         },
         {
-          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-03 dan berstatus (USULAN). Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01. Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-03 dan berstatus (USULAN). Line Manager Legal dan Staff Legal adalah nama peran; SNX-HR-ORG-01 memetakannya ke jabatan Legal & Compliance, JA-08 dan JA-09 (USULAN). Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
         }
       ]
     },
@@ -619,7 +619,7 @@
             "rows": [
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal, dan jabatan untuk kolom Penanggung Jawab Kegiatan."
+                "Struktur Organisasi SINUX. Matriks Peran memetakan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance, JA-08 dan JA-09 (USULAN). Daftar jabatannya menjadi acuan kolom Penanggung Jawab Kegiatan."
               ],
               [
                 "SNX-ISMS-PRO-01",
@@ -682,12 +682,12 @@
             "rows": [
               [
                 "Register ini: tabel Daftar Peraturan dan Persyaratan Hukum, Relevansi dengan Kegiatan SINUX, Status dan Peninjauan, dan Riwayat Perubahan dan Peninjauan",
-                "Folder Google Drive departemen Legal (Ketentuan butir 13). Pemilik: Staff Legal. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Folder Google Drive departemen Legal (Ketentuan butir 13). Pemilik: Line Manager Legal. Pencatat: Staff Legal (SNX-LEG-SOP-03 butir 4.26). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
                 "Belum ditetapkan. Usulan masa retensi dokumen internal departemen Legal ada di SNX-LEG-SOP-03 (Kategori 6)."
               ],
               [
                 "Salinan peraturan, izin, atau kontrak yang dirujuk register",
-                "Lokasi tertulis di kolom Lokasi Salinan. Pemilik: Staff Legal.",
+                "Lokasi tertulis di kolom Lokasi Salinan. Pemilik: Line Manager Legal. Pencatat: Staff Legal.",
                 "Belum ditetapkan."
               ]
             ],

@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Peran, paragraf penjelas; Dokumen Terkait, baris SNX-HR-ORG-01",
+      "masalah": "Dokumen menjadi pelaku kata kerja: 'SNX-HR-ORG-01 memetakannya' dan 'Matriks Peran memetakan'. Lazim untuk dokumen yang memuat tabel pemetaan, tapi bisa ditulis 'Matriks Peran di SNX-HR-ORG-01 memasangkan ...' atau 'dipasangkan di Matriks Peran SNX-HR-ORG-01'.",
+      "bukti": "/tmp/claude-0/sweep/LEG-REG-03.diff baris @@ -50 dan @@ -371"
+    },
+    {
+      "lokasi": "Rekaman, baris 1",
+      "masalah": "Rujukan 'SNX-LEG-SOP-03 butir 4.26' berlaku untuk rekaman di bagian 11 SOP-03 itu sendiri; di sini dipakai sebagai pola untuk register ini. Dasar penyelarasan sah (butir sweep 2), tapi kalimat bisa disebut 'mengikuti pola' agar tidak terbaca SOP-03 mengatur register ini langsung.",
+      "bukti": "specs/LEG-SOP-03.json baris 136: 'Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya'"
+    },
+    {
+      "lokasi": "Dokumen Terkait, baris SNX-LEG-SOP-03",
+      "masalah": "Uraian baris masih menyebut pola 'Staff Legal mencatat dan Line Manager Legal menetapkan' tanpa menyebut pemilik rekaman. Tidak bertentangan, hanya belum menyebut penyelarasan pemilik rekaman. Di luar butir sweep, jadi tidak wajib.",
+      "bukti": "specs/LEG-REG-03.json baris 634"
+    }
+  ],
+  "cek": {
+    "butir_1_dan_2_dikerjakan": "ya: 'nama jabatan' diganti 'nama peran' yang dipetakan ke JA-08 dan JA-09 (USULAN) di Peran dan Dokumen Terkait; pemilik rekaman diubah dari Staff Legal ke Line Manager Legal, Staff Legal jadi pencatat, sama dengan SNX-LEG-SOP-03",
+    "dasar_fakta_baru": "JA-08 dan JA-09 'Legal & Compliance' dan pemetaan peran ada di specs/HR-ORG-01.json Matriks Peran baris Line Manager Legal dan Staff Legal, berlabel (USULAN) K-13; 'pemilik Line Manager Legal' ada di records SNX-LEG-SOP-03; butir 4.26 ada di specs/LEG-SOP-03.json",
+    "perubahan_di_luar_butir": "nihil; spec diff hanya 5 string, tidak ada perubahan simpul diagram",
+    "em_dash_dan_rujukan_internal_AI": "nihil di teks baru; docx di out/ berisi 0 em-dash, 0 'Pemilik: Staff Legal', 0 'Nama jabatan Staff Legal'",
+    "butir_tidak_dikerjakan": "nihil"
+  }
+}
