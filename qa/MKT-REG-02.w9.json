@@ -1,0 +1,40 @@
+{
+ "key": "MKT-REG-02",
+ "cluster": "MKT",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Peran Brand & Marketing merujuk 'butir 4.2 sampai 4.5, 4.7, 4.9, dan 4.11'. Butir 4.6 baru (Brand & Marketing menelusuri persetujuan dan validasi klaim di REG-01) kini juga tugas Brand & Marketing tetapi tidak masuk rentang itu.",
+  "Pasif tanpa pelaku pada kalimat baru: 'Aktivitas berstatus Dibatalkan dihitung terpisah dari yang belum Selesai' (mengikuti kutipan A8) dan definisi Budget 'Dana yang disetujui untuk satu Aktivitas' (teksnya persis definisi RPT-01, jadi faktanya berdasar).",
+  "Benda sebagai pelaku: 'tempat Aktivitas menampilkan atau membagikan materi' (definisi Channel dan 6.4). Teksnya sama dengan definisi Channel di RPT-01, jadi istilahnya konsisten, tetapi Aktivitas menjadi pelaku kata kerja manusia.",
+  "Open item lama nomor 1 di notes diubah teksnya ('identik dengan baris 57' menjadi 'mirip baris 57 tetapi tidak identik'), tidak hanya status. Ini mengoreksi klaim yang keliru dan sesuai butir 2 (dilarang menulis identik), tetapi menyimpang dari aturan NOTES 'ubah statusnya saja'.",
+  "Budget kini dicatat di REG-02 (Tabel 1) dan juga di tabel Budget RPT-01 (Marketing Plan beserta Dasar Persetujuan). A8 sendiri meminta kolom 'anggaran bila ada' di REG-02, tetapi ini membuka irisan data baru. Notes open item 11 mencatat pilihan istilah Budget, tetapi tidak menyebut irisan dengan RPT-01.",
+  "Kolom Jenis dihapus sesuai daftar A8, sehingga campaign, event, dan webinar tidak dibedakan lagi. Hal ini dicatat di notes open item 10 (pemutus owner)."
+ ],
+ "butir_dikerjakan": [
+  "A8: Tujuan, Ruang Lingkup (batas dokumen Marketing), pengecualian, definisi (Aktivitas, Budget, Channel, PIC), Status, ketentuan 4.1-4.9, Peran, Cara Mengisi 6.1-6.12, Isi Register, Rekaman, Acuan ISO, dan Dokumen Terkait diselaraskan. REG-02 hanya mencatat pelaksanaan Aktivitas; REG-01 disebut satu-satunya register materi, konten, dan persetujuan klaim.",
+  "A8 tabel: Tabel 1 kini berkolom No, Nama Aktivitas, Tujuan, Channel, PIC, Budget, ID Persetujuan Materi; Tabel 2 berkolom No, Tanggal Mulai, Tanggal Selesai, Status, Hasil Singkat. Kolom Jenis, Produk/Layanan Terkait, dan Kode Aktivitas dihapus, Tabel 3 (Materi yang Dipakai) juga dihapus. Semua butir daftar A8 tercakup (nama, tujuan, channel, jadwal, PIC, anggaran sebagai Budget, status, ID materi REG-01, hasil singkat).",
+  "A8: Aktivitas punya arti yang sama dengan definisi RPT-01, kata per kata (satu Aktivitas = satu baris Tabel 1). Dibatalkan dihitung terpisah dari belum Selesai, dan kalimatnya sama dengan RPT-01.",
+  "A8: label (USULAN) yang memuat batas cakupan lama dihapus atau diperbarui (Batas dokumen Marketing, pengecualian RPT-01/REG-03/REG-01, Dokumen Terkait).",
+  "Butir 2: open item Description baris 58 ditulis dengan makna yang diminta di notes (open item 9, pemutus Brand & Marketing, dengan catatan 'tidak identik'). Dokumen tidak menyebut baris 58, jadi isi dokumen tidak perlu diubah.",
+  "B2: irisan kolom dengan REG-01 (Jenis Konten/Channel, Produk/Layanan, Tabel 3 materi, tanggal pengecekan) dan irisan daftar aktivitas dengan RPT-01 (Kode Aktivitas, arti Aktivitas, status) hilang. Notes menutup open item 2, 3, 4, dan 8.",
+  "Blok approval: meta.approval sama persis dengan defaults v22 MKT (Zilly Dwinata / Brand & Marketing; Laras Rasmawati / VP Commercial; Samuel Kristanto Utomo / President Director), dan process_owner VP Commercial tidak berubah.",
+  "Rujukan silang yang diubah sudah dicek pada render spec terkini. REG-01 butir 4.10-4.13 (klaim, Pemverifikasi, penolakan) cocok, begitu juga butir 4.8 (versi baru) dan 4.5 (klasifikasi). Di RPT-01, tabel 'B2 Realisasi Aktivitas' punya kolom Rujukan Catatan yang menunjuk nomor baris Tabel 1 REG-02, dan Status mengikuti Tabel 2 (RPT-01 4.8). REG-03 punya kolom Campaign Asal. Rujukan internal REG-02 (4.1-4.11, 6.x) ada.",
+  "Fakta baru: Budget, 'Tidak Ada Budget', dan satuan mata uang berdasar RPT-01 sebelum W9 (butir 4.5 dan definisi Budget). Tujuan satu kalimat, pemisah koma, dan Hasil Singkat berlabel (USULAN). Tidak ada nama, angka, atau sistem baru.",
+  "Uji ulang oleh pemeriksa: lint_doc generic menghasilkan fails kosong (17 USULAN); blankscan menghasilkan 'ok 11 []'. Render pemeriksa identik dengan /tmp/claude-0/w9/render/MKT-REG-02.docx."
+ ],
+ "butir_tidak_dikerjakan": [
+  "A3 tidak berlaku: dokumen tidak menyebut JA-03 atau JA-04 maupun garis lapor keduanya (grep 0). Hal ini dicatat di notes open item 12.",
+  "B4 tidak berlaku: butir itu hanya untuk SNX-MKT-RPT-01."
+ ],
+ "grep": "Teks sesudah (render spec terkini /tmp/claude-0/w9/chk-reg02/MKT-REG-02.txt): \"HR Manager\" = 0 dan \"Divisi Legal\" = 0. Dokumen Marketing, jadi kedua batas itu tidak wajib, dan keduanya tetap nol. Pemeriksaan bahasa juga nol untuk em-dash/en-dash, frasa proses penyusunan (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun), rujukan AI, 'menunggu konfirmasi', dan JA-03/JA-04.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

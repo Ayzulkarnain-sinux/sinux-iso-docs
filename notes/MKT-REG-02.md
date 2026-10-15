@@ -114,14 +114,14 @@ Tautan Kode Aktivitas ke SNX-MKT-RPT-01 (Tabel 2, Cara Mengisi 6.9, Dokumen Terk
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Description baris 58 identik dengan baris 57; cakupan diputus owner. Catatan pengukuran: teks di config/checklist.json tidak identik. Baris 58 lebih panjang dan menambah hal yang tidak ada di baris 57: validasi klaim produk/layanan sebelum publikasi; field produk/layanan terkait, jenis konten (baris 57 hanya channel), klaim yang perlu diverifikasi, dan sumber/bukti pendukung; serta bukti verifikasi klaim. Judul baris 58 ("Campaign & Activity") tidak dibahas Description-nya sama sekali. Spec ini mengikuti arahan orkestrator (campaign dan aktivitas, materi lewat tautan ke REG-01), sehingga pemenuhan field minimum bergantung pada REG-01. Bila owner memutus REG-02 harus memenuhi Description-nya sendiri, struktur lama (materi dan klaim langsung di tabel) harus dibuat ulang | owner |
-| 2 | Penumpukan isi dengan SNX-MKT-REG-01 yang tersisa: spec REG-01 sekarang punya kolom Jenis Konten, Channel, dan Produk atau Layanan Terkait per materi (Tabel 1). Register ini masih punya kolom Jenis Konten/Channel per materi (Tabel 3) dan Produk/Layanan Terkait per campaign atau aktivitas (Tabel 1). Struktur tidak diubah di putaran sweep karena arahan melarangnya. Pilihan: hapus kolom Jenis Konten/Channel dari Tabel 3 (REG-01 sudah memuatnya lewat ID), atau pertahankan sebagai bantu baca | owner |
-| 3 | Penyelarasan dokumen lane lain sudah terjadi sebagian: REG-01 (Dokumen Terkait dan Ruang Lingkup), RPT-01, dan REG-03 sudah memakai REG-02 sebagai register pelaksanaan campaign dan aktivitas. Yang belum diperiksa ulang: kalimat tiap dokumen itu tentang REG-02 terhadap batas di Ruang Lingkup register ini, termasuk kalimat REG-03 "Perencanaan dan pelaksanaan campaign dan aktivitas marketing" (register ini hanya memuat pelaksanaan; rencana ada di RPT-01) | orkestrator |
-| 4 | Irisan dengan SNX-MKT-RPT-01: Aktivitas beserta jadwal mulai, selesai, PIC, dan status pelaksanaan tercatat di kedua dokumen (Tabel Aktivitas dan tabel Pelaksanaan di RPT-01; Tabel 1 dan 2 di sini). Kolom Kode Aktivitas menautkan keduanya, tetapi belum diputus mana yang menjadi induk. Nilai status juga beda (Terlaksana, Tertunda, Dibatalkan di RPT-01; Direncanakan, Berjalan, Selesai, Dibatalkan di sini), dan cakupan kata "Aktivitas" beda (asumsi 3) | owner |
-| 5 | Rujukan butir SNX-MKT-REG-01 (4.1, 4.5, 4.8, 4.13) dan nama kolom (Tanggal Persetujuan) memakai spec Draft. Periksa ulang sesudah REG-01 final | owner |
-| 6 | Istilah beda antardokumen: REG-01 memakai "ID persetujuan" (kolom ID, dan kolom ID Materi di Tabel 4), register ini memakai "ID Persetujuan Materi". Belum diseragamkan karena di luar butir sweep. Bila owner memutus satu istilah, definisi, judul kolom Tabel 3, dan Cara Mengisi 6.13 diganti | owner |
+| 1 | Description baris 58 mirip baris 57 tetapi tidak identik (terukur); cakupan diputus owner. Catatan pengukuran: teks di config/checklist.json tidak identik. Baris 58 lebih panjang dan menambah hal yang tidak ada di baris 57: validasi klaim produk/layanan sebelum publikasi; field produk/layanan terkait, jenis konten (baris 57 hanya channel), klaim yang perlu diverifikasi, dan sumber/bukti pendukung; serta bukti verifikasi klaim. Judul baris 58 ("Campaign & Activity") tidak dibahas Description-nya sama sekali. Spec ini mengikuti arahan orkestrator (campaign dan aktivitas, materi lewat tautan ke REG-01), sehingga pemenuhan field minimum bergantung pada REG-01. Bila owner memutus REG-02 harus memenuhi Description-nya sendiri, struktur lama (materi dan klaim langsung di tabel) harus dibuat ulang | owner ; ditutup W9: owner memutus A8 (REG-01 satu-satunya register materi, konten, dan persetujuan klaim; REG-02 hanya pelaksanaan Aktivitas). Temuan baris 58 pindah ke open item 9 |
+| 2 | Penumpukan isi dengan SNX-MKT-REG-01 yang tersisa: spec REG-01 sekarang punya kolom Jenis Konten, Channel, dan Produk atau Layanan Terkait per materi (Tabel 1). Register ini masih punya kolom Jenis Konten/Channel per materi (Tabel 3) dan Produk/Layanan Terkait per campaign atau aktivitas (Tabel 1). Struktur tidak diubah di putaran sweep karena arahan melarangnya. Pilihan: hapus kolom Jenis Konten/Channel dari Tabel 3 (REG-01 sudah memuatnya lewat ID), atau pertahankan sebagai bantu baca | owner ; ditutup W9: kolom Jenis Konten/Channel (Tabel 3) dan Produk/Layanan Terkait dihapus dari REG-02 |
+| 3 | Penyelarasan dokumen lane lain sudah terjadi sebagian: REG-01 (Dokumen Terkait dan Ruang Lingkup), RPT-01, dan REG-03 sudah memakai REG-02 sebagai register pelaksanaan campaign dan aktivitas. Yang belum diperiksa ulang: kalimat tiap dokumen itu tentang REG-02 terhadap batas di Ruang Lingkup register ini, termasuk kalimat REG-03 "Perencanaan dan pelaksanaan campaign dan aktivitas marketing" (register ini hanya memuat pelaksanaan; rencana ada di RPT-01) | orkestrator ; ditutup W9: kalimat tentang REG-02 di REG-01, REG-03, dan RPT-01 diselaraskan lewat A8 |
+| 4 | Irisan dengan SNX-MKT-RPT-01: Aktivitas beserta jadwal mulai, selesai, PIC, dan status pelaksanaan tercatat di kedua dokumen (Tabel Aktivitas dan tabel Pelaksanaan di RPT-01; Tabel 1 dan 2 di sini). Kolom Kode Aktivitas menautkan keduanya, tetapi belum diputus mana yang menjadi induk. Nilai status juga beda (Terlaksana, Tertunda, Dibatalkan di RPT-01; Direncanakan, Berjalan, Selesai, Dibatalkan di sini), dan cakupan kata "Aktivitas" beda (asumsi 3) | owner ; ditutup W9: irisan RPT-01 diputus A8 (RPT-01 memuat rencana dan tinjauan, REG-02 pelaksanaan; Aktivitas satu arti; Dibatalkan dihitung terpisah dari belum Selesai); kolom Kode Aktivitas dihapus |
+| 5 | Rujukan butir SNX-MKT-REG-01 (4.1, 4.5, 4.8, 4.13) dan nama kolom (Tanggal Persetujuan) memakai spec Draft. Periksa ulang sesudah REG-01 final | owner ; tetap terbuka; W9 menambah rujukan REG-01 butir 4.10 sampai 4.13 (butir 4.6 baru) |
+| 6 | Istilah beda antardokumen: REG-01 memakai "ID persetujuan" (kolom ID, dan kolom ID Materi di Tabel 4), register ini memakai "ID Persetujuan Materi". Belum diseragamkan karena di luar butir sweep. Bila owner memutus satu istilah, definisi, judul kolom Tabel 3, dan Cara Mengisi 6.13 diganti | owner ; tetap terbuka, diubah W9: "ID Persetujuan Materi" kini judul kolom Tabel 1 dan Cara Mengisi 6.7 (Tabel 3 dan 6.13 sudah dihapus) |
 | 7 | Retensi rekaman dan jalur folder Commercial di Google Drive (USULAN 13 dan 14) belum ada keputusan tertulis | Legal, owner |
-| 8 | Kolom Kode Aktivitas mengandaikan tiap aktivitas di SNX-MKT-RPT-01 punya Kode unik. Spec RPT-01 punya kolom Kode, tetapi aturan penomorannya belum diperiksa | owner |
+| 8 | Kolom Kode Aktivitas mengandaikan tiap aktivitas di SNX-MKT-RPT-01 punya Kode unik. Spec RPT-01 punya kolom Kode, tetapi aturan penomorannya belum diperiksa | owner ; ditutup W9: kolom Kode Aktivitas dihapus; RPT-01 menunjuk REG-02 lewat kolom Rujukan Catatan (nomor baris Tabel 1) |
 
 ## Penanganan cacat context/audit
 
@@ -199,3 +199,46 @@ Uji sesudah sweep (semua dijalankan pada spec versi sweep):
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx`: "All validations PASSED!" (386 paragraf).
 - `python3 -I reports/orch/blankscan.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx`: `ok 11 MKT-REG-02.docx []` (nol halaman kosong).
 - Skrip kecil: 7 kode SNX di badan, nol kurang, nol berlebih di Dokumen Terkait; nol em-dash dan en-dash.
+
+## ISO-W9
+
+Putaran ISO-W9 (LEAD G-3 A8, B2; owner GO). Batas tulis: specs/MKT-REG-02.json dan notes/MKT-REG-02.md. Meta dan blok approval tidak berubah (sudah sama dengan defaults v22 MKT). Rujukan silang yang diubah ada di baris tabel di bawah; nomor butir REG-01 yang dirujuk (4.1, 4.5, 4.8, 4.10 sampai 4.13) ada dan cocok isinya di spec REG-01.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Tujuan kalimat 1 | pelaksanaan campaign dan aktivitas, satu baris per campaign atau aktivitas, beserta materi eksternal | pelaksanaan Aktivitas, satu baris per Aktivitas: nama, tujuan, Channel, jadwal, PIC, Budget, status, ID Persetujuan Materi, hasil singkat |
+| Tujuan kalimat 2 | persetujuan dan verifikasi klaim | REG-01 disebut satu-satunya register materi, konten, dan persetujuan klaim; persetujuan dan validasi klaim |
+| Ruang Lingkup paragraf 1 | campaign dan aktivitas beserta materi eksternal yang dipakainya | Aktivitas; untuk materi eksternal register ini hanya memuat ID Persetujuan Materi |
+| Ruang Lingkup paragraf 2 | "Batas dokumen Marketing (USULAN, pemutus owner)": REG-01 memuat persetujuan; register ini memuat tautan materi | label USULAN dihapus (batas sudah diputus); RPT-01 diisi dari REG-02 dan REG-03; REG-01 satu-satunya register materi, konten, persetujuan klaim; REG-02 hanya pelaksanaan Aktivitas dengan ID Persetujuan Materi |
+| Pengecualian baris 2 | "hanya memuat tautan ke ID persetujuan di sana (USULAN)" | "satu-satunya register materi, konten, dan persetujuan klaim ... hanya memuat ID Persetujuan Materi dari sana" |
+| Pengecualian baris 4 dan 5 | label (USULAN) pada RPT-01 dan REG-03; "nama campaign" | label dihapus; REG-03 merujuk nama Aktivitas lewat kolom Campaign Asal |
+| Definisi Aktivitas | kegiatan di luar campaign saja | campaign, atau kegiatan di luar campaign; satu Aktivitas = satu baris Tabel 1 (kata sama dengan RPT-01) |
+| Definisi Budget | tidak ada | baris baru, sama dengan RPT-01 |
+| Definisi Channel dan PIC | materi tampil; "campaign atau aktivitas" | Channel sebuah Aktivitas (sama dengan RPT-01); PIC satu Aktivitas |
+| 3.1 judul dan intro | Status Campaign atau Aktivitas | Status Aktivitas; Direncanakan atau Berjalan = belum Selesai; Dibatalkan dihitung terpisah dari belum Selesai |
+| 3.1 nilai status (4 baris) | "Campaign atau aktivitas ..." | "Aktivitas ..." |
+| 4.1 | Tabel 1, 2, dan 3 | Tabel 1 dan 2 |
+| 4.2 sampai 4.3 | campaign atau aktivitas | Aktivitas |
+| 4.4 | mencatat materi di Tabel 3 | menulis ID Persetujuan Materi di Tabel 1; register tidak memuat nama, jenis, versi, klaim, atau persetujuan materi |
+| 4.6 | Approver tidak menyetujui versi dengan klaim tanpa bukti ... klaim sudah diverifikasi (USULAN) | Brand & Marketing menelusuri persetujuan dan validasi klaim di REG-01 lewat ID; register tidak mencatat klaim (REG-01 butir 4.10 sampai 4.13) |
+| 4.7 | menulis tanggal pengecekan di Tabel 3 | tanggal pengecekan dihapus |
+| 4.9 | baris baru di Tabel 3 | ID versi baru ditambah di Tabel 1; ID lama tidak dihapus |
+| Peran Brand & Marketing | PIC campaign atau aktivitas; mencatat materi di Tabel 3 | PIC Aktivitas; menulis ID Persetujuan Materi di Tabel 1 |
+| Cara Mengisi | 6.1 sampai 6.15 (Jenis, Produk/Layanan, Kode Aktivitas, 6.10 sampai 6.14 untuk Tabel 3) | 6.1 sampai 6.12: tambah Tujuan (6.3), Channel (6.4), Budget (6.6), ID Persetujuan Materi (6.7), Hasil Singkat (6.11); hapus Jenis, Produk/Layanan, Kode Aktivitas, kolom materi |
+| Tabel 1 | No, Nama Campaign atau Aktivitas, Jenis, Produk/Layanan Terkait, PIC | No, Nama Aktivitas, Tujuan, Channel, PIC, Budget, ID Persetujuan Materi (SNX-MKT-REG-01) |
+| Tabel 2 | No, Tanggal Mulai, Tanggal Selesai, Status, Kode Aktivitas | No, Tanggal Mulai, Tanggal Selesai, Status, Hasil Singkat |
+| Tabel 3 | Materi yang Dipakai (5 kolom) | dihapus |
+| Isi Register intro | ketiga tabel; Tabel 1 sampai Tabel 3 | kedua tabel; Tabel 1 dan Tabel 2 |
+| Rekaman dan Acuan ISO | Tabel 1 sampai Tabel 3; 8.2.1 dan 8.2.2 merujuk Tabel 3 | Tabel 1 dan Tabel 2; merujuk Tabel 1 |
+| Dokumen Terkait REG-01, REG-03, RPT-01 | tautan materi; Kode Aktivitas; label USULAN | ID Persetujuan Materi; RPT-01 diisi lewat Rujukan Catatan di tabel B2; label USULAN pada batas dihapus |
+
+Open item yang ditutup atau diubah W9: lihat kolom Pemutus pada tabel Open items (status ditambah di baris lama, tidak ada baris dihapus). Open item baru:
+
+| # | Open item | Pemutus yang disarankan |
+|---|---|---|
+| 9 | Description checklist baris 58 berisi pengendalian materi baris 57 yang diperluas dengan validasi klaim, bukan pelaksanaan campaign sesuai judulnya (Marketing Campaign & Activity Register); perlu dibetulkan Brand & Marketing. Pengukuran: teks baris 58 tidak identik dengan baris 57. | Brand & Marketing |
+| 10 | Kolom Jenis dihapus (tidak ada di daftar A8), sehingga campaign, event, dan webinar tidak dibedakan di Tabel 1. REG-03 kolom Campaign Asal kini menerima nama Aktivitas apa pun di Tabel 1. Bila perlu pembeda, owner menambah kolom | owner |
+| 11 | Kolom "anggaran bila ada" dari A8 ditulis Budget (istilah RPT-01) dengan nilai Tidak Ada Budget untuk Aktivitas tanpa dana (USULAN 6.6). Kolom Tujuan, Hasil Singkat, dan pemisah koma pada ID Persetujuan Materi juga USULAN | owner |
+| 12 | A3 (garis lapor JA-03 dan JA-04): dokumen ini tidak menyebut atasan atau garis lapor keduanya, jadi tidak ada yang diselaraskan. Kalimat "atasan langsung Brand & Marketing" menyangkut JA-06 dan tidak berubah | - |
+
+Uji (spec W9): `python3 -I tools/render_sop.py ...`, `python3 -I tools/lint_doc.py ... generic`: pass true, fails kosong, 17 butir USULAN; `validate.py`: All validations PASSED; `blankscan.py`: ok 11 halaman []; `python3 -I reports/orch/w9diff.py MKT-REG-02`: diff hanya baris di tabel di atas.
