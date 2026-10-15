@@ -1,0 +1,9 @@
+{
+ "file": "out/05_Commercial/SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "17 butir (USULAN) menunggu ACC"
+ ]
+}

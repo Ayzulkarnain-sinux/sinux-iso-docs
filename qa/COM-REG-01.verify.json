@@ -1,0 +1,54 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 5 Peran, baris Business Development; Dokumen Terkait baris SNX-HR-JA-01",
+   "masalah": "Isi JA-07 diparafrasekan dengan arti yang bergeser. Dokumen menulis 'uraian JA-07 ... memuat tugas menjaga dokumentasi keluhan customer'. Teks sumber JA-07 butir 6 adalah 'Menjaga dokumentasi komunikasi, keberatan pelanggan dan status negosiasi'. Dalam jabatan pra-penjualan yang berakhir di handover, 'keberatan pelanggan' lebih dekat ke keberatan dalam negosiasi (objection) daripada keluhan. Auditor yang membuka SNX-HR-JA-01 tidak akan menemukan kata 'keluhan'. Ini tidak dijadikan pemblokir karena dasar utamanya (SNX-COM-SOP-01 butir 4.17) akurat, pembagian peran berlabel USULAN, dan tafsir ini dicatat sebagai A8 di notes. Perbaikan yang disarankan: kutip frasa 'keberatan pelanggan' apa adanya atau hapus JA-07 sebagai dasar.",
+   "bukti": "context/audit/iso-sinux-supdocs-hr-2026-10-14.md baris 514; specs/HR-JA-01.json JA-07 butir 6; Tujuan Jabatan JA-07: 'Menghasilkan peluang bisnis baru dan menjaga proses penjualan sampai handover kontrak.'"
+  },
+  {
+   "lokasi": "Bagian 5 Peran (baris COO) dibandingkan dengan Isi Register dan Kesimpulan",
+   "masalah": "Dua tugas COO tidak muncul di tabel Peran: menetapkan struktur kolom Tabel 1 sampai 4 ('sampai COO menetapkannya') dan meninjau register setiap tahun. Tabel Rekaman juga menulis 'Pemilik: PIC' untuk tiket, sedangkan baris PIC di tabel Peran hanya memuat tindakan.",
+   "bukti": "Isi Register: 'Struktur kolom Tabel 1 sampai Tabel 4 berstatus (USULAN) sampai COO menetapkannya.' Kesimpulan: 'COO meninjau register ini setiap tahun (USULAN).' Peran COO: 'Pemilik register ini. Memutuskan keluhan yang VP Commercial eskalasi kepadanya (butir 4.11).'"
+  },
+  {
+   "lokasi": "Tabel 4 Eskalasi; butir 4.9 sampai 4.11; langkah 6.16",
+   "masalah": "Satu keluhan bisa dieskalasi dua tingkat (Business Development ke VP Commercial, lalu VP Commercial ke COO), tetapi Tabel 4 hanya menyediakan satu baris per nomor dengan satu kolom 'Dieskalasi ke' dan satu 'Tanggal Eskalasi'. Langkah 6.16 tidak menjelaskan cara mencatat eskalasi kedua.",
+   "bukti": "Header Tabel 4: 'No | Alasan Eskalasi | Dieskalasi ke | Tanggal Eskalasi | Hasil Eskalasi'; 4.1: 'Tabel 1 sampai Tabel 4 memakai nomor baris yang sama.'"
+  },
+  {
+   "lokasi": "Ruang Lingkup, tabel butir yang dikecualikan, baris 1",
+   "masalah": "Kalimat ini pasif tanpa pelaku, padahal pelakunya diketahui (Business Development) (§6a.6).",
+   "bukti": "'Keluhan customer atas insiden itu tetap dicatat di register ini.'"
+  },
+  {
+   "lokasi": "Acuan ISO; Definisi (Direktur (COO))",
+   "masalah": "Beberapa benda diberi kata kerja manusia. Pola ini ringan dan tidak berulang di badan prosedur.",
+   "bukti": "'Kolom PIC, Tindakan, dan Status mencatat tanggapan SINUX atas keluhan dan hasilnya.'; 'Register ini memakai COO sesudah penyebutan pertama.'"
+  },
+  {
+   "lokasi": "Seluruh dokumen (Status, butir 4.5, 4.11)",
+   "masalah": "Istilah 'penanganan' ('Dalam Penanganan', 'hasil penanganan', 'penanganannya') dipakai berdampingan dengan istilah 'Tindakan' yang didefinisikan, tetapi 'penanganan' sendiri tidak didefinisikan. Judul Tabel 3 memakai kapital 'Customer', sedangkan istilah di Definisi adalah 'Konfirmasi kepada customer'. Keduanya ringan.",
+   "bukti": "Definisi Status 'Dalam Penanganan'; 4.5 'tindakan atau hasil penanganan'; 'Tabel 3. Konfirmasi kepada Customer'"
+  },
+  {
+   "lokasi": "Identity (Classification INTERNAL) dibandingkan dengan butir 4.12",
+   "masalah": "Header berklasifikasi INTERNAL sesuai worklist, sedangkan register yang sudah berisi data customer berklasifikasi RESTRICTED (Internal) (USULAN). Ini tidak melanggar aturan karena worklist menetapkan INTERNAL dan beda ini sudah tercatat sebagai OI-5. Saat register mulai diisi, label di footer tidak berubah otomatis.",
+   "bukti": "Identity: 'Classification | INTERNAL'; 4.12; config/defaults.json classification.rule"
+  },
+  {
+   "lokasi": "Butir (g) context/audit",
+   "masalah": "Dokumen ini tidak punya fileId (worklist sources [], checklist fileId null), jadi tidak ada catatan cacat per fileId. Notes bagian 6 menjelaskan hal ini dan menangani cacat dari sumber yang bersinggungan (Sales SOP, SNX-OPS-FRM-10, sintesis). Tidak ada tindakan yang diperlukan.",
+   "bukti": "config/worklist.json COM-REG-01 'sources': []; config/checklist.json baris 668 sampai 671 'fileId': null; grep 'Customer Feedback|Complaint' context/audit hanya menemukan sintesis baris 764 dan 770"
+  }
+ ],
+ "ringkasan_cek": {
+  "a_fakta": "Fakta yang dicocokkan dengan sumber: penanda tangan sesuai defaults COM; Direktur Utama di badan; Direktur (COO) disebut dulu, sesudahnya COO; batas respons SNX-COM-SOP-01 bagian 8 (SLA); eskalasi komplain kritis ke VP Commercial di bagian 9 (exceptions); butir 4.17 customer satisfaction; arti Customer di bagian 3; SNX-ISMS-PRO-01 butir 4.3; JA-02, JA-03, JA-07 di HR-ORG-01; judul SNX-OPS-SOP-04 dan SNX-OPS-FRM-10; Zammad untuk Ops dan GLPI untuk generalist sesuai defaults; klausul ISO 8.2.1, 9.1.2, 10.2, 7.5.3, A.5.12 berjudul benar dan berlabel USULAN",
+  "b_karangan": "Tidak ada nama pihak luar, nomor, tanggal, atau angka tanpa sumber. Sel data kosong dan tidak ada baris contoh",
+  "c_kriteria": "Keenam unsur Description terpenuhi lewat kolom: Tabel 1 feedback/keluhan; Tabel 2 PIC, Tindakan, Status, Tanggal Selesai; Tabel 3 konfirmasi; Tabel 4 eskalasi",
+  "d_runbook": "Effective Date kosong, tanda tangan kosong, status Draft. Tidak ada rujukan internal AI, em-dash, en-dash, atau residu konsultan. Lint pass",
+  "e_peran": "Nama peran sama di bagian 5, 6, dan 8 (Penerima, Business Development, VP Commercial, PIC, COO). Celah kecil dicatat di atas",
+  "f_bahasa": "Kalimat aktif dengan pelaku peran. Tidak ada pelanggaran §6a yang jelas"
+ }
+}

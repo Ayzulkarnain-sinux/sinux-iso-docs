@@ -1,0 +1,47 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Bagian 5 Peran (baris VP Commercial dan COO) vs bagian 8 Rekaman (baris 'Register ini: Tabel 1 sampai Tabel 4')",
+      "masalah": "Pemilik register bertentangan antarbagian (cek e, RUNBOOK 6a.7). Bagian 5 menyebut COO pemilik register dan VP Commercial hanya pengelola; bagian 8 menyebut VP Commercial pemilik register yang sama. Acuan ISO 7.5.3 di dokumen ini justru bersandar pada 'Register punya lokasi simpan, pemilik, dan klasifikasi', jadi auditor tidak bisa menentukan satu pemilik. Identity menulis Process Owner 'Direktur' (= COO), sejalan dengan bagian 5, bukan bagian 8. Perbaikan: samakan, misalnya bagian 8 'Pemilik: COO. Pengelola: VP Commercial', atau bagian 5 membedakan tegas 'pemilik dokumen' dan 'pemilik rekaman'.",
+      "bukti": "Bagian 5: 'VP Commercial | Pengelola register. Menunjuk PIC, ...' dan 'COO | Pemilik register ini. Memutuskan keluhan yang VP Commercial eskalasi kepadanya (butir 4.11).' Bagian 8: 'Register ini: Tabel 1 sampai Tabel 4 | Folder Google Drive departemen Commercial. Pemilik: VP Commercial. Pencatat: Business Development.' Identity: 'Process Owner | Direktur'."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "Butir 4.6",
+      "masalah": "Kalimat pertama tanpa pelaku (benda diberi kata kerja: 'Balasan ... mengikuti batas respons'); pelakunya diketahui (Business Development, SNX-COM-SOP-01 bagian 8). Kalimat kedua 'Berlakunya batas itu untuk feedback dan keluhan berstatus (USULAN).' bisa terbaca sebagai feedback dan keluhan yang ber-Status (USULAN), rancu dengan kolom Status. Usul: 'Business Development membalas feedback dan keluhan lewat email atau WhatsApp dalam batas respons SNX-COM-SOP-01 bagian 8 (USULAN).'",
+      "bukti": "'Balasan kepada customer yang menulis lewat email atau WhatsApp mengikuti batas respons di SNX-COM-SOP-01 bagian 8. Berlakunya batas itu untuk feedback dan keluhan berstatus (USULAN).'"
+    },
+    {
+      "lokasi": "Ruang Lingkup tabel pengecualian; bagian 7 paragraf pembuka",
+      "masalah": "Pasif tanpa pelaku padahal pelaku diketahui (Business Development). Tidak berulang berat, jadi nonblocking.",
+      "bukti": "'Tindakan dicatat secara ringkas.'; 'Yang dicatat adalah feedback dan keluhan per kasus, bukan hasil survei.'; 'Sel data kosong dan diisi menurut bagian Cara Mengisi.'"
+    },
+    {
+      "lokasi": "Bagian 5 baris Business Development; Dokumen Terkait SNX-HR-JA-01",
+      "masalah": "Sinonim untuk istilah terdefinisi: 'keberatan customer' di samping istilah Definisi 'Keluhan'; 'customer satisfaction' di samping 'kepuasan customer' (Acuan ISO 9.1.2, Ruang Lingkup). Asalnya parafrase sumber (JA-07, SNX-COM-SOP-01 butir 4.17), tetap sebaiknya memakai istilah Definisi atau menandai sebagai sebutan sumber.",
+      "bukti": "'uraian JA-07 di SNX-HR-JA-01 memuat tugas menjaga dokumentasi keberatan customer'; 'SNX-COM-SOP-01 butir 4.17 menempatkan customer satisfaction pada Business Development'"
+    },
+    {
+      "lokasi": "Langkah 6.7",
+      "masalah": "Instruksi rancu: 'pokok isi' (ringkasan) sekaligus 'dengan kata-kata customer' (kutipan). Pengisi tidak tahu harus meringkas atau mengutip.",
+      "bukti": "'Business Development menulis pokok isi feedback atau keluhan di kolom Isi Feedback atau Keluhan, dengan kata-kata customer.'"
+    },
+    {
+      "lokasi": "Butir 4.9",
+      "masalah": "'segera' tanpa batas waktu. Kata ini bersumber (Sales SOP: 'Segera eskalasikan kepada VP Commercial'; specs/COM-SOP-01.json exceptions[5]) dan ketiadaan tenggat sudah tercatat di notes OI-2, jadi bukan karangan; dicatat sebagai info.",
+      "bukti": "'Business Development segera mengeskalasi keluhan kritis kepada VP Commercial (SNX-COM-SOP-01 bagian 9)'"
+    },
+    {
+      "lokasi": "Halaman depan",
+      "masalah": "Judul blok 'Dokument Approval' salah ketik; berasal dari template dan dipertahankan menurut template_policy D4. Info saja.",
+      "bukti": "config/defaults.json template_policy: 'Pertahankan template Aziz apa adanya, termasuk salah ketik di template'"
+    },
+    {
+      "lokasi": "Cakupan verifikasi",
+      "masalah": "Info. Sumber Drive tidak ada (T2, worklist sources []), jadi alat Drive tidak dimuat dan tidak ada fileId untuk grep context/audit; notes bagian 6 menangani cacat Sales SOP yang bersinggungan. Fakta rujukan dicek ke repo: SNX-COM-SOP-01 bagian 3 definisi Customer, butir 4.17, bagian 8 batas respons, bagian 9 eskalasi komplain kritis ke VP Commercial; SNX-ISMS-PRO-01 butir 4.3; JA-07 'keberatan pelanggan' (context/audit hr baris 514); judul SNX-OPS-SOP-04, SNX-OPS-FRM-10, SNX-HR-ORG-01, SNX-HR-JA-01; JA-02 Direktur = COO. Semua cocok. PDF Sales SOP asli tidak dibuka (dibaca dari salinan context/audit). Approval, sebutan Direktur Utama, Direktur (COO) lalu COO sesuai data_conflicts. Kriteria Description terpenuhi (Tabel 1 feedback/keluhan, Tabel 2 PIC, tindakan, status, Tabel 3 konfirmasi, Tabel 4 eskalasi). Sel data kosong, tanpa baris contoh, tanpa nama pihak luar atau tanggal; nol rujukan internal AI, nol em-dash/en-dash; lint_doc generic pass.",
+      "bukti": "python3 -I tools/lint_doc.py <docx> generic -> pass true, fails []; scan teks: en-dash 0, em-dash 0, tanda kutip 0, nama orang hanya di blok Approval"
+    }
+  ]
+}

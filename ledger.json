@@ -1888,8 +1888,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 36,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:11:44Z",
+   "open_items": [
+    "Sweep (b): Ketentuan butir 4 memuat tiga tindakan dengan urutan tidak jelas (verify nonblocking)"
+   ],
+   "updated_at": "2026-10-15T00:11:47Z",
    "pen_agent": "a41798f7f2a336b69",
    "ooxml": "PASSED"
   },
@@ -1950,15 +1952,16 @@
    "mode": "generic",
    "state": "IN_PROGRESS",
    "number": "SNX-COM-FRM-02",
-   "out_path": null,
+   "out_path": "out/05_Commercial/SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
-   "verify_verdict": null,
-   "loops": 0,
-   "usulan_count": 0,
+   "lint_pass": true,
+   "verify_verdict": "FAIL",
+   "loops": 1,
+   "usulan_count": 12,
    "open_items": [],
-   "updated_at": "2026-10-14T23:57:48Z",
-   "pen_agent": "a2f17674d8f1c06ef"
+   "updated_at": "2026-10-15T00:20:13Z",
+   "pen_agent": "a2f17674d8f1c06ef",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 62,
@@ -1968,18 +1971,19 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-COM-REG-01",
    "out_path": "out/05_Commercial/SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
-   "verify_verdict": null,
-   "loops": 0,
+   "verify_verdict": "PASS",
+   "loops": 1,
    "usulan_count": 19,
    "open_items": [],
-   "updated_at": "2026-10-15T00:10:56Z",
+   "updated_at": "2026-10-15T00:21:40Z",
    "pen_agent": "a9ea62060bd8ee27b",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "fix_queued": "0"
   },
   {
    "wl_index": 63,
@@ -1989,17 +1993,19 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-MKT-RPT-01",
-   "out_path": null,
+   "out_path": "out/06_Marketing/SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 27,
    "open_items": [],
-   "updated_at": "2026-10-15T00:05:52Z",
-   "pen_agent": "afb20c8cd055f9128"
+   "updated_at": "2026-10-15T00:20:07Z",
+   "pen_agent": "afb20c8cd055f9128",
+   "ooxml": "PASSED",
+   "hold_verify": "MKT-REG-02"
   },
   {
    "wl_index": 64,
@@ -2278,7 +2284,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-06",
    "out_path": null,
    "sources": [
@@ -2293,9 +2299,10 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null,
+   "updated_at": "2026-10-15T00:18:07Z",
    "classification": "INTERNAL",
-   "promoted_from": "HOLD-T3"
+   "promoted_from": "HOLD-T3",
+   "pen_agent": "ac09fece2de8f355c"
   },
   {
    "wl_index": 79,
@@ -2320,7 +2327,7 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null,
+   "updated_at": "2026-10-15T00:20:13Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3"
   },

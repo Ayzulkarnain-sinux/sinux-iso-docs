@@ -1,0 +1,867 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "COM-REG-01",
+  "doc_type_cover": "REGISTER",
+  "doc_type_label": "Register",
+  "number": "SNX-COM-REG-01",
+  "department": "Commercial",
+  "title": "Customer Feedback & Complaint Register",
+  "process_owner": "Direktur",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Laras Rasmawati / VP Commercial",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Register ini mencatat feedback dan keluhan customer SINUX. Tiap baris memuat isi feedback atau keluhan, PIC, tindakan, status penyelesaian, konfirmasi kepada customer, dan eskalasi bila ada."
+    },
+    {
+     "p": "Yang dijaga: tiap feedback dan keluhan dapat ditelusuri dari saat diterima sampai tindakan, konfirmasi kepada customer, dan status penyelesaiannya."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Register ini mencakup feedback dan keluhan customer yang masuk lewat email, WhatsApp, atau saluran lain, sejak Penerima menerimanya sampai statusnya Selesai."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari register ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       6.5,
+       9.0
+      ],
+      "rows": [
+       [
+        "Penanganan teknis insiden layanan dan komunikasi insiden P1 dan P2 kepada customer",
+        "Diatur di SNX-OPS-SOP-04. Keluhan customer atas insiden itu tetap dicatat di register ini."
+       ],
+       [
+        "Analisis akar masalah dan tindakan korektif rinci",
+        "Business Development mencatat tindakan secara ringkas. Analisis akar masalah atas keluhan yang berasal dari insiden layanan memakai SNX-OPS-FRM-10 (USULAN)."
+       ],
+       [
+        "Hasil survei kepuasan customer",
+        "Business Development mencatat feedback dan keluhan per kasus, bukan hasil survei."
+       ],
+       [
+        "Feedback dan keluhan dari karyawan, vendor, dan partner SINUX",
+        "Register hanya untuk customer."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Customer",
+        "Perusahaan atau institusi di luar SINUX yang menjadi sasaran penjualan atau sudah membeli solusi SINUX (SNX-COM-SOP-01 bagian 3)."
+       ],
+       [
+        "Direktur (COO)",
+        "Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO. Register ini memakai COO sesudah penyebutan pertama."
+       ],
+       [
+        "Eskalasi",
+        "Penerusan sebuah keluhan kepada jabatan yang lebih berwenang untuk memutuskan penanganannya."
+       ],
+       [
+        "Feedback",
+        "Pendapat, saran, atau penilaian customer tentang produk, layanan, atau pelayanan SINUX yang tidak menyatakan ketidakpuasan."
+       ],
+       [
+        "GLPI",
+        "Sistem tiket SINUX untuk kebutuhan generalist."
+       ],
+       [
+        "Keluhan",
+        "Pernyataan ketidakpuasan customer atas produk, layanan, atau pelayanan SINUX yang menunggu tanggapan atau penyelesaian."
+       ],
+       [
+        "Keluhan kritis",
+        "Keluhan yang masuk matriks eskalasi SNX-COM-SOP-01 bagian 9 dengan sebutan komplain kritis. Penilaiannya diatur di butir 4.10."
+       ],
+       [
+        "Konfirmasi kepada customer",
+        "Pemberitahuan SINUX kepada customer tentang tindakan yang diambil atau hasil penanganan atas feedback atau keluhannya."
+       ],
+       [
+        "Penerima",
+        "Karyawan SINUX yang pertama menerima feedback atau keluhan dari customer."
+       ],
+       [
+        "PIC",
+        "Person in charge: jabatan yang melakukan tindakan atas satu feedback atau keluhan. Ditulis dengan nama jabatan, bukan nama orang."
+       ],
+       [
+        "Tindakan",
+        "Langkah yang PIC lakukan untuk menanggapi atau menyelesaikan feedback atau keluhan."
+       ],
+       [
+        "Zammad",
+        "Sistem tiket Divisi Operation."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Status Penyelesaian"
+    },
+    {
+     "p": "Kolom Status memakai tiga nilai berikut."
+    },
+    {
+     "table": {
+      "header": [
+       "Status",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "Baru",
+        "Feedback atau keluhan sudah tercatat di Tabel 1 dan PIC belum melakukan tindakan."
+       ],
+       [
+        "Dalam Penanganan",
+        "PIC sudah mulai melakukan tindakan dan penanganan belum selesai."
+       ],
+       [
+        "Selesai",
+        "PIC sudah melakukan tindakan, atau VP Commercial memutuskan tidak ada tindakan yang diperlukan. Konfirmasi kepada customer sudah tercatat di Tabel 3 dan tidak ada tindakan lanjutan."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Satu baris register mencatat satu feedback atau satu keluhan dari satu customer. Tabel 1 sampai Tabel 4 memakai nomor baris yang sama."
+    },
+    {
+     "p": "4.2 Penerima meneruskan feedback atau keluhan customer kepada Business Development. Business Development mencatatnya di Tabel 1 (USULAN)."
+    },
+    {
+     "p": "4.3 VP Commercial menunjuk PIC untuk tiap feedback dan keluhan. Business Development menulis jabatan PIC di Tabel 2 (USULAN)."
+    },
+    {
+     "p": "4.4 PIC melakukan tindakan atas feedback atau keluhan yang ditunjuk kepadanya. Business Development menulis tindakan itu di Tabel 2 (USULAN)."
+    },
+    {
+     "p": "4.5 Business Development menyampaikan konfirmasi kepada customer tentang tindakan atau hasil penanganan, lalu mencatatnya di Tabel 3 (USULAN)."
+    },
+    {
+     "p": "4.6 Business Development membalas feedback dan keluhan yang customer kirim lewat email atau WhatsApp dalam batas respons SNX-COM-SOP-01 bagian 8 (USULAN)."
+    },
+    {
+     "p": "4.7 VP Commercial menetapkan status Selesai. Status Selesai berlaku hanya bila arti Selesai pada bagian Definisi terpenuhi (USULAN)."
+    },
+    {
+     "p": "4.8 Bila feedback atau keluhan punya tiket, Business Development menulis nomor tiketnya di Tabel 2. Tiket yang ditangani Operation ada di Zammad, tiket lain di GLPI (USULAN; batas pemakaian GLPI untuk generalist belum dirinci)."
+    },
+    {
+     "p": "4.9 Business Development segera mengeskalasi keluhan kritis kepada VP Commercial (SNX-COM-SOP-01 bagian 9) dan mencatatnya di Tabel 4."
+    },
+    {
+     "p": "4.10 Kriteria keluhan kritis belum ditetapkan. Sampai kriteria itu ada, Business Development mengeskalasi setiap keluhan yang ia nilai kritis, dan VP Commercial menetapkan apakah keluhan itu kritis (USULAN)."
+    },
+    {
+     "p": "4.11 VP Commercial mengeskalasi keluhan kepada COO bila penanganannya memerlukan keputusan di luar wewenang VP Commercial menurut delegasi tertulis yang berlaku. Business Development mencatat eskalasi itu di Tabel 4 (USULAN)."
+    },
+    {
+     "p": "4.12 Register kosong berklasifikasi INTERNAL. Register yang sudah berisi data customer berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3 (USULAN)."
+    },
+    {
+     "p": "4.13 Business Development menyimpan register di lokasi yang tertulis pada tabel Rekaman (USULAN)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN). Nama jabatan mengikuti SNX-HR-ORG-01. Penerima dan PIC adalah peran per kasus, bukan jabatan tersendiri."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada register ini"
+      ],
+      "widths_cm": [
+       3.6,
+       11.9
+      ],
+      "rows": [
+       [
+        "Penerima",
+        "Meneruskan feedback atau keluhan customer kepada Business Development (butir 4.2)."
+       ],
+       [
+        "Business Development",
+        "Mencatat feedback dan keluhan di Tabel 1. Menulis PIC, tindakan, nomor tiket, dan status di Tabel 2. Menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3. Mengeskalasi keluhan kritis dan mencatat eskalasi di Tabel 4. (butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13). SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development, dan uraian JA-07 di SNX-HR-JA-01 memuat tugas menjaga dokumentasi keluhan customer."
+       ],
+       [
+        "VP Commercial",
+        "Pengelola register. Menunjuk PIC, menetapkan status Selesai, menetapkan apakah suatu keluhan kritis, menerima eskalasi keluhan kritis, dan mengeskalasi keluhan kepada COO (butir 4.3, 4.7, 4.9 sampai 4.11)."
+       ],
+       [
+        "PIC",
+        "Melakukan tindakan atas feedback atau keluhan yang ditunjuk kepadanya (butir 4.4)."
+       ],
+       [
+        "COO",
+        "Pemilik register ini. Memutuskan keluhan yang VP Commercial eskalasi kepadanya (butir 4.11)."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Direktur Utama menyetujui register ini lewat blok Approval pada halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Cara Mengisi",
+   "blocks": [
+    {
+     "p": "6.1 Penerima meneruskan feedback atau keluhan customer kepada Business Development (butir 4.2)."
+    },
+    {
+     "p": "6.2 Business Development menulis satu baris di Tabel 1 untuk setiap feedback atau keluhan yang diterima (butir 4.1)."
+    },
+    {
+     "p": "6.3 Business Development menulis tanggal Penerima menerima feedback atau keluhan di kolom Tanggal Diterima."
+    },
+    {
+     "p": "6.4 Business Development menulis nama perusahaan atau institusi customer di kolom Customer."
+    },
+    {
+     "p": "6.5 Business Development memilih satu Jenis (Feedback atau Keluhan) sesuai arti pada bagian Definisi."
+    },
+    {
+     "p": "6.6 Business Development menulis email, WhatsApp, atau nama saluran lain di kolom Saluran Masuk."
+    },
+    {
+     "p": "6.7 Business Development menulis ringkasan isi feedback atau keluhan di kolom Isi Feedback atau Keluhan."
+    },
+    {
+     "p": "6.8 Business Development menulis jabatan PIC di Tabel 2 setelah VP Commercial menunjuknya (butir 4.3). Kolom PIC memuat jabatan, bukan nama orang."
+    },
+    {
+     "p": "6.9 Business Development menulis nomor tiket di kolom Nomor Tiket bila feedback atau keluhan punya tiket (butir 4.8)."
+    },
+    {
+     "p": "6.10 Business Development menulis tiap tindakan PIC beserta tanggalnya di kolom Tindakan (butir 4.4). Bila VP Commercial memutuskan tidak ada tindakan, Business Development menulis keputusan itu dan alasannya."
+    },
+    {
+     "p": "6.11 Business Development menulis Baru, Dalam Penanganan, atau Selesai di kolom Status. Business Development menulis Selesai hanya sesudah VP Commercial menetapkannya (butir 4.7)."
+    },
+    {
+     "p": "6.12 Business Development menulis tanggal VP Commercial menetapkan Selesai di kolom Tanggal Selesai."
+    },
+    {
+     "p": "6.13 Business Development menulis tanggal dan saluran konfirmasi kepada customer di Tabel 3 (butir 4.5)."
+    },
+    {
+     "p": "6.14 Business Development menulis ringkasan isi konfirmasi di kolom Isi Konfirmasi."
+    },
+    {
+     "p": "6.15 Business Development menulis tanggapan customer di kolom Tanggapan Customer saat customer menanggapi."
+    },
+    {
+     "p": "6.16 Business Development menulis alasan eskalasi, tujuan eskalasi, dan tanggalnya di Tabel 4 saat keluhan dieskalasi (butir 4.9 sampai 4.11)."
+    },
+    {
+     "p": "6.17 Business Development menulis keputusan di kolom Hasil Eskalasi sesudah VP Commercial atau COO memutuskan."
+    },
+    {
+     "p": "6.18 Business Development membiarkan kosong sel yang datanya belum ada, termasuk seluruh baris Tabel 4 untuk keluhan yang tidak dieskalasi."
+    }
+   ]
+  },
+  {
+   "h": "Isi Register",
+   "blocks": [
+    {
+     "p": "Baris tersedia untuk 10 feedback atau keluhan. Business Development menambah baris bila perlu. Business Development mengisi sel data yang kosong menurut bagian Cara Mengisi. Kolom No sudah bernomor. Struktur kolom Tabel 1 sampai Tabel 4 berstatus (USULAN) sampai COO menetapkannya."
+    },
+    {
+     "h2": "Tabel 1. Penerimaan"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tanggal Diterima",
+       "Customer",
+       "Jenis",
+       "Saluran Masuk",
+       "Isi Feedback atau Keluhan"
+      ],
+      "widths_cm": [
+       1.0,
+       2.3,
+       3.0,
+       2.0,
+       2.4,
+       4.8
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 2. Penanganan"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "PIC",
+       "Nomor Tiket",
+       "Tindakan",
+       "Status",
+       "Tanggal Selesai"
+      ],
+      "widths_cm": [
+       1.0,
+       2.8,
+       2.4,
+       5.2,
+       2.0,
+       2.1
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 3. Konfirmasi kepada Customer"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tanggal Konfirmasi",
+       "Saluran Konfirmasi",
+       "Isi Konfirmasi",
+       "Tanggapan Customer"
+      ],
+      "widths_cm": [
+       1.0,
+       2.5,
+       2.6,
+       5.2,
+       4.2
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 4. Eskalasi"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Alasan Eskalasi",
+       "Dieskalasi ke",
+       "Tanggal Eskalasi",
+       "Hasil Eskalasi"
+      ],
+      "widths_cm": [
+       1.0,
+       4.5,
+       2.9,
+       2.4,
+       4.7
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "p": "Lokasi, pemilik, dan retensi berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       3.8,
+       7.2,
+       4.5
+      ],
+      "rows": [
+       [
+        "Register ini: Tabel 1 sampai Tabel 4",
+        "Folder Google Drive departemen Commercial. Pemilik: COO. Pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi menurut butir 4.12.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Tiket feedback dan keluhan",
+        "Zammad atau GLPI menurut butir 4.8. Pemilik: PIC.",
+        "Belum ditetapkan"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan register ini"
+      ],
+      "widths_cm": [
+       3.4,
+       5.6,
+       6.5
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "8.2.1 Komunikasi dengan customer",
+        "Register mencatat feedback dan keluhan customer serta konfirmasi SINUX kepada customer."
+       ],
+       [
+        "ISO 9001:2015",
+        "9.1.2 Kepuasan customer",
+        "Feedback dan keluhan dalam register menjadi bahan pemantauan persepsi customer."
+       ],
+       [
+        "ISO 9001:2015",
+        "10.2 Ketidaksesuaian dan tindakan korektif",
+        "Kolom PIC, Tindakan, dan Status mencatat tanggapan SINUX atas keluhan dan hasilnya."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Register punya lokasi simpan, pemilik, dan klasifikasi (butir 4.12 dan 4.13)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.12 Klasifikasi informasi",
+        "Register yang berisi data customer berklasifikasi RESTRICTED (Internal) menurut butir 4.12."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "SNX-COM-SOP-01",
+        "Sales Process. Memuat batas respons kepada customer (bagian 8), matriks eskalasi keluhan kritis kepada VP Commercial (bagian 9), dan tanggung jawab Business Development atas kepuasan customer (butir 4.17)."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan. Uraian JA-07 Business Development memuat tugas menjaga dokumentasi keluhan customer."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber nama jabatan dan matriks peran."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling. Sumber tingkat RESTRICTED (Internal) dan aturan bahwa informasi customer minimal RESTRICTED (butir 4.3)."
+       ],
+       [
+        "SNX-OPS-SOP-04",
+        "Technical Incident Handling & Escalation. Mengatur penanganan teknis insiden dan komunikasi insiden P1 dan P2 kepada customer."
+       ],
+       [
+        "SNX-OPS-FRM-10",
+        "Root Cause Analysis & Corrective Action Report. Form analisis akar masalah untuk keluhan yang berasal dari insiden layanan (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. COO meninjau register ini setiap tahun (USULAN)."
+    }
+   ]
+  }
+ ]
+}
