@@ -1,0 +1,717 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "MKT-REG-02",
+  "doc_type_cover": "REGISTER",
+  "doc_type_label": "Register",
+  "number": "SNX-MKT-REG-02",
+  "department": "Marketing",
+  "title": "Marketing Campaign & Activity Register",
+  "process_owner": "VP Commercial",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Zilly Dwinata / Brand & Marketing",
+   "reviewed": "Laras Rasmawati / VP Commercial",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Register ini mencatat pelaksanaan campaign dan aktivitas pemasaran SINUX, satu baris per campaign atau aktivitas, beserta materi eksternal yang dipakai tiap campaign atau aktivitas itu."
+    },
+    {
+     "p": "Yang dijaga: tiap materi eksternal yang dipakai sebuah campaign atau aktivitas tertaut ke ID Persetujuan Materi di SNX-MKT-REG-01, sehingga materi itu punya persetujuan dan verifikasi klaim yang tercatat sebelum dipublikasikan."
+    },
+    {
+     "p": "Materi final yang telah disetujui, bukti verifikasi klaim, dan catatan persetujuan tersimpan di SNX-MKT-REG-01 dan ditelusuri dari register ini lewat ID itu."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Register ini mencakup campaign dan aktivitas pemasaran SINUX untuk kebutuhan eksternal, yaitu campaign, event, dan webinar (SNX-HR-JA-01, JA-06 uraian 4), beserta materi eksternal yang dipakainya: company profile, website, social media, product brochure, presentation deck, campaign material, dan event collateral. Pencatatan berjalan sejak campaign atau aktivitas dicatat sampai selesai atau dibatalkan."
+    },
+    {
+     "p": "Batas dengan SNX-MKT-REG-01 (USULAN): SNX-MKT-REG-01 memuat tiap versi materi eksternal, yaitu nama materi, channel, versi, PIC, Reviewer, Approver, tanggal persetujuan, status publikasi, lokasi file final, serta klaim dan bukti pendukungnya. Register ini mencatat campaign dan aktivitas yang memakai materi itu, dan untuk materi hanya memuat ID Persetujuan Materi, tanpa isi baris SNX-MKT-REG-01."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari register ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "Materi untuk kebutuhan internal SINUX",
+        "Register hanya untuk materi yang dipakai pihak di luar SINUX."
+       ],
+       [
+        "Persetujuan materi dan verifikasi klaim",
+        "Dicatat di SNX-MKT-REG-01. Register ini hanya menautkannya (USULAN)."
+       ],
+       [
+        "Proposal dan quotation untuk customer tertentu",
+        "Diatur di SNX-COM-SOP-02."
+       ],
+       [
+        "Rencana, anggaran, target, dan evaluasi hasil marketing",
+        "Dicatat di SNX-MKT-RPT-01 (USULAN)."
+       ],
+       [
+        "Serah terima lead kepada Sales dan hasil campaign berupa lead",
+        "Dicatat di SNX-MKT-REG-03 (USULAN)."
+       ]
+      ],
+      "widths_cm": [
+       6.5,
+       9.0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Aktivitas",
+        "Satu kegiatan pemasaran SINUX di luar campaign, misalnya event atau webinar."
+       ],
+       [
+        "Campaign",
+        "Kegiatan pemasaran SINUX yang dijalankan dengan satu nama, di satu channel atau lebih, selama satu periode."
+       ],
+       [
+        "Channel",
+        "Tempat materi tampil atau dibagikan kepada pihak di luar SINUX, misalnya website, akun social media, atau acara."
+       ],
+       [
+        "ID Persetujuan Materi",
+        "Nomor baris di Tabel 1 SNX-MKT-REG-01 yang mencatat satu versi dari satu materi di satu channel (SNX-MKT-REG-01 butir 4.1). Baris itu berstatus Disetujui atau Terbit bila versi sudah disetujui."
+       ],
+       [
+        "Materi",
+        "Satu produk komunikasi yang SINUX pakai untuk kebutuhan eksternal, seperti satu brosur atau satu konten social media."
+       ],
+       [
+        "PIC",
+        "Person in charge: jabatan yang bertanggung jawab atas satu campaign atau aktivitas. Ditulis dengan nama jabatan, bukan nama orang."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ]
+     }
+    },
+    {
+     "h2": "Status Campaign atau Aktivitas"
+    },
+    {
+     "p": "Kolom Status memakai empat nilai berikut."
+    },
+    {
+     "table": {
+      "header": [
+       "Status",
+       "Arti"
+      ],
+      "rows": [
+       [
+        "Direncanakan",
+        "Campaign atau aktivitas sudah tercatat di Tabel 1 dan belum dijalankan."
+       ],
+       [
+        "Berjalan",
+        "Campaign atau aktivitas sedang dijalankan."
+       ],
+       [
+        "Selesai",
+        "Campaign atau aktivitas sudah selesai dijalankan."
+       ],
+       [
+        "Dibatalkan",
+        "Campaign atau aktivitas tidak jadi dijalankan, atau dihentikan sebelum selesai."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Satu baris Tabel 1 mencatat satu campaign atau satu aktivitas. Tabel 2 memakai nomor baris Tabel 1. Tabel 3 memuat satu baris per materi yang dipakai, dengan nomor campaign atau aktivitasnya di kolom No Campaign atau Aktivitas."
+    },
+    {
+     "p": "4.2 Brand & Marketing mencatat campaign atau aktivitas di Tabel 1 sebelum campaign atau aktivitas itu dijalankan (USULAN)."
+    },
+    {
+     "p": "4.3 Brand & Marketing menulis nama campaign atau aktivitas di Tabel 1 dengan satu ejaan yang tetap. SNX-MKT-REG-03 merujuk nama itu di kolom Campaign Asal (USULAN)."
+    },
+    {
+     "p": "4.4 Brand & Marketing mencatat tiap materi eksternal yang dipakai campaign atau aktivitas di Tabel 3, dengan ID Persetujuan Materi dari SNX-MKT-REG-01 (USULAN)."
+    },
+    {
+     "p": "4.5 Brand & Marketing memakai materi hanya bila barisnya di SNX-MKT-REG-01 berstatus Disetujui atau Terbit dan kolom Tanggal Persetujuannya terisi (USULAN). Ketentuan ini sejalan dengan wewenang JA-06 menjadwalkan publikasi setelah persetujuan (SNX-HR-JA-01, JA-06 wewenang 2)."
+    },
+    {
+     "p": "4.6 Approver tidak menyetujui versi yang masih memuat klaim tanpa bukti pendukung, atau klaim yang Pemverifikasi tolak (SNX-MKT-REG-01 butir 4.13). Karena itu klaim materi yang dipakai campaign atau aktivitas sudah diverifikasi saat barisnya Disetujui atau Terbit (USULAN)."
+    },
+    {
+     "p": "4.7 Brand & Marketing mengecek baris materi di SNX-MKT-REG-01 sebelum materi dipakai, lalu menulis tanggal pengecekan di Tabel 3 (USULAN)."
+    },
+    {
+     "p": "4.8 Bila materi yang sudah dipakai ternyata tidak punya baris Disetujui atau Terbit di SNX-MKT-REG-01, Brand & Marketing menghentikan pemakaiannya dan melapor kepada VP Commercial. VP Commercial memutuskan tindak lanjutnya (USULAN)."
+    },
+    {
+     "p": "4.9 Bila campaign atau aktivitas beralih ke versi baru sebuah materi, Brand & Marketing menambah baris baru di Tabel 3 dengan ID Persetujuan Materi versi baru sesudah versi itu Disetujui, dan tidak menghapus baris versi lama. Versi baru memakai baris baru di SNX-MKT-REG-01 (SNX-MKT-REG-01 butir 4.8; USULAN)."
+    },
+    {
+     "p": "4.10 Register ini berklasifikasi INTERNAL menurut SNX-ISMS-PRO-01 (USULAN). Klasifikasi tiap materi ditetapkan di SNX-MKT-REG-01 butir 4.5."
+    },
+    {
+     "p": "4.11 Brand & Marketing menyimpan register di lokasi yang tertulis pada tabel Rekaman (USULAN)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN). Nama jabatan mengikuti SNX-HR-ORG-01, dan uraian tugas jabatan ada di SNX-HR-JA-01. Peran Reviewer, Approver, dan Pemverifikasi atas materi diatur di SNX-MKT-REG-01, bukan di register ini."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada register ini"
+      ],
+      "rows": [
+       [
+        "Brand & Marketing",
+        "Pencatat register dan PIC campaign atau aktivitas. Mencatat campaign dan aktivitas di Tabel 1 dan Tabel 2, mencatat materi yang dipakai di Tabel 3, mengecek baris materi di SNX-MKT-REG-01, dan menghentikan pemakaian materi tanpa persetujuan (butir 4.2 sampai 4.5, 4.7, 4.9, dan 4.11). Tugas mengelola event, webinar, dan campaign ada di uraian JA-06 butir 4."
+       ],
+       [
+        "VP Commercial",
+        "Pemilik register ini dan atasan langsung Brand & Marketing. Memutuskan tindak lanjut bila materi dipakai tanpa persetujuan (butir 4.8) dan menetapkan struktur kolom register (bagian Isi Register)."
+       ]
+      ],
+      "widths_cm": [
+       3.6,
+       11.9
+      ]
+     }
+    },
+    {
+     "p": "Direktur Utama menyetujui register ini lewat blok Approval pada halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Cara Mengisi",
+   "blocks": [
+    {
+     "p": "6.1 Brand & Marketing menulis satu baris di Tabel 1 untuk setiap campaign atau aktivitas sebelum dijalankan (butir 4.1 dan 4.2)."
+    },
+    {
+     "p": "6.2 Brand & Marketing menulis nama campaign atau aktivitas di kolom Nama Campaign atau Aktivitas (butir 4.3)."
+    },
+    {
+     "p": "6.3 Brand & Marketing menulis satu jenis di kolom Jenis: Campaign, Event, Webinar, atau Lainnya beserta jenisnya."
+    },
+    {
+     "p": "6.4 Brand & Marketing menulis nama produk atau layanan SINUX yang dibahas campaign atau aktivitas di kolom Produk/Layanan Terkait."
+    },
+    {
+     "p": "6.5 Brand & Marketing menulis jabatan yang bertanggung jawab atas campaign atau aktivitas di kolom PIC, bukan nama orang."
+    },
+    {
+     "p": "6.6 Brand & Marketing menulis tanggal mulai di kolom Tanggal Mulai pada Tabel 2."
+    },
+    {
+     "p": "6.7 Brand & Marketing menulis tanggal selesai, atau tanggal pembatalan, di kolom Tanggal Selesai."
+    },
+    {
+     "p": "6.8 Brand & Marketing menulis salah satu dari empat nilai di kolom Status dan mengubahnya tiap kali status berubah."
+    },
+    {
+     "p": "6.9 Brand & Marketing menulis kode aktivitas dari SNX-MKT-RPT-01 di kolom Kode Aktivitas, dan mengosongkannya bila aktivitas tidak punya kode di sana."
+    },
+    {
+     "p": "6.10 Brand & Marketing menulis satu baris di Tabel 3 per materi yang dipakai (butir 4.4). Kolom No Campaign atau Aktivitas memuat nomor baris campaign atau aktivitasnya di Tabel 1."
+    },
+    {
+     "p": "6.11 Brand & Marketing menulis satu jenis konten di kolom Jenis Konten/Channel: Company profile, Website, Social media, Product brochure, Presentation deck, Campaign material, Event collateral, atau Lainnya beserta jenisnya."
+    },
+    {
+     "p": "6.12 Brand & Marketing menulis nama channel tempat materi tampil di sebelah jenis konten, bila materi punya channel."
+    },
+    {
+     "p": "6.13 Brand & Marketing menulis nomor baris materi dari Tabel 1 SNX-MKT-REG-01 di kolom ID Persetujuan Materi (butir 4.4 dan 4.5)."
+    },
+    {
+     "p": "6.14 Brand & Marketing menulis tanggal pengecekan baris materi di SNX-MKT-REG-01 di kolom Tanggal Pengecekan Persetujuan (butir 4.7)."
+    },
+    {
+     "p": "6.15 Brand & Marketing membiarkan kosong sel yang tidak punya data, termasuk Tabel 3 untuk campaign atau aktivitas yang tidak memakai materi eksternal."
+    }
+   ]
+  },
+  {
+   "h": "Isi Register",
+   "blocks": [
+    {
+     "p": "Tabel tersedia untuk 10 baris, dan Brand & Marketing menambah baris bila perlu. Sel data kosong dan diisi menurut bagian Cara Mengisi. Kolom No sudah bernomor di ketiga tabel. Struktur kolom Tabel 1 sampai Tabel 3 berstatus (USULAN) sampai VP Commercial menetapkannya."
+    },
+    {
+     "h2": "Tabel 1. Campaign dan Aktivitas"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Nama Campaign atau Aktivitas",
+       "Jenis",
+       "Produk/Layanan Terkait",
+       "PIC"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       5.0,
+       2.3,
+       4.4,
+       2.8
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 2. Pelaksanaan"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tanggal Mulai",
+       "Tanggal Selesai",
+       "Status",
+       "Kode Aktivitas (SNX-MKT-RPT-01)"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       2.9,
+       2.9,
+       3.0,
+       5.7
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 3. Materi yang Dipakai"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "No Campaign atau Aktivitas",
+       "Jenis Konten/Channel",
+       "ID Persetujuan Materi (SNX-MKT-REG-01)",
+       "Tanggal Pengecekan Persetujuan"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       2.8,
+       3.6,
+       4.5,
+       3.6
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "p": "Lokasi, pemilik, dan retensi berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "rows": [
+       [
+        "Register ini: Tabel 1 sampai Tabel 3",
+        "Folder Google Drive departemen Marketing. Pemilik: VP Commercial. Pencatat: Brand & Marketing. Klasifikasi menurut butir 4.10.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Materi final yang telah disetujui, bukti verifikasi klaim, dan catatan persetujuan",
+        "Dicatat di SNX-MKT-REG-01 dan ditelusuri dari register ini lewat ID Persetujuan Materi. Lokasi dan pemilik mengikuti SNX-MKT-REG-01.",
+        "Mengikuti SNX-MKT-REG-01"
+       ]
+      ],
+      "widths_cm": [
+       3.8,
+       7.2,
+       4.5
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan register ini"
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "7.4 Komunikasi",
+        "Register mencatat campaign dan aktivitas yang dipakai SINUX untuk berkomunikasi dengan pihak di luar SINUX, beserta PIC dan jadwalnya."
+       ],
+       [
+        "ISO 9001:2015",
+        "8.2.1 Komunikasi dengan customer",
+        "Register mencatat materi eksternal yang dipakai campaign dan aktivitas untuk menyampaikan informasi produk dan layanan SINUX."
+       ],
+       [
+        "ISO 9001:2015",
+        "8.2.2 Penentuan persyaratan produk dan layanan",
+        "Tabel 3 memuat tautan tiap materi ke persetujuan dan verifikasi klaim di SNX-MKT-REG-01 sebelum materi dipakai (butir 4.5 dan 4.6)."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Register punya lokasi simpan, pemilik, dan klasifikasi (butir 4.10 dan 4.11)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.12 Klasifikasi informasi",
+        "Register berklasifikasi INTERNAL, dan klasifikasi materi ditetapkan di SNX-MKT-REG-01 (butir 4.10)."
+       ]
+      ],
+      "widths_cm": [
+       3.4,
+       5.6,
+       6.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "SNX-COM-SOP-02",
+        "Proposal, Quotation & Pricing Control. Mengatur proposal dan quotation untuk customer, yang dikecualikan dari register ini."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan. Uraian JA-06 memuat tugas mengelola event, webinar, dan campaign serta wewenang menjadwalkan publikasi setelah persetujuan."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber nama jabatan."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling. Sumber tingkat klasifikasi INTERNAL."
+       ],
+       [
+        "SNX-MKT-REG-01",
+        "Marketing Content, Material & Claims Approval Register. Memuat persetujuan tiap versi materi eksternal dan verifikasi klaimnya. Register ini memuat tautan materi yang dipakai campaign dan aktivitas ke ID Persetujuan Materi di sana (USULAN)."
+       ],
+       [
+        "SNX-MKT-REG-03",
+        "Marketing Lead & Campaign Outcome Register. Memuat hasil marketing yang diteruskan kepada Sales, yang dikecualikan dari register ini. Kolom Campaign Asal di sana merujuk nama campaign di Tabel 1 register ini (USULAN)."
+       ],
+       [
+        "SNX-MKT-RPT-01",
+        "Marketing Planning & Performance Review. Memuat rencana, anggaran, target, dan evaluasi hasil marketing, yang dikecualikan dari register ini. Kolom Kode Aktivitas di Tabel 2 memuat tautan ke aktivitas di sana (USULAN)."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Register ini berstatus Draft dan berlaku sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN)."
+    }
+   ]
+  }
+ ]
+}
