@@ -409,6 +409,29 @@ def frozen(s):
     return f
 
 
+def label_pairs(k):
+    """(jalur, teks bed1bb6, teks W10) untuk semua teks yang bisa disunting."""
+    if DOCS[k]['mode'] == 'xlsx':
+        import openpyxl
+        P = json.load(open(f'specs/{k}.w10.patch.json', encoding='utf-8')).get('set', {})
+        wb = openpyxl.load_workbook(base_file(k))
+        return [(r, str(wb[r.rsplit('!', 1)[0]][r.rsplit('!', 1)[1]].value or ''), v) for r, v in P.items()]
+
+    def strings(o, path=''):
+        if isinstance(o, str):
+            yield path, o
+        elif isinstance(o, list):
+            for i, x in enumerate(o):
+                yield from strings(x, f'{path}[{i}]')
+        elif isinstance(o, dict):
+            for kk, v in o.items():
+                if kk != 'meta':
+                    yield from strings(v, f'{path}.{kk}')
+    old = dict(strings(json.loads(run('git', 'show', f'{BASE}:specs/{k}.json')[1])))
+    new = dict(strings(json.load(open(f'specs/{k}.json', encoding='utf-8'))))
+    return [(p, old[p], new.get(p, '')) for p in old]
+
+
 def notes_w10(k):
     p = f'notes/{k}.md'
     if not os.path.exists(p):
@@ -480,6 +503,10 @@ def build(k):
                 g['fails'].append(f'selisih {kk} "{tok}" tidak tercatat di notes/{k}.md bagian ## W10')
     if not nw:
         g['fails'].append(f'notes/{k}.md belum punya bagian ## W10')
+    # STYLE §3.6: label (USULAN) yang berkurang pada satu teks wajib dicatat verbatim (cukup 50 huruf awal) di notes W10.
+    for path, a, b in label_pairs(k):
+        if a.count('(USULAN') > b.count('(USULAN') and ' '.join(a.split())[:50] not in ' '.join(nw.split()):
+            g['fails'].append(f'label (USULAN) berkurang di {path} tanpa catatan verbatim di notes W10: "{a[:80]}"')
     if d['mode'] == 'xlsx':
         S = json.load(open('reports/w10/xlsx_sheets.json'))[k]
         sh = {x['sheet']: x for x in sc['sheets']}

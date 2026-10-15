@@ -1,0 +1,4 @@
+Gerbang label (USULAN) W10 (w10.py build): label yang berkurang per teks wajib tercatat verbatim di notes W10.
+COM-FRM-02: label berkurang di 1 teks | KONTROL POSITIF (notes dikosongkan): menembak 1 | dengan notes sekarang: menembak 0
+LEG-FRM-01: label berkurang di 1 teks | KONTROL POSITIF (notes dikosongkan): menembak 1 | dengan notes sekarang: menembak 0
+OPS-FRM-02: label berkurang di 0 teks | KONTROL POSITIF (notes dikosongkan): menembak 0 | dengan notes sekarang: menembak 0
