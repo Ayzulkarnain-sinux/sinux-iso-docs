@@ -1,0 +1,26 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 6, paragraf pengantar Proses Inti Operation (uraian SIPOC)",
+   "masalah": "Badan teks merujuk kolom dengan nama yang tidak ada. Judul kolom tabel tetap 'Output / Rekaman' (label render tidak disentuh), tetapi badan kini menyebut 'kolom Output / Record'. Rujukan ke judul wajib dikutip persis; di bed1bb6 rujukan ini cocok.",
+   "kutipan": "Kolom PIC berisi pemilik proses, dan kolom Output / Record berisi record bukti serta pelanggan proses.",
+   "usul": "Kolom PIC berisi pemilik proses, dan kolom Output / Rekaman berisi record bukti serta pelanggan proses."
+  }
+ ],
+ "nonblocking": [
+  "Tabel 6.3 langkah 5, output: 'Record Management Review' bisa terbaca sebagai 'review atas record management'. Usul: 'Record hasil Management Review'.",
+  "Scope: daftar sistem pendukung pengganti rujukan 'bagian 4' tidak memuat Google Drive SINUX, padahal bagian 4 menyebutnya sebagai tempat simpan dokumen dan record. Pertimbangkan menambahkannya agar daftar sama dengan bagian 4.",
+  "Tabel Records: 'Mengikuti masa simpan di dokumen record' agak kaku; 'Mengikuti masa simpan di form atau report terkait' lebih wajar (opsional).",
+  "'tinjauan manajemen' menjadi 'Management Review': tidak ada di peta wajib §1.5, tetapi istilah ISO dan dipakai konsisten di seluruh dokumen. Diterima."
+ ],
+ "contoh_baik": [
+  "Pemilik proses 4 adalah Service Delivery Manager, sedangkan pemilik gate G2 dan G3 ada di butir 6.2. -> Pemilik proses 4 adalah Service Delivery Manager, sedangkan pemilik gate G2 adalah Project Manager dan pemilik gate G3 adalah Head of Operation."
+ ]
+}

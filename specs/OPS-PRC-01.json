@@ -15,10 +15,21 @@
    "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
    "reviewed": "Fani Fatullah / VP Tech Operation and Services",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
  },
  "purpose": [
-  "Dokumen ini memetakan proses bisnis Divisi Operation SINUX, dari kontrak ditandatangani sampai layanan berjalan, diukur, dan diperbaiki. Peta ini menjadi rujukan pendekatan proses ISO 9001:2015 klausul 4.4 dan perencanaan operasional ISO/IEC 27001:2022 klausul 8.1. Setiap tahap menyebut pemilik, input, output, dan rekaman yang menjadi bukti audit."
+  "Dokumen ini memetakan proses bisnis Divisi Operation SINUX, dari kontrak ditandatangani sampai layanan berjalan, diukur, dan diperbaiki. Peta ini menjadi rujukan pendekatan proses ISO 9001:2015 klausul 4.4 dan perencanaan operasional ISO/IEC 27001:2022 klausul 8.1. Setiap tahap menyebut pemilik, input, output, dan record yang menjadi bukti audit."
  ],
  "scope": [
   "Dokumen ini berlaku untuk seluruh layanan yang dikelola Divisi Operation (NOC, SOC, serta SD dan PM):",
@@ -30,12 +41,12 @@
   "Proyek implementasi dan migrasi untuk pelanggan.",
   "Proses 1 (penjualan dan kontrak) dimiliki VP Commercial dan dipetakan di sini hanya sampai paket handover G1.",
   "Di luar ruang lingkup: app-level pelanggan (isi aplikasi, plugin, database aplikasi, kode pelanggan), keputusan harga dan komersial, serta SOC yang menurut kontrak menjadi tanggung jawab pelanggan.",
-  "Sistem pendukung yang dipakai proses ini disebut di bagian 4."
+  "Sistem pendukung proses ini adalah Nusametric, Overseer, console Nusagrid, Wazuh, AegisWAF, Cloudflare, EDR, Acronis Cyber Protect, Zammad, Service Hub, password manager (vault), Jumphost, dan Google Drive SINUX."
  ],
  "definitions": [
   [
    "Direktur (COO)",
-   "Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen ini selanjutnya menulis COO."
+   "Jabatan JA-02 pada SNX-HR-ORG-01, dalam dokumen ini disebut COO."
   ],
   [
    "Operation",
@@ -43,7 +54,7 @@
   ],
   [
    "NOC",
-   "Network Operations Center, sub divisi Operation yang memantau dashboard layanan dan menangani tiket."
+   "Network Operations Center, sub divisi Operation yang memantau dashboard layanan dan menangani ticket."
   ],
   [
    "SOC",
@@ -59,7 +70,7 @@
   ],
   [
    "Jabatan Divisi Operation",
-   "Head of Operation, Lead NOC, Lead SOC, Service Delivery Manager, dan Project Manager. Status kelimanya (USULAN) di POL-OPS-001 dan SNX-HR-ORG-01, dan belum ada pemegang bernama."
+   "Head of Operation, Lead NOC, Lead SOC, Service Delivery Manager, dan Project Manager. Kelimanya belum punya pemegang bernama dan masih berstatus usulan di POL-OPS-001 dan SNX-HR-ORG-01 (USULAN)."
   ],
   [
    "Deal",
@@ -71,11 +82,11 @@
   ],
   [
    "Proses pendukung",
-   "Proses sistem manajemen keamanan informasi (ISMS) yang berjalan bersama proses inti. Daftarnya ada di tabel Dokumen terkait."
+   "Proses sistem manajemen keamanan informasi (ISMS) yang berjalan bersama proses inti. Daftarnya tercantum di tabel Dokumen terkait."
   ],
   [
    "Uraian proses (SIPOC)",
-   "Uraian tiap proses inti yang memuat pemilik, input, output, pelanggan proses, prosedur, dan rekaman bukti."
+   "Uraian tiap proses inti yang memuat pemilik, input, output, pelanggan proses, prosedur, dan record bukti."
   ],
   [
    "Pemilik proses",
@@ -107,7 +118,7 @@
   ],
   [
    "Paket handover G1",
-   "Berkas yang Commercial serahkan ke SD dan PM pada G1."
+   "Berkas yang diserahkan Commercial ke SD dan PM pada G1."
   ],
   [
    "UAT",
@@ -127,19 +138,19 @@
   ],
   [
    "RCA",
-   "Root cause analysis, analisis akar penyebab sebuah insiden."
+   "Root cause analysis, analisis untuk menemukan root cause (akar masalah) sebuah insiden."
   ],
   [
    "P1 dan P2",
-   "Dua tingkat severity tertinggi pada tiket, P1 Kritis dan P2 Tinggi, dari skala P1 sampai P4 di POL-OPS-001."
+   "Dua tingkat severity tertinggi pada ticket, P1 Kritis dan P2 Tinggi, dari skala P1 sampai P4 di POL-OPS-001."
   ],
   [
    "Zammad",
-   "Sistem tiket untuk Operation."
+   "Sistem ticket untuk Operation."
   ],
   [
    "Service Hub",
-   "SINUX Service Hub berbasis GLPI (ticket.sinux.co.id), sistem tiket untuk generalist."
+   "SINUX Service Hub berbasis GLPI (ticket.sinux.co.id), sistem ticket untuk generalist."
   ],
   [
    "Shift Log",
@@ -155,23 +166,23 @@
   ]
  ],
  "policy": [
-  "Setiap proses inti punya pemilik proses yang bertanggung jawab atas kinerja dan dokumennya. Pemilik tiap proses tercantum di butir 6.1 (ISO 9001:2015 4.4; ISO/IEC 27001:2022 4.4).",
+  "Setiap proses inti punya pemilik proses yang bertanggung jawab atas kinerja dan dokumennya (ISO 9001:2015 4.4; ISO/IEC 27001:2022 4.4).",
   "Setiap deal baru berpindah tangan tiga kali, dan tiap perpindahan wajib lolos gate tertulis. Pihak penerima tidak menerima pekerjaan sebelum gate-nya lolos (ISO 9001:2015 8.1; ISO/IEC 27001:2022 8.1).",
-  "Operation berhak menolak serah terima G3 secara tertulis bila Checklist G3 belum lengkap. Selama G3 belum lolos, layanan berstatus hypercare dengan pemilik SD dan PM (ISO 9001:2015 8.6).",
+  "Operation berhak menolak serah terima G3 secara tertulis jika Checklist G3 belum lengkap. Selama G3 belum lolos, layanan berstatus hypercare dengan pemilik SD dan PM (ISO 9001:2015 8.6).",
   "Janji ke pelanggan yang belum tercatat di paket handover G1 tidak mengikat Operation sampai VP Commercial dan COO menyetujuinya (ISO 9001:2015 8.2).",
-  "Layanan dinyatakan BAU hanya setelah G3 lolos, dan perubahan konfigurasi dijalankan lewat change request menurut SNX-OPS-SOP-02 (ISO 9001:2015 8.5).",
+  "Layanan dinyatakan BAU hanya setelah G3 lolos, dan perubahan konfigurasi dijalankan melalui change request menurut SNX-OPS-SOP-02 (ISO 9001:2015 8.5).",
   "Proses pendukung ISMS berjalan bersama proses inti. Titik singgung tiap proses pendukung tercantum di tabel Dokumen terkait (ISO/IEC 27001:2022 4.4, 8.1).",
   "Data SLA berasal dari Nusametric, Overseer, dan console Nusagrid. Data SOC berasal dari Wazuh, AegisWAF, Cloudflare, dan EDR. Log backup berasal dari Acronis Cyber Protect.",
-  "Tiket pelanggan Nusagrid dicatat di Zammad. Tiket GMF dedicated dan permintaan internal dicatat di Service Hub. Change request dan Shift Log dicatat di Service Hub (USULAN). Batas pemakaian dengan Zammad belum diputus.",
-  "Kredensial dilarang ditulis di chat, tiket, atau dokumen. Kredensial disimpan di password manager (vault).",
-  "Akses production lewat Jumphost SINUX, yang merekam sesi untuk audit akses.",
-  "Dokumen dan rekaman disimpan di Google Drive SINUX dan dikendalikan sesuai SNX-ISMS-PRO-01. Rekaman mengikuti masa simpan di dokumennya masing-masing."
+  "Ticket pelanggan Nusagrid dicatat di Zammad. Ticket GMF dedicated dan permintaan internal dicatat di Service Hub. Change request dan Shift Log dicatat di Service Hub, sedangkan batas pemakaiannya dengan Zammad belum diputus (USULAN).",
+  "Kredensial dilarang ditulis di chat, ticket, atau dokumen. Kredensial disimpan di password manager (vault).",
+  "Akses ke production dilakukan melalui Jumphost SINUX, yang merekam sesi untuk audit akses.",
+  "Dokumen dan record disimpan di Google Drive SINUX dan dikendalikan sesuai SNX-ISMS-PRO-01. Record mengikuti masa simpan di dokumennya masing-masing."
  ],
  "roles": [
   [
    "Direktur Utama",
-   "Memimpin tinjauan manajemen yang membahas hasil pengukuran kinerja proses.",
-   "Menyetujui dokumen ini lewat blok Approved By."
+   "Memimpin Management Review yang membahas hasil pengukuran kinerja proses.",
+   "Menyetujui dokumen ini melalui blok Approved By."
   ],
   [
    "COO",
@@ -186,12 +197,12 @@
   [
    "Service Delivery Manager",
    "Memiliki proses 4 dan 6, memegang gate G1, dan memimpin SD dan PM selaku pemilik hypercare.",
-   "Menerima paket handover G1 bila Checklist G1 terpenuhi."
+   "Menerima paket handover G1 jika Checklist G1 terpenuhi."
   ],
   [
    "Project Manager",
    "Memiliki proses 2 dan 3, memegang gate G2, dan mengisi Checklist G3.",
-   "Menyatakan G2 lolos bila syaratnya terpenuhi."
+   "Menyatakan G2 lolos jika syaratnya terpenuhi."
   ],
   [
    "Head of Operation",
@@ -210,7 +221,7 @@
   ],
   [
    "Pemilik proses",
-   "Bertanggung jawab atas kinerja dan dokumen proses yang dimilikinya (butir 6.1).",
+   "Bertanggung jawab atas kinerja dan dokumen proses inti yang dimilikinya.",
    "Mengajukan perubahan atas proses yang dimilikinya ke Head of Operation."
   ]
  ],
@@ -218,49 +229,49 @@
   {
    "title": "Proses Inti Operation",
    "intro": [
-    "Uraian proses (SIPOC) memuat pemilik proses, input, output, pelanggan proses, prosedur, dan rekaman bukti. Nomor langkah sama dengan nomor proses. Kolom PIC berisi pemilik proses, dan kolom Output / Rekaman berisi rekaman bukti serta pelanggan proses.",
-    "Pemilik proses 4 adalah Service Delivery Manager, sedangkan pemilik gate G2 dan G3 ada di butir 6.2."
+    "Uraian proses (SIPOC) memuat pemilik proses, input, output, pelanggan proses, prosedur, dan record bukti. Nomor langkah sama dengan nomor proses. Kolom PIC berisi pemilik proses, dan kolom Output / Rekaman berisi record bukti serta pelanggan proses.",
+    "Pemilik proses 4 adalah Service Delivery Manager, sedangkan pemilik gate G2 adalah Project Manager dan pemilik gate G3 adalah Head of Operation."
    ],
    "steps": [
     [
      "Penjualan dan kontrak: ubah kebutuhan pelanggan dan sizing teknis menjadi PO atau kontrak, scope, dan SLA, mengikuti SNX-COM-SOP-01 (USULAN).",
      "VP Commercial",
-     "Rekaman: kontrak dan paket handover G1. Pelanggan proses: SD dan PM."
+     "Record: kontrak dan paket handover G1. Pelanggan proses: SD dan PM."
     ],
     [
      "Perencanaan proyek: susun project plan, scope, timeline, dan risk register dari paket handover G1 dan kontrak, mengikuti SNX-OPS-SOP-01.",
      "Project Manager",
-     "Rekaman: SNX-OPS-FRM-01 dan SNX-OPS-FRM-02. Pelanggan proses: NOC dan SOC."
+     "Record: SNX-OPS-FRM-01 dan SNX-OPS-FRM-02. Pelanggan proses: NOC dan SOC."
     ],
     [
      "Implementasi dan delivery: pasang layanan dari project plan dan change request, lengkap dengan laporan progres, mengikuti SNX-OPS-SOP-01 dan SNX-OPS-SOP-02.",
      "Project Manager",
-     "Rekaman: SNX-OPS-FRM-03 dan SNX-OPS-FRM-04. Pelanggan proses: pelanggan, NOC, dan SOC."
+     "Record: SNX-OPS-FRM-03 dan SNX-OPS-FRM-04. Pelanggan proses: pelanggan, NOC, dan SOC."
     ],
     [
      "UAT, verifikasi, dan serah terima: pastikan layanan terpasang lolos UAT, BAST ditandatangani, dan layanan diserahkan ke Operation, mengikuti SNX-OPS-SOP-01.",
      "Service Delivery Manager",
-     "Rekaman: SNX-OPS-FRM-05 dan SNX-OPS-FRM-06. Pelanggan proses: pelanggan dan Operation."
+     "Record: SNX-OPS-FRM-05 dan SNX-OPS-FRM-06. Pelanggan proses: pelanggan dan Operation."
     ],
     [
-     "Operasi layanan 24/7: tangani alert dan tiket layanan BAU serta laksanakan maintenance bersama Lead NOC dan Lead SOC, mengikuti SNX-OPS-SOP-03, SNX-OPS-SOP-04, dan SNX-ISMS-SOP-01.",
+     "Operasi layanan 24/7: tangani alert dan ticket layanan BAU serta laksanakan maintenance bersama Lead NOC dan Lead SOC, mengikuti SNX-OPS-SOP-03, SNX-OPS-SOP-04, dan SNX-ISMS-SOP-01.",
      "Head of Operation",
-     "Rekaman: SNX-OPS-FRM-07, SNX-OPS-FRM-08, dan SNX-ISMS-FRM-02. Pelanggan proses: pelanggan."
+     "Record: SNX-OPS-FRM-07, SNX-OPS-FRM-08, dan SNX-ISMS-FRM-02. Pelanggan proses: pelanggan."
     ],
     [
-     "Pemantauan SLA: susun laporan SLA bulanan dari data monitoring dan tiket, mengikuti SNX-OPS-SOP-05.",
+     "Pemantauan SLA: susun laporan SLA bulanan dari data monitoring dan ticket, mengikuti SNX-OPS-SOP-05.",
      "Service Delivery Manager",
-     "Rekaman: SNX-OPS-FRM-09. Pelanggan proses: pelanggan dan manajemen."
+     "Record: SNX-OPS-FRM-09. Pelanggan proses: pelanggan dan manajemen."
     ],
     [
-     "Pengukuran kinerja: susun laporan KPI dari laporan SLA, tiket, change, dan backup sebagai masukan tinjauan manajemen, mengikuti SNX-OPS-SOP-05.",
+     "Pengukuran kinerja: susun laporan KPI dari laporan SLA, ticket, change, dan backup sebagai masukan Management Review, mengikuti SNX-OPS-SOP-05.",
      "Head of Operation",
-     "Rekaman: SNX-OPS-RPT-01. Pelanggan proses: COO dan manajemen."
+     "Record: SNX-OPS-RPT-01. Pelanggan proses: COO dan manajemen."
     ],
     [
-     "Perbaikan: tetapkan RCA, tindakan korektif, dan pembaruan risiko dari insiden P1 dan P2, temuan audit, dan KPI di bawah target, mengikuti SNX-OPS-SOP-04.",
+     "Perbaikan: tetapkan RCA, corrective action, dan pembaruan risiko dari insiden P1 dan P2, temuan audit, dan KPI di bawah target, mengikuti SNX-OPS-SOP-04.",
      "Head of Operation",
-     "Rekaman: SNX-OPS-FRM-10 dan SNX-ISMS-REG-02. Pelanggan proses: semua proses."
+     "Record: SNX-OPS-FRM-10 dan SNX-ISMS-REG-02. Pelanggan proses: semua proses."
     ]
    ]
   },
@@ -271,22 +282,22 @@
    ],
    "steps": [
     [
-     "Serahkan paket handover G1 ke SD dan PM sesudah PO atau kontrak ditandatangani.",
+     "Serahkan paket handover G1 ke SD dan PM setelah PO atau kontrak ditandatangani.",
      "VP Commercial",
      "Paket handover G1"
     ],
     [
-     "Terima paket handover G1 bila Checklist G1 terpenuhi: PO atau kontrak, scope final, SLA tertulis, PIC pelanggan, dan janji lisan tercatat.",
+     "Terima paket handover G1 jika Checklist G1 terpenuhi: PO atau kontrak, scope final, SLA tertulis, PIC pelanggan, dan janji lisan tercatat.",
      "Service Delivery Manager",
      "Checklist G1 pada SNX-OPS-FRM-01"
     ],
     [
-     "Nyatakan G2 lolos bila UAT lolos, BAST ditandatangani pelanggan, dan isu sisa punya pemilik.",
+     "Nyatakan G2 lolos jika UAT lolos, BAST ditandatangani pelanggan, dan isu sisa punya pemilik.",
      "Project Manager",
      "SNX-OPS-FRM-05; BAST pada SNX-OPS-FRM-06"
     ],
     [
-     "Isi Checklist G3 dengan status tiap butir: aset terdaftar, monitoring aktif, backup dan restore teruji, as-built, runbook, dan akses lewat Jumphost.",
+     "Isi Checklist G3 dengan status tiap butir: aset terdaftar, monitoring aktif, backup dan restore teruji, as-built, runbook, dan akses melalui Jumphost.",
      "Project Manager",
      "Checklist G3 pada SNX-OPS-FRM-06"
     ],
@@ -296,7 +307,7 @@
      "Tanda terima briefing serah terima"
     ],
     [
-     "Nyatakan G3 lolos bila semua butir Checklist G3 terpenuhi.",
+     "Nyatakan G3 lolos jika semua butir Checklist G3 terpenuhi.",
      "Head of Operation",
      "Keputusan G3 pada SNX-OPS-FRM-06; layanan masuk BAU"
     ]
@@ -326,9 +337,9 @@
      "SNX-OPS-RPT-01"
     ],
     [
-     "Pimpin tinjauan manajemen yang membahas hasil pengukuran kinerja proses.",
+     "Pimpin Management Review yang membahas hasil pengukuran kinerja proses.",
      "Direktur Utama",
-     "Rekaman tinjauan manajemen"
+     "Record hasil Management Review"
     ]
    ]
   }
@@ -420,11 +431,11 @@
     "dashed"
    ]
   ],
-  "caption": "Gambar 1. Alur proses inti Operation dengan gate G1 dan G3. Nama di bawah tiap kotak adalah pemilik proses atau pemilik gate. Garis putus-putus menunjukkan siklus perbaikan berkelanjutan: tindakan korektif kembali ke operasi layanan, dan perbaikan masuk ke kontrak dan rencana berikutnya."
+  "caption": "Gambar 1. Alur proses inti Operation dengan gate G1 dan G3. Nama di bawah tiap kotak adalah pemilik proses atau pemilik gate. Garis putus-putus menunjukkan siklus perbaikan berkelanjutan: corrective action kembali ke operasi layanan, dan perbaikan masuk ke kontrak dan rencana berikutnya."
  },
  "sla": [
   [
-   "Kick-off internal sesudah PO atau kontrak ditandatangani",
+   "Kick-off internal setelah PO atau kontrak ditandatangani",
    "Project Manager",
    "3 hari kerja sejak PO (USULAN)"
   ],
@@ -444,7 +455,7 @@
    "Setiap bulan"
   ],
   [
-   "Tinjauan dokumen ini",
+   "Review dokumen ini",
    "Head of Operation",
    "Setiap tahun"
   ]
@@ -452,23 +463,23 @@
  "exceptions": [
   [
    "Paket handover G1 belum memenuhi Checklist G1",
-   "Service Delivery Manager mengembalikan paket ke VP Commercial dan mencatat kriteria yang belum terpenuhi di tiket. Onboarding belum dimulai."
+   "Service Delivery Manager mengembalikan paket ke VP Commercial dan mencatat kriteria yang belum terpenuhi di ticket. Onboarding belum dimulai."
   ],
   [
    "Checklist G3 belum lengkap",
-   "Head of Operation menolak serah terima secara tertulis dan mencatat kriteria yang belum terpenuhi, beserta pemilik dan tanggal targetnya, di tiket. Layanan tetap berstatus hypercare sampai kriteria terpenuhi, lalu Head of Operation memeriksa ulang G3."
+   "Head of Operation menolak serah terima secara tertulis, mencatat kriteria yang belum terpenuhi beserta pemilik dan tanggal targetnya di ticket, lalu memeriksa ulang G3 setelah kriteria terpenuhi. Selama itu layanan tetap berstatus hypercare."
   ],
   [
    "Deal tidak jadi (lost)",
    "VP Commercial mencatat deal sebagai lost beserta alasannya. Prospek yang ditunda tetap dipegang Commercial, bukan Operation."
   ],
   [
-   "Gate dilewati, rekaman tidak lengkap, atau SLA terlewat berulang",
+   "Gate dilewati, record tidak lengkap, atau SLA terlewat berulang",
    "Head of Operation menangani ketidaksesuaian proses melalui SNX-OPS-FRM-10."
   ]
  ],
  "conclusion": [
-  "Kepatuhan terhadap alur ini diukur lewat SNX-OPS-RPT-01, dan ketidaksesuaian proses ditangani lewat SNX-OPS-FRM-10. Head of Operation meninjau dokumen ini setiap tahun."
+  "Kepatuhan terhadap alur ini diukur melalui SNX-OPS-RPT-01, dan ketidaksesuaian proses ditangani melalui SNX-OPS-FRM-10. Head of Operation meninjau dokumen ini setiap tahun."
  ],
  "related_documents": [
   [
@@ -493,55 +504,55 @@
   ],
   [
    "SNX-COM-SOP-01",
-   "SOP Sales Process. Prosedur proses 1; penunjukan ini diusulkan di butir 6.1."
+   "SOP Sales Process. Prosedur proses 1 (USULAN)."
   ],
   [
    "SNX-OPS-FRM-01",
-   "Project Plan, Scope & Timeline Records. Rekaman proses 2 dan tempat Checklist G1."
+   "Project Plan, Scope & Timeline Records. Record proses 2 dan tempat Checklist G1."
   ],
   [
    "SNX-OPS-FRM-02",
-   "Project Risk Register. Rekaman proses 2."
+   "Project Risk Register. Record proses 2."
   ],
   [
    "SNX-OPS-FRM-03",
-   "Project Progress & Monitoring Report. Rekaman proses 3."
+   "Project Progress & Monitoring Report. Record proses 3."
   ],
   [
    "SNX-OPS-FRM-04",
-   "Change Request & Approval Log. Rekaman proses 3."
+   "Change Request & Approval Log. Record proses 3."
   ],
   [
    "SNX-OPS-FRM-05",
-   "Testing / UAT & Quality Verification Records. Rekaman proses 4 dan bukti G2."
+   "Testing / UAT & Quality Verification Records. Record proses 4 dan bukti G2."
   ],
   [
    "SNX-OPS-FRM-06",
-   "Project Handover / BAST & Closure Report. Rekaman proses 4, tempat BAST pada G2 dan Checklist G3."
+   "Project Handover / BAST & Closure Report. Record proses 4, tempat BAST pada G2 dan Checklist G3."
   ],
   [
    "SNX-OPS-FRM-07",
-   "Maintenance Schedule & Service Report. Rekaman proses 5."
+   "Maintenance Schedule & Service Report. Record proses 5."
   ],
   [
    "SNX-OPS-FRM-08",
-   "Technical Ticket / Incident Register. Rekaman proses 5."
+   "Technical Ticket / Incident Register. Record proses 5."
   ],
   [
    "SNX-OPS-FRM-09",
-   "SLA Performance Monitoring Report. Rekaman proses 6."
+   "SLA Performance Monitoring Report. Record proses 6."
   ],
   [
    "SNX-OPS-RPT-01",
-   "Operations KPI & Performance Monitoring Report. Rekaman proses 7 dan masukan tinjauan manajemen."
+   "Operations KPI & Performance Monitoring Report. Record proses 7 dan masukan Management Review."
   ],
   [
    "SNX-OPS-FRM-10",
-   "Root Cause Analysis & Corrective Action Report. Rekaman proses 8 dan penanganan ketidaksesuaian proses."
+   "Root Cause Analysis & Corrective Action Report. Record proses 8 dan penanganan ketidaksesuaian proses."
   ],
   [
    "SNX-ISMS-PRO-01",
-   "Information Classification & Handling Procedure. Label dokumen proyek, BAST, laporan, dan rekaman operasi."
+   "Information Classification & Handling Procedure. Label dokumen proyek, BAST, laporan, dan record operasi."
   ],
   [
    "SNX-ISMS-REG-01",
@@ -549,11 +560,11 @@
   ],
   [
    "SNX-ISMS-SOP-04",
-   "SOP IT Asset & Configuration Management. Inventaris aset dan konfigurasi; perubahan konfigurasi lewat SNX-OPS-SOP-02."
+   "SOP IT Asset & Configuration Management. Inventaris aset dan konfigurasi; perubahan konfigurasi melalui SNX-OPS-SOP-02."
   ],
   [
    "SNX-ISMS-REG-02",
-   "Information Security Risk Assessment Register. Risiko proyek berat dan temuan RCA dinaikkan ke register risiko ISMS. Juga rekaman proses 8."
+   "Information Security Risk Assessment Register. Record proses 8; risiko proyek berat dan temuan RCA dinaikkan ke register ini."
   ],
   [
    "SNX-ISMS-REG-03",
@@ -577,7 +588,7 @@
   ],
   [
    "SNX-ISMS-FRM-01",
-   "Backup Log & Restore Testing Records. Rekaman proses backup dan pemulihan."
+   "Backup Log & Restore Testing Records. Record proses backup dan pemulihan."
   ],
   [
    "SNX-ISMS-SOP-05",
@@ -589,7 +600,7 @@
   ],
   [
    "SNX-ISMS-FRM-02",
-   "Security Incident & Investigation Records. Rekaman proses 5 dan penanganan insiden keamanan."
+   "Security Incident & Investigation Records. Record proses 5 dan penanganan insiden keamanan."
   ],
   [
    "SNX-ISMS-PLN-01",
@@ -625,37 +636,37 @@
   [
    "SNX-OPS-FRM-01 dan SNX-OPS-FRM-02",
    "Google Drive SINUX; pemilik Project Manager",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-FRM-03 dan SNX-OPS-FRM-04",
    "Google Drive SINUX; pemilik Project Manager",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-FRM-05 dan SNX-OPS-FRM-06",
    "Google Drive SINUX; pemilik Service Delivery Manager",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-FRM-07, SNX-OPS-FRM-08, dan SNX-ISMS-FRM-02",
    "Google Drive SINUX; pemilik Head of Operation",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-FRM-09",
    "Google Drive SINUX; pemilik Service Delivery Manager",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-RPT-01",
    "Google Drive SINUX; pemilik Head of Operation",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-FRM-10 dan SNX-ISMS-REG-02",
    "Google Drive SINUX; pemilik Head of Operation",
-   "Mengikuti masa simpan di dokumen rekaman"
+   "Mengikuti masa simpan di dokumen record"
   ],
   [
    "SNX-OPS-PRC-01 (dokumen ini)",

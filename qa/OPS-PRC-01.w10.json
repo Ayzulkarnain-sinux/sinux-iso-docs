@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 11 kolom masa simpan: 'Mengikuti masa simpan di dokumen record' terdengar hasil ganti mekanis; usul 'Mengikuti masa simpan di form atau register masing-masing' atau 'di dokumen record terkait'.",
+  "Definisi Jabatan Divisi Operation: 'masih berstatus usulan di POL-OPS-001 dan SNX-HR-ORG-01 (USULAN)' mengulang kata usulan dua kali; boleh dibiarkan, label tetap di akhir butir.",
+  "Definisi Proses pendukung dan Policy masih memuat penunjuk 'tercantum di tabel Dokumen terkait'; masih wajar karena tabel berada di dokumen yang sama.",
+  "Bagian 6.2 langkah 5 PIC 'Lead NOC dan Lead SOC' (dua pelaku) diwarisi dari bed1bb6, tidak diubah W10.",
+  "Pointer diganti fakta sudah diperiksa: daftar sistem pendukung di SCOPE lengkap dibanding Policy (13 sistem); pemilik gate G2 = Project Manager dan G3 = Head of Operation sesuai Roles dan 6.2; 'penunjukan ini diusulkan di butir 6.1' -> '(USULAN)' tetap berlabel. Label USULAN Service Hub/Zammad dipindah ke akhir butir, cakupan tidak menyempit."
+ ],
+ "contoh_baik": [
+  "'Paket handover G1 | Berkas yang Commercial serahkan ke SD dan PM pada G1.' -> 'Berkas yang diserahkan Commercial ke SD dan PM pada G1.'"
+ ]
+}

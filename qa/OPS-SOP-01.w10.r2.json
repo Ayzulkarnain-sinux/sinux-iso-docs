@@ -1,0 +1,26 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 4, butir 4.7 Penerimaan dan pelepasan",
+   "masalah": "Pointer 'ditangani sesuai Bagian 9' diganti fakta, tetapi pihak hilang. Baris Bagian 9 menyebut Head of Operation yang menolak serah terima; kalimat pengganti pasif tanpa pelaku sehingga fakta pengganti tidak lengkap dibanding butir asal (pihak).",
+   "kutipan": "Jika checklist G3 belum lengkap, serah terima ditolak secara tertulis dan layanan tetap hypercare dengan pemilik Service Delivery Manager dan Project Manager sampai checklist G3 lengkap.",
+   "usul": "Jika checklist G3 belum lengkap, Head of Operation menolak serah terima secara tertulis, dan layanan tetap hypercare dengan pemilik Service Delivery Manager dan Project Manager sampai checklist G3 lengkap."
+  }
+ ],
+ "nonblocking": [
+  "Pointer lain diperiksa dan lengkap: 6.3 langkah 2 'hanya sesuai butir 4.4' -> Jumphost, akun di SNX-ISMS-REG-04, kredensial hanya di password manager, tidak di chat/ticket/dokumen (setara 4.4); 6.3 langkah 1 '(butir 4.3)' -> 'setelah go-gate terpenuhi'; SCOPE membuang '(Bagian 6.3 butir 4)' dan '(Bagian 6.4 butir 7)' tanpa kehilangan isi karena butir tujuan tetap ada.",
+  "SNX-HR-ORG-01: 'peran di Bagian 5' -> 'peran di SOP ini' sedikit lebih umum, arti tetap.",
+  "Bagian 6 PIC 'NOC Engineer, SOC Analyst' dan SLA 'Service Delivery Manager, Project Manager' diwarisi bed1bb6, tidak diubah W10.",
+  "Conclusion 'empat indikator di Bagian 8' masih penunjuk; wajar."
+ ],
+ "contoh_baik": [
+  "'Pelanggan pemerintah melalui main contractor | Project Manager membuat BAST ... Periode ditetapkan main contractor. Project Manager membuat dokumen teknis ...' -> 'Project Manager membuat BAST atas nama SINUX, menyimpan versi original di Drive proyek, dan membuat dokumen teknis tanpa harga ... Periode ditetapkan main contractor.' (pelaku disebut sekali)"
+ ]
+}

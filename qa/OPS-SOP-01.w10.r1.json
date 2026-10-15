@@ -1,0 +1,31 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 5,
+  "c": 5,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Butir 4.7 Penerimaan dan pelepasan",
+   "masalah": "Rujukan 'ditangani sesuai Bagian 9' diganti fakta yang menyempit. Baris Bagian 9 menetapkan hypercare dengan pemilik Service Delivery Manager dan Project Manager sampai checklist G3 lengkap. Pengganti di 4.7 menghilangkan pemilik dan batas akhirnya ('sampai checklist G3 lengkap'), sehingga kondisi berakhirnya hypercare hilang.",
+   "kutipan": "Jika checklist G3 belum lengkap, serah terima ditolak secara tertulis dan layanan tetap hypercare.",
+   "usul": "Jika checklist G3 belum lengkap, serah terima ditolak secara tertulis dan layanan tetap hypercare dengan pemilik Service Delivery Manager dan Project Manager sampai checklist G3 lengkap."
+  },
+  {
+   "lokasi": "Bagian 6.3 langkah 2 (NOC Engineer, SOC Analyst)",
+   "masalah": "Rujukan 'hanya sesuai butir 4.4' diganti fakta yang hanya memuat separuh butir 4.4. Butir 4.4 juga mewajibkan kredensial disimpan di password manager dan tidak di chat, ticket, atau dokumen. Syarat langkah menyempit.",
+   "kutipan": "2. Akses sistem pelanggan hanya melalui Jumphost dengan akun yang terdaftar di SNX-ISMS-REG-04.",
+   "usul": "2. Akses sistem pelanggan hanya melalui Jumphost dengan akun yang terdaftar di SNX-ISMS-REG-04, dan simpan kredensial hanya di password manager."
+  }
+ ],
+ "nonblocking": [
+  "Bagian 6.1 langkah 2: rujukan Bagian 9 diganti 'kembalikan paket yang ditolak ke Commercial secara tertulis'. Akibat 'proyek belum dimulai' tetap ada di butir 4.1 dan Bagian 9, jadi diterima.",
+  "Definisi Commercial: 'Di tabel peran' dihapus sehingga kewenangan VP Commercial terbaca berlaku umum. Isinya tetap sama dengan tabel Roles, jadi diterima.",
+  "Masih ada rujukan lama 'ikuti Bagian 9' (6.4 langkah 7) dan 'sesuai masa simpan di Bagian 11' (6.5 langkah 7). Teks itu tidak berubah di W10 dan masih dalam batas §3.1."
+ ],
+ "contoh_baik": [
+  "Service Delivery Manager memantau kepatuhan terhadap SOP ini lewat empat indikator di Bagian 8 dan melakukan kalibrasi target sesudah 3 bulan data. -> Service Delivery Manager memantau kepatuhan terhadap SOP ini melalui empat indikator di Bagian 8 dan mengalibrasi target setelah ada data 3 bulan."
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "key": "OPS-PRC-01",
+ "mode": "sop",
+ "out": "out/07_Ops/SNX-OPS-PRC-01 Operations Business Process Flow (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2761,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 6,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2746,
+  "calque": [
+   "yang Commercial serahkan"
+  ],
+  "lewat": 7,
+  "pointer": 2,
+  "usulan": 5,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 56,
+  "tables_ge3_no_header": 12
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "6.2"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-PRC-01 Operations Business Process Flow (Rev00 DRAFT).pdf",
+ "pages": 17,
+ "blank": [],
+ "pass": true
+}

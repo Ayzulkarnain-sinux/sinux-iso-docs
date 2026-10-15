@@ -1,0 +1,31 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 5,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Definition & Abbreviations, baris Go-gate",
+   "masalah": "Definisi kini menyebut syarat langsung, tetapi isinya tidak lengkap dan tidak sama dengan Syarat 1 sampai 5 di bagian 4 (bed1bb6). Yang hilang: approval harus tertulis dari Approver yang berwenang; ack pelanggan jika change menyentuh layanan pelanggan; lokasi backup atau snapshot dicatat; rollback dapat dijalankan dengan satu perintah atau satu langkah yang sudah ditulis; verifikasi di antara langkah; before dan after didokumentasikan di CR.",
+   "kutipan": "Lima syarat yang harus terpenuhi sebelum sebuah change teknis dieksekusi: approval, backup atau snapshot, rollback, eksekusi satu langkah satu waktu, dan dokumentasi before dan after.",
+   "usul": "Lima syarat yang harus terpenuhi sebelum sebuah change teknis dieksekusi: approval tertulis dari Approver yang berwenang (ditambah ack pelanggan jika change menyentuh layanan pelanggan), backup atau snapshot dengan lokasi tercatat, rollback yang dapat dijalankan dengan satu perintah atau satu langkah tertulis, eksekusi satu langkah satu waktu dengan verifikasi di antara langkah, serta kondisi before dan after terdokumentasi di CR. Alternatif sesuai §3.1: 'Lima syarat di Policy & General Principles yang harus terpenuhi sebelum sebuah change teknis dieksekusi.'"
+  },
+  {
+   "lokasi": "Bagian 9, baris 'Approver memberi status Ditolak atau Revisi'",
+   "masalah": "Peran Pelaksana hilang. Kalimat kedua kini pasif tanpa pelaku, padahal Bagian 9 wajib menyebut pelaku (STYLE §2.1 dan §2.2). Di bed1bb6 larangan eksekusi melekat ke Pelaksana.",
+   "kutipan": "Pengaju menerima CR kembali. Change itu belum boleh dieksekusi sebelum Approver memberi status Disetujui.",
+   "usul": "Pengaju menerima CR kembali. Pelaksana tidak mengeksekusi change itu sebelum Approver memberi status Disetujui."
+  }
+ ],
+ "nonblocking": [
+  "Policy, Perencanaan change: 'dikecualikan sesuai bagian 9' kini 'mengikuti prosedur Change Emergency'. Ini mengutip judul 6.6 dengan tepat, jadi diterima.",
+  "Kalimat penunjuk 'Approver tiap jenis ada di bagian 5' dihapus tanpa pengganti. Faktanya sudah ada di baris Approver tabel Roles, jadi diterima sebagai kalimat penunjuk §3.2.",
+  "Bagian 9, Change Emergency: urutan diubah menjadi backup, eksekusi, lalu catat. Urutan ini sama dengan 6.6 dan tidak mengubah arti."
+ ],
+ "contoh_baik": [
+  "Zammad | Sistem tiket Divisi Operation. Pemakaian Zammad untuk CR berstatus (USULAN). -> Zammad | Sistem ticket Divisi Operation; pemakaiannya untuk CR masih berstatus usulan (USULAN)."
+ ]
+}

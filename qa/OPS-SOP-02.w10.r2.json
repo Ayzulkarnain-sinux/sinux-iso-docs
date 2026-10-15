@@ -1,0 +1,27 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 9, baris 'Change Emergency'",
+   "masalah": "Rujukan '(butir 6.6)' dihapus tanpa fakta pengganti. Butir asal mengarahkan ke seluruh prosedur 6.6; baris sekarang hanya memuat backup, eksekusi, dan pencatatan, sehingga kewajiban memberi tahu pelanggan saat itu juga, memberi tahu COO dalam 30 menit, melengkapi CR paling lambat 1 hari kerja, dan review Head of Operation tidak lagi terjangkau dari baris ini. Penanganan menyempit; §3.1 mengizinkan rujukan bila pembaca harus membukanya untuk menjalankan langkah.",
+   "kutipan": "Lead NOC atau Lead SOC yang bertugas mengambil backup jika memungkinkan, mengeksekusi change sebelum CR lengkap, dan mencatat setiap langkah.",
+   "usul": "Pertahankan satu rujukan: '... dan mencatat setiap langkah sesuai butir 6.6 Change Emergency.' atau tulis faktanya: '..., mencatat setiap langkah, memberi tahu pelanggan saat itu juga dan COO dalam 30 menit sejak eksekusi (USULAN), lalu melengkapi CR paling lambat 1 hari kerja setelah eksekusi.'"
+  }
+ ],
+ "nonblocking": [
+  "Definisi Go-gate kini memuat lima syarat lengkap (setara Syarat 1-5 di Policy), tetapi satu kalimat sekitar 60 kata melampaui batas sekitar 30 kata (STYLE §2.6); usul pecah: 'Lima syarat yang harus terpenuhi sebelum change teknis dieksekusi.' lalu syarat ditulis sebagai daftar, atau cukup 'sesuai Syarat 1 sampai 5 di bagian 4'.",
+  "Policy: 'Change Emergency dikecualikan dan mengikuti prosedur Change Emergency' mengutip heading 6.6 dengan benar; lebih jelas bila nomor ditambah: 'mengikuti butir 6.6 Change Emergency'.",
+  "Roles Approver: 'Direktur (COO)' -> 'COO' menyesuaikan nama baris Roles 'COO'; peran sama, tidak dianggap perubahan peran.",
+  "Policy 'Approver tiap jenis ada di bagian 5' dihapus sebagai kalimat penunjuk; fakta tetap di kolom Authority Roles, tidak menyempit.",
+  "PIC 'Lead NOC / Lead SOC' di 6.6 diwarisi bed1bb6, tidak diubah W10."
+ ],
+ "contoh_baik": [
+  "'Jalankan rollback bila verifikasi gagal; jangan improvisasi.' -> 'Jalankan rollback jika verifikasi gagal, tanpa improvisasi.'"
+ ]
+}

@@ -219,3 +219,30 @@ Putaran sweep (penghalusan sesudah DONE), butir 1: frasa proses penyusunan di ba
 Dasar tiap klausul tambahan pada kalimat baru: 8.6 pada gate G3 (bagian 4 butir 3), 8.7 dan 10.2 pada penanganan ketidaksesuaian proses (bagian 9 baris 4), 9.1 pada pengukuran kinerja proses (bagian 6.3 langkah 4), 6.1 pada risiko proyek berat dan temuan RCA yang dinaikkan ke register risiko ISMS (tabel Dokumen terkait, SNX-ISMS-REG-02), Annex A 5.37 pada dokumen ini. Pemetaan itu sama dengan tabel di bagian 3 notes ini; tidak ada klausul atau fakta baru. Nama klausul tetap berasal dari standar (asumsi 13).
 
 Uji sesudah sweep: render_sop.py sukses; lint_doc.py sop "pass": true, fails kosong, warns hanya "5 butir (USULAN)"; validate.py "All validations PASSED!"; blankscan.py "ok" (16 halaman, tanpa temuan). Pencarian "dokumen sumber", "penyusun", "sumber tim", "draf" di teks docx: nol temuan.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Definisi Jabatan Divisi Operation, asli: "Status kelimanya (USULAN) di POL-OPS-001 dan SNX-HR-ORG-01, dan belum ada pemegang bernama." Label dipindah ke akhir sel. Kebijakan butir 4.8, asli: "Change request dan Shift Log dicatat di Service Hub (USULAN). Batas pemakaian dengan Zammad belum diputus." Label dipindah ke akhir butir. Dokumen terkait SNX-COM-SOP-01 mendapat (USULAN) sebagai pengganti kalimat penunjuk.
+
+### W10 kalimat dihapus atau dipindah
+- Ruang lingkup: "Sistem pendukung yang dipakai proses ini disebut di bagian 4." diganti daftar sistemnya.
+- Definisi Proses pendukung: "Daftarnya ada di tabel Dokumen terkait." (penunjuk).
+- Kebijakan butir 4.1: "Pemilik tiap proses tercantum di butir 6.1" (penunjuk).
+- Peran Pemilik proses: "(butir 6.1)".
+- Intro 6.1: "pemilik gate G2 dan G3 ada di butir 6.2." diganti faktanya (G2 Project Manager, G3 Head of Operation).
+- Dokumen terkait SNX-COM-SOP-01: "penunjukan ini diusulkan di butir 6.1." diganti label (USULAN).
+- Bagian 9 baris Checklist G3: pengulangan pelaku "lalu Head of Operation memeriksa ulang G3" disatukan ke kalimat pertama.
+
+### W10 selisih angka
+- 6.2: hilang karena penunjuk "ada di butir 6.2" di intro 6.1 diganti faktanya; prosedur 6.2 tetap ada.
+
+### W10 catatan
+- Pihak luar: "pelanggan" (dokumen induk OPS).
+- "review manajemen" ditulis "Management Review"; "bila" di syarat gate diganti "jika".
+
+### W10 putaran perbaikan 1 (qa/OPS-PRC-01.w10.r1.json)
+- Intro 6.1: "kolom Output / Record" dikembalikan ke judul kolom renderer persis, "kolom Output / Rekaman".
+- 6.3 langkah 5, output: "Record Management Review" menjadi "Record hasil Management Review".
+- Scope, daftar sistem pengganti rujukan bagian 4: Google Drive SINUX ditambahkan agar sama lengkap dengan bagian 4.
+- Definisi Proses pendukung: contoh "kontrol akses, backup, dan manajemen risiko" dibuang; rujukan "Daftarnya tercantum di tabel Dokumen terkait." dikembalikan (penghapusan pointer di bagian kalimat dihapus di atas dibatalkan).
+- Pointer lain yang diganti fakta diperiksa ulang terhadap bed1bb6: intro 6.1 (pemilik G2 dan G3) sama dengan PIC 6.2 langkah 3 dan 6; tidak ada fakta yang menyempit.
