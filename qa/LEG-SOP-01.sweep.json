@@ -1,0 +1,34 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 5, baris Line Manager Legal dan Staff Legal (kolom tanggung jawab)",
+      "masalah": "Kalimat baru 'Dipetakan ke jabatan Legal & Compliance (JA-08/JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).' berbentuk pasif tanpa pelaku. Diterima karena pelaku pemetaan belum ditetapkan (K-13) dan rumusannya sama persis dengan SNX-LEG-SOP-03.",
+      "bukti": "specs/LEG-SOP-03.json baris 141 dan 146 memuat kalimat identik; specs/HR-ORG-01.json baris 650-659: Line Manager Legal = Legal & Compliance (JA-08), Staff Legal = Legal & Compliance (JA-09), '(USULAN), menunggu konfirmasi (K-13)'."
+    },
+    {
+      "lokasi": "Butir 4.6, kalimat ketiga",
+      "masalah": "Frasa proses penyusunan 'yang tidak tertulis di draf tim sebelumnya (SOP Divisi Legal versi 0.1) ditetapkan dari pembagian ini' masih ada (pasif tanpa pelaku). Sudah ada sebelum sweep dan di luar butir instruksi; kandidat putaran berikut. SNX-LEG-SOP-03 butir 4.26 tidak memakai frasa draf tim.",
+      "bukti": "Diff baris 39 (bagian sebelum dan sesudah sama-sama memuatnya); specs/LEG-SOP-03.json baris 136."
+    },
+    {
+      "lokasi": "Bagian 11, Dokumen terkait, baris SNX-LEG-SOP-03",
+      "masalah": "Keterangan hanya menyebut retensi (butir 4.27), padahal butir 4.6 kini merujuk SNX-LEG-SOP-03 untuk pemilik rekaman. Opsional: tambah 'acuan pemilik rekaman (butir 4.6)'.",
+      "bukti": "specs/LEG-SOP-01.json related_documents: ['SNX-LEG-SOP-03', 'Legal Document Control & Retention; tempat usulan penetapan periode retensi (butir 4.27).']"
+    },
+    {
+      "lokasi": "Bagian 11, Dokumen terkait, baris SNX-HR-JA-01",
+      "masalah": "Keterangan menyempit dari 'uraian tugas, wewenang, dan indikator kinerja Line Manager Legal dan Staff Legal' menjadi 'uraian jabatan Legal & Compliance (JA-08 dan JA-09)'. Masih dalam butir 2 dan selaras dengan SNX-LEG-SOP-03; tidak mengubah proses.",
+      "bukti": "Diff baris 530; specs/LEG-SOP-03.json baris 645; specs/HR-JA-01.json baris 945 dan 1031 (h2 'JA-08 Legal & Compliance', 'JA-09 Legal & Compliance')."
+    }
+  ],
+  "cek": {
+    "butir_1": "Dikerjakan. Docx keluaran: 'perlu konfirmasi konsultan' 1 kali, 'dikonfirmasi konsultan' 0 kali.",
+    "butir_2": "Dikerjakan. Pemetaan peran ke JA-08/JA-09 berlabel (USULAN) di bagian 5 dan 11; 8 baris pemilik rekaman Staff Legal diganti Line Manager Legal sesuai SNX-LEG-SOP-03 butir 4.26 dan tabel rekamannya (semua pemilik Line Manager Legal); alasan tertulis di notes ## Sweep. 'pemilik Staff Legal' 0 kali di docx.",
+    "fakta_baru": "Tidak ada tanpa dasar: JA-08, JA-09, Legal & Compliance, K-13, K-03 ada di specs/HR-ORG-01.json; pemilik rekaman ada di specs/LEG-SOP-03.json.",
+    "konsistensi_internal": "Butir 4.24 dan 4.25 (Staff Legal menyimpan) dan tabel peran (Staff Legal menyiapkan dan mencatat) tetap selaras dengan Line Manager Legal sebagai pemilik.",
+    "pola_terlarang": "Docx keluaran: em-dash 0, en-dash 0; SKILL_, DOCTRINE, DEC-, HANDOVER, KODE §n, NAMA_GARIS_BAWAH, staging, packet, Claude, Altair, alat KB: semua 0.",
+    "butir_tidak_dikerjakan": "nihil"
+  }
+}

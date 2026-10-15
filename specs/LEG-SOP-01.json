@@ -131,7 +131,7 @@
   "4.3 Departemen Legal mengklasifikasikan risiko dan mengeskalasinya sesuai tingkatnya, tidak menyimpannya sendiri (butir 4.17 sampai 4.19).",
   "4.4 Departemen Legal menjaga kerahasiaan dokumen dan data.",
   "4.5 Departemen Legal memberi opini dan rekomendasi risiko. Keputusan bisnis tetap pada Manajemen.",
-  "4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (SOP Divisi Legal versi 0.1) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).",
+  "4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Line Manager Legal menjadi pemilik rekaman Departemen Legal di bagian 11 dan Staff Legal pencatatnya, sama dengan SNX-LEG-SOP-03. Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (SOP Divisi Legal versi 0.1) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).",
   "4.7 Pemohon mengajukan permintaan lewat tiket GLPI (USULAN).",
   "4.8 Pemohon menyertakan data permintaan: pihak, objek, nilai, jangka waktu, tenggat, dan dokumen pendukung. Untuk kontrak, Pemohon menambahkan term sheet atau kesepakatan komersial dan identitas para pihak.",
   "4.9 Pemohon melibatkan Departemen Legal sejak tahap negosiasi komersial, sebelum ada komitmen tertulis kepada pihak luar.",
@@ -160,12 +160,12 @@
  "roles": [
   [
    "Line Manager Legal",
-   "Memimpin Departemen Legal dan melapor ke COO (USULAN, butir K-03 di SNX-HR-ORG-01). Menugaskan Staff Legal dan menetapkan tenggat (prosedur 6.1), menyetujui paket review dan meneruskan kontrak ke persetujuan DoA (6.2), mengeskalasi risiko Tinggi (6.3), memverifikasi akta (6.6), berkoordinasi dengan VP Tech Operation and Services (6.7), merekomendasikan strategi sengketa (6.8), mengatur akses dokumen (6.9), dan melapor ke Manajemen (6.10). Uraian tugas rinci ada di SNX-HR-JA-01.",
+   "Memimpin Departemen Legal dan melapor ke COO (USULAN, butir K-03 di SNX-HR-ORG-01). Menugaskan Staff Legal dan menetapkan tenggat (prosedur 6.1), menyetujui paket review dan meneruskan kontrak ke persetujuan DoA (6.2), mengeskalasi risiko Tinggi (6.3), memverifikasi akta (6.6), berkoordinasi dengan VP Tech Operation and Services (6.7), merekomendasikan strategi sengketa (6.8), mengatur akses dokumen (6.9), dan melapor ke Manajemen (6.10). Uraian tugas rinci ada di SNX-HR-JA-01. Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
    "Persetujuan akhir internal Departemen Legal; menetapkan penugasan dan tenggat; menghentikan proses yang berisiko Tinggi. Keputusan atas risiko itu ada pada Manajemen (butir 4.5)."
   ],
   [
    "Staff Legal",
-   "Melapor ke Line Manager Legal. Mencatat permintaan di register (6.1), menyusun draf, tabel redline, dan ringkasan risiko (6.2), menyiapkan penandatanganan dan arsip (6.4), memantau register kontrak dan perizinan (6.5 dan 6.6), meninjau pelindungan data pribadi dan menyusun memo kepatuhan (6.7), menyusun berkas kasus (6.8), serta mengelola dokumen legal (6.9). Uraian tugas rinci ada di SNX-HR-JA-01.",
+   "Melapor ke Line Manager Legal. Mencatat permintaan di register (6.1), menyusun draf, tabel redline, dan ringkasan risiko (6.2), menyiapkan penandatanganan dan arsip (6.4), memantau register kontrak dan perizinan (6.5 dan 6.6), meninjau pelindungan data pribadi dan menyusun memo kepatuhan (6.7), menyusun berkas kasus (6.8), serta mengelola dokumen legal (6.9). Uraian tugas rinci ada di SNX-HR-JA-01. Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
    "Menyiapkan dan mencatat. Persetujuan ada pada Line Manager Legal."
   ],
   [
@@ -788,11 +788,11 @@
  "related_documents": [
   [
    "SNX-HR-JA-01",
-   "Job Analysis dan Uraian Jabatan; memuat uraian tugas, wewenang, dan indikator kinerja Line Manager Legal dan Staff Legal."
+   "Job Analysis dan Uraian Jabatan; memuat uraian jabatan Legal & Compliance (JA-08 dan JA-09), tempat peran Line Manager Legal dan Staff Legal dipetakan."
   ],
   [
    "SNX-HR-ORG-01",
-   "Struktur Organisasi SINUX; sumber nama peran. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09 (USULAN, butir K-13); atasan JA-08 menunggu konfirmasi (butir K-03)."
+   "Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13); atasan JA-08 menunggu konfirmasi (butir K-03)."
   ],
   [
    "SNX-ISMS-PRO-01",
@@ -830,42 +830,42 @@
  "records": [
   [
    "Register permintaan",
-   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Register kontrak",
-   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Register perizinan",
-   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Draf, tabel redline, ringkasan risiko, dan catatan perubahan negosiasi",
-   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Salinan final kontrak dan bukti penandatanganan",
-   "Arsip di folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Arsip di folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Dokumen asli kontrak",
-   "Tempat aman dengan akses terbatas (butir 4.25); pemilik Staff Legal",
+   "Tempat aman dengan akses terbatas (butir 4.25); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Berkas kasus",
-   "Akses terbatas (butir 4.30); pemilik Staff Legal",
+   "Akses terbatas (butir 4.30); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
    "Memo kepatuhan",
-   "Folder Google Drive departemen Legal (butir 4.24); pemilik Staff Legal",
+   "Folder Google Drive departemen Legal (butir 4.24); pemilik Line Manager Legal",
    "Belum ditetapkan (butir 4.27)"
   ],
   [
@@ -875,7 +875,7 @@
   ]
  ],
  "iso_refs": {
-  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan).",
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan).",
   "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk bagian 5 dan butir 4.6; 7.4 (Komunikasi), untuk koordinasi dengan Pemohon dan departemen lain di prosedur 6.1 dan 6.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk register, versi dokumen, arsip, dan retensi di butir 4.2 dan 4.27; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk review kontrak oleh Departemen Legal sebelum penandatanganan di butir 4.1 dan prosedur 6.2.",
   "ISO/IEC 27001:2022": "Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak), untuk prosedur 6.2, 6.6, dan 6.7; Annex A 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.21; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.22; Annex A 5.15 (Kontrol akses), untuk butir 4.26; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.27."
  }

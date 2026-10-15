@@ -720,11 +720,11 @@
    "loops": 2,
    "usulan_count": 29,
    "open_items": [],
-   "updated_at": "2026-10-15T00:31:33Z",
+   "updated_at": "2026-10-15T00:31:36Z",
    "pen_agent": "a101f4a97710fa3fb",
    "ooxml": "PASSED",
    "fix_queued": "0",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 17,
@@ -734,7 +734,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-LEG-SOP-01",
    "out_path": "out/04_Legal/SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).docx",
    "sources": [
@@ -747,9 +747,9 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 22,
+   "usulan_count": 24,
    "open_items": [],
-   "updated_at": "2026-10-15T00:29:59Z",
+   "updated_at": "2026-10-15T00:37:28Z",
    "pen_agent": "adc9dd25179af16a9",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -797,7 +797,7 @@
    "dept": "COM",
    "action": "T1",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-SOP-01",
    "out_path": "out/05_Commercial/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx",
    "sources": [
@@ -817,9 +817,10 @@
    "loops": 0,
    "usulan_count": 14,
    "open_items": [],
-   "updated_at": "2026-10-14T23:06:09Z",
+   "updated_at": "2026-10-15T00:31:36Z",
    "pen_agent": "ae9eceecd747b5a2d",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 20,
@@ -829,7 +830,7 @@
    "dept": "HR",
    "action": "T1",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-08",
    "out_path": "out/02_HR/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx",
    "sources": [
@@ -844,9 +845,10 @@
    "loops": 0,
    "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-14T23:02:01Z",
+   "updated_at": "2026-10-15T00:32:03Z",
    "pen_agent": "a17f18a1b07137494",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 21,
@@ -2330,9 +2332,9 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-REG-01",
-   "out_path": null,
+   "out_path": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
    "sources": [
     {
      "id": "1Z9PXCiBgb8c13TGx8BG3ajlbxNEDWMg6KaSy0mi7ehQ",
@@ -2340,12 +2342,14 @@
      "title": "7. Billing & Collection Monitoring Register"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
    "usulan_count": 0,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:21:53Z",
+   "open_items": [
+    "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
+   ],
+   "updated_at": "2026-10-15T00:37:15Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "a3d6b69aee3386660"
@@ -2392,7 +2396,7 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": "2026-10-15T00:31:24Z",
+   "updated_at": "2026-10-15T00:31:36Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "adee81774ba4f9731"

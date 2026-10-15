@@ -2,7 +2,7 @@
 
 Status: DRAFTED (spec + notes ada). Spec: specs/LEG-SOP-01.json. Mode sop, aksi T1, wave W3, nomor SNX-LEG-SOP-01 (nomor lama dipertahankan), department Legal, classification INTERNAL (worklist), audit_class C2, review_period YEARLY, status Draft, revision 00, effective_date kosong. Judul meta "Legal Operational" (renderer menambah "SOP" di Document Title). Approval persis: prepared "Staff Legal", reviewed "Line Manager Legal", approved "Samuel Kristanto Utomo / President Director". process_owner "Line Manager Legal" (sumber: "Pemilik SOP: Line Manager Legal").
 
-Uji terakhir: `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-SOP-01.json /tmp/pen-LEG-SOP-01/LEG-SOP-01.docx` lalu `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-01/LEG-SOP-01.docx sop` memberi `"pass": true`, `"fails": []`, satu warn: "18 butir (USULAN) menunggu ACC" (nol warn PIC SLA). Pratinjau PDF (soffice) 23 halaman dilihat lewat contact sheet: sampul, Identity, Revision, Approval, TOC, 11 bagian, dan diagram tampil; diagram dilihat dalam resolusi penuh (13 simpul, rankdir TB, tiga belah ketupat terbaca). Spec memuat 30 butir kebijakan (4.1 sampai 4.30), 10 prosedur (6.1 sampai 6.10) dengan 64 langkah, 17 baris SLA, 6 baris pengecualian, 9 baris rekaman.
+Uji terakhir: `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-SOP-01.json /tmp/pen-LEG-SOP-01/LEG-SOP-01.docx` lalu `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-01/LEG-SOP-01.docx sop` memberi `"pass": true`, `"fails": []`, satu warn: "20 butir (USULAN) menunggu ACC" (nol warn PIC SLA). Pratinjau PDF (soffice) 23 halaman dilihat lewat contact sheet: sampul, Identity, Revision, Approval, TOC, 11 bagian, dan diagram tampil; diagram dilihat dalam resolusi penuh (13 simpul, rankdir TB, tiga belah ketupat terbaca). Spec memuat 30 butir kebijakan (4.1 sampai 4.30), 10 prosedur (6.1 sampai 6.10) dengan 64 langkah, 17 baris SLA, 6 baris pengecualian, 9 baris rekaman.
 
 ## 1. Sumber
 
@@ -48,7 +48,7 @@ Semua kutipan dari fileId 19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb. Penanda markdown da
 
 ## 3. Pemetaan klausul ISO (kriteria)
 
-Checklist tidak memberi acuan klausul untuk baris ini. Klausul di bagian 11 dipilih dari isi dokumen dan berlabel satu kali "(USULAN, dikonfirmasi konsultan)". SoA = konsultan; keterkaitan dengan kontrol 5.31 yang disebut audit (status "Perlu keputusan") adalah inferensi audit, bukan keputusan.
+Checklist tidak memberi acuan klausul untuk baris ini. Klausul di bagian 11 dipilih dari isi dokumen dan berlabel satu kali "(USULAN, perlu konfirmasi konsultan)". SoA = konsultan; keterkaitan dengan kontrol 5.31 yang disebut audit (status "Perlu keputusan") adalah inferensi audit, bukan keputusan.
 
 | Klausul | Isi dokumen yang dirujuk |
 |---|---|
@@ -132,7 +132,7 @@ Delapan placeholder [ISI] dan hasilnya:
 
 ## USULAN
 
-Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 18 kemunculan "(USULAN)" termasuk baris definisi label dan lima baris SLA. Total 17 butir keputusan.
+Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 20 kemunculan "(USULAN)" termasuk baris definisi label, lima baris SLA, dan dua label pemetaan peran Legal di bagian 5 (butir 14). Total 17 butir keputusan.
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -152,7 +152,7 @@ Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 18 kemunc
 | 14 | Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 (dari HR-ORG-01 K-13) | Bagian 11, SNX-HR-ORG-01 | Aziz, dengan Legal |
 | 15 | SNX-LEG-REG-01 sebagai register perizinan | Bagian 11 | Legal |
 | 16 | SNX-LEG-FRM-03 sebagai tempat hasil tinjauan pelindungan data pribadi | Bagian 11 | Legal |
-| 17 | Daftar klausul ISO 9001:2015 (5.3, 7.4, 7.5.3, 8.2.3) dan ISO/IEC 27001:2022 (Annex A 5.31, 5.34, 5.12, 5.15, 5.33), label "(USULAN, dikonfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
+| 17 | Daftar klausul ISO 9001:2015 (5.3, 7.4, 7.5.3, 8.2.3) dan ISO/IEC 27001:2022 (Annex A 5.31, 5.34, 5.12, 5.15, 5.33), label "(USULAN, perlu konfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
 
 ## Open items
 
@@ -191,3 +191,21 @@ Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 18 kemunc
    - Dari pengetahuan umum, bukan sumber: kepanjangan KBLI, NIB, OSS, LKPM, NDA, DoA, PKS; definisi Addendum, Somasi, Wanprestasi, Term sheet; judul klausul ISO. Kepanjangan LKPM dan DoA tidak ditulis di sumber; sisanya istilah baku. Ini tercatat agar Legal dapat mengoreksi.
    - Pelaku tiap langkah pasif dan pemilik rekaman bukan dari sumber (USULAN 9). Nama hasil kerja di kolom Output ("Hasil pemeriksaan penandatangan", "Paket review") adalah rumusan penyusun.
    - Diperbaiki sebelum selesai: kata "Catatan penghentian proses" (nama rekaman karangan) diganti "Penghentian proses tercatat (butir 4.2)" yang bersandar pada prinsip sumber "Semua pekerjaan tercatat".
+
+## Sweep
+
+Putaran penghalusan sesudah DONE (15 Okt 2026). Hanya dua butir diubah; fakta, angka, nama, dan struktur lain tetap. Diff terhadap versi ter-commit (8cdd7bb) dicek: hanya baris di bawah yang berbeda.
+
+| # | Butir | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Label klausul ISO (spec, bagian 11 Acuan standar; notes bagian 3 dan USULAN 17) | "(USULAN, dikonfirmasi konsultan)" | "(USULAN, perlu konfirmasi konsultan)" |
+| 2a | Bagian 5, baris Line Manager Legal dan Staff Legal | Tanpa keterangan pemetaan jabatan | Ditambah kalimat penutup: "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." dan sama untuk JA-09, mengikuti rumusan di SNX-LEG-SOP-03 |
+| 2b | Bagian 11, baris SNX-HR-JA-01 | "memuat uraian tugas, wewenang, dan indikator kinerja Line Manager Legal dan Staff Legal" | "memuat uraian jabatan Legal & Compliance (JA-08 dan JA-09), tempat peran Line Manager Legal dan Staff Legal dipetakan" |
+| 2c | Bagian 11, baris SNX-HR-ORG-01 | "Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09 (USULAN, butir K-13)" | "Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13)" |
+| 2d | Tabel rekaman bagian 11, 8 baris (register permintaan, register kontrak, register perizinan, draf dan catatan negosiasi, salinan final, dokumen asli, berkas kasus, memo kepatuhan) | "pemilik Staff Legal" | "pemilik Line Manager Legal" (baris Laporan bulanan sudah Line Manager Legal) |
+| 2e | Butir 4.6 | Pembagian menetapkan, menyiapkan, memutuskan, lalu kalimat USULAN pelaku dan pemilik rekaman | Disisipi: "Line Manager Legal menjadi pemilik rekaman Departemen Legal di bagian 11 dan Staff Legal pencatatnya, sama dengan SNX-LEG-SOP-03." |
+
+Alasan 2d dan 2e: SNX-LEG-SOP-03 butir 4.26 menetapkan Line Manager Legal sebagai pemilik rekaman dan Staff Legal sebagai pencatat, dan seluruh baris tabel Rekaman di sana berpemilik Line Manager Legal. Draf pertama dokumen ini memberi Staff Legal sebagai pemilik, jadi diselaraskan, bukan dipertahankan. Tidak ada perbedaan yang dibiarkan. Tabel peran di bagian 5 tetap menyatakan Staff Legal mencatat dan menyiapkan, sehingga pembedaan "menetapkan" dan "mencatat" konsisten di bagian 4, 5, dan 11.
+
+Uji sweep: render_sop.py lalu lint_doc.py sop memberi "pass": true, "fails": [], satu warn "20 butir (USULAN) menunggu ACC" (dua lebih banyak dari sebelumnya karena dua label pemetaan di 2a); validate.py (docx skill) "All validations PASSED!"; blankscan.py "ok 23 LEG-SOP-01.docx []".
+
