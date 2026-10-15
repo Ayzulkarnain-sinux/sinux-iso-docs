@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Tabel Peran baris Manager of Product Tech dan VP Commercial, Dokumen Terkait baris SNX-COM-SOP-02, tabel Rekaman baris Catatan persetujuan penawaran",
+      "masalah": "Empat perubahan ini di luar teks butir 1 instruksi sweep (hanya C3.2). Semuanya perbaikan rujukan menggantung 'butir 4.15' yang diminta temuan putaran pertama, makna tidak berubah, dan tiap rujukan baru punya dasar di spec sumber. Dicatat di notes bagian 'Sweep r1'.",
+      "bukti": "specs/COM-SOP-02.json butir 4.5: 'Manager of Product Tech mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN)'; records baris 'Catatan persetujuan penawaran': 'Rekaman baru (USULAN). Lokasi belum ditetapkan; pemilik VP Commercial'; butir 4.10 dan 6.4 masih ada. git diff specs/COM-FRM-01.json: 5 baris diubah, tidak ada perubahan lain."
+    },
+    {
+      "lokasi": "Tabel Peran baris COO",
+      "masalah": "Masih tanpa rujukan butir untuk wewenang menyetujui harga dan diskon (SNX-COM-SOP-02 butir 4.7). Sisa temuan lama, di luar butir 1, jadi bukan butir yang terlewat.",
+      "bukti": "qa/COM-FRM-01.sweep.r1.json nonblocking ke-4; spec baris COO tidak berubah."
+    },
+    {
+      "lokasi": "Aspek C3.2",
+      "masalah": "Label '(USULAN)' di C3.2 menerangkan status wewenang di SNX-COM-SOP-02, bukan usulan baru formulir ini, tetapi ikut dihitung lint sehingga jumlah naik dari 19 ke 20. Informasi saja.",
+      "bukti": "qa/COM-FRM-01.lint.json warn '20 butir (USULAN) menunggu ACC'; specs/COM-SOP-02.json butir 4.7 'Wewenang berikut berstatus (USULAN): ... COO menyetujui harga dan diskon'."
+    }
+  ],
+  "cek": {
+    "pemblokir_r1": "selesai: nol kemunculan '4.15' di spec dan teks docx; C3.2 merujuk butir 4.7 (wewenang COO) dan bagian 11 (rekaman), keduanya ada di specs/COM-SOP-02.json HEAD f88e5d9 yang kini berisi butir 4.1 sampai 4.14",
+    "refcheck": "python3 -I reports/orch/refcheck.py COM-FRM-01 -> {}",
+    "docx_sama_spec": "lima string spec baru ditemukan persis di word/document.xml docx out/05_Commercial",
+    "gaya": "nol em-dash, nol rujukan internal AI, tidak ada pasif tanpa pelaku atau benda sebagai pelaku kata kerja manusia yang baru",
+    "fakta_baru": "nihil"
+  }
+}

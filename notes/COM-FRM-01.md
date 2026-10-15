@@ -176,3 +176,31 @@ Spec memuat 19 kemunculan persis "(USULAN)" (satu di antaranya baris definisi la
    - Tanpa kutipan sumber tetapi ada di dokumen, semuanya berlabel USULAN atau tercatat di notes: definisi umum Assumptions, BOM/BOQ, Exclusions, TOP (disalin dari definisi COM-SOP-02, bukan kalimat Sales SOP); susunan aspek C1 sampai C4 dan nilai Status serta Hasil Review (USULAN 4 dan 5); aspek C3.6 dan C4.6 (USULAN 6 dan 7); pembagian dua tahap (USULAN 2); judul klausul ISO (USULAN 12).
    - Tidak berlabel di dokumen tetapi tafsir saya: pembagian pengisi C3 antara Business Development dan Legal & Compliance (asumsi 5), dan pengecualian "order tambahan dan perpanjangan" yang diturunkan dari COM-SOP-01 butir 4.17 (berlabel USULAN di Lingkup).
    - Rujukan butir ke dokumen lain (COM-SOP-01 butir 4.3, 4.11, 4.17, 4.19, 6.3, 6.8; COM-SOP-02 butir 4.10, 4.15, 6.2, 6.4; LEG-SOP-02 butir 6.1; FAT-SOP-01 butir 4.5, 4.8; OPS-SOP-01 butir 4.1; OPS-SOP-05 butir 4.1; ISMS-PRO-01 butir 4.3; HR-ORG-01 K-10) dicocokkan dengan spec di repo saat saya menulis. Spec lane lain masih Draft dan bisa berubah. SNX-OPS-FRM-06 dan SNX-LEG-REG-01 dicocokkan hanya pada judul (specs/OPS-FRM-06.json dan specs/LEG-REG-01.json), isinya tidak dibaca.
+
+## Sweep
+
+Putaran penghalusan atas perintah orkestrator (berkas /tmp/claude-0/prompts/COM-FRM-01.sweep.txt). Satu butir diubah, di specs/COM-FRM-01.json saja.
+
+| # | Lokasi | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Aspek C3.2, kolom Hal yang Diperiksa | "Harga dan diskon di PO atau kontrak sama dengan penawaran yang COO setujui (Catatan persetujuan penawaran, SNX-COM-SOP-02 butir 4.15). Perlakuan PPN mengikuti SNX-FAT-SOP-01 butir 4.5." | "Harga dan diskon di PO atau kontrak sama dengan penawaran yang COO setujui menurut SNX-COM-SOP-02 butir 4.7, wewenang yang berstatus USULAN di dokumen itu. Rekaman persetujuannya Catatan persetujuan penawaran (butir 4.15). Perlakuan PPN mengikuti SNX-FAT-SOP-01 butir 4.5." |
+
+Catatan: butir 4.7 sekarang menjadi rujukan wewenang COO, butir 4.15 tetap hanya untuk rekaman. Isi bagian 3 butir 5 notes ini (C3.2 merujuk butir 4.7) kini cocok dengan docx. Tidak ada keputusan baru; status USULAN wewenang COO tetap dibawa dari SNX-COM-SOP-02, pemutus open item 3 (owner dan Samuel). Temuan nonblocking lain di qa/COM-FRM-01.verify.json tidak diubah karena di luar butir perintah.
+
+Uji sesudah perubahan: render_sop.py selesai tanpa galat; lint_doc.py generic "pass": true, fails kosong, satu warn "19 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan.py "ok 17 COM-FRM-01.docx []".
+
+### Sweep r1 (perbaikan pemblokir: butir 4.15 SNX-COM-SOP-02 dihapus)
+
+SNX-COM-SOP-02 kini hanya punya butir 4.1 sampai 4.14 (specs/COM-SOP-02.json dibaca ulang). Lima rujukan "butir 4.15" di specs/COM-FRM-01.json diganti. Mulai dari sini, penyebutan "butir 4.15" di bagian lain notes ini (bagian 1 sampai 5 dan Sweep di atas) bersifat historis dan tidak lagi berlaku.
+
+| # | Lokasi | Sebelum | Sesudah | Dasar padanan |
+|---|---|---|---|---|
+| 1 | Aspek C3.2 | "... wewenang yang berstatus USULAN di dokumen itu. Rekaman persetujuannya Catatan persetujuan penawaran (butir 4.15)." | "... wewenang yang berstatus (USULAN) di dokumen itu. Catatan persetujuan penawaran memuat persetujuan itu (bagian 11 SNX-COM-SOP-02)." Label dibakukan jadi "(USULAN)" dan kalimat diberi predikat, keduanya di kalimat yang sama | Tabel rekaman COM-SOP-02: "Catatan persetujuan penawaran" ada di bagian 11, tanpa butir |
+| 2 | Tabel Peran, Manager of Product Tech | "(USULAN, SNX-COM-SOP-02 butir 4.15)" | "(USULAN, SNX-COM-SOP-02 butir 4.5)" | COM-SOP-02 butir 4.5 kini memuat eskalasi solusi tidak feasible ke VP Commercial (USULAN) |
+| 3 | Tabel Peran, VP Commercial | "(USULAN, selaras dengan SNX-COM-SOP-02 butir 4.15)" | "(USULAN, selaras dengan bagian 11 SNX-COM-SOP-02)" | Tabel rekaman COM-SOP-02 menulis pemilik Catatan persetujuan penawaran VP Commercial, tanpa butir |
+| 4 | Dokumen Terkait, SNX-COM-SOP-02 | "butir 4.15 dan 4.10 mengatur Catatan persetujuan penawaran dan pemutus pengecualian komersial, dan butir 6.4 mengatur prosesnya" | "butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran" | Butir 4.10 dan 6.4 masih ada; rekaman di bagian 11 |
+| 5 | Rekaman, baris Catatan persetujuan penawaran | "Pemilik: VP Commercial (SNX-COM-SOP-02 butir 4.15)." | "Pemilik: VP Commercial (bagian 11 SNX-COM-SOP-02)." | Tabel rekaman COM-SOP-02 |
+
+Jumlah "(USULAN)" persis di spec naik dari 19 ke 20 karena label di butir 1. Tidak ada keputusan baru; status USULAN dibawa dari SNX-COM-SOP-02. Dua temuan nonblocking lain di qa/COM-FRM-01.sweep.r1.json (baris COO di tabel Peran tanpa rujukan, dan temuan verifikasi lama) tidak diubah karena di luar perintah.
+
+Uji: `python3 -I reports/orch/refcheck.py COM-FRM-01` memberi `{}`; render_sop.py tanpa galat; lint_doc.py generic "pass": true, fails kosong, satu warn "20 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan.py "ok 17 COM-FRM-01.docx []".

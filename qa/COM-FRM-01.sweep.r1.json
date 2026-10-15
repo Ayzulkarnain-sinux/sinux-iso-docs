@@ -1,0 +1,32 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Aspek C3.2 (Harga dan Persetujuan Internal), kolom Hal yang Diperiksa; specs/COM-FRM-01.json baris 219",
+      "masalah": "Kalimat baru hasil sweep 'Rekaman persetujuannya Catatan persetujuan penawaran (butir 4.15)' merujuk SNX-COM-SOP-02 butir 4.15, padahal butir itu sudah tidak ada di spec sumber. SNX-COM-SOP-02 kini hanya punya butir 4.1 sampai 4.14 (butir 4.15 dihapus pada polish COM-SOP-02). Notes sweep juga menulis 'butir 4.15 tetap hanya untuk rekaman' tanpa dasar. Butir 1 baru selesai separuh: wewenang COO sudah diarahkan ke 4.7, tetapi rujukan rekaman menunjuk butir yang tidak ada. Dasar yang ada untuk rekaman itu adalah tabel peran VP Commercial ('butir 4.8 dan bagian 11'), langkah 6.5 'Simpan Catatan persetujuan penawaran', dan baris bagian 11 'Rekaman baru (USULAN)'.",
+      "bukti": "/tmp/claude-0/sweep/COM-FRM-01.diff baris +368. Daftar butir di specs/COM-SOP-02.json (HEAD f88e5d9 'ISO COM-SOP-02 polish', 2026-10-15 00:51): 4.1 sampai 4.14, nol '4.15'. notes/COM-SOP-02.md baris 207: 'Butir 4.15 dihapus.' COM-FRM-01 DONE b4372c2 00:10, lebih dulu dari polish itu. Butir 4.15 lama (09a7172) adalah wadah penetapan USULAN, bukan butir rekaman."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "Tabel Peran baris Manager of Product Tech dan VP Commercial, Dokumen Terkait baris SNX-COM-SOP-02, tabel Rekaman baris Catatan persetujuan penawaran",
+      "masalah": "Empat rujukan lain ke SNX-COM-SOP-02 butir 4.15 juga menggantung karena butir itu sudah dihapus. Ini sisa dari sebelum sweep dan di luar butir perintah, jadi perlu butir sweep sendiri.",
+      "bukti": "Teks docx out/05_Commercial: '(USULAN, SNX-COM-SOP-02 butir 4.15)', '(USULAN, selaras dengan SNX-COM-SOP-02 butir 4.15)', 'butir 4.15 dan 4.10 mengat...', 'Pemilik: VP Commercial (SNX-COM-SOP-02 butir 4.15)'; total lima kemunculan '4.15' termasuk C3.2."
+    },
+    {
+      "lokasi": "Aspek C3.2",
+      "masalah": "Status ditulis 'wewenang yang berstatus USULAN' tanpa kurung, tidak memakai bentuk label baku '(USULAN)', sehingga penghitung label bisa melewatkannya. Isinya berdasar: SNX-COM-SOP-02 butir 4.7 memang berstatus (USULAN).",
+      "bukti": "specs/COM-SOP-02.json butir 4.7: 'Wewenang berikut berstatus (USULAN): ... COO menyetujui harga dan diskon'."
+    },
+    {
+      "lokasi": "Aspek C3.2",
+      "masalah": "'Rekaman persetujuannya Catatan persetujuan penawaran (butir 4.15).' kalimat tanpa predikat. Masalah gaya kecil saja.",
+      "bukti": "/tmp/claude-0/sweep/COM-FRM-01.diff baris +368."
+    },
+    {
+      "lokasi": "Tabel Peran baris COO",
+      "masalah": "Bagian temuan verifikasi sebelumnya tentang baris COO tanpa rujukan atau label tidak dikerjakan. Itu di luar butir 1 yang hanya menyebut C3.2, jadi tidak dihitung sebagai butir yang terlewat.",
+      "bukti": "qa/COM-FRM-01.verify.json nonblocking 'Aspek C3.2 dan tabel Peran baris COO'; spec diff hanya mengubah baris C3.2."
+    }
+  ]
+}

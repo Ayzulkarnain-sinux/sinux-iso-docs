@@ -125,10 +125,10 @@
           "widths_cm": [4.5, 11.5],
           "rows": [
             ["Business Development", "Mengisi tabel Informasi Order dan Kebutuhan Customer, kelompok C1, dan aspek C3.1 sampai C3.3. Meminta peran lain mengisi kelompoknya, membandingkan PO atau draf kontrak dengan penawaran, mencatat temuan, dan menyimpan formulir terisi (Ketentuan butir 1, 3 sampai 6, dan 8 sampai 10). Dipetakan ke Business Development (JA-07) di SNX-HR-ORG-01."],
-            ["Manager of Product Tech", "Mengisi kelompok C2 (Ketentuan butir 3 dan 4). Mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN, SNX-COM-SOP-02 butir 4.15). Jabatan JA-05 di SNX-HR-ORG-01."],
+            ["Manager of Product Tech", "Mengisi kelompok C2 (Ketentuan butir 3 dan 4). Mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN, SNX-COM-SOP-02 butir 4.5). Jabatan JA-05 di SNX-HR-ORG-01."],
             ["Service Delivery Manager", "Mengisi kelompok C4 (Ketentuan butir 3 dan 4). Jabatan usulan tanpa pemegang di SNX-HR-ORG-01 (K-10)."],
             ["Legal & Compliance", "Mengisi aspek C3.4 sampai C3.7 dan memberi hasil review kontrak menurut SNX-LEG-SOP-02 (Ketentuan butir 4 dan 5). Jabatan JA-08 dan JA-09 di SNX-HR-ORG-01."],
-            ["VP Commercial", "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik formulir terisi (USULAN, selaras dengan SNX-COM-SOP-02 butir 4.15). Jabatan JA-03 di SNX-HR-ORG-01."],
+            ["VP Commercial", "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik formulir terisi (USULAN, selaras dengan bagian 11 SNX-COM-SOP-02). Jabatan JA-03 di SNX-HR-ORG-01."],
             ["COO", "Pemilik dokumen ini menurut blok Identity (USULAN). Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi formulir ini."],
             ["Direktur Utama", "Memutuskan TOP di atas standar secara tertulis (aspek C3.3, SNX-COM-SOP-02 butir 4.10). Tidak mengisi formulir ini."]
           ]
@@ -216,7 +216,7 @@
           "widths_cm": [1.5, 3.3, 6.5, 1.9, 2.8],
           "rows": [
             ["C3.1", "Dokumen Persyaratan Customer", "Daftar dokumen customer yang memuat persyaratan kontraktual: PO, draf kontrak, syarat dan ketentuan, dan lampiran, beserta nomor dan tanggalnya.", "", ""],
-            ["C3.2", "Harga dan Persetujuan Internal", "Harga dan diskon di PO atau kontrak sama dengan penawaran yang COO setujui (Catatan persetujuan penawaran, SNX-COM-SOP-02 butir 4.15). Perlakuan PPN mengikuti SNX-FAT-SOP-01 butir 4.5.", "", ""],
+            ["C3.2", "Harga dan Persetujuan Internal", "Harga dan diskon di PO atau kontrak sama dengan penawaran yang COO setujui menurut SNX-COM-SOP-02 butir 4.7, wewenang yang berstatus (USULAN) di dokumen itu. Catatan persetujuan penawaran memuat persetujuan itu (bagian 11 SNX-COM-SOP-02). Perlakuan PPN mengikuti SNX-FAT-SOP-01 butir 4.5.", "", ""],
             ["C3.3", "Syarat Pembayaran", "TOP di PO atau kontrak tidak melebihi TOP standar di SNX-FAT-SOP-01 butir 4.8, atau Direktur Utama sudah menyetujui TOP yang lebih panjang secara tertulis.", "", ""],
             ["C3.4", "Klausul yang Menyimpang", "Klausul atau syarat customer yang menyimpang dari template kontrak dan klausul standar SINUX, dan komitmen di luar kontrak. Penyimpangan itu pengecualian komersial menurut SNX-COM-SOP-02.", "", ""],
             ["C3.5", "Kerahasiaan dan Keamanan Informasi", "Persyaratan kontraktual tentang NDA, kerahasiaan, keamanan informasi, dan pelindungan data pribadi, serta tingkat klasifikasi informasi customer menurut SNX-ISMS-PRO-01.", "", ""],
@@ -299,7 +299,7 @@
           "widths_cm": [4, 12],
           "rows": [
             ["SNX-COM-SOP-01", "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini calon rekaman Business Requirement di butir 6.3 (USULAN)."],
-            ["SNX-COM-SOP-02", "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.15 dan 4.10 mengatur Catatan persetujuan penawaran dan pemutus pengecualian komersial, dan butir 6.4 mengatur prosesnya. Formulir ini calon bentuk Catatan review scope (USULAN)."],
+            ["SNX-COM-SOP-02", "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini calon bentuk Catatan review scope (USULAN)."],
             ["SNX-LEG-SOP-02", "Contract Review & Legal Approval, berstatus Draft. Butir 6.1 mengatur pengajuan permintaan review kontrak, dan dokumen itu mengatur Persetujuan Legal."],
             ["SNX-LEG-FRM-01", "Customer Contract Review Checklist. Daftar periksa review kontrak customer yang lengkap (USULAN)."],
             ["SNX-LEG-REG-01", "Company Licenses & Permits Register. Tempat perizinan SINUX yang dirujuk aspek C3.6 (USULAN)."],
@@ -325,7 +325,7 @@
             ["Formulir terisi per order", "Lokasi berkas belum ditetapkan; Business Development menulis lokasinya di tabel Lokasi Penyimpanan Dokumen (Ketentuan butir 10). Pencatat: Business Development. Pemilik: VP Commercial (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3.", "Belum ditetapkan"],
             ["Business Requirement dan Discovery Notes", "CRM. Pencatat dan pengelola: Business Development (SNX-COM-SOP-01 butir 4.3).", "Belum ditetapkan"],
             ["PO dan kontrak customer, termasuk drafnya", "Lokasi dan pemilik belum ditetapkan (tabel rekaman SNX-COM-SOP-01).", "Belum ditetapkan"],
-            ["Catatan persetujuan penawaran", "Lokasi belum ditetapkan. Pemilik: VP Commercial (SNX-COM-SOP-02 butir 4.15).", "Belum ditetapkan"],
+            ["Catatan persetujuan penawaran", "Lokasi belum ditetapkan. Pemilik: VP Commercial (bagian 11 SNX-COM-SOP-02).", "Belum ditetapkan"],
             ["Hasil review kontrak", "Lokasi belum ditetapkan. Pemilik: Legal & Compliance (SNX-COM-SOP-01 butir 4.19).", "Belum ditetapkan"]
           ]
         }},
