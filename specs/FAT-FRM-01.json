@@ -16,7 +16,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Finance Staff",
-   "reviewed": "Finance Lead",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -54,7 +54,7 @@
       "rows": [
        [
         "Penerimaan uang dari pelanggan",
-        "Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection (dalam peninjauan dan belum bernomor) dan SNX-FAT-REG-01."
+        "Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection (dalam peninjauan) dan SNX-FAT-REG-01."
        ],
        [
         "Persetujuan invoice ke klien",
@@ -62,7 +62,7 @@
        ],
        [
         "Tata cara pengajuan pembayaran",
-        "Ada di SOP Payment and Disbursement Approval, dalam peninjauan dan belum bernomor. Form ini hanya mencatat hasilnya."
+        "Ada di SOP Payment and Disbursement Approval, dalam peninjauan. Form ini hanya mencatat hasilnya."
        ],
        [
         "Batas nilai dan tingkat persetujuan",
@@ -140,6 +140,14 @@
         "Finance, Accounting & Tax, departemen pemilik form ini."
        ],
        [
+        "Finance Lead",
+        "Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+       ],
+       [
+        "Finance Staff",
+        "Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
+       ],
+       [
         "(USULAN)",
         "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
        ]
@@ -206,11 +214,11 @@
        ],
        [
         "Finance Staff",
-        "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)."
+        "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)."
        ],
        [
         "Finance Lead",
-        "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)."
+        "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)."
        ],
        [
         "Penyetuju",
@@ -683,7 +691,7 @@
       "rows": [
        [
         "SNX-HR-ORG-01",
-        "Struktur Organisasi SINUX: sumber nama peran Finance Lead dan Finance Staff, yang belum dipetakan ke jabatan (butir K-13)."
+        "Struktur Organisasi SINUX: sumber nama jabatan. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 3 (butir K-13)."
        ],
        [
         "SNX-HR-JA-01",
@@ -699,7 +707,7 @@
        ],
        [
         "SNX-FAT-SOP-05",
-        "Tax Administration & Reporting: butir 6.3 menyebut form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (USULAN)."
+        "Tax Administration & Reporting: butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN)."
        ],
        [
         "SNX-FAT-SOP-06",

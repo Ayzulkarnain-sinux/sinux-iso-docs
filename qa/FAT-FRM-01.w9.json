@@ -1,0 +1,33 @@
+{
+ "key": "FAT-FRM-01",
+ "cluster": "FAT-B",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 5 Peran, baris Finance Staff dan Finance Lead: teks baru 'Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)' menghapus kode dokumen 'SNX-HR-ORG-01' yang dulu menjadi pemilik butir K-13. Pembaca bisa mencari K-13 di form ini, padahal butir itu tidak ada di sini. Butir K-13 memang ada di tabel K SNX-HR-ORG-01 (struct baris 112) dan baris SNX-HR-ORG-01 di bagian 9 masih menyebutnya. Usul: tulis '(SNX-HR-ORG-01 butir K-13)'.",
+  "Bagian 9, baris SNX-HR-ORG-01: 'sumber nama peran Finance Lead dan Finance Staff' diganti 'sumber nama jabatan'. Isinya sedikit bergeser: matriks peran HR-ORG-01 masih memuat kedua peran itu. Isi baru tetap punya dasar karena HR-ORG-01 memuat jabatan, dan perubahan ini masuk lingkup penyelarasan A6.",
+  "Butir 4.3 dan baris SNX-HR-JA-01 di bagian 9 masih mengaitkan pemeriksaan Finance Lead dengan tugas nomor 4 JA-10. Ini tegang dengan definisi baru, yang menyatakan Finance Lead dijalankan Direktur. Penyusun sudah mencatatnya sebagai GAP di notes. Kalimat itu tidak memetakan peran ke jabatan secara langsung, jadi tidak wajib diubah oleh A6.",
+  "Ruang lingkup, baris 'Tata cara pengajuan pembayaran': 'dan belum bernomor' dihapus untuk SOP Payment and Disbursement Approval. Perubahan ini tidak disebut di butir 5 (S03 hanya menyebut SOP AR), tetapi tercakup G-3 B4: dokumen T3 yang dicentang di checklist (checklist baris 25, checked true) ditulis 'dalam peninjauan' secara seragam. Fakta belum bernomor tetap tampak di kolom kode bagian 9 ('Belum bernomor').",
+  "Kalimat definisi diawali huruf kapital ('Peran pemeriksa...'), sedangkan instruksi menulis huruf kecil. Ini kosmetik dan isinya sama persis."
+ ],
+ "butir_dikerjakan": [
+  "A6 blok Reviewed: 'Finance Lead' diganti 'Amirull Yusuf Zulkarnain / Direktur'. Isinya cocok dengan defaults v22 prepared_reviewed.FAT. Prepared tetap 'Finance Staff' dan Approved tetap 'Samuel Kristanto Utomo / President Director' (approved_by.all).",
+  "A6 definisi: dua baris baru di bagian 3 DEFINISI DAN SINGKATAN, Finance Lead dan Finance Staff, isinya persis teks instruksi dan berlabel (USULAN).",
+  "A6 penyelarasan: baris Finance Staff dan Finance Lead di bagian 5 serta baris SNX-HR-ORG-01 di bagian 9 tidak lagi menyatakan 'belum dipetakan'. Ketiganya kini merujuk definisi di bagian 3, dan bagian 3 memang bagian definisi.",
+  "Butir 4 (R400): rujukan SNX-FAT-SOP-05 diperbaiki menjadi 'butir 6.3 langkah 2' (persetujuan utang pajak) dan 'tabel rekaman di bagian 11' (persetujuan utang pajak dan pengajuan pembayaran). Kedua tempat ada dan isinya cocok: struct FAT-SOP-05 baris 76 dan 124. Diff W9 FAT-SOP-05 tidak menggeser 6.3 maupun bagian 11.",
+  "Butir 5 (S03): 'SOP Account Receivable & Collection (dalam peninjauan dan belum bernomor)' diganti 'SOP Account Receivable & Collection (dalam peninjauan)'.",
+  "B4 seragam: status SOP Payment and Disbursement Approval di ruang lingkup juga diseragamkan menjadi 'dalam peninjauan'.",
+  "Butir 2 dan 3 khusus FAT-SOP-04, jadi tidak berlaku untuk dokumen ini."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Teks yang diekstrak dari /tmp/claude-0/w9/render/FAT-FRM-01.docx (word/document.xml) memberi hasil berikut: 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0. Frasa proses penyusunan (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun) semuanya 0. 'Amirull' muncul 1 kali, di blok Reviewed. Dokumen ini dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak mengikat; hasilnya tetap nol.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

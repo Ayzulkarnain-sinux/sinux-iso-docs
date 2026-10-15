@@ -128,7 +128,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
 | OI-1 | Jabatan Penyetuju, batas nilai, dan tingkat persetujuan per jenis transaksi tidak ada di sumber. Authority Matrix belum bernomor; Job Analysis hanya menyebut "approver" (E.3). Kolom Penyetuju di Tabel 2 kosong sampai delegasi tertulis ada | Samuel dan owner |
-| OI-2 | Pemetaan Finance Lead dan Finance Staff ke jabatan di SNX-HR-ORG-01 (butir K-13); sampai itu diputus, tidak ada nama orang di kolom keputusan | owner |
+| OI-2 | Pemetaan Finance Lead dan Finance Staff ke jabatan di SNX-HR-ORG-01 (butir K-13); sampai itu diputus, tidak ada nama orang di kolom keputusan (diubah W9: G-3 A6, Finance Lead dijalankan Direktur sampai jabatannya terisi dan Finance Staff oleh JA-10 dan JA-11, keduanya USULAN; tetap tidak ada nama orang di kolom keputusan) | owner |
 | OI-3 | Apakah dua tingkat (Finance Lead lalu Penyetuju) berlaku untuk semua jenis, atau Finance Lead cukup untuk jenis tertentu. Form menaruh keduanya dan membiarkan kolom Penyetuju kosong bila delegasi tidak mensyaratkan | FAT |
 | OI-4 | Konflik dengan SNX-FAT-SOP-05 butir 6.3: dokumen itu menaruh persetujuan utang pajak dan pengajuan pembayaran pajak pada Finance Lead yang sama. Butir 4.7 form ini meminta Penyetuju memutuskan pengajuan yang Finance Lead ajukan sendiri. FAT perlu memutus: pemisahan di form ini, atau perubahan di SOP Tax | FAT dan owner |
 | OI-5 | Siapa yang menjalankan pembayaran (transfer bank) dan apakah ada kontrol yang menahan pembayaran tanpa keputusan Disetujui. Sumber hanya menyebut Finance Staff menyetor pajak di SNX-FAT-SOP-05 (USULAN di sana). Form hanya mencatat tanggal dan bukti pembayaran | FAT |
@@ -178,3 +178,27 @@ Catatan sweep:
 - Judul dokumen bernomor diambil dari specs/FAT-SOP-06.json (title "Accounting and Financial Report") dan specs/FAT-REG-01.patch.json (Kontrol Dokumen B5 "Billing & Collection Monitoring Register"; B15 "Mencatat semua piutang usaha dari klien SINUX di sheet AR Aging"). Keduanya berstatus Draft; kutipan bisa basi bila dokumen itu berubah.
 - Temuan pemeriksa lain di qa/FAT-FRM-01.verify.json (penunjuk butir SOP-01 4.8, kalimat pasif tanpa pelaku, istilah approval lawan persetujuan, setelah lawan sesudah, label pada kalimat pengecualian, ketegangan JA-10 dengan data_conflicts) tidak disentuh karena di luar dua butir sweep. Ketegangan JA-10 dan K-13 sudah tercakup OI-2 dan OI-4.
 - Uji sesudah sweep: render tanpa galat; lint generic pass true (warn 13 butir USULAN); validator OOXML PASSED; blankscan ok 11 halaman; pemeriksaan tambahan (dash, kutipan, frasa terlarang, kode SNX di badan lawan Dokumen Terkait, panjang langkah) nihil temuan, bukti /tmp/pen-FAT-FRM-01/extra-checks.out.txt.
+
+## ISO-W9
+
+Dasar: control/LEAD-GUIDE.md G-3 A6 dan B4, serta temuan makna R400 dan S03. Hanya specs/FAT-FRM-01.json dan notes/FAT-FRM-01.md yang diubah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A6 blok Reviewed | Finance Lead | Amirull Yusuf Zulkarnain / Direktur (Prepared tetap Finance Staff) |
+| A6 definisi (bagian 3), dua baris baru setelah FAT | tidak ada | "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)." dan "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)." (kata pertama arti diberi huruf kapital) |
+| A6 tabel peran (bagian 5), baris Finance Staff dan Finance Lead | "Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | "Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)." |
+| A6 dokumen terkait, baris SNX-HR-ORG-01 | "sumber nama peran Finance Lead dan Finance Staff, yang belum dipetakan ke jabatan (butir K-13)." | "sumber nama jabatan. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 3 (butir K-13)." |
+| R400 dokumen terkait, baris SNX-FAT-SOP-05 | "butir 6.3 menyebut form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (USULAN)." | "butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN)." |
+| S03 ruang lingkup, baris Penerimaan uang dari pelanggan | "SOP Account Receivable & Collection (dalam peninjauan dan belum bernomor)" | "SOP Account Receivable & Collection (dalam peninjauan)" |
+| B4 ruang lingkup, baris Tata cara pengajuan pembayaran | "SOP Payment and Disbursement Approval, dalam peninjauan dan belum bernomor." | "SOP Payment and Disbursement Approval, dalam peninjauan." (pola status yang sama dengan S03, ikut diseragamkan) |
+
+Rujukan silang yang diubah: dua, yaitu baris SNX-FAT-SOP-05 di dokumen terkait (butir 6.3 langkah 2 dan bagian 11 tabel rekaman, keduanya terbukti ada di SNX-FAT-SOP-05) dan rujukan bagian 3 pada pemetaan peran.
+
+Tidak diubah: kolom kode "Belum bernomor" pada tiga baris dokumen terkait dan "Authority Matrix, belum bernomor" di ruang lingkup dan definisi, karena butir kerja hanya menyeragamkan status dokumen checklist (SOP Account Receivable & Collection dan SOP Payment and Disbursement Approval) di kalimat, dan Authority Matrix bukan baris checklist.
+
+GAP: butir 4.3 dan baris SNX-HR-JA-01 menaruh pemeriksaan dokumen dasar pada tugas nomor 4 JA-10 (Finance). Dengan definisi baru, Finance Lead dijalankan Direktur sampai jabatannya terisi, sehingga kaitan tugas JA-10 ke peran pemeriksa perlu ditegaskan oleh LEAD atau FAT. Tidak diubah karena di luar butir kerja.
+
+Open item: OI-2 diubah W9 (pemetaan peran mengikuti G-3 A6, berlabel USULAN). OI-10 tetap terbuka.
+
+Uji: render_sop.py rc 0; lint_doc.py generic "pass": true (warn 15 butir USULAN); validate.py "All validations PASSED!"; blankscan ok 11; w9diff.py: 7 baris lama, 9 baris baru, hanya perubahan di atas.
