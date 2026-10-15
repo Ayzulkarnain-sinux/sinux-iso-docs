@@ -31,6 +31,6 @@ def broken(key):
 
 
 if __name__ == '__main__':
-    keys = sys.argv[1:] or [d['key'] for d in L['docs'] if d['state'] == 'DONE' and glob.glob(f"specs/{d['key']}.json")]
+    keys = sys.argv[1:] or [d['key'] for d in L['docs'] if d.get('key') and glob.glob(f"specs/{d['key']}.json")]
     res = {k: r for k in keys if (r := broken(k))}
     print(json.dumps(res, ensure_ascii=False, indent=1))

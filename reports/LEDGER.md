@@ -1,6 +1,6 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-15T00:48:04Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-15T01:17:26Z)
 
-Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_PROGRESS': 1, 'SKIP': 2}. Guide terakhir dibaca: G-1. Tech fix: 5.
+Wave berjalan: W7. Hitungan state: {'DONE': 70, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-1. Tech fix: 5.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
@@ -18,7 +18,7 @@ Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_
 | ISMS-SOP-03 | W2 | DONE | SNX-ISMS-SOP-03 Backup & Recovery (Rev00 DRAFT).docx | PASS | 25 | 1 |
 | ISMS-SOP-04 | W2 | DONE | SNX-ISMS-SOP-04 IT Asset & Configuration Management (Rev00 DRAFT).docx | PASS | 3 | 1 |
 | ISMS-SOP-05 | W2 | DONE | SNX-ISMS-SOP-05 Vulnerability & Patch Management (Rev00 DRAFT).docx | PASS | 12 | 0 |
-| ISMS-PLN-01 | W2 | DONE | SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx | PASS | 18 | 1 |
+| ISMS-PLN-01 | W2 | DONE | SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx | PASS | 19 | 1 |
 | FAT-SOP-01 | W3 | DONE | SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx | PASS | 8 | 0 |
 | FAT-SOP-05 | W3 | DONE | SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx | PASS | 29 | 0 |
 | LEG-SOP-01 | W3 | DONE | SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).docx | PASS | 24 | 0 |
@@ -26,12 +26,12 @@ Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_
 | COM-SOP-01 | W3 | DONE | SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx | PASS | 14 | 0 |
 | HR-SOP-08 | W3 | DONE | SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx | PASS | 28 | 0 |
 | HR-SOP-10 | W4 | DONE | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | PASS | 38 | 0 |
-| HR-SOP-11 | W4 | LINT_PASS | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 54 | 2 |
-| HR-SOP-12 | W4 | LINT_PASS | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 48 | 2 |
-| HR-SOP-13 | W4 | LINT_PASS | SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx | PASS | 59 | 3 |
-| FAT-SOP-04 | W4 | LINT_PASS | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 38 | 1 |
-| LEG-SOP-03 | W4 | LINT_PASS | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 47 | 2 |
-| COM-SOP-02 | W4 | LINT_PASS | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 18 | 1 |
+| HR-SOP-11 | W4 | DONE | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 54 | 3 |
+| HR-SOP-12 | W4 | DONE | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 48 | 2 |
+| HR-SOP-13 | W4 | DONE | SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx | PASS | 59 | 4 |
+| FAT-SOP-04 | W4 | DONE | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 38 | 1 |
+| LEG-SOP-03 | W4 | DONE | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 47 | 2 |
+| COM-SOP-02 | W4 | DONE | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 18 | 2 |
 | OPS-FRM-01 | W5 | DONE | SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx | PASS | 5 | 0 |
 | OPS-FRM-02 | W5 | DONE | SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | OPS-FRM-03 | W5 | DONE | SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx | - | 1 | 0 |
@@ -50,27 +50,27 @@ Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_
 | ISMS-FRM-01 | W5 | DONE | SNX-ISMS-FRM-01 Backup Log Restore Testing Records (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | ISMS-FRM-02 | W5 | DONE | SNX-ISMS-FRM-02 Security Incident Investigation Records (Rev00 DRAFT).xlsx | PASS | 11 | 0 |
 | ISMS-FRM-03 | W5 | DONE | SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
-| LEG-REG-01 | W6 | DONE | SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx | PASS | 13 | 1 |
-| LEG-FRM-01 | W6 | DONE | SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx | PASS | 34 | 1 |
-| LEG-FRM-02 | W6 | DONE | SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx | PASS | 21 | 1 |
-| LEG-FRM-03 | W6 | DONE | SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx | PASS | 33 | 1 |
-| LEG-REG-02 | W6 | DONE | SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx | PASS | 16 | 1 |
-| LEG-RPT-01 | W6 | DONE | SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx | PASS | 34 | 1 |
+| LEG-REG-01 | W6 | DONE | SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx | PASS | 17 | 1 |
+| LEG-FRM-01 | W6 | DONE | SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx | PASS | 38 | 1 |
+| LEG-FRM-02 | W6 | DONE | SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx | PASS | 20 | 1 |
+| LEG-FRM-03 | W6 | DONE | SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx | PASS | 34 | 1 |
+| LEG-REG-02 | W6 | DONE | SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx | PASS | 18 | 1 |
+| LEG-RPT-01 | W6 | DONE | SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx | PASS | 35 | 1 |
 | HR-FRM-01 | W7 | DONE | SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx | PASS | 13 | 1 |
 | HR-FRM-02 | W7 | DONE | SNX-HR-FRM-02 Annual Training Plan & Training Matrix (Rev00 DRAFT).docx | PASS | 18 | 1 |
 | HR-RPT-01 | W7 | DONE | SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).docx | PASS | 19 | 1 |
-| FAT-FRM-01 | W7 | DONE | SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx | PASS | 13 | 1 |
+| FAT-FRM-01 | W7 | DONE | SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx | PASS | 14 | 1 |
 | FAT-RPT-02 | W7 | DONE | SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).docx | PASS | 16 | 1 |
-| LEG-REG-03 | W7 | DONE | SNX-LEG-REG-03 Legal & Regulatory Requirements Register (Rev00 DRAFT).docx | PASS | 20 | 1 |
+| LEG-REG-03 | W7 | DONE | SNX-LEG-REG-03 Legal & Regulatory Requirements Register (Rev00 DRAFT).docx | PASS | 22 | 1 |
 | LEG-RPT-02 | W7 | DONE | SNX-LEG-RPT-02 Legal Compliance Evaluation Report (Rev00 DRAFT).docx | PASS | 36 | 1 |
-| LEG-REG-04 | W7 | DONE | SNX-LEG-REG-04 Company Legal Documents Register (Rev00 DRAFT).docx | PASS | 22 | 1 |
-| COM-FRM-01 | W7 | DONE | SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx | PASS | 22 | 2 |
+| LEG-REG-04 | W7 | DONE | SNX-LEG-REG-04 Company Legal Documents Register (Rev00 DRAFT).docx | PASS | 24 | 1 |
+| COM-FRM-01 | W7 | DONE | SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx | PASS | 23 | 2 |
 | COM-FRM-02 | W7 | DONE | SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx | PASS | 14 | 1 |
 | COM-REG-01 | W7 | DONE | SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).docx | PASS | 19 | 1 |
-| MKT-RPT-01 | W7 | DONE | SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx | PASS | 30 | 1 |
-| MKT-REG-01 | W7 | DONE | SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx | PASS | 27 | 1 |
-| MKT-REG-02 | W7 | DONE | SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).docx | PASS | 22 | 1 |
-| MKT-REG-03 | W7 | DONE | SNX-MKT-REG-03 Marketing Lead & Campaign Outcome Register (Rev00 DRAFT).docx | PASS | 25 | 1 |
+| MKT-RPT-01 | W7 | DONE | SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx | PASS | 33 | 2 |
+| MKT-REG-01 | W7 | DONE | SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx | PASS | 32 | 2 |
+| MKT-REG-02 | W7 | DONE | SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).docx | PASS | 22 | 2 |
+| MKT-REG-03 | W7 | DONE | SNX-MKT-REG-03 Marketing Lead & Campaign Outcome Register (Rev00 DRAFT).docx | PASS | 29 | 1 |
 | HOLD-R3 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R4 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R5 | HOLD-T3 | HOLD | - | - | 0 | 0 |
@@ -83,7 +83,7 @@ Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_
 | HOLD-R24 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R25 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | FAT-SOP-06 | W7b | DONE | SNX-FAT-SOP-06 SOP Accounting and Financial Report (Rev00 DRAFT).docx | PASS | 22 | 1 |
-| FAT-REG-01 | W7b | IN_PROGRESS | SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx | PASS | 0 | 1 |
+| FAT-REG-01 | W7b | DONE | SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx | PASS | 0 | 1 |
 | HOLD-R31 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | FAT-FRM-02 | W7b | DONE | SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx | PASS | 0 | 1 |
 | HOLD-FAT-KPI | HOLD-T3 | HOLD | - | - | 0 | 1 |
@@ -92,3 +92,29 @@ Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_
 | HOLD-R51 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | ISMS-SOA-01 | K | SKIP | - | - | 0 | 0 |
 | HR-TEMPLATE | REF | SKIP | - | - | 0 | 0 |
+
+## Residu mutu W8 (arahan LEAD G-1 butir 3)
+
+| Key | Residu | Alasan belum diselesaikan |
+|---|---|---|
+| HR-SOP-11 | mutasi kini bentrok dengan 4.9; pasif baru; penerima tanggapan bagian 9; berkas usulan belum didefinisikan; NOC/SOC/SD/PM tanpa definisi | Temuan tidak memblokir pemeriksa perubahan sesudah sweep; putaran perbaikan tambahan berisiko mengubah makna lagi, diserahkan ke tinjauan owner |
+| HR-SOP-13 | aturan Direktur Utama bagian 9 (U22) bertentangan dengan 4.3; label USULAN bergeser di bagian 9; NOC/SOC disebut divisi di sini tetapi unit kerja di HR-SOP-12 | Temuan tidak memblokir pemeriksa perubahan sesudah sweep; putaran perbaikan tambahan berisiko mengubah makna lagi, diserahkan ke tinjauan owner |
+| COM-SOP-02 | pengganti Personel Commercial mempersempit cakupan (bagian 9 hanya Business Development, Conclusion tanpa Brand & Marketing) | Temuan tidak memblokir pemeriksa perubahan sesudah sweep; putaran perbaikan tambahan berisiko mengubah makna lagi, diserahkan ke tinjauan owner |
+| MKT-RPT-01 | arti Aktivitas belum sama dengan MKT-REG-02; belum Selesai ikut mencakup Dibatalkan | Temuan tidak memblokir pemeriksa perubahan sesudah sweep; putaran perbaikan tambahan berisiko mengubah makna lagi, diserahkan ke tinjauan owner |
+| MKT-REG-01 | penurunan klasifikasi dicatat di bukti persetujuan, sedangkan SNX-ISMS-PRO-01 mencatatnya di SNX-ISMS-REG-01 | Temuan tidak memblokir pemeriksa perubahan sesudah sweep; putaran perbaikan tambahan berisiko mengubah makna lagi, diserahkan ke tinjauan owner |
+| MKT-REG-02 | irisan Tabel 3 dengan REG-01 dan irisan aktivitas dengan RPT-01 belum dihapus (struktur dikunci); pemutus cakupan owner | Temuan tidak memblokir pemeriksa perubahan sesudah sweep; putaran perbaikan tambahan berisiko mengubah makna lagi, diserahkan ke tinjauan owner |
+
+## Status pending_tasks saat W8
+
+- (a) Sinkronisasi rujukan nomor bagian SOP W2 di form W5 (mis. FRM-10 merujuk SOP-04 Bagian 4/6/7.5; FRM-01 merujuk SOP-01 Ba: SELESAI 01:15Z: refcheck 177 rujukan ke SOP, 0 rusak (reports/w8/refcheck.txt); dokumen FAT promosi dirujuk dengan nomor SNX-FAT-SOP-06, SNX-FAT-REG-01; SNX-FAT-FRM-02 tidak dirujuk dokumen lain.
+- (b) Polish sweep frasa meta (dokumen sumber / di sumber / sumber tim / penyusun bila bukan peran form) di dokumen DONE: HR-J: SELESAI 01:15Z: sweep 40 dokumen, tiap perubahan diperiksa pemeriksa perubahan (qa/<KEY>.sweep.json PASS); metascan G-1 0 temuan dengan kontrol positif (reports/w8/metascan.txt). OPS-FRM-03/06/10 dikecualikan (penyusun = nama peran, sah menurut G-1).
+- (c) Konsistensi lintas HR-SOP-10/11/12/13 (Promotion, Demotion, Rotation, Mutation): satu rumusan batas antar-SOP, penetap k: SEBAGIAN: kalimat batas rotasi/mutasi identik di HR-SOP-10..13, penetap = Direktur Utama di keempatnya; residu HR-SOP-11 dan HR-SOP-13 dicatat di Laporan_Run.md dan reports/LEDGER.md.
+- (d) QA W8: pindai halaman kosong (hanya header/footer) di semua docx out/ lewat soffice+pdftotext; dokumen yang kena diperba: SELESAI 01:15Z: 53 docx, 0 halaman kosong (reports/w8/blankscan.txt); post() memeriksa otomatis sejak 23:25Z.
+
+## Bukti gerbang W8
+
+- reports/w8/metascan.txt: frasa meta 0 temuan, kontrol positif menembak
+- reports/w8/refcheck.txt: 0 rujukan rusak
+- reports/w8/blankscan.txt: 53 docx, 0 halaman kosong
+- reports/w8/selftest.txt: 6 OK
+- reports/w8/w8_summary.json: ringkasan Master List (88 baris)

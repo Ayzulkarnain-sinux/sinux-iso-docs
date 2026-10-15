@@ -3,7 +3,7 @@
  "runbook": "v19-e",
  "defaults_version": "v21",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W7",
+ "current_wave": "W8",
  "last_guide_seen": 1,
  "watchdog_trigger_id": "trig_019ozEXtQHFx15RYPLaPZBrG",
  "gaspol": true,
@@ -2362,12 +2362,12 @@
    "open_items": [
     "Sweep (b): definisi Jurnal penyesuaian lebih sempit dari 4.5; scope menyebut aset tetap, ekualisasi, tutup buku tahunan tanpa prosedur (gap sumber, USULAN di 4.6, pemutus FAT)"
    ],
-   "updated_at": "2026-10-15T01:13:27Z",
+   "updated_at": "2026-10-15T01:13:30Z",
    "classification": "INTERNAL",
    "promoted_from": "HOLD-T3",
    "pen_agent": "ac09fece2de8f355c",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 79,
@@ -2614,7 +2614,8 @@
    "added": "2026-10-14T22:20Z",
    "extra": [
     "Sesudah W7b DONE: grep \"dalam peninjauan\" dan \"belum bernomor\" di specs/*.json untuk SOP Accounting, Billing & Collection Monitoring Register, Payment/FAT-FRM-02; ganti dengan nomor SNX-FAT-SOP-06, SNX-FAT-REG-01, SNX-FAT-FRM-02 (FAT-FRM-01 terkonfirmasi verifikator)."
-   ]
+   ],
+   "status": "SELESAI 01:15Z: refcheck 177 rujukan ke SOP, 0 rusak (reports/w8/refcheck.txt); dokumen FAT promosi dirujuk dengan nomor SNX-FAT-SOP-06, SNX-FAT-REG-01; SNX-FAT-FRM-02 tidak dirujuk dokumen lain."
   },
   {
    "task": "Polish sweep frasa meta (dokumen sumber / di sumber / sumber tim / penyusun bila bukan peran form) di dokumen DONE: HR-JA-01, HR-ORG-01, OPS-FRM-03, OPS-FRM-06, OPS-FRM-10, OPS-PRC-01, OPS-SOP-03, dan dokumen W3+ yang terdeteksi. Ganti dengan kode/nama dokumen yang dirujuk; tanpa perubahan lain; bukti diff teks paragraf; lint ulang.",
@@ -2631,7 +2632,8 @@
     "FAT-SOP-04: qa/FAT-SOP-04.verify.json nonblocking 1 (langkah softcopy pajak), 2 (sel SLA berisi komentar penyusunan), 3 (kalimat meta status draf di 4.2/4.10), 5 (pengaju pengecualian tanpa label), 7-8 (rumusan retensi rekaman, retensi Berita Acara jadi open item)",
     "HR-SOP-12/13 dan HR-SOP-11: lihat pending (c) dan open_items dokumen",
     "Konsistensi Legal lintas dokumen (LEG-SOP-01..03, LEG-REG-01..04, LEG-FRM-01..03, LEG-RPT-01..02): satu kosakata status; satu pemilik rekaman (LEG-SOP-03 menunjuk Line Manager Legal, REG-01/REG-03 Staff Legal); Line Manager Legal dan Staff Legal = nama peran yang dipetakan ke JA-08/JA-09 (USULAN), bukan nama jabatan; batas Akta/Anggaran Dasar antara REG-01 dan REG-04."
-   ]
+   ],
+   "status": "SELESAI 01:15Z: sweep 40 dokumen, tiap perubahan diperiksa pemeriksa perubahan (qa/<KEY>.sweep.json PASS); metascan G-1 0 temuan dengan kontrol positif (reports/w8/metascan.txt). OPS-FRM-03/06/10 dikecualikan (penyusun = nama peran, sah menurut G-1)."
   },
   {
    "task": "Konsistensi lintas HR-SOP-10/11/12/13 (Promotion, Demotion, Rotation, Mutation): satu rumusan batas antar-SOP, penetap keputusan, dan istilah; perbaiki lewat penyusun masing-masing bila beda.",
@@ -2654,12 +2656,14 @@
    },
    "residual": [
     "Sesudah sweep: istilah NOC/SOC (unit kerja di HR-SOP-12 definisi Unit kerja baru, divisi/sub divisi di HR-SOP-13 dan kalimat batas); U22 HR-SOP-13 vs 4.3. Putaran konsistensi kedua bila waktu cukup, selain itu residu di Laporan_Run."
-   ]
+   ],
+   "status": "SEBAGIAN: kalimat batas rotasi/mutasi identik di HR-SOP-10..13, penetap = Direktur Utama di keempatnya; residu HR-SOP-11 dan HR-SOP-13 dicatat di Laporan_Run.md dan reports/LEDGER.md."
   },
   {
    "task": "QA W8: pindai halaman kosong (hanya header/footer) di semua docx out/ lewat soffice+pdftotext; dokumen yang kena diperbaiki lewat isi (panjang bagian sebelum page break), bukan renderer (format terkunci).",
    "added": "2026-10-14T23:15Z",
-   "progress": "23:25Z pindai 28 docx DONE/aktif: HR-SOP-11 dan HR-SOP-13 hal. 15 kosong (loop perbaikan berjalan), lainnya ok. orch.py post kini memeriksa otomatis; ulang pindai penuh di W8 sesudah sweep."
+   "progress": "23:25Z pindai 28 docx DONE/aktif: HR-SOP-11 dan HR-SOP-13 hal. 15 kosong (loop perbaikan berjalan), lainnya ok. orch.py post kini memeriksa otomatis; ulang pindai penuh di W8 sesudah sweep.",
+   "status": "SELESAI 01:15Z: 53 docx, 0 halaman kosong (reports/w8/blankscan.txt); post() memeriksa otomatis sejak 23:25Z."
   }
  ],
  "watchdog_log": [
