@@ -288,3 +288,8 @@ nihil
 
 ### W10 audit cakupan label
 - .exceptions[6][1]: OK (label tetap pada pelapor yang belum diputus)
+### W10 koreksi worker: rujukan salah tujuan (uji kering refcheck2)
+- .exceptions[6][1]: W10 menulis "sesuai SNX-ISMS-SOP-01 (butir 4.17)", sehingga butir 4.17 terbaca milik SNX-ISMS-SOP-01 (dokumen itu tidak punya butir 4.17; refcheck2 TIDAK_ADA). Di bed1bb6, "(USULAN untuk pelapor; butir 4.17)" menunjuk butir 4.17 SOP ini, yaitu aturan yang dilanggar, yang sudah tertulis di kolom pertama baris yang sama. Teks menjadi "... sebagai event keamanan sesuai SNX-ISMS-SOP-01 (USULAN untuk pelapor)."; cakupan label sama dengan bed1bb6 (hanya pelapor).
+- Audit pointer jalur ini: lengkap; penunjuk balik "butir 4.17" dibuang karena isi butir 4.17 sudah ada di kolom kondisi baris itu.
+### W10 audit pointer
+- .exceptions[6][1]: lengkap; penunjuk balik "butir 4.17" (SOP ini) dibuang, isi butir 4.17 sudah tertulis di kolom kondisi baris yang sama; lihat koreksi worker di atas.
