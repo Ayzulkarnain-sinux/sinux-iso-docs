@@ -1,0 +1,31 @@
+{
+ "key": "FAT-RPT-02",
+ "cluster": "FAT-B",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Definisi A6 dipecah ke kolom Istilah/Arti dengan huruf kapital pada kata pertama arti (\"Peran pemeriksa...\", \"Peran pelaksana...\"). Instruksi membolehkan pemecahan ke kolom; selisih kapitalisasi ini kosmetik dan tercatat di notes.",
+  "Bentuk rujukan baru \"bagian 2.1\" (subbagian) tidak persis sama dengan pola instruksi \"butir N.M\" atau \"bagian N\". Tujuannya ada dan tampak (Heading2 bernomor otomatis 2.1 Istilah, kerangka baris 23), dan isinya cocok (dua baris definisi Finance Lead dan Finance Staff).",
+  "Rujukan \"(butir K-13)\" dipertahankan. K-13 di SNX-HR-ORG-01 (kerangka sebelum W9, tabel K baris 112) masih menyatakan Finance Lead/Staff tanpa padanan jabatan. Selaras setelah HR-ORG-01 memperbarui K-13 sesuai G-3 A6, dan itu di luar dokumen ini.",
+  "Kalimat yang berubah lolos cek bahasa: tanpa em-dash, tanpa frasa proses penyusunan, tanpa rujukan AI. Pasif \"dijalankan Direktur\" dan \"dijalankan pemegang jabatan\" punya pelaku. Subjek \"Pemetaan ... mengikuti definisi\" bukan kata kerja manusia."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 (A6, LEAD G-3): blok Reviewed = \"Amirull Yusuf Zulkarnain / Direktur\", sesuai defaults v22 prepared_reviewed.FAT. Prepared tetap \"Finance Staff\". Approved = \"Samuel Kristanto Utomo / President Director\" (approved_by.all), tidak berubah.",
+  "Butir 1 (A6): dua baris definisi Finance Lead dan Finance Staff ditambahkan di bagian 2.1 Istilah setelah CoreTax DJP. Isinya sama kata demi kata dengan instruksi, termasuk label (USULAN), JA-10 Finance dan JA-11 Accounting & Tax.",
+  "Butir 1 (A6, penyelarasan): kalimat \"Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)\" di tabel Peran (baris Finance Staff dan Finance Lead) dan di baris SNX-HR-ORG-01 bagian Dokumen Terkait diganti menjadi rujukan ke definisi bagian 2.1. Kalimat lain tidak berubah.",
+  "Diff teks hanya memuat 4 baris lama dan 6 baris baru, semuanya berasal dari butir 1. Tidak ada perubahan lain yang mengubah makna dan tidak ada fakta baru: nama, jabatan, dan JA-10/JA-11 semuanya berdasar defaults v22 data_conflicts dan LEAD-GUIDE G-3 A6."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Nihil untuk dokumen ini. Butir 2 (B4 FAT-SOP-04), 3 (R170 FAT-SOP-04), 4 (R400 FAT-FRM-01), dan 5 (S03 FAT-FRM-01) tidak berlaku untuk FAT-RPT-02."
+ ],
+ "grep": "Teks sesudah diekstrak dari render /tmp/claude-0/w9/render/FAT-RPT-02.docx. Hitungan grep: \"HR Manager\" 0, \"Divisi Legal\" 0, em-dash 0, frasa proses (dokumen sumber/sumber tim/di sumber/draf ini/belum berdokumen/penyusun) 0, \"belum dipetakan\" 0. Dokumen ini dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku tetapi tetap nol.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

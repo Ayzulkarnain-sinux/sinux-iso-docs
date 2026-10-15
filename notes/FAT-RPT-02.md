@@ -120,7 +120,7 @@ Hitungan: 11 butir. Di dokumen ada 15 label "(USULAN)" (satu di antaranya baris 
 |---|---|---|
 | 1 | Hubungan dokumen ini dengan log ketidaksesuaian di SNX-FAT-SOP-01 butir 4.14: sama atau terpisah. Sumber menyebut log itu tanpa form, lokasi, atau pemilik. Saat ini diperlakukan terpisah (U5). Bila sama, pengecualian di Ruang Lingkup dihapus dan Tabel 3 diperluas ke semua ketidaksesuaian FAT | FAT |
 | 2 | Judul baris checklist ("Nonconformity & Corrective Action Records") lebih luas daripada Description (bottleneck dan support). Dokumen mengikuti Description; ketidaksesuaian di luar bottleneck belum punya tempat | owner |
-| 3 | Finance Lead dan Finance Staff belum dipetakan ke orang atau jabatan (K-13 di SNX-HR-ORG-01) | owner |
+| 3 | Finance Lead dan Finance Staff belum dipetakan ke orang atau jabatan (K-13 di SNX-HR-ORG-01) (diubah W9: G-3 A6, Finance Lead dijalankan Direktur sampai jabatannya terisi dan Finance Staff oleh JA-10 dan JA-11, keduanya USULAN) | owner |
 | 4 | Persetujuan dan verifikasi bertumpu pada satu Finance Lead tanpa pengganti (catatan audit Billing butir 11). Ini calon bottleneck; dokumen tidak menulis kontrol pengganti karena sumber diam | FAT |
 | 5 | Batas waktu permintaan support sampai support diterima tidak ada di sumber; dokumen tidak mengisinya | FAT |
 | 6 | Batas lingkup generalist untuk GLPI belum dirinci owner (defaults.json ticketing) | owner |
@@ -179,3 +179,20 @@ Putaran sweep sesudah DONE (instruksi orkestrator, berkas FAT-RPT-02.sweep.txt).
 | 2. SNX-FAT-REG-01 dan SNX-FAT-FRM-02 | Tidak disebut di dokumen | Tidak ada perubahan: dokumen tidak merujuk keduanya. Hanya SNX-FAT-SOP-06 yang disebut dan sudah memakai nomor. AR & Collection dan Payment and Disbursement Approval tetap "belum bernomor, dalam peninjauan" karena masih HOLD tanpa nomor di ledger.json |
 
 Uji sweep (bukti mentah di /tmp/pen-FAT-RPT-02/lint.out.txt, validate.out.txt, blankscan.out.txt): render_sop.py selesai tanpa galat; lint_doc.py generic `"pass": true`, `"fails": []`, satu warn "15 butir (USULAN) menunggu ACC" (jumlah sama dengan sebelum sweep); validate.py "All validations PASSED!"; blankscan.py "ok". Lulus pada putaran pertama sweep. Notes yang ikut diperbarui: asumsi 6, open item 7, dan baris SNX-FAT-SOP-06 di jawaban pertanyaan 2.
+
+## ISO-W9
+
+Dasar: control/LEAD-GUIDE.md G-3 A6. Hanya specs/FAT-RPT-02.json dan notes/FAT-RPT-02.md yang diubah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A6 blok Reviewed | Finance Lead | Amirull Yusuf Zulkarnain / Direktur (Prepared tetap Finance Staff) |
+| A6 Istilah (bagian 2.1), dua baris baru setelah CoreTax DJP | tidak ada | "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)." dan "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)." (kata pertama arti diberi huruf kapital) |
+| A6 tabel peran (bagian 4), baris Finance Staff dan Finance Lead | "Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | "Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (butir K-13)." |
+| A6 dokumen terkait, baris SNX-HR-ORG-01 | "Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)." | "Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 2.1 (butir K-13)." |
+
+Rujukan silang yang diubah: rujukan ke definisi di bagian 2.1 (heading Istilah bernomor 2.1 di kerangka). Butir B4, R400, dan S03 tidak menyangkut dokumen ini.
+
+Open item: nomor 3 diubah W9 (pemetaan peran mengikuti G-3 A6, berlabel USULAN). Tidak ada yang ditutup penuh.
+
+Uji: render_sop.py rc 0; lint_doc.py generic "pass": true (warn 17 butir USULAN); validate.py "All validations PASSED!"; blankscan ok 12; w9diff.py: 4 baris lama, 6 baris baru, hanya perubahan di atas.
