@@ -257,3 +257,6 @@ nihil (subst_diff kosong).
 - Pihak luar: "pelanggan atau vendor" hanya di Lingkup, sama dengan dokumen Legal lain.
 - Calque "yang SINUX miliki atau wajib penuhi" ditulis ulang "yang dimiliki atau wajib dipenuhi SINUX".
 - Petunjuk Pengisian jadi kalimat perintah (0 dari 9 diawali peran). "Record (rekaman)" diperkenalkan di tabel Peran.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[8].p (butir 9): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

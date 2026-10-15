@@ -232,3 +232,11 @@ nihil. Label di baris Peran Business Development dipindah ke akhir sel (asli: "M
 
 ### W10 koreksi worker (~07:21Z)
 - Roles, Authority Finance Lead: kalimat pengganti rujukan "batas wewenang atas jatuh tempo ada di butir 4.8" dikembalikan setara butir 4.8: "Tidak boleh mengubah atau memperpanjang jatuh tempo melebihi TOP standar tanpa persetujuan Direktur Utama." (temuan nonblocking pemeriksa buta qa/FAT-SOP-01.w10.json; kata "mengubah" sempat hilang).
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .definitions[29][1]: tanpa label; definisi istilah TOP; angka TOP berlabel (USULAN) tetap di butir 4.8.
+- .roles[3][2]: tanpa label; menyatakan ulang kalimat butir 4.8 yang bukan bagian USULAN (label 4.8 melekat pada angka 14 hari).
+- .procedures[1].steps[2][0]: tanpa label; jatuh tempo "sesuai TOP"; angka TOP (USULAN) tidak dinyatakan ulang.
+- .procedures[2].steps[2][0]: tanpa label; aturan penerusan ke Direktur Utama di butir 4.8 bukan bagian berlabel; angka TOP tidak dinyatakan ulang.
+- .exceptions[2][1]: tanpa label; aturan penerusan ke Direktur Utama di butir 4.8 bukan bagian berlabel.
+- .records[3][1]: tanpa label; kalimat akses di butir 4.10 berada di luar kalimat berlabel (label 4.10 melekat pada klasifikasi).

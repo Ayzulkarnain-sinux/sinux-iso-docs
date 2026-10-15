@@ -432,6 +432,29 @@ def label_pairs(k):
     return [(p, old[p], new.get(p, '')) for p in old]
 
 
+REF = re.compile(r'\b(?:butir|Ketentuan butir|Petunjuk butir|langkah)\s+(\d+(?:\.\d+)*)')
+
+
+def usul_ref_drops(k):
+    """Jalur teks yang di bed1bb6 merujuk butir berlabel (USULAN), rujukan itu hilang di W10, dan teks W10 tanpa (USULAN)."""
+    if DOCS[k]['mode'] == 'xlsx':
+        return []
+    pairs = label_pairs(k)
+    usul_items = set()
+    for _, a, _ in pairs:
+        m = re.match(r'^\s*(\d+(?:\.\d+)*)[.\s]', a)
+        if m and '(USULAN' in a:
+            usul_items.add(m.group(1).rstrip('.'))
+    out = []
+    for path, a, b in pairs:
+        lost = [r for r in REF.findall(a) if r in usul_items and r not in REF.findall(b)]
+        # hanya bila teks W10 menambah kata baru (isi butir dinyatakan ulang), bukan sekadar membuang pointer
+        words = lambda t: set(re.findall(r'[a-z0-9]{3,}', map_text(t).lower()))
+        if lost and '(USULAN' not in b and '(USULAN' not in a and len(words(b) - words(a)) >= 1:
+            out.append(path)
+    return out
+
+
 def notes_w10(k):
     p = f'notes/{k}.md'
     if not os.path.exists(p):
@@ -503,6 +526,11 @@ def build(k):
                 g['fails'].append(f'selisih {kk} "{tok}" tidak tercatat di notes/{k}.md bagian ## W10')
     if not nw:
         g['fails'].append(f'notes/{k}.md belum punya bagian ## W10')
+    # Pelajaran sapuan: rujukan ke butir berlabel (USULAN) yang dihapus harus diganti teks yang tetap membawa (USULAN),
+    # atau jalurnya dicatat di notes W10 dengan alasan. Kontrol: reports/w10/usulref_gate_test.txt.
+    for path in usul_ref_drops(k):
+        if path not in nw:
+            g['fails'].append(f'rujukan ke butir ber-(USULAN) dihapus di {path} tanpa label pengganti; beri (USULAN) atau catat jalur ini + alasan di notes W10')
     # STYLE §3.6: label (USULAN) yang berkurang pada satu teks wajib dicatat verbatim (cukup 50 huruf awal) di notes W10.
     for path, a, b in label_pairs(k):
         if a.count('(USULAN') > b.count('(USULAN') and ' '.join(a.split())[:50] not in ' '.join(nw.split()):

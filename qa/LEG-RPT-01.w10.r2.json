@@ -1,0 +1,32 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "Tujuan, kalimat kedua",
+   "masalah": "Kriteria batas relevansi hilang: 'sepanjang relevan dengan ruang lingkup pemantauan' menjadi 'sejauh relevan' tanpa acuan. 'menjaga efektivitas penerapan SMKI' juga dipendekkan menjadi 'efektivitas SMKI'.",
+   "kutipan": "Sebelum: '... dan menjaga efektivitas penerapan Sistem Manajemen Keamanan Informasi (SMKI), sepanjang relevan dengan ruang lingkup pemantauan.' Sesudah: 'Pemantauan oleh Staff Legal mendukung pemenuhan kewajiban hukum dan kontraktual SINUX serta efektivitas Sistem Manajemen Keamanan Informasi (SMKI), sejauh relevan.'",
+   "usul": "Pemantauan oleh Staff Legal mendukung pemenuhan kewajiban hukum dan kontraktual SINUX serta menjaga efektivitas penerapan Sistem Manajemen Keamanan Informasi (SMKI), sejauh relevan dengan ruang lingkup pemantauan."
+  },
+  {
+   "lokasi": "Tabel Acuan ISO, baris ISO 9001:2015 10.2 dan ISO/IEC 27001:2022 10.2",
+   "masalah": "Bukti pemetaan menyempit. Sebelumnya kedua baris menyebut Catatan Temuan DAN Rencana Tindakan Perbaikan; sekarang 9001 hanya Catatan Temuan, 27001 hanya Rencana Tindakan Perbaikan, dan 'status penyelesaian' menjadi 'status'.",
+   "kutipan": "9001 10.2 sesudah: 'Ketidaksesuaian, tindakan, penanggung jawab, dan verifikasi tercatat di Catatan Temuan.' 27001 10.2 sesudah: 'Tindakan, penanggung jawab, dan status tercatat di Rencana Tindakan Perbaikan.'",
+   "usul": "9001 10.2: 'Ketidaksesuaian, tindakan, penanggung jawab, dan hasil verifikasi tercatat di Catatan Temuan dan Rencana Tindakan Perbaikan.' 27001 10.2: 'Tindakan, penanggung jawab, dan status penyelesaian tercatat di Catatan Temuan dan Rencana Tindakan Perbaikan.'"
+  }
+ ],
+ "nonblocking": [
+  "Petunjuk 2 memakai kalimat elips berderet ('di Unit Kerja yang Dipantau, nama unit; di Ruang Lingkup, kode aspek ...'); terbaca, tetapi lebih wajar dipecah dengan 'tulis' di tiap klausa.",
+  "Petunjuk 6: satu label (USULAN) kini menutup Kategori Risiko dan Status Tindak Lanjut; sesuai karena keduanya USULAN di bagian Istilah.",
+  "Acuan 7.5.3 menyebut 'bagian Rekaman' sementara judul kolom tabel menjadi 'Record'; dapat diterima bila judul bagian beku.",
+  "PDF hlm 9-12: judul kolom Daftar Periksa dan Rencana Tindakan Perbaikan pecah di garis miring atau antarkata, tidak di tengah kata; 'Dasar Hukum/ Dokumen Acuan' kini terbaca."
+ ],
+ "contoh_baik": [
+  "Untuk aspek berstatus Tidak Sesuai atau Sebagian Sesuai, Staff Legal mencatat sekurang-kurangnya satu temuan (USULAN). -> Aspek berstatus Tidak Sesuai atau Sebagian Sesuai memiliki sekurang-kurangnya satu temuan (USULAN)."
+ ]
+}

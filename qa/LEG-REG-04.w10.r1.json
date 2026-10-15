@@ -1,0 +1,27 @@
+{"verdict": "FAIL",
+ "scores": {"a": 4, "b": 4, "c": 4, "d": 4},
+ "blocking": [
+  {"lokasi": "Kesimpulan",
+   "masalah": "Rujukan ke Ketentuan butir 4 diganti fakta 'setiap bulan' tanpa label. Di butir 4 pemeriksaan bulanan berstatus (USULAN), jadi label hilang. Isi pemeriksaannya (Tanggal Berakhir terlampaui menjadi Tidak Berlaku) juga ikut hilang.",
+   "kutipan": "Sebelum: \"Staff Legal memeriksa isi register menurut Ketentuan butir 4.\" Sesudah: \"dan Staff Legal memeriksa isi register setiap bulan.\"",
+   "usul": "\"... dan Staff Legal memeriksa Tanggal Berakhir di register setiap bulan (USULAN).\""},
+  {"lokasi": "Tabel Record, baris Register ini, kolom Retensi",
+   "masalah": "Rujukan ke Ketentuan butir 12 (USULAN) diganti fakta 'tetap disimpan di register' tanpa label. Label (USULAN) yang tersisa hanya menempel pada kalimat 'Berlaku sampai digantikan'.",
+   "kutipan": "Sebelum: \"Baris dokumen yang dimusnahkan mengikuti Ketentuan butir 12.\" Sesudah: \"Baris dokumen yang dimusnahkan tetap disimpan di register. Berlaku sampai digantikan (USULAN, SNX-LEG-SOP-03 bagian 11).\"",
+   "usul": "\"Berlaku sampai digantikan (USULAN, SNX-LEG-SOP-03 bagian 11). Baris dokumen yang dimusnahkan tetap disimpan di register (USULAN).\""},
+  {"lokasi": "Tabel Record, baris Register ini, kolom Lokasi dan pemilik",
+   "masalah": "Rujukan '(Ketentuan butir 14)' ke butir berlabel USULAN dihapus. Akibatnya lokasi folder tampil sebagai fakta final tanpa label (USULAN).",
+   "kutipan": "Sebelum: \"Folder Google Drive departemen Legal (Ketentuan butir 14).\" Sesudah: \"Folder Google Drive Departemen Legal.\"",
+   "usul": "\"Folder Google Drive Departemen Legal (USULAN).\""},
+  {"lokasi": "Ketentuan Pengelolaan butir 2",
+   "masalah": "Kriteria penentuan Kategori hilang. Sebelumnya Kategori ditentukan menurut daftar di bagian Istilah, sekarang hanya 'menentukan Kategori dokumen'.",
+   "kutipan": "Sebelum: \"Staff Legal menentukan Kategori menurut bagian Istilah, dan mengisi ...\" Sesudah: \"Staff Legal menentukan Kategori dokumen, lalu mengisi ...\"",
+   "usul": "\"Staff Legal menentukan Kategori dokumen menurut tabel Kategori Dokumen, lalu mengisi ...\""}
+ ],
+ "nonblocking": [
+  "Petunjuk butir 11 menghapus 'bagian 11' dari rujukan tabel Record SNX-LEG-SOP-03; Ketentuan butir 8 masih menyebutnya. Sebaiknya tetap ditulis 'bagian 11' agar tabelnya mudah dicari.",
+  "Ketentuan butir 10: aktor pencabutan menjadi pasif ('setelah Legal Hold dicabut'). Artinya tetap aman karena butir 9 menetapkan Line Manager Legal sebagai pencabut.",
+  "Status 'Tidak Berlaku' memakai 'record (rekaman)'. Padanan dalam kurung untuk istilah wajib tidak perlu.",
+  "Paragraf catatan di 6.4 rata kiri-kanan, sehingga spasi antarkata renggang. Ini kosmetik."
+ ],
+ "contoh_baik": ["Kolom Tanggal Berlaku dan Tanggal Berakhir memuat tanggal yang tertulis pada dokumen asli ... -> Di kolom Tanggal Berlaku dan Tanggal Berakhir, tulis tanggal yang tertera pada dokumen asli atau salinan elektroniknya."]}

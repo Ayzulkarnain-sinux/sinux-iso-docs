@@ -6,11 +6,11 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 1601,
+  "words": 1609,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
-  "usulan": 21,
+  "usulan": 29,
   "instr_items": 18,
   "instr_role_start": 0,
   "justified_cells": 0,
@@ -31,14 +31,25 @@
   "justified_cells": 7,
   "tables_ge3_no_header": 14
  },
- "subst_diff": {},
+ "subst_diff": {
+  "usul_butir": {
+   "hilang": [],
+   "baru": [
+    "6.10",
+    "6.11",
+    "6.13",
+    "6.8",
+    "6.9"
+   ]
+  }
+ },
  "pdf": "/tmp/claude-0/w10/pdf/new/SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).pdf",
- "pages": 12,
+ "pages": 11,
  "blank": [],
  "form": {
   "isi_heading": "Isi Register",
   "pages_bed1bb6": 12,
-  "pages_w10": 12,
+  "pages_w10": 11,
   "isi_page_bed1bb6": 9,
   "isi_page_w10": 8
  },

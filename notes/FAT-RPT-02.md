@@ -215,3 +215,7 @@ Petunjuk Pengisian ditulis sebagai kalimat perintah untuk Finance Staff (pencata
 Label (USULAN) di Ketentuan 1 dan 12 dipindah ke akhir butir (STYLE §3.5), cakupannya tetap butir itu. "Corrective action (tindakan korektif)" di tabel Istilah mengikuti heading Tabel 3.
 Tabel isian Isi Log diberi min_row_cm 1.0.
 Lebar kolom Tabel 1 (Uraian Bottleneck) dan Tabel 3 (Corrective Action, Hasil Verifikasi Efektivitas) disesuaikan agar judul tidak terpotong.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[2].p (butir 3): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[6].blocks[0].table.rows[1][1]: tanpa label; deskripsi dokumen terkait (SNX-FAT-SOP-04), bukan aturan form ini.

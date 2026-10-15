@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Ketentuan 11: frasa 'ada di Catatan Temuan itu' hilang; kalimat kini 'Tindakan Perbaikan, Penanggung Jawab, dan Target Penyelesaian tidak diulang di laporan ini.' Usul: '... tercatat di Catatan Temuan itu dan tidak diulang di laporan ini.'",
+  "Petunjuk 9: label (USULAN) di akhir butir kini juga menaungi Bidang yang dikosongkan (Ketentuan 13, bukan USULAN). Sesuai §3.5 (satu label di akhir butir), tetapi cakupan label melebar.",
+  "Petunjuk 1-11 hampir semua memakai pola 'Di <kolom>, tulis ...'; wajar, tetapi monoton.",
+  "PDF hlm 9-13: judul kolom berulang (hlm 12), tidak terpotong di tengah kata. Kolom Persyaratan di Daftar Evaluasi Persyaratan lebih sempit daripada Bidang; sebaiknya kolom teks utama paling lebar (STYLE §4.2)."
+ ],
+ "contoh_baik": [
+  "Tingkat Kepatuhan periode sebelumnya diambil dari laporan terisi sebelumnya, dan dikosongkan bila belum ada. -> Ambil Tingkat Kepatuhan periode sebelumnya dari laporan terisi sebelumnya, atau kosongkan jika belum ada."
+ ]
+}

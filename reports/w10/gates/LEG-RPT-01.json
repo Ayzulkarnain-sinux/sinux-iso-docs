@@ -1,0 +1,51 @@
+{
+ "key": "LEG-RPT-01",
+ "mode": "generic",
+ "out": "out/04_Legal/SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2335,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 35,
+  "instr_items": 10,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2446,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 32,
+  "instr_items": 10,
+  "instr_role_start": 2,
+  "justified_cells": 17,
+  "tables_ge3_no_header": 20
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).pdf",
+ "pages": 14,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Laporan",
+  "pages_bed1bb6": 14,
+  "pages_w10": 14,
+  "isi_page_bed1bb6": 10,
+  "isi_page_w10": 10
+ },
+ "pass": false,
+ "residu": {
+  "at": "2026-10-15T08:12Z",
+  "alasan": "G-4 gerbang 3: gagal kedua pemeriksa bahasa buta (r1 FAIL: label USULAN hilang saat rujukan diganti fakta, kolom terpotong; r2 FAIL: kalimat menyempit, lihat qa r2). Spec, notes, dan out dikembalikan ke bed1bb6.",
+  "qa": [
+   "qa/LEG-RPT-01.w10.r1.json",
+   "qa/LEG-RPT-01.w10.r2.json"
+  ],
+  "percobaan_w10": "reports/w10/residu/LEG-RPT-01.w10-attempt.json"
+ }
+}

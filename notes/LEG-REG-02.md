@@ -222,3 +222,7 @@ nihil (subst_diff kosong).
 - Pihak luar tidak disebut khusus; "pelanggan" dan "vendor" hanya sebagai nama area risiko, sama dengan dokumen Legal lain.
 - Petunjuk Pengisian jadi kalimat perintah (0 dari 10 diawali peran). Ketentuan Pengelolaan tetap menyebut satu pelaku per butir.
 - Diagram alur tidak diubah. Halaman ISI kembali ke halaman 10 (sebelumnya naik ke 11 karena table_defaults) setelah bagian sebelum ISI dipadatkan.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[0].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[8].blocks[1].table.rows[0][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

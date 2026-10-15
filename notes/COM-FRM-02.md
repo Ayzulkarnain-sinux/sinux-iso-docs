@@ -238,3 +238,6 @@ nihil (subst_diff build kosong).
 - tabel Peran, VP Commercial: beberapa label (USULAN) digabung menjadi satu label di akhir butir; tidak ada aturan yang kehilangan status USULAN.
   - Asli: "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau formulir ini setiap tahun (USULAN). Pemilik formulir terisi (USULAN, bagian Rekaman) dan menetapkan lokasi rekamannya."
   - W10: "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Sebagai pemilik form ini dan form terisi, meninjau form ini setiap tahun dan menetapkan lokasi record (rekaman) form terisi (USULAN)."
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[1].table.rows[4][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

@@ -221,3 +221,13 @@ nihil (subst_diff build kosong).
 
 ### W10 koreksi worker (temuan nonblocking qa/COM-REG-01.w10.json)
 - Tabel Rekaman dan tabel Acuan ISO (Annex A 5.12): fakta pengganti rujukan butir 4.12 membawa label butir asal (USULAN).
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[1].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[4].blocks[1].table.rows[4][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[7].p (butir 6.8): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[8].p (butir 6.9): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[9].p (butir 6.10): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[10].p (butir 6.11): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[12].p (butir 6.13): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[7].blocks[2].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

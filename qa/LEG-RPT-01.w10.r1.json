@@ -1,0 +1,26 @@
+{"verdict": "FAIL",
+ "scores": {"a": 4, "b": 4, "c": 4, "d": 3},
+ "blocking": [
+  {"lokasi": "Petunjuk Pengisian butir 7",
+   "masalah": "Rujukan '(Ketentuan butir 9)' ke butir berlabel (USULAN) diganti fakta 'isi yang disalin dari Catatan Temuan' tanpa label (USULAN).",
+   "kutipan": "Sebelum: \"Rencana Tindakan Perbaikan diisi satu baris per Tindakan Perbaikan (Ketentuan butir 9).\" Sesudah: \"Isi tabel Rencana Tindakan Perbaikan satu baris per Tindakan Perbaikan, dengan isi yang disalin dari Catatan Temuan.\"",
+   "usul": "\"Isi tabel Rencana Tindakan Perbaikan satu baris per Tindakan Perbaikan, dengan isi yang disalin dari Catatan Temuan (USULAN).\""},
+  {"lokasi": "Tabel Record, baris Laporan pemantauan terisi dan Bukti pemantauan, kolom Lokasi dan pemilik",
+   "masalah": "Rujukan '(Ketentuan butir 12)' ke butir berlabel USULAN dihapus di dua baris. Lokasi folder kini tampil final, dan label (USULAN) yang tersisa hanya menempel pada Pemilik.",
+   "kutipan": "Sebelum: \"Folder Google Drive departemen Legal (Ketentuan butir 12). Pencatat Staff Legal, pemilik Line Manager Legal (USULAN).\" Sesudah: \"Folder Google Drive Departemen Legal. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN).\"",
+   "usul": "\"Folder Google Drive Departemen Legal (USULAN). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN).\" Ubah dengan cara yang sama di baris Bukti pemantauan."},
+  {"lokasi": "PDF hlm. 10-11, tabel 6.2 Daftar Periksa Pemantauan",
+   "masalah": "Rubrik (d) bernilai 3. Judul kolom terpotong di tengah kata. Kolom isian utama (Kewajiban/Kriteria Kepatuhan, Bukti yang Diperiksa) sempit, sekitar 2 cm, sehingga lebih sempit dari kolom Aspek yang Dipantau yang sudah terisi. Ini menyalahi STYLE §4.2 yang meminta kolom teks utama paling lebar.",
+   "kutipan": "Judul kolom tercetak \"Dasar Hukum/Do kumen Acuan\"; kolom \"Kewajiban/ Kriteria Kepatuhan\" dan \"Bukti yang Diperiksa\" masing-masing sekitar 2 cm.",
+   "usul": "Atur lebar: No 1,2 cm; Aspek 2,6 cm; Kewajiban/Kriteria 3,4 cm; Dasar Hukum/Dokumen Acuan 2,8 cm (atau judul 'Dasar Hukum / Dokumen Acuan' dengan spasi agar patah di garis miring); Bukti 2,6 cm; Status 2,2 cm; Catatan/Temuan 2,2 cm. Total 16 cm."},
+  {"lokasi": "PDF hlm. 9 Petunjuk Pengisian butir 2-3, dan hlm. 12 tabel Kesimpulan umum",
+   "masalah": "Rubrik (d): paragraf petunjuk rata kiri-kanan, sehingga spasi antarkata sangat renggang dan sulit dibaca. Sel isian 'Kesimpulan umum' hanya setinggi satu baris, padahal diisi uraian kondisi kepatuhan.",
+   "kutipan": "\"3. Di Daftar Periksa Pemantauan, tulis kewajiban yang diperiksa di kolom Kewajiban/Kriteria Kepatuhan.\" tercetak dengan spasi lebar; baris \"Kesimpulan umum\" setinggi satu baris teks.",
+   "usul": "Ubah paragraf Petunjuk Pengisian ke rata kiri. Beri baris Kesimpulan umum tinggi minimal sekitar 3 cm."}
+ ],
+ "nonblocking": [
+  "Petunjuk butir 6 menggabungkan Kategori Risiko dan Status Tindak Lanjut menjadi 'dengan nilai di bagian Istilah'. Kata 'satu' hilang; sebaiknya ditulis 'dengan satu nilai di bagian Istilah'.",
+  "Istilah Tindakan Perbaikan didefinisikan sebagai 'Corrective action (tindakan korektif) ...'. Definisi ini hampir mengulang istilahnya (STYLE §2.7). Lebih baik 'Tindakan untuk menghilangkan penyebab ...' dengan padanan 'corrective action' dalam kurung pada nama istilah.",
+  "Ketentuan butir 6 kehilangan pelaku ('Aspek ... memiliki sekurang-kurangnya satu temuan'); kalimat sebelumnya masih menyebut Staff Legal, jadi arti tetap."
+ ],
+ "contoh_baik": ["Frekuensi laporan belum diputus (USULAN: satu laporan per triwulan, ...; diputuskan Legal). -> Frekuensi laporan masih menunggu keputusan Legal; usulannya satu laporan per triwulan, selaras dengan memo kepatuhan di SNX-LEG-SOP-01 prosedur 6.7 (USULAN)."]}

@@ -191,3 +191,6 @@ Pihak luar: "pelanggan" (satu-satunya sebutan di dokumen ini, pada "kontrak pela
 Cara Mengisi ditulis sebagai kalimat perintah untuk HRGA Officer (pencatat di tabel Peran); butir 7.9 menyebut HR Lead dan Direktur Utama di tengah kalimat.
 Butir 4.5: label (USULAN) tetap hanya pada pembacaan form ini sebagai Competency Matrix; kalimat itu dipindah ke akhir butir.
 "Record (rekaman)" di header tabel bagian Rekaman sebagai jembatan heading beku. Tabel 2 diberi min_row_cm 1.4 untuk tulisan tangan.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[2].blocks[0].table.rows[6][1]: tanpa label; definisi istilah; dasar penetapan berlabel (USULAN) tetap di butir 4.3.

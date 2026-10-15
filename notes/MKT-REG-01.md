@@ -253,3 +253,15 @@ nihil (subst_diff kosong).
 - Cara Mengisi jadi kalimat perintah untuk Brand & Marketing (pencatat register di tabel Peran); 0 dari 25 diawali peran.
 - Tabel isian diberi min_row_cm 0.8 (1.0 dan 0.9 menaikkan halaman jadi 16).
 - Ruang Lingkup: "rencana aktivitas" ditulis "rencana Aktivitas" agar "Aktivitas" satu arti dengan SNX-MKT-REG-02 dan SNX-MKT-RPT-01.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[1].table.rows[0][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[4].blocks[1].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[4].blocks[1].table.rows[6][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[4].blocks[1].table.rows[7][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[4].blocks[1].table.rows[8][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[4].blocks[1].table.rows[9][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[0].p (butir 6.1): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[6].p (butir 6.7): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[5].blocks[9].p (butir 6.10): tanpa label; instruksi mekanis pengisian kolom; penetapan Approver (USULAN) tidak dinyatakan ulang.
+- .sections[5].blocks[10].p (butir 6.11): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

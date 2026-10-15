@@ -293,3 +293,9 @@ nihil (subst_diff kosong di reports/w10/gates/LEG-FRM-01.json).
 - Ketentuan Penggunaan butir 5: beberapa label (USULAN) digabung menjadi satu label di akhir butir; tidak ada aturan yang kehilangan status USULAN.
   - Asli: "5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi (cara mencentang di Petunjuk Pengisian butir 5), dan menulis dasar rekomendasi. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN). Line Manager Legal memeriksa formulir terisi."
   - W10: "5. Staff Legal mencentang Hasil Penelaahan dan Rekomendasi serta menulis dasar rekomendasi, lalu form terisi diperiksa Line Manager Legal. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali Tidak terdapat temuan; Rekomendasi hanya satu pilihan (USULAN)."
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[3].blocks[0].table.rows[0][1]: tanpa label; uraian tugas umum Staff Legal; kewajiban berlabel (USULAN) di Ketentuan 1 tidak dinyatakan ulang.
+- .sections[4].blocks[4].p (butir 5): tanpa label; instruksi mekanis cara mencentang (STYLE §3.6).
+- .sections[5].blocks[22].p: tanpa label; instruksi mekanis cara mencentang (STYLE §3.6).
+- .sections[7].blocks[4].table.rows[1][2]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

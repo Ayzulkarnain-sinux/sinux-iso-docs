@@ -265,3 +265,8 @@ nihil (subst_diff kosong).
 - Heading "Dasar Peninjauan", "Ketentuan Tinjauan", dan "Persetujuan Tinjauan" beku; badan memakai "review", diperkenalkan "Review (tinjauan)" di Tujuan. "Record (rekaman)" diperkenalkan di definisi Bukti.
 - Calque "yang SINUX tetapkan" (F.1), "yang unit kerja tunjuk", dan "yang harus SINUX penuhi" ditulis ulang pasif.
 - Halaman: 18 ke 17, bagian ISI mulai halaman 10 ke 9.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[0].table.rows[0][1]: tanpa label; uraian tugas Staff Legal; periode tinjauan berlabel (USULAN) tidak dinyatakan ulang.
+- .sections[4].blocks[0].table.rows[3][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[11].blocks[1].table.rows[0][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

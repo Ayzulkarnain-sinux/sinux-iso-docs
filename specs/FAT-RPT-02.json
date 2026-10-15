@@ -344,7 +344,7 @@
      "p": "2. Di Tabel 1, isi Tanggal Dicatat dengan tanggal catatan dibuat, dan Proses FAT dengan salah satu dari enam proses di bagian Ruang Lingkup. Isi Tahap yang Tertahan dengan nama tahap menurut prosedur proses itu, misalnya Review dan persetujuan pada SNX-FAT-SOP-05. Jika prosedurnya masih dalam review, tulis nama tahap sesuai pekerjaan yang tertahan."
     },
     {
-     "p": "3. Di Uraian Bottleneck, tulis apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, tulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Isi Diminta kepada dengan nama dan jabatan Pemberi support, atau nomor ticket GLPI."
+     "p": "3. Di Uraian Bottleneck, tulis apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, tulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Isi Diminta kepada dengan nama dan jabatan Pemberi support, atau nomor ticket GLPI (USULAN)."
     },
     {
      "p": "4. Di Tabel 2, isi Tanggal Support Diminta, Tanggal Support Diterima, dan Tanggal Tahap Berlanjut dengan tanggal kejadiannya. Biarkan Tanggal Tahap Berlanjut kosong selama tahap masih tertahan. Lama bottleneck adalah selisih Tanggal Dicatat dan Tanggal Tahap Berlanjut."

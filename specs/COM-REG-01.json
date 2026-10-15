@@ -249,7 +249,7 @@
        ],
        [
         "Business Development",
-        "Mencatat feedback dan keluhan di Tabel 1; menulis PIC, tindakan, nomor ticket, dan status di Tabel 2; menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3; mengeskalasi keluhan kritis dan mencatat eskalasinya di Tabel 4. Menurut SNX-COM-SOP-01 butir 4.17, kepuasan customer menjadi tanggung jawab Business Development."
+        "Mencatat feedback dan keluhan di Tabel 1; menulis PIC, tindakan, nomor ticket, dan status di Tabel 2; menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3; mengeskalasi keluhan kritis dan mencatat eskalasinya di Tabel 4. Menurut SNX-COM-SOP-01 butir 4.17, kepuasan customer menjadi tanggung jawab Business Development (USULAN)."
        ],
        [
         "VP Commercial",
@@ -261,7 +261,7 @@
        ],
        [
         "COO",
-        "Memutuskan keluhan yang dieskalasi VP Commercial kepadanya."
+        "Memutuskan keluhan yang dieskalasi VP Commercial kepadanya (USULAN)."
        ]
       ]
      }
@@ -296,22 +296,22 @@
      "p": "6.7 Di kolom Isi Feedback atau Keluhan, tulis ringkasan isinya."
     },
     {
-     "p": "6.8 Tulis jabatan PIC di Tabel 2 setelah PIC ditunjuk VP Commercial. Kolom PIC diisi jabatan, bukan nama orang."
+     "p": "6.8 Tulis jabatan PIC di Tabel 2 setelah PIC ditunjuk VP Commercial. Kolom PIC diisi jabatan, bukan nama orang (USULAN)."
     },
     {
-     "p": "6.9 Jika feedback atau keluhan punya ticket, tulis nomornya di kolom Nomor Ticket."
+     "p": "6.9 Jika feedback atau keluhan punya ticket, tulis nomornya di kolom Nomor Ticket (USULAN)."
     },
     {
-     "p": "6.10 Di kolom Tindakan, tulis tiap tindakan PIC beserta tanggalnya. Jika VP Commercial memutuskan tidak ada tindakan, tulis keputusan itu dan alasannya."
+     "p": "6.10 Di kolom Tindakan, tulis tiap tindakan PIC beserta tanggalnya. Jika VP Commercial memutuskan tidak ada tindakan, tulis keputusan itu dan alasannya (USULAN)."
     },
     {
-     "p": "6.11 Isi kolom Status dengan Baru, Dalam Penanganan, atau Selesai. Selesai hanya ditulis setelah ditetapkan VP Commercial."
+     "p": "6.11 Isi kolom Status dengan Baru, Dalam Penanganan, atau Selesai. Selesai hanya ditulis setelah ditetapkan VP Commercial (USULAN)."
     },
     {
      "p": "6.12 Di kolom Tanggal Selesai, tulis tanggal VP Commercial menetapkan Selesai."
     },
     {
-     "p": "6.13 Tulis tanggal dan saluran konfirmasi kepada customer di Tabel 3."
+     "p": "6.13 Tulis tanggal dan saluran konfirmasi kepada customer di Tabel 3 (USULAN)."
     },
     {
      "p": "6.14 Di kolom Isi Konfirmasi, tulis ringkasan isi konfirmasi."
@@ -767,7 +767,7 @@
        ],
        [
         "Ticket feedback dan keluhan",
-        "Zammad untuk ticket yang ditangani Operation, GLPI untuk ticket lain. Pemilik: PIC.",
+        "Zammad untuk ticket yang ditangani Operation, GLPI untuk ticket lain. Pemilik: PIC (USULAN).",
         "Belum ditetapkan"
        ]
       ]

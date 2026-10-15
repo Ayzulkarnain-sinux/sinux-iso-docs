@@ -246,3 +246,6 @@ nihil (subst_diff build kosong).
 - tabel Peran, VP Commercial: beberapa label (USULAN) digabung menjadi satu label di akhir butir; tidak ada aturan yang kehilangan status USULAN.
   - Asli: "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01."
   - W10: "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai. Jabatan JA-03 di SNX-HR-ORG-01. Pemilik form ini dan form terisi (USULAN)."
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[3].blocks[0].table.rows[0][1]: tanpa label; uraian tugas umum Business Development, kewajiban berlabel (USULAN) di Ketentuan tidak dinyatakan ulang (keputusan sama dengan LEG-FRM-01 tabel Peran).

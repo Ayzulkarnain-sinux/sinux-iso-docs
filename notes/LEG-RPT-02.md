@@ -202,3 +202,31 @@ Hasil uji sesudah perbaikan r1: render exit 0; lint_doc generic "pass": true, fa
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap. Open item 10: ditutup W9: pemetaan sudah diputus owner.
 - A3: tidak ada garis lapor JA-03/JA-04 (Direktur Utama dan Direktur (COO) disebut hanya sebagai unit Management).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+- Ketentuan 17, kalimat pertama: "(USULAN, selaras dengan laporan bulanan di SNX-LEG-SOP-01 prosedur 6.10)" menjadi "selaras dengan laporan bulanan di SNX-LEG-SOP-01 prosedur 6.10" dan butir ditutup satu label "(USULAN)" di akhir (STYLE §3.5 satu label per butir). Status kedua kalimat tetap usulan; label tidak dibuang dari butir.
+### W10 kalimat dihapus atau dipindah
+- Ruang Lingkup, baris kebijakan internal: "Pemantauannya ada di aspek M7 SNX-LEG-RPT-01." digabung jadi "dan dipantau pada aspek M7 SNX-LEG-RPT-01".
+- Peran: "(Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18)", "(Ketentuan butir 16 dan 17)", "(Ketentuan butir 8)", "(Ketentuan butir 17)" dihapus.
+- Peran: "Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01." dan versi JA-08 dipadatkan menjadi "Jabatan: Legal & Compliance (JA-0x)."; sumber pemetaan tetap di Dokumen Terkait SNX-HR-ORG-01.
+- Petunjuk 2: "menurut Ketentuan butir 6" diganti faktanya (perubahan peraturan yang baru dicatat ke SNX-LEG-REG-03). Petunjuk 5: "menurut Ketentuan butir 11" dihapus. Petunjuk 9: "menurut Ketentuan butir 3" dan "menurut Ketentuan butir 13" diganti faktanya.
+- Dokumen Terkait SNX-LEG-REG-03: "(Ketentuan butir 2)" dihapus. Rekaman: "(Ketentuan butir 18; ...)" dan "(Ketentuan butir 18)" dihapus; rujukan "SNX-LEG-SOP-03 butir 4.26" di baris laporan terisi dihapus karena sudah ada di Dokumen Terkait SNX-LEG-SOP-03 (satu rujukan per sel).
+### W10 selisih angka
+nihil (subst_diff build kosong).
+### W10 catatan
+- Pihak luar: "pelanggan" (dan vendor/pemasok), sama dengan dokumen Legal lain.
+- "Review (tinjauan)" diperkenalkan di tabel butir yang dikecualikan, "record (rekaman)" di Dokumen Terkait SNX-LEG-SOP-03.
+- Petunjuk Pengisian jadi kalimat perintah (0 dari 11 diawali peran). Kolom Daftar Evaluasi Persyaratan dilebarkan untuk Persyaratan dan Catatan; halaman tetap 15, ISI mulai halaman 10.
+### W10 putaran perbaikan 1 (pemeriksa buta r1)
+- Ketentuan 17: label pada kalimat penyampaian dikembalikan: "... SNX-LEG-SOP-01 prosedur 6.10 (USULAN). Manajemen memutuskan tindak lanjut atas Rekomendasi (USULAN)." Catatan "W10 label dihapus" di atas tidak berlaku lagi (nihil).
+- Petunjuk 2: "tulis perubahan peraturan pada periode itu yang baru dicatat ke SNX-LEG-REG-03 (USULAN)." (batas periode dan label dikembalikan).
+- Petunjuk 9: "Persyaratan yang masih Belum Diverifikasi di SNX-LEG-REG-03 dan tidak dihitung (USULAN)" (unsur pengecualian dan label dikembalikan).
+- Rekaman, Lokasi: "Folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-03 butir 4.8) ... Pemilik: Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN)." (rujukan 4.26 dikembalikan).
+- Petunjuk 5: syarat "untuk status Sebagian Sesuai atau Tidak Sesuai" ditambahkan. Acuan 8.2.2: "yang berlaku" dikembalikan.
+- Tabel 6.2 widths_cm [3.5, 2.0, 3.2, 2.6, 2.5, 2.2] (tidak ada kata terpotong); tabel 6.5 min_row_cm 2.0, tidak terbelah. Halaman tetap 15 (ISI hlm 10): Rekaman baris Bukti, Dokumen Terkait SNX-LEG-RPT-01 dan SNX-HR-ORG-01, serta Acuan 9.1 dipadatkan.
+- Residu renderer: paragraf badan rata kiri-kanan berasal dari template; tidak ada medan spec untuk perataan paragraf.
+
+### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
+- .sections[4].blocks[4].p (butir 5): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+- .sections[7].blocks[1].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.

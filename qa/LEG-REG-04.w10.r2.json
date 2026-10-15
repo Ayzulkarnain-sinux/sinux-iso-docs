@@ -1,0 +1,26 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "KESIMPULAN, kalimat terakhir",
+   "masalah": "Rujukan 'menurut Ketentuan butir 4' diganti fakta yang menyempit. Ketentuan 4 mewajibkan pemeriksaan register setiap bulan DAN mengubah status dokumen yang Tanggal Berakhirnya terlampaui menjadi Tidak Berlaku. Versi W10 hanya menyebut pemeriksaan Tanggal Berakhir; objek menyempit dari 'isi register' ke 'Tanggal Berakhir' dan kewajiban mengubah status hilang.",
+   "kutipan": "Sebelum: 'Staff Legal memeriksa isi register menurut Ketentuan butir 4.' Sesudah: '..., dan Staff Legal memeriksa Tanggal Berakhir di register setiap bulan (USULAN).'",
+   "usul": "Line Manager Legal meninjau dokumen ini setiap tahun. Staff Legal memeriksa register setiap bulan (USULAN) dan mengubah status dokumen yang Tanggal Berakhirnya sudah terlampaui menjadi Tidak Berlaku."
+  }
+ ],
+ "nonblocking": [
+  "Ketentuan 10: 'setelah Legal Hold dicabut' tidak lagi menyebut Line Manager Legal; tetap jelas dari Ketentuan 9.",
+  "Ketentuan 8 dan Petunjuk 11 merujuk 'tabel Record di SNX-LEG-SOP-03 bagian 11'; pastikan judul tabel di SOP-03 memang berubah menjadi Record, jika tidak kutip persis 'Rekaman'.",
+  "Petunjuk 13 dan label (USULAN) lain tetap di akhir butir; baik.",
+  "PDF hlm 8-11: judul kolom empat tabel Isi Register terbaca, berulang di hlm 10 dan 11, tidak terpotong di tengah kata."
+ ],
+ "contoh_baik": [
+  "Kolom Pihak memuat nama pihak lain pada dokumen. Untuk dokumen tanpa pihak lain, kolom diisi SINUX ... -> Di kolom Pihak, tulis nama pihak lain pada dokumen. Untuk dokumen tanpa pihak lain, tulis SINUX ..."
+ ]
+}

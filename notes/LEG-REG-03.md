@@ -187,3 +187,25 @@ Open item:
 
 - U16 (pemetaan peran ke JA-08 dan JA-09, menunggu konfirmasi K-13): ditutup W9: pemetaan diputus owner (LEAD G-3 A5).
 - R2: baris U16 kini memuat "ditutup W9" di barisnya sendiri; tidak ada baris dihapus.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil (label "(USULAN)" pada Status, Peran, Lingkup, Ketentuan 9, dan Acuan ISO dipertahankan; posisinya dipindah ke akhir butir).
+### W10 kalimat dihapus atau dipindah
+- Istilah, Bidang: "Nilainya ada di Petunjuk Pengisian butir 6." dihapus (kalimat penunjuk).
+- Ketentuan 9: "menurut butir 3" dihapus; isi butir 3 (pemberitahuan perubahan kegiatan) ditulis langsung.
+- Peran: "(Ketentuan butir 1, 4, 6, 8 sampai 11, 13)", "(Ketentuan butir 5 dan 7)", dan "(Ketentuan butir 2, 3, dan 12)" dihapus.
+- Paragraf di bawah tabel Peran: "Line Manager Legal dan Staff Legal adalah nama peran; SNX-HR-ORG-01 memetakannya ke jabatan Legal & Compliance, JA-08 dan JA-09." dipindah ke tabel Peran sebagai "Jabatan: Legal & Compliance (JA-09)" dan "(JA-08)", seperti SNX-LEG-REG-01.
+- Petunjuk 10: "menurut Ketentuan butir 9" dihapus. Petunjuk 12: "(Ketentuan butir 11)" dihapus.
+- Rekaman: "(Ketentuan butir 13)" dihapus. Kesimpulan: "menurut Ketentuan butir 9" diganti faktanya "setiap bulan".
+### W10 selisih angka
+nihil (lihat subst_diff build; token nomor butir rujukan yang hilang sudah dicatat di bagian di atas).
+### W10 catatan
+- Pihak luar: "pelanggan" (dengan vendor), sama dengan dokumen Legal lain.
+- Rujukan tabel memakai teks h2 beku: "Riwayat Perubahan dan Peninjauan", "Status dan Peninjauan"; "Review (tinjauan)" diperkenalkan di Istilah, "record (rekaman)" di Peran.
+- Petunjuk Pengisian jadi kalimat perintah; calque "yang SINUX miliki", "yang harus SINUX lakukan", "yang ia ketahui" ditulis ulang.
+### W10 putaran perbaikan 1 (pemeriksa buta r1)
+- Kesimpulan: "setiap bulan" diberi (USULAN) dan pemicu perubahan kegiatan dikembalikan: "Staff Legal meninjau isinya setiap bulan (USULAN) dan setiap kali kegiatan SINUX berubah."
+- Petunjuk 10: kriteria tanggal review dikembalikan: "menurut Ketentuan butir 9, yaitu setiap bulan (USULAN) dan saat kegiatan berubah."
+- Rekaman, Lokasi: "Folder Google Drive Departemen Legal (USULAN)." (label dari Ketentuan butir 13 dibawa).
+- Ketentuan 9: label dipindah tepat setelah "setiap bulan" agar tidak menutupi pemicu perubahan kegiatan.

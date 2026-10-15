@@ -342,11 +342,11 @@
       "rows": [
        [
         "Brand & Marketing",
-        "Pencatat register. Menyusun materi, menjadi PIC, dan mengisi Tabel 1 sampai Tabel 5. Menjadwalkan publikasi setelah persetujuan, menarik materi yang diputuskan ditarik, serta menyimpan file final, bukti persetujuan, bukti verifikasi, dan izin penggunaan aset."
+        "Pencatat register. Menyusun materi, menjadi PIC, dan mengisi Tabel 1 sampai Tabel 5. Menjadwalkan publikasi setelah persetujuan, menarik materi yang diputuskan ditarik, serta menyimpan file final, bukti persetujuan, bukti verifikasi, dan izin penggunaan aset (USULAN)."
        ],
        [
         "VP Commercial",
-        "Pemilik register menurut blok Identity. Memegang peran Approver, Reviewer, dan Pemilik informasi, menunjuk PIC selain Brand & Marketing, serta menunjuk Pemverifikasi untuk claim jenis lain."
+        "Pemilik register menurut blok Identity. Memegang peran Approver, Reviewer, dan Pemilik informasi, menunjuk PIC selain Brand & Marketing, serta menunjuk Pemverifikasi untuk claim jenis lain (USULAN)."
        ],
        [
         "PIC",
@@ -366,19 +366,19 @@
        ],
        [
         "Pemverifikasi",
-        "Memeriksa claim terhadap sumber atau bukti pendukungnya, lalu menyampaikan hasilnya kepada Brand & Marketing."
+        "Memeriksa claim terhadap sumber atau bukti pendukungnya, lalu menyampaikan hasilnya kepada Brand & Marketing (USULAN)."
        ],
        [
         "Manager of Product Tech",
-        "Pemverifikasi claim kemampuan, spesifikasi, atau perbandingan produk dan layanan SINUX."
+        "Pemverifikasi claim kemampuan, spesifikasi, atau perbandingan produk dan layanan SINUX (USULAN)."
        ],
        [
         "VP Tech Operation and Services",
-        "Pemverifikasi claim kinerja layanan."
+        "Pemverifikasi claim kinerja layanan (USULAN)."
        ],
        [
         "Legal & Compliance",
-        "Pemverifikasi claim sertifikasi, kepatuhan, izin, dan penyebutan customer atau pihak luar lain."
+        "Pemverifikasi claim sertifikasi, kepatuhan, izin, dan penyebutan customer atau pihak luar lain (USULAN)."
        ]
       ]
      }
@@ -392,7 +392,7 @@
    "h": "Cara Mengisi",
    "blocks": [
     {
-     "p": "6.1 Tulis satu baris di Tabel 1 untuk setiap versi materi di setiap channel, dengan ID persetujuan di kolom ID."
+     "p": "6.1 Tulis satu baris di Tabel 1 untuk setiap versi materi di setiap channel, dengan ID persetujuan di kolom ID (USULAN)."
     },
     {
      "p": "6.2 Di kolom Nama Materi, tulis judul materi seperti pada file final."
@@ -410,7 +410,7 @@
      "p": "6.6 Di kolom Versi, tulis 1 untuk versi pertama, lalu naikkan satu angka untuk setiap versi baru (butir 4.8)."
     },
     {
-     "p": "6.7 Di kolom Lokasi File Final, tulis jalur folder dan nama file final."
+     "p": "6.7 Di kolom Lokasi File Final, tulis jalur folder dan nama file final (USULAN)."
     },
     {
      "p": "6.8 Di kolom PIC Tabel 2, tulis jabatan PIC, bukan nama orang."
@@ -422,7 +422,7 @@
      "p": "6.10 Di kolom Approver, tulis jabatan Approver."
     },
     {
-     "p": "6.11 Setelah Approver menyetujui versi itu, tulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan."
+     "p": "6.11 Setelah Approver menyetujui versi itu, tulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan (USULAN)."
     },
     {
      "p": "6.12 Di kolom Bukti Persetujuan, tulis lokasi bukti persetujuan (butir 4.14)."

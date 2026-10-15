@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "KESIMPULAN dan Petunjuk 10: pemicu review berubah dari 'saat Penanggung Jawab Kegiatan memberi tahu perubahan kegiatan' (Ketentuan 9) menjadi 'setiap kali kegiatan SINUX berubah' / 'saat kegiatan berubah'. Tidak menyempit, tetapi lebih aman menulis 'setiap kali Penanggung Jawab Kegiatan memberi tahu adanya perubahan kegiatan' agar sama dengan Ketentuan 9.",
+  "Tabel Record, Retensi: 'Usulan masa retensi ... ada di SNX-LEG-SOP-03' menjadi 'Usulan retensi ... disusun di SNX-LEG-SOP-03'. Kata 'disusun' terbaca sebagai masih dalam penyusunan; usul 'Usulan masa retensi ... tercantum di SNX-LEG-SOP-03 (Kategori 6)'.",
+  "Satu istilah per hal: badan memakai 'review', tetapi judul tabel 'Status dan Peninjauan' dan 'Riwayat Perubahan dan Peninjauan' tetap (judul beku) sementara judul kolomnya menjadi 'Review Terakhir' dan 'Hasil Review'. Padanan 'Review (tinjauan)' sudah ada di Istilah, jadi dapat diterima.",
+  "Tujuan: 'Register ini mendaftar peraturan' kurang lazim; 'mencatat' lebih wajar. Acuan 5.1.2 juga memakai 'mendaftar'.",
+  "PDF hlm 7-10: judul kolom terbaca, berulang, tidak terpotong di tengah kata; lebar kolom wajar."
+ ],
+ "contoh_baik": [
+  "Kewajiban | Hal yang harus SINUX lakukan atau hindari menurut satu peraturan ... -> Hal yang harus dilakukan atau dihindari SINUX menurut satu peraturan ..."
+ ]
+}

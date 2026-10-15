@@ -1,0 +1,23 @@
+{"verdict": "FAIL",
+ "scores": {"a": 4, "b": 4, "c": 4, "d": 4},
+ "blocking": [
+  {"lokasi": "Kesimpulan",
+   "masalah": "Rujukan ke Ketentuan butir 9 (berlabel USULAN) diganti fakta 'setiap bulan' tanpa label (USULAN), dan pemicu review saat Penanggung Jawab Kegiatan memberi tahu perubahan kegiatan hilang. Kriteria menyempit dan label hilang.",
+   "kutipan": "Sebelum: \"Staff Legal meninjau isinya menurut Ketentuan butir 9.\" Sesudah: \"Staff Legal meninjau isinya setiap bulan.\"",
+   "usul": "\"... dan Staff Legal meninjau isinya setiap bulan (USULAN) dan setiap kali ada perubahan kegiatan.\""},
+  {"lokasi": "Petunjuk Pengisian butir 10",
+   "masalah": "Kriteria tanggal review hilang: sebelumnya tanggal Review Terakhir dan Review Berikutnya ditentukan menurut Ketentuan butir 9 (bulanan, USULAN, dan saat perubahan kegiatan). Sekarang hanya 'yang sudah dan akan dilakukan', tanpa jadwal dan tanpa label.",
+   "kutipan": "Sebelum: \"memuat tanggal peninjauan menurut Ketentuan butir 9.\" Sesudah: \"tulis tanggal review yang sudah dan akan dilakukan.\"",
+   "usul": "\"Di kolom Review Terakhir dan Review Berikutnya, tulis tanggal review menurut Ketentuan butir 9.\" atau tulis faktanya: \"... tanggal review, yaitu setiap bulan (USULAN) dan saat kegiatan berubah.\""},
+  {"lokasi": "Tabel Record, baris Register ini, kolom Lokasi dan pemilik",
+   "masalah": "Rujukan '(Ketentuan butir 13)' ke butir berlabel USULAN dihapus, sehingga lokasi folder Google Drive Departemen Legal kini tampil sebagai fakta final tanpa label (USULAN).",
+   "kutipan": "Sebelum: \"Folder Google Drive departemen Legal (Ketentuan butir 13).\" Sesudah: \"Folder Google Drive Departemen Legal.\"",
+   "usul": "\"Folder Google Drive Departemen Legal (USULAN).\""}
+ ],
+ "nonblocking": [
+  "Header kolom tabel 6.3 menjadi 'Review Terakhir'/'Review Berikutnya', sementara judul tabel 6.3 dan 6.4 tetap 'Peninjauan' (heading beku); padanan 'Review (tinjauan)' ada di tabel Istilah, jadi dapat diterima.",
+  "Ketentuan butir 9: label (USULAN) di akhir kalimat kini bisa dibaca menutupi pemicu perubahan kegiatan juga; pertimbangkan 'setiap bulan (USULAN)' tepat setelah frasa bulanan.",
+  "Tabel Peran: kalimat bahwa SNX-HR-ORG-01 memetakan peran ke jabatan JA-08/JA-09 dihapus dari paragraf; jabatan dipindah ke tabel tanpa menyebut sumbernya.",
+  "Kolom Peran 'record (rekaman)' memberi padanan Indonesia untuk istilah wajib English; tidak salah, tetapi tidak perlu."
+ ],
+ "contoh_baik": ["Kewajiban | Hal yang harus SINUX lakukan atau hindari ... -> Kewajiban | Hal yang harus dilakukan atau dihindari SINUX menurut satu peraturan atau persyaratan hukum."]}

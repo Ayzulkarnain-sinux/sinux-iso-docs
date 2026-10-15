@@ -1,0 +1,17 @@
+Gerbang rujukan USULAN (w10.py build): menembak bila rujukan ke butir ber-(USULAN) hilang, teks W10 menambah kata baru (isi butir dinyatakan ulang), dan tanpa (USULAN); jalur yang memang tidak butuh label dicatat + alasan di notes W10.
+Kalibrasi ambang: ambang 1 kata menangkap semua kontrol positif (MKT 2/9/1 jalur); ambang 2 melewatkan MKT-REG-02 dan MKT-RPT-01.
+POSITIF MKT-REG-02 (percobaan W10, residu): ['.sections[4].blocks[1].table.rows[0][1]', '.sections[4].blocks[1].table.rows[1][1]']
+POSITIF MKT-REG-03 (percobaan W10, residu): ['.sections[4].blocks[1].table.rows[1][1]', '.sections[4].blocks[1].table.rows[2][1]', '.sections[5].blocks[4].p', '.sections[5].blocks[5].p', '.sections[5].blocks[6].p', '.sections[5].blocks[8].p', '.sections[5].blocks[10].p', '.sections[5].blocks[15].p', '.sections[5].blocks[16].p']
+POSITIF MKT-RPT-01 (percobaan W10, residu): ['.sections[4].blocks[1].table.rows[1][1]']
+UKUR COM-FRM-01 (lolos, perlu adjudikasi): ['.sections[3].blocks[0].table.rows[0][1]']
+UKUR COM-FRM-02 (lolos, perlu adjudikasi): ['.sections[4].blocks[1].table.rows[4][1]']
+UKUR COM-REG-01 (lolos, perlu adjudikasi): ['.sections[4].blocks[1].table.rows[1][1]', '.sections[4].blocks[1].table.rows[4][1]', '.sections[5].blocks[7].p', '.sections[5].blocks[8].p', '.sections[5].blocks[9].p', '.sections[5].blocks[10].p', '.sections[5].blocks[12].p', '.sections[7].blocks[2].table.rows[1][1]']
+UKUR FAT-RPT-02 (lolos, perlu adjudikasi): ['.sections[4].blocks[2].p', '.sections[6].blocks[0].table.rows[1][1]']
+UKUR FAT-SOP-01 (lolos, perlu adjudikasi): ['.definitions[29][1]', '.roles[3][2]', '.procedures[1].steps[2][0]', '.procedures[2].steps[2][0]', '.exceptions[2][1]', '.records[3][1]']
+UKUR HR-FRM-01 (lolos, perlu adjudikasi): ['.sections[2].blocks[0].table.rows[6][1]']
+UKUR LEG-FRM-01 (lolos, perlu adjudikasi): ['.sections[3].blocks[0].table.rows[0][1]', '.sections[4].blocks[4].p', '.sections[5].blocks[22].p', '.sections[7].blocks[4].table.rows[1][2]']
+UKUR LEG-FRM-03 (lolos, perlu adjudikasi): ['.sections[4].blocks[0].table.rows[0][1]', '.sections[4].blocks[0].table.rows[3][1]', '.sections[11].blocks[1].table.rows[0][1]']
+UKUR LEG-REG-01 (lolos, perlu adjudikasi): ['.sections[4].blocks[8].p']
+UKUR LEG-REG-02 (lolos, perlu adjudikasi): ['.sections[4].blocks[0].table.rows[1][1]', '.sections[8].blocks[1].table.rows[0][1]']
+UKUR MKT-REG-01 (lolos, perlu adjudikasi): ['.sections[4].blocks[1].table.rows[0][1]', '.sections[4].blocks[1].table.rows[1][1]', '.sections[4].blocks[1].table.rows[6][1]', '.sections[4].blocks[1].table.rows[7][1]', '.sections[4].blocks[1].table.rows[8][1]', '.sections[4].blocks[1].table.rows[9][1]', '.sections[5].blocks[0].p', '.sections[5].blocks[6].p', '.sections[5].blocks[9].p', '.sections[5].blocks[10].p']
+total jalur di dokumen lolos: 39
