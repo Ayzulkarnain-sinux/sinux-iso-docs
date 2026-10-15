@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "4.37: kalimat penunjuk 'Lokasi, pemilik, dan masa simpan ada di tabel bagian 11.' dihapus; tabel bagian 11 tetap ada dan langkah tidak hilang (STYLE 3.2).",
+  "Roles: rujukan '(butir 6.1 sampai 6.7)', '(USULAN, butir 6.1, 6.2, dan 6.7)', '(USULAN, butir 6.1, 6.4, dan bagian 9)' dibuang; label (USULAN) tetap di baris Atasan langsung, HRGA Officer, HR Lead, dan baris Karyawan serta Direktur Utama tetap tanpa label seperti di bed1bb6.",
+  "Bagian 9: '(butir 6.3, USULAN pelaku)' menjadi 'sesuai butir 6.3 (USULAN: pelaku)'; cakupan label tetap pada pelaku. Penambahan label berbentuk (USULAN: ...) menjelaskan kenaikan hitungan label, bukan butir baru.",
+  "Bagian 9 baris 'Haid tidak diberitahukan' dan 'Kepentingan Perusahaan mendesak' memuat dua pelaku sejak bed1bb6; tidak diubah W10, tidak menjadi pemblokir.",
+  "6.1 pengantar: '...masih USULAN' tanpa kurung terbaca sebagai status usulan; sama arti dengan 'adalah USULAN' di bed1bb6.",
+  "'Sakit berkepanjangan ... tanpa mengurangi hak normatif pekerja sesuai butir 4.12' agak ambigu (sesuai menempel ke 'hak normatif'); usul pindahkan: 'Sesuai butir 4.12, HR Lead menjalankan ...'."
+ ],
+ "contoh_baik": [
+  "Pasal 32 ayat (1) tidak merinci jenis cuti; penerapannya ... adalah USULAN. Cuti mendesak ada di 6.2, cuti sakit di 6.3, dan cuti haid di 6.5. -> Pasal 32 ayat (1) tidak merinci jenis cuti, jadi penerapannya ... masih USULAN. Cuti mendesak, cuti sakit, dan cuti haid memakai alur 6.2, 6.3, dan 6.5."
+ ]
+}

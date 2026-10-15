@@ -246,3 +246,33 @@ Tidak diubah karena di luar daftar butir Sweep (untuk keputusan orkestrator): (a
 
 Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
 - ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
+
+## W10 (bahasa, ISO-W10)
+
+### W10 label dihapus
+nihil. Label di tabel peran ("(USULAN, butir 6.1, 6.2, dan 6.7)" dan sejenisnya) tetap satu per sel, kini "(USULAN)" di akhir sel. Label "(butir 4.x, USULAN pelaku)" di bagian 9 ditulis "sesuai butir 4.x (USULAN: pelaku)"; tidak ada label yang hilang.
+
+### W10 kalimat dihapus atau dipindah
+- Butir 4.37: "Lokasi, pemilik, dan masa simpan ada di tabel bagian 11." (kalimat penunjuk, STYLE §3.2; faktanya ada di tabel record bagian 11)
+- Pengantar bagian 4: "Istilah subjek disamakan dengan bagian 3" ditulis ulang "hanya sebutan pihak yang disamakan dengan istilah di bagian 3"; "Nomor pasal dan ayat ada di akhir tiap butir" digabung ke kalimat pertama.
+- Butir 4.36: "peran dan wewenang tiap pihak dalam SOP ini ada di bagian 5" ditulis ulang "setiap pihak dalam SOP ini menjalankan peran dan wewenang menurut bagian 5".
+- Tabel peran: rujukan "(butir 6.1 sampai 6.7)", "butir 6.1, 6.2, dan 6.7", "butir 6.3 sampai 6.7", "butir 6.1, 6.4, dan bagian 9", "(butir 6.7)" dibuang (STYLE §3.1).
+- Kata "sumber" sebagai catatan penyusunan diganti nama dokumennya (PP - Cuti BAB VI) di Scope, pengantar bagian 4, 6.5 langkah 1, dan Dokumen terkait baris UU No. 13 Tahun 2003.
+
+### W10 audit pointer
+- .policy[46]: pointer murni dibuang, isi tidak dinyatakan ulang (lokasi, pemilik, dan masa simpan tetap di tabel record bagian 11).
+- .roles[0][1]: pointer murni dibuang, isi tidak dinyatakan ulang (daftar tugas sama: mengajukan, melampirkan, menunjuk pengganti, memberi tahu sakit, haid, kelahiran bayi, memenuhi panggilan kembali).
+- .roles[1][1]: pointer murni dibuang, isi tidak dinyatakan ulang; label (USULAN) tetap.
+- .roles[2][1]: pointer murni dibuang, isi tidak dinyatakan ulang; kelima tugas dan label (USULAN) tetap.
+- .roles[3][1]: pointer murni dibuang, isi tidak dinyatakan ulang; kelima keputusan dan label (USULAN) tetap.
+- .roles[4][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+
+### W10 selisih angka
+- "11": hilang bersama kalimat penunjuk "ada di tabel bagian 11" di butir 4.37.
+- "9": hilang bersama rujukan "bagian 9" di sel peran HR Lead; tidak ada angka aturan yang berubah.
+
+### W10 catatan
+- Pihak luar: dokumen ini tidak menyebut klien atau pelanggan.
+- "bila" diganti "jika"; "Hasil yang dijaga:" di Purpose ditulis ulang sebagai kalimat biasa. Teks pasal PP - Cuti BAB VI di bagian 4 dibiarkan (T1).
+- Jembatan istilah: "Record (rekaman)" di butir 4.37, kemunculan pertama di badan.
+- Rujukan langkah dan batas (butir 4.7, 4.29, 4.13 di bagian 6 dan 8; butir 6.x di bagian 9) dipertahankan.

@@ -1,0 +1,43 @@
+{
+ "key": "HR-SOP-08",
+ "mode": "sop",
+ "out": "out/02_HR/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 3503,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 32,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 3517,
+  "calque": [],
+  "lewat": 1,
+  "pointer": 2,
+  "usulan": 28,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 58,
+  "tables_ge3_no_header": 16
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "11",
+    "9"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).pdf",
+ "pages": 17,
+ "blank": [],
+ "pass": true
+}
