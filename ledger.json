@@ -982,7 +982,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-SOP-04",
    "out_path": "out/03_FAT/SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
@@ -1006,11 +1006,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 35,
+   "usulan_count": 38,
    "open_items": [
     "Sweep (b): 6.1 dan SLA baris 2 menyebut Finance Lead menjalankan 6.2-6.3 untuk dokumen pajak, tetapi 6.2 tidak punya langkah simpan softcopy pajak (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:43:31Z",
+   "updated_at": "2026-10-15T00:47:45Z",
    "pen_agent": "ad5b909ad28816d44",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1069,7 +1069,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-SOP-02",
    "out_path": "out/05_Commercial/SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx",
    "sources": [
@@ -1087,11 +1087,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 12,
+   "usulan_count": 18,
    "open_items": [
     "Sweep (b): pengantar 6.1-6.3 pasif tanpa pelaku; 4.15 jadi wadah USULAN; istilah Personel Commercial tidak ada di bagian 5 (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:44:42Z",
+   "updated_at": "2026-10-15T00:47:41Z",
    "pen_agent": "a047bde100d8c7081",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2347,7 +2347,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-REG-01",
    "out_path": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2364,10 +2364,11 @@
    "open_items": [
     "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
    ],
-   "updated_at": "2026-10-15T00:47:32Z",
+   "updated_at": "2026-10-15T00:47:45Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
-   "pen_agent": "a3d6b69aee3386660"
+   "pen_agent": "a3d6b69aee3386660",
+   "sweep": "1"
   },
   {
    "wl_index": 80,

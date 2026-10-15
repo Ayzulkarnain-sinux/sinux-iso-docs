@@ -1,6 +1,6 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-15T00:44:51Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-15T00:48:04Z)
 
-Wave berjalan: W7. Hitungan state: {'DONE': 62, 'LINT_PASS': 3, 'IN_PROGRESS': 5, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 5.
+Wave berjalan: W7. Hitungan state: {'DONE': 63, 'LINT_PASS': 6, 'HOLD': 16, 'IN_PROGRESS': 1, 'SKIP': 2}. Guide terakhir dibaca: G-1. Tech fix: 5.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
@@ -25,13 +25,13 @@ Wave berjalan: W7. Hitungan state: {'DONE': 62, 'LINT_PASS': 3, 'IN_PROGRESS': 5
 | LEG-SOP-02 | W3 | DONE | SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx | PASS | 18 | 1 |
 | COM-SOP-01 | W3 | DONE | SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx | PASS | 14 | 0 |
 | HR-SOP-08 | W3 | DONE | SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx | PASS | 28 | 0 |
-| HR-SOP-10 | W4 | LINT_PASS | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | PASS | 38 | 0 |
-| HR-SOP-11 | W4 | IN_PROGRESS | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 52 | 2 |
-| HR-SOP-12 | W4 | IN_PROGRESS | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 46 | 2 |
+| HR-SOP-10 | W4 | DONE | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | PASS | 38 | 0 |
+| HR-SOP-11 | W4 | LINT_PASS | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 54 | 2 |
+| HR-SOP-12 | W4 | LINT_PASS | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 48 | 2 |
 | HR-SOP-13 | W4 | LINT_PASS | SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx | PASS | 59 | 3 |
-| FAT-SOP-04 | W4 | IN_PROGRESS | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 35 | 1 |
-| LEG-SOP-03 | W4 | IN_PROGRESS | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 44 | 2 |
-| COM-SOP-02 | W4 | IN_PROGRESS | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 12 | 1 |
+| FAT-SOP-04 | W4 | LINT_PASS | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 38 | 1 |
+| LEG-SOP-03 | W4 | LINT_PASS | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 47 | 2 |
+| COM-SOP-02 | W4 | LINT_PASS | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 18 | 1 |
 | OPS-FRM-01 | W5 | DONE | SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx | PASS | 5 | 0 |
 | OPS-FRM-02 | W5 | DONE | SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | OPS-FRM-03 | W5 | DONE | SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx | - | 1 | 0 |
@@ -83,7 +83,7 @@ Wave berjalan: W7. Hitungan state: {'DONE': 62, 'LINT_PASS': 3, 'IN_PROGRESS': 5
 | HOLD-R24 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R25 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | FAT-SOP-06 | W7b | DONE | SNX-FAT-SOP-06 SOP Accounting and Financial Report (Rev00 DRAFT).docx | PASS | 22 | 1 |
-| FAT-REG-01 | W7b | LINT_PASS | SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx | FAIL | 0 | 1 |
+| FAT-REG-01 | W7b | IN_PROGRESS | SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx | PASS | 0 | 1 |
 | HOLD-R31 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | FAT-FRM-02 | W7b | DONE | SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx | PASS | 0 | 1 |
 | HOLD-FAT-KPI | HOLD-T3 | HOLD | - | - | 0 | 1 |

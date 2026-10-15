@@ -238,7 +238,8 @@ def commit(key):
     L = load(); d = doc(L, key)
     files = [f for f in [d.get('out_path')] + glob.glob(f'specs/{key}.*') + glob.glob(f'notes/{key}.md') + glob.glob(f'qa/{key}.*') if f and os.path.exists(f)]
     subprocess.run(['git', 'add', 'ledger.json', *files], check=True)
-    msg = f"ISO {key} {d['state']}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SRCasMPtYdK9wmpffo2sJj\n"
+    label = 'polish' if str(d.get('sweep', '')) in ('1', '2') else d['state']  # LEAD G-1: commit sweep = "ISO <KEY> polish"
+    msg = f"ISO {key} {label}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SRCasMPtYdK9wmpffo2sJj\n"
     r = subprocess.run(['git', 'commit', '-q', '-F', '-'], input=msg, text=True, capture_output=True)
     print(key, d['state'], 'committed' if r.returncode == 0 else r.stdout + r.stderr)
 
