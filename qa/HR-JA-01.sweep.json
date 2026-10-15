@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 3 Definisi, baris Authority Matrix, kalimat 2",
+      "masalah": "Rumusan baru lebih tegas daripada sebelumnya: \"dibaca sebagai\" (tafsir) menjadi \"adalah nama lain untuk matriks ini\" (pernyataan padanan). Label (USULAN) tetap ada dan open item 10 di notes tetap menanyakan apakah Authority Matrix, matriks otorisasi, dan DoA satu dokumen, jadi bukan pemblokir. Kedua rujukan terbukti di sumber: \"matriks otorisasi\" ada di HR-JA-001 JA-02 wewenang 2 dan JA-14 wewenang 3 (fileId 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1, Document Code HR-JA-001); \"DoA\" hanya ada di Jobdesk Line Manager Legal, tabel Wewenang (fileId 1Mv6TuLy8QsllpA4YTTjmNg7Hsur4yWiL), tidak ada di Jobdesk Staff Legal.",
+      "bukti": "Sebelum: 'Istilah matriks otorisasi dan DoA di sumber dibaca sebagai Authority Matrix (USULAN).' Sesudah: 'Matriks otorisasi (HR-JA-001) dan DoA (Jobdesk Line Manager Legal) adalah nama lain untuk matriks ini (USULAN).' Sumber JA-02: 'Memberikan peninjauan dan persetujuan operasional sesuai matriks otorisasi'. Sumber Jobdesk LML: 'Tidak menggantikan wewenang penandatanganan menurut anggaran dasar dan DoA'."
+    }
+  ]
+}

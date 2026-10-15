@@ -107,7 +107,7 @@
        ],
        [
         "Authority Matrix",
-        "Matriks yang menetapkan batas wewenang tiap jabatan. Istilah matriks otorisasi dan DoA di sumber dibaca sebagai Authority Matrix (USULAN)."
+        "Matriks yang menetapkan batas wewenang tiap jabatan. Matriks otorisasi (HR-JA-001) dan DoA (Jobdesk Line Manager Legal) adalah nama lain untuk matriks ini (USULAN)."
        ],
        [
         "Competency Matrix",
@@ -2303,7 +2303,7 @@
    "h": "Acuan ISO",
    "blocks": [
     {
-     "p": "Acuan klausul berikut berstatus (USULAN, dikonfirmasi konsultan)."
+     "p": "Acuan klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
     },
     {
      "table": {

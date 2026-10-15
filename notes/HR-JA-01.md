@@ -116,7 +116,7 @@ Tidak ada angka baru. Angka jam shift berasal dari POL-OPS-001.
 | 12 | Teks B dan F identik di 15 jabatan, E batasan umum identik, empat varian pendidikan | Satu kali di butir 4.5, 4.7, 4.8, 4.9 (kelompok K1 sampai K4); tiap jabatan merujuk butir itu. Butir wewenang per jabatan tetap utuh |
 | 13 | Masa pengalaman minimum dan sertifikasi belum ada | Dipertahankan apa adanya di butir 4.7, tidak diisi angka. Open item 14 |
 | 14 | Jumlah tabel 34 lawan 17 | Tidak berlaku untuk dokumen hasil; tidak ditangani |
-| 15 | Klausul 7.3 dan 7.5 dibaca satu baris; tidak ada rujukan 27001 | Bagian 11 memisahkan 7.3 Kesadaran dan 7.5 Informasi terdokumentasi, menambah 27001:2022 5.3, 7.2, 7.3, 7.5, Annex A 5.2. Seluruh bagian berlabel "(USULAN, dikonfirmasi konsultan)" |
+| 15 | Klausul 7.3 dan 7.5 dibaca satu baris; tidak ada rujukan 27001 | Bagian 11 memisahkan 7.3 Kesadaran dan 7.5 Informasi terdokumentasi, menambah 27001:2022 5.3, 7.2, 7.3, 7.5, Annex A 5.2. Seluruh bagian berlabel "(USULAN, perlu konfirmasi konsultan)" |
 
 ### 4.2 Jobdesk Line Manager Legal (1Mv6TuLy8QsllpA4YTTjmNg7Hsur4yWiL)
 
@@ -194,7 +194,7 @@ Penjelasan pola: kata "pemahaman karyawan", "pihak terkait", "kepatuhan", "penin
 
 ## USULAN
 
-Hitungan sesudah putaran 1: 28 label "(USULAN)" di dokumen (sama dengan warn lint) ditambah 1 label "(USULAN, dikonfirmasi konsultan)" di bagian 11. Total 11 butir. Perubahan putaran 1: U3 diganti isi dan jumlah labelnya (dari 1 menjadi 15), U10 dan U11 baru, butir "HR Manager melengkapi revisi berikutnya" dihapus.
+Hitungan sesudah putaran 1: 28 label "(USULAN)" di dokumen (sama dengan warn lint) ditambah 1 label "(USULAN, perlu konfirmasi konsultan)" di bagian 11. Total 11 butir. Perubahan putaran 1: U3 diganti isi dan jumlah labelnya (dari 1 menjadi 15), U10 dan U11 baru, butir "HR Manager melengkapi revisi berikutnya" dihapus.
 
 | # | Butir | Letak | Pemutus yang disarankan |
 |---|---|---|---|
@@ -247,6 +247,15 @@ Hitungan sesudah putaran 1: 28 label "(USULAN)" di dokumen (sama dengan warn lin
 | Butir 4.9 tanpa pelaku | Diganti "Dokumen ini membagi persyaratan pendidikan dan pengalaman dalam empat kelompok." Butir 4.7 tetap (kalimat sumber) |
 | Zammad tidak di HR-JA-001 | Tidak diubah; open item 18 |
 | Temuan lain (nama, cacat audit, batas keras, format) | Verifikator menyatakan cocok; tidak ada tindakan |
+
+## Sweep
+
+| # | Letak | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Bagian 3 Definisi, baris Authority Matrix | "Matriks yang menetapkan batas wewenang tiap jabatan. Istilah matriks otorisasi dan DoA di sumber dibaca sebagai Authority Matrix (USULAN)." | "Matriks yang menetapkan batas wewenang tiap jabatan. Matriks otorisasi (HR-JA-001) dan DoA (Jobdesk Line Manager Legal) adalah nama lain untuk matriks ini (USULAN)." Catatan proses (istilah sumber dibaca sebagai Authority Matrix) tetap di notes: cacat 4.2 butir 5, USULAN U1, open item 10 |
+| 2 | Bagian 11 Acuan ISO, kalimat pembuka | "(USULAN, dikonfirmasi konsultan)" | "(USULAN, perlu konfirmasi konsultan)". Rujukan label yang sama di notes (cacat 4.1 butir 15, hitungan USULAN) ikut diubah |
+
+Tidak ada fakta, angka, nama, atau struktur lain yang berubah. Jumlah label "(USULAN)" tetap 28 ditambah 1 label klausul ISO. Uji sesudah sweep: lint generic pass true, OOXML PASSED, blankscan ok (30 halaman).
 
 ## Dua pertanyaan wajib
 
