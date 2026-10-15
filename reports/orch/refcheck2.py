@@ -243,7 +243,7 @@ def main():
     # diputus OK (rujukan ke dokumen asal sendiri) atau ke dokumen tim di luar set ditandai DIPUTUS_MAKNA dengan id buktinya.
     adj = {}
     import glob
-    for f in sorted(glob.glob('reports/w9/refsem*.json')):
+    for f in sorted(glob.glob('reports/w9/refsem*.json') + glob.glob('reports/w10/refsem*.json')):  # tech_fix ISO-W10: adjudikasi ulang W10
         for r in json.load(open(f)).get('rows', []):
             s = r.get('sem') or {}
             ok = s.get('verdict') == 'OK' or (s.get('verdict') == 'SALAH_TAFSIR_MESIN' and s.get('verdict_ulang') in ('OK', 'TIDAK_DAPAT_DICEK'))
