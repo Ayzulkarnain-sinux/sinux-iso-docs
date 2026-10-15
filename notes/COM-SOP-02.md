@@ -151,7 +151,7 @@ Sepuluh butir keputusan. Spec memuat 17 kemunculan persis "(USULAN)" sesudah swe
 | 6 | Penetapan pelaku yang tidak disebut sumber (Finance dan Accounting & Tax dalam validasi; Manager of Product Tech eskalasi ke VP Commercial; VP Commercial review internal dan penyimpan Catatan persetujuan penawaran; Legal & Compliance penyimpan hasil review; Business Development melengkapi penawaran ditolak) dan tiga rekaman baru | Butir 4.5 dan 4.8; bagian 9 dan 11 (label di tiap kalimat) | owner |
 | 7 | Pemetaan peran: Presales ke Manager of Product Tech, Delivery ke Service Delivery Manager (jabatan usulan tanpa pemegang) | Tabel peran bagian 5 | owner (dengan Fani) |
 | 8 | Pembagian rumah aturan: rincian proposal, quotation, dan harga ada di SOP ini, ringkasannya di COM-SOP-01 butir 4.8 sampai 4.11 dan 6.4 | Dokumen terkait bagian 11 | owner |
-| 9 | SNX-COM-FRM-01 sebagai calon bentuk Catatan review scope | Dokumen terkait dan rekaman bagian 11 | owner |
+| 9 | SNX-COM-FRM-01 sebagai bentuk Catatan review scope; diubah W9: SNX-COM-FRM-01 ditulis sebagai bentuk rekaman Catatan review scope tanpa kata "calon"; label (USULAN) dipasang kembali pada hubungan itu (R2) | Dokumen terkait dan rekaman bagian 11 | owner |
 | 10 | Daftar klausul ISO 9001:2015 (5.3, 7.5.3, 8.2.1, 8.2.2, 8.2.3, 8.2.4) dan ISO/IEC 27001:2022 (Annex A 5.12, 5.14), label "(USULAN, perlu konfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
 
 ## Open items
@@ -234,8 +234,12 @@ Uji sesudah sweep (lulus pada putaran pertama):
 | B2 Bagian 9, baris terakhir | "Business Development perlu menyimpang dari prosedur" / "Business Development memperoleh persetujuan VP Commercial atau pihak yang berwenang ..." | "Business Development atau VP Commercial perlu menyimpang dari prosedur" / "Business Development atau VP Commercial yang perlu menyimpang memperoleh persetujuan VP Commercial atau pihak yang berwenang ..." |
 | 7 Bagian 11 Dokumen terkait, SNX-COM-FRM-01 | "judul menurut daftar dokumen SINUX. Calon bentuk Catatan review scope (USULAN)." | "bentuk rekaman Catatan review scope." |
 | 7 Bagian 11 Rekaman, Catatan review scope | "calon bentuknya SNX-COM-FRM-01" | "bentuk rekamannya SNX-COM-FRM-01" (pemilik tetap Business Development) |
+| R2 1b Bagian 11 Rekaman, Catatan review scope | "bentuk rekamannya SNX-COM-FRM-01" | "bentuk rekamannya SNX-COM-FRM-01 (USULAN)" |
+| R2 1b Bagian 11 Dokumen terkait, SNX-COM-FRM-01 | "bentuk rekaman Catatan review scope." | "bentuk rekaman Catatan review scope (USULAN)." |
 
 B2: Conclusion kalimat 1 sudah memuat Business Development dan VP Commercial (hasil sweep), sehingga tidak diubah. Brand & Marketing tidak punya peran di bagian 5, jadi tidak disebut; bila owner ingin Brand & Marketing tercakup, perlu peran baru di bagian 5 (open item, pemutus owner).
 
 Open item ditutup atau diubah:
 - Penyempitan "Personel Commercial" (catatan sweep 1c, bagian 9): ditutup W9 (B2), cakupan dikembalikan ke Business Development dan VP Commercial.
+
+R2 butir 3: baris USULAN dan Open items yang ditutup atau diubah W9 diberi keterangan "ditutup W9" atau "diubah W9" di barisnya sendiri.
