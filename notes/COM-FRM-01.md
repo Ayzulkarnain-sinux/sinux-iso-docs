@@ -127,23 +127,23 @@ Spec memuat 19 kemunculan persis "(USULAN)" (satu di antaranya baris definisi la
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
 | 1 | Satu formulir untuk satu order, dibuka sesudah discovery meeting | Ketentuan butir 1; Lingkup | owner |
-| 2 | Formulir memadukan calon rekaman Business Requirement (COM-SOP-01 butir 6.3) dan calon Catatan review scope (COM-SOP-02 butir 6.2), diisi dua tahap | Ketentuan butir 3 dan 4; Dokumen Terkait | owner |
+| 2 | Formulir memadukan calon rekaman Business Requirement (COM-SOP-01 butir 6.3) dan calon Catatan review scope (COM-SOP-02 butir 6.2), diisi dua tahap; diubah W9: SNX-COM-FRM-01 kini ditulis menyalin atau merujuk Business Requirement di CRM (keluaran butir 6.3, USULAN) dan bentuk Catatan review scope (USULAN), tanpa kata "calon" (R2) | Ketentuan butir 3 dan 4; Dokumen Terkait | owner |
 | 3 | Arti "Order diterima" dan larangan Business Development menyatakan order diterima sebelum Hasil Review sah | Istilah; Ketentuan butir 8 | owner dan Samuel |
 | 4 | VP Commercial menetapkan Hasil Review dan menjadi pemilik formulir terisi; tiga nilai Hasil Review dan tiga nilai Status | Istilah; Ketentuan butir 7; tabel Peran; Rekaman | owner |
 | 5 | Susunan aspek daftar periksa C1.1 sampai C4.6 dan pembagian pengisinya | Isi Formulir; tabel Peran | owner |
 | 6 | Aspek C3.6: kesesuaian jenis order dengan perizinan di SNX-LEG-REG-01 | Isi Formulir C3.6; Dokumen Terkait | Legal |
 | 7 | Aspek C4.6: ketersediaan tim pelaksana pada timeline | Isi Formulir C4.6 | Fani |
-| 8 | COO sebagai pemilik dokumen menurut blok Identity (hasil aturan "jabatan reviewer") | Tabel Peran | owner |
+| 8 | COO sebagai pemilik dokumen menurut blok Identity (hasil aturan "jabatan reviewer"); ditutup W9: COO tidak lagi pemilik dokumen, Process Owner VP Commercial (A7) | Tabel Peran | owner |
 | 9 | Manager of Product Tech mengeskalasi solusi yang tidak feasible kepada VP Commercial (selaras COM-SOP-02 butir 4.15) | Tabel Peran | owner |
 | 10 | Order tambahan dan perpanjangan untuk customer yang sudah berjalan di luar scope | Lingkup | owner |
-| 11 | Status calon dari SNX-COM-FRM-02, SNX-LEG-FRM-01 sebagai daftar periksa lengkap, dan SNX-LEG-REG-01 sebagai tempat perizinan | Lingkup; Dokumen Terkait | Legal |
+| 11 | Status calon dari SNX-COM-FRM-02, SNX-LEG-FRM-01 sebagai daftar periksa lengkap, dan SNX-LEG-REG-01 sebagai tempat perizinan; diubah W9: SNX-COM-FRM-02 ditulis sebagai rekaman serah terima tanpa "calon" dan tanpa USULAN (butir 6 dan R2); SNX-LEG-FRM-01 dan SNX-LEG-REG-01 tetap USULAN | Lingkup; Dokumen Terkait | Legal |
 | 12 | Daftar klausul ISO 9001:2015 (8.2.1, 8.2.2, 8.2.3, 8.2.4, 7.5.3) dan ISO/IEC 27001:2022 (4.2, Annex A 5.31, 5.12), label "(USULAN, perlu konfirmasi konsultan)" | Rekaman dan Acuan ISO | owner, diteruskan ke konsultan |
 
 ## Open items
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Process Owner "Direktur" (COO) mengikuti aturan dokumen tanpa sumber di defaults. SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial karena Sales SOP menulis "Document Owner: VP of Commercial". Putuskan apakah formulir ini juga berpemilik VP Commercial; bila ya, blok Identity dan tabel Peran perlu diubah ditutup W9: Process Owner diputus VP Commercial (A7, rekomendasi LEAD, owner GO); blok Identity dan tabel Peran diselaraskan. | owner |
+| 1 | Process Owner "Direktur" (COO) mengikuti aturan dokumen tanpa sumber di defaults. SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial karena Sales SOP menulis "Document Owner: VP of Commercial". Putuskan apakah formulir ini juga berpemilik VP Commercial; bila ya, blok Identity dan tabel Peran perlu diubah; ditutup W9: Process Owner diputus VP Commercial (A7) | owner |
 | 2 | SNX-COM-SOP-01 butir 6.7 (Closing) dan butir 4.15 belum menyebut formulir ini; Closing hanya mensyaratkan "PO diterima", "kontrak ditandatangani", "persetujuan internal selesai". Perlu satu rujukan satu arah dari SOP ke formulir, titik pemakaian di antara PO sampai dan pernyataan menerima order, dan kepastian bahwa formulir ini memegang dua peran calon rekaman (cacat tambahan A dan B) | owner |
 | 3 | Pemutus penerimaan order belum ada di sumber. Penetapan VP Commercial (USULAN 4) belum memuat batas nilai atau jenis order yang perlu COO atau Direktur Utama. Authority Matrix belum bernomor; harga dan margin di COM-SOP-02 butir 4.7 masih USULAN | owner dan Samuel |
 | 4 | Tenggat penyelesaian kelompok C1 sampai C4 dan Hasil Review tidak ada di sumber; formulir tidak memuat angka waktu | owner |
@@ -155,7 +155,7 @@ Spec memuat 19 kemunculan persis "(USULAN)" (satu di antaranya baris definisi la
 | 10 | PPN pada harga order dan TOP standar masih USULAN di SNX-FAT-SOP-01 (butir 4.5 dan 4.8); aspek C3.2 dan C3.3 hanya merujuk, tanpa tarif atau hari | FAT |
 | 11 | Formulir kosong INTERNAL, formulir terisi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3. Apakah blok Identity cukup memuat INTERNAL, atau formulir terisi perlu label footer | Fani |
 | 12 | Susunan aspek C1 sampai C4 belum dikonfirmasi pemilik proses; Legal perlu mencocokkan C3.4 sampai C3.7 dengan SNX-LEG-FRM-01 supaya tidak ada aspek ganda | Legal dan owner |
-| 13 | Penyebutan SNX-COM-FRM-02 (Project Handover Record) bergantung pada isi dokumen itu, yang disusun lane lain di wave yang sama | owner |
+| 13 | Penyebutan SNX-COM-FRM-02 (Project Handover Record) bergantung pada isi dokumen itu, yang disusun lane lain di wave yang sama; ditutup W9: SNX-COM-FRM-02 sudah ada dan ditulis sebagai rekaman serah terima | owner |
 | 14 | Klausul ISO belum dicocokkan dengan teks standar | owner, diteruskan ke konsultan |
 | 15 | Tidak ada kalimat perintah kepada AI di sumber yang dibaca. Tidak ada open item dari sisi ini | - |
 
@@ -215,8 +215,12 @@ Uji: `python3 -I reports/orch/refcheck.py COM-FRM-01` memberi `{}`; render_sop.p
 | A7 Kesimpulan | "COO meninjau formulir ini setiap tahun" | "VP Commercial meninjau formulir ini setiap tahun" |
 | 6 Dokumen Terkait / Lingkup | "Calon rekamannya SNX-COM-FRM-02 (USULAN)." (baris Serah terima order ke Delivery) | "Rekaman serah terimanya SNX-COM-FRM-02." |
 | 6 Dokumen Terkait, SNX-COM-FRM-02 | "Calon rekaman paket handover sesudah order diterima (USULAN)." | "Rekaman paket handover sesudah order diterima." |
+| R2 1a Dokumen Terkait, baris SNX-COM-SOP-02 | "Formulir ini calon bentuk Catatan review scope (USULAN)." | "Formulir ini bentuk Catatan review scope (USULAN)." |
+| R2 2 Dokumen Terkait, baris SNX-COM-SOP-01 | "Formulir ini calon rekaman Business Requirement di butir 6.3 (USULAN)." | "Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)." |
 
 Butir 3 (A3): COM-FRM-01 hanya menulis "Jabatan JA-03 di SNX-HR-ORG-01"; tidak ada atasan atau garis lapor JA-03/JA-04 yang perlu diselaraskan.
 
 Open item ditutup atau diubah:
 - Open item 1 (Process Owner Direktur vs VP Commercial): ditutup W9 (A7).
+
+R2 butir 3: baris USULAN dan Open items yang ditutup atau diubah W9 diberi keterangan "ditutup W9" atau "diubah W9" di barisnya sendiri.

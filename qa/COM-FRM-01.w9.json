@@ -2,27 +2,34 @@
  "key": "COM-FRM-01",
  "cluster": "COM",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Dokumen Terkait baris SNX-COM-SOP-02 masih menulis 'Formulir ini calon bentuk Catatan review scope (USULAN)', dan baris SNX-COM-SOP-01 masih menulis 'calon rekaman Business Requirement di butir 6.3 (USULAN)'. Tidak ada butir instruksi COM-FRM-01 untuk keduanya, jadi wajar tidak diubah. Bila butir 7 membuat COM-SOP-02 menyebut COM-FRM-01 sebagai bentuk rekaman, kedua dokumen tidak lagi selaras (cek silang di W berikut).",
-  "Baris Peran VP Commercial: 'Pemilik dokumen ini menurut blok Identity (USULAN)' tetap berlabel USULAN walau A7 sudah di-GO owner. Ini konsisten dengan defaults v22 process_owner status USULAN, jadi tidak bertentangan; hanya catatan.",
-  "notes/COM-FRM-01.md baris 146: teks 'ditutup W9: ...' menempel langsung di akhir kalimat open item lama tanpa pemisah. Hanya kosmetik, karena notes tidak masuk docx."
+  "Tabel Peran baris VP Commercial masih memberi label '(USULAN)' pada 'Pemilik dokumen ini menurut blok Identity', padahal Process Owner VP Commercial sudah diputus owner (A7, GO). Ini tidak bertentangan dengan defaults v22 (process_owner.status = USULAN), tetapi labelnya bisa dianggap basi.",
+  "notes/COM-FRM-01.md baris 64 masih menulis 'Process Owner di blok Identity = \"Direktur\" ... COO' tanpa keterangan 'diubah W9' atau 'ditutup W9'. Baris itu kini tidak akurat (R2 butir 3, kebersihan notes). Isi dokumen tidak terdampak.",
+  "Kesimpulan: peninjau tahunan berganti dari COO ke VP Commercial. Ini sah sebagai penyelarasan butir 1 (A7), karena pada versi sebelum W9 COO meninjau dalam kedudukan pemilik dokumen."
  ],
  "butir_dikerjakan": [
-  "Butir 1 (A7): meta.process_owner Direktur diganti VP Commercial (sesuai defaults v22 process_owner.override.COM_baru). Kalimat badan diselaraskan: baris Peran COO tidak lagi menyebut 'Pemilik dokumen ini', baris Peran VP Commercial kini menyebut 'Pemilik dokumen ini menurut blok Identity (USULAN)', dan Kesimpulan 'COO meninjau' menjadi 'VP Commercial meninjau'. Open item 1 di notes ditutup W9 (A7).",
-  "Butir 3 (A3): tidak berlaku. Dokumen hanya menulis 'Jabatan JA-03 di SNX-HR-ORG-01', tanpa atasan, garis lapor, atau label menunggu konfirmasi (grep melapor/atasan/menunggu konfirmasi pada spec = 0). Penyusun mencatatnya di notes.",
-  "Butir 5: rujukan '(USULAN, selaras dengan bagian 11 SNX-COM-SOP-02)' dihapus, sehingga kini tertulis 'pemilik formulir terisi (USULAN)'. Ini cocok dengan temuan bahwa bagian 11 COM-SOP-02 tidak menetapkan pemilik Catatan review scope (struct COM-SOP-02 baris 62 dan 168). Penghapusan nomor termasuk opsi yang diizinkan.",
-  "Butir 6: 'Calon rekamannya SNX-COM-FRM-02 (USULAN)' menjadi 'Rekaman serah terimanya SNX-COM-FRM-02', dan di Dokumen Terkait 'Calon rekaman paket handover ... (USULAN)' menjadi 'Rekaman paket handover sesudah order diterima'. Isinya cocok dengan struct COM-FRM-02: Project Handover Record mencatat handover dari Commercial ke tim pelaksana sesudah closing, satu formulir untuk satu handover.",
-  "Data defaults v22 cocok: prepared 'Laras Rasmawati / VP Commercial', reviewed 'Amirull Yusuf Zulkarnain / Direktur', approved 'Samuel Kristanto Utomo / President Director', Process Owner VP Commercial. Blok approval tidak diubah dan sudah benar.",
-  "Diff teks hanya berisi 6 baris berubah, semuanya terpetakan ke butir 1, 5, atau 6. Nol fakta baru, nol em-dash, dan nol frasa proses penyusunan pada kalimat yang berubah."
+  "Butir 1 (A7): meta.process_owner Direktur -> VP Commercial. Tabel Peran disesuaikan: klaim pemilik dokumen pindah dari baris COO ke baris VP Commercial, dan peninjau di Kesimpulan menjadi VP Commercial. Notes open item 1 ditutup W9 (A7).",
+  "Butir 3 (A3): dokumen tidak menyebut atasan atau garis lapor JA-03/JA-04, hanya 'Jabatan JA-03 di SNX-HR-ORG-01'. Tidak ada yang perlu diubah, dan notes mencatat alasannya.",
+  "Butir 5: rujukan '(USULAN, selaras dengan bagian 11 SNX-COM-SOP-02)' pada baris VP Commercial dihapus. Pengganti tetap berlabel (USULAN) dan tidak memuat rujukan nomor yang salah.",
+  "Butir 6: baris 'Serah terima order ke Delivery' menjadi 'Rekaman serah terimanya SNX-COM-FRM-02.' dan Dokumen Terkait SNX-COM-FRM-02 menjadi 'Rekaman paket handover sesudah order diterima.', tanpa 'calon' dan tanpa USULAN. Isinya cocok dengan kerangka COM-FRM-02 bagian 1 dan 2 (handover sesudah closing).",
+  "R2 butir 1b: Dokumen Terkait SNX-COM-SOP-02 menjadi 'Formulir ini bentuk Catatan review scope (USULAN).', yaitu 'calon' dihapus dan USULAN dipertahankan.",
+  "R2 butir 2: Dokumen Terkait SNX-COM-SOP-01 menjadi 'menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)'. Ini sesuai Ketentuan butir 1 dokumen yang sama (sudah ada sebelum W9) dan definisi Business Requirement/CRM, jadi tidak ada fakta baru.",
+  "Data (4): approval Laras Rasmawati / VP Commercial; Amirull Yusuf Zulkarnain / Direktur; Samuel Kristanto Utomo / President Director, persis prepared_reviewed.COM dan approved_by.all v22. Process Owner sesuai override COM_baru.",
+  "Bahasa (5): kalimat yang berubah bebas dari em-dash, frasa proses penyusunan, pasif baru tanpa pelaku, dan rujukan AI internal."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Hasil grep pada /home/claude/iso-run/specs/COM-FRM-01.json (teks sesudah): 'HR Manager' = 0, 'Divisi Legal' = 0. Dokumen ini termasuk klaster COM, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku. Hasilnya tetap bersih. Grep em-dash/en-dash = 0, dan 'melapor|atasan|menunggu konfirmasi' = 0.",
+ "grep": "COM-FRM-01 adalah dokumen Commercial, bukan HR atau Legal, sehingga aturan langkah 7 tidak berlaku. Grep pada teks render sesudah W9 (/tmp/claude-0/w9/render/COM-FRM-01.docx) tetap dijalankan: 'HR Manager' = 0, 'Divisi Legal' = 0, em-dash = 0. Kata 'calon' juga 0 di teks sesudah.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }

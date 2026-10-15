@@ -298,8 +298,8 @@
           "header": ["Kode", "Keterangan"],
           "widths_cm": [4, 12],
           "rows": [
-            ["SNX-COM-SOP-01", "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini calon rekaman Business Requirement di butir 6.3 (USULAN)."],
-            ["SNX-COM-SOP-02", "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini calon bentuk Catatan review scope (USULAN)."],
+            ["SNX-COM-SOP-01", "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)."],
+            ["SNX-COM-SOP-02", "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN)."],
             ["SNX-LEG-SOP-02", "Contract Review & Legal Approval, berstatus Draft. Butir 6.1 mengatur pengajuan permintaan review kontrak, dan dokumen itu mengatur Persetujuan Legal."],
             ["SNX-LEG-FRM-01", "Customer Contract Review Checklist. Daftar periksa review kontrak customer yang lengkap (USULAN)."],
             ["SNX-LEG-REG-01", "Company Licenses & Permits Register. Tempat perizinan SINUX yang dirujuk aspek C3.6 (USULAN)."],
