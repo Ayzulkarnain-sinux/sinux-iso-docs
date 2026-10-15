@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Label (USULAN): temuan r1 sudah diperbaiki. 4.2 'jabatan tujuan harus satu tingkatan ... menurut definisi Tingkatan jabatan di bagian 3, dan berada di unit kerja yang sama (USULAN).' kembali berlabel dan rujukan ukuran (definisi bagian 3) kembali. 4.8 'Rotasi diperlakukan sebagai mutasi dalam arti itu, sehingga ... (USULAN).' berlabel; kalimat definisi mutasi SNX-ISMS-SOP-02 tetap tanpa label.",
+  "Roles HR Lead: 'Mengembalikan usulan yang tidak memenuhi bagian 4.' tetap di luar label; batas rekomendasi tetap (USULAN). 'batas ini mengikuti wewenang JA-14' agak kaku; usul 'sesuai wewenang JA-14 ...' seperti SOP-10/11.",
+  "Kata kewajiban tidak melemah: 'hanya dilakukan', 'harus satu tingkatan', 'baru berlaku setelah', 'tidak otomatis' tetap.",
+  "Rujukan yang dibuang (4.1 butir 6.2, 4.3 butir 6.2/6.5, 4.4, 4.10 penunjuk bagian 11, 4.8 butir 6.4/6.5) tidak menghilangkan pelaku atau waktu: 4.8 kini menulis siapa mengajukan dan kapan.",
+  "Definisi Tingkatan jabatan: 'sehingga ukuran ini (USULAN)' yang terpotong menjadi 'ukuran ini belum baku (USULAN)'."
+ ],
+ "contoh_baik": [
+  "Pengantar 6.5: 'Langkah berikut berjalan pada akhir masa rotasi.' -> 'Langkah berikut dijalankan pada akhir masa rotasi.'; Tingkatan jabatan: 'Dua jabatan satu tingkatan bila jumlah garis lapornya sama.' -> 'Dua jabatan berada di tingkatan yang sama jika jumlah garis lapornya sama.'"
+ ]
+}

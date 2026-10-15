@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Label (USULAN): temuan r1 di 4.7 sudah diperbaiki; 'Sejak tanggal berlaku, karyawan terkait menjalankan tugas dan wewenang posisi tujuan menurut SNX-HR-JA-01.' tanpa label, 'Wewenang posisi sekarang ... berhenti pada tanggal itu (USULAN).' berlabel. 4.1 dan 4.10 diurut ulang tanpa menggeser label; Scope tiga label pengecualian tetap.",
+  "Kata kewajiban tidak melemah: 'hanya didasarkan', 'tidak menerima', 'hanya mengajukan', 'tanggal berlaku tidak mendahului tanggal keputusan' tetap.",
+  "Rujukan dibuang di Roles (Direktur JA-02, Organ perusahaan: '(bagian 9)') dan 4.4/4.5/4.8: langkah pengganti tetap terbaca dari butir yang disebut dan dari bagian 9.",
+  "Bagian 9 baris 'Karyawan terkait adalah HRGA Officer (JA-12)' (tidak diubah W10) memuat tujuh rujukan butir dan kalimat 'HR Lead menjalankan langkah HRGA Officer lainnya di butir 6.3 dan 6.5 dan meneruskan berkas usulan ke Direktur, kecuali langkah kelima di butir 6.5' yang ambigu; kandidat perapian pasca-W10, rujukannya perlu untuk menjalankan langkah.",
+  "SLA penerusan berkas: 'atau batas tanggapan lewat' -> 'atau pada hari batas waktu tanggapan terlampaui', lebih jelas dan bebas 'lewat'."
+ ],
+ "contoh_baik": [
+  "Direktur (JA-02) | 'Menjalankan langkah HR Lead di butir 6.1 dan 6.4, dan langkah pertama HRGA Officer di butir 6.3, bila Atasan Langsung karyawan terkait adalah HR Lead (bagian 9) (USULAN).' -> 'Jika Atasan Langsung karyawan terkait adalah HR Lead, menjalankan langkah HR Lead di butir 6.1 dan 6.4 serta langkah pertama HRGA Officer di butir 6.3 (USULAN).'"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Label (USULAN): semua isi berlabel di bed1bb6 tetap berlabel (Scope gaji dan Direktur Utama, Batas rotasi dan mutasi, 4.2 kedua kalimat, 4.3, 4.6, 4.7, 4.9 klasifikasi, Roles, bagian 9, Hari kerja). Kalimat bersumber (Purpose, 4.1, 4.4, 4.5, 4.8) tetap tanpa label. Temuan r1 di 4.2 sudah diperbaiki: '...dan menulis alasannya (USULAN).'",
+  "Kata kewajiban tidak melemah: 'hanya', 'baru berlaku setelah', 'tidak otomatis' tetap; 'berlaku hanya sesudah' menjadi 'baru berlaku setelah' setara.",
+  "Rujukan yang dibuang (4.1, 4.4, 4.7 butir 6.x; 4.9 penunjuk bagian 11; Kesimpulan bagian 6/8/11; Roles) tidak menghilangkan langkah, batas, atau ukuran; pengantar 6.4 tetap merujuk bagian 9.",
+  "4.8 'Kenaikan jabatan termasuk perpindahan peran itu, jadi hak akses lama...' : 'jadi' terasa lisan; usul 'sehingga'.",
+  "Pengantar 6.1 'Proses dimulai oleh Atasan Langsung.' pasif; boleh 'Atasan Langsung memulai proses.' seperti bed1bb6.",
+  "Bagian 6 dan 9: tiap langkah dan tiap kalimat penanganan menyebut satu pelaku."
+ ],
+ "contoh_baik": [
+  "4.6: 'Kenaikan jabatan diperlakukan sama: berlaku hanya sesudah keputusan tertulis Direktur Utama (USULAN).' -> 'Kenaikan jabatan mengikuti ketentuan yang sama dan baru berlaku setelah ada keputusan tertulis Direktur Utama (USULAN).'"
+ ]
+}

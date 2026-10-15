@@ -218,3 +218,41 @@ A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lap
 Open item: #10 ditutup W9 (jabatan Aziz diputus owner); #13 diubah W9 (FRM-02 sudah ada; FRM-01 diubah R2).
 
 R2: baris SNX-HR-FRM-01 di bagian 11 merujuk dokumen yang sudah ada dengan nomor dan judul. Open item #13 dan baris USULAN/open item yang memuat "HR Manager" atau garis lapor JA-03 diberi tanda "diubah W9" di barisnya sendiri (kebersihan notes).
+
+## W10 (bahasa, ISO-W10)
+
+### W10 label dihapus
+nihil (putaran perbaikan 2: jumlah label setiap teks kembali sama dengan bed1bb6).
+
+### W10 kalimat dihapus atau dipindah
+- Butir 4.9: "Lokasi, pemilik, dan retensi ada di tabel bagian 11." (kalimat penunjuk, STYLE §3.2; faktanya ada di tabel record)
+- Rujukan butir yang tidak perlu dibuka pembaca dihapus (STYLE §3.1): "(butir 6.2)" di 4.1; "(butir 6.2 sampai 6.4)" di 4.4; "(butir 6.4)" di 4.7 dan 4.9; rujukan butir 6.x di tabel peran; "(bagian 9)" di peran Legal & Compliance; "di bagian 8" di definisi Hari kerja (menjadi "dalam SOP ini"); "dengan membandingkan record di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8" di Conclusion menjadi "dengan mencocokkan record kenaikan jabatan terhadap langkah prosedur dan batas waktunya".
+
+### W10 perbaikan label (putaran 2)
+- Bagian 2 paragraf 2: label (USULAN) dikembalikan per pengecualian seperti bed1bb6 ("penetapan gaji dan tunjangan di jabatan baru (USULAN)" dan kenaikan ke Direktur Utama (USULAN)); kalimat pengecualian bersumber tetap tanpa label.
+- Butir 4.2: kalimat aturan sementara penilaian pengalaman kembali berlabel sendiri, dan "disertai alasannya" dikembalikan menjadi "menulis alasannya (USULAN)"; kalimat SNX-HR-FRM-01 tetap berlabel sendiri.
+- Peran HR Lead kolom Authority: dua kalimat W10 digabung lagi menjadi satu kalimat seperti bed1bb6 agar "tidak memutuskan kenaikan jabatan" kembali tercakup label (USULAN).
+- Diperiksa ulang kalimat demi kalimat terhadap bed1bb6, tanpa perubahan: Scope batas rotasi dan mutasi, definisi Hari kerja dan NOC/SOC, butir 4.3, 4.6, 4.7, 4.9, peran lain, pengantar 6.1, keterangan Gambar 1, bagian 8, bagian 9, Conclusion, Dokumen terkait, tabel record.
+- Bukan label: pengantar 6.4 "jika keputusan menyetujui" menjadi "setelah keputusan menyetujui" (unsur waktu bed1bb6); 6.2 langkah 2 dirapikan ("Ambil ..., lalu lampirkan pada usulan.").
+
+### W10 audit pointer
+- .definitions[2][1]: pointer murni dibuang, isi tidak dinyatakan ulang (satuan batas waktu, hari libur resmi tidak dihitung, label (USULAN) tetap).
+- .policy[0]: pointer murni dibuang, isi tidak dinyatakan ulang (HR Lead menyimpulkan prestasi dan kualifikasi secara tertulis dari bukti pada usulan).
+- .policy[3]: pointer murni dibuang, isi tidak dinyatakan ulang (empat peran dan urutannya tetap).
+- .policy[6]: pointer murni dibuang, isi tidak dinyatakan ulang (menerima uraian jabatan tujuan, konfirmasi tertulis, sebelum tanggal berlaku, label (USULAN) tetap).
+- .policy[8]: pointer murni dibuang, isi tidak dinyatakan ulang (lokasi, pemilik, retensi tetap di tabel record; pelaku HRGA Officer, personal file, klasifikasi, label (USULAN) tetap).
+- .roles[0][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[1][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[2][1]: pointer murni dibuang, isi tidak dinyatakan ulang (tiga pilihan keputusan dan tanggal berlaku tetap).
+- .roles[3][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[4][1]: pointer murni dibuang, isi tidak dinyatakan ulang; label (USULAN) tetap.
+- .roles[5][1]: pointer murni dibuang, isi tidak dinyatakan ulang (meninjau perubahan perjanjian kerja atas permintaan HR Lead; label (USULAN) tetap; syarat waktunya tetap di bagian 9 baris Perubahan perjanjian kerja).
+- .conclusion[0]: pointer murni dibuang, isi tidak dinyatakan ulang (pemeriksa HR Lead, objek record, langkah, batas waktu, label (USULAN) tetap).
+
+### W10 selisih angka
+- "8": hilang bersama rujukan "bagian 8" di definisi Hari kerja dan Conclusion; tidak ada angka aturan yang berubah.
+
+### W10 catatan
+- Pihak luar: dokumen ini tidak menyebut klien atau pelanggan.
+- Kalimat batas rotasi dan mutasi (bagian 2), penetap keputusan (4.6), Purpose, Conclusion, dan peran HR Lead diselaraskan dengan pola kalimat SNX-HR-SOP-13; penetap keputusan tetap Direktur Utama.
+- "bila" diganti "jika"; jembatan istilah "Record (rekaman)" di butir 4.9.

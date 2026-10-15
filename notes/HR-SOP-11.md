@@ -209,3 +209,47 @@ A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lap
 Open item: O8 ditutup W9 (bagian jabatan Aziz); O7, O12, O13 diubah W9. Tambahan open item W9: penerima tanggapan karyawan bila karyawan terkait HRGA Officer atau Office Helper memakai HR Lead (USULAN); sweep lama menyarankan langsung ke Direktur. Pemutus: Samuel, owner.
 
 R2: baris USULAN dan open item yang memuat "HR Manager" diberi tanda "diubah W9" di barisnya sendiri (kebersihan notes). O7, O8, O13 sudah bertanda.
+
+## W10 (bahasa, ISO-W10)
+
+### W10 label dihapus
+nihil (putaran perbaikan 2: jumlah label setiap teks kembali sama dengan bed1bb6).
+- Butir 4.1 dan 4.10: urutan kalimat ditukar; label tetap pada kalimat yang sama seperti bed1bb6.
+
+### W10 kalimat dihapus atau dipindah
+- Butir 4.10: "Lokasi, pemilik, dan retensi ada di tabel bagian 11." (kalimat penunjuk, STYLE §3.2; faktanya ada di tabel record)
+- Rujukan butir yang tidak perlu dibuka pembaca dihapus (STYLE §3.1): "(butir 6.3)" di 4.1 dan definisi Berkas usulan; "(butir 6.3 dan 6.5)" di 4.4; "(butir 6.3 dan 6.4)" di 4.5; "(butir 6.5)" di 4.8 dan 4.10; rujukan butir 6.x di tabel peran; "(bagian 9)" di peran Direktur (JA-02), Organ perusahaan, dan Legal & Compliance; "di bagian 8" di definisi Hari kerja (menjadi "dalam SOP ini"); "dengan membandingkan record di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8" di Conclusion menjadi "dengan mencocokkan record penurunan jabatan terhadap langkah prosedur dan batas waktunya".
+- Bagian 8 baris Penerusan berkas usulan: "batas tanggapan melalui" (hasil skrip istilah atas "lewat" yang berarti terlampaui) ditulis "pada hari batas waktu tanggapan terlampaui". Arti sama dengan bed1bb6 ("batas tanggapan lewat").
+
+### W10 perbaikan label (putaran 2)
+- Bagian 2 paragraf 2: tiga label (USULAN) dikembalikan per pengecualian seperti bed1bb6 (sanksi disiplin, gaji dan tunjangan, penurunan jabatan Direktur Utama); kalimat pengecualian bersumber tetap tanpa label.
+- Butir 4.7: kalimat "Sejak tanggal berlaku, karyawan terkait menjalankan tugas dan wewenang posisi tujuan menurut SNX-HR-JA-01." dipisah lagi tanpa label (ketentuan berlaku di bed1bb6); label hanya pada "Wewenang posisi sekarang yang tidak ada di posisi tujuan berhenti pada tanggal itu (USULAN)."
+- Peran HR Lead kolom Authority: dua kalimat W10 digabung lagi menjadi satu kalimat seperti bed1bb6 agar "tidak memutuskan penurunan jabatan" kembali tercakup label (USULAN).
+- Diperiksa ulang kalimat demi kalimat terhadap bed1bb6, tanpa perubahan: Scope paragraf 1 dan 3, definisi, butir 4.1 sampai 4.6, 4.8, 4.10, peran lain, pengantar 6.1, keterangan Gambar 1, bagian 8, bagian 9, Conclusion, tabel record.
+- Bukan label: pengantar 6.5 "jika keputusan menyetujui" menjadi "setelah keputusan menyetujui" (unsur waktu bed1bb6).
+
+### W10 audit pointer
+- .definitions[2][1]: pointer murni dibuang, isi tidak dinyatakan ulang (penerus HRGA Officer ke HR Lead, atau HR Lead ke Direktur menurut bagian 9; rujukan bagian 9 dipertahankan).
+- .definitions[5][1]: pointer murni dibuang, isi tidak dinyatakan ulang (satuan batas waktu, hari libur resmi tidak dihitung, label (USULAN) tetap).
+- .policy[0]: pointer murni dibuang, isi tidak dinyatakan ulang (usulan melampirkan bukti dasar; label (USULAN) tetap pada kalimat penolakan usulan atas dasar lain).
+- .policy[3]: pointer murni dibuang, isi tidak dinyatakan ulang (tugas HRGA Officer dan rujukan bagian 9 untuk peran pengganti tetap; kedua label (USULAN) tetap).
+- .policy[4]: pointer murni dibuang, isi tidak dinyatakan ulang (salinan usulan, bukti dasar, tanggapan sebelum HR Lead menyimpulkan, lampiran pada rekomendasi, label (USULAN) tetap).
+- .policy[7]: pointer murni dibuang, isi tidak dinyatakan ulang (uraian posisi tujuan, konfirmasi tertulis, sebelum tanggal berlaku, label (USULAN) tetap).
+- .policy[9]: pointer murni dibuang, isi tidak dinyatakan ulang (lokasi, pemilik, retensi tetap di tabel record; pengarsip, kendali akses HR Lead, klasifikasi, label (USULAN) tetap).
+- .roles[0][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[1][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[2][1]: pointer murni dibuang, isi tidak dinyatakan ulang (pilihan keputusan, tanggal berlaku, ambang butir 4.2 dan label (USULAN) tetap).
+- .roles[3][1]: pointer murni dibuang, isi tidak dinyatakan ulang (syarat Atasan Langsung adalah HR Lead, langkah HR Lead di 6.1 dan 6.4, langkah pertama HRGA Officer di 6.3, label (USULAN) tetap).
+- .roles[4][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[5][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[6][1]: pointer murni dibuang, isi tidak dinyatakan ulang; label (USULAN) tetap.
+- .roles[7][1]: pointer murni dibuang, isi tidak dinyatakan ulang (meninjau perubahan perjanjian kerja atas permintaan HR Lead; syarat waktunya tetap di bagian 9 baris Penurunan jabatan mengubah perjanjian kerja).
+- .conclusion[0]: pointer murni dibuang, isi tidak dinyatakan ulang (pemeriksa HR Lead, objek record, langkah, batas waktu, label (USULAN) tetap).
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Pihak luar: dokumen ini tidak menyebut klien atau pelanggan.
+- Kalimat batas rotasi dan mutasi (bagian 2), penetap keputusan (4.6), Purpose, Conclusion, dan peran HR Lead diselaraskan dengan pola kalimat SNX-HR-SOP-13; penetap keputusan tetap Direktur Utama, pengganti untuk Direktur (JA-02) tetap Organ perusahaan.
+- "bila" diganti "jika"; jembatan istilah "Record (rekaman)" di butir 4.10. Rujukan langkah di bagian 9 (butir 6.1, 6.3, 6.4, 6.5) dipertahankan.

@@ -1,0 +1,33 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 4, butir 4.2",
+   "masalah": "Aturan inti yang di bed1bb6 berlabel '(USULAN; batas rotasi dan mutasi ada di bagian 2)' kini tanpa label; label hanya di kalimat FRM-01, dua kalimat setelahnya. Syarat unit kerja yang sama terbaca sebagai ketentuan berlaku. Rujukan 'menurut definisi di bagian 3' juga hilang, padahal ukuran tingkatan (jumlah garis lapor) ada di definisi itu.",
+   "kutipan": "jabatan tujuan harus berada di tingkatan jabatan dan unit kerja yang sama dengan jabatan karyawan. HR Lead menilai keduanya dari SNX-HR-ORG-01. Jika SNX-HR-FRM-01 sudah disahkan ... (USULAN).",
+   "usul": "'jabatan tujuan harus berada di tingkatan jabatan dan unit kerja yang sama dengan jabatan karyawan, dinilai HR Lead dari jumlah garis lapor dan kolom Unit di SNX-HR-ORG-01. Jika SNX-HR-FRM-01 sudah disahkan dan menetapkan tingkatan jabatan, HR Lead memakai tingkatan itu (USULAN).' Atau ubah urutan agar kalimat syarat berada langsung sebelum label."
+  },
+  {
+   "lokasi": "Bagian 4, butir 4.8",
+   "masalah": "Di bed1bb6 label menempel pada 'Rotasi diperlakukan sebagai mutasi (USULAN)'. W10 memasukkan perlakuan itu ke kalimat pertama bersama fakta bersumber tanpa label; label pindah ke kalimat pengajuan akses.",
+   "kutipan": "kata mutasi di SNX-ISMS-SOP-02 berarti perpindahan peran seseorang, dan rotasi diperlakukan sebagai mutasi dalam arti itu. Perubahan hak akses diajukan ... (USULAN).",
+   "usul": "'kata mutasi di SNX-ISMS-SOP-02 berarti perpindahan peran seseorang. Rotasi diperlakukan sebagai mutasi dalam arti itu, sehingga perubahan hak akses diajukan menurut butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02, oleh Atasan Langsung Tujuan pada tanggal berlaku dan oleh Atasan Langsung Asal saat masa rotasi berakhir (USULAN).'"
+  }
+ ],
+ "nonblocking": [
+  "Scope: dua label (tujuan lain, gaji) digabung di akhir 'Juga dikecualikan: ...'; sesuai STYLE 3.5.",
+  "Roles HR Lead: 'Mengembalikan usulan yang tidak memenuhi bagian 4.' dipindah ke depan sehingga tetap di luar label (USULAN); status terjaga.",
+  "Definisi Tingkatan jabatan: 'sehingga ukuran ini (USULAN)' diperbaiki menjadi 'ukuran ini belum baku (USULAN)'; kalimat utuh.",
+  "Batas rotasi dan mutasi, penetap keputusan (Direktur Utama), dan garis lapor (penetapan oleh Direktur Utama saat menunggu konfirmasi) tidak berubah arti.",
+  "Pengantar 6.4: 'dijalankan jika keputusan menyetujui usulan' kehilangan unsur waktu; usul 'dijalankan setelah keputusan menyetujui usulan'."
+ ],
+ "contoh_baik": [
+  "Tingkatan jabatan | ... Dua jabatan satu tingkatan bila jumlah garis lapornya sama. -> Dua jabatan berada di tingkatan yang sama jika jumlah garis lapornya sama."
+ ]
+}

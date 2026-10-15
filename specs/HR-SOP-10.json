@@ -15,17 +15,28 @@
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
    "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
  },
  "purpose": [
   "SOP ini mengatur cara SINUX menaikkan karyawan ke jabatan yang lebih tinggi beserta tanggung jawab jabatan itu, berdasarkan prestasi dan kualifikasi karyawan.",
-  "Setiap kenaikan jabatan punya dasar penilaian yang tercatat dan baru berlaku sesudah keputusan tertulis.",
+  "SOP ini memastikan setiap kenaikan jabatan punya dasar penilaian yang tercatat dan baru berlaku setelah ada keputusan tertulis.",
   "Karyawan menerima uraian tanggung jawab jabatan barunya sebelum tanggal berlaku."
  ],
  "scope": [
-  "SOP ini berlaku untuk karyawan SINUX yang sedang menjabat dan diusulkan naik ke jabatan yang tercantum di SNX-HR-ORG-01 dan SNX-HR-JA-01. Prosesnya mulai dari usulan Atasan Langsung sampai pembaruan data jabatan, termasuk penyerahan uraian tanggung jawab jabatan baru.",
-  "Dikecualikan dari SOP ini: penurunan jabatan (SNX-HR-SOP-11); rotasi (SNX-HR-SOP-12); mutasi (SNX-HR-SOP-13); penetapan gaji dan tunjangan di jabatan baru (USULAN); kenaikan ke jabatan Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN).",
-  "Batas rotasi dan mutasi: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula sesudah masa rotasi, adalah rotasi (SNX-HR-SOP-12). Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain adalah mutasi (SNX-HR-SOP-13) (USULAN)."
+  "SOP ini berlaku untuk karyawan SINUX yang sedang menjabat dan diusulkan naik ke jabatan yang tercantum di SNX-HR-ORG-01 dan SNX-HR-JA-01. Cakupannya mulai dari usulan Atasan Langsung sampai pembaruan data jabatan, termasuk penyerahan uraian tanggung jawab jabatan baru.",
+  "Dikecualikan dari SOP ini: penurunan jabatan (SNX-HR-SOP-11), rotasi (SNX-HR-SOP-12), dan mutasi (SNX-HR-SOP-13). Juga dikecualikan: penetapan gaji dan tunjangan di jabatan baru (USULAN), serta kenaikan ke jabatan Direktur Utama (JA-01), karena menurut SNX-HR-JA-01 atasan jabatan itu adalah organ perusahaan sesuai anggaran dasar (USULAN).",
+  "Batas rotasi dan mutasi: rotasi (SNX-HR-SOP-12) adalah perpindahan sementara dalam unit kerja dan tingkatan jabatan yang sama untuk penyegaran atau pengembangan keterampilan, dan karyawan kembali ke tugas semula setelah masa rotasi. Mutasi (SNX-HR-SOP-13) adalah perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain (USULAN)."
  ],
  "definitions": [
   [
@@ -38,7 +49,7 @@
   ],
   [
    "Hari kerja",
-   "Satuan batas waktu di bagian 8, tidak termasuk hari libur resmi (USULAN)."
+   "Satuan batas waktu dalam SOP ini; hari libur resmi tidak dihitung (USULAN)."
   ],
   [
    "Jabatan tujuan",
@@ -62,7 +73,7 @@
   ],
   [
    "NOC, SOC, SD dan PM",
-   "Sub divisi Divisi Operation di SNX-HR-ORG-01. NOC memantau dashboard layanan dan menangani tiket. SOC memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan. SD dan PM adalah Service Delivery dan Project Management (USULAN)."
+   "Sub divisi Divisi Operation di SNX-HR-ORG-01. NOC memantau dashboard layanan dan menangani ticket. SOC memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan. SD dan PM adalah Service Delivery dan Project Management (USULAN)."
   ],
   [
    "Penilaian kinerja",
@@ -86,45 +97,45 @@
   ]
  ],
  "policy": [
-  "4.1 Dasar kenaikan jabatan (ISO 9001:2015 7.2): kenaikan jabatan didasarkan pada prestasi dan kualifikasi karyawan yang diusulkan. HR Lead menyimpulkan keduanya secara tertulis dari bukti yang dilampirkan pada usulan (butir 6.2).",
-  "4.2 Kualifikasi (ISO 9001:2015 7.2): kualifikasi dinilai terhadap persyaratan jabatan tujuan di SNX-HR-JA-01. Butir 4.7 dokumen itu menyatakan masa pengalaman minimum ditentukan sesudah job evaluation. Sampai masa itu ditetapkan, HR Lead menilai pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan dan menulis alasannya (USULAN). Bila SNX-HR-FRM-01 sudah disahkan, HR Lead memakainya sebagai acuan tambahan (USULAN).",
-  "4.3 Prestasi (ISO 9001:2015 7.2): prestasi dinilai dari hasil penilaian kinerja karyawan yang diusulkan. Target numerik dan bobot indikator kinerja ditetapkan di KPI Matrix (SNX-HR-JA-01 butir 4.6). Ambang hasil penilaian kinerja untuk dapat diusulkan belum ditetapkan. Penetapannya oleh Direktur Utama atas usulan HR Lead, lalu SOP ini direvisi (USULAN).",
-  "4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung mengusulkan, HR Lead menilai dan merekomendasikan, lalu Direktur Utama menetapkan keputusan. HRGA Officer mencatat dan mengarsipkan setiap tahap (butir 6.2 sampai 6.4).",
+  "4.1 Dasar kenaikan jabatan (ISO 9001:2015 7.2): kenaikan jabatan didasarkan pada prestasi dan kualifikasi karyawan yang diusulkan. HR Lead menyimpulkan keduanya secara tertulis dari bukti yang dilampirkan pada usulan.",
+  "4.2 Kualifikasi (ISO 9001:2015 7.2): kualifikasi dinilai terhadap persyaratan jabatan tujuan di SNX-HR-JA-01. Menurut SNX-HR-JA-01 butir 4.7, masa pengalaman minimum baru ditentukan setelah job evaluation. Selama masa itu belum ditetapkan, HR Lead menilai kecukupan pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan dan menulis alasannya (USULAN). Jika SNX-HR-FRM-01 sudah disahkan, HR Lead memakainya sebagai acuan tambahan (USULAN).",
+  "4.3 Prestasi (ISO 9001:2015 7.2): prestasi dinilai dari hasil penilaian kinerja karyawan yang diusulkan. Target numerik dan bobot indikator kinerja ditetapkan di KPI Matrix (SNX-HR-JA-01 butir 4.6). Ambang hasil penilaian kinerja untuk dapat diusulkan belum ditetapkan. Ambang itu ditetapkan Direktur Utama atas usulan HR Lead, lalu SOP ini direvisi (USULAN).",
+  "4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung mengusulkan, HR Lead menilai dan merekomendasikan, lalu Direktur Utama menetapkan keputusan. HRGA Officer mencatat dan mengarsipkan setiap tahap.",
   "4.5 Wewenang di jabatan baru (ISO 9001:2015 5.3 dan ISO/IEC 27001:2022 Annex A 5.2): karyawan yang naik jabatan menjalankan tugas dan wewenang jabatan tujuan menurut SNX-HR-JA-01. Kenaikan jabatan tidak otomatis memberi hak tanda tangan kontrak atau otorisasi keuangan; hak itu mengikuti Authority Matrix (SNX-HR-JA-01 butir 4.4).",
-  "4.6 Persetujuan tertulis: SNX-HR-JA-01 butir 4.5 menyatakan keputusan pengangkatan atau pemutusan hubungan kerja mengikuti delegasi dan persetujuan tertulis yang berlaku. Kenaikan jabatan diperlakukan sama: berlaku hanya sesudah keputusan tertulis Direktur Utama (USULAN).",
-  "4.7 Komunikasi tanggung jawab (ISO 9001:2015 5.3): karyawan yang diusulkan menerima uraian jabatan tujuan dan mengonfirmasi secara tertulis bahwa ia memahaminya sebelum tanggal berlaku (butir 6.4) (USULAN).",
-  "4.8 Hak akses (ISO/IEC 27001:2022 Annex A 5.18): SNX-ISMS-SOP-02 mengatur perubahan akses saat mutasi, yaitu perpindahan peran seseorang. Kenaikan jabatan termasuk di dalamnya: hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan lewat prosedur itu (butir 6.4).",
-  "4.9 Rekaman dan klasifikasi (ISO 9001:2015 7.5.3): HRGA Officer mengarsipkan rekaman kenaikan jabatan di personal file karyawan (butir 6.4). Rekaman itu berisi data karyawan dan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan retensi ada di tabel bagian 11."
+  "4.6 Persetujuan tertulis: menurut SNX-HR-JA-01 butir 4.5, keputusan pengangkatan atau pemutusan hubungan kerja mengikuti delegasi dan persetujuan tertulis yang berlaku. Kenaikan jabatan mengikuti ketentuan yang sama dan baru berlaku setelah ada keputusan tertulis Direktur Utama (USULAN).",
+  "4.7 Komunikasi tanggung jawab (ISO 9001:2015 5.3): sebelum tanggal berlaku, karyawan yang diusulkan menerima uraian jabatan tujuan dan mengonfirmasi secara tertulis bahwa ia sudah memahaminya (USULAN).",
+  "4.8 Hak akses (ISO/IEC 27001:2022 Annex A 5.18): SNX-ISMS-SOP-02 mengatur perubahan akses saat mutasi, yaitu perpindahan peran seseorang. Kenaikan jabatan termasuk perpindahan peran itu, jadi hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan melalui prosedur itu (butir 6.4).",
+  "4.9 Record (rekaman) dan klasifikasi (ISO 9001:2015 7.5.3): HRGA Officer mengarsipkan record kenaikan jabatan di personal file karyawan. Karena berisi data karyawan, record itu berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN)."
  ],
  "roles": [
   [
    "HR Lead",
-   "Pemilik SOP. Menyimpulkan prestasi dan kualifikasi karyawan yang diusulkan, mencatat kesenjangan kompetensi, merekomendasikan keputusan ke Direktur Utama, menyampaikan keputusan, dan memperbarui SNX-HR-ORG-01 serta SNX-HR-JA-01 (butir 6.2 sampai 6.4).",
-   "Merekomendasikan keputusan kepada Direktur Utama dan tidak memutuskan kenaikan jabatan, mengikuti wewenang JA-14 di SNX-HR-JA-01 untuk hiring, salary action, dan disciplinary action (USULAN)."
+   "Pemilik SOP. Menyimpulkan prestasi dan kualifikasi karyawan yang diusulkan, mencatat kesenjangan kompetensi, merekomendasikan keputusan ke Direktur Utama, menyampaikan keputusan, dan memperbarui SNX-HR-ORG-01 serta SNX-HR-JA-01.",
+   "Merekomendasikan keputusan kepada Direktur Utama dan tidak memutuskan kenaikan jabatan, sesuai wewenang JA-14 di SNX-HR-JA-01 untuk hiring, salary action, dan disciplinary action (USULAN)."
   ],
   [
    "HRGA Officer",
-   "Memeriksa kelengkapan usulan, melampirkan hasil penilaian kinerja, memberikan uraian jabatan tujuan kepada karyawan, memperbarui data kepegawaian, mengarsipkan rekaman di personal file, dan memberi tahu Atasan Langsung tentang perubahan jabatan (butir 6.2 dan 6.4).",
+   "Memeriksa kelengkapan usulan, melampirkan hasil penilaian kinerja, memberikan uraian jabatan tujuan kepada karyawan, memperbarui data kepegawaian, mengarsipkan record di personal file, dan memberi tahu Atasan Langsung tentang perubahan jabatan.",
    "Meminta kelengkapan data atau dokumen, memproses administrasi dalam SOP, dan mengeskalasi keputusan HR ke HR Lead (JA-12 di SNX-HR-JA-01)."
   ],
   [
    "Direktur Utama",
-   "Memutuskan usulan kenaikan jabatan: setujui, setujui dengan syarat, atau tolak, dan menetapkan tanggal berlaku (butir 6.3).",
+   "Memutuskan usulan kenaikan jabatan (setujui, setujui dengan syarat, atau tolak) dan menetapkan tanggal berlaku.",
    "Menyetujui atau menolak usulan, dalam batas anggaran dasar dan delegasi tertulis yang berlaku (USULAN)."
   ],
   [
    "Atasan Langsung",
-   "Memilih jabatan tujuan, mengisi dan mengirim usulan kenaikan jabatan, menerima pemberitahuan keputusan, dan mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02 (butir 6.1, 6.3, dan 6.4).",
+   "Memilih jabatan tujuan, mengisi dan mengirim usulan kenaikan jabatan, menerima pemberitahuan keputusan, dan mengajukan perubahan hak akses menurut SNX-ISMS-SOP-02.",
    "Mengusulkan kenaikan jabatan bawahan langsungnya; tidak memutuskannya."
   ],
   [
    "Karyawan yang diusulkan",
-   "Menerima uraian jabatan tujuan dan mengonfirmasi secara tertulis bahwa ia memahaminya (butir 6.4) (USULAN).",
+   "Menerima uraian jabatan tujuan, lalu mengonfirmasi secara tertulis bahwa ia memahaminya (USULAN).",
    "Meminta penjelasan atas uraian jabatan tujuan sebelum mengonfirmasi."
   ],
   [
    "Legal & Compliance (JA-08)",
-   "Meninjau perubahan perjanjian kerja bila HR Lead memintanya (bagian 9) (USULAN).",
+   "Meninjau perubahan perjanjian kerja atas permintaan HR Lead (USULAN).",
    "Memberikan legal clearance dan meminta revisi klausul berisiko (JA-08 di SNX-HR-JA-01)."
   ]
  ],
@@ -132,7 +143,7 @@
   {
    "title": "Pengajuan usulan",
    "intro": [
-    "Atasan Langsung memulai proses. Langkah di butir 6.1 sampai 6.4 berstatus (USULAN) sampai Direktur Utama mengesahkan SOP ini."
+    "Proses dimulai oleh Atasan Langsung. Seluruh langkah di butir 6.1 sampai 6.4 berstatus (USULAN) sampai SOP ini disahkan Direktur Utama."
    ],
    "steps": [
     [
@@ -161,7 +172,7 @@
      "Usulan lengkap, atau daftar kekurangan (bagian 9)"
     ],
     [
-     "Lampirkan pada usulan hasil penilaian kinerja karyawan yang diusulkan dari arsip HR.",
+     "Ambil hasil penilaian kinerja karyawan yang diusulkan dari arsip HR, lalu lampirkan pada usulan.",
      "HRGA Officer",
      "Usulan dengan lampiran hasil penilaian kinerja"
     ],
@@ -193,7 +204,7 @@
     [
      "Putuskan usulan kenaikan jabatan: setujui, setujui dengan syarat, atau tolak.",
      "Direktur Utama",
-     "Keputusan kenaikan jabatan tertulis, memuat jabatan tujuan, syarat, dan tanggal berlaku bila disetujui"
+     "Keputusan kenaikan jabatan tertulis, memuat jabatan tujuan, syarat, dan tanggal berlaku jika disetujui"
     ],
     [
      "Sampaikan keputusan kenaikan jabatan kepada Atasan Langsung dan karyawan yang diusulkan.",
@@ -205,7 +216,7 @@
   {
    "title": "Penyerahan tanggung jawab baru",
    "intro": [
-    "Langkah berikut berjalan sesudah keputusan menyetujui. Untuk keputusan menolak, lihat bagian 9."
+    "Langkah berikut dijalankan setelah keputusan menyetujui usulan. Penanganan keputusan menolak mengikuti bagian 9."
    ],
    "steps": [
     [
@@ -239,7 +250,7 @@
      "Permintaan perubahan hak akses"
     ],
     [
-     "Perbarui pemegang jabatan di SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi kedua dokumen.",
+     "Perbarui pemegang jabatan di SNX-HR-ORG-01 dan SNX-HR-JA-01 melalui revisi kedua dokumen.",
      "HR Lead",
      "Revisi SNX-HR-ORG-01 dan SNX-HR-JA-01"
     ]
@@ -260,7 +271,7 @@
    "z": "Selesai. Usulan baru\nmulai dari butir 6.1",
    "i": "Berikan uraian jabatan tujuan\n(butir 6.4)\nHRGA Officer",
    "j": "Konfirmasi tertulis uraian jabatan\n(butir 6.4)\nKaryawan yang diusulkan",
-   "k": "Perbarui data, arsipkan rekaman,\nberi tahu Atasan Langsung\n(butir 6.4)\nHRGA Officer",
+   "k": "Perbarui data, arsipkan record,\nberi tahu Atasan Langsung\n(butir 6.4)\nHRGA Officer",
    "l": "Perbarui SNX-HR-ORG-01 dan\nSNX-HR-JA-01 (butir 6.4)\nHR Lead",
    "m": "Ajukan perubahan hak akses\n(butir 6.4)\nAtasan Langsung"
   },
@@ -374,7 +385,7 @@
   ],
   [
    "Jabatan tujuan belum tercantum di SNX-HR-ORG-01 atau SNX-HR-JA-01",
-   "HR Lead menambahkan jabatan itu lewat revisi kedua dokumen. Usulan diproses setelah Direktur Utama mengesahkan revisi itu (USULAN)."
+   "HR Lead menambahkan jabatan itu melalui revisi kedua dokumen. Usulan diproses setelah Direktur Utama mengesahkan revisi itu (USULAN)."
   ],
   [
    "Atasan Langsung karyawan yang diusulkan berlabel menunggu konfirmasi di SNX-HR-ORG-01",
@@ -386,7 +397,7 @@
   ],
   [
    "Keputusan menyetujui dengan syarat",
-   "HR Lead memasukkan tindakan pemenuhan syarat ke SNX-HR-FRM-02 dan melapor ke Direktur Utama saat syarat terpenuhi. HRGA Officer memperbarui data kepegawaian sesudah laporan itu (USULAN)."
+   "HR Lead memasukkan tindakan pemenuhan syarat ke SNX-HR-FRM-02 dan melapor ke Direktur Utama saat syarat terpenuhi. HRGA Officer memperbarui data kepegawaian setelah laporan itu disampaikan (USULAN)."
   ],
   [
    "Keputusan menolak usulan",
@@ -398,8 +409,8 @@
   ]
  ],
  "conclusion": [
-  "HR Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8 (USULAN).",
-  "HR Lead meninjau SOP ini setiap tahun, dan lebih awal bila Direktur Utama menetapkan ambang prestasi di butir 4.3."
+  "HR Lead selaku pemilik SOP memeriksa kepatuhan dengan mencocokkan record kenaikan jabatan terhadap langkah prosedur dan batas waktunya (USULAN).",
+  "HR Lead meninjau SOP ini setiap tahun. Review dilakukan lebih awal jika Direktur Utama menetapkan ambang prestasi di butir 4.3."
  ],
  "related_documents": [
   [
@@ -412,15 +423,15 @@
   ],
   [
    "SNX-HR-FRM-01",
-   "Employee Competency Matrix: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; dasar penilaian kualifikasi bila sudah disahkan (USULAN)."
+   "Employee Competency Matrix: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; dasar penilaian kualifikasi jika sudah disahkan (USULAN)."
   ],
   [
    "SNX-HR-FRM-02",
-   "Annual Training Plan & Training Matrix: tempat tindakan pemenuhan syarat kenaikan jabatan (bagian 9) (USULAN)."
+   "Annual Training Plan & Training Matrix: tempat mencatat tindakan pemenuhan syarat kenaikan jabatan menurut bagian 9 (USULAN)."
   ],
   [
    "SOP Performance Appraisal",
-   "Dalam peninjauan: penilaian kinerja berkala yang hasilnya menjadi dasar prestasi (butir 4.3 dan 6.2). Kode dokumen mengikuti hasil peninjauan."
+   "Dalam review: penilaian kinerja berkala yang hasilnya menjadi dasar prestasi (butir 4.3 dan 6.2). Kode dokumen mengikuti hasil review."
   ],
   [
    "SNX-HR-SOP-11",
@@ -440,7 +451,7 @@
   ],
   [
    "SNX-ISMS-PRO-01",
-   "Information Classification & Handling Procedure: tingkat klasifikasi rekaman kenaikan jabatan (butir 4.9)."
+   "Information Classification & Handling Procedure: tingkat klasifikasi record kenaikan jabatan (butir 4.9)."
   ],
   [
    "Belum bernomor",

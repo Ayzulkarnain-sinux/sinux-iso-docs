@@ -1,0 +1,35 @@
+{
+ "key": "HR-SOP-11",
+ "mode": "sop",
+ "out": "out/02_HR/SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 3033,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 55,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 3079,
+  "calque": [],
+  "lewat": 5,
+  "pointer": 0,
+  "usulan": 55,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 65,
+  "tables_ge3_no_header": 14
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-SOP-11 Demotion (Rev00 DRAFT).pdf",
+ "pages": 18,
+ "blank": [],
+ "pass": true
+}

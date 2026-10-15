@@ -258,3 +258,48 @@ A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lap
 Open item: #14 ditutup W9; #10 diubah W9.
 
 Open item R2 (baru, nomor 15): Sejak JA-03 dan JA-04 punya dua garis tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3), ukuran tingkatan jabatan (USULAN) "jumlah garis lapor sampai Direktur Utama" bermakna ganda untuk JA-03, JA-04, dan bawahannya; perlu aturan jalur mana yang dihitung. Teks dokumen tidak diubah (R2). Pemutus: Aziz, owner. Open item #2 dan #10 diberi tanda "diubah W9" di barisnya.
+
+## W10 (bahasa, ISO-W10)
+
+### W10 label dihapus
+nihil (putaran perbaikan 2: jumlah label setiap teks kembali sama dengan bed1bb6).
+- Butir 4.3, 4.7, peran Karyawan yang dirotasi, dan Dokumen terkait SNX-HR-FRM-01 serta SNX-HR-FRM-02: "(butir 6.x, (USULAN))" ditulis "(USULAN)" di akhir; jumlah label tetap.
+- Peran HR Lead kolom Authority: urutan kalimat ditukar; label tetap pada kalimat yang sama seperti bed1bb6.
+
+### W10 kalimat dihapus atau dipindah
+- Butir 4.10: "Lokasi, pemilik, dan retensi ada di tabel bagian 11." (kalimat penunjuk, STYLE §3.2; faktanya ada di tabel record)
+- Butir 4.2: "batas rotasi dan mutasi ada di bagian 2" (penunjuk; batasnya tetap di bagian 2). Rujukan definisi di bagian 3 dikembalikan pada putaran 2.
+- Rujukan butir yang tidak perlu dibuka pembaca dihapus (STYLE §3.1): "(butir 6.2)" di 4.1, 4.2, 4.3; "(butir 6.4 dan 6.5)" di 4.4, 4.8, 4.10; "(butir 6.4)" di 4.7; rujukan butir 6.x di tabel peran; "di bagian 8" di definisi Hari kerja (menjadi "dalam SOP ini"); "dengan membandingkan record di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8" di Conclusion menjadi "dengan mencocokkan record rotasi terhadap langkah prosedur dan batas waktunya".
+- Keterangan Gambar 1: "... ada di butir 6.2, 6.4, dan 6.5." ditulis "Langkah Atasan Langsung Tujuan dan Atasan Langsung Asal untuk tanggapan, pengajuan perubahan hak akses, dan laporan hasil rotasi mengikuti butir 6.2, 6.4, dan 6.5." (rujukan tetap).
+
+### W10 perbaikan label (putaran 2)
+- Bagian 2 paragraf 2: label (USULAN) dikembalikan per pengecualian seperti bed1bb6 (tujuan selain butir 4.1, serta gaji dan tunjangan); kalimat pengecualian bersumber tetap tanpa label.
+- Butir 4.2: kalimat syarat tingkatan dan unit kerja kembali berlabel sendiri, dan rujukan "menurut definisi Tingkatan jabatan di bagian 3" dikembalikan (ukuran jumlah garis lapor ada di definisi itu). "HR Lead menilai keduanya dari SNX-HR-ORG-01." tetap tanpa label seperti bed1bb6; kalimat SNX-HR-FRM-01 tetap berlabel. Isi label pertama bed1bb6 "batas rotasi dan mutasi ada di bagian 2" tetap dibuang sebagai penunjuk; labelnya sendiri tetap.
+- Butir 4.8: "kata mutasi di SNX-ISMS-SOP-02 berarti perpindahan peran seseorang." dipisah lagi tanpa label (fakta bersumber); kalimat berikutnya "Rotasi diperlakukan sebagai mutasi dalam arti itu, sehingga perubahan hak akses diajukan ... (USULAN)" berlabel, mencakup perlakuan rotasi dan pengajuan akses yang di bed1bb6 berada dalam kalimat berlabel yang sama.
+- Diperiksa ulang kalimat demi kalimat terhadap bed1bb6, tanpa perubahan: Scope paragraf 1 dan 3, definisi, butir 4.3 sampai 4.7, 4.9, 4.10, peran, pengantar 6.1, keterangan Gambar 1, bagian 9, Conclusion, Dokumen terkait.
+- Bukan label: pengantar 6.4 "jika keputusan menyetujui" menjadi "setelah keputusan menyetujui" (unsur waktu bed1bb6).
+
+### W10 audit pointer
+- .definitions[3][1]: pointer murni dibuang, isi tidak dinyatakan ulang (satuan batas waktu, hari libur resmi tidak dihitung, label (USULAN) tetap).
+- .policy[0]: pointer murni dibuang, isi tidak dinyatakan ulang (dua tujuan, usulan menyebut salah satunya, HR Lead memeriksa sebelum merekomendasikan).
+- .policy[1]: pointer murni dibuang, isi tidak dinyatakan ulang (syarat tingkatan jabatan dan unit kerja yang sama, penilai HR Lead dari SNX-HR-ORG-01, acuan SNX-HR-FRM-01, label (USULAN) tetap; tingkatan jabatan tetap memakai istilah yang didefinisikan di bagian 3).
+- .policy[2]: pointer murni dibuang, isi tidak dinyatakan ulang (pemeriksaan keterampilan, penilaian setelah masa rotasi, kesenjangan, tindakan pelatihan di SNX-HR-FRM-02, label (USULAN) tetap).
+- .policy[3]: pointer murni dibuang, isi tidak dinyatakan ulang (lima peran dan urutannya tetap).
+- .policy[6]: pointer murni dibuang, isi tidak dinyatakan ulang (uraian jabatan tujuan, konfirmasi tertulis, sebelum tanggal berlaku, label (USULAN) tetap).
+- .policy[7]: pointer murni dibuang, isi tidak dinyatakan ulang (pengaju Atasan Langsung Tujuan pada tanggal berlaku dan Atasan Langsung Asal saat masa rotasi berakhir, butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02, label (USULAN) tetap).
+- .policy[9]: pointer murni dibuang, isi tidak dinyatakan ulang (lokasi, pemilik, retensi tetap di tabel record; pengarsip, personal file, klasifikasi, label (USULAN) tetap).
+- .roles[0][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[1][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[2][1]: pointer murni dibuang, isi tidak dinyatakan ulang (pilihan keputusan, tanggal berlaku, masa rotasi tetap).
+- .roles[3][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[4][1]: pointer murni dibuang, isi tidak dinyatakan ulang.
+- .roles[5][1]: pointer murni dibuang, isi tidak dinyatakan ulang; label (USULAN) tetap.
+- .conclusion[0]: pointer murni dibuang, isi tidak dinyatakan ulang (pemeriksa HR Lead, objek record, langkah, batas waktu, label (USULAN) tetap).
+
+### W10 selisih angka
+- "8": hilang bersama rujukan "bagian 8" di definisi Hari kerja dan Conclusion; tidak ada angka aturan yang berubah.
+
+### W10 catatan
+- Pihak luar: dokumen ini tidak menyebut klien atau pelanggan.
+- Kalimat batas rotasi dan mutasi (bagian 2), definisi Tingkatan jabatan, penetap keputusan (4.5), Purpose, Conclusion, dan peran HR Lead diselaraskan dengan pola kalimat SNX-HR-SOP-13; penetap keputusan tetap Direktur Utama.
+- "bila" diganti "jika", "supaya" diganti "agar"; jembatan istilah "Record (rekaman)" di butir 4.10.

@@ -1,0 +1,28 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 4, butir 4.7",
+   "masalah": "Ketentuan berlaku di bed1bb6 kini terbaca usulan. Di bed1bb6 'karyawan terkait menjalankan tugas dan wewenang posisi tujuan menurut SNX-HR-JA-01' berdiri sebagai kalimat tanpa label; hanya penghentian wewenang lama yang (USULAN). W10 menggabungkan keduanya dalam satu kalimat berlabel (USULAN).",
+   "kutipan": "Sejak tanggal berlaku, karyawan terkait menjalankan tugas dan wewenang posisi tujuan menurut SNX-HR-JA-01, dan wewenang posisi sekarang yang tidak ada di posisi tujuan berhenti (USULAN).",
+   "usul": "Pisahkan lagi: 'Sejak tanggal berlaku, karyawan terkait menjalankan tugas dan wewenang posisi tujuan menurut SNX-HR-JA-01. Wewenang posisi sekarang yang tidak ada di posisi tujuan berhenti pada tanggal itu (USULAN).' Kalimat Authority Matrix boleh tetap di depan."
+  }
+ ],
+ "nonblocking": [
+  "Scope: tiga label pengecualian (sanksi disiplin, gaji, Direktur Utama) digabung menjadi satu di akhir 'Juga dikecualikan: ...'; pengecualian bersumber dipisah tanpa label. Sesuai STYLE 3.5.",
+  "4.1: urutan dibalik sehingga label (USULAN) tetap menempel pada kalimat HRGA Officer dan 'Setiap usulan melampirkan bukti dasar.' tetap tanpa label; status terjaga.",
+  "4.10: penunjuk bagian 11 dibuang dan kalimat klasifikasi dipindah ke akhir; label tetap pada klasifikasi RESTRICTED.",
+  "Batas rotasi dan mutasi, penetap keputusan (Direktur Utama; organ perusahaan untuk Direktur JA-02), dan pengganti HR Lead oleh Direktur (JA-02) tidak berubah arti.",
+  "Bagian 8: 'atau batas tanggapan lewat' menjadi 'atau pada hari batas waktu tanggapan terlampaui'; lebih jelas.",
+  "Pengantar 6.5: 'dijalankan jika keputusan menyetujui usulan' kehilangan unsur waktu; usul 'dijalankan setelah keputusan menyetujui usulan'."
+ ],
+ "contoh_baik": [
+  "Direktur (JA-02) | Menjalankan langkah HR Lead di butir 6.1 dan 6.4, ..., bila Atasan Langsung karyawan terkait adalah HR Lead (bagian 9) (USULAN). -> Jika Atasan Langsung karyawan terkait adalah HR Lead, menjalankan langkah HR Lead di butir 6.1 dan 6.4 serta langkah pertama HRGA Officer di butir 6.3 (USULAN)."
+ ]
+}

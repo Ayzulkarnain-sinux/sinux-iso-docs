@@ -1,0 +1,28 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 4, butir 4.2",
+   "masalah": "Di bed1bb6 aturan sementara penilaian pengalaman punya label sendiri: '...dan menulis alasannya (USULAN).' Di W10 label hanya menempel pada kalimat FRM-01, sehingga aturan sementara itu kini terbaca sebagai ketentuan berlaku. Kata 'menulis' juga melemah menjadi 'disertai'.",
+   "kutipan": "Selama masa itu belum ditetapkan, HR Lead menilai kecukupan pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan, disertai alasannya. Jika SNX-HR-FRM-01 sudah disahkan, HR Lead memakainya sebagai acuan tambahan (USULAN).",
+   "usul": "Gabungkan agar satu label mencakup keduanya: 'Selama masa itu belum ditetapkan, HR Lead menilai kecukupan pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan dengan alasan tertulis, dan memakai SNX-HR-FRM-01 sebagai acuan tambahan jika sudah disahkan (USULAN).'"
+  }
+ ],
+ "nonblocking": [
+  "Scope: dua label (gaji, Direktur Utama) digabung menjadi satu di akhir kalimat 'Juga dikecualikan: ...'; kalimat bersumber dipisah tanpa label. Sesuai STYLE 3.5, sama dengan pola HR-SOP-13.",
+  "Batas rotasi dan mutasi, penetap keputusan (Direktur Utama), dan garis lapor (Atasan Langsung menurut kolom Melapor ke) tidak berubah dibanding bed1bb6.",
+  "4.1, 4.4, 4.7, 4.9 dan Roles: rujukan butir 6.x dan penunjuk bagian 11 dibuang; fakta langkah tetap terbaca dan label tiap butir terjaga.",
+  "Kesimpulan: 'rekaman di bagian 11 ... langkah di bagian 6 dan batas waktu di bagian 8' menjadi 'record kenaikan jabatan terhadap langkah prosedur dan batas waktunya'; isi lengkap.",
+  "Pengantar 6.4: 'dijalankan jika keputusan menyetujui usulan' kehilangan unsur waktu 'sesudah'; usul 'dijalankan setelah keputusan menyetujui usulan'.",
+  "6.2 langkah 2 'Lampirkan hasil penilaian kinerja karyawan yang diusulkan dari arsip HR pada usulan.' agak janggal; usul 'Ambil hasil penilaian kinerja karyawan yang diusulkan dari arsip HR, lalu lampirkan pada usulan.'"
+ ],
+ "contoh_baik": [
+  "Legal & Compliance (JA-08) | Meninjau perubahan perjanjian kerja bila HR Lead memintanya (bagian 9) (USULAN). -> Meninjau perubahan perjanjian kerja atas permintaan HR Lead (USULAN)."
+ ]
+}
