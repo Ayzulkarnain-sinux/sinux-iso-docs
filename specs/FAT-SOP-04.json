@@ -13,7 +13,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Finance Staff",
-   "reviewed": "Finance Lead",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -63,8 +63,16 @@
    "Finance, Accounting & Tax, departemen pemilik SOP ini."
   ],
   [
+   "Finance Lead",
+   "Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+  ],
+  [
+   "Finance Staff",
+   "Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
+  ],
+  [
    "Financial Document Register",
-   "Daftar hardcopy dokumen keuangan yang diarsipkan FAT. Belum bernomor SNX."
+   "Daftar hardcopy dokumen keuangan yang diarsipkan FAT. Dalam peninjauan."
   ],
   [
    "Folder arsip FAT",
@@ -134,12 +142,12 @@
  "roles": [
   [
    "Finance Lead",
-   "Pemilik SOP ini. Menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain, menyetujui penambahan akses ke Folder arsip FAT, mengarsipkan dokumen perpajakan, dan menyetujui pemusnahan bersama Direktur Utama (butir 4.4, 4.5, 4.9, 6.1 sampai 6.4). Pemilik informasi untuk dokumen keuangan (USULAN). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Pemilik SOP ini. Menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain, menyetujui penambahan akses ke Folder arsip FAT, mengarsipkan dokumen perpajakan, dan menyetujui pemusnahan bersama Direktur Utama (butir 4.4, 4.5, 4.9, 6.1 sampai 6.4). Pemilik informasi untuk dokumen keuangan (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13).",
    "Menyetujui akses ke Folder arsip FAT dan pemusnahan dokumen keuangan, dalam batas delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
   ],
   [
    "Finance Staff",
-   "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, menurut butir 6.1 sampai 6.4 (USULAN). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, menurut butir 6.1 sampai 6.4 (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13).",
    "Mengarsipkan, mencatat, dan memusnahkan dokumen; tidak memusnahkan dokumen tanpa persetujuan Finance Lead dan Direktur Utama."
   ],
   [
@@ -398,7 +406,7 @@
   ],
   [
    "SNX-FAT-SOP-05",
-   "Tax Administration & Reporting; mengatur dokumen perpajakan yang diarsipkan di SOP ini. Butir 6.5 SOP itu menunjuk SOP ini sebagai acuan pengarsipan."
+   "Tax Administration & Reporting; mengatur dokumen perpajakan yang diarsipkan di SOP ini. Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini sebagai acuan pengarsipan untuk butir 6.5."
   ],
   [
    "SNX-ISMS-PRO-01",
@@ -429,7 +437,7 @@
    "SOP Legal Document Control & Retention; pengarsipan dokumen legal, di luar scope SOP ini."
   ],
   [
-   "Belum bernomor",
+   "Dalam peninjauan",
    "Financial Document Register; daftar hardcopy dokumen keuangan yang diarsipkan FAT (USULAN)."
   ]
  ],

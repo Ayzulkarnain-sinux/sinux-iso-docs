@@ -144,8 +144,8 @@ Annex A 8.12 dari Bagian 3 PRO-01 tidak dipakai (lihat penanganan cacat).
 | OI-1 | Lokasi, bentuk (lemari atau ruang), pengelola, dan akses Tempat simpan hardcopy FAT tidak ada di sumber. Job Analysis JA-12 menyebut HRGA Officer mengelola fasilitas dan inventaris kantor, tetapi tidak menyebut arsip FAT | FAT; Aziz bila fasilitasnya lewat HRGA |
 | OI-2 | Dasar hukum angka 10 tahun: SOP Billing menulis "sesuai ketentuan perpajakan dan audit ISO 9001 / ISO 27001" tanpa pasal; dasar itu tidak dibawa ke dokumen. Perlu konfirmasi angka dan titik awal hitungan | Legal |
 | OI-3 | Cakupan SNX-ISMS-PRO-01 baru Divisi Operation; perlu keputusan menjadikannya berlaku untuk FAT | owner |
-| OI-4 | Pemetaan Finance Lead, Finance Staff, dan ISMS Coordinator ke jabatan (K-13 di SNX-HR-ORG-01) | owner |
-| OI-5 | Financial Document Register: belum bernomor SNX; checklist baris 31 kini tidak bertanda ada (CONTEXT-PACK menulis "on review"); worklist tidak memberi key; kolom isinya belum diketahui. Butir 4.7, 6.3, 6.4 bergantung padanya | FAT; LEAD untuk penomoran |
+| OI-4 | Pemetaan Finance Lead, Finance Staff, dan ISMS Coordinator ke jabatan (K-13 di SNX-HR-ORG-01) (diubah W9: G-3 A6, Finance Lead dijalankan Direktur sampai jabatannya terisi dan Finance Staff oleh JA-10 dan JA-11, keduanya USULAN; pemetaan ISMS Coordinator tetap terbuka) | owner |
+| OI-5 | Financial Document Register: belum bernomor SNX; checklist baris 31 kini tidak bertanda ada (CONTEXT-PACK menulis "on review"); worklist tidak memberi key; kolom isinya belum diketahui. Butir 4.7, 6.3, 6.4 bergantung padanya (diubah W9: G-3 B4, status ditulis "dalam peninjauan" seragam; nomor SNX dan isi kolom tetap menunggu FAT) | FAT; LEAD untuk penomoran |
 | OI-6 | Daftar masa simpan per jenis dokumen FAT. PRO-01 menulis retensi "sesuai master list"; master list yang disebut audit (SNX-OPS-ML-00) milik Divisi Operation | FAT |
 | OI-7 | Penindakan pelanggaran penanganan di FAT. PRO-01 menunjuk Head of Operation untuk Divisi Operation; untuk FAT tidak ada. Dokumen ini hanya mencantumkan pelaporan event keamanan | owner |
 | OI-8 | Penanganan hardcopy hilang atau rusak, termasuk pemulihan dari softcopy: tidak ada di sumber, tidak dikarang | FAT |
@@ -204,3 +204,25 @@ Pembatalan (perbaikan sweep r1, qa/FAT-SOP-04.sweep.r1.json, pemblokir): sweep p
 Dipertahankan dari sweep: langkah 6.2 butir 4 dan 6.3 butir 4 sampai 6 (Finance Lead, dokumen perpajakan). Kolom PIC di 6.1 tetap hanya Finance Staff, seperti sebelum sweep; pelaku 6.1 untuk dokumen perpajakan ditunjuk lewat paragraf pembuka dan tetap bagian OI-10. Butir lain di sweep tidak berubah.
 
 Uji sesudah pembatalan (bukti mentah di /tmp/pen-FAT-SOP-04/lint.out.txt, validate.out.txt, blankscan.out.txt, extra-checks.out.txt): render_sop.py tanpa galat; lint_doc.py sop "pass": true, fails kosong, satu warn "37 butir (USULAN) menunggu ACC" (warn PIC SLA nol); validate.py "All validations PASSED!"; blankscan.py "ok 15".
+
+## ISO-W9
+
+Dasar: control/LEAD-GUIDE.md G-3 A6 dan B4, serta temuan makna R170. Hanya specs/FAT-SOP-04.json dan notes/FAT-SOP-04.md yang diubah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A6 blok Reviewed | Finance Lead | Amirull Yusuf Zulkarnain / Direktur (Prepared tetap Finance Staff) |
+| A6 definisi (bagian 3) | tidak ada istilah Finance Lead dan Finance Staff | Dua baris baru: "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)." dan "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)." (kata pertama arti diberi huruf kapital di kolom Definition) |
+| A6 tabel peran (bagian 5), baris Finance Lead | "Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | "Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)." |
+| A6 tabel peran, baris Finance Staff | "Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | "Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)." |
+| B4 definisi Financial Document Register | "... diarsipkan FAT. Belum bernomor SNX." | "... diarsipkan FAT. Dalam peninjauan." |
+| B4 dokumen terkait, kolom kode baris Financial Document Register | "Belum bernomor" | "Dalam peninjauan" |
+| Rujukan R170, dokumen terkait baris SNX-FAT-SOP-05 | "Butir 6.5 SOP itu menunjuk SOP ini sebagai acuan pengarsipan." | "Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini sebagai acuan pengarsipan untuk butir 6.5." |
+
+Butir 4.7, 6.3, 6.4 tidak diubah; semuanya sudah memakai nama "Financial Document Register".
+
+Rujukan silang yang diubah: SNX-FAT-SOP-05 butir 6.5 menjadi SNX-FAT-SOP-05 bagian 11 (baris SNX-FAT-SOP-04, "acuan untuk butir 6.5 (USULAN)"). Langkah 6.5 SNX-FAT-SOP-05 memang tidak menyebut SOP ini, jadi rujukan dipindah ke tempat penunjukan itu ada. Rujukan "sesuai butir 6.5 SNX-FAT-SOP-05" di pembuka 6.1 menyangkut pelaku pengarsipan dokumen perpajakan (Finance Lead), bukan penunjukan acuan, dan tidak diubah.
+
+Open item: OI-4 diubah W9 (pemetaan Finance Lead dan Finance Staff mengikuti G-3 A6, berlabel USULAN); OI-5 diubah W9 (status "dalam peninjauan" seragam, G-3 B4). Tidak ada yang ditutup penuh.
+
+Uji: render_sop.py rc 0; lint_doc.py sop "pass": true (warn 39 butir USULAN); validate.py "All validations PASSED!"; blankscan ok 15; w9diff.py: 6 baris lama, 8 baris baru, hanya perubahan di atas.
