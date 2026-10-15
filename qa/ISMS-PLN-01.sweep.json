@@ -1,0 +1,23 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 7, diagram, simpul d (gambar PNG)",
+   "masalah": "Teks simpul diperiksa di spec saja. Gambar diagram hasil render tidak diperiksa secara visual oleh pemeriksa sweep. Label sekarang 4 baris, jadi perlu satu kali dilihat bahwa teksnya tidak terpotong.",
+   "bukti": "spec.diff simpul d: \"Tunjuk Recovery Lead dan,\\nbila ada unsur keamanan,\\nLead SOC sebagai\\nIncident Commander keamanan\". Docx out/ memuat \"Pelaku berstatus (USULAN)\" 1x, \"Lead SOC bila ada\" 0x."
+  },
+  {
+   "lokasi": "notes/ISMS-PLN-01.md, bagian Sweep baris 1b vs Hasil uji",
+   "masalah": "Catatan saling bertentangan, isi dokumen tidak terdampak: Hasil uji sebelum sweep sudah mencatat 19 label USULAN, tetapi baris 1b menyebut label baru menaikkan hitungan menjadi 19.",
+   "bukti": "Hasil uji: \"warns: \\\"19 butir (USULAN) menunggu ACC\\\"\"; Sweep 1b: \"label ini menambah satu hitungan lint (19)\"; qa/ISMS-PLN-01.lint.json sesudah sweep: 19."
+  }
+ ],
+ "catatan_pemeriksaan": {
+  "butir_1a_diagram": "Sesuai instruksi dan berdasar sumber. Sumber 1vwD5tORDQNQ7SNaQ6w4KitPKTcsw9ZVX Bagian 6 berbunyi: \"Saat aktivasi, Head of Operation menunjuk Recovery Lead (umumnya Lead NOC) dan Incident Commander keamanan (Lead SOC) bila ada unsur keamanan.\" Isinya sama dengan butir 6.1 langkah 5-6 dan tabel Definisi spec. Tidak ada peran baru.",
+  "butir_1b_bagian4": "Sesuai instruksi. Sumber Bagian 8-9 berkalimat pasif tanpa pelaku untuk runbook, cadangan terlatih, break-glass, dan pemeliharaan daftar kontak, jadi label (USULAN) tepat dan sejalan dengan pengantar 6.4. Label ini mengurangi klaim dan tidak menambah fakta.",
+  "perubahan_lain": "spec.diff hanya memuat dua hunk tersebut. Fakta, angka, nama, dan struktur lain tidak berubah.",
+  "gaya_dan_batas_keras": "Tidak ada em-dash, rujukan internal AI, pasif tanpa pelaku baru, atau benda sebagai pelaku. Lint pass, fails kosong.",
+  "butir_tidak_dikerjakan": "nihil"
+ }
+}

@@ -2,7 +2,7 @@
 
 Status: DRAFTED (spec + notes ada). Spec: specs/ISMS-PLN-01.json. Mode sop, aksi T1, wave W2, nomor SNX-ISMS-PLN-01 (nomor lama dipertahankan), department Operation, classification RESTRICTED (Internal) mengikuti label sumber (worklist null), audit_class C2. Approval persis dari prompt (prepared Erik Dwi Yanto, reviewed Fani Fatullah, approved Samuel Kristanto Utomo). Catatan worklist: "sumber pendukung POL-OPS-001 dan PRO-OPS-001 (bahan saja)".
 
-Hasil uji terakhir: render_sop.py lalu lint_doc.py sop, "pass": true, fails kosong, satu warn (18 label USULAN). Validator OOXML skill docx: "All validations PASSED!". Putaran perbaikan 1 (qa/ISMS-PLN-01.verify.r1.json) sudah diterapkan; lihat bagian "Putaran perbaikan 1".
+Hasil uji terakhir: render_sop.py lalu lint_doc.py sop, "pass": true, fails kosong, satu warn (19 label USULAN). Validator OOXML skill docx: "All validations PASSED!". Putaran perbaikan 1 (qa/ISMS-PLN-01.verify.r1.json) sudah diterapkan; lihat bagian "Putaran perbaikan 1".
 
 ## Sumber
 
@@ -156,7 +156,7 @@ Catatan POL-OPS-001 dan PRO-OPS-001 yang relevan:
 
 ## USULAN
 
-Lint menghitung 18 label (USULAN), satu di antaranya definisi istilah (spec memuat satu label lagi di gambar diagram). Butir bermakna: 9.
+Lint menghitung 19 label (USULAN), satu di antaranya definisi istilah (spec memuat satu label lagi di gambar diagram). Butir bermakna: 9.
 
 | # | Butir | Letak | Alasan | Pemutus yang disarankan |
 |---|---|---|---|---|
@@ -202,5 +202,16 @@ Lint menghitung 18 label (USULAN), satu di antaranya definisi istilah (spec memu
 ## Hasil uji
 
 - python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/ISMS-PLN-01.json /tmp/pen-ISMS-PLN-01/ISMS-PLN-01.docx: berhasil.
-- python3 -I tools/lint_doc.py /tmp/pen-ISMS-PLN-01/ISMS-PLN-01.docx sop: "pass": true, fails kosong, warns: "18 butir (USULAN) menunggu ACC" (tidak ada warn PIC SLA). Diulang sesudah putaran perbaikan 1: tetap pass.
+- python3 -I tools/lint_doc.py /tmp/pen-ISMS-PLN-01/ISMS-PLN-01.docx sop: "pass": true, fails kosong, warns: "19 butir (USULAN) menunggu ACC" (tidak ada warn PIC SLA). Diulang sesudah putaran perbaikan 1: tetap pass.
 - Validasi OOXML (skill docx, validate.py): "All validations PASSED!". PDF dirender dengan soffice (19 halaman); diagram 12 simpul terbaca penuh satu halaman.
+
+## Sweep
+
+Satu butir sweep, dua perubahan di specs/ISMS-PLN-01.json. Fakta, angka, nama, dan struktur lain tidak berubah.
+
+| # | Letak | Sebelum | Sesudah |
+|---|---|---|---|
+| 1a | Diagram bagian 7, simpul "Tunjuk Recovery Lead" | "Tunjuk Recovery Lead (Lead SOC bila ada unsur keamanan)": kurung membuat Lead SOC terbaca sebagai pengganti Recovery Lead | "Tunjuk Recovery Lead dan, bila ada unsur keamanan, Lead SOC sebagai Incident Commander keamanan": dua peran terpisah, sama dengan butir 6.1 langkah 5 dan 6 |
+| 1b | Bagian 4, butir kesiapan (Annex A 5.30) | "... Langkah tiap peran ada di butir 6.4." tanpa label pada pelaku | "... Pelaku berstatus (USULAN); langkah tiap peran ada di butir 6.4." Sama dengan pengantar 6.4 dan USULAN U4; label ini menambah satu hitungan lint (19) |
+
+Uji sesudah sweep: render_sop dan lint_doc sop pass (fails kosong, tanpa warn PIC SLA; satu warn 19 label USULAN), validate.py "All validations PASSED!", blankscan "ok".
