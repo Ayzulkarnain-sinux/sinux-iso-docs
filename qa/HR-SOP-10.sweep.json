@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 3 Definisi, baris \"NOC, SOC, SD dan PM\" vs bagian 2 Scope \"(NOC, SOC, serta SD dan PM)\"",
+      "masalah": "Istilah di tabel Definisi tidak ditulis persis sama dengan pemakaiannya di badan (RUNBOOK 6a butir 7); rumusan juga berbeda dari definisi sejenis di specs/HR-SOP-13.json baris 45.",
+      "bukti": "Definisi: \"NOC, SOC, SD dan PM\"; Scope: \"sub divisi Operation (NOC, SOC, serta SD dan PM)\"."
+    },
+    {
+      "lokasi": "Bagian 3 Definisi, baris NOC, SOC, SD dan PM",
+      "masalah": "Frasa ganda \"Sub divisi Divisi Operation\" (terbawa dari specs/HR-ORG-01.json). Isi definisi punya dasar di specs/HR-ORG-01.json baris 127-136 dan berlabel (USULAN); baris ini tambahan akibat butir 3, bukan butir eksplisit, tetapi tidak mengubah makna.",
+      "bukti": "\"Sub divisi Divisi Operation di SNX-HR-ORG-01. NOC memantau dashboard layanan dan menangani tiket. SOC memantau SIEM, EDR, WAF, dan Cloudflare ...\""
+    },
+    {
+      "lokasi": "Bagian 2 Scope, kalimat Batas rotasi dan mutasi (didikte instruksi butir 3)",
+      "masalah": "Untuk orkestrator, bukan cacat penyusun: perpindahan menetap dalam unit kerja dan tingkatan jabatan yang sama tidak lagi tercakup rotasi maupun mutasi (rumusan lama \"perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama\" menutupnya). Lingkup SOP-10 sendiri tidak berubah karena kenaikan jabatan tetap ke jabatan lebih tinggi.",
+      "bukti": "Diff: \"perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama (SNX-HR-SOP-12)\" menjadi \"rotasi (SNX-HR-SOP-12)\" + kalimat batas \"perpindahan sementara ... kembali ke tugas semula\"."
+    },
+    {
+      "lokasi": "Butir 6.4 langkah 6 baru dan diagram bagian 7 (simpul m, sisi k ke m)",
+      "masalah": "Dicek, sesuai: langkah Atasan Langsung punya dasar di specs/ISMS-SOP-02.json (peran atasan langsung \"mengajukan perubahan akses saat mutasi\"; langkah \"Ajukan perubahan akses karena mutasi.\" PIC Atasan langsung). Perubahan diagram tidak tampak di diff teks; isinya konsisten dengan langkah. Butir 3d (Atasan Langsung Asal/Tujuan) memang milik HR-SOP-12 dan tidak dikerjakan di sini, sudah disebut di notes.",
+      "bukti": "specs/ISMS-SOP-02.json baris 128-129 dan 286-287; specs/HR-SOP-10.json flow.nodes.m dan edges [k, m]."
+    }
+  ]
+}

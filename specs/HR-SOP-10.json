@@ -24,7 +24,8 @@
  ],
  "scope": [
   "SOP ini berlaku untuk karyawan SINUX yang sedang menjabat dan diusulkan naik ke jabatan yang tercantum di SNX-HR-ORG-01 dan SNX-HR-JA-01. Prosesnya mulai dari usulan Atasan Langsung sampai pembaruan data jabatan, termasuk penyerahan uraian tanggung jawab jabatan baru.",
-  "Dikecualikan dari SOP ini: penurunan jabatan (SNX-HR-SOP-11); perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama (SNX-HR-SOP-12); pemindahan ke unit kerja, divisi, atau lokasi operasional lain (SNX-HR-SOP-13); penetapan gaji dan tunjangan di jabatan baru (USULAN); kenaikan ke jabatan Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN)."
+  "Dikecualikan dari SOP ini: penurunan jabatan (SNX-HR-SOP-11); rotasi (SNX-HR-SOP-12); mutasi (SNX-HR-SOP-13); penetapan gaji dan tunjangan di jabatan baru (USULAN); kenaikan ke jabatan Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN).",
+  "Batas rotasi dan mutasi: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula sesudah masa rotasi, adalah rotasi (SNX-HR-SOP-12). Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain adalah mutasi (SNX-HR-SOP-13) (USULAN)."
  ],
  "definitions": [
   [
@@ -58,6 +59,10 @@
   [
    "Kualifikasi",
    "Persyaratan jabatan tujuan di SNX-HR-JA-01: pendidikan dan pengalaman, persyaratan tambahan, kompetensi teknis, dan kompetensi perilaku."
+  ],
+  [
+   "NOC, SOC, SD dan PM",
+   "Sub divisi Divisi Operation di SNX-HR-ORG-01. NOC memantau dashboard layanan dan menangani tiket. SOC memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan. SD dan PM adalah Service Delivery dan Project Management (USULAN)."
   ],
   [
    "Penilaian kinerja",
@@ -224,9 +229,14 @@
      "Arsip kenaikan jabatan di personal file"
     ],
     [
-     "Beri tahu Atasan Langsung tentang perubahan jabatan paling lambat pada tanggal berlaku, agar perubahan hak akses diajukan menurut SNX-ISMS-SOP-02.",
+     "Beri tahu Atasan Langsung tentang perubahan jabatan paling lambat pada tanggal berlaku.",
      "HRGA Officer",
      "Pemberitahuan perubahan jabatan"
+    ],
+    [
+     "Ajukan perubahan hak akses karyawan yang diusulkan menurut SNX-ISMS-SOP-02.",
+     "Atasan Langsung",
+     "Permintaan perubahan hak akses"
     ],
     [
      "Perbarui pemegang jabatan di SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi kedua dokumen.",
@@ -251,7 +261,8 @@
    "i": "Berikan uraian jabatan tujuan\n(butir 6.4)\nHRGA Officer",
    "j": "Konfirmasi tertulis uraian jabatan\n(butir 6.4)\nKaryawan yang diusulkan",
    "k": "Perbarui data, arsipkan rekaman,\nberi tahu Atasan Langsung\n(butir 6.4)\nHRGA Officer",
-   "l": "Perbarui SNX-HR-ORG-01 dan\nSNX-HR-JA-01 (butir 6.4)\nHR Manager"
+   "l": "Perbarui SNX-HR-ORG-01 dan\nSNX-HR-JA-01 (butir 6.4)\nHR Manager",
+   "m": "Ajukan perubahan hak akses\n(butir 6.4)\nAtasan Langsung"
   },
   "shapes": {
    "b": "diamond",
@@ -316,6 +327,10 @@
    [
     "j",
     "l"
+   ],
+   [
+    "k",
+    "m"
    ]
   ],
   "caption": "Gambar 1. Alur kenaikan jabatan (USULAN). Garis putus-putus kembali ke alur utama."
@@ -413,11 +428,11 @@
   ],
   [
    "SNX-HR-SOP-12",
-   "Rotation: perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama, dikecualikan dari SOP ini (bagian 2)."
+   "Rotation: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dikecualikan dari SOP ini (bagian 2)."
   ],
   [
    "SNX-HR-SOP-13",
-   "Mutation: pemindahan ke unit kerja, divisi, atau lokasi operasional lain, dikecualikan dari SOP ini (bagian 2)."
+   "Mutation: perpindahan menetap karena kebutuhan organisasi, dikecualikan dari SOP ini (bagian 2)."
   ],
   [
    "SNX-ISMS-SOP-02",
@@ -456,6 +471,6 @@
  "iso_refs": {
   "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), 7.2 (Kompetensi), 7.5.3 (Pengendalian informasi terdokumentasi).",
   "ISO/IEC 27001:2022": "Annex A 5.2 (Peran dan tanggung jawab keamanan informasi), 5.18 (Hak akses).",
-  "Status acuan klausul": "(USULAN, dikonfirmasi konsultan)"
+  "Status acuan klausul": "(USULAN, perlu konfirmasi konsultan)"
  }
 }
