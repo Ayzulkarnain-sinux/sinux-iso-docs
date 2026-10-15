@@ -167,7 +167,7 @@ Cacat tambahan yang saya temukan:
 | U6 | Hari kerja tidak termasuk hari libur resmi | Aziz |
 | U7 | Pengecualian scope: tujuan selain butir 4.1, dan gaji serta tunjangan akibat rotasi | Aziz |
 | U8 | Keputusan rotasi tertulis oleh Direktur Utama; rotasi berlaku sesudah keputusan itu (4.5, tabel peran) | Samuel, dengan Aziz |
-| U9 | Batas wewenang HR Manager: merekomendasikan, tidak memutuskan, dengan rujukan JA-14 (tabel peran) | Samuel, dengan Aziz |
+| U9 | Batas wewenang HR Manager: merekomendasikan, tidak memutuskan, dengan rujukan JA-14 (tabel peran); diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Samuel, dengan Aziz |
 | U10 | Konfirmasi tertulis karyawan atas uraian jabatan tujuan sebelum tanggal berlaku (4.7, 6.4, SLA) | Aziz |
 | U11 | Penilaian kompetensi aktual sesudah masa rotasi, pencatatan kesenjangan, dan tindakan pelatihan di SNX-HR-FRM-02 (4.3, 6.5) | Aziz |
 | U12 | Rotasi diperlakukan sebagai mutasi menurut SNX-ISMS-SOP-02; pengajuan akses oleh Atasan Langsung Tujuan (saat berlaku) dan Atasan Langsung Asal (saat berakhir) (4.8, 6.4, 6.5) | Fani, dengan Aziz |
@@ -175,11 +175,11 @@ Cacat tambahan yang saya temukan:
 | U14 | Klasifikasi RESTRICTED (Internal) untuk rekaman rotasi (4.10) | Aziz, dikonfirmasi owner |
 | U15 | Lokasi rekaman (folder Google Drive Departemen HR), pemilik HRGA Officer, retensi selama karyawan bekerja (bagian 11) | Aziz |
 | U16 | Tanggapan tertulis Atasan Langsung Tujuan sebagai langkah wajib dan wewenangnya menolak (6.2, tabel peran, bagian 9 baris 1) | Aziz |
-| U17 | Pengusul = Atasan Langsung Asal; karyawan atau HR Manager yang memprakarsai menyampaikan ke Atasan Langsung Asal (6.1, bagian 9 baris 7) | Aziz |
+| U17 | Pengusul = Atasan Langsung Asal; karyawan atau HR Manager yang memprakarsai menyampaikan ke Atasan Langsung Asal (6.1, bagian 9 baris 7); diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Aziz |
 | U18 | Batas waktu bagian 8: 3, 3, 5, 5, 2, dan 5 hari kerja; konfirmasi sebelum tanggal berlaku; laporan hasil rotasi pada akhir masa rotasi | Aziz |
-| U19 | Penanganan bagian 9: pengembalian usulan oleh HR Manager atau HRGA Officer, rujukan ke SNX-HR-SOP-10, SNX-HR-SOP-11, SNX-HR-SOP-13, dan penetapan garis lapor oleh Direktur Utama | Aziz, dengan Samuel untuk garis lapor |
+| U19 | Penanganan bagian 9: pengembalian usulan oleh HR Manager atau HRGA Officer, rujukan ke SNX-HR-SOP-10, SNX-HR-SOP-11, SNX-HR-SOP-13, dan penetapan garis lapor oleh Direktur Utama; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Aziz, dengan Samuel untuk garis lapor |
 | U20 | Seluruh langkah 6.1 sampai 6.5 (kalimat pembuka 6.1) dan diagram (keterangan Gambar 1) | Aziz, dengan Samuel |
-| U21 | HR Manager memeriksa kepatuhan dengan membandingkan rekaman, langkah, dan batas waktu (Kesimpulan kalimat 1) | Aziz |
+| U21 | HR Manager memeriksa kepatuhan dengan membandingkan rekaman, langkah, dan batas waktu (Kesimpulan kalimat 1); diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Aziz |
 | U22 | Pemicu peninjauan lebih awal: grading jabatan ditetapkan (Kesimpulan kalimat 2) | Aziz |
 
 Total: 22 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 46 oleh lint (warn); satu butir bisa berlabel di beberapa tempat (mis. U18 di delapan baris SLA, U15 di enam sel tabel rekaman).
@@ -189,19 +189,20 @@ Total: 22 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 46 oleh lin
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
 | 1 | Kalimat Batas rotasi dan mutasi di bagian 2 (USULAN) menetapkan perpindahan sementara dengan kembali ke tugas semula sebagai rotasi, dan perpindahan menetap sebagai mutasi. Lama masa rotasi dan frekuensi rotasi tidak ada di SNX-HR-JA-01, SNX-HR-ORG-01, maupun sumber | Aziz, Samuel |
-| 2 | Ukuran "tingkatan jabatan yang sama". Grading tidak ada; dipakai jumlah garis lapor. Dengan 15 jabatan sekarang hanya JA-06 dengan JA-07 dan JA-04 dengan JA-05 yang memenuhi (bagian 4 notes ini). Perlu diputus apakah lingkup ini memang dimaksud, atau tingkatan ditetapkan lewat grading atau SNX-HR-FRM-01 | Aziz, owner |
+| 2 | Ukuran "tingkatan jabatan yang sama". Grading tidak ada; dipakai jumlah garis lapor. Dengan 15 jabatan sekarang hanya JA-06 dengan JA-07 dan JA-04 dengan JA-05 yang memenuhi (bagian 4 notes ini). Perlu diputus apakah lingkup ini memang dimaksud, atau tingkatan ditetapkan lewat grading atau SNX-HR-FRM-01; diubah W9: JA-04 kini punya dua garis lapor tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3); pasangan JA-04 dengan JA-05 belum dihitung ulang, lihat open item 15 | Aziz, owner |
 | 3 | Batas Rotation lawan Mutation memakai kalimat di bagian 2 (USULAN): perpindahan sementara antar sub divisi Operation (NOC, SOC, serta SD dan PM) dalam satu unit Operation tetap rotasi; perpindahan menetap ke sub divisi itu, ke unit kerja lain, atau ke lokasi lain adalah mutasi (SNX-HR-SOP-13). Perlu konfirmasi karena ORG-01 menaruh ketiga sub divisi di bawah satu Divisi Operation | Aziz |
-| 4 | Penetap rotasi. Dokumen memakai Direktur Utama (USULAN). Alternatif: HR Manager menetapkan dalam batas Authority Matrix, yang belum bernomor | Samuel, Aziz |
-| 5 | Siapa boleh memprakarsai rotasi (Atasan Langsung Asal, karyawan, HR Manager) dan akibat bila Atasan Langsung Asal menolak mengajukan usulan | Aziz |
+| 4 | Penetap rotasi. Dokumen memakai Direktur Utama (USULAN). Alternatif: HR Manager menetapkan dalam batas Authority Matrix, yang belum bernomor; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Samuel, Aziz |
+| 5 | Siapa boleh memprakarsai rotasi (Atasan Langsung Asal, karyawan, HR Manager) dan akibat bila Atasan Langsung Asal menolak mengajukan usulan; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Aziz |
 | 6 | Akibat rotasi pada perjanjian kerja, gaji, dan tunjangan tidak diatur; tidak ada peran Legal & Compliance di dokumen. Perlu diputus apakah rotasi pernah menuntut perubahan perjanjian kerja | Aziz, Legal |
 | 7 | Perpindahan dengan tujuan selain penyegaran atau pengembangan keterampilan (mis. kebutuhan operasional) tidak punya dokumen pengatur selain SNX-HR-SOP-13 untuk pindah unit; dokumen ini hanya mengembalikan usulannya | Aziz |
 | 8 | Garis lapor karyawan selama masa rotasi (tetap ke Atasan Langsung Asal atau pindah ke Atasan Langsung Tujuan) tidak ditetapkan. Dokumen menaruh pengajuan hak akses pada Atasan Langsung Tujuan saat berlaku | Aziz, Fani |
 | 9 | Batas waktu bagian 8, lokasi dan retensi rekaman, dan klasifikasi RESTRICTED (Internal) tanpa sumber (U14, U15, U18) | Aziz |
-| 10 | Dokumen ini bergantung pada SNX-HR-JA-01 dan SNX-HR-ORG-01 yang berstatus Draft (butir K-02, K-03, K-04 di ORG-01 memengaruhi hitungan tingkatan), SNX-HR-FRM-01 dan SNX-HR-FRM-02 yang dalam pengerjaan, serta SNX-HR-SOP-11 dan SNX-HR-SOP-13 yang batasnya dicocokkan ke scope yang sudah tertulis. Verifikator mencocokkan ulang sesudah semuanya selesai Diubah W9: SNX-HR-FRM-02 sudah ada, "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul; SNX-HR-FRM-01 tetap "dalam pengerjaan". | Verifikator, Aziz |
+| 10 | Dokumen ini bergantung pada SNX-HR-JA-01 dan SNX-HR-ORG-01 yang berstatus Draft (butir K-02, K-03, K-04 di ORG-01 memengaruhi hitungan tingkatan), SNX-HR-FRM-01 dan SNX-HR-FRM-02 (dalam pengerjaan saat itu), serta SNX-HR-SOP-11 dan SNX-HR-SOP-13 yang batasnya dicocokkan ke scope yang sudah tertulis. Verifikator mencocokkan ulang sesudah semuanya selesai; diubah W9: SNX-HR-FRM-02 sudah ada, "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul; R2: SNX-HR-FRM-01 (Employee Competency Matrix) juga sudah ada, "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul. | Verifikator, Aziz |
 | 11 | Frasa kompetensi sumber yang janggal (audit butir 4) dipulihkan di SNX-HR-JA-01 sebagai USULAN. "Keterampilan yang dituju" memakai kompetensi hasil pemulihan itu; perlu konfirmasi pemegang fungsi | Aziz |
 | 12 | Klausul ISO ditulis dari ingatan penyusun, belum dicek terhadap teks standar | Konsultan |
 | 13 | Kalimat bernada kewajiban di sumber ("Atasan langsung serta bawahan langsung yang belum ditetapkan secara resmi harus dikonfirmasi oleh manajemen sebelum pengesahan.") ditujukan ke Management, bukan ke penyusun; tidak dijalankan, dicatat saja | Samuel, Aziz |
-| 14 | Kepemilikan: HR Manager sebagai Process Owner berasal dari pemetaan "HR Lead" ke HR Manager (config/defaults.json), bukan dari konfirmasi Aziz atas SOP ini Ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; Process Owner dan seluruh dokumen memakai HR Lead. | Aziz |
+| 14 | Kepemilikan: HR Manager sebagai Process Owner berasal dari pemetaan "HR Lead" ke HR Manager (config/defaults.json), bukan dari konfirmasi Aziz atas SOP ini; ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; Process Owner dan seluruh dokumen memakai HR Lead. | Aziz |
+| 15 | Sejak JA-03 dan JA-04 punya dua garis tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3), ukuran tingkatan jabatan (USULAN) "jumlah garis lapor sampai Direktur Utama" bermakna ganda untuk JA-03, JA-04, dan bawahannya; perlu aturan jalur mana yang dihitung. Teks dokumen tidak diubah (R2) | Aziz, owner |
 
 ## 7. Pemeriksaan bahasa (dua pertanyaan, dijawab sebelum selesai)
 
@@ -250,7 +251,10 @@ Sumber: LEAD G-3 (A2, A3, B2, B4) dan butir kerja ISO-W9. Hanya butir di bawah y
 |---|---|---|
 | A2 jabatan Aziz | "HR Manager" (38 kemunculan: Peran, PIC, SLA, rekaman, simpul diagram, process_owner, blok Reviewed) | "HR Lead"; blok Reviewed "Aziz Priyo Widakdo / HR Lead" |
 | B4 SNX-HR-FRM-02 (bagian 11) | "Annual Training Plan & Training Matrix, dalam pengerjaan: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN))." | "Annual Training Plan & Training Matrix: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN))." |
+| R2 B4 SNX-HR-FRM-01 (bagian 11) | "Employee Competency Matrix, dalam pengerjaan: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; acuan tingkatan jabatan bila sudah disahkan (butir 4.2 SOP ini, (USULAN))." | "Employee Competency Matrix: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; acuan tingkatan jabatan bila sudah disahkan (butir 4.2 SOP ini, (USULAN))." |
 
 A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04 dan tidak memakai keduanya sebagai contoh ukuran tingkatan jabatan, jadi tidak ada perubahan. Label K-02, K-03, K-04 tidak disentuh. SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan. Ukuran tingkatan jabatan (USULAN, jumlah garis lapor) tidak diubah dan tidak memakai JA-03 atau JA-04 sebagai contoh di spec. Catatan lama di notes ini yang menyebut JA-04 sebagai contoh hitungan (open item 2) bersifat riwayat; hitung ulang dengan dua garis lapor JA-04 (Direktur dan Direktur Utama) belum dilakukan karena ukurannya tidak berubah dan pemutus (LEAD, SNX-HR-ORG-01) memegang garis baru itu. Kalimat batas rotasi dan mutasi dan definisi Unit kerja (NOC, SOC, serta SD dan PM) tidak diubah; SNX-HR-SOP-13 kini memakai definisi Unit kerja yang sama.
 
 Open item: #14 ditutup W9; #10 diubah W9.
+
+Open item R2 (baru, nomor 15): Sejak JA-03 dan JA-04 punya dua garis tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3), ukuran tingkatan jabatan (USULAN) "jumlah garis lapor sampai Direktur Utama" bermakna ganda untuk JA-03, JA-04, dan bawahannya; perlu aturan jalur mana yang dihitung. Teks dokumen tidak diubah (R2). Pemutus: Aziz, owner. Open item #2 dan #10 diberi tanda "diubah W9" di barisnya.

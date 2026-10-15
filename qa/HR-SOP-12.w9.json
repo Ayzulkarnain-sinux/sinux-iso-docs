@@ -2,32 +2,39 @@
  "key": "HR-SOP-12",
  "cluster": "HR-SOP",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Ukuran Tingkatan jabatan (bagian 3, USULAN: jumlah garis lapor sampai Direktur Utama) jadi bermakna ganda untuk JA-03, JA-04 dan bawahannya sekarang karena keduanya punya dua garis tegas (langsung ke Direktur Utama dan lewat Direktur). Spec tidak memakai JA-03/JA-04 sebagai contoh, jadi butir 2 tidak mewajibkan perubahan, dan notes menyatakan hitung ulang belum dilakukan. Sebaiknya diangkat sebagai open item ke Aziz atau LEAD.",
-  "SNX-HR-FRM-01 di bagian 11 masih ditulis 'dalam pengerjaan', padahal out/02_HR/ sudah memuat 'SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx'. Butir 6 hanya menyebut FRM-02, jadi membiarkannya sudah sesuai lingkup. Status ini bisa basi, dan notes #10 mencatatnya sebagai tetap.",
-  "notes/HR-SOP-12.md baris 10 (pemeriksaan lama) masih menulis 'nol \"Lead\"'. Klaim itu tidak berlaku lagi sesudah W9 karena dokumen kini memuat 33 'HR Lead'. Ini catatan riwayat, bukan isi dokumen.",
-  "Baris bagian 9 'Garis lapor ... berlabel menunggu konfirmasi di SNX-HR-ORG-01' tetap relevan karena K-02, K-03, K-04 tetap ada (A4). Tidak perlu tindakan."
+  "notes/HR-SOP-12.md baris 3 (status/approval) dan baris 88 (tabel pemetaan 'HR Lead -> HR Manager (JA-14)') serta baris 44-47, 109, 149 masih menulis pemetaan atau sebutan HR Manager sebagai keadaan kini; baris itu di luar Open items dan tabel USULAN sehingga tidak diwajibkan R2 butir 5, tetapi kini basi. Tidak menyentuh teks dokumen.",
+  "Notes open item 2 dan paragraf A3 di bagian ISO-W9: pasangan contoh JA-04 dengan JA-05 pada hitungan tingkatan (bagian 4 notes) belum dihitung ulang dengan dua garis lapor JA-04; dicatat sebagai diubah W9 dan open item 15 (R2 butir 4). Teks dokumen tidak memakai JA-03/JA-04 sebagai contoh, jadi butir A3 tidak menuntut perubahan dokumen.",
+  "Bagian 9 masih memuat baris 'Garis lapor jabatan karyawan atau jabatan tujuan berlabel menunggu konfirmasi di SNX-HR-ORG-01' (tidak berubah). Baris ini generik dan tetap relevan untuk K-02, K-03, K-04 yang menurut A4 tetap berlabel; bukan label pada garis JA-03/JA-04.",
+  "Diff spec terhadap HEAD hanya 2 baris (R2 FRM-01); perubahan R1 sudah di-commit 857972b 'ISO HR-SOP-12 polish' sesudah 4a40352. out/02_HR/SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx sudah memuat HR Lead 33, HR Manager 0; perubahan R2 (FRM-01) di out/ belum diverifikasi terpisah, render terbaru /tmp/claude-0/w9/render/HR-SOP-12.docx sudah memuatnya."
  ],
  "butir_dikerjakan": [
-  "Butir 1 (A2): 'HR Manager' diganti 'HR Lead' di semua tempat yang relevan: process_owner, blok Reviewed ('Aziz Priyo Widakdo / HR Lead', persis defaults v22 prepared_reviewed.HR), tujuan, butir 4.1 sampai 4.4, intro 6.1, PIC langkah 6.2, 6.3, 6.5, tabel peran bagian 5 (nama peran dan eskalasi HRGA Officer), simpul diagram g/x/h/k/q, SLA bagian 8, bagian 9 (7 baris), dan Kesimpulan. Hasilnya 33 kemunculan diganti 1:1 tanpa perubahan kata lain. SPV tidak ditambahkan karena dokumen tidak punya kolom tingkat jabatan, dan ini dicatat di notes.",
-  "Butir 6 (B4): SNX-HR-FRM-02 di bagian 11 dirujuk dengan nomor dan judul 'Annual Training Plan & Training Matrix', dan 'dalam pengerjaan' dihapus. Tujuannya ada di out/02_HR/ dengan judul yang cocok. Rujukan butir 4.3 dan 6.5 tidak berubah.",
-  "Butir 2 (A3): tidak berlaku. Dokumen tidak menyebut JA-03 atau JA-04 maupun atasan dan garis lapornya (render: JA-03=0, JA-04=0). Label K-02, K-03, K-04 tidak disentuh. Dicatat di notes.",
-  "Butir 5: kalimat 'Batas rotasi dan mutasi' identik di spec HR-SOP-10, 11, 12, 13 (1 varian dari 4 spec). Direktur Utama tetap penetap keputusan rotasi (4.4, 4.5, 6.3).",
-  "Blok approval sesuai defaults v22: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director'.",
-  "Notes punya bagian '## ISO-W9': tabel perubahan, open item #14 ditutup W9, #10 diubah W9.",
-  "Bahasa: kalimat yang berubah hanya berganti sebutan jabatan. Nol em-dash di render, tidak ada frasa proses penyusunan, pasif, atau rujukan AI baru. Spec diff tidak menunjukkan perubahan makna lain."
+  "A2: 38 kemunculan 'HR Manager' di spec 4a40352 diganti 'HR Lead' (Purpose, 4.1-4.4, kalimat pembuka 6.1, PIC 6.2/6.3/6.5, Peran termasuk wewenang HRGA Officer, SLA, bagian 9, Kesimpulan, simpul diagram g/x/h/k/q, process_owner, blok Reviewed 'Aziz Priyo Widakdo / HR Lead'). Tidak ada perubahan lain pada kalimat itu.",
+  "A2 SPV: tidak ditambahkan; dokumen tidak punya kolom tingkat jabatan (dicatat di notes).",
+  "Blok approval sesuai defaults v22 HR: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director'.",
+  "A3: dokumen tidak menyebut atasan/garis lapor JA-03 atau JA-04 (grep render 0); tidak ada perubahan, dicatat di notes; label K-02/K-03/K-04 tidak disentuh.",
+  "Butir 5: kalimat 'Batas rotasi dan mutasi' identik di render HR-SOP-10, 11, 12, 13 (md5 6986f7217eb62414f4a6f94aa8f27512, 419 karakter); penetap tetap Direktur Utama.",
+  "B4: baris SNX-HR-FRM-02 bagian 11 kehilangan 'dalam pengerjaan', dirujuk dengan nomor dan judul 'Annual Training Plan & Training Matrix' (cocok dengan judul render HR-FRM-02); keterangan dan (USULAN) tetap.",
+  "R2 butir 1: baris SNX-HR-FRM-01 bagian 11 kehilangan 'dalam pengerjaan', judul 'Employee Competency Matrix' cocok dengan render HR-FRM-01; keterangan dan (USULAN) tetap.",
+  "R2 butir 4: open item 15 (makna ganda ukuran tingkatan untuk JA-03/JA-04 dan bawahannya, pemutus Aziz, owner) ditambahkan di notes; teks dokumen tidak diubah.",
+  "R2 butir 5: baris U9, U17, U19, U21 dan open item 2, 4, 5, 10, 14 memuat 'diubah W9:' atau 'ditutup W9:' di barisnya sendiri; tabel ISO-W9 notes memuat baris A2, B4, dan R2; nol em-dash di notes dan spec.",
+  "Bahasa kalimat berubah: hanya substitusi nama peran dan penghapusan 'dalam pengerjaan'; tanpa em-dash, tanpa frasa proses, tanpa pasif baru, tanpa fakta baru. Rujukan butir (4.2, 4.3, 6.2, 6.3, 6.5, bagian 9/11) tidak berubah."
  ],
  "butir_tidak_dikerjakan": [
-  "Butir 3 dan 4 (B2 SNX-HR-SOP-13 dan SNX-HR-SOP-11) tidak berlaku untuk HR-SOP-12. Definisi Unit kerja dan kalimat batas di SOP-12 tetap menjadi acuan dan tidak diubah.",
-  "Kalimat kedua butir 6 ('dalam peninjauan' untuk dokumen tim yang belum terbaca) tidak berlaku: SOP-12 tidak merujuk dokumen tim seperti SOP Training & Development atau Performance Appraisal (grep spec: 0)."
+  "Tidak ada butir wajib HR-SOP-12 yang terlewat. Butir 3 (B2 SNX-HR-SOP-13) dan butir 4 (B2 SNX-HR-SOP-11), R2 butir 2-3 tidak berlaku untuk dokumen ini. Bagian B4 'dalam peninjauan' untuk dokumen tim tidak berlaku: bagian 11 HR-SOP-12 tidak menyebut dokumen tim T3 (SOP Training & Development, SOP Performance Appraisal)."
  ],
- "grep": "Render sesudah /tmp/claude-0/w9/render/HR-SOP-12.docx, semua XML tanpa tag: \"HR Manager\"=0 (sebelum di base.docx: 33), \"HR Lead\"=33. \"Divisi Legal\"=0 (dokumen HR, hanya diperiksa sebagai tambahan). \"dalam pengerjaan\"=1 (FRM-01 saja, sebelum 2). Em-dash=0, SPV=0. HR-SOP-12_flow.png.dot: \"HR Manager\"=0, \"HR Lead\"=5. specs/HR-SOP-12.json: \"HR Manager\"=0.",
+ "grep": "Teks sesudah (render /tmp/claude-0/w9/render/HR-SOP-12.docx, semua word/*.xml): \"HR Manager\" 0, \"HR Lead\" 33, \"Divisi Legal\" 0, \"JA-03\"/\"JA-04\" 0, \"dalam pengerjaan\" 0, em-dash 0. specs/HR-SOP-12.json \"HR Manager\" 0; diagram HR-SOP-12_flow.png.dot \"HR Manager\" 0, \"HR Lead\" 5; out/02_HR/SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx \"HR Manager\" 0, \"HR Lead\" 33. Spec sebelum (4a40352) \"HR Manager\" 38.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }
