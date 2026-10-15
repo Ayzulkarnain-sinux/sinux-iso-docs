@@ -198,3 +198,20 @@ Rujukan silang yang diubah: rujukan ke definisi di bagian 2.1 (heading Istilah b
 Open item: nomor 3 diubah W9 (pemetaan peran mengikuti G-3 A6, berlabel USULAN). Tidak ada yang ditutup penuh.
 
 Uji: render_sop.py rc 0; lint_doc.py generic "pass": true (warn 17 butir USULAN); validate.py "All validations PASSED!"; blankscan ok 12; w9diff.py: 4 baris lama, 6 baris baru, hanya perubahan di atas.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Istilah TOP: "Lama dan titik awalnya ada di SNX-FAT-SOP-01 butir 4.8." Kalimat penunjuk (STYLE §3.2); definisi ditulis ulang sesuai contoh STYLE §6.
+- Tabel Peran, baris Finance Staff dan Finance Lead: "Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13)." Kalimat penunjuk; pemetaan sudah tertulis di tabel Istilah dan di baris SNX-HR-ORG-01 Dokumen Terkait (butir K-13 tetap).
+- Dokumen Terkait: ", yang dirujuk di Ruang Lingkup dan Ketentuan Penggunaan." (SNX-FAT-SOP-01), ", dirujuk di Ketentuan butir 14." (SNX-FAT-SOP-04), ", dirujuk di Ketentuan butir 6 dan Petunjuk Pengisian butir 2." (SNX-FAT-SOP-05), dan "Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 2.1" (SNX-HR-ORG-01, dipadatkan). Kalimat penunjuk balik.
+- Rujukan butir yang tidak perlu dibuka pengisi: "(Ketentuan butir 4)" di Petunjuk 3, "(Ketentuan butir 7)" dan "(Ketentuan butir 11)" di Petunjuk 5, "pada butir 6" di Ketentuan 7 (diganti "hasil penetapan itu"), "(Ketentuan butir 14)" dan "(Ketentuan butir 10)" di tabel Record.
+### W10 selisih angka
+- "2.1" hilang: hanya muncul di kalimat penunjuk "definisi di bagian 2.1" (tabel Peran dan Dokumen Terkait) yang dihapus; nomor bagian Istilah tidak berubah.
+### W10 catatan
+Pihak luar: "klien" (satu-satunya sebutan di dokumen ini).
+Petunjuk Pengisian ditulis sebagai kalimat perintah untuk Finance Staff (pencatat di tabel Peran). Ketentuan Penggunaan tetap menyebut pelaku per butir karena pembagian pelakunya sendiri adalah USULAN butir 15.
+Label (USULAN) di Ketentuan 1 dan 12 dipindah ke akhir butir (STYLE §3.5), cakupannya tetap butir itu. "Corrective action (tindakan korektif)" di tabel Istilah mengikuti heading Tabel 3.
+Tabel isian Isi Log diberi min_row_cm 1.0.
+Lebar kolom Tabel 1 (Uraian Bottleneck) dan Tabel 3 (Corrective Action, Hasil Verifikasi Efektivitas) disesuaikan agar judul tidak terpotong.

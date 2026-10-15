@@ -18,6 +18,12 @@
    "prepared": "Finance Staff",
    "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
   }
  },
  "sections": [
@@ -28,16 +34,16 @@
      "h2": "Tujuan"
     },
     {
-     "p": "Dokumen ini memuat log sheet proses FAT yang bottleneck dan memerlukan support, beserta ketidaksesuaian dan tindakan korektif yang timbul dari bottleneck itu. Finance Staff mencatat tiap tahap proses FAT yang tertahan, support yang diperlukan, dan Pemberi support yang diminta."
+     "p": "Dokumen ini adalah log sheet untuk proses FAT yang mengalami bottleneck dan memerlukan support, termasuk ketidaksesuaian dan corrective action yang timbul darinya. Setiap tahap yang tertahan dicatat Finance Staff bersama support yang diperlukan dan Pemberi support yang diminta."
     },
     {
-     "p": "Hasil yang dijaga: setiap bottleneck punya nomor catatan, support yang diminta, tanggal tahap berlanjut, dan status yang dapat ditelusuri, dan setiap ketidaksesuaian punya penyebab, tindakan korektif, Penanggung Jawab, dan hasil verifikasi efektivitas."
+     "p": "Dengan log ini, setiap bottleneck memiliki nomor catatan, support yang diminta, tanggal tahap berlanjut, dan status yang dapat ditelusuri. Setiap ketidaksesuaian juga memiliki penyebab, corrective action, Penanggung Jawab, dan hasil verifikasi efektivitas."
     },
     {
      "h2": "Ruang Lingkup"
     },
     {
-     "p": "Dokumen ini mencakup tahap yang tertahan pada enam proses FAT berikut. Finance Staff mengisi kolom Proses FAT di Tabel 1 dengan salah satu dari keenamnya."
+     "p": "Dokumen ini mencakup tahap yang tertahan pada enam proses FAT berikut. Kolom Proses FAT di Tabel 1 diisi dengan salah satunya."
     },
     {
      "table": {
@@ -52,11 +58,11 @@
        ],
        [
         "Account Receivable & Collection",
-        "SOP Account Receivable & Collection, belum bernomor, dalam peninjauan"
+        "SOP Account Receivable & Collection, belum bernomor, dalam review"
        ],
        [
         "Payment and Disbursement Approval",
-        "SOP Payment and Disbursement Approval, belum bernomor, dalam peninjauan"
+        "SOP Payment and Disbursement Approval, belum bernomor, dalam review"
        ],
        [
         "Financial Document Control & Retention",
@@ -92,15 +98,15 @@
       "rows": [
        [
         "Riwayat pembatalan dan revisi invoice",
-        "Finance Staff mencatatnya di log ketidaksesuaian menurut SNX-FAT-SOP-01 butir 4.14. Dokumen ini hanya memuat ketidaksesuaian yang timbul dari bottleneck."
+        "Dicatat Finance Staff di log ketidaksesuaian sesuai SNX-FAT-SOP-01 butir 4.14. Dokumen ini hanya memuat ketidaksesuaian yang timbul dari bottleneck."
        ],
        [
         "Bottleneck di proses departemen lain",
-        "Departemen pemilik proses itu mencatatnya. Dokumen ini memuat tahap proses FAT yang tertahan, termasuk yang tertahan karena menunggu pihak di departemen lain."
+        "Dicatat departemen pemilik proses itu. Tahap proses FAT yang tertahan karena menunggu pihak di departemen lain tetap dicatat di dokumen ini."
        ],
        [
-        "Bottleneck yang Finance Staff selesaikan sendiri",
-        "Tidak dicatat, karena dokumen ini memuat bottleneck yang memerlukan support."
+        "Bottleneck yang diselesaikan sendiri oleh Finance Staff",
+        "Tidak dicatat, karena dokumen ini hanya untuk bottleneck yang memerlukan support."
        ]
       ],
       "widths_cm": [
@@ -130,7 +136,7 @@
        ],
        [
         "2FA",
-        "Autentikasi dua faktor: masuk ke akun dengan dua bukti identitas yang berbeda."
+        "Autentikasi dua faktor, yaitu masuk ke akun dengan dua bukti identitas yang berbeda."
        ],
        [
         "Bottleneck",
@@ -154,15 +160,15 @@
        ],
        [
         "Folder arsip FAT",
-        "Tempat softcopy dokumen keuangan FAT di Google Drive menurut SNX-FAT-SOP-04."
+        "Tempat soft copy dokumen keuangan FAT di Google Drive sesuai SNX-FAT-SOP-04."
        ],
        [
         "GLPI",
-        "Sistem tiket SINUX Service Hub, dipakai untuk generalist."
+        "Sistem ticket SINUX Service Hub, dipakai untuk generalist."
        ],
        [
         "Ketidaksesuaian",
-        "Persyaratan yang tidak terpenuhi. Persyaratan di sini adalah batas waktu atau ketentuan di prosedur FAT, ketentuan kontrak, atau peraturan yang berlaku."
+        "Persyaratan yang tidak terpenuhi, baik batas waktu atau ketentuan di prosedur FAT, ketentuan kontrak, maupun peraturan yang berlaku."
        ],
        [
         "KlikBCA Bisnis",
@@ -170,23 +176,23 @@
        ],
        [
         "Penanggung Jawab",
-        "Orang yang menjalankan satu tindakan korektif sampai selesai."
+        "Orang yang menjalankan satu corrective action sampai selesai."
        ],
        [
         "Support",
-        "Bantuan dari pihak lain, di dalam atau di luar FAT, yang diperlukan supaya tahap yang tertahan bisa berlanjut."
+        "Bantuan dari pihak lain, di dalam atau di luar FAT, yang diperlukan agar tahap yang tertahan bisa berlanjut."
        ],
        [
-        "Tindakan korektif",
-        "Tindakan untuk menghilangkan penyebab ketidaksesuaian supaya tidak terulang."
+        "Corrective action (tindakan korektif)",
+        "Tindakan untuk menghilangkan penyebab ketidaksesuaian agar tidak terulang."
        ],
        [
         "TOP",
-        "Term of Payment: jangka waktu klien melunasi invoice. Lama dan titik awalnya ada di SNX-FAT-SOP-01 butir 4.8."
+        "Term of Payment, jangka waktu pelunasan invoice oleh klien sampai tanggal jatuh tempo."
        ],
        [
         "Verifikasi efektivitas",
-        "Pemeriksaan sesudah tindakan korektif selesai untuk melihat apakah ketidaksesuaian yang sama terulang."
+        "Pemeriksaan setelah corrective action selesai untuk melihat apakah ketidaksesuaian yang sama terulang."
        ]
       ],
       "widths_cm": [
@@ -210,15 +216,15 @@
       "rows": [
        [
         "Terbuka",
-        "Support belum diterima, tahap belum berlanjut, atau tindakan korektif belum selesai."
+        "Support belum diterima, tahap belum berlanjut, atau corrective action belum selesai."
        ],
        [
         "Menunggu Verifikasi",
-        "Tahap sudah berlanjut dan tindakan korektif, bila ada, sudah selesai. Finance Lead belum memverifikasinya."
+        "Tahap sudah berlanjut dan corrective action (jika ada) sudah selesai, tetapi belum diverifikasi Finance Lead."
        ],
        [
         "Ditutup",
-        "Finance Lead sudah memverifikasi bahwa tahap berjalan dan, bila ada ketidaksesuaian, tindakan korektif efektif. Tanggal Ditutup sudah diisi."
+        "Finance Lead sudah memverifikasi bahwa tahap berjalan dan corrective action efektif jika ada ketidaksesuaian. Tanggal Ditutup sudah diisi."
        ]
       ],
       "widths_cm": [
@@ -233,7 +239,7 @@
    "h": "Ketentuan Penggunaan",
    "blocks": [
     {
-     "p": "1. Finance Staff membuat satu catatan baru di Tabel 1 pada hari satu tahap proses FAT diketahui tertahan (USULAN), yaitu bila tahap berikutnya tidak bisa berjalan sebelum pihak lain bertindak."
+     "p": "1. Finance Staff membuat satu catatan baru di Tabel 1 pada hari yang sama saat sebuah tahap proses FAT diketahui tertahan, yaitu jika tahap berikutnya tidak bisa berjalan sebelum pihak lain bertindak (USULAN)."
     },
     {
      "p": "2. Finance Lead menentukan Pemberi support."
@@ -242,40 +248,40 @@
      "p": "3. Finance Staff menyampaikan permintaan support kepada Pemberi support, lalu mengisi kolom Diminta kepada di Tabel 1 dan Tanggal Support Diminta di Tabel 2."
     },
     {
-     "p": "4. Bila Finance Staff meminta support lewat tiket, Finance Staff menulis nomor tiket GLPI di kolom Diminta kepada. FAT termasuk generalist, dan batas lingkup generalist belum dirinci pimpinan SINUX (USULAN)."
+     "p": "4. Jika support diminta melalui ticket, Finance Staff menulis nomor ticket GLPI di kolom Diminta kepada. FAT termasuk generalist, tetapi batas lingkup generalist belum dirinci pimpinan SINUX (USULAN)."
     },
     {
      "p": "5. Finance Staff mengisi Tanggal Support Diterima dan Tanggal Tahap Berlanjut di Tabel 2 pada saat kejadiannya."
     },
     {
-     "p": "6. Finance Lead menetapkan apakah bottleneck membuat satu persyaratan tidak terpenuhi. Contoh persyaratan yang sudah tertulis di prosedur FAT: batas waktu 1 hari untuk tiap tahap pajak (SNX-FAT-SOP-05 bagian 8) dan TOP standar invoice (SNX-FAT-SOP-01 butir 4.8)."
+     "p": "6. Finance Lead menetapkan apakah bottleneck menyebabkan suatu persyaratan tidak terpenuhi. Contoh persyaratan di prosedur FAT adalah batas waktu 1 hari untuk tiap tahap pajak (SNX-FAT-SOP-05 bagian 8) dan TOP standar invoice (SNX-FAT-SOP-01 butir 4.8)."
     },
     {
-     "p": "7. Finance Staff menulis hasil penetapan pada butir 6, Ya atau Tidak, di kolom Ketidaksesuaian di Tabel 2."
+     "p": "7. Finance Staff menulis hasil penetapan itu, Ya atau Tidak, di kolom Ketidaksesuaian pada Tabel 2."
     },
     {
-     "p": "8. Bila hasilnya Ya, Finance Lead menetapkan penyebab, tindakan korektif, Penanggung Jawab, dan Target Selesai. Finance Staff menulisnya di baris bernomor sama di Tabel 3."
+     "p": "8. Jika hasilnya Ya, Finance Lead menetapkan penyebab, corrective action, Penanggung Jawab, dan Target Selesai. Finance Staff menuliskannya di baris bernomor sama pada Tabel 3."
     },
     {
-     "p": "9. Penanggung Jawab menjalankan tindakan korektif sampai selesai sebelum Target Selesai."
+     "p": "9. Penanggung Jawab menjalankan corrective action sampai selesai sebelum Target Selesai."
     },
     {
-     "p": "10. Finance Lead memverifikasi efektivitas tindakan korektif sesudah tindakan itu selesai. Finance Staff menulis hasilnya dan lokasi buktinya di kolom Hasil Verifikasi Efektivitas."
+     "p": "10. Finance Lead memverifikasi efektivitas corrective action setelah tindakan itu selesai. Finance Staff menulis hasilnya dan lokasi buktinya di kolom Hasil Verifikasi Efektivitas."
     },
     {
-     "p": "11. Finance Lead menetapkan status Ditutup bila tahap sudah berlanjut dan, untuk catatan dengan ketidaksesuaian, hasil verifikasi menyatakan tindakan korektif efektif. Finance Staff mengisi Status dan Tanggal Ditutup di Tabel 2."
+     "p": "11. Finance Lead menetapkan status Ditutup jika tahap sudah berlanjut. Untuk catatan dengan ketidaksesuaian, hasil verifikasi juga harus menyatakan corrective action efektif. Finance Staff mengisi Status dan Tanggal Ditutup di Tabel 2."
     },
     {
-     "p": "12. Finance Lead meninjau semua catatan berstatus Terbuka dan Menunggu Verifikasi setiap bulan, selaras dengan evaluasi log ketidaksesuaian di SNX-FAT-SOP-01 butir 4.14 (USULAN). Finance Staff mengisi hasil tinjauan di Tabel 4."
+     "p": "12. Finance Lead meninjau semua catatan berstatus Terbuka dan Menunggu Verifikasi setiap bulan, selaras dengan evaluasi log ketidaksesuaian sesuai SNX-FAT-SOP-01 butir 4.14. Finance Staff mengisi hasil review di Tabel 4 (USULAN)."
     },
     {
-     "p": "13. Finance Staff tidak menulis kata sandi, PIN, token, atau kode 2FA di dokumen ini. Akun CoreTax DJP dan KlikBCA Bisnis memakai 2FA dan tidak dibagikan (SNX-FAT-SOP-01 butir 4.11)."
+     "p": "13. Finance Staff dilarang menulis kata sandi, PIN, token, atau kode 2FA di dokumen ini. Akun CoreTax DJP dan KlikBCA Bisnis memakai 2FA dan tidak dibagikan (SNX-FAT-SOP-01 butir 4.11)."
     },
     {
      "p": "14. Finance Staff menyimpan dokumen terisi di Folder arsip FAT sesuai SNX-FAT-SOP-04 butir 4.4 (USULAN). Dokumen ini berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN)."
     },
     {
-     "p": "15. Penetapan pelaku pada butir 1 sampai 14 dan Finance Lead sebagai pemilik dokumen ini berstatus (USULAN), karena SNX-FAT-SOP-01 butir 4.14 hanya menetapkan pencatat dan pengevaluasi untuk log ketidaksesuaian invoice."
+     "p": "15. Pembagian pelaku pada butir 1 sampai 14 dan Finance Lead sebagai pemilik dokumen ini belum diputus, karena SNX-FAT-SOP-01 butir 4.14 hanya menetapkan pencatat dan pengevaluasi log ketidaksesuaian invoice (USULAN)."
     }
    ]
   },
@@ -292,23 +298,23 @@
       "rows": [
        [
         "Finance Staff",
-        "Pencatat dokumen ini. Membuat dan mengisi catatan di Tabel 1 sampai Tabel 4, menyampaikan permintaan support, dan menyimpan dokumen terisi (Ketentuan butir 1, 3 sampai 5, 7, 8, dan 10 sampai 14). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+        "Pencatat dokumen ini. Membuat dan mengisi catatan di Tabel 1 sampai Tabel 4, menyampaikan permintaan support, dan menyimpan dokumen terisi (Ketentuan butir 1, 3 sampai 5, 7, 8, dan 10 sampai 14).",
         "Mengisi dan mengubah isi tabel. Tidak menetapkan ketidaksesuaian dan tidak menutup catatan."
        ],
        [
         "Finance Lead",
-        "Pemilik dokumen ini (Ketentuan butir 15). Menentukan Pemberi support, menetapkan ketidaksesuaian, penyebab, tindakan korektif, Penanggung Jawab, dan Target Selesai, memverifikasi efektivitas, menetapkan status Ditutup, dan meninjau catatan setiap bulan (Ketentuan butir 2, 6, 8, 10, 11, dan 12). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+        "Pemilik dokumen ini (Ketentuan butir 15). Menentukan Pemberi support; menetapkan ketidaksesuaian, penyebab, corrective action, Penanggung Jawab, dan Target Selesai; memverifikasi efektivitas; menetapkan status Ditutup; dan meninjau catatan setiap bulan (Ketentuan butir 2, 6, 8, 10, 11, dan 12).",
         "Menetapkan ketidaksesuaian dan menutup catatan. Batas wewenang keuangan mengikuti delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
        ],
        [
         "Pemberi support",
-        "Pihak yang Finance Lead tentukan untuk memberi support, di dalam atau di luar FAT (Ketentuan butir 2). Contoh dari SNX-FAT-SOP-01: Project Manager untuk dokumen pendukung penagihan (butir 6.1) dan Business Development untuk data master klien (butir 4.2).",
+        "Pihak yang ditentukan Finance Lead untuk memberi support, di dalam atau di luar FAT (Ketentuan butir 2). Contoh di SNX-FAT-SOP-01 adalah Project Manager untuk dokumen pendukung penagihan (butir 6.1) dan Business Development untuk data master klien (butir 4.2).",
         "Sesuai jabatan di organisasinya. Dokumen ini tidak memberi wewenang tambahan."
        ],
        [
         "Penanggung Jawab",
-        "Orang yang Finance Lead tunjuk untuk menjalankan satu tindakan korektif sampai selesai (Ketentuan butir 8 dan 9). Dapat Finance Staff, Finance Lead, atau Pemberi support.",
-        "Hanya pada tindakan korektif yang Finance Lead tunjuk."
+        "Orang yang ditunjuk Finance Lead untuk menjalankan satu corrective action sampai selesai (Ketentuan butir 8 dan 9). Bisa Finance Staff, Finance Lead, atau Pemberi support.",
+        "Terbatas pada corrective action yang ditunjuk Finance Lead."
        ],
        [
         "Direktur Utama",
@@ -332,28 +338,28 @@
    "h": "Petunjuk Pengisian",
    "blocks": [
     {
-     "p": "1. Kolom No. di Tabel 1, Tabel 2, dan Tabel 3 sudah terisi 1 sampai 5. Finance Staff menambah baris bernomor berikutnya di ketiga tabel bila perlu."
+     "p": "1. Kolom No. di Tabel 1, Tabel 2, dan Tabel 3 sudah terisi 1 sampai 5. Tambah baris bernomor berikutnya di ketiga tabel jika perlu."
     },
     {
-     "p": "2. Tabel 1: Finance Staff menulis tanggal catatan dibuat di Tanggal Dicatat dan satu dari enam proses di bagian Ruang Lingkup di Proses FAT. Kolom Tahap yang Tertahan berisi nama tahap menurut prosedur proses itu, misalnya Review dan persetujuan pada SNX-FAT-SOP-05. Untuk proses yang prosedurnya dalam peninjauan, Finance Staff menulis nama tahap menurut pekerjaan yang tertahan."
+     "p": "2. Di Tabel 1, isi Tanggal Dicatat dengan tanggal catatan dibuat, dan Proses FAT dengan salah satu dari enam proses di bagian Ruang Lingkup. Isi Tahap yang Tertahan dengan nama tahap menurut prosedur proses itu, misalnya Review dan persetujuan pada SNX-FAT-SOP-05. Jika prosedurnya masih dalam review, tulis nama tahap sesuai pekerjaan yang tertahan."
     },
     {
-     "p": "3. Uraian Bottleneck berisi apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, Finance Staff menulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Kolom Diminta kepada berisi nama dan jabatan Pemberi support, atau nomor tiket GLPI (Ketentuan butir 4)."
+     "p": "3. Di Uraian Bottleneck, tulis apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, tulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Isi Diminta kepada dengan nama dan jabatan Pemberi support, atau nomor ticket GLPI."
     },
     {
-     "p": "4. Tabel 2: Finance Staff menulis tanggal kejadian di Tanggal Support Diminta, Tanggal Support Diterima, dan Tanggal Tahap Berlanjut. Tanggal Tahap Berlanjut kosong selama tahap masih tertahan. Selisih antara Tanggal Dicatat dan Tanggal Tahap Berlanjut adalah lama bottleneck."
+     "p": "4. Di Tabel 2, isi Tanggal Support Diminta, Tanggal Support Diterima, dan Tanggal Tahap Berlanjut dengan tanggal kejadiannya. Biarkan Tanggal Tahap Berlanjut kosong selama tahap masih tertahan. Lama bottleneck adalah selisih Tanggal Dicatat dan Tanggal Tahap Berlanjut."
     },
     {
-     "p": "5. Ketidaksesuaian memuat Ya atau Tidak (Ketentuan butir 7). Status memuat satu nilai dari bagian Istilah. Tanggal Ditutup memuat tanggal Finance Lead menetapkan status Ditutup (Ketentuan butir 11)."
+     "p": "5. Isi Ketidaksesuaian dengan Ya atau Tidak sesuai penetapan Finance Lead, dan Status dengan satu nilai dari tabel Nilai Status. Isi Tanggal Ditutup dengan tanggal Finance Lead menetapkan status Ditutup."
     },
     {
-     "p": "6. Tabel 3: Finance Staff mengisi baris hanya untuk catatan yang berisi Ya di Tabel 2 dan membiarkan baris catatan lain kosong. Persyaratan yang Tidak Terpenuhi memuat persyaratan itu beserta rujukannya, yaitu butir prosedur, pasal kontrak, atau peraturan. Penyebab memuat sebab yang menimbulkan bottleneck, bukan gejalanya."
+     "p": "6. Di Tabel 3, isi baris hanya untuk catatan yang berisi Ya di Tabel 2, dan biarkan baris catatan lain kosong. Isi Persyaratan yang Tidak Terpenuhi dengan persyaratan itu beserta rujukannya, yaitu butir prosedur, pasal kontrak, atau peraturan. Isi Penyebab dengan sebab yang menimbulkan bottleneck, bukan gejalanya."
     },
     {
-     "p": "7. Tindakan Korektif berisi tindakan yang menghilangkan penyebab itu. Kolom Penanggung Jawab berisi nama dan jabatan, dan Target Selesai berisi tanggal. Di Hasil Verifikasi Efektivitas, Finance Staff menulis hasil verifikasi Finance Lead dan lokasi buktinya."
+     "p": "7. Isi Corrective Action dengan tindakan yang menghilangkan penyebab itu. Isi Penanggung Jawab dengan nama dan jabatan, dan Target Selesai dengan tanggal. Di Hasil Verifikasi Efektivitas, tulis hasil verifikasi Finance Lead dan lokasi buktinya."
     },
     {
-     "p": "8. Tabel 4: Finance Staff menulis bulan dan tahun di Bulan yang Ditinjau, dan nomor catatan berstatus Terbuka atau Menunggu Verifikasi pada tanggal tinjauan di Catatan yang Masih Terbuka. Hasil Tinjauan berisi keputusan Finance Lead atas catatan itu."
+     "p": "8. Di Tabel 4, isi Bulan yang Ditinjau dengan bulan dan tahun. Isi Catatan yang Masih Terbuka dengan nomor catatan yang berstatus Terbuka atau Menunggu Verifikasi pada tanggal review. Hasil Review berisi keputusan Finance Lead atas catatan itu."
     }
    ]
   },
@@ -361,7 +367,7 @@
    "h": "Isi Log",
    "blocks": [
     {
-     "p": "Semua sel isian kosong sampai Finance Staff mengisinya. Nomor baris sudah terisi dan sama di Tabel 1, Tabel 2, dan Tabel 3."
+     "p": "Sel isian dibiarkan kosong untuk diisi Finance Staff. Nomor baris sudah terisi dan sama di Tabel 1, Tabel 2, dan Tabel 3."
     },
     {
      "h2": "Tabel 1. Log Bottleneck dan Support"
@@ -426,13 +432,14 @@
       ],
       "widths_cm": [
        1.2,
-       2.3,
+       2.1,
+       2.0,
        2.2,
-       2.3,
-       3.0,
-       2.8,
-       2.2
-      ]
+       3.6,
+       2.6,
+       2.3
+      ],
+      "min_row_cm": 1.0
      }
     },
     {
@@ -504,7 +511,8 @@
        3.6,
        2.1,
        2.3
-      ]
+      ],
+      "min_row_cm": 1.0
      }
     },
     {
@@ -516,7 +524,7 @@
        "No.",
        "Persyaratan yang Tidak Terpenuhi",
        "Penyebab",
-       "Tindakan Korektif",
+       "Corrective Action",
        "Penanggung Jawab",
        "Target Selesai",
        "Hasil Verifikasi Efektivitas"
@@ -570,13 +578,14 @@
       ],
       "widths_cm": [
        1.2,
-       2.9,
+       2.8,
        2.4,
-       2.4,
+       2.6,
        3.0,
-       2.1,
-       2.5
-      ]
+       1.8,
+       2.6
+      ],
+      "min_row_cm": 1.0
      }
     },
     {
@@ -587,9 +596,9 @@
       "header": [
        "No.",
        "Bulan yang Ditinjau",
-       "Tanggal Tinjauan",
+       "Tanggal Review",
        "Catatan yang Masih Terbuka",
-       "Hasil Tinjauan"
+       "Hasil Review"
       ],
       "rows": [
        [
@@ -620,7 +629,8 @@
        3.0,
        4.0,
        4.8
-      ]
+      ],
+      "min_row_cm": 1.0
      }
     }
    ]
@@ -637,15 +647,15 @@
       "rows": [
        [
         "SNX-FAT-SOP-01",
-        "Billing & Invoicing. Memuat log ketidaksesuaian invoice (butir 4.14), TOP (butir 4.8), dan aturan 2FA (butir 4.11), yang dirujuk di Ruang Lingkup dan Ketentuan Penggunaan."
+        "Billing & Invoicing. Sumber log ketidaksesuaian invoice (butir 4.14), TOP (butir 4.8), dan aturan 2FA (butir 4.11)."
        ],
        [
         "SNX-FAT-SOP-04",
-        "Financial Document Control & Retention. Memuat Folder arsip FAT dan struktur penyimpanannya (butir 4.4), dirujuk di Ketentuan butir 14."
+        "Financial Document Control & Retention. Mengatur Folder arsip FAT dan struktur penyimpanannya (butir 4.4)."
        ],
        [
         "SNX-FAT-SOP-05",
-        "Tax Administration & Reporting. Memuat tahap pajak dan batas waktunya (bagian 8), dirujuk di Ketentuan butir 6 dan Petunjuk Pengisian butir 2."
+        "Tax Administration & Reporting. Mengatur tahap pajak dan batas waktunya (bagian 8)."
        ],
        [
         "SNX-FAT-SOP-06",
@@ -653,15 +663,15 @@
        ],
        [
         "Belum bernomor",
-        "SOP Account Receivable & Collection. Dalam peninjauan. Salah satu dari enam proses FAT di bagian Ruang Lingkup."
+        "SOP Account Receivable & Collection. Dalam review. Salah satu dari enam proses FAT di bagian Ruang Lingkup."
        ],
        [
         "Belum bernomor",
-        "SOP Payment and Disbursement Approval. Dalam peninjauan. Salah satu dari enam proses FAT di bagian Ruang Lingkup."
+        "SOP Payment and Disbursement Approval. Dalam review. Salah satu dari enam proses FAT di bagian Ruang Lingkup."
        ],
        [
         "SNX-HR-ORG-01",
-        "Struktur Organisasi SINUX. Sumber nama jabatan dan matriks peran. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13)."
+        "Struktur Organisasi SINUX. Sumber nama jabatan, matriks peran, serta pemetaan Finance Lead dan Finance Staff (butir K-13)."
        ],
        [
         "SNX-ISMS-PRO-01",
@@ -685,19 +695,19 @@
     {
      "table": {
       "header": [
-       "Rekaman",
+       "Record",
        "Lokasi dan pemilik",
        "Retensi"
       ],
       "rows": [
        [
         "Dokumen ini terisi (Tabel 1 sampai Tabel 4)",
-        "Folder arsip FAT di Google Drive (Ketentuan butir 14). Pencatat Finance Staff, pemilik Finance Lead (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).",
+        "Folder arsip FAT di Google Drive. Pencatat Finance Staff, pemilik Finance Lead (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).",
         "Minimal 10 tahun (USULAN), sama dengan arsip penagihan di SNX-FAT-SOP-01."
        ],
        [
-        "Bukti penyelesaian tindakan korektif",
-        "Folder arsip FAT bersama dokumen terisi (USULAN). Finance Staff menulis lokasinya di kolom Hasil Verifikasi Efektivitas (Ketentuan butir 10). Pemilik Finance Lead (USULAN).",
+        "Bukti penyelesaian corrective action",
+        "Folder arsip FAT bersama dokumen terisi (USULAN). Lokasinya ditulis Finance Staff di kolom Hasil Verifikasi Efektivitas. Pemilik Finance Lead (USULAN).",
         "Sama dengan dokumen terisi (USULAN)."
        ]
       ],
@@ -724,8 +734,8 @@
       "rows": [
        [
         "ISO 9001:2015",
-        "10.2 Ketidaksesuaian dan tindakan korektif",
-        "Tabel 3 memuat ketidaksesuaian, penyebab, tindakan korektif, dan hasil verifikasi efektivitas."
+        "10.2 Ketidaksesuaian dan corrective action",
+        "Tabel 3 memuat ketidaksesuaian, penyebab, corrective action, dan hasil verifikasi efektivitas."
        ],
        [
         "ISO 9001:2015",
@@ -735,17 +745,17 @@
        [
         "ISO 9001:2015",
         "7.5.3 Pengendalian informasi terdokumentasi",
-        "Dokumen terisi punya lokasi, pemilik, dan retensi di bagian Rekaman."
+        "Dokumen terisi memiliki lokasi, pemilik, dan retensi yang tercatat di tabel Record."
        ],
        [
         "ISO/IEC 27001:2022",
-        "10.2 Ketidaksesuaian dan tindakan korektif",
-        "Tabel 3 memuat tindakan korektif, termasuk yang menyangkut kontrol keamanan informasi FAT."
+        "10.2 Ketidaksesuaian dan corrective action",
+        "Tabel 3 memuat corrective action, termasuk yang menyangkut kontrol keamanan informasi FAT."
        ],
        [
         "ISO/IEC 27001:2022",
-        "Annex A 5.33 Perlindungan rekaman",
-        "Dokumen terisi dilindungi sesuai klasifikasinya selama masa simpan di bagian Rekaman."
+        "Annex A 5.33 Perlindungan record",
+        "Dokumen terisi dilindungi sesuai klasifikasinya selama masa simpannya."
        ],
        [
         "ISO/IEC 27001:2022",
@@ -766,7 +776,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Finance Lead meninjau dokumen ini setiap tahun."
+     "p": "Dokumen ini masih Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Finance Lead meninjau dokumen ini setiap tahun."
     }
    ]
   }

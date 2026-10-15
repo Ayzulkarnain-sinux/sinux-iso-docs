@@ -1,0 +1,31 @@
+{
+ "key": "FAT-REG-01",
+ "mode": "xlsx",
+ "out": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
+ "fails": [],
+ "xlsx_patch": "pass",
+ "scan": {
+  "words": 5437,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 34,
+  "instr_role_start": 4,
+  "justified_cells": 0
+ },
+ "scan_bed1bb6": {
+  "words": 5440,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 34,
+  "instr_role_start": 7,
+  "justified_cells": 0
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).pdf",
+ "pages": 22,
+ "pass": true
+}

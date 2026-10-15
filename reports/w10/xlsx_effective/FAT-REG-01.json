@@ -1,0 +1,73 @@
+{
+ "freeze": {
+  "AR Aging": "A5",
+  "AP Aging": "A6"
+ },
+ "wrap_cols": {
+  "AR Aging": {
+   "rows": [
+    4,
+    1000
+   ]
+  },
+  "AP Aging": {
+   "rows": [
+    5,
+    7
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "AR Aging": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "AP Aging": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "5:5"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "AR Aging": {
+   "rows": [
+    4,
+    1000
+   ]
+  },
+  "AP Aging": {
+   "rows": [
+    5,
+    7
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ]
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B19": "Perbarui kolom Status setiap kali status invoice berubah.",
+  "Kontrol Dokumen!B20": "Isi Date Paid saat kas masuk dari klien terlihat di KlikBCA Bisnis.",
+  "Kontrol Dokumen!B21": "Cocokkan estimasi PPh 23 dengan Bukti Potong saat Bukti Potong diterima dari klien.",
+  "Kontrol Dokumen!B24": "Days overdue dihitung TODAY() dikurangi Due date, mengikuti pola rumus kolom Aging di AP Aging yang memakai Invoice date (USULAN).",
+  "Kontrol Dokumen!B26": "Acuan tanggal dan perlakuan invoice lunas masih menunggu keputusan FAT (USULAN)."
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Heading beku '8.1 Rekaman' dirujuk sebagai 'tabel Record' di Acuan ISO 7.5.3 tanpa padanan. Usul: 'tercatat di tabel Record (rekaman)'.",
+  "Heading 'Tabel 4. Tinjauan Bulanan' sedangkan kolom dan Petunjuk 8 memakai 'Tanggal Review'/'Hasil Review' tanpa padanan; tambahkan 'review (tinjauan)' pada kemunculan pertama.",
+  "Corrective action pertama muncul di Tujuan 1.1 tanpa padanan; padanan baru ada di Istilah 2.1.",
+  "Ketentuan 12: 'selaras dengan evaluasi log ketidaksesuaian sesuai SNX-FAT-SOP-01' redundan; label (USULAN) kini di akhir butir sehingga tampak menempel pada pengisian Tabel 4, padahal semula pada review bulanan.",
+  "PDF: paragraf badan rata kiri-kanan; tabel rapi, judul kolom berulang (Tabel 3 di halaman 11)."
+ ],
+ "contoh_baik": [
+  "Bottleneck yang Finance Staff selesaikan sendiri -> Bottleneck yang diselesaikan sendiri oleh Finance Staff"
+ ]
+}

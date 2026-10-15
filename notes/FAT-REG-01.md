@@ -146,3 +146,15 @@ Uji: `python3 -I tools/xlsx_patch.py /tmp/src/FAT-REG-01.xlsx specs/FAT-REG-01.p
 Sel B16 dan B23 tidak dibungkus teks; teks satu baris meluber ke kolom C sampai E yang kosong. B24 sampai B26 tidak dibungkus teks (sama seperti B16 dan B23), tiap sel satu kalimat yang muat satu baris; baris 32 tetap baris kosong tabel Riwayat revisi.
 
 Open item: 3 ditutup W9 (validasi AR); 8 diubah W9 (definisi peran ditambahkan); 9 ditutup W9 (kosmetik, dibiarkan); 10 ditutup W9 (keterbatasan tata letak). Rujukan silang diubah: nihil.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "klien" (satu-satunya sebutan di Kontrol Dokumen). Cara pakai 2 sampai 4 ditulis sebagai kalimat perintah; butir 1 tetap menyebut Finance Staff sebagai pengisi register.
+B26 "diputus FAT" ditafsirkan "masih menunggu keputusan FAT", sesuai open item penanda (USULAN).
+Sheet AR Aging dan AP Aging berbahasa English dari tim; header, isi, dan catatan A2 tidak diubah (A2 AR dibatasi kapasitas sel gabung).

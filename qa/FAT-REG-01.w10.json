@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Cara pakai butir 1 masih 'Finance Staff menambah satu baris...' sementara butir 2-4 kalimat perintah; boleh (pengisi disebut sekali), tetapi bisa diseragamkan.",
+  "B24: 'mengikuti pola rumus kolom Aging di AP Aging yang memakai Invoice date' sedikit ambigu (yang memakai Invoice date = AP Aging atau rumusnya). Usul: '..., seperti kolom Aging di AP Aging, tetapi AP Aging memakai Invoice date (USULAN).'",
+  "PDF: sheet AR Aging tercetak 20 halaman yang hampir kosong (baris rumus pre-format); judul kolom berulang dan tidak terpotong, tetapi print area bisa dibatasi agar ringkas.",
+  "Sheet AR Aging/AP Aging English dari tim tidak disunting, sesuai."
+ ],
+ "contoh_baik": [
+  "Acuan tanggal dan perlakuan invoice lunas diputus FAT (USULAN). -> Acuan tanggal dan perlakuan invoice lunas masih menunggu keputusan FAT (USULAN)."
+ ]
+}

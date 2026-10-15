@@ -1,0 +1,54 @@
+{
+ "key": "FAT-RPT-02",
+ "mode": "generic",
+ "out": "out/03_FAT/SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2071,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 8,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2146,
+  "calque": [
+   "yang Finance Staff selesaikan",
+   "yang Finance Lead tentukan",
+   "yang Finance Lead tunjuk",
+   "yang Finance Lead tunjuk"
+  ],
+  "lewat": 1,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 8,
+  "instr_role_start": 0,
+  "justified_cells": 13,
+  "tables_ge3_no_header": 15
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "2.1"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).pdf",
+ "pages": 12,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Log",
+  "pages_bed1bb6": 12,
+  "pages_w10": 12,
+  "isi_page_bed1bb6": 10,
+  "isi_page_w10": 10
+ },
+ "pass": true
+}
