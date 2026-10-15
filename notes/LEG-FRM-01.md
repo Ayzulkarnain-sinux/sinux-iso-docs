@@ -299,3 +299,14 @@ nihil (subst_diff kosong di reports/w10/gates/LEG-FRM-01.json).
 - .sections[4].blocks[4].p (butir 5): tanpa label; instruksi mekanis cara mencentang (STYLE §3.6).
 - .sections[5].blocks[22].p: tanpa label; instruksi mekanis cara mencentang (STYLE §3.6).
 - .sections[7].blocks[4].table.rows[1][2]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[2].blocks[4].p: lengkap (penunjuk cara mencentang ke Petunjuk 5 dibuang; pelaku, jumlah pilihan, pengecualian Tidak terdapat temuan, pemeriksa Line Manager Legal, USULAN utuh)
+- .sections[3].blocks[0].table.rows[0][1]: lengkap (penunjuk balik ke Ketentuan 1 sampai 5, 7, 8 dibuang, langkahnya tetap di Ketentuan)
+- .sections[3].blocks[0].table.rows[1][1]: lengkap (penunjuk balik ke Ketentuan dibuang, tugas, pemilik, rujukan SOP dan USULAN tetap)
+- .sections[3].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 1 dan 2 dibuang, tugas menyerahkan lewat PIC Internal utuh)
+- .sections[4].blocks[4].p: lengkap (kalimat penunjuk "jumlah pilihan ada di Ketentuan butir 5" dibuang, aturan jumlah tetap di Ketentuan 5; cara mencentang utuh)
+- .sections[5].blocks[22].p: lengkap (penunjuk ke Petunjuk 5 diganti instruksinya sendiri, tanda ☒)
+- .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 8 dibuang, lokasi, klasifikasi, pencatat, pemilik, USULAN tetap)
+- .sections[7].blocks[1].table.rows[1][1]: lengkap (rujukan SOP-02 4.19 beruntun dibuang, tetap tertulis di baris sebelumnya; pemilik dan USULAN tetap)
+- .sections[7].blocks[4].table.rows[1][2]: lengkap (penunjuk Ketentuan 7 dibuang, telaah ulang dengan form baru dan USULAN tetap)

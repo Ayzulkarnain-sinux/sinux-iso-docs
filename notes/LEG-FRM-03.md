@@ -270,3 +270,33 @@ nihil (subst_diff kosong).
 - .sections[4].blocks[0].table.rows[0][1]: tanpa label; uraian tugas Staff Legal; periode tinjauan berlabel (USULAN) tidak dinyatakan ulang.
 - .sections[4].blocks[0].table.rows[3][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[11].blocks[1].table.rows[0][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[1].blocks[1].table.rows[1][1]: lengkap (bagian 8 diganti nama tabel Daftar Evaluasi Kepatuhan, arti aspek utuh)
+- .sections[2].blocks[0].p: lengkap (pelaku Staff Legal, waktu saat pemeriksaan, label USULAN tetap; Ketentuan 2 tetap memuat langkah verifikasi)
+- .sections[2].blocks[1].table.rows[5][1]: lengkap (kalimat penunjuk ke bagian Rekaman dan Acuan ISO dibuang, isi klausul tetap di bagian itu)
+- .sections[3].blocks[1].p: lengkap (bagian 3 diganti nama bagian Dasar Peninjauan, pelaku, waktu, urutan isi kolom utuh)
+- .sections[3].blocks[3].p: lengkap (bagian 7 diganti nama tabel Inventaris, pelaku dan sumber keterangan utuh)
+- .sections[3].blocks[6].p: lengkap (bagian 8 dan 2 diganti nama tabel Daftar Evaluasi Kepatuhan dan Status Pemeriksaan, pelaku, bukti, nilai status utuh)
+- .sections[3].blocks[9].p: lengkap (bagian 9 diganti tabel Ringkasan Temuan, syarat status dan USULAN utuh)
+- .sections[3].blocks[10].p: lengkap (bagian 9 diganti tabel Ringkasan Temuan, dua pelaku, urutan, USULAN utuh)
+- .sections[3].blocks[11].p: lengkap (bagian 10 diganti tabel Rekomendasi yang ada di bagian Hasil dan Rekomendasi Tinjauan)
+- .sections[3].blocks[12].p: lengkap (tiga kriteria opsi, pelaku, USULAN utuh; bagian 10 diganti nama Kesimpulan Pemeriksaan)
+- .sections[4].blocks[0].table.rows[0][1]: lengkap (penunjuk balik ke Ketentuan dibuang, langkahnya tetap di Ketentuan; bagian 10 diganti tabel Persetujuan Tinjauan)
+- .sections[4].blocks[0].table.rows[1][1]: lengkap (penunjuk balik ke Ketentuan 11 sampai 13 dibuang, langkahnya tetap; baris Diperiksa oleh dan USULAN utuh)
+- .sections[4].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 6 dibuang, keterangan teknis dan USULAN tetap)
+- .sections[4].blocks[0].table.rows[3][1]: lengkap (penunjuk balik ke Ketentuan 3 dan 11 dibuang, kedua tugas tetap tertulis)
+- .sections[4].blocks[1].p: lengkap (bagian 10 diganti tabel Persetujuan Tinjauan, pemetaan jabatan dan USULAN utuh)
+- .sections[5].blocks[2].p: lengkap (empat tingkat ditulis persis seperti Istilah Klasifikasi, USULAN utuh)
+- .sections[5].blocks[3].p: lengkap (bagian 7 dan 9 diganti nama kolom dan tabel, aturan peran bukan nama orang dan USULAN utuh)
+- .sections[5].blocks[5].p: lengkap (bagian 8 dan 2 diganti nama tabel, lima nilai ditulis persis)
+- .sections[5].blocks[7].p: lengkap (bagian 9 dan 8 diganti nama tabel, USULAN utuh)
+- .sections[5].blocks[8].p: lengkap (bagian 10 diganti Kesimpulan Pemeriksaan, pelaku dan satu opsi utuh)
+- .sections[7].blocks[4].table.rows[0][2]: lengkap (penunjuk "(bagian 7)" dibuang, inventaris tetap jelas, isi kriteria utuh)
+- .sections[10].blocks[0].table.rows[0][1]: lengkap (rujukan butir 4.23 sampai 4.27 SNX-LEG-SOP-01 masih tertulis, hanya kalimat dipecah)
+- .sections[11].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 14 dibuang, lokasi, pemilik, klasifikasi tetap)
+- .sections[11].blocks[4].table.rows[0][2]: lengkap (bagian 10 diganti nama bagian Hasil dan Rekomendasi Tinjauan)
+- .sections[11].blocks[4].table.rows[3][2]: lengkap (bagian 9 diganti tabel Ringkasan Temuan, isi utuh)
+- .sections[11].blocks[4].table.rows[4][2]: lengkap (bagian 7 diganti inventaris, kolom Klasifikasi utuh)
+- .sections[11].blocks[4].table.rows[9][2]: lengkap (bagian 3 diganti nama bagian Dasar Peninjauan, isi utuh)
+- .sections[12].blocks[0].p: lengkap (penunjuk Ketentuan 1 dibuang, periode setahun dan USULAN tetap di Ketentuan 1)

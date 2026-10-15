@@ -260,3 +260,13 @@ nihil (subst_diff kosong).
 
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[4].blocks[8].p (butir 9): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[3].blocks[0].table.rows[0][1]: lengkap (penunjuk balik ke Ketentuan 1, 5 sampai 7, 9 sampai 11 dibuang, langkahnya tetap di Ketentuan)
+- .sections[3].blocks[0].table.rows[1][1]: lengkap (penunjuk balik ke Ketentuan 2 dibuang, tugas, pemilik, USULAN tetap)
+- .sections[3].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 3 dan 4 dibuang, kedua tugas tetap tertulis)
+- .sections[3].blocks[0].table.rows[3][1]: lengkap (penunjuk balik ke Ketentuan 3 dibuang, kedua tugas tetap tertulis)
+- .sections[3].blocks[0].table.rows[4][1]: lengkap (penunjuk balik ke Ketentuan 6 dan 8 dibuang, pengingat dan tabel Tindak Lanjut tetap tertulis)
+- .sections[3].blocks[0].table.rows[5][1]: lengkap (penunjuk balik ke Ketentuan 10 dibuang, akses bukti dan USULAN tetap)
+- .sections[4].blocks[8].p: rujukan dikembalikan (kriteria status dokumen yang ditindaklanjuti dan isi wajib baris Tindak Lanjut: "sesuai Ketentuan butir 7 dan 8")
+- .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 10 dibuang, lokasi, pemilik, pencatat, klasifikasi, USULAN tetap)

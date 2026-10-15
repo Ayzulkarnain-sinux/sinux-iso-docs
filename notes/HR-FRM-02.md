@@ -198,3 +198,14 @@ nihil
 Pihak luar: "pelanggan" (satu-satunya sebutan di dokumen ini). Dokumen yang belum ada ditulis "SOP Training & Development (dalam review)".
 Cara Mengisi ditulis sebagai kalimat perintah untuk HRGA Officer; butir 7.4, 7.6, dan 7.10 menyebut HR Lead di tengah atau akhir kalimat.
 Lebar kolom Tabel 1, Tabel 2, Acuan Klausul ISO, dan Dokumen Terkait disesuaikan; Tabel 1 diberi min_row_cm 0.8. Tujuan dipadatkan agar halaman form tidak naik.
+### W10 audit pointer
+- .sections[2].blocks[0].table.rows[4][1]: lengkap; kalimat penunjuk "Daftarnya ada di bagian 6" dibuang (STYLE §3.2); daftar tetap di bagian 6 Jenis Pelatihan.
+- .sections[3].blocks[4].p: lengkap; "daftar di bagian 6" menjadi "daftar Jenis Pelatihan", yaitu judul bagian 6; syarat satu jenis per baris tetap.
+- .sections[4].blocks[1].table.rows[0][1]: lengkap; penunjuk "menurut butir 4.9" dibuang; tugas HR Lead tetap di sel, rincian isi Tabel 1 dan label (USULAN) tetap di butir 4.9.
+- .sections[7].blocks[0].p: lengkap; kalimat penunjuk "mengikuti bagian 7" dibuang; petunjuk pengisian ada di bagian 7 Cara Mengisi tepat sebelum bagian ini.
+- .sections[7].blocks[7].p: lengkap; kalimat penunjuk "Pengisian kolom lain mengikuti butir 7.3 dan 7.8" dibuang; kedua butir ada di bagian 7 Cara Mengisi.
+- .sections[10].blocks[0].table.rows[0][1]: lengkap; penunjuk "(butir 4.1)" dibuang.
+- .sections[10].blocks[0].table.rows[1][1]: lengkap; penunjuk "(butir 4.2)" dan "(butir 4.4)" dibuang; dua fungsi dokumen tetap disebut.
+- .sections[10].blocks[0].table.rows[3][1]: lengkap; penunjuk "(butir 4.4 dan 4.9 form ini)" dibuang; rujukan "bagian 9 dokumen itu", syarat keputusan, dan label (USULAN) tetap.
+- .sections[10].blocks[0].table.rows[4][1]: lengkap; penunjuk "(butir 4.4 dan 4.9 form ini)" dibuang; isi dan label (USULAN) tetap.
+- .sections[10].blocks[0].table.rows[5][1]: lengkap; penunjuk "(butir 4.10)" dibuang, klasifikasi tetap disebut.

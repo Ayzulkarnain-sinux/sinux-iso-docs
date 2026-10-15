@@ -223,3 +223,13 @@ Tabel isian: kolom Alasan Ditolak atau Ditahan diperlebar, min_row_cm 0.8 di Tab
 ### W10 koreksi worker (temuan nonblocking qa/FAT-FRM-01.w10.json)
 - Tabel Record, Retensi baris 1: sumber angka (SNX-FAT-SOP-01, SNX-FAT-SOP-05) dan "perluasan ke log ini belum diputus" dikembalikan; sempat hilang saat kalimat dipadatkan.
 - 6.11: "tabel Record (rekaman)" pada kemunculan pertama, menjembatani heading beku "Rekaman".
+### W10 audit pointer
+- .sections[4].blocks[1].table.rows[1][1]: lengkap; kalimat penunjuk "Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)" dibuang; pemetaan tetap di bagian 3 Definisi dan di Dokumen Terkait baris SNX-HR-ORG-01 (butir K-13); rujukan butir 4.2, 4.7, 4.8 tetap.
+- .sections[4].blocks[1].table.rows[2][1]: lengkap; kalimat penunjuk yang sama dibuang; rujukan butir 4.3 tetap.
+- .sections[5].blocks[0].p: lengkap; penunjuk "(butir 4.1)" dibuang; langkah satu baris per pengajuan tetap tertulis.
+- .sections[5].blocks[9].p: lengkap; "sesuai butir 4.5" diganti isi butir 4.5 (setiap keputusan Ditolak atau Ditahan memuat alasan tertulis).
+- .sections[5].blocks[10].p: lengkap; penunjuk "(butir 4.8)" dibuang; langkah menulis lokasi bukti di Tabel 3 dan folder di tabel Record tetap.
+- .sections[5].blocks[11].p: lengkap; "sesuai butir 4.6" diganti isi butir 4.6 (Tabel 3 hanya untuk baris yang semua keputusannya Disetujui).
+- .sections[7].blocks[1].table.rows[1][1]: lengkap; penunjuk "(butir 6.11)" dibuang; folder, lokasi di Tabel 3, pemilik (USULAN), dan aturan arsip tetap.
+- .sections[8].blocks[0].table.rows[0][1]: lengkap; "mengikuti definisi di bagian 3" dibuang, rujukan "(butir K-13)" SNX-HR-ORG-01 tetap.
+- .sections[8].blocks[0].table.rows[4][1]: lengkap; rujukan "Butir 6.3 langkah 2" dan "bagian 11" SOP itu tetap (huruf kapital di awal kalimat; pemindai hanya mengenali huruf kecil); label (USULAN) tetap.

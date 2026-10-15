@@ -226,3 +226,11 @@ nihil (subst_diff kosong).
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[4].blocks[0].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[8].blocks[1].table.rows[0][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[2].blocks[8].table.rows[3][2]: lengkap (penerima Manajemen dan batas segera tertulis; pelaku Line Manager Legal tetap di Ketentuan 13 dan tabel Peran)
+- .sections[4].blocks[0].table.rows[0][1]: lengkap (penunjuk balik ke daftar Ketentuan dibuang, semua tugas tetap tertulis dan langkahnya tetap di Ketentuan)
+- .sections[4].blocks[0].table.rows[1][1]: lengkap (penunjuk balik ke Ketentuan 6, 12, 13, 19 dibuang, tugas tetap tertulis)
+- .sections[4].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 2, 3, 8, 9 dibuang, tugas tetap tertulis)
+- .sections[4].blocks[0].table.rows[3][1]: lengkap (penunjuk balik ke Ketentuan 12 sampai 14, 16 dibuang, tugas tetap tertulis)
+- .sections[8].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 20 dibuang, lokasi, pemilik, klasifikasi tetap)

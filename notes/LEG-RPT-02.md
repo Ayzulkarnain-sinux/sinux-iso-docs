@@ -230,3 +230,15 @@ nihil (subst_diff build kosong).
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[4].blocks[4].p (butir 5): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[7].blocks[1].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[3].blocks[0].table.rows[0][1]: lengkap (penunjuk balik ke daftar Ketentuan dibuang, semua tugas, jabatan, USULAN tetap)
+- .sections[3].blocks[0].table.rows[1][1]: lengkap (penunjuk balik ke Ketentuan 16 dan 17 dibuang, tugas dan USULAN tetap)
+- .sections[3].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 8 dibuang, tugas menyerahkan Bukti utuh)
+- .sections[3].blocks[0].table.rows[4][1]: lengkap (penunjuk balik ke Ketentuan 17 dibuang, keputusan tindak lanjut Manajemen dan USULAN tetap)
+- .sections[4].blocks[1].p: lengkap (penunjuk Ketentuan 6 diganti isi perubahan peraturan yang dicatat ke SNX-LEG-REG-03; langkah evaluasi tetap di Ketentuan 6)
+- .sections[4].blocks[4].p: rujukan dikembalikan (langkah mencatat Catatan Temuan di SNX-LEG-RPT-01 lebih dulu dan larangan mengulang tindakan: "sesuai Ketentuan butir 11")
+- .sections[4].blocks[8].p: lengkap (isi Ketentuan 3 dan 13 disalin: Persyaratan Belum Diverifikasi tidak dihitung, Bidang dikosongkan beserta alasan, USULAN)
+- .sections[6].blocks[1].table.rows[0][1]: lengkap (penunjuk balik ke Ketentuan 2 dibuang, isi sumber utuh)
+- .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 18 dibuang, lokasi, pencatat, pemilik, klasifikasi, USULAN tetap)
+- .sections[7].blocks[1].table.rows[1][1]: lengkap (penunjuk Ketentuan 18 dibuang, lokasi kolom Bukti yang Diperiksa, pencatat, pemilik tetap)

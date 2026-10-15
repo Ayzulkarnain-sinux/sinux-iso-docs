@@ -209,3 +209,13 @@ nihil (lihat subst_diff build; token nomor butir rujukan yang hilang sudah dicat
 - Petunjuk 10: kriteria tanggal review dikembalikan: "menurut Ketentuan butir 9, yaitu setiap bulan (USULAN) dan saat kegiatan berubah."
 - Rekaman, Lokasi: "Folder Google Drive Departemen Legal (USULAN)." (label dari Ketentuan butir 13 dibawa).
 - Ketentuan 9: label dipindah tepat setelah "setiap bulan" agar tidak menutupi pemicu perubahan kegiatan.
+
+### W10 audit pointer
+- .sections[1].blocks[1].table.rows[1][1]: lengkap (kalimat penunjuk "nilainya ada di Petunjuk 6" dibuang, delapan nilai Bidang tetap di Petunjuk 6)
+- .sections[2].blocks[8].p: lengkap (penunjuk ke butir 3 dibuang, pemicu pemberitahuan Penanggung Jawab Kegiatan, bulanan, USULAN utuh)
+- .sections[3].blocks[0].table.rows[0][1]: lengkap (penunjuk balik ke daftar Ketentuan dibuang, semua tugas tetap tertulis)
+- .sections[3].blocks[0].table.rows[1][1]: lengkap (penunjuk balik ke Ketentuan 5 dan 7 dibuang, tugas, pemilik, USULAN tetap)
+- .sections[3].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 2, 3, 12 dibuang, tiga tugas tetap tertulis)
+- .sections[4].blocks[11].p: lengkap (penunjuk Ketentuan 11 dibuang, termasuk review tanpa perubahan dan kolom No. Baris utuh)
+- .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 13 dibuang, lokasi, pemilik, pencatat, klasifikasi, USULAN tetap)
+- .sections[8].blocks[0].p: lengkap (isi Ketentuan 9 disalin: bulanan USULAN dan saat kegiatan berubah)

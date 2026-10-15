@@ -213,3 +213,15 @@ nihil
 Pihak luar: "pelanggan" (satu-satunya sebutan, di Ruang Lingkup). Dokumen yang belum ada ditulis "SOP Training & Development (dalam review)".
 Petunjuk Pengisian ditulis sebagai kalimat perintah untuk HRGA Officer; butir milik HR Lead, Peserta, Pelatih, dan Atasan langsung (6.1, 6.5, 6.8 sampai 6.10, 6.14, 6.15, 6.18) menyebut perannya di tengah atau akhir kalimat. Nama peran tidak berubah.
 Daftar Hadir diberi min_row_cm 0.9, Hasil per Peserta 0.8, Kesimpulan Efektivitas 1.2, Tindak Lanjut dan Pengesahan Laporan Terisi 1.0, untuk tulisan tangan dan tanda tangan.
+### W10 audit pointer
+- .sections[2].blocks[0].table.rows[4][1]: lengkap; "bagian 7" diganti nama bagiannya "bagian Isi Laporan"; isi definisi tetap.
+- .sections[4].blocks[1].table.rows[0][1]: lengkap; penunjuk balik "(butir 4.3, 4.6, 4.8 sampai 4.10)" dibuang; tiga tugas HR Lead tetap; syarat waktu dan label (USULAN) tetap di butir 4.3 dan seterusnya.
+- .sections[4].blocks[1].table.rows[1][1]: lengkap; penunjuk "(butir 4.2, 4.5 sampai 4.7, 4.9, dan 4.11)" dibuang; tugas HRGA Officer tetap; aturan tanggal kejadian tetap di butir 4.2.
+- .sections[4].blocks[1].table.rows[2][1]: lengkap; penunjuk "(butir 4.4 dan 4.5)" dibuang; tugas Peserta tetap; label (USULAN) bukti kehadiran tetap di butir 4.4.
+- .sections[4].blocks[1].table.rows[3][1]: lengkap; penunjuk "(butir 4.5)" dibuang.
+- .sections[4].blocks[1].table.rows[4][1]: lengkap; penunjuk "(butir 4.5 dan 4.6)" dibuang.
+- .sections[5].blocks[18].p: lengkap; "lokasi pada bagian 8" diganti isi bagian 8 (folder Google Drive departemen Human Resources) beserta label (USULAN).
+- .sections[7].blocks[0].table.rows[0][1]: lengkap; penunjuk "(butir 4.11)" dibuang; akses terbatas, pencatat, pemilik (USULAN) tetap.
+- .sections[8].blocks[1].table.rows[1][2]: lengkap; penunjuk "(bagian 8)" dibuang.
+- .sections[8].blocks[1].table.rows[3][2]: lengkap; "(cakupan USULAN di bagian 2)" diganti label (USULAN), status usulan tetap.
+- .sections[9].blocks[0].table.rows[1][1]: lengkap; penunjuk "(butir 4.9, USULAN)" menjadi "(USULAN)"; fungsi dokumen dan label tetap.
