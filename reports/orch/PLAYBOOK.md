@@ -13,3 +13,10 @@ Push: `git pull --rebase --autostash -q origin main && git push -q origin main` 
 
 Checkpoint tiap wave (RUNBOOK §9): `orch.py report W<n>`; commit reports + ledger; pull --rebase; baca control/LEAD-GUIDE.md (G-n > last_guide_seen); hapus watchdog lama (delete_trigger id ledger.watchdog_trigger_id), buat send_later +45 menit, simpan id; cek sisa token < 1.500.000 = langsung W8.
 W8: Master_List_COS.xlsx (88 baris) + Laporan_Run.md di out/00_Index, push final, packet staging final (bila konektor KB ada), hapus watchdog, HANDOFF empat blok.
+
+## Sweep (sesudah semua dokumen DONE atau saat slot penyusun kosong)
+Daftar: `python3 -I reports/orch/sweep.py list` (salinan awal /tmp/claude-0/sweep-list.txt, 36 dokumen). Per dokumen:
+1. `sweep.py prompt KEY`; `orch.py set KEY IN_PROGRESS sweep=1`; SendMessage ke pen_agent: baca /tmp/claude-0/prompts/KEY.sweep.txt.
+2. Selesai: `orch.py set KEY DRAFTED`; `orch.py post KEY`; `sweep.py diff KEY`; `sweep.py dv KEY`; Agent opus baca /tmp/claude-0/prompts/KEY.dv.txt.
+3. qa/KEY.sweep.json PASS: `orch.py finish KEY` (atau `finish KEY noverify` bila dokumen tidak disampel) lalu `orch.py set KEY DONE sweep=2`. FAIL: satu putaran perbaikan, lalu ulang 2.
+Cek rujukan silang mesin: `python3 -I reports/orch/refcheck.py` (harus {}).
