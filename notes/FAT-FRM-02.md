@@ -124,7 +124,7 @@ Zammad, GLPI, vault, PPN, dan COO tidak muncul di workbook, jadi aturan sebutan 
 | # | Butir | Pemutus atau pelaksana |
 |---|---|---|
 | 1 | Platform Access!C3 (BCA): sebagaimana ditulis tim, nama Bila (Kana Salsabila Putri Koeswologito) muncul di baris Maker, baris Maker, Approval, Releaser, dan baris SysAdmin; Samuel di dua baris terakhir. Dibaca harfiah, satu orang memegang peran pembuat, penyetuju, pelepas, dan administrator sekaligus. Sumber tidak menjelaskan apakah baris kedua berarti tiga peran sekaligus untuk dua orang itu atau penulisan yang tidak lengkap. Teks tidak saya tafsirkan ulang; kontrol Annex A 5.3 sudah dicantumkan di acuan. Perlu konfirmasi pembagian peran sebenarnya di KlikBCA Bisnis | Samuel dan FAT |
-| 2 | Finance Lead (pemilik dokumen, pemeriksa) dan Finance Staff (penyusun) belum dipetakan ke orang atau jabatan di Struktur Organisasi (K-13). Daftar ini menulis pemegang akses dengan jabatan JA-10 dan JA-11, bukan Finance Lead atau Finance Staff | owner |
+| 2 | Finance Lead (pemilik dokumen, pemeriksa) dan Finance Staff (penyusun) belum dipetakan ke orang atau jabatan di Struktur Organisasi (K-13). Daftar ini menulis pemegang akses dengan jabatan JA-10 dan JA-11, bukan Finance Lead atau Finance Staff (diubah W9: definisi kedua peran ditambahkan di Kontrol Dokumen (USULAN); pemetaan ke orang atau jabatan tetap menunggu) | owner |
 | 3 | "Management" di Worksheet!C2 (PPh 21) dan Platform Access!C2 (Coretax) tidak dirinci: siapa saja yang memegang akses. Hal yang sama untuk "FAT" dan "HR" (tidak ada nama per orang) | FAT |
 | 4 | Worksheet PPh 21 berisi data gaji karyawan menurut uraiannya ("perhitungan PPh 21 karyawan") dan pemegang aksesnya mencakup HR dan Management. Perlu keputusan siapa di HR yang boleh melihat, dan apakah perluasan itu sesuai klasifikasi RESTRICTED (Internal) | Aziz dan FAT |
 | 5 | Cakupan daftar hanya 4 dokumen dan 3 platform. SOP Billing menyebut data keuangan lain yang aksesnya dibatasi (Folder Google Drive FAT, Register Penagihan dan Penjualan, Master Sales Sheet, Google Form Data Subskripsi Klien) dan SNX-FAT-SOP-04 menyebut Folder arsip FAT dan Financial Document Register. Tidak ada di daftar. Belum ditambahkan karena T1 tidak boleh menambah isi tanpa sumber | FAT |
@@ -156,3 +156,16 @@ Uji: `python3 -I tools/xlsx_patch.py /tmp/src/FAT-FRM-02.xlsx specs/FAT-FRM-02.p
 
 1. Apa yang membuat teks ini terdengar buatan AI. Sesudah dibaca ulang, kalimat Tujuan versi pertama memakai pola "X: Y." dan mengulang "akses dan pemegang akses" dua kali; sudah diganti menjadi satu kalimat dengan kurung ("Mencatat akses ke data dan informasi departemen Finance (dokumen keuangan, platform pajak dan bank) beserta pemegang aksesnya.") dan patch diuji ulang. Butir Cara pakai 1 dan 2 berpola sama ("satu baris untuk satu ..."); itu pola isian form (satu baris satu objek), jadi dipertahankan. Label "(USULAN, perlu konfirmasi konsultan)" muncul dua kali karena dua sel, itu perintah baris. Kalimat tim di sheet data tidak saya sentuh selain ejaan dan nama (T1). Tidak ada em-dash atau en-dash, tebal, tanda kutip penekanan, frasa pengisi, atau penutup generik di patch.
 2. Adakah fakta, angka, nama, atau tanggal tanpa sumber. Nomor, judul, klasifikasi, revisi, status, dan tiga nama approval dari instruksi baris dan config/defaults.json. "Kana Salsabila Putri Koeswologito" dari data_conflicts (konfirmasi "selesai") dan jabatan "Finance" dari HR-JA-001 JA-10 (salinan audit); "Samuel Kristanto Utomo" dan "Direktur Utama" dari data_conflicts. "Dipta" ditulis persis seperti sumber; versi pertama menulis "Pradipta Nugraha (Accounting & Tax)", itu tafsir tanpa sumber tertulis dan sudah dicabut (open item 13). "15 Oktober 2026" adalah tanggal hari penyusunan (A4). "10 tahun" bersumber dari SOP Billing 8.2 dan SNX-FAT-SOP-04 tetapi diperluas ke daftar ini, jadi berlabel (USULAN). Nomor klausul ISO dari pengetahuan standar, berlabel USULAN dan belum dicocokkan dengan teks standar (UNMEASURED). "Finance Lead" sebagai pemilik dokumen dan peninjau tahunan adalah asumsi A1 dan USULAN 5. Kalimat Cara pakai butir 1 sampai 4 (B18 sampai B21) menunjuk pelaku Finance Staff atau Finance Lead dan larangan kata sandi, PIN, token; semuanya tidak di sumber, jadi berlabel (USULAN 4, 5, 8). Tidak ada nama, angka, atau tanggal lain.
+
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Kontrol Dokumen!B37 (Diperiksa oleh) | Finance Lead | Amirull Yusuf Zulkarnain / Direktur (A6, defaults v22) |
+| Kontrol Dokumen!B16 (baru) | kosong | Definisi Finance Lead (USULAN), teks persis G-3 A6 |
+| Kontrol Dokumen!B23 (baru) | kosong | Definisi Finance Staff (USULAN), teks persis G-3 A6 |
+
+Sel B16 dan B23 tidak dibungkus teks; teks satu baris meluber ke kolom C sampai E yang kosong.
+
+Open item: 2 diubah W9 (definisi peran ditambahkan, pemetaan tetap menunggu owner). Rujukan silang diubah: nihil.

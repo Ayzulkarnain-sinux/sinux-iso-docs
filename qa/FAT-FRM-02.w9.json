@@ -1,0 +1,30 @@
+{
+ "key": "FAT-FRM-02",
+ "cluster": "FAT-X",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Kontrol Dokumen B16 dan B23 tidak diberi wrap_text dan tinggi barisnya default (None), sementara teksnya sekitar 130 karakter di kolom B selebar 70. Teks tampil satu baris dan meluber ke C sampai E, yang kosong. Di layar terbaca, tetapi saat dicetak atau bila C16/C23 kelak diisi, teks bisa terpotong. Penyusun sudah mencatat hal ini di notes. Instruksi membolehkan pecah ke dua sel bila perlu, dan pilihan itu tidak diambil.",
+  "Kedua definisi terpisah letaknya: B16 ada di antara Tujuan (baris 15) dan judul Cara pakai (baris 17), sedangkan B23 ada di bawah butir Cara pakai 4. Tidak ada label yang tertimpa (A16 dan A23 kosong; di versi sebelum, baris 16 dan 22 sampai 28 kosong), hanya kurang rapi dilihat.",
+  "Spec diff ikut memformat ulang clear_rows 'Kontrol Dokumen' [25, 27] menjadi beberapa baris dan menghapus newline di akhir berkas. Hanya kosmetik; nilainya sama dan makna tidak berubah.",
+  "Bagian ISO-W9 di notes menulis open item secara agregat ('2 diubah W9'). Status open item 2 lama memang diubah di tempat tanpa dihapus, sesuai aturan."
+ ],
+ "butir_dikerjakan": [
+  "A6: Kontrol Dokumen B37 (Diperiksa oleh) berubah dari 'Finance Lead' menjadi 'Amirull Yusuf Zulkarnain / Direktur', persis defaults v22 prepared_reviewed.FAT.reviewed.",
+  "A6: Disusun B36 dan D31 tetap 'Finance Staff' (= defaults FAT.prepared). Pemilik B10 tetap 'Finance Lead'. Disetujui B11/B38 tetap 'Samuel Kristanto Utomo / President Director' (= approved_by.all). Baris riwayat revisi 31 tidak punya kolom Diperiksa, jadi tidak ada yang perlu diubah.",
+  "A6: definisi Finance Lead ditambahkan di Kontrol Dokumen B16, teksnya persis instruksi dan cocok dengan defaults v22 data_conflicts 'Peran Finance Lead dan Finance Staff' serta LEAD-GUIDE G-3 A6.",
+  "A6: definisi Finance Staff ditambahkan di Kontrol Dokumen B23, teksnya persis instruksi (JA-10, JA-11 berdasar defaults v22). Selnya kosong sebelumnya, tidak menimpa label, dan berada di luar clear_rows 25 sampai 27.",
+  "Notes bagian ISO-W9 ada: tabel 3 perubahan, open item 2 diubah statusnya tanpa dihapus, rujukan silang diubah nihil."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Diukur pada teks render sesudah (/tmp/claude-0/w9/render/FAT-FRM-02.xlsx, semua sheet). FAT-FRM-02 adalah dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku. Hasilnya tetap dicatat: 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0. Diff teks hanya berisi 3 perubahan (B16 baru, B23 baru, B37 diganti). Tidak ada fakta baru: semua nama, jabatan, dan kode JA berdasar defaults v22, dan definisi berlabel (USULAN). Rujukan silang yang diubah atau ditambah nihil. w9diff.py exit 0, sha_teks de43402c43a6cad0.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

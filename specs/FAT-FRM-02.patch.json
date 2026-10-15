@@ -1,7 +1,10 @@
 {
   "add_control_sheet": "out/07_Ops/SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx",
   "clear_rows": {
-    "Kontrol Dokumen": [25, 27]
+    "Kontrol Dokumen": [
+      25,
+      27
+    ]
   },
   "set": {
     "Kontrol Dokumen!A1": "Financial Information Access Authorization Records",
@@ -32,11 +35,13 @@
     "Kontrol Dokumen!D31": "Finance Staff",
     "Kontrol Dokumen!E31": "Menunggu",
     "Kontrol Dokumen!B36": "Finance Staff",
-    "Kontrol Dokumen!B37": "Finance Lead",
+    "Kontrol Dokumen!B37": "Amirull Yusuf Zulkarnain / Direktur",
     "Kontrol Dokumen!B38": "Samuel Kristanto Utomo / President Director",
     "Worksheet!B3": "Dokumen log sheet outstanding pajak SINUX untuk pajak masa dan tahunan:\n1. PPh 21/26\n2. PPh 23/26\n3. PPN\n4. PPh Badan",
     "Worksheet!B4": "Dokumen tracker Utang & Piutang SINUX selama tahun berjalan.\nDokumen akan diperbarui setiap tahun",
     "Platform Access!C3": "Maker: Dipta, Kana Salsabila Putri Koeswologito (Finance)\nMaker, Approval, Releaser: Samuel Kristanto Utomo (Direktur Utama), Kana Salsabila Putri Koeswologito\nSysAdmin: Samuel Kristanto Utomo, Kana Salsabila Putri Koeswologito",
-    "Platform Access!C4": "FAT & Samuel Kristanto Utomo (Direktur Utama)"
+    "Platform Access!C4": "FAT & Samuel Kristanto Utomo (Direktur Utama)",
+    "Kontrol Dokumen!B16": "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).",
+    "Kontrol Dokumen!B23": "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
   }
 }
