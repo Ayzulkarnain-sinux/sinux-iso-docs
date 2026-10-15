@@ -1,0 +1,36 @@
+{
+ "key": "HR-RPT-01",
+ "cluster": "HR-LAIN",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Kolom Kode tabel Dokumen Terkait masih menulis \"Belum bernomor\" untuk SOP Training & Development. Kolom ini menunjuk kode dokumen, bukan status, dan sama persis dengan SNX-HR-FRM-02 (specs/HR-FRM-02.json:234), jadi tidak bertentangan dengan B4. Status \"dalam peninjauan\" sudah tertulis di Ruang Lingkup dan di kolom Keterangan.",
+  "Butir A3 tidak berlaku untuk dokumen ini: tidak ada JA-03, JA-04, atau label \"menunggu konfirmasi\" di teks sesudah (grep 0), dan dokumen tidak diubah karenanya. Notes open item 10 mencatat hal itu dengan benar.",
+  "Rujukan yang tidak diubah tetap cocok dengan render terbaru: SNX-HR-JA-01 JA-14 kini berjudul HR Lead (render HR-JA-01 paragraf 661), dan SNX-HR-ORG-01 memakai HR Lead untuk JA-14, sehingga kalimat \"sumber nama jabatan HR Lead\" cocok.",
+  "Render memuat 18 tabel; 15 tabel spec memuat tblHeader. 3 tabel lainnya berasal dari template (sampul, kontrol, approval), di luar spec.",
+  "Notes ## ISO-W9 menyebut \"HR Manager\" sebagai nilai Sebelum. Itu wajar karena notes bukan teks dokumen.",
+  "Saya tidak menjalankan ulang lint, validate, atau blankscan. Cek ini berpijak pada w9diff, spec diff, dan teks render /tmp/claude-0/w9/render/HR-RPT-01.docx."
+ ],
+ "butir_dikerjakan": [
+  "A2 (G-3): semua 23 kemunculan HR Manager diganti HR Lead. Lokasinya: process_owner, blok Reviewed (\"Aziz Priyo Widakdo / HR Lead\"), butir 4.3, 4.6, 4.8 sampai 4.10, paragraf dan tabel Peran, langkah 6.1, 6.14, 6.15, 6.18, baris Pemeriksa di Pengesahan, tabel Rekaman, Dokumen Terkait (FRM-01, ORG-01, JA-01), dan Kesimpulan. Hanya istilah yang berubah, maknanya tetap.",
+  "A2 SPV: tidak ditambahkan karena dokumen tidak punya kolom tingkat jabatan. Hal ini tercatat di notes.",
+  "B4: SOP Training & Development kini ditulis \"dalam peninjauan\" di Ruang Lingkup (mengganti \"belum bernomor\") dan di Dokumen Terkait. Penulisan ini seragam dengan SNX-HR-FRM-02.",
+  "B4 RPT-01: \"repeat_header\": true dan \"cant_split\": true ada di SEMUA 15 blok table spec. Dicek dengan skrip: 15 tabel, 0 yang kurang. Render memuat 15 tblHeader.",
+  "Notes: open item 16 (tabel terbelah) ditutup W9, item 11 dan 15 ditutup, item 5 dan 10 diubah. Bagian ## ISO-W9 berisi tabel perubahan.",
+  "Data defaults v22 cocok: Prepared = Sita Nadia Salsabila Widodo / HRGA Officer, Reviewed = Aziz Priyo Widakdo / HR Lead, Approved = Samuel Kristanto Utomo / President Director, process_owner = HR Lead.",
+  "Tidak ada fakta baru, em-dash, frasa proses penyusunan, maupun rujukan silang baru atau yang diubah."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Tidak ada butir wajib yang tertinggal. Butir A3 dan butir 5 (rujukan HR-FRM-02 ke HR-SOP-10) tidak berlaku untuk HR-RPT-01."
+ ],
+ "grep": "Hasil grep pada teks render sesudah (/tmp/claude-0/w9/render/HR-RPT-01.docx): \"HR Manager\" = 0, \"Divisi Legal\" = 0 (tidak berlaku, ini dokumen HR), em-dash = 0, \"belum bernomor\" huruf kecil = 0, \"Belum bernomor\" = 1 (kolom Kode Dokumen Terkait, sama dengan FRM-02), \"dalam peninjauan\" = 2, \"SPV\" = 0, \"menunggu konfirmasi\" = 0, JA-03/JA-04 = 0.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

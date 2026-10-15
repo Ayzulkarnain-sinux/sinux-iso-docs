@@ -7,7 +7,7 @@
   "number": "SNX-HR-RPT-01",
   "department": "Human Resources",
   "title": "Training Attendance & Training Evaluation Report",
-  "process_owner": "HR Manager",
+  "process_owner": "HR Lead",
   "classification": "RESTRICTED (Internal)",
   "review_period": "YEARLY",
   "status": "Draft",
@@ -16,7 +16,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
-   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -58,7 +58,7 @@
        ],
        [
         "Tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan",
-        "Menjadi isi SOP Training & Development (belum bernomor). Laporan ini hanya mencatat pelatihan yang sudah berlangsung."
+        "Menjadi isi SOP Training & Development (dalam peninjauan). Laporan ini hanya mencatat pelatihan yang sudah berlangsung."
        ],
        [
         "Standar kompetensi per tingkatan jabatan",
@@ -72,7 +72,9 @@
         "Pelatihan untuk pelanggan, vendor, dan partner",
         "Peserta laporan ini hanya karyawan SINUX (USULAN)."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -159,7 +161,9 @@
         "(USULAN)",
         "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -231,7 +235,9 @@
         "Selesai",
         "Tindakan sudah dijalankan dan buktinya tercatat."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -246,7 +252,7 @@
      "p": "4.2 Tanggal pada laporan adalah tanggal kejadian sebenarnya. HRGA Officer tidak mengisi kehadiran, hasil evaluasi, atau tanggalnya sebelum peristiwanya terjadi."
     },
     {
-     "p": "4.3 HR Manager menetapkan Tujuan Pembelajaran dan Kriteria Keberhasilan sebelum pelatihan dimulai, supaya Kesimpulan Efektivitas punya pembanding (USULAN)."
+     "p": "4.3 HR Lead menetapkan Tujuan Pembelajaran dan Kriteria Keberhasilan sebelum pelatihan dimulai, supaya Kesimpulan Efektivitas punya pembanding (USULAN)."
     },
     {
      "p": "4.4 Tanda tangan peserta pada Daftar Hadir di hari pelatihan menjadi bukti kehadiran (USULAN)."
@@ -255,19 +261,19 @@
      "p": "4.5 Evaluasi efektivitas memakai empat aspek, E1 sampai E4 (USULAN). HRGA Officer mencatat metode, bukti, dan ringkasan hasil tiap aspek."
     },
     {
-     "p": "4.6 HRGA Officer mencatat hasil E1 dan E2 sesudah pelatihan selesai, dan hasil E3 dan E4 pada Tanggal Evaluasi Lanjutan. HR Manager menetapkan tanggal itu untuk tiap pelatihan (USULAN)."
+     "p": "4.6 HRGA Officer mencatat hasil E1 dan E2 sesudah pelatihan selesai, dan hasil E3 dan E4 pada Tanggal Evaluasi Lanjutan. HR Lead menetapkan tanggal itu untuk tiap pelatihan (USULAN)."
     },
     {
      "p": "4.7 HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil untuk aspek yang tidak dinilai, dan di Status Hasil untuk peserta yang tidak dinilai, dengan alasan di kolom Catatan. HRGA Officer tidak menulis hasil yang tidak punya bukti."
     },
     {
-     "p": "4.8 HR Manager membandingkan hasil E1 sampai E4 dengan Kriteria Keberhasilan dan menetapkan Kesimpulan Efektivitas, sesuai uraian jabatan HR Manager di SNX-HR-JA-01 (JA-14 butir 5)."
+     "p": "4.8 HR Lead membandingkan hasil E1 sampai E4 dengan Kriteria Keberhasilan dan menetapkan Kesimpulan Efektivitas, sesuai uraian jabatan HR Lead di SNX-HR-JA-01 (JA-14 butir 5)."
     },
     {
-     "p": "4.9 Untuk tiap Kesenjangan, HR Manager menetapkan tindakan, penanggung jawab, dan target selesai. HRGA Officer mencatat tindakan pelatihan lanjutan di SNX-HR-FRM-02 (USULAN)."
+     "p": "4.9 Untuk tiap Kesenjangan, HR Lead menetapkan tindakan, penanggung jawab, dan target selesai. HRGA Officer mencatat tindakan pelatihan lanjutan di SNX-HR-FRM-02 (USULAN)."
     },
     {
-     "p": "4.10 Peserta berstatus Tidak Hadir tidak dinilai pada E2 sampai E4. HR Manager memutuskan perlu tidaknya pelatihan susulan (USULAN)."
+     "p": "4.10 Peserta berstatus Tidak Hadir tidak dinilai pada E2 sampai E4. HR Lead memutuskan perlu tidaknya pelatihan susulan (USULAN)."
     },
     {
      "p": "4.11 Laporan ini dan laporan terisi berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang menyebut data karyawan sebagai contoh tingkat itu. Penyimpanan laporan terisi mengikuti butir 4.8 dokumen itu."
@@ -278,7 +284,7 @@
    "h": "Peran",
    "blocks": [
     {
-     "p": "Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan HRGA Officer (JA-12 butir 6) dan HR Manager (JA-14 butir 5) di SNX-HR-JA-01."
+     "p": "Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5) di SNX-HR-JA-01."
     },
     {
      "table": {
@@ -292,12 +298,12 @@
       ],
       "rows": [
        [
-        "HR Manager",
+        "HR Lead",
         "Menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan. Menetapkan Kesimpulan Efektivitas, tindakan atas Kesenjangan, dan pelatihan susulan. Memeriksa laporan terisi (butir 4.3, 4.6, 4.8 sampai 4.10)."
        ],
        [
         "HRGA Officer",
-        "Mencatat penetapan HR Manager, data pelatihan, kehadiran, hasil evaluasi, dan tindak lanjut di laporan. Mengumpulkan bukti dan menyimpan laporan terisi (butir 4.2, 4.5 sampai 4.7, 4.9, dan 4.11)."
+        "Mencatat penetapan HR Lead, data pelatihan, kehadiran, hasil evaluasi, dan tindak lanjut di laporan. Mengumpulkan bukti dan menyimpan laporan terisi (butir 4.2, 4.5 sampai 4.7, 4.9, dan 4.11)."
        ],
        [
         "Peserta",
@@ -315,7 +321,9 @@
         "Direktur Utama",
         "Menyetujui laporan ini lewat blok Approved By pada halaman depan."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -324,7 +332,7 @@
    "h": "Petunjuk Pengisian",
    "blocks": [
     {
-     "p": "6.1 HR Manager menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan (butir 4.3 dan 4.6)."
+     "p": "6.1 HR Lead menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan (butir 4.3 dan 4.6)."
     },
     {
      "p": "6.2 HRGA Officer mencatat penetapan itu dan data pelatihan di tabel Informasi Pelatihan: judul, jenis menurut daftar di SNX-HR-FRM-02, penyelenggara, pelatih, tanggal, dan lokasi atau media."
@@ -363,10 +371,10 @@
      "p": "6.13 HRGA Officer mengisi Tidak Dinilai untuk aspek atau peserta yang tidak dinilai (butir 4.7)."
     },
     {
-     "p": "6.14 HR Manager mengisi tabel Kesimpulan Efektivitas (butir 4.8)."
+     "p": "6.14 HR Lead mengisi tabel Kesimpulan Efektivitas (butir 4.8)."
     },
     {
-     "p": "6.15 HR Manager menetapkan tindakan atas tiap Kesenjangan (butir 4.9)."
+     "p": "6.15 HR Lead menetapkan tindakan atas tiap Kesenjangan (butir 4.9)."
     },
     {
      "p": "6.16 HRGA Officer mencatat penetapan itu di tabel Tindak Lanjut, dan memperbarui kolom Status sampai Selesai."
@@ -375,7 +383,7 @@
      "p": "6.17 HRGA Officer menandatangani baris Pencatat di tabel Pengesahan Laporan Terisi."
     },
     {
-     "p": "6.18 HR Manager memeriksa laporan terisi dan menandatangani baris Pemeriksa."
+     "p": "6.18 HR Lead memeriksa laporan terisi dan menandatangani baris Pemeriksa."
     },
     {
      "p": "6.19 HRGA Officer menyimpan laporan terisi beserta bukti di lokasi pada bagian 8."
@@ -442,7 +450,9 @@
         "Tanggal Evaluasi Lanjutan",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -559,7 +569,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -588,7 +600,9 @@
         "Peserta Tidak Hadir",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -639,7 +653,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -756,7 +772,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -785,7 +803,9 @@
         "Kesenjangan yang Ditemukan",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -829,7 +849,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -857,12 +879,14 @@
         ""
        ],
        [
-        "Pemeriksa (HR Manager)",
+        "Pemeriksa (HR Lead)",
         "",
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -885,15 +909,17 @@
       "rows": [
        [
         "Laporan terisi, satu per pelatihan",
-        "Folder Google Drive departemen Human Resources (USULAN) dengan akses terbatas per peran (butir 4.11). Pencatat HRGA Officer, pemilik HR Manager (USULAN).",
-        "Mengikuti master list dan kontrak (SNX-ISMS-PRO-01 butir 4.15). HR Manager bersama Legal menetapkan jangka retensinya (USULAN)."
+        "Folder Google Drive departemen Human Resources (USULAN) dengan akses terbatas per peran (butir 4.11). Pencatat HRGA Officer, pemilik HR Lead (USULAN).",
+        "Mengikuti master list dan kontrak (SNX-ISMS-PRO-01 butir 4.15). HR Lead bersama Legal menetapkan jangka retensinya (USULAN)."
        ],
        [
         "Bukti evaluasi: Daftar Hadir bertanda tangan, umpan balik peserta, hasil penilaian pelatih, dan penilaian atasan langsung",
-        "Folder yang sama dengan laporan terisi. Pencatat HRGA Officer, pemilik HR Manager (USULAN).",
+        "Folder yang sama dengan laporan terisi. Pencatat HRGA Officer, pemilik HR Lead (USULAN).",
         "Sama dengan laporan terisi (USULAN)."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -942,7 +968,9 @@
         "Annex A 6.3 Kesadaran, pendidikan, dan pelatihan keamanan informasi",
         "Laporan terisi untuk pelatihan keamanan informasi memuat kehadiran dan hasil evaluasinya."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -963,7 +991,7 @@
       "rows": [
        [
         "SNX-HR-FRM-01",
-        "Employee Competency Matrix: standar kompetensi per tingkatan jabatan. HR Manager memakainya untuk menulis Tujuan Pembelajaran bila pelatihan menutup Kesenjangan kompetensi (USULAN)."
+        "Employee Competency Matrix: standar kompetensi per tingkatan jabatan. HR Lead memakainya untuk menulis Tujuan Pembelajaran bila pelatihan menutup Kesenjangan kompetensi (USULAN)."
        ],
        [
         "SNX-HR-FRM-02",
@@ -971,11 +999,11 @@
        ],
        [
         "SNX-HR-ORG-01",
-        "Struktur Organisasi SINUX: sumber nama jabatan HR Manager dan HRGA Officer, dan atasan langsung tiap peserta."
+        "Struktur Organisasi SINUX: sumber nama jabatan HR Lead dan HRGA Officer, dan atasan langsung tiap peserta."
        ],
        [
         "SNX-HR-JA-01",
-        "Job Analysis dan Uraian Jabatan: uraian tugas HRGA Officer (JA-12 butir 6) dan HR Manager (JA-14 butir 5), dasar pembagian tugas di bagian 5."
+        "Job Analysis dan Uraian Jabatan: uraian tugas HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5), dasar pembagian tugas di bagian 5."
        ],
        [
         "SNX-ISMS-PRO-01",
@@ -983,9 +1011,11 @@
        ],
        [
         "Belum bernomor",
-        "SOP Training & Development: tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan. Dikecualikan dari laporan ini."
+        "SOP Training & Development, dalam peninjauan: tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan. Dikecualikan dari laporan ini."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -994,7 +1024,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. HR Manager meninjau laporan ini setiap tahun."
+     "p": "Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. HR Lead meninjau laporan ini setiap tahun."
     }
    ]
   }

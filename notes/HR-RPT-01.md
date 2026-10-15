@@ -105,18 +105,18 @@ Jumlah USULAN: 14 butir. Teks dokumen memuat 18 label "(USULAN)" karena beberapa
 | 2 | Lembar umpan balik peserta (E1), instrumen tes atau penilaian pelatih (E2), dan lembar penilaian atasan langsung (E3 dan E4) belum dibakukan. Dokumen ini hanya memuat kolom Metode dan Bukti yang diisi per pelatihan | Aziz |
 | 3 | Isi Kriteria Keberhasilan dan selang waktu ke Tanggal Evaluasi Lanjutan ditetapkan per pelatihan oleh HR Manager. Tidak ada angka acuan di sumber | Aziz |
 | 4 | Lokasi folder dan hak akses laporan terisi, serta jangka retensi, belum ditetapkan. SNX-ISMS-PRO-01 butir 4.15 hanya menyebut "master list dan kontrak" | Aziz untuk lokasi; Legal untuk retensi |
-| 5 | SOP Training & Development belum bernomor (checklist baris 5 tanpa berkas, T3 HOLD). Kode dan kecocokan rujukan di Ruang Lingkup dan Dokumen Terkait dicek setelah dokumen itu ada. SNX-HR-FRM-02 menulis status dokumen yang sama sebagai "dalam peninjauan", sedangkan dokumen ini menulis "belum bernomor"; samakan setelah LEAD memutus | LEAD, lalu Aziz |
+| 5 | SOP Training & Development belum bernomor (checklist baris 5 tanpa berkas, T3 HOLD). Kode dan kecocokan rujukan di Ruang Lingkup dan Dokumen Terkait dicek setelah dokumen itu ada. SNX-HR-FRM-02 menulis status dokumen yang sama sebagai "dalam peninjauan", sedangkan dokumen ini menulis "belum bernomor"; samakan setelah LEAD memutus | LEAD, lalu Aziz; diubah W9: SOP Training & Development ditulis "dalam peninjauan" seragam dengan SNX-HR-FRM-02; kode tetap menunggu dokumennya bernomor |
 | 6 | SNX-HR-FRM-02 ditulis paralel (ledger IN_PROGRESS saat saya mulai). Periksa ulang kolom Kode, daftar jenis pelatihan, dan butir 4.9 bila FRM-02 diubah | LEAD |
 | 7 | Cakupan sesi kesadaran ISO dan keamanan informasi, dan pelatihan oleh penyelenggara luar (U1). Council menggabungkan rekam pelatihan dan awareness di satu catatan HR, sedangkan checklist 88 baris tidak punya baris awareness terpisah; belum jelas apakah sesi awareness memakai laporan ini | Aziz dan konsultan |
 | 8 | Tempat mencatat pelatihan yang SINUX berikan kepada pelanggan (dikecualikan di U2). Salinan audit Commercial menyebut kegiatan "Training: hands-on untuk ops team" sebagai bagian layanan | Owner; Fani untuk sisi Operation |
 | 9 | Pelatih dari penyelenggara luar tidak terikat peran Pelatih lewat dokumen internal. Cara memperoleh hasil penilaian E2 dari mereka (kontrak, laporan penyelenggara) belum ditetapkan | Aziz |
-| 10 | Garis lapor yang menentukan "atasan langsung" peserta masih menunggu konfirmasi untuk JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 (SNX-HR-ORG-01, butir K-01 sampai K-04). Penilai E3 dan E4 untuk peserta itu belum pasti | Owner |
-| 11 | data_conflicts yang konfirmasinya belum selesai dan relevan: jabatan Aziz "HR Manager" (konfirmasi: owner atau Aziz) dan ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel). Dipakai sesuai kolom "pakai" | Owner |
+| 10 | Garis lapor yang menentukan "atasan langsung" peserta masih menunggu konfirmasi untuk JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 (SNX-HR-ORG-01, butir K-01 sampai K-04). Penilai E3 dan E4 untuk peserta itu belum pasti | Owner; diubah W9: JA-03 dan JA-04 kini dua garis tegas ke Direktur dan Direktur Utama (LEAD G-3 A3), tidak menunggu; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu (A4) |
+| 11 | data_conflicts yang konfirmasinya belum selesai dan relevan: jabatan Aziz "HR Manager" (konfirmasi: owner atau Aziz) dan ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel). Dipakai sesuai kolom "pakai" | Owner; ditutup W9: jabatan Aziz HR Lead dan ejaan Kristanto berstatus selesai (defaults v22) |
 | 12 | Kalimat perintah di DATA: "Jangan membuat rekaman bertanggal mundur" (context/audit sintesis). Dicatat, tidak dijalankan sebagai instruksi; butir 4.2 mengikuti RUNBOOK §0 butir 3 | LEAD |
 | 13 | Penomoran daftar HR di context/audit sintesis tidak seragam: butir dissent bagian 6 menulis "HR 9" untuk awareness, padahal daftar baris 718 sampai 720 menaruh butir 9 = Annual Training Plan & Training Matrix dan butir 11 = ISO Awareness. Dokumen ini tidak bersandar pada nomor itu | LEAD |
 | 14 | SNX-ISMS-PRO-01 menulis cakupannya Divisi Operation dan perluasan ke Human Resources berstatus USULAN, padahal tingkat RESTRICTED (Internal) dipakai semua dokumen HR menurut config/defaults.json. Butir 4.11 merujuk butir 4.8 dokumen itu; rujukan itu berlaku penuh setelah cakupan diperluas | Owner |
-| 15 | process_owner "HR Manager" mengikuti aturan dokumen tanpa sumber, status USULAN di defaults | Aziz |
-| 16 | Tabel Tindak Lanjut terbelah antar halaman di render LibreOffice. Perlu dilihat di Word oleh orang; bukan hasil yang bisa dipastikan mesin | HUMAN-VERDICT, Aziz atau LEAD |
+| 15 | process_owner "HR Manager" mengikuti aturan dokumen tanpa sumber, status USULAN di defaults | Aziz; ditutup W9: process_owner kini HR Lead (defaults v22) |
+| 16 | Tabel Tindak Lanjut terbelah antar halaman di render LibreOffice. Perlu dilihat di Word oleh orang; bukan hasil yang bisa dipastikan mesin | HUMAN-VERDICT, Aziz atau LEAD; ditutup W9: tabel diberi repeat_header dan cant_split (LEAD G-3 B4); render ulang lolos lint, validasi, blankscan |
 
 ## Penanganan cacat context/audit
 
@@ -178,3 +178,23 @@ Putaran sweep 15 Okt 2026, butir 1 dari orkestrator: "pasif 4.5-4.7, isi bagian 
 Tidak diubah, sesuai batas putaran: butir nonblocking lain di verify.json (sinonim "penilaian" dan "evaluasi", bukti hadir daring, pembanding Status Hasil, status SOP Training & Development, cakupan SNX-ISMS-PRO-01, dan selarasnya SNX-HR-FRM-02 butir 4.4). Semuanya tetap tercatat di Open items atau menunggu putaran berikut; tidak ada fakta baru dan tidak ada USULAN baru.
 
 Uji sesudah sweep: render_sop.py = ok; lint_doc.py generic = "pass": true, fails kosong, satu warn (18 label USULAN); validate.py = "All validations PASSED!" (528 paragraf); reports/orch/blankscan.py = "ok 12 HR-RPT-01.docx []".
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 | Process Owner, Reviewed, butir 4.3, 4.6, 4.8 sampai 4.10, bagian Peran, langkah 6.1, 6.14, 6.15, 6.18, tabel Pengesahan (Pemeriksa), Rekaman, Dokumen Terkait, Kesimpulan | HR Manager | HR Lead |
+| B4 | Ruang Lingkup, baris tata cara identifikasi kebutuhan pelatihan | Menjadi isi SOP Training & Development (belum bernomor). | Menjadi isi SOP Training & Development (dalam peninjauan). |
+| B4 | Dokumen Terkait, baris Belum bernomor | SOP Training & Development: tata cara identifikasi ... | SOP Training & Development, dalam peninjauan: tata cara identifikasi ... |
+| B4 | Semua 15 blok table | tanpa flag | "repeat_header": true dan "cant_split": true |
+
+- SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan.
+- A3: "Atasan langsung" ditulis sebagai peran generik; tidak ada JA-03 atau JA-04. Tidak ada perubahan.
+- B4 rujukan dicek terhadap kerangka: SNX-HR-JA-01 uraian JA-12 dan JA-14 (butir 6 dan 5) ada; SNX-ISMS-PRO-01 butir 4.8 dan 4.15 ada; SNX-HR-FRM-02 Tabel 1 dan butir 4.9 ada; SNX-HR-FRM-01 ada. Tidak ada rujukan yang diubah. Kode SOP Training & Development tetap "Belum bernomor" di kolom Kode, sama dengan SNX-HR-FRM-02.
+
+Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
+- ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
+- ditutup W9: konfirmasi jabatan Aziz (HR Lead) dan ejaan Samuel Kristanto Utomo berstatus selesai di defaults v22.
+- diubah W9: garis lapor JA-03 dan JA-04 sudah diputus owner; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu konfirmasi.
+- ditutup W9: tabel terbelah antarhalaman, diatasi dengan baris judul berulang dan baris tidak terbelah (LEAD G-3 B4); pemeriksaan visual di Word tetap boleh oleh orang.
+- diubah W9: penulisan SOP Training & Development diseragamkan menjadi "dalam peninjauan".
