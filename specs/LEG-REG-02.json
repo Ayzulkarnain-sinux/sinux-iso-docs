@@ -15,8 +15,8 @@
     "effective_date": "",
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
-      "prepared": "Staff Legal",
-      "reviewed": "Line Manager Legal",
+      "prepared": "Alif Altamziz / Staff Legal",
+      "reviewed": "Ester Febe Utomo / Line Manager Legal",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -87,7 +87,7 @@
               ],
               [
                 "Line Manager Legal",
-                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01 (USULAN)."
+                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01."
               ],
               [
                 "Manajemen",
@@ -111,7 +111,7 @@
               ],
               [
                 "Staff Legal",
-                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01 (USULAN)."
+                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01."
               ],
               [
                 "Tingkat risiko",
@@ -908,7 +908,7 @@
             "rows": [
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), unit Management, dan dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)."
+                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), unit Management, dan dasar pemetaan peran Line Manager Legal dan Staff Legal."
               ],
               [
                 "SNX-ISMS-PRO-01",

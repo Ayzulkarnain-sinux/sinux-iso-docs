@@ -187,3 +187,19 @@ Hasil uji sweep: render berhasil; lint `"pass": true`, fails nol; validate.py "A
 | Tanggal dan angka retensi | Tidak ada di spec |
 
 Kesimpulan pemeriksaan: tidak ada fakta, angka, nama, atau tanggal tanpa sumber yang tidak berlabel. Dua titik yang belum terbukti mesin: terjemahan judul Annex A 5.34 dan kecocokan teks Drive terbaru dengan format aslinya (HUMAN-VERDICT, Open items 10).
+
+
+## ISO-W9
+
+Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir di bawah yang berubah.
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| meta.approval, blok Prepared dan Reviewed | Prepared "Staff Legal"; Reviewed "Line Manager Legal" | Prepared "Alif Altamziz / Staff Legal"; Reviewed "Ester Febe Utomo / Line Manager Legal" (config/defaults.json v22 prepared_reviewed.LEG) |
+| A5, Istilah, baris Line Manager Legal | "... (JA-08) di SNX-HR-ORG-01 (USULAN)." | "... (JA-08) di SNX-HR-ORG-01." |
+| A5, Istilah, baris Staff Legal | "... (JA-09) di SNX-HR-ORG-01 (USULAN)." | "... (JA-09) di SNX-HR-ORG-01." |
+| A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)." | "... dasar pemetaan peran Line Manager Legal dan Staff Legal." |
+
+Open item:
+
+- Open item 1 (pemetaan peran ke JA-08 dan JA-09): bagian pemetaan ditutup W9: diputus owner (LEAD G-3 A5). Bagian "Legal dan Compliance" sebagai pemilik dokumen tetap terbuka (pemutus Aziz).

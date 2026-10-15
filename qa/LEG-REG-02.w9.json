@@ -1,0 +1,31 @@
+{
+ "key": "LEG-REG-02",
+ "cluster": "LEG-B",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Teks sesudah masih memuat 3 kali 'departemen Legal' berhuruf kecil (Ketentuan butir 20, Dokumen Terkait SNX-LEG-SOP-01, tabel penyimpanan); sudah ada sebelum W9 dan tidak diubah. defaults v22 unit_names menulis 'Departemen Legal'. Kapitalisasi bisa diseragamkan pada putaran berikutnya.",
+  "Spec diff juga menambah newline di akhir berkas specs/LEG-REG-02.json; tidak berpengaruh pada teks yang dirender.",
+  "Butir kerja 2 (rujukan SNX-LEG-SOP-03 bagian 8, Lokasi Dokumen Asli) tidak berlaku untuk dokumen ini: kalimat itu tidak ada di LEG-REG-02 (render: 0 'Lokasi Dokumen Asli', 0 'SNX-LEG-SOP-03 bagian')."
+ ],
+ "butir_dikerjakan": [
+  "Blok Approval: Prepared 'Alif Altamziz / Staff Legal', Reviewed 'Ester Febe Utomo / Line Manager Legal', Approved 'Samuel Kristanto Utomo / President Director'. Ketiganya persis sama dengan defaults v22 prepared_reviewed.LEG dan approved_by.all.",
+  "A5: label (USULAN) dihapus dari Istilah baris Line Manager Legal (JA-08).",
+  "A5: label (USULAN) dihapus dari Istilah baris Staff Legal (JA-09).",
+  "A5: label (USULAN) dihapus dari Dokumen Terkait baris SNX-HR-ORG-01 (dasar pemetaan peran).",
+  "Label USULAN lain tetap ada, termasuk pembagian tugas (bagian Peran), Manajemen, dan butir Ketentuan; tidak ada perubahan lain yang mengubah makna.",
+  "Badan dokumen tidak memuat nama orang. Nama Ester dan Alif masing-masing muncul 1 kali, hanya di blok Prepared/Reviewed. Daffa 0.",
+  "notes/LEG-REG-02.md mendapat bagian ISO-W9 berisi tabel 4 perubahan dan status open item 1 yang ditutup sebagian."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Diukur pada render /tmp/claude-0/w9/render/LEG-REG-02.docx: 'Divisi Legal' 0, 'HR Manager' 0, 'Daffa' 0, 'menunggu konfirmasi' 0, 'K-13' 0, em-dash 0, 'Departemen Legal' 2, 'departemen Legal' (huruf kecil, sudah ada sebelum W9) 3.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
