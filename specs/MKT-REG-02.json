@@ -111,7 +111,7 @@
        ],
        [
         "Channel",
-        "Tempat sebuah Aktivitas menampilkan atau membagikan materi kepada pihak di luar SINUX, misalnya website, akun social media, atau acara."
+        "Tempat materi Aktivitas ditampilkan atau dibagikan Brand & Marketing kepada pihak di luar SINUX, misalnya website, akun social media, atau acara."
        ],
        [
         "ID Persetujuan Materi",
@@ -223,7 +223,7 @@
       "rows": [
        [
         "Brand & Marketing",
-        "Pencatat register dan PIC Aktivitas. Mencatat Aktivitas di Tabel 1 dan Tabel 2, menulis ID Persetujuan Materi di Tabel 1, mengecek baris materi di SNX-MKT-REG-01, dan menghentikan pemakaian materi tanpa persetujuan (butir 4.2 sampai 4.5, 4.7, 4.9, dan 4.11). Tugas mengelola event, webinar, dan campaign ada di uraian JA-06 butir 4."
+        "Pencatat register dan PIC Aktivitas. Mencatat Aktivitas di Tabel 1 dan Tabel 2, menulis ID Persetujuan Materi di Tabel 1, mengecek baris materi di SNX-MKT-REG-01, dan menghentikan pemakaian materi tanpa persetujuan (butir 4.2 sampai 4.7, 4.9, dan 4.11). Tugas mengelola event, webinar, dan campaign ada di uraian JA-06 butir 4."
        ],
        [
         "VP Commercial",
@@ -254,7 +254,7 @@
      "p": "6.3 Brand & Marketing menulis tujuan Aktivitas dalam satu kalimat di kolom Tujuan (USULAN)."
     },
     {
-     "p": "6.4 Brand & Marketing menulis satu channel atau lebih tempat Aktivitas menampilkan atau membagikan materi di kolom Channel."
+     "p": "6.4 Brand & Marketing menulis satu channel atau lebih tempat materi Aktivitas ditampilkan atau dibagikan di kolom Channel."
     },
     {
      "p": "6.5 Brand & Marketing menulis jabatan yang bertanggung jawab atas Aktivitas di kolom PIC, bukan nama orang."
