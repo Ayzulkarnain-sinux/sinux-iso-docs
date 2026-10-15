@@ -256,3 +256,8 @@ nihil (subst_diff build kosong).
 - .sections[3].blocks[0].table.rows[3][1]: lengkap; penunjuk "(Ketentuan butir 4 dan 5)" dibuang; tugas C3.4 sampai C3.7 dan rujukan SNX-LEG-SOP-02 tetap.
 - .sections[3].blocks[0].table.rows[4][1]: lengkap; penunjuk "(Ketentuan butir 7)" dibuang; tugas menetapkan Hasil Review dan memeriksa kolom Selesai tetap; urutan dan syaratnya tetap di Ketentuan butir 7.
 - .sections[7].blocks[1].table.rows[0][1]: lengkap; penunjuk "(Ketentuan butir 10)" dibuang; pencatat, pemilik (USULAN), lokasi, dan klasifikasi tetap.
+
+### W10 audit cakupan label
+- .sections[2].blocks[0].p: OK (label tetap hanya pada satu form untuk satu order)
+- .sections[3].blocks[0].table.rows[1][1]: diperbaiki (kalimat dipisah lagi; mengisi kelompok C2 keluar dari kalimat berlabel, label hanya pada eskalasi)
+- .sections[3].blocks[0].table.rows[4][1]: OK (dua label pemilik digabung, cakupan sama)

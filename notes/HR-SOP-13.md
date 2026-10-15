@@ -277,3 +277,12 @@ nihil
 - .roles[7][1]: lengkap; penunjuk "(bagian 9)" dibuang; tugas dan label (USULAN) tetap.
 - .exceptions[2][1]: lengkap; "butir 6.2 nomor 2 dan nomor 3, dalam batas waktu bagian 8" diganti fakta: usulan lengkap dikirim ke Penanggap alternatif (bukan ke Atasan Langsung Asal) dan ditanggapi dalam 3 hari kerja sejak usulan lengkap diterima, sama dengan baris tanggapan di bagian 8; label (USULAN) tetap.
 - .conclusion[0]: lengkap; nomor bagian 11, 6, dan 8 diganti nama isinya (record mutasi, langkah prosedur, batas waktu); label (USULAN) tetap.
+
+### W10 audit cakupan label
+- .scope[1]: OK (tiga pengecualian bersumber tetap tanpa label, empat pengecualian berlabel dikumpulkan di kalimat berlabel)
+- .policy[1]: diperbaiki (label ditambah pada kalimat mutasi ke unit kerja atau divisi lain)
+- .policy[5]: OK (label tetap pada kalimat mutasi)
+- .policy[10]: OK (label tetap pada klasifikasi; kalimat penunjuk bagian 11 dihapus)
+- .roles[0][2]: diperbaiki (dua kalimat disambung titik koma agar batas wewenang kembali di bawah label)
+- .roles[3][1]: diperbaiki (label kembali hanya pada peran pengusul; daftar tugas di luar label)
+- .roles[4][1]: diperbaiki (label kembali hanya pada peran penanggap; daftar tugas di luar label)

@@ -233,3 +233,7 @@ Tabel isian: kolom Alasan Ditolak atau Ditahan diperlebar, min_row_cm 0.8 di Tab
 - .sections[7].blocks[1].table.rows[1][1]: lengkap; penunjuk "(butir 6.11)" dibuang; folder, lokasi di Tabel 3, pemilik (USULAN), dan aturan arsip tetap.
 - .sections[8].blocks[0].table.rows[0][1]: lengkap; "mengikuti definisi di bagian 3" dibuang, rujukan "(butir K-13)" SNX-HR-ORG-01 tetap.
 - .sections[8].blocks[0].table.rows[4][1]: lengkap; rujukan "Butir 6.3 langkah 2" dan "bagian 11" SOP itu tetap (huruf kapital di awal kalimat; pemindai hanya mengenali huruf kecil); label (USULAN) tetap.
+
+### W10 audit cakupan label
+- .sections[7].blocks[1].table.rows[0][2]: OK (retensi tetap berlabel; keterangan sumber ikut kalimat berlabel tanpa mengubah ketentuan)
+- .sections[8].blocks[0].table.rows[4][1]: OK (kalimat berlabel tetap memuat seluruh pemakaian form; kalimat pertama hanya judul SOP)

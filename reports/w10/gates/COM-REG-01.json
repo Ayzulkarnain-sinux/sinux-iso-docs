@@ -6,11 +6,11 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 1624,
+  "words": 1635,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
-  "usulan": 29,
+  "usulan": 28,
   "instr_items": 18,
   "instr_role_start": 0,
   "justified_cells": 0,
@@ -51,7 +51,7 @@
   "pages_bed1bb6": 12,
   "pages_w10": 12,
   "isi_page_bed1bb6": 9,
-  "isi_page_w10": 8
+  "isi_page_w10": 9
  },
  "pass": true
 }

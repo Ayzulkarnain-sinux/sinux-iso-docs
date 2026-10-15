@@ -276,3 +276,13 @@ nihil. Label di tabel peran ("(USULAN, butir 6.1, 6.2, dan 6.7)" dan sejenisnya)
 - "bila" diganti "jika"; "Hasil yang dijaga:" di Purpose ditulis ulang sebagai kalimat biasa. Teks pasal PP - Cuti BAB VI di bagian 4 dibiarkan (T1).
 - Jembatan istilah: "Record (rekaman)" di butir 4.37, kemunculan pertama di badan.
 - Rujukan langkah dan batas (butir 4.7, 4.29, 4.13 di bagian 6 dan 8; butir 6.x di bagian 9) dipertahankan.
+
+### W10 audit cakupan label
+- .scope[2]: diperbaiki (titik koma dikembalikan jadi titik; kalimat sumber pengecualian pertama keluar dari label)
+- .policy[46]: OK (kalimat penunjuk bagian 11 dihapus, cakupan label sama)
+- .roles[2][1]: diperbaiki (dua kalimat disambung titik koma agar penerimaan pemberitahuan kembali di bawah label)
+- .procedures[4].steps[0][0]: OK (hanya nama sumber dirinci)
+- .exceptions[3][1]: OK (label pelaku tetap pada kalimat pertama)
+- .exceptions[4][1]: OK (label pelaku tetap)
+- .exceptions[6][1]: OK (label pelaku tetap)
+- .exceptions[7][1]: OK (label pelaku tetap)

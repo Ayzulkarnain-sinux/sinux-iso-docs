@@ -248,3 +248,7 @@ nihil
 
 ### W10 audit pointer
 - .flow.caption: lengkap; pelaku Finance Lead untuk dokumen perpajakan pada butir 6.1, 6.2, dan 6.3 ditulis di tiga node yang memuat rujukan butir itu, label USULAN cabang tidak lengkap ada di node cabang, garis putus-putus tetap kembali ke node awal.
+
+### W10 audit cakupan label
+- .policy[0]: OK (label tetap hanya pada kalimat hardcopy)
+- .flow.nodes.x: OK (label dipindah dari caption bed1bb6 yang menyebut cabang dokumen tidak lengkap USULAN)

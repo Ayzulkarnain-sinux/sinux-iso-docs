@@ -248,3 +248,11 @@ nihil (subst_diff build kosong).
 - .sections[4].blocks[1].table.rows[4][1]: lengkap; "(butir 4.15)" diganti fakta butir 4.15 yang relevan (struktur kolom Tabel 1 sampai Tabel 12) beserta label (USULAN).
 - .sections[5].blocks[0].p: lengkap; penunjuk "(butir 4.1)" dibuang; urutan pengisian (Tabel 1 sampai 10 sebelum, Tabel 11 setelah handover meeting) tetap tertulis.
 - .sections[7].blocks[1].table.rows[0][1]: lengkap; "Klasifikasi menurut butir 4.14" diganti fakta butir 4.14 untuk form terisi (RESTRICTED (Internal)) beserta label (USULAN); klasifikasi form kosong tidak relevan untuk baris rekaman form terisi.
+
+### W10 audit cakupan label
+- .sections[4].blocks[1].table.rows[0][1]: OK (label tetap hanya pada pemetaan tugas Sales dan Sales Executive)
+- .sections[4].blocks[1].table.rows[1][1]: OK (pemilik form, form terisi, tinjauan tahunan, dan lokasi record tetap berlabel)
+- .sections[4].blocks[1].table.rows[1][2]: diperbaiki (titik koma dikembalikan jadi titik; persetujuan komitmen keluar dari kalimat berlabel)
+- .sections[4].blocks[1].table.rows[4][1]: OK (rujukan butir 4.15 berlabel diganti fakta)
+- .sections[7].blocks[1].table.rows[0][1]: OK (rujukan butir 4.14 berlabel diganti fakta)
+- .sections[7].blocks[1].table.rows[0][2]: OK (retensi tetap berlabel; kalimat sumber angka hanya keterangan asal)

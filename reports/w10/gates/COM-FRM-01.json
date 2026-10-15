@@ -6,7 +6,7 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 2852,
+  "words": 2851,
   "calque": [],
   "lewat": 0,
   "pointer": 0,

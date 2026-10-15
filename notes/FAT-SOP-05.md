@@ -292,3 +292,6 @@ nihil
 - Sebutan pihak luar: "customer" (satu-satunya sebutan di dokumen ini, 5 kali).
 - "Dikecualikan dari SOP ini" menjadi "Di luar scope SOP ini", sama dengan SNX-FAT-SOP-04; definisi (USULAN), Finance Lead, dan Finance Staff diselaraskan dengan SNX-FAT-SOP-01.
 - Langkah 6.2 butir 2 "Input utang pajak" menjadi "Catat utang pajak" (kata kerja Indonesia, STYLE §1.3).
+
+### W10 audit cakupan label
+- .policy[5]: diperbaiki (label digeser kembali ke kalimat Finance Lead sebagai pelaku; kalimat keterangan bagian 6 tanpa label seperti bed1bb6)

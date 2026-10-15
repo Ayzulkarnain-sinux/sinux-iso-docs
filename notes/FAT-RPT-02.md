@@ -232,3 +232,6 @@ Lebar kolom Tabel 1 (Uraian Bottleneck) dan Tabel 3 (Corrective Action, Hasil Ve
 - .sections[6].blocks[0].table.rows[6][1]: lengkap (pemetaan Finance Lead dan Finance Staff butir K-13 tetap disebut; definisinya ada di tabel Istilah)
 - .sections[7].blocks[1].table.rows[0][1]: lengkap (lokasi Folder arsip FAT, pencatat, pemilik, klasifikasi, label USULAN; langkah simpan sesuai SNX-FAT-SOP-04 butir 4.4 tetap di Ketentuan butir 14)
 - .sections[7].blocks[1].table.rows[1][1]: lengkap (lokasi bukti, penulis Finance Staff, kolom Hasil Verifikasi Efektivitas, pemilik, label USULAN)
+
+### W10 audit cakupan label
+- .sections[4].blocks[2].p: OK (rujukan Ketentuan butir 4 berlabel diganti label pada kalimat nomor ticket GLPI)

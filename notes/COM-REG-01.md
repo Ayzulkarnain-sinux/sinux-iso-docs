@@ -250,3 +250,20 @@ nihil (subst_diff build kosong).
 - .sections[7].blocks[2].table.rows[0][1]: dilengkapi (klasifikasi INTERNAL selama register kosong, disalin dari butir 4.12; label USULAN tetap)
 - .sections[7].blocks[2].table.rows[1][1]: lengkap (Zammad untuk ticket Operation, GLPI untuk ticket lain, pemilik PIC, label USULAN)
 - .sections[7].blocks[5].table.rows[4][2]: lengkap (klasifikasi RESTRICTED (Internal) untuk register berisi data customer sebagai bukti klausul 5.12, label USULAN; aturan lengkap ada di butir 4.12)
+
+### W10 audit cakupan label
+- .sections[3].blocks[6].p: diperbaiki (kalimat dipisah lagi; penetapan status Selesai oleh VP Commercial di luar label, syarat Selesai berlabel)
+- .sections[3].blocks[7].p: diperbaiki (kalimat Zammad dan GLPI kembali di bawah label lewat titik koma dengan kalimat batas GLPI)
+- .sections[4].blocks[1].table.rows[1][1]: diperbaiki (label digeser ke kalimat tugas yang menggantikan rujukan butir berlabel; kalimat SNX-COM-SOP-01 butir 4.17 kembali tanpa label)
+- .sections[4].blocks[1].table.rows[4][1]: OK (rujukan butir 4.11 berlabel diganti fakta)
+- .sections[5].blocks[7].p: diperbaiki (label digeser ke kalimat yang menggantikan rujukan butir 4.3)
+- .sections[5].blocks[8].p: OK (rujukan butir 4.8 berlabel diganti fakta)
+- .sections[5].blocks[9].p: diperbaiki (label digeser ke kalimat yang menggantikan rujukan butir 4.4)
+- .sections[5].blocks[10].p: OK (label pada kalimat yang menggantikan rujukan butir 4.7)
+- .sections[5].blocks[12].p: OK (rujukan butir 4.5 berlabel diganti fakta)
+- .sections[6].blocks[0].p: OK (label tetap hanya pada struktur kolom)
+- .sections[7].blocks[2].table.rows[0][1]: OK (rujukan butir 4.12 berlabel diganti fakta)
+- .sections[7].blocks[2].table.rows[1][1]: diperbaiki (label digeser ke kalimat Zammad dan GLPI pengganti rujukan butir 4.8; Pemilik: PIC kembali tanpa label)
+- .sections[7].blocks[5].table.rows[4][2]: OK (rujukan butir 4.12 berlabel diganti fakta)
+### W10 koreksi worker atas audit cakupan label
+- .sections[4].blocks[1].table.rows[1][1]: rujukan dikembalikan "(butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13)" dan label (USULAN) atas daftar tugas dibuang, sama dengan bed1bb6 (tanpa label; tiap butir yang dirujuk membawa labelnya sendiri). Label menyeluruh membuat tugas yang di bed1bb6 berlaku terbaca usulan. Ini menggantikan baris audit pointer dan audit cakupan label di atas untuk jalur ini.

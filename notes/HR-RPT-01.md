@@ -225,3 +225,9 @@ Daftar Hadir diberi min_row_cm 0.9, Hasil per Peserta 0.8, Kesimpulan Efektivita
 - .sections[8].blocks[1].table.rows[1][2]: lengkap; penunjuk "(bagian 8)" dibuang.
 - .sections[8].blocks[1].table.rows[3][2]: lengkap; "(cakupan USULAN di bagian 2)" diganti label (USULAN), status usulan tetap.
 - .sections[9].blocks[0].table.rows[1][1]: lengkap; penunjuk "(butir 4.9, USULAN)" menjadi "(USULAN)"; fungsi dokumen dan label tetap.
+
+### W10 audit cakupan label
+- .sections[4].blocks[0].p: OK (pembagian tugas tetap berlabel)
+- .sections[5].blocks[18].p: OK (rujukan lokasi bagian 8 yang berlabel diganti fakta)
+- .sections[8].blocks[1].table.rows[3][2]: OK (label cakupan bagian 2 tetap)
+- .sections[9].blocks[0].table.rows[1][1]: OK (label tetap pada kalimat kedua)

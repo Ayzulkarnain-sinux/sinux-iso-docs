@@ -264,3 +264,7 @@ nihil. Label di baris Peran Business Development dipindah ke akhir sel (asli: "M
 - .records[1][1]: lengkap; penunjuk "(butir 6.5)" dibuang.
 - .records[2][1]: lengkap; penunjuk "(butir 4.9)" dibuang; lokasi arsip digital FAT tetap.
 - .records[3][1]: lengkap; "(butir 4.10)" diganti isinya (hanya diakses personel FAT dan Direktur Utama).
+
+### W10 audit cakupan label
+- .definitions[28][1]: diperbaiki (kalimat dipisah lagi; definisi lembar di luar label, format usulan berlabel)
+- .roles[0][1]: OK (label tetap pada pemetaan peran Tim Sales)

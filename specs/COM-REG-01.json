@@ -204,10 +204,10 @@
      "p": "4.6 Business Development membalas feedback dan keluhan yang dikirim customer melalui email atau WhatsApp dalam batas respons SNX-COM-SOP-01 bagian 8 (USULAN)."
     },
     {
-     "p": "4.7 VP Commercial menetapkan status Selesai hanya jika syarat Selesai di tabel Status Penyelesaian terpenuhi (USULAN)."
+     "p": "4.7 VP Commercial menetapkan status Selesai. Status Selesai berlaku hanya jika syarat Selesai di tabel Status Penyelesaian terpenuhi (USULAN)."
     },
     {
-     "p": "4.8 Jika feedback atau keluhan punya ticket, Business Development menulis nomor ticket-nya di Tabel 2. Ticket yang ditangani Operation ada di Zammad, ticket lain di GLPI. Batas pemakaian GLPI untuk kebutuhan generalist belum dirinci (USULAN)."
+     "p": "4.8 Jika feedback atau keluhan punya ticket, Business Development menulis nomor ticket-nya di Tabel 2. Ticket yang ditangani Operation ada di Zammad, ticket lain di GLPI; batas pemakaian GLPI untuk kebutuhan generalist belum dirinci (USULAN)."
     },
     {
      "p": "4.9 Business Development segera mengeskalasi keluhan kritis kepada VP Commercial (SNX-COM-SOP-01 bagian 9) dan mencatatnya di Tabel 4."
@@ -249,7 +249,7 @@
        ],
        [
         "Business Development",
-        "Mencatat feedback dan keluhan di Tabel 1; menulis PIC, tindakan, nomor ticket, dan status di Tabel 2; menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3; mengeskalasi keluhan kritis dan mencatat eskalasinya di Tabel 4. Menurut SNX-COM-SOP-01 butir 4.17, kepuasan customer menjadi tanggung jawab Business Development (USULAN)."
+        "Mencatat feedback dan keluhan di Tabel 1; menulis PIC, tindakan, nomor ticket, dan status di Tabel 2; menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3; mengeskalasi keluhan kritis dan mencatat eskalasinya di Tabel 4 (butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13). Menurut SNX-COM-SOP-01 butir 4.17, kepuasan customer menjadi tanggung jawab Business Development."
        ],
        [
         "VP Commercial",
@@ -296,13 +296,13 @@
      "p": "6.7 Di kolom Isi Feedback atau Keluhan, tulis ringkasan isinya."
     },
     {
-     "p": "6.8 Tulis jabatan PIC di Tabel 2 setelah PIC ditunjuk VP Commercial. Kolom PIC diisi jabatan, bukan nama orang (USULAN)."
+     "p": "6.8 Tulis jabatan PIC di Tabel 2 setelah PIC ditunjuk VP Commercial (USULAN). Kolom PIC diisi jabatan, bukan nama orang."
     },
     {
      "p": "6.9 Jika feedback atau keluhan punya ticket, tulis nomornya di kolom Nomor Ticket (USULAN)."
     },
     {
-     "p": "6.10 Di kolom Tindakan, tulis tiap tindakan PIC beserta tanggalnya. Jika VP Commercial memutuskan tidak ada tindakan, tulis keputusan itu dan alasannya (USULAN)."
+     "p": "6.10 Di kolom Tindakan, tulis tiap tindakan PIC beserta tanggalnya (USULAN). Jika VP Commercial memutuskan tidak ada tindakan, tulis keputusan itu dan alasannya."
     },
     {
      "p": "6.11 Isi kolom Status dengan Baru, Dalam Penanganan, atau Selesai. Selesai hanya ditulis setelah ditetapkan VP Commercial (USULAN)."
@@ -767,7 +767,7 @@
        ],
        [
         "Ticket feedback dan keluhan",
-        "Zammad untuk ticket yang ditangani Operation, GLPI untuk ticket lain. Pemilik: PIC (USULAN).",
+        "Zammad untuk ticket yang ditangani Operation, GLPI untuk ticket lain (USULAN). Pemilik: PIC.",
         "Belum ditetapkan"
        ]
       ]
