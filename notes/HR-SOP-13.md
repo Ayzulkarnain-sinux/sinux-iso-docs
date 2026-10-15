@@ -139,7 +139,7 @@ Hitungan: 58 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beber
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
 | U1 | Seluruh prosedur 6.1 sampai 6.4, diagram, dan pembagian langkah per peran | Bagian 6, 7, intro 6.1 | Aziz (pemilik proses), lalu Samuel mengesahkan |
-| U2 | Direktur Utama menetapkan keputusan mutasi dan HR Manager hanya merekomendasikan. Alternatif: Direktur (JA-02) untuk mutasi lintas departemen (fakta pendukung 11) | 4.3, 4.6, peran Direktur Utama, 6.3 | Samuel |
+| U2 | Direktur Utama menetapkan keputusan mutasi dan HR Manager hanya merekomendasikan. Alternatif: Direktur (JA-02) untuk mutasi lintas departemen (fakta pendukung 11); diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | 4.3, 4.6, peran Direktur Utama, 6.3 | Samuel |
 | U3 | Atasan Langsung Tujuan sebagai pengusul dan Atasan Langsung Asal sebagai penanggap, termasuk istilah dan definisinya (label ditambah di putaran 1) | Bagian 3 (Atasan Langsung Asal, Atasan Langsung Tujuan, Usulan mutasi), 4.1, 4.2, 4.3, 5, 6.1, 6.2 | Aziz |
 | U4 | Pengecualian scope: pemindahan atas permintaan karyawan dan sebagai sanksi disiplin | Bagian 2 | Aziz |
 | U5 | Pengecualian scope: gaji, tunjangan, dan biaya yang timbul karena mutasi | Bagian 2 | FAT (pemutus biaya), Aziz (gaji dan tunjangan) |
@@ -158,25 +158,26 @@ Hitungan: 58 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beber
 | U19 | Sub divisi Operation (NOC, SOC, SD dan PM) sebagai pengertian Divisi | Bagian 3 (Divisi), bagian 2 (Batas rotasi dan mutasi) | Owner (menunggu K-10 di HR-ORG-01) |
 | U20 | Kalimat Batas rotasi dan mutasi (rotasi = sementara, penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, kembali ke tugas semula; mutasi = menetap, karena kebutuhan organisasi). Kalimat sama di HR-SOP-12 | Bagian 2 | Aziz, owner |
 | U21 | Perpindahan sementara di luar batas rotasi (mis. sementara ke unit atau lokasi lain) dikecualikan dari SOP ini dan belum diatur SOP mana pun | Bagian 2 (pengecualian) | Aziz |
-| U22 | Bila Atasan Langsung Tujuan sama dengan Atasan Langsung Asal dan jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan (tidak ada jabatan di atasnya di HR-ORG-01) | Bagian 9 baris 3 | Samuel |
+| U22 | Bila Atasan Langsung Tujuan sama dengan Atasan Langsung Asal dan jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan (tidak ada jabatan di atasnya di HR-ORG-01); diubah W9: kasus Direktur Utama sebagai Atasan Langsung Asal dan Tujuan kini diatur lewat pengecualian di butir 4.3, dan bagian 9 baris 3 merujuk ke sana (USULAN) | Bagian 9 baris 3 | Samuel |
 | U16 | Klausul ISO 9001:2015 dan ISO/IEC 27001:2022 di bagian 11 | Bagian 11 (label "(USULAN, perlu konfirmasi konsultan)") | Owner, diteruskan ke konsultan |
 
 ## Open items
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| O1 | Batas rotasi dan mutasi sudah memakai kalimat yang sama dengan HR-SOP-12 (bagian 2, sweep). Dua selisih tersisa untuk orkestrator di HR-SOP-12: (a) definisi Unit kerja HR-SOP-12 menaruh NOC, SOC, serta SD dan PM dalam satu unit Operation (USULAN); sesuai kalimat batas, pindah menetap antar sub divisi adalah mutasi dan pindah sementara yang kembali ke tugas semula adalah rotasi, sehingga kalimat itu perlu dihapus atau disesuaikan di HR-SOP-12; (b) HR-SOP-11 mengukur penurunan dengan tingkat posisi (grading, belum ditetapkan), sedangkan dokumen ini mengalihkan penurunan lewat tingkatan jabatan HR-SOP-12. Penulisan "Atasan Langsung Asal" dan "Atasan Langsung Tujuan" dengan huruf kapital di HR-SOP-12 diminta orkestrator dan tidak diubah di sini Diubah W9: definisi Unit kerja kini sama dengan HR-SOP-12 (NOC, SOC, serta SD dan PM dalam satu unit Operation, USULAN); kalimat batas tetap identik. Selisih (a) tentang pindah antar sub divisi tetap mengikuti kalimat batas dan perlu diputus LEAD. | Aziz (lewat orkestrator) |
+| O1 | Batas rotasi dan mutasi sudah memakai kalimat yang sama dengan HR-SOP-12 (bagian 2, sweep). Dua selisih tersisa untuk orkestrator di HR-SOP-12: (a) definisi Unit kerja HR-SOP-12 menaruh NOC, SOC, serta SD dan PM dalam satu unit Operation (USULAN); sesuai kalimat batas, pindah menetap antar sub divisi adalah mutasi dan pindah sementara yang kembali ke tugas semula adalah rotasi, sehingga kalimat itu perlu dihapus atau disesuaikan di HR-SOP-12; (b) HR-SOP-11 mengukur penurunan dengan tingkat posisi (grading, belum ditetapkan), sedangkan dokumen ini mengalihkan penurunan lewat tingkatan jabatan HR-SOP-12. Penulisan "Atasan Langsung Asal" dan "Atasan Langsung Tujuan" dengan huruf kapital di HR-SOP-12 diminta orkestrator dan tidak diubah di sini; diubah W9: definisi Unit kerja kini sama dengan HR-SOP-12 (NOC, SOC, serta SD dan PM dalam satu unit Operation, USULAN); kalimat batas tetap identik. Selisih (a) tentang pindah antar sub divisi tetap mengikuti kalimat batas dan perlu diputus LEAD. | Aziz (lewat orkestrator) |
 | O2 | Daftar lokasi operasional SINUX selain lokasi kerja utama tidak ada di sumber. Dokumen tidak membuatnya | Aziz, owner |
 | O3 | Mutasi atas permintaan karyawan dan sebagai sanksi disiplin dikecualikan (U4). Perlu keputusan apakah keduanya butuh SOP sendiri | Aziz |
 | O4 | Peraturan Perusahaan lengkap tidak dibaca. Bila memuat ketentuan mutasi, tempat kerja, atau persetujuan karyawan, ketentuan itu harus didahulukan dari butir 4.1 sampai 4.7 | Aziz, Legal |
 | O5 | Pengembalian dan pemindahan aset kerja saat pindah lokasi tidak diatur. SNX-ISMS-SOP-04 hanya mengatur pengembalian aset saat pemberhentian | Fani |
 | O6 | Mutasi mendesak (butuh pindah sebelum keputusan selesai) tidak diatur | Aziz, Samuel |
 | O7 | Butir K-03, K-04, K-05, dan K-10 di SNX-HR-ORG-01 (atasan berlabel menunggu konfirmasi, jabatan Divisi Operation tanpa pemegang) menentukan siapa Atasan Langsung Tujuan dan Asal untuk jabatan itu. Sampai terjawab, bagian 9 baris 4 berlaku | Owner |
-| O8 | Nama jabatan di dokumen ini mengikuti HR-ORG-01 (HR Manager). Sumber menulis HR Lead. Konfirmasi Aziz atau owner (data_conflicts) Ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; dokumen memakai HR Lead. | Aziz, owner |
+| O8 | Nama jabatan di dokumen ini mengikuti HR-ORG-01 (HR Manager). Sumber menulis HR Lead. Konfirmasi Aziz atau owner (data_conflicts); ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; dokumen memakai HR Lead. | Aziz, owner |
 | O10 | Pengajuan perubahan hak akses dan pencabutan akses lama: SNX-ISMS-SOP-02 tidak membedakan atasan asal dan tujuan. Dokumen ini menunjuk Atasan Langsung Tujuan dan batas 1 hari kerja (U14); pemilik ISMS-SOP-02 perlu mengonfirmasi | Fani |
-| O11 | Penanggap alternatif (U17) hanya dirumuskan untuk kasus pengusul sama dengan penanggap. Bila Atasan Langsung Asal berlabel menunggu konfirmasi atau tanpa pemegang, berlaku bagian 9 baris 4 Diubah W9: kasus Direktur Utama sebagai Atasan Langsung Tujuan dan Asal ditangani lewat pengecualian di butir 4.3 (USULAN). | Aziz |
+| O11 | Penanggap alternatif (U17) hanya dirumuskan untuk kasus pengusul sama dengan penanggap. Bila Atasan Langsung Asal berlabel menunggu konfirmasi atau tanpa pemegang, berlaku bagian 9 baris 4; diubah W9: kasus Direktur Utama sebagai Atasan Langsung Tujuan dan Asal ditangani lewat pengecualian di butir 4.3 (USULAN). | Aziz |
 | O12 | Perpindahan sementara ke unit, sub divisi, atau lokasi lain yang tidak termasuk rotasi (U21) tidak diatur HR-SOP-12 maupun dokumen ini. Perlu keputusan apakah butuh SOP atau butir sendiri | Aziz |
 | O9 | modifiedTime sumber dikutip dari prompt tugas dan tidak diukur ulang di sesi ini | Orkestrator |
+| O13 | Sejak JA-03 dan JA-04 punya dua garis tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3), ukuran tingkatan jabatan (USULAN) "jumlah garis lapor sampai Direktur Utama" bermakna ganda untuk JA-03, JA-04, dan bawahannya; perlu aturan jalur mana yang dihitung. Teks dokumen tidak diubah (R2) | Aziz, owner |
 
 ## 7. Jawaban dua pertanyaan penutup
 
@@ -230,3 +231,11 @@ Definisi Divisi dan kalimat batas rotasi dan mutasi tidak diubah (kalimat batas 
 A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04 dan tidak memakai keduanya sebagai contoh ukuran tingkatan jabatan, jadi tidak ada perubahan. Label K-02, K-03, K-04 tidak disentuh. SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan.
 
 Open item: O8 ditutup W9; O1 dan O11 diubah W9. Tambahan open item W9: pengecualian Direktur Utama di butir 4.3 dan kontrol penggantinya (USULAN), pemutus Samuel dan Aziz.
+
+Open item R2 (baru, O13): Sejak JA-03 dan JA-04 punya dua garis tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3), ukuran tingkatan jabatan (USULAN) "jumlah garis lapor sampai Direktur Utama" bermakna ganda untuk JA-03, JA-04, dan bawahannya; perlu aturan jalur mana yang dihitung. Teks dokumen tidak diubah (R2). Pemutus: Aziz, owner. Baris USULAN U2 dan U22 diberi tanda "diubah W9" di barisnya.
+
+R3 (ISO-W9 putaran 3):
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| R3 | Bagian 3, Divisi: "SNX-HR-ORG-01 menyatakan susunan ini berstatus (USULAN)." (salah atribusi) | "SNX-HR-ORG-01 menyatakan nama jabatan, jenjang, headcount, dan garis lapor ke COO di Divisi Operation berstatus (USULAN)." (sama dengan SNX-HR-SOP-11 bagian 3; sesuai SNX-HR-ORG-01 Struktur Divisi Operation, K-10). Hanya kalimat itu |
