@@ -7,7 +7,7 @@
     "number": "SNX-COM-FRM-01",
     "department": "Commercial",
     "title": "Customer Requirement & Order Review Record",
-    "process_owner": "Direktur",
+    "process_owner": "VP Commercial",
     "classification": "INTERNAL",
     "review_period": "YEARLY",
     "status": "Draft",
@@ -36,7 +36,7 @@
             ["Review kontrak lengkap oleh Legal & Compliance", "Memakai SNX-LEG-SOP-02 dan SNX-LEG-FRM-01. Formulir ini hanya mencatat hasilnya pada aspek C3.4 sampai C3.7."],
             ["Penyusunan proposal, validasi harga, dan persetujuan harga", "Diatur di SNX-COM-SOP-02. Formulir ini hanya merujuk Catatan persetujuan penawaran pada aspek C3.2."],
             ["Keputusan atas pengecualian komersial", "Diatur di SNX-COM-SOP-02 butir 4.10 dan 6.4. Formulir ini hanya mencatat bahwa pengecualian ada."],
-            ["Serah terima order ke Delivery", "Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Calon rekamannya SNX-COM-FRM-02 (USULAN)."],
+            ["Serah terima order ke Delivery", "Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Rekaman serah terimanya SNX-COM-FRM-02."],
             ["Order tambahan dan perpanjangan untuk customer yang sudah berjalan", "Account management berada di luar SNX-COM-SOP-01 (butir 4.17), sehingga formulir ini juga tidak mencakupnya (USULAN)."],
             ["Penagihan dan invoice", "Diatur di SNX-FAT-SOP-01 dan berlangsung sesudah order diterima."]
           ]
@@ -128,8 +128,8 @@
             ["Manager of Product Tech", "Mengisi kelompok C2 (Ketentuan butir 3 dan 4). Mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN, SNX-COM-SOP-02 butir 4.5). Jabatan JA-05 di SNX-HR-ORG-01."],
             ["Service Delivery Manager", "Mengisi kelompok C4 (Ketentuan butir 3 dan 4). Jabatan usulan tanpa pemegang di SNX-HR-ORG-01 (K-10)."],
             ["Legal & Compliance", "Mengisi aspek C3.4 sampai C3.7 dan memberi hasil review kontrak menurut SNX-LEG-SOP-02 (Ketentuan butir 4 dan 5). Jabatan JA-08 dan JA-09 di SNX-HR-ORG-01."],
-            ["VP Commercial", "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik formulir terisi (USULAN, selaras dengan bagian 11 SNX-COM-SOP-02). Jabatan JA-03 di SNX-HR-ORG-01."],
-            ["COO", "Pemilik dokumen ini menurut blok Identity (USULAN). Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi formulir ini."],
+            ["VP Commercial", "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01."],
+            ["COO", "Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi formulir ini."],
             ["Direktur Utama", "Memutuskan TOP di atas standar secara tertulis (aspek C3.3, SNX-COM-SOP-02 butir 4.10). Tidak mengisi formulir ini."]
           ]
         }},
@@ -309,7 +309,7 @@
             ["SNX-OPS-FRM-06", "Project Handover / BAST & Closure Report. Dirujuk aspek C4.2 untuk syarat penerimaan hasil kerja."],
             ["SNX-ISMS-PRO-01", "Information Classification & Handling Procedure. Butir 4.3 menetapkan tingkat informasi customer."],
             ["SNX-HR-ORG-01", "Struktur Organisasi SINUX. Sumber nama peran. Service Delivery Manager adalah jabatan usulan tanpa pemegang (K-10)."],
-            ["SNX-COM-FRM-02", "Project Handover Record. Calon rekaman paket handover sesudah order diterima (USULAN)."]
+            ["SNX-COM-FRM-02", "Project Handover Record. Rekaman paket handover sesudah order diterima."]
           ]
         }}
       ]
@@ -350,7 +350,7 @@
     {
       "h": "Kesimpulan",
       "blocks": [
-        {"p": "Formulir ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. COO meninjau formulir ini setiap tahun, sesuai Review Period pada blok Identity."}
+        {"p": "Formulir ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau formulir ini setiap tahun, sesuai Review Period pada blok Identity."}
       ]
     }
   ]

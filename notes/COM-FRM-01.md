@@ -143,7 +143,7 @@ Spec memuat 19 kemunculan persis "(USULAN)" (satu di antaranya baris definisi la
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Process Owner "Direktur" (COO) mengikuti aturan dokumen tanpa sumber di defaults. SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial karena Sales SOP menulis "Document Owner: VP of Commercial". Putuskan apakah formulir ini juga berpemilik VP Commercial; bila ya, blok Identity dan tabel Peran perlu diubah | owner |
+| 1 | Process Owner "Direktur" (COO) mengikuti aturan dokumen tanpa sumber di defaults. SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial karena Sales SOP menulis "Document Owner: VP of Commercial". Putuskan apakah formulir ini juga berpemilik VP Commercial; bila ya, blok Identity dan tabel Peran perlu diubah ditutup W9: Process Owner diputus VP Commercial (A7, rekomendasi LEAD, owner GO); blok Identity dan tabel Peran diselaraskan. | owner |
 | 2 | SNX-COM-SOP-01 butir 6.7 (Closing) dan butir 4.15 belum menyebut formulir ini; Closing hanya mensyaratkan "PO diterima", "kontrak ditandatangani", "persetujuan internal selesai". Perlu satu rujukan satu arah dari SOP ke formulir, titik pemakaian di antara PO sampai dan pernyataan menerima order, dan kepastian bahwa formulir ini memegang dua peran calon rekaman (cacat tambahan A dan B) | owner |
 | 3 | Pemutus penerimaan order belum ada di sumber. Penetapan VP Commercial (USULAN 4) belum memuat batas nilai atau jenis order yang perlu COO atau Direktur Utama. Authority Matrix belum bernomor; harga dan margin di COM-SOP-02 butir 4.7 masih USULAN | owner dan Samuel |
 | 4 | Tenggat penyelesaian kelompok C1 sampai C4 dan Hasil Review tidak ada di sumber; formulir tidak memuat angka waktu | owner |
@@ -204,3 +204,19 @@ SNX-COM-SOP-02 kini hanya punya butir 4.1 sampai 4.14 (specs/COM-SOP-02.json dib
 Jumlah "(USULAN)" persis di spec naik dari 19 ke 20 karena label di butir 1. Tidak ada keputusan baru; status USULAN dibawa dari SNX-COM-SOP-02. Dua temuan nonblocking lain di qa/COM-FRM-01.sweep.r1.json (baris COO di tabel Peran tanpa rujukan, dan temuan verifikasi lama) tidak diubah karena di luar perintah.
 
 Uji: `python3 -I reports/orch/refcheck.py COM-FRM-01` memberi `{}`; render_sop.py tanpa galat; lint_doc.py generic "pass": true, fails kosong, satu warn "20 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan.py "ok 17 COM-FRM-01.docx []".
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A7 Identity | Process Owner "Direktur" | Process Owner "VP Commercial" |
+| A7 Peran, baris VP Commercial | "Pemilik formulir terisi (USULAN, selaras dengan bagian 11 SNX-COM-SOP-02)." | "Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN)." (sekaligus butir 5: rujukan bagian 11 dihapus karena bagian 11 SNX-COM-SOP-02 tidak menetapkan pemilik Catatan review scope; VP Commercial sebagai pemilik proses ada di bagian 5 SNX-COM-SOP-02, bukan rujukan yang dipakai di sini) |
+| A7 Peran, baris COO | "Pemilik dokumen ini menurut blok Identity (USULAN). Menyetujui harga ..." | "Menyetujui harga ..." |
+| A7 Kesimpulan | "COO meninjau formulir ini setiap tahun" | "VP Commercial meninjau formulir ini setiap tahun" |
+| 6 Dokumen Terkait / Lingkup | "Calon rekamannya SNX-COM-FRM-02 (USULAN)." (baris Serah terima order ke Delivery) | "Rekaman serah terimanya SNX-COM-FRM-02." |
+| 6 Dokumen Terkait, SNX-COM-FRM-02 | "Calon rekaman paket handover sesudah order diterima (USULAN)." | "Rekaman paket handover sesudah order diterima." |
+
+Butir 3 (A3): COM-FRM-01 hanya menulis "Jabatan JA-03 di SNX-HR-ORG-01"; tidak ada atasan atau garis lapor JA-03/JA-04 yang perlu diselaraskan.
+
+Open item ditutup atau diubah:
+- Open item 1 (Process Owner Direktur vs VP Commercial): ditutup W9 (A7).
