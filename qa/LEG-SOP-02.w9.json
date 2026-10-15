@@ -2,28 +2,39 @@
  "key": "LEG-SOP-02",
  "cluster": "LEG-A",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 3,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "notes/LEG-SOP-02.md baris 136 masih menulis 'Jumlah USULAN: 7 butir (16 kemunculan label)'. Sesudah W9, dua label pemetaan di bagian 5 dan satu di bagian 11 sudah dihapus, jadi hitungan itu basi. Isinya catatan, tidak tampil di dokumen.",
-  "notes/LEG-SOP-02.md tabel USULAN baris 131 (butir 4, pemetaan JA-08/JA-09) belum diberi status [ditutup W9] di tabelnya sendiri. Penutupannya hanya dicatat di daftar ISO-W9 (baris 222). Butir 10 dan 12 sudah ditandai di tabel. Instruksi meminta status baris lama diubah.",
-  "Rujukan 'butir K-13' dihapus dari tiga tempat. Ini sesuai A5 (label USULAN pemetaan dihapus). Rujukan yang tersisa (SNX-HR-ORG-01, jabatan JA-08 dan JA-09) cocok dengan tabel jabatan di struct/HR-ORG-01.txt baris 54 dan 55. Tabel K-13 di HR-ORG-01 adalah urusan dokumen HR lain dan tidak diperiksa di sini.",
-  "A3: dokumen tidak menyebut JA-03 atau JA-04 maupun garis lapor, sebelum ataupun sesudah W9 (grep render 0), jadi A3 tidak berlaku untuk dokumen ini. Notes mencatatnya dengan benar."
+  "notes/LEG-SOP-02.md open item 9 (baris 150) masih menulis 'dua rujukan template dan format register di bagian 11 kini menunjuk SNX-LEG-SOP-01 bagian 2'. Sesudah R3, register permintaan Legal tidak lagi diatribusikan ke SOP-01, jadi kalimat itu sedikit tidak akurat. Tabel ISO-W9 baris R3 sudah mencatat perubahan itu dengan benar.",
+  "Kalimat bagian 11 baris SNX-HR-ORG-01 yang berubah masih memuat 'sumber nama peran'. Teks itu terbawa dari versi sebelum W9 dan bukan frasa terlarang yang persis ('dokumen sumber', 'sumber tim', 'di sumber'). Disebut hanya untuk diketahui.",
+  "Rujukan 'SNX-LEG-SOP-01 bagian 2 (Scope)': di render SOP-01 judul bagian tampak 'SCOPE' dan daftar isinya '2. Scope'. Kalimat di bagian 2 (paragraf di luar scope) memang menyebut template NDA, PKS, addendum dan format register kontrak serta register perizinan belum disusun. Rujukan cocok."
  ],
  "butir_dikerjakan": [
-  "A5 blok approval: prepared 'Alif Altamziz / Staff Legal' dan reviewed 'Ester Febe Utomo / Line Manager Legal' persis sama dengan defaults v22 prepared_reviewed.LEG. Approved 'Samuel Kristanto Utomo / President Director' sama dengan approved_by.all dan tidak berubah.",
-  "A5 label pemetaan: '(USULAN)' dan 'menunggu konfirmasi (K-13)' dihapus dari baris peran Staff Legal (JA-09) dan Line Manager Legal (JA-08) di bagian 5, serta '(USULAN, butir K-13)' dari baris SNX-HR-ORG-01 di bagian 11. Label USULAN lain (GLPI, SLA, butir 4.19, checklist, klausul) tetap ada.",
-  "A5 nama orang hanya muncul di blok Prepared/Reviewed (Alif 1x, Ester 1x di render). Badan dokumen tetap memakai nama peran. Daffa 0.",
-  "A5 nama unit: 6 dari 6 'Divisi Legal' diganti 'Departemen Legal' (Purpose, caption Gambar 1, Istilah Register permintaan Legal, Istilah Review kontrak, dua baris Dokumen terkait di bagian 11). Sesuai unit_names v22.",
-  "B4 notes: open item 10 (sumber draf tim) ditutup W9 dengan alasan modifiedTime yang diukur LEAD (G-2). Open item 12 (penamaan unit) ditutup W9 dengan A5. Bagian '## ISO-W9' berisi tabel 11 perubahan, sama dengan 11 baris berubah di diff.",
-  "Bahasa kalimat yang berubah: tanpa em-dash (render 0), tanpa frasa proses penyusunan, tanpa pasif baru, tanpa rujukan AI. Tidak ada perubahan lain di luar butir, dan tidak ada fakta baru."
+  "A5: blok Prepared = 'Alif Altamziz / Staff Legal', Reviewed = 'Ester Febe Utomo / Line Manager Legal', Approved = 'Samuel Kristanto Utomo / President Director'. Ketiganya persis config/defaults.json v22 (prepared_reviewed.LEG, approved_by.all).",
+  "A5: label 'menunggu konfirmasi (K-13) (USULAN)' dihapus dari pemetaan Staff Legal ke JA-09 dan Line Manager Legal ke JA-08 di bagian 5. Label '(USULAN, butir K-13)' dihapus dari baris SNX-HR-ORG-01 di bagian 11. Label USULAN lain tetap ada (15 kemunculan, semuanya tidak terkait pemetaan Legal).",
+  "A5: 6 'Divisi Legal' diganti 'Departemen Legal' (Purpose, 2 definisi di bagian 3, caption Gambar 1, 2 baris bagian 11). Nama orang hanya muncul di blok Prepared/Reviewed. Daffa 0.",
+  "A3: tidak berlaku. Dokumen tidak menyebut JA-03, JA-04, VP Commercial, atau VP Tech (grep 0).",
+  "B4 (notes): open item 10 (sumber utama draf tim yang sedang ditulis) ditutup W9 dengan alasan G-2. Open item 12 (penamaan unit) ditutup W9 dengan alasan A5. USULAN 4 ditutup. Tabel ISO-W9 lengkap dengan baris R2 dan R3.",
+  "R2 butir 2: kedua rujukan ke judul rekaan 'SOP Departemen Legal' diganti menjadi 'SNX-LEG-SOP-01 bagian 2 (Scope)'. Di render SOP-01, bagian 2 memang menyatakan template NDA/PKS/addendum dan format register kontrak belum disusun.",
+  "R2 butir 3: baris open item dan USULAN yang ditutup atau diubah memuat 'ditutup W9' atau 'diubah W9' di baris itu sendiri.",
+  "R3: baris format register dipisah. Register kontrak tetap merujuk SNX-LEG-SOP-01 bagian 2. Register permintaan Legal ditulis 'belum disusun' tanpa atribusi ke SOP-01 dan dicatat di notes. Status 'belum disusun' sudah ada di versi sebelum W9, jadi bukan fakta baru."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Hasil grep pada teks render /tmp/claude-0/w9/render/LEG-SOP-02.docx (sesudah W9). Divisi Legal 0, Departemen Legal 6, HR Manager 0, Daffa 0, 'menunggu konfirmasi' 0, K-13 0, em-dash 0, JA-03 0, JA-04 0, Alif Altamziz 1, Ester Febe Utomo 1. Diff: 11 baris lama diganti 11 baris baru. Spec diff hanya menyentuh approval, purpose, definitions, roles, caption, dan related_docs.",
+ "grep": "Teks render sesudah (/tmp/claude-0/w9/render/LEG-SOP-02.docx): 'Divisi Legal' 0, 'Departemen Legal' 4 paragraf, 'HR Manager' 0, 'K-13' 0, 'menunggu konfirmasi' 0, 'Daffa' 0, em-dash 0. Di specs/LEG-SOP-02.json, 'Divisi Legal' juga 0 dan JA-03/JA-04/VP 0.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R3",
    "verdict": "PASS",
    "blocking": []
   }

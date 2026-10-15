@@ -128,12 +128,12 @@ Cacat tambahan di sumber utama (tidak ada di audit):
 | 1 | Kanal permintaan = tiket GLPI (SINUX Service Hub). Sumber hanya punya placeholder; owner memutus GLPI untuk generalist, batas "generalist" belum dirinci | scope butir 4, 6.1 intro dan langkah 1 | owner |
 | 2 | Semua target waktu di bagian 8 (NDA 1 dan 2 hari kerja, review kontrak atau PKS 1 dan 3 sampai 5, kontrak baru 1 dan 5, korporasi 2, mendesak, jawaban Pemohon 2 hari kerja). Sumber sendiri menyebutnya "usulan awal"; satuan hari kerja (asumsi 1) | bagian 8 | Legal (Line Manager Legal) |
 | 3 | Pelaku yang SOP tetapkan untuk langkah berkalimat pasif di sumber (butir 4.6, 4.11; 6.4 langkah 9; 6.7 langkah 3 dan 8; 6.10 langkah 3 dan 6) dan Line Manager Legal sebagai pemilik rekaman di bagian 11 | butir 4.19, bagian 11 | Legal |
-| 4 | Pemetaan Line Manager Legal ke Legal & Compliance (JA-08) dan Staff Legal ke JA-09 (berasal dari SNX-HR-ORG-01, K-13, sudah USULAN di sana) | tabel peran | owner |
+| 4 | Pemetaan Line Manager Legal ke Legal & Compliance (JA-08) dan Staff Legal ke JA-09 (berasal dari SNX-HR-ORG-01, K-13, sudah USULAN di sana) | tabel peran | owner; ditutup W9: pemetaan diputus owner (G-3 A5), label USULAN dihapus dari dokumen |
 | 5 | Checklist review: SNX-LEG-FRM-01 untuk kontrak pelanggan, SNX-LEG-FRM-02 untuk kontrak vendor atau pemasok. Sumber hanya menulis "Contract Review Checklist" | Dokumen terkait | Legal |
 | 6 | Daftar klausul ISO (bagian 3 notes ini): 9001 8.2.3, 8.2.4, 8.4.3, 7.5.3; 27001 Annex A 5.31, 5.20, 5.34, 6.6 | iso_refs | owner (meneruskan ke konsultan) |
 | 7 | Process owner = Line Manager Legal. Sumber utama menulis "Departemen Legal" (unit, bukan jabatan); sumber lama menulis "Pemilik SOP: Line Manager Legal"; defaults (fallback reviewer departemen) memberi hasil yang sama. Tidak diberi label di dokumen karena medan identitas satu baris | meta.process_owner | owner |
 
-Jumlah USULAN: 7 butir (16 kemunculan label "(USULAN)" di dokumen, menurut warn lint).
+Jumlah USULAN: 7 butir (16 kemunculan label "(USULAN)" di dokumen, menurut warn lint). Diubah W9: USULAN 4 ditutup, tersisa 6 butir terbuka.
 
 ## Open items
 
@@ -145,12 +145,12 @@ Jumlah USULAN: 7 butir (16 kemunculan label "(USULAN)" di dokumen, menurut warn 
 | 4 | Pelaku pemberian akses ke kontrak (butir 4.17, sumber pasif) dan tingkat klasifikasi tiap jenis kontrak menurut SNX-ISMS-PRO-01 | Legal |
 | 5 | Baris "Dokumen Korporasi/Perizinan" ada di tabel target waktu sumber tetapi di luar daftar jenis kontrak pada scope sumber. Dipertahankan di bagian 8; Legal memutus apakah dipindah ke SNX-LEG-SOP-01 | Legal |
 | 6 | "Media persetujuan internal yang ditetapkan" (butir 4.13) dan "metodologi risiko Perusahaan, apabila telah ditetapkan" (butir 4.11) belum ada | Legal |
-| 7 | Atasan Line Manager Legal: sumber lama [ISI], Jobdesk "CEO", HR-JA-001 "Management / Direktur"; SNX-HR-ORG-01 K-03. Dokumen ini netral | owner |
+| 7 | Atasan Line Manager Legal: sumber lama [ISI], Jobdesk "CEO", HR-JA-001 "Management / Direktur"; SNX-HR-ORG-01 K-03. Dokumen ini netral | owner; tetap terbuka W9: K-03 belum diputus (A4 tidak berubah) |
 | 8 | Pengecualian scope dan baris Dokumen terkait untuk SNX-LEG-SOP-01 dan -03 bergantung pada isi dokumen itu. Spec LEG-SOP-01 (draf paralel, dibaca saja di akhir) memuat korporasi, perizinan, sengketa, somasi, dan klaim di scope-nya, sesuai pengecualian di sini, dan memakai GLPI untuk permintaan; spec LEG-SOP-03 belum ada. Bila isinya berubah, perbarui scope butir 5 dan tabel Dokumen terkait | Legal (setelah spec LEG-SOP-03 ada) |
-| 9 | Lampiran sumber lama yang belum disusun: template kontrak, playbook klausul, format redline dan ringkasan risiko, format register. Playbook dan format redline tidak dirujuk dokumen ini | Legal |
-| 10 | Sumber utama adalah draf tim yang sedang ditulis. Bila modifiedTime berubah sesudah 2026-10-14T09:08:19.129Z, spec perlu dicocokkan ulang | LEAD ISO [ditutup W9] |
+| 9 | Lampiran sumber lama yang belum disusun: template kontrak, playbook klausul, format redline dan ringkasan risiko, format register. Playbook dan format redline tidak dirujuk dokumen ini | Legal; diubah W9 R2: dua rujukan template dan format register di bagian 11 kini menunjuk SNX-LEG-SOP-01 bagian 2 (Scope), yang menyatakan lampiran itu belum disusun |
+| 10 | Sumber utama adalah draf tim yang sedang ditulis. Bila modifiedTime berubah sesudah 2026-10-14T09:08:19.129Z, spec perlu dicocokkan ulang | LEAD ISO; ditutup W9: LEAD mengukur modifiedTime sumber tidak berubah (G-2) |
 | 11 | KPI Jobdesk "Review kontrak sesuai SLA 90% tepat waktu" bergantung pada target usulan bagian 8; tidak disalin ke sini | Legal |
-| 12 | Penamaan unit: dokumen ini memakai "Divisi Legal" (kata kriteria baris); sumber utama memakai "Departemen Legal" hanya di Pemilik Dokumen; spec LEG-SOP-01 memakai "Departemen Legal". Satu sebutan untuk seluruh dokumen Legal perlu diputus | LEAD ISO, lalu owner bila perlu [ditutup W9] |
+| 12 | Penamaan unit: dokumen ini memakai "Divisi Legal" (kata kriteria baris); sumber utama memakai "Departemen Legal" hanya di Pemilik Dokumen; spec LEG-SOP-01 memakai "Departemen Legal". Satu sebutan untuk seluruh dokumen Legal perlu diputus | LEAD ISO, lalu owner bila perlu; ditutup W9: owner memutus Departemen Legal untuk seluruh dokumen Legal (A5) |
 
 ## 6. Pengukuran ulang modifiedTime
 
@@ -212,8 +212,11 @@ Hasil uji sesudah sweep: render exit 0; lint `"pass": true`, `"fails": []`, warn
 | A5 nama unit, bagian 3 Register permintaan Legal | diterima Divisi Legal | diterima Departemen Legal |
 | A5 nama unit, bagian 3 Review kontrak | oleh Divisi Legal | oleh Departemen Legal |
 | A5 nama unit, caption Gambar 1 | oleh Divisi Legal | oleh Departemen Legal |
-| A5 nama unit, bagian 11 template kontrak | menurut SOP Divisi Legal | menurut SOP Departemen Legal |
-| A5 nama unit, bagian 11 format register | menurut SOP Divisi Legal | menurut SOP Departemen Legal |
+| A5 nama unit, bagian 11 template kontrak | menurut SOP Divisi Legal | menurut SOP Departemen Legal; diubah W9 R2: lihat baris R2 template kontrak |
+| A5 nama unit, bagian 11 format register | menurut SOP Divisi Legal | menurut SOP Departemen Legal; diubah W9 R2: lihat baris R2 format register |
+| R2 bagian 11 template kontrak | belum disusun menurut SOP Departemen Legal (nama dokumen rekaan) | belum disusun, sesuai SNX-LEG-SOP-01 bagian 2 (Scope). SNX-LEG-SOP-01 bagian 2 menyebut template NDA, PKS, dan addendum belum disusun, jadi rujukan memakai bagian itu (SOP-01 tidak punya butir bernomor di bagian 2) |
+| R2 bagian 11 format register | belum disusun menurut SOP Departemen Legal (nama dokumen rekaan) | belum disusun, sesuai SNX-LEG-SOP-01 bagian 2 (Scope). Bagian itu menyebut format register kontrak dan register perizinan belum disusun; format register permintaan Legal tidak disebut tersendiri di SOP-01 (dicatat sebagai selisih, rujukan tetap bagian 2) |
+| R3 bagian 11 format register | Format register permintaan Legal dan register kontrak; belum disusun, sesuai SNX-LEG-SOP-01 bagian 2 (Scope). | Format register kontrak; belum disusun, sesuai SNX-LEG-SOP-01 bagian 2 (Scope). Format register permintaan Legal; belum disusun. SNX-LEG-SOP-01 bagian 2 hanya menyebut format register kontrak dan register perizinan, bukan register permintaan Legal; rujukan register permintaan Legal dihapus, statusnya ditulis tanpa atribusi ke SNX-LEG-SOP-01 |
 
 Open item:
 
