@@ -233,3 +233,8 @@ nihil (subst_diff build kosong).
 
 ### W10 koreksi worker (temuan nonblocking qa/COM-FRM-02.w10.json)
 - Tabel Rekaman: kalimat pengganti rujukan "Klasifikasi menurut butir 4.14" membawa label butir asal: "Klasifikasi form terisi RESTRICTED (Internal) (USULAN)."
+
+### W10 label digabung (dicatat worker, STYLE §3.5 dan §3.6)
+- tabel Peran, VP Commercial: beberapa label (USULAN) digabung menjadi satu label di akhir butir; tidak ada aturan yang kehilangan status USULAN.
+  - Asli: "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau formulir ini setiap tahun (USULAN). Pemilik formulir terisi (USULAN, bagian Rekaman) dan menetapkan lokasi rekamannya."
+  - W10: "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Sebagai pemilik form ini dan form terisi, meninjau form ini setiap tahun dan menetapkan lokasi record (rekaman) form terisi (USULAN)."

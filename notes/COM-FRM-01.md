@@ -241,3 +241,8 @@ nihil (subst_diff build kosong).
 - Padanan heading pada kemunculan pertama: "Form (formulir)" di Tujuan, "record (rekaman)" di Hasil yang dijaga. Acuan ISO "Bagian Record" diganti "Tabel Rekaman" mengikuti heading.
 - Lebar kolom daftar periksa C1 sampai C4 menjadi 1,4/2,9/6,4/2,0/3,3 cm agar kode aspek tidak terpotong dan kolom Catatan lebih lebar; min_row_cm 1,0 pada tabel Temuan dan Tindak Lanjut serta Catatan Review dan Persetujuan.
 - Calque diperbaiki 8 (termasuk "yang COO setujui" yang tidak terdeteksi pemindai).
+
+### W10 label digabung (dicatat worker, STYLE §3.5 dan §3.6)
+- tabel Peran, VP Commercial: beberapa label (USULAN) digabung menjadi satu label di akhir butir; tidak ada aturan yang kehilangan status USULAN.
+  - Asli: "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01."
+  - W10: "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai. Jabatan JA-03 di SNX-HR-ORG-01. Pemilik form ini dan form terisi (USULAN)."

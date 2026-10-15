@@ -288,3 +288,8 @@ nihil (subst_diff kosong di reports/w10/gates/LEG-FRM-01.json).
 
 ### W10 koreksi worker (~07:34Z)
 - Petunjuk 9: pemetaan baris tanda tangan per pihak dikembalikan (Diperiksa oleh = Line Manager Legal, Disetujui oleh = Pejabat Berwenang, diisi pihak itu sendiri); sempat kabur menjadi "Dua baris lainnya diisi ..." (temuan nonblocking qa/LEG-FRM-01.w10.json).
+
+### W10 label digabung (dicatat worker, STYLE §3.5 dan §3.6)
+- Ketentuan Penggunaan butir 5: beberapa label (USULAN) digabung menjadi satu label di akhir butir; tidak ada aturan yang kehilangan status USULAN.
+  - Asli: "5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi (cara mencentang di Petunjuk Pengisian butir 5), dan menulis dasar rekomendasi. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN). Line Manager Legal memeriksa formulir terisi."
+  - W10: "5. Staff Legal mencentang Hasil Penelaahan dan Rekomendasi serta menulis dasar rekomendasi, lalu form terisi diperiksa Line Manager Legal. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali Tidak terdapat temuan; Rekomendasi hanya satu pilihan (USULAN)."
