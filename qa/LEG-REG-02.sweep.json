@@ -1,0 +1,21 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Definisi, baris Line Manager Legal dan Staff Legal",
+      "masalah": "Butir sweep 1 sudah dikerjakan dan punya dasar: JA-08 dan JA-09 tertulis 'Legal & Compliance' di specs/HR-ORG-01.json, dan pemetaannya sama dengan SNX-LEG-SOP-03 (berlabel USULAN). Kalimat baru memakai pasif tanpa pelaku ('dipetakan'). Kata ini mengikuti bunyi instruksi sweep dan pola SNX-LEG-SOP-03, jadi bukan pemblokir.",
+      "bukti": "Sesudah: \"Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01 (USULAN).\" HR-ORG-01: \"JA-08 Legal & Compliance\", \"JA-09 Legal & Compliance\". LEG-SOP-03 roles: \"Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).\""
+    },
+    {
+      "lokasi": "Definisi, baris Legal dan Compliance",
+      "masalah": "Ditambah 'Pemilik dokumen ini'. Ini tidak tercantum dalam butir instruksi, tetapi sama dengan meta process_owner 'Legal dan Compliance' di halaman depan. Maknanya tidak berubah dan tidak ada fakta baru. Hanya informasi.",
+      "bukti": "Sesudah: \"Pemilik dokumen ini. Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01, tertulis Legal & Compliance di sana.\" Meta: \"process_owner\": \"Legal dan Compliance\"."
+    },
+    {
+      "lokasi": "Rekaman, baris Register ini; Ketentuan butir 20",
+      "masalah": "Pemilik rekaman diselaraskan ke Line Manager Legal sesuai SNX-LEG-SOP-03, yang menulis 'pemilik Line Manager Legal' untuk semua kategori rekaman Legal, termasuk Kategori 6. Butir 20 (Staff Legal menyimpan register) tidak berubah dan tidak bertentangan dengan perubahan ini, karena pembagian penyimpan dan pemilik sama dengan pola SOP-03. Baris Bukti penyelesaian tetap bermilik Pemilik Risiko, dan alasannya ditulis di notes sesuai instruksi.",
+      "bukti": "Sebelum: \"Pemilik: Staff Legal.\" Sesudah: \"Pemilik: Line Manager Legal, mengikuti SNX-LEG-SOP-03.\" LEG-SOP-03 records Kategori 6: \"Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal\"."
+    }
+  ]
+}

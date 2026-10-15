@@ -83,7 +83,11 @@
               ],
               [
                 "Legal dan Compliance",
-                "Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01. Di dokumen ini pemegangnya disebut Line Manager Legal dan Staff Legal (USULAN)."
+                "Pemilik dokumen ini. Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01, tertulis Legal & Compliance di sana."
+              ],
+              [
+                "Line Manager Legal",
+                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01 (USULAN)."
               ],
               [
                 "Manajemen",
@@ -104,6 +108,10 @@
               [
                 "Risiko hukum",
                 "Kemungkinan sebuah peristiwa dalam kegiatan usaha SINUX menimbulkan akibat hukum bagi SINUX."
+              ],
+              [
+                "Staff Legal",
+                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01 (USULAN)."
               ],
               [
                 "Tingkat risiko",
@@ -900,7 +908,7 @@
             "rows": [
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal, Staff Legal, dan unit Management."
+                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), unit Management, dan dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)."
               ],
               [
                 "SNX-ISMS-PRO-01",
@@ -967,7 +975,7 @@
             "rows": [
               [
                 "Register ini: tabel Identifikasi Risiko, Penilaian Risiko, Rencana Mitigasi, Pelaksanaan Mitigasi, Ringkasan Risiko, dan Riwayat Penilaian dan Status",
-                "Folder Google Drive departemen Legal (Ketentuan butir 20). Pemilik: Staff Legal. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Folder Google Drive departemen Legal (Ketentuan butir 20). Pemilik: Line Manager Legal, mengikuti SNX-LEG-SOP-03. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
                 "Belum ditetapkan. Usulan masa retensi register Departemen Legal ada di SNX-LEG-SOP-03 (Kategori 6)."
               ],
               [

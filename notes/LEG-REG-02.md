@@ -52,7 +52,7 @@ Perintah render: `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx spec
 
 Perintah lint: `python3 -I tools/lint_doc.py /tmp/pen-LEG-REG-02/LEG-REG-02.docx generic`
 
-Hasil terakhir: `"pass": true`, `"fails": []`, `"warns": ["13 butir (USULAN) menunggu ACC"]` (keluaran tersimpan di /tmp/pen-LEG-REG-02/lint_final.json). Putaran 1 sudah lulus lint; putaran berikutnya hanya memperbaiki tata letak (lihat bawah), memecah satu butir panjang, dan menghapus kata sifat tanpa ukuran di keterangan skala Dampak.
+Hasil terakhir (sesudah sweep): `"pass": true`, `"fails": []`, `"warns": ["15 butir (USULAN) menunggu ACC"]` (keluaran tersimpan di /tmp/pen-LEG-REG-02/lint_final.json). Validasi OOXML `python3 /mnt/skills/public/docx/scripts/office/validate.py`: "All validations PASSED!". `python3 -I reports/orch/blankscan.py`: "ok". Putaran 1 sudah lulus lint; putaran berikutnya hanya memperbaiki tata letak (lihat bawah), memecah satu butir panjang, dan menghapus kata sifat tanpa ukuran di keterangan skala Dampak.
 
 Pratinjau visual (soffice ke PDF, 14 halaman, contact sheet dan halaman 8, 10, 11, 12 dibaca): sampul, Identity, Revision, Approval, TOC, dan sepuluh bagian tampil. Diagram alur (11 simpul, "rankdir": "TB") terbaca. Perbaikan tata letak karena isi: judul kolom terpotong di tengah kata ("Kemungkinan", "Penanggung Jawab", "Penyelesaian", "No") pada tabel tujuh kolom, diatasi dengan memecah tabel Rencana Mitigasi menjadi dua (empat kolom) dan membuang kolom Area dari tabel Penilaian Risiko (nomor baris sama dengan tabel Identifikasi). Cek terakhir lewat pdftotext: tidak ada judul kolom terpotong di tengah kata.
 
@@ -99,7 +99,7 @@ Kode dokumen yang dirujuk di badan (12 kode, termasuk dirinya) dicek dengan skri
 
 | # | USULAN | Posisi | Pemutus yang disarankan |
 |---|---|---|---|
-| 1 | Peran "Legal dan Compliance" (pemilik dokumen) dipasangkan ke Line Manager Legal dan Staff Legal (JA-08 dan JA-09) | Istilah | Aziz (pemilik SNX-HR-ORG-01, K-13) |
+| 1 | Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) di SNX-HR-ORG-01; "Legal dan Compliance" adalah pemilik dokumen | Istilah; Dokumen Terkait | Aziz (pemilik SNX-HR-ORG-01, K-13) |
 | 2 | "Manajemen" = Direktur Utama dan Direktur (COO), menggantikan "pejabat yang berwenang" | Istilah; Ketentuan butir 12 sampai 14 | Samuel |
 | 3 | Pengecualian lingkup: risiko keamanan informasi (SNX-ISMS-REG-02) dan risiko proyek (SNX-OPS-FRM-02) tidak dicatat; area 4 dan 5 hanya akibat hukum | Lingkup | Legal dan Fani |
 | 4 | Keterangan lima tingkat Dampak | Metode Penilaian 3.2 | Legal |
@@ -130,6 +130,7 @@ Kode dokumen yang dirujuk di badan (12 kode, termasuk dirinya) dicek dengan skri
 | 10 | Dokumen sumber disunting sesudah audit (modifiedTime lebih baru ±10 jam); perubahan di luar teks tidak terukur | Legal (pemilik sumber) |
 | 11 | Pemilik dokumen tingkat jabatan: sumber menulis unit, bukan jabatan; JA-08 dan JA-09 sama-sama bernama Legal & Compliance di SNX-HR-ORG-01 | Aziz |
 | 12 | Tata letak: renderer tidak mengatur baris tabel agar tidak terbelah antarhalaman. Di PDF pratinjau, baris judul tabel 7.4 terbelah antara halaman 11 dan 12 (nilai bergantung paginasi, bisa berbeda di Word). HUMAN-VERDICT: lihat di Word sebelum dikirim. Bukan perubahan renderer (di luar batas tulis) | orkestrator |
+| 13 | Pemilik rekaman bukti penyelesaian mitigasi (Pemilik Risiko, bukan Line Manager Legal seperti pola SNX-LEG-SOP-03) dan masa retensinya belum diputus; SNX-LEG-SOP-03 tidak memuat kategori untuk bukti dari unit di luar Legal | Legal |
 
 ## Asumsi
 
@@ -139,6 +140,21 @@ Kode dokumen yang dirujuk di badan (12 kode, termasuk dirinya) dicek dengan skri
 4. Tabel mitigasi sumber dipecah dua (Rencana Mitigasi dan Pelaksanaan Mitigasi) hanya karena lebar halaman; kolom dan urutan sumber utuh.
 5. Matriks 5 x 5 dihitung dari rumus dan tabel kategori sumber, bukan tabel dari sumber. Nilai yang mungkin pada skala 1 sampai 5 tidak mencakup 17, 18, 19.
 6. Format "1-4" di sumber ditulis "1 sampai 4" (aturan rentang).
+
+## Sweep
+
+Putaran sweep 15 Okt 2026 (instruksi /tmp/claude-0/prompts/LEG-REG-02.sweep.txt). Satu butir diubah; fakta, angka, nama, dan struktur lain tetap. Temuan nonblocking lain di qa/LEG-REG-02.verify.json tidak diubah karena di luar butir sweep.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1a. Istilah, baris Legal dan Compliance | "Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01. Di dokumen ini pemegangnya disebut Line Manager Legal dan Staff Legal (USULAN)." (peran tertulis seperti nama jabatan) | "Pemilik dokumen ini. Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01, tertulis Legal & Compliance di sana." Hanya Legal & Compliance yang disebut jabatan |
+| 1b. Istilah, dua baris baru | Line Manager Legal dan Staff Legal tidak punya baris definisi | Baris "Line Manager Legal": "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01 (USULAN)." Baris "Staff Legal": sama, untuk JA-09. Pemetaan sama dengan SNX-LEG-SOP-03 dan matriks peran SNX-HR-ORG-01 |
+| 1c. Dokumen Terkait, baris SNX-HR-ORG-01 | "Sumber nama jabatan Line Manager Legal, Staff Legal, dan unit Management." | "Sumber jabatan Legal & Compliance (JA-08 dan JA-09), unit Management, dan dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)." |
+| 1d. Rekaman, pemilik register | "Pemilik: Staff Legal." | "Pemilik: Line Manager Legal, mengikuti SNX-LEG-SOP-03." SNX-LEG-SOP-03 menulis "pemilik Line Manager Legal" untuk Kategori 6 (register) dan baris register dokumen legal. Ketentuan butir 20 (Staff Legal menyimpan register di folder Drive) tetap dan tidak bertentangan: SNX-LEG-SOP-03 juga menugaskan Staff Legal menyimpan berkas |
+
+Tidak diselaraskan dengan SNX-LEG-SOP-03, alasan: baris rekaman "Bukti penyelesaian tindakan mitigasi" tetap bermilik Pemilik Risiko, dengan Staff Legal mencatat lokasinya. Bukti itu dihasilkan unit di luar Legal dan SNX-LEG-SOP-03 tidak memuat kategori untuknya. Dicatat sebagai Open item 13.
+
+Hasil uji sweep: render berhasil; lint `"pass": true`, fails nol; validate.py "All validations PASSED!"; blankscan.py "ok". Hitungan (USULAN) di lint naik dari 13 ke 15 karena dua baris Istilah baru berlabel; daftar USULAN di atas tetap 14 butir (butir 1 mencakup ketiga baris Istilah dan baris Dokumen Terkait).
 
 ## Pertanyaan penutup
 

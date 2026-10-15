@@ -1634,11 +1634,11 @@
    "open_items": [
     "Sweep (b): r3 nonblocking, klien vs pelanggan, kualifier C1.1 terpangkas, pasif, pengulangan Istilah dan Petunjuk"
    ],
-   "updated_at": "2026-10-15T00:55:47Z",
+   "updated_at": "2026-10-15T00:55:50Z",
    "pen_agent": "a58a04d78c3d99607",
    "ooxml": "PASSED",
    "fix_queued": "0",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 48,
@@ -1648,7 +1648,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-FRM-02",
    "out_path": "out/04_Legal/SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx",
    "sources": [
@@ -1661,11 +1661,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 21,
+   "usulan_count": 20,
    "open_items": [
     "Sweep (b): istilah telaah/penelaahan/review berganti; langkah dengan lebih dari satu tindakan (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:51:27Z",
+   "updated_at": "2026-10-15T00:56:29Z",
    "pen_agent": "aab72d9fbe45df535",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1708,7 +1708,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-REG-02",
    "out_path": "out/04_Legal/SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx",
    "sources": [
@@ -1725,7 +1725,7 @@
    "open_items": [
     "Kriteria terpenuhi pada struktur; 8 area risiko kosong karena sumber kosong, Legal mengisi (verify)"
    ],
-   "updated_at": "2026-10-15T00:54:42Z",
+   "updated_at": "2026-10-15T00:56:37Z",
    "pen_agent": "adba0b54b654ef887",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1738,7 +1738,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-RPT-01",
    "out_path": "out/04_Legal/SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx",
    "sources": [
@@ -1751,11 +1751,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 34,
+   "usulan_count": 35,
    "open_items": [
     "Sweep (b): nama kolom Tingkat Risiko vs Kategori Risiko di LEG-REG-02 (skala sama); lihat qa/LEG-RPT-01.verify.json nonblocking"
    ],
-   "updated_at": "2026-10-15T00:53:34Z",
+   "updated_at": "2026-10-15T00:55:54Z",
    "pen_agent": "a66c8287ed6e4a192",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1840,7 +1840,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-FRM-01",
    "out_path": "out/03_FAT/SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx",
    "sources": [],
@@ -1851,9 +1851,10 @@
    "open_items": [
     "Sweep (a): rujuk SNX-FAT-SOP-06 (SOP Accounting) dan SNX-FAT-REG-01 (Billing & Collection Monitoring Register) dengan nomor sesudah W7b DONE; 6.11 dan tabel Rekaman saling menunjuk untuk lokasi bukti"
    ],
-   "updated_at": "2026-10-14T23:58:56Z",
+   "updated_at": "2026-10-15T00:55:54Z",
    "pen_agent": "a2e0550886843b182",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 56,
