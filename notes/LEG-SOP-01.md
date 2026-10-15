@@ -225,3 +225,23 @@ Open item:
 
 - Pemetaan JA-08 dan JA-09 (baris USULAN 14, tabel USULAN): ditutup W9: diputus owner (G-3 A5), label USULAN dan menunggu konfirmasi pada pemetaan dihapus. Open item 2 (atasan Line Manager Legal, K-03) tetap terbuka (A4).
 - A3: tidak ada perubahan; dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Definisi DoA: label "(USULAN: satu dokumen)" dipindah ke akhir kalimat sebagai "(USULAN)", isinya tetap (DoA dan Authority Matrix dianggap satu dokumen). Butir 4.23: "berstatus (USULAN)" menjadi "belum diputus (USULAN)". Jumlah label tetap 21.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi Klausul kritis: "Daftarnya ada di butir 4.16." digabung menjadi "sesuai daftar di butir 4.16" (rujukan tetap).
+- Peran Pemohon, kolom wewenang: "Batas wewenang Pemohon atas dokumen final ada di butir 4.12 dan 4.13." diganti isi kedua butir itu secara lengkap.
+- Peran Line Manager Legal dan Staff Legal: "Uraian tugas rinci ada di SNX-HR-JA-01." menjadi "Uraian tugas rinci mengikuti SNX-HR-JA-01."
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "pihak lawan" dan "pihak luar" tetap seperti bed1bb6; tidak ada sebutan klien/pelanggan yang diganti.
+- Jembatan istilah pada kemunculan pertama: "review (tinjauan)" di Scope dan "record (rekaman)" di butir 4.6.
+- "menurut butir" di langkah bagian 6 menjadi "sesuai butir"; rujukan langkah tetap. Butir 4.17 sampai 4.20 dipecah menjadi dua kalimat tanpa mengubah contoh, batas, atau label.
+
+### W10 audit pointer
+- .roles[2][2]: lengkap (butir 4.12: tidak menandatangani, menjanjikan, atau mengirim dokumen final sebelum persetujuan Departemen Legal dan pejabat berwenang sesuai DoA; butir 4.13: tidak mengubah isi dokumen yang sudah direview tanpa melalui Departemen Legal; pelaku Pemohon dari baris peran; kedua butir tanpa label USULAN)

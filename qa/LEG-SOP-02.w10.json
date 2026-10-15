@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "4.19 (butir meta): dua label digabung menjadi satu, dan 'belum diputus' mencakup kedua hal melalui 'begitu pula'. Tidak ada usulan yang tampak berlaku. Kalimatnya sekitar 38 kata, melebihi batas sekitar 30 kata di STYLE §2.6. Usul: pecah menjadi 'Pelaku pada butir ... belum diputus (USULAN). Line Manager Legal sebagai pemilik record (rekaman) di bagian 11, sama dengan SNX-LEG-SOP-03, juga belum diputus.' Ini perlu dicek terhadap aturan satu label per butir.",
+  "6.1: 'Kanal resmi permintaan belum ditetapkan, sehingga langkah 1 memakai ticket GLPI (USULAN).' Fakta 'belum ditetapkan' dan label tetap ada, artinya tidak berubah.",
+  "SCOPE: 'tetap dimuat di bagian 8' menjadi 'tetap ditetapkan SOP ini (bagian 8)'. Rujukannya tetap ada, tidak ada batas yang hilang. Definisi Register kontrak tetap merujuk butir 6.9.",
+  "Bagian 9: baris Risiko Tinggi dan Perubahan material menyebut dua pelaku dalam kalimat terpisah. Ini tidak diubah di W10, dan tiap kalimat punya pelaku yang jelas.",
+  "6.6 langkah 1: 'kepada pihak lawan dengan PIC Bisnis' bisa terbaca seolah PIC Bisnis bagian dari pihak lawan. Usul: 'Bersama PIC Bisnis, koordinasikan penyampaian usulan perubahan kepada pihak lawan sesuai mekanisme negosiasi yang disepakati.'"
+ ],
+ "contoh_baik": [
+  "4.14 'Perubahan material sesudah Persetujuan Legal ... membuat kontrak di-review ulang' -> 'Perubahan material setelah Persetujuan Legal ... mengharuskan kontrak di-review ulang'"
+ ]
+}

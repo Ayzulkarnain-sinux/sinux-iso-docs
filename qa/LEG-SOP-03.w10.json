@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "4.20: 'Periode masa retensi tiap kategori dan tanggal pemicunya ditetapkan di tabel Record bagian 11. Seluruh periode itu masih usulan sampai diputus melalui prosedur 6.5 (USULAN).' Kata 'ditetapkan' membuat kalimat pertama terbaca seperti ketentuan berlaku, dan 'masih usulan ... (USULAN)' berulang. Label dan status tetap ada, jadi tidak memblokir. Usul: 'Periode masa retensi tiap kategori dan tanggal pemicunya dimuat di tabel Rekaman (records) bagian 11 dan berlaku setelah diputus melalui prosedur 6.5 (USULAN).'",
+  "Rujukan ke bagian 11 ditulis 'tabel Record' (4.20, 6.3 langkah 5), padahal heading beku berbunyi 'Rekaman (records)'. Kutip heading persis: 'tabel Rekaman (records) bagian 11'.",
+  "4.9: 'sesuai tingkat itu sesuai SNX-ISMS-PRO-01' mengulang kata 'sesuai' karena penggantian mekanis. Usul: 'mengatur izin akses folder sesuai tingkat itu, mengikuti SNX-ISMS-PRO-01.'",
+  "Bagian 9, baris kanal pribadi: label '(USULAN untuk pelapor)' dipindah menjadi kalimat 'Pelapor ini belum diputus (USULAN).' Artinya tetap, tetapi frasanya kaku. Usul: 'Penetapan Staff Legal atau Line Manager Legal sebagai pelapor masih usulan (USULAN).' Dua pelaku pada baris ini sudah ada di bed1bb6.",
+  "4.16: keterangan dalam kurung label ('irama review akses biasa') diubah menjadi 'jadwal access review reguler' dan ditaruh sebelum label. Masih tercakup label, tetapi 'biasa' (non-privileged) menjadi 'reguler', yang ambigu. Usul: 'jadwal review user access (non-privileged) di SNX-ISMS-SOP-02'.",
+  "4.2 dan 4.17: 'berstatus (USULAN)' menjadi 'belum diputus (USULAN)'. Isinya lengkap, dan tidak ada usulan yang tampak berlaku."
+ ],
+ "contoh_baik": [
+  "Repositori resmi 'yang SINUX tetapkan dan kendalikan aksesnya' -> 'yang ditetapkan dan dikendalikan aksesnya oleh SINUX'"
+ ]
+}

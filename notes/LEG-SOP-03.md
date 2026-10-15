@@ -270,3 +270,18 @@ Open item:
 
 - Open item 13 (nama peran menunggu K-13): ditutup W9: diputus owner (G-3 A5); pemetaan JA-08 dan JA-09 tanpa label. USULAN 22 ikut ditutup.
 - A3: dokumen menyebut VP Tech Operation and Services sebagai JA-04 hanya untuk menamai peran dan tidak menyebut atasan atau garis lapor; tidak ada perubahan.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label dipindah ke akhir kalimat, isi tetap: butir 4.16 (asli: "(USULAN, mengikuti irama review akses biasa di SNX-ISMS-SOP-02)"), bagian 9 baris kanal pribadi (asli: "(USULAN untuk pelapor; butir 4.17)"), butir 4.20 (asli: "Seluruh periode itu berstatus (USULAN) sampai diputus melalui prosedur 6.5."). Jumlah label tetap.
+
+### W10 kalimat dihapus atau dipindah
+- Butir 4.20: "Periode masa retensi tiap kategori dan tanggal pemicunya ada di tabel Record bagian 11." menjadi "ditetapkan di tabel Record bagian 11" (rujukan tetap; pembaca membutuhkannya untuk mengisi register).
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "pihak luar" dan "pihak lawan" tetap seperti bed1bb6.
+- Jembatan istilah: "review (tinjauan)" di Scope, "record (rekaman)" di definisi Dokumen Tidak Berlaku; "irama review akses biasa" menjadi "jadwal access review reguler" (glossary STYLE §5).
+- "bila" diganti "jika", "menurut" diganti "sesuai"; nomor butir 4.x dan 6.x serta isinya tidak bergeser.

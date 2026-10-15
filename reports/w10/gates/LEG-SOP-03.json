@@ -1,0 +1,37 @@
+{
+ "key": "LEG-SOP-03",
+ "mode": "sop",
+ "out": "out/04_Legal/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 3915,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 44,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 3908,
+  "calque": [
+   "yang SINUX tetapkan"
+  ],
+  "lewat": 10,
+  "pointer": 0,
+  "usulan": 44,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 80,
+  "tables_ge3_no_header": 17
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).pdf",
+ "pages": 22,
+ "blank": [],
+ "pass": true
+}

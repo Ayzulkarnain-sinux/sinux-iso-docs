@@ -1,0 +1,37 @@
+{
+ "key": "LEG-SOP-01",
+ "mode": "sop",
+ "out": "out/04_Legal/SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 3764,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 21,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 3733,
+  "calque": [
+   "yang Pemohon tunjuk"
+  ],
+  "lewat": 7,
+  "pointer": 2,
+  "usulan": 21,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 111,
+  "tables_ge3_no_header": 19
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).pdf",
+ "pages": 23,
+ "blank": [],
+ "pass": true
+}

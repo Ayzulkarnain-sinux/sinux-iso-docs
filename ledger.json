@@ -2816,6 +2816,12 @@
    "key": "OPS-SOP-03..05",
    "agent": "orkestrator WORKER-ISO-03",
    "what": "Batas G-4 maksimal 3 subagen paralel sempat terlampaui: penyusun klaster OPS-SOP-03..05 diluncurkan saat 3 subagen lain masih jalan. Dihentikan (TaskStop) beberapa detik kemudian; spec dan notes ketiga KEY tidak berubah (mtime 07:52, sebelum peluncuran). Diluncurkan ulang saat slot kosong."
+  },
+  {
+   "at": "2026-10-15T~08:3xZ (taksiran; laporan diterima 08:40Z)",
+   "key": "LEG-SOP-01..03",
+   "agent": "penyusun bahasa W10",
+   "what": "Menjalankan git diff --stat bed1bb6 dan git log --oneline (hanya baca) padahal EDITOR.md melarang git; dilaporkan sendiri, tanpa tulis/commit. Dicatat apa adanya."
   }
  ],
  "staging_final": {

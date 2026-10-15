@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Roles, sel Authority Pemohon: pointer 'butir 4.12 dan 4.13' diganti fakta yang lengkap dibanding bed1bb6 (larangan tanda tangan/janji/kirim sebelum persetujuan Departemen Legal dan pejabat berwenang sesuai DoA, serta larangan mengubah dokumen yang sudah direview tanpa Departemen Legal). Butir asal tidak berlabel, jadi tanpa label sudah benar.",
+  "Label gabungan diperiksa: 4.20, 4.23 ('belum diputus (USULAN)'), dan definisi DoA ('keduanya dianggap satu dokumen (USULAN)') tetap jelas sebagai usulan. Tidak ada usulan yang tampak berlaku.",
+  "Pointer lain diganti dengan rujukan yang tetap ada (Klausul kritis 'sesuai daftar di butir 4.16'; 'Uraian tugas rinci mengikuti SNX-HR-JA-01'). Tidak ada langkah atau batas yang hilang.",
+  "4.18: 'perlu dinegosiasikan ... Contohnya klausul tidak seimbang yang masih dapat dinegosiasikan' mengulang kata. Usul: 'Contohnya klausul yang tidak seimbang tetapi masih terbuka untuk dibahas.'",
+  "6.6 langkah 1: 'Analisis kesesuaian KBLI dengan kegiatan usaha' menambah kata 'kesesuaian'. Artinya wajar, tetapi perlu dipastikan sesuai maksud tim.",
+  "Bagian 6 dan 9: tiap langkah tetap satu PIC. 'Periksa bahwa' menjadi 'Pastikan' (6.4 langkah 2) dengan pelaku yang sama."
+ ],
+ "contoh_baik": [
+  "4.17 'Risiko hukum Tinggi, misalnya kontrak tanpa batas tanggung jawab, ..., wajib dieskalasi ...' -> 'Risiko hukum Tinggi wajib dieskalasi dan menunggu keputusan Manajemen (prosedur 6.3). Contohnya kontrak tanpa batas tanggung jawab, ...'"
+ ]
+}

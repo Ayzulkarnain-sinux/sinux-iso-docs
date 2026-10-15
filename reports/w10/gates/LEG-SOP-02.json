@@ -1,0 +1,35 @@
+{
+ "key": "LEG-SOP-02",
+ "mode": "sop",
+ "out": "out/04_Legal/SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 4133,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 14,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 4132,
+  "calque": [],
+  "lewat": 5,
+  "pointer": 2,
+  "usulan": 15,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 99,
+  "tables_ge3_no_header": 19
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).pdf",
+ "pages": 24,
+ "blank": [],
+ "pass": true
+}

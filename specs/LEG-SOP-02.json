@@ -15,18 +15,29 @@
    "prepared": "Alif Altamziz / Staff Legal",
    "reviewed": "Ester Febe Utomo / Line Manager Legal",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
  },
  "purpose": [
   "SOP ini menetapkan cara Departemen Legal PT Strategi Integrasi Nusantara (SINUX) me-review, merevisi, dan menyetujui kontrak sebelum kontrak itu ditandatangani.",
-  "Hasil yang dijaga: tidak ada kontrak yang ditandatangani sebelum di-review Legal dan disetujui menurut kewenangan, serta risiko hukum dan komersial beserta keputusan atasnya dapat ditelusuri dari pencatatan dan arsip."
+  "Hasil yang dijaga: tidak ada kontrak yang ditandatangani sebelum di-review Legal dan disetujui sesuai kewenangan. Risiko hukum dan komersial beserta keputusan atasnya dapat ditelusuri dari catatan dan arsip."
  ],
  "scope": [
   "SOP ini berlaku bagi Line Manager Legal, Staff Legal, dan unit bisnis atau unit kerja lain yang mengajukan, menyusun, menegosiasikan, menyetujui, atau menggunakan kontrak dalam kegiatan usaha SINUX.",
-  "Proses yang tercakup: penerimaan dan pencatatan permintaan; pemeriksaan kelengkapan; pemeriksaan awal pihak lawan; penyusunan dan review kontrak; identifikasi dan klasifikasi risiko; review dan Persetujuan Legal; negosiasi dan pengendalian perubahan dokumen; persetujuan bisnis dan persetujuan menurut DoA; pemeriksaan akhir dan penandatanganan; pencatatan dan pengarsipan kontrak yang sudah ditandatangani; pemantauan kontrak berjalan.",
+  "Proses yang tercakup: penerimaan dan pencatatan permintaan; pemeriksaan kelengkapan; pemeriksaan awal pihak lawan; penyusunan dan review (tinjauan) kontrak; identifikasi dan klasifikasi risiko; review dan Persetujuan Legal; negosiasi dan pengendalian perubahan dokumen; persetujuan bisnis dan persetujuan menurut DoA; pemeriksaan akhir dan penandatanganan; pencatatan dan pengarsipan kontrak yang sudah ditandatangani; pemantauan kontrak berjalan.",
   "Kontrak yang tercakup: kontrak dengan pelanggan, vendor atau pemasok, mitra kerja sama, subkontraktor, dan pihak lain sesuai kegiatan usaha SINUX. Jenis dokumennya NDA, IaaS Contract, Technology Services Contract, Hardware Sale and Purchase Agreement, PKS, Subcontract, addendum, dan dokumen kontraktual lain yang relevan.",
-  "Sistem yang dipakai: GLPI (SINUX Service Hub) untuk tiket permintaan (USULAN), register permintaan Legal, register kontrak, dan repositori resmi SINUX. Lokasi register dan repositori belum ditetapkan.",
-  "Di luar scope SOP ini: keputusan bisnis, komersial, keuangan, dan keamanan informasi, yang tetap milik pihak berwenang di bidangnya; isi pekerjaan dokumen korporasi dan perizinan serta penanganan somasi, klaim, dan sengketa (SNX-LEG-SOP-01); retensi arsip legal (SNX-LEG-SOP-03). Target respons dokumen korporasi dan perizinan tetap dimuat di bagian 8."
+  "Sistem yang dipakai: GLPI (SINUX Service Hub) untuk ticket permintaan (USULAN), register permintaan Legal, register kontrak, dan repositori resmi SINUX. Lokasi register dan repositori belum ditetapkan.",
+  "Di luar scope SOP ini: keputusan bisnis, komersial, keuangan, dan keamanan informasi, yang tetap milik pihak berwenang di bidangnya; isi pekerjaan dokumen korporasi dan perizinan serta penanganan somasi, klaim, dan sengketa (SNX-LEG-SOP-01); retensi arsip legal (SNX-LEG-SOP-03). Target respons dokumen korporasi dan perizinan tetap ditetapkan SOP ini (bagian 8)."
  ],
  "definitions": [
   [
@@ -39,11 +50,11 @@
   ],
   [
    "DoA",
-   "Delegasi wewenang: pembagian wewenang menyetujui transaksi dan menandatangani kontrak menurut jenis dan nilai transaksi. Dokumen yang memuatnya disebut matriks DoA."
+   "Delegation of Authority (delegasi wewenang): pembagian wewenang menyetujui transaksi dan menandatangani kontrak berdasarkan jenis dan nilai transaksi. Dokumen yang memuatnya disebut matriks DoA."
   ],
   [
    "GLPI",
-   "Sistem tiket SINUX untuk fungsi non-Operation (generalist). Nama lainnya SINUX Service Hub."
+   "Sistem ticket SINUX untuk fungsi non-Operation (generalist). Nama lainnya SINUX Service Hub."
   ],
   [
    "Kontrak",
@@ -55,7 +66,7 @@
   ],
   [
    "Pejabat Berwenang",
-   "Pejabat yang memberi persetujuan transaksi atau menandatangani kontrak atas nama SINUX menurut DoA, anggaran dasar, surat kuasa, atau dasar kewenangan lain yang sah."
+   "Pejabat yang memberi persetujuan transaksi atau menandatangani kontrak atas nama SINUX berdasarkan DoA, anggaran dasar, surat kuasa, atau dasar kewenangan lain yang sah."
   ],
   [
    "Pemeriksaan awal pihak lawan",
@@ -87,7 +98,7 @@
   ],
   [
    "Register kontrak",
-   "Daftar kontrak SINUX beserta informasi pokoknya. Isi minimalnya ada di butir 6.9."
+   "Daftar kontrak SINUX beserta informasi pokok minimal sesuai butir 6.9."
   ],
   [
    "Register permintaan Legal",
@@ -95,7 +106,7 @@
   ],
   [
    "Review kontrak",
-   "Peninjauan kontrak oleh Departemen Legal untuk menilai kelengkapan, ketepatan redaksi, kesesuaian hukum, pembagian hak dan kewajiban, serta risiko yang mungkin timbul."
+   "Pemeriksaan kontrak oleh Departemen Legal untuk menilai kelengkapan, ketepatan redaksi, kesesuaian hukum, pembagian hak dan kewajiban, serta risiko yang mungkin timbul."
   ],
   [
    "Ringkasan risiko",
@@ -116,25 +127,25 @@
   "4.3 Pemohon melibatkan Legal sejak negosiasi komersial, sebelum ada komitmen tertulis kepada pihak luar. Pemohon tidak menandatangani, menjanjikan, atau mengirim dokumen final sebelum Persetujuan Legal dan persetujuan Pejabat Berwenang diperoleh.",
   "4.4 Pemohon tidak mengubah isi dokumen yang sudah di-review tanpa melalui Legal.",
   "4.5 Target waktu di bagian 8 dihitung sejak informasi dan dokumen minimum di butir 6.1 diterima lengkap. Target penyelesaian adalah target proses internal, bukan jaminan bahwa negosiasi dengan pihak lawan atau penandatanganan selesai dalam jangka itu.",
-  "4.6 Line Manager Legal menyesuaikan target bila kontrak kompleks, risikonya tinggi, diperlukan pendapat Unit Kerja Terkait, atau jawaban Pemohon atau pihak lawan terlambat. Line Manager Legal mengomunikasikan perubahan target beserta alasannya kepada Pemohon.",
+  "4.6 Line Manager Legal menyesuaikan target jika kontrak kompleks, risikonya tinggi, diperlukan pendapat Unit Kerja Terkait, atau jawaban Pemohon atau pihak lawan terlambat. Line Manager Legal mengomunikasikan perubahan target beserta alasannya kepada Pemohon.",
   "4.7 Review kontrak mencakup aspek di butir 6.3 sesuai relevansi transaksi. Pemeriksaan awal pihak lawan disesuaikan dengan jenis, nilai, kompleksitas, dan risiko transaksi.",
   "4.8 Risiko Tinggi adalah isu yang berpotensi berdampak material, menimbulkan tanggung jawab yang tidak terkendali, melanggar hukum, atau menimbulkan risiko signifikan bagi SINUX. Persetujuan Legal ditahan pada isu terkait dan isu itu dieskalasi (butir 6.4).",
   "4.9 Risiko Sedang adalah ketentuan yang merugikan atau tidak seimbang, tetapi masih dapat dinegosiasikan atau dimitigasi.",
   "4.10 Risiko Rendah adalah isu redaksional atau administratif yang tidak berdampak material menurut penilaian Legal.",
-  "4.11 Klasifikasi risiko adalah penilaian awal. Line Manager Legal meninjaunya sesuai konteks transaksi saat me-review hasil kerja Staff Legal, dan sesuai metodologi risiko SINUX bila metodologi itu sudah ditetapkan.",
+  "4.11 Klasifikasi risiko adalah penilaian awal. Line Manager Legal meninjaunya sesuai konteks transaksi saat me-review hasil kerja Staff Legal, dan sesuai metodologi risiko SINUX jika metodologi itu sudah ditetapkan.",
   "4.12 Risiko Tinggi tidak dianggap dapat diterima hanya karena ada tenggat bisnis. Pejabat Berwenang memutuskan penerimaan risiko Tinggi, dan keputusannya didokumentasikan.",
-  "4.13 Persetujuan Legal dapat ditelusuri lewat catatan tertulis, komentar pada dokumen, email resmi, atau media persetujuan internal yang ditetapkan.",
-  "4.14 Perubahan material sesudah Persetujuan Legal, termasuk perubahan pada versi final sesudah persetujuan, membuat kontrak di-review ulang sesuai tingkat materialitasnya sebelum persetujuan final atau penandatanganan.",
+  "4.13 Persetujuan Legal dapat ditelusuri melalui catatan tertulis, komentar pada dokumen, email resmi, atau media persetujuan internal yang ditetapkan.",
+  "4.14 Perubahan material setelah Persetujuan Legal, termasuk perubahan pada versi final setelah persetujuan, mengharuskan kontrak di-review ulang sesuai tingkat materialitasnya sebelum persetujuan final atau penandatanganan.",
   "4.15 Staff Legal menamai tiap versi dokumen dengan pola JenisDokumen_NamaPihak_Versi_Tanggal, misalnya IaaSContract_NamaPihak_v02_20261014, dan memisahkan atau menandai versi draft yang sudah tidak digunakan.",
   "4.16 Kontrak yang belum ditandatangani lengkap dicatat berstatus draft, menunggu tanda tangan, atau status lain yang sesuai. Kontrak itu tidak dicatat sebagai kontrak final yang berlaku tanpa dasar yang memadai.",
-  "4.17 Akses ke kontrak diberikan berdasarkan kebutuhan kerja dan klasifikasi kerahasiaan dokumen menurut SNX-ISMS-PRO-01. Tingkat klasifikasi tiap jenis kontrak belum ditetapkan.",
+  "4.17 Akses ke kontrak diberikan berdasarkan kebutuhan kerja dan klasifikasi kerahasiaan dokumen sesuai SNX-ISMS-PRO-01. Tingkat klasifikasi tiap jenis kontrak belum ditetapkan.",
   "4.18 Usulan perubahan SOP disampaikan kepada Line Manager Legal sebagai pemilik dokumen, untuk ditinjau dan disetujui sesuai mekanisme pengendalian dokumen SINUX.",
-  "4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus (USULAN). Line Manager Legal sebagai pemilik rekaman di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN)."
+  "4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 belum diputus, begitu pula Line Manager Legal sebagai pemilik record (rekaman) di bagian 11, sama dengan SNX-LEG-SOP-03 (USULAN)."
  ],
  "roles": [
   [
    "Pemohon",
-   "Mengajukan permintaan secara lengkap lewat kanal di butir 6.1, menyediakan informasi dan dokumen pendukung, menjelaskan kebutuhan bisnis, dan meninjau aspek komersial.",
+   "Mengajukan permintaan secara lengkap melalui kanal di butir 6.1, menyediakan informasi dan dokumen pendukung, menjelaskan kebutuhan bisnis, dan meninjau aspek komersial.",
    "Tidak menandatangani, menjanjikan, atau mengirim dokumen final sebelum Persetujuan Legal dan persetujuan Pejabat Berwenang (butir 4.3)."
   ],
   [
@@ -155,12 +166,12 @@
   [
    "Unit Kerja Terkait",
    "Memberi masukan dan persetujuan sesuai bidangnya, misalnya Finance, Accounting & Tax, IT, atau fungsi keamanan informasi, untuk aspek keuangan, pajak, operasional, teknologi, keamanan informasi, dan pelindungan data yang relevan (butir 6.3 dan 6.7).",
-   "Menyetujui aspek bidangnya bila dipersyaratkan; tidak memberi Persetujuan Legal."
+   "Menyetujui aspek bidangnya jika dipersyaratkan; tidak memberi Persetujuan Legal."
   ],
   [
    "Pejabat Berwenang",
    "Memutuskan penerimaan risiko Tinggi, memberi persetujuan transaksi dan konfirmasi kewenangan secara tertulis, dan menandatangani kontrak sesuai DoA, anggaran dasar, surat kuasa, atau dasar kewenangan lain yang sah (butir 6.4, 6.7, 6.8). Jabatan pemegangnya belum ditetapkan karena matriks DoA belum disusun.",
-   "Menyetujui transaksi dan menandatangani kontrak dalam batas wewenang menurut DoA."
+   "Menyetujui transaksi dan menandatangani kontrak dalam batas wewenang sesuai DoA."
   ]
  ],
  "procedures": [
@@ -168,13 +179,13 @@
    "title": "Pengajuan dan Pencatatan Permintaan",
    "intro": [
     "Permintaan memuat sekurang-kurangnya: nama dan identitas para pihak; jenis dan tujuan kontrak; ruang lingkup transaksi atau layanan; nilai dan mekanisme pembayaran; jangka waktu yang direncanakan; tenggat yang diminta beserta alasannya; PIC Bisnis; dan draft, term sheet, proposal, atau dokumen pendukung lain yang tersedia.",
-    "Kanal resmi permintaan belum ditetapkan. Langkah 1 memakai tiket GLPI (USULAN)."
+    "Kanal resmi permintaan belum ditetapkan, sehingga langkah 1 memakai ticket GLPI (USULAN)."
    ],
    "steps": [
     [
-     "Ajukan permintaan penyusunan atau review kontrak lewat tiket GLPI (USULAN) dengan data minimal di atas.",
+     "Ajukan permintaan penyusunan atau review kontrak melalui ticket GLPI (USULAN) dengan data minimal di atas.",
      "Pemohon",
-     "Tiket permintaan di GLPI"
+     "Ticket permintaan di GLPI"
     ],
     [
      "Catat permintaan di register permintaan Legal dan beri nomor referensi.",
@@ -215,7 +226,7 @@
      "Hasil pemeriksaan awal pihak lawan"
     ],
     [
-     "Minta klarifikasi atau dokumen tambahan bila identitas, kewenangan penandatangan, atau informasi material tidak sesuai, sebelum proses dilanjutkan.",
+     "Minta klarifikasi atau dokumen tambahan jika identitas, kewenangan penandatangan, atau informasi material tidak sesuai, sebelum proses dilanjutkan.",
      "Staff Legal",
      "Permintaan klarifikasi atau dokumen tambahan"
     ],
@@ -281,7 +292,7 @@
     [
      "Periksa kontrak terhadap aspek di atas sesuai relevansi transaksi.",
      "Staff Legal",
-     "Hasil review per aspek, termasuk checklist review bila digunakan"
+     "Hasil review per aspek, termasuk checklist review jika digunakan"
     ],
     [
      "Koordinasikan pemeriksaan tambahan dengan Unit Kerja Terkait, misalnya Finance, Accounting & Tax, IT, atau fungsi keamanan informasi.",
@@ -312,7 +323,7 @@
      "Daftar isu risiko"
     ],
     [
-     "Klasifikasikan tiap isu sebagai risiko Tinggi, Sedang, atau Rendah menurut butir 4.8 sampai 4.10.",
+     "Klasifikasikan tiap isu sebagai risiko Tinggi, Sedang, atau Rendah sesuai butir 4.8 sampai 4.10.",
      "Staff Legal",
      "Klasifikasi risiko di ringkasan risiko"
     ],
@@ -367,7 +378,7 @@
     [
      "Tinjau kelengkapan hasil review, kualitas analisis, dan rekomendasi Legal.",
      "Line Manager Legal",
-     "Catatan tinjauan Line Manager Legal"
+     "Catatan review Line Manager Legal"
     ],
     [
      "Putuskan hasil review: setujui, minta revisi atau analisis tambahan, atau eskalasikan ke Pejabat Berwenang atau Unit Kerja Terkait.",
@@ -385,12 +396,12 @@
    "title": "Negosiasi, Revisi, dan Pengendalian Versi",
    "steps": [
     [
-     "Koordinasikan dengan PIC Bisnis penyampaian usulan perubahan kepada pihak lawan sesuai mekanisme negosiasi yang disepakati.",
+     "Koordinasikan penyampaian usulan perubahan kepada pihak lawan dengan PIC Bisnis, sesuai mekanisme negosiasi yang disepakati.",
      "Staff Legal",
      "Usulan perubahan tersampaikan ke pihak lawan"
     ],
     [
-     "Catat perubahan pada draft lewat redline, komentar, atau mekanisme pengendalian perubahan yang dapat ditelusuri.",
+     "Catat perubahan pada draft melalui redline, komentar, atau mekanisme pengendalian perubahan yang dapat ditelusuri.",
      "Staff Legal",
      "Redline atau komentar perubahan"
     ],
@@ -405,7 +416,7 @@
      "Catatan penilaian perubahan"
     ],
     [
-     "Review ulang dokumen bila ada perubahan material sesudah Persetujuan Legal (butir 4.14).",
+     "Review ulang dokumen jika ada perubahan material setelah Persetujuan Legal (butir 4.14).",
      "Staff Legal",
      "Hasil review ulang"
     ]
@@ -423,22 +434,22 @@
      "Konfirmasi PIC Bisnis atas ketentuan komersial"
     ],
     [
-     "Beri persetujuan atas aspek bidangnya bila dipersyaratkan.",
+     "Beri persetujuan atas aspek bidangnya jika dipersyaratkan.",
      "Unit Kerja Terkait",
      "Persetujuan Unit Kerja Terkait"
     ],
     [
-     "Ajukan kontrak kepada Pejabat Berwenang menurut DoA, anggaran dasar, surat kuasa, atau ketentuan internal yang berlaku.",
+     "Ajukan kontrak kepada Pejabat Berwenang sesuai DoA, anggaran dasar, surat kuasa, atau ketentuan internal yang berlaku.",
      "Staff Legal",
      "Kontrak diajukan ke Pejabat Berwenang"
     ],
     [
-     "Tentukan batas persetujuan menurut jenis dan nilai transaksi dari matriks DoA.",
+     "Tentukan batas persetujuan berdasarkan jenis dan nilai transaksi dari matriks DoA.",
      "Staff Legal",
      "Batas persetujuan transaksi"
     ],
     [
-     "Eskalasikan kepada Line Manager Legal bila matriks DoA belum tersedia atau kewenangan tidak jelas.",
+     "Eskalasikan kepada Line Manager Legal jika matriks DoA belum tersedia atau kewenangan tidak jelas.",
      "Staff Legal",
      "Eskalasi kewenangan"
     ],
@@ -463,12 +474,12 @@
    "title": "Pemeriksaan Akhir dan Penandatanganan",
    "steps": [
     [
-     "Periksa bahwa versi final sama dengan versi yang disetujui, termasuk semua halaman, lampiran, dan perubahan terakhir.",
+     "Pastikan versi final sama dengan versi yang disetujui, termasuk semua halaman, lampiran, dan perubahan terakhir.",
      "Staff Legal",
      "Hasil pemeriksaan versi final"
     ],
     [
-     "Periksa bahwa identitas pihak, tanggal, nomor dokumen jika ada, dan bagian yang perlu dilengkapi sudah benar.",
+     "Pastikan identitas pihak, tanggal, nomor dokumen (jika ada), dan bagian yang perlu dilengkapi sudah benar.",
      "Staff Legal",
      "Hasil pemeriksaan isian dokumen"
     ],
@@ -506,7 +517,7 @@
    ],
    "steps": [
     [
-     "Unggah salinan final ke repositori resmi SINUX paling lambat 2 hari kerja sesudah kontrak ditandatangani lengkap oleh para pihak.",
+     "Unggah salinan final ke repositori resmi SINUX paling lambat 2 hari kerja setelah kontrak ditandatangani lengkap oleh para pihak.",
      "Staff Legal",
      "Salinan final di repositori resmi"
     ],
@@ -533,7 +544,7 @@
     [
      "Tinjau register kontrak sekurang-kurangnya sekali setiap bulan.",
      "Staff Legal",
-     "Hasil tinjauan register kontrak"
+     "Hasil review register kontrak"
     ],
     [
      "Tandai kontrak yang berakhir atau mencapai batas pemberitahuan perpanjangan atau terminasi dalam 90, 60, dan 30 hari.",
@@ -551,7 +562,7 @@
      "Keputusan tindak lanjut kontrak"
     ],
     [
-     "Ajukan permintaan addendum, perpanjangan, atau perubahan material, yang diproses dengan prosedur butir 6.1 sampai 6.9.",
+     "Ajukan permintaan addendum, perpanjangan, atau perubahan material untuk diproses sesuai butir 6.1 sampai 6.9.",
      "PIC Bisnis",
      "Permintaan perubahan kontrak"
     ],
@@ -571,7 +582,7 @@
  "flow": {
   "rankdir": "TB",
   "nodes": {
-   "a": "Pemohon mengajukan permintaan\nlewat tiket GLPI",
+   "a": "Pemohon mengajukan permintaan\nmelalui ticket GLPI",
    "b": "Staff Legal mencatat permintaan\ndan memeriksa kelengkapan",
    "c": "Lengkap?",
    "x": "Staff Legal mengembalikan permintaan\nke Pemohon dengan daftar kekurangan",
@@ -717,7 +728,7 @@
   [
    "Permintaan mendesak: respons awal dan penyelesaian",
    "Staff Legal",
-   "Respons awal pada hari yang sama bila memungkinkan; penyelesaian sesuai konfirmasi prioritas dan kesepakatan tenggat (USULAN)"
+   "Respons awal pada hari yang sama jika memungkinkan; penyelesaian sesuai konfirmasi prioritas dan kesepakatan tenggat (USULAN)"
   ],
   [
    "Jawaban atas pertanyaan Legal",
@@ -725,12 +736,12 @@
    "2 hari kerja (USULAN); keterlambatan menggeser target Legal sebesar lamanya keterlambatan"
   ],
   [
-   "Unggah salinan final dan perbarui register kontrak sesudah kontrak ditandatangani lengkap",
+   "Unggah salinan final dan perbarui register kontrak setelah kontrak ditandatangani lengkap",
    "Staff Legal",
    "Paling lambat 2 hari kerja"
   ],
   [
-   "Tinjauan register kontrak",
+   "Review register kontrak",
    "Staff Legal",
    "Sekurang-kurangnya sekali setiap bulan"
   ],
@@ -747,14 +758,14 @@
   ],
   [
    "Identitas, kewenangan penandatangan, atau informasi material pihak lawan tidak sesuai",
-   "Staff Legal meminta klarifikasi atau dokumen tambahan sebelum proses dilanjutkan. Bila temuan berpotensi menimbulkan risiko material, Line Manager Legal menentukan tindak lanjutnya (butir 6.2)."
+   "Staff Legal meminta klarifikasi atau dokumen tambahan sebelum proses dilanjutkan. Jika temuan berpotensi menimbulkan risiko material, Line Manager Legal menentukan tindak lanjutnya (butir 6.2)."
   ],
   [
    "Risiko Tinggi ditemukan",
    "Line Manager Legal menahan Persetujuan Legal pada isu terkait dan mengeskalasikannya. Pejabat Berwenang memutuskan penerimaan risiko, dan keputusannya didokumentasikan (butir 4.12)."
   ],
   [
-   "Perubahan material sesudah Persetujuan Legal, atau versi final berubah sesudah persetujuan",
+   "Perubahan material setelah Persetujuan Legal, atau versi final berubah setelah persetujuan",
    "Staff Legal me-review ulang dokumen, dan Line Manager Legal memberi Persetujuan Legal lagi sebelum persetujuan final (butir 4.14)."
   ],
   [
@@ -775,7 +786,7 @@
   ]
  ],
  "conclusion": [
-  "Line Manager Legal memantau penerapan SOP ini lewat register permintaan Legal, ketepatan waktu review, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen.",
+  "Line Manager Legal memantau penerapan SOP ini melalui register permintaan Legal, ketepatan waktu review, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen.",
   "SOP ini ditinjau sekurang-kurangnya sekali setahun, atau saat regulasi, struktur organisasi, kewenangan persetujuan, proses bisnis, atau kebutuhan pengendalian internal berubah."
  ],
  "related_documents": [

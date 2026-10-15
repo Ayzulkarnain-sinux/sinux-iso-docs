@@ -225,3 +225,19 @@ Open item:
 - USULAN 4 (pemetaan JA-08 dan JA-09): ditutup W9: diputus owner (G-3 A5).
 - Open item 7 (atasan Line Manager Legal, K-03): tetap terbuka (A4).
 - A3: tidak ada perubahan; dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+- Butir 4.19, asli: "4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus (USULAN). Line Manager Legal sebagai pemilik record di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN)." Dua label digabung menjadi satu label di akhir butir (STYLE §3.5 dan §3.7); kedua hal tetap berstatus USULAN, nomor butir tetap.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi Register kontrak: "Isi minimalnya ada di butir 6.9." digabung menjadi "informasi pokok minimal sesuai butir 6.9" (rujukan tetap).
+- Scope, di luar scope: "Target respons dokumen korporasi dan perizinan tetap dimuat di bagian 8." menjadi "tetap ditetapkan SOP ini (bagian 8)" (rujukan tetap).
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "pihak lawan" (paling sering di dokumen ini); "pelanggan" hanya untuk jenis kontrak, tidak diubah.
+- Jembatan istilah: "review (tinjauan)" di Scope, "Delegation of Authority (delegasi wewenang)" di definisi DoA, "record (rekaman)" di butir 4.19.
+- "bila" diganti "jika", "menurut" diganti "sesuai" atau "berdasarkan"; nomor butir 4.x dan 6.x serta isinya tidak bergeser (dirujuk form Legal).
