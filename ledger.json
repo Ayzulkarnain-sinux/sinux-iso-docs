@@ -2806,6 +2806,12 @@
    "key": "MKT-REG-01..03, MKT-RPT-01",
    "agent": "penyusun bahasa W10",
    "what": "Menjalankan git diff --stat dan git log -1 (hanya baca) satu kali, padahal EDITOR.md melarang git; tidak ada perubahan keadaan. Dicatat apa adanya (dilaporkan sendiri oleh agen)."
+  },
+  {
+   "at": "2026-10-15T08:21Z",
+   "key": "OPS-SOP-03..05",
+   "agent": "orkestrator WORKER-ISO-03",
+   "what": "Batas G-4 maksimal 3 subagen paralel sempat terlampaui: penyusun klaster OPS-SOP-03..05 diluncurkan saat 3 subagen lain masih jalan. Dihentikan (TaskStop) beberapa detik kemudian; spec dan notes ketiga KEY tidak berubah (mtime 07:52, sebelum peluncuran). Diluncurkan ulang saat slot kosong."
   }
  ],
  "staging_final": {

@@ -1,0 +1,42 @@
+{
+ "key": "OPS-FRM-03",
+ "mode": "generic",
+ "out": "out/07_Ops/SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 849,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 3,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 877,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 3,
+  "instr_role_start": 2,
+  "justified_cells": 6,
+  "tables_ge3_no_header": 14
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).pdf",
+ "pages": 10,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Laporan",
+  "pages_bed1bb6": 10,
+  "pages_w10": 10,
+  "isi_page_bed1bb6": 7,
+  "isi_page_w10": 7
+ },
+ "pass": true
+}

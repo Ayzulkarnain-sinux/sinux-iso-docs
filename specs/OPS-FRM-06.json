@@ -18,6 +18,12 @@
    "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
    "reviewed": "Fani Fatullah / VP Tech Operation and Services",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
   }
  },
  "sections": [
@@ -25,10 +31,10 @@
    "h": "Tujuan",
    "blocks": [
     {
-     "p": "Dokumen ini adalah form serah terima proyek SINUX dalam tiga bagian: BAST kepada pelanggan (Bagian A), checklist serah terima dari SD dan PM ke Operation (Bagian B), dan laporan penutupan proyek (Bagian C)."
+     "p": "Form serah terima proyek SINUX ini terdiri atas tiga bagian: BAST kepada pelanggan (Bagian A), checklist serah terima dari SD dan PM ke Operation (Bagian B), dan laporan penutupan proyek (Bagian C)."
     },
     {
-     "p": "Hasil yang dijaga: layanan baru masuk BAU hanya sesudah pelanggan menerima pekerjaan dan Operation menerima layanan, dan hasil akhir proyek tercatat terhadap baseline-nya."
+     "p": "Dengan form ini, layanan baru masuk BAU hanya setelah pekerjaan diterima pelanggan dan layanan diterima Operation. Hasil akhir proyek juga tercatat terhadap baseline."
     }
    ]
   },
@@ -39,7 +45,7 @@
      "p": "Dokumen ini dipakai untuk setiap proyek atau layanan yang diserahkan SINUX kepada pelanggan, termasuk pelanggan pemerintah melalui main contractor. Cakupannya dari BAST (G2) sampai laporan penutupan proyek dan arsipnya."
     },
     {
-     "p": "Butir berikut dikecualikan dari dokumen ini:"
+     "p": "Yang tidak dicakup form ini:"
     },
     {
      "table": {
@@ -54,7 +60,7 @@
        ],
        [
         "Pembuatan dokumen as-built dan runbook, serta konfigurasi monitoring dan backup",
-        "Tidak dibuat di form ini. Bagian B hanya memeriksa bahwa semuanya ada dan teruji."
+        "Tidak dibuat di form ini; Bagian B hanya memeriksa bahwa semuanya ada dan sudah diuji."
        ],
        [
         "Parameter SLA dan jadwal preventive maintenance",
@@ -69,7 +75,7 @@
         "Tidak diatur di form ini. Bagian B hanya mencatat tanggal hypercare dilanjutkan."
        ],
        [
-        "Pekerjaan Operation sesudah layanan BAU",
+        "Pekerjaan Operation setelah layanan BAU",
         "Tidak dicatat di form ini."
        ]
       ],
@@ -109,15 +115,15 @@
        ],
        [
         "UAT",
-        "User acceptance test: uji penerimaan pekerjaan, hasilnya dicatat di SNX-OPS-FRM-05."
+        "User acceptance test, uji penerimaan pekerjaan yang hasilnya dicatat di SNX-OPS-FRM-05."
        ],
        [
         "G2",
-        "Titik kendali penyerahan pekerjaan kepada pelanggan, dicatat lewat BAST di Bagian A."
+        "Titik kendali penyerahan pekerjaan kepada pelanggan, dicatat melalui BAST di Bagian A."
        ],
        [
         "G3",
-        "Titik kendali penyerahan layanan dari SD dan PM kepada Operation, dicatat lewat checklist di Bagian B."
+        "Titik kendali penyerahan layanan dari SD dan PM kepada Operation, dicatat melalui checklist di Bagian B."
        ],
        [
         "SD dan PM",
@@ -125,11 +131,11 @@
        ],
        [
         "Operation",
-        "Pihak yang menerima layanan pada G3, yaitu NOC dan SOC dengan Head of Operation sebagai penyetuju."
+        "Pihak yang menerima layanan pada G3, yaitu NOC dan SOC, dengan Head of Operation sebagai penyetuju."
        ],
        [
         "NOC",
-        "Network Operations Center, bagian Operation yang memantau dashboard layanan dan menangani tiket."
+        "Network Operations Center, bagian Operation yang memantau dashboard layanan dan menangani ticket."
        ],
        [
         "SOC",
@@ -137,7 +143,7 @@
        ],
        [
         "BAU",
-        "Business as usual: keadaan layanan yang sudah diterima Operation sesudah G3."
+        "Business as usual, yaitu keadaan layanan yang sudah diterima Operation setelah G3."
        ],
        [
         "Hypercare",
@@ -145,7 +151,7 @@
        ],
        [
         "Baseline",
-        "Rencana awal proyek yang dipakai sebagai pembanding hasil aktual pada tabel Pencapaian terhadap baseline di Bagian C."
+        "Rencana awal proyek, pembanding hasil aktual pada tabel Pencapaian terhadap baseline di Bagian C."
        ],
        [
         "Isu sisa",
@@ -153,7 +159,7 @@
        ],
        [
         "As-built",
-        "Dokumen yang menggambarkan sistem sebagaimana terpasang di pelanggan. Isinya tertulis di Bagian B butir 5."
+        "Dokumen sistem sebagaimana terpasang di pelanggan: topologi, IP address, versi, akses, dan ketergantungan vendor."
        ],
        [
         "Jumphost",
@@ -165,7 +171,7 @@
        ],
        [
         "Ticketing system",
-        "Sistem tiket Operation, yaitu Zammad (USULAN). Tiket generalist memakai Service Hub (GLPI) dan di luar form ini."
+        "Sistem ticket Operation, yaitu Zammad (USULAN). Ticket generalist memakai Service Hub (GLPI) dan di luar form ini."
        ],
        [
         "(USULAN)",
@@ -184,7 +190,7 @@
    "h": "Ketentuan Pengisian",
    "blocks": [
     {
-     "p": "Bagian lain merujuk ketentuan di bawah dengan nomor P."
+     "p": "Nomor P dipakai sebagai rujukan di bagian lain form ini."
     },
     {
      "table": {
@@ -195,11 +201,11 @@
       "rows": [
        [
         "P1",
-        "Bagian A, B, dan C diisi berurutan sesuai SNX-OPS-SOP-01 Bagian 6.5 dan 6.6."
+        "Isi Bagian A, B, dan C secara berurutan sesuai SNX-OPS-SOP-01 Bagian 6.5 dan 6.6."
        ],
        [
         "P2",
-        "Bagian A diisi sesudah UAT lolos dan SNX-OPS-FRM-05 ditandatangani."
+        "Isi Bagian A setelah UAT lolos dan SNX-OPS-FRM-05 ditandatangani."
        ],
        [
         "P3",
@@ -207,31 +213,31 @@
        ],
        [
         "P4",
-        "Dokumen teknis untuk pelanggan pemerintah ditulis tanpa harga, diskon, tier, atau roadmap komersil."
+        "Tulis dokumen teknis untuk pelanggan pemerintah tanpa harga, diskon, tier, atau roadmap komersial."
        ],
        [
         "P5",
-        "Kolom Status pada rincian deliverable Bagian A diisi Diterima atau Diterima dengan catatan."
+        "Isi kolom Status pada rincian deliverable Bagian A dengan Diterima atau Diterima dengan catatan."
        ],
        [
         "P6",
-        "Layanan dinyatakan BAU hanya bila semua butir Bagian B berstatus Lolos atau Tidak berlaku."
+        "Layanan dinyatakan BAU hanya jika semua butir Bagian B berstatus Lolos atau Tidak berlaku."
        ],
        [
         "P7",
-        "Operation berhak menolak serah terima G3 secara tertulis bila checklist belum lengkap. Selama itu layanan berstatus hypercare dengan pemilik SD dan PM."
+        "Jika checklist belum lengkap, Operation berhak menolak serah terima G3 secara tertulis. Selama itu layanan berstatus hypercare dengan pemilik SD dan PM."
        ],
        [
         "P8",
-        "Tanpa layanan SOC, hanya unsur SIEM pada butir 3 yang tidak berlaku. Monitoring NOC dan uji alert pada butir 3 tetap diperiksa, dan butir 3 tidak boleh berstatus Tidak berlaku. Tanpa layanan backup, butir 4 berstatus Tidak berlaku."
+        "Tanpa layanan SOC, hanya unsur SIEM pada butir 3 yang tidak berlaku. Monitoring NOC dan uji alert pada butir 3 tetap diperiksa; butir 3 tidak boleh berstatus Tidak berlaku. Tanpa layanan backup, butir 4 berstatus Tidak berlaku."
        ],
        [
         "P9",
-        "Unsur SIEM yang tidak berlaku pada butir 3, dan butir 4 yang berstatus Tidak berlaku, diberi alasannya di kolom Bukti atau referensi (USULAN)."
+        "Tulis alasan di kolom Bukti atau referensi untuk unsur SIEM yang tidak berlaku pada butir 3 dan untuk butir 4 yang berstatus Tidak berlaku (USULAN)."
        ],
        [
         "P10",
-        "Kolom Bukti atau referensi diisi nama dan letak rekaman, bukan isi kredensial (USULAN)."
+        "Isi kolom Bukti atau referensi dengan nama dan letak record, bukan isi kredensial (USULAN)."
        ]
       ],
       "widths_cm": [
@@ -273,13 +279,13 @@
        ],
        [
         "Lead SOC",
-        "Sama dengan Lead NOC, hanya bila ada layanan SOC.",
+        "Sama dengan Lead NOC, hanya jika ada layanan SOC.",
         "Menandatangani Bagian B sebagai penerima."
        ],
        [
         "Head of Operation",
         "Menerima layanan sebagai BAU.",
-        "Menyetujui G3, atau menolaknya menurut P7 (USULAN)."
+        "Menyetujui G3, atau menolaknya sesuai P7 (USULAN)."
        ],
        [
         "Pelanggan (Pihak Kedua)",
@@ -303,14 +309,14 @@
      "flow": {
       "rankdir": "TB",
       "nodes": {
-       "a": "UAT lolos\nSNX-OPS-FRM-05 ditandatangani",
-       "b": "Bagian A: BAST\nditandatangani kedua pihak (G2)",
-       "c": "Bagian B: checklist G3\nProject Manager bersama\nLead NOC dan Lead SOC",
+       "a": "UAT lolos, SNX-OPS-FRM-05 ditandatangani",
+       "b": "Bagian A: BAST ditandatangani kedua pihak (G2)",
+       "c": "Bagian B: checklist G3 oleh Project Manager\nbersama Lead NOC dan Lead SOC",
        "d": "Semua butir Lolos\natau Tidak berlaku?",
-       "h": "Hypercare\npemilik SD dan PM",
-       "e": "Layanan BAU\nditerima Head of Operation",
-       "f": "Bagian C: laporan penutupan\nbaseline dibanding aktual,\nlessons learned",
-       "g": "Arsip original di Drive\ndurasi kontrak + 5 tahun"
+       "h": "Hypercare, pemilik SD dan PM",
+       "e": "Layanan BAU, diterima Head of Operation",
+       "f": "Bagian C: laporan penutupan\n(baseline dibanding aktual, lessons learned)",
+       "g": "Arsip original di Drive, durasi kontrak + 5 tahun"
       },
       "shapes": {
        "d": "diamond"
@@ -352,7 +358,7 @@
         "g"
        ]
       ],
-      "caption": "Gambar 1. Alur pengisian BAST, checklist G3, dan laporan penutupan. Garis dari hypercare kembali ke Bagian B berlabel (USULAN)."
+      "caption": "Gambar 1. Alur proses BAST, checklist G3, dan laporan penutupan. Garis dari hypercare kembali ke Bagian B berlabel (USULAN)."
      }
     }
    ]
@@ -493,10 +499,11 @@
       "widths_cm": [
        1.2,
        4.5,
-       4.0,
-       2.8,
-       3.0
-      ]
+       3.5,
+       2.2,
+       4.6
+      ],
+      "min_row_cm": 0.9
      }
     },
     {
@@ -523,7 +530,8 @@
        7.0,
        3.8,
        3.5
-      ]
+      ],
+      "min_row_cm": 0.9
      }
     },
     {
@@ -565,7 +573,7 @@
    "h": "Bagian B. Checklist Serah Terima ke Operation (G3)",
    "blocks": [
     {
-     "p": "Aturan G3 ada di P6, P7, dan P8. Kolom Status diisi Lolos, Belum, atau Tidak berlaku. Kolom PIC diisi peran dari bagian Peran."
+     "p": "Isi kolom Status dengan Lolos, Belum, atau Tidak berlaku sesuai P6 sampai P8. Isi kolom PIC dengan peran dari tabel Peran."
     },
     {
      "table": {
@@ -657,7 +665,7 @@
       ],
       "widths_cm": [
        1.0,
-       6.5,
+       7.0,
        2.2,
        3.6,
        2.2
@@ -737,7 +745,7 @@
    "h": "Bagian C. Laporan Penutupan Proyek",
    "blocks": [
     {
-     "p": "Bagian C dipakai sesudah layanan diterima sebagai BAU."
+     "p": "Bagian C dipakai setelah layanan diterima sebagai BAU."
     },
     {
      "h2": "Ringkasan proyek"
@@ -855,7 +863,8 @@
        7.0,
        3.8,
        3.5
-      ]
+      ],
+      "min_row_cm": 0.9
      }
     },
     {
@@ -882,7 +891,8 @@
        4.3,
        4.3,
        5.7
-      ]
+      ],
+      "min_row_cm": 0.9
      }
     },
     {
@@ -964,17 +974,17 @@
        ],
        [
         "Kriteria yang menahan G3 sudah terpenuhi selama hypercare",
-        "Mengisi ulang status butir yang berubah di Bagian B, lalu memutuskan G3 kembali pada form yang sama (USULAN).",
+        "Memperbarui status butir Bagian B yang berubah, lalu memutuskan ulang G3 pada form yang sama (USULAN).",
         "Project Manager mengisi. Head of Operation memutuskan."
        ],
        [
         "Tidak ada layanan SOC pada butir 3",
-        "Memeriksa monitoring NOC dan uji alert seperti biasa dan mengisi status butir 3 dari hasilnya. Unsur SIEM ditulis tidak berlaku beserta alasannya di kolom Bukti atau referensi (P8, P9).",
+        "Mengisi status butir 3 dari hasil pemeriksaan monitoring NOC dan uji alert. Unsur SIEM ditulis tidak berlaku beserta alasannya di kolom Bukti atau referensi (P8, P9).",
         "Project Manager"
        ],
        [
         "Tidak ada layanan backup pada butir 4",
-        "Mengisi Tidak berlaku dan menulis alasannya di kolom Bukti atau referensi (P8, P9).",
+        "Mengisi Tidak berlaku beserta alasannya di kolom Bukti atau referensi (P8, P9).",
         "Project Manager"
        ],
        [
@@ -984,14 +994,14 @@
        ],
        [
         "Pelanggan menerima pekerjaan dengan catatan",
-        "Mengisi Status Diterima dengan catatan dan menulis isu sisa beserta pemilik dan target selesai di Bagian A. Isu yang masih terbuka saat penutupan ditulis di tabel Isu sisa dan pemiliknya di Bagian C.",
+        "Mengisi Status Diterima dengan catatan serta isu sisa, pemilik, dan target selesai di Bagian A. Isu yang belum selesai saat penutupan ditulis di tabel Isu sisa dan pemiliknya (Bagian C).",
         "Project Manager mencatat. Pelanggan menyepakati."
        ]
       ],
       "widths_cm": [
-       4.8,
-       6.5,
-       4.2
+       3.8,
+       7.0,
+       5.2
       ]
      }
     }
@@ -1001,12 +1011,12 @@
    "h": "Rekaman dan Retensi",
    "blocks": [
     {
-     "p": "Baru lokasi BAST original yang ditetapkan, yaitu Drive. Folder checklist G3 dan laporan penutupan sama dengan folder BAST (USULAN). Pemilik semua rekaman di tabel ini adalah Service Delivery Manager (USULAN)."
+     "p": "BAST original disimpan di Drive. Checklist G3 dan laporan penutupan disimpan di folder BAST yang sama (USULAN). Pemilik semua record adalah Service Delivery Manager (USULAN)."
     },
     {
      "table": {
       "header": [
-       "Rekaman",
+       "Record",
        "Lokasi dan pemilik",
        "Retensi"
       ],
@@ -1028,8 +1038,8 @@
        ]
       ],
       "widths_cm": [
-       5.0,
-       7.0,
+       4.5,
+       8.0,
        3.5
       ]
      }
@@ -1050,7 +1060,7 @@
        [
         "ISO 9001:2015",
         "8.5.5 Kegiatan setelah penyerahan",
-        "BAST mencatat tanggal mulai masa layanan atau garansi. Bagian C mencatat isu sisa beserta pemiliknya."
+        "BAST mencatat tanggal mulai masa layanan atau garansi. Bagian C mencatat isu sisa dan pemiliknya."
        ],
        [
         "ISO 9001:2015",
@@ -1060,13 +1070,13 @@
        [
         "ISO/IEC 27001:2022",
         "Annex A 5.8 Keamanan informasi dalam manajemen proyek",
-        "Checklist G3 memuat pendaftaran aset (butir 2), akses lewat Jumphost tanpa kredensial di chat atau dokumen (butir 7), dan pencabutan akses sementara tim proyek (butir 8)."
+        "Checklist G3 memuat pendaftaran aset (butir 2), akses melalui Jumphost tanpa kredensial di chat atau dokumen (butir 7), dan pencabutan akses sementara tim proyek (butir 8)."
        ]
       ],
       "widths_cm": [
        3.4,
-       5.1,
-       7.0
+       4.6,
+       8.0
       ]
      }
     }
@@ -1088,48 +1098,48 @@
        ],
        [
         "SNX-OPS-FRM-01",
-        "Project Plan, Scope & Timeline Records. Diarsipkan bersama form ini (tabel Arsip, Bagian C)."
+        "Project Plan, Scope & Timeline Records. Ikut diarsipkan."
        ],
        [
         "SNX-OPS-FRM-02",
-        "Project Risk Register. Diarsipkan bersama form ini (tabel Arsip, Bagian C)."
+        "Project Risk Register. Ikut diarsipkan."
        ],
        [
         "SNX-OPS-FRM-03",
-        "Project Progress & Monitoring Report. Diarsipkan bersama form ini (tabel Arsip, Bagian C)."
+        "Project Progress & Monitoring Report. Ikut diarsipkan."
        ],
        [
         "SNX-OPS-FRM-04",
-        "Change Request & Approval Log. Diarsipkan bersama form ini (tabel Arsip, Bagian C)."
+        "Change Request & Approval Log. Ikut diarsipkan."
        ],
        [
         "SNX-OPS-FRM-05",
-        "Testing / UAT & Quality Verification Records. Hasil UAT, prasyarat Bagian A (P2). Diarsipkan bersama form ini (tabel Arsip, Bagian C)."
+        "Testing / UAT & Quality Verification Records. Hasil UAT, prasyarat Bagian A. Ikut diarsipkan."
        ],
        [
         "SNX-OPS-FRM-07",
-        "Maintenance Schedule & Service Report. Tempat jadwal preventive maintenance (butir 10)."
+        "Maintenance Schedule & Service Report. Jadwal preventive maintenance (butir 10)."
        ],
        [
         "SNX-OPS-FRM-09",
-        "SLA Performance Monitoring Report. Tempat parameter SLA (butir 9)."
+        "SLA Performance Monitoring Report. Parameter SLA (butir 9)."
        ],
        [
         "SNX-ISMS-REG-01",
-        "Information Asset Register. Tempat pendaftaran aset (butir 2)."
+        "Information Asset Register. Pendaftaran aset (butir 2)."
        ],
        [
         "SNX-ISMS-FRM-01",
-        "Backup Log & Restore Testing Records. Tempat hasil restore uji pertama (butir 4)."
+        "Backup Log & Restore Testing Records. Hasil restore uji pertama (butir 4)."
        ],
        [
         "SNX-ISMS-REG-04",
-        "User Access Register & Periodic Access Review. Tempat pendaftaran akses Operation (butir 7)."
+        "User Access Register & Periodic Access Review. Akses Operation (butir 7)."
        ]
       ],
       "widths_cm": [
-       3.6,
-       11.9
+       4.0,
+       12.0
       ]
      }
     }
@@ -1139,10 +1149,10 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Butir berlabel (USULAN) diputus pemeriksa dokumen (Reviewed By) sebelum pengesahan."
+     "p": "Dokumen ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approved By. Butir berlabel (USULAN) diputus pemeriksa dokumen (Reviewed By) sebelum pengesahan."
     },
     {
-     "p": "Service Delivery Manager meninjau dokumen ini setiap tahun, dan lebih awal bila alur G2 atau G3 berubah."
+     "p": "Service Delivery Manager meninjau dokumen ini setiap tahun, atau lebih awal jika alur G2 atau G3 berubah."
     }
    ]
   }

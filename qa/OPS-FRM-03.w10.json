@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Lingkup: 'Laporan ini hanya merangkum rencana, risiko, dan change request' menghilangkan kata 'data'; arti tetap, tetapi 'merangkum data rencana' lebih tepat.",
+  "Ringkasan status: label (USULAN) kini di akhir kalimat gabungan sehingga ikut menandai kesamaan dengan ambang eskalasi SOP-01 6.4; sesuai STYLE §3.5 (satu label di akhir butir), tidak mengubah aturan.",
+  "PDF hlm 6: Petunjuk Pengisian hanya menempati sepertiga halaman karena gambar alur pindah ke hlm 7; ruang kosong besar, tetapi jumlah halaman dan halaman awal ISI (7) terkunci dan tidak naik.",
+  "Teks paragraf di luar tabel masih rata kiri-kanan (mis. Tujuan, caption Gambar 1); sel tabel sudah rata kiri.",
+  "Diagram alur hlm 7 terbaca jelas pada 60 dpi; label ya/tidak dan kotak tidak terpotong."
+ ],
+ "contoh_baik": [
+  "Project Manager menulis salah satu dari Hijau, Kuning, atau Merah di kolom Status. Arti tiap warna ada di bagian Istilah. -> Isi kolom Status dengan Hijau, Kuning, atau Merah sesuai arti di tabel Istilah."
+ ]
+}

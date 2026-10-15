@@ -1,0 +1,23 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Tabel Kode: 'Ikut diarsipkan.' diulang lima kali dan terdengar terpotong; usul 'Diarsipkan bersama form ini.' agar subjek arsipnya jelas.",
+  "Tabel Kode SNX-ISMS-REG-04: 'Tempat pendaftaran akses Operation (butir 7)' menjadi 'Akses Operation (butir 7)'; kata 'pendaftaran' sebaiknya kembali: 'Pendaftaran akses Operation (butir 7)'.",
+  "Rekaman dan Retensi: 'Pemilik semua rekaman di tabel ini' menjadi 'Pemilik semua record'; frasa 'di tabel ini' hilang sehingga cakupan terbaca lebih luas. Usul: 'Pemilik semua record di tabel ini adalah Service Delivery Manager (USULAN).'",
+  "Bagian B: 'Isi kolom Status ... sesuai P6 sampai P8' menyiratkan P7 mengatur nilai Status, padahal P7 mengatur penolakan G3; arti aturan tidak berubah, tetapi 'sesuai P6 dan P8' atau 'Aturan G3: P6 sampai P8' lebih tepat.",
+  "Penanganan pengecualian, baris tanpa SOC butir 3: kata kerja 'Memeriksa monitoring NOC dan uji alert seperti biasa' dilebur menjadi 'hasil pemeriksaan'; kewajiban periksa tetap ada di P8, jadi bukan pemblokir.",
+  "Definisi As-built mengganti rujukan 'Bagian B butir 5' dengan isinya (topologi, IP address, versi, akses, ketergantungan vendor); butir 5 di PDF tidak berlabel (USULAN), jadi tidak perlu label.",
+  "PDF: caption Gambar 1 terpisah dari diagramnya (diagram di hlm 8, caption di hlm 9 di atas Bagian A); perbaiki dengan keep-with-next pada paragraf gambar tanpa menambah halaman.",
+  "Ruang Lingkup masih memakai 'Dokumen ini dipakai' sementara Tujuan dan kalimat lain memakai 'form ini'; pilih satu sebutan."
+ ],
+ "contoh_baik": [
+  "Pelaksana: Mengisi ulang status butir yang berubah di Bagian B, lalu memutuskan G3 kembali pada form yang sama (USULAN). -> Memperbarui status butir Bagian B yang berubah, lalu memutuskan ulang G3 pada form yang sama (USULAN)."
+ ]
+}

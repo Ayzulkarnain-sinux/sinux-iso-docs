@@ -1,0 +1,42 @@
+{
+ "key": "OPS-FRM-06",
+ "mode": "generic",
+ "out": "out/07_Ops/SNX-OPS-FRM-06 Project Handover BAST Closure Report (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2027,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 15,
+  "instr_items": 23,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2078,
+  "calque": [],
+  "lewat": 3,
+  "pointer": 0,
+  "usulan": 15,
+  "instr_items": 23,
+  "instr_role_start": 1,
+  "justified_cells": 19,
+  "tables_ge3_no_header": 23
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-FRM-06 Project Handover BAST Closure Report (Rev00 DRAFT).pdf",
+ "pages": 14,
+ "blank": [],
+ "form": {
+  "isi_heading": "Bagian A. Berita Acara Serah Terima (BAST)",
+  "pages_bed1bb6": 14,
+  "pages_w10": 14,
+  "isi_page_bed1bb6": 9,
+  "isi_page_w10": 9
+ },
+ "pass": true
+}

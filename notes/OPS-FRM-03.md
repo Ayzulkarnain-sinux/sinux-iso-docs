@@ -137,3 +137,17 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | Nama Amirull Yusuf Zulkarnain | Tidak dipakai di badan; hanya muncul di catatan ini sebagai isi sumber |
 | Tanggal | Tidak ada tanggal di dokumen hasil (tanggal draft 13 Oktober 2026 di sumber tidak dibawa; tanggal efektif kosong) |
 | Pelaku Project Manager, arti istilah, lingkup | Tafsir, bukan fakta baru; dicatat di Asumsi 1, 2, 4, 5 dan USULAN 4 dan 5, tanpa angka atau nama baru |
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil (satu label USULAN pada ambang Jadwal 1 minggu dipertahankan dan dipindah ke akhir butir).
+### W10 kalimat dihapus atau dipindah
+- "Arti tiap warna ada di bagian Istilah." (kalimat penunjuk; diganti "Isi kolom Status dengan Hijau, Kuning, atau Merah sesuai arti di tabel Istilah.")
+- "Ambang ini sama dengan ambang eskalasi ke COO di SNX-OPS-SOP-01 Bagian 6.4." digabung ke kalimat ambang Jadwal, label (USULAN) di akhir butir; isi tidak berubah.
+### W10 selisih angka
+nihil (subst_diff kosong).
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (sama dengan dokumen induk OPS).
+- Petunjuk Pengisian ditulis sebagai kalimat perintah (0 dari 3 butir diawali nama peran).
+- Label node diagram dibuat satu baris agar gambar alur lebih pendek (19,0 cm menjadi 17,1 cm) dan bagian Isi Laporan tetap mulai di halaman 7; id, bentuk, dan edges tidak berubah.
+- Tabel isian bagian 6 diberi min_row_cm 0,9 agar cukup untuk tulisan tangan; jumlah halaman tetap 10.

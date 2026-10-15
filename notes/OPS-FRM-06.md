@@ -204,3 +204,20 @@ Nonblocking yang ikut diperbaiki (qa/OPS-FRM-06.verify.r1.json, hanya dibaca):
 | Zammad menggantikan "Zammad atau Service Hub" | Tidak diubah; sudah USULAN 1 dan open item 11, dipastikan saat ACC |
 
 Uji ulang: render_sop.py berhasil; lint_doc.py generic: "pass": true, "fails": [], warn "15 butir (USULAN) menunggu ACC".
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil (15 label USULAN tetap; jumlah sama dengan bed1bb6).
+### W10 kalimat dihapus atau dipindah
+- "Aturan G3 ada di P6, P7, dan P8." (kalimat penunjuk; diganti instruksi "Isi kolom Status dengan Lolos, Belum, atau Tidak berlaku sesuai P6 sampai P8.")
+- Definisi As-built: "Isinya tertulis di Bagian B butir 5." (penunjuk; diganti faktanya: topologi, IP address, versi, akses, dan ketergantungan vendor)
+- Dokumen Terkait SNX-OPS-FRM-05: rujukan "(P2)" dihapus agar sel memuat satu rujukan.
+- Dokumen Terkait SNX-OPS-FRM-01 sampai -05: "Diarsipkan bersama form ini (tabel Arsip, Bagian C)." dipendekkan menjadi "Ikut diarsipkan."; lokasinya tetap tertulis di tabel Arsip Bagian C.
+- Dokumen Terkait FRM-07, FRM-09, ISMS-REG-01, ISMS-FRM-01, ISMS-REG-04: kata "Tempat" dibuang (mis. "Tempat parameter SLA (butir 9)." menjadi "Parameter SLA (butir 9).").
+### W10 selisih angka
+nihil (subst_diff kosong).
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (dokumen induk OPS).
+- Ketentuan Pengisian P1, P2, P4, P5, P9, P10 ditulis sebagai kalimat perintah; P7 tidak lagi diawali nama peran (0 dari 23 butir instruksi diawali peran). "komersil" dibakukan menjadi "komersial".
+- Label node diagram dibuat satu atau dua baris lebar (id, bentuk, edges tetap) agar gambar alur 17,7 cm dan Bagian A tetap mulai di halaman 9.
+- Tabel isian (rincian deliverable, isu sisa A dan C, lessons learned) diberi min_row_cm 0,9; lebar kolom tabel Bagian B, Pengecualian, Rekaman, Acuan, dan Dokumen Terkait disetel ulang. Halaman tetap 14.
