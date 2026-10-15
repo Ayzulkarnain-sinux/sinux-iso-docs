@@ -259,3 +259,18 @@ Uji (bukti: /tmp/pen-FAT-SOP-05/lint.out.txt, validate.out.txt, blankscan.out.tx
 - `python3 -I tools/lint_doc.py /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx sop`: "pass": true, fails kosong, warns hanya "27 butir (USULAN) menunggu ACC"; warn PIC SLA nol.
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx`: "All validations PASSED!".
 - `python3 -I reports/orch/blankscan.py /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx`: "ok 13 FAT-SOP-05.docx []".
+
+
+## ISO-W9
+
+Round perbaikan ISO-W9 (LEAD G-3 A6). Fakta, angka, dan struktur lain tetap. Rujukan silang yang diubah: hanya baris SNX-HR-ORG-01 di bagian 11 FAT-SOP-01 (di atas).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Blok Reviewed (meta.approval.reviewed) | Finance Lead | Amirull Yusuf Zulkarnain / Direktur |
+| Bagian 3 Definisi | Tanpa istilah Finance Lead dan Finance Staff | Dua baris baru, isi persis LEAD G-3 A6 (lihat teks di FAT-SOP-01 W9). Tidak ada kalimat pemetaan lain yang perlu diselaraskan |
+
+Open item:
+
+- K-13 (Finance Lead dan Finance Staff belum dipetakan ke jabatan): ditutup W9: dipetakan lewat definisi bagian 3 sesuai keputusan owner 15 Okt ("finance lead belum ada"), berlabel USULAN; baris lama tidak dihapus.
+- Pemetaan Finance Lead dan Finance Staff ke jabatan: status berubah W9: berlaku sebagai USULAN sampai jabatan Finance Lead terisi.

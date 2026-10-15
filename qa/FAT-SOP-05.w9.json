@@ -1,0 +1,28 @@
+{
+ "key": "FAT-SOP-05",
+ "cluster": "FAT-A",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Dua definisi baru di bagian 3 dimulai huruf kecil ('peran pemeriksa...', 'peran pelaksana...'), padahal definisi lain diawali huruf kapital. Ini sesuai teks persis A6 dan hanya soal gaya.",
+  "notes/FAT-SOP-05.md bagian ISO-W9 berisi kalimat salinan dari FAT-SOP-01: 'Rujukan silang yang diubah: hanya baris SNX-HR-ORG-01 di bagian 11 FAT-SOP-01 (di atas)' dan 'lihat teks di FAT-SOP-01 W9'. Diff FAT-SOP-05 tidak mengubah rujukan silang apa pun, jadi catatan itu tidak akurat untuk dokumen ini. Yang terdampak hanya notes, bukan dokumen.",
+  "Process Owner di header tetap 'Finance Lead'. Ini tidak berubah dan tidak diminta A6. Isinya sejalan dengan definisi baru (peran, tanpa nama)."
+ ],
+ "butir_dikerjakan": [
+  "A6 (LEAD G-3) Reviewed By: diubah dari 'Finance Lead' menjadi 'Amirull Yusuf Zulkarnain / Direktur', sesuai defaults v22 prepared_reviewed.FAT.reviewed.",
+  "A6 Prepared By tetap 'Finance Staff' dan Approved By tetap 'Samuel Kristanto Utomo / President Director', sesuai defaults v22 (FAT.prepared dan approved_by.all).",
+  "A6 definisi: di bagian 3 Definisi ditambahkan baris 'Finance Lead | peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).' dan baris 'Finance Staff | peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN).' Isinya persis teks instruksi, urutannya alfabetis (sesudah Faktur Pajak Masukan, sebelum Hak kompensasi pajak).",
+  "A6 penyelarasan: render sesudah tidak memuat kalimat lain yang memetakan Finance Lead atau Finance Staff ke jabatan. Grep JA-1, Direktur, dan jabatan hanya menemukan blok approval dan dua definisi baru. Tidak ada yang perlu diselaraskan, dan diff tidak memuat perubahan lain."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "FAT-SOP-05 bukan dokumen HR atau Legal, jadi aturan langkah 7 tidak berlaku. Hitungan informatif pada render sesudah: 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, 'dokumen sumber' 0, 'draf ini' 0. 'penyusun' muncul 2 kali sebagai bagian kata 'penyusunan' (SPT Tahunan, laporan keuangan) di kalimat lama yang tidak berubah, jadi bukan frasa proses penyusunan. w9diff: 1 baris lama, 3 baris baru, dan spec.diff hanya menyentuh meta.approval.reviewed serta 2 baris definisi.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

@@ -13,7 +13,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Finance Staff",
-   "reviewed": "Finance Lead",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -78,6 +78,14 @@
   [
    "Faktur Pajak Masukan",
    "Faktur pajak atas pembelian SINUX yang dikreditkan terhadap PPN."
+  ],
+  [
+   "Finance Lead",
+   "peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+  ],
+  [
+   "Finance Staff",
+   "peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
   ],
   [
    "Hak kompensasi pajak (Tax Asset)",
