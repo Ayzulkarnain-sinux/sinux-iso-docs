@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Butir 4.5; tabel Peran baris Pemilik informasi",
+      "masalah": "Butir 1 sudah dikerjakan: Approver tidak lagi menetapkan PUBLIC, dan hanya Pemilik informasi yang menurunkan klasifikasi. Tempat pencatatan penurunan masih berbeda dari SNX-ISMS-PRO-01. Dokumen ini mencatatnya di bukti persetujuan materi (USULAN), sedangkan langkah prosedur PRO-01 mencatatnya di SNX-ISMS-REG-01.",
+      "bukti": "MKT-REG-01 4.5: 'penurunan itu tercatat di bukti persetujuan yang sama (USULAN)'. specs/ISMS-PRO-01.json procedures/0: 'Catat penurunan klasifikasi di SNX-ISMS-REG-01.' (Pemilik informasi). Label USULAN dan open item 10 di notes ada, jadi bukan pemblokir."
+    },
+    {
+      "lokasi": "Bagian 11 tabel Rekaman baris 'File final materi dan bukti persetujuan'; butir 4.5",
+      "masalah": "Pemilik rekaman file final materi tertulis Brand & Marketing, sedangkan 4.5 menetapkan VP Commercial sebagai Pemilik informasi atas materi. PRO-01 menyamakan Pemilik informasi dengan pemilik aset di kolom Pemilik SNX-ISMS-REG-01, sehingga pembaca bisa salah menangkap siapa yang boleh menurunkan klasifikasi.",
+      "bukti": "Rekaman: 'Pemilik: Brand & Marketing. Klasifikasi INTERNAL sebelum Disetujui dan PUBLIC sesudahnya (butir 4.5).' PRO-01 definisi: 'Peran yang tercatat di kolom Pemilik SNX-ISMS-REG-01 sebagai pemilik aset.'"
+    },
+    {
+      "lokasi": "Bagian 3 Definisi baris Pemilik informasi",
+      "masalah": "Bunyi definisi tidak sama dengan definisi di SNX-ISMS-PRO-01, padahal definisi ini menyatakan diri 'menurut SNX-ISMS-PRO-01'. Isinya masih sejalan dengan PRO-01 butir 4.1.",
+      "bukti": "MKT-REG-01: 'Peran yang menetapkan klasifikasi sebuah informasi menurut SNX-ISMS-PRO-01.' PRO-01: 'Peran yang tercatat di kolom Pemilik SNX-ISMS-REG-01 sebagai pemilik aset.'"
+    },
+    {
+      "lokasi": "Butir 4.5; Ruang Lingkup tabel pengecualian baris RPT-01 dan REG-03",
+      "masalah": "Ada pasif baru tanpa pelaku (RUNBOOK 6a butir 6), padahal pelakunya diketahui. Pola 'Dicatat di ...' sudah dipakai di baris REG-02 sebelum sweep. Istilahnya juga belum seragam: baris REG-02 di Ruang Lingkup memakai 'menautkan', sedangkan di Dokumen Terkait masih 'dirujuk'.",
+      "bukti": "'penurunan itu tercatat di bukti persetujuan yang sama'; 'Dicatat di SNX-MKT-RPT-01 (USULAN).'; 'Dicatat di SNX-MKT-REG-03 (USULAN).'; Dokumen Terkait REG-02: 'tiap materi yang dipakai dirujuk ke ID persetujuan'."
+    }
+  ]
+}

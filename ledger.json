@@ -2059,7 +2059,7 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-MKT-REG-01",
    "out_path": "out/06_Marketing/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx",
    "sources": [],
@@ -2070,7 +2070,7 @@
    "open_items": [
     "Sweep (b): butir 4.5 Approver menetapkan PUBLIC bertentangan dengan SNX-ISMS-PRO-01 butir 4.2 (penurunan klasifikasi hanya oleh Pemilik informasi)"
    ],
-   "updated_at": "2026-10-15T01:04:43Z",
+   "updated_at": "2026-10-15T01:06:48Z",
    "pen_agent": "a6278839497527284",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02",
@@ -2093,13 +2093,14 @@
    "loops": 0,
    "usulan_count": 22,
    "open_items": [
-    "Sweep (b): parafrase REG-01 butir 4.13 di 4.6 basi; Tujuan kalimat 3 menyebut berkas tersimpan di REG-01; open item 2-3 notes basi; usulan folder Marketing vs Commercial di REG-01"
+    "Sweep (b): parafrase REG-01 butir 4.13 di 4.6 basi; Tujuan kalimat 3 menyebut berkas tersimpan di REG-01; open item 2-3 notes basi; usulan folder Marketing vs Commercial di REG-01",
+    "Residu mutu (sweep nonblocking): irisan Tabel 3 dengan REG-01 dan irisan aktivitas dengan RPT-01 belum dihapus (struktur dikunci); pemutus cakupan owner"
    ],
-   "updated_at": "2026-10-15T01:06:06Z",
+   "updated_at": "2026-10-15T01:06:09Z",
    "pen_agent": "af5f5073189ee8555",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-01",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 66,
