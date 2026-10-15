@@ -1,0 +1,17 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Ketentuan 3: kalimat kedua pasif 'Perubahan kegiatan usaha ... juga diberitahukan kepada Staff Legal' membuat pelaku (Unit Kerja Terkait) kurang tegas; usul '... dan memberi tahu Staff Legal jika ada perubahan kegiatan usaha ...'.",
+  "PDF: kolom Jenis Izin di Daftar Perizinan sempit sehingga baris 7-9 tinggi; kolom Nomor dan Jadwal Perpanjangan bisa dipersempit. Judul kolom berulang di hal. 9, rata kiri, tidak terpotong."
+ ],
+ "contoh_baik": [
+  "Tujuan: 'dokumen legalitas lain yang SINUX miliki atau wajib penuhi' -> 'dokumen legalitas lain yang dimiliki atau wajib dipenuhi SINUX'."
+ ]
+}

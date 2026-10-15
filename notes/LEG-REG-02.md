@@ -206,3 +206,19 @@ Open item:
 
 - Open item 1 (pemetaan peran ke JA-08 dan JA-09): bagian pemetaan ditutup W9: diputus owner (LEAD G-3 A5). Bagian "Legal dan Compliance" sebagai pemilik dokumen tetap terbuka (pemutus Aziz).
 - R2: baris USULAN 1 dan Asumsi 1 kini memuat penanda W9 di barisnya sendiri; tidak ada baris dihapus.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Tabel Peran: rujukan "(Ketentuan butir 1, 3 sampai 5, 7, 10, 11, 15 sampai 18, 20)", "(Ketentuan butir 6, 12, 13, 19)", "(Ketentuan butir 2, 3, 8, 9)", dan "(Ketentuan butir 12 sampai 14, 16)" dihapus.
+- Rekaman: "(Ketentuan butir 20)" dihapus. Tabel Kategori Risiko, baris Sangat Tinggi: "(Ketentuan butir 13)" diganti faktanya ("eskalasi segera kepada Manajemen").
+- Istilah: "Batas nilainya ada di Metode Penilaian." diganti batas nilainya langsung; "Cara menghitungnya ada di Metode Penilaian." diganti rumusnya (skor Kemungkinan x skor Dampak).
+- Ketentuan 15: frasa tujuan "agar dapat ditelusuri" dihapus (aturannya tetap: setiap perubahan dicatat di Riwayat Penilaian dan Status).
+- Istilah Line Manager Legal dan Staff Legal: "dipetakan ke jabatan ... di SNX-HR-ORG-01" ditulis ulang "untuk jabatan ... di SNX-HR-ORG-01".
+### W10 selisih angka
+nihil (subst_diff kosong).
+### W10 catatan
+- Pihak luar tidak disebut khusus; "pelanggan" dan "vendor" hanya sebagai nama area risiko, sama dengan dokumen Legal lain.
+- Petunjuk Pengisian jadi kalimat perintah (0 dari 10 diawali peran). Ketentuan Pengelolaan tetap menyebut satu pelaku per butir.
+- Diagram alur tidak diubah. Halaman ISI kembali ke halaman 10 (sebelumnya naik ke 11 karena table_defaults) setelah bagian sebelum ISI dipadatkan.

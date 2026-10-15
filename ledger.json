@@ -3024,6 +3024,20 @@
    "file": "reports/w10/sources_modtime.json",
    "hasil": "54 dari 54 sama dengan ledger"
   },
-  "catatan_waktu": "Stempel waktu W10 diambil dari date -u dan jam commit git; yang bertanda ~ adalah taksiran dari jam commit terdekat."
+  "catatan_waktu": "Stempel waktu W10 diambil dari date -u dan jam commit git; yang bertanda ~ adalah taksiran dari jam commit terdekat.",
+  "pilot": {
+   "commit": "c7d431d",
+   "at": "2026-10-15T07:36Z",
+   "pass": [
+    "OPS-FRM-02",
+    "LEG-FRM-01",
+    "FAT-SOP-01",
+    "HR-SOP-13"
+   ],
+   "residu": [
+    "OPS-FRM-10"
+   ],
+   "dikirim_owner": "SendUserFile 07:36Z: 4 PDF PASS, PDF percobaan OPS-FRM-10, diff-skrip-istilah-pilot.md"
+  }
  }
 }

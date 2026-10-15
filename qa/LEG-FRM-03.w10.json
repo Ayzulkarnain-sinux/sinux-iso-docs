@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Istilah 'Kegiatan pengelolaan data' kini dua kalimat; STYLE §2.7 meminta satu kalimat. Usul: '... atau informasi rahasia, dicatat satu baris di inventaris.'",
+  "Peran VP Tech: 'Peran ini dipetakan dari unit IT (USULAN)' menjadi 'Ditunjuk sebagai wakil unit IT (USULAN)' sedikit menggeser arti dari pemetaan menjadi penunjukan; usul 'Mewakili unit IT (USULAN).' atau pindahkan catatan pemetaan ke notes.",
+  "Petunjuk 1 'Semua sel data kosong sampai diisi Staff Legal dari bukti yang diperiksa.' kaku; usul 'Isi semua sel data dari bukti yang diperiksa.'",
+  "PDF rapi: rata kiri, judul kolom berulang pada tabel Daftar Evaluasi lintas halaman, lebar Hal yang Diperiksa paling besar; halaman ISI maju dari 10 ke 9."
+ ],
+ "contoh_baik": [
+  "F.1: 'Permintaan subjek data ... diterima lewat jalur yang SINUX tetapkan' -> 'Permintaan subjek data ... diterima melalui jalur yang ditetapkan SINUX, dicatat, dan dijawab sesuai peraturan yang berlaku.'"
+ ]
+}

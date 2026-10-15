@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Ketentuan 15 kehilangan frasa tujuan 'agar dapat ditelusuri'; tidak mengubah kewajiban, tetapi sebaiknya dipertahankan untuk jejak ISO 7.5.3.",
+  "Ketentuan 12 'dengan Manajemen secara prioritas' kaku; usul 'membahas lebih dahulu risiko berkategori Tinggi dan Sangat Tinggi dengan Manajemen'.",
+  "Istilah Kategori Risiko kini memuat rentang nilai (1-4, 5-9, 10-16, 17-25); cocok dengan tabel Kategori Risiko.",
+  "PDF: judul kolom 'Dampak (1 sampai 5)' terbelah janggal di tabel Penilaian Risiko; selebihnya rata kiri dan terbaca."
+ ],
+ "contoh_baik": [
+  "Petunjuk 3: 'Staff Legal menambah baris bila satu area memiliki lebih dari satu risiko' -> 'Tambah baris jika satu area punya lebih dari satu risiko, dengan nomor urut berikutnya dan nama area yang sama.'"
+ ]
+}

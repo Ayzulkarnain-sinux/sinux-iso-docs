@@ -247,3 +247,21 @@ Tidak ada kredensial, kata sandi, PIN, atau token di spec atau notes ini.
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.
 - A3: dokumen hanya menyebut JA-04 sebagai jabatan VP Tech Operation and Services, tanpa atasan atau garis lapor; tidak diubah.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Dasar Peninjauan baris 6: "Klausul dan kontrol yang dirujuk ada di bagian 12." dihapus (kalimat penunjuk).
+- Dasar Peninjauan, paragraf pembuka: "diisi menurut Ketentuan butir 2" diganti faktanya ("diisi Staff Legal saat pemeriksaan").
+- Tabel Peran: rujukan "(Ketentuan butir 1, 2, 4, 5, 7 sampai 11, dan 14)", "(Ketentuan butir 11 sampai 13)", "(Ketentuan butir 6)", "(Ketentuan butir 3)", dan "(Ketentuan butir 11)" dihapus; "bagian 10" diganti nama tabel Persetujuan Tinjauan.
+- Tabel Peran, VP Tech Operation and Services: "Peran ini dipetakan dari unit IT (USULAN)." ditulis ulang "Ditunjuk sebagai wakil unit IT (USULAN)."; label tetap.
+- Rekaman: "(Ketentuan butir 14)" dihapus. Kesimpulan: "(Ketentuan butir 1)" dihapus. Aspek A.1: "(bagian 7)" dihapus.
+- Rujukan "bagian 2/3/7/8/9/10" di Istilah, Ketentuan, Petunjuk, dan Acuan ISO diganti nama tabel atau heading (Daftar Evaluasi Kepatuhan, Ringkasan Temuan, Status Pemeriksaan, Persetujuan Tinjauan, Dasar Peninjauan, Hasil dan Rekomendasi Tinjauan). Petunjuk 3 menulis empat tingkat klasifikasi langsung.
+### W10 selisih angka
+nihil (subst_diff kosong).
+### W10 catatan
+- Pihak luar: "pihak lain" atau "pihak luar" seperti sumber; "pelanggan" dan "vendor" untuk jenis kontrak, sama dengan SNX-LEG-FRM-01 dan SNX-LEG-FRM-02.
+- Heading "Dasar Peninjauan", "Ketentuan Tinjauan", dan "Persetujuan Tinjauan" beku; badan memakai "review", diperkenalkan "Review (tinjauan)" di Tujuan. "Record (rekaman)" diperkenalkan di definisi Bukti.
+- Calque "yang SINUX tetapkan" (F.1), "yang unit kerja tunjuk", dan "yang harus SINUX penuhi" ditulis ulang pasif.
+- Halaman: 18 ke 17, bagian ISI mulai halaman 10 ke 9.

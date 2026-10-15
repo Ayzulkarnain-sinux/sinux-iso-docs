@@ -241,3 +241,19 @@ Open item:
 
 - Open item 17 (pemetaan peran ke JA-08 dan JA-09): ditutup W9: pemetaan diputus owner (LEAD G-3 A5), label USULAN pemetaan dihapus.
 - R2: baris USULAN 1 dan 17, Asumsi 4, dan baris sumber nama peran kini memuat penanda W9 di barisnya sendiri; tidak ada baris dihapus.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Tabel Peran: rujukan "(Ketentuan butir 1, 5 sampai 7, 9 sampai 11)", "(Ketentuan butir 2)", "(Ketentuan butir 3)", "(Ketentuan butir 4)", "(Ketentuan butir 6 dan 8)", dan "(Ketentuan butir 10)" dihapus.
+- Tabel Peran: "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01." dan "(JA-08)" dipadatkan menjadi "Jabatan: Legal & Compliance (JA-0x)." seperti SNX-LEG-FRM-01; sumber pemetaan tetap di Dokumen Terkait SNX-HR-ORG-01.
+- Rekaman: "(Ketentuan butir 10)" dihapus.
+- Petunjuk 9: "sesuai Ketentuan butir 7, 8, dan 11" diganti faktanya (isi Tindak Lanjut untuk dokumen yang perlu ditindaklanjuti, catat setiap pemeriksaan).
+- Petunjuk 6: "salah satu dari enam status pada bagian Istilah" diganti "enam nilai Status Dokumen" (nama tabel).
+### W10 selisih angka
+nihil (subst_diff kosong).
+### W10 catatan
+- Pihak luar: "pelanggan atau vendor" hanya di Lingkup, sama dengan dokumen Legal lain.
+- Calque "yang SINUX miliki atau wajib penuhi" ditulis ulang "yang dimiliki atau wajib dipenuhi SINUX".
+- Petunjuk Pengisian jadi kalimat perintah (0 dari 9 diawali peran). "Record (rekaman)" diperkenalkan di tabel Peran.

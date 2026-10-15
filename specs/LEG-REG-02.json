@@ -1,1047 +1,1053 @@
 {
-  "meta": {
-    "mode": "generic",
-    "doc_key": "LEG-REG-02",
-    "doc_type_cover": "REGISTER",
-    "doc_type_label": "Register",
-    "number": "SNX-LEG-REG-02",
-    "department": "Legal",
-    "title": "Legal Risk Register",
-    "process_owner": "Legal dan Compliance",
-    "classification": "RESTRICTED (Internal)",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Alif Altamziz / Staff Legal",
-      "reviewed": "Ester Febe Utomo / Line Manager Legal",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "mode": "generic",
+  "doc_key": "LEG-REG-02",
+  "doc_type_cover": "REGISTER",
+  "doc_type_label": "Register",
+  "number": "SNX-LEG-REG-02",
+  "department": "Legal",
+  "title": "Legal Risk Register",
+  "process_owner": "Legal dan Compliance",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Alif Altamziz / Staff Legal",
+   "reviewed": "Ester Febe Utomo / Line Manager Legal",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "sections": [
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan dan Lingkup",
+   "blocks": [
     {
-      "h": "Tujuan dan Lingkup",
-      "blocks": [
-        {
-          "h2": "Tujuan"
-        },
-        {
-          "p": "Register ini memuat risiko hukum yang berkaitan dengan kegiatan usaha SINUX, penilaian tingkatnya, dan pemantauan tindakan mitigasinya. Tiap risiko dicatat bersama dampak potensial, tingkat risiko, dan langkah mitigasinya."
-        },
-        {
-          "p": "Register ini menjadi dasar untuk menentukan prioritas penanganan risiko, menetapkan tindakan pengendalian, menunjuk penanggung jawab, dan memantau pelaksanaan tindakan mitigasi."
-        },
-        {
-          "h2": "Lingkup"
-        },
-        {
-          "p": "Register mencakup risiko hukum yang timbul dari kegiatan usaha, hubungan kontraktual, perizinan, kewajiban menurut peraturan perundang-undangan, pengelolaan data dan informasi, hubungan dengan pihak ketiga, dan aspek hukum lain yang relevan dengan operasional SINUX."
-        },
-        {
-          "p": "Risiko dicatat berdasarkan hasil pemeriksaan, evaluasi kontrak, pemantauan peraturan, laporan unit kerja, insiden, temuan audit, atau sumber informasi lain yang dapat dipertanggungjawabkan."
-        },
-        {
-          "p": "Register tidak mencatat risiko keamanan informasi, yang dinilai di SNX-ISMS-REG-02, dan risiko proyek, yang dinilai di SNX-OPS-FRM-02. Untuk area Pelindungan Data Pribadi dan Kerahasiaan Informasi, register mencatat akibat hukumnya (USULAN)."
-        }
-      ]
+     "h2": "Tujuan"
     },
     {
-      "h": "Istilah",
-      "blocks": [
-        {
-          "table": {
-            "header": [
-              "Istilah",
-              "Arti"
-            ],
-            "rows": [
-              [
-                "(USULAN)",
-                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
-              ],
-              [
-                "Area Risiko",
-                "Kelompok risiko hukum menurut bidangnya. Tabel Identifikasi Risiko memuat delapan area."
-              ],
-              [
-                "Dampak",
-                "Skor 1 sampai 5 untuk besarnya akibat bila risiko terjadi."
-              ],
-              [
-                "Dampak Potensial",
-                "Uraian akibat yang dapat timbul bila risiko terjadi."
-              ],
-              [
-                "Kategori Risiko",
-                "Rendah, Sedang, Tinggi, atau Sangat Tinggi. Batas nilainya ada di Metode Penilaian."
-              ],
-              [
-                "Kemungkinan",
-                "Skor 1 sampai 5 untuk peluang risiko terjadi."
-              ],
-              [
-                "Legal dan Compliance",
-                "Pemilik dokumen ini. Nama jabatan JA-08 dan JA-09 di SNX-HR-ORG-01, tertulis Legal & Compliance di sana."
-              ],
-              [
-                "Line Manager Legal",
-                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01."
-              ],
-              [
-                "Manajemen",
-                "Direktur Utama dan Direktur (COO), yaitu unit Management di SNX-HR-ORG-01 (USULAN)."
-              ],
-              [
-                "Mitigasi",
-                "Tindakan pengendalian untuk menurunkan Kemungkinan atau Dampak sebuah risiko."
-              ],
-              [
-                "Nilai Risiko",
-                "Angka hasil penilaian satu risiko. Cara menghitungnya ada di Metode Penilaian."
-              ],
-              [
-                "Pemilik Risiko (Risk Owner)",
-                "Jabatan yang bertanggung jawab atas kegiatan tempat risiko timbul."
-              ],
-              [
-                "Risiko hukum",
-                "Kemungkinan sebuah peristiwa dalam kegiatan usaha SINUX menimbulkan akibat hukum bagi SINUX."
-              ],
-              [
-                "Staff Legal",
-                "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01."
-              ],
-              [
-                "Tingkat risiko",
-                "Nilai Risiko beserta Kategori Risiko-nya."
-              ]
-            ],
-            "widths_cm": [
-              4.5,
-              11.5
-            ]
-          }
-        }
-      ]
+     "p": "Register ini memuat risiko hukum dalam kegiatan usaha SINUX, penilaian tingkatnya, dan pemantauan tindakan mitigasinya. Setiap risiko dicatat bersama dampak potensial, tingkat risiko, dan langkah mitigasinya."
     },
     {
-      "h": "Metode Penilaian",
-      "blocks": [
-        {
-          "p": "Penilaian terdiri dari Kemungkinan risiko terjadi dan Dampak bila risiko itu terjadi."
-        },
-        {
-          "h2": "Tingkat Kemungkinan"
-        },
-        {
-          "table": {
-            "header": [
-              "Skor",
-              "Tingkat",
-              "Keterangan"
-            ],
-            "rows": [
-              [
-                "1",
-                "Sangat Rendah",
-                "Kemungkinan terjadinya sangat kecil berdasarkan informasi yang tersedia."
-              ],
-              [
-                "2",
-                "Rendah",
-                "Kemungkinan terjadinya relatif kecil."
-              ],
-              [
-                "3",
-                "Sedang",
-                "Risiko dapat terjadi dalam kondisi tertentu."
-              ],
-              [
-                "4",
-                "Tinggi",
-                "Risiko berpeluang besar terjadi."
-              ],
-              [
-                "5",
-                "Sangat Tinggi",
-                "Risiko sangat mungkin terjadi atau berulang."
-              ]
-            ],
-            "widths_cm": [
-              1.5,
-              3.5,
-              11.0
-            ]
-          }
-        },
-        {
-          "h2": "Tingkat Dampak"
-        },
-        {
-          "p": "Keterangan tiap tingkat Dampak berikut berstatus (USULAN)."
-        },
-        {
-          "table": {
-            "header": [
-              "Skor",
-              "Tingkat",
-              "Keterangan"
-            ],
-            "rows": [
-              [
-                "1",
-                "Tidak Signifikan",
-                "Tidak menimbulkan akibat hukum yang perlu ditindaklanjuti."
-              ],
-              [
-                "2",
-                "Rendah",
-                "Akibat hukum kecil dan dapat diselesaikan dalam pekerjaan rutin Staff Legal."
-              ],
-              [
-                "3",
-                "Sedang",
-                "Akibat hukum yang perlu penanganan bersama Pemilik Risiko dan tidak menghentikan kegiatan usaha."
-              ],
-              [
-                "4",
-                "Tinggi",
-                "Akibat hukum yang perlu keputusan Manajemen dan dapat mengganggu kegiatan usaha."
-              ],
-              [
-                "5",
-                "Sangat Tinggi",
-                "Akibat hukum yang dapat menghentikan kegiatan usaha."
-              ]
-            ],
-            "widths_cm": [
-              1.5,
-              3.5,
-              11.0
-            ]
-          }
-        },
-        {
-          "h2": "Nilai Risiko dan Kategori Risiko"
-        },
-        {
-          "p": "Nilai Risiko = skor Kemungkinan x skor Dampak."
-        },
-        {
-          "table": {
-            "header": [
-              "Nilai",
-              "Kategori Risiko",
-              "Penanganan"
-            ],
-            "rows": [
-              [
-                "1 sampai 4",
-                "Rendah",
-                "Dipantau dan dikendalikan melalui prosedur yang relevan."
-              ],
-              [
-                "5 sampai 9",
-                "Sedang",
-                "Menetapkan tindakan pengendalian yang sesuai dan memantau pelaksanaannya."
-              ],
-              [
-                "10 sampai 16",
-                "Tinggi",
-                "Memerlukan rencana mitigasi dan pemantauan prioritas."
-              ],
-              [
-                "17 sampai 25",
-                "Sangat Tinggi",
-                "Memerlukan eskalasi segera (Ketentuan butir 13)."
-              ]
-            ],
-            "widths_cm": [
-              3.0,
-              3.5,
-              9.5
-            ]
-          }
-        },
-        {
-          "h2": "Matriks Nilai Risiko"
-        },
-        {
-          "p": "Matriks ini dihitung dari rumus Nilai Risiko dan tabel Kategori Risiko. Nilai 17, 18, dan 19 tidak muncul pada skala 1 sampai 5. Baris memuat Kemungkinan dan kolom memuat Dampak."
-        },
-        {
-          "table": {
-            "header": [
-              "Kemungkinan",
-              "Dampak 1",
-              "Dampak 2",
-              "Dampak 3",
-              "Dampak 4",
-              "Dampak 5"
-            ],
-            "rows": [
-              [
-                "5",
-                "5 (Sedang)",
-                "10 (Tinggi)",
-                "15 (Tinggi)",
-                "20 (Sangat Tinggi)",
-                "25 (Sangat Tinggi)"
-              ],
-              [
-                "4",
-                "4 (Rendah)",
-                "8 (Sedang)",
-                "12 (Tinggi)",
-                "16 (Tinggi)",
-                "20 (Sangat Tinggi)"
-              ],
-              [
-                "3",
-                "3 (Rendah)",
-                "6 (Sedang)",
-                "9 (Sedang)",
-                "12 (Tinggi)",
-                "15 (Tinggi)"
-              ],
-              [
-                "2",
-                "2 (Rendah)",
-                "4 (Rendah)",
-                "6 (Sedang)",
-                "8 (Sedang)",
-                "10 (Tinggi)"
-              ],
-              [
-                "1",
-                "1 (Rendah)",
-                "2 (Rendah)",
-                "3 (Rendah)",
-                "4 (Rendah)",
-                "5 (Sedang)"
-              ]
-            ],
-            "widths_cm": [
-              3.4,
-              2.5,
-              2.5,
-              2.5,
-              2.5,
-              2.6
-            ]
-          }
-        },
-        {
-          "h2": "Alur Penilaian dan Penanganan"
-        },
-        {
-          "flow": {
-            "rankdir": "TB",
-            "nodes": {
-              "a": "Staff Legal mencatat risiko\ndi tabel Identifikasi Risiko",
-              "b": "Staff Legal menilai Kemungkinan dan Dampak,\nmenghitung Nilai Risiko, dan\nmenentukan Kategori Risiko",
-              "c": "Kategori Risiko?",
-              "d": "Rendah:\nStaff Legal memantau lewat\nprosedur yang relevan",
-              "e": "Sedang:\nStaff Legal merekomendasikan\ntindakan pengendalian",
-              "f": "Tinggi:\nLine Manager Legal membahas risiko\ndengan Manajemen secara prioritas",
-              "g": "Sangat Tinggi:\nLine Manager Legal mengeskalasi\nsegera ke Manajemen",
-              "k": "Manajemen menentukan\ntindak lanjut",
-              "h": "Staff Legal mencatat tindakan yang disepakati di tabel\nRencana Mitigasi dan Pelaksanaan Mitigasi",
-              "j": "Pemilik Risiko melaksanakan tindakan\ndan menyampaikan bukti",
-              "i": "Staff Legal menilai ulang\nKemungkinan dan Dampak"
-            },
-            "shapes": {
-              "c": "diamond",
-              "d": "ellipse"
-            },
-            "edges": [
-              [
-                "a",
-                "b"
-              ],
-              [
-                "b",
-                "c"
-              ],
-              [
-                "c",
-                "d",
-                "1 sampai 4"
-              ],
-              [
-                "c",
-                "e",
-                "5 sampai 9"
-              ],
-              [
-                "c",
-                "f",
-                "10 sampai 16"
-              ],
-              [
-                "c",
-                "g",
-                "17 sampai 25"
-              ],
-              [
-                "e",
-                "h"
-              ],
-              [
-                "f",
-                "h"
-              ],
-              [
-                "g",
-                "k"
-              ],
-              [
-                "k",
-                "h"
-              ],
-              [
-                "h",
-                "j"
-              ],
-              [
-                "j",
-                "i"
-              ],
-              [
-                "i",
-                "b",
-                "setelah mitigasi"
-              ]
-            ],
-            "caption": "Gambar 1. Alur penilaian dan penanganan risiko menurut Kategori Risiko."
-          }
-        }
-      ]
+     "p": "Register ini menjadi dasar untuk memprioritaskan penanganan risiko, menetapkan tindakan pengendalian, menunjuk penanggung jawab, dan memantau pelaksanaan mitigasi."
     },
     {
-      "h": "Ketentuan Pengelolaan",
-      "blocks": [
-        {
-          "p": "1. Staff Legal mencatat risiko hukum dari sumber yang tercantum di Lingkup pada tabel Identifikasi Risiko: area, uraian, penyebab, dan dampak potensial."
-        },
-        {
-          "p": "2. Pemilik Risiko memberi Staff Legal informasi tentang risiko pada kegiatan yang menjadi tanggung jawabnya."
-        },
-        {
-          "p": "3. Staff Legal menilai Kemungkinan dan Dampak tiap risiko dengan skala pada Metode Penilaian, bersama Pemilik Risiko bila diperlukan."
-        },
-        {
-          "p": "4. Staff Legal menghitung Nilai Risiko dan menentukan Kategori Risiko, lalu mencatat keduanya di tabel Penilaian Risiko."
-        },
-        {
-          "p": "5. Staff Legal merekomendasikan tindakan mitigasi kepada Pemilik Risiko untuk risiko berkategori Sedang, Tinggi, dan Sangat Tinggi."
-        },
-        {
-          "p": "6. Line Manager Legal memeriksa penilaian dan rekomendasi mitigasi dari Staff Legal (USULAN)."
-        },
-        {
-          "p": "7. Staff Legal mencatat tindakan yang disepakati dengan Pemilik Risiko di tabel Rencana Mitigasi dan Pelaksanaan Mitigasi, lengkap dengan penanggung jawab dan target penyelesaian."
-        },
-        {
-          "p": "8. Pemilik Risiko melaksanakan tindakan mitigasi yang disepakati."
-        },
-        {
-          "p": "9. Pemilik Risiko menyampaikan perkembangan dan bukti pelaksanaan kepada Staff Legal."
-        },
-        {
-          "p": "10. Staff Legal memantau status tindakan mitigasi dan memperbarui kolom Bukti Penyelesaian dan Status di tabel Pelaksanaan Mitigasi."
-        },
-        {
-          "p": "11. Staff Legal menilai ulang Kemungkinan dan Dampak setelah tindakan mitigasi dilaksanakan, untuk melihat apakah tingkat risiko berubah."
-        },
-        {
-          "p": "12. Line Manager Legal membahas risiko berkategori Tinggi dan Sangat Tinggi bersama Manajemen dengan prioritas."
-        },
-        {
-          "p": "13. Line Manager Legal mengeskalasi risiko berkategori Sangat Tinggi kepada Manajemen segera."
-        },
-        {
-          "p": "14. Manajemen menentukan tindak lanjut atas risiko yang dieskalasi sesuai tingkat kewenangan dan mekanisme internal SINUX."
-        },
-        {
-          "p": "15. Staff Legal mencatat tiap perubahan penilaian dan status risiko di tabel Riwayat Penilaian dan Status agar dapat ditelusuri."
-        },
-        {
-          "p": "16. Staff Legal mencatat risiko yang belum dapat ditangani di tabel yang sama, dengan alasan, rencana tindak lanjut, dan keputusan Manajemen bila diperlukan."
-        },
-        {
-          "p": "17. Staff Legal meninjau register setiap bulan (USULAN) dan saat ada perubahan signifikan pada kegiatan usaha, peraturan, kontrak, teknologi, atau proses operasional."
-        },
-        {
-          "p": "18. Staff Legal memperbarui tabel Ringkasan Risiko pada setiap peninjauan register."
-        },
-        {
-          "p": "19. Line Manager Legal memasukkan jumlah risiko berkategori Tinggi dan Sangat Tinggi dari Ringkasan Risiko ke laporan bulanan kepada Manajemen (USULAN, SNX-LEG-SOP-01 prosedur 6.10)."
-        },
-        {
-          "p": "20. Staff Legal menyimpan register di folder Google Drive departemen Legal dengan klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, SNX-LEG-SOP-01 butir 4.24)."
-        }
-      ]
+     "h2": "Lingkup"
     },
     {
-      "h": "Peran",
-      "blocks": [
-        {
-          "table": {
-            "header": [
-              "Peran",
-              "Tugas pada register ini"
-            ],
-            "rows": [
-              [
-                "Staff Legal",
-                "Mencatat dan menilai risiko, merekomendasikan mitigasi, mencatat rencana mitigasi dan riwayat, memantau status, serta meninjau register tiap bulan (Ketentuan butir 1, 3 sampai 5, 7, 10, 11, 15 sampai 18, 20)."
-              ],
-              [
-                "Line Manager Legal",
-                "Memeriksa penilaian dan rekomendasi mitigasi, membahas dan mengeskalasi risiko ke Manajemen, dan melaporkan jumlah risiko tiap bulan (Ketentuan butir 6, 12, 13, 19)."
-              ],
-              [
-                "Pemilik Risiko",
-                "Memberi informasi risiko, menilai bersama Staff Legal bila diperlukan, melaksanakan mitigasi, dan menyampaikan bukti (Ketentuan butir 2, 3, 8, 9)."
-              ],
-              [
-                "Manajemen",
-                "Meninjau risiko yang dieskalasi dan menentukan tindak lanjut (Ketentuan butir 12 sampai 14, 16)."
-              ]
-            ],
-            "widths_cm": [
-              4.0,
-              12.0
-            ]
-          }
-        },
-        {
-          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-01 dan berstatus (USULAN). Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
-        }
-      ]
+     "p": "Register mencakup risiko hukum yang timbul dari kegiatan usaha, hubungan kontraktual, perizinan, kewajiban menurut peraturan perundang-undangan, pengelolaan data dan informasi, hubungan dengan pihak ketiga, dan aspek hukum lain yang relevan dengan operasional SINUX."
     },
     {
-      "h": "Petunjuk Pengisian",
-      "blocks": [
-        {
-          "p": "1. Sel Uraian Risiko, Penyebab/Pemicu, Dampak Potensial, Kemungkinan, Dampak, Nilai Risiko, Kategori Risiko, dan Pemilik Risiko kosong. Staff Legal mengisinya sesudah risiko dinilai."
-        },
-        {
-          "p": "2. Uraian Risiko memuat peristiwa yang dapat terjadi pada area itu. Penyebab/Pemicu memuat hal yang memicunya. Dampak Potensial memuat akibat bila peristiwa itu terjadi."
-        },
-        {
-          "p": "3. Staff Legal menambah baris bila satu area memiliki lebih dari satu risiko, dengan nomor urut berikutnya dan nama area yang sama."
-        },
-        {
-          "p": "4. Nomor baris tabel Penilaian Risiko sama dengan tabel Identifikasi Risiko. Kemungkinan dan Dampak diisi angka 1 sampai 5 menurut skala."
-        },
-        {
-          "p": "5. Nilai Risiko diisi hasil perkalian Kemungkinan dan Dampak. Kategori Risiko diisi menurut tabel Kategori Risiko."
-        },
-        {
-          "p": "6. Kolom Pemilik Risiko dan Penanggung Jawab memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
-        },
-        {
-          "p": "7. Kolom Risiko yang Ditangani pada tabel Rencana Mitigasi memuat nomor dan area dari tabel Identifikasi Risiko. Nomor baris tabel Pelaksanaan Mitigasi sama dengan tabel Rencana Mitigasi."
-        },
-        {
-          "p": "8. Kolom Bukti Penyelesaian pada tabel Pelaksanaan Mitigasi memuat lokasi berkas bukti. Kolom Status memuat keadaan terakhir tindakan."
-        },
-        {
-          "p": "9. Staff Legal mengisi tabel Ringkasan Risiko dari hasil penilaian aktual. Risiko yang belum dinilai tidak boleh dimasukkan ke kategori Rendah secara otomatis, dan tidak dihitung pada Total Risiko yang Dinilai."
-        },
-        {
-          "p": "10. Tabel Riwayat Penilaian dan Status diisi satu baris untuk tiap perubahan. Kolom Perubahan memuat nilai atau status sebelum dan sesudah."
-        }
-      ]
+     "p": "Risiko dicatat berdasarkan hasil pemeriksaan, evaluasi kontrak, pemantauan peraturan, laporan unit kerja, insiden, temuan audit, atau sumber informasi lain yang dapat dipertanggungjawabkan."
     },
     {
-      "h": "Isi Register",
-      "blocks": [
-        {
-          "p": "Baris 1 sampai 8 sudah berisi nama area. Kolom Nilai Risiko, Kategori Risiko, dan Pemilik Risiko serta tabel Riwayat Penilaian dan Status berstatus (USULAN)."
-        },
-        {
-          "h2": "Identifikasi Risiko"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Area Risiko",
-              "Uraian Risiko",
-              "Penyebab/Pemicu",
-              "Dampak Potensial"
-            ],
-            "rows": [
-              [
-                "1",
-                "Perizinan Berusaha",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "Kontrak Pelanggan",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "Kontrak Vendor",
-                "",
-                "",
-                ""
-              ],
-              [
-                "4",
-                "Pelindungan Data Pribadi",
-                "",
-                "",
-                ""
-              ],
-              [
-                "5",
-                "Kerahasiaan Informasi",
-                "",
-                "",
-                ""
-              ],
-              [
-                "6",
-                "Kepatuhan Regulasi",
-                "",
-                "",
-                ""
-              ],
-              [
-                "7",
-                "Kekayaan Intelektual",
-                "",
-                "",
-                ""
-              ],
-              [
-                "8",
-                "Ketenagakerjaan",
-                "",
-                "",
-                ""
-              ]
-            ],
-            "widths_cm": [
-              1.0,
-              3.6,
-              3.8,
-              3.8,
-              3.8
-            ]
-          }
-        },
-        {
-          "h2": "Penilaian Risiko"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Kemungkinan (1 sampai 5)",
-              "Dampak (1 sampai 5)",
-              "Nilai Risiko",
-              "Kategori Risiko",
-              "Pemilik Risiko"
-            ],
-            "rows": [
-              [
-                "1",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "4",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "5",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "6",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "7",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "8",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ]
-            ],
-            "widths_cm": [
-              1.2,
-              3.4,
-              2.8,
-              2.6,
-              3.0,
-              3.0
-            ]
-          }
-        },
-        {
-          "h2": "Rencana Mitigasi"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Risiko yang Ditangani",
-              "Tindakan Mitigasi",
-              "Penanggung Jawab"
-            ],
-            "rows": [
-              [
-                "1",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "",
-                "",
-                ""
-              ]
-            ],
-            "widths_cm": [
-              1.2,
-              4.0,
-              7.0,
-              3.8
-            ]
-          }
-        },
-        {
-          "h2": "Pelaksanaan Mitigasi"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Target Penyelesaian",
-              "Bukti Penyelesaian",
-              "Status"
-            ],
-            "rows": [
-              [
-                "1",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "",
-                "",
-                ""
-              ]
-            ],
-            "widths_cm": [
-              1.2,
-              4.2,
-              6.6,
-              4.0
-            ]
-          }
-        },
-        {
-          "h2": "Ringkasan Risiko"
-        },
-        {
-          "table": {
-            "header": [
-              "Kategori Risiko",
-              "Jumlah Risiko"
-            ],
-            "rows": [
-              [
-                "Sangat Tinggi",
-                ""
-              ],
-              [
-                "Tinggi",
-                ""
-              ],
-              [
-                "Sedang",
-                ""
-              ],
-              [
-                "Rendah",
-                ""
-              ],
-              [
-                "Total Risiko yang Dinilai",
-                ""
-              ]
-            ],
-            "widths_cm": [
-              8.0,
-              8.0
-            ]
-          }
-        },
-        {
-          "h2": "Riwayat Penilaian dan Status"
-        },
-        {
-          "table": {
-            "header": [
-              "Tanggal",
-              "No. Risiko",
-              "Perubahan",
-              "Alasan, Tindak Lanjut, dan Keputusan",
-              "Dicatat oleh"
-            ],
-            "rows": [
-              [
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "",
-                "",
-                "",
-                "",
-                ""
-              ]
-            ],
-            "widths_cm": [
-              2.4,
-              1.9,
-              4.2,
-              5.0,
-              2.5
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "h": "Dokumen Terkait",
-      "blocks": [
-        {
-          "p": "Pemetaan area risiko ke dokumen pada tabel ini berstatus (USULAN)."
-        },
-        {
-          "table": {
-            "header": [
-              "Kode",
-              "Keterangan"
-            ],
-            "rows": [
-              [
-                "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), unit Management, dan dasar pemetaan peran Line Manager Legal dan Staff Legal."
-              ],
-              [
-                "SNX-ISMS-PRO-01",
-                "Information Classification & Handling. Memuat tingkat klasifikasi, termasuk RESTRICTED (Internal) untuk register risiko."
-              ],
-              [
-                "SNX-ISMS-REG-02",
-                "Information Security Risk Assessment Register. Perkalian Kemungkinan dan Dampak sama dengan register ini, dengan kategori Tinggi 10 sampai 19 dan Kritis 20 sampai 25. Pada skala 1 sampai 5, kategori tiap sel sama dengan register ini dan hanya nama kategori teratas yang berbeda (Kritis, bukan Sangat Tinggi). Penyelarasan nama berstatus (USULAN)."
-              ],
-              [
-                "SNX-OPS-FRM-02",
-                "Project Risk Register. Mencatat risiko proyek, yang tidak dicatat di register ini."
-              ],
-              [
-                "SNX-LEG-SOP-01",
-                "Legal Operational. Butir 4.17 sampai 4.19 memuat klasifikasi risiko kontrak dalam tiga tingkat tanpa skor. Risiko Tinggi menurut butir 4.17 dicatat dan dinilai di register ini (USULAN). Butir 4.24 memuat folder Google Drive departemen Legal sebagai repositori, dan prosedur 6.10 memuat laporan bulanan kepada Manajemen."
-              ],
-              [
-                "SNX-LEG-SOP-03",
-                "Legal Document Control & Retention. Kategori 6 memuat register Departemen Legal. Tempat usulan masa retensi."
-              ],
-              [
-                "SNX-LEG-REG-01",
-                "Company Licenses & Permits Register. Dasar fakta untuk area Perizinan Berusaha."
-              ],
-              [
-                "SNX-LEG-REG-03",
-                "Legal & Regulatory Requirements Register. Daftar peraturan dan persyaratan hukum, dasar untuk area Kepatuhan Regulasi."
-              ],
-              [
-                "SNX-LEG-FRM-01",
-                "Customer Contract Review Checklist. Hasil evaluasi kontrak pelanggan menjadi dasar area Kontrak Pelanggan."
-              ],
-              [
-                "SNX-LEG-FRM-02",
-                "Vendor / Supplier Contract Review Checklist. Hasil evaluasi kontrak vendor menjadi dasar area Kontrak Vendor."
-              ],
-              [
-                "SNX-LEG-FRM-03",
-                "Data Protection & Confidentiality Compliance Review. Hasil pemeriksaan menjadi dasar area Pelindungan Data Pribadi dan Kerahasiaan Informasi."
-              ]
-            ],
-            "widths_cm": [
-              4.0,
-              12.0
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "h": "Rekaman dan Acuan ISO",
-      "blocks": [
-        {
-          "h2": "Rekaman"
-        },
-        {
-          "table": {
-            "header": [
-              "Rekaman",
-              "Lokasi dan pemilik",
-              "Retensi"
-            ],
-            "rows": [
-              [
-                "Register ini: tabel Identifikasi Risiko, Penilaian Risiko, Rencana Mitigasi, Pelaksanaan Mitigasi, Ringkasan Risiko, dan Riwayat Penilaian dan Status",
-                "Folder Google Drive departemen Legal (Ketentuan butir 20). Pemilik: Line Manager Legal, mengikuti SNX-LEG-SOP-03. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
-                "Belum ditetapkan. Usulan masa retensi register Departemen Legal ada di SNX-LEG-SOP-03 (Kategori 6)."
-              ],
-              [
-                "Bukti penyelesaian tindakan mitigasi",
-                "Lokasi ditulis di kolom Bukti Penyelesaian. Pemilik: Pemilik Risiko. Staff Legal mencatat lokasinya.",
-                "Belum ditetapkan."
-              ]
-            ],
-            "widths_cm": [
-              4.5,
-              7.0,
-              4.5
-            ]
-          }
-        },
-        {
-          "h2": "Acuan ISO"
-        },
-        {
-          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
-        },
-        {
-          "table": {
-            "header": [
-              "Standar",
-              "Klausul",
-              "Hubungan dengan dokumen ini"
-            ],
-            "rows": [
-              [
-                "ISO 9001:2015",
-                "6.1 Tindakan untuk menangani risiko dan peluang",
-                "Register memuat risiko hukum yang teridentifikasi, tingkatnya, dan tindakan penanganannya."
-              ],
-              [
-                "ISO 9001:2015",
-                "7.5.3 Pengendalian informasi terdokumentasi",
-                "Register disimpan di lokasi yang ditetapkan, dan perubahan penilaian dan statusnya tercatat di Riwayat Penilaian dan Status."
-              ],
-              [
-                "ISO/IEC 27001:2022",
-                "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
-                "Register mencatat risiko tidak terpenuhinya persyaratan hukum dan kontrak."
-              ],
-              [
-                "ISO/IEC 27001:2022",
-                "Annex A 5.34 Privasi dan perlindungan PII",
-                "Baris area Pelindungan Data Pribadi memuat risiko hukum pemrosesan data pribadi."
-              ]
-            ],
-            "widths_cm": [
-              3.6,
-              5.4,
-              7.0
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "h": "Kesimpulan",
-      "blocks": [
-        {
-          "p": "Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun."
-        }
-      ]
+     "p": "Register ini tidak mencatat risiko keamanan informasi, yang dinilai di SNX-ISMS-REG-02, dan risiko proyek, yang dinilai di SNX-OPS-FRM-02. Untuk area Pelindungan Data Pribadi dan Kerahasiaan Informasi, register ini mencatat akibat hukumnya (USULAN)."
     }
-  ]
+   ]
+  },
+  {
+   "h": "Istilah",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Area Risiko",
+        "Kelompok risiko hukum menurut bidangnya; tabel Identifikasi Risiko memuat delapan area."
+       ],
+       [
+        "Dampak",
+        "Skor 1 sampai 5 untuk besarnya akibat jika risiko terjadi."
+       ],
+       [
+        "Dampak Potensial",
+        "Uraian akibat yang dapat timbul jika risiko terjadi."
+       ],
+       [
+        "Kategori Risiko",
+        "Rendah (1 sampai 4), Sedang (5 sampai 9), Tinggi (10 sampai 16), atau Sangat Tinggi (17 sampai 25), menurut Nilai Risiko."
+       ],
+       [
+        "Kemungkinan",
+        "Skor 1 sampai 5 untuk peluang risiko terjadi."
+       ],
+       [
+        "Legal dan Compliance",
+        "Pemilik dokumen ini. Di SNX-HR-ORG-01 ditulis Legal & Compliance, yaitu jabatan JA-08 dan JA-09."
+       ],
+       [
+        "Line Manager Legal",
+        "Nama peran di dokumen ini untuk jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01."
+       ],
+       [
+        "Manajemen",
+        "Direktur Utama dan Direktur (COO), yaitu unit Management di SNX-HR-ORG-01 (USULAN)."
+       ],
+       [
+        "Mitigasi",
+        "Tindakan pengendalian untuk menurunkan Kemungkinan atau Dampak sebuah risiko."
+       ],
+       [
+        "Nilai Risiko",
+        "Angka hasil penilaian satu risiko, yaitu skor Kemungkinan x skor Dampak."
+       ],
+       [
+        "Pemilik Risiko (Risk Owner)",
+        "Jabatan yang bertanggung jawab atas kegiatan tempat risiko timbul."
+       ],
+       [
+        "Risiko hukum",
+        "Kemungkinan sebuah peristiwa dalam kegiatan usaha SINUX menimbulkan akibat hukum bagi SINUX."
+       ],
+       [
+        "Staff Legal",
+        "Nama peran di dokumen ini untuk jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01."
+       ],
+       [
+        "Tingkat risiko",
+        "Nilai Risiko beserta Kategori Risiko-nya."
+       ]
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Metode Penilaian",
+   "blocks": [
+    {
+     "p": "Penilaian memakai dua skor: Kemungkinan risiko terjadi dan Dampak jika risiko itu terjadi."
+    },
+    {
+     "h2": "Tingkat Kemungkinan"
+    },
+    {
+     "table": {
+      "header": [
+       "Skor",
+       "Tingkat",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "1",
+        "Sangat Rendah",
+        "Peluang terjadinya sangat kecil berdasarkan informasi yang tersedia."
+       ],
+       [
+        "2",
+        "Rendah",
+        "Peluang terjadinya relatif kecil."
+       ],
+       [
+        "3",
+        "Sedang",
+        "Risiko dapat terjadi dalam kondisi tertentu."
+       ],
+       [
+        "4",
+        "Tinggi",
+        "Risiko berpeluang besar terjadi."
+       ],
+       [
+        "5",
+        "Sangat Tinggi",
+        "Risiko sangat mungkin terjadi atau berulang."
+       ]
+      ],
+      "widths_cm": [
+       1.5,
+       3.5,
+       11.0
+      ]
+     }
+    },
+    {
+     "h2": "Tingkat Dampak"
+    },
+    {
+     "p": "Keterangan tiap tingkat Dampak berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Skor",
+       "Tingkat",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "1",
+        "Tidak Signifikan",
+        "Tidak menimbulkan akibat hukum yang perlu ditindaklanjuti."
+       ],
+       [
+        "2",
+        "Rendah",
+        "Akibat hukum kecil dan dapat diselesaikan dalam pekerjaan rutin Staff Legal."
+       ],
+       [
+        "3",
+        "Sedang",
+        "Akibat hukum perlu ditangani bersama Pemilik Risiko, tetapi tidak menghentikan kegiatan usaha."
+       ],
+       [
+        "4",
+        "Tinggi",
+        "Akibat hukum perlu diputuskan Manajemen dan dapat mengganggu kegiatan usaha."
+       ],
+       [
+        "5",
+        "Sangat Tinggi",
+        "Akibat hukum yang dapat menghentikan kegiatan usaha."
+       ]
+      ],
+      "widths_cm": [
+       1.5,
+       3.5,
+       11.0
+      ]
+     }
+    },
+    {
+     "h2": "Nilai Risiko dan Kategori Risiko"
+    },
+    {
+     "p": "Nilai Risiko = skor Kemungkinan x skor Dampak."
+    },
+    {
+     "table": {
+      "header": [
+       "Nilai",
+       "Kategori Risiko",
+       "Penanganan"
+      ],
+      "rows": [
+       [
+        "1 sampai 4",
+        "Rendah",
+        "Dipantau dan dikendalikan melalui prosedur yang relevan."
+       ],
+       [
+        "5 sampai 9",
+        "Sedang",
+        "Tindakan pengendalian yang sesuai ditetapkan dan pelaksanaannya dipantau."
+       ],
+       [
+        "10 sampai 16",
+        "Tinggi",
+        "Perlu rencana mitigasi dan pemantauan prioritas."
+       ],
+       [
+        "17 sampai 25",
+        "Sangat Tinggi",
+        "Perlu eskalasi segera kepada Manajemen."
+       ]
+      ],
+      "widths_cm": [
+       3.0,
+       3.5,
+       9.5
+      ]
+     }
+    },
+    {
+     "h2": "Matriks Nilai Risiko"
+    },
+    {
+     "p": "Matriks ini dihitung dari rumus Nilai Risiko dan tabel Kategori Risiko. Baris memuat Kemungkinan, kolom memuat Dampak. Nilai 17, 18, dan 19 tidak muncul pada skala 1 sampai 5."
+    },
+    {
+     "table": {
+      "header": [
+       "Kemungkinan",
+       "Dampak 1",
+       "Dampak 2",
+       "Dampak 3",
+       "Dampak 4",
+       "Dampak 5"
+      ],
+      "rows": [
+       [
+        "5",
+        "5 (Sedang)",
+        "10 (Tinggi)",
+        "15 (Tinggi)",
+        "20 (Sangat Tinggi)",
+        "25 (Sangat Tinggi)"
+       ],
+       [
+        "4",
+        "4 (Rendah)",
+        "8 (Sedang)",
+        "12 (Tinggi)",
+        "16 (Tinggi)",
+        "20 (Sangat Tinggi)"
+       ],
+       [
+        "3",
+        "3 (Rendah)",
+        "6 (Sedang)",
+        "9 (Sedang)",
+        "12 (Tinggi)",
+        "15 (Tinggi)"
+       ],
+       [
+        "2",
+        "2 (Rendah)",
+        "4 (Rendah)",
+        "6 (Sedang)",
+        "8 (Sedang)",
+        "10 (Tinggi)"
+       ],
+       [
+        "1",
+        "1 (Rendah)",
+        "2 (Rendah)",
+        "3 (Rendah)",
+        "4 (Rendah)",
+        "5 (Sedang)"
+       ]
+      ],
+      "widths_cm": [
+       3.4,
+       2.5,
+       2.5,
+       2.5,
+       2.5,
+       2.6
+      ]
+     }
+    },
+    {
+     "h2": "Alur Penilaian dan Penanganan"
+    },
+    {
+     "flow": {
+      "rankdir": "TB",
+      "nodes": {
+       "a": "Staff Legal mencatat risiko\ndi tabel Identifikasi Risiko",
+       "b": "Staff Legal menilai Kemungkinan dan Dampak,\nmenghitung Nilai Risiko, dan\nmenentukan Kategori Risiko",
+       "c": "Kategori Risiko?",
+       "d": "Rendah:\nStaff Legal memantau melalui\nprosedur yang relevan",
+       "e": "Sedang:\nStaff Legal merekomendasikan\ntindakan pengendalian",
+       "f": "Tinggi:\nLine Manager Legal membahas risiko\ndengan Manajemen secara prioritas",
+       "g": "Sangat Tinggi:\nLine Manager Legal mengeskalasi\nsegera ke Manajemen",
+       "k": "Manajemen menentukan\ntindak lanjut",
+       "h": "Staff Legal mencatat tindakan yang disepakati di tabel\nRencana Mitigasi dan Pelaksanaan Mitigasi",
+       "j": "Pemilik Risiko melaksanakan tindakan\ndan menyampaikan bukti",
+       "i": "Staff Legal menilai ulang\nKemungkinan dan Dampak"
+      },
+      "shapes": {
+       "c": "diamond",
+       "d": "ellipse"
+      },
+      "edges": [
+       [
+        "a",
+        "b"
+       ],
+       [
+        "b",
+        "c"
+       ],
+       [
+        "c",
+        "d",
+        "1 sampai 4"
+       ],
+       [
+        "c",
+        "e",
+        "5 sampai 9"
+       ],
+       [
+        "c",
+        "f",
+        "10 sampai 16"
+       ],
+       [
+        "c",
+        "g",
+        "17 sampai 25"
+       ],
+       [
+        "e",
+        "h"
+       ],
+       [
+        "f",
+        "h"
+       ],
+       [
+        "g",
+        "k"
+       ],
+       [
+        "k",
+        "h"
+       ],
+       [
+        "h",
+        "j"
+       ],
+       [
+        "j",
+        "i"
+       ],
+       [
+        "i",
+        "b",
+        "setelah mitigasi"
+       ]
+      ],
+      "caption": "Gambar 1. Alur penilaian dan penanganan risiko menurut Kategori Risiko."
+     }
+    }
+   ]
+  },
+  {
+   "h": "Ketentuan Pengelolaan",
+   "blocks": [
+    {
+     "p": "1. Staff Legal mencatat risiko hukum dari sumber di bagian Lingkup ke tabel Identifikasi Risiko: area, uraian, penyebab, dan dampak potensial."
+    },
+    {
+     "p": "2. Pemilik Risiko memberi Staff Legal informasi risiko pada kegiatan yang menjadi tanggung jawabnya."
+    },
+    {
+     "p": "3. Staff Legal menilai Kemungkinan dan Dampak setiap risiko dengan skala Metode Penilaian, bersama Pemilik Risiko jika perlu."
+    },
+    {
+     "p": "4. Staff Legal menghitung Nilai Risiko dan menentukan Kategori Risiko, lalu mencatat keduanya di tabel Penilaian Risiko."
+    },
+    {
+     "p": "5. Staff Legal merekomendasikan tindakan mitigasi kepada Pemilik Risiko untuk risiko berkategori Sedang, Tinggi, dan Sangat Tinggi."
+    },
+    {
+     "p": "6. Line Manager Legal memeriksa penilaian dan rekomendasi mitigasi Staff Legal (USULAN)."
+    },
+    {
+     "p": "7. Staff Legal mencatat tindakan yang disepakati dengan Pemilik Risiko, beserta penanggung jawab dan target penyelesaian, di tabel Rencana Mitigasi dan Pelaksanaan Mitigasi."
+    },
+    {
+     "p": "8. Pemilik Risiko melaksanakan tindakan mitigasi yang disepakati."
+    },
+    {
+     "p": "9. Pemilik Risiko menyampaikan perkembangan dan bukti pelaksanaan kepada Staff Legal."
+    },
+    {
+     "p": "10. Staff Legal memantau tindakan mitigasi serta memperbarui kolom Bukti Penyelesaian dan Status di tabel Pelaksanaan Mitigasi."
+    },
+    {
+     "p": "11. Staff Legal menilai ulang Kemungkinan dan Dampak setelah mitigasi dilaksanakan, untuk melihat perubahan tingkat risiko."
+    },
+    {
+     "p": "12. Line Manager Legal membahas risiko berkategori Tinggi dan Sangat Tinggi dengan Manajemen secara prioritas."
+    },
+    {
+     "p": "13. Line Manager Legal segera mengeskalasi risiko berkategori Sangat Tinggi kepada Manajemen."
+    },
+    {
+     "p": "14. Manajemen menentukan tindak lanjut atas risiko yang dieskalasi sesuai tingkat kewenangan dan mekanisme internal SINUX."
+    },
+    {
+     "p": "15. Staff Legal mencatat setiap perubahan penilaian dan status risiko di tabel Riwayat Penilaian dan Status."
+    },
+    {
+     "p": "16. Staff Legal mencatat risiko yang belum dapat ditangani di tabel yang sama, beserta alasan, rencana tindak lanjut, dan keputusan Manajemen jika perlu."
+    },
+    {
+     "p": "17. Staff Legal meninjau register setiap bulan (USULAN) dan setiap ada perubahan signifikan pada kegiatan usaha, peraturan, kontrak, teknologi, atau proses operasional."
+    },
+    {
+     "p": "18. Staff Legal memperbarui tabel Ringkasan Risiko pada setiap review register."
+    },
+    {
+     "p": "19. Line Manager Legal memasukkan jumlah risiko berkategori Tinggi dan Sangat Tinggi dari Ringkasan Risiko ke laporan bulanan kepada Manajemen (USULAN, SNX-LEG-SOP-01 prosedur 6.10)."
+    },
+    {
+     "p": "20. Staff Legal menyimpan register di folder Google Drive Departemen Legal dengan klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, SNX-LEG-SOP-01 butir 4.24)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada register ini"
+      ],
+      "rows": [
+       [
+        "Staff Legal",
+        "Mencatat dan menilai risiko, merekomendasikan mitigasi, mencatat rencana mitigasi dan riwayat, memantau status, serta meninjau register setiap bulan."
+       ],
+       [
+        "Line Manager Legal",
+        "Memeriksa penilaian dan rekomendasi mitigasi, membahas dan mengeskalasi risiko ke Manajemen, serta melaporkan jumlah risiko setiap bulan."
+       ],
+       [
+        "Pemilik Risiko",
+        "Memberi informasi risiko, ikut menilai bersama Staff Legal jika perlu, melaksanakan mitigasi, dan menyampaikan bukti."
+       ],
+       [
+        "Manajemen",
+        "Meninjau risiko yang dieskalasi dan menentukan tindak lanjut."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ]
+     }
+    },
+    {
+     "p": "Pembagian tugas Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-01 (USULAN). Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval."
+    }
+   ]
+  },
+  {
+   "h": "Petunjuk Pengisian",
+   "blocks": [
+    {
+     "p": "1. Sel Uraian Risiko, Penyebab/Pemicu, Dampak Potensial, Kemungkinan, Dampak, Nilai Risiko, Kategori Risiko, dan Pemilik Risiko masih kosong. Isi setelah risiko dinilai."
+    },
+    {
+     "p": "2. Di Uraian Risiko, tulis peristiwa yang dapat terjadi pada area itu. Di Penyebab/Pemicu, tulis pemicunya. Di Dampak Potensial, tulis akibatnya jika peristiwa itu terjadi."
+    },
+    {
+     "p": "3. Tambah baris jika satu area punya lebih dari satu risiko, dengan nomor urut berikutnya dan nama area yang sama."
+    },
+    {
+     "p": "4. Pakai nomor baris yang sama di tabel Penilaian Risiko dan Identifikasi Risiko. Isi Kemungkinan dan Dampak dengan angka 1 sampai 5 sesuai skala."
+    },
+    {
+     "p": "5. Isi Nilai Risiko dengan hasil perkalian Kemungkinan dan Dampak, lalu isi Kategori Risiko menurut tabel Kategori Risiko."
+    },
+    {
+     "p": "6. Di kolom Pemilik Risiko dan Penanggung Jawab, tulis nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+    },
+    {
+     "p": "7. Di kolom Risiko yang Ditangani pada tabel Rencana Mitigasi, tulis nomor dan area dari tabel Identifikasi Risiko. Pakai nomor baris yang sama di tabel Pelaksanaan Mitigasi."
+    },
+    {
+     "p": "8. Di kolom Bukti Penyelesaian, tulis lokasi berkas bukti. Di kolom Status, tulis keadaan terakhir tindakan."
+    },
+    {
+     "p": "9. Isi tabel Ringkasan Risiko dari hasil penilaian aktual. Risiko yang belum dinilai tidak otomatis masuk kategori Rendah dan tidak dihitung pada Total Risiko yang Dinilai."
+    },
+    {
+     "p": "10. Isi tabel Riwayat Penilaian dan Status satu baris untuk setiap perubahan. Di kolom Perubahan, tulis nilai atau status sebelum dan setelahnya."
+    }
+   ]
+  },
+  {
+   "h": "Isi Register",
+   "blocks": [
+    {
+     "p": "Baris 1 sampai 8 sudah berisi nama area. Kolom Nilai Risiko, Kategori Risiko, dan Pemilik Risiko serta tabel Riwayat Penilaian dan Status berstatus (USULAN)."
+    },
+    {
+     "h2": "Identifikasi Risiko"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Area Risiko",
+       "Uraian Risiko",
+       "Penyebab/Pemicu",
+       "Dampak Potensial"
+      ],
+      "rows": [
+       [
+        "1",
+        "Perizinan Berusaha",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "Kontrak Pelanggan",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "Kontrak Vendor",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "Pelindungan Data Pribadi",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "Kerahasiaan Informasi",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "Kepatuhan Regulasi",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "Kekayaan Intelektual",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "Ketenagakerjaan",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       3.6,
+       3.8,
+       3.8,
+       3.8
+      ]
+     }
+    },
+    {
+     "h2": "Penilaian Risiko"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Kemungkinan (1 sampai 5)",
+       "Dampak (1 sampai 5)",
+       "Nilai Risiko",
+       "Kategori Risiko",
+       "Pemilik Risiko"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.2,
+       3.4,
+       2.8,
+       2.6,
+       3.0,
+       3.0
+      ]
+     }
+    },
+    {
+     "h2": "Rencana Mitigasi"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Risiko yang Ditangani",
+       "Tindakan Mitigasi",
+       "Penanggung Jawab"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.2,
+       4.0,
+       7.0,
+       3.8
+      ]
+     }
+    },
+    {
+     "h2": "Pelaksanaan Mitigasi"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Target Penyelesaian",
+       "Bukti Penyelesaian",
+       "Status"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.2,
+       4.2,
+       6.6,
+       4.0
+      ]
+     }
+    },
+    {
+     "h2": "Ringkasan Risiko"
+    },
+    {
+     "table": {
+      "header": [
+       "Kategori Risiko",
+       "Jumlah Risiko"
+      ],
+      "rows": [
+       [
+        "Sangat Tinggi",
+        ""
+       ],
+       [
+        "Tinggi",
+        ""
+       ],
+       [
+        "Sedang",
+        ""
+       ],
+       [
+        "Rendah",
+        ""
+       ],
+       [
+        "Total Risiko yang Dinilai",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       8.0,
+       8.0
+      ]
+     }
+    },
+    {
+     "h2": "Riwayat Penilaian dan Status"
+    },
+    {
+     "table": {
+      "header": [
+       "Tanggal",
+       "No. Risiko",
+       "Perubahan",
+       "Alasan, Tindak Lanjut, dan Keputusan",
+       "Dicatat oleh"
+      ],
+      "rows": [
+       [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       2.4,
+       1.9,
+       4.2,
+       5.0,
+       2.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "p": "Pemetaan area risiko ke dokumen pada tabel ini berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), unit Management, dan dasar pemetaan peran Line Manager Legal dan Staff Legal."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling. Memuat tingkat klasifikasi, termasuk RESTRICTED (Internal) untuk register risiko."
+       ],
+       [
+        "SNX-ISMS-REG-02",
+        "Information Security Risk Assessment Register. Perkalian Kemungkinan dan Dampaknya sama dengan register ini, dengan kategori Tinggi 10 sampai 19 dan Kritis 20 sampai 25. Pada skala 1 sampai 5, kategori setiap sel sama; hanya nama kategori teratas yang berbeda (Kritis, bukan Sangat Tinggi). Penyelarasan nama berstatus (USULAN)."
+       ],
+       [
+        "SNX-OPS-FRM-02",
+        "Project Risk Register. Mencatat risiko proyek, yang tidak dicatat di register ini."
+       ],
+       [
+        "SNX-LEG-SOP-01",
+        "Legal Operational. Butir 4.17 sampai 4.19 memuat klasifikasi risiko kontrak dalam tiga tingkat tanpa skor. Risiko Tinggi menurut butir 4.17 dicatat dan dinilai di register ini (USULAN). Butir 4.24 memuat folder Google Drive Departemen Legal sebagai repositori, dan prosedur 6.10 memuat laporan bulanan kepada Manajemen."
+       ],
+       [
+        "SNX-LEG-SOP-03",
+        "Legal Document Control & Retention. Kategori 6 memuat register Departemen Legal. Usulan masa simpan disusun di sana."
+       ],
+       [
+        "SNX-LEG-REG-01",
+        "Company Licenses & Permits Register. Dasar fakta untuk area Perizinan Berusaha."
+       ],
+       [
+        "SNX-LEG-REG-03",
+        "Legal & Regulatory Requirements Register. Daftar peraturan dan persyaratan hukum, dasar untuk area Kepatuhan Regulasi."
+       ],
+       [
+        "SNX-LEG-FRM-01",
+        "Customer Contract Review Checklist. Hasil penelaahan kontrak pelanggan menjadi dasar area Kontrak Pelanggan."
+       ],
+       [
+        "SNX-LEG-FRM-02",
+        "Vendor / Supplier Contract Review Checklist. Hasil telaah kontrak vendor menjadi dasar area Kontrak Vendor."
+       ],
+       [
+        "SNX-LEG-FRM-03",
+        "Data Protection & Confidentiality Compliance Review. Hasil pemeriksaan menjadi dasar area Pelindungan Data Pribadi dan Kerahasiaan Informasi."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "table": {
+      "header": [
+       "Record",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "rows": [
+       [
+        "Register ini: tabel Identifikasi Risiko, Penilaian Risiko, Rencana Mitigasi, Pelaksanaan Mitigasi, Ringkasan Risiko, dan Riwayat Penilaian dan Status",
+        "Folder Google Drive Departemen Legal. Pemilik: Line Manager Legal, sesuai SNX-LEG-SOP-03. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+        "Belum ditetapkan. Usulan masa simpan register Departemen Legal disusun di SNX-LEG-SOP-03 (Kategori 6)."
+       ],
+       [
+        "Bukti penyelesaian tindakan mitigasi",
+        "Lokasi ditulis di kolom Bukti Penyelesaian. Pemilik: Pemilik Risiko. Staff Legal mencatat lokasinya.",
+        "Belum ditetapkan."
+       ]
+      ],
+      "widths_cm": [
+       4.5,
+       7.0,
+       4.5
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut masih perlu dikonfirmasi konsultan (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan dokumen ini"
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "6.1 Tindakan untuk menangani risiko dan peluang",
+        "Register memuat risiko hukum yang teridentifikasi, tingkatnya, dan tindakan penanganannya."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Register disimpan di lokasi yang ditetapkan, dan setiap perubahan penilaian dan status tercatat di Riwayat Penilaian dan Status."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
+        "Register mencatat risiko tidak terpenuhinya persyaratan hukum dan kontrak."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.34 Privasi dan perlindungan PII",
+        "Baris area Pelindungan Data Pribadi memuat risiko hukum pemrosesan data pribadi."
+       ]
+      ],
+      "widths_cm": [
+       3.6,
+       5.4,
+       7.0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun."
+    }
+   ]
+  }
+ ]
 }

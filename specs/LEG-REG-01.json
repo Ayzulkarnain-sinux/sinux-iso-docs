@@ -1,737 +1,743 @@
 {
-  "meta": {
-    "mode": "generic",
-    "doc_key": "LEG-REG-01",
-    "doc_type_cover": "REGISTER",
-    "doc_type_label": "Register",
-    "number": "SNX-LEG-REG-01",
-    "department": "Legal",
-    "title": "Company Licenses & Permits Register",
-    "process_owner": "Line Manager Legal",
-    "classification": "RESTRICTED (Internal)",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Alif Altamziz / Staff Legal",
-      "reviewed": "Ester Febe Utomo / Line Manager Legal",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "mode": "generic",
+  "doc_key": "LEG-REG-01",
+  "doc_type_cover": "REGISTER",
+  "doc_type_label": "Register",
+  "number": "SNX-LEG-REG-01",
+  "department": "Legal",
+  "title": "Company Licenses & Permits Register",
+  "process_owner": "Line Manager Legal",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Alif Altamziz / Staff Legal",
+   "reviewed": "Ester Febe Utomo / Line Manager Legal",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "sections": [
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan dan Lingkup",
+   "blocks": [
     {
-      "h": "Tujuan dan Lingkup",
-      "blocks": [
-        {
-          "h2": "Tujuan"
-        },
-        {
-          "p": "Register ini mencatat perizinan, persetujuan, pendaftaran, dan dokumen legalitas lain yang SINUX miliki atau wajib penuhi sesuai kegiatan usahanya dan peraturan perundang-undangan yang berlaku. Tiap baris memuat jenis izin, nomor, masa berlaku, dan jadwal perpanjangan."
-        },
-        {
-          "p": "Hasil yang dijaga: informasi legalitas SINUX tercatat akurat, dapat ditelusuri, dan diperbarui saat ada perubahan yang relevan."
-        },
-        {
-          "h2": "Lingkup"
-        },
-        {
-          "p": "Register mencakup akta pendirian dan akta perubahan, Anggaran Dasar, NIB, KBLI, NPWP perusahaan, serta surat keputusan atau surat penerimaan pemberitahuan dari instansi yang berwenang. Register juga mencakup perizinan berusaha dan sertifikat standar melalui OSS berbasis risiko (apabila dipersyaratkan), perizinan, persetujuan, atau pendaftaran sektoral yang relevan, dan dokumen legalitas lain yang diwajibkan oleh kegiatan usaha, ketentuan hukum, atau persyaratan kontraktual. Daftar ini tidak membatasi jenis dokumen yang boleh dicatat."
-        },
-        {
-          "p": "Pencantuman suatu jenis dokumen di register tidak dengan sendirinya berarti dokumen itu wajib bagi SINUX."
-        },
-        {
-          "p": "Register tidak mencatat kontrak dengan pelanggan atau vendor, yang diatur di SNX-LEG-SOP-01, dan tidak memuat daftar peraturan perundang-undangan, yang menjadi isi SNX-LEG-REG-03 (USULAN)."
-        }
-      ]
+     "h2": "Tujuan"
     },
     {
-      "h": "Istilah",
-      "blocks": [
-        {
-          "h2": "Istilah"
-        },
-        {
-          "table": {
-            "header": [
-              "Istilah",
-              "Arti"
-            ],
-            "widths_cm": [
-              4.5,
-              11.5
-            ],
-            "rows": [
-              [
-                "(USULAN)",
-                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
-              ],
-              [
-                "Bukti pendukung",
-                "Salinan dokumen izin atau legalitas yang menjadi dasar isi satu baris register."
-              ],
-              [
-                "Departemen Legal",
-                "Line Manager Legal dan Staff Legal."
-              ],
-              [
-                "Jadwal perpanjangan",
-                "Tanggal pengingat perpanjangan dan tanggal target pengajuan perpanjangan sebuah dokumen (USULAN)."
-              ],
-              [
-                "Jenis izin",
-                "Perizinan, persetujuan, pendaftaran, atau dokumen legalitas yang dicatat dalam satu baris register."
-              ],
-              [
-                "KBLI",
-                "Klasifikasi Baku Lapangan Usaha Indonesia: kode kegiatan usaha untuk perizinan berusaha."
-              ],
-              [
-                "Masa berlaku",
-                "Jangka waktu berlakunya sebuah dokumen, ditulis sebagai tanggal berakhir. Tidak semua dokumen memilikinya."
-              ],
-              [
-                "NIB",
-                "Nomor Induk Berusaha: identitas pelaku usaha yang terbit lewat OSS."
-              ],
-              [
-                "NPWP",
-                "Nomor Pokok Wajib Pajak."
-              ],
-              [
-                "OSS",
-                "Sistem Online Single Submission untuk perizinan berusaha."
-              ],
-              [
-                "Penanggung jawab izin",
-                "Jabatan yang mengurus dan memantau satu dokumen di register, ditulis pada kolom Penanggung Jawab."
-              ],
-              [
-                "Tindak lanjut",
-                "Pekerjaan untuk melengkapi, memverifikasi, atau memperbarui satu dokumen, dicatat pada tabel Tindak Lanjut."
-              ],
-              [
-                "Unit Kerja Terkait",
-                "Departemen SINUX selain Legal yang memegang atau menyampaikan dokumen dan informasi perizinan."
-              ]
-            ]
-          }
-        },
-        {
-          "h2": "Status Dokumen"
-        },
-        {
-          "p": "Kolom Status memakai enam nilai berikut secara konsisten."
-        },
-        {
-          "table": {
-            "header": [
-              "Status",
-              "Arti"
-            ],
-            "widths_cm": [
-              5,
-              11
-            ],
-            "rows": [
-              [
-                "Berlaku",
-                "Dokumen telah diperiksa dan masih berlaku, apabila memiliki masa berlaku."
-              ],
-              [
-                "Perlu Diperbarui",
-                "Dokumen memerlukan pembaruan atau perpanjangan sesuai ketentuan yang berlaku."
-              ],
-              [
-                "Kedaluwarsa",
-                "Masa berlaku dokumen telah berakhir."
-              ],
-              [
-                "Belum Diverifikasi",
-                "Keberadaan, keabsahan, atau status dokumen belum selesai diperiksa."
-              ],
-              [
-                "Belum Tersedia",
-                "Dokumen yang relevan belum ditemukan atau belum dimiliki SINUX."
-              ],
-              [
-                "Tidak Berlaku untuk Perusahaan",
-                "Berdasarkan hasil pemeriksaan, dokumen tidak diwajibkan atau tidak relevan dengan kondisi perusahaan."
-              ]
-            ]
-          }
-        }
-      ]
+     "p": "Register ini mencatat perizinan, persetujuan, pendaftaran, dan dokumen legalitas lain yang dimiliki atau wajib dipenuhi SINUX sesuai kegiatan usahanya dan peraturan perundang-undangan yang berlaku. Setiap baris memuat jenis izin, nomor, masa berlaku, dan jadwal perpanjangan."
     },
     {
-      "h": "Ketentuan Pengelolaan",
-      "blocks": [
-        {
-          "p": "1. Staff Legal mencatat dan memperbarui register serta mencatat lokasi bukti pendukung."
-        },
-        {
-          "p": "2. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register (USULAN) dan memverifikasi akta sebelum dinyatakan selesai (SNX-LEG-SOP-01, prosedur 6.6)."
-        },
-        {
-          "p": "3. Unit Kerja Terkait menyampaikan dokumen dan informasi yang diminta Departemen Legal, dan memberi tahu Staff Legal bila ada perubahan kegiatan usaha atau kondisi SINUX yang dapat memengaruhi kewajiban perizinan."
-        },
-        {
-          "p": "4. Departemen Legal memverifikasi kewajiban tiap jenis dokumen menurut kondisi dan kegiatan usaha SINUX. Dokumen yang hasilnya tidak diwajibkan diberi status Tidak Berlaku untuk Perusahaan."
-        },
-        {
-          "p": "5. Staff Legal meninjau register setiap bulan dan menandai dokumen yang jatuh tempo dalam 90 hari (SNX-HR-JA-01, JA-09)."
-        },
-        {
-          "p": "6. Staff Legal memantau dokumen yang punya masa berlaku menurut tanggal berakhir dan ketentuan perpanjangan yang berlaku. Staff Legal mengirim pengingat perpanjangan ke penanggung jawab izin pada tanggal di kolom Jadwal Perpanjangan."
-        },
-        {
-          "p": "7. Staff Legal mencatat dokumen berstatus Belum Tersedia atau Belum Diverifikasi di register dan menindaklanjutinya kepada pihak yang relevan. Staff Legal memperlakukan dokumen berstatus Perlu Diperbarui atau Kedaluwarsa dengan cara yang sama (USULAN)."
-        },
-        {
-          "p": "8. Setiap tindak lanjut mencantumkan tindakan yang diperlukan, penanggung jawab, dan target penyelesaian pada tabel Tindak Lanjut."
-        },
-        {
-          "p": "9. Staff Legal memperbarui register saat ada penerbitan, perubahan, pembaruan, pencabutan, atau perubahan status dokumen."
-        },
-        {
-          "p": "10. Staff Legal menyimpan bukti pendukung di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan menulis lokasinya di kolom Lokasi Bukti. Pejabat yang Berwenang dapat mengakses bukti itu."
-        },
-        {
-          "p": "11. Staff Legal mencatat hasil pemeriksaan dan tindak lanjut pada tabel Catatan Pemeriksaan agar riwayat pembaruan dapat ditelusuri."
-        }
-      ]
+     "p": "Hasil yang dijaga: informasi legalitas SINUX tercatat akurat, dapat ditelusuri, dan diperbarui saat ada perubahan yang relevan."
     },
     {
-      "h": "Peran",
-      "blocks": [
-        {
-          "table": {
-            "header": [
-              "Peran",
-              "Tugas pada register ini"
-            ],
-            "widths_cm": [
-              4.5,
-              11.5
-            ],
-            "rows": [
-              [
-                "Staff Legal",
-                "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11)."
-              ],
-              [
-                "Line Manager Legal",
-                "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01. Pemilik dokumen dan pemilik rekaman register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2)."
-              ],
-              [
-                "Departemen Legal",
-                "Gabungan Line Manager Legal dan Staff Legal. Menerima dokumen dan informasi dari Unit Kerja Terkait (Ketentuan butir 3) dan memverifikasi kewajiban tiap jenis dokumen (Ketentuan butir 4)."
-              ],
-              [
-                "Unit Kerja Terkait",
-                "Menyampaikan dokumen dan informasi, serta melaporkan perubahan yang memengaruhi kewajiban perizinan (Ketentuan butir 3)."
-              ],
-              [
-                "Penanggung jawab izin",
-                "Menerima pengingat perpanjangan dari Staff Legal dan menjalankan tindakan yang tercatat atas jabatannya di tabel Tindak Lanjut (Ketentuan butir 6 dan 8)."
-              ],
-              [
-                "Pejabat yang Berwenang",
-                "Melakukan pemeriksaan atau persetujuan sesuai mekanisme internal SINUX yang berlaku, dan dapat mengakses bukti pendukung (Ketentuan butir 10). Jabatan pemegang peran ini belum dipetakan (USULAN: diputuskan Legal)."
-              ]
-            ]
-          }
-        },
-        {
-          "p": "Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
-        }
-      ]
+     "h2": "Lingkup"
     },
     {
-      "h": "Petunjuk Pengisian",
-      "blocks": [
-        {
-          "p": "1. Sel data pada tabel Daftar Perizinan dan tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti kosong. Staff Legal mengisinya dari dokumen asli, satu baris untuk satu dokumen."
-        },
-        {
-          "p": "2. Staff Legal menambah baris bila satu jenis izin punya lebih dari satu dokumen, misalnya akta perubahan."
-        },
-        {
-          "p": "3. Kolom Nomor memuat nomor yang tertera pada dokumen asli. Untuk KBLI, Staff Legal menulis kode KBLI kegiatan usaha SINUX."
-        },
-        {
-          "p": "4. Kolom Masa Berlaku memuat tanggal berakhir. Untuk dokumen yang tidak punya masa berlaku, Staff Legal menulis tidak ada masa berlaku."
-        },
-        {
-          "p": "5. Kolom Jadwal Perpanjangan memuat tanggal pengingat, yaitu 90 hari sebelum masa berlaku berakhir (SNX-LEG-SOP-01, bagian 8), dan tanggal target pengajuan perpanjangan (USULAN)."
-        },
-        {
-          "p": "6. Kolom Status memakai salah satu dari enam status pada bagian Istilah. Staff Legal memberi status Belum Diverifikasi pada baris yang belum diperiksa."
-        },
-        {
-          "p": "7. Kolom Penanggung Jawab memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
-        },
-        {
-          "p": "8. Tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti memakai nomor baris yang sama dengan tabel Daftar Perizinan."
-        },
-        {
-          "p": "9. Staff Legal mengisi tabel Tindak Lanjut dan Catatan Pemeriksaan sesuai Ketentuan butir 7, 8, dan 11."
-        }
-      ]
+     "p": "Register mencakup akta pendirian dan akta perubahan, Anggaran Dasar, NIB, KBLI, NPWP perusahaan, serta surat keputusan atau surat penerimaan pemberitahuan dari instansi yang berwenang. Register juga mencakup perizinan berusaha dan sertifikat standar melalui OSS berbasis risiko jika dipersyaratkan, serta perizinan, persetujuan, atau pendaftaran sektoral yang relevan. Dokumen legalitas lain yang diwajibkan kegiatan usaha, ketentuan hukum, atau persyaratan kontraktual juga dicatat. Daftar ini tidak membatasi jenis dokumen yang boleh dicatat."
     },
     {
-      "h": "Isi Register",
-      "blocks": [
-        {
-          "p": "Baris 1 sampai 9 sudah berisi jenis dokumen. Baris 10 dan 11 disediakan untuk jenis lain."
-        },
-        {
-          "h2": "Daftar Perizinan"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Jenis Izin",
-              "Nomor",
-              "Masa Berlaku",
-              "Jadwal Perpanjangan",
-              "Status"
-            ],
-            "widths_cm": [
-              1.0,
-              4.1,
-              3.0,
-              2.6,
-              3.3,
-              2.0
-            ],
-            "rows": [
-              [
-                "1",
-                "NIB",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "KBLI",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "Akta Pendirian",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "4",
-                "NPWP perusahaan",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "5",
-                "Anggaran Dasar",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "6",
-                "Akta perubahan",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "7",
-                "Surat keputusan atau penerimaan pemberitahuan dari instansi (misalnya SK Kemenkum)",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "8",
-                "Perizinan berusaha dan sertifikat standar OSS",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "9",
-                "Izin, persetujuan, atau pendaftaran sektoral",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "10",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "11",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ]
-            ]
-          }
-        },
-        {
-          "h2": "Penerbitan, Penanggung Jawab, dan Lokasi Bukti"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Instansi Penerbit",
-              "Kegiatan Usaha/KBLI",
-              "Tanggal Penerbitan",
-              "Penanggung Jawab",
-              "Lokasi Bukti"
-            ],
-            "widths_cm": [
-              1.0,
-              3.0,
-              3.3,
-              2.8,
-              3.0,
-              2.9
-            ],
-            "rows": [
-              [
-                "1",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "4",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "5",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "6",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "7",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "8",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "9",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "10",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "11",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ]
-            ]
-          }
-        },
-        {
-          "h2": "Tindak Lanjut"
-        },
-        {
-          "table": {
-            "header": [
-              "No",
-              "Jenis Izin",
-              "Tindakan yang Diperlukan",
-              "Penanggung Jawab",
-              "Target Penyelesaian"
-            ],
-            "widths_cm": [
-              1.0,
-              3.4,
-              5.0,
-              3.3,
-              3.3
-            ],
-            "rows": [
-              [
-                "1",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "3",
-                "",
-                "",
-                "",
-                ""
-              ]
-            ]
-          }
-        },
-        {
-          "h2": "Catatan Pemeriksaan"
-        },
-        {
-          "table": {
-            "header": [
-              "Tanggal",
-              "Pemeriksa",
-              "Hasil Pemeriksaan",
-              "Perubahan pada Register"
-            ],
-            "widths_cm": [
-              2.6,
-              3.4,
-              5.0,
-              5.0
-            ],
-            "rows": [
-              [
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "",
-                "",
-                "",
-                ""
-              ]
-            ]
-          }
-        }
-      ]
+     "p": "Pencantuman suatu jenis dokumen di register tidak dengan sendirinya berarti dokumen itu wajib bagi SINUX."
     },
     {
-      "h": "Dokumen Terkait",
-      "blocks": [
-        {
-          "table": {
-            "header": [
-              "Kode",
-              "Keterangan"
-            ],
-            "widths_cm": [
-              4,
-              12
-            ],
-            "rows": [
-              [
-                "SNX-LEG-SOP-01",
-                "Legal Operational. Prosedur 6.5 mengatur register kontrak, prosedur 6.6 mengatur korporasi dan perizinan, butir 4.24 menunjuk repositori dokumen legal (USULAN), dan bagian 8 memuat pengingat perpanjangan izin."
-              ],
-              [
-                "SNX-LEG-SOP-03",
-                "Legal Document Control & Retention. Tempat usulan penetapan periode retensi dokumen legal serta pembagian pemilik dan pencatat rekaman Legal."
-              ],
-              [
-                "SNX-LEG-REG-03",
-                "Legal & Regulatory Requirements Register. Daftar peraturan perundang-undangan dan persyaratan hukum yang relevan dengan kegiatan usaha dan operasional perusahaan."
-              ],
-              [
-                "SNX-LEG-REG-04",
-                "Company Legal Documents Register. Daftar dokumen legal dan korporasi perusahaan. Batas pencatatannya dengan register ini, misalnya untuk Akta Pendirian dan Anggaran Dasar, belum diputus Legal."
-              ],
-              [
-                "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09)."
-              ],
-              [
-                "SNX-HR-JA-01",
-                "Job Analysis dan Uraian Jabatan. Memuat rutinitas bulanan Staff Legal (JA-09) meninjau register izin."
-              ],
-              [
-                "SNX-ISMS-PRO-01",
-                "Information Classification & Handling. Sumber tingkat klasifikasi RESTRICTED (Internal)."
-              ],
-              [
-                "001/LEGAL/SINUX/X/2026",
-                "Nomor lama register ini, digantikan SNX-LEG-REG-01 (USULAN)."
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "h": "Rekaman dan Acuan ISO",
-      "blocks": [
-        {
-          "h2": "Rekaman"
-        },
-        {
-          "table": {
-            "header": [
-              "Rekaman",
-              "Lokasi dan pemilik",
-              "Retensi"
-            ],
-            "widths_cm": [
-              4.5,
-              7.0,
-              4.5
-            ],
-            "rows": [
-              [
-                "Register ini: baris perizinan, tindak lanjut, dan catatan pemeriksaan",
-                "Folder Google Drive departemen Legal (Ketentuan butir 10). Pemilik: Line Manager Legal. Pencatat: Staff Legal. Pembagian ini mengikuti SNX-LEG-SOP-03 (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
-                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
-              ],
-              [
-                "Bukti pendukung tiap baris",
-                "Lokasi tertulis di kolom Lokasi Bukti. Pemilik dan pencatat sama dengan baris di atas.",
-                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
-              ]
-            ]
-          }
-        },
-        {
-          "h2": "Acuan ISO"
-        },
-        {
-          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
-        },
-        {
-          "table": {
-            "header": [
-              "Standar",
-              "Klausul",
-              "Hubungan dengan dokumen ini"
-            ],
-            "widths_cm": [
-              3.6,
-              5.4,
-              7
-            ],
-            "rows": [
-              [
-                "ISO 9001:2015",
-                "4.2 Memahami kebutuhan dan harapan pihak berkepentingan",
-                "Perizinan dan legalitas adalah persyaratan instansi berwenang yang relevan bagi kegiatan usaha SINUX."
-              ],
-              [
-                "ISO 9001:2015",
-                "7.5.3 Pengendalian informasi terdokumentasi",
-                "Register dicatat, disimpan, diperbarui, dan dapat ditelusuri lewat Catatan Pemeriksaan."
-              ],
-              [
-                "ISO/IEC 27001:2022",
-                "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
-                "Register mencatat izin dan dokumen legalitas yang diwajibkan kegiatan usaha, ketentuan hukum, atau kontrak."
-              ],
-              [
-                "ISO/IEC 27001:2022",
-                "Annex A 5.33 Perlindungan rekaman",
-                "Register dan bukti pendukungnya punya lokasi, pemilik, dan klasifikasi yang tercatat."
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "h": "Kesimpulan",
-      "blocks": [
-        {
-          "p": "Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isi register setiap bulan."
-        }
-      ]
+     "p": "Register ini tidak mencatat kontrak dengan pelanggan atau vendor, yang diatur dalam SNX-LEG-SOP-01. Register ini juga tidak memuat daftar peraturan perundang-undangan, yang dicatat di SNX-LEG-REG-03 (USULAN)."
     }
-  ]
+   ]
+  },
+  {
+   "h": "Istilah",
+   "blocks": [
+    {
+     "h2": "Istilah"
+    },
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Bukti pendukung",
+        "Salinan dokumen izin atau legalitas yang menjadi dasar isi satu baris register."
+       ],
+       [
+        "Departemen Legal",
+        "Line Manager Legal dan Staff Legal."
+       ],
+       [
+        "Jadwal perpanjangan",
+        "Tanggal pengingat perpanjangan dan tanggal target pengajuan perpanjangan sebuah dokumen (USULAN)."
+       ],
+       [
+        "Jenis izin",
+        "Perizinan, persetujuan, pendaftaran, atau dokumen legalitas yang dicatat dalam satu baris register."
+       ],
+       [
+        "KBLI",
+        "Klasifikasi Baku Lapangan Usaha Indonesia: kode kegiatan usaha untuk perizinan berusaha."
+       ],
+       [
+        "Masa berlaku",
+        "Jangka waktu berlakunya sebuah dokumen, ditulis sebagai tanggal berakhir. Tidak semua dokumen punya masa berlaku."
+       ],
+       [
+        "NIB",
+        "Nomor Induk Berusaha: identitas pelaku usaha yang terbit melalui OSS."
+       ],
+       [
+        "NPWP",
+        "Nomor Pokok Wajib Pajak."
+       ],
+       [
+        "OSS",
+        "Sistem Online Single Submission untuk perizinan berusaha."
+       ],
+       [
+        "Penanggung jawab izin",
+        "Jabatan yang mengurus dan memantau satu dokumen di register, ditulis di kolom Penanggung Jawab."
+       ],
+       [
+        "Tindak lanjut",
+        "Pekerjaan untuk melengkapi, memverifikasi, atau memperbarui satu dokumen, dicatat di tabel Tindak Lanjut."
+       ],
+       [
+        "Unit Kerja Terkait",
+        "Departemen SINUX selain Legal yang memegang atau menyampaikan dokumen dan informasi perizinan."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Status Dokumen"
+    },
+    {
+     "p": "Kolom Status diisi dengan salah satu dari enam nilai berikut."
+    },
+    {
+     "table": {
+      "header": [
+       "Status",
+       "Arti"
+      ],
+      "widths_cm": [
+       5,
+       11
+      ],
+      "rows": [
+       [
+        "Berlaku",
+        "Dokumen sudah diperiksa dan masih berlaku, jika punya masa berlaku."
+       ],
+       [
+        "Perlu Diperbarui",
+        "Dokumen memerlukan pembaruan atau perpanjangan sesuai ketentuan yang berlaku."
+       ],
+       [
+        "Kedaluwarsa",
+        "Masa berlaku dokumen sudah berakhir."
+       ],
+       [
+        "Belum Diverifikasi",
+        "Keberadaan, keabsahan, atau status dokumen belum selesai diperiksa."
+       ],
+       [
+        "Belum Tersedia",
+        "Dokumen yang relevan belum ditemukan atau belum dimiliki SINUX."
+       ],
+       [
+        "Tidak Berlaku untuk Perusahaan",
+        "Hasil pemeriksaan menunjukkan dokumen tidak diwajibkan atau tidak relevan bagi SINUX."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Ketentuan Pengelolaan",
+   "blocks": [
+    {
+     "p": "1. Staff Legal mencatat dan memperbarui register serta mencatat lokasi bukti pendukung."
+    },
+    {
+     "p": "2. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register (USULAN), serta memverifikasi akta sebelum dinyatakan selesai (SNX-LEG-SOP-01 prosedur 6.6)."
+    },
+    {
+     "p": "3. Unit Kerja Terkait menyampaikan dokumen dan informasi yang diminta Departemen Legal. Perubahan kegiatan usaha atau kondisi SINUX yang dapat memengaruhi kewajiban perizinan juga diberitahukan kepada Staff Legal."
+    },
+    {
+     "p": "4. Departemen Legal memverifikasi kewajiban setiap jenis dokumen menurut kondisi dan kegiatan usaha SINUX. Dokumen yang ternyata tidak diwajibkan diberi status Tidak Berlaku untuk Perusahaan."
+    },
+    {
+     "p": "5. Staff Legal meninjau register setiap bulan dan menandai dokumen yang jatuh tempo dalam 90 hari (SNX-HR-JA-01, JA-09)."
+    },
+    {
+     "p": "6. Staff Legal memantau dokumen yang punya masa berlaku menurut tanggal berakhir dan ketentuan perpanjangannya. Pengingat perpanjangan dikirim ke penanggung jawab izin pada tanggal di kolom Jadwal Perpanjangan."
+    },
+    {
+     "p": "7. Staff Legal mencatat dokumen berstatus Belum Tersedia atau Belum Diverifikasi di register, lalu menindaklanjutinya dengan pihak yang relevan. Dokumen berstatus Perlu Diperbarui atau Kedaluwarsa ditangani dengan cara yang sama (USULAN)."
+    },
+    {
+     "p": "8. Setiap tindak lanjut mencantumkan tindakan yang diperlukan, penanggung jawab, dan target penyelesaian pada tabel Tindak Lanjut."
+    },
+    {
+     "p": "9. Staff Legal memperbarui register saat ada penerbitan, perubahan, pembaruan, pencabutan, atau perubahan status dokumen."
+    },
+    {
+     "p": "10. Staff Legal menyimpan bukti pendukung di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan menulis lokasinya di kolom Lokasi Bukti. Bukti itu dapat diakses Pejabat yang Berwenang."
+    },
+    {
+     "p": "11. Staff Legal mencatat hasil pemeriksaan dan tindak lanjut pada tabel Catatan Pemeriksaan agar riwayat pembaruan dapat ditelusuri."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada register ini"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "Staff Legal",
+        "Mengisi dan memperbarui register, meninjaunya setiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, serta mencatat tindak lanjut dan hasil pemeriksaan. Jabatan: Legal & Compliance (JA-09)."
+       ],
+       [
+        "Line Manager Legal",
+        "Memeriksa isi register dan memverifikasi akta. Jabatan: Legal & Compliance (JA-08). Pemilik dokumen dan pemilik record (rekaman) register ini (USULAN)."
+       ],
+       [
+        "Departemen Legal",
+        "Gabungan Line Manager Legal dan Staff Legal. Menerima dokumen dan informasi dari Unit Kerja Terkait, serta memverifikasi kewajiban setiap jenis dokumen."
+       ],
+       [
+        "Unit Kerja Terkait",
+        "Menyampaikan dokumen dan informasi, serta melaporkan perubahan yang memengaruhi kewajiban perizinan."
+       ],
+       [
+        "Penanggung jawab izin",
+        "Menerima pengingat perpanjangan dari Staff Legal dan menjalankan tindakan yang dicatat untuk jabatannya di tabel Tindak Lanjut."
+       ],
+       [
+        "Pejabat yang Berwenang",
+        "Melakukan pemeriksaan atau persetujuan sesuai mekanisme internal SINUX yang berlaku, dan dapat mengakses bukti pendukung. Jabatan pemegang peran ini belum dipetakan (USULAN: diputuskan Legal)."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval di halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Petunjuk Pengisian",
+   "blocks": [
+    {
+     "p": "1. Sel data di tabel Daftar Perizinan dan tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti masih kosong. Isi dari dokumen asli, satu baris untuk satu dokumen."
+    },
+    {
+     "p": "2. Tambah baris jika satu jenis izin punya lebih dari satu dokumen, misalnya akta perubahan."
+    },
+    {
+     "p": "3. Di kolom Nomor, tulis nomor yang tertera pada dokumen asli. Untuk KBLI, tulis kode KBLI kegiatan usaha SINUX."
+    },
+    {
+     "p": "4. Di kolom Masa Berlaku, tulis tanggal berakhir. Untuk dokumen tanpa masa berlaku, tulis tidak ada masa berlaku."
+    },
+    {
+     "p": "5. Di kolom Jadwal Perpanjangan, tulis tanggal pengingat, yaitu 90 hari sebelum masa berlaku berakhir (SNX-LEG-SOP-01 bagian 8), dan tanggal target pengajuan perpanjangan (USULAN)."
+    },
+    {
+     "p": "6. Isi kolom Status dengan salah satu dari enam nilai Status Dokumen. Beri status Belum Diverifikasi pada baris yang belum diperiksa."
+    },
+    {
+     "p": "7. Di kolom Penanggung Jawab, tulis nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+    },
+    {
+     "p": "8. Pakai nomor baris yang sama di tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti seperti di tabel Daftar Perizinan."
+    },
+    {
+     "p": "9. Isi tabel Tindak Lanjut untuk setiap dokumen yang perlu ditindaklanjuti, dan catat setiap pemeriksaan di tabel Catatan Pemeriksaan."
+    }
+   ]
+  },
+  {
+   "h": "Isi Register",
+   "blocks": [
+    {
+     "p": "Baris 1 sampai 9 sudah berisi jenis dokumen. Baris 10 dan 11 disediakan untuk jenis lain."
+    },
+    {
+     "h2": "Daftar Perizinan"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Jenis Izin",
+       "Nomor",
+       "Masa Berlaku",
+       "Jadwal Perpanjangan",
+       "Status"
+      ],
+      "widths_cm": [
+       1.0,
+       4.1,
+       3.0,
+       2.6,
+       3.3,
+       2.0
+      ],
+      "rows": [
+       [
+        "1",
+        "NIB",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "KBLI",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "Akta Pendirian",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "NPWP perusahaan",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "Anggaran Dasar",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "Akta perubahan",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "Surat keputusan atau penerimaan pemberitahuan dari instansi (misalnya SK Kemenkum)",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "Perizinan berusaha dan sertifikat standar OSS",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "Izin, persetujuan, atau pendaftaran sektoral",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "11",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Penerbitan, Penanggung Jawab, dan Lokasi Bukti"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Instansi Penerbit",
+       "Kegiatan Usaha/KBLI",
+       "Tanggal Penerbitan",
+       "Penanggung Jawab",
+       "Lokasi Bukti"
+      ],
+      "widths_cm": [
+       1.0,
+       3.0,
+       3.3,
+       2.8,
+       3.0,
+       2.9
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "11",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tindak Lanjut"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Jenis Izin",
+       "Tindakan yang Diperlukan",
+       "Penanggung Jawab",
+       "Target Penyelesaian"
+      ],
+      "widths_cm": [
+       1.0,
+       3.4,
+       5.0,
+       3.3,
+       3.3
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Catatan Pemeriksaan"
+    },
+    {
+     "table": {
+      "header": [
+       "Tanggal",
+       "Pemeriksa",
+       "Hasil Pemeriksaan",
+       "Perubahan pada Register"
+      ],
+      "widths_cm": [
+       2.6,
+       3.4,
+       5.0,
+       5.0
+      ],
+      "rows": [
+       [
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4,
+       12
+      ],
+      "rows": [
+       [
+        "SNX-LEG-SOP-01",
+        "Legal Operational. Prosedur 6.5 mengatur register kontrak, prosedur 6.6 mengatur korporasi dan perizinan, butir 4.24 menunjuk repositori dokumen legal (USULAN), dan bagian 8 memuat pengingat perpanjangan izin."
+       ],
+       [
+        "SNX-LEG-SOP-03",
+        "Legal Document Control & Retention. Memuat usulan masa simpan dokumen legal serta pembagian pemilik dan pencatat record Legal."
+       ],
+       [
+        "SNX-LEG-REG-03",
+        "Legal & Regulatory Requirements Register. Daftar peraturan perundang-undangan dan persyaratan hukum yang relevan dengan kegiatan usaha dan operasional perusahaan."
+       ],
+       [
+        "SNX-LEG-REG-04",
+        "Company Legal Documents Register. Daftar dokumen legal dan korporasi perusahaan. Batas pencatatan antara register itu dan register ini, misalnya untuk Akta Pendirian dan Anggaran Dasar, belum diputuskan Legal."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal serta pemetaannya ke jabatan Legal & Compliance (JA-08 dan JA-09)."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan. Memuat rutinitas bulanan Staff Legal (JA-09) untuk meninjau register izin."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling. Sumber tingkat klasifikasi RESTRICTED (Internal)."
+       ],
+       [
+        "001/LEGAL/SINUX/X/2026",
+        "Nomor lama register ini, digantikan SNX-LEG-REG-01 (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "table": {
+      "header": [
+       "Record",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       4.5,
+       7.0,
+       4.5
+      ],
+      "rows": [
+       [
+        "Register ini: baris perizinan, tindak lanjut, dan catatan pemeriksaan",
+        "Folder Google Drive Departemen Legal. Pemilik: Line Manager Legal. Pencatat: Staff Legal. Pembagian ini mengikuti SNX-LEG-SOP-03 (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+        "Belum ditetapkan. Usulan masa simpan disusun di SNX-LEG-SOP-03."
+       ],
+       [
+        "Bukti pendukung tiap baris",
+        "Lokasi tertulis di kolom Lokasi Bukti. Pemilik dan pencatat sama dengan baris di atas.",
+        "Belum ditetapkan. Usulan masa simpan disusun di SNX-LEG-SOP-03."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut masih perlu dikonfirmasi konsultan (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan dokumen ini"
+      ],
+      "widths_cm": [
+       3.6,
+       5.4,
+       7
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "4.2 Memahami kebutuhan dan harapan pihak berkepentingan",
+        "Perizinan dan legalitas adalah persyaratan instansi berwenang yang relevan dengan kegiatan usaha SINUX."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Register dicatat, disimpan, diperbarui, dan dapat ditelusuri melalui Catatan Pemeriksaan."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
+        "Register mencatat izin dan dokumen legalitas yang diwajibkan kegiatan usaha, ketentuan hukum, atau kontrak."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.33 Perlindungan record",
+        "Register dan bukti pendukungnya punya lokasi, pemilik, dan klasifikasi yang tercatat."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isi register setiap bulan."
+    }
+   ]
+  }
+ ]
 }
