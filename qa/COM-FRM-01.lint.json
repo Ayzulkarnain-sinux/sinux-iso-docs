@@ -1,0 +1,9 @@
+{
+ "file": "out/05_Commercial/SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "19 butir (USULAN) menunggu ACC"
+ ]
+}

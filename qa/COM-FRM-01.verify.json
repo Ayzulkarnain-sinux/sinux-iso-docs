@@ -1,0 +1,50 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Blok Identity, Process Owner",
+   "masalah": "Lintas dokumen: Process Owner COM-FRM-01 = Direktur, sedangkan specs/COM-SOP-01.json dan specs/COM-SOP-02.json = VP Commercial. Alasan tertulis ada (config/defaults.json process_owner.rule untuk dokumen baru tanpa sumber = jabatan kolom reviewed COM; notes/COM-FRM-01.md bagian 2 dan open item 1), jadi bukan beda tanpa alasan, tetapi set Commercial tidak seragam sampai owner memutus.",
+   "bukti": "specs/COM-FRM-01.json meta.process_owner 'Direktur'; specs/COM-SOP-01.json dan COM-SOP-02.json meta.process_owner 'VP Commercial'; docx tabel Peran: 'COO | Pemilik dokumen ini menurut blok Identity (USULAN).'"
+  },
+  {
+   "lokasi": "Aspek C3.2 dan tabel Peran baris COO",
+   "masalah": "Wewenang COO menyetujui harga dan diskon berasal dari SNX-COM-SOP-02 butir 4.7 yang di sana berstatus (USULAN). Formulir merujuk butir 4.15 di C3.2, dan baris COO di tabel Peran tidak memberi rujukan atau label. Notes bagian 3 butir 5 menyebut C3.2 merujuk butir 4.7, tidak cocok dengan docx. Tertutup sebagian oleh label USULAN umum atas isi C1 sampai C4.",
+   "bukti": "C3.2: 'Harga dan diskon di PO atau kontrak sama dengan penawaran yang COO setujui (Catatan persetujuan penawaran, SNX-COM-SOP-02 butir 4.15).' Peran: 'COO | ... Menyetujui harga dan diskon yang dirujuk aspek C3.2, ...'. COM-SOP-02 4.7: 'Wewenang berikut berstatus (USULAN): ... COO menyetujui harga dan diskon'."
+  },
+  {
+   "lokasi": "Rekaman, baris Hasil review kontrak",
+   "masalah": "Pemilik Legal & Compliance dirujuk ke SNX-COM-SOP-01 butir 4.19, yang di sumber berstatus (USULAN); di formulir tanpa label.",
+   "bukti": "'Hasil review kontrak | Lokasi belum ditetapkan. Pemilik: Legal & Compliance (SNX-COM-SOP-01 butir 4.19).' COM-SOP-01 4.19: 'Penetapan pelaku berikut berstatus (USULAN) ...'"
+  },
+  {
+   "lokasi": "Petunjuk Pengisian butir 1",
+   "masalah": "Nilai isian literal tidak ditandai sehingga kalimat terbaca janggal, dan 'field' bercampur dengan istilah 'sel isian' di bagian Isi Formulir.",
+   "bukti": "'Business Development mengisi semua field tabel Informasi Order, dan menulis tidak ada pada field yang tidak berlaku.'"
+  },
+  {
+   "lokasi": "Istilah 'Kelayakan teknis' dan aspek C2.1",
+   "masalah": "Rumusan dasar kelayakan berganti: definisi memakai produk, lisensi, dan dependensi vendor; C2.1 memakai produk dan batasan kapabilitas SINUX.",
+   "bukti": "Istilah: '... dengan produk, lisensi, dan dependensi vendor yang tersedia bagi SINUX.' C2.1: '... dengan produk dan batasan kapabilitas SINUX yang ada.'"
+  },
+  {
+   "lokasi": "Lingkup, kalimat pengantar tabel pengecualian",
+   "masalah": "Satu kalimat pasif tanpa pelaku (§6a.6). Tunggal dan tidak mengaburkan prosedur.",
+   "bukti": "'Butir berikut dikecualikan dari formulir ini.'"
+  },
+  {
+   "lokasi": "Tabel Peran baris Service Delivery Manager; Dokumen Terkait SNX-HR-ORG-01",
+   "masalah": "Kode K-10 dipakai tanpa penjelasan bagi pembaca formulir; artinya hanya terbaca bila membuka SNX-HR-ORG-01.",
+   "bukti": "'Jabatan usulan tanpa pemegang di SNX-HR-ORG-01 (K-10).'"
+  }
+ ],
+ "cek": {
+  "a_fakta": "Nama hanya di blok approval, persis config/defaults.json prepared_reviewed.COM dan approved_by. Kode JA-02, JA-03, JA-05, JA-07, JA-08, JA-09 dan K-10 cocok dengan specs/HR-ORG-01.json. Rujukan butir dicocokkan dengan spec: COM-SOP-01 4.3, 4.11, 4.17, 4.19, 6.3 (Discovery), 6.8 (Handover); COM-SOP-02 4.10, 4.15, 6.2 (Review Scope), 6.4 (Pengecualian Komersial); LEG-SOP-02 6.1 (Pengajuan Permintaan); FAT-SOP-01 4.5, 4.8; OPS-SOP-01 4.1; OPS-SOP-05 4.1; ISMS-PRO-01 4.3. Judul OPS-FRM-06, LEG-REG-01, LEG-FRM-01, COM-FRM-02 cocok dengan spec.",
+  "b_karangan": "Nol tanggal, nol angka nilai atau tenggat, nol nama pihak luar, sel isian kosong tanpa baris contoh. Klausul ISO berlabel (USULAN, perlu konfirmasi konsultan).",
+  "c_kriteria": "Enam unsur Description terpenuhi: Kebutuhan Customer (B1 sampai B10), C1 kesesuaian scope, C2 kelayakan teknis, C3 persyaratan kontraktual, C4 delivery commitment, Temuan, Hasil Review, Dasar, Catatan Review dan Persetujuan sebelum order diterima.",
+  "d_runbook_0_6": "Status Draft, tanggal efektif kosong, tanda tangan kosong, Classification INTERNAL sesuai worklist, nol rujukan internal AI, nol residu konsultan, nol em-dash atau en-dash.",
+  "e_peran": "Tabel Peran konsisten dengan pelaku Ketentuan butir 1 sampai 10, baris Catatan Review dan Persetujuan, dan pencatat/pemilik di Rekaman.",
+  "f_bahasa": "Tidak ada pelanggaran §6a yang jelas; temuan minor di nonblocking.",
+  "g_data_conflicts_audit": "Samuel Kristanto Utomo / President Director hanya di blok approval, badan memakai Direktur Utama; Amirull: Direktur di blok tanda tangan, 'Direktur (COO)' pada sebutan pertama badan (Istilah) lalu COO. Tidak ada fileId sumber; grep context/audit untuk COM-FRM-01 dan judul memberi 0 baris, sesuai notes bagian 3, dan cacat Sales SOP yang relevan ditangani di notes."
+ }
+}
