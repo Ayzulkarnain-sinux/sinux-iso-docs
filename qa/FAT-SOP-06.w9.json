@@ -1,0 +1,31 @@
+{
+ "key": "FAT-SOP-06",
+ "cluster": "FAT-A",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "notes/FAT-SOP-06.md bagian ISO-W9 baris pembuka menulis 'Rujukan silang yang diubah: hanya baris SNX-HR-ORG-01 di bagian 11 FAT-SOP-01 (di atas)'. Kalimat itu menyebut FAT-SOP-01, padahal bagian 11 FAT-SOP-06 tidak berubah, jadi tampaknya tersalin dari notes dokumen lain. Isi docx tidak terpengaruh. Kalimatnya perlu dibetulkan menjadi 'tidak ada rujukan silang yang diubah atau ditambah' (yang dihapus hanya rujukan '(butir K-13)')",
+  "Bagian 5 kehilangan rujukan '(butir K-13)' ke SNX-HR-ORG-01 karena kalimat 'Belum dipetakan ke jabatan...' dihapus. Penghapusan ini sesuai perintah menyelaraskan kalimat pemetaan dengan definisi, dan pemetaan kini ada di bagian 3 dengan label USULAN. Tidak ada rujukan baru yang perlu dicek",
+  "Definisi baru diawali huruf kecil ('peran pemeriksa...'), sedangkan definisi lain di tabel bagian 3 diawali huruf kapital. Teksnya persis sesuai instruksi A6, jadi ini hanya soal kosmetik",
+  "Badan dokumen menyebut 'Direktur' tanpa '(COO)' di definisi Finance Lead. Teks itu diwajibkan persis oleh A6 dan tidak menyebut peran COO, jadi tidak bertentangan dengan aturan sebutan di defaults v22"
+ ],
+ "butir_dikerjakan": [
+  "A6: blok Reviewed By diganti dari 'Finance Lead' menjadi 'Amirull Yusuf Zulkarnain / Direktur', persis sesuai defaults v22 prepared_reviewed.FAT.reviewed",
+  "A6: Prepared By tetap 'Finance Staff' dan Approved By tetap 'Samuel Kristanto Utomo / President Director', persis sesuai defaults v22",
+  "A6: di bagian 3 DEFINITION & ABBREVIATIONS ditambah baris 'Finance Lead' dengan isi persis instruksi, berlabel (USULAN), diletakkan berurutan abjad sesudah Ekualisasi",
+  "A6: di bagian 3 ditambah baris 'Finance Staff' dengan isi persis instruksi (JA-10 Finance, JA-11 Accounting & Tax), berlabel (USULAN)",
+  "A6: kalimat pemetaan lama di bagian 5 'Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).' dihapus dari baris Finance Lead dan baris Finance Staff, sehingga selaras dengan definisi baru. Kalimat lain di baris itu tetap",
+  "A6 (K-13 diperbarui): notes mencatat K-13 sebagai 'ditutup W9' beserta alasannya, dan baris lama tidak dihapus"
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Diukur pada teks render sesudah (/tmp/claude-0/w9/render/FAT-SOP-06.docx, 260 paragraf): 'HR Manager' = 0, 'Divisi Legal' = 0, em-dash = 0. FAT-SOP-06 bukan dokumen HR maupun Legal, jadi aturan langkah 7 tidak berlaku, tetapi hasilnya tetap 0. Hasil w9diff: 3 baris lama berubah menjadi 5 baris baru, dan hanya menyentuh blok Reviewed, 2 definisi, serta 2 sel Peran. Sumber angka dan nama baru: 'Direktur', 'JA-10', 'JA-11', dan 'Amirull Yusuf Zulkarnain / Direktur' semuanya ada di defaults v22 (data_conflicts dan prepared_reviewed) dan di LEAD-GUIDE G-3 A6",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

@@ -199,3 +199,19 @@ Dua rujukan "Belum bernomor" yang tersisa (SOP Account Receivable & Collection, 
 Perbaikan sweep (temuan pemblokir qa/FAT-SOP-06.sweep.r1.json): versi sweep pertama memindahkan "pendataan piutang" dari SOP Account Receivable & Collection ke SNX-FAT-REG-01 dan memangkas deskripsi SOP itu. Itu salah: checklist baris 24 menyebut SOP itu mencakup penagihan invoice dan pendataan piutang, dan SOP itu bukan salah satu dari tiga dokumen yang dinomori. Baris pengecualian Scope dan baris Dokumen terkait SOP Account Receivable & Collection dikembalikan ke rumusan sebelum sweep; SNX-FAT-REG-01 tinggal sebagai rujukan tracker piutang (USULAN, pemutus FAT) tanpa mencabut cakupan SOP itu. Catatan gaya nonblocking pada definisi "Jurnal penyesuaian" tidak diubah karena di luar butir perbaikan.
 
 Hasil uji sweep setelah perbaikan (bukti: /tmp/pen-FAT-SOP-06/lint.out.txt, validate.out.txt, blankscan.out.txt): render tanpa galat; lint_doc sop `"pass": true`, fails kosong, warn "21 butir (USULAN) menunggu ACC"; validator OOXML "All validations PASSED!"; blankscan `ok`.
+
+
+## ISO-W9
+
+Round perbaikan ISO-W9 (LEAD G-3 A6). Fakta, angka, dan struktur lain tetap. Rujukan silang yang diubah: hanya baris SNX-HR-ORG-01 di bagian 11 FAT-SOP-01 (di atas).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Blok Reviewed (meta.approval.reviewed) | Finance Lead | Amirull Yusuf Zulkarnain / Direktur |
+| Bagian 3 Definisi | Tanpa istilah Finance Lead dan Finance Staff | Dua baris baru, isi persis LEAD G-3 A6: Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN). Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN). |
+| Bagian 5, baris Finance Lead dan Finance Staff | "... Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | Kalimat itu dihapus; pemetaan ada di definisi bagian 3 |
+
+Open item:
+
+- K-13 (Finance Lead dan Finance Staff belum dipetakan ke jabatan): ditutup W9: dipetakan lewat definisi bagian 3 sesuai keputusan owner 15 Okt ("finance lead belum ada"), berlabel USULAN; baris lama tidak dihapus.
+- Pemetaan Finance Lead dan Finance Staff ke jabatan: status berubah W9: berlaku sebagai USULAN sampai jabatan Finance Lead terisi.

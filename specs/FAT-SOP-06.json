@@ -13,7 +13,7 @@
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
       "prepared": "Finance Staff",
-      "reviewed": "Finance Lead",
+      "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -70,6 +70,14 @@
     [
       "Ekualisasi",
       "Pencocokan angka akun komersial dengan angka akun perpajakan."
+    ],
+    [
+     "Finance Lead",
+     "peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+    ],
+    [
+     "Finance Staff",
+     "peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
     ],
     [
       "Fixed Asset Register",
@@ -142,12 +150,12 @@
   "roles": [
     [
       "Finance Lead",
-      "Pemilik SOP. Mereview jurnal dan rekonsiliasi bank, mencatat jurnal penyesuaian dan jurnal reklasifikasi (USULAN), melakukan tutup buku bulanan, dan menyusun Laporan Keuangan (butir 6.4 dan 6.5). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+      "Pemilik SOP. Mereview jurnal dan rekonsiliasi bank, mencatat jurnal penyesuaian dan jurnal reklasifikasi (USULAN), melakukan tutup buku bulanan, dan menyusun Laporan Keuangan (butir 6.4 dan 6.5).",
       "Review atas pekerjaan Finance Staff (butir 4.4); batas wewenang keuangan lain mengikuti delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
     ],
     [
       "Finance Staff",
-      "Menginput jurnal, mengklasifikasi transaksi pada CoA, mengelola CoA, dan merekonsiliasi bank (butir 6.1 sampai 6.3). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+      "Menginput jurnal, mengklasifikasi transaksi pada CoA, mengelola CoA, dan merekonsiliasi bank (butir 6.1 sampai 6.3).",
       "Mencatat jurnal dan rekonsiliasi bank; tutup buku bulanan dan penyusunan Laporan Keuangan ada pada Finance Lead (butir 6.5)."
     ]
   ],
