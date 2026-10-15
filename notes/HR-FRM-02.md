@@ -101,7 +101,7 @@ Jumlah USULAN: 17 butir. Label "(USULAN)" tercetak 17 kali di dokumen, termasuk 
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Tingkatan jabatan belum bernilai: Tabel 1 SNX-HR-FRM-01 kosong dan garis lapor JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 masih menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-04). Sasaran peserta berdasarkan tingkatan baru bisa diisi sesudah itu | Aziz, lalu owner untuk garis lapor |
+| 1 | Tingkatan jabatan belum bernilai: Tabel 1 SNX-HR-FRM-01 kosong dan garis lapor JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 masih menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-04). Sasaran peserta berdasarkan tingkatan baru bisa diisi sesudah itu | Aziz, lalu owner untuk garis lapor; diubah W9: JA-03 dan JA-04 kini dua garis tegas ke Direktur dan Direktur Utama (LEAD G-3 A3), tidak menunggu; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu (A4) |
 | 2 | Isi Identitas Rencana, Tabel 1, dan Tabel 2 kosong dan menunggu keputusan HR Manager. Tidak ada sumber yang menyebut pelatihan, jadwal, atau sasaran SINUX | Aziz |
 | 3 | SOP Training & Development belum terlihat sebagai berkas (checklist baris 5 tanpa tautan; worklist HOLD-T3 mencatat "tim menandai ada"). Form ini menyebutnya "dalam peninjauan". Periksa ulang saat berkas terlihat dan selaraskan dasar kebutuhan di butir 4.4 | Aziz; LEAD untuk status HOLD |
 | 4 | Penyetuju rencana tiap tahun: blok Approved By berisi Direktur Utama (template, D2). Belum diputus apakah tiap salinan tahunan perlu tanda tangan Direktur Utama atau cukup HR Manager | Owner atau Samuel |
@@ -112,8 +112,8 @@ Jumlah USULAN: 17 butir. Label "(USULAN)" tercetak 17 kali di dokumen, termasuk 
 | 9 | Persyaratan kontrak pelanggan yang mewajibkan pelatihan atau sertifikasi tertentu: tidak ada sumber kontrak mana | Aziz bersama Fani untuk jabatan Operation |
 | 10 | Rujukan SNX-HR-SOP-10, SNX-HR-SOP-12, dan SNX-HR-FRM-01 cocok dengan isi spec saat ini; periksa ulang bila salah satunya berubah. Kedua SOP menyebut form ini "dalam pengerjaan" | LEAD |
 | 11 | Delapan jabatan Divisi Operation masih USULAN tanpa pemegang (HR-ORG-01 K-10) dan dikecualikan dari Tabel 2. Baris ditambah sesudah jabatan disahkan | Owner |
-| 12 | data_conflicts yang konfirmasinya belum selesai dan relevan: jabatan Aziz "HR Manager" (konfirmasi: owner atau Aziz) dan ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel). Dipakai sesuai kolom "pakai", tidak dipilih ulang | Owner |
-| 13 | process_owner "HR Manager" mengikuti aturan dokumen tanpa sumber (jabatan reviewer departemen), status USULAN di defaults | Aziz |
+| 12 | data_conflicts yang konfirmasinya belum selesai dan relevan: jabatan Aziz "HR Manager" (konfirmasi: owner atau Aziz) dan ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel). Dipakai sesuai kolom "pakai", tidak dipilih ulang | Owner; ditutup W9: jabatan Aziz HR Lead dan ejaan Kristanto berstatus selesai (defaults v22) |
+| 13 | process_owner "HR Manager" mengikuti aturan dokumen tanpa sumber (jabatan reviewer departemen), status USULAN di defaults | Aziz; ditutup W9: process_owner kini HR Lead (defaults v22) |
 
 ## Penanganan cacat context/audit
 
@@ -163,3 +163,19 @@ Dasar: /tmp/claude-0/prompts/HR-FRM-02.sweep.txt; temuan pemeriksa di qa/HR-FRM-
 | 2. Rujukan dokumen FAT bernomor (SNX-FAT-SOP-06, SNX-FAT-REG-01, SNX-FAT-FRM-02) | Tidak ada rujukan ke dokumen FAT di badan dokumen. Satu-satunya "dalam peninjauan" dan "belum bernomor" adalah SOP Training & Development (dokumen HR, bukan FAT); "Accounting & Tax" adalah nama jabatan JA-11 | Tidak diubah. Butir tidak berlaku untuk form ini |
 
 Uji sesudah sweep: render_sop.py lalu lint_doc.py generic = "pass": true (satu warn, 17 label USULAN); validate.py skill docx = "All validations PASSED!"; blankscan.py = "ok 10 HR-FRM-02.docx []".
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 | Process Owner, Reviewed, butir 4.2 dan 4.9, bagian Peran, butir 7.4 sampai 7.11, Identitas Rencana, Tabel 2 JA-14, Rekaman, Kesimpulan, Dokumen Terkait SOP-12 | HR Manager | HR Lead |
+| 5 | Dokumen Terkait SNX-HR-SOP-10 | Promotion: menurut dokumen itu, HR Manager mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9) (USULAN). | Promotion: menurut bagian 9 dokumen itu (baris Keputusan menyetujui dengan syarat), HR Lead mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9 form ini) (USULAN). |
+
+- SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan (kolom Tingkatan di Tabel 2 dikosongkan menurut butir 4.2).
+- A3: dokumen hanya mendaftar JA-03 dan JA-04 sebagai baris Tabel 2; tidak ada garis lapor atau tingkatan yang dihitung. Tidak ada perubahan.
+- B4: "SOP Training & Development, dalam peninjauan" sudah seragam di Ruang Lingkup dan Dokumen Terkait; tidak diubah. Rujukan ke SNX-HR-SOP-10 bagian 9 dicek terhadap kerangka: baris Keputusan menyetujui dengan syarat ada dan memuat pencatatan ke SNX-HR-FRM-02. Rujukan "butir 4.4 dan 4.9" di baris SNX-HR-SOP-12 adalah butir form ini; SNX-HR-SOP-12 butir 4.3 dan 6.5 memuat pencatatan ke SNX-HR-FRM-02, jadi baris itu tidak diubah selain jabatan.
+
+Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
+- ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
+- ditutup W9: konfirmasi jabatan Aziz (HR Lead) dan ejaan Samuel Kristanto Utomo berstatus selesai di defaults v22.
+- diubah W9: garis lapor JA-03 dan JA-04 sudah diputus owner; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu konfirmasi.
