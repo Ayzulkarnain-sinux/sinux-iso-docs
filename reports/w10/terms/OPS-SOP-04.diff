@@ -1,0 +1,193 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-SOP-04: 48 teks berubah. Basis bed1bb6.
+
+@@ .definitions[1][1]
+- Pengakuan pertama ke pelanggan bahwa tiket diterima dan sedang ditangani.
++ Pengakuan pertama ke pelanggan bahwa ticket diterima dan sedang ditangani.
+
+@@ .definitions[4][1]
+- Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO sesudah sebutan ini.
++ Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO setelah sebutan ini.
+
+@@ .definitions[11][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket.
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket.
+
+@@ .definitions[17][1]
+- Akar masalah dari satu atau beberapa insiden, ditangani melalui RCA.
++ Root cause dari satu atau beberapa insiden, ditangani melalui RCA.
+
+@@ .definitions[18][1]
+- Root cause analysis: analisis akar masalah sebuah insiden, ditulis di SNX-OPS-FRM-10.
++ Root cause analysis: analisis root cause sebuah insiden, ditulis di SNX-OPS-FRM-10.
+
+@@ .definitions[19][1]
+- SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal.
++ SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal.
+
+@@ .definitions[21][1]
+- Tingkat prioritas tiket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah.
++ Tingkat prioritas ticket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah.
+
+@@ .definitions[25][0]
+- Tindakan korektif
++ Corrective action
+
+@@ .definitions[25][1]
+- Tindakan menghilangkan akar masalah supaya insiden tidak terulang.
++ Tindakan menghilangkan root cause supaya insiden tidak terulang.
+
+@@ .definitions[28][1]
+- Pemulihan sementara sebelum akar masalah diperbaiki.
++ Pemulihan sementara sebelum root cause diperbaiki.
+
+@@ .definitions[29][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[1]
+- Output yang tidak sesuai (ISO 9001:2015 8.7): penurunan mutu layanan diperlakukan sebagai insiden dan ditangani lewat butir 6.1 sampai 6.4.
++ Output yang tidak sesuai (ISO 9001:2015 8.7): penurunan mutu layanan diperlakukan sebagai insiden dan ditangani melalui butir 6.1 sampai 6.4.
+
+@@ .policy[2]
+- Tindakan korektif (ISO 9001:2015 10.2): insiden P1 dan P2 wajib RCA dengan SNX-OPS-FRM-10. Insiden berulang diperlakukan sebagai problem dan wajib RCA walau severity rendah. Tindakan korektif dicatat dengan pemilik dan tenggat, lalu dipantau sampai efektif (butir 6.5).
++ Corrective action (ISO 9001:2015 10.2): insiden P1 dan P2 wajib RCA dengan SNX-OPS-FRM-10. Insiden berulang diperlakukan sebagai problem dan wajib RCA walau severity rendah. Corrective action dicatat dengan pemilik dan tenggat, lalu dipantau sampai efektif (butir 6.5).
+
+@@ .roles[0][1]
+- Saat on-duty: mendeteksi, mencatat, melakukan triage, menangani, berkomunikasi dengan pelanggan, dan menutup tiket.
++ Saat on-duty: mendeteksi, mencatat, melakukan triage, menangani, berkomunikasi dengan pelanggan, dan menutup ticket.
+
+@@ .roles[0][2]
+- Menetapkan severity dan kelas triage; menjalankan blok ukur read-only; menutup tiket sesudah pelanggan mengonfirmasi pemulihan; mengeskalasi insiden menurut butir 6.6.
++ Menetapkan severity dan kelas triage; menjalankan blok ukur read-only; menutup ticket setelah pelanggan mengonfirmasi pemulihan; mengeskalasi insiden menurut butir 6.6.
+
+@@ .roles[1][2]
+- Menerima eskalasi dari NOC Engineer; memberi tahu COO dan Direktur Utama untuk P1; menetapkan insiden berulang sebagai problem; mencatat tindakan korektif.
++ Menerima eskalasi dari NOC Engineer; memberi tahu COO dan Direktur Utama untuk P1; menetapkan insiden berulang sebagai problem; mencatat corrective action.
+
+@@ .roles[3][2]
+- Memanggil personel off-duty; menyetujui dan mengirim RCA P1 dan P2; memantau tindakan korektif sampai efektif.
++ Memanggil personel off-duty; menyetujui dan mengirim RCA P1 dan P2; memantau corrective action sampai efektif.
+
+@@ .procedures[0].intro[1]
+- Laporan pelanggan masuk lewat Zammad (WhatsApp, telepon, email). Laporan GMF dan internal masuk lewat Service Hub (USULAN: batas generalist menunggu owner).
++ Laporan pelanggan masuk melalui Zammad (WhatsApp, telepon, email). Laporan GMF dan internal masuk melalui Service Hub (USULAN: batas generalist menunggu owner).
+
+@@ .procedures[0].steps[2][0]
+- Buat tiket di Zammad atau Service Hub sesuai kanal laporan, berisi pelanggan, layanan, waktu mulai, gejala, dan bukti awal, dalam batas waktu bagian 8.
++ Buat ticket di Zammad atau Service Hub sesuai kanal laporan, berisi pelanggan, layanan, waktu mulai, gejala, dan bukti awal, dalam batas waktu bagian 8.
+
+@@ .procedures[0].steps[2][2]
+- Tiket insiden
++ Ticket insiden
+
+@@ .procedures[0].steps[3][0]
+- Catat tiket di SNX-OPS-FRM-08.
++ Catat ticket di SNX-OPS-FRM-08.
+
+@@ .procedures[0].steps[3][2]
+- Baris tiket di SNX-OPS-FRM-08
++ Baris ticket di SNX-OPS-FRM-08
+
+@@ .procedures[1].steps[0][0]
+- Akui ke pelanggan lewat kanal pelanggan melapor: tiket diterima, nomor tiket, dan sedang dicek, sesuai target Ack di bagian 8.
++ Akui ke pelanggan melalui kanal pelanggan melapor: ticket diterima, nomor ticket, dan sedang dicek, sesuai target Ack di bagian 8.
+
+@@ .procedures[1].steps[2][2]
+- Severity di tiket dan SNX-OPS-FRM-08
++ Severity di ticket dan SNX-OPS-FRM-08
+
+@@ .procedures[2].steps[0][0]
+- Diagnosa dengan blok ukur read-only dan bedakan gejala dari akar masalah.
++ Diagnosa dengan blok ukur read-only dan bedakan gejala dari root cause.
+
+@@ .procedures[2].steps[0][2]
+- Gejala dan akar masalah (bila sudah diketahui)
++ Gejala dan root cause (bila sudah diketahui)
+
+@@ .procedures[2].steps[1][0]
+- Kirim update berkala ke pelanggan lewat kanal pelanggan melapor: kondisi terkini, langkah berikutnya, dan estimasi bila ada, sesuai frekuensi di bagian 8.
++ Kirim update berkala ke pelanggan melalui kanal pelanggan melapor: kondisi terkini, langkah berikutnya, dan estimasi bila ada, sesuai frekuensi di bagian 8.
+
+@@ .procedures[2].steps[3][0]
+- Bila pemulihan mengubah production, ajukan change lewat SNX-OPS-SOP-02; untuk P1 boleh sebagai change Emergency.
++ Bila pemulihan mengubah production, ajukan change melalui SNX-OPS-SOP-02; untuk P1 boleh sebagai change Emergency.
+
+@@ .procedures[3].steps[2][0]
+- Kirim info pulih ke pelanggan lewat kanal pelanggan melapor: waktu pulih dan ringkasan tindakan.
++ Kirim info pulih ke pelanggan melalui kanal pelanggan melapor: waktu pulih dan ringkasan tindakan.
+
+@@ .procedures[3].steps[4][0]
+- Tutup tiket dengan ringkasan gejala, akar masalah (bila sudah diketahui), tindakan, dan waktu pulih.
++ Tutup ticket dengan ringkasan gejala, root cause (bila sudah diketahui), tindakan, dan waktu pulih.
+
+@@ .procedures[3].steps[4][2]
+- Tiket ditutup
++ Ticket ditutup
+
+@@ .procedures[3].steps[5][2]
+- Baris tiket di SNX-OPS-FRM-08 lengkap
++ Baris ticket di SNX-OPS-FRM-08 lengkap
+
+@@ .procedures[4].steps[4][0]
+- Kirim RCA insiden P1 dan P2 ke pelanggan via email resmi: kronologi, akar masalah, dan tindakan korektif, dalam batas waktu bagian 8.
++ Kirim RCA insiden P1 dan P2 ke pelanggan via email resmi: kronologi, root cause, dan corrective action, dalam batas waktu bagian 8.
+
+@@ .procedures[4].steps[6][0]
+- Catat tindakan korektif dengan pemilik dan tenggat.
++ Catat corrective action dengan pemilik dan tenggat.
+
+@@ .procedures[4].steps[7][0]
+- Pantau tindakan korektif sampai efektif.
++ Pantau corrective action sampai efektif.
+
+@@ .procedures[5].steps[6][0]
+- Eskalasi masalah infra Nusagrid backend (hypervisor, console, node, billing sistem) ke penyedia infrastruktur Nusagrid (Maxcloud atau Awandata) lewat grup Nusagrid.
++ Eskalasi masalah infra Nusagrid backend (hypervisor, console, node, billing sistem) ke penyedia infrastruktur Nusagrid (Maxcloud atau Awandata) melalui grup Nusagrid.
+
+@@ .flow.nodes.c
+- Buat tiket dan catat / di SNX-OPS-FRM-08
++ Buat ticket dan catat / di SNX-OPS-FRM-08
+
+@@ .flow.nodes.k
+- Verifikasi, konfirmasi / pelanggan, tutup tiket
++ Verifikasi, konfirmasi / pelanggan, tutup ticket
+
+@@ .flow.nodes.m
+- RCA dan tindakan korektif / SNX-OPS-FRM-10
++ RCA dan corrective action / SNX-OPS-FRM-10
+
+@@ .sla[0][0]
+- Buat tiket sesudah alert terkonfirmasi
++ Buat ticket setelah alert terkonfirmasi
+
+@@ .sla[0][2]
+- Paling lambat 10 menit sesudah konfirmasi
++ Paling lambat 10 menit setelah konfirmasi
+
+@@ .sla[9][0]
+- Indikator: tiket P1 dan P2 di-ack dalam target
++ Indikator: ticket P1 dan P2 di-ack dalam target
+
+@@ .sla[12][0]
+- Indikator: tindakan korektif selesai sesuai tenggat
++ Indikator: corrective action selesai sesuai tenggat
+
+@@ .conclusion[0]
+- Lead NOC memantau kepatuhan lewat empat indikator kinerja di bagian 8 dan, sebagai pemilik SOP, meninjau dokumen ini setiap tahun.
++ Lead NOC memantau kepatuhan melalui empat indikator kinerja di bagian 8 dan, sebagai pemilik SOP, meninjau dokumen ini setiap tahun.
+
+@@ .related_documents[3][1]
+- Technical Ticket / Incident Register; rekap tiket, waktu Ack dan pulih, status SLA, dan sheet Target Severity.
++ Technical Ticket / Incident Register; rekap ticket, waktu Ack dan pulih, status SLA, dan sheet Target Severity.
+
+@@ .related_documents[4][1]
+- Root Cause Analysis & Corrective Action Report; form RCA dan tindakan korektif.
++ Root Cause Analysis & Corrective Action Report; form RCA dan corrective action.
+
+@@ .records[0][1]
+- Folder Drive Operation (USULAN); tiket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.
++ Folder Drive Operation (USULAN); ticket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.
+
+@@ .iso_refs.ISO 9001:2015
+- 8.5.1 (Pengendalian produksi dan penyediaan jasa), 8.7 (Pengendalian output yang tidak sesuai), 10.2 (Ketidaksesuaian dan tindakan korektif).
++ 8.5.1 (Pengendalian produksi dan penyediaan jasa), 8.7 (Pengendalian output yang tidak sesuai), 10.2 (Ketidaksesuaian dan corrective action).

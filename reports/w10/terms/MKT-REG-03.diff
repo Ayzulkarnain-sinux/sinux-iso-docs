@@ -1,0 +1,61 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), MKT-REG-03: 15 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[2].table.rows[0][0]
+- Lead yang Business Development peroleh sendiri lewat prospecting
++ Lead yang Business Development peroleh sendiri melalui prospecting
+
+@@ .sections[1].blocks[2].table.rows[1][0]
+- Proses penjualan sesudah serah terima lead: qualification, discovery meeting, proposal, negosiasi, closing, dan handover proyek ke Delivery
++ Proses penjualan setelah serah terima lead: qualification, discovery meeting, proposal, negosiasi, closing, dan handover proyek ke Delivery
+
+@@ .sections[1].blocks[2].table.rows[2][1]
+- Menjadi lingkup SNX-MKT-REG-02. Register ini hanya merujuk nama Aktivitas di sana lewat kolom Campaign Asal.
++ Menjadi lingkup SNX-MKT-REG-02. Register ini hanya merujuk nama Aktivitas di sana melalui kolom Campaign Asal.
+
+@@ .sections[1].blocks[2].table.rows[4][0]
+- Rencana pemasaran dan tinjauan kinerja marketing: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif
++ Rencana pemasaran dan review kinerja marketing: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan corrective action
+
+@@ .sections[1].blocks[2].table.rows[4][1]
+- Menjadi lingkup SNX-MKT-RPT-01. Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-02. Tabel 3 dan Tabel 4 menjadi data masukan tinjauan itu.
++ Menjadi lingkup SNX-MKT-RPT-01. Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-02. Tabel 3 dan Tabel 4 menjadi data masukan review itu.
+
+@@ .sections[3].blocks[15].p
+- 4.16 Brand & Marketing menyimpan register di lokasi yang tertulis pada tabel Rekaman (USULAN).
++ 4.16 Brand & Marketing menyimpan register di lokasi yang tertulis pada tabel Record (USULAN).
+
+@@ .sections[4].blocks[2].p
+- Direktur Utama menyetujui register ini lewat blok Approval pada halaman depan.
++ Direktur Utama menyetujui register ini melalui blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[5].p
+- 6.6 Brand & Marketing menulis nomor atau nama catatan lead di CRM pada kolom Rujukan CRM, sesudah Business Development mencatat lead itu (butir 4.4).
++ 6.6 Brand & Marketing menulis nomor atau nama catatan lead di CRM pada kolom Rujukan CRM, setelah Business Development mencatat lead itu (butir 4.4).
+
+@@ .sections[5].blocks[6].p
+- 6.7 Brand & Marketing menulis Sales Stage lead di kolom Status Qualification Tabel 2, sesudah Business Development menyampaikannya (butir 4.6 dan 4.7).
++ 6.7 Brand & Marketing menulis Sales Stage lead di kolom Status Qualification Tabel 2, setelah Business Development menyampaikannya (butir 4.6 dan 4.7).
+
+@@ .sections[5].blocks[12].p
+- 6.13 Brand & Marketing menulis satu baris di Tabel 4 untuk setiap periode, sesudah Tabel 3 periode itu terisi (butir 4.10 dan 4.12).
++ 6.13 Brand & Marketing menulis satu baris di Tabel 4 untuk setiap periode, setelah Tabel 3 periode itu terisi (butir 4.10 dan 4.12).
+
+@@ .sections[5].blocks[16].p
+- 6.17 Brand & Marketing menulis tanggal VP Commercial meninjau Tabel 3 dan Tabel 4 di kolom Tanggal Tinjauan VP Commercial (butir 4.11).
++ 6.17 Brand & Marketing menulis tanggal VP Commercial meninjau Tabel 3 dan Tabel 4 di kolom Tanggal Review VP Commercial (butir 4.11).
+
+@@ .sections[6].blocks[8].table.header[5]
+- Tanggal Tinjauan VP Commercial
++ Tanggal Review VP Commercial
+
+@@ .sections[7].blocks[2].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[8].blocks[0].table.rows[7][1]
+- Marketing Planning & Performance Review. Rencana pemasaran dan tinjauan kinerja marketing, yang Brand & Marketing isi dari register ini dan dari SNX-MKT-REG-02.
++ Marketing Planning & Performance Review. Rencana pemasaran dan review kinerja marketing, yang Brand & Marketing isi dari register ini dan dari SNX-MKT-REG-02.
+
+@@ .sections[9].blocks[0].p
+- Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).
++ Register ini berstatus Draft dan baru dipakai setelah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).

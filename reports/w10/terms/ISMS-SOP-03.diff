@@ -1,0 +1,105 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-SOP-03: 26 teks berubah. Basis bed1bb6.
+
+@@ .definitions[15][0]
+- Tiket P2
++ Ticket P2
+
+@@ .definitions[15][1]
+- Tiket dengan severity P2 (Tinggi) menurut SNX-OPS-SOP-04.
++ Ticket dengan severity P2 (Tinggi) menurut SNX-OPS-SOP-04.
+
+@@ .definitions[20][1]
+- Zammad, sistem tiket Divisi Operation, dan Service Hub (GLPI), sistem tiket untuk generalist.
++ Zammad, sistem ticket Divisi Operation, dan Service Hub (GLPI), sistem ticket untuk generalist.
+
+@@ .definitions[21][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket (SNX-HR-ORG-01).
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket (SNX-HR-ORG-01).
+
+@@ .policy[0]
+- Backup dianggap ada hanya bila restore-nya terbukti lewat uji restore (Annex A 8.13). Frekuensi uji ada di bagian 8.
++ Backup dianggap ada hanya bila restore-nya terbukti melalui uji restore (Annex A 8.13). Frekuensi uji ada di bagian 8.
+
+@@ .roles[1][1]
+- Memantau job, menangani kegagalan, melaksanakan restore dan uji restore, mengisi log. Mendaftarkan job dan sistem sumbernya. Mencatat permintaan restore sebagai tiket. Mengekspor atau menghapus backup pelanggan di platform backup saat offboarding (USULAN). Memusnahkan media backup fisik yang tidak terpakai (USULAN).
++ Memantau job, menangani kegagalan, melaksanakan restore dan uji restore, mengisi log. Mendaftarkan job dan sistem sumbernya. Mencatat permintaan restore sebagai ticket. Mengekspor atau menghapus backup pelanggan di platform backup saat offboarding (USULAN). Memusnahkan media backup fisik yang tidak terpakai (USULAN).
+
+@@ .procedures[1].steps[3][0]
+- Buat tiket P2 di Zammad bila job gagal 2 kali berturut-turut, sesuai SNX-OPS-SOP-04.
++ Buat ticket P2 di Zammad bila job gagal 2 kali berturut-turut, sesuai SNX-OPS-SOP-04.
+
+@@ .procedures[1].steps[3][2]
+- Tiket P2; Ref tiket di sheet Backup Log; baris di SNX-OPS-FRM-08
++ Ticket P2; Ref ticket di sheet Backup Log; baris di SNX-OPS-FRM-08
+
+@@ .procedures[1].steps[4][2]
+- Penggunaan kapasitas repository; dicatat di tiket bila di atas 80%
++ Penggunaan kapasitas repository; dicatat di ticket bila di atas 80%
+
+@@ .procedures[1].steps[5][2]
+- Tiket tindak lanjut kapasitas di Zammad (USULAN)
++ Ticket tindak lanjut kapasitas di Zammad (USULAN)
+
+@@ .procedures[2].steps[0][0]
+- Catat permintaan restore dari PIC pelanggan yang terdaftar sebagai tiket di Zammad.
++ Catat permintaan restore dari PIC pelanggan yang terdaftar sebagai ticket di Zammad.
+
+@@ .procedures[2].steps[0][2]
+- Tiket permintaan restore
++ Ticket permintaan restore
+
+@@ .procedures[2].steps[4][0]
+- Restore data ke lokasi produksi sesudah langkah 3 dan 4.
++ Restore data ke lokasi produksi setelah langkah 3 dan 4.
+
+@@ .procedures[3].steps[4][0]
+- Buat tiket P2 di Zammad untuk uji restore yang gagal.
++ Buat ticket P2 di Zammad untuk uji restore yang gagal.
+
+@@ .procedures[3].steps[4][2]
+- Tiket P2; baris di SNX-OPS-FRM-08
++ Ticket P2; baris di SNX-OPS-FRM-08
+
+@@ .procedures[3].steps[5][2]
+- Analisis akar di tiket P2
++ Analisis akar di ticket P2
+
+@@ .flow.nodes.d
+- Buat tiket P2 / di Zammad
++ Buat ticket P2 / di Zammad
+
+@@ .flow.nodes.t
+- Tiket P2, analisis akar, / perbaiki job
++ Ticket P2, analisis akar, / perbaiki job
+
+@@ .sla[2][0]
+- Tiket P2 untuk job gagal 2 kali berturut-turut
++ Ticket P2 untuk job gagal 2 kali berturut-turut
+
+@@ .conclusion[0]
+- Lead NOC memantau kepatuhan terhadap SOP ini lewat empat indikator di bagian 8 dan hasil uji restore di SNX-ISMS-FRM-01.
++ Lead NOC memantau kepatuhan terhadap SOP ini melalui empat indikator di bagian 8 dan hasil uji restore di SNX-ISMS-FRM-01.
+
+@@ .related_documents[10][1]
+- Technical Ticket / Incident Register; rekap tiket kegagalan backup dan permintaan restore.
++ Technical Ticket / Incident Register; rekap ticket kegagalan backup dan permintaan restore.
+
+@@ .records[1][0]
+- Tiket kegagalan backup dan permintaan restore (SNX-OPS-FRM-08)
++ Ticket kegagalan backup dan permintaan restore (SNX-OPS-FRM-08)
+
+@@ .records[1][1]
+- Tiket di Zammad, rekap di SNX-OPS-FRM-08 (Google Drive); pemilik Lead NOC
++ Ticket di Zammad, rekap di SNX-OPS-FRM-08 (Google Drive); pemilik Lead NOC
+
+@@ .records[5][1]
+- Dilampirkan di tiket permintaan restore di Zammad (USULAN); pemilik Lead NOC
++ Dilampirkan di ticket permintaan restore di Zammad (USULAN); pemilik Lead NOC
+
+@@ .records[5][2]
+- 3 tahun, sama dengan tiket permintaan restore
++ 3 tahun, sama dengan ticket permintaan restore
+
+@@ .records[7][0]
+- Tiket tindak lanjut kapasitas repository backup
++ Ticket tindak lanjut kapasitas repository backup

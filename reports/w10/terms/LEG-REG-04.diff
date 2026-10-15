@@ -1,0 +1,37 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-REG-04: 9 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[2].p
+- Hasil yang dijaga: tiap dokumen legal dan korporasi SINUX dapat ditemukan lewat satu daftar, dengan status dan masa berlaku yang mutakhir.
++ Hasil yang dijaga: tiap dokumen legal dan korporasi SINUX dapat ditemukan melalui satu daftar, dengan status dan masa berlaku yang mutakhir.
+
+@@ .sections[1].blocks[7].table.rows[3][1]
+- Dokumen sudah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi dipakai untuk tujuan operasional, tetapi masih disimpan sebagai rekaman historis atau bukti hukum.
++ Dokumen sudah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi dipakai untuk tujuan operasional, tetapi masih disimpan sebagai record historis atau bukti hukum.
+
+@@ .sections[2].blocks[3].p
+- 4. Staff Legal memeriksa register setiap bulan dan mengubah status dokumen yang Tanggal Berakhirnya sudah lewat menjadi Tidak Berlaku (SNX-LEG-SOP-03 butir 4.6; pemeriksaan bulanan atas Tanggal Berakhir: USULAN).
++ 4. Staff Legal memeriksa register setiap bulan dan mengubah status dokumen yang Tanggal Berakhirnya sudah melalui menjadi Tidak Berlaku (SNX-LEG-SOP-03 butir 4.6; pemeriksaan bulanan atas Tanggal Berakhir: USULAN).
+
+@@ .sections[2].blocks[7].p
+- 8. Staff Legal mengisi Tanggal Pemicu dan Tanggal Akhir Masa Retensi menurut tabel Rekaman di SNX-LEG-SOP-03 bagian 11, saat Tanggal Pemicu diketahui.
++ 8. Staff Legal mengisi Tanggal Pemicu dan Tanggal Akhir Masa Retensi menurut tabel Record di SNX-LEG-SOP-03 bagian 11, saat Tanggal Pemicu diketahui.
+
+@@ .sections[2].blocks[12].p
+- 13. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register setiap tahun, bersamaan dengan peninjauan dokumen ini (USULAN).
++ 13. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register setiap tahun, bersamaan dengan review dokumen ini (USULAN).
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[4].table.rows[4][1]
+- Annex A 5.33 Perlindungan rekaman
++ Annex A 5.33 Perlindungan record
+
+@@ .sections[7].blocks[4].table.rows[4][2]
+- Lokasi simpan, masa retensi, penanda Legal Hold, dan keputusan evaluasi tiap rekaman legal tercatat di register.
++ Lokasi simpan, masa retensi, penanda Legal Hold, dan keputusan evaluasi tiap record legal tercatat di register.
+
+@@ .sections[8].blocks[0].p
+- Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun. Staff Legal memeriksa isi register menurut Ketentuan butir 4.
++ Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun. Staff Legal memeriksa isi register menurut Ketentuan butir 4.

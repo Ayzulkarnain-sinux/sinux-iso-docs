@@ -1,0 +1,1243 @@
+{
+ "FAT-FRM-02": {
+  "file": "out/03_FAT/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Worksheet",
+    "header_row": 1,
+    "max_row": 5,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Document Name",
+     "Details",
+     "Access Holder",
+     "Doc Link"
+    ]
+   },
+   {
+    "sheet": "Platform Access",
+    "header_row": 1,
+    "max_row": 10,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Login Info",
+     "Website",
+     "Access Holder"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [],
+  "lain": []
+ },
+ "FAT-REG-01": {
+  "file": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "AR Aging",
+    "header_row": 4,
+    "max_row": 1000,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Client",
+     "Invoice Number",
+     "Invoice date",
+     "Due date",
+     "Date Paid ",
+     "DPP",
+     "PPN ",
+     "PPh 23/22",
+     "Amount (IDR)",
+     "Days overdue",
+     "Client type",
+     "Status",
+     "Action / notes"
+    ]
+   },
+   {
+    "sheet": "AP Aging",
+    "header_row": 5,
+    "max_row": 7,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Client",
+     "Invoice #",
+     "Invoice date",
+     "Due date",
+     "Date Paid ",
+     "DPP",
+     "PPN ",
+     "PPh 23",
+     "Amount (IDR)",
+     "Aging",
+     "Bucket",
+     "Client type",
+     "Status",
+     "Action / notes"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [],
+  "lain": []
+ },
+ "ISMS-FRM-01": {
+  "file": "out/08_ISMS/SNX-ISMS-FRM-01 Backup Log Restore Testing Records (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 6,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Jenis",
+     "YaTidak",
+     "Status",
+     "Shift",
+     "Restore",
+     "Hasil"
+    ]
+   },
+   {
+    "sheet": "Daftar Job",
+    "header_row": 4,
+    "max_row": 86,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "Job ID",
+     "Pelanggan atau internal",
+     "Sumber data atau sistem",
+     "Jenis",
+     "Jadwal",
+     "Retensi (hari)",
+     "Offsite",
+     "Encryption",
+     "RPO (jam)",
+     "RTO (jam)",
+     "Pemilik",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Backup Log",
+    "header_row": 4,
+    "max_row": 606,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "Tanggal",
+     "Shift",
+     "Job ID",
+     "Status",
+     "Ukuran (GB)",
+     "Durasi (menit)",
+     "Tindakan bila gagal",
+     "Ref tiket",
+     "Diperiksa oleh"
+    ]
+   },
+   {
+    "sheet": "Restore Record",
+    "header_row": 4,
+    "max_row": 155,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID restore",
+     "Tanggal",
+     "Jenis",
+     "Job ID",
+     "Data dipulihkan",
+     "Lokasi tujuan",
+     "Mulai",
+     "Selesai",
+     "Durasi (menit)",
+     "RTO (jam)",
+     "Dalam RTO",
+     "Integritas terverifikasi",
+     "Hasil",
+     "Disetujui oleh",
+     "Pelaksana",
+     "Bukti",
+     "Catatan"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    37
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Ringkasan",
+    "max_row": 11,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "ISMS-FRM-02": {
+  "file": "out/08_ISMS/SNX-ISMS-FRM-02 Security Incident Investigation Records (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 11,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Kategori",
+     "Severity",
+     "YaTidak",
+     "Status",
+     "Sumber"
+    ]
+   },
+   {
+    "sheet": "Register",
+    "header_row": 4,
+    "max_row": 155,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID insiden",
+     "Waktu deteksi",
+     "Sumber deteksi",
+     "Pelapor",
+     "Aset terdampak",
+     "Pelanggan",
+     "Kategori",
+     "Severity",
+     "CIA terdampak",
+     "Data pribadi terlibat",
+     "Uraian",
+     "Waktu containment",
+     "Waktu pulih",
+     "Jam ke containment",
+     "Jam ke pulih",
+     "Notifikasi PDP",
+     "Status",
+     "Tgl info pelanggan",
+     "No RCA",
+     "Ref risiko",
+     "Tindakan dan pembelajaran",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Chain of Custody",
+    "header_row": 4,
+    "max_row": 154,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID insiden",
+     "ID bukti",
+     "Uraian bukti",
+     "Sumber (host, path, sistem)",
+     "Hash SHA-256",
+     "Waktu",
+     "Tindakan",
+     "Diserahkan oleh",
+     "Diterima oleh",
+     "Lokasi simpan",
+     "Hash diverifikasi"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Investigasi",
+    "max_row": 22,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "ISMS-FRM-03": {
+  "file": "out/08_ISMS/SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 10,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Kategori",
+     "Kritikalitas",
+     "YaTidak",
+     "Skor"
+    ]
+   },
+   {
+    "sheet": "Daftar Supplier",
+    "header_row": 4,
+    "max_row": 52,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID",
+     "Nama supplier",
+     "Layanan yang dipasok",
+     "Kategori",
+     "Kritikalitas",
+     "Akses ke data atau sistem",
+     "Sertifikasi keamanan (misalnya ISO 27001, SOC 2)",
+     "Kontrak dan NDA memuat klausul keamanan",
+     "PIC internal",
+     "Evaluasi terakhir",
+     "Evaluasi berikutnya",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Evaluasi",
+    "header_row": 4,
+    "max_row": 104,
+    "freeze_bed1bb6": "D5",
+    "header": [
+     "Periode",
+     "ID supplier",
+     "Nama supplier",
+     "Kinerja dan availability sesuai SLA",
+     "Responsivitas dukungan dan eskalasi",
+     "Kontrol keamanan informasi",
+     "Kepatuhan kontrak, legal, dan pelindungan data",
+     "Insiden atau breach terkait supplier (5 = tidak ada)",
+     "Keberlanjutan dan kapasitas teknis",
+     "Nilai",
+     "Keputusan",
+     "Tindak lanjut",
+     "Evaluator",
+     "Disetujui"
+    ]
+   },
+   {
+    "sheet": "Kuesioner Keamanan",
+    "header_row": 4,
+    "max_row": 16,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No",
+     "Pertanyaan",
+     "Jawaban supplier",
+     "Bukti",
+     "Penilaian SINUX (Memadai, Kurang, Tidak ada)"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "ISMS-REG-01": {
+  "file": "out/08_ISMS/SNX-ISMS-REG-01 Information Asset Register (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 10,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Jenis",
+     "Klasifikasi",
+     "CIA",
+     "YaTidak",
+     "Status"
+    ]
+   },
+   {
+    "sheet": "Register Aset",
+    "header_row": 4,
+    "max_row": 216,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID aset",
+     "Nama aset",
+     "Jenis",
+     "Fungsi atau deskripsi",
+     "Pemilik",
+     "Pengguna atau pelanggan",
+     "Lokasi atau platform",
+     "Klasifikasi",
+     "C",
+     "I",
+     "A",
+     "Nilai aset",
+     "Kritikalitas",
+     "CI",
+     "Acuan baseline",
+     "Backup",
+     "Monitoring",
+     "Status",
+     "Tanggal masuk",
+     "Review terakhir",
+     "Review berikutnya",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Pemusnahan",
+    "header_row": 4,
+    "max_row": 44,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No BA",
+     "Tanggal",
+     "ID aset",
+     "Uraian aset dan media",
+     "Metode",
+     "Alasan",
+     "Pelaksana",
+     "Saksi",
+     "Bukti"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    39
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "ISMS-REG-02": {
+  "file": "out/08_ISMS/SNX-ISMS-REG-02 IS Risk Assessment Register (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 8,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Skala",
+     "Keputusan",
+     "CIA"
+    ]
+   },
+   {
+    "sheet": "Register Risiko",
+    "header_row": 4,
+    "max_row": 79,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID risiko",
+     "Aset atau kelompok aset",
+     "Threat",
+     "Vulnerability",
+     "CIA",
+     "Kontrol eksisting",
+     "L",
+     "I",
+     "Skor",
+     "Level",
+     "Pemilik risiko",
+     "Kontrol Annex A",
+     "Keputusan",
+     "Ref RTP",
+     "Tgl penilaian",
+     "Penilaian ulang",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Ringkasan",
+    "header_row": 3,
+    "max_row": 8,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Level",
+     "Jumlah risiko"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Matriks Risiko",
+    "max_row": 24,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "ISMS-REG-03": {
+  "file": "out/08_ISMS/SNX-ISMS-REG-03 IS Risk Treatment Plan (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 6,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Opsi",
+     "Status",
+     "Skala"
+    ]
+   },
+   {
+    "sheet": "Rencana Penanganan",
+    "header_row": 4,
+    "max_row": 59,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID RTP",
+     "Ref risiko",
+     "Risiko",
+     "Level awal",
+     "Opsi",
+     "Tindakan atau kontrol",
+     "Kontrol Annex A",
+     "Pemilik",
+     "Sumber daya atau biaya",
+     "Target selesai",
+     "Status",
+     "L residual",
+     "I residual",
+     "Skor residual",
+     "Level residual",
+     "Diterima oleh",
+     "Tgl penerimaan",
+     "Bukti penyelesaian"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "ISMS-REG-04": {
+  "file": "out/08_ISMS/SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 5,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Status personel",
+     "Level",
+     "MFA",
+     "Status akun",
+     "Keputusan"
+    ]
+   },
+   {
+    "sheet": "Register Akses",
+    "header_row": 4,
+    "max_row": 256,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID",
+     "Nama pengguna",
+     "Peran",
+     "Status personel",
+     "Sistem",
+     "Pelanggan",
+     "Level akses",
+     "Privileged",
+     "MFA",
+     "Ref tiket",
+     "Disetujui oleh",
+     "Tgl diberikan",
+     "Berlaku sampai",
+     "Tgl dicabut",
+     "Status akun",
+     "Review terakhir",
+     "Review berikutnya",
+     "Cek",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Review Periodik",
+    "header_row": 4,
+    "max_row": 205,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "Periode review",
+     "Sistem",
+     "ID akun",
+     "Nama pengguna",
+     "Level akses",
+     "Reviewer (pemilik sistem)",
+     "Keputusan",
+     "Alasan",
+     "Tgl review",
+     "Tindak lanjut selesai",
+     "Pelaksana tindak lanjut",
+     "Status"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    37
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Ringkasan",
+    "max_row": 9,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "OPS-FRM-01": {
+  "file": "out/07_Ops/SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 6,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Status tugas",
+     "Status G1",
+     "Status milestone"
+    ]
+   },
+   {
+    "sheet": "Checklist G1",
+    "header_row": 4,
+    "max_row": 14,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No",
+     "Kriteria",
+     "Status",
+     "Bukti atau lokasi dokumen",
+     "PIC",
+     "Tanggal"
+    ]
+   },
+   {
+    "sheet": "WBS dan Timeline",
+    "header_row": 4,
+    "max_row": 104,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID",
+     "Fase",
+     "Tugas",
+     "Pemilik",
+     "Mulai",
+     "Selesai",
+     "Durasi (hari)",
+     "Deliverable atau bukti",
+     "Bobot (%)",
+     "Progres",
+     "Status",
+     "Bergantung pada",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Milestone",
+    "header_row": 4,
+    "max_row": 24,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No",
+     "Milestone",
+     "Rencana",
+     "Aktual atau perkiraan",
+     "Deviasi (hari)",
+     "Status",
+     "Keterangan"
+    ]
+   },
+   {
+    "sheet": "Stakeholder",
+    "header_row": 4,
+    "max_row": 20,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "Nama",
+     "Organisasi",
+     "Peran di proyek",
+     "Kontak kerja",
+     "Kebutuhan informasi",
+     "Frekuensi",
+     "Kanal"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Project Charter",
+    "max_row": 22,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "OPS-FRM-02": {
+  "file": "out/07_Ops/SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 9,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Kategori",
+     "Respon",
+     "Status",
+     "Skala"
+    ]
+   },
+   {
+    "sheet": "Risk Register",
+    "header_row": 4,
+    "max_row": 66,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID",
+     "Tanggal",
+     "Kategori",
+     "Uraian risiko (sebab, kejadian, dampak)",
+     "Pemilik",
+     "L",
+     "I",
+     "Skor",
+     "Level",
+     "Respon",
+     "Rencana tindakan",
+     "Tenggat",
+     "Status",
+     "L residual",
+     "I residual",
+     "Skor residual",
+     "Level residual",
+     "Naik ke ISMS"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Matriks Risiko",
+    "max_row": 24,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "OPS-FRM-04": {
+  "file": "out/07_Ops/SNX-OPS-FRM-04 Change Request Approval Log (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 6,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Jenis",
+     "Approval",
+     "Ack",
+     "Hasil"
+    ]
+   },
+   {
+    "sheet": "Change Log",
+    "header_row": 4,
+    "max_row": 155,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No CR",
+     "Tanggal ajukan",
+     "Pengaju",
+     "Pelanggan / layanan",
+     "Sistem target",
+     "Jenis",
+     "Uraian perubahan",
+     "Dampak dan risiko",
+     "Backup (lokasi)",
+     "Rollback",
+     "Approver",
+     "Status approval",
+     "Tgl approval",
+     "Ack pelanggan",
+     "Jadwal eksekusi",
+     "Pelaksana",
+     "Hasil",
+     "Selesai",
+     "Go-gate",
+     "PIR wajib",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Ringkasan",
+    "header_row": 6,
+    "max_row": 13,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Jenis",
+     "Jumlah",
+     "Berhasil",
+     "Rollback",
+     "Gagal",
+     "Tanpa rollback darurat (%)"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    37
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "OPS-FRM-05": {
+  "file": "out/07_Ops/SNX-OPS-FRM-05 Testing UAT Quality Verification (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 8,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Kategori",
+     "Status uji",
+     "Severity defect",
+     "Status defect"
+    ]
+   },
+   {
+    "sheet": "Kasus Uji",
+    "header_row": 4,
+    "max_row": 87,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID",
+     "Kategori",
+     "Skenario",
+     "Langkah",
+     "Hasil diharapkan",
+     "Hasil aktual",
+     "Status",
+     "Defect ID",
+     "Penguji",
+     "Tanggal",
+     "Bukti"
+    ]
+   },
+   {
+    "sheet": "Defect",
+    "header_row": 4,
+    "max_row": 45,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "Defect ID",
+     "Kasus uji",
+     "Uraian",
+     "Severity",
+     "Ditemukan",
+     "PIC perbaikan",
+     "Status",
+     "Tanggal retest",
+     "Catatan"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    37
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Rencana Uji",
+    "max_row": 11,
+    "orientation": "portrait"
+   },
+   {
+    "sheet": "Ringkasan dan Persetujuan",
+    "max_row": 18,
+    "orientation": "portrait"
+   }
+  ]
+ },
+ "OPS-FRM-07": {
+  "file": "out/07_Ops/SNX-OPS-FRM-07 Maintenance Schedule Service Report (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 4,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Kode bulan",
+     "Jenis",
+     "Status SR"
+    ]
+   },
+   {
+    "sheet": "Jadwal PM",
+    "header_row": 5,
+    "max_row": 47,
+    "freeze_bed1bb6": "F6",
+    "header": [
+     "No",
+     "Aset atau layanan",
+     "Aktivitas",
+     "Frekuensi",
+     "PIC",
+     "Jan",
+     "Feb",
+     "Mar",
+     "Apr",
+     "Mei",
+     "Jun",
+     "Jul",
+     "Agu",
+     "Sep",
+     "Okt",
+     "Nov",
+     "Des",
+     "Rencana",
+     "Selesai",
+     "Kepatuhan"
+    ]
+   },
+   {
+    "sheet": "Service Report",
+    "header_row": 4,
+    "max_row": 155,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No SR",
+     "Tanggal",
+     "Jenis",
+     "Aset atau layanan",
+     "Pelanggan",
+     "Ref tiket atau CR",
+     "Aktivitas",
+     "Temuan",
+     "Tindakan",
+     "Status",
+     "Mulai",
+     "Selesai",
+     "Durasi (menit)",
+     "Pelaksana",
+     "Diverifikasi",
+     "Catatan"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    37
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "OPS-FRM-08": {
+  "file": "out/07_Ops/SNX-OPS-FRM-08 Technical Ticket Incident Register (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Target Severity",
+    "header_row": 4,
+    "max_row": 8,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Severity",
+     "Ack (menit)",
+     "Update tiap (menit)",
+     "Target pulih (jam), USULAN"
+    ]
+   },
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 10,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Ticketing system",
+     "Kanal",
+     "Kelas",
+     "Severity",
+     "Status"
+    ]
+   },
+   {
+    "sheet": "Register",
+    "header_row": 4,
+    "max_row": 305,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "No tiket",
+     "Ticketing system",
+     "Pelanggan",
+     "Layanan",
+     "Kanal",
+     "Kelas triage",
+     "Severity",
+     "Uraian",
+     "Dilaporkan",
+     "Ack",
+     "Pulih",
+     "Ditutup",
+     "PIC",
+     "Eskalasi ke",
+     "Akar ringkas",
+     "RCA wajib",
+     "No RCA",
+     "Status",
+     "Respon (menit)",
+     "Durasi pulih (jam)",
+     "Ack sesuai target",
+     "Pulih sesuai target",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Ringkasan",
+    "header_row": 6,
+    "max_row": 11,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Severity",
+     "Jumlah tiket",
+     "Ack sesuai target",
+     "Ack sesuai target (%)",
+     "Pulih sesuai target",
+     "Pulih sesuai target (%)",
+     "RCA wajib tanpa nomor RCA"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    37
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "OPS-FRM-09": {
+  "file": "out/07_Ops/SNX-OPS-FRM-09 SLA Performance Monitoring Report (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "Daftar",
+    "header_row": 1,
+    "max_row": 8,
+    "freeze_bed1bb6": null,
+    "header": [
+     "Dihitung",
+     "Penyebab"
+    ]
+   },
+   {
+    "sheet": "Parameter SLA",
+    "header_row": 4,
+    "max_row": 46,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "ID",
+     "Pelanggan",
+     "Layanan",
+     "Target availability",
+     "Jam layanan",
+     "Pengecualian kontrak",
+     "Periode laporan",
+     "PIC penerima laporan",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Downtime Log",
+    "header_row": 4,
+    "max_row": 206,
+    "freeze_bed1bb6": "B5",
+    "header": [
+     "Tanggal",
+     "Pelanggan",
+     "Layanan",
+     "Mulai",
+     "Pulih",
+     "Durasi (menit)",
+     "Dihitung",
+     "Penyebab",
+     "Alasan pengecualian",
+     "Ref tiket atau CR",
+     "Catatan"
+    ]
+   },
+   {
+    "sheet": "Laporan Bulanan",
+    "header_row": 7,
+    "max_row": 50,
+    "freeze_bed1bb6": "C8",
+    "header": [
+     "Pelanggan",
+     "Layanan",
+     "Target",
+     "Downtime dihitung (menit)",
+     "Availability",
+     "Status",
+     "Anggaran downtime (menit)",
+     "Sisa anggaran (menit)",
+     "Tiket P1 dan P2",
+     "Di-ack sesuai target",
+     "Response SLA",
+     "Catatan dan tindakan"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": []
+ },
+ "OPS-RPT-01": {
+  "file": "out/07_Ops/SNX-OPS-RPT-01 Operations KPI Performance Report (Rev00 DRAFT).xlsx",
+  "data": [
+   {
+    "sheet": "KPI",
+    "header_row": 5,
+    "max_row": 24,
+    "freeze_bed1bb6": "G6",
+    "header": [
+     "No",
+     "Sub divisi",
+     "KPI",
+     "Arah",
+     "Target",
+     "Sumber",
+     "Jan",
+     "Feb",
+     "Mar",
+     "Apr",
+     "Mei",
+     "Jun",
+     "Jul",
+     "Agu",
+     "Sep",
+     "Okt",
+     "Nov",
+     "Des",
+     "Rata-rata YTD",
+     "Bulan terakhir",
+     "Status"
+    ]
+   }
+  ],
+  "kontrol": {
+   "sheet": "Kontrol Dokumen",
+   "rows": [
+    1,
+    38
+   ]
+  },
+  "gambar": [
+   "Alur Proses"
+  ],
+  "lain": [
+   {
+    "sheet": "Narasi Bulanan",
+    "max_row": 16,
+    "orientation": "portrait"
+   }
+  ]
+ }
+}

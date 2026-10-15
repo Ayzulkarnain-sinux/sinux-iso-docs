@@ -1,0 +1,101 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-SOP-05: 25 teks berubah. Basis bed1bb6.
+
+@@ .scope[1]
+- Dikecualikan dari SOP ini: layanan tanpa SLA tertulis, dan penanganan insiden yang menimbulkan downtime, yang diatur di SNX-OPS-SOP-04. SOP ini hanya memakai data tiket insiden untuk menghitung SLA.
++ Dikecualikan dari SOP ini: layanan tanpa SLA tertulis, dan penanganan insiden yang menimbulkan downtime, yang diatur di SNX-OPS-SOP-04. SOP ini hanya memakai data ticket insiden untuk menghitung SLA.
+
+@@ .definitions[1][1]
+- Pengakuan pertama ke pelanggan bahwa tiket diterima dan sedang ditangani.
++ Pengakuan pertama ke pelanggan bahwa ticket diterima dan sedang ditangani.
+
+@@ .definitions[8][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket.
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket.
+
+@@ .definitions[10][1]
+- Root cause analysis: analisis akar masalah sebuah breach atau insiden, ditulis di SNX-OPS-FRM-10.
++ Root cause analysis: analisis root cause sebuah breach atau insiden, ditulis di SNX-OPS-FRM-10.
+
+@@ .definitions[11][1]
+- Persentase tiket yang dipulihkan dalam target pemulihan kontrak.
++ Persentase ticket yang dipulihkan dalam target pemulihan kontrak.
+
+@@ .definitions[12][1]
+- Persentase tiket yang di-ack dalam target per severity.
++ Persentase ticket yang di-ack dalam target per severity.
+
+@@ .definitions[13][1]
+- SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal.
++ SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal.
+
+@@ .definitions[14][1]
+- Tingkat prioritas tiket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah. Kriteria tiap tingkat ada di SNX-OPS-SOP-04.
++ Tingkat prioritas ticket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah. Kriteria tiap tingkat ada di SNX-OPS-SOP-04.
+
+@@ .definitions[20][1]
+- Tindakan menghilangkan penyebab breach supaya tidak terulang. Padanannya di SNX-OPS-SOP-04 adalah tindakan korektif.
++ Tindakan menghilangkan penyebab breach supaya tidak terulang. Padanannya di SNX-OPS-SOP-04 adalah corrective action.
+
+@@ .definitions[22][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[1]
+- 4.2 Pengukuran (ISO 9001:2015 9.1.1): Lead NOC dan Service Delivery Manager mengukur availability, response SLA, dan resolution SLA setiap bulan dari data monitoring dan tiket (butir 6.2 dan 6.3).
++ 4.2 Pengukuran (ISO 9001:2015 9.1.1): Lead NOC dan Service Delivery Manager mengukur availability, response SLA, dan resolution SLA setiap bulan dari data monitoring dan ticket (butir 6.2 dan 6.3).
+
+@@ .roles[1][1]
+- Menyediakan data availability dan tiket, mencatat downtime, memvalidasi pengecualian downtime, dan memantau anggaran downtime. Menyusun RCA breach layanan NOC.
++ Menyediakan data availability dan ticket, mencatat downtime, memvalidasi pengecualian downtime, dan memantau anggaran downtime. Menyusun RCA breach layanan NOC.
+
+@@ .roles[1][2]
+- Menolak pengecualian downtime yang tidak punya bukti; memberi peringatan dini; meninjau ulang change non-darurat sesudah peringatan dini.
++ Menolak pengecualian downtime yang tidak punya bukti; memberi peringatan dini; meninjau ulang change non-darurat setelah peringatan dini.
+
+@@ .procedures[1].intro[0]
+- Tiket Ops, termasuk layanan Nusagrid, tercatat di Zammad. Tiket GMF dan internal tercatat di Service Hub (USULAN: batas generalist menunggu owner). Batas waktu pengumpulan data ada di bagian 8.
++ Ticket Ops, termasuk layanan Nusagrid, tercatat di Zammad. Ticket GMF dan internal tercatat di Service Hub (USULAN: batas generalist menunggu owner). Batas waktu pengumpulan data ada di bagian 8.
+
+@@ .procedures[1].steps[1][0]
+- Ambil data tiket dari SNX-OPS-FRM-08.
++ Ambil data ticket dari SNX-OPS-FRM-08.
+
+@@ .procedures[1].steps[1][2]
+- Data tiket
++ Data ticket
+
+@@ .procedures[2].steps[1][0]
+- Isi data respon tiket dari ringkasan SNX-OPS-FRM-08 ke sheet Laporan Bulanan.
++ Isi data respon ticket dari ringkasan SNX-OPS-FRM-08 ke sheet Laporan Bulanan.
+
+@@ .procedures[2].steps[1][2]
+- Data respon tiket di Laporan Bulanan
++ Data respon ticket di Laporan Bulanan
+
+@@ .procedures[3].steps[2][2]
+- Hasil tinjauan ulang change non-darurat
++ Hasil review ulang change non-darurat
+
+@@ .flow.nodes.b
+- Kumpulkan data monitoring / dan tiket (butir 6.2)
++ Kumpulkan data monitoring / dan ticket (butir 6.2)
+
+@@ .sla[3][0]
+- Pengumpulan data availability dan tiket
++ Pengumpulan data availability dan ticket
+
+@@ .conclusion[0]
+- Service Delivery Manager memantau kepatuhan terhadap SOP ini lewat tiga indikator kinerja di bagian 8.
++ Service Delivery Manager memantau kepatuhan terhadap SOP ini melalui tiga indikator kinerja di bagian 8.
+
+@@ .related_documents[2][1]
+- Technical Ticket / Incident Register; sumber data tiket dan ringkasan respon.
++ Technical Ticket / Incident Register; sumber data ticket dan ringkasan respon.
+
+@@ .records[1][1]
+- Folder Drive Operation (USULAN); tiket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.
++ Folder Drive Operation (USULAN); ticket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.
+
+@@ .iso_refs.ISO 9001:2015
+- 8.2.3 (Peninjauan persyaratan produk dan jasa), 9.1.1 (Pemantauan, pengukuran, analisis, dan evaluasi: umum), 9.1.2 (Kepuasan pelanggan).
++ 8.2.3 (Review persyaratan produk dan jasa), 9.1.1 (Pemantauan, pengukuran, analisis, dan evaluasi: umum), 9.1.2 (Kepuasan pelanggan).

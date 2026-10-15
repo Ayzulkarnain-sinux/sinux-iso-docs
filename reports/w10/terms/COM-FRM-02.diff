@@ -1,0 +1,173 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), COM-FRM-02: 43 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[0].p
+- Formulir ini memuat isi handover proyek dari Commercial ke tim pelaksana: scope final, quotation, PO dan kontrak, deliverable, jadwal, PIC, dependency, asumsi, risiko, dan komitmen kepada customer yang harus dipenuhi tim pelaksana.
++ Form ini memuat isi handover proyek dari Commercial ke tim pelaksana: scope final, quotation, PO dan kontrak, deliverable, jadwal, PIC, dependency, asumsi, risiko, dan komitmen kepada customer yang harus dipenuhi tim pelaksana.
+
+@@ .sections[1].blocks[0].p
+- Formulir ini mencakup setiap handover dari Commercial ke tim pelaksana sesudah closing (SNX-COM-SOP-01 butir 4.16). Satu formulir mencatat satu handover.
++ Form ini mencakup setiap handover dari Commercial ke tim pelaksana setelah closing (SNX-COM-SOP-01 butir 4.16). Satu form mencatat satu handover.
+
+@@ .sections[1].blocks[1].p
+- Business Development tidak memakai formulir ini untuk butir berikut (USULAN):
++ Business Development tidak memakai form ini untuk butir berikut (USULAN):
+
+@@ .sections[1].blocks[2].table.rows[0][1]
+- Dicatat di SNX-COM-FRM-01. Formulir ini dipakai sesudah closing.
++ Dicatat di SNX-COM-FRM-01. Form ini dipakai setelah closing.
+
+@@ .sections[1].blocks[2].table.rows[1][1]
+- Ada di SNX-COM-SOP-02. Formulir ini tidak memuat nilai harga.
++ Ada di SNX-COM-SOP-02. Form ini tidak memuat nilai harga.
+
+@@ .sections[1].blocks[2].table.rows[2][1]
+- Ada di SNX-OPS-SOP-01 dan sheet Checklist G1 di SNX-OPS-FRM-01. Formulir ini hanya mencatat hasilnya di Tabel 11.
++ Ada di SNX-OPS-SOP-01 dan sheet Checklist G1 di SNX-OPS-FRM-01. Form ini hanya mencatat hasilnya di Tabel 11.
+
+@@ .sections[1].blocks[2].table.rows[3][1]
+- Project Manager menyusunnya di SNX-OPS-FRM-01 dan SNX-OPS-FRM-02 sesudah gate G1.
++ Project Manager menyusunnya di SNX-OPS-FRM-01 dan SNX-OPS-FRM-02 setelah gate G1.
+
+@@ .sections[1].blocks[2].table.rows[4][1]
+- Ada di SNX-OPS-FRM-06. Formulir ini mencatat handover sebelum implementasi, bukan penyerahan hasil kerja.
++ Ada di SNX-OPS-FRM-06. Form ini mencatat handover sebelum implementasi, bukan penyerahan hasil kerja.
+
+@@ .sections[1].blocks[2].table.rows[5][1]
+- Ada di SNX-FAT-SOP-01. Formulir ini hanya mencatat PIC billing customer di Tabel 6.
++ Ada di SNX-FAT-SOP-01. Form ini hanya mencatat PIC billing customer di Tabel 6.
+
+@@ .sections[2].blocks[0].table.rows[5][1]
+- Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; sesudah penyebutan ini formulir ini memakai COO.
++ Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; setelah penyebutan ini form ini memakai COO.
+
+@@ .sections[2].blocks[0].table.rows[18][1]
+- Service Delivery Manager, Project Manager, dan peran Divisi Operation lain yang menjalankan proyek customer sesudah handover (USULAN).
++ Service Delivery Manager, Project Manager, dan peran Divisi Operation lain yang menjalankan proyek customer setelah handover (USULAN).
+
+@@ .sections[3].blocks[0].p
+- 4.1 Business Development mengisi Tabel 1 sampai Tabel 10 sesudah closing dan sebelum handover meeting, lalu mengisi Tabel 11 sesudah handover meeting. Dokumen closing sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16).
++ 4.1 Business Development mengisi Tabel 1 sampai Tabel 10 setelah closing dan sebelum handover meeting, lalu mengisi Tabel 11 setelah handover meeting. Dokumen closing sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16).
+
+@@ .sections[3].blocks[1].p
+- 4.2 Isi minimal paket handover menurut SNX-COM-SOP-01 butir 4.16 adalah Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person. Dalam formulir ini keenamnya ada di Tabel 1 (Customer Background), Tabel 3 dan Tabel 4 (Scope), Tabel 5 (Timeline), Tabel 6 (Contact Person), Tabel 9 (Risks), dan Tabel 10 (Commitment). Tabel 2, Tabel 7, dan Tabel 8 menambahkan dokumen dasar, dependency, dan asumsi.
++ 4.2 Isi minimal paket handover menurut SNX-COM-SOP-01 butir 4.16 adalah Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person. Dalam form ini keenamnya ada di Tabel 1 (Customer Background), Tabel 3 dan Tabel 4 (Scope), Tabel 5 (Timeline), Tabel 6 (Contact Person), Tabel 9 (Risks), dan Tabel 10 (Commitment). Tabel 2, Tabel 7, dan Tabel 8 menambahkan dokumen dasar, dependency, dan asumsi.
+
+@@ .sections[3].blocks[3].p
+- 4.4 Bila ada SNX-COM-FRM-01 yang terisi untuk order handover ini, Business Development memakai hasil kelompok Kesesuaian Scope dan Delivery Commitment di formulir itu sebagai bahan Tabel 4, 5, 7, 8, dan 10.
++ 4.4 Bila ada SNX-COM-FRM-01 yang terisi untuk order handover ini, Business Development memakai hasil kelompok Kesesuaian Scope dan Delivery Commitment di form itu sebagai bahan Tabel 4, 5, 7, 8, dan 10.
+
+@@ .sections[3].blocks[7].p
+- 4.8 Business Development tidak menulis kata sandi, PIN, token, atau kunci akses customer di formulir ini. Business Development menulis dependency akses sebagai kebutuhan, tanpa kredensialnya (POL-OPS-001 kebijakan P-03).
++ 4.8 Business Development tidak menulis kata sandi, PIN, token, atau kunci akses customer di form ini. Business Development menulis dependency akses sebagai kebutuhan, tanpa kredensialnya (POL-OPS-001 kebijakan P-03).
+
+@@ .sections[3].blocks[13].p
+- 4.14 Formulir kosong berklasifikasi INTERNAL. Formulir terisi memuat informasi customer dan kontrak, sehingga berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, mengikuti SNX-COM-SOP-01 butir 4.13).
++ 4.14 Form kosong berklasifikasi INTERNAL. Form terisi memuat informasi customer dan kontrak, sehingga berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, mengikuti SNX-COM-SOP-01 butir 4.13).
+
+@@ .sections[4].blocks[1].table.header[1]
+- Tugas pada formulir ini
++ Tugas pada form ini
+
+@@ .sections[4].blocks[1].table.header[2]
+- Wewenang pada formulir ini
++ Wewenang pada form ini
+
+@@ .sections[4].blocks[1].table.rows[0][1]
+- Mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (hasil handover meeting dan penolakan paket handover), serta melengkapi paket handover yang ditolak (butir 4.1 sampai 4.5, 4.10, 4.12). Memegang tugas Sales dan Sales Executive (SNX-COM-SOP-01, USULAN).
++ Mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 setelahnya (hasil handover meeting dan penolakan paket handover), serta melengkapi paket handover yang ditolak (butir 4.1 sampai 4.5, 4.10, 4.12). Memegang tugas Sales dan Sales Executive (SNX-COM-SOP-01, USULAN).
+
+@@ .sections[4].blocks[1].table.rows[1][1]
+- Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau formulir ini setiap tahun (USULAN). Pemilik formulir terisi (USULAN, bagian Rekaman) dan menetapkan lokasi rekamannya.
++ Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau form ini setiap tahun (USULAN). Pemilik form terisi (USULAN, bagian Record) dan menetapkan lokasi record-nya.
+
+@@ .sections[4].blocks[2].p
+- Direktur Utama menyetujui formulir ini lewat blok Approval pada halaman depan.
++ Direktur Utama menyetujui form ini melalui blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[0].p
+- Business Development mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (butir 4.1), menurut petunjuk berikut. Pemegang peran pada tiap baris Tabel 12 mengisi baris itu.
++ Business Development mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 setelahnya (butir 4.1), menurut petunjuk berikut. Pemegang peran pada tiap baris Tabel 12 mengisi baris itu.
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[1].table.rows[0][0]
+- Formulir ini setelah diisi: Tabel 1 sampai Tabel 12
++ Form ini setelah diisi: Tabel 1 sampai Tabel 12
+
+@@ .sections[7].blocks[1].table.rows[0][1]
+- Folder Google Drive Departemen Commercial (USULAN). Pencatat: Business Development. Pemilik formulir terisi: VP Commercial (USULAN). Klasifikasi menurut butir 4.14.
++ Folder Google Drive Departemen Commercial (USULAN). Pencatat: Business Development. Pemilik form terisi: VP Commercial (USULAN). Klasifikasi menurut butir 4.14.
+
+@@ .sections[7].blocks[1].table.rows[0][2]
+- Durasi kontrak + 3 tahun (USULAN). Angka berasal dari rekaman rencana proyek dan checklist G1 di SNX-OPS-SOP-01; perluasan ke formulir ini belum diputus.
++ Durasi kontrak + 3 tahun (USULAN). Angka berasal dari record rencana proyek dan checklist G1 di SNX-OPS-SOP-01; perluasan ke form ini belum diputus.
+
+@@ .sections[7].blocks[1].table.rows[1][1]
+- Lokasi dan pemilik belum ditetapkan (tabel rekaman SNX-COM-SOP-01).
++ Lokasi dan pemilik belum ditetapkan (tabel record SNX-COM-SOP-01).
+
+@@ .sections[7].blocks[1].table.rows[2][1]
+- SNX-OPS-FRM-01. Drive proyek; pemilik Project Manager (tabel rekaman SNX-OPS-SOP-01).
++ SNX-OPS-FRM-01. Drive proyek; pemilik Project Manager (tabel record SNX-OPS-SOP-01).
+
+@@ .sections[7].blocks[1].table.rows[2][2]
+- Durasi kontrak + 3 tahun (tabel rekaman SNX-OPS-SOP-01).
++ Durasi kontrak + 3 tahun (tabel record SNX-OPS-SOP-01).
+
+@@ .sections[7].blocks[4].table.header[2]
+- Hubungan dengan formulir ini
++ Hubungan dengan form ini
+
+@@ .sections[7].blocks[4].table.rows[0][2]
+- Tabel 6 memuat PIC dan kanal komunikasi resmi. Business Development menyampaikan isi formulir ke tim pelaksana di handover meeting (butir 4.10).
++ Tabel 6 memuat PIC dan kanal komunikasi resmi. Business Development menyampaikan isi form ke tim pelaksana di handover meeting (butir 4.10).
+
+@@ .sections[7].blocks[4].table.rows[1][2]
+- Tabel Rekaman memuat lokasi, pemilik, retensi, dan klasifikasi formulir terisi.
++ Tabel Record memuat lokasi, pemilik, retensi, dan klasifikasi form terisi.
+
+@@ .sections[7].blocks[4].table.rows[2][1]
+- 8.2.3 Tinjauan persyaratan untuk produk dan jasa
++ 8.2.3 Review persyaratan untuk produk dan jasa
+
+@@ .sections[7].blocks[4].table.rows[4][2]
+- Butir 4.14 memuat klasifikasi formulir kosong dan formulir terisi.
++ Butir 4.14 memuat klasifikasi form kosong dan form terisi.
+
+@@ .sections[7].blocks[4].table.rows[5][2]
+- Business Development memindahkan informasi customer ke tim pelaksana lewat formulir ini, dan butir 4.8 memuat larangan menulis kredensial di dalamnya.
++ Business Development memindahkan informasi customer ke tim pelaksana melalui form ini, dan butir 4.8 memuat larangan menulis kredensial di dalamnya.
+
+@@ .sections[7].blocks[4].table.rows[7][1]
+- Annex A 5.33 Perlindungan rekaman
++ Annex A 5.33 Perlindungan record
+
+@@ .sections[7].blocks[4].table.rows[7][2]
+- Tabel Rekaman memuat lokasi dan retensi rekaman formulir ini.
++ Tabel Record memuat lokasi dan retensi record form ini.
+
+@@ .sections[8].blocks[0].table.rows[1][1]
+- Sales Process: butir 4.8, 4.11, 4.13, 4.16, dan 4.19, serta tabel rekamannya, dirujuk formulir ini. Dokumen itu mengatur handover meeting dan penyerahan paket.
++ Sales Process: butir 4.8, 4.11, 4.13, 4.16, dan 4.19, serta tabel record-nya, dirujuk form ini. Dokumen itu mengatur handover meeting dan penyerahan paket.
+
+@@ .sections[8].blocks[0].table.rows[2][1]
+- Proposal, Quotation & Pricing Control: pengendalian proposal, quotation, harga, diskon, dan margin. Dikecualikan dari formulir ini.
++ Proposal, Quotation & Pricing Control: pengendalian proposal, quotation, harga, diskon, dan margin. Dikecualikan dari form ini.
+
+@@ .sections[8].blocks[0].table.rows[4][1]
+- Project Management & Delivery: butir 4.1 mengatur penerimaan paket handover oleh Service Delivery Manager. Tabel rekamannya memuat retensi rencana proyek.
++ Project Management & Delivery: butir 4.1 mengatur penerimaan paket handover oleh Service Delivery Manager. Tabel record-nya memuat retensi rencana proyek.
+
+@@ .sections[8].blocks[0].table.rows[7][1]
+- Project Handover / BAST & Closure Report: BAST, checklist G3, dan closure report. Judulnya mirip, tetapi dokumen itu mencatat penyerahan hasil kerja ke customer dan ke Operation. Dikecualikan dari formulir ini.
++ Project Handover / BAST & Closure Report: BAST, checklist G3, dan closure report. Judulnya mirip, tetapi dokumen itu mencatat penyerahan hasil kerja ke customer dan ke Operation. Dikecualikan dari form ini.
+
+@@ .sections[8].blocks[0].table.rows[8][1]
+- Billing & Invoicing: penagihan dan invoice sesudah closing. Dikecualikan dari formulir ini.
++ Billing & Invoicing: penagihan dan invoice setelah closing. Dikecualikan dari form ini.
+
+@@ .sections[9].blocks[0].p
+- Formulir ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval dan COO menetapkan struktur kolomnya. VP Commercial menetapkan lokasi rekaman dan meninjau formulir ini setiap tahun (USULAN).
++ Form ini berstatus Draft dan baru dipakai setelah Direktur Utama menandatangani blok Approval dan COO menetapkan struktur kolomnya. VP Commercial menetapkan lokasi record dan meninjau form ini setiap tahun (USULAN).

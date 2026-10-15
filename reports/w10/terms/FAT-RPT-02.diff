@@ -1,0 +1,157 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), FAT-RPT-02: 39 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[1].p
+- Dokumen ini memuat log sheet proses FAT yang bottleneck dan memerlukan support, beserta ketidaksesuaian dan tindakan korektif yang timbul dari bottleneck itu. Finance Staff mencatat tiap tahap proses FAT yang tertahan, support yang diperlukan, dan Pemberi support yang diminta.
++ Dokumen ini memuat log sheet proses FAT yang bottleneck dan memerlukan support, beserta ketidaksesuaian dan corrective action yang timbul dari bottleneck itu. Finance Staff mencatat tiap tahap proses FAT yang tertahan, support yang diperlukan, dan Pemberi support yang diminta.
+
+@@ .sections[0].blocks[2].p
+- Hasil yang dijaga: setiap bottleneck punya nomor catatan, support yang diminta, tanggal tahap berlanjut, dan status yang dapat ditelusuri, dan setiap ketidaksesuaian punya penyebab, tindakan korektif, Penanggung Jawab, dan hasil verifikasi efektivitas.
++ Hasil yang dijaga: setiap bottleneck punya nomor catatan, support yang diminta, tanggal tahap berlanjut, dan status yang dapat ditelusuri, dan setiap ketidaksesuaian punya penyebab, corrective action, Penanggung Jawab, dan hasil verifikasi efektivitas.
+
+@@ .sections[0].blocks[5].table.rows[1][1]
+- SOP Account Receivable & Collection, belum bernomor, dalam peninjauan
++ SOP Account Receivable & Collection, belum bernomor, dalam review
+
+@@ .sections[0].blocks[5].table.rows[2][1]
+- SOP Payment and Disbursement Approval, belum bernomor, dalam peninjauan
++ SOP Payment and Disbursement Approval, belum bernomor, dalam review
+
+@@ .sections[1].blocks[1].table.rows[8][1]
+- Sistem tiket SINUX Service Hub, dipakai untuk generalist.
++ Sistem ticket SINUX Service Hub, dipakai untuk generalist.
+
+@@ .sections[1].blocks[1].table.rows[11][1]
+- Orang yang menjalankan satu tindakan korektif sampai selesai.
++ Orang yang menjalankan satu corrective action sampai selesai.
+
+@@ .sections[1].blocks[1].table.rows[13][0]
+- Tindakan korektif
++ Corrective action
+
+@@ .sections[1].blocks[1].table.rows[15][1]
+- Pemeriksaan sesudah tindakan korektif selesai untuk melihat apakah ketidaksesuaian yang sama terulang.
++ Pemeriksaan setelah corrective action selesai untuk melihat apakah ketidaksesuaian yang sama terulang.
+
+@@ .sections[1].blocks[4].table.rows[0][1]
+- Support belum diterima, tahap belum berlanjut, atau tindakan korektif belum selesai.
++ Support belum diterima, tahap belum berlanjut, atau corrective action belum selesai.
+
+@@ .sections[1].blocks[4].table.rows[1][1]
+- Tahap sudah berlanjut dan tindakan korektif, bila ada, sudah selesai. Finance Lead belum memverifikasinya.
++ Tahap sudah berlanjut dan corrective action, bila ada, sudah selesai. Finance Lead belum memverifikasinya.
+
+@@ .sections[1].blocks[4].table.rows[2][1]
+- Finance Lead sudah memverifikasi bahwa tahap berjalan dan, bila ada ketidaksesuaian, tindakan korektif efektif. Tanggal Ditutup sudah diisi.
++ Finance Lead sudah memverifikasi bahwa tahap berjalan dan, bila ada ketidaksesuaian, corrective action efektif. Tanggal Ditutup sudah diisi.
+
+@@ .sections[2].blocks[3].p
+- 4. Bila Finance Staff meminta support lewat tiket, Finance Staff menulis nomor tiket GLPI di kolom Diminta kepada. FAT termasuk generalist, dan batas lingkup generalist belum dirinci pimpinan SINUX (USULAN).
++ 4. Bila Finance Staff meminta support melalui ticket, Finance Staff menulis nomor ticket GLPI di kolom Diminta kepada. FAT termasuk generalist, dan batas lingkup generalist belum dirinci pimpinan SINUX (USULAN).
+
+@@ .sections[2].blocks[7].p
+- 8. Bila hasilnya Ya, Finance Lead menetapkan penyebab, tindakan korektif, Penanggung Jawab, dan Target Selesai. Finance Staff menulisnya di baris bernomor sama di Tabel 3.
++ 8. Bila hasilnya Ya, Finance Lead menetapkan penyebab, corrective action, Penanggung Jawab, dan Target Selesai. Finance Staff menulisnya di baris bernomor sama di Tabel 3.
+
+@@ .sections[2].blocks[8].p
+- 9. Penanggung Jawab menjalankan tindakan korektif sampai selesai sebelum Target Selesai.
++ 9. Penanggung Jawab menjalankan corrective action sampai selesai sebelum Target Selesai.
+
+@@ .sections[2].blocks[9].p
+- 10. Finance Lead memverifikasi efektivitas tindakan korektif sesudah tindakan itu selesai. Finance Staff menulis hasilnya dan lokasi buktinya di kolom Hasil Verifikasi Efektivitas.
++ 10. Finance Lead memverifikasi efektivitas corrective action setelah tindakan itu selesai. Finance Staff menulis hasilnya dan lokasi buktinya di kolom Hasil Verifikasi Efektivitas.
+
+@@ .sections[2].blocks[10].p
+- 11. Finance Lead menetapkan status Ditutup bila tahap sudah berlanjut dan, untuk catatan dengan ketidaksesuaian, hasil verifikasi menyatakan tindakan korektif efektif. Finance Staff mengisi Status dan Tanggal Ditutup di Tabel 2.
++ 11. Finance Lead menetapkan status Ditutup bila tahap sudah berlanjut dan, untuk catatan dengan ketidaksesuaian, hasil verifikasi menyatakan corrective action efektif. Finance Staff mengisi Status dan Tanggal Ditutup di Tabel 2.
+
+@@ .sections[2].blocks[11].p
+- 12. Finance Lead meninjau semua catatan berstatus Terbuka dan Menunggu Verifikasi setiap bulan, selaras dengan evaluasi log ketidaksesuaian di SNX-FAT-SOP-01 butir 4.14 (USULAN). Finance Staff mengisi hasil tinjauan di Tabel 4.
++ 12. Finance Lead meninjau semua catatan berstatus Terbuka dan Menunggu Verifikasi setiap bulan, selaras dengan evaluasi log ketidaksesuaian di SNX-FAT-SOP-01 butir 4.14 (USULAN). Finance Staff mengisi hasil review di Tabel 4.
+
+@@ .sections[3].blocks[0].table.rows[1][1]
+- Pemilik dokumen ini (Ketentuan butir 15). Menentukan Pemberi support, menetapkan ketidaksesuaian, penyebab, tindakan korektif, Penanggung Jawab, dan Target Selesai, memverifikasi efektivitas, menetapkan status Ditutup, dan meninjau catatan setiap bulan (Ketentuan butir 2, 6, 8, 10, 11, dan 12). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).
++ Pemilik dokumen ini (Ketentuan butir 15). Menentukan Pemberi support, menetapkan ketidaksesuaian, penyebab, corrective action, Penanggung Jawab, dan Target Selesai, memverifikasi efektivitas, menetapkan status Ditutup, dan meninjau catatan setiap bulan (Ketentuan butir 2, 6, 8, 10, 11, dan 12). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).
+
+@@ .sections[3].blocks[0].table.rows[3][1]
+- Orang yang Finance Lead tunjuk untuk menjalankan satu tindakan korektif sampai selesai (Ketentuan butir 8 dan 9). Dapat Finance Staff, Finance Lead, atau Pemberi support.
++ Orang yang Finance Lead tunjuk untuk menjalankan satu corrective action sampai selesai (Ketentuan butir 8 dan 9). Dapat Finance Staff, Finance Lead, atau Pemberi support.
+
+@@ .sections[3].blocks[0].table.rows[3][2]
+- Hanya pada tindakan korektif yang Finance Lead tunjuk.
++ Hanya pada corrective action yang Finance Lead tunjuk.
+
+@@ .sections[4].blocks[1].p
+- 2. Tabel 1: Finance Staff menulis tanggal catatan dibuat di Tanggal Dicatat dan satu dari enam proses di bagian Ruang Lingkup di Proses FAT. Kolom Tahap yang Tertahan berisi nama tahap menurut prosedur proses itu, misalnya Review dan persetujuan pada SNX-FAT-SOP-05. Untuk proses yang prosedurnya dalam peninjauan, Finance Staff menulis nama tahap menurut pekerjaan yang tertahan.
++ 2. Tabel 1: Finance Staff menulis tanggal catatan dibuat di Tanggal Dicatat dan satu dari enam proses di bagian Ruang Lingkup di Proses FAT. Kolom Tahap yang Tertahan berisi nama tahap menurut prosedur proses itu, misalnya Review dan persetujuan pada SNX-FAT-SOP-05. Untuk proses yang prosedurnya dalam review, Finance Staff menulis nama tahap menurut pekerjaan yang tertahan.
+
+@@ .sections[4].blocks[2].p
+- 3. Uraian Bottleneck berisi apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, Finance Staff menulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Kolom Diminta kepada berisi nama dan jabatan Pemberi support, atau nomor tiket GLPI (Ketentuan butir 4).
++ 3. Uraian Bottleneck berisi apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, Finance Staff menulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Kolom Diminta kepada berisi nama dan jabatan Pemberi support, atau nomor ticket GLPI (Ketentuan butir 4).
+
+@@ .sections[4].blocks[6].p
+- 7. Tindakan Korektif berisi tindakan yang menghilangkan penyebab itu. Kolom Penanggung Jawab berisi nama dan jabatan, dan Target Selesai berisi tanggal. Di Hasil Verifikasi Efektivitas, Finance Staff menulis hasil verifikasi Finance Lead dan lokasi buktinya.
++ 7. Corrective Action berisi tindakan yang menghilangkan penyebab itu. Kolom Penanggung Jawab berisi nama dan jabatan, dan Target Selesai berisi tanggal. Di Hasil Verifikasi Efektivitas, Finance Staff menulis hasil verifikasi Finance Lead dan lokasi buktinya.
+
+@@ .sections[4].blocks[7].p
+- 8. Tabel 4: Finance Staff menulis bulan dan tahun di Bulan yang Ditinjau, dan nomor catatan berstatus Terbuka atau Menunggu Verifikasi pada tanggal tinjauan di Catatan yang Masih Terbuka. Hasil Tinjauan berisi keputusan Finance Lead atas catatan itu.
++ 8. Tabel 4: Finance Staff menulis bulan dan tahun di Bulan yang Ditinjau, dan nomor catatan berstatus Terbuka atau Menunggu Verifikasi pada tanggal review di Catatan yang Masih Terbuka. Hasil Review berisi keputusan Finance Lead atas catatan itu.
+
+@@ .sections[5].blocks[6].table.header[3]
+- Tindakan Korektif
++ Corrective Action
+
+@@ .sections[5].blocks[8].table.header[2]
+- Tanggal Tinjauan
++ Tanggal Review
+
+@@ .sections[5].blocks[8].table.header[4]
+- Hasil Tinjauan
++ Hasil Review
+
+@@ .sections[6].blocks[0].table.rows[4][1]
+- SOP Account Receivable & Collection. Dalam peninjauan. Salah satu dari enam proses FAT di bagian Ruang Lingkup.
++ SOP Account Receivable & Collection. Dalam review. Salah satu dari enam proses FAT di bagian Ruang Lingkup.
+
+@@ .sections[6].blocks[0].table.rows[5][1]
+- SOP Payment and Disbursement Approval. Dalam peninjauan. Salah satu dari enam proses FAT di bagian Ruang Lingkup.
++ SOP Payment and Disbursement Approval. Dalam review. Salah satu dari enam proses FAT di bagian Ruang Lingkup.
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[1].table.rows[1][0]
+- Bukti penyelesaian tindakan korektif
++ Bukti penyelesaian corrective action
+
+@@ .sections[7].blocks[4].table.rows[0][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[7].blocks[4].table.rows[0][2]
+- Tabel 3 memuat ketidaksesuaian, penyebab, tindakan korektif, dan hasil verifikasi efektivitas.
++ Tabel 3 memuat ketidaksesuaian, penyebab, corrective action, dan hasil verifikasi efektivitas.
+
+@@ .sections[7].blocks[4].table.rows[2][2]
+- Dokumen terisi punya lokasi, pemilik, dan retensi di bagian Rekaman.
++ Dokumen terisi punya lokasi, pemilik, dan retensi di bagian Record.
+
+@@ .sections[7].blocks[4].table.rows[3][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[7].blocks[4].table.rows[3][2]
+- Tabel 3 memuat tindakan korektif, termasuk yang menyangkut kontrol keamanan informasi FAT.
++ Tabel 3 memuat corrective action, termasuk yang menyangkut kontrol keamanan informasi FAT.
+
+@@ .sections[7].blocks[4].table.rows[4][1]
+- Annex A 5.33 Perlindungan rekaman
++ Annex A 5.33 Perlindungan record
+
+@@ .sections[7].blocks[4].table.rows[4][2]
+- Dokumen terisi dilindungi sesuai klasifikasinya selama masa simpan di bagian Rekaman.
++ Dokumen terisi dilindungi sesuai klasifikasinya selama masa simpan di bagian Record.
+
+@@ .sections[8].blocks[0].p
+- Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Finance Lead meninjau dokumen ini setiap tahun.
++ Dokumen ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Finance Lead meninjau dokumen ini setiap tahun.

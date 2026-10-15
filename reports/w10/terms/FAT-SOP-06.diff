@@ -1,0 +1,33 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), FAT-SOP-06: 8 teks berubah. Basis bed1bb6.
+
+@@ .policy[6]
+- 4.7 Rekaman (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan Laporan Keuangan menurut SNX-FAT-SOP-04 (USULAN). Lokasi, pemilik, dan retensi tiap rekaman ada di tabel bagian 11.
++ 4.7 Record (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan Laporan Keuangan menurut SNX-FAT-SOP-04 (USULAN). Lokasi, pemilik, dan retensi tiap record ada di tabel bagian 11.
+
+@@ .policy[8]
+- 4.9 Klasifikasi (Annex A 5.12): rekaman di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).
++ 4.9 Klasifikasi (Annex A 5.12): record di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).
+
+@@ .conclusion[0]
+- Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan batas waktu di bagian 8 (USULAN).
++ Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan record di bagian 11 dengan batas waktu di bagian 8 (USULAN).
+
+@@ .related_documents[4][1]
+- Billing & Collection Monitoring Register; tracker semua piutang dari customer, rekaman pelacak piutang di luar scope SOP ini (bagian 2, USULAN).
++ Billing & Collection Monitoring Register; tracker semua piutang dari customer, record pelacak piutang di luar scope SOP ini (bagian 2, USULAN).
+
+@@ .related_documents[5][1]
+- Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan rekaman di bagian 11.
++ Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan record di bagian 11.
+
+@@ .related_documents[7][1]
+- SOP Account Receivable & Collection; dalam peninjauan; penagihan invoice kepada customer dan pendataan piutang, dikecualikan dari SOP ini (bagian 2, USULAN).
++ SOP Account Receivable & Collection; dalam review; penagihan invoice kepada customer dan pendataan piutang, dikecualikan dari SOP ini (bagian 2, USULAN).
+
+@@ .related_documents[8][1]
+- SOP Payment and Disbursement Approval; dalam peninjauan; pengajuan pembayaran invoice, reimbursement, dan cash advance, dikecualikan dari SOP ini (bagian 2, USULAN).
++ SOP Payment and Disbursement Approval; dalam review; pengajuan pembayaran invoice, reimbursement, dan cash advance, dikecualikan dari SOP ini (bagian 2, USULAN).
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 5.3 (Pemisahan tugas), untuk butir 4.4; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.9; Annex A 5.15 (Kontrol akses), untuk butir 4.8; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.7.
++ Annex A 5.3 (Pemisahan tugas), untuk butir 4.4; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.9; Annex A 5.15 (Kontrol akses), untuk butir 4.8; Annex A 5.33 (Perlindungan record), untuk butir 4.7.

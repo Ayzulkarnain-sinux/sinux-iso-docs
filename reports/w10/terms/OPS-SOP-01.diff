@@ -1,0 +1,53 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-SOP-01: 13 teks berubah. Basis bed1bb6.
+
+@@ .scope[2]
+- Di luar scope SOP ini: pekerjaan app-level pelanggan (Bagian 6.3 butir 4), keputusan harga dan komersial yang diputus Commercial (Bagian 6.4 butir 7), tahap sebelum gate G1, dan layanan yang sudah BAU sesudah gate G3.
++ Di luar scope SOP ini: pekerjaan app-level pelanggan (Bagian 6.3 butir 4), keputusan harga dan komersial yang diputus Commercial (Bagian 6.4 butir 7), tahap sebelum gate G1, dan layanan yang sudah BAU setelah gate G3.
+
+@@ .definitions[25][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[0]
+- 4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya sesudah Service Delivery Manager menerima paket G1 dari Commercial, dengan checklist G1 di SNX-OPS-FRM-01 tanpa butir berstatus Belum.
++ 4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya setelah Service Delivery Manager menerima paket G1 dari Commercial, dengan checklist G1 di SNX-OPS-FRM-01 tanpa butir berstatus Belum.
+
+@@ .policy[2]
+- 4.3 Pekerjaan production (ISO 9001:2015 8.5.1; Annex A 5.37): pekerjaan pada environment production pelanggan dijalankan melalui change request sesuai SNX-OPS-SOP-02 dan baru dimulai sesudah go-gate terpenuhi.
++ 4.3 Pekerjaan production (ISO 9001:2015 8.5.1; Annex A 5.37): pekerjaan pada environment production pelanggan dijalankan melalui change request sesuai SNX-OPS-SOP-02 dan baru dimulai setelah go-gate terpenuhi.
+
+@@ .policy[3]
+- 4.4 Akses dan kredensial (Annex A 5.8): akses ke sistem pelanggan hanya melalui Jumphost dan akun yang terdaftar di SNX-ISMS-REG-04. Kredensial disimpan di password manager, tidak di chat, tiket, atau dokumen.
++ 4.4 Akses dan kredensial (Annex A 5.8): akses ke sistem pelanggan hanya melalui Jumphost dan akun yang terdaftar di SNX-ISMS-REG-04. Kredensial disimpan di password manager, tidak di chat, ticket, atau dokumen.
+
+@@ .policy[6]
+- 4.7 Penerimaan dan pelepasan (ISO 9001:2015 8.6): BAST diterbitkan hanya sesudah UAT lolos, dan layanan diserahkan ke NOC dan SOC hanya sesudah checklist G3 lengkap. Checklist G3 yang belum lengkap ditangani sesuai Bagian 9.
++ 4.7 Penerimaan dan pelepasan (ISO 9001:2015 8.6): BAST diterbitkan hanya setelah UAT lolos, dan layanan diserahkan ke NOC dan SOC hanya setelah checklist G3 lengkap. Checklist G3 yang belum lengkap ditangani sesuai Bagian 9.
+
+@@ .policy[7]
+- 4.8 Prosedur terdokumentasi (Annex A 5.37): langkah, pemilik, dan rekaman proyek ditetapkan di SOP ini dan di SNX-OPS-FRM-01 sampai SNX-OPS-FRM-06.
++ 4.8 Prosedur terdokumentasi (Annex A 5.37): langkah, pemilik, dan record proyek ditetapkan di SOP ini dan di SNX-OPS-FRM-01 sampai SNX-OPS-FRM-06.
+
+@@ .roles[2][2]
+- Menjalankan perubahan di environment production pelanggan hanya sesudah go-gate terpenuhi.
++ Menjalankan perubahan di environment production pelanggan hanya setelah go-gate terpenuhi.
+
+@@ .roles[3][2]
+- Menjalankan perubahan di environment production pelanggan hanya sesudah go-gate terpenuhi.
++ Menjalankan perubahan di environment production pelanggan hanya setelah go-gate terpenuhi.
+
+@@ .flow.nodes.f
+- Eksekusi melalui change request / SNX-OPS-SOP-02, akses lewat Jumphost
++ Eksekusi melalui change request / SNX-OPS-SOP-02, akses melalui Jumphost
+
+@@ .sla[3][0]
+- Tinjauan risiko dan isu di SNX-OPS-FRM-02
++ Review risiko dan isu di SNX-OPS-FRM-02
+
+@@ .conclusion[0]
+- Service Delivery Manager memantau kepatuhan terhadap SOP ini lewat empat indikator di Bagian 8 dan melakukan kalibrasi target sesudah 3 bulan data.
++ Service Delivery Manager memantau kepatuhan terhadap SOP ini melalui empat indikator di Bagian 8 dan melakukan kalibrasi target setelah 3 bulan data.
+
+@@ .records[3][1]
+- Google Drive dan tiket change request di Zammad (USULAN); pemilik Head of Operation
++ Google Drive dan ticket change request di Zammad (USULAN); pemilik Head of Operation

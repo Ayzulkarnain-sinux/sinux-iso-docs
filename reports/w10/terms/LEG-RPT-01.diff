@@ -1,0 +1,33 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-RPT-01: 8 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[7].table.rows[3][0]
+- Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang rinci
++ Review kepatuhan pelindungan data pribadi dan kerahasiaan yang rinci
+
+@@ .sections[6].blocks[0].table.rows[1][1]
+- Contract Review & Legal Approval. Prosedur penelaahan kontrak satu per satu, dikecualikan dari laporan ini. Memuat acuan peninjauan Kategori Risiko oleh Line Manager Legal (butir 4.11, USULAN).
++ Contract Review & Legal Approval. Prosedur penelaahan kontrak satu per satu, dikecualikan dari laporan ini. Memuat acuan review Kategori Risiko oleh Line Manager Legal (butir 4.11, USULAN).
+
+@@ .sections[6].blocks[0].table.rows[5][1]
+- Data Protection & Confidentiality Compliance Review. Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang rinci. Laporan ini hanya memuat statusnya pada aspek M5.
++ Data Protection & Confidentiality Compliance Review. Review kepatuhan pelindungan data pribadi dan kerahasiaan yang rinci. Laporan ini hanya memuat statusnya pada aspek M5.
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[4].table.rows[0][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[7].blocks[4].table.rows[1][2]
+- Laporan terisi disimpan dengan lokasi, pemilik, dan klasifikasi yang tercatat (bagian Rekaman).
++ Laporan terisi disimpan dengan lokasi, pemilik, dan klasifikasi yang tercatat (bagian Record).
+
+@@ .sections[7].blocks[4].table.rows[3][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[8].blocks[0].p
+- Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun.
++ Laporan ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun.

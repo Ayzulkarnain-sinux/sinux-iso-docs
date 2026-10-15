@@ -1,0 +1,29 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), HR-SOP-08: 7 teks berubah. Basis bed1bb6.
+
+@@ .purpose[1]
+- Hasil yang dijaga: cuti diambil sesuai hak dan syarat di bagian 4, setiap cuti lewat persetujuan atau pemberitahuan sesuai jenisnya, dan pekerjaan yang ditinggalkan punya penanggung jawab pengganti.
++ Hasil yang dijaga: cuti diambil sesuai hak dan syarat di bagian 4, setiap cuti melalui persetujuan atau pemberitahuan sesuai jenisnya, dan pekerjaan yang ditinggalkan punya penanggung jawab pengganti.
+
+@@ .policy[46]
+- 4.37 Rekaman cuti (ISO 9001:2015 7.5.3; Annex A 5.33 dan 5.34): permohonan cuti, surat keterangan dokter, dan surat dokter dengan HPL berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan masa simpan ada di tabel bagian 11.
++ 4.37 Record cuti (ISO 9001:2015 7.5.3; Annex A 5.33 dan 5.34): permohonan cuti, surat keterangan dokter, dan surat dokter dengan HPL berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan masa simpan ada di tabel bagian 11.
+
+@@ .roles[2][1]
+- Menerima pemberitahuan sakit, haid, penundaan cuti melahirkan, dan kelahiran bayi; mencatat alfa dan cuti haid; mendaftarkan bayi sebagai tanggungan; mencatat pembatalan cuti; memegang rekaman cuti (USULAN, butir 6.3 sampai 6.7).
++ Menerima pemberitahuan sakit, haid, penundaan cuti melahirkan, dan kelahiran bayi; mencatat alfa dan cuti haid; mendaftarkan bayi sebagai tanggungan; mencatat pembatalan cuti; memegang record cuti (USULAN, butir 6.3 sampai 6.7).
+
+@@ .procedures[0].steps[6][0]
+- Ambil cuti sesudah permohonan disetujui.
++ Ambil cuti setelah permohonan disetujui.
+
+@@ .procedures[1].steps[3][0]
+- Ajukan permohonan di sistem HR sesudah persetujuan atasan langsung (USULAN).
++ Ajukan permohonan di sistem HR setelah persetujuan atasan langsung (USULAN).
+
+@@ .related_documents[2][1]
+- Information Classification & Handling; tingkat klasifikasi rekaman cuti.
++ Information Classification & Handling; tingkat klasifikasi record cuti.
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 6.2 (Syarat dan ketentuan kerja), 5.33 (Perlindungan rekaman), 5.34 (Privasi dan perlindungan PII).
++ Annex A 6.2 (Syarat dan ketentuan kerja), 5.33 (Perlindungan record), 5.34 (Privasi dan perlindungan PII).

@@ -1,0 +1,21 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), HR-FRM-01: 5 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[2].table.rows[4][1]
+- Menurut SNX-HR-JA-01 butir 4.7, masa ini ditentukan sesudah job evaluation. Form ini tidak memuatnya.
++ Menurut SNX-HR-JA-01 butir 4.7, masa ini ditentukan setelah job evaluation. Form ini tidak memuatnya.
+
+@@ .sections[1].blocks[2].table.rows[5][1]
+- Berstatus USULAN tanpa pemegang di SNX-HR-ORG-01 (butir K-10). Jabatan itu masuk Tabel 1 sesudah disahkan.
++ Berstatus USULAN tanpa pemegang di SNX-HR-ORG-01 (butir K-10). Jabatan itu masuk Tabel 1 setelah disahkan.
+
+@@ .sections[4].blocks[1].table.rows[2][1]
+- Menyetujui form lewat blok Approved By.
++ Menyetujui form melalui blok Approved By.
+
+@@ .sections[8].blocks[0].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[11].blocks[0].p
+- Form ini berstatus Draft, dan baru dipakai sebagai standar sesudah HR Lead menetapkan isi Tabel 1 dan Tabel 2 dan Direktur Utama menandatangani blok Approved By.
++ Form ini berstatus Draft, dan baru dipakai sebagai standar setelah HR Lead menetapkan isi Tabel 1 dan Tabel 2 dan Direktur Utama menandatangani blok Approved By.

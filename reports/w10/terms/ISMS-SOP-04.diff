@@ -1,0 +1,57 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-SOP-04: 14 teks berubah. Basis bed1bb6.
+
+@@ .scope[5]
+- Layanan pihak ketiga: platform cloud, DNS dan WAF, email, sistem tiket (Zammad untuk Ops, Service Hub untuk generalist), dan monitoring.
++ Layanan pihak ketiga: platform cloud, DNS dan WAF, email, sistem ticket (Zammad untuk Ops, Service Hub untuk generalist), dan monitoring.
+
+@@ .definitions[14][1]
+- SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist.
++ SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist.
+
+@@ .definitions[16][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[3]
+- Perubahan konfigurasi CI hanya lewat change request menurut SNX-OPS-SOP-02 (Annex A 8.9).
++ Perubahan konfigurasi CI hanya melalui change request menurut SNX-OPS-SOP-02 (Annex A 8.9).
+
+@@ .policy[12]
+- NOC Engineer menghapus VM dan volume pelanggan hanya sesuai kontrak dan sesudah pelanggan mengonfirmasi tertulis dua kali.
++ NOC Engineer menghapus VM dan volume pelanggan hanya sesuai kontrak dan setelah pelanggan mengonfirmasi tertulis dua kali.
+
+@@ .policy[13]
+- Isi SNX-ISMS-REG-01 dijaga akurat lewat review oleh Pemilik aset dan rekonsiliasi dengan sumber aktual (Annex A 5.9). Lihat butir 6.5.
++ Isi SNX-ISMS-REG-01 dijaga akurat melalui review oleh Pemilik aset dan rekonsiliasi dengan sumber aktual (Annex A 5.9). Lihat butir 6.5.
+
+@@ .roles[2][1]
+- Mendaftarkan dan memperbarui aset dan CI saat provisioning, perubahan, dan dekomisi; melakukan rekonsiliasi; memusnahkan media dan mencatat berita acara; menjalankan perubahan konfigurasi CI lewat change request.
++ Mendaftarkan dan memperbarui aset dan CI saat provisioning, perubahan, dan dekomisi; melakukan rekonsiliasi; memusnahkan media dan mencatat berita acara; menjalankan perubahan konfigurasi CI melalui change request.
+
+@@ .procedures[3].steps[3][0]
+- Hapus VM atau volume pelanggan sesuai kontrak sesudah dua konfirmasi diterima.
++ Hapus VM atau volume pelanggan sesuai kontrak setelah dua konfirmasi diterima.
+
+@@ .procedures[6].steps[1][0]
+- Catat konfigurasi sebelum dan sesudah perubahan di change request.
++ Catat konfigurasi sebelum dan setelah perubahan di change request.
+
+@@ .procedures[6].steps[1][2]
+- Konfigurasi sebelum dan sesudah di change request
++ Konfigurasi sebelum dan setelah di change request
+
+@@ .procedures[6].steps[3][2]
+- Hasil verifikasi konfigurasi sesudah Apply
++ Hasil verifikasi konfigurasi setelah Apply
+
+@@ .flow.nodes.e
+- Ubah konfigurasi lewat / change request / (SNX-OPS-SOP-02)
++ Ubah konfigurasi melalui / change request / (SNX-OPS-SOP-02)
+
+@@ .conclusion[0]
+- Head of Operation memantau kepatuhan lewat empat target di bagian 8: pendaftaran aset produksi sebelum gate G3, review aset, penutupan selisih rekonsiliasi, dan drift tanpa change request.
++ Head of Operation memantau kepatuhan melalui empat target di bagian 8: pendaftaran aset produksi sebelum gate G3, review aset, penutupan selisih rekonsiliasi, dan drift tanpa change request.
+
+@@ .related_documents[7][1]
+- Change Request & Approval Log; rekaman change request konfigurasi.
++ Change Request & Approval Log; record change request konfigurasi.

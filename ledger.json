@@ -3,9 +3,9 @@
  "runbook": "v19-e",
  "defaults_version": "v22",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W9-DONE",
- "last_guide_seen": 3,
- "watchdog_trigger_id": "trig_014V6Z6BotM11mKfp3xUK4NM",
+ "current_wave": "W10",
+ "last_guide_seen": 4,
+ "watchdog_trigger_id": "trig_016ZexPczFLFNDEAnFDVCvSj",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -2733,6 +2733,10 @@
   {
    "at": "2026-10-15T04:43Z",
    "event": "ISO-W9: watchdog dipasang ulang beberapa kali selama run (pesan tetap, +45 menit); id terakhir trig_014V6Z6BotM11mKfp3xUK4NM (jadwal 04:52Z) dihapus saat penutupan W9"
+  },
+  {
+   "at": "2026-10-15T07:04Z",
+   "event": "ISO-W10 start: watchdog trig_016ZexPczFLFNDEAnFDVCvSj fires 07:50Z"
   }
  ],
  "retractions": [
@@ -2773,6 +2777,11 @@
    "guide": "G-3",
    "seen_at": "2026-10-15T02:30Z",
    "action": "Owner mengetik gaspol di sesi ISO-W9 pukul 02:31Z. A1-A10, B1-B4, gerbang C, D dikerjakan. Catatan presisi A8: Description checklist baris 58 bukan salinan persis baris 57 (ratio 0.696; baris 58 = isi baris 57 diperluas dengan validasi klaim); substansi arahan (baris 58 tidak cocok judulnya, perlu dibetulkan tim) tetap."
+  },
+  {
+   "guide": "G-4",
+   "seen_at": "2026-10-15T06:52Z",
+   "action": "Diterima di sesi WORKER-ISO-03 (ISO-W10). Owner mengetik gaspol 06:52Z dengan preferensi semua dokumen: pilot 5 dokumen tetap dikerjakan dan dikirim sebagai titik kontrol, lalu sapuan 65 dokumen langsung dilanjutkan tanpa berhenti (owner = satu-satunya GO). Tidak ada catatan review tim ditempel, Langkah 0 tidak berlaku."
   }
  ],
  "agent_incidents": [
@@ -2946,5 +2955,42 @@
   },
   "completed": "2026-10-15T04:43Z",
   "review": "reports/REVIEW-W9.md"
+ },
+ "w10": {
+  "started_at": "2026-10-15T06:52Z",
+  "session": "WORKER-ISO-03",
+  "owner_quote": "Gaspol, saya prefer all document. Make sure semua dikerjakan dengan baik",
+  "pilot_stop": "dilewati atas preferensi owner (semua dokumen)",
+  "base": "bed1bb6",
+  "env_fixes": [
+   {
+    "at": "2026-10-15T06:41Z",
+    "what": "apt-get install graphviz (dot 2.43.0): container baru tanpa biner dot; selftest awal gagal, sesudah pasang 6/6 OK"
+   }
+  ],
+  "tech_fixes": [
+   {
+    "at": "2026-10-15T07:05Z",
+    "tool": "tools/render_sop.py",
+    "change": "apply_table_defaults: kunci spec meta.table_defaults {align_left, repeat_header, cant_split} berlaku di jalur sop dan generic (sel jc both menjadi left, w:tblHeader baris pertama, w:cantSplit semua baris; memakai table_row_flags W9); opsi steps_widths_cm untuk tabel langkah bagian 6 mode sop (kolom Aktivitas paling lebar). Spec tanpa kunci itu tidak berubah.",
+    "reason": "LEAD G-4 butir 6, STYLE-v23 §4.2",
+    "evidence": "reports/w10/renderer_table_defaults_test.txt (UJI-RENDER dan UJI-GENERIC tanpa kunci: format_hash sama dengan kunci selftest; dengan kunci: justified_cells 0, tables_ge3_no_header 0, lint dan OOXML rc 0); selftest 6 OK",
+    "sha256_after": "bea5b94a4f082a6dff6e0cb2e37a2a88757348bf87dec82df175e8f51ed8e6fe"
+   },
+   {
+    "at": "2026-10-15T07:00Z",
+    "tool": "tools/xlsx_patch.py",
+    "change": "operasi freeze, wrap_cols, col_widths, page_setup (landscape, fitToPage, fitToWidth 1, fitToHeight 0, print_title_rows); sheet tak dikenal atau sheet bergambar ditolak (exit 1)",
+    "reason": "LEAD G-4 butir 7, STYLE-v23 §4.3",
+    "evidence": "reports/w10/xlsx_patch_w10_test.txt (kontrol positif rc 0 atribut terpasang, gambar alur tetap 1; tiga kontrol negatif rc 1)",
+    "sha256_after": "ed8af89eaa8ef0114bdbc815257a7e6cf15735938627ea9f8dfcfe55469f283c"
+   }
+  ],
+  "docs": {},
+  "sources_modtime": {
+   "at": "2026-10-15T07:02Z",
+   "file": "reports/w10/sources_modtime.json",
+   "hasil": "54 dari 54 sama dengan ledger"
+  }
  }
 }

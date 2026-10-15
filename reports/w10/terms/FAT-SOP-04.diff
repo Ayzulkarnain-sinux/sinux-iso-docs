@@ -1,0 +1,25 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), FAT-SOP-04: 6 teks berubah. Basis bed1bb6.
+
+@@ .purpose[0]
+- SOP ini mengatur cara FAT mengarsipkan dokumen keuangan, baik hardcopy maupun softcopy, sampai dokumen itu dimusnahkan sesudah masa retensi berakhir.
++ SOP ini mengatur cara FAT mengarsipkan dokumen keuangan, baik hardcopy maupun softcopy, sampai dokumen itu dimusnahkan setelah masa retensi berakhir.
+
+@@ .definitions[1][1]
+- Rekaman yang mencatat dokumen keuangan yang dimusnahkan beserta persetujuan atas pemusnahannya.
++ Record yang mencatat dokumen keuangan yang dimusnahkan beserta persetujuan atas pemusnahannya.
+
+@@ .definitions[10][1]
+- Daftar hardcopy dokumen keuangan yang diarsipkan FAT. Dalam peninjauan.
++ Daftar hardcopy dokumen keuangan yang diarsipkan FAT. Dalam review.
+
+@@ .policy[9]
+- 4.10 Kepemilikan rekaman. Finance Lead menjadi pemilik rekaman di bagian 11 dan Pemilik informasi untuk dokumen keuangan menurut SNX-ISMS-PRO-01 (USULAN).
++ 4.10 Kepemilikan record. Finance Lead menjadi pemilik record di bagian 11 dan Pemilik informasi untuk dokumen keuangan menurut SNX-ISMS-PRO-01 (USULAN).
+
+@@ .related_documents[9][0]
+- Dalam peninjauan
++ Dalam review
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 5.12 (Klasifikasi informasi), untuk butir 4.2; 5.13 (Pelabelan informasi), untuk butir 4.3; 5.15 (Kontrol akses), untuk butir 4.5; 5.33 (Perlindungan rekaman), untuk butir 4.8; 7.10 (Media penyimpanan), untuk butir 4.6; 8.10 (Penghapusan informasi), untuk butir 4.9.
++ Annex A 5.12 (Klasifikasi informasi), untuk butir 4.2; 5.13 (Pelabelan informasi), untuk butir 4.3; 5.15 (Kontrol akses), untuk butir 4.5; 5.33 (Perlindungan record), untuk butir 4.8; 7.10 (Media penyimpanan), untuk butir 4.6; 8.10 (Penghapusan informasi), untuk butir 4.9.

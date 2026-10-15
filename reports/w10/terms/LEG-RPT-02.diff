@@ -1,0 +1,29 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-RPT-02: 7 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[7].table.rows[4][0]
+- Tinjauan rinci pelindungan data pribadi dan kerahasiaan
++ Review rinci pelindungan data pribadi dan kerahasiaan
+
+@@ .sections[4].blocks[1].p
+- 2. Pelaksana Evaluasi memuat nama dan jabatan. Daftar Persyaratan yang Dipakai memuat tanggal peninjauan terakhir SNX-LEG-REG-03. Laporan Pemantauan yang Dipakai memuat Periode Pemantauan tiap laporan SNX-LEG-RPT-01 yang dipakai sebagai Bukti. Perubahan Peraturan pada Periode Evaluasi memuat perubahan menurut Ketentuan butir 6.
++ 2. Pelaksana Evaluasi memuat nama dan jabatan. Daftar Persyaratan yang Dipakai memuat tanggal review terakhir SNX-LEG-REG-03. Laporan Pemantauan yang Dipakai memuat Periode Pemantauan tiap laporan SNX-LEG-RPT-01 yang dipakai sebagai Bukti. Perubahan Peraturan pada Periode Evaluasi memuat perubahan menurut Ketentuan butir 6.
+
+@@ .sections[6].blocks[1].table.rows[9][1]
+- Legal Document Control & Retention. Tempat usulan periode retensi dan Kategori 4 (dokumen penelaahan Legal), repositori resmi (butir 4.8), dan pembagian pemilik rekaman dan pencatat (butir 4.26).
++ Legal Document Control & Retention. Tempat usulan periode retensi dan Kategori 4 (dokumen penelaahan Legal), repositori resmi (butir 4.8), dan pembagian pemilik record dan pencatat (butir 4.26).
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[4].table.rows[2][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[7].blocks[4].table.rows[4][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[8].blocks[0].p
+- Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun.
++ Laporan ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun.

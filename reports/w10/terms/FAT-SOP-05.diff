@@ -1,0 +1,25 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), FAT-SOP-05: 6 teks berubah. Basis bed1bb6.
+
+@@ .policy[3]
+- 4.4 Rekaman perpajakan (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan dokumen perpajakan agar siap untuk audit internal, audit eksternal, dan pemeriksaan DJP (butir 6.5). Lokasi, pemilik, dan retensi tiap rekaman ada di tabel bagian 11.
++ 4.4 Record perpajakan (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan dokumen perpajakan agar siap untuk audit internal, audit eksternal, dan pemeriksaan DJP (butir 6.5). Lokasi, pemilik, dan retensi tiap record ada di tabel bagian 11.
+
+@@ .policy[4]
+- 4.5 Klasifikasi: rekaman perpajakan di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).
++ 4.5 Klasifikasi: record perpajakan di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).
+
+@@ .roles[1][2]
+- Membuat bukti potong, Faktur Pajak Keluaran, dan kode billing; menyetor pajak sesudah Finance Lead mengajukan pembayaran (USULAN).
++ Membuat bukti potong, Faktur Pajak Keluaran, dan kode billing; menyetor pajak setelah Finance Lead mengajukan pembayaran (USULAN).
+
+@@ .conclusion[0]
+- Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan batas waktu di bagian 8 (USULAN).
++ Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan record di bagian 11 dengan batas waktu di bagian 8 (USULAN).
+
+@@ .related_documents[3][1]
+- Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan rekaman di bagian 11.
++ Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan record di bagian 11.
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 5.31 (Persyaratan hukum, undang-undang, regulasi, dan kontrak), 5.33 (Perlindungan rekaman).
++ Annex A 5.31 (Persyaratan hukum, undang-undang, regulasi, dan kontrak), 5.33 (Perlindungan record).

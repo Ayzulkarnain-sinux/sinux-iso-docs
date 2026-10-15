@@ -1,0 +1,5 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-FRM-04: 1 teks berubah. Basis bed1bb6.
+
+@@ Kontrol Dokumen!B18
+- Satu nomor CR per perubahan: CR-YYYY-NNNN. CR juga dibuat sebagai tiket di Zammad (USULAN); log ini menjadi rekap audit.
++ Satu nomor CR per perubahan: CR-YYYY-NNNN. CR juga dibuat sebagai ticket di Zammad (USULAN); log ini menjadi rekap audit.

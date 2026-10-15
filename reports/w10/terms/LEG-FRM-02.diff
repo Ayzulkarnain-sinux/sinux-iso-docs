@@ -1,0 +1,29 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-FRM-02: 7 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[1].table.rows[4][1]
+- Nomor Induk Berusaha: identitas pelaku usaha yang terbit lewat OSS.
++ Nomor Induk Berusaha: identitas pelaku usaha yang terbit melalui OSS.
+
+@@ .sections[1].blocks[1].table.rows[9][1]
+- Peninjauan kontrak oleh Staff Legal memakai form ini sebelum penandatanganan. Disebut review di SNX-LEG-SOP-02.
++ Review kontrak oleh Staff Legal memakai form ini sebelum penandatanganan. Disebut review di SNX-LEG-SOP-02.
+
+@@ .sections[9].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[9].blocks[4].table.rows[1][2]
+- Staff Legal mengecek lewat Daftar Periksa bahwa kontrak memuat persyaratan SINUX bagi Vendor/Pemasok.
++ Staff Legal mengecek melalui Daftar Periksa bahwa kontrak memuat persyaratan SINUX bagi Vendor/Pemasok.
+
+@@ .sections[9].blocks[4].table.rows[5][1]
+- Annex A 5.22 Pemantauan, tinjauan, dan manajemen perubahan layanan pemasok
++ Annex A 5.22 Pemantauan, review, dan manajemen perubahan layanan pemasok
+
+@@ .sections[9].blocks[4].table.rows[6][2]
+- Staff Legal mengidentifikasi risiko hukum dan kontraktual atas kontrak lewat telaah.
++ Staff Legal mengidentifikasi risiko hukum dan kontraktual atas kontrak melalui telaah.
+
+@@ .sections[10].blocks[0].p
+- Form ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau form ini setiap tahun.
++ Form ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau form ini setiap tahun.

@@ -1,0 +1,69 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-FRM-10: 17 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[5].p
+- Tiket tetap dicatat di SNX-OPS-FRM-08 dan change request di SNX-OPS-FRM-04; form ini hanya memuat nomornya. Insiden keamanan informasi dicatat juga di SNX-ISMS-FRM-02.
++ Ticket tetap dicatat di SNX-OPS-FRM-08 dan change request di SNX-OPS-FRM-04; form ini hanya memuat nomornya. Insiden keamanan informasi dicatat juga di SNX-ISMS-FRM-02.
+
+@@ .sections[1].blocks[0].table.rows[0][1]
+- Root cause analysis: analisis untuk menemukan akar masalah suatu kejadian, dicatat di form ini.
++ Root cause analysis: analisis untuk menemukan root cause suatu kejadian, dicatat di form ini.
+
+@@ .sections[1].blocks[0].table.rows[1][0]
+- Akar masalah
++ Root cause
+
+@@ .sections[1].blocks[0].table.rows[10][1]
+- Tindakan menghilangkan akar masalah.
++ Tindakan menghilangkan root cause.
+
+@@ .sections[1].blocks[0].table.rows[13][1]
+- Metode analisis yang mengelompokkan penyebab ke enam kategori di bagian Analisis akar masalah.
++ Metode analisis yang mengelompokkan penyebab ke enam kategori di bagian Analisis root cause.
+
+@@ .sections[2].blocks[0].table.rows[1][1]
+- Pemilik dokumen. Menyetujui dan mengirim RCA. Menutup RCA sesudah verifikasi (USULAN).
++ Pemilik dokumen. Menyetujui dan mengirim RCA. Menutup RCA setelah verifikasi (USULAN).
+
+@@ .sections[3].blocks[5].p
+- 6. Lead NOC atau Lead SOC menjawab tiap tingkat 5 Why dengan bukti, misalnya tiket, log, atau change request.
++ 6. Lead NOC atau Lead SOC menjawab tiap tingkat 5 Why dengan bukti, misalnya ticket, log, atau change request.
+
+@@ .sections[3].blocks[11].p
+- 12. Bila hasilnya Belum efektif, Lead NOC atau Lead SOC mengulang analisis di bagian Analisis akar masalah.
++ 12. Bila hasilnya Belum efektif, Lead NOC atau Lead SOC mengulang analisis di bagian Analisis root cause.
+
+@@ .sections[3].blocks[13].p
+- Pengiriman RCA ke pelanggan terjadi sebelum verifikasi efektivitas. RCA ditutup hanya sesudah tindakan terbukti efektif.
++ Pengiriman RCA ke pelanggan terjadi sebelum verifikasi efektivitas. RCA ditutup hanya setelah tindakan terbukti efektif.
+
+@@ .sections[4].blocks[0].flow.nodes.b
+- Kumpulkan kronologi dan bukti / tiket, log, change request
++ Kumpulkan kronologi dan bukti / ticket, log, change request
+
+@@ .sections[4].blocks[0].flow.nodes.c
+- Analisis akar masalah / 5 Why, Fishbone, atau metode lain
++ Analisis root cause / 5 Why, Fishbone, atau metode lain
+
+@@ .sections[4].blocks[0].flow.nodes.f
+- Laksanakan tindakan / lewat SNX-OPS-SOP-02 / bila mengubah production
++ Laksanakan tindakan / melalui SNX-OPS-SOP-02 / bila mengubah production
+
+@@ .sections[4].blocks[0].flow.caption
+- Gambar 1. Alur RCA dan tindakan korektif. Garis putus-putus kembali ke analisis.
++ Gambar 1. Alur RCA dan corrective action. Garis putus-putus kembali ke analisis.
+
+@@ .sections[5].blocks[1].table.rows[2][1]
+- [nomor tiket Zammad di SNX-OPS-FRM-08, nomor CR di SNX-OPS-FRM-04, atau nomor ketidaksesuaian audit]
++ [nomor ticket Zammad di SNX-OPS-FRM-08, nomor CR di SNX-OPS-FRM-04, atau nomor ketidaksesuaian audit]
+
+@@ .sections[5].blocks[14].table.rows[0][0]
+- Akar masalah
++ Root cause
+
+@@ .sections[6].blocks[0].table.rows[3][1]
+- Technical Ticket / Incident Register. Sumber nomor tiket; kolom No RCA memuat nomor RCA.
++ Technical Ticket / Incident Register. Sumber nomor ticket; kolom No RCA memuat nomor RCA.
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record

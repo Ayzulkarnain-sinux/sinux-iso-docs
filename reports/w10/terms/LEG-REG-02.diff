@@ -1,0 +1,25 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-REG-02: 6 teks berubah. Basis bed1bb6.
+
+@@ .sections[2].blocks[13].flow.nodes.d
+- Rendah: / Staff Legal memantau lewat / prosedur yang relevan
++ Rendah: / Staff Legal memantau melalui / prosedur yang relevan
+
+@@ .sections[3].blocks[17].p
+- 18. Staff Legal memperbarui tabel Ringkasan Risiko pada setiap peninjauan register.
++ 18. Staff Legal memperbarui tabel Ringkasan Risiko pada setiap review register.
+
+@@ .sections[5].blocks[0].p
+- 1. Sel Uraian Risiko, Penyebab/Pemicu, Dampak Potensial, Kemungkinan, Dampak, Nilai Risiko, Kategori Risiko, dan Pemilik Risiko kosong. Staff Legal mengisinya sesudah risiko dinilai.
++ 1. Sel Uraian Risiko, Penyebab/Pemicu, Dampak Potensial, Kemungkinan, Dampak, Nilai Risiko, Kategori Risiko, dan Pemilik Risiko kosong. Staff Legal mengisinya setelah risiko dinilai.
+
+@@ .sections[5].blocks[9].p
+- 10. Tabel Riwayat Penilaian dan Status diisi satu baris untuk tiap perubahan. Kolom Perubahan memuat nilai atau status sebelum dan sesudah.
++ 10. Tabel Riwayat Penilaian dan Status diisi satu baris untuk tiap perubahan. Kolom Perubahan memuat nilai atau status sebelum dan setelah.
+
+@@ .sections[8].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[9].blocks[0].p
+- Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun.
++ Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun.

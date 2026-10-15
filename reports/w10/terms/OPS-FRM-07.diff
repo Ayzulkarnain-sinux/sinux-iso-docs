@@ -1,0 +1,5 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-FRM-07: 1 teks berubah. Basis bed1bb6.
+
+@@ Kontrol Dokumen!B20
+- Setiap pelaksanaan PM atau CM yang mengubah sistem dicatat di Service Report beserta nomor tiket Zammad atau CR.
++ Setiap pelaksanaan PM atau CM yang mengubah sistem dicatat di Service Report beserta nomor ticket Zammad atau CR.

@@ -1,0 +1,169 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), COM-FRM-01: 42 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[1].p
+- Formulir ini mencatat hasil review Commercial atas satu order customer sebelum SINUX menerima order itu. Formulir memuat kebutuhan customer, kesesuaian scope, kelayakan teknis, persyaratan kontraktual, delivery commitment, dan hasil review.
++ Form ini mencatat hasil review Commercial atas satu order customer sebelum SINUX menerima order itu. Form memuat kebutuhan customer, kesesuaian scope, kelayakan teknis, persyaratan kontraktual, delivery commitment, dan hasil review.
+
+@@ .sections[0].blocks[2].p
+- Hasil yang dijaga: setiap order yang SINUX terima punya rekaman bahwa Business Development, Manager of Product Tech, Service Delivery Manager, dan Legal & Compliance sudah mengisi bagiannya, dan VP Commercial sudah menetapkan hasil review sebelum order diterima.
++ Hasil yang dijaga: setiap order yang SINUX terima punya record bahwa Business Development, Manager of Product Tech, Service Delivery Manager, dan Legal & Compliance sudah mengisi bagiannya, dan VP Commercial sudah menetapkan hasil review sebelum order diterima.
+
+@@ .sections[0].blocks[4].p
+- Business Development memakai formulir ini untuk setiap order customer atas penawaran Commercial, dari selesainya discovery meeting sampai VP Commercial menetapkan Hasil Review. Butir berikut dikecualikan dari formulir ini.
++ Business Development memakai form ini untuk setiap order customer atas penawaran Commercial, dari selesainya discovery meeting sampai VP Commercial menetapkan Hasil Review. Butir berikut dikecualikan dari form ini.
+
+@@ .sections[0].blocks[5].table.rows[0][1]
+- Memakai SNX-LEG-SOP-02 dan SNX-LEG-FRM-01. Formulir ini hanya mencatat hasilnya pada aspek C3.4 sampai C3.7.
++ Memakai SNX-LEG-SOP-02 dan SNX-LEG-FRM-01. Form ini hanya mencatat hasilnya pada aspek C3.4 sampai C3.7.
+
+@@ .sections[0].blocks[5].table.rows[1][1]
+- Diatur di SNX-COM-SOP-02. Formulir ini hanya merujuk Catatan persetujuan penawaran pada aspek C3.2.
++ Diatur di SNX-COM-SOP-02. Form ini hanya merujuk Catatan persetujuan penawaran pada aspek C3.2.
+
+@@ .sections[0].blocks[5].table.rows[2][1]
+- Diatur di SNX-COM-SOP-02 butir 4.10 dan 6.4. Formulir ini hanya mencatat bahwa pengecualian ada.
++ Diatur di SNX-COM-SOP-02 butir 4.10 dan 6.4. Form ini hanya mencatat bahwa pengecualian ada.
+
+@@ .sections[0].blocks[5].table.rows[3][1]
+- Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Rekaman serah terimanya SNX-COM-FRM-02.
++ Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Record serah terimanya SNX-COM-FRM-02.
+
+@@ .sections[0].blocks[5].table.rows[4][1]
+- Account management berada di luar SNX-COM-SOP-01 (butir 4.17), sehingga formulir ini juga tidak mencakupnya (USULAN).
++ Account management berada di luar SNX-COM-SOP-01 (butir 4.17), sehingga form ini juga tidak mencakupnya (USULAN).
+
+@@ .sections[0].blocks[5].table.rows[5][1]
+- Diatur di SNX-FAT-SOP-01 dan berlangsung sesudah order diterima.
++ Diatur di SNX-FAT-SOP-01 dan berlangsung setelah order diterima.
+
+@@ .sections[1].blocks[1].table.rows[5][1]
+- Rekaman hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran.
++ Record hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran.
+
+@@ .sections[1].blocks[1].table.rows[9][1]
+- Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; sesudah penyebutan ini formulir ini memakai COO.
++ Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; setelah penyebutan ini form ini memakai COO.
+
+@@ .sections[1].blocks[1].table.rows[11][1]
+- Penawaran (draf sebelum terkirim, versi terkirim sesudahnya), ditambah PO atau draf kontrak setelah customer mengirimnya.
++ Penawaran (draf sebelum terkirim, versi terkirim setelahnya), ditambah PO atau draf kontrak setelah customer mengirimnya.
+
+@@ .sections[1].blocks[1].table.rows[20][1]
+- Syarat dalam PO, kontrak, atau syarat dan ketentuan customer yang mengikat SINUX sesudah order diterima.
++ Syarat dalam PO, kontrak, atau syarat dan ketentuan customer yang mengikat SINUX setelah order diterima.
+
+@@ .sections[1].blocks[1].table.rows[22][1]
+- Pengisian formulir baru untuk order yang sama karena kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima.
++ Pengisian form baru untuk order yang sama karena kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima.
+
+@@ .sections[1].blocks[6].table.rows[1][1]
+- Ada temuan terbuka, dan tiap temuan punya tindak lanjut, pihak, dan target selesai. Order dapat diterima sesudah semua tindak lanjut selesai.
++ Ada temuan terbuka, dan tiap temuan punya tindak lanjut, pihak, dan target selesai. Order dapat diterima setelah semua tindak lanjut selesai.
+
+@@ .sections[2].blocks[0].p
+- 1. Business Development mengisi satu formulir untuk satu order, dimulai dari tabel Informasi Order dan tabel Kebutuhan Customer. Business Development membuka formulir sesudah discovery meeting selesai, dan menyalin atau merujuk Business Requirement di CRM. Satu formulir untuk satu order berstatus (USULAN).
++ 1. Business Development mengisi satu form untuk satu order, dimulai dari tabel Informasi Order dan tabel Kebutuhan Customer. Business Development membuka form setelah discovery meeting selesai, dan menyalin atau merujuk Business Requirement di CRM. Satu form untuk satu order berstatus (USULAN).
+
+@@ .sections[2].blocks[2].p
+- 3. Sebelum penawaran masuk review internal, Business Development meminta Manager of Product Tech mengisi kelompok C2 dan Service Delivery Manager mengisi kelompok C4, lalu mengisi kelompok C1 sesudah keduanya selesai (SNX-COM-SOP-02 butir 6.2). Isi formulir sampai tahap ini menjadi Catatan review scope (USULAN).
++ 3. Sebelum penawaran masuk review internal, Business Development meminta Manager of Product Tech mengisi kelompok C2 dan Service Delivery Manager mengisi kelompok C4, lalu mengisi kelompok C1 setelah keduanya selesai (SNX-COM-SOP-02 butir 6.2). Isi form sampai tahap ini menjadi Catatan review scope (USULAN).
+
+@@ .sections[2].blocks[6].p
+- 7. VP Commercial memilih satu Hasil Review dan menulis dasarnya sesudah semua kelompok terisi. Bila hasilnya Diterima dengan Syarat, VP Commercial memeriksa kolom Selesai pada tabel Temuan dan Tindak Lanjut sebelum order diterima.
++ 7. VP Commercial memilih satu Hasil Review dan menulis dasarnya setelah semua kelompok terisi. Bila hasilnya Diterima dengan Syarat, VP Commercial memeriksa kolom Selesai pada tabel Temuan dan Tindak Lanjut sebelum order diterima.
+
+@@ .sections[2].blocks[8].p
+- 9. Bila kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima, Business Development mengisi formulir baru dan menulis lokasi formulir sebelumnya pada tabel Informasi Order.
++ 9. Bila kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima, Business Development mengisi form baru dan menulis lokasi form sebelumnya pada tabel Informasi Order.
+
+@@ .sections[2].blocks[9].p
+- 10. Business Development mencatat hasil review di opportunity CRM menurut SNX-COM-SOP-01 butir 4.3, menyimpan formulir terisi, dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Formulir kosong berklasifikasi INTERNAL. Formulir terisi memuat informasi customer, sehingga Business Development memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3.
++ 10. Business Development mencatat hasil review di opportunity CRM menurut SNX-COM-SOP-01 butir 4.3, menyimpan form terisi, dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Form kosong berklasifikasi INTERNAL. Form terisi memuat informasi customer, sehingga Business Development memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3.
+
+@@ .sections[3].blocks[0].table.header[1]
+- Tugas pada formulir ini
++ Tugas pada form ini
+
+@@ .sections[3].blocks[0].table.rows[0][1]
+- Mengisi tabel Informasi Order dan Kebutuhan Customer, kelompok C1, dan aspek C3.1 sampai C3.3. Meminta peran lain mengisi kelompoknya, membandingkan PO atau draf kontrak dengan penawaran, mencatat temuan, dan menyimpan formulir terisi (Ketentuan butir 1, 3 sampai 6, dan 8 sampai 10). Dipetakan ke Business Development (JA-07) di SNX-HR-ORG-01.
++ Mengisi tabel Informasi Order dan Kebutuhan Customer, kelompok C1, dan aspek C3.1 sampai C3.3. Meminta peran lain mengisi kelompoknya, membandingkan PO atau draf kontrak dengan penawaran, mencatat temuan, dan menyimpan form terisi (Ketentuan butir 1, 3 sampai 6, dan 8 sampai 10). Dipetakan ke Business Development (JA-07) di SNX-HR-ORG-01.
+
+@@ .sections[3].blocks[0].table.rows[4][1]
+- Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01.
++ Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik form terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01.
+
+@@ .sections[3].blocks[0].table.rows[5][1]
+- Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi formulir ini.
++ Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi form ini.
+
+@@ .sections[3].blocks[0].table.rows[6][1]
+- Memutuskan TOP di atas standar secara tertulis (aspek C3.3, SNX-COM-SOP-02 butir 4.10). Tidak mengisi formulir ini.
++ Memutuskan TOP di atas standar secara tertulis (aspek C3.3, SNX-COM-SOP-02 butir 4.10). Tidak mengisi form ini.
+
+@@ .sections[3].blocks[1].p
+- Pembuat, pemeriksa, dan penyetuju formulir ini tercantum di blok Approval pada halaman depan.
++ Pembuat, pemeriksa, dan penyetuju form ini tercantum di blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[2].table.rows[7][0]
+- Review Ulang (lokasi formulir sebelumnya)
++ Review Ulang (lokasi form sebelumnya)
+
+@@ .sections[5].blocks[25].table.rows[3][0]
+- Lokasi formulir terisi
++ Lokasi form terisi
+
+@@ .sections[6].blocks[0].table.rows[0][1]
+- Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).
++ Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Form ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).
+
+@@ .sections[6].blocks[0].table.rows[1][1]
+- Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN).
++ Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Form ini bentuk Catatan review scope (USULAN).
+
+@@ .sections[6].blocks[0].table.rows[11][1]
+- Project Handover Record. Rekaman paket handover sesudah order diterima.
++ Project Handover Record. Record paket handover setelah order diterima.
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[1].table.rows[0][0]
+- Formulir terisi per order
++ Form terisi per order
+
+@@ .sections[7].blocks[1].table.rows[2][1]
+- Lokasi dan pemilik belum ditetapkan (tabel rekaman SNX-COM-SOP-01).
++ Lokasi dan pemilik belum ditetapkan (tabel record SNX-COM-SOP-01).
+
+@@ .sections[7].blocks[4].table.header[2]
+- Hubungan dengan formulir ini
++ Hubungan dengan form ini
+
+@@ .sections[7].blocks[4].table.rows[0][2]
+- Formulir ini mencatat penanganan order customer dan perubahannya.
++ Form ini mencatat penanganan order customer dan perubahannya.
+
+@@ .sections[7].blocks[4].table.rows[2][1]
+- 8.2.3 Tinjauan persyaratan untuk produk dan jasa
++ 8.2.3 Review persyaratan untuk produk dan jasa
+
+@@ .sections[7].blocks[4].table.rows[2][2]
+- Kelompok C1 sampai C4 dan Hasil Review mencatat review sebelum SINUX menerima order. Formulir terisi menjadi informasi terdokumentasi hasil review itu.
++ Kelompok C1 sampai C4 dan Hasil Review mencatat review sebelum SINUX menerima order. Form terisi menjadi informasi terdokumentasi hasil review itu.
+
+@@ .sections[7].blocks[4].table.rows[3][2]
+- Business Development mengisi formulir baru bila kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima (Ketentuan butir 9).
++ Business Development mengisi form baru bila kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima (Ketentuan butir 9).
+
+@@ .sections[7].blocks[4].table.rows[4][2]
+- Bagian Rekaman mencatat lokasi, pemilik, dan klasifikasi formulir terisi.
++ Bagian Record mencatat lokasi, pemilik, dan klasifikasi form terisi.
+
+@@ .sections[7].blocks[4].table.rows[7][2]
+- Formulir terisi memuat informasi customer dan berklasifikasi RESTRICTED (Internal).
++ Form terisi memuat informasi customer dan berklasifikasi RESTRICTED (Internal).
+
+@@ .sections[8].blocks[0].p
+- Formulir ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau formulir ini setiap tahun, sesuai Review Period pada blok Identity.
++ Form ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. VP Commercial meninjau form ini setiap tahun, sesuai Review Period pada blok Identity.

@@ -1,0 +1,65 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), FAT-FRM-01: 16 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[2].table.rows[0][1]
+- Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection (dalam peninjauan) dan SNX-FAT-REG-01.
++ Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection (dalam review) dan SNX-FAT-REG-01.
+
+@@ .sections[1].blocks[2].table.rows[2][1]
+- Ada di SOP Payment and Disbursement Approval, dalam peninjauan. Form ini hanya mencatat hasilnya.
++ Ada di SOP Payment and Disbursement Approval, dalam review. Form ini hanya mencatat hasilnya.
+
+@@ .sections[3].blocks[3].p
+- 4.4 Penyetuju memutuskan sesudah Finance Lead bila delegasi tertulis mensyaratkan tingkat persetujuan itu. Bila delegasi tidak mensyaratkannya, kolom Penyetuju dikosongkan.
++ 4.4 Penyetuju memutuskan setelah Finance Lead bila delegasi tertulis mensyaratkan tingkat persetujuan itu. Bila delegasi tidak mensyaratkannya, kolom Penyetuju dikosongkan.
+
+@@ .sections[4].blocks[1].table.rows[3][1]
+- Memutuskan sesudah Finance Lead bila delegasi tertulis mensyaratkan, dan atas pengajuan Finance Lead sendiri (butir 4.4 dan 4.7). Jabatan pemegang peran ini belum ditetapkan; penetapannya tercantum di delegasi tertulis.
++ Memutuskan setelah Finance Lead bila delegasi tertulis mensyaratkan, dan atas pengajuan Finance Lead sendiri (butir 4.4 dan 4.7). Jabatan pemegang peran ini belum ditetapkan; penetapannya tercantum di delegasi tertulis.
+
+@@ .sections[4].blocks[2].p
+- Direktur Utama menyetujui form ini lewat blok Approval pada halaman depan.
++ Direktur Utama menyetujui form ini melalui blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[8].p
+- 6.9 Finance Staff menulis jabatan Penyetuju, keputusannya, dan tanggalnya di Tabel 2 sesudah Penyetuju memutuskan, sesuai butir 4.4 dan 4.7.
++ 6.9 Finance Staff menulis jabatan Penyetuju, keputusannya, dan tanggalnya di Tabel 2 setelah Penyetuju memutuskan, sesuai butir 4.4 dan 4.7.
+
+@@ .sections[5].blocks[10].p
+- 6.11 Finance Staff menulis lokasi berkas bukti persetujuan di Tabel 3, di dalam folder yang tercantum di tabel Rekaman (butir 4.8).
++ 6.11 Finance Staff menulis lokasi berkas bukti persetujuan di Tabel 3, di dalam folder yang tercantum di tabel Record (butir 4.8).
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[4].table.rows[1][2]
+- Rekaman keputusan dan bukti persetujuan punya lokasi, pemilik, dan retensi yang tercatat di tabel Rekaman.
++ Record keputusan dan bukti persetujuan punya lokasi, pemilik, dan retensi yang tercatat di tabel Record.
+
+@@ .sections[7].blocks[4].table.rows[3][1]
+- Annex A 5.33 Perlindungan rekaman
++ Annex A 5.33 Perlindungan record
+
+@@ .sections[7].blocks[4].table.rows[3][2]
+- Log dan bukti persetujuan disimpan di lokasi dan klasifikasi yang tercatat di tabel Rekaman.
++ Log dan bukti persetujuan disimpan di lokasi dan klasifikasi yang tercatat di tabel Record.
+
+@@ .sections[8].blocks[0].table.rows[3][1]
+- Financial Document Control & Retention: aturan pengarsipan dokumen keuangan, dipakai untuk lokasi dan retensi rekaman form ini (USULAN).
++ Financial Document Control & Retention: aturan pengarsipan dokumen keuangan, dipakai untuk lokasi dan retensi record form ini (USULAN).
+
+@@ .sections[8].blocks[0].table.rows[4][1]
+- Tax Administration & Reporting: butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN).
++ Tax Administration & Reporting: butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel record di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN).
+
+@@ .sections[8].blocks[0].table.rows[8][1]
+- SOP Payment and Disbursement Approval: dalam peninjauan. Mengatur pengajuan pembayaran invoice, reimbursement, dan cash advance; form ini mencatat approval atas pengajuan itu.
++ SOP Payment and Disbursement Approval: dalam review. Mengatur pengajuan pembayaran invoice, reimbursement, dan cash advance; form ini mencatat approval atas pengajuan itu.
+
+@@ .sections[8].blocks[0].table.rows[9][1]
+- SOP Account Receivable & Collection: dalam peninjauan. Penagihan dan piutang, dikecualikan dari form ini.
++ SOP Account Receivable & Collection: dalam review. Penagihan dan piutang, dikecualikan dari form ini.
+
+@@ .sections[9].blocks[0].p
+- Form ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval dan FAT menetapkan struktur kolom serta jabatan Penyetuju. Finance Lead meninjau form ini setiap tahun (USULAN).
++ Form ini berstatus Draft dan baru dipakai setelah Direktur Utama menandatangani blok Approval dan FAT menetapkan struktur kolom serta jabatan Penyetuju. Finance Lead meninjau form ini setiap tahun (USULAN).

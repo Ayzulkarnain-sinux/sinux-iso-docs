@@ -1,0 +1,129 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-SOP-03: 32 teks berubah. Basis bed1bb6.
+
+@@ .definitions[7][1]
+- Dokumen yang telah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi digunakan untuk tujuan operasional, tetapi mungkin tetap perlu disimpan sebagai rekaman historis atau bukti hukum.
++ Dokumen yang telah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi digunakan untuk tujuan operasional, tetapi mungkin tetap perlu disimpan sebagai record historis atau bukti hukum.
+
+@@ .definitions[8][1]
+- Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation (USULAN).
++ Sistem ticket SINUX Service Hub yang dipakai departemen selain Operation (USULAN).
+
+@@ .policy[5]
+- 4.6 Satu dokumen hanya punya satu versi berstatus Final yang berlaku. Staff Legal mengubah status versi yang digantikan, dicabut, atau berakhir menjadi Tidak Berlaku, lalu memisahkan versi itu atau menandainya dengan jelas agar tidak tertukar dengan versi yang berlaku. Versi Tidak Berlaku tetap disimpan sebagai rekaman historis sampai masa retensinya berakhir.
++ 4.6 Satu dokumen hanya punya satu versi berstatus Final yang berlaku. Staff Legal mengubah status versi yang digantikan, dicabut, atau berakhir menjadi Tidak Berlaku, lalu memisahkan versi itu atau menandainya dengan jelas agar tidak tertukar dengan versi yang berlaku. Versi Tidak Berlaku tetap disimpan sebagai record historis sampai masa retensinya berakhir.
+
+@@ .policy[13]
+- 4.14 Pemohon meminta akses ke dokumen legal lewat tiket GLPI (USULAN).
++ 4.14 Pemohon meminta akses ke dokumen legal melalui ticket GLPI (USULAN).
+
+@@ .policy[16]
+- 4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim lewat kanal pribadi. Padanan istilah dokumen rahasia dengan kedua tingkat ini berstatus (USULAN). Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01.
++ 4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim melalui kanal pribadi. Padanan istilah dokumen rahasia dengan kedua tingkat ini berstatus (USULAN). Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01.
+
+@@ .policy[19]
+- 4.20 Periode masa retensi tiap kategori dan tanggal pemicunya ada di tabel Rekaman bagian 11. Seluruh periode itu berstatus (USULAN) sampai diputus lewat prosedur 6.5.
++ 4.20 Periode masa retensi tiap kategori dan tanggal pemicunya ada di tabel Record bagian 11. Seluruh periode itu berstatus (USULAN) sampai diputus melalui prosedur 6.5.
+
+@@ .policy[22]
+- 4.23 Dokumen dimusnahkan hanya sesudah Line Manager Legal menyetujuinya dan bila dokumen tidak bertanda Legal Hold. Metode pemusnahan mengikuti tingkat klasifikasi dokumen di SNX-ISMS-PRO-01.
++ 4.23 Dokumen dimusnahkan hanya setelah Line Manager Legal menyetujuinya dan bila dokumen tidak bertanda Legal Hold. Metode pemusnahan mengikuti tingkat klasifikasi dokumen di SNX-ISMS-PRO-01.
+
+@@ .policy[25]
+- 4.26 Line Manager Legal menetapkan, Staff Legal mencatat dan menjalankan, dan VP Tech Operation and Services menjalankan wipe atau penghancuran media. Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya. Pelaku langkah ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).
++ 4.26 Line Manager Legal menetapkan, Staff Legal mencatat dan menjalankan, dan VP Tech Operation and Services menjalankan wipe atau penghancuran media. Line Manager Legal menjadi pemilik record di bagian 11 dan Staff Legal pencatatnya. Pelaku langkah ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).
+
+@@ .roles[2][1]
+- Departemen SINUX selain Legal yang meminta akses ke dokumen legal lewat tiket GLPI dan menyebut dokumen serta kebutuhan kerjanya (6.4). Melapor ke atasan masing-masing.
++ Departemen SINUX selain Legal yang meminta akses ke dokumen legal melalui ticket GLPI dan menyebut dokumen serta kebutuhan kerjanya (6.4). Melapor ke atasan masing-masing.
+
+@@ .procedures[2].steps[4][0]
+- Isi tanggal pemicu dan tanggal akhir masa retensi di register menurut tabel Rekaman bagian 11, saat tanggal pemicu diketahui.
++ Isi tanggal pemicu dan tanggal akhir masa retensi di register menurut tabel Record bagian 11, saat tanggal pemicu diketahui.
+
+@@ .procedures[3].steps[0][0]
+- Ajukan permintaan akses lewat tiket GLPI dengan menyebut dokumen dan kebutuhan kerjanya (butir 4.14).
++ Ajukan permintaan akses melalui ticket GLPI dengan menyebut dokumen dan kebutuhan kerjanya (butir 4.14).
+
+@@ .procedures[3].steps[0][2]
+- Tiket permintaan akses di GLPI
++ Ticket permintaan akses di GLPI
+
+@@ .procedures[3].steps[3][0]
+- Tutup tiket dengan catatan akses yang diberikan atau alasan penolakan.
++ Tutup ticket dengan catatan akses yang diberikan atau alasan penolakan.
+
+@@ .procedures[3].steps[3][2]
+- Tiket permintaan akses tertutup
++ Ticket permintaan akses tertutup
+
+@@ .procedures[3].steps[4][2]
+- Hasil tinjauan daftar akses
++ Hasil review daftar akses
+
+@@ .procedures[3].steps[5][0]
+- Cabut akses saat peran penerima akses berakhir, atau saat tinjauan menunjukkan akses itu tidak lagi dibutuhkan (butir 4.15).
++ Cabut akses saat peran penerima akses berakhir, atau saat review menunjukkan akses itu tidak lagi dibutuhkan (butir 4.15).
+
+@@ .procedures[4].intro[0]
+- Langkah 1 dan 2 dijalankan saat SOP ini disahkan dan pada tiap peninjauan SOP. Langkah 3 sampai 6 dijalankan setiap bulan.
++ Langkah 1 dan 2 dijalankan saat SOP ini disahkan dan pada tiap review SOP. Langkah 3 sampai 6 dijalankan setiap bulan.
+
+@@ .procedures[4].steps[1][0]
+- Ajukan periode masa retensi tiap kategori untuk disahkan lewat revisi SOP ini (prosedur 6.8).
++ Ajukan periode masa retensi tiap kategori untuk disahkan melalui revisi SOP ini (prosedur 6.8).
+
+@@ .procedures[6].steps[3][0]
+- Ajukan wipe atau penghancuran media penyimpan lewat tiket GLPI (USULAN) bila metode untuk tingkat klasifikasinya mensyaratkannya.
++ Ajukan wipe atau penghancuran media penyimpan melalui ticket GLPI (USULAN) bila metode untuk tingkat klasifikasinya mensyaratkannya.
+
+@@ .procedures[6].steps[3][2]
+- Tiket permintaan wipe atau penghancuran media
++ Ticket permintaan wipe atau penghancuran media
+
+@@ .procedures[7].steps[0][0]
+- Evaluasi pelaksanaan SOP ini lewat register dokumen legal, ketepatan waktu pengarsipan, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen (USULAN).
++ Evaluasi pelaksanaan SOP ini melalui register dokumen legal, ketepatan waktu pengarsipan, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen (USULAN).
+
+@@ .procedures[7].steps[1][2]
+- Hasil peninjauan SOP
++ Hasil review SOP
+
+@@ .flow.nodes.f
+- Ada permintaan akses / lewat tiket GLPI?
++ Ada permintaan akses / melalui ticket GLPI?
+
+@@ .sla[0][2]
+- Paling lambat 2 hari kerja sesudah kontrak ditandatangani lengkap oleh para pihak
++ Paling lambat 2 hari kerja setelah kontrak ditandatangani lengkap oleh para pihak
+
+@@ .sla[1][2]
+- Paling lambat 2 hari kerja sesudah dokumen berstatus Final (USULAN)
++ Paling lambat 2 hari kerja setelah dokumen berstatus Final (USULAN)
+
+@@ .exceptions[4][0]
+- Dokumen Tidak Berlaku masih diperlukan sebagai rekaman historis atau bukti hukum
++ Dokumen Tidak Berlaku masih diperlukan sebagai record historis atau bukti hukum
+
+@@ .exceptions[5][1]
+- Line Manager Legal menolak permintaan dan menutup tiket dengan alasan penolakan (6.4 langkah 2 dan 4).
++ Line Manager Legal menolak permintaan dan menutup ticket dengan alasan penolakan (6.4 langkah 2 dan 4).
+
+@@ .exceptions[6][0]
+- Dokumen RESTRICTED (Internal) atau SECRET dikirim lewat kanal pribadi atau ditangani tidak sesuai tingkatnya
++ Dokumen RESTRICTED (Internal) atau SECRET dikirim melalui kanal pribadi atau ditangani tidak sesuai tingkatnya
+
+@@ .conclusion[0]
+- Line Manager Legal memantau kepatuhan terhadap SOP ini lewat register dokumen legal dan meninjau SOP beserta tabel masa retensinya dalam batas waktu di bagian 8 (6.8 langkah 1 dan 2).
++ Line Manager Legal memantau kepatuhan terhadap SOP ini melalui register dokumen legal dan meninjau SOP beserta tabel masa retensinya dalam batas waktu di bagian 8 (6.8 langkah 1 dan 2).
+
+@@ .records[8][0]
+- Tiket permintaan akses
++ Ticket permintaan akses
+
+@@ .records[9][0]
+- Hasil tinjauan daftar akses
++ Hasil review daftar akses
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 5.12 (Klasifikasi informasi) dan 5.13 (Pelabelan informasi), untuk butir 4.9, 4.11, dan 4.12; Annex A 5.14 (Transfer informasi), untuk butir 4.17 dan 4.18; Annex A 5.15 (Kontrol akses) dan 5.18 (Hak akses), untuk butir 4.13 sampai 4.16; Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak) dan 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.19 dan 4.20; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.1, 4.2, dan 4.21; Annex A 7.10 (Media penyimpanan), untuk butir 4.10; Annex A 8.10 (Penghapusan informasi), untuk butir 4.23 dan 4.24.
++ Annex A 5.12 (Klasifikasi informasi) dan 5.13 (Pelabelan informasi), untuk butir 4.9, 4.11, dan 4.12; Annex A 5.14 (Transfer informasi), untuk butir 4.17 dan 4.18; Annex A 5.15 (Kontrol akses) dan 5.18 (Hak akses), untuk butir 4.13 sampai 4.16; Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak) dan 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.19 dan 4.20; Annex A 5.33 (Perlindungan record), untuk butir 4.1, 4.2, dan 4.21; Annex A 7.10 (Media penyimpanan), untuk butir 4.10; Annex A 8.10 (Penghapusan informasi), untuk butir 4.23 dan 4.24.

@@ -1,0 +1,17 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), HR-ORG-01: 4 teks berubah. Basis bed1bb6.
+
+@@ .sections[2].blocks[0].table.rows[9][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket.
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket.
+
+@@ .sections[3].blocks[1].p
+- Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi sesudah dokumen ini disahkan, dan garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01) diberi label menunggu konfirmasi.
++ Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi setelah dokumen ini disahkan, dan garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01) diberi label menunggu konfirmasi.
+
+@@ .sections[7].blocks[1].table.rows[2][0]
+- Penetap kebijakan mutu, sasaran mutu, dan sumber daya; pemimpin tinjauan manajemen
++ Penetap kebijakan mutu, sasaran mutu, dan sumber daya; pemimpin review manajemen
+
+@@ .sections[11].blocks[0].p
+- Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar jabatan.
++ Dokumen ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approved By. Konfirmasi butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar jabatan.

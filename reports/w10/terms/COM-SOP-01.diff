@@ -1,0 +1,69 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), COM-SOP-01: 17 teks berubah. Basis bed1bb6.
+
+@@ .scope[3]
+- Di luar scope SOP ini: account management sesudah implementasi (butir 4.17); penagihan dan invoice (SNX-FAT-SOP-01); implementasi proyek oleh Delivery (SNX-OPS-SOP-01); rincian pengendalian proposal, quotation, dan harga (SNX-COM-SOP-02); penetapan target KPI per jabatan (KPI Matrix).
++ Di luar scope SOP ini: account management setelah implementasi (butir 4.17); penagihan dan invoice (SNX-FAT-SOP-01); implementasi proyek oleh Delivery (SNX-OPS-SOP-01); rincian pengendalian proposal, quotation, dan harga (SNX-COM-SOP-02); penetapan target KPI per jabatan (KPI Matrix).
+
+@@ .definitions[6][1]
+- Jabatan Direktur (JA-02) di SNX-HR-ORG-01; dokumen Operation menyebutnya COO. Dokumen ini memakai COO sesudah penyebutan pertama.
++ Jabatan Direktur (JA-02) di SNX-HR-ORG-01; dokumen Operation menyebutnya COO. Dokumen ini memakai COO setelah penyebutan pertama.
+
+@@ .definitions[19][1]
+- Metode consultative selling yang menggali kebutuhan customer lewat serangkaian pertanyaan sebelum menawarkan solusi: Situation, Problem, Implication, dan Need-Payoff.
++ Metode consultative selling yang menggali kebutuhan customer melalui serangkaian pertanyaan sebelum menawarkan solusi: Situation, Problem, Implication, dan Need-Payoff.
+
+@@ .policy[5]
+- 4.6 Sebelum opportunity masuk ke tahap proposal, Business Development memastikan opportunity memenuhi lima kriteria qualification (Business Need, Budget, Decision Maker, Timeline, dan Technical Fit) memakai BANT atau MEDDICC, dan menyelesaikan discovery meeting dengan pendekatan SPIN Selling. Proposal hanya dibuat sesudah kedua syarat itu terpenuhi.
++ 4.6 Sebelum opportunity masuk ke tahap proposal, Business Development memastikan opportunity memenuhi lima kriteria qualification (Business Need, Budget, Decision Maker, Timeline, dan Technical Fit) memakai BANT atau MEDDICC, dan menyelesaikan discovery meeting dengan pendekatan SPIN Selling. Proposal hanya dibuat setelah kedua syarat itu terpenuhi.
+
+@@ .policy[6]
+- 4.7 Business Development mengubah Sales Stage di CRM: status Leads saat lead tercatat, status Qualified sesudah qualification, status Opportunity sesudah discovery meeting, status Bid saat proposal dan quotation terkirim, status Win atau Lost saat hasil closing pasti, dan status Future Nurture untuk lead yang belum layak sekarang tetapi akan ditindaklanjuti nanti. Pemetaan tahap ke status ini berstatus (USULAN).
++ 4.7 Business Development mengubah Sales Stage di CRM: status Leads saat lead tercatat, status Qualified setelah qualification, status Opportunity setelah discovery meeting, status Bid saat proposal dan quotation terkirim, status Win atau Lost saat hasil closing pasti, dan status Future Nurture untuk lead yang belum layak sekarang tetapi akan ditindaklanjuti nanti. Pemetaan tahap ke status ini berstatus (USULAN).
+
+@@ .policy[8]
+- 4.9 Business Development mengirim proposal ke customer hanya sesudah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai.
++ 4.9 Business Development mengirim proposal ke customer hanya setelah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai.
+
+@@ .policy[14]
+- 4.15 Closing berhasil bila PO diterima, kontrak ditandatangani, dan persetujuan internal selesai. Project kick-off dimulai sesudah Service Delivery Manager menerima paket handover (SNX-OPS-SOP-01 butir 4.1). Penempatan kick-off sesudah handover berstatus (USULAN).
++ 4.15 Closing berhasil bila PO diterima, kontrak ditandatangani, dan persetujuan internal selesai. Project kick-off dimulai setelah Service Delivery Manager menerima paket handover (SNX-OPS-SOP-01 butir 4.1). Penempatan kick-off setelah handover berstatus (USULAN).
+
+@@ .policy[16]
+- 4.17 Sesudah implementasi, Business Development tetap bertanggung jawab atas relationship management, upselling, cross-selling, renewal, dan customer satisfaction. Langkah account management berada di luar scope SOP ini.
++ 4.17 Setelah implementasi, Business Development tetap bertanggung jawab atas relationship management, upselling, cross-selling, renewal, dan customer satisfaction. Langkah account management berada di luar scope SOP ini.
+
+@@ .policy[18]
+- 4.19 Penetapan pelaku berikut berstatus (USULAN): VP Commercial melakukan review internal proposal (butir 6.4), meninjau pipeline, forecast, dan opportunity, serta menerima laporan Business Development (bagian 8); VP Commercial menyimpan rekaman review internal, rekomendasi, dan persetujuan harga dan diskon (bagian 11), dan menyerahkan paket handover atas nama Commercial (butir 6.8); Legal & Compliance menyimpan NDA dan hasil review kontrak (bagian 11); Business Development melengkapi paket handover yang ditolak (bagian 9).
++ 4.19 Penetapan pelaku berikut berstatus (USULAN): VP Commercial melakukan review internal proposal (butir 6.4), meninjau pipeline, forecast, dan opportunity, serta menerima laporan Business Development (bagian 8); VP Commercial menyimpan record review internal, rekomendasi, dan persetujuan harga dan diskon (bagian 11), dan menyerahkan paket handover atas nama Commercial (butir 6.8); Legal & Compliance menyimpan NDA dan hasil review kontrak (bagian 11); Business Development melengkapi paket handover yang ditolak (bagian 9).
+
+@@ .procedures[0].steps[1][0]
+- Lakukan prospecting ke customer yang sesuai ICP lewat outbound prospecting, existing network, referral, event dan networking, atau LinkedIn outreach.
++ Lakukan prospecting ke customer yang sesuai ICP melalui outbound prospecting, existing network, referral, event dan networking, atau LinkedIn outreach.
+
+@@ .procedures[3].steps[1][0]
+- Susun proposal dan quotation sesuai butir 4.8 sesudah discovery meeting selesai.
++ Susun proposal dan quotation sesuai butir 4.8 setelah discovery meeting selesai.
+
+@@ .procedures[3].steps[6][0]
+- Kirim proposal dan quotation ke customer sesudah review internal dan persetujuan di butir 4.9 selesai.
++ Kirim proposal dan quotation ke customer setelah review internal dan persetujuan di butir 4.9 selesai.
+
+@@ .sla[3][0]
+- Pembaruan CRM sesudah aktivitas penjualan
++ Pembaruan CRM setelah aktivitas penjualan
+
+@@ .related_documents[5][1]
+- Billing & Invoicing; mengatur penagihan sesudah closing dan langkah Business Development saat kontrak ditandatangani, di luar scope SOP ini.
++ Billing & Invoicing; mengatur penagihan setelah closing dan langkah Business Development saat kontrak ditandatangani, di luar scope SOP ini.
+
+@@ .related_documents[7][1]
+- Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).
++ Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Form ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).
+
+@@ .related_documents[8][1]
+- Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8.
++ Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana setelah closing. Record paket handover di butir 6.8.
+
+@@ .iso_refs.ISO 9001:2015
+- 5.3 (Peran, tanggung jawab, dan wewenang di organisasi), untuk tabel peran dan wewenang harga di butir 4.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk pencatatan di CRM di butir 4.3; 8.2.1 (Komunikasi dengan customer), untuk butir 6.5 dan batas waktu respons di bagian 8; 8.2.2 (Penentuan persyaratan untuk produk dan jasa), untuk discovery meeting di butir 6.3; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk qualification, review internal, dan persetujuan harga sebelum proposal dikirim di butir 4.6 dan 4.9.
++ 5.3 (Peran, tanggung jawab, dan wewenang di organisasi), untuk tabel peran dan wewenang harga di butir 4.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk pencatatan di CRM di butir 4.3; 8.2.1 (Komunikasi dengan customer), untuk butir 6.5 dan batas waktu respons di bagian 8; 8.2.2 (Penentuan persyaratan untuk produk dan jasa), untuk discovery meeting di butir 6.3; 8.2.3 (Review persyaratan untuk produk dan jasa), untuk qualification, review internal, dan persetujuan harga sebelum proposal dikirim di butir 4.6 dan 4.9.

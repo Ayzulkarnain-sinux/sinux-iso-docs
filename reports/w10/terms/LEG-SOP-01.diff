@@ -1,0 +1,65 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-SOP-01: 16 teks berubah. Basis bed1bb6.
+
+@@ .definitions[6][1]
+- Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation.
++ Sistem ticket SINUX Service Hub yang dipakai departemen selain Operation.
+
+@@ .definitions[12][1]
+- Nomor Induk Berusaha: identitas pelaku usaha yang terbit lewat OSS.
++ Nomor Induk Berusaha: identitas pelaku usaha yang terbit melalui OSS.
+
+@@ .policy[5]
+- 4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Line Manager Legal menjadi pemilik rekaman Departemen Legal di bagian 11 dan Staff Legal pencatatnya, sama dengan SNX-LEG-SOP-03. Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (versi 0.1 SOP ini) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).
++ 4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Line Manager Legal menjadi pemilik record Departemen Legal di bagian 11 dan Staff Legal pencatatnya, sama dengan SNX-LEG-SOP-03. Pelaku langkah dan pemilik record yang tidak tertulis di draf tim sebelumnya (versi 0.1 SOP ini) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).
+
+@@ .policy[6]
+- 4.7 Pemohon mengajukan permintaan lewat tiket GLPI (USULAN).
++ 4.7 Pemohon mengajukan permintaan melalui ticket GLPI (USULAN).
+
+@@ .policy[22]
+- 4.23 Dokumen RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi. Padanan label Rahasia di versi 0.1 SOP ini dengan kedua tingkat ini berstatus (USULAN).
++ 4.23 Dokumen RESTRICTED (Internal) dan SECRET dikirim hanya melalui kanal resmi, tidak melalui kanal pribadi. Padanan label Rahasia di versi 0.1 SOP ini dengan kedua tingkat ini berstatus (USULAN).
+
+@@ .procedures[0].steps[0][0]
+- Kirim permintaan lewat tiket GLPI dengan data permintaan menurut butir 4.8.
++ Kirim permintaan melalui ticket GLPI dengan data permintaan menurut butir 4.8.
+
+@@ .procedures[0].steps[0][2]
+- Tiket permintaan di GLPI
++ Ticket permintaan di GLPI
+
+@@ .procedures[4].steps[2][0]
+- Proses addendum atau amandemen lewat prosedur 6.2 dan 6.4.
++ Proses addendum atau amandemen melalui prosedur 6.2 dan 6.4.
+
+@@ .procedures[5].steps[3][0]
+- Urus NIB lewat OSS sesuai PP No. 5 Tahun 2021 dan peraturan turunannya.
++ Urus NIB melalui OSS sesuai PP No. 5 Tahun 2021 dan peraturan turunannya.
+
+@@ .procedures[6].steps[0][2]
+- Hasil tinjauan pelindungan data pribadi
++ Hasil review pelindungan data pribadi
+
+@@ .flow.nodes.a
+- Pemohon mengirim permintaan / lewat tiket GLPI
++ Pemohon mengirim permintaan / melalui ticket GLPI
+
+@@ .sla[9][0]
+- Peninjauan register kontrak (6.5 langkah 1)
++ Review register kontrak (6.5 langkah 1)
+
+@@ .sla[16][0]
+- Peninjauan SOP ini
++ Review SOP ini
+
+@@ .related_documents[6][1]
+- Data Protection & Confidentiality Compliance Review; padanan hasil tinjauan pelindungan data pribadi di 6.7 langkah 1 (USULAN).
++ Data Protection & Confidentiality Compliance Review; padanan hasil review pelindungan data pribadi di 6.7 langkah 1 (USULAN).
+
+@@ .iso_refs.ISO 9001:2015
+- 5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk bagian 5 dan butir 4.6; 7.4 (Komunikasi), untuk koordinasi dengan Pemohon dan departemen lain di prosedur 6.1 dan 6.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk register, versi dokumen, arsip, dan retensi di butir 4.2 dan 4.27; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk review kontrak oleh Departemen Legal sebelum penandatanganan di butir 4.1 dan prosedur 6.2.
++ 5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk bagian 5 dan butir 4.6; 7.4 (Komunikasi), untuk koordinasi dengan Pemohon dan departemen lain di prosedur 6.1 dan 6.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk register, versi dokumen, arsip, dan retensi di butir 4.2 dan 4.27; 8.2.3 (Review persyaratan untuk produk dan jasa), untuk review kontrak oleh Departemen Legal sebelum penandatanganan di butir 4.1 dan prosedur 6.2.
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak), untuk prosedur 6.2, 6.6, dan 6.7; Annex A 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.21; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.22; Annex A 5.15 (Kontrol akses), untuk butir 4.26; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.27.
++ Annex A 5.31 (Persyaratan hukum, perundang-undangan, regulasi, dan kontrak), untuk prosedur 6.2, 6.6, dan 6.7; Annex A 5.34 (Privasi dan pelindungan data pribadi), untuk butir 4.21; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.22; Annex A 5.15 (Kontrol akses), untuk butir 4.26; Annex A 5.33 (Perlindungan record), untuk butir 4.27.

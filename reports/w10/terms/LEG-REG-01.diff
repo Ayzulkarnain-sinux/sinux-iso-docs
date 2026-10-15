@@ -1,0 +1,29 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-REG-01: 7 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[1].table.rows[7][1]
+- Nomor Induk Berusaha: identitas pelaku usaha yang terbit lewat OSS.
++ Nomor Induk Berusaha: identitas pelaku usaha yang terbit melalui OSS.
+
+@@ .sections[3].blocks[0].table.rows[1][1]
+- Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01. Pemilik dokumen dan pemilik rekaman register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2).
++ Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01. Pemilik dokumen dan pemilik record register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2).
+
+@@ .sections[6].blocks[0].table.rows[1][1]
+- Legal Document Control & Retention. Tempat usulan penetapan periode retensi dokumen legal serta pembagian pemilik dan pencatat rekaman Legal.
++ Legal Document Control & Retention. Tempat usulan penetapan periode retensi dokumen legal serta pembagian pemilik dan pencatat record Legal.
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[4].table.rows[1][2]
+- Register dicatat, disimpan, diperbarui, dan dapat ditelusuri lewat Catatan Pemeriksaan.
++ Register dicatat, disimpan, diperbarui, dan dapat ditelusuri melalui Catatan Pemeriksaan.
+
+@@ .sections[7].blocks[4].table.rows[3][1]
+- Annex A 5.33 Perlindungan rekaman
++ Annex A 5.33 Perlindungan record
+
+@@ .sections[8].blocks[0].p
+- Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isi register setiap bulan.
++ Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isi register setiap bulan.

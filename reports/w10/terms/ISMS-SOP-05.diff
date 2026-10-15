@@ -1,0 +1,197 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-SOP-05: 49 teks berubah. Basis bed1bb6.
+
+@@ .definitions[18][1]
+- Skala lima tingkat untuk urgensi penutupan vulnerability: Darurat, Kritis, Tinggi, Sedang, dan Rendah, dengan kriteria di butir 4.2. Skala ini terpisah dari severity tiket P1 sampai P4 (SNX-OPS-SOP-04) dan dari level risiko (SNX-ISMS-REG-02); nama Kritis, Tinggi, Sedang, dan Rendah di dokumen ini selalu berarti prioritas patch.
++ Skala lima tingkat untuk urgensi penutupan vulnerability: Darurat, Kritis, Tinggi, Sedang, dan Rendah, dengan kriteria di butir 4.2. Skala ini terpisah dari severity ticket P1 sampai P4 (SNX-OPS-SOP-04) dan dari level risiko (SNX-ISMS-REG-02); nama Kritis, Tinggi, Sedang, dan Rendah di dokumen ini selalu berarti prioritas patch.
+
+@@ .definitions[22][1]
+- Batas waktu pemasangan patch atau penerapan mitigasi kompensasi untuk satu vulnerability menurut prioritasnya; nilainya ada di bagian 8. Dihitung sejak Lead SOC menetapkan prioritas di tiket temuan, dalam hari kalender (USULAN).
++ Batas waktu pemasangan patch atau penerapan mitigasi kompensasi untuk satu vulnerability menurut prioritasnya; nilainya ada di bagian 8. Dihitung sejak Lead SOC menetapkan prioritas di ticket temuan, dalam hari kalender (USULAN).
+
+@@ .definitions[23][0]
+- Tiket temuan
++ Ticket temuan
+
+@@ .definitions[23][1]
+- Tiket di Zammad untuk satu temuan vulnerability beserta penanganannya, direkap di SNX-OPS-FRM-08.
++ Ticket di Zammad untuk satu temuan vulnerability beserta penanganannya, direkap di SNX-OPS-FRM-08.
+
+@@ .definitions[28][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[3]
+- 4.4 Pemasangan patch (Annex A 8.8, 8.19): patch diuji lebih dulu bila memungkinkan dan dipasang di production lewat change request menurut SNX-OPS-SOP-02 (butir 6.3). Di server cPanel, yum install atau remove perl-* dilarang, dan update mengikuti mekanisme resmi panel.
++ 4.4 Pemasangan patch (Annex A 8.8, 8.19): patch diuji lebih dulu bila memungkinkan dan dipasang di production melalui change request menurut SNX-OPS-SOP-02 (butir 6.3). Di server cPanel, yum install atau remove perl-* dilarang, dan update mengikuti mekanisme resmi panel.
+
+@@ .policy[4]
+- 4.5 Mitigasi kompensasi (Annex A 8.8): bila patch belum tersedia atau tidak bisa dipasang, NOC Engineer menerapkan mitigasi kompensasi dan mencatatnya di tiket temuan (butir 6.4).
++ 4.5 Mitigasi kompensasi (Annex A 8.8): bila patch belum tersedia atau tidak bisa dipasang, NOC Engineer menerapkan mitigasi kompensasi dan mencatatnya di ticket temuan (butir 6.4).
+
+@@ .policy[5]
+- 4.6 Vulnerability yang dieksploitasi aktif (Annex A 8.8): vulnerability ini diperlakukan sebagai potensi insiden. SOC Analyst melakukan sweep IOC sesuai SNX-ISMS-SOP-01 sebelum dan sesudah patch dipasang, karena patch tidak menghapus kompromi yang sudah terjadi (butir 6.3).
++ 4.6 Vulnerability yang dieksploitasi aktif (Annex A 8.8): vulnerability ini diperlakukan sebagai potensi insiden. SOC Analyst melakukan sweep IOC sesuai SNX-ISMS-SOP-01 sebelum dan setelah patch dipasang, karena patch tidak menghapus kompromi yang sudah terjadi (butir 6.3).
+
+@@ .policy[6]
+- 4.7 Tindakan korektif (ISO 9001:2015 10.2): tiap temuan dicatat sebagai tiket temuan, ditangani sampai tertutup, dan tiketnya ditutup dengan bukti verifikasi. Klaim tertutup didukung dua sumber (butir 6.2 sampai 6.5).
++ 4.7 Corrective action (ISO 9001:2015 10.2): tiap temuan dicatat sebagai ticket temuan, ditangani sampai tertutup, dan ticket-nya ditutup dengan bukti verifikasi. Klaim tertutup didukung dua sumber (butir 6.2 sampai 6.5).
+
+@@ .roles[0][1]
+- Pemilik SOP. Menelaah sumber informasi vulnerability, menetapkan prioritas, meneruskan tiket temuan ke Lead NOC, memverifikasi penutupan, dan mencatat pengecualian.
++ Pemilik SOP. Menelaah sumber informasi vulnerability, menetapkan prioritas, meneruskan ticket temuan ke Lead NOC, memverifikasi penutupan, dan mencatat pengecualian.
+
+@@ .roles[0][2]
+- Menetapkan, menaikkan, atau menurunkan prioritas; menutup tiket temuan.
++ Menetapkan, menaikkan, atau menurunkan prioritas; menutup ticket temuan.
+
+@@ .roles[1][1]
+- Menjalankan vulnerability scan, melakukan triage dan membuat tiket temuan, serta melakukan sweep IOC untuk vulnerability yang dieksploitasi aktif. Menangani deteksi malware menurut SNX-ISMS-SOP-01.
++ Menjalankan vulnerability scan, melakukan triage dan membuat ticket temuan, serta melakukan sweep IOC untuk vulnerability yang dieksploitasi aktif. Menangani deteksi malware menurut SNX-ISMS-SOP-01.
+
+@@ .roles[1][2]
+- Menentukan temuan hasil triage yang dicatat sebagai tiket.
++ Menentukan temuan hasil triage yang dicatat sebagai ticket.
+
+@@ .roles[3][2]
+- Memasang patch di production sesudah change request disetujui.
++ Memasang patch di production setelah change request disetujui.
+
+@@ .procedures[1].intro[0]
+- Tiket temuan dibuat di Zammad dan direkap di SNX-OPS-FRM-08.
++ Ticket temuan dibuat di Zammad dan direkap di SNX-OPS-FRM-08.
+
+@@ .procedures[1].steps[3][0]
+- Buat tiket temuan berisi ID aset dari SNX-ISMS-REG-01 dan CVE untuk tiap temuan hasil triage dan tiap advisory yang diteruskan.
++ Buat ticket temuan berisi ID aset dari SNX-ISMS-REG-01 dan CVE untuk tiap temuan hasil triage dan tiap advisory yang diteruskan.
+
+@@ .procedures[1].steps[3][2]
+- Tiket temuan
++ Ticket temuan
+
+@@ .procedures[1].steps[4][0]
+- Tetapkan prioritas sesuai butir 4.2 dan 4.3, lalu isi prioritas dan tenggat di tiket temuan.
++ Tetapkan prioritas sesuai butir 4.2 dan 4.3, lalu isi prioritas dan tenggat di ticket temuan.
+
+@@ .procedures[1].steps[4][2]
+- Tiket temuan berprioritas dan bertenggat
++ Ticket temuan berprioritas dan bertenggat
+
+@@ .procedures[1].steps[5][0]
+- Teruskan tiket temuan ke Lead NOC untuk dijadwalkan.
++ Teruskan ticket temuan ke Lead NOC untuk dijadwalkan.
+
+@@ .procedures[1].steps[5][2]
+- Tiket temuan diteruskan ke Lead NOC
++ Ticket temuan diteruskan ke Lead NOC
+
+@@ .procedures[2].steps[0][2]
+- Hasil uji di tiket temuan
++ Hasil uji di ticket temuan
+
+@@ .procedures[2].steps[1][2]
+- Hasil sweep IOC di tiket temuan
++ Hasil sweep IOC di ticket temuan
+
+@@ .procedures[2].steps[3][2]
+- Persetujuan window patch di tiket temuan
++ Persetujuan window patch di ticket temuan
+
+@@ .procedures[2].steps[4][2]
+- Pemberitahuan ke PIC pelanggan di tiket temuan
++ Pemberitahuan ke PIC pelanggan di ticket temuan
+
+@@ .procedures[2].steps[6][0]
+- Pasang patch sesudah change request disetujui; di server cPanel pakai mekanisme update resmi panel (butir 4.4).
++ Pasang patch setelah change request disetujui; di server cPanel pakai mekanisme update resmi panel (butir 4.4).
+
+@@ .procedures[2].steps[7][0]
+- Lakukan sweep IOC sesudah patch dipasang, sesuai SNX-ISMS-SOP-01.
++ Lakukan sweep IOC setelah patch dipasang, sesuai SNX-ISMS-SOP-01.
+
+@@ .procedures[2].steps[7][2]
+- Hasil sweep IOC di tiket temuan
++ Hasil sweep IOC di ticket temuan
+
+@@ .procedures[3].steps[1][0]
+- Catat mitigasi di tiket temuan.
++ Catat mitigasi di ticket temuan.
+
+@@ .procedures[3].steps[1][2]
+- Catatan mitigasi di tiket temuan
++ Catatan mitigasi di ticket temuan
+
+@@ .procedures[4].steps[0][2]
+- Hasil scan ulang atau pemeriksaan versi di tiket temuan
++ Hasil scan ulang atau pemeriksaan versi di ticket temuan
+
+@@ .procedures[4].steps[1][2]
+- Verifikasi penutupan di tiket temuan
++ Verifikasi penutupan di ticket temuan
+
+@@ .procedures[4].steps[2][0]
+- Tutup tiket temuan dengan bukti verifikasi.
++ Tutup ticket temuan dengan bukti verifikasi.
+
+@@ .procedures[4].steps[2][2]
+- Tiket temuan tertutup dengan bukti verifikasi
++ Ticket temuan tertutup dengan bukti verifikasi
+
+@@ .procedures[5].steps[0][0]
+- Catat pengecualian di tiket temuan: alasan, mitigasi, dan tanggal tinjau ulang.
++ Catat pengecualian di ticket temuan: alasan, mitigasi, dan tanggal tinjau ulang.
+
+@@ .procedures[5].steps[0][2]
+- Pengecualian di tiket temuan
++ Pengecualian di ticket temuan
+
+@@ .procedures[5].steps[1][2]
+- Persetujuan Pemilik aset di tiket temuan
++ Persetujuan Pemilik aset di ticket temuan
+
+@@ .procedures[5].steps[2][2]
+- Persetujuan Head of Operation di tiket temuan
++ Persetujuan Head of Operation di ticket temuan
+
+@@ .procedures[5].steps[4][2]
+- Hasil tinjau ulang di tiket temuan
++ Hasil tinjau ulang di ticket temuan
+
+@@ .flow.nodes.c
+- Buat tiket temuan, tetapkan / prioritas dan tenggat (butir 6.2)
++ Buat ticket temuan, tetapkan / prioritas dan tenggat (butir 6.2)
+
+@@ .flow.nodes.ioc
+- Sweep IOC sebelum dan / sesudah patch (butir 6.3)
++ Sweep IOC sebelum dan / setelah patch (butir 6.3)
+
+@@ .flow.nodes.f
+- Uji, jadwalkan, dan pasang / patch lewat change request / (butir 6.3)
++ Uji, jadwalkan, dan pasang / patch melalui change request / (butir 6.3)
+
+@@ .flow.nodes.h
+- Tutup tiket temuan dengan / bukti verifikasi (butir 6.5)
++ Tutup ticket temuan dengan / bukti verifikasi (butir 6.5)
+
+@@ .sla[1][2]
+- Minimal bulanan, dan sesudah perubahan besar
++ Minimal bulanan, dan setelah perubahan besar
+
+@@ .conclusion[0]
+- Lead SOC memantau kepatuhan terhadap SOP ini lewat empat indikator kinerja di bagian 8.
++ Lead SOC memantau kepatuhan terhadap SOP ini melalui empat indikator kinerja di bagian 8.
+
+@@ .related_documents[2][1]
+- Information Asset Register; ID aset di tiket temuan dan kolom Pemilik menentukan Pemilik aset.
++ Information Asset Register; ID aset di ticket temuan dan kolom Pemilik menentukan Pemilik aset.
+
+@@ .related_documents[8][1]
+- Technical Ticket / Incident Register; rekap tiket temuan vulnerability dan patch.
++ Technical Ticket / Incident Register; rekap ticket temuan vulnerability dan patch.
+
+@@ .related_documents[11][1]
+- SOP Technical Incident Handling & Escalation; severity tiket P1 sampai P4, skala yang terpisah dari prioritas patch.
++ SOP Technical Incident Handling & Escalation; severity ticket P1 sampai P4, skala yang terpisah dari prioritas patch.
+
+@@ .records[0][0]
+- Tiket temuan vulnerability dan patch (SNX-OPS-FRM-08)
++ Ticket temuan vulnerability dan patch (SNX-OPS-FRM-08)

@@ -1,0 +1,53 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), MKT-REG-02: 13 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[2].p
+- Materi final yang telah disetujui, bukti verifikasi klaim, dan catatan persetujuan tersimpan di lokasi yang tercatat di SNX-MKT-REG-01, dan ditelusuri dari register ini lewat ID itu.
++ Materi final yang telah disetujui, bukti verifikasi klaim, dan catatan persetujuan tersimpan di lokasi yang tercatat di SNX-MKT-REG-01, dan ditelusuri dari register ini melalui ID itu.
+
+@@ .sections[1].blocks[1].p
+- Batas dokumen Marketing: SNX-MKT-RPT-01 memuat rencana pemasaran dan tinjauan kinerja, yaitu sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif. Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-03. SNX-MKT-REG-01 adalah satu-satunya register materi, konten, dan persetujuan klaim. Register ini hanya mencatat pelaksanaan Aktivitas, dengan ID Persetujuan Materi dari SNX-MKT-REG-01. SNX-MKT-REG-03 memuat lead dan hasilnya, termasuk serah terima ke Sales, dan merujuk nama Aktivitas di register ini lewat kolom Campaign Asal.
++ Batas dokumen Marketing: SNX-MKT-RPT-01 memuat rencana pemasaran dan review kinerja, yaitu sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan corrective action. Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-03. SNX-MKT-REG-01 adalah satu-satunya register materi, konten, dan persetujuan klaim. Register ini hanya mencatat pelaksanaan Aktivitas, dengan ID Persetujuan Materi dari SNX-MKT-REG-01. SNX-MKT-REG-03 memuat lead dan hasilnya, termasuk serah terima ke Sales, dan merujuk nama Aktivitas di register ini melalui kolom Campaign Asal.
+
+@@ .sections[1].blocks[3].table.rows[3][0]
+- Rencana pemasaran dan tinjauan kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif
++ Rencana pemasaran dan review kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan corrective action
+
+@@ .sections[1].blocks[3].table.rows[4][1]
+- Dicatat di SNX-MKT-REG-03, yang merujuk nama Aktivitas di Tabel 1 register ini lewat kolom Campaign Asal.
++ Dicatat di SNX-MKT-REG-03, yang merujuk nama Aktivitas di Tabel 1 register ini melalui kolom Campaign Asal.
+
+@@ .sections[3].blocks[5].p
+- 4.6 Brand & Marketing menelusuri persetujuan materi dan validasi klaim di SNX-MKT-REG-01 lewat ID Persetujuan Materi. Register ini tidak mencatat klaim (SNX-MKT-REG-01 butir 4.10 sampai 4.13).
++ 4.6 Brand & Marketing menelusuri persetujuan materi dan validasi klaim di SNX-MKT-REG-01 melalui ID Persetujuan Materi. Register ini tidak mencatat klaim (SNX-MKT-REG-01 butir 4.10 sampai 4.13).
+
+@@ .sections[3].blocks[8].p
+- 4.9 Bila Aktivitas beralih ke versi baru sebuah materi, Brand & Marketing menambah ID Persetujuan Materi versi baru di Tabel 1 sesudah versi itu Disetujui, dan tidak menghapus ID versi lama. Versi baru memakai baris baru di SNX-MKT-REG-01 (SNX-MKT-REG-01 butir 4.8; USULAN).
++ 4.9 Bila Aktivitas beralih ke versi baru sebuah materi, Brand & Marketing menambah ID Persetujuan Materi versi baru di Tabel 1 setelah versi itu Disetujui, dan tidak menghapus ID versi lama. Versi baru memakai baris baru di SNX-MKT-REG-01 (SNX-MKT-REG-01 butir 4.8; USULAN).
+
+@@ .sections[3].blocks[10].p
+- 4.11 Brand & Marketing menyimpan register di lokasi yang tertulis pada tabel Rekaman (USULAN).
++ 4.11 Brand & Marketing menyimpan register di lokasi yang tertulis pada tabel Record (USULAN).
+
+@@ .sections[4].blocks[2].p
+- Direktur Utama menyetujui register ini lewat blok Approval pada halaman depan.
++ Direktur Utama menyetujui register ini melalui blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[10].p
+- 6.11 Brand & Marketing menulis hasil Aktivitas dalam satu atau dua kalimat di kolom Hasil Singkat, sesudah status berubah menjadi Selesai atau Dibatalkan (USULAN).
++ 6.11 Brand & Marketing menulis hasil Aktivitas dalam satu atau dua kalimat di kolom Hasil Singkat, setelah status berubah menjadi Selesai atau Dibatalkan (USULAN).
+
+@@ .sections[7].blocks[2].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[2].table.rows[1][1]
+- Dicatat di SNX-MKT-REG-01 dan ditelusuri dari register ini lewat ID Persetujuan Materi. Lokasi dan pemilik mengikuti SNX-MKT-REG-01.
++ Dicatat di SNX-MKT-REG-01 dan ditelusuri dari register ini melalui ID Persetujuan Materi. Lokasi dan pemilik mengikuti SNX-MKT-REG-01.
+
+@@ .sections[8].blocks[0].table.rows[6][1]
+- Marketing Planning & Performance Review. Memuat rencana pemasaran dan tinjauan kinerja, yang dikecualikan dari register ini. Brand & Marketing mengisi tabel B2 di sana dari Tabel 1 dan Tabel 2 register ini, lewat kolom Rujukan Catatan.
++ Marketing Planning & Performance Review. Memuat rencana pemasaran dan review kinerja, yang dikecualikan dari register ini. Brand & Marketing mengisi tabel B2 di sana dari Tabel 1 dan Tabel 2 register ini, melalui kolom Rujukan Catatan.
+
+@@ .sections[9].blocks[0].p
+- Register ini berstatus Draft dan berlaku sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).
++ Register ini berstatus Draft dan berlaku setelah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).

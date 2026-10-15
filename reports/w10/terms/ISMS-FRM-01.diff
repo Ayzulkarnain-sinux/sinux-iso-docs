@@ -1,0 +1,5 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-FRM-01: 1 teks berubah. Basis bed1bb6.
+
+@@ Kontrol Dokumen!B19
+- NOC Engineer shift malam mengisi Backup Log setiap hari; status Gagal dua kali berturut menjadi tiket P2 di Zammad.
++ NOC Engineer shift malam mengisi Backup Log setiap hari; status Gagal dua kali berturut menjadi ticket P2 di Zammad.

@@ -1,0 +1,73 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), FAT-SOP-01: 18 teks berubah. Basis bed1bb6.
+
+@@ .scope[3]
+- Di luar scope SOP ini: invoice yang SINUX terima dari vendor beserta pembayarannya; pelaporan dan penyetoran pajak (SNX-FAT-SOP-05); tindak lanjut invoice yang melewati jatuh tempo (SOP Account Receivable & Collection, sedang dalam peninjauan).
++ Di luar scope SOP ini: invoice yang SINUX terima dari vendor beserta pembayarannya; pelaporan dan penyetoran pajak (SNX-FAT-SOP-05); tindak lanjut invoice yang melewati jatuh tempo (SOP Account Receivable & Collection, sedang dalam review).
+
+@@ .definitions[4][1]
+- Dokumen yang mencatat pemusnahan arsip sesudah masa retensi berakhir.
++ Dokumen yang mencatat pemusnahan arsip setelah masa retensi berakhir.
+
+@@ .definitions[10][1]
+- Faktur Pajak Keluaran elektronik, bukti pemungutan PPN yang SINUX terbitkan lewat CoreTax DJP.
++ Faktur Pajak Keluaran elektronik, bukti pemungutan PPN yang SINUX terbitkan melalui CoreTax DJP.
+
+@@ .definitions[14][1]
+- Formulir yang klien isi untuk menyerahkan data master klien.
++ Form yang klien isi untuk menyerahkan data master klien.
+
+@@ .definitions[17][1]
+- Badan usaha yang memesan jasa SINUX lewat PKS atau PO dan menerima invoice dari SINUX (customer).
++ Badan usaha yang memesan jasa SINUX melalui PKS atau PO dan menerima invoice dari SINUX (customer).
+
+@@ .policy[4]
+- 4.5 Penyerahan Jasa Kena Pajak (JKP) dikenai PPN 12% (USULAN). Finance Staff menerbitkan e-Faktur Pajak secara elektronik lewat CoreTax DJP dalam proses penerbitan invoice, dengan urutan di butir 6.2.
++ 4.5 Penyerahan Jasa Kena Pajak (JKP) dikenai PPN 12% (USULAN). Finance Staff menerbitkan e-Faktur Pajak secara elektronik melalui CoreTax DJP dalam proses penerbitan invoice, dengan urutan di butir 6.2.
+
+@@ .policy[6]
+- 4.7 Finance Staff mengirim berkas penagihan lewat email resmi ke PIC Finance/AP klien dan PIC Proyek klien sebagai PDF terkunci (non-editable). Finance Staff mengirim hard copy, yaitu cetakan bertanda tangan dan berstempel, lewat kurir hanya bila PKS mensyaratkannya.
++ 4.7 Finance Staff mengirim berkas penagihan melalui email resmi ke PIC Finance/AP klien dan PIC Proyek klien sebagai PDF terkunci (non-editable). Finance Staff mengirim hard copy, yaitu cetakan bertanda tangan dan berstempel, melalui kurir hanya bila PKS mensyaratkannya.
+
+@@ .policy[14]
+- 4.15 Penetapan pelaku pada butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16, pemantauan Overdue di bagian 9, serta Finance Lead sebagai pemilik rekaman di bagian 11, berstatus (USULAN).
++ 4.15 Penetapan pelaku pada butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16, pemantauan Overdue di bagian 9, serta Finance Lead sebagai pemilik record di bagian 11, berstatus (USULAN).
+
+@@ .policy[15]
+- 4.16 Finance Staff mencatat pemusnahan arsip sesudah masa retensi berakhir dalam Berita Acara Pemusnahan Dokumen. Finance Lead dan Direktur Utama menyetujui pemusnahan itu.
++ 4.16 Finance Staff mencatat pemusnahan arsip setelah masa retensi berakhir dalam Berita Acara Pemusnahan Dokumen. Finance Lead dan Direktur Utama menyetujui pemusnahan itu.
+
+@@ .procedures[3].steps[3][0]
+- Kirim berkas cetak ke alamat penagihan klien lewat kurir.
++ Kirim berkas cetak ke alamat penagihan klien melalui kurir.
+
+@@ .procedures[4].steps[1][0]
+- Pantau kas masuk dari klien setiap hari lewat KlikBCA Bisnis.
++ Pantau kas masuk dari klien setiap hari melalui KlikBCA Bisnis.
+
+@@ .flow.nodes.n
+- Finance Staff mengirim invoice ke klien / (PDF lewat email; cetak bila PKS mensyaratkan)
++ Finance Staff mengirim invoice ke klien / (PDF melalui email; cetak bila PKS mensyaratkan)
+
+@@ .sla[0][0]
+- Pemantauan kas masuk lewat KlikBCA Bisnis
++ Pemantauan kas masuk melalui KlikBCA Bisnis
+
+@@ .exceptions[1][1]
+- Finance Staff menerbitkan Surat Pembatalan atau Revisi Invoice dan Faktur Pajak Pengganti lewat CoreTax DJP setelah Finance Lead menyetujui, lalu mencatat alasan dan bukti persetujuan (butir 4.9) serta riwayatnya di log ketidaksesuaian (butir 4.14).
++ Finance Staff menerbitkan Surat Pembatalan atau Revisi Invoice dan Faktur Pajak Pengganti melalui CoreTax DJP setelah Finance Lead menyetujui, lalu mencatat alasan dan bukti persetujuan (butir 4.9) serta riwayatnya di log ketidaksesuaian (butir 4.14).
+
+@@ .exceptions[3][1]
+- Finance Staff meneruskan pemantauan sesuai SOP Account Receivable & Collection. SOP itu sedang dalam peninjauan dan berada di luar scope SOP ini.
++ Finance Staff meneruskan pemantauan sesuai SOP Account Receivable & Collection. SOP itu sedang dalam review dan berada di luar scope SOP ini.
+
+@@ .conclusion[0]
+- Finance Lead, pemilik SOP ini, memantau kepatuhan terhadap SOP ini lewat Register Penagihan dan Penjualan dan log ketidaksesuaian.
++ Finance Lead, pemilik SOP ini, memantau kepatuhan terhadap SOP ini melalui Register Penagihan dan Penjualan dan log ketidaksesuaian.
+
+@@ .related_documents[3][1]
+- SOP Account Receivable & Collection; sedang dalam peninjauan; mengatur penagihan invoice kepada klien dan pendataan piutang, termasuk tindak lanjut Overdue.
++ SOP Account Receivable & Collection; sedang dalam review; mengatur penagihan invoice kepada klien dan pendataan piutang, termasuk tindak lanjut Overdue.
+
+@@ .iso_refs.ISO/IEC 27001:2022
+- Annex A 5.12 (Klasifikasi informasi), untuk butir 4.10; Annex A 5.15 (Kontrol akses), untuk pembatasan akses di butir 4.10; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.10 dan 4.12; Annex A 8.5 (Autentikasi aman), untuk 2FA di butir 4.11.
++ Annex A 5.12 (Klasifikasi informasi), untuk butir 4.10; Annex A 5.15 (Kontrol akses), untuk pembatasan akses di butir 4.10; Annex A 5.33 (Perlindungan record), untuk butir 4.10 dan 4.12; Annex A 8.5 (Autentikasi aman), untuk 2FA di butir 4.11.

@@ -1,0 +1,81 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), COM-SOP-02: 20 teks berubah. Basis bed1bb6.
+
+@@ .purpose[1]
+- Hasil yang dijaga: penawaran memuat scope dan timeline yang sudah dikonfirmasi, harga dan margin yang sudah diverifikasi, dan hanya pengecualian komersial yang sudah disetujui, lalu dikirim sesudah review internal serta persetujuan harga dan diskon (jika ada) selesai.
++ Hasil yang dijaga: penawaran memuat scope dan timeline yang sudah dikonfirmasi, harga dan margin yang sudah diverifikasi, dan hanya pengecualian komersial yang sudah disetujui, lalu dikirim setelah review internal serta persetujuan harga dan diskon (jika ada) selesai.
+
+@@ .scope[1]
+- Proses yang tercakup: penyusunan proposal dan quotation sesudah discovery meeting selesai, review scope, validasi harga dan margin, pengecualian komersial, review internal, persetujuan harga dan diskon, dan pengiriman penawaran ke customer. Proses berakhir saat Business Development mengirim penawaran dan mencatatnya di CRM.
++ Proses yang tercakup: penyusunan proposal dan quotation setelah discovery meeting selesai, review scope, validasi harga dan margin, pengecualian komersial, review internal, persetujuan harga dan diskon, dan pengiriman penawaran ke customer. Proses berakhir saat Business Development mengirim penawaran dan mencatatnya di CRM.
+
+@@ .scope[2]
+- Sistem yang dipakai: CRM. Lokasi berkas proposal, quotation, lembar harga dan margin, dan rekaman persetujuan belum ditetapkan.
++ Sistem yang dipakai: CRM. Lokasi berkas proposal, quotation, lembar harga dan margin, dan record persetujuan belum ditetapkan.
+
+@@ .definitions[5][1]
+- Rekaman hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran.
++ Record hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran.
+
+@@ .definitions[6][1]
+- Rekaman hasil review scope untuk satu proposal: kelayakan teknis, konfirmasi timeline dan scope, dan kesesuaian dengan Business Requirement.
++ Record hasil review scope untuk satu proposal: kelayakan teknis, konfirmasi timeline dan scope, dan kesesuaian dengan Business Requirement.
+
+@@ .definitions[11][1]
+- Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; sesudah penyebutan ini SOP ini memakai COO.
++ Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; setelah penyebutan ini SOP ini memakai COO.
+
+@@ .definitions[14][1]
+- Rekaman perhitungan harga satu penawaran: komponen harga, COGS, diskon (jika ada), dan margin.
++ Record perhitungan harga satu penawaran: komponen harga, COGS, diskon (jika ada), dan margin.
+
+@@ .definitions[18][1]
+- Permintaan customer atau isi penawaran yang menyimpang dari yang sudah disetujui atau dari standar: perubahan harga, diskon, scope, atau timeline sesudah persetujuan diberikan; TOP di atas standar; klausul yang menyimpang dari template kontrak; atau komitmen di luar kontrak.
++ Permintaan customer atau isi penawaran yang menyimpang dari yang sudah disetujui atau dari standar: perubahan harga, diskon, scope, atau timeline setelah persetujuan diberikan; TOP di atas standar; klausul yang menyimpang dari template kontrak; atau komitmen di luar kontrak.
+
+@@ .policy[0]
+- 4.1 Business Development menyusun proposal hanya sesudah qualification dan discovery meeting untuk opportunity itu selesai (SNX-COM-SOP-01 butir 4.6).
++ 4.1 Business Development menyusun proposal hanya setelah qualification dan discovery meeting untuk opportunity itu selesai (SNX-COM-SOP-01 butir 4.6).
+
+@@ .policy[7]
+- 4.8 Business Development mengirim penawaran hanya sesudah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai, dalam urutan itu. VP Commercial menolak penawaran yang belum lengkap. VP Commercial melakukan review internal; penunjukan pelaku ini berstatus (USULAN).
++ 4.8 Business Development mengirim penawaran hanya setelah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai, dalam urutan itu. VP Commercial menolak penawaran yang belum lengkap. VP Commercial melakukan review internal; penunjukan pelaku ini berstatus (USULAN).
+
+@@ .policy[9]
+- 4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah disetujui, harga baru, klausul yang menyimpang dari template kontrak, dan komitmen di luar kontrak, dengan rekomendasi VP Commercial dan, untuk klausul dan komitmen kontrak, rekomendasi Legal & Compliance. Direktur Utama memutuskan TOP di atas standar secara tertulis (SNX-FAT-SOP-01 butir 4.8), sebelum penawaran yang memuatnya dikirim. Perubahan scope atau timeline diproses ulang lewat butir 6.2, dan lewat butir 6.3 dan 6.5 bila harga ikut berubah.
++ 4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah disetujui, harga baru, klausul yang menyimpang dari template kontrak, dan komitmen di luar kontrak, dengan rekomendasi VP Commercial dan, untuk klausul dan komitmen kontrak, rekomendasi Legal & Compliance. Direktur Utama memutuskan TOP di atas standar secara tertulis (SNX-FAT-SOP-01 butir 4.8), sebelum penawaran yang memuatnya dikirim. Perubahan scope atau timeline diproses ulang melalui butir 6.2, dan melalui butir 6.3 dan 6.5 bila harga ikut berubah.
+
+@@ .procedures[0].intro[0]
+- Business Development menyusun proposal dari Business Requirement hasil discovery meeting, dan mengisi Commercial Proposal sesudah harga dan margin terverifikasi (butir 6.3).
++ Business Development menyusun proposal dari Business Requirement hasil discovery meeting, dan mengisi Commercial Proposal setelah harga dan margin terverifikasi (butir 6.3).
+
+@@ .procedures[1].intro[0]
+- Business Development meminta review scope sesudah draf proposal ada dan sebelum review internal (butir 4.5).
++ Business Development meminta review scope setelah draf proposal ada dan sebelum review internal (butir 4.5).
+
+@@ .procedures[3].intro[0]
+- Prosedur ini berlaku sebelum dan sesudah penawaran dikirim, bila customer meminta atau penawaran memuat pengecualian komersial. Pihak yang memutuskan ditetapkan di butir 4.10.
++ Prosedur ini berlaku sebelum dan setelah penawaran dikirim, bila customer meminta atau penawaran memuat pengecualian komersial. Pihak yang memutuskan ditetapkan di butir 4.10.
+
+@@ .flow.caption
+- Gambar 1. Alur penawaran dari penyusunan proposal sampai pengiriman ke customer. Permintaan pengecualian komersial sesudah pengiriman memakai butir 6.4 dan 6.5.
++ Gambar 1. Alur penawaran dari penyusunan proposal sampai pengiriman ke customer. Permintaan pengecualian komersial setelah pengiriman memakai butir 6.4 dan 6.5.
+
+@@ .related_documents[6][1]
+- Customer Requirement & Order Review Record; bentuk rekaman Catatan review scope (USULAN).
++ Customer Requirement & Order Review Record; bentuk record Catatan review scope (USULAN).
+
+@@ .records[1][1]
+- Rekaman baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; bentuk rekamannya SNX-COM-FRM-01 (USULAN)
++ Record baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; bentuk record-nya SNX-COM-FRM-01 (USULAN)
+
+@@ .records[2][1]
+- Rekaman baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; berklasifikasi RESTRICTED (Internal) (butir 4.13)
++ Record baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; berklasifikasi RESTRICTED (Internal) (butir 4.13)
+
+@@ .records[3][1]
+- Rekaman baru (USULAN). Lokasi belum ditetapkan; pemilik VP Commercial
++ Record baru (USULAN). Lokasi belum ditetapkan; pemilik VP Commercial
+
+@@ .iso_refs.ISO 9001:2015
+- 5.3 (Peran, tanggung jawab, dan wewenang di organisasi), untuk tabel peran dan wewenang harga di butir 4.7; 7.5.3 (Pengendalian informasi terdokumentasi), untuk rekaman di bagian 11 dan pencatatan di CRM di butir 4.14; 8.2.1 (Komunikasi dengan pelanggan), untuk isi proposal dan quotation yang diterima customer di butir 4.2; 8.2.2 (Penentuan persyaratan untuk produk dan jasa), untuk kesesuaian scope dengan Business Requirement di butir 6.2; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk review scope, validasi harga dan margin, review internal, dan persetujuan sebelum penawaran dikirim di butir 6.2, 6.3, dan 6.5; 8.2.4 (Perubahan persyaratan untuk produk dan jasa), untuk perubahan harga, diskon, scope, atau timeline sesudah persetujuan sebagai pengecualian komersial di butir 6.4.
++ 5.3 (Peran, tanggung jawab, dan wewenang di organisasi), untuk tabel peran dan wewenang harga di butir 4.7; 7.5.3 (Pengendalian informasi terdokumentasi), untuk record di bagian 11 dan pencatatan di CRM di butir 4.14; 8.2.1 (Komunikasi dengan pelanggan), untuk isi proposal dan quotation yang diterima customer di butir 4.2; 8.2.2 (Penentuan persyaratan untuk produk dan jasa), untuk kesesuaian scope dengan Business Requirement di butir 6.2; 8.2.3 (Review persyaratan untuk produk dan jasa), untuk review scope, validasi harga dan margin, review internal, dan persetujuan sebelum penawaran dikirim di butir 6.2, 6.3, dan 6.5; 8.2.4 (Perubahan persyaratan untuk produk dan jasa), untuk perubahan harga, diskon, scope, atau timeline setelah persetujuan sebagai pengecualian komersial di butir 6.4.

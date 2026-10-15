@@ -1,0 +1,85 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-SOP-02: 21 teks berubah. Basis bed1bb6.
+
+@@ .scope[3]
+- Sistem yang dipakai: GLPI (SINUX Service Hub) untuk tiket permintaan (USULAN), register permintaan Legal, register kontrak, dan repositori resmi SINUX. Lokasi register dan repositori belum ditetapkan.
++ Sistem yang dipakai: GLPI (SINUX Service Hub) untuk ticket permintaan (USULAN), register permintaan Legal, register kontrak, dan repositori resmi SINUX. Lokasi register dan repositori belum ditetapkan.
+
+@@ .definitions[3][1]
+- Sistem tiket SINUX untuk fungsi non-Operation (generalist). Nama lainnya SINUX Service Hub.
++ Sistem ticket SINUX untuk fungsi non-Operation (generalist). Nama lainnya SINUX Service Hub.
+
+@@ .definitions[16][1]
+- Peninjauan kontrak oleh Departemen Legal untuk menilai kelengkapan, ketepatan redaksi, kesesuaian hukum, pembagian hak dan kewajiban, serta risiko yang mungkin timbul.
++ Review kontrak oleh Departemen Legal untuk menilai kelengkapan, ketepatan redaksi, kesesuaian hukum, pembagian hak dan kewajiban, serta risiko yang mungkin timbul.
+
+@@ .policy[12]
+- 4.13 Persetujuan Legal dapat ditelusuri lewat catatan tertulis, komentar pada dokumen, email resmi, atau media persetujuan internal yang ditetapkan.
++ 4.13 Persetujuan Legal dapat ditelusuri melalui catatan tertulis, komentar pada dokumen, email resmi, atau media persetujuan internal yang ditetapkan.
+
+@@ .policy[13]
+- 4.14 Perubahan material sesudah Persetujuan Legal, termasuk perubahan pada versi final sesudah persetujuan, membuat kontrak di-review ulang sesuai tingkat materialitasnya sebelum persetujuan final atau penandatanganan.
++ 4.14 Perubahan material setelah Persetujuan Legal, termasuk perubahan pada versi final setelah persetujuan, membuat kontrak di-review ulang sesuai tingkat materialitasnya sebelum persetujuan final atau penandatanganan.
+
+@@ .policy[18]
+- 4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus (USULAN). Line Manager Legal sebagai pemilik rekaman di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN).
++ 4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus (USULAN). Line Manager Legal sebagai pemilik record di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN).
+
+@@ .roles[0][1]
+- Mengajukan permintaan secara lengkap lewat kanal di butir 6.1, menyediakan informasi dan dokumen pendukung, menjelaskan kebutuhan bisnis, dan meninjau aspek komersial.
++ Mengajukan permintaan secara lengkap melalui kanal di butir 6.1, menyediakan informasi dan dokumen pendukung, menjelaskan kebutuhan bisnis, dan meninjau aspek komersial.
+
+@@ .procedures[0].intro[1]
+- Kanal resmi permintaan belum ditetapkan. Langkah 1 memakai tiket GLPI (USULAN).
++ Kanal resmi permintaan belum ditetapkan. Langkah 1 memakai ticket GLPI (USULAN).
+
+@@ .procedures[0].steps[0][0]
+- Ajukan permintaan penyusunan atau review kontrak lewat tiket GLPI (USULAN) dengan data minimal di atas.
++ Ajukan permintaan penyusunan atau review kontrak melalui ticket GLPI (USULAN) dengan data minimal di atas.
+
+@@ .procedures[0].steps[0][2]
+- Tiket permintaan di GLPI
++ Ticket permintaan di GLPI
+
+@@ .procedures[4].steps[1][2]
+- Catatan tinjauan Line Manager Legal
++ Catatan review Line Manager Legal
+
+@@ .procedures[5].steps[1][0]
+- Catat perubahan pada draft lewat redline, komentar, atau mekanisme pengendalian perubahan yang dapat ditelusuri.
++ Catat perubahan pada draft melalui redline, komentar, atau mekanisme pengendalian perubahan yang dapat ditelusuri.
+
+@@ .procedures[5].steps[4][0]
+- Review ulang dokumen bila ada perubahan material sesudah Persetujuan Legal (butir 4.14).
++ Review ulang dokumen bila ada perubahan material setelah Persetujuan Legal (butir 4.14).
+
+@@ .procedures[8].steps[0][0]
+- Unggah salinan final ke repositori resmi SINUX paling lambat 2 hari kerja sesudah kontrak ditandatangani lengkap oleh para pihak.
++ Unggah salinan final ke repositori resmi SINUX paling lambat 2 hari kerja setelah kontrak ditandatangani lengkap oleh para pihak.
+
+@@ .procedures[9].steps[0][2]
+- Hasil tinjauan register kontrak
++ Hasil review register kontrak
+
+@@ .flow.nodes.a
+- Pemohon mengajukan permintaan / lewat tiket GLPI
++ Pemohon mengajukan permintaan / melalui ticket GLPI
+
+@@ .sla[6][0]
+- Unggah salinan final dan perbarui register kontrak sesudah kontrak ditandatangani lengkap
++ Unggah salinan final dan perbarui register kontrak setelah kontrak ditandatangani lengkap
+
+@@ .sla[7][0]
+- Tinjauan register kontrak
++ Review register kontrak
+
+@@ .exceptions[3][0]
+- Perubahan material sesudah Persetujuan Legal, atau versi final berubah sesudah persetujuan
++ Perubahan material setelah Persetujuan Legal, atau versi final berubah setelah persetujuan
+
+@@ .conclusion[0]
+- Line Manager Legal memantau penerapan SOP ini lewat register permintaan Legal, ketepatan waktu review, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen.
++ Line Manager Legal memantau penerapan SOP ini melalui register permintaan Legal, ketepatan waktu review, kelengkapan bukti persetujuan, dan hasil pemeriksaan dokumen.
+
+@@ .iso_refs.ISO 9001:2015
+- 8.2.3 (Peninjauan persyaratan produk dan jasa), untuk review kontrak pelanggan sebelum penandatanganan di butir 6.3 sampai 6.5; 8.2.4 (Perubahan persyaratan produk dan jasa), untuk addendum dan perubahan material di butir 6.6 dan 6.10; 8.4.3 (Informasi untuk penyedia eksternal), untuk kontrak vendor, pemasok, dan subkontraktor di butir 6.3; 7.5.3 (Pengendalian informasi terdokumentasi), untuk pengendalian versi dan pengarsipan di butir 6.6 dan 6.9.
++ 8.2.3 (Review persyaratan produk dan jasa), untuk review kontrak pelanggan sebelum penandatanganan di butir 6.3 sampai 6.5; 8.2.4 (Perubahan persyaratan produk dan jasa), untuk addendum dan perubahan material di butir 6.6 dan 6.10; 8.4.3 (Informasi untuk penyedia eksternal), untuk kontrak vendor, pemasok, dan subkontraktor di butir 6.3; 7.5.3 (Pengendalian informasi terdokumentasi), untuk pengendalian versi dan pengarsipan di butir 6.6 dan 6.9.

@@ -4,13 +4,16 @@
 Pakai: python3 -I xlsx_patch.py <in.xlsx> <patch.json> <out.xlsx>
 patch.json: {"clear_rows": {"Sheet": [5, 6]}, "set": {"Sheet!B4": "nilai"}, "add_control_sheet": "<form SNX donor.xlsx>" (opsional),
             "extend_validation": {"Sheet": {"K5:K6": "K5:K1000"}}, "copy_row_style": {"Sheet": {"from": 5, "rows": [7, 1000]}},
-            "fill_formula": {"Sheet!J": {"rows": [5, 1000], "formula": "=IF(D{r}=\"\", \"\", TODAY() - D{r})"}} (ketiganya opsional, ISO-W9)}
+            "fill_formula": {"Sheet!J": {"rows": [5, 1000], "formula": "=IF(D{r}=\"\", \"\", TODAY() - D{r})"}} (ketiganya opsional, ISO-W9),
+            "freeze": {"Sheet": "A5"}, "wrap_cols": {"Sheet": {"rows": [4, 200], "cols": ["B", "D"]}}, "col_widths": {"Sheet": {"B": 40}},
+            "page_setup": {"Sheet": {"orientation": "landscape", "fitToWidth": 1, "fitToHeight": 0, "print_title_rows": "4:4"}} (opsional, ISO-W10)}
 clear_rows mengosongkan sel non-rumus dan warna isi di baris itu (struktur, rumus,
 validasi tetap); baris TIDAK dihapus agar rujukan rumus tidak bergeser. Keluar 1 bila fitur berkurang
 (sheet, gambar, data validation, conditional formatting) atau masih ada teks CONTOH.
 """
 import copy, json, sys, zipfile
 import openpyxl
+from openpyxl.utils import get_column_letter
 
 
 def features(path):
@@ -114,6 +117,37 @@ def main():
     for ref, val in patch.get('set', {}).items():
         sheet, cell = ref.rsplit('!', 1)
         wb[sheet][cell] = val
+    # tech_fix ISO-W10 (LEAD G-4 butir 7): freeze, wrap_cols, col_widths, page_setup. Sheet tak dikenal atau
+    # sheet bergambar (alur proses) ditolak, agar gambar alur tidak ikut diubah.
+    def sheet_ok(name):
+        if name not in wb.sheetnames or getattr(wb[name], '_images', []):
+            print(json.dumps({'pass': False, 'why': f'sheet {name} tidak ada atau berisi gambar; tidak diubah'}))
+            sys.exit(1)
+        return wb[name]
+    for sheet, cell in patch.get('freeze', {}).items():
+        sheet_ok(sheet).freeze_panes = cell
+    for sheet, spec in patch.get('wrap_cols', {}).items():
+        ws = sheet_ok(sheet)
+        a, b = spec['rows']
+        cols = spec.get('cols') or [get_column_letter(i) for i in range(1, ws.max_column + 1)]
+        for r in range(a, b + 1):
+            for col in cols:
+                c = ws[f'{col}{r}']
+                al = copy.copy(c.alignment)
+                al.wrap_text = True
+                c.alignment = al
+    for sheet, widths in patch.get('col_widths', {}).items():
+        ws = sheet_ok(sheet)
+        for col, w in widths.items():
+            ws.column_dimensions[col].width = w
+    for sheet, ps in patch.get('page_setup', {}).items():
+        ws = sheet_ok(sheet)
+        ws.page_setup.orientation = ps.get('orientation', 'landscape')
+        ws.sheet_properties.pageSetUpPr.fitToPage = True
+        ws.page_setup.fitToWidth = ps.get('fitToWidth', 1)
+        ws.page_setup.fitToHeight = ps.get('fitToHeight', 0)
+        if ps.get('print_title_rows'):
+            ws.print_title_rows = ps['print_title_rows']
     wb.save(out)
     after, media1, _ = features(out)
     fails = []

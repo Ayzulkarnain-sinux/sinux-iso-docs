@@ -324,6 +324,9 @@ def main():
         tbl = docx.table.Table(tbl_el, d._body)
         rows = [[f"{k+1}. {s[0]}", s[1], s[2]] for k, s in enumerate(proc['steps'])]
         fill_table(tbl, rows, header=['Aktivitas', 'PIC', 'Output / Rekaman'])
+        sw = (cfg.get('table_defaults') or {}).get('steps_widths_cm')  # ISO-W10: kolom Aktivitas paling lebar
+        if sw:
+            adjust_cols(tbl_el, 3, [int(w * 567) for w in sw])
         anchor = tbl_el
         sp = make_para(ptmpl, '')
         anchor.addnext(sp)
@@ -373,6 +376,7 @@ def main():
             fill_table(docx.table.Table(el, d._body), rest[0], header=rest[1])
         anchor.addnext(el)
         anchor = el
+    apply_table_defaults(d, cfg.get('table_defaults'))
     dedupe_bookmarks(d)
     label_footer(d, cfg.get('classification', 'INTERNAL'))
     d.save(out)
@@ -418,6 +422,22 @@ def table_row_flags(tbl_el, tb):
         for tag in want:  # urutan skema CT_TrPr: cantSplit sebelum tblHeader, keduanya sebelum jc
             if trpr.find(qn('w:' + tag)) is None:
                 trpr.insert(0 if tag == 'cantSplit' else (1 if trpr.find(qn('w:cantSplit')) is not None else 0), trpr.makeelement(qn('w:' + tag), {}))
+
+
+def apply_table_defaults(d, td):
+    """tech_fix ISO-W10 (LEAD G-4 butir 6): meta.table_defaults berlaku untuk semua tabel dokumen.
+    align_left: sel rata kiri-kanan (jc both) menjadi rata kiri; repeat_header dan cant_split lewat table_row_flags.
+    Spec tanpa table_defaults (termasuk UJI-RENDER dan UJI-GENERIC) tidak berubah."""
+    if not td:
+        return
+    body = d.element.body
+    if td.get('align_left'):
+        for tc in body.iter(qn('w:tc')):
+            for jc in tc.iter(qn('w:jc')):
+                if jc.get(qn('w:val')) == 'both':
+                    jc.set(qn('w:val'), 'left')
+    for tbl in body.iter(qn('w:tbl')):
+        table_row_flags(tbl, td)
 
 
 def render_generic(tpl, spec, out):
@@ -539,6 +559,7 @@ def render_generic(tpl, spec, out):
                 add_picture_capped(docx.text.paragraph.Paragraph(pe, d._body), png)
                 if b['flow'].get('caption'):
                     add(make_para(ptmpl, b['flow']['caption']))
+    apply_table_defaults(d, cfg.get('table_defaults'))
     dedupe_bookmarks(d)
     label_footer(d, cfg.get('classification', 'INTERNAL'))
     d.save(out)

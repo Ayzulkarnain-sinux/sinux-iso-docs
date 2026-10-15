@@ -1,0 +1,4 @@
+UJI-RENDER tanpa table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=16 tables_ge3_no_header=8 format_hash=a595f34e6022ab21
+UJI-RENDER dengan table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=0 tables_ge3_no_header=0 format_hash=faa9f420f92ff0b5
+UJI-GENERIC tanpa table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=6 tables_ge3_no_header=4 format_hash=8c189a863677529c
+UJI-GENERIC dengan table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=0 tables_ge3_no_header=0 format_hash=d39227826d3f851b

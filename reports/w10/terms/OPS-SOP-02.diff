@@ -1,0 +1,49 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-SOP-02: 12 teks berubah. Basis bed1bb6.
+
+@@ .definitions[12][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket (SNX-HR-ORG-01).
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket (SNX-HR-ORG-01).
+
+@@ .definitions[14][1]
+- Severity tertinggi pada klasifikasi tiket Divisi Operation, ditetapkan di POL-OPS-001.
++ Severity tertinggi pada klasifikasi ticket Divisi Operation, ditetapkan di POL-OPS-001.
+
+@@ .definitions[16][1]
+- Tinjauan ulang atas sebuah change sesudah eksekusinya selesai.
++ Review ulang atas sebuah change setelah eksekusinya selesai.
+
+@@ .definitions[20][1]
+- Sistem tiket Divisi Operation. Pemakaian Zammad untuk CR berstatus (USULAN).
++ Sistem ticket Divisi Operation. Pemakaian Zammad untuk CR berstatus (USULAN).
+
+@@ .policy[0]
+- Perencanaan change (ISO 9001:2015 6.3): Pengaju mengajukan setiap change lewat CR, dan Approver mengkaji serta menyetujuinya sebelum dieksekusi (butir 6.1 dan 6.2). Change Emergency dikecualikan sesuai bagian 9.
++ Perencanaan change (ISO 9001:2015 6.3): Pengaju mengajukan setiap change melalui CR, dan Approver mengkaji serta menyetujuinya sebelum dieksekusi (butir 6.1 dan 6.2). Change Emergency dikecualikan sesuai bagian 9.
+
+@@ .policy[8]
+- Standar: change pra-disetujui, berulang, berisiko rendah, dengan prosedur baku, misalnya tambah rule firewall Accept untuk IP pelanggan atau reset password atas permintaan PIC pelanggan. Pelanggan menerima konfirmasi di tiket.
++ Standar: change pra-disetujui, berulang, berisiko rendah, dengan prosedur baku, misalnya tambah rule firewall Accept untuk IP pelanggan atau reset password atas permintaan PIC pelanggan. Pelanggan menerima konfirmasi di ticket.
+
+@@ .roles[1][2]
+- Menjalankan blok ukur; menjalankan blok ubah hanya sesudah approval tertulis.
++ Menjalankan blok ukur; menjalankan blok ubah hanya setelah approval tertulis.
+
+@@ .roles[5][1]
+- Pemilik SOP ini. Meninjau CR Emergency sesudah dilengkapi (butir 6.6), meninjau PIR (USULAN), dan memantau indikator kinerja di bagian 8.
++ Pemilik SOP ini. Meninjau CR Emergency setelah dilengkapi (butir 6.6), meninjau PIR (USULAN), dan memantau indikator kinerja di bagian 8.
+
+@@ .procedures[5].steps[5][0]
+- Lengkapi CR paling lambat 1 hari kerja sesudah eksekusi.
++ Lengkapi CR paling lambat 1 hari kerja setelah eksekusi.
+
+@@ .procedures[5].steps[6][2]
+- Hasil tinjauan CR Emergency
++ Hasil review CR Emergency
+
+@@ .sla[4][2]
+- Paling lambat 1 hari kerja sesudah eksekusi
++ Paling lambat 1 hari kerja setelah eksekusi
+
+@@ .conclusion[0]
+- Head of Operation, pemilik SOP ini, memantau kepatuhan lewat indikator di bagian 8 dan CR di SNX-OPS-FRM-04.
++ Head of Operation, pemilik SOP ini, memantau kepatuhan melalui indikator di bagian 8 dan CR di SNX-OPS-FRM-04.

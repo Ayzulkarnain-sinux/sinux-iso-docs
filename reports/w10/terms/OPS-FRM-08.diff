@@ -1,0 +1,17 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-FRM-08: 4 teks berubah. Basis bed1bb6.
+
+@@ Kontrol Dokumen!B15
+- Register seluruh tiket teknis dan insiden dengan waktu Ack dan pemulihan, status SLA, dan tautan RCA sesuai SNX-OPS-SOP-04.
++ Register seluruh ticket teknis dan insiden dengan waktu Ack dan pemulihan, status SLA, dan tautan RCA sesuai SNX-OPS-SOP-04.
+
+@@ Kontrol Dokumen!B18
+- Tiket Ops dibuat di Zammad (Nusagrid), tiket generalist di Service Hub GLPI (USULAN, batas menunggu owner). Register ini adalah rekap audit; ekspor dari ticketing system boleh ditempel di sheet Register dengan kolom yang sama.
++ Ticket Ops dibuat di Zammad (Nusagrid), ticket generalist di Service Hub GLPI (USULAN, batas menunggu owner). Register ini adalah rekap audit; ekspor dari ticketing system boleh ditempel di sheet Register dengan kolom yang sama.
+
+@@ Register!A2
+- Kolom abu-abu dihitung otomatis. Tiket kelas Keamanan (ke SOC) diserahkan ke SOC; insidennya dicatat di SNX-ISMS-FRM-02. Tiket tanpa waktu Ack atau Pulih belum masuk persentase di sheet Ringkasan.
++ Kolom abu-abu dihitung otomatis. Ticket kelas Keamanan (ke SOC) diserahkan ke SOC; insidennya dicatat di SNX-ISMS-FRM-02. Ticket tanpa waktu Ack atau Pulih belum masuk persentase di sheet Ringkasan.
+
+@@ Ringkasan!A1
+- Ringkasan tiket per periode
++ Ringkasan ticket per periode

@@ -1,0 +1,125 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-FRM-01: 31 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[1].p
+- Formulir ini memuat daftar periksa yang dipakai Departemen Legal untuk menelaah kontrak yang diajukan pelanggan sebelum kontrak ditandatangani oleh Pejabat Berwenang. Dengan formulir ini Departemen Legal mengidentifikasi risiko hukum serta risiko komersial, dan memastikan hak dan kewajiban para pihak jelas.
++ Form ini memuat daftar periksa yang dipakai Departemen Legal untuk menelaah kontrak yang diajukan pelanggan sebelum kontrak ditandatangani oleh Pejabat Berwenang. Dengan form ini Departemen Legal mengidentifikasi risiko hukum serta risiko komersial, dan memastikan hak dan kewajiban para pihak jelas.
+
+@@ .sections[0].blocks[4].p
+- Departemen Legal memakai formulir ini untuk menelaah kontrak antara SINUX dan pelanggan, termasuk perjanjian layanan teknologi informasi, layanan komputasi awan, penjualan perangkat keras, layanan implementasi, layanan pemeliharaan, dan bentuk kerja sama komersial lainnya. Staff Legal menyesuaikan penelaahan dengan jenis layanan, karakteristik transaksi, dan risiko tiap kontrak.
++ Departemen Legal memakai form ini untuk menelaah kontrak antara SINUX dan pelanggan, termasuk perjanjian layanan teknologi informasi, layanan komputasi awan, penjualan perangkat keras, layanan implementasi, layanan pemeliharaan, dan bentuk kerja sama komersial lainnya. Staff Legal menyesuaikan penelaahan dengan jenis layanan, karakteristik transaksi, dan risiko tiap kontrak.
+
+@@ .sections[0].blocks[5].p
+- Butir berikut dikecualikan dari formulir ini.
++ Butir berikut dikecualikan dari form ini.
+
+@@ .sections[0].blocks[6].table.rows[0][1]
+- Departemen Legal tidak menelaahnya dengan formulir ini. Kontrak vendor dan pemasok memakai SNX-LEG-FRM-02 (USULAN).
++ Departemen Legal tidak menelaahnya dengan form ini. Kontrak vendor dan pemasok memakai SNX-LEG-FRM-02 (USULAN).
+
+@@ .sections[0].blocks[6].table.rows[1][1]
+- Tetap milik Pejabat Berwenang dan Unit Kerja Terkait sesuai bidangnya. Formulir ini hanya memuat catatan risikonya (SNX-LEG-SOP-02).
++ Tetap milik Pejabat Berwenang dan Unit Kerja Terkait sesuai bidangnya. Form ini hanya memuat catatan risikonya (SNX-LEG-SOP-02).
+
+@@ .sections[0].blocks[6].table.rows[2][1]
+- Diatur di SNX-LEG-SOP-02. Formulir ini hanya memuat hasil penelaahan.
++ Diatur di SNX-LEG-SOP-02. Form ini hanya memuat hasil penelaahan.
+
+@@ .sections[0].blocks[6].table.rows[3][0]
+- Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang menyeluruh
++ Review kepatuhan pelindungan data pribadi dan kerahasiaan yang menyeluruh
+
+@@ .sections[0].blocks[6].table.rows[3][1]
+- Memakai SNX-LEG-FRM-03 (USULAN). Formulir ini hanya memuat pemeriksaan ketentuan kontraknya (aspek C5.1 dan C5.2).
++ Memakai SNX-LEG-FRM-03 (USULAN). Form ini hanya memuat pemeriksaan ketentuan kontraknya (aspek C5.1 dan C5.2).
+
+@@ .sections[1].blocks[1].table.rows[8][1]
+- Pemeriksaan satu kontrak pelanggan dengan formulir ini, dari pengisian Informasi Kontrak sampai Rekomendasi.
++ Pemeriksaan satu kontrak pelanggan dengan form ini, dari pengisian Informasi Kontrak sampai Rekomendasi.
+
+@@ .sections[2].blocks[0].p
+- 1. Staff Legal memakai satu formulir untuk satu kontrak pelanggan dan mengisinya sesudah Unit Kerja Pemohon menyerahkan permintaan penelaahan secara lengkap (SNX-LEG-SOP-02 butir 6.1). Kewajiban memakai formulir ini untuk setiap kontrak pelanggan belum diputus (USULAN: Line Manager Legal memutuskan).
++ 1. Staff Legal memakai satu form untuk satu kontrak pelanggan dan mengisinya setelah Unit Kerja Pemohon menyerahkan permintaan penelaahan secara lengkap (SNX-LEG-SOP-02 butir 6.1). Kewajiban memakai form ini untuk setiap kontrak pelanggan belum diputus (USULAN: Line Manager Legal memutuskan).
+
+@@ .sections[2].blocks[4].p
+- 5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi (cara mencentang di Petunjuk Pengisian butir 5), dan menulis dasar rekomendasi. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN). Line Manager Legal memeriksa formulir terisi.
++ 5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi (cara mencentang di Petunjuk Pengisian butir 5), dan menulis dasar rekomendasi. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN). Line Manager Legal memeriksa form terisi.
+
+@@ .sections[2].blocks[5].p
+- 6. Rekomendasi pada formulir ini bukan Persetujuan Legal. Line Manager Legal memberi Persetujuan Legal menurut SNX-LEG-SOP-02, dan Persetujuan Legal bukan pengganti persetujuan Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.2).
++ 6. Rekomendasi pada form ini bukan Persetujuan Legal. Line Manager Legal memberi Persetujuan Legal menurut SNX-LEG-SOP-02, dan Persetujuan Legal bukan pengganti persetujuan Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.2).
+
+@@ .sections[2].blocks[6].p
+- 7. Staff Legal menelaah ulang kontrak yang berubah material sesudah Persetujuan Legal (SNX-LEG-SOP-02 butir 4.14), dan mengisi formulir baru untuk telaah ulang itu (USULAN).
++ 7. Staff Legal menelaah ulang kontrak yang berubah material setelah Persetujuan Legal (SNX-LEG-SOP-02 butir 4.14), dan mengisi form baru untuk telaah ulang itu (USULAN).
+
+@@ .sections[2].blocks[7].p
+- 8. Staff Legal menyimpan formulir terisi bersama berkas kontrak di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8) dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Formulir terisi berisi nama pelanggan dan nilai kontrak, sehingga Staff Legal memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.
++ 8. Staff Legal menyimpan form terisi bersama berkas kontrak di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8) dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Form terisi berisi nama pelanggan dan nilai kontrak, sehingga Staff Legal memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.
+
+@@ .sections[3].blocks[0].table.header[1]
+- Tugas pada formulir ini
++ Tugas pada form ini
+
+@@ .sections[3].blocks[0].table.rows[0][1]
+- Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi sebagai pencatat rekaman (Ketentuan butir 1 sampai 5, 7, dan 8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.
++ Mengisi form, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan form terisi sebagai pencatat record (Ketentuan butir 1 sampai 5, 7, dan 8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.
+
+@@ .sections[3].blocks[0].table.rows[1][1]
+- Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.
++ Pemilik form ini dan form terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa form terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.
+
+@@ .sections[3].blocks[0].table.rows[2][1]
+- Menyerahkan kontrak pelanggan dan data permintaan lewat PIC Internal (Ketentuan butir 1 dan 2).
++ Menyerahkan kontrak pelanggan dan data permintaan melalui PIC Internal (Ketentuan butir 1 dan 2).
+
+@@ .sections[3].blocks[1].p
+- Pembuat, pemeriksa, dan penyetuju formulir ini tercantum di blok Approval pada halaman depan.
++ Pembuat, pemeriksa, dan penyetuju form ini tercantum di blok Approval pada halaman depan.
+
+@@ .sections[6].blocks[0].table.rows[0][1]
+- Legal Operational. Butir 4.21 memuat tinjauan pelindungan data pribadi pada kontrak, dan butir 4.24 memuat usulan repositori dokumen legal (USULAN).
++ Legal Operational. Butir 4.21 memuat review pelindungan data pribadi pada kontrak, dan butir 4.24 memuat usulan repositori dokumen legal (USULAN).
+
+@@ .sections[6].blocks[0].table.rows[1][1]
+- Contract Review & Legal Approval. Prosedur penerimaan permintaan, penelaahan, persetujuan, dan penandatanganan kontrak. Formulir ini tercantum di prosedur itu sebagai SNX-LEG-FRM-01, checklist review untuk kontrak pelanggan (USULAN).
++ Contract Review & Legal Approval. Prosedur penerimaan permintaan, penelaahan, persetujuan, dan penandatanganan kontrak. Form ini tercantum di prosedur itu sebagai SNX-LEG-FRM-01, checklist review untuk kontrak pelanggan (USULAN).
+
+@@ .sections[6].blocks[0].table.rows[2][1]
+- Legal Document Control & Retention. Memuat tujuh kategori dokumen legal dan usulan periode retensinya. Formulir terisi masuk Kategori 4, dan kontrak beserta korespondensi masuk Kategori 1 (USULAN).
++ Legal Document Control & Retention. Memuat tujuh kategori dokumen legal dan usulan periode retensinya. Form terisi masuk Kategori 4, dan kontrak beserta korespondensi masuk Kategori 1 (USULAN).
+
+@@ .sections[6].blocks[0].table.rows[4][1]
+- Data Protection & Confidentiality Compliance Review. Tinjauan kepatuhan pelindungan data pribadi dan kerahasiaan yang lebih luas dari aspek C5.1 dan C5.2 (USULAN).
++ Data Protection & Confidentiality Compliance Review. Review kepatuhan pelindungan data pribadi dan kerahasiaan yang lebih luas dari aspek C5.1 dan C5.2 (USULAN).
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[1].table.rows[0][0]
+- Formulir terisi per kontrak pelanggan
++ Form terisi per kontrak pelanggan
+
+@@ .sections[7].blocks[4].table.header[2]
+- Hubungan dengan formulir ini
++ Hubungan dengan form ini
+
+@@ .sections[7].blocks[4].table.rows[0][1]
+- 8.2.3 Peninjauan persyaratan produk dan jasa
++ 8.2.3 Review persyaratan produk dan jasa
+
+@@ .sections[7].blocks[4].table.rows[1][2]
+- Staff Legal menelaah ulang kontrak yang berubah material dengan formulir baru (Ketentuan butir 7).
++ Staff Legal menelaah ulang kontrak yang berubah material dengan form baru (Ketentuan butir 7).
+
+@@ .sections[7].blocks[4].table.rows[2][2]
+- Staff Legal menyimpan formulir terisi dan mencatat lokasi, pemilik, dan klasifikasinya.
++ Staff Legal menyimpan form terisi dan mencatat lokasi, pemilik, dan klasifikasinya.
+
+@@ .sections[7].blocks[4].table.rows[3][2]
+- Staff Legal menelaah kesesuaian ketentuan kontrak dengan hukum yang berlaku dan persyaratan kontraktual lewat tabel Daftar Periksa.
++ Staff Legal menelaah kesesuaian ketentuan kontrak dengan hukum yang berlaku dan persyaratan kontraktual melalui tabel Daftar Periksa.
+
+@@ .sections[8].blocks[0].p
+- Formulir ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau formulir ini setiap tahun.
++ Form ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau form ini setiap tahun.

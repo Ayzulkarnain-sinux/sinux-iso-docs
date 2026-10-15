@@ -1,0 +1,105 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-PRO-01: 26 teks berubah. Basis bed1bb6.
+
+@@ .scope[0]
+- Prosedur ini berlaku untuk semua informasi yang dibuat, diterima, disimpan, atau diproses oleh personel Divisi Operation dan pihak ketiga yang bekerja atas nama SINUX, dalam bentuk apa pun: dokumen, spreadsheet, email, chat, tiket, log, konfigurasi, backup, database, rekaman, dan kertas.
++ Prosedur ini berlaku untuk semua informasi yang dibuat, diterima, disimpan, atau diproses oleh personel Divisi Operation dan pihak ketiga yang bekerja atas nama SINUX, dalam bentuk apa pun: dokumen, spreadsheet, email, chat, ticket, log, konfigurasi, backup, database, record, dan kertas.
+
+@@ .definitions[13][1]
+- SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal.
++ SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal.
+
+@@ .definitions[14][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[7]
+- 4.8 Penyimpanan (Annex A 7.10). INTERNAL disimpan di sistem resmi SINUX (Drive, Zammad, Service Hub, knowledge base). RESTRICTED disimpan di sistem resmi dengan akses terbatas per peran. SECRET disimpan hanya di password manager (vault) atau sistem khusus ter-encrypt, dan dilarang di dokumen, spreadsheet, chat, tiket, atau email.
++ 4.8 Penyimpanan (Annex A 7.10). INTERNAL disimpan di sistem resmi SINUX (Drive, Zammad, Service Hub, knowledge base). RESTRICTED disimpan di sistem resmi dengan akses terbatas per peran. SECRET disimpan hanya di password manager (vault) atau sistem khusus ter-encrypt, dan dilarang di dokumen, spreadsheet, chat, ticket, atau email.
+
+@@ .policy[8]
+- 4.9 Pengiriman internal (Annex A 5.14). INTERNAL dikirim lewat kanal kerja resmi. RESTRICTED dikirim lewat kanal resmi kepada penerima yang berhak, dengan share link, bukan lampiran, bila memungkinkan. SECRET hanya dikirim lewat fitur berbagi password manager atau direct message yang lalu dihapus, dan penerima merotasinya sesudah memakainya.
++ 4.9 Pengiriman internal (Annex A 5.14). INTERNAL dikirim melalui kanal kerja resmi. RESTRICTED dikirim melalui kanal resmi kepada penerima yang berhak, dengan share link, bukan lampiran, bila memungkinkan. SECRET hanya dikirim melalui fitur berbagi password manager atau direct message yang lalu dihapus, dan penerima merotasinya setelah memakainya.
+
+@@ .policy[16]
+- 4.17 Kredensial. Seluruh personel tidak menulis kredensial, token, dan secret di chat, tiket, dokumen, spreadsheet, atau paket knowledge base. Seluruh personel menghapus dan melaporkan temuan di tempat itu segera, dan Pemilik informasi merotasinya segera (butir 6.4).
++ 4.17 Kredensial. Seluruh personel tidak menulis kredensial, token, dan secret di chat, ticket, dokumen, spreadsheet, atau paket knowledge base. Seluruh personel menghapus dan melaporkan temuan di tempat itu segera, dan Pemilik informasi merotasinya segera (butir 6.4).
+
+@@ .policy[17]
+- 4.18 Kredensial pelanggan. Seluruh personel menerima kredensial pelanggan melalui direct message atau password manager, memakainya seperlunya, dan meminta pelanggan menggantinya sesudah dipakai.
++ 4.18 Kredensial pelanggan. Seluruh personel menerima kredensial pelanggan melalui direct message atau password manager, memakainya seperlunya, dan meminta pelanggan menggantinya setelah dipakai.
+
+@@ .policy[20]
+- 4.21 Pemrosesan informasi RESTRICTED dengan layanan AI atau pihak ketiga hanya lewat layanan yang disetujui SINUX. Informasi SECRET dilarang dimasukkan ke layanan itu.
++ 4.21 Pemrosesan informasi RESTRICTED dengan layanan AI atau pihak ketiga hanya melalui layanan yang disetujui SINUX. Informasi SECRET dilarang dimasukkan ke layanan itu.
+
+@@ .procedures[1].steps[5][0]
+- Isi kolom atau tag klasifikasi pada tiket di Zammad atau Service Hub bila sistem mendukung.
++ Isi kolom atau tag klasifikasi pada ticket di Zammad atau Service Hub bila sistem mendukung.
+
+@@ .procedures[1].steps[5][2]
+- Tiket dengan kolom atau tag klasifikasi
++ Ticket dengan kolom atau tag klasifikasi
+
+@@ .procedures[2].steps[1][0]
+- Kirim informasi ke penerima internal lewat kanal yang ditetapkan untuk tingkatnya (butir 4.9 dan 4.11).
++ Kirim informasi ke penerima internal melalui kanal yang ditetapkan untuk tingkatnya (butir 4.9 dan 4.11).
+
+@@ .procedures[2].steps[1][2]
+- Informasi terkirim lewat kanal yang diizinkan
++ Informasi terkirim melalui kanal yang diizinkan
+
+@@ .procedures[3].steps[0][0]
+- Kirim informasi SECRET hanya lewat fitur berbagi password manager atau direct message (butir 4.9).
++ Kirim informasi SECRET hanya melalui fitur berbagi password manager atau direct message (butir 4.9).
+
+@@ .procedures[3].steps[1][0]
+- Hapus direct message yang memuat informasi SECRET sesudah informasinya terkirim.
++ Hapus direct message yang memuat informasi SECRET setelah informasinya terkirim.
+
+@@ .procedures[3].steps[2][0]
+- Rotasi kredensial atau secret yang diterima lewat password manager atau direct message sesudah dipakai (butir 4.9).
++ Rotasi kredensial atau secret yang diterima melalui password manager atau direct message setelah dipakai (butir 4.9).
+
+@@ .procedures[3].steps[3][0]
+- Terima kredensial pelanggan lewat direct message atau password manager (butir 4.18).
++ Terima kredensial pelanggan melalui direct message atau password manager (butir 4.18).
+
+@@ .procedures[3].steps[4][0]
+- Minta pelanggan mengganti kredensialnya sesudah dipakai (butir 4.18).
++ Minta pelanggan mengganti kredensialnya setelah dipakai (butir 4.18).
+
+@@ .procedures[3].steps[5][0]
+- Hapus kredensial, token, atau secret yang ditemukan di chat, tiket, dokumen, spreadsheet, atau paket knowledge base (butir 4.17).
++ Hapus kredensial, token, atau secret yang ditemukan di chat, ticket, dokumen, spreadsheet, atau paket knowledge base (butir 4.17).
+
+@@ .procedures[3].steps[7][2]
+- Laporan event keamanan; rekaman di SNX-ISMS-FRM-02
++ Laporan event keamanan; record di SNX-ISMS-FRM-02
+
+@@ .sla[1][0]
+- Hapus kredensial, token, atau secret yang ditemukan di chat, tiket, dokumen, spreadsheet, atau paket knowledge base
++ Hapus kredensial, token, atau secret yang ditemukan di chat, ticket, dokumen, spreadsheet, atau paket knowledge base
+
+@@ .sla[4][2]
+- Sesudah informasinya terkirim (butir 4.9)
++ Setelah informasinya terkirim (butir 4.9)
+
+@@ .sla[5][0]
+- Rotasi kredensial atau secret yang diterima lewat password manager atau direct message
++ Rotasi kredensial atau secret yang diterima melalui password manager atau direct message
+
+@@ .sla[5][2]
+- Sesudah dipakai (butir 4.9)
++ Setelah dipakai (butir 4.9)
+
+@@ .sla[6][2]
+- Pelanggan diminta mengganti sesudah dipakai (butir 4.18)
++ Pelanggan diminta mengganti setelah dipakai (butir 4.18)
+
+@@ .sla[9][0]
+- Peninjauan prosedur ini
++ Review prosedur ini
+
+@@ .related_documents[3][1]
+- Security Incident & Investigation Records; rekaman event keamanan.
++ Security Incident & Investigation Records; record event keamanan.

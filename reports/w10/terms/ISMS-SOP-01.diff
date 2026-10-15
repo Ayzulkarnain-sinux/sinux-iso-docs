@@ -1,0 +1,157 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-SOP-01: 39 teks berubah. Basis bed1bb6.
+
+@@ .scope[2]
+- Dikecualikan dari SOP ini: pekerjaan app-level pelanggan, seperti pembersihan konten aplikasi dan perbaikan kode, yang diserahkan ke developer atau PIC pelanggan; serta gangguan teknis tanpa indikasi keamanan, yang ditangani lewat SNX-OPS-SOP-04.
++ Dikecualikan dari SOP ini: pekerjaan app-level pelanggan, seperti pembersihan konten aplikasi dan perbaikan kode, yang diserahkan ke developer atau PIC pelanggan; serta gangguan teknis tanpa indikasi keamanan, yang ditangani melalui SNX-OPS-SOP-04.
+
+@@ .definitions[1][1]
+- Pengakuan pertama SOC Analyst di tiket bahwa event atau insiden diterima dan sedang ditangani (USULAN: penerima Ack belum ditetapkan).
++ Pengakuan pertama SOC Analyst di ticket bahwa event atau insiden diterima dan sedang ditangani (USULAN: penerima Ack belum ditetapkan).
+
+@@ .definitions[7][1]
+- Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO sesudah sebutan ini.
++ Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO setelah sebutan ini.
+
+@@ .definitions[11][1]
+- Insiden yang akar masalahnya sama dengan insiden sebelumnya.
++ Insiden yang root cause-nya sama dengan insiden sebelumnya.
+
+@@ .definitions[18][1]
+- Tiket induk satu insiden; alert dan tiket terkait ditautkan ke tiket ini.
++ Ticket induk satu insiden; alert dan ticket terkait ditautkan ke ticket ini.
+
+@@ .definitions[22][1]
+- Root cause analysis: analisis akar masalah sebuah insiden, ditulis di SNX-OPS-FRM-10.
++ Root cause analysis: analisis root cause sebuah insiden, ditulis di SNX-OPS-FRM-10.
+
+@@ .definitions[23][1]
+- SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal.
++ SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal.
+
+@@ .definitions[33][0]
+- Tindakan korektif
++ Corrective action
+
+@@ .definitions[33][1]
+- Tindakan menghilangkan akar masalah supaya insiden tidak terulang.
++ Tindakan menghilangkan root cause supaya insiden tidak terulang.
+
+@@ .definitions[37][1]
+- Waktu SOC Analyst menerima laporan event atau melihat alert, dicatat di tiket dan di kolom Waktu deteksi SNX-ISMS-FRM-02.
++ Waktu SOC Analyst menerima laporan event atau melihat alert, dicatat di ticket dan di kolom Waktu deteksi SNX-ISMS-FRM-02.
+
+@@ .definitions[38][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[11]
+- Pembelajaran (Annex A 5.27) dan tindakan korektif (ISO 9001:2015 10.2): insiden P1 dan P2 wajib punya RCA di SNX-OPS-FRM-10 dan tindakan korektif dengan pemilik dan tenggat. Lessons learned disimpan tanpa kredensial.
++ Pembelajaran (Annex A 5.27) dan corrective action (ISO 9001:2015 10.2): insiden P1 dan P2 wajib punya RCA di SNX-OPS-FRM-10 dan corrective action dengan pemilik dan tenggat. Lessons learned disimpan tanpa kredensial.
+
+@@ .roles[0][1]
+- Pemilik SOP. Incident Commander untuk insiden P1 dan P2. Me-review laporan insiden sebelum dikirim. Menyusun RCA dan mencatat tindakan korektif insiden P1 dan P2. Memelihara kontak eskalasi, playbook, dan latihan tabletop.
++ Pemilik SOP. Incident Commander untuk insiden P1 dan P2. Me-review laporan insiden sebelum dikirim. Menyusun RCA dan mencatat corrective action insiden P1 dan P2. Memelihara kontak eskalasi, playbook, dan latihan tabletop.
+
+@@ .roles[1][2]
+- Menetapkan hasil triage dan severity; menutup event yang bukan insiden; menjalankan containment sesudah change request disetujui.
++ Menetapkan hasil triage dan severity; menutup event yang bukan insiden; menjalankan containment setelah change request disetujui.
+
+@@ .roles[2][2]
+- Mengeksekusi patch, penggantian kredensial, dan restore dari backup sesudah change request disetujui.
++ Mengeksekusi patch, penggantian kredensial, dan restore dari backup setelah change request disetujui.
+
+@@ .roles[5][1]
+- Memastikan pembelajaran dari insiden masuk ke register risiko dan tindakan korektif, dan menyusun pelaporan ISMS.
++ Memastikan pembelajaran dari insiden masuk ke register risiko dan corrective action, dan menyusun pelaporan ISMS.
+
+@@ .roles[8][2]
+- Melapor langsung ke SOC lewat Zammad, Service Hub, atau kanal on-call.
++ Melapor langsung ke SOC melalui Zammad, Service Hub, atau kanal on-call.
+
+@@ .procedures[0].steps[2][0]
+- Pastikan personel on-call punya akses darurat ke sistem kritis lewat Jumphost dan password manager.
++ Pastikan personel on-call punya akses darurat ke sistem kritis melalui Jumphost dan password manager.
+
+@@ .procedures[1].intro[0]
+- Personel Operation melapor lewat Zammad dan personel lain lewat Service Hub (USULAN: batas ini belum diputus pimpinan SINUX). Seluruh personel boleh memakai kanal on-call sebagai pengganti sistem tiket.
++ Personel Operation melapor melalui Zammad dan personel lain melalui Service Hub (USULAN: batas ini belum diputus pimpinan SINUX). Seluruh personel boleh memakai kanal on-call sebagai pengganti sistem ticket.
+
+@@ .procedures[1].steps[0][2]
+- Tiket atau laporan di kanal on-call
++ Ticket atau laporan di kanal on-call
+
+@@ .procedures[1].steps[1][0]
+- Catat waktu deteksi di tiket saat menerima laporan event atau melihat alert.
++ Catat waktu deteksi di ticket saat menerima laporan event atau melihat alert.
+
+@@ .procedures[1].steps[1][2]
+- Waktu deteksi di tiket
++ Waktu deteksi di ticket
+
+@@ .procedures[2].steps[1][0]
+- Catat alasan hasil triage di tiket.
++ Catat alasan hasil triage di ticket.
+
+@@ .procedures[2].steps[1][2]
+- Alasan triage di tiket
++ Alasan triage di ticket
+
+@@ .procedures[2].steps[2][0]
+- Tutup event yang bukan insiden dan catat usulan tuning rule di tiket.
++ Tutup event yang bukan insiden dan catat usulan tuning rule di ticket.
+
+@@ .procedures[2].steps[2][2]
+- Tiket event ditutup dengan usulan tuning
++ Ticket event ditutup dengan usulan tuning
+
+@@ .procedures[2].steps[3][2]
+- Insiden dengan severity di tiket
++ Insiden dengan severity di ticket
+
+@@ .procedures[2].steps[9][0]
+- Teruskan insiden P3 dan P4 lewat tiket.
++ Teruskan insiden P3 dan P4 melalui ticket.
+
+@@ .procedures[2].steps[9][2]
+- Tiket insiden P3 atau P4
++ Ticket insiden P3 atau P4
+
+@@ .procedures[3].steps[3][0]
+- Jalankan containment sesudah change request disetujui.
++ Jalankan containment setelah change request disetujui.
+
+@@ .procedures[3].steps[5][0]
+- Lakukan sweep IOC ke host sejenis berdasarkan hash sesudah satu host terbukti kompromi.
++ Lakukan sweep IOC ke host sejenis berdasarkan hash setelah satu host terbukti kompromi.
+
+@@ .procedures[6].steps[4][0]
+- Catat tindakan korektif dengan pemilik dan tenggat di SNX-OPS-FRM-10.
++ Catat corrective action dengan pemilik dan tenggat di SNX-OPS-FRM-10.
+
+@@ .procedures[6].steps[4][2]
+- Tindakan korektif di SNX-OPS-FRM-10
++ Corrective action di SNX-OPS-FRM-10
+
+@@ .exceptions[2][0]
+- Laporan tidak lewat Zammad atau Service Hub
++ Laporan tidak melalui Zammad atau Service Hub
+
+@@ .exceptions[2][1]
+- Seluruh personel melapor lewat kanal on-call (butir 6.2).
++ Seluruh personel melapor melalui kanal on-call (butir 6.2).
+
+@@ .exceptions[3][1]
+- SOC Analyst menutup event dengan alasan dan usulan tuning rule di tiket (butir 6.3).
++ SOC Analyst menutup event dengan alasan dan usulan tuning rule di ticket (butir 6.3).
+
+@@ .conclusion[0]
+- Lead SOC memantau kepatuhan lewat empat indikator kinerja di bagian 8 dan, sebagai pemilik SOP, meninjau dokumen ini setiap tahun.
++ Lead SOC memantau kepatuhan melalui empat indikator kinerja di bagian 8 dan, sebagai pemilik SOP, meninjau dokumen ini setiap tahun.
+
+@@ .related_documents[3][1]
+- Root Cause Analysis & Corrective Action Report; RCA dan tindakan korektif.
++ Root Cause Analysis & Corrective Action Report; RCA dan corrective action.
+
+@@ .iso_refs.ISO 9001:2015
+- 10.2 (Ketidaksesuaian dan tindakan korektif)
++ 10.2 (Ketidaksesuaian dan corrective action)

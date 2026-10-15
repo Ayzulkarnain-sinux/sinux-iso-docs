@@ -1,0 +1,37 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), HR-RPT-01: 9 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[2].table.rows[1][1]
+- Menjadi isi SOP Training & Development (dalam peninjauan). Laporan ini hanya mencatat pelatihan yang sudah berlangsung.
++ Menjadi isi SOP Training & Development (dalam review). Laporan ini hanya mencatat pelatihan yang sudah berlangsung.
+
+@@ .sections[2].blocks[0].table.rows[5][1]
+- Pengetahuan, keterampilan, atau perilaku yang harus dicapai peserta sesudah pelatihan.
++ Pengetahuan, keterampilan, atau perilaku yang harus dicapai peserta setelah pelatihan.
+
+@@ .sections[2].blocks[0].table.rows[10][1]
+- Tanggal penilaian E3 dan E4, sesudah peserta kembali bekerja.
++ Tanggal penilaian E3 dan E4, setelah peserta kembali bekerja.
+
+@@ .sections[2].blocks[0].table.rows[15][1]
+- Laporan ini sesudah diisi untuk satu pelatihan.
++ Laporan ini setelah diisi untuk satu pelatihan.
+
+@@ .sections[3].blocks[5].p
+- 4.6 HRGA Officer mencatat hasil E1 dan E2 sesudah pelatihan selesai, dan hasil E3 dan E4 pada Tanggal Evaluasi Lanjutan. HR Lead menetapkan tanggal itu untuk tiap pelatihan (USULAN).
++ 4.6 HRGA Officer mencatat hasil E1 dan E2 setelah pelatihan selesai, dan hasil E3 dan E4 pada Tanggal Evaluasi Lanjutan. HR Lead menetapkan tanggal itu untuk tiap pelatihan (USULAN).
+
+@@ .sections[4].blocks[1].table.rows[5][1]
+- Menyetujui laporan ini lewat blok Approved By pada halaman depan.
++ Menyetujui laporan ini melalui blok Approved By pada halaman depan.
+
+@@ .sections[7].blocks[0].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[9].blocks[0].table.rows[5][1]
+- SOP Training & Development, dalam peninjauan: tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan. Dikecualikan dari laporan ini.
++ SOP Training & Development, dalam review: tata cara identifikasi kebutuhan pelatihan, pelaksanaan, dan pengembangan kemampuan karyawan. Dikecualikan dari laporan ini.
+
+@@ .sections[10].blocks[0].p
+- Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. HR Lead meninjau laporan ini setiap tahun.
++ Laporan ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approved By. HR Lead meninjau laporan ini setiap tahun.

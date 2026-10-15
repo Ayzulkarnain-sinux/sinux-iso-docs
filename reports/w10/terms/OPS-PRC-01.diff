@@ -1,0 +1,245 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-PRC-01: 61 teks berubah. Basis bed1bb6.
+
+@@ .purpose[0]
+- Dokumen ini memetakan proses bisnis Divisi Operation SINUX, dari kontrak ditandatangani sampai layanan berjalan, diukur, dan diperbaiki. Peta ini menjadi rujukan pendekatan proses ISO 9001:2015 klausul 4.4 dan perencanaan operasional ISO/IEC 27001:2022 klausul 8.1. Setiap tahap menyebut pemilik, input, output, dan rekaman yang menjadi bukti audit.
++ Dokumen ini memetakan proses bisnis Divisi Operation SINUX, dari kontrak ditandatangani sampai layanan berjalan, diukur, dan diperbaiki. Peta ini menjadi rujukan pendekatan proses ISO 9001:2015 klausul 4.4 dan perencanaan operasional ISO/IEC 27001:2022 klausul 8.1. Setiap tahap menyebut pemilik, input, output, dan record yang menjadi bukti audit.
+
+@@ .definitions[2][1]
+- Network Operations Center, sub divisi Operation yang memantau dashboard layanan dan menangani tiket.
++ Network Operations Center, sub divisi Operation yang memantau dashboard layanan dan menangani ticket.
+
+@@ .definitions[10][1]
+- Uraian tiap proses inti yang memuat pemilik, input, output, pelanggan proses, prosedur, dan rekaman bukti.
++ Uraian tiap proses inti yang memuat pemilik, input, output, pelanggan proses, prosedur, dan record bukti.
+
+@@ .definitions[24][1]
+- Dua tingkat severity tertinggi pada tiket, P1 Kritis dan P2 Tinggi, dari skala P1 sampai P4 di POL-OPS-001.
++ Dua tingkat severity tertinggi pada ticket, P1 Kritis dan P2 Tinggi, dari skala P1 sampai P4 di POL-OPS-001.
+
+@@ .definitions[25][1]
+- Sistem tiket untuk Operation.
++ Sistem ticket untuk Operation.
+
+@@ .definitions[26][1]
+- SINUX Service Hub berbasis GLPI (ticket.sinux.co.id), sistem tiket untuk generalist.
++ SINUX Service Hub berbasis GLPI (ticket.sinux.co.id), sistem ticket untuk generalist.
+
+@@ .policy[4]
+- Layanan dinyatakan BAU hanya setelah G3 lolos, dan perubahan konfigurasi dijalankan lewat change request menurut SNX-OPS-SOP-02 (ISO 9001:2015 8.5).
++ Layanan dinyatakan BAU hanya setelah G3 lolos, dan perubahan konfigurasi dijalankan melalui change request menurut SNX-OPS-SOP-02 (ISO 9001:2015 8.5).
+
+@@ .policy[7]
+- Tiket pelanggan Nusagrid dicatat di Zammad. Tiket GMF dedicated dan permintaan internal dicatat di Service Hub. Change request dan Shift Log dicatat di Service Hub (USULAN). Batas pemakaian dengan Zammad belum diputus.
++ Ticket pelanggan Nusagrid dicatat di Zammad. Ticket GMF dedicated dan permintaan internal dicatat di Service Hub. Change request dan Shift Log dicatat di Service Hub (USULAN). Batas pemakaian dengan Zammad belum diputus.
+
+@@ .policy[8]
+- Kredensial dilarang ditulis di chat, tiket, atau dokumen. Kredensial disimpan di password manager (vault).
++ Kredensial dilarang ditulis di chat, ticket, atau dokumen. Kredensial disimpan di password manager (vault).
+
+@@ .policy[9]
+- Akses production lewat Jumphost SINUX, yang merekam sesi untuk audit akses.
++ Akses production melalui Jumphost SINUX, yang merekam sesi untuk audit akses.
+
+@@ .policy[10]
+- Dokumen dan rekaman disimpan di Google Drive SINUX dan dikendalikan sesuai SNX-ISMS-PRO-01. Rekaman mengikuti masa simpan di dokumennya masing-masing.
++ Dokumen dan record disimpan di Google Drive SINUX dan dikendalikan sesuai SNX-ISMS-PRO-01. Record mengikuti masa simpan di dokumennya masing-masing.
+
+@@ .roles[0][1]
+- Memimpin tinjauan manajemen yang membahas hasil pengukuran kinerja proses.
++ Memimpin review manajemen yang membahas hasil pengukuran kinerja proses.
+
+@@ .roles[0][2]
+- Menyetujui dokumen ini lewat blok Approved By.
++ Menyetujui dokumen ini melalui blok Approved By.
+
+@@ .procedures[0].intro[0]
+- Uraian proses (SIPOC) memuat pemilik proses, input, output, pelanggan proses, prosedur, dan rekaman bukti. Nomor langkah sama dengan nomor proses. Kolom PIC berisi pemilik proses, dan kolom Output / Rekaman berisi rekaman bukti serta pelanggan proses.
++ Uraian proses (SIPOC) memuat pemilik proses, input, output, pelanggan proses, prosedur, dan record bukti. Nomor langkah sama dengan nomor proses. Kolom PIC berisi pemilik proses, dan kolom Output / Record berisi record bukti serta pelanggan proses.
+
+@@ .procedures[0].steps[0][2]
+- Rekaman: kontrak dan paket handover G1. Pelanggan proses: SD dan PM.
++ Record: kontrak dan paket handover G1. Pelanggan proses: SD dan PM.
+
+@@ .procedures[0].steps[1][2]
+- Rekaman: SNX-OPS-FRM-01 dan SNX-OPS-FRM-02. Pelanggan proses: NOC dan SOC.
++ Record: SNX-OPS-FRM-01 dan SNX-OPS-FRM-02. Pelanggan proses: NOC dan SOC.
+
+@@ .procedures[0].steps[2][2]
+- Rekaman: SNX-OPS-FRM-03 dan SNX-OPS-FRM-04. Pelanggan proses: pelanggan, NOC, dan SOC.
++ Record: SNX-OPS-FRM-03 dan SNX-OPS-FRM-04. Pelanggan proses: pelanggan, NOC, dan SOC.
+
+@@ .procedures[0].steps[3][2]
+- Rekaman: SNX-OPS-FRM-05 dan SNX-OPS-FRM-06. Pelanggan proses: pelanggan dan Operation.
++ Record: SNX-OPS-FRM-05 dan SNX-OPS-FRM-06. Pelanggan proses: pelanggan dan Operation.
+
+@@ .procedures[0].steps[4][0]
+- Operasi layanan 24/7: tangani alert dan tiket layanan BAU serta laksanakan maintenance bersama Lead NOC dan Lead SOC, mengikuti SNX-OPS-SOP-03, SNX-OPS-SOP-04, dan SNX-ISMS-SOP-01.
++ Operasi layanan 24/7: tangani alert dan ticket layanan BAU serta laksanakan maintenance bersama Lead NOC dan Lead SOC, mengikuti SNX-OPS-SOP-03, SNX-OPS-SOP-04, dan SNX-ISMS-SOP-01.
+
+@@ .procedures[0].steps[4][2]
+- Rekaman: SNX-OPS-FRM-07, SNX-OPS-FRM-08, dan SNX-ISMS-FRM-02. Pelanggan proses: pelanggan.
++ Record: SNX-OPS-FRM-07, SNX-OPS-FRM-08, dan SNX-ISMS-FRM-02. Pelanggan proses: pelanggan.
+
+@@ .procedures[0].steps[5][0]
+- Pemantauan SLA: susun laporan SLA bulanan dari data monitoring dan tiket, mengikuti SNX-OPS-SOP-05.
++ Pemantauan SLA: susun laporan SLA bulanan dari data monitoring dan ticket, mengikuti SNX-OPS-SOP-05.
+
+@@ .procedures[0].steps[5][2]
+- Rekaman: SNX-OPS-FRM-09. Pelanggan proses: pelanggan dan manajemen.
++ Record: SNX-OPS-FRM-09. Pelanggan proses: pelanggan dan manajemen.
+
+@@ .procedures[0].steps[6][0]
+- Pengukuran kinerja: susun laporan KPI dari laporan SLA, tiket, change, dan backup sebagai masukan tinjauan manajemen, mengikuti SNX-OPS-SOP-05.
++ Pengukuran kinerja: susun laporan KPI dari laporan SLA, ticket, change, dan backup sebagai masukan review manajemen, mengikuti SNX-OPS-SOP-05.
+
+@@ .procedures[0].steps[6][2]
+- Rekaman: SNX-OPS-RPT-01. Pelanggan proses: COO dan manajemen.
++ Record: SNX-OPS-RPT-01. Pelanggan proses: COO dan manajemen.
+
+@@ .procedures[0].steps[7][0]
+- Perbaikan: tetapkan RCA, tindakan korektif, dan pembaruan risiko dari insiden P1 dan P2, temuan audit, dan KPI di bawah target, mengikuti SNX-OPS-SOP-04.
++ Perbaikan: tetapkan RCA, corrective action, dan pembaruan risiko dari insiden P1 dan P2, temuan audit, dan KPI di bawah target, mengikuti SNX-OPS-SOP-04.
+
+@@ .procedures[0].steps[7][2]
+- Rekaman: SNX-OPS-FRM-10 dan SNX-ISMS-REG-02. Pelanggan proses: semua proses.
++ Record: SNX-OPS-FRM-10 dan SNX-ISMS-REG-02. Pelanggan proses: semua proses.
+
+@@ .procedures[1].steps[0][0]
+- Serahkan paket handover G1 ke SD dan PM sesudah PO atau kontrak ditandatangani.
++ Serahkan paket handover G1 ke SD dan PM setelah PO atau kontrak ditandatangani.
+
+@@ .procedures[1].steps[3][0]
+- Isi Checklist G3 dengan status tiap butir: aset terdaftar, monitoring aktif, backup dan restore teruji, as-built, runbook, dan akses lewat Jumphost.
++ Isi Checklist G3 dengan status tiap butir: aset terdaftar, monitoring aktif, backup dan restore teruji, as-built, runbook, dan akses melalui Jumphost.
+
+@@ .procedures[2].steps[4][0]
+- Pimpin tinjauan manajemen yang membahas hasil pengukuran kinerja proses.
++ Pimpin review manajemen yang membahas hasil pengukuran kinerja proses.
+
+@@ .procedures[2].steps[4][2]
+- Rekaman tinjauan manajemen
++ Record review manajemen
+
+@@ .flow.caption
+- Gambar 1. Alur proses inti Operation dengan gate G1 dan G3. Nama di bawah tiap kotak adalah pemilik proses atau pemilik gate. Garis putus-putus menunjukkan siklus perbaikan berkelanjutan: tindakan korektif kembali ke operasi layanan, dan perbaikan masuk ke kontrak dan rencana berikutnya.
++ Gambar 1. Alur proses inti Operation dengan gate G1 dan G3. Nama di bawah tiap kotak adalah pemilik proses atau pemilik gate. Garis putus-putus menunjukkan siklus perbaikan berkelanjutan: corrective action kembali ke operasi layanan, dan perbaikan masuk ke kontrak dan rencana berikutnya.
+
+@@ .sla[0][0]
+- Kick-off internal sesudah PO atau kontrak ditandatangani
++ Kick-off internal setelah PO atau kontrak ditandatangani
+
+@@ .sla[4][0]
+- Tinjauan dokumen ini
++ Review dokumen ini
+
+@@ .exceptions[0][1]
+- Service Delivery Manager mengembalikan paket ke VP Commercial dan mencatat kriteria yang belum terpenuhi di tiket. Onboarding belum dimulai.
++ Service Delivery Manager mengembalikan paket ke VP Commercial dan mencatat kriteria yang belum terpenuhi di ticket. Onboarding belum dimulai.
+
+@@ .exceptions[1][1]
+- Head of Operation menolak serah terima secara tertulis dan mencatat kriteria yang belum terpenuhi, beserta pemilik dan tanggal targetnya, di tiket. Layanan tetap berstatus hypercare sampai kriteria terpenuhi, lalu Head of Operation memeriksa ulang G3.
++ Head of Operation menolak serah terima secara tertulis dan mencatat kriteria yang belum terpenuhi, beserta pemilik dan tanggal targetnya, di ticket. Layanan tetap berstatus hypercare sampai kriteria terpenuhi, lalu Head of Operation memeriksa ulang G3.
+
+@@ .exceptions[3][0]
+- Gate dilewati, rekaman tidak lengkap, atau SLA terlewat berulang
++ Gate dilewati, record tidak lengkap, atau SLA terlewat berulang
+
+@@ .conclusion[0]
+- Kepatuhan terhadap alur ini diukur lewat SNX-OPS-RPT-01, dan ketidaksesuaian proses ditangani lewat SNX-OPS-FRM-10. Head of Operation meninjau dokumen ini setiap tahun.
++ Kepatuhan terhadap alur ini diukur melalui SNX-OPS-RPT-01, dan ketidaksesuaian proses ditangani melalui SNX-OPS-FRM-10. Head of Operation meninjau dokumen ini setiap tahun.
+
+@@ .related_documents[6][1]
+- Project Plan, Scope & Timeline Records. Rekaman proses 2 dan tempat Checklist G1.
++ Project Plan, Scope & Timeline Records. Record proses 2 dan tempat Checklist G1.
+
+@@ .related_documents[7][1]
+- Project Risk Register. Rekaman proses 2.
++ Project Risk Register. Record proses 2.
+
+@@ .related_documents[8][1]
+- Project Progress & Monitoring Report. Rekaman proses 3.
++ Project Progress & Monitoring Report. Record proses 3.
+
+@@ .related_documents[9][1]
+- Change Request & Approval Log. Rekaman proses 3.
++ Change Request & Approval Log. Record proses 3.
+
+@@ .related_documents[10][1]
+- Testing / UAT & Quality Verification Records. Rekaman proses 4 dan bukti G2.
++ Testing / UAT & Quality Verification Records. Record proses 4 dan bukti G2.
+
+@@ .related_documents[11][1]
+- Project Handover / BAST & Closure Report. Rekaman proses 4, tempat BAST pada G2 dan Checklist G3.
++ Project Handover / BAST & Closure Report. Record proses 4, tempat BAST pada G2 dan Checklist G3.
+
+@@ .related_documents[12][1]
+- Maintenance Schedule & Service Report. Rekaman proses 5.
++ Maintenance Schedule & Service Report. Record proses 5.
+
+@@ .related_documents[13][1]
+- Technical Ticket / Incident Register. Rekaman proses 5.
++ Technical Ticket / Incident Register. Record proses 5.
+
+@@ .related_documents[14][1]
+- SLA Performance Monitoring Report. Rekaman proses 6.
++ SLA Performance Monitoring Report. Record proses 6.
+
+@@ .related_documents[15][1]
+- Operations KPI & Performance Monitoring Report. Rekaman proses 7 dan masukan tinjauan manajemen.
++ Operations KPI & Performance Monitoring Report. Record proses 7 dan masukan review manajemen.
+
+@@ .related_documents[16][1]
+- Root Cause Analysis & Corrective Action Report. Rekaman proses 8 dan penanganan ketidaksesuaian proses.
++ Root Cause Analysis & Corrective Action Report. Record proses 8 dan penanganan ketidaksesuaian proses.
+
+@@ .related_documents[17][1]
+- Information Classification & Handling Procedure. Label dokumen proyek, BAST, laporan, dan rekaman operasi.
++ Information Classification & Handling Procedure. Label dokumen proyek, BAST, laporan, dan record operasi.
+
+@@ .related_documents[19][1]
+- SOP IT Asset & Configuration Management. Inventaris aset dan konfigurasi; perubahan konfigurasi lewat SNX-OPS-SOP-02.
++ SOP IT Asset & Configuration Management. Inventaris aset dan konfigurasi; perubahan konfigurasi melalui SNX-OPS-SOP-02.
+
+@@ .related_documents[20][1]
+- Information Security Risk Assessment Register. Risiko proyek berat dan temuan RCA dinaikkan ke register risiko ISMS. Juga rekaman proses 8.
++ Information Security Risk Assessment Register. Risiko proyek berat dan temuan RCA dinaikkan ke register risiko ISMS. Juga record proses 8.
+
+@@ .related_documents[26][1]
+- Backup Log & Restore Testing Records. Rekaman proses backup dan pemulihan.
++ Backup Log & Restore Testing Records. Record proses backup dan pemulihan.
+
+@@ .related_documents[29][1]
+- Security Incident & Investigation Records. Rekaman proses 5 dan penanganan insiden keamanan.
++ Security Incident & Investigation Records. Record proses 5 dan penanganan insiden keamanan.
+
+@@ .records[1][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .records[2][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .records[3][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .records[4][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .records[5][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .records[6][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .records[7][2]
+- Mengikuti masa simpan di dokumen rekaman
++ Mengikuti masa simpan di dokumen record
+
+@@ .iso_refs.ISO 9001:2015
+- klausul 4.4 (Sistem manajemen mutu dan prosesnya), 8.1 (Perencanaan dan pengendalian operasional), 8.2 (Persyaratan untuk produk dan jasa), dan 8.5 (Produksi dan penyediaan jasa). Klausul 8.6 (Pelepasan produk dan jasa) juga berlaku pada gate G3, klausul 8.7 (Pengendalian keluaran yang tidak sesuai) dan 10.2 (Ketidaksesuaian dan tindakan korektif) pada penanganan ketidaksesuaian proses, dan klausul 9.1 (Pemantauan, pengukuran, analisis, dan evaluasi) pada pengukuran kinerja proses.
++ klausul 4.4 (Sistem manajemen mutu dan prosesnya), 8.1 (Perencanaan dan pengendalian operasional), 8.2 (Persyaratan untuk produk dan jasa), dan 8.5 (Produksi dan penyediaan jasa). Klausul 8.6 (Pelepasan produk dan jasa) juga berlaku pada gate G3, klausul 8.7 (Pengendalian keluaran yang tidak sesuai) dan 10.2 (Ketidaksesuaian dan corrective action) pada penanganan ketidaksesuaian proses, dan klausul 9.1 (Pemantauan, pengukuran, analisis, dan evaluasi) pada pengukuran kinerja proses.

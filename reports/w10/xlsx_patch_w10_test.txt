@@ -1,0 +1,8 @@
+POSITIF rc 0 {"pass": true, "fails": [], "features_before": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "Alur Proses": [1, 0, 0, 0, 0], "Daf
+  Risk Register freeze B5 orient landscape fitToPage True fitToWidth 1 fitToHeight 0 ptr $4:$4
+  Daftar freeze A2 orient landscape fitToPage True fitToWidth 1 fitToHeight 0 ptr $1:$1
+  Kontrol Dokumen A14 wrap True | C31 wrap True | Daftar A width 20.0
+  Alur Proses gambar 1
+NEGATIF sheet bergambar rc 1 {"pass": false, "why": "sheet Alur Proses tidak ada atau berisi gambar; tidak diubah"}
+NEGATIF sheet tak ada rc 1 {"pass": false, "why": "sheet Tidak Ada tidak ada atau berisi gambar; tidak diubah"}
+NEGATIF wrap sheet bergambar rc 1 {"pass": false, "why": "sheet Alur Proses tidak ada atau berisi gambar; tidak diubah"}

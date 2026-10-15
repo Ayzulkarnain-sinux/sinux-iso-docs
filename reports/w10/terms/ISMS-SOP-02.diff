@@ -1,0 +1,93 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-SOP-02: 23 teks berubah. Basis bed1bb6.
+
+@@ .purpose[0]
+- SOP ini mengatur pemberian, perubahan, peninjauan, dan pencabutan hak akses ke sistem SINUX dan sistem pelanggan yang dikelola SINUX, berdasarkan prinsip least privilege dan need-to-know, agar hanya orang yang berwenang yang dapat mengakses informasi dan sistem.
++ SOP ini mengatur pemberian, perubahan, review, dan pencabutan hak akses ke sistem SINUX dan sistem pelanggan yang dikelola SINUX, berdasarkan prinsip least privilege dan need-to-know, agar hanya orang yang berwenang yang dapat mengakses informasi dan sistem.
+
+@@ .scope[1]
+- Sistem internal: email dan Drive, sistem tiket (Zammad dan Service Hub GLPI), knowledge base, password manager, Jumphost, monitoring (Nusametric dan Overseer), SIEM, console Nusagrid, Acronis, Cloudflare, dan AegisWAF.
++ Sistem internal: email dan Drive, sistem ticket (Zammad dan Service Hub GLPI), knowledge base, password manager, Jumphost, monitoring (Nusametric dan Overseer), SIEM, console Nusagrid, Acronis, Cloudflare, dan AegisWAF.
+
+@@ .definitions[14][1]
+- SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal.
++ SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal.
+
+@@ .definitions[16][1]
+- Sistem tiket untuk Ops.
++ Sistem ticket untuk Ops.
+
+@@ .policy[11]
+- NOC Engineer: sistem tiket Agent; monitoring read-only dan acknowledge alert; SIEM dan WAF read-only; console Nusagrid Operator; Acronis Operator; Jumphost sesuai aset yang ditugaskan; password manager collection tim sendiri; knowledge base sesuai peran tech-ops.
++ NOC Engineer: sistem ticket Agent; monitoring read-only dan acknowledge alert; SIEM dan WAF read-only; console Nusagrid Operator; Acronis Operator; Jumphost sesuai aset yang ditugaskan; password manager collection tim sendiri; knowledge base sesuai peran tech-ops.
+
+@@ .policy[12]
+- SOC Analyst: sistem tiket Agent; monitoring read-only; SIEM dan WAF Analyst; console Nusagrid read-only; Acronis read-only; Jumphost sesuai investigasi; password manager collection tim sendiri; knowledge base sesuai peran tech-ops.
++ SOC Analyst: sistem ticket Agent; monitoring read-only; SIEM dan WAF Analyst; console Nusagrid read-only; Acronis read-only; Jumphost sesuai investigasi; password manager collection tim sendiri; knowledge base sesuai peran tech-ops.
+
+@@ .policy[13]
+- Lead NOC dan Lead SOC: sistem tiket Group admin; monitoring Admin; SIEM dan WAF Admin; console Nusagrid Admin; Acronis Admin; Jumphost sesuai kebutuhan; password manager collection manager; knowledge base sesuai peran.
++ Lead NOC dan Lead SOC: sistem ticket Group admin; monitoring Admin; SIEM dan WAF Admin; console Nusagrid Admin; Acronis Admin; Jumphost sesuai kebutuhan; password manager collection manager; knowledge base sesuai peran.
+
+@@ .policy[14]
+- SD dan PM: sistem tiket Agent; monitoring read-only; SIEM dan WAF tidak ada akses; console Nusagrid read-only; Acronis tidak ada akses; Jumphost tidak ada akses; password manager collection proyek; knowledge base sesuai peran.
++ SD dan PM: sistem ticket Agent; monitoring read-only; SIEM dan WAF tidak ada akses; console Nusagrid read-only; Acronis tidak ada akses; Jumphost tidak ada akses; password manager collection proyek; knowledge base sesuai peran.
+
+@@ .roles[4][2]
+- Memicu perubahan atau pencabutan akses lewat pemberitahuan.
++ Memicu perubahan atau pencabutan akses melalui pemberitahuan.
+
+@@ .procedures[0].steps[0][2]
+- Tiket permintaan akses
++ Ticket permintaan akses
+
+@@ .procedures[0].steps[2][2]
+- Approval pemilik sistem; alasan penolakan dicatat di tiket
++ Approval pemilik sistem; alasan penolakan dicatat di ticket
+
+@@ .procedures[0].steps[4][0]
+- Setujui akses privileged ke sistem pelanggan; bila kontrak mensyaratkan, akses baru diberikan sesudah pelanggan menyetujui.
++ Setujui akses privileged ke sistem pelanggan; bila kontrak mensyaratkan, akses baru diberikan setelah pelanggan menyetujui.
+
+@@ .procedures[0].steps[8][0]
+- Serahkan kredensial awal lewat password manager.
++ Serahkan kredensial awal melalui password manager.
+
+@@ .procedures[1].intro[0]
+- Kredensial tidak dikirim lewat chat, tiket, email, atau dokumen.
++ Kredensial tidak dikirim melalui chat, ticket, email, atau dokumen.
+
+@@ .procedures[3].steps[2][0]
+- Cabut akses lama yang tidak relevan paling lambat 5 hari kerja sesudah mutasi.
++ Cabut akses lama yang tidak relevan paling lambat 5 hari kerja setelah mutasi.
+
+@@ .procedures[5].steps[2][2]
+- Hasil tinjauan di sheet Review Periodik
++ Hasil review di sheet Review Periodik
+
+@@ .flow.nodes.c
+- Ditolak, alasan / dicatat di tiket
++ Ditolak, alasan / dicatat di ticket
+
+@@ .sla[1][2]
+- 2 hari kerja sesudah atasan mengonfirmasi (USULAN)
++ 2 hari kerja setelah atasan mengonfirmasi (USULAN)
+
+@@ .sla[2][0]
+- Pembuatan akun sesudah approval
++ Pembuatan akun setelah approval
+
+@@ .exceptions[1][1]
+- Administrator sistem membuat akun sesudah Head of Operation dan pelanggan menyetujui (butir 6.1).
++ Administrator sistem membuat akun setelah Head of Operation dan pelanggan menyetujui (butir 6.1).
+
+@@ .exceptions[3][0]
+- Sistem internal tidak mendukung akses privileged lewat Jumphost
++ Sistem internal tidak mendukung akses privileged melalui Jumphost
+
+@@ .conclusion[0]
+- ISMS Coordinator memantau kepatuhan terhadap SOP ini lewat pelaksanaan review akses dan tindak lanjut temuannya.
++ ISMS Coordinator memantau kepatuhan terhadap SOP ini melalui pelaksanaan review akses dan tindak lanjut temuannya.
+
+@@ .records[1][0]
+- Tiket permintaan akses
++ Ticket permintaan akses

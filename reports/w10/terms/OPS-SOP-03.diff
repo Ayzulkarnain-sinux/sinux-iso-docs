@@ -1,0 +1,109 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-SOP-03: 27 teks berubah. Basis bed1bb6.
+
+@@ .scope[0]
+- Berlaku untuk perangkat, platform, dan layanan yang dikelola SINUX: VM dan platform Nusagrid, server WHM dan cPanel, network device, WAF dan proxy, sistem monitoring, sistem backup, serta sistem internal pendukung operasi (sistem tiket Zammad, Jumphost, password manager).
++ Berlaku untuk perangkat, platform, dan layanan yang dikelola SINUX: VM dan platform Nusagrid, server WHM dan cPanel, network device, WAF dan proxy, sistem monitoring, sistem backup, serta sistem internal pendukung operasi (sistem ticket Zammad, Jumphost, password manager).
+
+@@ .definitions[3][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket.
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket.
+
+@@ .definitions[9][1]
+- Rekaman satu pelaksanaan PM atau CM di sheet Service Report SNX-OPS-FRM-07.
++ Record satu pelaksanaan PM atau CM di sheet Service Report SNX-OPS-FRM-07.
+
+@@ .definitions[10][1]
+- Tingkat keparahan tiket dari P1 sampai P4 menurut SNX-OPS-SOP-04.
++ Tingkat keparahan ticket dari P1 sampai P4 menurut SNX-OPS-SOP-04.
+
+@@ .definitions[13][1]
+- Sistem tiket yang dipakai Operation.
++ Sistem ticket yang dipakai Operation.
+
+@@ .policy[5]
+- Kerusakan, penurunan kinerja, dan temuan PM yang tidak selesai saat PM ditangani sebagai CM dan dicatat sebagai tiket (ISO 9001 10.2).
++ Kerusakan, penurunan kinerja, dan temuan PM yang tidak selesai saat PM ditangani sebagai CM dan dicatat sebagai ticket (ISO 9001 10.2).
+
+@@ .roles[1][1]
+- Melaksanakan PM dan CM; mencatat tiket CM; mengisi service report.
++ Melaksanakan PM dan CM; mencatat ticket CM; mengisi service report.
+
+@@ .procedures[1].steps[5][0]
+- Jalankan PM yang mengubah sistem di window maintenance sesudah change disetujui.
++ Jalankan PM yang mengubah sistem di window maintenance setelah change disetujui.
+
+@@ .procedures[1].steps[8][2]
+- Tiket CM (butir 6.4)
++ Ticket CM (butir 6.4)
+
+@@ .procedures[2].steps[4][2]
+- Hasil tinjauan insiden bulanan
++ Hasil review insiden bulanan
+
+@@ .procedures[3].steps[0][0]
+- Catat kerusakan atau penurunan kinerja sebagai tiket di Zammad dan di SNX-OPS-FRM-08.
++ Catat kerusakan atau penurunan kinerja sebagai ticket di Zammad dan di SNX-OPS-FRM-08.
+
+@@ .procedures[3].steps[0][2]
+- Tiket di Zammad dan baris di SNX-OPS-FRM-08
++ Ticket di Zammad dan baris di SNX-OPS-FRM-08
+
+@@ .procedures[3].steps[1][0]
+- Tetapkan severity tiket sesuai SNX-OPS-SOP-04.
++ Tetapkan severity ticket sesuai SNX-OPS-SOP-04.
+
+@@ .procedures[3].steps[1][2]
+- Severity pada tiket
++ Severity pada ticket
+
+@@ .procedures[3].steps[2][2]
+- Hasil diagnosis di tiket
++ Hasil diagnosis di ticket
+
+@@ .procedures[3].steps[7][0]
+- Tutup tiket di Zammad.
++ Tutup ticket di Zammad.
+
+@@ .procedures[3].steps[7][2]
+- Tiket tertutup
++ Ticket tertutup
+
+@@ .procedures[3].steps[8][2]
+- Rekaman penghapusan data sesuai SNX-ISMS-SOP-04
++ Record penghapusan data sesuai SNX-ISMS-SOP-04
+
+@@ .flow.nodes.cm
+- Corrective maintenance (CM) / tiket Zammad, / SNX-OPS-FRM-08, / SNX-OPS-SOP-04
++ Corrective maintenance (CM) / ticket Zammad, / SNX-OPS-FRM-08, / SNX-OPS-SOP-04
+
+@@ .sla[11][0]
+- Tinjauan kepatuhan jadwal PM
++ Review kepatuhan jadwal PM
+
+@@ .sla[12][0]
+- Tinjauan insiden akibat kerusakan yang seharusnya terdeteksi PM
++ Review insiden akibat kerusakan yang seharusnya terdeteksi PM
+
+@@ .sla[13][0]
+- Respons, update ke pelanggan, dan target pulih tiket CM
++ Respons, update ke pelanggan, dan target pulih ticket CM
+
+@@ .exceptions[4][1]
+- NOC Engineer menandai kode T di sheet Jadwal PM. Lead NOC meninjaunya pada tinjauan kepatuhan bulanan (butir 6.3).
++ NOC Engineer menandai kode T di sheet Jadwal PM. Lead NOC meninjaunya pada review kepatuhan bulanan (butir 6.3).
+
+@@ .conclusion[0]
+- Lead NOC memantau kepatuhan terhadap SOP ini lewat tinjauan kepatuhan jadwal PM bulanan di SNX-OPS-FRM-07.
++ Lead NOC memantau kepatuhan terhadap SOP ini melalui review kepatuhan jadwal PM bulanan di SNX-OPS-FRM-07.
+
+@@ .related_documents[6][1]
+- Technical Ticket / Incident Register; rekap tiket CM.
++ Technical Ticket / Incident Register; rekap ticket CM.
+
+@@ .records[1][0]
+- Tiket CM (Zammad dan rekap SNX-OPS-FRM-08)
++ Ticket CM (Zammad dan rekap SNX-OPS-FRM-08)
+
+@@ .iso_refs.ISO 9001:2015
+- 7.1.3 (Infrastruktur), 8.5.1 (Pengendalian produksi dan penyediaan jasa), 10.2 (Ketidaksesuaian dan tindakan korektif)
++ 7.1.3 (Infrastruktur), 8.5.1 (Pengendalian produksi dan penyediaan jasa), 10.2 (Ketidaksesuaian dan corrective action)

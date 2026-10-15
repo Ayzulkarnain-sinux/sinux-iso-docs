@@ -1,0 +1,93 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), HR-JA-01: 23 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[1].p
+- Yang dikecualikan: jabatan kosong dan grading; KPI per jabatan beserta target numerik, bobot, dan sumber datanya (butir 4.6); hak tanda tangan kontrak dan otorisasi keuangan (butir 4.4); peran di dokumen ISO yang bukan jabatan, yang dipetakan lewat matriks peran (bagian 8).
++ Yang dikecualikan: jabatan kosong dan grading; KPI per jabatan beserta target numerik, bobot, dan sumber datanya (butir 4.6); hak tanda tangan kontrak dan otorisasi keuangan (butir 4.4); peran di dokumen ISO yang bukan jabatan, yang dipetakan melalui matriks peran (bagian 8).
+
+@@ .sections[3].blocks[6].p
+- 4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan. Masa pengalaman minimum ditentukan sesudah job evaluation.
++ 4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan. Masa pengalaman minimum ditentukan setelah job evaluation.
+
+@@ .sections[3].blocks[11].p
+- Karyawan yang berhalangan berangkat ke kantor, bukan karena sakit atau cuti, dapat bekerja dari rumah dengan izin atasan langsung. Karyawan itu tetap dapat dihubungi pada jam kerja lewat saluran komunikasi perusahaan dan melapor kepada atasan (Pasal 31).
++ Karyawan yang berhalangan berangkat ke kantor, bukan karena sakit atau cuti, dapat bekerja dari rumah dengan izin atasan langsung. Karyawan itu tetap dapat dihubungi pada jam kerja melalui saluran komunikasi perusahaan dan melapor kepada atasan (Pasal 31).
+
+@@ .sections[5].blocks[3].table.rows[6][1]
+- Memimpin tinjauan manajemen dan memastikan keputusan memiliki penanggung jawab serta tenggat tindak lanjut.
++ Memimpin review manajemen dan memastikan keputusan memiliki penanggung jawab serta tenggat tindak lanjut.
+
+@@ .sections[5].blocks[4].table.rows[5][1]
+- Pola kerja: rapat berkala untuk meninjau kinerja dan tinjauan manajemen (uraian butir 2 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5).
++ Pola kerja: rapat berkala untuk meninjau kinerja dan review manajemen (uraian butir 2 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5).
+
+@@ .sections[5].blocks[8].table.rows[3][1]
+- 1) Mengarahkan prioritas kerja antar fungsi sesuai mandat; 2) Memberikan peninjauan dan persetujuan operasional sesuai Authority Matrix; 3) Meminta laporan kinerja dan rencana perbaikan
++ 1) Mengarahkan prioritas kerja antar fungsi sesuai mandat; 2) Memberikan review dan persetujuan operasional sesuai Authority Matrix; 3) Meminta laporan kinerja dan rencana perbaikan
+
+@@ .sections[5].blocks[8].table.rows[5][1]
+- Pola kerja: rapat dan peninjauan lintas fungsi (uraian butir 1 sampai 4). Insiden P1 dapat membuat COO dihubungi di luar jam kerja (POL-OPS-001, draf v0.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5).
++ Pola kerja: rapat dan review lintas fungsi (uraian butir 1 sampai 4). Insiden P1 dapat membuat COO dihubungi di luar jam kerja (POL-OPS-001, draf v0.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5).
+
+@@ .sections[5].blocks[11].table.rows[2][1]
+- Mengendalikan proses proposal, peninjauan pricing, negosiasi dan persetujuan sebelum penawaran.
++ Mengendalikan proses proposal, review pricing, negosiasi dan persetujuan sebelum penawaran.
+
+@@ .sections[5].blocks[11].table.rows[6][1]
+- Melakukan peninjauan aktivitas tim komersial dan tindakan perbaikan terhadap kesenjangan target.
++ Melakukan review aktivitas tim komersial dan tindakan perbaikan terhadap kesenjangan target.
+
+@@ .sections[5].blocks[15].table.rows[2][1]
+- Memonitor tiket insiden, permintaan layanan, perubahan konfigurasi dan eskalasi SLA di Zammad.
++ Memonitor ticket insiden, permintaan layanan, perubahan konfigurasi dan eskalasi SLA di Zammad.
+
+@@ .sections[5].blocks[15].table.rows[4][1]
+- Mengelola risiko delivery, defect, keterlambatan, serta tindakan korektif.
++ Mengelola risiko delivery, defect, keterlambatan, serta corrective action.
+
+@@ .sections[5].blocks[16].table.rows[5][1]
+- Pola kerja: memantau tiket, SLA, proyek, dan perubahan konfigurasi (uraian butir 2 dan 3). POL-OPS-001 (draf v0.1) menetapkan layanan Operation berjalan 24/7. Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; eskalasi insiden dapat datang di luar jam kerja (USULAN). Risiko kerja: risiko delivery, defect, dan keterlambatan dikelola lewat tindakan korektif (uraian butir 5); perubahan berisiko ditahan tanpa persetujuan (wewenang 3).
++ Pola kerja: memantau ticket, SLA, proyek, dan perubahan konfigurasi (uraian butir 2 dan 3). POL-OPS-001 (draf v0.1) menetapkan layanan Operation berjalan 24/7. Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; eskalasi insiden dapat datang di luar jam kerja (USULAN). Risiko kerja: risiko delivery, defect, dan keterlambatan dikelola melalui corrective action (uraian butir 5); perubahan berisiko ditahan tanpa persetujuan (wewenang 3).
+
+@@ .sections[5].blocks[19].table.rows[3][1]
+- Melakukan peninjauan risiko implementasi, lisensi, kompatibilitas dan dependensi vendor.
++ Melakukan review risiko implementasi, lisensi, kompatibilitas dan dependensi vendor.
+
+@@ .sections[5].blocks[20].table.rows[3][1]
+- 1) Memberi rekomendasi kelayakan teknis; 2) Meminta klarifikasi kebutuhan dan peninjauan desain; 3) Mengeskalasi proposal yang tidak feasible
++ 1) Memberi rekomendasi kelayakan teknis; 2) Meminta klarifikasi kebutuhan dan review desain; 3) Mengeskalasi proposal yang tidak feasible
+
+@@ .sections[5].blocks[31].table.rows[0][1]
+- Melakukan peninjauan hukum atas kontrak pelanggan, vendor, tenaga kerja dan kemitraan.
++ Melakukan review hukum atas kontrak pelanggan, vendor, tenaga kerja dan kemitraan.
+
+@@ .sections[5].blocks[32].table.rows[5][1]
+- Pola kerja: tinjauan hukum atas kontrak dan dokumen, serta koordinasi dengan penasihat hukum eksternal (uraian butir 1 dan 6); laporan kinerja dan risiko legal ke Management bulanan dan triwulanan (bagian 7.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan dengan notaris atau instansi dapat berlangsung di luar kantor (USULAN). Risiko kerja: risiko hukum dikendalikan lewat tinjauan dan eskalasi ke Management (uraian butir 7, wewenang 3); dokumen legal bersifat rahasia (kompetensi perilaku Confidentiality).
++ Pola kerja: review hukum atas kontrak dan dokumen, serta koordinasi dengan penasihat hukum eksternal (uraian butir 1 dan 6); laporan kinerja dan risiko legal ke Management bulanan dan triwulanan (bagian 7.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan dengan notaris atau instansi dapat berlangsung di luar kantor (USULAN). Risiko kerja: risiko hukum dikendalikan melalui review dan eskalasi ke Management (uraian butir 7, wewenang 3); dokumen legal bersifat rahasia (kompetensi perilaku Confidentiality).
+
+@@ .sections[5].blocks[35].table.rows[0][1]
+- Mengumpulkan dokumen dan data untuk proses peninjauan perjanjian.
++ Mengumpulkan dokumen dan data untuk proses review perjanjian.
+
+@@ .sections[5].blocks[35].table.rows[4][1]
+- Menelusuri regulasi relevan dan merangkum perubahan untuk peninjauan atasan langsung.
++ Menelusuri regulasi relevan dan merangkum perubahan untuk review atasan langsung.
+
+@@ .sections[5].blocks[36].table.rows[3][1]
+- 1) Meminta kelengkapan dokumen; 2) Menyampaikan temuan untuk peninjauan atasan langsung; 3) Tidak memberi persetujuan hukum final tanpa delegasi
++ 1) Meminta kelengkapan dokumen; 2) Menyampaikan temuan untuk review atasan langsung; 3) Tidak memberi persetujuan hukum final tanpa delegasi
+
+@@ .sections[5].blocks[51].table.rows[0][1]
+- Menerima, mengklasifikasikan dan mencatat tiket/permintaan layanan di Zammad.
++ Menerima, mengklasifikasikan dan mencatat ticket/permintaan layanan di Zammad.
+
+@@ .sections[5].blocks[56].table.rows[3][1]
+- 1) Menetapkan prioritas dan pembagian tugas HR; 2) Melakukan peninjauan mutu dan meminta koreksi atas hasil kerja HRGA Officer; 3) Menyetujui dokumen administratif dalam batas Authority Matrix; 4) Merekomendasikan hiring, salary action, disciplinary action dan policy kepada approver; 5) Mengeskalasi risiko ketenagakerjaan dan temuan audit; 6) Mengendalikan akses informasi personal sesuai kebijakan
++ 1) Menetapkan prioritas dan pembagian tugas HR; 2) Melakukan review mutu dan meminta koreksi atas hasil kerja HRGA Officer; 3) Menyetujui dokumen administratif dalam batas Authority Matrix; 4) Merekomendasikan hiring, salary action, disciplinary action dan policy kepada approver; 5) Mengeskalasi risiko ketenagakerjaan dan temuan audit; 6) Mengendalikan akses informasi personal sesuai kebijakan
+
+@@ .sections[10].blocks[1].table.rows[4][2]
+- Dokumen menjadi bukti penetapan peran dalam sistem manajemen mutu (bagian 1); status, revisi, dan peninjauan dikendalikan (bagian 9).
++ Dokumen menjadi bukti penetapan peran dalam sistem manajemen mutu (bagian 1); status, revisi, dan review dikendalikan (bagian 9).
+
+@@ .sections[10].blocks[1].table.rows[8][2]
+- Dokumen berklasifikasi RESTRICTED (Internal) dan dikendalikan lewat status dan revisi.
++ Dokumen berklasifikasi RESTRICTED (Internal) dan dikendalikan melalui status dan revisi.

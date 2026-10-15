@@ -1,0 +1,121 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-FRM-03: 30 teks berubah. Basis bed1bb6.
+
+@@ .sections[0].blocks[4].p
+- Tinjauan mencakup pengelolaan data pribadi dan informasi rahasia dalam kegiatan operasional SINUX, termasuk delapan hal berikut apabila relevan.
++ Review mencakup pengelolaan data pribadi dan informasi rahasia dalam kegiatan operasional SINUX, termasuk delapan hal berikut apabila relevan.
+
+@@ .sections[1].blocks[1].table.rows[2][1]
+- Dokumen atau rekaman yang diperiksa sebagai dasar status satu aspek.
++ Dokumen atau record yang diperiksa sebagai dasar status satu aspek.
+
+@@ .sections[1].blocks[1].table.rows[11][0]
+- Lembar tinjauan
++ Lembar review
+
+@@ .sections[1].blocks[1].table.rows[11][1]
+- Salinan terisi form ini untuk satu periode tinjauan.
++ Salinan terisi form ini untuk satu periode review.
+
+@@ .sections[2].blocks[0].p
+- Peninjauan dilakukan dengan mengacu pada ketentuan yang relevan, termasuk enam dasar berikut. Kolom Diverifikasi Pada ditambahkan (USULAN) dan diisi menurut Ketentuan butir 2.
++ Review dilakukan dengan mengacu pada ketentuan yang relevan, termasuk enam dasar berikut. Kolom Diverifikasi Pada ditambahkan (USULAN) dan diisi menurut Ketentuan butir 2.
+
+@@ .sections[3].blocks[0].p
+- 1. Staff Legal menyusun satu lembar tinjauan untuk setiap periode tinjauan. Periode tinjauan adalah setahun sekali (USULAN).
++ 1. Staff Legal menyusun satu lembar review untuk setiap periode review. Periode review adalah setahun sekali (USULAN).
+
+@@ .sections[3].blocks[1].p
+- 2. Staff Legal memverifikasi dan memperbarui dasar peninjauan di bagian 3 pada saat pemeriksaan dilakukan, lalu mengisi kolom Diverifikasi Pada.
++ 2. Staff Legal memverifikasi dan memperbarui dasar review di bagian 3 pada saat pemeriksaan dilakukan, lalu mengisi kolom Diverifikasi Pada.
+
+@@ .sections[3].blocks[7].p
+- 8. Staff Legal menulis di kolom Catatan/Tindak Lanjut nama rekaman dan lokasi bukti yang diperiksa.
++ 8. Staff Legal menulis di kolom Catatan/Tindak Lanjut nama record dan lokasi bukti yang diperiksa.
+
+@@ .sections[3].blocks[11].p
+- 12. Line Manager Legal memeriksa lembar tinjauan yang sudah terisi dan menulis rekomendasi di bagian 10.
++ 12. Line Manager Legal memeriksa lembar review yang sudah terisi dan menulis rekomendasi di bagian 10.
+
+@@ .sections[3].blocks[13].p
+- 14. Staff Legal menyimpan lembar tinjauan terisi di folder Google Drive departemen Legal dengan klasifikasi paling rendah RESTRICTED (Internal) (USULAN, SNX-LEG-SOP-01 butir 4.24).
++ 14. Staff Legal menyimpan lembar review terisi di folder Google Drive departemen Legal dengan klasifikasi paling rendah RESTRICTED (Internal) (USULAN, SNX-LEG-SOP-01 butir 4.24).
+
+@@ .sections[4].blocks[0].table.rows[0][1]
+- Menyusun lembar tinjauan, mengisi inventaris dan daftar evaluasi dari bukti, mencatat temuan, dan menyimpan lembar terisi (Ketentuan butir 1, 2, 4, 5, 7 sampai 11, dan 14). Mengisi tahapan Disusun oleh pada bagian 10.
++ Menyusun lembar review, mengisi inventaris dan daftar evaluasi dari bukti, mencatat temuan, dan menyimpan lembar terisi (Ketentuan butir 1, 2, 4, 5, 7 sampai 11, dan 14). Mengisi tahapan Disusun oleh pada bagian 10.
+
+@@ .sections[4].blocks[0].table.rows[1][1]
+- Pemilik form ini (USULAN) dan pemilik rekaman lembar tinjauan menurut SNX-LEG-SOP-03. Menetapkan PIC dan target penyelesaian temuan, memeriksa lembar tinjauan, menulis rekomendasi, dan memilih opsi kesimpulan (Ketentuan butir 11 sampai 13). Mengisi tahapan Diperiksa oleh pada bagian 10 (USULAN).
++ Pemilik form ini (USULAN) dan pemilik record lembar review menurut SNX-LEG-SOP-03. Menetapkan PIC dan target penyelesaian temuan, memeriksa lembar review, menulis rekomendasi, dan memilih opsi kesimpulan (Ketentuan butir 11 sampai 13). Mengisi tahapan Diperiksa oleh pada bagian 10 (USULAN).
+
+@@ .sections[4].blocks[1].p
+- Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01. Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar tinjauan tercatat di bagian 10. Peran penyetuju lembar tinjauan belum ditetapkan; Line Manager Legal memutuskannya (USULAN).
++ Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01. Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar review tercatat di bagian 10. Peran penyetuju lembar review belum ditetapkan; Line Manager Legal memutuskannya (USULAN).
+
+@@ .sections[5].blocks[9].p
+- 10. Nama, jabatan, tanggal, dan tanda tangan pada tabel Persetujuan Tinjauan diisi oleh masing-masing pihak yang bersangkutan.
++ 10. Nama, jabatan, tanggal, dan tanda tangan pada tabel Persetujuan Review diisi oleh masing-masing pihak yang bersangkutan.
+
+@@ .sections[7].blocks[6].table.rows[0][2]
+- Akses ke data pribadi dan informasi rahasia diminta lewat tiket dan diberikan menurut kebutuhan kerja dengan persetujuan akses yang tercatat (SNX-ISMS-SOP-02).
++ Akses ke data pribadi dan informasi rahasia diminta melalui ticket dan diberikan menurut kebutuhan kerja dengan persetujuan akses yang tercatat (SNX-ISMS-SOP-02).
+
+@@ .sections[7].blocks[6].table.rows[3][2]
+- Informasi RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi (SNX-LEG-SOP-01 butir 4.23). Informasi RESTRICTED (Internal) dikirim kepada penerima yang berhak, dan informasi SECRET lewat kanal yang ditetapkan SNX-ISMS-PRO-01 butir 4.9.
++ Informasi RESTRICTED (Internal) dan SECRET dikirim hanya melalui kanal resmi, tidak melalui kanal pribadi (SNX-LEG-SOP-01 butir 4.23). Informasi RESTRICTED (Internal) dikirim kepada penerima yang berhak, dan informasi SECRET melalui kanal yang ditetapkan SNX-ISMS-PRO-01 butir 4.9.
+
+@@ .sections[7].blocks[14].table.rows[0][2]
+- Permintaan subjek data atas data pribadinya diterima lewat jalur yang SINUX tetapkan, tercatat, dan dijawab sesuai peraturan yang berlaku.
++ Permintaan subjek data atas data pribadinya diterima melalui jalur yang SINUX tetapkan, tercatat, dan dijawab sesuai peraturan yang berlaku.
+
+@@ .sections[10].blocks[0].table.rows[0][1]
+- Legal Operational. Butir 4.21 memuat kewajiban meninjau kontrak atau proyek yang melibatkan data pribadi, butir 4.23 sampai 4.27 memuat aturan pengiriman, penyimpanan, akses, dan retensi dokumen legal, dan prosedur 6.7 memuat hasil tinjauan pelindungan data pribadi yang dicatat di form ini (USULAN).
++ Legal Operational. Butir 4.21 memuat kewajiban meninjau kontrak atau proyek yang melibatkan data pribadi, butir 4.23 sampai 4.27 memuat aturan pengiriman, penyimpanan, akses, dan retensi dokumen legal, dan prosedur 6.7 memuat hasil review pelindungan data pribadi yang dicatat di form ini (USULAN).
+
+@@ .sections[10].blocks[0].table.rows[1][1]
+- Legal Document Control & Retention. Kategori 4 memuat dokumen penelaahan oleh Departemen Legal, termasuk hasil pemeriksaan kepatuhan, dan Kategori 7 memuat dokumen pelindungan data dan kerahasiaan. Pemilik rekaman dan usulan periode retensi ada di sana.
++ Legal Document Control & Retention. Kategori 4 memuat dokumen penelaahan oleh Departemen Legal, termasuk hasil pemeriksaan kepatuhan, dan Kategori 7 memuat dokumen pelindungan data dan kerahasiaan. Pemilik record dan usulan periode retensi ada di sana.
+
+@@ .sections[10].blocks[0].table.rows[4][1]
+- Legal & Regulatory Requirements Register. Tempat daftar peraturan pelaksana yang menjadi dasar peninjauan (USULAN).
++ Legal & Regulatory Requirements Register. Tempat daftar peraturan pelaksana yang menjadi dasar review (USULAN).
+
+@@ .sections[11].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[11].blocks[1].table.rows[0][0]
+- Lembar tinjauan terisi: inventaris, daftar evaluasi, temuan, hasil, dan persetujuan
++ Lembar review terisi: inventaris, daftar evaluasi, temuan, hasil, dan persetujuan
+
+@@ .sections[11].blocks[1].table.rows[0][2]
+- Belum ditetapkan. Kategori SNX-LEG-SOP-03 untuk lembar tinjauan, Kategori 4 atau 7, belum diputus (USULAN).
++ Belum ditetapkan. Kategori SNX-LEG-SOP-03 untuk lembar review, Kategori 4 atau 7, belum diputus (USULAN).
+
+@@ .sections[11].blocks[4].table.rows[0][2]
+- Lembar tinjauan dicatat, disimpan, dan dapat ditelusuri lewat bagian 10.
++ Lembar review dicatat, disimpan, dan dapat ditelusuri melalui bagian 10.
+
+@@ .sections[11].blocks[4].table.rows[3][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[11].blocks[4].table.rows[9][2]
+- Dasar peninjauan di bagian 3 dan seluruh daftar evaluasi.
++ Dasar review di bagian 3 dan seluruh daftar evaluasi.
+
+@@ .sections[11].blocks[4].table.rows[10][1]
+- Annex A 5.33 Perlindungan rekaman
++ Annex A 5.33 Perlindungan record
+
+@@ .sections[11].blocks[4].table.rows[10][2]
+- Aspek E.1 dan rekaman lembar tinjauan.
++ Aspek E.1 dan record lembar review.
+
+@@ .sections[11].blocks[4].table.rows[12][2]
+- Tinjauan berkala yang diatur Ketentuan butir 1.
++ Review berkala yang diatur Ketentuan butir 1.
+
+@@ .sections[12].blocks[0].p
+- Form ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau form ini setiap tahun, dan Staff Legal menyusun satu lembar tinjauan untuk tiap periode tinjauan (Ketentuan butir 1).
++ Form ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau form ini setiap tahun, dan Staff Legal menyusun satu lembar review untuk tiap periode review (Ketentuan butir 1).

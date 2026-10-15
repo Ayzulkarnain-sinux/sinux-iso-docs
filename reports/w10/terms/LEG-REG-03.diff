@@ -1,0 +1,57 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), LEG-REG-03: 14 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[1].table.rows[6][0]
+- Peninjauan
++ Review
+
+@@ .sections[2].blocks[10].p
+- 11. Staff Legal mencatat tiap perubahan, hasil peninjauan, dampaknya pada kegiatan SINUX, dan tindak lanjutnya di tabel Riwayat Perubahan dan Peninjauan.
++ 11. Staff Legal mencatat tiap perubahan, hasil review, dampaknya pada kegiatan SINUX, dan tindak lanjutnya di tabel Riwayat Perubahan dan Review.
+
+@@ .sections[2].blocks[11].p
+- 12. Penanggung Jawab Kegiatan menjalankan tindak lanjut yang tercatat atas jabatannya di tabel Riwayat Perubahan dan Peninjauan (USULAN).
++ 12. Penanggung Jawab Kegiatan menjalankan tindak lanjut yang tercatat atas jabatannya di tabel Riwayat Perubahan dan Review (USULAN).
+
+@@ .sections[3].blocks[0].table.rows[1][1]
+- Pemilik dokumen dan pemilik rekaman register (USULAN). Menetapkan relevansi peraturan bagi SINUX dan memeriksa kelengkapan serta keakuratan register (Ketentuan butir 5 dan 7).
++ Pemilik dokumen dan pemilik record register (USULAN). Menetapkan relevansi peraturan bagi SINUX dan memeriksa kelengkapan serta keakuratan register (Ketentuan butir 5 dan 7).
+
+@@ .sections[4].blocks[9].p
+- 10. Kolom Tanggal Berlaku memuat tanggal peraturan mulai berlaku menurut teksnya. Kolom Peninjauan Terakhir dan Peninjauan Berikutnya memuat tanggal peninjauan menurut Ketentuan butir 9.
++ 10. Kolom Tanggal Berlaku memuat tanggal peraturan mulai berlaku menurut teksnya. Kolom Review Terakhir dan Review Berikutnya memuat tanggal review menurut Ketentuan butir 9.
+
+@@ .sections[4].blocks[11].p
+- 12. Staff Legal mengisi satu baris tabel Riwayat Perubahan dan Peninjauan untuk tiap perubahan peraturan dan tiap peninjauan, termasuk peninjauan yang tidak menemukan perubahan (Ketentuan butir 11). Kolom No. Baris memuat nomor baris pada tabel pertama.
++ 12. Staff Legal mengisi satu baris tabel Riwayat Perubahan dan Review untuk tiap perubahan peraturan dan tiap review, termasuk review yang tidak menemukan perubahan (Ketentuan butir 11). Kolom No. Baris memuat nomor baris pada tabel pertama.
+
+@@ .sections[5].blocks[6].table.header[3]
+- Peninjauan Terakhir
++ Review Terakhir
+
+@@ .sections[5].blocks[6].table.header[4]
+- Peninjauan Berikutnya
++ Review Berikutnya
+
+@@ .sections[5].blocks[8].table.header[2]
+- Perubahan atau Hasil Peninjauan
++ Perubahan atau Hasil Review
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[1].table.rows[0][0]
+- Register ini: tabel Daftar Peraturan dan Persyaratan Hukum, Relevansi dengan Kegiatan SINUX, Status dan Peninjauan, dan Riwayat Perubahan dan Peninjauan
++ Register ini: tabel Daftar Peraturan dan Persyaratan Hukum, Relevansi dengan Kegiatan SINUX, Status dan Review, dan Riwayat Perubahan dan Review
+
+@@ .sections[7].blocks[4].table.rows[2][2]
+- Register disimpan di lokasi yang ditetapkan, dan perubahannya tercatat di Riwayat Perubahan dan Peninjauan.
++ Register disimpan di lokasi yang ditetapkan, dan perubahannya tercatat di Riwayat Perubahan dan Review.
+
+@@ .sections[7].blocks[4].table.rows[5][2]
+- Register memuat persyaratan hukum, perundang-undangan, regulasi, dan kontrak yang teridentifikasi, dan isinya diperbarui lewat Peninjauan.
++ Register memuat persyaratan hukum, perundang-undangan, regulasi, dan kontrak yang teridentifikasi, dan isinya diperbarui melalui Review.
+
+@@ .sections[8].blocks[0].p
+- Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isinya menurut Ketentuan butir 9.
++ Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isinya menurut Ketentuan butir 9.

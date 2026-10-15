@@ -1,0 +1,73 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), MKT-REG-01: 18 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[2].table.rows[3][0]
+- Rencana pemasaran dan tinjauan kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif
++ Rencana pemasaran dan review kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan corrective action
+
+@@ .sections[2].blocks[0].table.rows[4][1]
+- Rekaman tertulis persetujuan Approver atas satu versi materi, misalnya email atau pesan di kanal kerja resmi.
++ Record tertulis persetujuan Approver atas satu versi materi, misalnya email atau pesan di kanal kerja resmi.
+
+@@ .sections[2].blocks[0].table.rows[5][1]
+- Rekaman tertulis hasil pemeriksaan Pemverifikasi atas satu klaim, misalnya email atau pesan di kanal kerja resmi.
++ Record tertulis hasil pemeriksaan Pemverifikasi atas satu klaim, misalnya email atau pesan di kanal kerja resmi.
+
+@@ .sections[2].blocks[3].table.rows[1][0]
+- Dalam Peninjauan
++ Dalam Review
+
+@@ .sections[3].blocks[6].p
+- 4.7 Brand & Marketing menjadwalkan publikasi hanya sesudah Approver menyetujui versi itu, dan Tanggal Publikasi tidak lebih awal dari Tanggal Persetujuan (SNX-HR-JA-01, JA-06 wewenang 2).
++ 4.7 Brand & Marketing menjadwalkan publikasi hanya setelah Approver menyetujui versi itu, dan Tanggal Publikasi tidak lebih awal dari Tanggal Persetujuan (SNX-HR-JA-01, JA-06 wewenang 2).
+
+@@ .sections[3].blocks[14].p
+- 4.14 Brand & Marketing menyimpan file final, bukti verifikasi, dan izin penggunaan aset di lokasi yang tertulis pada tabel Rekaman (bagian 8), dan menulis lokasi file final di Tabel 1 (SNX-HR-JA-01, JA-06 uraian 7). Brand & Marketing menyimpan bukti persetujuan di lokasi yang sama (USULAN).
++ 4.14 Brand & Marketing menyimpan file final, bukti verifikasi, dan izin penggunaan aset di lokasi yang tertulis pada tabel Record (bagian 8), dan menulis lokasi file final di Tabel 1 (SNX-HR-JA-01, JA-06 uraian 7). Brand & Marketing menyimpan bukti persetujuan di lokasi yang sama (USULAN).
+
+@@ .sections[3].blocks[15].p
+- 4.15 Brand & Marketing mencatat materi yang sudah terbit sebelum register ini berlaku dengan status Terbit. Approver meninjau materi itu, dan Tanggal Persetujuan diisi dengan tanggal peninjauan itu, tanpa tanggal mundur. Baris ini dikecualikan dari batas tanggal di butir 4.7 (USULAN).
++ 4.15 Brand & Marketing mencatat materi yang sudah terbit sebelum register ini berlaku dengan status Terbit. Approver meninjau materi itu, dan Tanggal Persetujuan diisi dengan tanggal review itu, tanpa tanggal mundur. Baris ini dikecualikan dari batas tanggal di butir 4.7 (USULAN).
+
+@@ .sections[4].blocks[1].table.rows[0][1]
+- Pencatat register. Menyusun materi dan menjadi PIC (butir 4.2 dan 4.3). Menulis Tabel 1 sampai Tabel 5. Menjadwalkan publikasi sesudah persetujuan, menarik materi yang diputuskan ditarik, dan menyimpan file final, bukti persetujuan, bukti verifikasi, serta izin penggunaan aset (butir 4.7, 4.9, 4.10, 4.14, dan 4.15).
++ Pencatat register. Menyusun materi dan menjadi PIC (butir 4.2 dan 4.3). Menulis Tabel 1 sampai Tabel 5. Menjadwalkan publikasi setelah persetujuan, menarik materi yang diputuskan ditarik, dan menyimpan file final, bukti persetujuan, bukti verifikasi, serta izin penggunaan aset (butir 4.7, 4.9, 4.10, 4.14, dan 4.15).
+
+@@ .sections[4].blocks[2].p
+- Direktur Utama menyetujui register ini, bukan materinya, lewat blok Approval pada halaman depan.
++ Direktur Utama menyetujui register ini, bukan materinya, melalui blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[10].p
+- 6.11 Brand & Marketing menulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan sesudah Approver menyetujui versi itu (butir 4.6).
++ 6.11 Brand & Marketing menulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan setelah Approver menyetujui versi itu (butir 4.6).
+
+@@ .sections[5].blocks[13].p
+- 6.14 Brand & Marketing mengubah status menjadi Dalam Peninjauan saat menyerahkan versi ke Reviewer.
++ 6.14 Brand & Marketing mengubah status menjadi Dalam Review saat menyerahkan versi ke Reviewer.
+
+@@ .sections[5].blocks[14].p
+- 6.15 Brand & Marketing mengubah status menjadi Disetujui sesudah Tanggal Persetujuan dan Bukti Persetujuan terisi.
++ 6.15 Brand & Marketing mengubah status menjadi Disetujui setelah Tanggal Persetujuan dan Bukti Persetujuan terisi.
+
+@@ .sections[5].blocks[21].p
+- 6.22 Brand & Marketing menulis Sesuai atau Tidak sesuai di kolom Hasil Verifikasi sesudah Pemverifikasi menyampaikan hasilnya (butir 4.12 dan 4.13).
++ 6.22 Brand & Marketing menulis Sesuai atau Tidak sesuai di kolom Hasil Verifikasi setelah Pemverifikasi menyampaikan hasilnya (butir 4.12 dan 4.13).
+
+@@ .sections[7].blocks[2].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[2].table.rows[1][1]
+- Google Drive; jalur folder ditulis di Tabel 1 dan Tabel 2. Pemilik: Brand & Marketing. Klasifikasi INTERNAL sebelum Disetujui dan PUBLIC sesudahnya (butir 4.5).
++ Google Drive; jalur folder ditulis di Tabel 1 dan Tabel 2. Pemilik: Brand & Marketing. Klasifikasi INTERNAL sebelum Disetujui dan PUBLIC setelahnya (butir 4.5).
+
+@@ .sections[7].blocks[5].table.rows[2][2]
+- Register mencatat versi dan lokasi file final. Pemilik register ada di tabel Rekaman, dan klasifikasi materi di butir 4.5.
++ Register mencatat versi dan lokasi file final. Pemilik register ada di tabel Record, dan klasifikasi materi di butir 4.5.
+
+@@ .sections[8].blocks[0].table.rows[7][1]
+- Marketing Planning & Performance Review. Memuat rencana pemasaran dan tinjauan kinerja.
++ Marketing Planning & Performance Review. Memuat rencana pemasaran dan review kinerja.
+
+@@ .sections[9].blocks[0].p
+- Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).
++ Register ini berstatus Draft dan baru dipakai setelah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).

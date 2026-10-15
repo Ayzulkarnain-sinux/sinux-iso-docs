@@ -1,0 +1,85 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), ISMS-PLN-01: 21 teks berubah. Basis bed1bb6.
+
+@@ .definitions[1][1]
+- Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO sesudah sebutan ini.
++ Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO setelah sebutan ini.
+
+@@ .definitions[16][1]
+- Tiket induk sebuah insiden di Zammad atau Service Hub (SNX-OPS-SOP-04), satu per insiden (SNX-ISMS-SOP-01).
++ Ticket induk sebuah insiden di Zammad atau Service Hub (SNX-OPS-SOP-04), satu per insiden (SNX-ISMS-SOP-01).
+
+@@ .definitions[17][1]
+- Zammad, sistem tiket Divisi Operation, dan Service Hub (GLPI), sistem tiket untuk generalist.
++ Zammad, sistem ticket Divisi Operation, dan Service Hub (GLPI), sistem ticket untuk generalist.
+
+@@ .definitions[28][1]
+- Rekaman hasil satu uji, yaitu laporan uji BCP dan IT recovery. Isi minimalnya ada di bagian 4.
++ Record hasil satu uji, yaitu laporan uji BCP dan IT recovery. Isi minimalnya ada di bagian 4.
+
+@@ .definitions[30][1]
+- Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket (SNX-HR-ORG-01).
++ Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket (SNX-HR-ORG-01).
+
+@@ .policy[14]
+- Kontrol keamanan informasi tetap berlaku selama gangguan, termasuk perlindungan data dan bukti (Annex A 5.29). Pelonggaran hanya lewat pengecualian di bagian 9.
++ Kontrol keamanan informasi tetap berlaku selama gangguan, termasuk perlindungan data dan bukti (Annex A 5.29). Pelonggaran hanya melalui pengecualian di bagian 9.
+
+@@ .roles[1][1]
+- Penunjukan selama aktivasi, umumnya Lead NOC. Memimpin pemulihan teknis sesuai urutan di bagian 4. Mencatat seluruh keputusan dan langkah di parent ticket. Menghubungi supplier dan menginformasikan personel Divisi Operation lewat grup on-call.
++ Penunjukan selama aktivasi, umumnya Lead NOC. Memimpin pemulihan teknis sesuai urutan di bagian 4. Mencatat seluruh keputusan dan langkah di parent ticket. Menghubungi supplier dan menginformasikan personel Divisi Operation melalui grup on-call.
+
+@@ .roles[4][2]
+- Mengirim komunikasi ke pelanggan terdampak lewat email resmi dan grup pelanggan.
++ Mengirim komunikasi ke pelanggan terdampak melalui email resmi dan grup pelanggan.
+
+@@ .procedures[1].steps[2][2]
+- Rekaman respons keamanan
++ Record respons keamanan
+
+@@ .procedures[2].steps[0][0]
+- Beri tahu manajemen lewat telepon dan grup manajemen: komunikasi awal dalam 1 jam sejak aktivasi, lalu tiap 1 jam.
++ Beri tahu manajemen melalui telepon dan grup manajemen: komunikasi awal dalam 1 jam sejak aktivasi, lalu tiap 1 jam.
+
+@@ .procedures[2].steps[1][0]
+- Kirim komunikasi awal ke pelanggan terdampak lewat email resmi dan grup pelanggan dalam 1 jam sejak aktivasi.
++ Kirim komunikasi awal ke pelanggan terdampak melalui email resmi dan grup pelanggan dalam 1 jam sejak aktivasi.
+
+@@ .procedures[2].steps[3][0]
+- Informasikan personel Divisi Operation yang terlibat lewat grup on-call selama aktivasi berlangsung.
++ Informasikan personel Divisi Operation yang terlibat melalui grup on-call selama aktivasi berlangsung.
+
+@@ .procedures[2].steps[4][0]
+- Hubungi supplier lewat kanal eskalasi supplier sesuai kebutuhan.
++ Hubungi supplier melalui kanal eskalasi supplier sesuai kebutuhan.
+
+@@ .procedures[3].steps[1][0]
+- Siapkan minimal satu cadangan terlatih lewat pelatihan silang untuk tiap keahlian kritis (platform cloud, WAF dan proxy, network, DC fisik, panel hosting, SIEM).
++ Siapkan minimal satu cadangan terlatih melalui pelatihan silang untuk tiap keahlian kritis (platform cloud, WAF dan proxy, network, DC fisik, panel hosting, SIEM).
+
+@@ .sla[10][0]
+- Tinjauan daftar kontak darurat
++ Review daftar kontak darurat
+
+@@ .sla[11][0]
+- Peninjauan rencana
++ Review rencana
+
+@@ .exceptions[4][1]
+- Head of Operation meminta personel on-call bekerja jarak jauh dengan laptop kerja dan mengakses sistem lewat Jumphost menurut SNX-ISMS-SOP-02, serta lewat VPN. Pelaku Head of Operation berstatus (USULAN).
++ Head of Operation meminta personel on-call bekerja jarak jauh dengan laptop kerja dan mengakses sistem melalui Jumphost menurut SNX-ISMS-SOP-02, serta melalui VPN. Pelaku Head of Operation berstatus (USULAN).
+
+@@ .exceptions[6][1]
+- Recovery Lead menghubungi supplier lewat kontak eskalasi di daftar kontak darurat dan menjalankan rencana alternatif per supplier (SNX-ISMS-FRM-03).
++ Recovery Lead menghubungi supplier melalui kontak eskalasi di daftar kontak darurat dan menjalankan rencana alternatif per supplier (SNX-ISMS-FRM-03).
+
+@@ .conclusion[0]
+- Kepatuhan terhadap rencana ini diperiksa lewat hasil program pengujian di butir 6.5, yang dicatat di laporan uji dan SNX-ISMS-FRM-01. Head of Operation, selaku pemilik rencana, meninjau rencana ini sesuai jadwal di bagian 8.
++ Kepatuhan terhadap rencana ini diperiksa melalui hasil program pengujian di butir 6.5, yang dicatat di laporan uji dan SNX-ISMS-FRM-01. Head of Operation, selaku pemilik rencana, meninjau rencana ini sesuai jadwal di bagian 8.
+
+@@ .related_documents[2][1]
+- Information Security Incident Management; respons insiden keamanan, tabletop exercise keamanan, RCA keamanan, dan tinjauan daftar kontak.
++ Information Security Incident Management; respons insiden keamanan, tabletop exercise keamanan, RCA keamanan, dan review daftar kontak.
+
+@@ .related_documents[3][1]
+- User Access Control & Authorization; akses lewat Jumphost saat gangguan internet atau kantor.
++ User Access Control & Authorization; akses melalui Jumphost saat gangguan internet atau kantor.

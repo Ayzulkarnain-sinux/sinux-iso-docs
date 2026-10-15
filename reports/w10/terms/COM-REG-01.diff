@@ -1,0 +1,81 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), COM-REG-01: 20 teks berubah. Basis bed1bb6.
+
+@@ .sections[1].blocks[0].p
+- Register ini mencakup feedback dan keluhan customer yang masuk lewat email, WhatsApp, atau saluran lain, sejak Penerima menerimanya sampai statusnya Selesai.
++ Register ini mencakup feedback dan keluhan customer yang masuk melalui email, WhatsApp, atau saluran lain, sejak Penerima menerimanya sampai statusnya Selesai.
+
+@@ .sections[1].blocks[2].table.rows[1][0]
+- Analisis akar masalah dan tindakan korektif rinci
++ Analisis root cause dan corrective action rinci
+
+@@ .sections[1].blocks[2].table.rows[1][1]
+- Business Development mencatat tindakan secara ringkas. Analisis akar masalah atas keluhan yang berasal dari insiden layanan memakai SNX-OPS-FRM-10 (USULAN).
++ Business Development mencatat tindakan secara ringkas. Analisis root cause atas keluhan yang berasal dari insiden layanan memakai SNX-OPS-FRM-10 (USULAN).
+
+@@ .sections[2].blocks[0].table.rows[2][1]
+- Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO. Register ini memakai COO sesudah penyebutan pertama.
++ Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO. Register ini memakai COO setelah penyebutan pertama.
+
+@@ .sections[2].blocks[0].table.rows[5][1]
+- Sistem tiket SINUX untuk kebutuhan generalist.
++ Sistem ticket SINUX untuk kebutuhan generalist.
+
+@@ .sections[2].blocks[0].table.rows[12][1]
+- Sistem tiket Divisi Operation.
++ Sistem ticket Divisi Operation.
+
+@@ .sections[3].blocks[5].p
+- 4.6 Business Development membalas feedback dan keluhan yang customer kirim lewat email atau WhatsApp dalam batas respons SNX-COM-SOP-01 bagian 8 (USULAN).
++ 4.6 Business Development membalas feedback dan keluhan yang customer kirim melalui email atau WhatsApp dalam batas respons SNX-COM-SOP-01 bagian 8 (USULAN).
+
+@@ .sections[3].blocks[7].p
+- 4.8 Bila feedback atau keluhan punya tiket, Business Development menulis nomor tiketnya di Tabel 2. Tiket yang ditangani Operation ada di Zammad, tiket lain di GLPI (USULAN; batas pemakaian GLPI untuk generalist belum dirinci).
++ 4.8 Bila feedback atau keluhan punya ticket, Business Development menulis nomor ticket-nya di Tabel 2. Ticket yang ditangani Operation ada di Zammad, ticket lain di GLPI (USULAN; batas pemakaian GLPI untuk generalist belum dirinci).
+
+@@ .sections[3].blocks[12].p
+- 4.13 Business Development menyimpan register di lokasi yang tertulis pada tabel Rekaman (USULAN).
++ 4.13 Business Development menyimpan register di lokasi yang tertulis pada tabel Record (USULAN).
+
+@@ .sections[4].blocks[1].table.rows[1][1]
+- Mencatat feedback dan keluhan di Tabel 1. Menulis PIC, tindakan, nomor tiket, dan status di Tabel 2. Menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3. Mengeskalasi keluhan kritis dan mencatat eskalasi di Tabel 4. (butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13). SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development.
++ Mencatat feedback dan keluhan di Tabel 1. Menulis PIC, tindakan, nomor ticket, dan status di Tabel 2. Menyampaikan konfirmasi kepada customer dan mencatatnya di Tabel 3. Mengeskalasi keluhan kritis dan mencatat eskalasi di Tabel 4. (butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13). SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development.
+
+@@ .sections[4].blocks[2].p
+- Direktur Utama menyetujui register ini lewat blok Approval pada halaman depan.
++ Direktur Utama menyetujui register ini melalui blok Approval pada halaman depan.
+
+@@ .sections[5].blocks[8].p
+- 6.9 Business Development menulis nomor tiket di kolom Nomor Tiket bila feedback atau keluhan punya tiket (butir 4.8).
++ 6.9 Business Development menulis nomor ticket di kolom Nomor Ticket bila feedback atau keluhan punya ticket (butir 4.8).
+
+@@ .sections[5].blocks[10].p
+- 6.11 Business Development menulis Baru, Dalam Penanganan, atau Selesai di kolom Status. Business Development menulis Selesai hanya sesudah VP Commercial menetapkannya (butir 4.7).
++ 6.11 Business Development menulis Baru, Dalam Penanganan, atau Selesai di kolom Status. Business Development menulis Selesai hanya setelah VP Commercial menetapkannya (butir 4.7).
+
+@@ .sections[5].blocks[16].p
+- 6.17 Business Development menulis keputusan di kolom Hasil Eskalasi sesudah VP Commercial atau COO memutuskan.
++ 6.17 Business Development menulis keputusan di kolom Hasil Eskalasi setelah VP Commercial atau COO memutuskan.
+
+@@ .sections[6].blocks[4].table.header[2]
+- Nomor Tiket
++ Nomor Ticket
+
+@@ .sections[7].blocks[2].table.header[0]
+- Rekaman
++ Record
+
+@@ .sections[7].blocks[2].table.rows[1][0]
+- Tiket feedback dan keluhan
++ Ticket feedback dan keluhan
+
+@@ .sections[7].blocks[5].table.rows[2][1]
+- 10.2 Ketidaksesuaian dan tindakan korektif
++ 10.2 Ketidaksesuaian dan corrective action
+
+@@ .sections[8].blocks[0].table.rows[4][1]
+- Root Cause Analysis & Corrective Action Report. Form analisis akar masalah untuk keluhan yang berasal dari insiden layanan (USULAN).
++ Root Cause Analysis & Corrective Action Report. Form analisis root cause untuk keluhan yang berasal dari insiden layanan (USULAN).
+
+@@ .sections[9].blocks[0].p
+- Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).
++ Register ini berstatus Draft dan baru dipakai setelah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN).

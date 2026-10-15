@@ -1,0 +1,13 @@
+# Diff skrip istilah W10 (STYLE-v23 §1.5 dan §2.5), OPS-FRM-03: 3 teks berubah. Basis bed1bb6.
+
+@@ .sections[4].blocks[0].flow.caption
+- Gambar 1. Alur pengisian Project Progress & Monitoring Report. Eskalasi hanya berlaku bila ada status Merah; sesudahnya laporan tetap melalui review Service Delivery Manager.
++ Gambar 1. Alur pengisian Project Progress & Monitoring Report. Eskalasi hanya berlaku bila ada status Merah; setelahnya laporan tetap melalui review Service Delivery Manager.
+
+@@ .sections[5].blocks[11].table.header[2]
+- Bukti atau referensi (CR, tiket Zammad, dokumen)
++ Bukti atau referensi (CR, ticket Zammad, dokumen)
+
+@@ .sections[7].blocks[1].table.header[0]
+- Rekaman
++ Record
