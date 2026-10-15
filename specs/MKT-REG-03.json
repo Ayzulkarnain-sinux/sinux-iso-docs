@@ -39,7 +39,7 @@
      "p": "Register ini mencakup lead yang Brand & Marketing serahkan kepada Business Development, sejak tanggal serah terima sampai Business Development menyampaikan status qualification dan feedback. Register ini juga memuat laporan lead generation dan evaluasi kualitas lead per periode."
     },
     {
-     "p": "Butir berikut dikecualikan dari register ini:"
+     "p": "Butir berikut dikecualikan dari register ini. Pembagian isi antara SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-RPT-01, dan register ini berstatus (USULAN)."
     },
     {
      "table": {
@@ -57,12 +57,16 @@
         "Diatur di SNX-COM-SOP-01. Register ini hanya mencatat status qualification dan feedback dari Business Development."
        ],
        [
-        "Perencanaan dan pelaksanaan campaign dan aktivitas marketing",
+        "Pelaksanaan campaign dan aktivitas marketing",
         "Menjadi lingkup SNX-MKT-REG-02. Register ini hanya merujuk nama campaign di sana (USULAN)."
        ],
        [
-        "Perencanaan dan review kinerja marketing",
-        "Menjadi lingkup SNX-MKT-RPT-01. Tabel 3 dan Tabel 4 dapat menjadi data masukan review itu (USULAN)."
+        "Persetujuan materi eksternal dan validasi klaim",
+        "Menjadi lingkup SNX-MKT-REG-01 (USULAN)."
+       ],
+       [
+        "Rencana pemasaran dan tinjauan kinerja marketing: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif",
+        "Menjadi lingkup SNX-MKT-RPT-01. Tabel 3 dan Tabel 4 dapat menjadi data masukan tinjauan itu (USULAN)."
        ],
        [
         "Feedback dan keluhan dari customer",
@@ -838,12 +842,16 @@
         "Information Classification & Handling. Sumber tingkat RESTRICTED (Internal) dan aturan bahwa informasi customer minimal RESTRICTED (butir 4.3)."
        ],
        [
+        "SNX-MKT-REG-01",
+        "Marketing Content, Material & Claims Approval Register. Persetujuan materi eksternal dan validasi klaim (USULAN)."
+       ],
+       [
         "SNX-MKT-REG-02",
-        "Marketing Campaign & Activity Register. Tempat nama campaign dicatat. Kolom Campaign Asal merujuk nama di register itu (USULAN)."
+        "Marketing Campaign & Activity Register. Pelaksanaan campaign dan aktivitas marketing, dengan materi yang dipakai tertaut ke ID persetujuan di SNX-MKT-REG-01. Kolom Campaign Asal merujuk nama campaign di register itu (USULAN)."
        ],
        [
         "SNX-MKT-RPT-01",
-        "Marketing Planning & Performance Review. Review kinerja marketing yang berada di luar register ini."
+        "Marketing Planning & Performance Review. Rencana pemasaran dan tinjauan kinerja marketing (USULAN)."
        ],
        [
         "Belum bernomor",

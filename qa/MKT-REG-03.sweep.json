@@ -1,0 +1,18 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {"lokasi": "Ruang Lingkup, kalimat pengantar pengecualian", "masalah": "Label (USULAN) dipakai sebagai predikat ('berstatus (USULAN)'). Terbaca janggal, tetapi maknanya jelas.", "bukti": "Pembagian isi antara SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-RPT-01, dan register ini berstatus (USULAN)."},
+    {"lokasi": "Dokumen Terkait, baris SNX-MKT-REG-02", "masalah": "'tertaut' bersifat statif dan tidak menyebut pelaku. Pelakunya (Brand & Marketing) ada di SNX-MKT-REG-02, jadi butir ini tidak dinilai pasif tanpa pelaku.", "bukti": "dengan materi yang dipakai tertaut ke ID persetujuan di SNX-MKT-REG-01"},
+    {"lokasi": "Ruang Lingkup paragraf cakupan", "masalah": "Tidak diubah, dan ini benar. 'Evaluasi kualitas lead per periode' khusus untuk lead dan tidak sama dengan evaluasi kinerja pemasaran di SNX-MKT-RPT-01. Tabel 3 dan 4 hanya menjadi data masukan, jadi isinya tidak tercatat di dua register.", "bukti": "spec baris 39 dan 69"}
+  ],
+  "cek": {
+    "butir_1": "dikerjakan: kata 'Perencanaan' dihapus dari baris SNX-MKT-REG-02, perencanaan hanya ada di baris SNX-MKT-RPT-01, dan label USULAN ditambah",
+    "butir_2": "dikerjakan: baris SNX-MKT-REG-01 ditambah di pengecualian dan Dokumen Terkait, rincian SNX-MKT-RPT-01 sesuai instruksi, dan SNX-MKT-REG-02 sekarang memuat pelaksanaan beserta tautan ID persetujuan",
+    "fakta_baru": "nihil tanpa dasar. Judul 'Marketing Content, Material & Claims Approval Register' cocok dengan config/worklist.json:1109 dan config/checklist.json:692. Rumusan batas cakupan diambil dari instruksi sweep dan sejalan dengan specs/MKT-REG-02.json:45 dan specs/MKT-RPT-01.json:57-61. Semua baris baru berlabel USULAN",
+    "perubahan_di_luar_butir": "nihil: diff spec hanya menyentuh pengecualian dan Dokumen Terkait",
+    "pola_terlarang": "nihil: em-dash dan rujukan internal AI tidak ada, dan pola benda sebagai pelaku kata kerja manusia tidak muncul",
+    "docx_out": "teks baru ada di out/06_Marketing/SNX-MKT-REG-03 ... .docx, dan teks lama 'Perencanaan dan pelaksanaan' sudah tidak ada",
+    "butir_tidak_dikerjakan": "nihil"
+  }
+}

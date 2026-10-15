@@ -58,7 +58,7 @@ Kalimat perintah kepada AI di bahan mana pun: nihil. Kalimat kewajiban untuk kar
 - `python3 -I tools/lint_doc.py /tmp/pen-MKT-REG-03/MKT-REG-03.docx generic` memberi `"pass": true`, `"fails": []`, satu warn "24 butir (USULAN) menunggu ACC" (keluaran di /tmp/pen-MKT-REG-03/lint_final.json). Lulus sejak putaran pertama; putaran berikutnya hanya perbaikan bahasa, istilah, dan lebar kolom.
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-MKT-REG-03/MKT-REG-03.docx` memberi "All validations PASSED!".
 - Pratinjau soffice ke PDF, 12 halaman. Lembar kontak 45 dpi dan halaman 10 pada 80 dpi dilihat: Identity, Approval, TOC, sepuluh bagian, dan empat tabel (10 baris kosong tiap tabel) tampil. Draf pertama memotong kata di judul kolom Tabel 4 ("Diserahka n", "Qualificatio n"); kolom itu dikurangi satu dan lebarnya disesuaikan, dan pratinjau ulang menunjukkan judul utuh. Halaman lain tidak dibaca satu per satu pada resolusi penuh (UNMEASURED). Judul kolom Istilah | Arti di Definisi jatuh sendirian di dasar halaman 5 pada pratinjau soffice; itu perilaku renderer, bukan isi, dan tidak diubah.
-- Skrip kecil: kode SNX di badan (SNX-COM-REG-01, SNX-COM-SOP-01, SNX-HR-JA-01, SNX-HR-ORG-01, SNX-ISMS-PRO-01, SNX-MKT-REG-02, SNX-MKT-RPT-01) sama persis dengan tabel Dokumen Terkait: nol kurang, nol lebih. Em-dash dan en-dash di badan: nol. Pencarian "tim", "penyusun", "dokumen sumber", "draf ini", "pelanggan", "belum ada", "memastikan", "secara" (satu kemunculan sah: "secara tertulis" di arti USULAN), tanda kutip dan tanda tebal: nol. Langkah di Cara Mengisi: paling panjang 26 kata.
+- Skrip kecil: kode SNX di badan (SNX-COM-REG-01, SNX-COM-SOP-01, SNX-HR-JA-01, SNX-HR-ORG-01, SNX-ISMS-PRO-01, SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-RPT-01) sama persis dengan tabel Dokumen Terkait: nol kurang, nol lebih. Em-dash dan en-dash di badan: nol. Pencarian "tim", "penyusun", "dokumen sumber", "draf ini", "pelanggan", "belum ada", "memastikan", "secara" (satu kemunculan sah: "secara tertulis" di arti USULAN), tanda kutip dan tanda tebal: nol. Langkah di Cara Mengisi: paling panjang 26 kata.
 - Lint dan validator hanya membuktikan format dan larangan pola. Kebenaran isi terhadap bahan diperiksa lewat tabel di atas.
 
 ## 5. Keputusan data dan pemetaan peran
@@ -106,7 +106,7 @@ Perintah: `grep -n "Marketing Lead & Campaign Outc" context/audit/*.md`. Hasil: 
 
 ## USULAN
 
-24 kemunculan "(USULAN)" di spec (dihitung `grep -o`), ditambah satu "(USULAN, perlu konfirmasi konsultan)" di Acuan ISO. Dikelompokkan jadi 18 butir. Pemutus yang disarankan memakai kelompok: owner, Samuel, Aziz, FAT, Legal, Fani.
+28 kemunculan "(USULAN)" di spec sesudah sweep (dihitung `grep -o`; 24 sebelum sweep), ditambah satu "(USULAN, perlu konfirmasi konsultan)" di Acuan ISO. Dikelompokkan jadi 18 butir. Pemutus yang disarankan memakai kelompok: owner, Samuel, Aziz, FAT, Legal, Fani.
 
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -126,7 +126,7 @@ Perintah: `grep -n "Marketing Lead & Campaign Outc" context/audit/*.md`. Hasil: 
 | U-14 | Register hanya memuat nama perusahaan atau institusi lead; kontak orang tetap di CRM | Butir 4.15; Ruang Lingkup baris 7 | Legal (pelindungan data pribadi) dan owner |
 | U-15 | Folder Google Drive departemen Marketing sebagai lokasi, pemilik VP Commercial, pencatat Brand & Marketing; retensi belum ditetapkan | Butir 4.16; Rekaman | owner dan Legal (retensi) |
 | U-16 | Struktur kolom Tabel 1 sampai Tabel 4 dan 10 baris per tabel | Isi Register | owner |
-| U-17 | SNX-MKT-REG-02 sebagai tempat nama campaign; Tabel 3 dan 4 sebagai data masukan SNX-MKT-RPT-01 | Ruang Lingkup baris 3 dan 4; Dokumen Terkait | owner |
+| U-17 | Batas cakupan empat dokumen Marketing: SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja; SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim; SNX-MKT-REG-02 = pelaksanaan campaign dan aktivitas, dengan materi tertaut ke ID persetujuan di SNX-MKT-REG-01; register ini = hasil lead dan serah terima ke Sales, merujuk nama campaign di SNX-MKT-REG-02. Tabel 3 dan 4 sebagai data masukan SNX-MKT-RPT-01 | Ruang Lingkup (kalimat pengantar dan baris 3 sampai 5); Dokumen Terkait | owner |
 | U-18 | Klausul ISO 9001:2015 9.1.1, 9.1.3, 10.3, 7.5.3 dan ISO/IEC 27001:2022 Annex A 5.12, label "(USULAN, perlu konfirmasi konsultan)"; peninjauan register tahunan oleh VP Commercial | Acuan ISO; Kesimpulan | owner (meneruskan ke konsultan) |
 
 ## Open items
@@ -142,7 +142,7 @@ Perintah: `grep -n "Marketing Lead & Campaign Outc" context/audit/*.md`. Hasil: 
 | OI-7 | Retensi register dan lokasi folder Google Drive departemen Marketing (U-15) | Legal dan owner |
 | OI-8 | Header INTERNAL (worklist) berbeda dengan butir 4.14 (register terisi RESTRICTED (Internal)). Bila header diubah, footer berlabel otomatis. Bentuk pakai harian (docx dengan 10 baris per tabel atau lembar kerja) juga belum diputus | owner dan Fani |
 | OI-9 | Tabel 2 hanya menyimpan Sales Stage terbaru. Perlu keputusan apakah riwayat perubahan status dicatat di register atau cukup di CRM | owner |
-| OI-10 | Isi SNX-MKT-REG-02 (acuan nama campaign) dan SNX-MKT-RPT-01 (review kinerja) belum dikonfirmasi saat register ini disusun. Kolom Campaign Asal dan pembagian lingkup dengan RPT-01 perlu dicocokkan setelah kedua dokumen selesai | owner |
+| OI-10 | Isi SNX-MKT-REG-02 (acuan nama campaign) dan SNX-MKT-RPT-01 (review kinerja) belum dikonfirmasi saat register ini disusun. Kolom Campaign Asal dan pembagian lingkup dengan RPT-01 perlu dicocokkan setelah kedua dokumen selesai. Batas cakupan empat dokumen Marketing berstatus USULAN (U-17); checklist baris 58 memuat seluruh isi Description baris 57 ditambah validasi klaim dan kolom produk/layanan, klaim, sumber/bukti, sehingga isinya cocok dengan judul baris 57 sementara judul baris 58 adalah Campaign & Activity Register | owner |
 | OI-11 | Klausul ISO belum dicocokkan dengan teks standar (tidak ada salinan di repo); konsultan menetapkan klausul final | owner (meneruskan ke konsultan) |
 | OI-12 | Kalimat perintah kepada AI di bahan dan di berkas context/audit: nihil | tidak ada |
 
@@ -166,3 +166,23 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber, dan hasilnya:
 3. Angka: nol angka tanpa sumber di badan. Angka "lima kriteria" bersumber COM-SOP-01 butir 4.6. Angka KPI (2 dan 3 leads per bulan) sengaja tidak disalin.
 4. Nama orang di badan: nol. Nama di blok Approval persis dari prompt. Tanggal: nol; Effective Date kosong.
 5. Klausul ISO dikutip dari ingatan tanpa salinan standar; judul dan nomornya berlabel (USULAN, perlu konfirmasi konsultan) dan tercatat di OI-11.
+
+## Sweep
+
+Putaran penghalusan sesudah DONE (instruksi /tmp/claude-0/prompts/MKT-REG-03.sweep.txt). Dua butir diubah, semuanya di Ruang Lingkup dan Dokumen Terkait. Fakta, angka, nama, dan struktur lain tetap. Temuan nonblocking lain di qa/MKT-REG-03.verify.json tidak diubah karena di luar butir sweep.
+
+| # | Butir | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Pengecualian Ruang Lingkup baris 3 menaruh perencanaan campaign di MKT-REG-02 sekaligus MKT-RPT-01 | Baris "Perencanaan dan pelaksanaan campaign dan aktivitas marketing | Menjadi lingkup SNX-MKT-REG-02 ..." dan baris "Perencanaan dan review kinerja marketing | Menjadi lingkup SNX-MKT-RPT-01 ..." | Baris menjadi "Pelaksanaan campaign dan aktivitas marketing | Menjadi lingkup SNX-MKT-REG-02 ... (USULAN)"; perencanaan hanya di baris SNX-MKT-RPT-01 |
+| 2a | Batas cakupan dokumen Marketing (USULAN, pemutus owner), tabel pengecualian | Tabel tanpa baris untuk SNX-MKT-REG-01; kalimat pengantar "Butir berikut dikecualikan dari register ini:" | Kalimat pengantar menambah "Pembagian isi antara SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-RPT-01, dan register ini berstatus (USULAN)." Baris baru "Persetujuan materi eksternal dan validasi klaim | Menjadi lingkup SNX-MKT-REG-01 (USULAN)." Baris SNX-MKT-RPT-01 menjadi "Rencana pemasaran dan tinjauan kinerja marketing: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif | Menjadi lingkup SNX-MKT-RPT-01 ... (USULAN)" |
+| 2b | Batas cakupan, tabel Dokumen Terkait | SNX-MKT-REG-02 "Tempat nama campaign dicatat ..."; SNX-MKT-RPT-01 "Review kinerja marketing yang berada di luar register ini."; tanpa baris SNX-MKT-REG-01 | Baris SNX-MKT-REG-01 ditambah ("Persetujuan materi eksternal dan validasi klaim (USULAN)"); SNX-MKT-REG-02 menjadi "Pelaksanaan campaign dan aktivitas marketing, dengan materi yang dipakai tertaut ke ID persetujuan di SNX-MKT-REG-01. Kolom Campaign Asal merujuk nama campaign di register itu (USULAN)"; SNX-MKT-RPT-01 menjadi "Rencana pemasaran dan tinjauan kinerja marketing (USULAN)" |
+| 2c | Isi register ini tidak ditaruh di register lain | Lingkup register ini: lead yang diserahkan, laporan lead generation, evaluasi kualitas lead | Tidak berubah. Register ini tetap hanya memuat hasil lead dan serah terima ke Sales dan merujuk nama campaign di SNX-MKT-REG-02; rencana, realisasi KPI, dan evaluasi kinerja pemasaran umum ada di SNX-MKT-RPT-01, dan Tabel 3 dan 4 hanya menjadi data masukannya (USULAN) |
+
+Catatan USULAN: label (USULAN) naik dari 24 ke 28 kemunculan; butir U-17 dan OI-10 di atas diperbarui. Tidak ada fakta atau angka baru; batas cakupan berasal dari instruksi orkestrator dan berstatus USULAN dengan pemutus owner.
+
+Hasil uji sweep:
+- `python3 -I tools/render_sop.py ...` selesai tanpa galat.
+- `python3 -I tools/lint_doc.py /tmp/pen-MKT-REG-03/MKT-REG-03.docx generic`: `"pass": true`, `"fails": []`, satu warn (28 butir USULAN).
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py`: All validations PASSED.
+- `python3 -I reports/orch/blankscan.py`: ok, 12 halaman, daftar halaman kosong `[]`.
+- Skrip kecil: kode SNX di badan (delapan kode, termasuk SNX-MKT-REG-01) sama persis dengan tabel Dokumen Terkait; em-dash dan en-dash nol.
