@@ -188,3 +188,21 @@ Temuan verifikator yang tidak diubah karena di luar butir sweep:
 - Cacat context/audit: tidak ada tindakan baru (notes bagian 5).
 
 Uji sesudah sweep: render sukses; lint_doc generic `pass: true`, fails kosong, warn "20 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan `ok` (13 halaman). Nol em-dash dan en-dash di spec (grep).
+
+
+## ISO-W9
+
+Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir di bawah yang berubah.
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| meta.approval, blok Prepared dan Reviewed | Prepared "Staff Legal"; Reviewed "Line Manager Legal" | Prepared "Alif Altamziz / Staff Legal"; Reviewed "Ester Febe Utomo / Line Manager Legal" (config/defaults.json v22 prepared_reviewed.LEG) |
+| A5, Peran, paragraf penjelas | "... (JA-09 dan JA-08) di SNX-HR-ORG-01 (USULAN). Pembuat ..." | "... (JA-09 dan JA-08) di SNX-HR-ORG-01. Pembuat ..."; USULAN pembagian tugas mengikuti SNX-LEG-SOP-03 tetap |
+| A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... Pemetaannya ke jabatan Legal & Compliance berstatus (USULAN)." | "... Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08)." |
+| Rujukan, Ketentuan butir 5 (hasil pemeriksa makna R457) | "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dan Lokasi Dokumen Asli dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8." | "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8, dan mencatat Lokasi Dokumen Asli menurut SNX-LEG-SOP-03 prosedur 6.3 langkah 4." Dasar: bagian 8 (2 hari kerja) hanya untuk 6.3 langkah 1 dan 2; 6.3 langkah 4 tidak punya batas waktu di bagian 8 |
+
+Open item:
+
+- Open item 2 (pemetaan ke JA-09 dan JA-08): bagian pemetaan ditutup W9: diputus owner (LEAD G-3 A5). Pembagian tugas mencatat versus menetapkan tetap terbuka (Legal).
+- Asumsi 6 (K-13, menunggu konfirmasi): ditutup W9: pemetaan diputus owner (LEAD G-3 A5).
+- Rujukan Ketentuan butir 5 ke SNX-LEG-SOP-03 bagian 8: diubah W9: hanya berlaku untuk Lokasi Simpan Salinan Elektronik.

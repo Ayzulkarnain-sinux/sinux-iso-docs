@@ -1,0 +1,30 @@
+{
+ "key": "LEG-REG-04",
+ "cluster": "LEG-B",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Dokumen Terkait, baris SNX-HR-ORG-01 (render baris 425): kalimat baru 'Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08)' menyebut peran dengan urutan LM lalu Staff tetapi kode jabatan JA-09 lalu JA-08. Kalau dibaca berpasangan, kalimat ini menyiratkan LM = JA-09, padahal LEAD G-3 A5 menetapkan LM = JA-08. Kalimat ini bukan pernyataan 'masing-masing', jadi tidak bertentangan secara tegas. Saran: ganti menjadi '(JA-08 dan JA-09)' atau tulis 'Line Manager Legal (JA-08) dan Staff Legal (JA-09)'.",
+  "Klausa 'yang dipetakan ke jabatan' di baris yang sama berbentuk pasif tanpa pelaku. Pola ini sudah ada di badan dokumen sebelum W9 (paragraf Peran), jadi bukan pola baru. Kosmetik.",
+  "Rujukan baru memakai bentuk 'SNX-LEG-SOP-03 prosedur 6.3 langkah 4', bukan 'butir' atau 'bagian'. Nomor 6.3 (Penyimpanan dan Pengarsipan) dan langkah 4 ('Catat lokasi tempat aman dokumen asli di register.') ada dan isinya cocok. SOP-03 sendiri memakai pola '(6.3 langkah 1 dan 2)'. Konsisten, tidak perlu diubah."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 / A5: blok Prepared = 'Alif Altamziz / Staff Legal' dan Reviewed = 'Ester Febe Utomo / Line Manager Legal', persis sama dengan defaults v22 prepared_reviewed.LEG. Approved = 'Samuel Kristanto Utomo / President Director' tetap, sesuai approved_by.all.",
+  "Butir 1 / A5: label (USULAN) pada pemetaan JA-09/JA-08 dihapus di paragraf Peran. USULAN untuk pembagian tugas yang mengikuti SNX-LEG-SOP-03 tetap ada, sesuai instruksi.",
+  "Butir 1 / A5: baris Dokumen Terkait SNX-HR-ORG-01 tidak lagi memuat 'Pemetaannya ... berstatus (USULAN)'.",
+  "Butir 1 / A5: badan dokumen tetap memakai nama peran saja. Nama orang hanya muncul di blok Approval (Alif 1x, Ester 1x). Daffa 0. 'Divisi Legal' 0, dan sebelum W9 pun sudah 0. 'Departemen Legal' 2 kemunculan, sudah ada sebelum W9. 'menunggu konfirmasi' 0.",
+  "Butir 2 / R457: Ketentuan butir 5 sekarang membatasi rujukan SNX-LEG-SOP-03 bagian 8 pada Lokasi Simpan Salinan Elektronik. Bagian 8 di SOP-03 memang mengatur 6.3 langkah 1 dan 2, 2 hari kerja. Lokasi Dokumen Asli sekarang dirujuk ke 6.3 langkah 4 tanpa batas waktu. Kedua tempat itu ada dan isinya cocok menurut kerangka /tmp/claude-0/w9/struct/LEG-SOP-03.txt.",
+  "Hanya ada 5 hunk perubahan teks (1 rujukan, 2 USULAN pemetaan, 2 baris Approval). Tidak ada perubahan lain, tidak ada fakta baru. JA-08/JA-09 sudah ada sebelum W9 di dokumen dan di HR-ORG-01. Notes punya bagian ## ISO-W9 berisi tabel perubahan dan status open item."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Grep atas teks sesudah (render /tmp/claude-0/w9/render/LEG-REG-04.docx, diekstrak ke /tmp/claude-0/w9/leg-reg-04.after.txt): 'Divisi Legal' = 0; 'HR Manager' = 0 (dokumen Legal); 'menunggu konfirmasi' = 0; 'Daffa' = 0; em-dash = 0; 'Departemen Legal' = 2 (sudah ada sebelum W9); 'Alif' = 1 dan 'Ester' = 1, keduanya hanya di blok Approval.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

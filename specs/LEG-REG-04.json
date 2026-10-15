@@ -15,8 +15,8 @@
     "effective_date": "",
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
-      "prepared": "Staff Legal",
-      "reviewed": "Line Manager Legal",
+      "prepared": "Alif Altamziz / Staff Legal",
+      "reviewed": "Ester Febe Utomo / Line Manager Legal",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -226,7 +226,7 @@
           "p": "4. Staff Legal memeriksa register setiap bulan dan mengubah status dokumen yang Tanggal Berakhirnya sudah lewat menjadi Tidak Berlaku (SNX-LEG-SOP-03 butir 4.6; pemeriksaan bulanan atas Tanggal Berakhir: USULAN)."
         },
         {
-          "p": "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dan Lokasi Dokumen Asli dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8."
+          "p": "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8, dan mencatat Lokasi Dokumen Asli menurut SNX-LEG-SOP-03 prosedur 6.3 langkah 4."
         },
         {
           "p": "6. Staff Legal mengusulkan Tingkat Klasifikasi saat mencatat dokumen (SNX-LEG-SOP-03 butir 4.11, USULAN)."
@@ -283,7 +283,7 @@
           }
         },
         {
-          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti SNX-LEG-SOP-03 dan berstatus (USULAN). Staff Legal dan Line Manager Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08) di SNX-HR-ORG-01 (USULAN). Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti SNX-LEG-SOP-03 dan berstatus (USULAN). Staff Legal dan Line Manager Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08) di SNX-HR-ORG-01. Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
         }
       ]
     },
@@ -745,7 +745,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal. Pemetaannya ke jabatan Legal & Compliance berstatus (USULAN)."
+                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08)."
               ]
             ],
             "widths_cm": [
