@@ -163,7 +163,7 @@ Label (USULAN) tercetak di dokumen pada butir 2 sampai 7. Butir 1 adalah data de
 | 11 | Retensi tiket insiden (parent ticket) dan laporan insiden tidak ditetapkan di sumber; tidak ada baris rekaman untuk keduanya di bagian 11 | Fani |
 | 12 | Bentuk kanal on-call dan lokasi file kontak eskalasi tidak disebut sumber | Ops |
 | 13 | Lead SOC, Head of Operation, ISMS Coordinator belum punya pemegang (HR-ORG-01 K-10, K-13); Incident Commander bukan jabatan | owner |
-| 14 | Rujukan butir sheet Investigasi (2, 12, 13, 15) dan kolom Register berasal dari salinan audit; verifikator perlu mencocokkan dengan xlsx FRM-02 Drive terbaru | LEAD ISO |
+| 14 | Rujukan butir sheet Investigasi (2, 12, 13, 15) dan kolom Register berasal dari salinan audit; verifikator perlu mencocokkan dengan xlsx FRM-02 Drive terbaru (diubah W9: rujukan butir sheet Investigasi diganti label butir; kolom Register tetap perlu dicocokkan) | LEAD ISO |
 | 15 | Tanggal draft 13 Oktober 2026 di sumber tidak dibawa ke dokumen (template memakai Effective Date kosong); tanggal efektif dan tanda tangan kosong sampai pengesahan | owner |
 
 ## 7. Dua pertanyaan penutup
@@ -198,3 +198,19 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber? Hasil pemeriksaan teks akh
 | Tanggal | Tidak ada tanggal di spec; tanggal draft 13 Oktober 2026 sumber tidak dibawa |
 
 Butir yang tidak punya sumber dan bukan USULAN tercetak: definisi umum dan tafsir pelaku. Keduanya sudah tercatat di bagian 6 dan USULAN 8.
+
+## ISO-W9
+
+Dasar: hasil pemeriksa makna S05 dan LEAD-GUIDE item ISMS-SOP-01. Sheet Investigasi SNX-ISMS-FRM-02 tidak menampilkan nomor butir, jadi butir disebut dengan labelnya (label A4, A14, A15, A17 sheet Investigasi). Hanya label rujukan yang diganti.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 6.3 langkah 12, kolom Output | Nama Incident Commander di butir 2 sheet Investigasi | Nama Incident Commander di butir Incident Commander sheet Investigasi |
+| 6.4 langkah 6, kolom Output | Hasil sweep di butir 12 sheet Investigasi | Hasil sweep di butir Sweep ke host sejenis sheet Investigasi |
+| 6.4 langkah 11, kolom Output | Hasil verifikasi di butir 13 sheet Investigasi | Hasil verifikasi di butir Verifikasi bersih sheet Investigasi |
+| 6.6 langkah 5, kolom Aktivitas | di butir 15 sheet Investigasi SNX-ISMS-FRM-02 | di butir Pemberitahuan sheet Investigasi SNX-ISMS-FRM-02 |
+| 6.6 langkah 5, kolom Output | Butir 15 sheet Investigasi terisi | Butir Pemberitahuan sheet Investigasi terisi |
+
+Open item yang ditutup atau diubah:
+
+- Open item 14: diubah W9: rujukan butir sheet Investigasi memakai label; kolom Register tetap perlu dicocokkan dengan xlsx FRM-02 terbaru.

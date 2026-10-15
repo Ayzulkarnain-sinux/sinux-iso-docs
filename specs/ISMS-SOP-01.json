@@ -359,7 +359,7 @@
         [
           "Pimpin penanganan insiden P1 dan P2 sebagai Incident Commander.",
           "Lead SOC",
-          "Nama Incident Commander di butir 2 sheet Investigasi"
+          "Nama Incident Commander di butir Incident Commander sheet Investigasi"
         ]
       ]
     },
@@ -394,7 +394,7 @@
         [
           "Lakukan sweep IOC ke host sejenis berdasarkan hash sesudah satu host terbukti kompromi.",
           "SOC Analyst",
-          "Hasil sweep di butir 12 sheet Investigasi"
+          "Hasil sweep di butir Sweep ke host sejenis sheet Investigasi"
         ],
         [
           "Eradication: hapus persistence (cron, akun, kunci SSH, plugin).",
@@ -419,7 +419,7 @@
         [
           "Verifikasi bahwa sistem bersih dengan dua sumber independen, misalnya sweep hash dan pemeriksaan dari vantage eksternal.",
           "SOC Analyst",
-          "Hasil verifikasi di butir 13 sheet Investigasi"
+          "Hasil verifikasi di butir Verifikasi bersih sheet Investigasi"
         ],
         [
           "Sampaikan status ke pelanggan terdampak sesuai frekuensi update di bagian 8.",
@@ -492,9 +492,9 @@
           "Keputusan pelaporan ke pihak luar"
         ],
         [
-          "Catat keputusan pemberitahuan dan pelaporan beserta dasarnya di butir 15 sheet Investigasi SNX-ISMS-FRM-02.",
+          "Catat keputusan pemberitahuan dan pelaporan beserta dasarnya di butir Pemberitahuan sheet Investigasi SNX-ISMS-FRM-02.",
           "SOC Analyst",
-          "Butir 15 sheet Investigasi terisi"
+          "Butir Pemberitahuan sheet Investigasi terisi"
         ]
       ]
     },

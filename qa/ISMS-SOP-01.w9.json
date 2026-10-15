@@ -1,0 +1,31 @@
+{
+ "key": "ISMS-SOP-01",
+ "cluster": "OPS-REF",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Label rujukan dipendekkan dari label lengkap sheet Investigasi (A14 'Sweep ke host sejenis (cakupan dan hasil)', A15 'Verifikasi bersih (dua sumber independen)', A17 'Pemberitahuan (pelanggan, regulator, aparat) dan dasar keputusan'). Bagian awalnya cocok dan mudah dikenali, dan pola ini sama dengan 'butir Tim investigasi' yang sudah ada di tabel istilah (baris render 136).",
+  "Tidak ada label penutup (misalnya tanda kutip) di frasa 'di butir Sweep ke host sejenis sheet Investigasi', jadi batas label agak sulit dibaca. Ini soal kosmetik dan tidak mengubah makna.",
+  "Notes ISMS-SOP-01 bagian ISO-W9 menyebut nomor butir 6.3, 6.4, dan 6.6 untuk baris yang berubah. Ekstraksi teks tidak menampilkan nomor heading otomatis, jadi nomor itu tidak diverifikasi mesin. Teks sebelum dan sesudah di tabel notes cocok dengan diff.",
+  "LEAD-GUIDE.md tidak memuat butir yang menyebut ISMS-SOP-01 secara eksplisit. Dasar perubahan adalah butir 14 OPS-REF (hasil pemeriksa makna S05) di bawah G-3 B1/G-2 butir 2 (pemeriksaan rujukan)."
+ ],
+ "butir_dikerjakan": [
+  "Butir 14 (S05): 'butir 2' menjadi 'butir Incident Commander' (langkah Pimpin penanganan P1/P2, kolom Output). Cocok dengan A4 sheet Investigasi SNX-ISMS-FRM-02 (A4 = butir 2 dihitung dari A3).",
+  "Butir 14: 'butir 12' menjadi 'butir Sweep ke host sejenis' (langkah sweep IOC, kolom Output). Cocok dengan A14.",
+  "Butir 14: 'butir 13' menjadi 'butir Verifikasi bersih' (langkah verifikasi dua sumber, kolom Output). Cocok dengan A15.",
+  "Butir 14: 'butir 15' menjadi 'butir Pemberitahuan' di kolom Aktivitas dan kolom Output langkah Catat keputusan pemberitahuan. Cocok dengan A17.",
+  "Blok approval tidak berubah dan sudah sama dengan defaults v22 ISMS plus approved_by.all: Prepared Erik Dwi Yanto / Technical/Operation Engineer L1, Reviewed Fani Fatullah / VP Tech Operation and Services, Approved Samuel Kristanto Utomo / President Director.",
+  "Notes ISMS-SOP-01 punya bagian '## ISO-W9' berisi tabel perubahan (5 baris) dan perubahan status open item 14."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Diff teks: 4 baris berubah, semuanya penggantian nomor butir dengan label sheet Investigasi. Diff spec: 5 string di specs/ISMS-SOP-01.json, tanpa perubahan lain. Grep pada teks render sesudah (/tmp/claude-0/w9/isms-sop-01.after.txt): 'HR Manager' = 0, 'Divisi Legal' = 0, em-dash atau en-dash = 0. Tidak ada lagi rujukan 'butir <angka> sheet Investigasi'; ada 5 rujukan sheet Investigasi dan semuanya memakai label. Dokumen ini bukan dokumen HR atau Legal, jadi aturan langkah 7 berlaku sebagai cek nol saja. Hasilnya lulus. Process Owner = Lead SOC, tidak berubah.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
