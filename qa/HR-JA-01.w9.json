@@ -1,0 +1,46 @@
+{
+ "key": "HR-JA-01",
+ "cluster": "HR-STRUKTUR",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 2,
+ "putaran_perbaikan": 1,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Matriks peran bagian 8, kolom status baris Line Manager Legal dan Staff Legal: 'Sudah diputus; ...' adalah pasif tanpa pelaku. Frasa ini ikut kata instruksi ('ditulis sebagai sudah diputus'), tetapi bisa dibuat aktif, misalnya 'Owner sudah memutus pemetaan ini'.",
+  "Matriks peran, baris Finance Lead: kolom status masih memuat 'Pemetaan peran ke orang menunggu keputusan Management.' Kalimat ini tidak bertentangan dengan label (USULAN) di kolom Jabatan, tetapi agak tegang dengan definisi baru ('dijalankan Direktur sampai terisi'). Penyusun mencatat di notes bahwa kalimat ini sengaja dibiarkan.",
+  "Label (USULAN) pada pemetaan Legal di HR-JA-01 ikut dihapus (paragraf sesudah tabel jabatan dan matriks peran), padahal butir 4 HR-STRUKTUR hanya menyebut SNX-HR-ORG-01. LEAD-GUIDE G-3 A5 yang berlaku untuk semua dokumen dan data_conflicts v22 ('Nama Legal', konfirmasi selesai) menjadi dasarnya, jadi ini bukan perubahan makna di luar instruksi. Penyusun sudah mencatatnya di notes.",
+  "Definisi menulis 'dijalankan Direktur', sedangkan matriks menulis 'dijalankan Direktur (COO)'. Keduanya sah: defaults v22 menyuruh menulis 'Direktur (COO)' pada sebutan pertama, dan tabel jabatan JA-02 sudah memakai 'Direktur (COO)'. Ini hanya beda gaya.",
+  "Ekstraksi teks w9diff hanya mencakup paragraf dan tabel tingkat atas, tanpa header dan footer. Karena itu grep juga dijalankan langsung pada specs/HR-JA-01.json, dan hasilnya 0 'HR Manager'."
+ ],
+ "butir_dikerjakan": [
+  "A1: ejaan 'Samuel Kristanto Utomo' dipakai di blok Approved dan tabel JA-01; 'Kristianto' 0 kemunculan di render dan spec. Dokumen ini tidak perlu diubah; open item pemutus Aziz dicatat penyusun di notes ORG-01.",
+  "A2: 'HR Manager' diganti 'HR Lead' di process_owner, blok Reviewed ('Aziz Priyo Widakdo / HR Lead'), judul 'JA-14 HR Lead', tabel jabatan JA-14, uraian dan wewenang serta garis pelaporan HRGA Officer, dan bagian Peninjauan (2 kalimat). SPV tidak ditambah karena dokumen tidak punya kolom tingkat jabatan (dicatat di notes).",
+  "A3: garis pelaporan JA-03 menjadi 'Atasan langsung: Direktur (COO) dan Direktur Utama' dan label menunggu konfirmasi ke Direktur Utama dihapus. JA-04 juga menjadi 'Direktur (COO) dan Direktur Utama'. Atasan JA-05, JA-08, JA-10, JA-11, JA-14 dan label menunggu konfirmasinya tetap, termasuk 'Hubungan pelaporan Manager of Product Tech menunggu konfirmasi'.",
+  "A5: label (USULAN) dan 'Menunggu konfirmasi Legal' pada pemetaan JA-08 = Line Manager Legal dan JA-09 = Staff Legal dihapus. Label USULAN lain tetap. Blok Prepared/Reviewed tetap milik HR. 'Divisi Legal' 0, 'Daffa' 0.",
+  "A6: definisi Finance Lead dan Finance Staff ditambahkan ke tabel Definisi dengan kata yang persis sama dengan instruksi. Baris Finance Lead dan Finance Staff di matriks peran diselaraskan.",
+  "Data defaults v22 cocok: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director', Process Owner 'HR Lead'. 'Direktur (COO)' punya dasar di data_conflicts v22 dan tabel JA-02.",
+  "Nol fakta baru tanpa dasar: JA-10 Finance dan JA-11 Accounting & Tax cocok dengan tabel jabatan. Tidak ada rujukan silang baru atau yang diubah. Kalimat yang berubah tanpa em-dash, tanpa frasa proses penyusunan, dan tanpa rujukan AI."
+ ],
+ "butir_tidak_dikerjakan": [
+  "B4 (garis putus-putus / open item 17 / GAP 1) khusus SNX-HR-ORG-01 dan tidak berlaku untuk HR-JA-01. Badan dokumen ini tidak menyebut keterbatasan garis putus-putus.",
+  "Butir K-01, K-06, K-07, K-13 dan bagan (edge ja01-ja03/ja04, simpul JA-14) khusus SNX-HR-ORG-01. HR-JA-01 tidak punya tabel K atau diagram (spec: 0 edges/diagram)."
+ ],
+ "grep": "Teks sesudah (render /tmp/claude-0/w9/render/HR-JA-01.docx, diekstrak ke /tmp/claude-0/w9/chk/HR-JA-01.after.txt): 'HR Manager' = 0, juga 0 di specs/HR-JA-01.json. 'Divisi Legal' = 0 (dokumen HR, bukan Legal). Tambahan: 'Kristianto' = 0, 'Daffa' = 0, em-dash pada diff = 0. Label menunggu konfirmasi pada garis atasan JA-03/JA-04 = 0. 'Menunggu konfirmasi' yang tersisa hanya pada JA-05, JA-08, JA-10, JA-11, JA-14, Line Manager Legal bagian 7, relasi Manager of Product Tech, dan butir 4.3; semuanya tetap sesuai A4.",
+ "riwayat": [
+  {
+   "verdict": "FAIL",
+   "blocking": [
+    {
+     "lokasi": "SNX-HR-JA-01 bagian 5 Daftar Jabatan, paragraf sesudah tabel jabatan (specs/HR-JA-01.json baris 340)",
+     "masalah": "Bagian 5 masih memberi label (USULAN) pada pemetaan Legal (JA-08 = Line Manager Legal, JA-09 = Staff Legal). Ini bertentangan dengan config/defaults.json v22 data_conflicts 'Pemetaan peran Legal' (label USULAN pada pemetaan ini dihapus, konfirmasi selesai, berlaku di semua dokumen termasuk Job Analysis) dan dengan LEAD-GUIDE G-3 A5 (bagian A, wajib di semua dokumen). Dokumen juga jadi bertentangan dengan dirinya sendiri: tabel bagian 8 baris Line Manager Legal dan Staff Legal sudah ditulis 'Sudah diputus', dan notes menutup open item 5. Butir A5 hanya dikerjakan sebagian.",
+     "bukti": "Teks sesudah (/tmp/claude-0/w9/chk-hrja01/after.txt) baris 47: 'Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal (USULAN) berasal dari HR-JA-001, yang mencatat JA-09 sebagai bawahan langsung JA-08.' Baris 522-523: '... | Sudah diputus; dasarnya hubungan atasan dan bawahan JA-08 dan JA-09.' Isi notes/HR-JA-01.md bagian ISO-W9: 'Open item 5: ditutup W9: pemetaan ... sudah diputus.'"
+    }
+   ]
+  },
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

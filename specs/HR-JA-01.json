@@ -7,7 +7,7 @@
   "number": "SNX-HR-JA-01",
   "department": "Human Resources",
   "title": "Job Analysis dan Uraian Jabatan",
-  "process_owner": "HR Manager",
+  "process_owner": "HR Lead",
   "classification": "RESTRICTED (Internal)",
   "review_period": "YEARLY",
   "status": "Draft",
@@ -16,7 +16,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
-   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -128,6 +128,14 @@
        [
         "Matriks peran",
         "Tabel yang memetakan peran ISO ke jabatan (bagian 8; lengkapnya di SNX-HR-ORG-01)."
+       ],
+       [
+        "Finance Lead",
+        "Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+       ],
+       [
+        "Finance Staff",
+        "Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
        ]
       ]
      }
@@ -315,7 +323,7 @@
        ],
        [
         "JA-14",
-        "HR Manager",
+        "HR Lead",
         "Aziz Priyo Widakdo",
         "Human Resources"
        ],
@@ -329,7 +337,7 @@
      }
     },
     {
-     "p": "Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal (USULAN) berasal dari HR-JA-001, yang mencatat JA-09 sebagai bawahan langsung JA-08. Jobdesk Line Manager Legal dan Jobdesk Staff Legal tidak menyebut nama pemegang jabatan."
+     "p": "Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal berasal dari HR-JA-001, yang mencatat JA-09 sebagai bawahan langsung JA-08. Jobdesk Line Manager Legal dan Jobdesk Staff Legal tidak menyebut nama pemegang jabatan."
     }
    ]
   },
@@ -588,7 +596,7 @@
        ],
        [
         "Garis pelaporan",
-        "Atasan langsung: COO (garis pelaporan ke Direktur Utama menunggu konfirmasi). Bawahan langsung: Business Development dan Brand & Marketing. Hubungan pelaporan Manager of Product Tech menunggu konfirmasi."
+        "Atasan langsung: Direktur (COO) dan Direktur Utama. Bawahan langsung: Business Development dan Brand & Marketing. Hubungan pelaporan Manager of Product Tech menunggu konfirmasi."
        ],
        [
         "Kondisi kerja",
@@ -674,7 +682,7 @@
        ],
        [
         "Garis pelaporan",
-        "Atasan langsung: COO. Bawahan langsung: Tim operasional dan layanan teknis sesuai struktur serta penugasan yang disahkan."
+        "Atasan langsung: Direktur (COO) dan Direktur Utama. Bawahan langsung: Tim operasional dan layanan teknis sesuai struktur serta penugasan yang disahkan."
        ],
        [
         "Kondisi kerja",
@@ -1308,7 +1316,7 @@
        ],
        [
         "2",
-        "Menyiapkan dokumen absensi, cuti, benefit dan payroll input untuk verifikasi HR Manager."
+        "Menyiapkan dokumen absensi, cuti, benefit dan payroll input untuk verifikasi HR Lead."
        ],
        [
         "3",
@@ -1328,7 +1336,7 @@
        ],
        [
         "7",
-        "Melaporkan deviasi administrasi dan kebutuhan perbaikan kepada HR Manager."
+        "Melaporkan deviasi administrasi dan kebutuhan perbaikan kepada HR Lead."
        ]
       ]
      }
@@ -1358,11 +1366,11 @@
        ],
        [
         "Wewenang",
-        "1) Meminta kelengkapan data/dokumen; 2) Memproses administrasi dalam SOP; 3) Mengeskalasi keputusan HR dan persetujuan ke HR Manager"
+        "1) Meminta kelengkapan data/dokumen; 2) Memproses administrasi dalam SOP; 3) Mengeskalasi keputusan HR dan persetujuan ke HR Lead"
        ],
        [
         "Garis pelaporan",
-        "Atasan langsung: HR Manager (Aziz Priyo Widakdo). Bawahan langsung: Office Helper (Muhamad Reyhan Bahtiar)."
+        "Atasan langsung: HR Lead (Aziz Priyo Widakdo). Bawahan langsung: Office Helper (Muhamad Reyhan Bahtiar)."
        ],
        [
         "Kondisi kerja",
@@ -1458,7 +1466,7 @@
      }
     },
     {
-     "h2": "JA-14 HR Manager"
+     "h2": "JA-14 HR Lead"
     },
     {
      "p": "Tujuan jabatan: Memimpin dan bertanggung jawab atas strategi, kepatuhan, efektivitas dan seluruh output Human Resources."
@@ -2201,25 +2209,25 @@
         "Line Manager Legal",
         "Jobdesk Line Manager Legal",
         "JA-08 (Ester Febe Utomo)",
-        "(USULAN) dari hubungan atasan dan bawahan JA-08 dan JA-09. Menunggu konfirmasi Legal."
+        "Sudah diputus; dasarnya hubungan atasan dan bawahan JA-08 dan JA-09."
        ],
        [
         "Staff Legal",
         "Jobdesk Staff Legal",
         "JA-09 (Alif Altamziz)",
-        "(USULAN) dengan alasan yang sama seperti Line Manager Legal. Menunggu konfirmasi Legal."
+        "Sudah diputus; dasarnya hubungan atasan dan bawahan JA-08 dan JA-09."
        ],
        [
         "Finance Lead",
         "SNX-FAT-SOP-01, SNX-FAT-SOP-05",
-        "Belum dipetakan",
+        "Belum terisi; dijalankan Direktur (COO) sampai terisi (USULAN)",
         "JA-10 dan JA-11 tidak memuat kata Lead atau Staff. Pemetaan peran ke orang menunggu keputusan Management."
        ],
        [
         "Finance Staff",
         "SNX-FAT-SOP-01, SNX-FAT-SOP-05",
-        "Belum dipetakan",
-        "Alasan sama dengan Finance Lead."
+        "JA-10 dan JA-11 (USULAN)",
+        "Pemegang JA-10 dan JA-11 menjalankan peran pelaksana."
        ]
       ]
      }
@@ -2233,10 +2241,10 @@
    "h": "Peninjauan dan Pengendalian Perubahan",
    "blocks": [
     {
-     "p": "HR Manager meninjau dokumen ini 12 bulan sejak tanggal efektif atau saat ada perubahan signifikan."
+     "p": "HR Lead meninjau dokumen ini 12 bulan sejak tanggal efektif atau saat ada perubahan signifikan."
     },
     {
-     "p": "HR-JA-001 revisi 03 memuat frasa kompetensi yang rusak, satu kalimat yang terpotong, dan nama unit yang tidak seragam. Dokumen ini memulihkan frasa ke padanan istilah yang paling mungkin, menyambung kalimat di butir 4.1, dan menyamakan nama unit, termasuk Bisnis/Sales di jobdesk Legal menjadi Commercial (USULAN). HR Manager mengonfirmasi pemulihan itu bersama pemegang fungsi."
+     "p": "HR-JA-001 revisi 03 memuat frasa kompetensi yang rusak, satu kalimat yang terpotong, dan nama unit yang tidak seragam. Dokumen ini memulihkan frasa ke padanan istilah yang paling mungkin, menyambung kalimat di butir 4.1, dan menyamakan nama unit, termasuk Bisnis/Sales di jobdesk Legal menjadi Commercial (USULAN). HR Lead mengonfirmasi pemulihan itu bersama pemegang fungsi."
     }
    ]
   },

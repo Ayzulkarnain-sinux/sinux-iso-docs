@@ -217,14 +217,14 @@ Hitungan sesudah putaran 1: 28 label "(USULAN)" di dokumen (sama dengan warn lin
 | 1 | Checklist baris 8 menautkan 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, pencarian judul nihil). Minta tim membagikan berkas itu, lalu bandingkan dengan sumber yang dipakai | owner, Aziz |
 | 2 | Konfirmasi pemulihan frasa kompetensi (tabel 5) dan penyambungan kalimat butir 4.1 bersama pemegang fungsi | Aziz |
 | 3 | Penyeragaman nama unit: JA-12, JA-14, JA-15 semuanya Human Resources; JA-04, JA-05, JA-13 Operation. Fungsi General Affairs tidak disebut sebagai unit | Aziz |
-| 4 | Satu atasan langsung untuk JA-08, JA-10, JA-11, JA-14 (COO atau Management); garis JA-03 ke Direktur Utama; atasan JA-05 (COO atau VP Commercial) | owner, Aziz |
-| 5 | Pemetaan JA-08 ke Line Manager Legal dan JA-09 ke Staff Legal; kedua jobdesk tidak menyebut nama | Legal |
+| 4 | Satu atasan langsung untuk JA-08, JA-10, JA-11, JA-14 (COO atau Management); garis JA-03 ke Direktur Utama; atasan JA-05 (COO atau VP Commercial) (diubah W9: garis JA-03 ke Direktur Utama sudah diputus, JA-04 juga; sisa butir tetap terbuka) | owner, Aziz |
+| 5 | Pemetaan JA-08 ke Line Manager Legal dan JA-09 ke Staff Legal; kedua jobdesk tidak menyebut nama (ditutup W9: pemetaan sudah diputus) | Legal |
 | 6 | Atasan Line Manager Legal: Direktur Utama (jobdesk, sumber menulis CEO) atau COO atau Management (JA-08) | owner, Samuel |
 | 7 | Kontradiksi wewenang menahan kontrak berisiko tinggi di jobdesk Line Manager Legal; SOP Legal juga memuat "Hentikan proses; eskalasi ke manajemen" pada risiko Tinggi (kutipan dari audit, SOP tidak saya buka) | Legal, Samuel |
 | 8 | Batas wewenang menunjuk notaris, konsultan, atau advokat kosong di sumber; SOP Legal merujuk batas itu ke jobdesk ini | Legal |
 | 9 | Target KPI Staff Legal untuk "Kesalahan material pada dokumen final" dan "Isu risiko yang terlambat dieskalasi" kosong; KPI semua jabatan menunggu KPI Matrix (tidak ada di korpus) | Aziz |
 | 10 | Apakah Authority Matrix, matriks otorisasi, dan DoA satu dokumen; dokumen itu belum ada (SOP Legal menyebut matriks DoA "belum disusun" menurut audit) | Legal, Aziz |
-| 11 | Pemetaan Finance Lead dan Finance Staff ke JA-10 dan JA-11 (atau jabatan baru) | owner, FAT |
+| 11 | Pemetaan Finance Lead dan Finance Staff ke JA-10 dan JA-11 (atau jabatan baru) (diubah W9: peran tetap; Finance Lead dijalankan Direktur sampai terisi dan Finance Staff dijalankan pemegang JA-10 dan JA-11, keduanya (USULAN)) | owner, FAT |
 | 12 | Arti "SIP" pada "eligible collection SIP" (JA-10 butir 3) tidak dijelaskan di sumber | FAT |
 | 13 | Jam masuk, jam pulang, dan jumlah jam kerja per hari tidak ada di PP BAB VI (hanya BAB VI yang saya baca). Lingkungan dan kondisi fisik tiap jabatan adalah USULAN U3; Aziz memastikan atau mengganti per jabatan. Bila ada bab PP atau SK jam kerja, kutip angkanya | Aziz |
 | 14 | Masa pengalaman minimum menunggu job evaluation; sertifikasi menunggu Competency Matrix. Belum ada keduanya | Aziz |
@@ -277,3 +277,44 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Tanpa sumber langsung: (a) Zammad di JA-04 dan JA-13, dari kata owner di defaults (open item 18); (b) pelaku HR Manager pada peninjauan tahunan, dari process owner (asumsi 6); (c) label K1 sampai K4; (d) definisi Management, Job evaluation, dan Competency Matrix yang saya tulis dari konteks kalimat sumber; (e) kode SNX pada Dokumen terkait, dari worklist; (f) klausul dan judul ISO, berlabel USULAN; (g) uraian APD; (h) tiga butir yang saya baca dari audit dan tidak dari Drive: pemakaian Finance Lead dan Finance Staff di SOP FAT, SLA SOP Legal, "Staff Legal (Senior/Junior)".
 - Sudah saya perbaiki di teks: klaim hasil pada baris ISO (di atas) dan "dikomunikasikan dan dipahami" yang tidak bisa dibuktikan dari dokumen.
 - Putaran 1: tanpa sumber langsung sekarang tambahan: (i) lingkungan dan kondisi fisik 15 jabatan (U3, berlabel); (ii) jam masuk dan pulang "mengikuti Peraturan Perusahaan" (U10, berlabel; angka tidak ditulis); (iii) "lokasi kerja utama semua jabatan" dari alamat kantor di footer template (tafsir, asumsi 14); (iv) rujukan ISO 9001:2015 7.1.4 dan ISO/IEC 27001:2022 Annex A 6.7 (berlabel lewat kalimat pembuka bagian 11). Angka baru hanya jam shift 07:00, 15:00, 23:00 WIB dan "tiga shift 8 jam", dari POL-OPS-001 bagian 5 dan ditulis sebagai usulan draf. Tidak ada nama atau tanggal baru.
+
+## ISO-W9
+
+Putaran perbaikan ISO-W9 (LEAD G-2 dan G-3, config/defaults.json v22). Hanya butir A1, A2, A3, A5, A6, B4 yang dikerjakan; fakta, angka, nama, dan struktur lain tetap. Perubahan pada spec:
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 process_owner | HR Manager | HR Lead |
+| A2 blok Reviewed | Aziz Priyo Widakdo / HR Manager | Aziz Priyo Widakdo / HR Lead |
+| A2 HR Manager -> HR Lead | HR Manager | HR Lead |
+| A2 HR Manager -> HR Lead | Menyiapkan dokumen absensi, cuti, benefit dan payroll input untuk verifikasi HR Manager. | Menyiapkan dokumen absensi, cuti, benefit dan payroll input untuk verifikasi HR Lead. |
+| A2 HR Manager -> HR Lead | Melaporkan deviasi administrasi dan kebutuhan perbaikan kepada HR Manager. | Melaporkan deviasi administrasi dan kebutuhan perbaikan kepada HR Lead. |
+| A2 HR Manager -> HR Lead | 1) Meminta kelengkapan data/dokumen; 2) Memproses administrasi dalam SOP; 3) Mengeskalasi keputusan HR dan persetujuan ke HR Manager | 1) Meminta kelengkapan data/dokumen; 2) Memproses administrasi dalam SOP; 3) Mengeskalasi keputusan HR dan persetujuan ke HR Lead |
+| A2 HR Manager -> HR Lead | Atasan langsung: HR Manager (Aziz Priyo Widakdo). Bawahan langsung: Office Helper (Muhamad Reyhan Bahtiar). | Atasan langsung: HR Lead (Aziz Priyo Widakdo). Bawahan langsung: Office Helper (Muhamad Reyhan Bahtiar). |
+| A2 HR Manager -> HR Lead | JA-14 HR Manager | JA-14 HR Lead |
+| A2 HR Manager -> HR Lead | HR Manager meninjau dokumen ini 12 bulan sejak tanggal efektif atau saat ada perubahan signifikan. | HR Lead meninjau dokumen ini 12 bulan sejak tanggal efektif atau saat ada perubahan signifikan. |
+| A2 HR Manager -> HR Lead | HR-JA-001 revisi 03 memuat frasa kompetensi yang rusak, satu kalimat yang terpotong, dan nama unit yang tidak seragam. Dokumen ini memulihkan frasa ke padanan istilah yang paling mungkin, menyambung kalimat di butir 4.1, dan menyamakan nama unit, termasuk Bisnis/Sales di jobdesk Legal menjadi Commercial (USULAN). HR Manager mengonfirmasi pemulihan itu bersama pemegang fungsi. | HR-JA-001 revisi 03 memuat frasa kompetensi yang rusak, satu kalimat yang terpotong, dan nama unit yang tidak seragam. Dokumen ini memulihkan frasa ke padanan istilah yang paling mungkin, menyambung kalimat di butir 4.1, dan menyamakan nama unit, termasuk Bisnis/Sales di jobdesk Legal menjadi Commercial (USULAN). HR Lead mengonfirmasi pemulihan itu bersama pemegang fungsi. |
+| A3 JA-03 Garis pelaporan | Atasan langsung: COO (garis pelaporan ke Direktur Utama menunggu konfirmasi). Bawahan langsung: Business Development dan Brand & Marketing. Hubungan pelaporan Manager of Product Tech menunggu konfirmasi. | Atasan langsung: Direktur (COO) dan Direktur Utama. Bawahan langsung: Business Development dan Brand & Marketing. Hubungan pelaporan Manager of Product Tech menunggu konfirmasi. |
+| A3 JA-04 Garis pelaporan | Atasan langsung: COO. Bawahan langsung: Tim operasional dan layanan teknis sesuai struktur serta penugasan yang disahkan. | Atasan langsung: Direktur (COO) dan Direktur Utama. Bawahan langsung: Tim operasional dan layanan teknis sesuai struktur serta penugasan yang disahkan. |
+| A6 Definisi: baris baru Finance Lead dan Finance Staff | (tidak ada) | dua baris ditambah di akhir tabel Definisi |
+| A5 Matriks Line Manager Legal Status pemetaan | (USULAN) dari hubungan atasan dan bawahan JA-08 dan JA-09. Menunggu konfirmasi Legal. | Sudah diputus; dasarnya hubungan atasan dan bawahan JA-08 dan JA-09. |
+| A5 Matriks Staff Legal Status pemetaan | (USULAN) dengan alasan yang sama seperti Line Manager Legal. Menunggu konfirmasi Legal. | Sudah diputus; dasarnya hubungan atasan dan bawahan JA-08 dan JA-09. |
+| A5 Bagian 5 paragraf sesudah tabel jabatan | Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal (USULAN) berasal dari HR-JA-001, ... | Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal berasal dari HR-JA-001, ... (label USULAN dihapus; putaran 1, selaras defaults.json v22 dan G-3 A5) |
+| A6 Matriks Finance Lead Jabatan | Belum dipetakan | Belum terisi; dijalankan Direktur (COO) sampai terisi (USULAN) |
+| A6 Matriks Finance Staff | Belum dipetakan \| Alasan sama dengan Finance Lead. | JA-10 dan JA-11 (USULAN) \| Pemegang JA-10 dan JA-11 menjalankan peran pelaksana. |
+
+Open item yang ditutup atau diubah (nomor tabel Open items di atas):
+
+- Open item 4: diubah W9: bagian garis JA-03 ke Direktur Utama ditutup, sudah diputus; JA-04 juga melapor ke Direktur dan Direktur Utama. Atasan JA-08, JA-10, JA-11, JA-14 dan JA-05 tetap terbuka.
+- Open item 5: ditutup W9: pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 sudah diputus.
+- Open item 11: diubah W9: Finance Lead dan Finance Staff tetap nama peran; Finance Lead dijalankan Direktur sampai jabatan terisi, Finance Staff dijalankan pemegang JA-10 dan JA-11 (keduanya USULAN, pemutus owner dan FAT).
+- Asumsi dan tafsir yang menyebut HR Manager (asumsi 6, fakta kunci) basi; jabatan JA-14 kini HR Lead.
+
+Catatan pelaksana, tidak diubah:
+- A1: ejaan Kristanto sudah dipakai di spec ini; tidak ada perubahan. Pembetulan ejaan Job Analysis tim dicatat sebagai open item pemutus Aziz di notes SNX-HR-ORG-01.
+- SPV tidak ditulis: dokumen ini tidak punya kolom tingkat jabatan.
+- A5 menyebut SNX-HR-ORG-01; label (USULAN) dan "Menunggu konfirmasi Legal" pada pemetaan Legal di matriks peran dokumen ini ikut dihapus agar selaras dengan ORG-01. LEAD dapat membatalkan bila hanya ORG-01 yang dimaksud.
+- Bagian Peran ISO: baris Finance Lead dan Finance Staff diselaraskan dengan definisi baru; kalimat "Pemetaan peran ke orang menunggu keputusan Management" pada baris Finance Lead dibiarkan.
+- Atasan JA-03 dan JA-04 ditulis "Direktur (COO) dan Direktur Utama" mengikuti penulisan Direktur (COO) di tabel Definisi.
+- Blok Prepared dan Reviewed tetap milik HR (Sita sebagai Prepared, Aziz Priyo Widakdo / HR Lead sebagai Reviewed).
+- Uji: render_sop, lint_doc generic (pass), validate.py (PASSED), blankscan (ok), w9diff dibaca.
