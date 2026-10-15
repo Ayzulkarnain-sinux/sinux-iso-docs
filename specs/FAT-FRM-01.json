@@ -214,11 +214,11 @@
        ],
        [
         "Finance Staff",
-        "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)."
+        "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)."
        ],
        [
         "Finance Lead",
-        "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)."
+        "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)."
        ],
        [
         "Penyetuju",
@@ -691,7 +691,7 @@
       "rows": [
        [
         "SNX-HR-ORG-01",
-        "Struktur Organisasi SINUX: sumber nama jabatan. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 3 (butir K-13)."
+        "Struktur Organisasi SINUX: sumber nama jabatan. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)."
        ],
        [
         "SNX-HR-JA-01",

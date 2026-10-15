@@ -104,7 +104,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 
 ## USULAN
 
-13 kemunculan label "(USULAN)" di spec (sebelum sweep 12; sweep menambah satu di baris rekaman bukti) (satu adalah baris definisi label itu sendiri) ditambah satu label klausul "(USULAN, perlu konfirmasi konsultan)"; dikelompokkan jadi 14 butir, termasuk butir yang dicakup label di butir 4.9 dan satu butir tanpa label di badan (U-13, pengecualian cakupan). Pemutus yang disarankan memakai kelompok: owner, Samuel, Aziz, FAT, Legal, Fani.
+13 kemunculan label "(USULAN)" di spec (sebelum sweep 12; sweep menambah satu di baris rekaman bukti) (satu adalah baris definisi label itu sendiri) ditambah satu label klausul "(USULAN, perlu konfirmasi konsultan)"; dikelompokkan jadi 14 butir, termasuk butir yang dicakup label di butir 4.9 dan satu butir tanpa label di badan (U-13, pengecualian cakupan). Pemutus yang disarankan memakai kelompok: owner, Samuel, Aziz, FAT, Legal, Fani. Diubah W9: hitungan di atas basi; sesudah W9 spec memuat dua label (USULAN) lagi dari dua definisi baru A6 (Finance Lead dan Finance Staff), jadi lint mencatat 15 kemunculan. Dua label itu tercakup OI-2, tidak membuat butir USULAN baru.
 
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -119,7 +119,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 | U-09 | Retensi minimal 10 tahun untuk log dan bukti (angka sumber hanya untuk dokumen penagihan dan bukti perpajakan; dua baris rekaman) | Rekaman kolom Retensi | FAT dan Legal |
 | U-10 | Finance Lead meninjau form setiap tahun (review_period YEARLY dari defaults, pelaku USULAN) | Kesimpulan | owner |
 | U-11 | Daftar klausul ISO 9001:2015 (5.3, 7.5.3) dan ISO/IEC 27001:2022 (Annex A 5.3, 5.33), label "(USULAN, perlu konfirmasi konsultan)" | Acuan ISO | konsultan lewat owner |
-| U-12 | Form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (label di Dokumen Terkait mengikuti SNX-FAT-SOP-05) | Dokumen Terkait baris SNX-FAT-SOP-05; Ruang Lingkup | FAT |
+| U-12 | Form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (label di Dokumen Terkait mengikuti SNX-FAT-SOP-05; diubah W9: kalimat Dokumen Terkait kini merujuk butir 6.3 langkah 2 untuk persetujuan utang pajak dan tabel rekaman bagian 11 untuk pengajuan pembayaran, cakupan butir tidak berubah) | Dokumen Terkait baris SNX-FAT-SOP-05; Ruang Lingkup | FAT |
 | U-13 | Aturan arsip SNX-FAT-SOP-04 dipakai untuk lokasi dan retensi form ini; pengecualian cakupan (tujuh butir) diturunkan dari kriteria baris karena sumber diam | Dokumen Terkait baris SNX-FAT-SOP-04; Ruang Lingkup tabel dikecualikan | FAT |
 | U-14 | process_owner = Finance Lead | Identity | owner |
 
@@ -136,7 +136,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 | OI-7 | Apakah jenis pembayaran lain (gaji dan input payroll dari HR, pembayaran vendor selain pembayaran invoice) tercakup. Form membaca "setiap" sebagai mencakup semuanya (A4) | FAT |
 | OI-8 | Bentuk bukti persetujuan tertulis yang sah (surat, pesan, tanda tangan basah, atau sistem tiket); sumber tidak menyebutnya, jadi form hanya menyebut "tertulis" | FAT |
 | OI-9 | Bentuk pakai harian: form ini berformat docx, sedangkan log harian lazimnya lembar kerja. Apakah Tabel 1 sampai 3 dipindah ke Google Sheets dan di mana | FAT dan owner |
-| OI-10 | SOP Payment and Disbursement Approval masih dalam peninjauan dan belum bernomor. Setelah terbit, rujukan di Ruang Lingkup, Dokumen Terkait, dan butir 4.2 sampai 4.5 perlu disesuaikan | FAT |
+| OI-10 | SOP Payment and Disbursement Approval belum bernomor di kolom kode Dokumen Terkait; kalimat Ruang Lingkup kini hanya "dalam peninjauan". Setelah terbit, rujukan di Ruang Lingkup, Dokumen Terkait, dan butir 4.2 sampai 4.5 perlu disesuaikan; diubah W9: penyeragaman status di Ruang Lingkup (G-3 B4), item tetap terbuka | FAT |
 | OI-11 | Verdict audit menempatkan butir ini di tier G (isi wajib di dokumen induk: DoA keuangan tertulis plus jejak approval, bukan register baru), sedangkan checklist baris 30 meminta dokumen log sheet. Form dibuat sesuai checklist. Keputusan apakah form ini berdiri sendiri atau menjadi lampiran DoA keuangan | owner |
 | OI-12 | Retensi dan lokasi log: angka 10 tahun hanya bersumber untuk dokumen penagihan dan bukti perpajakan; dasar hukum angka itu tidak dibawa (sumber menulis "sesuai ketentuan perpajakan dan audit ISO" tanpa pasal). Perlu konfirmasi angka dan titik awal hitungan | Legal dan FAT |
 | OI-13 | Definisi Reimbursement dan Cash advance (U-07) belum diputus; SOP Payment and Disbursement Approval akan memuat definisi sebenarnya | FAT |
@@ -192,6 +192,9 @@ Dasar: control/LEAD-GUIDE.md G-3 A6 dan B4, serta temuan makna R400 dan S03. Han
 | R400 dokumen terkait, baris SNX-FAT-SOP-05 | "butir 6.3 menyebut form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (USULAN)." | "butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN)." |
 | S03 ruang lingkup, baris Penerimaan uang dari pelanggan | "SOP Account Receivable & Collection (dalam peninjauan dan belum bernomor)" | "SOP Account Receivable & Collection (dalam peninjauan)" |
 | B4 ruang lingkup, baris Tata cara pengajuan pembayaran | "SOP Payment and Disbursement Approval, dalam peninjauan dan belum bernomor." | "SOP Payment and Disbursement Approval, dalam peninjauan." (pola status yang sama dengan S03, ikut diseragamkan) |
+| R2 butir 1, rujukan K-13 (tabel peran dua baris, dokumen terkait baris SNX-HR-ORG-01) | "... bagian 3 (butir K-13)" (3 tempat) | "... bagian 3 (SNX-HR-ORG-01 butir K-13)" (3 tempat) |
+| R2 butir 2, notes | U-12, OI-10, dan hitungan USULAN tanpa penanda W9; kalimat OI-10 "dalam peninjauan dan belum bernomor" tidak akurat bagi kalimat Ruang Lingkup | Penanda "diubah W9" ditambahkan di baris U-12, OI-10, dan kalimat hitungan; OI-10 menyebut kalimat Ruang Lingkup kini "dalam peninjauan" saja dan kolom kode tetap "Belum bernomor" |
+| Putaran perbaikan 1, R2 butir 2 (pemblokir) | Baris U-12, OI-10, dan paragraf hitungan USULAN tanpa penanda W9; hitungan menyebut 13 label | Penanda "diubah W9: <alasan>" ditambahkan di baris U-12, OI-10, dan paragraf hitungan (15 label sesudah dua definisi A6); OI-10 kini menyebut kolom kode "belum bernomor" dan Ruang Lingkup "dalam peninjauan" |
 
 Rujukan silang yang diubah: dua, yaitu baris SNX-FAT-SOP-05 di dokumen terkait (butir 6.3 langkah 2 dan bagian 11 tabel rekaman, keduanya terbukti ada di SNX-FAT-SOP-05) dan rujukan bagian 3 pada pemetaan peran.
 
