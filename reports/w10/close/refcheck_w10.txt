@@ -1,0 +1,20 @@
+KONTROL POSITIF FRM-10 @4a40352 'SNX-OPS-SOP-04 Bagian 7.5': 3 kemunculan, OK menembak TIDAK_ADA
+rujukan: 1793 kemunculan; silang unik (asal, tujuan, lokasi): 347; berkas dibaca: 70 (docx 53, xlsx 17)
+  internal ADA              1276
+  internal ADA_TANPA_NOMOR  2
+  internal PERLU_CEK_MAKNA  19
+  internal TIDAK_ADA        15
+  silang   ADA              438
+  silang   ADA_TANPA_NOMOR  7
+  silang   DOK_TIDAK_ADA    1
+  silang   PERLU_CEK_MAKNA  28
+  silang   TIDAK_ADA        7
+sesudah adjudikasi:
+  internal ADA              1276
+  internal DIPUTUS_MAKNA    17
+  internal PERLU_CEK_MAKNA  19
+  silang   ADA              438
+  silang   ADA_TANPA_NOMOR  1
+  silang   DIPUTUS_MAKNA    14
+  silang   PERLU_CEK_MAKNA  28
+rc=0

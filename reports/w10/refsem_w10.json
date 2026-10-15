@@ -1,0 +1,239 @@
+{
+ "catatan": "Adjudikasi ulang ISO-W10 untuk rujukan yang kalimatnya diubah pass bahasa W10, sehingga kunci adjudikasi W9 (asal, tujuan, lokasi, kalimat) tidak lagi cocok. Dibaca refcheck2 (tech_fix W10).",
+ "rows": [
+  {
+   "asal": "COM-SOP-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-FRM-02",
+   "lokasi": "butir 6.8",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "bagian 6 CARA MENGISI; nomor tampak di bagian ini: tidak ada",
+   "kalimat": "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana setelah closing. Menjadi record paket handover di butir 6.8.",
+   "id": "W10-R01",
+   "sem": {
+    "id": "W10-R01",
+    "verdict": "OK",
+    "w9_id": "R080",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R080. Butir 6.8 menunjuk prosedur 6.8 Handover SOP ini, sama dengan putusan W9; tanpa label sama dengan bed1bb6 (label dihapus di W9 R2).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-FRM-02",
+   "lokasi": "butir 6.5",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "bagian 6 JENIS PELATIHAN; nomor tampak di bagian ini: tidak ada",
+   "kalimat": "Annual Training Plan & Training Matrix: tempat tindakan pelatihan atas kesenjangan keterampilan, sesuai butir 4.3 dan 6.5 SOP ini (USULAN).",
+   "id": "W10-R02",
+   "sem": {
+    "id": "W10-R02",
+    "verdict": "OK",
+    "w9_id": "R124",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R124. W10 kini menulis \"butir 4.3 dan 6.5 SOP ini\", jadi rujukan ke HR-SOP-12 sendiri tertulis eksplisit; alat menebak tujuan dari kode dokumen di depannya.",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 3",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '3.'",
+   "kalimat": "Tanpa layanan SOC, hanya unsur SIEM pada butir 3 yang tidak berlaku. Monitoring NOC dan uji alert pada butir 3 tetap diperiksa; butir 3 tidak boleh berstatus Tidak berlaku. Tanpa layanan backup, butir 4 berstatus Tidak berlaku.",
+   "id": "W10-R03",
+   "sem": {
+    "id": "W10-R03",
+    "verdict": "OK",
+    "w9_id": "R219",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R219. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 3",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '3.'",
+   "kalimat": "Tanpa layanan SOC, hanya unsur SIEM pada butir 3 yang tidak berlaku. Monitoring NOC dan uji alert pada butir 3 tetap diperiksa; butir 3 tidak boleh berstatus Tidak berlaku. Tanpa layanan backup, butir 4 berstatus Tidak berlaku.",
+   "id": "W10-R04",
+   "sem": {
+    "id": "W10-R04",
+    "verdict": "OK",
+    "w9_id": "R219",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R219. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 3",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '3.'",
+   "kalimat": "Tanpa layanan SOC, hanya unsur SIEM pada butir 3 yang tidak berlaku. Monitoring NOC dan uji alert pada butir 3 tetap diperiksa; butir 3 tidak boleh berstatus Tidak berlaku. Tanpa layanan backup, butir 4 berstatus Tidak berlaku.",
+   "id": "W10-R05",
+   "sem": {
+    "id": "W10-R05",
+    "verdict": "OK",
+    "w9_id": "R219",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R219. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 4",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '4.'",
+   "kalimat": "Tanpa layanan SOC, hanya unsur SIEM pada butir 3 yang tidak berlaku. Monitoring NOC dan uji alert pada butir 3 tetap diperiksa; butir 3 tidak boleh berstatus Tidak berlaku. Tanpa layanan backup, butir 4 berstatus Tidak berlaku.",
+   "id": "W10-R06",
+   "sem": {
+    "id": "W10-R06",
+    "verdict": "OK",
+    "w9_id": "R220",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R220. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 3",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '3.'",
+   "kalimat": "Tulis alasan di kolom Bukti atau referensi untuk unsur SIEM yang tidak berlaku pada butir 3 dan untuk butir 4 yang berstatus Tidak berlaku (USULAN).",
+   "id": "W10-R07",
+   "sem": {
+    "id": "W10-R07",
+    "verdict": "OK",
+    "w9_id": "R219",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R219. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 4",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '4.'",
+   "kalimat": "Tulis alasan di kolom Bukti atau referensi untuk unsur SIEM yang tidak berlaku pada butir 3 dan untuk butir 4 yang berstatus Tidak berlaku (USULAN).",
+   "id": "W10-R08",
+   "sem": {
+    "id": "W10-R08",
+    "verdict": "OK",
+    "w9_id": "R220",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R220. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 10,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 3",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '3.'",
+   "kalimat": "Mengisi status butir 3 dari hasil pemeriksaan monitoring NOC dan uji alert. Unsur SIEM ditulis tidak berlaku beserta alasannya di kolom Bukti atau referensi (P8, P9).",
+   "id": "W10-R09",
+   "sem": {
+    "id": "W10-R09",
+    "verdict": "OK",
+    "w9_id": "R219",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R219. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 12,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 2",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '2.'",
+   "kalimat": "Checklist G3 memuat pendaftaran aset (butir 2), akses melalui Jumphost tanpa kredensial di chat atau dokumen (butir 7), dan pencabutan akses sementara tim proyek (butir 8).",
+   "id": "W10-R10",
+   "sem": {
+    "id": "W10-R10",
+    "verdict": "OK",
+    "w9_id": "R227",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R227. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 12,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 7",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '7.'",
+   "kalimat": "Checklist G3 memuat pendaftaran aset (butir 2), akses melalui Jumphost tanpa kredensial di chat atau dokumen (butir 7), dan pencabutan akses sementara tim proyek (butir 8).",
+   "id": "W10-R11",
+   "sem": {
+    "id": "W10-R11",
+    "verdict": "OK",
+    "w9_id": "R228",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R228. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "OPS-FRM-06",
+   "bagian_asal": 12,
+   "jenis": "internal",
+   "tujuan": "SNX-OPS-FRM-06",
+   "lokasi": "butir 8",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '8.'",
+   "kalimat": "Checklist G3 memuat pendaftaran aset (butir 2), akses melalui Jumphost tanpa kredensial di chat atau dokumen (butir 7), dan pencabutan akses sementara tim proyek (butir 8).",
+   "id": "W10-R12",
+   "sem": {
+    "id": "W10-R12",
+    "verdict": "OK",
+    "w9_id": "R229",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R229. Nomor baris checklist Bagian B form ini; baris yang dirujuk tampak dan isinya sama dengan kalimat (putusan W9).",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-FAT-RPT-02",
+   "lokasi": "butir 4.2",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "bagian 4 PERAN; nomor tampak di bagian ini: tidak ada",
+   "kalimat": "Pihak yang ditentukan Finance Lead untuk memberi support, di dalam atau di luar FAT (Ketentuan butir 2). Contoh di SNX-FAT-SOP-01 adalah Project Manager untuk dokumen pendukung penagihan (butir 6.1) dan Business Development untuk data master klien (butir 4.2).",
+   "id": "W10-R13",
+   "sem": {
+    "id": "W10-R13",
+    "verdict": "OK",
+    "w9_id": "R412",
+    "alasan": "Kalimat diubah pass bahasa W10 (nomor butir dan substansi beku, gerbang diff langscan); tujuan dan lokasi sama dengan adjudikasi W9 R412. Contoh dari SNX-FAT-SOP-01; butir yang dirujuk milik dokumen itu (putusan W9), kalimat hanya dirapikan.",
+    "sumber": "orkestrator WORKER-ISO-03, dicek per kalimat terhadap teks W10 dan putusan W9"
+   }
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+$ python3 -I reports/orch/w10_grepgate.py
+KONTROL POSITIF: {'HR Lead': 1, 'Kristanto': 1, 'Divisi Legal': 1, 'Daffa': 1, 'HR Manager': 1, 'Kristianto': 1, 'em-dash': 1} -> OK
+70 dokumen out/ (Master List tidak ikut; dibangun ulang terpisah)
+| Istilah | bed1bb6 | W10 | Wajib sama |
+|---|---|---|---|
+| HR Lead | 248 | 248 | ya |
+| Kristanto | 93 | 93 | ya |
+| Divisi Legal | 0 | 0 | ya |
+| Daffa | 0 | 0 | ya |
+| HR Manager | 1 | 1 | pembanding |
+| Kristianto | 1 | 1 | pembanding |
+| em-dash | 0 | 0 | pembanding |
+SELISIH PER DOKUMEN: nihil
+rc=0

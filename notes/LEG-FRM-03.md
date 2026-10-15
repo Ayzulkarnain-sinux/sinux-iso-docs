@@ -309,3 +309,5 @@ nihil (subst_diff kosong).
 - .sections[10].blocks[0].table.rows[0][1]: diperbaiki (digabung lagi jadi satu kalimat berlabel, ketiga isi tercakup seperti bed1bb6)
 - .sections[11].blocks[1].table.rows[0][1]: diperbaiki (label digeser ke kalimat folder, tempat rujukan Ketentuan butir 14 di bed1bb6; klasifikasi tanpa label)
 - .sections[11].blocks[1].table.rows[1][1]: OK (label tetap pada pemilik)
+### W10 koreksi worker: metascan
+- .sections[4].blocks[1].p: "penyusun, pemeriksa, dan penyetuju setiap lembar review" menjadi "pihak yang menyusun, memeriksa, dan menyetujui setiap lembar review" (bentuk bed1bb6). Kata "penyusun" adalah frasa meta proses yang dihitung metascan (target 0, LEAD G-1); form ini bukan form yang punya peran bernama penyusun.

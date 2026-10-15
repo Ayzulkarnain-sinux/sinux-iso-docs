@@ -437,5 +437,411 @@
    "diukur_w10": "2026-10-14T09:11:45.648Z",
    "sama": true
   }
- ]
+ ],
+ "ukur_ulang_penutupan": {
+  "diukur_at": "2026-10-15T09:00Z",
+  "kanal": "Google Drive get_file_metadata (hanya baca), subagen mekanis Sonnet low sesi WORKER-ISO-03",
+  "jumlah": 54,
+  "diukur": 54,
+  "gagal": [],
+  "beda": [],
+  "rows": [
+   {
+    "id": "1JoSiwoMglIxy7Ic3t0EhRfvzJgf5ydzT",
+    "key": "ISMS-SOP-02",
+    "ledger": "2026-10-13T06:09:01Z",
+    "diukur_penutupan": "2026-10-13T06:09:01Z",
+    "sama": true
+   },
+   {
+    "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
+    "key": "HR-ORG-01",
+    "ledger": "2026-10-13T10:34:44.783Z",
+    "diukur_penutupan": "2026-10-13T10:34:44.783Z",
+    "sama": true
+   },
+   {
+    "id": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv",
+    "key": "HR-ORG-01",
+    "ledger": "2026-10-13T09:06:27.051Z",
+    "diukur_penutupan": "2026-10-13T09:06:27.051Z",
+    "sama": true
+   },
+   {
+    "id": "1FaPdUww5zNl0O9ZyYg2_Z2nCoU7QMsEg",
+    "key": "HR-ORG-01",
+    "ledger": "2026-09-05T15:48:26Z",
+    "diukur_penutupan": "2026-09-05T15:48:26Z",
+    "sama": true
+   },
+   {
+    "id": "1Mv6TuLy8QsllpA4YTTjmNg7Hsur4yWiL",
+    "key": "HR-JA-01",
+    "ledger": "2026-10-13T10:54:32.072Z",
+    "diukur_penutupan": "2026-10-13T10:54:32.072Z",
+    "sama": true
+   },
+   {
+    "id": "1dOku3703JwQCVeC39tl9x6k0FMa4f3nW",
+    "key": "HR-JA-01",
+    "ledger": "2026-10-13T10:54:34.881Z",
+    "diukur_penutupan": "2026-10-13T10:54:34.881Z",
+    "sama": true
+   },
+   {
+    "id": "15GrP-ihMm6MC5szQqlAgGlmWjnQ5TmH0",
+    "key": "OPS-PRC-01",
+    "ledger": "2026-10-13T06:09:03Z",
+    "diukur_penutupan": "2026-10-13T06:09:03Z",
+    "sama": true
+   },
+   {
+    "id": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz",
+    "key": "OPS-PRC-01",
+    "ledger": "2026-10-13T09:06:40.151Z",
+    "diukur_penutupan": "2026-10-13T09:06:40.151Z",
+    "sama": true
+   },
+   {
+    "id": "1lv4ALJnqGG9s9cHnzz38yOTJC57pmPgo",
+    "key": "OPS-SOP-01",
+    "ledger": "2026-10-13T06:09:03Z",
+    "diukur_penutupan": "2026-10-13T06:09:03Z",
+    "sama": true
+   },
+   {
+    "id": "15FTuu06HTHoF-Vi0qzqvwmfQH5tEdT63",
+    "key": "OPS-SOP-02",
+    "ledger": "2026-10-13T06:09:04Z",
+    "diukur_penutupan": "2026-10-13T06:09:04Z",
+    "sama": true
+   },
+   {
+    "id": "10odQYr4B2cyaAX9Z98EKxv4HUjgwIoYc",
+    "key": "OPS-SOP-03",
+    "ledger": "2026-10-13T06:09:04Z",
+    "diukur_penutupan": "2026-10-13T06:09:04Z",
+    "sama": true
+   },
+   {
+    "id": "1p9vcA1Sj6xHIbpuIS1Lb8uBTisv2WeuG",
+    "key": "OPS-SOP-04",
+    "ledger": "2026-10-13T06:09:04Z",
+    "diukur_penutupan": "2026-10-13T06:09:04Z",
+    "sama": true
+   },
+   {
+    "id": "1S4RFEDaTYU9mZYWjHHbYBfo8SRgBAq9-",
+    "key": "OPS-SOP-05",
+    "ledger": "2026-10-13T06:09:05Z",
+    "diukur_penutupan": "2026-10-13T06:09:05Z",
+    "sama": true
+   },
+   {
+    "id": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io",
+    "key": "ISMS-PRO-01",
+    "ledger": "2026-10-13T06:09:00Z",
+    "diukur_penutupan": "2026-10-13T06:09:00Z",
+    "sama": true
+   },
+   {
+    "id": "1MApsp9RPPMO1Xottjb2fGQJlaQas2M99",
+    "key": "ISMS-SOP-01",
+    "ledger": "2026-10-13T06:09:00Z",
+    "diukur_penutupan": "2026-10-13T06:09:00Z",
+    "sama": true
+   },
+   {
+    "id": "1z6y_n2i6cTN6C1y7alJsCasuy9hU6Qzc",
+    "key": "ISMS-SOP-03",
+    "ledger": "2026-10-13T06:09:01Z",
+    "diukur_penutupan": "2026-10-13T06:09:01Z",
+    "sama": true
+   },
+   {
+    "id": "1L6fR1mUiCePwKjyrpSPOrCz-6FpJbDpg",
+    "key": "ISMS-SOP-04",
+    "ledger": "2026-10-13T06:09:01Z",
+    "diukur_penutupan": "2026-10-13T06:09:01Z",
+    "sama": true
+   },
+   {
+    "id": "160t8vg9Eb_ItxjLuWxLG17OIAKpxSsKC",
+    "key": "ISMS-SOP-05",
+    "ledger": "2026-10-13T06:09:02Z",
+    "diukur_penutupan": "2026-10-13T06:09:02Z",
+    "sama": true
+   },
+   {
+    "id": "1vwD5tORDQNQ7SNaQ6w4KitPKTcsw9ZVX",
+    "key": "ISMS-PLN-01",
+    "ledger": "2026-10-13T06:09:00Z",
+    "diukur_penutupan": "2026-10-13T06:09:00Z",
+    "sama": true
+   },
+   {
+    "id": "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI",
+    "key": "FAT-SOP-01",
+    "ledger": "2026-10-14T08:06:56.942Z",
+    "diukur_penutupan": "2026-10-14T08:06:56.942Z",
+    "sama": true
+   },
+   {
+    "id": "1iMKby6u4X8MYyGlrC5qz73D0y2anOv87",
+    "key": "FAT-SOP-05",
+    "ledger": "2026-10-13T11:17:33.562Z",
+    "diukur_penutupan": "2026-10-13T11:17:33.562Z",
+    "sama": true
+   },
+   {
+    "id": "19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb",
+    "key": "LEG-SOP-01",
+    "ledger": "2026-10-13T10:54:39.480Z",
+    "diukur_penutupan": "2026-10-13T10:54:39.480Z",
+    "sama": true
+   },
+   {
+    "id": "1E_8SkaHZo8txljia4JhWjRHakimojRCpwivZzrPyamE",
+    "key": "LEG-SOP-02",
+    "ledger": "2026-10-14T09:08:19.129Z",
+    "diukur_penutupan": "2026-10-14T09:08:19.129Z",
+    "sama": true
+   },
+   {
+    "id": "19Hex8udn1JDG4NKY7hZaODjroHeHwMM0",
+    "key": "COM-SOP-01",
+    "ledger": "2026-10-05T07:08:41.814Z",
+    "diukur_penutupan": "2026-10-05T07:08:41.814Z",
+    "sama": true
+   },
+   {
+    "id": "16TIN9Tsv_sBXMrL4KHeO8f6Ao0F-KsAS",
+    "key": "COM-SOP-01",
+    "ledger": "2026-10-05T07:10:01.246Z",
+    "diukur_penutupan": "2026-10-05T07:10:01.246Z",
+    "sama": true
+   },
+   {
+    "id": "1i2JaRaQolbKxKL9HjDao2s4F0bzma9-Z",
+    "key": "HR-SOP-08",
+    "ledger": "2026-10-13T11:34:27.275Z",
+    "diukur_penutupan": "2026-10-13T11:34:27.275Z",
+    "sama": true
+   },
+   {
+    "id": "12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0",
+    "key": "LEG-SOP-03",
+    "ledger": "2026-10-14T10:26:59.642Z",
+    "diukur_penutupan": "2026-10-14T10:26:59.642Z",
+    "sama": true
+   },
+   {
+    "id": "1q0cl8mLlUDJ-7nvnzozSbjJhE46-Jk-3",
+    "key": "OPS-FRM-01",
+    "ledger": "2026-10-13T06:09:12Z",
+    "diukur_penutupan": "2026-10-13T06:09:12Z",
+    "sama": true
+   },
+   {
+    "id": "1XvfQ5yYx4H8Y-rgJUKyngfZfn7909L2D",
+    "key": "OPS-FRM-02",
+    "ledger": "2026-10-13T06:09:14Z",
+    "diukur_penutupan": "2026-10-13T06:09:14Z",
+    "sama": true
+   },
+   {
+    "id": "147U5gBLjtLKHau5cQbLUym8iInh2b_RR",
+    "key": "OPS-FRM-03",
+    "ledger": "2026-10-13T06:09:02Z",
+    "diukur_penutupan": "2026-10-13T06:09:02Z",
+    "sama": true
+   },
+   {
+    "id": "1u5P_nturbvTvvi3hSrCy3ZfAIyiXCqWZ",
+    "key": "OPS-FRM-04",
+    "ledger": "2026-10-13T06:09:17Z",
+    "diukur_penutupan": "2026-10-13T06:09:17Z",
+    "sama": true
+   },
+   {
+    "id": "1mTi4unyn2xST8h_ChsS_2w1xTWzSBROs",
+    "key": "OPS-FRM-05",
+    "ledger": "2026-10-13T06:09:19Z",
+    "diukur_penutupan": "2026-10-13T06:09:19Z",
+    "sama": true
+   },
+   {
+    "id": "1BPtjct3hNbhlUILJ7FTm4EX-_Vhk-KUb",
+    "key": "OPS-FRM-06",
+    "ledger": "2026-10-13T06:09:02Z",
+    "diukur_penutupan": "2026-10-13T06:09:02Z",
+    "sama": true
+   },
+   {
+    "id": "1jrnarc0yyoZhx2MLACZePMNEe0-jb3ZB",
+    "key": "OPS-FRM-07",
+    "ledger": "2026-10-13T06:09:21Z",
+    "diukur_penutupan": "2026-10-13T06:09:21Z",
+    "sama": true
+   },
+   {
+    "id": "1E0-sXiP8r-lS34-PVvt3RYRT04O56Lnz",
+    "key": "OPS-FRM-08",
+    "ledger": "2026-10-13T06:09:23Z",
+    "diukur_penutupan": "2026-10-13T06:09:23Z",
+    "sama": true
+   },
+   {
+    "id": "14o0dFUVZU-ieDbrLFQXTzwmNIL4SAftF",
+    "key": "OPS-FRM-09",
+    "ledger": "2026-10-13T06:09:25Z",
+    "diukur_penutupan": "2026-10-13T06:09:25Z",
+    "sama": true
+   },
+   {
+    "id": "1XFMQDye_WWWomRpwmT6KGMRdi4EVbRsS",
+    "key": "OPS-FRM-10",
+    "ledger": "2026-10-13T06:09:03Z",
+    "diukur_penutupan": "2026-10-13T06:09:03Z",
+    "sama": true
+   },
+   {
+    "id": "1rSuMH8wK5BTGUHLm8KjGig1LZOKWcECO",
+    "key": "OPS-RPT-01",
+    "ledger": "2026-10-13T06:09:47Z",
+    "diukur_penutupan": "2026-10-13T06:09:47Z",
+    "sama": true
+   },
+   {
+    "id": "1mMx6v0UhAWMQU6I6rAfsZz20nsjv-FkP",
+    "key": "ISMS-REG-01",
+    "ledger": "2026-10-13T06:09:35Z",
+    "diukur_penutupan": "2026-10-13T06:09:35Z",
+    "sama": true
+   },
+   {
+    "id": "1skCiIY43Vz6qfT71vEKz55EZFGHVCl4Q",
+    "key": "ISMS-REG-02",
+    "ledger": "2026-10-13T06:09:37Z",
+    "diukur_penutupan": "2026-10-13T06:09:37Z",
+    "sama": true
+   },
+   {
+    "id": "1NdkQrRWevHXuH9thxmoTPsRIf0wNl-MJ",
+    "key": "ISMS-REG-03",
+    "ledger": "2026-10-13T06:09:40Z",
+    "diukur_penutupan": "2026-10-13T06:09:40Z",
+    "sama": true
+   },
+   {
+    "id": "14JtND6eqCuvufrVoPDzKJyrHp4eQsGjT",
+    "key": "ISMS-REG-04",
+    "ledger": "2026-10-13T06:09:42Z",
+    "diukur_penutupan": "2026-10-13T06:09:42Z",
+    "sama": true
+   },
+   {
+    "id": "1J436lMZJSgowkEeMD6m45N70h7Go6_ZV",
+    "key": "ISMS-FRM-01",
+    "ledger": "2026-10-13T06:09:28Z",
+    "diukur_penutupan": "2026-10-13T06:09:28Z",
+    "sama": true
+   },
+   {
+    "id": "1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2",
+    "key": "ISMS-FRM-02",
+    "ledger": "2026-10-13T06:09:30Z",
+    "diukur_penutupan": "2026-10-13T06:09:30Z",
+    "sama": true
+   },
+   {
+    "id": "1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg",
+    "key": "ISMS-FRM-03",
+    "ledger": "2026-10-13T06:09:33Z",
+    "diukur_penutupan": "2026-10-13T06:09:33Z",
+    "sama": true
+   },
+   {
+    "id": "1a1hDz9zwdRHBAHaU9wALSdg66R4bD8mGD-86TyzJewk",
+    "key": "LEG-REG-01",
+    "ledger": "2026-10-13T10:52:13.121Z",
+    "diukur_penutupan": "2026-10-13T10:52:13.121Z",
+    "sama": true
+   },
+   {
+    "id": "1lsdhtFZrf7bdckagXYtEXxmIyRw3jNw-28iXJpoTeaY",
+    "key": "LEG-FRM-01",
+    "ledger": "2026-10-13T16:04:38.493Z",
+    "diukur_penutupan": "2026-10-13T16:04:38.493Z",
+    "sama": true
+   },
+   {
+    "id": "1xU1pbum660ZzBCuTA5klCyAVK1iWonLCY0NOejqSlHg",
+    "key": "LEG-FRM-02",
+    "ledger": "2026-10-13T16:07:51.089Z",
+    "diukur_penutupan": "2026-10-13T16:07:51.089Z",
+    "sama": true
+   },
+   {
+    "id": "1m9mIkrMmiIY4TNmbV7j_rRuXKPUnfiK_EP80myS6lN8",
+    "key": "LEG-FRM-03",
+    "ledger": "2026-10-13T16:56:19.285Z",
+    "diukur_penutupan": "2026-10-13T16:56:19.285Z",
+    "sama": true
+   },
+   {
+    "id": "1ysIL0ytnspFGsYpSolSnuBpCG_MFE9IoiTJIhWfIIhA",
+    "key": "LEG-REG-02",
+    "ledger": "2026-10-14T03:20:20.270Z",
+    "diukur_penutupan": "2026-10-14T03:20:20.270Z",
+    "sama": true
+   },
+   {
+    "id": "1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA",
+    "key": "LEG-RPT-01",
+    "ledger": "2026-10-14T04:03:12.671Z",
+    "diukur_penutupan": "2026-10-14T04:03:12.671Z",
+    "sama": true
+   },
+   {
+    "id": "18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs",
+    "key": "FAT-SOP-06",
+    "ledger": "2026-10-14T10:51:01.134Z",
+    "diukur_penutupan": "2026-10-14T10:51:01.134Z",
+    "sama": true
+   },
+   {
+    "id": "1Z9PXCiBgb8c13TGx8BG3ajlbxNEDWMg6KaSy0mi7ehQ",
+    "key": "FAT-REG-01",
+    "ledger": "2026-10-14T08:07:21.851Z",
+    "diukur_penutupan": "2026-10-14T08:07:21.851Z",
+    "sama": true
+   },
+   {
+    "id": "1UqQ-hYKjAFNhevDwOoF59YQXLHjeFBR7UBHKoSA233k",
+    "key": "FAT-FRM-02",
+    "ledger": "2026-10-14T09:11:45.648Z",
+    "diukur_penutupan": "2026-10-14T09:11:45.648Z",
+    "sama": true
+   }
+  ],
+  "cek_silang_worker": {
+   "at": "2026-10-15T09:06Z",
+   "kanal": "Google Drive get_file_metadata langsung oleh worker (bukan subagen)",
+   "rows": [
+    {
+     "key": "ISMS-SOP-02",
+     "id": "1JoSiwoMglIxy7Ic3t0EhRfvzJgf5ydzT",
+     "modifiedTime": "2026-10-13T06:09:01Z",
+     "sama_dengan_subagen": true
+    },
+    {
+     "key": "HR-ORG-01",
+     "id": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
+     "modifiedTime": "2026-10-13T10:34:44.783Z",
+     "sama_dengan_subagen": true
+    }
+   ]
+  }
+ }
 }

@@ -1,0 +1,5 @@
+70 berkas (docx 53, xlsx 17)
+lint pass 53/53; OOXML PASSED 53/53; halaman kosong 0
+xlsx fitur berkurang 0; CONTOH 0
+GAGAL: nihil
+rc=0

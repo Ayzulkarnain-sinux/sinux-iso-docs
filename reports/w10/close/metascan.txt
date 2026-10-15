@@ -1,0 +1,4 @@
+$ python3 -I reports/orch/metascan.py
+KONTROL POSITIF LEG-SOP-02 @efcc3a6: 1 temuan ['dokumen sumber'] -> OK
+TOTAL baris bertemuan: 0 (target 0)
+rc=0
