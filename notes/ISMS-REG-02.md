@@ -138,3 +138,15 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | modifiedTime dan fileSize | get_file_metadata atas fileId sumber |
 | Rujukan lane lain di notes (12 baris aset dikosongkan, AST-007, AST-002, AST-003, AST-006, K-09, RTP 1:1) | notes/ISMS-REG-01.md, specs/HR-ORG-01.json, salinan audit REG-01 dan REG-03; hanya di notes, tidak di sel |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: tidak muncul di sel yang disunting. Istilah "pemilik risiko" dipertahankan agar sama dengan header kolom Pemilik risiko dan SOP ISMS.
+Disunting: Tujuan, Cara pakai 1 sampai 5, dan catatan Register Risiko A2. Legenda dipertahankan (T1).
+Cara pakai 5 (usulan awal) ditulis sama persis dengan Cara pakai 5 SNX-ISMS-REG-03 supaya konsisten.

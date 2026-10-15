@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Sheet Register (22 kolom) dicetak fit-to-width sehingga huruf sangat kecil di kertas A4; judul kolom tetap terbaca dan berulang.",
+  "Sheet Chain of Custody (hal. 7) hanya mencetak baris judul tanpa baris isian; tambahkan beberapa baris kosong berformat agar mudah diisi tangan.",
+  "Sheet daftar pilihan (Kategori, Severity, YaTidak, Status, Sumber) ikut tercetak di halaman 3."
+ ],
+ "contoh_baik": [
+  "Bila data pribadi terlibat, kolom Notifikasi PDP menandai wajib dikaji dengan batas 3 x 24 jam dari waktu deteksi. Direktur (COO) dan Legal memutuskan. -> Jika data pribadi terlibat, kolom Notifikasi PDP menandai insiden itu wajib dikaji, dengan batas 3 x 24 jam sejak waktu deteksi. Keputusan notifikasi diambil Direktur (COO) bersama Legal."
+ ]
+}

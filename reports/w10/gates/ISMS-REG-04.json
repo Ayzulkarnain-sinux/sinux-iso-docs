@@ -1,0 +1,31 @@
+{
+ "key": "ISMS-REG-04",
+ "mode": "xlsx",
+ "out": "out/08_ISMS/SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).xlsx",
+ "fails": [],
+ "xlsx_patch": "pass",
+ "scan": {
+  "words": 1371,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 0,
+  "instr_items": 33,
+  "instr_role_start": 0,
+  "justified_cells": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1358,
+  "calque": [],
+  "lewat": 1,
+  "pointer": 0,
+  "usulan": 0,
+  "instr_items": 33,
+  "instr_role_start": 0,
+  "justified_cells": 0
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-ISMS-REG-04 User Access Register Periodic Review (Rev00 DRAFT).pdf",
+ "pages": 14,
+ "pass": true
+}

@@ -319,7 +319,7 @@ def fmt_ops(k):
             # matriks 5x5 seimbang: kolom Impact 1 sampai 5 sama lebar; legenda di kolom C ikut wrap
             P['col_widths'][x['sheet']] = {c: 24 for c in 'CDEFG'}
             P['fit_rows'][x['sheet']] = {'rows': [12, x['max_row']]}
-            P['page_setup'][x['sheet']] = {'orientation': 'landscape', 'fitToWidth': 1, 'fitToHeight': 0}
+            P['page_setup'][x['sheet']] = {'orientation': 'landscape', 'fitToWidth': 1, 'fitToHeight': 1}  # matriks dan skala satu halaman
         else:
             P['page_setup'][x['sheet']] = {'orientation': x['orientation'], 'fitToWidth': 1, 'fitToHeight': 0}
     return P
@@ -534,6 +534,39 @@ def revert(k):
     print(k, 'dikembalikan ke', BASE)
 
 
+def qa_pass(k):
+    q = f'qa/{k}.w10.json'
+    if not os.path.exists(q):
+        return False
+    v = json.load(open(q))
+    sc = [x for x in v.get('scores', {}).values() if isinstance(x, (int, float))]
+    return v.get('verdict') == 'PASS' and all(x >= 4 for x in sc)
+
+
+def files_of(k):
+    d = DOCS[k]
+    fs = [d['out_path'], f'notes/{k}.md', f'reports/w10/gates/{k}.json', f'reports/w10/terms/{k}.diff']
+    fs += [f for f in glob.glob(f'qa/{k}.w10*.json')]
+    if d['mode'] == 'xlsx':
+        fs += [f'specs/{k}.w10.patch.json', f'reports/w10/xlsx_effective/{k}.json']
+    else:
+        fs += [f'specs/{k}.json'] + glob.glob(os.path.join(os.path.dirname(d['out_path']), f'{k}_*.png*'))
+    return [f for f in fs if os.path.exists(f)]
+
+
+def stage(keys):
+    """git add berkas KEY yang lolos gerbang mesin DAN pemeriksa buta; KEY lain ditolak."""
+    ok = []
+    for k in keys:
+        g = json.load(open(f'reports/w10/gates/{k}.json')) if os.path.exists(f'reports/w10/gates/{k}.json') else {}
+        if g.get('pass') and qa_pass(k):
+            run('git', 'add', '--', *files_of(k))
+            ok.append(k)
+        else:
+            print('TIDAK distage (gerbang/qa belum lolos):', k)
+    print('distage:', ok)
+
+
 def status():
     for k in sorted(DOCS):
         p = f'reports/w10/gates/{k}.json'
@@ -562,6 +595,8 @@ if __name__ == '__main__':
             revert(k)
     elif cmd == 'status':
         status()
+    elif cmd == 'stage':
+        stage(args)
     elif cmd == 'selftest':
         selftest_terms()
         print('OK selftest w10 terms')

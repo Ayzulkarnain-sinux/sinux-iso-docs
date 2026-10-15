@@ -1,0 +1,17 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 5,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Sheet Service Report: judul kolom 'Ref tiket atau CR' masih 'tiket' (baris header dikecualikan STYLE §1.5), sedangkan badan memakai 'ticket'.",
+  "Sheet Service Report 16 kolom, font kecil saat dicetak tetapi judul utuh dan berulang."
+ ],
+ "contoh_baik": [
+  "Per aktivitas, isi bulan dengan kode: R = rencana, S = selesai, T = tertunda. -> Isi bulan untuk setiap aktivitas dengan kode R (rencana), S (selesai), atau T (tertunda)."
+ ]
+}

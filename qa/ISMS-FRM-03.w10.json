@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Subjudul sheet Daftar Supplier tidak ikut dirapikan dan masih bergaya catatan: 'Baris biru muda = supplier yang teridentifikasi di knowledge base; status kontrak, NDA, dan sertifikasi wajib diverifikasi dengan Commercial dan Legal.' Usul: 'Baris biru muda adalah supplier yang teridentifikasi di knowledge base. Status kontrak, NDA, dan sertifikasi wajib diverifikasi bersama Commercial dan Legal.'",
+  "Kolom No di sheet Kuesioner Keamanan rata kanan dan menempel ke teks pertanyaan ('1Apakah supplier ...'); buat rata kiri atau beri indent.",
+  "Sheet daftar pilihan (Kategori, Kritikalitas, YaTidak, Skor) ikut tercetak di halaman 3."
+ ],
+ "contoh_baik": [
+  "Evaluasi supplier berkritikalitas Tinggi setiap semester, Sedang dan Rendah setiap tahun; jadwal berikutnya dihitung otomatis. -> Evaluasi supplier berkritikalitas Tinggi setiap semester, sedangkan supplier berkritikalitas Sedang dan Rendah setiap tahun. Jadwal evaluasi berikutnya terisi otomatis."
+ ]
+}

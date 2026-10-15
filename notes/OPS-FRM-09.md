@@ -135,3 +135,20 @@ Label (USULAN) tidak ditulis di sel xlsx karena tidak ada angka atau fakta baru 
 | "3 tahun", "RESTRICTED (Internal)", "Service Delivery Manager", "13 Oktober 2026", "hari kerja ke-5" | Sumber FRM-09, tidak diubah |
 | Rujukan SOP-05 dan FRM-08 di notes (50%, "gangguan di luar tanggung jawab SINUX sesuai kontrak", 95%) | Salinan audit; hanya di notes, tidak di sel |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan" (sebutan seluruh workbook).
+Butir 4 dan 5 Cara pakai serta Tujuan dipertahankan (T1).
+
+### W10 koreksi worker (07:33Z, temuan pemeriksa buta r1)
+- Kontrol Dokumen B19: nilai pilihan ditulis "Tidak" dalam tanda kutip agar tidak terbaca sebagai "tidak hanya".
+- Kontrol Dokumen B21: "respon" menjadi "respons" (ejaan baku).
+- Tata letak (rubrik d): op format worker (fit_rows sheet data, lebar kolom minimal sesuai kata judul terpanjang, A3 untuk sheet 16 kolom atau lebih).

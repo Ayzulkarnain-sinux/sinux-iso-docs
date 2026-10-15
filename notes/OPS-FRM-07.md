@@ -138,3 +138,15 @@ Cacat tambahan yang saya temukan (di luar bagian 5 audit):
 | 95%, 89 siklus, 7,87% (7 dari 89), 50%, 100%, 87,5% di notes | 95% dari gambar sumber, SOP-03, RPT-01; 89 dihitung dari kode R di Jadwal PM; 7,87% dan skenario USULAN 1 diukur dengan LibreOffice atas salinan kerja | Bersumber atau diukur; tidak ada di sel patch |
 | Fakta SOP-03, RPT-01, ISMS-SOP-03 | salinan audit, bukan Drive terbaru | Bersumber dengan catatan kemungkinan basi (asumsi 6) |
 | Tanggal | Tidak ada tanggal baru di patch; 13 Oktober 2026 dan 2027 sudah ada di sumber | Bersumber |
+
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar tidak disebut di sel yang disunting.
+Cara pakai 4 kini diawali "Setiap bulan"; Lead NOC tetap pelaku.

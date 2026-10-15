@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Sheet daftar pilihan (Jenis, YaTidak, Status, Shift, Restore, Hasil) ikut tercetak di halaman 3 dengan judul kolom 'YaTidak'; sebaiknya sheet bantu disembunyikan atau dikeluarkan dari area cetak.",
+  "Daftar Job (hal. 4-6) dan Restore Record (hal. 8-10) mencetak dua sampai tiga halaman baris kosong; judul kolom berulang, jadi masih rapi.",
+  "B19 'buat ticket P2 di Zammad' tidak menyebut siapa yang membuat ticket; versi lama juga pasif. Pertimbangkan 'NOC Engineer membuat ticket P2 di Zammad'."
+ ],
+ "contoh_baik": [
+  "NOC Engineer shift malam mengisi Backup Log setiap hari; status Gagal dua kali berturut menjadi tiket P2 di Zammad. -> Backup Log diisi NOC Engineer shift malam setiap hari. Jika status Gagal muncul dua kali berturut-turut, buat ticket P2 di Zammad."
+ ]
+}

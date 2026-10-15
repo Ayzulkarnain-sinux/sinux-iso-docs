@@ -1,0 +1,31 @@
+{
+ "key": "OPS-FRM-05",
+ "mode": "xlsx",
+ "out": "out/07_Ops/SNX-OPS-FRM-05 Testing UAT Quality Verification (Rev00 DRAFT).xlsx",
+ "fails": [],
+ "xlsx_patch": "pass",
+ "scan": {
+  "words": 458,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 34,
+  "instr_role_start": 0,
+  "justified_cells": 0
+ },
+ "scan_bed1bb6": {
+  "words": 449,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 34,
+  "instr_role_start": 0,
+  "justified_cells": 0
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-FRM-05 Testing UAT Quality Verification (Rev00 DRAFT).pdf",
+ "pages": 9,
+ "pass": true
+}

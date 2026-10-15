@@ -1,0 +1,113 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Register Akses": "B5",
+  "Review Periodik": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    5
+   ]
+  },
+  "Register Akses": {
+   "rows": [
+    4,
+    256
+   ]
+  },
+  "Review Periodik": {
+   "rows": [
+    4,
+    205
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Register Akses": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4",
+   "paperSize": 8
+  },
+  "Review Periodik": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Ringkasan": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "Daftar": {
+   "rows": [
+    1,
+    5
+   ]
+  },
+  "Register Akses": {
+   "rows": [
+    4,
+    256
+   ]
+  },
+  "Review Periodik": {
+   "rows": [
+    4,
+    205
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ]
+  }
+ },
+ "col_widths": {
+  "Daftar": {
+   "E": 14
+  },
+  "Register Akses": {
+   "H": 15,
+   "L": 14,
+   "Q": 15
+  },
+  "Review Periodik": {
+   "G": 14
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B20": "Cek = CABUT jika personel berstatus Keluar tetapi akun masih Aktif; Cek = KEDALUWARSA jika tanggal Berlaku sampai sudah terlampaui; Cek = REVIEW jika review terlambat.",
+  "Kontrol Dokumen!B15": "Mencatat hak akses pengguna ke sistem internal dan sistem pelanggan, serta hasil review akses periodik sesuai SNX-ISMS-SOP-02.",
+  "Kontrol Dokumen!B18": "Isi satu baris untuk setiap akun di setiap sistem. Jangan menulis password atau token di file ini.",
+  "Kontrol Dokumen!B19": "Kolom Privileged, Review berikutnya, dan Cek terisi otomatis. Review akses privileged dilakukan setiap triwulan, akses biasa setiap semester.",
+  "Kontrol Dokumen!B21": "Catat hasil review periodik di sheet Review Periodik. Selesaikan tindak lanjutnya paling lambat 10 hari kerja.",
+  "Register Akses!A2": "Kolom abu-abu terisi otomatis.",
+  "Review Periodik!A2": "Isi satu baris untuk setiap akun yang ditinjau. Setelah review selesai, perbarui kolom Review terakhir di Register Akses."
+ }
+}

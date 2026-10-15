@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Cara pakai 1: 'Log ini menjadi rekap audit, sedangkan CR juga dibuat sebagai ticket di Zammad (USULAN).' 'sedangkan' kurang pas karena kedua klausa tidak berlawanan; usul: 'CR juga dibuat sebagai ticket di Zammad (USULAN). Log ini menjadi rekap audit.'",
+  "PDF: sheet Change Log 20 kolom dipadatkan ke 1 halaman lebar sehingga huruf header kecil, tetapi tetap terbaca dan berulang di halaman 5; lebar kolom Uraian perubahan paling lebar.",
+  "Tabel Riwayat revisi di Kontrol Dokumen lebih lebar dari tabel identitas di atasnya; tidak terpotong, hanya kurang selaras."
+ ],
+ "contoh_baik": [
+  "Kolom PIR otomatis Ya untuk change Major atau yang berakhir rollback; tinjau dalam 5 hari kerja. -> Kolom PIR otomatis bernilai Ya untuk change Major atau change yang berakhir rollback. Lakukan PIR dalam 5 hari kerja."
+ ]
+}

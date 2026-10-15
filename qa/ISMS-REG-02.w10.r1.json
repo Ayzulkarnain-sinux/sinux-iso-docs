@@ -1,0 +1,30 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 3
+ },
+ "blocking": [
+  {
+   "lokasi": "Sheet Matriks Risiko, PDF halaman 6-7",
+   "masalah": "Tabel 'Level | Ketentuan penanganan' terbelah antarhalaman. Baris Tinggi dan Kritis tercetak sendiri di halaman 7 tanpa judul kolom, sehingga pembaca kertas tidak tahu tabel apa itu.",
+   "kutipan": "Tinggi | Rencana mitigasi wajib dengan tenggat; dilaporkan ke Head of Operation dan dinaikkan ke register risiko ISMS / Kritis | Tindakan segera; dilaporkan ke Direktur (COO); penerimaan risiko hanya oleh COO secara tertulis",
+   "usul": "Melalui setelan cetak saja: fit to 1 page (lebar dan tinggi) untuk sheet Matriks Risiko, atau kurangi tinggi baris tabel skala; bila tetap dua halaman, set print titles/page break agar tabel ketentuan tidak terbelah."
+  },
+  {
+   "lokasi": "Sheet Matriks Risiko, tabel Skala, PDF halaman 6",
+   "masalah": "Tinggi baris tabel skala Likelihood/Impact berlebihan dan baris 4 terpotong di batas halaman ('data internal bocor' terpotong), lalu baris 5 pindah ke halaman berikutnya tanpa judul kolom.",
+   "kutipan": "4 | Sering: beberapa kali dalam setahun | Besar: breach SLA, beberapa pelanggan, atau data internal bocor",
+   "usul": "Aktifkan 'baris tidak terbelah' dan sesuaikan tinggi baris dengan isi; ulangi baris judul 'Skala | Likelihood (kemungkinan) | Impact (dampak)' bila tabel pindah halaman."
+  }
+ ],
+ "nonblocking": [
+  "Judul kolom 'Kontrol Annex A' di Register Risiko terbungkus sehingga huruf 'A' tinggal sendiri di baris kedua; lebarkan kolom sedikit.",
+  "Sheet daftar pilihan (Skala, Keputusan, CIA) ikut tercetak di halaman 3."
+ ],
+ "contoh_baik": [
+  "Kriteria penerimaan: level Rendah dapat diterima pemilik risiko; Sedang ke atas wajib rencana penanganan di SNX-ISMS-REG-03. -> Kriteria penerimaan: risiko berlevel Rendah dapat diterima pemilik risiko. Risiko berlevel Sedang ke atas wajib memiliki rencana penanganan di SNX-ISMS-REG-03."
+ ]
+}

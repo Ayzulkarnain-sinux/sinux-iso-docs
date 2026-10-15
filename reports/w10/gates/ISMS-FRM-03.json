@@ -1,0 +1,31 @@
+{
+ "key": "ISMS-FRM-03",
+ "mode": "xlsx",
+ "out": "out/08_ISMS/SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).xlsx",
+ "fails": [],
+ "xlsx_patch": "pass",
+ "scan": {
+  "words": 1814,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 36,
+  "instr_role_start": 0,
+  "justified_cells": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1801,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 36,
+  "instr_role_start": 0,
+  "justified_cells": 0
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-ISMS-FRM-03 Supplier Technical Security Evaluation (Rev00 DRAFT).pdf",
+ "pages": 9,
+ "pass": true
+}

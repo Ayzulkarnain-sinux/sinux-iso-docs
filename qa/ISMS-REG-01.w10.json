@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Subjudul Register Aset 'Nilai aset = nilai tertinggi dari C, I, A.' masih memakai tanda '='; boleh ditulis 'Nilai aset adalah nilai tertinggi dari C, I, dan A.'",
+  "Sheet Pemusnahan meluber ke halaman 9 dengan beberapa baris kosong; judul kolom berulang, tidak mengganggu.",
+  "Sheet daftar pilihan ikut tercetak di halaman 3."
+ ],
+ "contoh_baik": [
+  "IP address dan detail teknis sensitif boleh dicatat di sini karena register berklasifikasi RESTRICTED; kredensial dilarang. -> IP address dan detail teknis sensitif boleh dicatat di register ini karena klasifikasinya RESTRICTED. Kredensial tidak boleh dicatat."
+ ]
+}

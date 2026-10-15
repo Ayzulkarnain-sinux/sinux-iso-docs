@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "'Ops' diganti 'Divisi Operation' di subjudul Rencana Penanganan; arti tetap, tetapi data baris (mis. 'menunggu konfirmasi Ops' di REG-02) masih memakai 'Ops', jadi istilah belum seragam antar-register.",
+  "Judul kolom 'Kontrol Annex A' terbungkus dengan 'A' sendirian di baris kedua.",
+  "Sheet daftar pilihan (Opsi, Status, Skala) ikut tercetak di halaman 3."
+ ],
+ "contoh_baik": [
+  "L dan I residual berisi usulan; ubah setelah tindakan selesai. Level otomatis. -> Nilai L residual dan I residual masih berupa usulan. Perbarui nilainya setelah tindakan selesai; Level residual terisi otomatis."
+ ]
+}

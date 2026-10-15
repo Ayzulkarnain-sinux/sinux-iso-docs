@@ -1,0 +1,81 @@
+{
+ "freeze": {
+  "Target Severity": "A5",
+  "Daftar": "A2",
+  "Register": "B5",
+  "Ringkasan": "A7"
+ },
+ "wrap_cols": {
+  "Target Severity": {
+   "rows": [
+    4,
+    8
+   ]
+  },
+  "Daftar": {
+   "rows": [
+    1,
+    10
+   ]
+  },
+  "Register": {
+   "rows": [
+    4,
+    305
+   ]
+  },
+  "Ringkasan": {
+   "rows": [
+    6,
+    11
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    37
+   ]
+  }
+ },
+ "page_setup": {
+  "Target Severity": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Register": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Ringkasan": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "6:6"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Register semua ticket teknis dan insiden, berisi waktu Ack dan pemulihan, status SLA, serta tautan RCA, sesuai SNX-OPS-SOP-04.",
+  "Kontrol Dokumen!B18": "Ticket Ops dibuat di Zammad (Nusagrid), sedangkan ticket generalist dibuat di Service Hub GLPI; pembagian ini masih menunggu keputusan owner (USULAN). Register ini adalah rekap audit. Ekspor dari ticketing system boleh ditempel di sheet Register dengan kolom yang sama.",
+  "Register!A2": "Kolom abu-abu terisi otomatis. Ticket kelas Keamanan diserahkan ke SOC, dan insidennya dicatat di SNX-ISMS-FRM-02. Ticket tanpa waktu Ack atau Pulih belum dihitung dalam persentase di sheet Ringkasan.",
+  "Ringkasan!A1": "Ringkasan ticket per periode",
+  "Kontrol Dokumen!B19": "Isi Severity terlebih dahulu, lalu isi waktu dengan format tanggal dan jam (WIB).",
+  "Kontrol Dokumen!B20": "Respon (Dilaporkan sampai Ack), durasi pulih (Dilaporkan sampai Pulih), dan status SLA dihitung otomatis berdasarkan sheet Target Severity.",
+  "Kontrol Dokumen!B21": "Kolom RCA wajib otomatis bernilai Ya untuk P1 dan P2. Isi nomor RCA dari SNX-OPS-FRM-10.",
+  "Target Severity!A2": "Target Ack dan update berasal dari SNX-OPS-SOP-04. Target pemulihan adalah USULAN internal, sedangkan komitmen ke pelanggan mengikuti kontrak. Untuk penyederhanaan, jam kerja dihitung sebagai jam kalender."
+ }
+}

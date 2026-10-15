@@ -1,0 +1,125 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Parameter SLA": "B5",
+  "Downtime Log": "B5",
+  "Laporan Bulanan": "C8"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    8
+   ]
+  },
+  "Parameter SLA": {
+   "rows": [
+    4,
+    46
+   ]
+  },
+  "Downtime Log": {
+   "rows": [
+    4,
+    206
+   ]
+  },
+  "Laporan Bulanan": {
+   "rows": [
+    7,
+    50
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Parameter SLA": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Downtime Log": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Laporan Bulanan": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "7:7"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "Daftar": {
+   "rows": [
+    1,
+    8
+   ]
+  },
+  "Parameter SLA": {
+   "rows": [
+    4,
+    46
+   ]
+  },
+  "Downtime Log": {
+   "rows": [
+    4,
+    206
+   ]
+  },
+  "Laporan Bulanan": {
+   "rows": [
+    7,
+    50
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ]
+  }
+ },
+ "col_widths": {
+  "Parameter SLA": {
+   "D": 18,
+   "E": 11
+  },
+  "Downtime Log": {
+   "F": 11
+  },
+  "Laporan Bulanan": {
+   "C": 10,
+   "E": 18
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B21": "Isi data respons ticket dari ringkasan SNX-OPS-FRM-08.",
+  "Kontrol Dokumen!B18": "Daftarkan setiap layanan ber-SLA di sheet Parameter SLA saat onboarding.",
+  "Kontrol Dokumen!B19": "Catat setiap downtime di Downtime Log. Isi kolom Dihitung dengan \"Tidak\" hanya jika ada bukti notifikasi maintenance atau pengecualian kontrak.",
+  "Kontrol Dokumen!B20": "Pilih bulan laporan di sel B3 sheet Laporan Bulanan. Availability, status, dan sisa anggaran downtime terisi otomatis.",
+  "Parameter SLA!A2": "Target availability ditulis dalam persen (0.999 = 99.9%). Kombinasi Pelanggan dan Layanan harus unik. Availability dihitung dari menit kalender penuh; kolom Jam layanan dan Pengecualian kontrak tidak masuk rumus.",
+  "Downtime Log!A2": "Durasi dihitung otomatis dalam menit. Tulis Pelanggan dan Layanan persis seperti di Parameter SLA; jika berbeda, downtime tidak terhitung di Laporan Bulanan. Downtime lintas bulan masuk seluruhnya ke bulan Mulai."
+ }
+}

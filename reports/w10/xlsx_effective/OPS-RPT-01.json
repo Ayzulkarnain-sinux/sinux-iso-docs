@@ -1,0 +1,67 @@
+{
+ "freeze": {
+  "KPI": "G6"
+ },
+ "wrap_cols": {
+  "KPI": {
+   "rows": [
+    5,
+    24
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "KPI": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "5:5",
+   "paperSize": 8
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Narasi Bulanan": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "KPI": {
+   "rows": [
+    5,
+    24
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ]
+  }
+ },
+ "col_widths": {
+  "KPI": {
+   "D": 7,
+   "E": 10,
+   "S": 14
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Laporan bulanan KPI dan kinerja Divisi Operation, sebagai masukan pemantauan (klausul 9.1) dan Management Review (klausul 9.3.2).",
+  "Kontrol Dokumen!B21": "Isi sheet Narasi Bulanan sebagai ringkasan untuk Direktur (COO) dan bahan Management Review.",
+  "Kontrol Dokumen!B19": "Setiap awal bulan, isi nilai aktual bulan sebelumnya dari sumber data di kolom Sumber. Tulis persentase sebagai pecahan (0.95 = 95%).",
+  "Kontrol Dokumen!B20": "Status bulan terakhir dan rata-rata tahun berjalan dihitung otomatis. Sel bulan berwarna merah berarti nilainya di bawah target.",
+  "Kontrol Dokumen!B22": "Target saat ini adalah target awal dan dikalibrasi setelah data 3 bulan terkumpul."
+ }
+}

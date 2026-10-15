@@ -1,0 +1,67 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Register Aset": "B5",
+  "Pemusnahan": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    10
+   ]
+  },
+  "Register Aset": {
+   "rows": [
+    4,
+    216
+   ]
+  },
+  "Pemusnahan": {
+   "rows": [
+    4,
+    44
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    39
+   ]
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Register Aset": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Pemusnahan": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Mencatat aset informasi dan aset TI beserta pemilik, klasifikasi, nilai CIA, status konfigurasi, dan siklus hidupnya.",
+  "Kontrol Dokumen!B18": "Daftarkan setiap aset baru paling lambat saat aset mulai dipakai. Aset pelanggan wajib terdaftar sebelum gate G3.",
+  "Kontrol Dokumen!B19": "Isi nilai C, I, dan A dengan skala 1 (rendah) sampai 3 (tinggi). Nilai aset dan kritikalitas terisi otomatis.",
+  "Kontrol Dokumen!B20": "Isi kolom CI dengan Ya untuk aset yang konfigurasinya dikendalikan, lalu isi Acuan baseline.",
+  "Kontrol Dokumen!B21": "Kolom Review berikutnya terisi otomatis, 6 bulan setelah Review terakhir. Baris merah menandakan review terlambat.",
+  "Kontrol Dokumen!B22": "IP address dan detail teknis sensitif boleh dicatat di register ini karena klasifikasinya RESTRICTED. Kredensial tidak boleh dicatat.",
+  "Pemusnahan!A2": "Catat setiap pemusnahan media atau dekomisi aset di sheet ini, lalu ubah status aset di Register Aset menjadi Dimusnahkan."
+ }
+}

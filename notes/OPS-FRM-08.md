@@ -143,3 +143,16 @@ Spec dan patch tidak diubah di putaran ini (G-3 A9).
 Open item yang ditutup atau diubah:
 
 - Open item 4 (gambar Alur Proses: tanpa cabang tiket Keamanan, kotak pertama Zammad atau Service Hub): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan".
+Cara pakai 1: "(USULAN, batas menunggu owner)" ditulis "pembagian ini masih menunggu keputusan owner (USULAN)"; label tetap satu, di akhir kalimat itu.
+Register A2: "(ke SOC)" dihapus karena sudah tersirat di "diserahkan ke SOC"; arti tetap.
+Target Severity A2: "Target pemulihan = USULAN internal" ditulis sebagai kalimat; kata USULAN tetap.

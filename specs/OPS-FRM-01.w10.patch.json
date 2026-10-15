@@ -1,0 +1,99 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Checklist G1": "B5",
+  "WBS dan Timeline": "B5",
+  "Milestone": "B5",
+  "Stakeholder": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    6
+   ]
+  },
+  "Checklist G1": {
+   "rows": [
+    4,
+    14
+   ]
+  },
+  "WBS dan Timeline": {
+   "rows": [
+    4,
+    104
+   ]
+  },
+  "Milestone": {
+   "rows": [
+    4,
+    24
+   ]
+  },
+  "Stakeholder": {
+   "rows": [
+    4,
+    20
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    38
+   ]
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Checklist G1": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "WBS dan Timeline": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Milestone": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Stakeholder": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Project Charter": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Mencatat rencana proyek: checklist penerimaan G1, project charter, WBS dan jadwal, milestone, serta stakeholder dan rencana komunikasi.",
+  "Kontrol Dokumen!B18": "Gunakan satu file untuk satu proyek, dengan nama FRM-01_<KodeProyek>.xlsx.",
+  "Kontrol Dokumen!B19": "Isi Checklist G1 sebelum proyek dimulai. Proyek belum boleh dimulai jika masih ada butir berstatus Belum.",
+  "Kontrol Dokumen!B20": "Isi Project Charter, lalu sheet WBS dan Timeline. Durasi dan progres keseluruhan terisi otomatis.",
+  "Kontrol Dokumen!B21": "Perbarui kolom Progres dan Status paling sedikit sekali seminggu, sesuai SNX-OPS-SOP-01 butir 6.4.",
+  "Checklist G1!A2": "Pemilik gate: Service Delivery Manager. Gate LOLOS jika tidak ada butir berstatus Belum.",
+  "WBS dan Timeline!A2": "Bobot ditulis dalam persen dengan total 100. Progres diisi 0% sampai 100%. Kolom Durasi terisi otomatis dalam hari kalender.",
+  "Stakeholder!A2": "Kanal resmi adalah email dan grup WhatsApp proyek. Kredensial tidak boleh dikirim melalui kanal ini."
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "B20 'jika tanggal Berlaku sampai sudah terlampaui' agak kaku; usul 'jika masa berlaku pada kolom Berlaku sampai sudah habis'.",
+  "PDF 14 halaman karena Register Akses dan Review Periodik mencetak banyak halaman baris kosong; judul kolom berulang dan terbaca.",
+  "Sheet daftar pilihan ikut tercetak di halaman 3."
+ ],
+ "contoh_baik": [
+  "Kolom Privileged, Review berikutnya, dan Cek dihitung otomatis: privileged ditinjau triwulanan, akses biasa semesteran. -> Kolom Privileged, Review berikutnya, dan Cek terisi otomatis. Review akses privileged dilakukan setiap triwulan, akses biasa setiap semester."
+ ]
+}

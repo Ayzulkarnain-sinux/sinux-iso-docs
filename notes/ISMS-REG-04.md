@@ -137,3 +137,16 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | modifiedTime, fileSize | get_file_metadata atas fileId sumber |
 | Rujukan lane lain di notes (K-09, K-10, K-11, K-13, butir 11 notes SOP-02, nama sistem tiket SOP-02, ISR-009, RTP-009) | specs/HR-ORG-01.json, specs/ISMS-SOP-02.json, notes/ISMS-SOP-02.md, salinan audit; hanya di notes, tidak di sel |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan".
+Disunting: Tujuan, Cara pakai 1 sampai 4, catatan Register Akses A2 dan Review Periodik A2.
+Cara pakai 3: skrip istilah mekanis mengubah "Berlaku sampai lewat" (artinya tanggal sudah terlampaui) menjadi "Berlaku sampai melalui"; dikoreksi menjadi "tanggal Berlaku sampai sudah terlampaui". Arti kembali seperti bed1bb6.
+Cara pakai 2: "privileged ditinjau triwulanan, akses biasa semesteran" menjadi "Review akses privileged dilakukan setiap triwulan, akses biasa setiap semester"; arti tetap.

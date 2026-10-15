@@ -144,3 +144,15 @@ Spec dan patch tidak diubah di putaran ini (G-3 A9).
 Open item yang ditutup atau diubah:
 
 - Open item 8 (gambar Alur Proses: cabang Ditolak atau revisi tanpa lanjutan): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan" (kolom Pelanggan / layanan dan Ack pelanggan; header tidak disunting).
+Cara pakai 1: label (USULAN) dipindah ke akhir butir; arti tetap (CR sebagai ticket Zammad masih usulan).
+Cara pakai 3: "tinjau dalam 5 hari kerja" menjadi "Lakukan PIR dalam 5 hari kerja"; PIR adalah review pasca-implementasi itu sendiri.

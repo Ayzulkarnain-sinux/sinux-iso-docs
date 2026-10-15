@@ -141,3 +141,16 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | Rujukan lane lain di notes (K-10, K-13, JA-05, USULAN 3 dan 6 REG-02, Open item 10 REG-02, baris checklist) | specs/HR-ORG-01.json, notes/ISMS-REG-02.md, config/checklist.json, salinan audit; hanya di notes, tidak di sel |
 
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan ke sel.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: tidak muncul di sel yang disunting. Istilah "pemilik risiko" dipertahankan.
+Disunting: Tujuan, Cara pakai 1, 2, 5, dan catatan Rencana Penanganan A2. Cara pakai 3 dan 4 serta legenda dipertahankan (T1).
+Rencana Penanganan A2: "konfirmasi Ops" ditulis "konfirmasi Divisi Operation" sesuai sebutan unit di sel lain; pihaknya sama.
+Cara pakai 2: "Level otomatis" ditulis "Level residual terisi otomatis" (kolom yang dimaksud).

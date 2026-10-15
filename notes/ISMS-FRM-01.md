@@ -118,3 +118,17 @@ Angka baru dari saya di berkas hasil: tidak ada. Angka 100%, 95%, 602, 155, dan 
 Apa yang membuat teks ini terdengar buatan AI. Teks di berkas hasil hampir seluruhnya suara tim. Saya menulis delapan sel lewat `set` dan satu kalimat baru: tujuh sel berisi nama, jabatan, atau kalimat dari data baris dan defaults, dan B19 hanya menambah satu nama peran dan satu nama sistem pada kalimat tim. Satu-satunya kalimat yang saya karang adalah Daftar Job!A2. Draf pertama berbunyi "Kunci enkripsi backup punya salinan offline (break-glass) di luar password manager (USULAN)". Kalimat itu terbaca seperti pernyataan keadaan nyata (seolah salinan sudah ada), padahal usulan. Saya ubah ke bentuk perintah, "Simpan salinan offline (break-glass) kunci enkripsi backup di luar password manager (USULAN)", sama dengan gaya butir Cara pakai tim ("Daftarkan setiap job ..."). Di notes ini saya memeriksa frasa pengisi, kelompok tiga yang dipaksakan, ekor penegas, dan kata kerja manusia untuk benda. Kalimat "form belum menjadi bukti implementasi" di bagian 5 butir 1 saya pertahankan karena itu temuan audit, bukan pujian atau penegasan.
 
 Adakah fakta, angka, nama, atau tanggal tanpa sumber. Nama dan jabatan penanda tangan bersumber dari config/defaults.json v21 (prepared_reviewed ISMS, approved_by) dan ditandai USULAN 1. "NOC Engineer" bersumber dari specs/HR-ORG-01.json dan Bagian 5 SOP-03 di salinan audit (fakta pendukung 8), bukan dari xlsx. "Zammad" bersumber dari premis owner (defaults ticketing); penerapannya ke tiket P2 backup adalah tafsir saya dan berlabel USULAN 3. "Salinan offline (break-glass)" bersumber dari aturan lintas dokumen di RUNBOOK §6 dan CONTEXT-PACK-v19 butir 7, berlabel USULAN 4. Klausul 8.5.3 dan 8.13 ada di sumber dan di data baris. Tanggal 13 Oktober 2026 dari sumber. Angka 100% dan 95% di USULAN 5 serta frekuensi bulanan dan triwulanan di USULAN 8 berasal dari SOP-03 (salinan audit), bukan dari xlsx. Angka 602, 155, dan 606 di USULAN 7 hasil membaca ukuran sheet dan rentang rumus di xlsx asli (Backup Log A5:A606, Restore Record sampai baris 155). Tidak ada angka lain yang saya tambahkan. Dua pernyataan hasil pembacaan sendiri: isian warna E7EEF7 pada baris CONTOH dan legenda (openpyxl atas /tmp/src/ISMS-FRM-01.xlsx), dan bahwa gambar Alur Proses memuat garis putus-putus (gambar dibuka langsung).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan" (sebutan ISMS).
+Disunting: Tujuan, Cara pakai 2 sampai 4, dan catatan Restore Record A2. Cara pakai 1 dan legenda dipertahankan (T1).
+Cara pakai 2 dibuat pasif dengan pelaku di tengah kalimat supaya tidak diawali nama peran; arti tetap.
+Restore Record A2: "approval Lead NOC dan persetujuan pelanggan" disatukan menjadi "persetujuan Lead NOC dan pelanggan"; arti tetap.
+Sheet Daftar Job dan Alur Proses tidak disunting.

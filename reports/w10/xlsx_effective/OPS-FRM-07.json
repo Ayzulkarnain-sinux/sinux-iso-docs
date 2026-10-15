@@ -1,0 +1,105 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Jadwal PM": "F6",
+  "Service Report": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    4
+   ]
+  },
+  "Jadwal PM": {
+   "rows": [
+    5,
+    47
+   ]
+  },
+  "Service Report": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Jadwal PM": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "5:5",
+   "paperSize": 8
+  },
+  "Service Report": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4",
+   "paperSize": 8
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "Daftar": {
+   "rows": [
+    1,
+    4
+   ]
+  },
+  "Jadwal PM": {
+   "rows": [
+    5,
+    47
+   ]
+  },
+  "Service Report": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ]
+  }
+ },
+ "col_widths": {
+  "Jadwal PM": {
+   "R": 11,
+   "T": 14
+  },
+  "Service Report": {
+   "C": 8,
+   "M": 11,
+   "O": 18
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B20": "Catat setiap pelaksanaan PM atau CM yang mengubah sistem di Service Report, beserta nomor ticket Zammad atau CR.",
+  "Kontrol Dokumen!B15": "Jadwal preventive maintenance tahunan, serta service report untuk preventive dan corrective maintenance, sesuai SNX-OPS-SOP-03.",
+  "Kontrol Dokumen!B18": "Isi tahun di sel B3 sheet Jadwal PM.",
+  "Kontrol Dokumen!B19": "Isi bulan untuk setiap aktivitas dengan kode R (rencana), S (selesai), atau T (tertunda). Kepatuhan dihitung otomatis: S dibagi R+S+T.",
+  "Kontrol Dokumen!B21": "Setiap bulan, Lead NOC meninjau kepatuhan dan menandatangani kolom verifikasi."
+ }
+}

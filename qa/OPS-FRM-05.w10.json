@@ -1,0 +1,17 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 5,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Sheet Ringkasan masih memakai label 'Defect Kritis atau Tinggi menahan UAT' sementara Defect A2 kini 'UAT tertahan selama ...'; selaraskan bila label boleh diubah.",
+  "Sheet Kasus Uji: font judul kolom kecil karena 12 kolom pada fit-to-width, masih terbaca."
+ ],
+ "contoh_baik": [
+  "Defect Kritis atau Tinggi berstatus Terbuka atau Diperbaiki menahan UAT. -> UAT tertahan selama masih ada defect Kritis atau Tinggi yang berstatus Terbuka atau Diperbaiki."
+ ]
+}

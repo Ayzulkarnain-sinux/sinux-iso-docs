@@ -1,0 +1,100 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Change Log": "B5",
+  "Ringkasan": "A7"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    6
+   ]
+  },
+  "Change Log": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Ringkasan": {
+   "rows": [
+    6,
+    13
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Change Log": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4",
+   "paperSize": 8
+  },
+  "Ringkasan": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "6:6"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "Daftar": {
+   "rows": [
+    1,
+    6
+   ]
+  },
+  "Change Log": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Ringkasan": {
+   "rows": [
+    6,
+    13
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ]
+  }
+ },
+ "col_widths": {
+  "Change Log": {
+   "L": 12,
+   "N": 14,
+   "S": 11
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B18": "Gunakan satu nomor CR untuk satu perubahan, dengan format CR-YYYY-NNNN. Log ini menjadi rekap audit, sedangkan CR juga dibuat sebagai ticket di Zammad (USULAN).",
+  "Kontrol Dokumen!B15": "Log semua change request proyek dan teknis, lengkap dengan approval, eksekusi, dan hasilnya, sesuai SNX-OPS-SOP-02.",
+  "Kontrol Dokumen!B19": "Kolom Go-gate otomatis bernilai CEK jika backup, rollback, atau approval belum lengkap, kecuali untuk change Emergency.",
+  "Kontrol Dokumen!B20": "Kolom PIR otomatis bernilai Ya untuk change Major atau change yang berakhir rollback. Lakukan PIR dalam 5 hari kerja.",
+  "Ringkasan!A2": "Isi periode di sel B3 dan B4. Semua angka dihitung dari sheet Change Log berdasarkan Tanggal ajukan."
+ }
+}

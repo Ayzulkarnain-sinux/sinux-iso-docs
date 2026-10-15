@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 5,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Sheet WBS dan Timeline: label sel 'Total bobot' terpotong menjadi 'Total bobo' di PDF hal. 6; lebarkan kolom label atau wrap.",
+  "Kontrol Dokumen B21: rujukan 'SNX-OPS-SOP-01 Bagian 6.4' menjadi 'butir 6.4'; pastikan 6.4 di SOP-01 memang butir, bukan bagian/heading.",
+  "Header WBS 'Bobot (%)' dan 'Progres' sangat rapat; kolom Bobot bisa sedikit dilebarkan."
+ ],
+ "contoh_baik": [
+  "Isi Checklist G1 sebelum proyek dimulai; proyek tidak dimulai bila ada butir Belum. -> Isi Checklist G1 sebelum proyek dimulai. Proyek belum boleh dimulai jika masih ada butir berstatus Belum."
+ ]
+}

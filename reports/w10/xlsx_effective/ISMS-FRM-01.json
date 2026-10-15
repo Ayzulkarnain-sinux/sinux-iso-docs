@@ -1,0 +1,132 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Daftar Job": "B5",
+  "Backup Log": "B5",
+  "Restore Record": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    6
+   ]
+  },
+  "Daftar Job": {
+   "rows": [
+    4,
+    86
+   ]
+  },
+  "Backup Log": {
+   "rows": [
+    4,
+    606
+   ]
+  },
+  "Restore Record": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Daftar Job": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Backup Log": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Restore Record": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4",
+   "paperSize": 8
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Ringkasan": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "Daftar": {
+   "rows": [
+    1,
+    6
+   ]
+  },
+  "Daftar Job": {
+   "rows": [
+    4,
+    86
+   ]
+  },
+  "Backup Log": {
+   "rows": [
+    4,
+    606
+   ]
+  },
+  "Restore Record": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    37
+   ]
+  }
+ },
+ "col_widths": {
+  "Daftar Job": {
+   "F": 11,
+   "G": 11,
+   "H": 15
+  },
+  "Backup Log": {
+   "E": 10
+  },
+  "Restore Record": {
+   "I": 11,
+   "L": 20,
+   "O": 14
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B19": "Backup Log diisi NOC Engineer shift malam setiap hari. Jika status Gagal muncul dua kali berturut-turut, buat ticket P2 di Zammad.",
+  "Kontrol Dokumen!B15": "Mencatat job backup, hasil pemeriksaan backup harian, serta setiap restore, baik uji berkala maupun atas permintaan, sesuai SNX-ISMS-SOP-03.",
+  "Kontrol Dokumen!B20": "Catat setiap restore, baik uji berkala maupun atas permintaan, di sheet Restore Record. Durasi dan kepatuhan RTO terisi otomatis dari data Daftar Job.",
+  "Kontrol Dokumen!B21": "Sheet Ringkasan menghitung tingkat keberhasilan backup dan uji restore per bulan sebagai bahan SNX-OPS-RPT-01.",
+  "Restore Record!A2": "Durasi, RTO, dan kepatuhan RTO terisi otomatis. Restore ke produksi memerlukan persetujuan Lead NOC dan pelanggan."
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 3
+ },
+ "blocking": [
+  {
+   "lokasi": "Sheet Register, baris judul kolom (PDF hal. 5-8)",
+   "masalah": "Judul kolom tiga baris terpotong oleh tinggi baris judul; baris ketiga hanya tampak separuh",
+   "kutipan": "Durasi pulih (jam) / Ack sesuai target / Pulih sesuai target",
+   "usul": "Naikkan tinggi baris judul (sekitar 3 baris teks) atau lebarkan kolom hitung agar judul muat dua baris"
+  },
+  {
+   "lokasi": "Sheet Register, setelan cetak",
+   "masalah": "23 kolom pada fit 1 page wide membuat teks sekitar 5 pt; sulit dibaca saat dicetak",
+   "kutipan": "No tiket | Ticketing system | Pelanggan | ... | Respon (menit) | Catatan",
+   "usul": "Cetak A3 landscape atau persempit kolom pendek (Kanal, Severity, RCA wajib, Status) agar skala naik"
+  }
+ ],
+ "nonblocking": [
+  "Badan memakai 'ticket' tetapi judul kolom 'No tiket', 'Jumlah tiket' dan 'Akar ringkas' tetap (header dikecualikan STYLE §1.5); pertimbangkan catatan untuk tim.",
+  "Register A2 menghapus '(ke SOC)' karena berulang dengan 'diserahkan ke SOC'; tidak mengubah arti."
+ ],
+ "contoh_baik": [
+  "Tiket Ops dibuat di Zammad (Nusagrid), tiket generalist di Service Hub GLPI (USULAN, batas menunggu owner). -> Ticket Ops dibuat di Zammad (Nusagrid), sedangkan ticket generalist dibuat di Service Hub GLPI; pembagian ini masih menunggu keputusan owner (USULAN)."
+ ]
+}

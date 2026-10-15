@@ -124,3 +124,15 @@ Kolom Acuan baseline di sumber untuk AST-002, 005, dan 007 berisi nama berkas in
 
 1. Apa yang membuat teks ini terdengar buatan AI. Teks yang saya tulis hanya tujuh nilai sel dan satu kalimat baru (B14). Kalimat B14 memakai pola "X: Y. Z: W." yang agak mekanis, tetapi isinya dua fakta dengan satu rujukan dan tidak ada kata pengisi, penegasan, atau penutup. Asal angka 5 tahun tidak dijelaskan di sel; cukup di open item 11. Kalimat Cara pakai, legenda, dan label tim tidak saya sentuh (T1). Tidak ada em-dash atau en-dash di patch; tanda "·" di subjudul adalah penyekat milik tim.
 2. Adakah fakta, angka, nama, atau tanggal tanpa sumber. Erik, Fani, dan Samuel dari config/defaults.json. "5 tahun" dari SNX-ISMS-SOP-04 bagian 8, dibaca dari Drive hari ini (fileId di atas); angka itu bukan dari REG-01 sendiri, jadi konfirmasinya dicatat di open item 11. "13 Oktober 2026" dan "00 (DRAFT)" tetap dari sumber. Tidak ada nama, tanggal, atau angka baru lain. Tidak ada perbaikan teks yang diperlukan setelah pemeriksaan ini.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan".
+Disunting: Tujuan, Cara pakai 1 sampai 5, dan catatan Pemusnahan A2. Catatan Register Aset A2 dipertahankan (T1).
+Cara pakai 5: "kredensial dilarang" menjadi "Kredensial tidak boleh dicatat"; arti tetap.

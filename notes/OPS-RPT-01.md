@@ -138,3 +138,16 @@ Label (USULAN) tidak ditulis di sel xlsx karena sel yang berubah tidak memuat an
 | "3 tahun", "RESTRICTED (Internal)", "Head of Operation", "13 Oktober 2026", "2027", 17 KPI | Sumber RPT-01, tidak diubah |
 | Rujukan FRM-04, FRM-05, FRM-08, ML-00 butir 2, HR-ORG-01 K-09 di notes | Repo kerja dan salinan audit; hanya di notes, tidak di sel |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan" (Narasi Bulanan, tidak disunting).
+"review manajemen" (hasil skrip istilah) ditulis "Management Review" di Tujuan dan Cara pakai 4. Sheet Narasi Bulanan tidak disunting, sehingga "tinjauan manajemen" di sana tetap.
+Cara pakai 5: "setelah 3 bulan data" ditulis "setelah data 3 bulan terkumpul"; angka tetap.

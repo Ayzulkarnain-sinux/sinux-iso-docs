@@ -149,3 +149,16 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | "2027-04-13", nilai 20, 60, 80, 100 di uji rumus | Hasil LibreOffice atas salinan uji, bukan klaim tentang data SINUX |
 | Pernyataan tentang SNX-ISMS-PLN-01, REG-01, REG-02, dokumen Legal | Salinan audit di context/audit (baris 765, 911, 2026 sampai 2030 berkas ISMS; baris 370, 550, 1041 berkas Legal), diberi label sebagai salinan audit, bukan Drive terbaru |
 | Tidak ada tanggal, angka, atau nama baru di sel xlsx selain yang tertera di atas | Perbandingan sel demi sel (18 sel berubah) |
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: tidak ada sebutan pelanggan di sel yang disunting; "supplier" dipakai konsisten.
+Disunting: Tujuan, Cara pakai 1, 2, 3, 5, dan catatan Kuesioner Keamanan A2. Cara pakai 4 dan catatan Evaluasi A2 dipertahankan (T1).
+Tujuan: "A 5.19" ditulis "Annex A 5.19" agar sama dengan sebutan di dokumen ISMS lain; angka tetap.
+Sheet Daftar Supplier (termasuk A2) tidak disunting karena berawalan Daftar.

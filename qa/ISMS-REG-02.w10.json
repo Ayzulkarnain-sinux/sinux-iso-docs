@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Cara pakai 2: 'Impact (I)' bertabrakan dengan huruf I pada 'C, I, A' (Integrity) di butir 1; usul cukup 'Isi kolom L (Likelihood) dan I (Impact)' atau tanpa singkatan.",
+  "Cara pakai 3: 'risiko berlevel Rendah' terasa kaku; usul 'risiko dengan level Rendah'.",
+  "Glossary STYLE §5 memuat 'risk owner', tetapi badan memakai 'pemilik risiko' sesuai header kolom 'Pemilik risiko'; konsisten dalam dokumen, jadi tidak diblok.",
+  "PDF: register, matriks 5x5, dan ringkasan rapi; header berulang di halaman 5; tabel Skala memiliki baris yang lebih tinggi dari isinya."
+ ],
+ "contoh_baik": [
+  "Penilaian ulang minimal tahunan, setelah insiden P1, dan setelah perubahan besar. -> Lakukan penilaian ulang paling sedikit setahun sekali, setelah insiden P1, dan setelah perubahan besar."
+ ]
+}

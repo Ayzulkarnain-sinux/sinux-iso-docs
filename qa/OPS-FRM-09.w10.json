@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Cara pakai 4 memakai 'respons ticket', sedangkan header Laporan Bulanan tetap 'Response SLA' dan 'Tiket P1 dan P2', dan FRM-08 memakai 'Respon'. Ejaan respon/respons/Response belum seragam lintas dokumen (header dikecualikan).",
+  "PDF: halaman 12 hanya berisi 9 baris lanjutan dan kotak tanda tangan; header berulang, tidak terpotong.",
+  "Parameter SLA A2 masih memuat dua klausa dengan titik koma; masih wajar."
+ ],
+ "contoh_baik": [
+  "Catat setiap downtime di Downtime Log; kolom Dihitung = Tidak hanya bila ada bukti notifikasi maintenance atau pengecualian kontrak. -> Catat setiap downtime di Downtime Log. Isi kolom Dihitung dengan \"Tidak\" hanya jika ada bukti notifikasi maintenance atau pengecualian kontrak."
+ ]
+}

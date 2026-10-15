@@ -123,3 +123,15 @@ Spec dan patch tidak diubah di putaran ini (G-3 A9).
 Open item yang ditutup atau diubah:
 
 - Open item 2 (gambar Alur Proses: kotak Kembalikan ke Commercial tanpa jalan kembali; terkait USULAN 5 dan item 11 di tabel catatan): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar tidak disebut di sel yang disunting; sebutan OPS tetap "pelanggan".
+Disunting: Tujuan, Cara pakai 1 sampai 4, catatan Checklist G1 A2, WBS dan Timeline A2, Stakeholder A2. Milestone A2 dipertahankan (T1).
+Cara pakai 4: "minimal mingguan" ditulis "paling sedikit sekali seminggu"; rujukan SNX-OPS-SOP-01 6.4 tetap.

@@ -1,0 +1,30 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 3
+ },
+ "blocking": [
+  {
+   "lokasi": "Sheet Laporan Bulanan, blok tanda tangan (PDF hal. 12)",
+   "masalah": "Label penanda tangan bertumpuk dan terpotong, tidak terbaca",
+   "kutipan": "Disusun (Service Delivery Manager) / Diperiksa (Head of Operation)",
+   "usul": "Lebarkan kolom label atau naikkan tinggi baris kedua sel label agar wrap tidak menimpa baris lain"
+  },
+  {
+   "lokasi": "Kontrol Dokumen B19",
+   "masalah": "Susunan 'dengan Tidak hanya jika' terbaca sebagai 'tidak hanya' (not only), ambigu",
+   "kutipan": "Isi kolom Dihitung dengan Tidak hanya jika ada bukti notifikasi maintenance atau pengecualian kontrak.",
+   "usul": "Isi kolom Dihitung dengan \"Tidak\" hanya jika ada bukti notifikasi maintenance atau pengecualian kontrak."
+  }
+ ],
+ "nonblocking": [
+  "B21 'data respon ticket': 'respon' tidak baku, tulis 'respons' atau 'response' agar konsisten dengan kolom 'Response SLA'.",
+  "Judul kolom Laporan Bulanan 'Tiket P1 dan P2' tetap (header dikecualikan)."
+ ],
+ "contoh_baik": [
+  "Pilih bulan laporan di sheet Laporan Bulanan sel B3; availability, status, dan sisa anggaran downtime dihitung otomatis. -> Pilih bulan laporan di sel B3 sheet Laporan Bulanan. Availability, status, dan sisa anggaran downtime terisi otomatis."
+ ]
+}

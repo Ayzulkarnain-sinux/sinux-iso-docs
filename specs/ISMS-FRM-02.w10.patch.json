@@ -1,0 +1,72 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Register": "B5",
+  "Chain of Custody": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    11
+   ]
+  },
+  "Register": {
+   "rows": [
+    4,
+    155
+   ]
+  },
+  "Chain of Custody": {
+   "rows": [
+    4,
+    154
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    38
+   ]
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Register": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Chain of Custody": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Investigasi": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Mencatat insiden keamanan informasi, hasil investigasi, dan chain of custody bukti. Prosedur dan definisi severity P1 sampai P4 mengikuti SNX-ISMS-SOP-01.",
+  "Kontrol Dokumen!B18": "Isi satu baris untuk setiap insiden keamanan di sheet Register, dengan nomor SIR-YYYY-NNN.",
+  "Kontrol Dokumen!B19": "Kolom Jam ke containment dan Jam ke pulih terisi otomatis dari waktu deteksi, dengan 1 desimal.",
+  "Kontrol Dokumen!B20": "Jika data pribadi terlibat, kolom Notifikasi PDP menandai insiden itu wajib dikaji, dengan batas 3 x 24 jam sejak waktu deteksi. Keputusan notifikasi diambil Direktur (COO) bersama Legal.",
+  "Kontrol Dokumen!B22": "Gunakan format laporan insiden baku untuk laporan insiden ke pelanggan.",
+  "Register!A2": "Kolom abu-abu terisi otomatis.",
+  "Chain of Custody!A2": "Isi satu baris untuk setiap perpindahan atau tindakan atas bukti. Hash SHA-256 dihitung saat bukti dikumpulkan dan diverifikasi pada setiap perpindahan."
+ }
+}

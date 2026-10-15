@@ -1,0 +1,17 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Satu istilah per hal: Kontrol Dokumen kini 'Management Review', tetapi judul sheet Narasi masih 'Narasi kinerja bulanan untuk COO dan tinjauan manajemen' (STYLE §1.5 berlaku untuk judul); gambar alur juga 'Tinjauan manajemen' (gambar dikecualikan).",
+  "Sheet KPI: sel 'Tiket P1 dan P2 di-ack', 'Tiket vulnerability', 'dengan akar sama' belum mengikuti peta ticket/root cause bila sel ini dihitung badan teks."
+ ],
+ "contoh_baik": [
+  "Target adalah target awal dan dikalibrasi setelah 3 bulan data. -> Target saat ini adalah target awal dan dikalibrasi setelah data 3 bulan terkumpul."
+ ]
+}

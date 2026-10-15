@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Badan memakai 'ticket' sementara header kolom tetap 'No tiket' dan 'Jumlah tiket' (header dikecualikan STYLE §1.5); di sheet Ringkasan judul 'Ringkasan ticket per periode' berdampingan dengan header 'Jumlah tiket'. Catat untuk putaran header berikutnya.",
+  "Register A2: frasa '(ke SOC)' dihapus, tetapi isinya tetap ada ('diserahkan ke SOC'); bukan kehilangan substansi.",
+  "PDF: sheet Register 23 kolom, header kecil tetapi terbaca dan berulang di halaman 6 sampai 8; kolom rumus abu-abu jelas."
+ ],
+ "contoh_baik": [
+  "Tiket Ops dibuat di Zammad (Nusagrid), tiket generalist di Service Hub GLPI (USULAN, batas menunggu owner). -> Ticket Ops dibuat di Zammad (Nusagrid), sedangkan ticket generalist dibuat di Service Hub GLPI; pembagian ini masih menunggu keputusan owner (USULAN)."
+ ]
+}

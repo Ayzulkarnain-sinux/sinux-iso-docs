@@ -1,0 +1,72 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Register Risiko": "B5",
+  "Ringkasan": "A4"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    8
+   ]
+  },
+  "Register Risiko": {
+   "rows": [
+    4,
+    79
+   ]
+  },
+  "Ringkasan": {
+   "rows": [
+    3,
+    8
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    38
+   ]
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Register Risiko": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Ringkasan": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "3:3"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Matriks Risiko": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Mencatat penilaian risiko keamanan informasi sesuai ISO/IEC 27001:2022 klausul 6.1.2 dan 8.2.",
+  "Kontrol Dokumen!B18": "Identifikasi risiko per aset atau kelompok aset, dengan ID aset dari SNX-ISMS-REG-01. Tulis threat, vulnerability, dan dampaknya terhadap C, I, A.",
+  "Kontrol Dokumen!B19": "Isi Likelihood (L) dan Impact (I) dengan nilai 1 sampai 5 sesuai sheet Matriks Risiko. Skor dan Level terisi otomatis.",
+  "Kontrol Dokumen!B20": "Kriteria penerimaan: risiko berlevel Rendah dapat diterima pemilik risiko. Risiko berlevel Sedang ke atas wajib memiliki rencana penanganan di SNX-ISMS-REG-03.",
+  "Kontrol Dokumen!B21": "Lakukan penilaian ulang paling sedikit setahun sekali, setelah insiden P1, dan setelah perubahan besar.",
+  "Kontrol Dokumen!B22": "Baris usulan awal disusun Divisi Operation dari riwayat operasi di knowledge base SINUX. Baris tersebut wajib divalidasi ISMS Coordinator dan pemilik risiko.",
+  "Register Risiko!A2": "Baris biru muda adalah usulan awal. Setelah divalidasi, ubah kolom Catatan menjadi Disetujui."
+ }
+}

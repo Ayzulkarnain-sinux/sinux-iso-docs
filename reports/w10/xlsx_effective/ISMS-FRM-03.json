@@ -1,0 +1,133 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Daftar Supplier": "B5",
+  "Evaluasi": "D5",
+  "Kuesioner Keamanan": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    10
+   ]
+  },
+  "Daftar Supplier": {
+   "rows": [
+    4,
+    52
+   ]
+  },
+  "Evaluasi": {
+   "rows": [
+    4,
+    104
+   ]
+  },
+  "Kuesioner Keamanan": {
+   "rows": [
+    4,
+    16
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ],
+   "valign": "top"
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Daftar Supplier": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Evaluasi": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kuesioner Keamanan": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "fit_rows": {
+  "Daftar": {
+   "rows": [
+    1,
+    10
+   ]
+  },
+  "Daftar Supplier": {
+   "rows": [
+    4,
+    52
+   ]
+  },
+  "Evaluasi": {
+   "rows": [
+    4,
+    104
+   ]
+  },
+  "Kuesioner Keamanan": {
+   "rows": [
+    4,
+    16
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    3,
+    38
+   ]
+  }
+ },
+ "col_widths": {
+  "Daftar": {
+   "B": 18
+  },
+  "Daftar Supplier": {
+   "E": 18,
+   "G": 17,
+   "J": 12,
+   "K": 15
+  },
+  "Evaluasi": {
+   "A": 11,
+   "B": 12,
+   "D": 18,
+   "E": 20,
+   "F": 14,
+   "G": 17,
+   "I": 20,
+   "N": 14
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Mencatat supplier teknis, evaluasi berkala atas kinerja dan keamanan informasinya, serta kuesioner keamanan supplier (Annex A 5.19 sampai 5.23, ISO 9001 klausul 8.4).",
+  "Kontrol Dokumen!B18": "Daftarkan di sheet Daftar Supplier setiap supplier yang menopang layanan atau memegang akses maupun data. Koordinasikan pendaftarannya dengan Commercial dan Legal.",
+  "Kontrol Dokumen!B19": "Evaluasi supplier berkritikalitas Tinggi setiap semester, sedangkan supplier berkritikalitas Sedang dan Rendah setiap tahun. Jadwal evaluasi berikutnya terisi otomatis.",
+  "Kontrol Dokumen!B20": "Isi skor 1 sampai 5 untuk setiap kriteria di sheet Evaluasi. Nilai tertimbang dan keputusan terisi otomatis.",
+  "Kontrol Dokumen!B22": "Gunakan data breach SLA yang disebabkan supplier (SNX-OPS-SOP-05) sebagai masukan kriteria kinerja.",
+  "Kuesioner Keamanan!A2": "Gunakan satu set jawaban untuk satu supplier, dan salin sheet ini jika perlu. Hasilnya dipakai untuk kriteria Kontrol keamanan informasi di sheet Evaluasi."
+ }
+}

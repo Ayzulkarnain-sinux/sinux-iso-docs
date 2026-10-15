@@ -1,0 +1,30 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 3
+ },
+ "blocking": [
+  {
+   "lokasi": "Sheet Change Log, baris judul kolom (PDF hal. 4-5)",
+   "masalah": "Judul kolom terpotong di tengah kata dan baris ketiga terpotong tinggi baris",
+   "kutipan": "Ack pelangga / n",
+   "usul": "Lebarkan kolom 'Ack pelanggan' (sekitar 2,2 cm) atau naikkan tinggi baris judul agar teks utuh"
+  },
+  {
+   "lokasi": "Sheet Change Log, setelan cetak (PDF hal. 4-5)",
+   "masalah": "21 kolom dipaksa fit 1 page wide sehingga judul kolom dan sel sekitar 5 pt, sulit dibaca dan diisi saat dicetak",
+   "kutipan": "No CR | Tanggal ajukan | Pengaju | Pelanggan / layanan | ... | Go-gate | PIR wajib | Catatan",
+   "usul": "Pakai kertas A3 landscape untuk sheet ini, atau persempit kolom teks pendek (Jenis, Status approval, Tgl approval, Go-gate, PIR wajib) agar skala cetak naik"
+  }
+ ],
+ "nonblocking": [
+  "Kontrol Dokumen B15 'Log semua change request ...' diawali kata benda English; 'Mencatat semua change request ...' lebih wajar sebagai Tujuan.",
+  "B20 'tinjau dalam 5 hari kerja' menjadi 'Lakukan PIR dalam 5 hari kerja': arti tetap, istilah PIR konsisten dengan kolom."
+ ],
+ "contoh_baik": [
+  "Kolom Go-gate otomatis CEK bila backup, rollback, atau approval belum lengkap (kecuali Emergency). -> Kolom Go-gate otomatis bernilai CEK jika backup, rollback, atau approval belum lengkap, kecuali untuk change Emergency."
+ ]
+}
