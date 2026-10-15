@@ -170,3 +170,18 @@ Putaran sweep sesudah DONE (instruksi /tmp/claude-0/prompts/LEG-REG-03.sweep.txt
 Alasan butir 2: specs/LEG-SOP-03.json butir 4.26 menulis "Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya", dan tabel Rekaman SOP-03 memberi "pemilik Line Manager Legal" untuk dokumen internal departemen Legal. Dokumen ini kini sama. Pembedaan menetapkan (Line Manager Legal) dan mencatat (Staff Legal) tetap konsisten dengan Ketentuan butir 5, 6, 13 dan tabel Peran, jadi tidak ada butir Ketentuan yang diubah.
 
 Uji sesudah sweep: render berhasil; `python3 -I tools/lint_doc.py ... generic` memberi "pass": true, "fails": [] (warns: 19 butir USULAN); validate.py docx "All validations PASSED!"; `python3 -I reports/orch/blankscan.py` memberi "ok 12 LEG-REG-03.docx []". Kode dokumen di badan tetap tercantum di Dokumen Terkait (tidak ada kode baru). Pemindaian em-dash dan en-dash pada notes ini: nol.
+
+
+## ISO-W9
+
+Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir di bawah yang berubah.
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| meta.approval, blok Prepared dan Reviewed | Prepared "Staff Legal"; Reviewed "Line Manager Legal" | Prepared "Alif Altamziz / Staff Legal"; Reviewed "Ester Febe Utomo / Line Manager Legal" (config/defaults.json v22 prepared_reviewed.LEG) |
+| A5, Peran, paragraf penjelas | "... JA-08 dan JA-09 (USULAN). Pembuat ..." | "... JA-08 dan JA-09. Pembuat ..."; USULAN pembagian tugas mengikuti pola SNX-LEG-SOP-03 tetap |
+| A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... JA-08 dan JA-09 (USULAN). Daftar ..." | "... JA-08 dan JA-09. Daftar ..." |
+
+Open item:
+
+- U16 (pemetaan peran ke JA-08 dan JA-09, menunggu konfirmasi K-13): ditutup W9: pemetaan diputus owner (LEAD G-3 A5).

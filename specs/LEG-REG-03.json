@@ -15,8 +15,8 @@
     "effective_date": "",
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
-      "prepared": "Staff Legal",
-      "reviewed": "Line Manager Legal",
+      "prepared": "Alif Altamziz / Staff Legal",
+      "reviewed": "Ester Febe Utomo / Line Manager Legal",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -228,7 +228,7 @@
           }
         },
         {
-          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-03 dan berstatus (USULAN). Line Manager Legal dan Staff Legal adalah nama peran; SNX-HR-ORG-01 memetakannya ke jabatan Legal & Compliance, JA-08 dan JA-09 (USULAN). Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-03 dan berstatus (USULAN). Line Manager Legal dan Staff Legal adalah nama peran; SNX-HR-ORG-01 memetakannya ke jabatan Legal & Compliance, JA-08 dan JA-09. Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
         }
       ]
     },
@@ -619,7 +619,7 @@
             "rows": [
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Matriks Peran memetakan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance, JA-08 dan JA-09 (USULAN). Daftar jabatannya menjadi acuan kolom Penanggung Jawab Kegiatan."
+                "Struktur Organisasi SINUX. Matriks Peran memetakan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance, JA-08 dan JA-09. Daftar jabatannya menjadi acuan kolom Penanggung Jawab Kegiatan."
               ],
               [
                 "SNX-ISMS-PRO-01",

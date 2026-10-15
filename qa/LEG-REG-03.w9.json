@@ -1,0 +1,28 @@
+{
+ "key": "LEG-REG-03",
+ "cluster": "LEG-B",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Dua kalimat yang tidak berubah masih menulis 'departemen Legal' dengan d kecil: butir 13 ('folder Google Drive departemen Legal') dan baris SNX-LEG-SOP-01 di Dokumen Terkait ('folder Google Drive departemen Legal'). Teks ini sudah ada sebelum W9 dan bukan bentuk 'Divisi Legal', jadi tidak wajib diganti. Penyeragaman ke 'Departemen Legal' bisa dikerjakan di putaran lain.",
+  "Butir 2 (rujukan SNX-LEG-SOP-03 bagian 8) hanya berlaku untuk LEG-REG-04, bukan dokumen ini. Tidak ada perubahan untuk itu di sini, dan memang tidak perlu."
+ ],
+ "butir_dikerjakan": [
+  "A5: label (USULAN) dilepas dari pemetaan peran ke JA-08 dan JA-09 di dua tempat: paragraf penjelas bagian 4 Peran, dan baris SNX-HR-ORG-01 di Dokumen Terkait. Label USULAN lain tetap ada, termasuk USULAN pada pembagian tugas yang mengikuti pola SNX-LEG-SOP-03 di kalimat yang sama.",
+  "Blok approval: prepared 'Alif Altamziz / Staff Legal', reviewed 'Ester Febe Utomo / Line Manager Legal', approved 'Samuel Kristanto Utomo / President Director'. Ketiganya persis sama dengan defaults v22 prepared_reviewed.LEG dan approved_by.all.",
+  "Badan dokumen tetap memakai nama peran. Nama Alif dan Ester masing-masing hanya muncul 1 kali, yaitu di blok Prepared dan Reviewed. Daffa muncul 0 kali.",
+  "notes/LEG-REG-03.md punya bagian '## ISO-W9' dengan tabel 3 perubahan. Open item U16 ditandai 'ditutup W9' dan tidak dihapus.",
+  "Diff hanya berisi 4 baris yang diminta (spec.diff 3 hunk). Tidak ada perubahan lain yang mengubah makna dan tidak ada fakta baru. Kalimat yang berubah bebas em-dash, bebas frasa proses penyusunan, dan tidak memuat pasif baru. Rujukan SNX-HR-ORG-01 JA-08/JA-09 tidak berubah dan sesuai dengan LEAD G-3 A5."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Diperiksa dengan grep pada teks render sesudah W9 (/tmp/claude-0/w9/LEG-REG-03.chk.after.txt). 'Divisi Legal' muncul 0 kali, jadi syarat dokumen Legal terpenuhi. Hasil lain: 'HR Manager' 0, 'Departemen Legal' 0 (bentuk 'Divisi Legal' memang tidak ada sejak awal, jadi tidak ada yang perlu diganti), 'menunggu konfirmasi' 0, 'K-13' 0, 'Daffa' 0, em-dash 0, 'JA-0' 2 (keduanya tanpa USULAN), 'USULAN' 20 (semuanya di luar pemetaan Legal).",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
