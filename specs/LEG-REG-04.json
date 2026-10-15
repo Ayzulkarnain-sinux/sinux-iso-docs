@@ -217,7 +217,7 @@
           "p": "1. Staff Legal mencatat tiap dokumen legal sebagai satu baris register sebelum menyimpannya (SNX-LEG-SOP-03 butir 4.1). Satu baris untuk satu versi dokumen (USULAN)."
         },
         {
-          "p": "2. Staff Legal mengisi Kategori, Judul Dokumen, Nomor Dokumen, Pihak, Nomor Versi, Tanggal Berlaku, dan Tanggal Berakhir dari dokumen asli."
+          "p": "2. Staff Legal menentukan Kategori menurut bagian Istilah, dan mengisi Judul Dokumen, Nomor Dokumen, Pihak, Nomor Versi, Tanggal Berlaku, dan Tanggal Berakhir dari dokumen asli atau, untuk dokumen yang hanya ada secara elektronik, dari salinan elektroniknya."
         },
         {
           "p": "3. Staff Legal mencatat Final hanya bila dokumen memenuhi arti Final pada bagian Istilah. Dokumen yang belum ditandatangani lengkap dicatat Draft atau Menunggu Tanda Tangan (SNX-LEG-SOP-03 butir 4.3)."
@@ -247,7 +247,7 @@
           "p": "11. Staff Legal mencatat Keputusan Evaluasi di register setelah Line Manager Legal mengevaluasi dokumen yang masa retensinya berakhir (SNX-LEG-SOP-03 butir 4.21)."
         },
         {
-          "p": "12. Staff Legal mengubah status dokumen menjadi Dimusnahkan setelah pemusnahan menurut SNX-LEG-SOP-03 prosedur 6.7. Barisnya tetap disimpan di register (USULAN)."
+          "p": "12. Staff Legal mengubah status dokumen menjadi Dimusnahkan setelah pemusnahan menurut SNX-LEG-SOP-03 prosedur 6.7. Staff Legal tetap menyimpan barisnya di register (USULAN)."
         },
         {
           "p": "13. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register setiap tahun, bersamaan dengan peninjauan dokumen ini (USULAN)."
@@ -269,7 +269,7 @@
             "rows": [
               [
                 "Staff Legal",
-                "Mencatat dokumen, mengisi kolom register, memeriksa register tiap bulan, mengubah status, mengisi penanda Legal Hold dan keputusan evaluasi, dan menyimpan register (Ketentuan butir 1 sampai 6, 8, 10 sampai 12, dan 14)."
+                "Mencatat dokumen, mengisi kolom register, memeriksa register, mengubah status, mengisi penanda Legal Hold dan keputusan evaluasi, dan menyimpan register (Ketentuan butir 1 sampai 6, 8, 10 sampai 12, dan 14)."
               ],
               [
                 "Line Manager Legal",
@@ -283,7 +283,7 @@
           }
         },
         {
-          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti SNX-LEG-SOP-03 dan berstatus (USULAN). Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01. Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti SNX-LEG-SOP-03 dan berstatus (USULAN). Staff Legal dan Line Manager Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08) di SNX-HR-ORG-01 (USULAN). Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
         }
       ]
     },
@@ -294,7 +294,7 @@
           "p": "1. Sel data pada tabel Isi Register kosong. Staff Legal mengisinya menurut Ketentuan butir 1 dan 2."
         },
         {
-          "p": "2. Kolom ID Register memuat nomor urut baris. Nomor itu sama di keempat tabel dan tidak dipakai ulang untuk dokumen lain, termasuk bila dokumennya sudah dimusnahkan (USULAN)."
+          "p": "2. Kolom ID Register memuat nomor urut baris. Nomor itu sama di keempat tabel, dan Staff Legal tidak memakainya ulang untuk dokumen lain (USULAN)."
         },
         {
           "p": "3. Kolom Kategori memuat salah satu dari tujuh kategori pada bagian Istilah, ditulis dengan nomor dan namanya."
@@ -303,7 +303,7 @@
           "p": "4. Kolom Judul Dokumen memuat judul persis seperti tertulis pada dokumen. Kolom Nomor Dokumen memuat nomor akta, kontrak, surat, atau izin seperti tertulis pada dokumen, atau tulisan tidak bernomor. Kolom Nomor Dokumen tidak termasuk daftar kolom di SNX-LEG-SOP-03 butir 4.2 (USULAN)."
         },
         {
-          "p": "5. Kolom Pihak memuat nama pihak lain pada dokumen. Untuk dokumen tanpa pihak lain, kolom diisi SINUX (SNX-LEG-SOP-03 butir 4.4)."
+          "p": "5. Kolom Pihak memuat nama pihak lain pada dokumen. Untuk dokumen tanpa pihak lain, kolom diisi SINUX, sama dengan bagian NamaPihak pada nama berkas (SNX-LEG-SOP-03 butir 4.4, USULAN)."
         },
         {
           "p": "6. Kolom Nomor Versi memuat v01, v02, dan seterusnya, sama dengan nomor versi pada nama berkas (SNX-LEG-SOP-03 butir 4.5)."
@@ -312,7 +312,7 @@
           "p": "7. Kolom Status memuat salah satu dari lima nilai pada bagian Istilah."
         },
         {
-          "p": "8. Kolom Tanggal Berlaku dan Tanggal Berakhir memuat tanggal yang tertulis pada dokumen asli. Untuk dokumen tanpa tanggal berakhir, kolom Tanggal Berakhir memuat tulisan tidak ada masa berlaku (USULAN)."
+          "p": "8. Kolom Tanggal Berlaku dan Tanggal Berakhir memuat tanggal yang tertulis pada dokumen asli atau salinan elektroniknya. Untuk dokumen tanpa tanggal berakhir, kolom Tanggal Berakhir memuat tulisan tidak ada masa berlaku (USULAN)."
         },
         {
           "p": "9. Kolom Tingkat Klasifikasi memuat PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET. Tingkat dasar tiap jenis dokumen ada di SNX-LEG-SOP-03 butir 4.12 (USULAN)."
@@ -335,7 +335,7 @@
       "h": "Isi Register",
       "blocks": [
         {
-          "p": "Baris 1 sampai 10 disediakan dan semua sel data kosong. Kolom ID Register sudah bernomor. Nilai pada kolom Kategori, Status, Tingkat Klasifikasi, dan Keputusan Evaluasi dipilih dari nilai yang tertulis di bagian Istilah dan Petunjuk Pengisian."
+          "p": "Baris 1 sampai 10 sudah bernomor di kolom ID Register, dan semua sel datanya kosong. Staff Legal memilih nilai kolom Kategori, Status, Tingkat Klasifikasi, dan Keputusan Evaluasi dari nilai yang tertulis di bagian Istilah dan Petunjuk Pengisian."
         },
         {
           "h2": "Informasi Dokumen"
@@ -745,7 +745,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal."
+                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal. Pemetaannya ke jabatan Legal & Compliance berstatus (USULAN)."
               ]
             ],
             "widths_cm": [
@@ -773,7 +773,7 @@
               [
                 "Register ini: tabel Informasi Dokumen, Status dan Masa Berlaku, Klasifikasi dan Lokasi Penyimpanan, dan Retensi",
                 "Folder Google Drive departemen Legal (Ketentuan butir 14). Pemilik: Line Manager Legal. Pencatat: Staff Legal. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01. Akses mengikuti SNX-LEG-SOP-03 butir 4.13 sampai 4.15.",
-                "Berlaku sampai digantikan. Baris dokumen yang dimusnahkan tetap disimpan (USULAN, SNX-LEG-SOP-03 bagian 11)."
+                "Berlaku sampai digantikan (USULAN, SNX-LEG-SOP-03 bagian 11). Baris dokumen yang dimusnahkan mengikuti Ketentuan butir 12."
               ],
               [
                 "Salinan elektronik dan dokumen asli yang dirujuk register",
@@ -841,7 +841,7 @@
       "h": "Kesimpulan",
       "blocks": [
         {
-          "p": "Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal memeriksa isi register setiap bulan menurut Ketentuan butir 4."
+          "p": "Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun. Staff Legal memeriksa isi register menurut Ketentuan butir 4."
         }
       ]
     }

@@ -1,0 +1,24 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Petunjuk Pengisian butir 5 dan 11; Ketentuan butir 3",
+      "masalah": "Butir 1 'pasif' baru dikerjakan pada kalimat yang ditandai verifikator (Isi Register, Ketentuan 12, Petunjuk 2). Pasif tanpa pelaku lama masih tersisa padahal pelakunya Staff Legal. Bukan pola baru.",
+      "bukti": "Petunjuk 5: 'Untuk dokumen tanpa pihak lain, kolom diisi SINUX, ...'. Petunjuk 11: 'Kolom Tanggal Pemicu dan Tanggal Akhir Masa Retensi diisi menurut Ketentuan butir 8.' Ketentuan 3: 'Dokumen yang belum ditandatangani lengkap dicatat Draft atau Menunggu Tanda Tangan'."
+    },
+    {
+      "lokasi": "Ketentuan butir 2 dan Petunjuk Pengisian butir 8",
+      "masalah": "Dua rumusan sumber pengisian yang sedikit berbeda. Ketentuan 2 memakai salinan elektronik hanya untuk dokumen yang hanya ada secara elektronik; Petunjuk 8 membolehkan 'dokumen asli atau salinan elektroniknya' tanpa syarat itu. Ringan, makna pokok tidak berubah.",
+      "bukti": "Ketentuan 2: '... dari dokumen asli atau, untuk dokumen yang hanya ada secara elektronik, dari salinan elektroniknya.' Petunjuk 8: '... tanggal yang tertulis pada dokumen asli atau salinan elektroniknya.'"
+    }
+  ],
+  "checked": {
+    "perubahan_vs_butir": "11 hunk spec = 11 hunk teks. Semua masuk butir 1 (label USULAN pada pemetaan HR-ORG-01 dan Pihak=SINUX; dokumen asli vs elektronik, termasuk Kategori ditentukan pencatat sesuai temuan verifikator; pasif; isi berulang) atau butir 2. Tidak ada perubahan lain.",
+    "makna": "Frekuensi bulanan tetap di Ketentuan 4. Baris dimusnahkan tetap disimpan lewat Ketentuan 12 (USULAN); Petunjuk 2 tetap melarang pakai ulang ID tanpa syarat. Retensi register: label USULAN kini di 'Berlaku sampai digantikan', sesuai SNX-LEG-SOP-03 records yang melabeli kedua klausul USULAN.",
+    "fakta_baru": "JA-08 = Line Manager Legal dan JA-09 = Staff Legal, Legal & Compliance, cocok dengan specs/HR-ORG-01.json Matriks Peran '(USULAN), menunggu konfirmasi (K-13)'; urutan 'JA-09 dan JA-08' sejajar 'Staff Legal dan Line Manager Legal'. NamaPihak dari SNX-LEG-SOP-03 butir 4.4 (berlabel USULAN di sana dan di sini). Tidak ada nama, angka, tanggal, atau sistem baru.",
+    "butir_2_pemilik_rekaman": "Rekaman: pemilik Line Manager Legal, pencatat Staff Legal, sama dengan SNX-LEG-SOP-03 butir 4.26; notes Sweep 2b mencatat selisih ada di REG-01 dan REG-03.",
+    "bahasa_dan_batas": "Docx out/ memuat teks sesudah; nol em-dash dan en-dash, nol 'nama jabatan', nol rujukan internal AI atau kata proses penyusunan (sweep, USULAN 21, verifikator) di docx. Lint qa/LEG-REG-04.lint.json pass, 20 USULAN. Status Draft tetap.",
+    "butir_tidak_dikerjakan": "Nihil yang berarti; sisa pasif lama dicatat di nonblocking."
+  }
+}
