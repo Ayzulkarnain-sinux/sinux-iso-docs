@@ -4,7 +4,7 @@ Status: DRAFTED (spec + notes ada). Spec: specs/COM-SOP-02.json. Mode sop, aksi 
 
 Uji terakhir:
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/COM-SOP-02.json /tmp/pen-COM-SOP-02/COM-SOP-02.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx sop` memberi `"pass": true`, `"fails": []`, satu warn: "11 butir (USULAN) menunggu ACC" (nol warn PIC SLA).
+- `python3 -I tools/lint_doc.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx sop` memberi `"pass": true`, `"fails": []`, satu warn: "17 butir (USULAN) menunggu ACC" (nol warn PIC SLA; angka sesudah sweep, sebelumnya 11).
 - Validator OOXML skill docx (`/mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!".
 - Diagram bagian 7 (20 simpul, rankdir TB, enam keputusan) dirender dan gambarnya dilihat: semua label terbaca, semua panah sesuai daftar edges. Halaman PDF hasil soffice tidak dibuat (UNMEASURED: tata letak halaman docx tidak diperiksa mata).
 - Lint dan validator hanya membuktikan format dan larangan pola. Kebenaran isi terhadap sumber diperiksa manual lewat tabel di bawah. Kecocokan kode SNX di badan dengan tabel Dokumen terkait diperiksa dengan skrip kecil: nol kode kurang.
@@ -111,7 +111,7 @@ Sumber 2, Job Analysis (fileId 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1):
 | 14 | Tidak ada jabatan Finance Lead dan Finance Staff | Dipakai "Finance" (JA-10) dan "Accounting & Tax" (JA-11) |
 | 15 | Ejaan Samuel Kristianto vs Kristanto; sebutan CEO | Badan memakai "Direktur Utama"; blok Approved By memakai ejaan template (defaults) |
 | 16 | Tidak ada batas nominal atau tingkat persetujuan keuangan atau kontrak per jabatan | Tidak dikarang. Butir 4.7 memakai penyetuju sementara (USULAN) dan merujuk Authority Matrix: open item 1 dan 2 |
-| 17 | Pelaporan Manager of Product Tech tidak konsisten (JA-05 ke Direktur, JA-03 minta konfirmasi) | Tujuan eskalasi solusi tidak feasible ke VP Commercial berlabel USULAN (butir 4.15): open item 10 |
+| 17 | Pelaporan Manager of Product Tech tidak konsisten (JA-05 ke Direktur, JA-03 minta konfirmasi) | Tujuan eskalasi solusi tidak feasible ke VP Commercial berlabel USULAN (butir 4.5): open item 10 |
 
 Cacat tambahan yang saya temukan:
 
@@ -139,16 +139,16 @@ Cacat tambahan yang saya temukan:
 
 ## USULAN
 
-Sepuluh butir keputusan. Spec memuat 11 kemunculan persis "(USULAN)" (satu di antaranya baris definisi label itu sendiri) dan satu label "(USULAN, perlu konfirmasi konsultan)" pada klausul ISO.
+Sepuluh butir keputusan. Spec memuat 17 kemunculan persis "(USULAN)" sesudah sweep (satu di antaranya baris definisi label itu sendiri; label kini ada langsung pada kalimat yang bersangkutan) dan satu label "(USULAN, perlu konfirmasi konsultan)" pada klausul ISO.
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
 | 1 | Wewenang harga: VP Commercial merekomendasikan, COO menyetujui harga dan diskon dan menetapkan margin final; sampai ambang dan batas margin ditetapkan, setiap penawaran dan setiap diskon butuh persetujuan COO. Selaras COM-SOP-01 butir 4.10 | Butir 4.7; langkah 6.5.2 sampai 6.5.4 | owner |
 | 2 | Pemutus pengecualian komersial: COO (diskon, harga baru, klausul, komitmen di luar kontrak) dan Direktur Utama (TOP di atas standar, sebelum penawaran dikirim); perubahan scope atau timeline diproses ulang lewat 6.2, 6.3, 6.5 | Butir 4.10; langkah 6.4.8 dan 6.4.9 | owner (Samuel untuk TOP) |
-| 3 | Verifikasi harga dan margin setiap penawaran oleh Finance (data) dan Accounting & Tax (klasifikasi COGS, margin, perlakuan PPN) sebelum review internal | Butir 4.6, 4.15; langkah 6.3.2 dan 6.3.4 | FAT |
+| 3 | Verifikasi harga dan margin setiap penawaran oleh Finance (data) dan Accounting & Tax (klasifikasi COGS, margin, perlakuan PPN) sebelum review internal | Butir 4.6; langkah 6.3.2 dan 6.3.4 | FAT |
 | 4 | Titik waktu Legal & Compliance: review klausul dan syarat komersial yang menyimpang sebelum penawaran dikirim | Butir 4.11; langkah 6.4.4 dan 6.4.5 | Legal |
 | 5 | COGS, margin, dan lembar harga dan margin berklasifikasi RESTRICTED (Internal); harga mengikuti COM-SOP-01 butir 4.13 | Butir 4.13; bagian 11 | Fani |
-| 6 | Penetapan pelaku yang tidak disebut sumber (Finance dan Accounting & Tax dalam validasi; Manager of Product Tech eskalasi ke VP Commercial; VP Commercial review internal dan penyimpan Catatan persetujuan penawaran; Legal & Compliance penyimpan hasil review; Business Development melengkapi penawaran ditolak) dan tiga rekaman baru | Butir 4.15; bagian 5, 9, 11 | owner |
+| 6 | Penetapan pelaku yang tidak disebut sumber (Finance dan Accounting & Tax dalam validasi; Manager of Product Tech eskalasi ke VP Commercial; VP Commercial review internal dan penyimpan Catatan persetujuan penawaran; Legal & Compliance penyimpan hasil review; Business Development melengkapi penawaran ditolak) dan tiga rekaman baru | Butir 4.5 dan 4.8; bagian 9 dan 11 (label di tiap kalimat) | owner |
 | 7 | Pemetaan peran: Presales ke Manager of Product Tech, Delivery ke Service Delivery Manager (jabatan usulan tanpa pemegang) | Tabel peran bagian 5 | owner (dengan Fani) |
 | 8 | Pembagian rumah aturan: rincian proposal, quotation, dan harga ada di SOP ini, ringkasannya di COM-SOP-01 butir 4.8 sampai 4.11 dan 6.4 | Dokumen terkait bagian 11 | owner |
 | 9 | SNX-COM-FRM-01 sebagai calon bentuk Catatan review scope | Dokumen terkait dan rekaman bagian 11 | owner |
@@ -181,7 +181,7 @@ Sepuluh butir keputusan. Spec memuat 11 kemunculan persis "(USULAN)" (satu di an
 
 1. Apa yang membuat teks ini terdengar buatan AI? Draf pertama punya enam tanda; semuanya sudah diperbaiki kecuali satu yang saya biarkan:
    - Butir 6.5 membuka dengan kalimat yang menyalin aturan urutan dan syarat kirim di butir 4.8. Diperbaiki: satu kalimat yang menunjuk butir 4.8.
-   - Definisi "Review internal" menyebut pelaku VP Commercial tanpa label, sementara butir 4.15 memberi label USULAN untuk pelaku yang sama. Diperbaiki: definisi menunjuk butir 4.15.
+   - Definisi "Review internal" menyebut pelaku VP Commercial tanpa label, sementara butir 4.15 memberi label USULAN untuk pelaku yang sama. Diperbaiki: definisi menunjuk butir 4.15 (sesudah sweep: butir 4.8, karena butir 4.15 dihapus).
    - Butir 4.4 dan 4.5 sama-sama menyebut Service Delivery Manager mengonfirmasi timeline. Diperbaiki: butir 4.4 menunjuk butir 4.5 sebagai satu-satunya tempat pelaku konfirmasi.
    - Definisi "Pengecualian komersial" tidak mencakup perubahan harga dan timeline yang butir 4.9 sebut. Diperbaiki: definisi dan butir 4.9 disamakan, butir 4.9 tidak lagi mengulang daftarnya.
    - Kalimat kesimpulan pertama berbentuk pasif tanpa pelaku ("dinilai dalam evaluasi"). Diperbaiki: kembali ke susunan kalimat tim ("menjadi bagian dari evaluasi kinerja dan probation").
@@ -194,3 +194,35 @@ Sepuluh butir keputusan. Spec memuat 11 kemunculan persis "(USULAN)" (satu di an
    - Tanpa sumber tertulis tetapi ada di dokumen, semuanya berlabel atau tercatat di notes: definisi umum Assumptions, BOM/BOQ, COGS, Margin, Exclusions, TOP; tiga nama rekaman baru; pemutus harga dan margin (USULAN 1); pemutus pengecualian dan penempatan persetujuan TOP (USULAN 2); verifikasi Finance dan Accounting & Tax serta cek PPN (USULAN 3); titik waktu Legal (USULAN 4); klasifikasi COGS dan margin (USULAN 5); penunjukan pelaku (USULAN 6); pemetaan peran (USULAN 7); judul klausul ISO (USULAN 10).
    - Tidak berlabel di dokumen tetapi tafsir saya: pembagian pengecualian komersial lima jenis (definisi) dan urutan prosedur 6.1 sampai 6.5. Dicatat di asumsi 1 dan 6.
    - Rujukan ke spec lain dicocokkan dengan isinya saat ini; tiga di antaranya (FAT, LEG, ISMS) masih Draf dan bisa berubah.
+
+## Sweep
+
+Putaran sweep 15 Okt 2026, satu butir: pengantar 6.1 sampai 6.3 pasif tanpa pelaku; butir 4.15 menjadi wadah USULAN; istilah Personel Commercial tidak ada di bagian 5. Satu butir diubah, tiga bagian. Fakta, angka, nama, dan struktur lain tetap. Salinan spec sebelum sweep: /tmp/pen-COM-SOP-02/COM-SOP-02.before-sweep.json.
+
+| # | Lokasi | Sebelum | Sesudah |
+|---|---|---|---|
+| 1a | Pengantar 6.1 | "Proposal disusun dari Business Requirement hasil discovery meeting. Commercial Proposal diisi sesudah harga dan margin terverifikasi (butir 6.3)." | "Business Development menyusun proposal dari Business Requirement hasil discovery meeting, dan mengisi Commercial Proposal sesudah harga dan margin terverifikasi (butir 6.3)." |
+| 1a | Pengantar 6.2 | "Review scope dilakukan sesudah draf proposal ada dan sebelum review internal (butir 4.5)." | "Business Development meminta review scope sesudah draf proposal ada dan sebelum review internal (butir 4.5)." |
+| 1a | Pengantar 6.3 | "Lembar harga dan margin disusun untuk setiap penawaran. ..." | "Business Development menyusun lembar harga dan margin untuk setiap penawaran. ..." (kalimat kedua tetap) |
+| 1b | Butir 4.15 | Satu butir berisi semua penetapan USULAN (pelaku dan rekaman), dirujuk dari definisi, butir 4.6, tabel peran, langkah 6.2.4 dan 6.5.5, bagian 9, dan bagian 11 | Butir 4.15 dihapus. Label (USULAN) dipindah ke kalimat yang bersangkutan, rujukan "(butir 4.15)" dihapus atau diarahkan, rincian di bawah |
+| 1b | Butir 4.6 | "... dari Finance (butir 6.3 dan 4.15)." | "... dari Finance (butir 6.3). Keterlibatan Finance dan Accounting & Tax ini berstatus (USULAN)." |
+| 1b | Butir 4.5 | Tanpa kalimat eskalasi | Ditambah "Manager of Product Tech mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN)." Langkah 6.2.4 kini merujuk butir 4.5 |
+| 1b | Butir 4.8 | Tanpa pelaku review internal | Ditambah "VP Commercial melakukan review internal; penunjukan pelaku ini berstatus (USULAN)." Definisi Review internal dan baris bagian 9 "VP Commercial menolak penawaran" kini merujuk butir 4.8 |
+| 1b | Tabel peran, VP Commercial | "... menyimpan Catatan persetujuan penawaran (butir 4.15)." | "... menyimpan Catatan persetujuan penawaran (butir 4.8 dan bagian 11)." |
+| 1b | Langkah 6.5.5 | "... keputusan pengecualian komersial (butir 4.15)." | "... keputusan pengecualian komersial." |
+| 1b | Bagian 9, penawaran ditolak | "Business Development melengkapi penawaran sesuai alasan penolakan, dan VP Commercial mengulang review internal (butir 4.15)." | "Business Development melengkapi penawaran sesuai alasan penolakan (USULAN), dan VP Commercial mengulang review internal (butir 4.8)." |
+| 1b | Bagian 11, rekaman | Catatan review scope: "... SNX-COM-FRM-01 adalah calon bentuknya (USULAN)"; lembar harga dan margin tanpa label; Catatan persetujuan penawaran: "pemilik VP Commercial (butir 4.15)"; hasil review Legal: "pemilik Legal & Compliance (butir 4.15)" | Tiga rekaman baru berlabel "Rekaman baru (USULAN)" pada barisnya (Catatan review scope dengan "calon bentuknya SNX-COM-FRM-01", Catatan persetujuan penawaran tanpa rujukan butir); hasil review Legal: "pemilik Legal & Compliance (USULAN)" |
+| 1c | Bagian 9, baris terakhir | "Personel Commercial perlu menyimpang dari prosedur" / "Personel itu memperoleh persetujuan VP Commercial atau pihak yang berwenang atas penyimpangan tersebut." | "Business Development perlu menyimpang dari prosedur" / "Business Development memperoleh persetujuan VP Commercial atau pihak yang berwenang atas penyimpangan tersebut." |
+| 1c | Conclusion kalimat 1 | "... evaluasi kinerja dan probation Personel Commercial." | "... evaluasi kinerja dan probation Business Development dan VP Commercial." |
+
+Catatan keputusan sweep:
+- Sebutan "Business Development dan VP Commercial" pada Conclusion mengikuti peran Commercial yang ada di tabel peran bagian 5. Sumber menulis "seluruh anggota tim Commercial"; Brand & Marketing tidak punya peran di SOP ini, sehingga tidak disebut. Ini penyempitan sebutan, bukan fakta baru; bila owner ingin semua personel Commercial tercakup, pemutusnya owner.
+- Pengganti "Personel Commercial" di bagian 9 hanya Business Development, karena penyimpangan oleh VP Commercial sendiri tidak diatur sumber ("pihak yang berwenang" tetap tanpa definisi, open item 11).
+- Nama tiga rekaman tidak diseragamkan huruf kapitalnya di putaran ini (temuan pemeriksa lain, di luar butir sweep). Penulisan sekarang: "Catatan review scope" dan "Catatan persetujuan penawaran" berhuruf kapital C, "lembar harga dan margin" huruf kecil di badan.
+- Tidak disentuh karena di luar butir: kalimat Purpose ke-2, kemiripan butir 4.7 dengan SNX-COM-SOP-01 butir 4.10 (open item 3), kata "segera" di bagian 9, dan nilai "Belum ditetapkan" pada tenggat dan retensi (open item 1, 4, 17).
+
+Uji sesudah sweep (lulus pada putaran pertama):
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/COM-SOP-02.json /tmp/pen-COM-SOP-02/COM-SOP-02.docx`: selesai tanpa galat.
+- `python3 -I tools/lint_doc.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx sop`: `"pass": true`, `"fails": []`, satu warn "17 butir (USULAN) menunggu ACC", nol warn PIC SLA.
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx`: "All validations PASSED!".
+- `python3 -I reports/orch/blankscan.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx`: `ok	20	COM-SOP-02.docx	[]`.

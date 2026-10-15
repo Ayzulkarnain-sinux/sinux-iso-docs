@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 9, baris terakhir (penyimpangan prosedur)",
+      "masalah": "Butir sweep 1c sudah dikerjakan, tetapi penggantinya mempersempit cakupan. Sebelum sweep, 'Personel Commercial' mencakup VP Commercial dan Business Development. Sesudah sweep hanya Business Development. Sumber berlaku umum untuk penyimpangan apa pun. Penyusun sudah mencatat ini di notes bagian Sweep. Tidak ada fakta baru. Usul: 'Business Development atau VP Commercial perlu menyimpang dari prosedur', atau kalimat tanpa subjek terbatas.",
+      "bukti": "Sesudah: \"Business Development perlu menyimpang dari prosedur | Business Development memperoleh persetujuan VP Commercial atau pihak yang berwenang ...\". Sumber 19Hex8udn1JDG4NKY7hZaODjroHeHwMM0 (transkripsi context/audit commercial baris 888): \"Penyimpangan terhadap prosedur harus mendapatkan persetujuan dari VP Commercial atau pihak yang berwenang.\""
+    },
+    {
+      "lokasi": "Conclusion kalimat 1",
+      "masalah": "Sumber menulis 'seluruh anggota tim Commercial'. Sesudah sweep, Brand & Marketing tidak lagi tercakup. Rumusan baru selaras dengan Scope kalimat 1 ('berlaku untuk Business Development dan VP Commercial'), jadi dampaknya kecil. Penyusun mencatatnya di notes sebagai penyempitan yang diputus owner. Alternatif yang tetap setia pada sumber: 'anggota unit Commercial', karena istilah Commercial sudah ada di tabel Definisi.",
+      "bukti": "Sesudah: \"... evaluasi kinerja dan probation Business Development dan VP Commercial.\"; sumber baris 888: \"Seluruh anggota tim Commercial wajib mematuhi SOP ini. Kepatuhan terhadap SOP menjadi bagian dari evaluasi kinerja dan probation.\""
+    },
+    {
+      "lokasi": "Butir 4.8 kalimat 3 dan butir 4.6 kalimat 2",
+      "masalah": "Butir 4.15 sudah dihapus, tetapi dua kalimat penggantinya masih terbaca seperti catatan status penyusunan, bukan kebijakan. Pola ini sama dengan butir 4.7, 4.11, dan 4.13, jadi bukan pola baru. Urutan kalimat di 4.8 juga terbalik: penolakan ditulis sebelum review internal. Usul: 'VP Commercial melakukan review internal dan menolak penawaran yang belum lengkap (USULAN untuk pelaku review).', mengikuti gaya label langsung di butir 4.5.",
+      "bukti": "\"VP Commercial menolak penawaran yang belum lengkap. VP Commercial melakukan review internal; penunjukan pelaku ini berstatus (USULAN).\"; \"Keterlibatan Finance dan Accounting & Tax ini berstatus (USULAN).\""
+    },
+    {
+      "lokasi": "Tabel peran VP Commercial; langkah 6.5.5",
+      "masalah": "Tabel peran merujuk 'butir 4.8' sebagai dasar tugas menyimpan Catatan persetujuan penawaran, padahal butir 4.8 tidak menyebut penyimpanan. Langkah 6.5.5 kehilangan rujukan ke label USULAN. Label untuk pelaku penyimpanan kini hanya ada di bagian 11 ('Rekaman baru (USULAN) ... pemilik VP Commercial'). Bukan fakta baru, karena 4.15 lama sudah memuatnya. Usul: rujuk bagian 11 saja.",
+      "bukti": "Peran: \"... menyimpan Catatan persetujuan penawaran (butir 4.8 dan bagian 11).\"; 6.5.5: \"Simpan Catatan persetujuan penawaran: ... keputusan pengecualian komersial.\" (PIC VP Commercial, tanpa label)."
+    },
+    {
+      "lokasi": "Bagian 11 Rekaman, baris Catatan review scope",
+      "masalah": "Label (USULAN) berpindah dari 'SNX-COM-FRM-01 adalah calon bentuknya' ke 'Rekaman baru'. Calon bentuk tetap berlabel di tabel Dokumen terkait ('Calon bentuk Catatan review scope (USULAN)') dan memakai kata 'calon', jadi tidak ada fakta yang lepas label.",
+      "bukti": "Sebelum: \"... SNX-COM-FRM-01 adalah calon bentuknya (USULAN)\"; sesudah: \"Rekaman baru (USULAN). ... calon bentuknya SNX-COM-FRM-01\"."
+    },
+    {
+      "lokasi": "Cakupan sweep (cek 1, 3, dan 4)",
+      "masalah": "Hanya informasi. Diff struktural antara salinan spec sebelum sweep (/tmp/pen-COM-SOP-02/COM-SOP-02.before-sweep.json) dan specs/COM-SOP-02.json berisi 19 kunci berubah. Semuanya masuk butir 1a, 1b, atau 1c. Meta, approval, flow, SLA, dan klausul ISO tidak berubah. Ketiga sub-butir sudah dikerjakan dan tidak ada butir yang terlewat. Spec bersih dari '4.15', 'Personel', em-dash, en-dash, dan rujukan internal AI. Hitungan '(USULAN)' sebanyak 17 cocok dengan notes. Uji render, lint, validate, dan blankscan tidak dijalankan ulang oleh pemeriksa karena batas tulis.",
+      "bukti": "Skrip pembanding JSON python3 -I (baca saja); hitungan em-dash 0, en-dash 0; grep 4.15/Personel/SKILL_/DEC-/HANDOVER/Claude/Altair/staging: nihil."
+    }
+  ]
+}

@@ -225,7 +225,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-OPS-PRC-01",
    "out_path": "out/07_Ops/SNX-OPS-PRC-01 Operations Business Process Flow (Rev00 DRAFT).docx",
    "sources": [
@@ -250,7 +250,7 @@
    "loops": 0,
    "usulan_count": 5,
    "open_items": [],
-   "updated_at": "2026-10-15T00:48:23Z",
+   "updated_at": "2026-10-15T00:50:49Z",
    "pen_agent": "aec5c163a887d4bfe",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -640,7 +640,7 @@
    "dept": "ISMS",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-ISMS-PLN-01",
    "out_path": "out/08_ISMS/SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx",
    "sources": [
@@ -663,11 +663,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 1,
-   "usulan_count": 18,
+   "usulan_count": 19,
    "open_items": [
     "Checklist baris 91 menautkan berkas ISMS-FRM-02 (1ILWYIkw...), bukan PLN-01; dipakai sumber worklist 1vwD5tOR... (SNX-ISMS-PLN-01_Business_Continuity_IT_Recovery_Plan.docx)."
    ],
-   "updated_at": "2026-10-15T00:49:16Z",
+   "updated_at": "2026-10-15T00:50:34Z",
    "pen_agent": "a3949a67482998148",
    "ooxml": "PASSED",
    "fix_queued": "0",
@@ -910,10 +910,10 @@
     "Sweep (c): r2 nonblocking, kasus HRGA Officer bagian 9 bertentangan dengan 4.4 (HR Manager memeriksa usulannya sendiri); serah terima 6.3 ke 6.4 belum lengkap",
     "Residu mutu (sweep nonblocking): mutasi kini bentrok dengan 4.9; pasif baru; penerima tanggapan bagian 9; berkas usulan belum didefinisikan; NOC/SOC/SD/PM tanpa definisi"
    ],
-   "updated_at": "2026-10-15T00:49:39Z",
+   "updated_at": "2026-10-15T00:49:44Z",
    "pen_agent": "a2cb5b7e1e129cb63",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 23,
@@ -923,7 +923,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-12",
    "out_path": "out/02_HR/SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx",
    "sources": [
@@ -941,7 +941,7 @@
     "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking)",
     "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking). qa verify.json diperbaiki sintaksis saja (kurung kurawal ganda di akhir) oleh orkestrator"
    ],
-   "updated_at": "2026-10-15T00:45:43Z",
+   "updated_at": "2026-10-15T00:50:49Z",
    "pen_agent": "a03372a682640aa2e",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1074,7 +1074,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-COM-SOP-02",
    "out_path": "out/05_Commercial/SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx",
    "sources": [
@@ -1096,7 +1096,7 @@
    "open_items": [
     "Sweep (b): pengantar 6.1-6.3 pasif tanpa pelaku; 4.15 jadi wadah USULAN; istilah Personel Commercial tidak ada di bagian 5 (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:47:41Z",
+   "updated_at": "2026-10-15T00:51:23Z",
    "pen_agent": "a047bde100d8c7081",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1586,7 +1586,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-REG-01",
    "out_path": "out/04_Legal/SNX-LEG-REG-01 Company Licenses & Permits Register (Rev00 DRAFT).docx",
    "sources": [
@@ -1603,9 +1603,10 @@
    "open_items": [
     "Sweep (b): Departemen Legal tidak ada di tabel Peran; dua kalimat pasif; istilah berganti (verify nonblocking)"
    ],
-   "updated_at": "2026-10-14T23:26:59Z",
+   "updated_at": "2026-10-15T00:49:44Z",
    "pen_agent": "a3ea3b013a1539209",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 47,
@@ -1615,7 +1616,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-FRM-01",
    "out_path": "out/04_Legal/SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx",
    "sources": [
@@ -1632,10 +1633,11 @@
    "open_items": [
     "Sweep (b): r3 nonblocking, klien vs pelanggan, kualifier C1.1 terpangkas, pasif, pengulangan Istilah dan Petunjuk"
    ],
-   "updated_at": "2026-10-14T23:49:47Z",
+   "updated_at": "2026-10-15T00:49:45Z",
    "pen_agent": "a58a04d78c3d99607",
    "ooxml": "PASSED",
-   "fix_queued": "0"
+   "fix_queued": "0",
+   "sweep": "1"
   },
   {
    "wl_index": 48,
@@ -2352,7 +2354,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-REG-01",
    "out_path": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2369,7 +2371,7 @@
    "open_items": [
     "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
    ],
-   "updated_at": "2026-10-15T00:47:45Z",
+   "updated_at": "2026-10-15T00:50:04Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "a3d6b69aee3386660",
