@@ -1,0 +1,9 @@
+{
+ "file": "out/03_FAT/SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "15 butir (USULAN) menunggu ACC"
+ ]
+}

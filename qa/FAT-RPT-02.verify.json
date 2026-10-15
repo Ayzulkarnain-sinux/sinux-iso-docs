@@ -1,0 +1,49 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Tujuan dan Ruang Lingkup, tabel enam proses (baris Accounting and Financial Report); Dokumen Terkait baris SNX-FAT-SOP-06",
+      "masalah": "Status 'dalam peninjauan' untuk SOP Accounting and Financial Report sudah basi. Nomor SNX-FAT-SOP-06 benar (ledger promoted, W7b), tetapi checklist baris 27 sudah memberi berkas tim (checked true), bukan 'on review'. Bukan nama, jabatan, angka, atau sistem. Masuk sweep sesudah W7b DONE, sama dengan temuan verifikator FAT-FRM-01.",
+      "bukti": "config/checklist.json baris 27: link_text URL Google Doc, fileId 18OGetq0..., checked true; baris 24 dan 25: link_text 'on review'. ledger.json promoted FAT-SOP-06 / SNX-FAT-SOP-06 wave W7b. Kalimat dokumen: 'Accounting and Financial Report | SNX-FAT-SOP-06, dalam peninjauan' dan 'SNX-FAT-SOP-06 | Accounting and Financial Report. Dalam peninjauan.'"
+    },
+    {
+      "lokasi": "Ketentuan Penggunaan butir 11; Petunjuk Pengisian butir 5; Istilah, Nilai Status",
+      "masalah": "Pelaku penetapan status Terbuka dan Menunggu Verifikasi tidak disebut. Butir 11 hanya mengatur status Ditutup. Peran Finance Staff (mengisi tabel) menutupi pengisian kolom, tetapi kapan status berganti ke Menunggu Verifikasi tidak punya pelaku eksplisit. Celah kecil prosedur, bukan fakta.",
+      "bukti": "Butir 11: 'Finance Lead menetapkan status Ditutup bila tahap sudah berlanjut ... Finance Staff mengisi Status dan Tanggal Ditutup di Tabel 2.' Petunjuk 5: 'Status memuat satu nilai dari bagian Istilah.'"
+    },
+    {
+      "lokasi": "Ketentuan Penggunaan butir 6 dan 15",
+      "masalah": "Dua rujukan menyebut isi SNX-FAT-SOP-01 sebagai sudah tertulis, padahal sebagian berlabel (USULAN) di dokumen itu: titik awal TOP standar di butir 4.8 dan penetapan pelaku butir 4.14 (lihat butir 4.15 SOP-01). Kalimat RPT-02 tidak salah, dan butir 15 RPT-02 sendiri sudah berlabel USULAN; cukup disadari saat SOP-01 diputus.",
+      "bukti": "specs/FAT-SOP-01.json butir 4.8: 'TOP standar adalah 14 hari kalender sejak tanggal invoice (USULAN)'; butir 4.15: 'Penetapan pelaku pada butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16 ... berstatus (USULAN)'. RPT-02 butir 6: 'Contoh persyaratan yang sudah tertulis di prosedur FAT: ... TOP standar invoice (SNX-FAT-SOP-01 butir 4.8).'"
+    },
+    {
+      "lokasi": "Isi Log, paragraf pembuka",
+      "masalah": "Pengulangan isi antarbagian (RUNBOOK 6a.6): kalimat nomor baris mengulang Petunjuk Pengisian butir 1.",
+      "bukti": "Isi Log: 'Nomor baris sudah terisi dan sama di Tabel 1, Tabel 2, dan Tabel 3.' Petunjuk butir 1: 'Kolom No. di Tabel 1, Tabel 2, dan Tabel 3 sudah terisi 1 sampai 5.'"
+    },
+    {
+      "lokasi": "Tujuan, kalimat 'Hasil yang dijaga'",
+      "masalah": "Satu kalimat sekitar 40 kata dengan dua daftar empat butir yang disambung 'dan'; agak berat dibaca. Gaya, bukan pelanggaran jelas.",
+      "bukti": "'Hasil yang dijaga: setiap bottleneck punya nomor catatan, support yang diminta, tanggal tahap berlanjut, dan status yang dapat ditelusuri, dan setiap ketidaksesuaian punya penyebab, tindakan korektif, Penanggung Jawab, dan hasil verifikasi efektivitas.'"
+    },
+    {
+      "lokasi": "Ketentuan Penggunaan butir 4; Istilah baris (USULAN)",
+      "masalah": "Atribusi agak kabur: 'pimpinan SINUX'. Sumber (config/defaults.json ticketing) menyebut owner. Dapat dipertahankan karena dokumen tidak memuat nama owner di badan, tetapi lebih tegas bila memakai jabatan (Direksi atau Direktur Utama).",
+      "bukti": "Butir 4: 'batas lingkup generalist belum dirinci pimpinan SINUX (USULAN)'. defaults.json ticketing: 'Batas lingkup generalist belum dirinci owner'."
+    },
+    {
+      "lokasi": "Butir (g) context/audit",
+      "masalah": "Dokumen T2 tanpa fileId, jadi grep fileId tidak berlaku. Notes bagian 5 menjelaskan grep judul (satu hit di sintesis baris 756) dan menilai cacat SOP Billing dan SOP Tax satu per satu. Tercatat cukup.",
+      "bukti": "config/checklist.json baris 33 fileId null; context/audit/iso-sinux-supdocs-sintesis-2026-10-14.md baris 756; notes/FAT-RPT-02.md bagian 5."
+    }
+  ],
+  "diperiksa": {
+    "kriteria": "Description baris 33 terpenuhi: Tabel 1 Log Bottleneck dan Support (Proses FAT, Tahap yang Tertahan, Uraian Bottleneck, Support yang Diperlukan, Diminta kepada), Tabel 2 tindak lanjut, Tabel 3 ketidaksesuaian, Tabel 4 tinjauan bulanan.",
+    "T2": "Semua sel data kosong, hanya kolom No. terisi 1 sampai 5, tanpa baris contoh. Nol nama di badan; Samuel Kristanto Utomo / President Director hanya di blok Approval, badan memakai Direktur Utama (data_conflicts).",
+    "rujukan_silang": "SNX-FAT-SOP-01 butir 4.2, 4.8, 4.11, 4.14, 6.1, retensi 10 tahun; SNX-FAT-SOP-04 butir 4.4 dan definisi Folder arsip FAT; SNX-FAT-SOP-05 bagian 8 (1 hari per tahap) dan tahap 'Review dan persetujuan'; SNX-HR-ORG-01 K-13, JA-01, kalimat delegasi; GLPI = SINUX Service Hub (defaults ticketing); enam proses = checklist baris 23 sampai 28. Semua cocok.",
+    "peran": "Daftar butir Ketentuan per peran di tabel Peran cocok dengan pelaku butir 1 sampai 15; Rekaman memakai Finance Staff dan Finance Lead yang sama.",
+    "batas_keras": "Nol rujukan internal AI, nol kredensial, status Draft, tanggal efektif dan tanda tangan kosong, nol em-dash dan en-dash, nol kutip penekanan, nol tebal di badan. 16 label USULAN termasuk Acuan ISO; klausul ISO 9001 10.2, 7.1.1, 7.5.3 dan ISO/IEC 27001:2022 10.2, A 5.33, A 5.12 benar penomorannya.",
+    "lint": "qa/FAT-RPT-02.lint.json pass true, fails kosong."
+  }
+}

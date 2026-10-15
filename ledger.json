@@ -1834,17 +1834,18 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-FAT-RPT-02",
-   "out_path": null,
+   "out_path": "out/03_FAT/SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 16,
    "open_items": [],
-   "updated_at": "2026-10-14T23:46:55Z",
-   "pen_agent": "aee3e2330d196bdfb"
+   "updated_at": "2026-10-15T00:03:03Z",
+   "pen_agent": "aee3e2330d196bdfb",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 57,
@@ -1862,8 +1863,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 20,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:00:16Z",
+   "open_items": [
+    "Sweep (b): Line Manager Legal dan Staff Legal disebut nama jabatan (di HR-ORG-01 nama peran, pemetaan USULAN); pemilik rekaman bentrok dengan LEG-SOP-03"
+   ],
+   "updated_at": "2026-10-15T00:00:19Z",
    "pen_agent": "aa740b69850044e56",
    "ooxml": "PASSED"
   },
@@ -1955,7 +1958,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-REG-01",
    "out_path": null,
    "sources": [],
@@ -1964,7 +1967,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-15T00:00:35Z",
+   "pen_agent": "a9ea62060bd8ee27b"
   },
   {
    "wl_index": 63,
