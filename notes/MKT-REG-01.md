@@ -265,3 +265,28 @@ nihil (subst_diff kosong).
 - .sections[5].blocks[6].p (butir 6.7): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[5].blocks[9].p (butir 6.10): tanpa label; instruksi mekanis pengisian kolom; penetapan Approver (USULAN) tidak dinyatakan ulang.
 - .sections[5].blocks[10].p (butir 6.11): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[2].blocks[0].table.rows[11][1]: lengkap (definisi; contoh jenis content dari Ruang Lingkup, dan butir 6.3 tetap menunjuk daftar di bagian Ruang Lingkup)
+- .sections[2].blocks[0].table.rows[14][1]: lengkap (kalimat penunjuk lokasi "Jenis yang tercakup ada di bagian 2" dibuang sesuai STYLE §3.2; daftar tetap ada di Ruang Lingkup)
+- .sections[3].blocks[11].table.rows[1][2]: lengkap (kolom dasar penunjukan; target availability SNX-OPS-SOP-05 butir 4.1 tetap dirujuk di butir 4.12 yang memuat aturan tolak)
+- .sections[3].blocks[14].p: lengkap (pelaku Brand & Marketing, benda yang disimpan, lokasi pada tabel Record (heading Rekaman, jembatan Record (rekaman) di Definisi), lokasi file final di Tabel 1, label USULAN)
+- .sections[3].blocks[16].p: lengkap (lima nilai, nama tabel Status Publikasi tetap disebut, label USULAN)
+- .sections[4].blocks[1].table.rows[0][1]: lengkap (rujukan beruntun dibuang; tugas tertulis di sel, batas tanggal publikasi tetap dirujuk butir 6.16 (butir 4.7), urutan catat sebelum Reviewer tercermin di 6.13 dan 6.14, label USULAN)
+- .sections[4].blocks[1].table.rows[1][1]: dilengkapi (pihak alternatif Reviewer: "dan Reviewer selain dirinya untuk materi tertentu", disalin dari butir 4.4)
+- .sections[4].blocks[1].table.rows[2][1]: lengkap (PIC bertanggung jawab atas satu materi; penetapan PIC ada di butir 4.3 dan sel VP Commercial)
+- .sections[4].blocks[1].table.rows[3][1]: lengkap (Reviewer meninjau sebelum Approver memutuskan; penetapan Reviewer di butir 4.4 dan butir 6.9)
+- .sections[4].blocks[1].table.rows[4][1]: rujukan dikembalikan (kriteria tidak menyetujui versi dengan claim tanpa bukti, tanpa hasil verifikasi, atau ditolak: "sesuai butir 4.13")
+- .sections[4].blocks[1].table.rows[5][1]: lengkap (pelaku, saat penurunan ke PUBLIC, pencatatan di SNX-ISMS-REG-01, pemegang VP Commercial, label USULAN)
+- .sections[4].blocks[1].table.rows[6][1]: rujukan dikembalikan (kriteria tolak claim availability atau SLA dan bahasa kompensasi: "sesuai butir 4.12")
+- .sections[4].blocks[1].table.rows[7][1]: lengkap (jenis claim sesuai tabel butir 4.11, label USULAN; aturan pemeriksaan di sel Pemverifikasi yang merujuk butir 4.12)
+- .sections[4].blocks[1].table.rows[8][1]: lengkap (jenis claim kinerja layanan sesuai tabel butir 4.11, label USULAN; aturan tolak di sel Pemverifikasi yang merujuk butir 4.12)
+- .sections[4].blocks[1].table.rows[9][1]: lengkap (jenis claim sesuai tabel butir 4.11, label USULAN)
+- .sections[5].blocks[0].p: lengkap (satu baris per versi per channel, ID persetujuan, ID yang sama di Tabel 1 sampai 3 melalui definisi ID persetujuan, nomor claim yang sama di butir 6.21, label USULAN)
+- .sections[5].blocks[2].p: lengkap (rujukan tetap ada sebagai "bagian Ruang Lingkup")
+- .sections[5].blocks[6].p: lengkap (jalur folder dan nama file final di kolom Lokasi File Final, label USULAN)
+- .sections[5].blocks[9].p: lengkap (jabatan Approver; penetapan Approver dirujuk butir 6.9 (butir 4.4) di paragraf sebelumnya)
+- .sections[5].blocks[10].p: lengkap (urutan setelah persetujuan, tanggal lengkap, label USULAN)
+- .sections[5].blocks[17].p: lengkap (satu baris per claim, ID persetujuan di kolom ID Materi)
+- .sections[5].blocks[19].p: lengkap (nama dan lokasi, tanpa isi)
+- .sections[5].blocks[23].p: dilengkapi (", tanpa isinya", disalin dari butir 4.10)

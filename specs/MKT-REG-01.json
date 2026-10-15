@@ -346,7 +346,7 @@
        ],
        [
         "VP Commercial",
-        "Pemilik register menurut blok Identity. Memegang peran Approver, Reviewer, dan Pemilik informasi, menunjuk PIC selain Brand & Marketing, serta menunjuk Pemverifikasi untuk claim jenis lain (USULAN)."
+        "Pemilik register menurut blok Identity. Memegang peran Approver, Reviewer, dan Pemilik informasi, menunjuk PIC selain Brand & Marketing dan Reviewer selain dirinya untuk materi tertentu, serta menunjuk Pemverifikasi untuk claim jenis lain (USULAN)."
        ],
        [
         "PIC",
@@ -358,7 +358,7 @@
        ],
        [
         "Approver",
-        "Menyetujui satu versi materi secara tertulis, memutuskan penarikan materi, dan meninjau materi yang terbit sebelum register berlaku."
+        "Menyetujui satu versi materi secara tertulis sesuai butir 4.13, memutuskan penarikan materi, dan meninjau materi yang terbit sebelum register berlaku."
        ],
        [
         "Pemilik informasi",
@@ -366,7 +366,7 @@
        ],
        [
         "Pemverifikasi",
-        "Memeriksa claim terhadap sumber atau bukti pendukungnya, lalu menyampaikan hasilnya kepada Brand & Marketing (USULAN)."
+        "Memeriksa claim terhadap sumber atau bukti pendukungnya sesuai butir 4.12, lalu menyampaikan hasilnya kepada Brand & Marketing (USULAN)."
        ],
        [
         "Manager of Product Tech",
@@ -461,7 +461,7 @@
      "p": "6.23 Di kolom Tanggal Verifikasi, tulis tanggal lengkap hasil itu."
     },
     {
-     "p": "6.24 Di kolom Bukti Verifikasi, tulis nama dan lokasi bukti verifikasi."
+     "p": "6.24 Di kolom Bukti Verifikasi, tulis nama dan lokasi bukti verifikasi, tanpa isinya."
     },
     {
      "p": "6.25 Biarkan kosong sel yang datanya belum ada. Ini termasuk seluruh Tabel 4 dan Tabel 5 untuk materi tanpa claim, serta kolom Tanggal Ditarik dan Alasan Penarikan untuk materi yang tidak ditarik."

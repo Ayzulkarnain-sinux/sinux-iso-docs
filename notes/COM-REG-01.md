@@ -231,3 +231,22 @@ nihil (subst_diff build kosong).
 - .sections[5].blocks[10].p (butir 6.11): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[5].blocks[12].p (butir 6.13): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[7].blocks[2].table.rows[1][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+
+### W10 audit pointer
+- .sections[2].blocks[0].table.rows[7][1]: lengkap (kalimat penunjuk lokasi "diatur di butir 4.10" dibuang sesuai STYLE §3.2; kriteria, pelaku, dan label tetap ada di butir 4.10)
+- .sections[4].blocks[1].table.rows[0][1]: lengkap (pelaku Penerima, aksi meneruskan, tujuan Business Development)
+- .sections[4].blocks[1].table.rows[1][1]: lengkap (pencatatan Tabel 1 sampai 4, PIC, tindakan, ticket, status, konfirmasi, eskalasi, label USULAN)
+- .sections[4].blocks[1].table.rows[2][1]: rujukan dikembalikan (syarat eskalasi ke COO, yaitu keputusan di luar wewenang VP Commercial menurut delegasi tertulis: "sesuai butir 4.11")
+- .sections[4].blocks[1].table.rows[3][1]: lengkap (pelaku PIC, aksi tindakan atas kasus yang ditunjuk)
+- .sections[4].blocks[1].table.rows[4][1]: lengkap (COO memutuskan keluhan yang dieskalasi VP Commercial, label USULAN; syarat eskalasi milik VP Commercial ada di sel VP Commercial dan butir 4.11)
+- .sections[5].blocks[0].p: lengkap (pelaku Penerima, aksi meneruskan, tujuan Business Development)
+- .sections[5].blocks[1].p: rujukan dikembalikan (aturan satu baris untuk satu kasus dari satu customer dan nomor baris yang sama di Tabel 1 sampai 4: "sesuai butir 4.1")
+- .sections[5].blocks[7].p: lengkap (PIC ditunjuk VP Commercial, jabatan ditulis di Tabel 2, bukan nama orang, label USULAN)
+- .sections[5].blocks[8].p: lengkap (syarat punya ticket, nomor ditulis di kolom Nomor Ticket, label USULAN; letak sistem ticket ada di butir 4.8 dan tabel Rekaman)
+- .sections[5].blocks[9].p: lengkap (tindakan PIC dan tanggal, pengecualian keputusan tanpa tindakan beserta alasan, label USULAN)
+- .sections[5].blocks[10].p: lengkap (tiga nilai Status, Selesai hanya setelah ditetapkan VP Commercial, label USULAN)
+- .sections[5].blocks[12].p: lengkap (tanggal dan saluran konfirmasi di Tabel 3, label USULAN)
+- .sections[5].blocks[15].p: rujukan dikembalikan (pemicu eskalasi, batas "segera", kriteria keluhan kritis, dan syarat eskalasi ke COO: "sesuai butir 4.9 sampai 4.11")
+- .sections[7].blocks[2].table.rows[0][1]: dilengkapi (klasifikasi INTERNAL selama register kosong, disalin dari butir 4.12; label USULAN tetap)
+- .sections[7].blocks[2].table.rows[1][1]: lengkap (Zammad untuk ticket Operation, GLPI untuk ticket lain, pemilik PIC, label USULAN)
+- .sections[7].blocks[5].table.rows[4][2]: lengkap (klasifikasi RESTRICTED (Internal) untuk register berisi data customer sebagai bukti klausul 5.12, label USULAN; aturan lengkap ada di butir 4.12)

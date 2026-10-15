@@ -6,7 +6,7 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 1609,
+  "words": 1624,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
@@ -44,12 +44,12 @@
   }
  },
  "pdf": "/tmp/claude-0/w10/pdf/new/SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).pdf",
- "pages": 11,
+ "pages": 12,
  "blank": [],
  "form": {
   "isi_heading": "Isi Register",
   "pages_bed1bb6": 12,
-  "pages_w10": 11,
+  "pages_w10": 12,
   "isi_page_bed1bb6": 9,
   "isi_page_w10": 8
  },

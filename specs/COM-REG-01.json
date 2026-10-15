@@ -253,7 +253,7 @@
        ],
        [
         "VP Commercial",
-        "Pemilik dan pengelola register. Menunjuk PIC, menetapkan status Selesai, menetapkan apakah suatu keluhan kritis, menerima eskalasi keluhan kritis, dan mengeskalasi keluhan kepada COO."
+        "Pemilik dan pengelola register. Menunjuk PIC, menetapkan status Selesai, menetapkan apakah suatu keluhan kritis, menerima eskalasi keluhan kritis, dan mengeskalasi keluhan kepada COO sesuai butir 4.11."
        ],
        [
         "PIC",
@@ -278,7 +278,7 @@
      "p": "6.1 Penerima meneruskan feedback atau keluhan customer kepada Business Development."
     },
     {
-     "p": "6.2 Tulis satu baris di Tabel 1 untuk setiap feedback atau keluhan yang diterima."
+     "p": "6.2 Tulis satu baris di Tabel 1 untuk setiap feedback atau keluhan yang diterima, sesuai butir 4.1."
     },
     {
      "p": "6.3 Di kolom Tanggal Diterima, tulis tanggal feedback atau keluhan diterima Penerima."
@@ -320,7 +320,7 @@
      "p": "6.15 Jika customer menanggapi, tulis tanggapannya di kolom Tanggapan Customer."
     },
     {
-     "p": "6.16 Saat keluhan dieskalasi, tulis alasan eskalasi, tujuan eskalasi, dan tanggalnya di Tabel 4."
+     "p": "6.16 Saat keluhan dieskalasi sesuai butir 4.9 sampai 4.11, tulis alasan eskalasi, tujuan eskalasi, dan tanggalnya di Tabel 4."
     },
     {
      "p": "6.17 Tulis keputusan di kolom Hasil Eskalasi setelah VP Commercial atau COO memutuskan."
@@ -762,7 +762,7 @@
       "rows": [
        [
         "Register ini: Tabel 1 sampai Tabel 4",
-        "Folder Google Drive departemen Commercial. Pemilik dan pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi RESTRICTED (Internal) setelah berisi data customer (USULAN).",
+        "Folder Google Drive departemen Commercial. Pemilik dan pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi INTERNAL selama kosong dan RESTRICTED (Internal) setelah berisi data customer (USULAN).",
         "Belum ditetapkan"
        ],
        [

@@ -219,3 +219,16 @@ Lebar kolom Tabel 1 (Uraian Bottleneck) dan Tabel 3 (Corrective Action, Hasil Ve
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[4].blocks[2].p (butir 3): label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
 - .sections[6].blocks[0].table.rows[1][1]: tanpa label; deskripsi dokumen terkait (SNX-FAT-SOP-04), bukan aturan form ini.
+
+### W10 audit pointer
+- .sections[1].blocks[1].table.rows[14][1]: lengkap (definisi; lama dan titik awal TOP standar tetap dirujuk ke SNX-FAT-SOP-01 butir 4.8 di Ketentuan butir 6 dan tabel Dokumen Terkait)
+- .sections[2].blocks[6].p: lengkap (pelaku Finance Staff, nilai Ya atau Tidak, kolom Ketidaksesuaian Tabel 2; "penetapan itu" menunjuk butir 6 tepat di atasnya)
+- .sections[3].blocks[0].table.rows[0][1]: lengkap (kalimat penunjuk ke definisi dibuang; pemetaan jabatan Finance Staff tetap ada di tabel Istilah, rujukan Ketentuan tetap)
+- .sections[3].blocks[0].table.rows[1][1]: lengkap (kalimat penunjuk ke definisi dibuang; pemetaan Finance Lead dan label USULAN tetap ada di tabel Istilah, rujukan Ketentuan tetap)
+- .sections[4].blocks[2].p: lengkap (alternatif nomor ticket GLPI di kolom Diminta kepada dan label USULAN; catatan batas generalist tetap di Ketentuan butir 4)
+- .sections[4].blocks[4].p: lengkap (Ya atau Tidak menurut penetapan Finance Lead, nilai dari tabel Nilai Status, Tanggal Ditutup = tanggal Finance Lead menetapkan Ditutup; syarat penutupan milik Finance Lead tetap di Ketentuan butir 11)
+- .sections[6].blocks[0].table.rows[1][1]: lengkap (penunjuk balik "dirujuk di Ketentuan butir 14" dibuang; Ketentuan butir 14 tetap merujuk SNX-FAT-SOP-04 butir 4.4)
+- .sections[6].blocks[0].table.rows[2][1]: lengkap (penunjuk balik dibuang; Ketentuan butir 6 tetap memuat batas 1 hari dengan rujukan SNX-FAT-SOP-05 bagian 8)
+- .sections[6].blocks[0].table.rows[6][1]: lengkap (pemetaan Finance Lead dan Finance Staff butir K-13 tetap disebut; definisinya ada di tabel Istilah)
+- .sections[7].blocks[1].table.rows[0][1]: lengkap (lokasi Folder arsip FAT, pencatat, pemilik, klasifikasi, label USULAN; langkah simpan sesuai SNX-FAT-SOP-04 butir 4.4 tetap di Ketentuan butir 14)
+- .sections[7].blocks[1].table.rows[1][1]: lengkap (lokasi bukti, penulis Finance Staff, kolom Hasil Verifikasi Efektivitas, pemilik, label USULAN)
