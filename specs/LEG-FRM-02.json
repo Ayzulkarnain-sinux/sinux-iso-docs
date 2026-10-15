@@ -90,7 +90,7 @@
        ],
        [
         "Persetujuan Legal",
-        "Keputusan internal Line Manager Legal bahwa review hukum atas kontrak sudah dilakukan dan hasilnya sudah disampaikan (SNX-LEG-SOP-02)."
+        "Keputusan internal Line Manager Legal bahwa telaah hukum atas kontrak sudah dilakukan dan hasilnya sudah disampaikan (SNX-LEG-SOP-02)."
        ],
        [
         "PIC Internal",
@@ -173,11 +173,11 @@
       "rows": [
        [
         "Staff Legal",
-        "Mengisi lembar dan menyerahkannya ke Line Manager Legal (Petunjuk Pengisian butir 1 sampai 12). Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+        "Mengisi lembar dan menyerahkannya ke Line Manager Legal (Petunjuk Pengisian butir 1 sampai 21). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
        ],
        [
         "Line Manager Legal",
-        "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 3 dan 13). Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+        "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 5 dan 22 sampai 24). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
        ],
        [
         "Unit Kerja Pemohon",
@@ -189,11 +189,11 @@
        ],
        [
         "Unit Kerja Terkait",
-        "Memberi masukan sesuai bidangnya atas aspek yang diminta Staff Legal (butir 7)."
+        "Memberi masukan sesuai bidangnya atas aspek yang diminta Staff Legal (butir 13)."
        ],
        [
         "Pejabat Berwenang",
-        "Mengonfirmasi dasar kewenangan penandatanganan SINUX (butir Daftar Periksa 9.2) dan menandatangani baris Disetujui oleh (butir 14, USULAN). Pemegang jabatannya mengikuti SNX-LEG-SOP-02."
+        "Mengonfirmasi dasar kewenangan penandatanganan SINUX (butir Daftar Periksa 9.2) dan menandatangani baris Disetujui oleh (butir 25, USULAN). Pemegang jabatannya mengikuti SNX-LEG-SOP-02."
        ]
       ]
      }
@@ -210,43 +210,76 @@
      "p": "1. Staff Legal membuat satu lembar dari form ini untuk tiap kontrak Vendor/Pemasok yang ditelaah, sebelum SINUX menandatangani kontrak itu."
     },
     {
-     "p": "2. Staff Legal mengisi tabel Informasi Kontrak dari kontrak dan dari permintaan Unit Kerja Pemohon. Nomor Referensi Permintaan memuat nomor di register permintaan Legal (SNX-LEG-SOP-02 butir 6.1). ID Supplier diisi bila Vendor/Pemasok tercatat di Daftar Supplier SNX-ISMS-FRM-03."
+     "p": "2. Staff Legal mengisi tabel Informasi Kontrak dari kontrak dan dari permintaan Unit Kerja Pemohon."
     },
     {
-     "p": "3. Staff Legal menulis Target Penyelesaian yang dikonfirmasi Line Manager Legal menurut SNX-LEG-SOP-02 bagian 8."
+     "p": "3. Staff Legal menulis di Nomor Referensi Permintaan nomor yang tercatat di register permintaan Legal (SNX-LEG-SOP-02 butir 6.1)."
     },
     {
-     "p": "4. Staff Legal mengisi tiga isian terakhir Informasi Kontrak. Akses memuat informasi dan sistem SINUX yang dapat dijangkau Vendor/Pemasok. Klasifikasi Informasi memuat tingkat klasifikasi informasi itu menurut SNX-ISMS-PRO-01. Tingkat Ketergantungan memuat uraian dampak bagi SINUX bila Vendor/Pemasok berhenti melayani. Staff Legal memakai ketiganya untuk memilih butir Daftar Periksa yang relevan."
+     "p": "4. Staff Legal menulis di ID Supplier kode supplier dari Daftar Supplier SNX-ISMS-FRM-03, bila Vendor/Pemasok tercatat di sana."
     },
     {
-     "p": "5. Staff Legal memeriksa tiap butir Daftar Periksa terhadap kontrak dan mengisi kolom Status dengan salah satu dari empat nilai di bagian Istilah. Untuk butir Tidak Relevan, Staff Legal menulis alasannya di kolom Catatan/Tindak Lanjut."
+     "p": "5. Staff Legal menulis di Target Penyelesaian target yang dikonfirmasi Line Manager Legal menurut SNX-LEG-SOP-02 bagian 8."
     },
     {
-     "p": "6. Staff Legal mengisi kolom Risiko untuk butir berstatus Perlu Tindak Lanjut atau Perlu Pembahasan, dengan Tinggi, Sedang, atau Rendah menurut SNX-LEG-SOP-02 butir 4.8 sampai 4.10."
+     "p": "6. Staff Legal menulis di Akses informasi dan sistem SINUX yang dapat dijangkau Vendor/Pemasok."
     },
     {
-     "p": "7. Staff Legal meminta masukan Unit Kerja Terkait atas aspek di luar bidang hukum, misalnya biaya, pajak, atau keamanan informasi, dan menulis masukannya di kolom Catatan/Tindak Lanjut (SNX-LEG-SOP-02 butir 6.3)."
+     "p": "7. Staff Legal menulis di Klasifikasi Informasi tingkat klasifikasi informasi itu menurut SNX-ISMS-PRO-01."
     },
     {
-     "p": "8. Staff Legal memberi tanda centang pada hasil di Ringkasan Hasil Penelaahan (USULAN). Pilihan Tidak terdapat isu berlaku bila semua butir berstatus Sesuai atau Tidak Relevan. Bila ada butir Perlu Tindak Lanjut, Staff Legal memilih Terdapat isu. Bila ada butir Perlu Pembahasan, Staff Legal memilih Diperlukan pembahasan."
+     "p": "8. Staff Legal menulis di Tingkat Ketergantungan uraian dampak bagi SINUX bila Vendor/Pemasok berhenti melayani."
     },
     {
-     "p": "9. Staff Legal menulis satu baris di tabel Temuan dan Tindak Lanjut untuk tiap butir berstatus Perlu Tindak Lanjut atau Perlu Pembahasan. Kolom Pihak yang Bertanggung Jawab memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+     "p": "9. Staff Legal memakai isian Akses, Klasifikasi Informasi, dan Tingkat Ketergantungan untuk memilih butir Daftar Periksa yang relevan."
     },
     {
-     "p": "10. Staff Legal memilih satu rekomendasi dan menulis dasarnya. Bila ada butir Risiko Tinggi yang belum diputus Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.12), Staff Legal memilih rekomendasi ketiga (USULAN)."
+     "p": "10. Staff Legal mengisi kolom Status tiap butir Daftar Periksa dari hasil menelaah kontrak, dengan salah satu dari empat nilai di bagian Istilah."
     },
     {
-     "p": "11. Staff Legal menulis lokasi kontrak, hasil telaah, dan korespondensi di tabel Lokasi Penyimpanan Dokumen. Lokasi memakai folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24)."
+     "p": "11. Staff Legal menulis alasan di kolom Catatan/Tindak Lanjut untuk butir berstatus Tidak Relevan."
     },
     {
-     "p": "12. Staff Legal menyerahkan lembar ke Line Manager Legal."
+     "p": "12. Staff Legal mengisi kolom Risiko untuk butir berstatus Perlu Tindak Lanjut atau Perlu Pembahasan, dengan Tinggi, Sedang, atau Rendah menurut SNX-LEG-SOP-02 butir 4.8 sampai 4.10."
     },
     {
-     "p": "13. Line Manager Legal memeriksa lembar, menandatangani baris Diperiksa oleh, lalu memberi Persetujuan Legal atau mengembalikan lembar untuk direvisi (SNX-LEG-SOP-02 butir 6.5)."
+     "p": "13. Staff Legal meminta masukan Unit Kerja Terkait atas aspek di luar bidang hukum, misalnya biaya, pajak, atau keamanan informasi (SNX-LEG-SOP-02 butir 6.3)."
     },
     {
-     "p": "14. Pejabat Berwenang menandatangani baris Disetujui oleh sebelum kontrak ditandatangani (USULAN)."
+     "p": "14. Staff Legal menulis masukan Unit Kerja Terkait di kolom Catatan/Tindak Lanjut."
+    },
+    {
+     "p": "15. Staff Legal memberi tanda centang pada hasil di tabel Hasil Telaah (USULAN). Pilihan Tidak terdapat isu berlaku bila semua butir berstatus Sesuai atau Tidak Relevan. Bila ada butir Perlu Tindak Lanjut, Staff Legal memilih Terdapat isu. Bila ada butir Perlu Pembahasan, Staff Legal memilih Diperlukan pembahasan."
+    },
+    {
+     "p": "16. Staff Legal menulis satu baris di tabel Temuan dan Tindak Lanjut untuk tiap butir berstatus Perlu Tindak Lanjut atau Perlu Pembahasan."
+    },
+    {
+     "p": "17. Staff Legal menulis di kolom Pihak yang Bertanggung Jawab nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+    },
+    {
+     "p": "18. Staff Legal memilih satu rekomendasi. Bila ada butir Risiko Tinggi yang belum diputus Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.12), Staff Legal memilih rekomendasi ketiga (USULAN)."
+    },
+    {
+     "p": "19. Staff Legal menulis dasar rekomendasi di tabel Dasar Rekomendasi."
+    },
+    {
+     "p": "20. Staff Legal menulis lokasi kontrak, hasil telaah, dan korespondensi di tabel Lokasi Penyimpanan Dokumen. Lokasi memakai folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24)."
+    },
+    {
+     "p": "21. Staff Legal menyerahkan lembar ke Line Manager Legal."
+    },
+    {
+     "p": "22. Line Manager Legal memeriksa lembar yang diserahkan Staff Legal."
+    },
+    {
+     "p": "23. Line Manager Legal menandatangani baris Diperiksa oleh."
+    },
+    {
+     "p": "24. Line Manager Legal memberi Persetujuan Legal atau mengembalikan lembar untuk direvisi (SNX-LEG-SOP-02 butir 6.5)."
+    },
+    {
+     "p": "25. Pejabat Berwenang menandatangani baris Disetujui oleh sebelum kontrak ditandatangani (USULAN)."
     }
    ]
   },
@@ -337,7 +370,7 @@
    ]
   },
   {
-   "h": "Daftar Periksa Penelaahan Kontrak",
+   "h": "Daftar Periksa Telaah Kontrak",
    "blocks": [
     {
      "p": "Kolom Hal yang Diperiksa, kolom Risiko, serta butir 4.5 Kekayaan Intelektual dan 6.4 Keadaan Kahar berstatus (USULAN). Kolom No memuat nomor butir yang dirujuk di bagian lain. Kolom Status, Risiko, dan Catatan/Tindak Lanjut diisi Staff Legal pada tiap lembar."
@@ -818,10 +851,10 @@
    ]
   },
   {
-   "h": "Ringkasan Hasil dan Rekomendasi",
+   "h": "Hasil Telaah dan Rekomendasi",
    "blocks": [
     {
-     "h2": "Hasil Penelaahan"
+     "h2": "Hasil Telaah"
     },
     {
      "p": "Beri tanda centang pada hasil yang sesuai."
@@ -830,7 +863,7 @@
      "table": {
       "header": [
        "Pilih",
-       "Hasil Penelaahan"
+       "Hasil Telaah"
       ],
       "widths_cm": [
        1.6,
@@ -1012,7 +1045,7 @@
         ""
        ],
        [
-        "Lokasi hasil penelaahan",
+        "Lokasi hasil telaah",
         ""
        ],
        [
@@ -1040,7 +1073,7 @@
       "rows": [
        [
         "SNX-LEG-SOP-02",
-        "Contract Review & Legal Approval. Prosedur yang memakai form ini: pengajuan permintaan (6.1), penyusunan dan review kontrak (6.3), klasifikasi risiko (4.8 sampai 4.12), Persetujuan Legal (6.5), dan persetujuan menurut DoA (6.7)."
+        "Contract Review & Legal Approval. Prosedur yang memakai form ini: pengajuan permintaan (6.1), penyusunan dan telaah kontrak (6.3), klasifikasi risiko (4.8 sampai 4.12), Persetujuan Legal (6.5), dan persetujuan menurut DoA (6.7)."
        ],
        [
         "SNX-LEG-FRM-01",
@@ -1064,7 +1097,7 @@
        ],
        [
         "SNX-HR-ORG-01",
-        "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal."
+        "Struktur Organisasi SINUX. Sumber pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance (JA-08, JA-09) (USULAN)."
        ]
       ]
      }
@@ -1091,13 +1124,13 @@
       ],
       "rows": [
        [
-        "Lembar terisi: Informasi Kontrak, Daftar Periksa, Ringkasan, Rekomendasi, dan Catatan Pemeriksaan",
-        "Lokasi ditulis di tabel Lokasi Penyimpanan Dokumen pada lembar itu (Petunjuk Pengisian butir 11). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+        "Lembar terisi: semua tabel dari Informasi Kontrak sampai Catatan Pemeriksaan dan Persetujuan",
+        "Lokasi ditulis di tabel Lokasi Penyimpanan Dokumen pada lembar itu (Petunjuk Pengisian butir 20). Pencatat: Staff Legal. Pemilik: Line Manager Legal (kategori 4 di SNX-LEG-SOP-03, USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
         "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
        ],
        [
         "Kontrak yang ditelaah dan korespondensi dengan Vendor/Pemasok",
-        "Lokasi ditulis di tabel yang sama. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN).",
+        "Lokasi ditulis di tabel yang sama. Pencatat: Staff Legal. Pemilik: Line Manager Legal (kategori 1 di SNX-LEG-SOP-03 untuk kontrak, USULAN).",
         "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
        ]
       ]
@@ -1125,7 +1158,7 @@
        [
         "ISO 9001:2015",
         "8.4.2 Jenis dan cakupan pengendalian",
-        "Staff Legal memilih butir Daftar Periksa yang relevan menurut akses Vendor/Pemasok dan tingkat ketergantungan SINUX (Petunjuk Pengisian butir 4)."
+        "Staff Legal memilih butir Daftar Periksa yang relevan menurut akses Vendor/Pemasok dan tingkat ketergantungan SINUX (Petunjuk Pengisian butir 9)."
        ],
        [
         "ISO 9001:2015",
