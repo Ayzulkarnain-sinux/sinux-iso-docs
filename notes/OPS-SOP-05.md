@@ -169,3 +169,26 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber:
 - Tanggal: tidak ada tanggal di dokumen; Effective Date dan tanda tangan kosong.
 - Tanpa sumber tertulis tetapi tidak berlabel: penugasan pelaku (asumsi 1 sampai 3 dan 7), definisi penjelas (asumsi 8), pengecualian lingkup (asumsi 9). Semuanya ada di notes dan open items (5, 9), bukan diklaim sebagai fakta sumber. Nama klausul ISO 8.2.3, 9.1.1, dan 8.16 berasal dari standar.
 - Tidak ada fakta yang saya anggap tak berasal dari sumber di luar daftar itu. Hal yang tidak saya ukur: rumus FRM-09 dan isi FRM-10 dibaca dari notes sibling dan teks Drive, bukan dari berkas xlsx atau docx FRM-09 dan FRM-10 yang didekode; SNX-OPS-SOP-04 dibaca dari spec sibling, bukan dari sumber Drive-nya.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Kesebelas label (USULAN) tetap. Pada Peran VP Commercial, intro butir 6.2, dan baris SLA Penyerahan data SLA layanan SOC, label kini berdiri sendiri di akhir sel; penjelasan di dalam kurung dipindah ke bagian berikut.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi Peringatan dini: "sudah melewati ambang di bagian 8 sebelum akhir bulan; langkahnya ada di butir 6.4." diganti fakta lengkap baris bagian 8: "sudah melewati 50% anggaran downtime sebelum akhir bulan." (baris itu tanpa USULAN).
+- Intro butir 6.2: "Batas waktu pengumpulan data ada di bagian 8." diganti fakta dua baris bagian 8: data availability dan ticket paling lambat hari kerja ke-3 bulan berikutnya, dan data SLA layanan SOC diserahkan Lead SOC pada batas yang sama (USULAN).
+- Bagian 8 baris Availability: "target standar yang dikomunikasikan ada di butir 4.1" diganti fakta butir 4.1 "99.9% per bulan" (butir 4.1 tanpa USULAN).
+- Catatan pemetaan dipindah (STYLE §3.8): Peran VP Commercial "(USULAN: sumber menulis Commercial tanpa jabatan)"; bagian 8 "(USULAN: sumber menyebut batas ini untuk pengumpulan data)", artinya batas hari kerja ke-3 untuk data SOC diturunkan dari batas pengumpulan data; intro butir 6.2 "(USULAN: batas generalist menunggu owner)" ditulis "batas cakupan generalist masih menunggu keputusan owner (USULAN)".
+
+### W10 selisih angka
+nihil (build tidak mencatat selisih numbers atau usul_butir).
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan"; pihak penyedia tetap "supplier".
+- Nomor butir 4.1 sampai 4.6 dan 6.1 sampai 6.6 serta judul bagian tidak berubah; SNX-OPS-FRM-10 merujuk butir SOP ini (G-2).
+- Calque "yang SINUX terima" (2 kali) menjadi "yang diterima SINUX". "respon" menjadi "respons" (ejaan baku). "Tindakan perbaikan" tetap istilah terdefinisi dokumen ini; padanannya corrective action.
+
+### W10 audit pointer
+- .definitions[9][1]: lengkap; ambang bagian 8 = "Saat downtime yang dihitung melewati 50% anggaran sebelum akhir bulan" (tanpa USULAN); "langkahnya ada di butir 6.4" hanya penunjuk, langkah tetap di 6.4.
+- .procedures[1].intro[0]: lengkap; memuat kedua batas bagian 8: "Pengumpulan data availability dan ticket | Paling lambat hari kerja ke-3 bulan berikutnya" (Lead NOC, tanpa USULAN) dan "Penyerahan data SLA layanan SOC | Paling lambat hari kerja ke-3 bulan berikutnya (USULAN ...)" (Lead SOC, label ikut).
+- .sla[0][2]: lengkap; butir 4.1 "Target standar availability yang dikomunikasikan adalah 99.9% per bulan" (tanpa USULAN).

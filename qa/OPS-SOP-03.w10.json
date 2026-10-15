@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 9 baris 'Kerusakan di platform upstream atau fasilitas DC': rujukan 'sesuai matriks eskalasi SNX-OPS-SOP-04' dibuang dan '(butir 6.4)' kini menempel ke 'menuntaskan ticket'. Matriks masih ada di butir 6.4 langkah 5, jadi pembaca tidak kehilangan langkah. Usul: 'NOC Engineer mengeskalasi ke penyedia DC atau upstream sesuai matriks eskalasi SNX-OPS-SOP-04, lalu menuntaskan ticket sesuai butir 6.4.'",
+  "Definisi PM: kalimat penunjuk 'Aktivitas minimalnya ada di bagian 8.' dihapus (boleh, §3.2). Rujukan ke tabel bagian 8 tetap ada di Policy dan butir 6.2 langkah 2.",
+  "Policy: 'aktivitas minimal dan frekuensinya' menjadi 'aktivitas dan frekuensi minimal'. Artinya bergeser sedikit. Usul: 'dengan aktivitas minimal dan frekuensinya sesuai tabel bagian 8'.",
+  "Bagian 9 baris kode T: 'Kode itu ditinjau Lead NOC pada review kepatuhan bulanan' memuat 'ditinjau' dan 'review' sekaligus. Usul: 'Kode itu dibahas Lead NOC pada review kepatuhan bulanan (butir 6.3).' Di bed1bb6 baris ini juga sudah punya dua pelaku.",
+  "Definisi RCA 'Root cause analysis, yaitu analisis untuk menemukan root cause (akar masalah)' mengulang istilah. Ini bertentangan dengan STYLE §2.7."
+ ],
+ "contoh_baik": [
+  "Kerusakan di app-level pelanggan: 'SOP ini tidak mengatur perbaikannya.' -> 'Perbaikannya di luar cakupan SOP ini.'"
+ ]
+}

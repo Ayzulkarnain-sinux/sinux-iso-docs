@@ -1,0 +1,27 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Butir 6.2 Pengumpulan data, paragraf pembuka",
+   "masalah": "Penunjuk 'Batas waktu pengumpulan data ada di bagian 8' diganti fakta yang tidak lengkap. Bagian 8 memuat dua batas: data availability dan ticket (Lead NOC) serta penyerahan data SLA layanan SOC (Lead SOC, USULAN). Fakta pengganti hanya menyebut yang pertama. Langkah 4 butir 6.2 (Lead SOC menyerahkan data SOC) kehilangan batas waktunya, dan label USULAN-nya tidak ikut.",
+   "kutipan": "bed1bb6: '... (USULAN: batas generalist menunggu owner). Batas waktu pengumpulan data ada di bagian 8.' -> W10: '... (USULAN). Data availability dan ticket dikumpulkan paling lambat hari kerja ke-3 bulan berikutnya.'",
+   "usul": "Data availability dan ticket dikumpulkan paling lambat hari kerja ke-3 bulan berikutnya. Data SLA layanan SOC diserahkan Lead SOC pada batas yang sama (USULAN)."
+  }
+ ],
+ "nonblocking": [
+  "Definisi Peringatan dini: 'ambang di bagian 8' diganti fakta '50% anggaran downtime', sesuai bagian 8 (tanpa label). Penunjuk 'langkahnya ada di butir 6.4' dihapus; ini sah karena butir 4.3 tetap merujuk 6.4.",
+  "SLA Availability: 'ada di butir 4.1' diganti '99.9% per bulan', lengkap dan sesuai butir 4.1.",
+  "Definisi RCA: 'sebuah breach atau insiden yang ditulis di SNX-OPS-FRM-10' ambigu. Usul: '..., dengan hasil ditulis di SNX-OPS-FRM-10.'",
+  "Blok 'Registrasi SLA' beserta paragraf parameternya tampil dua kali di teks docx. Hal ini sudah ada sebelum W10 (tidak tampak di diff); perlu dicek di renderer.",
+  "Nomor butir 4.1 sampai 4.6 dan 6.1 sampai 6.6 yang dirujuk SNX-OPS-FRM-10 tetap."
+ ],
+ "contoh_baik": [
+  "'termasuk SLA yang SINUX terima dari supplier' -> 'Cakupan ini termasuk SLA yang diterima SINUX dari supplier'"
+ ]
+}

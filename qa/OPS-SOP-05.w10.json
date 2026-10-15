@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Pengumpulan data: penunjuk 'Batas waktu pengumpulan data ada di bagian 8.' diganti fakta lengkap untuk kedua baris bagian 8 (Lead NOC hari kerja ke-3 tanpa label, data SOC dengan label (USULAN)). Isinya cocok dengan bed1bb6. Kalimat pasif 'Data availability dan ticket dikumpulkan' tidak menyebut Lead NOC. Ini masih boleh di bagian Policy.",
+  "Definisi Peringatan dini: 'ambang di bagian 8' diganti '50% anggaran downtime', cocok dengan bagian 8. Penunjuk 'langkahnya ada di butir 6.4' dihapus, tetapi langkahnya tetap terjangkau dari bagian 9.",
+  "Bagian 8 Availability: 'ada di butir 4.1' diganti '99.9% per bulan', cocok dengan 4.1.",
+  "Catatan internal pada label VP Commercial dan Penyerahan data SLA SOC dihapus, label (USULAN) tetap ada (§3.8). Pastikan kalimat aslinya tercatat di notes.",
+  "Definisi RCA 'dengan hasil ditulis di SNX-OPS-FRM-10' agak kaku. Usul: 'yang hasilnya ditulis di SNX-OPS-FRM-10'."
+ ],
+ "contoh_baik": [
+  "SLA supplier: 'SLA yang SINUX terima dari supplier.' -> 'SLA yang diterima SINUX dari supplier.'"
+ ]
+}

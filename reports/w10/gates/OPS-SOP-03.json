@@ -1,0 +1,35 @@
+{
+ "key": "OPS-SOP-03",
+ "mode": "sop",
+ "out": "out/07_Ops/SNX-OPS-SOP-03 Preventive & Corrective Maintenance (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 1942,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 1,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1937,
+  "calque": [],
+  "lewat": 1,
+  "pointer": 2,
+  "usulan": 1,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 66,
+  "tables_ge3_no_header": 13
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-SOP-03 Preventive & Corrective Maintenance (Rev00 DRAFT).pdf",
+ "pages": 14,
+ "blank": [],
+ "pass": true
+}

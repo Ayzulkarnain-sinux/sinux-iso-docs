@@ -178,3 +178,26 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Sistem semuanya dari sumber atau premis owner: Nusagrid, WHM, cPanel, Jumphost, Zammad, Overseer, SIEM, EDR, Cloudflare, WAF, WordPress.
 - Yang bukan kalimat tim dan sudah dicatat di bagian 5: nama klausul 8.5.1 dan 10.2, definisi Problem, RCA, Overseer, NOC, SOC, kolom Authority, lokasi Google Drive dan pemilik rekaman, PIC dari FRM-07, kalimat "sebagai change" pada patch kritis.
 - Yang saya ubah sesudah pemeriksaan ini: kata "Ack" dihapus dari baris SLA (tanpa definisi), istilah tiket diseragamkan, dan kalimat langkah dipendekkan. Kutipan di tabel 2 dicocokkan ulang ke teks Drive yang dibaca hari ini.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Satu label (USULAN) di Policy paragraf 7 tetap di akhir butir.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi Preventive maintenance (PM): "Aktivitas minimalnya ada di bagian 8." (kalimat penunjuk, STYLE §3.2).
+- Policy paragraf 1: "Aktivitas minimal dan frekuensinya ada di bagian 8" ditulis ulang menjadi "dengan aktivitas dan frekuensi minimal sesuai tabel bagian 8"; tabelnya 10 baris, jadi rujukan dipertahankan (satu rujukan per paragraf).
+- Bagian 9 Patch kritis dan Pemulihan P1: rujukan "(butir 6.2)" dan "(butir 6.4)" tetap (dikembalikan pada putaran perbaikan 1).
+- Bagian 9 Kerusakan upstream atau DC: "NOC Engineer mengeskalasi ke penyedia DC atau upstream sesuai matriks eskalasi SNX-OPS-SOP-04. Penyedia memperbaiki sesuai kontrak (butir 6.4)." ditulis "NOC Engineer mengeskalasi ke penyedia DC atau upstream, lalu menuntaskan ticket sesuai butir 6.4. Perbaikan oleh penyedia mengikuti kontraknya."; "sesuai matriks eskalasi SNX-OPS-SOP-04" dibuang dari sel karena sudah ada di butir 6.4 langkah 5.
+- Bagian 9 Siklus PM tidak selesai: "Lead NOC meninjaunya ..." menjadi "Kode itu ditinjau Lead NOC ..." agar sel diawali satu pelaku; "(butir 6.3)" tetap.
+
+### W10 selisih angka
+nihil setelah putaran perbaikan 1 (rujukan "(butir 6.2)" dikembalikan).
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (sesuai keputusan OPS dan dokumen induk).
+- "akar penyebab" diseragamkan menjadi "root cause"; padanan "(akar masalah)" ditulis sekali di definisi RCA.
+- Kalimat tim di Purpose dipertahankan, hanya dipecah dua karena lebih dari 30 kata. "menyuplai" menjadi "menyediakan", "mereview" menjadi "melakukan review".
+
+### W10 audit pointer
+- .definitions[6][1]: pointer murni dibuang, isi tidak dinyatakan ulang; aktivitas dan frekuensi minimal PM tetap dirujuk di Policy paragraf 1 ("sesuai tabel bagian 8") dan butir 6.1 langkah 2.
+- Bagian 9 (.exceptions[0][1], [1][1], [2][1]): rujukan butir 6.2 dan 6.4 dikembalikan pada putaran perbaikan 1; tidak ada lagi jalur yang kehilangan rujukan selain .definitions[6][1].

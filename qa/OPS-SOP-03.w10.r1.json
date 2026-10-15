@@ -1,0 +1,38 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 9 Exception Management, baris Patch kritis",
+   "masalah": "Rujukan ke prosedur SOP ini '(butir 6.2)' dibuang tanpa fakta pengganti. Pembaca kehilangan langkah wajib pelaksanaan PM: daftar patch dari Lead SOC, persetujuan Lead SOC untuk kontrol keamanan, tanda S/T di Jadwal PM, dan service report. Cakupan menyempit menjadi 'change sesuai SNX-OPS-SOP-02' saja.",
+   "kutipan": "bed1bb6: 'NOC Engineer menjalankan patch segera tanpa menunggu jadwal bulanan, sebagai change sesuai SNX-OPS-SOP-02 (butir 6.2).' -> W10: '... sebagai change sesuai SNX-OPS-SOP-02.'",
+   "usul": "NOC Engineer menjalankan patch segera tanpa menunggu jadwal bulanan, mengikuti langkah butir 6.2. (Butir 6.2 langkah 3 sudah merujuk SNX-OPS-SOP-02, jadi satu rujukan per sel tetap terpenuhi.)"
+  },
+  {
+   "lokasi": "Bagian 9, baris Pemulihan P1 yang butuh perbaikan segera",
+   "masalah": "'(butir 6.4)' dibuang. Pembaca baris ini tidak lagi diarahkan ke alur CM: ticket, severity, verifikasi, service report, dan penutupan ticket. Hanya tersisa 'change Emergency'.",
+   "kutipan": "bed1bb6: '... sebagai change Emergency sesuai SNX-OPS-SOP-02 (butir 6.4).' -> W10: 'NOC Engineer menjalankan perbaikan sebagai change Emergency sesuai SNX-OPS-SOP-02.'",
+   "usul": "NOC Engineer menjalankan perbaikan sebagai change Emergency sesuai butir 6.4. (Butir 6.4 langkah 4 sudah memuat SNX-OPS-SOP-02 dan change Emergency.)"
+  },
+  {
+   "lokasi": "Bagian 9, baris Kerusakan di platform upstream atau fasilitas DC",
+   "masalah": "'(butir 6.4)' dibuang. Langkah 6.4 yang tetap dijalankan NOC Engineer setelah perbaikan penyedia (verifikasi, catat di service report, tutup ticket) hilang dari baris ini. Kalimat juga menggabungkan dua pelaku (NOC Engineer, lalu 'dijalankan penyedia'), padahal bagian 9 menuntut satu pelaku per langkah.",
+   "kutipan": "bed1bb6: '... sesuai matriks eskalasi SNX-OPS-SOP-04. Penyedia memperbaiki sesuai kontrak (butir 6.4).' -> W10: '... sesuai matriks eskalasi SNX-OPS-SOP-04, lalu perbaikan dijalankan penyedia sesuai kontrak.'",
+   "usul": "NOC Engineer mengeskalasi ke penyedia DC atau upstream, lalu menuntaskan ticket sesuai butir 6.4. Perbaikan oleh penyedia mengikuti kontraknya. (Butir 6.4 langkah 5 sudah memuat matriks eskalasi SNX-OPS-SOP-04.)"
+  }
+ ],
+ "nonblocking": [
+  "Bagian 9 baris Siklus PM tidak selesai: dua pelaku dalam satu kalimat ('NOC Engineer menandai ..., lalu kode itu ditinjau Lead NOC'). Penyusunan lama juga memuat dua pelaku. Pertimbangkan memecahnya menjadi dua kalimat.",
+  "Rujukan bagian 9 tidak konsisten: '(butir 6.3)' dipertahankan di baris Siklus PM, sedangkan '(butir 6.2)' dan '(butir 6.4)' di baris lain dibuang.",
+  "Definisi PM: 'Aktivitas minimalnya ada di bagian 8' dihapus sebagai kalimat penunjuk (§3.2). Ini sah, karena bagian 4 dan butir 6.1 langkah 2 tetap mengarah ke tabel bagian 8.",
+  "PURPOSE: 'Dengan begitu, ...' wajar, tetapi pola yang sama muncul juga di OPS-SOP-05, sehingga terasa seperti templat."
+ ],
+ "contoh_baik": [
+  "'Diagnosa dengan pemeriksaan read-only dan bedakan gejala dari akar penyebab.' -> 'Lakukan diagnosis dengan pemeriksaan read-only, lalu bedakan gejala dari root cause.'"
+ ]
+}
