@@ -54,7 +54,7 @@
       "rows": [
        [
         "Penerimaan uang dari pelanggan",
-        "Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection dan Billing & Collection Monitoring Register, keduanya dalam peninjauan dan belum bernomor."
+        "Bukan pembayaran oleh SINUX. Penagihan dan piutang ada di SOP Account Receivable & Collection (dalam peninjauan dan belum bernomor) dan SNX-FAT-REG-01."
        ],
        [
         "Persetujuan invoice ke klien",
@@ -74,7 +74,7 @@
        ],
        [
         "Pencatatan akuntansi",
-        "Ada di SOP Accounting and Financial Report, dalam peninjauan dan belum bernomor."
+        "Ada di SNX-FAT-SOP-06."
        ],
        [
         "Pengarsipan dan pemusnahan berkas",
@@ -258,7 +258,7 @@
      "p": "6.10 Finance Staff menulis alasan di kolom Alasan Ditolak atau Ditahan sesuai butir 4.5."
     },
     {
-     "p": "6.11 Finance Staff menulis lokasi bukti persetujuan di Tabel 3, sesuai lokasi di tabel Rekaman (butir 4.8)."
+     "p": "6.11 Finance Staff menulis lokasi berkas bukti persetujuan di Tabel 3, di dalam folder yang tercantum di tabel Rekaman (butir 4.8)."
     },
     {
      "p": "6.12 Finance Staff menulis tanggal pembayaran dan nomor atau nama berkas bukti pembayaran di Tabel 3 saat bukti diterima, sesuai butir 4.6."
@@ -617,7 +617,7 @@
        ],
        [
         "Bukti persetujuan dan bukti pembayaran tiap baris",
-        "Lokasi tertulis di Tabel 3. Pemilik: Finance Lead (USULAN). Aturan arsip mengikuti SNX-FAT-SOP-04.",
+        "Folder Google Drive Departemen FAT (USULAN); lokasi berkas tiap baris ditulis di Tabel 3 (butir 6.11). Pemilik: Finance Lead (USULAN). Aturan arsip mengikuti SNX-FAT-SOP-04.",
         "Minimal 10 tahun (USULAN), sama dengan baris di atas."
        ]
       ]
@@ -702,6 +702,14 @@
         "Tax Administration & Reporting: butir 6.3 menyebut form ini sebagai tempat mencatat persetujuan utang pajak dan pengajuan pembayaran pajak (USULAN)."
        ],
        [
+        "SNX-FAT-SOP-06",
+        "Accounting and Financial Report: pencatatan akuntansi, dikecualikan dari form ini."
+       ],
+       [
+        "SNX-FAT-REG-01",
+        "Billing & Collection Monitoring Register: pencatatan piutang usaha dari klien, dikecualikan dari form ini."
+       ],
+       [
         "SNX-ISMS-PRO-01",
         "Information Classification & Handling Procedure: tingkat RESTRICTED (Internal) untuk form ini (butir 4.10)."
        ],
@@ -711,11 +719,7 @@
        ],
        [
         "Belum bernomor",
-        "SOP Account Receivable & Collection dan Billing & Collection Monitoring Register: dalam peninjauan. Penagihan dan piutang, dikecualikan dari form ini."
-       ],
-       [
-        "Belum bernomor",
-        "SOP Accounting and Financial Report: dalam peninjauan. Pencatatan akuntansi, dikecualikan dari form ini."
+        "SOP Account Receivable & Collection: dalam peninjauan. Penagihan dan piutang, dikecualikan dari form ini."
        ],
        [
         "Belum bernomor",

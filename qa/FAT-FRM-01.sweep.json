@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Tabel Rekaman baris 2, kolom Lokasi dan pemilik",
+      "masalah": "Muncul pasif baru tanpa pelaku padahal pelakunya diketahui (Finance Staff, butir 6.11). Sebelumnya kalimat ini stative.",
+      "bukti": "sebelum: \"Lokasi tertulis di Tabel 3.\"; sesudah: \"lokasi berkas tiap baris ditulis di Tabel 3 (butir 6.11)\". Usul: \"Finance Staff menulis lokasi berkas tiap baris di Tabel 3 (butir 6.11).\""
+    },
+    {
+      "lokasi": "Tabel Rekaman baris 2, label (USULAN) baru",
+      "masalah": "Fakta lokasi di sini bukan fakta baru: nilainya sama dengan baris 1 tabel Rekaman dan SNX-FAT-SOP-05, dan diberi label. Jumlah label naik dari 12 ke 13 dan sudah dicatat di notes (U-08, bagian Sweep). Hanya catatan, bukan cacat.",
+      "bukti": "Rekaman baris 1: \"Folder Google Drive Departemen FAT dan pemilik Finance Lead, keduanya (USULAN)\"; lint warn \"13 butir (USULAN) menunggu ACC\""
+    },
+    {
+      "lokasi": "Butir sweep 2, SNX-FAT-FRM-02",
+      "masalah": "Bagian butir 2 ini tidak bisa diterapkan: form tidak pernah menyebut Financial Information Access Authorization Records, jadi tidak ada rujukan yang perlu diganti. Penyusun sudah menyebut hal ini di notes. Tidak ada kekurangan.",
+      "bukti": "grep 'FRM-02|Information Access' specs/FAT-FRM-01.json: kosong; notes/FAT-FRM-01.md bagian Sweep, catatan kedua"
+    },
+    {
+      "lokasi": "Ruang Lingkup baris Penerimaan uang dan Pengajuan pembayaran; Dokumen Terkait baris Belum bernomor",
+      "masalah": "Sesuai instruksi, SOP Account Receivable & Collection dan SOP Payment and Disbursement Approval tetap ditulis dalam peninjauan dan belum bernomor. Keduanya tidak ada di daftar butir 2, dan ledger tidak memberi nomor untuk keduanya (worklist HOLD-T3).",
+      "bukti": "config/worklist.json: key null, wave HOLD-T3, number null untuk kedua judul; ledger.json docs: hanya FAT-SOP-06, FAT-REG-01, FAT-FRM-02 yang W7b DONE dan bernomor"
+    }
+  ]
+}
