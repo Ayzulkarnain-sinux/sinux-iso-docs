@@ -59,3 +59,78 @@ C. Gerbang sesudah perubahan, semua rc 0, bukti penuh di reports/w9/:
 - Nol staging dari worker, nol mutasi Drive, status Draft, nol tanda tangan dan tanggal efektif.
 
 D. Selesai: ledger current_wave "W9-DONE", reports/REVIEW-W9.md berisi tabel per butir A, B, C (dikerjakan, bukti, sisa), commit "ISO W9 penutupan", push, lalu BERHENTI.
+
+## G-4 | 2026-10-15T07:05Z | berlaku: sesi worker ISO-W10, mulai saat owner mengetik gaspol di sesi itu
+Dasar: vonis final LEAD ISO-B (GO, packet #1994) lalu review tim. Owner, verbatim: "Sudah ditinjau sama tim, tapi inputnya adalah tata bahasa. Masih Slop, AI sekali. Bahasa indonya aneh. Better mix, isitilah dll tetap in english. Semi billingual. Hasilnya hanya kurang di bahasa, dan di frm/form kurang rapih dan bahasa kurang bagus."
+Substansi sudah lolos verifikasi dua kaki di bed1bb6. W10 hanya mengerjakan bahasa dan kerapian tabel serta form. Substansi beku (config/STYLE-v23.md §8). Draf G-4 sudah diserang Red Team buta (10 temuan); semua temuan diterapkan di versi ini.
+
+Akar masalah, diukur LEAD dengan tools/w10_langscan.py di bed1bb6:
+- Aturan gaya memaksa setiap kalimat diawali nama peran dan melarang benda menjadi subjek. Hasilnya 60 pola "yang <pelaku> <kata dasar>", dan 71 butir petunjuk form diawali nama peran (SNX-LEG-FRM-02 25 dari 25, SNX-OPS-FRM-10 9 dari 14).
+- Aturan "satu fakta sekali, bagian lain merujuk nomor butir" menghasilkan kalimat penunjuk dan rujukan beruntun.
+- Label (USULAN) muncul 1.137 kali.
+- Istilah kerja diterjemahkan ke Bahasa Indonesia ("rekaman", "tiket", "formulir"), padahal tim menulisnya dalam English. "lewat" muncul 166 kali.
+- Form tidak rapi:
+  - 2.477 paragraf sel tabel rata kiri-kanan, sehingga teks di sel sempit berjarak lebar;
+  - 841 tabel (3 baris atau lebih) tanpa header berulang;
+  - form docx median 13,5 halaman, dan bagian ISI baru mulai di median halaman 9;
+  - xlsx tanpa freeze panes dan tanpa setelan cetak.
+
+Langkah 0. Bila owner menempelkan catatan review tim di sesi worker, salin verbatim ke notes/W10-team-input.md dan perlakukan sebagai koreksi berprioritas di atas STYLE-v23. Bila tidak ada, lanjut.
+
+Aturan yang berubah:
+1. config/STYLE-v23.md berlaku untuk 70 dokumen DONE.
+2. RUNBOOK §6a butir 1 dan 9 digantikan STYLE-v23 §1 dan §2.
+3. RUNBOOK §6a.2, §6a.6, dan §8.2(f) tidak lagi mewajibkan pelaku di bagian Definisi, Policy, Rekaman, dan Ketentuan Penggunaan form, dan di butir Petunjuk Pengisian, Cara Mengisi, Ketentuan Pengisian, serta Cara pakai. Di bagian 6 dan 9, pelaku tetap wajib (STYLE §2.2).
+4. Dari prompt_addendum di ledger.json, butir "Benda ... tidak menjadi pelaku kata kerja manusia ..." dan "satu fakta disebut sekali di tempat paling tepat, bagian lain merujuk nomor butirnya" dicabut. Butir addendum lain tetap berlaku.
+5. Peta istilah STYLE §1.5 dan diksi STYLE §2.5 (lewat, sesudah) diterapkan dengan satu skrip mekanis, sebelum penyusun bahasa bekerja. Diff skrip pada 5 dokumen pilot ikut dikirim ke owner.
+6. Renderer: tambahkan kunci spec meta.table_defaults {"align_left": true, "repeat_header": true, "cant_split": true} di jalur render sop dan generic, lalu set di semua spec. Kolom berisi teks panjang diberi widths_cm. Spec UJI-RENDER dan UJI-GENERIC tidak disentuh, sehingga selftest tetap 6 OK. Catat sebagai tech_fix di ledger.
+7. tools/xlsx_patch.py mendapat operasi freeze, wrap_cols, dan page_setup (landscape, fitToWidth 1, print_title_rows), masing-masing dengan kontrol positif dan negatif. Catat sebagai tech_fix. Sebelum mengubah apa pun, daftar sheet data dan baris header-nya ditulis di reports/w10/xlsx_sheets.json. Sheet berisi gambar alur tidak diubah.
+
+Urutan kerja dan batas waktu:
+1. Pilot, 5 dokumen: SNX-OPS-FRM-02 (xlsx), SNX-OPS-FRM-10 dan SNX-LEG-FRM-01 (form docx), serta SNX-FAT-SOP-01 dan SNX-HR-SOP-13 (SOP).
+   - Render PDF kelimanya ke reports/w10/pilot/, lalu kirim ke owner lewat SendUserFile bersama diff skrip istilah.
+   - Commit "ISO W10 pilot", push, lalu BERHENTI.
+   - Target: pilot siap paling lambat 2 jam setelah gaspol pertama.
+2. Owner meneruskan pilot ke tim. Koreksi owner dicatat verbatim di notes/W10-pilot.md dan diterapkan ke pilot dan sapuan. Owner mengetik gaspol untuk sapuan.
+3. Sapuan 65 dokumen, berurutan: xlsx, lalu form, register, dan report docx, lalu SOP.
+4. Jam potong 21.00 WIB (14.00 UTC). Dokumen yang belum lolos gerbang pada jam potong dikembalikan ke versi bed1bb6 dan dicatat sebagai residu bernama di REVIEW-W10. Paket tetap konsisten dan bisa diunggah.
+
+Model:
+- Sesi worker: Opus 5.5 effort high.
+- Penyusun bahasa: subagen Opus 5.5 effort medium. Pass ini dikunci pada mutu bahasa, jadi Sonnet tidak dipakai di peran ini.
+- Pemeriksa bahasa buta: subagen Opus 5.5 effort medium. Masukannya diff teks, PDF halaman form untuk rubrik (d), STYLE-v23, dan rubrik; tanpa notes penyusun.
+- Kerja mekanis (skrip, render, gerbang): Sonnet 5.5 low.
+- Paling banyak 3 subagen paralel, dibagi per departemen sehingga berkasnya tidak beririsan.
+
+Gerbang W10. Semua rc 0, bukti penuh di reports/w10/. Pemindai resmi: tools/w10_langscan.py (selftest wajib OK). Baseline bed1bb6 disimpan di reports/w10/baseline.json.
+1. Substansi: `w10_langscan.py diff <bed1bb6> <baru>` per dokumen.
+   - Kunci butir dan headings tidak boleh muncul. Artinya urutan dan jumlah butir dan heading sama.
+   - Kunci persons dan snx tidak boleh muncul.
+   - Setiap selisih numbers dan usul_butir harus tercatat di notes/<KEY>.md (STYLE §3.6, §8.2).
+   - Kontrol positif: diff OPS-FRM-10 versi 4a40352 lawan bed1bb6 harus menembak "7.5".
+2. Bahasa (scan), per dokumen:
+   - calque 0, lewat 0, justified_cells 0, tables_ge3_no_header 0;
+   - instr_role_start paling banyak 25 persen dari instr_items;
+   - usulan dan pointer dilaporkan sebelum dan sesudah, tanpa target angka.
+3. Pemeriksa bahasa buta. Rubrik ditetapkan sekarang, sebelum run, skala 1 sampai 5:
+   - (a) Bahasa Indonesia bisnis yang wajar, tidak terdengar seperti terjemahan atau AI;
+   - (b) Istilah English sesuai STYLE §1 dan §5;
+   - (c) Bebas pola terlarang STYLE §2 dan §3;
+   - (d) Khusus form, register, dan xlsx: rapi dan mudah diisi, dinilai dari PDF.
+   PASS bila semua butir 4 atau lebih. Gagal sekali = satu putaran perbaikan. Gagal kedua = kembali ke bed1bb6 dan catat sebagai residu.
+4. Xlsx: semua sheet di reports/w10/xlsx_sheets.json punya freeze, fitToWidth 1, landscape, dan print_title_rows (lihat medan sheets di scan). Sheet Kontrol Dokumen di-wrap. Ini menutup residu cetak SNX-FAT-REG-01.
+5. Docx form: jumlah halaman dan halaman awal bagian ISI (render LibreOffice) dilaporkan sebelum dan sesudah. Tidak ada target, tetapi angkanya tidak boleh naik.
+6. Gerbang lama:
+   - selftest 6 OK;
+   - lint dan OOXML semua berkas; blankscan 0;
+   - refcheck2 penuh berkontrol positif, 0 TIDAK_ADA; metascan 0;
+   - grepgate: HR Lead, Kristanto, Divisi Legal, dan Daffa sama dengan W9;
+   - modifiedTime 54 sumber diukur ulang (beda = BERHENTI);
+   - Master List dan USULAN-OPEN dibangun ulang;
+   - Laporan_Run mendapat bagian "Perubahan ISO-W10".
+7. Nol staging, nol mutasi Drive, status Draft, nol tanda tangan dan tanggal efektif.
+
+Selesai:
+1. ledger current_wave "W10-DONE".
+2. reports/REVIEW-W10.md berisi tabel per gerbang (dikerjakan, bukti, sisa), daftar residu bernama, dan 3 contoh sebelum dan sesudah per departemen.
+3. Commit "ISO W10 penutupan", push, lalu BERHENTI.

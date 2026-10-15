@@ -107,6 +107,7 @@ HOLD-T3 (19 baris): tidak dikerjakan kecuali ukur ulang W0 menemukan berkas tim 
 - Rincian pendukung (cacat template, uji 25 butir, struktur organisasi, indeks fileId): context/CONTEXT-PACK-v19.md.
 
 ## 6a. Gaya bahasa dokumen (anti AI slop)
+Sejak G-4: butir 1 dan 9 di bawah digantikan config/STYLE-v23.md; butir lain tetap berlaku.
 Pembaca = auditor ISO dan karyawan SINUX yang menjalankan prosedur. Tulis seperti kepala departemen yang paham prosesnya: lugas, spesifik, bisa dijalankan besok pagi.
 1. Kalimat aktif, pelaku = peran dari bagian 5. Benar: "Admin Sistem mencabut akses paling lambat 1 hari kerja sesudah tiket disetujui." Salah: "Akses akan dicabut sesegera mungkin."
 2. Satu langkah prosedur = satu tindakan, satu pelaku, satu keluaran atau rekaman; sekitar 25 kata paling banyak.
@@ -142,6 +143,6 @@ Contoh kerja: specs/UJI-RENDER.json dan specs/UJI-GENERIC.json (uji render, buka
 ## 10. Kondisi berhenti
 Selesai W8; atau penjaga anggaran; atau alat yang sama gagal 3 kali berturut-turut (catat galat, lewati dokumen itu, lanjut; bila menyangkut push repo: pindah ke cadangan SendUserFile zip); atau batas keras. Saat berhenti: W8 tetap dijalankan sebisanya dan watchdog dihapus.
 
-## 11. Laporan pagi (out/00_Index/Laporan_Run.md + pesan akhir)
+## 11. Laporan pagi (reports/Laporan_Run.md + pesan akhir)
 Ringkas: jumlah DONE / NEEDS_REVIEW / BLOCKED / HOLD per departemen; daftar USULAN yang perlu ACC (dikelompokkan per pemutus: owner, Samuel, Aziz, FAT, Legal, Fani); open items; dokumen T3 yang masih ditunggu dari tim; cara unduh (GitHub: Code, Download ZIP, folder out/); langkah unggah ke Drive (folder baru "COS Draft ISO" di Supporting Documents, berkas tim tidak ditimpa). Master_List_COS.xlsx: satu baris per 88 baris checklist (dept, judul checklist, aksi, nomor, nama berkas, state, verifikasi, USULAN, open items, sumber + modifiedTime).
 Penutup sesi = HANDOFF empat blok (judul, prompt sesi berikut, residu owner, papan maks 8 baris).
