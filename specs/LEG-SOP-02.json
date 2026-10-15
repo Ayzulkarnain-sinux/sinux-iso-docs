@@ -12,13 +12,13 @@
   "effective_date": "",
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
-   "prepared": "Staff Legal",
-   "reviewed": "Line Manager Legal",
+   "prepared": "Alif Altamziz / Staff Legal",
+   "reviewed": "Ester Febe Utomo / Line Manager Legal",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
  "purpose": [
-  "SOP ini menetapkan cara Divisi Legal PT Strategi Integrasi Nusantara (SINUX) me-review, merevisi, dan menyetujui kontrak sebelum kontrak itu ditandatangani.",
+  "SOP ini menetapkan cara Departemen Legal PT Strategi Integrasi Nusantara (SINUX) me-review, merevisi, dan menyetujui kontrak sebelum kontrak itu ditandatangani.",
   "Hasil yang dijaga: tidak ada kontrak yang ditandatangani sebelum di-review Legal dan disetujui menurut kewenangan, serta risiko hukum dan komersial beserta keputusan atasnya dapat ditelusuri dari pencatatan dan arsip."
  ],
  "scope": [
@@ -91,11 +91,11 @@
   ],
   [
    "Register permintaan Legal",
-   "Daftar permintaan penyusunan atau review kontrak yang diterima Divisi Legal, masing-masing dengan nomor referensi."
+   "Daftar permintaan penyusunan atau review kontrak yang diterima Departemen Legal, masing-masing dengan nomor referensi."
   ],
   [
    "Review kontrak",
-   "Peninjauan kontrak oleh Divisi Legal untuk menilai kelengkapan, ketepatan redaksi, kesesuaian hukum, pembagian hak dan kewajiban, serta risiko yang mungkin timbul."
+   "Peninjauan kontrak oleh Departemen Legal untuk menilai kelengkapan, ketepatan redaksi, kesesuaian hukum, pembagian hak dan kewajiban, serta risiko yang mungkin timbul."
   ],
   [
    "Ringkasan risiko",
@@ -144,12 +144,12 @@
   ],
   [
    "Staff Legal",
-   "Mencatat permintaan di register permintaan Legal, memeriksa kelengkapan dan pihak lawan, menyusun atau me-review kontrak, menyiapkan redline dan ringkasan risiko, mengelola versi, memeriksa dokumen sebelum penandatanganan, mengarsipkan kontrak, memperbarui register kontrak, dan memantau kontrak berjalan (butir 6.1 sampai 6.10). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Mencatat permintaan di register permintaan Legal, memeriksa kelengkapan dan pihak lawan, menyusun atau me-review kontrak, menyiapkan redline dan ringkasan risiko, mengelola versi, memeriksa dokumen sebelum penandatanganan, mengarsipkan kontrak, memperbarui register kontrak, dan memantau kontrak berjalan (butir 6.1 sampai 6.10). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
    "Meminta klarifikasi atau dokumen tambahan dari Pemohon dan pihak lawan; mengeskalasi risiko Tinggi kepada Line Manager Legal; tidak memberi Persetujuan Legal."
   ],
   [
    "Line Manager Legal",
-   "Pemilik SOP. Menetapkan penugasan, prioritas, dan target penyelesaian; menentukan tindak lanjut temuan material; me-review hasil kerja Staff Legal; mengevaluasi risiko dan eskalasi; memberi Persetujuan Legal; meminta konfirmasi kewenangan dari Pejabat Berwenang; memantau penerapan SOP ini (butir 6.1 sampai 6.7, dan bagian 10). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Pemilik SOP. Menetapkan penugasan, prioritas, dan target penyelesaian; menentukan tindak lanjut temuan material; me-review hasil kerja Staff Legal; mengevaluasi risiko dan eskalasi; memberi Persetujuan Legal; meminta konfirmasi kewenangan dari Pejabat Berwenang; memantau penerapan SOP ini (butir 6.1 sampai 6.7, dan bagian 10). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
    "Menyetujui, mengembalikan untuk revisi, atau mengeskalasi hasil review; menahan Persetujuan Legal pada isu risiko Tinggi; menyesuaikan target waktu (butir 4.6)."
   ],
   [
@@ -691,7 +691,7 @@
     "q"
    ]
   ],
-  "caption": "Gambar 1. Alur review dan persetujuan kontrak oleh Divisi Legal, dari permintaan sampai pemantauan kontrak berjalan."
+  "caption": "Gambar 1. Alur review dan persetujuan kontrak oleh Departemen Legal, dari permintaan sampai pemantauan kontrak berjalan."
  },
  "sla": [
   [
@@ -789,7 +789,7 @@
   ],
   [
    "SNX-HR-ORG-01",
-   "Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13)."
+   "Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09)."
   ],
   [
    "SNX-HR-JA-01",
@@ -813,11 +813,11 @@
   ],
   [
    "Belum bernomor",
-   "Template kontrak SINUX (NDA, PKS, addendum); belum disusun menurut SOP Divisi Legal."
+   "Template kontrak SINUX (NDA, PKS, addendum); belum disusun menurut SOP Departemen Legal."
   ],
   [
    "Belum bernomor",
-   "Format register permintaan Legal dan register kontrak; belum disusun menurut SOP Divisi Legal."
+   "Format register permintaan Legal dan register kontrak; belum disusun menurut SOP Departemen Legal."
   ]
  ],
  "records": [

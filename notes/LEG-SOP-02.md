@@ -148,9 +148,9 @@ Jumlah USULAN: 7 butir (16 kemunculan label "(USULAN)" di dokumen, menurut warn 
 | 7 | Atasan Line Manager Legal: sumber lama [ISI], Jobdesk "CEO", HR-JA-001 "Management / Direktur"; SNX-HR-ORG-01 K-03. Dokumen ini netral | owner |
 | 8 | Pengecualian scope dan baris Dokumen terkait untuk SNX-LEG-SOP-01 dan -03 bergantung pada isi dokumen itu. Spec LEG-SOP-01 (draf paralel, dibaca saja di akhir) memuat korporasi, perizinan, sengketa, somasi, dan klaim di scope-nya, sesuai pengecualian di sini, dan memakai GLPI untuk permintaan; spec LEG-SOP-03 belum ada. Bila isinya berubah, perbarui scope butir 5 dan tabel Dokumen terkait | Legal (setelah spec LEG-SOP-03 ada) |
 | 9 | Lampiran sumber lama yang belum disusun: template kontrak, playbook klausul, format redline dan ringkasan risiko, format register. Playbook dan format redline tidak dirujuk dokumen ini | Legal |
-| 10 | Sumber utama adalah draf tim yang sedang ditulis. Bila modifiedTime berubah sesudah 2026-10-14T09:08:19.129Z, spec perlu dicocokkan ulang | LEAD ISO |
+| 10 | Sumber utama adalah draf tim yang sedang ditulis. Bila modifiedTime berubah sesudah 2026-10-14T09:08:19.129Z, spec perlu dicocokkan ulang | LEAD ISO [ditutup W9] |
 | 11 | KPI Jobdesk "Review kontrak sesuai SLA 90% tepat waktu" bergantung pada target usulan bagian 8; tidak disalin ke sini | Legal |
-| 12 | Penamaan unit: dokumen ini memakai "Divisi Legal" (kata kriteria baris); sumber utama memakai "Departemen Legal" hanya di Pemilik Dokumen; spec LEG-SOP-01 memakai "Departemen Legal". Satu sebutan untuk seluruh dokumen Legal perlu diputus | LEAD ISO, lalu owner bila perlu |
+| 12 | Penamaan unit: dokumen ini memakai "Divisi Legal" (kata kriteria baris); sumber utama memakai "Departemen Legal" hanya di Pemilik Dokumen; spec LEG-SOP-01 memakai "Departemen Legal". Satu sebutan untuk seluruh dokumen Legal perlu diputus | LEAD ISO, lalu owner bila perlu [ditutup W9] |
 
 ## 6. Pengukuran ulang modifiedTime
 
@@ -198,3 +198,27 @@ Temuan di luar butir sweep (tidak diubah, menunggu instruksi):
 - Baris Dokumen terkait "Template kontrak SINUX (NDA, PKS, addendum); belum disusun" dan prompt_addendum ("jangan menyatakan belum ada bila checklist menandai baris itu ada"): checklist baris 43 "NDA / Confidentiality Agreement Template" bertanda true. PKS dan addendum tidak punya baris checklist. Perlu keputusan LEAD untuk rumusan.
 
 Hasil uji sesudah sweep: render exit 0; lint `"pass": true`, `"fails": []`, warn 16 (USULAN), warn PIC SLA nol; validator "All validations PASSED!"; blankscan "ok 24".
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A5 approval Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| A5 approval Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| A5 bagian 5, Staff Legal (JA-09) | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| A5 bagian 5, Line Manager Legal (JA-08) | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| A5 bagian 11, baris SNX-HR-ORG-01 (rujukan silang) | ... (JA-08 dan JA-09) (USULAN, butir K-13). | ... (JA-08 dan JA-09). |
+| A5 nama unit, Purpose | cara Divisi Legal PT Strategi ... | cara Departemen Legal PT Strategi ... |
+| A5 nama unit, bagian 3 Register permintaan Legal | diterima Divisi Legal | diterima Departemen Legal |
+| A5 nama unit, bagian 3 Review kontrak | oleh Divisi Legal | oleh Departemen Legal |
+| A5 nama unit, caption Gambar 1 | oleh Divisi Legal | oleh Departemen Legal |
+| A5 nama unit, bagian 11 template kontrak | menurut SOP Divisi Legal | menurut SOP Departemen Legal |
+| A5 nama unit, bagian 11 format register | menurut SOP Divisi Legal | menurut SOP Departemen Legal |
+
+Open item:
+
+- Open item 10 (sumber utama draf tim yang sedang ditulis): ditutup W9: LEAD mengukur modifiedTime sumber tidak berubah (G-2).
+- Open item 12 (penamaan unit): ditutup W9: A5, seluruh dokumen Legal memakai Departemen Legal.
+- USULAN 4 (pemetaan JA-08 dan JA-09): ditutup W9: diputus owner (G-3 A5).
+- Open item 7 (atasan Line Manager Legal, K-03): tetap terbuka (A4).
+- A3: tidak ada perubahan; dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04.
