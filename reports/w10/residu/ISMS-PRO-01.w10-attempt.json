@@ -1,0 +1,547 @@
+{
+ "meta": {
+  "doc_key": "ISMS-PRO-01",
+  "number": "SNX-ISMS-PRO-01",
+  "department": "Operation",
+  "title": "Information Classification & Handling Procedure",
+  "process_owner": "ISMS Coordinator",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
+  }
+ },
+ "purpose": [
+  "Prosedur ini menetapkan tingkat klasifikasi informasi SINUX, cara memberi label, dan aturan penanganan per tingkat (penyimpanan, pengiriman, berbagi, pencetakan, retensi, dan pemusnahan), sehingga informasi dilindungi sesuai nilai dan risikonya."
+ ],
+ "scope": [
+  "Prosedur ini berlaku untuk semua informasi yang dibuat, diterima, disimpan, atau diproses oleh personel Divisi Operation dan pihak ketiga yang bekerja atas nama SINUX, dalam bentuk apa pun: dokumen, spreadsheet, email, chat, ticket, log, konfigurasi, backup, database, record, dan kertas.",
+  "Informasi milik pelanggan yang dikelola SINUX juga termasuk dalam cakupan.",
+  "Divisi lain di luar Divisi Operation, misalnya Human Resources, Finance, Legal, dan Commercial, tidak tercakup. Perluasan cakupan ke seluruh SINUX masih menunggu keputusan (USULAN)."
+ ],
+ "definitions": [
+  [
+   "Agregasi",
+   "Penggabungan beberapa informasi yang membuat kumpulannya berklasifikasi lebih tinggi daripada tiap informasi yang digabung."
+  ],
+  [
+   "Event keamanan",
+   "Kejadian keamanan informasi yang dilaporkan sesuai SNX-ISMS-SOP-01."
+  ],
+  [
+   "Hapus aman",
+   "Penghapusan yang tidak menyisakan informasi yang dapat dipulihkan. Untuk media, berupa wipe atau penghancuran sesuai SNX-ISMS-SOP-04."
+  ],
+  [
+   "INTERNAL",
+   "Informasi untuk seluruh karyawan dan kontraktor SINUX; tidak untuk pihak luar tanpa alasan bisnis. Contoh: SOP umum, jadwal shift, pengumuman internal, template. Dampak jika bocor: kecil, yaitu memalukan atau merugikan ringan."
+  ],
+  [
+   "Lead sub divisi",
+   "Lead NOC (Network Operations Center) atau Lead SOC (Security Operations Center), sesuai POL-OPS-001. Untuk sub divisi Service Delivery dan PM: Service Delivery Manager (USULAN)."
+  ],
+  [
+   "Master list",
+   "Daftar dokumen Divisi Operation beserta masa simpan recordnya, yaitu SNX-OPS-ML-00."
+  ],
+  [
+   "NDA",
+   "Perjanjian kerahasiaan (non-disclosure agreement) dengan pihak luar."
+  ],
+  [
+   "Password manager (vault)",
+   "Penyimpanan kredensial internal SINUX. Status operasional: menunggu konfirmasi Ops."
+  ],
+  [
+   "Pemilik informasi",
+   "Peran yang tercatat di kolom Pemilik SNX-ISMS-REG-01 sebagai pemilik aset."
+  ],
+  [
+   "PUBLIC",
+   "Informasi yang sudah disetujui untuk umum. Contoh: company profile, materi pemasaran yang sudah disetujui, halaman website. Dampak jika bocor: tidak ada."
+  ],
+  [
+   "Removable media",
+   "Media penyimpan yang dapat dilepas dari perangkat: USB dan disk eksternal."
+  ],
+  [
+   "RESTRICTED (Internal)",
+   "Informasi khusus untuk peran atau divisi yang membutuhkan, dipecah per domain: ops, commercial, legal, hr, finance. Contoh: topologi dan konfigurasi pelanggan, register risiko, laporan insiden, kontrak, harga, data karyawan. Dampak jika bocor: besar, yaitu kerugian pelanggan, pelanggaran kontrak, sanksi. Di dokumen ini cukup ditulis RESTRICTED."
+  ],
+  [
+   "SECRET",
+   "Informasi yang kebocorannya langsung memberi akses atau melanggar hukum. Contoh: kredensial, private key dan sertifikat, token API, data pribadi sensitif, data pelanggan yang diatur regulator. Dampak jika bocor: kritis, yaitu kompromi sistem, kebocoran data pribadi, pelanggaran UU PDP."
+  ],
+  [
+   "Service Hub",
+   "SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal."
+  ],
+  [
+   "Zammad",
+   "Sistem ticket untuk Ops."
+  ],
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ]
+ ],
+ "policy": [
+  "4.1 Klasifikasi (Annex A 5.12). Pemilik informasi menetapkan klasifikasi saat informasi dibuat atau diterima. Jika ragu, Pemilik informasi memakai tingkat yang lebih tinggi.",
+  "4.2 Hanya Pemilik informasi yang boleh menurunkan klasifikasi, dan penurunannya dicatat.",
+  "4.3 Informasi pelanggan minimal RESTRICTED, kecuali pelanggan menetapkan tingkat yang lebih tinggi.",
+  "4.4 Kumpulan informasi dapat naik tingkat (agregasi). Contoh: daftar lengkap IP address server pelanggan beserta versi software-nya minimal RESTRICTED.",
+  "4.5 Pelabelan (Annex A 5.13). Informasi PUBLIC dan INTERNAL boleh tanpa label, dan informasi tanpa label dianggap INTERNAL. Cara memberi label pada tiap media sesuai butir 6.2.",
+  "4.6 Label SECRET pada subjek email menandai email yang terlanjur memuat informasi SECRET. Karena SECRET dilarang disimpan di email (butir 4.8), email berlabel SECRET dilaporkan sebagai pelanggaran sesuai bagian 9 (USULAN).",
+  "4.7 Informasi PUBLIC. Tidak ada batasan untuk penyimpanan, pengiriman, berbagi, grup chat, pencetakan, perangkat kerja, dan removable media. Retensinya sesuai kebutuhan, dan pemusnahannya cukup dengan cara biasa.",
+  "4.8 Penyimpanan (Annex A 7.10). INTERNAL disimpan di sistem resmi SINUX (Drive, Zammad, Service Hub, knowledge base). RESTRICTED disimpan di sistem resmi dengan akses terbatas per peran. SECRET disimpan hanya di password manager (vault) atau sistem khusus ter-encrypt, dan dilarang di dokumen, spreadsheet, chat, ticket, atau email.",
+  "4.9 Pengiriman internal (Annex A 5.14). INTERNAL dikirim melalui kanal kerja resmi. RESTRICTED dikirim melalui kanal resmi kepada penerima yang berhak, dengan share link jika memungkinkan, bukan lampiran. SECRET hanya dikirim melalui fitur berbagi password manager atau direct message yang kemudian dihapus. Penerima merotasi kredensial atau secret itu setelah memakainya.",
+  "4.10 Berbagi ke pihak luar (Annex A 5.14). INTERNAL dibagikan jika ada alasan bisnis. RESTRICTED dibagikan hanya jika ada NDA atau kontrak yang berlaku dan persetujuan Pemilik informasi. SECRET dilarang dibagikan, kecuali kepada pemiliknya; misalnya kredensial pelanggan dikembalikan ke pelanggan.",
+  "4.11 Grup chat, termasuk WhatsApp dan sejenisnya (Annex A 5.14). INTERNAL boleh dikirim ke grup chat. RESTRICTED hanya ke grup kerja resmi dengan anggota terverifikasi, tanpa lampiran topologi lengkap. SECRET dilarang.",
+  "4.12 Cetak (Annex A 7.10). INTERNAL dicetak seperlunya. RESTRICTED dicetak seperlunya, diambil langsung dari printer, dan tidak ditinggal. SECRET dilarang dicetak.",
+  "4.13 Perangkat kerja (Annex A 7.10). INTERNAL ditangani di perangkat kerja. RESTRICTED ditangani di perangkat kerja yang memakai disk encryption dan screen lock. SECRET hanya disimpan di vault dan tidak disalin ke perangkat.",
+  "4.14 Removable media (Annex A 7.10). Pemakaian removable media untuk INTERNAL dihindari. RESTRICTED hanya boleh dalam media ter-encrypt dan dengan persetujuan Lead sub divisi. SECRET dilarang.",
+  "4.15 Retensi (Annex A 5.33). INTERNAL disimpan sesuai master list. RESTRICTED disimpan sesuai master list dan kontrak. SECRET disimpan sesingkat mungkin dan dirotasi berkala.",
+  "4.16 Pemusnahan (Annex A 8.10). INTERNAL dimusnahkan dengan hapus biasa. RESTRICTED dimusnahkan dengan hapus aman, dan kertasnya dihancurkan. SECRET dimusnahkan dengan hapus aman dan rotasi; medianya dihancurkan atau di-wipe menurut SNX-ISMS-SOP-04.",
+  "4.17 Kredensial. Kredensial, token, dan secret dilarang ditulis di chat, ticket, dokumen, spreadsheet, atau paket knowledge base. Personel yang menemukannya di tempat itu segera menghapus dan melaporkannya, lalu Pemilik informasi segera merotasinya (butir 6.4).",
+  "4.18 Kredensial pelanggan. Kredensial pelanggan diterima melalui direct message atau password manager dan dipakai seperlunya. Setelah dipakai, personel meminta pelanggan menggantinya.",
+  "4.19 Dokumen teknis untuk pelanggan pemerintah tidak memuat harga, diskon, tier, maupun roadmap komersial.",
+  "4.20 Data pelanggan di test environment mengikuti klasifikasi aslinya. Data pribadi di-masking jika tidak dibutuhkan untuk uji.",
+  "4.21 Informasi RESTRICTED yang diproses dengan layanan AI atau layanan pihak ketiga hanya boleh memakai layanan yang disetujui SINUX. Informasi SECRET dilarang dimasukkan ke layanan itu."
+ ],
+ "roles": [
+  [
+   "ISMS Coordinator",
+   "Pemilik prosedur ini. Menyosialisasikan prosedur dan memantau kepatuhan terhadapnya.",
+   "Menyetujui pengecualian bersama Pemilik informasi."
+  ],
+  [
+   "Pemilik informasi",
+   "Menetapkan klasifikasi informasi dan mencatatnya di SNX-ISMS-REG-01. Menyetujui akses ke informasinya dan pembagiannya.",
+   "Menetapkan dan menurunkan klasifikasi. Menyetujui pembagian informasi RESTRICTED ke pihak luar dan akses folder Drive. Menyetujui pengecualian bersama ISMS Coordinator."
+  ],
+  [
+   "Seluruh personel",
+   "Personel Divisi Operation dan pihak ketiga yang bekerja atas nama SINUX. Memberi label dan menangani informasi sesuai tingkatnya, serta melaporkan pelanggaran.",
+   "Menangani informasi hanya sebatas aturan tingkatnya."
+  ],
+  [
+   "Head of Operation",
+   "Menegakkan prosedur ini di Divisi Operation, termasuk menindak pelanggaran sesuai kebijakan disipliner perusahaan.",
+   "Meninjau pengecualian di Divisi Operation."
+  ],
+  [
+   "Lead sub divisi",
+   "Menyetujui pemakaian removable media untuk informasi RESTRICTED di sub divisinya.",
+   "Menyetujui atau menolak pemakaian removable media."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Penetapan dan Perubahan Klasifikasi (Annex A 5.12)",
+   "steps": [
+    [
+     "Tetapkan klasifikasi informasi saat informasi dibuat atau diterima, sesuai definisi tingkat di bagian 3 dan butir 4.1 sampai 4.4.",
+     "Pemilik informasi",
+     "Klasifikasi pada kolom Klasifikasi SNX-ISMS-REG-01"
+    ],
+    [
+     "Turunkan klasifikasi informasi (butir 4.2).",
+     "Pemilik informasi",
+     "Klasifikasi baru"
+    ],
+    [
+     "Catat penurunan klasifikasi di SNX-ISMS-REG-01.",
+     "Pemilik informasi",
+     "Penurunan klasifikasi tercatat di SNX-ISMS-REG-01"
+    ]
+   ]
+  },
+  {
+   "title": "Pelabelan (Annex A 5.13)",
+   "steps": [
+    [
+     "Pasang label tingkat di header atau footer setiap halaman dokumen Word, PDF, dan slide, misalnya RESTRICTED (Internal).",
+     "Seluruh personel",
+     "Dokumen berlabel di setiap halaman"
+    ],
+    [
+     "Tulis label tingkat di sheet Kontrol Dokumen atau di header cetak spreadsheet.",
+     "Seluruh personel",
+     "Spreadsheet berlabel"
+    ],
+    [
+     "Jika informasinya RESTRICTED atau SECRET, awali subjek email dengan tingkatnya, misalnya [RESTRICTED].",
+     "Seluruh personel",
+     "Email dengan subjek berlabel"
+    ],
+    [
+     "Sebut tingkat pada nama atau deskripsi folder Drive.",
+     "Seluruh personel",
+     "Folder Drive berlabel"
+    ],
+    [
+     "Setujui izin akses folder Drive sesuai tingkat informasi di dalamnya.",
+     "Pemilik informasi",
+     "Izin akses folder sesuai tingkat"
+    ],
+    [
+     "Isi kolom atau tag klasifikasi pada ticket di Zammad atau Service Hub jika sistem mendukung.",
+     "Seluruh personel",
+     "Ticket dengan kolom atau tag klasifikasi"
+    ],
+    [
+     "Tempel label tingkat di sampul atau halaman pertama media fisik dan kertas.",
+     "Seluruh personel",
+     "Media fisik atau kertas berlabel"
+    ],
+    [
+     "Beri label sensitivity pada entri knowledge base: public, internal, atau restricted per domain (ops, commercial, legal, hr, finance), misalnya restricted:ops.",
+     "Seluruh personel",
+     "Entri knowledge base berlabel"
+    ]
+   ]
+  },
+  {
+   "title": "Penanganan Sesuai Tingkat (Annex A 5.14, 7.10)",
+   "steps": [
+    [
+     "Simpan informasi di sistem dan perangkat yang ditetapkan untuk tingkatnya (butir 4.8 dan 4.13).",
+     "Seluruh personel",
+     "Informasi tersimpan sesuai tingkat"
+    ],
+    [
+     "Kirim informasi ke penerima internal melalui kanal yang ditetapkan untuk tingkatnya (butir 4.9 dan 4.11).",
+     "Seluruh personel",
+     "Informasi terkirim melalui kanal yang diizinkan"
+    ],
+    [
+     "Cetak informasi hanya jika tingkatnya mengizinkan (butir 4.12).",
+     "Seluruh personel",
+     "Cetakan hanya untuk tingkat yang mengizinkan"
+    ],
+    [
+     "Minta persetujuan Pemilik informasi sebelum membagikan informasi RESTRICTED ke pihak luar (butir 4.10).",
+     "Seluruh personel",
+     "Permintaan persetujuan berbagi"
+    ],
+    [
+     "Setujui pembagian informasi RESTRICTED ke pihak luar jika sudah ada NDA atau kontrak yang berlaku.",
+     "Pemilik informasi",
+     "Persetujuan Pemilik informasi; NDA atau kontrak yang berlaku"
+    ],
+    [
+     "Minta persetujuan Lead sub divisi sebelum memakai removable media untuk informasi RESTRICTED (butir 4.14).",
+     "Seluruh personel",
+     "Permintaan persetujuan removable media"
+    ],
+    [
+     "Setujui pemakaian removable media ter-encrypt untuk informasi RESTRICTED.",
+     "Lead sub divisi",
+     "Persetujuan Lead sub divisi"
+    ]
+   ]
+  },
+  {
+   "title": "Penanganan SECRET dan Kredensial (Annex A 5.14, 7.10)",
+   "steps": [
+    [
+     "Kirim informasi SECRET hanya melalui fitur berbagi password manager atau direct message (butir 4.9).",
+     "Seluruh personel",
+     "Informasi SECRET terkirim"
+    ],
+    [
+     "Setelah informasinya terkirim, hapus direct message yang memuat informasi SECRET.",
+     "Seluruh personel",
+     "Direct message terhapus"
+    ],
+    [
+     "Setelah dipakai, rotasi kredensial atau secret yang diterima melalui password manager atau direct message (butir 4.9).",
+     "Seluruh personel",
+     "Kredensial atau secret baru"
+    ],
+    [
+     "Terima kredensial pelanggan melalui direct message atau password manager (butir 4.18).",
+     "Seluruh personel",
+     "Kredensial pelanggan diterima"
+    ],
+    [
+     "Minta pelanggan mengganti kredensialnya setelah dipakai (butir 4.18).",
+     "Seluruh personel",
+     "Permintaan penggantian kredensial ke pelanggan"
+    ],
+    [
+     "Hapus kredensial, token, atau secret yang ditemukan di chat, ticket, dokumen, spreadsheet, atau paket knowledge base (butir 4.17).",
+     "Seluruh personel",
+     "Kredensial terhapus dari tempat itu"
+    ],
+    [
+     "Rotasi kredensial, token, atau secret yang ditemukan di tempat itu.",
+     "Pemilik informasi",
+     "Kredensial atau secret baru"
+    ],
+    [
+     "Laporkan temuan itu sebagai event keamanan sesuai SNX-ISMS-SOP-01.",
+     "Seluruh personel",
+     "Laporan event keamanan; record di SNX-ISMS-FRM-02"
+    ]
+   ]
+  },
+  {
+   "title": "Retensi dan Pemusnahan (Annex A 5.33, 8.10)",
+   "steps": [
+    [
+     "Simpan informasi sampai masa simpannya berakhir (butir 4.15).",
+     "Pemilik informasi",
+     "Informasi tersimpan selama masa simpan menurut tingkatnya"
+    ],
+    [
+     "Musnahkan informasi yang masa simpannya berakhir dengan cara yang sesuai tingkatnya (butir 4.16).",
+     "Pemilik informasi",
+     "Informasi dimusnahkan; media sesuai SNX-ISMS-SOP-04"
+    ]
+   ]
+  },
+  {
+   "title": "Sosialisasi, Pemantauan Kepatuhan, dan Penegakan",
+   "steps": [
+    [
+     "Sosialisasikan prosedur ini kepada seluruh personel.",
+     "ISMS Coordinator",
+     "Catatan sosialisasi (USULAN)"
+    ],
+    [
+     "Pantau kepatuhan terhadap prosedur ini.",
+     "ISMS Coordinator",
+     "Catatan pemantauan kepatuhan (USULAN)"
+    ],
+    [
+     "Tindak pelanggaran prosedur ini sesuai kebijakan disipliner perusahaan.",
+     "Head of Operation",
+     "Tindakan atas pelanggaran"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Informasi dibuat\natau diterima",
+   "b": "Pemilik informasi menetapkan\nklasifikasi; ragu berarti\ntingkat lebih tinggi",
+   "c": "Kredensial atau kunci?",
+   "s": "SECRET: hanya di\npassword manager (vault)\natau sistem ter-encrypt",
+   "d": "Seluruh personel memberi\nlabel (butir 6.2)",
+   "e": "Seluruh personel menangani\nsesuai butir 4.8 sampai 4.16",
+   "f": "Terjadi pelanggaran?",
+   "v": "Laporkan sebagai event keamanan\n(SNX-ISMS-SOP-01)",
+   "g": "Pemilik informasi meninjau atau\nmenurunkan tingkat, dicatat",
+   "h": "Retensi lalu hapus aman\n(SNX-ISMS-SOP-04)"
+  },
+  "shapes": {
+   "c": "diamond",
+   "f": "diamond",
+   "h": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "s",
+    "Ya"
+   ],
+   [
+    "s",
+    "d",
+    "",
+    "dashed"
+   ],
+   [
+    "c",
+    "d",
+    "Tidak"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "e",
+    "f"
+   ],
+   [
+    "f",
+    "v",
+    "Ya"
+   ],
+   [
+    "v",
+    "g",
+    "",
+    "dashed"
+   ],
+   [
+    "f",
+    "g",
+    "Tidak"
+   ],
+   [
+    "g",
+    "h"
+   ]
+  ],
+  "caption": "Gambar 1. Alur klasifikasi dan penanganan informasi. Garis putus-putus kembali ke alur utama."
+ },
+ "sla": [
+  [
+   "Penetapan klasifikasi informasi",
+   "Pemilik informasi",
+   "Saat informasi dibuat atau diterima (butir 4.1)"
+  ],
+  [
+   "Hapus kredensial, token, atau secret yang ditemukan di chat, ticket, dokumen, spreadsheet, atau paket knowledge base",
+   "Seluruh personel",
+   "Segera (butir 4.17)"
+  ],
+  [
+   "Laporan event keamanan atas temuan itu",
+   "Seluruh personel",
+   "Segera (butir 4.17)"
+  ],
+  [
+   "Rotasi kredensial, token, atau secret yang ditemukan di tempat itu",
+   "Pemilik informasi",
+   "Segera (butir 4.17)"
+  ],
+  [
+   "Hapus direct message berisi informasi SECRET",
+   "Seluruh personel",
+   "Setelah informasinya terkirim (butir 4.9)"
+  ],
+  [
+   "Rotasi kredensial atau secret yang diterima melalui password manager atau direct message",
+   "Seluruh personel",
+   "Setelah dipakai (butir 4.9)"
+  ],
+  [
+   "Penggantian kredensial pelanggan",
+   "Seluruh personel",
+   "Pelanggan diminta mengganti setelah dipakai (butir 4.18)"
+  ],
+  [
+   "Pengecualian dari prosedur ini",
+   "Pemilik informasi, ISMS Coordinator",
+   "Berbatas waktu, sesuai batas yang tertulis pada persetujuan (bagian 9)"
+  ],
+  [
+   "Pemantauan kepatuhan",
+   "ISMS Coordinator",
+   "Setiap triwulan (USULAN)"
+  ],
+  [
+   "Review prosedur ini",
+   "ISMS Coordinator",
+   "Setiap tahun"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Pelanggaran penanganan informasi RESTRICTED atau SECRET",
+   "Seluruh personel melaporkannya sebagai event keamanan sesuai SNX-ISMS-SOP-01, serta menghapus dan melaporkan temuan kredensial sesuai butir 6.4. Pemilik informasi merotasi kredensial itu. Head of Operation menindak pelanggaran sesuai kebijakan disipliner perusahaan."
+  ],
+  [
+   "Kebutuhan menyimpang dari aturan prosedur ini",
+   "Seluruh personel mengajukan pengecualian secara tertulis. Pemilik informasi dan ISMS Coordinator menyetujuinya dengan batas waktu. Head of Operation meninjau pengecualian di Divisi Operation."
+  ],
+  [
+   "Pengecualian tidak tertulis, tidak berbatas waktu, atau belum disetujui Pemilik informasi dan ISMS Coordinator",
+   "Pengecualian itu tidak sah. Seluruh personel tetap mengikuti aturan sesuai tingkat informasinya."
+  ]
+ ],
+ "conclusion": [
+  "ISMS Coordinator memantau kepatuhan terhadap prosedur ini, dan Head of Operation menegakkannya di Divisi Operation.",
+  "ISMS Coordinator selaku pemilik prosedur meninjau dokumen ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "SNX-ISMS-REG-01",
+   "Information Asset Register; kolom Pemilik menentukan Pemilik informasi, dan kolom Klasifikasi memuat tingkat tiap aset."
+  ],
+  [
+   "SNX-ISMS-SOP-01",
+   "SOP Information Security Incident Management; pelaporan event keamanan."
+  ],
+  [
+   "SNX-ISMS-SOP-04",
+   "SOP IT Asset & Configuration Management; pemusnahan media."
+  ],
+  [
+   "SNX-ISMS-FRM-02",
+   "Security Incident & Investigation Records; record event keamanan."
+  ],
+  [
+   "SNX-OPS-ML-00",
+   "Master List dokumen Divisi Operation; kolom Masa simpan record dipakai pada butir 4.15."
+  ],
+  [
+   "SNX-ISMS-SOA-01",
+   "Statement of Applicability (SoA); memetakan Annex A 5.12, 5.13, 5.14, 5.33, 7.10, dan 8.10 ke dokumen ini."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; jabatan dan matriks peran."
+  ],
+  [
+   "POL-OPS-001",
+   "Kebijakan Divisi Operation SINUX, DRAFT v0.1; sumber jabatan Head of Operation, Lead NOC, Lead SOC, dan Service Delivery Manager, yang masih berstatus usulan."
+  ]
+ ],
+ "records": [
+  [
+   "Kolom Klasifikasi pada Information Asset Register (SNX-ISMS-REG-01)",
+   "Google Drive; pemilik menurut SNX-ISMS-REG-01",
+   "Berlaku sampai digantikan"
+  ],
+  [
+   "Security Incident & Investigation Records (SNX-ISMS-FRM-02)",
+   "Google Drive; pemilik menurut SNX-ISMS-FRM-02",
+   "5 tahun"
+  ],
+  [
+   "Persetujuan tertulis untuk berbagi RESTRICTED ke pihak luar, removable media, dan pengecualian (USULAN)",
+   "Zammad atau Service Hub; pemilik ISMS Coordinator (USULAN)",
+   "3 tahun (USULAN)"
+  ],
+  [
+   "Catatan sosialisasi dan pemantauan kepatuhan (USULAN)",
+   "Google Drive; pemilik ISMS Coordinator (USULAN)",
+   "3 tahun (USULAN)"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "7.5.3 (Control of documented information)",
+  "ISO/IEC 27001:2022": "Annex A 5.12 (Classification of information), 5.13 (Labelling of information), 5.14 (Information transfer), 5.33 (Protection of records), 7.10 (Storage media), 8.10 (Information deletion)"
+ }
+}

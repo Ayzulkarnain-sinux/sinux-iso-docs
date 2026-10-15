@@ -1,0 +1,53 @@
+{
+ "key": "ISMS-PRO-01",
+ "mode": "sop",
+ "out": "out/08_ISMS/SNX-ISMS-PRO-01 Information Classification & Handling (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2415,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 13,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2384,
+  "calque": [
+   "yang SINUX kelola"
+  ],
+  "lewat": 10,
+  "pointer": 1,
+  "usulan": 13,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 59,
+  "tables_ge3_no_header": 15
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "6.6"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-ISMS-PRO-01 Information Classification & Handling (Rev00 DRAFT).pdf",
+ "pages": 16,
+ "blank": [],
+ "pass": false,
+ "residu": {
+  "at": "2026-10-15T08:33Z",
+  "alasan": "G-4 gerbang 3: gagal kedua pemeriksa bahasa buta (r1: pelaku bagian 9 hilang, butir 4.21 bergeser; r2: butir 4.21 menyempit \"pihak ketiga\" ke \"layanan pihak ketiga\", butir 4.14 bergeser \"informasinya\" ke \"medianya\"). Spec, notes, dan out dikembalikan ke bed1bb6.",
+  "qa": [
+   "qa/ISMS-PRO-01.w10.r1.json",
+   "qa/ISMS-PRO-01.w10.r2.json"
+  ],
+  "percobaan_w10": "reports/w10/residu/ISMS-PRO-01.w10-attempt.json"
+ }
+}

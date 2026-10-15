@@ -1,0 +1,33 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 9, baris 'Pelanggaran penanganan informasi RESTRICTED atau SECRET'",
+   "masalah": "Pelaku hilang. Asal: 'Seluruh personel dan Pemilik informasi menangani temuan kredensial menurut butir 6.4.' Kini kalimat pasif tanpa pihak, melanggar STYLE 2.2 (bagian 9 satu pelaku per langkah) dan menghapus pihak.",
+   "kutipan": "Temuan kredensial ditangani sesuai butir 6.4.",
+   "usul": "Seluruh personel menghapus dan melaporkan temuan kredensial sesuai butir 6.4. Pemilik informasi merotasi kredensial itu."
+  },
+  {
+   "lokasi": "Butir 4.21",
+   "masalah": "Arti aturan bergeser. Asal membatasi layanan yang boleh dipakai ('Pemrosesan informasi RESTRICTED dengan layanan AI atau pihak ketiga hanya lewat layanan yang disetujui SINUX'). Kini 'hanya' melekat pada pemrosesan RESTRICTED secara umum, sehingga terbaca RESTRICTED hanya boleh diproses dengan layanan AI atau pihak ketiga.",
+   "kutipan": "Informasi RESTRICTED hanya boleh diproses dengan layanan AI atau layanan pihak ketiga yang disetujui SINUX.",
+   "usul": "Informasi RESTRICTED yang diproses dengan layanan AI atau layanan pihak ketiga hanya boleh memakai layanan yang disetujui SINUX."
+  }
+ ],
+ "nonblocking": [
+  "Langkah 6.1 nomor 1: rujukan 'menurut definisi di bagian 3' hilang; butir 4.1 sampai 4.4 tidak memuat kriteria tingkat. Usul: 'sesuai definisi tingkat di bagian 3' sebagai satu-satunya rujukan, atau sebut keduanya dalam satu frasa.",
+  "Butir 4.14: 'INTERNAL dihindari' menjadi 'INTERNAL sebaiknya tidak disimpan di removable media'; cakupan menyempit dari pemakaian ke penyimpanan. Usul: 'INTERNAL sebaiknya tidak dipindahkan ke removable media.' atau 'Pemakaian removable media untuk INTERNAL dihindari.'",
+  "Bagian 9, 'Kebutuhan menyimpang': dua kalimat asal digabung sehingga satu kalimat memuat dua pelaku (Pemilik informasi dan ISMS Coordinator; Head of Operation). Pecah lagi menjadi dua kalimat.",
+  "Scope: 'masih berstatus (USULAN)' memakai label sebagai predikat; lebih wajar 'Perluasan cakupan ke seluruh SINUX masih menunggu keputusan (USULAN).'",
+  "Tingkat PUBLIC, INTERNAL, RESTRICTED (Internal), SECRET: arti tidak berubah (dicek definisi dan butir 4.3 sampai 4.21)."
+ ],
+ "contoh_baik": [
+  "Bagian 9: 'Head of Operation menindak pelanggaran menurut butir 6.6.' -> 'Head of Operation menindak pelanggaran sesuai kebijakan disipliner perusahaan.' (sesuai langkah 6.6 nomor 3)."
+ ]
+}

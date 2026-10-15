@@ -1,0 +1,23 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 4 dan 6.1 (Aktivasi Rencana): kalimat penunjuk 'Kriteria aktivasi dan urutan pemutus ada di bagian 4.' diganti fakta lengkap (dua kriteria, urutan Head of Operation -> COO -> Direktur Utama). Sesuai bed1bb6, tidak ada yang menyempit.",
+  "CONCLUSION: 'sesuai jadwal di bagian 8' diganti 'minimal tahunan, setelah aktivasi nyata, dan setelah perubahan besar pada layanan atau supplier', sama persis dengan baris SLA. Langkah 6.5 no. 11 masih 'sesuai jadwal di bagian 8'; boleh, tapi dua bentuk untuk hal yang sama.",
+  "Bagian 9, Kehilangan layanan kritis: rujukan 'butir 6.4 langkah 5' diganti 'salinan offline encryption key yang disimpan Lead NOC di luar password manager (USULAN)'. Pihak dan label cocok dengan 6.4 langkah 5 yang berlabel USULAN. Benar.",
+  "Definisi Parent ticket: rujukan SNX-ISMS-SOP-01 sebagai sumber aturan 'satu per insiden' hilang, faktanya tetap. Arti tidak berubah, tapi jejak sumber aturan hilang; pertimbangkan 'sesuai SNX-ISMS-SOP-01' di akhir kalimat.",
+  "Bagian 9, Kegagalan platform upstream: urutan kalimat diubah (Recovery Lead dulu semua, lalu Service Delivery Manager). Arti tetap karena kedua pihak berjalan paralel, dan 'lalu' antara pemindahan VM dan pemulihan dari backup dipertahankan.",
+  "Bagian 9, Gangguan internet atau kantor: 'Head of Operation meminta personel on-call bekerja jarak jauh dengan laptop kerja, mengakses sistem melalui Jumphost ..., serta melalui VPN' membuat pelaku 'mengakses' bisa terbaca Head of Operation. Usul: '... bekerja jarak jauh dengan laptop kerja dan mengakses sistem melalui Jumphost sesuai SNX-ISMS-SOP-02 serta VPN.'",
+  "'Head of Operation sebagai pelaku langkah ini masih menunggu keputusan (USULAN)' agak kaku; tidak jelas keputusan siapa. Usul: 'Penetapan Head of Operation sebagai pelaku langkah ini masih menunggu keputusan (USULAN).'",
+  "Definisi Laporan uji 'Record (rekaman)': padanan tidak perlu karena record ada di glossary; boleh dibiarkan."
+ ],
+ "contoh_baik": [
+  "Lead SOC | Incident Commander keamanan bila ada unsur keamanan: memimpin respons keamanan menurut SNX-ISMS-SOP-01. -> Lead SOC | Menjadi Incident Commander keamanan jika ada unsur keamanan dan memimpin respons keamanan sesuai SNX-ISMS-SOP-01."
+ ]
+}

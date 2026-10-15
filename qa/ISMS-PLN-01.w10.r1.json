@@ -1,0 +1,33 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 6, pengantar 6.1 Aktivasi Rencana",
+   "masalah": "Pointer 'Kriteria aktivasi dan urutan pemutus ada di bagian 4' diganti fakta yang menyempit: syarat pengalihan pemutus (pemutus berikutnya hanya memutuskan jika pemutus sebelumnya tidak tersedia) hilang, sehingga 'urutan' bisa dibaca sebagai tiga pihak yang memutuskan berurutan.",
+   "kutipan": "Urutan pemutusnya: Head of Operation, COO, lalu Direktur Utama.",
+   "usul": "Aktivasi diputuskan Head of Operation; jika Head of Operation tidak tersedia, keputusan diambil COO, dan jika keduanya tidak tersedia, keputusan diambil Direktur Utama."
+  },
+  {
+   "lokasi": "Bagian 3, definisi Tingkat",
+   "masalah": "Pointer 'Urutan pemulihannya ada di bagian 4' diganti fakta yang tidak lengkap: hanya Tingkat 1 yang disebut; urutan Tingkat 2 lalu Tingkat 3 serta pengecualian akses dan monitoring dipulihkan paling awal hilang.",
+   "kutipan": "Angka 1 sampai 3 yang menunjukkan prioritas pemulihan sebuah layanan kritis; Tingkat 1 dipulihkan lebih dulu.",
+   "usul": "Angka 1 sampai 3 yang menunjukkan prioritas pemulihan sebuah layanan kritis; Tingkat 1 dipulihkan lebih dulu, lalu Tingkat 2, lalu Tingkat 3."
+  }
+ ],
+ "nonblocking": [
+  "Roles, Recovery Lead: 'sesuai urutan di bagian 4' menjadi 'sesuai urutan Tingkat'; pengecualian akses (password manager dan Jumphost) dan monitoring dipulihkan paling awal tidak lagi tercakup di sel ini (tetap ada di langkah 6.2 nomor 5). Usul: 'sesuai urutan Tingkat, dengan akses dan monitoring dipulihkan paling awal'.",
+  "Bagian 9, 'Gangguan internet atau kantor': 'Penetapan Head of Operation sebagai pelaku masih (USULAN).' memakai label sebagai predikat. Usul: 'Head of Operation sebagai pelaku langkah ini masih menunggu keputusan (USULAN).'",
+  "Bagian 9, 'Kontrak pelanggan menetapkan RTO yang berbeda': label (USULAN) dipindah ke akhir butir sehingga kini bisa dibaca mencakup 'Recovery Lead memakai RTO kontrak itu', padahal di bagian 4 RTO layanan pelanggan mengikuti kontrak tanpa label. Usul: 'Service Delivery Manager menyampaikan RTO kontrak ke Recovery Lead (USULAN). Recovery Lead memakai RTO kontrak itu.' atau jelaskan cakupan label.",
+  "Bagian 9, 'Gangguan internet atau kantor': 'melalui VPN serta Jumphost sesuai SNX-ISMS-SOP-02' kini mengesankan VPN juga diatur SNX-ISMS-SOP-02; asal hanya Jumphost yang dirujuk.",
+  "Definisi Parent ticket: rujukan SNX-ISMS-SOP-01 untuk aturan satu parent ticket per insiden hilang; faktanya tetap ada, jadi tidak menyempit."
+ ],
+ "contoh_baik": [
+  "Kesimpulan: 'meninjau rencana ini sesuai jadwal di bagian 8' -> 'meninjau rencana ini minimal tahunan, setelah aktivasi nyata, dan setelah perubahan besar pada layanan atau supplier' (fakta pengganti lengkap sesuai bagian 8)."
+ ]
+}

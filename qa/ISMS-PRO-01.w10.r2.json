@@ -1,0 +1,34 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [
+  {
+   "lokasi": "Butir 4.21",
+   "masalah": "Arti menyempit. Asal mengatur pemrosesan dengan 'layanan AI atau pihak ketiga'; kini 'layanan AI atau layanan pihak ketiga', sehingga pemrosesan oleh pihak ketiga yang bukan layanan (vendor, kontraktor) tidak lagi tercakup. Subjek kalimat juga janggal: informasi 'memakai' layanan.",
+   "kutipan": "Informasi RESTRICTED yang diproses dengan layanan AI atau layanan pihak ketiga hanya boleh memakai layanan yang disetujui SINUX.",
+   "usul": "Pemrosesan informasi RESTRICTED dengan layanan AI atau pihak ketiga hanya boleh melalui layanan yang disetujui SINUX."
+  },
+  {
+   "lokasi": "Butir 4.14",
+   "masalah": "Arti bergeser. Asal 'RESTRICTED hanya ter-encrypt' mensyaratkan informasinya ter-encrypt; kini 'dalam media ter-encrypt' mensyaratkan medianya. File ter-encrypt di USB biasa sah menurut bed1bb6 tetapi tidak menurut W10.",
+   "kutipan": "RESTRICTED hanya boleh dalam media ter-encrypt dan dengan persetujuan Lead sub divisi.",
+   "usul": "RESTRICTED hanya boleh disimpan dalam keadaan ter-encrypt dan dengan persetujuan Lead sub divisi."
+  }
+ ],
+ "nonblocking": [
+  "Bagian 9 baris Pelanggaran: rujukan 'butir 6.6' diganti 'kebijakan disipliner perusahaan', sama dengan 6.6 langkah 3. Rujukan 'menangani temuan kredensial menurut butir 6.4' dipecah lengkap: Seluruh personel menghapus dan melaporkan, Pemilik informasi merotasi. Satu pelaku per kalimat. Benar.",
+  "Butir 4.6: label (USULAN) dipindah ke akhir butir sesuai STYLE §3.5. Pelapor 'Seluruh personel' menjadi pasif 'dilaporkan'; boleh di Policy karena Roles menyebut Seluruh personel melaporkan pelanggaran.",
+  "Butir 4.13: 'SECRET hanya di vault' (elipsis 'ditangani') menjadi 'hanya disimpan di vault'. Cakupannya sedikit lebih sempit dari 'ditangani'. Usul: 'SECRET hanya ditangani di vault dan tidak disalin ke perangkat.'",
+  "Butir 4.17: 'lalu Pemilik informasi segera merotasinya' menambah urutan yang tidak ada di asal ('dan ... segera'); SLA tetap 'Segera' untuk keduanya. Usul ganti 'lalu' dengan 'dan'. Juga 'Personel yang menemukannya' dan 4.18 'personel' sebaiknya memakai nama peran 'Seluruh personel'.",
+  "Definisi RESTRICTED (Internal): 'Informasi hanya untuk' menjadi 'Informasi khusus untuk'. Arti eksklusif masih terbaca, tetapi 'hanya' lebih tegas untuk tingkat klasifikasi; disarankan dikembalikan.",
+  "SCOPE: 'rekaman' dalam daftar bentuk informasi diganti mekanis menjadi 'record'. Jika maksud asalnya rekaman audio/video (rekaman sesi, panggilan), artinya bergeser; pastikan ke penyusun."
+ ],
+ "contoh_baik": [
+  "4.17 Seluruh personel tidak menulis kredensial, token, dan secret di chat, tiket, ... -> Kredensial, token, dan secret dilarang ditulis di chat, ticket, dokumen, spreadsheet, atau paket knowledge base."
+ ]
+}

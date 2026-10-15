@@ -215,3 +215,44 @@ Satu butir sweep, dua perubahan di specs/ISMS-PLN-01.json. Fakta, angka, nama, d
 | 1b | Bagian 4, butir kesiapan (Annex A 5.30) | "... Langkah tiap peran ada di butir 6.4." tanpa label pada pelaku | "... Pelaku berstatus (USULAN); langkah tiap peran ada di butir 6.4." Sama dengan pengantar 6.4 dan USULAN U4; label ini menambah satu hitungan lint (19) |
 
 Uji sesudah sweep: render_sop dan lint_doc sop pass (fails kosong, tanpa warn PIC SLA; satu warn 19 label USULAN), validate.py "All validations PASSED!", blankscan "ok".
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label dipindah ke akhir butir: Roles Head of Operation (asli: "Memastikan kesiapan sumber daya (USULAN). Meninjau dan memperbarui rencana."), bagian 9 RTO kontrak (asli: "Service Delivery Manager menyampaikan RTO kontrak ke Recovery Lead (USULAN), dan Recovery Lead memakai RTO kontrak itu."). Bagian 9 kehilangan layanan kritis mendapat (USULAN) baru karena rujukan ke 6.4 langkah 5 (berlabel) diganti faktanya. Jumlah label 19 menjadi 20.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi Tingkat: "Urutan pemulihannya ada di bagian 4." diganti fakta "Tingkat 1 dipulihkan lebih dulu."
+- Definisi Laporan uji: "Isi minimalnya ada di bagian 4." (penunjuk, dihapus).
+- Definisi Direktur (COO): "Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO setelah sebutan ini." diringkas menjadi satu kalimat fakta.
+- Definisi Parent ticket: "(SNX-OPS-SOP-04), satu per insiden (SNX-ISMS-SOP-01)" menjadi satu rujukan per sel.
+- Policy kesiapan sumber daya: "Pelaku berstatus (USULAN); langkah tiap peran ada di butir 6.4." diganti "Pembagian pelaku ini masih menunggu penetapan Head of Operation (USULAN)." (fakta intro butir 6.4).
+- Roles Recovery Lead: "sesuai urutan di bagian 4" menjadi "sesuai urutan Tingkat".
+- Intro 6.1: "Kriteria aktivasi dan urutan pemutus ada di bagian 4." diganti fakta kriteria dan urutan pemutus dari bagian 4.
+- Intro 6.5: "Frekuensi tiap uji ada di bagian 8." (penunjuk, dihapus).
+- Bagian 9 kehilangan layanan kritis: "dari butir 6.4 langkah 5" diganti fakta langkah itu (disimpan Lead NOC di luar password manager, USULAN).
+- Bagian 9 ketidaktersediaan personel kunci: "(butir 6.4 langkah 2)" (rujukan, dihapus).
+- Conclusion: "sesuai jadwal di bagian 8" diganti jadwal dari tabel SLA (minimal tahunan, setelah aktivasi nyata, setelah perubahan besar).
+
+### W10 selisih angka
+- 6.4: hilang karena rujukan "butir 6.4" di Policy dan "butir 6.4 langkah 2/5" di bagian 9 diganti faktanya; butir 6.4 (Kesiapan Sumber Daya) tetap ada.
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
+- "Bila" di awal kalimat diganti "Jika"; kolom PIC, nama peran, dan heading tidak diubah.
+- Jembatan istilah: Record (rekaman), Review (tinjauan), Root cause analysis (analisis akar masalah) pada kemunculan pertama.
+
+### W10 rujukan USULAN dicek
+- .exceptions[5][1]: rujukan "(butir 6.4 langkah 2)" dibuang tanpa menyatakan ulang isi berlabel; pelaku Head of Operation di bagian 9 ini tidak berlabel di bed1bb6.
+
+### W10 putaran perbaikan 1 (qa/ISMS-PLN-01.w10.r1.json)
+- Intro 6.1: urutan pemutus kini memuat syarat pengalihan (COO hanya jika Head of Operation tidak tersedia; Direktur Utama hanya jika keduanya tidak tersedia), sama dengan bagian 4.
+- Definisi Tingkat, Policy kesiapan sumber daya, Roles Recovery Lead, bagian 9 personel kunci: rujukan bagian 4 / butir 6.4 / butir 6.4 langkah 2 dikembalikan. Akibatnya "6.4" tidak lagi hilang; catatan selisih angka di atas tidak berlaku lagi.
+- Bagian 9 RTO kontrak: label (USULAN) kembali melekat hanya pada penyampaian RTO oleh Service Delivery Manager, sama dengan bed1bb6.
+- Bagian 9 gangguan internet atau kantor: Jumphost saja yang merujuk SNX-ISMS-SOP-02; label tidak lagi menjadi predikat.
+
+### W10 audit pointer
+- .definitions[28][1]: pointer murni dibuang, isi tidak dinyatakan ulang (isi minimal laporan uji tetap di bagian 4).
+- .procedures[0].intro[0]: lengkap (dua kriteria aktivasi, tiga pemutus berurutan, syarat "tidak tersedia" untuk COO dan Direktur Utama; bagian 4 tanpa label).
+- .procedures[4].intro[0]: pointer murni dibuang, isi tidak dinyatakan ulang (frekuensi uji tetap di tabel bagian 8).
+- .exceptions[2][1]: lengkap (salinan offline encryption key, disimpan Lead NOC, di luar password manager, label (USULAN) dari 6.4 langkah 5 ikut dibawa; SNX-ISMS-SOP-03 sudah disebut di kalimat yang sama).
+- .conclusion[0]: lengkap (jadwal review bagian 8: minimal tahunan, setelah aktivasi nyata, setelah perubahan besar pada layanan atau supplier; tanpa label).
