@@ -118,3 +118,11 @@ Wave berjalan: W7. Hitungan state: {'DONE': 70, 'HOLD': 16, 'SKIP': 2}. Guide te
 - reports/w8/blankscan.txt: 53 docx, 0 halaman kosong
 - reports/w8/selftest.txt: 6 OK
 - reports/w8/w8_summary.json: ringkasan Master List (88 baris)
+
+## Penutupan W8 (01.22 UTC)
+
+| Butir | Status | Bukti |
+|---|---|---|
+| Commit penutupan | ter-push | 01509a9 |
+| Paket staging final iso-run-20261015-final | diterima, id 1982, PENDING, restricted:commercial | ledger.json staging_final |
+| Watchdog trig_019ozEXtQHFx15RYPLaPZBrG | dihapus sebelum terpicu | ledger.json watchdog_log |

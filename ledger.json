@@ -3,9 +3,9 @@
  "runbook": "v19-e",
  "defaults_version": "v21",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W8",
+ "current_wave": "W8-DONE",
  "last_guide_seen": 1,
- "watchdog_trigger_id": "trig_019ozEXtQHFx15RYPLaPZBrG",
+ "watchdog_trigger_id": null,
  "gaspol": true,
  "tech_fixes": [
   {
@@ -2678,6 +2678,10 @@
   {
    "at": "2026-10-15T00:39Z",
    "event": "trig_01RBVjRrymMTgNFkNkymM1wz fired while active; new trig_019ozEXtQHFx15RYPLaPZBrG fires 01:24Z"
+  },
+  {
+   "at": "2026-10-15T01:21Z",
+   "event": "trig_019ozEXtQHFx15RYPLaPZBrG deleted at W8 close (not fired)"
   }
  ],
  "retractions": [
@@ -2709,5 +2713,13 @@
    "agent": "pemeriksa sweep",
    "what": "Menjalankan git status/log (hanya baca) padahal prompt melarang git; tidak ada perubahan keadaan. Dicatat apa adanya."
   }
- ]
+ ],
+ "staging_final": {
+  "request_id": "iso-run-20261015-final",
+  "id": 1982,
+  "status": "PENDING",
+  "sensitivity": "restricted:commercial",
+  "at": "2026-10-15T01:22Z",
+  "based_on_commit": "01509a9"
+ }
 }

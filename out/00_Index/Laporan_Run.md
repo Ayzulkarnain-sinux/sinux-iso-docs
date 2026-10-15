@@ -135,7 +135,7 @@ Temuan tidak memblokir lain per dokumen tersimpan di qa/<KODE>.verify.json dan q
 | 15 Okt 00.50 | Arahan LEAD G-1 (frasa meta) | Dipatuhi: sweep sebelum Master List, ukur ulang nol, commit "polish" sejak G-1 terbaca (delapan sweep sebelumnya ter-commit "DONE") |
 | Beberapa kali | Pemeriksa menjalankan git log/status hanya baca padahal prompt melarang git | Tidak ada perubahan keadaan; prompt diperjelas |
 
-Nol mutasi Google Drive, nol tulisan ke kanon KB, nol tanda tangan atau tanggal efektif, nol kredensial di keluaran.
+Nol mutasi Google Drive, nol tulisan ke kanon KB, nol tanda tangan atau tanggal efektif, nol kredensial di keluaran. Ringkasan run ini dikirim ke antrean tinjauan admin pada 15 Okt 01.22 UTC (status PENDING, menunggu tinjauan owner).
 
 ## Cara unduh dan unggah
 
