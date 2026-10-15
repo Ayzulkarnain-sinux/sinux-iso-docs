@@ -4,7 +4,7 @@
   "number": "SNX-HR-SOP-08",
   "department": "Human Resources",
   "title": "Company Leaves",
-  "process_owner": "HR Manager",
+  "process_owner": "HR Lead",
   "classification": "INTERNAL",
   "review_period": "YEARLY",
   "status": "Draft",
@@ -13,7 +13,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
-   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -162,7 +162,7 @@
    "Mencatat alfa dan mengubah data tanggungan karyawan."
   ],
   [
-   "HR Manager",
+   "HR Lead",
    "Pemilik SOP. Memutuskan atas nama Perusahaan: cuti tanpa dibayar, lama cuti musibah, persetujuan surat keterangan dokter sakit berkepanjangan, tahap upah sakit berkepanjangan, dan sanksi alfa (USULAN, butir 6.1, 6.4, dan bagian 9).",
    "Mewakili Perusahaan dalam keputusan tersebut, dalam batas delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
   ],
@@ -201,12 +201,12 @@
     ],
     [
      "Setujui atau tolak cuti tanpa dibayar atas nama Perusahaan (butir 4.31).",
-     "HR Manager",
-     "Keputusan HR Manager atas cuti tanpa dibayar"
+     "HR Lead",
+     "Keputusan HR Lead atas cuti tanpa dibayar"
     ],
     [
      "Tetapkan jumlah hari cuti musibah atas nama Perusahaan (butir 4.25 huruf i).",
-     "HR Manager",
+     "HR Lead",
      "Jumlah hari cuti musibah"
     ],
     [
@@ -274,12 +274,12 @@
     ],
     [
      "Setujui atau tolak surat keterangan dokter atas nama Perusahaan (butir 4.15).",
-     "HR Manager",
-     "Keputusan HR Manager atas surat keterangan dokter"
+     "HR Lead",
+     "Keputusan HR Lead atas surat keterangan dokter"
     ],
     [
      "Tetapkan persentase upah menurut lama sakit sesuai butir 4.16.",
-     "HR Manager",
+     "HR Lead",
      "Persentase upah per tahap sakit"
     ]
    ]
@@ -456,7 +456,7 @@
     "j"
    ]
   ],
-  "caption": "Gambar 1. Alur pengajuan cuti. Cuti tanpa dibayar, cuti musibah, dan sakit berkepanjangan juga memerlukan keputusan HR Manager (butir 6.1 dan 6.4)."
+  "caption": "Gambar 1. Alur pengajuan cuti. Cuti tanpa dibayar, cuti musibah, dan sakit berkepanjangan juga memerlukan keputusan HR Lead (butir 6.1 dan 6.4)."
  },
  "sla": [
   [
@@ -519,24 +519,24 @@
   ],
   [
    "Haid tidak diberitahukan",
-   "HRGA Officer mencatat alfa, dan HR Manager menentukan surat peringatan serta pemotongan cuti tahunan (butir 4.17, USULAN pelaku)."
+   "HRGA Officer mencatat alfa, dan HR Lead menentukan surat peringatan serta pemotongan cuti tahunan (butir 4.17, USULAN pelaku)."
   ],
   [
    "Alfa",
-   "HR Manager menentukan sanksi menurut butir 4.34 dan 4.35 (USULAN pelaku)."
+   "HR Lead menentukan sanksi menurut butir 4.34 dan 4.35 (USULAN pelaku)."
   ],
   [
    "Sakit berkepanjangan saat cuti tahunan",
-   "HR Manager menjalankan ketentuan peraturan perundang-undangan dan kebijakan Perusahaan tanpa mengurangi hak normatif pekerja (butir 4.12, USULAN pelaku)."
+   "HR Lead menjalankan ketentuan peraturan perundang-undangan dan kebijakan Perusahaan tanpa mengurangi hak normatif pekerja (butir 4.12, USULAN pelaku)."
   ],
   [
    "Cuti ibadah untuk kedua kalinya atau lebih",
-   "HR Manager menetapkan cuti itu tanpa upah (butir 4.27, USULAN pelaku)."
+   "HR Lead menetapkan cuti itu tanpa upah (butir 4.27, USULAN pelaku)."
   ]
  ],
  "conclusion": [
-  "HR Manager selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan permohonan cuti di sistem HR dengan aturan di bagian 4 (USULAN).",
-  "HR Manager meninjau SOP ini setiap tahun."
+  "HR Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan permohonan cuti di sistem HR dengan aturan di bagian 4 (USULAN).",
+  "HR Lead meninjau SOP ini setiap tahun."
  ],
  "related_documents": [
   [
@@ -560,17 +560,17 @@
   [
    "Permohonan dan persetujuan cuti",
    "Sistem HR; pemilik HRGA Officer (USULAN)",
-   "Belum ditetapkan; HR Manager menetapkan bersama Legal (USULAN)"
+   "Belum ditetapkan; HR Lead menetapkan bersama Legal (USULAN)"
   ],
   [
    "Dokumen pendukung cuti: surat keterangan dokter, surat dokter dengan HPL, dokumentasi ibadah haji, surat resmi instansi pemerintah",
    "Folder Google Drive Departemen HR; pemilik HRGA Officer (USULAN)",
-   "Belum ditetapkan; HR Manager menetapkan bersama Legal (USULAN)"
+   "Belum ditetapkan; HR Lead menetapkan bersama Legal (USULAN)"
   ],
   [
    "Catatan alfa, cuti haid, dan Surat Peringatan",
    "Folder Google Drive Departemen HR; pemilik HRGA Officer (USULAN)",
-   "Belum ditetapkan; HR Manager menetapkan bersama Legal (USULAN)"
+   "Belum ditetapkan; HR Lead menetapkan bersama Legal (USULAN)"
   ]
  ],
  "iso_refs": {

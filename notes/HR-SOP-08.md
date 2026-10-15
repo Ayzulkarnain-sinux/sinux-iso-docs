@@ -186,7 +186,7 @@ Total: 16 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 18 oleh lin
 | 14 | Pasal 29 (izin keluar atau terlambat) merujuk tata tertib kerja tanpa nomor pasal; dikecualikan dari SOP ini, dan perlu dokumen terpisah bila diminta | Aziz |
 | 15 | Sumber tanpa kode, revisi, tanggal, pemilik, dan penyetuju; "PP" diduga Peraturan Perusahaan dan bab lain tidak ada di batch; belum ada penetapan resmi atas isi BAB VI sebagai aturan SINUX | Aziz, Samuel |
 | 16 | Penomoran ayat dan butir huruf tidak diukur ulang dari biner docx (hasil download tidak tersimpan ke berkas); bila verifikator mendekode docx, cocokkan butir 4.x dengan numbering.xml | Verifikator |
-| 17 | Kepemilikan: HR Manager sebagai Process Owner berasal dari aturan defaults, bukan dari sumber (sumber tanpa "Pemilik dokumen") | Aziz |
+| 17 | Kepemilikan: HR Manager sebagai Process Owner berasal dari aturan defaults, bukan dari sumber (sumber tanpa "Pemilik dokumen") | Aziz; ditutup W9: process_owner kini HR Lead (defaults v22) |
 | 18 | Hak normatif dan peraturan perundang-undangan yang dirujuk sumber secara umum (Pasal 23 ayat (2) huruf k, Pasal 26 ayat (1) dan (8)) tidak dicek terhadap regulasi terkini | Legal |
 
 ## 7. Pemeriksaan bahasa (dua pertanyaan, dijawab sebelum selesai)
@@ -229,3 +229,20 @@ Putaran penghalusan sesudah DONE (instruksi orkestrator, berkas sweep HR-SOP-08)
 Penjelasan yang dipindah dari badan dokumen ke notes ini: penerima surat keterangan dokter (U4), pemanggil (U3, U4), urutan pengajuan cuti mendesak (U9), label subjek Pasal 34 ayat (2) huruf a (U8), akibat penolakan (U11), nama sistem HR (open item 1), rumus prorata (open item 3), pelaku pemotongan gaji dan SP (open item 7), banding dan pencatatan alasan penolakan (open item 12).
 
 Tidak diubah karena di luar daftar butir Sweep (untuk keputusan orkestrator): (a) kata "sumber" di Scope kalimat terakhir ("Hanya pengecualian pertama berasal dari sumber..."), di pengantar bagian 4 ("sama dengan sumber"), di 6.5 langkah 1 ("USULAN: sumber menyebut Perusahaan tanpa penerima"), dan di Dokumen terkait baris UU No. 13 Tahun 2003 ("dikutip apa adanya dari sumber"); (b) temuan pemeriksa lain di qa/HR-SOP-08.verify.json: rujukan Pasal 22 di Scope, "butir" untuk 4.x dan 6.x, SP1 sampai SP3 yang tidak dipakai di badan, dua baris SLA berisi syarat atau jumlah, tugas HRGA Officer sebagai penerima surat dokter dan tugas HR Manager di bagian 9 yang belum ada di tabel peran, serta label USULAN yang terlalu luas pada baris Atasan langsung di tabel peran.
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 | Process Owner di sampul: HR Manager | HR Lead |
+| A2 | Blok Reviewed: Aziz Priyo Widakdo / HR Manager | Aziz Priyo Widakdo / HR Lead |
+| A2 | Tabel peran bagian 5, nama peran | HR Manager | HR Lead |
+| A2 | Langkah bagian 6 (kolom PIC dan rekaman Keputusan HR Manager, 6 kemunculan) | HR Manager | HR Lead |
+| A2 | Keterangan gambar alur bagian 7 | keputusan HR Manager (butir 6.1 dan 6.4) | keputusan HR Lead (butir 6.1 dan 6.4) |
+| A2 | Bagian 9 (4 baris), kesimpulan (2 kalimat), tabel rekaman (3 sel retensi) | HR Manager | HR Lead |
+
+- SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan.
+- A3 tidak berlaku: dokumen tidak menyebut JA-03 atau JA-04. B4 tidak berlaku: tidak ada rujukan ke SNX-HR-FRM-01, FRM-02, RPT-01, atau SOP T&D. Lane diagram tidak memuat HR Manager (lane: Karyawan, Atasan langsung, HRGA Officer, Direktur Utama), jadi tidak berubah.
+
+Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
+- ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.

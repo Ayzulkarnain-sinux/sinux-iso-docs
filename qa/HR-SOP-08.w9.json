@@ -1,0 +1,31 @@
+{
+ "key": "HR-SOP-08",
+ "cluster": "HR-LAIN",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "notes/HR-SOP-08.md bagian ISO-W9: baris 'Tabel peran bagian 5, nama peran | HR Manager | HR Lead' berisi 4 sel pada tabel 3 kolom (pemisah '|' di dalam sel butir), jadi tabel markdown rusak satu baris. Kosmetik, hanya di notes.",
+  "Tabel rekaman (3 sel retensi) masih menulis 'bersama Legal', bukan 'Departemen Legal'. Teks ini tidak berubah oleh W9 dan bukan 'Divisi Legal', jadi tidak melanggar unit_names v22. Bisa diseragamkan nanti bila LEAD mau."
+ ],
+ "butir_dikerjakan": [
+  "A2: 19 kemunculan 'HR Manager' diganti 'HR Lead' (render sebelum: HR Manager 19 / HR Lead 0; sesudah: HR Manager 0 / HR Lead 19). Lokasinya: process_owner, blok Reviewed ('Aziz Priyo Widakdo / HR Lead', sama persis dengan defaults v22 prepared_reviewed.HR.reviewed), nama peran di bagian Peran, PIC dan rekaman langkah 6 (6 kemunculan), keterangan Gambar 1, bagian 9 (4 baris), kesimpulan (2 kalimat), retensi rekaman (3 sel).",
+  "A2 SPV: tidak ditambahkan karena dokumen tidak punya kolom tingkat jabatan. Alasannya tercatat di notes.",
+  "Blok approval dicek terhadap defaults v22: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director' (approved_by.all). Ketiganya cocok.",
+  "Diagram: node dan lane tidak memuat HR Manager (lane Karyawan, Atasan langsung, HRGA Officer, Direktur Utama), jadi tidak perlu diubah. Tercatat di notes.",
+  "Notes punya bagian '## ISO-W9' dengan tabel perubahan. Open item 17 diubah statusnya menjadi 'ditutup W9' tanpa dihapus.",
+  "Pemeriksaan makna: semua perubahan hanya mengganti istilah 'HR Manager' menjadi 'HR Lead'. Tidak ada fakta, angka, struktur, atau rujukan butir lain yang berubah, dan tidak ada em-dash baru (em-dash di render: 0)."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Tidak ada butir wajib yang terlewat. Butir yang tidak berlaku untuk HR-SOP-08: A3 (dokumen tidak menyebut JA-03 atau JA-04; grep render: 0), B4 'dalam peninjauan' dan repeat_header (khusus HR-FRM-02 dan HR-RPT-01), butir 5 (khusus HR-FRM-02). Tidak ada rujukan silang yang diubah atau ditambah."
+ ],
+ "grep": "Teks sesudah (/tmp/claude-0/w9/render/HR-SOP-08.docx): 'HR Manager' = 0, 'HR Lead' = 19, 'Divisi Legal' = 0, em-dash = 0, JA-03/JA-04 = 0. specs/HR-SOP-08.json: grep 'Manager' = 0. Pembanding out/ sebelum W9: 'HR Manager' = 19.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
