@@ -11,7 +11,7 @@ Hasil uji terakhir: render_sop.py lalu lint_doc.py generic = "pass": true, fails
 | SINUX_Job_Analysis_2026.docx (51426 byte) | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 | 2026-10-13T10:34:44.783Z (get_file_metadata, cocok dengan worklist) | read_file_content, teks penuh 15 jabatan |
 | POL-OPS-001_Kebijakan_Divisi_Operation_SINUX.docx (111296 byte) | 1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv | 2026-10-13T09:06:27.051Z (get_file_metadata, cocok dengan worklist) | read_file_content, teks penuh bagian 1 sampai 13 |
 | Lampiran 2 Struktur-Organisasi PT. SINUX.docx (19115 byte) | 1FaPdUww5zNl0O9ZyYg2_Z2nCoU7QMsEg | 2026-09-05T15:48:26Z (get_file_metadata, cocok dengan worklist) | read_file_content dan download_file_content; document.xml didekode di /tmp/pen-HR-ORG-01/ dengan python3 -I |
-| Kriteria penerimaan | config/checklist.json baris 21 | Description null | Kriteria = substansi sumber tim + acuan klausul ISO (USULAN, dikonfirmasi konsultan). Checklist tidak memberi acuan klausul untuk baris ini |
+| Kriteria penerimaan | config/checklist.json baris 21 | Description null | Kriteria = substansi sumber tim + acuan klausul ISO (USULAN, perlu konfirmasi konsultan). Checklist tidak memberi acuan klausul untuk baris ini |
 | Pendukung (bahan, bukan sumber utama) | context/audit hr, ops, isms, legal, fat, sintesis | salinan audit 13 sampai 14 Okt | Dibaca lewat salinan audit (DATA). Dipakai hanya untuk: nama peran Finance Lead dan Finance Staff, Line Manager Legal dan Staff Legal, ISMS Coordinator di matriks peran (bagian 8 dokumen), dan untuk catatan K-13 |
 
 Catatan W0 untuk baris ini: Checklist menautkan berkas 1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0. Saya ulang hari ini: get_file_metadata menjawab "Requested entity was not found". Pencarian judul "Struktur Organisasi" hanya menemukan Lampiran 2 di atas dan satu memo struktur dari perusahaan lain (PT Era Awan Digital); memo itu residu pihak lain dan tidak dipakai. Berkas tim untuk baris 21 tetap tidak terlihat; lihat open item 1.
@@ -62,7 +62,7 @@ Isi Lampiran 2 (decode document.xml, 13188 byte): sepuluh potongan teks, "STRUKT
 
 ## 3. Pemetaan klausul ISO
 
-Checklist tidak memberi acuan klausul untuk baris ini. Bagian Acuan Klausul ISO memuat empat klausul dengan satu label "(USULAN, dikonfirmasi konsultan)". Judul klausul adalah pengetahuan standar, bukan teks sumber tim.
+Checklist tidak memberi acuan klausul untuk baris ini. Bagian Acuan Klausul ISO memuat empat klausul dengan satu label "(USULAN, perlu konfirmasi konsultan)". Judul klausul adalah pengetahuan standar, bukan teks sumber tim.
 
 | Klausul | Di bagian dokumen | Alasan |
 |---|---|---|
@@ -110,7 +110,7 @@ grep -n pada tiga fileId: 1m91... ada di iso-sinux-supdocs-hr (bagian HR-JA-001)
 | 12 | Teks B dan F identik di 15 jabatan; kalimat batasan umum identik | Batasan umum dikutip satu kali sebagai satu paragraf di Matriks Peran, tidak diulang per jabatan |
 | 13 | Masa pengalaman minimum belum ada | Tidak berlaku bagi dokumen ini |
 | 14 | Jumlah tabel 34 lawan 17 | Tidak berlaku bagi dokumen ini |
-| 15 | Bagian 2 menyebut 7.3 dan 7.5 tanpa teks klausul; tidak ada rujukan 27001 | Dokumen ini memakai 5.3 dan 7.1.2 serta 27001 5.3 dan Annex A 5.2, semua berlabel (USULAN, dikonfirmasi konsultan) |
+| 15 | Bagian 2 menyebut 7.3 dan 7.5 tanpa teks klausul; tidak ada rujukan 27001 | Dokumen ini memakai 5.3 dan 7.1.2 serta 27001 5.3 dan Annex A 5.2, semua berlabel (USULAN, perlu konfirmasi konsultan) |
 
 ### 5.2 POL-OPS-001 (bagian 5 Catatan kualitas dan celah)
 
@@ -124,7 +124,7 @@ grep -n pada tiga fileId: 1m91... ada di iso-sinux-supdocs-hr (bagian HR-JA-001)
 | 6 | Sistem tiket GLPI lawan Zammad | Tidak berlaku, dokumen ini tidak menyebut sistem tiket |
 | 7 | Rujukan internal AI dan istilah informal | Tidak ada yang disalin. "om Ipe", "japri", kode DOCTRINE, DEC, HANDOVER, SKILL tidak muncul; lint lulus |
 | 8 sampai 11, 13 | Definisi P1, AegisWAF lawan Wazuh, runbook, RACI Change Major, target pulih | Tidak berlaku; RACI tidak disalin, pemilik gate diambil langsung dari tabel gate bagian 8 |
-| 12 | Tidak ada klausul ISO | Klausul ditambahkan dengan label (USULAN, dikonfirmasi konsultan) |
+| 12 | Tidak ada klausul ISO | Klausul ditambahkan dengan label (USULAN, perlu konfirmasi konsultan) |
 | tambahan | Fani "Komisaris dan Advisor" lawan VP Tech Operation and Services | Diperbaiki: VP Tech Operation and Services (data_conflicts dan premis owner); K-12 meminta POL-OPS-001 diselaraskan. Frasa lama sengaja tidak ditulis di dokumen (lint melarangnya) |
 
 ## USULAN
@@ -139,7 +139,7 @@ Lint menghitung 13 kemunculan "(USULAN)" di dokumen: 12 menempel pada tujuh buti
 | U4 | JA-08, JA-10, JA-11 ditempatkan di bawah Direktur sebelum atasan tunggal diputus | Gambar 2, Daftar Jabatan, K-03 | Sumber menulis "Management / Direktur" | owner, Samuel |
 | U5 | JA-14 ditempatkan di bawah Direktur sebelum atasan tunggal diputus | Gambar 2, Daftar Jabatan, K-04 | Sumber menulis "Direktur atau Management sesuai struktur yang disahkan" | Aziz, owner |
 | U6 | Line Manager Legal = JA-08 dan Staff Legal = JA-09 | Matriks Peran, K-13 | Disimpulkan dari JA-09 melapor ke JA-08; sumber tidak menyatakan | Legal |
-| U7 | Empat klausul ISO: 9001 5.3 dan 7.1.2, 27001 5.3 dan Annex A 5.2 | Acuan Klausul ISO | Checklist tanpa acuan klausul; label "(USULAN, dikonfirmasi konsultan)" | owner, diteruskan ke konsultan |
+| U7 | Empat klausul ISO: 9001 5.3 dan 7.1.2, 27001 5.3 dan Annex A 5.2 | Acuan Klausul ISO | Checklist tanpa acuan klausul; label "(USULAN, perlu konfirmasi konsultan)" | owner, diteruskan ke konsultan |
 
 Garis Laras ke Direktur Utama (K-01) tidak berlabel (USULAN) karena berasal dari keterangan owner di defaults; keputusan tetap menunggu konfirmasi.
 
@@ -174,7 +174,7 @@ Garis Laras ke Direktur Utama (K-01) tidak berlabel (USULAN) karena berasal dari
 |---|---|---|
 | 1 | defaults meminta garis putus-putus untuk garis Laras dan Aziz; tools/render_sop.py (render_flow) tidak punya gaya garis. Saya tidak boleh mengubah tools | Label teks "menunggu konfirmasi (K-nn)" pada garis; keterangan di bagian Bagan Organisasi. Usul ke LEAD: tech_fix kecil di render_flow bila ingin gaya putus-putus |
 | 2 | Berkas tim baris 21 tidak terbaca (open item 1) | Dokumen disusun dari Job Analysis, POL-OPS-001, Lampiran 2 sebagai sumber worklist; direvisi bila berkas dibagikan |
-| 3 | Kolom Description checklist kosong, tanpa acuan klausul | Klausul disusun penyusun dan berlabel (USULAN, dikonfirmasi konsultan) |
+| 3 | Kolom Description checklist kosong, tanpa acuan klausul | Klausul disusun penyusun dan berlabel (USULAN, perlu konfirmasi konsultan) |
 | 4 | Tabel di dokumen tampil rata kanan-kiri dengan celah lebar pada sel pendek (gaya template). Tidak saya ubah (D4) | Tidak ada; keputusan Aziz atas template |
 
 ## Dua pertanyaan wajib
@@ -196,7 +196,7 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 
 - Garis JA-03 ke Direktur Utama: bukan dari tiga sumber Drive; dari defaults (kata owner), berlabel menunggu konfirmasi (K-01).
 - Baris Matriks Peran untuk ISMS Coordinator, Finance Lead, Finance Staff, Line Manager Legal, Staff Legal: nama peran dan dokumen pemakainya dari salinan context/audit dan defaults (prepared_reviewed FAT dan LEG), bukan dari tiga sumber Drive. Pemasangan Line Manager dan Staff Legal ke JA-08 dan JA-09 adalah (USULAN). Peran "pemilik dokumen SNX-ISMS-PRO-01 = ISMS Coordinator" dari salinan audit ISMS (owner_in_doc), belum saya cek ke Drive.
-- Judul dan nomor klausul ISO 9001 5.3, 7.1.2, 27001 5.3, Annex A 5.2: pengetahuan standar, tanpa sumber tim, berlabel (USULAN, dikonfirmasi konsultan). Keterkaitan 7.1.2 adalah tafsir.
+- Judul dan nomor klausul ISO 9001 5.3, 7.1.2, 27001 5.3, Annex A 5.2: pengetahuan standar, tanpa sumber tim, berlabel (USULAN, perlu konfirmasi konsultan). Keterkaitan 7.1.2 adalah tafsir.
 - Definisi NOC, SOC, HRGA, SD dan PM, ISMS: diturunkan dari kalimat tugas di sumber (POL-OPS-001 9.2, 9.3, 9.4; JA-12 A.1 dan A.4), bukan kalimat definisi sumber. ISMS = sistem manajemen keamanan informasi adalah istilah standar ISO/IEC 27001.
 - "Tidak ada" pada kolom Membawahi untuk NOC Engineer, SOC Analyst, Project Manager, Project Coordinator: sumber hanya tidak menyebut bawahan; kesimpulan "tidak ada" berasal dari ringkasan audit (bagian 9 ringkasan jabatan), bukan teks sumber.
 - "Jam kantor" untuk Service Delivery Manager, Project Manager, Project Coordinator: dari kalimat "SD dan PM bekerja jam kantor" di bagian 3 sumber; untuk Head of Operation sumber tidak menyebut, ditulis "Tidak disebut di sumber".
@@ -205,3 +205,27 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Nomor SNX-HR-JA-01, SNX-FAT-SOP-01, SNX-FAT-SOP-05, SNX-LEG-SOP-01, SNX-ISMS-PRO-01 dari config/worklist.json (nomor draf).
 - Tanggal: tidak ada tanggal di dokumen. Tanggal Lampiran 2 (1 September 2026) dan tanggal POL-OPS-001 (12 Oktober 2026) tidak dipakai.
 - Angka: 15 jabatan, 8 jabatan, 4 regu, 12 bulan semuanya dari sumber atau defaults; tidak ada angka karangan.
+
+## Sweep
+
+Putaran sweep sesudah DONE. Hanya dua butir dikerjakan; fakta, angka, nama, dan struktur dokumen tidak berubah. 17 sel atau kalimat di specs/HR-ORG-01.json diubah (butir 1: 16 lokasi, butir 2: 1 lokasi), ditambah penyelarasan label di notes ini.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1 | Dokumen Terkait: "Billing & Invoicing. Dokumen sumbernya memakai peran Finance Lead dan Finance Staff." | "Billing & Invoicing. Memuat peran Finance Lead dan Finance Staff." |
+| 1 | Dokumen Terkait: "Tax Administration & Reporting. Dokumen sumbernya memakai peran Finance Lead dan Finance Staff." | "Tax Administration & Reporting. Memuat peran Finance Lead dan Finance Staff." |
+| 1 | Dokumen Terkait: "Legal Operational. Dokumen sumbernya memakai peran Line Manager Legal dan Staff Legal." | "Legal Operational. Memuat peran Line Manager Legal dan Staff Legal." |
+| 1 | Matriks Peran, kolom Dasar (Finance Lead dan Finance Staff): "Dokumen sumber SNX-FAT-SOP-01 dan SNX-FAT-SOP-05" | "SNX-FAT-SOP-01 dan SNX-FAT-SOP-05" |
+| 1 | Matriks Peran, kolom Dasar (Line Manager Legal dan Staff Legal): "Dokumen sumber SNX-LEG-SOP-01" | "SNX-LEG-SOP-01" |
+| 1 | Bagan Organisasi, pengantar: "Garis tanpa label tercantum sebagai satu atasan langsung di sumber." | "Garis tanpa label menunjukkan satu atasan langsung yang tertulis di Job Analysis." |
+| 1 | Butir Menunggu Konfirmasi, header kolom: "Keadaan di sumber" | "Keadaan saat ini" |
+| 1 | K-13: "Sumber tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; Job Analysis hanya memuat JA-10 Finance dan JA-11 Accounting & Tax. ... tanpa pernyataan di sumber." | "Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. ... Job Analysis tidak menyatakan pemasangan itu." |
+| 1 | Matriks Peran, kolom Status (empat baris): "Tercantum di sumber" | "Tercantum di Job Analysis" |
+| 1 | Ruang Lingkup, tabel pengecualian: "Tidak digambarkan di bagan karena sumber tidak memuatnya (USULAN)." | "Tidak digambarkan di bagan karena Job Analysis dan POL-OPS-001 tidak memuatnya (USULAN)." |
+| 1 | Struktur Divisi Operation, Pola kerja Head of Operation: "Tidak disebut di sumber" | "Tidak disebut di POL-OPS-001" |
+| 2 | Acuan Klausul ISO: "(USULAN, dikonfirmasi konsultan)" | "(USULAN, perlu konfirmasi konsultan)"; label yang sama di notes ini diselaraskan (7 tempat) |
+
+Catatan untuk orkestrator, tidak saya ubah karena di luar daftar butir:
+- Kata "sumber" masih ada di badan dokumen pada tabel Definisi ("Menunggu konfirmasi": "di sumbernya") dan bagian Dasar (paragraf 2 "sumbernya sendiri", paragraf 4 "Bila sumber memakai sebutan lain"). Bila ingin bersih, ganti menjadi "di Job Analysis atau POL-OPS-001".
+- GAP 1 dan open item 17 di notes ini sudah usang: tools/render_sop.py sekarang menggambar garis berlabel "menunggu konfirmasi" putus-putus (render_flow baris 192), dan pemeriksa mengonfirmasinya di gambar hasil render. Syarat garis putus-putus untuk Laras dan Aziz terpenuhi. Butir itu saya biarkan karena sweep membatasi perubahan.
+- Temuan nonblocking di qa/HR-ORG-01.verify.json di luar dua butir sweep tidak dikerjakan.

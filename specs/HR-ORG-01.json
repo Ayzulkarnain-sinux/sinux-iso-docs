@@ -66,7 +66,7 @@
        ],
        [
         "Pelanggan, vendor, dan partner",
-        "Tidak digambarkan di bagan karena sumber tidak memuatnya (USULAN)."
+        "Tidak digambarkan di bagan karena Job Analysis dan POL-OPS-001 tidak memuatnya (USULAN)."
        ]
       ],
       "widths_cm": [
@@ -169,7 +169,7 @@
    "h": "Bagan Organisasi",
    "blocks": [
     {
-     "p": "Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label tercantum sebagai satu atasan langsung di sumber. Garis berlabel menunggu konfirmasi merujuk nomor butir K."
+     "p": "Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan satu atasan langsung yang tertulis di Job Analysis. Garis berlabel menunggu konfirmasi merujuk nomor butir K."
     },
     {
      "flow": {
@@ -493,7 +493,7 @@
         "Operation",
         "COO",
         "Lead NOC, Lead SOC, Service Delivery Manager",
-        "Tidak disebut di sumber"
+        "Tidak disebut di POL-OPS-001"
        ],
        [
         "Lead NOC",
@@ -578,7 +578,7 @@
         "Process Owner dokumen HR, termasuk dokumen ini",
         "HR Manager (JA-14)",
         "Job Analysis: Process Owner",
-        "Tercantum di sumber"
+        "Tercantum di Job Analysis"
        ],
        [
         "Penyetuju dokumen ini",
@@ -590,19 +590,19 @@
         "Penetap kebijakan mutu, sasaran mutu, dan sumber daya; pemimpin tinjauan manajemen",
         "Direktur Utama (JA-01)",
         "Uraian jabatan JA-01",
-        "Tercantum di sumber"
+        "Tercantum di Job Analysis"
        ],
        [
         "Penanggung jawab kepatuhan terhadap kebijakan dan proses yang disahkan",
         "Direktur (JA-02)",
         "Uraian jabatan JA-02",
-        "Tercantum di sumber"
+        "Tercantum di Job Analysis"
        ],
        [
         "Penanggung jawab kontrol keamanan, akses, backup, dan perubahan teknis",
         "VP Tech Operation and Services (JA-04)",
         "Uraian jabatan JA-04",
-        "Tercantum di sumber"
+        "Tercantum di Job Analysis"
        ],
        [
         "Pemilik gate serah terima G3; pemilik kebijakan dan prosedur Divisi Operation",
@@ -637,25 +637,25 @@
        [
         "Finance Lead",
         "Belum dipetakan",
-        "Dokumen sumber SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
+        "SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
         "Belum dipetakan (K-13)"
        ],
        [
         "Finance Staff",
         "Belum dipetakan",
-        "Dokumen sumber SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
+        "SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
         "Belum dipetakan (K-13)"
        ],
        [
         "Line Manager Legal",
         "Legal & Compliance (JA-08)",
-        "Dokumen sumber SNX-LEG-SOP-01",
+        "SNX-LEG-SOP-01",
         "(USULAN), menunggu konfirmasi (K-13)"
        ],
        [
         "Staff Legal",
         "Legal & Compliance (JA-09)",
-        "Dokumen sumber SNX-LEG-SOP-01",
+        "SNX-LEG-SOP-01",
         "(USULAN), menunggu konfirmasi (K-13)"
        ]
       ],
@@ -683,7 +683,7 @@
       "header": [
        "No",
        "Butir",
-       "Keadaan di sumber"
+       "Keadaan saat ini"
       ],
       "rows": [
        [
@@ -749,7 +749,7 @@
        [
         "K-13",
         "Peran tanpa padanan jabatan",
-        "Sumber tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; Job Analysis hanya memuat JA-10 Finance dan JA-11 Accounting & Tax. Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08, tanpa pernyataan di sumber."
+        "Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; Job Analysis tidak menyatakan pemasangan itu."
        ],
        [
         "K-14",
@@ -770,7 +770,7 @@
    "h": "Acuan Klausul ISO",
    "blocks": [
     {
-     "p": "Daftar klausul berikut berstatus (USULAN, dikonfirmasi konsultan)."
+     "p": "Daftar klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
     },
     {
      "table": {
@@ -830,15 +830,15 @@
        ],
        [
         "SNX-FAT-SOP-01",
-        "Billing & Invoicing. Dokumen sumbernya memakai peran Finance Lead dan Finance Staff."
+        "Billing & Invoicing. Memuat peran Finance Lead dan Finance Staff."
        ],
        [
         "SNX-FAT-SOP-05",
-        "Tax Administration & Reporting. Dokumen sumbernya memakai peran Finance Lead dan Finance Staff."
+        "Tax Administration & Reporting. Memuat peran Finance Lead dan Finance Staff."
        ],
        [
         "SNX-LEG-SOP-01",
-        "Legal Operational. Dokumen sumbernya memakai peran Line Manager Legal dan Staff Legal."
+        "Legal Operational. Memuat peran Line Manager Legal dan Staff Legal."
        ],
        [
         "SNX-ISMS-PRO-01",

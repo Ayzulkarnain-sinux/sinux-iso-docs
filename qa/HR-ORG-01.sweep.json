@@ -1,0 +1,27 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Ruang Lingkup, tabel pengecualian, baris Pelanggan, vendor, dan partner",
+      "masalah": "Rujukan 'sumber' kini dinamai Job Analysis dan POL-OPS-001 sesuai butir 1, tetapi 'tidak memuatnya' dibaca harfiah jadi tidak tepat: kedua dokumen menyebut pihak itu, hanya tidak sebagai unit atau garis lapor. Ambiguitas sudah ada sebelum sweep dan baris berlabel (USULAN).",
+      "bukti": "Job Analysis bagian F tiap jabatan: 'Eksternal: pelanggan, vendor, regulator atau konsultan'; POL-OPS-001 bagian 2 'personel kontrak dan partner', bagian 8 'G2 UAT dan BAST | SD dan PM | Pelanggan'. Usul: 'karena Job Analysis dan POL-OPS-001 tidak memuatnya dalam struktur atau garis lapor'."
+    },
+    {
+      "lokasi": "Butir Menunggu Konfirmasi, header kolom ketiga",
+      "masalah": "'Keadaan di sumber' menjadi 'Keadaan saat ini'. Makna tetap karena tiap sel menyebut dokumennya ('Job Analysis menulis', 'POL-OPS-001 menaruh'), tetapi 'saat ini' bergantung waktu. Opsi lebih netral: 'Keadaan tertulis'.",
+      "bukti": "Baris diff @@ -345 +345 @@; sel K-01 sampai K-14 tetap menyebut sumber per kalimat."
+    },
+    {
+      "lokasi": "Dasar dan Ketentuan paragraf 2 dan 4; Definisi 'Pemegang jabatan' dan 'Menunggu konfirmasi'; K-01",
+      "masalah": "Sisa frasa proses di luar daftar butir 1 masih ada: 'garis yang sumbernya sendiri', 'Bila sumber memakai sebutan lain', 'belum pasti di sumbernya', 'saat dokumen ini disusun', 'keterangan tambahan saat dokumen ini disusun'. Tidak termasuk instruksi; penyusun sudah mencatatnya di notes ## Sweep.",
+      "bukti": "Teks dokumen baris 32, 34, 135, 141, 348 (ekstraksi python-docx yang sama dengan sweep.py)."
+    }
+  ],
+  "cek": {
+    "1_sesuai_instruksi": "Ke-11 kalimat butir 1 diubah (16 lokasi) dan butir 2 di 1 lokasi. Diff hanya memuat baris-baris itu, tidak ada perubahan lain.",
+    "2_fakta_baru": "Nihil. Rujukan baru (Job Analysis, POL-OPS-001) cocok dengan sumber Drive: semua garis tanpa label di dot Gambar 1 dan 2 = atasan tunggal di Job Analysis; JA-01 A.3/A.7, JA-02 A.5, JA-04 A.4, Process Owner HR Lead ada di Job Analysis; POL-OPS-001 9.1 tidak memberi pola kerja Head of Operation; Job Analysis tidak memuat ISMS Coordinator, Finance Lead, Finance Staff, dan tidak menyatakan pemasangan Legal; specs FAT-SOP-01, FAT-SOP-05, LEG-SOP-01 memuat peran yang disebut.",
+    "3_frasa_dan_pola": "Pola META sweep.py, 'dikonfirmasi konsultan', em-dash, dan rujukan internal AI tidak ditemukan lagi di teks dokumen. Tidak ada pasif tanpa pelaku yang baru ('dipasangkan' sudah ada sebelumnya).",
+    "4_butir_tidak_dikerjakan": "Nihil. Notes ## Sweep berisi tabel sebelum dan sesudah."
+  }
+}

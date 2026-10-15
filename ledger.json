@@ -144,7 +144,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-ORG-01",
    "out_path": "out/01_Struktur_Jobdesc/SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).docx",
    "sources": [
@@ -171,7 +171,7 @@
    "open_items": [
     "Checklist kini menautkan berkas 1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0 yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
    ],
-   "updated_at": "2026-10-15T00:40:45Z",
+   "updated_at": "2026-10-15T00:43:48Z",
    "pen_agent": "aa06a366b15fbb9e5",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -212,10 +212,10 @@
     "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu.",
     "Garis lapor JA-14 (HR Manager) belum seragam dengan bagan HR-ORG-01; selaraskan saat konfirmasi K-04 (owner atau Aziz)."
    ],
-   "updated_at": "2026-10-15T00:41:50Z",
+   "updated_at": "2026-10-15T00:41:52Z",
    "pen_agent": "ac936bff4d35bd19b",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 3,
@@ -950,7 +950,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-SOP-13",
    "out_path": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
    "sources": [
@@ -969,9 +969,10 @@
     "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi",
     "Sweep (c): r2 nonblocking, definisi divisi dan rotasi bertabrakan dengan HR-SOP-12 (NOC ke SOC bisa terbaca rotasi sekaligus mutasi)"
    ],
-   "updated_at": "2026-10-14T23:27:07Z",
+   "updated_at": "2026-10-15T00:41:52Z",
    "pen_agent": "aec5ea3082629635b",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 25,
@@ -981,7 +982,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-04",
    "out_path": "out/03_FAT/SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
@@ -1009,9 +1010,10 @@
    "open_items": [
     "Sweep (b): 6.1 dan SLA baris 2 menyebut Finance Lead menjalankan 6.2-6.3 untuk dokumen pajak, tetapi 6.2 tidak punya langkah simpan softcopy pajak (verify nonblocking)"
    ],
-   "updated_at": "2026-10-14T23:22:57Z",
+   "updated_at": "2026-10-15T00:43:31Z",
    "pen_agent": "ad5b909ad28816d44",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 26,
@@ -2341,7 +2343,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-REG-01",
    "out_path": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2358,7 +2360,7 @@
    "open_items": [
     "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
    ],
-   "updated_at": "2026-10-15T00:41:18Z",
+   "updated_at": "2026-10-15T00:43:25Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "a3d6b69aee3386660"
