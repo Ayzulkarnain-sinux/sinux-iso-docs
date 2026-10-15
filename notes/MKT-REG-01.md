@@ -305,3 +305,10 @@ nihil (subst_diff kosong).
 - .sections[5].blocks[6].p: OK (rujukan butir 4.14 yang berlabel diganti)
 - .sections[5].blocks[10].p: OK (rujukan butir 4.6 yang berlabel diganti)
 - .sections[6].blocks[0].p: OK (label tetap pada 10 baris dan pembagian kolom)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[5].blocks[0].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[5].blocks[6].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[5].blocks[10].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[2].blocks[0].table.rows[11][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[7].blocks[5].table.rows[2][2]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

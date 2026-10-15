@@ -305,7 +305,7 @@
      "p": "6.10 Di kolom Tindakan, tulis tiap tindakan PIC beserta tanggalnya (USULAN). Jika VP Commercial memutuskan tidak ada tindakan, tulis keputusan itu dan alasannya."
     },
     {
-     "p": "6.11 Isi kolom Status dengan Baru, Dalam Penanganan, atau Selesai. Selesai hanya ditulis setelah ditetapkan VP Commercial (USULAN)."
+     "p": "6.11 Isi kolom Status dengan Baru, Dalam Penanganan, atau Selesai. Selesai hanya ditulis setelah ditetapkan VP Commercial (butir 4.7)."
     },
     {
      "p": "6.12 Di kolom Tanggal Selesai, tulis tanggal VP Commercial menetapkan Selesai."
@@ -762,7 +762,7 @@
       "rows": [
        [
         "Register ini: Tabel 1 sampai Tabel 4",
-        "Folder Google Drive departemen Commercial. Pemilik dan pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi INTERNAL selama kosong dan RESTRICTED (Internal) setelah berisi data customer (USULAN).",
+        "Folder Google Drive departemen Commercial. Pemilik dan pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi sesuai butir 4.12.",
         "Belum ditetapkan"
        ],
        [

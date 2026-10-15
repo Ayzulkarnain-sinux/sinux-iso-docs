@@ -3,7 +3,7 @@
  "runbook": "v19-e",
  "defaults_version": "v22",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W10-DONE",
+ "current_wave": "W11-DONE",
  "last_guide_seen": 4,
  "watchdog_trigger_id": null,
  "gaspol": true,
@@ -3173,5 +3173,17 @@
     "cakupan_label": "113 jalur kandidat di 26 dokumen: 37 diperbaiki"
    }
   }
+ },
+ "w11": {
+  "oleh": "LEAD ISO-B",
+  "basis": [
+   "bed1bb6",
+   "0a00bae"
+  ],
+  "koreksi_path": 53,
+  "dokumen": 25,
+  "review": "reports/REVIEW-W11.md",
+  "residu_tetap_bed1bb6": 10,
+  "catatan": "revisi manual oleh tim; sesi ISO ditutup owner"
  }
 }

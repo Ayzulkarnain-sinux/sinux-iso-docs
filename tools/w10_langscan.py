@@ -32,7 +32,7 @@ CALQUE = re.compile(r'\byang (?:' + _act + r') (?!' + PREFIX + r')(?!adalah\b|su
 LEWAT = re.compile(r'\blewat\b', re.I)
 POINTER = re.compile(r'\b(?:ada|diatur|dirinci|dijelaskan|tercantum|dimuat) (?:di|pada|dalam) (?:butir|bagian) \d', re.I)
 USUL = re.compile(r'\(USULAN')
-STARTS_ROLE = re.compile(r'^\s*(?:\d+[.)]\s*)?(?:' + _act + r')\b')
+STARTS_ROLE = re.compile(r'^\s*(?:\d+(?:\.\d+)*[.)]?\s+)?(?:' + _act + r')\b')
 BUTIR = re.compile(r'^\s*(\d+(?:\.\d+)+)\s')
 NUM = re.compile(r'(?<![\w.])\d+(?:[.,]\d+)?%?(?![\w.]*\.\d)')
 SNX = re.compile(r'SNX-[A-Z]+-[A-Z]+-\d\d')
@@ -148,6 +148,7 @@ def selftest():
     assert LEWAT.search('dikirim lewat email') and not LEWAT.search('invoice yang melewati jatuh tempo') and not LEWAT.search('terlewat')
     assert POINTER.search('Lama dan titik awal hitungannya ada di butir 4.8.') and not POINTER.search('sesuai butir 4.8')
     assert STARTS_ROLE.match('7. Lead NOC atau Lead SOC menambah baris') and not STARTS_ROLE.match('Tambah baris di tabel Tindakan')
+    assert STARTS_ROLE.match('6.2 Finance Staff menulis tanggal') and STARTS_ROLE.match('6.17 Business Development menulis') and not STARTS_ROLE.match('6.2 Isi kolom Tanggal Pengajuan')
     assert INSTR.match('PETUNJUK PENGISIAN') and INSTR.match('Cara mengisi') and not INSTR.match('ISI FORMULIR')
     u = [dict(t='4.15 Penetapan pelaku (USULAN).', cell=False, style='', head='', jc=None), dict(t='Nilai 14 hari', cell=False, style='', head='', jc=None)]
     f = facts(u)

@@ -135,7 +135,7 @@
        ],
        [
         "PIC Internal",
-        "Kontak utama Unit Kerja Pemohon untuk satu kontrak. Di SNX-LEG-SOP-02 disebut PIC Bisnis (USULAN)."
+        "Orang yang ditunjuk Unit Kerja Pemohon sebagai kontak utama untuk satu kontrak. Di SNX-LEG-SOP-02 disebut PIC Bisnis (USULAN)."
        ],
        [
         "Risiko hukum",
@@ -217,7 +217,7 @@
      "p": "4. Setiap temuan dicatat di tabel Temuan Utama dan Risiko, lengkap dengan Jenis Risiko dan Tingkat Risiko. Risiko Tinggi dieskalasi Staff Legal kepada Line Manager Legal (SNX-LEG-SOP-02 butir 6.4)."
     },
     {
-     "p": "5. Staff Legal mencentang Hasil Penelaahan dan Rekomendasi serta menulis dasar rekomendasi, lalu form terisi diperiksa Line Manager Legal. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali Tidak terdapat temuan; Rekomendasi hanya satu pilihan (USULAN)."
+     "p": "5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi (cara mencentang di Petunjuk Pengisian butir 5), serta menulis dasar rekomendasi. Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN). Form terisi diperiksa Line Manager Legal."
     },
     {
      "p": "6. Rekomendasi di form ini bukan Persetujuan Legal. Persetujuan Legal diberikan Line Manager Legal dan tidak menggantikan persetujuan Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.2)."
@@ -226,7 +226,7 @@
      "p": "7. Kontrak yang berubah material setelah Persetujuan Legal ditelaah ulang sesuai SNX-LEG-SOP-02 butir 4.14, dan Staff Legal memakai form baru untuk telaah ulang itu (USULAN)."
     },
     {
-     "p": "8. Form terisi disimpan Staff Legal bersama berkas kontrak di folder Google Drive Departemen Legal, dan lokasinya dicatat di tabel Lokasi Penyimpanan Dokumen (USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8). Karena memuat nama pelanggan dan nilai kontrak, form terisi berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01."
+     "p": "8. Staff Legal menyimpan form terisi bersama berkas kontrak di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8), lalu mencatat lokasinya di tabel Lokasi Penyimpanan Dokumen. Karena memuat nama pelanggan dan nilai kontrak, Staff Legal memberi form terisi tingkat RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01."
     }
    ]
   },
@@ -292,7 +292,7 @@
      "p": "4. Di kolom Catatan/Tindak Lanjut, tulis letak klausul (pasal atau halaman), temuan, dan usulan perubahan."
     },
     {
-     "p": "5. Centang pilihan Hasil Penelaahan dan Rekomendasi dengan mengganti ☐ menjadi ☒."
+     "p": "5. Centang pilihan Hasil Penelaahan dan Rekomendasi dengan mengganti ☐ menjadi ☒. Jumlah pilihan yang boleh dicentang mengikuti Ketentuan butir 5."
     },
     {
      "p": "6. Isi satu baris di tabel Temuan Utama dan Risiko untuk tiap temuan. Kolom Aspek diisi kode aspek, misalnya C4.3. Jenis Risiko diisi Hukum, Komersial, atau Hukum dan Komersial; Tingkat Risiko diisi Tinggi, Sedang, atau Rendah (USULAN)."
@@ -304,7 +304,7 @@
      "p": "8. Di Dasar rekomendasi, tulis kode aspek dan temuan yang menjadi alasan rekomendasi."
     },
     {
-     "p": "9. Isi baris Disusun oleh dengan nama, jabatan, tanggal, dan tanda tangan. Baris Diperiksa oleh diisi Line Manager Legal dan baris Disetujui oleh diisi Pejabat Berwenang, masing-masing oleh pihak itu sendiri (USULAN)."
+     "p": "9. Di tabel Catatan Penelaahan dan Persetujuan, baris Disusun oleh diisi Staff Legal, Diperiksa oleh diisi Line Manager Legal, dan Disetujui oleh diisi Pejabat Berwenang (USULAN). Setiap pihak menulis nama, jabatan, tanggal, dan tanda tangannya sendiri."
     },
     {
      "p": "10. Di tabel Lokasi Penyimpanan Dokumen, tulis link Google Drive atau lokasi berkas kontrak, hasil penelaahan, dan korespondensi."
@@ -985,7 +985,7 @@
        ],
        [
         "SNX-LEG-FRM-03",
-        "Data Protection & Confidentiality Compliance Review. Review data pribadi dan kerahasiaan di luar aspek C5.1 dan C5.2 (USULAN)."
+        "Data Protection & Confidentiality Compliance Review. Review kepatuhan pelindungan data pribadi dan kerahasiaan yang lebih luas dari aspek C5.1 dan C5.2 (USULAN)."
        ],
        [
         "SNX-LEG-REG-01",
@@ -1036,12 +1036,12 @@
       "rows": [
        [
         "Form terisi per kontrak pelanggan",
-        "Folder Google Drive Departemen Legal, bersama berkas kontrak; klasifikasi RESTRICTED (Internal). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03).",
+        "Folder Google Drive Departemen Legal, bersama berkas kontrak (Ketentuan butir 8). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
         "Mengikuti Kategori 4 di SNX-LEG-SOP-03 (USULAN)."
        ],
        [
         "Kontrak yang ditelaah dan korespondensi",
-        "Sesuai tabel Lokasi Penyimpanan Dokumen. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN).",
+        "Sesuai tabel Lokasi Penyimpanan Dokumen. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03).",
         "Mengikuti Kategori 1 di SNX-LEG-SOP-03 (USULAN)."
        ]
       ],

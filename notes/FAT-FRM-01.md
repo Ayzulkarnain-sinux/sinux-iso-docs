@@ -237,3 +237,7 @@ Tabel isian: kolom Alasan Ditolak atau Ditahan diperlebar, min_row_cm 0.8 di Tab
 ### W10 audit cakupan label
 - .sections[7].blocks[1].table.rows[0][2]: OK (retensi tetap berlabel; keterangan sumber ikut kalimat berlabel tanpa mengubah ketentuan)
 - .sections[8].blocks[0].table.rows[4][1]: OK (kalimat berlabel tetap memuat seluruh pemakaian form; kalimat pertama hanya judul SOP)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[8].blocks[0].table.rows[4][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[1].blocks[0].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

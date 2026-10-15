@@ -5,13 +5,13 @@
  "fails": [],
  "xlsx_patch": "pass",
  "scan": {
-  "words": 392,
+  "words": 395,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
   "usulan": 9,
   "instr_items": 31,
-  "instr_role_start": 5,
+  "instr_role_start": 7,
   "justified_cells": 0
  },
  "scan_bed1bb6": {

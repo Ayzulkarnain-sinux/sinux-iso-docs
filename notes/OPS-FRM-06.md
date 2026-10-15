@@ -223,3 +223,6 @@ nihil (subst_diff kosong).
 - Tabel isian (rincian deliverable, isu sisa A dan C, lessons learned) diberi min_row_cm 0,9; lebar kolom tabel Bagian B, Pengecualian, Rekaman, Acuan, dan Dokumen Terkait disetel ulang. Halaman tetap 14.
 ### W10 audit pointer
 - .sections[2].blocks[0].table.rows[15][1]: lengkap; "Isinya tertulis di Bagian B butir 5" diganti isi Bagian B butir 5 (Bagian B tabel deliverable baris "Dokumen as-built": topologi, IP address, versi, akses, ketergantungan vendor), lima unsur sama persis; tidak berlabel USULAN.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[10].blocks[0].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

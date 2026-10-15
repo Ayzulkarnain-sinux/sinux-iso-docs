@@ -233,3 +233,6 @@ nihil
 ### W10 audit cakupan label
 - .definitions[1][1]: OK (label tetap mencakup penerima Ack yang belum ditetapkan)
 - .policy[3]: OK (label tetap mencakup titik awal hitungan dari waktu deteksi, pengecualian tetap tanpa label)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .policy[9]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

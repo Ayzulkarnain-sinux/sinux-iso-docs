@@ -201,3 +201,6 @@ nihil setelah putaran perbaikan 1 (rujukan "(butir 6.2)" dikembalikan).
 ### W10 audit pointer
 - .definitions[6][1]: pointer murni dibuang, isi tidak dinyatakan ulang; aktivitas dan frekuensi minimal PM tetap dirujuk di Policy paragraf 1 ("sesuai tabel bagian 8") dan butir 6.1 langkah 2.
 - Bagian 9 (.exceptions[0][1], [1][1], [2][1]): rujukan butir 6.2 dan 6.4 dikembalikan pada putaran perbaikan 1; tidak ada lagi jalur yang kehilangan rujukan selain .definitions[6][1].
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .exceptions[2][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

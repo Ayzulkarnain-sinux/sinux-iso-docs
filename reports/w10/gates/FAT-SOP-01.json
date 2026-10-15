@@ -6,7 +6,7 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 2657,
+  "words": 2676,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
@@ -37,8 +37,6 @@
  "subst_diff": {
   "numbers": {
    "hilang": [
-    "6.1",
-    "6.3",
     "6.5"
    ],
    "baru": []

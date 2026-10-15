@@ -267,3 +267,7 @@ nihil (subst_diff build kosong).
 - .sections[7].blocks[5].table.rows[4][2]: OK (rujukan butir 4.12 berlabel diganti fakta)
 ### W10 koreksi worker atas audit cakupan label
 - .sections[4].blocks[1].table.rows[1][1]: rujukan dikembalikan "(butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13)" dan label (USULAN) atas daftar tugas dibuang, sama dengan bed1bb6 (tanpa label; tiap butir yang dirujuk membawa labelnya sendiri). Label menyeluruh membuat tugas yang di bed1bb6 berlaku terbaca usulan. Ini menggantikan baris audit pointer dan audit cakupan label di atas untuk jalur ini.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[7].blocks[2].table.rows[0][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[5].blocks[10].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

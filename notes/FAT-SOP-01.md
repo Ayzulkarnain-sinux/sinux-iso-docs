@@ -268,3 +268,9 @@ nihil. Label di baris Peran Business Development dipindah ke akhir sel (asli: "M
 ### W10 audit cakupan label
 - .definitions[28][1]: diperbaiki (kalimat dipisah lagi; definisi lembar di luar label, format usulan berlabel)
 - .roles[0][1]: OK (label tetap pada pemetaan peran Tim Sales)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .roles[2][2]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .roles[3][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .roles[1][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .policy[14]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

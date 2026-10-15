@@ -74,8 +74,8 @@
  },
  "set": {
   "Kontrol Dokumen!B18": "Finance Staff mengisi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN).",
-  "Kontrol Dokumen!B19": "Isi sheet Platform Access dengan satu baris untuk setiap platform (USULAN).",
-  "Kontrol Dokumen!B20": "Tulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan. Jangan tulis kata sandi, PIN, atau token (USULAN).",
+  "Kontrol Dokumen!B19": "Finance Staff mengisi sheet Platform Access dengan satu baris untuk setiap platform (USULAN).",
+  "Kontrol Dokumen!B20": "Finance Staff menulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan, tanpa kata sandi, PIN, atau token (USULAN).",
   "Kontrol Dokumen!B21": "Finance Lead meninjau isi berkas ini setiap tahun (USULAN)."
  }
 }

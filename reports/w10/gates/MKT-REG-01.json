@@ -6,11 +6,11 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 2632,
+  "words": 2645,
   "calque": [],
   "lewat": 0,
-  "pointer": 0,
-  "usulan": 35,
+  "pointer": 1,
+  "usulan": 32,
   "instr_items": 25,
   "instr_role_start": 0,
   "justified_cells": 0,
@@ -34,16 +34,7 @@
   "justified_cells": 14,
   "tables_ge3_no_header": 16
  },
- "subst_diff": {
-  "usul_butir": {
-   "hilang": [],
-   "baru": [
-    "6.1",
-    "6.11",
-    "6.7"
-   ]
-  }
- },
+ "subst_diff": {},
  "pdf": "/tmp/claude-0/w10/pdf/new/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).pdf",
  "pages": 15,
  "blank": [],

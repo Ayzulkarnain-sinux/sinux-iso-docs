@@ -254,3 +254,6 @@ nihil (subst_diff build kosong).
 - .sections[4].blocks[8].p: diperbaiki (dipisah; label hanya pada Persyaratan Belum Diverifikasi dari Ketentuan butir 3, isi butir 13 tanpa label)
 - .sections[7].blocks[1].table.rows[0][1]: OK (label menggantikan rujukan Ketentuan butir 18 pada folder)
 - .sections[7].blocks[1].table.rows[1][1]: diperbaiki (label ganda di akhir dihapus; cakupan sama dengan bed1bb6)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[7].blocks[1].table.rows[0][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

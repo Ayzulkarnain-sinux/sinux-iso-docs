@@ -147,7 +147,7 @@
        ],
        [
         "Jenis content",
-        "Macam materi, misalnya company profile, product brochure, presentation deck, campaign material, atau event collateral."
+        "Macam materi menurut daftar di bagian 2, misalnya company profile, product brochure, presentation deck, campaign material, atau event collateral."
        ],
        [
         "Kebutuhan eksternal",
@@ -392,7 +392,7 @@
    "h": "Cara Mengisi",
    "blocks": [
     {
-     "p": "6.1 Tulis satu baris di Tabel 1 untuk setiap versi materi di setiap channel, dengan ID persetujuan di kolom ID (USULAN)."
+     "p": "6.1 Tulis satu baris di Tabel 1 untuk setiap versi materi di setiap channel, dengan ID persetujuan di kolom ID (butir 4.1)."
     },
     {
      "p": "6.2 Di kolom Nama Materi, tulis judul materi seperti pada file final."
@@ -410,7 +410,7 @@
      "p": "6.6 Di kolom Versi, tulis 1 untuk versi pertama, lalu naikkan satu angka untuk setiap versi baru (butir 4.8)."
     },
     {
-     "p": "6.7 Di kolom Lokasi File Final, tulis jalur folder dan nama file final (USULAN)."
+     "p": "6.7 Di kolom Lokasi File Final, tulis jalur folder dan nama file final (butir 4.14)."
     },
     {
      "p": "6.8 Di kolom PIC Tabel 2, tulis jabatan PIC, bukan nama orang."
@@ -422,7 +422,7 @@
      "p": "6.10 Di kolom Approver, tulis jabatan Approver."
     },
     {
-     "p": "6.11 Setelah Approver menyetujui versi itu, tulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan (USULAN)."
+     "p": "6.11 Setelah Approver menyetujui versi itu, tulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan (butir 4.6)."
     },
     {
      "p": "6.12 Di kolom Bukti Persetujuan, tulis lokasi bukti persetujuan (butir 4.14)."
@@ -1052,7 +1052,7 @@
        [
         "ISO 9001:2015",
         "7.5.3 Pengendalian informasi terdokumentasi",
-        "Register mencatat versi dan lokasi file final, beserta pemilik register dan klasifikasi materi (butir 4.5)."
+        "Register mencatat versi dan lokasi file final. Pemilik register tercantum di tabel Rekaman, dan klasifikasi materi diatur di butir 4.5."
        ],
        [
         "ISO/IEC 27001:2022",

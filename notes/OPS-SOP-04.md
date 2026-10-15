@@ -203,3 +203,8 @@ nihil (build tidak mencatat selisih numbers atau usul_butir).
 ### W10 audit pointer
 - .policy[0]: dirujuk ulang; "ditetapkan di bagian 3, 6, dan 8" menjadi "ditetapkan di SOP ini" (isi tiga bagian terlalu panjang untuk disalin).
 - .policy[3]: dirujuk ulang; daftar letak (bagian 5, bagian 3, butir 6.2, butir 6.6) menjadi "SOP ini menetapkan peran, severity, kelas triage, dan matriks eskalasi"; tidak ada butir USULAN yang dirujuk.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .roles[7][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .roles[8][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .roles[9][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

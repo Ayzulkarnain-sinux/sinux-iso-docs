@@ -260,3 +260,7 @@ nihil. Label dipindah ke akhir butir: Roles Head of Operation (asli: "Memastikan
 ### W10 audit cakupan label
 - .exceptions[2][1]: OK (label baru karena rujukan butir 6.4 langkah 5 yang berlabel diganti fakta)
 - .exceptions[7][1]: OK (kalimat dipisah, label tetap pada penyampaian RTO, kalimat kedua tetap tanpa label)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .procedures[4].intro[0]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .definitions[16][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

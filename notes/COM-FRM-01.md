@@ -261,3 +261,6 @@ nihil (subst_diff build kosong).
 - .sections[2].blocks[0].p: OK (label tetap hanya pada satu form untuk satu order)
 - .sections[3].blocks[0].table.rows[1][1]: diperbaiki (kalimat dipisah lagi; mengisi kelompok C2 keluar dari kalimat berlabel, label hanya pada eskalasi)
 - .sections[3].blocks[0].table.rows[4][1]: OK (dua label pemilik digabung, cakupan sama)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[0].blocks[5].table.rows[4][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

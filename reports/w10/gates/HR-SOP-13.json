@@ -6,11 +6,11 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 2849,
+  "words": 2853,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
-  "usulan": 61,
+  "usulan": 64,
   "instr_items": 0,
   "instr_role_start": 0,
   "justified_cells": 0,
@@ -29,7 +29,7 @@
  },
  "subst_diff": {},
  "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).pdf",
- "pages": 17,
+ "pages": 18,
  "blank": [],
  "pass": true
 }

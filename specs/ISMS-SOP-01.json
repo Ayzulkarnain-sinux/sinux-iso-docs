@@ -204,7 +204,7 @@
   "File mencurigakan dipindahkan ke folder quarantine dengan mv, bukan dihapus dengan rm, agar bukti tetap utuh.",
   "Klaim bahwa sistem sudah bersih atau aman wajib didukung dua sumber independen.",
   "Containment mengikuti SNX-OPS-SOP-02. Lead SOC boleh menyatakan darurat keamanan dan langsung bertindak, dengan tetap mencatat tindakannya.",
-  "Pengumpulan bukti (Annex A 5.28): bukti dikumpulkan tanpa mengubah aslinya dan dicatat dengan chain of custody (butir 6.5). Bukti disimpan di lokasi berklasifikasi RESTRICTED (Internal).",
+  "Pengumpulan bukti (Annex A 5.28): bukti dikumpulkan tanpa mengubah aslinya dan dicatat dengan chain of custody (butir 6.5). Bukti disimpan di lokasi berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01.",
   "Pemberitahuan pihak luar: pemberitahuan ke pelanggan mengikuti kontrak. Kegagalan pelindungan data pribadi diberitahukan sesuai UU PDP. Komunikasi ke media hanya dilakukan pihak yang ditunjuk manajemen.",
   "Pembelajaran (Annex A 5.27) dan corrective action (ISO 9001:2015 10.2): insiden P1 dan P2 wajib memiliki RCA di SNX-OPS-FRM-10 serta corrective action dengan pemilik dan tenggat. Lessons learned disimpan tanpa kredensial."
  ],

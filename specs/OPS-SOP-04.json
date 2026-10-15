@@ -207,17 +207,17 @@
   ],
   [
    "VP Commercial",
-   "Menerima urusan harga, quote, dan kontrak dari insiden (USULAN).",
+   "Menerima urusan harga, quote, dan kontrak dari insiden (USULAN: sumber menulis Commercial tanpa jabatan).",
    "Menerima serahan urusan harga, quote, dan kontrak dari NOC Engineer."
   ],
   [
    "Manager of Product Tech",
-   "Menerima eskalasi fungsional untuk sistem di bawah Tech dan Product (USULAN).",
+   "Menerima eskalasi fungsional untuk sistem di bawah Tech dan Product (USULAN: sumber menulis Tech dan Product tanpa jabatan).",
    "Menerima eskalasi dari NOC Engineer menurut butir 6.6."
   ],
   [
    "Project Manager",
-   "Menerima eskalasi insiden pelanggan pemerintah di lapangan (USULAN).",
+   "Menerima eskalasi insiden pelanggan pemerintah di lapangan (USULAN: sumber menulis PIC proyek tanpa jabatan).",
    "Berkomunikasi dengan pelanggan sesuai format komunikasi pelanggan."
   ]
  ],

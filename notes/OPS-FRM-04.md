@@ -156,3 +156,6 @@ nihil
 Pihak luar: "pelanggan" (kolom Pelanggan / layanan dan Ack pelanggan; header tidak disunting).
 Cara pakai 1: label (USULAN) dipindah ke akhir butir; arti tetap (CR sebagai ticket Zammad masih usulan).
 Cara pakai 3: "tinjau dalam 5 hari kerja" menjadi "Lakukan PIR dalam 5 hari kerja"; PIR adalah review pasca-implementasi itu sendiri.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- Kontrol Dokumen!B18: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

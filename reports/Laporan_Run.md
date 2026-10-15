@@ -220,3 +220,6 @@ Nol mutasi Google Drive, nol tulisan ke kanon KB, nol tanda tangan atau tanggal 
 2. Tinjau: buka Master_List_COS.xlsx, filter sheet USULAN per pemutus; buka dokumen terkait dan putuskan tiap label (USULAN).
 3. Unggah sesudah tinjauan: buat folder baru "COS Draft ISO" di Supporting Documents pada Shared Drive ISO SINUX, unggah isi out/ apa adanya. Berkas tim yang sudah ada tidak ditimpa.
 4. Pengesahan: isi tanda tangan dan tanggal efektif di blok Approval tiap dokumen sesudah semua USULAN diputus; ubah status Draft menjadi status sah lewat penyetuju.
+
+## Perubahan ISO-W11 (LEAD, 15 Oktober 2026)
+LEAD memverifikasi hasil W10 dan mengembalikan 53 path di 25 dokumen ke cakupan substansi bed1bb6. Penyebabnya, pemeriksaan makna buta menemukan label USULAN yang bergeser dan beberapa aturan yang menyempit atau melebar. Bahasa W10 dipertahankan. Rincian di reports/REVIEW-W11.md. 10 residu tetap bergaya W9 untuk revisi manual tim.

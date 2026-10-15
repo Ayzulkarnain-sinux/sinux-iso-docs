@@ -256,3 +256,6 @@ nihil (subst_diff build kosong).
 - .sections[4].blocks[1].table.rows[4][1]: OK (rujukan butir 4.15 berlabel diganti fakta)
 - .sections[7].blocks[1].table.rows[0][1]: OK (rujukan butir 4.14 berlabel diganti fakta)
 - .sections[7].blocks[1].table.rows[0][2]: OK (retensi tetap berlabel; kalimat sumber angka hanya keterangan asal)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[4].blocks[1].table.rows[4][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

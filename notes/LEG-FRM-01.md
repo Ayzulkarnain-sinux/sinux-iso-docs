@@ -323,3 +323,13 @@ nihil (subst_diff kosong di reports/w10/gates/LEG-FRM-01.json).
 - .sections[6].blocks[0].table.rows[2][1]: OK (label tetap pada kategori retensi)
 - .sections[7].blocks[1].table.rows[0][1]: OK (label tetap pada pemilik, folder dan klasifikasi tetap tanpa label)
 - .sections[7].blocks[4].table.rows[1][2]: OK (label baru karena rujukan Ketentuan butir 7 yang berlabel diganti fakta)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[2].blocks[4].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[4].blocks[4].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[1].blocks[1].table.rows[10][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[7].blocks[1].table.rows[0][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[7].blocks[1].table.rows[1][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[2].blocks[7].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[4].blocks[8].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[6].blocks[0].table.rows[4][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

@@ -239,7 +239,7 @@
    "h": "Ketentuan Penggunaan",
    "blocks": [
     {
-     "p": "1. Finance Staff membuat satu catatan baru di Tabel 1 pada hari yang sama saat sebuah tahap proses FAT diketahui tertahan, yaitu jika tahap berikutnya tidak bisa berjalan sebelum pihak lain bertindak (USULAN)."
+     "p": "1. Finance Staff membuat satu catatan baru di Tabel 1 pada hari yang sama saat sebuah tahap proses FAT diketahui tertahan (USULAN), yaitu jika tahap berikutnya tidak bisa berjalan sebelum pihak lain bertindak."
     },
     {
      "p": "2. Finance Lead menentukan Pemberi support."
@@ -272,7 +272,7 @@
      "p": "11. Finance Lead menetapkan status Ditutup jika tahap sudah berlanjut. Untuk catatan dengan ketidaksesuaian, hasil verifikasi juga harus menyatakan corrective action efektif. Finance Staff mengisi Status dan Tanggal Ditutup di Tabel 2."
     },
     {
-     "p": "12. Finance Lead meninjau semua catatan berstatus Terbuka dan Menunggu Verifikasi setiap bulan, selaras dengan evaluasi log ketidaksesuaian sesuai SNX-FAT-SOP-01 butir 4.14. Finance Staff mengisi hasil review di Tabel 4 (USULAN)."
+     "p": "12. Finance Lead meninjau semua catatan berstatus Terbuka dan Menunggu Verifikasi setiap bulan, selaras dengan evaluasi log ketidaksesuaian sesuai SNX-FAT-SOP-01 butir 4.14 (USULAN). Finance Staff mengisi hasil review di Tabel 4."
     },
     {
      "p": "13. Finance Staff dilarang menulis kata sandi, PIN, token, atau kode 2FA di dokumen ini. Akun CoreTax DJP dan KlikBCA Bisnis memakai 2FA dan tidak dibagikan (SNX-FAT-SOP-01 butir 4.11)."
@@ -344,7 +344,7 @@
      "p": "2. Di Tabel 1, isi Tanggal Dicatat dengan tanggal catatan dibuat, dan Proses FAT dengan salah satu dari enam proses di bagian Ruang Lingkup. Isi Tahap yang Tertahan dengan nama tahap menurut prosedur proses itu, misalnya Review dan persetujuan pada SNX-FAT-SOP-05. Jika prosedurnya masih dalam review, tulis nama tahap sesuai pekerjaan yang tertahan."
     },
     {
-     "p": "3. Di Uraian Bottleneck, tulis apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, tulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Isi Diminta kepada dengan nama dan jabatan Pemberi support, atau nomor ticket GLPI (USULAN)."
+     "p": "3. Di Uraian Bottleneck, tulis apa yang tertahan di tahap itu dan apa yang ditunggu dari pihak lain. Di Support yang Diperlukan, tulis bentuk support, misalnya persetujuan tertulis atau dokumen pendukung penagihan. Isi Diminta kepada dengan nama dan jabatan Pemberi support, atau nomor ticket GLPI (Ketentuan butir 4)."
     },
     {
      "p": "4. Di Tabel 2, isi Tanggal Support Diminta, Tanggal Support Diterima, dan Tanggal Tahap Berlanjut dengan tanggal kejadiannya. Biarkan Tanggal Tahap Berlanjut kosong selama tahap masih tertahan. Lama bottleneck adalah selisih Tanggal Dicatat dan Tanggal Tahap Berlanjut."

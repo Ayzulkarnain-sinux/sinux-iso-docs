@@ -227,3 +227,7 @@ nihil (lihat subst_diff build; token nomor butir rujukan yang hilang sudah dicat
 - .sections[4].blocks[9].p: OK (label baru mengikuti Ketentuan butir 9 yang diganti fakta, posisi sama dengan butir 9)
 - .sections[7].blocks[1].table.rows[0][1]: OK (label baru menggantikan rujukan Ketentuan butir 13 pada kalimat folder)
 - .sections[8].blocks[0].p: OK (label baru mengikuti Ketentuan butir 9 yang diganti fakta)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[8].blocks[0].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[4].blocks[9].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

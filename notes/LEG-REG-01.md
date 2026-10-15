@@ -275,3 +275,6 @@ nihil (subst_diff kosong).
 - .sections[0].blocks[6].p: diperbaiki (tambah label pada kalimat pertama; di bed1bb6 kedua isi berada dalam satu kalimat berlabel)
 - .sections[3].blocks[0].table.rows[1][1]: OK (label tetap pada pemilik dokumen dan record)
 - .sections[4].blocks[8].p: diperbaiki (label baru dihapus; rujukan butir 7 dan 8 tetap, fakta pengganti butir 11 tidak berlabel di bed1bb6)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[4].blocks[8].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

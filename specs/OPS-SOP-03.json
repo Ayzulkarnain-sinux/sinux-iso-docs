@@ -470,7 +470,7 @@
   ],
   [
    "Kerusakan di platform upstream atau fasilitas DC",
-   "NOC Engineer mengeskalasi ke penyedia DC atau upstream, lalu menuntaskan ticket sesuai butir 6.4. Perbaikan oleh penyedia mengikuti kontraknya."
+   "NOC Engineer mengeskalasi ke penyedia DC atau upstream sesuai matriks eskalasi SNX-OPS-SOP-04. Perbaikan oleh penyedia mengikuti kontraknya (butir 6.4)."
   ],
   [
    "Kerusakan di app-level pelanggan",

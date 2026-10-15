@@ -161,7 +161,7 @@
   ],
   [
    "VP Commercial",
-   "Menangani konsekuensi kontraktual dari breach (USULAN).",
+   "Menangani konsekuensi kontraktual dari breach (USULAN: sumber menulis Commercial tanpa jabatan).",
    "Menerima serahan breach dari Service Delivery Manager dan menangani konsekuensi kontraktualnya."
   ]
  ],
@@ -187,7 +187,7 @@
   {
    "title": "Pengumpulan data",
    "intro": [
-    "Ticket Ops, termasuk layanan Nusagrid, tercatat di Zammad. Ticket GMF dan internal tercatat di Service Hub; batas cakupan generalist masih menunggu keputusan owner (USULAN). Data availability dan ticket dikumpulkan paling lambat hari kerja ke-3 bulan berikutnya. Data SLA layanan SOC diserahkan Lead SOC pada batas yang sama (USULAN)."
+    "Ticket Ops, termasuk layanan Nusagrid, tercatat di Zammad. Ticket GMF dan internal tercatat di Service Hub; batas cakupan generalist masih menunggu keputusan owner (USULAN). Batas waktu pengumpulan data mengikuti bagian 8."
    ],
    "steps": [
     [
@@ -421,7 +421,7 @@
   [
    "Penyerahan data SLA layanan SOC",
    "Lead SOC",
-   "Paling lambat hari kerja ke-3 bulan berikutnya (USULAN)"
+   "Paling lambat hari kerja ke-3 bulan berikutnya (USULAN: sumber menyebut batas ini untuk pengumpulan data)"
   ],
   [
    "Response SLA",

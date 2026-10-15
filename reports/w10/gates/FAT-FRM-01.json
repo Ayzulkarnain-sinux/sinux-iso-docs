@@ -6,13 +6,13 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 1518,
+  "words": 1524,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
   "usulan": 16,
   "instr_items": 13,
-  "instr_role_start": 0,
+  "instr_role_start": 1,
   "justified_cells": 0,
   "tables_ge3_no_header": 0
  },

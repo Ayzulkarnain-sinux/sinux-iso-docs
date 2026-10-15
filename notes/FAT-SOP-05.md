@@ -295,3 +295,6 @@ nihil
 
 ### W10 audit cakupan label
 - .policy[5]: diperbaiki (label digeser kembali ke kalimat Finance Lead sebagai pelaku; kalimat keterangan bagian 6 tanpa label seperti bed1bb6)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .policy[5]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

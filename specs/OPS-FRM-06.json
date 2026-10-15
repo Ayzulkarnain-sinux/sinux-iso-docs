@@ -1011,7 +1011,7 @@
    "h": "Rekaman dan Retensi",
    "blocks": [
     {
-     "p": "BAST original disimpan di Drive. Checklist G3 dan laporan penutupan disimpan di folder BAST yang sama (USULAN). Pemilik semua record adalah Service Delivery Manager (USULAN)."
+     "p": "BAST original disimpan di Drive. Checklist G3 dan laporan penutupan disimpan di folder BAST yang sama (USULAN). Pemilik semua record di tabel ini adalah Service Delivery Manager (USULAN)."
     },
     {
      "table": {

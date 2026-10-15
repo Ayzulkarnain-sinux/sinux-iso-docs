@@ -134,7 +134,7 @@
   "4.13 Akses ke dokumen legal diberikan berdasarkan kebutuhan kerja dan tingkat klasifikasi dokumen. Line Manager Legal menetapkan dan memberikan akses itu.",
   "4.14 Pemohon meminta akses ke dokumen legal melalui ticket GLPI (USULAN).",
   "4.15 Line Manager Legal mencabut akses saat peran penerima akses berakhir.",
-  "4.16 Line Manager Legal meninjau daftar akses ke folder Google Drive departemen Legal setiap semester, mengikuti jadwal access review reguler di SNX-ISMS-SOP-02 (USULAN).",
+  "4.16 Line Manager Legal meninjau daftar akses ke folder Google Drive departemen Legal setiap semester, mengikuti jadwal review akses biasa di SNX-ISMS-SOP-02 (USULAN).",
   "4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim melalui kanal pribadi. Padanan istilah dokumen rahasia dengan kedua tingkat ini belum diputus (USULAN). Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01.",
   "4.18 Pembagian dokumen RESTRICTED (Internal) ke pihak luar memerlukan NDA atau kontrak yang berlaku dan persetujuan Line Manager Legal sebagai pemilik informasi (USULAN). Pembagian dokumen SECRET ke pihak luar mengikuti SNX-ISMS-PRO-01.",
   "4.19 Masa retensi dokumen legal mengikuti peraturan perundang-undangan, kontrak yang berlaku, dan kebijakan SINUX. Jika ketiganya menetapkan periode berbeda, berlaku periode terpanjang (USULAN).",
@@ -641,7 +641,7 @@
   ],
   [
    "SNX-ISMS-SOP-02",
-   "User Access Control & Authorization; sumber jadwal access review reguler setiap semester yang dipakai di butir 4.16 (USULAN)."
+   "User Access Control & Authorization; sumber jadwal review akses biasa setiap semester yang dipakai di butir 4.16 (USULAN)."
   ],
   [
    "SNX-ISMS-SOP-04",

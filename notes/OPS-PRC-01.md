@@ -256,3 +256,6 @@ nihil. Definisi Jabatan Divisi Operation, asli: "Status kelimanya (USULAN) di PO
 ### W10 audit cakupan label
 - .policy[7]: diperbaiki (dipisah lagi; batas pemakaian dengan Zammad yang belum diputus tanpa label seperti bed1bb6)
 - .related_documents[5][1]: OK (kalimat penunjuk usulan butir 6.1 diganti label)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .definitions[6][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

@@ -102,7 +102,7 @@
   ],
   [
    "Parent ticket",
-   "Ticket induk sebuah insiden di Zammad atau Service Hub sesuai SNX-OPS-SOP-04; satu insiden hanya punya satu parent ticket."
+   "Ticket induk sebuah insiden di Zammad atau Service Hub sesuai SNX-OPS-SOP-04; satu insiden hanya punya satu parent ticket (SNX-ISMS-SOP-01)."
   ],
   [
    "Ticketing system",
@@ -451,7 +451,7 @@
   {
    "title": "Pengujian dan Tinjauan Rencana (Annex A 5.30)",
    "intro": [
-    "Setiap uji dicatat di laporan uji."
+    "Frekuensi tiap uji mengikuti bagian 8. Setiap uji dicatat di laporan uji."
    ],
    "steps": [
     [

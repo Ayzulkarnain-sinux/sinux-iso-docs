@@ -175,7 +175,7 @@
   "4.12 Finance Staff menyimpan invoice, e-Faktur Pajak, PKS, PO, dan BAST sebagai PDF di folder Google Drive Departemen FAT, dengan struktur folder Tahun / Nama Klien / Nomor Invoice. Masa simpannya minimal 10 tahun.",
   "4.13 Finance Staff memperbarui status invoice di Register Penagihan dan Penjualan setiap kali status berubah. Pilihan statusnya Draf, Terkirim, Lunas, atau Cancel.",
   "4.14 Finance Staff mencatat riwayat pembatalan dan revisi invoice di log ketidaksesuaian. Finance Lead mengevaluasi log itu setiap bulan sebagai bahan kendali mutu.",
-  "4.15 Pembagian tugas pada butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16, pemantauan Overdue di bagian 9, serta Finance Lead sebagai pemilik record di bagian 11 masih menunggu keputusan FAT (USULAN).",
+  "4.15 Penetapan pelaku pada butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16, pemantauan Overdue di bagian 9, serta Finance Lead sebagai pemilik record di bagian 11 masih berstatus (USULAN).",
   "4.16 Finance Staff mencatat pemusnahan arsip yang masa simpannya sudah berakhir dalam Berita Acara Pemusnahan Dokumen. Pemusnahan itu disetujui Finance Lead dan Direktur Utama."
  ],
  "roles": [
@@ -186,17 +186,17 @@
   ],
   [
    "Project Manager",
-   "Mengajukan permohonan penagihan ke Finance Staff setelah milestone atau pekerjaan selesai, memastikan dokumen pendukung tersedia, dan mengonfirmasi bahwa data master klien sudah lengkap.",
+   "Mengajukan permohonan penagihan ke Finance Staff setelah milestone atau pekerjaan selesai, memastikan dokumen pendukung tersedia, dan mengonfirmasi bahwa data master klien sudah lengkap (butir 6.1). Jabatan Divisi Operation ini belum punya pemegang di SNX-HR-ORG-01.",
    "Mengajukan permohonan penagihan; tidak menyetujui invoice."
   ],
   [
    "Finance Staff",
    "Memeriksa kelengkapan permohonan penagihan, melakukan 3-way matching, menerbitkan e-Faktur Pajak, dan menyusun draf invoice. Mengirim invoice ke klien, mencatat transaksi di Register Penagihan dan Penjualan, memantau kas masuk, serta menangani revisi atau pembatalan invoice setelah disetujui Finance Lead.",
-   "Menerbitkan e-Faktur Pajak dan mengirim invoice, hanya setelah ada persetujuan tertulis Finance Lead."
+   "Menerbitkan e-Faktur Pajak dan mengirim invoice. Invoice tidak diterbitkan atau dikirim tanpa persetujuan tertulis Finance Lead (butir 4.4)."
   ],
   [
    "Finance Lead",
-   "Pemilik SOP ini. Memeriksa draf invoice, e-Faktur Pajak, dan dokumen pendukung terhadap Master Sales Sheet dan Google Form Data Subskripsi Klien, termasuk kelengkapan atribut invoice, perhitungan PPN, dan catatan PPh Pasal 23. Meneruskan draf ke Direktur Utama jika TOP di atas standar, lalu memberi persetujuan tertulis sebelum invoice dikirim.",
+   "Pemilik SOP ini. Memeriksa draf invoice, e-Faktur Pajak, dan dokumen pendukung terhadap Master Sales Sheet dan Google Form Data Subskripsi Klien; memastikan kelengkapan dan keakuratan semua atribut invoice; memeriksa perhitungan PPN dan catatan PPh Pasal 23; meneruskan draf ke Direktur Utama jika TOP di atas standar; memberi persetujuan tertulis sebelum invoice dikirim (butir 6.3).",
    "Menyetujui draf invoice sebelum dikirim, serta revisi dan pembatalan invoice. Tidak boleh mengubah atau memperpanjang jatuh tempo melebihi TOP standar tanpa persetujuan Direktur Utama."
   ],
   [

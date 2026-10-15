@@ -42,7 +42,7 @@
    "h": "Ruang Lingkup",
    "blocks": [
     {
-     "p": "Form ini mencakup setiap transaksi pembayaran yang dikelola FAT, yaitu pembayaran invoice, reimbursement, cash advance, dan pembayaran pajak. Transaksi jenis lain juga dicatat, dengan nama jenisnya ditulis di kolom Jenis Transaksi."
+     "p": "Form ini mencakup setiap transaksi pembayaran yang dikelola FAT, yaitu pembayaran invoice, reimbursement, cash advance, dan pembayaran pajak. Transaksi pembayaran jenis lain juga dicatat, dengan nama jenisnya ditulis di kolom Jenis Transaksi."
     },
     {
      "p": "Butir berikut dikecualikan dari form ini:"
@@ -716,7 +716,7 @@
        ],
        [
         "SNX-FAT-SOP-05",
-        "Tax Administration & Reporting. Butir 6.3 langkah 2 dan tabel record bagian 11 SOP itu memakai form ini untuk mencatat persetujuan utang pajak dan pengajuan pembayaran (USULAN)."
+        "Tax Administration & Reporting. Butir 6.3 langkah 2 SOP itu memakai form ini untuk mencatat persetujuan utang pajak, dan tabel record bagian 11 memakainya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN)."
        ],
        [
         "SNX-FAT-SOP-06",

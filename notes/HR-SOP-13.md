@@ -286,3 +286,7 @@ nihil
 - .roles[0][2]: diperbaiki (dua kalimat disambung titik koma agar batas wewenang kembali di bawah label)
 - .roles[3][1]: diperbaiki (label kembali hanya pada peran pengusul; daftar tugas di luar label)
 - .roles[4][1]: diperbaiki (label kembali hanya pada peran penanggap; daftar tugas di luar label)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .policy[0]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .scope[1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

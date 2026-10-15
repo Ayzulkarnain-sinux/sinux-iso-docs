@@ -56,7 +56,7 @@
   }
  },
  "set": {
-  "Kontrol Dokumen!B18": "Gunakan satu nomor CR untuk satu perubahan, dengan format CR-YYYY-NNNN. Log ini menjadi rekap audit, sedangkan CR juga dibuat sebagai ticket di Zammad (USULAN).",
+  "Kontrol Dokumen!B18": "Gunakan satu nomor CR untuk satu perubahan, dengan format CR-YYYY-NNNN. CR juga dibuat sebagai ticket di Zammad (USULAN). Log ini menjadi rekap audit.",
   "Kontrol Dokumen!B15": "Log semua change request proyek dan teknis, lengkap dengan approval, eksekusi, dan hasilnya, sesuai SNX-OPS-SOP-02.",
   "Kontrol Dokumen!B19": "Kolom Go-gate otomatis bernilai CEK jika backup, rollback, atau approval belum lengkap, kecuali untuk change Emergency.",
   "Kontrol Dokumen!B20": "Kolom PIR otomatis bernilai Ya untuk change Major atau change yang berakhir rollback. Lakukan PIR dalam 5 hari kerja.",

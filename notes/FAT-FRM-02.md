@@ -187,3 +187,7 @@ col_widths ditambah (Worksheet D, Platform Access B dan C) karena tautan dan pem
 ### W10 putaran perbaikan 1 (worker, temuan qa/FAT-FRM-02.w10.r1.json)
 - B18: "Isi sheet Worksheet ... Berkas ini diisi Finance Staff (USULAN)." menjadi "Finance Staff mengisi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN)."
 - B21: "Isi berkas ini di-review Finance Lead setiap tahun (USULAN)." menjadi "Finance Lead meninjau isi berkas ini setiap tahun (USULAN)." (kata kerja Indonesia dipertahankan, STYLE §1.3).
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- Kontrol Dokumen!B19: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- Kontrol Dokumen!B20: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

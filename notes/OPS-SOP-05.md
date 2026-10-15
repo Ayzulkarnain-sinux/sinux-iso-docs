@@ -195,3 +195,8 @@ nihil (build tidak mencatat selisih numbers atau usul_butir).
 
 ### W10 audit cakupan label
 - .procedures[1].intro[0]: OK (label tetap pada Service Hub; batas ke-3 tanpa label dan data SOC berlabel sesuai SLA bed1bb6)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .procedures[1].intro[0]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .roles[4][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sla[4][2]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

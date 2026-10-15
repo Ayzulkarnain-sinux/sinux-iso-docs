@@ -135,3 +135,6 @@ nihil
 Pihak luar tidak disebut di sel yang disunting; sebutan OPS tetap "pelanggan".
 Disunting: Tujuan, Cara pakai 1 sampai 4, catatan Checklist G1 A2, WBS dan Timeline A2, Stakeholder A2. Milestone A2 dipertahankan (T1).
 Cara pakai 4: "minimal mingguan" ditulis "paling sedikit sekali seminggu"; rujukan SNX-OPS-SOP-01 6.4 tetap.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- Kontrol Dokumen!B18: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

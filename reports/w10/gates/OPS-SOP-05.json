@@ -6,11 +6,11 @@
  "lint": "pass",
  "ooxml": "PASSED",
  "scan": {
-  "words": 2087,
+  "words": 2082,
   "calque": [],
   "lewat": 0,
   "pointer": 0,
-  "usulan": 12,
+  "usulan": 11,
   "instr_items": 0,
   "instr_role_start": 0,
   "justified_cells": 0,

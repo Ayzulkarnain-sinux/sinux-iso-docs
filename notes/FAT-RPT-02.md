@@ -235,3 +235,8 @@ Lebar kolom Tabel 1 (Uraian Bottleneck) dan Tabel 3 (Corrective Action, Hasil Ve
 
 ### W10 audit cakupan label
 - .sections[4].blocks[2].p: OK (rujukan Ketentuan butir 4 berlabel diganti label pada kalimat nomor ticket GLPI)
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[4].blocks[2].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[2].blocks[0].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[2].blocks[11].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

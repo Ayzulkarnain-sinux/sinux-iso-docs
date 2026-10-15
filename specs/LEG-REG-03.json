@@ -269,7 +269,7 @@
      "p": "9. Isi kolom Status dengan salah satu dari enam nilai di tabel Status. Beri status Belum Diverifikasi pada baris yang belum diperiksa."
     },
     {
-     "p": "10. Di kolom Tanggal Berlaku, tulis tanggal peraturan mulai berlaku menurut teksnya. Di kolom Review Terakhir dan Review Berikutnya, tulis tanggal review menurut Ketentuan butir 9, yaitu setiap bulan (USULAN) dan saat kegiatan berubah."
+     "p": "10. Di kolom Tanggal Berlaku, tulis tanggal peraturan mulai berlaku menurut teksnya. Di kolom Review Terakhir dan Review Berikutnya, tulis tanggal review sesuai Ketentuan butir 9."
     },
     {
      "p": "11. Di kolom Lokasi Salinan, tulis lokasi berkas salinan di folder Google Drive Departemen Legal."
@@ -771,7 +771,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun. Staff Legal meninjau isinya setiap bulan (USULAN) dan setiap kali kegiatan SINUX berubah."
+     "p": "Register ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isinya sesuai Ketentuan butir 9."
     }
    ]
   }

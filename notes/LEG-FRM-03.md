@@ -311,3 +311,7 @@ nihil (subst_diff kosong).
 - .sections[11].blocks[1].table.rows[1][1]: OK (label tetap pada pemilik)
 ### W10 koreksi worker: metascan
 - .sections[4].blocks[1].p: "penyusun, pemeriksa, dan penyetuju setiap lembar review" menjadi "pihak yang menyusun, memeriksa, dan menyetujui setiap lembar review" (bentuk bed1bb6). Kata "penyusun" adalah frasa meta proses yang dihitung metascan (target 0, LEAD G-1); form ini bukan form yang punya peran bernama penyusun.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .sections[2].blocks[0].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .sections[1].blocks[2].p: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)

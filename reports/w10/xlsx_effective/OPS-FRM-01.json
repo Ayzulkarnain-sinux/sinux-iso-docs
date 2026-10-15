@@ -132,7 +132,7 @@
  },
  "set": {
   "Kontrol Dokumen!B15": "Mencatat rencana proyek: checklist penerimaan G1, project charter, WBS dan jadwal, milestone, serta stakeholder dan rencana komunikasi.",
-  "Kontrol Dokumen!B18": "Gunakan satu file untuk satu proyek, dengan nama FRM-01_<KodeProyek>.xlsx.",
+  "Kontrol Dokumen!B18": "Salin file ini untuk setiap proyek, lalu beri nama FRM-01_<KodeProyek>.xlsx.",
   "Kontrol Dokumen!B19": "Isi Checklist G1 sebelum proyek dimulai. Proyek belum boleh dimulai jika masih ada butir berstatus Belum.",
   "Kontrol Dokumen!B20": "Isi Project Charter, lalu sheet WBS dan Timeline. Durasi dan progres keseluruhan terisi otomatis.",
   "Kontrol Dokumen!B21": "Perbarui kolom Progres dan Status paling sedikit sekali seminggu, sesuai SNX-OPS-SOP-01 butir 6.4.",

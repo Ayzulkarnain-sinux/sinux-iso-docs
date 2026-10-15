@@ -134,3 +134,6 @@ Selesai:
 1. ledger current_wave "W10-DONE".
 2. reports/REVIEW-W10.md berisi tabel per gerbang (dikerjakan, bukti, sisa), daftar residu bernama, dan 3 contoh sebelum dan sesudah per departemen.
 3. Commit "ISO W10 penutupan", push, lalu BERHENTI.
+
+## G-5 | 2026-10-15 | berlaku: penutupan lane ISO
+Catatan, bukan arahan kerja. LEAD ISO-B memverifikasi W10 (0a00bae), menemukan pergeseran cakupan substansi lewat pemeriksaan makna buta, lalu mengoreksi 53 path langsung di sesi LEAD. Rinciannya di reports/REVIEW-W11.md. Tidak ada arahan terbuka untuk worker. "ulang residu" tidak dijalankan: owner menutup sesi ISO, dan tim merevisi dokumen secara manual. Sesi worker baru di lane ini hanya dimulai atas arahan LEAD berikutnya.

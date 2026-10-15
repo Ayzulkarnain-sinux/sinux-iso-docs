@@ -293,3 +293,7 @@ nihil
 - Audit pointer jalur ini: lengkap; penunjuk balik "butir 4.17" dibuang karena isi butir 4.17 sudah ada di kolom kondisi baris itu.
 ### W10 audit pointer
 - .exceptions[6][1]: lengkap; penunjuk balik "butir 4.17" (SOP ini) dibuang, isi butir 4.17 sudah tertulis di kolom kondisi baris yang sama; lihat koreksi worker di atas.
+
+### W11 koreksi LEAD (cakupan dikembalikan ke bed1bb6, 15 Okt)
+- .policy[15]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
+- .related_documents[5][1]: cakupan, label, pelaku, atau rujukan dikembalikan ke bed1bb6 (temuan pemeriksa makna buta LEAD, reports/w11/)
