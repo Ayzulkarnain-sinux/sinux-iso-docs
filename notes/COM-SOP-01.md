@@ -200,3 +200,16 @@ Putaran sweep dari orkestrator (berkas /tmp/claude-0/prompts/COM-SOP-01.sweep.tx
 | 11 | Alasan yang dicabut dari badan dokumen (disimpan di sini) | Alasan USULAN 4: Sales SOP hanya menyebut lingkup kolaborasi Legal (NDA preparation/review, Contract review, Commercial terms & conditions, Contract negotiation support, Legal compliance), tanpa titik waktu. Alasan USULAN 5: Sales SOP Stage 8 memasukkan "Project Kick-off atau implementasi telah dimulai" ke syarat closing, bertentangan dengan Stage 9. Alasan USULAN 6: Sales SOP tidak menyebut pelaku review internal, tinjauan, penerima laporan, dan penyerah paket. Alasan USULAN 7: Sales SOP memakai Sales, Sales Executive, Presales, dan Delivery, sedangkan SNX-HR-ORG-01 tidak punya jabatan itu | Badan dokumen menyatakan status (USULAN) tanpa alasan proses |
 
 Catatan: kata "sumber" tersisa di badan dokumen hanya sebagai kata benda biasa (CRM sebagai sumber data tunggal; sumber dan status lead; sumber nama jabatan dan sumber tingkat RESTRICTED di Dokumen terkait). Frasa "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi" di tiga baris Dokumen terkait (COM-SOP-02, COM-FRM-01, COM-FRM-02) tidak diubah karena di luar butir sweep; bila orkestrator menganggapnya frasa proses, tulis ulang pada putaran berikutnya.
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 8 Bagian 9, Service Delivery Manager menolak paket handover | "(SNX-OPS-SOP-01 butir 4.1)" | "(SNX-OPS-SOP-01 butir 4.1 dan bagian 9)" |
+| 9 Bagian 11, SNX-COM-SOP-02 | "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi." | "mengatur penyusunan proposal, review scope, validasi harga dan margin, pengecualian komersial, review internal, serta persetujuan harga dan diskon sebelum penawaran dikirim." (USULAN pada rujukan rincian tetap) |
+| 9 Bagian 11, SNX-COM-FRM-01 | "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Calon rekaman Business Requirement di butir 6.3 (USULAN)." | "mencatat hasil review Commercial atas satu order customer sebelum order diterima. Rekaman Business Requirement di butir 6.3 (USULAN)." |
+| 9 Bagian 11, SNX-COM-FRM-02 | "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Calon rekaman paket handover di butir 6.8 (USULAN)." | "mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8 (USULAN)." |
+
+Label USULAN pada hubungan ke butir 6.3 dan 6.8 tetap karena SNX-COM-FRM-01 dan SNX-COM-FRM-02 sendiri menandainya USULAN.
+
+Open item ditutup atau diubah: nihil (hanya rujukan diperbaiki).

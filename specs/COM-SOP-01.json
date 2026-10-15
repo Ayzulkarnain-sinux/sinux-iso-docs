@@ -637,7 +637,7 @@
   ],
   [
    "Service Delivery Manager menolak paket handover",
-   "Service Delivery Manager mengembalikan paket ke Commercial secara tertulis dan proyek belum dimulai (SNX-OPS-SOP-01 butir 4.1). Business Development melengkapi paket sesuai alasan penolakan (butir 4.19)."
+   "Service Delivery Manager mengembalikan paket ke Commercial secara tertulis dan proyek belum dimulai (SNX-OPS-SOP-01 butir 4.1 dan bagian 9). Business Development melengkapi paket sesuai alasan penolakan (butir 4.19)."
   ],
   [
    "Terjadi opportunity bernilai strategis, risiko kehilangan customer, konflik kontrak, isu legal, komplain kritis, kompetitor melakukan displacement, atau potensi churn",
@@ -679,15 +679,15 @@
   ],
   [
    "SNX-COM-SOP-02",
-   "Proposal, Quotation & Pricing Control; judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Rincian pengendalian proposal, quotation, dan harga dirujuk ke dokumen itu (USULAN)."
+   "Proposal, Quotation & Pricing Control; mengatur penyusunan proposal, review scope, validasi harga dan margin, pengecualian komersial, review internal, serta persetujuan harga dan diskon sebelum penawaran dikirim. Rincian pengendalian proposal, quotation, dan harga dirujuk ke dokumen itu (USULAN)."
   ],
   [
    "SNX-COM-FRM-01",
-   "Customer Requirement & Order Review Record; judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Calon rekaman Business Requirement di butir 6.3 (USULAN)."
+   "Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Rekaman Business Requirement di butir 6.3 (USULAN)."
   ],
   [
    "SNX-COM-FRM-02",
-   "Project Handover Record; judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Calon rekaman paket handover di butir 6.8 (USULAN)."
+   "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8 (USULAN)."
   ],
   [
    "Belum bernomor",
