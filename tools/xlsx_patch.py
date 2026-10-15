@@ -6,7 +6,8 @@ patch.json: {"clear_rows": {"Sheet": [5, 6]}, "set": {"Sheet!B4": "nilai"}, "add
             "extend_validation": {"Sheet": {"K5:K6": "K5:K1000"}}, "copy_row_style": {"Sheet": {"from": 5, "rows": [7, 1000]}},
             "fill_formula": {"Sheet!J": {"rows": [5, 1000], "formula": "=IF(D{r}=\"\", \"\", TODAY() - D{r})"}} (ketiganya opsional, ISO-W9),
             "freeze": {"Sheet": "A5"}, "wrap_cols": {"Sheet": {"rows": [4, 200], "cols": ["B", "D"]}}, "col_widths": {"Sheet": {"B": 40}},
-            "page_setup": {"Sheet": {"orientation": "landscape", "fitToWidth": 1, "fitToHeight": 0, "print_title_rows": "4:4"}} (opsional, ISO-W10)}
+            "page_setup": {"Sheet": {"orientation": "landscape", "fitToWidth": 1, "fitToHeight": 0, "print_title_rows": "4:4"}},
+            "fit_rows": {"Sheet": {"rows": [3, 38]}}; wrap_cols menerima "valign": "top" (opsional, ISO-W10)}
 clear_rows mengosongkan sel non-rumus dan warna isi di baris itu (struktur, rumus,
 validasi tetap); baris TIDAK dihapus agar rujukan rumus tidak bergeser. Keluar 1 bila fitur berkurang
 (sheet, gambar, data validation, conditional formatting) atau masih ada teks CONTOH.
@@ -135,6 +136,8 @@ def main():
                 c = ws[f'{col}{r}']
                 al = copy.copy(c.alignment)
                 al.wrap_text = True
+                if spec.get('valign'):
+                    al.vertical = spec['valign']
                 c.alignment = al
     for sheet, widths in patch.get('col_widths', {}).items():
         ws = sheet_ok(sheet)
@@ -148,6 +151,23 @@ def main():
         ws.page_setup.fitToHeight = ps.get('fitToHeight', 0)
         if ps.get('print_title_rows'):
             ws.print_title_rows = ps['print_title_rows']
+    # fit_rows: tinggi baris dari panjang teks sel ber-wrap dan lebar kolom (Excel tidak menyesuaikan sendiri saat dibuka).
+    # Hanya menaikkan tinggi, tidak menurunkan. ponytail: lebar huruf rata-rata ditaksir, bukan diukur dari font.
+    for sheet, spec in patch.get('fit_rows', {}).items():
+        ws = sheet_ok(sheet)
+        a, b = spec['rows']
+        for r in range(a, b + 1):
+            need = 0
+            for c in ws[r]:
+                if not isinstance(c.value, str) or c.value.startswith('=') or not c.alignment.wrap_text:
+                    continue
+                w = ws.column_dimensions[c.column_letter].width or 8.43
+                per = max(1, int(w * 1.15))
+                lines = sum(max(1, -(-len(seg) // per)) for seg in c.value.split('\n'))
+                need = max(need, lines * (c.font.sz or 11) * 1.35 + 2)
+            cur = ws.row_dimensions[r].height or 15
+            if need > cur:
+                ws.row_dimensions[r].height = round(need, 1)
     wb.save(out)
     after, media1, _ = features(out)
     fails = []

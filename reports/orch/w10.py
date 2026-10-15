@@ -286,6 +286,45 @@ def xlsxinit():
     print('xlsx_sheets.json:', {k: len(v['data']) for k, v in res.items()})
 
 
+def fmt_ops(k):
+    """Op format W10 dari reports/w10/xlsx_sheets.json (milik worker; penyusun hanya memegang set dan col_widths)."""
+    r = json.load(open('reports/w10/xlsx_sheets.json'))[k]
+    P = {'freeze': {}, 'wrap_cols': {}, 'page_setup': {}, 'fit_rows': {}, 'col_widths': {}}
+    for x in r['data']:
+        P['freeze'][x['sheet']] = x['freeze_bed1bb6'] or f"A{x['header_row'] + 1}"
+        P['wrap_cols'][x['sheet']] = {'rows': [x['header_row'], x['max_row']]}
+        P['page_setup'][x['sheet']] = {'orientation': 'landscape', 'fitToWidth': 1, 'fitToHeight': 0,
+                                       'print_title_rows': f"{x['header_row']}:{x['header_row']}"}
+    if r['kontrol']:
+        rows = [3, r['kontrol']['rows'][1]]  # baris 1-2 judul dibiarkan melebar ke kanan, tidak di-wrap
+        P['wrap_cols']['Kontrol Dokumen'] = {'rows': rows, 'valign': 'top'}
+        P['fit_rows']['Kontrol Dokumen'] = {'rows': rows}
+        P['page_setup']['Kontrol Dokumen'] = {'orientation': 'portrait', 'fitToWidth': 1, 'fitToHeight': 0}
+    for x in r['lain']:
+        if x['sheet'].startswith('Matriks'):
+            # matriks 5x5 seimbang: kolom Impact 1 sampai 5 sama lebar; legenda di kolom C ikut wrap
+            P['col_widths'][x['sheet']] = {c: 24 for c in 'CDEFG'}
+            P['fit_rows'][x['sheet']] = {'rows': [12, x['max_row']]}
+            P['page_setup'][x['sheet']] = {'orientation': 'landscape', 'fitToWidth': 1, 'fitToHeight': 0}
+        else:
+            P['page_setup'][x['sheet']] = {'orientation': x['orientation'], 'fitToWidth': 1, 'fitToHeight': 0}
+    return P
+
+
+def effective_patch(k):
+    """Gabungan op format worker + set/col_widths penyusun; ditulis untuk audit, dipakai build."""
+    P = fmt_ops(k)
+    U = json.load(open(f'specs/{k}.w10.patch.json', encoding='utf-8'))
+    P['set'] = U.get('set', {})
+    for sh, w in U.get('col_widths', {}).items():
+        P['col_widths'].setdefault(sh, {}).update(w)
+    P = {a: b for a, b in P.items() if b}
+    os.makedirs('reports/w10/xlsx_effective', exist_ok=True)
+    pth = f'reports/w10/xlsx_effective/{k}.json'
+    dump(P, pth)
+    return pth
+
+
 def text_of(p):
     return run('python3', '-I', '-c', TXX if p.endswith('.xlsx') else TXT, p)[1]
 
@@ -373,7 +412,8 @@ def build(k):
     os.makedirs(f'{W}/diff', exist_ok=True)
     os.makedirs(f'{W}/pdf', exist_ok=True)
     if d['mode'] == 'xlsx':
-        rc, o, e = run('python3', '-I', 'tools/xlsx_patch.py', base, f'specs/{k}.w10.patch.json', out)
+        eff = effective_patch(k)
+        rc, o, e = run('python3', '-I', 'tools/xlsx_patch.py', base, eff, out)
         g['xlsx_patch'] = 'pass' if rc == 0 else (o + e)[-400:]
         if rc:
             g['fails'].append('xlsx_patch gagal')
@@ -435,7 +475,7 @@ def build(k):
                 g['fails'].append(f"sheet {x['sheet']} belum freeze/fit/landscape/print titles")
         import openpyxl
         ws = openpyxl.load_workbook(out)['Kontrol Dokumen']
-        nowrap = [c.coordinate for r in ws.iter_rows() for c in r if isinstance(c.value, str) and len(c.value) > 20 and not c.alignment.wrap_text]
+        nowrap = [c.coordinate for r in ws.iter_rows(min_row=3) for c in r if isinstance(c.value, str) and len(c.value) > 20 and not c.alignment.wrap_text]
         if nowrap:
             g['fails'].append(f'Kontrol Dokumen tanpa wrap: {nowrap[:5]}')
     # Diff teks untuk pemeriksa buta, PDF untuk rubrik (d), halaman form.
