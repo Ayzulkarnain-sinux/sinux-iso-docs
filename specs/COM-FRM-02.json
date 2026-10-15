@@ -184,7 +184,7 @@
    "h": "Dasar dan Ketentuan",
    "blocks": [
     {
-     "p": "4.1 Business Development mengisi Tabel 1 sampai Tabel 10 sesudah closing dan sebelum handover meeting. Dokumen closing sudah lengkap pada saat itu (SNX-COM-SOP-01 butir 4.16)."
+     "p": "4.1 Business Development mengisi Tabel 1 sampai Tabel 10 sesudah closing dan sebelum handover meeting, lalu mengisi Tabel 11 sesudah handover meeting. Dokumen closing sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16)."
     },
     {
      "p": "4.2 Isi minimal paket handover menurut SNX-COM-SOP-01 butir 4.16 adalah Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person. Dalam formulir ini keenamnya ada di Tabel 1 (Customer Background), Tabel 3 dan Tabel 4 (Scope), Tabel 5 (Timeline), Tabel 6 (Contact Person), Tabel 9 (Risks), dan Tabel 10 (Commitment). Tabel 2, Tabel 7, dan Tabel 8 menambahkan dokumen dasar, dependency, dan asumsi."
@@ -246,7 +246,7 @@
       "rows": [
        [
         "Business Development",
-        "Mengisi Tabel 1 sampai Tabel 10, mencatat hasil handover meeting dan penolakan paket handover di Tabel 11, dan melengkapi paket handover yang ditolak (butir 4.1 sampai 4.5, 4.10, 4.12). Memegang tugas Sales dan Sales Executive (SNX-COM-SOP-01, USULAN).",
+        "Mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (hasil handover meeting dan penolakan paket handover), serta melengkapi paket handover yang ditolak (butir 4.1 sampai 4.5, 4.10, 4.12). Memegang tugas Sales dan Sales Executive (SNX-COM-SOP-01, USULAN).",
         "Mencatat dan tidak memutuskan. Tidak menjanjikan jadwal sebelum Service Delivery Manager mengonfirmasinya (butir 4.6)."
        ],
        [
@@ -286,7 +286,7 @@
    "h": "Cara Mengisi",
    "blocks": [
     {
-     "p": "Business Development mengisi Tabel 1 sampai Tabel 11 menurut petunjuk berikut. Pemegang peran pada tiap baris Tabel 12 mengisi baris itu."
+     "p": "Business Development mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (butir 4.1), menurut petunjuk berikut. Pemegang peran pada tiap baris Tabel 12 mengisi baris itu."
     },
     {
      "table": {

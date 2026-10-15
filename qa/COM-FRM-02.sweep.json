@@ -1,0 +1,26 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 5 Peran, baris Business Development",
+   "masalah": "Butir sweep dikerjakan: butir 4.1, Peran, dan Cara Mengisi kini sama (Tabel 1 sampai Tabel 10 sebelum handover meeting, Tabel 11 sesudahnya). Sisa temuan verify asal: keterangan dalam kurung di Peran hanya menyebut hasil handover meeting dan penolakan, sedangkan Tabel 11 baris 4 sampai 7 (status dokumen closing, tanggal penyerahan paket handover, hasil dan tanggal gate G1) tetap tidak disebut. Cakupan 'Tabel 11' sudah menutupnya secara umum, jadi ringan.",
+   "bukti": "Peran sesudah: 'Tabel 11 sesudahnya (hasil handover meeting dan penolakan paket handover)'; Cara Mengisi Tabel 11 'Baris 4 dan 5' dan 'Baris 6 dan 7' (salin hasil dan tanggal keputusan gate G1 dari SNX-OPS-FRM-01)."
+  },
+  {
+   "lokasi": "Peran baris Business Development dan kalimat pembuka Cara Mengisi; Cara Mengisi Tabel 10 'Dipenuhi oleh (jabatan)'; butir 4.10",
+   "masalah": "Waktu 'Tabel 1 sampai Tabel 10 sebelum handover meeting' dari butir 4.1 kini diulang di dua tempat lagi, padahal kolom Tabel 10 'Dipenuhi oleh (jabatan)' diisi dari jabatan yang Service Delivery Manager sebut di handover meeting. Kontradiksi ini sudah ada di butir 4.1 sebelum sweep (bukan perubahan makna baru), tetapi kini tersebar ke tiga tempat. Usul putaran berikut: kecualikan kolom itu, misalnya 'Tabel 1 sampai Tabel 10 (kecuali kolom Dipenuhi oleh di Tabel 10)'.",
+   "bukti": "Cara Mengisi Tabel 10: 'Tulis jabatan yang Service Delivery Manager sebut di handover meeting.'; butir 4.10: 'Service Delivery Manager menyebut jabatan tim pelaksana yang memenuhi tiap komitmen di Tabel 10.'"
+  },
+  {
+   "lokasi": "Butir 4.1 kalimat kedua",
+   "masalah": "'pada saat itu' diganti 'sebelum handover meeting' supaya rujukan waktu tidak rancu sesudah klausa Tabel 11 ditambahkan. Ini sejalan dengan SNX-COM-SOP-01 butir 4.16 ('sebelum handover'), jadi bukan fakta baru dan maknanya tetap. Kalimatnya masih berupa kalimat keadaan tanpa pelaku (temuan verify asal, di luar butir sweep), padahal sumbernya menyebut Business Development sebagai pelaku.",
+   "bukti": "Sesudah: 'Dokumen closing sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16).' specs/COM-SOP-01.json 4.16: 'Business Development memastikan seluruh dokumen closing lengkap sebelum handover.'"
+  },
+  {
+   "lokasi": "Cakupan pemeriksaan (info)",
+   "masalah": "git diff specs/COM-FRM-02.json sama persis dengan spec.diff: 3 hunk, semuanya dalam lingkup butir 1. Tidak ada simpul diagram yang berubah. Tidak ada nama, jabatan, angka, sistem, atau tanggal baru. Klaim waktu Tabel 11 diturunkan dari butir 4.10, 4.12, dan Cara Mengisi Tabel 11, dan butir 4.1 tetap berlabel USULAN lewat butir 4.15. Tidak ada em-dash, rujukan internal AI, atau pola pasif baru. docx di out/ memuat ketiga teks baru. Notes memuat '## Sweep' dengan isi sebelum dan sesudah, ditambah catatan bahwa teks butir instruksi terpotong ('kupan isian'). Tafsir 'cakupan isian' cocok dengan temuan qa/COM-FRM-02.verify.json.",
+   "bukti": "diff <(git diff -- specs/COM-FRM-02.json) COM-FRM-02.spec.diff: identik; unzip docx: 'Tabel 11 sesudah handover meeting', 'Tabel 11 sesudahnya (butir 4', 'Tabel 11 sesudahnya (hasil handover meeting ...)'; em-dash 0."
+  }
+ ]
+}

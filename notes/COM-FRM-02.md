@@ -183,3 +183,18 @@ Hanya specs/COM-FRM-02.json dan notes/COM-FRM-02.md yang diubah. Butir yang diub
 | Benda sebagai pelaku | Tujuan: "Formulir ini memuat isi handover ..."; Acuan ISO 8.2.3: "Tabel 9 memuat perbedaan antar dokumen" | Tujuan; Acuan ISO |
 
 Uji ulang sesudah perubahan: render tanpa galat; `python3 -I tools/lint_doc.py ... generic` pass true, fails kosong, warn 11 butir USULAN (lint.out.txt); validator OOXML "All validations PASSED!" (validate.out.txt); PDF 16 halaman, tiap halaman berisi teks di luar header dan footer (pdf-pages.out.txt: halaman 1 sampul 15 kata, halaman lain 45 sampai 382 kata); pemeriksaan teks nol em-dash, en-dash, kutip ganda, frasa terlarang, meta penyusunan, rujukan internal AI, dan nol sel data terisi di Tabel 1 sampai Tabel 12 (extra-checks.out.txt).
+
+## Sweep
+
+Butir 1 (cakupan isian Business Development: Peran dan butir 4.1 menyebut Tabel 1 sampai Tabel 10, Cara Mengisi menyebut Tabel 1 sampai Tabel 11). Disatukan: Tabel 1 sampai Tabel 10 diisi sebelum handover meeting, Tabel 11 sesudahnya. Tidak ada fakta, angka, atau nama baru.
+
+| Lokasi | Sebelum | Sesudah |
+|---|---|---|
+| Butir 4.1 | "Business Development mengisi Tabel 1 sampai Tabel 10 sesudah closing dan sebelum handover meeting. Dokumen closing sudah lengkap pada saat itu (SNX-COM-SOP-01 butir 4.16)." | "Business Development mengisi Tabel 1 sampai Tabel 10 sesudah closing dan sebelum handover meeting, lalu mengisi Tabel 11 sesudah handover meeting. Dokumen closing sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16)." |
+| Peran, baris Business Development | "Mengisi Tabel 1 sampai Tabel 10, mencatat hasil handover meeting dan penolakan paket handover di Tabel 11, dan melengkapi paket handover yang ditolak (...)" | "Mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (hasil handover meeting dan penolakan paket handover), serta melengkapi paket handover yang ditolak (...)" |
+| Cara Mengisi, kalimat pembuka | "Business Development mengisi Tabel 1 sampai Tabel 11 menurut petunjuk berikut." | "Business Development mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (butir 4.1), menurut petunjuk berikut." |
+
+Catatan: teks butir 1 di berkas instruksi sweep terpotong di awal ("kupan isian ..."); saya membacanya sebagai cakupan isian Business Development dan hanya mengubah tiga kalimat di atas. Bila yang dimaksud lain, mohon dikirim ulang. Butir 4.1 tetap tercakup label USULAN di butir 4.15.
+
+Uji sesudah sweep (bukti di /tmp/pen-COM-FRM-02/): render tanpa galat; lint_doc generic pass true, fails kosong, warn 11 butir USULAN (lint.out.txt); validator OOXML "All validations PASSED!" (validate.out.txt); `python3 -I reports/orch/blankscan.py` memberi "ok 16 COM-FRM-02.docx []" (blankscan.out.txt).
+
