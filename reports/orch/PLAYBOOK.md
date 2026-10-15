@@ -12,7 +12,7 @@ Per dokumen (dari /home/claude/iso-run):
 Push: `git pull --rebase --autostash -q origin main && git push -q origin main` (gagal 3x = zip out/ + ledger.json lewat SendUserFile).
 
 Checkpoint tiap wave (RUNBOOK §9): `orch.py report W<n>`; commit reports + ledger; pull --rebase; baca control/LEAD-GUIDE.md (G-n > last_guide_seen); hapus watchdog lama (delete_trigger id ledger.watchdog_trigger_id), buat send_later +45 menit, simpan id; cek sisa token < 1.500.000 = langsung W8.
-W8: Master_List_COS.xlsx (88 baris) + Laporan_Run.md di out/00_Index, push final, packet staging final (bila konektor KB ada), hapus watchdog, HANDOFF empat blok.
+W8: Master_List_COS.xlsx (88 baris) + Laporan_Run.md (W8 di out/00_Index; sejak ISO-W9 di reports/, arahan LEAD G-2 butir 3), push final, packet staging final (bila konektor KB ada), hapus watchdog, HANDOFF empat blok.
 
 ## Sweep (sesudah semua dokumen DONE atau saat slot penyusun kosong)
 Daftar: `python3 -I reports/orch/sweep.py list` (salinan awal /tmp/claude-0/sweep-list.txt, 36 dokumen). Per dokumen:

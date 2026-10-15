@@ -402,6 +402,24 @@ def adjust_cols(tbl_el, n, widths=None, total=9072):
                 tcpr.find(qn('w:tcW')).set(qn('w:type'), 'dxa')
 
 
+def table_row_flags(tbl_el, tb):
+    """tech_fix ISO-W9 (LEAD G-3 B4): opt-in per tabel. "repeat_header": baris judul diulang di tiap halaman;
+    "cant_split": baris tidak terbelah antarhalaman. Tanpa flag, tabel tidak berubah (format acuan tetap)."""
+    rows = tbl_el.findall(qn('w:tr'))
+    for i, tr in enumerate(rows):
+        want = (['tblHeader'] if tb.get('repeat_header') and i == 0 else []) + (['cantSplit'] if tb.get('cant_split') else [])
+        if not want:
+            continue
+        trpr = tr.find(qn('w:trPr'))
+        if trpr is None:
+            trpr = tr.makeelement(qn('w:trPr'), {})
+            tcs = tr.findall(qn('w:tc'))
+            (tcs[0].addprevious(trpr) if tcs else tr.append(trpr))
+        for tag in want:  # urutan skema CT_TrPr: cantSplit sebelum tblHeader, keduanya sebelum jc
+            if trpr.find(qn('w:' + tag)) is None:
+                trpr.insert(0 if tag == 'cantSplit' else (1 if trpr.find(qn('w:cantSplit')) is not None else 0), trpr.makeelement(qn('w:' + tag), {}))
+
+
 def render_generic(tpl, spec, out):
     """Dokumen non-SOP (struktur, jobdesc, form, register): halaman depan template + badan bebas."""
     cfg = spec['meta']
@@ -511,6 +529,7 @@ def render_generic(tpl, spec, out):
                 adjust_cols(el, n, widths)
                 add(el)
                 fill_table(docx.table.Table(el, d._body), tb['rows'], header=tb['header'])
+                table_row_flags(el, tb)
                 add(make_para(ptmpl, ''))
             elif 'flow' in b:
                 png = os.path.join(flow_dir, f"{cfg['doc_key']}_{si}_{bi}.png")

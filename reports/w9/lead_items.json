@@ -1,0 +1,172 @@
+[
+ {
+  "key": "HR-FRM-01",
+  "match": "Rujukan SNX-HR-SOP-10, SNX-HR-SOP-12, dan SNX-HR-FRM-02 cocok",
+  "alasan": "rujukan silang diperiksa ulang lewat pemeriksaan rujukan penuh G-2 butir 2 (reports/w9/refcheck_final.tsv dan refsem)"
+ },
+ {
+  "key": "HR-FRM-02",
+  "match": "SOP Training & Development belum terlihat sebagai berkas",
+  "alasan": "status ditulis seragam \"dalam peninjauan\" di SNX-HR-FRM-02 dan SNX-HR-RPT-01 (G-3 B4); baris tetap HOLD-T3 sampai berkas tim terbaca"
+ },
+ {
+  "key": "HR-FRM-02",
+  "match": "Rujukan SNX-HR-SOP-10, SNX-HR-SOP-12, dan SNX-HR-FRM-01 cocok",
+  "alasan": "rujukan diperiksa ulang (G-2 butir 2); \"dalam pengerjaan\" di SNX-HR-SOP-10 dan SNX-HR-SOP-12 diganti rujukan nomor SNX-HR-FRM-02"
+ },
+ {
+  "key": "HR-RPT-01",
+  "match": "SOP Training & Development belum bernomor",
+  "alasan": "ditulis \"dalam peninjauan\", seragam dengan SNX-HR-FRM-02 (G-3 B4)"
+ },
+ {
+  "key": "HR-RPT-01",
+  "match": "ditulis paralel (ledger IN_PROGRESS",
+  "alasan": "rujukan ke SNX-HR-FRM-02 diperiksa ulang (G-2 butir 2)"
+ },
+ {
+  "key": "HR-RPT-01",
+  "match": "Kalimat perintah di DATA",
+  "alasan": "dicatat dan tidak dijalankan sebagai instruksi (RUNBOOK §0 butir 10); tidak perlu tindakan"
+ },
+ {
+  "key": "HR-RPT-01",
+  "match": "Penomoran daftar HR di context/audit",
+  "alasan": "dokumen tidak bersandar pada nomor itu; tidak perlu tindakan"
+ },
+ {
+  "key": "HR-RPT-01",
+  "match": "Tabel Tindak Lanjut terbelah",
+  "alasan": "semua tabel diberi baris judul berulang dan baris tidak terbelah antarhalaman (tech_fix render W9, G-3 B4)"
+ },
+ {
+  "key": "HR-SOP-10",
+  "match": "Bentuk usulan kenaikan jabatan",
+  "alasan": "dialihkan: perlu form atau tidak adalah keputusan Aziz (di luar 88 baris checklist); tetap open item pemutus Aziz"
+ },
+ {
+  "key": "HR-SOP-10",
+  "match": "dirujuk padahal baru dikerjakan di W7",
+  "alasan": "kedua form sudah ada; rujukan diperiksa ulang (G-2 butir 2)"
+ },
+ {
+  "key": "HR-ORG-01",
+  "match": "Garis putus-putus tidak bisa digambar",
+  "alasan": "basi: renderer menggambar garis berlabel menunggu konfirmasi sebagai garis putus-putus sejak tech_fix 14 Okt 21.58"
+ },
+ {
+  "key": "FAT-SOP-04",
+  "match": "Financial Document Register: belum bernomor",
+  "alasan": "ditulis \"dalam peninjauan\" seragam (G-3 B4); penomoran menunggu berkas tim (HOLD-T3 baris 31); isi kolom tetap pemutus FAT"
+ },
+ {
+  "key": "FAT-REG-01",
+  "match": "Validasi data AR Aging hanya menutup",
+  "alasan": "validasi K dan L serta format input AR Aging diperpanjang sampai baris 1000; Days overdue berumus pola AP Aging dengan catatan USULAN (G-3 A10, tech_fix xlsx_patch W9)"
+ },
+ {
+  "key": "FAT-REG-01",
+  "match": "clear_rows menghapus isi dan warna tetapi tidak border",
+  "alasan": "dibiarkan, kosmetik (keputusan LEAD G-3 B4, swatch legenda)"
+ },
+ {
+  "key": "FAT-REG-01",
+  "match": "Template Kontrol Dokumen tidak punya blok Dokumen terkait",
+  "alasan": "diterima: tata letak Kontrol Dokumen tetap; hubungan ke SNX-FAT-SOP-01 tercatat di notes"
+ },
+ {
+  "key": "LEG-SOP-02",
+  "match": "Sumber utama adalah draf tim yang sedang ditulis",
+  "alasan": "LEAD mengukur modifiedTime sumber tidak berubah (G-2); diukur ulang di gerbang W9"
+ },
+ {
+  "key": "LEG-SOP-02",
+  "match": "Penamaan unit",
+  "alasan": "diputus: \"Departemen Legal\" (G-3 A5, defaults v22 unit_names)"
+ },
+ {
+  "key": "MKT-RPT-01",
+  "match": "ditulis paralel. REG-03 baru muncul",
+  "alasan": "batas cakupan Marketing diputus (G-3 A8) dan rujukan antardokumen MKT diperiksa ulang (G-2 butir 2)"
+ },
+ {
+  "key": "MKT-RPT-01",
+  "match": "Tabel A6, B4, dan Rekaman terbelah",
+  "alasan": "semua tabel diberi baris judul berulang dan baris tidak terbelah antarhalaman (tech_fix render W9, G-3 B4)"
+ },
+ {
+  "key": "OPS-SOP-04",
+  "match": "Rujukan bagian SOP-04 di spec OPS-FRM-10 basi",
+  "alasan": "rujukan SNX-OPS-FRM-10 diperbaiki (G-2 butir 1)"
+ },
+ {
+  "key": "OPS-SOP-05",
+  "match": "Rujukan silang dari dokumen lain",
+  "alasan": "rujukan SNX-OPS-FRM-10 ke SOP-05 diperbaiki (G-2 butir 1); rujukan lain diperiksa pemeriksa makna W9; baris Diperiksa (Head of Operation) SNX-OPS-FRM-09 dialihkan ke pemutus Fani"
+ },
+ {
+  "key": "OPS-SOP-05",
+  "match": "mengasumsikan SOP-04 versi 11 bagian",
+  "alasan": "diperiksa ulang (G-2 butir 2): SNX-OPS-SOP-04 bagian 8 = SLA"
+ },
+ {
+  "key": "OPS-FRM-01",
+  "match": "Gambar Alur Proses (image1.png) tidak bisa disunting",
+  "alasan": "diputus owner 15 Okt: gambar alur sudah diganti tim dengan png buatan sendiri, tidak diubah (G-3 A9)"
+ },
+ {
+  "key": "OPS-FRM-02",
+  "match": "clear_rows juga menghapus warna isi sel input",
+  "alasan": "basi untuk sel input (warna dipulihkan tech_fix 14 Okt 21.33 dan 22.05); swatch legenda dibiarkan, kosmetik (G-3 B4)"
+ },
+ {
+  "key": "OPS-FRM-04",
+  "match": "Gambar di Alur Proses tidak bisa diubah",
+  "alasan": "diputus owner 15 Okt (G-3 A9)"
+ },
+ {
+  "key": "OPS-FRM-05",
+  "match": "Gambar di Alur Proses tidak bisa diubah",
+  "alasan": "diputus owner 15 Okt (G-3 A9)"
+ },
+ {
+  "key": "OPS-FRM-08",
+  "match": "Gambar Alur Proses tidak bisa diubah",
+  "alasan": "diputus owner 15 Okt (G-3 A9)"
+ },
+ {
+  "key": "ISMS-SOP-01",
+  "match": "Rujukan butir sheet Investigasi",
+  "alasan": "diperiksa pemeriksa makna W9 terhadap SNX-ISMS-FRM-02 di out/ (G-2 butir 2)"
+ },
+ {
+  "key": "ISMS-FRM-01",
+  "match": "clear_rows pada baris legenda 25",
+  "alasan": "dibiarkan, kosmetik (G-3 B4, swatch legenda)"
+ },
+ {
+  "key": "ISMS-SOP-05",
+  "match": "Kesenjangan dokumen terkait",
+  "alasan": "dialihkan: kesenjangan substansi lintas dokumen Operation, pemutus Fani; tetap open item Fani"
+ },
+ {
+  "key": "ISMS-FRM-02",
+  "match": "Gambar \"Alur Proses\" memakai sebutan",
+  "alasan": "diputus owner 15 Okt (G-3 A9)"
+ },
+ {
+  "key": "ISMS-FRM-02",
+  "match": "Efek samping clear_rows pada legenda warna",
+  "alasan": "dibiarkan, kosmetik (G-3 B4, swatch legenda)"
+ },
+ {
+  "key": "ISMS-FRM-02",
+  "match": "Alat patch tidak mengubah tinggi baris",
+  "alasan": "teks sudah dipendekkan agar muat dan dicek render; tidak perlu tindakan"
+ },
+ {
+  "key": "ISMS-FRM-02",
+  "match": "SNX-ISMS-SOP-01 belum punya spec",
+  "alasan": "SNX-ISMS-SOP-01 kini ada; pointer severity B15 diperiksa ulang (G-2 butir 2)"
+ }
+]

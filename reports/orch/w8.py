@@ -13,7 +13,7 @@ C = json.load(open('config/checklist.json'))
 rows = {r['row']: r for r in (C['rows'] if isinstance(C, dict) else C)}
 DEPT = {'HR': 'Human Resource', 'FAT': 'Finance, Accounting & Tax', 'LEG': 'Legal', 'COM': 'Commercial',
         'MKT': 'Marketing', 'OPS': 'Operation', 'ISMS': 'ISMS'}
-GROUPS = [('owner', r'\bowner\b|Amirull'), ('Samuel', r'Samuel|Direktur Utama'), ('Aziz', r'Aziz|HR Manager'),
+GROUPS = [('owner', r'\bowner\b|Amirull'), ('Samuel', r'Samuel|Direktur Utama'), ('Aziz', r'Aziz|HR Manager|HR Lead'),
           ('Fani', r'Fani|VP Tech'), ('FAT', r'\bFAT\b|Finance'), ('Legal', r'Legal'), ('Laras', r'Laras|VP Commercial'),
           ('konsultan', r'konsultan'), ('LEAD', r'\bLEAD\b')]
 
@@ -56,10 +56,16 @@ def groups_of(who, text):
 def verify_label(d):
     v = d.get('verify_verdict')
     rounds = len(glob.glob(f"qa/{d['key']}.verify.r*.json")) + (1 if os.path.exists(f"qa/{d['key']}.verify.json") else 0)
+    w9 = ''
+    if os.path.exists(f"qa/{d['key']}.w9.json"):
+        try:
+            w9 = '; perubahan ISO-W9 diperiksa: ' + json.load(open(f"qa/{d['key']}.w9.json")).get('verdict', '?')
+        except Exception:
+            w9 = '; perubahan ISO-W9: berkas pemeriksaan tidak terbaca'
     if v == 'PASS':
-        return f'PASS (pemeriksaan independen, putaran {rounds})'
+        return f'PASS (pemeriksaan independen, putaran {rounds}){w9}'
     if d['state'] == 'DONE':
-        return 'Tidak disampel (aturan sampel W5/W6)'
+        return 'Tidak disampel (aturan sampel W5/W6)' + w9
     return v or ''
 
 
@@ -124,7 +130,19 @@ def match_group(text, cands, dept):
 
 wl = {i: w for i, w in enumerate(W)}
 docu = []
-master, usul, opens = [], [], []
+master, usul, opens, closed = [], [], [], []
+# ISO-W9: open item yang ditutup (penanda "ditutup W9" di notes, atau butir LEAD di reports/w9/lead_items.json) tidak dihitung terbuka
+LEADC = json.load(open('reports/w9/lead_items.json')) if os.path.exists('reports/w9/lead_items.json') else []
+
+
+def closure(key, t):
+    m = re.search(r'ditutup W9:?\s*(.*)', t)
+    if m:
+        return m.group(1).strip() or 'ditutup W9'
+    for c in LEADC:
+        if c['key'] == key and c['match'] in t:
+            return c['alasan']
+    return None
 for d in sorted(L['docs'], key=lambda x: (x['checklist_row'] is None, x['checklist_row'] or 0, x['wl_index'])):
     w = wl.get(d['wl_index'], {})
     r = rows.get(d['checklist_row'], {})
@@ -134,8 +152,15 @@ for d in sorted(L['docs'], key=lambda x: (x['checklist_row'] is None, x['checkli
     u, o = items(section(notes, 'USULAN')), items(section(notes, 'Open items'))
     for t, who in u:
         usul.append([d['number'], d['key'], t, who, ', '.join(groups_of(who, t))])
+    o_open = []
     for t, who in o:
-        opens.append([d['number'], d['key'], t, who, ', '.join(groups_of(who, t))])
+        why = closure(d['key'], t)
+        if why:
+            closed.append([d['number'], d['key'], t, who, why])
+        else:
+            o_open.append((t, who))
+            opens.append([d['number'], d['key'], t, who, ', '.join(groups_of(who, t))])
+    o = o_open
     if d['state'] == 'DONE' and d.get('out_path') and os.path.exists(d['out_path']):
         cands = [(words(t), groups_of(who, t)[0]) for t, who in u]
         for loc, t in doc_usulan(d['out_path']):
@@ -182,6 +207,9 @@ with open('reports/USULAN-OPEN-per-pemutus.md', 'w', encoding='utf-8') as f:
                 f.write(f'\n### {g} ({len(by[g])})\n')
                 for x in by[g]:
                     f.write(f"- {x[0]}: {x[2].replace(chr(10), ' ')} (pemutus: {x[3]})\n")
+    f.write(f'\n## Open items ditutup ISO-W9 ({len(closed)})\n')
+    for x in closed:
+        f.write(f"- {x[0]}: {x[2].replace(chr(10), ' ')[:300]} -> {x[4]}\n")
 k = wb.create_sheet('Keterangan')
 for line in ['Master List COS: satu baris per butir worklist (88), diurutkan menurut baris checklist live.',
              'Sheet USULAN memuat tiap kalimat atau baris berlabel (USULAN) di dokumen jadi; kolom pemutus adalah saran untuk ditinjau owner.',
@@ -199,6 +227,6 @@ for d in L['docs']:
 gu, go = Counter(x[4] for x in docu), Counter()
 for x in opens:
     for g in x[4].split(', '): go[g] += 1
-print(json.dumps({'rows': len(master), 'usulan_items_doc': len(docu), 'usulan_items_notes': len(usul), 'open_items': len(opens), 'per_dept': per,
+print(json.dumps({'rows': len(master), 'usulan_items_doc': len(docu), 'usulan_items_notes': len(usul), 'open_items': len(opens), 'closed_w9': len(closed), 'per_dept': per,
                   'usulan_per_group': gu, 'open_per_group': go,
                   'states': Counter(d['state'] for d in L['docs'])}, ensure_ascii=False, default=dict))

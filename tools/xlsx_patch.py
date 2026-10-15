@@ -2,7 +2,9 @@
 """Perbaiki form xlsx tim (seri SNX) tanpa merusak fitur, lalu buktikan fitur tetap utuh.
 
 Pakai: python3 -I xlsx_patch.py <in.xlsx> <patch.json> <out.xlsx>
-patch.json: {"clear_rows": {"Sheet": [5, 6]}, "set": {"Sheet!B4": "nilai"}, "add_control_sheet": "<form SNX donor.xlsx>" (opsional)}
+patch.json: {"clear_rows": {"Sheet": [5, 6]}, "set": {"Sheet!B4": "nilai"}, "add_control_sheet": "<form SNX donor.xlsx>" (opsional),
+            "extend_validation": {"Sheet": {"K5:K6": "K5:K1000"}}, "copy_row_style": {"Sheet": {"from": 5, "rows": [7, 1000]}},
+            "fill_formula": {"Sheet!J": {"rows": [5, 1000], "formula": "=IF(D{r}=\"\", \"\", TODAY() - D{r})"}} (ketiganya opsional, ISO-W9)}
 clear_rows mengosongkan sel non-rumus dan warna isi di baris itu (struktur, rumus,
 validasi tetap); baris TIDAK dihapus agar rujukan rumus tidak bergeser. Keluar 1 bila fitur berkurang
 (sheet, gambar, data validation, conditional formatting) atau masih ada teks CONTOH.
@@ -86,6 +88,29 @@ def main():
                 c.value = None
                 ref = ws.cell(row=nxt, column=c.column) if nxt else None
                 c.fill = copy.copy(ref.fill) if ref is not None and ref.fill is not None and ref.fill.fill_type else PatternFill(fill_type=None)
+    # tech_fix ISO-W9 (LEAD G-3 A10): perpanjang rentang validasi data, salin gaya sel satu baris ke rentang baris,
+    # dan isi rumus berpola per baris ({r} = nomor baris). Validasi yang dirujuk harus ada persis; selain itu gagal.
+    from openpyxl.worksheet.cell_range import MultiCellRange
+    for sheet, m in patch.get('extend_validation', {}).items():
+        ws = wb[sheet]
+        for old_rng, new_rng in m.items():
+            dv = next((v for v in ws.data_validations.dataValidation if str(v.sqref) == old_rng), None)
+            if dv is None:
+                print(json.dumps({'pass': False, 'why': f'validasi {sheet}!{old_rng} tidak ada'}))
+                sys.exit(1)
+            dv.sqref = MultiCellRange(new_rng)
+    for sheet, spec in patch.get('copy_row_style', {}).items():
+        ws = wb[sheet]
+        a, b = spec['rows']
+        for c in ws[spec['from']]:
+            if c.has_style:
+                for r in range(a, b + 1):
+                    ws.cell(row=r, column=c.column)._style = copy.copy(c._style)
+    for ref, spec in patch.get('fill_formula', {}).items():
+        sheet, col = ref.rsplit('!', 1)
+        a, b = spec['rows']
+        for r in range(a, b + 1):
+            wb[sheet][f'{col}{r}'] = spec['formula'].replace('{r}', str(r))
     for ref, val in patch.get('set', {}).items():
         sheet, cell = ref.rsplit('!', 1)
         wb[sheet][cell] = val

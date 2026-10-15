@@ -1,11 +1,11 @@
 {
  "wo": "WO-ISO-01 FINAL rev 1",
  "runbook": "v19-e",
- "defaults_version": "v21",
+ "defaults_version": "v22",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W8-DONE",
- "last_guide_seen": 1,
- "watchdog_trigger_id": null,
+ "current_wave": "W9",
+ "last_guide_seen": 3,
+ "watchdog_trigger_id": "trig_01Wn6C7j1PbvaATVhCsM98BQ",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -2682,6 +2682,10 @@
   {
    "at": "2026-10-15T01:21Z",
    "event": "trig_019ozEXtQHFx15RYPLaPZBrG deleted at W8 close (not fired)"
+  },
+  {
+   "at": "2026-10-15T02:33Z",
+   "event": "ISO-W9 start: new trig_01Wn6C7j1PbvaATVhCsM98BQ fires 03:19Z"
   }
  ],
  "retractions": [
@@ -2691,6 +2695,13 @@
    "kanal": "config/checklist.json (difflib ratio 0.696; 378 vs 659 karakter)",
    "koreksi": "Tidak identik: baris 58 = isi baris 57 + validasi klaim dan kolom produk/layanan terkait, klaim, sumber/bukti. Keputusan cakupan tetap (REG-02 register pelaksanaan campaign, REG-01 memuat semua kolom baris 57 dan 58), open item untuk owner.",
    "penemu": "penyusun MKT-REG-02 (pengukuran ulang)"
+  },
+  {
+   "at": "2026-10-15T02:30Z",
+   "claim": "Laporan W8 dan paket ringkasan id 1982: \"177 rujukan dicek, 0 rujukan rusak\"",
+   "kanal": "reports/orch/refcheck.py baris 26-29 (sub-nomor hanya dicek untuk bagian 4 dan 6) + grep specs/OPS-FRM-10.json memuat \"SNX-OPS-SOP-04 Bagian 7.5\" (SOP-04 tidak punya 7.5)",
+   "koreksi": "Klaim tidak berbukti dan salah; diganti hasil refcheck2 W9 (keluaran penuh per rujukan, kontrol positif).",
+   "penemu": "LEAD G-2 butir 2; dikonfirmasi orkestrator"
   }
  ],
  "guide_log": [
@@ -2698,6 +2709,16 @@
    "guide": "G-1",
    "seen_at": "2026-10-15T00:50Z",
    "action": "Dipatuhi: sweep frasa meta lewat penyusun masing-masing sebelum Master List; commit sweep berlabel \"ISO <KEY> polish\" mulai sekarang (8 sweep sebelumnya ter-commit \"ISO <KEY> DONE\" sebelum G-1 terbaca, riwayat tidak ditulis ulang); OPS-FRM-03/06/10 dikeluarkan dari sweep (penyusun = nama peran formulir, sah); ukur ulang seluruh out/ dengan pola G-1 + kontrol positif sesudah sweep; residu per KEY dicatat di Laporan_Run.md dan reports/LEDGER.md. Verifikasi ulang mode sop dan W1 = pemeriksa perubahan buta (opus) atas diff teks sebelum/sesudah terhadap sumber (qa/<KEY>.sweep.json)."
+  },
+  {
+   "guide": "G-2",
+   "seen_at": "2026-10-15T02:30Z",
+   "action": "Diterima di sesi WORKER-ISO-02 (ISO-W9). Butir 1-3 dikerjakan sebagai B1 G-3. Klaim W8 \"177 rujukan dicek, 0 rusak\" ditarik: refcheck.py baris 26-29 hanya mengecek sub-nomor bagian 4 dan 6, sehingga \"Bagian 7.5\" lolos (kanal: kode + grep specs/OPS-FRM-10.json)."
+  },
+  {
+   "guide": "G-3",
+   "seen_at": "2026-10-15T02:30Z",
+   "action": "Owner mengetik gaspol di sesi ISO-W9 pukul 02:31Z. A1-A10, B1-B4, gerbang C, D dikerjakan. Catatan presisi A8: Description checklist baris 58 bukan salinan persis baris 57 (ratio 0.696; baris 58 = isi baris 57 diperluas dengan validasi klaim); substansi arahan (baris 58 tidak cocok judulnya, perlu dibetulkan tim) tetap."
   }
  ],
  "agent_incidents": [
@@ -2721,5 +2742,33 @@
   "sensitivity": "restricted:commercial",
   "at": "2026-10-15T01:22Z",
   "based_on_commit": "01509a9"
+ },
+ "w9": {
+  "started_at": "2026-10-15T02:31Z",
+  "owner_quote": "Done, silahjkan jalankan. make sure semua aman dan cek juga gap jika ada temuan dan improve sesuai goals. pahami konteksnya jangan sampai mislead / Gaspol",
+  "plan": "reports/w9/PLAN.md",
+  "session": "WORKER-ISO-02",
+  "docs": {},
+  "tech_fixes": [
+   {
+    "at": "2026-10-15T02:50Z",
+    "tool": "tools/render_sop.py",
+    "change": "table_row_flags: opsi per tabel mode generic \"repeat_header\" (w:tblHeader baris pertama) dan \"cant_split\" (w:cantSplit semua baris); opt-in, tabel tanpa flag tidak berubah",
+    "reason": "LEAD G-3 B4: tabel HR-RPT-01 dan MKT-RPT-01 diberi baris judul berulang dan baris tidak terbelah",
+    "evidence": "selftest 6 OK (format terkunci); uji UJI-GENERIC berflag: OOXML PASSED, lint pass, trPr memuat cantSplit dan tblHeader",
+    "backup": "/tmp/claude-0/w9/bak/render_sop.py.w9.bak",
+    "sha256_after": "822bde0acda2ed28b664a0fc164301547abc932627c6250c4c4b38c8f86b0654"
+   },
+   {
+    "at": "2026-10-15T02:55Z",
+    "tool": "tools/xlsx_patch.py",
+    "change": "opsi extend_validation (sqref validasi diganti, harus cocok persis), copy_row_style (gaya sel satu baris ke rentang baris), fill_formula (rumus berpola {r} per baris)",
+    "reason": "LEAD G-3 A10 SNX-FAT-REG-01: validasi K dan L serta format input AR Aging sampai baris 1000; Days overdue berumus",
+    "evidence": "uji salinan /tmp/src/FAT-REG-01.xlsx: pass true, validasi K5:K1000 dan L5:L1000, J5..J1000 996 rumus, fitur tidak berkurang; selftest 6 OK",
+    "backup": "/tmp/claude-0/w9/bak/xlsx_patch.py.w9.bak",
+    "sha256_after": "ec986c0dcc7b2c429d2e10db4f8bcbb13b038262ffa2795f0e251a85a0d1431f"
+   }
+  ],
+  "gaps": []
  }
 }
