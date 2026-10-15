@@ -4,7 +4,7 @@ Status: DRAFTED (spec + notes ada). Spec: specs/MKT-RPT-01.json. Mode generic, a
 
 Hasil uji terakhir:
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/MKT-RPT-01.json /tmp/pen-MKT-RPT-01/MKT-RPT-01.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-MKT-RPT-01/MKT-RPT-01.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "29 butir (USULAN) menunggu ACC". Keluaran tersimpan di /tmp/pen-MKT-RPT-01/lint_final.txt.
+- `python3 -I tools/lint_doc.py /tmp/pen-MKT-RPT-01/MKT-RPT-01.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "32 butir (USULAN) menunggu ACC" (hasil sesudah putaran sweep). Keluaran tersimpan di /tmp/pen-MKT-RPT-01/lint_final.txt.
 - Tata letak: docx dikonversi ke PDF dengan soffice (15 halaman). Seluruh halaman dilihat pada 50 dpi, halaman 9 sampai 14 dilihat lagi pada 70 dpi, dan halaman 12 pada 80 dpi sesudah lebar kolom diperbaiki. Judul kolom tabel B2 sempat terpotong di tengah kata ("Pelaksanaa/n") dan kode AKT-n terbelah; lebar kolom disetel ulang dan sudah terbaca. Kolom retensi di tabel Rekaman sempat sempit dan rata kiri-kanan renggang; dilebarkan. Putaran perbaikan 1: tabel B2 diubah (kolom Aktivitas diganti Rujukan Catatan) dan halaman 12 dilihat lagi pada 80 dpi; judul kolom dan kode AKT-n terbaca penuh. Yang tersisa: tabel A6 dan B4 serta Rekaman terbelah antar halaman di render LibreOffice. Itu tata letak, bukan isi; tampilan di Word perlu dilihat orang (HUMAN-VERDICT).
 - Skrip pemindai atas teks spec: tiap kode SNX di badan ada di tabel Dokumen Terkait (7 kode, nol kurang, nol berlebih). Nol em-dash, nol en-dash, nol frasa meta ("draf ini", "dokumen sumber", "sumber tim", kata "penyusun"), nol "belum ada".
 - Putaran perbaikan 1: `python3 validate.py /tmp/pen-MKT-RPT-01/MKT-RPT-01.docx` (validator skill docx, /mnt/skills/public/docx/scripts/office) = "All validations PASSED!". `python3 -I reports/orch/blankscan.py /tmp/pen-MKT-RPT-01/MKT-RPT-01.docx` = `ok 15 MKT-RPT-01.docx []`. tools/selftest.sh tidak saya jalankan (menulis ke /tmp/selftest yang dipakai bersama). Lint hanya membuktikan format dan larangan pola; kebenaran isi terhadap sumber diperiksa manual lewat tabel di bawah.
@@ -55,7 +55,7 @@ Pemetaan kriteria baris 56 ke dokumen:
 
 | # | Fakta di dokumen | Kutipan verbatim | Sumber dan posisi |
 |---|---|---|---|
-| 1 | Jenis Aktivitas: campaign, konten, event, webinar (Ruang Lingkup, definisi Aktivitas dan Channel) | "Mengelola event/webinar/campaign serta koordinasi vendor bila ada." dan "Menyiapkan materi brand, konten digital, company profile dan sales collateral." | 1m91..., JA-06 A butir 4 dan 2 |
+| 1 | Jenis Aktivitas: campaign, event, webinar (Ruang Lingkup, definisi Aktivitas dan Channel); konten dikendalikan sebagai materi di SNX-MKT-REG-01 (putaran sweep) | "Mengelola event/webinar/campaign serta koordinasi vendor bila ada." dan "Menyiapkan materi brand, konten digital, company profile dan sales collateral." | 1m91..., JA-06 A butir 4 dan 2 |
 | 2 | Prioritas Penjualan berasal dari sales plan VP Commercial (definisi, USULAN) | "Menyusun sales plan, target, pipeline dan proyeksi periodik per account/produk." | 1m91..., JA-03 A butir 1. JA-06 menulis "sales priorities" tanpa menyebut dokumennya; pemetaan ke sales plan adalah tafsir (U2) |
 | 3 | Persetujuan Budget mengikuti delegasi keuangan yang berlaku (butir 4.6) | "Batasan umum: keputusan keuangan, legal, perubahan kontrak, pengangkatan/pemutusan hubungan kerja, serta perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku." | 1m91..., Batasan umum di bawah E. Wewenang JA-06 |
 | 4 | KPI individu Brand & Marketing ada di lembar sendiri, dengan kolom pengukuran per kuartal; sebagian Target berlaku per kuartal dengan pemantauan bulanan (butir 4.7 dan 4.10) | Sel E24: "Traffic website & social media meningkat secara berkala : ≥30% QoQ, dengan monthly monitoring." Sel E26: "Minimal 2 event/webinar/partner activity setiap quarter". Sel G16, K16, O16, S16: "Q1", "Q2", "Q3", "Q4" | 1TNg..., lembar "KPI Individu - Zily" |
@@ -108,7 +108,7 @@ ISO 9001:2015 8.2.1 (komunikasi dengan pelanggan) dan 9.1.2 (kepuasan pelanggan)
 |---|---|---|---|
 | U1 | Pembukuan biaya pemasaran dikecualikan; laporan hanya memuat Budget dan Realisasi Biaya | Ruang Lingkup | FAT |
 | U2 | Prioritas Penjualan = sales plan VP Commercial | Definisi | Owner |
-| U3 | Daftar nilai Status Pelaksanaan, Status Capaian, Status pada Catatan Tindak Lanjut, dan Hasil Pemeriksaan beserta artinya | Bagian 3, Nilai pada Kolom Status dan Hasil | Owner |
+| U3 | Daftar nilai Status Pelaksanaan (sama dengan kolom Status di SNX-MKT-REG-02), Status Capaian, Status pada Catatan Tindak Lanjut, dan Hasil Pemeriksaan beserta artinya | Bagian 3, Nilai pada Kolom Status dan Hasil | Owner |
 | U4 | Panjang Periode Rencana belum ditetapkan; Brand & Marketing memilihnya per rencana | Butir 4.1 | Owner |
 | U5 | Marketing Plan diisi sebelum Aktivitas pertama dijalankan | Butir 4.2 | Owner |
 | U6 | Rujukan Prioritas Penjualan ditulis di tiap Marketing Objective | Butir 4.3, tabel A2 | Owner |
@@ -125,10 +125,12 @@ ISO 9001:2015 8.2.1 (komunikasi dengan pelanggan) dan 9.1.2 (kepuasan pelanggan)
 | U17 | Jangka retensi laporan terisi dan bukti | Rekaman | Legal |
 | U18 | Enam klausul ISO 9001:2015 dan ISO/IEC 27001:2022 | Acuan Klausul ISO | Owner; konsultan menilai |
 | U19 | SNX-MKT-REG-03 sebagai tempat Realisasi KPI lead dibaca | Dokumen Terkait | Owner |
-| U21 | Batas dengan SNX-MKT-REG-02: laporan ini memuat rencana Aktivitas dan jadwal; REG-02 mencatat pelaksanaan nyata tiap campaign; Realisasi di tabel B2 merujuk catatan REG-02 lewat kolom Rujukan Catatan | Ruang Lingkup, butir 4.8, tabel B2, Dokumen Terkait | Owner |
+| U21 | Batas dengan SNX-MKT-REG-02: laporan ini memuat rencana Aktivitas dan jadwal; REG-02 mencatat pelaksanaan nyata tiap campaign dan Aktivitas; tabel B2 merujuk catatan REG-02 lewat kolom Rujukan Catatan (nomor baris Tabel 1) dan Status Pelaksanaan sama dengan kolom Status Tabel 2 | Ruang Lingkup, butir 4.8, tabel B2, Dokumen Terkait | Owner |
+| U22 | Validasi klaim produk dan layanan berada di SNX-MKT-REG-01 (Description baris 58 memuat validasi klaim, sedangkan judul baris 58 adalah Campaign & Activity Register) | Ruang Lingkup, Dokumen Terkait | Owner |
+| U23 | Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (campaign, atau kegiatan di luar campaign seperti event atau webinar) | Definisi | Owner |
 | U20 | Nama penanda tangan Prepared By dan Reviewed By, dan process_owner "VP Commercial" (status USULAN di config/defaults.json) | Blok Identity dan Approval | Owner; Samuel untuk Approved By |
 
-Jumlah USULAN: 21 butir. Teks dokumen memuat 29 label "(USULAN)" karena beberapa butir diberi label di lebih dari satu kalimat, ditambah satu label "(USULAN, perlu konfirmasi konsultan)" di bagian Acuan Klausul ISO; lint menghitung 29. Tidak ada angka bisnis tanpa sumber di dokumen.
+Jumlah USULAN: 23 butir. Teks dokumen memuat 32 label "(USULAN)" karena beberapa butir diberi label di lebih dari satu kalimat, ditambah satu label "(USULAN, perlu konfirmasi konsultan)" di bagian Acuan Klausul ISO; lint menghitung 32. Tidak ada angka bisnis tanpa sumber di dokumen.
 
 ## Open items
 
@@ -147,6 +149,27 @@ Jumlah USULAN: 21 butir. Teks dokumen memuat 29 label "(USULAN)" karena beberapa
 | 11 | Tabel A6, B4, dan Rekaman terbelah antar halaman di render LibreOffice. Perlu dilihat di Word oleh orang; bukan hasil yang bisa dipastikan mesin | HUMAN-VERDICT, owner atau LEAD |
 | 12 | data_conflicts yang konfirmasinya belum selesai dan relevan: ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel) dan sebutan "Direktur Utama" di badan. Dipakai sesuai kolom "pakai" | Owner |
 | 13 | Kalimat perintah di DATA yang saya baca (checklist, Job Analysis, lembar KPI, spec lane lain): nihil | - |
+
+## Sweep
+
+Putaran sweep atas butir 1 dan 2 dari orkestrator. Yang diubah hanya teks di bawah; fakta, angka, nama, dan struktur lain tetap. Temuan pemeriksa di qa/MKT-RPT-01.verify.json dibaca sebagai data; yang di luar butir 1 dan 2 tidak diubah (nonblocking lain: pasif tanpa pelaku di butir 4.3, 4.10, 4.16, pengantar bagian 7; "Target Selesai" dan kata "rencana" huruf kecil; "Legal" dan "PIC" di tabel Peran; judul SNX-ISMS-PRO-01; hubungan ISO/IEC 27001:2022 7.5.3).
+
+| Butir | Letak | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Definisi, Aktivitas | "Satu pekerjaan pemasaran yang punya Channel, jadwal mulai, jadwal selesai, dan PIC sendiri, misalnya campaign, konten, event, atau webinar." | "Satu campaign, atau satu kegiatan pemasaran di luar campaign seperti event atau webinar, yang punya Channel, jadwal mulai, jadwal selesai, dan PIC sendiri. Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (USULAN)." |
+| 1 | Definisi, Channel | "Saluran yang dipakai sebuah Aktivitas untuk menjangkau Target Audience, misalnya website, media sosial, event, atau webinar." | "Tempat sebuah Aktivitas menampilkan atau membagikan materi kepada pihak di luar SINUX, misalnya website, akun social media, atau acara." (disamakan dengan arti Channel di SNX-MKT-REG-02) |
+| 1 | Nilai Status Pelaksanaan | Tiga nilai: Terlaksana, Tertunda, Dibatalkan | Empat nilai sama dengan SNX-MKT-REG-02: Direncanakan, Berjalan, Selesai, Dibatalkan, dengan arti yang sejalan. Pengantar tabel menambah kalimat "Nilai Status Pelaksanaan sama dengan nilai kolom Status di SNX-MKT-REG-02." Aktivitas lintas bulan kini punya padanan (Berjalan) |
+| 1 | Butir 4.8 | "... dan Aktivitas yang tertunda dari bulan sebelumnya, dan Brand & Marketing mengisinya dengan merujuk pencatatan pelaksanaan tiap campaign di SNX-MKT-REG-02 (USULAN)." | "... dan Aktivitas yang belum Selesai dari bulan sebelumnya. Brand & Marketing mengisinya dari pencatatan pelaksanaan di SNX-MKT-REG-02: kolom Rujukan Catatan memuat nomor baris Tabel 1 untuk Aktivitas itu, dan Status Pelaksanaan sama dengan kolom Status di Tabel 2 di sana (USULAN)." (sekaligus menjawab temuan pemeriksa tentang isi kolom Rujukan Catatan) |
+| 1 | Ruang Lingkup, kalimat pertama | "... untuk Aktivitas pemasaran SINUX berupa campaign, konten, event, dan webinar." | "... berupa campaign, event, dan webinar." (konten adalah materi yang dikendalikan di SNX-MKT-REG-01; JA-06 butir 4 menyebut event, webinar, dan campaign) |
+| 1 | Ruang Lingkup, pengecualian REG-01 | "Ada di SNX-MKT-REG-01: persetujuan materi eksternal seperti company profile, website, dan media sosial, serta validasi klaim produk dan layanan." | Kalimat sama dengan tambahan "(USULAN)" di akhir |
+| 1 | Dokumen Terkait, SNX-MKT-REG-01 | "... persetujuan materi eksternal dan validasi klaim produk dan layanan sebelum publikasi. Dikecualikan dari laporan ini." | "... sebelum publikasi (USULAN). Dikecualikan dari laporan ini." |
+| 2 | Ruang Lingkup, pengecualian REG-02 | "Ada di SNX-MKT-REG-02. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan Realisasi di tabel B2 merujuk catatan di SNX-MKT-REG-02 (USULAN)." | "Ada di SNX-MKT-REG-02, yang juga menautkan materi yang dipakai ke ID persetujuan di SNX-MKT-REG-01. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan tabel B2 merujuk catatan di SNX-MKT-REG-02 (USULAN)." |
+| 2 | Dokumen Terkait, SNX-MKT-REG-02 | "... mencatat pelaksanaan nyata tiap campaign dan Aktivitas, dan menautkan materi ke ID persetujuan di SNX-MKT-REG-01. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan kolom Rujukan Catatan di tabel B2 menunjuk catatan itu (USULAN)." | "... menautkan materi yang dipakai ke ID persetujuan di SNX-MKT-REG-01. Laporan ini memuat rencana Aktivitas dan jadwalnya. Kolom Rujukan Catatan di tabel B2 menunjuk nomor baris catatan itu, dan kolom Kode Aktivitas di sana menunjuk kode Aktivitas di laporan ini (USULAN)." (kolom Kode Aktivitas (SNX-MKT-RPT-01) memang ada di Tabel 2 SNX-MKT-REG-02) |
+| 2 | Dokumen Terkait, SNX-MKT-REG-03 | "... hasil marketing yang diteruskan ke Sales. Tempat Realisasi KPI lead dapat dibaca (USULAN)." | "... hasil lead dan serah terimanya ke Sales, dengan campaign asal yang merujuk nama campaign di SNX-MKT-REG-02. Tempat Realisasi KPI lead dapat dibaca (USULAN)." |
+
+Batas empat dokumen sesudah sweep (USULAN, pemutus owner): SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja; SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim; SNX-MKT-REG-02 = pencatatan pelaksanaan campaign dan aktivitas yang menautkan materi ke ID persetujuan REG-01; SNX-MKT-REG-03 = hasil lead dan serah terima ke Sales yang merujuk nama campaign di REG-02. Tidak ada isi yang ditaruh di dua register di dokumen ini: dokumen ini tidak memuat persetujuan materi, klaim, maupun data lead per lead. Yang tetap muncul di dua tempat adalah status dan nomor baris pelaksanaan di tabel B2; keduanya salinan rujukan bulanan dari Tabel 1 dan Tabel 2 SNX-MKT-REG-02 dan ditandai USULAN di butir 4.8 (U21).
+
+Uji sesudah sweep: `python3 -I tools/render_sop.py ...` sukses; `python3 -I tools/lint_doc.py /tmp/pen-MKT-RPT-01/MKT-RPT-01.docx generic` = "pass": true, fails kosong, warn "32 butir (USULAN) menunggu ACC"; `python3 /mnt/skills/public/docx/scripts/office/validate.py` = "All validations PASSED!"; `python3 -I reports/orch/blankscan.py` = `ok 15 MKT-RPT-01.docx []`. Tiap kode SNX di badan ada di Dokumen Terkait (nol kurang). Nol em-dash, nol en-dash, nol frasa meta.
 
 ## Penanganan cacat context/audit
 
@@ -177,7 +200,7 @@ Temuan pada draf pertama dan perbaikannya:
 - Langkah 6.1 sampai 6.21 hampir semuanya diawali "Brand & Marketing" atau "VP Commercial". Terbaca seragam, tetapi tiap langkah satu tindakan dan satu pelaku (RUNBOOK §6a.2). Saya biarkan.
 - Huruf kapital pada istilah terdefinisi (Marketing Plan, Target, Realisasi, Aktivitas) bisa terbaca sebagai kapital penekanan. Saya pertahankan karena auditor perlu mencocokkan istilah dengan tabel Definisi, sama dengan SNX-HR-RPT-01; kata umum seperti "rencana", "jadwal", dan "bulan" tetap huruf kecil. Verifikator perlu menilai.
 - Pembuka Tujuan "Hasil yang dijaga:" sama dengan dokumen W7 lain. Saya biarkan karena RUNBOOK §6a.4 meminta "hasil yang dijaga" dan frasa itu bukan ekor penegas.
-- Kelompok tiga yang tersisa: "campaign, konten, event, dan webinar" (empat butir, daftar jenis Aktivitas dari JA-06), "Realisasi, Status Capaian, dan Evaluasi" (nama tiga kolom nyata di tabel B2 dan B3). Keduanya isi nyata, bukan tiga yang dipaksakan.
+- Kelompok tiga yang tersisa: "campaign, event, dan webinar" (tiga jenis Aktivitas dari JA-06 butir 4), "Realisasi, Status Capaian, dan Evaluasi" (nama tiga kolom nyata di tabel B2 dan B3). Keduanya isi nyata, bukan tiga yang dipaksakan.
 - Banyak butir bertanda (USULAN) berurutan di bagian 4. Terbaca penuh label, tetapi tiap butir memang belum diputus pimpinan; menghapus label akan menyembunyikan status. Saya biarkan dan daftarkan di bagian USULAN.
 
 Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?

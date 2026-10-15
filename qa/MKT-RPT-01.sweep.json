@@ -1,0 +1,41 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Definisi, baris Aktivitas (butir sweep 1)",
+   "masalah": "Arti Aktivitas kini bisa dipakai bersama SNX-MKT-REG-02, tetapi kata yang sama masih punya arti yang berbeda. Di dokumen ini Aktivitas = campaign atau kegiatan di luar campaign. Di SNX-MKT-REG-02 Aktivitas = kegiatan di luar campaign saja. Kalimat 'Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (USULAN)' membuat pemetaannya jelas, jadi alur pengisian bisa dijalankan. Butir 1 selesai secara operasional, belum sama kata demi kata.",
+   "bukti": "specs/MKT-RPT-01.json Definisi Aktivitas: 'Satu campaign, atau satu kegiatan pemasaran di luar campaign seperti event atau webinar ...'; specs/MKT-REG-02.json Definisi Aktivitas: 'Satu kegiatan pemasaran SINUX di luar campaign, misalnya event atau webinar.'"
+  },
+  {
+   "lokasi": "Ruang Lingkup, paragraf pertama (butir sweep 2)",
+   "masalah": "Isi dokumen ini menurut batas cakupan (sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, tindakan korektif) tidak ditulis di Ruang Lingkup. SNX-MKT-REG-02 menulisnya. Di dokumen ini isinya hanya tersirat lewat Tujuan dan definisi Marketing Plan. Tabel pengecualian dan Dokumen Terkait sudah diselaraskan, jadi butir 2 baru dikerjakan sebagian di Ruang Lingkup.",
+   "bukti": "Paragraf Ruang Lingkup sesudah sweep hanya menghapus 'konten'; specs/MKT-REG-02.json Ruang Lingkup kini memuat paragraf 'Batas dokumen Marketing (USULAN, pemutus owner): ...'"
+  },
+  {
+   "lokasi": "Butir 4.8, kalimat kedua",
+   "masalah": "Kalimat 'Aktivitas yang belum Selesai dari bulan sebelumnya' kalau dibaca harfiah ikut mencakup Aktivitas berstatus Dibatalkan, sehingga Aktivitas itu terbawa ke tiap bulan berikutnya. Kata 'tertunda' yang lama tidak mencakup Aktivitas yang dibatalkan. Usul: 'Aktivitas berstatus Direncanakan atau Berjalan dari bulan sebelumnya'.",
+   "bukti": "Sebelum: 'Aktivitas yang tertunda dari bulan sebelumnya'; sesudah: 'Aktivitas yang belum Selesai dari bulan sebelumnya'; nilai Dibatalkan: 'Aktivitas tidak jadi dijalankan, atau dihentikan sebelum selesai.'"
+  },
+  {
+   "lokasi": "Definisi, baris Channel",
+   "masalah": "Butir sweep tidak menyebut Channel, tetapi definisinya ikut diubah. Notes mencatat perubahan ini sebagai penyelarasan dengan arti Channel di SNX-MKT-REG-02, dan event/webinar dibuang dari contoh karena keduanya kini jenis Aktivitas. Perubahan ini konsekuensi butir 1 dan 2. Dua hal kecil tersisa: kaitan ke Target Audience hilang ('menjangkau Target Audience' menjadi 'pihak di luar SINUX'), dan 'acara' masih menjadi contoh Channel padahal event adalah jenis Aktivitas.",
+   "bukti": "Sebelum: 'Saluran yang dipakai sebuah Aktivitas untuk menjangkau Target Audience, misalnya website, media sosial, event, atau webinar.'; sesudah: 'Tempat sebuah Aktivitas menampilkan atau membagikan materi kepada pihak di luar SINUX, misalnya website, akun social media, atau acara.'; specs/MKT-REG-02.json Channel: 'Tempat materi tampil atau dibagikan kepada pihak di luar SINUX ...'"
+  },
+  {
+   "lokasi": "Definisi Channel; Ruang Lingkup, pengecualian baris SNX-MKT-REG-02",
+   "masalah": "Muncul pola baru §6a: benda menjadi pelaku kata kerja manusia. 'sebuah Aktivitas menampilkan atau membagikan materi' dan 'SNX-MKT-REG-02, yang juga menautkan materi'. Usul: ikuti rumusan SNX-MKT-REG-02 ('Tempat materi tampil atau dibagikan ...') dan tulis 'yang memuat tautan materi ...'.",
+   "bukti": "Teks diff baris 20 dan 23 (/tmp/claude-0/sweep/MKT-RPT-01.diff)"
+  },
+  {
+   "lokasi": "Bagian 3, tabel nilai; tabel C2",
+   "masalah": "Nilai 'Selesai' kini dipakai di dua kolom: Status Pelaksanaan Aktivitas (baru) dan Status Tindakan Perbaikan (sudah ada). Kolomnya berbeda dan artinya tertulis, jadi risiko salah baca kecil.",
+   "bukti": "specs/MKT-RPT-01.json baris nilai 'Selesai' di Status Pelaksanaan dan di status Catatan Tindak Lanjut"
+  },
+  {
+   "lokasi": "Catatan pemeriksaan (bukan cacat)",
+   "masalah": "Yang terverifikasi: (a) git diff specs/MKT-RPT-01.json sama dengan spec.diff, dan docx di out/ memuat teks baru. (b) Fakta baru punya dasar di spec lain dan berlabel USULAN. Empat nilai status = Tabel 2 kolom Status SNX-MKT-REG-02. 'nomor baris Tabel 1' = SNX-MKT-REG-02 butir 4.1. Kolom 'Kode Aktivitas (SNX-MKT-RPT-01)' ada di Tabel 2 SNX-MKT-REG-02. 'Campaign Asal' merujuk nama campaign di SNX-MKT-REG-02 sesuai SNX-MKT-REG-03 langkah 6.5. (c) Label USULAN untuk validasi klaim di REG-01 sudah ditambahkan di pengecualian dan di Dokumen Terkait. (d) Tidak ada sisa nilai Terlaksana/Tertunda. Nol em-dash/en-dash, nol rujukan internal AI, dan nol frasa proses penyusunan di docx. (e) qa/MKT-RPT-01.lint.json pass, warn 32 USULAN. (f) Tidak ada isi yang sama yang dicatat di dua register.",
+   "bukti": "diff <(git diff specs/MKT-RPT-01.json) spec.diff = sama; specs/MKT-REG-02.json Tabel 2 dan butir 4.1, 6.9; specs/MKT-REG-03.json langkah 6.5; ekstraksi teks word/document.xml"
+  }
+ ]
+}

@@ -2034,7 +2034,7 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-MKT-RPT-01",
    "out_path": "out/06_Marketing/SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx",
    "sources": [],
@@ -2045,7 +2045,7 @@
    "open_items": [
     "Sweep (b): definisi Aktivitas dan nilai status pelaksanaan berbeda dengan MKT-REG-02; validasi klaim di REG-01 belum berlabel USULAN di dokumen ini"
    ],
-   "updated_at": "2026-10-15T01:04:20Z",
+   "updated_at": "2026-10-15T01:07:22Z",
    "pen_agent": "afb20c8cd055f9128",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02",
@@ -2443,11 +2443,11 @@
    "open_items": [
     "Sweep (b): butir Cara pakai tanpa pelaku; B20 tidak cocok dengan isi kolom Access Holder; B21 tanpa label USULAN"
    ],
-   "updated_at": "2026-10-15T01:06:57Z",
+   "updated_at": "2026-10-15T01:06:59Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "adee81774ba4f9731",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 82,
