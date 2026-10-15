@@ -1,0 +1,12 @@
+$ bash tools/selftest.sh
+OK template sha
+OK kontrol positif sop
+OK kontrol positif generic
+OK kontrol negatif
+OK format terkunci
+OK kontrol gaya dan dummy
+rc=0
+
+$ python3 -I tools/w10_langscan.py selftest
+OK selftest w10_langscan
+rc=0
