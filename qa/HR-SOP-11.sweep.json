@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 2 Scope (pengecualian dan kalimat Batas rotasi dan mutasi) lawan butir 4.9 dan Dokumen terkait SNX-ISMS-SOP-02",
+      "masalah": "Sweep membuat kata 'mutasi' punya dua arti di satu dokumen (RUNBOOK 6a butir 7). Scope kini mengecualikan 'mutasi (SNX-HR-SOP-13)', sedangkan 4.9 menyatakan penurunan jabatan 'termasuk mutasi menurut SNX-ISMS-SOP-02'. Pembaca bisa mengira penurunan jabatan ikut dikecualikan. Sebelum sweep, Scope tidak memakai kata 'mutasi' sehingga bentrokan ini tidak ada. Usul: 4.9 ditulis ulang, misalnya 'SNX-ISMS-SOP-02 memperlakukan penurunan jabatan seperti mutasi untuk perubahan hak akses'. Rumusan Scope sendiri didikte butir 2 dan identik di HR-SOP-10, 11, 12, 13 (dicek).",
+      "bukti": "Scope: 'Dikecualikan dari SOP ini: ... rotasi (SNX-HR-SOP-12); mutasi (SNX-HR-SOP-13)'. 4.9: 'penurunan jabatan termasuk mutasi menurut SNX-ISMS-SOP-02.' Dokumen terkait: 'User Access Control & Authorization: perubahan akses saat mutasi (butir 4.9 dan 6.5).'"
+    },
+    {
+      "lokasi": "Bagian 9 baris 'Karyawan terkait adalah HRGA Officer (JA-12)'; bagian 8 baris 'Penerusan berkas usulan ke HR Manager (butir 6.3)'",
+      "masalah": "Pola baru pasif tanpa pelaku padahal pelakunya diketahui (RUNBOOK 6a butir 1 dan 6). Pelaku penerusan berkas adalah HR Manager, pelaku penerimaan tanggapan adalah HRGA Officer.",
+      "bukti": "Bagian 9: '..., dengan berkas usulan diteruskan ke Direktur, kecuali langkah kelima di butir 6.5 (USULAN).' Bagian 8: 'Pada hari tanggapan diterima atau batas tanggapan lewat (USULAN)'."
+    },
+    {
+      "lokasi": "Bagian 9 baris HRGA Officer (JA-12) dan Office Helper (JA-15) lawan langkah baru 6.3 butir 4 dan 5",
+      "masalah": "Sesudah 6.3 butir 4 menyebut penerima ('ke HRGA Officer') dan butir 5 menyebut tujuan ('ke HR Manager'), kedua baris pengganti belum menyebut penerima tanggapan bila karyawan terkait adalah HRGA Officer. Bila dibaca harfiah, karyawan mengirim tanggapan ke dirinya sendiri. Pada kasus Office Helper, HR Manager meneruskan berkas ke dirinya sendiri. Pada kasus HRGA Officer, pengusul (HR Manager) juga menerima dan meneruskan tanggapan karyawan ke Direktur. Ini bukan pemeriksaan usulan sendiri sehingga tidak melanggar 4.4, tetapi sebaiknya tanggapan dikirim langsung ke Direktur (USULAN).",
+      "bukti": "6.3 butir 4: 'Kirim tanggapan karyawan atas usulan ke HRGA Officer.' 6.3 butir 5: 'Teruskan usulan, bukti dasar, dan tanggapan karyawan ke HR Manager.' Bagian 9 Office Helper: 'HR Manager menjalankan langkah HRGA Officer di butir 6.3 dan 6.5 (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 3 Definisi lawan istilah baru 'berkas usulan' (4.4, bagian 5, 6.3 butir 5, 6.4 butir 1, bagian 8, bagian 9)",
+      "masalah": "Istilah baru tanpa definisi. Isinya hanya tersirat di 6.3 butir 5 (usulan, bukti dasar, tanggapan karyawan). Butir 4.4 memakai 'berkas', bagian lain memakai 'berkas usulan', jadi ada sedikit variasi istilah (RUNBOOK 6a butir 7).",
+      "bukti": "4.4: 'meneruskan berkas ke HR Manager'. Bagian 5 HRGA Officer: 'meneruskan berkas usulan ke HR Manager'. 6.4 butir 1: 'dari berkas usulan yang diterima dari HRGA Officer.'"
+    },
+    {
+      "lokasi": "Bagian 2 Scope, kalimat Batas rotasi dan mutasi; bagian 3 Definisi",
+      "masalah": "'sub divisi Operation (NOC, SOC, serta SD dan PM)' masuk tanpa baris definisi di HR-SOP-11, sedangkan HR-SOP-10 menambahkan baris definisi untuk istilah yang sama. Akibatnya keempat SOP tidak seragam. Fakta punya dasar di specs/HR-ORG-01.json baris 428 dan berlabel (USULAN). 'tingkatan jabatan' tetap muncul di samping istilah terdefinisi 'Tingkat posisi' (sudah dicatat di r2). Kalimat ini didikte instruksi, jadi bukan pemblokir.",
+      "bukti": "specs/HR-ORG-01.json baris 428: 'Divisi Operation ... terdiri dari tiga sub divisi: NOC, SOC, serta SD dan PM.' Definisi HR-SOP-11 tidak memuat NOC, SOC, SD, atau PM."
+    },
+    {
+      "lokasi": "Cakupan butir (info)",
+      "masalah": "Semua butir sudah dikerjakan. 1a: pemeriksaan kelengkapan pindah ke Direktur (JA-02), dan frasa 'tanpa pemberitahuan kepada dirinya sendiri' sudah hilang. 1b: serah terima 6.3 ke 6.4 sudah lengkap. Penambahan HRGA Officer sebagai penerima keputusan di 6.4 butir 4 menutup bagian '6.4 ke 6.5' dari temuan r2 yang dirujuk butir 1. Perubahan diagram tidak tampak di diff teks. Saya mengeceknya di /tmp/pen-HR-SOP-11/HR-SOP-11_flow.png.dot: simpul c3 ada, dengan sisi c2 ke c3 ke d. Teks out docx sama dengan render uji. Butir 2: kalimat batas identik di empat spec SOP. Nama peran Asal/Tujuan memang milik HR-SOP-12 dan sudah disebut di notes. Penetap keputusan tetap Direktur Utama. Tidak ada em-dash, en-dash, atau rujukan internal AI di spec. Sumber Drive tidak dibaca karena tidak ada fakta baru tanpa label yang perlu dasar sumber.",
+      "bukti": "Diff old docx lawan render baru: 10 hunk, semuanya bisa dipetakan ke butir 1 atau 2. Hasil lint: 'pass': true. Hasil validate: 'All validations PASSED!'."
+    }
+  ]
+}

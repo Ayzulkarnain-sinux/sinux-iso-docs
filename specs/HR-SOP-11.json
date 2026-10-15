@@ -24,7 +24,8 @@
  ],
  "scope": [
   "SOP ini berlaku untuk karyawan SINUX yang sedang menjabat dan diusulkan turun ke jabatan atau tingkat posisi yang lebih rendah di SNX-HR-ORG-01, karena penurunan kinerja atau pelanggaran aturan perusahaan. Prosesnya mulai dari laporan atau usulan Atasan Langsung sampai pembaruan data kepegawaian, termasuk penyerahan uraian posisi tujuan. Penurunan tingkat posisi di dalam jabatan yang sama baru bisa berjalan sesudah SINUX menetapkan grading, karena SNX-HR-JA-01 tidak mencantumkan grading (USULAN).",
-  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama (SNX-HR-SOP-12); pemindahan ke unit kerja, divisi, atau lokasi operasional lain (SNX-HR-SOP-13); pengakhiran hubungan kerja (SOP Employee Offboarding, dalam peninjauan); sanksi disiplin selain penurunan jabatan (USULAN); penetapan besarnya gaji dan tunjangan di posisi tujuan (USULAN); penurunan jabatan Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN)."
+  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); rotasi (SNX-HR-SOP-12); mutasi (SNX-HR-SOP-13); pengakhiran hubungan kerja (SOP Employee Offboarding, dalam peninjauan); sanksi disiplin selain penurunan jabatan (USULAN); penetapan besarnya gaji dan tunjangan di posisi tujuan (USULAN); penurunan jabatan Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN).",
+  "Batas rotasi dan mutasi: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula sesudah masa rotasi, adalah rotasi (SNX-HR-SOP-12). Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain adalah mutasi (SNX-HR-SOP-13) (USULAN)."
  ],
  "definitions": [
   [
@@ -116,7 +117,7 @@
   "4.1 Dasar penurunan (ISO 9001:2015 7.2; ISO/IEC 27001:2022 Annex A 6.4): penurunan jabatan hanya didasarkan pada penurunan kinerja atau pelanggaran aturan perusahaan. HRGA Officer tidak menerima usulan atas dasar lain lewat SOP ini (USULAN). Setiap usulan melampirkan bukti dasar (butir 6.3).",
   "4.2 Penurunan kinerja (ISO 9001:2015 7.2): HR Manager menilai penurunan kinerja dari hasil penilaian kinerja karyawan terkait dan dari rencana perbaikan kinerja yang sudah berjalan. KPI Matrix memuat target numerik dan bobot indikator kinerja (SNX-HR-JA-01 butir 4.6). Ambang hasil penilaian kinerja dan lama pelaksanaan rencana perbaikan kinerja belum ditetapkan. Direktur Utama menetapkannya atas usulan HR Manager, lalu HR Manager merevisi SOP ini (USULAN).",
   "4.3 Pelanggaran aturan perusahaan (ISO/IEC 27001:2022 Annex A 6.4): HR Manager memeriksa dugaan pelanggaran secara objektif, sesuai uraian jabatan JA-14 di SNX-HR-JA-01 (butir 7). Atasan Langsung hanya mengajukan usulan atas dasar pelanggaran bila pemeriksaan menyimpulkan pelanggaran terbukti (USULAN).",
-  "4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung mengusulkan, HR Manager memeriksa dan merekomendasikan, lalu Direktur Utama menetapkan keputusan (USULAN). HRGA Officer memeriksa kelengkapan usulan dan mengarsipkan rekaman (butir 6.3 dan 6.5). Bila satu peran akan mengusulkan sekaligus memutuskan, atau memeriksa usulannya sendiri, bagian 9 menetapkan peran pengganti (USULAN).",
+  "4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung mengusulkan, HR Manager memeriksa dan merekomendasikan, lalu Direktur Utama menetapkan keputusan (USULAN). HRGA Officer memeriksa kelengkapan usulan, meneruskan berkas ke HR Manager, dan mengarsipkan rekaman (butir 6.3 dan 6.5). Bila satu peran akan mengusulkan sekaligus memutuskan, atau memeriksa usulannya sendiri, bagian 9 menetapkan peran pengganti (USULAN).",
   "4.5 Hak menanggapi (ISO/IEC 27001:2022 Annex A 6.4): karyawan terkait menerima salinan usulan beserta bukti dasar dan boleh mengirim tanggapan karyawan sebelum HR Manager menyimpulkan dasar penurunan. HR Manager melampirkan tanggapan itu pada rekomendasi (butir 6.3 dan 6.4) (USULAN).",
   "4.6 Persetujuan tertulis (ISO 9001:2015 5.3): SNX-HR-JA-01 butir 4.5 menyatakan perubahan kontrak serta pengangkatan atau pemutusan hubungan kerja mengikuti delegasi dan persetujuan tertulis yang berlaku. SOP ini memperlakukan penurunan jabatan sama: penurunan berlaku hanya sesudah keputusan tertulis Direktur Utama, dan tanggal berlaku tidak mendahului tanggal keputusan (USULAN).",
   "4.7 Wewenang di posisi tujuan (ISO 9001:2015 5.3; ISO/IEC 27001:2022 Annex A 5.2): sejak tanggal berlaku, karyawan terkait menjalankan tugas dan wewenang posisi tujuan menurut SNX-HR-JA-01. Wewenang posisi sekarang yang tidak ada di posisi tujuan berhenti pada tanggal berlaku (USULAN). Hak tanda tangan kontrak dan otorisasi keuangan mengikuti Authority Matrix (SNX-HR-JA-01 butir 4.4).",
@@ -132,7 +133,7 @@
   ],
   [
    "HRGA Officer",
-   "Memeriksa kelengkapan usulan, melampirkan bukti dasar, menyerahkan salinan usulan ke karyawan terkait, memberikan uraian posisi tujuan, memperbarui data kepegawaian, mengarsipkan rekaman di personal file, dan memberi tahu Atasan Langsung tentang perubahan posisi (butir 6.3 dan 6.5).",
+   "Memeriksa kelengkapan usulan, melampirkan bukti dasar, menyerahkan salinan usulan ke karyawan terkait, meneruskan berkas usulan ke HR Manager, memberikan uraian posisi tujuan, memperbarui data kepegawaian, mengarsipkan rekaman di personal file, dan memberi tahu Atasan Langsung tentang perubahan posisi (butir 6.3 dan 6.5).",
    "Meminta kelengkapan data atau dokumen, memproses administrasi dalam SOP, dan mengeskalasi keputusan HR ke HR Manager (JA-12 di SNX-HR-JA-01)."
   ],
   [
@@ -142,7 +143,7 @@
   ],
   [
    "Direktur (JA-02)",
-   "Menjalankan langkah HR Manager di butir 6.1 dan 6.4 bila Atasan Langsung karyawan terkait adalah HR Manager (bagian 9) (USULAN).",
+   "Menjalankan langkah HR Manager di butir 6.1 dan 6.4, dan langkah pertama HRGA Officer di butir 6.3, bila Atasan Langsung karyawan terkait adalah HR Manager (bagian 9) (USULAN).",
    "Memeriksa dan merekomendasikan, tidak memutuskan (USULAN)."
   ],
   [
@@ -157,7 +158,7 @@
   ],
   [
    "Karyawan terkait",
-   "Mengirim tanggapan karyawan atas usulan, menerima uraian posisi tujuan, dan mengonfirmasi secara tertulis bahwa ia memahaminya (butir 6.3 dan 6.5) (USULAN).",
+   "Mengirim tanggapan karyawan atas usulan ke HRGA Officer, menerima uraian posisi tujuan, dan mengonfirmasi secara tertulis bahwa ia memahaminya (butir 6.3 dan 6.5) (USULAN).",
    "Meminta penjelasan atas usulan dan atas uraian posisi tujuan sebelum menanggapi atau mengonfirmasi."
   ],
   [
@@ -237,9 +238,14 @@
      "Tanda terima salinan usulan"
     ],
     [
-     "Kirim tanggapan karyawan atas usulan.",
+     "Kirim tanggapan karyawan atas usulan ke HRGA Officer.",
      "Karyawan terkait",
-     "Tanggapan karyawan"
+     "Tanggapan karyawan yang diterima HRGA Officer"
+    ],
+    [
+     "Teruskan usulan, bukti dasar, dan tanggapan karyawan ke HR Manager.",
+     "HRGA Officer",
+     "Berkas usulan yang diterima HR Manager"
     ]
    ]
   },
@@ -247,7 +253,7 @@
    "title": "Penilaian dan keputusan",
    "steps": [
     [
-     "Simpulkan dasar penurunan dari bukti dasar dan tanggapan karyawan.",
+     "Simpulkan dasar penurunan dari berkas usulan yang diterima dari HRGA Officer.",
      "HR Manager",
      "Kesimpulan dasar penurunan"
     ],
@@ -262,9 +268,9 @@
      "Keputusan tertulis, memuat posisi tujuan dan tanggal berlaku bila disetujui, atau alasan penolakan bila ditolak"
     ],
     [
-     "Sampaikan keputusan kepada Atasan Langsung dan karyawan terkait.",
+     "Sampaikan keputusan kepada Atasan Langsung, karyawan terkait, dan HRGA Officer.",
      "HR Manager",
-     "Pemberitahuan keputusan"
+     "Pemberitahuan keputusan yang diterima Atasan Langsung, karyawan terkait, dan HRGA Officer"
     ]
    ]
   },
@@ -333,7 +339,8 @@
    "j": "Konfirmasi uraian posisi (butir 6.5)\nKaryawan terkait",
    "k": "Perbarui data, arsipkan, beri tahu Atasan Langsung\n(butir 6.5)\nHRGA Officer",
    "m": "Ajukan perubahan hak akses (butir 6.5)\nAtasan Langsung",
-   "l": "Perbarui SNX-HR-ORG-01 dan SNX-HR-JA-01 (butir 6.5)\nHR Manager"
+   "l": "Perbarui SNX-HR-ORG-01 dan SNX-HR-JA-01 (butir 6.5)\nHR Manager",
+   "c3": "Teruskan berkas ke HR Manager (butir 6.3)\nHRGA Officer"
   },
   "shapes": {
    "s": "diamond",
@@ -394,6 +401,10 @@
    ],
    [
     "c2",
+    "c3"
+   ],
+   [
+    "c3",
     "d"
    ],
    [
@@ -454,9 +465,14 @@
    "5 hari kerja sejak karyawan terkait menerima salinan usulan (USULAN)"
   ],
   [
+   "Penerusan berkas usulan ke HR Manager (butir 6.3)",
+   "HRGA Officer",
+   "Pada hari tanggapan diterima atau batas tanggapan lewat (USULAN)"
+  ],
+  [
    "Kesimpulan dasar penurunan dan rekomendasi (butir 6.4)",
    "HR Manager",
-   "5 hari kerja sejak HR Manager menerima tanggapan karyawan atau batas tanggapan lewat (USULAN)"
+   "5 hari kerja sejak HR Manager menerima berkas usulan dari HRGA Officer (USULAN)"
   ],
   [
    "Keputusan penurunan jabatan (butir 6.4)",
@@ -490,7 +506,7 @@
   ],
   [
    "Karyawan terkait tidak mengirim tanggapan sampai batas waktu di bagian 8",
-   "HRGA Officer mencatat bahwa tanggapan tidak diterima dan memberi tahu HR Manager. HR Manager melanjutkan penilaian tanpa tanggapan karyawan (USULAN)."
+   "HRGA Officer mencatat bahwa tanggapan tidak diterima dan meneruskan berkas usulan ke HR Manager tanpa tanggapan karyawan. HR Manager melanjutkan penilaian (USULAN)."
   ],
   [
    "Posisi tujuan belum tercantum di SNX-HR-ORG-01 atau SNX-HR-JA-01",
@@ -510,7 +526,7 @@
   ],
   [
    "Karyawan terkait adalah HRGA Officer (JA-12), sehingga Atasan Langsungnya, HR Manager, mengusulkan sekaligus memeriksa",
-   "HR Manager mengajukan usulan dan menjalankan langkah HRGA Officer di butir 6.3 dan 6.5, tanpa pemberitahuan kepada dirinya sendiri. Direktur (JA-02) menjalankan langkah HR Manager di butir 6.1 dan 6.4 (USULAN)."
+   "HR Manager mengajukan usulan. Direktur (JA-02) menjalankan langkah HR Manager di butir 6.1 dan 6.4, dan langkah pertama HRGA Officer di butir 6.3 (periksa kelengkapan usulan). HR Manager menjalankan langkah HRGA Officer lainnya di butir 6.3 dan 6.5, dengan berkas usulan diteruskan ke Direktur, kecuali langkah kelima di butir 6.5 (USULAN)."
   ],
   [
    "Karyawan terkait adalah Office Helper (JA-15), sehingga Atasan Langsungnya, HRGA Officer, memeriksa usulannya sendiri",
@@ -552,11 +568,11 @@
   ],
   [
    "SNX-HR-SOP-12",
-   "Rotation: perpindahan tugas atau fungsi dalam tingkatan jabatan yang sama, dikecualikan dari SOP ini (bagian 2)."
+   "Rotation: rotasi, dikecualikan dari SOP ini (bagian 2)."
   ],
   [
    "SNX-HR-SOP-13",
-   "Mutation: pemindahan ke unit kerja, divisi, atau lokasi operasional lain, dikecualikan dari SOP ini (bagian 2)."
+   "Mutation: mutasi, dikecualikan dari SOP ini (bagian 2)."
   ],
   [
    "SOP Performance Appraisal",
