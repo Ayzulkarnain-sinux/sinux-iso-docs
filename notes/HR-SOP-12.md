@@ -197,11 +197,11 @@ Total: 22 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 46 oleh lin
 | 7 | Perpindahan dengan tujuan selain penyegaran atau pengembangan keterampilan (mis. kebutuhan operasional) tidak punya dokumen pengatur selain SNX-HR-SOP-13 untuk pindah unit; dokumen ini hanya mengembalikan usulannya | Aziz |
 | 8 | Garis lapor karyawan selama masa rotasi (tetap ke Atasan Langsung Asal atau pindah ke Atasan Langsung Tujuan) tidak ditetapkan. Dokumen menaruh pengajuan hak akses pada Atasan Langsung Tujuan saat berlaku | Aziz, Fani |
 | 9 | Batas waktu bagian 8, lokasi dan retensi rekaman, dan klasifikasi RESTRICTED (Internal) tanpa sumber (U14, U15, U18) | Aziz |
-| 10 | Dokumen ini bergantung pada SNX-HR-JA-01 dan SNX-HR-ORG-01 yang berstatus Draft (butir K-02, K-03, K-04 di ORG-01 memengaruhi hitungan tingkatan), SNX-HR-FRM-01 dan SNX-HR-FRM-02 yang dalam pengerjaan, serta SNX-HR-SOP-11 dan SNX-HR-SOP-13 yang batasnya dicocokkan ke scope yang sudah tertulis. Verifikator mencocokkan ulang sesudah semuanya selesai | Verifikator, Aziz |
+| 10 | Dokumen ini bergantung pada SNX-HR-JA-01 dan SNX-HR-ORG-01 yang berstatus Draft (butir K-02, K-03, K-04 di ORG-01 memengaruhi hitungan tingkatan), SNX-HR-FRM-01 dan SNX-HR-FRM-02 yang dalam pengerjaan, serta SNX-HR-SOP-11 dan SNX-HR-SOP-13 yang batasnya dicocokkan ke scope yang sudah tertulis. Verifikator mencocokkan ulang sesudah semuanya selesai Diubah W9: SNX-HR-FRM-02 sudah ada, "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul; SNX-HR-FRM-01 tetap "dalam pengerjaan". | Verifikator, Aziz |
 | 11 | Frasa kompetensi sumber yang janggal (audit butir 4) dipulihkan di SNX-HR-JA-01 sebagai USULAN. "Keterampilan yang dituju" memakai kompetensi hasil pemulihan itu; perlu konfirmasi pemegang fungsi | Aziz |
 | 12 | Klausul ISO ditulis dari ingatan penyusun, belum dicek terhadap teks standar | Konsultan |
 | 13 | Kalimat bernada kewajiban di sumber ("Atasan langsung serta bawahan langsung yang belum ditetapkan secara resmi harus dikonfirmasi oleh manajemen sebelum pengesahan.") ditujukan ke Management, bukan ke penyusun; tidak dijalankan, dicatat saja | Samuel, Aziz |
-| 14 | Kepemilikan: HR Manager sebagai Process Owner berasal dari pemetaan "HR Lead" ke HR Manager (config/defaults.json), bukan dari konfirmasi Aziz atas SOP ini | Aziz |
+| 14 | Kepemilikan: HR Manager sebagai Process Owner berasal dari pemetaan "HR Lead" ke HR Manager (config/defaults.json), bukan dari konfirmasi Aziz atas SOP ini Ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; Process Owner dan seluruh dokumen memakai HR Lead. | Aziz |
 
 ## 7. Pemeriksaan bahasa (dua pertanyaan, dijawab sebelum selesai)
 
@@ -241,3 +241,16 @@ Hal yang sengaja tidak diubah (di luar butir): keterangan Gambar 1 dan garis put
 Catatan: kode SNX-HR-SOP-12 muncul di badan dokumen hanya pada kalimat batas (kalimat itu wajib identik dengan SNX-HR-SOP-13), sehingga tidak dimasukkan ke tabel Dokumen terkait (dokumen tidak mendaftar dirinya sendiri).
 
 Uji sesudah sweep (bukti: /tmp/pen-HR-SOP-12/lint.out.txt, validate.out.txt, blankscan.out.txt): render tanpa galat; lint `"pass": true`, `"fails": []`, warn 46 butir (USULAN), warn PIC SLA nol; validator OOXML "All validations PASSED!"; blankscan.py `ok 17 HR-SOP-12.docx []`; JSON valid; nol em-dash dan en-dash; terpanjang langkah 24 kata; semua PIC ada di tabel peran.
+
+## ISO-W9
+
+Sumber: LEAD G-3 (A2, A3, B2, B4) dan butir kerja ISO-W9. Hanya butir di bawah yang diubah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 jabatan Aziz | "HR Manager" (38 kemunculan: Peran, PIC, SLA, rekaman, simpul diagram, process_owner, blok Reviewed) | "HR Lead"; blok Reviewed "Aziz Priyo Widakdo / HR Lead" |
+| B4 SNX-HR-FRM-02 (bagian 11) | "Annual Training Plan & Training Matrix, dalam pengerjaan: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN))." | "Annual Training Plan & Training Matrix: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN))." |
+
+A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04 dan tidak memakai keduanya sebagai contoh ukuran tingkatan jabatan, jadi tidak ada perubahan. Label K-02, K-03, K-04 tidak disentuh. SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan. Ukuran tingkatan jabatan (USULAN, jumlah garis lapor) tidak diubah dan tidak memakai JA-03 atau JA-04 sebagai contoh di spec. Catatan lama di notes ini yang menyebut JA-04 sebagai contoh hitungan (open item 2) bersifat riwayat; hitung ulang dengan dua garis lapor JA-04 (Direktur dan Direktur Utama) belum dilakukan karena ukurannya tidak berubah dan pemutus (LEAD, SNX-HR-ORG-01) memegang garis baru itu. Kalimat batas rotasi dan mutasi dan definisi Unit kerja (NOC, SOC, serta SD dan PM) tidak diubah; SNX-HR-SOP-13 kini memakai definisi Unit kerja yang sama.
+
+Open item: #14 ditutup W9; #10 diubah W9.
