@@ -1,0 +1,42 @@
+{
+ "key": "HR-FRM-01",
+ "mode": "generic",
+ "out": "out/02_HR/SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 1296,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 13,
+  "instr_items": 9,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1348,
+  "calque": [],
+  "lewat": 1,
+  "pointer": 1,
+  "usulan": 13,
+  "instr_items": 9,
+  "instr_role_start": 0,
+  "justified_cells": 8,
+  "tables_ge3_no_header": 11
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).pdf",
+ "pages": 10,
+ "blank": [],
+ "form": {
+  "isi_heading": "Matriks Kompetensi",
+  "pages_bed1bb6": 10,
+  "pages_w10": 10,
+  "isi_page_bed1bb6": 7,
+  "isi_page_w10": 7
+ },
+ "pass": true
+}

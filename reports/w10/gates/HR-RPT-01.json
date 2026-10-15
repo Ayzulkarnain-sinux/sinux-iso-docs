@@ -1,0 +1,49 @@
+{
+ "key": "HR-RPT-01",
+ "mode": "generic",
+ "out": "out/02_HR/SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 1806,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 22,
+  "instr_items": 19,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1853,
+  "calque": [],
+  "lewat": 1,
+  "pointer": 0,
+  "usulan": 19,
+  "instr_items": 19,
+  "instr_role_start": 0,
+  "justified_cells": 17,
+  "tables_ge3_no_header": 3
+ },
+ "subst_diff": {
+  "usul_butir": {
+   "hilang": [],
+   "baru": [
+    "6.19"
+   ]
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).pdf",
+ "pages": 13,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Laporan",
+  "pages_bed1bb6": 13,
+  "pages_w10": 13,
+  "isi_page_bed1bb6": 9,
+  "isi_page_w10": 9
+ },
+ "pass": true
+}

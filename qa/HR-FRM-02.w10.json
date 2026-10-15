@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 8: kalimat penunjuk diganti 'Bagian ini terdiri atas Identitas Rencana, Tabel 1, dan Tabel 2.' Kalimat ini pengisi tanpa nilai dan bisa dihapus saja.",
+  "Istilah Matriks pelatihan: '...ditargetkan untuknya, yaitu Tabel 2.' terasa kaku. Usul: '..., dicatat di Tabel 2.' agar sama dengan definisi Rencana pelatihan tahunan.",
+  "Tabel Dokumen Terkait: kode 'SNX-ISMS-PRO-01' terpotong menjadi 'PRO-/01' di kolom Kode (hal. 10), dan 'ISO 9001:2015' membungkus di tabel Acuan. Usul: lebarkan kolom Kode/Standar sedikit.",
+  "Pemeriksaan pemblokir: 4.4-4.8, 7.x, dan sel Kode tetap memuat semua syarat. 4.6 'tingkatan atau kode jabatan tersebut' sama artinya dengan versi asal. Label (USULAN) utuh, dan G-3 tidak tersentuh."
+ ],
+ "contoh_baik": [
+  "7.11 'Bila jadwal berubah sesudah rencana disetujui, HRGA Officer menulis jadwal baru...' -> 'Jika jadwal berubah setelah rencana disetujui, tulis jadwal baru, alasan, dan tanggal perubahan di kolom Keterangan...'"
+ ]
+}

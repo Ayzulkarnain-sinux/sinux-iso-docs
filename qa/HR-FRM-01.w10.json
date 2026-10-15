@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "7.4 menyebut 'kolom sertifikasi yang diwajibkan', sedangkan judul kolom di PDF 'Sertifikasi profesi atau vendor yang diwajibkan'. Usul: kutip nama kolom persis.",
+  "Istilah Pengetahuan: 'harus diketahui pemegang jabatan' menjadi 'perlu diketahui'. Ini definisi, bukan aturan, tetapi 'harus' lebih dekat ke arti asal.",
+  "Dokumen Terkait SNX-HR-SOP-12: rujukan 'bagian 3' hilang dari sel. Fakta tetap ada di butir 4.3, jadi tidak ada syarat yang hilang.",
+  "Paragraf badan (Cara Mengisi) rata kiri-kanan. Tabel sudah rata kiri dan judul kolomnya berulang (hal. 8-10).",
+  "Pemeriksaan pemblokir: tidak ada angka, peran, kode, garis lapor, atau label (USULAN) yang berubah atau hilang. Yang dihapus hanya kalimat penunjuk ('Pengisian kolom lain mengikuti butir 7.3 sampai 7.7', 'Dasar penetapannya ada di butir 4.3'). Judul klausul ISO tetap seperti bed1bb6."
+ ],
+ "contoh_baik": [
+  "7.8 'HRGA Officer membiarkan kosong sel yang belum ditetapkan HR Lead.' -> 'Kosongkan sel yang belum ditetapkan HR Lead.'"
+ ]
+}

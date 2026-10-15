@@ -198,3 +198,18 @@ Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
 - diubah W9: garis lapor JA-03 dan JA-04 sudah diputus owner; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu konfirmasi.
 - ditutup W9: tabel terbelah antarhalaman, diatasi dengan baris judul berulang dan baris tidak terbelah (LEAD G-3 B4); pemeriksaan visual di Word tetap boleh oleh orang.
 - diubah W9: penulisan SOP Training & Development diseragamkan menjadi "dalam peninjauan".
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Tujuan: label "Hasil yang dijaga:" dihapus; isinya ditulis ulang sebagai dua kalimat biasa.
+- Tabel Peran: rujukan balik "(butir 4.3, 4.6, 4.8 sampai 4.10)", "(butir 4.2, 4.5 sampai 4.7, 4.9, dan 4.11)", "(butir 4.4 dan 4.5)", "(butir 4.5)", "(butir 4.5 dan 4.6)". Tugasnya sudah tertulis di sel; nomor butir tetap di Dasar dan Ketentuan.
+- Rekaman: "(butir 4.11)". Acuan Klausul ISO: "(bagian 8)" dan "(cakupan USULAN di bagian 2)"; fakta USULAN-nya dibawa sebagai label (USULAN) di akhir sel. Dokumen Terkait SNX-HR-FRM-02: "butir 4.9" dari "(butir 4.9, USULAN)".
+- Definisi Daftar Hadir: "Tabel di bagian 7" menjadi "Tabel di bagian Isi Laporan". Dokumen Terkait SNX-HR-JA-01: "bagian 5" menjadi "bagian Peran".
+### W10 selisih angka
+- usul_butir "6.19" baru: kalimat penunjuk "di lokasi pada bagian 8" diganti faktanya, "folder Google Drive departemen Human Resources", yang di tabel Rekaman berlabel USULAN; label ikut dibawa (Pelajaran sapuan). Aturannya tidak berubah.
+### W10 catatan
+Pihak luar: "pelanggan" (satu-satunya sebutan, di Ruang Lingkup). Dokumen yang belum ada ditulis "SOP Training & Development (dalam review)".
+Petunjuk Pengisian ditulis sebagai kalimat perintah untuk HRGA Officer; butir milik HR Lead, Peserta, Pelatih, dan Atasan langsung (6.1, 6.5, 6.8 sampai 6.10, 6.14, 6.15, 6.18) menyebut perannya di tengah atau akhir kalimat. Nama peran tidak berubah.
+Daftar Hadir diberi min_row_cm 0.9, Hasil per Peserta 0.8, Kesimpulan Efektivitas 1.2, Tindak Lanjut dan Pengesahan Laporan Terisi 1.0, untuk tulisan tangan dan tanda tangan.

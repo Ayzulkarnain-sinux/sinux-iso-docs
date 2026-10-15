@@ -180,3 +180,21 @@ Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
 - ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
 - ditutup W9: konfirmasi jabatan Aziz (HR Lead) dan ejaan Samuel Kristanto Utomo berstatus selesai di defaults v22.
 - diubah W9: garis lapor JA-03 dan JA-04 sudah diputus owner; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu konfirmasi.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Definisi Rencana pelatihan tahunan: "Isinya ada di Tabel 1." dan Matriks pelatihan: "Isinya ada di Tabel 2." Kalimat penunjuk; tabelnya kini disebut di dalam definisi.
+- Definisi Jenis pelatihan: "Daftarnya ada di bagian 6." Kalimat penunjuk (STYLE §3.2); daftar tetap di bagian Jenis Pelatihan.
+- Peran, baris HR Lead: "menurut butir 4.9". Rujukan balik.
+- Rencana dan Matriks Pelatihan, paragraf pembuka: "Pengisian Identitas Rencana, Tabel 1, dan Tabel 2 mengikuti bagian 7." Kalimat penunjuk; diganti kalimat netral tentang isi bagian.
+- Tabel 2, paragraf pembuka: "Pengisian kolom lain mengikuti butir 7.3 dan 7.8." Kalimat penunjuk.
+- Dokumen Terkait: "(butir 4.1)" (SNX-HR-ORG-01), "(butir 4.2)" dan "(butir 4.4)" (SNX-HR-FRM-01), "(butir 4.4 dan 4.9 form ini)" (SNX-HR-SOP-10 dan SNX-HR-SOP-12), "(butir 4.10)" (SNX-ISMS-PRO-01). Rujukan balik ke butir sendiri; nomor butir tetap ada di bagian Dasar dan Ketentuan.
+### W10 selisih angka
+- "6" hilang: hanya muncul di "Daftarnya ada di bagian 6" (definisi Jenis pelatihan) dan "daftar di bagian 6" (butir 4.5), kini ditulis "daftar Jenis Pelatihan". Nomor bagian tidak berubah.
+- "7" hilang: hanya muncul di kalimat penunjuk "mengikuti bagian 7" di pembuka Rencana dan Matriks Pelatihan. Nomor bagian tidak berubah.
+### W10 catatan
+Pihak luar: "pelanggan" (satu-satunya sebutan di dokumen ini). Dokumen yang belum ada ditulis "SOP Training & Development (dalam review)".
+Cara Mengisi ditulis sebagai kalimat perintah untuk HRGA Officer; butir 7.4, 7.6, dan 7.10 menyebut HR Lead di tengah atau akhir kalimat.
+Lebar kolom Tabel 1, Tabel 2, Acuan Klausul ISO, dan Dokumen Terkait disesuaikan; Tabel 1 diberi min_row_cm 0.8. Tujuan dipadatkan agar halaman form tidak naik.

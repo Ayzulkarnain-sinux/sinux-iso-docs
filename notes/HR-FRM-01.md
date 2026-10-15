@@ -174,3 +174,20 @@ Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
 - ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
 - ditutup W9: konfirmasi jabatan Aziz (HR Lead) dan ejaan Samuel Kristanto Utomo berstatus selesai di defaults v22.
 - diubah W9: garis lapor JA-03 dan JA-04 sudah diputus owner; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu konfirmasi.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Definisi Tingkatan jabatan: "Dasar penetapannya ada di butir 4.3." Kalimat penunjuk (STYLE §3.2); aturannya tetap di butir 4.3.
+- Matriks Kompetensi, paragraf pembuka: "Pengisian kolom lain mengikuti butir 7.3 sampai 7.7." Kalimat penunjuk; butir 7.3 sampai 7.7 tetap ada di Cara Mengisi.
+- Dokumen Terkait SNX-HR-JA-01: "(butir 4.1 dan 7.6)". Rujukan balik ke butir sendiri, tidak perlu dibuka pembaca.
+- Dokumen Terkait SNX-HR-SOP-12: "bagian 3 dokumen itu memuat ukuran tingkatan jabatan yang dipakai butir 4.3." Ditulis ulang "sumber ukuran tingkatan jabatan di form ini"; bagian 3 tetap disebut di butir 4.3.
+- Dokumen Terkait SNX-ISMS-PRO-01: "(butir 4.6)". Rujukan balik.
+### W10 selisih angka
+nihil (subst_diff build kosong)
+### W10 catatan
+Pihak luar: "pelanggan" (satu-satunya sebutan di dokumen ini, pada "kontrak pelanggan").
+Cara Mengisi ditulis sebagai kalimat perintah untuk HRGA Officer (pencatat di tabel Peran); butir 7.9 menyebut HR Lead dan Direktur Utama di tengah kalimat.
+Butir 4.5: label (USULAN) tetap hanya pada pembacaan form ini sebagai Competency Matrix; kalimat itu dipindah ke akhir butir.
+"Record (rekaman)" di header tabel bagian Rekaman sebagai jembatan heading beku. Tabel 2 diberi min_row_cm 1.4 untuk tulisan tangan.

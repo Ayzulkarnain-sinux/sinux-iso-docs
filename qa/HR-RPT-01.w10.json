@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "6.18 'Laporan terisi lalu diperiksa HR Lead, yang menandatangani baris Pemeriksa.' terasa janggal. Usul: 'Setelah itu, laporan terisi diperiksa dan ditandatangani HR Lead pada baris Pemeriksa.'",
+  "6.19: rujukan 'lokasi pada bagian 8' diganti fakta 'folder Google Drive departemen Human Resources (USULAN)', dan label tetap ada (benar). Syarat 'akses terbatas per peran' tidak diulang di 6.19, tetapi masih berlaku melalui tabel Rekaman dan butir 4.11, jadi tidak hilang.",
+  "Pembuka Isi Laporan: 'Semua sel isian kosong sampai HRGA Officer mengisinya' menjadi 'Sel isian diisi HRGA Officer'. Arti 'kosong sebelum diisi' tetap dijaga butir 4.2.",
+  "6.5, 6.8, 6.9, 6.10 memakai pasif dengan pelaku peran lain ('diisi oleh Peserta', 'dinilai Pelatih'). Ini sesuai STYLE §2.4, tetapi empat pasif berdekatan agak berat.",
+  "Pemeriksaan pemblokir: angka butir JA, E1-E4, kode dokumen, butir 4.8/4.15 SNX-ISMS-PRO-01, dan label (USULAN) pada baris 7.3 Kesadaran tetap ada. Rujukan butir yang dihapus dari tabel Peran adalah rujukan beruntun (§3.1)."
+ ],
+ "contoh_baik": [
+  "4.3 '...sebelum pelatihan dimulai, supaya Kesimpulan Efektivitas punya pembanding (USULAN).' -> '...sebelum pelatihan dimulai, sebagai pembanding untuk Kesimpulan Efektivitas (USULAN).'"
+ ]
+}
