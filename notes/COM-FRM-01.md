@@ -249,3 +249,10 @@ nihil (subst_diff build kosong).
 
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[3].blocks[0].table.rows[0][1]: tanpa label; uraian tugas umum Business Development, kewajiban berlabel (USULAN) di Ketentuan tidak dinyatakan ulang (keputusan sama dengan LEG-FRM-01 tabel Peran).
+### W10 audit pointer
+- .sections[3].blocks[0].table.rows[0][1]: lengkap; penunjuk balik "(Ketentuan butir 1, 3 sampai 6, dan 8 sampai 10)" dibuang; tugas Business Development tertulis di sel yang sama dan langkahnya tetap di Ketentuan butir 1 sampai 10.
+- .sections[3].blocks[0].table.rows[1][1]: lengkap; penunjuk "(Ketentuan butir 3 dan 4)" dibuang; tugas C2, eskalasi, label (USULAN), dan rujukan SNX-COM-SOP-02 butir 4.5 tetap.
+- .sections[3].blocks[0].table.rows[2][1]: lengkap; penunjuk "(Ketentuan butir 3 dan 4)" dibuang; catatan "Jabatan usulan tanpa pemegang (K-10)" tercatat terpisah di atas, fakta tetap di Dokumen Terkait baris SNX-HR-ORG-01.
+- .sections[3].blocks[0].table.rows[3][1]: lengkap; penunjuk "(Ketentuan butir 4 dan 5)" dibuang; tugas C3.4 sampai C3.7 dan rujukan SNX-LEG-SOP-02 tetap.
+- .sections[3].blocks[0].table.rows[4][1]: lengkap; penunjuk "(Ketentuan butir 7)" dibuang; tugas menetapkan Hasil Review dan memeriksa kolom Selesai tetap; urutan dan syaratnya tetap di Ketentuan butir 7.
+- .sections[7].blocks[1].table.rows[0][1]: lengkap; penunjuk "(Ketentuan butir 10)" dibuang; pencatat, pemilik (USULAN), lokasi, dan klasifikasi tetap.

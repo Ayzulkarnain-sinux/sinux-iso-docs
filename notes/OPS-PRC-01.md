@@ -246,3 +246,9 @@ nihil. Definisi Jabatan Divisi Operation, asli: "Status kelimanya (USULAN) di PO
 - Scope, daftar sistem pengganti rujukan bagian 4: Google Drive SINUX ditambahkan agar sama lengkap dengan bagian 4.
 - Definisi Proses pendukung: contoh "kontrol akses, backup, dan manajemen risiko" dibuang; rujukan "Daftarnya tercantum di tabel Dokumen terkait." dikembalikan (penghapusan pointer di bagian kalimat dihapus di atas dibatalkan).
 - Pointer lain yang diganti fakta diperiksa ulang terhadap bed1bb6: intro 6.1 (pemilik G2 dan G3) sama dengan PIC 6.2 langkah 3 dan 6; tidak ada fakta yang menyempit.
+### W10 audit pointer
+- .scope[9]: lengkap; "disebut di bagian 4" diganti daftar 13 sistem, dicek satu per satu terhadap butir 4.7 sampai 4.11 (Nusametric, Overseer, console Nusagrid, Wazuh, AegisWAF, Cloudflare, EDR, Acronis Cyber Protect, Zammad, Service Hub, password manager (vault), Jumphost, Google Drive SINUX), tidak ada yang hilang atau bertambah.
+- .policy[0]: lengkap; kalimat penunjuk "Pemilik tiap proses tercantum di butir 6.1" dibuang (STYLE §3.2), pemilik proses tetap di kolom PIC butir 6.1.
+- .roles[8][1]: lengkap; penunjuk "(butir 6.1)" dibuang, tanggung jawab tidak berubah.
+- .procedures[0].intro[1]: lengkap; "pemilik gate G2 dan G3 ada di butir 6.2" diganti fakta dari kolom PIC butir 6.2 (G2 dinyatakan lolos oleh Project Manager, G3 oleh Head of Operation).
+- .related_documents[5][1]: lengkap; "penunjukan ini diusulkan di butir 6.1" diganti label (USULAN), status usulan tetap terbawa.

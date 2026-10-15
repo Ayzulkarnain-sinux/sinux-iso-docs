@@ -194,3 +194,9 @@ Butir 4.5: label (USULAN) tetap hanya pada pembacaan form ini sebagai Competency
 
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[2].blocks[0].table.rows[6][1]: tanpa label; definisi istilah; dasar penetapan berlabel (USULAN) tetap di butir 4.3.
+### W10 audit pointer
+- .sections[2].blocks[0].table.rows[6][1]: lengkap; kalimat penunjuk "Dasar penetapannya ada di butir 4.3" dibuang (STYLE §3.2), definisi Tingkatan jabatan tetap; butir 4.3 tetap ada beserta label (USULAN).
+- .sections[7].blocks[0].p: lengkap; kalimat penunjuk "Pengisian kolom lain mengikuti butir 7.3 sampai 7.7" dibuang; petunjuk 7.1 sampai 7.9 ada di bagian 7 Cara Mengisi tepat sebelum tabel, tidak ada langkah yang hilang.
+- .sections[10].blocks[0].table.rows[1][1]: lengkap; penunjuk "(butir 4.1 dan 7.6)" dibuang; rujukan butir 4.7 dokumen JA-01 tetap ("Butir 4.7 dokumen itu"), syarat sertifikasi dan label (USULAN) tetap.
+- .sections[10].blocks[0].table.rows[3][1]: lengkap; rujukan "bagian 3 dokumen itu" dan "butir 4.3" dibuang dari baris Dokumen Terkait; ukuran yang sama tetap dinyatakan di butir 4.3 ("sama seperti di SNX-HR-SOP-12 bagian 3 (USULAN)"); syarat pengesahan dan label (USULAN) tetap.
+- .sections[10].blocks[0].table.rows[5][1]: lengkap; penunjuk "(butir 4.6)" dibuang, klasifikasi RESTRICTED (Internal) tetap disebut.

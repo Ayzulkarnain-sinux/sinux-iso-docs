@@ -221,3 +221,5 @@ nihil (subst_diff kosong).
 - Ketentuan Pengisian P1, P2, P4, P5, P9, P10 ditulis sebagai kalimat perintah; P7 tidak lagi diawali nama peran (0 dari 23 butir instruksi diawali peran). "komersil" dibakukan menjadi "komersial".
 - Label node diagram dibuat satu atau dua baris lebar (id, bentuk, edges tetap) agar gambar alur 17,7 cm dan Bagian A tetap mulai di halaman 9.
 - Tabel isian (rincian deliverable, isu sisa A dan C, lessons learned) diberi min_row_cm 0,9; lebar kolom tabel Bagian B, Pengecualian, Rekaman, Acuan, dan Dokumen Terkait disetel ulang. Halaman tetap 14.
+### W10 audit pointer
+- .sections[2].blocks[0].table.rows[15][1]: lengkap; "Isinya tertulis di Bagian B butir 5" diganti isi Bagian B butir 5 (Bagian B tabel deliverable baris "Dokumen as-built": topologi, IP address, versi, akses, ketergantungan vendor), lima unsur sama persis; tidak berlabel USULAN.

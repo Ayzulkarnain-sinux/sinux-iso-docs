@@ -241,3 +241,10 @@ nihil (subst_diff build kosong).
 
 ### W10 rujukan USULAN dicek (adjudikasi worker, gerbang rujukan USULAN)
 - .sections[4].blocks[1].table.rows[4][1]: label (USULAN) ditambah; teks ini menyatakan ulang isi butir berlabel (USULAN) yang rujukannya dihapus.
+### W10 audit pointer
+- .sections[4].blocks[1].table.rows[0][1]: lengkap; penunjuk balik "(butir 4.1 sampai 4.5, 4.10, 4.12)" dibuang; tugas dan urutan Tabel 1 sampai 11 tertulis di sel yang sama, langkahnya tetap di butir 4.1 sampai 4.12; label (USULAN) tetap.
+- .sections[4].blocks[1].table.rows[2][1]: lengkap; penunjuk "(butir 4.6)" dan "(butir 4.10, 4.11)" dibuang; tiga tugas Service Delivery Manager tetap; syarat waktu konfirmasi tanggal tetap di butir 4.6.
+- .sections[4].blocks[1].table.rows[3][1]: lengkap; penunjuk "(butir 4.9)" dibuang; isi butir 4.9 (Tabel 9 sebagai bahan risiko awal) sudah tertulis di sel yang sama; rujukan SNX-OPS-SOP-01 tetap.
+- .sections[4].blocks[1].table.rows[4][1]: lengkap; "(butir 4.15)" diganti fakta butir 4.15 yang relevan (struktur kolom Tabel 1 sampai Tabel 12) beserta label (USULAN).
+- .sections[5].blocks[0].p: lengkap; penunjuk "(butir 4.1)" dibuang; urutan pengisian (Tabel 1 sampai 10 sebelum, Tabel 11 setelah handover meeting) tetap tertulis.
+- .sections[7].blocks[1].table.rows[0][1]: lengkap; "Klasifikasi menurut butir 4.14" diganti fakta butir 4.14 untuk form terisi (RESTRICTED (Internal)) beserta label (USULAN); klasifikasi form kosong tidak relevan untuk baris rekaman form terisi.

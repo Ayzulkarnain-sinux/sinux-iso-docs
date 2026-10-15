@@ -334,3 +334,7 @@ nihil (subst_diff kosong)
 Sebutan pihak luar: "pelanggan" (paling sering di dokumen ini; "klien" pada kutipan uraian tim tidak diubah).
 "review manajemen" ditulis "Management Review", dengan jembatan "(tinjauan manajemen)" pada kemunculan pertama (uraian JA-01 butir 7).
 Dokumen T1: kalimat uraian tim dipertahankan; perubahan hanya bila, rujukan, label Acuan ISO ke akhir kalimat, dan butir 4.1 serta 4.6. Garis lapor JA-03 dan JA-04, label K, nama jabatan JA-xx, dan keputusan G-3 tidak diubah.
+### W10 audit pointer
+- .sections[1].blocks[1].p: lengkap; "(butir 4.6)" diganti fakta butir 4.6 yang relevan untuk pengecualian (target, bobot, sumber data ditetapkan di KPI Matrix), "(butir 4.4)" diganti fakta butir 4.4 (hak tanda tangan dan otorisasi keuangan diatur di Authority Matrix); rujukan bagian 8 tetap.
+- .sections[5].blocks[0].p: lengkap; rujukan butir 4.7, 4.8, 4.10 tidak hilang, digabung menjadi satu rujukan "(butir 4.5, 4.7, 4.8, dan 4.10)" (STYLE §3.1 satu rujukan per paragraf); pemindai hanya membaca angka pertama setelah kata "butir".
+- .sections[10].blocks[1].table.rows[4][2]: lengkap; penunjuk "(bagian 1)" dibuang, isi baris tetap.
