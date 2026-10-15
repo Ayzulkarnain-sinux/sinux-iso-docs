@@ -209,3 +209,18 @@ Alasan 2d dan 2e: SNX-LEG-SOP-03 butir 4.26 menetapkan Line Manager Legal sebaga
 
 Uji sweep: render_sop.py lalu lint_doc.py sop memberi "pass": true, "fails": [], satu warn "20 butir (USULAN) menunggu ACC" (dua lebih banyak dari sebelumnya karena dua label pemetaan di 2a); validate.py (docx skill) "All validations PASSED!"; blankscan.py "ok 23 LEG-SOP-01.docx []".
 
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A5 approval Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| A5 approval Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| A5 bagian 5, Line Manager Legal (JA-08) | Dipetakan ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | Dipetakan ... di SNX-HR-ORG-01. Klausul 'melapor ke COO (USULAN, butir K-03)' tidak berubah (A4) |
+| A5 bagian 5, Staff Legal (JA-09) | Dipetakan ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | Dipetakan ... di SNX-HR-ORG-01. |
+| A5 bagian 11, baris SNX-HR-ORG-01 (rujukan silang) | ... (JA-08 dan JA-09) (USULAN, butir K-13); atasan JA-08 menunggu konfirmasi (butir K-03). | ... (JA-08 dan JA-09); atasan JA-08 menunggu konfirmasi (butir K-03). Rujukan ke SNX-HR-ORG-01 tetap berupa nomor jabatan dan butir K-03 |
+| A5 nama unit, 6 kemunculan (butir 4.6, 4.23, tabel peran Finance dan VP Tech Operation and Services, bagian 11 dua baris) | SOP Divisi Legal versi 0.1 | SOP Departemen Legal versi 0.1 (judul draf tim ikut diganti agar nol 'Divisi Legal') |
+
+Open item:
+
+- Pemetaan JA-08 dan JA-09 (baris USULAN 14, tabel USULAN): ditutup W9: diputus owner (G-3 A5), label USULAN dan menunggu konfirmasi pada pemetaan dihapus. Open item 2 (atasan Line Manager Legal, K-03) tetap terbuka (A4).
+- A3: tidak ada perubahan; dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04.
