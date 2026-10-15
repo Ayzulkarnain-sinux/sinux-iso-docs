@@ -1,0 +1,33 @@
+{
+ "key": "LEG-RPT-01",
+ "cluster": "LEG-C",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Kalimat yang berubah di tabel Peran tetap berbentuk 'Nama peran di dokumen ini, dipetakan ke jabatan ... di SNX-HR-ORG-01.' Ini pasif tanpa pelaku dan berupa fragmen kalimat. Bentuk itu sudah ada sebelum W9; yang dihapus hanya ekor label, jadi bukan pasif baru. Kalimatnya bisa dirapikan di putaran mutu berikutnya.",
+  "Dokumen menulis 'departemen Legal' (huruf kecil, deskriptif) di Ketentuan butir 12, Rekaman, dan Dokumen Terkait. Tulisan itu sudah ada sebelum W9 dan tidak bertentangan dengan unit_names v22, tetapi kapitalisasinya belum seragam dengan 'Departemen Legal'.",
+  "SNX-HR-ORG-01 (kerangka sebelum W9, baris 93-94 dan K-13) masih memuat '(USULAN), menunggu konfirmasi (K-13)' untuk pemetaan Line Manager Legal dan Staff Legal. Itu ranah klaster HR. Bila HR-ORG-01 tidak diselaraskan, rujukan LEG-RPT-01 ke dokumen itu akan tampak tidak sinkron soal status pemetaan.",
+  "Rujukan silang JA-08/JA-09 'Legal & Compliance' di SNX-HR-ORG-01 tidak diubah dan cocok dengan kerangka HR-ORG-01 baris 54-55."
+ ],
+ "butir_dikerjakan": [
+  "A5: meta.approval prepared = 'Alif Altamziz / Staff Legal' dan reviewed = 'Ester Febe Utomo / Line Manager Legal', persis defaults v22 prepared_reviewed.LEG. approved = 'Samuel Kristanto Utomo / President Director' tetap, persis approved_by.all.",
+  "A5: label 'menunggu konfirmasi (K-13) (USULAN)' pada pemetaan Staff Legal ke JA-09 di tabel Peran dihapus.",
+  "A5: label 'menunggu konfirmasi (K-13) (USULAN)' pada pemetaan Line Manager Legal ke JA-08 di tabel Peran dihapus.",
+  "A5: label (USULAN) pada baris Dokumen Terkait SNX-HR-ORG-01 (dasar pemetaan peran) dihapus.",
+  "A5: label USULAN lain tetap, termasuk 'Pelaksana Pemantauan (USULAN)' dan 'Pemilik dokumen (USULAN)'. Badan dokumen tetap memakai nama peran: Alif dan Ester masing-masing hanya muncul 1x, di blok Prepared/Reviewed. Daffa 0.",
+  "A5: 'Divisi Legal' 0 sebelum dan sesudah, jadi tidak ada yang perlu diganti.",
+  "A3: dokumen tidak menyebut JA-03/JA-04 atau garis lapornya (grep 0), jadi tidak ada yang perlu diubah. Penyusun mencatat hal ini di notes.",
+  "Diff hanya memuat 5 baris yang diminta. Tidak ada perubahan lain, fakta baru, em-dash, frasa proses penyusunan, atau rujukan AI. Notes memuat bagian ISO-W9 berisi tabel perubahan dan open item yang ditutup."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Teks sesudah (render /tmp/claude-0/w9/render/LEG-RPT-01.docx): 'Divisi Legal' 0; 'HR Manager' 0; 'Daffa' 0; 'menunggu konfirmasi' 0; 'K-13' 0; 'JA-03' 0; 'JA-04' 0; em-dash 0; 'Alif' 1 dan 'Ester' 1, keduanya hanya di blok Approval.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
