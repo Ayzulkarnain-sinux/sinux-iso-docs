@@ -1,0 +1,37 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 3, definisi Register Penagihan dan Penjualan (diff baris 193)",
+      "masalah": "Kalimat tambahan di luar empat kalimat butir 1; menyambung butir 3. Berlabel (USULAN), dan isi definisi yang lama tetap utuh. Pasif tanpa pelaku: 'Formatnya diusulkan mengikuti' (RUNBOOK §6a.6).",
+      "bukti": "Sesudah: 'Lembar Google Sheets untuk mencatat status invoice, jatuh tempo, dan rekonsiliasi piutang. Formatnya diusulkan mengikuti SNX-FAT-REG-01 (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 11, dokumen terkait, baris SNX-FAT-REG-01 (diff baris 343-344)",
+      "masalah": "Pemetaan Lampiran 4 sumber ke SNX-FAT-REG-01 adalah tafsir. Di baris ini tafsir itu hanya ditandai kata 'diusulkan', tanpa label '(USULAN)'. Kalimatnya juga pasif tanpa pelaku. Dasar pemetaan cukup: sumber menyebut register itu 'AR Tracker', dan deskripsi checklist REG-01 berbunyi 'Dokumen tracker untuk semua piutang dari customer'. Saran: tambah '(USULAN)' di baris ini.",
+      "bukti": "Sesudah: 'Billing & Collection Monitoring Register; format yang diusulkan untuk Register Penagihan dan Penjualan (bagian 3).' Sumber 1sZfTBx1...: 'Lampiran 4 – Format Register Penagihan & Penjualan: Templat lembar kerja Google Sheets ... rekonsiliasi piutang (AR)'; 6.5: 'Register Penagihan & Penjualan (AR Tracker)'."
+    },
+    {
+      "lokasi": "Bagian 5, peran Business Development (diff baris 200)",
+      "masalah": "Makna tetap: pemetaan Tim Sales ke Business Development masih berlabel (USULAN). Kini 'Tim Sales' muncul tanpa penjelasan asal di badan dokumen. Asalnya dicatat di notes.",
+      "bukti": "Sesudah: 'Menjalankan peran Tim Sales (USULAN): mengirim tautan Google Form ...'. Sumber 4.1: 'Tim Sales: Bertanggung jawab mengirimkan Tautan Google Form Data Subskripsi Klien ...'."
+    },
+    {
+      "lokasi": "Butir 3 instruksi (SNX-FAT-SOP-06, SNX-FAT-FRM-02)",
+      "masalah": "Tidak berlaku untuk dokumen ini, bukan butir yang dilewati. Kedua dokumen tidak disebut di badan dokumen. SOP Account Receivable & Collection tetap 'Belum bernomor, sedang dalam peninjauan', dan itu benar: dokumen itu tidak ada di daftar nomor baru, dan worklist mencatatnya terpisah dari SOP Accounting and Financial Report (HOLD, number null).",
+      "bukti": "config/checklist.json baris 24 'SOP Account Receivable & Collection' link_text 'on review'; baris 27 'SOP Accounting and Financial Report' terpisah; notes/FAT-SOP-01.md ## Sweep butir 3."
+    },
+    {
+      "lokasi": "Pemeriksaan sisa frasa",
+      "masalah": "Nihil. 'versi tim', 'isinya belum tersedia', 'Lampiran n SOP', 'dipetakan dari', dan 'dikonfirmasi konsultan' sudah hilang dari spec. Em-dash 0. Tidak ada rujukan internal AI baru. Kata 'lampiran' yang tersisa (6.1, 6.4) berarti lampiran email, bukan frasa proses.",
+      "bukti": "grep spec: nol kemunculan frasa yang diminta; grep -c em-dash = 0."
+    }
+  ],
+  "fakta_diperiksa": [
+    "1a 'daftar periksa empat dokumen pendukung', berdasar sumber Lampiran 1: 'Templat standar pengajuan penagihan yang diisi oleh Project Manager beserta checklist verifikasi 4 dokumen pendukung.'",
+    "1d 'format baku invoice SINUX di Google Sheets', berdasar sumber Lampiran 2: 'Format baku dokumen invoice PT Strategi Integrasi Nusantara', dan 6.2: 'templat resmi perusahaan di Google Sheets'.",
+    "Butir 2: satu kemunculan diganti (iso_refs 'Status daftar klausul'), tidak ada sisa.",
+    "Judul SNX-FAT-REG-01 'Billing & Collection Monitoring Register' cocok dengan instruksi dan specs/FAT-REG-01.patch.json."
+  ]
+}

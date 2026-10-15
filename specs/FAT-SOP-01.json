@@ -54,7 +54,7 @@
   ["PO/SPK", "Purchase Order atau Surat Perintah Kerja: dokumen pemesanan resmi dari klien yang menjadi dasar SINUX memulai pekerjaan dan menerbitkan invoice."],
   ["PPh Pasal 23", "Pajak Penghasilan yang klien potong dari pembayaran atas jasa SINUX."],
   ["PPN", "Pajak Pertambahan Nilai atas penyerahan Jasa Kena Pajak (JKP) kepada klien."],
-  ["Register Penagihan dan Penjualan", "Lembar Google Sheets untuk mencatat status invoice, jatuh tempo, dan rekonsiliasi piutang."],
+  ["Register Penagihan dan Penjualan", "Lembar Google Sheets untuk mencatat status invoice, jatuh tempo, dan rekonsiliasi piutang. Formatnya diusulkan mengikuti SNX-FAT-REG-01 (USULAN)."],
   ["TOP (Term of Payment)", "Jangka waktu klien melunasi invoice sampai tanggal jatuh tempo. Lama dan titik awal hitungannya ada di butir 4.8."]
  ],
  "policy": [
@@ -78,7 +78,7 @@
  "roles": [
   [
    "Business Development",
-   "Mengirim tautan Google Form Data Subskripsi Klien ke klien baru saat PKS ditandatangani, memastikan klien melengkapi data master klien, dan memperbarui Master Sales Sheet secara rutin (butir 6.1). Peran ini dipetakan dari Tim Sales di SOP Billing dan Invoicing versi tim (USULAN).",
+   "Menjalankan peran Tim Sales (USULAN): mengirim tautan Google Form Data Subskripsi Klien ke klien baru saat PKS ditandatangani, memastikan klien melengkapi data master klien, dan memperbarui Master Sales Sheet secara rutin (butir 6.1).",
    "Tidak ada wewenang persetujuan di SOP ini."
   ],
   [
@@ -231,9 +231,9 @@
   ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; sumber nama jabatan dan matriks peran. Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)."],
   ["SNX-ISMS-PRO-01", "Information Classification & Handling; sumber tingkat klasifikasi RESTRICTED (Internal)."],
   ["Belum bernomor", "SOP Account Receivable & Collection; sedang dalam peninjauan; mengatur penagihan invoice kepada klien dan pendataan piutang, termasuk tindak lanjut Overdue."],
-  ["Belum bernomor", "Form Permohonan Penagihan (Billing Request Form), diisi Project Manager; Lampiran 1 SOP Billing dan Invoicing versi tim, isinya belum tersedia."],
-  ["Belum bernomor", "Templat Invoice Resmi FAT; Lampiran 2 SOP Billing dan Invoicing versi tim, isinya belum tersedia."],
-  ["Belum bernomor", "Format Register Penagihan dan Penjualan; Lampiran 4 SOP Billing dan Invoicing versi tim, isinya belum tersedia."]
+  ["Belum bernomor", "Form Permohonan Penagihan (Billing Request Form): templat pengajuan penagihan yang diisi Project Manager, dengan daftar periksa empat dokumen pendukung (butir 6.1)."],
+  ["Belum bernomor", "Templat Invoice Resmi FAT: format baku invoice SINUX di Google Sheets (butir 6.2)."],
+  ["SNX-FAT-REG-01", "Billing & Collection Monitoring Register; format yang diusulkan untuk Register Penagihan dan Penjualan (bagian 3)."]
  ],
  "records": [
   ["Invoice, e-Faktur Pajak, PKS, PO, dan BAST (PDF)", "Folder Google Drive Departemen FAT, struktur Tahun / Nama Klien / Nomor Invoice (butir 4.12); pemilik Finance Lead (butir 4.15)", "Minimal 10 tahun"],
@@ -245,7 +245,7 @@
   ["Berita Acara Pemusnahan Dokumen", "Lokasi belum ditetapkan; pemilik Finance Lead (butir 4.15)", "Belum ditetapkan"]
  ],
  "iso_refs": {
-  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan).",
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan).",
   "ISO 9001:2015": "7.5.3 (Pengendalian informasi terdokumentasi), untuk penyimpanan dan masa simpan arsip di butir 4.12; 8.2 (Persyaratan untuk produk dan jasa), untuk invoice yang mengikuti PKS dan PO di butir 4.1 dan 4.3; 8.5 (Produksi dan penyediaan jasa), untuk pencocokan sebelum e-Faktur Pajak diterbitkan di butir 4.3; 8.6 (Pelepasan produk dan jasa), untuk persetujuan Finance Lead sebelum invoice dikirim ke klien di butir 4.4.",
   "ISO/IEC 27001:2022": "Annex A 5.12 (Klasifikasi informasi), untuk butir 4.10; Annex A 5.15 (Kontrol akses), untuk pembatasan akses di butir 4.10; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.10 dan 4.12; Annex A 8.5 (Autentikasi aman), untuk 2FA di butir 4.11."
  }

@@ -87,11 +87,11 @@ Pemetaan peran sumber ke nama peran di bagian 5 (basis: specs/HR-ORG-01.json):
 | 6 | "4 dokumen pendukung" didefinisikan tiga cara; 8.1 mendaftar lima | Diperbaiki: empat dokumen = PKS, PO/SPK, BAST, NPWP klien (5.1 dan 9.2 sepakat), didefinisikan sekali di bagian 3. Hasil Google Form dipisah sebagai syarat data master klien (butir 4.2). e-Faktur Pajak adalah keluaran proses, bukan syarat, dan tetap ada di daftar arsip (butir 4.12). Putaran 1: NPWP klien ditambahkan ke lampiran langkah 6.1.4 dan diagram, mengikuti 9.2 sumber ("Project Manager melengkapi PKS, PO, BAST, dan NPWP Klien") |
 | 7 | Urutan: 3-way matching sebelum e-Faktur (7.2), e-Faktur sebelum approval Finance Lead (6.2 dan 6.3), e-Faktur "pada saat penerbitan invoice" (5.2) | Sebagian diperbaiki: 3-way matching dipasang sebelum e-Faktur sebagai langkah pertama butir 6.2, dan diterapkan atas permohonan penagihan (bukan atas draf invoice, karena draf di sumber baru dibuat sesudah e-Faktur). Urutan e-Faktur lalu approval Finance Lead tidak dibalik karena menyangkut keputusan pajak; Faktur Pajak Pengganti ditangani di bagian 9. Risiko ada di open item 2 |
 | 8 | Tidak ada SLA waktu per tahap; tidak ada prosedur Overdue; tidak ada collection | Tabel SLA hanya memuat angka sumber (pemantauan harian, pembaruan register saat status berubah, evaluasi log bulanan). Overdue dikecualikan dari scope dan ditulis di bagian 9 tanpa kontrol baru; rujukannya SOP Account Receivable & Collection (checklist baris 24, status on review, belum bernomor), sehingga dokumen menulis "sedang dalam peninjauan", bukan "belum berdokumen" (koreksi putaran 1). Open item 4 dan 6 |
-| 9 | Lampiran 1 sampai 4 dirujuk tanpa isi; gambar hanya logo | Lampiran 1, 2, 4 dicantumkan di Dokumen terkait sebagai "Belum bernomor" dengan sebutan "SOP Billing dan Invoicing versi tim" (isi tidak ada, open item 12). Lampiran 3 (flowchart) digantikan diagram bagian 7 yang saya turunkan dari teks sumber, tanpa cabang yang tidak ada di teks: cabang "Tidak sesuai" berhenti di bagian 9 dan tidak kembali ke penyusunan draf (sumber tidak menyatakannya) |
+| 9 | Lampiran 1 sampai 4 dirujuk tanpa isi; gambar hanya logo | Lampiran 1 dan 2 dicantumkan di Dokumen terkait sebagai "Belum bernomor" (isi tidak ada di sumber, open item 12); Lampiran 4 dirujuk lewat SNX-FAT-REG-01 sejak sweep (USULAN 8). Lampiran 3 (flowchart) digantikan diagram bagian 7 yang saya turunkan dari teks sumber, tanpa cabang yang tidak ada di teks: cabang "Tidak sesuai" berhenti di bagian 9 dan tidak kembali ke penyusunan draf (sumber tidak menyatakannya) |
 | 10 | Scope tidak menyebut penjualan perangkat atau lisensi | Tidak diputus: scope menulis dua jenis transaksi dari sumber, dan penjualan lain masuk open item 7. Pengecualian yang ditulis berasal dari kriteria baris (invoice kepada klien): invoice masuk dari vendor, pelaporan pajak, tindak lanjut Overdue |
 | 11 | Finance Lead tunggal; tidak ada pengganti; Finance Lead dan Finance Staff tidak ada di HR-JA-001 | Tidak ada kontrol pengganti yang dikarang (aturan RUNBOOK §6 dan prompt: hanya bila ada di sumber). Peran dipakai apa adanya dengan catatan "belum dipetakan (K-13)" di tabel peran. Open item 5 |
 | 12 | Dokumen berlabel Rahasia, SOP sendiri tanpa klasifikasi | Diperbaiki: INTERNAL untuk SOP, RESTRICTED (Internal) untuk data yang diatur (butir 4.10, USULAN 3) |
-| 13 | Istilah "Klausa" dan "Lampiran A.5.33"; tidak ada pemetaan klausul lain | Diperbaiki: bagian 11 memuat 7.5.3, 8.2, 8.5, 8.6 (ditambah putaran 1 atas saran verifikator), Annex A 5.12, 5.15, 5.33, 8.5 dengan satu label "(USULAN, dikonfirmasi konsultan)". Judul klausul berasal dari pengetahuan standar penyusun, bukan teks sumber, dan tidak dicocokkan dengan teks standar (UNMEASURED) |
+| 13 | Istilah "Klausa" dan "Lampiran A.5.33"; tidak ada pemetaan klausul lain | Diperbaiki: bagian 11 memuat 7.5.3, 8.2, 8.5, 8.6 (ditambah putaran 1 atas saran verifikator), Annex A 5.12, 5.15, 5.33, 8.5 dengan satu label "(USULAN, perlu konfirmasi konsultan)" (kata label diubah di sweep). Judul klausul berasal dari pengetahuan standar penyusun, bukan teks sumber, dan tidak dicocokkan dengan teks standar (UNMEASURED) |
 | 14 | Sisa "$\rightarrow$" di 9.2 | Tidak dibawa. Bagian 9.2 sumber (ringkasan alur) tidak disalin karena mengulang butir 6 |
 
 Cacat tambahan yang saya temukan:
@@ -120,7 +120,7 @@ Cacat tambahan yang saya temukan:
 
 ## USULAN
 
-Enam butir bertanda "(USULAN)" di dokumen (lint menghitung enam, termasuk baris definisi label itu sendiri) ditambah label klausul ISO dan process_owner. Total tujuh butir keputusan.
+Tujuh butir bertanda "(USULAN)" di dokumen (lint menghitung tujuh, termasuk baris definisi label itu sendiri; sweep menambah satu) ditambah label klausul ISO dan process_owner. Total delapan butir keputusan.
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -129,7 +129,8 @@ Enam butir bertanda "(USULAN)" di dokumen (lint menghitung enam, termasuk baris 
 | 3 | Data keuangan, daftar harga, data penagihan klien, dan rekening bank = RESTRICTED (Internal) menggantikan "Rahasia (Confidential)" | Butir 4.10 | Fani (pemilik skema SNX-ISMS-PRO-01 di sisi Operation dan ISMS) |
 | 4 | Penetapan pelaku pada butir 4.3, 4.9, 4.11, 4.12, 4.14, 4.16, pemantauan Overdue (bagian 9), dan Finance Lead sebagai pemilik rekaman | Butir 4.15 dan tabel rekaman | FAT, dikukuhkan owner |
 | 5 | Tim Sales dipetakan ke Business Development | Tabel peran bagian 5 | owner |
-| 6 | Daftar klausul ISO 9001:2015 (7.5.3, 8.2, 8.5, 8.6) dan ISO/IEC 27001:2022 (Annex A 5.12, 5.15, 5.33, 8.5), label "(USULAN, dikonfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
+| 6 | Daftar klausul ISO 9001:2015 (7.5.3, 8.2, 8.5, 8.6) dan ISO/IEC 27001:2022 (Annex A 5.12, 5.15, 5.33, 8.5), label "(USULAN, perlu konfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
+| 8 | Format Register Penagihan dan Penjualan mengikuti SNX-FAT-REG-01 (Billing & Collection Monitoring Register, deskripsi checklist: "Dokumen tracker untuk semua piutang dari customer") | Definisi Register di bagian 3 dan Dokumen terkait bagian 11 | FAT |
 | 7 | Process owner = Finance Lead (sumber tanpa "Pemilik dokumen") | Identity Document | owner |
 
 ## Open items
@@ -147,12 +148,29 @@ Enam butir bertanda "(USULAN)" di dokumen (lint menghitung enam, termasuk baris 
 | 9 | Persetujuan Direktur Utama atas TOP lebih dari standar: sebelum PKS atau PO disepakati (5.3) atau saat draf invoice (6.3). Keduanya dipertahankan | FAT dan Samuel |
 | 10 | Staff Finance menandatangani dan menstempel invoice cetak (sumber 6.4). Apakah itu sesuai Authority Matrix yang belum bernomor | Samuel |
 | 11 | Lokasi rekaman selain arsip PDF (persetujuan tertulis, Register, Master Sales Sheet, log, Berita Acara Pemusnahan Dokumen) belum ditetapkan, dan masa simpan Master Sales Sheet serta Berita Acara Pemusnahan Dokumen juga belum. Dasar hukum retensi 10 tahun belum dikutip, dan FAT perlu menegaskan bahwa Register, persetujuan tertulis, dan log termasuk "arsip dokumen penagihan" (lihat koreksi putaran 2) | FAT dan Legal |
-| 12 | Lampiran 1 (Form Permohonan Penagihan), 2 (Templat Invoice Resmi FAT), dan 4 (Format Register) tidak ada isinya di sumber. Lampiran 3 digantikan diagram bagian 7 yang diturunkan dari teks; perlu disahkan FAT | FAT |
-| 13 | Tujuan "pengakuan pendapatan" di sumber tidak punya langkah. Bila diinginkan, perlu proses baru atau rujukan ke SOP akuntansi | FAT |
+| 12 | Lampiran 1 (Form Permohonan Penagihan) dan 2 (Templat Invoice Resmi FAT) tidak ada isinya di sumber dan belum bernomor; Lampiran 4 (Format Register) kini dirujuk lewat SNX-FAT-REG-01 (USULAN 8), perlu dicocokkan isinya. Lampiran 3 digantikan diagram bagian 7 yang diturunkan dari teks; perlu disahkan FAT | FAT |
+| 13 | Tujuan "pengakuan pendapatan" di sumber tidak punya langkah. Bila diinginkan, perlu proses baru atau rujukan ke SNX-FAT-SOP-06 (SOP Accounting and Financial Report, kini bernomor); dokumen ini belum merujuknya | FAT |
 | 14 | SNX-FAT-SOP-05 (Tax) juga menyebut Faktur Pajak Keluaran dalam scope-nya; penerbitan e-Faktur di dokumen ini perlu diselaraskan dengan dokumen itu agar tidak ganda | FAT |
 | 15 | Konfirmasi ejaan dan sebutan Samuel (Kristanto, Direktur Utama; sumber memakai CEO) dan kolom pengesahan sumber yang memasang satu orang di tiga peran | owner atau Samuel |
-| 16 | Pembatasan akses folder Google Drive Departemen FAT dan Register (butir 4.10): sumber tidak menyebut siapa yang memberi dan mencabut akses. Tidak ditulis karena butuh pelaku baru (FAT). | FAT |
-| 17 | Sebelum pengesahan, catatan penyusunan di badan dokumen (label USULAN, "versi tim", "isinya belum tersedia", butir 4.15) perlu dibersihkan atau diputus supaya tidak terbaca sebagai kebijakan (saran verifikator putaran 2). | FAT dan owner |
+| 16 | Pembatasan akses folder Google Drive Departemen FAT dan Register (butir 4.10): sumber tidak menyebut siapa yang memberi dan mencabut akses. Tidak ditulis karena butuh pelaku baru. SNX-FAT-FRM-02 (Financial Information Access Authorization Records, kini bernomor) kandidat rekaman pemegang akses; dokumen ini belum merujuknya | FAT |
+| 17 | Sebelum pengesahan, catatan penyusunan di badan dokumen (label USULAN, butir 4.15, baris Business Development) perlu dibersihkan atau diputus supaya tidak terbaca sebagai kebijakan (saran verifikator putaran 2). | FAT dan owner |
+
+## Sweep
+
+Putaran sweep (penghalusan sesudah DONE) dari orkestrator. Perubahan hanya di specs/FAT-SOP-01.json (bagian 5 dan 11 serta definisi di bagian 3); fakta, angka, nama, dan struktur lain tetap. Enam perubahan teks di spec, tiga butir instruksi.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1a | Form Permohonan Penagihan (Billing Request Form), diisi Project Manager; Lampiran 1 SOP Billing dan Invoicing versi tim, isinya belum tersedia. | Form Permohonan Penagihan (Billing Request Form): templat pengajuan penagihan yang diisi Project Manager, dengan daftar periksa empat dokumen pendukung (butir 6.1). |
+| 1b | Format Register Penagihan dan Penjualan; Lampiran 4 SOP Billing dan Invoicing versi tim, isinya belum tersedia. (baris "Belum bernomor") | Baris SNX-FAT-REG-01: Billing & Collection Monitoring Register; format yang diusulkan untuk Register Penagihan dan Penjualan (bagian 3). Definisi Register di bagian 3 ditambah: "Formatnya diusulkan mengikuti SNX-FAT-REG-01 (USULAN)." Pemetaan ini keputusan (USULAN 8), bukan fakta sumber |
+| 1c | Mengirim tautan Google Form Data Subskripsi Klien ke klien baru saat PKS ditandatangani, memastikan klien melengkapi data master klien, dan memperbarui Master Sales Sheet secara rutin (butir 6.1). Peran ini dipetakan dari Tim Sales di SOP Billing dan Invoicing versi tim (USULAN). | Menjalankan peran Tim Sales (USULAN): mengirim tautan Google Form Data Subskripsi Klien ke klien baru saat PKS ditandatangani, memastikan klien melengkapi data master klien, dan memperbarui Master Sales Sheet secara rutin (butir 6.1). |
+| 1d | Templat Invoice Resmi FAT; Lampiran 2 SOP Billing dan Invoicing versi tim, isinya belum tersedia. | Templat Invoice Resmi FAT: format baku invoice SINUX di Google Sheets (butir 6.2). |
+| 2 | (USULAN, dikonfirmasi konsultan) | (USULAN, perlu konfirmasi konsultan); satu kemunculan, di Acuan standar bagian 11 |
+| 3 | Lampiran 4 "Belum bernomor"; SNX-FAT-SOP-06, SNX-FAT-FRM-02 tidak dirujuk | SNX-FAT-REG-01 dirujuk (lihat 1b). SNX-FAT-SOP-06 dan SNX-FAT-FRM-02 tidak muncul di badan dokumen ini sehingga tidak ditambahkan; keduanya dicatat di open item 13 dan 16 sebagai kandidat rujukan. SOP Account Receivable & Collection tetap "Belum bernomor, sedang dalam peninjauan" karena tidak ada di daftar nomor baru |
+
+Catatan proses yang dipindah dari badan dokumen ke notes: Lampiran 1, 2, dan 4 ada sebagai lampiran di 1. SOP Billing and Invoicing (fileId 1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI) tetapi isinya tidak ada di berkas itu; Tim Sales adalah peran di berkas yang sama. Deskripsi Lampiran 1 di berkas itu: "Templat standar pengajuan penagihan yang diisi oleh Project Manager beserta checklist verifikasi 4 dokumen pendukung." Lampiran 2: "Format baku dokumen invoice PT Strategi Integrasi Nusantara yang memuat komponen informasi perusahaan, rincian jasa, DPP, PPN 12%, dan PPh 23." Lampiran 4: "Templat lembar kerja Google Sheets untuk pencatatan status tagihan, tanggal jatuh tempo (TOP 14 hari), dan rekonsiliasi piutang (AR)." Deskripsi checklist SNX-FAT-REG-01: "Dokumen tracker untuk semua piutang dari customer".
+
+Uji sesudah sweep: render_sop.py, lint_doc.py sop ("pass": true, fails kosong, warn hanya "7 butir (USULAN) menunggu ACC", warns PIC SLA nol), validate.py ("All validations PASSED!"), blankscan.py (ok, 16 halaman).
 
 ## 5. Dua pertanyaan penutup
 
