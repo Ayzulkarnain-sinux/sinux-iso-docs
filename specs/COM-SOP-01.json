@@ -120,21 +120,21 @@
   "4.8 Proposal wajib memuat Scope of Work, Proposed Solution, Deliverables, Timeline, Commercial Proposal, Assumptions, dan Exclusions.",
   "4.9 Business Development mengirim proposal ke customer hanya sesudah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai.",
   "4.10 Wewenang harga berikut berstatus (USULAN): VP Commercial merekomendasikan harga dan diskon, COO menyetujuinya dan menetapkan margin final. Ambang diskon dan batas margin minimum belum ditetapkan; sampai ditetapkan, setiap diskon memerlukan persetujuan COO.",
-  "4.11 Business Development tidak mengubah pricing sendiri, tidak memberi diskon tanpa persetujuan (butir 4.10), tidak menawarkan fitur yang belum tersedia, dan tidak menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya. Business Development bernegosiasi hanya dalam batas harga dan diskon yang sudah disetujui.",
+  "4.11 Business Development tidak mengubah pricing sendiri, tidak memberi diskon tanpa persetujuan (butir 4.10), tidak menawarkan fitur yang belum tersedia, dan tidak menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya. Dalam negosiasi, Business Development memahami concern customer, menjaga value solusi, dan bernegosiasi hanya dalam batas harga dan diskon yang sudah disetujui.",
   "4.12 Komunikasi dengan customer memakai bahasa yang profesional, jelas, dan berorientasi pada solusi. Batas waktu respons ada di bagian 8.",
   "4.13 Business Development menjaga kerahasiaan data customer. Informasi customer, kontrak, dan harga berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3 (USULAN, karena SNX-ISMS-PRO-01 belum mencakup Commercial). Informasi RESTRICTED dibagikan ke pihak luar hanya dengan NDA atau kontrak yang berlaku dan persetujuan pemilik informasi (SNX-ISMS-PRO-01 butir 4.10).",
-  "4.14 Legal & Compliance mereview draf kontrak sebelum ditandatangani, dan menyiapkan atau mereview NDA bila NDA diperlukan sebelum informasi RESTRICTED dibagikan. Titik waktu keterlibatan Legal & Compliance ini berstatus (USULAN) karena SOP sumber hanya menyebut lingkup kolaborasinya.",
-  "4.15 Closing berhasil bila PO diterima, kontrak ditandatangani, dan persetujuan internal selesai. Project kick-off dimulai sesudah Service Delivery Manager menerima paket handover (SNX-OPS-SOP-01 butir 4.1); penempatan kick-off sesudah handover berstatus (USULAN), karena SOP sumber memasukkan kick-off atau implementasi ke dalam syarat closing.",
+  "4.14 Legal & Compliance mereview draf kontrak sebelum ditandatangani, dan menyiapkan atau mereview NDA bila NDA diperlukan sebelum informasi RESTRICTED dibagikan. Titik waktu keterlibatan ini berstatus (USULAN).",
+  "4.15 Closing berhasil bila PO diterima, kontrak ditandatangani, dan persetujuan internal selesai. Project kick-off dimulai sesudah Service Delivery Manager menerima paket handover (SNX-OPS-SOP-01 butir 4.1). Penempatan kick-off sesudah handover berstatus (USULAN).",
   "4.16 Business Development memastikan seluruh dokumen closing lengkap sebelum handover. Handover meeting dilakukan sebelum implementasi dimulai, dan paket handover memuat minimal Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person.",
   "4.17 Sesudah implementasi, Business Development tetap bertanggung jawab atas relationship management, upselling, cross-selling, renewal, dan customer satisfaction. Langkah account management berada di luar scope SOP ini.",
   "4.18 Business Development dievaluasi berdasarkan Activity KPI (Pipeline Generation, Customer Engagement, CRM Discipline), Performance KPI (Revenue Achievement, Qualified Opportunities, Win Rate, Forecast Accuracy), dan Customer KPI (Customer Satisfaction, Renewal Rate). Target tiap KPI tidak ada di SOP ini.",
-  "4.19 Penetapan pelaku berikut berstatus (USULAN) karena SOP sumber tidak menyebut pelakunya: VP Commercial melakukan review internal proposal (butir 6.4), meninjau pipeline, forecast, dan opportunity, serta menerima laporan Business Development (bagian 8); VP Commercial menyimpan rekaman review internal, rekomendasi, dan persetujuan harga dan diskon (bagian 11), dan menyerahkan paket handover atas nama Commercial (butir 6.8); Legal & Compliance menyimpan NDA dan hasil review kontrak (bagian 11); Business Development melengkapi paket handover yang ditolak (bagian 9).",
+  "4.19 Penetapan pelaku berikut berstatus (USULAN): VP Commercial melakukan review internal proposal (butir 6.4), meninjau pipeline, forecast, dan opportunity, serta menerima laporan Business Development (bagian 8); VP Commercial menyimpan rekaman review internal, rekomendasi, dan persetujuan harga dan diskon (bagian 11), dan menyerahkan paket handover atas nama Commercial (butir 6.8); Legal & Compliance menyimpan NDA dan hasil review kontrak (bagian 11); Business Development melengkapi paket handover yang ditolak (bagian 9).",
   "4.20 Personel Commercial mematuhi SOP ini, dan kepatuhan menjadi bagian dari evaluasi kinerja dan probation. Penyimpangan dari prosedur memerlukan persetujuan VP Commercial atau pihak yang berwenang."
  ],
  "roles": [
   [
    "Business Development",
-   "Menjalankan proses di bagian 6 dari prospecting sampai handover meeting, dan mencatat setiap tahap di CRM (butir 4.3). Dipetakan dari Sales dan Sales Executive di SOP sumber (USULAN).",
+   "Menjalankan proses di bagian 6 dari prospecting sampai handover meeting, dan mencatat setiap tahap di CRM (butir 4.3). Jabatan ini memegang peran Sales dan Sales Executive (USULAN).",
    "Bernegosiasi dalam batas harga dan diskon yang disetujui; mengeskalasi diskon dan scope yang belum disetujui (butir 4.11). Tidak mengubah harga sendiri."
   ],
   [
@@ -154,7 +154,7 @@
   ],
   [
    "Manager of Product Tech",
-   "Memberi technical discussion, solution design, dukungan demo, dan dukungan RFP. Dipetakan dari Presales di SOP sumber (USULAN).",
+   "Memberi technical discussion, solution design, dukungan demo, dan dukungan RFP. Jabatan ini memegang peran Presales (USULAN).",
    "Memberi rekomendasi kelayakan teknis."
   ],
   [
@@ -164,7 +164,7 @@
   ],
   [
    "Service Delivery Manager",
-   "Mengonfirmasi timeline dan scope proposal, mengikuti handover meeting, dan menerima atau menolak paket handover (SNX-OPS-SOP-01 butir 4.1). Dipetakan dari Delivery di SOP sumber (USULAN); jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01.",
+   "Mengonfirmasi timeline dan scope proposal, mengikuti handover meeting, dan menerima atau menolak paket handover (SNX-OPS-SOP-01 butir 4.1). Jabatan ini menerima handover di Delivery (USULAN) dan merupakan jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01.",
    "Memutuskan paket handover diterima atau ditolak."
   ],
   [
@@ -248,9 +248,14 @@
      "Masukan teknis untuk presentasi dan demo"
     ],
     [
-     "Tentukan agenda demo yang menjawab kebutuhan customer, dan jelaskan business context kepada customer.",
+     "Tentukan agenda demo yang menjawab kebutuhan customer.",
      "Business Development",
      "Agenda demo"
+    ],
+    [
+     "Jelaskan business context kepada customer pada demo.",
+     "Business Development",
+     "Meeting Notes demo di CRM"
     ],
     [
      "Dokumentasikan feedback customer atas demo.",
@@ -333,7 +338,7 @@
    "title": "Negosiasi",
    "steps": [
     [
-     "Negosiasikan dengan customer hanya dalam batas harga dan diskon yang disetujui, dan jaga value solusi.",
+     "Negosiasikan dengan customer hanya dalam batas harga dan diskon yang disetujui (butir 4.11).",
      "Business Development",
      "Concern customer dan status negosiasi di CRM"
     ],
@@ -393,9 +398,9 @@
      "Kontrak ditandatangani"
     ],
     [
-     "Perbarui Closing Status dan Sales Stage (Win atau Lost) sesuai butir 4.15.",
+     "Ubah Closing Status dan Sales Stage menjadi Win sesuai butir 4.15.",
      "Business Development",
-     "Closing Status dan Sales Stage terbarui di CRM"
+     "Closing Status dan Sales Stage Win di CRM"
     ],
     [
      "Periksa kelengkapan seluruh dokumen closing sebelum handover (butir 4.16).",
@@ -731,7 +736,7 @@
   ]
  ],
  "iso_refs": {
-  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan).",
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan).",
   "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang di organisasi), untuk tabel peran dan wewenang harga di butir 4.10; 7.5.3 (Pengendalian informasi terdokumentasi), untuk pencatatan di CRM di butir 4.3; 8.2.1 (Komunikasi dengan customer), untuk butir 6.5 dan batas waktu respons di bagian 8; 8.2.2 (Penentuan persyaratan untuk produk dan jasa), untuk discovery meeting di butir 6.3; 8.2.3 (Tinjauan persyaratan untuk produk dan jasa), untuk qualification, review internal, dan persetujuan harga sebelum proposal dikirim di butir 4.6 dan 4.9.",
   "ISO/IEC 27001:2022": "Annex A 5.12 (Klasifikasi informasi), untuk butir 4.13; Annex A 5.14 (Transfer informasi), untuk pembagian informasi RESTRICTED dengan NDA di butir 4.13 dan 4.14; Annex A 5.34 (Privasi dan perlindungan PII), untuk kerahasiaan data customer di butir 4.13."
  }

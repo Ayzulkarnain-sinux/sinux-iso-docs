@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 5, baris Service Delivery Manager",
+      "masalah": "Butir sweep 2 sudah dikerjakan, tetapi kalimat penggantinya tidak sejajar dengan dua baris lain ('Jabatan ini memegang peran Presales/Sales dan Sales Executive'). Kalimat ini mengulang isi kalimat pertama (menerima atau menolak paket handover) dan memakai 'jabatan' sebagai pelaku 'menerima'. Pemetaan peran Delivery di Sales SOP (Project handover, Timeline confirmation, Scope clarification) tidak lagi tersurat. Tidak ada fakta baru, karena Delivery didefinisikan di tabel Definisi.",
+      "bukti": "Sesudah: \"Jabatan ini menerima handover di Delivery (USULAN) dan merupakan jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01.\" Usul: \"Jabatan ini memegang peran Delivery (USULAN) dan merupakan jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01.\""
+    },
+    {
+      "lokasi": "Butir 4.11",
+      "masalah": "Untuk memecah langkah 6.6.1, penyusun cukup memindahkan 'jaga value solusi' ke 4.11. Ia juga menambahkan 'memahami concern customer'. Tambahan ini punya dasar di Sales SOP Stage 7 dan sudah ada di keluaran langkah 6.6.1 ('Concern customer dan status negosiasi di CRM'), jadi bukan fakta baru. Akibatnya kalimat itu sekarang berisi kelompok tiga.",
+      "bukti": "Sesudah: \"Dalam negosiasi, Business Development memahami concern customer, menjaga value solusi, dan bernegosiasi hanya dalam batas harga dan diskon yang sudah disetujui.\" Sumber 19Hex8udn1JDG4NKY7hZaODjroHeHwMM0 Stage 7: \"Sales bertanggung jawab: Memahami concern customer. Menjaga value solusi. Tidak memberikan diskon tanpa approval.\""
+    },
+    {
+      "lokasi": "Butir 6.7 langkah 6; butir 4.7",
+      "masalah": "Sekarang tidak ada langkah di bagian 6 yang mencatat Lost. Status Lost hanya muncul di aturan 4.7. Ini sesuai butir sweep 1, dan tempat pencatatan Lost sudah tercatat sebagai open item 4 di notes. Hanya informasi.",
+      "bukti": "Sesudah: \"6. Ubah Closing Status dan Sales Stage menjadi Win sesuai butir 4.15.\"; 4.7: \"status Win atau Lost saat hasil closing pasti\"."
+    },
+    {
+      "lokasi": "Bagian 11, Dokumen terkait (COM-SOP-02, COM-FRM-01, COM-FRM-02)",
+      "masalah": "Di luar butir sweep, jadi bukan kelalaian. Masih ada frasa bernuansa proses penyusunan. Penyusun sudah menyebutnya di notes bagian Sweep sebagai bahan putaran berikutnya.",
+      "bukti": "\"Project Handover Record; judul menurut daftar dokumen SINUX, isi belum dikonfirmasi.\""
+    }
+  ]
+}

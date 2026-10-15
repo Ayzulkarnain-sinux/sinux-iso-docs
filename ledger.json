@@ -5,7 +5,7 @@
  "started_at": "2026-10-14T19:01:00Z",
  "current_wave": "W7",
  "last_guide_seen": 0,
- "watchdog_trigger_id": "trig_01RBVjRrymMTgNFkNkymM1wz",
+ "watchdog_trigger_id": "trig_019ozEXtQHFx15RYPLaPZBrG",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -184,7 +184,7 @@
    "dept": "HR",
    "action": "T1",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-JA-01",
    "out_path": "out/01_Struktur_Jobdesc/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx",
    "sources": [
@@ -212,7 +212,7 @@
     "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu.",
     "Garis lapor JA-14 (HR Manager) belum seragam dengan bagan HR-ORG-01; selaraskan saat konfirmasi K-04 (owner atau Aziz)."
    ],
-   "updated_at": "2026-10-15T00:38:06Z",
+   "updated_at": "2026-10-15T00:39:57Z",
    "pen_agent": "ac936bff4d35bd19b",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -799,7 +799,7 @@
    "dept": "COM",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-COM-SOP-01",
    "out_path": "out/05_Commercial/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx",
    "sources": [
@@ -819,7 +819,7 @@
    "loops": 0,
    "usulan_count": 14,
    "open_items": [],
-   "updated_at": "2026-10-15T00:37:45Z",
+   "updated_at": "2026-10-15T00:40:23Z",
    "pen_agent": "ae9eceecd747b5a2d",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2385,7 +2385,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-FRM-02",
    "out_path": "out/03_FAT/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2400,7 +2400,7 @@
    "loops": 1,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": "2026-10-15T00:38:05Z",
+   "updated_at": "2026-10-15T00:39:30Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "adee81774ba4f9731"
@@ -2622,6 +2622,10 @@
   {
    "at": "2026-10-14T23:50Z",
    "event": "checkpoint W6: deleted trig_016gtk8gvGiD669oTp8YERqR, new trig_01RBVjRrymMTgNFkNkymM1wz fires 2026-10-15T00:35Z"
+  },
+  {
+   "at": "2026-10-15T00:39Z",
+   "event": "trig_01RBVjRrymMTgNFkNkymM1wz fired while active; new trig_019ozEXtQHFx15RYPLaPZBrG fires 01:24Z"
   }
  ],
  "retractions": [
