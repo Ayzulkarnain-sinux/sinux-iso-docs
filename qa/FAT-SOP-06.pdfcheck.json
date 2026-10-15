@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS",
+  "pages": 12,
+  "checks": {
+    "A": "ok: sampul 3 baris tengah (STANDARD OPERATIONAL PROCEDURE / DEPARTMENT FINANCE, ACCOUNTING & TAX / Accounting and Financial Report), 'No : SNX-FAT-SOP-06' = Document Number, 'Diterbitkan oleh' + PT STRATEGI INTEGRASI NUSANTARA, header logo SINUX + kontak, footer alamat + 'Page/ Halaman - 1'",
+    "B": "ok: disclaimer ada, label urut sama dengan acuan (Company Name s.d. Review Period + baris kosong seperti acuan), nilai terisi, Effective Date kosong, Status Draft, Classification INTERNAL",
+    "C": "ok: Revision History baris 00 berdeskripsi ('Draft awal untuk review dan pengesahan'); Approval 3 baris terisi (Finance Staff, Finance Lead, Samuel Kristanto Utomo / President Director); kolom Signature kosong",
+    "D": "ok: daftar isi (Preliminary Section, 1-11, 6.1-6.5) cocok dengan heading di isi",
+    "E": "ok: 11 heading bernomor berurutan PURPOSE s.d. RELATED DOCUMENTS & ATTACHMENTS, semua bagian berisi; diagram bagian 7 terbaca di 110 dpi, tidak terpotong, caption 'Gambar 1. ...' ada",
+    "F": "ok: semua tabel ber-header, sel isi terisi, tidak ada teks sel terpotong, tidak ada kata dipecah per huruf (hanya pemenggalan kode di tanda hubung, lihat nonblocking)",
+    "H": "ok: footer tanpa label klasifikasi (dokumen INTERNAL); nomor halaman 1-12 berurutan",
+    "I": "ok: font LiberationSans (Regular/Bold/Italic/BoldItalic) identik dengan acuan, nol placeholder [..], nol teks instruksi template, tidak ada halaman kosong",
+    "J": "ok: urutan halaman pembuka (sampul, Identity, Revision/Approval, TOC), gaya heading, gaya tabel, posisi header/footer sama dengan acuan"
+  },
+  "blocking": [],
+  "nonblocking": [
+    "Hal 7: header tabel 6.1 yatim di dasar halaman, baris isinya di hal 8",
+    "Tabel pecah antarhalaman: Definition & Abbreviations (hal 5-6, istilah 'Chart of Accounts (CoA)' terbelah), Rekaman (hal 11-12, sel 'Folder Google Drive Departemen FAT' terbelah)",
+    "Kode dipenggal di tanda hubung dalam sel sempit: 'SNX-ISMS-PRO-/01' (hal 11), 'SNX-/FAT-SOP-04' (hal 12); kolom 'Lokasi simpan dan pemilik' sempit sehingga sel tinggi",
+    "Rata kanan-kiri di sel tabel memberi spasi lebar (hal 7 tabel Roles, hal 8 'Periode akuntansi bulan itu tertutup', hal 12 'Menunggu penetapan Finance Lead'); pola yang sama ada di acuan",
+    "Approval baris 1-2 hanya berisi jabatan (Finance Staff / Finance Lead), tanpa nama orang",
+    "Diagram bagian 7 berupa alur linear tanpa swimlane (acuan memakai swimlane per peran) dan tidak menggambarkan cabang pengembalian di bagian 9; diagram sedikit rata kiri, tidak di tengah",
+    "Isi: butir 4.9 menyebut rekaman RESTRICTED (Internal) sementara Classification dokumen INTERNAL; footer tanpa label konsisten dengan INTERNAL"
+  ]
+}

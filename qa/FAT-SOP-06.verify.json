@@ -1,0 +1,41 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 4 butir 4.6",
+      "masalah": "Butir kebijakan berisi catatan kekurangan dokumen sendiri ('bagian 6 belum memuat langkah untuk tutup buku tahunan, ekualisasi ..., dan pencatatan aset tetap'). Scope bagian 2 menjanjikan aset tetap, ekualisasi, dan tutup buku tahunan tanpa langkah di bagian 6. Kriteria Description (pencatatan hingga penyusunan laporan keuangan) tetap terpenuhi oleh butir 6.1 sampai 6.5; celah ini dari sumber (Tujuan 2 dan Ruang Lingkup III.3, III.4 tanpa baris di tabel IV), berlabel USULAN dan tercatat sebagai open item 1 di notes.",
+      "bukti": "Sumber tabel IV hanya 5 baris: Input Jurnal, Kategorisasi, Rekonsiliasi Bank, Review Laporan, Closing Bulanan. Dokumen: '4.6 Cakupan tanpa langkah rinci: bagian 6 belum memuat langkah ... sebelum SOP ini disahkan (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 11 tabel rekaman, baris Fixed Asset Register",
+      "masalah": "Rekaman Fixed Asset Register dicantumkan tanpa langkah di bagian 6 yang menghasilkannya dan tanpa pemilik; konsekuensi dari celah 4.6.",
+      "bukti": "'Fixed Asset Register | Lokasi dan pemilik menunggu penetapan Finance Lead (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 3 definisi 'Jurnal penyesuaian' vs butir 4.5",
+      "masalah": "Definisi membatasi jurnal penyesuaian pada accrual, prepaid expense, dan deferred revenue, sedangkan 4.5 memasukkan penyusutan aset tetap dan amortisasi software. Istilah tidak sepenuhnya konsisten (RUNBOOK 6a butir 7).",
+      "bukti": "Definisi: 'Jurnal akhir periode untuk accrual, prepaid expense, dan deferred revenue.' 4.5: 'jurnal penyesuaian ... atas beban gaji yang masih harus dibayar, penyusutan aset tetap (server dan hardware), amortisasi software, serta utang dan piutang pajak'."
+    },
+    {
+      "lokasi": "Butir 6.2 judul dan langkah 1",
+      "masalah": "Sinonim berganti untuk satu kegiatan: judul 'Kategorisasi', langkah dan diagram 'Klasifikasikan'/'Klasifikasi'. Keduanya berasal dari sumber, tetapi satu istilah cukup.",
+      "bukti": "Judul 'Kategorisasi dan pengelolaan CoA'; langkah 'Klasifikasikan tiap transaksi pada akun CoA yang sesuai.'; sumber 'Kategorisasi - Klasifikasi dan Pengelolaan Chart of Account'."
+    },
+    {
+      "lokasi": "Butir 6.3 langkah 1",
+      "masalah": "Kata benda dipakai sebagai perintah; 'Rekonsiliasikan' atau 'Cocokkan' lebih tepat.",
+      "bukti": "'Rekonsiliasi jurnal kas dan bank dengan bank statement.'"
+    },
+    {
+      "lokasi": "Bagian 8 SLA baris 6.4 dan 6.5",
+      "masalah": "Batas '2 hari' tanpa titik awal hitung (dari akhir bulan atau dari selesainya langkah sebelumnya). Angka cocok sumber; titik awal tidak ada di sumber dan sudah menjadi open item 3 di notes.",
+      "bukti": "Sumber: 'Review Laporan ... 2 days | Lead', 'Closing Bulanan ... 2 days | Lead'. Dokumen: 'Review dan jurnal penyesuaian (butir 6.4) | Finance Lead | 2 hari'."
+    },
+    {
+      "lokasi": "Seluruh dokumen (verifikasi fakta)",
+      "masalah": "Catatan positif, bukan cacat: semua angka waktu (1, 1, 3, 2, 2 hari; setiap awal minggu), dasar accrual basis dan SAK, empat jenis Laporan Keuangan, penerima laporan, PPN/PPh 21/PPh 22, dan daftar jurnal penyesuaian cocok sumber; nomor SNX-FAT-SOP-01/04/05 dan SNX-FAT-FRM-02 cocok worklist dan ledger promoted; 'dalam peninjauan' cocok checklist 'on review' baris 24 dan 25; 'K-13' dan 'delegasi ... tertulis yang berlaku' ada di SNX-HR-ORG-01; penanda tangan persis config/defaults.json FAT; peran bagian 5 sama dengan PIC bagian 6, 8, dan diagram; nol en-dash, em-dash, rujukan internal AI, dan residu konsultan; context/audit tidak punya catatan untuk fileId ini dan notes menjelaskannya (D1 sampai D13).",
+      "bukti": "Sumber 18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs dibaca via read_file_content; grep fileId di context/audit/*.md nol baris; qa/FAT-SOP-06.lint.json pass true."
+    }
+  ]
+}
