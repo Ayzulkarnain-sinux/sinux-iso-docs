@@ -20,8 +20,8 @@ Kebenaran keadaan: `python3 -I reports/orch/w10.py status` (gate + qa per KEY), 
 - "ulang residu": izin putaran ke-3 untuk dokumen residu (lihat daftar di bawah). Tanpa izin, residu tetap bed1bb6.
 
 ## Sisa kerja (urutan)
-1. Sapuan SOP sisa: HR-SOP-08, 10, 11, 12 (selaraskan batas rotasi/mutasi dengan HR-SOP-13); FAT-SOP-04, 05, 06; COM-SOP-01, 02. LEG-SOP-01..03 sedang disunting.
-2. Audit pointer retroaktif (task #5): `w10.py ptrlist KEY` untuk docx yang lolos sebelum gerbang audit pointer (~08:24Z); lengkapi atau catat "### W10 audit pointer", rebuild, commit.
+1. Sapuan SOP sisa (08:55Z): HR-SOP-08/10/11/12 dan FAT-SOP-04/05/06 build pass, pemeriksa buta berjalan. COM-SOP-01, 02 belum disunting (luncurkan penyusun saat slot kosong). LEG-SOP-01..03 dan ISMS-SOP-02..05 lolos, di-push.
+2. Audit pointer retroaktif (task #5, prompt /tmp/claude-0/w10/prompts/AUDIT.md): selesai dan di-push untuk OPS-PRC-01, OPS-FRM-06, HR-JA-01, HR-FRM-01, HR-FRM-02, HR-RPT-01, HR-SOP-13, COM-FRM-01, COM-FRM-02, FAT-FRM-01, LEG-FRM-01, LEG-FRM-03, LEG-REG-01..03, LEG-RPT-02. Agen mengaudit COM-REG-01, MKT-REG-01, FAT-RPT-02. Sisa: FAT-SOP-01. Spec yang diubah audit (rujukan dikembalikan, diverifikasi worker, bukan pemeriksa buta): HR-SOP-13 policy[2], LEG-REG-01 petunjuk 9, LEG-RPT-02 petunjuk 5.
 3. Penutupan: selftest; lint/OOXML/blankscan semua; refcheck2 (keluaran ke reports/w10); metascan; w10_grepgate; modifiedTime 54 sumber ulang; w8.py (Master List + USULAN-OPEN); Laporan_Run bagian "Perubahan ISO-W10"; reports/REVIEW-W10.md (tabel per gerbang, residu bernama, 3 contoh sebelum/sesudah per departemen, GAP, OPEN DECISION, RESIDUAL RISK, retraksi/insiden); ledger current_wave W10-DONE; hapus watchdog (ledger.watchdog_trigger_id); commit "ISO W10 penutupan"; HANDOFF 4 blok.
 
 ## Catatan untuk REVIEW-W10 (dikumpulkan sepanjang run)
@@ -30,3 +30,6 @@ Kebenaran keadaan: `python3 -I reports/orch/w10.py status` (gate + qa per KEY), 
 - Label "sedang dalam peninjauan" (G-3) menjadi "sedang dalam review" seragam; MKT-REG-01 nilai status "Dalam Peninjauan" -> "Dalam Review" (OPEN DECISION LEAD).
 - Insiden: batas 3 subagen sempat terlampaui (~08:21Z, dihentikan, tanpa perubahan berkas); agen MKT menjalankan git hanya-baca; stempel waktu taksiran dibetulkan.
 - Paragraf badan rata kiri-kanan berasal dari template (STYLE hanya mengatur sel); widths_cm generic tidak selalu dihormati LibreOffice (tblLayout autofit).
+- Skrip istilah "lewat" bermakna "terlampaui": kejadian ketiga di HR-SOP-11 SLA ("batas tanggapan melalui"), dibetulkan penyusun.
+- Insiden: penyusun LEG-SOP menjalankan git hanya-baca (dilaporkan sendiri). Penyusun HR menjalankan build HR-SOP-13 (spec tetap) sehingga out/ dan gate dirender ulang; gate gagal karena audit pointer belum ada, diselesaikan audit retroaktif.
+- HR-SOP-08 tata letak 17 halaman rapuh (satu suntingan uji memicu halaman kosong). FAT-SOP-04 keterangan Gambar 1 dipendekkan, isi dipindah ke label node.
