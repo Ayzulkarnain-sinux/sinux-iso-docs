@@ -437,5 +437,338 @@
    "diukur": "2026-10-14T09:11:45.648Z",
    "sama": true
   }
- ]
+ ],
+ "ukur_ulang_penutupan": {
+  "diukur_at": "2026-10-15T04:42Z",
+  "kanal": "Google Drive get_file_metadata (baca saja), subagen hanya baca; dicocokkan ulang orkestrator",
+  "jumlah": 54,
+  "sama": 54,
+  "beda": [],
+  "rows": [
+   {
+    "fileId": "1JoSiwoMglIxy7Ic3t0EhRfvzJgf5ydzT",
+    "ledger": "2026-10-13T06:09:01Z",
+    "diukur": "2026-10-13T06:09:01Z",
+    "sama": true
+   },
+   {
+    "fileId": "1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1",
+    "ledger": "2026-10-13T10:34:44.783Z",
+    "diukur": "2026-10-13T10:34:44.783Z",
+    "sama": true
+   },
+   {
+    "fileId": "1bn7EHpmUm2DL7ZJVg284KzCLEQrfPBGv",
+    "ledger": "2026-10-13T09:06:27.051Z",
+    "diukur": "2026-10-13T09:06:27.051Z",
+    "sama": true
+   },
+   {
+    "fileId": "1FaPdUww5zNl0O9ZyYg2_Z2nCoU7QMsEg",
+    "ledger": "2026-09-05T15:48:26Z",
+    "diukur": "2026-09-05T15:48:26Z",
+    "sama": true
+   },
+   {
+    "fileId": "1Mv6TuLy8QsllpA4YTTjmNg7Hsur4yWiL",
+    "ledger": "2026-10-13T10:54:32.072Z",
+    "diukur": "2026-10-13T10:54:32.072Z",
+    "sama": true
+   },
+   {
+    "fileId": "1dOku3703JwQCVeC39tl9x6k0FMa4f3nW",
+    "ledger": "2026-10-13T10:54:34.881Z",
+    "diukur": "2026-10-13T10:54:34.881Z",
+    "sama": true
+   },
+   {
+    "fileId": "15GrP-ihMm6MC5szQqlAgGlmWjnQ5TmH0",
+    "ledger": "2026-10-13T06:09:03Z",
+    "diukur": "2026-10-13T06:09:03Z",
+    "sama": true
+   },
+   {
+    "fileId": "1U8CAdibwBk9x_-Aic2lbev144d6WReTz",
+    "ledger": "2026-10-13T09:06:40.151Z",
+    "diukur": "2026-10-13T09:06:40.151Z",
+    "sama": true
+   },
+   {
+    "fileId": "1lv4ALJnqGG9s9cHnzz38yOTJC57pmPgo",
+    "ledger": "2026-10-13T06:09:03Z",
+    "diukur": "2026-10-13T06:09:03Z",
+    "sama": true
+   },
+   {
+    "fileId": "15FTuu06HTHoF-Vi0qzqvwmfQH5tEdT63",
+    "ledger": "2026-10-13T06:09:04Z",
+    "diukur": "2026-10-13T06:09:04Z",
+    "sama": true
+   },
+   {
+    "fileId": "10odQYr4B2cyaAX9Z98EKxv4HUjgwIoYc",
+    "ledger": "2026-10-13T06:09:04Z",
+    "diukur": "2026-10-13T06:09:04Z",
+    "sama": true
+   },
+   {
+    "fileId": "1p9vcA1Sj6xHIbpuIS1Lb8uBTisv2WeuG",
+    "ledger": "2026-10-13T06:09:04Z",
+    "diukur": "2026-10-13T06:09:04Z",
+    "sama": true
+   },
+   {
+    "fileId": "1S4RFEDaTYU9mZYWjHHbYBfo8SRgBAq9-",
+    "ledger": "2026-10-13T06:09:05Z",
+    "diukur": "2026-10-13T06:09:05Z",
+    "sama": true
+   },
+   {
+    "fileId": "1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io",
+    "ledger": "2026-10-13T06:09:00Z",
+    "diukur": "2026-10-13T06:09:00Z",
+    "sama": true
+   },
+   {
+    "fileId": "1MApsp9RPPMO1Xottjb2fGQJlaQas2M99",
+    "ledger": "2026-10-13T06:09:00Z",
+    "diukur": "2026-10-13T06:09:00Z",
+    "sama": true
+   },
+   {
+    "fileId": "1z6y_n2i6cTN6C1y7alJsCasuy9hU6Qzc",
+    "ledger": "2026-10-13T06:09:01Z",
+    "diukur": "2026-10-13T06:09:01Z",
+    "sama": true
+   },
+   {
+    "fileId": "1L6fR1mUiCePwKjyrpSPOrCz-6FpJbDpg",
+    "ledger": "2026-10-13T06:09:01Z",
+    "diukur": "2026-10-13T06:09:01Z",
+    "sama": true
+   },
+   {
+    "fileId": "160t8vg9Eb_ItxjLuWxLG17OIAKpxSsKC",
+    "ledger": "2026-10-13T06:09:02Z",
+    "diukur": "2026-10-13T06:09:02Z",
+    "sama": true
+   },
+   {
+    "fileId": "1vwD5tORDQNQ7SNaQ6w4KitPKTcsw9ZVX",
+    "ledger": "2026-10-13T06:09:00Z",
+    "diukur": "2026-10-13T06:09:00Z",
+    "sama": true
+   },
+   {
+    "fileId": "1sZfTBx1ZxBIryhzJHf14eOcRR7HuQ1E1Qox3DdwmHKI",
+    "ledger": "2026-10-14T08:06:56.942Z",
+    "diukur": "2026-10-14T08:06:56.942Z",
+    "sama": true
+   },
+   {
+    "fileId": "1iMKby6u4X8MYyGlrC5qz73D0y2anOv87",
+    "ledger": "2026-10-13T11:17:33.562Z",
+    "diukur": "2026-10-13T11:17:33.562Z",
+    "sama": true
+   },
+   {
+    "fileId": "19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb",
+    "ledger": "2026-10-13T10:54:39.480Z",
+    "diukur": "2026-10-13T10:54:39.480Z",
+    "sama": true
+   },
+   {
+    "fileId": "1E_8SkaHZo8txljia4JhWjRHakimojRCpwivZzrPyamE",
+    "ledger": "2026-10-14T09:08:19.129Z",
+    "diukur": "2026-10-14T09:08:19.129Z",
+    "sama": true
+   },
+   {
+    "fileId": "19Hex8udn1JDG4NKY7hZaODjroHeHwMM0",
+    "ledger": "2026-10-05T07:08:41.814Z",
+    "diukur": "2026-10-05T07:08:41.814Z",
+    "sama": true
+   },
+   {
+    "fileId": "16TIN9Tsv_sBXMrL4KHeO8f6Ao0F-KsAS",
+    "ledger": "2026-10-05T07:10:01.246Z",
+    "diukur": "2026-10-05T07:10:01.246Z",
+    "sama": true
+   },
+   {
+    "fileId": "1i2JaRaQolbKxKL9HjDao2s4F0bzma9-Z",
+    "ledger": "2026-10-13T11:34:27.275Z",
+    "diukur": "2026-10-13T11:34:27.275Z",
+    "sama": true
+   },
+   {
+    "fileId": "12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0",
+    "ledger": "2026-10-14T10:26:59.642Z",
+    "diukur": "2026-10-14T10:26:59.642Z",
+    "sama": true
+   },
+   {
+    "fileId": "1q0cl8mLlUDJ-7nvnzozSbjJhE46-Jk-3",
+    "ledger": "2026-10-13T06:09:12Z",
+    "diukur": "2026-10-13T06:09:12Z",
+    "sama": true
+   },
+   {
+    "fileId": "1XvfQ5yYx4H8Y-rgJUKyngfZfn7909L2D",
+    "ledger": "2026-10-13T06:09:14Z",
+    "diukur": "2026-10-13T06:09:14Z",
+    "sama": true
+   },
+   {
+    "fileId": "147U5gBLjtLKHau5cQbLUym8iInh2b_RR",
+    "ledger": "2026-10-13T06:09:02Z",
+    "diukur": "2026-10-13T06:09:02Z",
+    "sama": true
+   },
+   {
+    "fileId": "1u5P_nturbvTvvi3hSrCy3ZfAIyiXCqWZ",
+    "ledger": "2026-10-13T06:09:17Z",
+    "diukur": "2026-10-13T06:09:17Z",
+    "sama": true
+   },
+   {
+    "fileId": "1mTi4unyn2xST8h_ChsS_2w1xTWzSBROs",
+    "ledger": "2026-10-13T06:09:19Z",
+    "diukur": "2026-10-13T06:09:19Z",
+    "sama": true
+   },
+   {
+    "fileId": "1BPtjct3hNbhlUILJ7FTm4EX-_Vhk-KUb",
+    "ledger": "2026-10-13T06:09:02Z",
+    "diukur": "2026-10-13T06:09:02Z",
+    "sama": true
+   },
+   {
+    "fileId": "1jrnarc0yyoZhx2MLACZePMNEe0-jb3ZB",
+    "ledger": "2026-10-13T06:09:21Z",
+    "diukur": "2026-10-13T06:09:21Z",
+    "sama": true
+   },
+   {
+    "fileId": "1E0-sXiP8r-lS34-PVvt3RYRT04O56Lnz",
+    "ledger": "2026-10-13T06:09:23Z",
+    "diukur": "2026-10-13T06:09:23Z",
+    "sama": true
+   },
+   {
+    "fileId": "14o0dFUVZU-ieDbrLFQXTzwmNIL4SAftF",
+    "ledger": "2026-10-13T06:09:25Z",
+    "diukur": "2026-10-13T06:09:25Z",
+    "sama": true
+   },
+   {
+    "fileId": "1XFMQDye_WWWomRpwmT6KGMRdi4EVbRsS",
+    "ledger": "2026-10-13T06:09:03Z",
+    "diukur": "2026-10-13T06:09:03Z",
+    "sama": true
+   },
+   {
+    "fileId": "1rSuMH8wK5BTGUHLm8KjGig1LZOKWcECO",
+    "ledger": "2026-10-13T06:09:47Z",
+    "diukur": "2026-10-13T06:09:47Z",
+    "sama": true
+   },
+   {
+    "fileId": "1mMx6v0UhAWMQU6I6rAfsZz20nsjv-FkP",
+    "ledger": "2026-10-13T06:09:35Z",
+    "diukur": "2026-10-13T06:09:35Z",
+    "sama": true
+   },
+   {
+    "fileId": "1skCiIY43Vz6qfT71vEKz55EZFGHVCl4Q",
+    "ledger": "2026-10-13T06:09:37Z",
+    "diukur": "2026-10-13T06:09:37Z",
+    "sama": true
+   },
+   {
+    "fileId": "1NdkQrRWevHXuH9thxmoTPsRIf0wNl-MJ",
+    "ledger": "2026-10-13T06:09:40Z",
+    "diukur": "2026-10-13T06:09:40Z",
+    "sama": true
+   },
+   {
+    "fileId": "14JtND6eqCuvufrVoPDzKJyrHp4eQsGjT",
+    "ledger": "2026-10-13T06:09:42Z",
+    "diukur": "2026-10-13T06:09:42Z",
+    "sama": true
+   },
+   {
+    "fileId": "1J436lMZJSgowkEeMD6m45N70h7Go6_ZV",
+    "ledger": "2026-10-13T06:09:28Z",
+    "diukur": "2026-10-13T06:09:28Z",
+    "sama": true
+   },
+   {
+    "fileId": "1ILWYIkwaqe3SkpTsEPzY_IB-HMqCqui2",
+    "ledger": "2026-10-13T06:09:30Z",
+    "diukur": "2026-10-13T06:09:30Z",
+    "sama": true
+   },
+   {
+    "fileId": "1I0qEhkegW3w-k7YvTnKftqvUUbMg3rmg",
+    "ledger": "2026-10-13T06:09:33Z",
+    "diukur": "2026-10-13T06:09:33Z",
+    "sama": true
+   },
+   {
+    "fileId": "1a1hDz9zwdRHBAHaU9wALSdg66R4bD8mGD-86TyzJewk",
+    "ledger": "2026-10-13T10:52:13.121Z",
+    "diukur": "2026-10-13T10:52:13.121Z",
+    "sama": true
+   },
+   {
+    "fileId": "1lsdhtFZrf7bdckagXYtEXxmIyRw3jNw-28iXJpoTeaY",
+    "ledger": "2026-10-13T16:04:38.493Z",
+    "diukur": "2026-10-13T16:04:38.493Z",
+    "sama": true
+   },
+   {
+    "fileId": "1xU1pbum660ZzBCuTA5klCyAVK1iWonLCY0NOejqSlHg",
+    "ledger": "2026-10-13T16:07:51.089Z",
+    "diukur": "2026-10-13T16:07:51.089Z",
+    "sama": true
+   },
+   {
+    "fileId": "1m9mIkrMmiIY4TNmbV7j_rRuXKPUnfiK_EP80myS6lN8",
+    "ledger": "2026-10-13T16:56:19.285Z",
+    "diukur": "2026-10-13T16:56:19.285Z",
+    "sama": true
+   },
+   {
+    "fileId": "1ysIL0ytnspFGsYpSolSnuBpCG_MFE9IoiTJIhWfIIhA",
+    "ledger": "2026-10-14T03:20:20.270Z",
+    "diukur": "2026-10-14T03:20:20.270Z",
+    "sama": true
+   },
+   {
+    "fileId": "1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA",
+    "ledger": "2026-10-14T04:03:12.671Z",
+    "diukur": "2026-10-14T04:03:12.671Z",
+    "sama": true
+   },
+   {
+    "fileId": "18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs",
+    "ledger": "2026-10-14T10:51:01.134Z",
+    "diukur": "2026-10-14T10:51:01.134Z",
+    "sama": true
+   },
+   {
+    "fileId": "1Z9PXCiBgb8c13TGx8BG3ajlbxNEDWMg6KaSy0mi7ehQ",
+    "ledger": "2026-10-14T08:07:21.851Z",
+    "diukur": "2026-10-14T08:07:21.851Z",
+    "sama": true
+   },
+   {
+    "fileId": "1UqQ-hYKjAFNhevDwOoF59YQXLHjeFBR7UBHKoSA233k",
+    "ledger": "2026-10-14T09:11:45.648Z",
+    "diukur": "2026-10-14T09:11:45.648Z",
+    "sama": true
+   }
+  ]
+ }
 }

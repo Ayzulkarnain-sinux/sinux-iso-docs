@@ -1,0 +1,8 @@
+# Bukti nol staging dari worker ISO-W9 (2026-10-15T04:38:50Z)
+## Kanal 1: transkrip sesi utama dan semua subagen, panggilan submit_to_staging beserta input
+      1 "name":"mcp__SINUX_-_Knowledge_Base__submit_to_staging","input":{"request_id":"iso-run-20261015-final"
+subagen: 0 berkas
+(satu-satunya = paket W8 1982, 01.22 UTC, sebelum gaspol W9 02.31 UTC)
+## Kanal 2: ledger.json staging_final di 4a40352 dan di kerja sekarang
+{"request_id": "iso-run-20261015-final", "id": 1982, "status": "PENDING", "sensitivity": "restricted:commercial", "at": "2026-10-15T01:22Z", "based_on_commit": "01509a9"}
+{"request_id": "iso-run-20261015-final", "id": 1982, "status": "PENDING", "sensitivity": "restricted:commercial", "at": "2026-10-15T01:22Z", "based_on_commit": "01509a9"}

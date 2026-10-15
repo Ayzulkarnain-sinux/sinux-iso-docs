@@ -3,9 +3,9 @@
  "runbook": "v19-e",
  "defaults_version": "v22",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W9",
+ "current_wave": "W9-DONE",
  "last_guide_seen": 3,
- "watchdog_trigger_id": "trig_01Wn6C7j1PbvaATVhCsM98BQ",
+ "watchdog_trigger_id": "trig_014V6Z6BotM11mKfp3xUK4NM",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -171,11 +171,11 @@
    "open_items": [
     "Checklist kini menautkan berkas 1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0 yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
    ],
-   "updated_at": "2026-10-15T03:46:50Z",
+   "updated_at": "2026-10-15T04:21:42Z",
    "pen_agent": "aa06a366b15fbb9e5",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R3"
   },
   {
    "wl_index": 2,
@@ -795,11 +795,11 @@
    "open_items": [
     "Langkah persetujuan ulang Line Manager Legal sesudah revisi tidak ada di 6.6 (nonblocking verifikator); Legal konfirmasi."
    ],
-   "updated_at": "2026-10-15T03:48:10Z",
+   "updated_at": "2026-10-15T04:21:47Z",
    "pen_agent": "a8415089d8bd9e5d8",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R3"
   },
   {
    "wl_index": 19,
@@ -986,11 +986,11 @@
     "Sweep (c): r2 nonblocking, definisi divisi dan rotasi bertabrakan dengan HR-SOP-12 (NOC ke SOC bisa terbaca rotasi sekaligus mutasi)",
     "Residu mutu (sweep nonblocking): aturan Direktur Utama bagian 9 (U22) bertentangan dengan 4.3; label USULAN bergeser di bagian 9; NOC/SOC disebut divisi di sini tetapi unit kerja di HR-SOP-12"
    ],
-   "updated_at": "2026-10-15T03:47:16Z",
+   "updated_at": "2026-10-15T04:21:37Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R3"
   },
   {
    "wl_index": 25,
@@ -1189,13 +1189,14 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 1,
    "open_items": [],
    "updated_at": "2026-10-14T21:46:33Z",
    "pen_agent": "ac580ddd80ffb9367",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "w9": "B3 verifikasi isi (qa/OPS-FRM-03.verify.json, 0 blocking)"
   },
   {
    "wl_index": 31,
@@ -1427,14 +1428,15 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": "2",
    "open_items": [
     "Baris CONTOH AST-001 sampai AST-012 dikosongkan; ISMS-REG-02 dan REG-03 masih merujuk ID AST itu. Ops mengisi ulang register aset dengan ID yang sama atau memperbarui rujukan."
    ],
    "updated_at": "2026-10-14T22:02:10Z",
-   "pen_agent": "a60131729e520f4ef"
+   "pen_agent": "a60131729e520f4ef",
+   "w9": "B3 verifikasi isi (qa/ISMS-REG-01.verify.json, 0 blocking)"
   },
   {
    "wl_index": 40,
@@ -2429,7 +2431,7 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 1,
-   "usulan_count": 0,
+   "usulan_count": 9,
    "open_items": [
     "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
    ],
@@ -2480,7 +2482,7 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 1,
-   "usulan_count": 0,
+   "usulan_count": 9,
    "open_items": [
     "Sweep (b): butir Cara pakai tanpa pelaku; B20 tidak cocok dengan isi kolom Access Holder; B21 tanpa label USULAN"
    ],
@@ -2727,6 +2729,10 @@
   {
    "at": "2026-10-15T02:33Z",
    "event": "ISO-W9 start: new trig_01Wn6C7j1PbvaATVhCsM98BQ fires 03:19Z"
+  },
+  {
+   "at": "2026-10-15T04:43Z",
+   "event": "ISO-W9: watchdog dipasang ulang beberapa kali selama run (pesan tetap, +45 menit); id terakhir trig_014V6Z6BotM11mKfp3xUK4NM (jadwal 04:52Z) dihapus saat penutupan W9"
   }
  ],
  "retractions": [
@@ -2906,6 +2912,39 @@
      "ISMS-SOP-01"
     ]
    }
-  }
+  },
+  "refsem2": {
+   "workflow": "wf_a7212d4b-038",
+   "checked": 134,
+   "dijawab_pemeriksa": 130,
+   "diputus_orkestrator": [
+    "Q015",
+    "Q016",
+    "Q019",
+    "Q021",
+    "Q022",
+    "Q075"
+   ],
+   "hasil": "OK 98, salah tafsir mesin OK 36; vonis BASI Q016 dan TANPA_NOMOR Q015 ditolak dua kanal (kerangka dan R119/R120); nol perubahan dokumen",
+   "file": "reports/w9/refsem2.json"
+  },
+  "gate_c": {
+   "selftest": "6 OK (reports/w9/selftest.txt)",
+   "lint_ooxml_blank": "53 docx lulus/PASSED/0 kosong; 17 xlsx 0 fitur berkurang (reports/w9/gate_final.jsonl)",
+   "qa_w9": "41 PASS, 67 pemeriksaan, 4 dengan satu putaran perbaikan",
+   "refcheck": "refcheck2 final rc 0, kontrol positif OK, 0 TIDAK_ADA sesudah putusan makna; 613 rujukan berputusan makna: 610 OK, 3 tidak dapat dicek (reports/w9/refcheck_final.*)",
+   "metascan": "0, kontrol positif OK",
+   "grep": "reports/w9/grep.txt",
+   "modtime": "54/54 sama, 03:40-03:55Z dan 04:42Z",
+   "master_list": "88 baris, 1029 USULAN, 942 open, 46 ditutup (reports/w9/w8_rebuild.txt)",
+   "staging": "nol dari worker W9 (reports/w9/staging_nol.txt)"
+  },
+  "usulan_count_diukur_ulang": {
+   "at": "2026-10-15T04:43Z",
+   "cara": "hitung \"(USULAN\" di teks keluaran (docx paragraf+tabel; xlsx semua sel)",
+   "dokumen": 41
+  },
+  "completed": "2026-10-15T04:43Z",
+  "review": "reports/REVIEW-W9.md"
  }
 }

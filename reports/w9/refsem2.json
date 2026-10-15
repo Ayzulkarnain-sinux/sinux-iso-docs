@@ -1,0 +1,2519 @@
+{
+ "putaran": 2,
+ "workflow": "wf_a7212d4b-038",
+ "model": "opus effort high, 3 batch, read-only",
+ "masukan": 134,
+ "dijawab_pemeriksa": 130,
+ "diputus_orkestrator": [
+  "Q015",
+  "Q016",
+  "Q019",
+  "Q021",
+  "Q022",
+  "Q075"
+ ],
+ "ringkas": {
+  "OK/None": 98,
+  "SALAH_TAFSIR_MESIN/OK": 36
+ },
+ "catatan": "Q016 BASI dan Q015 TANPA_NOMOR dari pemeriksa ditolak dengan dua kanal (kerangka dan putusan putaran 1 R119/R120). Q019, Q021, Q022, Q075 tidak dijawab pemeriksa; diputus orkestrator dari kerangka. Nol perubahan dokumen dari putaran ini.",
+ "rows": [
+  {
+   "asal": "FAT-SOP-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINISI DAN SINGKATAN",
+   "kalimat": "Struktur Organisasi SINUX; sumber nama jabatan dan matriks peran. Finance Lead dan Finance Staff didefinisikan di bagian 3.",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q002",
+   "sem": {
+    "id": "Q002",
+    "verdict": "OK",
+    "alasan": "Kalimat ada di baris SNX-HR-ORG-01 pada tabel bagian 11 FAT-SOP-01. 'Bagian 3' bisa dibaca sebagai bagian 3 HR-ORG-01 atau bagian 3 FAT-SOP-01 sendiri. Kedua bagian itu sama-sama memuat definisi Finance Lead dan Finance Staff dengan isi yang sama, jadi klaimnya benar menurut kedua tafsiran.",
+    "bukti": "HR-ORG-01 bagian 3: 'Finance Lead | Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).'"
+   }
+  },
+  {
+   "asal": "LEG-SOP-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-03",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-03 | Atasan JA-08, JA-10, dan JA-11 | Job Analysis menulis atasan langsung Management / Direktur. Bagan mena",
+   "kalimat": "Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09); atasan JA-08 menunggu konfirmasi (butir K-03).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q003",
+   "sem": {
+    "id": "Q003",
+    "verdict": "OK",
+    "alasan": "K-03 ada di bagian 9 HR-ORG-01 dan menyatakan atasan JA-08 belum pasti. Pemetaan JA-08/JA-09 juga didukung K-13 dan matriks peran di bagian 8.",
+    "bukti": "K-03 | Atasan JA-08, JA-10, dan JA-11 | Job Analysis menulis atasan langsung Management / Direktur. Bagan menaruhnya di bawah Direktur sampai ada penetapan (USULAN)."
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "butir 6.2",
+   "status": "ADA_TANPA_NOMOR",
+   "judul_tujuan": "bagian 6 DAFTAR JABATAN > paragraf ke-2 tanpa nomor tampak: JA-08 dan JA-09 memakai nama jabatan yang sama. Pembedanya garis lapor: JA-09 melapor ke JA-08. Nama",
+   "kalimat": "4.2 Tingkatan jabatan dan unit kerja (ISO 9001:2015 5.3): jabatan tujuan harus satu tingkatan dengan jabatan karyawan menurut definisi di bagian 3, dan berada di unit kerja yang sama (USULAN; batas rotasi dan mutasi ada di bagian 2). HR Lead menilai keduanya dari SNX-HR-ORG-01 (butir 6.2). Bila SNX-HR-FRM-01 sudah disahkan dan menetapkan tingkatan jabatan, HR Lead memakai tingkatan itu (USULAN).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q017",
+   "sem": {
+    "id": "Q017",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "HR-ORG-01 tidak punya butir 6.2. '(butir 6.2)' merujuk ke prosedur HR-SOP-12 sendiri: butir 6.2 langkah 3 berisi HR Lead menilai kesetaraan tingkatan jabatan dan unit kerja dari SNX-HR-ORG-01. Pola yang sama dipakai butir 4.1 dokumen itu, yang juga menulis '(butir 6.2)'.",
+    "tujuan_benar": "SNX-HR-SOP-12 butir 6.2 (Penilaian usulan), langkah 3",
+    "verdict_ulang": "OK",
+    "bukti": "HR-SOP-12 6.2 langkah 3: 'Nilai kesetaraan tingkatan jabatan dan unit kerja antara jabatan karyawan dan jabatan tujuan di SNX-HR-ORG-01. | HR Lead'"
+   }
+  },
+  {
+   "asal": "FAT-SOP-04",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINISI DAN SINGKATAN",
+   "kalimat": "Pemilik SOP ini. Menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain, menyetujui penambahan akses ke Folder arsip FAT, mengarsipkan dokumen perpajakan, dan menyetujui pemusnahan bersama Direktur Utama (butir 4.4, 4.5, 4.9, 6.1 sampai 6.4). Pemilik informasi untuk dokumen keuangan (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q026",
+   "sem": {
+    "id": "Q026",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Dalam pola 'definisi di bagian N (SNX-HR-ORG-01 butir K-13)', bagian N adalah bagian definisi dokumen asal sendiri. Buktinya, FAT-RPT-02 memakai pola yang sama dengan 'bagian 2.1', yaitu bagian Istilah miliknya sendiri. Bagian 3 FAT-SOP-04 mendefinisikan Finance Lead. Bagian 3 HR-ORG-01 juga memuat definisi yang sama, jadi isinya cocok menurut kedua tafsiran.",
+    "tujuan_benar": "SNX-FAT-SOP-04 bagian 3 DEFINITION & ABBREVIATIONS",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-SOP-04 bagian 3: 'Finance Lead | Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-SOP-04",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Pemilik SOP ini. Menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain, menyetujui penambahan akses ke Folder arsip FAT, mengarsipkan dokumen perpajakan, dan menyetujui pemusnahan bersama Direktur Utama (butir 4.4, 4.5, 4.9, 6.1 sampai 6.4). Pemilik informasi untuk dokumen keuangan (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q027",
+   "sem": {
+    "id": "Q027",
+    "verdict": "OK",
+    "alasan": "K-13 di bagian 9 HR-ORG-01 menetapkan pemetaan Finance Lead ke Direktur selama jabatannya belum terisi.",
+    "bukti": "K-13: 'Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-SOP-04",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINISI DAN SINGKATAN",
+   "kalimat": "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, menurut butir 6.1 sampai 6.4 (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-1",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q028",
+   "sem": {
+    "id": "Q028",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Pola sama dengan Q026: 'bagian 3' adalah bagian definisi FAT-SOP-04 sendiri, dan bagian itu mendefinisikan Finance Staff. Bagian 3 HR-ORG-01 juga memuat definisi yang sama.",
+    "tujuan_benar": "SNX-FAT-SOP-04 bagian 3 DEFINITION & ABBREVIATIONS",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-SOP-04 bagian 3: 'Finance Staff | Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-SOP-04",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, menurut butir 6.1 sampai 6.4 (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-1",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q029",
+   "sem": {
+    "id": "Q029",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Staff ke pemegang JA-10 dan JA-11.",
+    "bukti": "K-13: 'Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINISI DAN SINGKATAN",
+   "kalimat": "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q087",
+   "sem": {
+    "id": "Q087",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'Bagian 3' adalah bagian definisi FAT-FRM-01 sendiri (pola sama dengan 'bagian 2.1' di FAT-RPT-02). Bagian itu mendefinisikan Finance Staff. Bagian 3 HR-ORG-01 juga memuat definisi yang sama.",
+    "tujuan_benar": "SNX-FAT-FRM-01 bagian 3 DEFINISI DAN SINGKATAN",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-FRM-01 bagian 3: 'Finance Staff | Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Mencatat pengajuan, keputusan, dan lokasi bukti di Tabel 1, Tabel 2, dan Tabel 3 (butir 4.2, 4.7, 4.8). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q088",
+   "sem": {
+    "id": "Q088",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Staff ke JA-10 dan JA-11.",
+    "bukti": "K-13: 'Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINISI DAN SINGKATAN",
+   "kalimat": "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q089",
+   "sem": {
+    "id": "Q089",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'Bagian 3' adalah bagian definisi FAT-FRM-01 sendiri, dan bagian itu mendefinisikan Finance Lead. Bagian 3 HR-ORG-01 juga memuat definisi yang sama.",
+    "tujuan_benar": "SNX-FAT-FRM-01 bagian 3 DEFINISI DAN SINGKATAN",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-FRM-01 bagian 3: 'Finance Lead | Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Pemilik form ini. Memeriksa dokumen dasar dan memutuskan (butir 4.3). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q090",
+   "sem": {
+    "id": "Q090",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Lead ke Direktur selama jabatannya belum terisi.",
+    "bukti": "K-13: 'Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINISI DAN SINGKATAN",
+   "kalimat": "Struktur Organisasi SINUX: sumber nama jabatan. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q091",
+   "sem": {
+    "id": "Q091",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Kalimat ini ada di baris HR-ORG-01 pada bagian 9 FAT-FRM-01, tetapi pola 'definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)' sama dengan rujukan ke bagian definisi FAT-FRM-01 sendiri. Bagian 3 FAT-FRM-01 dan bagian 3 HR-ORG-01 sama-sama memuat definisi kedua peran.",
+    "tujuan_benar": "SNX-FAT-FRM-01 bagian 3 DEFINISI DAN SINGKATAN",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-FRM-01 bagian 3: 'Finance Lead | Peran pemeriksa dan penyetuju FAT...'; 'Finance Staff | Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11)'"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Struktur Organisasi SINUX: sumber nama jabatan. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q092",
+   "sem": {
+    "id": "Q092",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Lead dan Finance Staff ke jabatan.",
+    "bukti": "K-13: 'Finance Lead dan Finance Staff tetap peran. Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 2.1",
+   "status": "ADA_TANPA_NOMOR",
+   "judul_tujuan": "bagian 2 RUANG LINGKUP > paragraf ke-1 tanpa nomor tampak: Dokumen ini mencakup 15 jabatan aktif di Job Analysis (SNX-HR-JA-01, kode JA-01 sampai JA-15) dan 8 ",
+   "kalimat": "Pencatat dokumen ini. Membuat dan mengisi catatan di Tabel 1 sampai Tabel 4, menyampaikan permintaan support, dan menyimpan dokumen terisi (Ketentuan butir 1, 3 sampai 5, 7, 8, dan 10 sampai 14). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q096",
+   "sem": {
+    "id": "Q096",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "HR-ORG-01 tidak punya bagian 2.1. 'Bagian 2.1' adalah bagian Istilah FAT-RPT-02 sendiri, dan bagian itu mendefinisikan Finance Staff beserta jabatannya.",
+    "tujuan_benar": "SNX-FAT-RPT-02 bagian 2.1 Istilah",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-RPT-02 2.1: 'Finance Staff | Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Pencatat dokumen ini. Membuat dan mengisi catatan di Tabel 1 sampai Tabel 4, menyampaikan permintaan support, dan menyimpan dokumen terisi (Ketentuan butir 1, 3 sampai 5, 7, 8, dan 10 sampai 14). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q097",
+   "sem": {
+    "id": "Q097",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Staff ke JA-10 dan JA-11.",
+    "bukti": "K-13: 'Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 2.1",
+   "status": "ADA_TANPA_NOMOR",
+   "judul_tujuan": "bagian 2 RUANG LINGKUP > paragraf ke-1 tanpa nomor tampak: Dokumen ini mencakup 15 jabatan aktif di Job Analysis (SNX-HR-JA-01, kode JA-01 sampai JA-15) dan 8 ",
+   "kalimat": "Pemilik dokumen ini (Ketentuan butir 15). Menentukan Pemberi support, menetapkan ketidaksesuaian, penyebab, tindakan korektif, Penanggung Jawab, dan Target Selesai, memverifikasi efektivitas, menetapkan status Ditutup, dan meninjau catatan setiap bulan (Ketentuan butir 2, 6, 8, 10, 11, dan 12). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q098",
+   "sem": {
+    "id": "Q098",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'Bagian 2.1' adalah bagian Istilah FAT-RPT-02 sendiri, dan bagian itu mendefinisikan Finance Lead. HR-ORG-01 tidak punya bagian 2.1.",
+    "tujuan_benar": "SNX-FAT-RPT-02 bagian 2.1 Istilah",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-RPT-02 2.1: 'Finance Lead | Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Pemilik dokumen ini (Ketentuan butir 15). Menentukan Pemberi support, menetapkan ketidaksesuaian, penyebab, tindakan korektif, Penanggung Jawab, dan Target Selesai, memverifikasi efektivitas, menetapkan status Ditutup, dan meninjau catatan setiap bulan (Ketentuan butir 2, 6, 8, 10, 11, dan 12). Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q099",
+   "sem": {
+    "id": "Q099",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Lead ke Direktur selama jabatannya belum terisi.",
+    "bukti": "K-13: 'Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN).'"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "bagian 2.1",
+   "status": "ADA_TANPA_NOMOR",
+   "judul_tujuan": "bagian 2 RUANG LINGKUP > paragraf ke-1 tanpa nomor tampak: Dokumen ini mencakup 15 jabatan aktif di Job Analysis (SNX-HR-JA-01, kode JA-01 sampai JA-15) dan 8 ",
+   "kalimat": "Struktur Organisasi SINUX. Sumber nama jabatan dan matriks peran. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q100",
+   "sem": {
+    "id": "Q100",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'Bagian 2.1' adalah bagian Istilah FAT-RPT-02 sendiri, dan bagian itu mendefinisikan Finance Lead dan Finance Staff. HR-ORG-01 tidak punya bagian 2.1.",
+    "tujuan_benar": "SNX-FAT-RPT-02 bagian 2.1 Istilah",
+    "verdict_ulang": "OK",
+    "bukti": "FAT-RPT-02 2.1: 'Finance Lead | Peran pemeriksa dan penyetuju FAT...'; 'Finance Staff | Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10)...'"
+   }
+  },
+  {
+   "asal": "FAT-RPT-02",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-ORG-01",
+   "lokasi": "K-13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 BUTIR MENUNGGU KONFIRMASI: K-13 | Peran tanpa padanan jabatan | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead,",
+   "kalimat": "Struktur Organisasi SINUX. Sumber nama jabatan dan matriks peran. Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 2.1 (SNX-HR-ORG-01 butir K-13).",
+   "tujuan_key": "HR-ORG-01",
+   "id": "Q101",
+   "sem": {
+    "id": "Q101",
+    "verdict": "OK",
+    "alasan": "K-13 memetakan Finance Lead dan Finance Staff ke jabatan.",
+    "bukti": "K-13: 'Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN).'"
+   }
+  },
+  {
+   "asal": "LEG-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-01",
+   "lokasi": "Ketentuan butir 1",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Pemantauan (USULAN). Mengisi laporan, memantau aspek, mencatat status, temuan, dan hasil verifikasi, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 10 dan 12). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-01",
+   "id": "Q064",
+   "sem": {
+    "id": "Q064",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 1 di bagian 3 LEG-RPT-01 bernomor tampak. Isinya: Staff Legal mengisi tabel Informasi Umum, sesuai dengan klaim 'mengisi laporan'.",
+    "bukti": "1. Satu laporan dipakai untuk satu Periode Pemantauan. Staff Legal mengisi tabel Informasi Umum, termasuk aspek yang dipantau pada periode itu."
+   }
+  },
+  {
+   "asal": "LEG-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-01",
+   "lokasi": "Ketentuan butir 10",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Pemantauan (USULAN). Mengisi laporan, memantau aspek, mencatat status, temuan, dan hasil verifikasi, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 10 dan 12). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-01",
+   "id": "Q065",
+   "sem": {
+    "id": "Q065",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 10: Staff Legal mencatat hasil verifikasi dan mengisi status. Sesuai dengan tugas Pelaksana Pemantauan.",
+    "bukti": "10. Staff Legal mencatat Hasil Verifikasi atas Bukti Penyelesaian."
+   }
+  },
+  {
+   "asal": "LEG-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-01",
+   "lokasi": "Ketentuan butir 12",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Pemantauan (USULAN). Mengisi laporan, memantau aspek, mencatat status, temuan, dan hasil verifikasi, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 10 dan 12). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-01",
+   "id": "Q066",
+   "sem": {
+    "id": "Q066",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 12: Staff Legal menyimpan laporan terisi, sesuai klaim.",
+    "bukti": "12. Staff Legal menyimpan laporan terisi bersama buktinya di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24)"
+   }
+  },
+  {
+   "asal": "LEG-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-01",
+   "lokasi": "Ketentuan butir 7",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Memutuskan Tindakan Perbaikan bila tidak ada kesepakatan, meninjau Kategori Risiko, menetapkan penutupan temuan, dan memeriksa laporan terisi (Ketentuan butir 7, 8, 10, dan 11). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-01",
+   "id": "Q067",
+   "sem": {
+    "id": "Q067",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 7: Line Manager Legal memutuskan bila tidak ada kesepakatan, sesuai klaim.",
+    "bukti": "7. ... Bila tidak ada kesepakatan, Line Manager Legal memutuskan (USULAN)."
+   }
+  },
+  {
+   "asal": "LEG-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-01",
+   "lokasi": "Ketentuan butir 8",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Memutuskan Tindakan Perbaikan bila tidak ada kesepakatan, meninjau Kategori Risiko, menetapkan penutupan temuan, dan memeriksa laporan terisi (Ketentuan butir 7, 8, 10, dan 11). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-01",
+   "id": "Q068",
+   "sem": {
+    "id": "Q068",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 8: Line Manager Legal meninjau Kategori Risiko, sesuai klaim.",
+    "bukti": "8. ... Line Manager Legal meninjau Kategori Risiko itu saat memeriksa laporan (USULAN, selaras dengan SNX-LEG-SOP-02 butir 4.11)."
+   }
+  },
+  {
+   "asal": "LEG-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-01",
+   "lokasi": "Ketentuan butir 10",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Memutuskan Tindakan Perbaikan bila tidak ada kesepakatan, meninjau Kategori Risiko, menetapkan penutupan temuan, dan memeriksa laporan terisi (Ketentuan butir 7, 8, 10, dan 11). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-01",
+   "id": "Q069",
+   "sem": {
+    "id": "Q069",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 10: Line Manager Legal menetapkan penutupan temuan, sesuai klaim.",
+    "bukti": "10. ... Line Manager Legal menetapkan penutupan temuan, lalu Staff Legal mengisi Status Tindak Lanjut Ditutup dan Tanggal Penutupan (USULAN)."
+   }
+  },
+  {
+   "asal": "FAT-SOP-04",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-FAT-SOP-05",
+   "lokasi": "bagian 11",
+   "status": "ADA",
+   "judul_tujuan": "bagian 11 RELATED DOCUMENTS & ATTACHMENTS",
+   "kalimat": "Tax Administration & Reporting; mengatur dokumen perpajakan yang diarsipkan di SOP ini. Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini sebagai acuan pengarsipan untuk butir 6.5.",
+   "tujuan_key": "FAT-SOP-05",
+   "id": "Q030",
+   "sem": {
+    "id": "Q030",
+    "verdict": "OK",
+    "alasan": "Tabel dokumen terkait di bagian 11 FAT-SOP-05 menunjuk FAT-SOP-04 sebagai acuan untuk butir 6.5, sesuai klaim.",
+    "bukti": "SNX-FAT-SOP-04 | SOP Financial Document Control & Retention; pengarsipan dokumen hardcopy dan softcopy, acuan untuk butir 6.5 (USULAN)."
+   }
+  },
+  {
+   "asal": "FAT-SOP-04",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-FAT-SOP-05",
+   "lokasi": "butir 6.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.5 Pelaporan dan pengarsipan",
+   "kalimat": "Tax Administration & Reporting; mengatur dokumen perpajakan yang diarsipkan di SOP ini. Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini sebagai acuan pengarsipan untuk butir 6.5.",
+   "tujuan_key": "FAT-SOP-05",
+   "id": "Q031",
+   "sem": {
+    "id": "Q031",
+    "verdict": "OK",
+    "alasan": "Butir 6.5 FAT-SOP-05 (Pelaporan dan pengarsipan) ada dan memuat langkah pengarsipan dokumen pajak oleh Finance Lead.",
+    "bukti": "6.5 Pelaporan dan pengarsipan ... 2. Arsipkan bukti lapor: BPE, SPT, kode billing, dan bukti bayar. | Finance Lead"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-FAT-SOP-05",
+   "lokasi": "butir 6.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.3 Review dan persetujuan",
+   "kalimat": "Tax Administration & Reporting: butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN).",
+   "tujuan_key": "FAT-SOP-05",
+   "id": "Q093",
+   "sem": {
+    "id": "Q093",
+    "verdict": "OK",
+    "alasan": "Langkah 2 butir 6.3 menyebut SNX-FAT-FRM-01 sebagai tempat mencatat persetujuan utang pajak.",
+    "bukti": "2. Setujui utang pajak yang sudah direkonsiliasi. | Finance Lead | Persetujuan utang pajak, dicatat di SNX-FAT-FRM-01 (USULAN)"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-FAT-SOP-05",
+   "lokasi": "langkah 2",
+   "status": "ADA",
+   "judul_tujuan": "6.3 Review dan persetujuan > langkah 2: 2. Setujui utang pajak yang sudah direkonsiliasi. | Finance Lead | Persetujuan utang pajak",
+   "kalimat": "Tax Administration & Reporting: butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN).",
+   "tujuan_key": "FAT-SOP-05",
+   "id": "Q094",
+   "sem": {
+    "id": "Q094",
+    "verdict": "OK",
+    "alasan": "Langkah 2 di butir 6.3 FAT-SOP-05 cocok dengan klaim.",
+    "bukti": "2. Setujui utang pajak yang sudah direkonsiliasi. | Finance Lead | Persetujuan utang pajak, dicatat di SNX-FAT-FRM-01 (USULAN)"
+   }
+  },
+  {
+   "asal": "FAT-FRM-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-FAT-SOP-05",
+   "lokasi": "bagian 11",
+   "status": "ADA",
+   "judul_tujuan": "bagian 11 RELATED DOCUMENTS & ATTACHMENTS",
+   "kalimat": "Tax Administration & Reporting: butir 6.3 langkah 2 menyebut form ini sebagai tempat mencatat persetujuan utang pajak, dan tabel rekaman di bagian 11 menyebutnya untuk persetujuan utang pajak dan pengajuan pembayaran (USULAN).",
+   "tujuan_key": "FAT-SOP-05",
+   "id": "Q095",
+   "sem": {
+    "id": "Q095",
+    "verdict": "OK",
+    "alasan": "Tabel rekaman di bagian 11 menyebut FAT-FRM-01 untuk persetujuan utang pajak dan pengajuan pembayaran.",
+    "bukti": "Persetujuan utang pajak dan pengajuan pembayaran (SNX-FAT-FRM-01) | Folder Google Drive Departemen FAT (USULAN). Pemilik: Finance Lead."
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-02",
+   "lokasi": "butir 4.10",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah",
+   "kalimat": "Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi formulir ini.",
+   "tujuan_key": "COM-SOP-02",
+   "id": "Q114",
+   "sem": {
+    "id": "Q114",
+    "verdict": "OK",
+    "alasan": "Kalimat ini ada di baris peran COO. Butir 4.10 COM-SOP-02 menetapkan COO sebagai pemutus pengecualian komersial.",
+    "bukti": "4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah disetujui, harga baru, klausul yang menyimpang"
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-02",
+   "lokasi": "Butir 6.2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.2 Review Scope",
+   "kalimat": "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN).",
+   "tujuan_key": "COM-SOP-02",
+   "id": "Q118",
+   "sem": {
+    "id": "Q118",
+    "verdict": "OK",
+    "alasan": "Butir 6.2 COM-SOP-02 mengatur Review Scope.",
+    "bukti": "6.2 Review Scope ... 8. Catat hasil review scope dari langkah 2 sampai 7 dalam satu Catatan review scope."
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-02",
+   "lokasi": "butir 4.10",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah",
+   "kalimat": "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN).",
+   "tujuan_key": "COM-SOP-02",
+   "id": "Q119",
+   "sem": {
+    "id": "Q119",
+    "verdict": "OK",
+    "alasan": "Butir 4.10 COM-SOP-02 mengatur pihak yang memutuskan pengecualian komersial.",
+    "bukti": "4.10 Pihak yang memutuskan pengecualian komersial berstatus (USULAN): COO memutuskan diskon di luar yang sudah disetujui"
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-02",
+   "lokasi": "butir 6.4",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.4 Pengecualian Komersial",
+   "kalimat": "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN).",
+   "tujuan_key": "COM-SOP-02",
+   "id": "Q120",
+   "sem": {
+    "id": "Q120",
+    "verdict": "OK",
+    "alasan": "Butir 6.4 COM-SOP-02 memuat proses Pengecualian Komersial.",
+    "bukti": "6.4 Pengecualian Komersial ... Prosedur ini berlaku sebelum dan sesudah penawaran dikirim ... Pihak yang memutuskan ditetapkan di butir 4.10."
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-02",
+   "lokasi": "bagian 11",
+   "status": "ADA",
+   "judul_tujuan": "bagian 11 RELATED DOCUMENTS & ATTACHMENTS",
+   "kalimat": "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN).",
+   "tujuan_key": "COM-SOP-02",
+   "id": "Q121",
+   "sem": {
+    "id": "Q121",
+    "verdict": "OK",
+    "alasan": "Tabel rekaman di bagian 11 COM-SOP-02 memuat Catatan persetujuan penawaran.",
+    "bukti": "Catatan persetujuan penawaran | Rekaman baru (USULAN). Lokasi belum ditetapkan; pemilik VP Commercial"
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 1,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-01",
+   "lokasi": "butir 6.8",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.8 Handover",
+   "kalimat": "Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Rekaman serah terimanya SNX-COM-FRM-02.",
+   "tujuan_key": "COM-SOP-01",
+   "id": "Q111",
+   "sem": {
+    "id": "Q111",
+    "verdict": "OK",
+    "alasan": "Butir 6.8 COM-SOP-01 mengatur Handover.",
+    "bukti": "6.8 Handover ... 2. Selenggarakan handover meeting dengan Service Delivery Manager sebelum implementasi dimulai."
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-01",
+   "lokasi": "Butir 4.11",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.11 Business Development tidak mengubah pricing sendiri, tidak memberi diskon tanpa persetujuan (butir 4.10),",
+   "kalimat": "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).",
+   "tujuan_key": "COM-SOP-01",
+   "id": "Q115",
+   "sem": {
+    "id": "Q115",
+    "verdict": "OK",
+    "alasan": "Butir 4.11 COM-SOP-01 memuat larangan menjanjikan timeline sebelum dikonfirmasi Service Delivery Manager.",
+    "bukti": "4.11 ... dan tidak menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya."
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-01",
+   "lokasi": "butir 6.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.3 Opportunity Management: Discovery sampai Demo",
+   "kalimat": "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).",
+   "tujuan_key": "COM-SOP-01",
+   "id": "Q116",
+   "sem": {
+    "id": "Q116",
+    "verdict": "OK",
+    "alasan": "Butir 6.3 mengatur discovery meeting, dan langkah 4 menghasilkan Business Requirement di CRM.",
+    "bukti": "3. Selenggarakan discovery meeting dengan pertanyaan SPIN Selling ... 4. Susun Business Requirement dan Opportunity Assessment dari hasil discovery meeting."
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-SOP-01",
+   "lokasi": "butir 6.8",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.8 Handover",
+   "kalimat": "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).",
+   "tujuan_key": "COM-SOP-01",
+   "id": "Q117",
+   "sem": {
+    "id": "Q117",
+    "verdict": "OK",
+    "alasan": "Butir 6.8 COM-SOP-01 mengatur Handover.",
+    "bukti": "6.8 Handover ... 1. Susun paket handover dengan isi minimal di butir 4.16. | Business Development | Paket handover"
+   }
+  },
+  {
+   "asal": "LEG-SOP-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-LEG-SOP-01",
+   "lokasi": "bagian 2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 2 SCOPE",
+   "kalimat": "Template kontrak SINUX (NDA, PKS, addendum); belum disusun, sesuai SNX-LEG-SOP-01 bagian 2 (Scope).",
+   "tujuan_key": "LEG-SOP-01",
+   "id": "Q004",
+   "sem": {
+    "id": "Q004",
+    "verdict": "OK",
+    "alasan": "Bagian 2 SCOPE LEG-SOP-01 menyebut template NDA, PKS, dan addendum sebagai lampiran yang belum disusun. Isinya ada di paragraf tanpa nomor ke-4, tetapi rujukannya ke bagian 2 bernomor, jadi tetap sah.",
+    "bukti": "lampiran yang belum disusun, yaitu template NDA, PKS, dan addendum, playbook klausul, format tabel redline dan ringkasan risiko, format register kontrak"
+   }
+  },
+  {
+   "asal": "LEG-SOP-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-LEG-SOP-01",
+   "lokasi": "bagian 2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 2 SCOPE",
+   "kalimat": "Format register kontrak; belum disusun, sesuai SNX-LEG-SOP-01 bagian 2 (Scope). Format register permintaan Legal; belum disusun.",
+   "tujuan_key": "LEG-SOP-01",
+   "id": "Q005",
+   "sem": {
+    "id": "Q005",
+    "verdict": "OK",
+    "alasan": "Bagian 2 SCOPE menyebut format register kontrak sebagai lampiran yang belum disusun. Klaim 'sesuai bagian 2' hanya melekat pada format register kontrak.",
+    "bukti": "format register kontrak dan register perizinan, serta DoA."
+   }
+  },
+  {
+   "asal": "HR-SOP-11",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-SOP-02",
+   "lokasi": "butir 4.9",
+   "status": "ADA_TANPA_NOMOR",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > paragraf ke-9 tanpa nomor tampak: Hak akses (Annex A 5.18): pemberian, perubahan, pencabutan, dan review akses mengikuti butir 6.1 sam",
+   "kalimat": "User Access Control & Authorization: perubahan akses saat perpindahan peran (butir 4.9 dan 6.5).",
+   "tujuan_key": "ISMS-SOP-02",
+   "id": "Q015",
+   "sem": {
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "verdict_ulang": "OK",
+    "tujuan_benar": "SNX-HR-SOP-11 (dokumen asal) butir 4.9",
+    "alasan": "Pola tabel bagian 11 HR-SOP-11: tiap \"(butir ...)\" menunjuk butir SOP ini (baris SNX-HR-JA-01 menulis \"dipakai SOP ini (butir 4.2, ... 6.5)\"). HR-SOP-11 4.9 Hak akses cocok. Kanal kedua: putaran 1 R119 memutus sama.",
+    "bukti": "HR-SOP-11 4.9: Hak akses ... Atasan Langsung mengajukan perubahan hak akses lewat prosedur itu",
+    "sumber": "orkestrator, cek kerangka langsung (refcheck2 dump struct3) 15 Okt 2026 04:4xZ"
+   },
+   "sem_pemeriksa": {
+    "id": "Q015",
+    "verdict": "TANPA_NOMOR",
+    "alasan": "Isinya cocok: hak akses, termasuk perubahan akses, mengikuti butir 6.1 sampai 6.6. Namun di kerangka, tempatnya paragraf tanpa nomor ke-9 di bagian 4, bukan butir 4.9 bernomor tampak.",
+    "bukti": "Hak akses (Annex A 5.18): pemberian, perubahan, pencabutan, dan review akses mengikuti butir 6.1 sampai 6.6."
+   }
+  },
+  {
+   "asal": "HR-SOP-11",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-SOP-02",
+   "lokasi": "butir 6.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.5 Pencabutan Akses (Annex A 5.18)",
+   "kalimat": "User Access Control & Authorization: perubahan akses saat perpindahan peran (butir 4.9 dan 6.5).",
+   "tujuan_key": "ISMS-SOP-02",
+   "id": "Q016",
+   "sem": {
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "verdict_ulang": "OK",
+    "tujuan_benar": "SNX-HR-SOP-11 (dokumen asal) prosedur 6.5 langkah 6",
+    "alasan": "Vonis BASI pemeriksa putaran 2 ditolak: rujukan menunjuk HR-SOP-11 6.5 langkah 6, bukan ISMS-SOP-02 6.5. Kanal 1: pola tabel bagian 11 (butir = butir SOP ini). Kanal 2: putaran 1 R120 memutus sama. Dua pemeriksa membaca berbeda, jadi keterbacaannya ambigu (masuk GAP rujukan diri ambigu).",
+    "bukti": "HR-SOP-11 6.5 langkah 6: Ajukan perubahan hak akses karyawan terkait menurut SNX-ISMS-SOP-02. | Atasan Langsung",
+    "sumber": "orkestrator, cek kerangka langsung (refcheck2 dump struct3) 15 Okt 2026 04:4xZ"
+   },
+   "sem_pemeriksa": {
+    "id": "Q016",
+    "verdict": "BASI",
+    "alasan": "Butir 6.5 ISMS-SOP-02 adalah Pencabutan Akses saat pemberhentian, bukan perubahan akses saat perpindahan peran. Perubahan akses saat mutasi diatur di butir 6.4.",
+    "lokasi_benar": "SNX-ISMS-SOP-02 butir 6.4 Perubahan Akses saat Mutasi",
+    "bukti": "6.5 Pencabutan Akses ... 1. Beri tahu pemberhentian paling lambat pada hari efektif. / 6.4 Perubahan Akses saat Mutasi ... 2. Ajukan perubahan akses karena mutasi."
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-FRM-01",
+   "lokasi": "butir 4.2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.2 Standar berlaku per tingkatan. HR Lead menetapkan satu tingkatan untuk setiap jabatan, dan pemegang jabata",
+   "kalimat": "Employee Competency Matrix: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; acuan tingkatan jabatan bila sudah disahkan (butir 4.2 SOP ini, (USULAN)).",
+   "tujuan_key": "HR-FRM-01",
+   "id": "Q020",
+   "sem": {
+    "id": "Q020",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Kalimat menulis 'butir 4.2 SOP ini', jadi rujukannya ke HR-SOP-12 sendiri, bukan ke HR-FRM-01. Butir 4.2 HR-SOP-12 menyatakan HR Lead memakai tingkatan dari SNX-HR-FRM-01 bila sudah disahkan (USULAN).",
+    "tujuan_benar": "SNX-HR-SOP-12 butir 4.2",
+    "verdict_ulang": "OK",
+    "bukti": "HR-SOP-12 4.2: 'Bila SNX-HR-FRM-01 sudah disahkan dan menetapkan tingkatan jabatan, HR Lead memakai tingkatan itu (USULAN).'"
+   }
+  },
+  {
+   "asal": "MKT-REG-01",
+   "bagian_asal": 5,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-REG-01",
+   "lokasi": "butir 4.5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "tujuan xlsx: penomoran butir bebas",
+   "kalimat": "Menurunkan klasifikasi materi menjadi PUBLIC saat Approver menyetujui versi, dan mencatat penurunan itu di SNX-ISMS-REG-01 (butir 4.5). Dipegang VP Commercial (USULAN).",
+   "tujuan_key": "ISMS-REG-01",
+   "id": "Q124",
+   "sem": {
+    "id": "Q124",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'(butir 4.5)' merujuk ke butir 4.5 MKT-REG-01 sendiri, yang mengatur Pemilik informasi menurunkan klasifikasi ke PUBLIC dan mencatatnya di SNX-ISMS-REG-01. Baris dokumen terkait MKT-REG-01 juga menulis '(butir 4.5 register ini)'. Di kerangka ISMS-REG-01 (xlsx) tidak ada butir 4.5.",
+    "tujuan_benar": "SNX-MKT-REG-01 butir 4.5",
+    "verdict_ulang": "OK",
+    "bukti": "MKT-REG-01 4.5: 'Materi berklasifikasi INTERNAL sampai Pemilik informasi menurunkannya menjadi PUBLIC ... Pemilik informasi mencatat penurunan itu di SNX-ISMS-REG-01'"
+   }
+  },
+  {
+   "asal": "HR-SOP-10",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 4.6",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 KETENTUAN UMUM > 4.6 Indikator kinerja di dokumen ini adalah usulan indikator. Target numerik, bobot, dan sumber data ditetapka",
+   "kalimat": "4.3 Prestasi (ISO 9001:2015 7.2): prestasi dinilai dari hasil penilaian kinerja karyawan yang diusulkan. Target numerik dan bobot indikator kinerja ditetapkan di KPI Matrix (SNX-HR-JA-01 butir 4.6). Ambang hasil penilaian kinerja untuk dapat diusulkan belum ditetapkan. Penetapannya oleh Direktur Utama atas usulan HR Lead, lalu SOP ini direvisi (USULAN).",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q010",
+   "sem": {
+    "id": "Q010",
+    "verdict": "OK",
+    "alasan": "HR-JA-01 butir 4.6 menyatakan target numerik dan bobot indikator ditetapkan di KPI Matrix, sesuai klaim.",
+    "bukti": "4.6 Indikator kinerja di dokumen ini adalah usulan indikator. Target numerik, bobot, dan sumber data ditetapkan di KPI Matrix."
+   }
+  },
+  {
+   "asal": "HR-SOP-11",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 4.6",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 KETENTUAN UMUM > 4.6 Indikator kinerja di dokumen ini adalah usulan indikator. Target numerik, bobot, dan sumber data ditetapka",
+   "kalimat": "4.2 Penurunan kinerja (ISO 9001:2015 7.2): HR Lead menilai penurunan kinerja dari hasil penilaian kinerja karyawan terkait dan dari rencana perbaikan kinerja yang sudah berjalan. KPI Matrix memuat target numerik dan bobot indikator kinerja (SNX-HR-JA-01 butir 4.6). Ambang hasil penilaian kinerja dan lama pelaksanaan rencana perbaikan kinerja belum ditetapkan. Direktur Utama menetapkannya atas usul",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q012",
+   "sem": {
+    "id": "Q012",
+    "verdict": "OK",
+    "alasan": "Butir 4.6 HR-JA-01 memuat KPI Matrix sebagai tempat target numerik dan bobot.",
+    "bukti": "Target numerik, bobot, dan sumber data ditetapkan di KPI Matrix."
+   }
+  },
+  {
+   "asal": "HR-SOP-11",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 7",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "4.3 Pelanggaran aturan perusahaan (ISO/IEC 27001:2022 Annex A 6.4): HR Lead memeriksa dugaan pelanggaran secara objektif, sesuai uraian jabatan JA-14 di SNX-HR-JA-01 (butir 7). Atasan Langsung hanya mengajukan usulan atas dasar pelanggaran bila pemeriksaan menyimpulkan pelanggaran terbukti (USULAN).",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q013",
+   "sem": {
+    "id": "Q013",
+    "verdict": "OK",
+    "alasan": "Rujukan 'JA-14 butir 7' = baris tugas nomor 7 di 6.14 JA-14 HR Lead (nomor tampak di tabel), berisi pemeriksaan dugaan pelanggaran secara objektif.",
+    "bukti": "6.14 JA-14 HR Lead: 7 | Menangani hubungan karyawan, pemeriksaan dugaan pelanggaran, penegakan disiplin, ... secara objektif."
+   }
+  },
+  {
+   "asal": "HR-SOP-11",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 6",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "4.10 Rekaman dan klasifikasi (ISO 9001:2015 7.5.3; ISO/IEC 27001:2022 Annex A 5.33 dan 5.34): HRGA Officer mengarsipkan rekaman penurunan jabatan di personal file (butir 6.5). Rekaman itu memuat data karyawan dan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). HR Lead mengendalikan akses ke informasi personal (SNX-HR-JA-01, JA-14, wewenang butir 6). Lokasi, pemilik, dan rete",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q014",
+   "sem": {
+    "id": "Q014",
+    "verdict": "OK",
+    "alasan": "Wewenang 6 pada 6.14 JA-14 HR Lead adalah mengendalikan akses informasi personal, sesuai klaim.",
+    "bukti": "Wewenang | ... 6) Mengendalikan akses informasi personal sesuai kebijakan"
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 6.2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 URAIAN JABATAN > 6.2 JA-02 COO",
+   "kalimat": "4.3 Pengembangan keterampilan (ISO 9001:2015 7.2 dan ISO/IEC 27001:2022 7.2): untuk tujuan pengembangan keterampilan, HR Lead memeriksa bahwa keterampilan yang dituju tertulis sebagai kompetensi jabatan tujuan di SNX-HR-JA-01 (butir 6.2). Sesudah masa rotasi, HR Lead menilai kompetensi aktual karyawan terhadap keterampilan itu, mencatat kesenjangan, dan mencatat tindakan pelatihannya di SNX-HR-FRM",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q018",
+   "sem": {
+    "id": "Q018",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'(butir 6.2)' adalah rujukan ke langkah SOP asal sendiri (HR-SOP-12 6.2 Penilaian usulan), bukan HR-JA-01 6.2 (JA-02 COO). Bagian 11 HR-SOP-12 menegaskan 'butir 4.3, 4.5, 4.6, dan 6.2 SOP ini'. Langkah 4 di 6.2 sesuai klaim.",
+    "bukti": "6.2 Penilaian usulan: 4. Nilai tujuan rotasi terhadap butir 4.1, dan keterampilan yang dituju terhadap kompetensi jabatan tujuan di SNX-HR-JA-01.",
+    "tujuan_benar": "SNX-HR-SOP-12 butir 6.2 (langkah 4)",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "HR-SOP-13",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 4.7",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 KETENTUAN UMUM > 4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor han",
+   "kalimat": "4.4 Kualifikasi (ISO 9001:2015 7.2): HR Lead menyimpulkan kualifikasi karyawan terhadap persyaratan jabatan tujuan di SNX-HR-JA-01 dan mencatat kesenjangan kompetensi beserta tindakannya. SNX-HR-JA-01 butir 4.7 menyatakan masa pengalaman minimum ditentukan sesudah job evaluation. Sampai masa itu ditetapkan, HR Lead menyimpulkan pengalaman dari persyaratan pendidikan dan pengalaman jabatan tujuan d",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q023",
+   "sem": {
+    "id": "Q023",
+    "verdict": "OK",
+    "alasan": "Butir 4.7 HR-JA-01 menyatakan masa pengalaman minimum ditentukan sesudah job evaluation.",
+    "bukti": "Masa pengalaman minimum ditentukan sesudah job evaluation."
+   }
+  },
+  {
+   "asal": "HR-SOP-13",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 4.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 KETENTUAN UMUM > 4.3 Garis pelaporan berlabel menunggu konfirmasi belum menjadi garis pelaporan resmi. Management mengonfirmasi",
+   "kalimat": "4.10 Garis lapor dan dokumen organisasi (ISO 9001:2015 5.3): SNX-HR-JA-01 butir 4.3 menyatakan garis lapor berlabel menunggu konfirmasi belum resmi. Bila jabatan atau garis lapor karyawan berubah, HR Lead memperbarui SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi (butir 6.4).",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q024",
+   "sem": {
+    "id": "Q024",
+    "verdict": "OK",
+    "alasan": "Butir 4.3 HR-JA-01 menyatakan garis pelaporan berlabel menunggu konfirmasi belum resmi.",
+    "bukti": "4.3 Garis pelaporan berlabel menunggu konfirmasi belum menjadi garis pelaporan resmi."
+   }
+  },
+  {
+   "asal": "HR-SOP-13",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 6.4",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 URAIAN JABATAN > 6.4 JA-04 VP Tech Operation and Services",
+   "kalimat": "4.10 Garis lapor dan dokumen organisasi (ISO 9001:2015 5.3): SNX-HR-JA-01 butir 4.3 menyatakan garis lapor berlabel menunggu konfirmasi belum resmi. Bila jabatan atau garis lapor karyawan berubah, HR Lead memperbarui SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi (butir 6.4).",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q025",
+   "sem": {
+    "id": "Q025",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'(butir 6.4)' merujuk langkah SOP asal sendiri (HR-SOP-13 6.4 Pelaksanaan mutasi, langkah 8), bukan HR-JA-01 6.4 (JA-04). Langkah 8 memuat pembaruan ORG-01 dan JA-01 lewat revisi.",
+    "bukti": "8. Perbarui pemegang jabatan dan garis lapor di SNX-HR-ORG-01 dan SNX-HR-JA-01 lewat revisi kedua dokumen, bila jabatan atau garis lapor berubah.",
+    "tujuan_benar": "SNX-HR-SOP-13 butir 6.4 (langkah 8)",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "HR-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 4.7",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 KETENTUAN UMUM > 4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor han",
+   "kalimat": "4.5 Menurut SNX-HR-JA-01 butir 4.7, sertifikasi profesi atau vendor wajib hanya bila ditetapkan di Competency Matrix atau bila kontrak pelanggan memuat persyaratannya. Form ini dibaca sebagai Competency Matrix itu (USULAN), dan HR Lead menetapkan sertifikasi wajib di Tabel 1. HRGA Officer menulis dasarnya di kolom Dasar sertifikasi: form ini atau kontrak pelanggan.",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q071",
+   "sem": {
+    "id": "Q071",
+    "verdict": "OK",
+    "alasan": "Butir 4.7 HR-JA-01 menyatakan sertifikasi hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan.",
+    "bukti": "Sertifikasi profesi atau vendor hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan."
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "4.8 HR Lead membandingkan hasil E1 sampai E4 dengan Kriteria Keberhasilan dan menetapkan Kesimpulan Efektivitas, sesuai uraian jabatan HR Lead di SNX-HR-JA-01 (JA-14 butir 5).",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q080",
+   "sem": {
+    "id": "Q080",
+    "verdict": "OK",
+    "alasan": "Baris tugas nomor 5 di 6.14 JA-14 HR Lead memuat evaluasi kesenjangan kompetensi dan efektivitas pelatihan, dasar penetapan Kesimpulan Efektivitas.",
+    "bukti": "5 | Memastikan kebutuhan kompetensi tiap jabatan telah ditetapkan, kesenjangan kompetensi dievaluasi, serta rencana dan efektivitas pelatihan ditindaklanjuti."
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 10,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 6",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Job Analysis dan Uraian Jabatan: uraian tugas HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5), dasar pembagian tugas di bagian 5.",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q084",
+   "sem": {
+    "id": "Q084",
+    "verdict": "OK",
+    "alasan": "Baris tugas nomor 6 di 6.12 JA-12 HRGA Officer memuat penyiapan bukti pelaksanaan pelatihan dan evaluasi.",
+    "bukti": "6 | Menyiapkan bukti pelaksanaan pelatihan, evaluasi dan dokumentasi audit HR."
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 10,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Job Analysis dan Uraian Jabatan: uraian tugas HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5), dasar pembagian tugas di bagian 5.",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q085",
+   "sem": {
+    "id": "Q085",
+    "verdict": "OK",
+    "alasan": "Baris tugas nomor 5 di 6.14 JA-14 HR Lead sesuai (kompetensi dan efektivitas pelatihan).",
+    "bukti": "5 | Memastikan kebutuhan kompetensi tiap jabatan telah ditetapkan, kesenjangan kompetensi dievaluasi, serta rencana dan efektivitas pelatihan ditindaklanjuti."
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 10,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-JA-01",
+   "lokasi": "bagian 5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 5 DAFTAR JABATAN",
+   "kalimat": "Job Analysis dan Uraian Jabatan: uraian tugas HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5), dasar pembagian tugas di bagian 5.",
+   "tujuan_key": "HR-JA-01",
+   "id": "Q086",
+   "sem": {
+    "id": "Q086",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'dasar pembagian tugas di bagian 5' merujuk bagian 5 PERAN di dokumen asal HR-RPT-01 (yang memuat pembagian tugas berdasar JA-12 butir 6 dan JA-14 butir 5), bukan bagian 5 DAFTAR JABATAN HR-JA-01.",
+    "bukti": "HR-RPT-01 bagian 5 PERAN: Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5)",
+    "tujuan_benar": "SNX-HR-RPT-01 bagian 5 PERAN",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 1,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-04",
+   "lokasi": "butir 6.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.5 RCA dan Tindakan Korektif",
+   "kalimat": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 butir 6.5), untuk breach SLA (SNX-OPS-SOP-05 butir 6.6), dan untuk ketidaksesuaian audit.",
+   "tujuan_key": "OPS-SOP-04",
+   "id": "Q034",
+   "sem": {
+    "id": "Q034",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-04 6.5 mewajibkan RCA insiden P1/P2 dan RCA untuk problem dari insiden berulang dengan SNX-OPS-FRM-10.",
+    "bukti": "1. Susun RCA insiden P1 dan P2 dengan SNX-OPS-FRM-10. 2. Tetapkan insiden berulang sebagai problem. 3. Susun RCA untuk problem"
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 2,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-04",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "Gangguan tidak terencana atau penurunan mutu layanan (SNX-OPS-SOP-04 bagian 3).",
+   "tujuan_key": "OPS-SOP-04",
+   "id": "Q036",
+   "sem": {
+    "id": "Q036",
+    "verdict": "OK",
+    "alasan": "Definisi Insiden di bagian 3 OPS-SOP-04 identik.",
+    "bukti": "Insiden | Gangguan tidak terencana atau penurunan mutu layanan."
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 2,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-04",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "Tingkat keparahan insiden: P1 Kritis, P2 Tinggi, P3 Sedang, P4 Rendah (SNX-OPS-SOP-04 bagian 3).",
+   "tujuan_key": "OPS-SOP-04",
+   "id": "Q037",
+   "sem": {
+    "id": "Q037",
+    "verdict": "OK",
+    "alasan": "Bagian 3 OPS-SOP-04 memuat Severity P1 Kritis, P2 Tinggi, P3 Sedang, P4 Rendah.",
+    "bukti": "Severity | Tingkat prioritas tiket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah."
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 2,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-04",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "Insiden 3 kali atau lebih pada layanan yang sama dalam 30 hari (SNX-OPS-SOP-04 bagian 3).",
+   "tujuan_key": "OPS-SOP-04",
+   "id": "Q038",
+   "sem": {
+    "id": "Q038",
+    "verdict": "OK",
+    "alasan": "Definisi Insiden berulang di bagian 3 OPS-SOP-04 sesuai.",
+    "bukti": "Insiden berulang | Insiden yang terjadi 3 kali atau lebih pada layanan yang sama dalam 30 hari."
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-04",
+   "lokasi": "Bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "SOP Technical Incident Handling & Escalation. Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA.",
+   "tujuan_key": "OPS-SOP-04",
+   "id": "Q041",
+   "sem": {
+    "id": "Q041",
+    "verdict": "OK",
+    "alasan": "Bagian 3 OPS-SOP-04 memuat definisi insiden dan severity.",
+    "bukti": "Insiden | Gangguan tidak terencana atau penurunan mutu layanan. ... Severity | Tingkat prioritas tiket: P1 Kritis, P2 Tinggi"
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-04",
+   "lokasi": "butir 6.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.5 RCA dan Tindakan Korektif",
+   "kalimat": "SOP Technical Incident Handling & Escalation. Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA.",
+   "tujuan_key": "OPS-SOP-04",
+   "id": "Q042",
+   "sem": {
+    "id": "Q042",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-04 6.5 RCA dan Tindakan Korektif memuat kewajiban RCA.",
+    "bukti": "6.5 RCA dan Tindakan Korektif: 1. Susun RCA insiden P1 dan P2 dengan SNX-OPS-FRM-10."
+   }
+  },
+  {
+   "asal": "HR-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-12",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "4.3 HR Lead menetapkan tingkatan dari jumlah garis lapor sampai Direktur Utama (JA-01), sama dengan ukuran di SNX-HR-SOP-12 bagian 3 (USULAN). SNX-HR-JA-01 tidak memuat grading. Bila garis lapor sebuah jabatan masih menunggu konfirmasi di SNX-HR-ORG-01, HRGA Officer menulis keterangan menunggu konfirmasi pada tingkatannya.",
+   "tujuan_key": "HR-SOP-12",
+   "id": "Q070",
+   "sem": {
+    "id": "Q070",
+    "verdict": "OK",
+    "alasan": "Bagian 3 HR-SOP-12 mendefinisikan tingkatan jabatan dari jumlah garis lapor sampai Direktur Utama, sama dengan klaim.",
+    "bukti": "Tingkatan jabatan | Jenjang sebuah jabatan di SNX-HR-ORG-01, dihitung dari jumlah garis lapor sampai Direktur Utama (JA-01)."
+   }
+  },
+  {
+   "asal": "HR-FRM-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-12",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "Rotation: bagian 3 dokumen itu memuat ukuran tingkatan jabatan yang dipakai butir 4.3. Bila form ini disahkan dan memuat tingkatan jabatan, HR Lead memakai tingkatan itu pada butir 4.2 dokumen itu (USULAN).",
+   "tujuan_key": "HR-SOP-12",
+   "id": "Q072",
+   "sem": {
+    "id": "Q072",
+    "verdict": "OK",
+    "alasan": "Bagian 3 HR-SOP-12 memuat ukuran tingkatan jabatan.",
+    "bukti": "Tingkatan jabatan | ... dihitung dari jumlah garis lapor sampai Direktur Utama (JA-01). Dua jabatan satu tingkatan bila jumlah garis lapornya sama."
+   }
+  },
+  {
+   "asal": "HR-FRM-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-12",
+   "lokasi": "butir 4.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.3 Pengembangan keterampilan (ISO 9001:2015 7.2 dan ISO/IEC 27001:2022 7.2): untuk tujuan pengembangan ketera",
+   "kalimat": "Rotation: bagian 3 dokumen itu memuat ukuran tingkatan jabatan yang dipakai butir 4.3. Bila form ini disahkan dan memuat tingkatan jabatan, HR Lead memakai tingkatan itu pada butir 4.2 dokumen itu (USULAN).",
+   "tujuan_key": "HR-SOP-12",
+   "id": "Q073",
+   "sem": {
+    "id": "Q073",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'yang dipakai butir 4.3' merujuk butir 4.3 form asal HR-FRM-01 (yang memakai ukuran SOP-12 bagian 3), bukan HR-SOP-12 4.3 (pengembangan keterampilan). Kalimat sama membedakan 'butir 4.2 dokumen itu'.",
+    "bukti": "HR-FRM-01 4.3 HR Lead menetapkan tingkatan dari jumlah garis lapor sampai Direktur Utama (JA-01), sama dengan ukuran di SNX-HR-SOP-12 bagian 3",
+    "tujuan_benar": "SNX-HR-FRM-01 butir 4.3",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "HR-FRM-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-12",
+   "lokasi": "butir 4.2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.2 Tingkatan jabatan dan unit kerja (ISO 9001:2015 5.3): jabatan tujuan harus satu tingkatan dengan jabatan k",
+   "kalimat": "Rotation: bagian 3 dokumen itu memuat ukuran tingkatan jabatan yang dipakai butir 4.3. Bila form ini disahkan dan memuat tingkatan jabatan, HR Lead memakai tingkatan itu pada butir 4.2 dokumen itu (USULAN).",
+   "tujuan_key": "HR-SOP-12",
+   "id": "Q074",
+   "sem": {
+    "id": "Q074",
+    "verdict": "OK",
+    "alasan": "HR-SOP-12 4.2 menyatakan HR Lead memakai tingkatan dari SNX-HR-FRM-01 bila sudah disahkan.",
+    "bukti": "Bila SNX-HR-FRM-01 sudah disahkan dan menetapkan tingkatan jabatan, HR Lead memakai tingkatan itu (USULAN)."
+   }
+  },
+  {
+   "asal": "HR-FRM-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-12",
+   "lokasi": "butir 4.4",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung Asal mengusulkan, Atasan Langsung Tujuan menanggapi, ",
+   "kalimat": "Rotation: menurut dokumen itu, HR Lead mencatat tindakan pelatihan atas kesenjangan keterampilan di form ini (butir 4.4 dan 4.9 form ini) (USULAN).",
+   "tujuan_key": "HR-SOP-12",
+   "id": "Q078",
+   "sem": {
+    "id": "Q078",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'butir 4.4 ... form ini' merujuk HR-FRM-02 sendiri, bukan HR-SOP-12 4.4 (pemisahan peran). HR-FRM-02 4.4 memuat kesenjangan keterampilan sesudah rotasi sebagai dasar kebutuhan.",
+    "bukti": "4.4 Tiap baris Tabel 1 memuat satu dasar kebutuhan: ... kesenjangan keterampilan sesudah rotasi (SNX-HR-SOP-12)",
+    "tujuan_benar": "SNX-HR-FRM-02 butir 4.4",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "HR-FRM-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-12",
+   "lokasi": "butir 4.9",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.9 Masa rotasi: SNX-HR-JA-01 dan SNX-HR-ORG-01 tidak menetapkan lama atau frekuensi rotasi. Direktur Utama me",
+   "kalimat": "Rotation: menurut dokumen itu, HR Lead mencatat tindakan pelatihan atas kesenjangan keterampilan di form ini (butir 4.4 dan 4.9 form ini) (USULAN).",
+   "tujuan_key": "HR-SOP-12",
+   "id": "Q079",
+   "sem": {
+    "id": "Q079",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'butir 4.9 form ini' merujuk HR-FRM-02 sendiri, bukan HR-SOP-12 4.9 (masa rotasi). HR-FRM-02 4.9 menyatakan HR Lead mencatat sendiri baris dari SOP-12.",
+    "bukti": "HR Lead mencatat sendiri baris yang berasal dari SNX-HR-SOP-10 dan SNX-HR-SOP-12, sesuai rumusan kedua SOP itu (USULAN).",
+    "tujuan_benar": "SNX-HR-FRM-02 butir 4.9",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 1,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-05",
+   "lokasi": "butir 6.6",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.6 Penanganan breach",
+   "kalimat": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 butir 6.5), untuk breach SLA (SNX-OPS-SOP-05 butir 6.6), dan untuk ketidaksesuaian audit.",
+   "tujuan_key": "OPS-SOP-05",
+   "id": "Q035",
+   "sem": {
+    "id": "Q035",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-05 6.6 Penanganan breach mewajibkan RCA breach dengan SNX-OPS-FRM-10.",
+    "bukti": "2. Susun RCA breach layanan NOC dengan SNX-OPS-FRM-10. 3. Susun RCA breach layanan SOC dengan SNX-OPS-FRM-10."
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 2,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-05",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "Pencapaian di bawah target kontrak dalam satu periode (SNX-OPS-SOP-05 bagian 3).",
+   "tujuan_key": "OPS-SOP-05",
+   "id": "Q039",
+   "sem": {
+    "id": "Q039",
+    "verdict": "OK",
+    "alasan": "Definisi Breach di bagian 3 OPS-SOP-05 identik.",
+    "bukti": "Breach | Pencapaian di bawah target kontrak dalam satu periode."
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 2,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-05",
+   "lokasi": "bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "Waktu layanan tidak tersedia, tidak termasuk window maintenance yang sudah dinotifikasi dan gangguan di luar tanggung jawab SINUX sesuai kontrak (SNX-OPS-SOP-05 bagian 3).",
+   "tujuan_key": "OPS-SOP-05",
+   "id": "Q040",
+   "sem": {
+    "id": "Q040",
+    "verdict": "OK",
+    "alasan": "Definisi Downtime yang dihitung di bagian 3 OPS-SOP-05 identik.",
+    "bukti": "Downtime yang dihitung | Waktu layanan tidak tersedia, tidak termasuk window maintenance yang sudah dinotifikasi dan gangguan di luar tanggung jawab SINUX sesuai kontrak."
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-05",
+   "lokasi": "Bagian 3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 3 DEFINITION & ABBREVIATIONS",
+   "kalimat": "SOP Service Level Agreement (SLA) Monitoring. Bagian 3 memuat definisi breach dan downtime yang dihitung, butir 6.6 penanganan breach.",
+   "tujuan_key": "OPS-SOP-05",
+   "id": "Q043",
+   "sem": {
+    "id": "Q043",
+    "verdict": "OK",
+    "alasan": "Bagian 3 OPS-SOP-05 memuat definisi Breach dan Downtime yang dihitung.",
+    "bukti": "Breach | Pencapaian di bawah target kontrak dalam satu periode. Downtime yang dihitung | Waktu layanan tidak tersedia"
+   }
+  },
+  {
+   "asal": "OPS-FRM-10",
+   "bagian_asal": 7,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-05",
+   "lokasi": "butir 6.6",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.6 Penanganan breach",
+   "kalimat": "SOP Service Level Agreement (SLA) Monitoring. Bagian 3 memuat definisi breach dan downtime yang dihitung, butir 6.6 penanganan breach.",
+   "tujuan_key": "OPS-SOP-05",
+   "id": "Q044",
+   "sem": {
+    "id": "Q044",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-05 6.6 berjudul Penanganan breach.",
+    "bukti": "6.6 Penanganan breach: 1. Catat breach di sheet Laporan Bulanan pada SNX-OPS-FRM-09."
+   }
+  },
+  {
+   "asal": "COM-SOP-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-01",
+   "lokasi": "butir 4.1",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya sesudah Service Delivery Manager menerima pa",
+   "kalimat": "Service Delivery Manager mengembalikan paket ke Commercial secara tertulis dan proyek belum dimulai (SNX-OPS-SOP-01 butir 4.1 dan bagian 9). Business Development melengkapi paket sesuai alasan penolakan (butir 4.19).",
+   "tujuan_key": "OPS-SOP-01",
+   "id": "Q006",
+   "sem": {
+    "id": "Q006",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-01 4.1 mengatur proyek dimulai hanya sesudah SDM menerima paket G1; penolakan ditangani di bagian 9 yang merujuk butir 4.1.",
+    "bukti": "4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya sesudah Service Delivery Manager menerima paket G1 dari Commercial"
+   }
+  },
+  {
+   "asal": "COM-SOP-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-01",
+   "lokasi": "butir 9",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "butir 9 hanya ada sebagai uraian bernomor di sel tabel",
+   "kalimat": "Service Delivery Manager mengembalikan paket ke Commercial secara tertulis dan proyek belum dimulai (SNX-OPS-SOP-01 butir 4.1 dan bagian 9). Business Development melengkapi paket sesuai alasan penolakan (butir 4.19).",
+   "tujuan_key": "OPS-SOP-01",
+   "id": "Q007",
+   "sem": {
+    "id": "Q007",
+    "verdict": "OK",
+    "alasan": "Bagian 9 OPS-SOP-01 (EXCEPTION MANAGEMENT) ada sebagai heading bernomor dan memuat kondisi Paket G1 ditolak, isinya sesuai kalimat.",
+    "bukti": "Paket G1 ditolak | Service Delivery Manager mengembalikan paket ke Commercial secara tertulis, dan proyek belum dimulai (butir 4.1)."
+   }
+  },
+  {
+   "asal": "OPS-FRM-01",
+   "bagian_asal": 0,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-01",
+   "lokasi": "Bagian 6.4",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.4 Pemantauan dan pengendalian",
+   "kalimat": "Kontrol Dokumen!B21: Perbarui kolom Progres dan Status minimal mingguan (SNX-OPS-SOP-01 Bagian 6.4).",
+   "tujuan_key": "OPS-SOP-01",
+   "id": "Q032",
+   "sem": {
+    "id": "Q032",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-01 6.4 langkah 1 memperbarui progres dan status di SNX-OPS-FRM-01 minimal mingguan.",
+    "bukti": "1. Perbarui progres dan status tugas di SNX-OPS-FRM-01 minimal mingguan. | Project Manager"
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 1,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-01",
+   "lokasi": "butir 4.1",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya sesudah Service Delivery Manager menerima pa",
+   "kalimat": "Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Rekaman serah terimanya SNX-COM-FRM-02.",
+   "tujuan_key": "OPS-SOP-01",
+   "id": "Q112",
+   "sem": {
+    "id": "Q112",
+    "verdict": "OK",
+    "alasan": "Serah terima order ke Delivery diatur oleh penerimaan paket G1 di OPS-SOP-01 4.1.",
+    "bukti": "4.1 Penerimaan paket G1 (ISO 9001:2015 8.2): proyek dimulai hanya sesudah Service Delivery Manager menerima paket G1 dari Commercial"
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 8,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-PRO-01",
+   "lokasi": "butir 4.15",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.15 Retensi (Annex A 5.33). INTERNAL disimpan sesuai master list. RESTRICTED disimpan sesuai master list dan ",
+   "kalimat": "Mengikuti master list dan kontrak (SNX-ISMS-PRO-01 butir 4.15). HR Lead bersama Legal menetapkan jangka retensinya (USULAN).",
+   "tujuan_key": "ISMS-PRO-01",
+   "id": "Q083",
+   "sem": {
+    "id": "Q083",
+    "verdict": "OK",
+    "alasan": "ISMS-PRO-01 4.15 menyatakan RESTRICTED disimpan sesuai master list dan kontrak.",
+    "bukti": "4.15 Retensi (Annex A 5.33). INTERNAL disimpan sesuai master list. RESTRICTED disimpan sesuai master list dan kontrak."
+   }
+  },
+  {
+   "asal": "MKT-REG-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-PRO-01",
+   "lokasi": "butir 4.1",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.1 Klasifikasi (Annex A 5.12). Pemilik informasi menetapkan klasifikasi saat informasi dibuat atau diterima. ",
+   "kalimat": "4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemilik informasi menurunkannya menjadi PUBLIC saat Approver menyetujui versinya (USULAN). Pemilik informasi mencatat penurunan itu di SNX-ISMS-REG-01 mengikuti SNX-ISMS-PRO-01, dan register ini hanya merujuk. Penetapan dan penurunan klasifikasi diatur di SNX-ISMS-PRO-01 butir 4.1 dan 4.2.",
+   "tujuan_key": "ISMS-PRO-01",
+   "id": "Q122",
+   "sem": {
+    "id": "Q122",
+    "verdict": "OK",
+    "alasan": "ISMS-PRO-01 4.1 mengatur penetapan klasifikasi oleh Pemilik informasi.",
+    "bukti": "4.1 Klasifikasi (Annex A 5.12). Pemilik informasi menetapkan klasifikasi saat informasi dibuat atau diterima."
+   }
+  },
+  {
+   "asal": "MKT-REG-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-PRO-01",
+   "lokasi": "butir 4.2",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.2 Hanya Pemilik informasi yang boleh menurunkan klasifikasi, dan penurunannya dicatat.",
+   "kalimat": "4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemilik informasi menurunkannya menjadi PUBLIC saat Approver menyetujui versinya (USULAN). Pemilik informasi mencatat penurunan itu di SNX-ISMS-REG-01 mengikuti SNX-ISMS-PRO-01, dan register ini hanya merujuk. Penetapan dan penurunan klasifikasi diatur di SNX-ISMS-PRO-01 butir 4.1 dan 4.2.",
+   "tujuan_key": "ISMS-PRO-01",
+   "id": "Q123",
+   "sem": {
+    "id": "Q123",
+    "verdict": "OK",
+    "alasan": "ISMS-PRO-01 4.2 mengatur penurunan klasifikasi hanya oleh Pemilik informasi dan dicatat.",
+    "bukti": "4.2 Hanya Pemilik informasi yang boleh menurunkan klasifikasi, dan penurunannya dicatat."
+   }
+  },
+  {
+   "asal": "MKT-REG-01",
+   "bagian_asal": 9,
+   "jenis": "silang",
+   "tujuan": "SNX-ISMS-PRO-01",
+   "lokasi": "butir 4.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.5 Pelabelan (Annex A 5.13). Informasi PUBLIC dan INTERNAL boleh tanpa label, dan informasi tanpa label diang",
+   "kalimat": "Information Asset Register. Tempat Pemilik informasi mencatat penurunan klasifikasi materi menurut SNX-ISMS-PRO-01 (butir 4.5 register ini).",
+   "tujuan_key": "ISMS-PRO-01",
+   "id": "Q125",
+   "sem": {
+    "id": "Q125",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'(butir 4.5 register ini)' merujuk MKT-REG-01 sendiri, bukan ISMS-PRO-01 4.5 (pelabelan). MKT-REG-01 4.5 memuat pencatatan penurunan klasifikasi di SNX-ISMS-REG-01.",
+    "bukti": "Pemilik informasi mencatat penurunan itu di SNX-ISMS-REG-01 mengikuti SNX-ISMS-PRO-01, dan register ini hanya merujuk.",
+    "tujuan_benar": "SNX-MKT-REG-01 butir 4.5",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "LEG-REG-04",
+   "bagian_asal": 3,
+   "jenis": "silang",
+   "tujuan": "SNX-LEG-SOP-03",
+   "lokasi": "bagian 8",
+   "status": "ADA",
+   "judul_tujuan": "bagian 8 SERVICE LEVEL AGREEMENT (SLA)",
+   "kalimat": "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8, dan mencatat Lokasi Dokumen Asli menurut SNX-LEG-SOP-03 prosedur 6.3 langkah 4.",
+   "tujuan_key": "LEG-SOP-03",
+   "id": "Q108",
+   "sem": {
+    "id": "Q108",
+    "verdict": "OK",
+    "alasan": "LEG-SOP-03 bagian 8 memuat batas waktu unggah salinan Dokumen Final dan pembaruan register (6.3 langkah 1 dan 2).",
+    "bukti": "Unggah salinan Dokumen Final kontrak dan perbarui register (6.3 langkah 1 dan 2) | Staff Legal | Paling lambat 2 hari kerja"
+   }
+  },
+  {
+   "asal": "LEG-REG-04",
+   "bagian_asal": 3,
+   "jenis": "silang",
+   "tujuan": "SNX-LEG-SOP-03",
+   "lokasi": "prosedur 6.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 STANDARD OPERATING PROCEDURE > 6.3 Penyimpanan dan Pengarsipan",
+   "kalimat": "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8, dan mencatat Lokasi Dokumen Asli menurut SNX-LEG-SOP-03 prosedur 6.3 langkah 4.",
+   "tujuan_key": "LEG-SOP-03",
+   "id": "Q109",
+   "sem": {
+    "id": "Q109",
+    "verdict": "OK",
+    "alasan": "LEG-SOP-03 6.3 Penyimpanan dan Pengarsipan memuat pencatatan lokasi dokumen asli.",
+    "bukti": "6.3 Penyimpanan dan Pengarsipan: 4. Catat lokasi tempat aman dokumen asli di register."
+   }
+  },
+  {
+   "asal": "LEG-REG-04",
+   "bagian_asal": 3,
+   "jenis": "silang",
+   "tujuan": "SNX-LEG-SOP-03",
+   "lokasi": "langkah 4",
+   "status": "ADA",
+   "judul_tujuan": "6.3 Penyimpanan dan Pengarsipan > langkah 4: 4. Catat lokasi tempat aman dokumen asli di register. | Staff Legal | Lokasi dokumen asli ",
+   "kalimat": "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8, dan mencatat Lokasi Dokumen Asli menurut SNX-LEG-SOP-03 prosedur 6.3 langkah 4.",
+   "tujuan_key": "LEG-SOP-03",
+   "id": "Q110",
+   "sem": {
+    "id": "Q110",
+    "verdict": "OK",
+    "alasan": "Langkah 4 di 6.3 LEG-SOP-03 sesuai klaim.",
+    "bukti": "4. Catat lokasi tempat aman dokumen asli di register. | Staff Legal | Lokasi dokumen asli di register"
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 5,
+   "jenis": "internal",
+   "tujuan": "SNX-HR-RPT-01",
+   "lokasi": "butir 6",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5) di SNX-HR-JA-01.",
+   "tujuan_key": "HR-RPT-01",
+   "id": "Q081",
+   "sem": {
+    "id": "Q081",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Rujukan 'JA-12 butir 6' secara eksplisit ke SNX-HR-JA-01, bukan HR-RPT-01. Di HR-JA-01 6.12 baris tugas 6 sesuai (bukti pelatihan dan evaluasi).",
+    "bukti": "6.12 JA-12 HRGA Officer: 6 | Menyiapkan bukti pelaksanaan pelatihan, evaluasi dan dokumentasi audit HR.",
+    "tujuan_benar": "SNX-HR-JA-01 6.12 JA-12 butir tugas 6",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "HR-RPT-01",
+   "bagian_asal": 5,
+   "jenis": "internal",
+   "tujuan": "SNX-HR-RPT-01",
+   "lokasi": "butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan HRGA Officer (JA-12 butir 6) dan HR Lead (JA-14 butir 5) di SNX-HR-JA-01.",
+   "tujuan_key": "HR-RPT-01",
+   "id": "Q082",
+   "sem": {
+    "id": "Q082",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Rujukan 'JA-14 butir 5' secara eksplisit ke SNX-HR-JA-01, bukan HR-RPT-01. Di HR-JA-01 6.14 baris tugas 5 sesuai (efektivitas pelatihan).",
+    "bukti": "6.14 JA-14 HR Lead: 5 | ... kesenjangan kompetensi dievaluasi, serta rencana dan efektivitas pelatihan ditindaklanjuti.",
+    "tujuan_benar": "SNX-HR-JA-01 6.14 JA-14 butir tugas 5",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "OPS-FRM-04",
+   "bagian_asal": 0,
+   "jenis": "silang",
+   "tujuan": "SNX-OPS-SOP-02",
+   "lokasi": "Bagian 5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 5 ROLES, RESPONSIBILITIES & AUTHORITIES",
+   "kalimat": "Change Log!A2: Approver sesuai SNX-OPS-SOP-02 Bagian 5.",
+   "tujuan_key": "OPS-SOP-02",
+   "id": "Q033",
+   "sem": {
+    "id": "Q033",
+    "verdict": "OK",
+    "alasan": "OPS-SOP-02 bagian 5 memuat peran Approver dan pemegangnya menurut jenis change.",
+    "bukti": "Approver | Mengkaji dampak, risiko, kesiapan rollback, dan kecocokan jadwal CR; ... memberi status Disetujui, Ditolak, atau Revisi di SNX-OPS-FRM-04"
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 5,
+   "jenis": "internal",
+   "tujuan": "SNX-MKT-REG-02",
+   "lokasi": "butir 4",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pencatat register dan PIC Aktivitas. Mencatat Aktivitas di Tabel 1 dan Tabel 2, menulis ID Persetujuan Materi di Tabel 1, mengecek baris materi di SNX-MKT-REG-01, dan menghentikan pemakaian materi tanpa persetujuan (butir 4.2 sampai 4.7, 4.9, dan 4.11). Tugas mengelola event, webinar, dan campaign ada di uraian JA-06 butir 4.",
+   "tujuan_key": "MKT-REG-02",
+   "id": "Q129",
+   "sem": {
+    "id": "Q129",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'uraian JA-06 butir 4' merujuk SNX-HR-JA-01 6.6 JA-06 Brand & Marketing baris tugas 4, bukan MKT-REG-02 sendiri. Isi sesuai.",
+    "bukti": "6.6 JA-06 Brand & Marketing: 4 | Mengelola event/webinar/campaign serta koordinasi vendor bila ada.",
+    "tujuan_benar": "SNX-HR-JA-01 6.6 JA-06 butir tugas 4",
+    "verdict_ulang": "OK"
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.10",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.10 Brand & Marketing mencatat tiap klaim di dalam materi di Tabel 4 dengan ID materinya, lalu mencatat Pemve",
+   "kalimat": "4.6 Brand & Marketing menelusuri persetujuan materi dan validasi klaim di SNX-MKT-REG-01 lewat ID Persetujuan Materi. Register ini tidak mencatat klaim (SNX-MKT-REG-01 butir 4.10 sampai 4.13).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q126",
+   "sem": {
+    "id": "Q126",
+    "verdict": "OK",
+    "alasan": "MKT-REG-01 butir 4.10 ada dan mengatur pencatatan klaim di Tabel 4/5; sesuai klaim bahwa klaim dicatat di MKT-REG-01 (rentang 4.10 sampai 4.13).",
+    "bukti": "4.10 Brand & Marketing mencatat tiap klaim di dalam materi di Tabel 4 dengan ID materinya, lalu mencatat Pemverifikasi, hasil, dan bukti verifikasinya di Tabel 5."
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.13",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.13 Approver tidak menyetujui versi yang masih memuat klaim tanpa sumber atau bukti pendukung, klaim tanpa ha",
+   "kalimat": "4.6 Brand & Marketing menelusuri persetujuan materi dan validasi klaim di SNX-MKT-REG-01 lewat ID Persetujuan Materi. Register ini tidak mencatat klaim (SNX-MKT-REG-01 butir 4.10 sampai 4.13).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q127",
+   "sem": {
+    "id": "Q127",
+    "verdict": "OK",
+    "alasan": "MKT-REG-01 butir 4.13 ada, penutup rentang ketentuan klaim (persetujuan ditolak bila klaim tanpa bukti/verifikasi).",
+    "bukti": "4.13 Approver tidak menyetujui versi yang masih memuat klaim tanpa sumber atau bukti pendukung, klaim tanpa hasil verifikasi"
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.8",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.8 Perubahan isi pada versi yang sudah Disetujui atau Terbit membuat versi baru, dengan baris baru dan perset",
+   "kalimat": "4.9 Bila Aktivitas beralih ke versi baru sebuah materi, Brand & Marketing menambah ID Persetujuan Materi versi baru di Tabel 1 sesudah versi itu Disetujui, dan tidak menghapus ID versi lama. Versi baru memakai baris baru di SNX-MKT-REG-01 (SNX-MKT-REG-01 butir 4.8; USULAN).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q128",
+   "sem": {
+    "id": "Q128",
+    "verdict": "OK",
+    "alasan": "MKT-REG-01 butir 4.8 mengatur bahwa versi baru memakai baris baru; sesuai klaim.",
+    "bukti": "4.8 Perubahan isi pada versi yang sudah Disetujui atau Terbit membuat versi baru, dengan baris baru dan persetujuan baru."
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 6,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.4",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.4 VP Commercial menjadi Approver untuk semua materi, dan menjadi Reviewer kecuali ia menunjuk jabatan lain s",
+   "kalimat": "6.7 Brand & Marketing menulis nomor baris materi dari Tabel 1 SNX-MKT-REG-01 di kolom ID Persetujuan Materi (butir 4.4, 4.5, 4.7, dan 4.9). Bila Aktivitas memakai lebih dari satu materi, Brand & Marketing memisahkan nomornya dengan koma (USULAN).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q130",
+   "sem": {
+    "id": "Q130",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Rujukan butir 4.4 di MKT-REG-02 6.7 menunjuk butir register itu sendiri (MKT-REG-02 4.4 menulis ID Persetujuan Materi di Tabel 1), bukan MKT-REG-01 4.4 (VP Commercial sebagai Approver).",
+    "tujuan_benar": "SNX-MKT-REG-02 butir 4.4",
+    "verdict_ulang": "OK",
+    "bukti": "4.4 Brand & Marketing menulis di Tabel 1 ID Persetujuan Materi dari SNX-MKT-REG-01 untuk tiap materi eksternal yang dipakai Aktivitas"
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 6,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemili",
+   "kalimat": "6.7 Brand & Marketing menulis nomor baris materi dari Tabel 1 SNX-MKT-REG-01 di kolom ID Persetujuan Materi (butir 4.4, 4.5, 4.7, dan 4.9). Bila Aktivitas memakai lebih dari satu materi, Brand & Marketing memisahkan nomornya dengan koma (USULAN).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q131",
+   "sem": {
+    "id": "Q131",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Butir 4.5 di 6.7 menunjuk MKT-REG-02 sendiri (memakai materi hanya bila Disetujui/Terbit), bukan MKT-REG-01 4.5 (Pemilik informasi dan klasifikasi).",
+    "tujuan_benar": "SNX-MKT-REG-02 butir 4.5",
+    "verdict_ulang": "OK",
+    "bukti": "4.5 Brand & Marketing memakai materi hanya bila barisnya di SNX-MKT-REG-01 berstatus Disetujui atau Terbit dan kolom Tanggal Persetujuannya terisi"
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 6,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.7",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.7 Brand & Marketing menjadwalkan publikasi hanya sesudah Approver menyetujui versi itu, dan Tanggal Publikas",
+   "kalimat": "6.7 Brand & Marketing menulis nomor baris materi dari Tabel 1 SNX-MKT-REG-01 di kolom ID Persetujuan Materi (butir 4.4, 4.5, 4.7, dan 4.9). Bila Aktivitas memakai lebih dari satu materi, Brand & Marketing memisahkan nomornya dengan koma (USULAN).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q132",
+   "sem": {
+    "id": "Q132",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Butir 4.7 di 6.7 menunjuk MKT-REG-02 sendiri (mengecek baris materi sebelum dipakai), bukan MKT-REG-01 4.7 (jadwal publikasi).",
+    "tujuan_benar": "SNX-MKT-REG-02 butir 4.7",
+    "verdict_ulang": "OK",
+    "bukti": "4.7 Brand & Marketing mengecek baris materi di SNX-MKT-REG-01 sebelum materi dipakai (USULAN)."
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 8,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.5",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemili",
+   "kalimat": "Tabel 1 memuat ID Persetujuan Materi, yang menunjuk persetujuan dan validasi klaim di SNX-MKT-REG-01 sebelum materi dipakai (butir 4.5 dan 4.6).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q133",
+   "sem": {
+    "id": "Q133",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Baris Acuan ISO MKT-REG-02 memakai butir register itu sendiri (pola sama dengan baris lain di tabel itu, mis. butir 4.10 dan 4.11). MKT-REG-02 4.5 = memakai materi hanya bila disetujui; MKT-REG-01 4.5 soal klasifikasi, tidak cocok.",
+    "tujuan_benar": "SNX-MKT-REG-02 butir 4.5",
+    "verdict_ulang": "OK",
+    "bukti": "4.5 Brand & Marketing memakai materi hanya bila barisnya di SNX-MKT-REG-01 berstatus Disetujui atau Terbit"
+   }
+  },
+  {
+   "asal": "MKT-REG-02",
+   "bagian_asal": 8,
+   "jenis": "silang",
+   "tujuan": "SNX-MKT-REG-01",
+   "lokasi": "butir 4.6",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.6 Approver menyetujui satu versi materi secara tertulis sebelum materi terbit. Persetujuan lisan tidak dihit",
+   "kalimat": "Tabel 1 memuat ID Persetujuan Materi, yang menunjuk persetujuan dan validasi klaim di SNX-MKT-REG-01 sebelum materi dipakai (butir 4.5 dan 4.6).",
+   "tujuan_key": "MKT-REG-01",
+   "id": "Q134",
+   "sem": {
+    "id": "Q134",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Sepasang dengan 4.5 dalam kurung yang sama; menunjuk MKT-REG-02 4.6 (menelusuri persetujuan dan validasi klaim lewat ID), cocok persis dengan kalimat. MKT-REG-01 4.6 hanya cocok sebagian.",
+    "tujuan_benar": "SNX-MKT-REG-02 butir 4.6",
+    "verdict_ulang": "OK",
+    "bukti": "4.6 Brand & Marketing menelusuri persetujuan materi dan validasi klaim di SNX-MKT-REG-01 lewat ID Persetujuan Materi."
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 1",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi sebagai pencatat rekaman (Ketentuan butir 1 sampai 5, 7, dan 8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q051",
+   "sem": {
+    "id": "Q051",
+    "verdict": "OK",
+    "alasan": "Ketentuan Penggunaan butir 1 (bagian 3, bernomor tampak) memuat tugas Staff Legal memakai dan mengisi formulir.",
+    "bukti": "1. Staff Legal memakai satu formulir untuk satu kontrak pelanggan dan mengisinya sesudah Unit Kerja Pemohon menyerahkan permintaan penelaahan secara lengkap"
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi sebagai pencatat rekaman (Ketentuan butir 1 sampai 5, 7, dan 8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q052",
+   "sem": {
+    "id": "Q052",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 5 memuat Staff Legal mencentang Hasil Penelaahan dan Rekomendasi (mencatat rekomendasi).",
+    "bukti": "5. Staff Legal mencentang Hasil Penelaahan dan satu Rekomendasi ... dan menulis dasar rekomendasi."
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 7",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi sebagai pencatat rekaman (Ketentuan butir 1 sampai 5, 7, dan 8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q053",
+   "sem": {
+    "id": "Q053",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 7 memuat telaah ulang kontrak oleh Staff Legal; termasuk tugas menelaah kontrak.",
+    "bukti": "7. Staff Legal menelaah ulang kontrak yang berubah material sesudah Persetujuan Legal (SNX-LEG-SOP-02 butir 4.14), dan mengisi formulir baru"
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 1",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q055",
+   "sem": {
+    "id": "Q055",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 1 menyebut Line Manager Legal sebagai pemutus kewajiban pemakaian formulir; peran LML ada di butir itu, walau bukan salah satu dari tiga tugas yang diringkas kalimat.",
+    "bukti": "Kewajiban memakai formulir ini untuk setiap kontrak pelanggan belum diputus (USULAN: Line Manager Legal memutuskan)."
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 2",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q056",
+   "sem": {
+    "id": "Q056",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 2 memuat LML menetapkan Target Penyelesaian.",
+    "bukti": "Line Manager Legal menetapkan Target Penyelesaian pada penugasan."
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 4",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q057",
+   "sem": {
+    "id": "Q057",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 4 memuat eskalasi risiko Tinggi kepada LML; peran LML ada.",
+    "bukti": "lalu mengeskalasi risiko Tinggi kepada Line Manager Legal (SNX-LEG-SOP-02 butir 6.4)."
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-01",
+   "lokasi": "Ketentuan butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-01",
+   "id": "Q058",
+   "sem": {
+    "id": "Q058",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 5 memuat LML memeriksa formulir terisi.",
+    "bukti": "Rekomendasi hanya satu pilihan (USULAN). Line Manager Legal memeriksa formulir terisi."
+   }
+  },
+  {
+   "asal": "LEG-REG-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-REG-01",
+   "lokasi": "Ketentuan butir 1",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11).",
+   "tujuan_key": "LEG-REG-01",
+   "id": "Q045",
+   "sem": {
+    "id": "Q045",
+    "verdict": "OK",
+    "alasan": "Ketentuan Pengelolaan butir 1 memuat Staff Legal mencatat dan memperbarui register.",
+    "bukti": "1. Staff Legal mencatat dan memperbarui register serta mencatat lokasi bukti pendukung."
+   }
+  },
+  {
+   "asal": "LEG-REG-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-REG-01",
+   "lokasi": "Ketentuan butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11).",
+   "tujuan_key": "LEG-REG-01",
+   "id": "Q046",
+   "sem": {
+    "id": "Q046",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 5 memuat tinjauan bulanan register oleh Staff Legal.",
+    "bukti": "5. Staff Legal meninjau register setiap bulan dan menandai dokumen yang jatuh tempo dalam 90 hari"
+   }
+  },
+  {
+   "asal": "LEG-REG-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-REG-01",
+   "lokasi": "Ketentuan butir 7",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11).",
+   "tujuan_key": "LEG-REG-01",
+   "id": "Q047",
+   "sem": {
+    "id": "Q047",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 7 memuat Staff Legal mencatat dan menindaklanjuti dokumen Belum Tersedia/Belum Diverifikasi; sesuai (akhir rentang 5 sampai 7, pengingat perpanjangan di butir 6).",
+    "bukti": "7. Staff Legal mencatat dokumen berstatus Belum Tersedia atau Belum Diverifikasi di register dan menindaklanjutinya kepada pihak yang relevan."
+   }
+  },
+  {
+   "asal": "LEG-REG-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-REG-01",
+   "lokasi": "Ketentuan butir 9",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11).",
+   "tujuan_key": "LEG-REG-01",
+   "id": "Q048",
+   "sem": {
+    "id": "Q048",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 9 memuat Staff Legal memperbarui register saat ada perubahan dokumen.",
+    "bukti": "9. Staff Legal memperbarui register saat ada penerbitan, perubahan, pembaruan, pencabutan, atau perubahan status dokumen."
+   }
+  },
+  {
+   "asal": "LEG-REG-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-REG-01",
+   "lokasi": "Ketentuan butir 11",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11).",
+   "tujuan_key": "LEG-REG-01",
+   "id": "Q049",
+   "sem": {
+    "id": "Q049",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 11 memuat pencatatan hasil pemeriksaan dan tindak lanjut.",
+    "bukti": "11. Staff Legal mencatat hasil pemeriksaan dan tindak lanjut pada tabel Catatan Pemeriksaan"
+   }
+  },
+  {
+   "asal": "LEG-REG-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-REG-01",
+   "lokasi": "Ketentuan butir 2",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01. Pemilik dokumen dan pemilik rekaman register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2).",
+   "tujuan_key": "LEG-REG-01",
+   "id": "Q050",
+   "sem": {
+    "id": "Q050",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 2 memuat LML memeriksa isi register dan memverifikasi akta.",
+    "bukti": "2. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register (USULAN) dan memverifikasi akta sebelum dinyatakan selesai"
+   }
+  },
+  {
+   "asal": "LEG-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-02",
+   "lokasi": "Ketentuan butir 1",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-02",
+   "id": "Q102",
+   "sem": {
+    "id": "Q102",
+    "verdict": "OK",
+    "alasan": "Ketentuan Penggunaan butir 1 memuat Staff Legal mengisi Informasi Umum laporan.",
+    "bukti": "1. Satu laporan dipakai untuk satu Periode Evaluasi. Staff Legal mengisi tabel Informasi Umum."
+   }
+  },
+  {
+   "asal": "LEG-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-02",
+   "lokasi": "Ketentuan butir 7",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-02",
+   "id": "Q103",
+   "sem": {
+    "id": "Q103",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 7 memuat Staff Legal memberi Status Kepatuhan Tidak Berlaku.",
+    "bukti": "7. Staff Legal memberi Status Kepatuhan Tidak Berlaku pada Persyaratan yang tidak dapat diterapkan pada kegiatan SINUX"
+   }
+  },
+  {
+   "asal": "LEG-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-02",
+   "lokasi": "Ketentuan butir 9",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-02",
+   "id": "Q104",
+   "sem": {
+    "id": "Q104",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 9 memuat Staff Legal menentukan Status Kepatuhan dari Bukti.",
+    "bukti": "9. Staff Legal menentukan Status Kepatuhan tiap Persyaratan dari Bukti yang lokasinya dapat ditelusuri."
+   }
+  },
+  {
+   "asal": "LEG-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-02",
+   "lokasi": "Ketentuan butir 15",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-02",
+   "id": "Q105",
+   "sem": {
+    "id": "Q105",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 15 memuat Staff Legal menulis Kesimpulan Umum, Batasan, Rekomendasi.",
+    "bukti": "15. Staff Legal menulis Kesimpulan Umum, Batasan Evaluasi, dan Rekomendasi dari angka pada tabel Ringkasan per Bidang"
+   }
+  },
+  {
+   "asal": "LEG-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-02",
+   "lokasi": "Ketentuan butir 16",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Memeriksa laporan terisi, menetapkan Tingkat Kepatuhan seluruh Bidang, dan menyampaikan laporan terisi kepada Manajemen (Ketentuan butir 16 dan 17). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-02",
+   "id": "Q106",
+   "sem": {
+    "id": "Q106",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 16 memuat LML memeriksa laporan dan menetapkan Tingkat Kepatuhan seluruh Bidang.",
+    "bukti": "16. Line Manager Legal memeriksa laporan terisi dan menetapkan Tingkat Kepatuhan seluruh Bidang sebelum persetujuan (USULAN)."
+   }
+  },
+  {
+   "asal": "LEG-RPT-02",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-RPT-02",
+   "lokasi": "Ketentuan butir 17",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Memeriksa laporan terisi, menetapkan Tingkat Kepatuhan seluruh Bidang, dan menyampaikan laporan terisi kepada Manajemen (Ketentuan butir 16 dan 17). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-RPT-02",
+   "id": "Q107",
+   "sem": {
+    "id": "Q107",
+    "verdict": "OK",
+    "alasan": "Ketentuan butir 17 memuat LML menyampaikan laporan kepada Manajemen.",
+    "bukti": "17. Line Manager Legal menyampaikan laporan terisi yang sudah disetujui kepada Manajemen"
+   }
+  },
+  {
+   "asal": "LEG-FRM-02",
+   "bagian_asal": 3,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-02",
+   "lokasi": "Petunjuk Pengisian butir 1",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Mengisi lembar dan menyerahkannya ke Line Manager Legal (Petunjuk Pengisian butir 1 sampai 21). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-02",
+   "id": "Q059",
+   "sem": {
+    "id": "Q059",
+    "verdict": "OK",
+    "alasan": "Petunjuk Pengisian butir 1 (bagian 4, bernomor tampak) memuat Staff Legal membuat lembar.",
+    "bukti": "1. Staff Legal membuat satu lembar dari form ini untuk tiap kontrak Vendor/Pemasok yang ditelaah"
+   }
+  },
+  {
+   "asal": "LEG-FRM-02",
+   "bagian_asal": 3,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-02",
+   "lokasi": "Petunjuk Pengisian butir 21",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Mengisi lembar dan menyerahkannya ke Line Manager Legal (Petunjuk Pengisian butir 1 sampai 21). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-02",
+   "id": "Q060",
+   "sem": {
+    "id": "Q060",
+    "verdict": "OK",
+    "alasan": "Petunjuk Pengisian butir 21 memuat Staff Legal menyerahkan lembar ke LML.",
+    "bukti": "21. Staff Legal menyerahkan lembar ke Line Manager Legal."
+   }
+  },
+  {
+   "asal": "LEG-FRM-02",
+   "bagian_asal": 3,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-02",
+   "lokasi": "butir 5",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 5 dan 22 sampai 24). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-02",
+   "id": "Q061",
+   "sem": {
+    "id": "Q061",
+    "verdict": "OK",
+    "alasan": "Butir 5 Petunjuk Pengisian memuat target yang dikonfirmasi LML; sesuai tugas mengonfirmasi target penyelesaian.",
+    "bukti": "5. Staff Legal menulis di Target Penyelesaian target yang dikonfirmasi Line Manager Legal menurut SNX-LEG-SOP-02 bagian 8."
+   }
+  },
+  {
+   "asal": "LEG-FRM-02",
+   "bagian_asal": 3,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-02",
+   "lokasi": "butir 22",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 5 dan 22 sampai 24). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-02",
+   "id": "Q062",
+   "sem": {
+    "id": "Q062",
+    "verdict": "OK",
+    "alasan": "Butir 22 Petunjuk Pengisian memuat LML memeriksa lembar.",
+    "bukti": "22. Line Manager Legal memeriksa lembar yang diserahkan Staff Legal."
+   }
+  },
+  {
+   "asal": "LEG-FRM-02",
+   "bagian_asal": 3,
+   "jenis": "internal",
+   "tujuan": "SNX-LEG-FRM-02",
+   "lokasi": "butir 24",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 5 dan 22 sampai 24). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-FRM-02",
+   "id": "Q063",
+   "sem": {
+    "id": "Q063",
+    "verdict": "OK",
+    "alasan": "Butir 24 Petunjuk Pengisian memuat LML memberi Persetujuan Legal atau mengembalikan lembar.",
+    "bukti": "24. Line Manager Legal memberi Persetujuan Legal atau mengembalikan lembar untuk direvisi (SNX-LEG-SOP-02 butir 6.5)."
+   }
+  },
+  {
+   "asal": "HR-SOP-10",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-FRM-02",
+   "lokasi": "bagian 9",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 REKAMAN",
+   "kalimat": "Annual Training Plan & Training Matrix: tempat tindakan pemenuhan syarat kenaikan jabatan (bagian 9) (USULAN).",
+   "tujuan_key": "HR-FRM-02",
+   "id": "Q011",
+   "sem": {
+    "id": "Q011",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'(bagian 9)' di baris Dokumen Terkait HR-SOP-10 menunjuk bagian 9 SOP itu sendiri (Exception Management, baris Keputusan menyetujui dengan syarat). HR-FRM-02 bagian 9 adalah REKAMAN, tidak memuat tindakan pemenuhan syarat.",
+    "tujuan_benar": "SNX-HR-SOP-10 bagian 9 (baris Keputusan menyetujui dengan syarat)",
+    "verdict_ulang": "OK",
+    "bukti": "Keputusan menyetujui dengan syarat | HR Lead memasukkan tindakan pemenuhan syarat ke SNX-HR-FRM-02 dan melapor ke Direktur Utama"
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-FRM-02",
+   "lokasi": "butir 6.5",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "bagian 6 JENIS PELATIHAN; nomor tampak di bagian ini: tidak ada",
+   "kalimat": "4.3 Pengembangan keterampilan (ISO 9001:2015 7.2 dan ISO/IEC 27001:2022 7.2): untuk tujuan pengembangan keterampilan, HR Lead memeriksa bahwa keterampilan yang dituju tertulis sebagai kompetensi jabatan tujuan di SNX-HR-JA-01 (butir 6.2). Sesudah masa rotasi, HR Lead menilai kompetensi aktual karyawan terhadap keterampilan itu, mencatat kesenjangan, dan mencatat tindakan pelatihannya di SNX-HR-FRM",
+   "tujuan_key": "HR-FRM-02",
+   "id": "Q019",
+   "sem": {
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "verdict_ulang": "OK",
+    "tujuan_benar": "SNX-HR-SOP-12 (dokumen asal) prosedur 6.5 langkah 3",
+    "alasan": "HR-FRM-02 tidak punya butir 6.5 bernomor. HR-SOP-12 6.5 langkah 3 berisi pencatatan tindakan pelatihan di SNX-HR-FRM-02, cocok. Pola butir kebijakan SOP ini menutup kalimat dengan butir prosedurnya sendiri (4.4, 4.7). Teks sebelum W9 sama kecuali HR Manager menjadi HR Lead. Pemeriksa tidak mengembalikan hasil untuk id ini.",
+    "bukti": "HR-SOP-12 6.5 langkah 3: Catat kesenjangan keterampilan yang ditemukan beserta tindakan pelatihannya di SNX-HR-FRM-02. | HR Lead",
+    "sumber": "orkestrator, cek kerangka langsung (refcheck2 dump struct3) 15 Okt 2026 04:4xZ"
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-FRM-02",
+   "lokasi": "butir 4.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 DASAR DAN KETENTUAN > 4.3 Satu salinan form ini berlaku untuk satu tahun rencana (USULAN).",
+   "kalimat": "Annual Training Plan & Training Matrix: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN)).",
+   "tujuan_key": "HR-FRM-02",
+   "id": "Q021",
+   "sem": {
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "verdict_ulang": "OK",
+    "tujuan_benar": "SNX-HR-SOP-12 (dokumen asal) butir 4.3",
+    "alasan": "Kalimat menulis \"butir 4.3 dan 6.5 SOP ini\". HR-SOP-12 4.3 Pengembangan keterampilan ada. Pemeriksa tidak mengembalikan hasil untuk id ini.",
+    "bukti": "HR-SOP-12 4.3 Pengembangan keterampilan ... mencatat tindakan pelatihannya di SNX-HR-FRM-02",
+    "sumber": "orkestrator, cek kerangka langsung (refcheck2 dump struct3) 15 Okt 2026 04:4xZ"
+   }
+  },
+  {
+   "asal": "HR-SOP-12",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-FRM-02",
+   "lokasi": "butir 6.5",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "bagian 6 JENIS PELATIHAN; nomor tampak di bagian ini: tidak ada",
+   "kalimat": "Annual Training Plan & Training Matrix: tempat tindakan pelatihan atas kesenjangan keterampilan (butir 4.3 dan 6.5 SOP ini, (USULAN)).",
+   "tujuan_key": "HR-FRM-02",
+   "id": "Q022",
+   "sem": {
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "verdict_ulang": "OK",
+    "tujuan_benar": "SNX-HR-SOP-12 (dokumen asal) prosedur 6.5",
+    "alasan": "Kalimat menulis \"butir 4.3 dan 6.5 SOP ini\". HR-SOP-12 6.5 Evaluasi hasil rotasi ada, langkah 3 mencatat tindakan pelatihan di SNX-HR-FRM-02. Pemeriksa tidak mengembalikan hasil untuk id ini.",
+    "bukti": "HR-SOP-12 ### 6.5 Evaluasi hasil rotasi; langkah 3 ... di SNX-HR-FRM-02",
+    "sumber": "orkestrator, cek kerangka langsung (refcheck2 dump struct3) 15 Okt 2026 04:4xZ"
+   }
+  },
+  {
+   "asal": "HR-FRM-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-10",
+   "lokasi": "bagian 9",
+   "status": "ADA",
+   "judul_tujuan": "bagian 9 EXCEPTION MANAGEMENT",
+   "kalimat": "Promotion: menurut bagian 9 dokumen itu (baris Keputusan menyetujui dengan syarat), HR Lead mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9 form ini) (USULAN).",
+   "tujuan_key": "HR-SOP-10",
+   "id": "Q075",
+   "sem": {
+    "verdict": "OK",
+    "alasan": "HR-SOP-10 bagian 9 punya baris Keputusan menyetujui dengan syarat yang mencatat tindakan di SNX-HR-FRM-02. HR-FRM-02 butir 4.4 dan 4.9 ada. Pemeriksa tidak mengembalikan hasil untuk id ini.",
+    "bukti": "HR-SOP-10 bagian 9: Keputusan menyetujui dengan syarat | HR Lead memasukkan tindakan pemenuhan syarat ke SNX-HR-FRM-02",
+    "sumber": "orkestrator, cek kerangka langsung (refcheck2 dump struct3) 15 Okt 2026 04:4xZ"
+   }
+  },
+  {
+   "asal": "HR-FRM-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-10",
+   "lokasi": "butir 4.4",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.4 Pemisahan peran (ISO 9001:2015 5.3): Atasan Langsung mengusulkan, HR Lead menilai dan merekomendasikan, la",
+   "kalimat": "Promotion: menurut bagian 9 dokumen itu (baris Keputusan menyetujui dengan syarat), HR Lead mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9 form ini) (USULAN).",
+   "tujuan_key": "HR-SOP-10",
+   "id": "Q076",
+   "sem": {
+    "id": "Q076",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "Kalimat menyebut 'butir 4.4 dan 4.9 form ini', jadi tujuannya HR-FRM-02 sendiri. HR-FRM-02 4.4 memuat syarat kenaikan jabatan (SNX-HR-SOP-10) sebagai dasar kebutuhan; cocok.",
+    "tujuan_benar": "SNX-HR-FRM-02 butir 4.4",
+    "verdict_ulang": "OK",
+    "bukti": "4.4 Tiap baris Tabel 1 memuat satu dasar kebutuhan: ... syarat kenaikan jabatan (SNX-HR-SOP-10)"
+   }
+  },
+  {
+   "asal": "HR-FRM-02",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-HR-SOP-10",
+   "lokasi": "butir 4.9",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.9 Rekaman dan klasifikasi (ISO 9001:2015 7.5.3): HRGA Officer mengarsipkan rekaman kenaikan jabatan di perso",
+   "kalimat": "Promotion: menurut bagian 9 dokumen itu (baris Keputusan menyetujui dengan syarat), HR Lead mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9 form ini) (USULAN).",
+   "tujuan_key": "HR-SOP-10",
+   "id": "Q077",
+   "sem": {
+    "id": "Q077",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'butir 4.9 form ini' menunjuk HR-FRM-02 4.9: HR Lead mencatat sendiri baris dari SNX-HR-SOP-10; cocok dengan klaim.",
+    "tujuan_benar": "SNX-HR-FRM-02 butir 4.9",
+    "verdict_ulang": "OK",
+    "bukti": "HR Lead mencatat sendiri baris yang berasal dari SNX-HR-SOP-10 dan SNX-HR-SOP-12, sesuai rumusan kedua SOP itu (USULAN)."
+   }
+  },
+  {
+   "asal": "COM-SOP-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-FRM-01",
+   "lokasi": "butir 6.3",
+   "status": "ADA",
+   "judul_tujuan": "bagian 6 ISI FORMULIR > 6.3 Daftar Periksa Review",
+   "kalimat": "Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN).",
+   "tujuan_key": "COM-FRM-01",
+   "id": "Q008",
+   "sem": {
+    "id": "Q008",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'keluaran butir 6.3' menunjuk COM-SOP-01 sendiri (6.3 Discovery sampai Demo, langkah 4 menghasilkan Business Requirement di CRM). COM-FRM-01 6.3 hanya heading Daftar Periksa Review.",
+    "tujuan_benar": "SNX-COM-SOP-01 butir 6.3 (langkah 4)",
+    "verdict_ulang": "OK",
+    "bukti": "4. Susun Business Requirement dan Opportunity Assessment dari hasil discovery meeting. | Business Development | Business Requirement dan Opportunity Assessment di CRM"
+   }
+  },
+  {
+   "asal": "COM-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "internal",
+   "tujuan": "SNX-COM-FRM-01",
+   "lokasi": "Ketentuan butir 7",
+   "status": "PERLU_CEK_MAKNA",
+   "judul_tujuan": "uraian bernomor di sel tabel (JA) atau sheet xlsx",
+   "kalimat": "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01.",
+   "tujuan_key": "COM-FRM-01",
+   "id": "Q113",
+   "sem": {
+    "id": "Q113",
+    "verdict": "OK",
+    "alasan": "Ketentuan Penggunaan butir 7 COM-FRM-01 memuat VP Commercial memilih Hasil Review, menulis dasar, dan memeriksa kolom Selesai.",
+    "bukti": "7. VP Commercial memilih satu Hasil Review dan menulis dasarnya ... VP Commercial memeriksa kolom Selesai pada tabel Temuan dan Tindak Lanjut"
+   }
+  },
+  {
+   "asal": "FAT-SOP-01",
+   "bagian_asal": 5,
+   "jenis": "internal",
+   "tujuan": "SNX-FAT-SOP-01",
+   "lokasi": "butir 9",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "tidak ada butir bernomor tampak '9.'",
+   "kalimat": "Memeriksa kelengkapan permohonan penagihan, mencocokkan PKS, PO, dan BAST, menerbitkan e-Faktur Pajak, menyusun draf invoice, mengirim invoice ke klien, mencatat transaksi di Register Penagihan dan Penjualan, memantau kas masuk, dan menangani revisi atau pembatalan invoice setelah persetujuan Finance Lead (butir 6.1 sampai 6.5 dan bagian 9).",
+   "tujuan_key": "FAT-SOP-01",
+   "id": "Q001",
+   "sem": {
+    "id": "Q001",
+    "verdict": "OK",
+    "alasan": "Kalimat merujuk 'bagian 9' (bukan butir 9); mesin salah membaca lokasi. FAT-SOP-01 bagian 9 Exception Management ada dan memuat revisi/pembatalan invoice setelah persetujuan Finance Lead.",
+    "bukti": "Finance Staff menerbitkan Surat Pembatalan atau Revisi Invoice dan Faktur Pajak Pengganti lewat CoreTax DJP setelah Finance Lead menyetujui"
+   }
+  },
+  {
+   "asal": "COM-SOP-01",
+   "bagian_asal": 11,
+   "jenis": "silang",
+   "tujuan": "SNX-COM-FRM-02",
+   "lokasi": "butir 6.8",
+   "status": "TIDAK_ADA",
+   "judul_tujuan": "bagian 6 CARA MENGISI; nomor tampak di bagian ini: tidak ada",
+   "kalimat": "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8.",
+   "tujuan_key": "COM-FRM-02",
+   "id": "Q009",
+   "sem": {
+    "id": "Q009",
+    "verdict": "SALAH_TAFSIR_MESIN",
+    "alasan": "'Rekaman paket handover di butir 6.8' di Dokumen Terkait COM-SOP-01 menunjuk butir 6.8 Handover SOP itu sendiri; COM-FRM-02 tidak punya 6.8.",
+    "tujuan_benar": "SNX-COM-SOP-01 butir 6.8 Handover",
+    "verdict_ulang": "OK",
+    "bukti": "6.8 Handover ... 1. Susun paket handover dengan isi minimal di butir 4.16. | Business Development | Paket handover"
+   }
+  },
+  {
+   "asal": "LEG-FRM-01",
+   "bagian_asal": 4,
+   "jenis": "silang",
+   "tujuan": "SNX-LEG-SOP-02",
+   "lokasi": "butir 4.19",
+   "status": "ADA",
+   "judul_tujuan": "bagian 4 POLICY & GENERAL PRINCIPLES > 4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus ",
+   "kalimat": "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01.",
+   "tujuan_key": "LEG-SOP-02",
+   "id": "Q054",
+   "sem": {
+    "id": "Q054",
+    "verdict": "OK",
+    "alasan": "LEG-SOP-02 butir 4.19 ada dan menyatakan LML sebagai pemilik rekaman berstatus USULAN, sama dengan LEG-SOP-03; sesuai klaim.",
+    "bukti": "Line Manager Legal sebagai pemilik rekaman di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN)."
+   }
+  }
+ ]
+}

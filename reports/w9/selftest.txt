@@ -1,0 +1,8 @@
+# bash tools/selftest.sh @ af86640 2026-10-15T04:30:20Z
+OK template sha
+OK kontrol positif sop
+OK kontrol positif generic
+OK kontrol negatif
+OK format terkunci
+OK kontrol gaya dan dummy
+rc=0

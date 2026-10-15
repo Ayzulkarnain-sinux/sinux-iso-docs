@@ -49,6 +49,9 @@ def items(sec):
 
 
 def groups_of(who, text):
+    # keterangan status W9 di sel pemutus ("diubah W9: ... (LEAD G-3 A2)") bukan pemutus; buang sebelum dikelompokkan
+    who = re.sub(r'[;,]?\s*(?:diubah|ditutup) W9.*$', '', who or '')
+    text = re.sub(r'[;,]?\s*(?:diubah|ditutup) W9.*$', '', text or '')
     g = [n for n, rx in GROUPS if re.search(rx, who or '')] or [n for n, rx in GROUPS if re.search(rx, text)][:1]
     return g or ['lainnya']
 
@@ -59,9 +62,9 @@ def verify_label(d):
     w9 = ''
     if os.path.exists(f"qa/{d['key']}.w9.json"):
         try:
-            w9 = '; perubahan ISO-W9 diperiksa: ' + json.load(open(f"qa/{d['key']}.w9.json")).get('verdict', '?')
+            w9 = '; revisi 15 Oktober 2026 diperiksa ulang: ' + json.load(open(f"qa/{d['key']}.w9.json")).get('verdict', '?')
         except Exception:
-            w9 = '; perubahan ISO-W9: berkas pemeriksaan tidak terbaca'
+            w9 = '; revisi 15 Oktober 2026: hasil pemeriksaan tidak terbaca'
     if v == 'PASS':
         return f'PASS (pemeriksaan independen, putaran {rounds}){w9}'
     if d['state'] == 'DONE':
@@ -215,6 +218,7 @@ for line in ['Master List COS: satu baris per butir worklist (88), diurutkan men
              'Sheet USULAN memuat tiap kalimat atau baris berlabel (USULAN) di dokumen jadi; kolom pemutus adalah saran untuk ditinjau owner.',
              'State: DONE = draf selesai dan lolos gerbang; HOLD = menunggu berkas tim (T3); SKIP = SoA (lane konsultan) atau cetakan SOP.',
              'Verifikasi isi: pemeriksa independen membandingkan dokumen dengan sumber dan kriteria checklist; form W5 dan register Legal W6 disampel 1 dari 3 ditambah semua dokumen dengan lebih dari 5 USULAN.',
+             'Revisi 15 Oktober 2026: data jabatan, garis lapor, pemetaan peran, dan rujukan antardokumen diperbarui sesuai keputusan tanggal itu; tiap dokumen yang berubah diperiksa ulang oleh pemeriksa independen (kolom Verifikasi isi).',
              'Semua dokumen berstatus Draft (Rev00). Tanda tangan dan tanggal efektif diisi saat pengesahan.']:
     k.append([line])
 k.column_dimensions['A'].width = 140

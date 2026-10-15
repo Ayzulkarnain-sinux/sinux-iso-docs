@@ -1,0 +1,78 @@
+# grep gerbang C ISO-W9 atas 71 berkas out/ (paragraf, tabel, header, footer docx; semua sel xlsx). Master_List ikut.
+
+## HR Manager: 1 baris
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: K-06 | Penamaan jabatan dan unit | Job Analysis dan dokumen ini sama-sama memakai HR Lead untuk JA-14; HR Manager hanya sebutan lama. Job Analysis menulis Operations, Operation, HR / GA, serta HRGA / General Affairs seba
+
+## Divisi Legal: 3 baris
+   Master_List_COS.xlsx :: Master List!N33: SOP Divisi Legal – SINUX.docx (19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb, 2026-10-13T10:54:39.480Z)
+   Master_List_COS.xlsx :: Master List!N36: SOP Contract Review & Legal Approval (1E_8SkaHZo8txljia4JhWjRHakimojRCpwivZzrPyamE, 2026-10-14T09:08:19.129Z); SOP Divisi Legal – SINUX.docx (19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb, 2026-10-13T10:54:39.480Z)
+   Master_List_COS.xlsx :: Master List!N37: SOP Legal Document Control & Retention (12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0, 2026-10-14T10:26:59.642Z); SOP Divisi Legal – SINUX.docx (19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb, 2026-10-13T10:54:39.480Z
+
+## Daffa: 0 baris
+
+## em-dash: 0 baris
+
+## Kristianto: 1 baris
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: K-07 | Penulisan nama dan jabatan Direktur Utama | Sudah diputus: ejaan Kristanto dipakai di semua dokumen. Job Analysis menulis Samuel Kristianto Utomo, dan HR membetulkan ejaan itu di Job Analysis. Dokumen Operation me
+
+## USULAN pemetaan: 0 baris
+
+## dalam pengerjaan: 0 baris
+
+## menunggu konfirmasi (semua): 50 baris
+   Master_List_COS.xlsx :: USULAN!D32: 4.3 HR Lead menetapkan tingkatan dari jumlah garis lapor sampai Direktur Utama (JA-01), sama dengan ukuran di SNX-HR-SOP-12 bagian 3 (USULAN). SNX-HR-JA-01 tidak memuat grading. Bila garis lapor sebuah jabata
+   Master_List_COS.xlsx :: USULAN!D123: Atasan Langsung karyawan yang diusulkan berlabel menunggu konfirmasi di SNX-HR-ORG-01 | Direktur Utama menunjuk Atasan Langsung yang mengajukan usulan itu (USULAN).
+   Master_List_COS.xlsx :: USULAN!D167: Atasan Langsung karyawan terkait berlabel menunggu konfirmasi di SNX-HR-ORG-01, atau terlibat dalam dugaan pelanggaran | Direktur Utama menunjuk jabatan yang mengajukan usulan itu (USULAN).
+   Master_List_COS.xlsx :: USULAN!D213: Garis lapor jabatan karyawan atau jabatan tujuan berlabel menunggu konfirmasi di SNX-HR-ORG-01 | HR Lead meminta Direktur Utama menetapkan garis lapor yang dipakai untuk menilai tingkatan jabatan (USULAN).
+   Master_List_COS.xlsx :: USULAN!D262: Atasan Langsung Tujuan atau Atasan Langsung Asal berlabel menunggu konfirmasi, atau tanpa pemegang, di SNX-HR-ORG-01 | Direktur Utama menunjuk jabatan yang mengajukan usulan dan jabatan yang menanggapinya (U
+   Master_List_COS.xlsx :: USULAN!C288: BUTIR MENUNGGU KONFIRMASI
+   Master_List_COS.xlsx :: USULAN!C289: BUTIR MENUNGGU KONFIRMASI
+   Master_List_COS.xlsx :: USULAN!C290: BUTIR MENUNGGU KONFIRMASI
+   Master_List_COS.xlsx :: USULAN!D387: Dalam IDR. Finance Staff memantau klien Gov / SOE yang lambat membayar. PPN = DPP x 12% (USULAN). Amount (IDR): Enterprise = DPP + PPN - PPh 23; Gov / SOE = DPP - PPN - PPh 22 (menunggu konfirmasi FAT).
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: 4.3 Garis pelaporan berlabel menunggu konfirmasi belum menjadi garis pelaporan resmi. Management mengonfirmasi atasan langsung dan bawahan langsung yang belum ditetapkan secara resmi sebelum dokumen disahkan.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Garis pelaporan | Atasan langsung: Direktur (COO) dan Direktur Utama. Bawahan langsung: Business Development dan Brand & Marketing. Hubungan pelaporan Manager of Product Tech menunggu konfirmasi.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Garis pelaporan | Atasan langsung: COO (VP Commercial sebagai atasan langsung menunggu konfirmasi). Bawahan langsung: Tidak ada.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Garis pelaporan | Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: JA-09 (Alif Altamziz). Uraian rinci ada di bagian 7.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Garis pelaporan | Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: Tidak ada.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Garis pelaporan | Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: Tidak ada.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Garis pelaporan | Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: HRGA Officer (Sita Nadia Salsabila Widodo). Pengawasan fungsi Office Helper melalui HRGA Officer.
+   SNX-HR-JA-01 Job Analysis dan Uraian Jab :: Atasan langsung | Direktur Utama menurut Jobdesk Line Manager Legal. Menunggu konfirmasi, karena JA-08 di bagian 6 menulis COO atau Management.
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi sesuda
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: Setiap butir menunggu konfirmasi diberi nomor K pada bagian Butir Menunggu Konfirmasi. Bagan dan tabel merujuk nomor itu dan tidak mengulang uraiannya.
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan atasan langsung yang tertulis di Job Analysis atau sudah diputus (K-01). Garis berlabel menunggu konfirmasi merujuk nomor buti
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: BUTIR MENUNGGU KONFIRMASI
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: Menunggu konfirmasi | Label untuk garis lapor atau penamaan yang belum pasti. Tiap butir dijelaskan pada bagian Butir Menunggu Konfirmasi.
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: JA-01 | Direktur Utama | Samuel Kristanto Utomo | Management | Organ perusahaan sesuai anggaran dasar, menunggu konfirmasi (K-05)
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: JA-05 | Manager of Product Tech | Ahmad Rifa'i | Operation | Direktur (JA-02); VP Commercial (JA-03), menunggu konfirmasi (K-02)
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: JA-08 | Legal & Compliance | Ester Febe Utomo | Legal | Direktur (JA-02), menunggu konfirmasi (K-03)
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: JA-10 | Finance | Kana Salsabila Putri Koeswologito | Finance | Direktur (JA-02), menunggu konfirmasi (K-03)
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: JA-11 | Accounting & Tax | Pradipta Nugraha | Accounting & Tax | Direktur (JA-02), menunggu konfirmasi (K-03)
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: JA-14 | HR Lead | Aziz Priyo Widakdo | Human Resources | Direktur (JA-02), menunggu konfirmasi (K-04)
+   SNX-HR-ORG-01 Struktur Organisasi SINUX  :: Penyetuju dokumen ini | Direktur Utama (JA-01) | Blok Approved By pada template dokumen SINUX | Menunggu konfirmasi (K-14)
+   SNX-HR-FRM-01 Employee Competency Matrix :: 4.3 HR Lead menetapkan tingkatan dari jumlah garis lapor sampai Direktur Utama (JA-01), sama dengan ukuran di SNX-HR-SOP-12 bagian 3 (USULAN). SNX-HR-JA-01 tidak memuat grading. Bila garis lapor sebuah jabatan masih menu
+   SNX-HR-SOP-10 Promotion (Rev00 DRAFT).do :: Atasan Langsung karyawan yang diusulkan berlabel menunggu konfirmasi di SNX-HR-ORG-01 | Direktur Utama menunjuk Atasan Langsung yang mengajukan usulan itu (USULAN).
+   SNX-HR-SOP-11 Demotion (Rev00 DRAFT).doc :: Atasan Langsung karyawan terkait berlabel menunggu konfirmasi di SNX-HR-ORG-01, atau terlibat dalam dugaan pelanggaran | Direktur Utama menunjuk jabatan yang mengajukan usulan itu (USULAN).
+   SNX-HR-SOP-12 Rotation (Rev00 DRAFT).doc :: Garis lapor jabatan karyawan atau jabatan tujuan berlabel menunggu konfirmasi di SNX-HR-ORG-01 | HR Lead meminta Direktur Utama menetapkan garis lapor yang dipakai untuk menilai tingkatan jabatan (USULAN).
+   SNX-HR-SOP-13 Mutation (Rev00 DRAFT).doc :: 4.10 Garis lapor dan dokumen organisasi (ISO 9001:2015 5.3): SNX-HR-JA-01 butir 4.3 menyatakan garis lapor berlabel menunggu konfirmasi belum resmi. Bila jabatan atau garis lapor karyawan berubah, HR Lead memperbarui SNX
+   SNX-HR-SOP-13 Mutation (Rev00 DRAFT).doc :: Atasan Langsung Tujuan atau Atasan Langsung Asal berlabel menunggu konfirmasi, atau tanpa pemegang, di SNX-HR-ORG-01 | Direktur Utama menunjuk jabatan yang mengajukan usulan dan jabatan yang menanggapinya (USULAN).
+   SNX-FAT-REG-01 Billing & Collection Moni :: AR Aging!A2: Dalam IDR. Finance Staff memantau klien Gov / SOE yang lambat membayar. PPN = DPP x 12% (USULAN). Amount (IDR): Enterprise = DPP + PPN - PPh 23; Gov / SOE = DPP - PPN - PPh 22 (menunggu konfirmasi FAT).
+   SNX-LEG-SOP-01 Legal Operational (Rev00  :: SNX-HR-ORG-01 | Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09); atasan JA-08 menunggu konfirmasi (butir K-03).
+   SNX-OPS-PRC-01 Operations Business Proce :: Password manager (vault) | Penyimpanan kredensial internal SINUX. Status operasional: menunggu konfirmasi Ops.
+   SNX-OPS-SOP-01 Project Management & Deli :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+   SNX-OPS-SOP-03 Preventive & Corrective M :: Password manager (vault) | Tempat penyimpanan kredensial SINUX. Status operasional: menunggu konfirmasi Ops.
+   SNX-OPS-SOP-04 Technical Incident Handli :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+   SNX-ISMS-PLN-01 Business Continuity & IT :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+   SNX-ISMS-PRO-01 Information Classificati :: Password manager (vault) | Penyimpanan kredensial internal SINUX. Status operasional: menunggu konfirmasi Ops.
+   SNX-ISMS-REG-02 IS Risk Assessment Regis :: Register Risiko!F5: Vault sudah dipasang, belum live; menunggu konfirmasi Ops
+   SNX-ISMS-REG-03 IS Risk Treatment Plan ( :: Rencana Penanganan!A2: Target tanggal dan residual adalah usulan; ditetapkan bersama pemilik risiko. Status vault (RTP-001, RTP-010): menunggu konfirmasi Ops.
+   SNX-ISMS-SOP-01 Information Security Inc :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+   SNX-ISMS-SOP-02 User Access Control & Au :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+   SNX-ISMS-SOP-03 Backup & Recovery (Rev00 :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+   SNX-ISMS-SOP-04 IT Asset & Configuration :: Password manager | Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops.
+
+## SPV: 0 baris
+
+## HR Lead: 304 baris
+
+## Departemen Legal: 73 baris

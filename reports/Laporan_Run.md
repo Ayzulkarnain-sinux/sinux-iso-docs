@@ -1,12 +1,15 @@
 # Laporan Run Dokumen ISO SINUX (COS), 15 Oktober 2026
 
-Receipt: ledger.json, config/checklist.json (checklist live, modifiedTime 2026-10-14T17:47:13Z, 87 baris; worklist 88 butir), qa/, reports/w8/ di repo sinux-iso-docs, diukur 15 Oktober 2026 pukul 01.10 sampai 01.20 UTC. Total 1.053 kalimat atau baris berlabel (USULAN) di 70 dokumen.
+Receipt: ledger.json, config/checklist.json (checklist live, modifiedTime 2026-10-14T17:47:13Z, 87 baris; worklist 88 butir), qa/, reports/w8/, reports/w9/ di repo sinux-iso-docs. Run awal diukur 15 Oktober 2026 pukul 01.10 sampai 01.20 UTC; revisi ISO-W9 (bagian "Perubahan ISO-W9" di bawah) diukur ulang 15 Oktober 2026 pukul 03.40 sampai 04.45 UTC. Sesudah revisi: 1.029 kalimat atau baris berlabel (USULAN) di 70 dokumen.
+
+Laporan ini bahan kerja internal dan tidak diunggah. Berkas yang diunggah hanya isi out/ (dokumen ISO dan out/00_Index/Master_List_COS.xlsx).
 
 ## Ringkasan
 
 - 70 dokumen target selesai berstatus DONE (Draft Rev00): 44 perbaikan dokumen tim (T1), 23 dokumen baru (T2), 3 baris HOLD yang dipromosikan karena berkas tim terbaca (W7b). Nol dokumen tertahan di gerbang mutu dan nol dokumen terblokir.
 - 16 baris HOLD menunggu berkas tim (T3). 2 baris SKIP: Statement of Applicability (lane konsultan, tidak disentuh) dan cetakan SOP.
-- 68 dari 70 dokumen lolos pemeriksaan isi independen terhadap sumber dan kriteria checklist. Dua form W5 di luar sampel (SNX-OPS-FRM-03, SNX-ISMS-REG-01) hanya lolos gerbang mesin; SNX-OPS-FRM-03 juga lolos cek PDF.
+- 70 dari 70 dokumen lolos pemeriksaan isi independen terhadap sumber dan kriteria checklist. Dua form W5 yang semula di luar sampel (SNX-OPS-FRM-03, SNX-ISMS-REG-01) diverifikasi di ISO-W9: PASS, 0 pemblokir.
+- Revisi ISO-W9 (15 Okt, arahan LEAD G-2 dan G-3 atas keputusan owner): 41 dokumen diubah lewat spec lalu dirender ulang; tiap dokumen yang berubah diperiksa ulang oleh pemeriksa perubahan terpisah (41 dari 41 PASS). Rincian di bagian "Perubahan ISO-W9".
 - Putaran penghalusan sesudah DONE dijalankan pada 40 dokumen; tiap perubahan diperiksa ulang oleh pemeriksa perubahan terpisah sebelum commit "ISO <KODE> polish".
 - Semua dokumen masih Draft: tanda tangan, tanggal efektif, dan pengesahan diisi penyetuju. Label (USULAN) menandai isi yang menunggu keputusan; daftar lengkapnya ada di Master_List_COS.xlsx sheet USULAN.
 
@@ -45,34 +48,36 @@ Jumlah kalimat atau baris berlabel (USULAN) di dokumen jadi, dikelompokkan menur
 
 | Pemutus | Jumlah | Departemen terbanyak |
 |---|---|---|
-| Legal | 252 | Legal 236 |
-| Aziz (HR Manager) | 210 | Human Resource 202 |
-| Owner | 202 | Marketing 76, Commercial 67 |
-| Fani (VP Tech Operation and Services) | 181 | ISMS 72, Operation 71 |
-| FAT | 95 | FAT 90 |
-| Samuel (Direktur Utama) | 50 | Human Resource 38 |
-| Konsultan (acuan klausul ISO) | 41 | tersebar |
-| Laras (VP Commercial) dan lainnya | 22 | Marketing |
+| Legal | 238 | Legal 226 |
+| Aziz (HR Lead) | 213 | Human Resource 210 |
+| Fani (VP Tech Operation and Services) | 180 | ISMS 72, Operation 71 |
+| Owner | 177 | Commercial 63, Marketing 56 |
+| FAT | 112 | FAT 107 |
+| Samuel (Direktur Utama) | 49 | Human Resource 38 |
+| Konsultan (acuan klausul ISO) | 41 | Legal 12, Human Resource 10 |
+| Laras (VP Commercial) dan lainnya | 19 | Marketing 17 |
+
+Angka di atas sesudah revisi ISO-W9 (total 1.029; sebelum revisi 1.053). Label USULAN yang hilang di W9 terutama pemetaan peran Legal dan batas cakupan Marketing yang kini sudah diputus.
 
 Keputusan lintas dokumen yang membuka paling banyak USULAN sekaligus:
 
 | No | Keputusan | Dokumen terdampak | Pemutus |
 |---|---|---|---|
-| 1 | Ukuran tingkatan jabatan (saat ini jumlah garis lapor sampai Direktur Utama, karena Job Analysis tanpa grading) | SNX-HR-SOP-10 sampai 13, SNX-HR-FRM-01, SNX-HR-FRM-02 | Aziz, owner |
-| 2 | Atasan langsung JA-03, JA-05, JA-08, JA-10, JA-11, JA-14 (garis lapor menunggu konfirmasi) | SNX-HR-ORG-01 dan semua dokumen yang memakai garis lapor | Aziz, owner |
+| 1 | Ukuran tingkatan jabatan (saat ini jumlah garis lapor sampai Direktur Utama, karena Job Analysis tanpa grading). Sejak JA-03 dan JA-04 punya dua garis tegas (W9), ukuran ini bermakna ganda untuk JA-03, JA-04, dan bawahannya; perlu aturan jalur mana yang dihitung | SNX-HR-SOP-10 sampai 13, SNX-HR-FRM-01, SNX-HR-FRM-02 | Aziz, owner |
+| 2 | Atasan langsung JA-05, JA-08, JA-10, JA-11, JA-14 (garis lapor menunggu konfirmasi, K-02 sampai K-04). JA-03 dan JA-04 sudah diputus di W9: dua garis tegas ke Direktur dan Direktur Utama | SNX-HR-ORG-01 dan semua dokumen yang memakai garis lapor | Aziz, owner |
 | 3 | Authority Matrix (DoA) belum terbit: pejabat penyetuju dan batas nilai | SNX-HR-JA-01, SNX-LEG-FRM-01, SNX-LEG-FRM-02, SNX-FAT-FRM-01, SNX-COM-SOP-02 | Samuel |
-| 4 | Pemetaan peran Finance Lead dan Finance Staff ke jabatan JA-10 dan JA-11 | semua dokumen FAT | owner, FAT |
-| 5 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 | semua dokumen Legal | Aziz, Legal |
+| 4 | Finance Lead dan Finance Staff (W9: tetap nama peran; Finance Lead dijalankan Direktur sampai jabatannya terisi, Finance Staff dijalankan JA-10 dan JA-11, keduanya berlabel USULAN; Reviewed By dokumen FAT = Direktur). Sisa keputusan: pengisian jabatan Finance Lead | semua dokumen FAT | owner, FAT |
+| 5 | Pemetaan Line Manager Legal dan Staff Legal: DIPUTUS di W9 (JA-08 Ester Febe Utomo, JA-09 Alif Altamziz; Prepared dan Reviewed dokumen Legal bernama) | semua dokumen Legal | selesai |
 | 6 | Masa simpan dan lokasi rekaman yang belum ditetapkan sumber | hampir semua form dan register | Legal, FAT |
 | 7 | Tarif PPN 12 persen dan rumus Gov/SOE (WAPU) di register piutang | SNX-FAT-REG-01, SNX-FAT-SOP-05 | FAT |
-| 8 | Cakupan register Marketing: Description checklist baris 58 memuat isi baris 57 ditambah validasi klaim, sedangkan judulnya Campaign & Activity Register | SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-REG-03, SNX-MKT-RPT-01 | owner |
-| 9 | Process Owner dokumen Commercial baru: Direktur (aturan default dokumen tanpa sumber) lawan VP Commercial (SOP Commercial dari tim) | SNX-COM-FRM-01, SNX-COM-FRM-02, SNX-COM-REG-01 | owner |
+| 8 | Cakupan register Marketing: DIPUTUS di W9 (REG-01 satu-satunya register materi dan klaim; REG-02 hanya pelaksanaan campaign dan aktivitas; REG-03 lead; RPT-01 membaca REG-02 dan REG-03). Sisa: Description checklist baris 58 berisi pengendalian materi baris 57 yang diperluas dengan validasi klaim, bukan pelaksanaan campaign sesuai judulnya; perlu dibetulkan Brand & Marketing | SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-REG-03, SNX-MKT-RPT-01 | tim Brand & Marketing |
+| 9 | Process Owner dokumen Commercial baru: DIPUTUS di W9 (VP Commercial) | SNX-COM-FRM-01, SNX-COM-FRM-02, SNX-COM-REG-01 | selesai |
 | 10 | Susunan Divisi Operation (NOC, SOC, SD dan PM) yang masih berstatus usulan | SNX-HR-ORG-01, SOP HR mutasi dan rotasi, dokumen Operation | owner, Fani |
 | 11 | Acuan klausul ISO per dokumen yang tidak diberi checklist | 41 kalimat berlabel "perlu konfirmasi konsultan" | konsultan |
 
 ## Open items
 
-Tiap dokumen mencatat open item di bagian notes masing-masing (folder notes/ di repo). Ringkasan: 985 butir, terbanyak untuk Fani (316), owner (266), Legal (151), Aziz (112). Rincian per pemutus untuk tinjauan internal: reports/USULAN-OPEN-per-pemutus.md.
+Tiap dokumen mencatat open item di bagian notes masing-masing (folder notes/ di repo). Ringkasan sesudah revisi ISO-W9: 942 butir terbuka, terbanyak untuk Fani (315), owner (257), Legal (150), Aziz (109); 46 butir ditutup di W9, termasuk 34 dari 34 butir berpemutus LEAD (alasan per butir di reports/w9/lead_items.json). Sebelum revisi: 985 butir. Rincian per pemutus untuk tinjauan internal: reports/USULAN-OPEN-per-pemutus.md (bagian akhir memuat daftar butir yang ditutup beserta alasannya).
 
 ## Dokumen T3 yang masih ditunggu dari tim
 
@@ -97,30 +102,70 @@ Tiap dokumen mencatat open item di bagian notes masing-masing (folder notes/ di 
 
 Tim menandai baris ini ada, tetapi berkasnya tidak terbaca saat pengukuran ulang W0. Begitu berkas tersedia, baris diproses sebagai T1 di run berikutnya.
 
+## Perubahan ISO-W9
+
+Dasar: arahan LEAD G-2 (15 Okt 02.04 UTC) dan G-3 (02.21 UTC) di control/LEAD-GUIDE.md, atas keputusan owner. Semua perubahan isi lewat specs/ lalu dirender ulang. Status tetap Draft, tanpa tanda tangan dan tanggal efektif. Commit per dokumen berjudul "ISO <KODE> polish".
+
+| Butir | Yang dikerjakan | Dokumen |
+|---|---|---|
+| G-2 butir 1 | Enam rujukan basi SNX-OPS-FRM-10 ke SNX-OPS-SOP-04 dan SNX-OPS-SOP-05 dibetulkan; total 11 rujukan di form itu disesuaikan | SNX-OPS-FRM-10 |
+| G-2 butir 2 | Pemeriksaan rujukan diulang dengan alat baru (reports/orch/refcheck2.py): keluaran penuh, kontrol positif, ditambah pemeriksaan makna dua putaran | lihat Gerbang mutu |
+| G-2 butir 3 | Laporan ini dipindah dari out/00_Index ke reports/ (git mv); rujukan di perkakas internal diperbarui | reports/ |
+| A1 | Ejaan Kristanto dipakai; K-07 ditulis sudah diputus | SNX-HR-ORG-01 (SNX-HR-JA-01 sudah benar) |
+| A2 | HR Lead menggantikan HR Manager; K-06 diperbarui. SPV tidak ditambahkan karena tidak ada dokumen dengan kolom tingkat jabatan | 10 dokumen HR |
+| A3 | Garis JA-01 ke JA-03 tegas tanpa label, garis baru JA-01 ke JA-04; K-01 ditutup; dokumen yang memakai garis lapor atau nama atasan diselaraskan | 27 dokumen |
+| A4 | Garis JA-05, JA-08, JA-10, JA-11, JA-14 tidak diubah (diperiksa) | 5 dokumen yang menyebutnya |
+| A5 | Peran Legal bernama (JA-08 Ester Febe Utomo, JA-09 Alif Altamziz); label USULAN pemetaan dihapus; sebutan "Departemen Legal" | 14 dokumen |
+| A6 | Definisi Finance Lead dan Finance Staff; Reviewed By dokumen FAT = Amirull Yusuf Zulkarnain / Direktur; K-13 diperbarui | 10 dokumen |
+| A7 | Process Owner = VP Commercial | SNX-COM-FRM-01, SNX-COM-FRM-02, SNX-COM-REG-01 |
+| A8 | Restrukturisasi register Marketing (lihat keputusan 8) | 4 dokumen MKT |
+| A9 | Gambar xlsx tidak diubah; open item gambar ditutup | SNX-OPS-FRM-10 |
+| A10 | Validasi kolom K dan L sampai baris 1000; rumus Days overdue = TODAY() dikurangi Due date (pola sheet AP); baris 7 sheet AP dikosongkan | SNX-FAT-REG-01 |
+| B2 | Residu W8 enam dokumen (tabel Residu mutu); pertentangan SNX-HR-SOP-13 bagian 9 dengan butir 4.3 hilang | 6 dokumen |
+| B3 | SNX-OPS-FRM-03 dan SNX-ISMS-REG-01 diverifikasi isi: PASS, 0 pemblokir | 2 form |
+| B4 | 34 open item berpemutus LEAD ditutup dengan alasan; sebutan dokumen yang belum ada diseragamkan menjadi "dalam peninjauan"; tabel SNX-HR-RPT-01 dan SNX-MKT-RPT-01 diberi baris judul berulang dan baris tidak terbelah | 17 dokumen |
+| Rujukan | 22 rujukan basi, rusak, atau berstatus basi dari pemeriksaan makna dibetulkan (reports/w9/ref_fixes.json) | 9 dokumen |
+
+Cara kerja: 12 klaster penyusun pada dokumen yang tidak beririsan; tiap dokumen yang berubah diperiksa pemeriksa perubahan buta yang terpisah dari penyusun. 67 pemeriksaan untuk 41 dokumen; 4 dokumen (SNX-FAT-FRM-01, SNX-FAT-REG-01, SNX-HR-JA-01, SNX-MKT-REG-01) butuh satu putaran perbaikan. Hasil akhir 41 dari 41 PASS (qa/<KODE>.w9.json). Teks keluaran yang di-commit identik dengan teks yang diperiksa.
+
+Klaim yang ditarik di ISO-W9 (tercatat di ledger.json retractions):
+
+1. Klaim W8 "177 rujukan dicek, 0 rusak" (baris gerbang W8 di bawah).
+2. Rencana W9 mencatat dugaan rujukan rusak di dokumen LEG, FAT, dan HR-SOP. Ternyata rujukan itu menunjuk butir dokumen asalnya sendiri dan salah ditebak alat. Dibuktikan lewat pemeriksa makna dan cek kerangka dokumen. Rencana perbaikan penomoran dibatalkan.
+
+Tafsir yang dipakai saat arahan tidak merinci: rumus Days overdue mengikuti pola sheet AP; SNX-LEG-SOP-01 menyebut versi lamanya "versi 0.1 SOP ini", bukan judul lain; Description checklist baris 58 tidak identik dengan baris 57; SPV tidak ditambahkan; "Divisi Legal" tetap muncul 3 kali di kolom sumber Master List karena itu nama berkas Drive tim yang dikutip apa adanya.
+
 ## Gerbang mutu yang diukur
 
 | Klaim | Cara ukur | Bukti | Hasil |
 |---|---|---|---|
-| Frasa meta proses penyusunan nol di seluruh out/ | pola (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun bukan nama peran) pada 70 berkas, kontrol positif pada versi lama SNX-LEG-SOP-02 | reports/w8/metascan.txt | 0 temuan; kontrol positif menembak |
-| Rujukan silang ke butir SOP lain ada | 177 rujukan "SNX-... butir/bagian N.M" dicek terhadap jumlah butir dokumen tujuan | reports/w8/refcheck.txt | 0 rujukan rusak |
-| Tidak ada halaman kosong | render PDF tiap docx, teks per halaman | reports/w8/blankscan.txt | 53 docx, 0 halaman kosong |
+| Rujukan butir dan bagian ada (ISO-W9) | refcheck2 pada 70 berkas (53 docx, 17 xlsx): 2.242 kemunculan, 383 rujukan silang unik; kontrol positif "SNX-OPS-SOP-04 Bagian 7.5" di versi lama SNX-OPS-FRM-10 wajib terbaca TIDAK_ADA; 613 rujukan silang dan rujukan yang tidak terbaca ADA diperiksa makna dalam dua putaran | reports/w9/refcheck_final.tsv, refcheck_final.json, refsem.json, refsem2.json | rc 0; kontrol positif menembak; 0 TIDAK_ADA sesudah putusan makna; 610 OK, 3 tidak dapat dicek karena menunjuk dokumen tim di luar set (POL-OPS-001, PRO-OPS-001) |
+| Frasa meta nol (ISO-W9) | metascan pada 70 berkas, kontrol positif | reports/w9/metascan.txt | 0 temuan; kontrol positif menembak |
+| Lint, OOXML, halaman kosong (ISO-W9) | lint_doc, validator OOXML, blankscan pada 53 docx | reports/w9/gate_final.jsonl | 53 lint lulus, 53 OOXML PASSED, 0 halaman kosong |
+| Fitur xlsx utuh (ISO-W9) | fitur xlsx_patch (sheet, gambar, chart, validasi, conditional formatting, rumus) dibanding versi sebelum W9, teks CONTOH | reports/w9/gate_final.jsonl | 17 xlsx, 0 fitur berkurang, 0 teks CONTOH |
+| Selftest perkakas (ISO-W9) | tools/selftest.sh | reports/w9/selftest.txt | 6 OK |
+| Sebutan lama hilang (ISO-W9) | grep teks 70 berkas dan Master List | reports/w9/grep.txt | HR Manager 1 (hanya K-06, diizinkan), Divisi Legal 0 di dokumen, Daffa 0, em-dash 0; garis JA-01 dan JA-02 ke JA-03 dan JA-04 tanpa label menunggu konfirmasi (teks dan edges bagan di spec SNX-HR-ORG-01). Satu-satunya label yang menyentuh JA-03 adalah garis JA-05 ke JA-03 (K-02), yang menurut A4 tidak diubah |
+| Sumber tidak berubah selama W9 (ISO-W9) | modifiedTime 54 berkas sumber, hanya baca, diukur 03.40 sampai 03.55 UTC dan diulang saat penutupan | reports/w9/sources_modtime.json | 54 dari 54 sama pada kedua pengukuran |
+| Frasa meta proses penyusunan nol di seluruh out/ (W8) | pola (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun bukan nama peran) pada 70 berkas, kontrol positif pada versi lama SNX-LEG-SOP-02 | reports/w8/metascan.txt | 0 temuan; kontrol positif menembak |
+| Rujukan silang ke butir SOP lain ada (W8, DITARIK di ISO-W9) | klaim W8 "177 rujukan dicek, 0 rusak" tidak berbukti: reports/w8/refcheck.txt hanya berisi "{}" dan alat W8 tidak mengecek sub-nomor di luar bagian 4 dan 6, sehingga "SNX-OPS-SOP-04 Bagian 7.5" lolos | reports/w8/refcheck.txt | diganti hasil ISO-W9 di bagian "Perubahan ISO-W9" |
+| Tidak ada halaman kosong (W8) | render PDF tiap docx, teks per halaman | reports/w8/blankscan.txt | 53 docx, 0 halaman kosong |
 | Format sama dengan acuan | renderer terkunci (sidik format), pemeriksa PDF pada 12 dokumen | tools/selftest.sh, qa/*.pdfcheck.json | selftest 6 OK; 12 PASS |
 | Lint dan validasi OOXML | lint_doc dan validator OOXML tiap render | qa/*.lint.json, ledger.json | semua lulus |
 
-## Residu mutu (belum diselesaikan, dicatat apa adanya)
+## Residu mutu
 
-Temuan tidak memblokir dari pemeriksa yang belum diubah, per dokumen:
+Residu W8 (6 dokumen) dikerjakan di ISO-W9 (arahan LEAD G-3 B2):
 
-| Dokumen | Residu |
-|---|---|
-| SNX-HR-SOP-11 | istilah mutasi bentrok dengan butir 4.9; satu kalimat pasif baru; penerima tanggapan di bagian 9 belum jelas; "berkas usulan" belum didefinisikan; NOC, SOC, SD dan PM tanpa definisi |
-| SNX-HR-SOP-13 | aturan Direktur Utama di bagian 9 bertentangan dengan butir 4.3; label (USULAN) bergeser di bagian 9; NOC dan SOC disebut divisi, sedangkan SNX-HR-SOP-12 menyebut sub divisi dalam unit Operation |
-| SNX-COM-SOP-02 | pengganti istilah "Personel Commercial" mempersempit cakupan bagian 9 dan Kesimpulan |
-| SNX-MKT-RPT-01 | arti Aktivitas belum sama dengan SNX-MKT-REG-02; status "belum Selesai" ikut mencakup Dibatalkan |
-| SNX-MKT-REG-01 | penurunan klasifikasi dicatat di bukti persetujuan, sedangkan SNX-ISMS-PRO-01 mencatatnya di SNX-ISMS-REG-01 |
-| SNX-MKT-REG-02 | irisan kolom dengan SNX-MKT-REG-01 dan irisan daftar aktivitas dengan SNX-MKT-RPT-01 belum dihapus (struktur form dikunci); menunggu keputusan cakupan owner |
+| Dokumen | Residu W8 | Status sesudah ISO-W9 |
+|---|---|---|
+| SNX-HR-SOP-11 | istilah mutasi bentrok dengan butir 4.9; satu kalimat pasif baru; penerima tanggapan di bagian 9 belum jelas; "berkas usulan" belum didefinisikan; NOC, SOC, SD dan PM tanpa definisi | selesai; penerima tanggapan kasus JA-12 ditetapkan HR Lead berlabel (USULAN), pemutus Samuel dan owner |
+| SNX-HR-SOP-13 | aturan Direktur Utama di bagian 9 bertentangan dengan butir 4.3; label (USULAN) bergeser; istilah NOC dan SOC beda dengan SNX-HR-SOP-12 | selesai; pertentangan bagian 9 dengan 4.3 hilang lewat pengecualian Direktur Utama di butir 4.3 berlabel (USULAN). Sisa: kasus Direktur Utama hanya sebagai Atasan Langsung Asal belum disebut di 4.3 (pemutus Samuel, Aziz) |
+| SNX-COM-SOP-02 | pengganti "Personel Commercial" mempersempit cakupan bagian 9 dan Kesimpulan | sebagian: bagian 9 dikembalikan; Brand & Marketing tidak ditambahkan karena tidak punya peran di bagian 5 (open item owner) |
+| SNX-MKT-RPT-01 | arti Aktivitas belum sama dengan SNX-MKT-REG-02; belum Selesai mencakup Dibatalkan | selesai lewat A8 |
+| SNX-MKT-REG-01 | penurunan klasifikasi dicatat di bukti persetujuan | selesai: mengikuti SNX-ISMS-PRO-01 di SNX-ISMS-REG-01; REG-01 hanya merujuk |
+| SNX-MKT-REG-02 | irisan kolom dengan REG-01 dan irisan aktivitas dengan RPT-01 | selesai lewat A8 (kolom materi dan klaim dihapus) |
 
-Temuan tidak memblokir lain per dokumen tersimpan di qa/<KODE>.verify.json dan qa/<KODE>.sweep.json.
+Temuan tidak memblokir lain per dokumen tersimpan di qa/<KODE>.verify.json, qa/<KODE>.sweep.json, dan qa/<KODE>.w9.json.
 
 ## Penyimpangan dan catatan proses
 
@@ -134,12 +179,17 @@ Temuan tidak memblokir lain per dokumen tersimpan di qa/<KODE>.verify.json dan q
 | 15 Okt 00.35 | Orkestrator menyebut Description checklist baris 58 "identik" dengan baris 57 | Dikoreksi lewat pengukuran ulang (tidak identik; baris 58 = baris 57 ditambah validasi klaim); keputusan cakupan disesuaikan |
 | 15 Okt 00.50 | Arahan LEAD G-1 (frasa meta) | Dipatuhi: sweep sebelum Master List, ukur ulang nol, commit "polish" sejak G-1 terbaca (delapan sweep sebelumnya ter-commit "DONE") |
 | Beberapa kali | Pemeriksa menjalankan git log/status hanya baca padahal prompt melarang git | Tidak ada perubahan keadaan; prompt diperjelas |
+| 15 Okt 03.05 (W9) | Rencana W9 mencatat dugaan rujukan rusak di dokumen LEG, FAT, dan HR-SOP | Ditarik dengan dua kanal (pemeriksa makna dan cek kerangka); klaster penomoran dibatalkan |
+| 15 Okt W9 R1 | Dua instruksi penyusun kurang lengkap (pengecualian nama di SNX-HR-ORG-01 dan SNX-HR-JA-01; satu sebutan "dalam pengerjaan") dan satu penyusun menghapus kode dokumen dari "(butir K-13)" | Diperbaiki di putaran R2, diperiksa ulang PASS |
+| 15 Okt W9 | Pembuat Master List membaca keterangan "diubah W9" di sel pemutus sebagai pemutus LEAD, dan menulis label internal "ISO-W9" di Master List | Keterangan dibuang sebelum pengelompokan; label dinetralkan; kelompok LEAD 0 |
+| 15 Okt 04.40 (W9) | Pemeriksa makna putaran 2 tidak menjawab 4 dari 134 rujukan dan memvonis 1 rujukan basi yang di putaran 1 diputus OK | Kelimanya diputus dari kerangka dokumen; vonis basi ditolak karena rujukan menunjuk SNX-HR-SOP-11 sendiri; nol perubahan dokumen (reports/w9/refsem2.json) |
+| 15 Okt 04.45 (W9) | Skrip gerbang akhir menjalankan lint_doc pada 17 xlsx (alat itu hanya untuk docx) | Diganti cek fitur xlsx_patch; bukan cacat dokumen |
 
-Nol mutasi Google Drive, nol tulisan ke kanon KB, nol tanda tangan atau tanggal efektif, nol kredensial di keluaran. Ringkasan run ini dikirim ke antrean tinjauan admin pada 15 Okt 01.22 UTC (status PENDING, menunggu tinjauan owner).
+Nol mutasi Google Drive, nol tulisan ke kanon KB, nol tanda tangan atau tanggal efektif, nol kredensial di keluaran. Ringkasan run awal dikirim ke antrean tinjauan admin pada 15 Okt 01.22 UTC (paket 1982, status PENDING). Paket itu memuat klaim rujukan W8 yang sudah ditarik dan angka sebelum revisi ISO-W9. ISO-W9 tidak mengirim apa pun ke staging, jadi paket itu perlu dibaca bersama laporan ini.
 
 ## Cara unduh dan unggah
 
-1. Unduh: repo sinux-iso-docs di GitHub, tombol Code, Download ZIP. Dokumen ada di folder out/ per departemen; ringkasan di out/00_Index.
+1. Unduh: repo sinux-iso-docs di GitHub, tombol Code, Download ZIP. Dokumen ada di folder out/ per departemen; daftar induk di out/00_Index/Master_List_COS.xlsx. Laporan ini ada di reports/ dan tidak ikut diunggah.
 2. Tinjau: buka Master_List_COS.xlsx, filter sheet USULAN per pemutus; buka dokumen terkait dan putuskan tiap label (USULAN).
 3. Unggah sesudah tinjauan: buat folder baru "COS Draft ISO" di Supporting Documents pada Shared Drive ISO SINUX, unggah isi out/ apa adanya. Berkas tim yang sudah ada tidak ditimpa.
 4. Pengesahan: isi tanda tangan dan tanggal efektif di blok Approval tiap dokumen sesudah semua USULAN diputus; ubah status Draft menjadi status sah lewat penyetuju.
