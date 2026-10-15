@@ -1,0 +1,31 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 3 DEFINITIONS, definisi Unit kerja (pemblokir putaran pertama)",
+      "masalah": "Pemblokir qa/HR-SOP-12.sweep.r1.json sudah selesai. Definisi Unit kerja kembali ke teks sebelum sweep, sehingga rotasi sementara antar sub divisi dalam unit Operation tetap lolos 4.2 dan bagian 9. Pembatalan dicatat di notes bagian Sweep baris Pembatalan.",
+      "bukti": "specs/HR-SOP-12.json definisi Unit kerja: \"Nama di kolom Unit pada SNX-HR-ORG-01, misalnya Commercial, Operation, atau Legal. Sub divisi NOC, SOC, serta SD dan PM berada dalam satu unit Operation (USULAN).\"; teks docx out/02_HR: 'dihitung sebagai unit kerja tersendiri' 0 kali, 'berada dalam satu unit Operation (USULAN)' 1 kali; spec.diff tidak memuat baris definisi Unit kerja."
+    },
+    {
+      "lokasi": "Bagian 2 SCOPE paragraf 2 (tidak diubah sweep) terhadap kalimat batas paragraf 3",
+      "masalah": "Pengecualian lama \"pemindahan ke unit kerja, divisi, atau lokasi operasional lain (SNX-HR-SOP-13)\" tidak memuat kata menetap, padahal SNX-HR-SOP-13 memakai Divisi = sub divisi Operation dan hanya menangani perpindahan menetap. Pembaca bisa mengira rotasi sementara NOC ke SOC dikecualikan. Teks ini sudah ada sebelum sweep dan di luar butir; diserahkan ke LEAD (open item U4), bukan pemblokir.",
+      "bukti": "HR-SOP-12 scope[1]: \"pemindahan ke unit kerja, divisi, atau lokasi operasional lain (SNX-HR-SOP-13)\"; HR-SOP-13 definisi Divisi: \"Sub divisi Operation, yaitu NOC, SOC, serta SD dan PM.\"; HR-SOP-13 scope: \"dipindahkan secara menetap ke unit kerja, divisi, atau lokasi operasional lain\"."
+    },
+    {
+      "lokasi": "Butir 4.8; 6.4 langkah 4; 6.5 langkah 5",
+      "masalah": "Temuan nonblocking putaran pertama masih berlaku: perbaikan pasif menghapus kalimat pencabutan hak akses lama yang tidak relevan; pencabutan kini hanya tersirat lewat rujukan butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02 (masih ada di langkah pengajuan 6.4 nomor 5 dan 6.5 nomor 6). Penyusun mencatatnya di notes.",
+      "bukti": "Sebelum 4.8: \"yaitu hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan\"; sesudah: \"... mengajukan perubahan hak akses menurut butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02 (butir 6.4 dan 6.5).\""
+    },
+    {
+      "lokasi": "Butir 4.2",
+      "masalah": "Susunan baru membuat frasa \"menurut definisi di bagian 3\" secara tata bahasa hanya mengikat tingkatan jabatan. Unit kerja tetap istilah di tabel Definisi, jadi makna tidak bergeser; cukup dirapikan bila ada putaran lain.",
+      "bukti": "Sesudah: \"jabatan tujuan harus satu tingkatan dengan jabatan karyawan menurut definisi di bagian 3, dan berada di unit kerja yang sama (USULAN; batas rotasi dan mutasi ada di bagian 2).\""
+    },
+    {
+      "lokasi": "Seluruh dokumen (pemeriksaan butir 1 sampai 4)",
+      "masalah": "Semua butir dikerjakan dan sesuai, tanpa perubahan lain. Butir 1: 4.2 berlabel USULAN; pasif di Purpose, 4.8, 6.4 langkah 4, 6.5 langkah 5 kini berpelaku (dasar 4.3 dan tabel peran sebelum sweep); sinonim diseragamkan (perubahan hak akses, sesudah, tugas semula); 'SNX-ISMS-SOP-02 memakai kata' diganti 'kata mutasi di SNX-ISMS-SOP-02 berarti'. Butir 2 duplikat butir 1. Butir 3: label konsultan diganti, nol sisa. Butir 4: kalimat batas identik dengan instruksi dan HR-SOP-13; nol 'Atasan Langsung asal/tujuan' huruf kecil (docx 26 Asal, 20 Tujuan, ditambah diagram); dua 'Atasan Langsung' tanpa keterangan di keterangan Gambar 1 dan baris SNX-HR-ORG-01 diberi keterangan sesuai tabel peran; penetap tetap Direktur Utama. Tidak ada fakta baru tanpa dasar atau label, nol em-dash dan en-dash, nol rujukan internal AI, meta tidak berubah.",
+      "bukti": "Perbandingan field /tmp/pen-HR-SOP-12/HR-SOP-12.pre-sweep.json dengan specs/HR-SOP-12.json: 12 field berubah isi (purpose/1, policy/1, policy/7, procedures 3/3, 3/4, 4/3, 4/4, 4/5, exceptions/1, flow/caption, related_documents/1 dan 7, iso_refs Status), sisanya hanya kapitalisasi, scope bertambah 1 paragraf; semuanya ada di spec.diff. qa/HR-SOP-12.lint.json: pass true, fails []; validate.out.txt: All validations PASSED!; blankscan.out.txt: ok 17."
+    }
+  ]
+}

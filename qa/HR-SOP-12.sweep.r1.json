@@ -1,0 +1,22 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Bagian 3 DEFINITIONS, definisi Unit kerja (diff baris 167)",
+      "masalah": "Makna definisi dibalik di luar butir instruksi. Butir 4 hanya meminta kalimat batas identik, kapitalisasi Atasan Langsung Asal/Tujuan, dan penetap tetap; butir 1 hanya meminta label USULAN di 4.2, perbaikan pasif, dan sinonim. Kalimat batas tidak menuntut perubahan ini: kalimat itu hanya menggolongkan perpindahan MENETAP ke sub divisi sebagai mutasi, sedangkan perpindahan sementara dalam satu unit tetap rotasi. Alasan penyusun di notes membaca kalimat batas seolah semua perpindahan ke sub divisi adalah mutasi. Akibatnya 4.2 dan bagian 9 (Jabatan tujuan berada di unit kerja lain) kini menolak rotasi sementara NOC ke SOC yang sebelumnya lolos, dan perpindahan itu tidak tertampung di SOP-12 maupun SOP-13. Definisi baru juga tidak seragam dengan SNX-HR-SOP-13, yang memakai Unit kerja = kolom Unit di ORG-01 dan menyebut sub divisi sebagai Divisi, padahal butir 4 bertujuan menyeragamkan istilah. Kalimat baru memakai pasif tanpa pelaku (dihitung). Usul: kembalikan ke teks sebelum sweep dan biarkan LEAD memutuskan lewat open item U4, atau minta LEAD menyetujui perubahan ini secara tertulis.",
+      "bukti": "Sebelum: \"Sub divisi NOC, SOC, serta SD dan PM berada dalam satu unit Operation (USULAN).\" Sesudah: \"Sub divisi NOC, SOC, serta SD dan PM dihitung sebagai unit kerja tersendiri (USULAN).\" Notes baris 148: \"Kalimat Batas rotasi dan mutasi ... menghitung perpindahan ke sub divisi Operation ... sebagai mutasi, sehingga definisi Unit kerja memperlakukan tiap sub divisi sebagai unit tersendiri\". Kalimat batas: \"Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation ...\". specs/HR-SOP-13.json definisi: Unit kerja = \"Unit yang tercantum di kolom Unit pada Daftar Jabatan SNX-HR-ORG-01.\"; Divisi = \"Sub divisi Operation, yaitu NOC, SOC, serta SD dan PM.\" Notes Open item 3: \"ORG-01 menaruh ketiga sub divisi di bawah satu Divisi Operation\"."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "Butir 4.8; 6.4 langkah 4; 6.5 langkah 5",
+      "masalah": "Saat pasif diperbaiki, kalimat bahwa hak akses lama yang tidak relevan dicabut dihapus, tidak diberi pelaku. Pencabutan akses (inti Annex A 5.18) kini hanya tersirat lewat rujukan butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02. Penyusun mencatatnya di notes. Rujukan SNX-ISMS-SOP-02 di dua langkah pemberitahuan juga dihapus, tetapi masih ada di langkah pengajuan berikutnya. Maknanya tetap tertampung lewat rujukan, jadi bukan pemblokir.",
+      "bukti": "Sebelum 4.8: \"yaitu hak akses lama yang tidak relevan dicabut dan hak akses baru diajukan\". Sesudah: \"... mengajukan perubahan hak akses menurut butir Perubahan Akses saat Mutasi di SNX-ISMS-SOP-02 (butir 6.4 dan 6.5).\""
+    },
+    {
+      "lokasi": "Seluruh dokumen (pemeriksaan butir 1 sampai 4)",
+      "masalah": "Butir lain sudah dikerjakan dan sesuai: 4.2 berlabel USULAN; Purpose memakai pelaku HR Manager (dasar 4.3 dan 6.5 langkah 2); pelaku di 4.8 cocok dengan 6.4 langkah 5 dan 6.5 langkah 6; sinonim seragam (sesudah, tugas semula, perubahan hak akses); label konsultan diganti; kalimat batas identik dengan instruksi dan dengan HR-SOP-13; nol 'Atasan Langsung asal/tujuan' huruf kecil (26 Asal, 20 Tujuan di teks docx, ditambah satu masing-masing di diagram); penetap tetap Direktur Utama. Butir 2 duplikat butir 1, tidak menghasilkan perubahan tambahan. Tidak ada fakta baru tanpa label, nol em-dash dan en-dash, nol rujukan internal AI; lint_doc pass, fails kosong. Awalan 'Hasil yang dijaga:' dan temuan verify lain di luar butir sengaja tidak diubah dan dicatat di notes.",
+      "bukti": "Perbandingan 48 field specs/HR-SOP-12.json dengan /tmp/pen-HR-SOP-12/HR-SOP-12.pre-sweep.json: semua perubahan ada di diff, tidak ada field meta yang berubah; lint_doc.py out docx: pass True, fails []."
+    }
+  ]
+}
