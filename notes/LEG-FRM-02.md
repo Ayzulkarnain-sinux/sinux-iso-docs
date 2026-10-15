@@ -190,3 +190,18 @@ Pemeriksaan selaras dengan SNX-LEG-SOP-03 (specs/LEG-SOP-03.json): tabel Rekaman
 **Hasil uji sweep**
 
 Perintah: `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-FRM-02.json /tmp/pen-LEG-FRM-02/LEG-FRM-02.docx` (berhasil); `python3 -I tools/lint_doc.py /tmp/pen-LEG-FRM-02/LEG-FRM-02.docx generic` memberi `"pass": true`, `"fails": []`, `"warns": ["18 butir (USULAN) menunggu ACC"]` (turun dari 19 karena dua label di Rekaman kini berbentuk "(kategori ..., USULAN)" dan satu label ditambah di Dokumen Terkait); `python3 /mnt/skills/public/docx/scripts/office/validate.py` memberi "All validations PASSED!"; `python3 -I reports/orch/blankscan.py` memberi `ok 19 LEG-FRM-02.docx []`.
+
+
+## ISO-W9
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| Blok Approval, Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| Blok Approval, Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| Dokumen Terkait, baris SNX-HR-ORG-01 | (JA-08, JA-09) (USULAN). | (JA-08, JA-09). |
+
+Open item:
+- Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.
+- A3: tidak ada garis lapor JA-03/JA-04 di dokumen ini.

@@ -1,0 +1,32 @@
+{
+ "key": "LEG-FRM-02",
+ "cluster": "LEG-C",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Teks yang tidak diubah memuat 'departemen Legal' dengan d kecil di dua tempat: Petunjuk Pengisian butir 20 dan baris SNX-LEG-SOP-01 di Dokumen Terkait ('folder Google Drive departemen Legal'). Keduanya sudah ada sebelum W9, dan butir 1 hanya meminta 'Divisi Legal' diganti. Penyeragaman ke 'Departemen Legal' (D besar) bisa dipertimbangkan, tetapi di luar cakupan butir ini.",
+  "Kata 'Pemilik dokumen (USULAN)' pada baris Line Manager Legal tetap ada. Ini benar, karena label itu melekat pada kepemilikan dokumen, bukan pada pemetaan jabatan. Butir 17 '(USULAN)' juga tetap, dan itu juga benar.",
+  "HR-ORG-01 (kerangka sebelum W9, baris 93-94 dan K-13) masih menulis pemetaan Legal sebagai '(USULAN), menunggu konfirmasi (K-13)'. Itu dokumen lain di klaster HR dan harus diselaraskan di sana supaya rujukan dari LEG-FRM-02 tidak bertentangan dengan tujuannya."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 A5, blok approval: prepared = 'Alif Altamziz / Staff Legal' dan reviewed = 'Ester Febe Utomo / Line Manager Legal', persis sama dengan defaults v22 prepared_reviewed.LEG. Approved = 'Samuel Kristanto Utomo / President Director', persis approved_by.all dan tidak berubah.",
+  "Butir 1 A5: ', menunggu konfirmasi (K-13) (USULAN)' dihapus dari baris Peran Staff Legal (JA-09) dan baris Peran Line Manager Legal (JA-08). '(USULAN)' juga dihapus dari baris SNX-HR-ORG-01 di Dokumen Terkait. Label USULAN lain tetap.",
+  "Butir 1 A5: badan dokumen tetap memakai nama peran. Nama orang hanya muncul di blok Prepared/Reviewed (Alif dan Ester masing-masing 1 kali). Daffa muncul 0 kali.",
+  "Butir 1 A5, unit: 'Divisi Legal' muncul 0 kali, baik sebelum maupun sesudah. Tidak ada yang perlu diganti.",
+  "Butir 2 A3: JA-03, JA-04, dan 'VP ' muncul 0 kali di dokumen ini, jadi tidak ada yang perlu dikerjakan. Notes mencatatnya.",
+  "Rujukan silang: rujukan ke SNX-HR-ORG-01 (JA-08, JA-09) tidak diubah selain pelepasan label. Kerangka HR-ORG-01 baris 54-55 mencocokkannya: JA-08 dan JA-09 tercantum sebagai Legal & Compliance, Ester dan Alif.",
+  "Bahasa pada kalimat yang berubah: tanpa em-dash, tanpa frasa proses penyusunan, tanpa pasif baru, tanpa rujukan AI. Diff hanya berisi 5 baris yang diminta, tanpa perubahan makna lain.",
+  "notes/LEG-FRM-02.md punya bagian '## ISO-W9': tabel 5 perubahan dan open item K-13 Legal berstatus 'ditutup W9'."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Grep atas teks sesudah (/tmp/claude-0/w9/render/LEG-FRM-02.docx) dan, sebagai pembanding, teks sebelum (base): 'Divisi Legal' 0 (sebelum 0). 'HR Manager' 0. 'menunggu konfirmasi' 0 (sebelum 2). 'K-13' 0 (sebelum 2). 'Daffa' 0. 'JA-03'/'JA-04' 0. Em-dash 0. 'Alif' 1 dan 'Ester' 1, keduanya hanya di blok approval.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

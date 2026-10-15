@@ -15,8 +15,8 @@
   "effective_date": "",
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
-   "prepared": "Staff Legal",
-   "reviewed": "Line Manager Legal",
+   "prepared": "Alif Altamziz / Staff Legal",
+   "reviewed": "Ester Febe Utomo / Line Manager Legal",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -173,11 +173,11 @@
       "rows": [
        [
         "Staff Legal",
-        "Mengisi lembar dan menyerahkannya ke Line Manager Legal (Petunjuk Pengisian butir 1 sampai 21). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+        "Mengisi lembar dan menyerahkannya ke Line Manager Legal (Petunjuk Pengisian butir 1 sampai 21). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01."
        ],
        [
         "Line Manager Legal",
-        "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 5 dan 22 sampai 24). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+        "Pemilik dokumen (USULAN). Mengonfirmasi target penyelesaian, memeriksa lembar, menandatangani baris Diperiksa oleh, dan memberi Persetujuan Legal atau mengembalikan lembar (butir 5 dan 22 sampai 24). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01."
        ],
        [
         "Unit Kerja Pemohon",
@@ -1097,7 +1097,7 @@
        ],
        [
         "SNX-HR-ORG-01",
-        "Struktur Organisasi SINUX. Sumber pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance (JA-08, JA-09) (USULAN)."
+        "Struktur Organisasi SINUX. Sumber pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance (JA-08, JA-09)."
        ]
       ]
      }
