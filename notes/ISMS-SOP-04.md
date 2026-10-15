@@ -202,3 +202,28 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Validasi OOXML (/mnt/skills/public/docx/scripts/office/validate.py): All validations PASSED. Validator dijalankan tanpa -I karena skrip memuat modul pendampingnya dari foldernya sendiri; berkas docx hanya diberikan sebagai argumen.
 - Langkah prosedur: 30 langkah, terpanjang 24 kata (batas 25). Semua PIC langkah dan SLA ada di tabel peran bagian 5. Semua kode dokumen di badan tercantum di tabel dokumen terkait bagian 11. Nol em-dash dan en-dash.
 - Berkas uji: /tmp/pen-ISMS-SOP-04/ISMS-SOP-04.docx (bukan hasil final; render final oleh orkestrator ke out/08_ISMS).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+
+### W10 kalimat dihapus atau dipindah
+Kalimat penunjuk di bagian 4 dihapus (isi butir rujukan tetap di bagian 6): "Lihat butir 6.1.", "Lihat butir 6.6.", "Lihat butir 6.7.", "Lihat butir 6.2.", "Lihat butir 6.3.", "Lihat butir 6.4.", "Lihat butir 6.5."
+
+### W10 selisih angka
+- 6.1, 6.2, 6.5, 6.6: nomor butir di kalimat penunjuk "Lihat butir 6.x." di bagian 4 yang dihapus; butir 6.3, 6.4, 6.7 masih dirujuk di tempat lain dalam dokumen. Bukan angka substansi.
+
+### W10 audit pointer
+- .policy[0]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.1 tanpa (USULAN)).
+- .policy[2]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.6 tanpa (USULAN)).
+- .policy[4]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.7 tanpa (USULAN)); kalimat dipecah dua.
+- .policy[9]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.2 tanpa (USULAN)).
+- .policy[10]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.3 tanpa (USULAN)).
+- .policy[11]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.4 tanpa (USULAN)).
+- .policy[13]: pointer murni dibuang, isi tidak dinyatakan ulang (butir 6.5 tanpa (USULAN)).
+- .exceptions[0][1]: lengkap; langkah 2 butir 6.4 = NOC Engineer menghancurkan fisik media yang tidak dipakai ulang; "tanpa wipe" tetap; tanpa (USULAN).
+- .exceptions[1][1]: lengkap; langkah 3 butir 6.4 = NOC Engineer meminta konfirmasi tertulis pelanggan dua kali sebelum menghapus, sesuai SNX-OPS-SOP-02; langkah 4 = hapus VM atau volume sesuai kontrak setelah dua konfirmasi diterima; urutan tetap; pengecualian wipe dan penghancuran fisik tetap; tanpa (USULAN).
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
+- "bila" diganti "jika"; beberapa "menurut" diganti "sesuai".

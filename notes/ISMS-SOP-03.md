@@ -228,3 +228,26 @@ Uji ulang: render lalu lint sop memberi `"pass": true`, `"fails": []`, satu warn
 - Perintah 2: `python3 -I tools/lint_doc.py /tmp/pen-ISMS-SOP-03/ISMS-SOP-03.docx sop` memberi `"pass": true`, `"fails": []`, satu warn (25 butir USULAN, setelah putaran perbaikan 1).
 - Pemeriksaan tambahan atas spec (skrip sementara di scratchpad, tidak masuk repo): nol em-dash, en-dash, tanda § dan tanda `**`; semua PIC langkah dan SLA ada di tabel peran bagian 5; semua kode dokumen di badan tercantum di Dokumen terkait, dan sebaliknya; tidak ada langkah di atas 24 kata.
 - Validator OOXML: "All validations PASSED!" (413 paragraf).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+
+### W10 kalimat dihapus atau dipindah
+- Bagian 4 butir pertama: "Frekuensi uji ada di bagian 8." diganti fakta frekuensi uji dari bagian 8.
+- Bagian 4: "Peran yang menetapkan parameter backup dan peran yang mencatatnya ada di bagian 5 dan butir 6.1." ditulis ulang sebagai pembagian peran; rujukan butir 6.1 tetap.
+- Bagian 4: "Langkahnya ada di butir 6.2." menjadi "sesuai butir 6.2".
+
+### W10 selisih angka
+nihil
+
+### W10 audit pointer
+- .policy[0]: lengkap; bagian 8 memuat uji restore pelanggan minimal bulanan dan sistem internal kritis minimal triwulanan, keduanya tanpa (USULAN), keduanya disalin.
+- .policy[6]: lengkap; bagian 5 dan butir 6.1: Lead NOC menetapkan kebijakan backup, Service Delivery Manager mencatat parameter pelanggan dari kontrak, Pemilik sistem menetapkan RPO dan RTO bersama SNX-ISMS-PLN-01, NOC Engineer mendaftarkan job di sheet Daftar Job; rujukan butir 6.1 dipertahankan; tidak ada label (USULAN) di sumber rujukan.
+- .procedures[2].steps[4][0]: lengkap; langkah 3 = approval Lead NOC, langkah 4 = persetujuan tertulis PIC pelanggan, urutan "setelah keduanya" tetap; tanpa (USULAN).
+- .exceptions[2][1]: lengkap; bagian 4 mensyaratkan approval Lead NOC serta persetujuan tertulis PIC pelanggan untuk restore ke lokasi produksi; rujukan butir 6.3 tetap; tanpa (USULAN).
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
+- "analisis akar" dan "akar penyebab" menjadi "root cause", dengan jembatan "root cause (akar penyebab)" pada kemunculan pertama di tabel Roles.
+- "bila" diganti "jika"; "butuh" menjadi "memerlukan"; "soal" menjadi "tentang"; Purpose dipecah dua kalimat.

@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Tujuh kalimat \"Lihat butir 6.x\" (6.1, 6.6, 6.7, 6.2, 6.3, 6.4, 6.5) di bagian 4 dihapus. Kalimat itu murni penunjuk (STYLE §3.2). Kalimat kebijakan di depannya tetap utuh, dan langkah serta batasnya (1 jam, semester, triwulan, 30 hari, dua konfirmasi tertulis) tetap ada di bagian 6 dan bagian 8. Pembaca tidak kehilangan langkah atau batas. Tidak ada label USULAN yang ikut hilang, karena ketiga label bed1bb6 ada di bagian 8 dan Rekaman dan tetap utuh.",
+  "Baris bagian 9 yang semula \"memakai langkah 2 butir 6.4\" dan \"langkah 3 dan 4 butir 6.4\" kini ditulis sebagai fakta, lengkap sesuai langkah asal (hancur fisik; dua konfirmasi tertulis sesuai SNX-OPS-SOP-02, lalu hapus sesuai kontrak).",
+  "Frasa \"menghancurkan fisik media itu\" kurang wajar. Usul: \"menghancurkan media itu secara fisik\".",
+  "Kedua baris bagian 9 itu kini tanpa nomor butir, padahal baris lain masih memuat (butir 6.3 ...). Hal ini bukan kesalahan, tetapi ada baiknya diseragamkan."
+ ],
+ "contoh_baik": [
+  "Media penyimpanan tidak dipakai ulang | NOC Engineer memakai langkah 2 butir 6.4 dan tidak menjalankan wipe. -> NOC Engineer menghancurkan fisik media itu tanpa menjalankan wipe."
+ ]
+}

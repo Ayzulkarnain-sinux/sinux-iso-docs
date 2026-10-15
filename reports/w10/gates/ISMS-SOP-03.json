@@ -1,0 +1,35 @@
+{
+ "key": "ISMS-SOP-03",
+ "mode": "sop",
+ "out": "out/08_ISMS/SNX-ISMS-SOP-03 Backup & Recovery (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2446,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 25,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2404,
+  "calque": [],
+  "lewat": 2,
+  "pointer": 3,
+  "usulan": 25,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 72,
+  "tables_ge3_no_header": 14
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-ISMS-SOP-03 Backup & Recovery (Rev00 DRAFT).pdf",
+ "pages": 16,
+ "blank": [],
+ "pass": true
+}

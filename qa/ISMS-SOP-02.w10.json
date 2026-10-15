@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 4 masih memuat dua kalimat yang hanya berisi rujukan: \"Autentikasi (Annex A 5.17, 8.5): MFA dan aturan password mengikuti butir 6.2.\" dan \"Hak akses (Annex A 5.18): ... mengikuti butir 6.1 sampai 6.6.\" Kalimat ini tidak diubah di W10. Sebaiknya tulis faktanya, misalnya MFA wajib pada sistem yang mendukung dan password minimal 12 karakter.",
+  "Bagian 9, baris Kredensial terpapar: dua langkah dengan dua pelaku ada di satu sel (\"Pengguna akun melapor ... dan Administrator sistem merotasi ...\"). Tiap langkah tetap menyebut pelakunya sekali, jadi baris ini diterima. Bisa dipecah menjadi dua kalimat.",
+  "Kata approval dipakai untuk persetujuan internal, sedangkan persetujuan dipakai untuk pelanggan (butir 6.1 langkah 5). Hal ini sesuai STYLE §5, tetapi sebaiknya dijaga konsisten di seluruh dokumen.",
+  "Tidak ada pointer yang dihapus dan tidak ada label USULAN yang hilang. Angka (2 hari kerja, 1 hari kerja, 5 dan 10 hari kerja, 90 hari, 12 karakter, 3 tahun) tetap sama dengan bed1bb6."
+ ],
+ "contoh_baik": [
+  "Kerjakan akses privileged di production pelanggan dalam kerangka change request SNX-OPS-SOP-02. -> Jalankan akses privileged di production pelanggan dalam change request sesuai SNX-OPS-SOP-02."
+ ]
+}

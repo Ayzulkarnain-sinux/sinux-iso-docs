@@ -199,3 +199,18 @@ Ringkasan open items sebelumnya (rinci di bagian 8 di atas) dan butir baru dari 
 | 17 (baru) | Pelaku penetapan level akses (Pemilik sistem) dan pencatatannya (Administrator sistem) adalah tafsir dari dua kalimat sumber | Fani |
 | 18 (baru) | Judul "Statement of Applicability (SoA)" untuk SNX-ISMS-SOA-01 di bagian 11 diambil dari salinan audit, bukan dari berkas Drive | konsultan SoA |
 
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+
+### W10 kalimat dihapus atau dipindah
+nihil
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
+- "bila" diganti "jika"; Purpose dipecah menjadi dua kalimat; "butuh" menjadi "memerlukan".
+- Rujukan butir 6.1 sampai 6.6 di Policy dan bagian 9 dipertahankan (satu rujukan per paragraf atau sel).

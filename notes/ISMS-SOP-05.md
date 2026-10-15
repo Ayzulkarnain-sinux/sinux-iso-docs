@@ -186,3 +186,28 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber:
 - Tanggal: tidak ada tanggal di dokumen; Effective Date dan tanda tangan kosong.
 - Tanpa sumber tertulis dan tidak berlabel (USULAN) di dokumen, tetapi tercatat di sini sebagai tafsir: penugasan pelaku (asumsi 1 sampai 8), serah terima Lead SOC ke Lead NOC (asumsi 2), mitigasi yang mengubah production lewat SNX-OPS-SOP-02 (asumsi 5), pencatatan pengecualian prioritas bukan Darurat dan Kritis hanya di tiket (asumsi 6), pemetaan klausul 8.19 (asumsi 10), pengecualian lingkup penanganan insiden (asumsi 11), kewenangan Lead NOC menyetujui change Standar dan Normal NOC (dari spec SNX-OPS-SOP-02, bukan sumber SOP-05). Semuanya ada di open items 9, 11, 14, 16, dan 18, bukan diklaim sebagai fakta sumber.
 - Hal yang tidak saya ukur: isi SNX-OPS-SOP-02, SOP-03, SNX-ISMS-SOP-01, FRM-04, FRM-07, FRM-08, REG-01, REG-03, dan HR-ORG-01 dibaca dari spec dan notes sibling di repo, bukan dari berkas Drive terbaru; kutipannya bisa basi bila tim sudah mengubah dokumen itu.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+
+### W10 kalimat dihapus atau dipindah
+- Scope: "(penyampaian temuan dan rekomendasinya ada di bagian 9)" diganti fakta dari bagian 9 dalam kalimat terpisah.
+- Definisi Tenggat: "nilainya ada di bagian 8" menjadi rujukan "(bagian 8)".
+- Butir 4.2: "Tenggat tiap prioritas ada di bagian 8" menjadi "Tenggat tiap prioritas (bagian 8)".
+- Intro 6.1: "Sumber yang ditelaah tercantum di butir 4.1." ditulis ulang "Lead SOC menelaah empat jenis sumber informasi vulnerability sesuai butir 4.1."
+- Langkah 6.1 dan 6.2: "sesuai jadwal di bagian 8" diganti jadwal dari bagian 8.
+
+### W10 selisih angka
+- 9: nomor bagian di kalimat penunjuk "(penyampaian temuan dan rekomendasinya ada di bagian 9)" di Scope, diganti faktanya. Bukan angka substansi.
+
+### W10 audit pointer
+- .scope[2]: lengkap; bagian 9 baris Aplikasi milik pelanggan: Service Delivery Manager menyampaikan temuan dan rekomendasi ke developer atau PIC pelanggan; pelaku dan pihak penerima tetap; tanpa (USULAN).
+- .procedures[0].steps[0][0]: lengkap; bagian 8 = minimal mingguan, advisory kritis segera (tanpa (USULAN)); rujukan butir 4.1 dipindah ke intro prosedur yang sama ("sesuai butir 4.1"), daftar empat jenis sumber tetap di butir 4.1.
+- .procedures[1].steps[0][0]: lengkap; bagian 8 = minimal bulanan, dan setelah perubahan besar (tanpa (USULAN) di baris bagian 8).
+- .procedures[1].steps[1][0]: lengkap; bagian 8 = scan eksternal minimal bulanan (tanpa (USULAN)).
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
+- "bila" diganti "jika"; "menurut" diganti "sesuai"; "butuh" menjadi "memerlukan"; beberapa kalimat panjang dipecah.
+- Bagian 9 baris "Patch tidak dapat dipasang sesuai tenggat" ditulis dengan satu pelaku (Lead SOC mencatat dan meminta persetujuan), sesuai simpul alur "Catat pengecualian dan minta persetujuan".

@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Pointer yang diganti fakta semuanya cocok dengan bagian 8 yang tidak berlabel: butir 6.1 langkah 1 (minimal mingguan, advisory kritis segera), butir 6.2 langkah 1 (minimal bulanan dan setelah perubahan besar), dan butir 6.2 langkah 2 (minimal bulanan). Bagian 2 \"(penyampaian ... ada di bagian 9)\" diganti fakta yang setara dengan baris Aplikasi milik pelanggan.",
+  "Pengantar bagian 5 Mitigasi Kompensasi masih menulis \"batas waktu mitigasi tersendiri (bagian 8)\". Pembaca 6.4 perlu angkanya. Usul: \"Vulnerability prioritas Darurat dimitigasi dalam 24 jam (USULAN).\"",
+  "Baris bagian 9 \"Patch tidak dapat dipasang sesuai tenggat\" kini berbunyi \"Lead SOC ... meminta persetujuan Pemilik aset\". Kata kerja \"meminta\" tidak ada di butir 6.6 dan bed1bb6, tetapi arti aturan, peran penyetuju, dan batas Darurat/Kritis tetap sama.",
+  "Baris bagian 9 Aplikasi milik pelanggan memuat pelaku kedua dalam klausa relatif (\"..., yang kemudian memasang patch-nya\"). Usul memecahnya: \"Developer atau PIC pelanggan memasang patch-nya.\""
+ ],
+ "contoh_baik": [
+  "Ajukan change request pemasangan patch menurut SNX-OPS-SOP-02: Standar atau Normal, dan Emergency boleh untuk prioritas Darurat. -> Ajukan change request pemasangan patch sesuai SNX-OPS-SOP-02, jenis Standar atau Normal; untuk prioritas Darurat boleh jenis Emergency."
+ ]
+}

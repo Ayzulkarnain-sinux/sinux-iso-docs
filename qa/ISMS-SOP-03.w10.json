@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Empat pointer diganti fakta dan semuanya lengkap dibanding bed1bb6: (1) bagian 4 \"Frekuensi uji ada di bagian 8\" diganti dengan bulanan per pelanggan dan triwulanan untuk sistem internal kritis, cocok dengan bagian 8 yang tidak berlabel; (2) \"Peran yang menetapkan parameter ... ada di bagian 5 dan butir 6.1\" diganti dengan empat peran yang cocok dengan butir 6.1 langkah 1-3; (3) butir 6.3 langkah 5 \"sesudah langkah 3 dan 4\" diganti dengan approval Lead NOC dan persetujuan tertulis PIC pelanggan; (4) baris bagian 9 Restore ke lokasi uji juga diganti fakta yang sama. Tidak ada langkah atau batas yang hilang.",
+  "Tabel Roles NOC Engineer, kolom Authority, masih memuat pointer \"sesuai approval dan persetujuan di bagian 4\". Polanya tidak sejalan dengan baris bagian 9 yang sudah diganti fakta. Usul: \"sesuai approval Lead NOC dan persetujuan tertulis PIC pelanggan\".",
+  "Bagian 9, baris Restore sistem internal saat insiden, menyebut dua pelaku (Lead NOC, NOC Engineer). Tiap pelaku disebut sekali di awal langkahnya masing-masing, dan baris ini tidak diubah di W10.",
+  "Ungkapan \"pelanggan berlayanan backup\" terasa kaku. Usul: \"pelanggan yang memakai layanan backup\"."
+ ],
+ "contoh_baik": [
+  "Restore data ke lokasi produksi sesudah langkah 3 dan 4. -> Restore data ke lokasi produksi setelah ada approval Lead NOC dan persetujuan tertulis PIC pelanggan."
+ ]
+}

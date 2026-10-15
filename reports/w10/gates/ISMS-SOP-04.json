@@ -1,0 +1,45 @@
+{
+ "key": "ISMS-SOP-04",
+ "mode": "sop",
+ "out": "out/08_ISMS/SNX-ISMS-SOP-04 IT Asset & Configuration Management (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2183,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 3,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2193,
+  "calque": [],
+  "lewat": 4,
+  "pointer": 0,
+  "usulan": 3,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 63,
+  "tables_ge3_no_header": 16
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "6.1",
+    "6.2",
+    "6.5",
+    "6.6"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-ISMS-SOP-04 IT Asset & Configuration Management (Rev00 DRAFT).pdf",
+ "pages": 15,
+ "blank": [],
+ "pass": true
+}

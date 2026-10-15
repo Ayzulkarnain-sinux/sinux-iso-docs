@@ -1,660 +1,671 @@
 {
-  "meta": {
-    "doc_key": "ISMS-SOP-05",
-    "number": "SNX-ISMS-SOP-05",
-    "department": "Operation",
-    "title": "Vulnerability & Patch Management",
-    "process_owner": "Lead SOC",
-    "classification": "RESTRICTED (Internal)",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
-      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "doc_key": "ISMS-SOP-05",
+  "number": "SNX-ISMS-SOP-05",
+  "department": "Operation",
+  "title": "Vulnerability & Patch Management",
+  "process_owner": "Lead SOC",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "purpose": [
-    "SOP ini menetapkan cara SINUX memperoleh informasi technical vulnerability, menilai paparannya, dan menutupnya melalui patch atau mitigasi dalam tenggat yang sesuai risiko, termasuk perlindungan terhadap malware."
-  ],
-  "scope": [
-    "SOP ini berlaku untuk sistem internal SINUX dan sistem pelanggan yang patching-nya menjadi tanggung jawab SINUX menurut kontrak.",
-    "Sistem yang tercakup: OS server, hypervisor dan platform, panel hosting (WHM dan cPanel), web server dan PHP, email server, network device, WAF, security agent dan backup, serta aplikasi internal.",
-    "Dikecualikan dari SOP ini: patch aplikasi milik pelanggan, yang menjadi tanggung jawab developer atau PIC pelanggan (penyampaian temuan dan rekomendasinya ada di bagian 9), dan penanganan insiden keamanan, yang diatur di SNX-ISMS-SOP-01."
-  ],
-  "definitions": [
-    [
-      "Advisory",
-      "Pemberitahuan resmi dari vendor tentang vulnerability pada produknya dan patch yang tersedia."
-    ],
-    [
-      "Authenticated scan",
-      "Vulnerability scan yang berjalan dengan akun yang sah pada aset yang diperiksa."
-    ],
-    [
-      "BSSN",
-      "Badan Siber dan Sandi Negara."
-    ],
-    [
-      "Change request (CR)",
-      "Permintaan tercatat untuk mengubah sistem di production, dicatat di SNX-OPS-FRM-04."
-    ],
-    [
-      "Change Standar, Normal, Major, dan Emergency",
-      "Jenis change yang kriterianya ditetapkan di SNX-OPS-SOP-02."
-    ],
-    [
-      "CISA KEV",
-      "Katalog Known Exploited Vulnerabilities dari Cybersecurity and Infrastructure Security Agency (CISA), berisi vulnerability yang diketahui sudah dieksploitasi."
-    ],
-    [
-      "CSIRT sektor",
-      "Computer Security Incident Response Team untuk satu sektor industri."
-    ],
-    [
-      "CVE",
-      "Common Vulnerabilities and Exposures, nomor pengenal publik untuk satu vulnerability."
-    ],
-    [
-      "CVSS",
-      "Common Vulnerability Scoring System, skor tingkat keparahan vulnerability dari 0 sampai 10."
-    ],
-    [
-      "Dieksploitasi aktif",
-      "Sudah dipakai penyerang di dunia nyata."
-    ],
-    [
-      "Dua sumber",
-      "Dua bukti dari cara pemeriksaan yang berbeda, misalnya hasil scan ulang dan hasil pemeriksaan versi (USULAN)."
-    ],
-    [
-      "EDR",
-      "Endpoint detection and response, perangkat lunak yang memantau dan mendeteksi ancaman di endpoint."
-    ],
-    [
-      "Endpoint",
-      "Server dan laptop kerja SINUX."
-    ],
-    [
-      "IOC",
-      "Indicator of compromise: hash file, IP, domain, atau pola yang menandai kompromi."
-    ],
-    [
-      "Mitigasi kompensasi",
-      "Tindakan yang menurunkan paparan vulnerability tanpa memasang patch."
-    ],
-    [
-      "Pemilik aset",
-      "Pemegang tanggung jawab atas aset, sesuai kolom Pemilik SNX-ISMS-REG-01."
-    ],
-    [
-      "Perubahan besar",
-      "Change jenis Major menurut SNX-OPS-SOP-02 (USULAN)."
-    ],
-    [
-      "PIC pelanggan",
-      "Orang yang ditunjuk pelanggan sebagai penanggung jawab dan penghubung dengan SINUX."
-    ],
-    [
-      "Prioritas patch",
-      "Skala lima tingkat untuk urgensi penutupan vulnerability: Darurat, Kritis, Tinggi, Sedang, dan Rendah, dengan kriteria di butir 4.2. Skala ini terpisah dari severity tiket P1 sampai P4 (SNX-OPS-SOP-04) dan dari level risiko (SNX-ISMS-REG-02); nama Kritis, Tinggi, Sedang, dan Rendah di dokumen ini selalu berarti prioritas patch."
-    ],
-    [
-      "RCE",
-      "Remote code execution, penyerang menjalankan kode di sistem target dari jarak jauh."
-    ],
-    [
-      "Scan eksternal",
-      "Vulnerability scan dari vantage di luar network internal terhadap layanan yang terbuka ke internet."
-    ],
-    [
-      "Sweep IOC",
-      "Pencarian IOC pada aset terdampak dan aset sejenisnya."
-    ],
-    [
-      "Tenggat",
-      "Batas waktu pemasangan patch atau penerapan mitigasi kompensasi untuk satu vulnerability menurut prioritasnya; nilainya ada di bagian 8. Dihitung sejak Lead SOC menetapkan prioritas di tiket temuan, dalam hari kalender (USULAN)."
-    ],
-    [
-      "Tiket temuan",
-      "Tiket di Zammad untuk satu temuan vulnerability beserta penanganannya, direkap di SNX-OPS-FRM-08."
-    ],
-    [
-      "Vulnerability",
-      "Kelemahan teknis pada sistem, aplikasi, atau perangkat yang dapat dimanfaatkan penyerang."
-    ],
-    [
-      "Vulnerability scan",
-      "Pemeriksaan otomatis aset untuk menemukan vulnerability yang sudah dikenal."
-    ],
-    [
-      "WAF",
-      "Web application firewall, penyaring lalu lintas web sebelum sampai ke aplikasi."
-    ],
-    [
-      "Window maintenance",
-      "Jadwal yang disepakati untuk pekerjaan yang berdampak ke layanan, menurut SNX-OPS-SOP-03."
-    ],
-    [
-      "Zammad",
-      "Sistem tiket untuk Ops."
-    ]
-  ],
-  "policy": [
-    "4.1 Informasi vulnerability (Annex A 5.7): Lead SOC menelaah empat jenis sumber (butir 6.1): advisory vendor untuk stack yang dikelola; database CVE, katalog CISA KEV, serta peringatan BSSN dan CSIRT sektor terkait; hasil vulnerability scan internal dan eksternal; dan temuan dari insiden, pentest, dan audit. Stack yang dikelola yaitu cPanel dan CloudLinux, distribusi Linux, Zimbra, nginx, PHP, hypervisor, Acronis, dan network device.",
-    "4.2 Prioritas (Annex A 8.8): Lead SOC menetapkan prioritas tiap vulnerability dengan kriteria berikut. Darurat: dieksploitasi aktif di dunia nyata dan dapat dijangkau dari internet, atau RCE tanpa autentikasi. Kritis: CVSS 9.0 atau lebih. Tinggi: CVSS 7.0 sampai 8.9. Sedang: CVSS 4.0 sampai 6.9. Rendah: CVSS di bawah 4.0. Tenggat tiap prioritas ada di bagian 8 dan berstatus USULAN sampai disahkan bersama SNX-ISMS-REG-03.",
-    "4.3 Penyesuaian prioritas (Annex A 8.8): Lead SOC dapat menaikkan atau menurunkan prioritas berdasarkan paparan aktual (dapat dijangkau dari internet atau tidak), nilai aset, dan mitigasi yang sudah ada.",
-    "4.4 Pemasangan patch (Annex A 8.8, 8.19): patch diuji lebih dulu bila memungkinkan dan dipasang di production lewat change request menurut SNX-OPS-SOP-02 (butir 6.3). Di server cPanel, yum install atau remove perl-* dilarang, dan update mengikuti mekanisme resmi panel.",
-    "4.5 Mitigasi kompensasi (Annex A 8.8): bila patch belum tersedia atau tidak bisa dipasang, NOC Engineer menerapkan mitigasi kompensasi dan mencatatnya di tiket temuan (butir 6.4).",
-    "4.6 Vulnerability yang dieksploitasi aktif (Annex A 8.8): vulnerability ini diperlakukan sebagai potensi insiden. SOC Analyst melakukan sweep IOC sesuai SNX-ISMS-SOP-01 sebelum dan sesudah patch dipasang, karena patch tidak menghapus kompromi yang sudah terjadi (butir 6.3).",
-    "4.7 Tindakan korektif (ISO 9001:2015 10.2): tiap temuan dicatat sebagai tiket temuan, ditangani sampai tertutup, dan tiketnya ditutup dengan bukti verifikasi. Klaim tertutup didukung dua sumber (butir 6.2 sampai 6.5).",
-    "4.8 Pengecualian (Annex A 8.8): Lead SOC mencatat patch yang tidak dapat dipasang sesuai tenggat sebagai pengecualian berisi alasan, mitigasi, tanggal tinjau ulang, dan persetujuan Pemilik aset. Pengecualian prioritas Darurat dan Kritis butuh persetujuan Head of Operation, dan Lead SOC mencatatnya di SNX-ISMS-REG-03 sebagai risiko yang diterima (butir 6.6).",
-    "4.9 Perlindungan malware (Annex A 8.7): server dan laptop kerja menjalankan anti-malware atau EDR yang aktif dan diperbarui, dan fleet hosting pelanggan memakai solusi yang disepakati kontrak. SOC Analyst menangani deteksi malware sesuai SNX-ISMS-SOP-01 (butir 6.7).",
-    "4.10 Instalasi software (Annex A 8.19): Seluruh personel mengunduh software hanya dari sumber resmi dan memverifikasi checksum bila tersedia (butir 6.7)."
-  ],
-  "roles": [
-    [
-      "Lead SOC",
-      "Pemilik SOP. Menelaah sumber informasi vulnerability, menetapkan prioritas, meneruskan tiket temuan ke Lead NOC, memverifikasi penutupan, dan mencatat pengecualian.",
-      "Menetapkan, menaikkan, atau menurunkan prioritas; menutup tiket temuan."
-    ],
-    [
-      "SOC Analyst",
-      "Menjalankan vulnerability scan, melakukan triage dan membuat tiket temuan, serta melakukan sweep IOC untuk vulnerability yang dieksploitasi aktif. Menangani deteksi malware menurut SNX-ISMS-SOP-01.",
-      "Menentukan temuan hasil triage yang dicatat sebagai tiket."
-    ],
-    [
-      "Lead NOC",
-      "Menjadwalkan pemasangan patch melalui change request.",
-      "Menyetujui change Standar dan Normal NOC menurut SNX-OPS-SOP-02."
-    ],
-    [
-      "NOC Engineer",
-      "Menguji dan memasang patch melalui change request, menerapkan mitigasi kompensasi, dan memeriksa solusi anti-malware pada fleet hosting pelanggan.",
-      "Memasang patch di production sesudah change request disetujui."
-    ],
-    [
-      "Pemilik aset",
-      "Menyetujui window patch dan menerima risiko bila patch ditunda.",
-      "Menyetujui window patch dan pengecualian pada asetnya."
-    ],
-    [
-      "Service Delivery Manager",
-      "Mengomunikasikan temuan dan jadwal patch kepada pelanggan.",
-      "Berkomunikasi resmi dengan PIC pelanggan tentang temuan dan jadwal patch."
-    ],
-    [
-      "Head of Operation",
-      "Menyetujui pengecualian prioritas Darurat dan Kritis.",
-      "Menyetujui atau menolak pengecualian prioritas Darurat dan Kritis."
-    ],
-    [
-      "Seluruh personel",
-      "Mengunduh software hanya dari sumber resmi dan memverifikasi checksum bila tersedia.",
-      "Mengunduh software sebatas dari sumber resmi."
-    ]
-  ],
-  "procedures": [
-    {
-      "title": "Telaah Sumber Informasi Vulnerability (Annex A 5.7)",
-      "intro": [
-        "Sumber yang ditelaah tercantum di butir 4.1."
-      ],
-      "steps": [
-        [
-          "Telaah sumber informasi vulnerability pada butir 4.1 sesuai jadwal di bagian 8.",
-          "Lead SOC",
-          "Advisory yang berlaku bagi aset SINUX"
-        ],
-        [
-          "Teruskan advisory yang berlaku bagi aset di SNX-ISMS-REG-01 ke SOC Analyst untuk dicatat (butir 6.2).",
-          "Lead SOC",
-          "Advisory diteruskan ke SOC Analyst"
-        ]
-      ]
-    },
-    {
-      "title": "Scan dan Pencatatan Temuan (Annex A 8.8)",
-      "intro": [
-        "Tiket temuan dibuat di Zammad dan direkap di SNX-OPS-FRM-08."
-      ],
-      "steps": [
-        [
-          "Jalankan authenticated scan pada aset internal dan aset pelanggan yang dikelola SINUX sesuai jadwal di bagian 8.",
-          "SOC Analyst",
-          "Laporan scan di Folder SOC"
-        ],
-        [
-          "Jalankan scan eksternal sesuai jadwal di bagian 8.",
-          "SOC Analyst",
-          "Laporan scan di Folder SOC"
-        ],
-        [
-          "Lakukan triage temuan hasil scan.",
-          "SOC Analyst",
-          "Temuan hasil triage"
-        ],
-        [
-          "Buat tiket temuan berisi ID aset dari SNX-ISMS-REG-01 dan CVE untuk tiap temuan hasil triage dan tiap advisory yang diteruskan.",
-          "SOC Analyst",
-          "Tiket temuan"
-        ],
-        [
-          "Tetapkan prioritas sesuai butir 4.2 dan 4.3, lalu isi prioritas dan tenggat di tiket temuan.",
-          "Lead SOC",
-          "Tiket temuan berprioritas dan bertenggat"
-        ],
-        [
-          "Teruskan tiket temuan ke Lead NOC untuk dijadwalkan.",
-          "Lead SOC",
-          "Tiket temuan diteruskan ke Lead NOC"
-        ]
-      ]
-    },
-    {
-      "title": "Pemasangan Patch (Annex A 8.8, 8.19)",
-      "intro": [
-        "Langkah sweep IOC hanya berlaku untuk vulnerability yang dieksploitasi aktif (butir 4.6)."
-      ],
-      "steps": [
-        [
-          "Uji patch pada sistem non-produksi atau satu host perwakilan bila memungkinkan.",
-          "NOC Engineer",
-          "Hasil uji di tiket temuan"
-        ],
-        [
-          "Lakukan sweep IOC sebelum patch dipasang, sesuai SNX-ISMS-SOP-01.",
-          "SOC Analyst",
-          "Hasil sweep IOC di tiket temuan"
-        ],
-        [
-          "Usulkan jadwal pemasangan patch di window maintenance.",
-          "Lead NOC",
-          "Jadwal patch di SNX-OPS-FRM-07"
-        ],
-        [
-          "Setujui window patch.",
-          "Pemilik aset",
-          "Persetujuan window patch di tiket temuan"
-        ],
-        [
-          "Sampaikan temuan dan jadwal patch pada aset pelanggan ke PIC pelanggan.",
-          "Service Delivery Manager",
-          "Pemberitahuan ke PIC pelanggan di tiket temuan"
-        ],
-        [
-          "Ajukan change request pemasangan patch menurut SNX-OPS-SOP-02: Standar atau Normal, dan Emergency boleh untuk prioritas Darurat.",
-          "NOC Engineer",
-          "Change request di SNX-OPS-FRM-04"
-        ],
-        [
-          "Pasang patch sesudah change request disetujui; di server cPanel pakai mekanisme update resmi panel (butir 4.4).",
-          "NOC Engineer",
-          "Patch terpasang; service report di SNX-OPS-FRM-07"
-        ],
-        [
-          "Lakukan sweep IOC sesudah patch dipasang, sesuai SNX-ISMS-SOP-01.",
-          "SOC Analyst",
-          "Hasil sweep IOC di tiket temuan"
-        ]
-      ]
-    },
-    {
-      "title": "Mitigasi Kompensasi (Annex A 8.8)",
-      "intro": [
-        "Mitigasi kompensasi dipakai bila patch belum tersedia atau tidak bisa dipasang. Vulnerability prioritas Darurat punya batas waktu mitigasi sendiri di bagian 8. Mitigasi yang mengubah production mengikuti SNX-OPS-SOP-02."
-      ],
-      "steps": [
-        [
-          "Terapkan mitigasi kompensasi: rule WAF, nonaktifkan layanan yang vulnerable, atau batasi akses network.",
-          "NOC Engineer",
-          "Mitigasi kompensasi terpasang"
-        ],
-        [
-          "Catat mitigasi di tiket temuan.",
-          "NOC Engineer",
-          "Catatan mitigasi di tiket temuan"
-        ]
-      ]
-    },
-    {
-      "title": "Verifikasi dan Penutupan (Annex A 8.8; ISO 9001:2015 10.2)",
-      "steps": [
-        [
-          "Periksa hasil patch atau mitigasi dengan scan ulang atau pemeriksaan versi.",
-          "SOC Analyst",
-          "Hasil scan ulang atau pemeriksaan versi di tiket temuan"
-        ],
-        [
-          "Verifikasi penutupan: pastikan klaim tertutup didukung dua sumber (butir 4.7).",
-          "Lead SOC",
-          "Verifikasi penutupan di tiket temuan"
-        ],
-        [
-          "Tutup tiket temuan dengan bukti verifikasi.",
-          "Lead SOC",
-          "Tiket temuan tertutup dengan bukti verifikasi"
-        ]
-      ]
-    },
-    {
-      "title": "Pengecualian dan Penerimaan Risiko (Annex A 8.8)",
-      "intro": [
-        "Pengecualian hanya untuk patch yang tidak dapat dipasang sesuai tenggat (butir 4.8)."
-      ],
-      "steps": [
-        [
-          "Catat pengecualian di tiket temuan: alasan, mitigasi, dan tanggal tinjau ulang.",
-          "Lead SOC",
-          "Pengecualian di tiket temuan"
-        ],
-        [
-          "Setujui pengecualian pada aset yang dimiliki.",
-          "Pemilik aset",
-          "Persetujuan Pemilik aset di tiket temuan"
-        ],
-        [
-          "Setujui pengecualian prioritas Darurat dan Kritis.",
-          "Head of Operation",
-          "Persetujuan Head of Operation di tiket temuan"
-        ],
-        [
-          "Catat pengecualian prioritas Darurat dan Kritis di SNX-ISMS-REG-03 sebagai risiko yang diterima.",
-          "Lead SOC",
-          "Baris pengecualian di SNX-ISMS-REG-03"
-        ],
-        [
-          "Tinjau ulang pengecualian pada tanggal tinjau ulang yang tercatat (USULAN).",
-          "Lead SOC",
-          "Hasil tinjau ulang di tiket temuan"
-        ]
-      ]
-    },
-    {
-      "title": "Perlindungan Malware (Annex A 8.7, 8.19)",
-      "steps": [
-        [
-          "Periksa bahwa anti-malware atau EDR di server dan laptop kerja aktif dan diperbarui.",
-          "SOC Analyst",
-          "Status anti-malware atau EDR per endpoint"
-        ],
-        [
-          "Periksa bahwa fleet hosting pelanggan memakai solusi yang disepakati kontrak, misalnya ImunifyAV untuk panel hosting tertentu.",
-          "NOC Engineer",
-          "Status solusi anti-malware fleet hosting pelanggan"
-        ],
-        [
-          "Tangani deteksi malware sesuai SNX-ISMS-SOP-01.",
-          "SOC Analyst",
-          "Event keamanan ditangani sesuai SNX-ISMS-SOP-01"
-        ],
-        [
-          "Unduh software hanya dari sumber resmi dan verifikasi checksum bila tersedia.",
-          "Seluruh personel",
-          "Software dari sumber resmi, checksum terverifikasi bila tersedia"
-        ]
-      ]
-    }
-  ],
-  "flow": {
-    "rankdir": "TB",
-    "nodes": {
-      "a": "Telaah sumber informasi\nvulnerability (butir 6.1)",
-      "b": "Scan bulanan, internal\ndan eksternal (butir 6.2)",
-      "c": "Buat tiket temuan, tetapkan\nprioritas dan tenggat (butir 6.2)",
-      "d": "Dieksploitasi aktif?",
-      "ioc": "Sweep IOC sebelum dan\nsesudah patch (butir 6.3)",
-      "e": "Patch tersedia?",
-      "m": "Mitigasi kompensasi: rule WAF,\nnonaktifkan layanan, batasi\nakses (butir 6.4)",
-      "f": "Uji, jadwalkan, dan pasang\npatch lewat change request\n(butir 6.3)",
-      "g": "Tertutup terverifikasi\nsebelum tenggat?",
-      "x": "Catat pengecualian dan minta\npersetujuan (butir 6.6)",
-      "h": "Tutup tiket temuan dengan\nbukti verifikasi (butir 6.5)"
-    },
-    "shapes": {
-      "d": "diamond",
-      "e": "diamond",
-      "g": "diamond"
-    },
-    "edges": [
-      [
-        "a",
-        "b"
-      ],
-      [
-        "b",
-        "c"
-      ],
-      [
-        "c",
-        "d"
-      ],
-      [
-        "d",
-        "ioc",
-        "Ya"
-      ],
-      [
-        "ioc",
-        "e",
-        "",
-        "dashed"
-      ],
-      [
-        "d",
-        "e",
-        "Tidak"
-      ],
-      [
-        "e",
-        "m",
-        "Tidak"
-      ],
-      [
-        "e",
-        "f",
-        "Ya"
-      ],
-      [
-        "m",
-        "g"
-      ],
-      [
-        "f",
-        "g"
-      ],
-      [
-        "g",
-        "x",
-        "Tidak"
-      ],
-      [
-        "g",
-        "h",
-        "Ya"
-      ]
-    ],
-    "caption": "Gambar 1. Alur penanganan vulnerability. Sweep IOC adalah cabang; garis putus-putus kembali ke alur utama."
-  },
-  "sla": [
-    [
-      "Telaah sumber informasi vulnerability",
-      "Lead SOC",
-      "Minimal mingguan; advisory kritis segera"
-    ],
-    [
-      "Authenticated scan aset internal dan aset pelanggan yang dikelola SINUX",
-      "SOC Analyst",
-      "Minimal bulanan, dan sesudah perubahan besar"
-    ],
-    [
-      "Scan eksternal",
-      "SOC Analyst",
-      "Minimal bulanan"
-    ],
-    [
-      "Terapkan mitigasi kompensasi pada vulnerability prioritas Darurat",
-      "NOC Engineer",
-      "24 jam (USULAN)"
-    ],
-    [
-      "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Darurat",
-      "Lead NOC dan NOC Engineer",
-      "72 jam (USULAN)"
-    ],
-    [
-      "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Kritis",
-      "Lead NOC dan NOC Engineer",
-      "7 hari (USULAN)"
-    ],
-    [
-      "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Tinggi",
-      "Lead NOC dan NOC Engineer",
-      "30 hari (USULAN)"
-    ],
-    [
-      "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Sedang",
-      "Lead NOC dan NOC Engineer",
-      "90 hari (USULAN)"
-    ],
-    [
-      "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Rendah",
-      "Lead NOC dan NOC Engineer",
-      "Siklus patch berikutnya (USULAN)"
-    ],
-    [
-      "Indikator: vulnerability prioritas Darurat dan Kritis ditutup dalam tenggat",
-      "Lead SOC",
-      "Target 95%"
-    ],
-    [
-      "Indikator: vulnerability prioritas Tinggi ditutup dalam tenggat",
-      "Lead SOC",
-      "Target 90%"
-    ],
-    [
-      "Indikator: cakupan scan bulanan terhadap aset produksi",
-      "Lead SOC",
-      "Target 100%"
-    ],
-    [
-      "Indikator: endpoint dengan anti-malware aktif",
-      "Lead SOC",
-      "Target 100%"
-    ]
-  ],
-  "exceptions": [
-    [
-      "Patch belum tersedia atau tidak bisa dipasang",
-      "NOC Engineer menerapkan mitigasi kompensasi (butir 4.5 dan 6.4)."
-    ],
-    [
-      "Patch tidak dapat dipasang sesuai tenggat",
-      "Lead SOC mencatat pengecualian, Pemilik aset menyetujuinya, dan untuk prioritas Darurat dan Kritis Head of Operation juga menyetujuinya (butir 6.6)."
-    ],
-    [
-      "Vulnerability prioritas Darurat",
-      "NOC Engineer boleh mengajukan change Emergency menurut SNX-OPS-SOP-02 (butir 6.3)."
-    ],
-    [
-      "Vulnerability dieksploitasi aktif",
-      "SOC Analyst melakukan sweep IOC (butir 4.6 dan 6.3)."
-    ],
-    [
-      "Aplikasi milik pelanggan",
-      "Service Delivery Manager menyampaikan temuan dan rekomendasi ke developer atau PIC pelanggan; pihak pelanggan memasang patch-nya."
-    ],
-    [
-      "Skor CVSS belum tersedia",
-      "Lead SOC menetapkan prioritas sementara berdasarkan paparan aktual, nilai aset, dan mitigasi yang sudah ada (USULAN)."
-    ]
-  ],
-  "conclusion": [
-    "Lead SOC memantau kepatuhan terhadap SOP ini lewat empat indikator kinerja di bagian 8.",
-    "Lead SOC selaku pemilik SOP juga meninjau dokumen ini setiap tahun."
-  ],
-  "related_documents": [
-    [
-      "POL-OPS-001",
-      "Kebijakan Divisi Operation SINUX, DRAFT v0.1; sumber susunan jabatan Lead SOC, Lead NOC, NOC Engineer, SOC Analyst, Head of Operation, dan Service Delivery Manager, yang berstatus usulan."
-    ],
-    [
-      "PRO-OPS-001",
-      "Prosedur Operasional Divisi Operation SINUX, DRAFT v0.1; SOC-04 Vulnerability dan threat intel."
-    ],
-    [
-      "SNX-ISMS-REG-01",
-      "Information Asset Register; ID aset di tiket temuan dan kolom Pemilik menentukan Pemilik aset."
-    ],
-    [
-      "SNX-ISMS-REG-02",
-      "Information Security Risk Assessment Register; level risiko, skala yang terpisah dari prioritas patch."
-    ],
-    [
-      "SNX-ISMS-REG-03",
-      "Information Security Risk Treatment Plan; pencatatan pengecualian prioritas Darurat dan Kritis sebagai risiko yang diterima."
-    ],
-    [
-      "SNX-ISMS-SOP-01",
-      "SOP Information Security Incident Management; sweep IOC dan penanganan deteksi malware."
-    ],
-    [
-      "SNX-OPS-FRM-04",
-      "Change Request & Approval Log; change request pemasangan patch."
-    ],
-    [
-      "SNX-OPS-FRM-07",
-      "Maintenance Schedule & Service Report; jadwal dan service report patch bulanan."
-    ],
-    [
-      "SNX-OPS-FRM-08",
-      "Technical Ticket / Incident Register; rekap tiket temuan vulnerability dan patch."
-    ],
-    [
-      "SNX-OPS-SOP-02",
-      "SOP Project Change Management; change request pemasangan patch dan jenis change Standar, Normal, Major, dan Emergency."
-    ],
-    [
-      "SNX-OPS-SOP-03",
-      "SOP Preventive & Corrective Maintenance; window maintenance dan jadwal patch keamanan bulanan."
-    ],
-    [
-      "SNX-OPS-SOP-04",
-      "SOP Technical Incident Handling & Escalation; severity tiket P1 sampai P4, skala yang terpisah dari prioritas patch."
-    ]
-  ],
-  "records": [
-    [
-      "Tiket temuan vulnerability dan patch (SNX-OPS-FRM-08)",
-      "Zammad, rekap di SNX-OPS-FRM-08; pemilik Lead NOC",
-      "3 tahun"
-    ],
-    [
-      "Change request patch (SNX-OPS-FRM-04)",
-      "Berkas SNX-OPS-FRM-04; pemilik Head of Operation",
-      "3 tahun"
-    ],
-    [
-      "Jadwal dan service report patch bulanan (SNX-OPS-FRM-07)",
-      "Berkas SNX-OPS-FRM-07; pemilik Lead NOC",
-      "3 tahun"
-    ],
-    [
-      "Pengecualian dan risiko diterima (SNX-ISMS-REG-03)",
-      "Google Drive; pemilik ISMS Coordinator",
-      "Berlaku sampai digantikan"
-    ],
-    [
-      "Laporan scan",
-      "Folder SOC (RESTRICTED); pemilik Lead SOC (USULAN)",
-      "3 tahun"
-    ]
-  ],
-  "iso_refs": {
-    "ISO 9001:2015": "10.2 (Nonconformity and corrective action)",
-    "ISO/IEC 27001:2022": "Annex A 5.7 (Threat intelligence), 8.7 (Protection against malware), 8.8 (Management of technical vulnerabilities), 8.19 (Installation of software on operational systems)"
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
+ },
+ "purpose": [
+  "SOP ini menetapkan cara SINUX memperoleh informasi technical vulnerability, menilai paparannya, dan menutupnya melalui patch atau mitigasi dalam tenggat yang sesuai risiko, termasuk perlindungan terhadap malware."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk sistem internal SINUX dan sistem pelanggan yang patching-nya menjadi tanggung jawab SINUX sesuai kontrak.",
+  "Sistem yang tercakup: OS server, hypervisor dan platform, panel hosting (WHM dan cPanel), web server dan PHP, email server, network device, WAF, security agent dan backup, serta aplikasi internal.",
+  "Dikecualikan dari SOP ini: patch aplikasi milik pelanggan, yang menjadi tanggung jawab developer atau PIC pelanggan, dan penanganan insiden keamanan, yang diatur di SNX-ISMS-SOP-01. Untuk aplikasi milik pelanggan, Service Delivery Manager menyampaikan temuan dan rekomendasinya ke developer atau PIC pelanggan."
+ ],
+ "definitions": [
+  [
+   "Advisory",
+   "Pemberitahuan resmi dari vendor tentang vulnerability pada produknya dan patch yang tersedia."
+  ],
+  [
+   "Authenticated scan",
+   "Vulnerability scan yang berjalan dengan akun yang sah pada aset yang diperiksa."
+  ],
+  [
+   "BSSN",
+   "Badan Siber dan Sandi Negara."
+  ],
+  [
+   "Change request (CR)",
+   "Permintaan tercatat untuk mengubah sistem di production, dicatat di SNX-OPS-FRM-04."
+  ],
+  [
+   "Change Standar, Normal, Major, dan Emergency",
+   "Jenis change yang kriterianya ditetapkan di SNX-OPS-SOP-02."
+  ],
+  [
+   "CISA KEV",
+   "Katalog Known Exploited Vulnerabilities dari Cybersecurity and Infrastructure Security Agency (CISA), berisi vulnerability yang diketahui sudah dieksploitasi."
+  ],
+  [
+   "CSIRT sektor",
+   "Computer Security Incident Response Team untuk satu sektor industri."
+  ],
+  [
+   "CVE",
+   "Common Vulnerabilities and Exposures, nomor pengenal publik untuk satu vulnerability."
+  ],
+  [
+   "CVSS",
+   "Common Vulnerability Scoring System, skor tingkat keparahan vulnerability dari 0 sampai 10."
+  ],
+  [
+   "Dieksploitasi aktif",
+   "Sudah dipakai penyerang di dunia nyata."
+  ],
+  [
+   "Dua sumber",
+   "Dua bukti dari cara pemeriksaan yang berbeda, misalnya hasil scan ulang dan hasil pemeriksaan versi (USULAN)."
+  ],
+  [
+   "EDR",
+   "Endpoint detection and response, perangkat lunak yang memantau dan mendeteksi ancaman di endpoint."
+  ],
+  [
+   "Endpoint",
+   "Server dan laptop kerja SINUX."
+  ],
+  [
+   "IOC",
+   "Indicator of compromise: hash file, IP, domain, atau pola yang menandai kompromi."
+  ],
+  [
+   "Mitigasi kompensasi",
+   "Tindakan yang menurunkan paparan vulnerability tanpa memasang patch."
+  ],
+  [
+   "Pemilik aset",
+   "Pemegang tanggung jawab atas aset, sesuai kolom Pemilik SNX-ISMS-REG-01."
+  ],
+  [
+   "Perubahan besar",
+   "Change jenis Major sesuai SNX-OPS-SOP-02 (USULAN)."
+  ],
+  [
+   "PIC pelanggan",
+   "Orang yang ditunjuk pelanggan sebagai penanggung jawab dan penghubung dengan SINUX."
+  ],
+  [
+   "Prioritas patch",
+   "Skala lima tingkat untuk urgensi penutupan vulnerability: Darurat, Kritis, Tinggi, Sedang, dan Rendah, dengan kriteria di butir 4.2. Skala ini terpisah dari severity ticket P1 sampai P4 (SNX-OPS-SOP-04) dan dari level risiko (SNX-ISMS-REG-02). Di dokumen ini, nama Kritis, Tinggi, Sedang, dan Rendah selalu berarti prioritas patch."
+  ],
+  [
+   "RCE",
+   "Remote code execution, penyerang menjalankan kode di sistem target dari jarak jauh."
+  ],
+  [
+   "Scan eksternal",
+   "Vulnerability scan dari vantage di luar network internal terhadap layanan yang terbuka ke internet."
+  ],
+  [
+   "Sweep IOC",
+   "Pencarian IOC pada aset terdampak dan aset sejenisnya."
+  ],
+  [
+   "Tenggat",
+   "Batas waktu pemasangan patch atau penerapan mitigasi kompensasi untuk satu vulnerability sesuai prioritasnya (bagian 8), dihitung dalam hari kalender sejak Lead SOC menetapkan prioritas di ticket temuan (USULAN)."
+  ],
+  [
+   "Ticket temuan",
+   "Ticket di Zammad untuk satu temuan vulnerability beserta penanganannya, direkap di SNX-OPS-FRM-08."
+  ],
+  [
+   "Vulnerability",
+   "Kelemahan teknis pada sistem, aplikasi, atau perangkat yang dapat dimanfaatkan penyerang."
+  ],
+  [
+   "Vulnerability scan",
+   "Pemeriksaan otomatis aset untuk menemukan vulnerability yang sudah dikenal."
+  ],
+  [
+   "WAF",
+   "Web application firewall, penyaring lalu lintas web sebelum sampai ke aplikasi."
+  ],
+  [
+   "Window maintenance",
+   "Jadwal yang disepakati untuk pekerjaan yang berdampak ke layanan, sesuai SNX-OPS-SOP-03."
+  ],
+  [
+   "Zammad",
+   "Sistem ticket untuk Ops."
+  ]
+ ],
+ "policy": [
+  "4.1 Informasi vulnerability (Annex A 5.7): Lead SOC menelaah empat jenis sumber (butir 6.1): advisory vendor untuk stack yang dikelola; database CVE, katalog CISA KEV, serta peringatan BSSN dan CSIRT sektor terkait; hasil vulnerability scan internal dan eksternal; dan temuan dari insiden, pentest, dan audit. Stack yang dikelola yaitu cPanel dan CloudLinux, distribusi Linux, Zimbra, nginx, PHP, hypervisor, Acronis, dan network device.",
+  "4.2 Prioritas (Annex A 8.8): Lead SOC menetapkan prioritas tiap vulnerability dengan kriteria berikut. Darurat: dieksploitasi aktif di dunia nyata dan dapat dijangkau dari internet, atau RCE tanpa autentikasi. Kritis: CVSS 9.0 atau lebih. Tinggi: CVSS 7.0 sampai 8.9. Sedang: CVSS 4.0 sampai 6.9. Rendah: CVSS di bawah 4.0. Tenggat tiap prioritas (bagian 8) berstatus USULAN sampai disahkan bersama SNX-ISMS-REG-03.",
+  "4.3 Penyesuaian prioritas (Annex A 8.8): Lead SOC dapat menaikkan atau menurunkan prioritas berdasarkan paparan aktual (dapat dijangkau dari internet atau tidak), nilai aset, dan mitigasi yang sudah ada.",
+  "4.4 Pemasangan patch (Annex A 8.8, 8.19): patch diuji lebih dulu jika memungkinkan, lalu dipasang di production melalui change request sesuai SNX-OPS-SOP-02 (butir 6.3). Di server cPanel, yum install atau remove perl-* dilarang, dan update mengikuti mekanisme resmi panel.",
+  "4.5 Mitigasi kompensasi (Annex A 8.8): jika patch belum tersedia atau tidak bisa dipasang, NOC Engineer menerapkan mitigasi kompensasi dan mencatatnya di ticket temuan (butir 6.4).",
+  "4.6 Vulnerability yang dieksploitasi aktif (Annex A 8.8): vulnerability ini diperlakukan sebagai potensi insiden. SOC Analyst melakukan sweep IOC sesuai SNX-ISMS-SOP-01 sebelum dan setelah patch dipasang, karena patch tidak menghapus kompromi yang sudah terjadi (butir 6.3).",
+  "4.7 Corrective action (ISO 9001:2015 10.2): tiap temuan dicatat sebagai ticket temuan, ditangani sampai tertutup, dan ticket-nya ditutup dengan bukti verifikasi. Klaim tertutup didukung dua sumber (butir 6.2 sampai 6.5).",
+  "4.8 Pengecualian (Annex A 8.8): Lead SOC mencatat patch yang tidak dapat dipasang sesuai tenggat sebagai pengecualian berisi alasan, mitigasi, tanggal tinjau ulang, dan persetujuan Pemilik aset. Pengecualian prioritas Darurat dan Kritis memerlukan persetujuan Head of Operation. Lead SOC mencatatnya di SNX-ISMS-REG-03 sebagai risiko yang diterima (butir 6.6).",
+  "4.9 Perlindungan malware (Annex A 8.7): server dan laptop kerja menjalankan anti-malware atau EDR yang aktif dan diperbarui. Fleet hosting pelanggan memakai solusi yang disepakati kontrak. SOC Analyst menangani deteksi malware sesuai SNX-ISMS-SOP-01 (butir 6.7).",
+  "4.10 Instalasi software (Annex A 8.19): Seluruh personel mengunduh software hanya dari sumber resmi dan memverifikasi checksum jika tersedia (butir 6.7)."
+ ],
+ "roles": [
+  [
+   "Lead SOC",
+   "Pemilik SOP. Menelaah sumber informasi vulnerability, menetapkan prioritas, meneruskan ticket temuan ke Lead NOC, memverifikasi penutupan, dan mencatat pengecualian.",
+   "Menetapkan, menaikkan, atau menurunkan prioritas; menutup ticket temuan."
+  ],
+  [
+   "SOC Analyst",
+   "Menjalankan vulnerability scan, melakukan triage dan membuat ticket temuan, serta melakukan sweep IOC untuk vulnerability yang dieksploitasi aktif. Menangani deteksi malware sesuai SNX-ISMS-SOP-01.",
+   "Menentukan temuan hasil triage yang dicatat sebagai ticket."
+  ],
+  [
+   "Lead NOC",
+   "Menjadwalkan pemasangan patch melalui change request.",
+   "Menyetujui change Standar dan Normal NOC sesuai SNX-OPS-SOP-02."
+  ],
+  [
+   "NOC Engineer",
+   "Menguji dan memasang patch melalui change request, menerapkan mitigasi kompensasi, dan memeriksa solusi anti-malware pada fleet hosting pelanggan.",
+   "Memasang patch di production setelah change request disetujui."
+  ],
+  [
+   "Pemilik aset",
+   "Menyetujui window patch dan menerima risiko jika patch ditunda.",
+   "Menyetujui window patch dan pengecualian pada asetnya."
+  ],
+  [
+   "Service Delivery Manager",
+   "Mengomunikasikan temuan dan jadwal patch kepada pelanggan.",
+   "Berkomunikasi resmi dengan PIC pelanggan tentang temuan dan jadwal patch."
+  ],
+  [
+   "Head of Operation",
+   "Menyetujui pengecualian prioritas Darurat dan Kritis.",
+   "Menyetujui atau menolak pengecualian prioritas Darurat dan Kritis."
+  ],
+  [
+   "Seluruh personel",
+   "Mengunduh software hanya dari sumber resmi dan memverifikasi checksum jika tersedia.",
+   "Mengunduh software hanya dari sumber resmi."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Telaah Sumber Informasi Vulnerability (Annex A 5.7)",
+   "intro": [
+    "Lead SOC menelaah empat jenis sumber informasi vulnerability sesuai butir 4.1."
+   ],
+   "steps": [
+    [
+     "Telaah sumber informasi vulnerability minimal mingguan, dan advisory kritis segera.",
+     "Lead SOC",
+     "Advisory yang berlaku bagi aset SINUX"
+    ],
+    [
+     "Teruskan advisory yang berlaku bagi aset di SNX-ISMS-REG-01 ke SOC Analyst untuk dicatat (butir 6.2).",
+     "Lead SOC",
+     "Advisory diteruskan ke SOC Analyst"
+    ]
+   ]
+  },
+  {
+   "title": "Scan dan Pencatatan Temuan (Annex A 8.8)",
+   "intro": [
+    "Ticket temuan dibuat di Zammad dan direkap di SNX-OPS-FRM-08."
+   ],
+   "steps": [
+    [
+     "Jalankan authenticated scan pada aset internal dan aset pelanggan yang dikelola SINUX minimal bulanan dan setelah perubahan besar.",
+     "SOC Analyst",
+     "Laporan scan di Folder SOC"
+    ],
+    [
+     "Jalankan scan eksternal minimal bulanan.",
+     "SOC Analyst",
+     "Laporan scan di Folder SOC"
+    ],
+    [
+     "Lakukan triage temuan hasil scan.",
+     "SOC Analyst",
+     "Temuan hasil triage"
+    ],
+    [
+     "Buat ticket temuan berisi ID aset dari SNX-ISMS-REG-01 dan CVE untuk tiap temuan hasil triage dan tiap advisory yang diteruskan.",
+     "SOC Analyst",
+     "Ticket temuan"
+    ],
+    [
+     "Tetapkan prioritas sesuai butir 4.2 dan 4.3, lalu isi prioritas dan tenggat di ticket temuan.",
+     "Lead SOC",
+     "Ticket temuan berprioritas dan bertenggat"
+    ],
+    [
+     "Teruskan ticket temuan ke Lead NOC untuk dijadwalkan.",
+     "Lead SOC",
+     "Ticket temuan diteruskan ke Lead NOC"
+    ]
+   ]
+  },
+  {
+   "title": "Pemasangan Patch (Annex A 8.8, 8.19)",
+   "intro": [
+    "Langkah sweep IOC hanya berlaku untuk vulnerability yang dieksploitasi aktif (butir 4.6)."
+   ],
+   "steps": [
+    [
+     "Uji patch pada sistem non-produksi atau satu host perwakilan jika memungkinkan.",
+     "NOC Engineer",
+     "Hasil uji di ticket temuan"
+    ],
+    [
+     "Lakukan sweep IOC sebelum patch dipasang, sesuai SNX-ISMS-SOP-01.",
+     "SOC Analyst",
+     "Hasil sweep IOC di ticket temuan"
+    ],
+    [
+     "Usulkan jadwal pemasangan patch di window maintenance.",
+     "Lead NOC",
+     "Jadwal patch di SNX-OPS-FRM-07"
+    ],
+    [
+     "Setujui window patch.",
+     "Pemilik aset",
+     "Persetujuan window patch di ticket temuan"
+    ],
+    [
+     "Sampaikan temuan dan jadwal patch pada aset pelanggan ke PIC pelanggan.",
+     "Service Delivery Manager",
+     "Pemberitahuan ke PIC pelanggan di ticket temuan"
+    ],
+    [
+     "Ajukan change request pemasangan patch sesuai SNX-OPS-SOP-02, jenis Standar atau Normal; untuk prioritas Darurat boleh jenis Emergency.",
+     "NOC Engineer",
+     "Change request di SNX-OPS-FRM-04"
+    ],
+    [
+     "Pasang patch setelah change request disetujui; di server cPanel gunakan mekanisme update resmi panel (butir 4.4).",
+     "NOC Engineer",
+     "Patch terpasang; service report di SNX-OPS-FRM-07"
+    ],
+    [
+     "Lakukan sweep IOC setelah patch dipasang, sesuai SNX-ISMS-SOP-01.",
+     "SOC Analyst",
+     "Hasil sweep IOC di ticket temuan"
+    ]
+   ]
+  },
+  {
+   "title": "Mitigasi Kompensasi (Annex A 8.8)",
+   "intro": [
+    "Mitigasi kompensasi dipakai jika patch belum tersedia atau tidak bisa dipasang. Vulnerability prioritas Darurat memiliki batas waktu mitigasi tersendiri (bagian 8). Mitigasi yang mengubah production mengikuti SNX-OPS-SOP-02."
+   ],
+   "steps": [
+    [
+     "Terapkan mitigasi kompensasi: rule WAF, nonaktifkan layanan yang vulnerable, atau batasi akses network.",
+     "NOC Engineer",
+     "Mitigasi kompensasi terpasang"
+    ],
+    [
+     "Catat mitigasi di ticket temuan.",
+     "NOC Engineer",
+     "Catatan mitigasi di ticket temuan"
+    ]
+   ]
+  },
+  {
+   "title": "Verifikasi dan Penutupan (Annex A 8.8; ISO 9001:2015 10.2)",
+   "steps": [
+    [
+     "Periksa hasil patch atau mitigasi dengan scan ulang atau pemeriksaan versi.",
+     "SOC Analyst",
+     "Hasil scan ulang atau pemeriksaan versi di ticket temuan"
+    ],
+    [
+     "Verifikasi penutupan: pastikan klaim tertutup didukung dua sumber (butir 4.7).",
+     "Lead SOC",
+     "Verifikasi penutupan di ticket temuan"
+    ],
+    [
+     "Tutup ticket temuan dengan bukti verifikasi.",
+     "Lead SOC",
+     "Ticket temuan tertutup dengan bukti verifikasi"
+    ]
+   ]
+  },
+  {
+   "title": "Pengecualian dan Penerimaan Risiko (Annex A 8.8)",
+   "intro": [
+    "Pengecualian hanya untuk patch yang tidak dapat dipasang sesuai tenggat (butir 4.8)."
+   ],
+   "steps": [
+    [
+     "Catat pengecualian di ticket temuan: alasan, mitigasi, dan tanggal tinjau ulang.",
+     "Lead SOC",
+     "Pengecualian di ticket temuan"
+    ],
+    [
+     "Setujui pengecualian pada aset yang dimiliki.",
+     "Pemilik aset",
+     "Persetujuan Pemilik aset di ticket temuan"
+    ],
+    [
+     "Setujui pengecualian prioritas Darurat dan Kritis.",
+     "Head of Operation",
+     "Persetujuan Head of Operation di ticket temuan"
+    ],
+    [
+     "Catat pengecualian prioritas Darurat dan Kritis di SNX-ISMS-REG-03 sebagai risiko yang diterima.",
+     "Lead SOC",
+     "Baris pengecualian di SNX-ISMS-REG-03"
+    ],
+    [
+     "Tinjau ulang pengecualian pada tanggal tinjau ulang yang tercatat (USULAN).",
+     "Lead SOC",
+     "Hasil tinjau ulang di ticket temuan"
+    ]
+   ]
+  },
+  {
+   "title": "Perlindungan Malware (Annex A 8.7, 8.19)",
+   "steps": [
+    [
+     "Periksa bahwa anti-malware atau EDR di server dan laptop kerja aktif dan diperbarui.",
+     "SOC Analyst",
+     "Status anti-malware atau EDR per endpoint"
+    ],
+    [
+     "Periksa bahwa fleet hosting pelanggan memakai solusi yang disepakati kontrak, misalnya ImunifyAV untuk panel hosting tertentu.",
+     "NOC Engineer",
+     "Status solusi anti-malware fleet hosting pelanggan"
+    ],
+    [
+     "Tangani deteksi malware sesuai SNX-ISMS-SOP-01.",
+     "SOC Analyst",
+     "Event keamanan ditangani sesuai SNX-ISMS-SOP-01"
+    ],
+    [
+     "Unduh software hanya dari sumber resmi dan verifikasi checksum jika tersedia.",
+     "Seluruh personel",
+     "Software dari sumber resmi, checksum terverifikasi jika tersedia"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Telaah sumber informasi\nvulnerability (butir 6.1)",
+   "b": "Scan bulanan, internal\ndan eksternal (butir 6.2)",
+   "c": "Buat ticket temuan, tetapkan\nprioritas dan tenggat (butir 6.2)",
+   "d": "Dieksploitasi aktif?",
+   "ioc": "Sweep IOC sebelum dan\nsetelah patch (butir 6.3)",
+   "e": "Patch tersedia?",
+   "m": "Mitigasi kompensasi: rule WAF,\nnonaktifkan layanan, batasi\nakses (butir 6.4)",
+   "f": "Uji, jadwalkan, dan pasang\npatch melalui change request\n(butir 6.3)",
+   "g": "Tertutup terverifikasi\nsebelum tenggat?",
+   "x": "Catat pengecualian dan minta\npersetujuan (butir 6.6)",
+   "h": "Tutup ticket temuan dengan\nbukti verifikasi (butir 6.5)"
+  },
+  "shapes": {
+   "d": "diamond",
+   "e": "diamond",
+   "g": "diamond"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "ioc",
+    "Ya"
+   ],
+   [
+    "ioc",
+    "e",
+    "",
+    "dashed"
+   ],
+   [
+    "d",
+    "e",
+    "Tidak"
+   ],
+   [
+    "e",
+    "m",
+    "Tidak"
+   ],
+   [
+    "e",
+    "f",
+    "Ya"
+   ],
+   [
+    "m",
+    "g"
+   ],
+   [
+    "f",
+    "g"
+   ],
+   [
+    "g",
+    "x",
+    "Tidak"
+   ],
+   [
+    "g",
+    "h",
+    "Ya"
+   ]
+  ],
+  "caption": "Gambar 1. Alur penanganan vulnerability. Sweep IOC adalah cabang; garis putus-putus kembali ke alur utama."
+ },
+ "sla": [
+  [
+   "Telaah sumber informasi vulnerability",
+   "Lead SOC",
+   "Minimal mingguan; advisory kritis segera"
+  ],
+  [
+   "Authenticated scan aset internal dan aset pelanggan yang dikelola SINUX",
+   "SOC Analyst",
+   "Minimal bulanan, dan setelah perubahan besar"
+  ],
+  [
+   "Scan eksternal",
+   "SOC Analyst",
+   "Minimal bulanan"
+  ],
+  [
+   "Terapkan mitigasi kompensasi pada vulnerability prioritas Darurat",
+   "NOC Engineer",
+   "24 jam (USULAN)"
+  ],
+  [
+   "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Darurat",
+   "Lead NOC dan NOC Engineer",
+   "72 jam (USULAN)"
+  ],
+  [
+   "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Kritis",
+   "Lead NOC dan NOC Engineer",
+   "7 hari (USULAN)"
+  ],
+  [
+   "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Tinggi",
+   "Lead NOC dan NOC Engineer",
+   "30 hari (USULAN)"
+  ],
+  [
+   "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Sedang",
+   "Lead NOC dan NOC Engineer",
+   "90 hari (USULAN)"
+  ],
+  [
+   "Pasang patch atau terapkan mitigasi kompensasi pada vulnerability prioritas Rendah",
+   "Lead NOC dan NOC Engineer",
+   "Siklus patch berikutnya (USULAN)"
+  ],
+  [
+   "Indikator: vulnerability prioritas Darurat dan Kritis ditutup dalam tenggat",
+   "Lead SOC",
+   "Target 95%"
+  ],
+  [
+   "Indikator: vulnerability prioritas Tinggi ditutup dalam tenggat",
+   "Lead SOC",
+   "Target 90%"
+  ],
+  [
+   "Indikator: cakupan scan bulanan terhadap aset produksi",
+   "Lead SOC",
+   "Target 100%"
+  ],
+  [
+   "Indikator: endpoint dengan anti-malware aktif",
+   "Lead SOC",
+   "Target 100%"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Patch belum tersedia atau tidak bisa dipasang",
+   "NOC Engineer menerapkan mitigasi kompensasi (butir 4.5 dan 6.4)."
+  ],
+  [
+   "Patch tidak dapat dipasang sesuai tenggat",
+   "Lead SOC mencatat pengecualian, lalu meminta persetujuan Pemilik aset, serta persetujuan Head of Operation untuk prioritas Darurat dan Kritis (butir 6.6)."
+  ],
+  [
+   "Vulnerability prioritas Darurat",
+   "NOC Engineer boleh mengajukan change Emergency sesuai SNX-OPS-SOP-02 (butir 6.3)."
+  ],
+  [
+   "Vulnerability dieksploitasi aktif",
+   "SOC Analyst melakukan sweep IOC (butir 4.6 dan 6.3)."
+  ],
+  [
+   "Aplikasi milik pelanggan",
+   "Service Delivery Manager menyampaikan temuan dan rekomendasi ke developer atau PIC pelanggan, yang kemudian memasang patch-nya."
+  ],
+  [
+   "Skor CVSS belum tersedia",
+   "Lead SOC menetapkan prioritas sementara berdasarkan paparan aktual, nilai aset, dan mitigasi yang sudah ada (USULAN)."
+  ]
+ ],
+ "conclusion": [
+  "Lead SOC memantau kepatuhan terhadap SOP ini melalui empat indikator kinerja di bagian 8.",
+  "Lead SOC selaku pemilik SOP juga meninjau dokumen ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "POL-OPS-001",
+   "Kebijakan Divisi Operation SINUX, DRAFT v0.1; sumber susunan jabatan Lead SOC, Lead NOC, NOC Engineer, SOC Analyst, Head of Operation, dan Service Delivery Manager, yang berstatus usulan."
+  ],
+  [
+   "PRO-OPS-001",
+   "Prosedur Operasional Divisi Operation SINUX, DRAFT v0.1; SOC-04 Vulnerability dan threat intel."
+  ],
+  [
+   "SNX-ISMS-REG-01",
+   "Information Asset Register; ID aset di ticket temuan dan kolom Pemilik menentukan Pemilik aset."
+  ],
+  [
+   "SNX-ISMS-REG-02",
+   "Information Security Risk Assessment Register; level risiko, skala yang terpisah dari prioritas patch."
+  ],
+  [
+   "SNX-ISMS-REG-03",
+   "Information Security Risk Treatment Plan; pencatatan pengecualian prioritas Darurat dan Kritis sebagai risiko yang diterima."
+  ],
+  [
+   "SNX-ISMS-SOP-01",
+   "SOP Information Security Incident Management; sweep IOC dan penanganan deteksi malware."
+  ],
+  [
+   "SNX-OPS-FRM-04",
+   "Change Request & Approval Log; change request pemasangan patch."
+  ],
+  [
+   "SNX-OPS-FRM-07",
+   "Maintenance Schedule & Service Report; jadwal dan service report patch bulanan."
+  ],
+  [
+   "SNX-OPS-FRM-08",
+   "Technical Ticket / Incident Register; rekap ticket temuan vulnerability dan patch."
+  ],
+  [
+   "SNX-OPS-SOP-02",
+   "SOP Project Change Management; change request pemasangan patch dan jenis change Standar, Normal, Major, dan Emergency."
+  ],
+  [
+   "SNX-OPS-SOP-03",
+   "SOP Preventive & Corrective Maintenance; window maintenance dan jadwal patch keamanan bulanan."
+  ],
+  [
+   "SNX-OPS-SOP-04",
+   "SOP Technical Incident Handling & Escalation; severity ticket P1 sampai P4, skala yang terpisah dari prioritas patch."
+  ]
+ ],
+ "records": [
+  [
+   "Ticket temuan vulnerability dan patch (SNX-OPS-FRM-08)",
+   "Zammad, rekap di SNX-OPS-FRM-08; pemilik Lead NOC",
+   "3 tahun"
+  ],
+  [
+   "Change request patch (SNX-OPS-FRM-04)",
+   "Berkas SNX-OPS-FRM-04; pemilik Head of Operation",
+   "3 tahun"
+  ],
+  [
+   "Jadwal dan service report patch bulanan (SNX-OPS-FRM-07)",
+   "Berkas SNX-OPS-FRM-07; pemilik Lead NOC",
+   "3 tahun"
+  ],
+  [
+   "Pengecualian dan risiko diterima (SNX-ISMS-REG-03)",
+   "Google Drive; pemilik ISMS Coordinator",
+   "Berlaku sampai digantikan"
+  ],
+  [
+   "Laporan scan",
+   "Folder SOC (RESTRICTED); pemilik Lead SOC (USULAN)",
+   "3 tahun"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "10.2 (Nonconformity and corrective action)",
+  "ISO/IEC 27001:2022": "Annex A 5.7 (Threat intelligence), 8.7 (Protection against malware), 8.8 (Management of technical vulnerabilities), 8.19 (Installation of software on operational systems)"
+ }
 }

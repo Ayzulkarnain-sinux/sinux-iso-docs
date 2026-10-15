@@ -5,7 +5,7 @@
  "started_at": "2026-10-14T19:01:00Z",
  "current_wave": "W10",
  "last_guide_seen": 4,
- "watchdog_trigger_id": "trig_013YanjB66C2E3u9Ak2d9KWP",
+ "watchdog_trigger_id": "trig_01PLSM1BasQkcQsfiT1fUkxT",
  "gaspol": true,
  "tech_fixes": [
   {
@@ -2741,6 +2741,10 @@
   {
    "at": "2026-10-15T07:51Z",
    "event": "ISO-W10: trig_016ZexPczFLFNDEAnFDVCvSj fired while active; run continued; new trig_013YanjB66C2E3u9Ak2d9KWP fires 08:36Z"
+  },
+  {
+   "at": "2026-10-15T08:37Z",
+   "event": "ISO-W10: trig_013YanjB66C2E3u9Ak2d9KWP fired while active; new trig_01PLSM1BasQkcQsfiT1fUkxT fires 09:22Z"
   }
  ],
  "retractions": [
