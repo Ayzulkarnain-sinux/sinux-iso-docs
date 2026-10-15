@@ -1,0 +1,46 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 3,
+  "c": 4,
+  "d": 3
+ },
+ "blocking": [
+  {
+   "lokasi": "Bagian 1 Lingkup dan seluruh badan vs heading beku '6. ISI FORMULIR'",
+   "masalah": "Badan memakai 'form', heading beku memakai 'Formulir', tetapi tidak ada padanan dalam kurung pada kemunculan pertama.",
+   "kutipan": "Form ini dipakai untuk kontrak antara SINUX dan pelanggan, termasuk layanan teknologi informasi, ...",
+   "usul": "Form (formulir) ini dipakai untuk kontrak antara SINUX dan pelanggan, ..."
+  },
+  {
+   "lokasi": "Bagian 4 Peran, baris Staff Legal vs heading beku '8. Rekaman dan Acuan ISO' / '8.1 Rekaman'",
+   "masalah": "Kemunculan pertama 'record' tanpa padanan '(rekaman)', padahal heading bagian 8 tetap 'Rekaman'; header tabel 8.1 juga diganti 'Record' tanpa jembatan.",
+   "kutipan": "... serta menyimpan form terisi sebagai pencatat record. Jabatan: Legal & Compliance (JA-09).",
+   "usul": "... serta menyimpan form terisi sebagai pencatat record (rekaman). Jabatan: Legal & Compliance (JA-09)."
+  },
+  {
+   "lokasi": "PDF hlm 9-13, tabel Daftar Periksa C1-C8",
+   "masalah": "Kolom isian utama Catatan/Tindak Lanjut hanya sekitar 2,5 cm dan Status sekitar 1,8 cm, sementara pengisi harus menulis letak klausul, temuan, dan usulan perubahan (Petunjuk 4); Hal yang Diperiksa sempit sehingga baris menjadi sangat tinggi (C1.1, C8.2 sampai 10 baris).",
+   "kutipan": "Kolom: No. | Aspek yang Ditelaah | Hal yang Diperiksa | Status | Catatan/Tindak Lanjut (Catatan/Tindak Lanjut paling sempit di antara kolom teks)",
+   "usul": "Atur ulang lebar: No 1,2 cm; Aspek 2,8 cm; Hal yang Diperiksa 5,5 cm; Status 2,2 cm; Catatan/Tindak Lanjut 4,3 cm (total 16 cm)."
+  },
+  {
+   "lokasi": "PDF hlm 14, tabel 6.12 Temuan Utama dan Risiko, Dasar rekomendasi, 6.14 Catatan Penelaahan dan Persetujuan",
+   "masalah": "Baris isian setinggi satu baris teks (sekitar 0,5 cm); tidak cukup untuk menulis temuan, dasar rekomendasi, atau membubuhkan tanda tangan. Judul 'Pihak dan Target Selesai' terlipat tiga baris.",
+   "kutipan": "Baris 1-4 tabel Temuan Utama dan Risiko kosong setinggi satu baris; baris 'Disusun oleh' dengan kolom Tanda Tangan setinggi satu baris.",
+   "usul": "Beri tinggi baris minimum: Temuan sekitar 1,5 cm, Dasar rekomendasi sekitar 3 cm, baris tanda tangan sekitar 1,5 cm; lebarkan kolom 'Pihak dan Target Selesai' dengan mengurangi Jenis/Tingkat Risiko."
+  }
+ ],
+ "nonblocking": [
+  "Header kolom tabel 6.12 diubah dari 'Rujukan' menjadi 'Aspek' dan header 8.1 dari 'Retensi' menjadi 'Masa Simpan'; konsisten dengan Petunjuk 6, tetapi ini perubahan label field form di luar peta istilah, perlu dicatat di notes.",
+  "C4.3: 'dibatasi dan proporsional' menjadi 'dibatasi secara proporsional' sedikit menggeser arti (dua syarat menjadi satu). Usul: 'Apakah tanggung jawab SINUX dibatasi dan proporsional, beserta pengecualian yang relevan.'",
+  "Ketentuan 8 tidak lagi menyebut SNX-ISMS-PRO-01 sebagai dasar RESTRICTED (Internal); tabel 8.1 kehilangan sumber 'SNX-LEG-SOP-03' pada pemilik record. Sumbernya masih ada di Dokumen Terkait, tetapi sebaiknya dikembalikan.",
+  "Tujuan memakai 'checklist ini', bagian lain 'form ini'; pilih satu sebutan dokumen.",
+  "Paragraf Petunjuk Pengisian (hlm 8-9) rata kiri-kanan sehingga spasi antarkata melebar (butir 6, 9, 10); disarankan rata kiri.",
+  "Peta istilah ISO: '8.2.3 Review persyaratan produk dan jasa' wajar menurut STYLE §1.5, tetapi bukan judul klausul resmi; dapat diterima."
+ ],
+ "contoh_baik": [
+  "Petunjuk 5: 'Staff Legal mencentang pilihan yang sesuai pada tabel Hasil Penelaahan dan Rekomendasi dengan tanda ☒ pada kotak ☐. Jumlah pilihan yang boleh dicentang ada di Ketentuan butir 5.' -> 'Centang pilihan Hasil Penelaahan dan Rekomendasi dengan mengganti ☐ menjadi ☒.'"
+ ]
+}

@@ -239,3 +239,28 @@ R3 (ISO-W9 putaran 3):
 | Butir | Sebelum | Sesudah |
 |---|---|---|
 | R3 | Bagian 3, Divisi: "SNX-HR-ORG-01 menyatakan susunan ini berstatus (USULAN)." (salah atribusi) | "SNX-HR-ORG-01 menyatakan nama jabatan, jenjang, headcount, dan garis lapor ke COO di Divisi Operation berstatus (USULAN)." (sama dengan SNX-HR-SOP-11 bagian 3; sesuai SNX-HR-ORG-01 Struktur Divisi Operation, K-10). Hanya kalimat itu |
+
+## W10 (bahasa, ISO-W10)
+
+### W10 label dihapus
+Label digabung menjadi satu label di akhir butir (STYLE §3.5). Status USULAN setiap aturan tetap; tidak ada aturan yang berubah menjadi bersumber.
+- Bagian 2 paragraf 2, asli: "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); penurunan jabatan (SNX-HR-SOP-11); rotasi menurut batas di bawah (SNX-HR-SOP-12); perpindahan sementara di luar batas rotasi (USULAN); pemindahan atas permintaan karyawan dan pemindahan sebagai sanksi disiplin (USULAN); penetapan gaji, tunjangan, dan biaya yang timbul karena mutasi (USULAN); mutasi Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN)." Alasan: empat label digabung jadi satu; keempat pengecualian berlabel dikumpulkan dalam kalimat kedua yang berakhir (USULAN), pengecualian bersumber (SOP-10, 11, 12) di kalimat pertama tanpa label.
+- Butir 4.2, asli: "4.2 Tujuan mutasi: usulan menyebut satu tujuan atau lebih, yaitu unit kerja, divisi, atau lokasi operasional. Mutasi ke unit kerja atau divisi lain menyebut jabatan tujuan di SNX-HR-ORG-01 dan Atasan Langsung Tujuan menurut kolom Melapor ke (USULAN). Mutasi yang hanya mengubah lokasi operasional menyebut lokasi tujuan, dan jabatan tujuan sama dengan jabatan asal (USULAN)." Alasan: dua label pada dua kalimat berurutan digabung menjadi satu di akhir butir.
+- Label tidak digabung di butir 4.3 dan bagian 9 baris 2, 3, dan 8, karena penempatan labelnya ditetapkan di ISO-W9 (G-3 B2).
+- Peran Atasan Langsung Tujuan dan Atasan Langsung Asal (bagian 5), asli: "Pengusul (USULAN). ..." dan "Penanggap (USULAN). ..." Label dipindah ke akhir sel, bukan dihapus: "Bertindak sebagai pengusul: ... (USULAN)." dan "Bertindak sebagai penanggap: ... (USULAN)."
+- Butir 4.5: label dipindah ke akhir butir dengan menukar urutan dua kalimat; kalimat berlabel (wewenang jabatan tujuan) kini kalimat terakhir. Tidak ada label yang hilang.
+
+### W10 kalimat dihapus atau dipindah
+- Butir 4.3: "pembagiannya ada di bagian 5." (kalimat penunjuk, STYLE §3.2)
+- Butir 4.11: "Lokasi, pemilik, dan retensi ada di tabel bagian 11." (kalimat penunjuk; faktanya sudah ada di tabel record)
+- Rujukan butir yang tidak perlu dibuka pembaca dihapus (STYLE §3.1): "(butir 6.1)" di 4.1; "menurut bagian 9" di 4.3; "(butir 6.2)" dan "(butir 6.4)" di 4.7, 4.8, 4.9, 4.10, 4.11; "(bagian 9)" di peran Penanggap alternatif dan Legal & Compliance; "di bagian 8" di definisi Hari kerja (menjadi "dalam SOP ini"); "dengan membandingkan record di bagian 11 dengan langkah di bagian 6 dan batas waktu di bagian 8" di Conclusion menjadi "dengan mencocokkan record mutasi terhadap langkah prosedur dan batas waktunya".
+- Bagian 9 baris 3: "dalam batas waktu bagian 8" diganti faktanya: "dalam 3 hari kerja sejak usulan lengkap diterima" (sama dengan SLA tanggapan Atasan Langsung Asal di bagian 8). Rujukan "pada butir 6.2 nomor 2" dan "pada nomor 3" diganti "mengirim usulan lengkap ke Penanggap alternatif, bukan ke Atasan Langsung Asal".
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Pihak luar: dokumen ini tidak menyebut klien atau pelanggan.
+- "bila" di awal anak kalimat diganti "jika"; "Hasil yang dijaga:" di Purpose ditulis ulang sebagai kalimat biasa.
+- Kalimat batas rotasi dan mutasi (bagian 2) ditulis ulang tanpa mengubah arti; isinya dulu identik dengan SNX-HR-SOP-10, 11, 12, jadi perlu diselaraskan saat sapuan.
+- Definisi Tingkatan jabatan: "sehingga ukuran ini (USULAN)" diberi predikat: "ukuran ini belum baku (USULAN)".

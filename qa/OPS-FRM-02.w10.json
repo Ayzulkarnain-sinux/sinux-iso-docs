@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Kontrol Dokumen B21: 'otomatis bertanda Ya di kolom Naik ke ISMS' kurang luwes; usul 'otomatis diberi tanda Ya di kolom Naik ke ISMS'.",
+  "PDF hlm 1: sel B21 (Cara pakai butir 4) menyisakan baris kosong di bawahnya; tinggi baris bisa dipadatkan.",
+  "PDF hlm 4-5 (Risk Register): fit to 1 page wide membuat huruf sangat kecil, kolom L dan I sangat sempit; judul kolom tetap berulang di hlm 5 dan tidak terpotong.",
+  "PDF hlm 6 (Matriks Risiko): angka Skala rata kanan, teks sel lain rata kiri; tidak mengganggu pengisian."
+ ],
+ "contoh_baik": [
+  "Satu file per proyek; ganti nama menjadi FRM-02_<KodeProyek>.xlsx. -> Gunakan satu file untuk satu proyek, dengan nama FRM-02_<KodeProyek>.xlsx."
+ ]
+}

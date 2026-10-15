@@ -1,0 +1,39 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 3
+ },
+ "blocking": [
+  {
+   "lokasi": "PDF hlm 8, bagian 6.1 Identitas",
+   "masalah": "Tabel Identitas terbelah: judul 6. ISI FORM RCA, 6.1, header, dan hanya satu baris tersisa di bawah gambar alur; sisa tabel pindah ke hlm 9. Halaman isi form tidak rapi dan sulit diisi.",
+   "kutipan": "Item | Isi / Nomor RCA | RCA-[YYYY]-[nomor urut] (sendirian di dasar hlm 8)",
+   "usul": "Mulai bagian 6 di halaman baru (page break before) atau set keep-with-next pada judul 6/6.1 dan tabel Identitas."
+  },
+  {
+   "lokasi": "PDF hlm 9-10, bagian 6.5 dan 6.7",
+   "masalah": "Label '5 Why' tertinggal di dasar hlm 9 terpisah dari tabelnya di hlm 10; tabel 6.7 Verifikasi efektivitas terbelah dan baris 'Penutupan RCA (USULAN)' sendirian di hlm 11.",
+   "kutipan": "5 Why (dasar hlm 9) ... Penutupan RCA (USULAN) | [nama dan jabatan, tanggal] (atas hlm 11)",
+   "usul": "Keep-with-next pada label sub-tabel ('5 Why', 'Kategori penyebab (fishbone)') dan keep-together untuk tabel pendek seperti 6.7."
+  },
+  {
+   "lokasi": "PDF hlm 5, 1.2 Lingkup",
+   "masalah": "Paragraf rata kiri-kanan memecah kode dokumen di akhir baris dan membuat spasi melebar.",
+   "kutipan": "Insiden keamanan informasi juga dicatat di SNX- / ISMS-FRM-02.",
+   "usul": "Ratakan kiri paragraf badan dan pakai non-breaking hyphen pada kode SNX-..."
+  }
+ ],
+ "nonblocking": [
+  "Petunjuk 5 'Nomor RCA dicatat di kolom No RCA pada SNX-OPS-FRM-08.' masih pasif, tidak kalimat perintah (STYLE 2.4); usul 'Catat Nomor RCA di kolom No RCA pada SNX-OPS-FRM-08.' bila pengisinya Lead NOC/SOC.",
+  "Lingkup: rujukan 'butir 6.5' dan 'butir 6.6' hilang, tetapi tetap ada di tabel Dokumen Terkait; arti tidak berubah.",
+  "Kalimat baru setelah tabel Peran 'Peran di atas berlaku untuk setiap RCA dan terpisah dari penyusun, pemeriksa, dan penyetuju dokumen form ini.' menggantikan kalimat penunjuk; wajar, tetapi menambah klaim baru, pastikan dicatat di notes.",
+  "Hlm 7 hanya berisi 4 butir Petunjuk lalu kosong 2/3 karena gambar alur penuh satu halaman; jumlah halaman 12 dan awal ISI hlm 8 sama dengan bed1bb6, jadi tidak ada pemadatan (STYLE 4.1).",
+  "Padanan 'Root cause (akar masalah)' dan 'Corrective action (tindakan korektif)' sudah ada di Istilah, sehingga heading beku 'Analisis akar masalah' dan 'ALUR RCA DAN TINDAKAN KOREKTIF' tersambung."
+ ],
+ "contoh_baik": [
+  "Lead NOC atau Lead SOC menambah baris di tabel Tindakan bila satu jenis tindakan lebih dari satu (USULAN). -> Tambah baris di tabel Tindakan jika ada lebih dari satu tindakan sejenis (USULAN)."
+ ]
+}

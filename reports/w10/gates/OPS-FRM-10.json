@@ -1,0 +1,51 @@
+{
+ "key": "OPS-FRM-10",
+ "mode": "generic",
+ "out": "out/07_Ops/SNX-OPS-FRM-10 RCA Corrective Action Report (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 1210,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 14,
+  "instr_role_start": 3,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1232,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 14,
+  "instr_role_start": 9,
+  "justified_cells": 1,
+  "tables_ge3_no_header": 17
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-FRM-10 RCA Corrective Action Report (Rev00 DRAFT).pdf",
+ "pages": 12,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Form RCA",
+  "pages_bed1bb6": 12,
+  "pages_w10": 12,
+  "isi_page_bed1bb6": 8,
+  "isi_page_w10": 8
+ },
+ "pass": false,
+ "residu": {
+  "at": "2026-10-15T07:20Z",
+  "alasan": "G-4 gerbang 3: gagal kedua pemeriksa bahasa buta (r1 FAIL b3 istilah heading beku vs badan; r2 FAIL d3 tata letak: label 5 Why terpisah dari tabel, baris Penutupan RCA sendirian). Spec, notes, dan out dikembalikan ke bed1bb6.",
+  "qa": [
+   "qa/OPS-FRM-10.w10.r1.json",
+   "qa/OPS-FRM-10.w10.r2.json"
+  ],
+  "percobaan_w10": "reports/w10/residu/OPS-FRM-10.w10-attempt.json"
+ }
+}

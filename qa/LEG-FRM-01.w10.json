@@ -1,0 +1,20 @@
+{
+  "verdict": "PASS",
+  "scores": {"a": 4, "b": 4, "c": 4, "d": 4},
+  "blocking": [],
+  "nonblocking": [
+    "Petunjuk 9: 'Dua baris lainnya diisi Line Manager Legal dan Pejabat Berwenang (USULAN).' Pemetaan baris jadi tersirat, dan aturan bahwa tiap pihak mengisi barisnya sendiri hilang. Usul: 'Isi baris Disusun oleh dengan nama, jabatan, tanggal, dan tanda tangan. Baris Diperiksa oleh diisi Line Manager Legal, dan baris Disetujui oleh diisi Pejabat Berwenang (USULAN).'",
+    "Tujuan: '...sebelum ditandatangani Pejabat Berwenang: risiko hukum, risiko komersial, serta kejelasan hak dan kewajiban para pihak.' Daftar setelah titik dua tidak jelas melekat ke kata mana. Usul: '...untuk menelaah risiko hukum, risiko komersial, serta kejelasan hak dan kewajiban para pihak dalam kontrak pelanggan sebelum kontrak ditandatangani Pejabat Berwenang.'",
+    "Padanan 'Form (formulir)' muncul di Lingkup, padahal 'form ini' sudah dipakai di Tujuan. Usul: pindahkan padanan ke kemunculan pertama di Tujuan (STYLE §1.2, sambungan ke heading beku 'ISI FORMULIR').",
+    "Rujukan beruntun masih ada: di Ketentuan 8 ada tiga kode dokumen dalam satu paragraf ('SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8' serta 'SNX-ISMS-PRO-01'), dan sel Pemilik Line Manager Legal di tabel Peran dan Record memuat dua rujukan. Usul: sisakan satu rujukan per paragraf atau sel (STYLE §3.1).",
+    "Istilah: definisi 'Label isi yang belum diputuskan tertulis oleh pimpinan SINUX' terlalu ringkas. Usul: 'Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX.'",
+    "Judul kolom tabel Temuan Utama dan Risiko berubah dari 'Rujukan' menjadi 'Aspek'. Petunjuk 6 sudah sejalan, dan arti kolomnya tetap. Pastikan perubahan label kolom ini memang diizinkan di W10 karena tidak termasuk heading beku.",
+    "Info hilang yang tidak berupa kalimat penunjuk: di Dokumen Terkait, deskripsi SNX-LEG-SOP-03 'tujuh kategori dokumen legal dan usulan periode retensinya' dan SNX-LEG-SOP-02 'prosedur penerimaan permintaan, penelaahan, persetujuan, dan penandatanganan' dipadatkan; di Record, rujukan pemilik baris kedua (SNX-LEG-SOP-02 butir 4.19) dihapus. Tidak mengubah aturan, tetapi perlu tercatat di notes.",
+    "d (PDF hal. 8-15, Isi Formulir mulai hal. 8, total 16 halaman tetap): kolom Daftar Periksa terukur No 1,37 / Aspek yang Ditelaah 4,10 / Hal yang Diperiksa 5,57 / Status 1,89 / Catatan/Tindak Lanjut 3,89 cm (total 16,8 cm, bukan 16 cm). Kolom isian Catatan/Tindak Lanjut lebih sempit daripada kolom Aspek, padahal Petunjuk 4 memintanya memuat letak klausul, temuan, dan usulan perubahan. Usul: Aspek sekitar 3,0 dan Catatan sekitar 5,0 cm. Halaman tidak bertambah karena tinggi baris tetap ditentukan kolom Hal yang Diperiksa.",
+    "d: tinggi baris isian di tabel Informasi Kontrak dan Lokasi Penyimpanan Dokumen 0,59 cm. Cukup untuk pengisian digital karena baris docx ikut membesar, tetapi sempit untuk tulisan tangan. Hal. 9 dan 12-13 masih menyisakan ruang kosong, jadi tinggi minimum sekitar 0,8 cm kemungkinan muat tanpa menambah halaman. Ini HUMAN-VERDICT dan perlu dirender ulang.",
+    "d sudah baik: judul kolom berulang di setiap pecahan tabel (Informasi Kontrak hal. 8-9, Catatan Penelaahan hal. 14-15), tidak ada baris yang terbelah atau teks yang terpotong, teks sel rata kiri, baris Temuan 1,2 cm, Dasar rekomendasi 2,5 cm, dan baris tanda tangan 1,2 cm."
+  ],
+  "contoh_baik": [
+    "Petunjuk 3: 'Staff Legal mengisi kolom Status dengan salah satu nilai di bagian Istilah.' -> 'Isi kolom Status dengan Sesuai, Perlu Tindak Lanjut, atau Tidak Berlaku.'"
+  ]
+}

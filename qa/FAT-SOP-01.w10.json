@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Roles, Authority Finance Lead: 'Tidak boleh memperpanjang jatuh tempo melebihi TOP standar' menghilangkan 'mengubah' yang ada di butir 4.8. Usul: 'Tidak boleh mengubah atau memperpanjang jatuh tempo melebihi TOP standar tanpa persetujuan Direktur Utama.'",
+  "Roles, Business Development: frasa baru 'Peran ini menjalankan tugas Tim Sales di SOP tim FAT (USULAN)' berbau catatan pemetaan (STYLE §3.8). Usul: 'Menjalankan tugas Tim Sales (USULAN).'",
+  "Satu istilah per hal: 'Template pengajuan penagihan' (Dokumen Terkait) berdampingan dengan 'Templat Invoice Resmi FAT'. Karena 'Templat Invoice Resmi FAT' nama dokumen, ubah yang generik saja agar konsisten, atau sebaliknya.",
+  "Acuan standar: 'Annex A 5.33 (Perlindungan record)' hasil peta mekanis terdengar janggal; boleh 'Annex A 5.33 (Protection of records)'.",
+  "Header tabel 'Output / Rekaman' dan tabel 11 'Rekaman | ... | Retensi' masih Indonesia; wajar bila label render_sop.py, heading 11 sudah menjembatani 'Rekaman (records)'."
+ ],
+ "contoh_baik": [
+  "4.12: 'Masa simpannya ada di bagian 11.' -> 'Masa simpannya minimal 10 tahun.'"
+ ]
+}

@@ -96,3 +96,15 @@ Jumlah USULAN: 8 (empat diterapkan di berkas, empat hanya diusulkan).
 
 1. Apa yang membuat teks ini terdengar buatan AI? Draf pertama saya punya satu kalimat yang memberi kata kerja manusia pada benda: "Kolom Naik ke ISMS membaca Skor". Saya ganti menjadi "memakai Skor". Draf pertama B21 juga menghilangkan kata "otomatis" dari kalimat tim, yang membuat pelakunya samar; kata itu saya kembalikan. Kalimat patch lain adalah kalimat tim yang hanya diperbaiki ejaan atau rujukannya, jadi tidak ada kalimat baru yang berpola kelompok tiga, penutup positif, atau ekor penegas. Yang masih tersisa dari suara tim dan sengaja dipertahankan (T1): "Tulis risiko dalam pola sebab, kejadian, dampak" dan tujuan dokumen yang memuat tiga kata kerja. Keduanya jelas dan berasal dari sumber.
 2. Adakah fakta, angka, nama, atau tanggal tanpa sumber? Tidak ada yang ditambahkan. Nama dan jabatan penanda tangan berasal dari config/defaults.json (approved_by, prepared_reviewed.OPS, data_conflicts) dan diberi label USULAN 1 dan 2. Angka (10 sebagai ambang Naik ke ISMS, 6.1, 8.1, 5.8, 3 tahun) berasal dari sumber (B21 melalui rumus kolom R, Matriks Risiko A3, B12, B13, B14). Tanggal 13 Oktober 2026 berasal dari sumber. Satu hal yang saya beri keterangan: "Annex A 5.8" ditulis dari acuan klausul baris ini dan B13 sumber ("Annex A 5.8"), bukan dari standar ISO langsung; saya tidak menulis judul kontrolnya karena tidak ada di sumber.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "pelanggan" (sebutan yang sudah dipakai di Matriks Risiko; sheet itu tidak disunting).
+Yang disunting hanya Tujuan, Cara pakai 1 sampai 5, dan catatan Risk Register A2; kalimat lain dipertahankan (T1).
+Cara pakai 4 dipecah dua kalimat; arti tetap (otomatis Ya dari Skor, wajib disalin ke SNX-ISMS-REG-02).

@@ -2,8 +2,8 @@ UJI-RENDER tanpa table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cell
 UJI-RENDER dengan table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=0 tables_ge3_no_header=0 format_hash=faa9f420f92ff0b5
 UJI-GENERIC tanpa table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=6 tables_ge3_no_header=4 format_hash=8c189a863677529c
 UJI-GENERIC dengan table_defaults: render rc=0 lint rc=0 ooxml rc=0 justified_cells=0 tables_ge3_no_header=0 format_hash=d39227826d3f851b
---- tambahan 07:20Z: opsi table_defaults.keep_with_table (w:keepNext pada paragraf tepat sebelum tabel dan pada baris judul tabel) dan keep_small_rows
+--- tambahan ~07:18Z: opsi table_defaults.keep_with_table (w:keepNext pada paragraf tepat sebelum tabel dan pada baris judul tabel) dan keep_small_rows
 Uji halaman (LibreOffice) atas spec W10: a = tanpa opsi, b = keep_with_table, c = keep_with_table + keep_small_rows 8
 OPS-FRM-10 a 12 hal | b 12 hal | c 12 hal ; LEG-FRM-01 a 16 hal | b 16 hal | c 17 hal ; render rc 0 dan OOXML rc 0 di keenam varian
 Dipakai: b (keep_with_table true). keep_small_rows tidak dipakai karena menaikkan halaman form (gerbang 5 G-4).
---- tambahan 07:42Z: opsi tabel generic min_row_cm (w:trHeight atLeast baris isi): render rc 0, OOXML rc 0, trHeight 567 atLeast muncul 2 kali (UJI-GENERIC tabel pertama, salinan uji); spec UJI asli tidak disentuh
+--- tambahan ~07:25Z: opsi tabel generic min_row_cm (w:trHeight atLeast baris isi): render rc 0, OOXML rc 0, trHeight 567 atLeast muncul 2 kali (UJI-GENERIC tabel pertama, salinan uji); spec UJI asli tidak disentuh

@@ -1,0 +1,59 @@
+{
+ "freeze": {
+  "Daftar": "A2",
+  "Risk Register": "B5"
+ },
+ "wrap_cols": {
+  "Daftar": {
+   "rows": [
+    1,
+    9
+   ]
+  },
+  "Risk Register": {
+   "rows": [
+    4,
+    66
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    38
+   ]
+  }
+ },
+ "page_setup": {
+  "Daftar": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Risk Register": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "4:4"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  },
+  "Matriks Risiko": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B15": "Mencatat, menilai, dan memantau risiko proyek, termasuk risiko keamanan informasi, selama proyek berjalan.",
+  "Kontrol Dokumen!B18": "Gunakan satu file untuk satu proyek, dengan nama FRM-02_<KodeProyek>.xlsx.",
+  "Kontrol Dokumen!B19": "Tulis setiap risiko dengan pola sebab, kejadian, dan dampak.",
+  "Kontrol Dokumen!B20": "Isi Likelihood dan Impact dengan nilai 1 sampai 5 sesuai sheet Matriks Risiko. Skor dan Level terisi otomatis.",
+  "Kontrol Dokumen!B21": "Risiko berlevel Tinggi atau Kritis menurut Skor (bukan Skor residual) otomatis bertanda Ya di kolom Naik ke ISMS. Risiko tersebut wajib disalin ke SNX-ISMS-REG-02.",
+  "Kontrol Dokumen!B22": "Tinjau register ini setiap minggu bersama laporan progres SNX-OPS-FRM-03.",
+  "Risk Register!A2": "Kolom Skor, Level, dan Naik ke ISMS terisi otomatis. Naik ke ISMS dihitung dari Skor, bukan Skor residual."
+ }
+}

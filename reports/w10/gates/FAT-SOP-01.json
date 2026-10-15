@@ -1,0 +1,51 @@
+{
+ "key": "FAT-SOP-01",
+ "mode": "sop",
+ "out": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2654,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 10,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2704,
+  "calque": [
+   "yang SINUX terima",
+   "yang klien serahkan",
+   "yang SINUX terbitkan",
+   "yang klien isi",
+   "yang SINUX terbitkan",
+   "yang klien potong"
+  ],
+  "lewat": 10,
+  "pointer": 4,
+  "usulan": 10,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 52,
+  "tables_ge3_no_header": 14
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "6.1",
+    "6.3",
+    "6.5"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).pdf",
+ "pages": 16,
+ "blank": [],
+ "pass": true
+}

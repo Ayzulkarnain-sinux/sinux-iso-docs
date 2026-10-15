@@ -2984,6 +2984,38 @@
     "reason": "LEAD G-4 butir 7, STYLE-v23 §4.3",
     "evidence": "reports/w10/xlsx_patch_w10_test.txt (kontrol positif rc 0 atribut terpasang, gambar alur tetap 1; tiga kontrol negatif rc 1)",
     "sha256_after": "ed8af89eaa8ef0114bdbc815257a7e6cf15735938627ea9f8dfcfe55469f283c"
+   },
+   {
+    "at": "2026-10-15T07:18Z",
+    "tool": "tools/render_sop.py",
+    "change": "table_defaults.keep_with_table: w:keepNext pada paragraf tepat sebelum tabel dan pada baris judul tabel (label tidak terpisah dari tabelnya, judul tidak tertinggal di dasar halaman); keep_small_rows opsional (tidak dipakai)",
+    "reason": "pemeriksa buta pilot OPS-FRM-10 r2 rubrik d: label 5 Why terpisah dari tabelnya",
+    "evidence": "reports/w10/renderer_table_defaults_test.txt (halaman tidak naik; OOXML rc 0); selftest 6 OK",
+    "sha256_after": "c2d301d125d6399ef973f12f2bd8cd85a2e99a3bd8dd3ea06947326c99661c36"
+   },
+   {
+    "at": "2026-10-15T07:10Z",
+    "tool": "tools/xlsx_patch.py",
+    "change": "wrap_cols valign dan op fit_rows (tinggi baris dari panjang teks, hanya naik)",
+    "reason": "pemeriksa buta pilot OPS-FRM-02 r1 rubrik d: judul Kontrol Dokumen tertumpuk, nomor Cara pakai tidak sejajar, baris berdempet",
+    "evidence": "reports/w10/xlsx_patch_w10_test.txt bagian tambahan",
+    "sha256_after": "d4c653224276d2f7ef06e58628f560e5d69668598f409d7d3340e8d3e0d17526"
+   },
+   {
+    "at": "2026-10-15T07:24Z",
+    "tool": "tools/xlsx_patch.py",
+    "change": "page_setup.paperSize (A3 untuk sheet data 16 kolom atau lebih); fit_rows memakai simulasi pemenggalan per kata dengan kapasitas dikalibrasi dari render (tebal 0,7, biasa 0,85 huruf per satuan lebar)",
+    "reason": "pemeriksa buta OPS-FRM-04/08/09 r1 rubrik d: judul kolom terpotong, register 21-23 kolom tercetak sekitar 5 pt, label tanda tangan bertumpuk",
+    "evidence": "render ulang OPS-FRM-08 Register (judul kolom utuh) dan OPS-FRM-09 hal. 12 (label terbaca), dilihat orkestrator",
+    "sha256_after": "8d1341e0a616453958f3c048edb397d024f94a8796eb735ae7da81ea234b2dbb"
+   },
+   {
+    "at": "2026-10-15T07:25Z",
+    "tool": "tools/render_sop.py",
+    "change": "kunci tabel generic min_row_cm (w:trHeight atLeast pada baris isi)",
+    "reason": "pemeriksa buta LEG-FRM-01 r1 rubrik d: baris isian setinggi satu baris teks",
+    "evidence": "reports/w10/renderer_table_defaults_test.txt (render rc 0, OOXML rc 0); selftest 6 OK",
+    "sha256_after": "da66e3aa1322edec166af60bf7f35c1a32250195225dfc80b3bfb9921ae59d29"
    }
   ],
   "docs": {},
@@ -2991,6 +3023,7 @@
    "at": "2026-10-15T07:02Z",
    "file": "reports/w10/sources_modtime.json",
    "hasil": "54 dari 54 sama dengan ledger"
-  }
+  },
+  "catatan_waktu": "Stempel waktu W10 diambil dari date -u dan jam commit git; yang bertanda ~ adalah taksiran dari jam commit terdekat."
  }
 }

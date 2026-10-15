@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Roles Atasan Langsung Tujuan dan Atasan Langsung Asal: label (USULAN) yang semula melekat pada 'Pengusul'/'Penanggap' kini di akhir sel sehingga tampak mencakup semua tanggung jawab; langkah 6.1-6.4 memang USULAN, tetapi cakupan label sedikit melebar.",
+  "Scope: empat label (USULAN) per pengecualian digabung menjadi satu di akhir kalimat 'Juga dikecualikan: ...'; sesuai STYLE 3.5, arti tetap. 'Juga dikecualikan:' agak kaku; usul 'Selain itu, SOP ini juga tidak mencakup ...'.",
+  "Definisi 'Atasan Langsung Asal | Jabatan tempat jabatan asal melapor' benar tetapi berulang kata 'jabatan'; usul 'Jabatan atasan dari jabatan asal menurut kolom Melapor ke'.",
+  "Bagian 9: rujukan 'dalam batas waktu bagian 8' diganti fakta '3 hari kerja sejak usulan lengkap diterima', cocok dengan tabel SLA bagian 8.",
+  "Badan memakai 'record' (4.11) dan heading beku bagian 11 sudah 'Rekaman (records)'; header kolom 'Output / Rekaman' label render, tidak disentuh."
+ ],
+ "contoh_baik": [
+  "Hasil yang dijaga: setiap mutasi punya kebutuhan organisasi yang tertulis dan baru berlaku sesudah keputusan tertulis. -> SOP ini memastikan setiap mutasi didasari kebutuhan organisasi yang tertulis dan baru berlaku setelah ada keputusan tertulis."
+ ]
+}

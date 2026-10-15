@@ -202,3 +202,33 @@ Open item:
 
 - K-13 (Finance Lead dan Finance Staff belum dipetakan ke jabatan): ditutup W9: dipetakan lewat definisi bagian 3 sesuai keputusan owner 15 Okt ("finance lead belum ada"), berlabel USULAN; baris lama tidak dihapus.
 - Pemetaan Finance Lead dan Finance Staff ke jabatan: status berubah W9: berlaku sebagai USULAN sampai jabatan Finance Lead terisi.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label di baris Peran Business Development dipindah ke akhir sel (asli: "Menjalankan peran Tim Sales (USULAN): mengirim tautan ..."); butir 4.5 diurutkan ulang sehingga label PPN 12% ada di akhir butir. Jumlah label tetap 10.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi TOP: "Lama dan titik awal hitungannya ada di butir 4.8." (penunjuk, STYLE §6).
+- 4.1: "Finance Staff memproses permohonan penagihan hanya bila empat dokumen pendukung (bagian 3) sudah lengkap dan tervalidasi." ditulis ulang dengan fakta dokumennya (STYLE §6); rujukan "(bagian 3)" hilang.
+- 4.5: "dengan urutan di butir 6.2" menjadi "(butir 6.2)".
+- 4.12: "Masa simpannya ada di bagian 11." diganti fakta "Masa simpannya minimal 10 tahun." (nilai dari tabel Rekaman).
+- Peran: "(butir 6.1)" di baris Business Development dan Project Manager; "(butir 6.1 sampai 6.5 dan bagian 9)" di baris Finance Staff; "(butir 6.3)" di baris Finance Lead; "(butir 4.8 dan 6.3)" dan "(butir 4.16)" di baris Direktur Utama (rujukan beruntun). "batas wewenang ada di butir 4.4" dan "batas wewenang atas jatuh tempo ada di butir 4.8" diganti faktanya.
+- Peran Project Manager, catatan pemetaan dipindah ke sini (STYLE §3.8): "Jabatan Divisi Operation yang belum punya pemegang menurut SNX-HR-ORG-01." Artinya: Project Manager adalah jabatan Divisi Operation yang di SNX-HR-ORG-01 belum punya pemegang.
+- Langkah 6.2 butir 1, 3 dan 6.3 butir 3: "(butir 4.3)", "(butir 4.8)", "(butir 4.8)" (rujukan; isi langkah sudah memuat faktanya).
+- Bagian 9: "(butir 4.9)" dan "(butir 4.14)" di baris kesalahan data; "(butir 4.8 dan 6.3)" di baris TOP di atas standar.
+- Dokumen Terkait: "Finance Lead dan Finance Staff didefinisikan di bagian 3." (penunjuk); "(butir 6.1)", "(butir 6.2)", "(bagian 3)" pada baris Form Permohonan Penagihan, Template Invoice Resmi FAT, dan SNX-FAT-REG-01.
+- Rekaman: "(butir 4.12)", "(butir 6.5)", "(butir 4.9)", "(butir 4.10)" dihapus; satu rujukan per sel tersisa, yaitu "(butir 4.15)" yang menandai pemilik record berstatus USULAN.
+
+### W10 selisih angka
+- 6.1: hilang karena rujukan "(butir 6.1)" di Peran dan Dokumen Terkait dihapus; langkah 6.1 tetap ada.
+- 6.3: hilang karena rujukan "(butir 6.3)" di Peran dan bagian 9 dihapus; langkah 6.3 tetap ada.
+- 6.5: hilang karena rujukan "(butir 6.1 sampai 6.5 ...)" di Peran dan "(butir 6.5)" di Rekaman dihapus; langkah 6.5 tetap ada.
+
+### W10 catatan
+- Sebutan pihak luar: "klien" (paling sering di dokumen dan di SOP tim FAT); "(customer)" tetap sekali di definisi Klien.
+- Istilah English: Term of Payment (TOP), 3-way matching, audit trail, link, template, checklist, hard copy, deliverable, milestone, record, scope. Nama lampiran tim "Templat Invoice Resmi FAT" tidak diubah (nama berkas tim, STYLE §1.5); langkah 6.2 butir 3 kini menyebut nama itu.
+- 4.4 memakai register tim ("dilarang menerbitkan atau mengirim invoice ... tanpa persetujuan tertulis Finance Lead"); arti sama dengan "tidak menerbitkan".
+- Butir 4.3, 4.9, 4.11, 4.12, 4.14, dan 4.16 tetap menyebut pelaku karena pelakunya yang berstatus USULAN di butir 4.15.
+
+### W10 koreksi worker (~07:21Z)
+- Roles, Authority Finance Lead: kalimat pengganti rujukan "batas wewenang atas jatuh tempo ada di butir 4.8" dikembalikan setara butir 4.8: "Tidak boleh mengubah atau memperpanjang jatuh tempo melebihi TOP standar tanpa persetujuan Direktur Utama." (temuan nonblocking pemeriksa buta qa/FAT-SOP-01.w10.json; kata "mengubah" sempat hilang).

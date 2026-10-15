@@ -1,0 +1,42 @@
+{
+ "key": "LEG-FRM-01",
+ "mode": "generic",
+ "out": "out/04_Legal/SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2411,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 34,
+  "instr_items": 10,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2673,
+  "calque": [],
+  "lewat": 2,
+  "pointer": 0,
+  "usulan": 35,
+  "instr_items": 10,
+  "instr_role_start": 5,
+  "justified_cells": 34,
+  "tables_ge3_no_header": 24
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-LEG-FRM-01 Customer Contract Review Checklist (Rev00 DRAFT).pdf",
+ "pages": 16,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Formulir",
+  "pages_bed1bb6": 16,
+  "pages_w10": 16,
+  "isi_page_bed1bb6": 9,
+  "isi_page_w10": 8
+ },
+ "pass": true
+}

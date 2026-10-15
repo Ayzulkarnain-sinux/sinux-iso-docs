@@ -251,3 +251,40 @@ Hasil uji akhir sweep (bukti mentah: /tmp/pen-LEG-FRM-01/render.out.txt, /tmp/pe
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.
 - Rujukan A3 (garis lapor JA-03/JA-04): tidak ada di dokumen ini, tidak diubah. Nama unit sudah Departemen Legal; tidak ada Divisi Legal.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+- Ketentuan butir 5, kalimat asli: "Hasil Penelaahan boleh lebih dari satu pilihan, kecuali pilihan Tidak terdapat temuan (USULAN). Rekomendasi hanya satu pilihan (USULAN)." Dua label digabung menjadi satu label di akhir kalimat (STYLE §3.5, satu label per butir); kedua aturan tetap berstatus USULAN.
+
+### W10 kalimat dihapus atau dipindah
+- Ketentuan butir 5: "(cara mencentang di Petunjuk Pengisian butir 5)" (penunjuk).
+- Petunjuk butir 3: "Staff Legal mengisi kolom Status dengan salah satu nilai di bagian Istilah." diganti fakta: nilai Sesuai, Perlu Tindak Lanjut, atau Tidak Berlaku.
+- Petunjuk butir 5: "Jumlah pilihan yang boleh dicentang ada di Ketentuan butir 5." (penunjuk; aturannya tetap di Ketentuan butir 5).
+- Petunjuk butir 6: "Staff Legal mengisi kolom Tingkat Risiko dengan salah satu nilai di bagian Istilah." diganti fakta: Tinggi, Sedang, atau Rendah. "Kolom Jenis Risiko dan Tingkat Risiko berstatus (USULAN)." menjadi label di akhir kalimat nilai kedua kolom itu.
+- Isi Formulir, Daftar Periksa: "Staff Legal mengisi kolom Status dan Catatan/Tindak Lanjut sesuai Petunjuk Pengisian." (penunjuk).
+- Isi Formulir, Ringkasan Hasil Penelaahan: "Cara mencentang ada di Petunjuk Pengisian butir 5." diganti instruksi "Beri tanda ☒ pada kotak pilihan yang sesuai."
+- Tabel Peran: "(Ketentuan butir 1 sampai 5, 7, dan 8)", "(Ketentuan butir 1, 2, 4, 5, dan 6)", "(Ketentuan butir 1 dan 2)" (rujukan beruntun); tugas menerima eskalasi risiko Tinggi (dulu tersirat dari butir 4) kini ditulis di baris Line Manager Legal. "di SNX-HR-ORG-01" pada pemetaan jabatan JA-08 dan JA-09 dihapus dari Peran; faktanya tetap di baris SNX-HR-ORG-01 Dokumen Terkait. Baris Pejabat Berwenang: "pada tabel Catatan Penelaahan dan Persetujuan" dihapus (baris Disetujui oleh hanya ada di tabel itu). "pada halaman depan" dihapus dari kalimat blok Approval.
+- Ketentuan butir 8 dan tabel Rekaman: "menurut SNX-ISMS-PRO-01" dan "(Ketentuan butir 8)" dihapus; dasar klasifikasi tetap tertulis di baris SNX-ISMS-PRO-01 Dokumen Terkait. Baris Rekaman kedua: "(USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03)" dipendekkan menjadi "(USULAN)" karena sumber yang sama tertulis di baris pertama.
+- Acuan ISO baris 8.2.4: "(Ketentuan butir 7)" (penunjuk).
+- Dokumen Terkait: SNX-LEG-SOP-02 "Prosedur penerimaan permintaan, penelaahan, persetujuan, dan penandatanganan kontrak." diringkas menjadi "Prosedur induk form ini"; SNX-LEG-SOP-03 "Memuat tujuh kategori dokumen legal dan usulan periode retensinya." dihapus (isi dokumen lain, bukan aturan form ini). Pemadatan ini perlu agar jumlah halaman tidak naik setelah table_defaults.
+
+### W10 selisih angka
+nihil (subst_diff kosong di reports/w10/gates/LEG-FRM-01.json).
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (paling sering di dokumen). Field "Nama Klien" dan opsi Hasil Penelaahan dipertahankan persis seperti sumber (putaran perbaikan 1); baris Istilah Klien ditulis ulang menjadi "Sama dengan pelanggan; dipakai pada field Nama Klien."
+- Header kolom "Rujukan" di tabel Temuan Utama dan Risiko menjadi "Aspek" (sebelumnya terpotong "Rujuka n" di PDF); Petunjuk butir 6 ikut. Header "Retensi" di tabel Rekaman menjadi "Masa Simpan" (glossary STYLE §5).
+- Istilah English dipakai: checklist, review, field, link, layanan cloud, hardware, maintenance, deliverable, service credit, Delegation of Authority (DoA).
+- Halaman: 16 (bed1bb6 16; sebelum pemadatan W10 17), bagian ISI mulai halaman 9 (tetap). Petunjuk Pengisian: 0 dari 10 butir diawali nama peran.
+
+### W10 putaran perbaikan 1 (qa/LEG-FRM-01.w10.r1.json)
+- Padanan pada kemunculan pertama, mengikuti heading beku: "Form (formulir) ini dipakai ..." di Lingkup dan "pencatat record (rekaman)" di baris Peran Staff Legal. Tujuan kini memakai "form ini", bukan "checklist ini", agar sebutan dokumen hanya satu.
+- Lebar kolom (widths_cm, jumlah elemen tetap, total 16 cm): Daftar Periksa C1 sampai C8 [1.5, 3.7, 5.8, 1.9, 3.1] menjadi [1.3, 3.9, 5.3, 1.8, 3.7]. Catatan/Tindak Lanjut naik dari 3,1 menjadi 3,7 cm. Aspek 3,9 cm agar "Penandatanganan" tidak terpotong; usul pemeriksa (2,8 cm) memotong kata itu. Temuan Utama dan Risiko [1.0, 1.9, 3.2, 1.8, 2.0, 3.7, 2.4] menjadi [1.0, 1.6, 3.3, 1.8, 1.9, 3.5, 2.9]. Agar halaman tidak naik: tabel pengecualian [5.5, 10.5] menjadi [6.0, 10.0]; Istilah, Status, dan Peran [4.5, 11.5] menjadi [3.8, 12.2]; Rekaman [4.5, 7.0, 4.5] menjadi [4.0, 8.5, 3.5]; Acuan ISO [3.6, 5.4, 7] menjadi [3.2, 5.8, 7.0].
+- min_row_cm (baris isian untuk tulisan tangan): Temuan Utama dan Risiko 1,2; Dasar rekomendasi 2,5; Catatan Penelaahan dan Persetujuan 1,2. Usul pemeriksa (1,5 / 3,0 / 1,5) membuat form 17 halaman.
+- Dikembalikan sesuai nonblocking pemeriksa: C4.3 "dibatasi dan proporsional"; Ketentuan 8 "sesuai SNX-ISMS-PRO-01"; Rekaman baris form terisi "(USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03)".
+- Pemadatan teks, tanpa mengubah arti: Istilah (USULAN), Aspek, DoA, Pejabat Berwenang, Penelaahan, Persetujuan Legal ("Persetujuan internal Line Manager Legal bahwa penelaahan hukum ... sudah disampaikan sesuai prosedur" menjadi "Persetujuan Line Manager Legal bahwa kontrak sudah ditelaah secara hukum dan hasilnya disampaikan"), PIC Internal, Risiko hukum ("bertentangan dengan hukum yang berlaku" menjadi "melanggar hukum yang berlaku"); Ketentuan 5; Petunjuk 9 ("Baris Diperiksa oleh dan Disetujui oleh diisi sendiri oleh ..." menjadi "Dua baris lainnya diisi ..."); catatan Daftar Periksa (kata "Aspek" di awal dihapus); C1.1 ("yang relevan" setelah "penerimaan pemberitahuan" dan sebelum "dan dapat diverifikasi" dihapus); Dokumen Terkait SNX-LEG-SOP-01, -02, -03, FRM-03.
+- Header "Rujukan" menjadi "Aspek" dan "Retensi" menjadi "Masa Simpan" (lihat W10 catatan) adalah perubahan label kolom form, bukan bagian peta istilah. Paragraf Petunjuk yang rata kiri-kanan diatur renderer, bukan spec; tidak diubah.
+- Hasil: 16 halaman (bed1bb6 16), Isi Formulir mulai halaman 8 (bed1bb6 9).
+
+### W10 koreksi worker (~07:34Z)
+- Petunjuk 9: pemetaan baris tanda tangan per pihak dikembalikan (Diperiksa oleh = Line Manager Legal, Disetujui oleh = Pejabat Berwenang, diisi pihak itu sendiri); sempat kabur menjadi "Dua baris lainnya diisi ..." (temuan nonblocking qa/LEG-FRM-01.w10.json).

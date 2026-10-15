@@ -1,0 +1,34 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 3,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "Petunjuk 12 vs heading 6.5 dan baris Item",
+   "masalah": "Dua istilah untuk satu hal dalam satu dokumen: badan dan tabel memakai 'root cause', heading bagian tetap 'Analisis akar masalah' (peta wajib §1.5 berlaku juga untuk judul dari spec). Petunjuk 12 juga kehilangan rujukan bagian yang jelas.",
+   "kutipan": "'12. Jika hasilnya Belum efektif, ulangi analisis root cause.' / heading '6.5. Analisis akar masalah' / baris 'Root cause | [satu pernyataan yang jelas, didukung bukti]'",
+   "usul": "Terapkan peta §1.5 ke heading: '6.5. Analisis root cause' (nomor tetap), lalu Petunjuk 12: 'Jika hasilnya Belum efektif, ulangi bagian Analisis root cause.'"
+  },
+  {
+   "lokasi": "Bagian 5, heading vs caption Gambar 1",
+   "masalah": "Heading memakai 'TINDAKAN KOREKTIF' sedangkan caption tepat di bawahnya memakai 'corrective action'; satu istilah per hal dilanggar.",
+   "kutipan": "'5. ALUR RCA DAN TINDAKAN KOREKTIF' / 'Gambar 1. Alur RCA dan corrective action. Garis putus-putus kembali ke analisis.'",
+   "usul": "Samakan: heading 'ALUR RCA DAN CORRECTIVE ACTION' sesuai §1.5, atau bila heading dibekukan LEAD, kembalikan caption ke istilah yang sama dengan heading."
+  }
+ ],
+ "nonblocking": [
+  "Kalimat penunjuk masih ada (§3.2): 'Penyusun, pemeriksa, dan penyetuju dokumen form ini tercantum di blok Approval halaman depan.' Pertimbangkan dihapus.",
+  "Petunjuk 12 bentuk perintah diletakkan setelah butir 11 milik Pemverifikasi; pembaca bisa mengira perintah itu untuk Pemverifikasi. Usul: 'Jika hasilnya Belum efektif, Lead NOC atau Lead SOC mengulang Analisis root cause.'",
+  "Lingkup tidak lagi menyebut butir 6.5 dan 6.6; fakta tetap ada di tabel Dokumen Terkait, arti tidak berubah.",
+  "Tata letak: hal. 7 hampir kosong karena gambar pindah ke hal. 8; tabel Identitas mulai di dasar hal. 8 hanya dengan satu baris; label '5 Why' di hal. 9 terpisah dari tabelnya di hal. 10. Header tabel berulang dan sel rata kiri sudah benar.",
+  "Header 'Record | Lokasi dan pemilik | Retensi': pastikan bukan label render_sop.py yang dikecualikan §1.5.",
+  "Jumlah halaman 12 -> 12, ISI mulai hal. 8 -> 8 (dari gates)."
+ ],
+ "contoh_baik": [
+  "Lead NOC atau Lead SOC menambah baris di tabel Tindakan bila satu jenis tindakan lebih dari satu (USULAN). -> Tambah baris di tabel Tindakan jika ada lebih dari satu tindakan sejenis (USULAN)."
+ ]
+}

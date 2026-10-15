@@ -1,0 +1,35 @@
+{
+ "key": "HR-SOP-13",
+ "mode": "sop",
+ "out": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2845,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 60,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2859,
+  "calque": [],
+  "lewat": 4,
+  "pointer": 1,
+  "usulan": 64,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 61,
+  "tables_ge3_no_header": 13
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).pdf",
+ "pages": 17,
+ "blank": [],
+ "pass": true
+}

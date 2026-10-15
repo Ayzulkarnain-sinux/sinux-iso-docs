@@ -148,7 +148,7 @@ nihil
 Pihak luar: "pelanggan" (sebutan seluruh workbook).
 Butir 4 dan 5 Cara pakai serta Tujuan dipertahankan (T1).
 
-### W10 koreksi worker (07:33Z, temuan pemeriksa buta r1)
+### W10 koreksi worker (~07:24Z, temuan pemeriksa buta r1)
 - Kontrol Dokumen B19: nilai pilihan ditulis "Tidak" dalam tanda kutip agar tidak terbaca sebagai "tidak hanya".
 - Kontrol Dokumen B21: "respon" menjadi "respons" (ejaan baku).
 - Tata letak (rubrik d): op format worker (fit_rows sheet data, lebar kolom minimal sesuai kata judul terpanjang, A3 untuk sheet 16 kolom atau lebih).

@@ -6,7 +6,7 @@ POSITIF rc 0 {"pass": true, "fails": [], "features_before": {"Kontrol Dokumen": 
 NEGATIF sheet bergambar rc 1 {"pass": false, "why": "sheet Alur Proses tidak ada atau berisi gambar; tidak diubah"}
 NEGATIF sheet tak ada rc 1 {"pass": false, "why": "sheet Tidak Ada tidak ada atau berisi gambar; tidak diubah"}
 NEGATIF wrap sheet bergambar rc 1 {"pass": false, "why": "sheet Alur Proses tidak ada atau berisi gambar; tidak diubah"}
---- tambahan 07:30Z: fit_rows dan valign
+--- tambahan ~07:10Z: fit_rows dan valign
 POSITIF rc 0 | B21 tinggi 23.85 -> 29.0 | A18 valign top | A1 wrap (tidak disentuh) None
 NEGATIF tinggi baris yang turun: []
 NEGATIF fit_rows sheet bergambar rc 1 {"pass": false, "why": "sheet Alur Proses tidak ada atau berisi gambar; tidak diubah"}
