@@ -78,7 +78,7 @@
               ],
               [
                 "Jadwal perpanjangan",
-                "Tanggal pengingat perpanjangan dan tanggal target pengajuan perpanjangan sebuah izin (USULAN)."
+                "Tanggal pengingat perpanjangan dan tanggal target pengajuan perpanjangan sebuah dokumen (USULAN)."
               ],
               [
                 "Jenis izin",
@@ -90,7 +90,7 @@
               ],
               [
                 "Masa berlaku",
-                "Jangka waktu berlakunya sebuah izin atau dokumen, ditulis sebagai tanggal berakhir. Tidak semua dokumen memilikinya."
+                "Jangka waktu berlakunya sebuah dokumen, ditulis sebagai tanggal berakhir. Tidak semua dokumen memilikinya."
               ],
               [
                 "NIB",
@@ -106,7 +106,7 @@
               ],
               [
                 "Penanggung jawab izin",
-                "Jabatan yang mengurus dan memantau satu izin, ditulis pada kolom Penanggung Jawab."
+                "Jabatan yang mengurus dan memantau satu dokumen di register, ditulis pada kolom Penanggung Jawab."
               ],
               [
                 "Tindak lanjut",
@@ -181,13 +181,13 @@
           "p": "4. Departemen Legal memverifikasi kewajiban tiap jenis dokumen menurut kondisi dan kegiatan usaha SINUX. Dokumen yang hasilnya tidak diwajibkan diberi status Tidak Berlaku untuk Perusahaan."
         },
         {
-          "p": "5. Staff Legal meninjau register setiap bulan dan menandai izin yang jatuh tempo dalam 90 hari (SNX-HR-JA-01, JA-09)."
+          "p": "5. Staff Legal meninjau register setiap bulan dan menandai dokumen yang jatuh tempo dalam 90 hari (SNX-HR-JA-01, JA-09)."
         },
         {
           "p": "6. Staff Legal memantau dokumen yang punya masa berlaku menurut tanggal berakhir dan ketentuan perpanjangan yang berlaku. Staff Legal mengirim pengingat perpanjangan ke penanggung jawab izin pada tanggal di kolom Jadwal Perpanjangan."
         },
         {
-          "p": "7. Staff Legal mencatat dokumen berstatus Belum Tersedia atau Belum Diverifikasi di register dan menindaklanjutinya kepada pihak yang relevan. Dokumen berstatus Perlu Diperbarui atau Kedaluwarsa diperlakukan sama (USULAN)."
+          "p": "7. Staff Legal mencatat dokumen berstatus Belum Tersedia atau Belum Diverifikasi di register dan menindaklanjutinya kepada pihak yang relevan. Staff Legal memperlakukan dokumen berstatus Perlu Diperbarui atau Kedaluwarsa dengan cara yang sama (USULAN)."
         },
         {
           "p": "8. Setiap tindak lanjut mencantumkan tindakan yang diperlukan, penanggung jawab, dan target penyelesaian pada tabel Tindak Lanjut."
@@ -196,7 +196,7 @@
           "p": "9. Staff Legal memperbarui register saat ada penerbitan, perubahan, pembaruan, pencabutan, atau perubahan status dokumen."
         },
         {
-          "p": "10. Bukti pendukung disimpan di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan dapat diakses pihak yang berwenang. Staff Legal menulis lokasinya di kolom Lokasi Bukti."
+          "p": "10. Staff Legal menyimpan bukti pendukung di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan menulis lokasinya di kolom Lokasi Bukti. Pejabat yang Berwenang dapat mengakses bukti itu."
         },
         {
           "p": "11. Staff Legal mencatat hasil pemeriksaan dan tindak lanjut pada tabel Catatan Pemeriksaan agar riwayat pembaruan dapat ditelusuri."
@@ -219,11 +219,15 @@
             "rows": [
               [
                 "Staff Legal",
-                "Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 9, 11)."
+                "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01 (USULAN). Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11)."
               ],
               [
                 "Line Manager Legal",
-                "Pemilik dokumen (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2)."
+                "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01 (USULAN). Pemilik dokumen dan pemilik rekaman register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2)."
+              ],
+              [
+                "Departemen Legal",
+                "Gabungan Line Manager Legal dan Staff Legal. Menerima dokumen dan informasi dari Unit Kerja Terkait (Ketentuan butir 3) dan memverifikasi kewajiban tiap jenis dokumen (Ketentuan butir 4)."
               ],
               [
                 "Unit Kerja Terkait",
@@ -235,7 +239,7 @@
               ],
               [
                 "Pejabat yang Berwenang",
-                "Melakukan pemeriksaan atau persetujuan sesuai mekanisme internal SINUX yang berlaku. Jabatan pemegang peran ini belum dipetakan (USULAN: diputuskan Legal)."
+                "Melakukan pemeriksaan atau persetujuan sesuai mekanisme internal SINUX yang berlaku, dan dapat mengakses bukti pendukung (Ketentuan butir 10). Jabatan pemegang peran ini belum dipetakan (USULAN: diputuskan Legal)."
               ]
             ]
           }
@@ -249,7 +253,7 @@
       "h": "Petunjuk Pengisian",
       "blocks": [
         {
-          "p": "1. Sel data pada tabel Isi Register kosong. Staff Legal mengisinya dari dokumen asli, satu baris untuk satu dokumen."
+          "p": "1. Sel data pada tabel Daftar Perizinan dan tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti kosong. Staff Legal mengisinya dari dokumen asli, satu baris untuk satu dokumen."
         },
         {
           "p": "2. Staff Legal menambah baris bila satu jenis izin punya lebih dari satu dokumen, misalnya akta perubahan."
@@ -614,7 +618,7 @@
               ],
               [
                 "SNX-LEG-SOP-03",
-                "Legal Document Control & Retention. Tempat usulan penetapan periode retensi dokumen legal."
+                "Legal Document Control & Retention. Tempat usulan penetapan periode retensi dokumen legal serta pembagian pemilik dan pencatat rekaman Legal."
               ],
               [
                 "SNX-LEG-REG-03",
@@ -626,7 +630,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal."
+                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)."
               ],
               [
                 "SNX-HR-JA-01",
@@ -666,12 +670,12 @@
             "rows": [
               [
                 "Register ini: baris perizinan, tindak lanjut, dan catatan pemeriksaan",
-                "Folder Google Drive departemen Legal (Ketentuan butir 10). Pemilik: Staff Legal. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Folder Google Drive departemen Legal (Ketentuan butir 10). Pemilik: Line Manager Legal. Pencatat: Staff Legal. Pembagian ini mengikuti SNX-LEG-SOP-03 (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
                 "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
               ],
               [
                 "Bukti pendukung tiap baris",
-                "Lokasi tertulis di kolom Lokasi Bukti. Pemilik: Staff Legal.",
+                "Lokasi tertulis di kolom Lokasi Bukti. Pemilik dan pencatat sama dengan baris di atas.",
                 "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
               ]
             ]

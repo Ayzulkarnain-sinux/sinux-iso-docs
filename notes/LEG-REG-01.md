@@ -61,7 +61,7 @@ Hasil terakhir: `"pass": true`, `"fails": []`, `"warns": ["10 butir (USULAN) men
 | 1 Tujuan dan Lingkup | Tujuan 1 dan 2, Ruang Lingkup sumber | Daftar lingkup sumber dijadikan dua kalimat. Pengecualian (kontrak dan daftar peraturan) ditulis berlabel USULAN karena sumber diam (USULAN 9) |
 | 2 Istilah | Istilah di spec; Keterangan Status Dokumen sumber | Hanya arti istilah dan arti status. Aturan ada di bagian 3. "Belum Tersedia" ditulis ulang agar tidak melingkar (lihat bagian 5 butir 9) |
 | 3 Ketentuan Pengelolaan | Tanggung Jawab, Pemantauan dan Tindak Lanjut sumber | 11 butir, tiap butir satu pelaku. Pelaku Departemen Legal dipecah menjadi Staff Legal dan Line Manager Legal (USULAN 3) |
-| 4 Peran | Tanggung Jawab sumber | Lima peran. Isi tugas merujuk nomor butir Ketentuan, tidak menyalin kalimat |
+| 4 Peran | Tanggung Jawab sumber | Enam peran sejak sweep (Departemen Legal ditambah). Isi tugas merujuk nomor butir Ketentuan, tidak menyalin kalimat |
 | 5 Petunjuk Pengisian | Kolom tabel sumber + kriteria | Sembilan butir. Tabel tanpa baris contoh; sel data kosong |
 | 6 Isi Register | Bagian V sumber + kriteria | Tabel 6.1 memuat jenis izin, nomor, masa berlaku, jadwal perpanjangan, status. Tabel 6.2 memuat instansi penerbit, kegiatan usaha/KBLI, tanggal penerbitan, penanggung jawab, lokasi bukti. Dipecah dua karena tujuh kolom lebih membuat judul kolom terpotong di lebar 16 cm. Tabel 6.3 Tindak Lanjut dan 6.4 Catatan Pemeriksaan ditambah (cacat 4, 5) |
 | 7 Dokumen Terkait | Kode yang disebut di badan | Enam kode ditambah SNX-LEG-REG-04 dan nomor lama |
@@ -102,10 +102,10 @@ Ejaan sumber yang dibakukan: "diperbaharui" menjadi "diperbarui", "mempengaruhi"
 
 ## Asumsi
 
-1. Process owner "Line Manager Legal". Sumber tidak punya baris "Pemilik dokumen"; yang ada hanya "Unit Kerja: Legal dan Compliance" (nama departemen, bukan jabatan). Dipakai jabatan reviewer departemen Legal tanpa nama, sama dengan SNX-LEG-SOP-01 yang menulis pemilik SOP Line Manager Legal.
+1. Process owner "Line Manager Legal". Sumber tidak punya baris "Pemilik dokumen"; yang ada hanya "Unit Kerja: Legal dan Compliance" (nama departemen, bukan jabatan). Dipakai nama peran reviewer departemen Legal tanpa nama orang, sama dengan SNX-LEG-SOP-01 yang menulis pemilik SOP Line Manager Legal. Line Manager Legal adalah nama peran, bukan nama jabatan; pemetaan ke jabatan ada di Asumsi 4.
 2. Baris awal tabel register diisi nama jenis dokumen saja: lima dari kriteria (NIB, KBLI, Akta Pendirian, NPWP, Anggaran Dasar, urut seperti di kriteria) dan empat dari lingkup sumber (akta perubahan; surat keputusan atau penerimaan pemberitahuan; perizinan berusaha dan sertifikat standar OSS; izin sektoral). Itu nama kategori, bukan data. Nomor, tanggal, masa berlaku, status, dan penanggung jawab kosong.
 3. "Departemen Legal dan Compliance" di sumber dibaca sebagai Departemen Legal (Line Manager Legal dan Staff Legal), memakai istilah SNX-LEG-SOP-01. Fungsi Compliance berada pada jabatan Legal & Compliance menurut SNX-HR-ORG-01, jadi tidak diberi peran terpisah.
-4. Staff Legal = jabatan Legal & Compliance JA-09 dan Line Manager Legal = JA-08 menurut Matriks Peran SNX-HR-ORG-01 (butir K-13, pemetaan USULAN; atasan JA-08 menunggu konfirmasi K-03). Atasan Line Manager Legal tidak disebut di badan dokumen.
+4. Staff Legal dan Line Manager Legal adalah nama peran. Keduanya dipetakan ke jabatan Legal & Compliance JA-09 dan JA-08 menurut Matriks Peran SNX-HR-ORG-01 (butir K-13, pemetaan USULAN; atasan JA-08 menunggu konfirmasi K-03). Pemetaan itu kini tertulis di tabel Peran dan Dokumen Terkait. Atasan Line Manager Legal tidak disebut di badan dokumen.
 5. "Penanggung jawab izin" dibuat sebagai peran, karena Staff Legal mengirim pengingat kepada penanggung jawab izin (SNX-LEG-SOP-01 prosedur 6.6) dan sumber register punya kolom Penanggung Jawab tanpa penjelasan.
 6. Angka 90 hari dari SOP Divisi Legal 4.4 butir 3 berlaku untuk register perizinan, yaitu lingkup yang sama dengan dokumen ini. Tidak dipakai untuk aktivitas lain.
 7. Tinjauan bulanan atas register izin dari Jobdesk Staff Legal (JA-09) dipakai pada Staff Legal. Kontrak di register kontrak tidak masuk dokumen ini.
@@ -133,6 +133,8 @@ Ejaan sumber yang dibakukan: "diperbaharui" menjadi "diperbarui", "mempengaruhi"
 | 13 | Batas pencatatan dengan SNX-LEG-REG-04 untuk Akta Pendirian dan Anggaran Dasar (kriteria baris 40 dan baris 39 sama-sama menyebut dokumen korporasi) | Dokumen Terkait | Legal |
 | 14 | Retensi register dan bukti pendukung belum ditetapkan; usulan penetapan di SNX-LEG-SOP-03 (USULAN di SNX-LEG-SOP-01 butir 4.27) | Rekaman | Legal |
 | 15 | Acuan klausul ISO: ISO 9001:2015 4.2 dan 7.5.3; ISO/IEC 27001:2022 Annex A 5.31 dan 5.33. Checklist tidak memberi acuan untuk baris ini; label "(USULAN, perlu konfirmasi konsultan)" dipasang satu kali di bagian Acuan ISO | Rekaman dan Acuan ISO | owner (setelah konfirmasi konsultan) |
+| 16 | Pemilik rekaman register dan bukti pendukung = Line Manager Legal, pencatat = Staff Legal, mengikuti SNX-LEG-SOP-03 butir 4.26 (yang sendiri USULAN); SNX-LEG-SOP-01 tabel rekaman menulis pemilik Staff Legal | Rekaman; Peran | Legal |
+| 17 | Line Manager Legal dan Staff Legal sebagai nama peran yang dipetakan ke jabatan Legal & Compliance JA-08 dan JA-09 (K-13 di SNX-HR-ORG-01) | Peran; Dokumen Terkait | Legal |
 
 ## Open items
 
@@ -149,6 +151,7 @@ Ejaan sumber yang dibakukan: "diperbaharui" menjadi "diperbarui", "mempengaruhi"
 11. Kalimat perintah di sumber: tidak ada yang menyasar penyusun. Kalimat seperti "Dokumen ini disusun sebagai sarana pencatatan ..." deskriptif dan dipakai sebagai isi. Teks "[sengaja dikosongkan]" tidak dibawa.
 12. Tracked change dan teks tersembunyi di berkas Drive tidak diuji (read_file_content tidak menampilkannya); komentar Drive diminta dan tidak ada.
 13. Kutipan dari SNX-LEG-SOP-01, SNX-HR-JA-01, dan SNX-HR-ORG-01 diambil dari specs di repo, bukan dari dokumen final; selaraskan bila dokumen itu berubah. modifiedTime SOP Divisi Legal tidak diukur ulang di sesi ini.
+14. SNX-LEG-SOP-01 (tabel rekaman: pemilik Staff Legal untuk register perizinan) dan SNX-LEG-SOP-03 (pemilik Line Manager Legal) berbeda soal pemilik rekaman register perizinan; dokumen ini memakai SNX-LEG-SOP-03 sejak sweep. Penentu: Legal.
 
 ## 6. Pemeriksaan mutu (dua pertanyaan)
 
@@ -182,3 +185,39 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | Klausul ISO 9001:2015 4.2 dan 7.5.3; 27001:2022 Annex A 5.31 dan 5.33 | Tidak ada di checklist; praktik umum ISO, berlabel "(USULAN, perlu konfirmasi konsultan)" |
 | Klaim "Perizinan dan legalitas adalah persyaratan instansi berwenang yang relevan bagi kegiatan usaha SINUX" (Acuan ISO 4.2) | Tafsir hubungan klausul, bukan fakta SINUX baru; ikut label USULAN klausul |
 | Tanggal | Tidak ada tanggal di dokumen hasil; tanggal penerbitan "[tanggal]" sumber tidak dibawa; tanggal efektif kosong |
+
+## Sweep
+
+Putaran penghalusan atas dua butir dari orkestrator. Perubahan hanya di specs/LEG-REG-01.json dan notes/LEG-REG-01.md; fakta, angka, nama, dan struktur bagian lain tetap. Salinan sebelum sweep: /tmp/pen-LEG-REG-01/LEG-REG-01.before-sweep.json dan .md.
+
+| Butir | Letak | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Peran, baris baru | Departemen Legal tidak ada di tabel Peran, padahal pelaku Ketentuan butir 3 dan 4 | Baris "Departemen Legal": gabungan Line Manager Legal dan Staff Legal; menerima dokumen dan informasi (butir 3) dan memverifikasi kewajiban (butir 4) |
+| 1 | Peran, baris Staff Legal | Rujukan "Ketentuan butir 1, 5 sampai 9, 11" (butir 8 tanpa pelaku, butir 10 tidak dirujuk) | "Ketentuan butir 1, 5 sampai 7, 9 sampai 11"; tugas ditambah "menyimpan bukti pendukung" mengikuti butir 10 |
+| 1 | Ketentuan 7 | "Dokumen berstatus Perlu Diperbarui atau Kedaluwarsa diperlakukan sama (USULAN)." | "Staff Legal memperlakukan dokumen berstatus Perlu Diperbarui atau Kedaluwarsa dengan cara yang sama (USULAN)." |
+| 1 | Ketentuan 10 | "Bukti pendukung disimpan di folder ... dan dapat diakses pihak yang berwenang. Staff Legal menulis lokasinya ..." | "Staff Legal menyimpan bukti pendukung di folder ... dan menulis lokasinya ... Pejabat yang Berwenang dapat mengakses bukti itu." |
+| 1 | Peran, baris Pejabat yang Berwenang | Tugas hanya pemeriksaan atau persetujuan | Ditambah "dan dapat mengakses bukti pendukung (Ketentuan butir 10)", agar satu istilah dipakai untuk "pihak yang berwenang" dan "Pejabat yang Berwenang" |
+| 1 | Petunjuk Pengisian 1 | "Sel data pada tabel Isi Register kosong." (Isi Register adalah bagian berisi empat tabel) | "Sel data pada tabel Daftar Perizinan dan tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti kosong." |
+| 1 | Ketentuan 5 | "menandai izin yang jatuh tempo dalam 90 hari" | "menandai dokumen yang jatuh tempo dalam 90 hari" (satu kata untuk isi baris register: dokumen; "izin" tetap di nama kolom Jenis Izin dan peran Penanggung jawab izin, mengikuti SNX-LEG-SOP-01) |
+| 1 | Istilah: Masa berlaku, Jadwal perpanjangan, Penanggung jawab izin | "sebuah izin atau dokumen"; "sebuah izin"; "satu izin" | "sebuah dokumen"; "sebuah dokumen"; "satu dokumen di register" |
+| 2 | Peran, baris Staff Legal dan Line Manager Legal | Nama tanpa pemetaan | Kalimat pembuka "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01 (USULAN)." dan "(JA-08)" |
+| 2 | Dokumen Terkait, baris SNX-HR-ORG-01 | "Sumber nama jabatan Line Manager Legal dan Staff Legal." | "Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)." |
+| 2 | Rekaman, dua baris | "Pemilik: Staff Legal." | Baris register: "Pemilik: Line Manager Legal. Pencatat: Staff Legal. Pembagian ini mengikuti SNX-LEG-SOP-03 (USULAN)."; baris bukti pendukung: "Pemilik dan pencatat sama dengan baris di atas." |
+| 2 | Peran, baris Line Manager Legal | "Pemilik dokumen (USULAN)." | "Pemilik dokumen dan pemilik rekaman register ini (USULAN)." |
+| 2 | Dokumen Terkait, baris SNX-LEG-SOP-03 | "Tempat usulan penetapan periode retensi dokumen legal." | Ditambah "serta pembagian pemilik dan pencatat rekaman Legal" (SNX-LEG-SOP-03 butir 4.26) |
+| 2 | notes: Asumsi 1 dan 4, bagian 4, USULAN 16 dan 17 | "jabatan reviewer", "jabatan Legal & Compliance JA-09 dan JA-08" tanpa kata peran | Disebut nama peran dan dipetakan; USULAN 16 dan 17 ditambah |
+
+Alasan selaras SNX-LEG-SOP-03: SNX-LEG-SOP-03 butir 4.26 menulis "Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya", dan seluruh baris rekamannya bertulis pemilik Line Manager Legal. Dokumen ini sebelumnya mengikuti tabel rekaman SNX-LEG-SOP-01 (pemilik Staff Legal). Instruksi sweep menyatakan SNX-LEG-SOP-03 yang diikuti, jadi dokumen ini diselaraskan, bukan dijelaskan sebagai pengecualian. SNX-LEG-SOP-01 tetap menulis Staff Legal; selisih itu bukan milik dokumen ini (lihat open item 14).
+
+Tidak diubah karena di luar dua butir: Ketentuan 8 (benda dengan kata kerja manusia, temuan pemeriksa 3); kalimat Lingkup kedua yang panjang (temuan 6); frasa rujukan "ketentuan yang berlaku" dan "mekanisme internal ... yang berlaku" (temuan 5, dari sumber, open item 5 dan 10); konflik angka 90 hari (temuan 7, open item 2); metadata core.xml "Sita Work" (temuan 8, milik renderer atau template, bukan spec). Retensi rekaman tetap "Belum ditetapkan, usulan di SNX-LEG-SOP-03": SNX-LEG-SOP-03 kini memuat angka usulan (Kategori 3, dokumen perizinan dan kepatuhan: 10 tahun sejak izin berakhir, dicabut, atau digantikan), tetapi memilih kategori untuk register ini dan memakai angkanya adalah keputusan Legal (USULAN, bukan diubah di sweep).
+
+Open item 14 ditambahkan di bagian Open items (selisih pemilik rekaman antara SNX-LEG-SOP-01 dan SNX-LEG-SOP-03).
+
+Hasil uji sweep (menggantikan "Hasil terakhir" di bagian 3):
+
+| Perintah | Hasil |
+|---|---|
+| `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-REG-01.json /tmp/pen-LEG-REG-01/LEG-REG-01.docx` | berhasil |
+| `python3 -I tools/lint_doc.py /tmp/pen-LEG-REG-01/LEG-REG-01.docx generic` | "pass": true, "fails": [], warns: 14 butir (USULAN) menunggu ACC (sebelumnya 10) |
+| `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-REG-01/LEG-REG-01.docx` | All validations PASSED |
+| `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-REG-01/LEG-REG-01.docx` | ok (11 halaman, tanpa halaman kosong) |
