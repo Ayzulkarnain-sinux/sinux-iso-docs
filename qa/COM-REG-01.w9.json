@@ -1,0 +1,31 @@
+{
+ "key": "COM-REG-01",
+ "cluster": "COM",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Badan dokumen (paragraf sebelum Tabel 1, render baris 154) masih menulis 'Struktur kolom Tabel 1 sampai Tabel 4 berstatus (USULAN) sampai COO menetapkannya.' Menetapkan struktur rekaman biasanya tugas pemilik register, yang sekarang VP Commercial. Kalimat ini tidak menyebut pemilik secara eksplisit, jadi membiarkannya masih dalam batas instruksi. Owner perlu memutuskan apakah COO tetap yang menetapkan struktur kolom atau diselaraskan ke VP Commercial.",
+  "Kesimpulan: 'COO meninjau register ini setiap tahun' diganti menjadi 'VP Commercial meninjau ...'. Kalimat ini tidak memakai kata 'pemilik', tetapi notes U-11 sebelum W9 mencatat 'COO sebagai pemilik register dan peninjau tahunan', jadi peninjau tahunan memang melekat pada pemilik. Perubahan ini masuk penyelarasan A7, dan label (USULAN) tetap ada.",
+  "notes/COM-REG-01.md: baris U-10 dan U-11 di tabel USULAN tidak diberi status baru dan hanya disebut di daftar 'ditutup W9'. Instruksinya meminta status pada baris lama diubah. Selain itu, teks 'ditutup W9: ...' pada OI-4 ditempel di tengah kalimat tanpa pemisah. Keduanya hanya soal kerapian notes, tidak memengaruhi isi dokumen.",
+  "Kesesuaian dengan aturan bahasa pada semua kalimat yang berubah (tanpa em-dash, tanpa frasa proses penyusunan, kalimat aktif dengan pelaku peran, tanpa rujukan AI): OK."
+ ],
+ "butir_dikerjakan": [
+  "A7 / butir 1: meta.process_owner berubah dari 'Direktur' menjadi 'VP Commercial', dan tabel Identity di render menampilkan 'Process Owner | VP Commercial'.",
+  "A7: kalimat badan yang menyebut pemilik sudah diselaraskan. Di Peran, baris VP Commercial menjadi 'Pemilik dan pengelola register.' dan baris COO tidak lagi berbunyi 'Pemilik register ini.' (tugas COO memutus eskalasi butir 4.11 tetap). Di Rekaman, baris register menjadi 'Pemilik dan pengelola: VP Commercial.' Di Kesimpulan, peninjau tahunan menjadi VP Commercial (USULAN).",
+  "A7 notes: OI-4 ditutup dengan catatan 'ditutup W9 (A7)', dan bagian '## ISO-W9' berisi tabel 5 perubahan.",
+  "A3 / butir 3: berlaku tetapi tidak ada yang diubah. Dokumen tidak menyebut atasan atau garis lapor JA-03 maupun JA-04: grep 'atasan|melapor|garis' tidak menemukan apa pun dan JA-03 tidak muncul di render. Hal ini dicatat di notes.",
+  "Blok approval sesuai defaults v22 untuk COM: prepared 'Laras Rasmawati / VP Commercial', reviewed 'Amirull Yusuf Zulkarnain / Direktur', approved 'Samuel Kristanto Utomo / President Director'.",
+  "Diff teks hanya berisi 5 baris yang berubah, semuanya untuk A7. Tidak ada fakta baru: VP Commercial sebagai pengelola sudah ada sebelum W9, dan VP Commercial sebagai Process Owner bersumber dari defaults v22 process_owner.override.COM_baru."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Dihitung pada teks sesudah, yang diekstrak dari /tmp/claude-0/w9/render/COM-REG-01.docx ke /tmp/claude-0/w9/COM-REG-01.chk.txt. Hasil: 'HR Manager' = 0, 'Divisi Legal' = 0, em-dash dan en-dash = 0. Dokumen ini dari klaster Commercial, bukan HR atau Legal, jadi aturan langkah 7 secara formal tidak berlaku, dan hasil hitungnya tetap nol. Label 'menunggu konfirmasi' pada garis JA-03 dan JA-04 juga 0: satu-satunya kemunculan kata 'menunggu' ada di definisi Keluhan.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

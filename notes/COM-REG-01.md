@@ -146,7 +146,7 @@ Perintah: `grep -n "Customer Feedback & Complaint " context/audit/*.md`. Hasil: 
 | OI-1 | Kriteria "komplain kritis" tidak ada di Sales SOP maupun SNX-COM-SOP-01. Butir 4.10 memakai penilaian sementara; kriteria tertulis (dampak, nilai kontrak, kaitan dengan SLA) perlu ditetapkan | owner |
 | OI-2 | Tidak ada tenggat penanganan, konfirmasi kepada customer, atau eskalasi keluhan di sumber mana pun. Hanya batas respons email dan WhatsApp umum yang bersumber. Dokumen tidak punya baris SLA | owner |
 | OI-3 | Retensi register dan tiket keluhan ("Belum ditetapkan" di Rekaman), serta lokasi folder Google Drive Commercial (U-10) | Legal dan owner |
-| OI-4 | process_owner "Direktur" (= COO) mengikuti aturan dokumen tanpa sumber, sedangkan SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial dari sumber. Di dokumen ini COO pemilik register dan VP Commercial pengelola; apakah pemilik disamakan dengan dokumen Commercial lain | owner |
+| OI-4 | process_owner "Direktur" (= COO) mengikuti aturan dokumen tanpa sumber, sedangkan SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial dari sumber. Di dokumen ini COO pemilik register dan VP Commercial pengelola; apakah pemilik disamakan dengan dokumen Commercial lain ditutup W9: Process Owner diputus VP Commercial (A7, rekomendasi LEAD, owner GO); blok Identity dan tabel Peran diselaraskan. | owner |
 | OI-5 | Header INTERNAL (worklist) berbeda dengan butir 4.12 (register terisi RESTRICTED (Internal)). Bila header diubah ke RESTRICTED (Internal), footer akan berlabel otomatis | owner dan Fani |
 | OI-6 | Siapa membuat tiket keluhan, apakah tiket wajib per keluhan, dan apakah Business Development punya akses ke Zammad; batas generalist di GLPI | owner |
 | OI-7 | Sintesis audit menggabungkan register keluhan dan register NC/CA (Com 12 dan 16); checklist memuat register ini terpisah dan tidak memuat dokumen NC/CA Commercial. Register dibuat sesuai checklist. Perlu keputusan apakah keluhan yang berujung tindakan korektif rinci punya wadah tersendiri | owner |
@@ -183,3 +183,18 @@ Putaran sweep dari orkestrator (satu butir). Uji ulang: render tanpa galat; lint
 | # | Butir | Sebelum | Sesudah |
 |---|---|---|---|
 | 1 | Rujukan JA-07 (Peran dan Dokumen Terkait) | Peran, baris Business Development: "SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development, dan uraian JA-07 di SNX-HR-JA-01 memuat tugas menjaga dokumentasi keluhan customer." Dokumen Terkait: baris SNX-HR-JA-01 "Uraian JA-07 Business Development memuat tugas menjaga dokumentasi keluhan customer." | Peran: "SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development." Baris SNX-HR-JA-01 dibuang dari Dokumen Terkait. JA-07 dilepas sebagai dasar karena kutipan aslinya "keberatan pelanggan" dalam konteks negosiasi, bukan keluhan |
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A7 Identity | Process Owner "Direktur" | Process Owner "VP Commercial" |
+| A7 Peran, baris VP Commercial | "Pengelola register." | "Pemilik dan pengelola register." |
+| A7 Peran, baris COO | "Pemilik register ini. Memutuskan keluhan ..." | "Memutuskan keluhan ..." |
+| A7 Rekaman, baris register | "Pemilik: COO. Pengelola: VP Commercial." | "Pemilik dan pengelola: VP Commercial." |
+| A7 Kesimpulan | "COO meninjau register ini setiap tahun (USULAN)." | "VP Commercial meninjau register ini setiap tahun (USULAN)." |
+
+Butir 3 (A3): tidak ada atasan atau garis lapor JA-03/JA-04 di dokumen ini; tidak diubah. Eskalasi VP Commercial ke COO (butir 4.11) tetap.
+
+Open item ditutup atau diubah:
+- OI-4 (pemilik register COO vs VP Commercial) dan U-10, U-11 (pemilik COO): ditutup W9 (A7).

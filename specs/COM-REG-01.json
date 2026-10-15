@@ -7,7 +7,7 @@
   "number": "SNX-COM-REG-01",
   "department": "Commercial",
   "title": "Customer Feedback & Complaint Register",
-  "process_owner": "Direktur",
+  "process_owner": "VP Commercial",
   "classification": "INTERNAL",
   "review_period": "YEARLY",
   "status": "Draft",
@@ -247,7 +247,7 @@
        ],
        [
         "VP Commercial",
-        "Pengelola register. Menunjuk PIC, menetapkan status Selesai, menetapkan apakah suatu keluhan kritis, menerima eskalasi keluhan kritis, dan mengeskalasi keluhan kepada COO (butir 4.3, 4.7, 4.9 sampai 4.11)."
+        "Pemilik dan pengelola register. Menunjuk PIC, menetapkan status Selesai, menetapkan apakah suatu keluhan kritis, menerima eskalasi keluhan kritis, dan mengeskalasi keluhan kepada COO (butir 4.3, 4.7, 4.9 sampai 4.11)."
        ],
        [
         "PIC",
@@ -255,7 +255,7 @@
        ],
        [
         "COO",
-        "Pemilik register ini. Memutuskan keluhan yang VP Commercial eskalasi kepadanya (butir 4.11)."
+        "Memutuskan keluhan yang VP Commercial eskalasi kepadanya (butir 4.11)."
        ]
       ]
      }
@@ -752,7 +752,7 @@
       "rows": [
        [
         "Register ini: Tabel 1 sampai Tabel 4",
-        "Folder Google Drive departemen Commercial. Pemilik: COO. Pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi menurut butir 4.12.",
+        "Folder Google Drive departemen Commercial. Pemilik dan pengelola: VP Commercial. Pencatat: Business Development. Klasifikasi menurut butir 4.12.",
         "Belum ditetapkan"
        ],
        [
@@ -855,7 +855,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. COO meninjau register ini setiap tahun (USULAN)."
+     "p": "Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN)."
     }
    ]
   }
