@@ -2702,6 +2702,13 @@
    "kanal": "reports/orch/refcheck.py baris 26-29 (sub-nomor hanya dicek untuk bagian 4 dan 6) + grep specs/OPS-FRM-10.json memuat \"SNX-OPS-SOP-04 Bagian 7.5\" (SOP-04 tidak punya 7.5)",
    "koreksi": "Klaim tidak berbukti dan salah; diganti hasil refcheck2 W9 (keluaran penuh per rujukan, kontrol positif).",
    "penemu": "LEAD G-2 butir 2; dikonfirmasi orkestrator"
+  },
+  {
+   "at": "2026-10-15T03:05Z",
+   "claim": "PLAN W9 versi 02:45Z: rujukan FAT-SOP-05->FAT-SOP-04 6.5, LEG-SOP-01->LEG-SOP-03 4.27, LEG-SOP-02->LEG-SOP-03 6.9, COM-SOP-01->COM-FRM-02 6.8, HR-SOP-10..13->ISMS-SOP-02 4.8/4.9 rusak",
+   "kanal": "pemeriksa makna opus (R043, R054, R058, R080, R097, R119, R144, R163) + cek langsung orkestrator pada kerangka /tmp/claude-0/w9/struct (HR-SOP-10 4.8 dan HR-SOP-11 4.9 = Hak akses milik sendiri; HR-SOP-12 menulis \"SOP ini\"; LEG-SOP-01 4.27 = retensi milik sendiri)",
+   "koreksi": "Bukan rujukan rusak; mesin salah menebak tujuan (nomor milik dokumen asal). Klaster penomoran 9 SOP dibatalkan.",
+   "penemu": "pemeriksa makna W9"
   }
  ],
  "guide_log": [
@@ -2769,6 +2776,95 @@
     "sha256_after": "ec986c0dcc7b2c429d2e10db4f8bcbb13b038262ffa2795f0e251a85a0d1431f"
    }
   ],
-  "gaps": []
+  "gaps": [
+   "Penomoran tampak butir kebijakan bagian 4: 9 SOP tanpa \"4.n\" (ISMS-PLN-01, ISMS-SOP-01..04, OPS-PRC-01, OPS-SOP-02..04), 18 SOP dengan \"4.n\". Tidak ada rujukan yang benar-benar menunjuk butir tanpa nomor; tidak diubah di W9 (keputusan LEAD/owner).",
+   "Keterbacaan: 160 rujukan \"butir X\" di baris tabel dokumen lain menunjuk dokumen asal sendiri (47 bertanda \"SOP ini\"); benar isinya, mudah salah baca; usulan konvensi \"SOP ini\".",
+   "refcheck.py W8 tidak mengecek sub-nomor di luar bagian 4 dan 6; digantikan refcheck2.py (keluaran penuh, kontrol positif).",
+   "RUNBOOK §1 dan §11 masih menyebut out/00_Index/Laporan_Run.md; RUNBOOK milik LEAD, tidak disunting."
+  ],
+  "refsem": {
+   "workflow": "wf_45a62fe1-b1e",
+   "checked": 614,
+   "OK": 424,
+   "salah_tafsir_ok": 167,
+   "luar_set": 3,
+   "tanpa_nomor": 3,
+   "basi": 13,
+   "rusak": 4,
+   "file": "reports/w9/refsem.json",
+   "fixes": "reports/w9/ref_fixes.json (22)"
+  },
+  "penyusun_workflow": {
+   "run": "wf_bab51c1d-3f6",
+   "task": "wzz16re8t",
+   "started": "2026-10-15T03:08Z",
+   "clusters": {
+    "HR-STRUKTUR": [
+     "HR-ORG-01",
+     "HR-JA-01"
+    ],
+    "HR-SOP": [
+     "HR-SOP-10",
+     "HR-SOP-11",
+     "HR-SOP-12",
+     "HR-SOP-13"
+    ],
+    "HR-LAIN": [
+     "HR-SOP-08",
+     "HR-FRM-01",
+     "HR-FRM-02",
+     "HR-RPT-01"
+    ],
+    "FAT-A": [
+     "FAT-SOP-01",
+     "FAT-SOP-05",
+     "FAT-SOP-06"
+    ],
+    "FAT-B": [
+     "FAT-SOP-04",
+     "FAT-FRM-01",
+     "FAT-RPT-02"
+    ],
+    "FAT-X": [
+     "FAT-REG-01",
+     "FAT-FRM-02"
+    ],
+    "LEG-A": [
+     "LEG-SOP-01",
+     "LEG-SOP-02",
+     "LEG-SOP-03"
+    ],
+    "LEG-B": [
+     "LEG-REG-01",
+     "LEG-REG-02",
+     "LEG-REG-03",
+     "LEG-REG-04"
+    ],
+    "LEG-C": [
+     "LEG-FRM-01",
+     "LEG-FRM-02",
+     "LEG-FRM-03",
+     "LEG-RPT-01",
+     "LEG-RPT-02"
+    ],
+    "COM": [
+     "COM-FRM-01",
+     "COM-FRM-02",
+     "COM-REG-01",
+     "COM-SOP-02",
+     "COM-SOP-01"
+    ],
+    "MKT": [
+     "MKT-RPT-01",
+     "MKT-REG-01",
+     "MKT-REG-02",
+     "MKT-REG-03"
+    ],
+    "OPS-REF": [
+     "OPS-FRM-10",
+     "ISMS-SOP-01"
+    ]
+   }
+  }
  }
 }
