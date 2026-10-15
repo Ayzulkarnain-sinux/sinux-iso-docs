@@ -15,8 +15,8 @@
     "effective_date": "",
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
-      "prepared": "Staff Legal",
-      "reviewed": "Line Manager Legal",
+      "prepared": "Alif Altamziz / Staff Legal",
+      "reviewed": "Ester Febe Utomo / Line Manager Legal",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -404,7 +404,7 @@
           }
         },
         {
-          "p": "Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN). Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar tinjauan tercatat di bagian 10. Peran penyetuju lembar tinjauan belum ditetapkan; Line Manager Legal memutuskannya (USULAN)."
+          "p": "Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01. Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar tinjauan tercatat di bagian 10. Peran penyetuju lembar tinjauan belum ditetapkan; Line Manager Legal memutuskannya (USULAN)."
         }
       ]
     },
@@ -1083,7 +1083,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Matriks peran memuat Line Manager Legal dan Staff Legal sebagai peran, dan VP Tech Operation and Services sebagai jabatan JA-04. Butir K-13 memuat pemetaan peran Legal ke jabatan."
+                "Struktur Organisasi SINUX. Matriks peran memuat Line Manager Legal dan Staff Legal sebagai peran, dan VP Tech Operation and Services sebagai jabatan JA-04. Line Manager Legal dipetakan ke JA-08 dan Staff Legal ke JA-09."
               ]
             ],
             "widths_cm": [

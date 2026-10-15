@@ -1,0 +1,31 @@
+{
+ "key": "LEG-FRM-03",
+ "cluster": "LEG-C",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "notes/LEG-FRM-03.md baris 243 memberi alasan 'K-13 kini milik peran Finance, bukan Legal'. Itu tidak akurat: render terbaru SNX-HR-ORG-01 (/tmp/claude-0/w9/render/HR-ORG-01.docx) masih memuat pemasangan Line Manager Legal dan Staff Legal ke JA-08/JA-09 di butir K-13, dan baris matriks Legal tertulis 'Sudah diputus (K-13)'. Teks pengganti di dokumen tetap benar dan cocok dengan matriks HR-ORG-01. Yang keliru hanya alasan di notes.",
+  "Mengganti kalimat 'Butir K-13 memuat pemetaan peran Legal ke jabatan.' dengan pernyataan pemetaan JA-08/JA-09 menghapus penunjuk ke K-13. Rujukan K-13 sebenarnya masih sah. Perubahan ini masih dalam semangat A5 (pemetaan sudah diputus) dan isinya cocok dengan HR-ORG-01, jadi tidak memblokir.",
+  "Petunjuk Pengisian butir 4 (render baris 226): 'Untuk Departemen Legal, tulis peran Line Manager Legal atau Staff Legal (USULAN).' Label USULAN ini tetap. Label itu melekat pada aturan pengisian kolom PIC dengan nama peran, bukan pada pemetaan jabatan, jadi tetap sesuai instruksi ('label USULAN lain tetap'). Dicatat agar LEAD bisa menilai.",
+  "Pada kalimat yang berubah: nol em-dash, nol frasa proses penyusunan, nol rujukan AI, tidak ada pasif baru tanpa pelaku. Ada satu bentuk pasif 'dipetakan ke' di baris Dokumen Terkait, tetapi pola itu memang sudah ada di kalimat bagian Peran sebelumnya."
+ ],
+ "butir_dikerjakan": [
+  "A5: blok Prepared = 'Alif Altamziz / Staff Legal' dan Reviewed = 'Ester Febe Utomo / Line Manager Legal', persis sama dengan defaults v22 prepared_reviewed.LEG. Approved = 'Samuel Kristanto Utomo / President Director', sesuai approved_by.all.",
+  "A5: label (USULAN) pada pemetaan Line Manager Legal/Staff Legal ke JA-08/JA-09 di paragraf penutup bagian Peran sudah dihapus. Label USULAN lain (peran penyetuju lembar tinjauan, petunjuk PIC) tetap.",
+  "A5: baris Dokumen Terkait SNX-HR-ORG-01 diselaraskan, pemetaan sudah tidak berstatus tertunda. Isinya cocok dengan matriks peran HR-ORG-01 terbaru.",
+  "A5: badan dokumen tetap memakai nama peran. Nama orang hanya muncul di blok Prepared/Reviewed (Alif dan Ester masing-masing 1 kali). Nama Daffa muncul 0 kali.",
+  "A5: unit ditulis 'Departemen Legal' (6 kemunculan), 'Divisi Legal' 0 kali. Sebelum W9 sudah begitu, jadi tidak perlu diubah.",
+  "A3: dokumen hanya menyebut JA-04 sebagai jabatan VP Tech Operation and Services, tanpa atasan, garis lapor, atau label menunggu konfirmasi. JA-03 tidak disebut. Tidak perlu perubahan, dan memang tidak diubah."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Diukur pada teks render sesudah (/tmp/claude-0/w9/render/LEG-FRM-03.docx). Hasilnya: 'Divisi Legal' 0, 'Departemen Legal' 6, 'HR Manager' 0, 'menunggu konfirmasi' 0, 'Daffa' 0, 'K-13' 0, 'JA-04' 1 (tanpa garis lapor), 'JA-03' 0, em-dash 0. Frasa proses (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun) 0. Diff teks: 4 baris berubah, semuanya dalam lingkup A5.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

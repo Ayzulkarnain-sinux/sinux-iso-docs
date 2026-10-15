@@ -231,3 +231,17 @@ Hasil uji sesudah sweep: render berhasil; lint_doc generic pass true, fails koso
 | "Lokasi di luar wilayah Indonesia" (D.3) | Tidak ada di sumber; contoh generik pada aspek berlabel USULAN | Open items 15 |
 
 Tidak ada kredensial, kata sandi, PIN, atau token di spec atau notes ini.
+
+
+## ISO-W9
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| Blok Approval, Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| Blok Approval, Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| Bagian Peran, paragraf penutup | ... (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN). | ... (JA-08, JA-09) di SNX-HR-ORG-01. |
+| Dokumen Terkait, baris SNX-HR-ORG-01 | Butir K-13 memuat pemetaan peran Legal ke jabatan. | Line Manager Legal dipetakan ke JA-08 dan Staff Legal ke JA-09. (Rujukan K-13 dihapus: K-13 kini milik peran Finance, bukan Legal.) |
+
+Open item:
+- Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.
+- A3: dokumen hanya menyebut JA-04 sebagai jabatan VP Tech Operation and Services, tanpa atasan atau garis lapor; tidak diubah.
