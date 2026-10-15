@@ -1,0 +1,12 @@
+$ python3 -I tools/w10_langscan.py diff <bed1bb6:OPS-FRM-10> <4a40352:OPS-FRM-10>  (kontrol positif G-4 gerbang 1, harus menembak "7.5")
+{
+ "numbers": {
+  "hilang": [
+   "6.5"
+  ],
+  "baru": [
+   "7.5"
+  ]
+ }
+}
+rc=0

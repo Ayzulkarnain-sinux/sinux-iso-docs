@@ -173,7 +173,10 @@ def refs_of(key, blob, structs):
         codes = [(m.start(), m.end(), m.group(0)) for m in re.finditer(CODE, t)]
         for m in LOC.finditer(t):
             kw = m.group(1)
-            locs = [m.group(2)] + re.findall(NUM, m.group(3) or '')
+            # tech_fix ISO-W10: daftar campuran ("butir 4.7 dan bagian 11") memakai kata kunci tiap anggota, bukan kata kunci kepala.
+            locs = [(kw, m.group(2))]
+            for kk, nn in re.findall(r'(?:\b(butir|bagian|langkah)\s+)?(' + NUM + r')', m.group(3) or '', re.I):
+                locs.append((kk or locs[-1][0], nn))
             hm = re.search(HINTS + r'\s*$', t[max(0, m.start() - 25):m.start()])
             hint = hm.group(1) if hm else ''
             before = [c for c in codes if c[1] <= m.start() and m.start() - c[1] <= 45 and not re.search(r'[.;:]\s|' + CODE, t[c[1]:m.start()])]
@@ -189,8 +192,8 @@ def refs_of(key, blob, structs):
                 ctx = (int(post.group(1)), int(post.group(2)), 'eksplisit')
             elif not tgt and not hint and h2 and kw.lower() in ('langkah', 'butir'):
                 ctx = (h1, h2)  # implisit: langkah atau uraian bernomor di tabel heading 2 tempat kalimat itu berada
-            for loc in locs:
-                rows.append(make_row(key, self_num, h1, t, tgt, kw, loc, hint, ctx, structs, own))
+            for kwi, loc in locs:
+                rows.append(make_row(key, self_num, h1, t, tgt, kwi, loc, hint, ctx, structs, own))
         for m in KREF.finditer(t):
             rows.append(make_row(key, self_num, h1, t, 'SNX-HR-ORG-01', 'K', m.group(1), '', None, structs, own))
     return rows

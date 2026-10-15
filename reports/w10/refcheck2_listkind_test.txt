@@ -1,0 +1,5 @@
+OK '(SNX-COM-SOP-02 butir 4.7 dan bagian 11)' -> [('butir', '4.7'), ('bagian', '11')]
+OK 'butir 4.10 dan 6.4' -> [('butir', '4.10'), ('butir', '6.4')]
+OK 'butir 4.1 sampai 4.5, 4.10, 4.12' -> [('butir', '4.1'), ('butir', '4.5'), ('butir', '4.10'), ('butir', '4.12')]
+OK 'bagian 3, butir 6.2, dan langkah 4' -> [('bagian', '3'), ('butir', '6.2'), ('langkah', '4')]
+SEMUA OK

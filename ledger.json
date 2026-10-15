@@ -3042,6 +3042,14 @@
     "reason": "pemeriksa buta LEG-FRM-01 r1 rubrik d: baris isian setinggi satu baris teks",
     "evidence": "reports/w10/renderer_table_defaults_test.txt (render rc 0, OOXML rc 0); selftest 6 OK",
     "sha256_after": "da66e3aa1322edec166af60bf7f35c1a32250195225dfc80b3bfb9921ae59d29"
+   },
+   {
+    "at": "2026-10-15T08:54Z",
+    "tool": "reports/orch/refcheck2.py",
+    "change": "daftar rujukan campuran ('butir 4.7 dan bagian 11') memakai kata kunci tiap anggota, bukan kata kunci kepala",
+    "reason": "uji kering refcheck2 W10: 'bagian 11' dibaca 'butir 11' sehingga TIDAK_ADA palsu (COM-FRM-01 -> SNX-COM-SOP-02)",
+    "evidence": "reports/w10/refcheck2_listkind_test.txt (4 kasus, termasuk daftar seragam dan rentang)",
+    "sha256_after": "62bcf69a232b689c4c2a45d543926c8baab12d8d2473c7f21b0c7c2bd1843f38"
    }
   ],
   "docs": {},
@@ -3066,7 +3074,7 @@
    "dikirim_owner": "SendUserFile 07:36Z: 4 PDF PASS, PDF percobaan OPS-FRM-10, diff-skrip-istilah-pilot.md"
   },
   "progress": {
-   "at": "2026-10-15T08:35Z",
+   "at": "2026-10-15T08:52Z",
    "qa_pass": [
     "COM-FRM-01",
     "COM-FRM-02",
@@ -3076,11 +3084,15 @@
     "FAT-REG-01",
     "FAT-RPT-02",
     "FAT-SOP-01",
+    "FAT-SOP-04",
+    "FAT-SOP-05",
+    "FAT-SOP-06",
     "HR-FRM-01",
     "HR-FRM-02",
     "HR-JA-01",
     "HR-ORG-01",
     "HR-RPT-01",
+    "HR-SOP-08",
     "HR-SOP-13",
     "ISMS-FRM-01",
     "ISMS-FRM-02",
@@ -3091,12 +3103,19 @@
     "ISMS-REG-03",
     "ISMS-REG-04",
     "ISMS-SOP-01",
+    "ISMS-SOP-02",
+    "ISMS-SOP-03",
+    "ISMS-SOP-04",
+    "ISMS-SOP-05",
     "LEG-FRM-01",
     "LEG-FRM-03",
     "LEG-REG-01",
     "LEG-REG-02",
     "LEG-REG-03",
     "LEG-RPT-02",
+    "LEG-SOP-01",
+    "LEG-SOP-02",
+    "LEG-SOP-03",
     "MKT-REG-01",
     "OPS-FRM-01",
     "OPS-FRM-02",
@@ -3109,7 +3128,9 @@
     "OPS-FRM-09",
     "OPS-PRC-01",
     "OPS-RPT-01",
-    "OPS-SOP-04"
+    "OPS-SOP-03",
+    "OPS-SOP-04",
+    "OPS-SOP-05"
    ],
    "residu": [
     "ISMS-PRO-01",
@@ -3124,7 +3145,18 @@
     "OPS-SOP-02"
    ],
    "resume": "reports/w10/RESUME.md",
-   "owner_pending": "ulang residu (izin putaran ke-3)"
+   "owner_pending": "ulang residu (izin putaran ke-3)",
+   "putaran_perbaikan": [
+    "HR-SOP-10",
+    "HR-SOP-11",
+    "HR-SOP-12"
+   ],
+   "disunting": [
+    "COM-SOP-01",
+    "COM-SOP-02"
+   ],
+   "audit_pointer_retro": "selesai ~08:50Z (semua docx lolos; spec diubah: HR-SOP-13, FAT-SOP-01, LEG-REG-01, LEG-RPT-02, COM-REG-01, MKT-REG-01)",
+   "audit_cakupan_label": "berjalan (113 jalur kandidat, /tmp/claude-0/w10/work/labelscope.json)"
   }
  }
 }
