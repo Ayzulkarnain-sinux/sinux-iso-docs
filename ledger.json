@@ -676,7 +676,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-01",
    "out_path": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
    "sources": [
@@ -691,10 +691,11 @@
    "loops": 2,
    "usulan_count": 7,
    "open_items": [],
-   "updated_at": "2026-10-14T23:02:46Z",
+   "updated_at": "2026-10-15T00:25:11Z",
    "pen_agent": "aa815c71d2448334e",
    "ooxml": "PASSED",
-   "fix_queued": "0"
+   "fix_queued": "0",
+   "sweep": "1"
   },
   {
    "wl_index": 16,
@@ -1950,16 +1951,16 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-FRM-02",
    "out_path": "out/05_Commercial/SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": "FAIL",
    "loops": 1,
-   "usulan_count": 12,
+   "usulan_count": 14,
    "open_items": [],
-   "updated_at": "2026-10-15T00:20:13Z",
+   "updated_at": "2026-10-15T00:22:18Z",
    "pen_agent": "a2f17674d8f1c06ef",
    "ooxml": "PASSED"
   },
@@ -1979,8 +1980,10 @@
    "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 19,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:21:40Z",
+   "open_items": [
+    "Sweep (b): Peran dan Dokumen Terkait menyebut JA-07 mencakup keluhan customer, JA-07 menulis keberatan pelanggan (konteks negosiasi); kutip verbatim atau lepas sebagai dasar"
+   ],
+   "updated_at": "2026-10-15T00:21:43Z",
    "pen_agent": "a9ea62060bd8ee27b",
    "ooxml": "PASSED",
    "fix_queued": "0"
@@ -2015,17 +2018,19 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-MKT-REG-01",
-   "out_path": null,
+   "out_path": "out/06_Marketing/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-15T00:07:36Z",
-   "pen_agent": "a6278839497527284"
+   "updated_at": "2026-10-15T00:21:47Z",
+   "pen_agent": "a6278839497527284",
+   "ooxml": "PASSED",
+   "hold_verify": "MKT-REG-02"
   },
   {
    "wl_index": 65,
@@ -2055,17 +2060,18 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-MKT-REG-03",
-   "out_path": null,
+   "out_path": "out/06_Marketing/SNX-MKT-REG-03 Marketing Lead & Campaign Outcome Register (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 25,
    "open_items": [],
-   "updated_at": "2026-10-15T00:10:56Z",
-   "pen_agent": "adc43dd2ae38a3897"
+   "updated_at": "2026-10-15T00:25:41Z",
+   "pen_agent": "adc43dd2ae38a3897",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 67,
@@ -2312,7 +2318,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-REG-01",
    "out_path": null,
    "sources": [
@@ -2327,9 +2333,10 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": "2026-10-15T00:20:13Z",
+   "updated_at": "2026-10-15T00:21:53Z",
    "classification": "RESTRICTED (Internal)",
-   "promoted_from": "HOLD-T3"
+   "promoted_from": "HOLD-T3",
+   "pen_agent": "a3d6b69aee3386660"
   },
   {
    "wl_index": 80,
@@ -2358,7 +2365,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-FRM-02",
    "out_path": null,
    "sources": [
@@ -2373,9 +2380,10 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null,
+   "updated_at": "2026-10-15T00:22:27Z",
    "classification": "RESTRICTED (Internal)",
-   "promoted_from": "HOLD-T3"
+   "promoted_from": "HOLD-T3",
+   "pen_agent": "adee81774ba4f9731"
   },
   {
    "wl_index": 82,

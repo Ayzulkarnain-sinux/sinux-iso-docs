@@ -1,0 +1,870 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "MKT-REG-03",
+  "doc_type_cover": "REGISTER",
+  "doc_type_label": "Register",
+  "number": "SNX-MKT-REG-03",
+  "department": "Marketing",
+  "title": "Marketing Lead & Campaign Outcome Register",
+  "process_owner": "VP Commercial",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Zilly Dwinata / Brand & Marketing",
+   "reviewed": "Laras Rasmawati / VP Commercial",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Register ini mencatat hasil marketing yang diteruskan ke Sales: lead yang Brand & Marketing serahkan kepada Business Development. Tiap lead dicatat dengan sumber lead, campaign asal, tanggal serah terima, status qualification bila sudah tersedia, dan feedback dari Business Development."
+    },
+    {
+     "p": "Yang dijaga: setiap lead dapat ditelusuri dari sumber dan campaign asalnya sampai status qualification dan feedback dari Business Development, sehingga laporan lead generation dan evaluasi kualitas lead disusun dari catatan yang sama."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Register ini mencakup lead yang Brand & Marketing serahkan kepada Business Development, sejak tanggal serah terima sampai Business Development menyampaikan status qualification dan feedback. Register ini juga memuat laporan lead generation dan evaluasi kualitas lead per periode."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari register ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "Lead yang Business Development peroleh sendiri lewat prospecting",
+        "Bukan hasil marketing yang diteruskan ke Sales. Business Development mencatatnya di CRM menurut SNX-COM-SOP-01."
+       ],
+       [
+        "Proses penjualan sesudah serah terima lead: qualification, discovery meeting, proposal, negosiasi, closing, dan handover proyek ke Delivery",
+        "Diatur di SNX-COM-SOP-01. Register ini hanya mencatat status qualification dan feedback dari Business Development."
+       ],
+       [
+        "Perencanaan dan pelaksanaan campaign dan aktivitas marketing",
+        "Menjadi lingkup SNX-MKT-REG-02. Register ini hanya merujuk nama campaign di sana (USULAN)."
+       ],
+       [
+        "Perencanaan dan review kinerja marketing",
+        "Menjadi lingkup SNX-MKT-RPT-01. Tabel 3 dan Tabel 4 dapat menjadi data masukan review itu (USULAN)."
+       ],
+       [
+        "Feedback dan keluhan dari customer",
+        "Ada di SNX-COM-REG-01. Feedback di register ini berasal dari Business Development, bukan dari customer."
+       ],
+       [
+        "Target jumlah lead dan MQL",
+        "Target ada di KPI COMMERCIAL & MARKETING.xlsx. Register ini tidak menetapkan target."
+       ],
+       [
+        "Kontak orang di lead",
+        "Menjadi isi CRM. Aturannya ada di butir 4.15."
+       ]
+      ],
+      "widths_cm": [
+       6.5,
+       9.0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Campaign",
+        "Kegiatan marketing SINUX yang tercatat dengan nama di SNX-MKT-REG-02."
+       ],
+       [
+        "Campaign Asal",
+        "Campaign yang menghasilkan sebuah lead."
+       ],
+       [
+        "CRM",
+        "Customer Relationship Management: sistem tempat Commercial mencatat aktivitas penjualan, termasuk lead (SNX-COM-SOP-01 bagian 3)."
+       ],
+       [
+        "Feedback",
+        "Tanggapan tertulis Business Development kepada Brand & Marketing tentang lead yang sudah diserahkan."
+       ],
+       [
+        "Lead",
+        "Perusahaan atau institusi di luar SINUX yang menjadi sasaran penjualan dan baru tercatat di register ini atau di CRM."
+       ],
+       [
+        "Lead generation",
+        "Kegiatan Brand & Marketing memperoleh lead untuk diserahkan kepada Business Development."
+       ],
+       [
+        "MQL",
+        "Marketing Qualified Lead: istilah KPI Brand & Marketing di KPI COMMERCIAL & MARKETING.xlsx. Padanannya dengan Sales Stage belum ditetapkan."
+       ],
+       [
+        "Qualification",
+        "Penilaian lead terhadap lima kriteria di SNX-COM-SOP-01 butir 4.6 untuk menentukan apakah lead layak masuk ke tahap proposal."
+       ],
+       [
+        "Sales",
+        "Fungsi penjualan di Commercial. Business Development menjalankan fungsi ini (USULAN)."
+       ],
+       [
+        "Sales Stage",
+        "Status lead atau opportunity di CRM menurut SNX-COM-SOP-01 butir 4.7: Leads, Qualified, Opportunity, Bid, Win, Lost, atau Future Nurture. Daftar status itu berstatus (USULAN) di SNX-COM-SOP-01."
+       ],
+       [
+        "Serah terima lead (lead handover)",
+        "Penyerahan satu lead dari Brand & Marketing kepada Business Development. Berbeda dari handover proyek ke Delivery di SNX-COM-SOP-01."
+       ],
+       [
+        "Status Qualification",
+        "Sales Stage sebuah lead di CRM pada Tanggal Status di Tabel 2."
+       ],
+       [
+        "Sumber Lead",
+        "Saluran atau kegiatan tempat Brand & Marketing memperoleh sebuah lead."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Satu baris Tabel 1 mencatat satu lead yang Brand & Marketing serahkan kepada Business Development. Tabel 1 dan Tabel 2 memakai nomor baris yang sama."
+    },
+    {
+     "p": "4.2 Brand & Marketing menyerahkan lead kepada Business Development beserta sumber dan statusnya (SNX-COM-SOP-01 bagian 5 dan 6; uraian JA-06 di SNX-HR-JA-01)."
+    },
+    {
+     "p": "4.3 Brand & Marketing mencatat lead di Tabel 1 pada saat menyerahkannya (USULAN)."
+    },
+    {
+     "p": "4.4 Business Development mencatat lead yang ia terima di CRM (SNX-COM-SOP-01 butir 4.3). Brand & Marketing menulis rujukan catatan itu di Tabel 1 (USULAN)."
+    },
+    {
+     "p": "4.5 Business Development menilai lead menurut SNX-COM-SOP-01 butir 4.6 dan mengubah Sales Stage lead di CRM menurut butir 4.7 di dokumen itu."
+    },
+    {
+     "p": "4.6 Business Development menyampaikan Sales Stage lead kepada Brand & Marketing. Brand & Marketing menulisnya di kolom Status Qualification Tabel 2 (USULAN)."
+    },
+    {
+     "p": "4.7 Kolom Status Qualification dibiarkan kosong selama Business Development belum menyampaikan Sales Stage lead itu. Bila Sales Stage berubah, Brand & Marketing mengganti isi kolom itu dan Tanggal Status dengan nilai terbaru (USULAN)."
+    },
+    {
+     "p": "4.8 Business Development menyampaikan feedback atas lead yang sudah diserahkan kepada Brand & Marketing. Brand & Marketing menulisnya di Tabel 2 (USULAN)."
+    },
+    {
+     "p": "4.9 Brand & Marketing menyusun laporan lead generation di Tabel 3 dari baris Tabel 1 pada periode yang sama (USULAN)."
+    },
+    {
+     "p": "4.10 Brand & Marketing menyusun evaluasi kualitas lead di Tabel 4 dari Status Qualification terbaru dan feedback di Tabel 2 (USULAN). VP Commercial menetapkan kriteria kualitas lead. Kriteria itu belum ditetapkan. Sampai ada penetapan, evaluasi hanya memakai dua isian Tabel 2 tersebut (USULAN)."
+    },
+    {
+     "p": "4.11 Brand & Marketing menulis tindak lanjutnya atas hasil evaluasi di Tabel 4. VP Commercial meninjau Tabel 3 dan Tabel 4 (USULAN)."
+    },
+    {
+     "p": "4.12 Periode Tabel 3 dan Tabel 4 adalah satu bulan kalender, mengikuti satuan per bulan pada KPI Lead Generation & Marketing Qualified Leads (MQL) di KPI COMMERCIAL & MARKETING.xlsx (USULAN)."
+    },
+    {
+     "p": "4.13 Lead yang tidak berasal dari campaign diisi Tanpa campaign di kolom Campaign Asal (USULAN)."
+    },
+    {
+     "p": "4.14 Register kosong berklasifikasi INTERNAL. Register yang sudah berisi data lead berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3, karena lead adalah customer sasaran penjualan (USULAN)."
+    },
+    {
+     "p": "4.15 Brand & Marketing menulis nama perusahaan atau institusi lead di register, dan tidak menulis nama, email, atau nomor telepon kontak lead. Data kontak tetap di CRM (USULAN)."
+    },
+    {
+     "p": "4.16 Brand & Marketing menyimpan register di lokasi yang tertulis pada tabel Rekaman (USULAN)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN). Nama jabatan mengikuti SNX-HR-ORG-01."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada register ini"
+      ],
+      "rows": [
+       [
+        "Brand & Marketing",
+        "Pencatat register: menyerahkan lead, mengisi Tabel 1 sampai Tabel 4, dan menyimpan register (butir 4.2 sampai 4.4, 4.6 sampai 4.13, 4.15, dan 4.16). Uraian JA-06 di SNX-HR-JA-01 memuat tugas memonitor lead dan menyerahkan lead beserta sumber dan statusnya."
+       ],
+       [
+        "Business Development",
+        "Menjalankan fungsi Sales. Mencatat lead di CRM, menilai lead, dan mengubah Sales Stage di CRM. Menyampaikan Sales Stage dan feedback kepada Brand & Marketing (butir 4.4 sampai 4.6 dan 4.8)."
+       ],
+       [
+        "VP Commercial",
+        "Pemilik register. Menetapkan kriteria kualitas lead dan meninjau Tabel 3 dan Tabel 4 (butir 4.10 dan 4.11)."
+       ]
+      ],
+      "widths_cm": [
+       3.6,
+       11.9
+      ]
+     }
+    },
+    {
+     "p": "Direktur Utama menyetujui register ini lewat blok Approval pada halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Cara Mengisi",
+   "blocks": [
+    {
+     "p": "6.1 Brand & Marketing menulis satu baris di Tabel 1 untuk setiap lead yang diserahkan kepada Business Development (butir 4.1 dan 4.3)."
+    },
+    {
+     "p": "6.2 Brand & Marketing menulis tanggal serah terima lead di kolom Tanggal Serah Terima."
+    },
+    {
+     "p": "6.3 Brand & Marketing menulis nama perusahaan atau institusi lead di kolom Nama Lead (butir 4.15)."
+    },
+    {
+     "p": "6.4 Brand & Marketing menulis saluran atau kegiatan perolehan lead di kolom Sumber Lead, dengan nama yang sama setiap kali."
+    },
+    {
+     "p": "6.5 Brand & Marketing menulis nama campaign di kolom Campaign Asal persis seperti di SNX-MKT-REG-02, atau Tanpa campaign bila lead tidak berasal dari campaign (butir 4.13)."
+    },
+    {
+     "p": "6.6 Brand & Marketing menulis nomor atau nama catatan lead di CRM pada kolom Rujukan CRM, sesudah Business Development mencatat lead itu (butir 4.4)."
+    },
+    {
+     "p": "6.7 Brand & Marketing menulis Sales Stage lead di kolom Status Qualification Tabel 2, sesudah Business Development menyampaikannya (butir 4.6 dan 4.7)."
+    },
+    {
+     "p": "6.8 Brand & Marketing menulis tanggal Business Development menyampaikan Sales Stage itu di kolom Tanggal Status."
+    },
+    {
+     "p": "6.9 Brand & Marketing menulis isi feedback di kolom Feedback dari Business Development, dengan kata-kata Business Development (butir 4.8)."
+    },
+    {
+     "p": "6.10 Brand & Marketing menulis tanggal Business Development menyampaikan feedback di kolom Tanggal Feedback."
+    },
+    {
+     "p": "6.11 Brand & Marketing menulis satu baris di Tabel 3 untuk setiap kombinasi Sumber Lead dan Campaign Asal pada satu periode (butir 4.9 dan 4.12)."
+    },
+    {
+     "p": "6.12 Brand & Marketing menghitung jumlah baris Tabel 1 untuk kombinasi itu pada periode yang sama, lalu menulis hasilnya di kolom Jumlah Lead Diserahkan."
+    },
+    {
+     "p": "6.13 Brand & Marketing menulis satu baris di Tabel 4 untuk setiap periode, sesudah Tabel 3 periode itu terisi (butir 4.10 dan 4.12)."
+    },
+    {
+     "p": "6.14 Brand & Marketing menghitung jumlah lead untuk tiap Sales Stage dari Tabel 2, lalu menulisnya di kolom Jumlah per Status Qualification."
+    },
+    {
+     "p": "6.15 Brand & Marketing menulis ringkasan feedback Business Development pada periode itu di kolom Ringkasan Feedback."
+    },
+    {
+     "p": "6.16 Brand & Marketing menulis tindak lanjutnya atas hasil evaluasi di kolom Tindak Lanjut (butir 4.11)."
+    },
+    {
+     "p": "6.17 Brand & Marketing menulis tanggal VP Commercial meninjau Tabel 3 dan Tabel 4 di kolom Tanggal Tinjauan VP Commercial (butir 4.11)."
+    },
+    {
+     "p": "6.18 Brand & Marketing membiarkan kosong sel yang datanya belum tersedia."
+    }
+   ]
+  },
+  {
+   "h": "Isi Register",
+   "blocks": [
+    {
+     "p": "Setiap tabel menyediakan 10 baris. Brand & Marketing menambah baris bila perlu. Sel data kosong dan diisi menurut bagian Cara Mengisi. Kolom No sudah bernomor. Struktur kolom Tabel 1 sampai Tabel 4 berstatus (USULAN) sampai VP Commercial menetapkannya."
+    },
+    {
+     "h2": "Tabel 1. Serah Terima Lead"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Tanggal Serah Terima",
+       "Nama Lead",
+       "Sumber Lead",
+       "Campaign Asal",
+       "Rujukan CRM"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       2.6,
+       3.6,
+       2.9,
+       3.0,
+       2.4
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 2. Status Qualification dan Feedback"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Status Qualification",
+       "Tanggal Status",
+       "Feedback dari Business Development",
+       "Tanggal Feedback"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       3.0,
+       2.4,
+       6.9,
+       2.2
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 3. Laporan Lead Generation"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Periode",
+       "Sumber Lead",
+       "Campaign Asal",
+       "Jumlah Lead Diserahkan"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       3.0,
+       4.2,
+       4.2,
+       3.1
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 4. Evaluasi Kualitas Lead"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Periode",
+       "Jumlah per Status Qualification",
+       "Ringkasan Feedback",
+       "Tindak Lanjut",
+       "Tanggal Tinjauan VP Commercial"
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "widths_cm": [
+       1.0,
+       2.2,
+       3.4,
+       3.4,
+       2.9,
+       2.6
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "p": "Lokasi, pemilik, dan retensi berikut berstatus (USULAN). Retensi belum ditetapkan."
+    },
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "rows": [
+       [
+        "Serah terima lead dan hasilnya: Tabel 1 dan Tabel 2",
+        "Folder Google Drive departemen Marketing. Pemilik: VP Commercial. Pencatat: Brand & Marketing. Klasifikasi menurut butir 4.14.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Laporan lead generation: Tabel 3",
+        "Folder Google Drive departemen Marketing. Pemilik: VP Commercial. Pencatat: Brand & Marketing. Klasifikasi menurut butir 4.14.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Evaluasi kualitas lead: Tabel 4",
+        "Folder Google Drive departemen Marketing. Pemilik: VP Commercial. Pencatat: Brand & Marketing. Klasifikasi menurut butir 4.14.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Catatan lead di CRM",
+        "CRM. Pemilik: Business Development (butir 4.4).",
+        "Belum ditetapkan"
+       ]
+      ],
+      "widths_cm": [
+       3.8,
+       7.2,
+       4.5
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan register ini"
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "9.1.1 Umum (pemantauan, pengukuran, analisis, dan evaluasi)",
+        "Tabel 3 memuat hasil lead generation per periode."
+       ],
+       [
+        "ISO 9001:2015",
+        "9.1.3 Analisis dan evaluasi",
+        "Tabel 4 memuat evaluasi kualitas lead dari Status Qualification dan feedback Business Development."
+       ],
+       [
+        "ISO 9001:2015",
+        "10.3 Peningkatan berkelanjutan",
+        "Kolom Tindak Lanjut di Tabel 4 memuat tindak lanjut Brand & Marketing atas hasil evaluasi."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Register punya lokasi simpan, pemilik, dan klasifikasi (butir 4.14 dan 4.16)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.12 Klasifikasi informasi",
+        "Register yang berisi data lead berklasifikasi RESTRICTED (Internal) menurut butir 4.14."
+       ]
+      ],
+      "widths_cm": [
+       3.4,
+       5.6,
+       6.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "rows": [
+       [
+        "SNX-COM-SOP-01",
+        "Sales Process. Memuat penyerahan lead dari Brand & Marketing kepada Business Development (bagian 5 dan 6), qualification (butir 4.6), dan Sales Stage di CRM (butir 4.7)."
+       ],
+       [
+        "SNX-COM-REG-01",
+        "Customer Feedback & Complaint Register. Tempat feedback dan keluhan dari customer."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan. Uraian JA-06 Brand & Marketing memuat tugas memonitor lead dan menyerahkan lead beserta sumber dan statusnya."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber nama jabatan dan matriks peran."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling. Sumber tingkat RESTRICTED (Internal) dan aturan bahwa informasi customer minimal RESTRICTED (butir 4.3)."
+       ],
+       [
+        "SNX-MKT-REG-02",
+        "Marketing Campaign & Activity Register. Tempat nama campaign dicatat. Kolom Campaign Asal merujuk nama di register itu (USULAN)."
+       ],
+       [
+        "SNX-MKT-RPT-01",
+        "Marketing Planning & Performance Review. Review kinerja marketing yang berada di luar register ini."
+       ],
+       [
+        "Belum bernomor",
+        "KPI COMMERCIAL & MARKETING.xlsx. KPI individu Brand & Marketing, memuat KPI Lead Generation dan Marketing Qualified Leads (MQL) per bulan beserta target jumlahnya."
+       ]
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN)."
+    }
+   ]
+  }
+ ]
+}
