@@ -1,0 +1,49 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 5 Peran (Business Development), butir 4.1, bagian 6 Cara Mengisi",
+      "masalah": "Cakupan isian Business Development tidak sama antarbagian. Butir 4.1 dan baris Peran menulis Tabel 1 sampai Tabel 10 plus hasil handover meeting dan penolakan di Tabel 11; Cara Mengisi menulis Tabel 1 sampai Tabel 11. Pengisi Tabel 11 baris 5 sampai 7 (tanggal penyerahan paket, hasil dan tanggal gate G1) tidak tersebut di Peran.",
+      "bukti": "Peran: 'Mengisi Tabel 1 sampai Tabel 10, mencatat hasil handover meeting dan penolakan paket handover di Tabel 11'; Cara Mengisi: 'Business Development mengisi Tabel 1 sampai Tabel 11 menurut petunjuk berikut.'"
+    },
+    {
+      "lokasi": "Butir 4.7",
+      "masalah": "POL-OPS-001 bagian 8 ketentuan 3 menulis 'tidak mengikat Operation' dan 'Commercial dan COO'; dokumen menulis 'tidak mengikat tim pelaksana' dan 'VP Commercial dan COO'. Pemetaan Commercial ke VP Commercial berlabel USULAN hanya di baris Peran VP Commercial, tidak di butir 4.7 dan tidak di daftar USULAN butir 4.15. Rujukan '(..., yang menulis Commercial dan COO)' sudah membuka perbedaannya, jadi bukan fakta karangan.",
+      "bukti": "Sumber (context/audit ops, POL-OPS-001 bagian 8): 'Janji ke pelanggan yang tidak tercatat di G1 tidak mengikat Operation sampai disetujui Commercial dan COO.'"
+    },
+    {
+      "lokasi": "Bagian 5 Peran (Service Delivery Manager, Project Manager), butir 4.11",
+      "masalah": "Dua peran sama-sama 'memeriksa paket handover'. SNX-OPS-SOP-01 tahap Inisiasi memberi pemeriksaan checklist G1 ke Project Manager dan keputusan ke Service Delivery Manager. Tugas Service Delivery Manager lebih jelas bila ditulis 'menerima atau menolak' saja.",
+      "bukti": "Peran SDM: 'dan memeriksa paket handover (butir 4.10, 4.11)'; Peran PM: 'Memeriksa paket handover dengan checklist G1'."
+    },
+    {
+      "lokasi": "Tabel 11 (judul dan baris 9); Definisi Gate G1",
+      "masalah": "Istilah bergeser: 'paket' tanpa 'handover' di samping istilah baku 'paket handover'; 'gate' dan 'gerbang' bergantian dalam satu definisi (RUNBOOK §6a butir 6 dan 7).",
+      "bukti": "'Tabel 11. Handover meeting dan penyerahan paket'; '9 | Tanggal paket dilengkapi ulang'; 'Gate G1 | Gerbang tertulis pertama ... sebagai pemilik gerbang.'"
+    },
+    {
+      "lokasi": "Butir 4.1, 4.2; Definisi Risiko",
+      "masalah": "Benda sebagai pelaku dan kalimat keadaan tanpa pelaku, ringan dan tidak berulang. SNX-COM-SOP-01 butir 4.16 menyebut Business Development yang memastikan dokumen closing lengkap.",
+      "bukti": "'Dokumen closing sudah lengkap pada saat itu'; 'Tabel 2, Tabel 7, dan Tabel 8 menambahkan dokumen dasar, dependency, dan asumsi.'; 'Paket handover menyebutnya Risks'."
+    },
+    {
+      "lokasi": "Butir 4.12",
+      "masalah": "Butir 4.12 merujuk SNX-COM-SOP-01 butir 4.19 tanpa menyebut status USULAN di sana, sedangkan butir 4.11 menyebutnya; butir 4.12 juga tidak masuk daftar USULAN butir 4.15.",
+      "bukti": "SNX-COM-SOP-01 butir 4.19 (specs/COM-SOP-01.json): 'Penetapan pelaku berikut berstatus (USULAN) ... Business Development melengkapi paket handover yang ditolak (bagian 9).'"
+    },
+    {
+      "lokasi": "Identity (Process Owner) dan Peran (COO)",
+      "masalah": "Catatan, bukan cacat: pemilik konsisten. Process Owner 'Direktur' = COO di badan (data_conflicts) = pemilik formulir kosong di Peran; VP Commercial = pemilik formulir terisi di Peran dan Rekaman; Kesimpulan selaras. Perbedaan dengan SNX-COM-SOP-01 (process owner VP Commercial) sudah tercatat di notes OI-3.",
+      "bukti": "Identity 'Process Owner | Direktur'; Peran COO 'Pemilik dokumen (formulir kosong) menurut blok Identity (USULAN)'; Rekaman 'Pemilik formulir terisi: VP Commercial (USULAN)'."
+    }
+  ],
+  "cek_ringkas": {
+    "a_fakta": "Rujukan silang dicocokkan dengan specs/COM-SOP-01.json (butir 4.8, 4.11, 4.13, 4.15, 4.16, 4.19, tabel rekaman), specs/OPS-SOP-01.json (butir 4.1, Inisiasi, retensi Durasi kontrak + 3 tahun), specs/HR-ORG-01.json (K-10, JA-02, JA-07 Business Development), specs/COM-FRM-01.json (kelompok Kesesuaian Scope, Delivery Commitment), context/audit ops (POL-OPS-001 DRAFT v0.1, bagian 8 ketentuan 3, P-03; sheet Checklist G1 butir 1 sampai 8, LOLOS/TAHAN; kanal email dan grup WhatsApp proyek). Semua cocok.",
+    "b_karangan": "Nihil. Nol nama pihak luar, nol tanggal, satu angka (Durasi kontrak + 3 tahun) berlabel USULAN dengan sumber. Semua sel data Tabel 1 sampai Tabel 12 kosong, tanpa baris contoh.",
+    "c_kriteria": "Terpenuhi: scope final (Tabel 3, 4), quotation/PO/kontrak (Tabel 2), deliverables (Tabel 3), jadwal (Tabel 5), PIC (Tabel 6), dependency (Tabel 7), asumsi (Tabel 8), risiko (Tabel 9), komitmen kepada customer dan pemenuhnya di tim pelaksana (Tabel 10, butir 4.7, 4.10).",
+    "d_batas_keras": "Status Draft, tanggal efektif kosong, tanda tangan kosong; tiga penanda tangan berbeda sesuai defaults COM; nol rujukan internal AI; nol kredensial; klasifikasi INTERNAL sesuai worklist.",
+    "f_bahasa": "Nol em-dash, en-dash, kutip ganda, frasa terlarang §6a butir 5; tebal hanya di sampul template.",
+    "g_data_conflicts": "Samuel Kristanto Utomo / President Director di Approved By, Direktur Utama di badan; Amirull / Direktur di Reviewed By, Direktur (COO) pada sebutan pertama lalu COO; Laras / VP Commercial. Tidak ada fileId sumber untuk dokumen ini; cacat dokumen tetangga ditangani di notes bagian 4."
+  }
+}

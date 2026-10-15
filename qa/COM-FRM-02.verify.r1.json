@@ -1,0 +1,47 @@
+{
+ "verdict": "FAIL",
+ "blocking": [
+  {
+   "lokasi": "Bagian Peran (baris COO dan VP Commercial) lawan bagian Rekaman baris 1 dan Acuan ISO baris 7.5.3; Identity Process Owner",
+   "masalah": "Formulir ini punya dua pemilik dan bagian Peran hanya menyebut satu (cek tambahan satu pemilik; cek e; RUNBOOK 6a.7). Identity dan Peran menetapkan COO (Process Owner Direktur) sebagai pemilik dokumen ini. Rekaman menetapkan VP Commercial sebagai pemilik formulir yang sama setelah diisi. Baris VP Commercial di Peran tidak memuat kepemilikan apa pun. Acuan ISO 7.5.3 menyebut Tabel Rekaman memuat pemilik formulir ini, jadi auditor membaca COO di Peran dan VP Commercial di Rekaman untuk objek yang sama. Preseden: COM-REG-01 FAIL untuk pola ini; COM-FRM-01 PASS karena Peran menulis tegas 'VP Commercial ... Pemilik formulir terisi (USULAN)' di samping 'COO | Pemilik dokumen ini'. Perbaikan satu baris: tambahkan 'Pemilik formulir terisi (USULAN, bagian Rekaman)' di baris VP Commercial dan ubah baris COO jadi 'Pemilik dokumen (formulir kosong) ini menurut blok Identity', atau samakan Rekaman ke 'Pemilik: COO. Pengelola: VP Commercial'.",
+   "bukti": "Identity: 'Process Owner | Direktur'. Peran: 'COO | Pemilik dokumen ini menurut blok Identity (USULAN). Meninjau formulir ini setiap tahun.' dan 'VP Commercial | Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11).' Rekaman: 'Formulir ini setelah diisi: Tabel 1 sampai Tabel 12 | Folder Google Drive Departemen Commercial (USULAN). Pencatat: Business Development. Pemilik: VP Commercial (USULAN).' Acuan ISO: '7.5.3 ... Tabel Rekaman memuat lokasi, pemilik, retensi, dan klasifikasi formulir ini.'"
+  }
+ ],
+ "nonblocking": [
+  {
+   "lokasi": "Butir 4.15, Kesimpulan, butir 4.7, Peran baris COO",
+   "masalah": "Departemen dipakai sebagai pelaku, bukan peran bagian 5 (6a.1, 6a.7), dan dua kalimat tidak sama tentang siapa yang menetapkan struktur kolom: 4.15 menulis Commercial dan Operation, Kesimpulan hanya Commercial. Di 4.7 dan baris COO, Commercial dipetakan ke VP Commercial lewat baris VP Commercial (USULAN), jadi tidak salah fakta.",
+   "bukti": "4.15: '... berstatus (USULAN) sampai Commercial dan Operation menetapkannya.' Kesimpulan: '... dan Commercial menetapkan lokasi rekaman serta struktur kolomnya.' COO: 'Bersama Commercial menyetujui komitmen yang belum tercatat (butir 4.7).'"
+  },
+  {
+   "lokasi": "Ruang Lingkup; butir 4.4; butir 4.8",
+   "masalah": "Pasif tanpa pelaku padahal pelakunya diketahui (Business Development); 'order itu' di 4.4 tidak punya rujukan sebelumnya. Tunggal, tidak berulang berat.",
+   "bukti": "'Butir berikut dikecualikan dari formulir ini (USULAN):'; 'Bila order itu sudah direview di SNX-COM-FRM-01, ...'; 'Dependency akses ditulis sebagai kebutuhan, tanpa kredensialnya (POL-OPS-001 kebijakan P-03).'"
+  },
+  {
+   "lokasi": "Dokumen Terkait baris SNX-OPS-SOP-01",
+   "masalah": "Sinonim 'paket G1' dipakai sebagai keterangan, sedangkan istilah Definisi adalah paket handover (Definisi sudah mencatat sebutan Operation itu, jadi ringan).",
+   "bukti": "'SNX-OPS-SOP-01 | Project Management & Delivery: butir 4.1 mengatur penerimaan paket G1 oleh Service Delivery Manager.'"
+  },
+  {
+   "lokasi": "Definisi Quotation",
+   "masalah": "Definisi melingkar: quotation diartikan memakai tahap 'proposal dan quotation'.",
+   "bukti": "'Quotation | Penawaran harga SINUX kepada customer pada tahap proposal dan quotation (SNX-COM-SOP-01).'"
+  },
+  {
+   "lokasi": "Acuan ISO baris 8.2.3; Tujuan",
+   "masalah": "Benda diberi kata kerja manusia (pola tambahan); ringan karena di kolom lain sudah memakai 'memuat'.",
+   "bukti": "'... dan Tabel 9 mencatat perbedaan antar dokumen (butir 4.5).'; 'Formulir ini mencatat isi handover proyek ...'"
+  },
+  {
+   "lokasi": "Peran baris COO",
+   "masalah": "Tugas tinjauan tahunan tanpa label, sedangkan Kesimpulan memberi (USULAN) untuk kalimat yang sama.",
+   "bukti": "Peran: 'Meninjau formulir ini setiap tahun.' Kesimpulan: 'COO meninjau formulir ini setiap tahun (USULAN).'"
+  },
+  {
+   "lokasi": "Cakupan verifikasi (info)",
+   "masalah": "T2 tanpa sumber Drive (worklist sources []), alat Drive tidak dimuat; grep context/audit untuk COM-FRM-02 dan judul memberi 0 baris; notes bagian 4 menangani cacat Sales SOP, POL-OPS-001, PRO-OPS-001 yang bersinggungan. Rujukan dicocokkan ke repo dan cocok: COM-SOP-01 butir 4.8, 4.11, 4.13, 4.15, 4.16, 4.19 dan tabel rekaman (PO dan kontrak belum ditetapkan); OPS-SOP-01 butir 4.1, tahap Inisiasi (PM memeriksa dengan checklist G1, SDM menerima atau menolak, LOLOS atau TAHAN), retensi Durasi kontrak + 3 tahun; POL-OPS-001 DRAFT v0.1, bagian 8 ketentuan 3, P-03; HR-ORG-01 K-10; COM-FRM-01 kelompok C1 Kesesuaian Scope dan C4 Delivery Commitment; judul OPS-FRM-01, OPS-FRM-02, OPS-FRM-06, ISMS-PRO-01; kanal email dan grup WhatsApp proyek (OPS-SOP-01). Approval persis prepared_reviewed.COM dan approved_by; badan memakai Direktur Utama, 'Direktur (COO)' pada sebutan pertama (Definisi) lalu COO. Kriteria Description terpenuhi: scope final dan di luar scope (Tabel 3, 4), quotation/PO/kontrak (Tabel 2), deliverable (Tabel 3), jadwal (Tabel 5), PIC (Tabel 6), dependency (Tabel 7), asumsi (Tabel 8), risiko (Tabel 9), komitmen dan jabatan pemenuhnya (Tabel 10). Sel data kosong, tanpa baris contoh, nama orang hanya di blok Approval, nol tanggal, status Draft, nol rujukan internal AI, nol em-dash, en-dash, dan tanda kutip; lint_doc generic pass.",
+   "bukti": "qa/COM-FRM-02.lint.json: pass true, fails []; scan teks docx: em-dash 0, en-dash 0, tanda kutip 0, HANDOVER kapital 0, Claude/SKILL/DEC-/staging 0"
+  }
+ ]
+}

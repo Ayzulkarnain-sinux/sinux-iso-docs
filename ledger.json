@@ -1951,16 +1951,16 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-COM-FRM-02",
    "out_path": "out/05_Commercial/SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
-   "verify_verdict": "FAIL",
+   "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 14,
    "open_items": [],
-   "updated_at": "2026-10-15T00:22:18Z",
+   "updated_at": "2026-10-15T00:25:52Z",
    "pen_agent": "a2f17674d8f1c06ef",
    "ooxml": "PASSED"
   },
@@ -2068,8 +2068,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 25,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:25:41Z",
+   "open_items": [
+    "Sweep (b): pengecualian Ruang Lingkup menaruh perencanaan campaign di MKT-REG-02 sekaligus MKT-RPT-01, tanpa label USULAN; selaraskan dengan batas cakupan MKT"
+   ],
+   "updated_at": "2026-10-15T00:25:44Z",
    "pen_agent": "adc43dd2ae38a3897",
    "ooxml": "PASSED"
   },

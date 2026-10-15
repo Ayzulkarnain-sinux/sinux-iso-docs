@@ -1,0 +1,9 @@
+{
+ "file": "out/05_Commercial/SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "11 butir (USULAN) menunggu ACC"
+ ]
+}
