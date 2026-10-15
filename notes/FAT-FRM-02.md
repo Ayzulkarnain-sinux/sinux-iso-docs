@@ -113,10 +113,11 @@ Zammad, GLPI, vault, PPN, dan COO tidak muncul di workbook, jadi aturan sebutan 
 | 1 | Acuan ISO 9001:2015 klausul 7.5.3 (Kontrol Dokumen!B12) | owner, diteruskan ke konsultan |
 | 2 | Acuan ISO/IEC 27001:2022 Annex A 5.3, 5.15, 5.18, 8.3 (Kontrol Dokumen!B13) | owner, diteruskan ke konsultan; Fani untuk sisi ISMS |
 | 3 | Masa simpan "berlaku sampai digantikan; versi lama minimal 10 tahun" (B14). Angka 10 tahun dari SOP Billing 8.2 untuk arsip penagihan dan bukti pajak; perluasan ke daftar akses ini adalah usulan | FAT, Legal untuk ketentuan pajak |
-| 4 | Larangan menulis kata sandi, PIN, atau token di berkas ini (Cara pakai butir 3). Tidak ada di sumber | Fani |
-| 5 | Pemilik dokumen (Finance Lead) meninjau isi berkas setiap tahun (Cara pakai butir 4). Masa tinjau YEARLY dari data baris; penunjukan pemilik sebagai peninjau adalah usulan | FAT |
+| 4 | Larangan menulis kata sandi, PIN, atau token di berkas ini (Cara pakai butir 3, kini dengan pelaku Finance Staff). Tidak ada di sumber | Fani |
+| 5 | Finance Lead (pemilik dokumen) meninjau isi berkas setiap tahun (Cara pakai butir 4, kini berlabel). Masa tinjau YEARLY dari data baris; penunjukan Finance Lead sebagai peninjau adalah usulan | FAT |
 | 6 | Mengganti header "Login Info" di Platform Access!A1 dengan "Platform", karena "Login Info" bisa terbaca sebagai tempat menyimpan data login. Tidak saya ubah (T1, suara tim) | FAT |
 | 7 | Mengganti nama sheet "Worksheet" dengan "Daftar Dokumen". Alat tidak mengganti nama sheet | FAT |
+| 8 | Finance Staff mengisi dan memperbarui kedua sheet (Cara pakai butir 1 sampai 3). Sumber tidak menyebut siapa pengisinya; Finance Staff dipilih karena menjadi penyusun di blok Pengesahan | FAT |
 
 ## Open items
 
@@ -136,7 +137,22 @@ Zammad, GLPI, vault, PPN, dan COO tidak muncul di workbook, jadi aturan sebutan 
 | 12 | Kalimat perintah kepada AI di sumber: nihil. Kalimat "Dokumen akan diperbaharui setiap tahun" adalah uraian tim untuk isi AR & AP Aging, bukan instruksi | nihil |
 | 13 | "Dipta" di Platform Access!C3 (peran Maker BCA) tidak punya nama lengkap tertulis. Dugaan: Pradipta Nugraha (JA-11, Accounting & Tax), karena Dep. FAT hanya punya dua Supporting PIC, Bila dan Pradipta (sintesis baris 680). Dugaan itu tidak ditulis di sel. Perlu konfirmasi nama lengkap dan jabatan | FAT |
 
+## Sweep
+
+Putaran sweep orkestrator, satu butir (Cara pakai tanpa pelaku; B20 tidak cocok dengan isi kolom Access Holder; B21 tanpa label USULAN). Perubahan hanya di specs/FAT-FRM-02.patch.json (empat sel) dan notes ini. Pelaku diambil dari dua peran yang sudah ada di blok Pengesahan (Finance Staff, Finance Lead); pilihan itu keputusan, jadi tiap butir berlabel (USULAN) dan dicatat di USULAN 4, 5, dan 8.
+
+| Sel | Sebelum | Sesudah |
+|---|---|---|
+| Kontrol Dokumen!B18 | "Sheet Worksheet: satu baris untuk satu dokumen keuangan." | "Finance Staff mengisi sheet Worksheet, satu baris per dokumen (USULAN)." |
+| Kontrol Dokumen!B19 | "Sheet Platform Access: satu baris untuk satu platform pajak atau bank." | "Finance Staff mengisi sheet Platform Access, satu baris per platform (USULAN)." |
+| Kontrol Dokumen!B20 | "Tulis pemegang akses dengan nama dan jabatan. Jangan tulis kata sandi, PIN, atau token (USULAN)." | "Finance Staff menulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan, tanpa kata sandi, PIN, atau token (USULAN)." |
+| Kontrol Dokumen!B21 | "Pemilik dokumen meninjau isi berkas ini setiap tahun." | "Finance Lead meninjau isi berkas ini setiap tahun (USULAN)." |
+
+Alasan B20: kolom Access Holder di sumber berisi kelompok ("HR, FAT, Management", "FAT", "FAT & Management") di Worksheet dan nama di baris bank Platform Access, jadi petunjuk "nama dan jabatan" saja tidak cocok dengan isi. Rumusan baru mengakui kedua bentuk; pemecahan kelompok menjadi nama tetap open item 3.
+
+Uji: `python3 -I tools/xlsx_patch.py /tmp/src/FAT-FRM-02.xlsx specs/FAT-FRM-02.patch.json /tmp/pen-FAT-FRM-02/out.xlsx` memberi `"pass": true`, `"fails": []` pada putaran pertama sweep (keluaran mentah /tmp/pen-FAT-FRM-02/xlsx_patch.out.txt). Teks keempat butir muat di tinggi baris donor (dilihat sebagai gambar hasil LibreOffice). Fakta, angka, nama, dan sel lain tidak diubah.
+
 ## Jawaban dua pertanyaan pemeriksaan
 
 1. Apa yang membuat teks ini terdengar buatan AI. Sesudah dibaca ulang, kalimat Tujuan versi pertama memakai pola "X: Y." dan mengulang "akses dan pemegang akses" dua kali; sudah diganti menjadi satu kalimat dengan kurung ("Mencatat akses ke data dan informasi departemen Finance (dokumen keuangan, platform pajak dan bank) beserta pemegang aksesnya.") dan patch diuji ulang. Butir Cara pakai 1 dan 2 berpola sama ("satu baris untuk satu ..."); itu pola isian form (satu baris satu objek), jadi dipertahankan. Label "(USULAN, perlu konfirmasi konsultan)" muncul dua kali karena dua sel, itu perintah baris. Kalimat tim di sheet data tidak saya sentuh selain ejaan dan nama (T1). Tidak ada em-dash atau en-dash, tebal, tanda kutip penekanan, frasa pengisi, atau penutup generik di patch.
-2. Adakah fakta, angka, nama, atau tanggal tanpa sumber. Nomor, judul, klasifikasi, revisi, status, dan tiga nama approval dari instruksi baris dan config/defaults.json. "Kana Salsabila Putri Koeswologito" dari data_conflicts (konfirmasi "selesai") dan jabatan "Finance" dari HR-JA-001 JA-10 (salinan audit); "Samuel Kristanto Utomo" dan "Direktur Utama" dari data_conflicts. "Dipta" ditulis persis seperti sumber; versi pertama menulis "Pradipta Nugraha (Accounting & Tax)", itu tafsir tanpa sumber tertulis dan sudah dicabut (open item 13). "15 Oktober 2026" adalah tanggal hari penyusunan (A4). "10 tahun" bersumber dari SOP Billing 8.2 dan SNX-FAT-SOP-04 tetapi diperluas ke daftar ini, jadi berlabel (USULAN). Nomor klausul ISO dari pengetahuan standar, berlabel USULAN dan belum dicocokkan dengan teks standar (UNMEASURED). "Finance Lead" sebagai pemilik dokumen dan peninjau tahunan adalah asumsi A1 dan USULAN 5. Kalimat B20 "Jangan tulis kata sandi, PIN, atau token" tidak di sumber, jadi berlabel (USULAN 4). Tidak ada nama, angka, atau tanggal lain.
+2. Adakah fakta, angka, nama, atau tanggal tanpa sumber. Nomor, judul, klasifikasi, revisi, status, dan tiga nama approval dari instruksi baris dan config/defaults.json. "Kana Salsabila Putri Koeswologito" dari data_conflicts (konfirmasi "selesai") dan jabatan "Finance" dari HR-JA-001 JA-10 (salinan audit); "Samuel Kristanto Utomo" dan "Direktur Utama" dari data_conflicts. "Dipta" ditulis persis seperti sumber; versi pertama menulis "Pradipta Nugraha (Accounting & Tax)", itu tafsir tanpa sumber tertulis dan sudah dicabut (open item 13). "15 Oktober 2026" adalah tanggal hari penyusunan (A4). "10 tahun" bersumber dari SOP Billing 8.2 dan SNX-FAT-SOP-04 tetapi diperluas ke daftar ini, jadi berlabel (USULAN). Nomor klausul ISO dari pengetahuan standar, berlabel USULAN dan belum dicocokkan dengan teks standar (UNMEASURED). "Finance Lead" sebagai pemilik dokumen dan peninjau tahunan adalah asumsi A1 dan USULAN 5. Kalimat Cara pakai butir 1 sampai 4 (B18 sampai B21) menunjuk pelaku Finance Staff atau Finance Lead dan larangan kata sandi, PIN, token; semuanya tidak di sumber, jadi berlabel (USULAN 4, 5, 8). Tidak ada nama, angka, atau tanggal lain.

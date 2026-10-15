@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kontrol Dokumen (seluruh workbook)",
+      "masalah": "Perubahan terbatas pada empat sel Cara pakai B18 sampai B21, sesuai satu butir instruksi. Sel lain di ketiga sheet identik dengan versi HEAD; spec cocok dengan out/ dan dengan hasil uji /tmp/pen-FAT-FRM-02/out.xlsx; uji xlsx_patch pass true, fails kosong.",
+      "bukti": "Perbandingan openpyxl git HEAD lawan berkas kerja: hanya Kontrol Dokumen B18, B19, B20, B21 yang berbeda; xlsx_patch.out.txt: {\"pass\": true, \"fails\": []}"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B18, B19, B20, B21",
+      "masalah": "Butir instruksi terpenuhi seluruhnya: keempat butir kini punya pelaku peran (Finance Staff, Finance Lead); B20 mengakui pemegang akses berupa kelompok atau nama dan jabatan, cocok dengan Worksheet!C2:C5 dan Platform Access!C2:C4; B21 berlabel (USULAN). Nihil butir yang tidak dikerjakan.",
+      "bukti": "B20 sesudah: 'Finance Staff menulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan, tanpa kata sandi, PIN, atau token (USULAN).'; Worksheet!C2 'HR, FAT, Management'; B21 sesudah: 'Finance Lead meninjau isi berkas ini setiap tahun (USULAN).'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B18, B19, B21",
+      "masalah": "Tidak ada fakta baru tanpa dasar. Finance Staff dan Finance Lead adalah peran yang sudah ada di blok Pengesahan (B36, B37) dan config/defaults.json prepared/reviewed; Finance Lead = pemilik dokumen di B10, jadi B21 setara dengan 'Pemilik dokumen' sebelumnya. Penunjukan pelaku berlabel (USULAN) dan dicatat di notes USULAN 4, 5, 8. Pola sama dipakai SNX-FAT-REG-01 ('Finance Staff menambah ...').",
+      "bukti": "config/defaults.json baris 39-40: \"prepared\": \"Finance Staff\", \"reviewed\": \"Finance Lead\"; Kontrol Dokumen!B10 'Finance Lead'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B18, B19",
+      "masalah": "Kualifikasi hilang: 'dokumen keuangan' menjadi 'dokumen', 'platform pajak atau bank' menjadi 'platform'. Spesifisitas turun sedikit, makna tidak berubah karena B15 (Tujuan) tetap menyebut dokumen keuangan, platform pajak dan bank. Pertimbangkan mengembalikan kualifikasi.",
+      "bukti": "Sebelum: 'satu baris untuk satu dokumen keuangan.' / 'satu baris untuk satu platform pajak atau bank.'; sesudah: 'satu baris per dokumen (USULAN).' / 'satu baris per platform (USULAN).'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B18 sampai B21 (bahasa §6a)",
+      "masalah": "Nihil pola baru: kalimat aktif dengan pelaku peran, tanpa benda sebagai pelaku kata kerja manusia, tanpa pasif tanpa pelaku, tanpa em-dash atau en-dash, tanpa rujukan internal AI. Empat label (USULAN) berurutan terasa padat, tetapi tiap label menandai pilihan yang memang tidak bersumber.",
+      "bukti": "Pemindaian karakter U+2013/U+2014 pada keempat nilai spec: nihil"
+    },
+    {
+      "lokasi": "notes/FAT-FRM-02.md, Jawaban dua pertanyaan pemeriksaan butir 1",
+      "masalah": "Kalimat notes basi sesudah sweep: masih menyebut butir Cara pakai 1 dan 2 berpola 'satu baris untuk satu ...' dan dipertahankan, padahal rumusan itu sudah diganti. Bukan isi dokumen; perbarui notes bila notes dipakai sebagai rekam jejak.",
+      "bukti": "notes: 'Butir Cara pakai 1 dan 2 berpola sama (\"satu baris untuk satu ...\"); itu pola isian form (satu baris satu objek), jadi dipertahankan.'"
+    }
+  ]
+}

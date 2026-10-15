@@ -2068,13 +2068,14 @@
    "loops": 1,
    "usulan_count": 32,
    "open_items": [
-    "Sweep (b): butir 4.5 Approver menetapkan PUBLIC bertentangan dengan SNX-ISMS-PRO-01 butir 4.2 (penurunan klasifikasi hanya oleh Pemilik informasi)"
+    "Sweep (b): butir 4.5 Approver menetapkan PUBLIC bertentangan dengan SNX-ISMS-PRO-01 butir 4.2 (penurunan klasifikasi hanya oleh Pemilik informasi)",
+    "Residu mutu (sweep nonblocking): penurunan klasifikasi dicatat di bukti persetujuan, sedangkan SNX-ISMS-PRO-01 mencatatnya di SNX-ISMS-REG-01"
    ],
-   "updated_at": "2026-10-15T01:06:48Z",
+   "updated_at": "2026-10-15T01:06:52Z",
    "pen_agent": "a6278839497527284",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 65,
@@ -2425,7 +2426,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-FAT-FRM-02",
    "out_path": "out/03_FAT/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2442,7 +2443,7 @@
    "open_items": [
     "Sweep (b): butir Cara pakai tanpa pelaku; B20 tidak cocok dengan isi kolom Access Holder; B21 tanpa label USULAN"
    ],
-   "updated_at": "2026-10-15T01:05:21Z",
+   "updated_at": "2026-10-15T01:06:57Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "adee81774ba4f9731",
