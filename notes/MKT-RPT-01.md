@@ -108,7 +108,7 @@ ISO 9001:2015 8.2.1 (komunikasi dengan pelanggan) dan 9.1.2 (kepuasan pelanggan)
 |---|---|---|---|
 | U1 | Pembukuan biaya pemasaran dikecualikan; laporan hanya memuat Budget dan Realisasi Biaya | Ruang Lingkup | FAT |
 | U2 | Prioritas Penjualan = sales plan VP Commercial | Definisi | Owner |
-| U3 | Daftar nilai Status Pelaksanaan (sama dengan kolom Status di SNX-MKT-REG-02), Status Capaian, Status pada Catatan Tindak Lanjut, dan Hasil Pemeriksaan beserta artinya | Bagian 3, Nilai pada Kolom Status dan Hasil | Owner |
+| U3 | Daftar nilai Status Pelaksanaan (sama dengan kolom Status di SNX-MKT-REG-02), Status Capaian, Status pada Catatan Tindak Lanjut, dan Hasil Pemeriksaan beserta artinya | Bagian 3, Nilai pada Kolom Status dan Hasil | Owner ; diubah W9: ditambah arti belum Selesai dan Dibatalkan terpisah (A8) |
 | U4 | Panjang Periode Rencana belum ditetapkan; Brand & Marketing memilihnya per rencana | Butir 4.1 | Owner |
 | U5 | Marketing Plan diisi sebelum Aktivitas pertama dijalankan | Butir 4.2 | Owner |
 | U6 | Rujukan Prioritas Penjualan ditulis di tiap Marketing Objective | Butir 4.3, tabel A2 | Owner |
@@ -124,13 +124,13 @@ ISO 9001:2015 8.2.1 (komunikasi dengan pelanggan) dan 9.1.2 (kepuasan pelanggan)
 | U16 | Lokasi rekaman (folder Google Drive departemen Marketing), pencatat Brand & Marketing, pemilik VP Commercial, bukti disimpan bersama | Rekaman | Owner |
 | U17 | Jangka retensi laporan terisi dan bukti | Rekaman | Legal |
 | U18 | Enam klausul ISO 9001:2015 dan ISO/IEC 27001:2022 | Acuan Klausul ISO | Owner; konsultan menilai |
-| U19 | SNX-MKT-REG-03 sebagai tempat Realisasi KPI lead dibaca | Dokumen Terkait | Owner |
-| U21 | Batas dengan SNX-MKT-REG-02: laporan ini memuat rencana Aktivitas dan jadwal; REG-02 mencatat pelaksanaan nyata tiap campaign dan Aktivitas; tabel B2 merujuk catatan REG-02 lewat kolom Rujukan Catatan (nomor baris Tabel 1) dan Status Pelaksanaan sama dengan kolom Status Tabel 2 | Ruang Lingkup, butir 4.8, tabel B2, Dokumen Terkait | Owner |
-| U22 | Validasi klaim produk dan layanan berada di SNX-MKT-REG-01 (Description baris 58 memuat validasi klaim, sedangkan judul baris 58 adalah Campaign & Activity Register) | Ruang Lingkup, Dokumen Terkait | Owner |
-| U23 | Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (campaign, atau kegiatan di luar campaign seperti event atau webinar) | Definisi | Owner |
+| U19 | SNX-MKT-REG-03 sebagai tempat Realisasi KPI lead dibaca | Dokumen Terkait | Owner ; ditutup W9: label USULAN pada REG-03 dihapus, batas dokumen sudah diputus (A8) |
+| U21 | Batas dengan SNX-MKT-REG-02: laporan ini memuat rencana Aktivitas dan jadwal; REG-02 mencatat pelaksanaan nyata tiap campaign dan Aktivitas; tabel B2 merujuk catatan REG-02 lewat kolom Rujukan Catatan (nomor baris Tabel 1) dan Status Pelaksanaan sama dengan kolom Status Tabel 2 | Ruang Lingkup, butir 4.8, tabel B2, Dokumen Terkait | Owner ; diubah W9: batas diputus owner (A8); REG-02 mencatat pelaksanaan tiap Aktivitas tanpa kata "nyata", label dihapus |
+| U22 | Validasi klaim produk dan layanan berada di SNX-MKT-REG-01 (Description baris 58 memuat validasi klaim, sedangkan judul baris 58 adalah Campaign & Activity Register) | Ruang Lingkup, Dokumen Terkait | Owner ; ditutup W9: REG-01 menjadi satu-satunya register materi, konten, dan persetujuan klaim (A8); temuan baris 58 pindah ke open item 14 |
+| U23 | Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (campaign, atau kegiatan di luar campaign seperti event atau webinar) | Definisi | Owner ; ditutup W9: label dihapus, arti Aktivitas sama dengan REG-02 (A8); definisi Channel diseragamkan R2 |
 | U20 | Nama penanda tangan Prepared By dan Reviewed By, dan process_owner "VP Commercial" (status USULAN di config/defaults.json) | Blok Identity dan Approval | Owner; Samuel untuk Approved By |
 
-Jumlah USULAN: 23 butir. Teks dokumen memuat 32 label "(USULAN)" karena beberapa butir diberi label di lebih dari satu kalimat, ditambah satu label "(USULAN, perlu konfirmasi konsultan)" di bagian Acuan Klausul ISO; lint menghitung 32. Tidak ada angka bisnis tanpa sumber di dokumen.
+Jumlah USULAN: 23 butir (diubah W9: butir U19, U22, U23 ditutup dan label USULAN pada U21 dihapus; hitungan lint sesudah W9 = 27, bukan 32). Teks dokumen memuat 32 label "(USULAN)" karena beberapa butir diberi label di lebih dari satu kalimat, ditambah satu label "(USULAN, perlu konfirmasi konsultan)" di bagian Acuan Klausul ISO; lint menghitung 32. Tidak ada angka bisnis tanpa sumber di dokumen.
 
 ## Open items
 
@@ -239,3 +239,11 @@ Open item yang ditutup atau diubah W9: lihat kolom Pemutus pada tabel Open items
 | 16 | A3: dokumen ini menyebut JA-03 dan JA-04 hanya sebagai rujukan uraian jabatan (VP Commercial JA-03), tanpa atasan atau garis lapor; tidak ada yang diselaraskan dan tidak ada label menunggu konfirmasi pada garis itu | - |
 
 Uji (spec W9): render, `lint_doc.py ... generic`: pass true, fails kosong, 27 butir USULAN; `validate.py`: All validations PASSED; `blankscan.py`: ok 16 halaman []; `w9diff.py MKT-RPT-01`: diff teks hanya baris di tabel di atas (flag tabel tidak tampak di teks).
+
+### ISO-W9 R2
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| R2 butir 2, definisi Channel | "Tempat sebuah Aktivitas menampilkan atau membagikan materi kepada pihak di luar SINUX, ..." | "Tempat materi Aktivitas ditampilkan atau dibagikan Brand & Marketing kepada pihak di luar SINUX, ..."; identik dengan SNX-MKT-REG-02 |
+
+Hygiene R2 butir 4: baris Open items dan USULAN yang ditutup atau diubah W9 kini memuat "ditutup W9" atau "diubah W9" di barisnya sendiri (U3, U19, U21, U22, U23; open item 1, 10, 11 sudah). Hitungan label di paragraf Jumlah USULAN dikoreksi.
