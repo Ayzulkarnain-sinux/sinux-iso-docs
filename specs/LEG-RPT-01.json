@@ -107,7 +107,7 @@
             "rows": [
               [
                 "Penilaian risiko hukum dan metodenya",
-                "Dicatat di SNX-LEG-REG-02. Laporan ini hanya memuat Tingkat Risiko tiap temuan."
+                "Dicatat di SNX-LEG-REG-02. Laporan ini hanya memuat Kategori Risiko tiap temuan."
               ],
               [
                 "Evaluasi tingkat kepatuhan SINUX secara keseluruhan",
@@ -199,7 +199,7 @@
           }
         },
         {
-          "h2": "Nilai Status dan Tingkat Risiko"
+          "h2": "Nilai Status dan Kategori Risiko"
         },
         {
           "p": "Kolom Status pada Daftar Periksa Pemantauan diisi satu dari lima nilai berikut."
@@ -268,7 +268,7 @@
           }
         },
         {
-          "p": "Kolom Tingkat Risiko diisi satu kategori: Rendah, Sedang, Tinggi, atau Sangat Tinggi. Nilai dan ambang tiap kategori ada di SNX-LEG-REG-02 (USULAN)."
+          "p": "Kolom Kategori Risiko diisi satu dari Rendah, Sedang, Tinggi, atau Sangat Tinggi. Nilai dan ambang tiap kategori ada di SNX-LEG-REG-02 (USULAN)."
         }
       ]
     },
@@ -335,7 +335,7 @@
           "p": "7. Staff Legal membahas Tindakan Perbaikan dengan Unit Kerja yang Dipantau. Penanggung Jawab dan Target Penyelesaian ditulis sesuai kesepakatan kedua pihak. Bila tidak ada kesepakatan, Line Manager Legal memutuskan (USULAN)."
         },
         {
-          "p": "8. Staff Legal mencatat Tingkat Risiko tiap temuan. Line Manager Legal meninjau Tingkat Risiko itu saat memeriksa laporan (USULAN, selaras dengan SNX-LEG-SOP-02 butir 4.11)."
+          "p": "8. Staff Legal mencatat Kategori Risiko tiap temuan. Line Manager Legal meninjau Kategori Risiko itu saat memeriksa laporan (USULAN, selaras dengan SNX-LEG-SOP-02 butir 4.11)."
         },
         {
           "p": "9. Staff Legal menyalin Nomor Temuan, Tindakan Perbaikan, Penanggung Jawab, Target Penyelesaian, Bukti Penyelesaian, dan Status Tindak Lanjut dari Catatan Temuan ke tabel Rencana Tindakan Perbaikan. Bila isinya berbeda, Catatan Temuan yang berlaku (USULAN)."
@@ -363,11 +363,11 @@
             "rows": [
               [
                 "Staff Legal",
-                "Pelaksana Pemantauan (USULAN). Mengisi laporan, memantau aspek, mencatat status, temuan, dan hasil verifikasi, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 10 dan 12). Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pelaksana Pemantauan (USULAN). Mengisi laporan, memantau aspek, mencatat status, temuan, dan hasil verifikasi, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 10 dan 12). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Line Manager Legal",
-                "Pemilik dokumen (USULAN). Memutuskan Tindakan Perbaikan bila tidak ada kesepakatan, meninjau Tingkat Risiko, menetapkan penutupan temuan, dan memeriksa laporan terisi (Ketentuan butir 7, 8, 10, dan 11). Dipetakan ke Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pemilik dokumen (USULAN). Memutuskan Tindakan Perbaikan bila tidak ada kesepakatan, meninjau Kategori Risiko, menetapkan penutupan temuan, dan memeriksa laporan terisi (Ketentuan butir 7, 8, 10, dan 11). Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Unit Kerja yang Dipantau",
@@ -412,7 +412,7 @@
           "p": "5. Catatan Temuan diisi satu tabel per temuan. Staff Legal menyalin tabel kosong untuk temuan berikutnya. Nomor Temuan berupa nomor urut dalam satu laporan, dimulai dari 1 (USULAN). Kolom Aspek Kepatuhan memuat kode dan nama aspek."
         },
         {
-          "p": "6. Kolom Tingkat Risiko memuat satu kategori pada bagian Istilah. Kolom Penanggung Jawab memuat nama dan jabatan. Kolom Status Tindak Lanjut memuat satu dari tiga nilai pada bagian Istilah (USULAN). Kolom Hasil Verifikasi memuat hasil pemeriksaan Staff Legal atas Bukti Penyelesaian."
+          "p": "6. Kolom Kategori Risiko memuat satu kategori pada bagian Istilah. Kolom Penanggung Jawab memuat nama dan jabatan. Kolom Status Tindak Lanjut memuat satu dari tiga nilai pada bagian Istilah (USULAN). Kolom Hasil Verifikasi memuat hasil pemeriksaan Staff Legal atas Bukti Penyelesaian."
         },
         {
           "p": "7. Rencana Tindakan Perbaikan diisi satu baris per Tindakan Perbaikan (Ketentuan butir 9)."
@@ -624,7 +624,7 @@
                 ""
               ],
               [
-                "Tingkat Risiko",
+                "Kategori Risiko",
                 ""
               ],
               [
@@ -875,7 +875,7 @@
               ],
               [
                 "SNX-LEG-SOP-02",
-                "Contract Review & Legal Approval. Prosedur penelaahan kontrak satu per satu, dikecualikan dari laporan ini. Memuat acuan peninjauan Tingkat Risiko oleh Line Manager Legal (butir 4.11, USULAN)."
+                "Contract Review & Legal Approval. Prosedur penelaahan kontrak satu per satu, dikecualikan dari laporan ini. Memuat acuan peninjauan Kategori Risiko oleh Line Manager Legal (butir 4.11, USULAN)."
               ],
               [
                 "SNX-LEG-SOP-03",
@@ -899,7 +899,7 @@
               ],
               [
                 "SNX-LEG-REG-02",
-                "Legal Risk Register. Tempat penilaian risiko hukum dan sumber kategori Tingkat Risiko (USULAN)."
+                "Legal Risk Register. Tempat penilaian risiko hukum dan sumber Kategori Risiko (USULAN)."
               ],
               [
                 "SNX-LEG-REG-03",
@@ -915,7 +915,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal."
+                "Struktur Organisasi SINUX. Memuat jabatan Legal & Compliance (JA-08 dan JA-09), dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)."
               ]
             ],
             "widths_cm": [

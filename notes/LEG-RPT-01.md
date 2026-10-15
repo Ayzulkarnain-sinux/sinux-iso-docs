@@ -4,7 +4,7 @@ Status: DRAFTED. Spec: specs/LEG-RPT-01.json. Mode generic (doc_type_cover "REPO
 
 Uji terakhir:
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-RPT-01.json /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx` berhasil.
-- `python3 -I tools/lint_doc.py /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "30 butir (USULAN) menunggu ACC".
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "31 butir (USULAN) menunggu ACC" (hasil sesudah sweep; sebelum sweep 30).
 - Pratinjau PDF lewat soffice, 14 halaman: sampul, Identity, Revision, Approval, TOC, sembilan bagian. Tabel 7 kolom (Daftar Periksa Pemantauan, Rencana Tindakan Perbaikan) dilihat pada resolusi 70 dpi dan lebar kolom disetel sampai judul kolom tidak patah, kecuali "Vendor/Pemasok" pada sel M4 yang patah satu kali (kosmetik).
 - Pemeriksaan tambahan atas spec: nol em-dash dan en-dash, nol "COO" (tidak dibutuhkan di badan dokumen), "Samuel" hanya di blok Approval, "Direktur Utama" satu kali (Kesimpulan), tiap kode SNX yang dirujuk di badan ada di bagian Dokumen Terkait, nol frasa yang dilarang pada daftar mutu bahasa.
 
@@ -102,7 +102,7 @@ Kalimat bernada perintah di sumber: ada dua, keduanya petunjuk isi formulir untu
 
 ## USULAN
 
-Dokumen memuat 30 kemunculan label "(USULAN)" ditambah satu label "(USULAN, perlu konfirmasi konsultan)" di bagian Acuan ISO. Jumlah keputusan yang berbeda ada 21.
+Dokumen memuat 31 kemunculan label "(USULAN)" ditambah satu label "(USULAN, perlu konfirmasi konsultan)" di bagian Acuan ISO. Jumlah keputusan yang berbeda ada 21.
 
 | # | Butir USULAN | Pemutus yang disarankan |
 |---|---|---|
@@ -112,11 +112,11 @@ Dokumen memuat 30 kemunculan label "(USULAN)" ditambah satu label "(USULAN, perl
 | 4 | Frekuensi laporan satu per triwulan, selaras dengan memo kepatuhan triwulanan di SNX-LEG-SOP-01 prosedur 6.7. Angka triwulan dari sumber lain, diperluas ke laporan ini | Legal |
 | 5 | Lima butir pengecualian lingkup (penilaian risiko hukum ke SNX-LEG-REG-02, evaluasi tingkat kepatuhan ke SNX-LEG-RPT-02, penelaahan kontrak ke SNX-LEG-SOP-02, FRM-01, FRM-02, tinjauan data pribadi ke SNX-LEG-FRM-03, keputusan bisnis ke pihak berwenang) | Legal |
 | 6 | Tiga nilai Status Tindak Lanjut (Terbuka, Menunggu Verifikasi, Ditutup) beserta artinya | Legal |
-| 7 | Kategori Tingkat Risiko Rendah, Sedang, Tinggi, Sangat Tinggi, dengan nilai dan ambang di SNX-LEG-REG-02 | Legal |
+| 7 | Kolom Kategori Risiko berisi Rendah, Sedang, Tinggi, Sangat Tinggi, dengan nilai dan ambang di SNX-LEG-REG-02 | Legal |
 | 8 | Aspek Belum Diverifikasi tidak dicatat sebagai temuan; bukti dilengkapi menurut Rekomendasi butir 2 (Ketentuan butir 5) | Legal |
 | 9 | Aspek Tidak Sesuai atau Sebagian Sesuai menghasilkan sekurang-kurangnya satu temuan (Ketentuan butir 6) | Legal |
 | 10 | Bila Staff Legal dan Unit Kerja yang Dipantau tidak sepakat soal Tindakan Perbaikan, Line Manager Legal memutuskan (Ketentuan butir 7) | Legal |
-| 11 | Line Manager Legal meninjau Tingkat Risiko, selaras dengan SNX-LEG-SOP-02 butir 4.11 (Ketentuan butir 8). Butir 4.11 berlaku untuk kontrak, diperluas ke laporan ini | Legal |
+| 11 | Line Manager Legal meninjau Kategori Risiko, selaras dengan SNX-LEG-SOP-02 butir 4.11 (Ketentuan butir 8). Butir 4.11 berlaku untuk kontrak, diperluas ke laporan ini | Legal |
 | 12 | Kolom di tabel rencana disalin dari Catatan Temuan, dan Catatan Temuan berlaku bila berbeda (Ketentuan butir 9) | Legal |
 | 13 | Penutupan temuan: Staff Legal mencatat Hasil Verifikasi, Line Manager Legal menetapkan penutupan, Staff Legal mengisi status Ditutup dan tanggalnya (Ketentuan butir 10) | Legal |
 | 14 | Nomor Temuan berupa nomor urut dalam satu laporan (Petunjuk butir 5) | Legal |
@@ -144,7 +144,7 @@ Dokumen memuat 30 kemunculan label "(USULAN)" ditambah satu label "(USULAN, perl
 |---|---|---|
 | 1 | Penyetuju Laporan per periode belum ditetapkan; sumber hanya punya baris "Disetujui oleh" tanpa jabatan. Dokumen menulis "jabatan pemegang peran ini belum ditetapkan" | Samuel |
 | 2 | Batas LEG-RPT-01 dan LEG-RPT-02: Ringkasan Hasil Pemantauan menghitung jumlah aspek Sesuai dan temuan, yang dekat dengan "evaluasi tingkat kepatuhan" di checklist baris 36. Pengecualian lingkup butir 2 menarik batasnya, tetapi belum diputus | Legal |
-| 3 | Konsistensi skala Tingkat Risiko dengan SNX-LEG-REG-02: Legal Risk Register sumbernya memakai empat kategori (skor 1 sampai 25), sedangkan SNX-LEG-SOP-01 butir 4.17 sampai 4.19 dan SNX-LEG-SOP-02 butir 4.8 sampai 4.10 memakai tiga (Tinggi, Sedang, Rendah). Spec LEG-REG-02 belum ada saat dokumen ini disusun; cek silang saat LEG-REG-02 berstatus DRAFTED | Legal |
+| 3 | Konsistensi skala Kategori Risiko dengan SNX-LEG-REG-02: Legal Risk Register sumbernya memakai empat kategori (skor 1 sampai 25), sedangkan SNX-LEG-SOP-01 butir 4.17 sampai 4.19 dan SNX-LEG-SOP-02 butir 4.8 sampai 4.10 memakai tiga (Tinggi, Sedang, Rendah). Spec LEG-REG-02 belum ada saat dokumen ini disusun; cek silang saat LEG-REG-02 berstatus DRAFTED | Legal |
 | 4 | Frekuensi laporan dan penetapan periode: sumber hanya punya placeholder "[Periode]". Usulan triwulan (USULAN 4) | Legal |
 | 5 | Penomoran laporan per periode dan nomor temuan: sumber menulis "Temuan Nomor : [Nomor Dokumen]" tanpa aturan. Usulan nomor urut per laporan (USULAN 14) | Legal |
 | 6 | Pemetaan peran Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 masih menunggu konfirmasi (K-13 di SNX-HR-ORG-01). Bila peta berubah, bagian Peran ikut berubah | owner |
@@ -168,7 +168,7 @@ Temuan pada draf pertama, semuanya sudah diperbaiki di spec akhir:
 
 Sisa yang disengaja:
 - Pembuka kalimat "Staff Legal mencatat ...", "Staff Legal mengisi ..." berulang di Ketentuan dan Petunjuk. Dibiarkan karena aturan satu langkah satu pelaku lebih penting daripada variasi.
-- Label "(USULAN)" muncul 30 kali. Dibiarkan karena aturan label per butir berlaku.
+- Label "(USULAN)" muncul 31 kali. Dibiarkan karena aturan label per butir berlaku.
 - Tidak ada kelompok tiga yang dipaksakan: daftar tiga atau lebih di teks (misalnya nama bukti, lokasi, pemilik) mengikuti isi sumber atau isi kolom, bukan pola retorika. Tidak ada penutup positif, em-dash, penekanan tebal atau huruf kapital, atau atribusi kabur (dicek dengan grep daftar frasa terlarang prompt: nol temuan).
 
 Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
@@ -182,6 +182,23 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | Rujukan butir 4.5, 4.24, prosedur 6.7 (SNX-LEG-SOP-01), butir 4.11 (SNX-LEG-SOP-02), Kategori 4 dan 6 (SNX-LEG-SOP-03) | Dicek terhadap specs/ di repo; bisa basi bila spec itu berubah (open item 3 dan 7) |
 | JA-08, JA-09, K-13 | specs/HR-ORG-01.json (Daftar Jabatan dan Butir Menunggu Konfirmasi) |
 | Nilai status pemantauan, nama kolom, rekomendasi | Sumber, dengan perbaikan istilah (bagian 4) |
-| Status Tindak Lanjut, kategori Tingkat Risiko, nomor temuan, aturan salin dan penutupan | USULAN berlabel (bagian 5) |
+| Status Tindak Lanjut, Kategori Risiko, nomor temuan, aturan salin dan penutupan | USULAN berlabel (bagian 5) |
 | Klausul ISO | USULAN dengan label konsultan (bagian 5, USULAN 21). Judul 7.5.3 (ISO 9001:2015) serta Annex A 5.31 dan 5.34 mengikuti spec Legal lain (LEG-FRM-01, LEG-SOP-01); judul 10.2, 9.1, dan Annex A 5.36 berasal dari pengetahuan umum penyusun tanpa berkas di repo. Seluruhnya perlu konfirmasi konsultan |
 | Tanggal, angka lain, nama orang selain Samuel Kristanto Utomo di blok Approval | Nol; sel tanggal dan data faktual dibiarkan kosong |
+
+## Sweep
+
+Putaran sweep 15 Okt 2026 atas dua butir dari orkestrator. Bagian lain spec tidak diubah. Bagian 1 sampai 8 di atas memakai nama kolom lama "Tingkat Risiko" hanya pada kutipan sumber (fakta 8, cacat 13); butir USULAN 7 dan 11, open item 3, dan tabel jawaban pertanyaan 2 sudah disesuaikan ke "Kategori Risiko".
+
+| # | Butir | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Nama kolom risiko mengikuti SNX-LEG-REG-02 (skala sama: Rendah, Sedang, Tinggi, Sangat Tinggi; REG-02 mendefinisikan "Tingkat risiko" sebagai Nilai Risiko beserta Kategori Risiko-nya, sedangkan laporan ini hanya mencatat kategorinya) | Kolom "Tingkat Risiko" di Catatan Temuan; judul bagian 2.2 "Nilai Status dan Tingkat Risiko"; Istilah: "Kolom Tingkat Risiko diisi satu kategori: Rendah, Sedang, Tinggi, atau Sangat Tinggi."; Ketentuan butir 8, Petunjuk butir 6, baris Line Manager Legal di Peran, pengecualian lingkup baris 1, dan dua baris Dokumen Terkait memakai "Tingkat Risiko" | Semua kemunculan menjadi "Kategori Risiko". Istilah: "Kolom Kategori Risiko diisi satu dari Rendah, Sedang, Tinggi, atau Sangat Tinggi. Nilai dan ambang tiap kategori ada di SNX-LEG-REG-02 (USULAN)." Dokumen Terkait REG-02: "sumber Kategori Risiko". Nol sisa "Tingkat Risiko" di spec |
+| 2 | Line Manager Legal dan Staff Legal sebagai nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN) | Peran, Staff Legal: "Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."; Line Manager Legal: sama dengan JA-08; Dokumen Terkait SNX-HR-ORG-01: "Sumber nama jabatan Line Manager Legal dan Staff Legal." | Peran: "Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." dan versi JA-08 untuk Line Manager Legal (pola kalimat sama dengan SNX-LEG-REG-02). Dokumen Terkait SNX-HR-ORG-01: "Memuat jabatan Legal & Compliance (JA-08 dan JA-09), dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)." Label (USULAN) bertambah satu, dari 30 menjadi 31 |
+
+Pemeriksaan pemilik rekaman terhadap SNX-LEG-SOP-03 (tidak ada perubahan): tabel Rekaman SOP-03 menulis pemilik Line Manager Legal untuk semua rekaman, Staff Legal mencatat dan menyimpan (butir 4.1 dan 4.8), dan folder Google Drive departemen Legal sebagai repositori (butir 4.8). Bagian Rekaman dokumen ini menulis pencatat Staff Legal dan pemilik Line Manager Legal di folder yang sama, sehingga sama dengan SOP-03. Retensi tetap "belum ditetapkan" dengan pilihan Kategori 4 atau Kategori 6 di SOP-03 (open item 7). Rujukan folder di dokumen ini tetap SNX-LEG-SOP-01 butir 4.24, yang menunjuk folder yang sama dengan SOP-03 butir 4.8.
+
+Uji sesudah sweep (semua lulus):
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-RPT-01.json /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx` berhasil.
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx generic`: "pass": true, "fails": [], satu warn "31 butir (USULAN) menunggu ACC".
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx`: "All validations PASSED!".
+- `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx`: "ok 14 LEG-RPT-01.docx []".

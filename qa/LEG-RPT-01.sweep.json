@@ -1,0 +1,41 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Seluruh diff (13 hunk teks, 12 hunk spec)",
+      "masalah": "Informasi. Semua perubahan masuk butir 1 (Tingkat Risiko menjadi Kategori Risiko, 11 hunk) atau butir 2 (Peran Staff Legal dan Line Manager Legal, Dokumen Terkait SNX-HR-ORG-01). Tidak ada perubahan pada simpul diagram, struktur, angka, atau nama. Kedua butir dikerjakan.",
+      "bukti": "Spec diff hanya menyentuh baris 110, 202, 271, 338, 366, 370, 415, 627, 878, 902, 918. grep 'Tingkat Risiko' di specs/LEG-RPT-01.json = 0; docx uji memuat 'Kategori Risiko' 10 kali, 'Tingkat Risiko' 0 kali."
+    },
+    {
+      "lokasi": "Butir 1, dasar penggantian nama kolom",
+      "masalah": "Informasi. Nama baru punya dasar di SNX-LEG-REG-02 dengan skala yang sama, jadi bukan fakta baru. Makna kalimat Istilah tetap ('diisi satu kategori:' menjadi 'diisi satu dari').",
+      "bukti": "specs/LEG-REG-02.json: header 'Kategori Risiko' dengan isi 'Rendah, Sedang, Tinggi, atau Sangat Tinggi. Batas nilainya ada di Metode Penilaian.'; Istilah REG-02 'Tingkat risiko | Nilai Risiko beserta Kategori Risiko-nya.'"
+    },
+    {
+      "lokasi": "Butir 2, Peran Staff Legal (JA-09) dan Line Manager Legal (JA-08); Dokumen Terkait SNX-HR-ORG-01",
+      "masalah": "Informasi. Pemetaan berlabel USULAN dan punya dasar di specs/. Kalimat lama 'Sumber nama jabatan Line Manager Legal dan Staff Legal' salah karena HR-ORG-01 tidak memuat jabatan dengan nama itu; kalimat baru memperbaikinya.",
+      "bukti": "specs/HR-ORG-01.json: 'JA-08 | Legal & Compliance', 'JA-09 | Legal & Compliance', dan 'Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08'. Baru: 'Memuat jabatan Legal & Compliance (JA-08 dan JA-09), dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN).'"
+    },
+    {
+      "lokasi": "Butir 2, pemilik rekaman terhadap SNX-LEG-SOP-03",
+      "masalah": "Informasi. Pemilik rekaman sudah selaras, jadi tidak ada perubahan. Alasannya ditulis di notes bagian Sweep sesuai instruksi.",
+      "bukti": "SOP-03 butir 4.26: 'Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya.' RPT-01 Rekaman: 'Pencatat Staff Legal, pemilik Line Manager Legal (USULAN).'"
+    },
+    {
+      "lokasi": "Peran, baris Staff Legal dan Line Manager Legal",
+      "masalah": "Gaya. Kalimat baru berupa frasa tanpa predikat utama dan tetap pasif tanpa pelaku ('Nama peran di dokumen ini, dipetakan ke ...'). Pola ini bukan baru: kalimat lama juga pasif ('Dipetakan ke ...') dan pola yang sama dipakai SNX-LEG-REG-02. Rumusan yang lebih rapi, sejajar dengan SNX-LEG-SOP-03: 'Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01 ...'.",
+      "bukti": "'Nama peran di dokumen ini, dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).'; SOP-03: 'Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).'"
+    },
+    {
+      "lokasi": "Pola terlarang di teks baru",
+      "masalah": "Informasi. Teks baru tidak memuat em-dash, rujukan internal AI, atau frasa proses penyusunan. Sweep ini tidak meminta penghapusan frasa proses. Kode K-13 tetap ada; temuan verifikasi sebelumnya sudah mencatatnya dan kode ini berada di luar cakupan sweep.",
+      "bukti": "grep em-dash = 0; grep 'claude|SKILL_|DOCTRINE|DEC-|HANDOVER|staging|kb_anchor|relay_|query_kb|altair' = 0 di specs/LEG-RPT-01.json."
+    },
+    {
+      "lokasi": "Uji",
+      "masalah": "Informasi. Uji lint diulang pemeriksa atas /tmp/pen-LEG-RPT-01/LEG-RPT-01.docx, dan teks docx itu cocok dengan spec akhir. Hasil validate.py dan blankscan tidak diulang karena pemeriksa hanya boleh menulis berkas ini. Kedua hasil itu diambil dari notes.",
+      "bukti": "lint_doc.py generic: pass True, fails [], warn '31 butir (USULAN) menunggu ACC'. Notes: 'All validations PASSED!', 'ok 14 LEG-RPT-01.docx []'."
+    }
+  ]
+}
