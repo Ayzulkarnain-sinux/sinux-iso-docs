@@ -91,7 +91,7 @@ Peran dari specs/HR-ORG-01.json: Finance Lead dan Finance Staff dipakai apa adan
 3. Kolom, nilai Status, lima baris awal per tabel, dan Tabel 4 (tinjauan bulanan) adalah rancangan struktur. Checklist tidak merinci kolom. Tabel 4 dibuat karena evaluasi bulanan (butir 12) perlu tempat rekaman.
 4. Pola pencatat (Finance Staff) dan penetap (Finance Lead) diambil dari pola log ketidaksesuaian di SNX-FAT-SOP-01 butir 4.14. Penerapan ke dokumen ini diberi label (USULAN).
 5. Tabel 3 hanya diisi bila Tabel 2 berisi Ya. Penetapan Ya atau Tidak oleh Finance Lead, dengan contoh persyaratan yang sudah tertulis (batas waktu tahap pajak di SNX-FAT-SOP-05 bagian 8 dan TOP standar di SNX-FAT-SOP-01 butir 4.8). Tahap non-pajak tidak punya batas waktu tertulis, sehingga penetapan bergantung pada persyaratan kontrak atau peraturan.
-6. SNX-FAT-SOP-06 dipakai untuk SOP Accounting and Financial Report karena nomor itu sudah ada di config/worklist.json (wave W7b, QUEUED); berkas tim di Drive belum bernomor. Dua SOP lain (AR dan Payment) belum bernomor di worklist dan ditulis "belum bernomor, dalam peninjauan" mengikuti pola SNX-FAT-SOP-01.
+6. SNX-FAT-SOP-06 dipakai untuk SOP Accounting and Financial Report karena nomor itu ada di config/worklist.json dan kini DONE di ledger.json (wave W7b); tanpa keterangan status (sweep, butir 1). Dua SOP lain (AR dan Payment) masih HOLD tanpa nomor di ledger dan checklist menandainya on review, sehingga ditulis "belum bernomor, dalam peninjauan" mengikuti pola SNX-FAT-SOP-01.
 7. Definisi Istilah (Bottleneck, Support, Ketidaksesuaian, Tindakan korektif, Verifikasi efektivitas) adalah rumusan penyusun, bukan kutipan sumber; Ketidaksesuaian dan Tindakan korektif mengikuti pengertian umum ISO, ditulis dari ingatan.
 8. Tidak ada diagram: dokumen berbentuk log, urutan langkah sudah di Ketentuan butir 1 sampai 12.
 9. Daftar pemutus di bawah memakai peran dari daftar yang diizinkan prompt (owner, Samuel, Aziz, FAT, Legal, Fani). Pemetaan peran ke orang menurut data_conflicts adalah keputusan owner.
@@ -124,7 +124,7 @@ Hitungan: 11 butir. Di dokumen ada 15 label "(USULAN)" (satu di antaranya baris 
 | 4 | Persetujuan dan verifikasi bertumpu pada satu Finance Lead tanpa pengganti (catatan audit Billing butir 11). Ini calon bottleneck; dokumen tidak menulis kontrol pengganti karena sumber diam | FAT |
 | 5 | Batas waktu permintaan support sampai support diterima tidak ada di sumber; dokumen tidak mengisinya | FAT |
 | 6 | Batas lingkup generalist untuk GLPI belum dirinci owner (defaults.json ticketing) | owner |
-| 7 | Tiga proses masih dalam peninjauan di Drive (AR & Collection, Payment and Disbursement Approval, Accounting and Financial Report). Daftar enam proses dan nomor SNX-FAT-SOP-06 perlu disesuaikan bila tim menerbitkan nomor atau nama lain | FAT |
+| 7 | Dua proses masih dalam peninjauan di Drive dan belum bernomor (AR & Collection, Payment and Disbursement Approval). Daftar enam proses dan keterangan keduanya perlu disesuaikan bila tim menerbitkan nomor atau nama lain | FAT |
 | 8 | Nomor dan nama klausul ISO belum dicocokkan dengan teks standar | owner (meneruskan ke konsultan) |
 | 9 | Kolom, nilai Status, dan jumlah baris awal adalah rancangan; FAT dapat mengubahnya sebelum pengesahan | FAT |
 | 10 | Wewenang menutup catatan oleh Finance Lead berada di bawah delegasi tertulis yang berlaku, yang isinya belum ada di HR-ORG-01 selain kalimat umum | Samuel |
@@ -148,7 +148,7 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 |---|---|
 | Kriteria log sheet, proses FAT, bottleneck, support | Sumber: checklist live, dibuka hari ini |
 | Enam proses FAT | Sumber: checklist baris 23 sampai 28 |
-| SNX-FAT-SOP-06 | Sumber: config/worklist.json; berkas tim di Drive belum bernomor (asumsi 6, open item 7) |
+| SNX-FAT-SOP-06 | Sumber: config/worklist.json dan ledger.json (DONE, W7b) (asumsi 6) |
 | "1 hari" per tahap pajak | Sumber: SOP Tax lewat SNX-FAT-SOP-05; kutipan dari catatan FAT-SOP-05, tidak dibuka ulang hari ini |
 | Nomor butir 4.4, 4.8, 4.11, 4.14, 4.2, 6.1 SNX-FAT-SOP-01 dan 4.4 SNX-FAT-SOP-04 | Dicocokkan ke spec saudara (specs/FAT-SOP-01.json, FAT-SOP-04.json) |
 | Project Manager dan Business Development sebagai contoh Pemberi support | Sumber: SOP Billing 6.1 dan 4.1 lewat SNX-FAT-SOP-01 |
@@ -167,3 +167,15 @@ Tidak ada butir tanpa sumber dan tanpa label yang tersisa.
 1. Putaran 1: render pertama lulus lint generic. Pemeriksaan tambahan menemukan kalimat pengantar Nilai Status dan definisi Penanggung Jawab di Istilah memuat aturan pengisian (bagian 3 hanya boleh berisi arti), dan beberapa fakta SOP-01 dan SOP-05 diulang di Dokumen Terkait: aturan dipindah ke Ketentuan dan Petunjuk, fakta diganti rujukan nomor butir.
 2. Putaran 2 dan 3: lebar kolom Tabel 1 sampai 4 diperbaiki karena kata header terpotong di tengah (dilihat dari PDF); header "Ketidaksesuaian" di Tabel 3 diganti "Persyaratan yang Tidak Terpenuhi" dan "Target Penyelesaian" diganti "Target Selesai".
 3. Putaran 4: variasi kalimat di Petunjuk Pengisian; uji terakhir `pass: true` (lihat bagian atas).
+
+## Sweep
+
+Putaran sweep sesudah DONE (instruksi orkestrator, berkas FAT-RPT-02.sweep.txt). Hanya dua baris di spec yang berubah; fakta, angka, nama, dan struktur lain tetap. Temuan nonblocking lain di qa/FAT-RPT-02.verify.json tidak diubah karena di luar butir sweep.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1. Ruang Lingkup, tabel enam proses, baris Accounting and Financial Report | "SNX-FAT-SOP-06, dalam peninjauan" | "SNX-FAT-SOP-06" |
+| 1. Dokumen Terkait, baris SNX-FAT-SOP-06 | "Accounting and Financial Report. Dalam peninjauan. Salah satu dari enam proses FAT di bagian Ruang Lingkup." | "Accounting and Financial Report. Salah satu dari enam proses FAT di bagian Ruang Lingkup." |
+| 2. SNX-FAT-REG-01 dan SNX-FAT-FRM-02 | Tidak disebut di dokumen | Tidak ada perubahan: dokumen tidak merujuk keduanya. Hanya SNX-FAT-SOP-06 yang disebut dan sudah memakai nomor. AR & Collection dan Payment and Disbursement Approval tetap "belum bernomor, dalam peninjauan" karena masih HOLD tanpa nomor di ledger.json |
+
+Uji sweep (bukti mentah di /tmp/pen-FAT-RPT-02/lint.out.txt, validate.out.txt, blankscan.out.txt): render_sop.py selesai tanpa galat; lint_doc.py generic `"pass": true`, `"fails": []`, satu warn "15 butir (USULAN) menunggu ACC" (jumlah sama dengan sebelum sweep); validate.py "All validations PASSED!"; blankscan.py "ok". Lulus pada putaran pertama sweep. Notes yang ikut diperbarui: asumsi 6, open item 7, dan baris SNX-FAT-SOP-06 di jawaban pertanyaan 2.

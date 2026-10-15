@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Butir 2 instruksi sweep (SNX-FAT-REG-01, SNX-FAT-FRM-02)",
+      "masalah": "Tidak dikerjakan karena tidak berlaku: dokumen tidak merujuk Billing & Collection Monitoring Register maupun Financial Information Access Authorization Records. Baris 'Belum bernomor, dalam peninjauan' yang tersisa (SOP Account Receivable & Collection, SOP Payment and Disbursement Approval) adalah dokumen lain, bukan REG-01 atau FRM-02, jadi wajar dibiarkan. Catatan pending_tasks di ledger menulis 'Payment/FAT-FRM-02', tetapi instruksi sweep menyebut FRM-02 = Financial Information Access Authorization Records; penyusun benar tidak memberi nomor FRM-02 ke SOP Payment.",
+      "bukti": "grep REG-01|FRM-02|Billing & Collection|Access Authorization di specs/FAT-RPT-02.json: nihil; ledger.json promoted: FAT-REG-01 baris 29, FAT-FRM-02 baris 32; ledger docs HOLD-R24 dan HOLD-R25 berstatus HOLD tanpa nomor; notes/FAT-RPT-02.md ## Sweep butir 2 mencatat hal ini"
+    },
+    {
+      "lokasi": "Petunjuk Pengisian butir 2 (spec baris 330): 'Untuk proses yang prosedurnya dalam peninjauan, ...'",
+      "masalah": "Tidak diubah dan masih benar, karena dua proses (AR & Collection, Payment and Disbursement Approval) masih dalam peninjauan. Hanya dicatat agar tidak dianggap sisa butir 1.",
+      "bukti": "Diff teks docx HEAD vs kerja hanya 2 baris (Ruang Lingkup baris SOP-06, Dokumen Terkait baris SOP-06); diff spec identik dengan FAT-RPT-02.spec.diff (2 baris); media docx sha256 sama sebelum dan sesudah"
+    }
+  ]
+}
