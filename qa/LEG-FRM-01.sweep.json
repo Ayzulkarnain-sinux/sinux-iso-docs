@@ -1,0 +1,33 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Rekaman (kolom Retensi dua baris), Ketentuan butir 8, Dokumen Terkait baris SNX-LEG-SOP-03",
+      "masalah": "Butir 2 hanya meminta pemilik rekaman mengikuti SNX-LEG-SOP-03. Sweep juga menetapkan kategori retensi dan menambah rujukan SOP-03 butir 4.8. Isinya berdasar specs/LEG-SOP-03.json dan berlabel (USULAN), tetapi melewati batas butir secara harfiah: 'belum ditetapkan' berubah menjadi penetapan kategori.",
+      "bukti": "Sebelum: 'Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03.' Sesudah: 'Mengikuti Kategori 4 di SNX-LEG-SOP-03 (USULAN).' dan 'Mengikuti Kategori 1 di SNX-LEG-SOP-03 (USULAN).' SOP-03 4.8: 'Staff Legal menyimpan dokumen legal elektronik di repositori resmi, yaitu folder Google Drive departemen Legal (USULAN).' Dicatat sebagai USULAN 22 di notes."
+    },
+    {
+      "lokasi": "Dokumen Terkait baris SNX-LEG-SOP-03; Rekaman",
+      "masalah": "Penempatan kategori adalah tafsir. SNX-LEG-SOP-03 tidak menyebut SNX-LEG-FRM-01. Kategori 6 memuat 'checklist' dan Kategori 5 memuat 'korespondensi hukum', jadi pembaca bisa salah mengira SOP-03 sendiri yang menempatkan formulir terisi di Kategori 4. Label USULAN meredam risiko itu. Usul rumusan: 'Formulir ini menempatkan formulir terisi di Kategori 4 ...'.",
+      "bukti": "Sesudah: 'Memuat tujuh kategori dokumen legal dan usulan periode retensinya. Formulir terisi masuk Kategori 4, dan kontrak beserta korespondensi masuk Kategori 1 (USULAN).' specs/LEG-SOP-03.json scope: 'Kategori 4, dokumen penelaahan Legal: legal opinion, legal memorandum, hasil uji tuntas ...'; 'Kategori 6 ... checklist, register ...'; 'Kategori 5 ... korespondensi hukum'."
+    },
+    {
+      "lokasi": "Petunjuk Pengisian butir 4",
+      "masalah": "Perubahan ini tidak ada di temuan r3. Maknanya sedikit bergeser dari 'yang diminta' ke 'usulan'. Dasarnya ada di SNX-LEG-SOP-02 dan bobotnya setara, jadi tidak memblokir.",
+      "bukti": "Sebelum: '... temuan, dan perubahan yang diminta.' Sesudah: '... temuan, dan usulan perubahan.' specs/LEG-SOP-02.json: 'klausul bermasalah, risiko, dan usulan perubahan'."
+    },
+    {
+      "lokasi": "Petunjuk Pengisian butir 1",
+      "masalah": "Konvensi isian baru 'tanda strip (-)' tanpa label. Ini usulan pemeriksa r3 dan bukan fakta (nama, jabatan, angka, sistem, tanggal), jadi cukup dicatat.",
+      "bukti": "Sesudah: '... dan menulis tanda strip (-) pada field yang tidak ada di kontrak.' r3: 'Usul: ... menulis tanda strip (-) ...'."
+    }
+  ],
+  "catatan_pemeriksaan": {
+    "butir_1": "Keenam nonblocking r3 dikerjakan: pengulangan Status dan Tingkat Risiko (Petunjuk 3 dan 6 kini merujuk Istilah, dan Istilah masih memuat tiga nilai Status serta 'Tinggi, Sedang, atau Rendah'), dua pasif (Tidak Berlaku, pengecualian lingkup), Klien (baris Istilah berlabel USULAN), dua 'dan' di Tujuan, kualifier C1.1, dan nilai literal Petunjuk 1.",
+    "butir_2": "Peran Staff Legal dan Line Manager Legal ditulis 'Peran ini dipetakan ke jabatan Legal & Compliance (JA-09/JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)', sama dengan rumusan specs/LEG-SOP-03.json roles. Pemilik rekaman Line Manager Legal dan pencatat Staff Legal sesuai SOP-03 butir 4.26 dan records ('pemilik Line Manager Legal' di semua kategori). Tidak ada sisa sebutan peran sebagai nama jabatan.",
+    "fakta": "C1.1 sesudah sweep sama kata per kata dengan specs/LEG-SOP-02.json ('akta pendirian dan perubahan serta dokumen pengesahan atau penerimaan pemberitahuan yang relevan; NIB dan izin yang relevan dengan kegiatan usaha, jika diperlukan; ... yang relevan dan dapat diverifikasi'). 'tujuh kategori', Kategori 1 dan 4, serta butir 4.8 ada di specs/LEG-SOP-03.json. K-13, JA-08, dan JA-09 ada di specs/HR-ORG-01.json. Definisi Klien akhir berlabel USULAN. Tidak ada nama, angka, tanggal, atau sistem baru.",
+    "gaya_dan_batas": "Tidak ada em-dash atau en-dash di spec, tidak ada rujukan internal AI, dan tidak ada pasif baru tanpa pelaku ('Peran ini dipetakan' sudah ada sebelumnya dalam bentuk 'Dipetakan'). 'Tiap aspek mendapat satu baris' bukan kata kerja manusia. Status Draft, tanggal efektif, dan penanda tangan tidak berubah. Notes memuat bagian '## Sweep' dengan isi sebelum dan sesudah.",
+    "butir_tidak_dikerjakan": "nihil"
+  }
+}

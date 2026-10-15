@@ -4,7 +4,7 @@ Status: DRAFTED (spec + notes ada). Spec: specs/LEG-FRM-01.json. Mode generic, a
 
 Hasil uji terakhir (bukti mentah: /tmp/pen-LEG-FRM-01/render.out.txt, /tmp/pen-LEG-FRM-01/lint.out.txt):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-FRM-01.json /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx`: exit 0, tanpa keluaran.
-- `python3 -I tools/lint_doc.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx generic`: `"pass": true`, `"fails": []`, satu warn "28 butir (USULAN) menunggu ACC" (34 kemunculan label di spec). Hasil sesudah putaran perbaikan 2; tiap halaman badan (halaman 5 sampai 16) berisi teks, halaman 1 sampai 4 adalah sampul, Identity, Revision History, Approval, dan daftar isi template.
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx generic`: `"pass": true`, `"fails": []`, satu warn "32 butir (USULAN) menunggu ACC" (38 kemunculan label di spec). Hasil sesudah putaran sweep (bagian "Sweep"); tiap halaman badan (halaman 5 sampai 16) berisi teks, halaman 1 sampai 4 adalah sampul, Identity, Revision History, Approval, dan daftar isi template.
 - Validator OOXML skill docx (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!".
 - soffice ke PDF: 16 halaman, dilihat per montase. Tidak ada diagram (lihat Asumsi 5). Header tabel kadang jatuh di dasar halaman; itu perilaku renderer, bukan isi.
 - Pemeriksaan tambahan atas teks hasil render (python3 -I): nol em-dash dan en-dash; nol frasa terlarang prompt (pada intinya, yang terpenting, secara fundamental, tanpa terkecuali, tanpa kompromi, dalam rangka, adapun, perlu diketahui, dikarenakan, dapat berpotensi, praktik terbaik, para ahli, hulu ke hilir, sesegera mungkin); nol "dokumen sumber", "sumber tim", "penyusun", "draf ini", "Direksi", "Lead", "tim" berdiri sendiri, "komersil", "belum ada"; semua 10 kode SNX di badan (kecuali kode dokumen ini) ada di tabel Dokumen Terkait; nol kalimat identik di dua bagian (satu-satunya duplikat adalah baris header tabel Daftar Periksa, delapan kali, karena satu tabel per kelompok).
@@ -125,7 +125,7 @@ Pemetaan peran ke SNX-HR-ORG-01: Staff Legal dan Line Manager Legal ada di matri
 
 | # | Butir | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Process owner dan pemilik formulir = Line Manager Legal (sumber tanpa field Pemilik Dokumen; Unit Kerja "Legal dan Compliance"). Rekaman formulir terisi: pencatat Staff Legal, pemilik Line Manager Legal, selaras dengan records di specs/LEG-SOP-02.json ("pencatat Staff Legal; pemilik Line Manager Legal (butir 4.19)") | Legal |
+| 1 | Process owner dan pemilik formulir = Line Manager Legal (sumber tanpa field Pemilik Dokumen; Unit Kerja "Legal dan Compliance"). Rekaman formulir terisi: pencatat Staff Legal, pemilik Line Manager Legal, selaras dengan records di specs/LEG-SOP-02.json ("pencatat Staff Legal; pemilik Line Manager Legal (butir 4.19)") dan di specs/LEG-SOP-03.json (semua kategori: "pemilik Line Manager Legal") | Legal |
 | 2 | Isi kolom Hal yang Diperiksa 26 baris, dari dua dokumen tim (tabel Asal isi); kolom itu kosong di checklist | Legal |
 | 3 | Kolom Jenis Risiko (Hukum, Komersial, Hukum dan komersial) dan Tingkat Risiko (Tinggi, Sedang, Rendah) pada tabel Temuan Utama dan Risiko; tabel 7 kolom menggantikan tiga field teks | Legal |
 | 4 | Tiga nilai Status: Sesuai, Perlu Tindak Lanjut, Tidak Berlaku, beserta artinya | Legal |
@@ -145,6 +145,8 @@ Pemetaan peran ke SNX-HR-ORG-01: Staff Legal dan Line Manager Legal ada di matri
 | 18 | Pemetaan Staff Legal dan Line Manager Legal ke JA-09 dan JA-08 (K-13 di SNX-HR-ORG-01) | Aziz |
 | 19 | Enam klausul ISO: 9001 8.2.3, 8.2.4, 7.5.3; 27001 Annex A 5.31, 5.32, 5.34 (satu label "USULAN, perlu konfirmasi konsultan") | owner (konfirmasi konsultan) |
 | 20 | Definisi Risiko hukum dan Risiko komersial di Istilah | Legal |
+| 21 | Definisi "Klien akhir" sebagai pelanggan dari pelanggan SINUX (sumber SOP memakai kata itu tanpa definisi), dan "Klien" sebagai sebutan lain pelanggan pada field Nama Klien | Legal |
+| 22 | Retensi formulir terisi mengikuti Kategori 4 (dokumen penelaahan Legal) dan retensi kontrak beserta korespondensi mengikuti Kategori 1 (dokumen kontraktual) di SNX-LEG-SOP-03; baris Rekaman dan Dokumen Terkait dirujukkan ke kategori itu | Legal |
 
 ## Open items
 
@@ -157,7 +159,7 @@ Pemetaan peran ke SNX-HR-ORG-01: Staff Legal dan Line Manager Legal ada di matri
 7. Ejaan "Pelindungan" vs "Perlindungan" di C5.2 belum diputus Legal; checklist tim lain memakai "Pelindungan".
 8. Penomoran butir SNX-LEG-SOP-01 (4.21, 4.24) dan SNX-LEG-SOP-02 (4.2, 4.7, 4.8 sampai 4.10, 4.14, 6.1, 6.4, 6.7) harus dicek ulang bila kedua SOP itu direvisi. Pemutus: orkestrator saat render ulang massal.
 9. modifiedTime 1E_8 dan 19pe tidak diukur ulang di sesi ini (diambil dari notes/LEG-SOP-02.md). Pemutus: orkestrator bila perlu.
-10. Retensi formulir terisi belum ditetapkan; usulan penetapan ada di SNX-LEG-SOP-03 (bukan di dokumen ini). Pemutus: Legal.
+10. Retensi formulir terisi dan kontrak mengikuti Kategori 4 dan Kategori 1 di SNX-LEG-SOP-03 (USULAN 22); periode angkanya hanya ada di SNX-LEG-SOP-03 dan belum diputus. Pemutus: Legal.
 
 ## 5. Dua pertanyaan penutup
 
@@ -165,7 +167,7 @@ Pemetaan peran ke SNX-HR-ORG-01: Staff Legal dan Line Manager Legal ada di matri
 Temuan dan perbaikan:
 - Benda diberi kata kerja manusia. Klaim awal saya di bagian ini (hanya Tujuan yang perlu diperbaiki, dan pola itu tidak ada lagi) keliru: verifikator menemukan tujuh kalimat lain, dan pemindaian saya hanya menangkap kalimat Tujuan. Sudah ditulis ulang pada putaran perbaikan 1 (lihat bagian 6): pelaku diganti peran dari bagian Peran, atau kalimat dirumuskan sebagai isi ("Aspek C5.3 mencakup pemeriksaan ...").
 - Baris relasi di Dokumen Terkait memakai kata "review" di satu tempat dan "penelaahan" di tempat lain untuk hal yang sama, dan bagian lain memakai "dokumen ini" untuk "formulir ini". Disamakan menjadi "formulir ini" dan "penelaahan"; "Contract Review Checklist" tetap sebagai nama berkas SOP-02.
-- Label (USULAN) muncul 34 kali. Itu mekanis tetapi dibutuhkan (RUNBOOK §6a.3); label hanya dipasang pada kalimat yang tidak bersumber dari checklist atau dua SOP tim, dan satu kalimat pengantar menyatukan label enam aspek tambahan.
+- Label (USULAN) muncul 38 kali. Itu mekanis tetapi dibutuhkan (RUNBOOK §6a.3); label hanya dipasang pada kalimat yang tidak bersumber dari checklist atau dua SOP tim, dan satu kalimat pengantar menyatukan label enam aspek tambahan.
 - Kolom Hal yang Diperiksa berupa frasa benda berderet ("Tanggal efektif, durasi, perpanjangan, dan batas pemberitahuan"). Itu bentuk yang dipakai SOP tim sendiri (T1), jadi dipertahankan, bukan diganti kalimat utuh. Daftar tiga unsur yang muncul berasal dari sumber (Hasil: tiga opsi, Status: tiga nilai usulan dari tiga status minimal yang dibutuhkan), bukan dipaksakan.
 - Tidak ada atribusi kabur, frasa otoritas semu, ekor penegas, rentang palsu, kutip atau huruf kapital untuk penekanan, penutup positif, dan penegasan kosong (diperiksa dengan pola di atas).
 
@@ -204,4 +206,32 @@ Hasil uji sesudah putaran 1: render exit 0; lint_doc generic "pass": true; valid
 | 7 | Baris SNX-HR-ORG-01 | "Line Manager Legal dan Staff Legal adalah nama peran di matriks peran, dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)." Label USULAN mengikuti butir K-13 di SNX-HR-ORG-01; pemutus Aziz (USULAN 18) |
 | 8 | Kapitalisasi Jenis Risiko | "Hukum, Komersial, atau Hukum dan Komersial" (Petunjuk butir 6) |
 
-Hasil uji akhir: render exit 0 (tanpa keluaran); lint_doc generic "pass": true, fails kosong, satu warn (28 butir USULAN); validator OOXML "All validations PASSED!"; nol em-dash dan en-dash di spec; PDF 16 halaman, halaman 5 sampai 16 berisi teks badan (126 sampai 371 kata per halaman, dihitung dengan pdftotext), halaman 1 sampai 4 adalah sampul, Identity, Revision History, Approval, dan daftar isi template.
+Hasil uji akhir putaran 2 (diperbarui di bagian "Sweep"): render exit 0 (tanpa keluaran); lint_doc generic "pass": true, fails kosong, satu warn (28 butir USULAN); validator OOXML "All validations PASSED!"; nol em-dash dan en-dash di spec; PDF 16 halaman, halaman 5 sampai 16 berisi teks badan (126 sampai 371 kata per halaman, dihitung dengan pdftotext), halaman 1 sampai 4 adalah sampul, Identity, Revision History, Approval, dan daftar isi template.
+
+## Sweep
+
+Putaran sweep atas temuan qa/LEG-FRM-01.verify.json (verdict PASS, enam nonblocking) dan konsistensi Legal. Perubahan hanya di specs/LEG-FRM-01.json (builder di /tmp/pen-LEG-FRM-01, bukan di repo) dan notes ini. Fakta, angka, nama, dan struktur lain tetap.
+
+Butir 1 (r3 nonblocking):
+- Pengulangan Istilah dan Petunjuk, Status: Petunjuk butir 3 "Kolom Status berisi satu dari tiga nilai pada bagian Istilah." menjadi "Staff Legal mengisi kolom Status dengan salah satu nilai di bagian Istilah." (daftar nilai tinggal di Istilah).
+- Pengulangan Istilah dan Petunjuk, Tingkat Risiko: Petunjuk butir 6 "Kolom Tingkat Risiko memuat Tinggi, Sedang, atau Rendah." menjadi "Staff Legal mengisi kolom Tingkat Risiko dengan salah satu nilai di bagian Istilah."
+- Pasif, Istilah Tidak Berlaku: "Alasan ditulis di Catatan/Tindak Lanjut." menjadi "Staff Legal menulis alasannya di Catatan/Tindak Lanjut."
+- Pasif, pengecualian lingkup: "Tidak ditelaah dengan formulir ini." menjadi "Departemen Legal tidak menelaahnya dengan formulir ini."
+- Pasif lain dengan pelaku diketahui, Istilah Aspek: "Satu hal pada kontrak yang ditelaah, ditulis satu baris pada tabel Daftar Periksa ..." menjadi "Satu hal pada kontrak yang ditelaah. Tiap aspek mendapat satu baris pada tabel Daftar Periksa ...". Petunjuk butir 4: "... dan perubahan yang diminta." menjadi "... dan usulan perubahan." (kata "usulan perubahan" dari SOP-02: "menyampaikan usulan perubahan kepada pihak lawan"). Pasif lain di spec dipindai dan dibiarkan: kalimat opsi Hasil dan Rekomendasi dari sumber (T1), "Hasil yang dijaga", dan "Jabatan pemegang peran ini belum ditetapkan" (pelaku belum ditetapkan, tercakup open item 1).
+- Klien vs pelanggan: tambah baris Istilah "Klien | Sebutan lain untuk pelanggan pada field Nama Klien. Klien akhir adalah pelanggan dari pelanggan SINUX (USULAN)." Field Nama Klien dan "klien akhir" di C3.2 tetap seperti sumber. Definisi klien akhir tidak ada di sumber, sehingga berlabel USULAN 21.
+- Kualifier C1.1 terpangkas: "Nama badan hukum dan bentuk badan usaha, alamat, serta kesesuaiannya dengan akta pendirian, akta perubahan, dan NIB pelanggan. Informasi risiko atau sengketa pelanggan yang dapat diverifikasi." menjadi "Nama badan hukum, bentuk badan usaha, dan alamat pelanggan. Kesesuaian identitas itu dengan akta pendirian dan perubahan serta dokumen pengesahan atau penerimaan pemberitahuan yang relevan. NIB dan izin yang relevan dengan kegiatan usaha, jika diperlukan. Informasi risiko atau sengketa pelanggan yang relevan dan dapat diverifikasi." (kata sumber: "NIB dan izin yang relevan dengan kegiatan usaha, jika diperlukan").
+- Dua "dan" berderet di Tujuan: "... mengidentifikasi risiko hukum dan risiko komersial dan memastikan hak dan kewajiban para pihak jelas." menjadi "... mengidentifikasi risiko hukum serta risiko komersial, dan memastikan hak dan kewajiban para pihak jelas."
+- Petunjuk butir 1 nilai literal: "... dan menulis tidak ada pada field yang tidak ada di kontrak." menjadi "... dan menulis tanda strip (-) pada field yang tidak ada di kontrak." Ini konvensi pengisian, bukan fakta; diusulkan pemeriksa, tidak berlabel.
+
+Butir 2 (konsistensi Legal):
+- Nama peran: Peran Staff Legal "Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01 ..." menjadi "Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." Sama untuk Line Manager Legal (JA-08), rumusan SNX-LEG-SOP-03. Baris SNX-HR-ORG-01 di Dokumen Terkait: ", dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)" menjadi ", dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09), menunggu konfirmasi (K-13) (USULAN)". Tidak ada kalimat lain di spec yang menyebut Line Manager Legal atau Staff Legal sebagai nama jabatan (diperiksa dengan pencarian "jabatan" di spec: kata itu hanya muncul pada pemetaan JA-08 dan JA-09 di Peran dan Dokumen Terkait, pada jabatan pemegang peran Pejabat Berwenang, pada Petunjuk butir 7 (jabatan penanggung jawab tindak lanjut), dan pada Petunjuk butir 9 (nama dan jabatan penanda tangan).
+- Pemilik rekaman: records di specs/LEG-SOP-03.json menetapkan pemilik Line Manager Legal untuk semua kategori; dokumen ini sudah memakai pemilik Line Manager Legal dan pencatat Staff Legal (selaras SNX-LEG-SOP-02 butir 4.19). Perubahan: pemilik di Peran dan tabel Rekaman kini merujuk "SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03" (Peran Line Manager Legal dan dua baris Rekaman); Peran Staff Legal menyebut "sebagai pencatat rekaman". Tidak ada perbedaan pemilik yang perlu dijelaskan.
+- Lokasi dan retensi mengikuti SNX-LEG-SOP-03: Ketentuan butir 8 "(USULAN, SNX-LEG-SOP-01 butir 4.24)" menjadi "(USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8)". Kolom Retensi tabel Rekaman "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03." menjadi "Mengikuti Kategori 4 di SNX-LEG-SOP-03 (USULAN)." untuk formulir terisi (Kategori 4 = dokumen penelaahan Legal) dan "Mengikuti Kategori 1 di SNX-LEG-SOP-03 (USULAN)." untuk kontrak dan korespondensi (Kategori 1 = dokumen kontraktual dan dokumen terkait; apakah korespondensi termasuk Kategori 1 belum dikonfirmasi, USULAN 22). Angka periode tidak disalin ke dokumen ini. Baris Dokumen Terkait SNX-LEG-SOP-03 menjadi "Memuat tujuh kategori dokumen legal dan usulan periode retensinya. Formulir terisi masuk Kategori 4, dan kontrak beserta korespondensi masuk Kategori 1 (USULAN)."
+- Formulir kosong (template) sendiri masuk Kategori 6 (dokumen internal Departemen Legal, "checklist" disebut di SNX-LEG-SOP-03); tidak ditambahkan sebagai baris Rekaman karena di luar butir sweep.
+
+Hasil uji akhir sweep (bukti mentah: /tmp/pen-LEG-FRM-01/render.out.txt, /tmp/pen-LEG-FRM-01/lint.out.txt):
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-FRM-01.json /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx`: exit 0, tanpa keluaran.
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx generic`: `"pass": true`, `"fails": []`, satu warn "32 butir (USULAN) menunggu ACC".
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx`: "All validations PASSED!".
+- `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx`: `ok 16 LEG-FRM-01.docx []`.
+- Nol em-dash dan en-dash di spec.

@@ -28,7 +28,7 @@
           "h2": "Tujuan"
         },
         {
-          "p": "Formulir ini memuat daftar periksa yang dipakai Departemen Legal untuk menelaah kontrak yang diajukan pelanggan sebelum kontrak ditandatangani oleh Pejabat Berwenang. Dengan formulir ini Departemen Legal mengidentifikasi risiko hukum dan risiko komersial dan memastikan hak dan kewajiban para pihak jelas."
+          "p": "Formulir ini memuat daftar periksa yang dipakai Departemen Legal untuk menelaah kontrak yang diajukan pelanggan sebelum kontrak ditandatangani oleh Pejabat Berwenang. Dengan formulir ini Departemen Legal mengidentifikasi risiko hukum serta risiko komersial, dan memastikan hak dan kewajiban para pihak jelas."
         },
         {
           "p": "Hasil yang dijaga: setiap kontrak pelanggan sudah ditelaah sebelum ditandatangani, dan temuan serta rekomendasi Departemen Legal tercatat dan dapat ditelusuri."
@@ -51,7 +51,7 @@
             "rows": [
               [
                 "Kontrak dengan vendor, pemasok, mitra kerja sama, dan subkontraktor",
-                "Tidak ditelaah dengan formulir ini. Kontrak vendor dan pemasok memakai SNX-LEG-FRM-02 (USULAN)."
+                "Departemen Legal tidak menelaahnya dengan formulir ini. Kontrak vendor dan pemasok memakai SNX-LEG-FRM-02 (USULAN)."
               ],
               [
                 "Keputusan bisnis, komersial, keuangan, dan keamanan informasi",
@@ -93,7 +93,7 @@
               ],
               [
                 "Aspek",
-                "Satu hal pada kontrak yang ditelaah, ditulis satu baris pada tabel Daftar Periksa dengan kode C1.1 dan seterusnya."
+                "Satu hal pada kontrak yang ditelaah. Tiap aspek mendapat satu baris pada tabel Daftar Periksa dengan kode C1.1 dan seterusnya."
               ],
               [
                 "Departemen Legal",
@@ -106,6 +106,10 @@
               [
                 "Kelompok",
                 "Kumpulan aspek yang sejenis pada tabel Daftar Periksa. Ada delapan kelompok."
+              ],
+              [
+                "Klien",
+                "Sebutan lain untuk pelanggan pada field Nama Klien. Klien akhir adalah pelanggan dari pelanggan SINUX (USULAN)."
               ],
               [
                 "Kontrak pelanggan",
@@ -177,7 +181,7 @@
               ],
               [
                 "Tidak Berlaku",
-                "Aspek tidak ada pada kontrak ini atau tidak relevan dengan jenis layanannya. Alasan ditulis di Catatan/Tindak Lanjut."
+                "Aspek tidak ada pada kontrak ini atau tidak relevan dengan jenis layanannya. Staff Legal menulis alasannya di Catatan/Tindak Lanjut."
               ]
             ],
             "widths_cm": [
@@ -216,7 +220,7 @@
           "p": "7. Staff Legal menelaah ulang kontrak yang berubah material sesudah Persetujuan Legal (SNX-LEG-SOP-02 butir 4.14), dan mengisi formulir baru untuk telaah ulang itu (USULAN)."
         },
         {
-          "p": "8. Staff Legal menyimpan formulir terisi bersama berkas kontrak di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24) dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Formulir terisi berisi nama pelanggan dan nilai kontrak, sehingga Staff Legal memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
+          "p": "8. Staff Legal menyimpan formulir terisi bersama berkas kontrak di folder Google Drive Departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8) dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Formulir terisi berisi nama pelanggan dan nilai kontrak, sehingga Staff Legal memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
         }
       ]
     },
@@ -232,11 +236,11 @@
             "rows": [
               [
                 "Staff Legal",
-                "Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi (Ketentuan butir 1 sampai 5, 7, dan 8). Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Mengisi formulir, menelaah kontrak, mencatat temuan dan rekomendasi, dan menyimpan formulir terisi sebagai pencatat rekaman (Ketentuan butir 1 sampai 5, 7, dan 8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Line Manager Legal",
-                "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Dipetakan ke Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pemilik formulir ini dan formulir terisi (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Menetapkan Target Penyelesaian, memeriksa formulir terisi, dan memberi Persetujuan Legal (Ketentuan butir 1, 2, 4, 5, dan 6). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Unit Kerja Pemohon",
@@ -270,22 +274,22 @@
       "h": "Petunjuk Pengisian",
       "blocks": [
         {
-          "p": "1. Staff Legal mengisi sembilan field tabel Informasi Kontrak dari permintaan dan kontrak, dan menulis tidak ada pada field yang tidak ada di kontrak."
+          "p": "1. Staff Legal mengisi sembilan field tabel Informasi Kontrak dari permintaan dan kontrak, dan menulis tanda strip (-) pada field yang tidak ada di kontrak."
         },
         {
           "p": "2. Staff Legal membaca kolom Hal yang Diperiksa tanpa mengubahnya, dan menulis hal tambahan yang khusus untuk satu kontrak di kolom Catatan/Tindak Lanjut."
         },
         {
-          "p": "3. Kolom Status berisi satu dari tiga nilai pada bagian Istilah."
+          "p": "3. Staff Legal mengisi kolom Status dengan salah satu nilai di bagian Istilah."
         },
         {
-          "p": "4. Kolom Catatan/Tindak Lanjut memuat letak klausul (pasal atau halaman), temuan, dan perubahan yang diminta."
+          "p": "4. Kolom Catatan/Tindak Lanjut memuat letak klausul (pasal atau halaman), temuan, dan usulan perubahan."
         },
         {
           "p": "5. Staff Legal mencentang pilihan yang sesuai pada tabel Hasil Penelaahan dan Rekomendasi dengan tanda ☒ pada kotak ☐. Jumlah pilihan yang boleh dicentang ada di Ketentuan butir 5."
         },
         {
-          "p": "6. Staff Legal mengisi satu baris pada tabel Temuan Utama dan Risiko untuk tiap temuan. Kolom Rujukan memuat kode aspek, misalnya C4.3. Kolom Jenis Risiko memuat Hukum, Komersial, atau Hukum dan Komersial. Kolom Tingkat Risiko memuat Tinggi, Sedang, atau Rendah. Kolom Jenis Risiko dan Tingkat Risiko berstatus (USULAN)."
+          "p": "6. Staff Legal mengisi satu baris pada tabel Temuan Utama dan Risiko untuk tiap temuan. Kolom Rujukan memuat kode aspek, misalnya C4.3. Kolom Jenis Risiko memuat Hukum, Komersial, atau Hukum dan Komersial. Staff Legal mengisi kolom Tingkat Risiko dengan salah satu nilai di bagian Istilah. Kolom Jenis Risiko dan Tingkat Risiko berstatus (USULAN)."
         },
         {
           "p": "7. Kolom Pihak dan Target Selesai memuat jabatan penanggung jawab tindak lanjut dan tanggal targetnya."
@@ -382,7 +386,7 @@
               [
                 "C1.1",
                 "Identitas Para Pihak",
-                "Nama badan hukum dan bentuk badan usaha, alamat, serta kesesuaiannya dengan akta pendirian, akta perubahan, dan NIB pelanggan. Informasi risiko atau sengketa pelanggan yang dapat diverifikasi.",
+                "Nama badan hukum, bentuk badan usaha, dan alamat pelanggan. Kesesuaian identitas itu dengan akta pendirian dan perubahan serta dokumen pengesahan atau penerimaan pemberitahuan yang relevan. NIB dan izin yang relevan dengan kegiatan usaha, jika diperlukan. Informasi risiko atau sengketa pelanggan yang relevan dan dapat diverifikasi.",
                 "",
                 ""
               ],
@@ -964,7 +968,7 @@
               ],
               [
                 "SNX-LEG-SOP-03",
-                "Legal Document Control & Retention. Tempat usulan periode retensi dokumen legal."
+                "Legal Document Control & Retention. Memuat tujuh kategori dokumen legal dan usulan periode retensinya. Formulir terisi masuk Kategori 4, dan kontrak beserta korespondensi masuk Kategori 1 (USULAN)."
               ],
               [
                 "SNX-LEG-FRM-02",
@@ -992,7 +996,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Line Manager Legal dan Staff Legal adalah nama peran di matriks peran, dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)."
+                "Struktur Organisasi SINUX. Line Manager Legal dan Staff Legal adalah nama peran di matriks peran, dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09), menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Belum bernomor",
@@ -1023,13 +1027,13 @@
             "rows": [
               [
                 "Formulir terisi per kontrak pelanggan",
-                "Folder Google Drive Departemen Legal bersama berkas kontrak (Ketentuan butir 8). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
-                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+                "Folder Google Drive Departemen Legal bersama berkas kontrak (Ketentuan butir 8). Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Mengikuti Kategori 4 di SNX-LEG-SOP-03 (USULAN)."
               ],
               [
                 "Kontrak yang ditelaah dan korespondensi",
-                "Lokasi tertulis di tabel Lokasi Penyimpanan Dokumen. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19).",
-                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+                "Lokasi tertulis di tabel Lokasi Penyimpanan Dokumen. Pencatat: Staff Legal. Pemilik: Line Manager Legal (USULAN, SNX-LEG-SOP-02 butir 4.19 dan SNX-LEG-SOP-03).",
+                "Mengikuti Kategori 1 di SNX-LEG-SOP-03 (USULAN)."
               ]
             ],
             "widths_cm": [
