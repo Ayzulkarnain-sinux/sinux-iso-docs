@@ -27,7 +27,7 @@
         {"h2": "Tujuan"},
         {"p": "Form ini mencatat penyebab suatu insiden, breach SLA, atau ketidaksesuaian audit, tindakan yang diambil, dan hasil verifikasi bahwa tindakan itu efektif. Satu RCA memakai satu form dan satu nomor RCA."},
         {"h2": "Lingkup"},
-        {"p": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 Bagian 7.5), untuk breach SLA (SNX-OPS-SOP-05 Bagian 6.6), dan untuk ketidaksesuaian audit."},
+        {"p": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 butir 6.5), untuk breach SLA (SNX-OPS-SOP-05 Bagian 6.6), dan untuk ketidaksesuaian audit."},
         {"p": "Form ini tidak mewajibkan RCA untuk insiden P3 dan P4 yang tidak berulang. Pilihan Keluhan pelanggan dan Lainnya di bagian Identitas juga tidak mewajibkan RCA (USULAN)."},
         {"p": "Tiket tetap dicatat di SNX-OPS-FRM-08 dan change request di SNX-OPS-FRM-04; form ini hanya memuat nomornya. Insiden keamanan informasi dicatat juga di SNX-ISMS-FRM-02."}
       ]
@@ -41,11 +41,11 @@
           "rows": [
             ["RCA", "Root cause analysis: analisis untuk menemukan akar masalah suatu kejadian, dicatat di form ini."],
             ["Akar masalah", "Penyebab yang menjelaskan mengapa kejadian terjadi, ditulis sebagai satu pernyataan yang didukung bukti."],
-            ["Insiden", "Gangguan tidak terencana atau penurunan mutu layanan (SNX-OPS-SOP-04 Bagian 4)."],
-            ["Severity", "Tingkat keparahan insiden: P1 Kritis, P2 Tinggi, P3 Sedang, P4 Rendah (SNX-OPS-SOP-04 Bagian 6)."],
-            ["Insiden berulang", "Insiden 3 kali atau lebih pada layanan yang sama dalam 30 hari (SNX-OPS-SOP-04 Bagian 7.5 butir 3)."],
-            ["Breach SLA", "Pencapaian di bawah target kontrak dalam satu periode (SNX-OPS-SOP-05 Bagian 4)."],
-            ["Downtime yang dihitung", "Waktu layanan tidak tersedia, tidak termasuk window maintenance yang sudah dinotifikasi dan gangguan di luar tanggung jawab SINUX sesuai kontrak (SNX-OPS-SOP-05 Bagian 4)."],
+            ["Insiden", "Gangguan tidak terencana atau penurunan mutu layanan (SNX-OPS-SOP-04 bagian 3)."],
+            ["Severity", "Tingkat keparahan insiden: P1 Kritis, P2 Tinggi, P3 Sedang, P4 Rendah (SNX-OPS-SOP-04 bagian 3)."],
+            ["Insiden berulang", "Insiden 3 kali atau lebih pada layanan yang sama dalam 30 hari (SNX-OPS-SOP-04 bagian 3)."],
+            ["Breach SLA", "Pencapaian di bawah target kontrak dalam satu periode (SNX-OPS-SOP-05 bagian 3)."],
+            ["Downtime yang dihitung", "Waktu layanan tidak tersedia, tidak termasuk window maintenance yang sudah dinotifikasi dan gangguan di luar tanggung jawab SINUX sesuai kontrak (SNX-OPS-SOP-05 bagian 3)."],
             ["Sisa anggaran", "Anggaran downtime dikurangi downtime yang dihitung (SNX-OPS-FRM-09)."],
             ["Ketidaksesuaian audit", "Hasil audit yang menyatakan suatu persyaratan tidak dipenuhi."],
             ["Koreksi", "Tindakan memulihkan layanan atau keadaan yang terdampak."],
@@ -245,8 +245,8 @@
           "header": ["Kode", "Keterangan"],
           "widths_cm": [4, 12],
           "rows": [
-            ["SNX-OPS-SOP-04", "SOP Technical Incident Handling & Escalation. Bagian 4 memuat definisi insiden, Bagian 6 severity, Bagian 7.5 kewajiban RCA."],
-            ["SNX-OPS-SOP-05", "SOP Service Level Agreement (SLA) Monitoring. Bagian 4 memuat definisi breach dan downtime yang dihitung, Bagian 6.6 penanganan breach."],
+            ["SNX-OPS-SOP-04", "SOP Technical Incident Handling & Escalation. Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA."],
+            ["SNX-OPS-SOP-05", "SOP Service Level Agreement (SLA) Monitoring. Bagian 3 memuat definisi breach dan downtime yang dihitung, butir 6.6 penanganan breach."],
             ["SNX-OPS-FRM-09", "SLA Performance Monitoring Report. Sumber anggaran dan sisa anggaran downtime."],
             ["SNX-OPS-FRM-08", "Technical Ticket / Incident Register. Sumber nomor tiket; kolom No RCA memuat nomor RCA."],
             ["SNX-OPS-FRM-04", "Change Request & Approval Log. Sumber nomor change request."],

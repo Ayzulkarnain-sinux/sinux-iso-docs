@@ -118,7 +118,7 @@ Jumlah USULAN: 8 butir (9 penanda "(USULAN)" di badan dokumen karena butir 5 mun
 | 10 | Disetujui oleh di sumber: COO, Amirull Yusuf Zulkarnain; spec memakai Samuel Kristanto Utomo / President Director sesuai prompt (USULAN 8) | Owner |
 | 11 | Kalimat perintah di sumber (dicatat sebagai data): "Fokus pada sistem dan proses, bukan menyalahkan orang.", "Tindakan yang mengubah production dijalankan melalui SNX-OPS-SOP-02.", "Risiko baru yang ditemukan ditambahkan ke SNX-ISMS-REG-02." Semuanya aturan pemakaian form untuk karyawan, bukan perintah ke penyusun; masuk ke dokumen sebagai substansi tim (T1), tidak dijalankan sebagai instruksi | Orkestrator |
 | 12 | Riwayat revisi sumber punya dua baris Revisi 00 (13 Oktober 2026); baris kedua menyebut "keselarasan RTO dan target pulih" padahal form ini tidak memuat RTO. Baris kedua tidak dibawa; tanggal draft 13 Oktober 2026 dari tim tidak dipakai (Effective Date kosong) | Owner |
-| 13 | Bagian dokumen lain (SOP-04 Bagian 4, 5, 6, 7.5; SOP-05 Bagian 4, 6.6, 7; FRM-09) dikutip dari salinan audit, bukan dari Drive. Cocokkan nomor bagian setelah dokumen itu dirender | Orkestrator |
+| 13 | Bagian dokumen lain (SOP-04 Bagian 4, 5, 6, 7.5; SOP-05 Bagian 4, 6.6, 7; FRM-09) dikutip dari salinan audit, bukan dari Drive. Cocokkan nomor bagian setelah dokumen itu dirender (ditutup W9: nomor bagian SOP-04 dan SOP-05 dicocokkan dengan render sekarang, rujukan basi diganti) | Orkestrator |
 | 14 | HUMAN-VERDICT tata letak: diagram memenuhi satu halaman (halaman 8) dan tabel Identitas terpecah antara halaman 8 dan 9 pada render soffice (12 halaman). Renderer tidak punya kendali jeda halaman; lihat montase PDF | Orkestrator |
 
 ## Asumsi dan tafsir
@@ -163,3 +163,24 @@ Jumlah USULAN: 8 butir (9 penanda "(USULAN)" di badan dokumen karena butir 5 mun
 | Peran Pemverifikasi dan penutup RCA oleh Head of Operation | Tanpa sumber tim; berlabel USULAN 5 dan 6 |
 | Pengecualian P3 dan P4 tidak berulang | Turunan SOP-04 Bagian 7.5; tidak berlabel karena hanya kebalikan dari tiga pemicu insiden yang tertulis; dicatat di Asumsi |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+## ISO-W9
+
+Dasar: G-2 butir 1 (LEAD) dan hasil pemeriksa makna R237 sampai R248. Hanya rujukan yang diganti; kalimat lain tetap. Tujuan dibaca dari render SNX-OPS-SOP-04 dan SNX-OPS-SOP-05: definisi insiden, insiden berulang, dan severity ada di bagian 3 (tabel definisi, tanpa nomor tampak); kewajiban RCA ada di butir 6.5; definisi breach dan downtime yang dihitung ada di bagian 3 SOP-05; butir 6.6 SOP-05 ada dan tidak diubah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Lingkup, kalimat RCA wajib | SNX-OPS-SOP-04 Bagian 7.5 | SNX-OPS-SOP-04 butir 6.5 |
+| Istilah, Insiden | SNX-OPS-SOP-04 Bagian 4 | SNX-OPS-SOP-04 bagian 3 |
+| Istilah, Severity | SNX-OPS-SOP-04 Bagian 6 | SNX-OPS-SOP-04 bagian 3 |
+| Istilah, Insiden berulang | SNX-OPS-SOP-04 Bagian 7.5 butir 3 | SNX-OPS-SOP-04 bagian 3 |
+| Istilah, Breach SLA | SNX-OPS-SOP-05 Bagian 4 | SNX-OPS-SOP-05 bagian 3 |
+| Istilah, Downtime yang dihitung | SNX-OPS-SOP-05 Bagian 4 | SNX-OPS-SOP-05 bagian 3 |
+| Dokumen Terkait, SNX-OPS-SOP-04 | Bagian 4 memuat definisi insiden, Bagian 6 severity, Bagian 7.5 kewajiban RCA. | Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA. |
+| Dokumen Terkait, SNX-OPS-SOP-05 | Bagian 4 memuat definisi breach dan downtime yang dihitung, Bagian 6.6 penanganan breach. | Bagian 3 memuat definisi breach dan downtime yang dihitung, butir 6.6 penanganan breach. |
+
+Rujukan "SNX-OPS-SOP-05 Bagian 6.6" di Lingkup tidak diubah (tujuan ada dan cocok).
+
+Open item yang ditutup atau diubah:
+
+- Open item 13: ditutup W9: nomor bagian SOP-04 dan SOP-05 dicocokkan dengan render sekarang dan enam rujukan basi diganti.

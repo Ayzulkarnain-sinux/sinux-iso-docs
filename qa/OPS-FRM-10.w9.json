@@ -1,0 +1,39 @@
+{
+ "key": "OPS-FRM-10",
+ "cluster": "OPS-REF",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Dokumen Terkait baris SNX-OPS-SOP-05: 'Bagian 6.6' diubah menjadi 'butir 6.6'. Butir 13 menyebut 6.6 sudah benar, jadi perubahan ini tidak diminta. Bentuk 'butir N.M' sesuai aturan RUJUKAN SILANG dan maknanya tetap, tetapi kalimat Lingkup masih menulis 'SNX-OPS-SOP-05 Bagian 6.6'. Akibatnya satu tujuan ditulis dengan dua bentuk dalam dokumen yang sama. Kosmetik; selaraskan bila ada putaran polish.",
+  "Dokumen Terkait baris SNX-OPS-SOP-04 memakai 'Bagian 3' (B kapital, awal kalimat), sedangkan tabel Istilah memakai 'bagian 3'. Kosmetik.",
+  "Baris Dokumen Terkait SNX-OPS-SOP-04 tidak menyebut 'insiden berulang' sebagai isi bagian 3, padahal tabel Istilah merujuk ke sana. Sebelumnya juga tidak disebut, jadi ini bukan regresi.",
+  "Teks sesudah memuat kata 'penyusun' 2 kali ('menandatangani sebagai penyusun', 'Penyusun, pemeriksa, dan penyetuju dokumen'). Keduanya kalimat lama yang tidak diubah W9 dan menyebut peran penandatangan dokumen, bukan proses penyusunan. Tidak masuk cek bahasa kalimat yang berubah."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 / G-2 butir 1: enam rujukan basi diganti dan tabel Dokumen Terkait diselaraskan. Tujuan dicek di /tmp/claude-0/w9/struct/OPS-SOP-04.txt dan OPS-SOP-05.txt.",
+  "Butir 3 (R237): Lingkup 'SNX-OPS-SOP-04 Bagian 7.5' menjadi 'butir 6.5'. Butir 6.5 'RCA dan Tindakan Korektif' ada; langkah 1 (RCA P1/P2) dan langkah 2-3 (insiden berulang sebagai problem, wajib RCA) cocok.",
+  "Butir 4 (R239): Insiden 'Bagian 4' menjadi 'bagian 3'. Baris 'Insiden | Gangguan tidak terencana atau penurunan mutu layanan' ada di bagian 3 dan cocok.",
+  "Butir 5 (R240): Severity 'Bagian 6' menjadi 'bagian 3'. Baris 'Severity | P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah' ada di bagian 3 dan cocok.",
+  "Butir 6 dan 7 (R241, R242): Insiden berulang 'Bagian 7.5 butir 3' menjadi 'bagian 3'. Baris 'Insiden berulang | 3 kali atau lebih ... 30 hari' ada di bagian 3 dan cocok.",
+  "Butir 8 (R243): Breach SLA 'SNX-OPS-SOP-05 Bagian 4' menjadi 'bagian 3'. Baris Breach ada di bagian 3 SOP-05 dengan teks identik.",
+  "Butir 9 (R244): Downtime yang dihitung 'SNX-OPS-SOP-05 Bagian 4' menjadi 'bagian 3'. Baris 'Downtime yang dihitung' ada di bagian 3 SOP-05 dengan teks identik.",
+  "Butir 10-12 (R245-R247): Dokumen Terkait SOP-04 kini berbunyi 'Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA.' Kedua tujuan cocok.",
+  "Butir 13 (R248): Dokumen Terkait SOP-05 kini berbunyi 'Bagian 3 memuat definisi breach dan downtime yang dihitung'. Tujuan cocok; 6.6 'Penanganan breach' ada.",
+  "notes/OPS-FRM-10.md: bagian '## ISO-W9' berisi tabel 8 baris perubahan. Open item 13 tidak dihapus; statusnya diberi '(ditutup W9: ...)'.",
+  "Data defaults v22: meta.approval OPS sama persis dengan v22. Prepared 'Erik Dwi Yanto / Technical/Operation Engineer L1', Reviewed 'Fani Fatullah / VP Tech Operation and Services', Approved 'Samuel Kristanto Utomo / President Director' (approved_by.all). Process owner 'Head of Operation' tidak berubah. Butir data HR, Legal, FAT, COM tidak berlaku untuk dokumen OPS ini.",
+  "Diff teks hanya mengubah 8 baris, semuanya rujukan. Nol fakta baru dan nol em-dash pada kalimat yang berubah. Tidak ada pasif baru dan tidak ada rujukan AI."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Nihil untuk OPS-FRM-10. Butir 2 (A9, notes lima form xlsx) dan butir 14 (ISMS-SOP-01) bukan bagian dokumen ini dan tidak diperiksa di sini."
+ ],
+ "grep": "Grep atas teks render sesudah (/tmp/claude-0/w9/render/OPS-FRM-10.docx): 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, 'Bagian 7.5' 0, 'Bagian 4' 0, 'SOP-04 Bagian 6' 0, 'butir 6.5' 2, 'bagian 3' 5, 'dokumen sumber' 0, 'draf ini' 0. OPS-FRM-10 bukan dokumen HR atau Legal, jadi aturan langkah 7 tidak berlaku, dan hasilnya tetap 0.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
