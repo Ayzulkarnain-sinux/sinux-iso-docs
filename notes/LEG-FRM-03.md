@@ -4,9 +4,10 @@ Status: DRAFTED (spec + notes ada). Spec: specs/LEG-FRM-03.json. Mode generic, a
 
 Uji terakhir:
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-FRM-03.json /tmp/pen-LEG-FRM-03/LEG-FRM-03.docx` berhasil tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-LEG-FRM-03/LEG-FRM-03.docx generic` memberi `"pass": true`, `"fails": []`, `"warns": ["29 butir (USULAN) menunggu ACC"]`. Lulus pada putaran render pertama; putaran berikutnya hanya memperbaiki tata letak dan bahasa (lihat bagian 4).
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-FRM-03/LEG-FRM-03.docx generic` memberi `"pass": true`, `"fails": []`, `"warns": ["31 butir (USULAN) menunggu ACC"]` (hasil sesudah sweep 15 Okt; sebelum sweep 29). Lulus pada putaran render pertama; putaran berikutnya hanya memperbaiki tata letak dan bahasa (lihat bagian 4 dan bagian Sweep).
 - `python3 -I tools/lint_spot.py tools/lint_doc.py` memberi GAGAL 0.
-- Pratinjau PDF (soffice, 17 halaman): contact sheet semua halaman, lalu halaman 9, 10, 11, 14, 16 dalam resolusi lebih besar. Sampul, Identity, Revision, Approval, TOC, dan 13 bagian tampil. Dua cacat tata letak ditemukan dan diperbaiki: judul kolom "Pemberitahuan" terpotong di tengah kata (kolom Aspek 3,0 cm diperlebar ke 3,5 cm) dan judul "Target Penyelesaian" di tabel temuan terpotong (kolom diperlebar ke 3,2 cm). Sesudah perbaikan, pencarian teks PDF tidak menemukan kata terpotong.
+- Sesudah sweep: `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-FRM-03/LEG-FRM-03.docx` memberi "All validations PASSED!" (606 paragraf), dan `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-FRM-03/LEG-FRM-03.docx` memberi `ok 18 LEG-FRM-03.docx []`.
+- Pratinjau PDF (soffice, 17 halaman sebelum sweep, 18 halaman sesudahnya): contact sheet semua halaman, lalu halaman 9, 10, 11, 14, 16 dalam resolusi lebih besar. Sampul, Identity, Revision, Approval, TOC, dan 13 bagian tampil. Dua cacat tata letak ditemukan dan diperbaiki: judul kolom "Pemberitahuan" terpotong di tengah kata (kolom Aspek 3,0 cm diperlebar ke 3,5 cm) dan judul "Target Penyelesaian" di tabel temuan terpotong (kolom diperlebar ke 3,2 cm). Sesudah perbaikan, pencarian teks PDF tidak menemukan kata terpotong.
 - Pemeriksaan tambahan atas spec: tidak ada em-dash maupun en-dash; semua kode SNX di badan (11 kode) tercantum di bagian Dokumen Terkait dan sebaliknya; "Direktur (COO)" hanya muncul sekali (aspek F.3, sebutan pertama) dan "COO" tidak dipakai lagi; Samuel di badan ditulis "Direktur Utama" (Kesimpulan); tidak ada nama orang di badan; tidak ada kata "penyusun" sebagai rujukan proses, "dokumen sumber", "sumber tim", atau "draf ini" di badan.
 
 ## 1. Sumber
@@ -107,7 +108,7 @@ Diagram tidak dibuat. Sumber tidak punya diagram (audit membuka halaman 1 sampai
 ## Asumsi
 
 1. Process owner "Line Manager Legal". Sumber tidak punya baris "Pemilik dokumen"; yang ada "Unit Kerja: Legal dan Compliance/IT/Unit Terkait". Dipakai jabatan reviewer departemen Legal tanpa nama, sama dengan SNX-LEG-REG-01 dan SNX-LEG-SOP-01.
-2. Peran dari SNX-HR-ORG-01: "Legal dan Compliance" di sumber dibaca sebagai Departemen Legal (Line Manager Legal dan Staff Legal, JA-08 dan JA-09, pemetaan USULAN butir K-13); "IT" dipetakan ke VP Tech Operation and Services (JA-04), sama dengan pemetaan SNX-LEG-SOP-01; "Unit Terkait" dibuat peran "PIC Unit Kerja" yang didefinisikan di Istilah karena tidak ada padanan jabatan di SNX-HR-ORG-01.
+2. Peran dari SNX-HR-ORG-01: "Legal dan Compliance" di sumber dibaca sebagai Departemen Legal (Line Manager Legal dan Staff Legal, JA-08 dan JA-09, pemetaan USULAN butir K-13); "IT" dipetakan ke VP Tech Operation and Services (JA-04), sama dengan pemetaan SNX-LEG-SOP-01; "Unit Terkait" dibuat peran "PIC Unit Kerja" yang didefinisikan di Istilah karena tidak ada padanan jabatan di SNX-HR-ORG-01. Line Manager Legal dan Staff Legal ditulis sebagai nama peran (matriks peran SNX-HR-ORG-01), bukan nama jabatan; jabatannya Legal & Compliance (JA-08, JA-09), pemetaan USULAN U22.
 3. Pembagian "Staff Legal menyusun dan mencatat, Line Manager Legal menetapkan dan memeriksa" mengikuti SNX-LEG-SOP-01 butir 4.6 (USULAN di dokumen itu). Sumber tidak menyebut pelaku sama sekali.
 4. Hasil tinjauan pelindungan data pribadi di SNX-LEG-SOP-01 prosedur 6.7 langkah 1 dibaca sebagai lembar tinjauan form ini; dokumen itu sendiri menandainya USULAN.
 5. Tiket: B.1 menulis "tiket" tanpa nama sistem karena SNX-ISMS-SOP-02 yang dirujuk menetapkan jalurnya (Service Hub GLPI). Zammad untuk Operation dan GLPI untuk generalist (config/defaults.json) tidak bertentangan.
@@ -120,7 +121,7 @@ Diagram tidak dibuat. Sumber tidak punya diagram (audit membuka halaman 1 sampai
 
 ## USULAN
 
-Jumlah: 25 butir. Penanda "(USULAN" di spec: 33 kemunculan (lint menghitung 29 yang berbentuk persis "(USULAN)"); satu butir bisa muncul di beberapa tempat. Satu label "(USULAN, perlu konfirmasi konsultan)" di bagian 12.
+Jumlah: 26 butir (U26 ditambah saat sweep). Penanda "(USULAN" di spec: 34 kemunculan (lint menghitung 31 yang berbentuk persis "(USULAN)"); satu butir bisa muncul di beberapa tempat. Satu label "(USULAN, perlu konfirmasi konsultan)" di bagian 12.
 
 | # | Butir | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -145,10 +146,11 @@ Jumlah: 25 butir. Penanda "(USULAN" di spec: 33 kemunculan (lint menghitung 29 y
 | U19 | Daftar peraturan pelaksana dicatat di SNX-LEG-REG-03 | Bagian 3 butir 3; Dokumen Terkait | Legal |
 | U20 | SNX-LEG-SOP-01 prosedur 6.7 memuat hasil tinjauan yang dicatat di form ini | Dokumen Terkait | Legal |
 | U21 | SNX-LEG-FRM-01 dan SNX-LEG-FRM-02 sebagai telaah lengkap kontrak | Bagian 1; Dokumen Terkait | Legal |
-| U22 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 (butir K-13 di SNX-HR-ORG-01) | Dokumen Terkait | owner |
-| U23 | Jabatan penyetuju lembar tinjauan | Peran | Samuel |
+| U22 | Pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance JA-08 dan JA-09 (butir K-13 di SNX-HR-ORG-01) | Peran (paragraf penutup); Dokumen Terkait | owner |
+| U23 | Peran penyetuju lembar tinjauan; Line Manager Legal memutuskannya | Peran | Legal (Line Manager Legal) |
 | U24 | Bukti yang diperiksa tetap di sistem asal dengan pemilik PIC Unit Kerja | Rekaman | Legal |
 | U25 | Daftar klausul ISO 9001:2015 dan ISO/IEC 27001:2022 | Bagian 12 | owner (konfirmasi lewat konsultan) |
+| U26 | Kategori SNX-LEG-SOP-03 untuk lembar tinjauan (Kategori 4 dokumen penelaahan Legal atau Kategori 7 dokumen pelindungan data dan kerahasiaan) dan periode retensinya | Rekaman; Dokumen Terkait | Legal |
 
 ## Open items
 
@@ -156,9 +158,9 @@ Jumlah: 25 butir. Penanda "(USULAN" di spec: 33 kemunculan (lint menghitung 29 y
 |---|---|---|
 | 1 | Isi kolom Hal yang Diperiksa (U5) dan tiga aspek tambahan (U6) perlu persetujuan sebelum form dipakai. Kriteria disusun dari SNX-LEG-SOP-01, SNX-ISMS-PRO-01, SNX-ISMS-SOP-01, SNX-ISMS-SOP-02, dan SNX-ISMS-FRM-03 yang masih berstatus Draft atau dalam peninjauan; bila dokumen itu berubah, kriteria ikut diperiksa ulang | Legal |
 | 2 | Frekuensi tinjauan tidak ada di sumber. Setahun sekali (U4) mengikuti review_period YEARLY; belum ada keputusan | Legal |
-| 3 | Penyetuju tiap lembar tinjauan tidak ada di sumber (blok "Disetujui oleh" kosong); blok Approval template menyetujui form, bukan lembar | Samuel |
+| 3 | Peran penyetuju tiap lembar tinjauan tidak ada di sumber (blok "Disetujui oleh" kosong); blok Approval template menyetujui form, bukan lembar. Dokumen menulis Line Manager Legal memutuskannya (U23) | Legal |
 | 4 | Peraturan pelaksana UU PDP dan sistem elektronik: apakah UU No. 1 Tahun 2024, PP No. 71 Tahun 2019, dan Peraturan BSSN No. 4 Tahun 2021 (disebut Manual M-SMT-01 menurut audit) masuk SNX-LEG-REG-03. Belum dibawa ke form ini | Legal |
-| 5 | Periode retensi dokumen pelindungan data (Kategori 7 di SNX-LEG-SOP-03, usulan 5 tahun) belum ditetapkan dan belum diperiksa terhadap UU No. 27 Tahun 2022. Kolom Retensi di bagian 12 tertulis "Belum ditetapkan" | Legal |
+| 5 | Periode retensi dokumen pelindungan data (Kategori 7 di SNX-LEG-SOP-03, usulan 5 tahun) belum ditetapkan dan belum diperiksa terhadap UU No. 27 Tahun 2022. Kategori mana yang berlaku bagi lembar tinjauan (Kategori 4 atau 7) belum diputus (U26). Kolom Retensi di bagian 12 tertulis "Belum ditetapkan" | Legal |
 | 6 | Tiga dokumen Legal memakai tiga kosakata status berbeda (audit butir 13). Form ini memakai lima nilai sumber; penyelarasan antardokumen belum diputus | Legal |
 | 7 | Jalur penerimaan permintaan hak subjek data (F.1) tidak ditemukan di dokumen SINUX yang dibaca. Kriteria F.1 menanyakan jalur yang SINUX tetapkan; bila belum ada, aspek itu akan berstatus Perlu Perbaikan | Legal |
 | 8 | Keterkaitan form ini ke SoA (kontrol 5.31 dan 5.34, status "Perlu keputusan", pemilik ISMS Coordinator menurut audit) adalah inferensi audit. SoA di tangan konsultan; form ini belum dirujuk SoA. Jabatan ISMS Coordinator belum ditetapkan (SNX-HR-ORG-01 butir K-13) | owner |
@@ -169,6 +171,34 @@ Jumlah: 25 butir. Penanda "(USULAN" di spec: 33 kemunculan (lint menghitung 29 y
 | 13 | SNX-LEG-FRM-01 dan SNX-LEG-FRM-02 sedang disusun lane lain (spec ada di repo, belum diverifikasi). Rujukan form ini memakai judul worklist; cek konsistensi saat verifikasi | verifikator |
 | 14 | Dua kalimat sumber bernada perintah ("Dasar peninjauan harus diverifikasi dan diperbarui ..." dan "checklist sesuai hasil penelaahan") diperlakukan sebagai isi dokumen, bukan instruksi, dan dimuat sebagai Ketentuan butir 2 dan Petunjuk butir 6 | Legal |
 | 15 | Kriteria memuat "lokasi di luar wilayah Indonesia" (D.3) sebagai contoh lokasi transfer; sumber tidak menyebut transfer lintas negara dan tidak ada fakta SINUX tentang lokasi data | Legal |
+| 16 | SNX-LEG-SOP-01 (pemilik memo kepatuhan dan register: Staff Legal) dan SNX-LEG-SOP-03 (pemilik semua kategori dokumen Legal: Line Manager Legal) berbeda soal pemilik rekaman Legal. Form ini mengikuti SNX-LEG-SOP-03; selisih kedua SOP belum diputus | Legal |
+
+## Sweep
+
+Putaran sweep 15 Okt 2026 dari orkestrator WORKER-ISO-01 (instruksi /tmp/claude-0/prompts/LEG-FRM-03.sweep.txt; temuan pemeriksa di qa/LEG-FRM-03.verify.json, verdict PASS, 9 temuan nonblocking). Hanya dua butir yang diubah, yaitu butir 1 dan butir 2 di instruksi; fakta, angka, nama, dan struktur bagian tidak berubah. Satu baris Istilah ditambah (Persetujuan akses) dan satu USULAN ditambah (U26).
+
+| Butir | Letak | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Aspek A.1 | "Semua kegiatan pengolahan data pribadi atau informasi rahasia tercatat di inventaris" | "Semua kegiatan pengelolaan data pribadi atau informasi rahasia tercatat di inventaris", sama dengan istilah terdefinisi "Kegiatan pengelolaan data" |
+| 1 | Istilah; aspek B.1 dan B.2 | B.1 "dengan approval yang tercatat"; B.2 "sesuai persetujuan"; tanpa definisi | Baris baru "Persetujuan akses: Izin yang diberikan untuk satu permintaan akses ke sistem, menurut SNX-ISMS-SOP-02."; B.1 dan B.2 sama-sama memakai "persetujuan akses". "Approval" tersisa hanya sebagai nama blok template |
+| 1 | Bagian 5, paragraf penutup | "Legal memutuskannya (USULAN)" dan "Jabatan penyetuju lembar tinjauan belum ditetapkan" | "Line Manager Legal memutuskannya (USULAN)" dan "Peran penyetuju lembar tinjauan belum ditetapkan". Pemutus di notes (U23, Open items 3) disamakan dengan dokumen: Legal (Line Manager Legal), sebelumnya tertulis Samuel di notes |
+| 1 | Aspek B.4 | "Data RESTRICTED (Internal) dan SECRET dikirim lewat kanal resmi kepada penerima yang berhak, tidak lewat kanal pribadi (SNX-LEG-SOP-01 butir 4.23; SNX-ISMS-PRO-01 butir 4.9)." | "Informasi RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi (SNX-LEG-SOP-01 butir 4.23). Informasi RESTRICTED (Internal) dikirim kepada penerima yang berhak, dan informasi SECRET lewat kanal yang ditetapkan SNX-ISMS-PRO-01 butir 4.9." Butir 4.9 hanya mengatur "penerima yang berhak" untuk RESTRICTED; kanal SECRET lebih ketat |
+| 1 | Aspek E.2 | "Data yang melewati masa retensi dihapus aman, kertasnya dihancurkan, dan pemusnahan media dicatat dengan berita acara (SNX-ISMS-PRO-01 butir 4.16; SNX-ISMS-SOP-04)." | "Data RESTRICTED (Internal) dan SECRET yang melewati masa retensi dihapus aman, dan kertas RESTRICTED (Internal) dihancurkan (SNX-ISMS-PRO-01 butir 4.16). Pemusnahan media dicatat dengan berita acara (SNX-ISMS-SOP-04)." Butir 4.16 menetapkan hapus biasa untuk INTERNAL dan penghancuran kertas hanya untuk RESTRICTED |
+| 1 | Dokumen Terkait, baris SNX-HR-ORG-01 | "Tempat nama jabatan Line Manager Legal, Staff Legal, dan VP Tech Operation and Services ditetapkan. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09 (USULAN, butir K-13)." | "Matriks peran memuat Line Manager Legal dan Staff Legal sebagai peran, dan VP Tech Operation and Services sebagai jabatan JA-04. Butir K-13 memuat pemetaan peran Legal ke jabatan." Label USULAN dan JA-08 dan JA-09 pindah ke bagian 5 (satu tempat) |
+| 1 | Dokumen Terkait, baris SNX-LEG-SOP-03; Petunjuk 4 | "Legal" berdiri sendiri: "dokumen penelaahan Legal", "Pemilik rekaman Legal", "Untuk Legal" | "dokumen penelaahan oleh Departemen Legal", "Pemilik rekaman", "Untuk Departemen Legal"; semua memakai istilah terdefinisi. Tidak ada lagi "Legal" tunggal di badan, kecuali sebagai bagian nama peran dan nama dokumen |
+| 2 | Bagian 5, paragraf penutup | Pemetaan ke JA-08 dan JA-09 hanya ada di Dokumen Terkait | Kalimat baru di awal paragraf: "Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN)." |
+| 2 | Petunjuk Pengisian butir 4 | "memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)." | "memuat nama peran atau jabatan menurut SNX-HR-ORG-01, bukan nama orang. Untuk Departemen Legal, tulis peran Line Manager Legal atau Staff Legal (USULAN)." |
+| 2 | Bagian 5, baris Line Manager Legal | "Pemilik form ini (USULAN)." | "Pemilik form ini (USULAN) dan pemilik rekaman lembar tinjauan menurut SNX-LEG-SOP-03." |
+| 2 | Bagian 12, tabel Rekaman, baris lembar tinjauan | "Pemilik: Staff Legal." dan retensi "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03." | "Pemilik: Line Manager Legal, mengikuti SNX-LEG-SOP-03." dan retensi "Belum ditetapkan. Kategori SNX-LEG-SOP-03 untuk lembar tinjauan, Kategori 4 atau 7, belum diputus (USULAN)." |
+| 2 | Dokumen Terkait, baris SNX-LEG-SOP-03 | "Kategori 7 memuat dokumen pelindungan data dan kerahasiaan. Usulan periode retensinya ada di sana." | Kategori 4 (dokumen penelaahan oleh Departemen Legal, termasuk hasil pemeriksaan kepatuhan) ditambahkan di samping Kategori 7, dan "Pemilik rekaman dan usulan periode retensi ada di sana" |
+
+Alasan penyelarasan pemilik rekaman: SNX-LEG-SOP-03 (specs/LEG-SOP-03.json, tabel Rekaman) menetapkan pemilik Line Manager Legal untuk semua kategori dokumen Legal, termasuk Kategori 4 dan 7; SNX-LEG-SOP-01 menulis pemilik memo kepatuhan dan register Staff Legal. Instruksi sweep memilih SNX-LEG-SOP-03, jadi lembar tinjauan dimiliki Line Manager Legal. Ketentuan butir 14 tetap "Staff Legal menyimpan" karena itu tindakan menyimpan, bukan kepemilikan rekaman. Perbedaan SNX-LEG-SOP-01 dan SNX-LEG-SOP-03 soal pemilik rekaman sendiri tidak diselesaikan di sini (Open items 16). Baris rekaman kedua (bukti yang diperiksa) tetap berpemilik PIC Unit Kerja (USULAN U24) karena bukti tetap di sistem unit asalnya dan bukan rekaman Legal menurut SNX-LEG-SOP-03.
+
+Kategori 4 atau 7: teks SNX-LEG-SOP-03 menempatkan "hasil pemeriksaan kepatuhan" di Kategori 4 ("Sama dengan dokumen yang ditelaah", USULAN) dan "dokumen pelindungan data dan kerahasiaan" di Kategori 7 (usulan 5 tahun). Lembar tinjauan ini memenuhi keduanya, jadi pilihan kategori dan periodenya menjadi USULAN U26 dan tidak diputus penyusun.
+
+Temuan pemeriksa yang sengaja tidak diubah karena di luar butir sweep: kapitalisasi nilai Status Verifikasi dan nilai bersama "Belum Diverifikasi" (Petunjuk 5), narasi "ditambahkan" dan "aspek tambahan" di bagian 3, 7, dan 8, dua tindakan dalam satu butir di Ketentuan 2 dan 11, serta Direktur (COO) di F.3 yang tidak ada di tabel Peran (pemeriksa menilainya dapat diterima). Semuanya tetap tercatat untuk keputusan orkestrator.
+
+Hasil uji sesudah sweep: render berhasil; lint_doc generic pass true, fails kosong, warn "31 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan `ok 18 LEG-FRM-03.docx []`. Pencarian teks: tidak ada em-dash atau en-dash; semua 11 kode SNX di badan ada di Dokumen Terkait; pola benda dengan kata kerja manusia tidak menemukan temuan baru.
 
 ## Jawaban dua pertanyaan penutup
 

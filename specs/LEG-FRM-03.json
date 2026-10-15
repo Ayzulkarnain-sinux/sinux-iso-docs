@@ -194,6 +194,10 @@
                 "Pihak yang menentukan tujuan dan mengendalikan pemrosesan data pribadi."
               ],
               [
+                "Persetujuan akses",
+                "Izin yang diberikan untuk satu permintaan akses ke sistem, menurut SNX-ISMS-SOP-02."
+              ],
+              [
                 "PIC Unit Kerja",
                 "Orang yang unit kerja tunjuk sebagai penanggung jawab satu kegiatan pengelolaan data, ditulis pada kolom Unit Kerja/PIC."
               ],
@@ -382,7 +386,7 @@
               ],
               [
                 "Line Manager Legal",
-                "Pemilik form ini (USULAN). Menetapkan PIC dan target penyelesaian temuan, memeriksa lembar tinjauan, menulis rekomendasi, dan memilih opsi kesimpulan (Ketentuan butir 11 sampai 13). Mengisi tahapan Diperiksa oleh pada bagian 10 (USULAN)."
+                "Pemilik form ini (USULAN) dan pemilik rekaman lembar tinjauan menurut SNX-LEG-SOP-03. Menetapkan PIC dan target penyelesaian temuan, memeriksa lembar tinjauan, menulis rekomendasi, dan memilih opsi kesimpulan (Ketentuan butir 11 sampai 13). Mengisi tahapan Diperiksa oleh pada bagian 10 (USULAN)."
               ],
               [
                 "VP Tech Operation and Services",
@@ -400,7 +404,7 @@
           }
         },
         {
-          "p": "Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar tinjauan tercatat di bagian 10. Jabatan penyetuju lembar tinjauan belum ditetapkan; Legal memutuskannya (USULAN)."
+          "p": "Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN). Pengesahan form ini tercatat di blok Approval pada halaman depan. Pihak yang menyusun, memeriksa, dan menyetujui tiap lembar tinjauan tercatat di bagian 10. Peran penyetuju lembar tinjauan belum ditetapkan; Line Manager Legal memutuskannya (USULAN)."
         }
       ]
     },
@@ -417,7 +421,7 @@
           "p": "3. Kolom Klasifikasi memuat salah satu dari empat tingkat di bagian 2 (USULAN: kolom baru)."
         },
         {
-          "p": "4. Kolom Unit Kerja/PIC di bagian 7 dan kolom PIC di bagian 9 memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+          "p": "4. Kolom Unit Kerja/PIC di bagian 7 dan kolom PIC di bagian 9 memuat nama peran atau jabatan menurut SNX-HR-ORG-01, bukan nama orang. Untuk Departemen Legal, tulis peran Line Manager Legal atau Staff Legal (USULAN)."
         },
         {
           "p": "5. Kolom Status Verifikasi memuat Sudah diverifikasi atau Belum Diverifikasi, sesuai hasil mencocokkan baris dengan bukti (USULAN)."
@@ -593,7 +597,7 @@
               [
                 "A.1",
                 "Inventarisasi Data",
-                "Semua kegiatan pengolahan data pribadi atau informasi rahasia tercatat di inventaris (bagian 7), lengkap dengan jenis data dan lokasi penyimpanannya.",
+                "Semua kegiatan pengelolaan data pribadi atau informasi rahasia tercatat di inventaris (bagian 7), lengkap dengan jenis data dan lokasi penyimpanannya.",
                 "",
                 ""
               ],
@@ -651,14 +655,14 @@
               [
                 "B.1",
                 "Hak Akses",
-                "Akses ke data pribadi dan informasi rahasia diminta lewat tiket dan diberikan menurut kebutuhan kerja dengan approval yang tercatat (SNX-ISMS-SOP-02).",
+                "Akses ke data pribadi dan informasi rahasia diminta lewat tiket dan diberikan menurut kebutuhan kerja dengan persetujuan akses yang tercatat (SNX-ISMS-SOP-02).",
                 "",
                 ""
               ],
               [
                 "B.2",
                 "Pengelolaan Akun",
-                "Akun pengguna dibuat, diubah, dan dicabut sesuai persetujuan, dan akses karyawan yang berhenti dicabut paling lambat pada hari terakhir kerja (SNX-ISMS-SOP-02).",
+                "Akun pengguna dibuat, diubah, dan dicabut sesuai persetujuan akses, dan akses karyawan yang berhenti dicabut paling lambat pada hari terakhir kerja (SNX-ISMS-SOP-02).",
                 "",
                 ""
               ],
@@ -672,7 +676,7 @@
               [
                 "B.4",
                 "Pemindahan Data",
-                "Data RESTRICTED (Internal) dan SECRET dikirim lewat kanal resmi kepada penerima yang berhak, tidak lewat kanal pribadi (SNX-LEG-SOP-01 butir 4.23; SNX-ISMS-PRO-01 butir 4.9).",
+                "Informasi RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi (SNX-LEG-SOP-01 butir 4.23). Informasi RESTRICTED (Internal) dikirim kepada penerima yang berhak, dan informasi SECRET lewat kanal yang ditetapkan SNX-ISMS-PRO-01 butir 4.9.",
                 "",
                 ""
               ],
@@ -811,7 +815,7 @@
               [
                 "E.2",
                 "Penghapusan Data",
-                "Data yang melewati masa retensi dihapus aman, kertasnya dihancurkan, dan pemusnahan media dicatat dengan berita acara (SNX-ISMS-PRO-01 butir 4.16; SNX-ISMS-SOP-04).",
+                "Data RESTRICTED (Internal) dan SECRET yang melewati masa retensi dihapus aman, dan kertas RESTRICTED (Internal) dihancurkan (SNX-ISMS-PRO-01 butir 4.16). Pemusnahan media dicatat dengan berita acara (SNX-ISMS-SOP-04).",
                 "",
                 ""
               ],
@@ -1043,7 +1047,7 @@
               ],
               [
                 "SNX-LEG-SOP-03",
-                "Legal Document Control & Retention. Kategori 7 memuat dokumen pelindungan data dan kerahasiaan. Usulan periode retensinya ada di sana."
+                "Legal Document Control & Retention. Kategori 4 memuat dokumen penelaahan oleh Departemen Legal, termasuk hasil pemeriksaan kepatuhan, dan Kategori 7 memuat dokumen pelindungan data dan kerahasiaan. Pemilik rekaman dan usulan periode retensi ada di sana."
               ],
               [
                 "SNX-LEG-FRM-01",
@@ -1079,7 +1083,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Tempat nama jabatan Line Manager Legal, Staff Legal, dan VP Tech Operation and Services ditetapkan. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09 (USULAN, butir K-13)."
+                "Struktur Organisasi SINUX. Matriks peran memuat Line Manager Legal dan Staff Legal sebagai peran, dan VP Tech Operation and Services sebagai jabatan JA-04. Butir K-13 memuat pemetaan peran Legal ke jabatan."
               ]
             ],
             "widths_cm": [
@@ -1106,8 +1110,8 @@
             "rows": [
               [
                 "Lembar tinjauan terisi: inventaris, daftar evaluasi, temuan, hasil, dan persetujuan",
-                "Folder Google Drive departemen Legal (Ketentuan butir 14). Pemilik: Staff Legal. Klasifikasi paling rendah RESTRICTED (Internal).",
-                "Belum ditetapkan. Usulan penetapan ada di SNX-LEG-SOP-03."
+                "Folder Google Drive departemen Legal (Ketentuan butir 14). Pemilik: Line Manager Legal, mengikuti SNX-LEG-SOP-03. Klasifikasi paling rendah RESTRICTED (Internal).",
+                "Belum ditetapkan. Kategori SNX-LEG-SOP-03 untuk lembar tinjauan, Kategori 4 atau 7, belum diputus (USULAN)."
               ],
               [
                 "Bukti yang diperiksa tiap aspek",

@@ -1678,7 +1678,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-FRM-03",
    "out_path": "out/04_Legal/SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx",
    "sources": [
@@ -1695,7 +1695,7 @@
    "open_items": [
     "Sweep (b): istilah pengolahan A.1, approval/persetujuan, Legal tanpa definisi; E.2 dan B.4 merangkum ISMS-PRO-01 terlalu luas; baris HR-ORG-01 menyebut peran sebagai jabatan (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:55:38Z",
+   "updated_at": "2026-10-15T00:58:48Z",
    "pen_agent": "abeadc3abe601e504",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1755,10 +1755,10 @@
    "open_items": [
     "Sweep (b): nama kolom Tingkat Risiko vs Kategori Risiko di LEG-REG-02 (skala sama); lihat qa/LEG-RPT-01.verify.json nonblocking"
    ],
-   "updated_at": "2026-10-15T00:58:03Z",
+   "updated_at": "2026-10-15T00:58:05Z",
    "pen_agent": "a66c8287ed6e4a192",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 52,
@@ -1840,18 +1840,18 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-FRM-01",
    "out_path": "out/03_FAT/SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 13,
+   "usulan_count": 14,
    "open_items": [
     "Sweep (a): rujuk SNX-FAT-SOP-06 (SOP Accounting) dan SNX-FAT-REG-01 (Billing & Collection Monitoring Register) dengan nomor sesudah W7b DONE; 6.11 dan tabel Rekaman saling menunjuk untuk lokasi bukti"
    ],
-   "updated_at": "2026-10-15T00:55:54Z",
+   "updated_at": "2026-10-15T00:58:17Z",
    "pen_agent": "a2e0550886843b182",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1864,7 +1864,7 @@
    "dept": "FAT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-RPT-02",
    "out_path": "out/03_FAT/SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).docx",
    "sources": [],
@@ -1875,7 +1875,7 @@
    "open_items": [
     "Sweep (a): status dalam peninjauan untuk SNX-FAT-SOP-06 diganti rujukan nomor sesudah W7b"
    ],
-   "updated_at": "2026-10-15T00:56:43Z",
+   "updated_at": "2026-10-15T00:58:21Z",
    "pen_agent": "aee3e2330d196bdfb",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1888,18 +1888,18 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-REG-03",
    "out_path": "out/04_Legal/SNX-LEG-REG-03 Legal & Regulatory Requirements Register (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 20,
+   "usulan_count": 22,
    "open_items": [
     "Sweep (b): Line Manager Legal dan Staff Legal disebut nama jabatan (di HR-ORG-01 nama peran, pemetaan USULAN); pemilik rekaman bentrok dengan LEG-SOP-03"
    ],
-   "updated_at": "2026-10-15T00:56:44Z",
+   "updated_at": "2026-10-15T00:58:41Z",
    "pen_agent": "aa740b69850044e56",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1936,7 +1936,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-LEG-REG-04",
    "out_path": "out/04_Legal/SNX-LEG-REG-04 Company Legal Documents Register (Rev00 DRAFT).docx",
    "sources": [],
@@ -1947,9 +1947,10 @@
    "open_items": [
     "Sweep (b): label USULAN kurang pada pemetaan jabatan HR-ORG-01 dan aturan Pihak=SINUX; dokumen asli vs dokumen elektronik; pasif; isi berulang"
    ],
-   "updated_at": "2026-10-15T00:08:36Z",
+   "updated_at": "2026-10-15T00:58:06Z",
    "pen_agent": "afb835975bbe2e803",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 60,

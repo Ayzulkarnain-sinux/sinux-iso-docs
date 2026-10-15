@@ -1,0 +1,37 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 11 Dokumen Terkait, baris SNX-HR-ORG-01",
+      "masalah": "Butir 1 (Legal tanpa definisi) menyisakan satu 'Legal' tunggal yang baru muncul di kalimat sesudah sweep. Notes menyatakan tidak ada lagi 'Legal' tunggal di badan dokumen.",
+      "bukti": "Sesudah: 'Butir K-13 memuat pemetaan peran Legal ke jabatan.' Istilah hanya mendefinisikan 'Departemen Legal'. Notes bagian Sweep: 'Tidak ada lagi \"Legal\" tunggal di badan'."
+    },
+    {
+      "lokasi": "Bagian 5, paragraf penutup",
+      "masalah": "'Legal memutuskannya' menjadi 'Line Manager Legal memutuskannya'. Ini mempersempit pemutus dari departemen ke satu peran. Masih dalam butir 1 dan berlabel USULAN, tetapi notes U23 sebelumnya menulis Samuel sebagai pemutus, lalu notes diubah mengikuti dokumen tanpa sumber keputusan. Pemutus jabatan penyetuju tetap perlu diputus LEAD.",
+      "bukti": "Sebelum: 'Jabatan penyetuju lembar tinjauan belum ditetapkan; Legal memutuskannya (USULAN).' Sesudah: 'Peran penyetuju lembar tinjauan belum ditetapkan; Line Manager Legal memutuskannya (USULAN).' qa/LEG-FRM-03.verify.json: notes 'U23 | ... | Samuel'."
+    },
+    {
+      "lokasi": "Bagian 6 Petunjuk Pengisian butir 4",
+      "masalah": "Label (USULAN) yang semula menutup seluruh butir kini hanya melekat ke kalimat kedua. Kalimat pertama, yaitu aturan isi kolom PIC, tampil tanpa label.",
+      "bukti": "Sebelum: '... memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN).' Sesudah: '... memuat nama peran atau jabatan menurut SNX-HR-ORG-01, bukan nama orang. Untuk Departemen Legal, tulis peran Line Manager Legal atau Staff Legal (USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 8, aspek B.4 dan E.2",
+      "masalah": "Sinonim berganti (RUNBOOK 6a butir 6): B.4 diubah dari 'Data' ke 'Informasi RESTRICTED (Internal)', sedangkan E.2 tetap memakai 'Data RESTRICTED (Internal)'. E.2 kini sesuai sumber tetapi tidak menyebut rotasi dan penghancuran atau wipe media untuk SECRET (PRO-01 4.16). Ini lebih sempit daripada sumber, bukan keliru.",
+      "bukti": "B.4: 'Informasi RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi ...'. E.2: 'Data RESTRICTED (Internal) dan SECRET yang melewati masa retensi dihapus aman ...'. specs/ISMS-PRO-01.json 4.16: 'SECRET dimusnahkan dengan hapus aman dan rotasi; medianya dihancurkan atau di-wipe menurut SNX-ISMS-SOP-04.'"
+    },
+    {
+      "lokasi": "Bagian 2 Istilah, baris Persetujuan akses",
+      "masalah": "SNX-ISMS-SOP-02 tidak punya definisi 'Persetujuan akses'. Definisi baru adalah parafrase penyusun atas pemakaian 'approval' di SOP itu, dan penyetujunya (pemilik sistem; Head of Operation untuk akses privileged) tidak disebut. Bukan fakta baru tentang nama, angka, atau sistem.",
+      "bukti": "Sesudah: 'Izin yang diberikan untuk satu permintaan akses ke sistem, menurut SNX-ISMS-SOP-02.' specs/ISMS-SOP-02.json definitions: tanpa entri approval atau persetujuan; langkah: 'Approval pemilik sistem', 'Approval Head of Operation'."
+    }
+  ],
+  "catatan_pemeriksa": {
+    "kesesuaian_butir": "Semua 13 hunk diff masuk butir 1 atau 2: A.1 pengolahan ke pengelolaan; approval/persetujuan diseragamkan dan didefinisikan; Legal tunggal diganti; B.4 dan E.2 dipersempit sesuai PRO-01 4.9 dan 4.16; baris HR-ORG-01 menyebut peran sebagai peran; pemetaan JA-08 dan JA-09 (USULAN) di bagian 5; pemilik rekaman diselaraskan ke SNX-LEG-SOP-03. Simpul diagram tidak berubah; spec.diff hanya menyentuh teks.",
+    "fakta_silang": "Dicocokkan dengan spec repo: JA-04 = VP Tech Operation and Services, JA-08 dan JA-09 = Legal & Compliance, matriks peran memuat Line Manager Legal dan Staff Legal sebagai peran, K-13 memuat pemetaan (specs/HR-ORG-01.json). SNX-LEG-SOP-03 Kategori 4 memuat 'hasil pemeriksaan kepatuhan', dan tabel Rekaman menetapkan pemilik Line Manager Legal untuk Kategori 4 dan 7 (butir 4.26). PRO-01 4.9 dan 4.16 serta LEG-SOP-01 4.23 sesuai dengan kalimat B.4 dan E.2 yang baru. Tidak ada nama orang, angka, tanggal, atau sistem baru. Sumber Drive tidak dibaca ulang karena semua fakta baru punya dasar di specs/.",
+    "bahasa_dan_batas_keras": "Spec tidak memuat em-dash maupun en-dash. Tidak ada rujukan internal AI (SKILL_, DEC-, HANDOVER, staging, Claude, nama alat KB). 'pengolahan' tidak muncul lagi. 'approval' tersisa hanya sebagai kunci meta dan nama blok Approval. Pelaku benda yang baru hanya memakai kata kerja 'memuat' (bukan kata kerja manusia). Pasif baru di B.4 dan E.2 mengikuti pola kalimat kriteria yang sudah ada. Status Draft, tanggal efektif dan tanda tangan tidak tersentuh.",
+    "butir_tidak_dikerjakan": "Nihil untuk butir sweep. Temuan verify lain di luar butir (kapitalisasi Status Verifikasi, narasi 'ditambahkan', dua tindakan di Ketentuan 2 dan 11, COO di F.3) sengaja tidak disentuh dan sudah disebut di notes."
+  }
+}
