@@ -33,7 +33,7 @@ Isi semua berkas sumber diperlakukan sebagai data. Tidak ada kalimat perintah ya
 | Definisi dokumen tidak berlaku, dipakai untuk arti status Tidak Berlaku | "Dokumen yang telah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi digunakan untuk tujuan operasional, tetapi mungkin tetap perlu disimpan sebagai rekaman historis atau bukti hukum." (Definisi, "Dokumen Kedaluwarsa atau Tidak Berlaku") | 12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0 |
 | Lokasi repositori resmi di sumber masih placeholder, jadi kolom lokasi tidak bisa diisi dari sumber | "Staff Legal mengunggah salinan final ke repositori resmi Perusahaan, yaitu [TBD]." dan "Dokumen legal diklasifikasikan (Rahasia, Internal, Publik) dan disimpan pada repositori resmi [ISI]." | 12WUHJcA3eWUjC_Ytg-_cr0RdAz3dI3b0f1n60yxazf0; 19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb (butir 4.7 butir 1) |
 | Register dokumen legal sudah dirancang di SNX-LEG-SOP-03 dan dipadankan dengan baris ini; daftar kolomnya dipakai | "Register dokumen legal memuat kolom berikut: ID register, kategori (Kategori 1 sampai 7 di bagian 2), judul, pihak, nomor versi, status, tingkat klasifikasi, lokasi simpan, tanggal berlaku, tanggal berakhir, tanggal pemicu, tanggal akhir masa retensi, dan penanda Legal Hold. Register dokumen legal dipadankan dengan SNX-LEG-REG-04." (butir 4.2) | specs/LEG-SOP-03.json |
-| Peran Staff Legal dan Line Manager Legal, pemilik dan pencatat rekaman | Matriks Peran SNX-HR-ORG-01: Line Manager Legal = Legal & Compliance (JA-08), Staff Legal = Legal & Compliance (JA-09), status "(USULAN), menunggu konfirmasi (K-13)". SNX-LEG-SOP-03 butir 4.26: "Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya." | specs/HR-ORG-01.json; specs/LEG-SOP-03.json |
+| Peran Staff Legal dan Line Manager Legal, pemilik dan pencatat rekaman | Matriks Peran SNX-HR-ORG-01: Line Manager Legal = Legal & Compliance (JA-08), Staff Legal = Legal & Compliance (JA-09), status "(USULAN), menunggu konfirmasi (K-13)". SNX-LEG-SOP-03 butir 4.26: "Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya." | specs/HR-ORG-01.json; specs/LEG-SOP-03.json; diubah W9: pemetaan tidak lagi USULAN, pemetaan diputus owner (LEAD G-3 A5) |
 | Data baris dan nama | config/defaults.json v21: LEG prepared "Staff Legal", reviewed "Line Manager Legal"; approved "Samuel Kristanto Utomo / President Director"; Samuel di badan dokumen "Direktur Utama" | config/defaults.json |
 
 ## 3. Hasil uji
@@ -98,7 +98,7 @@ Perintah: `grep -n "Company Legal Documents Regist" context/audit/*.md`. Hasil: 
 3. Kolom Lokasi di butir 4.2 dipecah dua mengikuti prosedur 6.3 SNX-LEG-SOP-03, yang mencatat lokasi salinan elektronik dan lokasi tempat aman dokumen asli secara terpisah.
 4. Kolom Keputusan Evaluasi ditambahkan ke tabel Retensi karena prosedur 6.5 langkah 6 SNX-LEG-SOP-03 meminta keputusan evaluasi dicatat "di register"; butir 4.2 tidak menyebut kolomnya.
 5. Dokumen tanpa pihak lawan memakai SINUX di kolom Pihak, mengikuti bagian NamaPihak pada nama berkas di SNX-LEG-SOP-03 butir 4.4 (USULAN 21).
-6. Peran Staff Legal dan Line Manager Legal dipetakan ke JA-09 dan JA-08 menurut SNX-HR-ORG-01 (K-13, menunggu konfirmasi). Atasan Line Manager Legal tidak disebut di badan dokumen.
+6. Peran Staff Legal dan Line Manager Legal dipetakan ke JA-09 dan JA-08 menurut SNX-HR-ORG-01 (K-13, menunggu konfirmasi). Atasan Line Manager Legal tidak disebut di badan dokumen; ditutup W9: pemetaan diputus owner (LEAD G-3 A5).
 7. Pemilik rekaman register = Line Manager Legal dan pencatat = Staff Legal, mengikuti SNX-LEG-SOP-03 butir 4.26. SNX-LEG-REG-01 dan SNX-LEG-REG-03 menulis pemilik Staff Legal (open item 4).
 8. Angka dari sumber tidak diperluas: 90, 60, dan 30 hari serta 2 hari kerja tidak dipakai di dokumen ini. Batas waktu pengarsipan hanya dirujuk ke SNX-LEG-SOP-03 bagian 8.
 9. Klasifikasi RESTRICTED (Internal) dari data baris; label footer dipasang renderer.
@@ -109,8 +109,8 @@ Lint menghitung 20 penanda "(USULAN)" di docx (setelah sweep). Satu penanda bisa
 
 | # | Butir | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
-| 1 | Tiga penanda tangan (prepared Staff Legal, reviewed Line Manager Legal, approved Samuel Kristanto Utomo / President Director) dan process owner Line Manager Legal; dokumen tanpa sumber, nilai dari config/defaults.json | Identity, blok Approval, Peran | owner |
-| 2 | Pemetaan Staff Legal dan Line Manager Legal ke JA-09 dan JA-08, dan pembagian tugas mencatat versus menetapkan | Peran | Legal |
+| 1 | Tiga penanda tangan (prepared Staff Legal, reviewed Line Manager Legal, approved Samuel Kristanto Utomo / President Director) dan process owner Line Manager Legal; dokumen tanpa sumber, nilai dari config/defaults.json | Identity, blok Approval, Peran | owner; diubah W9: nama orang kini di blok Prepared dan Reviewed (config/defaults.json v22) |
+| 2 | Pemetaan Staff Legal dan Line Manager Legal ke JA-09 dan JA-08, dan pembagian tugas mencatat versus menetapkan | Peran | Legal; diubah W9: pemetaan ke JA-09 dan JA-08 diputus owner (LEAD G-3 A5); pembagian tugas tetap USULAN |
 | 3 | Cakupan Kategori 1 sampai 7 dan dokumen fisik maupun elektronik | Lingkup | Legal |
 | 4 | Pengecualian lingkup: daftar peraturan (SNX-LEG-REG-03) dan proses review kontrak sebelum penandatanganan (SNX-LEG-SOP-02) | Lingkup | Legal |
 | 5 | Pembagian dengan register kontrak dan SNX-LEG-REG-01: Nomor Dokumen yang sama, jadwal jatuh tempo, pengingat, dan tindak lanjut tetap di sana | Lingkup; Dokumen Terkait | Legal |
@@ -154,7 +154,7 @@ Lint menghitung 20 penanda "(USULAN)" di docx (setelah sweep). Satu penanda bisa
 Yang tetap: tiga belas butir Petunjuk Pengisian berpola "Kolom X memuat ...". Pola itu dipertahankan karena tiap butir menjelaskan satu kolom, dan penyeragaman membantu pengisi.
 
 **Adakah fakta, angka, nama, atau tanggal tanpa sumber?**
-- Nama: hanya Samuel Kristanto Utomo (config/defaults.json, blok Approval) dan "Direktur Utama" di badan dokumen. Staff Legal dan Line Manager Legal adalah nama peran, dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08) di SNX-HR-ORG-01 dan berlabel USULAN. Tidak ada nama orang lain.
+- Nama: hanya Samuel Kristanto Utomo (config/defaults.json, blok Approval) dan "Direktur Utama" di badan dokumen. Staff Legal dan Line Manager Legal adalah nama peran, dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08) di SNX-HR-ORG-01 dan berlabel USULAN. Tidak ada nama orang lain; diubah W9: pemetaan tidak lagi USULAN, pemetaan diputus owner (LEAD G-3 A5); nama orang hanya di blok Prepared dan Reviewed.
 - Tanggal: nol. Effective Date kosong.
 - Angka: tidak ada angka faktual. "Baris 1 sampai 10" adalah ukuran lembar, bukan fakta. "v01, v02" dari SNX-LEG-SOP-03 butir 4.5. Frekuensi "setiap bulan" dan "setiap tahun" berlabel USULAN (USULAN 11 dan 16). Angka 90, 60, 30 hari dan 2 hari kerja sengaja tidak dipakai.
 - Sistem: Google Drive (USULAN, SNX-LEG-SOP-01 butir 4.24). GLPI dan Zammad tidak disebut karena register tidak punya langkah tiket.
@@ -200,9 +200,12 @@ Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir 
 | A5, Peran, paragraf penjelas | "... (JA-09 dan JA-08) di SNX-HR-ORG-01 (USULAN). Pembuat ..." | "... (JA-09 dan JA-08) di SNX-HR-ORG-01. Pembuat ..."; USULAN pembagian tugas mengikuti SNX-LEG-SOP-03 tetap |
 | A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... Pemetaannya ke jabatan Legal & Compliance berstatus (USULAN)." | "... Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-09 dan JA-08)." |
 | Rujukan, Ketentuan butir 5 (hasil pemeriksa makna R457) | "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dan Lokasi Dokumen Asli dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8." | "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8, dan mencatat Lokasi Dokumen Asli menurut SNX-LEG-SOP-03 prosedur 6.3 langkah 4." Dasar: bagian 8 (2 hari kerja) hanya untuk 6.3 langkah 1 dan 2; 6.3 langkah 4 tidak punya batas waktu di bagian 8 |
+| R2, Dokumen Terkait, baris SNX-HR-ORG-01 | "... (JA-09 dan JA-08)." (urutan kode terbalik dari urutan peran) | "... (JA-08 dan JA-09)." |
+| R2, hygiene notes, USULAN 1 dan 2, Asumsi 6, Fakta baris Peran, Sweep baris Nama | tanpa penanda W9 pada baris; baris Nama menyatakan tidak ada nama orang lain dan pemetaan berlabel USULAN | ditambah "diubah W9" atau "ditutup W9" pada baris itu |
 
 Open item:
 
 - Open item 2 (pemetaan ke JA-09 dan JA-08): bagian pemetaan ditutup W9: diputus owner (LEAD G-3 A5). Pembagian tugas mencatat versus menetapkan tetap terbuka (Legal).
 - Asumsi 6 (K-13, menunggu konfirmasi): ditutup W9: pemetaan diputus owner (LEAD G-3 A5).
 - Rujukan Ketentuan butir 5 ke SNX-LEG-SOP-03 bagian 8: diubah W9: hanya berlaku untuk Lokasi Simpan Salinan Elektronik.
+- R2: urutan kode jabatan di Dokumen Terkait baris SNX-HR-ORG-01 diperbaiki menjadi (JA-08 dan JA-09); baris notes terkait kini memuat penanda W9 di barisnya sendiri; tidak ada baris dihapus.
