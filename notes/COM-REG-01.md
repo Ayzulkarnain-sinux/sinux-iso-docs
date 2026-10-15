@@ -10,7 +10,7 @@ Sumber dokumen: tidak ada (T2 tanpa sumber). Struktur kolom dan petunjuk pengisi
 |---|---|---|---|
 | Kriteria: config/checklist.json baris 54 (checked: false, link kosong) | 1zlA3Eztm08xkL_V23S5yPhiti-pgOj_T296uUI-stmY (checklist tim) | 2026-10-14T17:47:13.611Z (tertulis di config/checklist.json, tidak diukur ulang) | `sed`/`python3` pada berkas repo |
 | SALES STANDARD OPERATING PROCEDURE.pdf (dasar eskalasi keluhan kritis dan tanggung jawab customer satisfaction) | 19Hex8udn1JDG4NKY7hZaODjroHeHwMM0 | 2026-10-05T07:08:41.814Z (`get_file_metadata` hari ini; sama dengan notes/COM-SOP-02.md) | Teks dibaca dari salinan context/audit/iso-sinux-supdocs-commercial-2026-10-14.md (baris 826 dan 882). PDF aslinya tidak dibuka di sesi ini (UNMEASURED terhadap lapisan teks PDF) |
-| SINUX_Job_Analysis_2026.docx (JA-07) | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 | 2026-10-13T10:34:44.783Z (dikutip dari notes/COM-SOP-02.md, tidak diukur ulang) | Salinan context/audit/iso-sinux-supdocs-hr-2026-10-14.md |
+| SINUX_Job_Analysis_2026.docx (JA-07) | 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 | 2026-10-13T10:34:44.783Z (dikutip dari notes/COM-SOP-02.md, tidak diukur ulang) | Salinan context/audit/iso-sinux-supdocs-hr-2026-10-14.md. Sejak sweep tidak lagi menjadi dasar kalimat di dokumen; dibaca hanya sebagai konteks |
 | Pendukung repo (bukan Drive) | tidak berlaku | tidak berlaku | config/defaults.json v21 (ticketing, data_conflicts, process_owner), specs/HR-ORG-01.json (jabatan dan matriks peran), specs/COM-SOP-01.json (butir 4.10, 4.17, bagian 8 dan 9), specs/ISMS-PRO-01.json (butir 4.3), specs/OPS-SOP-04.json, specs/OPS-FRM-10.json, context/audit sintesis. Spec lane lain berstatus Draft, kutipan darinya bisa basi |
 
 Kalimat perintah kepada AI di bahan mana pun: nihil. Kalimat kewajiban untuk karyawan ("Segera eskalasikan ...") adalah isi SOP, bukan instruksi untuk saya.
@@ -27,7 +27,7 @@ Kalimat perintah kepada AI di bahan mana pun: nihil. Kalimat kewajiban untuk kar
 
 | # | Fakta di dokumen | Kutipan verbatim | Posisi |
 |---|---|---|---|
-| 1 | Business Development menjaga dokumentasi keluhan customer (Peran, Dokumen Terkait SNX-HR-JA-01). JA-07 menulis "keberatan pelanggan"; dokumen ini membacanya sebagai Keluhan (A8) | "Menjaga dokumentasi komunikasi, keberatan pelanggan dan status negosiasi." | JA-07 Business Development, Uraian Jabatan nomor 6; fileId 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 |
+| 1 | Konteks, bukan dasar kalimat di dokumen: JA-07 Business Development memuat tugas dalam konteks negosiasi. Sejak sweep tidak dikutip di Peran maupun Dokumen Terkait | "Menjaga dokumentasi komunikasi, keberatan pelanggan dan status negosiasi." | JA-07 Business Development, Uraian Jabatan nomor 6; fileId 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 |
 | 2 | Informasi customer minimal RESTRICTED, sehingga register terisi berklasifikasi RESTRICTED (Internal) (butir 4.12) | "Informasi pelanggan minimal RESTRICTED, kecuali pelanggan menetapkan tingkat yang lebih tinggi." | specs/ISMS-PRO-01.json butir 4.3 (repo, Draft); fileId sumber 1h5PtuUGE8UDPbwPtccUQ8pgwgAoW64Io |
 | 3 | Tiket Zammad untuk Ops, GLPI untuk generalist; batas generalist belum dirinci (butir 4.8) | "Kata owner 14 Okt: \"sistem tiket zammad untuk ops, glpi untuk generalist\". GLPI = SINUX Service Hub. Batas lingkup 'generalist' belum dirinci owner" | config/defaults.json, medan ticketing |
 | 4 | Batas respons ke customer yang dirujuk butir 4.6 (angkanya tidak disalin ke dokumen) | "Balasan email customer", "Business Development", "Maksimal 1 hari kerja"; "Balasan WhatsApp customer", "Business Development", "Maksimal 2 jam kerja" | specs/COM-SOP-01.json bagian 8 (SLA); asal Sales SOP 07 Customer Communication Standard, hal. 14 (salinan context/audit baris 831 sampai 836) |
@@ -55,7 +55,7 @@ Kalimat perintah kepada AI di bahan mana pun: nihil. Kalimat kewajiban untuk kar
 - `python3 -I tools/lint_doc.py /tmp/pen-COM-REG-01/COM-REG-01.docx generic` memberi `"pass": true`, `"fails": []`, satu warn "17 butir (USULAN) menunggu ACC" (keluaran di /tmp/pen-COM-REG-01/lint_final.json). Lulus sejak putaran pertama; perbaikan bahasa dari dua pertanyaan di bagian 7 dan putaran perbaikan 1 (di bawah) diuji ulang dengan hasil sama.
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-COM-REG-01/COM-REG-01.docx` memberi "All validations PASSED!".
 - Pratinjau soffice ke PDF, 12 halaman; lembar kontak 50 dpi dilihat: Identity, Approval, TOC, sepuluh bagian, dan empat tabel register (10 baris kosong tiap tabel) tampil; judul kolom tidak terpotong; pdftotext menemukan semua judul kolom. Halaman tidak dibaca satu per satu pada resolusi penuh (UNMEASURED).
-- Skrip kecil: kode SNX di badan (SNX-COM-SOP-01, SNX-HR-JA-01, SNX-HR-ORG-01, SNX-ISMS-PRO-01, SNX-OPS-FRM-10, SNX-OPS-SOP-04) sama persis dengan tabel Dokumen Terkait: nol kurang, nol lebih. Em-dash dan en-dash di badan: nol. Pencarian "pelanggan", "tim", "penyusun", "dokumen sumber", "draf ini", "Lead", nama orang di badan: nol (satu kemunculan "komplain" sengaja, di arti istilah Keluhan kritis, sebagai nama istilah di SNX-COM-SOP-01). "Direktur (COO)" hanya di tabel Definisi sebagai penyebutan pertama; sesudahnya "COO". Samuel di badan = "Direktur Utama".
+- Skrip kecil: kode SNX di badan (SNX-COM-SOP-01, SNX-HR-ORG-01, SNX-ISMS-PRO-01, SNX-OPS-FRM-10, SNX-OPS-SOP-04; SNX-HR-JA-01 dibuang pada sweep) sama persis dengan tabel Dokumen Terkait: nol kurang, nol lebih. Em-dash dan en-dash di badan: nol. Pencarian "pelanggan", "tim", "penyusun", "dokumen sumber", "draf ini", "Lead", nama orang di badan: nol (satu kemunculan "komplain" sengaja, di arti istilah Keluhan kritis, sebagai nama istilah di SNX-COM-SOP-01). "Direktur (COO)" hanya di tabel Definisi sebagai penyebutan pertama; sesudahnya "COO". Samuel di badan = "Direktur Utama".
 - Lint dan validator hanya membuktikan format dan larangan pola. Kebenaran isi terhadap bahan diperiksa lewat tabel di atas.
 
 ## 4a. Putaran perbaikan 1
@@ -67,7 +67,7 @@ Temuan verifikator (qa/COM-REG-01.verify.r1.json) dan perubahannya:
 | Pemilik register bertentangan (Peran: COO; Rekaman: VP Commercial) | Rekaman baris 1 kini "Pemilik: COO. Pengelola: VP Commercial. Pencatat: Business Development", sama dengan Peran dan Process Owner "Direktur" (= COO menurut data_conflicts). Beda dengan SNX-COM-SOP-01 dan 02 tetap di OI-4 | Rekaman; OI-4; U-10; U-11 |
 | Butir 4.6 tanpa pelaku dan rancu dengan kolom Status | "Business Development membalas feedback dan keluhan yang customer kirim lewat email atau WhatsApp dalam batas respons SNX-COM-SOP-01 bagian 8 (USULAN)." | Butir 4.6; U-04 |
 | Kalimat pasif atau benda sebagai pelaku | Pengecualian baris 2 dan 3 dan pembuka Isi Register kini bersubjek Business Development | Ruang Lingkup; Isi Register |
-| Sinonim | "keberatan customer" diganti Keluhan; "customer satisfaction" diganti "kepuasan customer" di badan (kutipan di notes tetap asli) | Peran; Dokumen Terkait; A8 |
+| Sinonim | "keberatan customer" diganti Keluhan; "customer satisfaction" diganti "kepuasan customer" di badan (kutipan di notes tetap asli). Rujukan JA-07 kemudian dibuang pada sweep | Peran; Dokumen Terkait |
 | Langkah 6.7 rancu | "menulis ringkasan isi feedback atau keluhan" (dipilih ringkasan, sejalan dengan 6.14) | Langkah 6.7 |
 
 Uji ulang: render tanpa galat; lint generic `"pass": true`, `"fails": []`; validator OOXML "All validations PASSED!"; PDF 12 halaman, halaman 5 sampai 12 berisi teks badan (221 sampai 335 kata per halaman, halaman 12 berisi Kesimpulan 27 kata; halaman 1 sampai 4 sampul, Identity, Revision, TOC). Kode SNX di badan sama persis dengan tabel Dokumen Terkait. Pencarian "satisfaction", "keberatan", em-dash, en-dash di badan: nol.
@@ -114,7 +114,7 @@ Perintah: `grep -n "Customer Feedback & Complaint " context/audit/*.md`. Hasil: 
 - A5. Feedback dan keluhan memakai register yang sama dan kolom yang sama; kolom Jenis membedakannya. Feedback yang tidak memerlukan tindakan boleh berstatus Selesai bila VP Commercial memutuskan tidak ada tindakan (arti Selesai).
 - A6. Sepuluh baris per tabel adalah ukuran tata letak, bukan klaim volume.
 - A7. Sumber tidak ada, jadi register berupa docx dengan baris kosong. Bentuk pakai harian (docx atau spreadsheet) tidak diputuskan: OI-9.
-- A8. "Keberatan pelanggan" di JA-07 dibaca sebagai Keluhan menurut Definisi dokumen ini, agar satu istilah dipakai. Ini tafsir, bukan kutipan; kutipan asli ada di Fakta pendukung nomor 1.
+- A8. Rujukan JA-07 ("keberatan pelanggan" dalam konteks negosiasi) tidak dipakai sebagai dasar. Dasar penunjukan Business Development sebagai pencatat hanya SNX-COM-SOP-01 butir 4.17 (kepuasan customer).
 
 ## USULAN
 
@@ -163,7 +163,7 @@ Perintah: `grep -n "Customer Feedback & Complaint " context/audit/*.md`. Hasil: 
 Apa yang membuat teks ini terdengar buatan AI:
 
 1. Draf pertama: tabel Ruang Lingkup membuka tiga baris berturut-turut dengan "Register ini mencatat/hanya"; diperbaiki jadi "Tindakan dicatat secara ringkas", "Yang dicatat adalah feedback dan keluhan per kasus", dan "Register hanya untuk customer".
-2. Draf pertama: langkah 6.5 memakai dua pasang koma berlapis ("memilih satu Jenis, Feedback atau Keluhan, sesuai arti"); diganti kurung. Butir 4.10 "Sampai ada" ambigu; diganti "Sampai kriteria itu ada". Definisi Keluhan kritis menyalin kalimat "kriterianya belum ditetapkan" yang juga ada di butir 4.10; kalimat di Definisi dihapus supaya satu fakta disebut sekali. Kalimat dasar di baris Business Development (tabel Peran) semula membuat satu sel memuat tiga rujukan butir; diurutkan ulang. Satu tugas dari Job Analysis (JA-07) ditambahkan sebagai dasar kedua pencatat, dengan kodenya di Dokumen Terkait.
+2. Draf pertama: langkah 6.5 memakai dua pasang koma berlapis ("memilih satu Jenis, Feedback atau Keluhan, sesuai arti"); diganti kurung. Butir 4.10 "Sampai ada" ambigu; diganti "Sampai kriteria itu ada". Definisi Keluhan kritis menyalin kalimat "kriterianya belum ditetapkan" yang juga ada di butir 4.10; kalimat di Definisi dihapus supaya satu fakta disebut sekali. Kalimat dasar di baris Business Development (tabel Peran) semula membuat satu sel memuat tiga rujukan butir; diurutkan ulang. Rujukan JA-07 yang sempat ditambahkan dibuang pada sweep karena JA-07 menulis "keberatan pelanggan" dalam konteks negosiasi, bukan keluhan.
 3. Dibiarkan: 14 dari 18 langkah Cara Mengisi diawali "Business Development menulis". Alasan: satu langkah satu pelaku satu tindakan (RUNBOOK §6a.2) dan nama peran wajib persis sama dengan tabel Peran. Penyederhanaan hanya mungkin bila owner memutus pencatat lain.
 4. Dibiarkan: butir 4.2 sampai 4.8, 4.10 sampai 4.13 hampir semuanya berakhir "(USULAN)". Alasan: tiap butir memuat keputusan yang berbeda dan tabel USULAN memetakannya satu per satu; butir 4.1 dan 4.9 sengaja tanpa label karena struktural atau bersumber (SNX-COM-SOP-01 bagian 9). Konsolidasi satu label di kepala bagian 4 akan menutupi butir bersumber.
 5. Dibiarkan: kalimat Definisi pendek dan seragam, karena bagian itu hanya memuat arti istilah.
@@ -175,3 +175,11 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber:
 - Tanggal: tidak ada; Effective Date kosong.
 - Klausul ISO dan judulnya dari pengetahuan standar, UNMEASURED terhadap teks standar; ditandai USULAN (U-14, OI-13).
 - Tanpa kutipan langsung: seluruh alur butir 4.2 sampai 4.13 dan langkah 6.1 sampai 6.18 (berlabel USULAN per butir), tiga nilai status, kolom Tanggapan Customer, empat pengecualian cakupan, dan arti istilah umum (U-15, U-16). Semuanya ada di tabel USULAN di atas.
+
+## Sweep
+
+Putaran sweep dari orkestrator (satu butir). Uji ulang: render tanpa galat; lint generic `"pass": true`, `"fails": []`; validator OOXML "All validations PASSED!"; `python3 -I reports/orch/blankscan.py /tmp/pen-COM-REG-01/COM-REG-01.docx` memberi `ok 12 COM-REG-01.docx []`. Kode SNX di badan sama persis dengan tabel Dokumen Terkait (lima kode).
+
+| # | Butir | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Rujukan JA-07 (Peran dan Dokumen Terkait) | Peran, baris Business Development: "SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development, dan uraian JA-07 di SNX-HR-JA-01 memuat tugas menjaga dokumentasi keluhan customer." Dokumen Terkait: baris SNX-HR-JA-01 "Uraian JA-07 Business Development memuat tugas menjaga dokumentasi keluhan customer." | Peran: "SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development." Baris SNX-HR-JA-01 dibuang dari Dokumen Terkait. JA-07 dilepas sebagai dasar karena kutipan aslinya "keberatan pelanggan" dalam konteks negosiasi, bukan keluhan |

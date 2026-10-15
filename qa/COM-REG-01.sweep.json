@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 5 Peran, baris Business Development; tabel Dokumen Terkait",
+      "masalah": "Nihil. Butir 1 dikerjakan dengan opsi 'lepas sebagai dasar': klausa JA-07 di sel Peran dihapus dan baris SNX-HR-JA-01 dibuang dari Dokumen Terkait. Perubahan murni penghapusan, tanpa fakta baru, tanpa perubahan lain di spec.",
+      "bukti": "git diff specs/COM-REG-01.json identik dengan COM-REG-01.spec.diff (2 hunk). Kalimat sisa 'SNX-COM-SOP-01 butir 4.17 menempatkan kepuasan customer pada Business Development' berdasar specs/COM-SOP-01.json butir 4.17 ('customer satisfaction'). Teks docx out/: JA-07, HR-JA, JA-01, keberatan, em-dash, en-dash, Claude, DEC-, SKILL_ = 0 kemunculan."
+    }
+  ]
+}
