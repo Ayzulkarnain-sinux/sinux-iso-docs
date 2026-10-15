@@ -18,6 +18,12 @@
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
    "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
   }
  },
  "sections": [
@@ -28,7 +34,7 @@
      "p": "Dokumen ini menetapkan susunan jabatan SINUX: jabatan apa saja yang ada, siapa pemegangnya, kepada siapa tiap jabatan melapor, dan peran sistem manajemen apa yang melekat pada jabatan itu."
     },
     {
-     "p": "Hasil yang dijaga adalah satu susunan yang sama bagi karyawan dan auditor, sehingga peran, tanggung jawab, dan wewenang yang diminta ISO 9001:2015 dan ISO/IEC 27001:2022 dapat ditunjukkan dari satu dokumen."
+     "p": "Karyawan dan auditor memakai susunan yang sama, sehingga peran, tanggung jawab, dan wewenang yang diminta ISO 9001:2015 dan ISO/IEC 27001:2022 dapat ditunjukkan dari satu dokumen."
     }
    ]
   },
@@ -97,7 +103,7 @@
        ],
        [
         "Atasan langsung",
-        "Jabatan yang menjadi tujuan laporan langsung dari sebuah jabatan."
+        "Jabatan tempat sebuah jabatan melapor secara langsung."
        ],
        [
         "Garis lapor",
@@ -105,11 +111,11 @@
        ],
        [
         "Menunggu konfirmasi",
-        "Label untuk garis lapor atau penamaan yang belum pasti. Tiap butir dijelaskan pada bagian Butir Menunggu Konfirmasi."
+        "Label untuk garis lapor atau penamaan yang belum pasti, diuraikan per butir pada bagian Butir Menunggu Konfirmasi."
        ],
        [
         "Peran",
-        "Tanggung jawab dalam sistem manajemen yang disebut dokumen SOP, dipegang oleh pemegang satu jabatan atau lebih."
+        "Tanggung jawab dalam sistem manajemen yang disebut di dokumen SOP dan dipegang oleh satu jabatan atau lebih."
        ],
        [
         "(USULAN)",
@@ -125,7 +131,7 @@
        ],
        [
         "NOC",
-        "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket."
+        "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket."
        ],
        [
         "SOC",
@@ -163,13 +169,13 @@
      "p": "Jabatan, pemegang, dan atasan langsung diambil dari Job Analysis (SNX-HR-JA-01) yang berstatus Draft. Delapan jabatan Divisi Operation diambil dari POL-OPS-001 versi DRAFT v0.1."
     },
     {
-     "p": "Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi sesudah dokumen ini disahkan, dan garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01) diberi label menunggu konfirmasi."
+     "p": "Menurut Job Analysis, hubungan atasan-bawahan yang bertanda usulan atau konfirmasi belum menjadi garis lapor resmi sampai disahkan. Karena itu, semua garis lapor di dokumen ini baru resmi setelah dokumen ini disahkan. Garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01) diberi label menunggu konfirmasi."
     },
     {
-     "p": "Setiap butir menunggu konfirmasi diberi nomor K pada bagian Butir Menunggu Konfirmasi. Bagan dan tabel merujuk nomor itu dan tidak mengulang uraiannya."
+     "p": "Setiap butir menunggu konfirmasi diberi nomor K pada bagian Butir Menunggu Konfirmasi. Bagan dan tabel cukup mencantumkan nomor itu tanpa mengulang uraiannya."
     },
     {
-     "p": "Nama jabatan ditulis dalam satu bentuk di seluruh dokumen. Bila sumber memakai sebutan lain, perbedaannya tercatat sebagai butir K."
+     "p": "Nama jabatan ditulis dalam satu bentuk di seluruh dokumen. Jika sumber memakai sebutan lain, perbedaannya dicatat sebagai butir K."
     }
    ]
   },
@@ -177,7 +183,7 @@
    "h": "Bagan Organisasi",
    "blocks": [
     {
-     "p": "Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan atasan langsung yang tertulis di Job Analysis atau sudah diputus (K-01). Garis berlabel menunggu konfirmasi merujuk nomor butir K."
+     "p": "Gambar 1 dan Gambar 2 memuat 15 jabatan di Job Analysis. Garis tanpa label menunjukkan atasan langsung yang tertulis di Job Analysis atau sudah diputus (K-01). Garis berlabel menunggu konfirmasi diberi nomor butir K."
     },
     {
      "flow": {
@@ -300,7 +306,7 @@
    "h": "Daftar Jabatan",
    "blocks": [
     {
-     "p": "Kolom Melapor ke memuat atasan langsung menurut Job Analysis dan garis yang sudah diputus pada K-01."
+     "p": "Kolom Melapor ke berisi atasan langsung menurut Job Analysis, ditambah garis yang sudah diputus pada K-01."
     },
     {
      "table": {
@@ -428,7 +434,7 @@
      }
     },
     {
-     "p": "JA-08 dan JA-09 memakai nama jabatan yang sama. Pembedanya garis lapor: JA-09 melapor ke JA-08. Nama unit dan nama jabatan JA-14 mengikuti butir K-06."
+     "p": "JA-08 dan JA-09 memakai nama jabatan yang sama dan dibedakan oleh garis lapor: JA-09 melapor ke JA-08. Nama unit dan nama jabatan JA-14 mengikuti butir K-06."
     }
    ]
   },
@@ -549,7 +555,7 @@
         "Jam kantor"
        ],
        [
-        "Project Coordinator (opsional bila volume proyek tinggi)",
+        "Project Coordinator (opsional jika volume proyek tinggi)",
         "SD dan PM",
         "Service Delivery Manager",
         "Tidak ada",
@@ -574,7 +580,7 @@
    "h": "Matriks Peran",
    "blocks": [
     {
-     "p": "Matriks ini memasangkan peran yang dipakai dokumen SOP dengan jabatan pemegangnya. Tanggung jawab lengkap tiap jabatan ada di SNX-HR-JA-01 dan POL-OPS-001; kolom Dasar menunjuk dokumen asalnya."
+     "p": "Matriks ini memasangkan peran di dokumen SOP dengan jabatan pemegangnya. Tanggung jawab lengkap tiap jabatan tercantum di SNX-HR-JA-01 dan POL-OPS-001; kolom Dasar menyebut dokumen asalnya."
     },
     {
      "table": {
@@ -598,7 +604,7 @@
         "Menunggu konfirmasi (K-14)"
        ],
        [
-        "Penetap kebijakan mutu, sasaran mutu, dan sumber daya; pemimpin tinjauan manajemen",
+        "Penetap kebijakan mutu, sasaran mutu, dan sumber daya; pemimpin Management Review",
         "Direktur Utama (JA-01)",
         "Uraian jabatan JA-01",
         "Tercantum di Job Analysis"
@@ -679,7 +685,7 @@
      }
     },
     {
-     "p": "Batas wewenang semua jabatan: keputusan keuangan, legal, perubahan kontrak, pengangkatan atau pemutusan hubungan kerja, dan perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku."
+     "p": "Untuk semua jabatan, keputusan keuangan, legal, perubahan kontrak, pengangkatan atau pemutusan hubungan kerja, serta perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku."
     }
    ]
   },
@@ -700,7 +706,7 @@
        [
         "K-01",
         "Garis lapor VP Commercial (JA-03) dan VP Tech Operation and Services (JA-04)",
-        "Sudah diputus: JA-03 dan JA-04 masing-masing melapor ke Direktur (JA-02) dan ke Direktur Utama (JA-01), dua garis tegas. Job Analysis hanya menulis atasan langsung Direktur untuk keduanya."
+        "Sudah diputus: JA-03 dan JA-04 masing-masing melapor ke Direktur (JA-02) dan ke Direktur Utama (JA-01) dengan dua garis tegas. Job Analysis hanya menulis Direktur sebagai atasan langsung keduanya."
        ],
        [
         "K-02",
@@ -781,7 +787,7 @@
    "h": "Acuan Klausul ISO",
    "blocks": [
     {
-     "p": "Daftar klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+     "p": "Daftar klausul berikut masih perlu dikonfirmasi konsultan (USULAN)."
     },
     {
      "table": {
@@ -876,10 +882,10 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar jabatan."
+     "p": "Dokumen ini berstatus Draft dan baru berlaku setelah Direktur Utama menandatangani blok Approved By. Butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar jabatan setelah dikonfirmasi."
     },
     {
-     "p": "HR Lead meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan."
+     "p": "HR Lead meninjau dokumen ini setiap tahun, dan lebih awal jika jabatan atau garis lapor berubah secara signifikan."
     }
    ]
   }

@@ -1,0 +1,35 @@
+{
+ "key": "HR-JA-01",
+ "mode": "generic",
+ "out": "out/01_Struktur_Jobdesc/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 6794,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 30,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 6792,
+  "calque": [],
+  "lewat": 5,
+  "pointer": 2,
+  "usulan": 30,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 80,
+  "tables_ge3_no_header": 51
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).pdf",
+ "pages": 31,
+ "blank": [],
+ "pass": true
+}

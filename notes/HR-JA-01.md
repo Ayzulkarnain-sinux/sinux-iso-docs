@@ -320,3 +320,17 @@ Catatan pelaksana, tidak diubah:
 - Blok Prepared dan Reviewed tetap milik HR (Sita sebagai Prepared, Aziz Priyo Widakdo / HR Lead sebagai Reviewed).
 - Uji: render_sop, lint_doc generic (pass), validate.py (PASSED), blankscan (ok), w9diff dibaca.
 - R2: spec tidak berubah untuk dokumen ini; hanya baris notes basi ditandai di tempat.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Ruang Lingkup, kalimat pengecualian: rujukan "(butir 4.6)" dan "(butir 4.4)" diganti faktanya ("yang ditetapkan di KPI Matrix", "yang diatur di Authority Matrix"); butir 4.4 dan 4.6 bukan USULAN.
+- Acuan ISO, baris 7.5 Informasi terdokumentasi: rujukan "(bagian 1)" dihapus agar sel hanya memuat satu rujukan.
+- Garis pelaporan JA-08 dan JA-09: "Uraian rinci ada di bagian 7." ditulis "Uraian rincinya di bagian 7." (rujukan dipertahankan karena pembaca perlu membuka bagian itu).
+### W10 selisih angka
+nihil (subst_diff kosong)
+### W10 catatan
+Sebutan pihak luar: "pelanggan" (paling sering di dokumen ini; "klien" pada kutipan uraian tim tidak diubah).
+"review manajemen" ditulis "Management Review", dengan jembatan "(tinjauan manajemen)" pada kemunculan pertama (uraian JA-01 butir 7).
+Dokumen T1: kalimat uraian tim dipertahankan; perubahan hanya bila, rujukan, label Acuan ISO ke akhir kalimat, dan butir 4.1 serta 4.6. Garis lapor JA-03 dan JA-04, label K, nama jabatan JA-xx, dan keputusan G-3 tidak diubah.

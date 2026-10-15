@@ -1,0 +1,35 @@
+{
+ "key": "HR-ORG-01",
+ "mode": "generic",
+ "out": "out/01_Struktur_Jobdesc/SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2152,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2160,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 115,
+  "tables_ge3_no_header": 11
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).pdf",
+ "pages": 14,
+ "blank": [],
+ "pass": true
+}

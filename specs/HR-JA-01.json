@@ -18,6 +18,12 @@
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
    "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
   }
  },
  "sections": [
@@ -39,7 +45,7 @@
      "p": "Dokumen ini mencakup 15 jabatan aktif, JA-01 sampai JA-15 (bagian 5 dan 6). Jabatan Legal & Compliance juga diuraikan lebih rinci menurut Jobdesk Line Manager Legal dan Jobdesk Staff Legal (bagian 7)."
     },
     {
-     "p": "Yang dikecualikan: jabatan kosong dan grading; KPI per jabatan beserta target numerik, bobot, dan sumber datanya (butir 4.6); hak tanda tangan kontrak dan otorisasi keuangan (butir 4.4); peran di dokumen ISO yang bukan jabatan, yang dipetakan lewat matriks peran (bagian 8)."
+     "p": "Yang dikecualikan: jabatan kosong dan grading; KPI per jabatan beserta target numerik, bobot, dan sumber datanya, yang ditetapkan di KPI Matrix; hak tanda tangan kontrak dan otorisasi keuangan, yang diatur di Authority Matrix; serta peran di dokumen ISO yang bukan jabatan, yang dipetakan melalui matriks peran (bagian 8)."
     }
    ]
   },
@@ -146,7 +152,7 @@
    "h": "Ketentuan Umum",
    "blocks": [
     {
-     "p": "4.1 Uraian tugas, persyaratan kompetensi, wewenang, dan garis pelaporan yang belum dinyatakan secara resmi merupakan usulan. Pemegang fungsi meninjaunya dan Management mengesahkannya; sampai pengesahan, isinya bukan fakta yang telah disahkan."
+     "p": "4.1 Uraian tugas, persyaratan kompetensi, wewenang, dan garis pelaporan yang belum dinyatakan secara resmi masih berstatus usulan. Isinya ditinjau pemegang fungsi lalu disahkan Management, dan sebelum disahkan belum menjadi ketentuan resmi."
     },
     {
      "p": "4.2 Nama pemegang jabatan dan nama jabatan mengacu pada daftar jabatan yang disampaikan perusahaan."
@@ -161,10 +167,10 @@
      "p": "4.5 Keputusan keuangan, legal, perubahan kontrak, pengangkatan/pemutusan hubungan kerja, dan perubahan sistem produksi tetap mengikuti delegasi dan persetujuan tertulis yang berlaku. Batasan ini berlaku untuk semua jabatan."
     },
     {
-     "p": "4.6 Indikator kinerja di dokumen ini adalah usulan indikator. Target numerik, bobot, dan sumber data ditetapkan di KPI Matrix."
+     "p": "4.6 Indikator kinerja di dokumen ini masih berupa usulan. Target numerik, bobot, dan sumber datanya ditetapkan di KPI Matrix."
     },
     {
-     "p": "4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor hanya diwajibkan bila ditetapkan di Competency Matrix atau diminta kontrak pelanggan. Masa pengalaman minimum ditentukan sesudah job evaluation."
+     "p": "4.7 Semua jabatan memerlukan pemahaman atas SOP dan kerahasiaan informasi. Sertifikasi profesi atau vendor hanya diwajibkan jika ditetapkan di Competency Matrix atau diminta kontrak pelanggan. Masa pengalaman minimum ditentukan setelah job evaluation."
     },
     {
      "p": "4.8 Semua jabatan berkoordinasi secara internal dengan Management, Commercial, Operation, Legal, Finance, Accounting & Tax, dan Human Resources sesuai kebutuhan proses. Koordinasi eksternal dengan pelanggan, vendor, regulator, atau konsultan hanya sesuai mandat dan ruang lingkup jabatan."
@@ -212,10 +218,10 @@
      "p": "4.10 Lokasi kerja utama semua jabatan adalah Sinux Office, Midpoint Place Lt.10, Jakarta Pusat. Karyawan tidak keluar dari area kantor pada jam kerja tanpa izin dan pemberitahuan sebelumnya kepada atasan langsung (Peraturan Perusahaan Pasal 29)."
     },
     {
-     "p": "Karyawan yang berhalangan berangkat ke kantor, bukan karena sakit atau cuti, dapat bekerja dari rumah dengan izin atasan langsung. Karyawan itu tetap dapat dihubungi pada jam kerja lewat saluran komunikasi perusahaan dan melapor kepada atasan (Pasal 31)."
+     "p": "Karyawan yang berhalangan berangkat ke kantor, bukan karena sakit atau cuti, dapat bekerja dari rumah dengan izin atasan langsung. Karyawan itu tetap dapat dihubungi pada jam kerja melalui saluran komunikasi perusahaan dan melapor kepada atasan (Pasal 31)."
     },
     {
-     "p": "Karyawan tidak wajib bekerja pada hari libur resmi. Perusahaan dapat mempekerjakan karyawan pada hari libur resmi bila sifat pekerjaan harus dijalankan terus-menerus atau berdasarkan kesepakatan, dengan upah lembur atau penggantian cuti (Pasal 22)."
+     "p": "Karyawan tidak wajib bekerja pada hari libur resmi. Perusahaan dapat mempekerjakan karyawan pada hari libur resmi jika sifat pekerjaan harus dijalankan terus-menerus atau berdasarkan kesepakatan, dengan upah lembur atau penggantian cuti (Pasal 22)."
     },
     {
      "p": "Jam masuk dan jam pulang mengikuti Peraturan Perusahaan (USULAN)."
@@ -345,7 +351,7 @@
    "h": "Uraian Jabatan",
    "blocks": [
     {
-     "p": "Tiap jabatan di bawah ini memuat tujuan jabatan, tugas dan tanggung jawab, kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja. Persyaratan tambahan (butir 4.7), hubungan kerja (butir 4.8), batasan umum wewenang (butir 4.5), dan kondisi kerja semua jabatan (butir 4.10) berlaku untuk semua jabatan. Baris Kondisi kerja tiap jabatan memuat pola kerja, lingkungan dan kondisi fisik, serta risiko kerja yang khusus untuk jabatan itu."
+     "p": "Uraian tiap jabatan di bawah ini memuat tujuan jabatan, tugas dan tanggung jawab, kualifikasi, kompetensi, wewenang, garis pelaporan, dan kondisi kerja. Batasan umum wewenang, persyaratan tambahan, hubungan kerja, dan kondisi kerja bersama (butir 4.5, 4.7, 4.8, dan 4.10) berlaku untuk semua jabatan. Baris Kondisi kerja memuat pola kerja, lingkungan dan kondisi fisik, serta risiko kerja yang khusus untuk jabatan itu."
     },
     {
      "h2": "JA-01 Direktur Utama"
@@ -390,7 +396,7 @@
        ],
        [
         "7",
-        "Memimpin tinjauan manajemen dan memastikan keputusan memiliki penanggung jawab serta tenggat tindak lanjut."
+        "Memimpin Management Review (tinjauan manajemen) dan memastikan keputusan memiliki penanggung jawab serta tenggat tindak lanjut."
        ]
       ]
      }
@@ -428,7 +434,7 @@
        ],
        [
         "Kondisi kerja",
-        "Pola kerja: rapat berkala untuk meninjau kinerja dan tinjauan manajemen (uraian butir 2 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)."
+        "Pola kerja: rapat berkala untuk meninjau kinerja dan Management Review (uraian butir 2 dan 7). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)."
        ]
       ]
      }
@@ -506,7 +512,7 @@
        ],
        [
         "Wewenang",
-        "1) Mengarahkan prioritas kerja antar fungsi sesuai mandat; 2) Memberikan peninjauan dan persetujuan operasional sesuai Authority Matrix; 3) Meminta laporan kinerja dan rencana perbaikan"
+        "1) Mengarahkan prioritas kerja antar fungsi sesuai mandat; 2) Memberikan review dan persetujuan operasional sesuai Authority Matrix; 3) Meminta laporan kinerja dan rencana perbaikan"
        ],
        [
         "Garis pelaporan",
@@ -514,7 +520,7 @@
        ],
        [
         "Kondisi kerja",
-        "Pola kerja: rapat dan peninjauan lintas fungsi (uraian butir 1 sampai 4). Insiden P1 dapat membuat COO dihubungi di luar jam kerja (POL-OPS-001, draf v0.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)."
+        "Pola kerja: rapat dan review lintas fungsi (uraian butir 1 sampai 4). Insiden P1 dapat membuat COO dihubungi di luar jam kerja (POL-OPS-001, draf v0.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer dan rapat, bahaya fisik rendah (USULAN). Risiko kerja: keputusan keuangan, legal, dan kontrak mengikuti delegasi tertulis (butir 4.5)."
        ]
       ]
      }
@@ -546,7 +552,7 @@
        ],
        [
         "3",
-        "Mengendalikan proses proposal, peninjauan pricing, negosiasi dan persetujuan sebelum penawaran."
+        "Mengendalikan proses proposal, review pricing, negosiasi dan persetujuan sebelum penawaran."
        ],
        [
         "4",
@@ -562,7 +568,7 @@
        ],
        [
         "7",
-        "Melakukan peninjauan aktivitas tim komersial dan tindakan perbaikan terhadap kesenjangan target."
+        "Melakukan review aktivitas tim komersial dan tindakan perbaikan terhadap kesenjangan target."
        ]
       ]
      }
@@ -632,7 +638,7 @@
        ],
        [
         "3",
-        "Memonitor tiket insiden, permintaan layanan, perubahan konfigurasi dan eskalasi SLA di Zammad."
+        "Memonitor ticket insiden, permintaan layanan, perubahan konfigurasi dan eskalasi SLA di Zammad."
        ],
        [
         "4",
@@ -640,7 +646,7 @@
        ],
        [
         "5",
-        "Mengelola risiko delivery, defect, keterlambatan, serta tindakan korektif."
+        "Mengelola risiko delivery, defect, keterlambatan, serta corrective action."
        ],
        [
         "6",
@@ -686,7 +692,7 @@
        ],
        [
         "Kondisi kerja",
-        "Pola kerja: memantau tiket, SLA, proyek, dan perubahan konfigurasi (uraian butir 2 dan 3). POL-OPS-001 (draf v0.1) menetapkan layanan Operation berjalan 24/7. Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; eskalasi insiden dapat datang di luar jam kerja (USULAN). Risiko kerja: risiko delivery, defect, dan keterlambatan dikelola lewat tindakan korektif (uraian butir 5); perubahan berisiko ditahan tanpa persetujuan (wewenang 3)."
+        "Pola kerja: memantau ticket, SLA, proyek, dan perubahan konfigurasi (uraian butir 2 dan 3). POL-OPS-001 (draf v0.1) menetapkan layanan Operation berjalan 24/7. Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; eskalasi insiden dapat datang di luar jam kerja (USULAN). Risiko kerja: risiko delivery, defect, dan keterlambatan dikelola melalui corrective action (uraian butir 5); perubahan berisiko ditahan tanpa persetujuan (wewenang 3)."
        ]
       ]
      }
@@ -722,7 +728,7 @@
        ],
        [
         "4",
-        "Melakukan peninjauan risiko implementasi, lisensi, kompatibilitas dan dependensi vendor."
+        "Melakukan review risiko implementasi, lisensi, kompatibilitas dan dependensi vendor."
        ],
        [
         "5",
@@ -764,7 +770,7 @@
        ],
        [
         "Wewenang",
-        "1) Memberi rekomendasi kelayakan teknis; 2) Meminta klarifikasi kebutuhan dan peninjauan desain; 3) Mengeskalasi proposal yang tidak feasible"
+        "1) Memberi rekomendasi kelayakan teknis; 2) Meminta klarifikasi kebutuhan dan review desain; 3) Mengeskalasi proposal yang tidak feasible"
        ],
        [
         "Garis pelaporan",
@@ -808,7 +814,7 @@
        ],
        [
         "4",
-        "Mengelola event/webinar/campaign serta koordinasi vendor bila ada."
+        "Mengelola event/webinar/campaign serta koordinasi vendor jika ada."
        ],
        [
         "5",
@@ -858,7 +864,7 @@
        ],
        [
         "Kondisi kerja",
-        "Pola kerja: mengelola event, webinar, dan campaign serta koordinasi vendor bila ada (uraian butir 4). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; event dapat berlangsung di luar kantor dan di luar jam kerja (USULAN). Risiko kerja: publikasi dijadwalkan hanya setelah persetujuan (wewenang 2)."
+        "Pola kerja: mengelola event, webinar, dan campaign serta koordinasi vendor jika ada (uraian butir 4). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; event dapat berlangsung di luar kantor dan di luar jam kerja (USULAN). Risiko kerja: publikasi dijadwalkan hanya setelah persetujuan (wewenang 2)."
        ]
       ]
      }
@@ -968,7 +974,7 @@
       "rows": [
        [
         "1",
-        "Melakukan peninjauan hukum atas kontrak pelanggan, vendor, tenaga kerja dan kemitraan."
+        "Melakukan review hukum atas kontrak pelanggan, vendor, tenaga kerja dan kemitraan."
        ],
        [
         "2",
@@ -1026,11 +1032,11 @@
        ],
        [
         "Garis pelaporan",
-        "Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: JA-09 (Alif Altamziz). Uraian rinci ada di bagian 7."
+        "Atasan langsung: COO atau Management (menunggu konfirmasi). Bawahan langsung: JA-09 (Alif Altamziz). Uraian rincinya di bagian 7."
        ],
        [
         "Kondisi kerja",
-        "Pola kerja: tinjauan hukum atas kontrak dan dokumen, serta koordinasi dengan penasihat hukum eksternal (uraian butir 1 dan 6); laporan kinerja dan risiko legal ke Management bulanan dan triwulanan (bagian 7.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan dengan notaris atau instansi dapat berlangsung di luar kantor (USULAN). Risiko kerja: risiko hukum dikendalikan lewat tinjauan dan eskalasi ke Management (uraian butir 7, wewenang 3); dokumen legal bersifat rahasia (kompetensi perilaku Confidentiality)."
+        "Pola kerja: review hukum atas kontrak dan dokumen, serta koordinasi dengan penasihat hukum eksternal (uraian butir 1 dan 6); laporan kinerja dan risiko legal ke Management bulanan dan triwulanan (bagian 7.1). Lingkungan dan kondisi fisik: ruang kantor, kerja menetap dengan komputer, bahaya fisik rendah; pertemuan dengan notaris atau instansi dapat berlangsung di luar kantor (USULAN). Risiko kerja: risiko hukum dikendalikan melalui review dan eskalasi ke Management (uraian butir 7, wewenang 3); dokumen legal bersifat rahasia (kompetensi perilaku Confidentiality)."
        ]
       ]
      }
@@ -1054,7 +1060,7 @@
       "rows": [
        [
         "1",
-        "Mengumpulkan dokumen dan data untuk proses peninjauan perjanjian."
+        "Mengumpulkan dokumen dan data untuk proses review perjanjian."
        ],
        [
         "2",
@@ -1070,7 +1076,7 @@
        ],
        [
         "5",
-        "Menelusuri regulasi relevan dan merangkum perubahan untuk peninjauan atasan langsung."
+        "Menelusuri regulasi relevan dan merangkum perubahan untuk review atasan langsung."
        ],
        [
         "6",
@@ -1108,11 +1114,11 @@
        ],
        [
         "Wewenang",
-        "1) Meminta kelengkapan dokumen; 2) Menyampaikan temuan untuk peninjauan atasan langsung; 3) Tidak memberi persetujuan hukum final tanpa delegasi"
+        "1) Meminta kelengkapan dokumen; 2) Menyampaikan temuan untuk review atasan langsung; 3) Tidak memberi persetujuan hukum final tanpa delegasi"
        ],
        [
         "Garis pelaporan",
-        "Atasan langsung: JA-08 (Ester Febe Utomo). Bawahan langsung: Tidak ada. Uraian rinci ada di bagian 7."
+        "Atasan langsung: JA-08 (Ester Febe Utomo). Bawahan langsung: Tidak ada. Uraian rincinya di bagian 7."
        ],
        [
         "Kondisi kerja",
@@ -1398,7 +1404,7 @@
       "rows": [
        [
         "1",
-        "Menerima, mengklasifikasikan dan mencatat tiket/permintaan layanan di Zammad."
+        "Menerima, mengklasifikasikan dan mencatat ticket/permintaan layanan di Zammad."
        ],
        [
         "2",
@@ -1554,7 +1560,7 @@
        ],
        [
         "Wewenang",
-        "1) Menetapkan prioritas dan pembagian tugas HR; 2) Melakukan peninjauan mutu dan meminta koreksi atas hasil kerja HRGA Officer; 3) Menyetujui dokumen administratif dalam batas Authority Matrix; 4) Merekomendasikan hiring, salary action, disciplinary action dan policy kepada approver; 5) Mengeskalasi risiko ketenagakerjaan dan temuan audit; 6) Mengendalikan akses informasi personal sesuai kebijakan"
+        "1) Menetapkan prioritas dan pembagian tugas HR; 2) Melakukan review mutu dan meminta koreksi atas hasil kerja HRGA Officer; 3) Menyetujui dokumen administratif dalam batas Authority Matrix; 4) Merekomendasikan hiring, salary action, disciplinary action dan policy kepada approver; 5) Mengeskalasi risiko ketenagakerjaan dan temuan audit; 6) Mengendalikan akses informasi personal sesuai kebijakan"
        ],
        [
         "Garis pelaporan",
@@ -1606,7 +1612,7 @@
        ],
        [
         "6",
-        "Menggunakan alat pelindung diri (APD) bila diwajibkan dan melaporkan potensi bahaya."
+        "Menggunakan alat pelindung diri (APD) jika diwajibkan dan melaporkan potensi bahaya."
        ],
        [
         "7",
@@ -1648,7 +1654,7 @@
        ],
        [
         "Kondisi kerja",
-        "Pola kerja: tugas pendukung operasional kantor sesuai work order (uraian butir 1). Lingkungan dan kondisi fisik: area kantor dan fasilitas, kerja sebagian berdiri dan berpindah tempat, bukan kerja layar (USULAN). Risiko kerja: perpindahan barang ringan dilakukan dengan aman, APD dipakai bila diwajibkan, potensi bahaya dilaporkan (uraian butir 2 dan 6); aktivitas tidak aman dihentikan (wewenang 2); aset, kunci, dan ruang terbatas hanya sesuai izin dan pembatasan akses (uraian butir 5, wewenang 3)."
+        "Pola kerja: tugas pendukung operasional kantor sesuai work order (uraian butir 1). Lingkungan dan kondisi fisik: area kantor dan fasilitas, kerja sebagian berdiri dan berpindah tempat, bukan kerja layar (USULAN). Risiko kerja: perpindahan barang ringan dilakukan dengan aman, APD dipakai jika diwajibkan, potensi bahaya dilaporkan (uraian butir 2 dan 6); aktivitas tidak aman dihentikan (wewenang 2); aset, kunci, dan ruang terbatas hanya sesuai izin dan pembatasan akses (uraian butir 5, wewenang 3)."
        ]
       ]
      }
@@ -1662,7 +1668,7 @@
      "p": "Bagian ini memuat uraian rinci dua jabatan Legal dari Jobdesk Line Manager Legal dan Jobdesk Staff Legal. Alur kerja rinci Legal diatur di SNX-LEG-SOP-01."
     },
     {
-     "p": "Kualifikasi di bagian ini lebih spesifik daripada kelompok K2 di butir 4.9. Bila disahkan, kualifikasi ini berlaku untuk JA-08 dan JA-09, dan masa pengalaman minimum butir 4.7 mengikuti angka di sini (USULAN)."
+     "p": "Kualifikasi di bagian ini lebih spesifik daripada kelompok K2 di butir 4.9. Jika disahkan, kualifikasi ini berlaku untuk JA-08 dan JA-09, dan masa pengalaman minimum butir 4.7 mengikuti angka di sini (USULAN)."
     },
     {
      "h2": "JA-08 Line Manager Legal"
@@ -2113,7 +2119,7 @@
        ],
        [
         "5",
-        "Menanyakan kepada Line Manager Legal bila ruang lingkup atau instruksi tidak jelas, bukan berasumsi."
+        "Bertanya kepada Line Manager Legal jika ruang lingkup atau instruksi tidak jelas, bukan berasumsi."
        ]
       ]
      }
@@ -2311,7 +2317,7 @@
    "h": "Acuan ISO",
    "blocks": [
     {
-     "p": "Acuan klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+     "p": "Acuan klausul berikut masih perlu dikonfirmasi konsultan (USULAN)."
     },
     {
      "table": {
@@ -2349,7 +2355,7 @@
        [
         "ISO 9001:2015",
         "7.5 Informasi terdokumentasi",
-        "Dokumen menjadi bukti penetapan peran dalam sistem manajemen mutu (bagian 1); status, revisi, dan peninjauan dikendalikan (bagian 9)."
+        "Dokumen menjadi bukti penetapan peran dalam sistem manajemen mutu; status, revisi, dan review-nya dikendalikan (bagian 9)."
        ],
        [
         "ISO/IEC 27001:2022",
@@ -2369,7 +2375,7 @@
        [
         "ISO/IEC 27001:2022",
         "7.5 Informasi terdokumentasi",
-        "Dokumen berklasifikasi RESTRICTED (Internal) dan dikendalikan lewat status dan revisi."
+        "Dokumen berklasifikasi RESTRICTED (Internal) dan dikendalikan melalui status dan revisi."
        ],
        [
         "ISO/IEC 27001:2022",

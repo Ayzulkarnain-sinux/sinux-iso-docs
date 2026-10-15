@@ -1,0 +1,12 @@
+{"verdict": "PASS", "scores": {"a": 4, "b": 4, "c": 4, "d": "n/a"},
+ "blocking": [],
+ "nonblocking": [
+  "Ruang Lingkup: '(butir 4.6)' dan '(butir 4.4)' diganti fakta 'ditetapkan di KPI Matrix' dan 'diatur di Authority Matrix'. Isinya sesuai butir 4.4 dan 4.6, dan kedua butir itu tidak berlabel (USULAN), sehingga tidak ada label yang hilang.",
+  "Kalimat penunjuk masih ada di Garis pelaporan JA-08 dan JA-09: 'Uraian rincinya di bagian 7.' (§3.2). Kalimat ini boleh dipertahankan sebagai rujukan yang diperlukan, atau dihapus.",
+  "Uraian Jabatan: '(butir 4.5, 4.7, 4.8, dan 4.10)' adalah rujukan beruntun dalam satu kurung (§3.1). Bentuknya sudah lebih ringkas dari bed1bb6 dan dapat diterima.",
+  "'review hukum', 'review mutu', dan 'review pricing' mencampur dua bahasa secara kaku. Kalimatnya masih wajar dan konsisten dengan peta §1.5.",
+  "4.1: 'sampai pengesahan, isinya bukan fakta yang telah disahkan' menjadi 'sebelum disahkan belum menjadi ketentuan resmi'. Artinya setara.",
+  "G-3 tidak tersentuh diff: Kristanto, HR Lead, Legal bernama (Ester Febe Utomo, Alif Altamziz), serta Finance Lead/Staff (USULAN). Jumlah label (USULAN) tetap 30 dan judul klausul ISO sama dengan bed1bb6.",
+  "PDF 31 halaman: tabel di dalam margin, baris judul tabel terbaca, dan tidak terlihat terpotong (dicek pada render 60 dpi)."
+ ],
+ "contoh_baik": ["Persyaratan tambahan (butir 4.7), hubungan kerja (butir 4.8), batasan umum wewenang (butir 4.5), dan kondisi kerja semua jabatan (butir 4.10) berlaku untuk semua jabatan. -> Batasan umum wewenang, persyaratan tambahan, hubungan kerja, dan kondisi kerja bersama (butir 4.5, 4.7, 4.8, dan 4.10) berlaku untuk semua jabatan."]}

@@ -283,3 +283,18 @@ Catatan pelaksana, tidak diubah:
 - Blok Prepared dan Reviewed tetap milik HR (Sita sebagai Prepared, Aziz Priyo Widakdo / HR Lead sebagai Reviewed).
 - Uji: render_sop, lint_doc generic (pass), validate.py (PASSED), blankscan (ok), w9diff dibaca.
 - R2: Kesimpulan dan definisi "Menunggu konfirmasi" diperbaiki (dua perubahan spec); baris notes basi ditandai di tempat.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Sebutan pihak luar: "Pelanggan" (satu kemunculan, Ruang Lingkup), tidak diubah.
+"review manajemen" di Matriks Peran ditulis "Management Review". Bagan, tabel K, nama jabatan JA-xx, dan keputusan G-3 A1 sampai A6 tidak diubah.
+Label (USULAN) Acuan Klausul dipindah ke akhir kalimat; isinya tetap (perlu konfirmasi konsultan).
+
+### W10 koreksi worker (temuan nonblocking qa/HR-ORG-01.w10.json)
+- Kesimpulan: "atau lebih awal" dikembalikan menjadi "dan lebih awal" agar tinjauan karena perubahan tidak terbaca menggantikan tinjauan tahunan (arti asli dipertahankan).

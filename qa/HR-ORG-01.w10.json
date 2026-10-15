@@ -1,0 +1,11 @@
+{"verdict": "PASS", "scores": {"a": 4, "b": 4, "c": 4, "d": "n/a"},
+ "blocking": [],
+ "nonblocking": [
+  "Matriks Peran: 'pemimpin tinjauan manajemen' menjadi 'pemimpin Management Review' tanpa padanan; SNX-HR-JA-01 memakai 'Management Review (tinjauan manajemen)'. Samakan bentuknya atau biarkan, karena tidak ada di glossary §5.",
+  "Kesimpulan: 'dan lebih awal bila' menjadi 'atau lebih awal jika'. Artinya tetap review tahunan plus review lebih awal jika ada perubahan, tetapi 'dan' lebih tepat.",
+  "Tujuan: 'Hasil yang dijaga adalah satu susunan yang sama' menjadi 'Karyawan dan auditor memakai susunan yang sama'. Kalimatnya menjadi deskriptif, bukan sasaran, tetapi arti aturan tidak berubah.",
+  "Definisi Peran: 'dipegang oleh pemegang satu jabatan atau lebih' menjadi 'dipegang oleh satu jabatan atau lebih'. Perbedaan kecil, arti tetap.",
+  "G-3 dan tabel K utuh: ejaan Kristanto (K-07), HR Lead (JA-14, K-06), dua garis JA-03 dan JA-04 ke JA-01 dan JA-02 (K-01, hanya disusun ulang), label menunggu konfirmasi K-02 sampai K-04, Legal bernama, serta Finance Lead/Staff (USULAN) tetap. Label (USULAN) pada Acuan Klausul tetap ada. Judul klausul ISO sama dengan bed1bb6.",
+  "PDF 14 halaman: tabel di dalam margin dan tidak terlihat terpotong (dicek pada render 60 dpi)."
+ ],
+ "contoh_baik": ["Setiap butir menunggu konfirmasi ... Bagan dan tabel merujuk nomor itu dan tidak mengulang uraiannya. -> Bagan dan tabel cukup mencantumkan nomor itu tanpa mengulang uraiannya."]}
