@@ -1,4 +1,4 @@
-# ISO-W10 RESUME (WORKER-ISO-03) [SELESAI: W10-DONE 09.24 UTC, lihat reports/REVIEW-W10.md] — baca ini dulu bila konteks diringkas atau container baru
+# ISO-W10 RESUME (WORKER-ISO-03) [SELESAI: W10-DONE 09.24 UTC, lihat reports/REVIEW-W10.md], baca ini dulu bila konteks diringkas atau container baru
 
 Kebenaran keadaan: `python3 -I reports/orch/w10.py status` (gate + qa per KEY), `reports/w10/gates/KEY.json`, `qa/KEY.w10*.json`, ledger.json medan `w10`, git log. Berkas ini ringkasan, bukan sumber.
 
