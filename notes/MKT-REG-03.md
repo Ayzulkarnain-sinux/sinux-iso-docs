@@ -106,7 +106,7 @@ Perintah: `grep -n "Marketing Lead & Campaign Outc" context/audit/*.md`. Hasil: 
 
 ## USULAN
 
-28 kemunculan "(USULAN)" di spec sesudah sweep (dihitung `grep -o`; 24 sebelum sweep), ditambah satu "(USULAN, perlu konfirmasi konsultan)" di Acuan ISO. Dikelompokkan jadi 18 butir. Pemutus yang disarankan memakai kelompok: owner, Samuel, Aziz, FAT, Legal, Fani.
+Diubah W9: hitungan lint sesudah W9 = 21 butir USULAN (angka di paragraf ini dari sebelum W9). 28 kemunculan "(USULAN)" di spec sesudah sweep (dihitung `grep -o`; 24 sebelum sweep), ditambah satu "(USULAN, perlu konfirmasi konsultan)" di Acuan ISO. Dikelompokkan jadi 18 butir. Pemutus yang disarankan memakai kelompok: owner, Samuel, Aziz, FAT, Legal, Fani.
 
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -121,12 +121,12 @@ Perintah: `grep -n "Marketing Lead & Campaign Outc" context/audit/*.md`. Hasil: 
 | U-09 | Evaluasi kualitas lead di Tabel 4 dari Status Qualification dan feedback; VP Commercial menetapkan kriteria kualitas; sampai itu hanya dua isian Tabel 2 | Butir 4.10 | owner |
 | U-10 | Tindak lanjut di Tabel 4 oleh Brand & Marketing; tinjauan Tabel 3 dan 4 oleh VP Commercial | Butir 4.11 | owner |
 | U-11 | Periode Tabel 3 dan 4 satu bulan kalender, mengikuti satuan per bulan pada KPI | Butir 4.12 | owner |
-| U-12 | Lead tanpa campaign diisi Tanpa campaign | Butir 4.13 | owner |
+| U-12 | Lead tanpa campaign diisi Tanpa campaign | Butir 4.13 | owner ; diubah W9 R2: kolom Campaign Asal memuat nama Aktivitas di SNX-MKT-REG-02; nilai Tanpa campaign tetap untuk lead tanpa Aktivitas |
 | U-13 | Register terisi berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3 | Butir 4.14; Rekaman; Acuan ISO | Fani (pemilik SNX-ISMS-PRO-01) dan owner |
 | U-14 | Register hanya memuat nama perusahaan atau institusi lead; kontak orang tetap di CRM | Butir 4.15; Ruang Lingkup baris 7 | Legal (pelindungan data pribadi) dan owner |
 | U-15 | Folder Google Drive departemen Marketing sebagai lokasi, pemilik VP Commercial, pencatat Brand & Marketing; retensi belum ditetapkan | Butir 4.16; Rekaman | owner dan Legal (retensi) |
 | U-16 | Struktur kolom Tabel 1 sampai Tabel 4 dan 10 baris per tabel | Isi Register | owner |
-| U-17 | Batas cakupan empat dokumen Marketing: SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja; SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim; SNX-MKT-REG-02 = pelaksanaan campaign dan aktivitas, dengan materi tertaut ke ID persetujuan di SNX-MKT-REG-01; register ini = hasil lead dan serah terima ke Sales, merujuk nama campaign di SNX-MKT-REG-02. Tabel 3 dan 4 sebagai data masukan SNX-MKT-RPT-01 | Ruang Lingkup (kalimat pengantar dan baris 3 sampai 5); Dokumen Terkait | owner |
+| U-17 | Batas cakupan empat dokumen Marketing: SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja; SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim; SNX-MKT-REG-02 = pelaksanaan campaign dan aktivitas, dengan materi tertaut ke ID persetujuan di SNX-MKT-REG-01; register ini = hasil lead dan serah terima ke Sales, merujuk nama campaign di SNX-MKT-REG-02. Tabel 3 dan 4 sebagai data masukan SNX-MKT-RPT-01 | Ruang Lingkup (kalimat pengantar dan baris 3 sampai 5); Dokumen Terkait | owner ; diubah W9: batas sudah diputus owner (A8), label USULAN pada batas dihapus; REG-01 satu-satunya register materi, konten, dan persetujuan klaim; REG-02 merujuk Aktivitas, bukan campaign saja |
 | U-18 | Klausul ISO 9001:2015 9.1.1, 9.1.3, 10.3, 7.5.3 dan ISO/IEC 27001:2022 Annex A 5.12, label "(USULAN, perlu konfirmasi konsultan)"; peninjauan register tahunan oleh VP Commercial | Acuan ISO; Kesimpulan | owner (meneruskan ke konsultan) |
 
 ## Open items
@@ -206,7 +206,18 @@ Open item yang ditutup atau diubah W9: lihat kolom Pemutus pada tabel Open items
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
 | OI-13 | Description checklist baris 58 berisi pengendalian materi baris 57 yang diperluas dengan validasi klaim, bukan pelaksanaan campaign sesuai judulnya (Marketing Campaign & Activity Register); perlu dibetulkan Brand & Marketing. Pengukuran: teks baris 58 tidak identik dengan baris 57. | Brand & Marketing |
-| OI-14 | REG-02 tidak lagi punya kolom Jenis, jadi kolom Campaign Asal di sini menerima nama Aktivitas apa pun (campaign, event, atau webinar). Istilah Campaign di Definisi tetap "kegiatan marketing yang tercatat dengan nama di SNX-MKT-REG-02" | owner |
+| OI-14 | REG-02 tidak lagi punya kolom Jenis, jadi kolom Campaign Asal di sini menerima nama Aktivitas apa pun (campaign, event, atau webinar). Istilah Campaign di Definisi tetap "kegiatan marketing yang tercatat dengan nama di SNX-MKT-REG-02" | owner ; diubah R2: Definisi Campaign kini "Aktivitas pemasaran SINUX yang tercatat dengan nama Aktivitas di SNX-MKT-REG-02" dan Campaign Asal ditulis dengan nama Aktivitasnya |
 | OI-15 | A3: dokumen ini tidak menyebut JA-03 atau JA-04 dan tidak menyebut atasan atau garis lapor keduanya; tidak ada yang diselaraskan | - |
 
 Uji (spec W9): render, `lint_doc.py ... generic`: pass true, fails kosong, 21 butir USULAN; `validate.py`: All validations PASSED; `blankscan.py`: ok 12 halaman []; `w9diff.py MKT-REG-03`: diff hanya baris di tabel di atas.
+
+### ISO-W9 R2
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| R2 butir 3, Definisi Campaign | "Kegiatan marketing SINUX yang tercatat dengan nama di SNX-MKT-REG-02." | "Aktivitas pemasaran SINUX yang tercatat dengan nama Aktivitas di SNX-MKT-REG-02." |
+| R2 butir 3, Definisi Campaign Asal | "Campaign yang menghasilkan sebuah lead." | "Campaign di SNX-MKT-REG-02 yang menghasilkan sebuah lead, ditulis dengan nama Aktivitasnya." |
+| R2 butir 3, butir 4.13 | "Lead yang tidak berasal dari campaign diisi Tanpa campaign ..." | "Lead yang tidak berasal dari Aktivitas di SNX-MKT-REG-02 diisi Tanpa campaign ..."; aturan dan nilai isian tidak berubah |
+| R2 butir 3, Cara Mengisi 6.5 | "menulis nama campaign di kolom Campaign Asal ... bila lead tidak berasal dari campaign" | "menulis nama Aktivitas di kolom Campaign Asal ... bila lead tidak berasal dari Aktivitas di register itu" |
+
+Hygiene R2 butir 4: USULAN U-12, U-17 dan OI-14 kini memuat "diubah W9" di barisnya sendiri; hitungan label USULAN dikoreksi.

@@ -2,32 +2,40 @@
  "key": "MKT-REG-03",
  "cluster": "MKT",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Istilah belum seragam: teks yang diubah (pengecualian baris REG-02 dan Dokumen Terkait REG-02) menyebut kolom Campaign Asal merujuk 'nama Aktivitas', tetapi bagian yang tidak diubah tetap memakai 'nama campaign': Definisi 'Campaign' dan 'Campaign Asal', butir 4.13, dan 6.5 ('nama campaign di kolom Campaign Asal persis seperti di SNX-MKT-REG-02', padahal kolom REG-02 sekarang bernama Nama Aktivitas). Makna tetap bisa ditelusuri karena Definisi Campaign berbunyi 'kegiatan yang tercatat dengan nama di SNX-MKT-REG-02', dan penyusun mencatatnya sebagai OI-14 di notes. Perlu dirapikan agar tiap hal memakai satu istilah.",
-  "Label (USULAN) dilepas juga dari mekanisme rujukan 'Register ini hanya merujuk nama Aktivitas di sana lewat kolom Campaign Asal'. Ini lebih dari sekadar batas cakupan, sedangkan butir 4.13 (Tanpa campaign) tetap berlabel (USULAN). Masih bisa diterima sebagai bagian batas yang diputus A8.",
-  "Notes: daftar 'ditutup W9: <alasan>' tidak ditulis sebagai daftar tersendiri. Penyusun menunjuk kolom Pemutus, dan di OI-10 tertulis 'diubah W9: ...'. Bentuknya menyimpang dari instruksi, tetapi isinya ada dan baris open item lama tidak dihapus.",
-  "Dokumen Terkait REG-02 memakai kata 'Budget' untuk 'anggaran bila ada' dari A8. Kata itu cocok dengan kolom dan Definisi Budget di spec REG-02 terkini, jadi tidak ada fakta baru."
+  "Definisi Campaign Asal yang baru, \"... yang menghasilkan sebuah lead, ditulis dengan nama Aktivitasnya\", memakai pasif tanpa pelaku. Rumusan aktif yang bisa dipakai: \"Brand & Marketing menulisnya dengan nama Aktivitas\".",
+  "Istilah Aktivitas (huruf besar) kini dipakai 10 kali di dokumen tetapi tidak punya baris sendiri di Definisi REG-03. Artinya hanya tersirat lewat definisi Campaign dan rujukan ke SNX-MKT-REG-02. Ini tidak mengubah makna dan cocok dengan definisi di REG-02 dan RPT-01.",
+  "Nilai isian Tanpa campaign tetap dipakai, sedangkan acuannya kini Aktivitas. Ini sah karena R2 butir 3 meminta aturan tidak diubah, tetapi istilahnya tidak sepenuhnya seragam.",
+  "Notes baris 46 (tabel pemetaan kriteria) masih menulis \"acuan nama ke SNX-MKT-REG-02 (USULAN)\", padahal label pada batas itu sudah dihapus W9. Baris ini berada di luar tabel Open items/USULAN, jadi tidak wajib menurut R2 butir 4, tetapi isinya sudah tidak akurat.",
+  "Kalimat baru \"Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-02\" punya dasar di arahan A8 (\"RPT-01 membaca REG-02 dan REG-03\") dan cocok dengan render W9 RPT-01 bagian 3 (\"Brand & Marketing mengisi laporan ini dari SNX-MKT-REG-02 ... dan dari SNX-MKT-REG-03\") serta REG-02. Jadi kalimat ini bukan fakta baru."
  ],
  "butir_dikerjakan": [
-  "Butir 1 (A8) di Ruang Lingkup: kalimat '(USULAN)' tentang pembagian isi empat dokumen Marketing dihapus karena batasnya sudah diputus.",
-  "Butir 1 (A8) di tabel pengecualian: baris REG-02 menjadi 'Pelaksanaan Aktivitas pemasaran' dan merujuk nama Aktivitas lewat kolom Campaign Asal. Baris REG-01 menjadi 'satu-satunya register materi, konten, dan persetujuan klaim'. Baris RPT-01 menjadi 'Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-02', sesuai 'RPT-01 membaca REG-02 dan REG-03' dan cocok dengan spec RPT-01 terkini. Label (USULAN) batas lama dihapus.",
-  "Butir 1 (A8) di Dokumen Terkait: REG-01 sebagai satu-satunya register materi, konten, dan persetujuan klaim termasuk validasi klaim. REG-02 mendaftar kolom A8 (nama, tujuan, Channel, jadwal, PIC, Budget, status, ID materi di REG-01, hasil singkat), dan kolom itu cocok dengan Tabel 1 REG-02 terkini. RPT-01 diisi Brand & Marketing dari REG-03 dan REG-02.",
-  "Butir 1 (A8) di tabel, Cara Mengisi, Peran, dan Rekaman: REG-03 tetap untuk lead dan hasil, jadi tidak ada kolom yang perlu diubah.",
-  "Butir 2 (open item baris 58): ditulis di notes sebagai OI-13 dengan makna sesuai instruksi, tanpa kata 'identik' atau 'salinan persis' (notes menyebut 'tidak identik'). Dokumen tidak menyebut baris 58 (grep 0), jadi teks dokumen tidak perlu diubah.",
-  "Butir 5 (A3): dokumen tidak menyebut JA-03 atau JA-04 (grep 0) dan tidak memuat garis lapor keduanya, jadi tidak ada yang diubah. Hal ini dicatat di notes sebagai OI-15.",
-  "Butir data (4): blok approval sama dengan defaults v22 MKT, yaitu Prepared 'Zilly Dwinata / Brand & Marketing', Reviewed 'Laras Rasmawati / VP Commercial', Approved 'Samuel Kristanto Utomo / President Director'. Process owner VP Commercial tidak berubah.",
-  "Notes: bagian '## ISO-W9' ada, berisi tabel butir | sebelum | sesudah (7 baris, cocok dengan 7 perubahan di diff) dan hasil uji."
+  "A8 Ruang Lingkup: kalimat pengantar pengecualian yang memuat label (USULAN) pembagian empat dokumen dihapus karena batas sudah diputus.",
+  "A8 tabel pengecualian: baris REG-02 kini berbunyi Pelaksanaan Aktivitas pemasaran dan merujuk nama Aktivitas lewat kolom Campaign Asal. Baris REG-01 menyebut satu-satunya register materi, konten, dan persetujuan klaim. Baris RPT-01 menyebut bahwa Brand & Marketing mengisi RPT-01 dari REG-03 dan REG-02. Ketiga label (USULAN) batas dihapus.",
+  "A8 Dokumen Terkait: REG-01 adalah satu-satunya register termasuk validasi klaim. Daftar kolom REG-02 (nama, tujuan, Channel, jadwal, PIC, Budget, status, ID materi di REG-01, hasil singkat) sesuai Tabel 1 di render W9 REG-02. RPT-01 diisi dari REG-03 dan REG-02. Tiga label dihapus. Jumlah (USULAN) turun dari 29 ke 22, cocok dengan 7 label yang dihapus.",
+  "A8: REG-03 tetap untuk lead dan hasil. Struktur tabel, Peran, dan Rekaman tidak perlu diubah dan memang tidak diubah.",
+  "Butir 2 (baris 58): dokumen REG-03 tidak menyebutnya. Notes OI-13 menuliskannya sesuai makna arahan, tanpa klaim identik/salinan persis.",
+  "A3: REG-03 tidak menyebut JA-03/JA-04 atau garis lapor keduanya. Dicatat di notes OI-15, tidak ada perubahan.",
+  "R2 butir 3: istilah diseragamkan ke nama Aktivitas di definisi Campaign, definisi Campaign Asal, butir 4.13, dan 6.5. Aturan dan nilai Tanpa campaign tetap.",
+  "R2 butir 4: notes U-12, U-17, OI-10, dan OI-14 memuat \"diubah W9\" di barisnya sendiri. Bagian ## ISO-W9 dan ### ISO-W9 R2 berisi tabel butir | sebelum | sesudah.",
+  "Blok approval tidak berubah dan sama persis dengan defaults v22: MKT prepared Zilly Dwinata / Brand & Marketing, reviewed Laras Rasmawati / VP Commercial, approved_by.all Samuel Kristanto Utomo / President Director.",
+  "Rujukan silang yang berubah (REG-02 Tabel 1 Nama Aktivitas, kolom Campaign Asal, REG-01, RPT-01) menunjuk isi yang ada dan cocok di render W9 REG-02, RPT-01, dan REG-01."
  ],
  "butir_tidak_dikerjakan": [
-  "Nihil untuk MKT-REG-03. Butir 3 (B2) dan 4 (B4) hanya menyasar RPT-01, REG-01, dan REG-02, jadi tidak berlaku untuk dokumen ini."
+  "Tidak ada butir yang tertinggal. B4 (repeat_header/cant_split) khusus RPT-01, dan R2 butir 1 dan 2 khusus REG-02/RPT-01, jadi ketiganya tidak berlaku untuk REG-03."
  ],
- "grep": "Grep langkah 7 dijalankan pada teks render /tmp/claude-0/w9/render/MKT-REG-03.docx. Dokumen ini dokumen Marketing, bukan HR atau Legal, jadi aturannya tidak berlaku, tetapi hasilnya tetap dicatat. 'HR Manager' 0, 'Divisi Legal' 0. Pemeriksaan bahasa pada teks yang sama: em-dash 0, en-dash 0, 'dokumen sumber' 0, 'sumber tim' 0, 'di sumber' 0, 'draf ini' 0, 'belum berdokumen' 0, 'penyusun' 0, rujukan AI 0, JA-03 dan JA-04 0, 'baris 58' 0. Diff teks berisi 7 baris lama dan 7 baris baru, dan semuanya ada di tabel ISO-W9 pada notes.",
+ "grep": "MKT-REG-03 adalah dokumen Marketing, bukan HR atau Legal, jadi aturan grep langkah 7 tidak berlaku. Untuk kepastian, hitungan pada render sesudah (/tmp/claude-0/w9/render/MKT-REG-03.docx): \"HR Manager\" 0, \"Divisi Legal\" 0, em-dash 0.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }

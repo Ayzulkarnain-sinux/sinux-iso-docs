@@ -105,11 +105,11 @@
        ],
        [
         "Campaign",
-        "Kegiatan marketing SINUX yang tercatat dengan nama di SNX-MKT-REG-02."
+        "Aktivitas pemasaran SINUX yang tercatat dengan nama Aktivitas di SNX-MKT-REG-02."
        ],
        [
         "Campaign Asal",
-        "Campaign yang menghasilkan sebuah lead."
+        "Campaign di SNX-MKT-REG-02 yang menghasilkan sebuah lead, ditulis dengan nama Aktivitasnya."
        ],
        [
         "CRM",
@@ -204,7 +204,7 @@
      "p": "4.12 Periode Tabel 3 dan Tabel 4 adalah satu bulan kalender, mengikuti satuan per bulan pada KPI Lead Generation & Marketing Qualified Leads (MQL) di KPI COMMERCIAL & MARKETING.xlsx (USULAN)."
     },
     {
-     "p": "4.13 Lead yang tidak berasal dari campaign diisi Tanpa campaign di kolom Campaign Asal (USULAN)."
+     "p": "4.13 Lead yang tidak berasal dari Aktivitas di SNX-MKT-REG-02 diisi Tanpa campaign di kolom Campaign Asal (USULAN)."
     },
     {
      "p": "4.14 Register kosong berklasifikasi INTERNAL. Register yang sudah berisi data lead berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3, karena lead adalah customer sasaran penjualan (USULAN)."
@@ -270,7 +270,7 @@
      "p": "6.4 Brand & Marketing menulis saluran atau kegiatan perolehan lead di kolom Sumber Lead, dengan nama yang sama setiap kali."
     },
     {
-     "p": "6.5 Brand & Marketing menulis nama campaign di kolom Campaign Asal persis seperti di SNX-MKT-REG-02, atau Tanpa campaign bila lead tidak berasal dari campaign (butir 4.13)."
+     "p": "6.5 Brand & Marketing menulis nama Aktivitas di kolom Campaign Asal persis seperti di SNX-MKT-REG-02, atau Tanpa campaign bila lead tidak berasal dari Aktivitas di register itu (butir 4.13)."
     },
     {
      "p": "6.6 Brand & Marketing menulis nomor atau nama catatan lead di CRM pada kolom Rujukan CRM, sesudah Business Development mencatat lead itu (butir 4.4)."
