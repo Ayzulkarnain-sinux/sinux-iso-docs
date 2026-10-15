@@ -15,8 +15,8 @@
     "effective_date": "",
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
-      "prepared": "Staff Legal",
-      "reviewed": "Line Manager Legal",
+      "prepared": "Alif Altamziz / Staff Legal",
+      "reviewed": "Ester Febe Utomo / Line Manager Legal",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -339,11 +339,11 @@
             "rows": [
               [
                 "Staff Legal",
-                "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01."
               ],
               [
                 "Line Manager Legal",
-                "Pemilik dokumen (USULAN). Memeriksa laporan terisi, menetapkan Tingkat Kepatuhan seluruh Bidang, dan menyampaikan laporan terisi kepada Manajemen (Ketentuan butir 16 dan 17). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pemilik dokumen (USULAN). Memeriksa laporan terisi, menetapkan Tingkat Kepatuhan seluruh Bidang, dan menyampaikan laporan terisi kepada Manajemen (Ketentuan butir 16 dan 17). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01."
               ],
               [
                 "Penanggung Jawab Kegiatan",
@@ -908,7 +908,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), yang dipetakan ke nama peran Line Manager Legal dan Staff Legal (USULAN), serta unit Management dan jabatan Penanggung Jawab Kegiatan."
+                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), yang dipetakan ke nama peran Line Manager Legal dan Staff Legal, serta unit Management dan jabatan Penanggung Jawab Kegiatan."
               ]
             ],
             "widths_cm": [

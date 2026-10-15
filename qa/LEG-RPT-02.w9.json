@@ -1,0 +1,38 @@
+{
+ "key": "LEG-RPT-02",
+ "cluster": "LEG-C",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Di notes/LEG-RPT-02.md, baris open item lama nomor 10 (baris 138) dan baris USULAN nomor 21 (baris 114) masih menyebut pemetaan 'menunggu konfirmasi' / 'berlabel USULAN'. Kolom statusnya tidak diubah di tempat. Penutupan hanya dicatat lewat baris tambahan di bagian ## ISO-W9 (baris 201). Instruksi NOTES meminta 'ubah statusnya saja'. Ini kosmetik di notes, tidak memengaruhi dokumen.",
+  "Label (USULAN) pada penugasan peran 'Pelaksana Evaluasi (USULAN)' dan 'Pemilik dokumen (USULAN)' tetap ada. Ini sesuai butir 1, karena hanya label pada pemetaan JA yang dihapus.",
+  "Baris 22 dan 170 di notes masih menyebut config/defaults.json v21 dan K-13 sebagai rujukan pendukung lama. Ini catatan historis, bukan isi dokumen."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 (A5), blok Prepared: 'Staff Legal' diganti 'Alif Altamziz / Staff Legal', persis sama dengan defaults v22 prepared_reviewed.LEG.prepared",
+  "Butir 1 (A5), blok Reviewed: 'Line Manager Legal' diganti 'Ester Febe Utomo / Line Manager Legal', persis sama dengan defaults v22 prepared_reviewed.LEG.reviewed",
+  "Approved tetap 'Samuel Kristanto Utomo / President Director', sesuai approved_by.all v22",
+  "Butir 1 (A5): ', menunggu konfirmasi (K-13) (USULAN)' dihapus dari pemetaan Staff Legal ke JA-09 di tabel Peran",
+  "Butir 1 (A5): ', menunggu konfirmasi (K-13) (USULAN)' dihapus dari pemetaan Line Manager Legal ke JA-08 di tabel Peran",
+  "Butir 1 (A5): '(USULAN)' dihapus dari pemetaan nama peran di baris Dokumen Terkait SNX-HR-ORG-01",
+  "Badan dokumen tetap memakai nama peran. Nama orang hanya muncul di blok Prepared/Reviewed (Alif 1x dan Ester 1x di teks sesudah, keduanya di blok approval)",
+  "Nama Daffa tidak dipakai (0 kemunculan)",
+  "Butir 2 (A3) tidak berlaku: JA-03 dan JA-04 masing-masing 0 kemunculan, baik sebelum maupun sesudah. Hal ini tercatat di notes.",
+  "Rujukan JA-08 dan JA-09 di SNX-HR-ORG-01 tidak berubah dan cocok dengan specs/HR-ORG-01.json (JA-08 Legal & Compliance Ester Febe Utomo, JA-09 Legal & Compliance Alif Altamziz)",
+  "Notes mendapat bagian ## ISO-W9 berisi tabel 5 perubahan dan catatan open item yang ditutup. Tidak ada baris lama yang dihapus.",
+  "Diff teks hanya berisi 5 baris berubah, semuanya sesuai butir 1. Tidak ada fakta baru dan tidak ada kalimat baru. Perubahan pada kalimat hanya berupa penghapusan frasa."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Penggantian 'Divisi Legal' menjadi 'Departemen Legal': tidak relevan karena dokumen ini tidak memuat 'Divisi Legal' maupun nama unit Legal, baik sebelum maupun sesudah. Bukan kelalaian."
+ ],
+ "grep": "Teks sesudah (render /tmp/claude-0/w9/render/LEG-RPT-02.docx diekstrak ke /tmp/claude-0/w9/chk/LEG-RPT-02.after.txt) memberi hasil berikut. 'Divisi Legal' = 0 (memenuhi syarat dokumen Legal). 'HR Manager' = 0. 'Daffa' = 0. 'menunggu konfirmasi' = 0. 'K-13' = 0. 'JA-03' = 0. 'JA-04' = 0. Em-dash = 0. 'Departemen Legal' = 0, karena unit Legal memang tidak disebut. 'JA-08' = 2. 'JA-09' = 2. 'Alif' = 1 dan 'Ester' = 1, keduanya hanya di blok approval.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

@@ -185,3 +185,18 @@ Putaran penghalusan sesudah DONE (instruksi /tmp/claude-0/prompts/LEG-RPT-02.swe
 Satu perbedaan dengan SNX-LEG-SOP-03 yang dipertahankan, berlabel USULAN di baris itu: baris rekaman Bukti pemenuhan Persyaratan. SNX-LEG-SOP-03 menetapkan Line Manager Legal sebagai pemilik rekaman di bagian 11 SOP itu (butir 4.26), dan butir 4.26 tidak mencakup Bukti asli milik unit lain. Maka Bukti asli tetap dimiliki Penanggung Jawab Kegiatan, sedangkan salinan Bukti di folder Google Drive departemen Legal dimiliki Line Manager Legal menurut pola SNX-LEG-SOP-03 (perluasan butir 4.26, USULAN). Pencatat lokasi tetap Staff Legal. Pemutus: Legal.
 
 Hasil uji sesudah perbaikan r1: render exit 0; lint_doc generic "pass": true, fails kosong, satu warn "32 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan.py "ok 15 LEG-RPT-02.docx []".
+
+
+## ISO-W9
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| Blok Approval, Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| Blok Approval, Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| Dokumen Terkait, baris SNX-HR-ORG-01 | ... Line Manager Legal dan Staff Legal (USULAN), serta unit ... | ... Line Manager Legal dan Staff Legal, serta unit ... |
+
+Open item:
+- Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap. Open item 10: ditutup W9: pemetaan sudah diputus owner.
+- A3: tidak ada garis lapor JA-03/JA-04 (Direktur Utama dan Direktur (COO) disebut hanya sebagai unit Management).
