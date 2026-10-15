@@ -1,0 +1,32 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Bagian 2 Scope baris pengecualian; Bagian 11 Dokumen terkait baris 'Belum bernomor' SOP Account Receivable & Collection",
+      "masalah": "Makna berubah di luar instruksi. Butir 2 meminta dokumen yang disebut 'dalam peninjauan' atau 'belum bernomor' dirujuk dengan nomor barunya; SOP Account Receivable & Collection tidak termasuk tiga dokumen itu dan tetap belum bernomor. Penyusun memindahkan 'pendataan piutang' dari SOP Account Receivable & Collection ke SNX-FAT-REG-01 dan memangkas deskripsi SOP itu menjadi hanya 'penagihan invoice kepada customer'. Ini bertentangan dengan checklist baris 24, yang menyebut SOP itu mencakup penagihan invoice dan pendataan piutang. SNX-FAT-REG-01 (checklist baris 29) adalah tracker, yaitu rekaman, bukan prosedur pendataan; versi sebelum sweep pun tidak pernah merujuknya. Perbaikan minimal: kembalikan deskripsi SOP Account Receivable & Collection persis seperti checklist baris 24 ('penagihan invoice dan pendataan piutang'); bila SNX-FAT-REG-01 tetap dirujuk, sebut sebagai tracker piutang (USULAN) tanpa mengambil alih proses dari SOP itu.",
+      "bukti": "Sebelum: 'penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection)'; 'SOP Account Receivable & Collection; dalam peninjauan; penagihan invoice kepada customer dan pendataan piutang, ...'. Sesudah: 'penagihan invoice (SOP Account Receivable & Collection); pendataan piutang (SNX-FAT-REG-01)'; 'SOP Account Receivable & Collection; dalam peninjauan; penagihan invoice kepada customer, ...'. config/checklist.json row 24: 'SOP ini menjelaskan proses penagihan invoice kepada customer dan pendataan piutang'; row 29 (Billing & Collection Monitoring Register): 'Dokumen tracker untuk semua piutang dari customer'. Instruksi sweep butir 2 hanya menyebut SNX-FAT-SOP-06, SNX-FAT-REG-01, SNX-FAT-FRM-02 sebagai dokumen yang kini bernomor."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 3 definisi 'Jurnal penyesuaian' (butir 1)",
+      "masalah": "Sesuai butir 1: definisi baru tidak lagi lebih sempit dari 4.5 dan bukan fakta baru. Dasarnya sumber Tujuan 3 (jurnal akhir periode untuk beban gaji yang masih harus dibayar, penyusutan, amortisasi, utang/piutang pajak) dan Ruang Lingkup III.4. Catatan gaya kecil: 'Jurnal ... yang menyesuaikan saldo akun' menjadikan benda pelaku kata kerja. Ungkapan ini lazim di akuntansi, tetapi bisa ditulis 'Jurnal akhir periode untuk menyesuaikan saldo akun ...'.",
+      "bukti": "Sesudah: 'Jurnal akhir periode yang menyesuaikan saldo akun supaya beban dan pendapatan tercatat pada periode yang tepat.' Sumber 18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs Tujuan 3: 'pencatatan jurnal akrual di akhir periode, seperti pengakuan beban gaji yang masih harus dibayar, penyusutan aset tetap (server/hardware), amortisasi software, dan utang/piutang pajak.'"
+    },
+    {
+      "lokasi": "Butir 1 bagian kedua (scope aset tetap, ekualisasi, tutup buku tahunan); butir 4.6",
+      "masalah": "Tidak diubah. Ini sesuai instruksi: celah dari sumber, sudah (USULAN) di 4.6, pemutusnya FAT. Penyusun menyebutnya di notes bagian Sweep (U4, open item 1), jadi butir ini tercatat dan tidak hilang diam-diam.",
+      "bukti": "specs/FAT-SOP-06.json policy 4.6 tidak ada di spec.diff; notes/FAT-SOP-06.md ## Sweep baris 1 kedua: 'Tidak diubah: gap dari sumber, sudah (USULAN) di butir 4.6, pemutus FAT'."
+    },
+    {
+      "lokasi": "Butir 2: SNX-FAT-FRM-02 dan SNX-FAT-SOP-06",
+      "masalah": "SNX-FAT-FRM-02 sudah dirujuk dengan nomor sebelum sweep (butir 4.8, Dokumen terkait). SNX-FAT-SOP-06 adalah dokumen ini sendiri dan tidak muncul sebagai rujukan 'dalam peninjauan'. Tidak ada tindakan yang tertinggal. Dua rujukan 'Belum bernomor' yang tersisa (SOP Account Receivable & Collection, SOP Payment and Disbursement Approval) memang tidak ada di daftar bernomor, jadi benar tetap ditulis begitu.",
+      "bukti": "Teks docx: 'Belum bernomor' 2 kali, 'dalam peninjauan' 2 kali, keduanya untuk SOP Account Receivable & Collection dan SOP Payment and Disbursement Approval; config/worklist.json kedua SOP itu number null, HOLD-T3."
+    },
+    {
+      "lokasi": "Seluruh dokumen (pola §6a dan batas keras §0)",
+      "masalah": "Catatan positif, bukan cacat. Perubahan tidak menambah em-dash, en-dash, rujukan internal AI, nama, jabatan, angka, sistem, atau tanggal. Status tetap Draft dan effective_date kosong. Spec.diff hanya berisi tiga hunk (scope, definisi, Dokumen terkait); flow dan simpul diagram tidak berubah.",
+      "bukti": "Hitung teks docx out/03_FAT: em-dash 0, en-dash 0, 'SKILL_' 0, 'DEC-' 0, 'Claude' 0, 'HANDOVER' 0; /tmp/claude-0/sweep/FAT-SOP-06.spec.diff tanpa hunk di 'flow'."
+    }
+  ]
+}

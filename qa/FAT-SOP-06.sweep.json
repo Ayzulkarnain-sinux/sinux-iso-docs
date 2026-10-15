@@ -1,0 +1,31 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Pemblokir putaran pertama (qa/FAT-SOP-06.sweep.r1.json): Bagian 2 Scope baris pengecualian; Bagian 11 Dokumen terkait baris SOP Account Receivable & Collection",
+      "masalah": "Sudah selesai. Rumusan SOP Account Receivable & Collection kembali persis seperti sebelum sweep dan sesuai checklist baris 24 (penagihan invoice dan pendataan piutang). SOP itu tetap 'Belum bernomor' dan 'dalam peninjauan'. SNX-FAT-REG-01 hanya ditambahkan sebagai tracker piutang dan tidak mengambil alih proses SOP itu.",
+      "bukti": "Teks docx HEAD dan sekarang: baris Dokumen terkait 'SOP Account Receivable & Collection; dalam peninjauan; penagihan invoice kepada customer dan pendataan piutang, dikecualikan dari SOP ini (bagian 2, USULAN).' tidak berubah (tidak ada hunk di diff). Scope sesudah: 'penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection), dengan tracker piutang di SNX-FAT-REG-01'."
+    },
+    {
+      "lokasi": "Butir 2: rujukan SNX-FAT-REG-01 (Scope baris pengecualian dan baris Dokumen terkait baru)",
+      "masalah": "Sedikit melebar dari bunyi harfiah butir 2. Sebelum sweep, dokumen ini tidak menyebut register itu sama sekali, baik sebagai 'dalam peninjauan' maupun 'belum bernomor'. Namun tambahan ini punya dasar: nomor dari instruksi sweep dan uraian dari checklist baris 29. Tambahan juga berlabel USULAN dan tidak mengubah proses. Penyusun mencatatnya di notes ## Sweep. Pemutus FAT boleh membuang rujukan ini bila tidak diinginkan.",
+      "bukti": "git show HEAD:specs/FAT-SOP-06.json tanpa 'REG-' atau 'Billing & Collection Monitoring'. config/checklist.json row 29: 'Dokumen tracker untuk semua piutang dari customer'. Baris baru: 'Billing & Collection Monitoring Register; tracker semua piutang dari customer, rekaman pelacak piutang di luar scope SOP ini (bagian 2, USULAN).'"
+    },
+    {
+      "lokasi": "Bagian 3 definisi 'Jurnal penyesuaian' (butir 1)",
+      "masalah": "Sesuai butir 1: definisi tidak lagi lebih sempit dari 4.5 dan tidak memuat fakta baru. Catatan gaya dari putaran pertama tetap berlaku: 'Jurnal ... yang menyesuaikan saldo akun' menjadikan benda pelaku kata kerja, dan 'tercatat' tidak menyebut pelaku. Ungkapan ini lazim di akuntansi. Penyusun sengaja tidak mengubahnya dan menyebut alasannya di notes.",
+      "bukti": "Sesudah: 'Jurnal akhir periode yang menyesuaikan saldo akun supaya beban dan pendapatan tercatat pada periode yang tepat.' Butir 4.5: beban gaji yang masih harus dibayar, penyusutan, amortisasi, utang dan piutang pajak; Scope: accrual, prepaid expense, deferred revenue."
+    },
+    {
+      "lokasi": "Butir 1 bagian kedua (scope aset tetap, ekualisasi, tutup buku tahunan); butir 4.6",
+      "masalah": "Tidak diubah, dan ini sesuai instruksi: celah dari sumber, sudah (USULAN) di 4.6, pemutusnya FAT. Butir ini disebut di notes ## Sweep (U4, open item 1).",
+      "bukti": "specs/FAT-SOP-06.json baris 137 (4.6) tidak ada di spec.diff; notes ## Sweep: 'Tidak diubah: gap dari sumber, sudah (USULAN) di butir 4.6, pemutus FAT (U4, open item 1)'."
+    },
+    {
+      "lokasi": "Seluruh dokumen (konsistensi keluaran, pola §6a, batas keras §0)",
+      "masalah": "Catatan positif. Docx di out/ sama teksnya dengan hasil render ulang spec. Diff teks HEAD ke sekarang hanya berisi tiga hunk, dan git diff spec sama dengan spec.diff. Flow dan simpul diagram tidak berubah. Tidak ada em-dash, en-dash, rujukan internal AI, atau frasa proses penyusunan. Status tetap Draft.",
+      "bukti": "render_sop.py ke scratchpad lalu diff teks: SAME_TEXT. Hitung teks out docx: '—' 0, '–' 0, SKILL_ 0, DEC- 0, Claude 0, HANDOVER 0, Altair 0, staging 0, DOCTRINE 0; grep sweep/penyusun/verifikator/ledger/orkestrator 0. 'git diff specs/FAT-SOP-06.json | diff - spec.diff': identik."
+    }
+  ]
+}

@@ -28,7 +28,7 @@
     "Aset tetap dan aset tak berwujud: pencatatan di Fixed Asset Register, kapitalisasi, perhitungan penyusutan aset fisik seperti server dan kendaraan, serta amortisasi software dan lisensi.",
     "Tutup buku bulanan dan tahunan: rekonsiliasi bank; jurnal penyesuaian (accrual, prepaid expense, deferred revenue); ekualisasi akun komersial dengan akun perpajakan (PPN, PPh 21, PPh 22, dan lainnya).",
     "Laporan Keuangan: Laporan Posisi Keuangan (Neraca), Laporan Laba Rugi, Laporan Arus Kas, dan Laporan Perubahan Ekuitas.",
-    "Dikecualikan dari SOP ini (USULAN): penerbitan invoice kepada customer (SNX-FAT-SOP-01); penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection); persetujuan pengajuan pembayaran (SOP Payment and Disbursement Approval); perhitungan, penyetoran, dan pelaporan pajak (SNX-FAT-SOP-05); pengarsipan dokumen keuangan (SNX-FAT-SOP-04)."
+    "Dikecualikan dari SOP ini (USULAN): penerbitan invoice kepada customer (SNX-FAT-SOP-01); penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection), dengan tracker piutang di SNX-FAT-REG-01; persetujuan pengajuan pembayaran (SOP Payment and Disbursement Approval); perhitungan, penyetoran, dan pelaporan pajak (SNX-FAT-SOP-05); pengarsipan dokumen keuangan (SNX-FAT-SOP-04)."
   ],
   "definitions": [
     [
@@ -85,7 +85,7 @@
     ],
     [
       "Jurnal penyesuaian",
-      "Jurnal akhir periode untuk accrual, prepaid expense, dan deferred revenue."
+      "Jurnal akhir periode yang menyesuaikan saldo akun supaya beban dan pendapatan tercatat pada periode yang tepat."
     ],
     [
       "Jurnal reklasifikasi",
@@ -319,6 +319,10 @@
     [
       "SNX-FAT-FRM-02",
       "Financial Information Access Authorization Records; daftar akses dan pemegang akses terhadap data dan informasi Finance, tempat pemegang akses data akuntansi dicatat (butir 4.8, USULAN)."
+    ],
+    [
+      "SNX-FAT-REG-01",
+      "Billing & Collection Monitoring Register; tracker semua piutang dari customer, rekaman pelacak piutang di luar scope SOP ini (bagian 2, USULAN)."
     ],
     [
       "SNX-ISMS-PRO-01",

@@ -49,7 +49,7 @@ Kalimat perintah di sumber yang ditujukan ke penyusun atau agen: tidak ada.
 | 11 | Tutup buku | "Rekonsiliasi Bank .", "Pencatatan Jurnal Penyesuaian (Accrual, Prepaid Expense, Deferred Revenue).", "Rekonsiliasi/Ekualisasi akun komersial dengan akun perpajakan (PPN, PPh 21, PPh 22, dsb)." (III.4) | Scope baris 5; definisi Ekualisasi |
 | 12 | Laporan | "Penerbitan Laporan Posisi Keuangan (Neraca).", "Penerbitan Laporan Laba Rugi.", "Penerbitan Laporan Arus Kas (Cash Flow)." (III.5) | Scope baris 6 (ditambah Perubahan Ekuitas dari Tujuan 4, lihat D3) |
 | 13 | Langkah 2 | Tabel IV baris 2: "Kategorisasi" / "Klasifikasi dan Pengelolaan Chart of Account" / "1 day" / "Staff" | 6.2; SLA |
-| 14 | Pengecualian pembanding (bahan USULAN, bukan sumber SOP ini) | Deskripsi checklist baris 24: "SOP ini menjelaskan proses penagihan invoice kepada customer dan pendataan piutang"; baris 25: "SOP ini menjelaskan proses pengajuan pembayaran invoice, reimbursement dan cash advance" (config/checklist.json) | Scope baris pengecualian; Dokumen terkait |
+| 14 | Pengecualian pembanding (bahan USULAN, bukan sumber SOP ini) | Deskripsi checklist baris 24: "SOP ini menjelaskan proses penagihan invoice kepada customer dan pendataan piutang"; baris 25: "SOP ini menjelaskan proses pengajuan pembayaran invoice, reimbursement dan cash advance"; baris 29: "Dokumen tracker untuk semua piutang dari customer" (config/checklist.json) | Scope baris pengecualian; Dokumen terkait |
 | 15 | Retensi 10 tahun (bahan USULAN, bukan sumber SOP ini) | "Retensi: minimal 10 (sepuluh) tahun sesuai ketentuan perpajakan dan audit ISO 9001/ISO 27001." (SOP Billing 8.2, salinan audit FAT baris 166) | Bagian 11 tabel rekaman, semua baris (USULAN) |
 | 16 | Peran | Tabel IV kolom PIC: "Staff" (baris 1 sampai 3), "Lead" (baris 4 dan 5) | Peran Finance Staff dan Finance Lead (bagian 3 ringkasan di bawah) |
 
@@ -121,7 +121,7 @@ Dua belas butir di badan dokumen (lint menghitung 21 penanda "(USULAN)" karena s
 | # | Butir USULAN | Letak | Pemutus yang disarankan |
 |---|---|---|---|
 | U1 | "Hari" dihitung sebagai hari kerja | Definisi; bagian 8 | FAT |
-| U2 | Pengecualian scope: penerbitan invoice (SNX-FAT-SOP-01), penagihan dan pendataan piutang, persetujuan pengajuan pembayaran, pajak (SNX-FAT-SOP-05), pengarsipan dokumen keuangan (SNX-FAT-SOP-04) | Scope baris terakhir | FAT |
+| U2 | Pengecualian scope: penerbitan invoice (SNX-FAT-SOP-01), penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection, dengan tracker piutang di SNX-FAT-REG-01), persetujuan pengajuan pembayaran, pajak (SNX-FAT-SOP-05), pengarsipan dokumen keuangan (SNX-FAT-SOP-04) | Scope baris terakhir | FAT |
 | U3 | Finance Lead mencatat jurnal penyesuaian dan jurnal reklasifikasi | Kebijakan 4.5; bagian 5; langkah 3 butir 6.4; diagram | FAT |
 | U4 | Finance Lead menetapkan langkah, pelaku, dan batas waktu untuk tutup buku tahunan, ekualisasi pajak, dan aset tetap sebelum SOP disahkan | Kebijakan 4.6 | FAT |
 | U5 | Arsip Laporan Keuangan menurut SNX-FAT-SOP-04 | Kebijakan 4.7; Dokumen terkait; rekaman | FAT |
@@ -130,7 +130,7 @@ Dua belas butir di badan dokumen (lint menghitung 21 penanda "(USULAN)" karena s
 | U8 | Finance Lead mengembalikan selisih yang belum bisa dijelaskan ke Finance Staff sebelum tutup buku bulanan | Bagian 9 baris 2 | FAT |
 | U9 | Finance Lead memeriksa kepatuhan dengan membandingkan rekaman bagian 11 dengan batas waktu bagian 8 | Kesimpulan | FAT |
 | U10 | Lokasi rekaman (sistem pencatatan keuangan, Folder Google Drive Departemen FAT, folder arsip FAT), pemilik, dan retensi minimal 10 tahun | Bagian 11 tabel rekaman | FAT (retensi: Legal) |
-| U11 | Dua rujukan "Belum bernomor" (SOP Account Receivable & Collection, SOP Payment and Disbursement Approval) sebagai batas scope | Dokumen terkait | FAT |
+| U11 | Dua rujukan "Belum bernomor" (SOP Account Receivable & Collection, SOP Payment and Disbursement Approval) dan SNX-FAT-REG-01 sebagai batas scope | Dokumen terkait | FAT |
 | U12 | Semua acuan klausul ISO 9001:2015 dan ISO/IEC 27001:2022 | Bagian 11 acuan standar; judul kebijakan 4.2 sampai 4.9 | owner (lewat konsultan) |
 
 Di luar badan dokumen, berlabel USULAN di config/defaults.json: process_owner "Finance Lead" dan nilai prepared dan reviewed departemen FAT; pemutus: owner.
@@ -149,7 +149,7 @@ Di luar badan dokumen, berlabel USULAN di config/defaults.json: process_owner "F
 | 8 | Pengecualian scope bersifat usulan (sumber diam); belum ada keputusan tertulis apakah penagihan, persetujuan pembayaran, dan pengarsipan tetap di SOP lain | FAT |
 | 9 | Pemetaan Finance Lead dan Finance Staff ke jabatan (K-13 di SNX-HR-ORG-01) | owner |
 | 10 | Siapa menyetujui dan mendistribusikan Laporan Keuangan ke Manajemen, Pemegang Saham, Pihak Bank, Panitia Tender BUMN, dan DJP tidak ada di sumber; tidak ditulis | Samuel; FAT |
-| 11 | Hubungan piutang yang dijurnal (butir 6.1) dengan SNX-FAT-REG-01 (tracker piutang) tidak ada di sumber; tidak ditulis | FAT |
+| 11 | Hubungan piutang yang dijurnal (butir 6.1) dengan SNX-FAT-REG-01 (tracker piutang) tidak ada di sumber; SNX-FAT-REG-01 hanya dirujuk sebagai tracker piutang di luar scope (USULAN), cakupan SOP Account Receivable & Collection tidak diubah, rekonsiliasi jurnal dengan tracker tidak ditulis | FAT |
 | 12 | Acuan klausul ISO belum dicocokkan dengan teks standar | konsultan |
 | 13 | Pemilik dokumen tidak tertulis di sumber; dipakai aturan jabatan reviewer departemen | owner |
 
@@ -183,3 +183,19 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | Baris pengecualian di Exception: reklasifikasi oleh Finance Lead | Baris "Jurnal Penyesuaian/Reklas" di baris Lead | Bersumber, dengan pelaku berlabel U3 |
 | Nomor klausul ISO | Ingatan penyusun | (USULAN) U12 |
 | Tanggal | Tidak ada; Effective Date kosong | Tidak ada klaim |
+
+## Sweep
+
+Putaran sweep atas FAT-SOP-06 dari orkestrator WORKER-ISO-01. Yang diubah hanya dua butir di bawah; fakta, angka, nama, dan struktur lain tetap. Temuan nonblocking lain di qa/FAT-SOP-06.verify.json (judul 6.2 "Kategorisasi" dan langkah "Klasifikasikan", kata kerja langkah 6.3, titik awal hitung SLA, baris Fixed Asset Register) tidak termasuk butir sweep dan tidak diubah; titik awal hitung SLA tetap open item 3 dan Fixed Asset Register tetap dalam open item 1.
+
+| # | Butir | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Definisi "Jurnal penyesuaian" lebih sempit dari butir 4.5 (bagian 3) | "Jurnal akhir periode untuk accrual, prepaid expense, dan deferred revenue." | "Jurnal akhir periode yang menyesuaikan saldo akun supaya beban dan pendapatan tercatat pada periode yang tepat." Daftar jenis tetap di scope dan butir 4.5, tidak disalin ke definisi |
+| 1 | Scope menyebut aset tetap, ekualisasi, dan tutup buku tahunan tanpa prosedur | Butir 4.6 berlabel (USULAN), Finance Lead menetapkan langkah | Tidak diubah: gap dari sumber, sudah (USULAN) di butir 4.6, pemutus FAT (U4, open item 1) |
+| 2 | Dokumen FAT yang sudah bernomor (SNX-FAT-SOP-06, SNX-FAT-REG-01, SNX-FAT-FRM-02) | Scope: "penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection)"; Dokumen terkait: SOP Account Receivable & Collection "dalam peninjauan", "penagihan invoice kepada customer dan pendataan piutang"; SNX-FAT-REG-01 tidak dirujuk | Rumusan SOP Account Receivable & Collection dipertahankan persis (cakupan checklist baris 24: penagihan invoice dan pendataan piutang; tetap belum bernomor). Ditambah rujukan SNX-FAT-REG-01 sebagai tracker piutang: Scope "..., dengan tracker piutang di SNX-FAT-REG-01" dan baris Dokumen terkait baru "tracker semua piutang dari customer, rekaman pelacak piutang di luar scope SOP ini (USULAN)". SNX-FAT-FRM-02 sudah dirujuk dengan nomor (butir 4.8, Dokumen terkait). SNX-FAT-SOP-06 tidak dirujuk di badan dokumen ini |
+
+Dua rujukan "Belum bernomor" yang tersisa (SOP Account Receivable & Collection, SOP Payment and Disbursement Approval) tidak ada di daftar dokumen yang kini bernomor, tetap "dalam peninjauan" menurut checklist baris 24 dan 25.
+
+Perbaikan sweep (temuan pemblokir qa/FAT-SOP-06.sweep.r1.json): versi sweep pertama memindahkan "pendataan piutang" dari SOP Account Receivable & Collection ke SNX-FAT-REG-01 dan memangkas deskripsi SOP itu. Itu salah: checklist baris 24 menyebut SOP itu mencakup penagihan invoice dan pendataan piutang, dan SOP itu bukan salah satu dari tiga dokumen yang dinomori. Baris pengecualian Scope dan baris Dokumen terkait SOP Account Receivable & Collection dikembalikan ke rumusan sebelum sweep; SNX-FAT-REG-01 tinggal sebagai rujukan tracker piutang (USULAN, pemutus FAT) tanpa mencabut cakupan SOP itu. Catatan gaya nonblocking pada definisi "Jurnal penyesuaian" tidak diubah karena di luar butir perbaikan.
+
+Hasil uji sweep setelah perbaikan (bukti: /tmp/pen-FAT-SOP-06/lint.out.txt, validate.out.txt, blankscan.out.txt): render tanpa galat; lint_doc sop `"pass": true`, fails kosong, warn "21 butir (USULAN) menunggu ACC"; validator OOXML "All validations PASSED!"; blankscan `ok`.
