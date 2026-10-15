@@ -243,3 +243,24 @@ Open item ditutup atau diubah:
 - Penyempitan "Personel Commercial" (catatan sweep 1c, bagian 9): ditutup W9 (B2), cakupan dikembalikan ke Business Development dan VP Commercial.
 
 R2 butir 3: baris USULAN dan Open items yang ditutup atau diubah W9 diberi keterangan "ditutup W9" atau "diubah W9" di barisnya sendiri.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Definisi Proposal: "dengan isi minimal di butir 4.2" diganti tujuh unsur isi proposal dari butir 4.2.
+- Definisi Review internal: "pelakunya di butir 4.8" diganti pelaku VP Commercial beserta label (USULAN) dari butir 4.8.
+- Butir 4.14: "batas waktu pembaruannya ada di bagian 8" ditulis ulang "dengan batas waktu pembaruan sesuai bagian 8" (rujukan batas dipertahankan).
+- Pengantar butir 6.5: "Urutan otorisasi dan syarat pengiriman ada di butir 4.8." ditulis ulang "... mengikuti butir 4.8." (rujukan dipertahankan).
+- Tabel peran Service Delivery Manager, catatan pemetaan dipindah ke sini: "jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01." Fakta ini tetap tertulis di Dokumen terkait baris SNX-HR-ORG-01 (butir K-10).
+### W10 selisih angka
+nihil
+### W10 catatan
+- Pihak luar: "customer" (sama dengan SNX-COM-SOP-01, SNX-COM-FRM-01, SNX-COM-FRM-02, SNX-COM-REG-01). Judul klausul ISO 8.2.1 tetap "Komunikasi dengan pelanggan" (judul resmi).
+- Butir 4.7 dan 4.10: label (USULAN) dipindah dari awal ke akhir butir; cakupannya tetap pembagian wewenang (4.7) dan pihak yang memutuskan pengecualian komersial (4.10).
+- Nomor butir dan arti butir yang dirujuk form Commercial (4.5, 4.7, 4.10, 6.2, 6.4, bagian 11) tidak berubah.
+### W10 audit pointer
+- .definitions[20][1]: lengkap (tujuh unsur isi proposal butir 4.2: Scope of Work, Proposed Solution, Deliverables, Timeline, Commercial Proposal, Assumptions, Exclusions)
+- .definitions[24][1]: lengkap (pelaku review internal VP Commercial dan label USULAN penunjukannya; urutan otorisasi dan penolakan penawaran tidak lengkap tetap di butir 4.8, definisi hanya merujuk pelaku)
+### W10 perbaikan cakupan label (worker, setelah pemeriksa buta)
+- Butir 4.7: label dipindah dari kalimat penutup "Pembagian wewenang VP Commercial dan COO di butir ini berstatus (USULAN)." ke akhir kalimat pertama. Bed1bb6 "Wewenang berikut berstatus (USULAN): ..." hanya mencakup rekomendasi VP Commercial dan persetujuan serta margin final oleh COO; aturan sementara persetujuan COO dan kalimat Authority Matrix tetap tanpa label. Dasar: catatan nonblocking pemeriksa buta ("di butir ini" bisa membuat aturan sementara terbaca USULAN).

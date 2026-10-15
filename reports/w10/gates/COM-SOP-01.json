@@ -1,0 +1,38 @@
+{
+ "key": "COM-SOP-01",
+ "mode": "sop",
+ "out": "out/05_Commercial/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 3330,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 14,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 3324,
+  "calque": [
+   "yang Commercial serahkan",
+   "yang VP Commercial rekomendasikan"
+  ],
+  "lewat": 2,
+  "pointer": 3,
+  "usulan": 13,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 86,
+  "tables_ge3_no_header": 17
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).pdf",
+ "pages": 20,
+ "blank": [],
+ "pass": true
+}

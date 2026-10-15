@@ -1,0 +1,17 @@
+{"verdict": "PASS",
+ "scores": {"a": 4, "b": 4, "c": 4, "d": "n/a"},
+ "blocking": [],
+ "nonblocking": [
+  "4.7: label akhir 'Pembagian wewenang VP Commercial dan COO di butir ini berstatus (USULAN).' Frasa 'di butir ini' sedikit lebih luas daripada 'Wewenang berikut' di bed1bb6, sehingga aturan interim 'Sampai ditetapkan, setiap penawaran memerlukan persetujuan COO ... setiap diskon memerlukan persetujuan COO' bisa terbaca USULAN. Di bed1bb6 cakupannya juga ambigu, dan persetujuan COO bertumpu pada pembagian yang memang USULAN. Usul: 'Pembagian wewenang VP Commercial dan COO pada kalimat pertama berstatus (USULAN).'",
+  "4.10: label akhir 'Penetapan pihak yang memutuskan pengecualian komersial ini berstatus (USULAN).' setara dengan label pembuka di bed1bb6, dan COO serta Direktur Utama tetap tercakup sama. Keputusan Direktur Utama atas TOP tetap bersumber SNX-FAT-SOP-01 butir 4.8. Kata 'ditambah rekomendasi Legal & Compliance' lebih wajar ditulis 'serta rekomendasi Legal & Compliance'.",
+  "4.4: pointer 'dikonfirmasi menurut butir 4.5' diganti 'dikonfirmasi Service Delivery Manager (butir 4.5)'. Fakta sesuai 4.5 dan rujukan tetap ada.",
+  "Definisi Proposal: pointer ke 4.2 diganti tujuh isi minimal, sama persis dengan 4.2. Definisi Review internal: pointer ke 4.8 diganti 'VP Commercial' beserta label USULAN 4.8. Keduanya benar.",
+  "Service Delivery Manager di Roles: catatan 'jabatan usulan tanpa pemegang' dihapus (§3.8); fakta yang sama tetap ada di baris SNX-HR-ORG-01 bagian 11.",
+  "Bagian 10: 'setiap tahun, dan lebih awal bila' menjadi 'setiap tahun, atau lebih awal jika'. Dalam pemakaian lazim artinya sama, kewajiban tahunan tetap ada.",
+  "Bagian 9, baris kondisi persetujuan: 'tidak dapat memberi persetujuan sebelum customer membutuhkan penawaran' menjadi 'Persetujuan ... belum ada saat penawaran dibutuhkan customer'. Penanganannya sama ('tidak mengirim penawaran').",
+  "Kata kewajiban utuh: 'hanya', 'tidak', 'menolak', 'mewajibkan' di 4.1, 4.3, 4.4, 4.8, 4.9, 4.11 tidak melemah. Rujukan batas waktu di 4.14 tetap ada ('sesuai bagian 8').",
+  "Bagian 6: setiap langkah punya satu PIC, dan langkah 6.5.1 kini berupa kalimat perintah ('Lakukan review internal'). Bagian 9: beberapa baris memuat dua pelaku dalam kalimat terpisah (Accounting & Tax/Business Development, VP Commercial/Business Development). Teks itu tidak berubah sejak bed1bb6.",
+  "Bagian 13, baris ISO 7.5.3: 'untuk rekaman di bagian 11' belum dipetakan menjadi 'record' (§1.5). Ini teks badan, bukan judul klausul. Dapat dianggap kutipan judul 'Rekaman' bila disengaja."
+ ],
+ "contoh_baik": ["Definisi COGS: 'biaya langsung yang SINUX tanggung' -> 'biaya langsung yang ditanggung SINUX'"]
+}

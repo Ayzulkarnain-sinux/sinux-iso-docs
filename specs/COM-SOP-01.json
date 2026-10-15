@@ -15,6 +15,17 @@
    "prepared": "Laras Rasmawati / VP Commercial",
    "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
  },
  "purpose": [
@@ -25,7 +36,7 @@
   "SOP ini berlaku untuk Commercial, yaitu VP Commercial, Business Development, dan Brand & Marketing, serta untuk fungsi lain yang terlibat menurut tabel peran di bagian 5.",
   "Proses yang tercakup: lead generation, qualification, opportunity management (discovery meeting, presentasi solusi, demo, proposal, dan quotation), customer communication, negosiasi, closing, dan handover. Proses dimulai dari prospecting dan berakhir saat Service Delivery Manager menerima atau menolak paket handover.",
   "Sistem yang dipakai: CRM, email, dan WhatsApp.",
-  "Di luar scope SOP ini: account management sesudah implementasi (butir 4.17); penagihan dan invoice (SNX-FAT-SOP-01); implementasi proyek oleh Delivery (SNX-OPS-SOP-01); rincian pengendalian proposal, quotation, dan harga (SNX-COM-SOP-02); penetapan target KPI per jabatan (KPI Matrix)."
+  "Di luar scope SOP ini: account management setelah implementasi (butir 4.17); penagihan dan invoice (SNX-FAT-SOP-01); implementasi proyek oleh Delivery (SNX-OPS-SOP-01); rincian pengendalian proposal, quotation, dan harga (SNX-COM-SOP-02); penetapan target KPI per jabatan (KPI Matrix)."
  ],
  "definitions": [
   [
@@ -54,7 +65,7 @@
   ],
   [
    "Direktur (COO)",
-   "Jabatan Direktur (JA-02) di SNX-HR-ORG-01; dokumen Operation menyebutnya COO. Dokumen ini memakai COO sesudah penyebutan pertama."
+   "Jabatan Direktur (JA-02) di SNX-HR-ORG-01; dokumen Operation menyebutnya COO. Dokumen ini memakai COO setelah penyebutan pertama."
   ],
   [
    "Forecast",
@@ -86,7 +97,7 @@
   ],
   [
    "Paket handover",
-   "Berkas yang Commercial serahkan ke Delivery pada handover; isi minimalnya di butir 4.16. Dokumen Divisi Operation menyebutnya paket G1 dan memeriksanya dengan checklist G1."
+   "Berkas yang diserahkan Commercial ke Delivery pada handover, minimal berisi Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person. Dokumen Divisi Operation menyebutnya paket G1 dan memeriksanya dengan checklist G1."
   ],
   [
    "Permintaan internal",
@@ -102,33 +113,33 @@
   ],
   [
    "Sales Stage",
-   "Status opportunity di CRM: Leads, Qualified, Opportunity, Bid (proposal atau quotation sudah dikirim), Win atau Lost, dan Future Nurture. Pemetaan tahap ke status ada di butir 4.7."
+   "Status opportunity di CRM: Leads, Qualified, Opportunity, Bid (proposal atau quotation sudah dikirim), Win atau Lost, dan Future Nurture."
   ],
   [
    "SPIN Selling",
-   "Metode consultative selling yang menggali kebutuhan customer lewat serangkaian pertanyaan sebelum menawarkan solusi: Situation, Problem, Implication, dan Need-Payoff."
+   "Metode consultative selling yang menggali kebutuhan customer melalui serangkaian pertanyaan sebelum menawarkan solusi: Situation, Problem, Implication, dan Need-Payoff."
   ]
  ],
  "policy": [
   "4.1 Business Development memahami kebutuhan bisnis customer sebelum menawarkan solusi, dan setiap rekomendasi didasarkan pada kebutuhan, tantangan, dan tujuan bisnis customer. Business Development tidak menawarkan produk tanpa memahami kebutuhan customer (product dumping).",
-  "4.2 Informasi yang Business Development berikan kepada customer harus akurat, transparan, dan dapat dipertanggungjawabkan. Business Development tidak memberikan informasi yang tidak dapat dipastikan dan tidak melakukan overpromise.",
-  "4.3 Business Development mencatat seluruh aktivitas penjualan, opportunity, forecast, dan customer engagement di CRM. Catatan wajib meliputi Lead, Opportunity, Meeting Notes, Follow-up, Proposal, Quotation, Forecast, dan Closing Status. CRM menjadi sumber data tunggal untuk keputusan bisnis; batas waktu pembaruannya ada di bagian 8.",
+  "4.2 Informasi yang diberikan Business Development kepada customer harus akurat, transparan, dan dapat dipertanggungjawabkan. Business Development tidak memberikan informasi yang tidak dapat dipastikan dan tidak melakukan overpromise.",
+  "4.3 Business Development mencatat seluruh aktivitas penjualan, opportunity, forecast, dan customer engagement di CRM. Catatan wajib meliputi Lead, Opportunity, Meeting Notes, Follow-up, Proposal, Quotation, Forecast, dan Closing Status. CRM menjadi sumber data tunggal untuk keputusan bisnis, dan batas waktu pembaruannya mengikuti bagian 8.",
   "4.4 Business Development dan VP Commercial mendukung setiap keputusan penjualan dengan data, pipeline, forecast, dan informasi customer yang valid, bukan asumsi.",
   "4.5 Business Development bertanggung jawab atas opportunity yang dikelolanya dari prospecting sampai handover.",
-  "4.6 Sebelum opportunity masuk ke tahap proposal, Business Development memastikan opportunity memenuhi lima kriteria qualification (Business Need, Budget, Decision Maker, Timeline, dan Technical Fit) memakai BANT atau MEDDICC, dan menyelesaikan discovery meeting dengan pendekatan SPIN Selling. Proposal hanya dibuat sesudah kedua syarat itu terpenuhi.",
-  "4.7 Business Development mengubah Sales Stage di CRM: status Leads saat lead tercatat, status Qualified sesudah qualification, status Opportunity sesudah discovery meeting, status Bid saat proposal dan quotation terkirim, status Win atau Lost saat hasil closing pasti, dan status Future Nurture untuk lead yang belum layak sekarang tetapi akan ditindaklanjuti nanti. Pemetaan tahap ke status ini berstatus (USULAN).",
+  "4.6 Sebelum opportunity masuk ke tahap proposal, Business Development memastikan dua syarat terpenuhi. Pertama, opportunity memenuhi lima kriteria qualification (Business Need, Budget, Decision Maker, Timeline, dan Technical Fit) yang dinilai memakai BANT atau MEDDICC. Kedua, discovery meeting dengan pendekatan SPIN Selling sudah selesai. Proposal hanya dibuat setelah kedua syarat itu terpenuhi.",
+  "4.7 Business Development mengubah Sales Stage di CRM sebagai berikut: Leads saat lead tercatat; Qualified setelah qualification; Opportunity setelah discovery meeting; Bid saat proposal dan quotation terkirim; Win atau Lost saat hasil closing sudah pasti; Future Nurture untuk lead yang belum layak sekarang tetapi akan ditindaklanjuti nanti. Pemetaan tahap ke status ini berstatus (USULAN).",
   "4.8 Proposal wajib memuat Scope of Work, Proposed Solution, Deliverables, Timeline, Commercial Proposal, Assumptions, dan Exclusions.",
-  "4.9 Business Development mengirim proposal ke customer hanya sesudah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai.",
-  "4.10 Wewenang harga berikut berstatus (USULAN): VP Commercial merekomendasikan harga dan diskon, COO menyetujuinya dan menetapkan margin final. Ambang diskon dan batas margin minimum belum ditetapkan; sampai ditetapkan, setiap diskon memerlukan persetujuan COO.",
+  "4.9 Business Development mengirim proposal ke customer hanya setelah review internal, persetujuan harga, dan persetujuan diskon (jika ada) selesai.",
+  "4.10 VP Commercial merekomendasikan harga dan diskon, lalu COO menyetujuinya dan menetapkan margin final (USULAN). Ambang diskon dan batas margin minimum belum ditetapkan; sampai ditetapkan, setiap diskon memerlukan persetujuan COO.",
   "4.11 Business Development tidak mengubah pricing sendiri, tidak memberi diskon tanpa persetujuan (butir 4.10), tidak menawarkan fitur yang belum tersedia, dan tidak menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya. Dalam negosiasi, Business Development memahami concern customer, menjaga value solusi, dan bernegosiasi hanya dalam batas harga dan diskon yang sudah disetujui.",
-  "4.12 Komunikasi dengan customer memakai bahasa yang profesional, jelas, dan berorientasi pada solusi. Batas waktu respons ada di bagian 8.",
+  "4.12 Komunikasi dengan customer memakai bahasa yang profesional, jelas, dan berorientasi pada solusi. Batas waktu respons mengikuti bagian 8.",
   "4.13 Business Development menjaga kerahasiaan data customer. Informasi customer, kontrak, dan harga berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3 (USULAN, karena SNX-ISMS-PRO-01 belum mencakup Commercial). Informasi RESTRICTED dibagikan ke pihak luar hanya dengan NDA atau kontrak yang berlaku dan persetujuan pemilik informasi (SNX-ISMS-PRO-01 butir 4.10).",
-  "4.14 Legal & Compliance mereview draf kontrak sebelum ditandatangani, dan menyiapkan atau mereview NDA bila NDA diperlukan sebelum informasi RESTRICTED dibagikan. Titik waktu keterlibatan ini berstatus (USULAN).",
-  "4.15 Closing berhasil bila PO diterima, kontrak ditandatangani, dan persetujuan internal selesai. Project kick-off dimulai sesudah Service Delivery Manager menerima paket handover (SNX-OPS-SOP-01 butir 4.1). Penempatan kick-off sesudah handover berstatus (USULAN).",
+  "4.14 Legal & Compliance mereview draf kontrak sebelum ditandatangani, dan menyiapkan atau mereview NDA jika NDA diperlukan sebelum informasi RESTRICTED dibagikan. Titik waktu keterlibatan ini berstatus (USULAN).",
+  "4.15 Closing dinyatakan berhasil jika PO diterima, kontrak ditandatangani, dan persetujuan internal selesai. Project kick-off dimulai setelah Service Delivery Manager menerima paket handover (SNX-OPS-SOP-01 butir 4.1). Penempatan kick-off setelah handover berstatus (USULAN).",
   "4.16 Business Development memastikan seluruh dokumen closing lengkap sebelum handover. Handover meeting dilakukan sebelum implementasi dimulai, dan paket handover memuat minimal Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person.",
-  "4.17 Sesudah implementasi, Business Development tetap bertanggung jawab atas relationship management, upselling, cross-selling, renewal, dan customer satisfaction. Langkah account management berada di luar scope SOP ini.",
-  "4.18 Business Development dievaluasi berdasarkan Activity KPI (Pipeline Generation, Customer Engagement, CRM Discipline), Performance KPI (Revenue Achievement, Qualified Opportunities, Win Rate, Forecast Accuracy), dan Customer KPI (Customer Satisfaction, Renewal Rate). Target tiap KPI tidak ada di SOP ini.",
-  "4.19 Penetapan pelaku berikut berstatus (USULAN): VP Commercial melakukan review internal proposal (butir 6.4), meninjau pipeline, forecast, dan opportunity, serta menerima laporan Business Development (bagian 8); VP Commercial menyimpan rekaman review internal, rekomendasi, dan persetujuan harga dan diskon (bagian 11), dan menyerahkan paket handover atas nama Commercial (butir 6.8); Legal & Compliance menyimpan NDA dan hasil review kontrak (bagian 11); Business Development melengkapi paket handover yang ditolak (bagian 9).",
+  "4.17 Setelah implementasi, Business Development tetap bertanggung jawab atas relationship management, upselling, cross-selling, renewal, dan customer satisfaction. Langkah account management berada di luar scope SOP ini.",
+  "4.18 Business Development dievaluasi berdasarkan Activity KPI (Pipeline Generation, Customer Engagement, CRM Discipline), Performance KPI (Revenue Achievement, Qualified Opportunities, Win Rate, Forecast Accuracy), dan Customer KPI (Customer Satisfaction, Renewal Rate). Target tiap KPI ditetapkan di KPI Matrix, bukan di SOP ini.",
+  "4.19 Penetapan pelaku berikut berstatus (USULAN): VP Commercial melakukan review internal proposal (butir 6.4), meninjau pipeline, forecast, dan opportunity, serta menerima laporan Business Development (bagian 8); VP Commercial menyimpan record review internal, rekomendasi, dan persetujuan harga dan diskon (bagian 11), dan menyerahkan paket handover atas nama Commercial (butir 6.8); Legal & Compliance menyimpan NDA dan hasil review kontrak (bagian 11); Business Development melengkapi paket handover yang ditolak (bagian 9).",
   "4.20 Personel Commercial mematuhi SOP ini, dan kepatuhan menjadi bagian dari evaluasi kinerja dan probation. Penyimpangan dari prosedur memerlukan persetujuan VP Commercial atau pihak yang berwenang."
  ],
  "roles": [
@@ -144,7 +155,7 @@
   ],
   [
    "COO",
-   "Menyetujui harga dan diskon yang VP Commercial rekomendasikan, dan menetapkan margin final (butir 4.10).",
+   "Menyetujui harga dan diskon yang direkomendasikan VP Commercial, dan menetapkan margin final (butir 4.10).",
    "Menyetujui harga dan diskon serta menetapkan margin final."
   ],
   [
@@ -159,12 +170,12 @@
   ],
   [
    "Legal & Compliance",
-   "Menyiapkan atau mereview NDA, mereview kontrak dan commercial terms and conditions, mendukung negosiasi kontrak, dan menjaga legal compliance. Titik keterlibatannya di butir 4.14.",
+   "Menyiapkan atau mereview NDA jika NDA diperlukan sebelum informasi RESTRICTED dibagikan, mereview draf kontrak dan commercial terms and conditions sebelum kontrak ditandatangani, mendukung negosiasi kontrak, dan menjaga legal compliance. Titik waktu keterlibatan ini berstatus (USULAN).",
    "Tidak ada wewenang persetujuan di SOP ini."
   ],
   [
    "Service Delivery Manager",
-   "Mengonfirmasi timeline dan scope proposal, mengikuti handover meeting, dan menerima atau menolak paket handover (SNX-OPS-SOP-01 butir 4.1). Jabatan ini menerima handover di Delivery (USULAN) dan merupakan jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01.",
+   "Mengonfirmasi timeline dan scope proposal, mengikuti handover meeting, dan menerima atau menolak paket handover (SNX-OPS-SOP-01 butir 4.1). Jabatan ini menerima handover di Delivery (USULAN).",
    "Memutuskan paket handover diterima atau ditolak."
   ],
   [
@@ -183,7 +194,7 @@
      "Inbound lead diterima Business Development"
     ],
     [
-     "Lakukan prospecting ke customer yang sesuai ICP lewat outbound prospecting, existing network, referral, event dan networking, atau LinkedIn outreach.",
+     "Lakukan prospecting ke customer yang sesuai ICP melalui outbound prospecting, existing network, referral, event dan networking, atau LinkedIn outreach.",
      "Business Development",
      "Aktivitas prospecting tercatat di CRM"
     ],
@@ -208,7 +219,7 @@
      "Customer Pain Points dan Opportunity Score di CRM"
     ],
     [
-     "Ubah Sales Stage lead menjadi Qualified bila kelima kriteria terpenuhi (butir 4.7).",
+     "Ubah Sales Stage lead menjadi Qualified jika kelima kriteria terpenuhi (butir 4.7).",
      "Business Development",
      "Sales Stage Qualified di CRM"
     ]
@@ -218,7 +229,7 @@
    "title": "Opportunity Management: Discovery sampai Demo",
    "steps": [
     [
-     "Ajukan permintaan penyiapan atau review NDA kepada Legal & Compliance bila NDA diperlukan sebelum informasi RESTRICTED dibagikan ke customer (butir 4.13 dan 4.14; SNX-LEG-SOP-02 butir 6.1).",
+     "Ajukan permintaan penyiapan atau review NDA kepada Legal & Compliance jika NDA diperlukan sebelum informasi RESTRICTED dibagikan ke customer (butir 4.13 dan 4.14; SNX-LEG-SOP-02 butir 6.1).",
      "Business Development",
      "Permintaan NDA diajukan"
     ],
@@ -243,7 +254,7 @@
      "Meeting Notes presentasi di CRM"
     ],
     [
-     "Dukung presentasi dan demo dengan technical discussion dan solution design bila Business Development memintanya.",
+     "Dukung presentasi dan demo dengan technical discussion dan solution design jika diminta Business Development.",
      "Manager of Product Tech",
      "Masukan teknis untuk presentasi dan demo"
     ],
@@ -278,7 +289,7 @@
      "Solution design untuk proposal"
     ],
     [
-     "Susun proposal dan quotation sesuai butir 4.8 sesudah discovery meeting selesai.",
+     "Susun proposal dan quotation sesuai butir 4.8 setelah discovery meeting selesai.",
      "Business Development",
      "Draf proposal dan quotation"
     ],
@@ -303,7 +314,7 @@
      "Persetujuan harga dan diskon"
     ],
     [
-     "Kirim proposal dan quotation ke customer sesudah review internal dan persetujuan di butir 4.9 selesai.",
+     "Kirim proposal dan quotation ke customer setelah review internal dan persetujuan di butir 4.9 selesai.",
      "Business Development",
      "Proposal dan quotation terkirim"
     ],
@@ -343,7 +354,7 @@
      "Concern customer dan status negosiasi di CRM"
     ],
     [
-     "Libatkan VP Commercial bila negosiasi bernilai strategis.",
+     "Libatkan VP Commercial jika negosiasi bernilai strategis.",
      "Business Development",
      "Keterlibatan VP Commercial di CRM"
     ],
@@ -353,7 +364,7 @@
      "Eskalasi diskon ke VP Commercial"
     ],
     [
-     "Rekomendasikan harga dan diskon baru kepada COO bila permintaan diskon dinilai layak.",
+     "Rekomendasikan harga dan diskon baru kepada COO jika permintaan diskon dinilai layak.",
      "VP Commercial",
      "Rekomendasi harga dan diskon baru"
     ],
@@ -363,7 +374,7 @@
      "Keputusan harga dan diskon baru"
     ],
     [
-     "Dukung negosiasi kontrak dan commercial terms and conditions bila diminta.",
+     "Dukung negosiasi kontrak dan commercial terms and conditions jika diminta.",
      "Legal & Compliance",
      "Masukan Legal & Compliance untuk negosiasi kontrak"
     ]
@@ -447,7 +458,7 @@
    "f": "VP Commercial mereview proposal\ndan merekomendasikan harga dan diskon",
    "g": "COO menyetujui harga dan diskon",
    "h": "Business Development mengirim\nproposal ke customer",
-   "i": "Business Development bernegosiasi;\nLegal & Compliance mendukung bila diminta",
+   "i": "Business Development bernegosiasi;\nLegal & Compliance mendukung jika diminta",
    "j": "Diskon di luar harga\nyang disetujui?",
    "k": "Business Development mengeskalasi\nke VP Commercial (butir 6.6)",
    "l": "Legal & Compliance mereview kontrak",
@@ -578,7 +589,7 @@
    "Maksimal 4 jam kerja"
   ],
   [
-   "Pembaruan CRM sesudah aktivitas penjualan",
+   "Pembaruan CRM setelah aktivitas penjualan",
    "Business Development",
    "Maksimal 24 jam setelah aktivitas dilakukan"
   ],
@@ -650,7 +661,7 @@
  ],
  "conclusion": [
   "Kepatuhan terhadap SOP ini dinilai dalam evaluasi kinerja dan probation (butir 4.20).",
-  "VP Commercial, pemilik SOP ini, meninjau SOP ini setiap tahun agar proses penjualan tetap sesuai strategi bisnis dan perkembangan pasar."
+  "VP Commercial selaku pemilik SOP meninjau SOP ini setiap tahun agar proses penjualan tetap sesuai strategi bisnis dan perkembangan pasar."
  ],
  "related_documents": [
   [
@@ -659,7 +670,7 @@
   ],
   [
    "SNX-LEG-SOP-02",
-   "Contract Review & Legal Approval, berstatus Draft; mengatur pengajuan permintaan review kontrak (butir 6.1), Persetujuan Legal, dan penandatanganan (butir 4.1 dan 4.3). Rujukan untuk butir 6.3 dan 6.7."
+   "Contract Review & Legal Approval, berstatus Draft; mengatur pengajuan permintaan review kontrak (butir 6.1), Persetujuan Legal, dan penandatanganan (butir 4.1 dan 4.3). Dirujuk di butir 6.3 dan 6.7."
   ],
   [
    "SNX-OPS-SOP-01",
@@ -675,7 +686,7 @@
   ],
   [
    "SNX-FAT-SOP-01",
-   "Billing & Invoicing; mengatur penagihan sesudah closing dan langkah Business Development saat kontrak ditandatangani, di luar scope SOP ini."
+   "Billing & Invoicing; mengatur penagihan setelah closing dan langkah Business Development saat kontrak ditandatangani, di luar scope SOP ini."
   ],
   [
    "SNX-COM-SOP-02",
@@ -683,11 +694,11 @@
   ],
   [
    "SNX-COM-FRM-01",
-   "Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)."
+   "Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Form ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)."
   ],
   [
    "SNX-COM-FRM-02",
-   "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8."
+   "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana setelah closing. Menjadi record paket handover di butir 6.8."
   ],
   [
    "Belum bernomor",

@@ -1,0 +1,17 @@
+{"verdict": "PASS",
+ "scores": {"a": 4, "b": 4, "c": 4, "d": "n/a"},
+ "blocking": [],
+ "nonblocking": [
+  "4.10: label dipindah ke akhir ('Pembagian wewenang harga ini berstatus (USULAN).'). Cakupan setara bed1bb6 ('Wewenang harga berikut berstatus (USULAN): ...'): pembagian VP Commercial/COO tetap berlabel. Aturan interim 'setiap diskon memerlukan persetujuan COO' sama ambigunya seperti di bed1bb6, tidak bertambah atau berkurang. Bila ingin tegas: 'Pembagian wewenang pada kalimat pertama berstatus (USULAN).'",
+  "4.7: label tetap di akhir dan tidak berubah; isi pemetaan tetap tercakup.",
+  "Tabel Roles, Legal & Compliance: pointer 'Titik keterlibatannya di butir 4.14' diganti fakta lengkap (NDA jika diperlukan sebelum informasi RESTRICTED dibagikan; draf kontrak sebelum ditandatangani) dan label USULAN 4.14 ikut dibawa. Benar.",
+  "Definisi Paket handover: pointer ke 4.16 diganti enam isi minimal yang sama persis dengan 4.16, kata 'minimal' dipertahankan. Benar.",
+  "Definisi Sales Stage: kalimat penunjuk 'Pemetaan tahap ke status ada di butir 4.7' dihapus tanpa fakta pengganti; diizinkan STYLE §3.2, karena daftar status sudah ada di definisi.",
+  "Service Delivery Manager di Roles: 'jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01' dihapus sebagai catatan internal (§3.8); fakta yang sama tetap ada di baris SNX-HR-ORG-01 bagian 11.",
+  "4.3 dan 4.12: rujukan ke bagian 8 tetap ada ('mengikuti bagian 8'), jadi batas waktu tidak hilang. Di 4.3, menyambung 'sumber data tunggal' dengan 'dan batas waktu ...' agak dipaksakan; lebih wajar dipecah: 'Batas waktu pembaruannya mengikuti bagian 8.'",
+  "Kata kewajiban utuh: 'harus', 'wajib', 'hanya', 'tidak' di 4.2, 4.3, 4.6, 4.8, 4.9, 4.11 tidak melemah. 4.18 menambah 'ditetapkan di KPI Matrix', yang konsisten dengan Scope.",
+  "Bagian 9: baris penolakan paket handover (Service Delivery Manager lalu Business Development) dan baris diskon (VP Commercial dan COO) memuat dua pelaku. Teks ini tidak berubah sejak bed1bb6 dan tiap kalimat hanya punya satu pelaku. Bagian 6: setiap langkah punya satu PIC.",
+  "Bagian 6, langkah NDA: dua rujukan dalam satu sel '(butir 4.13 dan 4.14; SNX-LEG-SOP-02 butir 6.1)' sudah ada sejak bed1bb6 (§3.1)."
+ ],
+ "contoh_baik": ["4.2: 'Informasi yang Business Development berikan kepada customer' -> 'Informasi yang diberikan Business Development kepada customer'"]
+}

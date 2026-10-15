@@ -217,3 +217,24 @@ Label USULAN pada hubungan ke butir 6.3 tetap karena SNX-COM-FRM-01 sebagai bent
 Open item ditutup atau diubah: nihil (hanya rujukan diperbaiki).
 
 R2 butir 3: baris USULAN dan Open items yang ditutup atau diubah W9 diberi keterangan "ditutup W9" atau "diubah W9" di barisnya sendiri.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Definisi Sales Stage, kalimat penunjuk dihapus: "Pemetaan tahap ke status ada di butir 4.7." Isi pemetaan tetap di butir 4.7 (USULAN).
+- Definisi Paket handover: "isi minimalnya di butir 4.16" diganti isi minimalnya (Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person).
+- Tabel peran Legal & Compliance: "Titik keterlibatannya di butir 4.14." diganti isi butir 4.14 beserta label (USULAN).
+- Tabel peran Service Delivery Manager, catatan pemetaan dipindah ke sini: "dan merupakan jabatan usulan tanpa pemegang menurut SNX-HR-ORG-01." Fakta jabatan usulan tanpa pemegang tetap tertulis di Dokumen terkait baris SNX-HR-ORG-01 (butir K-10).
+### W10 selisih angka
+nihil
+### W10 catatan
+- Pihak luar: "customer" (satu-satunya sebutan di dokumen; sama dengan SNX-COM-FRM-01, SNX-COM-FRM-02, SNX-COM-REG-01).
+- Nomor butir dan arti butir yang dirujuk form Commercial (4.3, 4.11, 4.13, 4.16, 4.17, 4.19, 6.3, bagian 8 dan 9, definisi Customer) tidak berubah.
+- Butir 4.10: label (USULAN) dipindah ke akhir butir; cakupannya tetap pembagian wewenang harga.
+### W10 audit pointer
+- .definitions[14][1]: lengkap (enam unsur isi minimal paket handover dari butir 4.16: Customer Background, Scope, Timeline, Risks, Commitment, Contact Person; definisi hanya merujuk isi minimal, syarat kelengkapan dokumen closing dan waktu handover meeting tetap di butir 4.16)
+- .definitions[18][1]: pointer murni dibuang, isi tidak dinyatakan ulang (pemetaan berlabel USULAN tetap di butir 4.7)
+- .roles[5][1]: lengkap (review draf kontrak sebelum ditandatangani, NDA disiapkan atau direview jika diperlukan sebelum informasi RESTRICTED dibagikan, label USULAN titik waktu ikut)
+### W10 perbaikan cakupan label (worker, setelah pemeriksa buta)
+- Butir 4.10: label dipindah dari kalimat penutup "Pembagian wewenang harga ini berstatus (USULAN)." ke akhir kalimat pertama, sehingga cakupannya sama dengan bed1bb6 ("Wewenang harga berikut berstatus (USULAN): ..." hanya mencakup rekomendasi VP Commercial dan persetujuan serta margin final oleh COO). Aturan sementara "setiap diskon memerlukan persetujuan COO" tetap tanpa label, seperti bed1bb6. Dasar: catatan nonblocking pemeriksa COM-SOP-02 butir 4.7 (pola sama).
