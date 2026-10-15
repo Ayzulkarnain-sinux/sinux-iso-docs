@@ -120,11 +120,11 @@ Label di dokumen: 37 kemunculan "(USULAN)" (lint). Dikelompokkan menjadi 20 buti
 | # | Butir USULAN | Letak | Pemutus yang disarankan |
 |---|---|---|---|
 | U1 | Seluruh kerangka prosedur 6.1 sampai 6.4 (usulan, penilaian, persetujuan, penyerahan tanggung jawab); sumber tidak memuat prosedur kenaikan jabatan | Intro butir 6.1; diagram | Aziz |
-| U2 | Direktur Utama memutuskan; HR Manager hanya merekomendasikan; kenaikan jabatan berlaku hanya sesudah keputusan tertulis | 4.6, tabel peran, butir 6.3 | Samuel |
+| U2 | Direktur Utama memutuskan; HR Manager hanya merekomendasikan; kenaikan jabatan berlaku hanya sesudah keputusan tertulis; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | 4.6, tabel peran, butir 6.3 | Samuel |
 | U3 | Batas waktu 3, 5, 5, dan 2 hari kerja, serta konfirmasi karyawan sebelum tanggal berlaku | Bagian 8 | Aziz, lalu Samuel |
 | U4 | Hari kerja tidak termasuk hari libur resmi | Definisi | Aziz |
 | U5 | Pengalaman dinilai dari kalimat persyaratan pendidikan dan pengalaman sampai masa pengalaman minimum ditetapkan; SNX-HR-FRM-01 sebagai acuan tambahan bila sudah disahkan | 4.2, Dokumen terkait | Aziz |
-| U6 | Ambang hasil penilaian kinerja ditetapkan Direktur Utama atas usulan HR Manager, lalu SOP direvisi | 4.3, Kesimpulan | Samuel |
+| U6 | Ambang hasil penilaian kinerja ditetapkan Direktur Utama atas usulan HR Manager, lalu SOP direvisi; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | 4.3, Kesimpulan | Samuel |
 | U7 | Pengecualian lingkup: penetapan gaji dan tunjangan di jabatan baru; kenaikan ke JA-01 | Bagian 2 | Aziz (gaji), Samuel (JA-01) |
 | U8 | Konfirmasi tertulis karyawan atas uraian jabatan tujuan, dan penundaan tanggal berlaku bila belum dikonfirmasi | 4.7, butir 6.4, bagian 9 | Aziz |
 | U9 | Perubahan jabatan diperlakukan sebagai perpindahan peran di SNX-ISMS-SOP-02; HRGA Officer memberi tahu Atasan Langsung | 4.8, butir 6.4 langkah 5 dan 6 | Fani (pemilik alur akses), Aziz |
@@ -134,7 +134,7 @@ Label di dokumen: 37 kemunculan "(USULAN)" (lint). Dikelompokkan menjadi 20 buti
 | U13 | Pemegang jabatan di SNX-HR-ORG-01 dan SNX-HR-JA-01 diperbarui lewat revisi; jabatan tujuan yang belum tercantum ditambahkan lewat revisi yang disahkan Direktur Utama | Butir 6.4 langkah 7, bagian 9 | Aziz, Samuel |
 | U14 | Direktur Utama menunjuk Atasan Langsung bila garis lapor berlabel menunggu konfirmasi | Bagian 9 | Samuel |
 | U15 | Peninjauan Legal & Compliance (JA-08) atas perubahan perjanjian kerja | Tabel peran, bagian 9 | Legal |
-| U16 | Persetujuan dengan syarat: HR Manager memasukkan tindakan ke SNX-HR-FRM-02 dan melapor sebelum data diperbarui | Bagian 9, Dokumen terkait | Aziz |
+| U16 | Persetujuan dengan syarat: HR Manager memasukkan tindakan ke SNX-HR-FRM-02 dan melapor sebelum data diperbarui; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Bagian 9, Dokumen terkait | Aziz |
 | U17 | Cara memeriksa kepatuhan: membandingkan rekaman dengan langkah dan batas waktu | Kesimpulan | Aziz |
 | U18 | "Kenaikan jabatan" = ke jabatan yang kedudukannya lebih tinggi dalam SNX-HR-ORG-01 (tanpa grading) | Definisi | Aziz, owner |
 | U19 | Acuan klausul ISO 9001:2015 5.3, 7.2, 7.5.3 dan ISO/IEC 27001:2022 Annex A 5.2, 5.18 | Bagian 11 | konsultan |
@@ -150,13 +150,13 @@ Label di dokumen: 37 kemunculan "(USULAN)" (lint). Dikelompokkan menjadi 20 buti
 | 4 | Pemberi persetujuan: Authority Matrix belum ada, dan sumber hanya menulis "approver" dan "Management / Authorized Director". Direktur Utama diusulkan; belum diputus apakah Direktur (JA-02) menyetujui untuk jabatan di bawahnya | Samuel |
 | 5 | Kenaikan gaji atau tunjangan yang menyertai kenaikan jabatan: dokumen mana yang mengaturnya (berkas tim SOP Payroll Process tidak saya buka). SOP ini mengecualikannya | Aziz, FAT |
 | 6 | Perlu atau tidaknya perubahan perjanjian kerja untuk kenaikan jabatan, dan siapa menandatangani | Legal |
-| 7 | Benturan peran tidak diatur karena sumber tidak punya kontrol pengganti: HR Manager adalah atasan langsung HRGA Officer; bila HRGA Officer atau HR Manager yang diusulkan, orang yang sama bisa mengusulkan, menilai, dan mencatat usulannya sendiri | Samuel, Aziz |
+| 7 | Benturan peran tidak diatur karena sumber tidak punya kontrol pengganti: HR Manager adalah atasan langsung HRGA Officer; bila HRGA Officer atau HR Manager yang diusulkan, orang yang sama bisa mengusulkan, menilai, dan mencatat usulannya sendiri; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Samuel, Aziz |
 | 8 | Isi berkas tim SOP Performance Appraisal (fileId dari checklist baris 6: 1bHeaK1uX6PcmrKmjB3zr2CdBk9rg5AN6) tidak dibaca. Istilah penilaian kinerja, skala nilai, dan lokasi arsip diambil dari deskripsi checklist; cocokkan sesudah peninjauan, dan beri kode dokumennya di tabel Dokumen terkait | Aziz |
 | 9 | Bentuk usulan kenaikan jabatan: form khusus tidak ada dan di luar 88 baris checklist, jadi SOP menyebut "usulan tertulis" tanpa kode. Perlu form atau tidak | Aziz (bila perlu, catat di reports/PROPOSALS.md oleh LEAD) |
-| 10 | Konfirmasi data_conflicts yang dipakai di dokumen ini: ejaan "Kristanto" (owner atau Samuel) dan jabatan Aziz "HR Manager" lawan "HR Lead" di sumber (owner atau Aziz) Ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; dokumen memakai HR Lead. | owner |
-| 11 | Garis lapor berlabel menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-05) menentukan siapa Atasan Langsung JA-01, JA-03, JA-05, JA-08, JA-10, JA-11, JA-14 | Samuel, owner |
-| 12 | Frasa kompetensi rusak di sumber dipulihkan oleh SNX-HR-JA-01 (USULAN di dokumen itu) dan menjadi dasar kualifikasi; HR Manager perlu mengonfirmasi pemulihan itu sebelum SOP dipakai | Aziz |
-| 13 | SNX-HR-FRM-01 dan SNX-HR-FRM-02 dirujuk padahal baru dikerjakan di W7; periksa kecocokan rujukan setelah keduanya jadi Diubah W9: SNX-HR-FRM-02 sudah ada (Annual Training Plan & Training Matrix), "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul; SNX-HR-FRM-01 tidak diubah, tetap "dalam pengerjaan". | LEAD |
+| 10 | Konfirmasi data_conflicts yang dipakai di dokumen ini: ejaan "Kristanto" (owner atau Samuel) dan jabatan Aziz "HR Manager" lawan "HR Lead" di sumber (owner atau Aziz); ditutup W9: owner 15 Okt memutus jabatan Aziz = HR Lead; dokumen memakai HR Lead. | owner |
+| 11 | Garis lapor berlabel menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-05) menentukan siapa Atasan Langsung JA-01, JA-03, JA-05, JA-08, JA-10, JA-11, JA-14; diubah W9: JA-03 kini punya dua garis lapor tegas (ke Direktur dan ke Direktur Utama, LEAD G-3 A3) tanpa label menunggu konfirmasi pada garis itu; label untuk jabatan lain tetap | Samuel, owner |
+| 12 | Frasa kompetensi rusak di sumber dipulihkan oleh SNX-HR-JA-01 (USULAN di dokumen itu) dan menjadi dasar kualifikasi; HR Manager perlu mengonfirmasi pemulihan itu sebelum SOP dipakai; diubah W9: sebutan jabatan HR Manager menjadi HR Lead di dokumen | Aziz |
+| 13 | SNX-HR-FRM-01 dan SNX-HR-FRM-02 dirujuk padahal baru dikerjakan di W7; periksa kecocokan rujukan setelah keduanya jadi; diubah W9: SNX-HR-FRM-02 sudah ada (Annual Training Plan & Training Matrix), "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul; R2: SNX-HR-FRM-01 (Employee Competency Matrix) juga sudah ada, "dalam pengerjaan" dihapus dan dirujuk dengan nomor dan judul. | LEAD |
 | 14 | Pemetaan "HR" di SNX-ISMS-SOP-02 ke HRGA Officer dan istilah "hari efektif" lawan "tanggal berlaku" perlu disamakan bila SNX-ISMS-SOP-02 direvisi | Fani |
 | 15 | Nomor dan judul klausul ISO dari ingatan, tidak diukur terhadap teks standar | konsultan |
 | 16 | Retensi rekaman kepegawaian sesudah karyawan keluar dan lokasi personal file yang sebenarnya (Drive atau lain) | Aziz, Legal |
@@ -211,7 +211,10 @@ Sumber: LEAD G-3 (A2, A3, B2, B4) dan butir kerja ISO-W9. Hanya butir di bawah y
 |---|---|---|
 | A2 jabatan Aziz | "HR Manager" (29 kemunculan: Peran, PIC, SLA, rekaman, simpul diagram, process_owner, blok Reviewed) | "HR Lead"; blok Reviewed "Aziz Priyo Widakdo / HR Lead" |
 | B4 SNX-HR-FRM-02 (bagian 11) | "Annual Training Plan & Training Matrix, dalam pengerjaan: tempat tindakan pemenuhan syarat kenaikan jabatan (bagian 9) (USULAN)." | "Annual Training Plan & Training Matrix: tempat tindakan pemenuhan syarat kenaikan jabatan (bagian 9) (USULAN)." |
+| R2 B4 SNX-HR-FRM-01 (bagian 11) | "Employee Competency Matrix, dalam pengerjaan: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; dasar penilaian kualifikasi bila sudah disahkan (USULAN)." | "Employee Competency Matrix: standar keterampilan, pengetahuan, dan perilaku per tingkatan jabatan; dasar penilaian kualifikasi bila sudah disahkan (USULAN)." |
 
 A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04 dan tidak memakai keduanya sebagai contoh ukuran tingkatan jabatan, jadi tidak ada perubahan. Label K-02, K-03, K-04 tidak disentuh. SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan. Kalimat batas rotasi dan mutasi tidak diubah (identik dengan SNX-HR-SOP-11, 12, 13). "SOP Performance Appraisal" sudah ditulis "Dalam peninjauan"; tidak diubah.
 
-Open item: #10 ditutup W9 (jabatan Aziz diputus owner); #13 diubah W9 (FRM-02 sudah ada, FRM-01 tetap dalam pengerjaan).
+Open item: #10 ditutup W9 (jabatan Aziz diputus owner); #13 diubah W9 (FRM-02 sudah ada; FRM-01 diubah R2).
+
+R2: baris SNX-HR-FRM-01 di bagian 11 merujuk dokumen yang sudah ada dengan nomor dan judul. Open item #13 dan baris USULAN/open item yang memuat "HR Manager" atau garis lapor JA-03 diberi tanda "diubah W9" di barisnya sendiri (kebersihan notes).

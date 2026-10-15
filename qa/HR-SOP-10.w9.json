@@ -2,30 +2,33 @@
  "key": "HR-SOP-10",
  "cluster": "HR-SOP",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Bagian 11 masih menulis SNX-HR-FRM-01 Employee Competency Matrix sebagai \"dalam pengerjaan\", padahal out/02_HR/SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx sudah ada. Butir 6 hanya menyebut FRM-02, jadi ini bukan pelanggaran, tetapi statusnya tidak seragam dengan FRM-02. Notes mencatatnya sebagai open item #13 \"FRM-01 tetap dalam pengerjaan\".",
-  "Kemungkinan tafsir yang bertentangan: LEAD-GUIDE G-3 B4 meminta dokumen T3 \"(HR-FRM-02 dan HR-RPT-01 ...)\" ditulis \"dalam peninjauan\", sedangkan butir 6 instruksi penyusun meminta FRM-02 dirujuk dengan nomor dan judul tanpa status. Penyusun mengikuti butir 6. Hasilnya cocok dengan fakta bahwa SNX-HR-FRM-02 ada di out/, jadi tidak diblokir. LEAD sebaiknya menegaskan tafsir B4.",
-  "Penulisan berbeda huruf besar: \"Dalam peninjauan\" (SOP Performance Appraisal, bagian 11). Kalimat ini tidak diubah di W9, hanya bentuk kosmetik.",
-  "Baris di bagian 9 \"Atasan Langsung ... berlabel menunggu konfirmasi di SNX-HR-ORG-01\" tetap ada. Baris ini umum dan tidak menyangkut garis JA-03 atau JA-04, jadi sudah benar tidak diubah."
+  "Butir 4.2 dan baris SNX-HR-FRM-01 di bagian 11 masih menulis 'bila sudah disahkan'. Ini konsisten dengan status Rev00 DRAFT dokumen tujuan, dan butir R2-1 meminta keterangan isi dan label tetap, jadi bukan masalah. Hanya dicatat bahwa kalimat ini perlu ditinjau ulang setelah SNX-HR-FRM-01 disahkan.",
+  "Butir A2 kata SPV: dokumen tidak punya kolom tingkat jabatan, jadi 'SPV' memang tidak ditambahkan. Ini sesuai instruksi.",
+  "Butir A3 (JA-03/JA-04), butir 3 dan 4 (khusus SNX-HR-SOP-13/11), serta butir R2 2 sampai 5 tidak berlaku untuk teks SNX-HR-SOP-10: grep JA-03, JA-04, dan garis lapor tidak menemukan hasil apa pun. Notes tidak saya periksa karena berada di luar daftar cek teks dokumen."
  ],
  "butir_dikerjakan": [
-  "A2: 29 kemunculan \"HR Manager\" diganti \"HR Lead\". Cakupannya butir 4.1 sampai 4.4, Peran (nama peran HR Lead, wewenang HRGA Officer, Legal & Compliance), PIC langkah 6.2, 6.3, 6.4, dua baris SLA bagian 8, enam sel bagian 9, dua kalimat Kesimpulan, simpul diagram d, g, l, process_owner, dan blok Reviewed \"Aziz Priyo Widakdo / HR Lead\". Hitungan diff spec cocok dengan notes. Hasil render .dot: 0 HR Manager, 3 HR Lead.",
-  "A2 SPV: tidak ditambahkan karena dokumen tidak punya kolom tingkat jabatan. Alasannya dicatat di notes.",
-  "A3: dokumen tidak menyebut atasan atau garis lapor JA-03 atau JA-04 (grep JA-03 = 0, JA-04 = 0). Tidak ada perubahan, dan itu sudah benar. Notes mencatatnya.",
-  "Butir 5: kalimat batas rotasi dan mutasi tidak diubah. Hasil render identik di HR-SOP-10, 11, 12, dan 13 (hash sama), dan penetap tetap Direktur Utama.",
-  "B4/butir 6: \"dalam pengerjaan\" dihapus dari SNX-HR-FRM-02 Annual Training Plan & Training Matrix di bagian 11. Nomor dan judul tetap, dan dokumen tujuan ada di out/02_HR/.",
-  "Data defaults v22 terpenuhi: Prepared \"Sita Nadia Salsabila Widodo / HRGA Officer\", Reviewed \"Aziz Priyo Widakdo / HR Lead\", dan Approved \"Samuel Kristanto Utomo / President Director\" persis sama dengan prepared_reviewed.HR dan approved_by.all.",
-  "Notes: bagian ## ISO-W9 ada, lengkap dengan tabel perubahan dan status open item (#10 ditutup, #13 diubah).",
-  "Cek (1), (2), (5), (6): semua perubahan berupa substitusi istilah atau penghapusan status. Tidak ada fakta baru, em-dash, frasa proses penyusunan, atau pasif baru. Rujukan silang tidak ada yang diubah selain penghapusan status FRM-02."
+  "A2: semua 'HR Manager' diganti 'HR Lead' (21 tempat). Cakupannya: butir 4.1 sampai 4.4, baris Peran (nama peran dan eskalasi HRGA Officer), Legal & Compliance, PIC di 6.2, 6.3, dan 6.4, dua baris SLA di bagian 8, lima baris bagian 9, dua kalimat Conclusion, process_owner, Reviewed 'Aziz Priyo Widakdo / HR Lead', serta simpul diagram d, g, dan l. Hasil cek: 0 'HR Manager' di render .docx, 0 di file .dot diagram, dan 0 di specs/HR-SOP-10.json.",
+  "B4: frasa 'dalam pengerjaan' dihapus dari baris SNX-HR-FRM-02 di bagian 11, dan barisnya kini memuat nomor dan judul (Annual Training Plan & Training Matrix). Judul ini cocok dengan render HR-FRM-02. Label (USULAN) tidak berubah.",
+  "R2-1: frasa 'dalam pengerjaan' dihapus dari baris SNX-HR-FRM-01 di bagian 11, dan barisnya kini memuat nomor dan judul (Employee Competency Matrix). Judul ini cocok dengan render HR-FRM-01. Keterangan isi dan label (USULAN) tidak berubah.",
+  "B4 seragam: SOP Performance Appraisal sudah ditulis 'Dalam peninjauan' sebelum W9 dan tidak berubah. SOP Training & Development tidak disebut di dokumen ini.",
+  "Butir 5: kalimat 'Batas rotasi dan mutasi' tidak berubah dan identik di SNX-HR-SOP-10, 11, 12, dan 13 (md5 6986f721... sama di keempat render). Direktur Utama tetap menjadi penetap keputusan.",
+  "Data defaults v22 cocok: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director' (approved_by.all). Process Owner 'HR Lead' sesuai aturan process_owner (jabatan reviewed departemen).",
+  "Diff (26 baris lama, 26 baris baru) hanya berisi penggantian istilah HR Manager menjadi HR Lead dan penghapusan 'dalam pengerjaan'. Tidak ada fakta baru, em-dash baru, pasif baru, frasa proses penyusunan, atau perubahan makna lain. Rujukan silang tidak ada yang diubah."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Langkah 7 dijalankan pada teks render /tmp/claude-0/w9/render/HR-SOP-10.docx (semua part XML) dan pada flow .dot hasil render. Hasilnya: \\\"HR Manager\\\" = 0, juga 0 di specs/HR-SOP-10.json; \\\"Divisi Legal\\\" = 0 (tidak wajib, ini dokumen HR); em-dash = 0; \\\"sumber\\\" = 0; \\\"penyusun\\\" = 0; JA-03/JA-04 = 0; \\\"SPV\\\" = 0. Catatan: out/02_HR/HR-SOP-10_flow.png.dot masih lama (3 HR Manager) karena belum dirender ulang ke out/. Ini bukan bagian spec terkini.",
+ "grep": "Hasil grep pada teks sesudah: 'HR Manager' muncul 0 kali di render /tmp/claude-0/w9/render/HR-SOP-10.docx, 0 kali di HR-SOP-10_flow.png.dot, dan 0 kali di specs/HR-SOP-10.json. 'HR Lead' muncul 3 kali di diagram. 'dalam pengerjaan' muncul 0 kali. Pengecekan 'Divisi Legal' tidak berlaku karena ini dokumen HR.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }
