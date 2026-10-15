@@ -7,7 +7,7 @@
   "number": "SNX-HR-ORG-01",
   "department": "Human Resources",
   "title": "Struktur Organisasi SINUX",
-  "process_owner": "HR Manager",
+  "process_owner": "HR Lead",
   "classification": "INTERNAL",
   "review_period": "YEARLY",
   "status": "Draft",
@@ -16,7 +16,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
-   "reviewed": "Aziz Priyo Widakdo / HR Manager",
+   "reviewed": "Aziz Priyo Widakdo / HR Lead",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -138,6 +138,14 @@
        [
         "ISMS Coordinator",
         "Peran yang mengoordinasi sistem manajemen keamanan informasi (ISMS) di SINUX."
+       ],
+       [
+        "Finance Lead",
+        "Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+       ],
+       [
+        "Finance Staff",
+        "Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
        ]
       ],
       "widths_cm": [
@@ -169,7 +177,7 @@
    "h": "Bagan Organisasi",
    "blocks": [
     {
-     "p": "Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan satu atasan langsung yang tertulis di Job Analysis. Garis berlabel menunggu konfirmasi merujuk nomor butir K."
+     "p": "Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan atasan langsung yang tertulis di Job Analysis atau sudah diputus (K-01). Garis berlabel menunggu konfirmasi merujuk nomor butir K."
     },
     {
      "flow": {
@@ -201,8 +209,11 @@
        ],
        [
         "ja01",
-        "ja03",
-        "menunggu konfirmasi (K-01)"
+        "ja03"
+       ],
+       [
+        "ja01",
+        "ja04"
        ],
        [
         "ja02",
@@ -242,7 +253,7 @@
        "ja09": "JA-09 Legal & Compliance\nAlif Altamziz",
        "ja10": "JA-10 Finance\nKana Salsabila\nPutri Koeswologito",
        "ja11": "JA-11 Accounting & Tax\nPradipta Nugraha",
-       "ja14": "JA-14 HR Manager\nAziz Priyo Widakdo",
+       "ja14": "JA-14 HR Lead\nAziz Priyo Widakdo",
        "ja12": "JA-12 HRGA Officer\nSita Nadia\nSalsabila Widodo",
        "ja15": "JA-15 Office Helper\nMuhamad Reyhan\nBahtiar"
       },
@@ -320,14 +331,14 @@
         "VP Commercial",
         "Laras Rasmawati",
         "Commercial",
-        "Direktur (JA-02); Direktur Utama (JA-01), menunggu konfirmasi (K-01)"
+        "Direktur (JA-02); Direktur Utama (JA-01)"
        ],
        [
         "JA-04",
         "VP Tech Operation and Services",
         "Fani Fatullah",
         "Operation",
-        "Direktur (JA-02)"
+        "Direktur (JA-02); Direktur Utama (JA-01)"
        ],
        [
         "JA-05",
@@ -383,7 +394,7 @@
         "HRGA Officer",
         "Sita Nadia Salsabila Widodo",
         "Human Resources",
-        "HR Manager (JA-14)"
+        "HR Lead (JA-14)"
        ],
        [
         "JA-13",
@@ -394,7 +405,7 @@
        ],
        [
         "JA-14",
-        "HR Manager",
+        "HR Lead",
         "Aziz Priyo Widakdo",
         "Human Resources",
         "Direktur (JA-02), menunggu konfirmasi (K-04)"
@@ -576,7 +587,7 @@
       "rows": [
        [
         "Process Owner dokumen HR, termasuk dokumen ini",
-        "HR Manager (JA-14)",
+        "HR Lead (JA-14)",
         "Job Analysis: Process Owner",
         "Tercantum di Job Analysis"
        ],
@@ -636,27 +647,27 @@
        ],
        [
         "Finance Lead",
-        "Belum dipetakan",
+        "Direktur (JA-02) sampai jabatan Finance Lead terisi",
         "SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
-        "Belum dipetakan (K-13)"
+        "(USULAN), jabatan belum terisi (K-13)"
        ],
        [
         "Finance Staff",
-        "Belum dipetakan",
+        "Finance (JA-10) dan Accounting & Tax (JA-11)",
         "SNX-FAT-SOP-01 dan SNX-FAT-SOP-05",
-        "Belum dipetakan (K-13)"
+        "(USULAN) (K-13)"
        ],
        [
         "Line Manager Legal",
         "Legal & Compliance (JA-08)",
         "SNX-LEG-SOP-01",
-        "(USULAN), menunggu konfirmasi (K-13)"
+        "Sudah diputus (K-13)"
        ],
        [
         "Staff Legal",
         "Legal & Compliance (JA-09)",
         "SNX-LEG-SOP-01",
-        "(USULAN), menunggu konfirmasi (K-13)"
+        "Sudah diputus (K-13)"
        ]
       ],
       "widths_cm": [
@@ -688,8 +699,8 @@
       "rows": [
        [
         "K-01",
-        "Garis lapor VP Commercial (JA-03)",
-        "Job Analysis menulis atasan langsung Direktur. Garis ke Direktur Utama berasal dari keterangan tambahan saat dokumen ini disusun dan belum tertulis di Job Analysis."
+        "Garis lapor VP Commercial (JA-03) dan VP Tech Operation and Services (JA-04)",
+        "Sudah diputus: JA-03 dan JA-04 masing-masing melapor ke Direktur (JA-02) dan ke Direktur Utama (JA-01), dua garis tegas. Job Analysis hanya menulis atasan langsung Direktur untuk keduanya."
        ],
        [
         "K-02",
@@ -703,7 +714,7 @@
        ],
        [
         "K-04",
-        "Atasan HR Manager (JA-14)",
+        "Atasan HR Lead (JA-14)",
         "Job Analysis menulis atasan langsung Direktur atau Management sesuai struktur yang disahkan. Bagan menaruhnya di bawah Direktur sampai ada penetapan (USULAN)."
        ],
        [
@@ -714,12 +725,12 @@
        [
         "K-06",
         "Penamaan jabatan dan unit",
-        "Job Analysis menulis HR Lead untuk JA-14, dan menulis Operations, Operation, HR / GA, serta HRGA / General Affairs sebagai nama unit. Atasan JA-06 dan JA-07 ditulis Commercial dan nama Laras Rasmawati. Dokumen ini memakai HR Manager, Operation, Human Resources, dan VP Commercial."
+        "Job Analysis dan dokumen ini sama-sama memakai HR Lead untuk JA-14; HR Manager hanya sebutan lama. Job Analysis menulis Operations, Operation, HR / GA, serta HRGA / General Affairs sebagai nama unit. Atasan JA-06 dan JA-07 ditulis Commercial dan nama Laras Rasmawati. Dokumen ini memakai Operation, Human Resources, dan VP Commercial."
        ],
        [
         "K-07",
         "Penulisan nama dan jabatan Direktur Utama",
-        "Job Analysis menulis Samuel Kristianto Utomo. Dokumen ini memakai Kristanto, ejaan pada blok Approved By template. Dokumen Operation memakai sebutan jabatan lain; badan dokumen ini memakai Direktur Utama."
+        "Sudah diputus: ejaan Kristanto dipakai di semua dokumen. Job Analysis menulis Samuel Kristianto Utomo, dan HR membetulkan ejaan itu di Job Analysis. Dokumen Operation memakai sebutan jabatan lain; badan dokumen ini memakai Direktur Utama."
        ],
        [
         "K-08",
@@ -749,7 +760,7 @@
        [
         "K-13",
         "Peran tanpa padanan jabatan",
-        "Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; Job Analysis tidak menyatakan pemasangan itu."
+        "Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Finance Lead dan Finance Staff tetap peran. Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN). Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN). Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; pemetaan Legal ini sudah diputus. ISMS Coordinator belum ditetapkan."
        ],
        [
         "K-14",
@@ -868,7 +879,7 @@
      "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir K-01 sampai K-14 akan mengubah Gambar 1, Gambar 2, dan daftar jabatan."
     },
     {
-     "p": "HR Manager meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan."
+     "p": "HR Lead meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan."
     }
    ]
   }

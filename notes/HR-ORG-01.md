@@ -148,22 +148,22 @@ Garis Laras ke Direktur Utama (K-01) tidak berlabel (USULAN) karena berasal dari
 | # | Butir | Pemutus |
 |---|---|---|
 | 1 | Berkas tim untuk checklist baris 21 (1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0) tidak terlihat oleh konektor. Minta tim membagikan berkas itu. Bila isinya beda dari Job Analysis, dokumen ini perlu direvisi | Aziz (tim HR) |
-| 2 | K-01 Garis VP Commercial (JA-03) ke Direktur dan ke Direktur Utama | owner, Samuel |
+| 2 | K-01 Garis VP Commercial (JA-03) ke Direktur dan ke Direktur Utama (ditutup W9: sudah diputus, dua garis tegas JA-03 dan JA-04 ke Direktur dan Direktur Utama) | owner, Samuel |
 | 3 | K-02 Atasan Manager of Product Tech (JA-05): Direktur atau VP Commercial | owner, Samuel |
 | 4 | K-03 Atasan Legal & Compliance (JA-08), Finance (JA-10), Accounting & Tax (JA-11). Catatan audit: Jobdesk Line Manager Legal menulis atasan lain, SOP Legal berisi placeholder, jadi tiga versi | owner, Samuel, Legal |
-| 5 | K-04 Atasan HR Manager (JA-14) | Aziz, owner |
+| 5 | K-04 Atasan HR Manager (JA-14) (diubah W9: nama jabatan JA-14 menjadi HR Lead; atasan JA-14 tetap menunggu konfirmasi) | Aziz, owner |
 | 6 | K-05 Organ perusahaan di atas Direktur Utama menurut anggaran dasar | Samuel, Legal |
-| 7 | K-06 Penamaan: HR Manager lawan HR Lead, nama unit, atasan JA-06 dan JA-07 | Aziz, owner |
-| 8 | K-07 Ejaan Kristanto lawan Kristianto, dan sebutan Direktur Utama lawan President Director di blok Approved By | owner, Samuel |
+| 7 | K-06 Penamaan: HR Manager lawan HR Lead, nama unit, atasan JA-06 dan JA-07 (diubah W9: HR Lead dipakai di Job Analysis dan dokumen ini; HR Manager hanya sebutan lama; sisa butir (nama unit) tetap) | Aziz, owner |
+| 8 | K-07 Ejaan Kristanto lawan Kristianto, dan sebutan Direktur Utama lawan President Director di blok Approved By (diubah W9: ejaan Kristanto sudah diputus; sebutan Direktur Utama lawan President Director tetap terbuka) | owner, Samuel |
 | 9 | K-08 Sebutan Direktur lawan COO untuk JA-02 | owner |
 | 10 | K-09 Hubungan Head of Operation dengan VP Tech Operation and Services (JA-04) | owner (COO), Fani |
 | 11 | K-10 Pemegang delapan jabatan Operation, headcount riil, pemetaan Erik Dwi Yanto ke NOC | owner (COO) |
 | 12 | K-11 Pemilik POL-OPS-001: COO atau Head of Operation | owner (COO), Fani |
 | 13 | K-12 Penyelarasan jabatan Fani di POL-OPS-001. Tanggal efektif jabatan VP belum disebut siapa pun | owner, Fani |
-| 14 | K-13 Pemetaan ISMS Coordinator, Finance Lead, Finance Staff ke jabatan; konfirmasi Line Manager dan Staff Legal. Jawaban owner 14 Okt untuk nama MR, ISMS Coordinator, Ketua Tim ISO: "ini belum terpikir juga". Belum jelas apakah ketiganya satu peran | owner, FAT, Legal |
+| 14 | K-13 Pemetaan ISMS Coordinator, Finance Lead, Finance Staff ke jabatan; konfirmasi Line Manager dan Staff Legal. Jawaban owner 14 Okt untuk nama MR, ISMS Coordinator, Ketua Tim ISO: "ini belum terpikir juga". Belum jelas apakah ketiganya satu peran (diubah W9: pemetaan Legal sudah diputus; Finance Lead dan Finance Staff tetap peran dengan pemetaan (USULAN); ISMS Coordinator tetap terbuka) | owner, FAT, Legal |
 | 15 | K-14 Penyetuju dokumen ini: Direktur Utama (template) lawan Management / Authorized Director (Job Analysis) lawan COO (dokumen Operation) | owner, Samuel |
 | 16 | Konsultan: apakah dokumen ini dipakai mengisi Lampiran 2 yang kosong (1FaPdUww...), dan konfirmasi empat klausul USULAN | owner, konsultan |
-| 17 | Garis putus-putus tidak bisa digambar karena renderer hanya mendukung label teks (lihat GAP). Label "menunggu konfirmasi (K-nn)" dipakai sebagai pengganti. Bila LEAD ingin garis putus-putus, perlu entri LEAD-GUIDE dan perubahan render_flow yang lolos selftest | LEAD |
+| 17 | Garis putus-putus tidak bisa digambar karena renderer hanya mendukung label teks (lihat GAP). Label "menunggu konfirmasi (K-nn)" dipakai sebagai pengganti. Bila LEAD ingin garis putus-putus, perlu entri LEAD-GUIDE dan perubahan render_flow yang lolos selftest (ditutup W9: basi, renderer menggambar garis berlabel menunggu konfirmasi putus-putus sejak tech_fix 14 Okt 21.58) | LEAD |
 | 18 | Peran dari dokumen lain yang belum dipetakan ke jabatan (mis. Commercial Manager, Presales, Sales Executive) tidak dimasukkan; tambahkan bila owner memutus pemetaannya | owner, Laras |
 | 19 | Kode SNX di Dokumen Terkait memakai nomor draf worklist; cek ulang pada W8 bahwa dokumen itu ada dan memakai nama peran yang sama dengan Matriks Peran | orkestrator |
 | 20 | Pihak eksternal (pelanggan, vendor, partner) dikecualikan dari bagan karena sumber diam (U3) | Aziz |
@@ -172,7 +172,7 @@ Garis Laras ke Direktur Utama (K-01) tidak berlabel (USULAN) karena berasal dari
 
 | # | GAP | Mitigasi yang diusulkan |
 |---|---|---|
-| 1 | defaults meminta garis putus-putus untuk garis Laras dan Aziz; tools/render_sop.py (render_flow) tidak punya gaya garis. Saya tidak boleh mengubah tools | Label teks "menunggu konfirmasi (K-nn)" pada garis; keterangan di bagian Bagan Organisasi. Usul ke LEAD: tech_fix kecil di render_flow bila ingin gaya putus-putus |
+| 1 | defaults meminta garis putus-putus untuk garis Laras dan Aziz; tools/render_sop.py (render_flow) tidak punya gaya garis. Saya tidak boleh mengubah tools (ditutup W9: basi, renderer menggambar garis berlabel menunggu konfirmasi putus-putus sejak tech_fix 14 Okt 21.58) | Label teks "menunggu konfirmasi (K-nn)" pada garis; keterangan di bagian Bagan Organisasi. Usul ke LEAD: tech_fix kecil di render_flow bila ingin gaya putus-putus |
 | 2 | Berkas tim baris 21 tidak terbaca (open item 1) | Dokumen disusun dari Job Analysis, POL-OPS-001, Lampiran 2 sebagai sumber worklist; direvisi bila berkas dibagikan |
 | 3 | Kolom Description checklist kosong, tanpa acuan klausul | Klausul disusun penyusun dan berlabel (USULAN, perlu konfirmasi konsultan) |
 | 4 | Tabel di dokumen tampil rata kanan-kiri dengan celah lebar pada sel pendek (gaya template). Tidak saya ubah (D4) | Tidak ada; keputusan Aziz atas template |
@@ -229,3 +229,51 @@ Catatan untuk orkestrator, tidak saya ubah karena di luar daftar butir:
 - Kata "sumber" masih ada di badan dokumen pada tabel Definisi ("Menunggu konfirmasi": "di sumbernya") dan bagian Dasar (paragraf 2 "sumbernya sendiri", paragraf 4 "Bila sumber memakai sebutan lain"). Bila ingin bersih, ganti menjadi "di Job Analysis atau POL-OPS-001".
 - GAP 1 dan open item 17 di notes ini sudah usang: tools/render_sop.py sekarang menggambar garis berlabel "menunggu konfirmasi" putus-putus (render_flow baris 192), dan pemeriksa mengonfirmasinya di gambar hasil render. Syarat garis putus-putus untuk Laras dan Aziz terpenuhi. Butir itu saya biarkan karena sweep membatasi perubahan.
 - Temuan nonblocking di qa/HR-ORG-01.verify.json di luar dua butir sweep tidak dikerjakan.
+
+## ISO-W9
+
+Putaran perbaikan ISO-W9 (LEAD G-2 dan G-3, config/defaults.json v22). Hanya butir A1, A2, A3, A5, A6, B4 yang dikerjakan; fakta, angka, nama, dan struktur lain tetap. Perubahan pada spec:
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 process_owner | HR Manager | HR Lead |
+| A2 blok Reviewed | Aziz Priyo Widakdo / HR Manager | Aziz Priyo Widakdo / HR Lead |
+| A3 Gambar 1 edge ja01-ja03 | berlabel "menunggu konfirmasi (K-01)" | garis tegas tanpa label |
+| A3 Gambar 1 edge ja01-ja04 | (tidak ada) | garis tegas tanpa label ditambah |
+| A2 simpul JA-14 di Gambar 2 | JA-14 HR Manager / Aziz Priyo Widakdo | JA-14 HR Lead / Aziz Priyo Widakdo |
+| A3 Daftar Jabatan JA-03 Melapor ke | Direktur (JA-02); Direktur Utama (JA-01), menunggu konfirmasi (K-01) | Direktur (JA-02); Direktur Utama (JA-01) |
+| A3 Daftar Jabatan JA-04 Melapor ke | Direktur (JA-02) | Direktur (JA-02); Direktur Utama (JA-01) |
+| A2 Daftar Jabatan JA-12 Melapor ke | HR Manager (JA-14) | HR Lead (JA-14) |
+| A2 Daftar Jabatan JA-14 Jabatan | HR Manager | HR Lead |
+| A2 Matriks Peran Process Owner | HR Manager (JA-14) | HR Lead (JA-14) |
+| A6 Matriks Peran Finance Lead | Belum dipetakan \| Belum dipetakan (K-13) | Direktur (JA-02) sampai jabatan Finance Lead terisi \| (USULAN), jabatan belum terisi (K-13) |
+| A6 Matriks Peran Finance Staff | Belum dipetakan \| Belum dipetakan (K-13) | Finance (JA-10) dan Accounting & Tax (JA-11) \| (USULAN) (K-13) |
+| A5 Matriks Peran Line Manager Legal Status | (USULAN), menunggu konfirmasi (K-13) | Sudah diputus (K-13) |
+| A5 Matriks Peran Staff Legal Status | (USULAN), menunggu konfirmasi (K-13) | Sudah diputus (K-13) |
+| A6 Definisi: baris baru Finance Lead dan Finance Staff | (tidak ada) | dua baris ditambah di akhir tabel Definisi dan Singkatan |
+| A3 K-01 | Garis lapor VP Commercial (JA-03) \| Job Analysis menulis atasan langsung Direktur. Garis ke Direktur Utama berasal dari keterangan tambahan saat dokumen ini disusun dan belum tertulis di Job Analysis. | Garis lapor VP Commercial (JA-03) dan VP Tech Operation and Services (JA-04) \| Sudah diputus: JA-03 dan JA-04 masing-masing melapor ke Direktur (JA-02) dan ke Direktur Utama (JA-01), dua garis tegas. Job Analysis hanya menulis atasan langsung Direktur untuk keduanya. |
+| A2 K-04 judul butir | Atasan HR Manager (JA-14) | Atasan HR Lead (JA-14) |
+| A2 K-06 | Job Analysis menulis HR Lead untuk JA-14, dan menulis Operations, Operation, HR / GA, serta HRGA / General Affairs sebagai nama unit. Atasan JA-06 dan JA-07 ditulis Commercial dan nama Laras Rasmawati. Dokumen ini memakai HR Manager, Operation, Human Resources, dan VP Commercial. | Job Analysis dan dokumen ini sama-sama memakai HR Lead untuk JA-14; HR Manager hanya sebutan lama. Job Analysis menulis Operations, Operation, HR / GA, serta HRGA / General Affairs sebagai nama unit. Atasan JA-06 dan JA-07 ditulis Commercial dan nama Laras Rasmawati. Dokumen ini memakai Operation, Human Resources, dan VP Commercial. |
+| A1 K-07 | Job Analysis menulis Samuel Kristianto Utomo. Dokumen ini memakai Kristanto, ejaan pada blok Approved By template. Dokumen Operation memakai sebutan jabatan lain; badan dokumen ini memakai Direktur Utama. | Sudah diputus: ejaan Kristanto dipakai di semua dokumen. Job Analysis menulis Samuel Kristianto Utomo, dan HR membetulkan ejaan itu di Job Analysis. Dokumen Operation memakai sebutan jabatan lain; badan dokumen ini memakai Direktur Utama. |
+| A5/A6 K-13 | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; Job Analysis tidak menyatakan pemasangan itu. | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Finance Lead dan Finance Staff tetap peran. Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN). Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN). Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; pemetaan Legal ini sudah diputus. ISMS Coordinator belum ditetapkan. |
+| A3 Bagan Organisasi, pengantar | Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan satu atasan langsung yang tertulis di Job Analysis. Garis berlabel menunggu konfirmasi merujuk nomor butir K. | Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan atasan langsung yang tertulis di Job Analysis atau sudah diputus (K-01). Garis berlabel menunggu konfirmasi merujuk nomor butir K. |
+| A2 Kesimpulan | HR Manager meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan. | HR Lead meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan. |
+
+Open item yang ditutup atau diubah (nomor tabel Open items di atas):
+
+- Open item 2 (K-01): ditutup W9: sudah diputus, JA-03 dan JA-04 melapor ke Direktur dan Direktur Utama, dua garis tegas tanpa label.
+- Open item 5 (K-04): diubah W9: nama jabatan menjadi HR Lead; pemutus atasan JA-14 tetap Aziz dan owner.
+- Open item 7 (K-06): diubah W9: bagian HR Manager lawan HR Lead selesai; nama unit dan atasan JA-06 dan JA-07 tetap terbuka.
+- Open item 8 (K-07): diubah W9: ejaan Kristanto sudah diputus; sebutan Direktur Utama lawan President Director tetap terbuka.
+- Open item 14 (K-13): diubah W9: pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 sudah diputus; Finance Lead dijalankan Direktur sampai jabatan terisi (USULAN, pemutus owner dan FAT); Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN); ISMS Coordinator tetap terbuka.
+- Open item 17 dan GAP 1 (garis putus-putus): ditutup W9: basi, renderer menggambar garis berlabel menunggu konfirmasi sebagai garis putus-putus sejak tech_fix 14 Okt 21.58. Badan dokumen tidak menyebut keterbatasan itu, jadi tidak ada kalimat yang dihapus.
+- Open item 21 (baru, W9): Job Analysis tim menulis Samuel Kristianto Utomo; HR membetulkannya menjadi Kristanto | Aziz.
+- Open item 22 (baru, W9): FAT disebut di definisi Finance Lead sesuai teks LEAD tetapi tidak punya entri sendiri di tabel Definisi; tambahkan bila LEAD menghendaki | LEAD.
+
+Catatan pelaksana, tidak diubah:
+- SPV tidak ditulis: dokumen ini tidak punya kolom tingkat jabatan.
+- "Divisi Legal" tidak ada di spec; kolom Unit memakai "Legal" seperti unit lain tanpa awalan, jadi nama unit tidak diubah.
+- Butir 4 bagian "Keputusan data dan tafsir" nomor 5 di atas (HR Manager bukan HR Lead) dan kalimat Kesimpulan "Konfirmasi butir K-01 sampai K-14" basi terhadap keputusan W9; kalimat Kesimpulan tidak diubah karena di luar butir kerja.
+- Pengantar bagian Bagan Organisasi disesuaikan satu kalimat agar garis tanpa label JA-03 dan JA-04 tidak disebut "satu atasan".
+- Blok Prepared dan Reviewed tetap milik HR (Sita sebagai Prepared, Aziz Priyo Widakdo / HR Lead sebagai Reviewed).
+- Uji: render_sop, lint_doc generic (pass), validate.py (PASSED), blankscan (ok), w9diff dibaca.
