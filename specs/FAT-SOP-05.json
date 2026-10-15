@@ -15,11 +15,22 @@
    "prepared": "Finance Staff",
    "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
  },
  "purpose": [
   "SOP ini mengatur proses perhitungan, pembayaran, pelaporan, dan pengarsipan dokumen perpajakan di SINUX untuk PPN, PPh Potong dan Pungut, dan PPh Badan.",
-  "Finance Staff dan Finance Lead menghitung pajak dengan akurat, membayarnya tepat waktu, dan melaporkannya sesuai peraturan, supaya SINUX terhindar dari denda, bunga administratif, dan sengketa pajak.",
+  "Finance Staff dan Finance Lead menghitung pajak secara akurat, membayarnya tepat waktu, serta melaporkannya sesuai peraturan. Tujuannya agar SINUX terhindar dari denda, bunga administratif, dan sengketa pajak.",
   "SOP ini juga menetapkan pembagian tanggung jawab antara FAT dan Unit pengaju."
  ],
  "scope": [
@@ -28,12 +39,12 @@
   "PPh Potong dan Pungut: pemotongan PPh Pasal 21 atas gaji, bonus, dan tunjangan karyawan, termasuk Gross-Up dan penyesuaian akhir tahun; pemotongan atau pemungutan PPh Pasal 23/26 dan Pasal 4 ayat (2) atas transaksi dengan pihak ketiga (vendor jasa, sewa, dan pengadaan infrastruktur); rekonsiliasi PPh Potong dan Pungut setiap Masa Pajak dan setiap akhir Tahun Pajak untuk perhitungan dan pelaporan PPh Badan.",
   "PPh Badan: perhitungan laba komersial dan fiskal; penyusunan SPT Tahunan PPh Badan; perhitungan angsuran PPh Pasal 25 (jika ada); rekonsiliasi semua kredit pajak yang bisa digunakan untuk perhitungan PPh Badan.",
   "Administrasi dan rekonsiliasi: pembuatan kode billing; pengelolaan BPN/NTPN; pembuatan bukti lapor setiap Masa Pajak dan Tahun Pajak berjalan; pengarsipan dokumen perpajakan untuk persiapan audit internal, audit eksternal, dan pemeriksaan DJP.",
-  "Dikecualikan dari SOP ini: penerbitan invoice kepada customer (SNX-FAT-SOP-01), kecuali Faktur Pajak Keluaran; pembayaran selain pajak; pencatatan akuntansi dan penyusunan laporan keuangan; pengarsipan dokumen keuangan selain dokumen perpajakan (USULAN)."
+  "Di luar scope SOP ini: penerbitan invoice kepada customer (SNX-FAT-SOP-01), kecuali Faktur Pajak Keluaran; pembayaran selain pajak; pencatatan akuntansi dan penyusunan laporan keuangan; pengarsipan dokumen keuangan selain dokumen perpajakan (USULAN)."
  ],
  "definitions": [
   [
    "(USULAN)",
-   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+   "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
   ],
   [
    "Aspek pajak",
@@ -81,11 +92,11 @@
   ],
   [
    "Finance Lead",
-   "peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+   "Peran pemeriksa dan penyetuju di FAT; selama jabatannya belum terisi, peran ini dijalankan Direktur (USULAN)."
   ],
   [
    "Finance Staff",
-   "peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
+   "Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
   ],
   [
    "Hak kompensasi pajak (Tax Asset)",
@@ -117,7 +128,7 @@
   ],
   [
    "PPh Potong dan Pungut",
-   "PPh yang SINUX potong atau pungut: Pasal 21, Pasal 23/26, dan Pasal 4 ayat (2)."
+   "PPh yang dipotong atau dipungut SINUX: Pasal 21, Pasal 23/26, dan Pasal 4 ayat (2)."
   ],
   [
    "PPN",
@@ -145,27 +156,27 @@
   ]
  ],
  "policy": [
-  "4.1 Kepatuhan perpajakan (Annex A 5.31): Finance Staff dan Finance Lead menghitung, memotong atau memungut, menyetor, dan melaporkan pajak sesuai peraturan perundang-undangan perpajakan yang berlaku, termasuk batas waktu setor dan lapor menurut peraturan itu (butir 6.2 sampai 6.5).",
-  "4.2 Pengendalian proses (ISO 9001:2015 8.1): Finance Staff dan Finance Lead menjalankan lima tahap di butir 6.1 sampai 6.5 secara berurutan untuk mencegah keterlambatan setor dan lapor, kesalahan penerbitan Faktur Pajak Keluaran, dan kesalahan Laporan Keuangan akibat pencatatan utang pajak yang tidak sesuai. Batas waktu tiap tahap ada di bagian 8.",
-  "4.3 Pembagian tanggung jawab (ISO 9001:2015 5.3): Finance Lead menyetujui utang pajak yang dihitung Finance Staff (butir 6.2 dan 6.3). Pembagian tanggung jawab lainnya ada di bagian 5.",
-  "4.4 Rekaman perpajakan (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan dokumen perpajakan agar siap untuk audit internal, audit eksternal, dan pemeriksaan DJP (butir 6.5). Lokasi, pemilik, dan retensi tiap rekaman ada di tabel bagian 11.",
-  "4.5 Klasifikasi: rekaman perpajakan di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).",
-  "4.6 Hak kompensasi pajak dan ekualisasi: Finance Lead mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi antara Laporan Keuangan Komersial dan SPT (USULAN: Finance Lead sebagai pelaku). Bagian 6 belum memuat langkah rinci untuk butir ini."
+  "4.1 Kepatuhan perpajakan (Annex A 5.31): Finance Staff dan Finance Lead menghitung, memotong atau memungut, menyetor, dan melaporkan pajak sesuai peraturan perundang-undangan perpajakan yang berlaku (butir 6.2 sampai 6.5). Batas waktu setor dan lapor juga mengikuti peraturan itu.",
+  "4.2 Pengendalian proses (ISO 9001:2015 8.1): Finance Staff dan Finance Lead menjalankan lima tahap di butir 6.1 sampai 6.5 secara berurutan. Urutan ini mencegah keterlambatan setor dan lapor, kesalahan penerbitan Faktur Pajak Keluaran, serta kesalahan Laporan Keuangan akibat pencatatan utang pajak yang tidak sesuai. Setiap tahap diselesaikan dalam batas waktu sesuai bagian 8.",
+  "4.3 Pembagian tanggung jawab (ISO 9001:2015 5.3): Finance Lead menyetujui utang pajak yang dihitung Finance Staff (butir 6.2 dan 6.3). Pembagian tanggung jawab lainnya sesuai bagian 5.",
+  "4.4 Record perpajakan (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan dokumen perpajakan agar siap untuk audit internal, audit eksternal, dan pemeriksaan DJP (butir 6.5). Lokasi, pemilik, dan retensi tiap record mengikuti tabel bagian 11.",
+  "4.5 Klasifikasi: record perpajakan di bagian 11 berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01 (USULAN).",
+  "4.6 Hak kompensasi pajak dan ekualisasi: Finance Lead mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi antara Laporan Keuangan Komersial dan SPT. Bagian 6 belum memuat langkah rinci untuk butir ini, dan penetapan Finance Lead sebagai pelakunya belum diputuskan (USULAN)."
  ],
  "roles": [
   [
    "Finance Lead",
-   "Pemilik SOP. Merekonsiliasi utang pajak di dokumen tracker tiap akhir Masa Pajak, menyetujui utang pajak, mengajukan pembayaran, melaporkan pajak, dan mengarsipkan dokumen perpajakan (butir 6.3 dan 6.5). Mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi menurut butir 4.6 (USULAN).",
+   "Pemilik SOP. Merekonsiliasi utang pajak di dokumen tracker tiap akhir Masa Pajak, menyetujui utang pajak, mengajukan pembayaran, melaporkan pajak, dan mengarsipkan dokumen perpajakan (butir 6.3 dan 6.5). Mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi sesuai butir 4.6 (USULAN).",
    "Menyetujui utang pajak dan mengajukan pembayaran pajak, dalam batas delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
   ],
   [
    "Finance Staff",
-   "Memeriksa kelengkapan dokumen, menganalisis aspek pajak, menghitung utang pajak, mencatatnya di dokumen tracker, membuat bukti potong, Faktur Pajak Keluaran, dan kode billing (butir 6.1, 6.2, dan 6.4). Menyetor pajak dan mencatat BPN/NTPN menurut butir 6.4 (USULAN).",
-   "Membuat bukti potong, Faktur Pajak Keluaran, dan kode billing; menyetor pajak sesudah Finance Lead mengajukan pembayaran (USULAN)."
+   "Memeriksa kelengkapan dokumen, menganalisis aspek pajak, menghitung utang pajak, mencatatnya di dokumen tracker, membuat bukti potong, Faktur Pajak Keluaran, dan kode billing (butir 6.1, 6.2, dan 6.4). Menyetor pajak dan mencatat BPN/NTPN sesuai butir 6.4 (USULAN).",
+   "Membuat bukti potong, Faktur Pajak Keluaran, dan kode billing; menyetor pajak setelah Finance Lead mengajukan pembayaran (USULAN)."
   ],
   [
    "Unit pengaju",
-   "Menyerahkan invoice atau pengajuan yang memiliki aspek pajak kepada Finance Staff, menurut butir 6.1 (USULAN).",
+   "Menyerahkan invoice atau pengajuan yang memiliki aspek pajak kepada Finance Staff sesuai butir 6.1 (USULAN).",
    "Tidak menyetujui utang pajak; persetujuan ada pada Finance Lead (butir 6.3)."
   ]
  ],
@@ -198,7 +209,7 @@
      "Nilai utang pajak"
     ],
     [
-     "Input utang pajak ke dokumen tracker.",
+     "Catat utang pajak di dokumen tracker.",
      "Finance Staff",
      "Baris utang pajak di dokumen tracker"
     ],
@@ -218,7 +229,7 @@
    "title": "Review dan persetujuan",
    "steps": [
     [
-     "Rekonsiliasi utang pajak di dokumen tracker pada setiap akhir Masa Pajak.",
+     "Rekonsiliasikan utang pajak di dokumen tracker setiap akhir Masa Pajak.",
      "Finance Lead",
      "Hasil rekonsiliasi utang pajak"
     ],
@@ -243,7 +254,7 @@
      "Kode billing"
     ],
     [
-     "Setor pajak memakai kode billing (USULAN).",
+     "Setor pajak dengan kode billing (USULAN).",
      "Finance Staff",
      "Bukti bayar"
     ],
@@ -368,8 +379,8 @@
   ]
  ],
  "conclusion": [
-  "Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan batas waktu di bagian 8 (USULAN).",
-  "Finance Lead juga meninjau SOP ini setiap tahun."
+  "Finance Lead sebagai pemilik SOP memeriksa kepatuhan dengan membandingkan record di bagian 11 terhadap batas waktu di bagian 8 (USULAN).",
+  "Finance Lead meninjau SOP ini setiap tahun."
  ],
  "related_documents": [
   [
@@ -386,7 +397,7 @@
   ],
   [
    "SNX-ISMS-PRO-01",
-   "Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan rekaman di bagian 11."
+   "Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan record di bagian 11."
   ],
   [
    "SNX-HR-ORG-01",

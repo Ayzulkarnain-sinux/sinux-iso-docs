@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Gambar 1: isi keterangan lama dipindah utuh ke node (dibandingkan image3.png di base docx bed1bb6 dan PDF W10 hlm 11). 'Finance Lead menjalankan butir 6.1 sampai 6.3 untuk dokumen perpajakan' menjadi '(dokumen perpajakan: Finance Lead)' di node 6.1, 6.2, 6.3; 'Cabang dokumen tidak lengkap adalah USULAN' menjadi 'Finance Staff (USULAN)' di node 'Minta dokumen yang kurang'; garis putus-putus tetap ada. Arti tidak berubah. Catatan kecil: label USULAN kini hanya di node, bukan di panah balik putus-putus; cukup jelas.",
+  "Bagian 2: '(USULAN)' pindah dari awal 'Dikecualikan dari SOP ini (USULAN):' ke akhir butir. Sesuai STYLE 3.5, tetapi kini bisa terbaca hanya berlaku untuk backup Google Drive. Usul: 'Seluruh pengecualian ini masih USULAN' tidak perlu; cukup pastikan notes mencatat cakupan label.",
+  "4.9 'menghapus softcopy dengan hapus aman' agak berulang; usul 'menghapus softcopy secara aman (secure delete)'.",
+  "Bagian 10, kolom Kode: 'Dalam peninjauan' menjadi 'Dalam review' (peta mekanis). Ini isi kolom Kode/status; konsisten dengan definisi Financial Document Register, tetapi pastikan bukan label render.",
+  "hardcopy/softcopy ditulis rapat, glossary STYLE memakai 'hard copy'/'soft copy'; tidak berubah di W10, konsisten di seluruh dokumen."
+ ],
+ "contoh_baik": [
+  "Dokumen keuangan lain yang FAT kelola menurut SNX-HR-JA-01 -> Dokumen keuangan lain yang dikelola FAT sesuai SNX-HR-JA-01"
+ ]
+}

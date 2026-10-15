@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 2: '(USULAN)' pindah dari awal daftar pengecualian ke akhir butir ('serta pengarsipan dokumen keuangan, yang diatur SNX-FAT-SOP-04 (USULAN)'); kini bisa terbaca hanya untuk butir terakhir. Isi daftar lengkap dibanding bed1bb6.",
+  "4.3: rujukan 'Batas waktu tiap tahap ada di bagian 8' diganti 'Setiap tahap diselesaikan dalam batas waktu sesuai bagian 8'; rujukan tetap, arti setara.",
+  "Istilah input jurnal belum seragam: langkah 6.1 kini 'Catat jurnal', tetapi Roles tetap 'Menginput jurnal' dan 6.4 'jurnal yang diinput Finance Staff'.",
+  "Bagian 1: 'Laporan Keuangan juga valid, akuntabel' — 'juga' terasa tempelan; usul 'Laporan Keuangan valid, akuntabel, dan siap diaudit untuk ...'."
+ ],
+ "contoh_baik": [
+  "Tutup buku bulanan dan penyusunan Laporan Keuangan ada pada Finance Lead -> tutup buku bulanan dan penyusunan Laporan Keuangan menjadi wewenang Finance Lead"
+ ]
+}

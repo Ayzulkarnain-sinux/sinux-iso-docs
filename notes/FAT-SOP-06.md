@@ -216,3 +216,19 @@ Open item:
 
 - K-13 (Finance Lead dan Finance Staff belum dipetakan ke jabatan): ditutup W9: dipetakan lewat definisi bagian 3 sesuai keputusan owner 15 Okt ("finance lead belum ada"), berlabel USULAN; baris lama tidak dihapus.
 - Pemetaan Finance Lead dan Finance Staff ke jabatan: status berubah W9: berlaku sebagai USULAN sampai jabatan Finance Lead terisi.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label di Scope butir pengecualian dipindah ke akhir butir dan tetap berlaku untuk seluruh butir (asli: "Dikecualikan dari SOP ini (USULAN): penerbitan invoice kepada customer (SNX-FAT-SOP-01); ..."). Jumlah label tetap 24.
+
+### W10 kalimat dihapus atau dipindah
+- 4.3: "Batas waktu tiap tahap ada di bagian 8." ditulis ulang "Setiap tahap diselesaikan dalam batas waktu sesuai bagian 8." (rujukan batas waktu dipertahankan).
+- 4.7: "Lokasi, pemilik, dan retensi tiap record ada di tabel bagian 11." menjadi "... mengikuti tabel bagian 11." (rujukan dipertahankan).
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "customer" (satu-satunya sebutan di dokumen ini).
+- "mereview"/"Review" sebagai kata kerja menjadi "meninjau"/"Tinjau" (STYLE §1.3); "Input jurnal" di langkah 6.1 menjadi "Catat jurnal". Judul prosedur beku "Input jurnal" dan "Review dan jurnal penyesuaian" tidak diubah; "Hasil review" tetap sebagai kata benda.
+- Definisi (USULAN), Finance Lead, Finance Staff, dan pembuka "Di luar scope SOP ini" diselaraskan dengan SNX-FAT-SOP-01, -04, dan -05.

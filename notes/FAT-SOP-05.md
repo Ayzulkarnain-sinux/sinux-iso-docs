@@ -275,3 +275,20 @@ Open item:
 
 - K-13 (Finance Lead dan Finance Staff belum dipetakan ke jabatan): ditutup W9: dipetakan lewat definisi bagian 3 sesuai keputusan owner 15 Okt ("finance lead belum ada"), berlabel USULAN; baris lama tidak dihapus.
 - Pemetaan Finance Lead dan Finance Staff ke jabatan: status berubah W9: berlaku sebagai USULAN sampai jabatan Finance Lead terisi.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label butir 4.6 dipindah ke akhir butir dan ditulis sebagai kalimat (asli: "4.6 Hak kompensasi pajak dan ekualisasi: Finance Lead mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi antara Laporan Keuangan Komersial dan SPT (USULAN: Finance Lead sebagai pelaku). Bagian 6 belum memuat langkah rinci untuk butir ini."); arti tetap: Finance Lead sebagai pelaku berstatus USULAN. Jumlah label tetap 31.
+
+### W10 kalimat dihapus atau dipindah
+- 4.2: "Batas waktu tiap tahap ada di bagian 8." ditulis ulang "Setiap tahap diselesaikan dalam batas waktu sesuai bagian 8." (rujukan batas waktu dipertahankan).
+- 4.3: "Pembagian tanggung jawab lainnya ada di bagian 5." menjadi "... sesuai bagian 5." (rujukan dipertahankan).
+- 4.4: "Lokasi, pemilik, dan retensi tiap record ada di tabel bagian 11." menjadi "... mengikuti tabel bagian 11." (rujukan dipertahankan).
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "customer" (satu-satunya sebutan di dokumen ini, 5 kali).
+- "Dikecualikan dari SOP ini" menjadi "Di luar scope SOP ini", sama dengan SNX-FAT-SOP-04; definisi (USULAN), Finance Lead, dan Finance Staff diselaraskan dengan SNX-FAT-SOP-01.
+- Langkah 6.2 butir 2 "Input utang pajak" menjadi "Catat utang pajak" (kata kerja Indonesia, STYLE §1.3).

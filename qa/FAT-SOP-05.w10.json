@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "4.2: rujukan 'Batas waktu tiap tahap ada di bagian 8.' diganti 'Setiap tahap diselesaikan dalam batas waktu sesuai bagian 8.' Rujukan tetap ada, pembaca tidak kehilangan batas; kalimat kini berbentuk kewajiban, arti setara.",
+  "4.6: label '(USULAN: Finance Lead sebagai pelaku)' digabung ke kalimat 'Bagian 6 belum memuat langkah rinci ..., dan penetapan Finance Lead sebagai pelakunya belum diputuskan (USULAN).' Isi lengkap, tetapi dua hal berbeda disambung 'dan'; usul pecah jadi dua kalimat.",
+  "4.3 'Pembagian tanggung jawab lainnya sesuai bagian 5' terasa kaku; usul 'diatur di bagian 5'.",
+  "4.1: batas waktu setor/lapor dipisah jadi kalimat sendiri; isi lengkap."
+ ],
+ "contoh_baik": [
+  "PPh yang SINUX potong atau pungut -> PPh yang dipotong atau dipungut SINUX"
+ ]
+}

@@ -1,384 +1,395 @@
 {
-  "meta": {
-    "doc_key": "FAT-SOP-06",
-    "number": "SNX-FAT-SOP-06",
-    "department": "Finance, Accounting & Tax",
-    "title": "Accounting and Financial Report",
-    "process_owner": "Finance Lead",
-    "classification": "INTERNAL",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Finance Staff",
-      "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "doc_key": "FAT-SOP-06",
+  "number": "SNX-FAT-SOP-06",
+  "department": "Finance, Accounting & Tax",
+  "title": "Accounting and Financial Report",
+  "process_owner": "Finance Lead",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Finance Staff",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "purpose": [
-    "SOP ini mengatur proses akuntansi di SINUX dari pencatatan jurnal sampai penyusunan Laporan Keuangan.",
-    "Hasil yang dijaga: kesalahan input dan selisih pada Buku Besar dan Neraca berkurang, tutup buku selesai tepat waktu, dan Laporan Keuangan valid, akuntabel, serta siap diaudit untuk Manajemen, Pemegang Saham, Pihak Bank, Panitia Tender BUMN, dan DJP."
-  ],
-  "scope": [
-    "SOP ini berlaku untuk siklus akuntansi SINUX, dari terjadinya transaksi sampai terbitnya Laporan Keuangan. Yang tercakup:",
-    "Data master akuntansi: pengelolaan dan pembaruan CoA.",
-    "Pencatatan transaksi: jurnal penerimaan dan pengeluaran kas dan bank; pengakuan pendapatan dan piutang usaha; pembelian, biaya operasional, dan utang usaha.",
-    "Aset tetap dan aset tak berwujud: pencatatan di Fixed Asset Register, kapitalisasi, perhitungan penyusutan aset fisik seperti server dan kendaraan, serta amortisasi software dan lisensi.",
-    "Tutup buku bulanan dan tahunan: rekonsiliasi bank; jurnal penyesuaian (accrual, prepaid expense, deferred revenue); ekualisasi akun komersial dengan akun perpajakan (PPN, PPh 21, PPh 22, dan lainnya).",
-    "Laporan Keuangan: Laporan Posisi Keuangan (Neraca), Laporan Laba Rugi, Laporan Arus Kas, dan Laporan Perubahan Ekuitas.",
-    "Dikecualikan dari SOP ini (USULAN): penerbitan invoice kepada customer (SNX-FAT-SOP-01); penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection), dengan tracker piutang di SNX-FAT-REG-01; persetujuan pengajuan pembayaran (SOP Payment and Disbursement Approval); perhitungan, penyetoran, dan pelaporan pajak (SNX-FAT-SOP-05); pengarsipan dokumen keuangan (SNX-FAT-SOP-04)."
-  ],
-  "definitions": [
-    [
-      "(USULAN)",
-      "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
-    ],
-    [
-      "Accrual",
-      "Beban atau pendapatan yang sudah terjadi tetapi belum dibayar atau diterima."
-    ],
-    [
-      "Accrual basis",
-      "Dasar pencatatan yang mengakui pendapatan dan beban saat transaksinya terjadi, bukan saat kas diterima atau dibayar."
-    ],
-    [
-      "Bank statement",
-      "Laporan mutasi rekening dari bank."
-    ],
-    [
-      "BUMN",
-      "Badan Usaha Milik Negara."
-    ],
-    [
-      "Buku Besar",
-      "Kumpulan seluruh akun CoA beserta saldonya."
-    ],
-    [
-      "Chart of Accounts (CoA)",
-      "Daftar akun yang dipakai SINUX untuk mencatat transaksi keuangan."
-    ],
-    [
-      "Deferred revenue",
-      "Pendapatan yang sudah diterima untuk jasa yang belum diserahkan."
-    ],
-    [
-      "DJP",
-      "Direktorat Jenderal Pajak."
-    ],
-    [
-      "Ekualisasi",
-      "Pencocokan angka akun komersial dengan angka akun perpajakan."
-    ],
-    [
-     "Finance Lead",
-     "peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
-    ],
-    [
-     "Finance Staff",
-     "peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
-    ],
-    [
-      "Fixed Asset Register",
-      "Daftar aset tetap dan aset tak berwujud SINUX yang dikapitalisasi."
-    ],
-    [
-      "Hari",
-      "Satuan batas waktu di bagian 8, dihitung sebagai hari kerja (USULAN)."
-    ],
-    [
-      "Jurnal",
-      "Catatan satu transaksi keuangan pada akun CoA."
-    ],
-    [
-      "Jurnal penyesuaian",
-      "Jurnal akhir periode yang menyesuaikan saldo akun supaya beban dan pendapatan tercatat pada periode yang tepat."
-    ],
-    [
-      "Jurnal reklasifikasi",
-      "Jurnal yang memindahkan nilai transaksi yang sudah tercatat ke akun CoA lain."
-    ],
-    [
-      "Laporan Keuangan",
-      "Laporan Posisi Keuangan (Neraca), Laporan Laba Rugi, Laporan Arus Kas, dan Laporan Perubahan Ekuitas."
-    ],
-    [
-      "Piutang usaha",
-      "Hak tagih SINUX kepada customer atas penjualan jasa secara kredit."
-    ],
-    [
-      "PPh",
-      "Pajak Penghasilan."
-    ],
-    [
-      "PPN",
-      "Pajak Pertambahan Nilai."
-    ],
-    [
-      "Prepaid expense",
-      "Biaya yang sudah dibayar untuk periode berikutnya."
-    ],
-    [
-      "Rekonsiliasi bank",
-      "Pencocokan jurnal kas dan bank dengan bank statement."
-    ],
-    [
-      "SAK",
-      "Standar Akuntansi Keuangan."
-    ],
-    [
-      "Tutup buku",
-      "Penutupan pencatatan akuntansi satu periode: bulanan (month-end closing) atau tahunan (year-end closing)."
-    ],
-    [
-      "Utang usaha",
-      "Kewajiban bayar SINUX kepada vendor atas pembelian secara kredit."
-    ]
-  ],
-  "policy": [
-    "4.1 Dasar pencatatan: Finance Staff dan Finance Lead mencatat transaksi dengan accrual basis dan menyajikan Laporan Keuangan sesuai SAK yang berlaku.",
-    "4.2 Pencatatan pada CoA (ISO 9001:2015 8.1): Finance Staff mencatat setiap transaksi keuangan pada akun CoA yang sesuai, dengan nominal aktual, supaya Buku Besar dan Neraca tidak berselisih (butir 6.1 dan 6.2).",
-    "4.3 Jadwal (ISO 9001:2015 8.1): Finance Staff menginput jurnal dan merekonsiliasi bank setiap minggu, dan Finance Lead melakukan tutup buku setiap bulan. Batas waktu tiap tahap ada di bagian 8.",
-    "4.4 Pemisahan tugas dan review (ISO 9001:2015 5.3 dan Annex A 5.3): Finance Lead mereview jurnal dan rekonsiliasi bank yang dikerjakan Finance Staff sebelum tutup buku bulanan (butir 6.4).",
-    "4.5 Jurnal penyesuaian: Finance Lead mencatat jurnal penyesuaian di akhir periode atas beban gaji yang masih harus dibayar, penyusutan aset tetap (server dan hardware), amortisasi software, serta utang dan piutang pajak (butir 6.4, USULAN).",
-    "4.6 Cakupan tanpa langkah rinci: bagian 6 belum memuat langkah untuk tutup buku tahunan, ekualisasi akun komersial dengan akun perpajakan, dan pencatatan aset tetap beserta penyusutannya. Finance Lead menetapkan langkah, pelaku, dan batas waktunya sebelum SOP ini disahkan (USULAN).",
-    "4.7 Rekaman (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan Laporan Keuangan menurut SNX-FAT-SOP-04 (USULAN). Lokasi, pemilik, dan retensi tiap rekaman ada di tabel bagian 11.",
-    "4.8 Akses (Annex A 5.15): Finance Lead mencatat pemegang akses ke data akuntansi di SNX-FAT-FRM-02 (USULAN).",
-    "4.9 Klasifikasi (Annex A 5.12): rekaman di bagian 11 berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN)."
-  ],
-  "roles": [
-    [
-      "Finance Lead",
-      "Pemilik SOP. Mereview jurnal dan rekonsiliasi bank, mencatat jurnal penyesuaian dan jurnal reklasifikasi (USULAN), melakukan tutup buku bulanan, dan menyusun Laporan Keuangan (butir 6.4 dan 6.5).",
-      "Review atas pekerjaan Finance Staff (butir 4.4); batas wewenang keuangan lain mengikuti delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
-    ],
-    [
-      "Finance Staff",
-      "Menginput jurnal, mengklasifikasi transaksi pada CoA, mengelola CoA, dan merekonsiliasi bank (butir 6.1 sampai 6.3).",
-      "Mencatat jurnal dan rekonsiliasi bank; tutup buku bulanan dan penyusunan Laporan Keuangan ada pada Finance Lead (butir 6.5)."
-    ]
-  ],
-  "procedures": [
-    {
-      "title": "Input jurnal",
-      "steps": [
-        [
-          "Input jurnal atas transaksi kas dan bank, pendapatan dan piutang usaha, serta pembelian, biaya operasional, dan utang usaha.",
-          "Finance Staff",
-          "Jurnal transaksi"
-        ]
-      ]
-    },
-    {
-      "title": "Kategorisasi dan pengelolaan CoA",
-      "steps": [
-        [
-          "Klasifikasikan tiap transaksi pada akun CoA yang sesuai.",
-          "Finance Staff",
-          "Jurnal yang terklasifikasi pada akun CoA"
-        ],
-        [
-          "Kelola dan perbarui CoA.",
-          "Finance Staff",
-          "CoA yang diperbarui"
-        ]
-      ]
-    },
-    {
-      "title": "Rekonsiliasi bank",
-      "steps": [
-        [
-          "Rekonsiliasi jurnal kas dan bank dengan bank statement.",
-          "Finance Staff",
-          "Rekonsiliasi bank"
-        ]
-      ]
-    },
-    {
-      "title": "Review dan jurnal penyesuaian",
-      "steps": [
-        [
-          "Review jurnal yang diinput Finance Staff.",
-          "Finance Lead",
-          "Hasil review jurnal"
-        ],
-        [
-          "Review rekonsiliasi bank terhadap bank statement.",
-          "Finance Lead",
-          "Hasil review rekonsiliasi bank"
-        ],
-        [
-          "Catat jurnal penyesuaian dan jurnal reklasifikasi (USULAN).",
-          "Finance Lead",
-          "Jurnal penyesuaian dan jurnal reklasifikasi"
-        ]
-      ]
-    },
-    {
-      "title": "Tutup buku bulanan dan penyusunan Laporan Keuangan",
-      "steps": [
-        [
-          "Lakukan tutup buku bulanan.",
-          "Finance Lead",
-          "Periode akuntansi bulan itu tertutup"
-        ],
-        [
-          "Susun Laporan Keuangan dari hasil tutup buku bulanan.",
-          "Finance Lead",
-          "Laporan Keuangan"
-        ]
-      ]
-    }
-  ],
-  "flow": {
-    "rankdir": "TB",
-    "nodes": {
-      "a": "Input jurnal (butir 6.1)\nFinance Staff",
-      "b": "Klasifikasi pada akun CoA,\nkelola CoA (butir 6.2)\nFinance Staff",
-      "c": "Rekonsiliasi bank (butir 6.3)\nFinance Staff",
-      "d": "Review jurnal dan\nrekonsiliasi bank (butir 6.4)\nFinance Lead",
-      "e": "Catat jurnal penyesuaian dan\njurnal reklasifikasi (butir 6.4, USULAN)\nFinance Lead",
-      "f": "Tutup buku bulanan (butir 6.5)\nFinance Lead",
-      "g": "Susun Laporan Keuangan (butir 6.5)\nFinance Lead"
-    },
-    "edges": [
-      [
-        "a",
-        "b"
-      ],
-      [
-        "b",
-        "c"
-      ],
-      [
-        "c",
-        "d"
-      ],
-      [
-        "d",
-        "e"
-      ],
-      [
-        "e",
-        "f"
-      ],
-      [
-        "f",
-        "g"
-      ]
-    ],
-    "caption": "Gambar 1. Alur proses akuntansi dari input jurnal sampai penyusunan Laporan Keuangan."
-  },
-  "sla": [
-    [
-      "Input jurnal (butir 6.1)",
-      "Finance Staff",
-      "1 hari, setiap awal minggu"
-    ],
-    [
-      "Kategorisasi dan pengelolaan CoA (butir 6.2)",
-      "Finance Staff",
-      "1 hari"
-    ],
-    [
-      "Rekonsiliasi bank (butir 6.3)",
-      "Finance Staff",
-      "3 hari, setiap awal minggu"
-    ],
-    [
-      "Review dan jurnal penyesuaian (butir 6.4)",
-      "Finance Lead",
-      "2 hari"
-    ],
-    [
-      "Tutup buku bulanan dan penyusunan Laporan Keuangan (butir 6.5)",
-      "Finance Lead",
-      "2 hari"
-    ]
-  ],
-  "exceptions": [
-    [
-      "Transaksi tercatat pada akun CoA yang salah dan ditemukan saat review (butir 6.4)",
-      "Finance Lead mencatat jurnal reklasifikasi (langkah 3 butir 6.4)."
-    ],
-    [
-      "Selisih pada jurnal atau rekonsiliasi bank belum bisa dijelaskan saat review (butir 6.4)",
-      "Finance Lead mengembalikan jurnal atau rekonsiliasi itu ke Finance Staff untuk ditelusuri sebelum tutup buku bulanan (USULAN)."
-    ]
-  ],
-  "conclusion": [
-    "Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan membandingkan rekaman di bagian 11 dengan batas waktu di bagian 8 (USULAN).",
-    "Finance Lead meninjau SOP ini setiap tahun."
-  ],
-  "related_documents": [
-    [
-      "SNX-FAT-SOP-01",
-      "SOP Billing & Invoicing; penerbitan invoice kepada customer, dikecualikan dari SOP ini (bagian 2)."
-    ],
-    [
-      "SNX-FAT-SOP-04",
-      "SOP Financial Document Control & Retention; pengarsipan dokumen keuangan, termasuk Laporan Keuangan (butir 4.7, USULAN)."
-    ],
-    [
-      "SNX-FAT-SOP-05",
-      "Tax Administration & Reporting; perhitungan, penyetoran, dan pelaporan pajak, dikecualikan dari SOP ini (bagian 2)."
-    ],
-    [
-      "SNX-FAT-FRM-02",
-      "Financial Information Access Authorization Records; daftar akses dan pemegang akses terhadap data dan informasi Finance, tempat pemegang akses data akuntansi dicatat (butir 4.8, USULAN)."
-    ],
-    [
-      "SNX-FAT-REG-01",
-      "Billing & Collection Monitoring Register; tracker semua piutang dari customer, rekaman pelacak piutang di luar scope SOP ini (bagian 2, USULAN)."
-    ],
-    [
-      "SNX-ISMS-PRO-01",
-      "Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan rekaman di bagian 11."
-    ],
-    [
-      "SNX-HR-ORG-01",
-      "Struktur Organisasi SINUX; jabatan dan matriks peran yang menjadi dasar nama peran di bagian 5."
-    ],
-    [
-      "Belum bernomor",
-      "SOP Account Receivable & Collection; dalam peninjauan; penagihan invoice kepada customer dan pendataan piutang, dikecualikan dari SOP ini (bagian 2, USULAN)."
-    ],
-    [
-      "Belum bernomor",
-      "SOP Payment and Disbursement Approval; dalam peninjauan; pengajuan pembayaran invoice, reimbursement, dan cash advance, dikecualikan dari SOP ini (bagian 2, USULAN)."
-    ]
-  ],
-  "records": [
-    [
-      "Jurnal transaksi dan CoA (butir 6.1 dan 6.2)",
-      "Sistem pencatatan keuangan SINUX; nama sistem menunggu penetapan Finance Lead (USULAN). Pemilik: Finance Staff.",
-      "Minimal 10 tahun (USULAN)"
-    ],
-    [
-      "Rekonsiliasi bank dan bank statement (butir 6.3)",
-      "Folder Google Drive Departemen FAT (USULAN). Pemilik: Finance Staff.",
-      "Minimal 10 tahun (USULAN)"
-    ],
-    [
-      "Hasil review, jurnal penyesuaian, dan jurnal reklasifikasi (butir 6.4)",
-      "Sistem pencatatan keuangan SINUX (USULAN). Pemilik: Finance Lead.",
-      "Minimal 10 tahun (USULAN)"
-    ],
-    [
-      "Laporan Keuangan (butir 6.5)",
-      "Folder arsip FAT menurut SNX-FAT-SOP-04 (USULAN). Pemilik: Finance Lead.",
-      "Minimal 10 tahun (USULAN)"
-    ],
-    [
-      "Fixed Asset Register",
-      "Lokasi dan pemilik menunggu penetapan Finance Lead (USULAN).",
-      "Menunggu penetapan Finance Lead (USULAN)"
-    ]
-  ],
-  "iso_refs": {
-    "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk butir 4.4 dan bagian 5; 7.5.3 (Pengendalian informasi terdokumentasi), untuk butir 4.7; 8.1 (Perencanaan dan pengendalian operasional), untuk butir 4.2 dan 4.3.",
-    "ISO/IEC 27001:2022": "Annex A 5.3 (Pemisahan tugas), untuk butir 4.4; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.9; Annex A 5.15 (Kontrol akses), untuk butir 4.8; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.7.",
-    "Status acuan klausul": "(USULAN, perlu konfirmasi konsultan)"
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
+ },
+ "purpose": [
+  "SOP ini mengatur proses akuntansi di SINUX dari pencatatan jurnal sampai penyusunan Laporan Keuangan.",
+  "Hasil yang dijaga: kesalahan input dan selisih pada Buku Besar dan Neraca berkurang, dan tutup buku selesai tepat waktu. Laporan Keuangan juga valid, akuntabel, serta siap diaudit untuk Manajemen, Pemegang Saham, Pihak Bank, Panitia Tender BUMN, dan DJP."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk siklus akuntansi SINUX, dari terjadinya transaksi sampai terbitnya Laporan Keuangan. Kegiatan yang tercakup:",
+  "Data master akuntansi: pengelolaan dan pembaruan CoA.",
+  "Pencatatan transaksi: jurnal penerimaan dan pengeluaran kas dan bank; pengakuan pendapatan dan piutang usaha; pembelian, biaya operasional, dan utang usaha.",
+  "Aset tetap dan aset tak berwujud: pencatatan di Fixed Asset Register, kapitalisasi, perhitungan penyusutan aset fisik seperti server dan kendaraan, serta amortisasi software dan lisensi.",
+  "Tutup buku bulanan dan tahunan: rekonsiliasi bank; jurnal penyesuaian (accrual, prepaid expense, deferred revenue); ekualisasi akun komersial dengan akun perpajakan (PPN, PPh 21, PPh 22, dan lainnya).",
+  "Laporan Keuangan: Laporan Posisi Keuangan (Neraca), Laporan Laba Rugi, Laporan Arus Kas, dan Laporan Perubahan Ekuitas.",
+  "Di luar scope SOP ini: penerbitan invoice kepada customer (SNX-FAT-SOP-01); penagihan invoice dan pendataan piutang (SOP Account Receivable & Collection), dengan tracker piutang di SNX-FAT-REG-01; persetujuan pengajuan pembayaran (SOP Payment and Disbursement Approval); perhitungan, penyetoran, dan pelaporan pajak (SNX-FAT-SOP-05); serta pengarsipan dokumen keuangan, yang diatur SNX-FAT-SOP-04 (USULAN)."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Accrual",
+   "Beban atau pendapatan yang sudah terjadi tetapi belum dibayar atau diterima."
+  ],
+  [
+   "Accrual basis",
+   "Dasar pencatatan yang mengakui pendapatan dan beban saat transaksinya terjadi, bukan saat kas diterima atau dibayar."
+  ],
+  [
+   "Bank statement",
+   "Laporan mutasi rekening dari bank."
+  ],
+  [
+   "BUMN",
+   "Badan Usaha Milik Negara."
+  ],
+  [
+   "Buku Besar",
+   "Kumpulan seluruh akun CoA beserta saldonya."
+  ],
+  [
+   "Chart of Accounts (CoA)",
+   "Daftar akun yang dipakai SINUX untuk mencatat transaksi keuangan."
+  ],
+  [
+   "Deferred revenue",
+   "Pendapatan yang sudah diterima untuk jasa yang belum diserahkan."
+  ],
+  [
+   "DJP",
+   "Direktorat Jenderal Pajak."
+  ],
+  [
+   "Ekualisasi",
+   "Pencocokan angka akun komersial dengan angka akun perpajakan."
+  ],
+  [
+   "Finance Lead",
+   "Peran pemeriksa dan penyetuju di FAT; selama jabatannya belum terisi, peran ini dijalankan Direktur (USULAN)."
+  ],
+  [
+   "Finance Staff",
+   "Peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."
+  ],
+  [
+   "Fixed Asset Register",
+   "Daftar aset tetap dan aset tak berwujud SINUX yang dikapitalisasi."
+  ],
+  [
+   "Hari",
+   "Satuan batas waktu di bagian 8, dihitung sebagai hari kerja (USULAN)."
+  ],
+  [
+   "Jurnal",
+   "Catatan satu transaksi keuangan pada akun CoA."
+  ],
+  [
+   "Jurnal penyesuaian",
+   "Jurnal akhir periode yang menyesuaikan saldo akun agar beban dan pendapatan tercatat pada periode yang tepat."
+  ],
+  [
+   "Jurnal reklasifikasi",
+   "Jurnal yang memindahkan nilai transaksi yang sudah tercatat ke akun CoA lain."
+  ],
+  [
+   "Laporan Keuangan",
+   "Laporan Posisi Keuangan (Neraca), Laporan Laba Rugi, Laporan Arus Kas, dan Laporan Perubahan Ekuitas."
+  ],
+  [
+   "Piutang usaha",
+   "Hak tagih SINUX kepada customer atas penjualan jasa secara kredit."
+  ],
+  [
+   "PPh",
+   "Pajak Penghasilan."
+  ],
+  [
+   "PPN",
+   "Pajak Pertambahan Nilai."
+  ],
+  [
+   "Prepaid expense",
+   "Biaya yang sudah dibayar untuk periode berikutnya."
+  ],
+  [
+   "Rekonsiliasi bank",
+   "Pencocokan jurnal kas dan bank dengan bank statement."
+  ],
+  [
+   "SAK",
+   "Standar Akuntansi Keuangan."
+  ],
+  [
+   "Tutup buku",
+   "Penutupan pencatatan akuntansi satu periode: bulanan (month-end closing) atau tahunan (year-end closing)."
+  ],
+  [
+   "Utang usaha",
+   "Kewajiban bayar SINUX kepada vendor atas pembelian secara kredit."
+  ]
+ ],
+ "policy": [
+  "4.1 Dasar pencatatan: Finance Staff dan Finance Lead mencatat transaksi dengan accrual basis dan menyajikan Laporan Keuangan sesuai SAK yang berlaku.",
+  "4.2 Pencatatan pada CoA (ISO 9001:2015 8.1): Finance Staff mencatat setiap transaksi keuangan pada akun CoA yang sesuai, dengan nominal aktual, agar Buku Besar dan Neraca tidak berselisih (butir 6.1 dan 6.2).",
+  "4.3 Jadwal (ISO 9001:2015 8.1): Finance Staff menginput jurnal dan merekonsiliasi bank setiap minggu. Finance Lead melakukan tutup buku setiap bulan. Setiap tahap diselesaikan dalam batas waktu sesuai bagian 8.",
+  "4.4 Pemisahan tugas dan review (ISO 9001:2015 5.3 dan Annex A 5.3): Finance Lead meninjau jurnal dan rekonsiliasi bank yang dikerjakan Finance Staff sebelum tutup buku bulanan (butir 6.4).",
+  "4.5 Jurnal penyesuaian: Finance Lead mencatat jurnal penyesuaian di akhir periode atas beban gaji yang masih harus dibayar, penyusutan aset tetap (server dan hardware), amortisasi software, serta utang dan piutang pajak (butir 6.4, USULAN).",
+  "4.6 Cakupan tanpa langkah rinci: bagian 6 belum memuat langkah untuk tutup buku tahunan, ekualisasi akun komersial dengan akun perpajakan, dan pencatatan aset tetap beserta penyusutannya. Finance Lead menetapkan langkah, pelaku, dan batas waktunya sebelum SOP ini disahkan (USULAN).",
+  "4.7 Record (ISO 9001:2015 7.5.3 dan Annex A 5.33): Finance Lead mengarsipkan Laporan Keuangan sesuai SNX-FAT-SOP-04 (USULAN). Lokasi, pemilik, dan retensi tiap record mengikuti tabel bagian 11.",
+  "4.8 Akses (Annex A 5.15): Finance Lead mencatat pemegang akses ke data akuntansi di SNX-FAT-FRM-02 (USULAN).",
+  "4.9 Klasifikasi (Annex A 5.12): record di bagian 11 berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01 (USULAN)."
+ ],
+ "roles": [
+  [
+   "Finance Lead",
+   "Pemilik SOP. Meninjau jurnal dan rekonsiliasi bank, mencatat jurnal penyesuaian dan jurnal reklasifikasi (USULAN), melakukan tutup buku bulanan, dan menyusun Laporan Keuangan (butir 6.4 dan 6.5).",
+   "Meninjau pekerjaan Finance Staff (butir 4.4); batas wewenang keuangan lain mengikuti delegasi tertulis yang berlaku (SNX-HR-ORG-01)."
+  ],
+  [
+   "Finance Staff",
+   "Menginput jurnal, mengklasifikasi transaksi pada CoA, mengelola CoA, dan merekonsiliasi bank (butir 6.1 sampai 6.3).",
+   "Mencatat jurnal dan rekonsiliasi bank; tutup buku bulanan dan penyusunan Laporan Keuangan menjadi wewenang Finance Lead (butir 6.5)."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Input jurnal",
+   "steps": [
+    [
+     "Catat jurnal atas transaksi kas dan bank, pendapatan dan piutang usaha, serta pembelian, biaya operasional, dan utang usaha.",
+     "Finance Staff",
+     "Jurnal transaksi"
+    ]
+   ]
+  },
+  {
+   "title": "Kategorisasi dan pengelolaan CoA",
+   "steps": [
+    [
+     "Klasifikasikan tiap transaksi pada akun CoA yang sesuai.",
+     "Finance Staff",
+     "Jurnal yang terklasifikasi pada akun CoA"
+    ],
+    [
+     "Kelola dan perbarui CoA.",
+     "Finance Staff",
+     "CoA yang diperbarui"
+    ]
+   ]
+  },
+  {
+   "title": "Rekonsiliasi bank",
+   "steps": [
+    [
+     "Rekonsiliasikan jurnal kas dan bank dengan bank statement.",
+     "Finance Staff",
+     "Rekonsiliasi bank"
+    ]
+   ]
+  },
+  {
+   "title": "Review dan jurnal penyesuaian",
+   "steps": [
+    [
+     "Tinjau jurnal yang diinput Finance Staff.",
+     "Finance Lead",
+     "Hasil review jurnal"
+    ],
+    [
+     "Tinjau rekonsiliasi bank terhadap bank statement.",
+     "Finance Lead",
+     "Hasil review rekonsiliasi bank"
+    ],
+    [
+     "Catat jurnal penyesuaian dan jurnal reklasifikasi (USULAN).",
+     "Finance Lead",
+     "Jurnal penyesuaian dan jurnal reklasifikasi"
+    ]
+   ]
+  },
+  {
+   "title": "Tutup buku bulanan dan penyusunan Laporan Keuangan",
+   "steps": [
+    [
+     "Lakukan tutup buku bulanan.",
+     "Finance Lead",
+     "Periode akuntansi bulan itu tertutup"
+    ],
+    [
+     "Susun Laporan Keuangan dari hasil tutup buku bulanan.",
+     "Finance Lead",
+     "Laporan Keuangan"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Input jurnal (butir 6.1)\nFinance Staff",
+   "b": "Klasifikasi pada akun CoA,\nkelola CoA (butir 6.2)\nFinance Staff",
+   "c": "Rekonsiliasi bank (butir 6.3)\nFinance Staff",
+   "d": "Review jurnal dan\nrekonsiliasi bank (butir 6.4)\nFinance Lead",
+   "e": "Catat jurnal penyesuaian dan\njurnal reklasifikasi (butir 6.4, USULAN)\nFinance Lead",
+   "f": "Tutup buku bulanan (butir 6.5)\nFinance Lead",
+   "g": "Susun Laporan Keuangan (butir 6.5)\nFinance Lead"
+  },
+  "edges": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "e",
+    "f"
+   ],
+   [
+    "f",
+    "g"
+   ]
+  ],
+  "caption": "Gambar 1. Alur proses akuntansi dari input jurnal sampai penyusunan Laporan Keuangan."
+ },
+ "sla": [
+  [
+   "Input jurnal (butir 6.1)",
+   "Finance Staff",
+   "1 hari, setiap awal minggu"
+  ],
+  [
+   "Kategorisasi dan pengelolaan CoA (butir 6.2)",
+   "Finance Staff",
+   "1 hari"
+  ],
+  [
+   "Rekonsiliasi bank (butir 6.3)",
+   "Finance Staff",
+   "3 hari, setiap awal minggu"
+  ],
+  [
+   "Review dan jurnal penyesuaian (butir 6.4)",
+   "Finance Lead",
+   "2 hari"
+  ],
+  [
+   "Tutup buku bulanan dan penyusunan Laporan Keuangan (butir 6.5)",
+   "Finance Lead",
+   "2 hari"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Transaksi tercatat pada akun CoA yang salah dan ditemukan saat review (butir 6.4)",
+   "Finance Lead mencatat jurnal reklasifikasi (langkah 3 butir 6.4)."
+  ],
+  [
+   "Selisih pada jurnal atau rekonsiliasi bank belum bisa dijelaskan saat review (butir 6.4)",
+   "Finance Lead mengembalikan jurnal atau rekonsiliasi itu ke Finance Staff untuk ditelusuri sebelum tutup buku bulanan (USULAN)."
+  ]
+ ],
+ "conclusion": [
+  "Finance Lead sebagai pemilik SOP memeriksa kepatuhan dengan membandingkan record di bagian 11 terhadap batas waktu di bagian 8 (USULAN).",
+  "Finance Lead meninjau SOP ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "SNX-FAT-SOP-01",
+   "SOP Billing & Invoicing; penerbitan invoice kepada customer, dikecualikan dari SOP ini (bagian 2)."
+  ],
+  [
+   "SNX-FAT-SOP-04",
+   "SOP Financial Document Control & Retention; pengarsipan dokumen keuangan, termasuk Laporan Keuangan (butir 4.7, USULAN)."
+  ],
+  [
+   "SNX-FAT-SOP-05",
+   "Tax Administration & Reporting; perhitungan, penyetoran, dan pelaporan pajak, dikecualikan dari SOP ini (bagian 2)."
+  ],
+  [
+   "SNX-FAT-FRM-02",
+   "Financial Information Access Authorization Records; daftar akses dan pemegang akses terhadap data dan informasi Finance, tempat pemegang akses data akuntansi dicatat (butir 4.8, USULAN)."
+  ],
+  [
+   "SNX-FAT-REG-01",
+   "Billing & Collection Monitoring Register; tracker semua piutang dari customer, record pelacak piutang di luar scope SOP ini (bagian 2, USULAN)."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling Procedure; tingkat klasifikasi untuk dokumen ini dan record di bagian 11."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; jabatan dan matriks peran yang menjadi dasar nama peran di bagian 5."
+  ],
+  [
+   "Belum bernomor",
+   "SOP Account Receivable & Collection; dalam review; penagihan invoice kepada customer dan pendataan piutang, dikecualikan dari SOP ini (bagian 2, USULAN)."
+  ],
+  [
+   "Belum bernomor",
+   "SOP Payment and Disbursement Approval; dalam review; pengajuan pembayaran invoice, reimbursement, dan cash advance, dikecualikan dari SOP ini (bagian 2, USULAN)."
+  ]
+ ],
+ "records": [
+  [
+   "Jurnal transaksi dan CoA (butir 6.1 dan 6.2)",
+   "Sistem pencatatan keuangan SINUX; nama sistem menunggu penetapan Finance Lead (USULAN). Pemilik: Finance Staff.",
+   "Minimal 10 tahun (USULAN)"
+  ],
+  [
+   "Rekonsiliasi bank dan bank statement (butir 6.3)",
+   "Folder Google Drive Departemen FAT (USULAN). Pemilik: Finance Staff.",
+   "Minimal 10 tahun (USULAN)"
+  ],
+  [
+   "Hasil review, jurnal penyesuaian, dan jurnal reklasifikasi (butir 6.4)",
+   "Sistem pencatatan keuangan SINUX (USULAN). Pemilik: Finance Lead.",
+   "Minimal 10 tahun (USULAN)"
+  ],
+  [
+   "Laporan Keuangan (butir 6.5)",
+   "Folder arsip FAT sesuai SNX-FAT-SOP-04 (USULAN). Pemilik: Finance Lead.",
+   "Minimal 10 tahun (USULAN)"
+  ],
+  [
+   "Fixed Asset Register",
+   "Lokasi dan pemilik menunggu penetapan Finance Lead (USULAN).",
+   "Menunggu penetapan Finance Lead (USULAN)"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), untuk butir 4.4 dan bagian 5; 7.5.3 (Pengendalian informasi terdokumentasi), untuk butir 4.7; 8.1 (Perencanaan dan pengendalian operasional), untuk butir 4.2 dan 4.3.",
+  "ISO/IEC 27001:2022": "Annex A 5.3 (Pemisahan tugas), untuk butir 4.4; Annex A 5.12 (Klasifikasi informasi), untuk butir 4.9; Annex A 5.15 (Kontrol akses), untuk butir 4.8; Annex A 5.33 (Perlindungan rekaman), untuk butir 4.7.",
+  "Status acuan klausul": "(USULAN, perlu konfirmasi konsultan)"
+ }
 }

@@ -228,3 +228,23 @@ Rujukan silang yang diubah: SNX-FAT-SOP-05 butir 6.5 menjadi SNX-FAT-SOP-05 bagi
 Open item: OI-4 diubah W9 (pemetaan Finance Lead dan Finance Staff mengikuti G-3 A6, berlabel USULAN); OI-5 diubah W9 (status "dalam peninjauan" seragam, G-3 B4). Tidak ada yang ditutup penuh.
 
 Uji: render_sop.py rc 0; lint_doc.py sop "pass": true (warn 39 butir USULAN); validate.py "All validations PASSED!"; blankscan ok 15; w9diff.py: 6 baris lama, 8 baris baru, hanya perubahan di atas.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label di Scope butir pengecualian dipindah ke akhir butir (asli: "Dikecualikan dari SOP ini (USULAN): pembuatan dan penerbitan dokumen keuangan, ..."). Label pada caption Gambar 1 ("Cabang dokumen tidak lengkap adalah USULAN") dipindah ke node "Minta dokumen yang kurang" di diagram: "Finance Staff (USULAN)". Jumlah label tetap 40.
+
+### W10 kalimat dihapus atau dipindah
+- Caption Gambar 1: "Finance Lead menjalankan butir 6.1 sampai 6.3 untuk dokumen perpajakan. Cabang dokumen tidak lengkap adalah USULAN; garis putus-putus kembali ke alur utama." dipindah ke node diagram: node butir 6.1, 6.2, dan 6.3 kini memuat "(dokumen perpajakan: Finance Lead)", node cabang tidak lengkap memuat "(USULAN)", dan garis putus-putus tetap tergambar kembali ke node awal. Alasan: caption tiga baris membuat halaman 12 kosong (gerbang halaman kosong); caption satu baris menghilangkannya, jumlah halaman kembali 15 seperti bed1bb6.
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "klien" (satu-satunya sebutan di dokumen ini).
+- "hardcopy" dan "softcopy" dipertahankan (bukan "hard copy"/"soft copy" seperti SNX-FAT-SOP-01) karena judul prosedur beku "Pengarsipan softcopy" dan "Pengarsipan hardcopy" memakai bentuk itu; satu dokumen satu bentuk.
+- Definisi (USULAN) dan Finance Lead diselaraskan dengan kalimat SNX-FAT-SOP-01 ("belum diputuskan", "selama jabatannya belum terisi").
+- Kalimat G-3 A6 di tabel Peran ("Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).") dan rujukan butir di baris Finance Lead dibiarkan, karena merujuk butir berlabel USULAN.
+- Bagian 9 pengecualian: kalimat persetujuan dijadikan pasif agar pelaku di awal sel tetap satu (Finance Staff).
+
+### W10 audit pointer
+- .flow.caption: lengkap; pelaku Finance Lead untuk dokumen perpajakan pada butir 6.1, 6.2, dan 6.3 ditulis di tiga node yang memuat rujukan butir itu, label USULAN cabang tidak lengkap ada di node cabang, garis putus-putus tetap kembali ke node awal.

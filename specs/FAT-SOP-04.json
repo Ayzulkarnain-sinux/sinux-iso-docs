@@ -15,28 +15,39 @@
    "prepared": "Finance Staff",
    "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
  },
  "purpose": [
-  "SOP ini mengatur cara FAT mengarsipkan dokumen keuangan, baik hardcopy maupun softcopy, sampai dokumen itu dimusnahkan sesudah masa retensi berakhir.",
+  "SOP ini mengatur cara FAT mengarsipkan dokumen keuangan, baik hardcopy maupun softcopy, sampai dokumen itu dimusnahkan setelah masa retensi berakhir.",
   "Hasil yang dijaga: dokumen keuangan tersimpan lengkap, terlindungi sesuai klasifikasinya, dan dapat ditemukan kembali selama masa retensi."
  ],
  "scope": [
   "SOP ini berlaku untuk pengarsipan dokumen keuangan FAT dalam bentuk hardcopy dan softcopy, dari saat dokumen diterima atau dibuat sampai dimusnahkan. Dokumen yang tercakup:",
   "Dokumen penagihan: invoice, e-Faktur Pajak, PKS, PO, dan BAST (SNX-FAT-SOP-01), serta bukti potong dari klien (USULAN).",
-  "Dokumen perpajakan: bukti potong yang FAT buat dan bukti lapor (SNX-FAT-SOP-05).",
-  "Dokumen keuangan lain yang FAT kelola menurut SNX-HR-JA-01: payment request, bukti pembayaran, laporan kas, dan laporan keuangan (USULAN).",
-  "Sistem dan tempat yang tercakup: Google Drive untuk softcopy, Tempat simpan hardcopy, dan Financial Document Register.",
-  "Dikecualikan dari SOP ini (USULAN): pembuatan dan penerbitan dokumen keuangan, yang diatur SNX-FAT-SOP-01 dan SNX-FAT-SOP-05; dokumen di luar keuangan, misalnya dokumen legal (SNX-LEG-SOP-03); dan backup Google Drive (SNX-ISMS-SOP-03)."
+  "Dokumen perpajakan: bukti potong yang dibuat FAT dan bukti lapor (SNX-FAT-SOP-05).",
+  "Dokumen keuangan lain yang dikelola FAT sesuai SNX-HR-JA-01: payment request, bukti pembayaran, laporan kas, dan laporan keuangan (USULAN).",
+  "Sistem dan tempat yang tercakup: Google Drive untuk softcopy, Tempat simpan hardcopy, serta Financial Document Register.",
+  "Di luar scope SOP ini: pembuatan dan penerbitan dokumen keuangan, yang diatur SNX-FAT-SOP-01 dan SNX-FAT-SOP-05; dokumen di luar keuangan, misalnya dokumen legal yang diatur SNX-LEG-SOP-03; serta backup Google Drive yang diatur SNX-ISMS-SOP-03 (USULAN)."
  ],
  "definitions": [
   [
    "(USULAN)",
-   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+   "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
   ],
   [
    "Berita Acara Pemusnahan Dokumen",
-   "Rekaman yang mencatat dokumen keuangan yang dimusnahkan beserta persetujuan atas pemusnahannya."
+   "Record yang mencatat dokumen keuangan yang dimusnahkan beserta persetujuan atas pemusnahannya."
   ],
   [
    "BAST",
@@ -44,19 +55,19 @@
   ],
   [
    "Bukti lapor",
-   "Dokumen pelaporan pajak yang diatur di SNX-FAT-SOP-05."
+   "Dokumen pelaporan pajak sesuai SNX-FAT-SOP-05."
   ],
   [
    "Bukti potong",
-   "Bukti pemotongan pajak penghasilan. FAT menerimanya dari klien atau membuatnya sendiri."
+   "Bukti pemotongan pajak penghasilan, yang diterima FAT dari klien atau dibuat FAT sendiri."
   ],
   [
    "Dokumen keuangan",
-   "Dokumen yang FAT buat atau terima, dengan jenis yang tercantum di bagian 2."
+   "Dokumen yang dibuat atau diterima FAT, dengan jenis sesuai bagian 2."
   ],
   [
    "Event keamanan",
-   "Kejadian keamanan informasi yang dilaporkan menurut SNX-ISMS-SOP-01."
+   "Kejadian keamanan informasi yang dilaporkan sesuai SNX-ISMS-SOP-01."
   ],
   [
    "FAT",
@@ -64,7 +75,7 @@
   ],
   [
    "Finance Lead",
-   "Peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."
+   "Peran pemeriksa dan penyetuju di FAT; selama jabatannya belum terisi, peran ini dijalankan Direktur (USULAN)."
   ],
   [
    "Finance Staff",
@@ -72,7 +83,7 @@
   ],
   [
    "Financial Document Register",
-   "Daftar hardcopy dokumen keuangan yang diarsipkan FAT. Dalam peninjauan."
+   "Daftar hardcopy dokumen keuangan yang diarsipkan FAT, saat ini masih dalam review."
   ],
   [
    "Folder arsip FAT",
@@ -92,7 +103,7 @@
   ],
   [
    "ISMS Coordinator",
-   "Peran yang mengoordinasi sistem manajemen keamanan informasi (ISMS) di SINUX, menurut SNX-HR-ORG-01."
+   "Peran yang mengoordinasi sistem manajemen keamanan informasi (ISMS) di SINUX, sesuai SNX-HR-ORG-01."
   ],
   [
    "Masa retensi",
@@ -104,7 +115,7 @@
   ],
   [
    "Pemilik informasi",
-   "Peran pemilik aset menurut SNX-ISMS-REG-01 yang menetapkan klasifikasi dan menyetujui akses serta pembagian informasinya."
+   "Pemilik aset sesuai SNX-ISMS-REG-01, yang menetapkan klasifikasi informasi serta menyetujui akses dan pembagiannya."
   ],
   [
    "PKS",
@@ -116,7 +127,7 @@
   ],
   [
    "RESTRICTED (Internal)",
-   "Tingkat klasifikasi SNX-ISMS-PRO-01 untuk informasi yang hanya untuk peran yang membutuhkan; domain finance termasuk di dalamnya."
+   "Tingkat klasifikasi SNX-ISMS-PRO-01 untuk informasi yang hanya boleh diakses peran yang membutuhkannya, termasuk domain finance."
   ],
   [
    "Softcopy",
@@ -124,20 +135,20 @@
   ],
   [
    "Tempat simpan hardcopy",
-   "Tempat fisik FAT menyimpan hardcopy. Lokasinya belum ditetapkan."
+   "Tempat fisik penyimpanan hardcopy FAT, yang lokasinya belum ditetapkan."
   ]
  ],
  "policy": [
-  "4.1 Bentuk pengarsipan (ISO 9001:2015 7.5.3). Finance Staff mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy di Folder arsip FAT, dan Finance Lead mengarsipkan dokumen perpajakan dengan cara yang sama. Finance Staff dan Finance Lead juga mengarsipkan dokumen yang FAT terima atau cetak dalam bentuk kertas sebagai hardcopy di Tempat simpan hardcopy (USULAN).",
-  "4.2 Klasifikasi (Annex A 5.12). Dokumen keuangan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang cakupannya baru Divisi Operation (USULAN).",
-  "4.3 Pelabelan (Annex A 5.13). Finance Staff dan Finance Lead menulis RESTRICTED (Internal) pada sampul atau halaman pertama hardcopy yang mereka arsipkan, dan pada nama atau deskripsi folder untuk softcopy.",
-  "4.4 Penyimpanan softcopy (ISO 9001:2015 7.5.3). Finance Staff dan Finance Lead menyimpan softcopy sebagai PDF di Folder arsip FAT. Untuk dokumen penagihan, struktur foldernya Tahun / Nama Klien / Nomor Invoice. Finance Lead menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain (USULAN).",
-  "4.5 Akses (Annex A 5.15). Folder arsip FAT hanya dapat diakses personel FAT dan Direktur Utama. Finance Lead menyetujui penambahan akses (USULAN). Tempat simpan hardcopy hanya dapat dibuka personel FAT (USULAN).",
-  "4.6 Pencetakan (Annex A 7.10). Finance Staff dan Finance Lead mencetak dokumen keuangan seperlunya, mengambil hasil cetak langsung dari printer, dan tidak meninggalkannya, menurut SNX-ISMS-PRO-01.",
-  "4.7 Pencatatan hardcopy (ISO 9001:2015 7.5.3). Finance Staff dan Finance Lead mencatat setiap hardcopy yang mereka arsipkan di Financial Document Register (USULAN).",
-  "4.8 Retensi (ISO 9001:2015 7.5.3 dan Annex A 5.33). Finance Lead memastikan dokumen penagihan dan dokumen perpajakan, hardcopy dan softcopy, disimpan minimal 10 tahun. Masa yang sama berlaku untuk dokumen keuangan lain (USULAN). Masa retensi dihitung sejak tanggal dokumen (USULAN).",
-  "4.9 Pemusnahan (Annex A 8.10). Finance Lead dan Direktur Utama menyetujui pemusnahan dokumen yang masa retensinya berakhir. Finance Staff lalu menghancurkan hardcopy, menghapus aman softcopy, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen.",
-  "4.10 Kepemilikan rekaman. Finance Lead menjadi pemilik rekaman di bagian 11 dan Pemilik informasi untuk dokumen keuangan menurut SNX-ISMS-PRO-01 (USULAN)."
+  "4.1 Bentuk pengarsipan (ISO 9001:2015 7.5.3). Finance Staff mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy di Folder arsip FAT. Finance Lead mengarsipkan dokumen perpajakan dengan cara yang sama. Dokumen kertas yang diterima atau dicetak FAT juga diarsipkan Finance Staff dan Finance Lead sebagai hardcopy di Tempat simpan hardcopy (USULAN).",
+  "4.2 Klasifikasi (Annex A 5.12). Dokumen keuangan berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01, yang cakupannya saat ini baru Divisi Operation (USULAN).",
+  "4.3 Pelabelan (Annex A 5.13). Finance Staff dan Finance Lead menulis label RESTRICTED (Internal) pada sampul atau halaman pertama hardcopy yang diarsipkan, serta pada nama atau deskripsi folder softcopy.",
+  "4.4 Penyimpanan softcopy (ISO 9001:2015 7.5.3). Finance Staff dan Finance Lead menyimpan softcopy sebagai PDF di Folder arsip FAT. Struktur folder dokumen penagihan adalah Tahun / Nama Klien / Nomor Invoice. Finance Lead menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain (USULAN).",
+  "4.5 Akses (Annex A 5.15). Folder arsip FAT hanya dapat diakses personel FAT dan Direktur Utama. Penambahan akses disetujui Finance Lead (USULAN). Tempat simpan hardcopy hanya dapat dibuka personel FAT (USULAN).",
+  "4.6 Pencetakan (Annex A 7.10). Finance Staff dan Finance Lead mencetak dokumen keuangan seperlunya dan langsung mengambil hasil cetaknya dari printer tanpa meninggalkannya, sesuai SNX-ISMS-PRO-01.",
+  "4.7 Pencatatan hardcopy (ISO 9001:2015 7.5.3). Finance Staff dan Finance Lead mencatat setiap hardcopy yang diarsipkan di Financial Document Register (USULAN).",
+  "4.8 Retensi (ISO 9001:2015 7.5.3 dan Annex A 5.33). Finance Lead memastikan dokumen penagihan dan dokumen perpajakan, baik hardcopy maupun softcopy, disimpan minimal 10 tahun. Masa yang sama berlaku untuk dokumen keuangan lain (USULAN). Masa retensi dihitung sejak tanggal dokumen (USULAN).",
+  "4.9 Pemusnahan (Annex A 8.10). Finance Lead dan Direktur Utama menyetujui pemusnahan dokumen yang masa retensinya berakhir. Setelah itu, Finance Staff menghancurkan hardcopy, menghapus softcopy dengan hapus aman, lalu mencatat pemusnahan di Berita Acara Pemusnahan Dokumen.",
+  "4.10 Kepemilikan record. Finance Lead menjadi pemilik record di bagian 11 dan Pemilik informasi untuk dokumen keuangan sesuai SNX-ISMS-PRO-01 (USULAN)."
  ],
  "roles": [
   [
@@ -147,7 +158,7 @@
   ],
   [
    "Finance Staff",
-   "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, menurut butir 6.1 sampai 6.4 (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
+   "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, sesuai butir 6.1 sampai 6.4 (USULAN). Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13).",
    "Mengarsipkan, mencatat, dan memusnahkan dokumen; tidak memusnahkan dokumen tanpa persetujuan Finance Lead dan Direktur Utama."
   ],
   [
@@ -194,17 +205,17 @@
      "Softcopy dokumen penagihan di Folder arsip FAT"
     ],
     [
-     "Simpan PDF dokumen keuangan lain di subfolder yang Finance Lead tetapkan (butir 4.4).",
+     "Simpan PDF dokumen keuangan lain di subfolder yang ditetapkan Finance Lead (butir 4.4).",
      "Finance Staff",
      "Softcopy dokumen keuangan lain di Folder arsip FAT"
     ],
     [
-     "Simpan PDF dokumen perpajakan di subfolder yang Finance Lead tetapkan (butir 4.4).",
+     "Simpan PDF dokumen perpajakan di subfolder yang ditetapkan Finance Lead (butir 4.4).",
      "Finance Lead",
      "Softcopy dokumen perpajakan di Folder arsip FAT"
     ],
     [
-     "Periksa bahwa nama atau deskripsi folder memuat label RESTRICTED (Internal) (butir 4.3).",
+     "Pastikan nama atau deskripsi folder memuat label RESTRICTED (Internal) (butir 4.3).",
      "Finance Staff",
      "Folder berlabel"
     ]
@@ -213,7 +224,7 @@
   {
    "title": "Pengarsipan hardcopy",
    "intro": [
-    "Tahap ini berlaku untuk dokumen kertas yang FAT terima atau cetak."
+    "Tahap ini berlaku untuk dokumen kertas yang diterima atau dicetak FAT."
    ],
    "steps": [
     [
@@ -292,12 +303,12 @@
  "flow": {
   "rankdir": "TB",
   "nodes": {
-   "a": "Terima atau buat dokumen keuangan,\nperiksa kelengkapan (butir 6.1)\nFinance Staff",
+   "a": "Terima atau buat dokumen keuangan,\nperiksa kelengkapan (butir 6.1)\nFinance Staff\n(dokumen perpajakan: Finance Lead)",
    "b": "Dokumen\nlengkap?",
-   "x": "Minta dokumen yang kurang,\ntunda pengarsipan (bagian 9)\nFinance Staff",
-   "c": "Simpan PDF di Folder arsip FAT,\npindai dokumen kertas (butir 6.2)\nFinance Staff",
+   "x": "Minta dokumen yang kurang,\ntunda pengarsipan (bagian 9)\nFinance Staff (USULAN)",
+   "c": "Simpan PDF di Folder arsip FAT,\npindai dokumen kertas (butir 6.2)\nFinance Staff\n(dokumen perpajakan: Finance Lead)",
    "d": "Dokumen\nberbentuk kertas?",
-   "e": "Beri label, simpan hardcopy, catat di\nFinancial Document Register (butir 6.3)\nFinance Staff",
+   "e": "Beri label, simpan hardcopy, catat di\nFinancial Document Register (butir 6.3)\nFinance Staff\n(dokumen perpajakan: Finance Lead)",
    "f": "Simpan sampai masa retensi berakhir,\nperiksa setiap tahun (butir 6.4)\nFinance Staff",
    "g": "Setujui daftar pemusnahan (butir 6.4)\nFinance Lead dan Direktur Utama",
    "h": "Musnahkan dokumen, catat di Berita Acara\nPemusnahan Dokumen (butir 6.4)\nFinance Staff"
@@ -354,7 +365,7 @@
     "h"
    ]
   ],
-  "caption": "Gambar 1. Alur pengarsipan dokumen keuangan. Finance Lead menjalankan butir 6.1 sampai 6.3 untuk dokumen perpajakan. Cabang dokumen tidak lengkap adalah USULAN; garis putus-putus kembali ke alur utama."
+  "caption": "Gambar 1. Alur pengarsipan dokumen keuangan."
  },
  "sla": [
   [
@@ -384,20 +395,20 @@
   ],
   [
    "Pihak luar SINUX, misalnya auditor eksternal, meminta dokumen keuangan dari Folder arsip FAT atau Tempat simpan hardcopy",
-   "Finance Lead menyetujui pembagian dokumen hanya bila NDA atau kontrak yang berlaku sudah ada (SNX-ISMS-PRO-01)."
+   "Finance Lead menyetujui pembagian dokumen hanya jika NDA atau kontrak yang berlaku sudah ada (SNX-ISMS-PRO-01)."
   ],
   [
    "Kebutuhan menyimpang dari aturan SOP ini",
-   "Finance Staff mengajukan pengecualian secara tertulis (USULAN). Finance Lead dan ISMS Coordinator menyetujuinya dengan batas waktu. Pengecualian yang tidak tertulis, tidak berbatas waktu, atau belum disetujui keduanya tidak sah (SNX-ISMS-PRO-01)."
+   "Finance Staff mengajukan pengecualian secara tertulis (USULAN). Pengecualian itu disetujui Finance Lead dan ISMS Coordinator dengan batas waktu. Pengecualian yang tidak tertulis, tidak berbatas waktu, atau belum disetujui keduanya tidak sah (SNX-ISMS-PRO-01)."
   ],
   [
    "Invoice yang sudah diarsipkan diubah atau dibatalkan",
-   "Finance Staff mencatat alasan perubahan dan bukti persetujuannya di Folder arsip FAT, seperti diatur SNX-FAT-SOP-01."
+   "Finance Staff mencatat alasan perubahan dan bukti persetujuannya di Folder arsip FAT sesuai SNX-FAT-SOP-01."
   ]
  ],
  "conclusion": [
-  "Finance Lead selaku pemilik SOP memeriksa kepatuhan terhadap SOP ini dengan mencocokkan hardcopy di Tempat simpan hardcopy dengan Financial Document Register, dan memeriksa Folder arsip FAT terhadap struktur folder di butir 4.4 (USULAN).",
-  "Finance Lead juga meninjau SOP ini setiap tahun."
+  "Finance Lead sebagai pemilik SOP memeriksa kepatuhan dengan mencocokkan hardcopy di Tempat simpan hardcopy dengan Financial Document Register, serta memeriksa Folder arsip FAT terhadap struktur folder di butir 4.4 (USULAN).",
+  "Finance Lead meninjau SOP ini setiap tahun."
  ],
  "related_documents": [
   [
@@ -437,7 +448,7 @@
    "SOP Legal Document Control & Retention; pengarsipan dokumen legal, di luar scope SOP ini."
   ],
   [
-   "Dalam peninjauan",
+   "Dalam review",
    "Financial Document Register; daftar hardcopy dokumen keuangan yang diarsipkan FAT (USULAN)."
   ]
  ],
@@ -448,7 +459,7 @@
    "Minimal 10 tahun"
   ],
   [
-   "Softcopy dokumen perpajakan (bukti potong yang FAT buat, bukti lapor)",
+   "Softcopy dokumen perpajakan (bukti potong yang dibuat FAT, bukti lapor)",
    "Folder arsip FAT; struktur folder ditetapkan Finance Lead (USULAN); pemilik Finance Lead (USULAN)",
    "Minimal 10 tahun"
   ],
