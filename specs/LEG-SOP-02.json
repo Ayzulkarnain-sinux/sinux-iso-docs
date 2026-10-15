@@ -26,7 +26,7 @@
   "Proses yang tercakup: penerimaan dan pencatatan permintaan; pemeriksaan kelengkapan; pemeriksaan awal pihak lawan; penyusunan dan review kontrak; identifikasi dan klasifikasi risiko; review dan Persetujuan Legal; negosiasi dan pengendalian perubahan dokumen; persetujuan bisnis dan persetujuan menurut DoA; pemeriksaan akhir dan penandatanganan; pencatatan dan pengarsipan kontrak yang sudah ditandatangani; pemantauan kontrak berjalan.",
   "Kontrak yang tercakup: kontrak dengan pelanggan, vendor atau pemasok, mitra kerja sama, subkontraktor, dan pihak lain sesuai kegiatan usaha SINUX. Jenis dokumennya NDA, IaaS Contract, Technology Services Contract, Hardware Sale and Purchase Agreement, PKS, Subcontract, addendum, dan dokumen kontraktual lain yang relevan.",
   "Sistem yang dipakai: GLPI (SINUX Service Hub) untuk tiket permintaan (USULAN), register permintaan Legal, register kontrak, dan repositori resmi SINUX. Lokasi register dan repositori belum ditetapkan.",
-  "Di luar scope SOP ini: keputusan bisnis, komersial, keuangan, dan keamanan informasi, yang tetap milik pihak berwenang di bidangnya; isi pekerjaan dokumen korporasi dan perizinan serta penanganan somasi, klaim, dan sengketa (SNX-LEG-SOP-01); retensi arsip legal (SNX-LEG-SOP-03). Target respons dokumen korporasi dan perizinan tetap dimuat di bagian 8 karena tabel target waktu sumber memuatnya."
+  "Di luar scope SOP ini: keputusan bisnis, komersial, keuangan, dan keamanan informasi, yang tetap milik pihak berwenang di bidangnya; isi pekerjaan dokumen korporasi dan perizinan serta penanganan somasi, klaim, dan sengketa (SNX-LEG-SOP-01); retensi arsip legal (SNX-LEG-SOP-03). Target respons dokumen korporasi dan perizinan tetap dimuat di bagian 8."
  ],
  "definitions": [
   [
@@ -129,7 +129,7 @@
   "4.16 Kontrak yang belum ditandatangani lengkap dicatat berstatus draft, menunggu tanda tangan, atau status lain yang sesuai. Kontrak itu tidak dicatat sebagai kontrak final yang berlaku tanpa dasar yang memadai.",
   "4.17 Akses ke kontrak diberikan berdasarkan kebutuhan kerja dan klasifikasi kerahasiaan dokumen menurut SNX-ISMS-PRO-01. Tingkat klasifikasi tiap jenis kontrak belum ditetapkan.",
   "4.18 Usulan perubahan SOP disampaikan kepada Line Manager Legal sebagai pemilik dokumen, untuk ditinjau dan disetujui sesuai mekanisme pengendalian dokumen SINUX.",
-  "4.19 Dokumen sumber memakai kalimat pasif untuk beberapa langkah. Pelaku yang SOP ini tetapkan untuk langkah itu berstatus (USULAN): butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6. Line Manager Legal sebagai pemilik rekaman di bagian 11 juga berstatus (USULAN)."
+  "4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus (USULAN). Line Manager Legal sebagai pemilik rekaman di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN)."
  ],
  "roles": [
   [
@@ -144,12 +144,12 @@
   ],
   [
    "Staff Legal",
-   "Mencatat permintaan di register permintaan Legal, memeriksa kelengkapan dan pihak lawan, menyusun atau me-review kontrak, menyiapkan redline dan ringkasan risiko, mengelola versi, memeriksa dokumen sebelum penandatanganan, mengarsipkan kontrak, memperbarui register kontrak, dan memantau kontrak berjalan (butir 6.1 sampai 6.10). Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Mencatat permintaan di register permintaan Legal, memeriksa kelengkapan dan pihak lawan, menyusun atau me-review kontrak, menyiapkan redline dan ringkasan risiko, mengelola versi, memeriksa dokumen sebelum penandatanganan, mengarsipkan kontrak, memperbarui register kontrak, dan memantau kontrak berjalan (butir 6.1 sampai 6.10). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
    "Meminta klarifikasi atau dokumen tambahan dari Pemohon dan pihak lawan; mengeskalasi risiko Tinggi kepada Line Manager Legal; tidak memberi Persetujuan Legal."
   ],
   [
    "Line Manager Legal",
-   "Pemilik SOP. Menetapkan penugasan, prioritas, dan target penyelesaian; menentukan tindak lanjut temuan material; me-review hasil kerja Staff Legal; mengevaluasi risiko dan eskalasi; memberi Persetujuan Legal; meminta konfirmasi kewenangan dari Pejabat Berwenang; memantau penerapan SOP ini (butir 6.1 sampai 6.7, dan bagian 10). Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Pemilik SOP. Menetapkan penugasan, prioritas, dan target penyelesaian; menentukan tindak lanjut temuan material; me-review hasil kerja Staff Legal; mengevaluasi risiko dan eskalasi; memberi Persetujuan Legal; meminta konfirmasi kewenangan dari Pejabat Berwenang; memantau penerapan SOP ini (butir 6.1 sampai 6.7, dan bagian 10). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
    "Menyetujui, mengembalikan untuk revisi, atau mengeskalasi hasil review; menahan Persetujuan Legal pada isu risiko Tinggi; menyesuaikan target waktu (butir 4.6)."
   ],
   [
@@ -781,7 +781,7 @@
  "related_documents": [
   [
    "SNX-LEG-SOP-01",
-   "Legal Operational. Sumber dokumennya, SOP Divisi Legal, memuat korporasi, perizinan, somasi, klaim, dan sengketa yang di luar scope SOP ini."
+   "Legal Operational. Memuat korporasi, perizinan, somasi, klaim, dan sengketa, yang di luar scope SOP ini."
   ],
   [
    "SNX-LEG-SOP-03",
@@ -789,11 +789,11 @@
   ],
   [
    "SNX-HR-ORG-01",
-   "Struktur Organisasi SINUX; sumber nama peran. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09, menunggu konfirmasi (K-13)."
+   "Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13)."
   ],
   [
    "SNX-HR-JA-01",
-   "Job Analysis dan Uraian Jabatan; memuat uraian jabatan Legal & Compliance (JA-08 dan JA-09). Sumber SOP ini menyebutnya Jobdesc Line Manager Legal dan Jobdesc Legal Staff."
+   "Job Analysis dan Uraian Jabatan; memuat uraian jabatan Legal & Compliance (JA-08 dan JA-09), tempat peran Line Manager Legal dan Staff Legal dipetakan."
   ],
   [
    "SNX-ISMS-PRO-01",
@@ -801,7 +801,7 @@
   ],
   [
    "SNX-LEG-FRM-01",
-   "Customer Contract Review Checklist; checklist review untuk kontrak pelanggan (USULAN). Sumber SOP ini menyebutnya Contract Review Checklist."
+   "Customer Contract Review Checklist; dipakai sebagai checklist review untuk kontrak pelanggan (USULAN)."
   ],
   [
    "SNX-LEG-FRM-02",
@@ -853,7 +853,7 @@
   ]
  ],
  "iso_refs": {
-  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan).",
+  "Status daftar klausul": "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan).",
   "ISO 9001:2015": "8.2.3 (Peninjauan persyaratan produk dan jasa), untuk review kontrak pelanggan sebelum penandatanganan di butir 6.3 sampai 6.5; 8.2.4 (Perubahan persyaratan produk dan jasa), untuk addendum dan perubahan material di butir 6.6 dan 6.10; 8.4.3 (Informasi untuk penyedia eksternal), untuk kontrak vendor, pemasok, dan subkontraktor di butir 6.3; 7.5.3 (Pengendalian informasi terdokumentasi), untuk pengendalian versi dan pengarsipan di butir 6.6 dan 6.9.",
   "ISO/IEC 27001:2022": "Annex A 5.31 (Persyaratan legal, statutori, regulasi, dan kontraktual), untuk review kesesuaian hukum kontrak di butir 6.3 dan 6.4; Annex A 5.20 (Penanganan keamanan informasi dalam perjanjian pemasok), untuk aspek keamanan informasi pada kontrak vendor di butir 6.3; Annex A 5.34 (Privasi dan pelindungan data pribadi), untuk aspek pelindungan data pribadi di butir 6.3; Annex A 6.6 (Perjanjian kerahasiaan), untuk NDA dan aspek kerahasiaan di butir 6.3."
  }

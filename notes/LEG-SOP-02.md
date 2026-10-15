@@ -2,10 +2,11 @@
 
 Status: DRAFTED (spec + notes ada). Spec: specs/LEG-SOP-02.json. Mode sop, aksi T1, wave W3, nomor SNX-LEG-SOP-02 (nomor lama dipertahankan), department Legal, classification INTERNAL (worklist), audit_class null. Process owner "Line Manager Legal" (jabatan tanpa nama; lihat USULAN 7). Approval persis dari config/defaults.json: prepared Staff Legal, reviewed Line Manager Legal, approved Samuel Kristanto Utomo / President Director. Status Draft, revision 00, effective_date kosong, review_period YEARLY, revision_desc "Draft awal untuk review dan pengesahan".
 
-Hasil uji terakhir (bukti mentah: /tmp/pen-LEG-SOP-02/render.out.txt, /tmp/pen-LEG-SOP-02/lint.out.txt, /tmp/pen-LEG-SOP-02/validate.out.txt):
+Hasil uji terakhir (bukti mentah: /tmp/pen-LEG-SOP-02/render.out.txt, /tmp/pen-LEG-SOP-02/lint.out.txt, /tmp/pen-LEG-SOP-02/validate.out.txt, /tmp/pen-LEG-SOP-02/blankscan.out.txt; diulang sesudah sweep 15 Okt, hasil sama):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-SOP-02.json /tmp/pen-LEG-SOP-02/LEG-SOP-02.docx` selesai tanpa galat (exit 0).
 - `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-02/LEG-SOP-02.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "16 butir (USULAN) menunggu ACC". Warn PIC SLA nol.
 - Validator OOXML skill docx (`python3 /mnt/skills/public/docx/scripts/office/validate.py`, tanpa -I karena skrip itu mengimpor modul sebelahnya): "All validations PASSED!".
+- `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-SOP-02/LEG-SOP-02.docx`: `ok 24 LEG-SOP-02.docx []` (nol halaman kosong).
 - soffice ke PDF: 24 halaman. Diagram (/tmp/pen-LEG-SOP-02/LEG-SOP-02_flow.png) dilihat: 18 simpul, rankdir TB, teks terbaca, tiga loop (permintaan tidak lengkap, revisi, perubahan material) tergambar.
 - Pemeriksaan tambahan atas spec (skrip python3 -I): nol em-dash dan en-dash; tiap langkah paling banyak 25 kata; semua PIC di langkah dan tabel SLA ada di tabel peran bagian 5; semua kode dokumen yang dirujuk di badan ada di tabel Dokumen terkait; nol kalimat identik di dua bagian; nol temuan untuk frasa terlarang prompt (pada intinya, yang terpenting, tanpa terkecuali, dalam rangka, adapun, perlu diketahui, dikarenakan, dapat berpotensi, praktik terbaik, para ahli, dari hulu ke hilir, sesegera mungkin) dan untuk "Lead", "tim" tanpa keterangan, Direksi, COO, TBD, [ISI, CONTOH.
 - tools/selftest.sh tidak dijalankan. Berkas tools, template, config, control tidak diubah. Berkas yang ditulis hanya specs/LEG-SOP-02.json dan notes/LEG-SOP-02.md; hasil render hanya di /tmp/pen-LEG-SOP-02/.
@@ -59,7 +60,7 @@ Kalimat perintah di sumber yang ditujukan ke penyusun atau agen: tidak ada. Kali
 
 ## 3. Pemetaan klausul ISO (kriteria baris)
 
-Checklist tidak memberi acuan klausul untuk baris ini. Semua klausul di bagian 11 spec berstatus "(USULAN, dikonfirmasi konsultan)", satu label di key "Status daftar klausul".
+Checklist tidak memberi acuan klausul untuk baris ini. Semua klausul di bagian 11 spec berstatus "(USULAN, perlu konfirmasi konsultan)", satu label di key "Status daftar klausul".
 
 | Klausul | Alasan | Di spec |
 |---|---|---|
@@ -88,7 +89,7 @@ Bagian 5 "Catatan kualitas dan celah" untuk SOP Divisi Legal (19peOeN1yA-GwAlfNy
 | 6 | Lampiran belum disusun (template, playbook, redline, register, DoA) | Dicatat di Dokumen terkait sebagai "Belum bernomor": matriks DoA, template kontrak, format register. Playbook klausul tidak dirujuk karena sumber utama tidak menyebutnya |
 | 7 | Tidak ada retensi, lokasi repositori; SLA korporasi dan urgent "Sesuai"/"Disepakati" | Retensi dan lokasi: "Belum ditetapkan" di tabel rekaman, open item 3. SLA korporasi dan urgent memakai rumusan sumber utama (kompleksitas dan proses pihak ketiga; konfirmasi prioritas dan kesepakatan tenggat) |
 | 8 | "Legal memberi opini" bertentangan dengan "Hentikan proses" dan "menahan kontrak" | Diperbaiki mengikuti sumber utama: Line Manager Legal menahan Persetujuan Legal pada isu risiko Tinggi, Pejabat Berwenang memutuskan penerimaan risiko (4.8, 4.12), dan Persetujuan Legal tidak menggantikan persetujuan lain (4.2). Kalimat "opini" tidak dibawa |
-| 9 | Tidak ada klausul ISO; tidak ada klasifikasi dokumen | Diperbaiki: iso_refs (USULAN, dikonfirmasi konsultan); klasifikasi SOP INTERNAL dari worklist |
+| 9 | Tidak ada klausul ISO; tidak ada klasifikasi dokumen | Diperbaiki: iso_refs (USULAN, perlu konfirmasi konsultan); klasifikasi SOP INTERNAL dari worklist |
 | 10 | Rujukan PP No. 5 Tahun 2021 dan UU No. 27 Tahun 2022 | Tidak dibawa: sumber utama tidak menyebut peraturan itu. PP 5/2021 ada di bagian 4.4 sumber lama (pengurusan NIB melalui OSS, di luar scope); UU 27/2022 ada di bagian 4.5 sumber lama (kepatuhan, bukan review kontrak). Aspek pelindungan data pribadi tetap ada di 6.3 tanpa kutipan peraturan |
 | 11 | "Staff Legal (Senior/Junior)" dan sel batas wewenang advokat kosong di Jobdesk | Tidak dibawa: sumber utama hanya menyebut Staff Legal; penunjukan advokat di luar scope |
 | 12 | Label klasifikasi Rahasia/Internal/Publik, SOP tidak merujuk SNX-ISMS-PRO-01 | Diperbaiki: butir 4.17 merujuk SNX-ISMS-PRO-01; label Indonesia tidak dipakai |
@@ -160,7 +161,7 @@ Pengukuran akhir (get_file_metadata, sesudah spec dan notes selesai): 1E_8SkaHZo
 ## 7. Dua pertanyaan penutup
 
 Apa yang membuat teks ini terdengar buatan AI, dan apa yang saya perbaiki:
-- Butir 4.19 pada draf pertama berbunyi seperti catatan birokrasi ("berstatus (USULAN) karena dokumen sumber memakai kalimat pasif untuk langkah itu"). Ditulis ulang menjadi dua kalimat pendek dengan daftar butir yang jelas.
+- Butir 4.19 pada draf pertama berbunyi seperti catatan proses ("dokumen sumber memakai kalimat pasif"). Sudah ditulis ulang dua kali; bentuk akhir (sesudah sweep) hanya menyebut pelaku dan labelnya, alasan ada di notes ini (USULAN 3). Tiga kalimat meta lain di scope dan Dokumen terkait dibersihkan di sweep.
 - Pola "Hasil yang dijaga:" di Purpose dipakai dokumen saudara (FAT-SOP-01) dan RUNBOOK §6a.4; dipertahankan, tetapi kalimatnya saya pecah menjadi satu klausa utama dan satu klausa pendukung, tanpa tiga serangkai.
 - Daftar bertitik koma di scope dan di intro 6.1, 6.2, 6.5, 6.9 mirip daftar mesin. Daftar itu menyalin urutan dan isi tabel atau butir sumber (kata tim dipertahankan, T1), jadi tidak diganti.
 - Frasa lindung nilai "sesuai kebutuhan", "sesuai relevansi transaksi", "tanpa dasar yang memadai" muncul beberapa kali. Semuanya kata sumber utama; saya menghapus yang bukan kata sumber dan membiarkan yang bunyi aslinya demikian. Penajamannya butuh keputusan Legal (kapan eskalasi ke Pejabat Berwenang diperlukan), bukan penyusun.
@@ -173,3 +174,27 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber:
 - Tanggal: tidak ada selain "20261014" di contoh nama berkas (dari sumber).
 - Tanpa sumber tetapi diberi label atau dicatat: kanal GLPI, pelaku langkah pasif, pemilik rekaman, pemetaan checklist, klausul ISO, process owner (USULAN 1 sampai 7). Definisi umum NDA, PKS, Term sheet, Wanprestasi, Pihak lawan tidak berlabel karena arti istilah baku; dicatat di asumsi 7.
 - Nomor langkah yang dirujuk butir 4.19 dan butir lain (6.4 langkah 9; 6.7 langkah 3 dan 8; 6.10 langkah 3 dan 6; butir 4.6 sampai 4.17) dicek ulang terhadap spec final dan cocok.
+
+## Sweep
+
+Sweep 15 Okt dari orkestrator WORKER-ISO-01 (instruksi /tmp/claude-0/prompts/LEG-SOP-02.sweep.txt). Berkas yang ditulis: specs/LEG-SOP-02.json dan notes/LEG-SOP-02.md. Perubahan spec diterapkan lewat skrip pembangun di luar repo, lalu dibandingkan dengan salinan sebelum sweep: selisihnya hanya baris di bawah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1. Butir 4.19 | "4.19 Dokumen sumber memakai kalimat pasif untuk beberapa langkah. Pelaku yang SOP ini tetapkan untuk langkah itu berstatus (USULAN): butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6. Line Manager Legal sebagai pemilik rekaman di bagian 11 juga berstatus (USULAN)." | "4.19 Pelaku pada butir 4.6 dan 4.11, 6.4 langkah 9, 6.7 langkah 3 dan 8, serta 6.10 langkah 3 dan 6 berstatus (USULAN). Line Manager Legal sebagai pemilik rekaman di bagian 11, sama dengan SNX-LEG-SOP-03, juga berstatus (USULAN)." Catatan proses ("sumber memakai kalimat pasif") pindah ke notes, USULAN 3 |
+| 1 (kalimat setara, scope) | "... tetap dimuat di bagian 8 karena tabel target waktu sumber memuatnya." | "... tetap dimuat di bagian 8." Alasan ada di notes, tabel cacat 4 baris e dan open item 5 |
+| 1 (kalimat setara, Dokumen terkait SNX-LEG-SOP-01) | "Legal Operational. Sumber dokumennya, SOP Divisi Legal, memuat korporasi, perizinan, somasi, klaim, dan sengketa yang di luar scope SOP ini." | "Legal Operational. Memuat korporasi, perizinan, somasi, klaim, dan sengketa, yang di luar scope SOP ini." Isi scope specs/LEG-SOP-01.json dicek: memuat kelima topik itu |
+| 1 (kalimat setara, SNX-HR-JA-01) | "... (JA-08 dan JA-09). Sumber SOP ini menyebutnya Jobdesc Line Manager Legal dan Jobdesc Legal Staff." | "... (JA-08 dan JA-09), tempat peran Line Manager Legal dan Staff Legal dipetakan." Rujukan Jobdesc di sumber tetap tercatat di bagian 2 baris 20 |
+| 1 (kalimat setara, SNX-LEG-FRM-01) | "Customer Contract Review Checklist; checklist review untuk kontrak pelanggan (USULAN). Sumber SOP ini menyebutnya Contract Review Checklist." | "Customer Contract Review Checklist; dipakai sebagai checklist review untuk kontrak pelanggan (USULAN)." Rujukan sumber tetap di bagian 2 baris 20 dan USULAN 5 |
+| 2. Label klausul ISO (iso_refs, "Status daftar klausul") | "Klausul di bawah berstatus (USULAN, dikonfirmasi konsultan)." | "Klausul di bawah berstatus (USULAN, perlu konfirmasi konsultan)." Hanya satu kemunculan di spec; notes diselaraskan |
+| 3. Peran Staff Legal dan Line Manager Legal (tabel peran) | "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." dan versi JA-08 | "Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." dan versi JA-08 |
+| 3. Dokumen terkait SNX-HR-ORG-01 | "... Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09, menunggu konfirmasi (K-13)." | "... Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13)." |
+| 3. Pemilik rekaman | "Line Manager Legal sebagai pemilik rekaman di bagian 11 juga berstatus (USULAN)." | Ditambah "sama dengan SNX-LEG-SOP-03". Dicek terhadap specs/LEG-SOP-03.json: pemilik rekaman Line Manager Legal dan pencatat Staff Legal (butir 4.26, USULAN di sana). Kolom pemilik dan pencatat di tabel rekaman bagian 11 sudah sama, tidak berubah |
+
+Penjelasan kalimat yang dipindah dari badan dokumen: butir 4.19 melabeli sebagai USULAN pelaku yang sumber utama tidak sebut (kalimat pasif), dan pemilik rekaman; scope menaruh target respons korporasi dan perizinan di bagian 8 karena baris itu ada di tabel target waktu sumber utama; SNX-HR-JA-01 dan SNX-LEG-FRM-01 menggantikan nama Jobdesc dan Contract Review Checklist yang dipakai sumber.
+
+Temuan di luar butir sweep (tidak diubah, menunggu instruksi):
+- SNX-LEG-SOP-03 (draf paralel) sudah menetapkan lokasi (folder Google Drive departemen Legal, butir 4.8) dan retensi per kategori (USULAN di sana). Tabel rekaman dan scope dokumen ini masih menulis "Lokasi belum ditetapkan" dan retensi "Belum ditetapkan". Perlu keputusan LEAD apakah diselaraskan; bila ya, open item 3 ikut gugur.
+- Baris Dokumen terkait "Template kontrak SINUX (NDA, PKS, addendum); belum disusun" dan prompt_addendum ("jangan menyatakan belum ada bila checklist menandai baris itu ada"): checklist baris 43 "NDA / Confidentiality Agreement Template" bertanda true. PKS dan addendum tidak punya baris checklist. Perlu keputusan LEAD untuk rumusan.
+
+Hasil uji sesudah sweep: render exit 0; lint `"pass": true`, `"fails": []`, warn 16 (USULAN), warn PIC SLA nol; validator "All validations PASSED!"; blankscan "ok 24".

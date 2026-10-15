@@ -1,0 +1,39 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Scope kalimat pengecualian (diff baris 30), Dokumen terkait baris SNX-LEG-SOP-01 (509), SNX-HR-JA-01 (515), SNX-LEG-FRM-01 (519)",
+      "masalah": "Empat perubahan ini di luar daftar eksplisit butir 1, yang hanya memuat kalimat 4.19. Isinya hanya membuang atribusi ke dokumen sumber ('karena tabel target waktu sumber memuatnya', 'Sumber dokumennya, SOP Divisi Legal', 'Sumber SOP ini menyebutnya ...'), dan fakta tetap. Makna tidak berubah. Penyusun mencatatnya di notes sebagai 'kalimat setara'. Diterima.",
+      "bukti": "Diff baris 30, 509, 515, 519; notes/LEG-SOP-02.md bagian Sweep baris '1 (kalimat setara ...)'; specs/LEG-SOP-01.json scope butir 2 memuat korporasi dan perizinan, sengketa, somasi, dan klaim; notes bagian 2 baris 20 menyimpan nama Jobdesc dan Contract Review Checklist yang dipakai sumber."
+    },
+    {
+      "lokasi": "Dokumen terkait, baris SNX-LEG-FRM-01",
+      "masalah": "Pola baru: 'dipakai sebagai checklist review' adalah pasif tanpa pelaku yang muncul dari sweep. Baris itu kini juga tidak sejajar dengan baris SNX-LEG-FRM-02 ('checklist review untuk kontrak vendor dan pemasok (USULAN)'). Saran: kembalikan ke 'checklist review untuk kontrak pelanggan (USULAN)'.",
+      "bukti": "Diff baris 519 (+); teks docx out/04_Legal: 'Vendor / Supplier Contract Review Checklist; checklist review untuk kontrak vendor dan pemasok (USULAN).'"
+    },
+    {
+      "lokasi": "Dokumen terkait, baris SNX-HR-JA-01",
+      "masalah": "Kalimat baru 'tempat peran Line Manager Legal dan Staff Legal dipetakan' menyatakan pemetaan tanpa label (USULAN) di baris itu. Label sudah ada di tabel peran dan baris SNX-HR-ORG-01, jadi tidak ada fakta baru. Opsional: tambah '(USULAN)' agar seragam dengan butir 3.",
+      "bukti": "Diff baris 515 (+); specs/HR-ORG-01.json baris 651-659: 'Legal & Compliance (JA-08)/(JA-09)', '(USULAN), menunggu konfirmasi (K-13)'."
+    },
+    {
+      "lokasi": "Butir 4.19 (diff baris 53)",
+      "masalah": "Tambahan 'sama dengan SNX-LEG-SOP-03' berdasar dan tetap berlabel (USULAN). Pemilik rekaman sudah selaras. Lokasi dan retensi rekaman masih berbeda dengan SNX-LEG-SOP-03 (folder Google Drive departemen Legal, retensi per kategori). Hal itu di luar butir 3 karena butir 3 hanya menyebut pemilik, dan penyusun sudah melaporkannya di notes untuk keputusan LEAD.",
+      "bukti": "specs/LEG-SOP-03.json policy 4.26: 'Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya ... (USULAN)'; records LEG-SOP-03 kolom lokasi 'Folder Google Drive departemen Legal (butir 4.8)'; specs/LEG-SOP-02.json records 'Lokasi belum ditetapkan'; notes Sweep 'Temuan di luar butir sweep'."
+    },
+    {
+      "lokasi": "Dokumen terkait, baris 'Template kontrak SINUX' dan 'Format register permintaan Legal dan register kontrak'; notes bagian 4 tabel cacat baris e",
+      "masalah": "Frasa atribusi sumber 'belum disusun menurut SOP Divisi Legal' masih ada. Frasa itu di luar butir dan merujuk nama berkas, jadi boleh, tetapi bisa diseragamkan di putaran berikut. Tabel cacat baris e di notes masih menulis 'dijelaskan di scope', padahal alasan itu kini dibuang dari scope, jadi notes sedikit basi.",
+      "bukti": "Teks docx: 'Template kontrak SINUX (NDA, PKS, addendum); belum disusun menurut SOP Divisi Legal.'; notes/LEG-SOP-02.md bagian 4 baris e 'Baris dipertahankan di bagian 8 dan dijelaskan di scope'."
+    }
+  ],
+  "cek": {
+    "butir_1": "Selesai. Frasa 'Dokumen sumber memakai kalimat pasif' dan 'Pelaku yang SOP ini tetapkan' hilang dari 4.19. Catatan proses ada di notes (USULAN 3 dan penjelasan Sweep).",
+    "butir_2": "Selesai. Satu kemunculan diganti. Spec dan docx tidak lagi memuat 'dikonfirmasi konsultan'.",
+    "butir_3": "Selesai. Tabel peran dan baris SNX-HR-ORG-01 menulis 'Peran ... dipetakan ke jabatan Legal & Compliance (JA-08/JA-09)' dengan (USULAN). Tidak ada sebutan 'jabatan Line Manager Legal' atau 'Legal Staff'. Pemilik rekaman sama dengan SNX-LEG-SOP-03.",
+    "butir_tidak_dikerjakan": "nihil",
+    "pola_baru": "Tidak ada em-dash, rujukan internal AI, atau benda sebagai pelaku kata kerja manusia. Satu pasif tanpa pelaku baru, yaitu 'dipakai sebagai' (nonblocking).",
+    "docx_cocok_diff": "Kesembilan baris (+) ditemukan di teks out/04_Legal/SNX-LEG-SOP-02 ... .docx, dan tidak ada baris (-) yang tersisa. qa/LEG-SOP-02.lint.json pass true, fails kosong."
+  }
+}
