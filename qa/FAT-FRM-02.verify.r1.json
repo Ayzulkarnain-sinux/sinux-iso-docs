@@ -1,0 +1,21 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Platform Access!C3 (BCA Bank Access, baris Maker)",
+      "masalah": "Fakta karangan: nama panggilan 'Dipta' di sumber ditulis sebagai nama lengkap 'Pradipta Nugraha (Accounting & Tax)' tanpa label (USULAN). Pemetaan Dipta ke Pradipta Nugraha tidak tertulis di sumber, di specs/HR-JA-01.json, di specs/HR-ORG-01.json, maupun di config/defaults.json data_conflicts (berbeda dengan Bila yang punya butir 'Nama staf Finance' berkonfirmasi selesai). Sel ini menyatakan siapa pemegang peran Maker di rekening bank, jadi tafsir disajikan sebagai fakta.",
+      "bukti": "Sumber 1UqQ-hYKjAFNhevDwOoF59YQXLHjeFBR7UBHKoSA233k Platform Access!C3: 'Maker: Dipta,Bila / Maker,Approval,Releaser: Samuel, Bila / SysAdmin: Samuel, Bila'. Keluaran C3: 'Maker: Pradipta Nugraha (Accounting & Tax), Kana Salsabila Putri Koeswologito (Finance) ...'. specs/HR-JA-01.json baris 299-302 dan specs/HR-ORG-01.json baris 377 hanya memuat 'JA-11 | Accounting & Tax | Pradipta Nugraha', tanpa sebutan 'Dipta'; grep 'Dipta' tanpa awalan 'Pra' di specs/, context/, config/ = nihil. notes/FAT-FRM-02.md asumsi A2: 'tidak ada pernyataan tertulis'. Perbaikan: tulis 'Dipta (Pradipta Nugraha, USULAN: konfirmasi FAT)' atau pertahankan 'Dipta' dan catat open item."
+    }
+  ],
+  "nonblocking": [
+    "Kontrol Dokumen bersih dari isi form donor SNX-OPS-FRM-01: semua nilai donor (judul proyek, Divisi Operation, Project Manager, Klausul 8.1/8.2.2, Annex A 5.8, Durasi kontrak + 3 tahun, Cara pakai proyek, Erik/Fani, legenda warna) sudah diganti atau dikosongkan; tidak ada data validation, header/footer, nama terdefinisi, atau komentar warisan. Medan sesuai RUNBOOK §7: nomor, judul, revisi 00 (DRAFT), klasifikasi RESTRICTED (Internal) sesuai aturan keuangan defaults, pemilik Finance Lead (aturan process_owner), Disusun Finance Staff / Diperiksa Finance Lead / Disetujui Samuel Kristanto Utomo / President Director sesuai prepared_reviewed dan approved_by, acuan ISO dan masa simpan berlabel USULAN, tanggal efektif kosong, tanda tangan kosong.",
+    "Kriteria Description terpenuhi: sheet Worksheet (4 dokumen keuangan) dan Platform Access (3 platform pajak dan bank) memuat daftar akses dan kolom Access Holder; Tujuan B15 merumuskan hal yang sama.",
+    "Fakta lain cocok sumber: 4 dokumen, uraian, tautan, 3 platform dan alamat login identik dengan sumber; perubahan Worksheet!B3 dan B4 hanya ejaan (sinux ke SINUX, Hutang ke Utang, diperbaharui ke diperbarui). Bila ke Kana Salsabila Putri Koeswologito dan Samuel ke Samuel Kristanto Utomo (Direktur Utama) sesuai data_conflicts.",
+    "Konsistensi internal: Cara pakai B20 meminta pemegang akses ditulis 'dengan nama dan jabatan', sedangkan Worksheet!C2:C5 dan Platform Access!C2 berisi kelompok (HR, FAT, Management) dan C4 'FAT & Samuel ...'. Isi tim dipertahankan sesuai T1 dan tercatat di open item 3, tetapi instruksi dan isi berkas saling bertentangan; pertimbangkan rumusan B20 yang mengakui pemegang berupa kelompok sampai FAT merinci.",
+    "Bahasa §6a: 'Dokumen akan diperbarui setiap tahun' (Worksheet!B4) pasif tanpa pelaku; kalimat tim, dipertahankan sesuai §6a butir 10. Selain itu nihil em-dash, en-dash, tebal, kutip penekanan, frasa slop, atau rujukan internal AI (pemindaian pola semua sel).",
+    "Acuan klausul B12 dan B13 (7.5.3; Annex A 5.3, 5.15, 5.18, 8.3) relevan dengan isi dan berlabel USULAN. B21 'setiap tahun' berdasar review_period YEARLY di defaults.",
+    "Butir (e) peran bagian 5 terhadap PIC bagian 6 dan 8 tidak berlaku untuk form xlsx; padanannya konsisten (Pemilik dokumen = Diperiksa oleh = Finance Lead).",
+    "Butir (g): grep fileId di context/audit/*.md nihil; notes bagian 7 menjelaskan dan mengambil cacat dari dokumen tetangga (SOP Billing, sintesis). Ditangani.",
+    "Open item notes nomor 1 (satu orang memegang Maker, Approval, Releaser, dan SysAdmin BCA) relevan untuk Annex A 5.3 dan perlu diputus Samuel dan FAT sebelum audit."
+  ]
+}

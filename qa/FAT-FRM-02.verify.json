@@ -1,0 +1,41 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Platform Access!C3",
+      "masalah": "Nama panggilan sumber 'Bila' ditulis lengkap 'Kana Salsabila Putri Koeswologito (Finance)' tanpa label di sel. Boleh menurut aturan karena nama ada di data_conflicts (butir 'Nama staf Finance', konfirmasi selesai) dan owner 14 Okt menyamakan Bila Parwasto dengan JA-10 Finance; jabatan 'Finance' dari HR-JA-001 JA-10. 'Samuel' menjadi 'Samuel Kristanto Utomo (Direktur Utama)' sesuai data_conflicts. 'Dipta' tetap verbatim (tafsiran Pradipta sudah dicabut, open item 13).",
+      "bukti": "Sumber C3: 'Maker: Dipta,Bila / Maker,Approval,Releaser: Samuel, Bila / SysAdmin: Samuel, Bila'; context/audit sintesis baris 119: 'Bila Parwasto = Kana Salsabila Putri Koeswologito (JA-10 Finance)'; hr baris 77: '| JA-10 | Finance | Kana Salsabila Putri Koeswologito |'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B18, B19, B20",
+      "masalah": "Butir Cara pakai tanpa pelaku (RUNBOOK 6a.1). Dokumen saudara SNX-FAT-REG-01 menyebut 'Finance Staff menambah ...'; di sini pengisi tidak disebut.",
+      "bukti": "'Sheet Worksheet: satu baris untuk satu dokumen keuangan.'; 'Tulis pemegang akses dengan nama dan jabatan. Jangan tulis kata sandi, PIN, atau token (USULAN).'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B20 dan Worksheet!C2:C5, Platform Access!C2",
+      "masalah": "Petunjuk 'Tulis pemegang akses dengan nama dan jabatan' tidak dipenuhi baris data yang ada (unit HR, FAT, Management). Kalimat pertama B20 juga tidak ada di sumber, sedangkan label (USULAN) terbaca hanya untuk kalimat kedua. Sudah tercatat sebagai open item 3 di notes.",
+      "bukti": "Worksheet!C2 'HR, FAT, Management'; C3 sampai C5 'FAT'; Platform Access!C2 'FAT & Management'"
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B21",
+      "masalah": "Notes menyebut peninjauan tahunan oleh pemilik dokumen sebagai USULAN 5, tetapi sel tidak berlabel (USULAN). Masa tinjau YEARLY berasal dari defaults review_period, jadi ini bukan fakta karangan.",
+      "bukti": "'Pemilik dokumen meninjau isi berkas ini setiap tahun.'"
+    },
+    {
+      "lokasi": "Worksheet!B4",
+      "masalah": "Kalimat tim pasif tanpa pelaku dipertahankan (T1, RUNBOOK 6a.10). Ejaan sudah diperbaiki: Hutang menjadi Utang, diperbaharui menjadi diperbarui, sinux menjadi SINUX di B3.",
+      "bukti": "'Dokumen akan diperbarui setiap tahun'"
+    },
+    {
+      "lokasi": "context/audit (fileId 1UqQ-hYKjAFNhevDwOoF59YQXLHjeFBR7UBHKoSA233k)",
+      "masalah": "grep fileId tidak menemukan baris di context/audit. notes/FAT-FRM-02.md bagian 7 menjelaskan hal ini dan menangani cacat terkait dari sintesis baris 753 dan audit fat (ejaan Samuel, sebutan CEO, pemisahan peran, cakupan daftar). Ditangani.",
+      "bukti": "grep -n 1UqQ-... context/audit/*.md: keluaran kosong; notes bagian 7"
+    },
+    {
+      "lokasi": "Kontrol Dokumen (seluruh sheet)",
+      "masalah": "Terisi benar dan sama tata letaknya dengan SNX-FAT-REG-01: nomor SNX-FAT-FRM-02, revisi '00 (DRAFT)', tanggal efektif 'Ditetapkan saat pengesahan', klasifikasi RESTRICTED (Internal), pemilik Finance Lead, Disusun Finance Staff, Diperiksa Finance Lead, Disetujui 'Samuel Kristanto Utomo / President Director' (defaults FAT dan D2), acuan ISO dan masa simpan berlabel USULAN, sel tanda tangan dan tanggal pengesahan kosong. Catatan kosmetik: bingkai legenda donor kosong di baris 25 sampai 27 (open item 11 di notes).",
+      "bukti": "B4 'SNX-FAT-FRM-02'; B6 '00 (DRAFT)'; B9 'RESTRICTED (Internal)'; B36 'Finance Staff'; B37 'Finance Lead'; B38 'Samuel Kristanto Utomo / President Director'; C36:D38 kosong"
+    }
+  ]
+}
