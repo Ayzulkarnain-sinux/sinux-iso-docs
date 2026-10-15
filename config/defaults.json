@@ -1,6 +1,6 @@
 {
- "version": "v21",
- "status_note": "DIKUNCI LEAD ISO-A 15 Okt 2026 (default v19-a diterima utuh, owner: 'berikan best recommendation ... Tuntaskan'). Worker TIDAK memutus ulang di W0. Perubahan hanya lewat control/LEAD-GUIDE.md; semua butir bisa diganti lalu render ulang massal dari specs/ dalam menit. v21 (LEAD 15 Okt): koreksi data penanda tangan terhadap sumber (Sita, Erik), kata owner tiket verbatim, daftar data_conflicts.",
+ "version": "v22",
+ "status_note": "DIKUNCI LEAD ISO-A 15 Okt 2026 (default v19-a diterima utuh, owner: 'berikan best recommendation ... Tuntaskan'). Worker TIDAK memutus ulang di W0. Perubahan hanya lewat control/LEAD-GUIDE.md; semua butir bisa diganti lalu render ulang massal dari specs/ dalam menit. v21 (LEAD 15 Okt): koreksi data penanda tangan terhadap sumber (Sita, Erik), kata owner tiket verbatim, daftar data_conflicts. v22 (LEAD 15 Okt, jawaban owner atas vonis run 1, lihat control/LEAD-GUIDE.md G-3): Aziz = HR Lead; Legal bernama; FAT Reviewed By = Direktur selama Finance Lead belum terisi; garis lapor Laras dan Fani ganda; unit Departemen Legal; Process Owner Commercial baru = VP Commercial.",
  "numbering": {
   "scheme": "SNX-<AREA>-<JENIS>-<NN>",
   "area": [
@@ -33,15 +33,15 @@
  "prepared_reviewed": {
   "HR": {
    "prepared": "Sita Nadia Salsabila Widodo / HRGA Officer",
-   "reviewed": "Aziz Priyo Widakdo / HR Manager"
+   "reviewed": "Aziz Priyo Widakdo / HR Lead"
   },
   "FAT": {
    "prepared": "Finance Staff",
-   "reviewed": "Finance Lead"
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur"
   },
   "LEG": {
-   "prepared": "Staff Legal",
-   "reviewed": "Line Manager Legal"
+   "prepared": "Alif Altamziz / Staff Legal",
+   "reviewed": "Ester Febe Utomo / Line Manager Legal"
   },
   "COM": {
    "prepared": "Laras Rasmawati / VP Commercial",
@@ -92,7 +92,7 @@
   "president_director": "Samuel Kristanto Utomo / President Director",
   "coo": "Amirull Yusuf Zulkarnain / Direktur",
   "vp_tech_ops": "Fani Fatullah / VP Tech Operation and Services",
-  "hr_manager": "Aziz Priyo Widakdo / HR Manager",
+  "hr_manager": "Aziz Priyo Widakdo / HR Lead",
   "vp_commercial": "Laras Rasmawati / VP Commercial"
  },
  "data_conflicts": {
@@ -102,15 +102,15 @@
     "butir": "Ejaan nama Direktur Utama",
     "pakai": "Samuel Kristanto Utomo",
     "sumber_lain": "HR-JA-001 menulis 'Samuel Kristianto Utomo'",
-    "dasar": "template SOP (Approved By) dan SOP Billing menulis Kristanto",
-    "konfirmasi": "owner atau Samuel"
+    "dasar": "template SOP (Approved By) dan SOP Billing menulis Kristanto; owner 15 Okt: \"Samuel kristanto utomo\"",
+    "konfirmasi": "selesai (owner 15 Okt); Job Analysis dibetulkan HR"
    },
    {
     "butir": "Jabatan Aziz Priyo Widakdo",
-    "pakai": "HR Manager",
-    "sumber_lain": "HR-JA-001 JA-14 menulis 'HR Lead'",
-    "dasar": "kata owner 14 Okt (premis terlindungi)",
-    "konfirmasi": "owner atau Aziz"
+    "pakai": "HR Lead",
+    "sumber_lain": "v21 memakai HR Manager (premis owner 14 Okt, dikoreksi owner 15 Okt)",
+    "dasar": "owner 15 Okt: \"Jabatan Aziz HR Lead/SPV\"; HR-JA-001 JA-14 HR Lead. SPV = tingkat, ditulis hanya bila dokumen punya kolom tingkat jabatan",
+    "konfirmasi": "selesai"
    },
    {
     "butir": "Nama HRGA Officer",
@@ -128,10 +128,10 @@
    },
    {
     "butir": "Peran Finance Lead dan Finance Staff",
-    "pakai": "peran apa adanya di SOP Billing dan Tax",
+    "pakai": "nama peran tetap. Finance Lead = peran pemeriksa dan penyetuju FAT, jabatannya belum terisi; sampai terisi, peran dijalankan Direktur (USULAN). Finance Staff = peran pelaksana, dijalankan pemegang JA-10 Finance dan JA-11 Accounting & Tax (USULAN). Reviewed By dokumen FAT = Direktur",
     "sumber_lain": "tidak ada jabatan itu di HR-JA-001 (hanya JA-10 Finance, JA-11 Accounting & Tax)",
-    "dasar": "sumber SOP FAT",
-    "konfirmasi": "owner (pemetaan peran ke orang)"
+    "dasar": "owner 15 Okt: \"finance lead belum ada\"; HR-JA-001: atasan JA-10 dan JA-11 \"Management / Direktur\"",
+    "konfirmasi": "owner (berlaku saat owner mengetik gaspol di sesi worker)"
    },
    {
     "butir": "Sebutan Samuel Kristanto Utomo",
@@ -156,10 +156,10 @@
    },
    {
     "butir": "Garis lapor Laras Rasmawati",
-    "pakai": "Struktur Organisasi: garis tegas ke Direktur (HR-JA-001) dan garis putus-putus ke Direktur Utama, berlabel menunggu konfirmasi",
+    "pakai": "dua garis tegas: ke Direktur dan ke Direktur Utama, tanpa label menunggu konfirmasi",
     "sumber_lain": "HR-JA-001 JA-03: atasan langsung 'Direktur'",
-    "dasar": "kata owner: melapor ke Direktur Utama dan ke Amirull (Direktur)",
-    "konfirmasi": "owner"
+    "dasar": "owner 15 Okt: \"Laras melapor keduanya, dua garis. termasuk fani\"",
+    "konfirmasi": "selesai"
    },
    {
     "butir": "Garis lapor Aziz Priyo Widakdo",
@@ -167,11 +167,31 @@
     "sumber_lain": "HR-JA-001 JA-14: 'Direktur atau Management sesuai struktur yang disahkan'",
     "dasar": "kata owner dan HR-JA-001",
     "konfirmasi": "owner atau Aziz"
+   },
+   {
+    "butir": "Garis lapor Fani Fatullah",
+    "pakai": "dua garis tegas: ke Direktur dan ke Direktur Utama",
+    "sumber_lain": "HR-JA-001 JA-04: atasan langsung Direktur",
+    "dasar": "owner 15 Okt: \"Laras melapor keduanya, dua garis. termasuk fani\"",
+    "konfirmasi": "selesai"
+   },
+   {
+    "butir": "Pemetaan peran Legal",
+    "pakai": "Line Manager Legal = JA-08 Ester Febe Utomo; Staff Legal = JA-09 Alif Altamziz; label USULAN pada pemetaan ini dihapus",
+    "sumber_lain": "KB lama menyebut Daffa (tidak dipakai di dokumen mana pun)",
+    "dasar": "owner 15 Okt: \"atasan alif adalah ester (alif pengganti daffa)\"; HR-JA-001 JA-09 atasan Ester",
+    "konfirmasi": "selesai"
    }
   ]
  },
  "process_owner": {
   "rule": "Ikuti 'Pemilik dokumen' di sumber (jabatan atau peran, tanpa nama). Dokumen baru tanpa sumber: jabatan pada kolom reviewed departemennya, tanpa nama.",
-  "status": "USULAN"
+  "status": "USULAN",
+  "override": {
+   "COM_baru": "SNX-COM-FRM-01, SNX-COM-FRM-02, SNX-COM-REG-01: VP Commercial (rekomendasi LEAD atas permintaan owner 15 Okt)"
+  }
+ },
+ "unit_names": {
+  "Legal": "Departemen Legal (ganti \"Divisi Legal\"); dasar: dipakai 7 dari 9 dokumen Legal dan pola Departemen pada SOP FAT"
  }
 }
