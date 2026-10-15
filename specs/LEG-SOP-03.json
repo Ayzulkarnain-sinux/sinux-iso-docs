@@ -68,7 +68,7 @@
   ],
   [
    "GLPI",
-   "Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation."
+   "Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation (USULAN)."
   ],
   [
    "Kategori",
@@ -124,7 +124,7 @@
   "4.14 Pemohon meminta akses ke dokumen legal lewat tiket GLPI (USULAN).",
   "4.15 Line Manager Legal mencabut akses saat peran penerima akses berakhir.",
   "4.16 Line Manager Legal meninjau daftar akses ke folder Google Drive departemen Legal setiap semester (USULAN, mengikuti irama review akses biasa di SNX-ISMS-SOP-02).",
-  "4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim lewat kanal pribadi. Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01.",
+  "4.17 Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim lewat kanal pribadi. Padanan istilah dokumen rahasia dengan kedua tingkat ini berstatus (USULAN). Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01.",
   "4.18 Pembagian dokumen RESTRICTED (Internal) ke pihak luar memerlukan NDA atau kontrak yang berlaku dan persetujuan Line Manager Legal sebagai pemilik informasi (USULAN). Pembagian dokumen SECRET ke pihak luar mengikuti SNX-ISMS-PRO-01.",
   "4.19 Masa retensi dokumen legal mengikuti peraturan perundang-undangan, kontrak yang berlaku, dan kebijakan SINUX. Bila ketiganya menetapkan periode berbeda, berlaku periode terpanjang (USULAN).",
   "4.20 Periode masa retensi tiap kategori dan tanggal pemicunya ada di tabel Rekaman bagian 11. Seluruh periode itu berstatus (USULAN) sampai diputus lewat prosedur 6.5.",
@@ -138,12 +138,12 @@
  "roles": [
   [
    "Line Manager Legal",
-   "Memimpin Departemen Legal dan memantau penerapan SOP ini. Menetapkan klasifikasi dokumen legal (6.1), menetapkan dan memberikan akses serta menyetujui pembagian ke pihak luar (6.4), mengevaluasi dokumen yang masa retensinya berakhir dan menyetujui pemusnahan (6.5), menetapkan dan mencabut Legal Hold (6.6), serta mengevaluasi dan meninjau SOP ini (6.8). Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Memimpin Departemen Legal dan memantau penerapan SOP ini. Menetapkan klasifikasi dokumen legal (6.1), menetapkan dan memberikan akses serta menyetujui pembagian ke pihak luar (6.4), mengevaluasi dokumen yang masa retensinya berakhir dan menyetujui pemusnahan (6.5), menetapkan dan mencabut Legal Hold (6.6), serta mengevaluasi dan meninjau SOP ini (6.8). Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
    "Menetapkan klasifikasi, akses, dan Legal Hold; menyetujui pemusnahan."
   ],
   [
    "Staff Legal",
-   "Melapor ke Line Manager Legal. Mencatat dokumen di register dan mengusulkan klasifikasi (6.1), menamai berkas dan mengelola versi serta status (6.1 dan 6.2), menyimpan salinan final dan dokumen asli (6.3), memeriksa register setiap bulan (6.5), menandai Legal Hold (6.6), dan memusnahkan dokumen yang disetujui (6.7). Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
+   "Melapor ke Line Manager Legal. Mencatat dokumen di register dan mengusulkan klasifikasi (6.1), menamai berkas dan mengelola versi serta status (6.1 dan 6.2), menyimpan salinan final dan dokumen asli (6.3), memeriksa register setiap bulan (6.5), menandai Legal Hold (6.6), dan memusnahkan dokumen yang disetujui (6.7). Peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN).",
    "Mencatat dan menjalankan langkah pengendalian. Tidak menetapkan klasifikasi, akses, atau Legal Hold, dan tidak menyetujui pemusnahan."
   ],
   [
@@ -646,7 +646,7 @@
   ],
   [
    "SNX-HR-ORG-01",
-   "Struktur Organisasi SINUX; sumber nama peran. Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09, menunggu konfirmasi (K-13). VP Tech Operation and Services adalah JA-04."
+   "Struktur Organisasi SINUX; sumber nama peran. Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13). VP Tech Operation and Services adalah JA-04."
   ],
   [
    "UU Nomor 8 Tahun 1997",

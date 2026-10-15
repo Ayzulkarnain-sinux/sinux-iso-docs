@@ -1,0 +1,18 @@
+{
+ "key": "LEG-SOP-03",
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {"lokasi": "Butir 4.17 kalimat 2", "masalah": "Kalimat sisipan merujuk 'istilah dokumen rahasia' tanpa menyebut asal istilah. Kata itu tidak muncul di bagian lain dokumen, jadi pembaca tidak tahu dokumen mana yang memakai istilah tersebut. SNX-LEG-SOP-01 butir 4.23 menyebut asalnya (SOP Divisi Legal versi 0.1). Label (USULAN) sudah ada dan butir 1b terpenuhi; ini soal kejelasan.", "bukti": "Sesudah: 'Padanan istilah dokumen rahasia dengan kedua tingkat ini berstatus (USULAN).' vs specs/LEG-SOP-01.json 4.23: 'Padanan label Rahasia di SOP Divisi Legal versi 0.1 dengan kedua tingkat ini berstatus (USULAN).'"},
+  {"lokasi": "Bagian 3 Definisi, baris GLPI (lintas dokumen)", "masalah": "Sesudah sweep, definisi GLPI di dokumen ini berlabel (USULAN), sedangkan rumusan yang sama di SNX-LEG-SOP-01 masih tanpa label. Set dokumen Legal jadi tidak seragam. Penyelarasan di LEG-SOP-01 di luar batas tulis sweep ini.", "bukti": "specs/LEG-SOP-01.json: 'Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation.' vs LEG-SOP-03 sesudah: '... selain Operation (USULAN).'"},
+  {"lokasi": "Bagian 11, baris SNX-HR-ORG-01", "masalah": "Frasa 'menunggu konfirmasi (K-13)' diganti '(USULAN, butir K-13)'. Maknanya setara (status menunggu ACC) dan rumusannya sama persis dengan SNX-LEG-SOP-01 dan 02, jadi bukan perubahan makna. Dicatat agar jelas bahwa frasa itu memang sengaja hilang.", "bukti": "Sebelum: 'dipetakan ke JA-08 dan JA-09, menunggu konfirmasi (K-13).' Sesudah: 'dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13).'"},
+  {"lokasi": "Bagian 5, baris Line Manager Legal dan Staff Legal", "masalah": "'Peran ini dipetakan ke jabatan ...' tetap pasif tanpa pelaku. Pola ini sudah ada sebelum sweep ('Dipetakan ke ...'), jadi bukan pola baru, dan pihak yang memetakan memang belum ditetapkan karena masih menunggu K-13.", "bukti": "Sebelum: 'Dipetakan ke jabatan Legal & Compliance (JA-08) ...' Sesudah: 'Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) ...'"}
+ ],
+ "checks": {
+  "1_sesuai_butir": "Lima hunk di diff semuanya cocok dengan butir instruksi: 1a definisi GLPI diberi (USULAN), 1b 4.17 diberi kalimat padanan berlabel (USULAN), 2a baris peran bagian 5 ditulis sebagai peran ('Peran ini dipetakan ke jabatan ...'), 2b bagian 11 HR-ORG-01. Tidak ada hunk lain. Teks sesudah ada di specs/LEG-SOP-03.json dan di docx out/ (dicek dengan zipfile, hanya baca).",
+  "2_fakta_baru": "Tidak ada fakta baru. 'Legal & Compliance', JA-08, JA-09, JA-04, dan K-13 sudah ada sebelum sweep. Dasar 1a ada di config/defaults.json ticketing ('Batas lingkup generalist belum dirinci owner ... tulis berlabel (USULAN)'), dan dasar 1b ada di sumber 19pe sesuai verify.json. Keduanya tercatat di notes bagian USULAN baris 1 dan baris 24.",
+  "3_pola_bahasa": "Tidak ada em-dash atau en-dash di docx (hitungan 0). Tidak ada rujukan internal AI baru dan tidak ada benda yang menjadi pelaku kata kerja manusia ('berstatus' bukan tindakan manusia). Pasif di bagian 5 adalah warisan dari sebelum sweep. Instruksi sweep tidak meminta penghapusan frasa proses penyusunan.",
+  "4_butir_tidak_dikerjakan": "Tidak ada. Butir 2 bagian pemilik rekaman tidak diubah, dan alasannya tertulis di notes ## Sweep baris 2c: dokumen ini sendiri SNX-LEG-SOP-03 yang menjadi acuan, dan LEG-SOP-01 serta 02 sudah memakai pemilik Line Manager Legal. Saya memeriksa ulang di specs: semua baris records memakai 'pemilik Line Manager Legal', dan butir 4.26 sejalan dengan itu.",
+  "batas_keras_0": "Tidak ada yang dilanggar: status Draft tetap, tidak ada nama atau angka baru, tidak ada rujukan internal AI, dan tidak ada kredensial."
+ }
+}

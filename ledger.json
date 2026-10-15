@@ -225,7 +225,7 @@
    "dept": "OPS",
    "action": "T1",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-OPS-PRC-01",
    "out_path": "out/07_Ops/SNX-OPS-PRC-01 Operations Business Process Flow (Rev00 DRAFT).docx",
    "sources": [
@@ -250,9 +250,10 @@
    "loops": 0,
    "usulan_count": 5,
    "open_items": [],
-   "updated_at": "2026-10-14T22:19:03Z",
+   "updated_at": "2026-10-15T00:48:23Z",
    "pen_agent": "aec5c163a887d4bfe",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 4,
@@ -967,12 +968,13 @@
    "open_items": [
     "Sweep (c): mutasi lokasi saja membuat Atasan Langsung Asal = Tujuan, pemisahan peran 4.3 perlu aturan pengganti (verify nonblocking)",
     "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi",
-    "Sweep (c): r2 nonblocking, definisi divisi dan rotasi bertabrakan dengan HR-SOP-12 (NOC ke SOC bisa terbaca rotasi sekaligus mutasi)"
+    "Sweep (c): r2 nonblocking, definisi divisi dan rotasi bertabrakan dengan HR-SOP-12 (NOC ke SOC bisa terbaca rotasi sekaligus mutasi)",
+    "Residu mutu (sweep nonblocking): aturan Direktur Utama bagian 9 (U22) bertentangan dengan 4.3; label USULAN bergeser di bagian 9; NOC/SOC disebut divisi di sini tetapi unit kerja di HR-SOP-12"
    ],
-   "updated_at": "2026-10-15T00:48:20Z",
+   "updated_at": "2026-10-15T00:48:23Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 25,
@@ -1023,7 +1025,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-SOP-03",
    "out_path": "out/04_Legal/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
@@ -1056,7 +1058,7 @@
     "Draf tim baru ditemukan di folder Dep. Legal (dibuat 2026-10-14T09:13Z) tanpa tautan di checklist; dipakai sebagai sumber utama (RUNBOOK §6 prioritas dokumen tim terbaru).",
     "Sweep (b): definisi GLPI batas selain Operation tanpa label USULAN; 4.17 padanan Rahasia ke RESTRICTED/SECRET tanpa label (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:46:21Z",
+   "updated_at": "2026-10-15T00:48:32Z",
    "pen_agent": "ab097b242b2cce31c",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2620,7 +2622,10 @@
      "HR-SOP-12": "a03372a682640aa2e",
      "HR-SOP-13": "aec5ea3082629635b"
     }
-   }
+   },
+   "residual": [
+    "Sesudah sweep: istilah NOC/SOC (unit kerja di HR-SOP-12 definisi Unit kerja baru, divisi/sub divisi di HR-SOP-13 dan kalimat batas); U22 HR-SOP-13 vs 4.3. Putaran konsistensi kedua bila waktu cukup, selain itu residu di Laporan_Run."
+   ]
   },
   {
    "task": "QA W8: pindai halaman kosong (hanya header/footer) di semua docx out/ lewat soffice+pdftotext; dokumen yang kena diperbaiki lewat isi (panjang bagian sebelum page break), bukan renderer (format terkunci).",

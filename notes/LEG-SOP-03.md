@@ -4,7 +4,7 @@ Status: DRAFTED (spec + notes ada). Spec: specs/LEG-SOP-03.json. Mode sop, aksi 
 
 Uji terakhir:
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-SOP-03.json /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx` sukses.
-- `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx sop` memberi `"pass": true`, `"fails": []`, satu warn: "40 butir (USULAN) menunggu ACC" (nol warn PIC SLA).
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx sop` memberi `"pass": true`, `"fails": []`, satu warn: "42 butir (USULAN) menunggu ACC" (nol warn PIC SLA; angka sesudah sweep, semula 40).
 - Validator OOXML (`python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx`): "All validations PASSED!".
 - `bash tools/selftest.sh`: 6 baris OK (template sha, kontrol positif sop, kontrol positif generic, kontrol negatif, format terkunci, kontrol gaya dan dummy).
 - Pratinjau PDF (soffice) 22 halaman, dilihat lewat contact sheet dan diagram dalam resolusi penuh: sampul, Identity, Revision, Approval, TOC, 11 bagian, diagram (13 simpul, rankdir TB, lima belah ketupat) tampil. Tabel Rekaman bagian 11 tinggi karena kolom tengah template sempit; format tidak diubah.
@@ -89,7 +89,7 @@ Checklist tidak memberi acuan klausul untuk baris ini (iso_9001 dan iso_27001 nu
 - Nama orang dan jabatan: tidak ada nama orang di badan dokumen. "Direktur (COO)" dan "Direktur Utama" tidak muncul di badan (nol sebutan), jadi aturan sebutan pertama tidak terpakai. Samuel hanya di blok Approved By.
 - Tiket: Legal = generalist, jadi GLPI (SINUX Service Hub). Zammad tidak dipakai. Batas "generalist" belum dirinci owner (defaults), maka kanal berlabel (USULAN).
 - Vault dan PPN tidak relevan untuk SOP ini.
-- Klasifikasi dokumen ini: INTERNAL (worklist). Klasifikasi dokumen legal yang diatur SOP: tingkat SNX-ISMS-PRO-01, bukan label Indonesia "Rahasia, Internal, Publik" di SOP Divisi Legal 4.7. Padanan "Rahasia" ke RESTRICTED (Internal) atau SECRET tidak ditulis di badan dokumen; SNX-LEG-SOP-01 butir 4.23 sudah memuatnya sebagai USULAN.
+- Klasifikasi dokumen ini: INTERNAL (worklist). Klasifikasi dokumen legal yang diatur SOP: tingkat SNX-ISMS-PRO-01, bukan label Indonesia "Rahasia, Internal, Publik" di SOP Divisi Legal 4.7. Padanan istilah "dokumen rahasia" (sumber) ke RESTRICTED (Internal) dan SECRET ditulis di butir 4.17 berlabel (USULAN), sama dengan SNX-LEG-SOP-01 butir 4.23.
 - Istilah satu per satu: "Departemen Legal" (sumber "Divisi Legal"), "Staff Legal" (sumber "Legal Staff"), "Pemohon" (istilah SNX-LEG-SOP-01; sumber tidak menyebut peminta akses), "Dokumen Tidak Berlaku" (sumber "Dokumen Kedaluwarsa atau Tidak Berlaku"; dua nama untuk satu hal disatukan), "Masa retensi" (sumber "Retensi Dokumen"), "Repositori resmi" (sumber "Repositori Resmi"), "register" (definisi: register dokumen legal), "Dokumen asli" dan "salinan Dokumen Final" konsisten.
 
 Pemetaan peran sumber ke nama peran HR-ORG-01 (specs/HR-ORG-01.json: Daftar Jabatan dan Matriks Peran):
@@ -167,11 +167,11 @@ SINUX_Job_Analysis_2026 (1m91..., audit hr bagian 5):
 
 ## USULAN
 
-Lint menghitung 40 kemunculan "(USULAN)" di dokumen, termasuk baris definisi label, baris tabel Rekaman, dan label klausul. Jumlah butir keputusan: 23.
+Lint menghitung 42 kemunculan "(USULAN)" di dokumen, termasuk baris definisi label, baris tabel Rekaman, dan label klausul. Jumlah butir keputusan: 24 (butir 24 ditambah saat sweep).
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
-| 1 | Kanal permintaan akses = tiket GLPI, dan permintaan wipe media lewat GLPI | Butir 4.14; prosedur 6.4 langkah 1; 6.7 langkah 4 | owner (batas "generalist") |
+| 1 | Kanal permintaan akses = tiket GLPI, permintaan wipe media lewat GLPI, dan batas pemakaian GLPI untuk departemen selain Operation (definisi GLPI) | Definisi GLPI; butir 4.14; prosedur 6.4 langkah 1; 6.7 langkah 4 | owner (batas "generalist" belum dirinci) |
 | 2 | Repositori resmi = folder Google Drive departemen Legal; Arsip = subfolder Arsip di folder itu | Butir 4.8; definisi Arsip; butir 4.21 | Legal |
 | 3 | Register dokumen legal dipadankan dengan SNX-LEG-REG-04, dengan tiga kolom retensi (tanggal pemicu, tanggal akhir masa retensi, penanda Legal Hold) | Butir 4.2 | Legal |
 | 4 | Bagian NamaPihak diisi SINUX untuk dokumen tanpa pihak lawan; dokumen internal bernomor SNX dinamai dengan nomor dan judul | Butir 4.4 | Legal |
@@ -194,6 +194,7 @@ Lint menghitung 40 kemunculan "(USULAN)" di dokumen, termasuk baris definisi lab
 | 21 | Ukuran evaluasi pelaksanaan SOP diadaptasi dari ukuran review kontrak: register dokumen legal dan ketepatan waktu pengarsipan | 6.8 langkah 1 | Legal |
 | 22 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 (K-13) | Bagian 5 | owner atau Aziz (K-13 HR-ORG-01) |
 | 23 | Daftar klausul ISO 9001:2015 dan ISO/IEC 27001:2022 di bagian 11 | Acuan standar | konsultan |
+| 24 | Padanan istilah "dokumen rahasia" (sumber: "Dokumen rahasia tidak dikirim melalui kanal pribadi.") dengan RESTRICTED (Internal) dan SECRET | Butir 4.17 | Fani (pemilik skema SNX-ISMS-PRO-01), bersama Legal |
 
 ## Open items
 
@@ -234,3 +235,23 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Sistem: Google Drive, GLPI (SINUX Service Hub) dari defaults dan SNX-LEG-SOP-01; penggunaannya untuk dokumen ini berlabel (USULAN).
 - Klausul ISO dan Annex A: dari pengetahuan standar, bukan dari sumber; satu label "(USULAN, perlu konfirmasi konsultan)".
 - Fakta yang saya tambahkan lalu beri label setelah pemeriksaan ini: status Dimusnahkan (butir 4.3, semula tanpa label), ukuran evaluasi di prosedur 6.8 langkah 1 (semula tanpa label), permintaan wipe lewat GLPI (6.7 langkah 4).
+
+## Sweep
+
+Putaran sweep 15 Okt 2026, instruksi /tmp/claude-0/prompts/LEG-SOP-03.sweep.txt. Dua butir, empat perubahan teks di spec dan satu di notes. Fakta, angka, nama, dan struktur lain tidak diubah. Temuan pemeriksa dibaca dari qa/LEG-SOP-03.verify.json (verdict PASS, tidak ada blocking); temuan nonblocking lain di berkas itu di luar dua butir sweep dan tidak disentuh.
+
+| Butir | Lokasi | Sebelum | Sesudah |
+|---|---|---|---|
+| 1a | Definisi GLPI | "Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation." | "Sistem tiket SINUX Service Hub yang dipakai departemen selain Operation (USULAN)." Dasar: config/defaults.json "ticketing" menyatakan batas "generalist" belum dirinci owner; USULAN baris 1 |
+| 1b | Butir 4.17 | "Dokumen RESTRICTED (Internal) dan SECRET tidak dikirim lewat kanal pribadi. Pengiriman dan pencetakan dokumen legal mengikuti aturan per tingkat di SNX-ISMS-PRO-01." | Disisipi "Padanan istilah dokumen rahasia dengan kedua tingkat ini berstatus (USULAN)." sebelum kalimat Pengiriman. Kalimat ini sejajar dengan SNX-LEG-SOP-01 butir 4.23; USULAN baris 24. Sumber 19pe memakai "Dokumen rahasia tidak dikirim melalui kanal pribadi." |
+| 2a | Bagian 5, baris Line Manager Legal dan Staff Legal | "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." dan idem untuk JA-09 | "Peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)." dan idem untuk JA-09. Rumusan sama dengan SNX-LEG-SOP-02; kedua nama ditulis sebagai nama peran |
+| 2b | Bagian 11, baris SNX-HR-ORG-01 | "Line Manager Legal dan Staff Legal dipetakan ke JA-08 dan JA-09, menunggu konfirmasi (K-13)." | "Peran Line Manager Legal dan Staff Legal dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN, butir K-13)." Rumusan sama dengan SNX-LEG-SOP-01 dan 02 |
+| 2c | Pemilik rekaman Legal | Tabel Rekaman: "pemilik Line Manager Legal" di seluruh baris; butir 4.26: Line Manager Legal pemilik rekaman, Staff Legal pencatat (USULAN) | Tidak diubah. Dokumen ini adalah SNX-LEG-SOP-03 sehingga menjadi acuan. Pembandingan: specs/LEG-SOP-01.json (pemilik Line Manager Legal di 9 baris rekaman) dan specs/LEG-SOP-02.json (pencatat Staff Legal, pemilik Line Manager Legal) sudah sama, jadi tidak ada selisih untuk diselaraskan |
+
+Catatan: process_owner "Departemen Legal" (unit, sesuai sumber) berbeda dari "Line Manager Legal" di SNX-LEG-SOP-01 dan 02. Itu pemilik dokumen, bukan pemilik rekaman, dan di luar dua butir sweep; tetap dicatat di Open items 14.
+
+Uji sesudah sweep (semua dari /home/claude/iso-run, keluaran ke /tmp/pen-LEG-SOP-03/):
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-SOP-03.json /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx` sukses.
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx sop`: `"pass": true`, `"fails": []`, warn "42 butir (USULAN) menunggu ACC".
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx`: "All validations PASSED!".
+- `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx`: `ok	22	LEG-SOP-03.docx	[]`.
