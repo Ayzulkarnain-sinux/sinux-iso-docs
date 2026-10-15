@@ -85,13 +85,13 @@ Checklist tidak memberi acuan klausul untuk baris ini. Bagian Acuan Klausul ISO 
 | U6 | Baris sebuah jabatan di Tabel 2 memuat kode pelatihan yang sasarannya sama dengan tingkatan atau kode jabatan itu | Butir 4.6 | Aziz |
 | U7 | Sasaran peserta berhenti di tingkatan atau kode jabatan, tanpa nama karyawan | Butir 4.7 | Aziz; Legal untuk sisi data pribadi |
 | U8 | Baris Tabel 1 yang sudah disetujui tidak dihapus dan Jadwal rencana tidak diubah | Butir 4.8 | Aziz |
-| U9 | HR Manager mencatat sendiri baris dari SOP-10 dan SOP-12; selain itu HRGA Officer mencatat | Butir 4.9, 7.6 | Aziz |
-| U10 | Pembagian tugas HR Manager (menetapkan, memeriksa, meninjau), HRGA Officer (mencatat, menurunkan Tabel 2), Direktur Utama (menyetujui) | Bagian Peran | Aziz; Samuel untuk peran penyetuju |
+| U9 | HR Lead mencatat sendiri baris dari SOP-10 dan SOP-12; selain itu HRGA Officer mencatat | Butir 4.9, 7.6 | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
+| U10 | Pembagian tugas HR Lead (menetapkan, memeriksa, meninjau), HRGA Officer (mencatat, menurunkan Tabel 2), Direktur Utama (menyetujui) | Bagian Peran | Aziz; Samuel untuk peran penyetuju; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U11 | Empat jenis pelatihan beserta artinya | Bagian Jenis Pelatihan | Aziz |
 | U12 | Langkah pengisian 7.1 sampai 7.11 | Bagian Cara Mengisi | Aziz |
-| U13 | Lokasi rekaman: folder Google Drive Departemen HR; pemilik HR Manager | Bagian Rekaman | Aziz |
-| U14 | SNX-HR-SOP-10 mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini | Dokumen Terkait | Aziz |
-| U15 | SNX-HR-SOP-12 mencatat tindakan pelatihan atas kesenjangan keterampilan di form ini | Dokumen Terkait | Aziz |
+| U13 | Lokasi rekaman: folder Google Drive Departemen HR; pemilik HR Lead | Bagian Rekaman | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
+| U14 | SNX-HR-SOP-10 mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini | Dokumen Terkait | Aziz; diubah W9: rujukan dialihkan ke SNX-HR-SOP-10 bagian 9 (LEAD G-3 B4 butir 5) dan ditulis "butir 4.4 dan 4.9 form ini" (R2) |
+| U15 | SNX-HR-SOP-12 mencatat tindakan pelatihan atas kesenjangan keterampilan di form ini | Dokumen Terkait | Aziz; diubah W9: rujukan butir ditulis "butir 4.4 dan 4.9 form ini" (R2) |
 | U16 | Peninjauan lebih awal bila SNX-HR-FRM-01 atau SNX-HR-ORG-01 berubah (peninjauan tahunan sendiri dari review_period YEARLY) | Kesimpulan | Aziz |
 | U17 | Klausul ISO 9001:2015 7.2 dan 7.3, ISO/IEC 27001:2022 7.2, 7.3, dan Annex A 6.3 | Acuan Klausul ISO | Konsultan (SoA dan pemetaan klausul), dicatat Legal |
 
@@ -102,9 +102,9 @@ Jumlah USULAN: 17 butir. Label "(USULAN)" tercetak 17 kali di dokumen, termasuk 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
 | 1 | Tingkatan jabatan belum bernilai: Tabel 1 SNX-HR-FRM-01 kosong dan garis lapor JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 masih menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-04). Sasaran peserta berdasarkan tingkatan baru bisa diisi sesudah itu | Aziz, lalu owner untuk garis lapor; diubah W9: JA-03 dan JA-04 kini dua garis tegas ke Direktur dan Direktur Utama (LEAD G-3 A3), tidak menunggu; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu (A4) |
-| 2 | Isi Identitas Rencana, Tabel 1, dan Tabel 2 kosong dan menunggu keputusan HR Manager. Tidak ada sumber yang menyebut pelatihan, jadwal, atau sasaran SINUX | Aziz |
+| 2 | Isi Identitas Rencana, Tabel 1, dan Tabel 2 kosong dan menunggu keputusan HR Lead. Tidak ada sumber yang menyebut pelatihan, jadwal, atau sasaran SINUX | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | 3 | SOP Training & Development belum terlihat sebagai berkas (checklist baris 5 tanpa tautan; worklist HOLD-T3 mencatat "tim menandai ada"). Form ini menyebutnya "dalam peninjauan". Periksa ulang saat berkas terlihat dan selaraskan dasar kebutuhan di butir 4.4 | Aziz; LEAD untuk status HOLD |
-| 4 | Penyetuju rencana tiap tahun: blok Approved By berisi Direktur Utama (template, D2). Belum diputus apakah tiap salinan tahunan perlu tanda tangan Direktur Utama atau cukup HR Manager | Owner atau Samuel |
+| 4 | Penyetuju rencana tiap tahun: blok Approved By berisi Direktur Utama (template, D2). Belum diputus apakah tiap salinan tahunan perlu tanda tangan Direktur Utama atau cukup HR Lead | Owner atau Samuel; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | 5 | Retensi dan lokasi salinan tahunan: retensi "Belum ditetapkan", lokasi berlabel USULAN mengikuti pola SOP-10, SOP-12, dan FRM-01 | Legal untuk retensi; Aziz untuk lokasi dan pemilik |
 | 6 | Jumlah peserta per pelatihan dan anggaran tidak punya kolom. Bila perlu untuk perencanaan biaya, tambahkan kolom atau tabel | Aziz bersama FAT |
 | 7 | Jam pelatihan minimum per karyawan per tahun: tidak ada sumber, tidak ditulis | Aziz |
@@ -169,11 +169,12 @@ Uji sesudah sweep: render_sop.py lalu lint_doc.py generic = "pass": true (satu w
 | Butir | Sebelum | Sesudah |
 |---|---|---|
 | A2 | Process Owner, Reviewed, butir 4.2 dan 4.9, bagian Peran, butir 7.4 sampai 7.11, Identitas Rencana, Tabel 2 JA-14, Rekaman, Kesimpulan, Dokumen Terkait SOP-12 | HR Manager | HR Lead |
+| R2 1 | Dokumen Terkait SNX-HR-SOP-12 | Rotation: ... di form ini (butir 4.4 dan 4.9) (USULAN). | Rotation: ... di form ini (butir 4.4 dan 4.9 form ini) (USULAN). Butir 4.4 dan 4.9 milik form ini (SNX-HR-SOP-12 butir 4.4 berisi pemisahan peran dan butir 4.9 masa rotasi). |
 | 5 | Dokumen Terkait SNX-HR-SOP-10 | Promotion: menurut dokumen itu, HR Manager mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9) (USULAN). | Promotion: menurut bagian 9 dokumen itu (baris Keputusan menyetujui dengan syarat), HR Lead mencatat tindakan pemenuhan syarat kenaikan jabatan di form ini (butir 4.4 dan 4.9 form ini) (USULAN). |
-
-- SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan (kolom Tingkatan di Tabel 2 dikosongkan menurut butir 4.2).
+| R2 | Notes USULAN U9, U10, U13 dan open item 2, 4 | HR Manager | HR Lead, dengan catatan "diubah W9" di baris itu |
+- SPV tidak ditambahkan: kolom Tingkatan ada di Tabel 2 dan dikosongkan menurut butir 4.2, jadi tidak ada tingkat jabatan yang ditulis; SPV tidak ditambah (diubah R2: alasan lama "dokumen tidak punya kolom tingkat jabatan" tidak tepat).
 - A3: dokumen hanya mendaftar JA-03 dan JA-04 sebagai baris Tabel 2; tidak ada garis lapor atau tingkatan yang dihitung. Tidak ada perubahan.
-- B4: "SOP Training & Development, dalam peninjauan" sudah seragam di Ruang Lingkup dan Dokumen Terkait; tidak diubah. Rujukan ke SNX-HR-SOP-10 bagian 9 dicek terhadap kerangka: baris Keputusan menyetujui dengan syarat ada dan memuat pencatatan ke SNX-HR-FRM-02. Rujukan "butir 4.4 dan 4.9" di baris SNX-HR-SOP-12 adalah butir form ini; SNX-HR-SOP-12 butir 4.3 dan 6.5 memuat pencatatan ke SNX-HR-FRM-02, jadi baris itu tidak diubah selain jabatan.
+- B4: "SOP Training & Development, dalam peninjauan" sudah seragam di Ruang Lingkup dan Dokumen Terkait; tidak diubah. Rujukan ke SNX-HR-SOP-10 bagian 9 dicek terhadap kerangka: baris Keputusan menyetujui dengan syarat ada dan memuat pencatatan ke SNX-HR-FRM-02. Rujukan "butir 4.4 dan 4.9" di baris SNX-HR-SOP-12 adalah butir form ini (R2: kini ditulis "butir 4.4 dan 4.9 form ini", sama dengan baris SNX-HR-SOP-10); SNX-HR-SOP-12 butir 4.3 dan 6.5 memuat pencatatan ke SNX-HR-FRM-02, jadi baris itu tidak diubah selain jabatan.
 
 Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
 - ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
