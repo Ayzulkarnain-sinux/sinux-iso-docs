@@ -27,7 +27,7 @@
         {"h2": "Tujuan"},
         {"p": "Form ini mencatat penyebab suatu insiden, breach SLA, atau ketidaksesuaian audit, tindakan yang diambil, dan hasil verifikasi bahwa tindakan itu efektif. Satu RCA memakai satu form dan satu nomor RCA."},
         {"h2": "Lingkup"},
-        {"p": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 butir 6.5), untuk breach SLA (SNX-OPS-SOP-05 Bagian 6.6), dan untuk ketidaksesuaian audit."},
+        {"p": "RCA dengan form ini wajib untuk insiden P1 dan P2 dan insiden berulang (SNX-OPS-SOP-04 butir 6.5), untuk breach SLA (SNX-OPS-SOP-05 butir 6.6), dan untuk ketidaksesuaian audit."},
         {"p": "Form ini tidak mewajibkan RCA untuk insiden P3 dan P4 yang tidak berulang. Pilihan Keluhan pelanggan dan Lainnya di bagian Identitas juga tidak mewajibkan RCA (USULAN)."},
         {"p": "Tiket tetap dicatat di SNX-OPS-FRM-08 dan change request di SNX-OPS-FRM-04; form ini hanya memuat nomornya. Insiden keamanan informasi dicatat juga di SNX-ISMS-FRM-02."}
       ]

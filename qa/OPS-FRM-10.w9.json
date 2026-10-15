@@ -2,36 +2,44 @@
  "key": "OPS-FRM-10",
  "cluster": "OPS-REF",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Dokumen Terkait baris SNX-OPS-SOP-05: 'Bagian 6.6' diubah menjadi 'butir 6.6'. Butir 13 menyebut 6.6 sudah benar, jadi perubahan ini tidak diminta. Bentuk 'butir N.M' sesuai aturan RUJUKAN SILANG dan maknanya tetap, tetapi kalimat Lingkup masih menulis 'SNX-OPS-SOP-05 Bagian 6.6'. Akibatnya satu tujuan ditulis dengan dua bentuk dalam dokumen yang sama. Kosmetik; selaraskan bila ada putaran polish.",
-  "Dokumen Terkait baris SNX-OPS-SOP-04 memakai 'Bagian 3' (B kapital, awal kalimat), sedangkan tabel Istilah memakai 'bagian 3'. Kosmetik.",
-  "Baris Dokumen Terkait SNX-OPS-SOP-04 tidak menyebut 'insiden berulang' sebagai isi bagian 3, padahal tabel Istilah merujuk ke sana. Sebelumnya juga tidak disebut, jadi ini bukan regresi.",
-  "Teks sesudah memuat kata 'penyusun' 2 kali ('menandatangani sebagai penyusun', 'Penyusun, pemeriksa, dan penyetuju dokumen'). Keduanya kalimat lama yang tidak diubah W9 dan menyebut peran penandatangan dokumen, bukan proses penyusunan. Tidak masuk cek bahasa kalimat yang berubah."
+  "notes/OPS-FRM-10.md bagian ISO-W9 masih memuat kalimat 'Rujukan \"SNX-OPS-SOP-05 Bagian 6.6\" di Lingkup tidak diubah (tujuan ada dan cocok).', padahal R2 mengubahnya menjadi 'butir 6.6'. Tabel R2 di bawahnya sudah mencatat perubahan itu, tetapi kalimat lama kini tidak akurat.",
+  "notes/OPS-FRM-10.md Open item 13 memakai format '(ditutup W9: ...)' dalam kurung. R2 butir 2 meminta format dipisah titik koma di akhir baris. Isinya sudah ada, hanya formatnya beda.",
+  "Dokumen Terkait SNX-OPS-SOP-04: frasa lama 'Bagian 4 memuat definisi insiden, Bagian 6 severity' kini digabung menjadi 'Bagian 3 memuat definisi insiden dan severity'. Ini akibat wajar dari dua rujukan yang menunjuk tujuan yang sama dan maknanya tidak berubah.",
+  "Kapitalisasi tidak seragam: 'bagian 3' (huruf kecil) di tabel Istilah, 'Bagian 3' (huruf kapital) di awal kalimat Dokumen Terkait. Perbedaan ini wajar karena posisi kata di kalimat."
  ],
  "butir_dikerjakan": [
-  "Butir 1 / G-2 butir 1: enam rujukan basi diganti dan tabel Dokumen Terkait diselaraskan. Tujuan dicek di /tmp/claude-0/w9/struct/OPS-SOP-04.txt dan OPS-SOP-05.txt.",
-  "Butir 3 (R237): Lingkup 'SNX-OPS-SOP-04 Bagian 7.5' menjadi 'butir 6.5'. Butir 6.5 'RCA dan Tindakan Korektif' ada; langkah 1 (RCA P1/P2) dan langkah 2-3 (insiden berulang sebagai problem, wajib RCA) cocok.",
-  "Butir 4 (R239): Insiden 'Bagian 4' menjadi 'bagian 3'. Baris 'Insiden | Gangguan tidak terencana atau penurunan mutu layanan' ada di bagian 3 dan cocok.",
-  "Butir 5 (R240): Severity 'Bagian 6' menjadi 'bagian 3'. Baris 'Severity | P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah' ada di bagian 3 dan cocok.",
-  "Butir 6 dan 7 (R241, R242): Insiden berulang 'Bagian 7.5 butir 3' menjadi 'bagian 3'. Baris 'Insiden berulang | 3 kali atau lebih ... 30 hari' ada di bagian 3 dan cocok.",
-  "Butir 8 (R243): Breach SLA 'SNX-OPS-SOP-05 Bagian 4' menjadi 'bagian 3'. Baris Breach ada di bagian 3 SOP-05 dengan teks identik.",
-  "Butir 9 (R244): Downtime yang dihitung 'SNX-OPS-SOP-05 Bagian 4' menjadi 'bagian 3'. Baris 'Downtime yang dihitung' ada di bagian 3 SOP-05 dengan teks identik.",
-  "Butir 10-12 (R245-R247): Dokumen Terkait SOP-04 kini berbunyi 'Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA.' Kedua tujuan cocok.",
-  "Butir 13 (R248): Dokumen Terkait SOP-05 kini berbunyi 'Bagian 3 memuat definisi breach dan downtime yang dihitung'. Tujuan cocok; 6.6 'Penanganan breach' ada.",
-  "notes/OPS-FRM-10.md: bagian '## ISO-W9' berisi tabel 8 baris perubahan. Open item 13 tidak dihapus; statusnya diberi '(ditutup W9: ...)'.",
-  "Data defaults v22: meta.approval OPS sama persis dengan v22. Prepared 'Erik Dwi Yanto / Technical/Operation Engineer L1', Reviewed 'Fani Fatullah / VP Tech Operation and Services', Approved 'Samuel Kristanto Utomo / President Director' (approved_by.all). Process owner 'Head of Operation' tidak berubah. Butir data HR, Legal, FAT, COM tidak berlaku untuk dokumen OPS ini.",
-  "Diff teks hanya mengubah 8 baris, semuanya rujukan. Nol fakta baru dan nol em-dash pada kalimat yang berubah. Tidak ada pasif baru dan tidak ada rujukan AI."
+  "Butir 1 (G-2 butir 1): enam rujukan basi ke SNX-OPS-SOP-04 dan SNX-OPS-SOP-05 diganti, tabel Dokumen Terkait ikut diselaraskan.",
+  "Butir 3 (R237): Lingkup, SNX-OPS-SOP-04 Bagian 7.5 diganti butir 6.5. Butir 6.5 'RCA dan Tindakan Korektif' ada, dan langkah 1 sampai 3 memuat RCA P1/P2 serta insiden berulang.",
+  "Butir 4 (R239): Insiden, Bagian 4 diganti bagian 3. Baris 'Insiden' ada di tabel definisi bagian 3 SOP-04.",
+  "Butir 5 (R240): Severity, Bagian 6 diganti bagian 3. Baris Severity dan P1 sampai P4 ada di bagian 3.",
+  "Butir 6 dan 7 (R241, R242): Insiden berulang, 'Bagian 7.5 butir 3' diganti bagian 3. Baris 'Insiden berulang' (3 kali atau lebih dalam 30 hari) ada di bagian 3.",
+  "Butir 8 (R243): Breach SLA, SNX-OPS-SOP-05 Bagian 4 diganti bagian 3. Baris Breach ada di bagian 3 SOP-05.",
+  "Butir 9 (R244): Downtime yang dihitung, Bagian 4 diganti bagian 3. Baris itu ada di bagian 3 SOP-05.",
+  "Butir 10 sampai 12 (R245, R246, R247): Dokumen Terkait SOP-04 kini 'Bagian 3 memuat definisi insiden dan severity, butir 6.5 kewajiban RCA'.",
+  "Butir 13 (R248): Dokumen Terkait SOP-05 kini 'Bagian 3 memuat definisi breach dan downtime yang dihitung, butir 6.6 penanganan breach'. Butir 6.6 'Penanganan breach' ada.",
+  "Butir 2 (A9, notes saja): notes OPS-FRM-01, OPS-FRM-04, OPS-FRM-05, OPS-FRM-08, dan ISMS-FRM-02 masing-masing memuat 'ditutup W9: diputus owner 15 Okt' (2 kemunculan per berkas di git diff).",
+  "R2 butir 1: Lingkup, 'SNX-OPS-SOP-05 Bagian 6.6' diseragamkan menjadi 'butir 6.6'.",
+  "R2 butir 2: Open item 1, Open item 8, dan USULAN 5 diberi 'diubah W9: ...' di baris itu sendiri. Open item 13 diberi 'ditutup W9: ...'.",
+  "Notes: bagian '## ISO-W9' berisi tabel perubahan (butir | sebelum | sesudah) ditambah tabel R2. Tidak ada baris open item yang dihapus.",
+  "Blok approval tidak berubah dan sama persis dengan defaults v22: OPS prepared Erik Dwi Yanto / Technical/Operation Engineer L1; reviewed Fani Fatullah / VP Tech Operation and Services; approved Samuel Kristanto Utomo / President Director.",
+  "Spec SNX-OPS-SOP-04 dan SNX-OPS-SOP-05 tidak berubah sejak commit 4a40352 (git diff --stat kosong), jadi kerangka struct menggambarkan tujuan rujukan dengan benar."
  ],
  "butir_tidak_dikerjakan": [
-  "Nihil untuk OPS-FRM-10. Butir 2 (A9, notes lima form xlsx) dan butir 14 (ISMS-SOP-01) bukan bagian dokumen ini dan tidak diperiksa di sini."
+  "Butir 14 (ISMS-SOP-01, S05) di luar lingkup dokumen yang diperiksa ini, jadi tidak dinilai."
  ],
- "grep": "Grep atas teks render sesudah (/tmp/claude-0/w9/render/OPS-FRM-10.docx): 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, 'Bagian 7.5' 0, 'Bagian 4' 0, 'SOP-04 Bagian 6' 0, 'butir 6.5' 2, 'bagian 3' 5, 'dokumen sumber' 0, 'draf ini' 0. OPS-FRM-10 bukan dokumen HR atau Legal, jadi aturan langkah 7 tidak berlaku, dan hasilnya tetap 0.",
+ "grep": "Hasil grep pada teks render terkini /tmp/claude-0/w9/render/OPS-FRM-10.docx. OPS-FRM-10 adalah dokumen OPS, bukan HR dan bukan Legal, jadi aturan langkah 7 tidak berlaku. Hasil hitung: 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0. Sisa rujukan lama 'Bagian 4', 'Bagian 6', 'Bagian 7.5', dan 'Bagian 6.6': semuanya 0. Rujukan baru: 'butir 6.5' 2, 'butir 6.6' 2, 'bagian 3' 5, 'Bagian 3' 2. Diff teks hanya mengubah 8 baris, semuanya rujukan; kalimat lain tidak berubah. Notes juga 0 em-dash.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }

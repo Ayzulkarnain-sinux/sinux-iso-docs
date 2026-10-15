@@ -95,7 +95,7 @@ Cacat tambahan di luar bagian 5 audit:
 | 2 | Severity dan item waktu di Bagian 1 diisi hanya untuk RCA insiden | Petunjuk langkah 3 | Fani |
 | 3 | Durasi dampak dihitung dari Waktu mulai gangguan sampai Waktu pulih | Petunjuk langkah 4 | Fani |
 | 4 | Baris tabel Tindakan boleh ditambah bila satu jenis tindakan lebih dari satu | Petunjuk langkah 7 | Fani |
-| 5 | Head of Operation menutup RCA sesudah verifikasi dan mengisi baris "Penutupan RCA" (nama, jabatan, tanggal); dasar: SOP-04 menjadikan Head of Operation penanggung jawab P1 sampai RCA selesai, SOP-05 Bagian 6.6 menjadikannya penetap tindakan breach | Peran, Petunjuk langkah 13, baris Penutupan RCA di Verifikasi efektivitas | Fani |
+| 5 | Head of Operation menutup RCA sesudah verifikasi dan mengisi baris "Penutupan RCA" (nama, jabatan, tanggal); dasar: SOP-04 menjadikan Head of Operation penanggung jawab P1 sampai RCA selesai, SOP-05 Bagian 6.6 menjadikannya penetap tindakan breach; diubah W9: rujukan di dokumen kini "butir 6.6" (R2) | Peran, Petunjuk langkah 13, baris Penutupan RCA di Verifikasi efektivitas | Fani |
 | 6 | Head of Operation menunjuk Pemverifikasi untuk tiap RCA (sumber tidak menyebut peran pemverifikasi) | Peran | Fani |
 | 7 | Rekaman RCA disimpan di folder Drive Operation, subfolder per tahun, pemilik Head of Operation (retensi 5 tahun dari sumber) | Rekaman | Fani |
 | 8 | Tiga penanda tangan (Erik Dwi Yanto, Fani Fatullah, Samuel Kristanto Utomo) menggantikan Head of Operation, ISO/ISMS Coordinator, dan COO, Amirull Yusuf Zulkarnain di sumber. Menurut defaults.json semua baris penanda tangan USULAN di Master List; pembalik: form operasional disetujui COO bila owner memutus | Blok Approval halaman depan (tidak ada marker di badan dokumen) | Owner, Samuel untuk persetujuannya sendiri |
@@ -106,14 +106,14 @@ Jumlah USULAN: 8 butir (9 penanda "(USULAN)" di badan dokumen karena butir 5 mun
 
 | # | Open item | Untuk |
 |---|---|---|
-| 1 | Urutan kirim dan tutup: urutan gambar sumber (kirim sebelum efektif) dan judul gambar (tutup sesudah efektif) berbeda bacaan. Spec memisahkan "kirim" dan "tutup" berdasarkan SOP-04 Bagian 7.5. Perlu konfirmasi bahwa RCA terkirim dengan tindakan yang masih berjalan | Fani |
+| 1 | Urutan kirim dan tutup: urutan gambar sumber (kirim sebelum efektif) dan judul gambar (tutup sesudah efektif) berbeda bacaan. Spec memisahkan "kirim" dan "tutup" berdasarkan SOP-04 Bagian 7.5. Perlu konfirmasi bahwa RCA terkirim dengan tindakan yang masih berjalan; diubah W9: Bagian 7.5 tidak ada di render SOP-04 sekarang, kewajiban RCA ada di butir 6.5 | Fani |
 | 2 | Kapan memakai 5 Why, Fishbone, atau keduanya tidak ditulis di sumber; gambar menulis "dan", form memberi pilihan | Fani |
 | 3 | Pelaku tidak tertulis di sumber: pencatatan nomor RCA di kolom No RCA SNX-OPS-FRM-08 (langkah 5), penambahan risiko baru ke SNX-ISMS-REG-02 (catatan di bawah tabel Tindakan, pemilik REG-02 menurut audit: ISMS Coordinator), pencatatan insiden keamanan informasi di SNX-ISMS-FRM-02 (Lingkup). Kalimatnya dibiarkan tanpa pelaku | Fani, lane ISMS |
 | 4 | Peran Pemverifikasi dan penutup RCA belum ada di sumber (USULAN 5 dan 6); kolom "Diverifikasi oleh" kosong di sumber | Fani |
 | 5 | SOP-04 Bagian 5 menugaskan Service Delivery Manager memastikan RCA terkirim dan Lead NOC menyusun RCA P1 dan P2; FRM-10 sumber menugaskan Head of Operation menyetujui dan mengirim, dan Lead NOC atau Lead SOC menyusun tanpa menyebut kapan NOC dan kapan SOC. SOP-04 dan form ini perlu selaras | Fani, lane OPS-SOP-04 |
 | 6 | Kriteria efektif baku belum ada; "90 hari" dan "alert baru terbukti menangkap gejala" di sumber hanya contoh | Fani |
 | 7 | Tujuan penyimpanan lessons learned: sumber menulis "disetor ke knowledge base" lewat jalur internal yang dibuang; field "Lessons learned disimpan di" dibiarkan kosong. Sama dengan open item 10 di notes OPS-FRM-06 | Owner, Fani |
-| 8 | Penerima dan tenggat RCA untuk breach SLA dan ketidaksesuaian audit tidak tertulis; 2 hari kerja hanya untuk RCA insiden. SOP-05 Bagian 6.6 menyerahkan konsekuensi kontraktual ke Commercial tanpa menyebut pengiriman RCA | Fani |
+| 8 | Penerima dan tenggat RCA untuk breach SLA dan ketidaksesuaian audit tidak tertulis; 2 hari kerja hanya untuk RCA insiden. SOP-05 Bagian 6.6 menyerahkan konsekuensi kontraktual ke Commercial tanpa menyebut pengiriman RCA; diubah W9: rujukan di dokumen kini "butir 6.6" (R2) | Fani |
 | 9 | Nilai kolom Status di tabel Tindakan tidak didefinisikan di sumber; penerbit dan penyimpan nomor urut RCA-[YYYY]-[nomor urut] tidak tertulis | Fani |
 | 10 | Disetujui oleh di sumber: COO, Amirull Yusuf Zulkarnain; spec memakai Samuel Kristanto Utomo / President Director sesuai prompt (USULAN 8) | Owner |
 | 11 | Kalimat perintah di sumber (dicatat sebagai data): "Fokus pada sistem dan proses, bukan menyalahkan orang.", "Tindakan yang mengubah production dijalankan melalui SNX-OPS-SOP-02.", "Risiko baru yang ditemukan ditambahkan ke SNX-ISMS-REG-02." Semuanya aturan pemakaian form untuk karyawan, bukan perintah ke penyusun; masuk ke dokumen sebagai substansi tim (T1), tidak dijalankan sebagai instruksi | Orkestrator |
@@ -184,3 +184,12 @@ Rujukan "SNX-OPS-SOP-05 Bagian 6.6" di Lingkup tidak diubah (tujuan ada dan coco
 Open item yang ditutup atau diubah:
 
 - Open item 13: ditutup W9: nomor bagian SOP-04 dan SOP-05 dicocokkan dengan render sekarang dan enam rujukan basi diganti.
+
+R2 (putaran kedua):
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| R2, Lingkup, kalimat RCA wajib | (SNX-OPS-SOP-05 Bagian 6.6) | (SNX-OPS-SOP-05 butir 6.6) |
+| R2, notes Open item 1, 8 dan USULAN 5 | tanpa catatan W9 | diberi "diubah W9: <alasan>" pada barisnya |
+
+- R2: rujukan "SNX-OPS-SOP-05 butir 6.6" di Lingkup kini seragam dengan "butir 6.6" di Dokumen Terkait.
