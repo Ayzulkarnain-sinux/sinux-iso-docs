@@ -221,3 +221,19 @@ Hasil uji sweep (menggantikan "Hasil terakhir" di bagian 3):
 | `python3 -I tools/lint_doc.py /tmp/pen-LEG-REG-01/LEG-REG-01.docx generic` | "pass": true, "fails": [], warns: 14 butir (USULAN) menunggu ACC (sebelumnya 10) |
 | `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-REG-01/LEG-REG-01.docx` | All validations PASSED |
 | `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-REG-01/LEG-REG-01.docx` | ok (11 halaman, tanpa halaman kosong) |
+
+
+## ISO-W9
+
+Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir di bawah yang berubah.
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| meta.approval, blok Prepared dan Reviewed | Prepared "Staff Legal"; Reviewed "Line Manager Legal" | Prepared "Alif Altamziz / Staff Legal"; Reviewed "Ester Febe Utomo / Line Manager Legal" (config/defaults.json v22 prepared_reviewed.LEG) |
+| A5, Peran, baris Staff Legal | "... (JA-09) di SNX-HR-ORG-01 (USULAN)." | "... (JA-09) di SNX-HR-ORG-01." |
+| A5, Peran, baris Line Manager Legal | "... (JA-08) di SNX-HR-ORG-01 (USULAN)." | "... (JA-08) di SNX-HR-ORG-01." Label USULAN pada pemilik dokumen tetap |
+| A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... (JA-08 dan JA-09) (USULAN)." | "... (JA-08 dan JA-09)." |
+
+Open item:
+
+- Open item 17 (pemetaan peran ke JA-08 dan JA-09): ditutup W9: pemetaan diputus owner (LEAD G-3 A5), label USULAN pemetaan dihapus.

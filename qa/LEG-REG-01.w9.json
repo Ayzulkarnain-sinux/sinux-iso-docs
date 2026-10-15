@@ -1,0 +1,34 @@
+{
+ "key": "LEG-REG-01",
+ "cluster": "LEG-B",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Butir 2 (rujukan SNX-LEG-SOP-03 bagian 8 untuk Lokasi Simpan Salinan Elektronik dan Lokasi Dokumen Asli) menyangkut kalimat di LEG-REG-04. Kalimat itu tidak ada di LEG-REG-01 (grep 'Lokasi Dokumen Asli' = 0 sebelum dan sesudah), jadi butir ini tidak berlaku di sini. Rujukan SNX-LEG-SOP-03 yang ada (4 kemunculan) tidak berubah.",
+  "Frasa huruf kecil 'folder Google Drive departemen Legal' (Ketentuan butir 10 dan baris rekaman) sudah ada sebelum W9 dan tidak tercakup butir 'Divisi Legal'. Bentuk ini tidak bertentangan dengan unit_names v22, jadi tetap nonblocking.",
+  "Label USULAN di luar pemetaan tetap ada, sesuai instruksi: pemilik dokumen/rekaman, jabatan Pejabat yang Berwenang belum dipetakan, kolom Penanggung Jawab, dan klausul konsultan. Jumlah '(USULAN)' turun dari 14 ke 11, tepat 3 label pemetaan JA-08/JA-09."
+ ],
+ "butir_dikerjakan": [
+  "A5/G-3: blok Prepared = 'Alif Altamziz / Staff Legal' dan Reviewed = 'Ester Febe Utomo / Line Manager Legal', persis defaults v22 prepared_reviewed.LEG. Approved tetap 'Samuel Kristanto Utomo / President Director' (approved_by.all).",
+  "A5: label (USULAN) dihapus pada pemetaan Staff Legal -> JA-09 (tabel Peran).",
+  "A5: label (USULAN) dihapus pada pemetaan Line Manager Legal -> JA-08 (tabel Peran). Label USULAN pada 'Pemilik dokumen dan pemilik rekaman' tetap.",
+  "A5: label (USULAN) dihapus pada baris Dokumen Terkait SNX-HR-ORG-01 (pemetaan JA-08 dan JA-09).",
+  "A5: nama orang hanya ada di blok Prepared/Reviewed (Alif 1x, Ester 1x, baris 54 dan 58 teks render). Badan dokumen tetap memakai nama peran. Daffa = 0.",
+  "Pemetaan cocok dengan kerangka SNX-HR-ORG-01: JA-08 Legal & Compliance Ester Febe Utomo, JA-09 Legal & Compliance Alif Altamziz.",
+  "Bahasa: perubahan hanya berupa penghapusan label dan pengisian nama. Tidak ada kalimat baru, em-dash = 0, frasa proses penyusunan = 0, tidak ada rujukan AI. Tidak ada fakta baru di luar defaults v22 dan LEAD-GUIDE G-3 A5. Tidak ada rujukan silang yang diubah.",
+  "Notes: bagian '## ISO-W9' dengan tabel perubahan ada di notes/LEG-REG-01.md."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Butir 2 (rujukan LEG-REG-04 ke SNX-LEG-SOP-03 bagian 8) tidak berlaku untuk LEG-REG-01 karena kalimat sasarannya ada di LEG-REG-04. Ini bukan kelalaian."
+ ],
+ "grep": "Teks render sesudah (/tmp/claude-0/w9/render/LEG-REG-01.docx): 'Divisi Legal' = 0 (sebelum juga 0); 'HR Manager' = 0; 'menunggu konfirmasi' = 0; 'K-13' = 0; 'Daffa' = 0; em-dash = 0; frasa proses (dokumen sumber|sumber tim|di sumber|draf ini|belum berdokumen|penyusun) = 0; 'Departemen Legal' = 6; '(USULAN)' 14 -> 11. Diff teks: 5 baris lama diganti 5 baris baru, semuanya dalam lingkup A5.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

@@ -15,8 +15,8 @@
     "effective_date": "",
     "revision_desc": "Draft awal untuk review dan pengesahan",
     "approval": {
-      "prepared": "Staff Legal",
-      "reviewed": "Line Manager Legal",
+      "prepared": "Alif Altamziz / Staff Legal",
+      "reviewed": "Ester Febe Utomo / Line Manager Legal",
       "approved": "Samuel Kristanto Utomo / President Director"
     }
   },
@@ -219,11 +219,11 @@
             "rows": [
               [
                 "Staff Legal",
-                "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01 (USULAN). Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11)."
+                "Dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01. Mengisi dan memperbarui register, meninjaunya tiap bulan, mengirim pengingat perpanjangan, menyimpan bukti pendukung, dan mencatat tindak lanjut serta hasil pemeriksaan (Ketentuan butir 1, 5 sampai 7, 9 sampai 11)."
               ],
               [
                 "Line Manager Legal",
-                "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01 (USULAN). Pemilik dokumen dan pemilik rekaman register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2)."
+                "Dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01. Pemilik dokumen dan pemilik rekaman register ini (USULAN). Memeriksa isi register dan memverifikasi akta (Ketentuan butir 2)."
               ],
               [
                 "Departemen Legal",
@@ -630,7 +630,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) (USULAN)."
+                "Struktur Organisasi SINUX. Sumber nama peran Line Manager Legal dan Staff Legal, yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09)."
               ],
               [
                 "SNX-HR-JA-01",
