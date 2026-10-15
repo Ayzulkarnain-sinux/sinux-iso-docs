@@ -4,8 +4,8 @@ Status: DRAFTED (spec + notes ada). Spec: specs/FAT-SOP-04.json. Mode sop, aksi 
 
 Hasil uji terakhir (bukti mentah: /tmp/pen-FAT-SOP-04/lint.out.txt, /tmp/pen-FAT-SOP-04/validate.out.txt, /tmp/pen-FAT-SOP-04/extra-checks.out.txt):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/FAT-SOP-04.json /tmp/pen-FAT-SOP-04/FAT-SOP-04.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-FAT-SOP-04/FAT-SOP-04.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "34 butir (USULAN) menunggu ACC". Warn PIC SLA nol.
-- Validator OOXML skill docx (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!".
+- `python3 -I tools/lint_doc.py /tmp/pen-FAT-SOP-04/FAT-SOP-04.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "37 butir (USULAN) menunggu ACC" (sesudah putaran sweep). Warn PIC SLA nol.
+- Validator OOXML skill docx (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!" (diulang sesudah putaran sweep). `python3 -I reports/orch/blankscan.py /tmp/pen-FAT-SOP-04/FAT-SOP-04.docx` sesudah sweep: "ok 15" (tanpa halaman kosong).
 - soffice ke PDF: 15 halaman. Diagram /tmp/pen-FAT-SOP-04/FAT-SOP-04_flow.png dilihat: sembilan simpul, rankdir TB, satu cabang putus-putus, teks terbaca. Montase halaman dilihat: tata letak sesuai template, tabel dan diagram tidak terpotong.
 - Pemeriksaan tambahan atas spec (skrip python3 -I di folder scratchpad sesi, bukan di repo): nol em-dash dan en-dash; nol tanda kutip ganda dan nol tebal di isi; nol temuan untuk frasa terlarang prompt (pada intinya, yang terpenting, secara fundamental, dalam rangka, adapun, perlu diketahui, dikarenakan, dapat berpotensi, praktik terbaik, para ahli, tanpa terkecuali, tanpa kompromi, dari hulu ke hilir) dan nol frasa meta proses (dokumen sumber, sumber tim, penyusun, draf ini, versi tim); nol "komersil", "diagnosa", "hutang", "CEO", "COO", "HR Lead"; langkah terpanjang 19 kata (batas 25); semua PIC di langkah dan tabel SLA ada di tabel peran bagian 5; semua kode SNX di badan ada di tabel Dokumen terkait; tidak ada "Lead" atau "tim" tanpa keterangan.
 - tools/selftest.sh tidak dijalankan (menulis ke direktori bersama penyusun paralel). Berkas config, control, tools, template, reference, ledger.json, out, qa tidak diubah. Berkas yang saya tulis hanya specs/FAT-SOP-04.json dan notes/FAT-SOP-04.md; hasil render hanya di /tmp/pen-FAT-SOP-04/.
@@ -105,7 +105,7 @@ Annex A 8.12 dari Bagian 3 PRO-01 tidak dipakai (lihat penanganan cacat).
 | A2 | Finance Lead dan Finance Staff dipakai sebagai nama peran | Ada di matriks peran SNX-HR-ORG-01 dengan status belum dipetakan; sama dengan SNX-FAT-SOP-01 dan SNX-FAT-SOP-05 |
 | A3 | "CEO" di SOP Billing = Direktur Utama | data_conflicts: sebutan Samuel di badan dokumen "Direktur Utama", termasuk saat sumber menulis CEO |
 | A4 | "bukti perpajakan" di SOP Billing 8.2 = dokumen perpajakan dan bukti potong dari klien | Padanan istilah; dokumen perpajakan diatur SNX-FAT-SOP-05 |
-| A5 | Dokumen perpajakan diarsipkan Finance Lead | SNX-FAT-SOP-05 menunjuk Finance Lead untuk langkah pengarsipan di butir 6.5 dan menyebut SOP ini sebagai acuan. Dokumen penagihan diarsipkan Finance Staff seperti di SNX-FAT-SOP-01 butir 4.12. Langkah 6.1 sampai 6.3 berlaku bagi keduanya, dengan pelaku berbeda menurut jenis dokumen (OI-10) |
+| A5 | Dokumen perpajakan diarsipkan Finance Lead | SNX-FAT-SOP-05 menunjuk Finance Lead untuk langkah pengarsipan di butir 6.5 dan menyebut SOP ini sebagai acuan. Dokumen penagihan diarsipkan Finance Staff seperti di SNX-FAT-SOP-01 butir 4.12. Untuk dokumen perpajakan, Finance Lead menjalankan butir 6.1 sampai 6.3, dengan langkah simpan dan catat yang berpelaku Finance Lead di 6.2 dan 6.3; pelaku berbeda menurut jenis dokumen (OI-10) |
 | A6 | Ejaan "hardcopy" dan "softcopy" | Mengikuti kata di Description checklist; SOP Billing menulis "hard copy" dan "soft copy" |
 | A7 | "folder Google Drive Departemen FAT" disebut "Folder arsip FAT" | Satu istilah di seluruh dokumen, didefinisikan di bagian 3 |
 | A8 | Finance Lead bertindak sebagai Pemilik informasi untuk dokumen keuangan | Pemilik informasi menurut PRO-01 = pemilik aset di SNX-ISMS-REG-01; register itu belum memuat aset FAT. USULAN |
@@ -113,7 +113,7 @@ Annex A 8.12 dari Bagian 3 PRO-01 tidak dipakai (lihat penanganan cacat).
 
 ## USULAN
 
-34 kemunculan label (USULAN) di spec (satu kemunculan adalah baris definisi label itu sendiri), dikelompokkan jadi 18 butir. Pemutus yang disarankan memakai kelompok dari RUNBOOK §11.
+37 kemunculan label (USULAN) di spec sesudah putaran sweep (satu kemunculan adalah baris definisi label itu sendiri), dikelompokkan jadi 19 butir. Pemutus yang disarankan memakai kelompok dari RUNBOOK §11.
 
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -121,20 +121,21 @@ Annex A 8.12 dari Bagian 3 PRO-01 tidak dipakai (lihat penanganan cacat).
 | U-02 | Pengecualian cakupan: pembuatan dan penerbitan dokumen, dokumen non-keuangan (legal), backup Drive. Sumber diam; diturunkan dari kriteria baris | Scope | FAT; Legal untuk dokumen legal |
 | U-03 | Definisi Hari = hari kerja (sama dengan SNX-FAT-SOP-05) | Definisi | FAT |
 | U-04 | Dokumen kertas juga diarsipkan sebagai hardcopy | Butir 4.1; bagian 6.3 | Legal dan FAT |
-| U-05 | Penerapan SNX-ISMS-PRO-01 ke FAT dan tingkat RESTRICTED (Internal) untuk dokumen keuangan | Butir 4.2 | owner |
+| U-05 | Penerapan SNX-ISMS-PRO-01 ke FAT dan tingkat RESTRICTED (Internal) untuk dokumen keuangan; cakupan PRO-01 baru Divisi Operation | Butir 4.2 | owner |
 | U-06 | Finance Lead menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain | Butir 4.4; rekaman baris 2 dan 3 | FAT |
 | U-07 | Finance Lead menyetujui penambahan akses ke Folder arsip FAT; Tempat simpan hardcopy hanya dibuka personel FAT | Butir 4.5 | FAT |
 | U-08 | Pencatatan hardcopy di Financial Document Register | Butir 4.7; bagian 6.3 langkah 3; Dokumen terkait | FAT |
 | U-09 | Retensi 10 tahun diperluas ke dokumen keuangan lain (angka sumber hanya untuk dokumen penagihan dan bukti perpajakan) | Butir 4.8; rekaman baris 3 dan 4 | FAT dan Legal |
 | U-10 | Masa retensi dihitung sejak tanggal dokumen | Butir 4.8 | Legal |
-| U-11 | Penetapan pelaku pada butir 4.1 sampai 4.9, pemilik rekaman (Finance Lead untuk hampir semua, Finance Staff untuk Financial Document Register), dan Finance Lead sebagai Pemilik informasi | Butir 4.10; tabel peran; bagian 11 | owner |
+| U-11 | Penetapan tugas Finance Staff di butir 4.1 sampai 4.9 dan 6.1 sampai 6.4 (label ada di tabel peran); pemilik rekaman dan Pemilik informasi Finance Lead; pemilik Financial Document Register Finance Staff | Tabel peran (baris Finance Staff dan Finance Lead); butir 4.10; bagian 11 | owner |
 | U-12 | Langkah memindai dokumen kertas menjadi PDF | Bagian 6.2 langkah 1 | FAT dan Legal |
 | U-13 | Pemeriksaan dokumen yang masa retensinya berakhir setiap tahun | Bagian 6.4 langkah 1; SLA baris 3 | FAT |
-| U-14 | SLA 1 hari sejak dokumen diterima atau dibuat untuk dokumen penagihan dan dokumen keuangan lain; perluasan 1 hari bukti lapor ke bukti potong | SLA baris 1 dan 2 | FAT |
+| U-14 | SLA 1 hari sejak dokumen diterima atau dibuat untuk dokumen penagihan dan dokumen keuangan lain; titik mulai hitung 1 hari bukti lapor ("sejak bukti lapor terbit"); perluasan 1 hari bukti lapor ke bukti potong | SLA baris 1 dan 2 | FAT |
 | U-15 | Cabang dokumen tidak lengkap: Finance Staff meminta dokumen yang kurang dan menunda pengarsipan | Bagian 9 baris 1; keterangan diagram | FAT |
 | U-16 | Cara Finance Lead memeriksa kepatuhan (mencocokkan hardcopy dengan register, memeriksa struktur folder) | Kesimpulan | FAT |
 | U-17 | Daftar klausul ISO 9001:2015 dan ISO/IEC 27001:2022 (label "(USULAN, perlu konfirmasi konsultan)") | Bagian 11, Acuan standar | konsultan lewat owner |
 | U-18 | process_owner Finance Lead | Identity | owner |
+| U-19 | Finance Staff sebagai pengaju pengecualian dari aturan SOP ini (PRO-01 hanya menyebut pemilik informasi dan ISMS Coordinator sebagai penyetuju) | Bagian 9 baris 4 | FAT |
 
 ## Open items
 
@@ -156,6 +157,7 @@ Annex A 8.12 dari Bagian 3 PRO-01 tidak dipakai (lihat penanganan cacat).
 | OI-14 | Ketidakselarasan SNX-FAT-SOP-01 dan SOP ini: SNX-FAT-SOP-01 mencatat lokasi bukti potong dari klien dan Berita Acara Pemusnahan Dokumen sebagai "belum ditetapkan", sedangkan SOP ini menaruh bukti potong dari klien di Folder arsip FAT (USULAN). Rekaman Berita Acara tetap "belum ditetapkan" di keduanya | FAT |
 | OI-15 | Pengganti Finance Lead bila tidak hadir saat persetujuan pemusnahan: tidak ada di sumber | owner |
 | OI-16 | Kalimat perintah kepada AI di sumber: nihil | tidak ada |
+| OI-17 | Masa simpan Berita Acara Pemusnahan Dokumen dan Financial Document Register belum ditetapkan (kolom Retensi di bagian 11 tertulis "Belum ditetapkan"); lokasinya juga belum ditetapkan (OI-14). Bukti pemusnahan tanpa masa simpan; angka tidak dikarang | FAT dan Legal |
 
 ## 6. Dua pertanyaan penutup
 
@@ -173,3 +175,32 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber:
 - Tanggal: tidak ada.
 - Kalimat tanpa kutipan langsung yang saya turunkan sendiri: definisi "Hapus aman" (diambil dari definisi di specs/ISMS-PRO-01.json; docx PRO-01 hanya menulis "Hapus aman; kertas dihancurkan"), contoh pelanggaran "hardcopy ditinggal di printer" (turunan baris Cetak PRO-01, "tidak ditinggal"), dan contoh "auditor eksternal" (SOP Tax menyebut audit eksternal). Ketiganya contoh atau definisi biasa, bukan klaim fakta baru.
 - Item yang memang tidak bersumber ditandai (USULAN) di dokumen dan ada di tabel USULAN di atas.
+
+## Sweep
+
+Putaran sweep atas butir dari orkestrator (verify nonblocking 1, 2, 3, 5, 7, 8). Hanya specs/FAT-SOP-04.json dan notes/FAT-SOP-04.md yang diubah. Cadangan sebelum sweep: /tmp/pen-FAT-SOP-04/spec.before-sweep.json dan /tmp/pen-FAT-SOP-04/notes.before-sweep.md.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1 dan verify nb 1: langkah softcopy dokumen perpajakan | Pembuka 6.1: "Finance Lead menjalankan butir yang sama untuk dokumen perpajakan". Kolom PIC di 6.1 sampai 6.3 hanya Finance Staff; tidak ada langkah simpan softcopy dokumen perpajakan | Pembuka 6.1 tetap seperti sebelum sweep (lihat Pembatalan di bawah). Tambah langkah 6.2 butir 4 (Finance Lead): "Simpan PDF dokumen perpajakan di subfolder yang Finance Lead tetapkan (butir 4.4)." Tambah tiga langkah Finance Lead di 6.3 (butir 4 sampai 6): beri label, simpan, dan catat hardcopy dokumen perpajakan |
+| verify nb 2: sel SLA baris 2 | "1 hari. Angka ini berasal dari SNX-FAT-SOP-05 untuk bukti lapor; perluasan ke bukti potong adalah (USULAN)" | "1 hari untuk bukti lapor (SNX-FAT-SOP-05), dihitung sejak bukti lapor terbit (USULAN); 1 hari untuk bukti potong (USULAN)" |
+| verify nb 3: kalimat meta status draf | Butir 4.2: "Penerapan SNX-ISMS-PRO-01 ke FAT adalah (USULAN), karena cakupan prosedur itu baru Divisi Operation." Butir 4.10: "Penetapan pelaku pada butir 4.1 sampai 4.9, ... berstatus (USULAN)." | Butir 4.2 satu kalimat: "Dokumen keuangan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang cakupannya baru Divisi Operation (USULAN)." Butir 4.10: "Kepemilikan rekaman. Finance Lead menjadi pemilik rekaman di bagian 11 dan Pemilik informasi untuk dokumen keuangan menurut SNX-ISMS-PRO-01 (USULAN)." Label penugasan Finance Staff dipindah ke tabel peran: "..., menurut butir 6.1 sampai 6.4 (USULAN)" |
+| verify nb 5: pengaju pengecualian | "Finance Staff mengajukan pengecualian secara tertulis." | "Finance Staff mengajukan pengecualian secara tertulis (USULAN)." Dicatat di U-19 |
+| verify nb 7: rumusan retensi hardcopy | "Minimal 10 tahun; untuk dokumen keuangan lain (USULAN)" | "Minimal 10 tahun (dokumen penagihan dan perpajakan); dokumen keuangan lain minimal 10 tahun (USULAN)" |
+| verify nb 8: retensi Berita Acara | Hanya OI-14 (lokasi); retensi tidak punya open item | Tambah OI-17 untuk masa simpan Berita Acara Pemusnahan Dokumen dan Financial Document Register. Sel retensi di dokumen tetap "Belum ditetapkan" |
+
+Tidak diubah karena di luar butir sweep: verify nb 4 (pola "Hasil yang dijaga:" di Purpose, lihat bagian 6 pertanyaan 1 dan 2) dan nb 6 (Annex A 7.10 untuk butir 4.6; Annex A 7.7 disebut pemeriksa lebih langsung, sudah berlabel "(USULAN, perlu konfirmasi konsultan)", jadi bahan untuk konsultan).
+
+Uji sesudah sweep (bukti mentah di /tmp/pen-FAT-SOP-04/lint.out.txt, validate.out.txt, blankscan.out.txt, extra-checks.out.txt): render_sop.py selesai tanpa galat; lint_doc.py sop "pass": true, fails kosong, satu warn "37 butir (USULAN) menunggu ACC"; validate.py "All validations PASSED!"; blankscan.py "ok 15"; skrip pemeriksaan tambahan: nol em-dash dan en-dash, nol tanda kutip ganda, nol frasa terlarang, langkah terpanjang 19 kata, semua PIC ada di tabel peran, semua kode SNX di badan ada di tabel Dokumen terkait. Percobaan pertama blankscan gagal membaca PDF (pdfinfo tanpa keluaran, kemungkinan bentrok soffice dengan konversi lain); percobaan kedua tanpa perubahan berkas memberi "ok 15".
+
+Pembatalan (perbaikan sweep r1, qa/FAT-SOP-04.sweep.r1.json, pemblokir): sweep pertama mencabut Finance Lead dari butir 6.1 untuk dokumen perpajakan, dari baris Finance Lead tabel peran, dan dari keterangan Gambar 1, padahal tidak ada butir yang memintanya. Tiga perubahan itu dibatalkan dan teksnya kembali persis seperti sebelum sweep:
+
+| Letak | Teks sweep pertama (dibatalkan) | Teks sekarang (sama dengan sebelum sweep) |
+|---|---|---|
+| Pembuka 6.1 | "Untuk dokumen perpajakan, Finance Lead menjalankan langkah dengan PIC Finance Lead di butir 6.2 dan 6.3, sesuai butir 6.5 SNX-FAT-SOP-05." | "Finance Lead menjalankan butir yang sama untuk dokumen perpajakan, sesuai butir 6.5 SNX-FAT-SOP-05." |
+| Tabel peran, baris Finance Lead | "(butir 4.4, 4.5, 4.9, 6.2 sampai 6.4)" | "(butir 4.4, 4.5, 4.9, 6.1 sampai 6.4)" |
+| Keterangan Gambar 1 | "Finance Lead menjalankan langkah dengan PIC Finance Lead di butir 6.2 dan 6.3 untuk dokumen perpajakan." | "Finance Lead menjalankan butir 6.1 sampai 6.3 untuk dokumen perpajakan." |
+
+Dipertahankan dari sweep: langkah 6.2 butir 4 dan 6.3 butir 4 sampai 6 (Finance Lead, dokumen perpajakan). Kolom PIC di 6.1 tetap hanya Finance Staff, seperti sebelum sweep; pelaku 6.1 untuk dokumen perpajakan ditunjuk lewat paragraf pembuka dan tetap bagian OI-10. Butir lain di sweep tidak berubah.
+
+Uji sesudah pembatalan (bukti mentah di /tmp/pen-FAT-SOP-04/lint.out.txt, validate.out.txt, blankscan.out.txt, extra-checks.out.txt): render_sop.py tanpa galat; lint_doc.py sop "pass": true, fails kosong, satu warn "37 butir (USULAN) menunggu ACC" (warn PIC SLA nol); validate.py "All validations PASSED!"; blankscan.py "ok 15".

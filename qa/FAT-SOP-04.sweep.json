@@ -1,0 +1,41 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Pemblokir putaran pertama (qa/FAT-SOP-04.sweep.r1.json): paragraf pembuka 6.1, baris Finance Lead di tabel peran, keterangan Gambar 1",
+   "masalah": "Sudah selesai. Ketiga teks kembali persis seperti sebelum sweep. Finance Lead kembali menjalankan 6.1 sampai 6.3 untuk dokumen perpajakan, sesuai butir 6.5 SNX-FAT-SOP-05. Simpul diagram tidak berubah (spec.diff tidak punya hunk flow; .dot di out/ identik dengan render uji).",
+   "bukti": "diff /tmp/pen-FAT-SOP-04/spec.before-sweep.json vs specs/FAT-SOP-04.json: nol beda di procedures[0].intro, roles[0], dan flow. Teks docx out/: 'Finance Lead menjalankan butir yang sama untuk dokumen perpajakan, sesuai butir 6.5 SNX-FAT-SOP-05.'; '(butir 4.4, 4.5, 4.9, 6.1 sampai 6.4)'; 'Finance Lead menjalankan butir 6.1 sampai 6.3 untuk dokumen perpajakan.'"
+  },
+  {
+   "lokasi": "Bagian 6.1 kolom PIC",
+   "masalah": "Masalah lama, bukan dari sweep: pembuka 6.1 menunjuk Finance Lead untuk dokumen perpajakan, tetapi kedua langkah 6.1 hanya ber-PIC Finance Staff. Sesudah sweep, 6.2 dan 6.3 punya langkah Finance Lead dan 6.1 tidak, jadi pola PIC antar-subbagian tidak simetris. Sudah tercakup OI-10.",
+   "bukti": "6.1: 'Periksa kelengkapan dokumen keuangan terhadap SOP asal dokumen itu. | Finance Staff'; 6.2 langkah 4 dan 6.3 langkah 4 sampai 6 ber-PIC Finance Lead."
+  },
+  {
+   "lokasi": "Butir 4.2",
+   "masalah": "Masih sama dengan catatan r1: label (USULAN) menempel ke anak kalimat cakupan, jadi bisa dibaca seolah cakupan Divisi Operation yang diusulkan, padahal yang diusulkan adalah penerapan PRO-01 ke FAT (U-05). Keterangan status cakupan juga masih ada di bagian Policy. Ini soal penempatan label, maknanya tidak hilang.",
+   "bukti": "'Dokumen keuangan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang cakupannya baru Divisi Operation (USULAN).'"
+  },
+  {
+   "lokasi": "Butir 4.1, 4.4, 4.8, 4.9 setelah label menyeluruh 4.10 dihapus",
+   "masalah": "Penugasan Finance Staff di 4.1, 4.4, dan 4.9 sekarang berlabel hanya lewat tabel peran ('menurut butir 6.1 sampai 6.4 (USULAN)'), tidak di kalimatnya sendiri. SOP Billing 8.2 memakai pasif, dan SNX-FAT-SOP-01 4.15 juga melabeli penugasan serupa sebagai USULAN. 'Finance Lead memastikan' di 4.8 tidak punya dasar langsung dan tidak berlabel (carry-over dari r1).",
+   "bukti": "SOP Billing 8.2: 'wajib disimpan dalam format digital (.pdf) di folder Google Drive Departemen FAT'; 'wajib disimpan selama minimal 10 (sepuluh) tahun'. specs/FAT-SOP-01.json 4.15: 'Penetapan pelaku pada butir ... 4.12 ... berstatus (USULAN).' Usul: tambah (USULAN) di 4.8, atau rujuk U-11 di 4.10."
+  },
+  {
+   "lokasi": "Bagian 6.3 langkah 1 sampai 6",
+   "masalah": "Carry-over dari r1: langkah 1 sampai 3 (Finance Staff) tidak dibatasi ke dokumen nonpajak, padahal langkah 4 sampai 6 (Finance Lead) mengulang tindakan yang sama untuk dokumen perpajakan. Makna tidak berubah, karena 4.1, 4.3, dan 4.7 sudah memberi kedua peran tugas hardcopy.",
+   "bukti": "'1. Beri label pada hardcopy sesuai butir 4.3. | Finance Staff' ... '4. Beri label pada hardcopy dokumen perpajakan sesuai butir 4.3. | Finance Lead'"
+  },
+  {
+   "lokasi": "Butir 4.10 vs bagian 11 baris Financial Document Register",
+   "masalah": "Kontradiksi lama yang tidak dibuat sweep: 4.10 menyebut Finance Lead pemilik semua rekaman di bagian 11, tetapi bagian 11 menulis pemilik register Finance Staff (USULAN).",
+   "bukti": "'Finance Lead menjadi pemilik rekaman di bagian 11' vs 'Lokasi belum ditetapkan; pemilik Finance Staff (USULAN)'."
+  },
+  {
+   "lokasi": "Cek 1 sampai 4, ringkasan",
+   "masalah": "Tidak ada temuan lain. Semua butir instruksi dikerjakan: nb1/butir 1 (6.2 langkah 4), nb2 (sel SLA), nb3 (4.2 dan 4.10), nb5 (label pengaju), nb7 (rumusan retensi hardcopy, sama dengan usulan pemeriksa), nb8 (OI-17 di notes; sel retensi tetap 'Belum ditetapkan'). Fakta baru semuanya berlabel atau punya dasar: '1 hari' untuk bukti lapor cocok dengan specs/FAT-SOP-05.json SLA 6.5; 'dihitung sejak bukti lapor terbit (USULAN)'; '1 hari untuk bukti potong (USULAN)'; 'Minimal 10 tahun (dokumen penagihan dan perpajakan)' cocok dengan SOP Billing 8.2 'dokumen penagihan dan bukti perpajakan ... minimal 10' dan butir 4.8. Frasa proses penyusunan 'Angka ini berasal dari', 'berstatus (USULAN)', dan 'adalah (USULAN), karena' sudah hilang. Tidak ada em-dash, en-dash, tanda kutip ganda, atau rujukan internal AI, dan tidak ada benda baru yang diberi kata kerja manusia. Teks docx di out/ identik dengan render uji.",
+   "bukti": "Ekstraksi teks word/*.xml dari docx out/ vs /tmp/pen-FAT-SOP-04/FAT-SOP-04.docx: identik (295 paragraf); difflib dengan /tmp/claude-0/sweep/FAT-SOP-04.old.docx cocok dengan FAT-SOP-04.diff; regex nol hit; lint pass (warn 37 USULAN), validate PASSED, blankscan ok 15 (/tmp/pen-FAT-SOP-04/*.out.txt); SOP Billing dibaca via read_file_content."
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "verdict": "FAIL",
+ "blocking": [
+  {
+   "lokasi": "Bagian 6.1 paragraf pembuka; tabel peran baris Finance Lead; keterangan Gambar 1",
+   "masalah": "Makna berubah di luar instruksi. Butir sweep 1 hanya meminta langkah simpan softcopy dokumen perpajakan di 6.2. Penyusun juga mencabut Finance Lead dari butir 6.1 (pemeriksaan kelengkapan dan pemilahan) untuk dokumen perpajakan. Akibatnya 6.1 untuk dokumen perpajakan tidak punya pelaku di paragraf pembuka, karena Finance Staff dibatasi ke dokumen penagihan dan dokumen keuangan lain. Simpul a diagram menyiratkan Finance Staff, padahal dokumen perpajakan adalah ranah Finance Lead (SNX-FAT-SOP-05 butir 6.5, OI-10). Tidak ada sumber, label (USULAN), atau open item untuk pemindahan ini; notes bagian Sweep mengakuinya: 'Pemeriksaan kelengkapan 6.1 tidak lagi diklaim untuk Finance Lead'.",
+   "bukti": "Sebelum: 'Finance Lead menjalankan butir yang sama untuk dokumen perpajakan' (butir yang sama = 6.1 sampai 6.3); tabel peran Finance Lead '(butir 4.4, 4.5, 4.9, 6.1 sampai 6.4)'. Sesudah: 'Untuk dokumen perpajakan, Finance Lead menjalankan langkah dengan PIC Finance Lead di butir 6.2 dan 6.3'; tabel peran '6.2 sampai 6.4'; simpul a 'periksa kelengkapan (butir 6.1)\\nFinance Staff'. Usul: kembalikan 6.1 ke Finance Lead untuk dokumen perpajakan (tambah baris PIC Finance Lead di 6.1), atau tulis pelaku 6.1 untuk dokumen perpajakan secara eksplisit dengan (USULAN) dan open item."
+  }
+ ],
+ "nonblocking": [
+  {
+   "lokasi": "Butir 4.10 lama (label menyeluruh) dan butir 4.8",
+   "masalah": "Label (USULAN) menyeluruh untuk 'Penetapan pelaku pada butir 4.1 sampai 4.9' dihapus. Penugasan Finance Staff dipindah ke tabel peran dan penugasan Finance Lead lain punya dasar (SNX-FAT-SOP-05 6.5; SNX-ISMS-PRO-01 bagian 8 'Seluruh personel: Memberi label dan menangani informasi'; SOP Billing 8.2). Yang tersisa tanpa dasar langsung dan tanpa label adalah 'Finance Lead memastikan' di 4.8.",
+   "bukti": "4.8: 'Finance Lead memastikan dokumen penagihan dan dokumen perpajakan, hardcopy dan softcopy, disimpan minimal 10 tahun.' SOP Billing 8.2 pasif: 'wajib disimpan selama minimal 10 (sepuluh) tahun'. Usul: tambah (USULAN) atau rujuk butir 4.10."
+  },
+  {
+   "lokasi": "Butir 4.2",
+   "masalah": "Label (USULAN) kini menempel ke anak kalimat cakupan PRO-01, sehingga terbaca seolah cakupan Divisi Operation yang diusulkan, padahal yang diusulkan adalah penerapan PRO-01 ke FAT. Keterangan status 'yang cakupannya baru Divisi Operation' masih tersisa di bagian Policy.",
+   "bukti": "'Dokumen keuangan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang cakupannya baru Divisi Operation (USULAN).' PRO-01 bagian 2: 'personel Divisi Operation'. Usul: 'Finance Staff dan Finance Lead menerapkan klasifikasi SNX-ISMS-PRO-01 ... (USULAN)'."
+  },
+  {
+   "lokasi": "Bagian 6.3 langkah 4 sampai 6; tabel peran baris Finance Staff",
+   "masalah": "Perubahan di luar teks butir 1 (yang hanya menyebut softcopy), tetapi tidak mengubah makna: tiga langkah hardcopy Finance Lead menjabarkan klaim lama 6.1 dan butir 4.1, 4.3, 4.7, dan label baru di tabel peran Finance Staff hanya menambah (USULAN). Penomoran 1 sampai 6 terbaca berurutan; langkah 1 sampai 3 tidak dibatasi ke dokumen nonpajak.",
+   "bukti": "'4. Beri label pada hardcopy dokumen perpajakan sesuai butir 4.3. | Finance Lead' setelah '1. Beri label pada hardcopy sesuai butir 4.3. | Finance Staff'; 'menurut butir 6.1 sampai 6.4 (USULAN)'."
+  },
+  {
+   "lokasi": "Butir 4.10 dan bagian 11 baris Financial Document Register",
+   "masalah": "Kontradiksi lama, tidak dibuat sweep: 4.10 menyebut Finance Lead pemilik rekaman di bagian 11, sedangkan bagian 11 menulis pemilik Financial Document Register Finance Staff (USULAN).",
+   "bukti": "'Finance Lead menjadi pemilik rekaman di bagian 11' vs 'Lokasi belum ditetapkan; pemilik Finance Staff (USULAN)'."
+  },
+  {
+   "lokasi": "Cek 2, 3, dan 4: ringkasan",
+   "masalah": "Tidak ada temuan lain. Fakta baru berlabel: 'dihitung sejak bukti lapor terbit (USULAN)', '1 hari untuk bukti potong (USULAN)', pengaju pengecualian '(USULAN)'. Retensi hardcopy cocok SOP Billing 8.2 ('dokumen penagihan dan bukti perpajakan ... minimal 10'). Frasa meta 'Angka ini berasal dari', 'berstatus (USULAN)', dan 'adalah (USULAN), karena' hilang; nol em-dash, nol en-dash, nol rujukan internal AI di docx keluaran; tidak ada benda baru sebagai pelaku kata kerja manusia. Semua butir instruksi (nb 1, 2, 3, 5, 7, 8) dikerjakan; nb 8 lewat OI-17 di notes, sel retensi tetap 'Belum ditetapkan'. Teks docx di out/ identik dengan render yang diuji (lint pass, validate PASSED, blankscan ok 15).",
+   "bukti": "diff spec.before-sweep.json vs specs/FAT-SOP-04.json; SNX-ISMS-PRO-01 dan SOP Billing via read_file_content; specs/FAT-SOP-05.json SLA 'Pelaporan dan pengarsipan (butir 6.5) | Finance Lead | 1 hari'; specs/FAT-SOP-01.json 4.12 dan 4.16; grep teks docx."
+  }
+ ]
+}

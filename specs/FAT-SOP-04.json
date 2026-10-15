@@ -121,7 +121,7 @@
  ],
  "policy": [
   "4.1 Bentuk pengarsipan (ISO 9001:2015 7.5.3). Finance Staff mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy di Folder arsip FAT, dan Finance Lead mengarsipkan dokumen perpajakan dengan cara yang sama. Finance Staff dan Finance Lead juga mengarsipkan dokumen yang FAT terima atau cetak dalam bentuk kertas sebagai hardcopy di Tempat simpan hardcopy (USULAN).",
-  "4.2 Klasifikasi (Annex A 5.12). Dokumen keuangan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01. Penerapan SNX-ISMS-PRO-01 ke FAT adalah (USULAN), karena cakupan prosedur itu baru Divisi Operation.",
+  "4.2 Klasifikasi (Annex A 5.12). Dokumen keuangan berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01, yang cakupannya baru Divisi Operation (USULAN).",
   "4.3 Pelabelan (Annex A 5.13). Finance Staff dan Finance Lead menulis RESTRICTED (Internal) pada sampul atau halaman pertama hardcopy yang mereka arsipkan, dan pada nama atau deskripsi folder untuk softcopy.",
   "4.4 Penyimpanan softcopy (ISO 9001:2015 7.5.3). Finance Staff dan Finance Lead menyimpan softcopy sebagai PDF di Folder arsip FAT. Untuk dokumen penagihan, struktur foldernya Tahun / Nama Klien / Nomor Invoice. Finance Lead menetapkan struktur folder untuk dokumen perpajakan dan dokumen keuangan lain (USULAN).",
   "4.5 Akses (Annex A 5.15). Folder arsip FAT hanya dapat diakses personel FAT dan Direktur Utama. Finance Lead menyetujui penambahan akses (USULAN). Tempat simpan hardcopy hanya dapat dibuka personel FAT (USULAN).",
@@ -129,7 +129,7 @@
   "4.7 Pencatatan hardcopy (ISO 9001:2015 7.5.3). Finance Staff dan Finance Lead mencatat setiap hardcopy yang mereka arsipkan di Financial Document Register (USULAN).",
   "4.8 Retensi (ISO 9001:2015 7.5.3 dan Annex A 5.33). Finance Lead memastikan dokumen penagihan dan dokumen perpajakan, hardcopy dan softcopy, disimpan minimal 10 tahun. Masa yang sama berlaku untuk dokumen keuangan lain (USULAN). Masa retensi dihitung sejak tanggal dokumen (USULAN).",
   "4.9 Pemusnahan (Annex A 8.10). Finance Lead dan Direktur Utama menyetujui pemusnahan dokumen yang masa retensinya berakhir. Finance Staff lalu menghancurkan hardcopy, menghapus aman softcopy, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen.",
-  "4.10 Penetapan pelaku pada butir 4.1 sampai 4.9, Finance Lead sebagai pemilik rekaman di bagian 11, dan Finance Lead sebagai Pemilik informasi menurut SNX-ISMS-PRO-01 berstatus (USULAN)."
+  "4.10 Kepemilikan rekaman. Finance Lead menjadi pemilik rekaman di bagian 11 dan Pemilik informasi untuk dokumen keuangan menurut SNX-ISMS-PRO-01 (USULAN)."
  ],
  "roles": [
   [
@@ -139,7 +139,7 @@
   ],
   [
    "Finance Staff",
-   "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen (butir 6.1 sampai 6.4). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Memeriksa kelengkapan dokumen, memberi label, mengarsipkan dokumen penagihan dan dokumen keuangan lain sebagai softcopy dan hardcopy, mencatat hardcopy di Financial Document Register, memusnahkan dokumen yang sudah disetujui, dan mencatat pemusnahan di Berita Acara Pemusnahan Dokumen, menurut butir 6.1 sampai 6.4 (USULAN). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
    "Mengarsipkan, mencatat, dan memusnahkan dokumen; tidak memusnahkan dokumen tanpa persetujuan Finance Lead dan Direktur Utama."
   ],
   [
@@ -191,6 +191,11 @@
      "Softcopy dokumen keuangan lain di Folder arsip FAT"
     ],
     [
+     "Simpan PDF dokumen perpajakan di subfolder yang Finance Lead tetapkan (butir 4.4).",
+     "Finance Lead",
+     "Softcopy dokumen perpajakan di Folder arsip FAT"
+    ],
+    [
      "Periksa bahwa nama atau deskripsi folder memuat label RESTRICTED (Internal) (butir 4.3).",
      "Finance Staff",
      "Folder berlabel"
@@ -217,6 +222,21 @@
      "Catat hardcopy di Financial Document Register (butir 4.7).",
      "Finance Staff",
      "Baris di Financial Document Register"
+    ],
+    [
+     "Beri label pada hardcopy dokumen perpajakan sesuai butir 4.3.",
+     "Finance Lead",
+     "Hardcopy dokumen perpajakan berlabel"
+    ],
+    [
+     "Simpan hardcopy dokumen perpajakan di Tempat simpan hardcopy.",
+     "Finance Lead",
+     "Hardcopy dokumen perpajakan tersimpan"
+    ],
+    [
+     "Catat hardcopy dokumen perpajakan di Financial Document Register (butir 4.7).",
+     "Finance Lead",
+     "Baris dokumen perpajakan di Financial Document Register"
     ]
    ]
   },
@@ -337,7 +357,7 @@
   [
    "Pengarsipan dokumen perpajakan (butir 6.2 dan 6.3)",
    "Finance Lead",
-   "1 hari. Angka ini berasal dari SNX-FAT-SOP-05 untuk bukti lapor; perluasan ke bukti potong adalah (USULAN)"
+   "1 hari untuk bukti lapor (SNX-FAT-SOP-05), dihitung sejak bukti lapor terbit (USULAN); 1 hari untuk bukti potong (USULAN)"
   ],
   [
    "Pemeriksaan dokumen yang masa retensinya berakhir (butir 6.4 langkah 1)",
@@ -360,7 +380,7 @@
   ],
   [
    "Kebutuhan menyimpang dari aturan SOP ini",
-   "Finance Staff mengajukan pengecualian secara tertulis. Finance Lead dan ISMS Coordinator menyetujuinya dengan batas waktu. Pengecualian yang tidak tertulis, tidak berbatas waktu, atau belum disetujui keduanya tidak sah (SNX-ISMS-PRO-01)."
+   "Finance Staff mengajukan pengecualian secara tertulis (USULAN). Finance Lead dan ISMS Coordinator menyetujuinya dengan batas waktu. Pengecualian yang tidak tertulis, tidak berbatas waktu, atau belum disetujui keduanya tidak sah (SNX-ISMS-PRO-01)."
   ],
   [
    "Invoice yang sudah diarsipkan diubah atau dibatalkan",
@@ -432,7 +452,7 @@
   [
    "Hardcopy dokumen keuangan",
    "Tempat simpan hardcopy; lokasi belum ditetapkan; pemilik Finance Lead (USULAN)",
-   "Minimal 10 tahun; untuk dokumen keuangan lain (USULAN)"
+   "Minimal 10 tahun (dokumen penagihan dan perpajakan); dokumen keuangan lain minimal 10 tahun (USULAN)"
   ],
   [
    "Financial Document Register",
