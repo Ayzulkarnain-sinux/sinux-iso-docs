@@ -1,0 +1,35 @@
+{
+ "key": "OPS-SOP-04",
+ "mode": "sop",
+ "out": "out/07_Ops/SNX-OPS-SOP-04 Technical Incident Handling & Escalation (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2642,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 13,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2641,
+  "calque": [],
+  "lewat": 9,
+  "pointer": 3,
+  "usulan": 13,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 88,
+  "tables_ge3_no_header": 15
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-OPS-SOP-04 Technical Incident Handling & Escalation (Rev00 DRAFT).pdf",
+ "pages": 18,
+ "blank": [],
+ "pass": true
+}

@@ -1,0 +1,20 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Butir 6.2.1, 6.3.2, 6.4.3: 'kanal pelanggan melapor' menjadi 'kanal laporan pelanggan'. Frasa baru bisa dibaca sebagai kanal laporan secara umum, bukan kanal yang dipakai pelanggan saat melapor. Usul: 'melalui kanal yang dipakai pelanggan untuk melapor'.",
+  "Policy 8.5.1: 'ditetapkan di bagian 3, 6, dan 8' menjadi 'ditetapkan di SOP ini'. Ini tidak menyempit, tetapi auditor kehilangan letak severity dan target. Usul: 'severity (bagian 3), target (bagian 8), dan eskalasi (butir 6.6)', atau biarkan bila §3.1 diutamakan.",
+  "Definisi RCA: 'analisis root cause sebuah insiden yang ditulis di SNX-OPS-FRM-10' ambigu, karena yang ditulis bisa dibaca insidennya. Usul: '..., dengan hasil ditulis di SNX-OPS-FRM-10.'",
+  "Tabel Definisi: baris 'Corrective action (tindakan korektif)' kini tidak lagi urut abjad (berada di antara Target pulih dan Vantage eksternal).",
+  "Penomoran butir 6.1 sampai 6.6 yang dirujuk SNX-OPS-FRM-10 tidak bergeser. Label USULAN pada VP Commercial, Manager of Product Tech, dan Project Manager tetap ada; hanya catatan sumber di dalam kurung yang dibuang (§3.8)."
+ ],
+ "contoh_baik": [
+  "'Gangguan di app-level pelanggan | NOC Engineer menyerahkannya sesuai butir 6.2.' -> 'NOC Engineer menyerahkannya ke developer atau PIC pelanggan sesuai butir 6.2.'"
+ ]
+}

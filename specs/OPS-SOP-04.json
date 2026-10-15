@@ -1,753 +1,764 @@
 {
-  "meta": {
-    "doc_key": "OPS-SOP-04",
-    "number": "SNX-OPS-SOP-04",
-    "department": "Operation",
-    "title": "Technical Incident Handling & Escalation",
-    "process_owner": "Lead NOC",
-    "classification": "RESTRICTED (Internal)",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
-      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "doc_key": "OPS-SOP-04",
+  "number": "SNX-OPS-SOP-04",
+  "department": "Operation",
+  "title": "Technical Incident Handling & Escalation",
+  "process_owner": "Lead NOC",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "purpose": [
-    "SOP ini menetapkan cara mendeteksi, mencatat, mengklasifikasi, menangani, mengeskalasi, dan menutup insiden teknis, agar layanan pulih secepat mungkin dan insiden besar tidak terulang."
-  ],
-  "scope": [
-    "SOP ini berlaku untuk seluruh gangguan teknis pada layanan yang dikelola SINUX, baik terdeteksi melalui monitoring maupun dilaporkan pelanggan, selama 24 jam sehari, 7 hari seminggu.",
-    "Dikecualikan dari penanganan di SOP ini: insiden berindikasi keamanan informasi (kompromi, webshell, malware, kebocoran data, akun disalahgunakan) diserahkan ke SNX-ISMS-SOP-01, dan NOC Engineer tetap menangani sisi availability-nya.",
-    "Dikecualikan juga: gangguan di app-level pelanggan, yang diserahkan ke developer atau PIC pelanggan, dan urusan harga, yang diserahkan ke VP Commercial. Pelaksanaan service request tidak diatur di SOP ini."
-  ],
-  "definitions": [
-    [
-      "(USULAN)",
-      "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
-    ],
-    [
-      "Ack",
-      "Pengakuan pertama ke pelanggan bahwa tiket diterima dan sedang ditangani."
-    ],
-    [
-      "App-level pelanggan",
-      "Isi aplikasi milik pelanggan, misalnya isi WordPress, plugin, database aplikasi, dan kode pelanggan."
-    ],
-    [
-      "Blok ukur",
-      "Kumpulan perintah read-only yang membaca keadaan sistem tanpa mengubahnya."
-    ],
-    [
-      "Direktur (COO)",
-      "Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO sesudah sebutan ini."
-    ],
-    [
-      "Eskalasi fungsional",
-      "Penerusan insiden ke pihak yang memegang sistem atau fungsi terkait (butir 6.6)."
-    ],
-    [
-      "Eskalasi hierarki",
-      "Pemberitahuan insiden ke Lead NOC, COO, dan Direktur Utama sesuai severity (butir 6.6)."
-    ],
-    [
-      "Insiden",
-      "Gangguan tidak terencana atau penurunan mutu layanan."
-    ],
-    [
-      "Insiden berulang",
-      "Insiden yang terjadi 3 kali atau lebih pada layanan yang sama dalam 30 hari."
-    ],
-    [
-      "Kelas triage",
-      "Pengelompokan jenis insiden saat triage; daftarnya ada di butir 6.2."
-    ],
-    [
-      "Mean time to restore",
-      "Rata-rata durasi pulih insiden P1."
-    ],
-    [
-      "NOC",
-      "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani tiket."
-    ],
-    [
-      "P1 Kritis",
-      "Kompromi root atau host baru; production pelanggan down berkepanjangan dan jalur vendor buntu; insiden keamanan data pelanggan; tuntutan komitmen scope atau komersial baru yang tidak bisa ditunda; hal legal. Contoh: VM produksi mati dan upstream tidak merespons."
-    ],
-    [
-      "P2 Tinggi",
-      "Layanan terdegradasi signifikan atau satu layanan produksi mati dengan jalur perbaikan jelas. Contoh: backup job gagal 2 kali berturut, SSL produksi expired."
-    ],
-    [
-      "P3 Sedang",
-      "Gangguan terbatas, ada workaround. Contoh: satu akun tidak bisa akses, OTP tidak masuk, lambat intermiten."
-    ],
-    [
-      "P4 Rendah",
-      "Service request, pertanyaan, perubahan terjadwal. Contoh: resize VM, tambah IP, permintaan laporan."
-    ],
-    [
-      "Password manager",
-      "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
-    ],
-    [
-      "Problem",
-      "Akar masalah dari satu atau beberapa insiden, ditangani melalui RCA."
-    ],
-    [
-      "RCA",
-      "Root cause analysis: analisis akar masalah sebuah insiden, ditulis di SNX-OPS-FRM-10."
-    ],
-    [
-      "Service Hub",
-      "SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal."
-    ],
-    [
-      "Service request",
-      "Permintaan standar pelanggan (resize, tambah IP, reset) yang bukan gangguan."
-    ],
-    [
-      "Severity",
-      "Tingkat prioritas tiket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah."
-    ],
-    [
-      "SOC",
-      "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."
-    ],
-    [
-      "Status SLA",
-      "Hasil perbandingan waktu Ack dan waktu pulih dengan target di bagian 8, dicatat di kolom Ack sesuai target dan Pulih sesuai target pada SNX-OPS-FRM-08."
-    ],
-    [
-      "Target pulih",
-      "Batas waktu internal sampai layanan pulih untuk satu severity."
-    ],
-    [
-      "Tindakan korektif",
-      "Tindakan menghilangkan akar masalah supaya insiden tidak terulang."
-    ],
-    [
-      "Vantage eksternal",
-      "Titik pemeriksaan di luar jaringan layanan, bukan dari dalam jaringan atau dari 127.0.0.1."
-    ],
-    [
-      "Waktu Dilaporkan",
-      "Waktu laporan pelanggan diterima. Untuk insiden dari monitoring, waktu alert terkonfirmasi (USULAN)."
-    ],
-    [
-      "Workaround",
-      "Pemulihan sementara sebelum akar masalah diperbaiki."
-    ],
-    [
-      "Zammad",
-      "Sistem tiket untuk Ops."
-    ]
-  ],
-  "policy": [
-    "Penyediaan layanan (ISO 9001:2015 8.5.1): insiden ditangani menurut severity, target, dan eskalasi yang ditetapkan di bagian 3, 6, dan 8.",
-    "Output yang tidak sesuai (ISO 9001:2015 8.7): penurunan mutu layanan diperlakukan sebagai insiden dan ditangani lewat butir 6.1 sampai 6.4.",
-    "Tindakan korektif (ISO 9001:2015 10.2): insiden P1 dan P2 wajib RCA dengan SNX-OPS-FRM-10. Insiden berulang diperlakukan sebagai problem dan wajib RCA walau severity rendah. Tindakan korektif dicatat dengan pemilik dan tenggat, lalu dipantau sampai efektif (butir 6.5).",
-    "Perencanaan dan persiapan (Annex A 5.24): peran ada di bagian 5, severity di bagian 3, kelas triage di butir 6.2, dan matriks eskalasi di butir 6.6. Nama dan kontak PIC eksternal tidak ditulis di dokumen ini; keduanya disimpan di berkas kontak yang aksesnya dibatasi untuk Operation.",
-    "Respons terhadap insiden keamanan informasi (Annex A 5.26): penanganannya mengikuti SNX-ISMS-SOP-01. SOP ini hanya mengatur penyerahan insiden ke SOC Analyst (butir 6.2).",
-    "Pemantauan (Annex A 8.16): NOC Engineer memantau layanan dan mengonfirmasi alert sebelum menyatakannya insiden (butir 6.1). Status layanan disampaikan ke pelanggan hanya setelah dicek di monitoring, dengan frasa “dari pantauan kami”.",
-    "Kredensial pelanggan hanya diterima melalui direct message atau password manager.",
-    "Waktu Ack dan waktu pulih dihitung dari waktu Dilaporkan, sama dengan rumus di SNX-OPS-FRM-08. Batas pemberitahuan ke COO untuk P1 memakai titik awal yang sama (USULAN).",
-    "Target di bagian 8 adalah target internal; target pulih sama dengan sheet Target Severity pada SNX-OPS-FRM-08. Komitmen ke pelanggan mengikuti kontrak masing-masing dan tidak boleh melebihi kapasitas riil. Pengukuran SLA kontrak mengikuti SNX-OPS-SOP-05."
-  ],
-  "roles": [
-    [
-      "NOC Engineer",
-      "Saat on-duty: mendeteksi, mencatat, melakukan triage, menangani, berkomunikasi dengan pelanggan, dan menutup tiket.",
-      "Menetapkan severity dan kelas triage; menjalankan blok ukur read-only; menutup tiket sesudah pelanggan mengonfirmasi pemulihan; mengeskalasi insiden menurut butir 6.6."
-    ],
-    [
-      "Lead NOC",
-      "Pemilik SOP; eskalasi teknis kedua; menyusun RCA P1 dan P2.",
-      "Menerima eskalasi dari NOC Engineer; memberi tahu COO dan Direktur Utama untuk P1; menetapkan insiden berulang sebagai problem; mencatat tindakan korektif."
-    ],
-    [
-      "SOC Analyst",
-      "Menangani insiden berindikasi keamanan sesuai SNX-ISMS-SOP-01.",
-      "Menerima insiden berindikasi keamanan dari NOC Engineer."
-    ],
-    [
-      "Head of Operation",
-      "Penanggung jawab P1 sampai RCA selesai; memanggil personel off-duty.",
-      "Memanggil personel off-duty; menyetujui dan mengirim RCA P1 dan P2; memantau tindakan korektif sampai efektif."
-    ],
-    [
-      "Service Delivery Manager",
-      "Komunikasi formal ke pelanggan untuk P1 dan P2; memastikan RCA terkirim.",
-      "Mengirim email pulih ke pelanggan untuk P1 dan P2; memastikan RCA terkirim ke pelanggan."
-    ],
-    [
-      "COO",
-      "Diberi tahu untuk insiden P1; memutuskan bila P1 menuntut komitmen baru.",
-      "Memutuskan komitmen baru yang dituntut insiden P1."
-    ],
-    [
-      "Direktur Utama",
-      "Diberi tahu untuk insiden P1 bila COO tidak dapat dihubungi.",
-      "Menerima eskalasi P1 pada keadaan itu."
-    ],
-    [
-      "VP Commercial",
-      "Menerima urusan harga, quote, dan kontrak dari insiden (USULAN: sumber menulis Commercial tanpa jabatan).",
-      "Menerima serahan urusan harga, quote, dan kontrak dari NOC Engineer."
-    ],
-    [
-      "Manager of Product Tech",
-      "Menerima eskalasi fungsional untuk sistem di bawah Tech dan Product (USULAN: sumber menulis Tech dan Product tanpa jabatan).",
-      "Menerima eskalasi dari NOC Engineer menurut butir 6.6."
-    ],
-    [
-      "Project Manager",
-      "Menerima eskalasi insiden pelanggan pemerintah di lapangan (USULAN: sumber menulis PIC proyek tanpa jabatan).",
-      "Berkomunikasi dengan pelanggan sesuai format komunikasi pelanggan."
-    ]
-  ],
-  "procedures": [
-    {
-      "title": "Deteksi dan Pencatatan",
-      "intro": [
-        "Insiden terdeteksi dari monitoring (Nusametric, Overseer, console Nusagrid, Acronis, Cloudflare) atau dari laporan pelanggan.",
-        "Laporan pelanggan masuk lewat Zammad (WhatsApp, telepon, email). Laporan GMF dan internal masuk lewat Service Hub (USULAN: batas generalist menunggu owner)."
-      ],
-      "steps": [
-        [
-          "Terima alert dari monitoring atau laporan pelanggan.",
-          "NOC Engineer",
-          "Alert atau laporan pelanggan"
-        ],
-        [
-          "Konfirmasi alert dari minimal dua sinyal sebelum menyatakannya sebagai insiden.",
-          "NOC Engineer",
-          "Insiden terkonfirmasi"
-        ],
-        [
-          "Buat tiket di Zammad atau Service Hub sesuai kanal laporan, berisi pelanggan, layanan, waktu mulai, gejala, dan bukti awal, dalam batas waktu bagian 8.",
-          "NOC Engineer",
-          "Tiket insiden"
-        ],
-        [
-          "Catat tiket di SNX-OPS-FRM-08.",
-          "NOC Engineer",
-          "Baris tiket di SNX-OPS-FRM-08"
-        ]
-      ]
-    },
-    {
-      "title": "Triage",
-      "steps": [
-        [
-          "Akui ke pelanggan lewat kanal pelanggan melapor: tiket diterima, nomor tiket, dan sedang dicek, sesuai target Ack di bagian 8.",
-          "NOC Engineer",
-          "Ack ke pelanggan"
-        ],
-        [
-          "Minta identifier dari pelanggan: IP, nama instance, atau nama VM.",
-          "NOC Engineer",
-          "Identifier layanan pelanggan"
-        ],
-        [
-          "Tetapkan severity (definisi di bagian 3).",
-          "NOC Engineer",
-          "Severity di tiket dan SNX-OPS-FRM-08"
-        ],
-        [
-          "Tetapkan kelas triage: akses atau firewall atau VPN, VM lifecycle, down atau performa, OTP atau email, backup atau snapshot, SSL atau DNS, DC atau colo, atau billing.",
-          "NOC Engineer",
-          "Kelas triage di SNX-OPS-FRM-08"
-        ],
-        [
-          "Serahkan insiden berindikasi keamanan ke SOC Analyst sesuai SNX-ISMS-SOP-01.",
-          "NOC Engineer",
-          "Insiden diserahkan ke SOC; kelas Keamanan (ke SOC) di SNX-OPS-FRM-08"
-        ],
-        [
-          "Serahkan gangguan app-level pelanggan ke developer atau PIC pelanggan dengan penjelasan tertulis.",
-          "NOC Engineer",
-          "Penjelasan tertulis ke developer atau PIC pelanggan"
-        ],
-        [
-          "Serahkan urusan harga, quote, dan kontrak ke VP Commercial.",
-          "NOC Engineer",
-          "Urusan harga diserahkan ke VP Commercial"
-        ]
-      ]
-    },
-    {
-      "title": "Diagnosa dan Pemulihan",
-      "steps": [
-        [
-          "Diagnosa dengan blok ukur read-only dan bedakan gejala dari akar masalah.",
-          "NOC Engineer",
-          "Gejala dan akar masalah (bila sudah diketahui)"
-        ],
-        [
-          "Kirim update berkala ke pelanggan lewat kanal pelanggan melapor: kondisi terkini, langkah berikutnya, dan estimasi bila ada, sesuai frekuensi di bagian 8.",
-          "NOC Engineer",
-          "Update ke pelanggan"
-        ],
-        [
-          "Eskalasi insiden bila target terlewat atau butuh pihak lain, sesuai butir 6.6.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Bila pemulihan mengubah production, ajukan change lewat SNX-OPS-SOP-02; untuk P1 boleh sebagai change Emergency.",
-          "NOC Engineer",
-          "Change request (SNX-OPS-FRM-04)"
-        ],
-        [
-          "Pulihkan layanan dengan workaround atau perbaikan.",
-          "NOC Engineer",
-          "Layanan pulih atau workaround berjalan"
-        ],
-        [
-          "Bila pelanggan memberi kredensial, minta pelanggan rotate kredensial itu setelah dipakai.",
-          "NOC Engineer",
-          "Permintaan rotate ke pelanggan"
-        ]
-      ]
-    },
-    {
-      "title": "Verifikasi dan Penutupan",
-      "steps": [
-        [
-          "Verifikasi pemulihan dari sisi pelanggan memakai browser nyata dan vantage eksternal.",
-          "NOC Engineer",
-          "Hasil verifikasi"
-        ],
-        [
-          "Minta konfirmasi pelanggan bahwa layanan pulih.",
-          "NOC Engineer",
-          "Konfirmasi pelanggan"
-        ],
-        [
-          "Kirim info pulih ke pelanggan lewat kanal pelanggan melapor: waktu pulih dan ringkasan tindakan.",
-          "NOC Engineer",
-          "Info pulih ke pelanggan"
-        ],
-        [
-          "Kirim email pulih ke pelanggan untuk insiden P1 dan P2.",
-          "Service Delivery Manager",
-          "Email pulih"
-        ],
-        [
-          "Tutup tiket dengan ringkasan gejala, akar masalah (bila sudah diketahui), tindakan, dan waktu pulih.",
-          "NOC Engineer",
-          "Tiket ditutup"
-        ],
-        [
-          "Lengkapi SNX-OPS-FRM-08 dengan waktu Ack, waktu pulih, dan status SLA.",
-          "NOC Engineer",
-          "Baris tiket di SNX-OPS-FRM-08 lengkap"
-        ]
-      ]
-    },
-    {
-      "title": "RCA dan Tindakan Korektif",
-      "steps": [
-        [
-          "Susun RCA insiden P1 dan P2 dengan SNX-OPS-FRM-10.",
-          "Lead NOC",
-          "RCA di SNX-OPS-FRM-10"
-        ],
-        [
-          "Tetapkan insiden berulang sebagai problem.",
-          "Lead NOC",
-          "Penetapan problem"
-        ],
-        [
-          "Susun RCA untuk problem walau severity insiden rendah.",
-          "Lead NOC",
-          "RCA di SNX-OPS-FRM-10"
-        ],
-        [
-          "Setujui RCA.",
-          "Head of Operation",
-          "RCA disetujui"
-        ],
-        [
-          "Kirim RCA insiden P1 dan P2 ke pelanggan via email resmi: kronologi, akar masalah, dan tindakan korektif, dalam batas waktu bagian 8.",
-          "Head of Operation",
-          "RCA terkirim; tanggal dan penerima di SNX-OPS-FRM-10"
-        ],
-        [
-          "Pastikan RCA terkirim ke pelanggan.",
-          "Service Delivery Manager",
-          "Konfirmasi RCA terkirim"
-        ],
-        [
-          "Catat tindakan korektif dengan pemilik dan tenggat.",
-          "Lead NOC",
-          "Tabel Tindakan di SNX-OPS-FRM-10"
-        ],
-        [
-          "Pantau tindakan korektif sampai efektif.",
-          "Head of Operation",
-          "Verifikasi efektivitas di SNX-OPS-FRM-10"
-        ]
-      ]
-    },
-    {
-      "title": "Eskalasi",
-      "intro": [
-        "Insiden P4 tidak perlu eskalasi. Batas waktu eskalasi hierarki ada di bagian 8."
-      ],
-      "steps": [
-        [
-          "Eskalasi insiden P1 ke Lead NOC.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Eskalasi insiden P2 ke Lead NOC.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Eskalasi insiden P3 ke Lead NOC bila melewati target.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Beri tahu COO tentang insiden P1.",
-          "Lead NOC",
-          "COO diberi tahu"
-        ],
-        [
-          "Beri tahu Direktur Utama tentang insiden P1 bila COO tidak dapat dihubungi.",
-          "Lead NOC",
-          "Direktur Utama diberi tahu"
-        ],
-        [
-          "Putuskan komitmen baru bila insiden P1 menuntutnya.",
-          "COO",
-          "Keputusan COO"
-        ],
-        [
-          "Eskalasi masalah infra Nusagrid backend (hypervisor, console, node, billing sistem) ke penyedia infrastruktur Nusagrid (Maxcloud atau Awandata) lewat grup Nusagrid.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Eskalasi masalah WAF, load balancer, proxy, web, DC fisik, dan network ke Manager of Product Tech.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Eskalasi masalah SOC, SIEM, dan Wazuh untuk pelanggan dengan partner SOC ke partner SOC (Arktech).",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Eskalasi masalah platform Nusametric ke TelemetryFlow.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ],
-        [
-          "Eskalasi insiden pelanggan pemerintah di lapangan ke Project Manager sesuai format komunikasi pelanggan.",
-          "NOC Engineer",
-          "Kolom Eskalasi ke di SNX-OPS-FRM-08"
-        ]
-      ]
-    }
-  ],
-  "flow": {
-    "rankdir": "TB",
-    "nodes": {
-      "a": "Deteksi: alert monitoring\natau laporan pelanggan",
-      "b": "Konfirmasi alert dari\nminimal dua sinyal",
-      "c": "Buat tiket dan catat\ndi SNX-OPS-FRM-08",
-      "d": "Triage: Ack, severity,\nkelas triage",
-      "e": "Berindikasi\nkeamanan?",
-      "f": "Serahkan ke SOC Analyst\nSNX-ISMS-SOP-01",
-      "g": "Diagnosa dengan\nblok ukur read-only",
-      "h": "Pemulihan mengubah\nproduction?",
-      "i": "Change request\nSNX-OPS-SOP-02",
-      "j": "Pulihkan layanan:\nworkaround atau perbaikan",
-      "k": "Verifikasi, konfirmasi\npelanggan, tutup tiket",
-      "l": "P1, P2,\natau berulang?",
-      "m": "RCA dan tindakan korektif\nSNX-OPS-FRM-10",
-      "n": "Selesai",
-      "x": "Eskalasi\nbutir 6.6"
-    },
-    "shapes": {
-      "e": "diamond",
-      "h": "diamond",
-      "l": "diamond",
-      "n": "ellipse"
-    },
-    "edges": [
-      [
-        "a",
-        "b",
-        "alert monitoring"
-      ],
-      [
-        "a",
-        "c",
-        "laporan pelanggan"
-      ],
-      [
-        "b",
-        "c"
-      ],
-      [
-        "c",
-        "d"
-      ],
-      [
-        "d",
-        "e"
-      ],
-      [
-        "d",
-        "x",
-        "eskalasi sesuai severity",
-        "dashed"
-      ],
-      [
-        "e",
-        "f",
-        "Ya"
-      ],
-      [
-        "e",
-        "g",
-        "Tidak"
-      ],
-      [
-        "f",
-        "g",
-        "NOC tetap menangani availability",
-        "dashed"
-      ],
-      [
-        "g",
-        "h"
-      ],
-      [
-        "h",
-        "i",
-        "Ya"
-      ],
-      [
-        "h",
-        "j",
-        "Tidak"
-      ],
-      [
-        "i",
-        "k",
-        "pulih",
-        "dashed"
-      ],
-      [
-        "j",
-        "k"
-      ],
-      [
-        "k",
-        "l"
-      ],
-      [
-        "l",
-        "m",
-        "Ya"
-      ],
-      [
-        "l",
-        "n",
-        "Tidak"
-      ],
-      [
-        "m",
-        "n"
-      ],
-      [
-        "g",
-        "x",
-        "target terlewat atau butuh pihak lain",
-        "dashed"
-      ],
-      [
-        "x",
-        "g",
-        "",
-        "dashed"
-      ]
-    ],
-    "caption": "Gambar 1. Alur penanganan insiden. Garis putus-putus kembali ke alur utama."
-  },
-  "sla": [
-    [
-      "Buat tiket sesudah alert terkonfirmasi",
-      "NOC Engineer",
-      "Paling lambat 10 menit sesudah konfirmasi"
-    ],
-    [
-      "Ack ke pelanggan",
-      "NOC Engineer",
-      "P1 15 menit; P2 30 menit; P3 2 jam kerja; P4 1 hari kerja"
-    ],
-    [
-      "Update ke pelanggan",
-      "NOC Engineer",
-      "P1 tiap 1 jam; P2 tiap 3 jam atau per shift; P3 harian; P4 saat selesai"
-    ],
-    [
-      "Layanan pulih (target pulih)",
-      "NOC Engineer",
-      "P1 4 jam; P2 8 jam; P3 24 jam; P4 72 jam (USULAN)"
-    ],
-    [
-      "Eskalasi insiden P1 ke Lead NOC",
-      "NOC Engineer",
-      "Langsung"
-    ],
-    [
-      "Eskalasi insiden P2 ke Lead NOC",
-      "NOC Engineer",
-      "Dalam 1 jam"
-    ],
-    [
-      "Eskalasi insiden P3 ke Lead NOC",
-      "NOC Engineer",
-      "Bila melewati target"
-    ],
-    [
-      "Pemberitahuan insiden P1 ke COO",
-      "Lead NOC",
-      "Dalam 30 menit sejak waktu Dilaporkan (USULAN)"
-    ],
-    [
-      "Kirim RCA insiden P1 dan P2 ke pelanggan via email",
-      "Head of Operation",
-      "Paling lambat 2 hari kerja setelah pulih"
-    ],
-    [
-      "Indikator: tiket P1 dan P2 di-ack dalam target",
-      "NOC Engineer",
-      "Target 95%, dihitung di sheet Ringkasan SNX-OPS-FRM-08"
-    ],
-    [
-      "Indikator: mean time to restore P1",
-      "Lead NOC",
-      "Dikalibrasi setelah 3 bulan data"
-    ],
-    [
-      "Indikator: RCA P1 dan P2 terkirim dalam 2 hari kerja",
-      "Head of Operation",
-      "Target 100%"
-    ],
-    [
-      "Indikator: tindakan korektif selesai sesuai tenggat",
-      "Head of Operation",
-      "Target 90%"
-    ]
-  ],
-  "exceptions": [
-    [
-      "Insiden berindikasi keamanan informasi",
-      "NOC Engineer menyerahkannya ke SOC Analyst sesuai butir 6.2 dan tetap menangani sisi availability."
-    ],
-    [
-      "Gangguan di app-level pelanggan",
-      "NOC Engineer menyerahkannya sesuai butir 6.2."
-    ],
-    [
-      "Urusan harga, quote, atau kontrak",
-      "NOC Engineer menyerahkannya ke VP Commercial sesuai butir 6.2."
-    ],
-    [
-      "Service request",
-      "NOC Engineer mencatatnya sebagai P4."
-    ],
-    [
-      "Insiden P1 yang pemulihannya mengubah production",
-      "NOC Engineer menjalankan pemulihan sebagai change Emergency sesuai butir 6.3."
-    ],
-    [
-      "Target terlewat atau butuh pihak lain",
-      "NOC Engineer mengeskalasi insiden sesuai butir 6.6."
-    ],
-    [
-      "COO tidak dapat dihubungi saat insiden P1",
-      "Lead NOC memberi tahu Direktur Utama sesuai butir 6.6."
-    ],
-    [
-      "Pergantian shift saat insiden P1 berjalan",
-      "NOC Engineer yang menangani insiden tidak memindahkannya di tengah langkah teknis."
-    ]
-  ],
-  "conclusion": [
-    "Lead NOC memantau kepatuhan lewat empat indikator kinerja di bagian 8 dan, sebagai pemilik SOP, meninjau dokumen ini setiap tahun."
-  ],
-  "related_documents": [
-    [
-      "SNX-ISMS-SOP-01",
-      "SOP Information Security Incident Management; menangani insiden berindikasi keamanan yang diserahkan dari SOP ini."
-    ],
-    [
-      "SNX-OPS-SOP-02",
-      "SOP Project Change Management; mengatur pemulihan yang mengubah production, termasuk change Emergency."
-    ],
-    [
-      "SNX-OPS-SOP-05",
-      "SOP Service Level Agreement (SLA) Monitoring; mengukur SLA kontrak ke pelanggan."
-    ],
-    [
-      "SNX-OPS-FRM-08",
-      "Technical Ticket / Incident Register; rekap tiket, waktu Ack dan pulih, status SLA, dan sheet Target Severity."
-    ],
-    [
-      "SNX-OPS-FRM-10",
-      "Root Cause Analysis & Corrective Action Report; form RCA dan tindakan korektif."
-    ],
-    [
-      "SNX-OPS-FRM-04",
-      "Change Request & Approval Log; mencatat change request, termasuk change Emergency."
-    ],
-    [
-      "SNX-ISMS-FRM-02",
-      "Security Incident & Investigation Records; mencatat insiden keamanan informasi."
-    ],
-    [
-      "SNX-HR-ORG-01",
-      "Struktur Organisasi SINUX; jabatan dan matriks peran yang menjadi dasar nama peran di bagian 5."
-    ]
-  ],
-  "records": [
-    [
-      "Technical Ticket / Incident Register (SNX-OPS-FRM-08)",
-      "Folder Drive Operation (USULAN); tiket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.",
-      "3 tahun"
-    ],
-    [
-      "RCA & Corrective Action Report (SNX-OPS-FRM-10)",
-      "Folder Drive Operation, subfolder per tahun (USULAN). Pemilik: Head of Operation.",
-      "5 tahun"
-    ],
-    [
-      "Security Incident & Investigation Records (SNX-ISMS-FRM-02)",
-      "Folder Drive Operation (USULAN). Pemilik: Lead SOC.",
-      "5 tahun"
-    ],
-    [
-      "Change request emergency (SNX-OPS-FRM-04)",
-      "Folder Drive Operation (USULAN). Pemilik: Head of Operation.",
-      "3 tahun"
-    ]
-  ],
-  "iso_refs": {
-    "ISO 9001:2015": "8.5.1 (Pengendalian produksi dan penyediaan jasa), 8.7 (Pengendalian output yang tidak sesuai), 10.2 (Ketidaksesuaian dan tindakan korektif).",
-    "ISO/IEC 27001:2022": "Annex A 5.24 (Perencanaan dan persiapan manajemen insiden keamanan informasi), 5.26 (Respons terhadap insiden keamanan informasi), 8.16 (Aktivitas pemantauan)."
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
+ },
+ "purpose": [
+  "SOP ini menetapkan cara mendeteksi, mencatat, mengklasifikasi, menangani, mengeskalasi, dan menutup insiden teknis, agar layanan pulih secepat mungkin dan insiden besar tidak terulang."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk seluruh gangguan teknis pada layanan yang dikelola SINUX, baik terdeteksi melalui monitoring maupun dilaporkan pelanggan, selama 24 jam sehari, 7 hari seminggu.",
+  "Dikecualikan dari penanganan di SOP ini: insiden berindikasi keamanan informasi (kompromi, webshell, malware, kebocoran data, akun disalahgunakan). Insiden ini diserahkan ke SNX-ISMS-SOP-01, sementara NOC Engineer tetap menangani sisi availability-nya.",
+  "Dikecualikan juga: gangguan di app-level pelanggan, yang diserahkan ke developer atau PIC pelanggan, dan urusan harga, yang diserahkan ke VP Commercial. Pelaksanaan service request tidak diatur di SOP ini."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Ack",
+   "Pengakuan pertama ke pelanggan bahwa ticket diterima dan sedang ditangani."
+  ],
+  [
+   "App-level pelanggan",
+   "Isi aplikasi milik pelanggan, misalnya isi WordPress, plugin, database aplikasi, dan kode pelanggan."
+  ],
+  [
+   "Blok ukur",
+   "Kumpulan perintah read-only yang membaca keadaan sistem tanpa mengubahnya."
+  ],
+  [
+   "Direktur (COO)",
+   "Jabatan JA-02 di SNX-HR-ORG-01, yang di dokumen Operation disebut COO. Selanjutnya dokumen ini memakai sebutan COO."
+  ],
+  [
+   "Eskalasi fungsional",
+   "Penerusan insiden ke pihak yang memegang sistem atau fungsi terkait (butir 6.6)."
+  ],
+  [
+   "Eskalasi hierarki",
+   "Pemberitahuan insiden ke Lead NOC, COO, dan Direktur Utama sesuai severity (butir 6.6)."
+  ],
+  [
+   "Insiden",
+   "Gangguan tidak terencana atau penurunan mutu layanan."
+  ],
+  [
+   "Insiden berulang",
+   "Insiden yang terjadi 3 kali atau lebih pada layanan yang sama dalam 30 hari."
+  ],
+  [
+   "Kelas triage",
+   "Pengelompokan jenis insiden saat triage, sesuai daftar di butir 6.2."
+  ],
+  [
+   "Mean time to restore",
+   "Rata-rata durasi pulih insiden P1."
+  ],
+  [
+   "NOC",
+   "Sub divisi Divisi Operation yang memantau dashboard layanan dan menangani ticket."
+  ],
+  [
+   "P1 Kritis",
+   "Kompromi root atau host baru; production pelanggan down berkepanjangan dan jalur vendor buntu; insiden keamanan data pelanggan; tuntutan komitmen scope atau komersial baru yang tidak bisa ditunda; hal legal. Contoh: VM produksi mati dan upstream tidak merespons."
+  ],
+  [
+   "P2 Tinggi",
+   "Layanan terdegradasi signifikan atau satu layanan produksi mati dengan jalur perbaikan jelas. Contoh: backup job gagal 2 kali berturut-turut, SSL produksi expired."
+  ],
+  [
+   "P3 Sedang",
+   "Gangguan terbatas, ada workaround. Contoh: satu akun tidak bisa akses, OTP tidak masuk, lambat intermiten."
+  ],
+  [
+   "P4 Rendah",
+   "Service request, pertanyaan, perubahan terjadwal. Contoh: resize VM, tambah IP, permintaan laporan."
+  ],
+  [
+   "Password manager",
+   "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+  ],
+  [
+   "Problem",
+   "Root cause (akar masalah) dari satu atau beberapa insiden, ditangani melalui RCA."
+  ],
+  [
+   "RCA",
+   "Root cause analysis, yaitu analisis root cause sebuah insiden yang ditulis di SNX-OPS-FRM-10."
+  ],
+  [
+   "Service Hub",
+   "SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal."
+  ],
+  [
+   "Service request",
+   "Permintaan standar pelanggan (resize, tambah IP, reset) yang bukan gangguan."
+  ],
+  [
+   "Severity",
+   "Tingkat prioritas ticket: P1 Kritis, P2 Tinggi, P3 Sedang, atau P4 Rendah."
+  ],
+  [
+   "SOC",
+   "Sub divisi Divisi Operation yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."
+  ],
+  [
+   "Status SLA",
+   "Hasil perbandingan waktu Ack dan waktu pulih dengan target di bagian 8, dicatat di kolom Ack sesuai target dan Pulih sesuai target pada SNX-OPS-FRM-08."
+  ],
+  [
+   "Target pulih",
+   "Batas waktu internal sampai layanan pulih untuk satu severity."
+  ],
+  [
+   "Corrective action (tindakan korektif)",
+   "Tindakan menghilangkan root cause supaya insiden tidak terulang."
+  ],
+  [
+   "Vantage eksternal",
+   "Titik pemeriksaan di luar jaringan layanan, bukan dari dalam jaringan atau dari 127.0.0.1."
+  ],
+  [
+   "Waktu Dilaporkan",
+   "Waktu laporan pelanggan diterima. Untuk insiden dari monitoring, waktu alert terkonfirmasi (USULAN)."
+  ],
+  [
+   "Workaround",
+   "Pemulihan sementara sebelum root cause diperbaiki."
+  ],
+  [
+   "Zammad",
+   "Sistem ticket untuk Ops."
+  ]
+ ],
+ "policy": [
+  "Penyediaan layanan (ISO 9001:2015 8.5.1): insiden ditangani menurut severity, target, dan eskalasi yang ditetapkan di SOP ini.",
+  "Output yang tidak sesuai (ISO 9001:2015 8.7): penurunan mutu layanan diperlakukan sebagai insiden dan ditangani melalui butir 6.1 sampai 6.4.",
+  "Corrective action (ISO 9001:2015 10.2): insiden P1 dan P2 wajib RCA dengan SNX-OPS-FRM-10. Insiden berulang diperlakukan sebagai problem dan wajib RCA walau severity rendah. Corrective action dicatat dengan pemilik dan tenggat, lalu dipantau sampai efektif (butir 6.5).",
+  "Perencanaan dan persiapan (Annex A 5.24): SOP ini menetapkan peran, severity, kelas triage, dan matriks eskalasi untuk penanganan insiden. Nama dan kontak PIC eksternal tidak ditulis di dokumen ini; keduanya disimpan di berkas kontak yang aksesnya dibatasi untuk Operation.",
+  "Respons terhadap insiden keamanan informasi (Annex A 5.26): penanganannya mengikuti SNX-ISMS-SOP-01. SOP ini hanya mengatur penyerahan insiden ke SOC Analyst (butir 6.2).",
+  "Pemantauan (Annex A 8.16): NOC Engineer memantau layanan dan mengonfirmasi alert sebelum menyatakannya insiden (butir 6.1). Status layanan disampaikan ke pelanggan hanya setelah dicek di monitoring, dengan frasa “dari pantauan kami”.",
+  "Kredensial pelanggan hanya diterima melalui direct message atau password manager.",
+  "Waktu Ack dan waktu pulih dihitung dari waktu Dilaporkan, sama dengan rumus di SNX-OPS-FRM-08. Batas pemberitahuan ke COO untuk P1 memakai titik awal yang sama (USULAN).",
+  "Target di bagian 8 adalah target internal; target pulih sama dengan isi sheet Target Severity pada SNX-OPS-FRM-08. Komitmen ke pelanggan mengikuti kontrak masing-masing dan tidak boleh melebihi kapasitas riil. Pengukuran SLA kontrak mengikuti SNX-OPS-SOP-05."
+ ],
+ "roles": [
+  [
+   "NOC Engineer",
+   "Saat on-duty: mendeteksi, mencatat, melakukan triage, menangani, berkomunikasi dengan pelanggan, dan menutup ticket.",
+   "Menetapkan severity dan kelas triage; menjalankan blok ukur read-only; menutup ticket setelah pelanggan mengonfirmasi pemulihan; mengeskalasi insiden menurut butir 6.6."
+  ],
+  [
+   "Lead NOC",
+   "Pemilik SOP; eskalasi teknis kedua; menyusun RCA P1 dan P2.",
+   "Menerima eskalasi dari NOC Engineer; memberi tahu COO dan Direktur Utama untuk P1; menetapkan insiden berulang sebagai problem; mencatat corrective action."
+  ],
+  [
+   "SOC Analyst",
+   "Menangani insiden berindikasi keamanan sesuai SNX-ISMS-SOP-01.",
+   "Menerima insiden berindikasi keamanan dari NOC Engineer."
+  ],
+  [
+   "Head of Operation",
+   "Penanggung jawab P1 sampai RCA selesai; memanggil personel off-duty.",
+   "Memanggil personel off-duty; menyetujui dan mengirim RCA P1 dan P2; memantau corrective action sampai efektif."
+  ],
+  [
+   "Service Delivery Manager",
+   "Komunikasi formal ke pelanggan untuk P1 dan P2; memastikan RCA terkirim.",
+   "Mengirim email pulih ke pelanggan untuk P1 dan P2; memastikan RCA terkirim ke pelanggan."
+  ],
+  [
+   "COO",
+   "Diberi tahu untuk insiden P1; memutuskan jika P1 menuntut komitmen baru.",
+   "Memutuskan komitmen baru yang dituntut insiden P1."
+  ],
+  [
+   "Direktur Utama",
+   "Diberi tahu untuk insiden P1 jika COO tidak dapat dihubungi.",
+   "Menerima eskalasi P1 pada keadaan itu."
+  ],
+  [
+   "VP Commercial",
+   "Menerima urusan harga, quote, dan kontrak dari insiden (USULAN).",
+   "Menerima serahan urusan harga, quote, dan kontrak dari NOC Engineer."
+  ],
+  [
+   "Manager of Product Tech",
+   "Menerima eskalasi fungsional untuk sistem di bawah Tech dan Product (USULAN).",
+   "Menerima eskalasi dari NOC Engineer menurut butir 6.6."
+  ],
+  [
+   "Project Manager",
+   "Menerima eskalasi insiden pelanggan pemerintah di lapangan (USULAN).",
+   "Berkomunikasi dengan pelanggan sesuai format komunikasi pelanggan."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Deteksi dan Pencatatan",
+   "intro": [
+    "Insiden terdeteksi dari monitoring (Nusametric, Overseer, console Nusagrid, Acronis, Cloudflare) atau dari laporan pelanggan.",
+    "Laporan pelanggan masuk melalui Zammad (WhatsApp, telepon, email). Laporan GMF dan internal masuk melalui Service Hub; batas cakupan generalist masih menunggu keputusan owner (USULAN)."
+   ],
+   "steps": [
+    [
+     "Terima alert dari monitoring atau laporan pelanggan.",
+     "NOC Engineer",
+     "Alert atau laporan pelanggan"
+    ],
+    [
+     "Konfirmasi alert dari minimal dua sinyal sebelum menyatakannya sebagai insiden.",
+     "NOC Engineer",
+     "Insiden terkonfirmasi"
+    ],
+    [
+     "Buat ticket di Zammad atau Service Hub sesuai kanal laporan, berisi pelanggan, layanan, waktu mulai, gejala, dan bukti awal, dalam batas waktu bagian 8.",
+     "NOC Engineer",
+     "Ticket insiden"
+    ],
+    [
+     "Catat ticket di SNX-OPS-FRM-08.",
+     "NOC Engineer",
+     "Baris ticket di SNX-OPS-FRM-08"
+    ]
+   ]
+  },
+  {
+   "title": "Triage",
+   "steps": [
+    [
+     "Kirim Ack ke pelanggan melalui kanal laporan pelanggan: ticket diterima, nomor ticket, dan sedang dicek, sesuai target Ack di bagian 8.",
+     "NOC Engineer",
+     "Ack ke pelanggan"
+    ],
+    [
+     "Minta identifier dari pelanggan: IP, nama instance, atau nama VM.",
+     "NOC Engineer",
+     "Identifier layanan pelanggan"
+    ],
+    [
+     "Tetapkan severity sesuai definisi P1 sampai P4 di bagian 3.",
+     "NOC Engineer",
+     "Severity di ticket dan SNX-OPS-FRM-08"
+    ],
+    [
+     "Tetapkan kelas triage: akses atau firewall atau VPN, VM lifecycle, down atau performa, OTP atau email, backup atau snapshot, SSL atau DNS, DC atau colo, atau billing.",
+     "NOC Engineer",
+     "Kelas triage di SNX-OPS-FRM-08"
+    ],
+    [
+     "Serahkan insiden berindikasi keamanan ke SOC Analyst sesuai SNX-ISMS-SOP-01.",
+     "NOC Engineer",
+     "Insiden diserahkan ke SOC; kelas Keamanan (ke SOC) di SNX-OPS-FRM-08"
+    ],
+    [
+     "Serahkan gangguan app-level pelanggan ke developer atau PIC pelanggan dengan penjelasan tertulis.",
+     "NOC Engineer",
+     "Penjelasan tertulis ke developer atau PIC pelanggan"
+    ],
+    [
+     "Serahkan urusan harga, quote, dan kontrak ke VP Commercial.",
+     "NOC Engineer",
+     "Urusan harga diserahkan ke VP Commercial"
+    ]
+   ]
+  },
+  {
+   "title": "Diagnosa dan Pemulihan",
+   "steps": [
+    [
+     "Lakukan diagnosis dengan blok ukur read-only, lalu bedakan gejala dari root cause.",
+     "NOC Engineer",
+     "Gejala dan root cause (jika sudah diketahui)"
+    ],
+    [
+     "Kirim update berkala ke pelanggan melalui kanal laporan pelanggan: kondisi terkini, langkah berikutnya, dan estimasi jika ada, sesuai frekuensi di bagian 8.",
+     "NOC Engineer",
+     "Update ke pelanggan"
+    ],
+    [
+     "Eskalasikan insiden jika target terlewat atau memerlukan pihak lain, sesuai butir 6.6.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Jika pemulihan mengubah production, ajukan change melalui SNX-OPS-SOP-02. Untuk P1, change boleh diajukan sebagai change Emergency.",
+     "NOC Engineer",
+     "Change request (SNX-OPS-FRM-04)"
+    ],
+    [
+     "Pulihkan layanan dengan workaround atau perbaikan.",
+     "NOC Engineer",
+     "Layanan pulih atau workaround berjalan"
+    ],
+    [
+     "Jika pelanggan memberikan kredensial, minta pelanggan melakukan rotate kredensial itu setelah dipakai.",
+     "NOC Engineer",
+     "Permintaan rotate ke pelanggan"
+    ]
+   ]
+  },
+  {
+   "title": "Verifikasi dan Penutupan",
+   "steps": [
+    [
+     "Verifikasi pemulihan dari sisi pelanggan memakai browser nyata dan vantage eksternal.",
+     "NOC Engineer",
+     "Hasil verifikasi"
+    ],
+    [
+     "Minta konfirmasi pelanggan bahwa layanan pulih.",
+     "NOC Engineer",
+     "Konfirmasi pelanggan"
+    ],
+    [
+     "Kirim info pulih ke pelanggan melalui kanal laporan pelanggan: waktu pulih dan ringkasan tindakan.",
+     "NOC Engineer",
+     "Info pulih ke pelanggan"
+    ],
+    [
+     "Kirim email pulih ke pelanggan untuk insiden P1 dan P2.",
+     "Service Delivery Manager",
+     "Email pulih"
+    ],
+    [
+     "Tutup ticket dengan ringkasan gejala, root cause (jika sudah diketahui), tindakan, dan waktu pulih.",
+     "NOC Engineer",
+     "Ticket ditutup"
+    ],
+    [
+     "Lengkapi SNX-OPS-FRM-08 dengan waktu Ack, waktu pulih, dan status SLA.",
+     "NOC Engineer",
+     "Baris ticket di SNX-OPS-FRM-08 lengkap"
+    ]
+   ]
+  },
+  {
+   "title": "RCA dan Tindakan Korektif",
+   "steps": [
+    [
+     "Susun RCA insiden P1 dan P2 dengan SNX-OPS-FRM-10.",
+     "Lead NOC",
+     "RCA di SNX-OPS-FRM-10"
+    ],
+    [
+     "Tetapkan insiden berulang sebagai problem.",
+     "Lead NOC",
+     "Penetapan problem"
+    ],
+    [
+     "Susun RCA untuk problem walau severity insiden rendah.",
+     "Lead NOC",
+     "RCA di SNX-OPS-FRM-10"
+    ],
+    [
+     "Setujui RCA.",
+     "Head of Operation",
+     "RCA disetujui"
+    ],
+    [
+     "Kirim RCA insiden P1 dan P2 ke pelanggan via email resmi: kronologi, root cause, dan corrective action, dalam batas waktu bagian 8.",
+     "Head of Operation",
+     "RCA terkirim; tanggal dan penerima di SNX-OPS-FRM-10"
+    ],
+    [
+     "Pastikan RCA terkirim ke pelanggan.",
+     "Service Delivery Manager",
+     "Konfirmasi RCA terkirim"
+    ],
+    [
+     "Catat corrective action dengan pemilik dan tenggat.",
+     "Lead NOC",
+     "Tabel Tindakan di SNX-OPS-FRM-10"
+    ],
+    [
+     "Pantau corrective action sampai efektif.",
+     "Head of Operation",
+     "Verifikasi efektivitas di SNX-OPS-FRM-10"
+    ]
+   ]
+  },
+  {
+   "title": "Eskalasi",
+   "intro": [
+    "Insiden P4 tidak perlu eskalasi. Batas waktu eskalasi hierarki mengikuti tabel bagian 8."
+   ],
+   "steps": [
+    [
+     "Eskalasikan insiden P1 ke Lead NOC.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Eskalasikan insiden P2 ke Lead NOC.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Eskalasikan insiden P3 ke Lead NOC jika melewati target.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Beri tahu COO tentang insiden P1.",
+     "Lead NOC",
+     "COO diberi tahu"
+    ],
+    [
+     "Beri tahu Direktur Utama tentang insiden P1 jika COO tidak dapat dihubungi.",
+     "Lead NOC",
+     "Direktur Utama diberi tahu"
+    ],
+    [
+     "Putuskan komitmen baru jika insiden P1 menuntutnya.",
+     "COO",
+     "Keputusan COO"
+    ],
+    [
+     "Eskalasikan masalah infra Nusagrid backend (hypervisor, console, node, billing sistem) ke penyedia infrastruktur Nusagrid (Maxcloud atau Awandata) melalui grup Nusagrid.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Eskalasikan masalah WAF, load balancer, proxy, web, DC fisik, dan network ke Manager of Product Tech.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Eskalasikan masalah SOC, SIEM, dan Wazuh ke partner SOC (Arktech) untuk pelanggan yang memakai partner SOC.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Eskalasikan masalah platform Nusametric ke TelemetryFlow.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ],
+    [
+     "Eskalasikan insiden pelanggan pemerintah di lapangan ke Project Manager sesuai format komunikasi pelanggan.",
+     "NOC Engineer",
+     "Kolom Eskalasi ke di SNX-OPS-FRM-08"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "a": "Deteksi: alert monitoring\natau laporan pelanggan",
+   "b": "Konfirmasi alert dari\nminimal dua sinyal",
+   "c": "Buat ticket dan catat\ndi SNX-OPS-FRM-08",
+   "d": "Triage: Ack, severity,\nkelas triage",
+   "e": "Berindikasi\nkeamanan?",
+   "f": "Serahkan ke SOC Analyst\nSNX-ISMS-SOP-01",
+   "g": "Diagnosa dengan\nblok ukur read-only",
+   "h": "Pemulihan mengubah\nproduction?",
+   "i": "Change request\nSNX-OPS-SOP-02",
+   "j": "Pulihkan layanan:\nworkaround atau perbaikan",
+   "k": "Verifikasi, konfirmasi\npelanggan, tutup ticket",
+   "l": "P1, P2,\natau berulang?",
+   "m": "RCA dan corrective action\nSNX-OPS-FRM-10",
+   "n": "Selesai",
+   "x": "Eskalasi\nbutir 6.6"
+  },
+  "shapes": {
+   "e": "diamond",
+   "h": "diamond",
+   "l": "diamond",
+   "n": "ellipse"
+  },
+  "edges": [
+   [
+    "a",
+    "b",
+    "alert monitoring"
+   ],
+   [
+    "a",
+    "c",
+    "laporan pelanggan"
+   ],
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "e"
+   ],
+   [
+    "d",
+    "x",
+    "eskalasi sesuai severity",
+    "dashed"
+   ],
+   [
+    "e",
+    "f",
+    "Ya"
+   ],
+   [
+    "e",
+    "g",
+    "Tidak"
+   ],
+   [
+    "f",
+    "g",
+    "NOC tetap menangani availability",
+    "dashed"
+   ],
+   [
+    "g",
+    "h"
+   ],
+   [
+    "h",
+    "i",
+    "Ya"
+   ],
+   [
+    "h",
+    "j",
+    "Tidak"
+   ],
+   [
+    "i",
+    "k",
+    "pulih",
+    "dashed"
+   ],
+   [
+    "j",
+    "k"
+   ],
+   [
+    "k",
+    "l"
+   ],
+   [
+    "l",
+    "m",
+    "Ya"
+   ],
+   [
+    "l",
+    "n",
+    "Tidak"
+   ],
+   [
+    "m",
+    "n"
+   ],
+   [
+    "g",
+    "x",
+    "target terlewat atau butuh pihak lain",
+    "dashed"
+   ],
+   [
+    "x",
+    "g",
+    "",
+    "dashed"
+   ]
+  ],
+  "caption": "Gambar 1. Alur penanganan insiden. Garis putus-putus kembali ke alur utama."
+ },
+ "sla": [
+  [
+   "Buat ticket setelah alert terkonfirmasi",
+   "NOC Engineer",
+   "Paling lambat 10 menit setelah konfirmasi"
+  ],
+  [
+   "Ack ke pelanggan",
+   "NOC Engineer",
+   "P1 15 menit; P2 30 menit; P3 2 jam kerja; P4 1 hari kerja"
+  ],
+  [
+   "Update ke pelanggan",
+   "NOC Engineer",
+   "P1 tiap 1 jam; P2 tiap 3 jam atau per shift; P3 harian; P4 saat selesai"
+  ],
+  [
+   "Layanan pulih (target pulih)",
+   "NOC Engineer",
+   "P1 4 jam; P2 8 jam; P3 24 jam; P4 72 jam (USULAN)"
+  ],
+  [
+   "Eskalasi insiden P1 ke Lead NOC",
+   "NOC Engineer",
+   "Langsung"
+  ],
+  [
+   "Eskalasi insiden P2 ke Lead NOC",
+   "NOC Engineer",
+   "Dalam 1 jam"
+  ],
+  [
+   "Eskalasi insiden P3 ke Lead NOC",
+   "NOC Engineer",
+   "Jika melewati target"
+  ],
+  [
+   "Pemberitahuan insiden P1 ke COO",
+   "Lead NOC",
+   "Dalam 30 menit sejak waktu Dilaporkan (USULAN)"
+  ],
+  [
+   "Kirim RCA insiden P1 dan P2 ke pelanggan via email",
+   "Head of Operation",
+   "Paling lambat 2 hari kerja setelah pulih"
+  ],
+  [
+   "Indikator: ticket P1 dan P2 di-ack dalam target",
+   "NOC Engineer",
+   "Target 95%, dihitung di sheet Ringkasan SNX-OPS-FRM-08"
+  ],
+  [
+   "Indikator: mean time to restore P1",
+   "Lead NOC",
+   "Dikalibrasi setelah 3 bulan data"
+  ],
+  [
+   "Indikator: RCA P1 dan P2 terkirim dalam 2 hari kerja",
+   "Head of Operation",
+   "Target 100%"
+  ],
+  [
+   "Indikator: corrective action selesai sesuai tenggat",
+   "Head of Operation",
+   "Target 90%"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Insiden berindikasi keamanan informasi",
+   "NOC Engineer menyerahkannya ke SOC Analyst sesuai butir 6.2 dan tetap menangani sisi availability."
+  ],
+  [
+   "Gangguan di app-level pelanggan",
+   "NOC Engineer menyerahkannya ke developer atau PIC pelanggan sesuai butir 6.2."
+  ],
+  [
+   "Urusan harga, quote, atau kontrak",
+   "NOC Engineer menyerahkannya ke VP Commercial sesuai butir 6.2."
+  ],
+  [
+   "Service request",
+   "NOC Engineer mencatatnya sebagai P4."
+  ],
+  [
+   "Insiden P1 yang pemulihannya mengubah production",
+   "NOC Engineer menjalankan pemulihan sebagai change Emergency sesuai butir 6.3."
+  ],
+  [
+   "Target terlewat atau butuh pihak lain",
+   "NOC Engineer mengeskalasi insiden sesuai butir 6.6."
+  ],
+  [
+   "COO tidak dapat dihubungi saat insiden P1",
+   "Lead NOC memberi tahu Direktur Utama sesuai butir 6.6."
+  ],
+  [
+   "Pergantian shift saat insiden P1 berjalan",
+   "NOC Engineer yang menangani insiden tidak memindahkannya di tengah langkah teknis."
+  ]
+ ],
+ "conclusion": [
+  "Lead NOC memantau kepatuhan terhadap SOP ini melalui empat indikator kinerja di bagian 8. Sebagai pemilik SOP, Lead NOC meninjau dokumen ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "SNX-ISMS-SOP-01",
+   "SOP Information Security Incident Management; menangani insiden berindikasi keamanan yang diserahkan dari SOP ini."
+  ],
+  [
+   "SNX-OPS-SOP-02",
+   "SOP Project Change Management; mengatur pemulihan yang mengubah production, termasuk change Emergency."
+  ],
+  [
+   "SNX-OPS-SOP-05",
+   "SOP Service Level Agreement (SLA) Monitoring; mengukur SLA kontrak ke pelanggan."
+  ],
+  [
+   "SNX-OPS-FRM-08",
+   "Technical Ticket / Incident Register; rekap ticket, waktu Ack dan pulih, status SLA, dan sheet Target Severity."
+  ],
+  [
+   "SNX-OPS-FRM-10",
+   "Root Cause Analysis & Corrective Action Report; form RCA dan corrective action."
+  ],
+  [
+   "SNX-OPS-FRM-04",
+   "Change Request & Approval Log; mencatat change request, termasuk change Emergency."
+  ],
+  [
+   "SNX-ISMS-FRM-02",
+   "Security Incident & Investigation Records; mencatat insiden keamanan informasi."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; jabatan dan matriks peran yang menjadi dasar nama peran di bagian 5."
+  ]
+ ],
+ "records": [
+  [
+   "Technical Ticket / Incident Register (SNX-OPS-FRM-08)",
+   "Folder Drive Operation (USULAN); ticket asal tetap di Zammad atau Service Hub. Pemilik: Lead NOC.",
+   "3 tahun"
+  ],
+  [
+   "RCA & Corrective Action Report (SNX-OPS-FRM-10)",
+   "Folder Drive Operation, subfolder per tahun (USULAN). Pemilik: Head of Operation.",
+   "5 tahun"
+  ],
+  [
+   "Security Incident & Investigation Records (SNX-ISMS-FRM-02)",
+   "Folder Drive Operation (USULAN). Pemilik: Lead SOC.",
+   "5 tahun"
+  ],
+  [
+   "Change request emergency (SNX-OPS-FRM-04)",
+   "Folder Drive Operation (USULAN). Pemilik: Head of Operation.",
+   "3 tahun"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "8.5.1 (Pengendalian produksi dan penyediaan jasa), 8.7 (Pengendalian output yang tidak sesuai), 10.2 (Ketidaksesuaian dan tindakan korektif).",
+  "ISO/IEC 27001:2022": "Annex A 5.24 (Perencanaan dan persiapan manajemen insiden keamanan informasi), 5.26 (Respons terhadap insiden keamanan informasi), 8.16 (Aktivitas pemantauan)."
+ }
 }
