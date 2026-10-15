@@ -1,4 +1,4 @@
-# ISO-W10 RESUME (WORKER-ISO-03) — baca ini dulu bila konteks diringkas atau container baru
+# ISO-W10 RESUME (WORKER-ISO-03) [SELESAI: W10-DONE 09.24 UTC, lihat reports/REVIEW-W10.md] — baca ini dulu bila konteks diringkas atau container baru
 
 Kebenaran keadaan: `python3 -I reports/orch/w10.py status` (gate + qa per KEY), `reports/w10/gates/KEY.json`, `qa/KEY.w10*.json`, ledger.json medan `w10`, git log. Berkas ini ringkasan, bukan sumber.
 
@@ -39,3 +39,6 @@ Kebenaran keadaan: `python3 -I reports/orch/w10.py status` (gate + qa per KEY), 
 - Temuan uji kering refcheck2: LEG-SOP-03 exceptions[6][1] "sesuai SNX-ISMS-SOP-01 (butir 4.17)" salah tujuan (butir 4.17 milik LEG-SOP-03). Perbaiki SETELAH audit label batch A selesai: "... sebagai event keamanan sesuai SNX-ISMS-SOP-01 (USULAN untuk pelapor)." + baris audit pointer di notes, rebuild, commit.
 - Penutupan refcheck2: 13 TIDAK_ADA cocok adjudikasi W9 berdasar (asal, tujuan, lokasi) tetapi kalimat diubah W10. Rencana: glob refsem juga reports/w10/refsem*.json (tech_fix), tulis reports/w10/refsem_w10.json berisi baris yang dicek ulang worker, lalu refcheck2 tag w10 harus 0 TIDAK_ADA.
 - HR-SOP-10/11/12 r2 pemeriksa berjalan; COM-SOP-01/02 pemeriksa berjalan.
+
+## Status akhir (09.24Z)
+W10-DONE. 60 lolos, 10 residu (bed1bb6). Semua gerbang penutupan rc 0 (reports/w10/close/). Satu-satunya keputusan menunggu owner: ulang residu. Watchdog menyala 09.22Z dan tidak dipasang ulang. Jangan mulai kerja baru tanpa GO owner.

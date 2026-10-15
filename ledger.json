@@ -3,9 +3,9 @@
  "runbook": "v19-e",
  "defaults_version": "v22",
  "started_at": "2026-10-14T19:01:00Z",
- "current_wave": "W10",
+ "current_wave": "W10-DONE",
  "last_guide_seen": 4,
- "watchdog_trigger_id": "trig_01PLSM1BasQkcQsfiT1fUkxT",
+ "watchdog_trigger_id": null,
  "gaspol": true,
  "tech_fixes": [
   {
@@ -2745,6 +2745,10 @@
   {
    "at": "2026-10-15T08:37Z",
    "event": "ISO-W10: trig_013YanjB66C2E3u9Ak2d9KWP fired while active; new trig_01PLSM1BasQkcQsfiT1fUkxT fires 09:22Z"
+  },
+  {
+   "at": "2026-10-15T09:24Z",
+   "event": "watchdog trig_01PLSM1BasQkcQsfiT1fUkxT menyala 09:22Z (sekali jalan, ended_reason run_once_fired, nonaktif). Tidak dipasang ulang karena run selesai. Tidak dihapus: trigger terikat ke sesi ini (persistent_session_id) dan penghapusan trigger ikut menghapus sesi yang dijalankannya."
   }
  ],
  "retractions": [
@@ -3074,11 +3078,13 @@
    "dikirim_owner": "SendUserFile 07:36Z: 4 PDF PASS, PDF percobaan OPS-FRM-10, diff-skrip-istilah-pilot.md"
   },
   "progress": {
-   "at": "2026-10-15T08:52Z",
+   "at": "2026-10-15T09:24Z",
    "qa_pass": [
     "COM-FRM-01",
     "COM-FRM-02",
     "COM-REG-01",
+    "COM-SOP-01",
+    "COM-SOP-02",
     "FAT-FRM-01",
     "FAT-FRM-02",
     "FAT-REG-01",
@@ -3093,6 +3099,9 @@
     "HR-ORG-01",
     "HR-RPT-01",
     "HR-SOP-08",
+    "HR-SOP-10",
+    "HR-SOP-11",
+    "HR-SOP-12",
     "HR-SOP-13",
     "ISMS-FRM-01",
     "ISMS-FRM-02",
@@ -3145,18 +3154,24 @@
     "OPS-SOP-02"
    ],
    "resume": "reports/w10/RESUME.md",
-   "owner_pending": "ulang residu (izin putaran ke-3)",
-   "putaran_perbaikan": [
-    "HR-SOP-10",
-    "HR-SOP-11",
-    "HR-SOP-12"
-   ],
-   "disunting": [
-    "COM-SOP-01",
-    "COM-SOP-02"
-   ],
-   "audit_pointer_retro": "selesai ~08:50Z (semua docx lolos; spec diubah: HR-SOP-13, FAT-SOP-01, LEG-REG-01, LEG-RPT-02, COM-REG-01, MKT-REG-01)",
-   "audit_cakupan_label": "berjalan (113 jalur kandidat, /tmp/claude-0/w10/work/labelscope.json)"
+   "owner_pending": "ulang residu (izin putaran ke-3), lihat reports/REVIEW-W10.md OPEN DECISION 1"
+  },
+  "penutupan": {
+   "at": "2026-10-15T09:24Z",
+   "review": "reports/REVIEW-W10.md",
+   "laporan_run": "reports/Laporan_Run.md bagian Perubahan ISO-W10",
+   "hasil": {
+    "dokumen": 70,
+    "lolos": 60,
+    "residu": 10,
+    "lolos_putaran_pertama": 43,
+    "lolos_sesudah_perbaikan": 17
+   },
+   "bukti": "reports/w10/close/ (selftest, gate_final, refcheck_w10, metascan, grepgate, w8_rebuild, tool_audit, ringkasan_gerbang, langscan_diff_kontrol_positif), reports/w10/sources_modtime.json ukur_ulang_penutupan",
+   "audit_retro": {
+    "pointer": "211 jalur di 20 dokumen: 198 lengkap, 10 dikembalikan, 3 dilengkapi",
+    "cakupan_label": "113 jalur kandidat di 26 dokumen: 37 diperbaiki"
+   }
   }
  }
 }
