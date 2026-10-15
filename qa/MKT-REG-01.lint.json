@@ -1,0 +1,9 @@
+{
+ "file": "out/06_Marketing/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "26 butir (USULAN) menunggu ACC"
+ ]
+}

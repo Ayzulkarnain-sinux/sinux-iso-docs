@@ -1,0 +1,1109 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "MKT-REG-01",
+  "doc_type_cover": "REGISTER",
+  "doc_type_label": "Register",
+  "number": "SNX-MKT-REG-01",
+  "department": "Marketing",
+  "title": "Marketing Content, Material & Claims Approval Register",
+  "process_owner": "VP Commercial",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Zilly Dwinata / Brand & Marketing",
+   "reviewed": "Laras Rasmawati / VP Commercial",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Register ini mencatat materi yang SINUX pakai untuk kebutuhan eksternal, beserta nama materi, jenis konten, channel, produk atau layanan terkait, versi, PIC, Reviewer, Approver, tanggal persetujuan, status publikasi, dan lokasi file final. Register ini juga mencatat klaim yang perlu diverifikasi di dalam materi, sumber atau bukti pendukungnya, dan hasil verifikasinya."
+    },
+    {
+     "p": "Yang dijaga: informasi dalam materi akurat, klaim tentang produk dan layanan SINUX sudah diverifikasi sebelum terbit, dan tiap materi yang terbit dapat ditelusuri ke file final dan bukti persetujuannya."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Register ini mencakup materi yang digunakan untuk kebutuhan eksternal, siapa pun yang menyusunnya, termasuk company profile, website, social media, product brochure, presentation deck, campaign material, dan event collateral. Pencatatan berjalan sejak materi disusun sampai terbit, dan sampai ditarik bila materi ditarik."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari register ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       6.5,
+       9.0
+      ],
+      "rows": [
+       [
+        "Materi untuk kebutuhan internal",
+        "Register ini hanya untuk materi yang dipakai di depan atau untuk pihak luar."
+       ],
+       [
+        "Proposal dan quotation untuk satu customer tertentu",
+        "Diatur di SNX-COM-SOP-02 (USULAN)."
+       ],
+       [
+        "Komunikasi insiden layanan kepada customer",
+        "Diatur di SNX-OPS-SOP-04 (USULAN)."
+       ],
+       [
+        "Rencana dan evaluasi kinerja marketing",
+        "Register ini mencatat materinya, bukan hasil kerjanya. Rencana dan evaluasi ada di SNX-MKT-RPT-01 (USULAN)."
+       ],
+       [
+        "Pelaksanaan campaign dan aktivitas marketing",
+        "Dicatat di SNX-MKT-REG-02, yang merujuk tiap materi yang dipakai ke ID persetujuan di register ini (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Approver",
+        "Peran yang menyetujui satu versi materi untuk terbit."
+       ],
+       [
+        "Aset",
+        "Foto, gambar, ikon, font, atau karya lain milik pihak luar yang dipakai di dalam materi."
+       ],
+       [
+        "Bukti pendukung",
+        "Sumber, dokumen, atau data yang menunjukkan bahwa sebuah klaim benar."
+       ],
+       [
+        "Bukti persetujuan",
+        "Rekaman tertulis persetujuan Approver atas satu versi materi, misalnya email atau pesan di kanal kerja resmi."
+       ],
+       [
+        "Bukti verifikasi",
+        "Rekaman tertulis hasil pemeriksaan Pemverifikasi atas satu klaim, misalnya email atau pesan di kanal kerja resmi."
+       ],
+       [
+        "Channel",
+        "Tempat materi tampil atau dibagikan kepada pihak luar, misalnya website SINUX, akun social media, email, atau acara."
+       ],
+       [
+        "Customer",
+        "Perusahaan atau institusi di luar SINUX yang menjadi sasaran penjualan atau sudah membeli solusi SINUX."
+       ],
+       [
+        "File final",
+        "File materi dalam bentuk yang diajukan untuk persetujuan."
+       ],
+       [
+        "ID persetujuan",
+        "Nomor baris sebuah versi materi di Tabel 1 sampai Tabel 3, ditulis di kolom ID. Persetujuan dicatat per versi, jadi satu ID menunjuk satu versi dan satu persetujuan."
+       ],
+       [
+        "Izin penggunaan aset",
+        "Persetujuan pemilik aset kepada SINUX untuk memakai aset itu di dalam materi."
+       ],
+       [
+        "Jenis konten",
+        "Macam sebuah materi menurut daftar di bagian 2."
+       ],
+       [
+        "Kebutuhan eksternal",
+        "Penggunaan materi di depan atau untuk pihak luar."
+       ],
+       [
+        "Klaim",
+        "Pernyataan di dalam materi yang kebenarannya dapat dicek, misalnya tentang kemampuan produk atau layanan SINUX, perbandingan dengan produk lain, kinerja layanan, sertifikasi, atau customer SINUX."
+       ],
+       [
+        "Materi",
+        "Satu produk komunikasi yang SINUX pakai untuk kebutuhan eksternal, seperti satu brosur atau satu konten social media. Jenis yang tercakup ada di bagian 2."
+       ],
+       [
+        "Pemverifikasi",
+        "Peran yang memeriksa sebuah klaim terhadap bukti pendukungnya."
+       ],
+       [
+        "PIC",
+        "Person in charge: jabatan yang bertanggung jawab atas satu materi."
+       ],
+       [
+        "Pihak luar",
+        "Pihak yang bukan karyawan atau kontraktor SINUX, termasuk customer, calon customer, partner, dan publik."
+       ],
+       [
+        "Reviewer",
+        "Peran yang meninjau isi satu versi materi sebelum Approver memutuskan."
+       ],
+       [
+        "SLA",
+        "Service level agreement: target tingkat layanan yang SINUX sampaikan kepada customer, misalnya availability layanan."
+       ],
+       [
+        "Versi",
+        "Nomor urut isi sebuah materi. Satu versi berisi satu isi yang tetap."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Status Publikasi"
+    },
+    {
+     "p": "Kolom Status Publikasi memakai lima nilai berikut."
+    },
+    {
+     "table": {
+      "header": [
+       "Status",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "Draf",
+        "PIC masih menyusun materi atau versi baru."
+       ],
+       [
+        "Dalam Peninjauan",
+        "PIC sudah menyerahkan versi ke Reviewer dan Approver belum menyetujuinya."
+       ],
+       [
+        "Disetujui",
+        "Approver sudah menyetujui versi itu dan versi itu belum tampil atau dibagikan kepada pihak luar."
+       ],
+       [
+        "Terbit",
+        "Versi sudah tampil atau dibagikan kepada pihak luar."
+       ],
+       [
+        "Ditarik",
+        "Versi yang pernah Terbit sudah dihentikan dan tidak lagi tampil atau dibagikan kepada pihak luar."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Satu baris mencatat satu versi dari satu materi di satu channel, dengan satu ID persetujuan. Tabel 1 sampai Tabel 3 memakai ID yang sama, dan Tabel 4 dan Tabel 5 memakai nomor klaim yang sama (USULAN)."
+    },
+    {
+     "p": "4.2 Brand & Marketing mencatat tiap materi di register ini sebelum materi diserahkan ke Reviewer (USULAN)."
+    },
+    {
+     "p": "4.3 PIC materi adalah Brand & Marketing, kecuali VP Commercial menunjuk jabatan lain untuk materi tertentu (USULAN)."
+    },
+    {
+     "p": "4.4 VP Commercial menjadi Approver untuk semua materi, dan menjadi Reviewer kecuali ia menunjuk jabatan lain sebagai Reviewer untuk materi tertentu (USULAN)."
+    },
+    {
+     "p": "4.5 Materi berklasifikasi INTERNAL sampai Approver menetapkan PUBLIC saat menyetujui versinya. Penetapan klasifikasi diatur di SNX-ISMS-PRO-01 butir 4.1 dan 4.2 (USULAN)."
+    },
+    {
+     "p": "4.6 Approver menyetujui satu versi materi secara tertulis sebelum materi terbit. Persetujuan lisan tidak dihitung (USULAN)."
+    },
+    {
+     "p": "4.7 Brand & Marketing menjadwalkan publikasi hanya sesudah Approver menyetujui versi itu, dan Tanggal Publikasi tidak lebih awal dari Tanggal Persetujuan (SNX-HR-JA-01, JA-06 wewenang 2)."
+    },
+    {
+     "p": "4.8 Perubahan isi pada versi yang sudah Disetujui atau Terbit membuat versi baru, dengan baris baru dan persetujuan baru. Brand & Marketing tidak menghapus atau menimpa baris versi lama, sehingga ID persetujuan tidak dipakai ulang (USULAN)."
+    },
+    {
+     "p": "4.9 Approver memutuskan penarikan materi Terbit yang isinya tidak benar lagi. Brand & Marketing menarik materi itu dari channel dan mencatat status Ditarik (USULAN)."
+    },
+    {
+     "p": "4.10 Brand & Marketing mencatat tiap klaim di dalam materi di Tabel 4 dengan ID materinya, lalu mencatat Pemverifikasi, hasil, dan bukti verifikasinya di Tabel 5. Kolom Sumber atau Bukti Pendukung dan kolom Bukti Verifikasi memuat nama dan lokasi, bukan isinya."
+    },
+    {
+     "p": "4.11 Pemverifikasi ditetapkan menurut jenis klaim pada tabel di bawah butir ini (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Jenis klaim",
+       "Pemverifikasi",
+       "Dasar"
+      ],
+      "widths_cm": [
+       4.4,
+       3.6,
+       7.5
+      ],
+      "rows": [
+       [
+        "Kemampuan, spesifikasi, atau perbandingan produk dan layanan SINUX",
+        "Manager of Product Tech",
+        "SNX-HR-JA-01, JA-05: tujuan jabatan mencakup validitas teknis produk yang ditawarkan perusahaan, dan wewenang 1 adalah memberi rekomendasi kelayakan teknis."
+       ],
+       [
+        "Kinerja layanan, misalnya availability, SLA, dan waktu respons",
+        "VP Tech Operation and Services",
+        "SNX-HR-JA-01, JA-04: tujuan jabatan mencakup layanan teknis yang memenuhi SLA. Target availability standar ada di SNX-OPS-SOP-05 butir 4.1."
+       ],
+       [
+        "Sertifikasi, kepatuhan, izin, dan penyebutan customer atau pihak luar lain",
+        "Legal & Compliance",
+        "SNX-HR-JA-01, JA-08: wewenang 1 adalah memberikan legal clearance atau rekomendasi."
+       ],
+       [
+        "Klaim jenis lain",
+        "Jabatan yang VP Commercial tunjuk untuk klaim itu",
+        "Penunjukan per klaim (USULAN)."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "4.12 Pemverifikasi menolak klaim availability atau SLA yang berbeda dari target standar di SNX-OPS-SOP-05 butir 4.1. Pemverifikasi menolak bahasa kompensasi atau service credit di dalam materi, sebab menurut SNX-OPS-SOP-05 butir 4.1 bahasa itu hanya ada di dokumen kontraktual (USULAN)."
+    },
+    {
+     "p": "4.13 Approver tidak menyetujui versi yang masih memuat klaim tanpa sumber atau bukti pendukung, klaim tanpa hasil verifikasi, atau klaim yang Pemverifikasi tolak (USULAN)."
+    },
+    {
+     "p": "4.14 Brand & Marketing menyimpan file final, bukti verifikasi, dan izin penggunaan aset di lokasi yang tertulis pada tabel Rekaman (bagian 8), dan menulis lokasi file final di Tabel 1 (SNX-HR-JA-01, JA-06 uraian 7). Brand & Marketing menyimpan bukti persetujuan di lokasi yang sama (USULAN)."
+    },
+    {
+     "p": "4.15 Brand & Marketing mencatat materi yang sudah terbit sebelum register ini berlaku dengan status Terbit. Approver meninjau materi itu, dan Tanggal Persetujuan diisi dengan tanggal peninjauan itu, tanpa tanggal mundur. Baris ini dikecualikan dari batas tanggal di butir 4.7 (USULAN)."
+    },
+    {
+     "p": "4.16 Kolom Status Publikasi memakai lima nilai pada tabel Status Publikasi di bagian 3 (USULAN)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN). Nama jabatan mengikuti SNX-HR-ORG-01. PIC, Reviewer, Approver, dan Pemverifikasi adalah peran per materi atau per klaim, bukan jabatan tersendiri."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada register ini"
+      ],
+      "widths_cm": [
+       3.6,
+       11.9
+      ],
+      "rows": [
+       [
+        "Brand & Marketing",
+        "Pencatat register. Menyusun materi dan menjadi PIC (butir 4.2 dan 4.3). Menulis Tabel 1 sampai Tabel 5. Menjadwalkan publikasi sesudah persetujuan, menarik materi yang diputuskan ditarik, dan menyimpan file final, bukti persetujuan, bukti verifikasi, serta izin penggunaan aset (butir 4.7, 4.9, 4.10, 4.14, dan 4.15)."
+       ],
+       [
+        "VP Commercial",
+        "Pemilik register menurut blok Identity. Memegang peran Approver dan Reviewer (butir 4.4), menunjuk PIC selain Brand & Marketing (butir 4.3), dan menunjuk Pemverifikasi untuk klaim jenis lain (butir 4.11)."
+       ],
+       [
+        "PIC",
+        "Bertanggung jawab atas satu materi (butir 4.3)."
+       ],
+       [
+        "Reviewer",
+        "Meninjau isi satu versi materi sebelum Approver memutuskan (butir 4.4)."
+       ],
+       [
+        "Approver",
+        "Menyetujui satu versi materi secara tertulis, menetapkan klasifikasi PUBLIC, memutuskan penarikan materi, dan meninjau materi yang terbit sebelum register berlaku (butir 4.5, 4.6, 4.9, 4.13, dan 4.15)."
+       ],
+       [
+        "Pemverifikasi",
+        "Memeriksa klaim terhadap sumber atau bukti pendukungnya dan menyampaikan hasilnya kepada Brand & Marketing (butir 4.11 sampai 4.13)."
+       ],
+       [
+        "Manager of Product Tech",
+        "Pemverifikasi klaim kemampuan, spesifikasi, atau perbandingan produk dan layanan SINUX (butir 4.11 dan 4.13)."
+       ],
+       [
+        "VP Tech Operation and Services",
+        "Pemverifikasi klaim kinerja layanan (butir 4.11 sampai 4.13)."
+       ],
+       [
+        "Legal & Compliance",
+        "Pemverifikasi klaim sertifikasi, kepatuhan, izin, dan penyebutan customer atau pihak luar lain (butir 4.11 dan 4.13)."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Direktur Utama menyetujui register ini, bukan materinya, lewat blok Approval pada halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Cara Mengisi",
+   "blocks": [
+    {
+     "p": "6.1 Brand & Marketing menulis satu baris di Tabel 1 untuk tiap versi materi di tiap channel, dengan ID persetujuan di kolom ID (butir 4.1)."
+    },
+    {
+     "p": "6.2 Brand & Marketing menulis judul materi seperti pada file final di kolom Nama Materi."
+    },
+    {
+     "p": "6.3 Brand & Marketing menulis jenis konten di kolom Jenis Konten, sesuai daftar di bagian 2."
+    },
+    {
+     "p": "6.4 Brand & Marketing menulis nama channel di kolom Channel."
+    },
+    {
+     "p": "6.5 Brand & Marketing menulis nama produk atau layanan SINUX yang dibahas materi di kolom Produk atau Layanan Terkait, atau Umum bila materi tidak membahas produk atau layanan tertentu."
+    },
+    {
+     "p": "6.6 Brand & Marketing menulis nomor versi di kolom Versi: 1 untuk versi pertama, lalu naik satu untuk tiap versi baru (butir 4.8)."
+    },
+    {
+     "p": "6.7 Brand & Marketing menulis jalur folder dan nama file dari file final di kolom Lokasi File Final (butir 4.14)."
+    },
+    {
+     "p": "6.8 Brand & Marketing menulis jabatan PIC di kolom PIC Tabel 2. Kolom ini memuat jabatan, bukan nama orang."
+    },
+    {
+     "p": "6.9 Brand & Marketing menulis jabatan Reviewer di kolom Reviewer (butir 4.4)."
+    },
+    {
+     "p": "6.10 Brand & Marketing menulis jabatan Approver di kolom Approver (butir 4.4)."
+    },
+    {
+     "p": "6.11 Brand & Marketing menulis tanggal lengkap persetujuan di kolom Tanggal Persetujuan sesudah Approver menyetujui versi itu (butir 4.6)."
+    },
+    {
+     "p": "6.12 Brand & Marketing menulis lokasi bukti persetujuan di kolom Bukti Persetujuan (butir 4.14)."
+    },
+    {
+     "p": "6.13 Brand & Marketing menulis Draf di kolom Status Publikasi Tabel 3 saat membuat baris."
+    },
+    {
+     "p": "6.14 Brand & Marketing mengubah status menjadi Dalam Peninjauan saat menyerahkan versi ke Reviewer."
+    },
+    {
+     "p": "6.15 Brand & Marketing mengubah status menjadi Disetujui sesudah Tanggal Persetujuan dan Bukti Persetujuan terisi."
+    },
+    {
+     "p": "6.16 Brand & Marketing mengubah status menjadi Terbit saat versi tampil atau dibagikan kepada pihak luar, lalu menulis tanggalnya di kolom Tanggal Publikasi (butir 4.7)."
+    },
+    {
+     "p": "6.17 Brand & Marketing mengubah status menjadi Ditarik saat materi dihentikan, lalu menulis tanggal dan alasannya di kolom Tanggal Ditarik dan Alasan Penarikan (butir 4.9)."
+    },
+    {
+     "p": "6.18 Brand & Marketing menulis satu baris di Tabel 4 untuk tiap klaim, dengan ID persetujuan versi materinya di kolom ID Materi (butir 4.10)."
+    },
+    {
+     "p": "6.19 Brand & Marketing menulis klaim dengan kalimat seperti di materi di kolom Klaim yang Perlu Diverifikasi."
+    },
+    {
+     "p": "6.20 Brand & Marketing menulis nama dan lokasi sumber atau bukti pendukung di kolom Sumber atau Bukti Pendukung, tanpa isinya (butir 4.10)."
+    },
+    {
+     "p": "6.21 Brand & Marketing menulis jabatan Pemverifikasi di kolom Pemverifikasi Tabel 5 menurut tabel di butir 4.11, di baris dengan nomor klaim yang sama dengan Tabel 4."
+    },
+    {
+     "p": "6.22 Brand & Marketing menulis Sesuai atau Tidak sesuai di kolom Hasil Verifikasi sesudah Pemverifikasi menyampaikan hasilnya (butir 4.12 dan 4.13)."
+    },
+    {
+     "p": "6.23 Brand & Marketing menulis tanggal lengkap hasil itu di kolom Tanggal Verifikasi."
+    },
+    {
+     "p": "6.24 Brand & Marketing menulis nama dan lokasi bukti verifikasi di kolom Bukti Verifikasi (butir 4.10 dan 4.14)."
+    },
+    {
+     "p": "6.25 Brand & Marketing membiarkan kosong sel yang datanya belum ada, termasuk seluruh Tabel 4 dan Tabel 5 untuk materi tanpa klaim serta kolom Tanggal Ditarik dan Alasan Penarikan untuk materi yang tidak ditarik."
+    }
+   ]
+  },
+  {
+   "h": "Isi Register",
+   "blocks": [
+    {
+     "p": "Tabel menyediakan 10 baris (USULAN). Brand & Marketing menambah baris bila perlu. Sel data kosong dan diisi menurut bagian Cara Mengisi. Kolom ID dan kolom No sudah bernomor. Kolom ID memuat ID persetujuan, dan kolom No di Tabel 4 dan Tabel 5 memuat nomor klaim. Pembagian kolom ke Tabel 1 sampai Tabel 5 berstatus (USULAN) sampai VP Commercial menetapkannya."
+    },
+    {
+     "h2": "Tabel 1. Identitas Materi"
+    },
+    {
+     "table": {
+      "header": [
+       "ID",
+       "Nama Materi",
+       "Jenis Konten",
+       "Channel",
+       "Produk atau Layanan Terkait",
+       "Versi",
+       "Lokasi File Final"
+      ],
+      "widths_cm": [
+       1.0,
+       3.0,
+       2.0,
+       2.0,
+       2.6,
+       1.6,
+       3.3
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 2. Peninjauan dan Persetujuan"
+    },
+    {
+     "table": {
+      "header": [
+       "ID",
+       "PIC",
+       "Reviewer",
+       "Approver",
+       "Tanggal Persetujuan",
+       "Bukti Persetujuan"
+      ],
+      "widths_cm": [
+       1.0,
+       2.5,
+       2.5,
+       2.5,
+       2.8,
+       4.2
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 3. Publikasi"
+    },
+    {
+     "table": {
+      "header": [
+       "ID",
+       "Status Publikasi",
+       "Tanggal Publikasi",
+       "Tanggal Ditarik",
+       "Alasan Penarikan"
+      ],
+      "widths_cm": [
+       1.0,
+       3.2,
+       3.0,
+       3.0,
+       5.3
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 4. Klaim yang Perlu Diverifikasi"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "ID Materi",
+       "Klaim yang Perlu Diverifikasi",
+       "Sumber atau Bukti Pendukung"
+      ],
+      "widths_cm": [
+       1.0,
+       2.0,
+       6.0,
+       6.5
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Tabel 5. Verifikasi Klaim"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Pemverifikasi",
+       "Hasil Verifikasi",
+       "Tanggal Verifikasi",
+       "Bukti Verifikasi"
+      ],
+      "widths_cm": [
+       1.0,
+       3.5,
+       2.8,
+       3.0,
+       5.2
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "6",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "7",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "8",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "9",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "10",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "p": "Lokasi, pemilik, dan retensi berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       3.8,
+       7.2,
+       4.5
+      ],
+      "rows": [
+       [
+        "Register ini: Tabel 1 sampai Tabel 5",
+        "Google Drive, folder departemen Commercial; jalur folder belum ditetapkan. Pemilik: VP Commercial. Pencatat: Brand & Marketing.",
+        "Belum ditetapkan"
+       ],
+       [
+        "File final materi dan bukti persetujuan",
+        "Google Drive; jalur folder ditulis di Tabel 1 dan Tabel 2. Pemilik: Brand & Marketing. Klasifikasi INTERNAL sebelum Disetujui dan PUBLIC sesudahnya (butir 4.5).",
+        "Belum ditetapkan"
+       ],
+       [
+        "Izin penggunaan aset",
+        "Disimpan bersama file final materi yang memakai aset itu. Pemilik: Brand & Marketing.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Sumber atau bukti pendukung klaim",
+        "Tetap di lokasi aslinya; Tabel 4 memuat nama dan lokasinya (butir 4.10). Pemilik: pemilik bukti di lokasi aslinya.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Bukti verifikasi klaim",
+        "Disimpan bersama file final materi; Tabel 5 memuat nama dan lokasinya (butir 4.10 dan 4.14). Pemilik: Brand & Marketing.",
+        "Belum ditetapkan"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan register ini"
+      ],
+      "widths_cm": [
+       3.4,
+       5.6,
+       6.5
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "8.2.1 Komunikasi dengan customer",
+        "Register mencatat materi yang menyampaikan informasi tentang produk dan layanan SINUX kepada pihak luar, beserta persetujuannya."
+       ],
+       [
+        "ISO 9001:2015",
+        "8.2.2 Penentuan persyaratan untuk produk dan jasa",
+        "Tabel 4 dan Tabel 5 mencatat klaim tentang produk dan layanan yang SINUX tawarkan, serta bukti dan hasil verifikasi bahwa klaim itu dapat dipenuhi."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Register mencatat versi dan lokasi file final. Pemilik register ada di tabel Rekaman, dan klasifikasi materi di butir 4.5."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.12 Klasifikasi informasi",
+        "Materi berklasifikasi INTERNAL sampai Approver menetapkan PUBLIC (butir 4.5)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.32 Hak kekayaan intelektual",
+        "Izin penggunaan aset disimpan bersama file final (butir 4.14)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       11.5
+      ],
+      "rows": [
+       [
+        "SNX-COM-SOP-02",
+        "Proposal, Quotation & Pricing Control. Mengatur proposal dan quotation untuk satu customer tertentu, yang dikecualikan dari register ini."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan. Memuat uraian tugas dan wewenang Brand & Marketing (JA-06), Manager of Product Tech (JA-05), VP Tech Operation and Services (JA-04), dan Legal & Compliance (JA-08)."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber nama jabatan."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling Procedure. Memuat tingkat PUBLIC dan INTERNAL serta penetapan klasifikasi (butir 4.1 dan 4.2)."
+       ],
+       [
+        "SNX-MKT-REG-02",
+        "Marketing Campaign & Activity Register. Mencatat pelaksanaan campaign dan aktivitas; tiap materi yang dipakai dirujuk ke ID persetujuan di register ini (USULAN)."
+       ],
+       [
+        "SNX-MKT-RPT-01",
+        "Marketing Planning & Performance Review. Memuat rencana dan evaluasi kinerja marketing."
+       ],
+       [
+        "SNX-OPS-SOP-04",
+        "Technical Incident Handling & Escalation. Mengatur komunikasi insiden layanan kepada customer, yang dikecualikan dari register ini."
+       ],
+       [
+        "SNX-OPS-SOP-05",
+        "Service Level Agreement (SLA) Monitoring. Memuat target standar availability yang dikomunikasikan dan batas bahasa kompensasi di materi (butir 4.1)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Register ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau register ini setiap tahun (USULAN)."
+    }
+   ]
+  }
+ ]
+}
