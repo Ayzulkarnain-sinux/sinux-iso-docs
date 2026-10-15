@@ -438,6 +438,30 @@ def apply_table_defaults(d, td):
                     jc.set(qn('w:val'), 'left')
     for tbl in body.iter(qn('w:tbl')):
         table_row_flags(tbl, td)
+    if td.get('keep_with_table'):
+        # Label atau paragraf tepat sebelum tabel tidak terpisah dari tabelnya; baris judul tidak tertinggal sendiri
+        # di dasar halaman; tabel pendek (<= keep_small_rows baris) tidak terbelah antarhalaman.
+        small = td.get('keep_small_rows', 0)
+        for tbl in list(body.iter(qn('w:tbl'))):
+            prev = tbl.getprevious()
+            if prev is not None and prev.tag == qn('w:p') and ''.join(t.text or '' for t in prev.iter(qn('w:t'))).strip():
+                _keep_next(prev)
+            rows = tbl.findall(qn('w:tr'))
+            keep = rows[:-1] if len(rows) <= small else rows[:1]
+            for tr in keep:
+                for pe in tr.iter(qn('w:p')):
+                    _keep_next(pe)
+
+
+def _keep_next(p_el):
+    ppr = p_el.find(qn('w:pPr'))
+    if ppr is None:
+        ppr = p_el.makeelement(qn('w:pPr'), {})
+        p_el.insert(0, ppr)
+    if ppr.find(qn('w:keepNext')) is None:
+        kn = ppr.makeelement(qn('w:keepNext'), {})
+        anchor = ppr.find(qn('w:pStyle'))  # urutan skema CT_PPr: pStyle lalu keepNext
+        (anchor.addnext(kn) if anchor is not None else ppr.insert(0, kn))
 
 
 def render_generic(tpl, spec, out):
@@ -550,6 +574,13 @@ def render_generic(tpl, spec, out):
                 add(el)
                 fill_table(docx.table.Table(el, d._body), tb['rows'], header=tb['header'])
                 table_row_flags(el, tb)
+                if tb.get('min_row_cm'):  # ISO-W10: baris isian form setinggi tulisan tangan (w:trHeight atLeast)
+                    for tr in el.findall(qn('w:tr'))[1:]:
+                        trpr = tr.find(qn('w:trPr'))
+                        if trpr is None:
+                            trpr = tr.makeelement(qn('w:trPr'), {})
+                            tr.insert(0 if tr.find(qn('w:tblPrEx')) is None else 1, trpr)
+                        trpr.append(trpr.makeelement(qn('w:trHeight'), {qn('w:val'): str(int(tb['min_row_cm'] * 567)), qn('w:hRule'): 'atLeast'}))
                 add(make_para(ptmpl, ''))
             elif 'flow' in b:
                 png = os.path.join(flow_dir, f"{cfg['doc_key']}_{si}_{bi}.png")

@@ -16,7 +16,7 @@ W = '/tmp/claude-0/w10'
 LED = json.load(open('ledger.json', encoding='utf-8'))
 DOCS = {d['key']: d for d in LED['docs'] if d['state'] == 'DONE'}
 VALIDATOR = '/mnt/skills/public/docx/scripts/office/validate.py'
-TD = {'align_left': True, 'repeat_header': True, 'cant_split': True}
+TD = {'align_left': True, 'repeat_header': True, 'cant_split': True, 'keep_with_table': True}
 STEPS_W = [7.6, 3.4, 5.0]
 INSTR_H = ('petunjuk pengisian', 'cara mengisi', 'ketentuan pengisian')
 TXT = ("import docx,sys;d=docx.Document(sys.argv[1]);print('\\n'.join(p.text for p in d.paragraphs));"
@@ -290,11 +290,25 @@ def fmt_ops(k):
     """Op format W10 dari reports/w10/xlsx_sheets.json (milik worker; penyusun hanya memegang set dan col_widths)."""
     r = json.load(open('reports/w10/xlsx_sheets.json'))[k]
     P = {'freeze': {}, 'wrap_cols': {}, 'page_setup': {}, 'fit_rows': {}, 'col_widths': {}}
+    import openpyxl
+    wb = openpyxl.load_workbook(base_file(k))
     for x in r['data']:
+        ws = wb[x['sheet']]
         P['freeze'][x['sheet']] = x['freeze_bed1bb6'] or f"A{x['header_row'] + 1}"
         P['wrap_cols'][x['sheet']] = {'rows': [x['header_row'], x['max_row']]}
+        P['fit_rows'][x['sheet']] = {'rows': [x['header_row'], x['max_row']]}
         P['page_setup'][x['sheet']] = {'orientation': 'landscape', 'fitToWidth': 1, 'fitToHeight': 0,
                                        'print_title_rows': f"{x['header_row']}:{x['header_row']}"}
+        if ws.max_column >= 16:
+            P['page_setup'][x['sheet']]['paperSize'] = 8  # A3: register sangat lebar tetap terbaca saat fit 1 halaman
+        # kolom tidak memotong kata di judul kolom: lebar minimal = kata terpanjang + 2
+        for c in ws[x['header_row']]:
+            if isinstance(c.value, str):
+                longest = max(len(w) for w in c.value.split())
+                need = round(longest / 0.7 + 1)  # judul tebal: kira-kira 0,7 huruf per satuan lebar (kalibrasi render)
+                cur = ws.column_dimensions[c.column_letter].width or 8.43
+                if need > cur:
+                    P['col_widths'].setdefault(x['sheet'], {})[c.column_letter] = need
     if r['kontrol']:
         rows = [3, r['kontrol']['rows'][1]]  # baris 1-2 judul dibiarkan melebar ke kanan, tidak di-wrap
         P['wrap_cols']['Kontrol Dokumen'] = {'rows': rows, 'valign': 'top'}
@@ -376,7 +390,7 @@ def isi_page(pdf, n, head):
 
 def skeleton(o):
     if isinstance(o, dict):
-        return {k: skeleton(v) for k, v in o.items() if k != 'table_defaults'}
+        return {k: (len(v) if k == 'widths_cm' else skeleton(v)) for k, v in o.items() if k not in ('table_defaults', 'min_row_cm')}
     if isinstance(o, list):
         return [skeleton(v) for v in o]
     return '' if isinstance(o, str) else o

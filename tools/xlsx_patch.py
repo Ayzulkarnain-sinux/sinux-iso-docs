@@ -149,6 +149,8 @@ def main():
         ws.sheet_properties.pageSetUpPr.fitToPage = True
         ws.page_setup.fitToWidth = ps.get('fitToWidth', 1)
         ws.page_setup.fitToHeight = ps.get('fitToHeight', 0)
+        if ps.get('paperSize'):
+            ws.page_setup.paperSize = ps['paperSize']  # 8 = A3, untuk register yang sangat lebar
         if ps.get('print_title_rows'):
             ws.print_title_rows = ps['print_title_rows']
     # fit_rows: tinggi baris dari panjang teks sel ber-wrap dan lebar kolom (Excel tidak menyesuaikan sendiri saat dibuka).
@@ -162,9 +164,17 @@ def main():
                 if not isinstance(c.value, str) or c.value.startswith('=') or not c.alignment.wrap_text:
                     continue
                 w = ws.column_dimensions[c.column_letter].width or 8.43
-                per = max(1, int(w * 1.15))
-                lines = sum(max(1, -(-len(seg) // per)) for seg in c.value.split('\n'))
-                need = max(need, lines * (c.font.sz or 11) * 1.35 + 2)
+                cap = w * (0.7 if c.font.b else 0.85)  # huruf per baris, dikalibrasi dari render LibreOffice (OPS-FRM-08 Register)
+                lines = 0
+                for seg in c.value.split('\n'):
+                    n, cur = 1, 0
+                    for word in seg.split():
+                        if cur and cur + 1 + len(word) > cap:
+                            n, cur = n + 1, len(word)
+                        else:
+                            cur += (1 if cur else 0) + len(word)
+                    lines += n
+                need = max(need, lines * (c.font.sz or 11) * 1.35 + 3)
             cur = ws.row_dimensions[r].height or 15
             if need > cur:
                 ws.row_dimensions[r].height = round(need, 1)
