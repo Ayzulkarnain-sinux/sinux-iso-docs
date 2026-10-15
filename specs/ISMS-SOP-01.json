@@ -1,837 +1,848 @@
 {
-  "meta": {
-    "doc_key": "ISMS-SOP-01",
-    "number": "SNX-ISMS-SOP-01",
-    "department": "Operation",
-    "title": "Information Security Incident Management",
-    "process_owner": "Lead SOC",
-    "classification": "RESTRICTED (Internal)",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
-      "reviewed": "Fani Fatullah / VP Tech Operation and Services",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "doc_key": "ISMS-SOP-01",
+  "number": "SNX-ISMS-SOP-01",
+  "department": "Operation",
+  "title": "Information Security Incident Management",
+  "process_owner": "Lead SOC",
+  "classification": "RESTRICTED (Internal)",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Erik Dwi Yanto / Technical/Operation Engineer L1",
+   "reviewed": "Fani Fatullah / VP Tech Operation and Services",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "purpose": [
-    "SOP ini menetapkan cara SINUX menyiapkan diri, mendeteksi, menilai, merespons, dan belajar dari insiden keamanan informasi, termasuk pengumpulan bukti dan kewajiban pemberitahuan, agar dampak terhadap confidentiality, integrity, dan availability informasi diminimalkan."
-  ],
-  "scope": [
-    "SOP ini berlaku untuk event dan insiden keamanan informasi pada infrastruktur internal SINUX dan pada sistem pelanggan yang dikelola SINUX sesuai kontrak.",
-    "Untuk pelanggan yang SOC-nya menjadi tanggung jawab pelanggan sendiri, misalnya pelanggan pemerintah tertentu, SINUX menangani keamanan host yang dikelolanya sebagai managed services dan berkoordinasi dengan tim keamanan pelanggan.",
-    "Dikecualikan dari SOP ini: pekerjaan app-level pelanggan, seperti pembersihan konten aplikasi dan perbaikan kode, yang diserahkan ke developer atau PIC pelanggan; serta gangguan teknis tanpa indikasi keamanan, yang ditangani lewat SNX-OPS-SOP-04."
-  ],
-  "definitions": [
-    [
-      "(USULAN)",
-      "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
-    ],
-    [
-      "Ack",
-      "Pengakuan pertama SOC Analyst di tiket bahwa event atau insiden diterima dan sedang ditangani (USULAN: penerima Ack belum ditetapkan)."
-    ],
-    [
-      "App-level pelanggan",
-      "Isi aplikasi milik pelanggan, misalnya isi WordPress, plugin, database aplikasi, dan kode pelanggan."
-    ],
-    [
-      "Chain of custody",
-      "Catatan siapa memegang bukti, kapan, dan apa yang dilakukan terhadapnya."
-    ],
-    [
-      "Change Emergency",
-      "Jenis change yang boleh dieksekusi sebelum change request lengkap, diatur di SNX-OPS-SOP-02."
-    ],
-    [
-      "Change request",
-      "Permintaan tercatat untuk mengubah sistem di production, dicatat di SNX-OPS-FRM-04."
-    ],
-    [
-      "Containment",
-      "Langkah menahan penyebaran: blok IP, nonaktifkan akun, isolasi VM."
-    ],
-    [
-      "Direktur (COO)",
-      "Jabatan JA-02 pada SNX-HR-ORG-01. Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO sesudah sebutan ini."
-    ],
-    [
-      "Eradication",
-      "Langkah membuang penyebab kompromi dari sistem terdampak."
-    ],
-    [
-      "Event keamanan",
-      "Kejadian yang mungkin berdampak pada keamanan informasi, misalnya alert SIEM, login gagal berulang."
-    ],
-    [
-      "Incident Commander",
-      "Pemimpin penanganan satu insiden keamanan."
-    ],
-    [
-      "Insiden berulang",
-      "Insiden yang akar masalahnya sama dengan insiden sebelumnya."
-    ],
-    [
-      "Insiden keamanan",
-      "Event yang terkonfirmasi merugikan atau berpotensi besar merugikan confidentiality, integrity, atau availability."
-    ],
-    [
-      "IOC",
-      "Indicator of compromise: hash file, IP, domain, atau pola yang menandai kompromi."
-    ],
-    [
-      "Jumphost",
-      "Jalur masuk SINUX ke production pelanggan yang merekam sesi."
-    ],
-    [
-      "Kanal on-call",
-      "Saluran untuk melapor ke personel SOC yang siaga di luar jam kerja."
-    ],
-    [
-      "Lessons learned",
-      "Pelajaran dari satu insiden yang dicatat supaya insiden serupa tidak terulang."
-    ],
-    [
-      "Mean time to contain",
-      "Rata-rata jam dari waktu deteksi sampai waktu containment pada insiden P1, dari kolom Jam ke containment SNX-ISMS-FRM-02."
-    ],
-    [
-      "Parent ticket",
-      "Tiket induk satu insiden; alert dan tiket terkait ditautkan ke tiket ini."
-    ],
-    [
-      "Password manager",
-      "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
-    ],
-    [
-      "PIC pelanggan",
-      "Penanggung jawab dari pihak pelanggan."
-    ],
-    [
-      "Playbook",
-      "Panduan langkah untuk satu skenario insiden yang berulang."
-    ],
-    [
-      "RCA",
-      "Root cause analysis: analisis akar masalah sebuah insiden, ditulis di SNX-OPS-FRM-10."
-    ],
-    [
-      "Service Hub",
-      "SINUX Service Hub berbasis GLPI, sistem tiket untuk generalist, termasuk permintaan internal."
-    ],
-    [
-      "Severity",
-      "Tingkat insiden keamanan: P1, P2, P3, atau P4. Kriteria tiap tingkat ada di baris P1 sampai P4 berikut. Severity insiden teknis ditetapkan di SNX-OPS-SOP-04."
-    ],
-    [
-      "P1",
-      "Kompromi root atau host baru; kebocoran data pelanggan atau data pribadi; ransomware; akses tidak sah ke sistem kritis."
-    ],
-    [
-      "P2",
-      "Kompromi terbatas tanpa bukti kebocoran data, misalnya webshell pada satu akun hosting atau akun email dipakai spam; malware tertahan."
-    ],
-    [
-      "P3",
-      "Upaya serangan gagal yang butuh tindak lanjut; pelanggaran kebijakan ringan."
-    ],
-    [
-      "P4",
-      "Event informatif, tuning rule."
-    ],
-    [
-      "SOC",
-      "Sub divisi Divisi Operation menurut POL-OPS-001 yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."
-    ],
-    [
-      "Sweep IOC",
-      "Pencarian IOC yang sama di host sejenis berdasarkan hash."
-    ],
-    [
-      "Tabletop",
-      "Latihan penanganan insiden berupa diskusi skenario."
-    ],
-    [
-      "Tim investigasi",
-      "Orang yang ditugaskan pada satu insiden, dicatat di butir Tim investigasi sheet Investigasi SNX-ISMS-FRM-02."
-    ],
-    [
-      "Tindakan korektif",
-      "Tindakan menghilangkan akar masalah supaya insiden tidak terulang."
-    ],
-    [
-      "Triage",
-      "Penilaian awal sebuah event menjadi true positive (benar menandai ancaman), false positive (bukan ancaman), atau butuh investigasi."
-    ],
-    [
-      "UU PDP",
-      "Undang-Undang No. 27 Tahun 2022 tentang Pelindungan Data Pribadi."
-    ],
-    [
-      "Vantage eksternal",
-      "Titik pemeriksaan di luar jaringan layanan, bukan dari dalam jaringan atau dari 127.0.0.1."
-    ],
-    [
-      "Waktu deteksi",
-      "Waktu SOC Analyst menerima laporan event atau melihat alert, dicatat di tiket dan di kolom Waktu deteksi SNX-ISMS-FRM-02."
-    ],
-    [
-      "Zammad",
-      "Sistem tiket untuk Ops."
-    ]
-  ],
-  "policy": [
-    "Persiapan (Annex A 5.24): kontak eskalasi, akses darurat personel on-call, playbook, dan latihan tabletop disiapkan sebelum insiden terjadi, mengikuti butir 6.1.",
-    "Pelaporan event (Annex A 6.8): seluruh personel melaporkan event atau kelemahan keamanan ke SOC (butir 6.2) dan tidak menguji atau mengeksploitasi kelemahan yang ditemukan.",
-    "Penilaian dan keputusan (Annex A 5.25): SOC Analyst melakukan triage dan menetapkan severity (butir 6.3). Satu insiden hanya punya satu parent ticket.",
-    "Batas waktu di bagian 8 dihitung dari waktu deteksi (USULAN: titik awal belum ditetapkan), kecuali batas lapor oleh personel (sejak mengetahui) dan batas 3 x 24 jam untuk data pribadi (sejak diketahui).",
-    "Respons (Annex A 5.26): forensik lebih dulu, perbaikan kemudian. Bukti diamankan sebelum mengubah apa pun.",
-    "Webshell tidak pernah di-probe dengan GET atau HEAD, karena probe sama dengan eksekusi.",
-    "File mencurigakan dipindahkan ke folder quarantine dengan mv dan tidak dihapus dengan rm, agar bukti tetap utuh.",
-    "Klaim bahwa sistem sudah bersih atau aman wajib didukung dua sumber independen.",
-    "Containment mengikuti SNX-OPS-SOP-02. Lead SOC boleh menyatakan darurat dan langsung bertindak dengan pencatatan.",
-    "Pengumpulan bukti (Annex A 5.28): bukti dikumpulkan tanpa mengubah aslinya dan dicatat dengan chain of custody, mengikuti butir 6.5. Bukti disimpan di lokasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
-    "Pemberitahuan pihak luar: pemberitahuan ke pelanggan mengikuti kontrak. Kegagalan pelindungan data pribadi diberitahukan menurut UU PDP. Komunikasi kepada media hanya oleh pihak yang ditunjuk manajemen.",
-    "Pembelajaran (Annex A 5.27) dan tindakan korektif (ISO 9001:2015 10.2): insiden P1 dan P2 wajib punya RCA di SNX-OPS-FRM-10 dan tindakan korektif dengan pemilik dan tenggat. Lessons learned disimpan tanpa kredensial."
-  ],
-  "roles": [
-    [
-      "Lead SOC",
-      "Pemilik SOP. Incident Commander untuk insiden P1 dan P2. Me-review laporan insiden sebelum dikirim. Menyusun RCA dan mencatat tindakan korektif insiden P1 dan P2. Memelihara kontak eskalasi, playbook, dan latihan tabletop.",
-      "Menyatakan darurat keamanan dan langsung menjalankan containment dengan pencatatan; menyetujui laporan insiden untuk dikirim."
-    ],
-    [
-      "SOC Analyst",
-      "Menerima laporan event, melakukan triage, menetapkan severity, membuat parent ticket, melakukan containment awal, mengumpulkan dan mencatat bukti, melakukan sweep IOC, dan menyusun draft laporan insiden.",
-      "Menetapkan hasil triage dan severity; menutup event yang bukan insiden; menjalankan containment sesudah change request disetujui."
-    ],
-    [
-      "NOC Engineer",
-      "Memulihkan availability, mengeksekusi perubahan, dan memberi dukungan teknis pada penanganan insiden.",
-      "Mengeksekusi patch, penggantian kredensial, dan restore dari backup sesudah change request disetujui."
-    ],
-    [
-      "Head of Operation",
-      "Memutuskan eskalasi, memanggil personel, dan berkomunikasi dengan manajemen. Menyetujui RCA insiden P1 dan P2.",
-      "Memutuskan eskalasi; memanggil personel; menyetujui RCA."
-    ],
-    [
-      "Service Delivery Manager",
-      "Memberi tahu PIC pelanggan tentang insiden P1 dengan laporan awal dan mengirim laporan insiden ke PIC pelanggan terdampak.",
-      "Berkomunikasi resmi dengan PIC pelanggan atas insiden keamanan."
-    ],
-    [
-      "ISMS Coordinator",
-      "Memastikan pembelajaran dari insiden masuk ke register risiko dan tindakan korektif, dan menyusun pelaporan ISMS.",
-      "Memperbarui SNX-ISMS-REG-02 dan SNX-ISMS-REG-03 bila insiden menunjukkan risiko baru atau kontrol yang tidak efektif."
-    ],
-    [
-      "COO",
-      "Diberi tahu tentang insiden P1. Memutuskan bersama Legal & Compliance pemberitahuan kepada subjek data dan lembaga berwenang menurut UU PDP, serta pelaporan ke regulator sektor dan aparat penegak hukum.",
-      "Memutuskan bersama Legal & Compliance pemberitahuan dan pelaporan ke pihak luar."
-    ],
-    [
-      "Legal & Compliance",
-      "Memutuskan bersama COO pemberitahuan dan pelaporan ke pihak luar (butir 6.6). Memberi arahan masa simpan bukti yang mungkin dibutuhkan untuk proses hukum.",
-      "Memutuskan bersama COO pemberitahuan dan pelaporan ke pihak luar; mengarahkan masa simpan bukti."
-    ],
-    [
-      "Seluruh personel",
-      "Melaporkan event atau kelemahan keamanan ke SOC paling lambat 1 jam sejak mengetahui, tanpa menguji atau mengeksploitasinya.",
-      "Melapor langsung ke SOC lewat Zammad, Service Hub, atau kanal on-call."
-    ]
-  ],
-  "procedures": [
-    {
-      "title": "Persiapan (Annex A 5.24)",
-      "steps": [
-        [
-          "Pelihara daftar kontak eskalasi internal dan eksternal (partner SOC, penyedia infrastruktur, pelanggan) di file kontak yang aksesnya dibatasi untuk Operation.",
-          "Lead SOC",
-          "File kontak eskalasi"
-        ],
-        [
-          "Tinjau daftar kontak eskalasi setiap triwulan.",
-          "Lead SOC",
-          "Daftar kontak yang sudah ditinjau"
-        ],
-        [
-          "Pastikan personel on-call punya akses darurat ke sistem kritis lewat Jumphost dan password manager.",
-          "Lead SOC",
-          "Akses darurat personel on-call"
-        ],
-        [
-          "Pelihara playbook di knowledge base: webshell dan judi online pada server web, kompromi akun email, malware atau miner, kebocoran kredensial, serangan DDoS.",
-          "Lead SOC",
-          "Playbook di knowledge base"
-        ],
-        [
-          "Adakan latihan tabletop minimal setahun sekali.",
-          "Lead SOC",
-          "Latihan tabletop"
-        ],
-        [
-          "Catat hasil latihan tabletop sebagai bukti di SNX-ISMS-PLN-01.",
-          "Lead SOC",
-          "Bukti latihan di SNX-ISMS-PLN-01"
-        ]
-      ]
-    },
-    {
-      "title": "Pelaporan Event (Annex A 6.8)",
-      "intro": [
-        "Personel Operation melapor lewat Zammad dan personel lain lewat Service Hub (USULAN: batas ini belum diputus pimpinan SINUX). Seluruh personel boleh memakai kanal on-call sebagai pengganti sistem tiket."
-      ],
-      "steps": [
-        [
-          "Laporkan event atau kelemahan keamanan (alert, perilaku aneh, laporan pelanggan, kredensial tersebar) ke SOC, paling lambat 1 jam sejak mengetahui.",
-          "Seluruh personel",
-          "Tiket atau laporan di kanal on-call"
-        ],
-        [
-          "Catat waktu deteksi di tiket saat menerima laporan event atau melihat alert.",
-          "SOC Analyst",
-          "Waktu deteksi di tiket"
-        ]
-      ]
-    },
-    {
-      "title": "Penilaian dan Keputusan (Annex A 5.25)",
-      "steps": [
-        [
-          "Lakukan triage event: true positive, false positive, atau butuh investigasi.",
-          "SOC Analyst",
-          "Hasil triage"
-        ],
-        [
-          "Catat alasan hasil triage di tiket.",
-          "SOC Analyst",
-          "Alasan triage di tiket"
-        ],
-        [
-          "Tutup event yang bukan insiden dan catat usulan tuning rule di tiket.",
-          "SOC Analyst",
-          "Tiket event ditutup dengan usulan tuning"
-        ],
-        [
-          "Tetapkan event terkonfirmasi sebagai insiden dan beri severity P1 sampai P4 menurut definisi di bagian 3.",
-          "SOC Analyst",
-          "Insiden dengan severity di tiket"
-        ],
-        [
-          "Buat parent ticket insiden dan tautkan alert terkait.",
-          "SOC Analyst",
-          "Parent ticket dengan alert tertaut"
-        ],
-        [
-          "Catat insiden di sheet Register SNX-ISMS-FRM-02, termasuk kolom Data pribadi terlibat.",
-          "SOC Analyst",
-          "Baris insiden di SNX-ISMS-FRM-02"
-        ],
-        [
-          "Beri tahu Lead SOC dan Head of Operation tentang insiden P1.",
-          "SOC Analyst",
-          "Pemberitahuan insiden P1"
-        ],
-        [
-          "Beri tahu COO tentang insiden P1.",
-          "Head of Operation",
-          "Pemberitahuan ke COO"
-        ],
-        [
-          "Beri tahu Lead SOC tentang insiden P2.",
-          "SOC Analyst",
-          "Pemberitahuan insiden P2"
-        ],
-        [
-          "Teruskan insiden P3 dan P4 lewat tiket.",
-          "SOC Analyst",
-          "Tiket insiden P3 atau P4"
-        ],
-        [
-          "Salin sheet Investigasi SNX-ISMS-FRM-02 untuk setiap insiden P1 dan P2.",
-          "SOC Analyst",
-          "Sheet Investigasi per insiden"
-        ],
-        [
-          "Pimpin penanganan insiden P1 dan P2 sebagai Incident Commander.",
-          "Lead SOC",
-          "Nama Incident Commander di butir Incident Commander sheet Investigasi"
-        ]
-      ]
-    },
-    {
-      "title": "Respons (Annex A 5.26)",
-      "steps": [
-        [
-          "Amankan bukti sesuai butir 6.5 sebelum mengubah apa pun.",
-          "SOC Analyst",
-          "Bukti diamankan dan tercatat"
-        ],
-        [
-          "Pindahkan file mencurigakan ke folder quarantine.",
-          "SOC Analyst",
-          "File di folder quarantine"
-        ],
-        [
-          "Ajukan change request containment sesuai SNX-OPS-SOP-02.",
-          "SOC Analyst",
-          "Change request di SNX-OPS-FRM-04"
-        ],
-        [
-          "Jalankan containment sesudah change request disetujui.",
-          "SOC Analyst",
-          "Containment berjalan; waktu containment di SNX-ISMS-FRM-02"
-        ],
-        [
-          "Nyatakan darurat keamanan dan langsung jalankan containment sebagai change Emergency sesuai SNX-OPS-SOP-02.",
-          "Lead SOC",
-          "Pernyataan darurat dan change request Emergency di SNX-OPS-FRM-04"
-        ],
-        [
-          "Lakukan sweep IOC ke host sejenis berdasarkan hash sesudah satu host terbukti kompromi.",
-          "SOC Analyst",
-          "Hasil sweep di butir Sweep ke host sejenis sheet Investigasi"
-        ],
-        [
-          "Eradication: hapus persistence (cron, akun, kunci SSH, plugin).",
-          "SOC Analyst",
-          "Persistence terhapus"
-        ],
-        [
-          "Eradication: tutup vektor masuk dengan patch dan penggantian kredensial.",
-          "NOC Engineer",
-          "Vektor masuk tertutup"
-        ],
-        [
-          "Pulihkan sistem dari backup bersih bila perlu.",
-          "NOC Engineer",
-          "Sistem dipulihkan"
-        ],
-        [
-          "Serahkan pekerjaan app-level pelanggan ke developer atau PIC pelanggan dengan temuan tertulis.",
-          "SOC Analyst",
-          "Temuan tertulis untuk developer atau PIC pelanggan"
-        ],
-        [
-          "Verifikasi bahwa sistem bersih dengan dua sumber independen, misalnya sweep hash dan pemeriksaan dari vantage eksternal.",
-          "SOC Analyst",
-          "Hasil verifikasi di butir Verifikasi bersih sheet Investigasi"
-        ],
-        [
-          "Sampaikan status ke pelanggan terdampak sesuai frekuensi update di bagian 8.",
-          "SOC Analyst",
-          "Update status ke pelanggan"
-        ]
-      ]
-    },
-    {
-      "title": "Pengumpulan Bukti (Annex A 5.28)",
-      "steps": [
-        [
-          "Kumpulkan bukti: log, hash file, daftar proses, koneksi aktif, dan snapshot bila memungkinkan.",
-          "SOC Analyst",
-          "Salinan bukti"
-        ],
-        [
-          "Hitung hash SHA-256 untuk setiap file bukti.",
-          "SOC Analyst",
-          "Hash SHA-256 per file bukti"
-        ],
-        [
-          "Catat setiap bukti di sheet Chain of Custody SNX-ISMS-FRM-02: ID bukti, uraian, sumber, hash, waktu, dan lokasi simpan.",
-          "SOC Analyst",
-          "Baris bukti di Chain of Custody"
-        ],
-        [
-          "Catat setiap perpindahan bukti di Chain of Custody: tindakan, diserahkan oleh, dan diterima oleh.",
-          "SOC Analyst",
-          "Baris perpindahan di Chain of Custody"
-        ],
-        [
-          "Verifikasi hash SHA-256 pada setiap perpindahan bukti dan catat hasilnya di kolom Hash diverifikasi.",
-          "SOC Analyst",
-          "Kolom Hash diverifikasi terisi"
-        ],
-        [
-          "Simpan bukti di lokasi RESTRICTED (Internal) dengan akses terbatas pada tim investigasi.",
-          "SOC Analyst",
-          "Bukti di lokasi RESTRICTED (Internal)"
-        ],
-        [
-          "Simpan bukti yang mungkin dibutuhkan untuk proses hukum minimal 5 tahun atau sesuai arahan Legal & Compliance.",
-          "Lead SOC",
-          "Bukti tersimpan sesuai masa simpan"
-        ]
-      ]
-    },
-    {
-      "title": "Pemberitahuan Pihak Luar",
-      "steps": [
-        [
-          "Beri tahu PIC pelanggan tentang insiden P1 dengan laporan awal, sesuai kontrak, paling lambat 24 jam.",
-          "Service Delivery Manager",
-          "Laporan awal ke PIC pelanggan"
-        ],
-        [
-          "Beri tahu COO dan Legal & Compliance bahwa insiden melibatkan data pribadi.",
-          "Head of Operation",
-          "Pemberitahuan data pribadi terlibat"
-        ],
-        [
-          "Putuskan pemberitahuan kepada subjek data dan lembaga berwenang menurut UU PDP, paling lambat 3 x 24 jam sejak diketahui.",
-          "COO dan Legal & Compliance",
-          "Keputusan pemberitahuan data pribadi"
-        ],
-        [
-          "Putuskan pelaporan ke regulator sektor dan aparat penegak hukum.",
-          "COO dan Legal & Compliance",
-          "Keputusan pelaporan ke pihak luar"
-        ],
-        [
-          "Catat keputusan pemberitahuan dan pelaporan beserta dasarnya di butir Pemberitahuan sheet Investigasi SNX-ISMS-FRM-02.",
-          "SOC Analyst",
-          "Butir Pemberitahuan sheet Investigasi terisi"
-        ]
-      ]
-    },
-    {
-      "title": "Pelaporan dan Pembelajaran (Annex A 5.27)",
-      "steps": [
-        [
-          "Susun draft laporan insiden dengan format laporan insiden baku.",
-          "SOC Analyst",
-          "Draft laporan insiden"
-        ],
-        [
-          "Review draft laporan insiden sebelum dikirim.",
-          "Lead SOC",
-          "Laporan insiden yang sudah direview"
-        ],
-        [
-          "Kirim laporan insiden ke PIC pelanggan terdampak.",
-          "Service Delivery Manager",
-          "Laporan insiden terkirim"
-        ],
-        [
-          "Susun RCA insiden P1 dan P2 dengan SNX-OPS-FRM-10.",
-          "Lead SOC",
-          "RCA di SNX-OPS-FRM-10"
-        ],
-        [
-          "Catat tindakan korektif dengan pemilik dan tenggat di SNX-OPS-FRM-10.",
-          "Lead SOC",
-          "Tindakan korektif di SNX-OPS-FRM-10"
-        ],
-        [
-          "Setujui RCA insiden P1 dan P2.",
-          "Head of Operation",
-          "RCA disetujui"
-        ],
-        [
-          "Perbarui SNX-ISMS-REG-02 dan SNX-ISMS-REG-03 bila insiden menunjukkan risiko baru atau kontrol yang tidak efektif.",
-          "ISMS Coordinator",
-          "Risiko baru atau pembaruan di REG-02 dan REG-03"
-        ],
-        [
-          "Simpan lessons learned di knowledge base, tanpa kredensial.",
-          "Lead SOC",
-          "Lessons learned di knowledge base"
-        ],
-        [
-          "Laporkan statistik insiden keamanan setiap bulan di SNX-OPS-RPT-01.",
-          "Lead SOC",
-          "Statistik insiden di SNX-OPS-RPT-01"
-        ]
-      ]
-    }
-  ],
-  "flow": {
-    "rankdir": "TB",
-    "nodes": {
-      "b": "Event dilaporkan ke SOC paling lambat\n1 jam sejak diketahui",
-      "c": "SOC Analyst triage: true positive,\nfalse positive, atau butuh investigasi",
-      "d": "Insiden\nterkonfirmasi?",
-      "e": "Tutup sebagai event,\ncatat alasan dan tuning",
-      "f": "Tetapkan severity P1 sampai P4,\ncatat di SNX-ISMS-FRM-02",
-      "g": "Amankan bukti: hash SHA-256,\nchain of custody",
-      "h": "Containment: quarantine mv,\nblok, isolasi",
-      "i": "Eradication dan sweep IOC\nke host sejenis",
-      "j": "Data pribadi\nterlibat?",
-      "k": "COO dan Legal & Compliance\nkaji notifikasi PDP, 3 x 24 jam",
-      "l": "Pulihkan dan verifikasi dengan\ndua sumber independen",
-      "m": "Laporan insiden dan RCA (SNX-OPS-FRM-10),\nregister risiko diperbarui ISMS Coordinator",
-      "o": "Service Delivery Manager memberi tahu\nPIC pelanggan untuk P1, 24 jam"
-    },
-    "shapes": {
-      "d": "diamond",
-      "j": "diamond",
-      "e": "ellipse"
-    },
-    "edges": [
-      [
-        "b",
-        "c"
-      ],
-      [
-        "c",
-        "d"
-      ],
-      [
-        "d",
-        "e",
-        "Tidak"
-      ],
-      [
-        "d",
-        "f",
-        "Ya"
-      ],
-      [
-        "f",
-        "g"
-      ],
-      [
-        "f",
-        "o",
-        "insiden P1",
-        "dashed"
-      ],
-      [
-        "g",
-        "h"
-      ],
-      [
-        "h",
-        "i"
-      ],
-      [
-        "i",
-        "j"
-      ],
-      [
-        "j",
-        "k",
-        "Ya"
-      ],
-      [
-        "j",
-        "l",
-        "Tidak"
-      ],
-      [
-        "k",
-        "l",
-        "kembali ke alur utama",
-        "dashed"
-      ],
-      [
-        "l",
-        "m"
-      ]
-    ],
-    "caption": "Gambar 1. Alur penanganan insiden keamanan informasi. Garis putus-putus adalah cabang atau jalur kembali ke alur utama."
-  },
-  "sla": [
-    [
-      "Tinjau daftar kontak eskalasi",
-      "Lead SOC",
-      "Setiap triwulan"
-    ],
-    [
-      "Adakan latihan tabletop",
-      "Lead SOC",
-      "Minimal setahun sekali"
-    ],
-    [
-      "Laporkan event keamanan ke SOC",
-      "Seluruh personel",
-      "Paling lambat 1 jam sejak mengetahui"
-    ],
-    [
-      "Ack event atau insiden",
-      "SOC Analyst",
-      "P1 15 menit; P2 30 menit; P3 2 jam kerja; P4 1 hari kerja, dari waktu deteksi"
-    ],
-    [
-      "Beri tahu Lead SOC dan Head of Operation tentang insiden P1",
-      "SOC Analyst",
-      "Segera"
-    ],
-    [
-      "Beri tahu COO tentang insiden P1",
-      "Head of Operation",
-      "Dalam 30 menit dari waktu deteksi"
-    ],
-    [
-      "Beri tahu Lead SOC tentang insiden P2",
-      "SOC Analyst",
-      "Dalam 1 jam dari waktu deteksi"
-    ],
-    [
-      "Beri tahu PIC pelanggan tentang insiden P1 dengan laporan awal",
-      "Service Delivery Manager",
-      "Paling lambat 24 jam dari waktu deteksi"
-    ],
-    [
-      "Update status ke pelanggan terdampak",
-      "SOC Analyst",
-      "P1 tiap 1 jam; P2 tiap 3 jam atau per shift; P3 harian; P4 saat selesai (USULAN: sama dengan SNX-OPS-SOP-04)"
-    ],
-    [
-      "Putuskan pemberitahuan kegagalan pelindungan data pribadi",
-      "COO dan Legal & Compliance",
-      "Paling lambat 3 x 24 jam sejak diketahui"
-    ],
-    [
-      "Laporkan statistik insiden keamanan di SNX-OPS-RPT-01",
-      "Lead SOC",
-      "Setiap bulan"
-    ],
-    [
-      "Indikator: alert kritis di-triage dalam 15 menit",
-      "SOC Analyst",
-      "Target 95%"
-    ],
-    [
-      "Indikator: mean time to contain insiden P1",
-      "Lead SOC",
-      "Dikalibrasi setelah 3 bulan data"
-    ],
-    [
-      "Indikator: laporan insiden tepat waktu dan sesuai format",
-      "Lead SOC",
-      "Target 100%"
-    ],
-    [
-      "Indikator: insiden berulang dengan akar yang sama",
-      "Lead SOC",
-      "Target nol"
-    ]
-  ],
-  "exceptions": [
-    [
-      "Pelanggan memegang SOC sendiri",
-      "SOC Analyst menangani keamanan host yang dikelola SINUX sebagai managed services dan berkoordinasi dengan tim keamanan pelanggan."
-    ],
-    [
-      "Pekerjaan app-level pelanggan",
-      "SOC Analyst menyerahkannya ke developer atau PIC pelanggan dengan temuan tertulis (butir 6.4)."
-    ],
-    [
-      "Laporan tidak lewat Zammad atau Service Hub",
-      "Seluruh personel melapor lewat kanal on-call (butir 6.2)."
-    ],
-    [
-      "Event bukan insiden",
-      "SOC Analyst menutup event dengan alasan dan usulan tuning rule di tiket (butir 6.3)."
-    ],
-    [
-      "Insiden menuntut tindakan segera",
-      "Lead SOC menyatakan darurat keamanan dan langsung menjalankan containment dengan pencatatan di SNX-OPS-FRM-04 (butir 6.4)."
-    ],
-    [
-      "Snapshot tidak memungkinkan",
-      "SOC Analyst mengamankan log, hash file, daftar proses, dan koneksi aktif tanpa snapshot (butir 6.5)."
-    ],
-    [
-      "Insiden melibatkan data pribadi",
-      "COO dan Legal & Compliance memutuskan pemberitahuan menurut UU PDP (butir 6.6)."
-    ],
-    [
-      "Bukti mungkin dibutuhkan untuk proses hukum",
-      "Lead SOC menyimpan bukti minimal 5 tahun atau sesuai arahan Legal & Compliance (butir 6.5)."
-    ]
-  ],
-  "conclusion": [
-    "Lead SOC memantau kepatuhan lewat empat indikator kinerja di bagian 8 dan, sebagai pemilik SOP, meninjau dokumen ini setiap tahun."
-  ],
-  "related_documents": [
-    [
-      "SNX-OPS-SOP-04",
-      "SOP Technical Incident Handling & Escalation; menangani gangguan teknis, menyerahkan insiden berindikasi keamanan ke SOP ini, dan menetapkan severity insiden teknis."
-    ],
-    [
-      "SNX-OPS-SOP-02",
-      "SOP Project Change Management; change request containment dan change Emergency."
-    ],
-    [
-      "SNX-ISMS-FRM-02",
-      "Security Incident & Investigation Records; sheet Register, Investigasi, dan Chain of Custody."
-    ],
-    [
-      "SNX-OPS-FRM-10",
-      "Root Cause Analysis & Corrective Action Report; RCA dan tindakan korektif."
-    ],
-    [
-      "SNX-OPS-FRM-04",
-      "Change Request & Approval Log; change request containment."
-    ],
-    [
-      "SNX-ISMS-REG-02",
-      "Information Security Risk Assessment Register; register risiko keamanan informasi."
-    ],
-    [
-      "SNX-ISMS-REG-03",
-      "Information Security Risk Treatment Plan; rencana penanganan risiko."
-    ],
-    [
-      "SNX-ISMS-PLN-01",
-      "Business Continuity / IT Recovery Plan; tempat bukti latihan tabletop."
-    ],
-    [
-      "SNX-OPS-RPT-01",
-      "Operations KPI & Performance Monitoring Report; laporan bulanan statistik insiden keamanan."
-    ],
-    [
-      "SNX-ISMS-PRO-01",
-      "Information Classification & Handling Procedure; tingkat klasifikasi RESTRICTED (Internal)."
-    ],
-    [
-      "SNX-HR-ORG-01",
-      "Struktur Organisasi SINUX; dasar nama peran di bagian 5."
-    ],
-    [
-      "POL-OPS-001",
-      "Kebijakan Divisi Operation SINUX, DRAFT v0.1, penomoran masih USULAN; susunan sub divisi NOC dan SOC."
-    ],
-    [
-      "UU No. 27 Tahun 2022",
-      "Pelindungan Data Pribadi; dasar kewajiban pemberitahuan kegagalan pelindungan data pribadi."
-    ]
-  ],
-  "records": [
-    [
-      "Security Incident & Investigation Records (SNX-ISMS-FRM-02): register, investigasi, chain of custody",
-      "Folder Drive Operation (USULAN); pemilik Lead SOC",
-      "5 tahun"
-    ],
-    [
-      "RCA & Corrective Action Report (SNX-OPS-FRM-10)",
-      "Folder Drive Operation, subfolder per tahun (USULAN); pemilik Head of Operation",
-      "5 tahun"
-    ],
-    [
-      "Change request containment (SNX-OPS-FRM-04)",
-      "Folder Drive Operation (USULAN); pemilik Head of Operation",
-      "3 tahun"
-    ],
-    [
-      "Register risiko keamanan informasi (SNX-ISMS-REG-02)",
-      "Google Drive; pemilik ISMS Coordinator",
-      "Berlaku sampai digantikan"
-    ],
-    [
-      "Bukti insiden yang mungkin dibutuhkan untuk proses hukum",
-      "Lokasi RESTRICTED (Internal), akses terbatas pada tim investigasi; pemilik Lead SOC (USULAN)",
-      "Minimal 5 tahun atau sesuai arahan Legal & Compliance"
-    ]
-  ],
-  "iso_refs": {
-    "ISO 9001:2015": "10.2 (Ketidaksesuaian dan tindakan korektif)",
-    "ISO/IEC 27001:2022": "Annex A 5.24 (Perencanaan dan persiapan manajemen insiden keamanan informasi), 5.25 (Penilaian dan keputusan atas event keamanan informasi), 5.26 (Respons terhadap insiden keamanan informasi), 5.27 (Pembelajaran dari insiden keamanan informasi), 5.28 (Pengumpulan bukti), 6.8 (Pelaporan event keamanan informasi)"
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true,
+   "steps_widths_cm": [
+    7.6,
+    3.4,
+    5.0
+   ]
   }
+ },
+ "purpose": [
+  "SOP ini menetapkan cara SINUX menyiapkan diri, mendeteksi, menilai, merespons, dan belajar dari insiden keamanan informasi, termasuk pengumpulan bukti dan kewajiban pemberitahuan, agar dampak terhadap confidentiality, integrity, dan availability informasi diminimalkan."
+ ],
+ "scope": [
+  "SOP ini berlaku untuk event dan insiden keamanan informasi pada infrastruktur internal SINUX dan pada sistem pelanggan yang dikelola SINUX sesuai kontrak.",
+  "Untuk pelanggan yang SOC-nya menjadi tanggung jawab pelanggan sendiri, misalnya pelanggan pemerintah tertentu, SINUX menangani keamanan host yang dikelolanya sebagai managed services dan berkoordinasi dengan tim keamanan pelanggan.",
+  "Dikecualikan dari SOP ini: pekerjaan app-level pelanggan, seperti pembersihan konten aplikasi dan perbaikan kode, yang diserahkan ke developer atau PIC pelanggan; serta gangguan teknis tanpa indikasi keamanan, yang ditangani melalui SNX-OPS-SOP-04."
+ ],
+ "definitions": [
+  [
+   "(USULAN)",
+   "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+  ],
+  [
+   "Ack",
+   "Pengakuan pertama SOC Analyst di ticket bahwa event atau insiden sudah diterima dan sedang ditangani. Penerima Ack belum ditetapkan (USULAN)."
+  ],
+  [
+   "App-level pelanggan",
+   "Isi aplikasi milik pelanggan, misalnya isi WordPress, plugin, database aplikasi, dan kode pelanggan."
+  ],
+  [
+   "Chain of custody",
+   "Catatan siapa memegang bukti, kapan, dan apa yang dilakukan terhadapnya."
+  ],
+  [
+   "Change Emergency",
+   "Jenis change yang boleh dieksekusi sebelum change request lengkap, diatur di SNX-OPS-SOP-02."
+  ],
+  [
+   "Change request",
+   "Permintaan tercatat untuk mengubah sistem di production, dicatat di SNX-OPS-FRM-04."
+  ],
+  [
+   "Containment",
+   "Langkah menahan penyebaran: blok IP, nonaktifkan akun, isolasi VM."
+  ],
+  [
+   "Direktur (COO)",
+   "Jabatan JA-02 di SNX-HR-ORG-01. Dokumen Operation dan dokumen ini menyebut jabatan ini COO."
+  ],
+  [
+   "Eradication",
+   "Langkah membuang penyebab kompromi dari sistem terdampak."
+  ],
+  [
+   "Event keamanan",
+   "Kejadian yang mungkin berdampak pada keamanan informasi, misalnya alert SIEM atau login gagal berulang."
+  ],
+  [
+   "Incident Commander",
+   "Pemimpin penanganan satu insiden keamanan."
+  ],
+  [
+   "Insiden berulang",
+   "Insiden yang root cause-nya sama dengan insiden sebelumnya."
+  ],
+  [
+   "Insiden keamanan",
+   "Event yang terkonfirmasi merugikan atau berpotensi besar merugikan confidentiality, integrity, atau availability."
+  ],
+  [
+   "IOC",
+   "Indicator of compromise: hash file, IP, domain, atau pola yang menandai kompromi."
+  ],
+  [
+   "Jumphost",
+   "Jalur masuk SINUX ke production pelanggan yang merekam sesi."
+  ],
+  [
+   "Kanal on-call",
+   "Saluran untuk melapor ke personel SOC yang siaga di luar jam kerja."
+  ],
+  [
+   "Lessons learned",
+   "Pelajaran dari satu insiden yang dicatat agar insiden serupa tidak terulang."
+  ],
+  [
+   "Mean time to contain",
+   "Rata-rata jam dari waktu deteksi sampai waktu containment pada insiden P1, dari kolom Jam ke containment SNX-ISMS-FRM-02."
+  ],
+  [
+   "Parent ticket",
+   "Ticket induk satu insiden; alert dan ticket terkait ditautkan ke ticket ini."
+  ],
+  [
+   "Password manager",
+   "Penyimpanan kredensial internal SINUX (vault). Status operasional: menunggu konfirmasi Ops."
+  ],
+  [
+   "PIC pelanggan",
+   "Penanggung jawab dari pihak pelanggan."
+  ],
+  [
+   "Playbook",
+   "Panduan langkah untuk satu skenario insiden yang berulang."
+  ],
+  [
+   "RCA",
+   "Root cause analysis (analisis akar masalah) atas sebuah insiden, ditulis di SNX-OPS-FRM-10."
+  ],
+  [
+   "Service Hub",
+   "SINUX Service Hub berbasis GLPI, sistem ticket untuk generalist, termasuk permintaan internal."
+  ],
+  [
+   "Severity",
+   "Tingkat insiden keamanan, yaitu P1, P2, P3, atau P4, dengan kriteria pada baris P1 sampai P4 di bawah. Severity insiden teknis ditetapkan di SNX-OPS-SOP-04."
+  ],
+  [
+   "P1",
+   "Kompromi root atau host baru; kebocoran data pelanggan atau data pribadi; ransomware; akses tidak sah ke sistem kritis."
+  ],
+  [
+   "P2",
+   "Kompromi terbatas tanpa bukti kebocoran data, misalnya webshell pada satu akun hosting atau akun email dipakai spam; malware tertahan."
+  ],
+  [
+   "P3",
+   "Upaya serangan gagal yang perlu ditindaklanjuti; pelanggaran kebijakan ringan."
+  ],
+  [
+   "P4",
+   "Event informatif, tuning rule."
+  ],
+  [
+   "SOC",
+   "Sub divisi Divisi Operation (POL-OPS-001) yang memantau SIEM, EDR, WAF, dan Cloudflare serta menangani insiden keamanan."
+  ],
+  [
+   "Sweep IOC",
+   "Pencarian IOC yang sama di host sejenis berdasarkan hash."
+  ],
+  [
+   "Tabletop",
+   "Latihan penanganan insiden berupa diskusi skenario."
+  ],
+  [
+   "Tim investigasi",
+   "Personel yang ditugaskan menangani satu insiden, dicatat di butir Tim investigasi sheet Investigasi SNX-ISMS-FRM-02."
+  ],
+  [
+   "Corrective action",
+   "Tindakan untuk menghilangkan root cause agar insiden tidak terulang."
+  ],
+  [
+   "Triage",
+   "Penilaian awal untuk menggolongkan event sebagai true positive (benar menandai ancaman), false positive (bukan ancaman), atau butuh investigasi."
+  ],
+  [
+   "UU PDP",
+   "Undang-Undang No. 27 Tahun 2022 tentang Pelindungan Data Pribadi."
+  ],
+  [
+   "Vantage eksternal",
+   "Titik pemeriksaan di luar jaringan layanan, bukan dari dalam jaringan atau dari 127.0.0.1."
+  ],
+  [
+   "Waktu deteksi",
+   "Waktu SOC Analyst menerima laporan event atau melihat alert, dicatat di ticket dan di kolom Waktu deteksi SNX-ISMS-FRM-02."
+  ],
+  [
+   "Zammad",
+   "Sistem ticket untuk Ops."
+  ]
+ ],
+ "policy": [
+  "Persiapan (Annex A 5.24): kontak eskalasi, akses darurat personel on-call, playbook, dan latihan tabletop disiapkan sebelum insiden terjadi, sesuai butir 6.1.",
+  "Pelaporan event (Annex A 6.8): seluruh personel melaporkan event atau kelemahan keamanan ke SOC (butir 6.2) dan tidak menguji atau mengeksploitasi kelemahan yang ditemukan.",
+  "Penilaian dan keputusan (Annex A 5.25): SOC Analyst melakukan triage dan menetapkan severity (butir 6.3). Satu insiden hanya punya satu parent ticket.",
+  "Batas waktu di bagian 8 dihitung dari waktu deteksi, kecuali batas lapor personel (sejak mengetahui) dan batas 3 x 24 jam untuk data pribadi (sejak diketahui). Titik awal hitungan dari waktu deteksi belum ditetapkan (USULAN).",
+  "Respons (Annex A 5.26): forensik lebih dulu, perbaikan kemudian. Bukti diamankan sebelum ada perubahan apa pun pada sistem.",
+  "Webshell dilarang di-probe dengan GET atau HEAD, karena probe sama dengan menjalankan webshell itu.",
+  "File mencurigakan dipindahkan ke folder quarantine dengan mv, bukan dihapus dengan rm, agar bukti tetap utuh.",
+  "Klaim bahwa sistem sudah bersih atau aman wajib didukung dua sumber independen.",
+  "Containment mengikuti SNX-OPS-SOP-02. Lead SOC boleh menyatakan darurat keamanan dan langsung bertindak, dengan tetap mencatat tindakannya.",
+  "Pengumpulan bukti (Annex A 5.28): bukti dikumpulkan tanpa mengubah aslinya dan dicatat dengan chain of custody (butir 6.5). Bukti disimpan di lokasi berklasifikasi RESTRICTED (Internal).",
+  "Pemberitahuan pihak luar: pemberitahuan ke pelanggan mengikuti kontrak. Kegagalan pelindungan data pribadi diberitahukan sesuai UU PDP. Komunikasi ke media hanya dilakukan pihak yang ditunjuk manajemen.",
+  "Pembelajaran (Annex A 5.27) dan corrective action (ISO 9001:2015 10.2): insiden P1 dan P2 wajib memiliki RCA di SNX-OPS-FRM-10 serta corrective action dengan pemilik dan tenggat. Lessons learned disimpan tanpa kredensial."
+ ],
+ "roles": [
+  [
+   "Lead SOC",
+   "Pemilik SOP. Incident Commander untuk insiden P1 dan P2. Me-review laporan insiden sebelum dikirim. Menyusun RCA dan mencatat corrective action insiden P1 dan P2. Memelihara kontak eskalasi, playbook, dan latihan tabletop.",
+   "Menyatakan darurat keamanan dan langsung menjalankan containment dengan pencatatan; menyetujui laporan insiden untuk dikirim."
+  ],
+  [
+   "SOC Analyst",
+   "Menerima laporan event, melakukan triage, menetapkan severity, membuat parent ticket, melakukan containment awal, mengumpulkan dan mencatat bukti, melakukan sweep IOC, dan menyusun draft laporan insiden.",
+   "Menetapkan hasil triage dan severity; menutup event yang bukan insiden; menjalankan containment setelah change request disetujui."
+  ],
+  [
+   "NOC Engineer",
+   "Memulihkan availability, mengeksekusi perubahan, dan memberi dukungan teknis pada penanganan insiden.",
+   "Mengeksekusi patch, penggantian kredensial, dan restore dari backup setelah change request disetujui."
+  ],
+  [
+   "Head of Operation",
+   "Memutuskan eskalasi, memanggil personel, dan berkomunikasi dengan manajemen. Menyetujui RCA insiden P1 dan P2.",
+   "Memutuskan eskalasi; memanggil personel; menyetujui RCA."
+  ],
+  [
+   "Service Delivery Manager",
+   "Memberi tahu PIC pelanggan tentang insiden P1 dengan laporan awal dan mengirim laporan insiden ke PIC pelanggan terdampak.",
+   "Berkomunikasi resmi dengan PIC pelanggan atas insiden keamanan."
+  ],
+  [
+   "ISMS Coordinator",
+   "Memastikan pembelajaran dari insiden masuk ke register risiko dan corrective action, dan menyusun pelaporan ISMS.",
+   "Memperbarui SNX-ISMS-REG-02 dan SNX-ISMS-REG-03 jika insiden menunjukkan risiko baru atau kontrol yang tidak efektif."
+  ],
+  [
+   "COO",
+   "Menerima pemberitahuan insiden P1. Bersama Legal & Compliance, memutuskan pemberitahuan kepada subjek data dan lembaga berwenang sesuai UU PDP, serta pelaporan ke regulator sektor dan aparat penegak hukum.",
+   "Bersama Legal & Compliance, memutuskan pemberitahuan dan pelaporan ke pihak luar."
+  ],
+  [
+   "Legal & Compliance",
+   "Bersama COO, memutuskan pemberitahuan dan pelaporan ke pihak luar (butir 6.6). Memberi arahan masa simpan bukti yang mungkin dibutuhkan untuk proses hukum.",
+   "Bersama COO, memutuskan pemberitahuan dan pelaporan ke pihak luar; memberi arahan masa simpan bukti."
+  ],
+  [
+   "Seluruh personel",
+   "Melaporkan event atau kelemahan keamanan ke SOC paling lambat 1 jam sejak mengetahui, tanpa menguji atau mengeksploitasinya.",
+   "Melapor langsung ke SOC melalui Zammad, Service Hub, atau kanal on-call."
+  ]
+ ],
+ "procedures": [
+  {
+   "title": "Persiapan (Annex A 5.24)",
+   "steps": [
+    [
+     "Pelihara daftar kontak eskalasi internal dan eksternal (partner SOC, penyedia infrastruktur, pelanggan) di file kontak yang aksesnya dibatasi untuk Operation.",
+     "Lead SOC",
+     "File kontak eskalasi"
+    ],
+    [
+     "Tinjau daftar kontak eskalasi setiap triwulan.",
+     "Lead SOC",
+     "Daftar kontak yang sudah ditinjau"
+    ],
+    [
+     "Pastikan personel on-call punya akses darurat ke sistem kritis melalui Jumphost dan password manager.",
+     "Lead SOC",
+     "Akses darurat personel on-call"
+    ],
+    [
+     "Pelihara playbook di knowledge base: webshell dan judi online pada server web, kompromi akun email, malware atau miner, kebocoran kredensial, serangan DDoS.",
+     "Lead SOC",
+     "Playbook di knowledge base"
+    ],
+    [
+     "Adakan latihan tabletop minimal setahun sekali.",
+     "Lead SOC",
+     "Latihan tabletop"
+    ],
+    [
+     "Catat hasil latihan tabletop sebagai bukti di SNX-ISMS-PLN-01.",
+     "Lead SOC",
+     "Bukti latihan di SNX-ISMS-PLN-01"
+    ]
+   ]
+  },
+  {
+   "title": "Pelaporan Event (Annex A 6.8)",
+   "intro": [
+    "Seluruh personel boleh memakai kanal on-call sebagai pengganti sistem ticket. Personel Operation melapor melalui Zammad, sedangkan personel lain melalui Service Hub; pembagian ini belum diputus pimpinan SINUX (USULAN)."
+   ],
+   "steps": [
+    [
+     "Laporkan event atau kelemahan keamanan (alert, perilaku aneh, laporan pelanggan, kredensial tersebar) ke SOC, paling lambat 1 jam sejak mengetahui.",
+     "Seluruh personel",
+     "Ticket atau laporan di kanal on-call"
+    ],
+    [
+     "Saat menerima laporan event atau melihat alert, catat waktu deteksinya di ticket.",
+     "SOC Analyst",
+     "Waktu deteksi di ticket"
+    ]
+   ]
+  },
+  {
+   "title": "Penilaian dan Keputusan (Annex A 5.25)",
+   "steps": [
+    [
+     "Lakukan triage event: true positive, false positive, atau butuh investigasi.",
+     "SOC Analyst",
+     "Hasil triage"
+    ],
+    [
+     "Catat alasan hasil triage di ticket.",
+     "SOC Analyst",
+     "Alasan triage di ticket"
+    ],
+    [
+     "Tutup event yang bukan insiden dan catat usulan tuning rule di ticket.",
+     "SOC Analyst",
+     "Ticket event ditutup dengan usulan tuning"
+    ],
+    [
+     "Tetapkan event terkonfirmasi sebagai insiden dan beri severity P1 sampai P4 sesuai kriteria di bagian 3.",
+     "SOC Analyst",
+     "Insiden dengan severity di ticket"
+    ],
+    [
+     "Buat parent ticket insiden dan tautkan alert terkait.",
+     "SOC Analyst",
+     "Parent ticket dengan alert tertaut"
+    ],
+    [
+     "Catat insiden di sheet Register SNX-ISMS-FRM-02, termasuk kolom Data pribadi terlibat.",
+     "SOC Analyst",
+     "Baris insiden di SNX-ISMS-FRM-02"
+    ],
+    [
+     "Beri tahu Lead SOC dan Head of Operation tentang insiden P1.",
+     "SOC Analyst",
+     "Pemberitahuan insiden P1"
+    ],
+    [
+     "Beri tahu COO tentang insiden P1.",
+     "Head of Operation",
+     "Pemberitahuan ke COO"
+    ],
+    [
+     "Beri tahu Lead SOC tentang insiden P2.",
+     "SOC Analyst",
+     "Pemberitahuan insiden P2"
+    ],
+    [
+     "Teruskan insiden P3 dan P4 melalui ticket.",
+     "SOC Analyst",
+     "Ticket insiden P3 atau P4"
+    ],
+    [
+     "Salin sheet Investigasi SNX-ISMS-FRM-02 untuk setiap insiden P1 dan P2.",
+     "SOC Analyst",
+     "Sheet Investigasi per insiden"
+    ],
+    [
+     "Pimpin penanganan insiden P1 dan P2 sebagai Incident Commander.",
+     "Lead SOC",
+     "Nama Incident Commander di butir Incident Commander sheet Investigasi"
+    ]
+   ]
+  },
+  {
+   "title": "Respons (Annex A 5.26)",
+   "steps": [
+    [
+     "Amankan bukti sesuai butir 6.5 sebelum mengubah apa pun.",
+     "SOC Analyst",
+     "Bukti diamankan dan tercatat"
+    ],
+    [
+     "Pindahkan file mencurigakan ke folder quarantine.",
+     "SOC Analyst",
+     "File di folder quarantine"
+    ],
+    [
+     "Ajukan change request containment sesuai SNX-OPS-SOP-02.",
+     "SOC Analyst",
+     "Change request di SNX-OPS-FRM-04"
+    ],
+    [
+     "Jalankan containment setelah change request disetujui.",
+     "SOC Analyst",
+     "Containment berjalan; waktu containment di SNX-ISMS-FRM-02"
+    ],
+    [
+     "Nyatakan darurat keamanan dan langsung jalankan containment sebagai change Emergency sesuai SNX-OPS-SOP-02.",
+     "Lead SOC",
+     "Pernyataan darurat dan change request Emergency di SNX-OPS-FRM-04"
+    ],
+    [
+     "Setelah satu host terbukti kompromi, lakukan sweep IOC ke host sejenis berdasarkan hash.",
+     "SOC Analyst",
+     "Hasil sweep di butir Sweep ke host sejenis sheet Investigasi"
+    ],
+    [
+     "Eradication: hapus persistence (cron, akun, kunci SSH, plugin).",
+     "SOC Analyst",
+     "Persistence terhapus"
+    ],
+    [
+     "Eradication: tutup vektor masuk dengan patch dan penggantian kredensial.",
+     "NOC Engineer",
+     "Vektor masuk tertutup"
+    ],
+    [
+     "Pulihkan sistem dari backup bersih jika perlu.",
+     "NOC Engineer",
+     "Sistem dipulihkan"
+    ],
+    [
+     "Serahkan pekerjaan app-level pelanggan ke developer atau PIC pelanggan dengan temuan tertulis.",
+     "SOC Analyst",
+     "Temuan tertulis untuk developer atau PIC pelanggan"
+    ],
+    [
+     "Verifikasi bahwa sistem bersih dengan dua sumber independen, misalnya sweep hash dan pemeriksaan dari vantage eksternal.",
+     "SOC Analyst",
+     "Hasil verifikasi di butir Verifikasi bersih sheet Investigasi"
+    ],
+    [
+     "Sampaikan status ke pelanggan terdampak sesuai frekuensi update di bagian 8.",
+     "SOC Analyst",
+     "Update status ke pelanggan"
+    ]
+   ]
+  },
+  {
+   "title": "Pengumpulan Bukti (Annex A 5.28)",
+   "steps": [
+    [
+     "Kumpulkan bukti: log, hash file, daftar proses, koneksi aktif, dan snapshot jika memungkinkan.",
+     "SOC Analyst",
+     "Salinan bukti"
+    ],
+    [
+     "Hitung hash SHA-256 untuk setiap file bukti.",
+     "SOC Analyst",
+     "Hash SHA-256 per file bukti"
+    ],
+    [
+     "Catat setiap bukti di sheet Chain of Custody SNX-ISMS-FRM-02: ID bukti, uraian, sumber, hash, waktu, dan lokasi simpan.",
+     "SOC Analyst",
+     "Baris bukti di Chain of Custody"
+    ],
+    [
+     "Catat setiap perpindahan bukti di Chain of Custody: tindakan, diserahkan oleh, dan diterima oleh.",
+     "SOC Analyst",
+     "Baris perpindahan di Chain of Custody"
+    ],
+    [
+     "Verifikasi hash SHA-256 pada setiap perpindahan bukti dan catat hasilnya di kolom Hash diverifikasi.",
+     "SOC Analyst",
+     "Kolom Hash diverifikasi terisi"
+    ],
+    [
+     "Simpan bukti di lokasi RESTRICTED (Internal) dengan akses terbatas pada tim investigasi.",
+     "SOC Analyst",
+     "Bukti di lokasi RESTRICTED (Internal)"
+    ],
+    [
+     "Simpan bukti yang mungkin dibutuhkan untuk proses hukum minimal 5 tahun atau sesuai arahan Legal & Compliance.",
+     "Lead SOC",
+     "Bukti tersimpan sesuai masa simpan"
+    ]
+   ]
+  },
+  {
+   "title": "Pemberitahuan Pihak Luar",
+   "steps": [
+    [
+     "Beri tahu PIC pelanggan tentang insiden P1 dengan laporan awal, sesuai kontrak, paling lambat 24 jam.",
+     "Service Delivery Manager",
+     "Laporan awal ke PIC pelanggan"
+    ],
+    [
+     "Jika insiden melibatkan data pribadi, beri tahu COO dan Legal & Compliance.",
+     "Head of Operation",
+     "Pemberitahuan data pribadi terlibat"
+    ],
+    [
+     "Putuskan pemberitahuan kepada subjek data dan lembaga berwenang sesuai UU PDP, paling lambat 3 x 24 jam sejak diketahui.",
+     "COO dan Legal & Compliance",
+     "Keputusan pemberitahuan data pribadi"
+    ],
+    [
+     "Putuskan pelaporan ke regulator sektor dan aparat penegak hukum.",
+     "COO dan Legal & Compliance",
+     "Keputusan pelaporan ke pihak luar"
+    ],
+    [
+     "Catat keputusan pemberitahuan dan pelaporan beserta dasarnya di butir Pemberitahuan sheet Investigasi SNX-ISMS-FRM-02.",
+     "SOC Analyst",
+     "Butir Pemberitahuan sheet Investigasi terisi"
+    ]
+   ]
+  },
+  {
+   "title": "Pelaporan dan Pembelajaran (Annex A 5.27)",
+   "steps": [
+    [
+     "Susun draft laporan insiden dengan format laporan insiden baku.",
+     "SOC Analyst",
+     "Draft laporan insiden"
+    ],
+    [
+     "Review draft laporan insiden sebelum dikirim.",
+     "Lead SOC",
+     "Laporan insiden yang sudah direview"
+    ],
+    [
+     "Kirim laporan insiden ke PIC pelanggan terdampak.",
+     "Service Delivery Manager",
+     "Laporan insiden terkirim"
+    ],
+    [
+     "Susun RCA insiden P1 dan P2 dengan SNX-OPS-FRM-10.",
+     "Lead SOC",
+     "RCA di SNX-OPS-FRM-10"
+    ],
+    [
+     "Catat corrective action dengan pemilik dan tenggat di SNX-OPS-FRM-10.",
+     "Lead SOC",
+     "Corrective action di SNX-OPS-FRM-10"
+    ],
+    [
+     "Setujui RCA insiden P1 dan P2.",
+     "Head of Operation",
+     "RCA disetujui"
+    ],
+    [
+     "Perbarui SNX-ISMS-REG-02 dan SNX-ISMS-REG-03 jika insiden menunjukkan risiko baru atau kontrol yang tidak efektif.",
+     "ISMS Coordinator",
+     "Risiko baru atau pembaruan di REG-02 dan REG-03"
+    ],
+    [
+     "Simpan lessons learned di knowledge base, tanpa kredensial.",
+     "Lead SOC",
+     "Lessons learned di knowledge base"
+    ],
+    [
+     "Laporkan statistik insiden keamanan setiap bulan di SNX-OPS-RPT-01.",
+     "Lead SOC",
+     "Statistik insiden di SNX-OPS-RPT-01"
+    ]
+   ]
+  }
+ ],
+ "flow": {
+  "rankdir": "TB",
+  "nodes": {
+   "b": "Event dilaporkan ke SOC paling lambat\n1 jam sejak diketahui",
+   "c": "SOC Analyst triage: true positive,\nfalse positive, atau butuh investigasi",
+   "d": "Insiden\nterkonfirmasi?",
+   "e": "Tutup sebagai event,\ncatat alasan dan tuning",
+   "f": "Tetapkan severity P1 sampai P4,\ncatat di SNX-ISMS-FRM-02",
+   "g": "Amankan bukti: hash SHA-256,\nchain of custody",
+   "h": "Containment: quarantine mv,\nblok, isolasi",
+   "i": "Eradication dan sweep IOC\nke host sejenis",
+   "j": "Data pribadi\nterlibat?",
+   "k": "COO dan Legal & Compliance\nkaji notifikasi PDP, 3 x 24 jam",
+   "l": "Pulihkan dan verifikasi dengan\ndua sumber independen",
+   "m": "Laporan insiden dan RCA (SNX-OPS-FRM-10),\nregister risiko diperbarui ISMS Coordinator",
+   "o": "Service Delivery Manager memberi tahu\nPIC pelanggan untuk P1, 24 jam"
+  },
+  "shapes": {
+   "d": "diamond",
+   "j": "diamond",
+   "e": "ellipse"
+  },
+  "edges": [
+   [
+    "b",
+    "c"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "d",
+    "e",
+    "Tidak"
+   ],
+   [
+    "d",
+    "f",
+    "Ya"
+   ],
+   [
+    "f",
+    "g"
+   ],
+   [
+    "f",
+    "o",
+    "insiden P1",
+    "dashed"
+   ],
+   [
+    "g",
+    "h"
+   ],
+   [
+    "h",
+    "i"
+   ],
+   [
+    "i",
+    "j"
+   ],
+   [
+    "j",
+    "k",
+    "Ya"
+   ],
+   [
+    "j",
+    "l",
+    "Tidak"
+   ],
+   [
+    "k",
+    "l",
+    "kembali ke alur utama",
+    "dashed"
+   ],
+   [
+    "l",
+    "m"
+   ]
+  ],
+  "caption": "Gambar 1. Alur penanganan insiden keamanan informasi. Garis putus-putus adalah cabang atau jalur kembali ke alur utama."
+ },
+ "sla": [
+  [
+   "Tinjau daftar kontak eskalasi",
+   "Lead SOC",
+   "Setiap triwulan"
+  ],
+  [
+   "Adakan latihan tabletop",
+   "Lead SOC",
+   "Minimal setahun sekali"
+  ],
+  [
+   "Laporkan event keamanan ke SOC",
+   "Seluruh personel",
+   "Paling lambat 1 jam sejak mengetahui"
+  ],
+  [
+   "Ack event atau insiden",
+   "SOC Analyst",
+   "P1 15 menit; P2 30 menit; P3 2 jam kerja; P4 1 hari kerja, dari waktu deteksi"
+  ],
+  [
+   "Beri tahu Lead SOC dan Head of Operation tentang insiden P1",
+   "SOC Analyst",
+   "Segera"
+  ],
+  [
+   "Beri tahu COO tentang insiden P1",
+   "Head of Operation",
+   "Dalam 30 menit dari waktu deteksi"
+  ],
+  [
+   "Beri tahu Lead SOC tentang insiden P2",
+   "SOC Analyst",
+   "Dalam 1 jam dari waktu deteksi"
+  ],
+  [
+   "Beri tahu PIC pelanggan tentang insiden P1 dengan laporan awal",
+   "Service Delivery Manager",
+   "Paling lambat 24 jam dari waktu deteksi"
+  ],
+  [
+   "Update status ke pelanggan terdampak",
+   "SOC Analyst",
+   "P1 tiap 1 jam; P2 tiap 3 jam atau per shift; P3 harian; P4 saat selesai (USULAN: sama dengan SNX-OPS-SOP-04)"
+  ],
+  [
+   "Putuskan pemberitahuan kegagalan pelindungan data pribadi",
+   "COO dan Legal & Compliance",
+   "Paling lambat 3 x 24 jam sejak diketahui"
+  ],
+  [
+   "Laporkan statistik insiden keamanan di SNX-OPS-RPT-01",
+   "Lead SOC",
+   "Setiap bulan"
+  ],
+  [
+   "Indikator: alert kritis di-triage dalam 15 menit",
+   "SOC Analyst",
+   "Target 95%"
+  ],
+  [
+   "Indikator: mean time to contain insiden P1",
+   "Lead SOC",
+   "Dikalibrasi setelah 3 bulan data"
+  ],
+  [
+   "Indikator: laporan insiden tepat waktu dan sesuai format",
+   "Lead SOC",
+   "Target 100%"
+  ],
+  [
+   "Indikator: insiden berulang dengan root cause yang sama",
+   "Lead SOC",
+   "Target nol"
+  ]
+ ],
+ "exceptions": [
+  [
+   "Pelanggan memegang SOC sendiri",
+   "SOC Analyst menangani keamanan host yang dikelola SINUX sebagai managed services dan berkoordinasi dengan tim keamanan pelanggan."
+  ],
+  [
+   "Pekerjaan app-level pelanggan",
+   "SOC Analyst menyerahkannya ke developer atau PIC pelanggan dengan temuan tertulis (butir 6.4)."
+  ],
+  [
+   "Laporan tidak melalui Zammad atau Service Hub",
+   "Seluruh personel melapor melalui kanal on-call (butir 6.2)."
+  ],
+  [
+   "Event bukan insiden",
+   "SOC Analyst menutup event dengan alasan dan usulan tuning rule di ticket (butir 6.3)."
+  ],
+  [
+   "Insiden menuntut tindakan segera",
+   "Lead SOC menyatakan darurat keamanan dan langsung menjalankan containment dengan pencatatan di SNX-OPS-FRM-04 (butir 6.4)."
+  ],
+  [
+   "Snapshot tidak memungkinkan",
+   "SOC Analyst mengamankan log, hash file, daftar proses, dan koneksi aktif tanpa snapshot (butir 6.5)."
+  ],
+  [
+   "Insiden melibatkan data pribadi",
+   "COO dan Legal & Compliance memutuskan pemberitahuan sesuai UU PDP (butir 6.6)."
+  ],
+  [
+   "Bukti mungkin dibutuhkan untuk proses hukum",
+   "Lead SOC menyimpan bukti minimal 5 tahun atau sesuai arahan Legal & Compliance (butir 6.5)."
+  ]
+ ],
+ "conclusion": [
+  "Lead SOC memantau kepatuhan melalui empat indikator kinerja di bagian 8. Sebagai pemilik SOP, Lead SOC meninjau dokumen ini setiap tahun."
+ ],
+ "related_documents": [
+  [
+   "SNX-OPS-SOP-04",
+   "SOP Technical Incident Handling & Escalation; menangani gangguan teknis, menyerahkan insiden berindikasi keamanan ke SOP ini, dan menetapkan severity insiden teknis."
+  ],
+  [
+   "SNX-OPS-SOP-02",
+   "SOP Project Change Management; change request containment dan change Emergency."
+  ],
+  [
+   "SNX-ISMS-FRM-02",
+   "Security Incident & Investigation Records; sheet Register, Investigasi, dan Chain of Custody."
+  ],
+  [
+   "SNX-OPS-FRM-10",
+   "Root Cause Analysis & Corrective Action Report; RCA dan corrective action."
+  ],
+  [
+   "SNX-OPS-FRM-04",
+   "Change Request & Approval Log; change request containment."
+  ],
+  [
+   "SNX-ISMS-REG-02",
+   "Information Security Risk Assessment Register; register risiko keamanan informasi."
+  ],
+  [
+   "SNX-ISMS-REG-03",
+   "Information Security Risk Treatment Plan; rencana penanganan risiko."
+  ],
+  [
+   "SNX-ISMS-PLN-01",
+   "Business Continuity / IT Recovery Plan; tempat bukti latihan tabletop."
+  ],
+  [
+   "SNX-OPS-RPT-01",
+   "Operations KPI & Performance Monitoring Report; laporan bulanan statistik insiden keamanan."
+  ],
+  [
+   "SNX-ISMS-PRO-01",
+   "Information Classification & Handling Procedure; tingkat klasifikasi RESTRICTED (Internal)."
+  ],
+  [
+   "SNX-HR-ORG-01",
+   "Struktur Organisasi SINUX; dasar nama peran di bagian 5."
+  ],
+  [
+   "POL-OPS-001",
+   "Kebijakan Divisi Operation SINUX, DRAFT v0.1, penomoran masih USULAN; susunan sub divisi NOC dan SOC."
+  ],
+  [
+   "UU No. 27 Tahun 2022",
+   "Pelindungan Data Pribadi; dasar kewajiban pemberitahuan kegagalan pelindungan data pribadi."
+  ]
+ ],
+ "records": [
+  [
+   "Security Incident & Investigation Records (SNX-ISMS-FRM-02): register, investigasi, chain of custody",
+   "Folder Drive Operation (USULAN); pemilik Lead SOC",
+   "5 tahun"
+  ],
+  [
+   "RCA & Corrective Action Report (SNX-OPS-FRM-10)",
+   "Folder Drive Operation, subfolder per tahun (USULAN); pemilik Head of Operation",
+   "5 tahun"
+  ],
+  [
+   "Change request containment (SNX-OPS-FRM-04)",
+   "Folder Drive Operation (USULAN); pemilik Head of Operation",
+   "3 tahun"
+  ],
+  [
+   "Register risiko keamanan informasi (SNX-ISMS-REG-02)",
+   "Google Drive; pemilik ISMS Coordinator",
+   "Berlaku sampai digantikan"
+  ],
+  [
+   "Bukti insiden yang mungkin dibutuhkan untuk proses hukum",
+   "Lokasi RESTRICTED (Internal), akses terbatas pada tim investigasi; pemilik Lead SOC (USULAN)",
+   "Minimal 5 tahun atau sesuai arahan Legal & Compliance"
+  ]
+ ],
+ "iso_refs": {
+  "ISO 9001:2015": "10.2 (Ketidaksesuaian dan tindakan korektif)",
+  "ISO/IEC 27001:2022": "Annex A 5.24 (Perencanaan dan persiapan manajemen insiden keamanan informasi), 5.25 (Penilaian dan keputusan atas event keamanan informasi), 5.26 (Respons terhadap insiden keamanan informasi), 5.27 (Pembelajaran dari insiden keamanan informasi), 5.28 (Pengumpulan bukti), 6.8 (Pelaporan event keamanan informasi)"
+ }
 }

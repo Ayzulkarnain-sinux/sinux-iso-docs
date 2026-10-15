@@ -1,0 +1,18 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": "n/a"
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 4, Pengumpulan bukti: rujukan 'menurut SNX-ISMS-PRO-01' dihapus dan diganti 'lokasi berklasifikasi RESTRICTED (Internal)'. Arti tingkat tetap, tetapi lokasi tidak berklasifikasi; usul 'Bukti disimpan di lokasi untuk informasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01.'",
+  "Bagian 4: 'Titik awal hitungan dari waktu deteksi belum ditetapkan (USULAN).' label tetap ada dan arti sama; boleh dipadatkan menjadi 'Titik awal hitungan ini belum ditetapkan (USULAN).'",
+  "Pelaporan Event: urutan kalimat dibalik (kanal on-call di depan); arti dan label (USULAN) tetap."
+ ],
+ "contoh_baik": [
+  "Langkah 6.6 nomor 2: 'Beri tahu COO dan Legal & Compliance bahwa insiden melibatkan data pribadi.' -> 'Jika insiden melibatkan data pribadi, beri tahu COO dan Legal & Compliance.'"
+ ]
+}

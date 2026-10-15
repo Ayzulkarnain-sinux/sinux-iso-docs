@@ -1,0 +1,35 @@
+{
+ "key": "ISMS-SOP-01",
+ "mode": "sop",
+ "out": "out/08_ISMS/SNX-ISMS-SOP-01 Information Security Incident Management (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 3183,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 3176,
+  "calque": [],
+  "lewat": 9,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 0,
+  "instr_role_start": 0,
+  "justified_cells": 100,
+  "tables_ge3_no_header": 16
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-ISMS-SOP-01 Information Security Incident Management (Rev00 DRAFT).pdf",
+ "pages": 19,
+ "blank": [],
+ "pass": true
+}

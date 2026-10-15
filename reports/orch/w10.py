@@ -435,6 +435,34 @@ def label_pairs(k):
 REF = re.compile(r'\b(?:butir|Ketentuan butir|Petunjuk butir|langkah)\s+(\d+(?:\.\d+)*)')
 
 
+PTR = re.compile(r'\b(?:butir|bagian|Bagian|langkah|Ketentuan butir|Petunjuk butir)\s+(\d+(?:\.\d+)*)')
+
+
+def ptr_drops(k):
+    """Teks yang kehilangan rujukan butir/bagian di W10, dengan teks butir yang dirujuk (bed1bb6) untuk audit kelengkapan."""
+    if DOCS[k]['mode'] == 'xlsx':
+        return []
+    pairs = label_pairs(k)
+    items = {}
+    for _, a, _ in pairs:
+        m = re.match(r'^\s*(\d+(?:\.\d+)*)[.\s]', a)
+        if m:
+            items.setdefault(m.group(1).rstrip('.'), a)
+    out = []
+    for path, a, b in pairs:
+        lost = [r for r in PTR.findall(a) if r not in PTR.findall(b)]
+        if lost:
+            out.append({'path': path, 'lost': lost, 'old': a, 'new': b, 'target': {r: items.get(r, '(bagian/heading, lihat dokumen)') for r in lost}})
+    return out
+
+
+def ptrlist(k):
+    for x in ptr_drops(k):
+        print(f"== {x['path']} rujukan hilang: {x['lost']}\n  BED1BB6: {x['old']}\n  W10    : {x['new']}")
+        for r, t in x['target'].items():
+            print(f'  BUTIR {r} (bed1bb6): {t[:600]}')
+
+
 def usul_ref_drops(k):
     """Jalur teks yang di bed1bb6 merujuk butir berlabel (USULAN), rujukan itu hilang di W10, dan teks W10 tanpa (USULAN)."""
     if DOCS[k]['mode'] == 'xlsx':
@@ -526,6 +554,14 @@ def build(k):
                 g['fails'].append(f'selisih {kk} "{tok}" tidak tercatat di notes/{k}.md bagian ## W10')
     if not nw:
         g['fails'].append(f'notes/{k}.md belum punya bagian ## W10')
+    # Audit pointer: setiap teks yang kehilangan rujukan wajib diaudit penyusun di notes (kelengkapan fakta pengganti).
+    pd = ptr_drops(k)
+    if pd and '### W10 audit pointer' not in nw:
+        g['fails'].append(f'{len(pd)} teks kehilangan rujukan butir/bagian; jalankan "w10.py ptrlist {k}" dan tulis audit di notes W10 subjudul "### W10 audit pointer" (satu baris per jalur: lengkap/dirujuk ulang)')
+    elif pd:
+        miss = [x['path'] for x in pd if x['path'] not in nw]
+        if miss:
+            g['fails'].append(f'audit pointer belum mencakup jalur: {miss[:5]}')
     # Pelajaran sapuan: rujukan ke butir berlabel (USULAN) yang dihapus harus diganti teks yang tetap membawa (USULAN),
     # atau jalurnya dicatat di notes W10 dengan alasan. Kontrol: reports/w10/usulref_gate_test.txt.
     for path in usul_ref_drops(k):
@@ -682,6 +718,8 @@ if __name__ == '__main__':
             revert(k)
     elif cmd == 'status':
         status()
+    elif cmd == 'ptrlist':
+        ptrlist(args[0])
     elif cmd == 'isotitles':
         isotitles(args)
     elif cmd == 'stage':

@@ -214,3 +214,18 @@ Dasar: hasil pemeriksa makna S05 dan LEAD-GUIDE item ISMS-SOP-01. Sheet Investig
 Open item yang ditutup atau diubah:
 
 - Open item 14: diubah W9: rujukan butir sheet Investigasi memakai label; kolom Register tetap perlu dicocokkan dengan xlsx FRM-02 terbaru.
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil. Label dipindah ke akhir kalimat atau butir, isi tetap: definisi Ack (asli: "Pengakuan pertama SOC Analyst di ticket bahwa event atau insiden diterima dan sedang ditangani (USULAN: penerima Ack belum ditetapkan)."), bagian 4 batas waktu (asli: "Batas waktu di bagian 8 dihitung dari waktu deteksi (USULAN: titik awal belum ditetapkan), kecuali batas lapor ..."), intro 6.2 (asli: "Personel Operation melapor melalui Zammad dan personel lain melalui Service Hub (USULAN: batas ini belum diputus pimpinan SINUX)."). Jumlah label tetap 9.
+
+### W10 kalimat dihapus atau dipindah
+- Definisi Direktur (COO): "Dokumen Operation menyebut jabatan ini COO, dan dokumen ini memakai COO setelah sebutan ini." diringkas menjadi satu kalimat fakta.
+- Bagian 4 pengumpulan bukti: "menurut SNX-ISMS-PRO-01" dihapus (satu rujukan per paragraf); tingkat RESTRICTED (Internal) tetap, dan SNX-ISMS-PRO-01 tetap di Dokumen Terkait.
+
+### W10 selisih angka
+nihil
+
+### W10 catatan
+- Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
+- "bila" diganti "jika"; "menurut" diganti "sesuai" di beberapa kalimat; "akar yang sama" menjadi "root cause yang sama"; jembatan "Root cause analysis (analisis akar masalah)" di definisi RCA.
+- Judul klausul ISO 10.2 dan judul Annex A di iso_refs tidak diubah.
