@@ -184,3 +184,20 @@ Uji sesudah sweep: render_sop.py, lint_doc.py sop ("pass": true, fails kosong, w
    - Nama: Samuel Kristanto Utomo hanya di blok Approved By (defaults). Tidak ada nama orang lain. Nama peran dari HR-ORG-01; Business Development adalah tafsir (USULAN 5).
    - Tanggal: nol.
    - Tanpa sumber tertulis tetapi ada di dokumen: judul klausul ISO (pengetahuan standar penyusun, UNMEASURED, di bawah label USULAN); pembedaan pengecualian scope terhadap invoice vendor (tafsir dari kriteria baris); definisi umum 2FA, DPP, Faktur Pajak Pengganti, Klien; penunjukan pelaku di butir 4.15 (USULAN 4); klasifikasi RESTRICTED (Internal) (USULAN 3).
+
+
+## ISO-W9
+
+Round perbaikan ISO-W9 (LEAD G-3 A6). Fakta, angka, dan struktur lain tetap. Rujukan silang yang diubah: hanya baris SNX-HR-ORG-01 di bagian 11 FAT-SOP-01 (di atas).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Blok Reviewed (meta.approval.reviewed) | Finance Lead | Amirull Yusuf Zulkarnain / Direktur |
+| Bagian 3 Definisi | Tanpa istilah Finance Lead dan Finance Staff | Dua baris baru, isi persis LEAD G-3 A6: Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN). Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN). |
+| Bagian 5, baris Finance Staff dan Finance Lead | "... Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | Kalimat itu dihapus; pemetaan ada di definisi bagian 3 |
+| Bagian 11 Dokumen terkait, baris SNX-HR-ORG-01 | "Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)." | "Finance Lead dan Finance Staff didefinisikan di bagian 3." (rujukan "bagian 3" ada dan berjudul Definisi) |
+
+Open item:
+
+- K-13 (Finance Lead dan Finance Staff belum dipetakan ke jabatan): ditutup W9: dipetakan lewat definisi bagian 3 sesuai keputusan owner 15 Okt ("finance lead belum ada"), berlabel USULAN; baris lama tidak dihapus.
+- Pemetaan Finance Lead dan Finance Staff ke jabatan: status berubah W9: berlaku sebagai USULAN sampai jabatan Finance Lead terisi.

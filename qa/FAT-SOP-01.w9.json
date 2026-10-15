@@ -1,0 +1,29 @@
+{
+ "key": "FAT-SOP-01",
+ "cluster": "FAT-A",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Dua definisi baru di bagian 3 diawali huruf kecil ('peran pemeriksa...', 'peran pelaksana...'), padahal definisi lain diawali huruf kapital. Ini mengikuti teks instruksi A6 kata per kata, jadi hanya soal gaya.",
+  "Baris SNX-HR-ORG-01 di bagian 11 kini berbunyi 'Finance Lead dan Finance Staff didefinisikan di bagian 3.' Keterangan bahwa kedua peran itu tidak ada sebagai jabatan di SNX-HR-ORG-01 hilang. Itu sejalan dengan A6 dan definisi di bagian 3 sudah menyebut jabatan Finance Lead belum terisi, jadi tidak menimbulkan kontradiksi.",
+  "process_owner tetap 'Finance Lead' (sesuai aturan process_owner v22: ikuti sumber). Tidak ada butir W9 yang mengubahnya untuk FAT."
+ ],
+ "butir_dikerjakan": [
+  "A6: definisi Finance Lead dan Finance Staff ditambahkan di bagian 3 DEFINITION & ABBREVIATIONS, isinya persis teks instruksi termasuk label (USULAN), dan disisipkan berurutan alfabetis setelah Faktur Pajak Pengganti",
+  "A6: kalimat pemetaan lama 'Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).' dihapus dari baris Finance Staff dan Finance Lead di bagian 5. Wewenang dan isi tanggung jawab lain tidak berubah",
+  "A6: baris SNX-HR-ORG-01 di bagian 11 diselaraskan menjadi 'didefinisikan di bagian 3'. Rujukan itu benar: bagian 3 = DEFINITION & ABBREVIATIONS dan memuat kedua definisi",
+  "Blok approval sesuai defaults v22 FAT: Prepared 'Finance Staff' (tetap), Reviewed 'Amirull Yusuf Zulkarnain / Direktur' (berubah dari 'Finance Lead'), Approved 'Samuel Kristanto Utomo / President Director' (tetap)",
+  "notes/FAT-SOP-01.md punya bagian '## ISO-W9' dengan tabel perubahan dan status open item K-13"
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Grep pada teks render sesudah (/tmp/claude-0/w9/render/FAT-SOP-01.docx): 'HR Manager' 0, 'Divisi Legal' 0, 'K-13' 0, 'dipetakan' 0, em-dash 0. Frasa proses penyusunan (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun): semuanya 0. Dokumen ini dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku. Hasilnya tetap nol. Diff teks hanya menunjukkan 4 baris lama dan 6 baris baru, semuanya dalam lingkup A6. Berkas yang berubah di repo hanya specs/FAT-SOP-01.json dan notes/FAT-SOP-01.md.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

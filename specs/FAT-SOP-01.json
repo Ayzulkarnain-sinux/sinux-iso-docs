@@ -13,7 +13,7 @@
   "revision_desc": "Draft awal untuk review dan pengesahan",
   "approval": {
    "prepared": "Finance Staff",
-   "reviewed": "Finance Lead",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
   }
  },
@@ -40,6 +40,8 @@
   ["DPP", "Dasar Pengenaan Pajak: nilai yang menjadi dasar perhitungan pajak."],
   ["e-Faktur Pajak", "Faktur Pajak Keluaran elektronik, bukti pemungutan PPN yang SINUX terbitkan lewat CoreTax DJP."],
   ["Faktur Pajak Pengganti", "Faktur Pajak yang menggantikan e-Faktur Pajak sebelumnya karena kesalahan data atau penolakan invoice."],
+  ["Finance Lead", "peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)."],
+  ["Finance Staff", "peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)."],
   ["Google Form Data Subskripsi Klien", "Formulir yang klien isi untuk menyerahkan data master klien."],
   ["Invoice", "Dokumen resmi yang SINUX terbitkan kepada klien sebagai permintaan pembayaran atas jasa yang diserahkan atau pekerjaan proyek yang selesai."],
   ["KlikBCA Bisnis", "Internet banking perusahaan untuk memverifikasi penerimaan pembayaran (cash-in) dari klien."],
@@ -88,12 +90,12 @@
   ],
   [
    "Finance Staff",
-   "Memeriksa kelengkapan permohonan penagihan, mencocokkan PKS, PO, dan BAST, menerbitkan e-Faktur Pajak, menyusun draf invoice, mengirim invoice ke klien, mencatat transaksi di Register Penagihan dan Penjualan, memantau kas masuk, dan menangani revisi atau pembatalan invoice setelah persetujuan Finance Lead (butir 6.1 sampai 6.5 dan bagian 9). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Memeriksa kelengkapan permohonan penagihan, mencocokkan PKS, PO, dan BAST, menerbitkan e-Faktur Pajak, menyusun draf invoice, mengirim invoice ke klien, mencatat transaksi di Register Penagihan dan Penjualan, memantau kas masuk, dan menangani revisi atau pembatalan invoice setelah persetujuan Finance Lead (butir 6.1 sampai 6.5 dan bagian 9).",
    "Menerbitkan e-Faktur Pajak dan mengirim invoice; batas wewenang ada di butir 4.4."
   ],
   [
    "Finance Lead",
-   "Pemilik SOP ini. Memeriksa draf invoice, e-Faktur Pajak, dan dokumen pendukung terhadap Master Sales Sheet dan Google Form Data Subskripsi Klien; memastikan kelengkapan dan keakuratan semua atribut invoice; memeriksa perhitungan PPN dan catatan PPh Pasal 23; meneruskan draf ke Direktur Utama bila TOP di atas standar; memberi persetujuan tertulis sebelum invoice dikirim (butir 6.3). Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13).",
+   "Pemilik SOP ini. Memeriksa draf invoice, e-Faktur Pajak, dan dokumen pendukung terhadap Master Sales Sheet dan Google Form Data Subskripsi Klien; memastikan kelengkapan dan keakuratan semua atribut invoice; memeriksa perhitungan PPN dan catatan PPh Pasal 23; meneruskan draf ke Direktur Utama bila TOP di atas standar; memberi persetujuan tertulis sebelum invoice dikirim (butir 6.3).",
    "Menyetujui draf invoice sebelum dikirim, serta revisi dan pembatalan invoice; batas wewenang atas jatuh tempo ada di butir 4.8."
   ],
   [
@@ -228,7 +230,7 @@
  ],
  "related_documents": [
   ["SNX-FAT-SOP-05", "Tax Administration & Reporting; mengatur pelaporan dan penyetoran pajak, di luar scope SOP ini."],
-  ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; sumber nama jabatan dan matriks peran. Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)."],
+  ["SNX-HR-ORG-01", "Struktur Organisasi SINUX; sumber nama jabatan dan matriks peran. Finance Lead dan Finance Staff didefinisikan di bagian 3."],
   ["SNX-ISMS-PRO-01", "Information Classification & Handling; sumber tingkat klasifikasi RESTRICTED (Internal)."],
   ["Belum bernomor", "SOP Account Receivable & Collection; sedang dalam peninjauan; mengatur penagihan invoice kepada klien dan pendataan piutang, termasuk tindak lanjut Overdue."],
   ["Belum bernomor", "Form Permohonan Penagihan (Billing Request Form): templat pengajuan penagihan yang diisi Project Manager, dengan daftar periksa empat dokumen pendukung (butir 6.1)."],
