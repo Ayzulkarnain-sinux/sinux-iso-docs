@@ -1,0 +1,1214 @@
+{
+ "meta": {
+  "mode": "generic",
+  "doc_key": "MKT-RPT-01",
+  "doc_type_cover": "REPORT",
+  "doc_type_label": "Report",
+  "number": "SNX-MKT-RPT-01",
+  "department": "Marketing",
+  "title": "Marketing Planning & Performance Review",
+  "process_owner": "VP Commercial",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Zilly Dwinata / Brand & Marketing",
+   "reviewed": "Laras Rasmawati / VP Commercial",
+   "approved": "Samuel Kristanto Utomo / President Director"
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan",
+   "blocks": [
+    {
+     "p": "Laporan ini memuat Marketing Plan SINUX untuk satu periode, Monthly Performance Review atas rencana itu tiap bulan, dan Catatan Tindak Lanjut untuk Target yang tidak tercapai."
+    },
+    {
+     "p": "Hasil yang dijaga: setiap Aktivitas punya Marketing Objective, PIC, dan jadwal sebelum dijalankan, dan setiap Target yang tidak tercapai punya Tindakan Perbaikan yang dapat ditelusuri sampai selesai."
+    }
+   ]
+  },
+  {
+   "h": "Ruang Lingkup",
+   "blocks": [
+    {
+     "p": "Laporan ini dipakai Brand & Marketing dan VP Commercial untuk Aktivitas pemasaran SINUX berupa campaign, konten, event, dan webinar. Satu laporan terisi mencakup satu Periode Rencana: satu Marketing Plan, satu Monthly Performance Review untuk tiap bulan dalam periode itu, dan Catatan Tindak Lanjut."
+    },
+    {
+     "p": "Butir berikut dikecualikan dari laporan ini:"
+    },
+    {
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       6.5,
+       9.5
+      ],
+      "rows": [
+       [
+        "Pengendalian materi, konten, dan klaim sebelum publikasi",
+        "Ada di SNX-MKT-REG-01: persetujuan materi eksternal seperti company profile, website, dan media sosial, serta validasi klaim produk dan layanan."
+       ],
+       [
+        "Pencatatan pelaksanaan nyata tiap campaign dan Aktivitas",
+        "Ada di SNX-MKT-REG-02. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan Realisasi di tabel B2 merujuk catatan di SNX-MKT-REG-02 (USULAN)."
+       ],
+       [
+        "Pencatatan lead yang diteruskan ke Sales",
+        "Ada di SNX-MKT-REG-03: sumber lead, campaign asal, tanggal serah terima, dan feedback dari Sales. Laporan ini hanya memuat Realisasi KPI lead."
+       ],
+       [
+        "Proses penjualan sesudah lead diteruskan",
+        "Ada di SNX-COM-SOP-01 (Sales Process)."
+       ],
+       [
+        "Bobot, Balancing, dan Score KPI individu",
+        "Ada di KPI COMMERCIAL & MARKETING.xlsx. Laporan ini hanya memuat Target dan Realisasi tiap KPI."
+       ],
+       [
+        "Pembukuan biaya pemasaran",
+        "Laporan ini memuat Budget dan Realisasi Biaya tiap Aktivitas, bukan pembukuan (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Definisi dan Singkatan",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "Marketing Plan",
+        "Tabel A1 sampai A7 di bagian 7: Marketing Objective, Target Audience, Positioning, KPI, Aktivitas beserta Channel, jadwal, dan PIC, serta Budget untuk satu Periode Rencana."
+       ],
+       [
+        "Periode Rencana",
+        "Rentang waktu yang dicakup satu Marketing Plan, ditulis pada tabel Informasi Rencana."
+       ],
+       [
+        "Marketing Objective",
+        "Hasil yang dituju pemasaran selama Periode Rencana, ditulis sebagai kalimat yang bisa diukur dengan satu KPI atau lebih."
+       ],
+       [
+        "Prioritas Penjualan",
+        "Sasaran penjualan Commercial yang menjadi acuan Marketing Plan, menurut sales plan VP Commercial (USULAN)."
+       ],
+       [
+        "Target Audience",
+        "Kelompok orang atau organisasi yang dituju sebuah Aktivitas."
+       ],
+       [
+        "Positioning",
+        "Pernyataan tentang apa yang membedakan SINUX bagi satu Target Audience."
+       ],
+       [
+        "Aktivitas",
+        "Satu pekerjaan pemasaran yang punya Channel, jadwal mulai, jadwal selesai, dan PIC sendiri, misalnya campaign, konten, event, atau webinar."
+       ],
+       [
+        "Channel",
+        "Saluran yang dipakai sebuah Aktivitas untuk menjangkau Target Audience, misalnya website, media sosial, event, atau webinar."
+       ],
+       [
+        "PIC",
+        "Peran yang bertanggung jawab atas satu Aktivitas atau satu Tindakan Perbaikan, ditulis dengan nama jabatan menurut SNX-HR-ORG-01."
+       ],
+       [
+        "Budget",
+        "Dana yang disetujui untuk satu Aktivitas."
+       ],
+       [
+        "KPI",
+        "Ukuran pencapaian pemasaran yang dihitung dengan rumusan dan satuan tertentu."
+       ],
+       [
+        "Target",
+        "Nilai yang harus dipenuhi satu KPI, menurut rumusan dan satuan yang ditulis di tabel KPI."
+       ],
+       [
+        "Sumber Data",
+        "Sistem atau berkas tempat Realisasi sebuah KPI dibaca, misalnya CRM atau laporan analitik website."
+       ],
+       [
+        "CRM",
+        "Sistem yang dipakai Business Development untuk mencatat lead dan tahap penjualan menurut SNX-COM-SOP-01."
+       ],
+       [
+        "Bulan Review",
+        "Bulan kalender yang dinilai dalam satu Monthly Performance Review."
+       ],
+       [
+        "Realisasi",
+        "Nilai yang benar-benar tercapai atau dikeluarkan pada satu Bulan Review: nilai sebuah KPI, atau biaya sebuah Aktivitas (Realisasi Biaya)."
+       ],
+       [
+        "Monthly Performance Review",
+        "Tabel B1 sampai B4 di bagian 7: perbandingan Realisasi dengan Target dan Evaluasi untuk satu Bulan Review."
+       ],
+       [
+        "Evaluasi",
+        "Penjelasan tertulis tentang sebab hasil sebuah KPI atau Aktivitas pada satu Bulan Review."
+       ],
+       [
+        "Status Capaian",
+        "Hasil perbandingan Realisasi dengan Target untuk satu KPI pada satu Bulan Review. Nilainya ada di tabel nilai di bawah."
+       ],
+       [
+        "Tindakan Perbaikan",
+        "Langkah (corrective action) untuk menangani sebab sebuah Target tidak tercapai."
+       ],
+       [
+        "Hasil Pemeriksaan",
+        "Penilaian atas sebuah Tindakan Perbaikan yang berstatus Selesai. Nilainya ada di tabel nilai di bawah."
+       ],
+       [
+        "Catatan Tindak Lanjut",
+        "Tabel C1 dan C2 di bagian 7: daftar Tindakan Perbaikan beserta PIC, status, dan Hasil Pemeriksaan."
+       ],
+       [
+        "Laporan terisi",
+        "Laporan ini sesudah diisi untuk satu Periode Rencana."
+       ],
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Nilai pada Kolom Status dan Hasil"
+    },
+    {
+     "p": "Daftar nilai berikut berstatus (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Kolom",
+       "Nilai",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.0,
+       3.4,
+       8.6
+      ],
+      "rows": [
+       [
+        "Status Pelaksanaan",
+        "Terlaksana",
+        "Aktivitas sudah dikerjakan pada Bulan Review."
+       ],
+       [
+        "Status Pelaksanaan",
+        "Tertunda",
+        "Aktivitas belum dikerjakan pada jadwalnya dan masih akan dikerjakan."
+       ],
+       [
+        "Status Pelaksanaan",
+        "Dibatalkan",
+        "Aktivitas tidak akan dikerjakan."
+       ],
+       [
+        "Status Capaian",
+        "Tercapai",
+        "Realisasi memenuhi Target."
+       ],
+       [
+        "Status Capaian",
+        "Tidak Tercapai",
+        "Realisasi tidak memenuhi Target."
+       ],
+       [
+        "Status Capaian",
+        "Tidak Dinilai",
+        "KPI tidak dinilai pada Bulan Review itu. Alasannya ditulis di kolom Evaluasi."
+       ],
+       [
+        "Status pada Catatan Tindak Lanjut",
+        "Terbuka",
+        "Tindakan Perbaikan belum selesai."
+       ],
+       [
+        "Status pada Catatan Tindak Lanjut",
+        "Selesai",
+        "Tindakan Perbaikan sudah dijalankan dan buktinya tercatat."
+       ],
+       [
+        "Hasil Pemeriksaan",
+        "Efektif",
+        "KPI yang sama berstatus Tercapai pada Monthly Performance Review pertama yang menilainya sesudah Tindakan Perbaikan Selesai."
+       ],
+       [
+        "Hasil Pemeriksaan",
+        "Belum Efektif",
+        "KPI yang sama berstatus Tidak Tercapai pada Monthly Performance Review itu."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dasar dan Ketentuan",
+   "blocks": [
+    {
+     "p": "4.1 Brand & Marketing menulis rentang Periode Rencana di tabel Informasi Rencana. Panjang rentang belum ditetapkan, sehingga Brand & Marketing memilihnya untuk tiap rencana (USULAN)."
+    },
+    {
+     "p": "4.2 Brand & Marketing mengisi Marketing Plan sebelum Aktivitas pertama dalam rencana itu dijalankan (USULAN)."
+    },
+    {
+     "p": "4.3 Brand & Marketing menyusun jadwal Aktivitas, Positioning, dan Target Audience sesuai Prioritas Penjualan, menurut uraian jabatan Brand & Marketing di SNX-HR-JA-01, JA-06 butir 1. Rujukan Prioritas Penjualan ditulis di tiap Marketing Objective (USULAN)."
+    },
+    {
+     "p": "4.4 Tiap Marketing Objective punya satu KPI atau lebih. Tiap Aktivitas merujuk satu Marketing Objective dan punya Channel, jadwal mulai, jadwal selesai, dan PIC (USULAN)."
+    },
+    {
+     "p": "4.5 Brand & Marketing menulis Budget tiap Aktivitas yang memakai dana, lengkap dengan satuan mata uang. Untuk Aktivitas tanpa dana, Brand & Marketing menulis Tidak Ada Budget."
+    },
+    {
+     "p": "4.6 Persetujuan Budget mengikuti delegasi dan persetujuan tertulis yang berlaku untuk keputusan keuangan, menurut batasan umum jabatan di SNX-HR-JA-01. Kolom Dasar Persetujuan memuat rujukan persetujuan itu."
+    },
+    {
+     "p": "4.7 Brand & Marketing menyalin Target KPI dari lembar KPI jabatan Brand & Marketing di KPI COMMERCIAL & MARKETING.xlsx. VP Commercial menetapkan Target KPI yang tidak ada di lembar itu sebelum Marketing Plan diperiksa (USULAN)."
+    },
+    {
+     "p": "4.8 Brand & Marketing membuat satu Monthly Performance Review untuk tiap bulan kalender dalam Periode Rencana. Tabel Realisasi Aktivitas memuat Aktivitas yang jadwalnya jatuh pada Bulan Review dan Aktivitas yang tertunda dari bulan sebelumnya, dan Brand & Marketing mengisinya dengan merujuk pencatatan pelaksanaan tiap campaign di SNX-MKT-REG-02 (USULAN). Brand & Marketing tidak mengisi Realisasi atau Tanggal Review sebelum kejadiannya ada, dan tidak mengisi tanggal mundur."
+    },
+    {
+     "p": "4.9 Brand & Marketing membaca Realisasi dari Sumber Data yang tertulis di tabel KPI. KPI yang tidak punya Sumber Data pada Bulan Review itu ditulis Tidak Dinilai, dengan alasan di kolom Evaluasi."
+    },
+    {
+     "p": "4.10 KPI yang Targetnya berlaku per kuartal atau per rentang lain tetap dicatat Realisasinya tiap bulan bila Sumber Data ada. Status Capaiannya dinilai pada akhir rentang Target itu, dan pada bulan lain ditulis Tidak Dinilai (USULAN)."
+    },
+    {
+     "p": "4.11 Brand & Marketing menentukan Status Capaian dengan membandingkan Realisasi dengan Target menurut rumusan di tabel KPI. Evaluasi memuat sebab hasil tiap KPI dan tiap Aktivitas pada Bulan Review itu."
+    },
+    {
+     "p": "4.12 Brand & Marketing menulis tiap KPI berstatus Tidak Tercapai di Catatan Tindak Lanjut pada Monthly Performance Review yang sama, beserta usulan Tindakan Perbaikan."
+    },
+    {
+     "p": "4.13 VP Commercial menetapkan Tindakan Perbaikan, PIC, dan Target Selesai untuk tiap baris di Catatan Tindak Lanjut, menurut uraian jabatan VP Commercial di SNX-HR-JA-01, JA-03 butir 7 (USULAN)."
+    },
+    {
+     "p": "4.14 VP Commercial meninjau Tindakan Perbaikan berstatus Terbuka pada tiap Monthly Performance Review berikutnya sampai statusnya Selesai (USULAN)."
+    },
+    {
+     "p": "4.15 VP Commercial menulis Hasil Pemeriksaan pada Monthly Performance Review pertama yang menilai KPI itu sesudah Tindakan Perbaikan Selesai. Atas hasil Belum Efektif, Brand & Marketing menulis Tindakan Perbaikan baru di baris baru (USULAN)."
+    },
+    {
+     "p": "4.16 Brand & Marketing menulis perubahan atas Marketing Plan sebagai versi baru tabel A1 sampai A7, dengan nomor versi dan tanggal, dan VP Commercial memeriksanya lagi. Versi lama tetap tersimpan (USULAN)."
+    },
+    {
+     "p": "4.17 Laporan ini berklasifikasi INTERNAL menurut SNX-ISMS-PRO-01, dan laporan terisi disimpan di sistem resmi SINUX (butir 4.8 dokumen itu). Laporan terisi tidak memuat nama atau data pelanggan, karena informasi pelanggan minimal RESTRICTED (butir 4.3 dokumen itu). Data lead tetap di CRM dan di SNX-MKT-REG-03 (USULAN)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "p": "Pembagian tugas berikut berstatus (USULAN). Dasarnya uraian jabatan Brand & Marketing (JA-06 butir 1 dan 5) dan VP Commercial (JA-03 butir 1 dan 7) di SNX-HR-JA-01."
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada laporan ini"
+      ],
+      "widths_cm": [
+       3.8,
+       12.2
+      ],
+      "rows": [
+       [
+        "Brand & Marketing",
+        "Mencatat Marketing Plan, Budget, Realisasi, Evaluasi, dan usulan Tindakan Perbaikan, lalu menyimpan laporan terisi (butir 4.1 sampai 4.5, 4.7 sampai 4.12, 4.15 sampai 4.17). Jabatan JA-06 di SNX-HR-ORG-01."
+       ],
+       [
+        "VP Commercial",
+        "Pemilik laporan ini (Process Owner). Menetapkan Prioritas Penjualan lewat sales plan, Target KPI di luar lembar KPI, Tindakan Perbaikan, PIC, dan Target Selesai, menulis Hasil Pemeriksaan, dan memeriksa Marketing Plan serta tiap Monthly Performance Review (butir 4.3, 4.7, 4.13 sampai 4.16). Jabatan JA-03 di SNX-HR-ORG-01."
+       ],
+       [
+        "Business Development",
+        "Mencatat status lead yang diterima dari Brand & Marketing di CRM menurut SNX-COM-SOP-01. Brand & Marketing membaca status itu sebagai Sumber Data KPI lead (butir 4.9). Tidak mengisi laporan ini. Jabatan JA-07 di SNX-HR-ORG-01."
+       ],
+       [
+        "Direktur Utama",
+        "Menyetujui laporan ini lewat blok Approved By pada halaman depan. Tidak mengisi laporan terisi. Jabatan JA-01 di SNX-HR-ORG-01."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Petunjuk Pengisian",
+   "blocks": [
+    {
+     "p": "6.1 Brand & Marketing mengisi tabel Informasi Rencana: Periode Rencana, Versi Rencana, dan Tanggal Rencana Dibuat."
+    },
+    {
+     "p": "6.2 Brand & Marketing menulis tiap Marketing Objective di tabel Marketing Objective, beserta Prioritas Penjualan yang dirujuk."
+    },
+    {
+     "p": "6.3 Brand & Marketing menulis Positioning untuk tiap Target Audience di tabel Target Audience dan Positioning."
+    },
+    {
+     "p": "6.4 Brand & Marketing menulis tiap KPI di tabel KPI: Marketing Objective yang diukur, rumusan dan satuan, Target, dan Sumber Data."
+    },
+    {
+     "p": "6.5 Brand & Marketing menulis tiap Aktivitas di tabel Rencana Aktivitas: Marketing Objective, Channel, jadwal mulai dan selesai, serta PIC."
+    },
+    {
+     "p": "6.6 Brand & Marketing menulis Budget tiap Aktivitas di tabel Budget beserta Dasar Persetujuan, atau menulis Tidak Ada Budget."
+    },
+    {
+     "p": "6.7 Brand & Marketing menandatangani baris Pencatat di tabel Pengesahan Marketing Plan."
+    },
+    {
+     "p": "6.8 VP Commercial memeriksa Marketing Plan dan menandatangani baris Pemeriksa."
+    },
+    {
+     "p": "6.9 Brand & Marketing menyalin tabel B1 sampai B4 untuk tiap Bulan Review."
+    },
+    {
+     "p": "6.10 Brand & Marketing mengisi tabel Informasi Monthly Performance Review: Bulan Review, Tanggal Review, dan Versi Rencana yang Dirujuk."
+    },
+    {
+     "p": "6.11 Brand & Marketing mengisi tabel Realisasi Aktivitas: status, tanggal, Realisasi Biaya, dan Rujukan Catatan di SNX-MKT-REG-02 untuk tiap Aktivitas."
+    },
+    {
+     "p": "6.12 Brand & Marketing membaca Realisasi tiap KPI dari Sumber Data, lalu mengisi tabel Realisasi KPI beserta Status Capaian."
+    },
+    {
+     "p": "6.13 Brand & Marketing menulis Evaluasi untuk tiap Aktivitas dan tiap KPI di kolom Evaluasi."
+    },
+    {
+     "p": "6.14 Brand & Marketing menulis tiap KPI Tidak Tercapai di tabel Tindakan Perbaikan, beserta usulan tindakannya."
+    },
+    {
+     "p": "6.15 VP Commercial menetapkan Tindakan Perbaikan, PIC, dan Target Selesai untuk tiap baris tabel Tindakan Perbaikan."
+    },
+    {
+     "p": "6.16 PIC menyerahkan bukti pelaksanaan Tindakan Perbaikan ke Brand & Marketing sesudah tindakan dijalankan."
+    },
+    {
+     "p": "6.17 Brand & Marketing mengisi Status, Tanggal Selesai, dan Bukti Pelaksanaan di tabel Status dan Hasil Pemeriksaan."
+    },
+    {
+     "p": "6.18 VP Commercial menulis Hasil Pemeriksaan dan Tanggal Pemeriksaan untuk Tindakan Perbaikan yang Selesai, pada Monthly Performance Review berikutnya yang menilai KPI itu."
+    },
+    {
+     "p": "6.19 Brand & Marketing menandatangani baris Pencatat di tabel Pengesahan Monthly Performance Review."
+    },
+    {
+     "p": "6.20 VP Commercial memeriksa Monthly Performance Review dan menandatangani baris Pemeriksa."
+    },
+    {
+     "p": "6.21 Brand & Marketing menyimpan laporan terisi beserta bukti di lokasi pada bagian 8."
+    }
+   ]
+  },
+  {
+   "h": "Isi Laporan",
+   "blocks": [
+    {
+     "p": "Semua sel isian kosong sampai Brand & Marketing mengisinya untuk satu Periode Rencana. Kolom Kode dan No. sudah terisi. Baris dapat ditambah sesuai kebutuhan. Tabel A1 sampai A7 membentuk Marketing Plan, tabel B1 sampai B4 membentuk satu Monthly Performance Review dan disalin untuk tiap Bulan Review, dan tabel C1 dan C2 membentuk Catatan Tindak Lanjut."
+    },
+    {
+     "h2": "A1 Informasi Rencana"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Isian"
+      ],
+      "widths_cm": [
+       6.4,
+       9.6
+      ],
+      "rows": [
+       [
+        "Periode Rencana",
+        ""
+       ],
+       [
+        "Versi Rencana",
+        ""
+       ],
+       [
+        "Tanggal Rencana Dibuat",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "A2 Marketing Objective"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Marketing Objective",
+       "Prioritas Penjualan yang Dirujuk",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.6,
+       6.4,
+       5.0,
+       3.0
+      ],
+      "rows": [
+       [
+        "OBJ-1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "OBJ-2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "OBJ-3",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "A3 Target Audience dan Positioning"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Target Audience",
+       "Positioning",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.6,
+       4.4,
+       7.0,
+       3.0
+      ],
+      "rows": [
+       [
+        "TA-1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "TA-2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "TA-3",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "A4 KPI"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "KPI",
+       "Marketing Objective",
+       "Rumusan dan Satuan",
+       "Target",
+       "Sumber Data"
+      ],
+      "widths_cm": [
+       1.5,
+       3.0,
+       2.4,
+       3.2,
+       3.0,
+       2.9
+      ],
+      "rows": [
+       [
+        "KPI-1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "A5 Rencana Aktivitas"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Aktivitas",
+       "Marketing Objective",
+       "Channel",
+       "Mulai",
+       "Selesai",
+       "PIC"
+      ],
+      "widths_cm": [
+       1.6,
+       3.4,
+       2.6,
+       2.1,
+       2.1,
+       2.1,
+       2.1
+      ],
+      "rows": [
+       [
+        "AKT-1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-3",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "A6 Budget"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode Aktivitas",
+       "Budget",
+       "Dasar Persetujuan",
+       "Catatan"
+      ],
+      "widths_cm": [
+       2.6,
+       4.0,
+       5.4,
+       4.0
+      ],
+      "rows": [
+       [
+        "AKT-1",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-2",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-3",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-4",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-5",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "A7 Pengesahan Marketing Plan"
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Nama",
+       "Tanggal",
+       "Tanda Tangan"
+      ],
+      "widths_cm": [
+       4.8,
+       4.4,
+       3.0,
+       3.8
+      ],
+      "rows": [
+       [
+        "Pencatat (Brand & Marketing)",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Pemeriksa (VP Commercial)",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "B1 Informasi Monthly Performance Review"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Isian"
+      ],
+      "widths_cm": [
+       6.4,
+       9.6
+      ],
+      "rows": [
+       [
+        "Bulan Review",
+        ""
+       ],
+       [
+        "Tanggal Review",
+        ""
+       ],
+       [
+        "Versi Rencana yang Dirujuk",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "B2 Realisasi Aktivitas"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Status Pelaksanaan",
+       "Tanggal Pelaksanaan",
+       "Realisasi Biaya",
+       "Rujukan Catatan",
+       "Evaluasi"
+      ],
+      "widths_cm": [
+       1.7,
+       3.1,
+       3.1,
+       2.3,
+       2.6,
+       3.2
+      ],
+      "rows": [
+       [
+        "AKT-1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "AKT-5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "B3 Realisasi KPI"
+    },
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "KPI",
+       "Target",
+       "Realisasi",
+       "Status Capaian",
+       "Evaluasi"
+      ],
+      "widths_cm": [
+       1.6,
+       3.2,
+       2.4,
+       2.4,
+       2.4,
+       4.0
+      ],
+      "rows": [
+       [
+        "KPI-1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "KPI-5",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "B4 Pengesahan Monthly Performance Review"
+    },
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Nama",
+       "Tanggal",
+       "Tanda Tangan"
+      ],
+      "widths_cm": [
+       4.8,
+       4.4,
+       3.0,
+       3.8
+      ],
+      "rows": [
+       [
+        "Pencatat (Brand & Marketing)",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Pemeriksa (VP Commercial)",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "C1 Tindakan Perbaikan"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Kode KPI",
+       "Bulan Review",
+       "Tindakan Perbaikan",
+       "PIC",
+       "Target Selesai"
+      ],
+      "widths_cm": [
+       1.2,
+       1.8,
+       2.2,
+       5.8,
+       2.6,
+       2.4
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "C2 Status dan Hasil Pemeriksaan"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Status",
+       "Tanggal Selesai",
+       "Bukti Pelaksanaan",
+       "Hasil Pemeriksaan",
+       "Tanggal Pemeriksaan"
+      ],
+      "widths_cm": [
+       1.2,
+       2.0,
+       2.6,
+       4.2,
+       3.0,
+       3.0
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Rekaman",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       4.0,
+       6.0,
+       6.0
+      ],
+      "rows": [
+       [
+        "Marketing Plan (tabel A1 sampai A7), satu per versi",
+        "Folder Google Drive departemen Marketing (USULAN). Pencatat Brand & Marketing, pemilik VP Commercial (USULAN).",
+        "Sesuai master list (SNX-ISMS-PRO-01 butir 4.15). VP Commercial bersama Legal menetapkan jangka retensi (USULAN)."
+       ],
+       [
+        "Monthly Performance Review (tabel B1 sampai B4), satu per bulan",
+        "Folder yang sama dengan Marketing Plan. Pencatat Brand & Marketing, pemilik VP Commercial (USULAN).",
+        "Sama dengan Marketing Plan (USULAN)."
+       ],
+       [
+        "Catatan Tindak Lanjut (tabel C1 dan C2)",
+        "Folder yang sama dengan Marketing Plan. Pencatat Brand & Marketing, pemilik VP Commercial (USULAN).",
+        "Sama dengan Marketing Plan (USULAN)."
+       ],
+       [
+        "Bukti Realisasi dan Bukti Pelaksanaan Tindakan Perbaikan",
+        "Folder yang sama dengan Marketing Plan. Pencatat Brand & Marketing, pemilik VP Commercial (USULAN).",
+        "Sama dengan Marketing Plan (USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Acuan Klausul ISO",
+   "blocks": [
+    {
+     "p": "Daftar klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan laporan ini"
+      ],
+      "widths_cm": [
+       3.4,
+       5.4,
+       7.2
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "6.2 Sasaran mutu dan perencanaan untuk mencapainya",
+        "Marketing Plan memuat Marketing Objective, Aktivitas, Budget, PIC, jadwal, dan KPI. Monthly Performance Review memuat cara hasilnya dievaluasi."
+       ],
+       [
+        "ISO 9001:2015",
+        "9.1.1 Pemantauan, pengukuran, analisis, dan evaluasi: Umum",
+        "Monthly Performance Review memuat Realisasi, Status Capaian, dan Evaluasi tiap bulan."
+       ],
+       [
+        "ISO 9001:2015",
+        "10.2 Ketidaksesuaian dan tindakan korektif",
+        "Catatan Tindak Lanjut memuat Tindakan Perbaikan, PIC, status, dan Hasil Pemeriksaan untuk KPI Tidak Tercapai."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Laporan terisi disimpan dengan lokasi, pemilik, dan klasifikasi yang tercatat (bagian 8 dan butir 4.17)."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Sama dengan ISO 9001:2015 7.5.3, untuk dokumen dalam lingkup ISMS."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.12 Klasifikasi informasi",
+        "Laporan ini berklasifikasi INTERNAL menurut SNX-ISMS-PRO-01, dan laporan terisi tidak memuat data pelanggan (butir 4.17)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4.0,
+       12.0
+      ],
+      "rows": [
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX: sumber nama jabatan Brand & Marketing (JA-06), VP Commercial (JA-03), Business Development (JA-07), dan Direktur Utama (JA-01)."
+       ],
+       [
+        "SNX-HR-JA-01",
+        "Job Analysis dan Uraian Jabatan: uraian tugas Brand & Marketing (JA-06 butir 1 dan 5) dan VP Commercial (JA-03 butir 1 dan 7), serta batasan umum keputusan keuangan. Dasar pembagian tugas di bagian 5."
+       ],
+       [
+        "SNX-COM-SOP-01",
+        "Sales Process: Brand & Marketing menyerahkan inbound lead ke Business Development beserta sumber dan statusnya, dan Business Development mencatat lead di CRM."
+       ],
+       [
+        "SNX-MKT-REG-01",
+        "Marketing Content, Material & Claims Approval Register: persetujuan materi eksternal dan validasi klaim produk dan layanan sebelum publikasi. Dikecualikan dari laporan ini."
+       ],
+       [
+        "SNX-MKT-REG-02",
+        "Marketing Campaign & Activity Register: mencatat pelaksanaan nyata tiap campaign dan Aktivitas, dan menautkan materi ke ID persetujuan di SNX-MKT-REG-01. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan kolom Rujukan Catatan di tabel B2 menunjuk catatan itu (USULAN)."
+       ],
+       [
+        "SNX-MKT-REG-03",
+        "Marketing Lead & Campaign Outcome Register: hasil marketing yang diteruskan ke Sales. Tempat Realisasi KPI lead dapat dibaca (USULAN)."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling: tingkat INTERNAL, informasi pelanggan (butir 4.3), penyimpanan (butir 4.8), dan retensi (butir 4.15)."
+       ],
+       [
+        "Belum bernomor",
+        "KPI COMMERCIAL & MARKETING.xlsx: KPI individu Commercial dan Brand & Marketing periode 2026 sampai 2027, dengan kolom pengukuran per kuartal. Sumber Target KPI di tabel KPI (butir 4.7, USULAN)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Laporan ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. VP Commercial meninjau laporan ini setiap tahun, sesuai Review Period pada blok Identity."
+    }
+   ]
+  }
+ ]
+}

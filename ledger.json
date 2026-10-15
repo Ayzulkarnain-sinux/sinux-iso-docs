@@ -749,10 +749,10 @@
    "loops": 0,
    "usulan_count": 24,
    "open_items": [],
-   "updated_at": "2026-10-15T00:37:28Z",
+   "updated_at": "2026-10-15T00:37:31Z",
    "pen_agent": "adc9dd25179af16a9",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 18,
@@ -2003,16 +2003,16 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-MKT-RPT-01",
    "out_path": "out/06_Marketing/SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 30,
    "open_items": [],
-   "updated_at": "2026-10-15T00:30:55Z",
+   "updated_at": "2026-10-15T00:37:31Z",
    "pen_agent": "afb20c8cd055f9128",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02"

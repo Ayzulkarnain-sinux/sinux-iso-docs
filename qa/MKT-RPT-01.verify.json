@@ -1,0 +1,51 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Bagian 3 Definisi (Aktivitas, Channel) dibandingkan dengan specs/MKT-REG-02.json Definisi; butir 4.8 dan 6.11",
+   "masalah": "Istilah Aktivitas berbeda arti antardokumen. Dokumen ini: 'Satu pekerjaan pemasaran ... misalnya campaign, konten, event, atau webinar', jadi campaign dan konten termasuk Aktivitas. SNX-MKT-REG-02: 'Aktivitas | Satu kegiatan pemasaran SINUX di luar campaign, misalnya event atau webinar', dan konten di sana adalah Materi (dikendalikan SNX-MKT-REG-01). Butir 4.8 dan langkah 6.11 meminta Rujukan Catatan di SNX-MKT-REG-02 untuk tiap Aktivitas; Aktivitas berjenis konten hanya bisa masuk REG-02 sebagai 'Lainnya'. Batas cakupan tetap sesuai keputusan orkestrator (REG-02 = pelaksanaan, dokumen ini = rencana dan tinjauan), tetapi istilahnya perlu diselaraskan di salah satu dokumen. Tidak dijadikan pemblokir karena tidak ada fakta salah dan alur pengisian tetap bisa dijalankan.",
+   "bukti": "Teks docx tabel Definisi baris Aktivitas; specs/MKT-REG-02.json Definisi baris Aktivitas dan Materi, langkah 6.3 (Jenis: Campaign, Event, Webinar, atau Lainnya)"
+  },
+  {
+   "lokasi": "Bagian 3 tabel nilai Status Pelaksanaan; butir 4.8; tabel B2",
+   "masalah": "Nilai status pelaksanaan tidak sama dengan SNX-MKT-REG-02, padahal butir 4.8 meminta tabel B2 diisi dengan merujuk catatan REG-02. Dokumen ini: Terlaksana, Tertunda, Dibatalkan. REG-02: Direncanakan, Berjalan, Selesai, Dibatalkan. Tidak ada padanan untuk 'Berjalan' (Aktivitas lintas bulan), dan tidak ada aturan pemetaan. Usul: tambah satu kalimat pemetaan atau samakan nilainya.",
+   "bukti": "Teks docx: 'Status Pelaksanaan | Terlaksana | Aktivitas sudah dikerjakan pada Bulan Review.'; specs/MKT-REG-02.json H2 'Status Campaign atau Aktivitas' (empat nilai)"
+  },
+  {
+   "lokasi": "Butir 4.8, langkah 6.11, tabel B2 kolom Rujukan Catatan",
+   "masalah": "Isi kolom Rujukan Catatan tidak ditentukan (mis. nomor baris Tabel 1 SNX-MKT-REG-02). Butir 4.8 juga menulis 'pencatatan pelaksanaan tiap campaign di SNX-MKT-REG-02', sedangkan REG-02 mencatat campaign dan aktivitas. Tautan balik REG-02 (kolom Kode Aktivitas, langkah 6.9) sudah ada, jadi cukup satu kalimat penegas.",
+   "bukti": "Teks docx butir 4.8 dan 6.11; specs/MKT-REG-02.json langkah 6.9 dan Tabel 2 kolom 'Kode Aktivitas (SNX-MKT-RPT-01)'"
+  },
+  {
+   "lokasi": "Ruang Lingkup, tabel pengecualian baris 'Pengendalian materi, konten, dan klaim sebelum publikasi'; Dokumen Terkait baris SNX-MKT-REG-01",
+   "masalah": "Validasi klaim ditempatkan di SNX-MKT-REG-01 tanpa label (USULAN). Di checklist, validasi klaim ada di baris 58 (Marketing Campaign & Activity Register); pemindahannya ke REG-01 adalah keputusan batas cakupan yang masih USULAN dengan pemutus owner. Baris pengecualian REG-02 sudah berlabel USULAN; baris REG-01 sebaiknya juga.",
+   "bukti": "config/checklist.json baris 58: 'serta memastikan keakuratan informasi dan validasi klaim produk/layanan sebelum dipublikasikan'; teks docx: 'Ada di SNX-MKT-REG-01: persetujuan materi eksternal ... serta validasi klaim produk dan layanan.'"
+  },
+  {
+   "lokasi": "Bagian 8 Rekaman (kolom Retensi baris 1); langkah 6.16",
+   "masalah": "Konsistensi peran (e): 'VP Commercial bersama Legal menetapkan jangka retensi (USULAN)'. 'Legal' tidak ada di tabel Peran bagian 5 dan tidak sama dengan nama jabatan HR-ORG-01 'Legal & Compliance' (JA-08). Langkah 6.16 memakai pelaku 'PIC', yang ada di Definisi tetapi tidak di tabel Peran. Masih bisa diterima karena PIC adalah jabatan yang diisi per baris, tetapi sebaiknya tabel Peran menyebutnya.",
+   "bukti": "specs/HR-JA-01.json h2 'JA-08 Legal & Compliance'; teks docx tabel Peran (Brand & Marketing, VP Commercial, Business Development, Direktur Utama)"
+  },
+  {
+   "lokasi": "Butir 4.3, 4.10, 4.16, pengantar bagian 7",
+   "masalah": "RUNBOOK §6a.1: kalimat pasif tanpa pelaku, padahal pelakunya diketahui (Brand & Marketing). 'Rujukan Prioritas Penjualan ditulis di tiap Marketing Objective (USULAN).' 'KPI yang Targetnya berlaku per kuartal ... tetap dicatat Realisasinya tiap bulan ... Status Capaiannya dinilai pada akhir rentang Target itu, dan pada bulan lain ditulis Tidak Dinilai (USULAN).' 'Versi lama tetap tersimpan (USULAN).' 'Baris dapat ditambah sesuai kebutuhan.' Pelaku sudah jelas dari butir lain (4.9, 4.11, 6.21), jadi tidak dijadikan pemblokir.",
+   "bukti": "Teks docx butir 4.3, 4.10, 4.16, paragraf pembuka ISI LAPORAN"
+  },
+  {
+   "lokasi": "Butir 4.13, langkah 6.15, tabel C1; Tujuan; butir 4.1",
+   "masalah": "RUNBOOK §6a.7: istilah terdefinisi dipakai untuk arti lain. 'Target' didefinisikan sebagai nilai KPI, tetapi dipakai lagi pada 'Target Selesai' (tenggat Tindakan Perbaikan). Kata 'rencana' huruf kecil dipakai sebagai sinonim Marketing Plan: 'atas rencana itu' (Tujuan), 'untuk tiap rencana' (4.1). Usul: 'Tenggat Selesai' atau definisikan Target Selesai, dan tulis 'Marketing Plan'.",
+   "bukti": "Teks docx tabel Definisi baris Target: 'Nilai yang harus dipenuhi satu KPI'; header C1: 'Target Selesai'"
+  },
+  {
+   "lokasi": "Dokumen Terkait baris SNX-ISMS-PRO-01; Acuan Klausul ISO baris ISO/IEC 27001:2022 7.5.3",
+   "masalah": "Judul SNX-ISMS-PRO-01 ditulis 'Information Classification & Handling', sedangkan judul di spec dokumen itu 'Information Classification & Handling Procedure' (minor). Hubungan laporan pemasaran dengan ISO/IEC 27001:2022 7.5.3 tidak langsung; sudah berlabel USULAN dan diakui di notes, konsultan menilai.",
+   "bukti": "specs/ISMS-PRO-01.json meta.title; notes/MKT-RPT-01.md tabel Pemetaan klausul ISO"
+  },
+  {
+   "lokasi": "Catatan pemeriksaan (bukan cacat)",
+   "masalah": "Yang terverifikasi: penanda tangan sama dengan config/defaults.json (MKT) dan data_conflicts (Samuel Kristanto Utomo / President Director di blok Approved By, Direktur Utama di badan); Status Draft, Effective Date kosong; semua sel data kosong tanpa baris contoh; dua belas unsur Description dan tiga bukti ada di tabel A1 sampai C2. Rujukan JA-06 butir 1 dan 5, JA-03 butir 1 dan 7, batasan umum keputusan keuangan (HR-JA-01 butir 4.5), JA-01/03/06/07, SNX-COM-SOP-01 (inbound lead ke Business Development, CRM), SNX-ISMS-PRO-01 butir 4.3, 4.8, dan 4.15, serta periode 2026 sampai 2027 dan kolom per kuartal di lembar KPI cocok dengan sumber. Nol rujukan internal AI, nol em-dash dan en-dash, nol tebal atau kutip penekanan. Dokumen tidak punya fileId di context/audit; cacat lembar KPI (realisasi kosong, tanpa rumusan, target per kuartal) ditangani di notes. Batas dengan REG-01, REG-02, dan REG-03 sesuai keputusan orkestrator.",
+   "bukti": "Ekstraksi teks docx; specs/HR-JA-01.json, specs/HR-ORG-01.json, specs/COM-SOP-01.json, specs/ISMS-PRO-01.json, specs/MKT-REG-02.json, specs/MKT-REG-03.json; context/audit/iso-sinux-supdocs-commercial-2026-10-14.md baris 353 sampai 547; qa/MKT-RPT-01.lint.json pass"
+  }
+ ]
+}
