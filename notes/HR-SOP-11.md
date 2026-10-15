@@ -143,13 +143,13 @@ Dokumen memuat 53 penanda "(USULAN)", mewakili 21 butir keputusan di bawah. Pemu
 | O4 | SOP Performance Appraisal dan SOP Employee Offboarding dalam peninjauan dan belum punya kode SNX di worklist. Setelah bernomor, ganti nama dengan kode di bagian 2, 3, dan 11. SOP Payroll Process (juga dalam peninjauan) belum dirujuk karena gaji dikecualikan | Aziz |
 | O5 | Grading belum ada di SNX-HR-JA-01 dan SNX-HR-ORG-01, sehingga penurunan tingkat posisi di dalam jabatan yang sama belum bisa dijalankan | owner, Aziz |
 | O6 | Sanksi disiplin selain penurunan jabatan (teguran, surat peringatan) tidak punya SOP di daftar HR. Apakah perlu dokumen sendiri | owner, Aziz |
-| O7 | Atasan HR Manager belum satu (K-04 di SNX-HR-ORG-01). Penunjukan pemeriksa dan pengusul pengganti bila HR Manager atau HRGA Officer menjadi karyawan terkait ditulis berlabel (USULAN) dan perlu diputus | Samuel, owner |
-| O8 | Authority Matrix dan KPI Matrix belum bernomor, dirujuk dengan "Belum bernomor". Status konfirmasi data_conflicts yang bukan "selesai" dan berlaku di dokumen ini: jabatan Aziz (HR Manager lawan HR Lead, owner atau Aziz), ejaan dan sebutan Samuel (owner atau Samuel). Catat di Laporan_Run | owner |
+| O7 | Atasan HR Manager belum satu (K-04 di SNX-HR-ORG-01). Penunjukan pemeriksa dan pengusul pengganti bila HR Manager atau HRGA Officer menjadi karyawan terkait ditulis berlabel (USULAN) dan perlu diputus Diubah W9: sebutan jabatan menjadi HR Lead; K-04 tetap. | Samuel, owner |
+| O8 | Authority Matrix dan KPI Matrix belum bernomor, dirujuk dengan "Belum bernomor". Status konfirmasi data_conflicts yang bukan "selesai" dan berlaku di dokumen ini: jabatan Aziz (HR Manager lawan HR Lead, owner atau Aziz), ejaan dan sebutan Samuel (owner atau Samuel). Catat di Laporan_Run Ditutup W9 untuk jabatan Aziz: owner 15 Okt memutus HR Lead. Konfirmasi ejaan dan sebutan Samuel tetap seperti semula. | owner |
 | O9 | Penetapan besarnya gaji dan tunjangan sesudah penurunan jabatan di luar SOP ini. Dokumen mana yang mengaturnya (SOP Payroll Process dalam peninjauan) dan siapa penetapnya belum jelas | Aziz, FAT |
 | O10 | Lokasi simpan dan retensi rekaman (U12) dan klasifikasi RESTRICTED (Internal) (U11) belum dikonfirmasi pemilik dokumen terkait | Aziz, owner |
 | O11 | Pemisahan peran (butir 4.4): bila karyawan terkait Direktur (JA-02), Direktur Utama mengusulkan sekaligus memutuskan, sehingga bagian 9 menyerahkan keputusan ke Organ perusahaan (USULAN). Organ perusahaan menurut anggaran dasar belum disebut namanya di sumber (JA-01: "Organ perusahaan sesuai ketentuan dan anggaran dasar (verifikasi)"; K-05 di SNX-HR-ORG-01), dan tata cara keputusannya belum ada | Samuel, owner |
-| O12 | Pemisahan peran: bila karyawan terkait HRGA Officer (JA-12), HR Manager adalah Atasan Langsungnya dan Direktur (JA-02) menggantikan langkah HR Manager serta pemeriksaan kelengkapan usulan (langkah pertama HRGA Officer di butir 6.3). Bila karyawan terkait Office Helper (JA-15), HR Manager menggantikan langkah HRGA Officer. Penunjukan Direktur dan HR Manager sebagai pengganti perlu diputus; sah tidaknya Direktur sebagai pengganti bergantung pada garis lapor HR Manager ke Direktur yang masih menunggu konfirmasi (K-04) | Samuel, owner |
-| O13 | Pemisahan peran: bila karyawan terkait HR Manager (JA-14), bagian 9 hanya menyebut Direktur Utama menunjuk karyawan lain, tanpa peran pengganti tetap. Atasan Langsungnya (K-04) belum satu, dan Direktur tidak bisa sekaligus mengusulkan dan menggantikan HR Manager. Peran pengganti tetap belum ada | Samuel, owner |
+| O12 | Pemisahan peran: bila karyawan terkait HRGA Officer (JA-12), HR Manager adalah Atasan Langsungnya dan Direktur (JA-02) menggantikan langkah HR Manager serta pemeriksaan kelengkapan usulan (langkah pertama HRGA Officer di butir 6.3). Bila karyawan terkait Office Helper (JA-15), HR Manager menggantikan langkah HRGA Officer. Penunjukan Direktur dan HR Manager sebagai pengganti perlu diputus; sah tidaknya Direktur sebagai pengganti bergantung pada garis lapor HR Manager ke Direktur yang masih menunggu konfirmasi (K-04) Diubah W9: bagian 9 baris HRGA Officer (JA-12) kini menyebut HR Lead sebagai penerima tanggapan karyawan terkait; sweep menyarankan tanggapan langsung ke Direktur, tetap perlu diputus. | Samuel, owner |
+| O13 | Pemisahan peran: bila karyawan terkait HR Manager (JA-14), bagian 9 hanya menyebut Direktur Utama menunjuk karyawan lain, tanpa peran pengganti tetap. Atasan Langsungnya (K-04) belum satu, dan Direktur tidak bisa sekaligus mengusulkan dan menggantikan HR Manager. Peran pengganti tetap belum ada Diubah W9: sebutan jabatan menjadi HR Lead. | Samuel, owner |
 
 ## Sweep
 
@@ -184,3 +184,24 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber:
 - Judul klausul ISO dan keseluruhan acuan: bukan dari sumber, berlabel "(USULAN, perlu konfirmasi konsultan)".
 - Rancangan langkah, pemutus (Direktur Utama), hak menanggapi, dan penanganan pengecualian: tidak ada di sumber. Seluruhnya berlabel (USULAN) per butir atau lewat intro butir 6.1 (daftar di bagian USULAN).
 - Definisi "Pelanggaran aturan perusahaan", "Posisi", dan "Tingkat posisi" adalah rumusan polos tanpa angka atau nama; rumusannya milik penyusun dan masuk open item O1 dan O5.
+
+## ISO-W9
+
+Sumber: LEAD G-3 (A2, A3, B2, B4) dan butir kerja ISO-W9. Hanya butir di bawah yang diubah.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 jabatan Aziz | "HR Manager" (60 kemunculan: Peran, PIC, SLA, rekaman, simpul diagram, process_owner, blok Reviewed) | "HR Lead"; blok Reviewed "Aziz Priyo Widakdo / HR Lead" |
+| B2 mutasi (butir 4.9) | "penurunan jabatan termasuk mutasi menurut SNX-ISMS-SOP-02." | "SNX-ISMS-SOP-02 memakai kata mutasi untuk perpindahan peran seseorang, berbeda dari arti mutasi pada kalimat batas di bagian 2. Penurunan jabatan termasuk perpindahan peran itu." |
+| B2 mutasi (bagian 11) | SNX-ISMS-SOP-02: "perubahan akses saat mutasi" | "perubahan akses saat perpindahan peran" |
+| B2 berkas usulan (bagian 3) | tidak didefinisikan | baris baru: "Berkas usulan: Usulan penurunan jabatan beserta bukti dasar dan tanggapan karyawan, yang diteruskan HRGA Officer ke HR Lead (butir 6.3)." |
+| B2 berkas usulan (butir 4.4) | "meneruskan berkas ke HR Lead" | "meneruskan berkas usulan ke HR Lead" |
+| B2 berkas usulan (diagram, simpul c3) | "Teruskan berkas ke HR Lead" | "Teruskan berkas usulan ke HR Lead" |
+| B2 NOC, SOC, SD, PM (bagian 3) | tidak didefinisikan | baris baru: "NOC, SOC, SD dan PM: Sub divisi Operation menurut SNX-HR-ORG-01: NOC, SOC, serta SD dan PM. SNX-HR-ORG-01 menyatakan susunan ini berstatus (USULAN)." Dirujuk ke SNX-HR-ORG-01; kepanjangan SD dan PM tidak ditulis karena tidak ada sumbernya di sini |
+| B2 pasif (bagian 8, penerusan berkas) | "Pada hari tanggapan diterima atau batas tanggapan lewat" | "Pada hari HRGA Officer menerima tanggapan atau batas tanggapan lewat" |
+| B2 pasif dan penerima (bagian 9, HRGA Officer JA-12) | "HR Lead menjalankan langkah HRGA Officer lainnya di butir 6.3 dan 6.5, dengan berkas usulan diteruskan ke Direktur, kecuali langkah kelima di butir 6.5 (USULAN)." | "Karyawan terkait mengirim tanggapan ke HR Lead, pengganti HRGA Officer di butir 6.3 nomor 4. HR Lead menjalankan langkah HRGA Officer lainnya di butir 6.3 dan 6.5 dan meneruskan berkas usulan ke Direktur, kecuali langkah kelima di butir 6.5 (USULAN)." |
+| B2 penerima (bagian 9, Office Helper JA-15) | "HR Lead menjalankan langkah HRGA Officer di butir 6.3 dan 6.5 (USULAN)." | "HR Lead menjalankan langkah HRGA Officer di butir 6.3 dan 6.5. Karyawan terkait mengirim tanggapan ke HR Lead, dan langkah kelima di butir 6.3 tidak berlaku karena HR Lead sudah memegang berkas usulan (USULAN)." |
+
+A3 garis lapor JA-03 dan JA-04: dokumen ini tidak menyebut atasan atau garis lapor JA-03 atau JA-04 dan tidak memakai keduanya sebagai contoh ukuran tingkatan jabatan, jadi tidak ada perubahan. Label K-02, K-03, K-04 tidak disentuh. SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan. Kalimat batas rotasi dan mutasi tidak diubah (identik di SOP-10, 11, 12, 13).
+
+Open item: O8 ditutup W9 (bagian jabatan Aziz); O7, O12, O13 diubah W9. Tambahan open item W9: penerima tanggapan karyawan bila karyawan terkait HRGA Officer atau Office Helper memakai HR Lead (USULAN); sweep lama menyarankan langsung ke Direktur. Pemutus: Samuel, owner.

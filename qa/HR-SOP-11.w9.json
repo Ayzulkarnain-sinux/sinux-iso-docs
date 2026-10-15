@@ -1,0 +1,37 @@
+{
+ "key": "HR-SOP-11",
+ "cluster": "HR-SOP",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 3, baris baru 'NOC, SOC, SD dan PM': kalimat 'SNX-HR-ORG-01 menyatakan susunan ini berstatus (USULAN)' tidak persis menyalin ORG-01. specs/HR-ORG-01.json baris 439 menulis tiga sub divisi itu sebagai fakta. Yang berstatus (USULAN) di sana adalah 'Nama jabatan, jenjang, headcount, dan garis lapor ke COO'. Definisi NOC dan SOC di ORG-01 (baris 127-132) juga tidak berlabel. Isi definisinya punya dasar, tetapi atribusi statusnya perlu dipersempit.",
+  "Bagian 3, 'NOC, SOC, SD dan PM': rumusannya berbeda dari HR-SOP-10, yang memuat uraian NOC, SOC, dan kepanjangan SD dan PM, dan dari HR-SOP-12/13, yang memakai baris 'Unit kerja'. Butir 4 membolehkan opsi 'dirujuk ke SNX-HR-ORG-01', jadi ini bukan pemblokir, tetapi keempat SOP belum seragam. Catatan di notes bahwa kepanjangan SD dan PM 'tidak ada sumbernya' tidak tepat: kepanjangan itu ada di SNX-HR-ORG-01 (definisi 'SD dan PM') dan di HR-SOP-10.",
+  "Bagian 3, definisi 'Berkas usulan' ('yang diteruskan HRGA Officer ke HR Lead (butir 6.3)') lebih sempit daripada pemakaiannya. Di bagian 9 baris JA-12, HR Lead meneruskan berkas usulan ke Direktur. Bila karyawan tidak mengirim tanggapan, berkas usulan juga diteruskan tanpa tanggapan karyawan.",
+  "Bagian 9, baris JA-12: rujukan 'butir 6.3 nomor 4' benar (langkah 4 di 6.3 = kirim tanggapan ke HRGA Officer). Gayanya saja yang berbeda dari kebiasaan dokumen ini ('langkah kelima di butir 6.5').",
+  "Butir 4.9 dan bagian 3 memakai dokumen sebagai subjek kata kerja ('SNX-ISMS-SOP-02 memakai', 'SNX-HR-ORG-01 menyatakan'). Pola yang sama sudah ada sebelum W9 (butir 4.6 'SNX-HR-JA-01 butir 4.5 menyatakan'), dan arti kata kerjanya merujuk ke isi dokumen, bukan tindakan manusia. Dicatat saja.",
+  "Bagian 9, baris JA-12 dan JA-15: penerima tanggapan dipilih HR Lead (berlabel USULAN), bukan Direktur seperti saran sweep. Pilihan ini sejalan dengan arti lama (HR Lead menggantikan langkah HRGA Officer) dan sudah dicatat sebagai open item di notes."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 (A2): 'HR Manager' diganti 'HR Lead' di Peran, PIC 6.1/6.4/6.5, SLA, bagian 9, bagian 10, definisi, simpul diagram (p1, d, g, l, c3), process_owner, dan blok Reviewed 'Aziz Priyo Widakdo / HR Lead'. SPV tidak ditambahkan karena dokumen tidak punya kolom tingkat jabatan (dicatat di notes).",
+  "Butir 2 (A3): tidak berlaku. Dokumen tidak menyebut atasan JA-03 atau JA-04. Satu-satunya 'menunggu konfirmasi' ada di baris bagian 9 tentang label ORG-01 secara umum, dan baris itu tidak berubah.",
+  "Butir 4 mutasi: 4.9 ditulis ulang. Dasarnya cocok dengan definisi 'Mutasi' = 'Perpindahan peran seseorang.' di specs/ISMS-SOP-02.json, dan kalimat itu merujuk ke kalimat batas di bagian 2, yang memang ada di sana. Baris SNX-ISMS-SOP-02 di bagian 11 diganti 'perpindahan peran'.",
+  "Butir 4 pasif: SLA penerusan berkas ditulis 'Pada hari HRGA Officer menerima tanggapan'. Bagian 9 baris JA-12 ditulis 'HR Lead ... meneruskan berkas usulan ke Direktur'.",
+  "Butir 4 penerima tanggapan di bagian 9: baris JA-12 dan JA-15 kini menyebut HR Lead sebagai penerima (USULAN).",
+  "Butir 4 'berkas usulan': definisi ditambahkan di bagian 3. Butir 4.4 dan simpul c3 diseragamkan menjadi 'berkas usulan'.",
+  "Butir 4 NOC, SOC, SD dan PM: baris definisi ditambahkan di bagian 3 dengan rujukan ke SNX-HR-ORG-01.",
+  "Butir 5: kalimat batas rotasi dan mutasi identik di specs HR-SOP-10, 11, 12, 13 (hash sama). Penetap keputusan di SOP-11 tetap Direktur Utama.",
+  "Butir 6 (B4): tidak berlaku untuk SOP-11. SOP Performance Appraisal dan SOP Employee Offboarding sudah ditulis 'Dalam peninjauan'.",
+  "Data v22: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director' sama persis dengan defaults v22."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Hitungan di render /tmp/claude-0/w9/render/HR-SOP-11.docx (semua bagian XML): 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, en-dash 0, 'JA-03' 0, 'JA-04' 0. Frasa proses penyusunan (draf ini, dokumen sumber, di sumber, penyusun, belum berdokumen) juga 0. 'menunggu konfirmasi' muncul 1 kali, di baris bagian 9 tentang label Atasan Langsung di ORG-01, bukan garis JA-03/JA-04. Di specs/HR-SOP-11.json dan HR-SOP-11_flow.png.dot, 'HR Manager' 0.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
