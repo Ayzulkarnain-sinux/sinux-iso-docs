@@ -1,0 +1,12 @@
+{"verdict": "PASS",
+ "scores": {"a": 4, "b": 4, "c": 5, "d": 4},
+ "blocking": [],
+ "nonblocking": [
+  "Paragraf badan (bukan sel tabel) masih rata kiri-kanan sehingga muncul celah kata lebar, misalnya 6.6 'Isi kolom Dokumen Dasar dengan nomor atau nama dokumen dasar.' dan 4.9 di PDF hal. 7. Usul: paragraf badan rata kiri.",
+  "Campuran 'approval' dan 'persetujuan' untuk hal yang sama: 'Form ini mencatat approval atas setiap transaksi pembayaran' vs 'bukti persetujuan'. Glossary memasukkan persetujuan ke Bahasa Indonesia; pilih satu di kalimat badan (nama 'Log Sheet Approval' dan 'blok Approval' tetap).",
+  "6.11 agak berat urutannya: 'Tulis di Tabel 3 lokasi berkas bukti persetujuan di dalam folder yang tercantum di tabel Record (rekaman).' Usul: 'Tulis lokasi berkas bukti persetujuan di Tabel 3. Berkas disimpan di folder yang tercantum di tabel Record (rekaman).'",
+  "Rujukan/penunjuk dihapus dengan aman: 'sesuai butir 4.5' dan 'sesuai butir 4.6' diganti faktanya; kalimat pemetaan jabatan di tabel Peran dihapus tetapi faktanya tetap di baris SNX-HR-ORG-01 (butir K-13). Pastikan penghapusan tercatat di notes sesuai §8.2.",
+  "Halaman tetap 11 dan ISI tetap mulai hal. 8; tabel Log Sheet: judul kolom berulang (Tabel 2 di hal. 9), baris tidak terbelah, lebar kolom wajar, tidak terpotong."
+ ],
+ "contoh_baik": ["6.2 Finance Staff menulis tanggal ia menerima pengajuan di kolom Tanggal Pengajuan. -> 6.2 Isi kolom Tanggal Pengajuan dengan tanggal pengajuan diterima."]
+}

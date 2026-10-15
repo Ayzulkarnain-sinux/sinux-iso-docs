@@ -1,0 +1,30 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 3,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "Kontrol Dokumen, Cara pakai butir 4 (B21)",
+   "masalah": "Kalimat terbaca sebagai perintah 'Isi berkas ini' karena butir 1 dan 2 juga diawali 'Isi'. Kata kerja Indonesia 'meninjau' diganti hibrida 'di-review' (STYLE §1.3).",
+   "kutipan": "Isi berkas ini di-review Finance Lead setiap tahun (USULAN).",
+   "usul": "Finance Lead meninjau isi berkas ini setiap tahun (USULAN)."
+  },
+  {
+   "lokasi": "Kontrol Dokumen, Cara pakai butir 1 (B18)",
+   "masalah": "Pengisi utama ditempel sebagai kalimat kedua yang janggal, dan label USULAN jadi tampak hanya menempel pada pengisi.",
+   "kutipan": "Isi sheet Worksheet dengan satu baris untuk setiap dokumen. Berkas ini diisi Finance Staff (USULAN).",
+   "usul": "Finance Staff mengisi berkas ini. Isi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN). Atau cukup andalkan baris peran Finance Staff di B23 dan hapus kalimat kedua."
+  }
+ ],
+ "nonblocking": [
+  "Kontrol Dokumen: ada kotak kosong bergaris (3 baris) di kolom A di atas Riwayat revisi, dan catatan peran Finance Lead/Finance Staff melayang tanpa label di kolom A; kesannya kurang rapi.",
+  "Sheet Worksheet dan Platform Access rapi: landscape, judul kolom terbaca, teks rata kiri, tidak terpotong."
+ ],
+ "contoh_baik": [
+  "Finance Staff menulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan, tanpa kata sandi, PIN, atau token (USULAN). -> Tulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan. Jangan tulis kata sandi, PIN, atau token (USULAN)."
+ ]
+}

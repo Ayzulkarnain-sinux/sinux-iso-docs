@@ -1,0 +1,12 @@
+{"verdict": "PASS",
+ "scores": {"a": 4, "b": 4, "c": 4, "d": 4},
+ "blocking": [],
+ "nonblocking": [
+  "Cara pakai tidak konsisten (STYLE §2.4): butir 1 masih menyebut pengisi utama 'Finance Staff mengisi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN).', sedangkan butir 2 dan 3 sudah kalimat perintah. Usul: 'Isi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN).'",
+  "Label (USULAN) masih menempel pada instruksi pengisian mekanis (satu baris per dokumen/platform) di butir 1 dan 2; STYLE §3.6 membolehkan label ini dihapus dan dicatat di notes.",
+  "PDF hal. 1 (Kontrol Dokumen): ada tiga sel kosong bergaris di bawah Cara pakai, di atas Riwayat revisi, yang tampak sisa tata letak; nomor butir di kolom A berjarak lebar dari teks di kolom B. Rapikan dengan menghapus border sel kosong atau mempersempit kolom A.",
+  "PDF hal. 1: baris 'Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, ...' dan 'Finance Staff: peran pelaksana ...' berada di luar tabel tanpa label, sehingga tampak seperti catatan lepas (bukan perubahan W10).",
+  "Sheet data (hal. 2-3): rata kiri, wrap jalan, landscape muat satu halaman, judul kolom terbaca; pengulangan judul tidak teruji karena tiap sheet hanya satu halaman."
+ ],
+ "contoh_baik": ["Finance Staff menulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan, tanpa kata sandi, PIN, atau token (USULAN). -> Tulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan. Jangan tulis kata sandi, PIN, atau token (USULAN)."]
+}

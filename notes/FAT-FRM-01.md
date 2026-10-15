@@ -205,3 +205,21 @@ GAP: butir 4.3 dan baris SNX-HR-JA-01 menaruh pemeriksaan dokumen dasar pada tug
 Open item: OI-2 diubah W9 (pemetaan peran mengikuti G-3 A6, berlabel USULAN). OI-10 tetap terbuka.
 
 Uji: render_sop.py rc 0; lint_doc.py generic "pass": true (warn 15 butir USULAN); validate.py "All validations PASSED!"; blankscan ok 11; w9diff.py: 7 baris lama, 9 baris baru, hanya perubahan di atas.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+- Tabel Peran, baris Finance Staff dan Finance Lead: "Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)." Kalimat penunjuk; pemetaannya sudah tertulis di tabel Definisi dan di baris SNX-HR-ORG-01 Dokumen Terkait (butir K-13).
+- Tabel Record, Retensi baris 1: "Angka berasal dari retensi dokumen penagihan dan perpajakan (SNX-FAT-SOP-01, SNX-FAT-SOP-05); perluasan ke log ini belum diputus." Catatan sumber angka; faktanya dipadatkan menjadi "mengikuti retensi dokumen penagihan dan perpajakan (USULAN)". Sumber angka 10 tahun: SNX-FAT-SOP-01 dan SNX-FAT-SOP-05; perluasan ke log ini belum diputus FAT.
+- Rujukan butir yang tidak perlu dibuka pengisi: "(butir 4.1)" di 6.1, "sesuai butir 4.5" di 6.10 dan "sesuai butir 4.6" di 6.12 (diganti faktanya), "(butir 4.8)" di 6.11, "(butir 6.11)" di tabel Record.
+### W10 selisih angka
+nihil
+### W10 catatan
+Pihak luar: "klien" (paling sering di dokumen ini); satu "pelanggan" di Ruang Lingkup diganti "klien".
+Cara Mengisi ditulis sebagai kalimat perintah untuk Finance Staff (pengisi utama di tabel Peran); 6.7 tetap diawali Finance Lead karena langkahnya milik peran lain.
+Tabel isian: kolom Alasan Ditolak atau Ditahan diperlebar, min_row_cm 0.8 di Tabel 1 sampai 3.
+
+### W10 koreksi worker (temuan nonblocking qa/FAT-FRM-01.w10.json)
+- Tabel Record, Retensi baris 1: sumber angka (SNX-FAT-SOP-01, SNX-FAT-SOP-05) dan "perluasan ke log ini belum diputus" dikembalikan; sempat hilang saat kalimat dipadatkan.
+- 6.11: "tabel Record (rekaman)" pada kemunculan pertama, menjembatani heading beku "Rekaman".

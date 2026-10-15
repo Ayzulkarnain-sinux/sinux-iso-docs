@@ -171,3 +171,19 @@ Sel B16 dan B23 tidak dibungkus teks; teks satu baris meluber ke kolom C sampai 
 Open item: 2 diubah W9 (definisi peran ditambahkan, pemetaan tetap menunggu owner). Rujukan silang diubah: nihil.
 
 R2: tidak ada perubahan spec atau sel di FAT-FRM-02. Kebersihan notes sudah terpenuhi: satu-satunya open item yang berubah di W9 (item 2) sudah bertanda "diubah W9" di barisnya; USULAN tidak ada yang ditutup atau diubah. Rujukan silang diubah: nihil.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil
+### W10 kalimat dihapus atau dipindah
+nihil
+### W10 selisih angka
+nihil
+### W10 catatan
+Cara pakai B18 sampai B21 ditulis ulang sebagai kalimat perintah; Finance Staff sebagai pengisi tetap disebut sekali di B18 dan Finance Lead sebagai peninjau tahunan di B21, label (USULAN) tetap.
+Sheet Worksheet dan Platform Access berbahasa English dari tim; header dan isinya tidak diubah. Definisi B16 dan B23 (teks G-3 A6) tidak diubah.
+col_widths ditambah (Worksheet D, Platform Access B dan C) karena tautan dan pemegang akses terpotong di PDF.
+
+### W10 putaran perbaikan 1 (worker, temuan qa/FAT-FRM-02.w10.r1.json)
+- B18: "Isi sheet Worksheet ... Berkas ini diisi Finance Staff (USULAN)." menjadi "Finance Staff mengisi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN)."
+- B21: "Isi berkas ini di-review Finance Lead setiap tahun (USULAN)." menjadi "Finance Lead meninjau isi berkas ini setiap tahun (USULAN)." (kata kerja Indonesia dipertahankan, STYLE §1.3).

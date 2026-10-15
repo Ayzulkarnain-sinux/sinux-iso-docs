@@ -1,0 +1,19 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Heading beku '8.1 Rekaman', sedangkan badan memakai 'tabel Record' tanpa padanan pada kemunculan pertama (butir 6.11; tabel Acuan ISO 7.5.3 dan A 5.33). Usul butir 6.11: '... di dalam folder yang tercantum di tabel Record (rekaman).'",
+  "Tabel Record baris 1: sumber angka retensi (SNX-FAT-SOP-01, SNX-FAT-SOP-05) dan 'perluasan ke log ini belum diputus' dipadatkan menjadi '(USULAN)'. Arti tetap, tetapi kode sumber hilang; pertimbangkan 'mengikuti retensi dokumen penagihan dan perpajakan (SNX-FAT-SOP-01, SNX-FAT-SOP-05) (USULAN)'.",
+  "6.11 bertumpuk preposisi: 'Tulis di Tabel 3 lokasi berkas ... di dalam folder yang tercantum di tabel Record.' Usul: 'Tulis lokasi berkas bukti persetujuan di Tabel 3. Berkas disimpan di folder yang tercantum di tabel Record (rekaman).'",
+  "PDF: paragraf badan rata kiri-kanan sehingga spasi melebar (mis. 6.6, 6.9); sel tabel sudah rata kiri, judul kolom berulang di halaman 9."
+ ],
+ "contoh_baik": [
+  "4.7 Finance Staff mencatat keputusan dan tidak memutuskan. Satu orang juga tidak memutuskan pengajuan yang ia ajukan sendiri. -> Finance Staff hanya mencatat keputusan dan tidak ikut memutuskan. Tidak ada orang yang memutuskan pengajuannya sendiri."
+ ]
+}

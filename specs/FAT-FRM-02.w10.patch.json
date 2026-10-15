@@ -1,0 +1,60 @@
+{
+ "freeze": {
+  "Worksheet": "A2",
+  "Platform Access": "A2"
+ },
+ "wrap_cols": {
+  "Worksheet": {
+   "rows": [
+    1,
+    5
+   ]
+  },
+  "Platform Access": {
+   "rows": [
+    1,
+    10
+   ]
+  },
+  "Kontrol Dokumen": {
+   "rows": [
+    1,
+    38
+   ]
+  }
+ },
+ "page_setup": {
+  "Worksheet": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Platform Access": {
+   "orientation": "landscape",
+   "fitToWidth": 1,
+   "fitToHeight": 0,
+   "print_title_rows": "1:1"
+  },
+  "Kontrol Dokumen": {
+   "orientation": "portrait",
+   "fitToWidth": 1,
+   "fitToHeight": 0
+  }
+ },
+ "set": {
+  "Kontrol Dokumen!B18": "Finance Staff mengisi sheet Worksheet dengan satu baris untuk setiap dokumen (USULAN).",
+  "Kontrol Dokumen!B19": "Isi sheet Platform Access dengan satu baris untuk setiap platform (USULAN).",
+  "Kontrol Dokumen!B20": "Tulis pemegang akses sebagai kelompok atau sebagai nama dan jabatan. Jangan tulis kata sandi, PIN, atau token (USULAN).",
+  "Kontrol Dokumen!B21": "Finance Lead meninjau isi berkas ini setiap tahun (USULAN)."
+ },
+ "col_widths": {
+  "Worksheet": {
+   "D": 95
+  },
+  "Platform Access": {
+   "B": 70,
+   "C": 45
+  }
+ }
+}

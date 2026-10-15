@@ -1,0 +1,31 @@
+{
+ "key": "FAT-FRM-02",
+ "mode": "xlsx",
+ "out": "out/03_FAT/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx",
+ "fails": [],
+ "xlsx_patch": "pass",
+ "scan": {
+  "words": 392,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 31,
+  "instr_role_start": 5,
+  "justified_cells": 0
+ },
+ "scan_bed1bb6": {
+  "words": 391,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 9,
+  "instr_items": 31,
+  "instr_role_start": 7,
+  "justified_cells": 0
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).pdf",
+ "pages": 3,
+ "pass": true
+}
