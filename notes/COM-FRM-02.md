@@ -214,3 +214,22 @@ Open item ditutup atau diubah:
 - OI-3 (pemilik dokumen Direktur vs VP Commercial) dan U-11 (COO sebagai pemilik dokumen dan peninjau tahunan): ditutup W9 (A7). COO tetap penetap struktur kolom.
 
 R2: tidak ada perubahan spec untuk dokumen ini; hanya baris open item dan USULAN yang ditandai ditutup atau diubah W9 (butir 3).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+- Peran, baris VP Commercial: "Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau form ini setiap tahun (USULAN). Pemilik form terisi (USULAN, bagian Record) dan menetapkan lokasi record-nya." Ditulis ulang satu kalimat dengan satu label di akhir butir (STYLE §3.5); ketiga usulan tetap tercakup.
+### W10 kalimat dihapus atau dipindah
+- Peran, kalimat pengantar, catatan pemetaan dipindah ke sini: "Service Delivery Manager dan Project Manager adalah jabatan usulan tanpa pemegang di sana (butir K-10)." Fakta yang sama tetap tertulis di Dokumen Terkait baris SNX-HR-ORG-01.
+- Peran, rujukan penunjuk dihapus: "(butir 4.1 sampai 4.5, 4.10, 4.12)" (Business Development), "(butir 4.6)" dan "(butir 4.10, 4.11)" (Service Delivery Manager), "butir 4.9;" (Project Manager), "(butir 4.15)" (COO, diganti fakta "struktur kolom Tabel 1 sampai Tabel 12").
+- Cara Mengisi, kalimat pengantar: rujukan "(butir 4.1)" dihapus.
+- Rekaman, baris form terisi: "Klasifikasi menurut butir 4.14." diganti fakta "Klasifikasi RESTRICTED (Internal)."; catatan penyusunan "Angka berasal dari record rencana proyek dan checklist G1 di SNX-OPS-SOP-01; perluasan ke form ini belum diputus." ditulis ulang menjadi dasar usulan di sel yang sama: retensi mengikuti record rencana proyek dan checklist G1 di SNX-OPS-SOP-01, perluasannya ke form ini masih usulan.
+- Acuan ISO: "Tabel Record" diganti "Tabel Rekaman" mengikuti heading.
+### W10 selisih angka
+nihil (subst_diff build kosong).
+### W10 catatan
+- Sebutan pihak luar: customer (sama dengan semua dokumen Commercial).
+- Calque diperbaiki 5, plus "sudah ia terima" di butir 4.13. "antar dokumen" ditulis "antardokumen".
+- Lebar tabel Peran, Cara Mengisi, pengecualian, dan Definisi disetel ke total 16 cm; min_row_cm 0,8 pada Tabel 3 sampai Tabel 10 dan 1,2 pada Tabel 12 agar cukup untuk tulisan tangan. Halaman tetap 16, ISI tetap mulai halaman 10.
+
+### W10 koreksi worker (temuan nonblocking qa/COM-FRM-02.w10.json)
+- Tabel Rekaman: kalimat pengganti rujukan "Klasifikasi menurut butir 4.14" membawa label butir asal: "Klasifikasi form terisi RESTRICTED (Internal) (USULAN)."

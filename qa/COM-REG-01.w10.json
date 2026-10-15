@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 5,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Heading beku '8.1. Rekaman' langsung diikuti judul kolom 'Record' tanpa padanan 'record (rekaman)' di mana pun di badan; usul tulis padanan pada kemunculan pertama atau biarkan judul kolom 'Record (rekaman)'.",
+  "Acuan ISO: judul klausul resmi '10.2 Ketidaksesuaian dan tindakan korektif' diubah menjadi '10.2 Ketidaksesuaian dan corrective action'; usul kembalikan judul resmi.",
+  "Tabel Rekaman: 'Klasifikasi menurut butir 4.12' -> 'Klasifikasi RESTRICTED (Internal) setelah berisi data customer.' Butir 4.12 berlabel (USULAN), sel ini kini tanpa label; usul tambah '(USULAN)'.",
+  "6.5 menyebut 'tabel Definisi dan Singkatan', padahal heading adalah bagian '3. Definisi dan Singkatan'; usul 'bagian Definisi dan Singkatan'.",
+  "4.8: 'nomor ticket-nya' terpecah di PDF ('ticket-' / 'nya'); usul 'nomor ticket tersebut' atau 'nomornya'.",
+  "PDF hal. 8-10: tabel rapi, rata kiri, judul kolom berulang di tiap halaman, lebar kolom wajar. Paragraf Cara Mengisi masih rata kiri-kanan."
+ ],
+ "contoh_baik": [
+  "6.3: 'Business Development menulis tanggal Penerima menerima feedback atau keluhan di kolom Tanggal Diterima.' -> 'Di kolom Tanggal Diterima, tulis tanggal feedback atau keluhan diterima Penerima.'"
+ ]
+}

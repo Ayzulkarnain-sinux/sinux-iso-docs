@@ -534,6 +534,38 @@ def revert(k):
     print(k, 'dikembalikan ke', BASE)
 
 
+def iso_cells(s):
+    """Sel judul klausul ISO: nilai iso_refs (mode sop) dan sel lain di baris tabel yang kolom pertamanya ISO 9001/27001."""
+    out = []
+    for k2, v in s.get('iso_refs', {}).items():
+        out.append((s['iso_refs'], k2))
+    for sec in s.get('sections', []):
+        for b in sec.get('blocks', []):
+            for r in b.get('table', {}).get('rows', []):
+                if r and isinstance(r[0], str) and r[0].strip().startswith('ISO'):
+                    out += [(r, i) for i in range(1, min(len(r), 2))]
+    return out
+
+
+def isotitles(keys):
+    """Judul klausul ISO adalah judul resmi: perubahan oleh skrip istilah saja dikembalikan ke teks bed1bb6."""
+    rep = {}
+    for k in keys:
+        if DOCS[k]['mode'] == 'xlsx':
+            continue
+        old = json.loads(run('git', 'show', f'{BASE}:specs/{k}.json')[1])
+        new = json.load(open(f'specs/{k}.json', encoding='utf-8'))
+        n = 0
+        for (oc, oi), (nc, ni) in zip(iso_cells(old), iso_cells(new)):
+            if oc[oi] != nc[ni] and map_text(oc[oi]) == nc[ni]:
+                nc[ni] = oc[oi]
+                n += 1
+        if n:
+            dump(new, f'specs/{k}.json')
+        rep[k] = n
+    print(json.dumps({k: v for k, v in rep.items() if v}))
+
+
 def qa_pass(k):
     q = f'qa/{k}.w10.json'
     if not os.path.exists(q):
@@ -595,6 +627,8 @@ if __name__ == '__main__':
             revert(k)
     elif cmd == 'status':
         status()
+    elif cmd == 'isotitles':
+        isotitles(args)
     elif cmd == 'stage':
         stage(args)
     elif cmd == 'selftest':

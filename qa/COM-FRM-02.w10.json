@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Tabel 11 di Tabel Isian masih memuat label 'Alasan penolakan, bila hasil TAHAN' (pola 'bila'); usul 'Alasan penolakan, jika hasil TAHAN'.",
+  "Tabel Rekaman, retensi: '(USULAN). Angka berasal dari ... ; perluasan ke formulir ini belum diputus.' -> '..., mengikuti retensi record rencana proyek dan checklist G1 di SNX-OPS-SOP-01 (USULAN).' Fakta bahwa perluasan belum diputus kini hanya tersirat dari label; arti masih setara.",
+  "Tabel Rekaman, klasifikasi: 'Klasifikasi menurut butir 4.14' -> 'Klasifikasi RESTRICTED (Internal).' Butir 4.14 berstatus (USULAN), sel ini kini menyatakannya tanpa label. Usul tambah '(USULAN)' atau 'sesuai butir 4.14'.",
+  "Peran VP Commercial: 'Sebagai pemilik form ini dan form terisi, meninjau form ini setiap tahun ...' kaku; usul 'Pemilik form ini dan form terisi. Meninjau form ini setiap tahun dan menetapkan lokasi record (rekaman) form terisi (USULAN).'",
+  "Acuan ISO: judul klausul resmi diubah, '8.2.3 Tinjauan persyaratan' -> 'Review persyaratan', 'Annex A 5.33 Perlindungan rekaman' -> 'Perlindungan record'; usul kembalikan judul resmi.",
+  "Tabel Cara Mengisi: semua butir dan syarat isian tetap ada (Tabel 1-12, Semua tabel). PDF hal. 9-13: tabel rata kiri, judul kolom berulang, kolom 'Tabel' sempit ('Tabel 3 dan Tabel 4' terbungkus), paragraf pembuka rata kiri-kanan."
+ ],
+ "contoh_baik": [
+  "4.12: 'Bila Service Delivery Manager menolak paket handover, Business Development melengkapi paket handover sesuai alasan penolakan ...' -> 'Jika paket handover ditolak Service Delivery Manager, Business Development melengkapinya sesuai alasan penolakan ..., lalu mencatat alasan dan tanggal pelengkapan di Tabel 11.'"
+ ]
+}

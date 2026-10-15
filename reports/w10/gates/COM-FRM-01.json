@@ -1,0 +1,50 @@
+{
+ "key": "COM-FRM-01",
+ "mode": "generic",
+ "out": "out/05_Commercial/SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2852,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 20,
+  "instr_items": 9,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2918,
+  "calque": [
+   "yang SINUX terima",
+   "yang Business Development catat",
+   "yang SINUX janjikan",
+   "yang customer sebut",
+   "yang Service Delivery Manager konfirmasi",
+   "yang customer minta",
+   "yang customer sebutkan"
+  ],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 21,
+  "instr_items": 9,
+  "instr_role_start": 3,
+  "justified_cells": 33,
+  "tables_ge3_no_header": 21
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).pdf",
+ "pages": 17,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Formulir",
+  "pages_bed1bb6": 17,
+  "pages_w10": 17,
+  "isi_page_bed1bb6": 10,
+  "isi_page_w10": 10
+ },
+ "pass": true
+}

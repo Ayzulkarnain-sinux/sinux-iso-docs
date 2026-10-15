@@ -224,3 +224,20 @@ Open item ditutup atau diubah:
 - Open item 1 (Process Owner Direktur vs VP Commercial): ditutup W9 (A7).
 
 R2 butir 3: baris USULAN dan Open items yang ditutup atau diubah W9 diberi keterangan "ditutup W9" atau "diubah W9" di barisnya sendiri.
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+- Peran, baris VP Commercial: "Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik form terisi (USULAN)." Ditulis ulang "Pemilik form ini dan form terisi (USULAN)."; dua label digabung menjadi satu label di akhir butir (STYLE §3.5). Isi usulan tidak berubah.
+### W10 kalimat dihapus atau dipindah
+- Peran, kalimat penunjuk dihapus: "(Ketentuan butir 1, 3 sampai 6, dan 8 sampai 10)", "(Ketentuan butir 3 dan 4)" (Manager of Product Tech dan Service Delivery Manager), "(Ketentuan butir 4 dan 5)", "(Ketentuan butir 7)". Tugasnya sudah tertulis di sel yang sama.
+- Rekaman, baris Form terisi per order: rujukan "(Ketentuan butir 10)" dihapus (penunjuk).
+- Peran, baris Business Development: "Dipetakan ke Business Development (JA-07) di SNX-HR-ORG-01." ditulis ulang "Jabatan JA-07 di SNX-HR-ORG-01." (catatan pemetaan dijadikan fakta jabatan, sama dengan baris lain).
+- Peran, baris Service Delivery Manager, catatan pemetaan dipindah ke sini: "Jabatan usulan tanpa pemegang di SNX-HR-ORG-01 (K-10)." Fakta yang sama tetap tertulis di Dokumen Terkait baris SNX-HR-ORG-01.
+- "Kolom Status berisi satu dari tiga nilai pada bagian Istilah" dan "Kolom Status memakai nilai pada bagian Istilah" diganti faktanya: Sesuai, Perlu Tindak Lanjut, atau Tidak Berlaku.
+### W10 selisih angka
+nihil (subst_diff build kosong).
+### W10 catatan
+- Sebutan pihak luar: customer (dipakai di semua dokumen Commercial; "pelanggan" hanya tersisa di judul klausul ISO 9001 8.2.1).
+- Padanan heading pada kemunculan pertama: "Form (formulir)" di Tujuan, "record (rekaman)" di Hasil yang dijaga. Acuan ISO "Bagian Record" diganti "Tabel Rekaman" mengikuti heading.
+- Lebar kolom daftar periksa C1 sampai C4 menjadi 1,4/2,9/6,4/2,0/3,3 cm agar kode aspek tidak terpotong dan kolom Catatan lebih lebar; min_row_cm 1,0 pada tabel Temuan dan Tindak Lanjut serta Catatan Review dan Persetujuan.
+- Calque diperbaiki 8 (termasuk "yang COO setujui" yang tidak terdeteksi pemindai).

@@ -1,0 +1,48 @@
+{
+ "key": "COM-FRM-02",
+ "mode": "generic",
+ "out": "out/05_Commercial/SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2667,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 14,
+  "instr_items": 75,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2740,
+  "calque": [
+   "yang SINUX serahkan",
+   "yang Commercial serahkan",
+   "yang customer tetapkan",
+   "yang Commercial ketahui",
+   "yang Service Delivery Manager sebut"
+  ],
+  "lewat": 2,
+  "pointer": 0,
+  "usulan": 14,
+  "instr_items": 75,
+  "instr_role_start": 1,
+  "justified_cells": 40,
+  "tables_ge3_no_header": 22
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).pdf",
+ "pages": 16,
+ "blank": [],
+ "form": {
+  "isi_heading": "Tabel Isian",
+  "pages_bed1bb6": 16,
+  "pages_w10": 16,
+  "isi_page_bed1bb6": 10,
+  "isi_page_w10": 10
+ },
+ "pass": true
+}

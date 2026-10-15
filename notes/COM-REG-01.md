@@ -200,3 +200,24 @@ Open item ditutup atau diubah:
 - OI-4 (pemilik register COO vs VP Commercial) dan U-10, U-11 (pemilik COO): ditutup W9 (A7).
 
 R2: tidak ada perubahan spec untuk dokumen ini; hanya baris open item dan USULAN yang ditandai ditutup atau diubah W9 (butir 3).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+nihil (label "(USULAN)" di butir 4.8, 4.10, Peran, dan Isi Register dipindah ke akhir butir; jumlah tetap 19).
+### W10 kalimat dihapus atau dipindah
+- Definisi, Keluhan kritis: "Penilaiannya diatur di butir 4.10." dihapus (kalimat penunjuk).
+- Peran, rujukan penunjuk dihapus: "(butir 4.2)", "(butir 4.2 sampai 4.6, 4.8 sampai 4.11, dan 4.13)", "(butir 4.3, 4.7, 4.9 sampai 4.11)", "(butir 4.4)", "(butir 4.11)". Tugasnya tetap tertulis lengkap di sel.
+- Cara Mengisi, rujukan penunjuk dihapus: "(butir 4.2)" di 6.1, "(butir 4.1)" di 6.2, "(butir 4.3)" di 6.8, "(butir 4.8)" di 6.9, "(butir 4.4)" di 6.10, "(butir 4.7)" di 6.11, "(butir 4.5)" di 6.13, "(butir 4.9 sampai 4.11)" di 6.16.
+- Isi Register: "Business Development mengisi sel data yang kosong menurut bagian Cara Mengisi." dihapus (penunjuk).
+- Butir 4.7: "Status Selesai berlaku hanya bila arti Selesai pada bagian Definisi terpenuhi" ditulis ulang merujuk tabel Status Penyelesaian (nama heading yang ada di dokumen).
+- Butir 4.13: "di lokasi yang tertulis pada tabel Record" diganti faktanya: folder Google Drive departemen Commercial.
+- Rekaman: "Klasifikasi menurut butir 4.12." dan "Zammad atau GLPI menurut butir 4.8." diganti faktanya. Acuan ISO 5.12: "menurut butir 4.12" dihapus.
+### W10 selisih angka
+nihil (subst_diff build kosong).
+### W10 catatan
+- Sebutan pihak luar: customer (sama dengan semua dokumen Commercial).
+- Cara Mengisi ditulis sebagai kalimat perintah untuk Business Development (pengisi utama di Peran); butir 6.1 tetap menyebut Penerima karena dikerjakan peran lain.
+- Tabel 1 sampai Tabel 4 dilebarkan ke 16 cm (kolom isi paling lebar, Status 2,2 cm) dan diberi min_row_cm 0,8. Halaman tetap 12, ISI mulai halaman 8 (sebelumnya 9).
+
+### W10 koreksi worker (temuan nonblocking qa/COM-REG-01.w10.json)
+- Tabel Rekaman dan tabel Acuan ISO (Annex A 5.12): fakta pengganti rujukan butir 4.12 membawa label butir asal (USULAN).

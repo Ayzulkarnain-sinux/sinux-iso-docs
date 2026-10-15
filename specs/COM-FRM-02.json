@@ -18,6 +18,12 @@
    "prepared": "Laras Rasmawati / VP Commercial",
    "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
    "approved": "Samuel Kristanto Utomo / President Director"
+  },
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
   }
  },
  "sections": [
@@ -25,10 +31,10 @@
    "h": "Tujuan",
    "blocks": [
     {
-     "p": "Formulir ini memuat isi handover proyek dari Commercial ke tim pelaksana: scope final, quotation, PO dan kontrak, deliverable, jadwal, PIC, dependency, asumsi, risiko, dan komitmen kepada customer yang harus dipenuhi tim pelaksana."
+     "p": "Form ini memuat isi handover proyek dari Commercial ke tim pelaksana: scope final, quotation, PO dan kontrak, deliverable, jadwal, PIC, dependency, asumsi, risiko, dan komitmen kepada customer yang harus dipenuhi tim pelaksana."
     },
     {
-     "p": "Dengan satu catatan ini, tim pelaksana mengetahui apa yang sudah disepakati dan dijanjikan kepada customer sebelum pekerjaan dimulai, dan tiap komitmen tercatat bersama sumbernya."
+     "p": "Dengan form ini, tim pelaksana tahu apa yang sudah disepakati dan dijanjikan kepada customer sebelum pekerjaan dimulai, dan setiap komitmen tercatat bersama sumbernya."
     }
    ]
   },
@@ -36,10 +42,10 @@
    "h": "Ruang Lingkup",
    "blocks": [
     {
-     "p": "Formulir ini mencakup setiap handover dari Commercial ke tim pelaksana sesudah closing (SNX-COM-SOP-01 butir 4.16). Satu formulir mencatat satu handover."
+     "p": "Form ini mencakup setiap handover dari Commercial ke tim pelaksana setelah closing (SNX-COM-SOP-01 butir 4.16), satu form untuk satu handover."
     },
     {
-     "p": "Business Development tidak memakai formulir ini untuk butir berikut (USULAN):"
+     "p": "Form ini tidak dipakai Business Development untuk butir berikut (USULAN):"
     },
     {
      "table": {
@@ -50,32 +56,32 @@
       "rows": [
        [
         "Kebutuhan customer, kelayakan teknis, dan hasil review sebelum order diterima",
-        "Dicatat di SNX-COM-FRM-01. Formulir ini dipakai sesudah closing."
+        "Dicatat di SNX-COM-FRM-01. Form ini dipakai setelah closing."
        ],
        [
         "Harga, diskon, margin, dan persetujuannya",
-        "Ada di SNX-COM-SOP-02. Formulir ini tidak memuat nilai harga."
+        "Diatur di SNX-COM-SOP-02. Form ini tidak memuat nilai harga."
        ],
        [
         "Pemeriksaan paket handover dan keputusan gate G1",
-        "Ada di SNX-OPS-SOP-01 dan sheet Checklist G1 di SNX-OPS-FRM-01. Formulir ini hanya mencatat hasilnya di Tabel 11."
+        "Diatur di SNX-OPS-SOP-01 dan sheet Checklist G1 di SNX-OPS-FRM-01. Form ini hanya mencatat hasilnya di Tabel 11."
        ],
        [
         "Project charter, WBS, dan register risiko proyek",
-        "Project Manager menyusunnya di SNX-OPS-FRM-01 dan SNX-OPS-FRM-02 sesudah gate G1."
+        "Project Manager menyusunnya di SNX-OPS-FRM-01 dan SNX-OPS-FRM-02 setelah gate G1."
        ],
        [
         "BAST, checklist G3, dan closure report",
-        "Ada di SNX-OPS-FRM-06. Formulir ini mencatat handover sebelum implementasi, bukan penyerahan hasil kerja."
+        "Dicatat di SNX-OPS-FRM-06. Form ini mencatat handover sebelum implementasi, bukan penyerahan hasil kerja."
        ],
        [
         "Penagihan dan invoice",
-        "Ada di SNX-FAT-SOP-01. Formulir ini hanya mencatat PIC billing customer di Tabel 6."
+        "Diatur di SNX-FAT-SOP-01. Form ini hanya mencatat PIC billing customer di Tabel 6."
        ]
       ],
       "widths_cm": [
-       6.2,
-       9.3
+       5.6,
+       10.4
       ]
      }
     }
@@ -93,7 +99,7 @@
       "rows": [
        [
         "Asumsi",
-        "Keadaan yang dianggap benar saat scope dan jadwal ditetapkan, tetapi belum dibuktikan. Proposal SINUX memuatnya di bagian Assumptions."
+        "Keadaan yang dianggap benar saat scope dan jadwal ditetapkan, tetapi belum dibuktikan. Di proposal SINUX disebut Assumptions."
        ],
        [
         "Closing",
@@ -109,11 +115,11 @@
        ],
        [
         "Deliverable",
-        "Hasil kerja yang SINUX serahkan kepada customer menurut quotation, PO, atau kontrak. Proposal SINUX memuatnya di bagian Deliverables."
+        "Hasil kerja yang diserahkan SINUX kepada customer sesuai quotation, PO, atau kontrak. Di proposal SINUX disebut Deliverables."
        ],
        [
         "Direktur (COO)",
-        "Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; sesudah penyebutan ini formulir ini memakai COO."
+        "Jabatan Direktur (JA-02) di SNX-HR-ORG-01, disebut COO di dokumen Operation dan di form ini."
        ],
        [
         "Dokumen closing",
@@ -141,7 +147,7 @@
        ],
        [
         "Paket handover",
-        "Kumpulan catatan dan berkas yang Commercial serahkan ke tim pelaksana pada handover. Dokumen Operation menyebutnya paket G1."
+        "Kumpulan catatan dan berkas yang diserahkan Commercial ke tim pelaksana pada handover. Dokumen Operation menyebutnya paket G1."
        ],
        [
         "PIC",
@@ -153,11 +159,11 @@
        ],
        [
         "Quotation",
-        "Penawaran harga SINUX kepada customer. Pengendaliannya ada di SNX-COM-SOP-02."
+        "Penawaran harga SINUX kepada customer, dikendalikan sesuai SNX-COM-SOP-02."
        ],
        [
         "Risiko",
-        "Kejadian yang dapat mengganggu scope, jadwal, atau komitmen kepada customer. Paket handover menyebutnya Risks (SNX-COM-SOP-01 butir 4.16)."
+        "Kejadian yang dapat mengganggu scope, jadwal, atau komitmen kepada customer. Di paket handover disebut Risks (SNX-COM-SOP-01 butir 4.16)."
        ],
        [
         "Scope final",
@@ -165,16 +171,16 @@
        ],
        [
         "Tim pelaksana",
-        "Service Delivery Manager, Project Manager, dan peran Divisi Operation lain yang menjalankan proyek customer sesudah handover (USULAN)."
+        "Service Delivery Manager, Project Manager, dan peran Divisi Operation lain yang menjalankan proyek customer setelah handover (USULAN)."
        ],
        [
         "(USULAN)",
-        "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+        "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
        ]
       ],
       "widths_cm": [
        3.6,
-       11.9
+       12.4
       ]
      }
     }
@@ -184,49 +190,49 @@
    "h": "Dasar dan Ketentuan",
    "blocks": [
     {
-     "p": "4.1 Business Development mengisi Tabel 1 sampai Tabel 10 sesudah closing dan sebelum handover meeting, lalu mengisi Tabel 11 sesudah handover meeting. Dokumen closing sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16)."
+     "p": "4.1 Business Development mengisi Tabel 1 sampai Tabel 10 setelah closing dan sebelum handover meeting, lalu Tabel 11 setelah handover meeting. Dokumen closing harus sudah lengkap sebelum handover meeting (SNX-COM-SOP-01 butir 4.16)."
     },
     {
-     "p": "4.2 Isi minimal paket handover menurut SNX-COM-SOP-01 butir 4.16 adalah Customer Background, Scope, Timeline, Risks, Commitment, dan Contact Person. Dalam formulir ini keenamnya ada di Tabel 1 (Customer Background), Tabel 3 dan Tabel 4 (Scope), Tabel 5 (Timeline), Tabel 6 (Contact Person), Tabel 9 (Risks), dan Tabel 10 (Commitment). Tabel 2, Tabel 7, dan Tabel 8 menambahkan dokumen dasar, dependency, dan asumsi."
+     "p": "4.2 Isi minimal paket handover menurut SNX-COM-SOP-01 butir 4.16 adalah Customer Background (Tabel 1), Scope (Tabel 3 dan Tabel 4), Timeline (Tabel 5), Risks (Tabel 9), Commitment (Tabel 10), dan Contact Person (Tabel 6). Tabel 2, Tabel 7, dan Tabel 8 menambahkan dokumen dasar, dependency, dan asumsi."
     },
     {
      "p": "4.3 Business Development menyalin isi Tabel 3, Tabel 4, Tabel 5, dan Tabel 8 dari bagian Scope of Work dan Deliverables, Exclusions, Timeline, dan Assumptions di proposal (SNX-COM-SOP-01 butir 4.8), lalu mencocokkannya dengan PO dan kontrak."
     },
     {
-     "p": "4.4 Bila ada SNX-COM-FRM-01 yang terisi untuk order handover ini, Business Development memakai hasil kelompok Kesesuaian Scope dan Delivery Commitment di formulir itu sebagai bahan Tabel 4, 5, 7, 8, dan 10."
+     "p": "4.4 Jika ada SNX-COM-FRM-01 terisi untuk order ini, Business Development memakai hasil kelompok Kesesuaian Scope dan Delivery Commitment di form itu sebagai bahan Tabel 4, 5, 7, 8, dan 10."
     },
     {
-     "p": "4.5 Bila quotation, PO, dan kontrak berbeda tentang scope, jadwal, atau komitmen, Business Development mencatat perbedaan itu di Tabel 9 dan membawanya ke handover meeting."
+     "p": "4.5 Jika quotation, PO, dan kontrak berbeda tentang scope, jadwal, atau komitmen, Business Development mencatat perbedaannya di Tabel 9 dan membawanya ke handover meeting."
     },
     {
      "p": "4.6 Service Delivery Manager mengonfirmasi tiap tanggal di Tabel 5 sebelum Business Development menjanjikannya kepada customer (SNX-COM-SOP-01 butir 4.11). Business Development mencatat tanggal konfirmasinya."
     },
     {
-     "p": "4.7 Tabel 10 memuat semua komitmen kepada customer, termasuk SLA dan target layanan yang dijanjikan serta janji lisan yang belum ada di kontrak (sheet Checklist G1 di SNX-OPS-FRM-01). Janji kepada customer yang tidak tercatat di gate G1 tidak mengikat tim pelaksana sampai VP Commercial dan COO menyetujuinya (POL-OPS-001 bagian 8 ketentuan 3, yang menulis Commercial dan COO)."
+     "p": "4.7 Tabel 10 memuat semua komitmen kepada customer, termasuk SLA, target layanan yang dijanjikan, dan janji lisan yang belum ada di kontrak (sheet Checklist G1 di SNX-OPS-FRM-01). Janji yang tidak tercatat di gate G1 tidak mengikat tim pelaksana sampai disetujui VP Commercial dan COO (POL-OPS-001 bagian 8 ketentuan 3, yang menulis Commercial dan COO)."
     },
     {
-     "p": "4.8 Business Development tidak menulis kata sandi, PIN, token, atau kunci akses customer di formulir ini. Business Development menulis dependency akses sebagai kebutuhan, tanpa kredensialnya (POL-OPS-001 kebijakan P-03)."
+     "p": "4.8 Business Development tidak menulis kata sandi, PIN, token, atau kunci akses customer di form ini. Dependency akses ditulis sebagai kebutuhan, tanpa kredensialnya (POL-OPS-001 kebijakan P-03)."
     },
     {
      "p": "4.9 Project Manager memakai Tabel 9 sebagai bahan risiko awal di SNX-OPS-FRM-02."
     },
     {
-     "p": "4.10 Business Development dan Service Delivery Manager membahas Tabel 1 sampai Tabel 10 di handover meeting. Service Delivery Manager menyebut jabatan tim pelaksana yang memenuhi tiap komitmen di Tabel 10. Business Development mencatat hasil pembahasan di Tabel 11."
+     "p": "4.10 Business Development dan Service Delivery Manager membahas Tabel 1 sampai Tabel 10 di handover meeting. Service Delivery Manager menyebut jabatan tim pelaksana yang memenuhi tiap komitmen di Tabel 10, dan Business Development mencatat hasil pembahasan di Tabel 11."
     },
     {
-     "p": "4.11 VP Commercial menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (SNX-COM-SOP-01 butir 4.19, berstatus USULAN di sana). Service Delivery Manager menerima atau menolak paket handover dengan checklist G1 dan mencatat keputusan di SNX-OPS-FRM-01 (SNX-OPS-SOP-01 butir 4.1)."
+     "p": "4.11 VP Commercial menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (SNX-COM-SOP-01 butir 4.19, berstatus USULAN di sana). Service Delivery Manager menerima atau menolak paket handover dengan checklist G1 dan mencatat keputusannya di SNX-OPS-FRM-01 (SNX-OPS-SOP-01 butir 4.1)."
     },
     {
-     "p": "4.12 Bila Service Delivery Manager menolak paket handover, Business Development melengkapi paket handover sesuai alasan penolakan (SNX-COM-SOP-01 butir 4.19) dan mencatat alasan serta tanggal pelengkapan di Tabel 11."
+     "p": "4.12 Jika paket handover ditolak Service Delivery Manager, Business Development melengkapinya sesuai alasan penolakan (SNX-COM-SOP-01 butir 4.19), lalu mencatat alasan dan tanggal pelengkapan di Tabel 11."
     },
     {
-     "p": "4.13 Tanda tangan Service Delivery Manager di Tabel 12 menunjukkan paket handover sudah ia terima untuk diperiksa. Keputusan gate G1 tetap ada di SNX-OPS-FRM-01."
+     "p": "4.13 Tanda tangan Service Delivery Manager di Tabel 12 menunjukkan paket handover sudah diterima untuk diperiksa. Keputusan gate G1 tetap dicatat di SNX-OPS-FRM-01."
     },
     {
-     "p": "4.14 Formulir kosong berklasifikasi INTERNAL. Formulir terisi memuat informasi customer dan kontrak, sehingga berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, mengikuti SNX-COM-SOP-01 butir 4.13)."
+     "p": "4.14 Form kosong berklasifikasi INTERNAL. Form terisi memuat informasi customer dan kontrak, sehingga berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01 (USULAN, mengikuti SNX-COM-SOP-01 butir 4.13)."
     },
     {
-     "p": "4.15 Struktur kolom Tabel 1 sampai Tabel 12 dan butir 4.1 sampai 4.5, 4.9, 4.10, dan 4.13 berstatus (USULAN) sampai COO menetapkannya."
+     "p": "4.15 Struktur kolom Tabel 1 sampai Tabel 12 serta butir 4.1 sampai 4.5, 4.9, 4.10, dan 4.13 masih menunggu penetapan COO (USULAN)."
     }
    ]
   },
@@ -234,51 +240,51 @@
    "h": "Peran",
    "blocks": [
     {
-     "p": "Nama peran mengikuti SNX-HR-ORG-01. Service Delivery Manager dan Project Manager adalah jabatan usulan tanpa pemegang di sana (butir K-10)."
+     "p": "Nama peran mengikuti SNX-HR-ORG-01."
     },
     {
      "table": {
       "header": [
        "Peran",
-       "Tugas pada formulir ini",
-       "Wewenang pada formulir ini"
+       "Tugas pada form ini",
+       "Wewenang pada form ini"
       ],
       "rows": [
        [
         "Business Development",
-        "Mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (hasil handover meeting dan penolakan paket handover), serta melengkapi paket handover yang ditolak (butir 4.1 sampai 4.5, 4.10, 4.12). Memegang tugas Sales dan Sales Executive (SNX-COM-SOP-01, USULAN).",
-        "Mencatat dan tidak memutuskan. Tidak menjanjikan jadwal sebelum Service Delivery Manager mengonfirmasinya (butir 4.6)."
+        "Mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 setelahnya, termasuk hasil handover meeting dan penolakan paket handover. Melengkapi paket handover yang ditolak. Memegang tugas Sales dan Sales Executive di SNX-COM-SOP-01 (USULAN).",
+        "Mencatat dan tidak memutuskan. Tidak menjanjikan jadwal sebelum dikonfirmasi Service Delivery Manager (butir 4.6)."
        ],
        [
         "VP Commercial",
-        "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau formulir ini setiap tahun (USULAN). Pemilik formulir terisi (USULAN, bagian Rekaman) dan menetapkan lokasi rekamannya.",
-        "Bersama COO menyetujui komitmen yang belum tercatat (butir 4.7). Peran Commercial di sana dipetakan ke VP Commercial (USULAN)."
+        "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Sebagai pemilik form ini dan form terisi, meninjau form ini setiap tahun dan menetapkan lokasi record (rekaman) form terisi (USULAN).",
+        "Bersama COO menyetujui komitmen yang belum tercatat (butir 4.7); peran Commercial di butir itu dipetakan ke VP Commercial (USULAN)."
        ],
        [
         "Service Delivery Manager",
-        "Mengonfirmasi tanggal di Tabel 5 (butir 4.6), menyebut jabatan pemenuh komitmen di handover meeting, dan memeriksa paket handover (butir 4.10, 4.11).",
+        "Mengonfirmasi tanggal di Tabel 5, menyebut jabatan pemenuh komitmen di handover meeting, dan memeriksa paket handover.",
         "Menerima atau menolak paket handover di gate G1 (SNX-OPS-SOP-01 butir 4.1)."
        ],
        [
         "Project Manager",
-        "Memeriksa paket handover dengan checklist G1 dan memakai Tabel 9 sebagai bahan risiko awal (butir 4.9; SNX-OPS-SOP-01 tahap Inisiasi).",
+        "Memeriksa paket handover dengan checklist G1 dan memakai Tabel 9 sebagai bahan risiko awal (SNX-OPS-SOP-01 tahap Inisiasi).",
         "Tidak memutuskan paket diterima atau ditolak."
        ],
        [
         "COO",
-        "Menetapkan struktur kolom (butir 4.15).",
+        "Menetapkan struktur kolom Tabel 1 sampai Tabel 12.",
         "Bersama VP Commercial menyetujui komitmen yang belum tercatat (butir 4.7)."
        ]
       ],
       "widths_cm": [
-       3.2,
-       7.4,
-       4.9
+       3.0,
+       8.2,
+       4.8
       ]
      }
     },
     {
-     "p": "Direktur Utama menyetujui formulir ini lewat blok Approval pada halaman depan."
+     "p": "Direktur Utama menyetujui form ini melalui blok Approval pada halaman depan."
     }
    ]
   },
@@ -286,7 +292,7 @@
    "h": "Cara Mengisi",
    "blocks": [
     {
-     "p": "Business Development mengisi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 sesudahnya (butir 4.1), menurut petunjuk berikut. Pemegang peran pada tiap baris Tabel 12 mengisi baris itu."
+     "p": "Isi Tabel 1 sampai Tabel 10 sebelum handover meeting dan Tabel 11 setelahnya sesuai petunjuk berikut. Tiap baris Tabel 12 diisi pemegang peran di baris itu."
     },
     {
      "table": {
@@ -314,7 +320,7 @@
        [
         "Tabel 2",
         "Status tanda tangan, Lokasi arsip",
-        "Tulis Sudah atau Belum sesuai kondisi berkas, dan folder atau tautan tempat berkas bertanda tangan disimpan."
+        "Tulis Sudah atau Belum sesuai kondisi berkas, dan folder atau link tempat berkas bertanda tangan disimpan."
        ],
        [
         "Tabel 3",
@@ -334,7 +340,7 @@
        [
         "Tabel 5",
         "Milestone, Tanggal target, Batasan customer, Dasar jadwal",
-        "Tulis tiap milestone dan tanggalnya, termasuk target live, window maintenance dan blackout yang customer tetapkan, dan dokumen yang memuat jadwal itu."
+        "Tulis tiap milestone dan tanggalnya, termasuk target live, window maintenance dan blackout yang ditetapkan customer, serta dokumen yang memuat jadwal itu."
        ],
        [
         "Tabel 5",
@@ -364,7 +370,7 @@
        [
         "Tabel 9",
         "Risiko, Dampak bagi proyek, Penanganan yang sudah dibahas",
-        "Tulis tiap risiko yang Commercial ketahui, dampaknya, dan penanganan yang sudah dibahas dengan customer. Tulis juga perbedaan antar dokumen (butir 4.5)."
+        "Tulis tiap risiko yang diketahui Commercial, dampaknya, dan penanganan yang sudah dibahas dengan customer. Tulis juga perbedaan antardokumen (butir 4.5)."
        ],
        [
         "Tabel 10",
@@ -379,7 +385,7 @@
        [
         "Tabel 10",
         "Dipenuhi oleh (jabatan)",
-        "Tulis jabatan yang Service Delivery Manager sebut di handover meeting."
+        "Tulis jabatan yang disebut Service Delivery Manager di handover meeting."
        ],
        [
         "Tabel 11",
@@ -399,7 +405,7 @@
        [
         "Tabel 11",
         "Baris 8 dan 9",
-        "Tulis alasan penolakan dan tanggal paket handover dilengkapi ulang, hanya bila hasil gate G1 adalah TAHAN."
+        "Tulis alasan penolakan dan tanggal paket handover dilengkapi ulang, hanya jika hasil gate G1 TAHAN."
        ],
        [
         "Tabel 12",
@@ -414,13 +420,13 @@
        [
         "Semua tabel",
         "Baris",
-        "Tambah baris bila isian lebih banyak daripada baris yang tersedia."
+        "Tambah baris jika isian lebih banyak daripada baris yang tersedia."
        ]
       ],
       "widths_cm": [
-       2.6,
-       4.6,
-       8.3
+       2.2,
+       4.3,
+       9.5
       ]
      }
     }
@@ -584,7 +590,8 @@
        4.2,
        6.4,
        4.0
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -628,7 +635,8 @@
        0.9,
        9.0,
        5.6
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -693,7 +701,8 @@
        3.6,
        2.5,
        2.8
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -762,7 +771,8 @@
        4.6,
        4.2,
        5.8
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -813,7 +823,8 @@
        6.0,
        4.6,
        4.0
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -857,7 +868,8 @@
        0.9,
        9.0,
        5.6
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -908,7 +920,8 @@
        5.0,
        4.8,
        4.8
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -966,7 +979,8 @@
        3.0,
        3.2,
        3.4
-      ]
+      ],
+      "min_row_cm": 0.8
      }
     },
     {
@@ -1074,7 +1088,8 @@
        3.6,
        2.6,
        3.2
-      ]
+      ],
+      "min_row_cm": 1.2
      }
     }
    ]
@@ -1088,25 +1103,25 @@
     {
      "table": {
       "header": [
-       "Rekaman",
+       "Record",
        "Lokasi dan pemilik",
        "Retensi"
       ],
       "rows": [
        [
-        "Formulir ini setelah diisi: Tabel 1 sampai Tabel 12",
-        "Folder Google Drive Departemen Commercial (USULAN). Pencatat: Business Development. Pemilik formulir terisi: VP Commercial (USULAN). Klasifikasi menurut butir 4.14.",
-        "Durasi kontrak + 3 tahun (USULAN). Angka berasal dari rekaman rencana proyek dan checklist G1 di SNX-OPS-SOP-01; perluasan ke formulir ini belum diputus."
+        "Form ini setelah diisi: Tabel 1 sampai Tabel 12",
+        "Folder Google Drive Departemen Commercial (USULAN). Pencatat: Business Development. Pemilik form terisi: VP Commercial (USULAN). Klasifikasi form terisi RESTRICTED (Internal) (USULAN).",
+        "Durasi kontrak + 3 tahun, mengikuti retensi record rencana proyek dan checklist G1 di SNX-OPS-SOP-01 (USULAN)."
        ],
        [
         "PO dan kontrak yang ditandatangani, yang ditunjuk Tabel 2",
-        "Lokasi dan pemilik belum ditetapkan (tabel rekaman SNX-COM-SOP-01).",
+        "Lokasi dan pemilik belum ditetapkan (tabel record SNX-COM-SOP-01).",
         "Belum ditetapkan."
        ],
        [
         "Keputusan gate G1",
-        "SNX-OPS-FRM-01. Drive proyek; pemilik Project Manager (tabel rekaman SNX-OPS-SOP-01).",
-        "Durasi kontrak + 3 tahun (tabel rekaman SNX-OPS-SOP-01)."
+        "SNX-OPS-FRM-01 di Drive proyek; pemilik Project Manager (tabel record SNX-OPS-SOP-01).",
+        "Durasi kontrak + 3 tahun (tabel record SNX-OPS-SOP-01)."
        ]
       ],
       "widths_cm": [
@@ -1127,23 +1142,23 @@
       "header": [
        "Standar",
        "Klausul",
-       "Hubungan dengan formulir ini"
+       "Hubungan dengan form ini"
       ],
       "rows": [
        [
         "ISO 9001:2015",
         "7.4 Komunikasi",
-        "Tabel 6 memuat PIC dan kanal komunikasi resmi. Business Development menyampaikan isi formulir ke tim pelaksana di handover meeting (butir 4.10)."
+        "Tabel 6 memuat PIC dan kanal komunikasi resmi. Business Development menyampaikan isi form ke tim pelaksana di handover meeting (butir 4.10)."
        ],
        [
         "ISO 9001:2015",
         "7.5.3 Pengendalian informasi terdokumentasi",
-        "Tabel Rekaman memuat lokasi, pemilik, retensi, dan klasifikasi formulir terisi."
+        "Tabel Rekaman memuat lokasi, pemilik, retensi, dan klasifikasi form terisi."
        ],
        [
         "ISO 9001:2015",
         "8.2.3 Tinjauan persyaratan untuk produk dan jasa",
-        "Tabel 2 sampai Tabel 4 dan Tabel 10 memuat persyaratan customer yang berlaku saat closing, dan Tabel 9 memuat perbedaan antar dokumen (butir 4.5)."
+        "Tabel 2 sampai Tabel 4 dan Tabel 10 memuat persyaratan customer yang berlaku saat closing, dan Tabel 9 memuat perbedaan antardokumen (butir 4.5)."
        ],
        [
         "ISO 9001:2015",
@@ -1153,12 +1168,12 @@
        [
         "ISO/IEC 27001:2022",
         "Annex A 5.12 Klasifikasi informasi",
-        "Butir 4.14 memuat klasifikasi formulir kosong dan formulir terisi."
+        "Butir 4.14 memuat klasifikasi form kosong dan form terisi."
        ],
        [
         "ISO/IEC 27001:2022",
         "Annex A 5.14 Transfer informasi",
-        "Business Development memindahkan informasi customer ke tim pelaksana lewat formulir ini, dan butir 4.8 memuat larangan menulis kredensial di dalamnya."
+        "Business Development menyampaikan informasi customer ke tim pelaksana melalui form ini, tanpa menulis kredensial (butir 4.8)."
        ],
        [
         "ISO/IEC 27001:2022",
@@ -1168,7 +1183,7 @@
        [
         "ISO/IEC 27001:2022",
         "Annex A 5.33 Perlindungan rekaman",
-        "Tabel Rekaman memuat lokasi dan retensi rekaman formulir ini."
+        "Tabel Rekaman memuat lokasi dan retensi record form ini."
        ]
       ],
       "widths_cm": [
@@ -1196,11 +1211,11 @@
        ],
        [
         "SNX-COM-SOP-01",
-        "Sales Process: butir 4.8, 4.11, 4.13, 4.16, dan 4.19, serta tabel rekamannya, dirujuk formulir ini. Dokumen itu mengatur handover meeting dan penyerahan paket."
+        "Sales Process, yang mengatur handover meeting dan penyerahan paket. Form ini merujuk butir 4.8, 4.11, 4.13, 4.16, dan 4.19 serta tabel record-nya."
        ],
        [
         "SNX-COM-SOP-02",
-        "Proposal, Quotation & Pricing Control: pengendalian proposal, quotation, harga, diskon, dan margin. Dikecualikan dari formulir ini."
+        "Proposal, Quotation & Pricing Control: pengendalian proposal, quotation, harga, diskon, dan margin. Dikecualikan dari form ini."
        ],
        [
         "SNX-COM-FRM-01",
@@ -1208,7 +1223,7 @@
        ],
        [
         "SNX-OPS-SOP-01",
-        "Project Management & Delivery: butir 4.1 mengatur penerimaan paket handover oleh Service Delivery Manager. Tabel rekamannya memuat retensi rencana proyek."
+        "Project Management & Delivery: butir 4.1 mengatur penerimaan paket handover oleh Service Delivery Manager. Tabel record-nya memuat retensi rencana proyek."
        ],
        [
         "SNX-OPS-FRM-01",
@@ -1220,11 +1235,11 @@
        ],
        [
         "SNX-OPS-FRM-06",
-        "Project Handover / BAST & Closure Report: BAST, checklist G3, dan closure report. Judulnya mirip, tetapi dokumen itu mencatat penyerahan hasil kerja ke customer dan ke Operation. Dikecualikan dari formulir ini."
+        "Project Handover / BAST & Closure Report: BAST, checklist G3, dan closure report. Judulnya mirip, tetapi dokumen itu mencatat penyerahan hasil kerja ke customer dan ke Operation. Dikecualikan dari form ini."
        ],
        [
         "SNX-FAT-SOP-01",
-        "Billing & Invoicing: penagihan dan invoice sesudah closing. Dikecualikan dari formulir ini."
+        "Billing & Invoicing: penagihan dan invoice setelah closing. Dikecualikan dari form ini."
        ],
        [
         "SNX-ISMS-PRO-01",
@@ -1247,7 +1262,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Formulir ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval dan COO menetapkan struktur kolomnya. VP Commercial menetapkan lokasi rekaman dan meninjau formulir ini setiap tahun (USULAN)."
+     "p": "Form ini berstatus Draft dan baru dipakai setelah Direktur Utama menandatangani blok Approval dan COO menetapkan struktur kolomnya. VP Commercial menetapkan lokasi record dan meninjau form ini setiap tahun (USULAN)."
     }
    ]
   }

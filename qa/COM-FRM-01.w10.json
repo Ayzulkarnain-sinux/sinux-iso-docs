@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 5,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Tujuan: padanan dibalik 'Form (formulir) ini'; bisa dipertahankan karena menjembatani heading beku 'ISI FORMULIR', tetapi lebih wajar 'Form ini' setelah heading dirujuk persis.",
+  "Acuan ISO: judul klausul resmi diubah peta mekanis, '8.2.3 Tinjauan persyaratan untuk produk dan jasa' -> '8.2.3 Review persyaratan untuk produk dan jasa'. Judul klausul adalah kutipan standar; usul kembalikan judul resmi (pertimbangkan pengecualian di STYLE §1.5).",
+  "Daftar periksa C1-C4: semua kriteria Hal yang Diperiksa tetap ada (C3.2 kini memecah wewenang (USULAN) ke kalimat terpisah, isi sama; C3.4 'Penyimpangan itu pengecualian komersial' -> 'termasuk pengecualian komersial', arti setara). Tidak ada kriteria hilang atau menyempit.",
+  "Tabel Peran: rujukan '(Ketentuan butir ...)' dan catatan 'Jabatan usulan tanpa pemegang (K-10)' dihapus; fakta K-10 tetap di tabel Dokumen Terkait, sesuai §3.1 dan §3.8. Pastikan tercatat di notes.",
+  "Peran VP Commercial: dua label (USULAN) (pemilik dokumen, pemilik form terisi) digabung menjadi satu di akhir; arti tetap.",
+  "PDF: paragraf Ketentuan Penggunaan dan Petunjuk Pengisian masih rata kiri-kanan (spasi renggang di butir 4 hal. 8); tabel rata kiri, judul kolom berulang di hal. 12-14, tidak terpotong. Kolom 'Aspek yang Diperiksa' agak sempit sehingga sel C3.5 terbungkus 4 baris."
+ ],
+ "contoh_baik": [
+  "Petunjuk 4: 'Kolom Status berisi satu dari tiga nilai pada bagian Istilah.' -> 'Isi kolom Status dengan Sesuai, Perlu Tindak Lanjut, atau Tidak Berlaku.'"
+ ]
+}

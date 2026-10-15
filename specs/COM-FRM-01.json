@@ -1,357 +1,1151 @@
 {
-  "meta": {
-    "mode": "generic",
-    "doc_key": "COM-FRM-01",
-    "doc_type_cover": "FORM",
-    "doc_type_label": "Form",
-    "number": "SNX-COM-FRM-01",
-    "department": "Commercial",
-    "title": "Customer Requirement & Order Review Record",
-    "process_owner": "VP Commercial",
-    "classification": "INTERNAL",
-    "review_period": "YEARLY",
-    "status": "Draft",
-    "revision": "00",
-    "effective_date": "",
-    "revision_desc": "Draft awal untuk review dan pengesahan",
-    "approval": {
-      "prepared": "Laras Rasmawati / VP Commercial",
-      "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
-      "approved": "Samuel Kristanto Utomo / President Director"
-    }
+ "meta": {
+  "mode": "generic",
+  "doc_key": "COM-FRM-01",
+  "doc_type_cover": "FORM",
+  "doc_type_label": "Form",
+  "number": "SNX-COM-FRM-01",
+  "department": "Commercial",
+  "title": "Customer Requirement & Order Review Record",
+  "process_owner": "VP Commercial",
+  "classification": "INTERNAL",
+  "review_period": "YEARLY",
+  "status": "Draft",
+  "revision": "00",
+  "effective_date": "",
+  "revision_desc": "Draft awal untuk review dan pengesahan",
+  "approval": {
+   "prepared": "Laras Rasmawati / VP Commercial",
+   "reviewed": "Amirull Yusuf Zulkarnain / Direktur",
+   "approved": "Samuel Kristanto Utomo / President Director"
   },
-  "sections": [
+  "table_defaults": {
+   "align_left": true,
+   "repeat_header": true,
+   "cant_split": true,
+   "keep_with_table": true
+  }
+ },
+ "sections": [
+  {
+   "h": "Tujuan dan Lingkup",
+   "blocks": [
     {
-      "h": "Tujuan dan Lingkup",
-      "blocks": [
-        {"h2": "Tujuan"},
-        {"p": "Formulir ini mencatat hasil review Commercial atas satu order customer sebelum SINUX menerima order itu. Formulir memuat kebutuhan customer, kesesuaian scope, kelayakan teknis, persyaratan kontraktual, delivery commitment, dan hasil review."},
-        {"p": "Hasil yang dijaga: setiap order yang SINUX terima punya rekaman bahwa Business Development, Manager of Product Tech, Service Delivery Manager, dan Legal & Compliance sudah mengisi bagiannya, dan VP Commercial sudah menetapkan hasil review sebelum order diterima."},
-        {"h2": "Lingkup"},
-        {"p": "Business Development memakai formulir ini untuk setiap order customer atas penawaran Commercial, dari selesainya discovery meeting sampai VP Commercial menetapkan Hasil Review. Butir berikut dikecualikan dari formulir ini."},
-        {"table": {
-          "header": ["Butir yang dikecualikan", "Keterangan"],
-          "widths_cm": [5.5, 10.5],
-          "rows": [
-            ["Review kontrak lengkap oleh Legal & Compliance", "Memakai SNX-LEG-SOP-02 dan SNX-LEG-FRM-01. Formulir ini hanya mencatat hasilnya pada aspek C3.4 sampai C3.7."],
-            ["Penyusunan proposal, validasi harga, dan persetujuan harga", "Diatur di SNX-COM-SOP-02. Formulir ini hanya merujuk Catatan persetujuan penawaran pada aspek C3.2."],
-            ["Keputusan atas pengecualian komersial", "Diatur di SNX-COM-SOP-02 butir 4.10 dan 6.4. Formulir ini hanya mencatat bahwa pengecualian ada."],
-            ["Serah terima order ke Delivery", "Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Rekaman serah terimanya SNX-COM-FRM-02."],
-            ["Order tambahan dan perpanjangan untuk customer yang sudah berjalan", "Account management berada di luar SNX-COM-SOP-01 (butir 4.17), sehingga formulir ini juga tidak mencakupnya (USULAN)."],
-            ["Penagihan dan invoice", "Diatur di SNX-FAT-SOP-01 dan berlangsung sesudah order diterima."]
-          ]
-        }}
-      ]
+     "h2": "Tujuan"
     },
     {
-      "h": "Istilah",
-      "blocks": [
-        {"h2": "Istilah"},
-        {"table": {
-          "header": ["Istilah", "Arti"],
-          "widths_cm": [4.5, 11.5],
-          "rows": [
-            ["(USULAN)", "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."],
-            ["Aspek", "Satu hal yang dinilai pada daftar periksa review, ditulis satu baris dengan kode C1.1 dan seterusnya."],
-            ["Assumptions", "Kondisi yang dianggap benar saat scope, timeline, dan harga ditetapkan."],
-            ["BOM/BOQ", "Bill of Materials atau Bill of Quantities: daftar item dan jumlahnya yang dibutuhkan untuk solusi yang ditawarkan."],
-            ["Business Requirement", "Kebutuhan bisnis customer yang Business Development catat di CRM sebagai salah satu keluaran discovery meeting."],
-            ["Catatan persetujuan penawaran", "Rekaman hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran."],
-            ["CRM", "Customer Relationship Management: sistem tempat Commercial mencatat aktivitas penjualan."],
-            ["Customer", "Perusahaan atau institusi di luar SINUX yang memesan solusi SINUX."],
-            ["Delivery commitment", "Janji SINUX kepada customer tentang timeline, deliverable, dan tingkat layanan yang tertulis di penawaran, PO, atau kontrak."],
-            ["Direktur (COO)", "Jabatan Direktur (JA-02) di SNX-HR-ORG-01. Dokumen Operation menyebutnya COO; sesudah penyebutan ini formulir ini memakai COO."],
-            ["Discovery meeting", "Pertemuan Business Development dengan customer untuk menggali kebutuhan bisnis, diatur di SNX-COM-SOP-01 butir 6.3."],
-            ["Dokumen order", "Penawaran (draf sebelum terkirim, versi terkirim sesudahnya), ditambah PO atau draf kontrak setelah customer mengirimnya."],
-            ["Exclusions", "Pekerjaan atau item yang tidak termasuk dalam scope dan harga penawaran."],
-            ["Kelayakan teknis", "Penilaian apakah solusi untuk kebutuhan customer dapat dibangun dan dijalankan dengan produk, lisensi, dan dependensi vendor yang tersedia bagi SINUX."],
-            ["Kesesuaian scope", "Kecocokan antara scope di dokumen order dan Business Requirement."],
-            ["Opportunity", "Peluang penjualan ke satu customer yang dikelola di CRM."],
-            ["Order", "Pesanan customer atas penawaran SINUX, berupa PO atau kontrak."],
-            ["Order diterima", "Pernyataan SINUX kepada customer bahwa SINUX menerima PO, atau penandatanganan kontrak oleh SINUX, mana yang lebih dulu (USULAN)."],
-            ["Pengecualian komersial", "Permintaan customer atau isi penawaran yang menyimpang dari yang sudah disetujui atau dari standar. Jenisnya diuraikan di SNX-COM-SOP-02."],
-            ["Penawaran", "Proposal dan quotation untuk satu opportunity yang dikirim ke customer."],
-            ["Persyaratan kontraktual", "Syarat dalam PO, kontrak, atau syarat dan ketentuan customer yang mengikat SINUX sesudah order diterima."],
-            ["Purchase Order (PO)", "Dokumen pemesanan resmi dari customer kepada SINUX."],
-            ["Review ulang", "Pengisian formulir baru untuk order yang sama karena kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima."],
-            ["Scope", "Pekerjaan, barang, dan layanan yang SINUX janjikan dalam penawaran, PO, atau kontrak."],
-            ["SLA", "Service Level Agreement: target layanan yang dijanjikan kepada customer, yaitu availability, response, dan resolution (SNX-OPS-SOP-05)."],
-            ["TOP", "Term of Payment: jangka waktu pembayaran invoice oleh customer sejak tanggal invoice."]
-          ]
-        }},
-        {"h2": "Nilai Status dan Hasil Review"},
-        {"p": "Kolom Status pada daftar periksa berisi satu dari tiga nilai berikut (USULAN)."},
-        {"table": {
-          "header": ["Status", "Arti"],
-          "widths_cm": [4.5, 11.5],
-          "rows": [
-            ["Sesuai", "Hal yang diperiksa terpenuhi tanpa perubahan."],
-            ["Perlu Tindak Lanjut", "Ada hal yang harus diubah, dilengkapi, atau diputuskan sebelum order diterima. Temuannya masuk tabel Temuan dan Tindak Lanjut."],
-            ["Tidak Berlaku", "Aspek tidak ada pada order ini. Alasannya ditulis di kolom Catatan."]
-          ]
-        }},
-        {"p": "Tabel Hasil Review berisi satu dari tiga nilai berikut (USULAN)."},
-        {"table": {
-          "header": ["Hasil Review", "Arti"],
-          "widths_cm": [4.5, 11.5],
-          "rows": [
-            ["Diterima", "Semua aspek berstatus Sesuai atau Tidak Berlaku, dan tidak ada temuan terbuka."],
-            ["Diterima dengan Syarat", "Ada temuan terbuka, dan tiap temuan punya tindak lanjut, pihak, dan target selesai. Order dapat diterima sesudah semua tindak lanjut selesai."],
-            ["Belum Dapat Diterima", "Ada temuan terbuka yang belum punya tindak lanjut, atau tindak lanjutnya tidak dapat selesai sebelum order diterima."]
-          ]
-        }}
-      ]
+     "p": "Form (formulir) ini mencatat hasil review Commercial atas satu order customer sebelum order itu diterima SINUX: kebutuhan customer, kesesuaian scope, kelayakan teknis, persyaratan kontraktual, delivery commitment, dan hasil review."
     },
     {
-      "h": "Ketentuan Penggunaan",
-      "blocks": [
-        {"p": "1. Business Development mengisi satu formulir untuk satu order, dimulai dari tabel Informasi Order dan tabel Kebutuhan Customer. Business Development membuka formulir sesudah discovery meeting selesai, dan menyalin atau merujuk Business Requirement di CRM. Satu formulir untuk satu order berstatus (USULAN)."},
-        {"p": "2. Tiap peran mengisi kelompok daftar periksa yang tercantum di tabel Peran. Pengisi mengisi Status dan Catatan di tiap baris, dan memberi Status Tidak Berlaku pada aspek yang tidak relevan."},
-        {"p": "3. Sebelum penawaran masuk review internal, Business Development meminta Manager of Product Tech mengisi kelompok C2 dan Service Delivery Manager mengisi kelompok C4, lalu mengisi kelompok C1 sesudah keduanya selesai (SNX-COM-SOP-02 butir 6.2). Isi formulir sampai tahap ini menjadi Catatan review scope (USULAN)."},
-        {"p": "4. Saat customer mengirim PO atau draf kontrak, Business Development membandingkannya dengan penawaran dan mencatat setiap perbedaan di tabel Temuan dan Tindak Lanjut. Business Development meminta peran yang aspeknya terdampak untuk mengisi ulang kelompoknya."},
-        {"p": "5. Business Development mengajukan permintaan review kontrak ke Legal & Compliance menurut SNX-LEG-SOP-02 butir 6.1. Legal & Compliance mengisi aspek C3.4 sampai C3.7 dan memakai SNX-LEG-FRM-01 untuk review kontrak lengkap; kelompok C3 hanya memuat hasilnya."},
-        {"p": "6. Business Development mencatat pengecualian komersial yang muncul pada review sebagai temuan, dan memprosesnya menurut SNX-COM-SOP-02 butir 6.4."},
-        {"p": "7. VP Commercial memilih satu Hasil Review dan menulis dasarnya sesudah semua kelompok terisi. Bila hasilnya Diterima dengan Syarat, VP Commercial memeriksa kolom Selesai pada tabel Temuan dan Tindak Lanjut sebelum order diterima."},
-        {"p": "8. Business Development tidak menyatakan kepada customer bahwa order diterima sebelum VP Commercial menetapkan Hasil Review Diterima, atau Diterima dengan Syarat dengan semua tindak lanjut selesai (USULAN)."},
-        {"p": "9. Bila kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima, Business Development mengisi formulir baru dan menulis lokasi formulir sebelumnya pada tabel Informasi Order."},
-        {"p": "10. Business Development mencatat hasil review di opportunity CRM menurut SNX-COM-SOP-01 butir 4.3, menyimpan formulir terisi, dan menulis lokasinya pada tabel Lokasi Penyimpanan Dokumen. Formulir kosong berklasifikasi INTERNAL. Formulir terisi memuat informasi customer, sehingga Business Development memberinya tingkat RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3."}
-      ]
+     "p": "Hasil yang dijaga: setiap order yang diterima SINUX punya record (rekaman) bahwa Business Development, Manager of Product Tech, Service Delivery Manager, dan Legal & Compliance sudah mengisi bagiannya, serta hasil review yang ditetapkan VP Commercial sebelum order diterima."
     },
     {
-      "h": "Peran",
-      "blocks": [
-        {"table": {
-          "header": ["Peran", "Tugas pada formulir ini"],
-          "widths_cm": [4.5, 11.5],
-          "rows": [
-            ["Business Development", "Mengisi tabel Informasi Order dan Kebutuhan Customer, kelompok C1, dan aspek C3.1 sampai C3.3. Meminta peran lain mengisi kelompoknya, membandingkan PO atau draf kontrak dengan penawaran, mencatat temuan, dan menyimpan formulir terisi (Ketentuan butir 1, 3 sampai 6, dan 8 sampai 10). Dipetakan ke Business Development (JA-07) di SNX-HR-ORG-01."],
-            ["Manager of Product Tech", "Mengisi kelompok C2 (Ketentuan butir 3 dan 4). Mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN, SNX-COM-SOP-02 butir 4.5). Jabatan JA-05 di SNX-HR-ORG-01."],
-            ["Service Delivery Manager", "Mengisi kelompok C4 (Ketentuan butir 3 dan 4). Jabatan usulan tanpa pemegang di SNX-HR-ORG-01 (K-10)."],
-            ["Legal & Compliance", "Mengisi aspek C3.4 sampai C3.7 dan memberi hasil review kontrak menurut SNX-LEG-SOP-02 (Ketentuan butir 4 dan 5). Jabatan JA-08 dan JA-09 di SNX-HR-ORG-01."],
-            ["VP Commercial", "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai (Ketentuan butir 7). Pemilik dokumen ini menurut blok Identity (USULAN) dan pemilik formulir terisi (USULAN). Jabatan JA-03 di SNX-HR-ORG-01."],
-            ["COO", "Menyetujui harga dan diskon yang dirujuk aspek C3.2, dan memutuskan pengecualian komersial menurut SNX-COM-SOP-02 butir 4.10. Tidak mengisi formulir ini."],
-            ["Direktur Utama", "Memutuskan TOP di atas standar secara tertulis (aspek C3.3, SNX-COM-SOP-02 butir 4.10). Tidak mengisi formulir ini."]
-          ]
-        }},
-        {"p": "Pembuat, pemeriksa, dan penyetuju formulir ini tercantum di blok Approval pada halaman depan."}
-      ]
+     "h2": "Lingkup"
     },
     {
-      "h": "Petunjuk Pengisian",
-      "blocks": [
-        {"p": "1. Business Development mengisi semua field tabel Informasi Order, dan menulis tidak ada pada field yang tidak berlaku."},
-        {"p": "2. Pada tabel Kebutuhan Customer, Business Development menulis kebutuhan dengan kata customer sedekat mungkin, dan menulis rujukannya: Business Requirement di CRM, PO, RFP, atau email, beserta tanggal dokumen."},
-        {"p": "3. Pengisi membaca kolom Hal yang Diperiksa tanpa mengubahnya, dan menulis hal tambahan yang khusus untuk satu order di kolom Catatan."},
-        {"p": "4. Kolom Status berisi satu dari tiga nilai pada bagian Istilah."},
-        {"p": "5. Kolom Catatan memuat letak klausul atau halaman, nama berkas, nomor referensi, dan alasan bila Status Perlu Tindak Lanjut atau Tidak Berlaku."},
-        {"p": "6. Business Development mengisi satu baris tabel Temuan dan Tindak Lanjut untuk tiap temuan. Kolom Rujukan memuat kode aspek, misalnya C3.4. Kolom Pihak dan Target Selesai memuat jabatan penanggung jawab dan tanggal target. Business Development mengisi kolom Selesai dengan tanggal tindak lanjut selesai."},
-        {"p": "7. VP Commercial mencentang satu pilihan pada tabel Hasil Review dengan tanda ☒ pada kotak ☐, dan menulis kode aspek dan temuan yang menjadi dasar pada tabel Dasar Hasil Review."},
-        {"p": "8. Pada tabel Catatan Review dan Persetujuan, tiap pihak menulis nama dan jabatan, tanggal, dan tanda tangan sendiri."},
-        {"p": "9. Tabel Lokasi Penyimpanan Dokumen memuat tautan Google Drive atau lokasi berkas."}
-      ]
+     "p": "Form ini dipakai Business Development untuk setiap order customer atas penawaran Commercial, mulai dari selesainya discovery meeting sampai VP Commercial menetapkan Hasil Review. Yang dikecualikan dari form ini:"
     },
     {
-      "h": "Isi Formulir",
-      "blocks": [
-        {"p": "Semua sel isian kosong sampai peran yang tercantum di tabel Peran mengisinya untuk satu order. Kode dan isi kolom Hal yang Diperiksa pada kelompok C1 sampai C4 berstatus (USULAN)."},
-        {"h2": "Informasi Order"},
-        {"table": {
-          "header": ["Keterangan", "Informasi"],
-          "widths_cm": [5, 11],
-          "rows": [
-            ["Nama Customer", ""],
-            ["PIC Customer", ""],
-            ["Opportunity di CRM", ""],
-            ["Business Development Penanggung Jawab", ""],
-            ["Ringkasan Order", ""],
-            ["Nomor dan Tanggal Penawaran", ""],
-            ["Nomor dan Tanggal PO atau Kontrak", ""],
-            ["Review Ulang (lokasi formulir sebelumnya)", ""]
-          ]
-        }},
-        {"h2": "Kebutuhan Customer"},
-        {"p": "Delapan topik pertama mengikuti topik minimum discovery meeting (SNX-COM-SOP-01 butir 6.3)."},
-        {"table": {
-          "header": ["No.", "Topik", "Kebutuhan Customer", "Rujukan"],
-          "widths_cm": [1.5, 3.4, 7.1, 4.0],
-          "rows": [
-            ["B1", "Business Challenges", "", ""],
-            ["B2", "Existing System", "", ""],
-            ["B3", "Current Process", "", ""],
-            ["B4", "Pain Points", "", ""],
-            ["B5", "Desired Outcome", "", ""],
-            ["B6", "Project Timeline", "", ""],
-            ["B7", "Budget Expectation", "", ""],
-            ["B8", "Decision Process", "", ""],
-            ["B9", "Kebutuhan lain (tulis topiknya)", "", ""],
-            ["B10", "", "", ""]
-          ]
-        }},
-        {"h2": "Daftar Periksa Review"},
-        {"p": "Pengisi tiap kelompok tercantum di tabel Peran. Kolom Status memakai nilai pada bagian Istilah."},
-        {"h2": "Kelompok C1: Kesesuaian Scope"},
-        {"table": {
-          "header": ["No.", "Aspek yang Diperiksa", "Hal yang Diperiksa", "Status", "Catatan"],
-          "widths_cm": [1.5, 3.3, 6.5, 1.9, 2.8],
-          "rows": [
-            ["C1.1", "Scope terhadap Business Requirement", "Scope of Work, Deliverables, dan Timeline di dokumen order sesuai dengan Business Requirement di CRM (SNX-COM-SOP-02 butir 6.2).", "", ""],
-            ["C1.2", "Selisih Kebutuhan dan Dokumen Order", "Kebutuhan pada tabel Kebutuhan Customer yang tidak ada di dokumen order, dan item di PO atau draf kontrak yang tidak ada di penawaran.", "", ""],
-            ["C1.3", "Exclusions dan Assumptions", "Exclusions dan Assumptions di penawaran juga tercantum di PO atau kontrak, atau customer sudah menerimanya secara tertulis.", "", ""],
-            ["C1.4", "Fitur yang Tersedia", "Solusi di dokumen order hanya memuat fitur yang sudah tersedia (SNX-COM-SOP-01 butir 4.11).", "", ""]
-          ]
-        }},
-        {"h2": "Kelompok C2: Kelayakan Teknis"},
-        {"table": {
-          "header": ["No.", "Aspek yang Diperiksa", "Hal yang Diperiksa", "Status", "Catatan"],
-          "widths_cm": [1.5, 3.3, 6.5, 1.9, 2.8],
-          "rows": [
-            ["C2.1", "Kelayakan Solusi", "Solusi memenuhi kebutuhan pada tabel Kebutuhan Customer dengan produk dan batasan kapabilitas SINUX yang ada. Solusi yang tidak feasible ditulis di kolom Catatan beserta alasannya.", "", ""],
-            ["C2.2", "Desain dan Sizing", "Solution design, sizing, BOM/BOQ, dan asumsi teknis yang dipakai di penawaran, beserta letak berkasnya.", "", ""],
-            ["C2.3", "Risiko Teknis", "Risiko implementasi, lisensi, kompatibilitas, dan dependensi vendor atas solusi yang ditawarkan.", "", ""]
-          ]
-        }},
-        {"h2": "Kelompok C3: Persyaratan Kontraktual"},
-        {"table": {
-          "header": ["No.", "Aspek yang Diperiksa", "Hal yang Diperiksa", "Status", "Catatan"],
-          "widths_cm": [1.5, 3.3, 6.5, 1.9, 2.8],
-          "rows": [
-            ["C3.1", "Dokumen Persyaratan Customer", "Daftar dokumen customer yang memuat persyaratan kontraktual: PO, draf kontrak, syarat dan ketentuan, dan lampiran, beserta nomor dan tanggalnya.", "", ""],
-            ["C3.2", "Harga dan Persetujuan Internal", "Harga dan diskon di PO atau kontrak sama dengan penawaran yang COO setujui menurut SNX-COM-SOP-02 butir 4.7, wewenang yang berstatus (USULAN) di dokumen itu. Catatan persetujuan penawaran memuat persetujuan itu (bagian 11 SNX-COM-SOP-02). Perlakuan PPN mengikuti SNX-FAT-SOP-01 butir 4.5.", "", ""],
-            ["C3.3", "Syarat Pembayaran", "TOP di PO atau kontrak tidak melebihi TOP standar di SNX-FAT-SOP-01 butir 4.8, atau Direktur Utama sudah menyetujui TOP yang lebih panjang secara tertulis.", "", ""],
-            ["C3.4", "Klausul yang Menyimpang", "Klausul atau syarat customer yang menyimpang dari template kontrak dan klausul standar SINUX, dan komitmen di luar kontrak. Penyimpangan itu pengecualian komersial menurut SNX-COM-SOP-02.", "", ""],
-            ["C3.5", "Kerahasiaan dan Keamanan Informasi", "Persyaratan kontraktual tentang NDA, kerahasiaan, keamanan informasi, dan pelindungan data pribadi, serta tingkat klasifikasi informasi customer menurut SNX-ISMS-PRO-01.", "", ""],
-            ["C3.6", "Hukum dan Perizinan", "Persyaratan hukum dan regulasi yang customer sebut atau yang berlaku untuk jenis order ini, dan kesesuaian jenis order dengan perizinan SINUX di SNX-LEG-REG-01 (USULAN).", "", ""],
-            ["C3.7", "Hasil Review Kontrak", "Nomor permintaan review kontrak ke Legal & Compliance, dan hasilnya: Persetujuan Legal sudah diberikan atau belum (SNX-LEG-SOP-02).", "", ""]
-          ]
-        }},
-        {"h2": "Kelompok C4: Delivery Commitment"},
-        {"table": {
-          "header": ["No.", "Aspek yang Diperiksa", "Hal yang Diperiksa", "Status", "Catatan"],
-          "widths_cm": [1.5, 3.3, 6.5, 1.9, 2.8],
-          "rows": [
-            ["C4.1", "Timeline", "Timeline pelaksanaan di dokumen order sama dengan timeline yang Service Delivery Manager konfirmasi (SNX-COM-SOP-01 butir 4.11).", "", ""],
-            ["C4.2", "Deliverable dan Penerimaan", "Deliverable dan syarat customer menerima hasil kerja, sesuai BAST di SNX-OPS-FRM-06.", "", ""],
-            ["C4.3", "SLA dan Kompensasi", "Target SLA yang customer minta berada dalam target standar di SNX-OPS-SOP-05 butir 4.1, atau Service Delivery Manager sudah mengonfirmasi target lain. Bahasa kompensasi atau service credit hanya ada di PO atau kontrak, tidak di proposal.", "", ""],
-            ["C4.4", "Dependensi dan Batasan Customer", "Dependensi pada customer atau pihak ketiga, dan batasan waktu dari customer seperti window maintenance dan blackout.", "", ""],
-            ["C4.5", "Janji di Luar Dokumen Order", "Janji lisan ke customer yang belum ada di PO atau kontrak, dicatat terbuka di kolom Catatan.", "", ""],
-            ["C4.6", "Ketersediaan Tim Pelaksana", "Tim pelaksana tersedia pada timeline di aspek C4.1 (USULAN).", "", ""]
-          ]
-        }},
-        {"h2": "Temuan dan Tindak Lanjut"},
-        {"table": {
-          "header": ["No", "Rujukan", "Temuan", "Tindak Lanjut", "Pihak dan Target Selesai", "Selesai"],
-          "widths_cm": [1.1, 2.1, 3.8, 3.8, 3.2, 2.0],
-          "rows": [
-            ["1", "", "", "", "", ""],
-            ["2", "", "", "", "", ""],
-            ["3", "", "", "", "", ""],
-            ["4", "", "", "", "", ""]
-          ]
-        }},
-        {"h2": "Hasil Review"},
-        {"table": {
-          "header": ["Tanda", "Hasil Review"],
-          "widths_cm": [1.6, 14.4],
-          "rows": [
-            ["☐", "Diterima"],
-            ["☐", "Diterima dengan Syarat"],
-            ["☐", "Belum Dapat Diterima"]
-          ]
-        }},
-        {"h2": "Dasar Hasil Review"},
-        {"table": {
-          "header": ["Keterangan", "Informasi"],
-          "widths_cm": [5, 11],
-          "rows": [
-            ["Kode aspek dan temuan yang menjadi dasar", ""]
-          ]
-        }},
-        {"h2": "Catatan Review dan Persetujuan"},
-        {"table": {
-          "header": ["Tahapan", "Nama/Jabatan", "Tanggal", "Tanda Tangan"],
-          "widths_cm": [6.0, 5.0, 2.4, 2.6],
-          "rows": [
-            ["Disusun oleh Business Development", "", "", ""],
-            ["Kelayakan teknis oleh Manager of Product Tech", "", "", ""],
-            ["Delivery commitment oleh Service Delivery Manager", "", "", ""],
-            ["Persyaratan kontraktual oleh Legal & Compliance", "", "", ""],
-            ["Hasil Review ditetapkan oleh VP Commercial", "", "", ""]
-          ]
-        }},
-        {"h2": "Lokasi Penyimpanan Dokumen"},
-        {"table": {
-          "header": ["Keterangan", "Informasi"],
-          "widths_cm": [5, 11],
-          "rows": [
-            ["Lokasi penawaran yang terkirim", ""],
-            ["Lokasi PO atau kontrak customer", ""],
-            ["Lokasi hasil review kontrak", ""],
-            ["Lokasi formulir terisi", ""]
-          ]
-        }}
+     "table": {
+      "header": [
+       "Butir yang dikecualikan",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       5.5,
+       10.5
+      ],
+      "rows": [
+       [
+        "Review kontrak lengkap oleh Legal & Compliance",
+        "Memakai SNX-LEG-SOP-02 dan SNX-LEG-FRM-01. Form ini hanya mencatat hasilnya pada aspek C3.4 sampai C3.7."
+       ],
+       [
+        "Penyusunan proposal, validasi harga, dan persetujuan harga",
+        "Diatur di SNX-COM-SOP-02. Form ini hanya merujuk Catatan persetujuan penawaran pada aspek C3.2."
+       ],
+       [
+        "Keputusan atas pengecualian komersial",
+        "Diatur di SNX-COM-SOP-02 butir 4.10 dan 6.4. Form ini hanya mencatat bahwa pengecualian ada."
+       ],
+       [
+        "Serah terima order ke Delivery",
+        "Diatur di SNX-COM-SOP-01 butir 6.8 dan SNX-OPS-SOP-01 butir 4.1. Serah terima dicatat di SNX-COM-FRM-02."
+       ],
+       [
+        "Order tambahan dan perpanjangan untuk customer yang sudah berjalan",
+        "Account management berada di luar SNX-COM-SOP-01 butir 4.17, sehingga juga tidak dicakup form ini (USULAN)."
+       ],
+       [
+        "Penagihan dan invoice",
+        "Diatur di SNX-FAT-SOP-01 dan berlangsung setelah order diterima."
+       ]
       ]
-    },
-    {
-      "h": "Dokumen Terkait",
-      "blocks": [
-        {"table": {
-          "header": ["Kode", "Keterangan"],
-          "widths_cm": [4, 12],
-          "rows": [
-            ["SNX-COM-SOP-01", "Sales Process. Butir 4.11 berisi larangan menjanjikan timeline sebelum Service Delivery Manager mengonfirmasinya, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)."],
-            ["SNX-COM-SOP-02", "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 mengatur pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Formulir ini bentuk Catatan review scope (USULAN)."],
-            ["SNX-LEG-SOP-02", "Contract Review & Legal Approval, berstatus Draft. Butir 6.1 mengatur pengajuan permintaan review kontrak, dan dokumen itu mengatur Persetujuan Legal."],
-            ["SNX-LEG-FRM-01", "Customer Contract Review Checklist. Daftar periksa review kontrak customer yang lengkap (USULAN)."],
-            ["SNX-LEG-REG-01", "Company Licenses & Permits Register. Tempat perizinan SINUX yang dirujuk aspek C3.6 (USULAN)."],
-            ["SNX-FAT-SOP-01", "Billing & Invoicing. Butir 4.5 mengatur PPN dan butir 4.8 mengatur TOP standar serta persetujuan TOP di atas standar."],
-            ["SNX-OPS-SOP-01", "Project Management & Delivery. Butir 4.1 mengatur penerimaan paket handover oleh Service Delivery Manager."],
-            ["SNX-OPS-SOP-05", "Service Level Agreement (SLA) Monitoring. Butir 4.1 mengatur persyaratan layanan dan target standar SLA."],
-            ["SNX-OPS-FRM-06", "Project Handover / BAST & Closure Report. Dirujuk aspek C4.2 untuk syarat penerimaan hasil kerja."],
-            ["SNX-ISMS-PRO-01", "Information Classification & Handling Procedure. Butir 4.3 menetapkan tingkat informasi customer."],
-            ["SNX-HR-ORG-01", "Struktur Organisasi SINUX. Sumber nama peran. Service Delivery Manager adalah jabatan usulan tanpa pemegang (K-10)."],
-            ["SNX-COM-FRM-02", "Project Handover Record. Rekaman paket handover sesudah order diterima."]
-          ]
-        }}
-      ]
-    },
-    {
-      "h": "Rekaman dan Acuan ISO",
-      "blocks": [
-        {"h2": "Rekaman"},
-        {"table": {
-          "header": ["Rekaman", "Lokasi dan pemilik", "Retensi"],
-          "widths_cm": [4.5, 8.0, 3.5],
-          "rows": [
-            ["Formulir terisi per order", "Lokasi berkas belum ditetapkan; Business Development menulis lokasinya di tabel Lokasi Penyimpanan Dokumen (Ketentuan butir 10). Pencatat: Business Development. Pemilik: VP Commercial (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 butir 4.3.", "Belum ditetapkan"],
-            ["Business Requirement dan Discovery Notes", "CRM. Pencatat dan pengelola: Business Development (SNX-COM-SOP-01 butir 4.3).", "Belum ditetapkan"],
-            ["PO dan kontrak customer, termasuk drafnya", "Lokasi dan pemilik belum ditetapkan (tabel rekaman SNX-COM-SOP-01).", "Belum ditetapkan"],
-            ["Catatan persetujuan penawaran", "Lokasi belum ditetapkan. Pemilik: VP Commercial (bagian 11 SNX-COM-SOP-02).", "Belum ditetapkan"],
-            ["Hasil review kontrak", "Lokasi belum ditetapkan. Pemilik: Legal & Compliance (SNX-COM-SOP-01 butir 4.19).", "Belum ditetapkan"]
-          ]
-        }},
-        {"h2": "Acuan ISO"},
-        {"p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."},
-        {"table": {
-          "header": ["Standar", "Klausul", "Hubungan dengan formulir ini"],
-          "widths_cm": [3.6, 5.4, 7.0],
-          "rows": [
-            ["ISO 9001:2015", "8.2.1 Komunikasi dengan pelanggan", "Formulir ini mencatat penanganan order customer dan perubahannya."],
-            ["ISO 9001:2015", "8.2.2 Penentuan persyaratan untuk produk dan jasa", "Tabel Kebutuhan Customer mencatat kebutuhan yang customer sebutkan."],
-            ["ISO 9001:2015", "8.2.3 Tinjauan persyaratan untuk produk dan jasa", "Kelompok C1 sampai C4 dan Hasil Review mencatat review sebelum SINUX menerima order. Formulir terisi menjadi informasi terdokumentasi hasil review itu."],
-            ["ISO 9001:2015", "8.2.4 Perubahan persyaratan untuk produk dan jasa", "Business Development mengisi formulir baru bila kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima (Ketentuan butir 9)."],
-            ["ISO 9001:2015", "7.5.3 Pengendalian informasi terdokumentasi", "Bagian Rekaman mencatat lokasi, pemilik, dan klasifikasi formulir terisi."],
-            ["ISO/IEC 27001:2022", "4.2 Memahami kebutuhan dan harapan pihak berkepentingan", "Tabel Kebutuhan Customer dan aspek C3.5 mencatat persyaratan keamanan informasi dari customer."],
-            ["ISO/IEC 27001:2022", "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontraktual", "Kelompok C3 mencatat persyaratan kontraktual dan hukum untuk satu order."],
-            ["ISO/IEC 27001:2022", "Annex A 5.12 Klasifikasi informasi", "Formulir terisi memuat informasi customer dan berklasifikasi RESTRICTED (Internal)."]
-          ]
-        }}
-      ]
-    },
-    {
-      "h": "Kesimpulan",
-      "blocks": [
-        {"p": "Formulir ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. VP Commercial meninjau formulir ini setiap tahun, sesuai Review Period pada blok Identity."}
-      ]
+     }
     }
-  ]
+   ]
+  },
+  {
+   "h": "Istilah",
+   "blocks": [
+    {
+     "h2": "Istilah"
+    },
+    {
+     "table": {
+      "header": [
+       "Istilah",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "(USULAN)",
+        "Label untuk isi yang belum diputuskan secara tertulis oleh pimpinan SINUX."
+       ],
+       [
+        "Aspek",
+        "Satu hal yang dinilai di daftar periksa review, ditulis satu baris dengan kode C1.1 dan seterusnya."
+       ],
+       [
+        "Assumptions",
+        "Kondisi yang dianggap benar saat scope, timeline, dan harga ditetapkan."
+       ],
+       [
+        "BOM/BOQ",
+        "Bill of Materials atau Bill of Quantities: daftar item dan jumlah yang dibutuhkan untuk solusi yang ditawarkan."
+       ],
+       [
+        "Business Requirement",
+        "Kebutuhan bisnis customer yang dicatat Business Development di CRM sebagai salah satu keluaran discovery meeting."
+       ],
+       [
+        "Catatan persetujuan penawaran",
+        "Record hasil review internal, rekomendasi, persetujuan, margin final, dan keputusan pengecualian komersial untuk satu penawaran."
+       ],
+       [
+        "CRM",
+        "Customer Relationship Management: sistem tempat Commercial mencatat aktivitas penjualan."
+       ],
+       [
+        "Customer",
+        "Perusahaan atau institusi di luar SINUX yang memesan solusi SINUX."
+       ],
+       [
+        "Delivery commitment",
+        "Janji SINUX kepada customer tentang timeline, deliverable, dan tingkat layanan yang tertulis di penawaran, PO, atau kontrak."
+       ],
+       [
+        "Direktur (COO)",
+        "Jabatan Direktur (JA-02) di SNX-HR-ORG-01, disebut COO di dokumen Operation dan di form ini."
+       ],
+       [
+        "Discovery meeting",
+        "Pertemuan Business Development dengan customer untuk menggali kebutuhan bisnis (SNX-COM-SOP-01 butir 6.3)."
+       ],
+       [
+        "Dokumen order",
+        "Penawaran (draf sebelum dikirim, versi terkirim setelahnya), ditambah PO atau draf kontrak setelah dikirim customer."
+       ],
+       [
+        "Exclusions",
+        "Pekerjaan atau item yang tidak termasuk dalam scope dan harga penawaran."
+       ],
+       [
+        "Kelayakan teknis",
+        "Penilaian apakah solusi untuk kebutuhan customer dapat dibangun dan dijalankan dengan produk, lisensi, dan dependensi vendor yang tersedia bagi SINUX."
+       ],
+       [
+        "Kesesuaian scope",
+        "Kecocokan antara scope di dokumen order dan Business Requirement."
+       ],
+       [
+        "Opportunity",
+        "Peluang penjualan ke satu customer yang dikelola di CRM."
+       ],
+       [
+        "Order",
+        "Pesanan customer atas penawaran SINUX, berupa PO atau kontrak."
+       ],
+       [
+        "Order diterima",
+        "Pernyataan SINUX kepada customer bahwa PO diterima, atau penandatanganan kontrak oleh SINUX, mana yang lebih dulu (USULAN)."
+       ],
+       [
+        "Pengecualian komersial",
+        "Permintaan customer atau isi penawaran yang menyimpang dari yang sudah disetujui atau dari standar, dengan jenis sesuai SNX-COM-SOP-02."
+       ],
+       [
+        "Penawaran",
+        "Proposal dan quotation untuk satu opportunity yang dikirim ke customer."
+       ],
+       [
+        "Persyaratan kontraktual",
+        "Syarat dalam PO, kontrak, atau syarat dan ketentuan customer yang mengikat SINUX setelah order diterima."
+       ],
+       [
+        "Purchase Order (PO)",
+        "Dokumen pemesanan resmi dari customer kepada SINUX."
+       ],
+       [
+        "Review ulang",
+        "Pengisian form baru untuk order yang sama karena kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima."
+       ],
+       [
+        "Scope",
+        "Pekerjaan, barang, dan layanan yang dijanjikan SINUX dalam penawaran, PO, atau kontrak."
+       ],
+       [
+        "SLA",
+        "Service Level Agreement: target layanan yang dijanjikan kepada customer, yaitu availability, response, dan resolution (SNX-OPS-SOP-05)."
+       ],
+       [
+        "TOP",
+        "Term of Payment: jangka waktu pembayaran invoice oleh customer sejak tanggal invoice."
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Nilai Status dan Hasil Review"
+    },
+    {
+     "p": "Kolom Status di daftar periksa diisi salah satu dari tiga nilai berikut (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Status",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "Sesuai",
+        "Hal yang diperiksa terpenuhi tanpa perubahan."
+       ],
+       [
+        "Perlu Tindak Lanjut",
+        "Ada hal yang harus diubah, dilengkapi, atau diputuskan sebelum order diterima. Temuannya dicatat di tabel Temuan dan Tindak Lanjut."
+       ],
+       [
+        "Tidak Berlaku",
+        "Aspek tidak ada pada order ini. Alasannya ditulis di kolom Catatan."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Tabel Hasil Review diisi salah satu dari tiga nilai berikut (USULAN)."
+    },
+    {
+     "table": {
+      "header": [
+       "Hasil Review",
+       "Arti"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "Diterima",
+        "Semua aspek berstatus Sesuai atau Tidak Berlaku, dan tidak ada temuan terbuka."
+       ],
+       [
+        "Diterima dengan Syarat",
+        "Ada temuan terbuka, dan setiap temuan punya tindak lanjut, pihak, dan target selesai. Order dapat diterima setelah semua tindak lanjut selesai."
+       ],
+       [
+        "Belum Dapat Diterima",
+        "Ada temuan terbuka yang belum punya tindak lanjut, atau tindak lanjutnya tidak dapat selesai sebelum order diterima."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Ketentuan Penggunaan",
+   "blocks": [
+    {
+     "p": "1. Business Development membuka form setelah discovery meeting selesai, lalu mengisi tabel Informasi Order dan Kebutuhan Customer dengan menyalin atau merujuk Business Requirement di CRM. Satu form dipakai untuk satu order (USULAN)."
+    },
+    {
+     "p": "2. Tiap peran mengisi kelompok daftar periksa yang tercantum untuknya di tabel Peran, yaitu Status dan Catatan di tiap baris. Aspek yang tidak relevan diberi Status Tidak Berlaku."
+    },
+    {
+     "p": "3. Sebelum penawaran masuk review internal, Business Development meminta Manager of Product Tech mengisi kelompok C2 dan Service Delivery Manager mengisi kelompok C4, lalu mengisi kelompok C1 setelah keduanya selesai (SNX-COM-SOP-02 butir 6.2). Isi form sampai tahap ini menjadi Catatan review scope (USULAN)."
+    },
+    {
+     "p": "4. Saat customer mengirim PO atau draf kontrak, Business Development membandingkannya dengan penawaran, mencatat setiap perbedaan di tabel Temuan dan Tindak Lanjut, lalu meminta peran yang aspeknya terdampak mengisi ulang kelompoknya."
+    },
+    {
+     "p": "5. Business Development mengajukan permintaan review kontrak ke Legal & Compliance sesuai SNX-LEG-SOP-02 butir 6.1. Legal & Compliance mengisi aspek C3.4 sampai C3.7, sedangkan review kontrak lengkap memakai SNX-LEG-FRM-01; kelompok C3 hanya memuat hasilnya."
+    },
+    {
+     "p": "6. Pengecualian komersial yang muncul saat review dicatat Business Development sebagai temuan, lalu diproses sesuai SNX-COM-SOP-02 butir 6.4."
+    },
+    {
+     "p": "7. Setelah semua kelompok terisi, VP Commercial memilih satu Hasil Review dan menulis dasarnya. Jika hasilnya Diterima dengan Syarat, VP Commercial memeriksa kolom Selesai di tabel Temuan dan Tindak Lanjut sebelum order diterima."
+    },
+    {
+     "p": "8. Business Development tidak menyatakan order diterima kepada customer sebelum VP Commercial menetapkan Hasil Review Diterima, atau Diterima dengan Syarat dengan semua tindak lanjut selesai (USULAN)."
+    },
+    {
+     "p": "9. Jika kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima, Business Development mengisi form baru dan menulis lokasi form sebelumnya di tabel Informasi Order."
+    },
+    {
+     "p": "10. Business Development mencatat hasil review di opportunity CRM sesuai SNX-COM-SOP-01 butir 4.3, menyimpan form terisi, dan menulis lokasinya di tabel Lokasi Penyimpanan Dokumen. Form kosong berklasifikasi INTERNAL. Business Development memberi form terisi tingkat RESTRICTED (Internal) karena memuat informasi customer (SNX-ISMS-PRO-01 butir 4.3)."
+    }
+   ]
+  },
+  {
+   "h": "Peran",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Peran",
+       "Tugas pada form ini"
+      ],
+      "widths_cm": [
+       4.5,
+       11.5
+      ],
+      "rows": [
+       [
+        "Business Development",
+        "Mengisi tabel Informasi Order dan Kebutuhan Customer, kelompok C1, serta aspek C3.1 sampai C3.3. Meminta peran lain mengisi kelompoknya, membandingkan PO atau draf kontrak dengan penawaran, mencatat temuan, dan menyimpan form terisi. Jabatan JA-07 di SNX-HR-ORG-01."
+       ],
+       [
+        "Manager of Product Tech",
+        "Mengisi kelompok C2 dan mengeskalasi solusi yang tidak feasible kepada VP Commercial (USULAN, SNX-COM-SOP-02 butir 4.5). Jabatan JA-05 di SNX-HR-ORG-01."
+       ],
+       [
+        "Service Delivery Manager",
+        "Mengisi kelompok C4."
+       ],
+       [
+        "Legal & Compliance",
+        "Mengisi aspek C3.4 sampai C3.7 dan memberi hasil review kontrak sesuai SNX-LEG-SOP-02. Jabatan JA-08 dan JA-09 di SNX-HR-ORG-01."
+       ],
+       [
+        "VP Commercial",
+        "Menetapkan Hasil Review, menulis dasarnya, dan memeriksa kolom Selesai. Jabatan JA-03 di SNX-HR-ORG-01. Pemilik form ini dan form terisi (USULAN)."
+       ],
+       [
+        "COO",
+        "Menyetujui harga dan diskon yang dirujuk aspek C3.2 dan memutuskan pengecualian komersial sesuai SNX-COM-SOP-02 butir 4.10. Tidak mengisi form ini."
+       ],
+       [
+        "Direktur Utama",
+        "Memutuskan TOP di atas standar secara tertulis (aspek C3.3, SNX-COM-SOP-02 butir 4.10). Tidak mengisi form ini."
+       ]
+      ]
+     }
+    },
+    {
+     "p": "Pembuat, pemeriksa, dan penyetuju form ini tercantum di blok Approval pada halaman depan."
+    }
+   ]
+  },
+  {
+   "h": "Petunjuk Pengisian",
+   "blocks": [
+    {
+     "p": "1. Isi semua field di tabel Informasi Order. Field yang tidak berlaku diisi dengan kata tidak ada."
+    },
+    {
+     "p": "2. Di tabel Kebutuhan Customer, tulis kebutuhan sedekat mungkin dengan kata-kata customer, lalu tulis rujukannya (Business Requirement di CRM, PO, RFP, atau email) beserta tanggal dokumennya."
+    },
+    {
+     "p": "3. Baca kolom Hal yang Diperiksa tanpa mengubahnya. Hal tambahan yang khusus untuk satu order ditulis di kolom Catatan."
+    },
+    {
+     "p": "4. Isi kolom Status dengan Sesuai, Perlu Tindak Lanjut, atau Tidak Berlaku."
+    },
+    {
+     "p": "5. Di kolom Catatan, tulis letak klausul atau halaman, nama berkas, nomor referensi, dan alasan jika Status Perlu Tindak Lanjut atau Tidak Berlaku."
+    },
+    {
+     "p": "6. Isi satu baris tabel Temuan dan Tindak Lanjut untuk tiap temuan. Kolom Rujukan diisi kode aspek (misalnya C3.4), kolom Pihak dan Target Selesai diisi jabatan penanggung jawab dan tanggal target, dan kolom Selesai diisi tanggal tindak lanjut selesai."
+    },
+    {
+     "p": "7. Satu pilihan di tabel Hasil Review dicentang VP Commercial dengan mengganti ☐ menjadi ☒. Kode aspek dan temuan yang menjadi dasarnya ditulis di tabel Dasar Hasil Review."
+    },
+    {
+     "p": "8. Di tabel Catatan Review dan Persetujuan, tiap pihak mengisi sendiri nama dan jabatan, tanggal, serta tanda tangan."
+    },
+    {
+     "p": "9. Tulis link Google Drive atau lokasi berkas di tabel Lokasi Penyimpanan Dokumen."
+    }
+   ]
+  },
+  {
+   "h": "Isi Formulir",
+   "blocks": [
+    {
+     "p": "Semua sel isian kosong sampai diisi peran yang tercantum di tabel Peran untuk satu order. Kode dan isi kolom Hal yang Diperiksa di kelompok C1 sampai C4 berstatus (USULAN)."
+    },
+    {
+     "h2": "Informasi Order"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Informasi"
+      ],
+      "widths_cm": [
+       5,
+       11
+      ],
+      "rows": [
+       [
+        "Nama Customer",
+        ""
+       ],
+       [
+        "PIC Customer",
+        ""
+       ],
+       [
+        "Opportunity di CRM",
+        ""
+       ],
+       [
+        "Business Development Penanggung Jawab",
+        ""
+       ],
+       [
+        "Ringkasan Order",
+        ""
+       ],
+       [
+        "Nomor dan Tanggal Penawaran",
+        ""
+       ],
+       [
+        "Nomor dan Tanggal PO atau Kontrak",
+        ""
+       ],
+       [
+        "Review Ulang (lokasi form sebelumnya)",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Kebutuhan Customer"
+    },
+    {
+     "p": "Delapan topik pertama mengikuti topik minimum discovery meeting (SNX-COM-SOP-01 butir 6.3)."
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Topik",
+       "Kebutuhan Customer",
+       "Rujukan"
+      ],
+      "widths_cm": [
+       1.2,
+       3.4,
+       7.4,
+       4.0
+      ],
+      "rows": [
+       [
+        "B1",
+        "Business Challenges",
+        "",
+        ""
+       ],
+       [
+        "B2",
+        "Existing System",
+        "",
+        ""
+       ],
+       [
+        "B3",
+        "Current Process",
+        "",
+        ""
+       ],
+       [
+        "B4",
+        "Pain Points",
+        "",
+        ""
+       ],
+       [
+        "B5",
+        "Desired Outcome",
+        "",
+        ""
+       ],
+       [
+        "B6",
+        "Project Timeline",
+        "",
+        ""
+       ],
+       [
+        "B7",
+        "Budget Expectation",
+        "",
+        ""
+       ],
+       [
+        "B8",
+        "Decision Process",
+        "",
+        ""
+       ],
+       [
+        "B9",
+        "Kebutuhan lain (tulis topiknya)",
+        "",
+        ""
+       ],
+       [
+        "B10",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Daftar Periksa Review"
+    },
+    {
+     "p": "Pengisi tiap kelompok tercantum di tabel Peran. Kolom Status diisi Sesuai, Perlu Tindak Lanjut, atau Tidak Berlaku."
+    },
+    {
+     "h2": "Kelompok C1: Kesesuaian Scope"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Aspek yang Diperiksa",
+       "Hal yang Diperiksa",
+       "Status",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.4,
+       2.9,
+       6.4,
+       2.0,
+       3.3
+      ],
+      "rows": [
+       [
+        "C1.1",
+        "Scope terhadap Business Requirement",
+        "Scope of Work, Deliverables, dan Timeline di dokumen order sesuai dengan Business Requirement di CRM (SNX-COM-SOP-02 butir 6.2).",
+        "",
+        ""
+       ],
+       [
+        "C1.2",
+        "Selisih Kebutuhan dan Dokumen Order",
+        "Kebutuhan pada tabel Kebutuhan Customer yang tidak ada di dokumen order, dan item di PO atau draf kontrak yang tidak ada di penawaran.",
+        "",
+        ""
+       ],
+       [
+        "C1.3",
+        "Exclusions dan Assumptions",
+        "Exclusions dan Assumptions di penawaran juga tercantum di PO atau kontrak, atau customer sudah menerimanya secara tertulis.",
+        "",
+        ""
+       ],
+       [
+        "C1.4",
+        "Fitur yang Tersedia",
+        "Solusi di dokumen order hanya memuat fitur yang sudah tersedia (SNX-COM-SOP-01 butir 4.11).",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Kelompok C2: Kelayakan Teknis"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Aspek yang Diperiksa",
+       "Hal yang Diperiksa",
+       "Status",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.4,
+       2.9,
+       6.4,
+       2.0,
+       3.3
+      ],
+      "rows": [
+       [
+        "C2.1",
+        "Kelayakan Solusi",
+        "Solusi memenuhi kebutuhan di tabel Kebutuhan Customer dengan produk dan batasan kapabilitas SINUX yang ada. Solusi yang tidak feasible ditulis di kolom Catatan beserta alasannya.",
+        "",
+        ""
+       ],
+       [
+        "C2.2",
+        "Desain dan Sizing",
+        "Solution design, sizing, BOM/BOQ, dan asumsi teknis yang dipakai di penawaran, beserta letak berkasnya.",
+        "",
+        ""
+       ],
+       [
+        "C2.3",
+        "Risiko Teknis",
+        "Risiko implementasi, lisensi, kompatibilitas, dan dependensi vendor atas solusi yang ditawarkan.",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Kelompok C3: Persyaratan Kontraktual"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Aspek yang Diperiksa",
+       "Hal yang Diperiksa",
+       "Status",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.4,
+       2.9,
+       6.4,
+       2.0,
+       3.3
+      ],
+      "rows": [
+       [
+        "C3.1",
+        "Dokumen Persyaratan Customer",
+        "Daftar dokumen customer yang memuat persyaratan kontraktual: PO, draf kontrak, syarat dan ketentuan, dan lampiran, beserta nomor dan tanggalnya.",
+        "",
+        ""
+       ],
+       [
+        "C3.2",
+        "Harga dan Persetujuan Internal",
+        "Harga dan diskon di PO atau kontrak sama dengan penawaran yang disetujui COO dan tercatat di Catatan persetujuan penawaran (SNX-COM-SOP-02 butir 4.7 dan bagian 11). Perlakuan PPN mengikuti SNX-FAT-SOP-01 butir 4.5. Wewenang persetujuan COO di SNX-COM-SOP-02 masih berstatus (USULAN).",
+        "",
+        ""
+       ],
+       [
+        "C3.3",
+        "Syarat Pembayaran",
+        "TOP di PO atau kontrak tidak melebihi TOP standar di SNX-FAT-SOP-01 butir 4.8, atau TOP yang lebih panjang sudah disetujui Direktur Utama secara tertulis.",
+        "",
+        ""
+       ],
+       [
+        "C3.4",
+        "Klausul yang Menyimpang",
+        "Klausul atau syarat customer yang menyimpang dari template kontrak dan klausul standar SINUX, serta komitmen di luar kontrak. Penyimpangan ini termasuk pengecualian komersial sesuai SNX-COM-SOP-02.",
+        "",
+        ""
+       ],
+       [
+        "C3.5",
+        "Kerahasiaan dan Keamanan Informasi",
+        "Persyaratan kontraktual tentang NDA, kerahasiaan, keamanan informasi, dan pelindungan data pribadi, serta tingkat klasifikasi informasi customer menurut SNX-ISMS-PRO-01.",
+        "",
+        ""
+       ],
+       [
+        "C3.6",
+        "Hukum dan Perizinan",
+        "Persyaratan hukum dan regulasi yang disebut customer atau yang berlaku untuk jenis order ini, serta kesesuaian jenis order dengan perizinan SINUX di SNX-LEG-REG-01 (USULAN).",
+        "",
+        ""
+       ],
+       [
+        "C3.7",
+        "Hasil Review Kontrak",
+        "Nomor permintaan review kontrak ke Legal & Compliance dan hasilnya: Persetujuan Legal sudah atau belum diberikan (SNX-LEG-SOP-02).",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Kelompok C4: Delivery Commitment"
+    },
+    {
+     "table": {
+      "header": [
+       "No.",
+       "Aspek yang Diperiksa",
+       "Hal yang Diperiksa",
+       "Status",
+       "Catatan"
+      ],
+      "widths_cm": [
+       1.4,
+       2.9,
+       6.4,
+       2.0,
+       3.3
+      ],
+      "rows": [
+       [
+        "C4.1",
+        "Timeline",
+        "Timeline pelaksanaan di dokumen order sama dengan timeline yang sudah dikonfirmasi Service Delivery Manager (SNX-COM-SOP-01 butir 4.11).",
+        "",
+        ""
+       ],
+       [
+        "C4.2",
+        "Deliverable dan Penerimaan",
+        "Deliverable dan syarat penerimaan hasil kerja oleh customer, sesuai BAST di SNX-OPS-FRM-06.",
+        "",
+        ""
+       ],
+       [
+        "C4.3",
+        "SLA dan Kompensasi",
+        "Target SLA yang diminta customer berada dalam target standar SNX-OPS-SOP-05 butir 4.1, atau target lain sudah dikonfirmasi Service Delivery Manager. Bahasa kompensasi atau service credit hanya ada di PO atau kontrak, tidak di proposal.",
+        "",
+        ""
+       ],
+       [
+        "C4.4",
+        "Dependensi dan Batasan Customer",
+        "Dependensi pada customer atau pihak ketiga, dan batasan waktu dari customer seperti window maintenance dan blackout.",
+        "",
+        ""
+       ],
+       [
+        "C4.5",
+        "Janji di Luar Dokumen Order",
+        "Janji lisan ke customer yang belum ada di PO atau kontrak, dicatat terbuka di kolom Catatan.",
+        "",
+        ""
+       ],
+       [
+        "C4.6",
+        "Ketersediaan Tim Pelaksana",
+        "Tim pelaksana tersedia pada timeline di aspek C4.1 (USULAN).",
+        "",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Temuan dan Tindak Lanjut"
+    },
+    {
+     "table": {
+      "header": [
+       "No",
+       "Rujukan",
+       "Temuan",
+       "Tindak Lanjut",
+       "Pihak dan Target Selesai",
+       "Selesai"
+      ],
+      "widths_cm": [
+       1.1,
+       2.1,
+       3.8,
+       3.8,
+       3.2,
+       2.0
+      ],
+      "rows": [
+       [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "4",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "min_row_cm": 1.0
+     }
+    },
+    {
+     "h2": "Hasil Review"
+    },
+    {
+     "table": {
+      "header": [
+       "Tanda",
+       "Hasil Review"
+      ],
+      "widths_cm": [
+       1.6,
+       14.4
+      ],
+      "rows": [
+       [
+        "☐",
+        "Diterima"
+       ],
+       [
+        "☐",
+        "Diterima dengan Syarat"
+       ],
+       [
+        "☐",
+        "Belum Dapat Diterima"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Dasar Hasil Review"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Informasi"
+      ],
+      "widths_cm": [
+       5,
+       11
+      ],
+      "rows": [
+       [
+        "Kode aspek dan temuan yang menjadi dasar",
+        ""
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Catatan Review dan Persetujuan"
+    },
+    {
+     "table": {
+      "header": [
+       "Tahapan",
+       "Nama/Jabatan",
+       "Tanggal",
+       "Tanda Tangan"
+      ],
+      "widths_cm": [
+       6.0,
+       5.0,
+       2.4,
+       2.6
+      ],
+      "rows": [
+       [
+        "Disusun oleh Business Development",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Kelayakan teknis oleh Manager of Product Tech",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Delivery commitment oleh Service Delivery Manager",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Persyaratan kontraktual oleh Legal & Compliance",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Hasil Review ditetapkan oleh VP Commercial",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "min_row_cm": 1.0
+     }
+    },
+    {
+     "h2": "Lokasi Penyimpanan Dokumen"
+    },
+    {
+     "table": {
+      "header": [
+       "Keterangan",
+       "Informasi"
+      ],
+      "widths_cm": [
+       5,
+       11
+      ],
+      "rows": [
+       [
+        "Lokasi penawaran yang terkirim",
+        ""
+       ],
+       [
+        "Lokasi PO atau kontrak customer",
+        ""
+       ],
+       [
+        "Lokasi hasil review kontrak",
+        ""
+       ],
+       [
+        "Lokasi form terisi",
+        ""
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Dokumen Terkait",
+   "blocks": [
+    {
+     "table": {
+      "header": [
+       "Kode",
+       "Keterangan"
+      ],
+      "widths_cm": [
+       4,
+       12
+      ],
+      "rows": [
+       [
+        "SNX-COM-SOP-01",
+        "Sales Process. Butir 4.11 melarang menjanjikan timeline sebelum dikonfirmasi Service Delivery Manager, butir 6.3 mengatur discovery meeting, dan butir 6.8 mengatur handover. Business Requirement di CRM, keluaran butir 6.3, disalin atau dirujuk di form ini (USULAN)."
+       ],
+       [
+        "SNX-COM-SOP-02",
+        "Proposal, Quotation & Pricing Control. Butir 6.2 mengatur review scope, butir 4.10 menetapkan pemutus pengecualian komersial, butir 6.4 mengatur prosesnya, dan bagian 11 memuat Catatan persetujuan penawaran. Form ini menjadi bentuk Catatan review scope (USULAN)."
+       ],
+       [
+        "SNX-LEG-SOP-02",
+        "Contract Review & Legal Approval, berstatus Draft. Butir 6.1 mengatur pengajuan permintaan review kontrak, dan dokumen itu mengatur Persetujuan Legal."
+       ],
+       [
+        "SNX-LEG-FRM-01",
+        "Customer Contract Review Checklist. Daftar periksa lengkap untuk review kontrak customer (USULAN)."
+       ],
+       [
+        "SNX-LEG-REG-01",
+        "Company Licenses & Permits Register. Daftar perizinan SINUX yang dirujuk aspek C3.6 (USULAN)."
+       ],
+       [
+        "SNX-FAT-SOP-01",
+        "Billing & Invoicing. Butir 4.5 mengatur PPN dan butir 4.8 mengatur TOP standar serta persetujuan TOP di atas standar."
+       ],
+       [
+        "SNX-OPS-SOP-01",
+        "Project Management & Delivery. Butir 4.1 mengatur penerimaan paket handover oleh Service Delivery Manager."
+       ],
+       [
+        "SNX-OPS-SOP-05",
+        "Service Level Agreement (SLA) Monitoring. Butir 4.1 mengatur persyaratan layanan dan target standar SLA."
+       ],
+       [
+        "SNX-OPS-FRM-06",
+        "Project Handover / BAST & Closure Report. Dirujuk aspek C4.2 untuk syarat penerimaan hasil kerja."
+       ],
+       [
+        "SNX-ISMS-PRO-01",
+        "Information Classification & Handling Procedure. Butir 4.3 menetapkan tingkat informasi customer."
+       ],
+       [
+        "SNX-HR-ORG-01",
+        "Struktur Organisasi SINUX. Sumber nama peran. Service Delivery Manager adalah jabatan usulan tanpa pemegang (K-10)."
+       ],
+       [
+        "SNX-COM-FRM-02",
+        "Project Handover Record. Record paket handover setelah order diterima."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Rekaman dan Acuan ISO",
+   "blocks": [
+    {
+     "h2": "Rekaman"
+    },
+    {
+     "table": {
+      "header": [
+       "Record",
+       "Lokasi dan pemilik",
+       "Retensi"
+      ],
+      "widths_cm": [
+       4.5,
+       8.0,
+       3.5
+      ],
+      "rows": [
+       [
+        "Form terisi per order",
+        "Lokasi berkas belum ditetapkan; Business Development menulis lokasinya di tabel Lokasi Penyimpanan Dokumen. Pencatat: Business Development. Pemilik: VP Commercial (USULAN). Klasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01 butir 4.3.",
+        "Belum ditetapkan"
+       ],
+       [
+        "Business Requirement dan Discovery Notes",
+        "CRM. Pencatat dan pengelola: Business Development (SNX-COM-SOP-01 butir 4.3).",
+        "Belum ditetapkan"
+       ],
+       [
+        "PO dan kontrak customer, termasuk drafnya",
+        "Lokasi dan pemilik belum ditetapkan (tabel record SNX-COM-SOP-01).",
+        "Belum ditetapkan"
+       ],
+       [
+        "Catatan persetujuan penawaran",
+        "Lokasi belum ditetapkan. Pemilik: VP Commercial (bagian 11 SNX-COM-SOP-02).",
+        "Belum ditetapkan"
+       ],
+       [
+        "Hasil review kontrak",
+        "Lokasi belum ditetapkan. Pemilik: Legal & Compliance (SNX-COM-SOP-01 butir 4.19).",
+        "Belum ditetapkan"
+       ]
+      ]
+     }
+    },
+    {
+     "h2": "Acuan ISO"
+    },
+    {
+     "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+    },
+    {
+     "table": {
+      "header": [
+       "Standar",
+       "Klausul",
+       "Hubungan dengan form ini"
+      ],
+      "widths_cm": [
+       3.6,
+       5.4,
+       7.0
+      ],
+      "rows": [
+       [
+        "ISO 9001:2015",
+        "8.2.1 Komunikasi dengan pelanggan",
+        "Form ini mencatat penanganan order customer dan perubahannya."
+       ],
+       [
+        "ISO 9001:2015",
+        "8.2.2 Penentuan persyaratan untuk produk dan jasa",
+        "Tabel Kebutuhan Customer mencatat kebutuhan yang disebutkan customer."
+       ],
+       [
+        "ISO 9001:2015",
+        "8.2.3 Tinjauan persyaratan untuk produk dan jasa",
+        "Kelompok C1 sampai C4 dan Hasil Review mencatat review sebelum SINUX menerima order. Form terisi menjadi informasi terdokumentasi hasil review itu."
+       ],
+       [
+        "ISO 9001:2015",
+        "8.2.4 Perubahan persyaratan untuk produk dan jasa",
+        "Business Development mengisi form baru jika kebutuhan atau persyaratan kontraktual customer berubah sebelum order diterima (Ketentuan butir 9)."
+       ],
+       [
+        "ISO 9001:2015",
+        "7.5.3 Pengendalian informasi terdokumentasi",
+        "Tabel Rekaman mencatat lokasi, pemilik, dan klasifikasi form terisi."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "4.2 Memahami kebutuhan dan harapan pihak berkepentingan",
+        "Tabel Kebutuhan Customer dan aspek C3.5 mencatat persyaratan keamanan informasi dari customer."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontraktual",
+        "Kelompok C3 mencatat persyaratan kontraktual dan hukum untuk satu order."
+       ],
+       [
+        "ISO/IEC 27001:2022",
+        "Annex A 5.12 Klasifikasi informasi",
+        "Form terisi memuat informasi customer dan berklasifikasi RESTRICTED (Internal)."
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "h": "Kesimpulan",
+   "blocks": [
+    {
+     "p": "Form ini berstatus Draft dan berlaku setelah Direktur Utama menandatangani blok Approval. VP Commercial meninjau form ini setiap tahun sesuai Review Period di blok Identity."
+    }
+   ]
+  }
+ ]
 }
