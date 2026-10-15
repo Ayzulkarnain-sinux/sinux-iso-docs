@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 4 butir 4.6, kalimat 1",
+      "masalah": "Label pelaku berbentuk \"(USULAN: Finance Lead sebagai pelaku)\", bukan penanda baku \"(USULAN)\". Lint tidak menghitungnya (notes: jumlah tetap 27, satu hilang di 4.6 dan satu bertambah di bagian 5), sehingga hitungan butir menunggu ACC hanya bergantung pada label di bagian 5. Isi label jelas dan sesuai butir 1.",
+      "bukti": "Sesudah: '... antara Laporan Keuangan Komersial dan SPT (USULAN: Finance Lead sebagai pelaku).' Notes Sweep: 'kebijakan 4.6 tidak lagi dihitung (berbentuk \"USULAN:\" bukan \"(USULAN)\")'."
+    },
+    {
+      "lokasi": "Bagian 4 butir 4.6, kalimat 2",
+      "masalah": "Catatan status penyusunan tetap ada di badan dokumen terkendali (temuan nonblocking verify sebelumnya), kini tanpa label (USULAN). Bukan fakta baru dan bukan butir sweep; open item 6 di notes sudah mencatat langkah dan rekaman yang kurang.",
+      "bukti": "Sebelum: 'Langkah rincinya belum ada di bagian 6 (USULAN).' Sesudah: 'Bagian 6 belum memuat langkah rinci untuk butir ini.'"
+    }
+  ]
+}

@@ -66,7 +66,7 @@ Kalimat perintah di sumber yang ditujukan ke penyusun atau agen: tidak ada.
 
 Pengarsipan tidak dibuat sub-proses 6.x sendiri karena sumber menaruhnya di tahap Pelaporan dengan satu batas 1 hari; memecahnya menambah angka yang tidak ada di sumber.
 
-Klausul ISO (checklist tidak memberi acuan, semua satu label "(USULAN, dikonfirmasi konsultan)" di bagian 11, baris "Status acuan klausul"):
+Klausul ISO (checklist tidak memberi acuan, semua satu label "(USULAN, perlu konfirmasi konsultan)" di bagian 11, baris "Status acuan klausul"):
 
 | Klausul | Di bagian 11 | Tercermin di bagian 4 | Prosedur dan SLA |
 |---|---|---|---|
@@ -124,7 +124,7 @@ Aturan lintas dokumen dari RUNBOOK §6 yang tidak terpakai: sumber tidak menyebu
 
 | # | USULAN | Di mana | Pemutus yang disarankan |
 |---|---|---|---|
-| 1 | Acuan klausul ISO 9001:2015 5.3, 7.5.3, 8.1 dan ISO/IEC 27001:2022 Annex A 5.31, 5.33 (label "USULAN, dikonfirmasi konsultan") | Bagian 4 (judul butir) dan bagian 11 | owner |
+| 1 | Acuan klausul ISO 9001:2015 5.3, 7.5.3, 8.1 dan ISO/IEC 27001:2022 Annex A 5.31, 5.33 (label "USULAN, perlu konfirmasi konsultan") | Bagian 4 (judul butir) dan bagian 11 | owner |
 | 2 | Lima tahap berlaku untuk semua jenis pajak sampai alur per jenis pajak dirinci | 6.1 intro | FAT |
 | 3 | Penyetoran pajak dan pencatatan BPN/NTPN oleh Finance Staff | 6.4 intro dan langkah 2 dan 3; peran Finance Staff | FAT |
 | 4 | Pengarsipan bukti potong dan Faktur Pajak Keluaran oleh Finance Lead | 6.5 langkah 3; tabel rekaman baris 2 | FAT |
@@ -139,10 +139,10 @@ Aturan lintas dokumen dari RUNBOOK §6 yang tidak terpakai: sumber tidak menyebu
 | 13 | Lokasi simpan "Folder Google Drive Departemen FAT" untuk empat rekaman | Bagian 11, tabel rekaman | FAT |
 | 14 | Retensi minimal 10 tahun untuk rekaman perpajakan (disamakan dengan SOP Billing) | Bagian 11, tabel rekaman | FAT dan Legal |
 | 15 | Cara Finance Lead memeriksa kepatuhan (bandingkan rekaman bagian 11 dengan batas waktu bagian 8) | Bagian 10 kalimat 1 | FAT |
-| 16 | Finance Lead sebagai pelaku pengelolaan hak kompensasi pajak (Tax Asset) dan ekualisasi; langkah rinci belum ada | Kebijakan 4.6; definisi Ekualisasi dan Hak kompensasi pajak | FAT |
+| 16 | Finance Lead sebagai pelaku pengelolaan hak kompensasi pajak (Tax Asset) dan ekualisasi; langkah rinci belum ada | Kebijakan 4.6; bagian 5 baris Finance Lead; definisi Ekualisasi dan Hak kompensasi pajak | FAT |
 | 17 | Arti "pengajuan" = permintaan agar sebuah pembayaran diproses, dipakai untuk kiriman Unit pengaju dan untuk permintaan bayar pajak oleh Finance Lead | Bagian 3, baris Pengajuan | FAT |
 
-Jumlah: 17 USULAN. Di dokumen ada 27 penanda "(USULAN)" yang dihitung lint (sesudah putaran perbaikan 2): 8 di tabel rekaman (butir 13 dan 14, empat baris masing-masing), 1 baris definisi "(USULAN)" itu sendiri, dan 1 tiap di Scope (butir 8), definisi BPE (11), definisi Hari (10), definisi Pengajuan (17), kebijakan 4.5 (12), kebijakan 4.6 (16), peran Unit pengaju (9), peran Finance Staff kolom Responsibilities dan kolom Authority (butir 3, dua penanda), intro 6.1 (2), 6.3 langkah 2 dan Dokumen terkait FRM-01 (5, dua penanda), 6.4 langkah 2 dan 3 (3, dua penanda), 6.5 langkah 3 (4), bagian 9 baris 2 (7), Dokumen terkait SOP-04 (6), dan Kesimpulan (15). Di luar hitungan lint: satu kata USULAN di keterangan gambar dan di simpul diagram "Setor pajak, catat BPN/NTPN", serta label ISO "(USULAN, dikonfirmasi konsultan)". Label ISO itu ditentukan prompt tugas; keterbacaannya sebagai "menunggu konfirmasi" bergantung pada konvensi yang sama di spec lain. Process owner "Finance Lead" dan tiga nama di blok approval berstatus USULAN di config/defaults.json, tidak diberi label di dokumen karena Master List yang memuatnya.
+Jumlah: 17 USULAN. Di dokumen ada 27 penanda "(USULAN)" yang dihitung lint (sesudah putaran perbaikan 2): 8 di tabel rekaman (butir 13 dan 14, empat baris masing-masing), 1 baris definisi "(USULAN)" itu sendiri, dan 1 tiap di Scope (butir 8), definisi BPE (11), definisi Hari (10), definisi Pengajuan (17), kebijakan 4.5 (12), peran Finance Lead (16), peran Unit pengaju (9), peran Finance Staff kolom Responsibilities dan kolom Authority (butir 3, dua penanda), intro 6.1 (2), 6.3 langkah 2 dan Dokumen terkait FRM-01 (5, dua penanda), 6.4 langkah 2 dan 3 (3, dua penanda), 6.5 langkah 3 (4), bagian 9 baris 2 (7), Dokumen terkait SOP-04 (6), dan Kesimpulan (15). Di luar hitungan lint: satu kata USULAN di keterangan gambar dan di simpul diagram "Setor pajak, catat BPN/NTPN", serta penanda "(USULAN: Finance Lead sebagai pelaku)" di kebijakan 4.6 dan label ISO "(USULAN, perlu konfirmasi konsultan)". Label ISO memakai bunyi sweep, yang terbaca sebagai menunggu konfirmasi. Process owner "Finance Lead" dan tiga nama di blok approval berstatus USULAN di config/defaults.json, tidak diberi label di dokumen karena Master List yang memuatnya.
 
 ## Open items
 
@@ -187,7 +187,7 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber, dan perbaika
 |---|---|---|
 | "1 hari" per tahap, PIC Staff dan Lead | Tabel IV dan gambar | Bersumber |
 | "Minimal 10 tahun" | SOP Billing 8.2 (salinan audit), bukan sumber SOP ini | Berlabel USULAN di dokumen; basis di notes |
-| Nomor dan nama klausul ISO | Standar, bukan dokumen tim; ditulis dari ingatan penyusun | Berlabel "USULAN, dikonfirmasi konsultan"; tidak diukur ulang |
+| Nomor dan nama klausul ISO | Standar, bukan dokumen tim; ditulis dari ingatan penyusun | Berlabel "USULAN, perlu konfirmasi konsultan"; tidak diukur ulang |
 | Nomor Pasal 21, 23/26, 4(2), 25; Kode 02 | Scope III | Bersumber |
 | "Folder Google Drive Departemen FAT" | Pola di specs/FAT-SOP-01.json | Berlabel USULAN |
 | Kode SNX-FAT-SOP-01, -04, FRM-01, ISMS-PRO-01, HR-ORG-01 | config/worklist.json dan checklist baris 23, 26, 30 | Nama dokumen cocok worklist; FRM-01 dan SOP-04 belum selesai disusun, isinya tidak dikutip selain judul checklist |
@@ -241,3 +241,21 @@ Uji ulang: render_sop.py tanpa galat; lint_doc.py sop "pass": true, fails kosong
 | Konfirmasi data_conflicts, approval, cacat audit | Tidak ada tindakan; dicatat |
 
 Uji ulang: render_sop.py tanpa galat; lint_doc.py sop "pass": true, fails kosong, warns hanya "27 butir (USULAN)", warn PIC SLA nol; validator OOXML "All validations PASSED!". Bukti: /tmp/pen-FAT-SOP-05/lint.out.txt dan /tmp/pen-FAT-SOP-05/validate.out.txt. Pemeriksaan spec: nol "punya", nol "aspek perpajakan", nol "sumber tim", nol em-dash dan en-dash, tiap langkah paling banyak 25 kata, semua PIC ada di tabel peran, diagram dilihat (delapan simpul, TB).
+
+## Sweep
+
+Putaran sweep dari orkestrator (berkas /tmp/claude-0/prompts/FAT-SOP-05.sweep.txt). Dua butir diubah; diff spec sebelum lawan sesudah hanya tiga baris. Fakta, angka, nama, dan struktur lain tetap.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1. Pelaku Finance Lead di 4.6, kebijakan | "4.6 ... Finance Lead mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi antara Laporan Keuangan Komersial dan SPT. Langkah rincinya belum ada di bagian 6 (USULAN)." Label hanya menempel di kalimat langkah, bukan di pelaku | "4.6 ... Finance Lead mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi antara Laporan Keuangan Komersial dan SPT (USULAN: Finance Lead sebagai pelaku). Bagian 6 belum memuat langkah rinci untuk butir ini." |
+| 1. Selaras dengan bagian 5, baris Finance Lead kolom Responsibilities | "... mengarsipkan dokumen perpajakan (butir 6.3 dan 6.5)." Tanpa tugas Tax Asset dan ekualisasi, sehingga 4.6 menyebut pelaku yang tidak tercatat di tabel peran | "... mengarsipkan dokumen perpajakan (butir 6.3 dan 6.5). Mengelola hak kompensasi pajak (Tax Asset) dan memastikan ekualisasi menurut butir 4.6 (USULAN)." Kolom Authority tidak diubah |
+| 2. Label ISO, bagian 11 baris "Status acuan klausul" | "(USULAN, dikonfirmasi konsultan)" | "(USULAN, perlu konfirmasi konsultan)". Hanya satu kemunculan di spec; rujukan hidup di notes ikut diubah, riwayat putaran 1 dan 2 dibiarkan apa adanya |
+
+Pemutus USULAN pelaku Finance Lead tetap FAT (USULAN 16). Jumlah penanda "(USULAN)" yang dihitung lint tetap 27: kebijakan 4.6 tidak lagi dihitung (berbentuk "USULAN:" bukan "(USULAN)"), baris Finance Lead di bagian 5 menambah satu.
+
+Uji (bukti: /tmp/pen-FAT-SOP-05/lint.out.txt, validate.out.txt, blankscan.out.txt):
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/FAT-SOP-05.json /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx`: tanpa galat.
+- `python3 -I tools/lint_doc.py /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx sop`: "pass": true, fails kosong, warns hanya "27 butir (USULAN) menunggu ACC"; warn PIC SLA nol.
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx`: "All validations PASSED!".
+- `python3 -I reports/orch/blankscan.py /tmp/pen-FAT-SOP-05/FAT-SOP-05.docx`: "ok 13 FAT-SOP-05.docx []".
