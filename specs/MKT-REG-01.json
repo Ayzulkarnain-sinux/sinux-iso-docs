@@ -36,7 +36,7 @@
    "h": "Ruang Lingkup",
    "blocks": [
     {
-     "p": "Register ini mencakup materi yang digunakan untuk kebutuhan eksternal, siapa pun yang menyusunnya, termasuk company profile, website, social media, product brochure, presentation deck, campaign material, dan event collateral. Pencatatan berjalan sejak materi disusun sampai terbit, dan sampai ditarik bila materi ditarik. Register ini juga mencakup verifikasi klaim di dalam materi."
+     "p": "Register ini mencakup materi yang digunakan untuk kebutuhan eksternal, siapa pun yang menyusunnya, termasuk company profile, website, social media, product brochure, presentation deck, campaign material, dan event collateral. Pencatatan berjalan sejak materi disusun sampai terbit, dan sampai ditarik bila materi ditarik. Register ini juga mencakup verifikasi klaim di dalam materi. Register ini adalah satu-satunya register materi, konten, dan persetujuan klaim SINUX."
     },
     {
      "p": "Butir berikut dikecualikan dari register ini:"
@@ -66,15 +66,15 @@
        ],
        [
         "Rencana pemasaran dan tinjauan kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif",
-        "Dicatat di SNX-MKT-RPT-01 (USULAN)."
+        "Dicatat di SNX-MKT-RPT-01."
        ],
        [
-        "Pelaksanaan campaign dan aktivitas marketing",
-        "Dicatat di SNX-MKT-REG-02, yang menautkan tiap materi yang dipakai ke ID persetujuan di register ini (USULAN)."
+        "Pelaksanaan Aktivitas pemasaran",
+        "Dicatat di SNX-MKT-REG-02, yang hanya memuat ID persetujuan dari register ini untuk materi yang dipakai."
        ],
        [
         "Hasil lead dan serah terima lead kepada Sales",
-        "Dicatat di SNX-MKT-REG-03 (USULAN)."
+        "Dicatat di SNX-MKT-REG-03."
        ]
       ]
      }
@@ -244,7 +244,7 @@
      "p": "4.4 VP Commercial menjadi Approver untuk semua materi, dan menjadi Reviewer kecuali ia menunjuk jabatan lain sebagai Reviewer untuk materi tertentu (USULAN)."
     },
     {
-     "p": "4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemilik informasi menurunkannya menjadi PUBLIC saat Approver menyetujui versinya, dan penurunan itu tercatat di bukti persetujuan yang sama (USULAN). Penetapan dan penurunan klasifikasi diatur di SNX-ISMS-PRO-01 butir 4.1 dan 4.2."
+     "p": "4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemilik informasi menurunkannya menjadi PUBLIC saat Approver menyetujui versinya (USULAN). Pemilik informasi mencatat penurunan itu di SNX-ISMS-REG-01 mengikuti SNX-ISMS-PRO-01, dan register ini hanya merujuk. Penetapan dan penurunan klasifikasi diatur di SNX-ISMS-PRO-01 butir 4.1 dan 4.2."
     },
     {
      "p": "4.6 Approver menyetujui satu versi materi secara tertulis sebelum materi terbit. Persetujuan lisan tidak dihitung (USULAN)."
@@ -356,7 +356,7 @@
        ],
        [
         "Pemilik informasi",
-        "Menurunkan klasifikasi materi menjadi PUBLIC saat Approver menyetujui versi, dan mencatat penurunan itu di bukti persetujuan (butir 4.5). Dipegang VP Commercial (USULAN)."
+        "Menurunkan klasifikasi materi menjadi PUBLIC saat Approver menyetujui versi, dan mencatat penurunan itu di SNX-ISMS-REG-01 (butir 4.5). Dipegang VP Commercial (USULAN)."
        ],
        [
         "Pemverifikasi",
@@ -1089,16 +1089,20 @@
         "Information Classification & Handling Procedure. Memuat tingkat PUBLIC dan INTERNAL, peran Pemilik informasi, serta penetapan dan penurunan klasifikasi (butir 4.1 dan 4.2)."
        ],
        [
+        "SNX-ISMS-REG-01",
+        "Information Asset Register. Tempat Pemilik informasi mencatat penurunan klasifikasi materi menurut SNX-ISMS-PRO-01 (butir 4.5 register ini)."
+       ],
+       [
         "SNX-MKT-REG-02",
-        "Marketing Campaign & Activity Register. Mencatat pelaksanaan campaign dan aktivitas; tiap materi yang dipakai dirujuk ke ID persetujuan di register ini (USULAN)."
+        "Marketing Campaign & Activity Register. Mencatat pelaksanaan Aktivitas pemasaran dan hanya memuat ID persetujuan dari register ini untuk materi yang dipakai."
        ],
        [
         "SNX-MKT-REG-03",
-        "Marketing Lead & Campaign Outcome Register. Mencatat hasil lead dan serah terima ke Sales, dengan merujuk nama campaign di SNX-MKT-REG-02 (USULAN)."
+        "Marketing Lead & Campaign Outcome Register. Mencatat hasil lead dan serah terima ke Sales, dengan merujuk nama Aktivitas di SNX-MKT-REG-02."
        ],
        [
         "SNX-MKT-RPT-01",
-        "Marketing Planning & Performance Review. Memuat rencana pemasaran dan tinjauan kinerja (USULAN)."
+        "Marketing Planning & Performance Review. Memuat rencana pemasaran dan tinjauan kinerja."
        ],
        [
         "SNX-OPS-SOP-04",

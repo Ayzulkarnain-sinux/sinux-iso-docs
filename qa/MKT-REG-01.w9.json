@@ -1,0 +1,47 @@
+{
+ "key": "MKT-REG-01",
+ "cluster": "MKT",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 2,
+ "putaran_perbaikan": 1,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "notes/MKT-REG-01.md tabel USULAN belum diperbarui. Butir 2 dan 16 masih memuat batas cakupan lama (REG-02 'menautkan/merujuk tiap materi', berlabel keputusan orkestrator). Butir 6 masih berbunyi 'penurunan tercatat di bukti persetujuan yang sama'. Kalimat pembuka masih menulis '31 kemunculan (USULAN)', padahal lint render sekarang menghitung 25. Ini hanya di notes, tidak ada di dokumen.",
+  "Format notes tidak persis mengikuti instruksi. Status open item ditulis di kolom Pemutus ('ditutup W9: ...' untuk butir 11, 'diubah W9' untuk butir 1, 'tetap terbuka' untuk butir 10), bukan sebagai daftar 'ditutup W9: <alasan>' di bawah tabel perubahan. Baris lama tidak dihapus, dan maknanya tetap terbaca.",
+  "'Aktivitas' ditulis dengan huruf kapital sebagai istilah ('Pelaksanaan Aktivitas pemasaran', 'nama Aktivitas'), tetapi tidak ada di tabel Definisi REG-01. Istilah itu didefinisikan di REG-02 dan RPT-01. Ini kosmetik.",
+  "Butir 4.5 dan baris Dokumen Terkait: 'register ini hanya merujuk'. Dokumen menjadi subjek kata 'merujuk'. Pemakaian ini lazim untuk dokumen dan bukan kata kerja manusia, jadi bukan pelanggaran.",
+  "Temuan sweep lama tetap ada dan di luar butir W9: tabel Rekaman menulis Pemilik file final = Brand & Marketing, sedangkan butir 4.5 menetapkan VP Commercial sebagai Pemilik informasi. Bunyi definisi Pemilik informasi juga berbeda dari SNX-ISMS-PRO-01."
+ ],
+ "butir_dikerjakan": [
+  "A8 Ruang Lingkup: kalimat baru 'Register ini adalah satu-satunya register materi, konten, dan persetujuan klaim SINUX' ditambahkan, sesuai kutipan arahan LEAD G-3 A8.",
+  "A8 pengecualian: baris REG-02 menjadi 'Pelaksanaan Aktivitas pemasaran ... hanya memuat ID persetujuan dari register ini untuk materi yang dipakai'. Bunyinya cocok dengan spec REG-02 terkini (kolom ID Persetujuan Materi di SNX-MKT-REG-01). Label (USULAN) batas cakupan lama dihapus di baris RPT-01, REG-02, dan REG-03 karena batas itu sudah diputus.",
+  "A8/B2 penurunan klasifikasi: butir 4.5 sekarang menulis bahwa Pemilik informasi mencatat penurunan di SNX-ISMS-REG-01 mengikuti SNX-ISMS-PRO-01, dan register ini hanya merujuk. Baris Peran Pemilik informasi diselaraskan. Dasarnya ada di ISMS-PRO-01 langkah 3 'Catat penurunan klasifikasi di SNX-ISMS-REG-01' (pelaku: Pemilik informasi). Residu B2 dari qa/MKT-REG-01.sweep.json hilang.",
+  "A8 Dokumen Terkait: baris REG-02, REG-03, dan RPT-01 diselaraskan tanpa label lama. 'Nama Aktivitas di SNX-MKT-REG-02' cocok dengan REG-03 (kolom Campaign Asal) dan REG-02 (kolom Nama Aktivitas). Baris baru SNX-ISMS-REG-01 'Information Asset Register' cocok dengan judul di kerangka ISMS-REG-01.",
+  "Perbaikan putaran 1: rujukan '(butir 4.5 register ini)' sekarang menunjuk butir 4.5 REG-01, yang memang mengatur penurunan klasifikasi, sehingga tidak lagi terbaca sebagai PRO-01 butir 4.5 (Pelabelan). Rujukan SNX-ISMS-PRO-01 butir 4.1 dan 4.2 tetap cocok (4.1 Klasifikasi, 4.2 hanya Pemilik informasi yang boleh menurunkan).",
+  "Open item tim baris 58 dicatat di notes sebagai open item 15 dengan makna persis: diperluas dengan validasi klaim, bukan salinan; tidak ada kata 'identik' atau 'salinan persis'. Dokumen tidak menyebut baris 58.",
+  "A3: dokumen menyebut JA-04 hanya sebagai dasar Pemverifikasi, tanpa atasan atau garis lapor, dan JA-03 tidak disebut dengan garis lapor. Tidak ada yang perlu diselaraskan, dan hal ini dicatat di notes sebagai open item 16.",
+  "Blok approval di spec sama dengan defaults v22: prepared 'Zilly Dwinata / Brand & Marketing', reviewed 'Laras Rasmawati / VP Commercial', approved 'Samuel Kristanto Utomo / President Director'.",
+  "Uji render terkini: lint_doc generic memberi fails kosong (warn 25 butir USULAN), dan blankscan memberi 'ok 15 []'."
+ ],
+ "butir_tidak_dikerjakan": [
+  "B4 (repeat_header/cant_split) khusus untuk MKT-RPT-01, jadi tidak berlaku untuk dokumen ini. Tidak ada butir wajib MKT-REG-01 yang tertinggal."
+ ],
+ "grep": "Langkah 7 dijalankan pada specs/MKT-REG-01.json, yang merupakan teks sesudah. Dokumen ini dokumen Marketing, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku langsung. Hasil hitungan tetap dicatat: 'HR Manager' 0, 'Divisi Legal' 0. Pemeriksaan bahasa pada hitungan yang sama: em-dash 0; 'dokumen sumber', 'sumber tim', 'di sumber', 'draf ini', 'belum berdokumen', 'penyusun' masing-masing 0; rujukan AI/Claude 0.",
+ "riwayat": [
+  {
+   "verdict": "FAIL",
+   "blocking": [
+    {
+     "lokasi": "Bagian 9 Dokumen Terkait, baris baru SNX-ISMS-REG-01 (spec specs/MKT-REG-01.json, tabel Dokumen Terkait)",
+     "masalah": "Rujukan butir yang baru ditambah menunjuk tempat yang salah. Kalimatnya berbunyi \"Tempat Pemilik informasi mencatat penurunan klasifikasi materi menurut SNX-ISMS-PRO-01 (butir 4.5).\" Di tabel ini, \"(butir N)\" selalu berarti butir di dokumen pada baris itu: baris SNX-ISMS-PRO-01 menulis (butir 4.1 dan 4.2) untuk butir PRO-01, dan baris SNX-OPS-SOP-05 menulis (butir 4.1) untuk butir SOP-05. Karena itu, \"(butir 4.5)\" yang terletak tepat sesudah \"SNX-ISMS-PRO-01\" terbaca sebagai SNX-ISMS-PRO-01 butir 4.5, yaitu Pelabelan (Annex A 5.13), dan isinya tidak cocok. Kalau dibaca sebagai butir milik SNX-ISMS-REG-01, butir itu tidak ada karena berkasnya xlsx tanpa butir bernomor. Penyusun tampaknya bermaksud butir 4.5 register ini, tetapi teks tidak mengatakannya. Usul perbaikan: tulis \"(butir 4.5 register ini)\", atau rujuk langkah 3 tabel prosedur SNX-ISMS-PRO-01 berikut judulnya.",
+     "bukti": "Render /tmp/claude-0/w9/render/MKT-REG-01.docx, baris Dokumen Terkait: \"SNX-ISMS-REG-01 | Information Asset Register. Tempat Pemilik informasi mencatat penurunan klasifikasi materi menurut SNX-ISMS-PRO-01 (butir 4.5).\" Kerangka /tmp/claude-0/w9/struct/ISMS-PRO-01.txt baris 35: \"4.5 Pelabelan (Annex A 5.13). Informasi PUBLIC dan INTERNAL boleh tanpa label ...\". Tempat yang memang memuat pencatatan penurunan ada di baris 65 kerangka yang sama: \"3. Catat penurunan klasifikasi di SNX-ISMS-REG-01. | Pemilik informasi\"."
+    }
+   ]
+  },
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
