@@ -39,7 +39,7 @@
      "p": "Register ini mencakup lead yang Brand & Marketing serahkan kepada Business Development, sejak tanggal serah terima sampai Business Development menyampaikan status qualification dan feedback. Register ini juga memuat laporan lead generation dan evaluasi kualitas lead per periode."
     },
     {
-     "p": "Butir berikut dikecualikan dari register ini. Pembagian isi antara SNX-MKT-REG-01, SNX-MKT-REG-02, SNX-MKT-RPT-01, dan register ini berstatus (USULAN)."
+     "p": "Butir berikut dikecualikan dari register ini."
     },
     {
      "table": {
@@ -57,16 +57,16 @@
         "Diatur di SNX-COM-SOP-01. Register ini hanya mencatat status qualification dan feedback dari Business Development."
        ],
        [
-        "Pelaksanaan campaign dan aktivitas marketing",
-        "Menjadi lingkup SNX-MKT-REG-02. Register ini hanya merujuk nama campaign di sana (USULAN)."
+        "Pelaksanaan Aktivitas pemasaran",
+        "Menjadi lingkup SNX-MKT-REG-02. Register ini hanya merujuk nama Aktivitas di sana lewat kolom Campaign Asal."
        ],
        [
         "Persetujuan materi eksternal dan validasi klaim",
-        "Menjadi lingkup SNX-MKT-REG-01 (USULAN)."
+        "Menjadi lingkup SNX-MKT-REG-01, satu-satunya register materi, konten, dan persetujuan klaim."
        ],
        [
         "Rencana pemasaran dan tinjauan kinerja marketing: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif",
-        "Menjadi lingkup SNX-MKT-RPT-01. Tabel 3 dan Tabel 4 dapat menjadi data masukan tinjauan itu (USULAN)."
+        "Menjadi lingkup SNX-MKT-RPT-01. Brand & Marketing mengisi SNX-MKT-RPT-01 dari register ini dan dari SNX-MKT-REG-02. Tabel 3 dan Tabel 4 menjadi data masukan tinjauan itu."
        ],
        [
         "Feedback dan keluhan dari customer",
@@ -843,15 +843,15 @@
        ],
        [
         "SNX-MKT-REG-01",
-        "Marketing Content, Material & Claims Approval Register. Persetujuan materi eksternal dan validasi klaim (USULAN)."
+        "Marketing Content, Material & Claims Approval Register. Satu-satunya register materi, konten, dan persetujuan klaim, termasuk validasi klaim."
        ],
        [
         "SNX-MKT-REG-02",
-        "Marketing Campaign & Activity Register. Pelaksanaan campaign dan aktivitas marketing, dengan materi yang dipakai tertaut ke ID persetujuan di SNX-MKT-REG-01. Kolom Campaign Asal merujuk nama campaign di register itu (USULAN)."
+        "Marketing Campaign & Activity Register. Pelaksanaan Aktivitas pemasaran: nama, tujuan, Channel, jadwal, PIC, Budget, status, ID materi di SNX-MKT-REG-01, dan hasil singkat. Kolom Campaign Asal merujuk nama Aktivitas di register itu."
        ],
        [
         "SNX-MKT-RPT-01",
-        "Marketing Planning & Performance Review. Rencana pemasaran dan tinjauan kinerja marketing (USULAN)."
+        "Marketing Planning & Performance Review. Rencana pemasaran dan tinjauan kinerja marketing, yang Brand & Marketing isi dari register ini dan dari SNX-MKT-REG-02."
        ],
        [
         "Belum bernomor",

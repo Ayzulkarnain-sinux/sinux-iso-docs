@@ -142,7 +142,7 @@ Perintah: `grep -n "Marketing Lead & Campaign Outc" context/audit/*.md`. Hasil: 
 | OI-7 | Retensi register dan lokasi folder Google Drive departemen Marketing (U-15) | Legal dan owner |
 | OI-8 | Header INTERNAL (worklist) berbeda dengan butir 4.14 (register terisi RESTRICTED (Internal)). Bila header diubah, footer berlabel otomatis. Bentuk pakai harian (docx dengan 10 baris per tabel atau lembar kerja) juga belum diputus | owner dan Fani |
 | OI-9 | Tabel 2 hanya menyimpan Sales Stage terbaru. Perlu keputusan apakah riwayat perubahan status dicatat di register atau cukup di CRM | owner |
-| OI-10 | Isi SNX-MKT-REG-02 (acuan nama campaign) dan SNX-MKT-RPT-01 (review kinerja) belum dikonfirmasi saat register ini disusun. Kolom Campaign Asal dan pembagian lingkup dengan RPT-01 perlu dicocokkan setelah kedua dokumen selesai. Batas cakupan empat dokumen Marketing berstatus USULAN (U-17); checklist baris 58 memuat seluruh isi Description baris 57 ditambah validasi klaim dan kolom produk/layanan, klaim, sumber/bukti, sehingga isinya cocok dengan judul baris 57 sementara judul baris 58 adalah Campaign & Activity Register | owner |
+| OI-10 | Isi SNX-MKT-REG-02 (acuan nama campaign) dan SNX-MKT-RPT-01 (review kinerja) belum dikonfirmasi saat register ini disusun. Kolom Campaign Asal dan pembagian lingkup dengan RPT-01 perlu dicocokkan setelah kedua dokumen selesai. Batas cakupan empat dokumen Marketing berstatus USULAN (U-17); checklist baris 58 memuat seluruh isi Description baris 57 ditambah validasi klaim dan kolom produk/layanan, klaim, sumber/bukti, sehingga isinya cocok dengan judul baris 57 sementara judul baris 58 adalah Campaign & Activity Register | owner ; diubah W9: owner memutus A8; batas empat dokumen sudah diputus (label USULAN pada batas dihapus) dan REG-02 sudah memakai nama Aktivitas; kolom Campaign Asal cocok dengan Nama Aktivitas di Tabel 1 REG-02. Temuan baris 58 pindah ke OI-13 |
 | OI-11 | Klausul ISO belum dicocokkan dengan teks standar (tidak ada salinan di repo); konsultan menetapkan klausul final | owner (meneruskan ke konsultan) |
 | OI-12 | Kalimat perintah kepada AI di bahan dan di berkas context/audit: nihil | tidak ada |
 
@@ -186,3 +186,27 @@ Hasil uji sweep:
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py`: All validations PASSED.
 - `python3 -I reports/orch/blankscan.py`: ok, 12 halaman, daftar halaman kosong `[]`.
 - Skrip kecil: kode SNX di badan (delapan kode, termasuk SNX-MKT-REG-01) sama persis dengan tabel Dokumen Terkait; em-dash dan en-dash nol.
+
+## ISO-W9
+
+Putaran ISO-W9 (LEAD G-3 A8; owner GO). REG-03 tetap untuk lead dan hasil; struktur tabel tidak berubah. Batas tulis: specs/MKT-REG-03.json dan notes/MKT-REG-03.md. Meta dan blok approval tidak berubah (sama dengan defaults v22 MKT). Tujuan rujukan (REG-02 Tabel 1, REG-01, RPT-01) ada dan cocok isinya.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Ruang Lingkup pengantar pengecualian | "Pembagian isi antara REG-01, REG-02, RPT-01, dan register ini berstatus (USULAN)" | kalimat dihapus (batas diputus) |
+| Pengecualian baris REG-02 | "Pelaksanaan campaign dan aktivitas marketing ... nama campaign di sana (USULAN)" | "Pelaksanaan Aktivitas pemasaran ... hanya merujuk nama Aktivitas di sana lewat kolom Campaign Asal" |
+| Pengecualian baris REG-01 | "(USULAN)" | "satu-satunya register materi, konten, dan persetujuan klaim"; label dihapus |
+| Pengecualian baris RPT-01 | "Tabel 3 dan Tabel 4 dapat menjadi data masukan tinjauan itu (USULAN)" | Brand & Marketing mengisi RPT-01 dari register ini dan REG-02; Tabel 3 dan Tabel 4 menjadi data masukan |
+| Dokumen Terkait REG-01 | persetujuan materi dan validasi klaim (USULAN) | satu-satunya register materi, konten, dan persetujuan klaim, termasuk validasi klaim |
+| Dokumen Terkait REG-02 | materi tertaut ke ID persetujuan; nama campaign (USULAN) | kolom yang dicatat REG-02 (nama, tujuan, Channel, jadwal, PIC, Budget, status, ID materi, hasil singkat); nama Aktivitas; label dihapus |
+| Dokumen Terkait RPT-01 | (USULAN) | label dihapus; Brand & Marketing mengisi RPT-01 dari register ini dan REG-02 |
+
+Open item yang ditutup atau diubah W9: lihat kolom Pemutus pada tabel Open items. Open item baru:
+
+| # | Open item | Pemutus yang disarankan |
+|---|---|---|
+| OI-13 | Description checklist baris 58 berisi pengendalian materi baris 57 yang diperluas dengan validasi klaim, bukan pelaksanaan campaign sesuai judulnya (Marketing Campaign & Activity Register); perlu dibetulkan Brand & Marketing. Pengukuran: teks baris 58 tidak identik dengan baris 57. | Brand & Marketing |
+| OI-14 | REG-02 tidak lagi punya kolom Jenis, jadi kolom Campaign Asal di sini menerima nama Aktivitas apa pun (campaign, event, atau webinar). Istilah Campaign di Definisi tetap "kegiatan marketing yang tercatat dengan nama di SNX-MKT-REG-02" | owner |
+| OI-15 | A3: dokumen ini tidak menyebut JA-03 atau JA-04 dan tidak menyebut atasan atau garis lapor keduanya; tidak ada yang diselaraskan | - |
+
+Uji (spec W9): render, `lint_doc.py ... generic`: pass true, fails kosong, 21 butir USULAN; `validate.py`: All validations PASSED; `blankscan.py`: ok 12 halaman []; `w9diff.py MKT-REG-03`: diff hanya baris di tabel di atas.
