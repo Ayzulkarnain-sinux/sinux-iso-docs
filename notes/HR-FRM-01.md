@@ -92,7 +92,7 @@ Jumlah USULAN: 11 butir (label "(USULAN)" tercetak 12 kali karena U10 muncul di 
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Dasar tingkatan jabatan belum diputus. Garis lapor JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 masih menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-04), sehingga tingkatannya ikut tidak pasti | Aziz, lalu owner untuk garis lapor |
+| 1 | Dasar tingkatan jabatan belum diputus. Garis lapor JA-03, JA-05, JA-08, JA-10, JA-11, dan JA-14 masih menunggu konfirmasi di SNX-HR-ORG-01 (K-01 sampai K-04), sehingga tingkatannya ikut tidak pasti | Aziz, lalu owner untuk garis lapor; diubah W9: JA-03 dan JA-04 kini dua garis tegas ke Direktur dan Direktur Utama (LEAD G-3 A3), tidak menunggu; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu (A4) |
 | 2 | Isi Tabel 1 (Tingkatan, sertifikasi, Dasar sertifikasi) dan Tabel 2 kosong dan menunggu keputusan HR Manager. Tidak ada sumber yang menyebut standar per tingkatan | Aziz |
 | 3 | Tempat mencatat hasil penilaian kompetensi aktual karyawan dan bukti kompetensi (ISO 9001:2015 7.2 butir b dan d) tidak ditetapkan di form ini. Checklist memuat baris SOP Performance Appraisal berstatus T3 HOLD dan Employee Personnel File Checklist; belum jelas yang mana | Aziz |
 | 4 | Retensi rekaman form ini tertulis "Belum ditetapkan" karena tidak ada sumber, dan lokasi (folder Google Drive Departemen HR) berlabel USULAN mengikuti SNX-HR-SOP-10 dan SNX-HR-SOP-12. Angka retensi dilarang tanpa sumber | Legal untuk retensi; Aziz untuk lokasi dan pemilik |
@@ -101,9 +101,9 @@ Jumlah USULAN: 11 butir (label "(USULAN)" tercetak 12 kali karena U10 muncul di 
 | 7 | Sertifikasi profesi atau vendor yang wajib per jabatan dan kontrak pelanggan yang mewajibkannya tidak ada sumber | Aziz bersama Fani untuk jabatan Operation |
 | 8 | Rujukan SNX-HR-SOP-10, SNX-HR-SOP-12, dan SNX-HR-FRM-02 cocok dengan isi spec saat ini; periksa ulang setelah FRM-02 jadi (W7) dan bila SOP-10 atau SOP-12 diubah | LEAD |
 | 9 | Jumlah baris Tabel 2 (6) menyesuaikan jumlah tingkatan yang diputus | Aziz |
-| 10 | data_conflicts yang konfirmasinya belum selesai dan relevan untuk form ini: jabatan Aziz "HR Manager" (konfirmasi: owner atau Aziz) dan ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel). Dipakai sesuai kolom "pakai", tidak dipilih ulang | Owner |
+| 10 | data_conflicts yang konfirmasinya belum selesai dan relevan untuk form ini: jabatan Aziz "HR Manager" (konfirmasi: owner atau Aziz) dan ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel). Dipakai sesuai kolom "pakai", tidak dipilih ulang | Owner; ditutup W9: jabatan Aziz HR Lead dan ejaan Kristanto berstatus selesai (defaults v22) |
 | 11 | Context/audit sintesis baris 446 menyebut "satu matriks kompetensi dan rekam pelatihan/awareness". Form ini hanya matriks standar; rekaman pelatihan dan awareness tidak dimasukkan | Aziz |
-| 12 | process_owner "HR Manager" mengikuti aturan dokumen tanpa sumber (jabatan reviewer departemen), status USULAN di defaults | Aziz |
+| 12 | process_owner "HR Manager" mengikuti aturan dokumen tanpa sumber (jabatan reviewer departemen), status USULAN di defaults | Aziz; ditutup W9: process_owner kini HR Lead (defaults v22) |
 
 ## Penanganan cacat context/audit
 
@@ -154,3 +154,19 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Tanpa sumber langsung: pembagian tugas tiga peran (U3), kolom Dasar sertifikasi hanya berisi "form ini atau kontrak pelanggan" (turunan butir 4.7 JA-001), klasifikasi RESTRICTED (Internal) dari worklist, label K-10 (nomor butir di HR-ORG-01), klausul ISO dan judulnya (U8).
 - Putaran 1 menambah: lokasi folder Google Drive Departemen HR (U11, mengikuti pola SOP-10 dan SOP-12, berlabel USULAN); retensi tidak diisi; pembeda JA-08 dan JA-09 dari HR-ORG-01; label USULAN pada pemetaan kompetensi (U9) dan pembacaan sebagai Competency Matrix (U10). Klaim pemakaian oleh auditor sudah dihapus.
 - Sudah saya perbaiki di teks: tidak ada klaim "belum ada" untuk FRM-02 atau dokumen penilaian kinerja, dan tidak ada angka retensi, lokasi penyimpanan, atau masa pengalaman minimum. Semuanya open item.
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A2 | Process Owner, Reviewed, butir 4.2 sampai 4.5, 7.3, 7.4, 7.6, 7.8, 7.9, bagian Peran, Rekaman, Acuan ISO, Dokumen Terkait, Kesimpulan | HR Manager | HR Lead |
+| A2 | Tabel 1 baris JA-14, kolom Jabatan | HR Manager | HR Lead |
+
+- SPV tidak ditambahkan: kolom Tingkatan di Tabel 1 memuat ukuran jumlah garis lapor (butir 4.3), bukan tingkat jabatan Lead/SPV; ragu, maka tidak ditambah.
+- A3: tingkatan JA-03 dan JA-04 tidak dihitung di dokumen (sel Tingkatan kosong, butir 4.3 hanya aturan). Tidak ada ukuran yang diubah, tidak ada hitung ulang. Kalimat butir 4.3 tentang garis yang menunggu konfirmasi tetap benar untuk JA-05, JA-08, JA-10, JA-11, JA-14.
+- B4 rujukan dicek terhadap kerangka: SNX-HR-JA-01 butir 4.6 dan 4.7 ada; SNX-HR-SOP-12 bagian 3 (definisi Tingkatan jabatan) dan butir 4.2 ada; SNX-HR-FRM-02 ada dengan judul sama. Tidak ada rujukan yang diubah.
+
+Open item ditutup atau diubah (status baris lama diubah di tabel Open items):
+- ditutup W9: process_owner HR Manager diganti HR Lead mengikuti defaults v22.
+- ditutup W9: konfirmasi jabatan Aziz (HR Lead) dan ejaan Samuel Kristanto Utomo berstatus selesai di defaults v22.
+- diubah W9: garis lapor JA-03 dan JA-04 sudah diputus owner; JA-05, JA-08, JA-10, JA-11, JA-14 tetap menunggu konfirmasi.

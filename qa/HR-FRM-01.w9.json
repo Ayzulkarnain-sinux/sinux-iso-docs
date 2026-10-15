@@ -1,0 +1,33 @@
+{
+ "key": "HR-FRM-01",
+ "cluster": "HR-LAIN",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "notes/HR-FRM-01.md bagian ISO-W9: header tabel perubahan punya 3 kolom (Butir | Sebelum | Sesudah), tetapi tiap baris berisi 4 sel (butir | lokasi | sebelum | sesudah). Markdown tabelnya rusak; perlu kolom Lokasi di header.",
+  "notes/HR-FRM-01.md open item 2 masih menulis 'keputusan HR Manager'. Ini berkas notes, bukan dokumen, jadi teks dokumen tidak terdampak; sebaiknya diselaraskan ke HR Lead.",
+  "Diff teks hanya berisi 20 baris penggantian HR Manager -> HR Lead. Tidak ada perubahan makna lain, tidak ada fakta baru, tidak ada kalimat baru yang perlu dicek bahasanya (em-dash 0, frasa proses penyusunan 0).",
+  "Kalimat butir 4.3 tentang garis lapor yang menunggu konfirmasi tetap benar untuk JA-05, JA-08, JA-10, JA-11, JA-14 (A4 tidak berubah). Dokumen tidak menyebut atasan JA-03/JA-04 dan sel Tingkatan kosong, jadi tidak ada label yang perlu dihapus atau dihitung ulang."
+ ],
+ "butir_dikerjakan": [
+  "Butir 1 (A2): semua sebutan HR Manager diganti HR Lead, yaitu di process_owner, blok Reviewed ('Aziz Priyo Widakdo / HR Lead'), butir 4.2, 4.3, 4.5, 7.3, 7.4, 7.6, 7.8, 7.9, tabel Peran, Tabel 1 JA-14, Rekaman (Pemilik), Acuan ISO A 6.3, Dokumen Terkait SOP-10/SOP-12, dan Kesimpulan. Hasilnya 20 baris berubah. SPV tidak ditambah dan alasannya dicatat di notes (sesuai instruksi 'bila ragu, jangan ditambah').",
+  "Butir 2 (A3): tidak ada yang perlu diubah di teks. Tingkatan JA-03/JA-04 tidak dihitung di dokumen (sel kosong, 4.3 hanya aturan) dan ukurannya tidak diubah. Notes mencatat ini dan open item 1 diperbarui (JA-03/JA-04 garis tegas, yang lain tetap menunggu).",
+  "Butir 3 (B4 rujukan): rujukan dicek terhadap kerangka dan cocok. SNX-HR-SOP-12 bagian 3 memuat definisi Tingkatan jabatan berdasarkan jumlah garis lapor sampai JA-01, dan butir 4.2 SOP-12 memuat pemakaian tingkatan FRM-01. SNX-HR-SOP-10 butir 4.2 memuat FRM-01 sebagai acuan tambahan kualifikasi, dan SNX-HR-FRM-02 ada. Tidak ada rujukan yang diubah; ini dicatat di notes.",
+  "Data defaults v22 cocok. Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', dan Approved 'Samuel Kristanto Utomo / President Director' persis sama dengan prepared_reviewed.HR dan approved_by.all.",
+  "Notes memuat bagian ISO-W9 dan menutup open item 10 dan 12 dengan alasannya."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Butir 4 dan 5 khusus HR-RPT-01 dan HR-FRM-02, jadi tidak berlaku untuk dokumen ini.",
+  "Bagian B4 'dalam peninjauan' untuk SOP Training & Development hanya berlaku di HR-FRM-02 dan HR-RPT-01; HR-FRM-01 tidak menyebutnya."
+ ],
+ "grep": "Teks render terbaru (/tmp/claude-0/w9/render/HR-FRM-01.docx, seluruh word/*.xml): 'HR Manager' = 0, 'HR Lead' = 20, 'Divisi Legal' = 0 (tidak berlaku, dokumen HR), em-dash = 0, 'SPV' = 0. specs/HR-FRM-01.json: 'HR Manager' = 0, em-dash = 0.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
