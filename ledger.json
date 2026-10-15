@@ -1912,7 +1912,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-RPT-02",
    "out_path": "out/04_Legal/SNX-LEG-RPT-02 Legal Compliance Evaluation Report (Rev00 DRAFT).docx",
    "sources": [],
@@ -1923,7 +1923,7 @@
    "open_items": [
     "Sweep (b): Ketentuan butir 4 memuat tiga tindakan dengan urutan tidak jelas (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T01:04:43Z",
+   "updated_at": "2026-10-15T01:06:00Z",
    "pen_agent": "a41798f7f2a336b69",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2084,7 +2084,7 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-MKT-REG-02",
    "out_path": "out/06_Marketing/SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).docx",
    "sources": [],
@@ -2095,7 +2095,7 @@
    "open_items": [
     "Sweep (b): parafrase REG-01 butir 4.13 di 4.6 basi; Tujuan kalimat 3 menyebut berkas tersimpan di REG-01; open item 2-3 notes basi; usulan folder Marketing vs Commercial di REG-01"
    ],
-   "updated_at": "2026-10-15T01:04:24Z",
+   "updated_at": "2026-10-15T01:06:06Z",
    "pen_agent": "af5f5073189ee8555",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-01",
@@ -2120,10 +2120,10 @@
    "open_items": [
     "Sweep (b): pengecualian Ruang Lingkup menaruh perencanaan campaign di MKT-REG-02 sekaligus MKT-RPT-01, tanpa label USULAN; selaraskan dengan batas cakupan MKT"
    ],
-   "updated_at": "2026-10-15T01:05:09Z",
+   "updated_at": "2026-10-15T01:05:12Z",
    "pen_agent": "adc43dd2ae38a3897",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 67,
@@ -2424,7 +2424,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-FRM-02",
    "out_path": "out/03_FAT/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2441,7 +2441,7 @@
    "open_items": [
     "Sweep (b): butir Cara pakai tanpa pelaku; B20 tidak cocok dengan isi kolom Access Holder; B21 tanpa label USULAN"
    ],
-   "updated_at": "2026-10-15T01:03:40Z",
+   "updated_at": "2026-10-15T01:05:21Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "adee81774ba4f9731",

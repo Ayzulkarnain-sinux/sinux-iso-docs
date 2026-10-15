@@ -31,7 +31,7 @@
      "p": "Yang dijaga: tiap materi eksternal yang dipakai sebuah campaign atau aktivitas tertaut ke ID Persetujuan Materi di SNX-MKT-REG-01, sehingga materi itu punya persetujuan dan verifikasi klaim yang tercatat sebelum dipublikasikan."
     },
     {
-     "p": "Materi final yang telah disetujui, bukti verifikasi klaim, dan catatan persetujuan tersimpan di SNX-MKT-REG-01 dan ditelusuri dari register ini lewat ID itu."
+     "p": "Materi final yang telah disetujui, bukti verifikasi klaim, dan catatan persetujuan tersimpan di lokasi yang tercatat di SNX-MKT-REG-01, dan ditelusuri dari register ini lewat ID itu."
     }
    ]
   },
@@ -42,7 +42,7 @@
      "p": "Register ini mencakup campaign dan aktivitas pemasaran SINUX untuk kebutuhan eksternal, yaitu campaign, event, dan webinar (SNX-HR-JA-01, JA-06 uraian 4), beserta materi eksternal yang dipakainya: company profile, website, social media, product brochure, presentation deck, campaign material, dan event collateral. Pencatatan berjalan sejak campaign atau aktivitas dicatat sampai selesai atau dibatalkan."
     },
     {
-     "p": "Batas dengan SNX-MKT-REG-01 (USULAN): SNX-MKT-REG-01 memuat tiap versi materi eksternal, yaitu nama materi, channel, versi, PIC, Reviewer, Approver, tanggal persetujuan, status publikasi, lokasi file final, serta klaim dan bukti pendukungnya. Register ini mencatat campaign dan aktivitas yang memakai materi itu, dan untuk materi hanya memuat ID Persetujuan Materi, tanpa isi baris SNX-MKT-REG-01."
+     "p": "Batas dokumen Marketing (USULAN, pemutus owner): SNX-MKT-RPT-01 memuat rencana pemasaran dan tinjauan kinerja, yaitu sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif. SNX-MKT-REG-01 memuat persetujuan materi eksternal dan validasi klaim. Register ini memuat pelaksanaan campaign dan aktivitas, beserta tautan tiap materi yang dipakai ke ID persetujuan di SNX-MKT-REG-01. SNX-MKT-REG-03 memuat hasil lead dan serah terima ke Sales, dan merujuk nama campaign di register ini."
     },
     {
      "p": "Butir berikut dikecualikan dari register ini:"
@@ -59,20 +59,20 @@
         "Register hanya untuk materi yang dipakai pihak di luar SINUX."
        ],
        [
-        "Persetujuan materi dan verifikasi klaim",
-        "Dicatat di SNX-MKT-REG-01. Register ini hanya menautkannya (USULAN)."
+        "Persetujuan materi eksternal dan validasi klaim",
+        "Dicatat di SNX-MKT-REG-01. Register ini hanya memuat tautan ke ID persetujuan di sana (USULAN)."
        ],
        [
         "Proposal dan quotation untuk customer tertentu",
         "Diatur di SNX-COM-SOP-02."
        ],
        [
-        "Rencana, anggaran, target, dan evaluasi hasil marketing",
+        "Rencana pemasaran dan tinjauan kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif",
         "Dicatat di SNX-MKT-RPT-01 (USULAN)."
        ],
        [
-        "Serah terima lead kepada Sales dan hasil campaign berupa lead",
-        "Dicatat di SNX-MKT-REG-03 (USULAN)."
+        "Hasil lead dan serah terima ke Sales",
+        "Dicatat di SNX-MKT-REG-03, yang merujuk nama campaign di Tabel 1 register ini (USULAN)."
        ]
       ],
       "widths_cm": [
@@ -185,7 +185,7 @@
      "p": "4.5 Brand & Marketing memakai materi hanya bila barisnya di SNX-MKT-REG-01 berstatus Disetujui atau Terbit dan kolom Tanggal Persetujuannya terisi (USULAN). Ketentuan ini sejalan dengan wewenang JA-06 menjadwalkan publikasi setelah persetujuan (SNX-HR-JA-01, JA-06 wewenang 2)."
     },
     {
-     "p": "4.6 Approver tidak menyetujui versi yang masih memuat klaim tanpa bukti pendukung, atau klaim yang Pemverifikasi tolak (SNX-MKT-REG-01 butir 4.13). Karena itu klaim materi yang dipakai campaign atau aktivitas sudah diverifikasi saat barisnya Disetujui atau Terbit (USULAN)."
+     "p": "4.6 Approver tidak menyetujui versi yang masih memuat klaim tanpa sumber atau bukti pendukung, klaim tanpa hasil verifikasi, atau klaim yang Pemverifikasi tolak (SNX-MKT-REG-01 butir 4.13). Karena itu klaim materi yang dipakai campaign atau aktivitas sudah diverifikasi saat barisnya Disetujui atau Terbit (USULAN)."
     },
     {
      "p": "4.7 Brand & Marketing mengecek baris materi di SNX-MKT-REG-01 sebelum materi dipakai, lalu menulis tanggal pengecekan di Tabel 3 (USULAN)."
@@ -593,7 +593,7 @@
       "rows": [
        [
         "Register ini: Tabel 1 sampai Tabel 3",
-        "Folder Google Drive departemen Marketing. Pemilik: VP Commercial. Pencatat: Brand & Marketing. Klasifikasi menurut butir 4.10.",
+        "Folder Google Drive departemen Commercial; jalur folder belum ditetapkan. Pemilik: VP Commercial. Pencatat: Brand & Marketing. Klasifikasi menurut butir 4.10.",
         "Belum ditetapkan"
        ],
        [
@@ -686,15 +686,15 @@
        ],
        [
         "SNX-MKT-REG-01",
-        "Marketing Content, Material & Claims Approval Register. Memuat persetujuan tiap versi materi eksternal dan verifikasi klaimnya. Register ini memuat tautan materi yang dipakai campaign dan aktivitas ke ID Persetujuan Materi di sana (USULAN)."
+        "Marketing Content, Material & Claims Approval Register. Memuat persetujuan materi eksternal dan validasi klaim. Register ini memuat tautan tiap materi yang dipakai campaign dan aktivitas ke ID persetujuan di sana (USULAN)."
        ],
        [
         "SNX-MKT-REG-03",
-        "Marketing Lead & Campaign Outcome Register. Memuat hasil marketing yang diteruskan kepada Sales, yang dikecualikan dari register ini. Kolom Campaign Asal di sana merujuk nama campaign di Tabel 1 register ini (USULAN)."
+        "Marketing Lead & Campaign Outcome Register. Memuat hasil lead dan serah terima ke Sales, yang dikecualikan dari register ini. Kolom Campaign Asal di sana merujuk nama campaign di Tabel 1 register ini (USULAN)."
        ],
        [
         "SNX-MKT-RPT-01",
-        "Marketing Planning & Performance Review. Memuat rencana, anggaran, target, dan evaluasi hasil marketing, yang dikecualikan dari register ini. Kolom Kode Aktivitas di Tabel 2 memuat tautan ke aktivitas di sana (USULAN)."
+        "Marketing Planning & Performance Review. Memuat rencana pemasaran dan tinjauan kinerja, yang dikecualikan dari register ini. Kolom Kode Aktivitas di Tabel 2 memuat tautan ke aktivitas di sana (USULAN)."
        ]
       ],
       "widths_cm": [

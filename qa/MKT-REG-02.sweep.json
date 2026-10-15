@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Tabel 3 kolom Jenis Konten/Channel; Tabel 1 dan Tabel 2 (jadwal, PIC, status aktivitas)",
+      "masalah": "Butir 2 'jangan menaruh satu isi di dua register' belum tuntas. Jenis konten dan channel per materi masih ada di Tabel 3 sekaligus di Tabel 1 SNX-MKT-REG-01 (kolom Jenis Konten, Channel). Pelaksanaan aktivitas di Tabel 1-2 masih beririsan dengan 'rencana aktivitas' dan 'realisasi' yang kini batasnya diberikan ke SNX-MKT-RPT-01. Penyusun tidak mengubah struktur karena arahan sweep mengunci struktur, dan sudah mengungkapkannya.",
+      "bukti": "specs/MKT-REG-02.json header Tabel 3 ['No','No Campaign atau Aktivitas','Jenis Konten/Channel',...]; specs/MKT-REG-01.json header Tabel 1 ['ID','Nama Materi','Jenis Konten','Channel',...]; notes/MKT-REG-02.md open item 2 dan 4."
+    },
+    {
+      "lokasi": "Ruang Lingkup paragraf 2",
+      "masalah": "Label '(USULAN, pemutus owner)' disalin dari teks instruksi. Bagi auditor, 'owner' tidak menunjuk peran di bagian 5 (process owner = VP Commercial; owner bisnis = Direktur). Bukan pemblokir: label USULAN ada, dan pola serupa sudah ada di spec lain ('(USULAN, batas menunggu owner)' di specs/OPS-FRM-08.patch.json). Usul: pakai label baku '(USULAN)' atau sebut jabatan pemutus.",
+      "bukti": "/tmp/claude-0/sweep/MKT-REG-02.diff baris @@ -27 +27; grep '(USULAN, [^)]*)' specs/*.json."
+    },
+    {
+      "lokasi": "Ruang Lingkup paragraf 2, pengecualian baris 4 dan 5, Dokumen Terkait baris SNX-MKT-REG-03",
+      "masalah": "Isi berulang antarbagian (RUNBOOK 6a butir 6). Daftar sembilan unsur RPT-01 (sasaran sampai tindakan korektif) tertulis utuh di paragraf batas dan di pengecualian baris 4. Rujukan 'REG-03 merujuk nama campaign di register ini' muncul tiga kali.",
+      "bukti": "/tmp/claude-0/sweep/MKT-REG-02.diff baris @@ -27, @@ -146, @@ -148,2, @@ -387."
+    },
+    {
+      "lokasi": "Ruang Lingkup paragraf 2",
+      "masalah": "Paragraf baru membuang daftar field REG-01 dan frasa 'untuk materi hanya memuat ID Persetujuan Materi, tanpa isi baris SNX-MKT-REG-01'. Pembatasan 'hanya' tetap ada di pengecualian baris 2 ('Register ini hanya memuat tautan ke ID persetujuan di sana'), jadi makna tidak berubah. Penghapusan ini sesuai penyelarasan butir 2.",
+      "bukti": "/tmp/claude-0/sweep/MKT-REG-02.diff baris @@ -27 dan @@ -142,2."
+    },
+    {
+      "lokasi": "Rekaman baris 1",
+      "masalah": "'jalur folder belum ditetapkan' berbentuk pasif tanpa pelaku. Rumusan yang sama sudah ada di SNX-MKT-REG-01 bagian Rekaman, jadi ini penyelarasan, bukan pola baru. 'Departemen Commercial' punya dasar di REG-01 dan tetap tercakup USULAN 13 di notes.",
+      "bukti": "specs/MKT-REG-01.json Rekaman: 'Google Drive, folder departemen Commercial; jalur folder belum ditetapkan.'"
+    },
+    {
+      "lokasi": "Catatan pengukuran (bukan temuan)",
+      "masalah": "Semua dari 10 perubahan teks bisa dipetakan ke butir 1 atau 2. 4.6 kini sama persis dengan SNX-MKT-REG-01 butir 4.13. Penghapusan 'anggaran, target' sah karena 'anggaran' tidak ada di specs/MKT-RPT-01.json. Hitungan USULAN di lint turun dari 21 ke 20 karena satu label berubah menjadi '(USULAN, pemutus owner)', bukan karena label dihapus. Tidak ada em-dash dan tidak ada rujukan internal AI baru. Butir 1 'open item 2-3 notes basi' dikerjakan di notes.",
+      "bukti": "specs/MKT-REG-01.json butir 4.13; grep 'anggaran' specs/MKT-RPT-01.json (nol hasil); notes/MKT-REG-02.md bagian Sweep."
+    }
+  ]
+}

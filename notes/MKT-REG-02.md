@@ -6,7 +6,7 @@ Perubahan cakupan di tengah penyusunan: draf pertama saya adalah register materi
 
 Uji terakhir (spec versi kedua):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/MKT-REG-02.json /tmp/pen-MKT-REG-02/MKT-REG-02.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "21 butir (USULAN) menunggu ACC".
+- `python3 -I tools/lint_doc.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "20 butir (USULAN) menunggu ACC" (sesudah sweep; lihat bagian Sweep).
 - Tata letak: docx dikonversi ke PDF dengan soffice (11 halaman). Seluruh halaman dilihat sebagai montase 45 dpi; halaman 8 dan 9 (Tabel 1 sampai Tabel 3) dilihat lagi pada 70 dpi: header kolom terbaca utuh, tidak ada kata terpotong. Tabel 1 terpotong di batas halaman 8 dan 9 (tiga baris di halaman 8); renderer tidak punya kendali pindah halaman, jadi dibiarkan. Halaman lain tidak dilihat pada resolusi tinggi (UNMEASURED).
 - Validator OOXML skill docx tidak dijalankan (UNMEASURED); lint menguji id bookmark ganda.
 - Kecocokan kode SNX di badan dengan bagian Dokumen Terkait diperiksa dengan skrip kecil: 7 kode di badan, nol kode kurang, nol kode berlebih.
@@ -35,15 +35,15 @@ Pemetaan kriteria baris 58 ke dokumen. Sejak keputusan cakupan, unsur materi dan
 | Mengendalikan materi dan konten pemasaran eksternal: company profile, website, social media, product brochure, presentation deck, campaign material, event collateral | Ruang Lingkup (tujuh jenis persis seperti kriteria); Tabel 3 kolom Jenis Konten/Channel (Cara Mengisi 6.11); Ketentuan 4.4 sampai 4.9 | Ruang Lingkup REG-01 memuat tujuh jenis yang sama |
 | Keakuratan informasi dan validasi klaim sebelum dipublikasikan | Ketentuan 4.5 (materi dipakai hanya bila Disetujui atau Terbit), 4.6, 4.7, 4.8 | Tabel 4 Klaim dan Bukti Pendukung; butir 4.13 (Approver tidak menyetujui klaim tanpa bukti) |
 | Nama materi | tidak ada (sengaja, tanpa duplikasi) | Tabel 1 kolom Nama Materi |
-| Jenis konten/channel | Tabel 3 kolom Jenis Konten/Channel | Tabel 1 kolom Channel |
-| Produk/layanan terkait | Tabel 1 kolom Produk/Layanan Terkait, pada tingkat campaign atau aktivitas | tidak ada kolom ini di spec REG-01 saat ini (lihat open item 2) |
+| Jenis konten/channel | Tabel 3 kolom Jenis Konten/Channel (menumpuk dengan REG-01; open item 2) | Tabel 1 kolom Jenis Konten dan Channel |
+| Produk/layanan terkait | Tabel 1 kolom Produk/Layanan Terkait, pada tingkat campaign atau aktivitas | Tabel 1 kolom Produk atau Layanan Terkait, pada tingkat materi (lihat open item 2) |
 | Versi | tidak ada | Tabel 1 kolom Versi |
-| Klaim yang perlu diverifikasi; sumber/bukti pendukung | tidak ada | Tabel 4 kolom Klaim dan Bukti Pendukung |
+| Klaim yang perlu diverifikasi; sumber/bukti pendukung | tidak ada | Tabel 4 kolom Klaim yang Perlu Diverifikasi dan Sumber atau Bukti Pendukung; hasil di Tabel 5 |
 | PIC | Tabel 1 kolom PIC (PIC campaign atau aktivitas) | Tabel 2 kolom PIC (PIC materi) |
 | Reviewer/approver; tanggal persetujuan | tidak ada; Tabel 3 kolom Tanggal Pengecekan Persetujuan mencatat kapan Brand & Marketing mengecek baris itu | Tabel 2 kolom Reviewer, Approver, Tanggal Persetujuan |
 | Status publikasi | tidak ada | Tabel 3 kolom Status Publikasi |
 | Lokasi file final | tidak ada | Tabel 1 kolom Lokasi File Final |
-| Bukti: materi final yang telah disetujui; bukti verifikasi klaim yang relevan; catatan persetujuan sebelum dipublikasikan | Tujuan kalimat 3; Rekaman baris 2 (lokasi dan pemilik mengikuti REG-01) | Lokasi File Final; Tabel 4; kolom Bukti Persetujuan |
+| Bukti: materi final yang telah disetujui; bukti verifikasi klaim yang relevan; catatan persetujuan sebelum dipublikasikan | Tujuan kalimat 3; Rekaman baris 2 (lokasi dan pemilik mengikuti REG-01) | Tabel 1 kolom Lokasi File Final; Tabel 4 dan Tabel 5 (bukti verifikasi); Tabel 2 kolom Bukti Persetujuan |
 | Klausul ISO (checklist tidak memberi acuan) | Bagian Acuan ISO, satu label "(USULAN, perlu konfirmasi konsultan)" | tidak berlaku |
 
 Penilaian manusia: apakah tautan ke REG-01 memenuhi Description baris 58 tanpa menyalin field minimumnya adalah keputusan cakupan orkestrator. Pemenuhan penuh tiap field oleh REG-02 sendiri tidak bisa dibuktikan mesin. Owner atau verifikator menilai (open item 1).
@@ -76,7 +76,7 @@ Fakta pendukung (dari spec repo yang masih Draft, bukan Drive; tanpa fileId):
 2. Jabatan di bagian Peran dipetakan ke daftar jabatan SNX-HR-ORG-01: Brand & Marketing (JA-06) dan VP Commercial (JA-03). Peran Reviewer, Approver, dan Pemverifikasi atas materi tidak diulang di register ini; Peran menunjuk SNX-MKT-REG-01. Peran sumber yang tidak ada di daftar jabatan: nihil.
 3. Judul "Campaign & Activity Register" dibaca sebagai register pelaksanaan campaign dan aktivitas, mengikuti arahan orkestrator. "Aktivitas" dalam register ini berarti kegiatan di luar campaign (event, webinar), karena JA-06 uraian 4 menyebut "event/webinar/campaign" berdampingan. SNX-MKT-RPT-01 memakai "Aktivitas" lebih luas (campaign, konten, event, webinar); beda cakupan istilah itu dicatat di open item 4.
 4. Definisi Campaign dan Aktivitas adalah rumusan netral penyusun, tanpa sumber persis. JA-06 uraian 4 hanya menyebut ketiga kata itu. Definisi tidak membawa fakta SINUX, jadi tidak diberi label (USULAN).
-5. ID Persetujuan Materi dibaca sebagai nomor baris Tabel 1 SNX-MKT-REG-01, karena spec REG-01 saat ini tidak punya kolom ID atau kode tersendiri. Bila REG-01 menambah kode, definisi di register ini diganti (open item 6).
+5. ID Persetujuan Materi dibaca sebagai nomor yang tertulis di kolom ID Tabel 1 SNX-MKT-REG-01 untuk satu versi dari satu materi di satu channel. REG-01 menyebutnya "ID persetujuan"; register ini memakai "ID Persetujuan Materi" (open item 6).
 6. Materi dipakai campaign atau aktivitas hanya bila baris REG-01 berstatus Disetujui atau Terbit dan Tanggal Persetujuannya terisi (USULAN 7). "Terbit" dipakai karena materi yang sudah tayang sebelumnya juga boleh dipakai ulang campaign baru. Sumber diam.
 7. Kolom Status memakai empat nilai (Direncanakan, Berjalan, Selesai, Dibatalkan). SNX-MKT-RPT-01 memakai tiga nilai berbeda untuk Status Pelaksanaan bulanan (Terlaksana, Tertunda, Dibatalkan). Nama kolom sengaja "Status" supaya tidak bentrok; nilai tidak diselaraskan (open item 4).
 8. "Direktur (COO)" dan "COO" tidak muncul di badan dokumen, jadi aturan sebutan pertama tidak terpicu. Samuel di badan dokumen ditulis "Direktur Utama" (Peran dan Kesimpulan).
@@ -102,7 +102,7 @@ Lint menghitung 21 kemunculan "(USULAN)" ditambah satu "(USULAN, perlu konfirmas
 | 10 | Materi yang ternyata dipakai tanpa persetujuan: Brand & Marketing menghentikan pemakaian dan melapor, VP Commercial memutuskan tindak lanjut | Ketentuan 4.8 | owner |
 | 11 | Beralih ke versi baru = baris baru di Tabel 3 sesudah versi itu Disetujui, baris lama tidak dihapus | Ketentuan 4.9 | owner |
 | 12 | Register berklasifikasi INTERNAL | Ketentuan 4.10; Acuan ISO | owner |
-| 13 | Folder Google Drive departemen Marketing sebagai lokasi simpan; pemilik VP Commercial; pencatat Brand & Marketing | Ketentuan 4.11; Rekaman baris 1 | owner |
+| 13 | Folder Google Drive departemen Commercial (sama dengan SNX-MKT-REG-01; unit JA-06 adalah Commercial) sebagai lokasi simpan, jalur folder belum ditetapkan; pemilik VP Commercial; pencatat Brand & Marketing | Ketentuan 4.11; Rekaman baris 1 | owner |
 | 14 | Retensi register: "Belum ditetapkan", tanpa angka; retensi materi, bukti, dan catatan persetujuan "Mengikuti SNX-MKT-REG-01" | Rekaman | Legal |
 | 15 | Pembagian tugas Brand & Marketing dan VP Commercial; VP Commercial sebagai pemilik register (process_owner); tinjauan tahunan oleh VP Commercial | Peran; Kesimpulan; meta process_owner | owner |
 | 16 | Nilai kolom Jenis (Campaign, Event, Webinar, Lainnya) dan nilai kolom Status (empat nilai) | Cara Mengisi 6.3, 6.8; Definisi Status Campaign atau Aktivitas | owner |
@@ -115,12 +115,12 @@ Tautan Kode Aktivitas ke SNX-MKT-RPT-01 (Tabel 2, Cara Mengisi 6.9, Dokumen Terk
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
 | 1 | Description baris 58 identik dengan baris 57; cakupan diputus owner. Catatan pengukuran: teks di config/checklist.json tidak identik. Baris 58 lebih panjang dan menambah hal yang tidak ada di baris 57: validasi klaim produk/layanan sebelum publikasi; field produk/layanan terkait, jenis konten (baris 57 hanya channel), klaim yang perlu diverifikasi, dan sumber/bukti pendukung; serta bukti verifikasi klaim. Judul baris 58 ("Campaign & Activity") tidak dibahas Description-nya sama sekali. Spec ini mengikuti arahan orkestrator (campaign dan aktivitas, materi lewat tautan ke REG-01), sehingga pemenuhan field minimum bergantung pada REG-01. Bila owner memutus REG-02 harus memenuhi Description-nya sendiri, struktur lama (materi dan klaim langsung di tabel) harus dibuat ulang | owner |
-| 2 | Spec SNX-MKT-REG-01 saat ini tidak punya kolom Produk/Layanan Terkait dan tidak punya kolom jenis konten (hanya Channel). Register ini memuat produk/layanan pada tingkat campaign atau aktivitas (Tabel 1) dan jenis konten per materi (Tabel 3). Bila produk/layanan harus tercatat per materi, kolomnya ditambah di REG-01 | owner |
-| 3 | Dokumen lane lain masih menggambarkan REG-02 dengan cakupan lama dan perlu disesuaikan oleh orkestrator (di luar batas tulis saya): specs/MKT-REG-01.json bagian Dokumen Terkait, baris SNX-MKT-REG-02 ("Register materi pemasaran yang beririsan dengan register ini"); specs/MKT-RPT-01.json bagian Ruang Lingkup, baris pengecualian pertama ("Ada di SNX-MKT-REG-01 dan SNX-MKT-REG-02 ... persetujuan materi eksternal ... validasi klaim"), dan bagian Dokumen Terkait baris SNX-MKT-REG-02; specs/MKT-REG-03.json bagian Ruang Lingkup menulis "Perencanaan dan pelaksanaan campaign dan aktivitas marketing" sebagai lingkup REG-02, padahal register ini memuat pelaksanaan saja dan rencana ada di SNX-MKT-RPT-01 | orkestrator, owner |
+| 2 | Penumpukan isi dengan SNX-MKT-REG-01 yang tersisa: spec REG-01 sekarang punya kolom Jenis Konten, Channel, dan Produk atau Layanan Terkait per materi (Tabel 1). Register ini masih punya kolom Jenis Konten/Channel per materi (Tabel 3) dan Produk/Layanan Terkait per campaign atau aktivitas (Tabel 1). Struktur tidak diubah di putaran sweep karena arahan melarangnya. Pilihan: hapus kolom Jenis Konten/Channel dari Tabel 3 (REG-01 sudah memuatnya lewat ID), atau pertahankan sebagai bantu baca | owner |
+| 3 | Penyelarasan dokumen lane lain sudah terjadi sebagian: REG-01 (Dokumen Terkait dan Ruang Lingkup), RPT-01, dan REG-03 sudah memakai REG-02 sebagai register pelaksanaan campaign dan aktivitas. Yang belum diperiksa ulang: kalimat tiap dokumen itu tentang REG-02 terhadap batas di Ruang Lingkup register ini, termasuk kalimat REG-03 "Perencanaan dan pelaksanaan campaign dan aktivitas marketing" (register ini hanya memuat pelaksanaan; rencana ada di RPT-01) | orkestrator |
 | 4 | Irisan dengan SNX-MKT-RPT-01: Aktivitas beserta jadwal mulai, selesai, PIC, dan status pelaksanaan tercatat di kedua dokumen (Tabel Aktivitas dan tabel Pelaksanaan di RPT-01; Tabel 1 dan 2 di sini). Kolom Kode Aktivitas menautkan keduanya, tetapi belum diputus mana yang menjadi induk. Nilai status juga beda (Terlaksana, Tertunda, Dibatalkan di RPT-01; Direncanakan, Berjalan, Selesai, Dibatalkan di sini), dan cakupan kata "Aktivitas" beda (asumsi 3) | owner |
 | 5 | Rujukan butir SNX-MKT-REG-01 (4.1, 4.5, 4.8, 4.13) dan nama kolom (Tanggal Persetujuan) memakai spec Draft. Periksa ulang sesudah REG-01 final | owner |
-| 6 | ID Persetujuan Materi dibaca sebagai nomor baris Tabel 1 REG-01 (asumsi 5). Bila REG-01 memberi kode atau ID tersendiri, definisi dan judul kolom Tabel 3 diganti | owner |
-| 7 | Retensi rekaman dan lokasi folder Marketing di Google Drive (USULAN 13 dan 14) belum ada keputusan tertulis | Legal, owner |
+| 6 | Istilah beda antardokumen: REG-01 memakai "ID persetujuan" (kolom ID, dan kolom ID Materi di Tabel 4), register ini memakai "ID Persetujuan Materi". Belum diseragamkan karena di luar butir sweep. Bila owner memutus satu istilah, definisi, judul kolom Tabel 3, dan Cara Mengisi 6.13 diganti | owner |
+| 7 | Retensi rekaman dan jalur folder Commercial di Google Drive (USULAN 13 dan 14) belum ada keputusan tertulis | Legal, owner |
 | 8 | Kolom Kode Aktivitas mengandaikan tiap aktivitas di SNX-MKT-RPT-01 punya Kode unik. Spec RPT-01 punya kolom Kode, tetapi aturan penomorannya belum diperiksa | owner |
 
 ## Penanganan cacat context/audit
@@ -166,3 +166,36 @@ Cacat dari dokumen terdekat, dicek terhadap register ini:
 | Definisi Campaign dan Aktivitas | Rumusan netral tanpa sumber persis (asumsi 4) |
 
 Sesudah dua pertanyaan itu dijawab, teks spec diperbaiki sesuai butir 4 sampai 6, spec dirender ulang, dan lint dijalankan ulang: `"pass": true`, `"fails": []`.
+
+## Sweep
+
+Putaran penghalusan sesudah DONE. Batas tulis: specs/MKT-REG-02.json dan notes/MKT-REG-02.md. Sepuluh baris teks spec berubah (satu butir per baris di bawah); fakta, angka, nama, dan struktur tabel tidak berubah (meta identik, jumlah baris teks 117 sebelum dan sesudah). Sumber perbandingan: specs/MKT-REG-01.json versi sekarang dan qa/MKT-REG-02.verify.json.
+
+| # | Letak | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Tujuan, kalimat 3 | "... tersimpan di SNX-MKT-REG-01 dan ditelusuri dari register ini lewat ID itu." | "... tersimpan di lokasi yang tercatat di SNX-MKT-REG-01, dan ditelusuri dari register ini lewat ID itu." (REG-01 hanya mencatat lokasi; berkasnya di tempat lain) |
+| 2 | Ketentuan 4.6 | "Approver tidak menyetujui versi yang masih memuat klaim tanpa bukti pendukung, atau klaim yang Pemverifikasi tolak (SNX-MKT-REG-01 butir 4.13)." | "... klaim tanpa sumber atau bukti pendukung, klaim tanpa hasil verifikasi, atau klaim yang Pemverifikasi tolak (SNX-MKT-REG-01 butir 4.13)." Kalimat kedua (turunan, berlabel USULAN) tidak berubah dan kini sah karena frasa "klaim tanpa hasil verifikasi" ada di REG-01 4.13 |
+| 3 | Rekaman, baris 1 | "Folder Google Drive departemen Marketing. Pemilik: ..." | "Folder Google Drive departemen Commercial; jalur folder belum ditetapkan. Pemilik: ..." Diselaraskan dengan REG-01 dan unit JA-06 (Commercial). Keputusan tetap USULAN 13, pemutus owner |
+| 4 | Ruang Lingkup, paragraf 2 | "Batas dengan SNX-MKT-REG-01 (USULAN): SNX-MKT-REG-01 memuat tiap versi materi eksternal, yaitu nama materi, channel, ... serta klaim dan bukti pendukungnya. Register ini mencatat campaign dan aktivitas ... untuk materi hanya memuat ID Persetujuan Materi ..." | "Batas dokumen Marketing (USULAN, pemutus owner):" empat kalimat, satu per dokumen: RPT-01 = rencana pemasaran dan tinjauan kinerja (sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, tindakan korektif); REG-01 = persetujuan materi eksternal dan validasi klaim; register ini = pelaksanaan campaign dan aktivitas beserta tautan ke ID persetujuan di REG-01; REG-03 = hasil lead dan serah terima ke Sales, merujuk nama campaign di register ini |
+| 5 | Ruang Lingkup, pengecualian baris 2 | "Persetujuan materi dan verifikasi klaim \| Dicatat di SNX-MKT-REG-01. Register ini hanya menautkannya (USULAN)." | "Persetujuan materi eksternal dan validasi klaim \| Dicatat di SNX-MKT-REG-01. Register ini hanya memuat tautan ke ID persetujuan di sana (USULAN)." |
+| 6 | Ruang Lingkup, pengecualian baris 4 | "Rencana, anggaran, target, dan evaluasi hasil marketing \| Dicatat di SNX-MKT-RPT-01 (USULAN)." | "Rencana pemasaran dan tinjauan kinerja: sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, dan tindakan korektif \| Dicatat di SNX-MKT-RPT-01 (USULAN)." Kata "anggaran" dan "target" dihapus karena tidak ada di batas yang diputus orkestrator |
+| 7 | Ruang Lingkup, pengecualian baris 5 | "Serah terima lead kepada Sales dan hasil campaign berupa lead \| Dicatat di SNX-MKT-REG-03 (USULAN)." | "Hasil lead dan serah terima ke Sales \| Dicatat di SNX-MKT-REG-03, yang merujuk nama campaign di Tabel 1 register ini (USULAN)." |
+| 8 | Dokumen Terkait, SNX-MKT-REG-01 | "Memuat persetujuan tiap versi materi eksternal dan verifikasi klaimnya. ... tautan materi ... ke ID Persetujuan Materi di sana (USULAN)." | "Memuat persetujuan materi eksternal dan validasi klaim. Register ini memuat tautan tiap materi yang dipakai campaign dan aktivitas ke ID persetujuan di sana (USULAN)." |
+| 9 | Dokumen Terkait, SNX-MKT-REG-03 | "Memuat hasil marketing yang diteruskan kepada Sales, yang dikecualikan ..." | "Memuat hasil lead dan serah terima ke Sales, yang dikecualikan dari register ini. Kolom Campaign Asal di sana merujuk nama campaign di Tabel 1 register ini (USULAN)." |
+| 10 | Dokumen Terkait, SNX-MKT-RPT-01 | "Memuat rencana, anggaran, target, dan evaluasi hasil marketing, yang dikecualikan ..." | "Memuat rencana pemasaran dan tinjauan kinerja, yang dikecualikan dari register ini. Kolom Kode Aktivitas di Tabel 2 memuat tautan ke aktivitas di sana (USULAN)." |
+
+Butir sweep 1 "open item 2-3 notes basi": open item 2 dan 3 ditulis ulang (kolom REG-01 sudah ada; penyelarasan dokumen lain sudah sebagian). Open item 6 dan 7, asumsi 5, USULAN 13, dan empat baris tabel pemetaan kriteria ikut diperbarui karena memuat klaim basi yang sama.
+
+Tidak diubah karena di luar butir sweep, menunggu keputusan orkestrator (temuan nonblocking pemeriksa di qa/MKT-REG-02.verify.json):
+- Tabel Peran, baris Brand & Marketing: rujukan butir tidak memuat 4.8, padahal sel itu menyebut menghentikan pemakaian materi tanpa persetujuan.
+- Ketentuan 4.7 dan 4.8: tidak ada pemicu pengecekan ulang bila baris REG-01 berubah menjadi Ditarik saat campaign masih Berjalan.
+- Cara Mengisi 6.11 dan 6.12 dan Tabel 3: jenis konten dan channel satu sel, dan "bila materi punya channel" tidak sejalan dengan REG-01 butir 4.1 (satu baris satu channel). Terkait open item 2.
+- Istilah "ID Persetujuan Materi" lawan "ID persetujuan" (open item 6).
+- Pasangan "campaign atau aktivitas" yang berat di 24 baris, dua pasif tanpa pelaku, dan satu pergeseran makna di pengecualian materi internal ("dipakai pihak di luar SINUX" maksudnya "dipakai untuk pihak di luar SINUX").
+
+Uji sesudah sweep (semua dijalankan pada spec versi sweep):
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/MKT-REG-02.json /tmp/pen-MKT-REG-02/MKT-REG-02.docx`: selesai tanpa galat.
+- `python3 -I tools/lint_doc.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx generic`: `"pass": true`, `"fails": []`, satu warn "20 butir (USULAN) menunggu ACC".
+- `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx`: "All validations PASSED!" (386 paragraf).
+- `python3 -I reports/orch/blankscan.py /tmp/pen-MKT-REG-02/MKT-REG-02.docx`: `ok 11 MKT-REG-02.docx []` (nol halaman kosong).
+- Skrip kecil: 7 kode SNX di badan, nol kurang, nol berlebih di Dokumen Terkait; nol em-dash dan en-dash.
