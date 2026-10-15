@@ -240,3 +240,27 @@ nihil. Label di baris Peran Business Development dipindah ke akhir sel (asli: "M
 - .procedures[2].steps[2][0]: tanpa label; aturan penerusan ke Direktur Utama di butir 4.8 bukan bagian berlabel; angka TOP tidak dinyatakan ulang.
 - .exceptions[2][1]: tanpa label; aturan penerusan ke Direktur Utama di butir 4.8 bukan bagian berlabel.
 - .records[3][1]: tanpa label; kalimat akses di butir 4.10 berada di luar kalimat berlabel (label 4.10 melekat pada klasifikasi).
+### W10 audit pointer
+- .definitions[29][1]: lengkap; kalimat penunjuk "Lama dan titik awal hitungannya ada di butir 4.8" dibuang (contoh persis STYLE §3.2); 14 hari kalender sejak tanggal invoice (USULAN) tetap di butir 4.8, dan langkah yang memakainya kini merujuk butir 4.8 (lihat dua baris prosedur di bawah).
+- .policy[0]: lengkap; "empat dokumen pendukung (bagian 3)" diganti empat dokumen dari definisi Dokumen pendukung (PKS, PO/SPK, BAST, NPWP klien), sama persis.
+- .policy[11]: lengkap; "Masa simpannya ada di bagian 11" diganti nilai tabel Record "minimal 10 tahun" (tidak berlabel USULAN di tabel).
+- .roles[0][1]: lengkap; penunjuk "(butir 6.1)" dibuang; tugas dan label (USULAN) tetap.
+- .roles[1][1]: lengkap; penunjuk "(butir 6.1)" dibuang; catatan pemetaan jabatan dipindah dan tercatat di atas (STYLE §3.8).
+- .roles[2][1]: lengkap; penunjuk "(butir 6.1 sampai 6.5 dan bagian 9)" dibuang; semua tugas tetap, "mencocokkan PKS, PO, dan BAST" ditulis sebagai 3-way matching yang didefinisikan di bagian 3.
+- .roles[2][2]: lengkap; "batas wewenang ada di butir 4.4" diganti isi butir 4.4 (hanya setelah persetujuan tertulis Finance Lead).
+- .roles[3][1]: lengkap; penunjuk "(butir 6.3)" dibuang; lima tugas dan urutannya tetap.
+- .roles[3][2]: lengkap; "batas wewenang atas jatuh tempo ada di butir 4.8" diganti isi butir 4.8 yang berlaku untuk Finance Lead.
+- .roles[4][1]: lengkap; penunjuk "(butir 4.8 dan 6.3)" dan "(butir 4.16)" dibuang; dua persetujuan tetap.
+- .procedures[1].steps[0][0]: lengkap; "(butir 4.3)" diganti objek 3-way matching (nominal PKS, acuan PO, BAST); syarat waktu tetap dari urutan langkah (sebelum e-Faktur Pajak).
+- .procedures[1].steps[2][0]: rujukan dikembalikan "(butir 4.8)", karena penyusun draf butuh TOP standar dan titik awal hitungan untuk menulis jatuh tempo, dan definisi TOP tidak lagi memuatnya.
+- .procedures[2].steps[2][0]: rujukan dikembalikan "(butir 4.8)", karena "TOP standar" (14 hari kalender, USULAN) hanya ditetapkan di butir 4.8.
+- .exceptions[1][1]: lengkap; "(butir 4.9)" dan "(butir 4.14)" diganti isinya (alasan dan bukti persetujuan di arsip digital FAT, riwayat di log ketidaksesuaian).
+- .exceptions[2][1]: lengkap; penunjuk "(butir 4.8 dan 6.3)" dibuang; persetujuan tertulis Direktur Utama tetap; kondisinya tertulis di kolom pertama baris itu.
+- .related_documents[1][1]: lengkap; kalimat penunjuk "didefinisikan di bagian 3" dibuang.
+- .related_documents[4][1]: lengkap; penunjuk "(butir 6.1)" dibuang.
+- .related_documents[5][1]: lengkap; penunjuk "(butir 6.2)" dibuang.
+- .related_documents[6][1]: lengkap; penunjuk "(bagian 3)" dibuang.
+- .records[0][1]: lengkap; penunjuk "(butir 4.12)" dibuang; struktur folder dan pemilik tetap.
+- .records[1][1]: lengkap; penunjuk "(butir 6.5)" dibuang.
+- .records[2][1]: lengkap; penunjuk "(butir 4.9)" dibuang; lokasi arsip digital FAT tetap.
+- .records[3][1]: lengkap; "(butir 4.10)" diganti isinya (hanya diakses personel FAT dan Direktur Utama).

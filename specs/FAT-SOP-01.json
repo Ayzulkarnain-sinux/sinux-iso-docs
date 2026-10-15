@@ -260,7 +260,7 @@
      "e-Faktur Pajak (PDF)"
     ],
     [
-     "Susun draf invoice di Templat Invoice Resmi FAT (Google Sheets), berisi nomor invoice, tanggal penerbitan, rincian pekerjaan, nominal PPN, estimasi PPh Pasal 23, dan jatuh tempo sesuai TOP.",
+     "Susun draf invoice di Templat Invoice Resmi FAT (Google Sheets), berisi nomor invoice, tanggal penerbitan, rincian pekerjaan, nominal PPN, estimasi PPh Pasal 23, dan jatuh tempo sesuai TOP (butir 4.8).",
      "Finance Staff",
      "Draf invoice di Google Sheets"
     ]
@@ -280,7 +280,7 @@
      "Hasil pemeriksaan pajak"
     ],
     [
-     "Teruskan draf invoice ke Direktur Utama jika TOP di atas TOP standar.",
+     "Teruskan draf invoice ke Direktur Utama jika TOP di atas TOP standar (butir 4.8).",
      "Finance Lead",
      "Draf invoice diteruskan ke Direktur Utama"
     ],
