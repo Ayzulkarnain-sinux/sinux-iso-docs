@@ -1,6 +1,6 @@
-# LEDGER ringkas (dibuat dari ledger.json, 2026-10-14T23:49:47Z)
+# LEDGER ringkas (dibuat dari ledger.json, 2026-10-15T00:44:51Z)
 
-Wave berjalan: W4. Hitungan state: {'DONE': 52, 'LINT_PASS': 1, 'IN_PROGRESS': 5, 'QUEUED': 12, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 4.
+Wave berjalan: W7. Hitungan state: {'DONE': 62, 'LINT_PASS': 3, 'IN_PROGRESS': 5, 'HOLD': 16, 'SKIP': 2}. Guide terakhir dibaca: G-0. Tech fix: 5.
 
 | Key | Wave | State | Berkas | Verifikasi | USULAN | Open items |
 |---|---|---|---|---|---|---|
@@ -19,19 +19,19 @@ Wave berjalan: W4. Hitungan state: {'DONE': 52, 'LINT_PASS': 1, 'IN_PROGRESS': 5
 | ISMS-SOP-04 | W2 | DONE | SNX-ISMS-SOP-04 IT Asset & Configuration Management (Rev00 DRAFT).docx | PASS | 3 | 1 |
 | ISMS-SOP-05 | W2 | DONE | SNX-ISMS-SOP-05 Vulnerability & Patch Management (Rev00 DRAFT).docx | PASS | 12 | 0 |
 | ISMS-PLN-01 | W2 | DONE | SNX-ISMS-PLN-01 Business Continuity & IT Recovery Plan (Rev00 DRAFT).docx | PASS | 18 | 1 |
-| FAT-SOP-01 | W3 | DONE | SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx | PASS | 7 | 0 |
-| FAT-SOP-05 | W3 | DONE | SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx | PASS | 28 | 0 |
-| LEG-SOP-01 | W3 | DONE | SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).docx | PASS | 22 | 0 |
-| LEG-SOP-02 | W3 | DONE | SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx | PASS | 17 | 1 |
+| FAT-SOP-01 | W3 | DONE | SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx | PASS | 8 | 0 |
+| FAT-SOP-05 | W3 | DONE | SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx | PASS | 29 | 0 |
+| LEG-SOP-01 | W3 | DONE | SNX-LEG-SOP-01 Legal Operational (Rev00 DRAFT).docx | PASS | 24 | 0 |
+| LEG-SOP-02 | W3 | DONE | SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx | PASS | 18 | 1 |
 | COM-SOP-01 | W3 | DONE | SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx | PASS | 14 | 0 |
 | HR-SOP-08 | W3 | DONE | SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx | PASS | 28 | 0 |
-| HR-SOP-10 | W4 | DONE | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | PASS | 36 | 0 |
-| HR-SOP-11 | W4 | DONE | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 52 | 2 |
-| HR-SOP-12 | W4 | DONE | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 46 | 2 |
-| HR-SOP-13 | W4 | DONE | SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx | PASS | 57 | 3 |
-| FAT-SOP-04 | W4 | DONE | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 35 | 1 |
-| LEG-SOP-03 | W4 | DONE | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 44 | 2 |
-| COM-SOP-02 | W4 | DONE | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 12 | 1 |
+| HR-SOP-10 | W4 | LINT_PASS | SNX-HR-SOP-10 Promotion (Rev00 DRAFT).docx | PASS | 38 | 0 |
+| HR-SOP-11 | W4 | IN_PROGRESS | SNX-HR-SOP-11 Demotion (Rev00 DRAFT).docx | PASS | 52 | 2 |
+| HR-SOP-12 | W4 | IN_PROGRESS | SNX-HR-SOP-12 Rotation (Rev00 DRAFT).docx | PASS | 46 | 2 |
+| HR-SOP-13 | W4 | LINT_PASS | SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx | PASS | 59 | 3 |
+| FAT-SOP-04 | W4 | IN_PROGRESS | SNX-FAT-SOP-04 Financial Document Control & Retention (Rev00 DRAFT).docx | PASS | 35 | 1 |
+| LEG-SOP-03 | W4 | IN_PROGRESS | SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx | PASS | 44 | 2 |
+| COM-SOP-02 | W4 | IN_PROGRESS | SNX-COM-SOP-02 Proposal, Quotation & Pricing Control (Rev00 DRAFT).docx | PASS | 12 | 1 |
 | OPS-FRM-01 | W5 | DONE | SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx | PASS | 5 | 0 |
 | OPS-FRM-02 | W5 | DONE | SNX-OPS-FRM-02 Project Risk Register (Rev00 DRAFT).xlsx | PASS | 8 | 0 |
 | OPS-FRM-03 | W5 | DONE | SNX-OPS-FRM-03 Project Progress Monitoring Report (Rev00 DRAFT).docx | - | 1 | 0 |
@@ -56,21 +56,21 @@ Wave berjalan: W4. Hitungan state: {'DONE': 52, 'LINT_PASS': 1, 'IN_PROGRESS': 5
 | LEG-FRM-03 | W6 | DONE | SNX-LEG-FRM-03 Data Protection & Confidentiality Compliance Review (Rev00 DRAFT).docx | PASS | 33 | 1 |
 | LEG-REG-02 | W6 | DONE | SNX-LEG-REG-02 Legal Risk Register (Rev00 DRAFT).docx | PASS | 16 | 1 |
 | LEG-RPT-01 | W6 | DONE | SNX-LEG-RPT-01 Legal Compliance Monitoring & Corrective Action Report (Rev00 DRAFT).docx | PASS | 34 | 1 |
-| HR-FRM-01 | W7 | LINT_PASS | SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx | - | 13 | 0 |
-| HR-FRM-02 | W7 | IN_PROGRESS | - | - | 0 | 0 |
-| HR-RPT-01 | W7 | IN_PROGRESS | - | - | 0 | 0 |
-| FAT-FRM-01 | W7 | IN_PROGRESS | - | - | 0 | 0 |
-| FAT-RPT-02 | W7 | IN_PROGRESS | - | - | 0 | 0 |
-| LEG-REG-03 | W7 | IN_PROGRESS | - | - | 0 | 0 |
-| LEG-RPT-02 | W7 | QUEUED | - | - | 0 | 0 |
-| LEG-REG-04 | W7 | QUEUED | - | - | 0 | 0 |
-| COM-FRM-01 | W7 | QUEUED | - | - | 0 | 0 |
-| COM-FRM-02 | W7 | QUEUED | - | - | 0 | 0 |
-| COM-REG-01 | W7 | QUEUED | - | - | 0 | 0 |
-| MKT-RPT-01 | W7 | QUEUED | - | - | 0 | 0 |
-| MKT-REG-01 | W7 | QUEUED | - | - | 0 | 0 |
-| MKT-REG-02 | W7 | QUEUED | - | - | 0 | 0 |
-| MKT-REG-03 | W7 | QUEUED | - | - | 0 | 0 |
+| HR-FRM-01 | W7 | DONE | SNX-HR-FRM-01 Employee Competency Matrix (Rev00 DRAFT).docx | PASS | 13 | 1 |
+| HR-FRM-02 | W7 | DONE | SNX-HR-FRM-02 Annual Training Plan & Training Matrix (Rev00 DRAFT).docx | PASS | 18 | 1 |
+| HR-RPT-01 | W7 | DONE | SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).docx | PASS | 19 | 1 |
+| FAT-FRM-01 | W7 | DONE | SNX-FAT-FRM-01 Financial Transaction Approval Records (Rev00 DRAFT).docx | PASS | 13 | 1 |
+| FAT-RPT-02 | W7 | DONE | SNX-FAT-RPT-02 FAT Nonconformity & Corrective Action (Rev00 DRAFT).docx | PASS | 16 | 1 |
+| LEG-REG-03 | W7 | DONE | SNX-LEG-REG-03 Legal & Regulatory Requirements Register (Rev00 DRAFT).docx | PASS | 20 | 1 |
+| LEG-RPT-02 | W7 | DONE | SNX-LEG-RPT-02 Legal Compliance Evaluation Report (Rev00 DRAFT).docx | PASS | 36 | 1 |
+| LEG-REG-04 | W7 | DONE | SNX-LEG-REG-04 Company Legal Documents Register (Rev00 DRAFT).docx | PASS | 22 | 1 |
+| COM-FRM-01 | W7 | DONE | SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx | PASS | 22 | 2 |
+| COM-FRM-02 | W7 | DONE | SNX-COM-FRM-02 Project Handover Record (Rev00 DRAFT).docx | PASS | 14 | 1 |
+| COM-REG-01 | W7 | DONE | SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).docx | PASS | 19 | 1 |
+| MKT-RPT-01 | W7 | DONE | SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx | PASS | 30 | 1 |
+| MKT-REG-01 | W7 | DONE | SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx | PASS | 27 | 1 |
+| MKT-REG-02 | W7 | DONE | SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).docx | PASS | 22 | 1 |
+| MKT-REG-03 | W7 | DONE | SNX-MKT-REG-03 Marketing Lead & Campaign Outcome Register (Rev00 DRAFT).docx | PASS | 25 | 1 |
 | HOLD-R3 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R4 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R5 | HOLD-T3 | HOLD | - | - | 0 | 0 |
@@ -82,10 +82,10 @@ Wave berjalan: W4. Hitungan state: {'DONE': 52, 'LINT_PASS': 1, 'IN_PROGRESS': 5
 | HOLD-R15 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R24 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R25 | HOLD-T3 | HOLD | - | - | 0 | 0 |
-| FAT-SOP-06 | W7b | QUEUED | - | - | 0 | 0 |
-| FAT-REG-01 | W7b | QUEUED | - | - | 0 | 0 |
+| FAT-SOP-06 | W7b | DONE | SNX-FAT-SOP-06 SOP Accounting and Financial Report (Rev00 DRAFT).docx | PASS | 22 | 1 |
+| FAT-REG-01 | W7b | LINT_PASS | SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx | FAIL | 0 | 1 |
 | HOLD-R31 | HOLD-T3 | HOLD | - | - | 0 | 0 |
-| FAT-FRM-02 | W7b | QUEUED | - | - | 0 | 0 |
+| FAT-FRM-02 | W7b | DONE | SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx | PASS | 0 | 1 |
 | HOLD-FAT-KPI | HOLD-T3 | HOLD | - | - | 0 | 1 |
 | HOLD-R43 | HOLD-T3 | HOLD | - | - | 0 | 0 |
 | HOLD-R50 | HOLD-T3 | HOLD | - | - | 0 | 0 |
