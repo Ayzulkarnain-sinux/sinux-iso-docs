@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 11, Acuan standar, ISO/IEC 27001:2022 (specs/OPS-PRC-01.json iso_refs)",
+      "masalah": "Frasa baru 'temuan RCA yang dinaikkan ke register risiko ISMS' memakai pasif tanpa pelaku (RUNBOOK §6a.6), padahal pemilik proses 8 diketahui (Head of Operation). Rumusan ini disalin dari baris rekaman yang sudah ada di tabel Dokumen terkait, jadi tidak ada fakta baru.",
+      "bukti": "spec diff baris +ISO/IEC 27001:2022; specs/OPS-PRC-01.json baris 556 ('Risiko proyek berat dan temuan RCA dinaikkan ke register risiko ISMS') dan baris 198 (Head of Operation memiliki proses 5, 7, dan 8)"
+    }
+  ],
+  "cek": {
+    "1_sesuai_butir": "Hanya dua nilai iso_refs berubah (spec diff satu hunk). Daftar klausul tetap sama: 9001 menambah 8.6, 8.7, 9.1, 10.2; 27001 menambah 6.1, 9.1, A 5.37. Tidak ada klausul yang ditambah atau dibuang.",
+    "2_fakta_baru": "Tiap pemetaan baru berdasar pada badan spec: gate G3 sudah ditandai ISO 9001:2015 8.6 (baris 160); ketidaksesuaian proses lewat SNX-OPS-FRM-10 (baris 467, 540); pengukuran kinerja proses (baris 442, 471); risiko proyek berat dan temuan RCA ke register risiko ISMS (baris 556).",
+    "3_frasa_dan_pola": "'Referensi dokumen sumber' hilang dari spec dan dari docx di out/ (hitungan 0). Tidak ada benda baru yang menjadi pelaku kata kerja manusia ('Referensi ... menambah' sudah dibuang), tidak ada em-dash (0 di diff dan docx), dan tidak ada rujukan internal AI.",
+    "4_butir_tidak_dikerjakan": "Nihil. Bagian '## Sweep' sudah ada di notes/OPS-PRC-01.md dengan tabel sebelum dan sesudah untuk butir 1a dan 1b."
+  }
+}

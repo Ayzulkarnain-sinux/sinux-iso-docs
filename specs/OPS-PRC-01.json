@@ -664,7 +664,7 @@
   ]
  ],
  "iso_refs": {
-  "ISO 9001:2015": "klausul 4.4 (Sistem manajemen mutu dan prosesnya), 8.1 (Perencanaan dan pengendalian operasional), 8.2 (Persyaratan untuk produk dan jasa), dan 8.5 (Produksi dan penyediaan jasa). Referensi dokumen sumber menambah klausul 8.6 (Pelepasan produk dan jasa), 8.7 (Pengendalian keluaran yang tidak sesuai), 9.1 (Pemantauan, pengukuran, analisis, dan evaluasi), dan 10.2 (Ketidaksesuaian dan tindakan korektif).",
-  "ISO/IEC 27001:2022": "klausul 4.4 (Sistem manajemen keamanan informasi dan prosesnya) dan klausul 8.1 (Perencanaan dan pengendalian operasional); keduanya klausul utama standar, bukan kontrol Annex A. Referensi dokumen sumber menambah klausul 6.1 (Tindakan untuk menangani risiko dan peluang) dan 9.1 (Pemantauan, pengukuran, analisis, dan evaluasi), serta Annex A 5.37 (Documented operating procedures)."
+  "ISO 9001:2015": "klausul 4.4 (Sistem manajemen mutu dan prosesnya), 8.1 (Perencanaan dan pengendalian operasional), 8.2 (Persyaratan untuk produk dan jasa), dan 8.5 (Produksi dan penyediaan jasa). Klausul 8.6 (Pelepasan produk dan jasa) juga berlaku pada gate G3, klausul 8.7 (Pengendalian keluaran yang tidak sesuai) dan 10.2 (Ketidaksesuaian dan tindakan korektif) pada penanganan ketidaksesuaian proses, dan klausul 9.1 (Pemantauan, pengukuran, analisis, dan evaluasi) pada pengukuran kinerja proses.",
+  "ISO/IEC 27001:2022": "klausul 4.4 (Sistem manajemen keamanan informasi dan prosesnya) dan klausul 8.1 (Perencanaan dan pengendalian operasional); keduanya klausul utama standar, bukan kontrol Annex A. Klausul 6.1 (Tindakan untuk menangani risiko dan peluang) juga berlaku pada risiko proyek berat dan temuan RCA yang dinaikkan ke register risiko ISMS, klausul 9.1 (Pemantauan, pengukuran, analisis, dan evaluasi) pada pengukuran kinerja proses, dan Annex A 5.37 (Documented operating procedures) pada dokumen ini."
  }
 }
