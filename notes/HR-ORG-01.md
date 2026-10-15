@@ -79,13 +79,13 @@ Checklist tidak memberi acuan klausul untuk baris ini. Bagian Acuan Klausul ISO 
 2. JA-08, JA-10, JA-11, JA-14 ditempatkan di bawah Direktur karena garis ke Direktur disebut dalam teks sumber ("Management / Direktur", "Direktur atau Management"). Penempatan itu tafsir, diberi (USULAN) di K-03 dan K-04.
 3. Head of Operation: sumber Job Analysis tidak punya jabatan itu; POL-OPS-001 menaruhnya di bawah COO. Hubungan dengan VP Tech Operation and Services (JA-04) tidak dikarang, jadi dijadikan K-09 dan Gambar 3 berdiri sendiri.
 4. Erik Dwi Yanto (JA-13) tetap di bawah JA-04 pada Gambar 1. Pemetaannya ke NOC tidak dilakukan (K-10).
-5. Nama dan jabatan mengikuti defaults data_conflicts: Kristanto (bukan Kristianto), HR Manager (bukan HR Lead), Sita Nadia Salsabila Widodo, Direktur Utama di badan dokumen. Ejaan "Ahmad Rifa'i" mengikuti Job Analysis (POL-OPS-001 menulis "Rifai"); dokumen kepegawaian lebih tepat sebagai sumber ejaan nama.
+5. Nama dan jabatan mengikuti defaults data_conflicts: Kristanto (bukan Kristianto), HR Manager (bukan HR Lead), Sita Nadia Salsabila Widodo, Direktur Utama di badan dokumen. Ejaan "Ahmad Rifa'i" mengikuti Job Analysis (POL-OPS-001 menulis "Rifai"); dokumen kepegawaian lebih tepat sebagai sumber ejaan nama. (diubah W9: jabatan Aziz kini HR Lead, bukan HR Manager)
 6. "Direktur (COO)": sebutan pertama ada di tabel Definisi (bagian 3); setelah itu Direktur dipakai untuk JA-02 dan COO hanya di bagian Struktur Divisi Operation (aturan dicatat di K-08). Badan dokumen tidak memakai CEO. President Director hanya muncul di blok Approved By.
 7. Normalisasi nama unit: Operations dan Operation menjadi Operation; HR / GA, Human Resources, HRGA / General Affairs menjadi Human Resources; atasan JA-06 dan JA-07 menjadi VP Commercial (JA-03). Fungsi General Affairs tidak dijadikan unit sendiri karena sumber memasukkan Office Helper di bawah HRGA Officer.
 8. Matriks peran: tiga kelompok baris. (a) Tertulis di sumber: JA-01, JA-02, JA-04, Process Owner JA-14, dengan kalimat tanggung jawab dari uraian jabatan. (b) Jabatan Operation (USULAN) dari POL-OPS-001: pemilik gate G1, G2, G3. (c) Peran tanpa padanan jabatan: ISMS Coordinator, Finance Lead, Finance Staff, dibiarkan "Belum ditetapkan" atau "Belum dipetakan" tanpa mengarang pemegang; Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 sebagai (USULAN) karena JA-09 melapor ke JA-08.
 9. Peran yang tidak saya masukkan ke matriks: peran dari dokumen lain (mis. Commercial Manager, Presales, Sales Executive) karena bukan bahan baris ini dan pemetaannya tidak ada di sumber. Dicatat di open item 18.
 10. Kode dokumen di Dokumen Terkait memakai nomor draf dari config/worklist.json (SNX-HR-JA-01, SNX-FAT-SOP-01, SNX-FAT-SOP-05, SNX-LEG-SOP-01, SNX-ISMS-PRO-01). POL-OPS-001 memakai kode sumbernya, yang berlabel penomoran USULAN di sumber.
-11. Pelaku tinjauan tahunan (HR Manager) diambil dari process_owner dan review_period YEARLY di defaults, ditambah "12 bulan sejak efektif atau saat ada perubahan signifikan" dari Job Analysis.
+11. Pelaku tinjauan tahunan (HR Manager) diambil dari process_owner dan review_period YEARLY di defaults, ditambah "12 bulan sejak efektif atau saat ada perubahan signifikan" dari Job Analysis. (diubah W9: pelaku kini HR Lead)
 12. Isi sumber yang berbentuk kalimat perintah: tidak ada yang ditujukan ke penyusun. Kalimat normatif Job Analysis ("harus dikonfirmasi oleh manajemen sebelum pengesahan", "harus diselesaikan sebelum dokumen diberi status Controlled / Effective") dan kotak keputusan COO di POL-OPS-001 bagian 13 dicatat sebagai K dan open item, tidak dijalankan.
 
 ## 5. Penanganan cacat context/audit
@@ -138,10 +138,10 @@ Lint menghitung 13 kemunculan "(USULAN)" di dokumen: 12 menempel pada tujuh buti
 | U3 | Pelanggan, vendor, dan partner tidak digambar di bagan | Ruang Lingkup | Sumber diam; penyusun menarik batas | Aziz |
 | U4 | JA-08, JA-10, JA-11 ditempatkan di bawah Direktur sebelum atasan tunggal diputus | Gambar 2, Daftar Jabatan, K-03 | Sumber menulis "Management / Direktur" | owner, Samuel |
 | U5 | JA-14 ditempatkan di bawah Direktur sebelum atasan tunggal diputus | Gambar 2, Daftar Jabatan, K-04 | Sumber menulis "Direktur atau Management sesuai struktur yang disahkan" | Aziz, owner |
-| U6 | Line Manager Legal = JA-08 dan Staff Legal = JA-09 | Matriks Peran, K-13 | Disimpulkan dari JA-09 melapor ke JA-08; sumber tidak menyatakan | Legal |
+| U6 | Line Manager Legal = JA-08 dan Staff Legal = JA-09 | Matriks Peran, K-13 | Disimpulkan dari JA-09 melapor ke JA-08; sumber tidak menyatakan | Legal; ditutup W9: pemetaan Legal sudah diputus, label USULAN dihapus dari Matriks Peran |
 | U7 | Empat klausul ISO: 9001 5.3 dan 7.1.2, 27001 5.3 dan Annex A 5.2 | Acuan Klausul ISO | Checklist tanpa acuan klausul; label "(USULAN, perlu konfirmasi konsultan)" | owner, diteruskan ke konsultan |
 
-Garis Laras ke Direktur Utama (K-01) tidak berlabel (USULAN) karena berasal dari keterangan owner di defaults; keputusan tetap menunggu konfirmasi.
+Garis Laras ke Direktur Utama (K-01) tidak berlabel (USULAN) karena berasal dari keterangan owner di defaults; keputusan tetap menunggu konfirmasi. (diubah W9: K-01 sudah diputus, dua garis tegas JA-03 dan JA-04 ke Direktur dan Direktur Utama)
 
 ## Open items
 
@@ -258,6 +258,11 @@ Putaran perbaikan ISO-W9 (LEAD G-2 dan G-3, config/defaults.json v22). Hanya but
 | A5/A6 K-13 | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; Job Analysis tidak menyatakan pemasangan itu. | Job Analysis tidak menunjuk jabatan untuk ISMS Coordinator, Finance Lead, dan Finance Staff; yang ada hanya JA-10 Finance dan JA-11 Accounting & Tax. Finance Lead dan Finance Staff tetap peran. Jabatan Finance Lead belum terisi dan peran ini dijalankan Direktur sampai terisi (USULAN). Finance Staff dijalankan pemegang JA-10 dan JA-11 (USULAN). Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 karena JA-09 melapor ke JA-08; pemetaan Legal ini sudah diputus. ISMS Coordinator belum ditetapkan. |
 | A3 Bagan Organisasi, pengantar | Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan satu atasan langsung yang tertulis di Job Analysis. Garis berlabel menunggu konfirmasi merujuk nomor butir K. | Gambar 1 dan Gambar 2 menggambarkan 15 jabatan di Job Analysis. Garis tanpa label menunjukkan atasan langsung yang tertulis di Job Analysis atau sudah diputus (K-01). Garis berlabel menunggu konfirmasi merujuk nomor butir K. |
 | A2 Kesimpulan | HR Manager meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan. | HR Lead meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan. |
+| R2 Kesimpulan kalimat konfirmasi | Konfirmasi butir K-01 sampai K-14 akan mengubah Gambar 1, Gambar 2, dan daftar jabatan. | Konfirmasi butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar jabatan. |
+| R2 Definisi "Menunggu konfirmasi" | Label untuk garis lapor atau penamaan yang ditandai belum pasti di sumbernya. | Label untuk garis lapor atau penamaan yang belum pasti. Tiap butir dijelaskan pada bagian Butir Menunggu Konfirmasi. |
+| R2 notes kebersihan | Baris U6, catatan K-01 di bawah tabel USULAN, dan butir 5 dan 11 bagian 4 belum bertanda W9 | Ditandai "ditutup W9" atau "diubah W9" di baris itu sendiri; tidak ada baris dihapus |
+| R3 Daftar Jabatan, pengantar | Kolom Melapor ke memuat atasan langsung menurut Job Analysis. | Kolom Melapor ke memuat atasan langsung menurut Job Analysis dan garis yang sudah diputus pada K-01. |
+| R3 Dasar dan Ketentuan paragraf 2 | ...dan garis yang sumbernya sendiri belum menetapkan satu atasan diberi label menunggu konfirmasi. | ...dan garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01) diberi label menunggu konfirmasi. |
 
 Open item yang ditutup atau diubah (nomor tabel Open items di atas):
 
@@ -277,3 +282,4 @@ Catatan pelaksana, tidak diubah:
 - Pengantar bagian Bagan Organisasi disesuaikan satu kalimat agar garis tanpa label JA-03 dan JA-04 tidak disebut "satu atasan".
 - Blok Prepared dan Reviewed tetap milik HR (Sita sebagai Prepared, Aziz Priyo Widakdo / HR Lead sebagai Reviewed).
 - Uji: render_sop, lint_doc generic (pass), validate.py (PASSED), blankscan (ok), w9diff dibaca.
+- R2: Kesimpulan dan definisi "Menunggu konfirmasi" diperbaiki (dua perubahan spec); baris notes basi ditandai di tempat.

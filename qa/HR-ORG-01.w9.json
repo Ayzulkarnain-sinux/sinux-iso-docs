@@ -2,31 +2,46 @@
  "key": "HR-ORG-01",
  "cluster": "HR-STRUKTUR",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 3,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Kesimpulan (spec baris 879) masih menulis 'Konfirmasi butir K-01 sampai K-14 akan mengubah Gambar 1, Gambar 2, dan daftar jabatan', padahal K-01 dan ejaan K-07 kini sudah diputus. Kalimat ini tidak berubah dan berada di luar butir kerja. Penyusun sudah mencatatnya di notes.",
-  "K-07 kini menulis 'HR membetulkan ejaan itu di Job Analysis' (pembetulan dibaca sudah selesai), sedangkan notes open item 21 mencatatnya sebagai pekerjaan Aziz yang masih terbuka. defaults v22 menulis 'Job Analysis dibetulkan HR', jadi kalimat itu punya dasar. Kalaupun ada beda kala, beda itu hanya antara dokumen dan notes.",
-  "'sudah diputus' di K-01, K-07, K-13 dan kolom Status Matriks Peran adalah bentuk pasif tanpa pelaku. Instruksi butir 1, 3 dan 4 sendiri menyuruh menulis 'sudah diputus', jadi ini bukan penyimpangan dari butir.",
-  "Definisi Finance Lead memakai singkatan FAT, dan FAT tidak punya entri di tabel Definisi dan Singkatan. Teks itu persis seperti yang LEAD minta, dan penyusun sudah mencatatnya sebagai open item 22.",
-  "Frasa 'di sumbernya' masih ada di tabel Definisi (entri Menunggu konfirmasi, spec baris 108). Kalimat ini tidak berubah di W9, jadi bukan bagian diff.",
-  "A5 'Departemen Legal' tidak berlaku untuk dokumen ini karena 'Divisi Legal' tidak pernah muncul. Kolom Unit tetap 'Legal', sama dengan pola unit lain."
+  "K-01 (bagian 9), kalimat baru W9: \"Job Analysis hanya menulis atasan langsung Direktur untuk keduanya.\" Dokumen ini menyamakan Job Analysis dengan SNX-HR-JA-01 (bagian 4, termasuk kalimat R3 \"Job Analysis (SNX-HR-JA-01)\"). Padahal render W9 SNX-HR-JA-01 kini menulis untuk JA-03 dan JA-04 \"Atasan langsung: Direktur (COO) dan Direktur Utama\", dan versi sebelum W9 pun sudah menyebut garis JA-03 ke Direktur Utama sebagai menunggu konfirmasi. Antardokumen, kalimat itu tidak akurat. Usul: hapus kalimat itu, atau tulis \"Job Analysis tim (HR-JA-001)\". Tidak saya jadikan pemblokir karena ada dasarnya di dokumen sebelum (K-01 lama dan baris JA-04 lama) dan tidak bertentangan dengan defaults v22.",
+  "Definisi \"Menunggu konfirmasi\" (R2): \"Tiap butir dijelaskan pada bagian Butir Menunggu Konfirmasi.\" adalah pasif baru tanpa pelaku. Gaya ringan, rujukan bagiannya benar (bagian 9 ada).",
+  "Bagian 4 paragraf 2 (R3): \"garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01)\" membuat dokumen menjadi pelaku \"memberi\". Bisa dibaca sebagai benda yang menjadi pelaku. Ringan.",
+  "notes/HR-ORG-01.md baris 281 (Catatan pelaksana) masih menulis \"kalimat Kesimpulan tidak diubah karena di luar butir kerja\". Catatan itu basi karena R2 butir 1 sudah mengubah kalimat Kesimpulan. Butir 5 bagian Keputusan data sudah bertanda diubah W9.",
+  "Kalimat lama yang tidak berubah di bagian 4: \"Bila sumber memakai sebutan lain, perbedaannya tercatat sebagai butir K.\" Kalimat ini memuat frasa proses \"sumber\" dan pasif. Kalimat itu di luar butir W9, jadi saya hanya mencatatnya.",
+  "K-07 tetap menulis \"Job Analysis menulis Samuel Kristianto Utomo\", sedangkan render SNX-HR-JA-01 tidak memuat Kristianto. Instruksi A1 membolehkan Kristianto di K-07; maksudnya Job Analysis tim. Ambiguitas yang sama dengan butir K-01.",
+  "Open item 22 di notes (FAT tanpa entri Definisi) adalah catatan wajar. Tidak perlu tindakan untuk lolos."
  ],
  "butir_dikerjakan": [
-  "A1: K-07 ditulis sudah diputus (ejaan Kristanto dipakai di semua dokumen; Job Analysis dibetulkan HR); 'Kristianto' tetap dipakai hanya untuk menjelaskan beda ejaan; open item pemutus Aziz dicatat di notes (item 21).",
-  "A2: HR Manager diganti HR Lead di process_owner, blok Reviewed ('Aziz Priyo Widakdo / HR Lead'), simpul JA-14 di Gambar 2 ('JA-14 HR Lead'), Daftar Jabatan JA-12 dan JA-14, Matriks Peran Process Owner, judul K-04, dan kalimat Kesimpulan. K-06 diperbarui (Job Analysis dan dokumen ini memakai HR Lead; HR Manager hanya sebutan lama). SPV tidak ditambah karena dokumen tidak punya kolom tingkat jabatan.",
-  "A3: edge ja01-ja03 tanpa label, edge ja01-ja04 tanpa label ditambah (di dot keduanya muncul sebagai garis tegas []); edge ja02-ja03 dan ja02-ja04 tetap. Daftar Jabatan JA-03 dan JA-04 menjadi 'Direktur (JA-02); Direktur Utama (JA-01)' tanpa label. K-01 ditulis sudah diputus, dua garis tegas. Label K-02, K-04 dan K-05 tetap. K-03 dan atasan JA-05/08/10/11/14 tidak berubah. Pengantar Bagan Organisasi diselaraskan satu kalimat dengan rujukan K-01 yang benar.",
-  "A5: label '(USULAN), menunggu konfirmasi (K-13)' pada pemetaan Line Manager Legal (JA-08) dan Staff Legal (JA-09) diganti 'Sudah diputus (K-13)'. K-13 menyatakan pemetaan Legal sudah diputus. Blok Prepared/Reviewed tetap HR. Nama Daffa 0. Nama orang di bagan dan daftar jabatan tetap.",
-  "A6: tabel Definisi mendapat baris Finance Lead dan Finance Staff dengan teks persis instruksi. Matriks Peran Finance Lead/Staff diselaraskan (Direktur sampai jabatan terisi; JA-10 dan JA-11; USULAN). K-13 diperbarui; kalimat ISMS Coordinator tetap.",
-  "B4: notes open item 17 dan GAP 1 ditutup W9 dengan alasan basi (tech_fix 14 Okt 21.58). Badan dokumen tidak menyebut keterbatasan garis putus-putus (grep render: 'putus-putus' 0).",
-  "Data cocok dengan defaults v22: prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', reviewed 'Aziz Priyo Widakdo / HR Lead', approved 'Samuel Kristanto Utomo / President Director'; process_owner HR Lead. Bagian ISO-W9 di notes berisi tabel perubahan dan daftar open item."
+  "A1: K-07 ditulis sudah diputus. Ejaan Kristanto dipakai di semua dokumen, dan HR membetulkan Job Analysis. Open item 21 (pemutus Aziz) dicatat di notes.",
+  "A2: HR Lead dipakai di process_owner, blok Reviewed (Aziz Priyo Widakdo / HR Lead), simpul JA-14 di Gambar 2, Daftar Jabatan JA-12 dan JA-14, Matriks Peran Process Owner, K-04, dan Kesimpulan. K-06 diperbarui. SPV tidak ditambah dan alasannya dicatat di notes.",
+  "A3: edge ja01-ja03 tanpa label, dan edge ja01-ja04 ditambah tanpa label (dot: garis tegas). Edge ja02-ja03 dan ja02-ja04 tetap. Kolom Melapor ke JA-03 dan JA-04 = Direktur (JA-02); Direktur Utama (JA-01). K-01 ditulis sudah diputus. Label K-02, K-03, K-04 tetap putus-putus.",
+  "A5: label (USULAN) dan menunggu konfirmasi dicabut dari pemetaan Line Manager Legal JA-08 dan Staff Legal JA-09 (status Sudah diputus (K-13)). K-13 diperbarui. Blok Prepared/Reviewed tetap HR. Daffa 0, Divisi Legal 0.",
+  "A6: definisi Finance Lead dan Finance Staff ditambahkan persis sesuai teks instruksi. Matriks Peran Finance Lead/Staff diselaraskan dengan (USULAN). K-13 diperbarui: ISMS Coordinator tetap belum ditetapkan.",
+  "B4: open item 17 dan GAP 1 ditutup W9 dengan alasan basi. Badan dokumen tidak menyebut garis putus-putus sebagai keterbatasan.",
+  "R2.1: kalimat Kesimpulan kini merujuk butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi, tanpa nomor.",
+  "R2.2: definisi Menunggu konfirmasi ditulis tanpa \"di sumbernya\" dan merujuk bagian 9.",
+  "R2.3: baris notes U6, catatan K-01, butir 5 dan 11, serta open item 2, 5, 7, 8, 14, dan 17 bertanda ditutup atau diubah W9 di barisnya sendiri.",
+  "R3.1: pengantar Daftar Jabatan ditambah \"dan garis yang sudah diputus pada K-01\".",
+  "R3.2: frasa \"sumbernya sendiri\" diganti \"Job Analysis (SNX-HR-JA-01)\"."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Hasil grep teks render /tmp/claude-0/w9/render/HR-ORG-01.docx (word/*.xml): 'HR Manager' = 1, hanya di tabel K baris K-06 ('HR Manager hanya sebutan lama'), dan kemunculan ini diizinkan. Ketiga berkas .dot gambar = 0. 'Divisi Legal' = 0. 'menunggu konfirmasi (K-01)' = 0. Di dot Gambar 1, edge ja01->ja03 dan ja01->ja04 tidak berlabel. Em-dash = 0, 'Daffa' = 0, 'SPV' = 0, 'putus-putus' = 0. 'Kristianto' = 1, di K-07, dan instruksi membolehkannya.",
+ "grep": "Grep pada teks render terkini /tmp/claude-0/w9/render/HR-ORG-01.docx:\n- \"HR Manager\" = 1, yaitu di tabel K baris K-06 (\"HR Manager hanya sebutan lama\"). Ini pengecualian yang diizinkan.\n- \"Divisi Legal\" = 0, \"Daffa\" = 0, em-dash = 0.\n- \"menunggu konfirmasi (K-01)\" = 0. Dot Gambar 1: ja01->ja03 dan ja01->ja04 tanpa label dan tanpa style dashed.\n- \"Kristianto\" = 1, di K-07, yang diizinkan.\n- \"HR Lead\" = 8, \"penyusun\" = 0, \"draf ini\" = 0. \"sumber\" = 2: satu kalimat lama yang tidak berubah di bagian 4 dan satu \"sumber daya\".\n- lint_doc generic: pass, nol fail.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R3",
    "verdict": "PASS",
    "blocking": []
   }

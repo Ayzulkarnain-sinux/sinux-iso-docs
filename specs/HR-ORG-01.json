@@ -105,7 +105,7 @@
        ],
        [
         "Menunggu konfirmasi",
-        "Label untuk garis lapor atau penamaan yang ditandai belum pasti di sumbernya."
+        "Label untuk garis lapor atau penamaan yang belum pasti. Tiap butir dijelaskan pada bagian Butir Menunggu Konfirmasi."
        ],
        [
         "Peran",
@@ -163,7 +163,7 @@
      "p": "Jabatan, pemegang, dan atasan langsung diambil dari Job Analysis (SNX-HR-JA-01) yang berstatus Draft. Delapan jabatan Divisi Operation diambil dari POL-OPS-001 versi DRAFT v0.1."
     },
     {
-     "p": "Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi sesudah dokumen ini disahkan, dan garis yang sumbernya sendiri belum menetapkan satu atasan diberi label menunggu konfirmasi."
+     "p": "Job Analysis menyatakan bahwa hubungan atasan-bawahan yang bertanda usulan atau konfirmasi tidak boleh diperlakukan sebagai garis lapor resmi sampai disahkan. Karena itu semua garis lapor di dokumen ini baru resmi sesudah dokumen ini disahkan, dan garis yang belum diberi satu atasan oleh Job Analysis (SNX-HR-JA-01) diberi label menunggu konfirmasi."
     },
     {
      "p": "Setiap butir menunggu konfirmasi diberi nomor K pada bagian Butir Menunggu Konfirmasi. Bagan dan tabel merujuk nomor itu dan tidak mengulang uraiannya."
@@ -300,7 +300,7 @@
    "h": "Daftar Jabatan",
    "blocks": [
     {
-     "p": "Kolom Melapor ke memuat atasan langsung menurut Job Analysis."
+     "p": "Kolom Melapor ke memuat atasan langsung menurut Job Analysis dan garis yang sudah diputus pada K-01."
     },
     {
      "table": {
@@ -876,7 +876,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir K-01 sampai K-14 akan mengubah Gambar 1, Gambar 2, dan daftar jabatan."
+     "p": "Dokumen ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approved By. Konfirmasi butir yang masih terbuka pada bagian Butir Menunggu Konfirmasi dapat mengubah Gambar 1, Gambar 2, dan daftar jabatan."
     },
     {
      "p": "HR Lead meninjau dokumen ini setiap tahun, dan lebih awal bila jabatan atau garis lapor berubah secara signifikan."
