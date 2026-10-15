@@ -151,3 +151,15 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Tanpa sumber langsung: empat jenis pelatihan (U11), lima dasar kebutuhan (U5, tiga di antaranya dari dokumen sesama), pembagian tugas tiga peran (U10), aturan satu salinan per tahun (U4), aturan tanpa nama karyawan (U7), dan seluruh langkah pengisian (U12). Semuanya berlabel USULAN.
 - Dikutip dari sumber: pemahaman SOP dan kerahasiaan informasi serta persyaratan kontrak pelanggan (JA-001 butir 4.7); kriteria baris (checklist baris 10); klasifikasi (worklist dan defaults).
 - Status "dalam peninjauan" untuk SOP Training & Development tidak diukur ulang di Drive; dasarnya checklist baris 5 dan worklist HOLD-T3. Saya tulis sebagai open item 3 dan tidak menyebutnya "belum ada".
+
+## Sweep
+
+Dasar: /tmp/claude-0/prompts/HR-FRM-02.sweep.txt; temuan pemeriksa di qa/HR-FRM-02.verify.json (data). Hanya butir 1 yang diubah. Fakta, angka, nama, dan struktur lain tetap. Tidak ada label USULAN baru.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1a. Kesimpulan, kalimat 1 | "Form ini berstatus Draft, dan baru dipakai sebagai rencana sesudah HR Manager mengisi Tabel 1 dan Tabel 2 dan Direktur Utama menandatangani blok Approved By." | "Form ini berstatus Draft, dan baru dipakai sebagai rencana sesudah HRGA Officer mencatat Tabel 1 dan Tabel 2 menurut penetapan HR Manager, dan Direktur Utama menandatangani blok Approved By." (sama dengan tabel Peran: HR Manager menetapkan, HRGA Officer mencatat) |
+| 1b. Cara Mengisi, kalimat pembuka (lokasi yang sama di temuan pemeriksa) | "Langkah berikut berstatus (USULAN) sampai HR Manager dan Direktur Utama mengesahkan form ini." | "Langkah berikut berstatus (USULAN) sampai Direktur Utama menandatangani blok Approved By." (penyetuju hanya Direktur Utama menurut tabel Peran) |
+| 2. Rujukan dokumen FAT bernomor (SNX-FAT-SOP-06, SNX-FAT-REG-01, SNX-FAT-FRM-02) | Tidak ada rujukan ke dokumen FAT di badan dokumen. Satu-satunya "dalam peninjauan" dan "belum bernomor" adalah SOP Training & Development (dokumen HR, bukan FAT); "Accounting & Tax" adalah nama jabatan JA-11 | Tidak diubah. Butir tidak berlaku untuk form ini |
+
+Uji sesudah sweep: render_sop.py lalu lint_doc.py generic = "pass": true (satu warn, 17 label USULAN); validate.py skill docx = "All validations PASSED!"; blankscan.py = "ok 10 HR-FRM-02.docx []".

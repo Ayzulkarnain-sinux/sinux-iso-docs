@@ -1,0 +1,21 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Kesimpulan, kalimat 1",
+      "masalah": "Butir 1 dikerjakan dan sejalan dengan tabel Peran dan butir 4.9. Rumusan 'Tabel 2 menurut penetapan HR Manager' agak longgar: menurut 4.6 dan 7.8, HRGA Officer menurunkan Tabel 2 dari Tabel 1, bukan langsung dari penetapan. Kalimat itu juga tidak menyebut baris SNX-HR-SOP-10/12 yang dicatat HR Manager sendiri (4.9, 7.6) dan pemeriksaan HR Manager (7.10). Tidak ada fakta baru dan makna tidak berubah di luar butir.",
+      "bukti": "Sesudah: \"sesudah HRGA Officer mencatat Tabel 1 dan Tabel 2 menurut penetapan HR Manager\"; 4.9: \"HRGA Officer mencatat penetapan itu di Tabel 1 dan menurunkan Tabel 2. HR Manager mencatat sendiri baris yang berasal dari SNX-HR-SOP-10 dan SNX-HR-SOP-12\""
+    },
+    {
+      "lokasi": "Cara Mengisi, kalimat pembuka",
+      "masalah": "Teks butir 1 hanya menyebut kesimpulan, tetapi perubahan ini masuk lingkup temuan qa/HR-FRM-02.verify.json yang dirujuk butir 1 (lokasi 'CARA MENGISI kalimat pembuka'). Penyusun mencatatnya di notes sebagai 1b. Syarat lepas USULAN kini hanya tanda tangan Direktur Utama, sama dengan tabel Peran ('Menyetujui form lewat blok Approved By').",
+      "bukti": "Sebelum: \"sampai HR Manager dan Direktur Utama mengesahkan form ini\"; sesudah: \"sampai Direktur Utama menandatangani blok Approved By\""
+    },
+    {
+      "lokasi": "Butir 2 (rujukan dokumen FAT)",
+      "masalah": "Tidak dikerjakan karena tidak berlaku, dan penyusun menyebut alasannya di notes ## Sweep baris 2. Spec tidak memuat rujukan dokumen FAT. Frasa 'Belum bernomor' dan 'dalam peninjauan' yang tersisa merujuk SOP Training & Development (dokumen HR), jadi di luar butir 2. 'Accounting & Tax' adalah nama jabatan JA-11.",
+      "bukti": "grep FAT|accounting|billing|financial|peninjauan|bernomor pada specs/HR-FRM-02.json: hanya baris 42 dan 234 (SOP Training & Development) serta baris 183 (JA-11 Accounting & Tax)"
+    }
+  ]
+}

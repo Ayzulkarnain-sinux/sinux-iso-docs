@@ -119,7 +119,7 @@
     {
       "h": "Cara Mengisi",
       "blocks": [
-        {"p": "Langkah berikut berstatus (USULAN) sampai HR Manager dan Direktur Utama mengesahkan form ini."},
+        {"p": "Langkah berikut berstatus (USULAN) sampai Direktur Utama menandatangani blok Approved By."},
         {"p": "7.1 HRGA Officer menyalin form ini untuk tahun rencana dan menulis tahunnya di Identitas Rencana."},
         {"p": "7.2 HRGA Officer mencocokkan daftar jabatan di Tabel 2 dengan SNX-HR-ORG-01."},
         {"p": "7.3 HRGA Officer mencatat tingkatan setiap jabatan di Tabel 2 sesuai butir 4.2."},
@@ -239,7 +239,7 @@
     {
       "h": "Kesimpulan",
       "blocks": [
-        {"p": "Form ini berstatus Draft, dan baru dipakai sebagai rencana sesudah HR Manager mengisi Tabel 1 dan Tabel 2 dan Direktur Utama menandatangani blok Approved By."},
+        {"p": "Form ini berstatus Draft, dan baru dipakai sebagai rencana sesudah HRGA Officer mencatat Tabel 1 dan Tabel 2 menurut penetapan HR Manager, dan Direktur Utama menandatangani blok Approved By."},
         {"p": "HR Manager meninjau form ini setiap tahun, dan lebih awal bila SNX-HR-FRM-01 atau SNX-HR-ORG-01 berubah (USULAN)."}
       ]
     }
