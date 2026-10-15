@@ -2,28 +2,34 @@
  "key": "FAT-RPT-02",
  "cluster": "FAT-B",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Definisi A6 dipecah ke kolom Istilah/Arti dengan huruf kapital pada kata pertama arti (\"Peran pemeriksa...\", \"Peran pelaksana...\"). Instruksi membolehkan pemecahan ke kolom; selisih kapitalisasi ini kosmetik dan tercatat di notes.",
-  "Bentuk rujukan baru \"bagian 2.1\" (subbagian) tidak persis sama dengan pola instruksi \"butir N.M\" atau \"bagian N\". Tujuannya ada dan tampak (Heading2 bernomor otomatis 2.1 Istilah, kerangka baris 23), dan isinya cocok (dua baris definisi Finance Lead dan Finance Staff).",
-  "Rujukan \"(butir K-13)\" dipertahankan. K-13 di SNX-HR-ORG-01 (kerangka sebelum W9, tabel K baris 112) masih menyatakan Finance Lead/Staff tanpa padanan jabatan. Selaras setelah HR-ORG-01 memperbarui K-13 sesuai G-3 A6, dan itu di luar dokumen ini.",
-  "Kalimat yang berubah lolos cek bahasa: tanpa em-dash, tanpa frasa proses penyusunan, tanpa rujukan AI. Pasif \"dijalankan Direktur\" dan \"dijalankan pemegang jabatan\" punya pelaku. Subjek \"Pemetaan ... mengikuti definisi\" bukan kata kerja manusia."
+  "notes/FAT-RPT-02.md baris 194 (tabel ISO-W9, R2 butir 2) menyatakan kalimat hitungan USULAN sudah ditandai \"diubah W9\" dan berubah dari 15 menjadi 17 kemunculan. Baris 101 notes tetap berbunyi \"Di dokumen ada 15 label\" tanpa penanda W9 (grep 'W9' hanya mengenai baris 123, 183, 194, dan 198). Klaim di notes tidak cocok dengan isi notes. Ini hanya berkas notes; dokumen tidak terpengaruh.",
+  "Baris notes yang basi sesudah A6 belum diperbarui: baris 3 (approval reviewed \"Finance Lead\"), baris 19 (\"Belum dipetakan (K-13)\"), dan baris 78 (\"dicatat 'Belum dipetakan (K-13)' di Peran dan Dokumen Terkait\"). R2 tidak menyebut baris-baris ini secara khusus.",
+  "Field meta process_owner tetap \"Finance Lead\". Aturan defaults process_owner (jabatan pada kolom reviewed) bisa dibaca mengarah ke Direktur. Nilai Finance Lead tetap selaras dengan definisi A6 (peran yang dijalankan Direktur), dan tidak ada butir yang meminta perubahan field ini.",
+  "Bagian 3 masih berbunyi \"Status memuat satu nilai dari bagian Istilah\", padahal nilai status ada di 2.2 Nilai Status. Kalimat ini sudah ada sebelum W9 dan tidak diubah, jadi di luar cakupan."
  ],
  "butir_dikerjakan": [
-  "Butir 1 (A6, LEAD G-3): blok Reviewed = \"Amirull Yusuf Zulkarnain / Direktur\", sesuai defaults v22 prepared_reviewed.FAT. Prepared tetap \"Finance Staff\". Approved = \"Samuel Kristanto Utomo / President Director\" (approved_by.all), tidak berubah.",
-  "Butir 1 (A6): dua baris definisi Finance Lead dan Finance Staff ditambahkan di bagian 2.1 Istilah setelah CoreTax DJP. Isinya sama kata demi kata dengan instruksi, termasuk label (USULAN), JA-10 Finance dan JA-11 Accounting & Tax.",
-  "Butir 1 (A6, penyelarasan): kalimat \"Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)\" di tabel Peran (baris Finance Staff dan Finance Lead) dan di baris SNX-HR-ORG-01 bagian Dokumen Terkait diganti menjadi rujukan ke definisi bagian 2.1. Kalimat lain tidak berubah.",
-  "Diff teks hanya memuat 4 baris lama dan 6 baris baru, semuanya berasal dari butir 1. Tidak ada perubahan lain yang mengubah makna dan tidak ada fakta baru: nama, jabatan, dan JA-10/JA-11 semuanya berdasar defaults v22 data_conflicts dan LEAD-GUIDE G-3 A6."
+  "A6 (G-3), blok Reviewed: \"Finance Lead\" diganti \"Amirull Yusuf Zulkarnain / Direktur\", sesuai defaults v22 prepared_reviewed.FAT. Prepared tetap \"Finance Staff\". Approved tetap \"Samuel Kristanto Utomo / President Director\", sesuai approved_by.all.",
+  "A6, Istilah (2.1): dua baris baru Finance Lead dan Finance Staff. Teksnya persis instruksi (dipecah ke kolom istilah dan arti, huruf awal kapital) dan diletakkan alfabetis sesudah CoreTax DJP.",
+  "A6 penyelarasan: kalimat pemetaan di tabel Peran (baris Finance Staff dan Finance Lead) dan di Dokumen Terkait baris SNX-HR-ORG-01 diubah dari \"belum dipetakan\" menjadi \"Pemetaan ... mengikuti definisi di bagian 2.1\". Heading 2.1 Istilah bernomor tampak (numPr ada di render).",
+  "R2 butir 1: \"(SNX-HR-ORG-01 butir K-13)\" ditulis di 3 tempat (Peran 2 baris dan Dokumen Terkait 1 baris), sesuai jumlah yang diminta. K-13 ada di render terbaru HR-ORG-01 dan isinya cocok dengan pemetaan A6.",
+  "Butir 2 sampai 5 (B4, R170, R400, S03) tidak berlaku untuk FAT-RPT-02. Diff tidak menunjukkan perubahan lain."
  ],
  "butir_tidak_dikerjakan": [
-  "Nihil untuk dokumen ini. Butir 2 (B4 FAT-SOP-04), 3 (R170 FAT-SOP-04), 4 (R400 FAT-FRM-01), dan 5 (S03 FAT-FRM-01) tidak berlaku untuk FAT-RPT-02."
+  "R2 butir 2 (kebersihan notes) baru dikerjakan sebagian. Open item 3 sudah bertanda \"diubah W9\", tetapi kalimat hitungan USULAN di baris 101 tidak bertanda, padahal tabel ISO-W9 menyatakan sudah. Hanya menyangkut notes (nonblocking)."
  ],
- "grep": "Teks sesudah diekstrak dari render /tmp/claude-0/w9/render/FAT-RPT-02.docx. Hitungan grep: \"HR Manager\" 0, \"Divisi Legal\" 0, em-dash 0, frasa proses (dokumen sumber/sumber tim/di sumber/draf ini/belum berdokumen/penyusun) 0, \"belum dipetakan\" 0. Dokumen ini dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku tetapi tetap nol.",
+ "grep": "Teks sesudah (render /tmp/claude-0/w9/render/FAT-RPT-02.docx): \"HR Manager\" 0, \"Divisi Legal\" 0, em-dash 0, \"K-13\" 3 (semuanya \"SNX-HR-ORG-01 butir K-13\"), \"USULAN\" 18 (17 \"(USULAN)\" ditambah 1 label Acuan ISO). Dokumen ini bukan dokumen HR atau Legal, jadi aturan langkah 7 terpenuhi secara trivial.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }

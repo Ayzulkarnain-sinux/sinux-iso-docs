@@ -190,6 +190,8 @@ Dasar: control/LEAD-GUIDE.md G-3 A6. Hanya specs/FAT-RPT-02.json dan notes/FAT-R
 | A6 Istilah (bagian 2.1), dua baris baru setelah CoreTax DJP | tidak ada | "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN)." dan "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN)." (kata pertama arti diberi huruf kapital) |
 | A6 tabel peran (bagian 4), baris Finance Staff dan Finance Lead | "Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | "Pemetaan ke jabatan mengikuti definisi di bagian 2.1 (butir K-13)." |
 | A6 dokumen terkait, baris SNX-HR-ORG-01 | "Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)." | "Pemetaan Finance Lead dan Finance Staff ke jabatan mengikuti definisi di bagian 2.1 (butir K-13)." |
+| R2 butir 1, rujukan K-13 (tabel peran dua baris, dokumen terkait baris SNX-HR-ORG-01) | "... bagian 2.1 (butir K-13)" (3 tempat) | "... bagian 2.1 (SNX-HR-ORG-01 butir K-13)" (3 tempat) |
+| R2 butir 2, notes | Hitungan USULAN tanpa penanda W9; open item 3 sudah bertanda | Kalimat hitungan USULAN ditandai "diubah W9" (15 menjadi 17 kemunculan); tidak ada baris open item atau USULAN lain yang berubah di W9 |
 
 Rujukan silang yang diubah: rujukan ke definisi di bagian 2.1 (heading Istilah bernomor 2.1 di kerangka). Butir B4, R400, dan S03 tidak menyangkut dokumen ini.
 
