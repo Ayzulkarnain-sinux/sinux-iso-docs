@@ -218,6 +218,8 @@ Dasar: control/LEAD-GUIDE.md G-3 A6 dan B4, serta temuan makna R170. Hanya specs
 | B4 definisi Financial Document Register | "... diarsipkan FAT. Belum bernomor SNX." | "... diarsipkan FAT. Dalam peninjauan." |
 | B4 dokumen terkait, kolom kode baris Financial Document Register | "Belum bernomor" | "Dalam peninjauan" |
 | Rujukan R170, dokumen terkait baris SNX-FAT-SOP-05 | "Butir 6.5 SOP itu menunjuk SOP ini sebagai acuan pengarsipan." | "Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini sebagai acuan pengarsipan untuk butir 6.5." |
+| R2 butir 1, rujukan K-13 di tabel peran (bagian 5), dua baris | "Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)." | "Pemetaan ke jabatan mengikuti definisi di bagian 3 (SNX-HR-ORG-01 butir K-13)." (baris pemberi pengecualian yang sudah memuat SNX-HR-ORG-01 tidak diubah) |
+| R2 butir 2, notes | OI-4/OI-5 dan hitungan USULAN tanpa penanda perubahan W9 di baris tertentu | U-08 dan hitungan USULAN ditandai "diubah W9" di baris/kalimat itu sendiri; OI-4 dan OI-5 sudah bertanda |
 
 Butir 4.7, 6.3, 6.4 tidak diubah; semuanya sudah memakai nama "Financial Document Register".
 

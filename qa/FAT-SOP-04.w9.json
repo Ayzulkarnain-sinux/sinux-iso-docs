@@ -2,29 +2,32 @@
  "key": "FAT-SOP-04",
  "cluster": "FAT-B",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Bagian 5, baris Finance Lead dan Finance Staff: kalimat lama 'Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)' diganti 'Pemetaan ke jabatan mengikuti definisi di bagian 3 (butir K-13)'. Nama dokumen SNX-HR-ORG-01 hilang, jadi 'butir K-13' tidak lagi menyebut dokumennya dan bisa dibaca sebagai butir di bagian 3 FAT-SOP-04, yang tidak punya K-13. Baris ISMS Coordinator masih memakai bentuk lengkap 'SNX-HR-ORG-01 (butir K-13)'. Saran: tulis 'SNX-HR-ORG-01 butir K-13'.",
-  "Bagian 11, baris SNX-FAT-SOP-05: 'Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini' memakai benda sebagai pelaku. Pola ini sudah ada pada kalimat lama ('Butir 6.5 SOP itu menunjuk'), dan 'menunjuk' bukan kata kerja khas manusia. Sifatnya kosmetik.",
-  "Baris rujukan FAT-SOP-05 bagian 11 di dokumen tujuan berlabel (USULAN), tetapi di FAT-SOP-04 ditulis tanpa label. Ini sudah begitu sebelum W9, tidak diubah putaran ini.",
-  "Paragraf 6.1 masih berbunyi 'sesuai butir 6.5 SNX-FAT-SOP-05'. Paragraf ini tidak berubah dan instruksi tidak memintanya. Butir 6.5 FAT-SOP-05 berjudul 'Pelaporan dan pengarsipan' dan memang memuat pengarsipan oleh Finance Lead, jadi rujukan ini tidak salah tempat.",
-  "Definisi 'Financial Document Register ... Dalam peninjauan.' dan kolom nomor 'Dalam peninjauan' di bagian 11 tidak menyebut pelaku. Frasa ini persis yang diminta G-3 B4, jadi bukan pasif baru yang menyimpang."
+  "Butir 6.1 paragraf pembuka masih menulis 'sesuai butir 6.5 SNX-FAT-SOP-05'. Butir 6.5 FAT-SOP-05 tidak menyebut FAT-SOP-04, tetapi kalimat itu menyatakan Finance Lead mengarsipkan dokumen perpajakan menurut langkah 6.5, jadi makna tetap masuk akal. Rujukan ini di luar butir 3 dan tidak diubah, jadi tidak memblokir. Bisa ditinjau di pemeriksaan rujukan G-2 butir 2.",
+  "Definisi Finance Lead menyebut 'Direktur' (Amirull, sesuai Reviewed By), sedangkan bagian 4.9, 5, dan 6.4 memakai 'Direktur Utama' (Samuel) sebagai penyetuju pemusnahan bersama Finance Lead. Dua istilah ini sudah sesuai instruksi dan defaults v22, tetapi 'Direktur' tidak punya entri di bagian 3, sehingga pembaca bisa keliru mengira keduanya sama. Kosmetik atau kejelasan.",
+  "Definisi baru 'Financial Document Register ... Dalam peninjauan.' berupa fragmen kalimat tanpa subjek. Bisa diterima sebagai status dokumen."
  ],
  "butir_dikerjakan": [
-  "Butir 1 (A6): definisi Finance Lead dan Finance Staff ditambahkan di bagian 3 DEFINITION & ABBREVIATIONS dengan isi persis instruksi, keduanya berlabel (USULAN). Kalimat pemetaan lama di bagian 5 ('Belum dipetakan ke jabatan') diselaraskan ke definisi itu.",
-  "Butir 1: blok Reviewed By = 'Amirull Yusuf Zulkarnain / Direktur'. Prepared tetap 'Finance Staff', Approved 'Samuel Kristanto Utomo / President Director'. Ketiganya persis defaults v22 prepared_reviewed.FAT dan approved_by.all.",
-  "Butir 2 (B4): Financial Document Register ditulis 'Dalam peninjauan' secara seragam, di definisi bagian 3 dan kolom nomor bagian 11. Tidak tersisa 'Belum bernomor' atau 'belum ada' untuk register itu. Butir 4.7, 6.3, dan 6.4 tidak berubah dan tetap merujuk nama itu.",
-  "Butir 3 (R170): rujukan FAT-SOP-05 diubah dari 'Butir 6.5' menjadi tabel dokumen terkait bagian 11. Hasil cek pada kerangka dan render FAT-SOP-05: bagian 11 RELATED DOCUMENTS & ATTACHMENTS memuat baris SNX-FAT-SOP-04 '... acuan untuk butir 6.5 (USULAN)'. Isinya cocok.",
-  "Rujukan baru 'definisi di bagian 3' menunjuk bagian 3 DEFINITION & ABBREVIATIONS FAT-SOP-04, yang memuat definisi Finance Lead dan Finance Staff. Rujukan ini benar.",
-  "Tidak ada fakta baru tanpa dasar. JA-10, JA-11, dan Direktur bersumber dari defaults v22 data_conflicts dan LEAD G-3 A6, dan diberi label (USULAN) sesuai instruksi. Tidak ada perubahan lain di luar butir. Diff hanya memuat 6 baris lama dan 8 baris baru."
+  "Butir 1 (A6, G-3): definisi Finance Lead dan Finance Staff ditambahkan di bagian 3 persis sesuai teks instruksi. Kalimat pemetaan di bagian 5 ('Belum dipetakan ke jabatan') diselaraskan menjadi 'Pemetaan ke jabatan mengikuti definisi di bagian 3'. Reviewed By = 'Amirull Yusuf Zulkarnain / Direktur'. Prepared tetap 'Finance Staff'. Approved tetap 'Samuel Kristanto Utomo / President Director'. Semuanya cocok dengan defaults v22 prepared_reviewed.FAT dan approved_by.all.",
+  "Butir 2 (B4): Financial Document Register ditulis 'Dalam peninjauan' di definisi bagian 3 dan di kolom kode tabel dokumen terkait bagian 11. 'Belum bernomor' sudah nol. Butir 4.7, 6.3, dan 6.4 tidak berubah dan tetap merujuk nama register itu.",
+  "Butir 3 (rujukan R170): rujukan SNX-FAT-SOP-05 diganti menjadi 'Tabel dokumen terkait di bagian 11 SOP itu menunjuk SOP ini sebagai acuan pengarsipan untuk butir 6.5'. Isinya diverifikasi di render terbaru FAT-SOP-05: bagian 11 RELATED DOCUMENTS berisi baris SNX-FAT-SOP-04 '... acuan untuk butir 6.5 (USULAN)'.",
+  "R2 butir 1: dua tempat di bagian 5 (Finance Lead, Finance Staff) kini memuat '(SNX-HR-ORG-01 butir K-13)'. K-13 ada di HR-ORG-01 (struct dan render terbaru)."
  ],
- "butir_tidak_dikerjakan": [],
- "grep": "Hasil grep pada teks sesudah (render /tmp/claude-0/w9/render/FAT-SOP-04.docx, diekstrak ke /tmp/claude-0/w9/fs04_after.txt): 'HR Manager' 0 dan 'Divisi Legal' 0, meski FAT-SOP-04 bukan dokumen HR maupun Legal. Em-dash dan en-dash 0. 'Belum bernomor' 0, 'Dalam peninjauan' 2 (definisi dan kolom nomor bagian 11). Frasa proses penyusunan (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun) 0 pada kalimat yang berubah.",
+ "butir_tidak_dikerjakan": [
+  "R2 butir 2 (kebersihan notes/FAT-SOP-04.md) tidak diperiksa. Notes tidak termasuk diff teks dokumen dan tidak menjadi lingkup cek ini."
+ ],
+ "grep": "FAT-SOP-04 bukan dokumen HR atau Legal. Grep pada teks render sesudah (/tmp/claude-0/w9/render/FAT-SOP-04.docx) memberi hasil berikut. 'HR Manager' = 0. 'Divisi Legal' = 0. Frasa proses (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun) = 0. Em-dash = 0. 'belum bernomor' = 0. Diff teks: 6 baris lama menjadi 8 baris baru, semuanya terpetakan ke butir 1, 2, 3, dan R2-1.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }
