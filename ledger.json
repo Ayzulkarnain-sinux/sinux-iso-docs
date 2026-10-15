@@ -1912,7 +1912,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-RPT-02",
    "out_path": "out/04_Legal/SNX-LEG-RPT-02 Legal Compliance Evaluation Report (Rev00 DRAFT).docx",
    "sources": [],
@@ -1923,7 +1923,7 @@
    "open_items": [
     "Sweep (b): Ketentuan butir 4 memuat tiga tindakan dengan urutan tidak jelas (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T01:06:00Z",
+   "updated_at": "2026-10-15T01:07:55Z",
    "pen_agent": "a41798f7f2a336b69",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2043,13 +2043,14 @@
    "loops": 1,
    "usulan_count": 33,
    "open_items": [
-    "Sweep (b): definisi Aktivitas dan nilai status pelaksanaan berbeda dengan MKT-REG-02; validasi klaim di REG-01 belum berlabel USULAN di dokumen ini"
+    "Sweep (b): definisi Aktivitas dan nilai status pelaksanaan berbeda dengan MKT-REG-02; validasi klaim di REG-01 belum berlabel USULAN di dokumen ini",
+    "Residu mutu (sweep nonblocking): arti Aktivitas belum sama dengan MKT-REG-02; belum Selesai ikut mencakup Dibatalkan"
    ],
-   "updated_at": "2026-10-15T01:07:22Z",
+   "updated_at": "2026-10-15T01:07:25Z",
    "pen_agent": "afb20c8cd055f9128",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 64,
@@ -2344,7 +2345,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-06",
    "out_path": "out/03_FAT/SNX-FAT-SOP-06 SOP Accounting and Financial Report (Rev00 DRAFT).docx",
    "sources": [
@@ -2361,7 +2362,7 @@
    "open_items": [
     "Sweep (b): definisi Jurnal penyesuaian lebih sempit dari 4.5; scope menyebut aset tetap, ekualisasi, tutup buku tahunan tanpa prosedur (gap sumber, USULAN di 4.6, pemutus FAT)"
    ],
-   "updated_at": "2026-10-15T01:04:56Z",
+   "updated_at": "2026-10-15T01:07:41Z",
    "classification": "INTERNAL",
    "promoted_from": "HOLD-T3",
    "pen_agent": "ac09fece2de8f355c",

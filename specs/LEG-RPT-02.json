@@ -281,43 +281,49 @@
           "p": "3. Staff Legal menulis di Batasan Evaluasi tiap Persyaratan yang statusnya di SNX-LEG-REG-03 masih Belum Diverifikasi, dan tidak menghitungnya (USULAN)."
         },
         {
-          "p": "4. Staff Legal membandingkan memo kepatuhan pada Periode Evaluasi dengan SNX-LEG-REG-03 (SNX-LEG-SOP-01 prosedur 6.7, USULAN). Staff Legal menulis perubahan peraturan yang belum tercatat di register itu pada tabel Informasi Umum, memperbaruinya di register lebih dulu, lalu mengevaluasinya (USULAN)."
+          "p": "4. Staff Legal membandingkan memo kepatuhan pada Periode Evaluasi dengan SNX-LEG-REG-03 (SNX-LEG-SOP-01 prosedur 6.7, USULAN)."
         },
         {
-          "p": "5. Staff Legal memberi Status Kepatuhan Tidak Berlaku pada Persyaratan yang tidak dapat diterapkan pada kegiatan SINUX selama Periode Evaluasi, dan menulis alasannya di kolom Catatan dan Rujukan Temuan."
+          "p": "5. Untuk tiap perubahan peraturan yang belum tercatat di SNX-LEG-REG-03, Staff Legal memperbarui register itu lebih dulu (USULAN)."
         },
         {
-          "p": "6. Penanggung Jawab Kegiatan menyerahkan Bukti pemenuhan Persyaratan yang terkena kegiatannya kepada Staff Legal (USULAN)."
+          "p": "6. Setelah memperbarui register, Staff Legal menulis perubahan itu di tabel Informasi Umum, lalu mengevaluasinya sebagai Persyaratan (USULAN)."
         },
         {
-          "p": "7. Staff Legal menentukan Status Kepatuhan tiap Persyaratan dari Bukti yang lokasinya dapat ditelusuri. Bila Bukti belum tersedia atau belum diperiksa, Staff Legal memberi Status Kepatuhan Belum Diverifikasi dan tidak memberi Sesuai."
+          "p": "7. Staff Legal memberi Status Kepatuhan Tidak Berlaku pada Persyaratan yang tidak dapat diterapkan pada kegiatan SINUX selama Periode Evaluasi, dan menulis alasannya di kolom Catatan dan Rujukan Temuan."
         },
         {
-          "p": "8. Staff Legal memakai hasil pemantauan di SNX-LEG-RPT-01 yang Periode Pemantauannya berada dalam Periode Evaluasi sebagai Bukti (USULAN)."
+          "p": "8. Penanggung Jawab Kegiatan menyerahkan Bukti pemenuhan Persyaratan yang terkena kegiatannya kepada Staff Legal (USULAN)."
         },
         {
-          "p": "9. Untuk Persyaratan berstatus Sebagian Sesuai atau Tidak Sesuai, Staff Legal menulis Rujukan Temuan. Bila belum ada Catatan Temuan, Staff Legal mencatatnya lebih dulu di SNX-LEG-RPT-01 (USULAN). Tindakan Perbaikan, Penanggung Jawab, dan Target Penyelesaian ada di Catatan Temuan itu, dan Staff Legal tidak mengulangnya di laporan ini."
+          "p": "9. Staff Legal menentukan Status Kepatuhan tiap Persyaratan dari Bukti yang lokasinya dapat ditelusuri. Bila Bukti belum tersedia atau belum diperiksa, Staff Legal memberi Status Kepatuhan Belum Diverifikasi dan tidak memberi Sesuai."
         },
         {
-          "p": "10. Staff Legal mengisi tabel Ringkasan per Bidang dari Daftar Evaluasi Persyaratan: jumlah Persyaratan tiap Status Kepatuhan, Cakupan Verifikasi, dan Tingkat Kepatuhan, untuk tiap Bidang dan untuk seluruh Bidang (USULAN)."
+          "p": "10. Staff Legal memakai hasil pemantauan di SNX-LEG-RPT-01 yang Periode Pemantauannya berada dalam Periode Evaluasi sebagai Bukti (USULAN)."
         },
         {
-          "p": "11. Bila satu Bidang tidak punya Persyaratan berstatus Sesuai, Sebagian Sesuai, atau Tidak Sesuai, Staff Legal mengosongkan Tingkat Kepatuhan Bidang itu dan menulis alasannya di Batasan Evaluasi."
+          "p": "11. Untuk Persyaratan berstatus Sebagian Sesuai atau Tidak Sesuai, Staff Legal menulis Rujukan Temuan. Bila belum ada Catatan Temuan, Staff Legal mencatatnya lebih dulu di SNX-LEG-RPT-01 (USULAN). Tindakan Perbaikan, Penanggung Jawab, dan Target Penyelesaian ada di Catatan Temuan itu, dan Staff Legal tidak mengulangnya di laporan ini."
         },
         {
-          "p": "12. Staff Legal tidak menyatakan SINUX patuh penuh bila masih ada Persyaratan berstatus Belum Diverifikasi, Sebagian Sesuai, atau Tidak Sesuai (USULAN)."
+          "p": "12. Staff Legal mengisi tabel Ringkasan per Bidang dari Daftar Evaluasi Persyaratan: jumlah Persyaratan tiap Status Kepatuhan, Cakupan Verifikasi, dan Tingkat Kepatuhan, untuk tiap Bidang dan untuk seluruh Bidang (USULAN)."
         },
         {
-          "p": "13. Staff Legal menulis Kesimpulan Umum, Batasan Evaluasi, dan Rekomendasi dari angka pada tabel Ringkasan per Bidang dan dari Bukti yang ada."
+          "p": "13. Bila satu Bidang tidak punya Persyaratan berstatus Sesuai, Sebagian Sesuai, atau Tidak Sesuai, Staff Legal mengosongkan Tingkat Kepatuhan Bidang itu dan menulis alasannya di Batasan Evaluasi."
         },
         {
-          "p": "14. Line Manager Legal memeriksa laporan terisi dan menetapkan Tingkat Kepatuhan seluruh Bidang sebelum persetujuan (USULAN)."
+          "p": "14. Staff Legal tidak menyatakan SINUX patuh penuh bila masih ada Persyaratan berstatus Belum Diverifikasi, Sebagian Sesuai, atau Tidak Sesuai (USULAN)."
         },
         {
-          "p": "15. Line Manager Legal menyampaikan laporan terisi yang sudah disetujui kepada Manajemen (USULAN, selaras dengan laporan bulanan di SNX-LEG-SOP-01 prosedur 6.10). Manajemen memutuskan tindak lanjut atas Rekomendasi (USULAN)."
+          "p": "15. Staff Legal menulis Kesimpulan Umum, Batasan Evaluasi, dan Rekomendasi dari angka pada tabel Ringkasan per Bidang dan dari Bukti yang ada."
         },
         {
-          "p": "16. Staff Legal menyimpan laporan terisi di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24), menulis lokasi Bukti di kolom Bukti yang Diperiksa, dan menandai laporan RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
+          "p": "16. Line Manager Legal memeriksa laporan terisi dan menetapkan Tingkat Kepatuhan seluruh Bidang sebelum persetujuan (USULAN)."
+        },
+        {
+          "p": "17. Line Manager Legal menyampaikan laporan terisi yang sudah disetujui kepada Manajemen (USULAN, selaras dengan laporan bulanan di SNX-LEG-SOP-01 prosedur 6.10). Manajemen memutuskan tindak lanjut atas Rekomendasi (USULAN)."
+        },
+        {
+          "p": "18. Staff Legal menyimpan laporan terisi di folder Google Drive departemen Legal (USULAN, SNX-LEG-SOP-01 butir 4.24), menulis lokasi Bukti di kolom Bukti yang Diperiksa, dan menandai laporan RESTRICTED (Internal) menurut SNX-ISMS-PRO-01."
         }
       ]
     },
@@ -333,15 +339,15 @@
             "rows": [
               [
                 "Staff Legal",
-                "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 5, 7 sampai 13, dan 16). Dipetakan ke Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pelaksana Evaluasi (USULAN). Menulis Daftar Evaluasi Persyaratan, menentukan Status Kepatuhan, menghitung Cakupan Verifikasi dan Tingkat Kepatuhan, mencatat Rujukan Temuan, dan menyimpan laporan terisi (Ketentuan butir 1 sampai 7, 9 sampai 15, dan 18). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-09) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Line Manager Legal",
-                "Pemilik dokumen (USULAN). Memeriksa laporan terisi, menetapkan Tingkat Kepatuhan seluruh Bidang, dan menyampaikan laporan terisi kepada Manajemen (Ketentuan butir 14 dan 15). Dipetakan ke Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
+                "Pemilik dokumen (USULAN). Memeriksa laporan terisi, menetapkan Tingkat Kepatuhan seluruh Bidang, dan menyampaikan laporan terisi kepada Manajemen (Ketentuan butir 16 dan 17). Nama peran ini dipetakan ke jabatan Legal & Compliance (JA-08) di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN)."
               ],
               [
                 "Penanggung Jawab Kegiatan",
-                "Menyerahkan Bukti pemenuhan Persyaratan yang terkena kegiatannya kepada Staff Legal (Ketentuan butir 6)."
+                "Menyerahkan Bukti pemenuhan Persyaratan yang terkena kegiatannya kepada Staff Legal (Ketentuan butir 8)."
               ],
               [
                 "Penyetuju Laporan",
@@ -349,7 +355,7 @@
               ],
               [
                 "Manajemen",
-                "Menerima laporan terisi yang sudah disetujui dan memutuskan tindak lanjut atas Rekomendasi (Ketentuan butir 15) (USULAN)."
+                "Menerima laporan terisi yang sudah disetujui dan memutuskan tindak lanjut atas Rekomendasi (Ketentuan butir 17) (USULAN)."
               ]
             ],
             "widths_cm": [
@@ -370,7 +376,7 @@
           "p": "1. Staff Legal mengisi tabel Informasi Umum. Nama Perusahaan sudah terisi. Periode Evaluasi memuat rentang tanggal yang dievaluasi, dan Tanggal Evaluasi memuat tanggal pemeriksaan Bukti yang terakhir."
         },
         {
-          "p": "2. Pelaksana Evaluasi memuat nama dan jabatan. Daftar Persyaratan yang Dipakai memuat tanggal peninjauan terakhir SNX-LEG-REG-03. Laporan Pemantauan yang Dipakai memuat Periode Pemantauan tiap laporan SNX-LEG-RPT-01 yang dipakai sebagai Bukti. Perubahan Peraturan pada Periode Evaluasi memuat perubahan menurut Ketentuan butir 4."
+          "p": "2. Pelaksana Evaluasi memuat nama dan jabatan. Daftar Persyaratan yang Dipakai memuat tanggal peninjauan terakhir SNX-LEG-REG-03. Laporan Pemantauan yang Dipakai memuat Periode Pemantauan tiap laporan SNX-LEG-RPT-01 yang dipakai sebagai Bukti. Perubahan Peraturan pada Periode Evaluasi memuat perubahan menurut Ketentuan butir 6."
         },
         {
           "p": "3. Pada Daftar Evaluasi Persyaratan, kolom Bidang sudah terisi satu baris per Bidang. Staff Legal menambah baris dengan nama Bidang yang sama bila satu Bidang punya lebih dari satu Persyaratan."
@@ -379,7 +385,7 @@
           "p": "4. Kolom No. di Register memuat nomor baris Persyaratan di SNX-LEG-REG-03. Kolom Persyaratan memuat peraturan atau persyaratan beserta kewajiban bagi SINUX, sebagaimana tertulis di register itu."
         },
         {
-          "p": "5. Kolom Bukti yang Diperiksa memuat nama Bukti dan lokasinya. Kolom Status Kepatuhan diisi satu dari lima nilai pada bagian Istilah. Kolom Catatan dan Rujukan Temuan memuat Rujukan Temuan menurut Ketentuan butir 9, atau alasan Status Kepatuhan Tidak Berlaku atau Belum Diverifikasi."
+          "p": "5. Kolom Bukti yang Diperiksa memuat nama Bukti dan lokasinya. Kolom Status Kepatuhan diisi satu dari lima nilai pada bagian Istilah. Kolom Catatan dan Rujukan Temuan memuat Rujukan Temuan menurut Ketentuan butir 11, atau alasan Status Kepatuhan Tidak Berlaku atau Belum Diverifikasi."
         },
         {
           "p": "6. Pada Ringkasan per Bidang, tabel jumlah memuat banyaknya baris Daftar Evaluasi Persyaratan dengan Status Kepatuhan itu. Tabel persentase memuat Cakupan Verifikasi dan Tingkat Kepatuhan. Baris Seluruh Bidang dihitung dari semua baris Daftar Evaluasi Persyaratan, bukan dari rata-rata persentase tiap Bidang (USULAN)."
@@ -391,7 +397,7 @@
           "p": "8. Pada Hasil Evaluasi, Line Manager Legal mengisi Tingkat Kepatuhan yang Ditetapkan dengan persentase baris Seluruh Bidang, setelah memeriksa Status Kepatuhan tiap Persyaratan. Staff Legal menguraikan kondisi kepatuhan pada Kesimpulan Umum dari hasil pemeriksaan dan Bukti yang tersedia."
         },
         {
-          "p": "9. Batasan Evaluasi memuat Persyaratan yang dikecualikan menurut Ketentuan butir 3, Bukti yang masih diperlukan untuk Persyaratan berstatus Belum Diverifikasi, dan Bidang yang Tingkat Kepatuhannya dikosongkan menurut Ketentuan butir 11."
+          "p": "9. Batasan Evaluasi memuat Persyaratan yang dikecualikan menurut Ketentuan butir 3, Bukti yang masih diperlukan untuk Persyaratan berstatus Belum Diverifikasi, dan Bidang yang Tingkat Kepatuhannya dikosongkan menurut Ketentuan butir 13."
         },
         {
           "p": "10. Tabel Rekomendasi diisi satu baris per Rekomendasi. Kolom Pelaksana yang Disarankan memuat nama peran atau jabatan, dan kolom Rujukan memuat nama Bidang atau No. di Register Persyaratan yang menjadi dasar."
@@ -894,7 +900,7 @@
               ],
               [
                 "SNX-LEG-SOP-03",
-                "Legal Document Control & Retention. Tempat usulan periode retensi dan Kategori 4 (dokumen penelaahan Legal)."
+                "Legal Document Control & Retention. Tempat usulan periode retensi dan Kategori 4 (dokumen penelaahan Legal), repositori resmi (butir 4.8), dan pembagian pemilik rekaman dan pencatat (butir 4.26)."
               ],
               [
                 "SNX-ISMS-PRO-01",
@@ -902,7 +908,7 @@
               ],
               [
                 "SNX-HR-ORG-01",
-                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal, Staff Legal, unit Management, dan jabatan untuk kolom Penanggung Jawab Kegiatan."
+                "Struktur Organisasi SINUX. Sumber jabatan Legal & Compliance (JA-08 dan JA-09), yang dipetakan ke nama peran Line Manager Legal dan Staff Legal (USULAN), serta unit Management dan jabatan Penanggung Jawab Kegiatan."
               ]
             ],
             "widths_cm": [
@@ -929,12 +935,12 @@
             "rows": [
               [
                 "Laporan terisi, satu per Periode Evaluasi",
-                "Folder Google Drive departemen Legal (Ketentuan butir 16). Pencatat Staff Legal, pemilik Line Manager Legal (USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Folder Google Drive departemen Legal (Ketentuan butir 18; SNX-LEG-SOP-03 butir 4.8). Pencatat Staff Legal, pemilik Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN). Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
                 "Belum ditetapkan. Kategori 4 (dokumen penelaahan Legal) di SNX-LEG-SOP-03; pemilihan kategori menunggu keputusan Legal (USULAN)."
               ],
               [
                 "Bukti pemenuhan Persyaratan",
-                "Lokasi tertulis di kolom Bukti yang Diperiksa (Ketentuan butir 16). Pencatat lokasi Staff Legal, pemilik Bukti Penanggung Jawab Kegiatan (USULAN).",
+                "Lokasi tertulis di kolom Bukti yang Diperiksa (Ketentuan butir 18). Pencatat lokasi Staff Legal. Bukti asli dimiliki Penanggung Jawab Kegiatan di unit asalnya; salinan di folder Google Drive departemen Legal, bila ada, dimiliki Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN).",
                 "Belum ditetapkan."
               ]
             ],

@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Rekaman dan Acuan ISO, tabel Rekaman, baris Laporan terisi kolom Retensi; Dokumen Terkait baris SNX-LEG-SOP-03",
+      "masalah": "Pemblokir putaran pertama sudah selesai. Kalimat retensi kembali sama persis dengan teks sebelum sweep (pemilihan kategori tetap menunggu keputusan Legal), dan frasa 'Tempat usulan periode retensi' di Dokumen Terkait kembali ada. Notes USULAN 15 dan open item 11 kini selaras dengan teks spec.",
+      "bukti": "Spec sesudah: \"Belum ditetapkan. Kategori 4 (dokumen penelaahan Legal) di SNX-LEG-SOP-03; pemilihan kategori menunggu keputusan Legal (USULAN).\" Baris ini tidak muncul di spec.diff. Dokumen Terkait sesudah: \"Legal Document Control & Retention. Tempat usulan periode retensi dan Kategori 4 (dokumen penelaahan Legal), repositori resmi (butir 4.8), dan pembagian pemilik rekaman dan pencatat (butir 4.26).\""
+    },
+    {
+      "lokasi": "Ketentuan butir 6",
+      "masalah": "Butir sweep 1 dikerjakan: tindakan evaluasi yang hilang di putaran pertama kembali ada, dan klausa pasif tanpa pelaku sudah diganti kalimat aktif. Sisa catatan: butir 6 masih memuat dua tindakan (menulis di tabel Informasi Umum, lalu mengevaluasi), sehingga satu langkah tidak tepat satu tindakan (§6a.2). Frasa 'sebagai Persyaratan' baru, tetapi hanya memperjelas apa yang dievaluasi dan tidak menambah fakta.",
+      "bukti": "\"6. Setelah memperbarui register, Staff Legal menulis perubahan itu di tabel Informasi Umum, lalu mengevaluasinya sebagai Persyaratan (USULAN).\""
+    },
+    {
+      "lokasi": "Rekaman, baris Bukti pemenuhan Persyaratan",
+      "masalah": "Sama seperti putaran pertama: aturan pemilik salinan Bukti punya dasar di SNX-LEG-SOP-03 butir 4.8 dan 4.26, tetapi butir 4.26 hanya mengatur rekaman di bagian 11 SOP itu. Dokumen ini memperluasnya. Perluasan itu berlabel USULAN dan alasannya tertulis di notes (pemutus: Legal). Bukan pemblokir.",
+      "bukti": "\"Bukti asli dimiliki Penanggung Jawab Kegiatan di unit asalnya; salinan di folder Google Drive departemen Legal, bila ada, dimiliki Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN).\" specs/LEG-SOP-03.json 4.26: \"Line Manager Legal menjadi pemilik rekaman di bagian 11 dan Staff Legal pencatatnya.\""
+    },
+    {
+      "lokasi": "Seluruh rujukan 'Ketentuan butir' (Peran, Petunjuk Pengisian 2, 5, 9, Rekaman)",
+      "masalah": "Dicek dan cocok. Semua rujukan sudah ikut penomoran baru: Staff Legal 1 sampai 7, 9 sampai 15, dan 18; Penanggung Jawab Kegiatan 8; Line Manager Legal 16 dan 17; Manajemen 17; Rekaman 18; Petunjuk 2 ke butir 6, Petunjuk 5 ke butir 11, Petunjuk 9 ke butir 3 dan 13. JA-08 dan JA-09 sebagai Legal & Compliance ada di specs/HR-ORG-01.json. Tidak ada em-dash, en-dash, atau rujukan internal AI di baris tambahan. Spec tidak punya diagram, jadi tidak ada simpul yang perlu dicek.",
+      "bukti": "Hasil grep 'butir N' atas specs/LEG-RPT-02.json; hasil pemindaian regex atas baris '+' di kedua diff: nihil."
+    }
+  ]
+}

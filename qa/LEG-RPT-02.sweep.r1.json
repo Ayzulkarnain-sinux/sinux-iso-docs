@@ -1,0 +1,37 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "Rekaman dan Acuan ISO, tabel Rekaman, baris Laporan terisi, kolom Retensi (ikut berubah: Dokumen Terkait baris SNX-LEG-SOP-03)",
+      "masalah": "Makna berubah di luar instruksi. Butir sweep 2 hanya meminta pemilik rekaman Legal mengikuti SNX-LEG-SOP-03, bukan retensi atau kategori. Sebelum sweep, pilihan kategori retensi masih terbuka dan menunggu keputusan Legal. Sesudah sweep, dokumen menyatakan laporan terisi masuk Kategori 4, dan yang tersisa terbuka hanya masa retensi. Keputusan yang masih terbuka jadi tertutup. Notes open item 11 masih menulis SNX-LEG-RPT-01 memakai Kategori 4 atau Kategori 6 dan pilihannya perlu diseragamkan; notes USULAN 15 masih menulis 'pemilihan menunggu keputusan Legal'. Perbaikan: kembalikan kalimat 'pemilihan kategori menunggu keputusan Legal', atau minta instruksi baru untuk menetapkan kategori.",
+      "bukti": "Sebelum: \"Belum ditetapkan. Kategori 4 (dokumen penelaahan Legal) di SNX-LEG-SOP-03; pemilihan kategori menunggu keputusan Legal (USULAN).\" Sesudah: \"Belum ditetapkan. Laporan terisi masuk Kategori 4 (dokumen penelaahan Legal) di SNX-LEG-SOP-03, yang menyamakan retensinya dengan dokumen yang ditelaah. Satu laporan memuat evaluasi atas banyak dokumen, sehingga masa retensinya menunggu keputusan Legal (USULAN).\" Dokumen Terkait SNX-LEG-SOP-03, sebelum: \"Tempat usulan periode retensi dan Kategori 4\"; sesudah: frasa periode retensi hilang. Instruksi butir 2: \"Pemilik rekaman Legal mengikuti SNX-LEG-SOP-03\"."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "Ketentuan butir 4 sampai 6",
+      "masalah": "Butir sweep 1 dikerjakan, tetapi satu dari tiga tindakan dibuang, bukan diurutkan ulang. Tindakan 'lalu mengevaluasinya' dihapus dengan alasan di notes (butir 2 sudah mencakup baris register yang diperbarui). Akibatnya, perubahan peraturan yang dicatat di register dengan status Dalam Pemantauan atau Belum Diverifikasi tidak lagi dievaluasi (lihat butir 3), padahal teks lama mewajibkan evaluasi. Perubahan ini diungkap di notes; perlu konfirmasi Legal.",
+      "bukti": "Sebelum: \"... memperbaruinya di register lebih dulu, lalu mengevaluasinya (USULAN).\" Sesudah: butir 5 \"... Staff Legal memperbarui register itu lebih dulu (USULAN).\" dan butir 6 \"Sesudah register diperbarui, Staff Legal menulis perubahan itu di tabel Informasi Umum (USULAN).\" Tidak ada butir evaluasi."
+    },
+    {
+      "lokasi": "Ketentuan butir 6",
+      "masalah": "Klausa pasif tanpa pelaku, padahal pelakunya diketahui, yaitu Staff Legal di butir 5 (§6a.6).",
+      "bukti": "\"Sesudah register diperbarui, ...\""
+    },
+    {
+      "lokasi": "Rekaman, baris Laporan terisi, kolom Retensi",
+      "masalah": "Dokumen menjadi pelaku kata kerja 'menyamakan'. Kasus ini di batas (§6a.1).",
+      "bukti": "\"SNX-LEG-SOP-03, yang menyamakan retensinya dengan dokumen yang ditelaah\""
+    },
+    {
+      "lokasi": "Rekaman, baris Bukti pemenuhan Persyaratan",
+      "masalah": "Isi baru tentang pemilik salinan Bukti punya dasar di SNX-LEG-SOP-03 butir 4.8 (salinan elektronik di folder Legal) dan butir 4.26 (Line Manager Legal pemilik rekaman). Butir 4.26 hanya berlaku untuk rekaman di bagian 11 SOP itu, jadi dokumen ini memperluasnya. Perluasan itu berlabel USULAN dan alasannya tertulis di notes. Dicatat saja, bukan pemblokir.",
+      "bukti": "\"Bukti asli dimiliki Penanggung Jawab Kegiatan di unit asalnya; salinan di folder Google Drive departemen Legal, bila ada, dimiliki Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN).\""
+    },
+    {
+      "lokasi": "notes/LEG-RPT-02.md bagian Sweep baris 1 dan baris 2; tabel USULAN baris 15",
+      "masalah": "Kutipan 'Sebelum' di Sweep baris 1 tidak verbatim. Sweep baris 2 meringkas dua kalimat Peran menjadi 'JA-08 atau JA-09'. Tabel USULAN baris 15 belum diselaraskan dengan teks Retensi yang baru.",
+      "bukti": "Notes: \"memperbarui register lebih dulu\"; spec lama: \"memperbaruinya di register lebih dulu\". USULAN 15: \"Retensi: Kategori 4 ... pemilihan menunggu keputusan Legal\"."
+    }
+  ]
+}
