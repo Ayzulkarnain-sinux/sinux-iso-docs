@@ -95,7 +95,7 @@ Tidak ada angka baru dari saya di berkas hasil. Angka 8 di butir 3 adalah jumlah
 ## Open items
 
 1. Tanggal draft "13 Oktober 2026" (B7) dan tanggal baris riwayat revisi (B31) dipertahankan dari sumber. Tidak ada tanggal baru yang saya tulis dan tanggal efektif tetap "Ditetapkan saat pengesahan". Owner memutus apakah tanggal draft perlu diganti tanggal draft revisi ini.
-2. Gambar Alur Proses (image1.png) tidak bisa disunting xlsx_patch. Kotak "Kembalikan ke Commercial" tidak punya jalan kembali, dan teks gambar tidak menyebut siapa yang menindaklanjuti. Perlu keputusan pemilik dokumen (USULAN 5) lalu gambar baru lewat LEAD atau tim.
+2. Gambar Alur Proses (image1.png) tidak bisa disunting xlsx_patch. Kotak "Kembalikan ke Commercial" tidak punya jalan kembali, dan teks gambar tidak menyebut siapa yang menindaklanjuti. Perlu keputusan pemilik dokumen (USULAN 5) lalu gambar baru lewat LEAD atau tim. (ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah)
 3. GAP alat (kosmetik): clear_rows menghapus isian warna sel yang dikosongkan, sehingga baris 5 sampai 9 WBS, baris 5 Milestone, dan baris 5 Stakeholder berwarna polos, sedangkan baris kosong lain di sheet yang sama berwarna kuning input (FFF2CC). Sel rumus tidak terpengaruh. Perbaikannya di tools/xlsx_patch.py (memulihkan FFF2CC pada sel input yang dikosongkan), di luar batas tulis saya. Conditional formatting membaca nilai sel, bukan isian warna, jadi fungsi form tidak berubah. Belum dilihat di Excel; hanya konversi LibreOffice yang berhasil.
 4. Rujukan "SNX-OPS-SOP-01 Bagian 6.4" (B21) benar terhadap sumber SOP-01. SOP-01 akan dirender ulang ke 11 bagian template (W2); orkestrator perlu memeriksa bahwa pembaruan progres mingguan tetap ada di butir 6.4 spec OPS-SOP-01, atau mengubah rujukan ini.
 5. Checklist G1 di FRM-01 memuat 8 butir, G1 di PRO-OPS-001 8.2 memuat 7 butir tanpa butir klasifikasi data (catatan audit). Pemilik dokumen memutus daftar mana yang berlaku. Dokumen ini memakai 8 butir karena butir 8 menjadi dasar acuan 27001 5.8.
@@ -111,3 +111,15 @@ Tidak ada angka baru dari saya di berkas hasil. Angka 8 di butir 3 adalah jumlah
 Apa yang membuat teks ini terdengar buatan AI. Teks di berkas hasil hampir seluruhnya suara tim. Saya menulis ulang delapan sel lewat `set` (B11, B13, C31, B36, B37, B38 di Kontrol Dokumen, Alur Proses!A2, Checklist G1!A1) dan mengosongkan baris. Enam sel pertama berisi nama, jabatan, atau kalimat dari data baris dan defaults, jadi tidak ada kalimat bebas buatan saya. Dua sel lain (Alur Proses!A2 dan Checklist G1!A1) hanya memotong atau menguraikan singkatan. Di notes ini saya memeriksa frasa pengisi, kelompok tiga yang dipaksakan, ekor penegas, dan tanda kutip untuk penekanan, lalu satu kalimat saya koreksi: klaim lama bahwa tidak ada rumus atau validasi yang menyangkut warna salah, karena conditional formatting ada (Checklist G1, WBS dan Timeline, Milestone). Yang benar: conditional formatting membaca nilai sel, bukan isian warna, dan isian warna yang dihapus clear_rows tidak mengubah hasilnya. Butir open items 3 dan 8 sudah memakai rumusan itu.
 
 Adakah fakta, angka, nama, atau tanggal tanpa sumber. Nama dan jabatan penanda tangan bersumber dari config/defaults.json v21 (prepared_reviewed OPS, approved_by) dan ditandai USULAN butir 1. Perluasan "SD dan PM" menjadi Service Delivery Manager dan Project Manager bersumber dari tabel POL-OPS-001 di salinan audit (baris 218 dan 219), bukan dari xlsx; sudah dicatat di fakta pendukung 10. Klausul 8.1, 8.2.2, dan 5.8 ada di sumber dan di data baris. Tanggal 13 Oktober 2026 dari sumber. Rumus di USULAN 3 adalah usulan saya dan berlabel; angka 8 di dalamnya adalah jumlah butir G1 di sumber. Tidak ada angka lain yang saya tambahkan. Dua pernyataan hasil pembacaan sendiri: tanggal contoh November 2026 (WBS E5:F9, Milestone C5:D5 di xlsx asli) dan isian biru muda E7EEF7 pada baris CONTOH serta kolom No Checklist G1 (openpyxl atas /tmp/src/OPS-FRM-01.xlsx).
+
+## ISO-W9
+
+Spec dan patch tidak diubah di putaran ini (G-3 A9).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Open item gambar Alur Proses | Terbuka, menunggu gambar baru lewat LEAD | Status diubah; teks open item lama tetap |
+
+Open item yang ditutup atau diubah:
+
+- Open item 2 (gambar Alur Proses: kotak Kembalikan ke Commercial tanpa jalan kembali; terkait USULAN 5 dan item 11 di tabel catatan): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah

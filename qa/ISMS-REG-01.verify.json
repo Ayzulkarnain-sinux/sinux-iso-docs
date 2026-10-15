@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {"lokasi": "Register Aset baris 5-216", "masalah": "Register kini tanpa satu aset pun. Pengosongan 12 baris CONTOH sesuai RUNBOOK §6 dan Cara pakai B23 sumber, tetapi bukti inventaris untuk 5.9 belum ada sampai Ops mengisi ulang.", "bukti": "Teks xlsx: hanya header A4:V4 dan rumus L/M/U; notes open item 1 mencatat 12 kandidat dan pemutus Fani."},
+    {"lokasi": "Kontrol Dokumen!B14", "masalah": "Angka '5 tahun' untuk berita acara Pemusnahan diambil dari dokumen lain (SNX-ISMS-SOP-04), bukan dari REG-01, tanpa label USULAN.", "bukti": "context/audit isms baris 2980: 'Berita acara pemusnahan | Lampiran SNX-ISMS-REG-01 | 5 tahun'; sumber tercantum di sel; notes open item 11. Fakta bersumber, jadi tidak memblokir."},
+    {"lokasi": "Kontrol Dokumen!B21", "masalah": "'baris merah berarti review terlambat' tidak cocok dengan aturan format: yang merah hanya sel U dan hanya bila status Aktif.", "bukti": "CF U5:U216 AND($U5<>\"\",$U5<TODAY(),$R5=\"Aktif\"); notes USULAN 1 (dibiarkan karena gambar Alur Proses memuat teks yang sama)."},
+    {"lokasi": "Daftar!B4 dan validasi H5:H216", "masalah": "Nilai dropdown 'RESTRICTED' berbeda dari tingkat SNX-ISMS-PRO-01 'RESTRICTED (Internal)' yang dipakai B9; istilah klasifikasi tidak seragam dalam satu workbook.", "bukti": "Daftar B4 'RESTRICTED' vs Kontrol Dokumen B9 'RESTRICTED (Internal)'; notes USULAN 2."},
+    {"lokasi": "Kontrol Dokumen!B13 (5.10, 5.11)", "masalah": "Workbook tidak punya kolom pemakaian yang dapat diterima atau pengembalian aset; cakupan 5.10 dan 5.11 bergantung pada SNX-ISMS-SOP-04 6.2 dan 6.4.", "bukti": "Header Register Aset A4:V4; notes open item 5."},
+    {"lokasi": "Kontrol Dokumen!B10 vs B37/B38", "masalah": "Pemilik dokumen 'Head of Operation' (dari sumber) tidak muncul di blok pengesahan (Erik Dwi Yanto, Fani Fatullah); hubungan peran Head of Operation dengan VP Tech Operation and Services belum ditetapkan.", "bukti": "B10 'Head of Operation'; B37 'Erik Dwi Yanto / Technical/Operation Engineer L1'; B38 'Fani Fatullah / VP Tech Operation and Services' (sesuai defaults ISMS); notes open item 6."},
+    {"lokasi": "Kontrol Dokumen!B18", "masalah": "'gate G3' tidak dijelaskan dan tanpa rujukan dokumen di workbook.", "bukti": "B18 '...aset pelanggan wajib sebelum gate G3.'; notes open item 8."},
+    {"lokasi": "Kontrol Dokumen baris 27", "masalah": "Kosmetik: kotak legenda abu tanpa label sisa clear_rows.", "bukti": "notes open item 9."},
+    {"lokasi": "umum (g)", "masalah": "Nama dan jabatan sesuai data_conflicts dan defaults (Samuel Kristanto Utomo / President Director, Fani VP Tech Operation and Services, Erik ISMS prepared). Cacat audit 1-9 untuk fileId ini ditangani atau dijelaskan di notes bagian 5. Rujukan internal AI di kolom Acuan baseline (SKILL_, SINUX_*) hilang bersama baris CONTOH. Tidak ada em-dash, en-dash, CONTOH, atau rujukan terlarang di teks hasil.", "bukti": "grep teks xlsx nihil untuk CONTOH|SKILL|DEC-|HANDOVER|Claude|Altair|[A-Z]+_[A-Z_]+|en/em-dash|COO."}
+  ]
+}

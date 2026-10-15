@@ -93,7 +93,7 @@ Cek mesin sekali pakai (skrip openpyxl tidak disimpan): rumus N, O, P baris 5 sa
 
 | # | Butir | Pemutus / pemilik |
 |---|---|---|
-| 1 | Gambar "Alur Proses" memakai sebutan "COO dan Legal" pada kotak Kaji notifikasi PDP, tanpa bentuk "Direktur (COO)". Alat patch tidak mengedit gambar; gambar harus dibuat ulang bila sebutannya mau diseragamkan. | LEAD ISO / owner |
+| 1 | Gambar "Alur Proses" memakai sebutan "COO dan Legal" pada kotak Kaji notifikasi PDP, tanpa bentuk "Direktur (COO)". Alat patch tidak mengedit gambar; gambar harus dibuat ulang bila sebutannya mau diseragamkan. (ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah) | LEAD ISO / owner |
 | 2 | Efek samping clear_rows pada legenda warna: baris 26 dikosongkan, tetapi kotak warna A26 berubah mengikuti kotak A27 (abu-abu), sehingga ada dua kotak abu-abu bersebelahan dengan satu label "Sel rumus: jangan diubah". Kosmetik; alat patch tidak bisa menghapus warna tanpa meniru baris bawahnya. | LEAD ISO (tech_fix xlsx_patch) |
 | 3 | Alat patch tidak mengubah tinggi baris. Teks B15, B19, B20 dipendekkan agar muat dalam tinggi baris yang ada (dicek dengan render soffice). | LEAD ISO |
 | 4 | Format laporan insiden untuk pelanggan tidak punya nomor SNX dan isinya tidak ada di korpus (sumber menyebutnya "format beku"). Lihat USULAN 6. | Fani |
@@ -125,3 +125,15 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | Tanggal 13 Oktober 2026 | Sumber B7 dan B31, tidak diubah |
 
 Semua butir lain berasal dari sumber atau data baris. Tidak ada angka, nama, atau tanggal baru yang ditambahkan penyusun.
+
+## ISO-W9
+
+Spec dan patch tidak diubah di putaran ini (G-3 A9).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Open item gambar Alur Proses | Terbuka, menunggu gambar baru lewat LEAD | Status diubah; teks open item lama tetap |
+
+Open item yang ditutup atau diubah:
+
+- Open item 1 (gambar Alur Proses: sebutan COO dan Legal): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah

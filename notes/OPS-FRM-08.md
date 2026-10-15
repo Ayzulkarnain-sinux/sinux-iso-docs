@@ -88,7 +88,7 @@ Cacat tambahan di luar bagian 5 audit:
 | 1 | Pembagian Zammad dan Service Hub GLPI untuk tiket GMF dan internal. SOP-04 sumber menulis "Service Hub untuk GMF dan internal" (7.1 butir 1), FRM-08 sumber sama; premis owner memberi Zammad untuk Ops. SOP-04, FRM-09, dan form ini harus sama | Owner, Fani, lane OPS-SOP-04 |
 | 2 | Target Ack P3 dan P4 dihitung sebagai jam kalender sedangkan SOP-04 menulis jam kerja; ML-00 no. 10 masih Terbuka karena kalender kerja belum ditetapkan | Fani |
 | 3 | RPT-01 KPI no. 14 butuh tanggal kirim RCA; register tidak punya kolomnya (USULAN 8) | Fani |
-| 4 | Gambar Alur Proses tidak bisa diubah lewat xlsx_patch: tidak ada cabang tiket Keamanan, dan kotak pertama masih "Zammad atau Service Hub". Butuh entri LEAD bila gambar harus diganti | Orkestrator |
+| 4 | Gambar Alur Proses tidak bisa diubah lewat xlsx_patch: tidak ada cabang tiket Keamanan, dan kotak pertama masih "Zammad atau Service Hub". Butuh entri LEAD bila gambar harus diganti (ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah) | Orkestrator |
 | 5 | Register A2 menautkan tiket Keamanan ke SNX-ISMS-FRM-02 berdasarkan SOP-04 7.2 dan ISMS-SOP-01 Bagian 8. Pelaku pencatat di FRM-02 tidak tertulis di sumber; cocokkan setelah ISMS-SOP-01 dirender | Orkestrator (lane ISMS-SOP-01) |
 | 6 | Peran "Lead NOC" sebagai pemilik dokumen belum dipetakan ke jabatan (matriks peran dan SK penunjukan belum ada) | Fani, owner |
 | 7 | Keterbatasan alat: kotak legenda A25 tetap biru; nilai rumus belum tersimpan di out.xlsx (openpyxl), Excel dan LibreOffice menghitung ulang saat dibuka. Tinggi baris B18 tetap, teks 3 baris pas di render LibreOffice; HUMAN-VERDICT: lihat di Excel apakah baris B18 terpotong | Orkestrator, owner |
@@ -131,3 +131,15 @@ Cacat tambahan di luar bagian 5 audit:
 | "3 tahun", "RESTRICTED (Internal)", "Lead NOC", "13 Oktober 2026", "KPI 95%", angka Target Severity | Sumber FRM-08, tidak diubah |
 | Rumus di USULAN 5 | Turunan rumus sumber U5 ditambah syarat G5; berlabel USULAN, belum diterapkan |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+## ISO-W9
+
+Spec dan patch tidak diubah di putaran ini (G-3 A9).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Open item gambar Alur Proses | Terbuka, menunggu gambar baru lewat LEAD | Status diubah; teks open item lama tetap |
+
+Open item yang ditutup atau diubah:
+
+- Open item 4 (gambar Alur Proses: tanpa cabang tiket Keamanan, kotak pertama Zammad atau Service Hub): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah

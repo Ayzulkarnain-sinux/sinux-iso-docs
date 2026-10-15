@@ -110,7 +110,7 @@ Cacat tambahan yang saya temukan (di luar bagian 5 audit):
 
 | # | Open item | Untuk |
 |---|---|---|
-| 1 | Gambar di Alur Proses tidak bisa diubah lewat xlsx_patch: cabang "Belum siap (tunggu defect ditutup)" tetap tanpa panah kembali ke alur. Butuh entri LEAD bila gambar harus diganti | Orkestrator |
+| 1 | Gambar di Alur Proses tidak bisa diubah lewat xlsx_patch: cabang "Belum siap (tunggu defect ditutup)" tetap tanpa panah kembali ke alur. Butuh entri LEAD bila gambar harus diganti (ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah) | Orkestrator |
 | 2 | Rumus rekomendasi tidak memakai ambang 95% dan 100% Kritis, dan Kasus Uji tidak punya kolom Severity. Putuskan USULAN 1 atau terima bahwa kriteria lulus hanya ditulis per proyek di Rencana Uji B8 tanpa dihitung form | Fani |
 | 3 | Defect Kritis atau Tinggi berstatus "Diterima sebagai isu sisa" tidak menahan UAT dan sumber tidak menyebut siapa yang boleh menerimanya. Tetapkan peran penerima | Fani |
 | 4 | Blok Keputusan UAT (tiga kotak centang) dan tiga baris tanda tangan tidak menyebut siapa yang memutus. Sumber hanya menyebut tiga peran penanda tangan | Fani |
@@ -149,3 +149,15 @@ Cacat tambahan yang saya temukan (di luar bagian 5 audit):
 | 100%, 95%, tanggal 18-Nov-2026, TC-001 sampai TC-003, DF-001 (hanya di notes) | Sumber FRM-05 (Rencana Uji B8, Kasus Uji, Defect), semuanya sudah dikosongkan dari form |
 | Masa simpan FRM-06 durasi kontrak + 5 tahun; kolom kriteria penerimaan di FRM-01 | Salinan audit context/audit baris 1884 dan 883, bukan Drive terbaru; ditandai di bagian 1 |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+## ISO-W9
+
+Spec dan patch tidak diubah di putaran ini (G-3 A9).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Open item gambar Alur Proses | Terbuka, menunggu gambar baru lewat LEAD | Status diubah; teks open item lama tetap |
+
+Open item yang ditutup atau diubah:
+
+- Open item 1 (gambar Alur Proses: cabang Belum siap tanpa panah kembali): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah

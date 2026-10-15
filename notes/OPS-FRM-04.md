@@ -105,7 +105,7 @@ Cacat tambahan yang saya temukan (di luar bagian 5 audit):
 | 5 | Tidak ada kolom tanggal atau status PIR (USULAN 7) | Fani |
 | 6 | A2 menunjuk "SNX-OPS-SOP-02 Bagian 5". Cocokkan nomor bagian dan isi kolom Approver setelah SOP-02 selesai dirender; SOP-02 dan FRM-04 harus sama soal sistem tiket (Zammad atau Service Hub) | Orkestrator (lane OPS-SOP-02) |
 | 7 | Peran "Head of Operation" sebagai pemilik dokumen dan "ISO/ISMS Coordinator" sebagai pemeriksa di sumber belum dipetakan ke orang; Fani dipakai sebagai pemeriksa karena defaults | Fani, owner |
-| 8 | Gambar di Alur Proses tidak bisa diubah lewat xlsx_patch; cabang "Ditolak atau revisi" tanpa lanjutan tetap ada di diagram | Orkestrator (butuh entri LEAD bila gambar harus diganti) |
+| 8 | Gambar di Alur Proses tidak bisa diubah lewat xlsx_patch; cabang "Ditolak atau revisi" tanpa lanjutan tetap ada di diagram (ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah) | Orkestrator (butuh entri LEAD bila gambar harus diganti) |
 | 9 | Keterbatasan alat: clear_rows menghapus warna isi baris 5, sehingga A5 sampai R5 dan U5 tanpa warna sedangkan baris 6 sampai 155 berwarna kuning input. Kotak legenda A25 tetap biru. Nilai rumus belum tersimpan di out.xlsx (openpyxl); Excel dan LibreOffice menghitung ulang saat dibuka (diverifikasi LibreOffice: Ringkasan nol). Putuskan terima atau tech_fix alat | Orkestrator |
 | 10 | Tanggal draft 13 Oktober 2026 (B7, B30) berasal dari tim dan lebih awal dari revisi ini; tidak diganti agar tidak ada tanggal karangan. Tanggal efektif tetap "Ditetapkan saat pengesahan" | Owner |
 
@@ -132,3 +132,15 @@ Cacat tambahan yang saya temukan (di luar bagian 5 audit):
 | Rumus usulan di USULAN 5 | Turunan rumus sumber S5 ditambah syarat kolom N; berlabel USULAN, belum diterapkan |
 | Pernyataan isi SOP-02 (Bagian 4 butir 1, Bagian 5) | Salinan audit context/audit, bukan Drive terbaru; ditandai di bagian 1 |
 Tidak ada angka, nama, atau tanggal lain yang saya tambahkan.
+
+## ISO-W9
+
+Spec dan patch tidak diubah di putaran ini (G-3 A9).
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Open item gambar Alur Proses | Terbuka, menunggu gambar baru lewat LEAD | Status diubah; teks open item lama tetap |
+
+Open item yang ditutup atau diubah:
+
+- Open item 8 (gambar Alur Proses: cabang Ditolak atau revisi tanpa lanjutan): ditutup W9: diputus owner 15 Okt; gambar alur di xlsx sudah diganti tim dengan gambar png buatan sendiri, tidak diubah

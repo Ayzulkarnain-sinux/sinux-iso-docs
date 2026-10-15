@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {"lokasi": "6.2 Ringkasan status, paragraf kedua", "masalah": "Kalimat pasif tanpa pelaku dan beda satuan dengan petunjuk kolom", "bukti": "\"Untuk dimensi Jadwal, deviasi lebih dari 1 minggu dari baseline diberi status Merah (USULAN).\" Pelaku (Project Manager) tidak disebut; kolom Keterangan meminta \"[deviasi dari baseline dalam hari]\", ambang ditulis dalam minggu (bisa ditulis \"lebih dari 7 hari\" atau \"1 minggu (7 hari)\")."},
+    {"lokasi": "6.2 Ringkasan status / Istilah Kuning", "masalah": "Ambang Kuning dan ambang untuk Scope, Mutu, Risiko dan isu, Keamanan informasi, serta aturan status Keseluruhan tidak ada", "bukti": "Sumber juga tanpa angka; sudah dicatat sebagai open item 1 di notes/OPS-FRM-03.md. Bukan fakta karangan."},
+    {"lokasi": "3 Peran, baris COO", "masalah": "Uraian tugas melingkar", "bukti": "\"Memutuskan hal berstatus Merah yang butuh keputusan COO.\" Tidak menambah informasi di luar arti Merah di Istilah."},
+    {"lokasi": "6.1 Identitas laporan, baris Klasifikasi", "masalah": "Label RESTRICTED (Internal) tetapi laporan dikirim ke pelanggan", "bukti": "\"RESTRICTED (Internal), dibagikan ke pelanggan terkait\" verbatim dari sumber; cacat audit butir 5 ditangani sebagai open item 2 di notes. Perlu putusan owner atau Fani."},
+    {"lokasi": "Blok Approval halaman depan", "masalah": "Penyetuju berbeda dari sumber", "bukti": "Sumber: \"Disetujui oleh | COO, Amirull Yusuf Zulkarnain\"; dokumen: \"Samuel Kristanto Utomo / President Director\" sesuai config/defaults.json approved_by (D2, DIKUNCI). Prepared/Reviewed sesuai prepared_reviewed.OPS. Dicatat USULAN 2 dan open item 6 di notes."},
+    {"lokasi": "6.3 Pekerjaan periode ini, header kolom Bukti", "masalah": "\"tiket Zammad\" menggantikan \"tiket\" di sumber", "bukti": "Sesuai config/defaults.json ticketing dan RUNBOOK §6 perbaikan lintas dokumen (Zammad untuk Ops); batas Zammad vs GLPI untuk CR dicatat open item 5 di notes."}
+  ]
+}
