@@ -212,7 +212,7 @@ Lint menghitung 42 kemunculan "(USULAN)" di dokumen, termasuk baris definisi lab
 | 10 | SNX-LEG-REG-04 (baris 39, W7) disusun kemudian; kolomnya harus selaras dengan butir 4.2 SOP ini (ID register, kategori, judul, pihak, nomor versi, status, tingkat klasifikasi, lokasi simpan, tanggal berlaku, tanggal berakhir, tanggal pemicu, tanggal akhir masa retensi, penanda Legal Hold) | orkestrator dan Legal |
 | 11 | SNX-FAT-SOP-04 (W4) disusun paralel dan dirujuk sebagai batas scope. Periksa pembagian dokumen yang memuat keduanya, misalnya PKS yang menjadi dasar invoice (salinan di arsip FAT 10 tahun) | orkestrator |
 | 12 | Tracked change dan teks tersembunyi di docx sumber tidak diuji; download_file_content tidak dipakai. Checklist baris 38 tidak punya tautan ke sumber utama (link null) | orkestrator atau owner |
-| 13 | Nama peran Line Manager Legal dan Staff Legal menunggu K-13 di SNX-HR-ORG-01; bila nama peran berubah, render ulang | owner atau Aziz |
+| 13 | Nama peran Line Manager Legal dan Staff Legal menunggu K-13 di SNX-HR-ORG-01; bila nama peran berubah, render ulang | owner atau Aziz [ditutup W9] |
 | 14 | process_owner "Departemen Legal" mengikuti sumber, sedangkan SNX-LEG-SOP-01 dan 02 memakai "Line Manager Legal". Pilih satu bentuk untuk ketiga SOP Legal bila diinginkan | owner |
 | 15 | Hal yang tidak diatur karena sumber diam: dokumen asli hilang atau rusak, salinan dokumen legal di departemen lain saat Legal Hold, lokasi bukti penandatanganan elektronik (SNX-LEG-SOP-02 menyebut menyimpannya) | Legal |
 | 16 | Kalimat perintah di sumber yang ditujukan ke pembaca otomatis: nihil | tidak ada |
@@ -255,3 +255,18 @@ Uji sesudah sweep (semua dari /home/claude/iso-run, keluaran ke /tmp/pen-LEG-SOP
 - `python3 -I tools/lint_doc.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx sop`: `"pass": true`, `"fails": []`, warn "42 butir (USULAN) menunggu ACC".
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx`: "All validations PASSED!".
 - `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-SOP-03/LEG-SOP-03.docx`: `ok	22	LEG-SOP-03.docx	[]`.
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| A5 approval Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| A5 approval Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| A5 bagian 5, Line Manager Legal (JA-08) | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| A5 bagian 5, Staff Legal (JA-09) | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| A5 bagian 11, baris SNX-HR-ORG-01 (rujukan silang) | ... (JA-08 dan JA-09) (USULAN, butir K-13). VP Tech Operation and Services adalah JA-04. | ... (JA-08 dan JA-09). VP Tech Operation and Services adalah JA-04. |
+
+Open item:
+
+- Open item 13 (nama peran menunggu K-13): ditutup W9: diputus owner (G-3 A5); pemetaan JA-08 dan JA-09 tanpa label. USULAN 22 ikut ditutup.
+- A3: dokumen menyebut VP Tech Operation and Services sebagai JA-04 hanya untuk menamai peran dan tidak menyebut atasan atau garis lapor; tidak ada perubahan.
