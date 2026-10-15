@@ -244,7 +244,7 @@
   ["Customer meminta diskon di luar yang sudah disetujui", "Business Development tidak memberi diskon dan mengeskalasi permintaan kepada VP Commercial. Pemrosesan mengikuti butir 6.4."],
   ["Penawaran menimbulkan konflik kontrak atau isu legal", "Business Development segera mengeskalasi kepada VP Commercial dan meminta review Legal & Compliance (SNX-LEG-SOP-02 butir 6.1)."],
   ["COO atau Direktur Utama tidak dapat memberi persetujuan sebelum customer membutuhkan penawaran", "Business Development tidak mengirim penawaran sampai persetujuan, atau delegasi tertulis yang berlaku, diperoleh. Tata cara delegasi belum ditetapkan."],
-  ["Business Development perlu menyimpang dari prosedur", "Business Development memperoleh persetujuan VP Commercial atau pihak yang berwenang atas penyimpangan tersebut."]
+  ["Business Development atau VP Commercial perlu menyimpang dari prosedur", "Business Development atau VP Commercial yang perlu menyimpang memperoleh persetujuan VP Commercial atau pihak yang berwenang atas penyimpangan tersebut."]
  ],
  "conclusion": [
   "Kepatuhan terhadap SOP ini menjadi bagian dari evaluasi kinerja dan probation Business Development dan VP Commercial.",
@@ -257,12 +257,12 @@
   ["SNX-FAT-SOP-01", "Billing & Invoicing; mengatur PPN (butir 4.5) dan persetujuan TOP di atas standar (butir 4.8)."],
   ["SNX-LEG-SOP-02", "Contract Review & Legal Approval, berstatus Draft; mengatur pengajuan permintaan review (butir 6.1) dan keterlibatan Legal sebelum komitmen tertulis kepada pihak luar (butir 4.3)."],
   ["SNX-ISMS-PRO-01", "Information Classification & Handling; memuat tingkat RESTRICTED (Internal) dan aturan dokumen teknis untuk customer pemerintah (butir 4.19)."],
-  ["SNX-COM-FRM-01", "Customer Requirement & Order Review Record; judul menurut daftar dokumen SINUX. Calon bentuk Catatan review scope (USULAN)."],
+  ["SNX-COM-FRM-01", "Customer Requirement & Order Review Record; bentuk rekaman Catatan review scope."],
   ["Belum bernomor", "Authority Matrix; tempat hak tanda tangan kontrak dan otorisasi keuangan per jabatan ditetapkan (SNX-HR-ORG-01)."]
  ],
  "records": [
   ["Proposal dan quotation, termasuk versi terkirim", "CRM; dikelola Business Development (butir 4.14). Lokasi berkas belum ditetapkan", "Belum ditetapkan"],
-  ["Catatan review scope", "Rekaman baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; calon bentuknya SNX-COM-FRM-01", "Belum ditetapkan"],
+  ["Catatan review scope", "Rekaman baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; bentuk rekamannya SNX-COM-FRM-01", "Belum ditetapkan"],
   ["Lembar harga dan margin, beserta hasil verifikasi Accounting & Tax", "Rekaman baru (USULAN). Lokasi belum ditetapkan; dikelola Business Development; berklasifikasi RESTRICTED (Internal) (butir 4.13)", "Belum ditetapkan"],
   ["Catatan persetujuan penawaran", "Rekaman baru (USULAN). Lokasi belum ditetapkan; pemilik VP Commercial", "Belum ditetapkan"],
   ["Permintaan pengecualian komersial", "CRM; dikelola Business Development (butir 6.4)", "Belum ditetapkan"],

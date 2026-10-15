@@ -1,0 +1,36 @@
+{
+ "key": "COM-SOP-02",
+ "cluster": "COM",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 9 baris terakhir: kalimat baru membuat VP Commercial yang perlu menyimpang meminta persetujuan VP Commercial sendiri, jadi orang yang sama menyetujui penyimpangannya. Logika ini sudah ada pada rumusan sebelum sweep ('Personel Commercial ... Personel itu memperoleh persetujuan VP Commercial') dan pada kalimat sumber, jadi tidak ada fakta baru. Usul: 'VP Commercial memperoleh persetujuan pihak yang berwenang' untuk kasus VP Commercial, atau catat sebagai open item.",
+  "Bagian 11 Dokumen terkait, baris SNX-COM-FRM-01: label (USULAN) dihapus bersama kata 'calon'. Padahal spec SNX-COM-FRM-01 saat ini masih menulis 'Formulir ini calon bentuk Catatan review scope (USULAN)' (Dokumen Terkait) dan 'Isi formulir sampai tahap ini menjadi Catatan review scope (USULAN)' (Ketentuan butir 3). Status keputusan kini berbeda antara kedua dokumen. Ini tidak memblokir: butir 7 meminta 'tulis sebagai bentuk rekaman itu, bukan calon', dan baris Rekaman bagian 11 tetap berlabel 'Rekaman baru (USULAN)'. Sebaiknya kedua dokumen diselaraskan, misalnya lewat butir 9 atau putaran berikut.",
+  "Perubahan pada baris Dokumen terkait SNX-COM-FRM-01 tidak disebut tegas di butir 7, yang hanya menunjuk baris Rekaman 'Catatan review scope'. Isinya tetap mengikuti temuan yang sama (calon menjadi bentuk) dan mencegah dua baris bertentangan, jadi tidak ada makna yang berubah di luar instruksi. Notes sudah mencatatnya sebagai butir 7.",
+  "Kesimpulan kalimat 1 tidak diubah. Isinya sudah 'Business Development dan VP Commercial', dua peran Commercial yang ada di bagian 5. Brand & Marketing tidak punya peran di bagian 5, jadi larangan butir 2 tidak mengizinkan menyebutnya. Penyusun mencatat alasan ini dan menjadikannya open item untuk owner di notes ISO-W9. Cakupan sumber ('seluruh anggota tim Commercial') baru pulih penuh bila owner menambah peran Brand & Marketing atau memakai istilah Definisi 'Commercial'.",
+  "Kata 'penyusunan' muncul 4 kali di render. Semuanya kata benda proses ('penyusunan proposal'), bukan frasa proses penyusunan dokumen yang dilarang, dan tidak ada di kalimat yang berubah."
+ ],
+ "butir_dikerjakan": [
+  "Butir 2 (B2) bagian 9 baris terakhir: 'Business Development' diganti 'Business Development atau VP Commercial' pada kondisi dan penanganan, sehingga cakupan kembali seperti sebelum sweep dengan nama peran dari bagian 5. Tidak ada istilah di luar bagian 5.",
+  "Butir 2 (B2) Kesimpulan: sudah memuat Business Development dan VP Commercial, jadi tidak perlu diubah. Alasannya dicatat di notes.",
+  "Butir 7 (S04) bagian 11 Rekaman, baris Catatan review scope: 'calon bentuknya SNX-COM-FRM-01' menjadi 'bentuk rekamannya SNX-COM-FRM-01'. Pemilik tetap 'dikelola Business Development' dan label 'Rekaman baru (USULAN)' tetap ada.",
+  "Butir 7 (penyelarasan) bagian 11 Dokumen terkait SNX-COM-FRM-01: 'judul menurut daftar dokumen SINUX. Calon bentuk Catatan review scope (USULAN).' menjadi 'bentuk rekaman Catatan review scope.' Judul 'Customer Requirement & Order Review Record' cocok dengan kerangka SNX-COM-FRM-01.",
+  "Blok approval sesuai defaults v22 COM: Prepared Laras Rasmawati / VP Commercial, Reviewed Amirull Yusuf Zulkarnain / Direktur, Approved Samuel Kristanto Utomo / President Director. process_owner VP Commercial tidak berubah.",
+  "Notes COM-SOP-02 memuat bagian '## ISO-W9': tabel 3 perubahan dan open item 'Personel Commercial' yang ditutup W9 (B2)."
+ ],
+ "butir_tidak_dikerjakan": [
+  "Butir 1 (A7) tidak berlaku: sasarannya hanya COM-FRM-01, COM-FRM-02, COM-REG-01.",
+  "Butir 3 (A3) tidak berlaku: COM-SOP-02 tidak menyebut atasan atau garis lapor JA-03 atau JA-04. Hasil grep 'JA-0', 'melapor', dan 'atasan' hanya menemukan JA-02 di Definisi.",
+  "Butir 4, 5, 6, 8, 9 ditujukan ke dokumen lain di klaster."
+ ],
+ "grep": "Teks render COM-SOP-02 (/tmp/claude-0/w9/render/COM-SOP-02.docx) sesudah perubahan: 'HR Manager' 0, 'Divisi Legal' 0. Langkah 7 tidak mengikat karena COM-SOP-02 bukan dokumen HR atau Legal. Cek tambahan: em-dash 0, 'Personel' 0, 'calon' 0, 'dokumen sumber' 0, 'draf ini' 0. 'penyusun' 4, semuanya bagian dari kata 'penyusunan proposal'. Diff teks hanya berisi 3 baris berubah (bagian 9 baris terakhir, Dokumen terkait SNX-COM-FRM-01, Rekaman Catatan review scope).",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

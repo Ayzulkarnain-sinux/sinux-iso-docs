@@ -226,3 +226,16 @@ Uji sesudah sweep (lulus pada putaran pertama):
 - `python3 -I tools/lint_doc.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx sop`: `"pass": true`, `"fails": []`, satu warn "17 butir (USULAN) menunggu ACC", nol warn PIC SLA.
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx`: "All validations PASSED!".
 - `python3 -I reports/orch/blankscan.py /tmp/pen-COM-SOP-02/COM-SOP-02.docx`: `ok	20	COM-SOP-02.docx	[]`.
+
+## ISO-W9
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| B2 Bagian 9, baris terakhir | "Business Development perlu menyimpang dari prosedur" / "Business Development memperoleh persetujuan VP Commercial atau pihak yang berwenang ..." | "Business Development atau VP Commercial perlu menyimpang dari prosedur" / "Business Development atau VP Commercial yang perlu menyimpang memperoleh persetujuan VP Commercial atau pihak yang berwenang ..." |
+| 7 Bagian 11 Dokumen terkait, SNX-COM-FRM-01 | "judul menurut daftar dokumen SINUX. Calon bentuk Catatan review scope (USULAN)." | "bentuk rekaman Catatan review scope." |
+| 7 Bagian 11 Rekaman, Catatan review scope | "calon bentuknya SNX-COM-FRM-01" | "bentuk rekamannya SNX-COM-FRM-01" (pemilik tetap Business Development) |
+
+B2: Conclusion kalimat 1 sudah memuat Business Development dan VP Commercial (hasil sweep), sehingga tidak diubah. Brand & Marketing tidak punya peran di bagian 5, jadi tidak disebut; bila owner ingin Brand & Marketing tercakup, perlu peran baru di bagian 5 (open item, pemutus owner).
+
+Open item ditutup atau diubah:
+- Penyempitan "Personel Commercial" (catatan sweep 1c, bagian 9): ditutup W9 (B2), cakupan dikembalikan ke Business Development dan VP Commercial.
