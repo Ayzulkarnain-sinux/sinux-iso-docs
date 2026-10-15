@@ -2,27 +2,35 @@
  "key": "COM-SOP-01",
  "cluster": "COM",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Bagian 11, baris SNX-COM-FRM-01: 'Rekaman Business Requirement di butir 6.3 (USULAN)' sedikit melebihi isi tujuan. Di butir 6.3 langkah 4 SNX-COM-SOP-01, keluarannya 'Business Requirement dan Opportunity Assessment di CRM', dan SNX-COM-FRM-01 hanya 'menyalin atau merujuk Business Requirement di CRM' (Ketentuan butir 1, tabel Kebutuhan Customer). Rumusan yang lebih tepat: 'rekaman review order yang merujuk Business Requirement di butir 6.3'. Label USULAN ada, jadi butir ini tidak memblokir.",
-  "Label USULAN dipertahankan pada hubungan ke SNX-COM-FRM-02. Padahal spec SNX-COM-FRM-01 terkini (W9 butir 6) menulis 'Rekaman serah terimanya SNX-COM-FRM-02.' tanpa USULAN. Alasan di notes/COM-SOP-01.md ('kedua formulir sendiri menandainya USULAN') hanya benar untuk versi sebelum W9. Tidak ada kontradiksi makna karena label ini konservatif, tetapi labelnya berbeda antardokumen.",
-  "Gaya: pada kalimat yang berubah, formulir menjadi pelaku 'mencatat' ('mencatat hasil review Commercial...', 'mencatat isi handover proyek...'). Pola ini sama dengan kalimat Tujuan di SNX-COM-FRM-01 dan SNX-COM-FRM-02 sendiri ('Formulir ini mencatat...'), jadi wajar untuk dokumen. Disebut hanya sebagai catatan aturan benda-sebagai-pelaku.",
-  "notes/COM-SOP-01.md bagian ISO-W9 lengkap: 4 baris tabel sesuai 4 perubahan, dan open item ditutup tertulis 'nihil'."
+  "Bagian 11 baris SNX-COM-FRM-01: 'Formulir ini menyalin atau merujuk Business Requirement di CRM' memakai benda (formulir) sebagai pelaku kata kerja manusia. Rumusan ini mengikuti kata-kata butir R2-2 sendiri ('SNX-COM-FRM-01 menyalin atau merujuk'). Di SNX-COM-FRM-01 langkah 1 pelakunya Business Development. Alternatif: 'Business Development menyalin atau merujuk Business Requirement di CRM (keluaran butir 6.3) di formulir ini (USULAN)'.",
+  "Ada beda kecil di keterangan SNX-COM-SOP-02 bagian 11. COM-SOP-02 bagian 1 menyebut 'otorisasi', sedangkan keterangan baru menyebut 'review internal, serta persetujuan harga dan diskon', yang diambil dari paragraf Hasil dan scope bagian 2. Isinya tetap cocok, tidak ada fakta baru.",
+  "notes/COM-SOP-01.md ISO-W9 baris 217 menulis 'Open item ditutup atau diubah: nihil', padahal open item 8 dan 14 kini bertanda 'diubah W9' (baris 142 dan 162). Ini tidak konsisten di dalam notes saja dan tidak masuk ke docx.",
+  "Baris notes ISO-W9 butir 9 untuk SNX-COM-FRM-02 mencatat keadaan R1 ('... di butir 6.8 (USULAN)'). Keadaan akhirnya ada di baris R2 1a. Riwayatnya benar, cuma perlu dibaca berurutan."
  ],
  "butir_dikerjakan": [
-  "Butir 8 (R067): bagian 9, baris 'Service Delivery Manager menolak paket handover', kini merujuk 'SNX-OPS-SOP-01 butir 4.1 dan bagian 9'. Kerangka OPS-SOP-01 memastikan bagian 9 EXCEPTION MANAGEMENT ada, dengan baris 'Paket G1 ditolak | Service Delivery Manager mengembalikan paket ke Commercial secara tertulis, dan proyek belum dimulai (butir 4.1)'. Spec OPS-SOP-01 tidak berubah di W9.",
-  "Butir 9 (S01), SNX-COM-SOP-02: 'judul menurut daftar dokumen SINUX, isi belum dikonfirmasi' diganti dengan isi nyata yang cocok dengan bagian 1 dan 2 COM-SOP-02 (penyusunan proposal, review scope, validasi harga dan margin, pengecualian komersial, review internal, persetujuan harga dan diskon sebelum penawaran dikirim). USULAN pada rujukan rincian tetap, selaras dengan COM-SOP-02 bagian 11 yang juga memberi label USULAN.",
-  "Butir 9 (S01), SNX-COM-FRM-01: keterangan basi diganti dengan isi bagian 1.1 Tujuan COM-FRM-01 ('mencatat hasil review Commercial atas satu order customer sebelum order diterima'), dan 'Calon' dihapus.",
-  "Butir 9 (S01), SNX-COM-FRM-02: keterangan basi diganti dengan isi bagian 1 dan 2 COM-FRM-02 ('isi handover proyek dari Commercial ke tim pelaksana sesudah closing'), dan 'Calon' dihapus.",
-  "Butir 4: hanya rujukan yang diperbaiki. Meta (process_owner, approval) tidak berubah dan sudah sesuai defaults v22: Prepared Laras Rasmawati / VP Commercial, Reviewed Amirull Yusuf Zulkarnain / Direktur, Approved Samuel Kristanto Utomo / President Director, process_owner VP Commercial."
+  "Butir 8 (R067): bagian 9 baris 'Service Delivery Manager menolak paket handover' kini merujuk 'SNX-OPS-SOP-01 butir 4.1 dan bagian 9'. Butir 4.1 ada (penerimaan paket G1, proyek dimulai hanya sesudah paket diterima). Bagian 9 baris 'Paket G1 ditolak' ada dan isinya cocok (pengembalian tertulis ke Commercial). Menurut git diff, OPS-SOP-01 tidak berubah sejak 4a40352.",
+  "Butir 9 (S01) untuk SNX-COM-SOP-02: 'judul menurut daftar dokumen SINUX, isi belum dikonfirmasi' diganti ringkasan scope nyata, sesuai COM-SOP-02 bagian 1 dan 2. Label (USULAN) pada pengalihan rincian ke dokumen itu tetap.",
+  "Butir 9 untuk SNX-COM-FRM-01: keterangan basi dan kata 'Calon' dihapus. Isinya kini 'mencatat hasil review Commercial atas satu order customer sebelum order diterima', sesuai FRM-01 1.1 Tujuan. Label (USULAN) tetap.",
+  "Butir 9 untuk SNX-COM-FRM-02: keterangan basi dan kata 'Calon' dihapus. Isinya kini 'mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing', sesuai FRM-02 bagian 1 dan 2.",
+  "R2-1a: label (USULAN) dihapus dari hubungan SNX-COM-FRM-02 dengan paket handover butir 6.8.",
+  "R2-2: baris SNX-COM-FRM-01 kini berbunyi 'menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)', sesuai FRM-01 langkah 1. Butir 6.3 (Discovery sampai Demo) dan 6.8 (Handover) ada di COM-SOP-01.",
+  "R2-3: open item 8 dan 14 di notes diberi 'diubah W9: ...' di barisnya sendiri, dan tabel ISO-W9 ada beserta baris R2.",
+  "Data defaults v22 sesuai: Prepared Laras Rasmawati / VP Commercial, Reviewed Amirull Yusuf Zulkarnain / Direktur, Approved Samuel Kristanto Utomo / President Director, process_owner VP Commercial. Blok ini tidak diubah di W9."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Grep atas teks render sesudah (/tmp/claude-0/w9/render/COM-SOP-01.docx): 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, 'isi belum dikonfirmasi' 0, 'Calon rekaman' 0, 'butir 4.1 dan bagian 9' 2 (satu baris bagian 9 yang baru diperbaiki, satu baris Dokumen Terkait SNX-OPS-SOP-01 yang sudah ada sebelumnya). COM-SOP-01 bukan dokumen HR atau Legal, jadi aturan langkah 7 tidak berlaku, dan hasilnya tetap nol. Diff hanya berisi 4 baris lama dan 4 baris baru, semuanya dalam lingkup butir 8 dan 9.",
+ "grep": "Render terbaru /tmp/claude-0/w9/render/COM-SOP-01.docx (dokumen Commercial, jadi aturan HR dan Legal tidak berlaku, tetap dihitung): 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, 'isi belum dikonfirmasi' 0, 'calon'/'Calon' 0, 'dokumen sumber' 0, 'draf ini' 0, '4.1 dan bagian 9' 2 (sel tabel dan duplikat XML). Diff teks memuat 4 baris lama dan 4 baris baru, semuanya di bagian 9 dan 11, sesuai butir 8, 9, R2-1a, dan R2-2.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }

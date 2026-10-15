@@ -139,7 +139,7 @@ Sembilan butir keputusan; dokumen memuat 14 label "(USULAN" (12 persis "(USULAN)
 | 5 | Project kick-off dimulai sesudah Service Delivery Manager menerima paket handover, dan tidak lagi masuk syarat closing | Butir 4.15 | owner |
 | 6 | Penetapan pelaku yang tidak disebut sumber (VP Commercial: review internal, tinjauan mingguan dan bulanan, penerima laporan, penyerahan paket, penyimpan rekaman persetujuan; Legal & Compliance: penyimpan NDA dan hasil review kontrak; Business Development: perbaikan paket ditolak) | Butir 4.19, bagian 8, bagian 11 | owner |
 | 7 | Pemetaan peran: Sales dan Sales Executive ke Business Development; Presales ke Manager of Product Tech; Delivery ke Service Delivery Manager (jabatan usulan tanpa pemegang) | Tabel peran bagian 5 | owner (dengan Fani untuk Service Delivery Manager dan Manager of Product Tech) |
-| 8 | Dokumen pasangan COM-SOP-02 (rincian proposal, quotation, harga), COM-FRM-01 (calon rekaman Business Requirement), COM-FRM-02 (calon rekaman paket handover) | Dokumen terkait bagian 11, scope | owner |
+| 8 | Dokumen pasangan COM-SOP-02 (rincian proposal, quotation, harga), COM-FRM-01 (rekaman Business Requirement), COM-FRM-02 (rekaman paket handover); diubah W9: COM-FRM-01 ditulis sebagai rekaman yang menyalin atau merujuk Business Requirement di CRM (USULAN); COM-FRM-02 ditulis sebagai rekaman paket handover tanpa USULAN; kata "calon" dihapus (R1 butir 9, R2) | Dokumen terkait bagian 11, scope | owner |
 | 9 | Daftar klausul ISO 9001:2015 (5.3, 7.5.3, 8.2.1, 8.2.2, 8.2.3) dan ISO/IEC 27001:2022 (Annex A 5.12, 5.14, 5.34), label "(USULAN, perlu konfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
 
 ## Open items
@@ -159,7 +159,7 @@ Sembilan butir keputusan; dokumen memuat 14 label "(USULAN" (12 persis "(USULAN)
 | 11 | Rentang ukuran perusahaan di deck (ICP) tumpang tindih dan berlubang, dan ICP belum berdokumen terkendali; definisi ICP hanya merujuk deck | owner |
 | 12 | Langkah Business Development di SNX-FAT-SOP-01 (kirim Google Form Data Subskripsi Klien saat PKS ditandatangani) belum ada di SOP ini. Perlu diputus apakah masuk di butir 6.7 | FAT |
 | 13 | Account management sesudah implementasi (Stage 10 sumber) belum punya prosedur; masuk SOP terpisah atau perluasan scope | owner |
-| 14 | Kaitan dengan SNX-COM-SOP-02, SNX-COM-FRM-01, SNX-COM-FRM-02, dan SNX-LEG-SOP-02 dicek ulang sesudah dokumen itu final; tumpang tindih wewenang harga di butir 4.10 dengan COM-SOP-02 perlu dicegah. Pengajuan review kontrak merujuk SNX-LEG-SOP-02 butir 6.1, yang masih Draft | owner dan Legal |
+| 14 | Kaitan dengan SNX-COM-SOP-02, SNX-COM-FRM-01, SNX-COM-FRM-02, dan SNX-LEG-SOP-02 dicek ulang sesudah dokumen itu final; tumpang tindih wewenang harga di butir 4.10 dengan COM-SOP-02 perlu dicegah. Pengajuan review kontrak merujuk SNX-LEG-SOP-02 butir 6.1, yang masih Draft; diubah W9: keterangan tiga dokumen itu di bagian 11 sudah memakai isi nyata dokumen tujuan (R1 butir 9, R2); cek ulang final tetap berlaku | owner dan Legal |
 | 15 | Target KPI Commercial ada di berkas lain (KPI individu, belum bernomor) dan belum dirujuk ke KPI Matrix; KPI sumber 9 butir lawan 8 butir di deck | owner |
 | 16 | Klasifikasi RESTRICTED (Internal) untuk data customer Commercial (USULAN 3): SNX-ISMS-PRO-01 menyatakan Commercial belum tercakup | Fani |
 | 17 | SOP sumber tidak punya approver, riwayat revisi, atau klasifikasi, dan sumber menulis "Version 1.0" berlaku 28 Juli 2026. Dokumen ini Draft rev 00; status berlaku sumber lama perlu dihentikan sesudah dokumen ini disahkan | owner |
@@ -209,7 +209,11 @@ Catatan: kata "sumber" tersisa di badan dokumen hanya sebagai kata benda biasa (
 | 9 Bagian 11, SNX-COM-SOP-02 | "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi." | "mengatur penyusunan proposal, review scope, validasi harga dan margin, pengecualian komersial, review internal, serta persetujuan harga dan diskon sebelum penawaran dikirim." (USULAN pada rujukan rincian tetap) |
 | 9 Bagian 11, SNX-COM-FRM-01 | "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Calon rekaman Business Requirement di butir 6.3 (USULAN)." | "mencatat hasil review Commercial atas satu order customer sebelum order diterima. Rekaman Business Requirement di butir 6.3 (USULAN)." |
 | 9 Bagian 11, SNX-COM-FRM-02 | "judul menurut daftar dokumen SINUX, isi belum dikonfirmasi. Calon rekaman paket handover di butir 6.8 (USULAN)." | "mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8 (USULAN)." |
+| R2 1a Bagian 11, SNX-COM-FRM-02 | "Rekaman paket handover di butir 6.8 (USULAN)." | "Rekaman paket handover di butir 6.8." |
+| R2 2 Bagian 11, SNX-COM-FRM-01 | "Rekaman Business Requirement di butir 6.3 (USULAN)." | "Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)." |
 
-Label USULAN pada hubungan ke butir 6.3 dan 6.8 tetap karena SNX-COM-FRM-01 dan SNX-COM-FRM-02 sendiri menandainya USULAN.
+Label USULAN pada hubungan ke butir 6.3 tetap karena SNX-COM-FRM-01 sebagai bentuk Business Requirement masih usulan. R2: label USULAN pada hubungan ke butir 6.8 dihapus karena SNX-COM-FRM-02 adalah rekaman serah terima.
 
 Open item ditutup atau diubah: nihil (hanya rujukan diperbaiki).
+
+R2 butir 3: baris USULAN dan Open items yang ditutup atau diubah W9 diberi keterangan "ditutup W9" atau "diubah W9" di barisnya sendiri.

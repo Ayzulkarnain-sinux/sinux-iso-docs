@@ -683,11 +683,11 @@
   ],
   [
    "SNX-COM-FRM-01",
-   "Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Rekaman Business Requirement di butir 6.3 (USULAN)."
+   "Customer Requirement & Order Review Record; mencatat hasil review Commercial atas satu order customer sebelum order diterima. Formulir ini menyalin atau merujuk Business Requirement di CRM, keluaran butir 6.3 (USULAN)."
   ],
   [
    "SNX-COM-FRM-02",
-   "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8 (USULAN)."
+   "Project Handover Record; mencatat isi handover proyek dari Commercial ke tim pelaksana sesudah closing. Rekaman paket handover di butir 6.8."
   ],
   [
    "Belum bernomor",
