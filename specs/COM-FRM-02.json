@@ -7,7 +7,7 @@
   "number": "SNX-COM-FRM-02",
   "department": "Commercial",
   "title": "Project Handover Record",
-  "process_owner": "Direktur",
+  "process_owner": "VP Commercial",
   "classification": "INTERNAL",
   "review_period": "YEARLY",
   "status": "Draft",
@@ -251,7 +251,7 @@
        ],
        [
         "VP Commercial",
-        "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik formulir terisi (USULAN, bagian Rekaman) dan menetapkan lokasi rekamannya.",
+        "Menyerahkan paket handover kepada Service Delivery Manager atas nama Commercial (butir 4.11). Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau formulir ini setiap tahun (USULAN). Pemilik formulir terisi (USULAN, bagian Rekaman) dan menetapkan lokasi rekamannya.",
         "Bersama COO menyetujui komitmen yang belum tercatat (butir 4.7). Peran Commercial di sana dipetakan ke VP Commercial (USULAN)."
        ],
        [
@@ -266,7 +266,7 @@
        ],
        [
         "COO",
-        "Pemilik dokumen (formulir kosong) menurut blok Identity (USULAN). Meninjau formulir ini setiap tahun (USULAN). Menetapkan struktur kolom (butir 4.15).",
+        "Menetapkan struktur kolom (butir 4.15).",
         "Bersama VP Commercial menyetujui komitmen yang belum tercatat (butir 4.7)."
        ]
       ],
@@ -1247,7 +1247,7 @@
    "h": "Kesimpulan",
    "blocks": [
     {
-     "p": "Formulir ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval dan COO menetapkan struktur kolomnya. VP Commercial menetapkan lokasi rekaman, dan COO meninjau formulir ini setiap tahun (USULAN)."
+     "p": "Formulir ini berstatus Draft dan baru dipakai sesudah Direktur Utama menandatangani blok Approval dan COO menetapkan struktur kolomnya. VP Commercial menetapkan lokasi rekaman dan meninjau formulir ini setiap tahun (USULAN)."
     }
    ]
   }

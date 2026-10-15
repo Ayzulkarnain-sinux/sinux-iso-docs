@@ -1,0 +1,29 @@
+{
+ "key": "COM-FRM-02",
+ "cluster": "COM",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Tanggung jawab tinjauan tahunan (USULAN) pindah dari COO ke VP Commercial di baris Peran dan Kesimpulan. Ini penyelarasan butir A7: di versi sebelum, tinjauan itu melekat pada pemilik dokumen, yaitu baris COO 'Pemilik dokumen ... Meninjau formulir ini setiap tahun'. Label USULAN tetap ada. Diterima sebagai bagian dari 'kalimat badan yang menyebut pemilik dokumen diselaraskan', tetapi pemutus sebaiknya tahu bahwa peran peninjau ikut berubah.",
+  "Di notes/COM-FRM-02.md, baris open item U-11 (sekitar baris 133) di tabel lama tidak diubah statusnya. Penutupannya hanya tercatat di daftar bagian ISO-W9. Baris OI-3 (baris 144) memuat teks 'ditutup W9' yang menempel di tengah kalimat deskripsi ('SNX-COM-FRM-01 memakai \"Direktur\" juga ditutup W9: ...'), sehingga sulit dibaca. Ini masalah kosmetik notes dan tidak memengaruhi dokumen.",
+  "Frasa '(formulir kosong)' yang membedakan pemilik dokumen dari pemilik formulir terisi hilang dari kalimat pemilik dokumen yang baru ('Pemilik dokumen ini menurut blok Identity'). Bedanya tetap terbaca karena kalimat berikutnya menyebut 'Pemilik formulir terisi'."
+ ],
+ "butir_dikerjakan": [
+  "A7 (butir 1): meta.process_owner berubah dari 'Direktur' menjadi 'VP Commercial' (blok Identity hasil render: Process Owner VP Commercial), sesuai defaults v22 process_owner.override.COM_baru.",
+  "A7 penyelarasan badan: baris Peran VP Commercial ditambah 'Pemilik dokumen ini menurut blok Identity (USULAN) dan meninjau formulir ini setiap tahun (USULAN)'. Baris Peran COO dipangkas menjadi 'Menetapkan struktur kolom (butir 4.15)'. Kesimpulan diubah: VP Commercial menetapkan lokasi rekaman dan meninjau formulir setiap tahun (USULAN).",
+  "Notes: bagian '## ISO-W9' ada, berisi tabel butir | sebelum | sesudah dengan 4 baris. OI-3 dan U-11 tercatat ditutup W9 (A7).",
+  "Blok Approval sesuai defaults v22 COM: prepared 'Laras Rasmawati / VP Commercial', reviewed 'Amirull Yusuf Zulkarnain / Direktur', approved 'Samuel Kristanto Utomo / President Director'. Tidak ada yang berubah.",
+  "A3 (butir 3): dokumen tidak menyebut atasan atau garis lapor JA-03/JA-04 (grep JA-03, JA-04, atasan, melapor = 0), jadi tidak ada yang perlu diubah. Penyusun mencatat ini di notes."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Teks sesudah (/tmp/claude-0/w9/COM-FRM-02.after.txt, diekstrak dari /tmp/claude-0/w9/render/COM-FRM-02.docx): 'HR Manager' = 0, 'Divisi Legal' = 0, em-dash = 0, 'menunggu konfirmasi' = 0, pola frasa proses penyusunan (dokumen sumber|sumber tim|di sumber|draf ini|belum berdokumen) = 0, 'penyusun' = 0. Dokumen ini dokumen COM, jadi aturan HR dan Legal tidak berlaku, tetapi kedua hitungan tetap nol. Diff teks: 4 baris lama diganti 4 baris baru, semuanya terkait A7. Diff spec: 4 hunk (process_owner, Peran VP Commercial, Peran COO, Kesimpulan).",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
