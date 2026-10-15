@@ -1,0 +1,59 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Ketentuan Penggunaan butir 4",
+   "masalah": "Satu butir memuat tiga tindakan dengan urutan kabur (§6a.2): menulis di Informasi Umum disebut sebelum memperbarui register 'lebih dulu'.",
+   "bukti": "\"Staff Legal menulis perubahan peraturan yang belum tercatat di register itu pada tabel Informasi Umum, memperbaruinya di register lebih dulu, lalu mengevaluasinya (USULAN).\""
+  },
+  {
+   "lokasi": "Tujuan dan Kesimpulan",
+   "masalah": "'Laporan ini' dipakai untuk dua hal: laporan terisi per Periode Evaluasi (Tujuan) dan dokumen template berstatus Draft (Kesimpulan), lalu Kesimpulan berganti ke 'dokumen ini'. Acuan bergeser (§6a.6/§6a.7).",
+   "bukti": "Tujuan: \"Laporan ini memuat hasil evaluasi ... untuk satu Periode Evaluasi.\" Kesimpulan: \"Laporan ini berstatus Draft ... Line Manager Legal meninjau dokumen ini setiap tahun.\""
+  },
+  {
+   "lokasi": "Tujuan; Ketentuan butir 1",
+   "masalah": "Pasif tanpa pelaku padahal pelaku diketahui (Staff Legal menghitung; Legal memutus frekuensi).",
+   "bukti": "\"Tingkat Kepatuhan hanya dihitung dari Persyaratan yang sudah diverifikasi.\"; \"Frekuensi laporan belum diputus (USULAN: satu laporan per tahun).\""
+  },
+  {
+   "lokasi": "Ruang Lingkup, tabel pengecualian baris Entitas afiliasi; notes/LEG-RPT-02.md USULAN 19 dan open item 7",
+   "masalah": "Pemutus tidak konsisten: dokumen menulis keputusan Legal, catatan penyusun menyarankan owner. SOP Divisi Legal (sumber tim) mencakup entitas afiliasi, jadi pengecualian ini perlu keputusan eksplisit.",
+   "bukti": "Dokumen: \"Tidak dievaluasi di laporan ini sampai ada keputusan Legal.\" Notes USULAN 19: pemutus \"owner\"."
+  },
+  {
+   "lokasi": "Ketentuan butir 9, Petunjuk butir 7, Istilah",
+   "masalah": "Istilah berhuruf kapital dipakai sebagai istilah terdefinisi tetapi tidak ada di tabel Istilah: Catatan Temuan, Tindakan Perbaikan, Periode Pemantauan, Nomor Temuan, Target Penyelesaian (definisinya hanya di SNX-LEG-RPT-01) (§6a.7).",
+   "bukti": "\"Tindakan Perbaikan, Penanggung Jawab, dan Target Penyelesaian ada di Catatan Temuan itu\"; Istilah Rujukan Temuan: \"Periode Pemantauan dan Nomor Temuan di SNX-LEG-RPT-01\"."
+  },
+  {
+   "lokasi": "Acuan ISO baris ISO 9001:2015 8.2.2; Rekaman baris retensi",
+   "masalah": "Beda rumusan antardokumen set Legal: 8.2.2 'produk dan jasa' di sini vs 'produk dan layanan' di SNX-LEG-REG-03; retensi Kategori 4 di sini vs 'Kategori 4 atau Kategori 6' di SNX-LEG-RPT-01. Sudah dicatat open item 11 dan 12.",
+   "bukti": "specs/LEG-REG-03.json: \"8.2.2 Penentuan persyaratan untuk produk dan layanan\"; specs/LEG-RPT-01.json: \"Kategori 4 (hasil pemeriksaan kepatuhan) atau Kategori 6 (laporan) di SNX-LEG-SOP-03\"."
+  },
+  {
+   "lokasi": "Acuan ISO baris ISO 9001:2015 8.2.2",
+   "masalah": "Ejaan: akhiran -nya ditulis dengan tanda hubung.",
+   "bukti": "\"beserta Status Kepatuhan-nya\""
+  },
+  {
+   "lokasi": "Petunjuk Pengisian butir 2",
+   "masalah": "Isian 'Daftar Persyaratan yang Dipakai' meminta satu tanggal peninjauan terakhir SNX-LEG-REG-03, padahal register itu menyimpan Peninjauan Terakhir per baris. Tafsir pengisian ambigu (open item 9).",
+   "bukti": "\"Daftar Persyaratan yang Dipakai memuat tanggal peninjauan terakhir SNX-LEG-REG-03.\"; specs/LEG-REG-03.json kolom \"Peninjauan Terakhir\" per baris."
+  },
+  {
+   "lokasi": "Peran baris Penyetuju Laporan",
+   "masalah": "Jabatan penyetuju laporan terisi belum ditetapkan, sehingga rantai persetujuan laporan per periode belum lengkap. Ditulis terbuka dan tercatat open item 1, bukan karangan.",
+   "bukti": "\"Jabatan pemegang peran ini belum ditetapkan.\""
+  }
+ ],
+ "catatan_pemeriksaan": {
+  "fakta": "Satu-satunya nama orang: 'Samuel Kristanto Utomo / President Director' di blok Approved By (sesuai data_conflicts). Badan dokumen: 'Direktur Utama', 'Direktur (COO)' sekali. Prepared/Reviewed 'Staff Legal'/'Line Manager Legal' persis config/defaults.json LEG. Status Draft, Effective Date kosong, Rev. 00, YEARLY, RESTRICTED (Internal) di tabel dan footer. Satu-satunya angka tanpa sumber (satu laporan per tahun) berlabel USULAN. Semua sel data kosong, tanpa baris contoh.",
+  "sumber_dicek": "Drive 1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA dibaca: lima nilai Status dan kutipan 'Setiap kesimpulan harus didukung oleh bukti yang dapat ditelusuri' serta 'Hindari menyatakan seluruh perusahaan telah patuh' cocok. Rujukan silang dicek di specs/: delapan Bidang (LEG-REG-02, LEG-REG-03), status Berlaku/Perlu Diperbarui/Belum Diverifikasi (LEG-REG-03), M7/M8, Terbuka/Menunggu Verifikasi, Nomor Temuan (LEG-RPT-01), butir 4.24, prosedur 6.7 triwulanan, 6.10 bulanan (LEG-SOP-01), Kategori 4 'dokumen penelaahan Legal' (LEG-SOP-03), JA-01/JA-02 unit Management, JA-08/JA-09/K-13 (HR-ORG-01). Judul 12 kode di Dokumen Terkait cocok config/worklist.json.",
+  "kriteria": "Description baris 36 terpenuhi: Daftar Evaluasi Persyaratan, Ringkasan per Bidang (Cakupan Verifikasi, Tingkat Kepatuhan), Hasil Evaluasi; lingkup seluruh SINUX; peraturan perundang-undangan dan persyaratan hukum didefinisikan; 'yang berlaku' lewat Ketentuan butir 2 dan 4.",
+  "batas_keras": "Pemindaian teks document.xml, header, footer: nol §, DEC-, SKILL_, HANDOVER, Claude, Altair, staging, nama alat KB, CONTOH, [ISI, em-dash, en-dash, Kristianto, CEO. qa/LEG-RPT-02.lint.json pass, fails kosong.",
+  "peran": "Ketentuan butir 1-5, 7-13, 16 = Staff Legal; 6 = Penanggung Jawab Kegiatan; 14-15 = Line Manager Legal; 15 = Manajemen; sesuai tabel Peran. Rekaman: pencatat Staff Legal, pemilik Line Manager Legal, sama dengan Peran dan Process Owner.",
+  "context_audit": "Sumber T2 tanpa fileId; grep fileId checklist di context/audit/*.md nihil. notes/LEG-RPT-02.md bagian 4 menjelaskan penanganan cacat dokumen Legal terkait."
+ }
+}

@@ -1880,16 +1880,16 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-RPT-02",
    "out_path": "out/04_Legal/SNX-LEG-RPT-02 Legal Compliance Evaluation Report (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 36,
    "open_items": [],
-   "updated_at": "2026-10-15T00:09:08Z",
+   "updated_at": "2026-10-15T00:11:44Z",
    "pen_agent": "a41798f7f2a336b69",
    "ooxml": "PASSED"
   },
@@ -1932,8 +1932,11 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 22,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:10:37Z",
+   "open_items": [
+    "Process Owner Direktur (aturan defaults dokumen baru) vs VP Commercial di COM-SOP-01/02 (sumber); pemutus owner",
+    "Sweep (a): C3.2 merujuk COM-SOP-02 butir 4.15, sumber wewenang COO ada di butir 4.7 (USULAN)"
+   ],
+   "updated_at": "2026-10-15T00:10:40Z",
    "pen_agent": "a7326440322dc022c",
    "ooxml": "PASSED"
   },
@@ -1965,17 +1968,18 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-REG-01",
-   "out_path": null,
+   "out_path": "out/05_Commercial/SNX-COM-REG-01 Customer Feedback & Complaint Register (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 19,
    "open_items": [],
-   "updated_at": "2026-10-15T00:00:35Z",
-   "pen_agent": "a9ea62060bd8ee27b"
+   "updated_at": "2026-10-15T00:10:56Z",
+   "pen_agent": "a9ea62060bd8ee27b",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 63,
@@ -2045,7 +2049,7 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-MKT-REG-03",
    "out_path": null,
    "sources": [],
@@ -2054,7 +2058,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-15T00:10:56Z",
+   "pen_agent": "adc43dd2ae38a3897"
   },
   {
    "wl_index": 67,

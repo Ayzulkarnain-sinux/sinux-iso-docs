@@ -1,0 +1,9 @@
+{
+ "file": "out/04_Legal/SNX-LEG-RPT-02 Legal Compliance Evaluation Report (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "32 butir (USULAN) menunggu ACC"
+ ]
+}

@@ -1,0 +1,172 @@
+# Catatan penyusun LEG-RPT-02: Legal Compliance Evaluation Report
+
+Status: DRAFTED. Spec: specs/LEG-RPT-02.json. Mode generic (doc_type_cover "REPORT", doc_type_label "Report"), aksi T2, wave W7, nomor SNX-LEG-RPT-02 (nomor lama dipertahankan), department Legal, classification "RESTRICTED (Internal)", audit_class null, review_period YEARLY, status Draft, revision 00, effective_date kosong, revision_desc "Draft awal untuk review dan pengesahan". Approval persis: prepared "Staff Legal", reviewed "Line Manager Legal", approved "Samuel Kristanto Utomo / President Director". process_owner "Line Manager Legal": dokumen tanpa sumber, jadi dipakai jabatan reviewer departemen tanpa nama (config/defaults.json process_owner.rule). Catatan worklist kosong.
+
+Uji terakhir:
+- `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-RPT-02.json /tmp/pen-LEG-RPT-02/LEG-RPT-02.docx` exit 0.
+- `python3 -I tools/lint_doc.py /tmp/pen-LEG-RPT-02/LEG-RPT-02.docx generic` memberi `"pass": true`, `"fails": []`, satu warn: "32 butir (USULAN) menunggu ACC".
+- Pratinjau PDF lewat soffice, 15 halaman. Lebar kolom tabel disetel sampai judul kolom tidak patah (Daftar Evaluasi Persyaratan: Bidang 3.7, No. di Register 2.3, Persyaratan 3.0, Bukti yang Diperiksa 2.6, Status Kepatuhan 2.7, Catatan dan Rujukan Temuan 2.4 cm). Tabel Ringkasan per Bidang dipecah dua (jumlah; persentase) karena delapan kolom membuat judul patah.
+- Pemeriksaan tambahan atas spec: nol em-dash dan en-dash, nol tanda kutip atau tebal untuk penekanan, "Samuel" tidak ada di badan dokumen, "Direktur Utama" dua kali (Istilah Manajemen, Kesimpulan), "COO" satu kali ("Direktur (COO)" pada Istilah Manajemen, sebutan pertama di badan), tiap kode SNX di badan ada di bagian Dokumen Terkait (12 kode, nol kurang, nol lebih), nol frasa terlarang daftar prompt (dicek dengan pemindaian teks spec), rujukan "Ketentuan butir" cocok dengan penomoran (Peran: Staff Legal butir 1 sampai 5, 7 sampai 13, dan 16; Penanggung Jawab Kegiatan butir 6; Line Manager Legal butir 14 dan 15; Manajemen butir 15; Rekaman butir 16).
+
+## 1. Sumber
+
+Dokumen ini T2 tanpa sumber: struktur kolom dan petunjuk pengisian saja, sel data faktual kosong, tanpa baris contoh. Alat Drive dimuat dan dipakai hanya baca (get_file_metadata dan read_file_content, empat panggilan) untuk memverifikasi kutipan; nol mutasi Drive. download_file_content tidak dipakai karena teks lengkap sudah terbaca lewat read_file_content.
+
+| Sumber | fileId | modifiedTime | Cara baca |
+|---|---|---|---|
+| Checklist ISO SINUX 2026, baris 36 (dept LEG, "Legal Compliance Evaluation Report.", checked false) | 1zlA3Eztm08xkL_V23S5yPhiti-pgOj_T296uUI-stmY | 2026-10-14T17:47:13.611Z (config/checklist.json, exported_at 2026-10-14T19:05:35Z; tidak diukur ulang) | config/checklist.json. Kolom iso_9001 dan iso_27001 baris ini null; link_text dan fileId null |
+| Legal Compliance Monitoring & Corrective Action (Google Doc, 7098 byte) | 1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA | 2026-10-14T04:03:12.671Z (get_file_metadata hari ini) | read_file_content satu kali |
+| SOP Divisi Legal – SINUX.docx (16407 byte) | 19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb | 2026-10-13T10:54:39.480Z (get_file_metadata hari ini) | read_file_content satu kali; teks lengkap, tanpa struktur tabel yang dibutuhkan |
+| SOP TEMPLATE internal SINUX (nama badan hukum, via context/CONTEXT-PACK-v19.md bagian 4) | 1n6iPAh7yXLadDkY-bwnuDz9D3fNhBodQ | tidak diukur | Dibaca dari salinan repo, bukan dari Drive |
+| Pendukung repo (bukan Drive) | specs/LEG-REG-03.json (kolom Bidang, enam nilai status, Peninjauan Terakhir), specs/LEG-REG-02.json (delapan area), specs/LEG-RPT-01.json (lima nilai Status, Catatan Temuan, aspek M7 dan M8, pengecualian yang menunjuk SNX-LEG-RPT-02), specs/LEG-SOP-01.json (butir 4.24, prosedur 6.7, 6.10), specs/LEG-SOP-03.json (Kategori 4), specs/HR-ORG-01.json (JA-08, JA-09, K-13, unit Management), config/defaults.json v21 | repo kerja | Kutipan dari spec lain bisa basi bila spec itu berubah. LEG-REG-03 disusun worker lain dan sudah ada di specs/ saat dokumen ini disusun |
+
+Pemetaan kriteria ke isi dokumen (nomor bagian menurut hasil render):
+
+| Unsur kriteria baris 36 | Letak di dokumen |
+|---|---|
+| Laporan evaluasi | Bagian 6 Isi Laporan: Informasi Umum (6.1), Daftar Evaluasi Persyaratan (6.2), Ringkasan per Bidang (6.3), Ringkasan Temuan dan Pembanding (6.4), Hasil Evaluasi (6.5), Rekomendasi (6.6), Persetujuan dan Pengesahan (6.7) |
+| Tingkat kepatuhan | Istilah (Tingkat Kepatuhan, Cakupan Verifikasi, nilai Status Kepatuhan); Ketentuan butir 10, 11, 12, 14; Ringkasan per Bidang (6.3); baris Tingkat Kepatuhan yang Ditetapkan (6.5) |
+| Perusahaan | Ruang Lingkup 1.2 (seluruh SINUX, satu laporan per Periode Evaluasi); Nama Perusahaan di Informasi Umum; pengecualian entitas afiliasi atau turunan |
+| Peraturan perundang-undangan | Istilah Persyaratan; Daftar Evaluasi Persyaratan (kolom No. di Register dan Persyaratan); Ketentuan butir 2 sampai 4 (sumber SNX-LEG-REG-03); Bidang Kepatuhan Regulasi, Kekayaan Intelektual, Ketenagakerjaan |
+| Persyaratan hukum yang berlaku | Istilah Persyaratan hukum; Bidang Perizinan Berusaha, Kontrak Pelanggan, Kontrak Vendor, Pelindungan Data Pribadi, Kerahasiaan Informasi; "yang berlaku" = Ketentuan butir 2 (hanya Persyaratan berstatus Berlaku atau Perlu Diperbarui di SNX-LEG-REG-03) dan butir 4 (perubahan peraturan pada periode) |
+
+## Fakta kunci
+
+| # | Fakta | Kutipan verbatim sumber | fileId |
+|---|---|---|---|
+| 1 | Kriteria penerimaan baris 36: yang dievaluasi adalah tingkat kepatuhan perusahaan terhadap dua kelompok, peraturan perundang-undangan dan persyaratan hukum. Di dokumen menjadi Tujuan, Istilah Persyaratan dan Persyaratan hukum, dan Ketentuan butir 2 sampai 4 | "Laporan evaluasi tingkat kepatuhan perusahaan \nterhadap peraturan perundang-undangan dan \npersyaratan hukum yang berlaku." (kolom Description, tanda \n = pemenggalan baris di sel; baris 35 "Legal & Regulatory Requirements Register." memuat "Daftar peraturan perundang-undangan dan \npersyaratan hukum yang relevan dengan kegiatan \nusaha dan operasional perusahaan.") | 1zlA3Eztm08xkL_V23S5yPhiti-pgOj_T296uUI-stmY |
+| 2 | Perubahan regulasi diringkas Legal dalam memo kepatuhan tiap kuartal. Di dokumen menjadi Ketentuan butir 4 (perbandingan memo kepatuhan dengan SNX-LEG-REG-03 sebelum evaluasi, berlabel USULAN karena dipakai untuk menjaga daftar tetap terkini) | "Perubahan regulasi yang relevan dipantau dan diringkas dalam memo kepatuhan setiap kuartal." (bagian 4.5) dan "Triwulanan: memo kepatuhan dan pembaruan playbook/template." (bagian 6 Pelaporan) | 19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb |
+| 3 | Kesimpulan kepatuhan wajib berbukti, dan bukti yang belum ada tidak boleh menghasilkan status terpenuhi atau pernyataan patuh penuh. Di dokumen menjadi Ketentuan butir 7 dan 12 | "Setiap kesimpulan harus didukung oleh bukti yang dapat ditelusuri. Apabila bukti belum tersedia atau belum diperiksa, status pemenuhan tidak boleh dinyatakan telah terpenuhi." (Metode Pemantauan) dan "Hindari menyatakan seluruh perusahaan telah patuh apabila masih terdapat aspek yang belum diperiksa atau belum diverifikasi" (Kesimpulan) | 1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA |
+
+## 2. Fakta pendukung
+
+| # | Fakta di dokumen | Kutipan verbatim atau asal | fileId atau berkas |
+|---|---|---|---|
+| 1 | Nama Perusahaan di Informasi Umum | "Company Name (PT Strategi Integrasi Nusantara (SINUX))" (ringkasan template di context/CONTEXT-PACK-v19.md bagian 4) | template 1n6iPAh7yXLadDkY-bwnuDz9D3fNhBodQ |
+| 2 | Lima nilai Status Kepatuhan dan artinya | "Sesuai", "Tidak Sesuai", "Sebagian Sesuai", "Belum Diverifikasi", "Tidak Berlaku" dengan "Bukti belum cukup untuk menyimpulkan status kepatuhan." (Petunjuk Pengisian Status). Arti ditulis ulang agar cocok dengan Persyaratan | 1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA |
+| 3 | Laporan bulanan kepada Manajemen (dasar Ketentuan butir 15) | "Bulanan: laporan kepada manajemen (jumlah permintaan, kontrak selesai, risiko tinggi, izin yang akan jatuh tempo)." | 19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb |
+| 4 | Sumber daftar Persyaratan dan nilai Bidang | specs/LEG-REG-03.json: "Kolom Bidang diisi salah satu area pada SNX-LEG-REG-02: Perizinan Berusaha, Kontrak Pelanggan, Kontrak Vendor, Pelindungan Data Pribadi, Kerahasiaan Informasi, Kepatuhan Regulasi, Kekayaan Intelektual, atau Ketenagakerjaan." dan enam nilai Status (Berlaku, Perlu Diperbarui, Dicabut, Dalam Pemantauan, Belum Diverifikasi, Tidak Relevan untuk SINUX) | specs/LEG-REG-03.json |
+| 5 | Pengecualian aspek M7 dan M8, Catatan Temuan, Periode Pemantauan, Nomor Temuan | specs/LEG-RPT-01.json: aspek M7 "Kebijakan dan Prosedur Internal", M8 "Tindak Lanjut Temuan Sebelumnya"; pengecualian "Evaluasi tingkat kepatuhan SINUX secara keseluruhan | Diatur di SNX-LEG-RPT-02." | specs/LEG-RPT-01.json |
+
+## 3. Keputusan data dan pemetaan peran
+
+- Approval, status, revision, effective_date, review_period, revision_desc: persis dari prompt dan config/defaults.json v21.
+- Samuel di badan dokumen: hanya "Direktur Utama". Blok Approval memakai "President Director" (renderer dan defaults).
+- COO: "Direktur (COO)" pada sebutan pertama (Istilah, Manajemen), tidak dipakai lagi sesudahnya.
+- Tiket dan vault: tidak relevan; Zammad, GLPI, dan vault tidak disebut. PPN: tidak relevan.
+- Klasifikasi: RESTRICTED (Internal) dari prompt; laporan terisi juga RESTRICTED (Internal) karena memuat evaluasi hukum (defaults: hukum = RESTRICTED (Internal)).
+- Nama peran mengikuti specs/HR-ORG-01.json (Daftar Jabatan dan Matriks Peran):
+
+| Peran di dokumen | Padanan | Dasar |
+|---|---|---|
+| Staff Legal | Legal & Compliance (JA-09), "(USULAN), menunggu konfirmasi (K-13)" | Matriks Peran HR-ORG-01; prompt menetapkan prepared "Staff Legal" |
+| Line Manager Legal | Legal & Compliance (JA-08), "(USULAN), menunggu konfirmasi (K-13)" | Matriks Peran HR-ORG-01; prompt menetapkan reviewed "Line Manager Legal" |
+| Manajemen | Unit Management: Direktur Utama (JA-01) dan Direktur (JA-02) | Daftar Jabatan HR-ORG-01; istilah sama dengan di SNX-LEG-REG-02 |
+| Penanggung Jawab Kegiatan | Jabatan menurut HR-ORG-01, ditulis per Persyaratan di SNX-LEG-REG-03; tidak dipetakan ke satu jabatan | Istilah yang sama dengan SNX-LEG-REG-03 |
+| Penyetuju Laporan | Belum ditetapkan | HR-ORG-01 tidak memuat penyetuju laporan Legal; pola sama dengan SNX-LEG-RPT-01 |
+| Pelaksana Evaluasi | Staff Legal (USULAN) | Peran terdekat; padanan Pelaksana Pemantauan di SNX-LEG-RPT-01 |
+
+Pilihan Bidang (delapan area SNX-LEG-REG-02 dan kolom Bidang SNX-LEG-REG-03), bukan aspek M1 sampai M8 SNX-LEG-RPT-01: laporan ini mengevaluasi Persyaratan yang tercatat di SNX-LEG-REG-03, sehingga pengelompokannya mengikuti register itu dan Persyaratan bisa dipindahkan baris demi baris tanpa pemetaan. Aspek M7 (kebijakan internal) dan M8 (tindak lanjut temuan) dikecualikan atau dirujuk lewat Rujukan Temuan.
+
+## 4. Penanganan cacat context/audit
+
+Hasil `grep -n "Legal Compliance Evaluation Re" context/audit/*.md`: satu baris, `context/audit/iso-sinux-supdocs-sintesis-2026-10-14.md:730:2. Legal Compliance Evaluation Report.`, yaitu butir 2 daftar 13 dokumen Legal usulan konsultan. Tidak ada bagian dokumen atau bagian 5 "Catatan kualitas dan celah" untuk dokumen ini (T2, belum ada berkas sumber). Maka tidak ada cacat sumber yang tercatat untuk dokumen ini. Cacat pada dokumen Legal lain di context/audit yang berpengaruh pada isi laporan ini, dan penanganannya:
+
+| # | Cacat di context/audit (dokumen lain) | Penanganan di dokumen ini |
+|---|---|---|
+| 1 | Legal Risk Register menulis area "Kekayaan Intelektuan" (salah ketik) | Ditulis "Kekayaan Intelektual", sama dengan SNX-LEG-REG-02 dan SNX-LEG-REG-03 |
+| 2 | Atasan Line Manager Legal berbeda di tiga sumber ("[ISI: atasan, mis. Direksi/COO]", "CEO", "Management / Direktur") | Dokumen tidak menyebut atasan Line Manager Legal. "Manajemen" didefinisikan lewat unit Management di SNX-HR-ORG-01 (USULAN) |
+| 3 | SOP Divisi Legal: prinsip "Legal memberi opini" bertabrakan dengan penanganan "Hentikan proses" | Tidak ada langkah "menghentikan"; Rekomendasi diserahkan ke Manajemen yang memutuskan tindak lanjut (Ketentuan butir 15, USULAN) |
+| 4 | Klasifikasi di SOP Divisi Legal memakai label Rahasia, Internal, Publik, sedangkan skema SNX-ISMS-PRO-01 memakai label Inggris | Memakai tingkat PRO-01: RESTRICTED (Internal) |
+| 5 | Dokumen Legal sumber tidak memuat rujukan klausul ISO | Bagian Acuan ISO ditambahkan dengan satu label "(USULAN, perlu konfirmasi konsultan)" |
+| 6 | Rujukan regulasi di dokumen Legal ditulis apa adanya (UU No. 27 Tahun 2022, UU ITE tanpa UU No. 1 Tahun 2024) | Tidak ada nomor peraturan di dokumen ini; peraturan dicatat per baris di SNX-LEG-REG-03 sehingga tidak ada rujukan basi di sini |
+| 7 | Placeholder "[ISI]" pada SOP Divisi Legal (repositori resmi, periode retensi, DoA) | Repositori dan retensi ditulis berlabel USULAN dan merujuk SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03; DoA tidak dirujuk |
+
+Kalimat bernada instruksi di sumber: tiga petunjuk isi formulir pada dokumen Legal Compliance Monitoring ("Petunjuk Pengisian Status", "[Uraikan kondisi kepatuhan ... Hindari menyatakan ...]", "Bagian ini diisi untuk setiap ketidaksesuaian ..."). Semuanya petunjuk untuk pengguna formulir, bukan perintah kepada agen. Diperlakukan sebagai data dan hanya dipakai sebagai dasar Ketentuan butir 7 dan 12. Tidak ada kalimat yang menyuruh agen melakukan sesuatu.
+
+## USULAN
+
+Spec memuat 38 kemunculan kata USULAN: 32 label "(USULAN)" polos (hitungan lint) dan enam bentuk lain: "(USULAN: satu laporan per tahun)", "(SNX-LEG-SOP-01 prosedur 6.7, USULAN)", "(USULAN, selaras dengan laporan bulanan ...)", "(USULAN, SNX-LEG-SOP-01 butir 4.24)" di Ketentuan, "(butir 4.24, USULAN)" di Dokumen Terkait, dan satu label "(USULAN, perlu konfirmasi konsultan)" di Acuan ISO. Jumlah keputusan yang berbeda ada 21.
+
+| # | Butir USULAN | Pemutus yang disarankan |
+|---|---|---|
+| 1 | Frekuensi laporan satu per tahun (Ketentuan butir 1). Satu-satunya angka tanpa sumber | Legal |
+| 2 | Persyaratan yang dievaluasi = baris SNX-LEG-REG-03 berstatus Berlaku atau Perlu Diperbarui pada akhir Periode Evaluasi (Ketentuan butir 2) | Legal |
+| 3 | Persyaratan berstatus Belum Diverifikasi di SNX-LEG-REG-03 dicatat di Batasan Evaluasi dan tidak dihitung (Ketentuan butir 3) | Legal |
+| 4 | Memo kepatuhan dibandingkan dengan SNX-LEG-REG-03; perubahan peraturan yang belum tercatat diperbarui dulu di register, lalu dievaluasi (Ketentuan butir 4). Memo triwulanan dari sumber, dipakai di sini untuk menjaga daftar terkini | Legal |
+| 5 | Penanggung Jawab Kegiatan menyerahkan Bukti kepada Staff Legal (Ketentuan butir 6, Peran). Kewajiban untuk unit lain | owner |
+| 6 | Hasil pemantauan SNX-LEG-RPT-01 dipakai sebagai Bukti (Ketentuan butir 8) | Legal |
+| 7 | Catatan Temuan dibuat lebih dulu di SNX-LEG-RPT-01 bila Persyaratan Sebagian Sesuai atau Tidak Sesuai belum punya Catatan Temuan; Tindakan Perbaikan tidak diulang di laporan ini (Ketentuan butir 9) | Legal |
+| 8 | Rumus Cakupan Verifikasi dan Tingkat Kepatuhan (persentase), pengeluaran Tidak Berlaku dari pembagi, dan baris Seluruh Bidang dihitung dari semua baris, bukan rata-rata (Istilah, Ketentuan butir 10, Petunjuk butir 6). Tidak ada ambang angka | Legal |
+| 9 | Larangan menyatakan SINUX patuh penuh diperluas ke status Sebagian Sesuai dan Tidak Sesuai (Ketentuan butir 12). Sumber hanya menyebut aspek yang belum diperiksa atau belum diverifikasi | Legal |
+| 10 | Staff Legal sebagai Pelaksana Evaluasi; Line Manager Legal sebagai pemilik dokumen, pemeriksa laporan terisi, dan penetap Tingkat Kepatuhan (Ketentuan butir 14, Peran) | Legal |
+| 11 | Line Manager Legal menyampaikan laporan terisi ke Manajemen, dan Manajemen memutuskan tindak lanjut atas Rekomendasi (Ketentuan butir 15). Laporan bulanan dari sumber, diperluas ke laporan ini | Samuel |
+| 12 | Manajemen = Direktur Utama dan Direktur (COO), yaitu unit Management di SNX-HR-ORG-01 (Istilah) | owner |
+| 13 | Baris persetujuan per laporan: Staff Legal menyusun, Line Manager Legal memeriksa, Penyetuju Laporan menyetujui dengan jabatan belum ditetapkan (Peran, Petunjuk butir 11) | Samuel |
+| 14 | Penyimpanan di folder Google Drive departemen Legal, pencatat Staff Legal, pemilik Line Manager Legal, penandaan RESTRICTED (Internal) (Ketentuan butir 16, Rekaman). Lokasi berlabel USULAN di SNX-LEG-SOP-01 butir 4.24 | Legal |
+| 15 | Retensi: Kategori 4 (dokumen penelaahan Legal) di SNX-LEG-SOP-03, pemilihan menunggu keputusan Legal | Legal |
+| 16 | Lima nilai Status Kepatuhan sama dengan nilai Status di SNX-LEG-RPT-01 | Legal |
+| 17 | Definisi Persyaratan hukum (syarat perizinan dan kontrak) dan Penanggung Jawab Kegiatan (jabatan menurut SNX-HR-ORG-01, tercatat di SNX-LEG-REG-03) | Legal |
+| 18 | Tujuh butir pengecualian lingkup: kebijakan internal, pemantauan periodik dan temuan, penilaian risiko hukum, penelaahan kontrak, tinjauan rinci data pribadi, pemutakhiran daftar Persyaratan, kepatuhan pihak lain | Legal |
+| 19 | Entitas afiliasi atau turunan SINUX tidak dievaluasi di laporan ini sampai ada keputusan (butir pengecualian kedelapan) | owner |
+| 20 | Kolom Bukti dari Dokumen Legal: pemetaan Bidang ke SNX-LEG-REG-01, FRM-01, FRM-02, FRM-03, dan dokumen Penanggung Jawab Kegiatan | Legal |
+| 21 | Tujuh klausul ISO 9001:2015 (8.2.2, 9.1.3, 10.2) dan ISO/IEC 27001:2022 (9.1, 10.2, Annex A 5.31, 5.34), label "(USULAN, perlu konfirmasi konsultan)". Checklist baris 36 tidak memberi acuan klausul. Pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 (K-13 di SNX-HR-ORG-01) ikut berlabel USULAN di bagian Peran | owner, diteruskan ke konsultan |
+
+## 5. Asumsi (bukan USULAN berlabel, tetapi bukan dari teks sumber)
+
+1. Nama Perusahaan diisi "PT Strategi Integrasi Nusantara (SINUX)" dari template (fakta pendukung 1).
+2. "Tanggal Evaluasi" ditafsirkan sebagai tanggal pemeriksaan Bukti yang terakhir, dan "Periode Evaluasi" sebagai rentang waktu yang dievaluasi (Petunjuk butir 1). Tidak ada sumber untuk kedua kolom.
+3. "Daftar Persyaratan yang Dipakai" diisi tanggal peninjauan terakhir SNX-LEG-REG-03. Register itu menyimpan Peninjauan Terakhir per baris, sehingga tanggal yang ditulis perlu dijelaskan Staff Legal (lihat open item 9).
+4. "Persentase" dan "Cakupan Verifikasi" memakai nama Indonesia yang dibuat untuk laporan ini; istilahnya tidak ada di sumber mana pun (termasuk dalam USULAN 8).
+5. Petunjuk mekanis seperti "Staff Legal menambah baris dengan nama Bidang yang sama" tidak berlabel karena tidak menambah fakta atau angka.
+6. Kata "Bidang" menggantikan kata "aspek" dari SNX-LEG-RPT-01 agar sama dengan SNX-LEG-REG-02 dan SNX-LEG-REG-03; "aspek" hanya dipakai saat menunjuk M7 dan M8 di SNX-LEG-RPT-01.
+
+## Open items
+
+| # | Open item | Pemutus yang disarankan |
+|---|---|---|
+| 1 | Penyetuju Laporan per periode belum ditetapkan; sumber hanya punya baris "Disetujui oleh" tanpa jabatan | Samuel |
+| 2 | Batas SNX-LEG-RPT-01 dan SNX-LEG-RPT-02: RPT-01 sudah memuat "Ringkasan Hasil Pemantauan" (jumlah aspek Sesuai) yang dekat dengan tingkat kepatuhan. Pembeda di dokumen ini: RPT-02 menghitung persentase atas seluruh Persyaratan di SNX-LEG-REG-03 untuk satu Periode Evaluasi, RPT-01 memuat temuan per Periode Pemantauan. Belum diputus | Legal |
+| 3 | RPT-01 memakai aspek M1 sampai M8, RPT-02 dan REG-03 memakai delapan Bidang. Tidak ada pemetaan tertulis M ke Bidang, dan aspek M6 (Keamanan Informasi) tidak punya Bidang sendiri. Sebaiknya diputus sebelum dokumen disahkan | Legal |
+| 4 | Nama "Belum Diverifikasi" dipakai dua kali dengan arti berbeda: di SNX-LEG-REG-03 untuk relevansi peraturan, di dokumen ini untuk Bukti. Nilai dipertahankan karena berasal dari nilai Status SNX-LEG-RPT-01; Ketentuan butir 3 memakai kata "statusnya di SNX-LEG-REG-03" untuk membedakan | Legal |
+| 5 | Ambang kategori Tingkat Kepatuhan (misalnya batas persen untuk tingkat baik, cukup, kurang) tidak ada di sumber mana pun; dokumen hanya memuat persentase dan kesimpulan tertulis. Bila Manajemen ingin target, perlu ditetapkan | Samuel |
+| 6 | Frekuensi evaluasi (usulan satu per tahun) dan hubungannya dengan tinjauan manajemen dan audit internal, yang termasuk lane konsultan | Legal, diteruskan ke konsultan |
+| 7 | Entitas afiliasi atau turunan: SOP Divisi Legal menyatakan "Mencakup juga entitas afiliasi atau turunan (misalnya rencana pendirian PT Nusagrid) sepanjang ditugaskan kepada Divisi Legal SINUX". Dokumen ini mengecualikannya sampai ada keputusan | owner |
+| 8 | Kewajiban Penanggung Jawab Kegiatan menyerahkan Bukti ke Staff Legal belum disepakati unit mana pun dan tidak ada di sumber | owner |
+| 9 | Kecocokan dengan SNX-LEG-REG-03 saat register itu berstatus final: nilai Bidang, enam nilai Status, kolom Peninjauan Terakhir (per baris, bukan satu tanggal), dan Penanggung Jawab Kegiatan. Perubahan di sana mengubah Ketentuan butir 2 sampai 4 dan Petunjuk butir 2 sampai 4 | Legal |
+| 10 | Pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 menunggu konfirmasi (K-13 di SNX-HR-ORG-01). Bila peta berubah, bagian Peran ikut berubah | owner |
+| 11 | Retensi laporan terisi dan Bukti belum ditetapkan. Dokumen ini menyebut Kategori 4 di SNX-LEG-SOP-03, sedangkan SNX-LEG-RPT-01 menyebut Kategori 4 atau Kategori 6; pilihan perlu diseragamkan | Legal |
+| 12 | Judul klausul ISO 8.2.2, 9.1.3, 10.2 (9001) dan 9.1, 10.2 (27001) berasal dari pengetahuan umum penyusun, tanpa berkas di repo; judul Annex A 5.31 dan 5.34 mengikuti spec Legal lain. SNX-LEG-REG-03 menulis 8.2.2 "produk dan layanan", dokumen ini dan SNX-LEG-SOP-01 memakai "produk dan jasa". Perlu satu ejaan dari konsultan | owner, diteruskan ke konsultan |
+| 13 | Sumber tidak memuat butir "Pemilik dokumen" (T2 tanpa sumber); process_owner diambil dari jabatan reviewer departemen | Legal |
+| 14 | Checklist baris 36 tidak memberi acuan klausul (kolom iso_9001 dan iso_27001 null); seluruh klausul di bagian Acuan ISO adalah USULAN | owner, diteruskan ke konsultan |
+| 15 | Checklist baris 36 bertanda checked false (tim belum menandai ada) dan tidak tertaut berkas. Dokumen ini ditulis baru sepenuhnya | owner (informasi, tanpa keputusan) |
+| 16 | Tiga petunjuk isi formulir di sumber dicatat sebagai data, bukan instruksi (bagian 4). Tidak ada kalimat yang menyuruh agen melakukan sesuatu | owner (informasi, tanpa keputusan) |
+
+## 6. Jawaban dua pertanyaan sebelum selesai
+
+Pertanyaan 1: apa yang membuat teks ini terdengar buatan AI?
+
+Temuan pada draf pertama, semuanya sudah diperbaiki di spec akhir:
+- Benda sebagai pelaku kata kerja manusia: "Rujukan Temuan menghubungkan Persyaratan ... dengan Catatan Temuan", "Status Berlaku dan Perlu Diperbarui di register itu menentukan Persyaratan", "Catatan Temuan yang mencatat kekurangan", "Status Kepatuhan ... yang menunjukkan keadaan pemenuhan". Diganti rumusan isi ("Kolom Catatan dan Rujukan Temuan memuat tautan ..."), kalimat berpelaku, atau kata "memuat". Pemindaian ulang kata kerja menelaah, memeriksa, meminta, memastikan, menyetujui, menunjukkan, menyatakan, menghasilkan, membatasi, menunjuk, merujuk, menguraikan, memantau, mencatat, memakai, menentukan, menetapkan, menghitung, menghubungkan, menyimpan, mengisi, menulis, menyerahkan, menyampaikan, memutuskan, menerima, membandingkan, memperbarui pada seluruh teks spec: sisa kemunculan semuanya berpelaku peran (Staff Legal, Line Manager Legal, Penanggung Jawab Kegiatan, Manajemen, Penyetuju Laporan) atau berada di definisi tanpa subjek benda.
+- Pengulangan antarbagian: kalimat "Staff Legal menghitung ... dan Line Manager Legal menetapkannya" di Tujuan dan di Ketentuan; "sama dengan kolom Bidang di SNX-LEG-REG-03" di Ruang Lingkup dan Istilah; instruksi "diisi satu dari lima nilai" di Istilah dan Petunjuk; keterangan "dikecualikan dari laporan ini" di tabel Dokumen Terkait dan tabel pengecualian; syarat "Berlaku atau Perlu Diperbarui" di Ketentuan dan Dokumen Terkait. Masing-masing disisakan di satu tempat.
+- Judul kolom yang patah di pratinjau ("Registe r", "Persyarata n", "Kepatuha n"): lebar kolom disetel ulang, dan kolom "Rujukan Temuan/Catatan" diganti "Catatan dan Rujukan Temuan" agar bisa membungkus baris.
+
+Sisa yang disengaja:
+- Pembuka kalimat "Staff Legal menulis ...", "Staff Legal mengisi ..." berulang di Ketentuan dan Petunjuk. Dibiarkan karena aturan satu langkah, satu pelaku lebih penting daripada variasi.
+- Label "(USULAN)" muncul 32 kali. Dibiarkan karena aturan label per butir berlaku.
+- Pola "Hasil yang dijaga: ..." di Tujuan mengikuti dokumen Legal lain agar set dokumen seragam.
+- Tidak ada kelompok tiga yang dipaksakan: daftar tiga atau lebih di teks (misalnya jumlah, Cakupan Verifikasi, Tingkat Kepatuhan; atau nama, tanggal, tanda tangan) adalah isi kolom atau keluaran nyata. Tidak ada penutup positif, em-dash, penekanan tebal atau huruf kapital, atau atribusi kabur (pemindaian frasa terlarang prompt: nol temuan). Kata "Persyaratan", "Bukti", dan "Bidang" berhuruf kapital karena istilah yang didefinisikan, bukan penekanan.
+
+Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
+
+| Butir di dokumen | Sumber atau status |
+|---|---|
+| "satu laporan per tahun" | Tanpa sumber, berlabel USULAN 1; satu-satunya angka di dokumen |
+| Rumus persentase Cakupan Verifikasi dan Tingkat Kepatuhan | Metode, bukan fakta; USULAN 8. Tidak ada ambang angka |
+| "delapan Bidang" dan namanya | specs/LEG-REG-03.json dan specs/LEG-REG-02.json (fakta pendukung 4); hitungan dari tabel dokumen sendiri |
+| "lima nilai" Status Kepatuhan | Dokumen Drive 1NQvPoHgx4n3SDUmMa5EzJ8QOUg-jb-Bf6fX7x0EarXA (fakta pendukung 2); artinya ditulis ulang dan berlabel USULAN 16 |
+| Memo kepatuhan triwulanan, laporan bulanan kepada Manajemen | SOP Divisi Legal 19peOeN1yA-GwAlfNylE6xQR7rHVKRsZb (fakta kunci 2, fakta pendukung 3); penggunaan di laporan ini USULAN 4 dan 11 |
+| Rujukan butir 4.24, prosedur 6.7 dan 6.10 (SNX-LEG-SOP-01), Kategori 4 (SNX-LEG-SOP-03), JA-08, JA-09, K-13 (SNX-HR-ORG-01), aspek M7 dan M8 (SNX-LEG-RPT-01) | Dicek terhadap specs/ di repo; bisa basi bila spec itu berubah |
+| Nama Perusahaan | Template, fakta pendukung 1, asumsi 1 |
+| Klausul ISO | USULAN 21; judul dari pengetahuan umum untuk lima butir (open item 12) |
+| Tanggal, nomor peraturan, nomor izin, nilai, nama orang selain Samuel Kristanto Utomo di blok Approval | Nol; sel tanggal dan data faktual dibiarkan kosong, tidak ada baris contoh |
