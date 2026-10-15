@@ -676,7 +676,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-SOP-01",
    "out_path": "out/03_FAT/SNX-FAT-SOP-01 Billing & Invoicing (Rev00 DRAFT).docx",
    "sources": [
@@ -689,9 +689,9 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 2,
-   "usulan_count": 7,
+   "usulan_count": 8,
    "open_items": [],
-   "updated_at": "2026-10-15T00:25:11Z",
+   "updated_at": "2026-10-15T00:28:36Z",
    "pen_agent": "aa815c71d2448334e",
    "ooxml": "PASSED",
    "fix_queued": "0",
@@ -705,7 +705,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-SOP-05",
    "out_path": "out/03_FAT/SNX-FAT-SOP-05 Tax Administration & Reporting (Rev00 DRAFT).docx",
    "sources": [
@@ -720,10 +720,11 @@
    "loops": 2,
    "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-14T23:05:13Z",
+   "updated_at": "2026-10-15T00:26:51Z",
    "pen_agent": "a101f4a97710fa3fb",
    "ooxml": "PASSED",
-   "fix_queued": "0"
+   "fix_queued": "0",
+   "sweep": "1"
   },
   {
    "wl_index": 17,
@@ -1959,8 +1960,10 @@
    "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 14,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:25:52Z",
+   "open_items": [
+    "Sweep (b): cakupan isian Business Development Peran/4.1 (Tabel 1-10) vs Cara Mengisi (Tabel 1-11)"
+   ],
+   "updated_at": "2026-10-15T00:25:55Z",
    "pen_agent": "a2f17674d8f1c06ef",
    "ooxml": "PASSED"
   },
@@ -1996,16 +1999,16 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-MKT-RPT-01",
    "out_path": "out/06_Marketing/SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": null,
-   "loops": 0,
+   "loops": 1,
    "usulan_count": 27,
    "open_items": [],
-   "updated_at": "2026-10-15T00:20:07Z",
+   "updated_at": "2026-10-15T00:28:21Z",
    "pen_agent": "afb20c8cd055f9128",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02"
@@ -2018,16 +2021,16 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-MKT-REG-01",
    "out_path": "out/06_Marketing/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": null,
-   "loops": 0,
+   "loops": 1,
    "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-15T00:21:47Z",
+   "updated_at": "2026-10-15T00:28:21Z",
    "pen_agent": "a6278839497527284",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02"
@@ -2040,17 +2043,19 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-MKT-REG-02",
-   "out_path": null,
+   "out_path": "out/06_Marketing/SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 22,
    "open_items": [],
-   "updated_at": "2026-10-15T00:09:08Z",
-   "pen_agent": "af5f5073189ee8555"
+   "updated_at": "2026-10-15T00:27:52Z",
+   "pen_agent": "af5f5073189ee8555",
+   "ooxml": "PASSED",
+   "hold_verify": "MKT-REG-01"
   },
   {
    "wl_index": 66,
@@ -2292,9 +2297,9 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-FAT-SOP-06",
-   "out_path": null,
+   "out_path": "out/03_FAT/SNX-FAT-SOP-06 SOP Accounting and Financial Report (Rev00 DRAFT).docx",
    "sources": [
     {
      "id": "18OGetq0EsAFGDMlU2kK4-BX5-9uIGeTxWi8HWB5TPYs",
@@ -2302,15 +2307,16 @@
      "title": "5. SOP Accounting & Financial Report"
     }
    ],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 22,
    "open_items": [],
-   "updated_at": "2026-10-15T00:18:07Z",
+   "updated_at": "2026-10-15T00:26:51Z",
    "classification": "INTERNAL",
    "promoted_from": "HOLD-T3",
-   "pen_agent": "ac09fece2de8f355c"
+   "pen_agent": "ac09fece2de8f355c",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 79,
@@ -2604,6 +2610,15 @@
   {
    "at": "2026-10-14T23:50Z",
    "event": "checkpoint W6: deleted trig_016gtk8gvGiD669oTp8YERqR, new trig_01RBVjRrymMTgNFkNkymM1wz fires 2026-10-15T00:35Z"
+  }
+ ],
+ "retractions": [
+  {
+   "at": "2026-10-15T00:35Z",
+   "claim": "Orkestrator menulis ke penyusun MKT-REG-02 bahwa Description baris 58 identik dengan baris 57",
+   "kanal": "config/checklist.json (difflib ratio 0.696; 378 vs 659 karakter)",
+   "koreksi": "Tidak identik: baris 58 = isi baris 57 + validasi klaim dan kolom produk/layanan terkait, klaim, sumber/bukti. Keputusan cakupan tetap (REG-02 register pelaksanaan campaign, REG-01 memuat semua kolom baris 57 dan 58), open item untuk owner.",
+   "penemu": "penyusun MKT-REG-02 (pengukuran ulang)"
   }
  ]
 }

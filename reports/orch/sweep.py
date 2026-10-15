@@ -5,7 +5,7 @@ import json, os, re, subprocess, sys
 
 L = json.load(open('ledger.json'))
 D = {d['key']: d for d in L['docs'] if d.get('key')}
-META = [r'dokumen sumber', r'\bdi sumber\b', r'sumber tim', r'SOP sumber', r'versi tim', r'\bpenyusun\w*', r'\bdraf ini\b',
+META = [r'dokumen sumber', r'\bdi sumber\b', r'sumber tim', r'SOP sumber', r'versi tim', r'\bpenyusun\b', r'\bdraf ini\b',
         r'\bsumber (?:tidak|belum) ', r'\bverifikator\b']
 FAT_NEW = 'SNX-FAT-SOP-06 (SOP Accounting and Financial Report), SNX-FAT-REG-01 (Billing & Collection Monitoring Register), SNX-FAT-FRM-02 (Financial Information Access Authorization Records)'
 
@@ -40,6 +40,11 @@ def items(key):
     if key.startswith('LEG-'):
         out.append('Konsistensi Legal: Line Manager Legal dan Staff Legal ditulis sebagai nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN), bukan nama jabatan. '
                    'Pemilik rekaman Legal mengikuti SNX-LEG-SOP-03; bila dokumen ini berbeda, selaraskan atau tulis alasannya di notes.')
+    if key.startswith('MKT-'):
+        out.append('Batas cakupan dokumen Marketing (USULAN, pemutus owner; Description checklist baris 58 memuat seluruh isi Description baris 57 ditambah validasi klaim dan kolom produk/layanan terkait, klaim, sumber/bukti, sehingga cocok dengan judul baris 57, sedangkan judul baris 58 adalah Campaign & Activity Register): SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja '
+                   '(sasaran, audiens, positioning, channel, rencana aktivitas, KPI, realisasi, evaluasi, tindakan korektif); SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim; '
+                   'SNX-MKT-REG-02 = register pelaksanaan campaign dan aktivitas, menautkan materi yang dipakai ke ID persetujuan di SNX-MKT-REG-01; SNX-MKT-REG-03 = hasil lead dan serah terima ke Sales, '
+                   'merujuk nama campaign di SNX-MKT-REG-02. Selaraskan Ruang Lingkup, pengecualian, dan Dokumen Terkait dengan batas ini; jangan menaruh satu isi di dua register.')
     return out
 
 
