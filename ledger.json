@@ -3046,10 +3046,10 @@
    {
     "at": "2026-10-15T08:54Z",
     "tool": "reports/orch/refcheck2.py",
-    "change": "daftar rujukan campuran ('butir 4.7 dan bagian 11') memakai kata kunci tiap anggota, bukan kata kunci kepala",
-    "reason": "uji kering refcheck2 W10: 'bagian 11' dibaca 'butir 11' sehingga TIDAK_ADA palsu (COM-FRM-01 -> SNX-COM-SOP-02)",
+    "change": "daftar rujukan campuran ('butir 4.7 dan bagian 11') memakai kata kunci tiap anggota, bukan kata kunci kepala; (08:58Z) adjudikasi makna juga dibaca dari reports/w10/refsem*.json, selain reports/w9/",
+    "reason": "uji kering refcheck2 W10: 'bagian 11' dibaca 'butir 11' sehingga TIDAK_ADA palsu (COM-FRM-01 -> SNX-COM-SOP-02); kalimat yang diubah pass bahasa W10 tidak lagi cocok kunci adjudikasi W9 (asal, tujuan, lokasi, kalimat)",
     "evidence": "reports/w10/refcheck2_listkind_test.txt (4 kasus, termasuk daftar seragam dan rentang)",
-    "sha256_after": "62bcf69a232b689c4c2a45d543926c8baab12d8d2473c7f21b0c7c2bd1843f38"
+    "sha256_after": "f6f71ba1bf1c8f46c49d4437edbeff01904bccb05f8b10c50b1a6b31ef5b6145"
    }
   ],
   "docs": {},
