@@ -1842,8 +1842,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 16,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:03:03Z",
+   "open_items": [
+    "Sweep (a): status dalam peninjauan untuk SNX-FAT-SOP-06 diganti rujukan nomor sesudah W7b"
+   ],
+   "updated_at": "2026-10-15T00:03:06Z",
    "pen_agent": "aee3e2330d196bdfb",
    "ooxml": "PASSED"
   },
@@ -1898,17 +1900,18 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "DONE",
    "number": "SNX-LEG-REG-04",
-   "out_path": null,
+   "out_path": "out/04_Legal/SNX-LEG-REG-04 Company Legal Documents Register (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
-   "verify_verdict": null,
+   "lint_pass": true,
+   "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 22,
    "open_items": [],
-   "updated_at": "2026-10-14T23:53:34Z",
-   "pen_agent": "afb835975bbe2e803"
+   "updated_at": "2026-10-15T00:08:33Z",
+   "pen_agent": "afb835975bbe2e803",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 60,
@@ -1918,17 +1921,18 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-FRM-01",
-   "out_path": null,
+   "out_path": "out/05_Commercial/SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx",
    "sources": [],
-   "lint_pass": null,
+   "lint_pass": true,
    "verify_verdict": null,
    "loops": 0,
-   "usulan_count": 0,
+   "usulan_count": 22,
    "open_items": [],
-   "updated_at": "2026-10-14T23:54:16Z",
-   "pen_agent": "a7326440322dc022c"
+   "updated_at": "2026-10-15T00:07:36Z",
+   "pen_agent": "a7326440322dc022c",
+   "ooxml": "PASSED"
   },
   {
    "wl_index": 61,
@@ -1978,7 +1982,7 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-MKT-RPT-01",
    "out_path": null,
    "sources": [],
@@ -1987,7 +1991,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-15T00:05:52Z",
+   "pen_agent": "afb20c8cd055f9128"
   },
   {
    "wl_index": 64,
@@ -1997,7 +2002,7 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "QUEUED",
+   "state": "IN_PROGRESS",
    "number": "SNX-MKT-REG-01",
    "out_path": null,
    "sources": [],
@@ -2006,7 +2011,8 @@
    "loops": 0,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": null
+   "updated_at": "2026-10-15T00:07:36Z",
+   "pen_agent": "a6278839497527284"
   },
   {
    "wl_index": 65,
@@ -2534,7 +2540,8 @@
     "COM-SOP-01: frasa \"SOP sumber\" 6 kali; status Lost di 6.7; dua langkah berisi dua tindakan",
     "HR-SOP-10: peran Atasan Langsung di bagian 5 merujuk 6.4 tetapi 6.4 tanpa langkah untuk peran itu",
     "FAT-SOP-04: qa/FAT-SOP-04.verify.json nonblocking 1 (langkah softcopy pajak), 2 (sel SLA berisi komentar penyusunan), 3 (kalimat meta status draf di 4.2/4.10), 5 (pengaju pengecualian tanpa label), 7-8 (rumusan retensi rekaman, retensi Berita Acara jadi open item)",
-    "HR-SOP-12/13 dan HR-SOP-11: lihat pending (c) dan open_items dokumen"
+    "HR-SOP-12/13 dan HR-SOP-11: lihat pending (c) dan open_items dokumen",
+    "Konsistensi Legal lintas dokumen (LEG-SOP-01..03, LEG-REG-01..04, LEG-FRM-01..03, LEG-RPT-01..02): satu kosakata status; satu pemilik rekaman (LEG-SOP-03 menunjuk Line Manager Legal, REG-01/REG-03 Staff Legal); Line Manager Legal dan Staff Legal = nama peran yang dipetakan ke JA-08/JA-09 (USULAN), bukan nama jabatan; batas Akta/Anggaran Dasar antara REG-01 dan REG-04."
    ]
   },
   {

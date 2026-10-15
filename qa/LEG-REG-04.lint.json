@@ -1,0 +1,9 @@
+{
+ "file": "out/04_Legal/SNX-LEG-REG-04 Company Legal Documents Register (Rev00 DRAFT).docx",
+ "mode": "generic",
+ "pass": true,
+ "fails": [],
+ "warns": [
+  "18 butir (USULAN) menunggu ACC"
+ ]
+}

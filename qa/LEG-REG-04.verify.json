@@ -1,0 +1,54 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Peran (paragraf penjelas) dan Dokumen Terkait baris SNX-HR-ORG-01",
+      "masalah": "Staff Legal dan Line Manager Legal disebut 'nama jabatan' dari SNX-HR-ORG-01. Di HR-ORG-01 keduanya nama peran yang dipasangkan ke Legal & Compliance (JA-08, JA-09) dengan status USULAN menunggu konfirmasi. Kalimat ini tidak berlabel USULAN.",
+      "bukti": "Docx: 'Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01.' dan 'Sumber nama jabatan Line Manager Legal dan Staff Legal.' HR-ORG-01 Matriks Peran: 'Line Manager Legal | Legal & Compliance (JA-08) | ... | (USULAN), menunggu konfirmasi (K-13)'. Saran: 'Nama peran ... mengikuti Matriks Peran SNX-HR-ORG-01 (USULAN)'."
+    },
+    {
+      "lokasi": "Ketentuan butir 2, Petunjuk Pengisian butir 8 dan 10, Istilah 'Dokumen asli'",
+      "masalah": "Istilah tidak konsisten. 'Dokumen asli' didefinisikan sebagai dokumen fisik, tetapi Ketentuan 2 dan Petunjuk 8 menyuruh mengisi kolom (termasuk Kategori) 'dari dokumen asli', sementara Petunjuk 10 mengakui dokumen 'tidak ada dokumen fisik'. Untuk dokumen elektronik saja, sumber pengisian tidak ada menurut definisi. Kategori juga ditetapkan pencatat, bukan tertulis pada dokumen.",
+      "bukti": "Istilah: 'Dokumen asli | Dokumen fisik yang ditandatangani para pihak.' Ketentuan 2: 'Staff Legal mengisi Kategori, Judul Dokumen, ... dan Tanggal Berakhir dari dokumen asli.' Petunjuk 10: 'Untuk dokumen tanpa dokumen fisik, kolom Lokasi Dokumen Asli memuat tulisan tidak ada dokumen fisik (USULAN).' Saran: 'dari dokumen asli atau salinan elektronik Final'."
+    },
+    {
+      "lokasi": "Petunjuk Pengisian butir 5",
+      "masalah": "Aturan 'kolom Pihak diisi SINUX' dirujuk ke SNX-LEG-SOP-03 butir 4.4 tanpa label USULAN, padahal 4.4 mengatur nama berkas (bukan kolom register) dan kalimat itu di sumbernya berlabel USULAN.",
+      "bukti": "Docx: 'Untuk dokumen tanpa pihak lain, kolom diisi SINUX (SNX-LEG-SOP-03 butir 4.4).' SOP-03 4.4: 'Untuk dokumen tanpa pihak lawan, bagian NamaPihak diisi SINUX, ... (USULAN).'"
+    },
+    {
+      "lokasi": "Lingkup dan Dokumen Terkait baris SNX-LEG-REG-01; tabel Rekaman",
+      "masalah": "Irisan dan ketidakselarasan lintas register, sudah tercatat sebagai open item 2 sampai 4 di notes: SNX-LEG-REG-01 juga mencakup akta pendirian dan Anggaran Dasar (Kategori 2) tanpa aturan Nomor Dokumen bersama; arti 'Tidak Berlaku' berbeda; pemilik rekaman di sini Line Manager Legal, di REG-01 dan REG-03 Staff Legal. Bukan cacat dokumen ini, tetapi perlu diputus Legal agar set dokumen konsisten.",
+      "bukti": "REG-01 Lingkup: 'Register mencakup akta pendirian dan akta perubahan, Anggaran Dasar, NIB, ...'. REG-04: 'Dokumen yang tercatat di sana memakai Nomor Dokumen yang sama di register ini.' REG-03 Rekaman: 'Pemilik: Staff Legal.' REG-04 Rekaman: 'Pemilik: Line Manager Legal.'"
+    },
+    {
+      "lokasi": "Isi Register (paragraf pembuka)",
+      "masalah": "Dua kalimat pasif tanpa pelaku padahal pelakunya diketahui (Staff Legal).",
+      "bukti": "'Baris 1 sampai 10 disediakan dan semua sel data kosong.' dan 'Nilai pada kolom Kategori, Status, Tingkat Klasifikasi, dan Keputusan Evaluasi dipilih dari nilai yang tertulis di bagian Istilah dan Petunjuk Pengisian.' Saran: 'Staff Legal memilih nilai ...'."
+    },
+    {
+      "lokasi": "Ketentuan 4, Peran, Kesimpulan; Ketentuan 12, Petunjuk 2, Rekaman baris 1",
+      "masalah": "Pengulangan isi antarbagian (§6a butir 6): pemeriksaan bulanan oleh Staff Legal disebut tiga kali; aturan baris dokumen dimusnahkan tetap disimpan disebut tiga kali. Ringan.",
+      "bukti": "Ketentuan 12: 'Barisnya tetap disimpan di register (USULAN).' Rekaman: 'Baris dokumen yang dimusnahkan tetap disimpan (USULAN, ...)'. Petunjuk 2: '... termasuk bila dokumennya sudah dimusnahkan (USULAN).'"
+    },
+    {
+      "lokasi": "Tujuan, Istilah, judul tabel Isi Register, Acuan ISO",
+      "masalah": "Dua sebutan untuk satu hal: 'lokasi simpan' (istilah yang didefinisikan) dan 'lokasi penyimpanan' (judul tabel dan Tujuan, mengikuti kata kriteria). Ringan, bisa diseragamkan atau dijelaskan.",
+      "bukti": "Istilah: 'Lokasi simpan | Tempat dokumen disimpan ...'. Judul tabel: 'Klasifikasi dan Lokasi Penyimpanan'. Tujuan: '... status, lokasi penyimpanan, dan masa berlakunya.'"
+    },
+    {
+      "lokasi": "Cacat sumber context/audit",
+      "masalah": "Tidak ada fileId sumber (worklist sources kosong, checklist fileId null), jadi grep fileId tidak berlaku. Notes bagian 5 menjelaskan hal itu dan menangani cacat dari dokumen Legal tetangga. Tercatat, tidak ada tindakan.",
+      "bukti": "config/worklist.json LEG-REG-04: 'sources': []; config/checklist.json baris 39: 'fileId': null; notes/LEG-REG-04.md bagian 5."
+    }
+  ],
+  "checked": {
+    "a_fakta": "Satu nama orang (Samuel Kristanto Utomo / President Director, blok Approval) sesuai data_conflicts; badan dokumen memakai 'Direktur Utama'. Prepared Staff Legal, Reviewed Line Manager Legal sesuai defaults LEG. Rujukan SNX-LEG-SOP-03 butir 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.8, 4.11, 4.12, 4.13 sampai 4.15, 4.21, 4.22, prosedur 6.5 sampai 6.7, bagian 2, 8, 11 dicocokkan dengan docx SOP-03 di out/ dan isinya sesuai. SNX-LEG-SOP-01 butir 4.24 (Google Drive) dan register kontrak serta perizinan ada. Judul kode terkait cocok dengan berkas out/ dan checklist.",
+    "b_karangan": "Nol nomor akta, izin, tanggal, angka, nilai, atau nama pihak luar. Frekuensi bulanan dan tahunan berlabel USULAN. Klausul ISO berlabel 'USULAN, perlu konfirmasi konsultan'.",
+    "c_kriteria": "Daftar dokumen legal dan korporasi: Kategori 1 sampai 7 (Kategori 2 = korporasi). Informasi dokumen: tabel Informasi Dokumen. Status: tabel Status dan Masa Berlaku plus lima nilai. Lokasi penyimpanan: tabel Klasifikasi dan Lokasi Penyimpanan. Masa berlaku: Tanggal Berlaku dan Tanggal Berakhir. Terpenuhi.",
+    "d_batas": "Status Draft, Effective Date kosong, tanda tangan kosong, tiga penanda tangan berbeda. Sel data 10 baris kosong tanpa baris contoh (T2). Nol rujukan internal AI, nol kredensial, nol residu konsultan. Klasifikasi RESTRICTED (Internal) sesuai worklist. Lint pass.",
+    "e_peran": "Pelaku Ketentuan 1 sampai 14 hanya Staff Legal dan Line Manager Legal; pembagian butir di tabel Peran cocok satu per satu; Rekaman pemilik Line Manager Legal dan pencatat Staff Legal cocok dengan Peran dan Process Owner.",
+    "f_bahasa": "Kalimat Ketentuan aktif dengan pelaku. Nol em-dash atau en-dash, tebal hanya di sampul template, nol frasa slop lint, nol penutup positif generik. Temuan ringan dicatat di nonblocking."
+  }
+}

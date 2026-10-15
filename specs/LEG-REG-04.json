@@ -1,0 +1,849 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "LEG-REG-04",
+    "doc_type_cover": "REGISTER",
+    "doc_type_label": "Register",
+    "number": "SNX-LEG-REG-04",
+    "department": "Legal",
+    "title": "Company Legal Documents Register",
+    "process_owner": "Line Manager Legal",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Staff Legal",
+      "reviewed": "Line Manager Legal",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Lingkup",
+      "blocks": [
+        {
+          "h2": "Tujuan"
+        },
+        {
+          "p": "Register ini mencatat dokumen legal dan korporasi SINUX. Tiap baris memuat informasi dokumen, status, lokasi penyimpanan, dan masa berlakunya."
+        },
+        {
+          "p": "Hasil yang dijaga: tiap dokumen legal dan korporasi SINUX dapat ditemukan lewat satu daftar, dengan status dan masa berlaku yang mutakhir."
+        },
+        {
+          "h2": "Lingkup"
+        },
+        {
+          "p": "Register mencakup dokumen legal Kategori 1 sampai 7 menurut SNX-LEG-SOP-03 bagian 2, termasuk dokumen korporasi (Kategori 2), baik dokumen fisik maupun elektronik (USULAN). Isi tiap kategori ada di bagian Istilah."
+        },
+        {
+          "p": "Register tidak mencatat dokumen milik departemen lain, misalnya dokumen keuangan (SNX-FAT-SOP-04), dan tidak mencatat daftar peraturan (SNX-LEG-REG-03). Proses review dan persetujuan kontrak sebelum penandatanganan diatur di SNX-LEG-SOP-02 (USULAN)."
+        },
+        {
+          "p": "Dokumen yang juga tercatat di register kontrak (SNX-LEG-SOP-01) atau di SNX-LEG-REG-01 memakai Nomor Dokumen yang sama di kedua register. Jadwal jatuh tempo, pengingat, dan tindak lanjut kontrak serta izin tetap dicatat di register kontrak dan di SNX-LEG-REG-01 (USULAN)."
+        }
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {
+          "h2": "Istilah"
+        },
+        {
+          "table": {
+            "header": [
+              "Istilah",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "(USULAN)",
+                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+              ],
+              [
+                "Dokumen asli",
+                "Dokumen fisik yang ditandatangani para pihak. Salinan elektronik dan salinan kertasnya bukan dokumen asli."
+              ],
+              [
+                "Dokumen legal",
+                "Dokumen yang dibuat, diterima, ditelaah, digunakan, atau disimpan Staff Legal dan Line Manager Legal sehubungan dengan kegiatan hukum, korporasi, perizinan, kontrak, kepatuhan, atau sengketa SINUX."
+              ],
+              [
+                "Kategori",
+                "Salah satu dari tujuh kelompok jenis dokumen legal menurut SNX-LEG-SOP-03 bagian 2. Nilainya ada di tabel Kategori Dokumen di bawah."
+              ],
+              [
+                "Legal Hold",
+                "Penangguhan pemusnahan atau penghapusan dokumen karena dokumen itu diperlukan untuk sengketa, pemeriksaan, audit, investigasi, permintaan regulator, atau proses hukum lainnya."
+              ],
+              [
+                "Lokasi simpan",
+                "Tempat dokumen disimpan: folder Google Drive departemen Legal untuk salinan elektronik, dan tempat aman untuk dokumen asli (USULAN, SNX-LEG-SOP-03 butir 4.8 dan 4.10)."
+              ],
+              [
+                "Masa berlaku",
+                "Rentang waktu sejak Tanggal Berlaku sampai Tanggal Berakhir yang tertulis pada dokumen."
+              ],
+              [
+                "Masa retensi",
+                "Jangka waktu penyimpanan dokumen sebelum dievaluasi untuk penyimpanan lebih lanjut, pemindahan ke arsip, atau pemusnahan."
+              ],
+              [
+                "Tanggal pemicu",
+                "Tanggal peristiwa yang memulai penghitungan masa retensi, misalnya tanggal kontrak berakhir."
+              ],
+              [
+                "Tingkat klasifikasi",
+                "PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET menurut SNX-ISMS-PRO-01."
+              ],
+              [
+                "Versi",
+                "Bentuk satu dokumen pada satu titik perubahan isinya, ditandai nomor versi pada nama berkas."
+              ]
+            ],
+            "widths_cm": [
+              4.0,
+              12.0
+            ]
+          }
+        },
+        {
+          "h2": "Kategori Dokumen"
+        },
+        {
+          "p": "Kolom Kategori memakai tujuh nilai berikut. Ketujuhnya mengikuti SNX-LEG-SOP-03 bagian 2."
+        },
+        {
+          "table": {
+            "header": [
+              "No",
+              "Kategori",
+              "Isi"
+            ],
+            "rows": [
+              [
+                "1",
+                "Dokumen kontraktual",
+                "NDA, IaaS Contract, Technology Services Contract, Hardware Sale and Purchase Agreement, PKS, KSO, Subcontract, addendum, dan dokumen terkait lainnya."
+              ],
+              [
+                "2",
+                "Dokumen korporasi",
+                "Akta pendirian dan perubahan, keputusan atau persetujuan Menteri Hukum, bukti penerimaan pemberitahuan, keputusan RUPS, serta dokumen Direksi dan Dewan Komisaris."
+              ],
+              [
+                "3",
+                "Dokumen perizinan dan kepatuhan",
+                "NIB, perizinan berusaha, sertifikat, persetujuan regulator, dan dokumen pendukung kepatuhan."
+              ],
+              [
+                "4",
+                "Dokumen penelaahan Legal",
+                "Legal opinion, legal memorandum, hasil uji tuntas (due diligence), hasil pemeriksaan kepatuhan, dan ringkasan risiko."
+              ],
+              [
+                "5",
+                "Dokumen sengketa dan penanganan hukum",
+                "Somasi, surat kuasa, dokumen perkara, korespondensi hukum, dan dokumen penyelesaian sengketa."
+              ],
+              [
+                "6",
+                "Dokumen internal Departemen Legal",
+                "SOP, instruksi kerja, template kontrak, checklist, register, laporan, dan bukti persetujuan."
+              ],
+              [
+                "7",
+                "Dokumen pelindungan data dan kerahasiaan",
+                "Dokumen pemrosesan data pribadi, catatan insiden, dan dokumen terkait lainnya yang dikelola Departemen Legal."
+              ]
+            ],
+            "widths_cm": [
+              1.0,
+              4.5,
+              10.5
+            ]
+          }
+        },
+        {
+          "h2": "Status Dokumen"
+        },
+        {
+          "p": "Kolom Status memakai lima nilai berikut. Kelimanya mengikuti SNX-LEG-SOP-03 butir 4.3 dan berstatus (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Status",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Draft",
+                "Dokumen masih disusun atau ditelaah dan belum diajukan untuk ditandatangani."
+              ],
+              [
+                "Menunggu Tanda Tangan",
+                "Dokumen sudah diajukan untuk ditandatangani dan belum ditandatangani lengkap oleh para pihak atau pejabat berwenang."
+              ],
+              [
+                "Final",
+                "Dokumen yang semua pemeriksaan dan persetujuan wajibnya sudah selesai dan, bila relevan, sudah ditandatangani para pihak atau pejabat berwenang."
+              ],
+              [
+                "Tidak Berlaku",
+                "Dokumen sudah digantikan, dicabut, berakhir masa berlakunya, atau tidak lagi dipakai untuk tujuan operasional, tetapi masih disimpan sebagai rekaman historis atau bukti hukum."
+              ],
+              [
+                "Dimusnahkan",
+                "Salinan elektronik, salinan kertas, dan dokumen asli sudah dimusnahkan."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Ketentuan Pengelolaan",
+      "blocks": [
+        {
+          "p": "1. Staff Legal mencatat tiap dokumen legal sebagai satu baris register sebelum menyimpannya (SNX-LEG-SOP-03 butir 4.1). Satu baris untuk satu versi dokumen (USULAN)."
+        },
+        {
+          "p": "2. Staff Legal mengisi Kategori, Judul Dokumen, Nomor Dokumen, Pihak, Nomor Versi, Tanggal Berlaku, dan Tanggal Berakhir dari dokumen asli."
+        },
+        {
+          "p": "3. Staff Legal mencatat Final hanya bila dokumen memenuhi arti Final pada bagian Istilah. Dokumen yang belum ditandatangani lengkap dicatat Draft atau Menunggu Tanda Tangan (SNX-LEG-SOP-03 butir 4.3)."
+        },
+        {
+          "p": "4. Staff Legal memeriksa register setiap bulan dan mengubah status dokumen yang Tanggal Berakhirnya sudah lewat menjadi Tidak Berlaku (SNX-LEG-SOP-03 butir 4.6; pemeriksaan bulanan atas Tanggal Berakhir: USULAN)."
+        },
+        {
+          "p": "5. Staff Legal mencatat Lokasi Simpan Salinan Elektronik dan Lokasi Dokumen Asli dalam batas waktu pengarsipan di SNX-LEG-SOP-03 bagian 8."
+        },
+        {
+          "p": "6. Staff Legal mengusulkan Tingkat Klasifikasi saat mencatat dokumen (SNX-LEG-SOP-03 butir 4.11, USULAN)."
+        },
+        {
+          "p": "7. Line Manager Legal menetapkan Tingkat Klasifikasi tiap dokumen (SNX-LEG-SOP-03 butir 4.11, USULAN)."
+        },
+        {
+          "p": "8. Staff Legal mengisi Tanggal Pemicu dan Tanggal Akhir Masa Retensi menurut tabel Rekaman di SNX-LEG-SOP-03 bagian 11, saat Tanggal Pemicu diketahui."
+        },
+        {
+          "p": "9. Line Manager Legal menetapkan dan mencabut Legal Hold (SNX-LEG-SOP-03 butir 4.22, USULAN)."
+        },
+        {
+          "p": "10. Staff Legal mengisi Penanda Legal Hold setelah Line Manager Legal menetapkan Legal Hold, dan menghapusnya setelah Line Manager Legal mencabut Legal Hold (SNX-LEG-SOP-03 prosedur 6.6)."
+        },
+        {
+          "p": "11. Staff Legal mencatat Keputusan Evaluasi di register setelah Line Manager Legal mengevaluasi dokumen yang masa retensinya berakhir (SNX-LEG-SOP-03 butir 4.21)."
+        },
+        {
+          "p": "12. Staff Legal mengubah status dokumen menjadi Dimusnahkan setelah pemusnahan menurut SNX-LEG-SOP-03 prosedur 6.7. Barisnya tetap disimpan di register (USULAN)."
+        },
+        {
+          "p": "13. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register setiap tahun, bersamaan dengan peninjauan dokumen ini (USULAN)."
+        },
+        {
+          "p": "14. Staff Legal menyimpan register di folder Google Drive departemen Legal dengan klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, SNX-LEG-SOP-03 butir 4.8)."
+        }
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Peran",
+              "Tugas pada register ini"
+            ],
+            "rows": [
+              [
+                "Staff Legal",
+                "Mencatat dokumen, mengisi kolom register, memeriksa register tiap bulan, mengubah status, mengisi penanda Legal Hold dan keputusan evaluasi, dan menyimpan register (Ketentuan butir 1 sampai 6, 8, 10 sampai 12, dan 14)."
+              ],
+              [
+                "Line Manager Legal",
+                "Pemilik dokumen (USULAN). Menetapkan Tingkat Klasifikasi, menetapkan dan mencabut Legal Hold, mengevaluasi dokumen yang masa retensinya berakhir, dan memeriksa kelengkapan serta keakuratan isi register (Ketentuan butir 7, 9, 11, dan 13)."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti SNX-LEG-SOP-03 dan berstatus (USULAN). Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01. Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+        }
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {
+          "p": "1. Sel data pada tabel Isi Register kosong. Staff Legal mengisinya menurut Ketentuan butir 1 dan 2."
+        },
+        {
+          "p": "2. Kolom ID Register memuat nomor urut baris. Nomor itu sama di keempat tabel dan tidak dipakai ulang untuk dokumen lain, termasuk bila dokumennya sudah dimusnahkan (USULAN)."
+        },
+        {
+          "p": "3. Kolom Kategori memuat salah satu dari tujuh kategori pada bagian Istilah, ditulis dengan nomor dan namanya."
+        },
+        {
+          "p": "4. Kolom Judul Dokumen memuat judul persis seperti tertulis pada dokumen. Kolom Nomor Dokumen memuat nomor akta, kontrak, surat, atau izin seperti tertulis pada dokumen, atau tulisan tidak bernomor. Kolom Nomor Dokumen tidak termasuk daftar kolom di SNX-LEG-SOP-03 butir 4.2 (USULAN)."
+        },
+        {
+          "p": "5. Kolom Pihak memuat nama pihak lain pada dokumen. Untuk dokumen tanpa pihak lain, kolom diisi SINUX (SNX-LEG-SOP-03 butir 4.4)."
+        },
+        {
+          "p": "6. Kolom Nomor Versi memuat v01, v02, dan seterusnya, sama dengan nomor versi pada nama berkas (SNX-LEG-SOP-03 butir 4.5)."
+        },
+        {
+          "p": "7. Kolom Status memuat salah satu dari lima nilai pada bagian Istilah."
+        },
+        {
+          "p": "8. Kolom Tanggal Berlaku dan Tanggal Berakhir memuat tanggal yang tertulis pada dokumen asli. Untuk dokumen tanpa tanggal berakhir, kolom Tanggal Berakhir memuat tulisan tidak ada masa berlaku (USULAN)."
+        },
+        {
+          "p": "9. Kolom Tingkat Klasifikasi memuat PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET. Tingkat dasar tiap jenis dokumen ada di SNX-LEG-SOP-03 butir 4.12 (USULAN)."
+        },
+        {
+          "p": "10. Kolom Lokasi Simpan Salinan Elektronik memuat nama folder dan nama berkas di Google Drive departemen Legal. Kolom Lokasi Dokumen Asli memuat tempat aman penyimpanan dokumen fisik. Untuk dokumen tanpa dokumen fisik, kolom Lokasi Dokumen Asli memuat tulisan tidak ada dokumen fisik (USULAN)."
+        },
+        {
+          "p": "11. Kolom Tanggal Pemicu dan Tanggal Akhir Masa Retensi diisi menurut Ketentuan butir 8."
+        },
+        {
+          "p": "12. Kolom Penanda Legal Hold memuat Ya, tanggal Legal Hold ditetapkan, dan alasannya. Kolom ini kosong bila dokumen tidak berstatus Legal Hold. Setelah Legal Hold dicabut, kolom ini memuat tanggal pencabutan saja."
+        },
+        {
+          "p": "13. Kolom Keputusan Evaluasi memuat Disimpan lebih lanjut, Dipindahkan ke arsip, atau Dimusnahkan. Untuk Disimpan lebih lanjut, Staff Legal menulis Tanggal Akhir Masa Retensi yang baru di kolom Tanggal Akhir Masa Retensi."
+        }
+      ]
+    },
+    {
+      "h": "Isi Register",
+      "blocks": [
+        {
+          "p": "Baris 1 sampai 10 disediakan dan semua sel data kosong. Kolom ID Register sudah bernomor. Nilai pada kolom Kategori, Status, Tingkat Klasifikasi, dan Keputusan Evaluasi dipilih dari nilai yang tertulis di bagian Istilah dan Petunjuk Pengisian."
+        },
+        {
+          "h2": "Informasi Dokumen"
+        },
+        {
+          "table": {
+            "header": [
+              "ID Register",
+              "Kategori",
+              "Judul Dokumen",
+              "Nomor Dokumen",
+              "Pihak",
+              "Nomor Versi"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              2.3,
+              2.3,
+              4.2,
+              2.8,
+              2.6,
+              1.8
+            ]
+          }
+        },
+        {
+          "h2": "Status dan Masa Berlaku"
+        },
+        {
+          "table": {
+            "header": [
+              "ID Register",
+              "Status",
+              "Tanggal Berlaku",
+              "Tanggal Berakhir"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              2.3,
+              4.4,
+              4.65,
+              4.65
+            ]
+          }
+        },
+        {
+          "h2": "Klasifikasi dan Lokasi Penyimpanan"
+        },
+        {
+          "table": {
+            "header": [
+              "ID Register",
+              "Tingkat Klasifikasi",
+              "Lokasi Simpan Salinan Elektronik",
+              "Lokasi Dokumen Asli"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              2.3,
+              3.2,
+              5.6,
+              4.9
+            ]
+          }
+        },
+        {
+          "h2": "Retensi"
+        },
+        {
+          "p": "Keempat kolom pada tabel ini berstatus (USULAN), mengikuti SNX-LEG-SOP-03 butir 4.2 dan prosedur 6.5."
+        },
+        {
+          "table": {
+            "header": [
+              "ID Register",
+              "Tanggal Pemicu",
+              "Tanggal Akhir Masa Retensi",
+              "Penanda Legal Hold",
+              "Keputusan Evaluasi"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              2.3,
+              2.7,
+              3.4,
+              3.7,
+              3.9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {
+          "p": "Pemetaan tiap dokumen ke register ini berstatus (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Kode",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "SNX-LEG-SOP-03",
+                "Legal Document Control & Retention. Menetapkan kolom register dokumen legal (butir 4.2), lima status (butir 4.3), lokasi simpan, tingkat klasifikasi, masa retensi, Legal Hold, dan pemusnahan. Register ini dipadankan dengan SOP itu."
+              ],
+              [
+                "SNX-LEG-SOP-01",
+                "Legal Operational. Memuat register kontrak dan register perizinan, dan menunjuk folder Google Drive departemen Legal sebagai repositori resmi (butir 4.24)."
+              ],
+              [
+                "SNX-LEG-SOP-02",
+                "Contract Review & Legal Approval. Mengatur review dan persetujuan kontrak sebelum penandatanganan."
+              ],
+              [
+                "SNX-LEG-REG-01",
+                "Company Licenses & Permits Register. Mencatat izin dan dokumen legalitas SINUX, jadwal perpanjangan, dan tindak lanjut izin. Dokumen yang tercatat di sana memakai Nomor Dokumen yang sama di register ini."
+              ],
+              [
+                "SNX-LEG-REG-03",
+                "Legal & Regulatory Requirements Register. Mencatat daftar peraturan dan persyaratan hukum, yang tidak dicatat di register ini."
+              ],
+              [
+                "SNX-FAT-SOP-04",
+                "Financial Document Control & Retention. Mengatur dokumen keuangan, yang berada di luar lingkup register ini."
+              ],
+              [
+                "SNX-ISMS-PRO-01",
+                "Information Classification & Handling Procedure. Sumber empat tingkat klasifikasi."
+              ],
+              [
+                "SNX-HR-ORG-01",
+                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal."
+              ]
+            ],
+            "widths_cm": [
+              4.0,
+              12.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {
+          "h2": "Rekaman"
+        },
+        {
+          "table": {
+            "header": [
+              "Rekaman",
+              "Lokasi dan pemilik",
+              "Retensi"
+            ],
+            "rows": [
+              [
+                "Register ini: tabel Informasi Dokumen, Status dan Masa Berlaku, Klasifikasi dan Lokasi Penyimpanan, dan Retensi",
+                "Folder Google Drive departemen Legal (Ketentuan butir 14). Pemilik: Line Manager Legal. Pencatat: Staff Legal. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01. Akses mengikuti SNX-LEG-SOP-03 butir 4.13 sampai 4.15.",
+                "Berlaku sampai digantikan. Baris dokumen yang dimusnahkan tetap disimpan (USULAN, SNX-LEG-SOP-03 bagian 11)."
+              ],
+              [
+                "Salinan elektronik dan dokumen asli yang dirujuk register",
+                "Lokasi tertulis di kolom Lokasi Simpan Salinan Elektronik dan Lokasi Dokumen Asli. Pemilik: Line Manager Legal. Pencatat: Staff Legal.",
+                "Periode per kategori ada di SNX-LEG-SOP-03 bagian 11 dan berstatus (USULAN)."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              7.0,
+              4.5
+            ]
+          }
+        },
+        {
+          "h2": "Acuan ISO"
+        },
+        {
+          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+        },
+        {
+          "table": {
+            "header": [
+              "Standar",
+              "Klausul",
+              "Hubungan dengan dokumen ini"
+            ],
+            "rows": [
+              [
+                "ISO 9001:2015",
+                "7.5.2 Pembuatan dan pembaruan",
+                "Judul, nomor, nomor versi, dan tanggal tiap dokumen tercatat di tabel Informasi Dokumen dan Status dan Masa Berlaku."
+              ],
+              [
+                "ISO 9001:2015",
+                "7.5.3 Pengendalian informasi terdokumentasi",
+                "Tingkat klasifikasi dan masa retensi tiap dokumen yang dikendalikan tercatat di register."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "7.5.3 Pengendalian informasi terdokumentasi",
+                "Versi, status, dan lokasi simpan tiap dokumen tercatat di register, sehingga dokumen yang berlaku dapat dibedakan dari yang tidak berlaku."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.12 Klasifikasi informasi",
+                "Kolom Tingkat Klasifikasi memuat tingkat tiap dokumen menurut SNX-ISMS-PRO-01."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.33 Perlindungan rekaman",
+                "Lokasi simpan, masa retensi, penanda Legal Hold, dan keputusan evaluasi tiap rekaman legal tercatat di register."
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              5.4,
+              7.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {
+          "p": "Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal memeriksa isi register setiap bulan menurut Ketentuan butir 4."
+        }
+      ]
+    }
+  ]
+}
