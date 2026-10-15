@@ -2800,6 +2800,12 @@
    "key": "OPS-PRC-01",
    "agent": "pemeriksa sweep",
    "what": "Menjalankan git status/log (hanya baca) padahal prompt melarang git; tidak ada perubahan keadaan. Dicatat apa adanya."
+  },
+  {
+   "at": "2026-10-15T08:01Z",
+   "key": "MKT-REG-01..03, MKT-RPT-01",
+   "agent": "penyusun bahasa W10",
+   "what": "Menjalankan git diff --stat dan git log -1 (hanya baca) satu kali, padahal EDITOR.md melarang git; tidak ada perubahan keadaan. Dicatat apa adanya (dilaporkan sendiri oleh agen)."
   }
  ],
  "staging_final": {

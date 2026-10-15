@@ -231,3 +231,25 @@ Open item: tidak ada yang ditutup atau diubah pada putaran ini.
 ### ISO-W9 R2
 
 R2 tidak mengubah spec MKT-REG-01 (butir R2 1 sampai 3 tidak menyentuh dokumen ini). Perubahan hanya pada notes: baris USULAN dan Open items yang ditutup atau diubah W9 kini memuat "ditutup W9" atau "diubah W9" di barisnya sendiri (USULAN 2, 6, 16; open item 1, 10, 11 sudah).
+
+## W10 (bahasa, ISO-W10)
+### W10 label dihapus
+- Butir 4.5 asli: "4.5 VP Commercial menjadi Pemilik informasi atas materi (USULAN). Materi berklasifikasi INTERNAL sampai Pemilik informasi menurunkannya menjadi PUBLIC saat Approver menyetujui versinya (USULAN). ..." Dua label digabung jadi satu label di akhir butir (STYLE §3.5); kalimat dirangkai sehingga label tetap meliputi kedua ketentuan. Butir 4.5 tetap berstatus USULAN.
+### W10 kalimat dihapus atau dipindah
+- Definisi Materi: "Jenis yang tercakup ada di bagian 2." dihapus (kalimat penunjuk; daftar jenis tetap di Ruang Lingkup).
+- Definisi Jenis konten: "menurut daftar di bagian 2" diganti contoh jenisnya (company profile, product brochure, presentation deck, campaign material, event collateral).
+- Tabel butir 4.11, baris Kinerja layanan: "Target availability standar ada di SNX-OPS-SOP-05 butir 4.1." dihapus (fakta yang sama tetap di butir 4.12; satu rujukan per sel).
+- Butir 4.12: "sebab menurut SNX-OPS-SOP-05 butir 4.1 bahasa itu hanya ada di dokumen kontraktual" ditulis "karena SNX-OPS-SOP-05 membatasi bahasa itu pada dokumen kontraktual" (rujukan butir 4.1 sudah ada di kalimat sebelumnya).
+- Butir 4.14: "(bagian 8)" setelah "tabel Record" dihapus. Butir 4.16: "di bagian 3" dihapus.
+- Tabel Peran: rujukan "(butir 4.2 dan 4.3)", "(butir 4.7, 4.9, 4.10, 4.14, dan 4.15)", "(butir 4.4 dan 4.5)", "(butir 4.3)", "(butir 4.11)", "(butir 4.4)", "(butir 4.6, 4.9, 4.13, dan 4.15)", "(butir 4.5)", "(butir 4.11 sampai 4.13)", "(butir 4.11 dan 4.13)" dihapus.
+- Cara Mengisi: rujukan "(butir 4.1)" di 6.1, "(butir 4.14)" di 6.7, "(butir 4.4)" di 6.10, "(butir 4.6)" di 6.11, "(butir 4.10)" di 6.18 dan 6.20, "(butir 4.10 dan 4.14)" di 6.24 dihapus; 6.3 "sesuai daftar di bagian 2" ditulis "sesuai daftar di bagian Ruang Lingkup".
+- Acuan ISO 7.5.3: "Pemilik register ada di tabel Record, dan klasifikasi materi di butir 4.5." ditulis "beserta pemilik register dan klasifikasi materi (butir 4.5)".
+- Peran, paragraf pembuka: "Pembagian tugas berikut berstatus (USULAN)." dipindah ke akhir paragraf: "Pembagian tugas di tabel berikut belum diputuskan (USULAN)."
+### W10 selisih angka
+nihil (subst_diff kosong).
+### W10 catatan
+- Pihak luar: "customer" (satu-satunya sebutan di dokumen ini).
+- Istilah Marketing English: claim (jembatan "claim (klaim)" di Tujuan; heading dan kolom "Klaim yang Perlu Diverifikasi" serta "Verifikasi Klaim" beku), content (header kolom "Jenis Konten" dirapikan menjadi "Jenis Content"), review (jembatan "review (peninjauan)" untuk h2 Tabel 2), record (jembatan "Record (rekaman)" di Definisi).
+- Cara Mengisi jadi kalimat perintah untuk Brand & Marketing (pencatat register di tabel Peran); 0 dari 25 diawali peran.
+- Tabel isian diberi min_row_cm 0.8 (1.0 dan 0.9 menaikkan halaman jadi 16).
+- Ruang Lingkup: "rencana aktivitas" ditulis "rencana Aktivitas" agar "Aktivitas" satu arti dengan SNX-MKT-REG-02 dan SNX-MKT-RPT-01.

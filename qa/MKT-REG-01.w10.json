@@ -1,0 +1,21 @@
+{
+ "verdict": "PASS",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [],
+ "nonblocking": [
+  "Istilah, Bukti pendukung: 'menunjukkan bahwa sebuah klaim benar' masih memakai 'klaim', padahal badan memakai 'claim' (satu istilah per hal). Usul: 'sebuah claim benar'.",
+  "Nilai status 'Dalam Peninjauan' berganti menjadi 'Dalam Review' di 6.14 dan tabel Status Publikasi. Perubahan konsisten di dokumen ini, dan tidak ada dokumen lain di pdf/new yang memakai 'Dalam Peninjauan'. Tetap perlu dikonfirmasi LEAD karena ini nilai kolom (kode isian).",
+  "Butir 6.1, 6.7, 6.10, 6.11, dan 6.24 kehilangan rujukan ke butir 4.1, 4.4, 4.6, dan 4.14 yang berlabel (USULAN). Faktanya sudah ada sebelum W10 dan tidak ada fakta baru, jadi ini bukan pemblokir. Status USULAN aturannya tetap terbaca di bagian 4.",
+  "Acuan 7.5.3: 'Register mencatat versi dan lokasi file final, beserta pemilik register dan klasifikasi materi' membuat seolah register mencatat pemiliknya sendiri. Sebelumnya pemilik register ditunjuk ke tabel Rekaman. Usul: '... lokasi file final. Pemilik register ada di tabel Record, dan klasifikasi materi di butir 4.5.'",
+  "6.25 'Ini termasuk seluruh Tabel 4 ...' masih terdengar seperti terjemahan. Usul: 'Termasuk di dalamnya seluruh Tabel 4 dan Tabel 5 untuk materi tanpa claim ...'",
+  "PDF: judul kolom Tabel 1 'Produk atau Layanan Terkait' terbungkus menjadi 4 baris karena kolomnya sempit. Masih terbaca. Header berulang dan sel rata kiri sudah benar."
+ ],
+ "contoh_baik": [
+  "4.13 'klaim yang Pemverifikasi tolak' -> 'claim yang ditolak Pemverifikasi'"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "key": "MKT-REG-01",
+ "mode": "generic",
+ "out": "out/06_Marketing/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2607,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 25,
+  "instr_items": 25,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2775,
+  "calque": [
+   "yang SINUX pakai",
+   "yang SINUX pakai",
+   "yang SINUX sampaikan",
+   "yang VP Commercial tunjuk",
+   "yang Pemverifikasi tolak",
+   "yang SINUX tawarkan"
+  ],
+  "lewat": 1,
+  "pointer": 1,
+  "usulan": 26,
+  "instr_items": 25,
+  "instr_role_start": 0,
+  "justified_cells": 14,
+  "tables_ge3_no_header": 16
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).pdf",
+ "pages": 15,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Register",
+  "pages_bed1bb6": 15,
+  "pages_w10": 15,
+  "isi_page_bed1bb6": 11,
+  "isi_page_w10": 11
+ },
+ "pass": true
+}
