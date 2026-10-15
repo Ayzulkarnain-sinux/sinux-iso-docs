@@ -77,7 +77,7 @@
   ],
   [
    "Prorata",
-   "Perhitungan jatah cuti secara proporsional. Rumusnya belum tertulis di sumber."
+   "Perhitungan jatah cuti secara proporsional."
   ],
   [
    "Sakit berkepanjangan",
@@ -85,7 +85,7 @@
   ],
   [
    "Sistem HR",
-   "Sistem yang dipakai Perusahaan untuk mengajukan permohonan cuti. Nama sistemnya belum tertulis di sumber."
+   "Sistem yang dipakai Perusahaan untuk mengajukan permohonan cuti."
   ],
   [
    "Surat keterangan dokter",
@@ -140,7 +140,7 @@
   "4.31 Cuti tanpa dibayar: karyawan dapat mengajukan permohonan cuti tanpa dibayar untuk kebutuhan pribadi. Jumlah harinya berdasarkan perjanjian atau kesepakatan dan persetujuan atasan langsung maupun Perusahaan (Pasal 30).",
   "4.32 Penggantian cuti: Perusahaan yang mempekerjakan karyawan pada hari libur resmi wajib membayar upah lembur atau memberikan penggantian cuti di hari lain sesuai peraturan yang ditetapkan Perusahaan (Pasal 22 ayat (4)).",
   "4.33 Pelanggaran cuti dan izin: segala pelanggaran terhadap cuti atau izin dianggap pelanggaran hari non kerja dan memotong gaji karyawan yang bersangkutan secara proporsional (Pasal 34 ayat (1)).",
-  "4.34 Sanksi alfa karyawan di luar masa percobaan (USULAN penafsiran: sumber tidak memberi label subjek pada huruf a): alfa 2 sampai 4 hari dikenai Surat Peringatan Pertama sampai Surat Peringatan Kedua; alfa 5 hari tidak berturut-turut dikenai Surat Peringatan Kedua; alfa 5 hari berturut-turut dikenai Surat Peringatan Ketiga dan/atau pemotongan cuti dan/atau pemotongan gaji selama jumlah hari yang ditinggalkan (Pasal 34 ayat (2) huruf a).",
+  "4.34 Sanksi alfa karyawan di luar masa percobaan (USULAN): alfa 2 sampai 4 hari dikenai Surat Peringatan Pertama sampai Surat Peringatan Kedua; alfa 5 hari tidak berturut-turut dikenai Surat Peringatan Kedua; alfa 5 hari berturut-turut dikenai Surat Peringatan Ketiga dan/atau pemotongan cuti dan/atau pemotongan gaji selama jumlah hari yang ditinggalkan (Pasal 34 ayat (2) huruf a).",
   "4.35 Sanksi alfa calon karyawan tetap dalam masa percobaan: alfa 1 hari dikenai Surat Peringatan Pertama sampai Surat Peringatan Kedua; alfa 2 hari dikenai Surat Peringatan Kedua; alfa 3 hari dikenai Surat Peringatan Ketiga dan/atau dinyatakan tidak lulus masa percobaan dan/atau pemutusan hubungan kerja (Pasal 34 ayat (2) huruf b).",
   "4.36 Pembagian peran (ISO 9001:2015 5.3): peran dan wewenang tiap pihak dalam SOP ini ada di bagian 5. Nama jabatan mengikuti SNX-HR-ORG-01.",
   "4.37 Rekaman cuti (ISO 9001:2015 7.5.3; Annex A 5.33 dan 5.34): permohonan cuti, surat keterangan dokter, dan surat dokter dengan HPL berklasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN). Lokasi, pemilik, dan masa simpan ada di tabel bagian 11."
@@ -238,7 +238,7 @@
      "Persetujuan atasan langsung"
     ],
     [
-     "Ajukan permohonan di sistem HR sesudah persetujuan atasan langsung (USULAN: sumber tidak menyebut urutan).",
+     "Ajukan permohonan di sistem HR sesudah persetujuan atasan langsung (USULAN).",
      "Karyawan",
      "Permohonan cuti di sistem HR"
     ]
@@ -253,7 +253,7 @@
      "Pemberitahuan sakit"
     ],
     [
-     "Tunjukkan surat keterangan dokter kepada HRGA Officer sesuai butir 4.14 (USULAN: sumber tidak menyebut penerima).",
+     "Tunjukkan surat keterangan dokter kepada HRGA Officer sesuai butir 4.14 (USULAN).",
      "Karyawan",
      "Surat keterangan dokter"
     ],
@@ -341,7 +341,7 @@
      "Persetujuan cuti kompensasi"
     ],
     [
-     "Panggil kembali karyawan yang sedang cuti bila kondisi butir 4.11 terpenuhi (USULAN: sumber tidak menyebut pemanggil).",
+     "Panggil kembali karyawan yang sedang cuti bila kondisi butir 4.11 terpenuhi (USULAN).",
      "Atasan langsung",
      "Panggilan kembali bekerja"
     ],
@@ -372,10 +372,10 @@
     "c"
    ],
    "Atasan langsung": [
-    "e"
+    "e",
+    "k"
    ],
    "Direktur Utama": [
-    "h",
     "i"
    ]
   },
@@ -387,8 +387,9 @@
    "e": "Disetujui?",
    "f": "Cuti tidak diambil",
    "g": "Ambil cuti",
-   "h": "Cuti perlu ditunda atau\nkaryawan dipanggil kembali?",
-   "i": "Tunda cuti atau panggil kembali;\ncuti kompensasi\n(butir 6.7)",
+   "h": "Kepentingan Perusahaan\nmendesak?",
+   "i": "Tunda cuti; cuti kompensasi\n(butir 6.7)",
+   "k": "Panggil kembali karyawan\n(butir 6.7)",
    "j": "Cuti selesai"
   },
   "shapes": {
@@ -434,7 +435,12 @@
    [
     "h",
     "i",
-    "Ya"
+    "Ditunda"
+   ],
+   [
+    "h",
+    "k",
+    "Dipanggil"
    ],
    [
     "h",
@@ -443,6 +449,10 @@
    ],
    [
     "i",
+    "j"
+   ],
+   [
+    "k",
     "j"
    ]
   ],
@@ -487,13 +497,13 @@
   [
    "Keputusan atas permohonan cuti",
    "Atasan langsung",
-   "Belum ditetapkan di sumber"
+   "Belum ditetapkan di PP - Cuti BAB VI"
   ]
  ],
  "exceptions": [
   [
    "Permohonan cuti ditolak atasan langsung",
-   "Karyawan tidak mengambil cuti itu (USULAN: sumber tidak menyatakan akibat penolakan). Sumber tidak mengatur banding atau pencatatan alasan penolakan."
+   "Karyawan tidak mengambil cuti itu (USULAN). Banding dan pencatatan alasan penolakan belum diatur di PP - Cuti BAB VI."
   ],
   [
    "Kondisi mendesak atau darurat",
@@ -505,7 +515,7 @@
   ],
   [
    "Sakit tanpa surat keterangan dokter yang sah",
-   "HRGA Officer mencatat alfa (butir 6.3, USULAN pelaku). Sumber tidak menyebut pelaku pemotongan gaji."
+   "HRGA Officer mencatat alfa (butir 6.3, USULAN pelaku). Pelaku pemotongan gaji belum ditetapkan di PP - Cuti BAB VI."
   ],
   [
    "Haid tidak diberitahukan",
@@ -517,11 +527,11 @@
   ],
   [
    "Sakit berkepanjangan saat cuti tahunan",
-   "HR Manager menjalankan ketentuan peraturan perundang-undangan dan kebijakan Perusahaan tanpa mengurangi hak normatif pekerja (butir 4.12)."
+   "HR Manager menjalankan ketentuan peraturan perundang-undangan dan kebijakan Perusahaan tanpa mengurangi hak normatif pekerja (butir 4.12, USULAN pelaku)."
   ],
   [
    "Cuti ibadah untuk kedua kalinya atau lebih",
-   "HR Manager menetapkan cuti itu tanpa upah (butir 4.27)."
+   "HR Manager menetapkan cuti itu tanpa upah (butir 4.27, USULAN pelaku)."
   ]
  ],
  "conclusion": [
@@ -531,7 +541,7 @@
  "related_documents": [
   [
    "PP - Cuti (BAB VI, Pasal 22 sampai 34)",
-   "Dokumen sumber tanpa nomor; asal aturan di bagian 4."
+   "Memuat aturan di bagian 4. Belum bernomor."
   ],
   [
    "SNX-HR-ORG-01",
@@ -566,6 +576,6 @@
  "iso_refs": {
   "ISO 9001:2015": "5.3 (Peran, tanggung jawab, dan wewenang organisasi), 7.5.3 (Pengendalian informasi terdokumentasi), 8.1 (Perencanaan dan pengendalian operasional).",
   "ISO/IEC 27001:2022": "Annex A 6.2 (Syarat dan ketentuan kerja), 5.33 (Perlindungan rekaman), 5.34 (Privasi dan perlindungan PII).",
-  "Status acuan klausul": "(USULAN, dikonfirmasi konsultan)"
+  "Status acuan klausul": "(USULAN, perlu konfirmasi konsultan)"
  }
 }

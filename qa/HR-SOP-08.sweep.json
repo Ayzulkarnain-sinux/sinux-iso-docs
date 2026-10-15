@@ -1,0 +1,34 @@
+{
+  "key": "HR-SOP-08",
+  "document": "out/02_HR/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx",
+  "basis": "diff /tmp/claude-0/sweep/HR-SOP-08.diff; diff struktural /tmp/pen-HR-SOP-08/spec.before.json lawan specs/HR-SOP-08.json; sumber Drive 1i2JaRaQolbKxKL9HjDao2s4F0bzma9-Z (PP - Cuti.docx); out/02_HR/HR-SOP-08_flow.png",
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 7 diagram, simpul h dan cabang 'Ditunda'",
+      "masalah": "Label baru 'Kepentingan Perusahaan mendesak?' menjadi syarat cabang penundaan. Butir 4.10 dan 6.7 langkah 1 (Pasal 32 ayat (3)) hanya menyebut 'kepentingan Perusahaan' untuk penundaan; kata 'mendesak' berasal dari butir 4.11 (pemanggilan kembali). Penyempitan kecil, dalam lingkup butir 1 (lajur diagram), dan sama dengan baris bagian 9 yang sudah ada sebelum sweep, jadi bukan pemblokir.",
+      "bukti": "spec flow nodes h: 'Kepentingan Perusahaan\\nmendesak?' (sebelum: 'Cuti perlu ditunda atau\\nkaryawan dipanggil kembali?'); sumber Pasal 32: 'Untuk kepentingan Perusahaan, Pimpinan Perusahaan dapat menunda waktu cuti karyawan'; Pasal 23 huruf l: 'Apabila ada kepentingan Perusahaan yang mendesak ... karyawan dapat dipanggil kembali'. Saran: 'Kepentingan Perusahaan?' atau pisahkan dua keputusan."
+    },
+    {
+      "lokasi": "Bagian 7 diagram, simpul k di lajur Atasan langsung; simpul h tanpa lajur",
+      "masalah": "Simpul k 'Panggil kembali karyawan (butir 6.7)' di lajur Atasan langsung tidak membawa label USULAN, padahal 6.7 langkah 3 dan tabel peran memberi label USULAN untuk pemanggil. Dasarnya ada di dokumen, jadi bukan fakta baru. Simpul keputusan h berada di luar semua lajur (sudah diungkap di notes Sweep butir 3).",
+      "bukti": "spec flow lanes 'Atasan langsung': ['e','k']; nodes k: 'Panggil kembali karyawan\\n(butir 6.7)'; 6.7 langkah 3: '... bila kondisi butir 4.11 terpenuhi (USULAN).' PIC 'Atasan langsung'; HR-SOP-08_flow.png: h di luar cluster."
+    },
+    {
+      "lokasi": "Butir 1 instruksi (temuan qa/HR-SOP-08.verify.json selain dua butir 'juga')",
+      "masalah": "Butir yang tidak dikerjakan: frasa 'sumber' di Scope kalimat terakhir, pengantar bagian 4, 6.5 langkah 1 '(USULAN: sumber menyebut Perusahaan tanpa penerima)', dan Dokumen terkait baris UU No. 13 Tahun 2003; serta temuan verify lain (Pasal 22 di Scope, 'butir' untuk 4.x dan 6.x, SP1 sampai SP3, dua baris SLA, tugas HRGA Officer dan HR Manager di tabel peran, USULAN terlalu luas di baris Atasan langsung). Semua tidak ada di daftar butir 2, dan penyusun mencatatnya di notes bagian Sweep sebagai tidak diubah.",
+      "bukti": "Teks docx sesudah: 'Hanya pengecualian pertama berasal dari sumber.'; 'angka, syarat, dan tenggat sama dengan sumber.'; '1. Beri tahu atasan langsung dan HRGA Officer bahwa haid terasa sakit (USULAN: sumber menyebut Perusahaan tanpa penerima).'; 'dikutip apa adanya dari sumber.' notes/HR-SOP-08.md '## Sweep' paragraf 'Tidak diubah karena di luar daftar butir Sweep'."
+    },
+    {
+      "lokasi": "Bagian 3 Definisi 'Prorata' dan 'Sistem HR'",
+      "masalah": "Keterangan bahwa rumus prorata dan nama sistem HR belum tertulis hilang dari badan dokumen dan hanya tinggal di notes (open item 1 dan 3). Sesuai instruksi butir 2 (pindahkan catatan proses ke notes); pembaca dokumen tidak lagi melihat celah itu sampai open item diputus.",
+      "bukti": "Sebelum: 'Perhitungan jatah cuti secara proporsional. Rumusnya belum tertulis di sumber.' Sesudah: 'Perhitungan jatah cuti secara proporsional.' notes baris open item 1 dan 3."
+    },
+    {
+      "lokasi": "Catatan pemeriksaan (bukan cacat)",
+      "masalah": "Semua 10 kalimat butir 2 berubah dan frasa proses yang diminta hilang; butir 3 diterapkan (0 sisa 'dikonfirmasi konsultan'); butir 1 bagian 9 diberi 'USULAN pelaku' pada dua baris HR Manager; diagram k di lajur Atasan langsung sesuai 6.7 langkah 3. Tidak ada perubahan lain di spec selain yang tercantum di notes Sweep (14 baris). Klaim baru 'belum ditetapkan/diatur di PP - Cuti BAB VI' (tenggat keputusan atasan, banding dan pencatatan alasan penolakan, pelaku pemotongan gaji) cocok dengan sumber: Pasal 32 ayat (2), Pasal 24 ayat (2) pasif tanpa pelaku, tidak ada pasal banding. Nol em-dash dan en-dash, nol rujukan internal AI, nol kata 'penyusun'; nama 'PP - Cuti BAB VI' sudah dipakai di badan sebelum sweep. Uji penyusun: lint pass, validator PASSED, blankscan ok.",
+      "bukti": "Diff struktural spec.before lawan specs/HR-SOP-08.json; teks word/document.xml docx out/; Drive read_file_content PP - Cuti.docx; /tmp/pen-HR-SOP-08/lint.out.txt, validate.out.txt, blankscan.out.txt."
+    }
+  ]
+}

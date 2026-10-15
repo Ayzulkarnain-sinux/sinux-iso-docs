@@ -4,9 +4,9 @@ Status: DRAFTED (spec + notes ada). Spec: specs/HR-SOP-08.json. Mode sop, aksi T
 
 Hasil uji terakhir (bukti mentah: /tmp/pen-HR-SOP-08/lint.out.txt dan /tmp/pen-HR-SOP-08/validate.out.txt):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/HR-SOP-08.json /tmp/pen-HR-SOP-08/HR-SOP-08.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-HR-SOP-08/HR-SOP-08.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "13 butir (USULAN) menunggu ACC". Warn PIC SLA nol.
-- Validator OOXML (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!".
-- soffice ke PDF: 18 halaman. Diagram /tmp/pen-HR-SOP-08/HR-SOP-08_flow.png dibuka: sepuluh simpul, rankdir TB, empat lajur peran, label Ya dan Tidak terbaca (satu simpul "Cuti tidak diambil" saya keluarkan dari lajur Karyawan karena label cabang bertumpuk).
+- `python3 -I tools/lint_doc.py /tmp/pen-HR-SOP-08/HR-SOP-08.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "18 butir (USULAN) menunggu ACC" (sesudah Sweep; sebelumnya 13). Warn PIC SLA nol.
+- Validator OOXML (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!". `python3 -I reports/orch/blankscan.py /tmp/pen-HR-SOP-08/HR-SOP-08.docx`: "ok 18" (bukti: /tmp/pen-HR-SOP-08/blankscan.out.txt).
+- soffice ke PDF: 18 halaman. Diagram /tmp/pen-HR-SOP-08/HR-SOP-08_flow.png dibuka (sesudah Sweep): sebelas simpul, rankdir TB, empat lajur peran, label Ya dan Tidak terbaca (satu simpul "Cuti tidak diambil" saya keluarkan dari lajur Karyawan karena label cabang bertumpuk).
 - Pemeriksaan tambahan atas spec (skrip python3 -I, di scratchpad sesi, bukan di repo): nol em-dash dan en-dash; 28 langkah, terpanjang 18 kata; semua PIC di langkah dan tabel SLA ada di tabel peran bagian 5 (lima peran: Karyawan, Atasan langsung, HRGA Officer, HR Manager, Direktur Utama); semua kode SNX yang dirujuk di badan (SNX-HR-ORG-01, SNX-ISMS-PRO-01) ada di tabel Dokumen terkait; nol temuan untuk frasa terlarang prompt (pada intinya, yang terpenting, secara fundamental, dalam rangka, adapun, perlu diketahui, dikarenakan, dapat berpotensi, praktik terbaik, para ahli, tanpa terkecuali, tanpa kompromi, hulu ke hilir), nol "komersil", nol "diagnosa", nol "Pengusaha", nol "Lead"; "Pimpinan Perusahaan" hanya muncul di tabel Definisi.
 - tools/selftest.sh tidak dijalankan (menulis ke direktori bersama penyusun paralel). Berkas tools, template, config, control, reference tidak diubah. Berkas yang ditulis hanya specs/HR-SOP-08.json dan notes/HR-SOP-08.md; hasil render hanya di /tmp/pen-HR-SOP-08/.
 
@@ -67,7 +67,7 @@ Kalimat perintah di sumber yang ditujukan ke penyusun atau agen: tidak ada. Kali
 | dll. | Haid 4.17 dan 6.5; khusus 4.25; ibadah 4.26 sampai 4.30; tanpa dibayar 4.31; mendesak 4.9 dan 6.2; penundaan dan pemanggilan 4.10, 4.11, dan 6.7; penggantian cuti 4.32 | Pasal 22, 23, 25, 27, 28, 30, 32 |
 | bagi karyawan | Scope: seluruh karyawan SINUX, termasuk calon karyawan tetap dalam masa percobaan | Pasal 23 ayat (2) huruf b, Pasal 34 ayat (2) huruf b |
 
-Klausul ISO (checklist tidak memberi acuan; semua satu label "(USULAN, dikonfirmasi konsultan)" di bagian 11, baris "Status acuan klausul"):
+Klausul ISO (checklist tidak memberi acuan; semua satu label "(USULAN, perlu konfirmasi konsultan)" di bagian 11, baris "Status acuan klausul"):
 
 | Klausul | Tercermin di bagian 4 | Prosedur dan rekaman |
 |---|---|---|
@@ -111,9 +111,9 @@ Bagian 5 "Catatan kualitas dan celah" di context/audit/iso-sinux-supdocs-hr-2026
 | 9 | Rentang sanksi SP Pertama sampai Kedua; dua kategori 5 hari | Ditulis apa adanya di 4.34 dan 4.35; penentu sanksi USULAN ke HR Manager (bagian 9). Open item 7 |
 | 10 | Pasal 29 ayat (4) menyebut tata tertib kerja tanpa pasal | Pasal 29 dikecualikan dari scope (USULAN); tidak ada butir yang merujuk tata tertib |
 | 11 | Rujukan UU No. 13 Tahun 2003 Pasal 93 ayat (3) tidak diverifikasi | Dikutip apa adanya di 4.16 dan Dokumen terkait; tidak diverifikasi terhadap perubahan regulasi. Open item 9 |
-| 12 | Nama "sistem HR" tidak disebut | Istilah sumber dipertahankan dan didefinisikan di bagian 3 dengan catatan nama belum tertulis. Tidak ada nama sistem yang dikarang. Open item 1 |
+| 12 | Nama "sistem HR" tidak disebut | Istilah sumber dipertahankan dan didefinisikan di bagian 3. Catatan bahwa nama belum tertulis dipindah ke notes ini (Sweep butir 2) dan open item 1. Tidak ada nama sistem yang dikarang |
 | 13 | Struktur Pasal 23 ayat (2) hanya judul dengan butir a sampai l | Dirujuk sebagai "Pasal 23 ayat (2) huruf x"; butir dikelompokkan per topik di 4.2 sampai 4.12 |
-| 14 | "penuh" bersanding "prorata", rumus tidak dijabarkan | Kata sumber dipertahankan di 4.3; definisi Prorata menyatakan rumus belum tertulis. Open item 3 |
+| 14 | "penuh" bersanding "prorata", rumus tidak dijabarkan | Kata sumber dipertahankan di 4.3; catatan rumus belum tertulis dipindah dari definisi Prorata ke notes ini (Sweep butir 2). Open item 3 |
 | 15 | Subjek tidak seragam: Pengusaha lawan Perusahaan; HR, atasan langsung, Pimpinan Perusahaan tidak didefinisikan | Diperbaiki: satu istilah "Perusahaan"; HR, atasan langsung, dan Pimpinan Perusahaan didefinisikan di bagian 3 dan dipetakan ke jabatan HR-ORG-01 (bagian 4 notes ini) |
 | 16 | Pasal 28: ayat (2) khusus Islam; ayat (3) dan (4) "ibadah kerohanian lainnya"; batas 40 hari hanya haji | Ditulis apa adanya di 4.27 dan 4.28. Batas untuk ibadah selain haji tidak ditambah. Open item 10 |
 | 17 | Pasal 30 tanpa batas maksimum hari | Ditulis apa adanya di 4.31. Open item 11 |
@@ -147,7 +147,7 @@ Cacat tambahan yang saya temukan:
 
 | # | Butir USULAN di spec | Pemutus yang disarankan |
 |---|---|---|
-| U1 | Enam klausul ISO di bagian 11 (9001 5.3, 7.5.3, 8.1; 27001 Annex A 6.2, 5.33, 5.34), label "(USULAN, dikonfirmasi konsultan)" | Konsultan, lalu owner |
+| U1 | Enam klausul ISO di bagian 11 (9001 5.3, 7.5.3, 8.1; 27001 Annex A 6.2, 5.33, 5.34), label "(USULAN, perlu konfirmasi konsultan)" | Konsultan, lalu owner |
 | U2 | Pemetaan istilah sumber ke jabatan: Pimpinan Perusahaan = Direktur Utama; HR = HRGA Officer; keputusan atas nama Perusahaan = HR Manager (definisi bagian 3, tabel peran) | Samuel (Pimpinan Perusahaan), Aziz (HR dan Perusahaan) |
 | U3 | Pelaku pemanggilan kembali karyawan yang sedang cuti: Atasan langsung (6.7) | Aziz |
 | U4 | Pelaku pencatatan HRGA Officer: alfa sakit tanpa surat (6.3), cuti haid (6.5), pembatalan cuti (6.7); penerima surat keterangan dokter dan penerima pemberitahuan haid (6.3, 6.5) | Aziz |
@@ -162,8 +162,9 @@ Cacat tambahan yang saya temukan:
 | U13 | Klasifikasi RESTRICTED (Internal) untuk permohonan cuti, surat dokter, dan HPL (4.37) | Aziz, dikonfirmasi owner |
 | U14 | Lokasi rekaman (sistem HR, Folder Google Drive Departemen HR), pemilik HRGA Officer, retensi ditetapkan HR Manager bersama Legal (tabel rekaman) | Aziz, dengan Legal |
 | U15 | HR Manager memeriksa kepatuhan dengan membandingkan permohonan cuti di sistem HR dengan bagian 4 (kesimpulan) | Aziz |
+| U16 | HR Manager sebagai pelaku di bagian 9 untuk cuti ibadah kedua kalinya (4.27) dan sakit berkepanjangan saat cuti tahunan (4.12); Pasal 28 ayat (3) dan Pasal 23 ayat (2) huruf k tidak menyebut pelaku | Aziz |
 
-Total: 15 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 13 oleh lint (warn); 31 kemunculan kata USULAN di spec termasuk bentuk "(USULAN: ...)" dan "(USULAN pelaku)".
+Total: 16 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 18 oleh lint (warn); 33 kemunculan kata USULAN di spec termasuk bentuk "(USULAN: ...)" dan "(USULAN pelaku)". Sesudah Sweep, alasan di dalam label sudah dipindah ke notes ini: U3 (pemanggil tidak disebut di PP - Cuti), U4 (penerima surat dokter dan penerima pemberitahuan haid tidak disebut), U8 (Pasal 34 ayat (2) huruf a tanpa label subjek), U9 (urutan tidak disebut), U11 (akibat penolakan tidak dinyatakan).
 
 ## Open items
 
@@ -203,3 +204,28 @@ Total: 15 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 13 oleh lin
 - Tanpa sumber dan sudah berlabel atau tercatat: nomor klausul ISO (U1, dari ingatan penyusun); lokasi "Folder Google Drive Departemen HR" dan pemilik rekaman (U14); klasifikasi RESTRICTED (Internal) (U13); pemetaan istilah ke jabatan (U2); pelaku langkah yang tidak disebut sumber (U3, U4, U9, U12).
 - Nama orang hanya di blok approval dan berasal dari config/defaults.json. Kode JA-01 dan JA-12 berasal dari specs/HR-ORG-01.json. Tidak ada tanggal selain "30 Juni" dari sumber; tanggal efektif kosong.
 - Diperbaiki sesudah pemeriksaan: langkah dan definisi sempat menyiratkan bahwa persetujuan atasan langsung dicatat di sistem HR. Sumber hanya menyebut permohonan lewat sistem HR dan persetujuan atasan langsung, sehingga frasa "di sistem HR" dibuang dari langkah persetujuan dan definisi Sistem HR. Akibat penolakan cuti (karyawan tidak mengambil cuti) sempat ditulis sebagai fakta; kini berlabel USULAN (U11).
+
+## Sweep
+
+Putaran penghalusan sesudah DONE (instruksi orkestrator, berkas sweep HR-SOP-08). Yang diubah hanya butir yang ditunjuk. Hasil uji sesudah Sweep: render selesai, lint `"pass": true` (warn "18 butir (USULAN) menunggu ACC"), validator OOXML "All validations PASSED!", blankscan "ok 18".
+
+| # | Butir | Sebelum | Sesudah |
+|---|---|---|---|
+| 1 | Bagian 9, label pelaku HR Manager (cuti ibadah kedua kalinya) | "HR Manager menetapkan cuti itu tanpa upah (butir 4.27)." | "HR Manager menetapkan cuti itu tanpa upah (butir 4.27, USULAN pelaku)." |
+| 2 | Bagian 9, label pelaku HR Manager (sakit berkepanjangan saat cuti tahunan) | "...tanpa mengurangi hak normatif pekerja (butir 4.12)." | "...tanpa mengurangi hak normatif pekerja (butir 4.12, USULAN pelaku)." |
+| 3 | Bagian 7, lajur diagram lawan 6.7 langkah 3 | Simpul h "Cuti perlu ditunda atau karyawan dipanggil kembali?" dan simpul i "Tunda cuti atau panggil kembali; cuti kompensasi" keduanya di lajur Direktur Utama | Simpul h "Kepentingan Perusahaan mendesak?" tanpa lajur; simpul i "Tunda cuti; cuti kompensasi" di lajur Direktur Utama; simpul k baru "Panggil kembali karyawan" di lajur Atasan langsung; cabang h berlabel Ditunda, Dipanggil, Tidak; i dan k menuju "Cuti selesai" |
+| 4 | 6.3 langkah 2 | "...sesuai butir 4.14 (USULAN: sumber tidak menyebut penerima)." | "...sesuai butir 4.14 (USULAN)." |
+| 5 | 6.7 langkah 3 | "...bila kondisi butir 4.11 terpenuhi (USULAN: sumber tidak menyebut pemanggil)." | "...bila kondisi butir 4.11 terpenuhi (USULAN)." |
+| 6 | 6.2 langkah 4 | "...sesudah persetujuan atasan langsung (USULAN: sumber tidak menyebut urutan)." | "...sesudah persetujuan atasan langsung (USULAN)." |
+| 7 | Butir 4.34 | "Sanksi alfa karyawan di luar masa percobaan (USULAN penafsiran: sumber tidak memberi label subjek pada huruf a): ..." | "Sanksi alfa karyawan di luar masa percobaan (USULAN): ..." (isi sanksi tidak berubah) |
+| 8 | SLA baris terakhir | "Belum ditetapkan di sumber" | "Belum ditetapkan di PP - Cuti BAB VI" |
+| 9 | Dokumen terkait, baris PP - Cuti | "Dokumen sumber tanpa nomor; asal aturan di bagian 4." | "Memuat aturan di bagian 4. Belum bernomor." |
+| 10 | Bagian 9, baris Sakit tanpa surat keterangan dokter | "...(butir 6.3, USULAN pelaku). Sumber tidak menyebut pelaku pemotongan gaji." | "...(butir 6.3, USULAN pelaku). Pelaku pemotongan gaji belum ditetapkan di PP - Cuti BAB VI." |
+| 11 | Bagian 9, baris Permohonan cuti ditolak | "Karyawan tidak mengambil cuti itu (USULAN: sumber tidak menyatakan akibat penolakan). Sumber tidak mengatur banding atau pencatatan alasan penolakan." | "Karyawan tidak mengambil cuti itu (USULAN). Banding dan pencatatan alasan penolakan belum diatur di PP - Cuti BAB VI." |
+| 12 | Definisi Prorata | "Perhitungan jatah cuti secara proporsional. Rumusnya belum tertulis di sumber." | "Perhitungan jatah cuti secara proporsional." (catatan rumus: open item 3) |
+| 13 | Definisi Sistem HR | "Sistem yang dipakai Perusahaan untuk mengajukan permohonan cuti. Nama sistemnya belum tertulis di sumber." | "Sistem yang dipakai Perusahaan untuk mengajukan permohonan cuti." (catatan nama: open item 1) |
+| 14 | Label klausul ISO (bagian 11, baris Status acuan klausul) | "(USULAN, dikonfirmasi konsultan)" | "(USULAN, perlu konfirmasi konsultan)" |
+
+Penjelasan yang dipindah dari badan dokumen ke notes ini: penerima surat keterangan dokter (U4), pemanggil (U3, U4), urutan pengajuan cuti mendesak (U9), label subjek Pasal 34 ayat (2) huruf a (U8), akibat penolakan (U11), nama sistem HR (open item 1), rumus prorata (open item 3), pelaku pemotongan gaji dan SP (open item 7), banding dan pencatatan alasan penolakan (open item 12).
+
+Tidak diubah karena di luar daftar butir Sweep (untuk keputusan orkestrator): (a) kata "sumber" di Scope kalimat terakhir ("Hanya pengecualian pertama berasal dari sumber..."), di pengantar bagian 4 ("sama dengan sumber"), di 6.5 langkah 1 ("USULAN: sumber menyebut Perusahaan tanpa penerima"), dan di Dokumen terkait baris UU No. 13 Tahun 2003 ("dikutip apa adanya dari sumber"); (b) temuan pemeriksa lain di qa/HR-SOP-08.verify.json: rujukan Pasal 22 di Scope, "butir" untuk 4.x dan 6.x, SP1 sampai SP3 yang tidak dipakai di badan, dua baris SLA berisi syarat atau jumlah, tugas HRGA Officer sebagai penerima surat dokter dan tugas HR Manager di bagian 9 yang belum ada di tabel peran, serta label USULAN yang terlalu luas pada baris Atasan langsung di tabel peran.
