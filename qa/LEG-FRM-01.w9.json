@@ -1,0 +1,31 @@
+{
+ "key": "LEG-FRM-01",
+ "cluster": "LEG-C",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Konsistensi antardokumen: kerangka SNX-HR-ORG-01 sebelum W9 (/tmp/claude-0/w9/struct/HR-ORG-01.txt baris 93-94 dan K-13 baris 112) masih menulis pemetaan Line Manager Legal/Staff Legal ke JA-08/JA-09 sebagai '(USULAN), menunggu konfirmasi (K-13)'. LEG-FRM-01 kini menulisnya sebagai pemetaan tetap. Ini benar menurut G-3 A5, tetapi hanya selaras bila klaster HR juga memperbarui HR-ORG-01. Itu di luar dokumen ini; perlu dipastikan di pemeriksaan HR-ORG-01.",
+  "Rujukan silang tidak ada yang ditambah atau dipindah. Tiga rujukan ke SNX-HR-ORG-01 hanya kehilangan ekor label, dan isinya tetap cocok dengan kerangka HR-ORG-01 (JA-08 Legal & Compliance Ester Febe Utomo, JA-09 Legal & Compliance Alif Altamziz yang melapor ke JA-08).",
+  "Process Owner tetap 'Line Manager Legal' (nama peran, tanpa nama orang), sesuai process_owner.rule v22. Override COM_baru tidak berlaku untuk dokumen Legal."
+ ],
+ "butir_dikerjakan": [
+  "A5 blok approval: Prepared By 'Alif Altamziz / Staff Legal' dan Reviewed By 'Ester Febe Utomo / Line Manager Legal' sama persis dengan defaults v22 prepared_reviewed.LEG. Approved By 'Samuel Kristanto Utomo / President Director' sama dengan approved_by.all dan tidak berubah.",
+  "A5 label pemetaan: ', menunggu konfirmasi (K-13) (USULAN)' dihapus di tabel Peran, baris Staff Legal (JA-09) dan baris Line Manager Legal (JA-08), serta di baris Dokumen Terkait SNX-HR-ORG-01. Label USULAN lain tetap, misalnya '(USULAN, SNX-LEG-SOP-02 butir 4.19 ...)' pada kepemilikan formulir. Jumlah USULAN di teks sesudah: 33.",
+  "A5 nama orang hanya muncul di blok Prepared/Reviewed: 'Ester' 1x dan 'Alif' 1x, keduanya di tabel approval. Badan dokumen tetap memakai nama peran. Daffa 0.",
+  "A5 nama unit: 'Departemen Legal' 8x, 'Divisi Legal' 0 (sudah 0 sebelum W9, jadi tidak perlu diubah).",
+  "A3: dokumen ini tidak menyebut JA-03, JA-04, atau garis lapornya (grep 'JA-0' hanya mengenai JA-08/JA-09). Tidak ada yang perlu diselaraskan, dan memang tidak ada yang diubah.",
+  "Bahasa pada kalimat yang berubah: nol em-dash, nol frasa proses penyusunan, tidak ada pasif baru dan tidak ada pelaku baru. Perubahannya murni penghapusan ekor label. Nol fakta baru, karena nama dan jabatan berasal dari defaults v22 dan LEAD G-3 A5.",
+  "Diff teks hanya berisi 5 baris (2 blok approval, 2 baris tabel Peran, 1 baris Dokumen Terkait). Spec diff cocok 1:1 dan tidak ada perubahan lain."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Teks sesudah (render /tmp/claude-0/w9/render/LEG-FRM-01.docx, diekstrak ke /tmp/claude-0/w9/LEG-FRM-01.after.txt): 'Divisi Legal' 0 (sebelum W9 juga 0), 'Departemen Legal' 8, 'HR Manager' 0, 'K-13' 0 (sebelum 3), 'menunggu konfirmasi' 0, 'Daffa' 0, em-dash 0, frasa proses (dokumen sumber|sumber tim|di sumber|draf ini|belum berdokumen|penyusun) 0. Dokumen Legal: syarat nol 'Divisi Legal' terpenuhi.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

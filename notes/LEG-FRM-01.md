@@ -235,3 +235,18 @@ Hasil uji akhir sweep (bukti mentah: /tmp/pen-LEG-FRM-01/render.out.txt, /tmp/pe
 - `python3 /mnt/skills/public/docx/scripts/office/validate.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx`: "All validations PASSED!".
 - `python3 -I reports/orch/blankscan.py /tmp/pen-LEG-FRM-01/LEG-FRM-01.docx`: `ok 16 LEG-FRM-01.docx []`.
 - Nol em-dash dan en-dash di spec.
+
+
+## ISO-W9
+
+| butir | sebelum | sesudah |
+|---|---|---|
+| Blok Approval, Prepared By | Staff Legal | Alif Altamziz / Staff Legal |
+| Blok Approval, Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
+| Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
+| Dokumen Terkait, baris SNX-HR-ORG-01 | (JA-08 dan JA-09), menunggu konfirmasi (K-13) (USULAN). | (JA-08 dan JA-09). |
+
+Open item:
+- Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.
+- Rujukan A3 (garis lapor JA-03/JA-04): tidak ada di dokumen ini, tidak diubah. Nama unit sudah Departemen Legal; tidak ada Divisi Legal.
