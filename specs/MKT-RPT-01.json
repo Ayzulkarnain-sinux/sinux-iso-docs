@@ -36,7 +36,7 @@
    "h": "Ruang Lingkup",
    "blocks": [
     {
-     "p": "Laporan ini dipakai Brand & Marketing dan VP Commercial untuk Aktivitas pemasaran SINUX berupa campaign, event, dan webinar. Satu laporan terisi mencakup satu Periode Rencana: satu Marketing Plan, satu Monthly Performance Review untuk tiap bulan dalam periode itu, dan Catatan Tindak Lanjut."
+     "p": "Laporan ini dipakai Brand & Marketing dan VP Commercial untuk Aktivitas pemasaran SINUX berupa campaign, event, dan webinar. Brand & Marketing mengisi laporan ini dari SNX-MKT-REG-02 untuk pelaksanaan Aktivitas dan dari SNX-MKT-REG-03 untuk hasil lead. Satu laporan terisi mencakup satu Periode Rencana: satu Marketing Plan, satu Monthly Performance Review untuk tiap bulan dalam periode itu, dan Catatan Tindak Lanjut."
     },
     {
      "p": "Butir berikut dikecualikan dari laporan ini:"
@@ -54,11 +54,11 @@
       "rows": [
        [
         "Pengendalian materi, konten, dan klaim sebelum publikasi",
-        "Ada di SNX-MKT-REG-01: persetujuan materi eksternal seperti company profile, website, dan media sosial, serta validasi klaim produk dan layanan (USULAN)."
+        "Ada di SNX-MKT-REG-01, satu-satunya register materi, konten, dan persetujuan klaim: persetujuan materi eksternal seperti company profile, website, dan media sosial, serta validasi klaim produk dan layanan."
        ],
        [
-        "Pencatatan pelaksanaan nyata tiap campaign dan Aktivitas",
-        "Ada di SNX-MKT-REG-02, yang juga menautkan materi yang dipakai ke ID persetujuan di SNX-MKT-REG-01. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan tabel B2 merujuk catatan di SNX-MKT-REG-02 (USULAN)."
+        "Pencatatan pelaksanaan tiap Aktivitas",
+        "Ada di SNX-MKT-REG-02: nama, tujuan, Channel, jadwal, PIC, Budget, status, ID Persetujuan Materi di SNX-MKT-REG-01, dan hasil singkat. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan tabel B2 merujuk catatan di SNX-MKT-REG-02."
        ],
        [
         "Pencatatan lead yang diteruskan ke Sales",
@@ -76,7 +76,9 @@
         "Pembukuan biaya pemasaran",
         "Laporan ini memuat Budget dan Realisasi Biaya tiap Aktivitas, bukan pembukuan (USULAN)."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -121,7 +123,7 @@
        ],
        [
         "Aktivitas",
-        "Satu campaign, atau satu kegiatan pemasaran di luar campaign seperti event atau webinar, yang punya Channel, jadwal mulai, jadwal selesai, dan PIC sendiri. Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (USULAN)."
+        "Satu campaign, atau satu kegiatan pemasaran di luar campaign seperti event atau webinar, yang punya Channel, jadwal mulai, jadwal selesai, dan PIC sendiri. Satu Aktivitas sama dengan satu baris Tabel 1 SNX-MKT-REG-02."
        ],
        [
         "Channel",
@@ -191,14 +193,16 @@
         "(USULAN)",
         "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
      "h2": "Nilai pada Kolom Status dan Hasil"
     },
     {
-     "p": "Daftar nilai berikut berstatus (USULAN). Nilai Status Pelaksanaan sama dengan nilai kolom Status di SNX-MKT-REG-02."
+     "p": "Daftar nilai berikut berstatus (USULAN). Nilai Status Pelaksanaan sama dengan nilai kolom Status di SNX-MKT-REG-02. Aktivitas berstatus Direncanakan atau Berjalan disebut belum Selesai, dan Aktivitas berstatus Dibatalkan dihitung terpisah dari yang belum Selesai."
     },
     {
      "table": {
@@ -268,7 +272,9 @@
         "Belum Efektif",
         "KPI yang sama berstatus Tidak Tercapai pada Monthly Performance Review itu."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -298,7 +304,7 @@
      "p": "4.7 Brand & Marketing menyalin Target KPI dari lembar KPI jabatan Brand & Marketing di KPI COMMERCIAL & MARKETING.xlsx. VP Commercial menetapkan Target KPI yang tidak ada di lembar itu sebelum Marketing Plan diperiksa (USULAN)."
     },
     {
-     "p": "4.8 Brand & Marketing membuat satu Monthly Performance Review untuk tiap bulan kalender dalam Periode Rencana. Tabel Realisasi Aktivitas memuat Aktivitas yang jadwalnya jatuh pada Bulan Review dan Aktivitas yang belum Selesai dari bulan sebelumnya. Brand & Marketing mengisinya dari pencatatan pelaksanaan di SNX-MKT-REG-02: kolom Rujukan Catatan memuat nomor baris Tabel 1 untuk Aktivitas itu, dan Status Pelaksanaan sama dengan kolom Status di Tabel 2 di sana (USULAN). Brand & Marketing tidak mengisi Realisasi atau Tanggal Review sebelum kejadiannya ada, dan tidak mengisi tanggal mundur."
+     "p": "4.8 Brand & Marketing membuat satu Monthly Performance Review untuk tiap bulan kalender dalam Periode Rencana. Tabel Realisasi Aktivitas memuat Aktivitas yang jadwalnya jatuh pada Bulan Review dan Aktivitas berstatus Direncanakan atau Berjalan dari bulan sebelumnya. Aktivitas berstatus Dibatalkan dihitung terpisah dari yang belum Selesai: Brand & Marketing mencatatnya sekali pada Bulan Review pembatalannya dan tidak membawanya ke bulan berikutnya (USULAN). Brand & Marketing mengisinya dari pencatatan pelaksanaan di SNX-MKT-REG-02: kolom Rujukan Catatan memuat nomor baris Tabel 1 untuk Aktivitas itu, dan Status Pelaksanaan sama dengan kolom Status di Tabel 2 di sana (USULAN). Brand & Marketing tidak mengisi Realisasi atau Tanggal Review sebelum kejadiannya ada, dan tidak mengisi tanggal mundur."
     },
     {
      "p": "4.9 Brand & Marketing membaca Realisasi dari Sumber Data yang tertulis di tabel KPI. KPI yang tidak punya Sumber Data pada Bulan Review itu ditulis Tidak Dinilai, dengan alasan di kolom Evaluasi."
@@ -362,7 +368,9 @@
         "Direktur Utama",
         "Menyetujui laporan ini lewat blok Approved By pada halaman depan. Tidak mengisi laporan terisi. Jabatan JA-01 di SNX-HR-ORG-01."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -467,7 +475,9 @@
         "Tanggal Rencana Dibuat",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -506,7 +516,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -545,7 +557,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -610,7 +624,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -682,7 +698,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -733,7 +751,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -766,7 +786,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -795,7 +817,9 @@
         "Versi Rencana yang Dirujuk",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -860,7 +884,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -925,7 +951,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -958,7 +986,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -1007,7 +1037,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     },
     {
@@ -1056,7 +1088,9 @@
         "",
         ""
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -1097,7 +1131,9 @@
         "Folder yang sama dengan Marketing Plan. Pencatat Brand & Marketing, pemilik VP Commercial (USULAN).",
         "Sama dengan Marketing Plan (USULAN)."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -1151,7 +1187,9 @@
         "Annex A 5.12 Klasifikasi informasi",
         "Laporan ini berklasifikasi INTERNAL menurut SNX-ISMS-PRO-01, dan laporan terisi tidak memuat data pelanggan (butir 4.17)."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]
@@ -1184,15 +1222,15 @@
        ],
        [
         "SNX-MKT-REG-01",
-        "Marketing Content, Material & Claims Approval Register: persetujuan materi eksternal dan validasi klaim produk dan layanan sebelum publikasi (USULAN). Dikecualikan dari laporan ini."
+        "Marketing Content, Material & Claims Approval Register: satu-satunya register materi, konten, dan persetujuan klaim, termasuk validasi klaim produk dan layanan sebelum publikasi. Dikecualikan dari laporan ini."
        ],
        [
         "SNX-MKT-REG-02",
-        "Marketing Campaign & Activity Register: mencatat pelaksanaan nyata tiap campaign dan Aktivitas, dan menautkan materi yang dipakai ke ID persetujuan di SNX-MKT-REG-01. Laporan ini memuat rencana Aktivitas dan jadwalnya. Kolom Rujukan Catatan di tabel B2 menunjuk nomor baris catatan itu, dan kolom Kode Aktivitas di sana menunjuk kode Aktivitas di laporan ini (USULAN)."
+        "Marketing Campaign & Activity Register: mencatat pelaksanaan tiap Aktivitas, yaitu nama, tujuan, Channel, jadwal, PIC, Budget, status, ID Persetujuan Materi di SNX-MKT-REG-01, dan hasil singkat. Laporan ini memuat rencana Aktivitas dan jadwalnya, dan Brand & Marketing mengisinya dari catatan itu. Kolom Rujukan Catatan di tabel B2 menunjuk nomor baris Tabel 1 catatan itu."
        ],
        [
         "SNX-MKT-REG-03",
-        "Marketing Lead & Campaign Outcome Register: hasil lead dan serah terimanya ke Sales, dengan campaign asal yang merujuk nama campaign di SNX-MKT-REG-02. Tempat Realisasi KPI lead dapat dibaca (USULAN)."
+        "Marketing Lead & Campaign Outcome Register: hasil lead dan serah terimanya ke Sales, dengan campaign asal yang merujuk nama Aktivitas di SNX-MKT-REG-02. Brand & Marketing mengisi laporan ini dari register itu untuk hasil lead, dan Realisasi KPI lead dapat dibaca dari sana."
        ],
        [
         "SNX-ISMS-PRO-01",
@@ -1202,7 +1240,9 @@
         "Belum bernomor",
         "KPI COMMERCIAL & MARKETING.xlsx: KPI individu Commercial dan Brand & Marketing periode 2026 sampai 2027, dengan kolom pengukuran per kuartal. Sumber Target KPI di tabel KPI (butir 4.7, USULAN)."
        ]
-      ]
+      ],
+      "repeat_header": true,
+      "cant_split": true
      }
     }
    ]

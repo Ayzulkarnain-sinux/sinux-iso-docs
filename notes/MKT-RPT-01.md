@@ -136,7 +136,7 @@ Jumlah USULAN: 23 butir. Teks dokumen memuat 32 label "(USULAN)" karena beberapa
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Selisih Description checklist: baris 58 (Marketing Campaign & Activity Register) tidak identik dengan baris 57. Baris 58 memuat isi baris 57 (materi dan konten eksternal) ditambah validasi klaim dan field klaim yang perlu diverifikasi serta sumber atau bukti pendukung; tidak ada kalimat di baris 58 tentang pelaksanaan campaign atau aktivitas, padahal judulnya campaign dan aktivitas. Keputusan cakupan orkestrator (USULAN, pemutus owner): SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim (field baris 57 dan 58); SNX-MKT-REG-02 = pencatatan pelaksanaan nyata tiap campaign dan aktivitas, dengan materi ditautkan ke ID persetujuan di REG-01; SNX-MKT-REG-03 = hasil lead dan serah terima ke Sales; dokumen ini = rencana dan tinjauan kinerja. Dokumen ini mengikuti keputusan itu (Ruang Lingkup, butir 4.8, tabel B2, Dokumen Terkait; U21). Spec SNX-MKT-REG-02 di repo saya baca ulang sesudah keputusan: Tujuan dan Ruang Lingkupnya sudah mencatat pelaksanaan campaign dan aktivitas dan menautkan materi ke ID Persetujuan Materi di REG-01, jadi cocok dengan kalimat di dokumen ini. Periksa ulang bila REG-02 berubah lagi | Owner |
+| 1 | Selisih Description checklist: baris 58 (Marketing Campaign & Activity Register) tidak identik dengan baris 57. Baris 58 memuat isi baris 57 (materi dan konten eksternal) ditambah validasi klaim dan field klaim yang perlu diverifikasi serta sumber atau bukti pendukung; tidak ada kalimat di baris 58 tentang pelaksanaan campaign atau aktivitas, padahal judulnya campaign dan aktivitas. Keputusan cakupan orkestrator (USULAN, pemutus owner): SNX-MKT-REG-01 = persetujuan materi eksternal dan validasi klaim (field baris 57 dan 58); SNX-MKT-REG-02 = pencatatan pelaksanaan nyata tiap campaign dan aktivitas, dengan materi ditautkan ke ID persetujuan di REG-01; SNX-MKT-REG-03 = hasil lead dan serah terima ke Sales; dokumen ini = rencana dan tinjauan kinerja. Dokumen ini mengikuti keputusan itu (Ruang Lingkup, butir 4.8, tabel B2, Dokumen Terkait; U21). Spec SNX-MKT-REG-02 di repo saya baca ulang sesudah keputusan: Tujuan dan Ruang Lingkupnya sudah mencatat pelaksanaan campaign dan aktivitas dan menautkan materi ke ID Persetujuan Materi di REG-01, jadi cocok dengan kalimat di dokumen ini. Periksa ulang bila REG-02 berubah lagi | Owner ; diubah W9: owner memutus A8; batas empat dokumen sudah diputus (label USULAN pada batas dihapus). Temuan baris 58 pindah ke open item 14 |
 | 2 | Panjang Periode Rencana dan tenggat pengisian Monthly Performance Review (tanggal berapa tiap bulan) tidak ada di sumber. Dokumen tidak menulis angka | Owner |
 | 3 | Lembar KPI Brand & Marketing mengukur per kuartal (kolom Q1 sampai Q4), semua kolom Actual, Realisasi, Balancing, dan Score kosong, dan tidak memuat rumusan KPI. Hubungan KPI di laporan ini dengan lembar KPI dan dengan KPI Matrix terpisah (Job Analysis bagian 2) belum diputus: satu daftar KPI atau dua | Owner |
 | 4 | Lembar KPI memuat keterangan "No. 1 & 2 = KPI Perusahaan & departement yang di tetapkan Direktur". Siapa menetapkan Target KPI pemasaran untuk laporan ini (VP Commercial menurut butir 4.7, atau Direktur untuk KPI no. 1 dan 2) belum jelas | Owner |
@@ -145,8 +145,8 @@ Jumlah USULAN: 23 butir. Teks dokumen memuat 32 label "(USULAN)" karena beberapa
 | 7 | Lokasi folder, hak akses, dan jangka retensi laporan terisi belum ditetapkan. SNX-ISMS-PRO-01 butir 4.15 hanya menulis "sesuai master list"; master list yang disebut SNX-ISMS-PRO-01 adalah milik Divisi Operation | Owner untuk lokasi; Legal untuk retensi |
 | 8 | Nama di lembar KPI ditulis "Zilly" (sel B15) dan "Zily" (nama lembar dan blok OLD). Tidak ada nama orang di badan dokumen ini, jadi tidak berdampak; dicatat untuk pemilik lembar | Aziz |
 | 9 | Sistem tempat Realisasi tiap KPI dibaca (CRM, laporan analitik website) disebut sebagai contoh. Daftar Sumber Data resmi per KPI belum ada dan diisi per Periode Rencana di tabel A4 | Owner |
-| 10 | SNX-MKT-REG-01, REG-02, dan REG-03 ditulis paralel. REG-03 baru muncul di repo sesudah dokumen ini pertama ditulis; Tujuan dan Ruang Lingkupnya saya baca ulang pada putaran perbaikan 1 dan cocok (REG-03 menyebut tabel datanya dapat menjadi masukan review di dokumen ini). Periksa ulang butir yang menyebut REG-03 (Ruang Lingkup, butir 4.17, Dokumen Terkait, U14, U19) bila REG-03 berubah | LEAD |
-| 11 | Tabel A6, B4, dan Rekaman terbelah antar halaman di render LibreOffice. Perlu dilihat di Word oleh orang; bukan hasil yang bisa dipastikan mesin | HUMAN-VERDICT, owner atau LEAD |
+| 10 | SNX-MKT-REG-01, REG-02, dan REG-03 ditulis paralel. REG-03 baru muncul di repo sesudah dokumen ini pertama ditulis; Tujuan dan Ruang Lingkupnya saya baca ulang pada putaran perbaikan 1 dan cocok (REG-03 menyebut tabel datanya dapat menjadi masukan review di dokumen ini). Periksa ulang butir yang menyebut REG-03 (Ruang Lingkup, butir 4.17, Dokumen Terkait, U14, U19) bila REG-03 berubah | LEAD ; ditutup W9: REG-02 diubah lewat A8 (Aktivitas satu arti, Dibatalkan terpisah, kolom Kode Aktivitas dihapus), rujukan di dokumen ini dicocokkan ulang |
+| 11 | Tabel A6, B4, dan Rekaman terbelah antar halaman di render LibreOffice. Perlu dilihat di Word oleh orang; bukan hasil yang bisa dipastikan mesin | HUMAN-VERDICT, owner atau LEAD ; ditutup W9: tiap tabel diberi repeat_header dan cant_split (B4); tampilan di Word tetap bisa dilihat manusia |
 | 12 | data_conflicts yang konfirmasinya belum selesai dan relevan: ejaan "Samuel Kristanto Utomo" (konfirmasi: owner atau Samuel) dan sebutan "Direktur Utama" di badan. Dipakai sesuai kolom "pakai" | Owner |
 | 13 | Kalimat perintah di DATA yang saya baca (checklist, Job Analysis, lembar KPI, spec lane lain): nihil | - |
 
@@ -212,3 +212,30 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Pembagian peran, alur pemeriksaan, arti Efektif dan Belum Efektif, versi Marketing Plan, dan nilai status adalah rancangan penyusun dan berlabel USULAN (U3 sampai U13, U15). Kalimat di bagian 5 dan butir 4.3, 4.13 menunjuk uraian jabatan JA-06 dan JA-03 sebagai dasar, tetapi uraian itu tidak menyebut Marketing Plan atau Monthly Performance Review.
 - Judul klausul ISO bukan dari sumber tim; berlabel USULAN dan perlu konfirmasi konsultan (U18).
 - Satu hal yang saya tandai karena dekat dengan fakta: batas dengan SNX-MKT-REG-01, REG-02, dan REG-03 mengikuti keputusan cakupan orkestrator (USULAN, U21) dan deskripsi checklist baris 57 sampai 59, bukan isi final ketiga register (open item 1 dan 10). Kalimat "REG-02 mencatat pelaksanaan nyata tiap campaign" cocok dengan spec REG-02 yang saya baca ulang pada putaran perbaikan 1.
+
+## ISO-W9
+
+Putaran ISO-W9 (LEAD G-3 A8, B2, B4; owner GO). Batas tulis: specs/MKT-RPT-01.json dan notes/MKT-RPT-01.md. Meta dan blok approval tidak berubah (sama dengan defaults v22 MKT). Rujukan silang yang diubah ada di baris tabel; tujuan rujukan (REG-02 Tabel 1, kolom Status, kolom Rujukan Catatan; REG-03) ada dan cocok isinya.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| Ruang Lingkup paragraf 1 | tidak menyebut sumber isian | tambah: Brand & Marketing mengisi laporan dari REG-02 (pelaksanaan Aktivitas) dan REG-03 (hasil lead) |
+| Pengecualian baris REG-01 | "Ada di SNX-MKT-REG-01: ... (USULAN)" | "satu-satunya register materi, konten, dan persetujuan klaim"; label dihapus |
+| Pengecualian baris REG-02 | "pelaksanaan nyata tiap campaign dan Aktivitas ... menautkan materi ... (USULAN)" | "pelaksanaan tiap Aktivitas": nama, tujuan, Channel, jadwal, PIC, Budget, status, ID Persetujuan Materi, hasil singkat; label dihapus |
+| Definisi Aktivitas | "... sama dengan satu baris Tabel 1 SNX-MKT-REG-02 (USULAN)" | label dihapus; arti sama dengan Definisi Aktivitas di REG-02 |
+| 3.1 intro | nilai Status Pelaksanaan sama dengan REG-02 | tambah: Direncanakan atau Berjalan = belum Selesai; Dibatalkan dihitung terpisah |
+| 4.8 | "Aktivitas yang belum Selesai dari bulan sebelumnya" (mencakup Dibatalkan) | "Aktivitas berstatus Direncanakan atau Berjalan dari bulan sebelumnya"; Dibatalkan dihitung terpisah, dicatat sekali pada Bulan Review pembatalan, tidak dibawa ke bulan berikutnya (USULAN) |
+| Dokumen Terkait REG-01 | persetujuan materi dan validasi klaim (USULAN) | satu-satunya register materi, konten, dan persetujuan klaim, termasuk validasi klaim; label dihapus |
+| Dokumen Terkait REG-02 | menautkan materi; kolom Kode Aktivitas menunjuk kode laporan ini (USULAN) | kolom yang dicatat REG-02; kolom Rujukan Catatan di B2 menunjuk nomor baris Tabel 1; rujukan Kode Aktivitas dihapus |
+| Dokumen Terkait REG-03 | "Tempat Realisasi KPI lead dapat dibaca (USULAN)"; nama campaign | Brand & Marketing mengisi laporan dari register itu untuk hasil lead; nama Aktivitas; label dihapus |
+| Semua 20 blok table | tanpa flag | "repeat_header": true dan "cant_split": true (B4) |
+
+Open item yang ditutup atau diubah W9: lihat kolom Pemutus pada tabel Open items. Open item baru:
+
+| # | Open item | Pemutus yang disarankan |
+|---|---|---|
+| 14 | Description checklist baris 58 berisi pengendalian materi baris 57 yang diperluas dengan validasi klaim, bukan pelaksanaan campaign sesuai judulnya (Marketing Campaign & Activity Register); perlu dibetulkan Brand & Marketing. Pengukuran: teks baris 58 tidak identik dengan baris 57. | Brand & Marketing |
+| 15 | Kode AKT di tabel A5 tidak lagi dirujuk dari REG-02 (kolom Kode Aktivitas dihapus). Hubungan hanya lewat kolom Rujukan Catatan di tabel B2 | owner |
+| 16 | A3: dokumen ini menyebut JA-03 dan JA-04 hanya sebagai rujukan uraian jabatan (VP Commercial JA-03), tanpa atasan atau garis lapor; tidak ada yang diselaraskan dan tidak ada label menunggu konfirmasi pada garis itu | - |
+
+Uji (spec W9): render, `lint_doc.py ... generic`: pass true, fails kosong, 27 butir USULAN; `validate.py`: All validations PASSED; `blankscan.py`: ok 16 halaman []; `w9diff.py MKT-RPT-01`: diff teks hanya baris di tabel di atas (flag tabel tidak tampak di teks).

@@ -1,0 +1,37 @@
+{
+ "key": "MKT-RPT-01",
+ "cluster": "MKT",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 3.1, kalimat baru 'Aktivitas berstatus Dibatalkan dihitung terpisah dari yang belum Selesai' adalah pasif baru tanpa pelaku. Kalimatnya mengikuti kutipan A8 dan di 4.8 pelakunya disebut (Brand & Marketing mencatatnya). 'disebut belum Selesai' juga pasif, tetapi bersifat definisi.",
+  "Dokumen Terkait REG-03: 'Realisasi KPI lead dapat dibaca dari sana' tetap pasif tanpa pelaku. Pasif ini sudah ada sebelum W9 ('Tempat Realisasi KPI lead dapat dibaca'), jadi bukan pasif baru.",
+  "Butir 4.8 menambah aturan operasional berlabel (USULAN): Aktivitas Dibatalkan dicatat sekali pada Bulan Review pembatalan dan tidak dibawa ke bulan berikutnya. Aturan ini turunan dari 'Dibatalkan dihitung terpisah' (A8), sudah diberi label, dan tercatat di notes.",
+  "Notes open item 15: pemutus ditulis 'owner' dengan huruf kecil, sedangkan baris lain memakai 'Owner'. Hanya kosmetik.",
+  "Isi open item 1 di notes yang lama masih memuat '(USULAN, pemutus owner)'. Ini sesuai aturan karena isinya tidak dihapus dan statusnya diubah lewat kolom Pemutus ('diubah W9')."
+ ],
+ "butir_dikerjakan": [
+  "A8: Ruang Lingkup kini menyebut bahwa Brand & Marketing mengisi laporan dari SNX-MKT-REG-02 (pelaksanaan Aktivitas) dan SNX-MKT-REG-03 (hasil lead).",
+  "A8: baris pengecualian REG-01 menyebut REG-01 sebagai satu-satunya register materi, konten, dan persetujuan klaim. Label (USULAN) batas lama dihapus.",
+  "A8: baris pengecualian REG-02 kini berbunyi 'Pencatatan pelaksanaan tiap Aktivitas' dengan daftar kolom nama, tujuan, Channel, jadwal, PIC, Budget, status, ID Persetujuan Materi, dan hasil singkat. Daftar ini cocok dengan kutipan A8 dan Tabel 1 serta Tabel 2 spec REG-02 terkini. Label (USULAN) dihapus.",
+  "A8/B2: Definisi Aktivitas sekarang sama persis dengan definisi di REG-02 terkini. Label (USULAN) dihapus.",
+  "A8/B2: 3.1 dan 4.8 menetapkan bahwa belum Selesai = Direncanakan atau Berjalan, dan Dibatalkan dihitung terpisah. Residu sweep (belum Selesai mencakup Dibatalkan) hilang.",
+  "A8: Dokumen Terkait REG-01, REG-02, dan REG-03 diselaraskan. Rujukan ke kolom Kode Aktivitas REG-02 dihapus karena kolom itu sudah tidak ada di REG-02. Rujukan 'nomor baris Tabel 1' dan 'kolom Status di Tabel 2' cocok dengan REG-02 terkini. 'nama Aktivitas' cocok dengan kolom Campaign Asal di REG-03.",
+  "B4: 20 dari 20 blok table di spec sudah memuat repeat_header true dan cant_split true. Notes open item 11 ditutup W9.",
+  "Butir 2 (baris 58): dicatat di notes sebagai open item 14 dengan makna yang benar dan tanpa kata 'identik' atau 'salinan persis'. Dokumen tidak menyebut baris 58.",
+  "A3: tidak berlaku. Dokumen hanya menyebut JA-03 sebagai rujukan uraian jabatan, tanpa atasan atau garis lapor, dan tanpa label menunggu konfirmasi. Hal ini dicatat di notes open item 16.",
+  "Notes: bagian '## ISO-W9' sudah ada, dengan tabel perubahan, status open item 1, 10, dan 11 yang diubah atau ditutup, serta hasil uji.",
+  "Data v22: meta.approval prepared 'Zilly Dwinata / Brand & Marketing', reviewed 'Laras Rasmawati / VP Commercial', approved 'Samuel Kristanto Utomo / President Director'. Ketiganya sama persis dengan defaults v22 MKT dan approved_by.all. Process owner adalah VP Commercial."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Hasil grep atas teks render terkini /tmp/claude-0/w9/render/MKT-RPT-01.docx: 'HR Manager' 0, 'Divisi Legal' 0, em-dash 0, 'menunggu konfirmasi' 0, 'dokumen sumber'/'sumber tim'/'di sumber'/'draf ini'/'belum berdokumen'/'penyusun' 0. Dokumen ini bukan dokumen HR atau Legal, jadi aturan langkah 7 tidak berlaku, tetapi hasilnya tetap nol. Tabel yang memuat repeat_header dan cant_split: 20/20.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
