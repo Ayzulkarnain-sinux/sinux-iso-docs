@@ -1,6 +1,6 @@
 # Laporan Run Dokumen ISO SINUX (COS), 15 Oktober 2026
 
-Receipt: ledger.json, config/checklist.json (checklist live, modifiedTime 2026-10-14T17:47:13Z, 87 baris; worklist 88 butir), qa/, reports/w8/, reports/w9/ di repo sinux-iso-docs. Run awal diukur 15 Oktober 2026 pukul 01.10 sampai 01.20 UTC; revisi ISO-W9 (bagian "Perubahan ISO-W9" di bawah) diukur ulang 15 Oktober 2026 pukul 03.40 sampai 04.45 UTC. Sesudah revisi: 1.029 kalimat atau baris berlabel (USULAN) di 70 dokumen.
+Receipt (diperbarui ISO-W10, 15 Okt 09.21 UTC; bagian "Perubahan ISO-W10"): ledger.json, config/checklist.json (checklist live, modifiedTime 2026-10-14T17:47:13Z, 87 baris; worklist 88 butir), qa/, reports/w8/, reports/w9/ di repo sinux-iso-docs. Run awal diukur 15 Oktober 2026 pukul 01.10 sampai 01.20 UTC; revisi ISO-W9 (bagian "Perubahan ISO-W9" di bawah) diukur ulang 15 Oktober 2026 pukul 03.40 sampai 04.45 UTC. Sesudah revisi: 1.029 kalimat atau baris berlabel (USULAN) di 70 dokumen.
 
 Laporan ini bahan kerja internal dan tidak diunggah. Berkas yang diunggah hanya isi out/ (dokumen ISO dan out/00_Index/Master_List_COS.xlsx).
 
@@ -10,6 +10,7 @@ Laporan ini bahan kerja internal dan tidak diunggah. Berkas yang diunggah hanya 
 - 16 baris HOLD menunggu berkas tim (T3). 2 baris SKIP: Statement of Applicability (lane konsultan, tidak disentuh) dan cetakan SOP.
 - 70 dari 70 dokumen lolos pemeriksaan isi independen terhadap sumber dan kriteria checklist. Dua form W5 yang semula di luar sampel (SNX-OPS-FRM-03, SNX-ISMS-REG-01) diverifikasi di ISO-W9: PASS, 0 pemblokir.
 - Revisi ISO-W9 (15 Okt, arahan LEAD G-2 dan G-3 atas keputusan owner): 41 dokumen diubah lewat spec lalu dirender ulang; tiap dokumen yang berubah diperiksa ulang oleh pemeriksa perubahan terpisah (41 dari 41 PASS). Rincian di bagian "Perubahan ISO-W9".
+- Revisi ISO-W10 (15 Okt, arahan LEAD G-4, pass bahasa dan form rapi): 60 dari 70 dokumen lolos semua gerbang termasuk pemeriksa bahasa buta; 10 residu dikembalikan ke versi sesudah ISO-W9 dan bernama di reports/REVIEW-W10.md. Rincian di bagian "Perubahan ISO-W10".
 - Putaran penghalusan sesudah DONE dijalankan pada 40 dokumen; tiap perubahan diperiksa ulang oleh pemeriksa perubahan terpisah sebelum commit "ISO <KODE> polish".
 - Semua dokumen masih Draft: tanda tangan, tanggal efektif, dan pengesahan diisi penyetuju. Label (USULAN) menandai isi yang menunggu keputusan; daftar lengkapnya ada di Master_List_COS.xlsx sheet USULAN.
 
@@ -135,10 +136,30 @@ Klaim yang ditarik di ISO-W9 (tercatat di ledger.json retractions):
 
 Tafsir yang dipakai saat arahan tidak merinci: rumus Days overdue mengikuti pola sheet AP; SNX-LEG-SOP-01 menyebut versi lamanya "versi 0.1 SOP ini", bukan judul lain; Description checklist baris 58 tidak identik dengan baris 57; SPV tidak ditambahkan; "Divisi Legal" tetap muncul 3 kali di kolom sumber Master List karena itu nama berkas Drive tim yang dikutip apa adanya.
 
+## Perubahan ISO-W10
+
+Dasar: arahan LEAD G-4 (pass bahasa dan form rapi) di control/LEAD-GUIDE.md, atas keputusan owner; gaspol owner 06.52 UTC ("Gaspol, saya prefer all document. Make sure semua dikerjakan dengan baik"). Basis substansi bed1bb6. Semua perubahan isi lewat specs/ (docx) atau patch xlsx di atas berkas bed1bb6, lalu dirender ulang. Status tetap Draft, tanpa tanda tangan dan tanggal efektif. Nomor butir dan heading tidak berubah (dijaga mesin).
+
+| Yang dikerjakan | Hasil | Bukti |
+|---|---|---|
+| Peta istilah STYLE §1.5 dan diksi §2.5 (rekaman, tiket, formulir, tinjauan, lewat, sesudah) lewat satu skrip mekanis sebelum penyusun bahasa | diterapkan ke 70 dokumen; heading beku tidak dipetakan (jembatan istilah pada pemakaian pertama); judul klausul ISO dikembalikan | reports/w10/terms/, terms_summary.json |
+| Pass bahasa per dokumen (penyusun Opus effort medium, per departemen) | 60 dokumen lolos pemeriksa bahasa buta, 10 residu dikembalikan ke bed1bb6 | qa/<KODE>.w10.json, reports/w10/residu/ |
+| Kerapian docx: rata kiri, header tabel berulang, baris tidak terbelah, paragraf sebelum tabel menempel, lebar kolom langkah SOP | 60 dokumen; justified_cells 2.152 menjadi 0, tabel tanpa header 693 menjadi 0 | reports/w10/gates/ |
+| Kerapian xlsx: freeze, wrap, landscape, fitToWidth 1, print titles, tinggi baris, A3 untuk register sangat lebar | 17 xlsx lolos; menutup residu cetak SNX-FAT-REG-01 | reports/w10/xlsx_sheets.json, xlsx_effective/ |
+| Audit pointer retroaktif dan audit cakupan label (USULAN) atas semua dokumen yang lolos | 211 jalur pointer di 20 dokumen diaudit: 198 lengkap, 10 rujukan dikembalikan, 3 dilengkapi; 113 jalur label diaudit, 37 diperbaiki ke cakupan bed1bb6, ditambah 3 koreksi worker (SNX-COM-REG-01, SNX-COM-SOP-01, SNX-COM-SOP-02) | notes/<KODE>.md subjudul "W10 audit pointer" dan "W10 audit cakupan label" |
+
+Angka bahasa pada 60 dokumen lolos (bed1bb6 ke W10): calque 53 ke 0; "lewat" 136 ke 0; kalimat penunjuk 51 ke 0; butir instruksi yang diawali nama peran 35 ke 9 dari 861; jumlah kata 134.425 ke 133.338; label (USULAN) 954 ke 993. Label bertambah karena rujukan ke butir berlabel yang diganti fakta wajib membawa labelnya. Form docx (17 lolos): total halaman 226 ke 225, halaman awal bagian isi tidak naik di dokumen mana pun.
+
 ## Gerbang mutu yang diukur
 
 | Klaim | Cara ukur | Bukti | Hasil |
 |---|---|---|---|
+| Substansi beku (ISO-W10) | w10_langscan diff bed1bb6 lawan W10 per dokumen (butir, heading, nama orang, kode SNX tidak boleh muncul; selisih angka dan usul_butir tercatat di notes); kontrol positif diff OPS-FRM-10 versi 4a40352 menembak "7.5" | reports/w10/gates/, reports/w10/close/langscan_diff_kontrol_positif.txt | 60 lolos; kontrol positif menembak |
+| Bahasa (ISO-W10) | w10_langscan scan per berkas final | reports/w10/close/gate_final.jsonl | 60 dokumen lolos: calque 0, lewat 0, justified_cells 0, tabel tanpa header 0, butir instruksi diawali peran paling banyak 25 persen |
+| Pemeriksa bahasa buta (ISO-W10) | rubrik a sampai d, PASS bila semua 4 atau lebih; gagal sekali satu putaran perbaikan, gagal kedua kembali ke bed1bb6 | qa/<KODE>.w10.json, .w10.r1.json, .w10.r2.json | 60 PASS (43 putaran pertama, 17 sesudah perbaikan); 10 residu |
+| Lint, OOXML, halaman kosong, fitur xlsx (ISO-W10) | lint_doc, validator OOXML, blankscan pada 53 docx; fitur xlsx_patch dan CONTOH pada 17 xlsx, dibanding bed1bb6 | reports/w10/close/gate_final.txt, gate_final.jsonl | 53 lint lulus, 53 OOXML PASSED, 0 halaman kosong; 0 fitur xlsx berkurang, 0 CONTOH |
+| Rujukan (ISO-W10) | refcheck2 tag w10 pada 70 berkas; 13 rujukan yang kalimatnya diubah W10 diputus ulang terhadap putusan W9 | reports/w10/close/refcheck_w10.txt, .tsv, .json; reports/w10/refsem_w10.json | 1.793 kemunculan; kontrol positif menembak; 0 TIDAK_ADA, 0 DOK_TIDAK_ADA |
+| Frasa meta, sebutan beku, sumber (ISO-W10) | metascan; grepgate HR Lead, Kristanto, Divisi Legal, Daffa bed1bb6 lawan W10; modifiedTime 54 sumber 07.02 dan 09.00 UTC | reports/w10/close/metascan.txt, grepgate.txt; reports/w10/sources_modtime.json | metascan 0 dengan kontrol positif; HR Lead 248=248, Kristanto 93=93, Divisi Legal 0, Daffa 0; 54 dari 54 sumber sama pada kedua pengukuran |
 | Rujukan butir dan bagian ada (ISO-W9) | refcheck2 pada 70 berkas (53 docx, 17 xlsx): 2.242 kemunculan, 383 rujukan silang unik; kontrol positif "SNX-OPS-SOP-04 Bagian 7.5" di versi lama SNX-OPS-FRM-10 wajib terbaca TIDAK_ADA; 613 rujukan silang dan rujukan yang tidak terbaca ADA diperiksa makna dalam dua putaran | reports/w9/refcheck_final.tsv, refcheck_final.json, refsem.json, refsem2.json | rc 0; kontrol positif menembak; 0 TIDAK_ADA sesudah putusan makna; 610 OK, 3 tidak dapat dicek karena menunjuk dokumen tim di luar set (POL-OPS-001, PRO-OPS-001) |
 | Frasa meta nol (ISO-W9) | metascan pada 70 berkas, kontrol positif | reports/w9/metascan.txt | 0 temuan; kontrol positif menembak |
 | Lint, OOXML, halaman kosong (ISO-W9) | lint_doc, validator OOXML, blankscan pada 53 docx | reports/w9/gate_final.jsonl | 53 lint lulus, 53 OOXML PASSED, 0 halaman kosong |
@@ -153,6 +174,8 @@ Tafsir yang dipakai saat arahan tidak merinci: rumus Days overdue mengikuti pola
 | Lint dan validasi OOXML | lint_doc dan validator OOXML tiap render | qa/*.lint.json, ledger.json | semua lulus |
 
 ## Residu mutu
+
+Residu ISO-W10 (gagal kedua pemeriksa bahasa buta; spec, notes, dan out dikembalikan ke bed1bb6; percobaan tersimpan di reports/w10/residu/): SNX-OPS-FRM-10, SNX-LEG-FRM-02, SNX-LEG-REG-04, SNX-LEG-RPT-01, SNX-MKT-REG-02, SNX-MKT-REG-03, SNX-MKT-RPT-01, SNX-OPS-SOP-01, SNX-OPS-SOP-02, SNX-ISMS-PRO-01. Isinya sama dengan versi sesudah ISO-W9. Rincian per dokumen di reports/REVIEW-W10.md.
 
 Residu W8 (6 dokumen) dikerjakan di ISO-W9 (arahan LEAD G-3 B2):
 
@@ -184,6 +207,10 @@ Temuan tidak memblokir lain per dokumen tersimpan di qa/<KODE>.verify.json, qa/<
 | 15 Okt W9 | Pembuat Master List membaca keterangan "diubah W9" di sel pemutus sebagai pemutus LEAD, dan menulis label internal "ISO-W9" di Master List | Keterangan dibuang sebelum pengelompokan; label dinetralkan; kelompok LEAD 0 |
 | 15 Okt 04.40 (W9) | Pemeriksa makna putaran 2 tidak menjawab 4 dari 134 rujukan dan memvonis 1 rujukan basi yang di putaran 1 diputus OK | Kelimanya diputus dari kerangka dokumen; vonis basi ditolak karena rujukan menunjuk SNX-HR-SOP-11 sendiri; nol perubahan dokumen (reports/w9/refsem2.json) |
 | 15 Okt 04.45 (W9) | Skrip gerbang akhir menjalankan lint_doc pada 17 xlsx (alat itu hanya untuk docx) | Diganti cek fitur xlsx_patch; bukan cacat dokumen |
+
+| 15 Okt 06.52 sampai 09.20 (W10) | Batas 3 subagen paralel sempat terlampaui sekali; tiga agen menjalankan git hanya baca; satu agen me-render ulang dokumen yang sudah lolos sehingga gerbang audit pointer menolaknya | Agen dihentikan tanpa perubahan berkas; tercatat di ledger agent_incidents; dokumen itu lolos sesudah audit pointer |
+| 15 Okt W10 | Skrip istilah memetakan "lewat" bermakna "terlampaui" menjadi "melalui" di 3 tempat (SNX-ISMS-REG-04, SNX-LEG-REG-04, SNX-HR-SOP-11) dan judul klausul ISO | Dibetulkan penyusun; judul klausul dikembalikan mesin (isotitles) |
+| 15 Okt W10 | Cakupan label (USULAN) bergeser saat kalimat digabung atau dipisah (ditemukan pemeriksa di SNX-HR-SOP-10, 11, 12) | Satu putaran perbaikan; audit cakupan label retroaktif atas semua dokumen lolos |
 
 Nol mutasi Google Drive, nol tulisan ke kanon KB, nol tanda tangan atau tanggal efektif, nol kredensial di keluaran. Ringkasan run awal dikirim ke antrean tinjauan admin pada 15 Okt 01.22 UTC (paket 1982, status PENDING). Paket itu memuat klaim rujukan W8 yang sudah ditarik dan angka sebelum revisi ISO-W9. ISO-W9 tidak mengirim apa pun ke staging, jadi paket itu perlu dibaca bersama laporan ini.
 
