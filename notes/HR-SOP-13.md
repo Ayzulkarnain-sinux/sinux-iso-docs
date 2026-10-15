@@ -264,3 +264,16 @@ nihil
 - "bila" di awal anak kalimat diganti "jika"; "Hasil yang dijaga:" di Purpose ditulis ulang sebagai kalimat biasa.
 - Kalimat batas rotasi dan mutasi (bagian 2) ditulis ulang tanpa mengubah arti; isinya dulu identik dengan SNX-HR-SOP-10, 11, 12, jadi perlu diselaraskan saat sapuan.
 - Definisi Tingkatan jabatan: "sehingga ukuran ini (USULAN)" diberi predikat: "ukuran ini belum baku (USULAN)".
+### W10 audit pointer
+- .definitions[5][1]: lengkap; "batas waktu di bagian 8" menjadi "batas waktu dalam SOP ini"; pengecualian hari libur dan label (USULAN) tetap.
+- .policy[0]: lengkap; penunjuk balik "(butir 6.1)" dibuang; syarat kebutuhan organisasi dan label (USULAN) tetap, langkahnya tetap di butir 6.1.
+- .policy[2]: rujukan dikembalikan untuk bagian 9 ("usulan ditanggapi Penanggap alternatif sesuai bagian 9 (USULAN)"), karena alur dan batas waktu Penanggap alternatif hanya ada di tabel Pengecualian; kalimat penunjuk "pembagiannya ada di bagian 5" tetap dibuang (STYLE §3.2); pengecualian Direktur Utama dan rujukan butir 6.2 dan 6.3 tetap.
+- .policy[6]: lengkap; penunjuk "(butir 6.4)" dibuang; syarat "sebelum tanggal berlaku" dan label (USULAN) tetap.
+- .policy[7]: lengkap; penunjuk "(butir 6.2)" dan "(butir 6.4)" dibuang; dua tugas, urutan, dan batas "sebelum tanggal berlaku" tetap.
+- .policy[8]: lengkap; penunjuk "(butir 6.4)" dibuang; batas 5 hari kerja, SNX-ISMS-SOP-02, dan pengaju (Atasan Langsung Tujuan) tetap.
+- .policy[9]: lengkap; penunjuk "(butir 6.4)" dibuang; pembaruan SNX-HR-ORG-01 dan SNX-HR-JA-01 melalui revisi tetap.
+- .policy[10]: lengkap; penunjuk "(butir 6.4)" dan kalimat penunjuk "Lokasi, pemilik, dan retensi ada di tabel bagian 11" dibuang (STYLE §3.2); tabel bagian 11 tetap.
+- .roles[5][1]: lengkap; penunjuk "(bagian 9)" dibuang dari deskripsi peran; alurnya dirujuk di butir 4.3 dan ada di bagian 9.
+- .roles[7][1]: lengkap; penunjuk "(bagian 9)" dibuang; tugas dan label (USULAN) tetap.
+- .exceptions[2][1]: lengkap; "butir 6.2 nomor 2 dan nomor 3, dalam batas waktu bagian 8" diganti fakta: usulan lengkap dikirim ke Penanggap alternatif (bukan ke Atasan Langsung Asal) dan ditanggapi dalam 3 hari kerja sejak usulan lengkap diterima, sama dengan baris tanggapan di bagian 8; label (USULAN) tetap.
+- .conclusion[0]: lengkap; nomor bagian 11, 6, dan 8 diganti nama isinya (record mutasi, langkah prosedur, batas waktu); label (USULAN) tetap.
