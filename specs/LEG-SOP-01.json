@@ -131,7 +131,7 @@
   "4.3 Departemen Legal mengklasifikasikan risiko dan mengeskalasinya sesuai tingkatnya, tidak menyimpannya sendiri (butir 4.17 sampai 4.19).",
   "4.4 Departemen Legal menjaga kerahasiaan dokumen dan data.",
   "4.5 Departemen Legal memberi opini dan rekomendasi risiko. Keputusan bisnis tetap pada Manajemen.",
-  "4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Line Manager Legal menjadi pemilik rekaman Departemen Legal di bagian 11 dan Staff Legal pencatatnya, sama dengan SNX-LEG-SOP-03. Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (SOP Departemen Legal versi 0.1) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).",
+  "4.6 Line Manager Legal menetapkan dan menyetujui, Staff Legal menyiapkan dan mencatat, dan Manajemen memutuskan. Line Manager Legal menjadi pemilik rekaman Departemen Legal di bagian 11 dan Staff Legal pencatatnya, sama dengan SNX-LEG-SOP-03. Pelaku langkah dan pemilik rekaman yang tidak tertulis di draf tim sebelumnya (versi 0.1 SOP ini) ditetapkan dari pembagian ini dan dari uraian jabatan di SNX-HR-JA-01 (USULAN).",
   "4.7 Pemohon mengajukan permintaan lewat tiket GLPI (USULAN).",
   "4.8 Pemohon menyertakan data permintaan: pihak, objek, nilai, jangka waktu, tenggat, dan dokumen pendukung. Untuk kontrak, Pemohon menambahkan term sheet atau kesepakatan komersial dan identitas para pihak.",
   "4.9 Pemohon melibatkan Departemen Legal sejak tahap negosiasi komersial, sebelum ada komitmen tertulis kepada pihak luar.",
@@ -148,7 +148,7 @@
   "4.20 Persetujuan internal kontrak mengikuti DoA. Pejabat penyetuju serta batas nilai dan jenis kontrak ada di DoA, yang belum terbit. Sampai DoA terbit, Manajemen memutuskan persetujuan tiap kontrak (USULAN).",
   "4.21 Setiap kontrak atau proyek yang melibatkan data pribadi ditinjau terhadap UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi: dasar pemrosesan, peran (pengendali atau prosesor), kewajiban keamanan, dan notifikasi insiden.",
   "4.22 Departemen Legal mengklasifikasikan dokumen legal dengan tingkat di SNX-ISMS-PRO-01: PUBLIC, INTERNAL, RESTRICTED (Internal), atau SECRET.",
-  "4.23 Dokumen RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi. Padanan label Rahasia di SOP Departemen Legal versi 0.1 dengan kedua tingkat ini berstatus (USULAN).",
+  "4.23 Dokumen RESTRICTED (Internal) dan SECRET dikirim hanya lewat kanal resmi, tidak lewat kanal pribadi. Padanan label Rahasia di versi 0.1 SOP ini dengan kedua tingkat ini berstatus (USULAN).",
   "4.24 Staff Legal menyimpan dokumen legal di repositori resmi, yaitu folder Google Drive departemen Legal (USULAN).",
   "4.25 Staff Legal menyimpan dokumen asli di tempat aman. Akses ke dokumen asli terbatas pada Line Manager Legal dan Staff Legal (USULAN).",
   "4.26 Akses ke dokumen legal diberikan berdasarkan kebutuhan kerja dan dicabut saat peran penerima akses berakhir (prosedur 6.9).",
@@ -180,12 +180,12 @@
   ],
   [
    "Finance",
-   "Memantau kewajiban pelaporan berkala, misalnya LKPM, bersama Staff Legal (6.6). Peran ini dipetakan dari Finance/Compliance di SOP Departemen Legal versi 0.1 (USULAN).",
+   "Memantau kewajiban pelaporan berkala, misalnya LKPM, bersama Staff Legal (6.6). Peran ini dipetakan dari Finance/Compliance di versi 0.1 SOP ini (USULAN).",
    "Tidak ada wewenang persetujuan di SOP ini."
   ],
   [
    "VP Tech Operation and Services",
-   "Berkoordinasi dengan Line Manager Legal untuk pelaporan insiden dan perjanjian pemrosesan data (6.7). Peran ini dipetakan dari tim keamanan/IT di SOP Departemen Legal versi 0.1 (USULAN).",
+   "Berkoordinasi dengan Line Manager Legal untuk pelaporan insiden dan perjanjian pemrosesan data (6.7). Peran ini dipetakan dari tim keamanan/IT di versi 0.1 SOP ini (USULAN).",
    "Penanggung jawab kontrol keamanan, akses, backup, dan perubahan teknis menurut SNX-HR-ORG-01. Tidak ada wewenang persetujuan di SOP ini."
   ],
   [
@@ -820,11 +820,11 @@
   ],
   [
    "Belum bernomor",
-   "Template NDA, PKS, dan addendum; playbook klausul; format tabel redline dan ringkasan risiko; format register kontrak dan register perizinan. Lampiran SOP Departemen Legal versi 0.1 yang belum disusun."
+   "Template NDA, PKS, dan addendum; playbook klausul; format tabel redline dan ringkasan risiko; format register kontrak dan register perizinan. Lampiran versi 0.1 SOP ini yang belum disusun."
   ],
   [
    "Belum bernomor",
-   "SOP Departemen Legal versi 0.1 (Oktober 2026); draf tim yang menjadi dasar SOP ini."
+   "Versi 0.1 SOP ini (Oktober 2026); draf tim yang menjadi dasar SOP ini."
   ]
  ],
  "records": [

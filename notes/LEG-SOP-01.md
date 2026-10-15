@@ -76,7 +76,7 @@ Pemetaan peran sumber ke nama peran HR-ORG-01 (specs/HR-ORG-01.json: Daftar Jaba
 
 | Peran di sumber | Nama di dokumen | Dasar |
 |---|---|---|
-| Line Manager Legal | Line Manager Legal | Matriks Peran HR-ORG-01: Line Manager Legal = Legal & Compliance (JA-08), "(USULAN), menunggu konfirmasi (K-13)" |
+| Line Manager Legal | Line Manager Legal | Matriks Peran HR-ORG-01: Line Manager Legal = Legal & Compliance (JA-08), "(USULAN), menunggu konfirmasi (K-13)"; diubah W9: pemetaan diputus owner (G-3 A5), label USULAN dan menunggu konfirmasi K-13 dihapus dari dokumen |
 | Staff Legal (Senior/Junior) | Staff Legal | Matriks Peran HR-ORG-01: Staff Legal = JA-09. Penanda Senior/Junior dibuang: HR-ORG-01 dan Jobdesk Staff Legal tidak membedakan level |
 | Unit Bisnis/Pemohon | Pemohon | Tidak ada di HR-ORG-01 (bukan jabatan). Dibuat istilah satu kata, didefinisikan di bagian 3: departemen SINUX selain Legal |
 | manajemen/direksi, Direksi/COO | Manajemen (Direktur Utama dan COO) | HR-ORG-01 JA-01 Direktur Utama dan JA-02 Direktur; HR-JA-01 mendefinisikan Management sebagai unit tempat JA-01 dan JA-02 berada |
@@ -132,7 +132,7 @@ Delapan placeholder [ISI] dan hasilnya:
 
 ## USULAN
 
-Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 20 kemunculan "(USULAN)" termasuk baris definisi label, lima baris SLA, dan dua label pemetaan peran Legal di bagian 5 (butir 14). Total 17 butir keputusan.
+Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 20 kemunculan "(USULAN)" termasuk baris definisi label, lima baris SLA, dan dua label pemetaan peran Legal di bagian 5 (butir 14). Total 17 butir keputusan.; diubah W9: dua label pemetaan peran Legal (butir 14) dihapus, jumlah kemunculan "(USULAN)" berkurang dua
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -149,7 +149,7 @@ Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 20 kemunc
 | 11 | "tim keamanan/IT" dipetakan ke VP Tech Operation and Services | Bagian 5, 6.7 langkah 2 | Fani |
 | 12 | Lima baris target waktu tetap berlabel usulan seperti sumber; penyelesaian urgent "disepakati Line Manager Legal dan Pemohon" (pihak penyepakat bukan dari sumber) | Bagian 8 baris 1 sampai 5 | Legal, dikukuhkan owner |
 | 13 | DoA dibaca sama dengan Authority Matrix di SNX-HR-JA-01 | Definisi DoA | Legal |
-| 14 | Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 (dari HR-ORG-01 K-13) | Bagian 11, SNX-HR-ORG-01 | Aziz, dengan Legal |
+| 14 | Line Manager Legal dan Staff Legal dipasangkan ke JA-08 dan JA-09 (dari HR-ORG-01 K-13) | Bagian 11, SNX-HR-ORG-01 | Aziz, dengan Legal; ditutup W9: pemetaan JA-08 dan JA-09 diputus owner (G-3 A5), label USULAN dihapus dari dokumen |
 | 15 | SNX-LEG-REG-01 sebagai register perizinan | Bagian 11 | Legal |
 | 16 | SNX-LEG-FRM-03 sebagai tempat hasil tinjauan pelindungan data pribadi | Bagian 11 | Legal |
 | 17 | Daftar klausul ISO 9001:2015 (5.3, 7.4, 7.5.3, 8.2.3) dan ISO/IEC 27001:2022 (Annex A 5.31, 5.34, 5.12, 5.15, 5.33), label "(USULAN, perlu konfirmasi konsultan)" | Bagian 11, Acuan standar | owner, diteruskan ke konsultan |
@@ -159,14 +159,14 @@ Delapan placeholder [ISI] tercakup (butir 1 sampai 8). Lint menghitung 20 kemunc
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
 | 1 | Batas "generalist" untuk tiket GLPI belum dirinci owner. Apakah semua permintaan layanan legal masuk GLPI, atau ada yang lewat Zammad | owner |
-| 2 | Atasan Line Manager Legal berbeda di sumber ("Direksi/COO"), Jobdesk ("CEO"), dan HR-JA-001 ("Management / Direktur"); HR-ORG-01 K-03 masih menunggu | owner, Samuel |
+| 2 | Atasan Line Manager Legal berbeda di sumber ("Direksi/COO"), Jobdesk ("CEO"), dan HR-JA-001 ("Management / Direktur"); HR-ORG-01 K-03 masih menunggu | owner, Samuel; tetap terbuka W9: K-03 belum diputus (A4 tidak berubah) |
 | 3 | DoA (Authority Matrix) belum terbit: pejabat penyetuju, batas nilai, dan jenis kontrak kosong. Butir 4.20 hanya jembatan sementara | Samuel |
 | 4 | Batas wewenang Line Manager Legal menunjuk notaris, konsultan, advokat kosong di Jobdesk dan "Belum ditetapkan" di SNX-HR-JA-01; butir 4.29 dan 6.8 langkah 7 bergantung padanya | Legal, Samuel |
 | 5 | Konfirmasi tafsir pertentangan "memberi opini" dan "hentikan proses": Line Manager Legal menghentikan proses di Departemen Legal, keputusan di Manajemen. Jobdesk memakai kata "menahan kontrak" | Legal |
 | 6 | Periode retensi dan lokasi arsip (termasuk dokumen asli) belum ada; SNX-LEG-SOP-03 harus memutus dan dokumen ini diselaraskan | Legal |
 | 7 | Tanpa angka di sumber: penyelesaian dokumen korporasi dan urgent; waktu lapor pelanggaran atau wanprestasi kontrak ("segera"); penanganan surat regulator dan perubahan fakta yang dilaporkan Pemohon (sumber hanya mewajibkan laporan) | Legal |
 | 8 | Pemohon yang menandatangani, menjanjikan, mengirim, atau mengubah dokumen tanpa review: sumber melarang tanpa menetapkan penanganan, maka tidak ada baris di bagian 9 | Legal, Samuel |
-| 9 | Register permintaan tidak punya format lampiran dan tidak ada dokumen bernomor di checklist; register kontrak juga tidak ada. Menambah baris checklist di luar 88 baris hanya bila konsultan meminta | Legal, owner |
+| 9 | Register permintaan tidak punya format lampiran dan tidak ada dokumen bernomor di checklist; register kontrak juga tidak ada. Menambah baris checklist di luar 88 baris hanya bila konsultan meminta | Legal, owner; diubah W9 R2: rujukan di dokumen disebut "versi 0.1 SOP ini", tanpa judul dokumen rekaan; butir tetap terbuka |
 | 10 | Tumpang tindih dengan SNX-LEG-SOP-02 (Contract Review & Legal Approval) dan SNX-LEG-SOP-03 (Legal Document Control & Retention): sinkronkan prosedur 6.2, 6.4, dan 6.9 setelah ketiganya selesai | Legal |
 | 11 | Skala risiko dokumen ini tiga tingkat (Tinggi, Sedang, Rendah). Audit mencatat Legal Risk Register memakai Rendah, Sedang, Tinggi, Sangat Tinggi (SNX-LEG-REG-02) | Legal |
 | 12 | Jobdesk Line Manager Legal memuat hubungan kerja dengan Finance (pembayaran, pajak, bea meterai) dan Human Resources (kontrak kerja) yang tidak punya langkah di sumber SOP; hanya pelaporan berkala dengan Finance yang ada di sumber | Legal |
@@ -218,7 +218,8 @@ Uji sweep: render_sop.py lalu lint_doc.py sop memberi "pass": true, "fails": [],
 | A5 bagian 5, Line Manager Legal (JA-08) | Dipetakan ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | Dipetakan ... di SNX-HR-ORG-01. Klausul 'melapor ke COO (USULAN, butir K-03)' tidak berubah (A4) |
 | A5 bagian 5, Staff Legal (JA-09) | Dipetakan ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | Dipetakan ... di SNX-HR-ORG-01. |
 | A5 bagian 11, baris SNX-HR-ORG-01 (rujukan silang) | ... (JA-08 dan JA-09) (USULAN, butir K-13); atasan JA-08 menunggu konfirmasi (butir K-03). | ... (JA-08 dan JA-09); atasan JA-08 menunggu konfirmasi (butir K-03). Rujukan ke SNX-HR-ORG-01 tetap berupa nomor jabatan dan butir K-03 |
-| A5 nama unit, 6 kemunculan (butir 4.6, 4.23, tabel peran Finance dan VP Tech Operation and Services, bagian 11 dua baris) | SOP Divisi Legal versi 0.1 | SOP Departemen Legal versi 0.1 (judul draf tim ikut diganti agar nol 'Divisi Legal') |
+| A5 nama unit, 6 kemunculan (butir 4.6, 4.23, tabel peran Finance dan VP Tech Operation and Services, bagian 11 dua baris) | SOP Divisi Legal versi 0.1 | SOP Departemen Legal versi 0.1 (judul draf tim ikut diganti agar nol 'Divisi Legal'); diubah W9 R2: judul itu nama dokumen yang tidak ada, lihat baris R2 di bawah |
+| R2 nama draf tim pendahulu, 6 kemunculan (butir 4.6, 4.23, tabel peran Finance dan VP Tech Operation and Services, bagian 11 dua baris) | SOP Departemen Legal versi 0.1 | versi 0.1 SOP ini (bagian 11 baris pertama: "Versi 0.1 SOP ini (Oktober 2026)"); nol "Divisi" dan nol judul rekaan |
 
 Open item:
 

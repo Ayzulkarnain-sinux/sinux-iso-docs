@@ -2,27 +2,35 @@
  "key": "LEG-SOP-01",
  "cluster": "LEG-A",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 1,
+ "putaran_pemeriksaan": 2,
  "putaran_perbaikan": 0,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Judul dokumen tim yang dirujuk diganti dari 'SOP Divisi Legal versi 0.1' menjadi 'SOP Departemen Legal versi 0.1' (6 kemunculan). Penggantian ini mengikuti A5 dan unit_names v22, tetapi judul yang tertulis di dokumen tim aslinya tetap 'SOP Divisi Legal'. Notes sudah mencatatnya. Bila ingin judul asli tampak, LEAD perlu memutuskan.",
-  "Di luar W9 dan tidak berubah: bagian 5 menulis Line Manager Legal 'melapor ke COO (USULAN, butir K-03 ...)', sedangkan data_conflicts v22 meminta 'Direktur (COO)' pada sebutan pertama di badan dokumen Legal. HR-ORG-01 menulis atasan JA-08 'Direktur (JA-02)'. Ini residu lama, bukan perubahan W9.",
-  "Frasa 'draf tim' masih ada 2 kali (butir 4.6 dan bagian 11), di kalimat yang hanya berubah pada nama unit. Frasa ini tidak ada di daftar frasa terlarang (yang terlarang 'sumber tim' dan 'draf ini'), jadi dicatat saja."
+  "Bagian 11 baris 'Versi 0.1 SOP ini (Oktober 2026); draf tim yang menjadi dasar SOP ini.' kini merujuk dirinya sendiri dua kali dalam satu baris, dan 'versi 0.1' bisa bertabrakan dengan penomoran revisi dokumen (Rev00). Ini sah menurut R2 butir 1, tetapi pembaca bisa mengira Rev00 punya pendahulu resmi bernomor. Usul: pakai rumusan seperti 'draf tim versi 0.1 (Oktober 2026), pendahulu SOP ini'.",
+  "Baris 'Lampiran versi 0.1 SOP ini yang belum disusun' tetap pasif tanpa pelaku. Kalimat pasif ini sudah ada sebelum W9 (bukan pasif baru), jadi bukan pemblokir.",
+  "'menunggu konfirmasi (butir K-03)' untuk atasan JA-08 dan 'melapor ke COO (USULAN, butir K-03)' tetap ada. Ini benar menurut A4, dan notes sudah mencatatnya.",
+  "Notes: baris tabel istilah 'Staff Legal (Senior/Junior)' (notes baris 80) tidak diberi tanda 'diubah W9' walaupun pemetaan JA-09 ikut diputus. Baris Line Manager Legal sudah bertanda, dan baris USULAN 14 sudah 'ditutup W9'. Ini soal kebersihan notes saja (R2 butir 3), bukan teks dokumen."
  ],
  "butir_dikerjakan": [
-  "A5 blok approval: prepared 'Alif Altamziz / Staff Legal', reviewed 'Ester Febe Utomo / Line Manager Legal', approved tetap 'Samuel Kristanto Utomo / President Director'. Ketiganya persis sama dengan defaults v22 prepared_reviewed.LEG dan approved_by.all.",
-  "A5 pemetaan: frasa ', menunggu konfirmasi (K-13) (USULAN)' dihapus di baris peran Line Manager Legal (JA-08) dan Staff Legal (JA-09). '(USULAN, butir K-13)' dihapus di baris SNX-HR-ORG-01 bagian 11. Label USULAN lain tetap, termasuk 'melapor ke COO (USULAN, butir K-03)' dan 'atasan JA-08 menunggu konfirmasi (butir K-03)', sesuai A4.",
-  "A5 nama orang hanya ada di blok Prepared/Reviewed. Badan dokumen tetap memakai nama peran. Daffa 0.",
-  "A5 nama unit: 6 'Divisi Legal' diganti 'Departemen Legal' (4.6, 4.23, peran Finance, peran VP Tech Operation and Services, dua baris 'Belum bernomor' di bagian 11).",
-  "A3: tidak berlaku. Dokumen tidak menyebut JA-03 atau JA-04 (grep 0). Notes mencatatnya.",
-  "Notes: bagian '## ISO-W9' berisi tabel perubahan dan status open item (pemetaan ditutup W9, K-03 tetap terbuka)."
+  "A5: blok Prepared = 'Alif Altamziz / Staff Legal' dan Reviewed = 'Ester Febe Utomo / Line Manager Legal' persis sama dengan defaults v22 prepared_reviewed.LEG. Approved tetap 'Samuel Kristanto Utomo / President Director' (approved_by.all).",
+  "A5: label '(USULAN)' dan 'menunggu konfirmasi (K-13)' pada pemetaan Line Manager Legal = JA-08 dan Staff Legal = JA-09 dihapus di bagian 5 (dua baris peran) dan bagian 11 (baris SNX-HR-ORG-01). Label USULAN lain tetap, termasuk 4.6 dan K-03.",
+  "A5: badan dokumen tetap memakai nama peran. Nama orang hanya muncul di blok Prepared/Reviewed (Alif 1x, Ester 1x). Daffa 0.",
+  "A5: 'Divisi Legal' 6 menjadi 0. Unit di badan dokumen ditulis 'Departemen Legal'.",
+  "R2 butir 1: keenam kemunculan judul rekaan diganti menjadi 'versi 0.1 SOP ini' (butir 4.6, 4.23, peran Finance, peran VP Tech Operation and Services, dua baris bagian 11). Nol kata 'Divisi', nol judul rekaan.",
+  "A3: tidak berlaku. Dokumen tidak menyebut atasan atau garis lapor JA-03/JA-04 (grep JA-03, JA-04, VP Commercial di garis lapor: nihil).",
+  "A4: atasan JA-08 (K-03) tidak berubah, sesuai instruksi.",
+  "Notes: bagian '## ISO-W9' ada, berisi tabel perubahan termasuk baris R2 dan open item bertanda 'ditutup W9' / 'diubah W9' / 'tetap terbuka W9'."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Hasil grep pada teks render sesudah (/tmp/claude-0/w9/render/LEG-SOP-01.docx). 'Divisi Legal' 0, 'Departemen Legal' 39, 'HR Manager' 0, 'Daffa' 0, 'K-13' 0, em-dash 0, JA-03 dan JA-04 0. 'menunggu konfirmasi' tinggal 1, yaitu atasan JA-08 butir K-03, yang memang dipertahankan sesuai A4. 'Alif' 1 dan 'Ester' 1, keduanya hanya di blok approval. Rujukan K-03 di SNX-HR-ORG-01 masih ada di spec terkini HR-ORG-01. HR-ORG-01 terkini juga menulis pemetaan Legal 'sudah diputus', cocok dengan LEG-SOP-01. Diff teks memuat 11 baris lama dan 11 baris baru, semuanya bagian dari butir A5.",
+ "grep": "Teks sesudah diambil dari render /tmp/claude-0/w9/render/LEG-SOP-01.docx (document.xml; header dan footer tanpa teks relevan). Hasil hitung: 'Divisi Legal' 0, 'Divisi' 0, 'HR Manager' 0, 'K-13' 0, 'Daffa' 0, em-dash 0, 'menunggu konfirmasi' 1 (hanya atasan JA-08 butir K-03, sah menurut A4), frasa proses ('dokumen sumber', 'sumber tim', 'draf ini', 'belum berdokumen') 0. 'penyusun' 1, tetapi itu bagian dari kata 'penyusunan kontrak', bukan pelanggaran. Diff teks berisi 11 baris lama menjadi 11 baris baru, semuanya dalam lingkup A5/R2.",
  "riwayat": [
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }
