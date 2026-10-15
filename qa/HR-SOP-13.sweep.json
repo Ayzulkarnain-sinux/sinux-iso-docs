@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian 9 baris 3 (Atasan Langsung Tujuan dan Asal jabatan yang sama)",
+      "masalah": "Label (USULAN) yang semula menutup kalimat pertama kini hanya mengikuti kalimat kedua yang baru, sehingga status kalimat pertama (Penanggap alternatif menanggapi dalam batas waktu bagian 8) menjadi tidak jelas. Status itu tetap terbaca dari 4.3, definisi, dan tabel peran yang berlabel, jadi tidak memblokir. Usul: tambahkan (USULAN) di ujung kalimat pertama.",
+      "bukti": "Sebelum: \"... menanggapi usulan pada nomor 3 dalam batas waktu bagian 8 (USULAN).\" Sesudah: \"... dalam batas waktu bagian 8. Bila jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan itu (USULAN).\""
+    },
+    {
+      "lokasi": "Bagian 9 baris 3 kalimat baru, butir 4.3",
+      "masalah": "Aturan U22 membuat Direktur Utama mengusulkan (sebagai Atasan Langsung Tujuan), menanggapi, dan memutuskan mutasi yang sama. Ini bertentangan dengan kalimat pertama 4.3 (jabatan yang mengusulkan, menanggapi, dan menetapkan keputusan berbeda satu sama lain), dan 4.3 tidak menyebut pengecualian itu. Kalimat ini juga kurang jelas: \"jabatan itu\" bisa dibaca merujuk ke Penanggap alternatif. Rumusan ini berlabel (USULAN) dan tercatat di notes U22 dengan pemutus Samuel, jadi tidak memblokir. Usul: tulis \"Bila jabatan yang sama itu Direktur Utama\", lalu sebut di 4.3 pengecualian ini beserta kontrol penggantinya, misalnya rekomendasi HR Manager di 6.2 sebagai pemeriksaan independen (USULAN).",
+      "bukti": "4.3: \"jabatan yang mengusulkan, menanggapi, menyimpulkan kualifikasi, menetapkan keputusan, dan mencatat mutasi berbeda satu sama lain\"; bagian 9: \"Bila jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan itu (USULAN).\""
+    },
+    {
+      "lokasi": "Bagian 3 definisi Divisi, bagian 2 paragraf 3 (kalimat batas)",
+      "masalah": "Istilah tidak seragam (§6a.7): definisi Divisi berbunyi \"Sub divisi Operation\", badan dokumen memakai \"divisi\", dan kalimat batas yang diwajibkan verbatim memakai \"sub divisi Operation\". Selain itu, lintas dokumen, SNX-HR-SOP-12 menghitung NOC, SOC, serta SD dan PM sebagai \"unit kerja tersendiri (USULAN)\", sedangkan SOP ini menyebutnya \"Divisi\". Hasilnya sudah tidak tumpang tindih: perpindahan NOC ke SOC tidak lagi bisa terbaca sebagai rotasi dan mutasi sekaligus. Tetapi satu hal punya dua nama di dua SOP. Perlu satu istilah bersama di HR-SOP-12 dan HR-SOP-13.",
+      "bukti": "SOP-13 Divisi: \"Sub divisi Operation, yaitu NOC, SOC, serta SD dan PM.\" SOP-12 Unit kerja: \"Sub divisi NOC, SOC, serta SD dan PM dihitung sebagai unit kerja tersendiri (USULAN).\""
+    },
+    {
+      "lokasi": "Bagian 2 pengecualian \"perpindahan sementara di luar batas rotasi (USULAN)\"",
+      "masalah": "Pengecualian baru ini konsekuensi logis kalimat batas butir 3 dan berlabel serta tercatat di U21, tetapi ruang lingkup jadi menyempit. Penugasan sementara ke unit atau lokasi lain yang tidak memenuhi batas rotasi kini tidak diatur SOP HR mana pun. Ini perlu diputus LEAD atau Aziz.",
+      "bukti": "Sebelum: semua pemindahan ke unit kerja, divisi, atau lokasi operasional lain masuk SOP ini. Sesudah: \"perpindahan sementara di luar batas rotasi (USULAN)\" dikecualikan; notes U21: \"belum diatur SOP mana pun\"."
+    },
+    {
+      "lokasi": "Tujuan paragraf 1, Scope paragraf 1, definisi Mutasi, Dokumen terkait SNX-HR-SOP-12",
+      "masalah": "Kualifikasi \"menetap\" dan \"sementara ... kembali ke tugas semula\" diturunkan dari kalimat batas yang berlabel (USULAN), tetapi di empat lokasi ini muncul tanpa label. Ini bukan fakta jenis nama, jabatan, angka, sistem, atau tanggal, dan sumber Drive 1m91WrfxiL4BnQSMItHSgF_VP9eUD5Vt1 tidak memuat ketentuan mutasi atau rotasi, jadi tidak ada pertentangan. Status keempatnya mengikuti kalimat batas.",
+      "bukti": "Definisi Mutasi: \"Pemindahan menetap karyawan ke unit kerja, divisi, atau lokasi operasional lain.\" Dokumen terkait: \"Rotation: perpindahan sementara dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula ...\""
+    },
+    {
+      "lokasi": "Ringkasan pemeriksaan",
+      "masalah": "Catatan, bukan cacat. Diff memuat tujuh hunk, semuanya terlacak ke butir 1 sampai 3, dan tidak ada perubahan lain. Kalimat batas identik byte demi byte dengan instruksi (dicek programatis terhadap spec) dan sudah ada di docx out/. Penetap keputusan tetap Direktur Utama (4.6), dan nama peran sudah berkapital. Ketiga butir dikerjakan. Teks docx bersih dari em-dash, en-dash, dan rujukan internal AI, frasa meta penyusunan tidak muncul, tidak ada pasif tanpa pelaku yang baru, dan tidak ada benda baru yang menjadi pelaku kata kerja manusia (\"SNX-HR-ORG-01 menyatakan\" adalah pola isi dokumen yang sudah dipakai di 4.4 dan 4.6). Jumlah label (USULAN) naik dari 56 menjadi 58. Dasar \"berstatus (USULAN)\" untuk definisi Divisi ada di HR-ORG-01: \"Semua jabatan dan garis lapor berstatus (USULAN).\"",
+      "bukti": "Ekstraksi teks dari out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx (baca saja): emdash 0, endash 0, nol temuan SKILL_/DEC-/Claude/Altair/staging/kb_/relay_/dokumen sumber/penyusun/draf ini; (USULAN) 58."
+    }
+  ]
+}

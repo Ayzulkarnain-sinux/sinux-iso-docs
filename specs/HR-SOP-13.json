@@ -18,13 +18,14 @@
   }
  },
  "purpose": [
-  "SOP ini mengatur cara SINUX memindahkan karyawan ke unit kerja, divisi, atau lokasi operasional lain sesuai kebutuhan organisasi.",
+  "SOP ini mengatur cara SINUX memindahkan karyawan secara menetap ke unit kerja, divisi, atau lokasi operasional lain sesuai kebutuhan organisasi.",
   "Hasil yang dijaga: setiap mutasi punya kebutuhan organisasi yang tertulis dan baru berlaku sesudah keputusan tertulis.",
   "Karyawan yang dimutasi mengetahui tanggung jawab barunya sebelum tanggal berlaku, dan Atasan Langsung Tujuan mengajukan perubahan hak aksesnya."
  ],
  "scope": [
-  "SOP ini berlaku untuk karyawan SINUX yang memegang jabatan di SNX-HR-ORG-01 dan dipindahkan ke unit kerja, divisi, atau lokasi operasional lain karena kebutuhan organisasi. Prosesnya mulai dari usulan Atasan Langsung Tujuan sampai pembaruan data kepegawaian, garis lapor, dan permintaan perubahan hak akses.",
-  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); penurunan jabatan (SNX-HR-SOP-11); perpindahan tugas atau fungsi pada unit kerja, divisi, lokasi operasional, dan tingkatan jabatan yang sama (SNX-HR-SOP-12); pemindahan atas permintaan karyawan dan pemindahan sebagai sanksi disiplin (USULAN); penetapan gaji, tunjangan, dan biaya yang timbul karena mutasi (USULAN); mutasi Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN)."
+  "SOP ini berlaku untuk karyawan SINUX yang memegang jabatan di SNX-HR-ORG-01 dan dipindahkan secara menetap ke unit kerja, divisi, atau lokasi operasional lain karena kebutuhan organisasi. Prosesnya mulai dari usulan Atasan Langsung Tujuan sampai pembaruan data kepegawaian, garis lapor, dan permintaan perubahan hak akses.",
+  "Dikecualikan dari SOP ini: kenaikan jabatan (SNX-HR-SOP-10); penurunan jabatan (SNX-HR-SOP-11); rotasi menurut batas di bawah (SNX-HR-SOP-12); perpindahan sementara di luar batas rotasi (USULAN); pemindahan atas permintaan karyawan dan pemindahan sebagai sanksi disiplin (USULAN); penetapan gaji, tunjangan, dan biaya yang timbul karena mutasi (USULAN); mutasi Direktur Utama (JA-01), karena SNX-HR-JA-01 menaruh atasan jabatan itu pada organ perusahaan menurut anggaran dasar (USULAN).",
+  "Batas rotasi dan mutasi: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula sesudah masa rotasi, adalah rotasi (SNX-HR-SOP-12). Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain adalah mutasi (SNX-HR-SOP-13) (USULAN)."
  ],
  "definitions": [
   [
@@ -41,7 +42,7 @@
   ],
   [
    "Divisi",
-   "Divisi Operation beserta sub divisinya, yaitu NOC, SOC, serta SD dan PM. Susunan ini mengikuti SNX-HR-ORG-01, yang menandainya (USULAN)."
+   "Sub divisi Operation, yaitu NOC, SOC, serta SD dan PM. SNX-HR-ORG-01 menyatakan susunan ini berstatus (USULAN)."
   ],
   [
    "Garis lapor",
@@ -85,7 +86,7 @@
   ],
   [
    "Mutasi",
-   "Pemindahan karyawan ke unit kerja, divisi, atau lokasi operasional lain."
+   "Pemindahan menetap karyawan ke unit kerja, divisi, atau lokasi operasional lain."
   ],
   [
    "Penanggap alternatif",
@@ -455,7 +456,7 @@
   ],
   [
    "Atasan Langsung Tujuan dan Atasan Langsung Asal adalah jabatan yang sama, mis. pada mutasi yang hanya mengubah lokasi operasional",
-   "HRGA Officer mengirim usulan ke Penanggap alternatif pada butir 6.2 nomor 2, dan Penanggap alternatif menanggapi usulan pada nomor 3 dalam batas waktu bagian 8 (USULAN)."
+   "HRGA Officer mengirim usulan ke Penanggap alternatif pada butir 6.2 nomor 2, dan Penanggap alternatif menanggapi usulan pada nomor 3 dalam batas waktu bagian 8. Bila jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan itu (USULAN)."
   ],
   [
    "Atasan Langsung Tujuan atau Atasan Langsung Asal berlabel menunggu konfirmasi, atau tanpa pemegang, di SNX-HR-ORG-01",
@@ -513,7 +514,7 @@
   ],
   [
    "SNX-HR-SOP-12",
-   "Rotation: perpindahan tugas atau fungsi pada unit kerja, divisi, lokasi operasional, dan tingkatan jabatan yang sama, dikecualikan dari SOP ini (bagian 2)."
+   "Rotation: perpindahan sementara dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula, dikecualikan dari SOP ini (bagian 2)."
   ],
   [
    "SNX-ISMS-SOP-02",

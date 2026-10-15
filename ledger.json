@@ -950,7 +950,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "sop",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-SOP-13",
    "out_path": "out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx",
    "sources": [
@@ -969,7 +969,7 @@
     "Blank page 15 (blankscan pasca-DONE), dibuka ulang untuk perbaikan isi",
     "Sweep (c): r2 nonblocking, definisi divisi dan rotasi bertabrakan dengan HR-SOP-12 (NOC ke SOC bisa terbaca rotasi sekaligus mutasi)"
    ],
-   "updated_at": "2026-10-15T00:44:13Z",
+   "updated_at": "2026-10-15T00:48:20Z",
    "pen_agent": "aec5ea3082629635b",
    "ooxml": "PASSED",
    "sweep": "1"

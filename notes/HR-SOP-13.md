@@ -4,7 +4,8 @@ Status: DRAFTED (spec + notes ada). Spec: specs/HR-SOP-13.json. Mode sop, aksi T
 
 Hasil uji terakhir (bukti mentah: /tmp/pen-HR-SOP-13/lint.out.txt):
 - `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/HR-SOP-13.json /tmp/pen-HR-SOP-13/HR-SOP-13.docx` selesai tanpa galat.
-- `python3 -I tools/lint_doc.py /tmp/pen-HR-SOP-13/HR-SOP-13.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "56 butir (USULAN) menunggu ACC". Warn PIC SLA nol.
+- `python3 -I tools/lint_doc.py /tmp/pen-HR-SOP-13/HR-SOP-13.docx sop` memberi `"pass": true`, `"fails": []`, satu warn "58 butir (USULAN) menunggu ACC" (sesudah putaran sweep). Warn PIC SLA nol.
+- Uji sweep: `python3 -I reports/orch/blankscan.py /tmp/pen-HR-SOP-13/HR-SOP-13.docx` memberi `ok 18 HR-SOP-13.docx []` (18 halaman, nol halaman kosong); validator OOXML lulus. Angka halaman putaran 1 di bawah (17 halaman) mendahului sweep.
 - Uji halaman (putaran perbaikan 1): `soffice --headless --convert-to pdf` lalu `pdftotext` per halaman. 17 halaman, jumlah kata per halaman 20, 75, 56, 73, 290, 273, 402, 214, 216, 184, 174, 18, 237, 230, 80, 208, 116 (bukti: /tmp/pen-HR-SOP-13/page_words.txt). Halaman 15 yang tadinya kosong kini memuat ujung tabel bagian 9 dan seluruh bagian 10. Halaman 12 hanya diagram dengan judul bagian 7 dan keterangan gambar; halaman 1 sampul.
 - Validator OOXML (`python3 /mnt/skills/public/docx/scripts/office/validate.py`): "All validations PASSED!".
 - Diagram /tmp/pen-HR-SOP-13/HR-SOP-13_flow.png dibuka (sebelum putaran 1; hanya label simpul 'Berikan informasi jabatan baru' yang berubah sesudahnya): 16 simpul, rankdir TB, label Ya dan Tidak terbaca, garis putus-putus kembali ke simpul awal.
@@ -66,7 +67,7 @@ Fakta dari dokumen lain di repo (bukan dari sumber Drive), dicocokkan ke spec ya
 | Prosedur | Bagian 6 (6.1 sampai 6.4), bagian 7 (diagram), bagian 8 (batas waktu), bagian 9 (pengecualian) | Disusun, seluruhnya USULAN |
 | Pemindahan karyawan | Definisi Mutasi dan Karyawan yang dimutasi; scope; 6.1 nomor 1 sampai 3; 6.3 nomor 2; 6.4 nomor 4 | Kriteria baris |
 | ke unit kerja | Definisi Unit kerja (kolom Unit di HR-ORG-01); butir 4.2; langkah 6.1 nomor 1 dan 2 | HR-ORG-01 |
-| ke divisi | Definisi Divisi (Divisi Operation dan sub divisinya di HR-ORG-01); butir 4.2; langkah 6.1 nomor 1 dan 2 | HR-ORG-01 (turunan POL-OPS-001 yang berstatus USULAN) |
+| ke divisi | Definisi Divisi (sub divisi Operation: NOC, SOC, serta SD dan PM); kalimat Batas rotasi dan mutasi di bagian 2; butir 4.2; langkah 6.1 nomor 1 dan 2 | HR-ORG-01 (turunan POL-OPS-001 yang berstatus USULAN) |
 | ke lokasi operasional lain | Definisi Lokasi operasional (acuan lokasi kerja utama di HR-JA-01 butir 4.10); butir 4.2; langkah 6.1 nomor 1 dan 2; 6.4 nomor 2 sampai 4 | HR-JA-01 butir 4.10 |
 | sesuai kebutuhan organisasi | Definisi Kebutuhan organisasi; butir 4.1; 6.1 nomor 2 (usulan memuat kebutuhan organisasi); scope (pemindahan atas permintaan karyawan dan sebagai sanksi disiplin dikecualikan, USULAN) | Kriteria baris |
 
@@ -127,13 +128,13 @@ Bagian 5 "Catatan kualitas dan celah" di context/audit/iso-sinux-supdocs-hr-2026
 2. Pengusul = jabatan di tempat tujuan (Atasan Langsung Tujuan), karena kriteria menyebut pemindahan ke unit, divisi, atau lokasi "sesuai kebutuhan organisasi" dan kebutuhan itu paling dekat dengan jabatan yang menerima.
 3. Angka batas waktu 3, 3, 5, 5, dan 2 hari kerja mengikuti pola HR-SOP-10 agar satu set SOP HR seragam. Angka itu tidak punya sumber dan berlabel (USULAN). Satu-satunya angka bersumber adalah "paling lambat 5 hari kerja sesudah mutasi" (ISMS-SOP-02), dipakai pada lingkupnya (mutasi) di butir 4.9.
 4. "Lokasi operasional lain" dibaca sebagai tempat kerja selain lokasi kerja utama di HR-JA-01 butir 4.10 yang disebut di keputusan mutasi. Daftar lokasi tidak dibuat.
-5. "Divisi" dibaca sebagai Divisi Operation dan sub divisinya di HR-ORG-01, karena hanya itu yang bernama divisi di dokumen yang sudah DONE. Susunan itu berstatus USULAN di HR-ORG-01 (butir K-10), sehingga definisi Divisi di dokumen ini berlabel (USULAN).
+5. "Divisi" dibaca sebagai sub divisi Operation (NOC, SOC, serta SD dan PM), sesuai kalimat Batas rotasi dan mutasi dari orkestrator, karena hanya itu yang bernama divisi di dokumen yang sudah DONE. Susunan itu berstatus USULAN di HR-ORG-01 (butir K-10), sehingga definisi Divisi di dokumen ini berlabel (USULAN).
 6. Definisi Tingkatan jabatan (jumlah garis lapor sampai Direktur Utama) disalin dari HR-SOP-12 agar batas kenaikan, penurunan, dan rotasi memakai satu ukuran. Ukuran itu berlabel (USULAN) di kedua dokumen karena HR-JA-01 tidak memuat grading.
 7. Satu istilah satu hal (putaran 1): "informasi jabatan baru" (uraian jabatan tujuan, garis lapor baru, lokasi operasional tujuan) didefinisikan sekali di bagian 3 dan dipakai di 4.7, bagian 5, 6.4 nomor 2 dan 3, SLA, dan bagian 9. "Menyimpulkan kualifikasi" dan "kesimpulan kualifikasi" dipakai di semua tempat (4.3, 4.4, bagian 5, 6.2, 6.3, 6.4, SLA, rekaman); kata "menilai" dan "kesimpulan penilaian" tidak dipakai.
 
 ## USULAN
 
-Hitungan: 56 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beberapa bagian), dikelompokkan menjadi 19 butir keputusan di bawah.
+Hitungan: 58 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beberapa bagian), dikelompokkan menjadi 22 butir keputusan di bawah.
 
 | # | Butir USULAN | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -154,14 +155,17 @@ Hitungan: 56 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beber
 | U15 | Klasifikasi RESTRICTED (Internal) dan lokasi, pemilik, retensi rekaman (personal file di folder Google Drive Departemen HR, selama karyawan bekerja) | 4.11, bagian 11 | Aziz (lokasi dan retensi), owner (klasifikasi) |
 | U17 | Penanggap alternatif (jabatan tujuan garis lapor dari Atasan Langsung Asal) menanggapi usulan bila Atasan Langsung Tujuan dan Atasan Langsung Asal satu jabatan, mis. mutasi lokasi saja | Bagian 3, 4.3, 5, intro 6.2, bagian 9 baris 3 | Aziz |
 | U18 | Tingkatan jabatan diukur dari jumlah garis lapor sampai Direktur Utama (sama dengan HR-SOP-12), dan pengalihan ke HR-SOP-10 atau HR-SOP-11 menurut ukuran itu | Bagian 3, bagian 9 baris 5 | Aziz, owner |
-| U19 | Susunan Divisi Operation (NOC, SOC, SD dan PM) sebagai pengertian Divisi | Bagian 3 (Divisi) | Owner (menunggu K-10 di HR-ORG-01) |
+| U19 | Sub divisi Operation (NOC, SOC, SD dan PM) sebagai pengertian Divisi | Bagian 3 (Divisi), bagian 2 (Batas rotasi dan mutasi) | Owner (menunggu K-10 di HR-ORG-01) |
+| U20 | Kalimat Batas rotasi dan mutasi (rotasi = sementara, penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, kembali ke tugas semula; mutasi = menetap, karena kebutuhan organisasi). Kalimat sama di HR-SOP-12 | Bagian 2 | Aziz, owner |
+| U21 | Perpindahan sementara di luar batas rotasi (mis. sementara ke unit atau lokasi lain) dikecualikan dari SOP ini dan belum diatur SOP mana pun | Bagian 2 (pengecualian) | Aziz |
+| U22 | Bila Atasan Langsung Tujuan sama dengan Atasan Langsung Asal dan jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan (tidak ada jabatan di atasnya di HR-ORG-01) | Bagian 9 baris 3 | Samuel |
 | U16 | Klausul ISO 9001:2015 dan ISO/IEC 27001:2022 di bagian 11 | Bagian 11 (label "(USULAN, perlu konfirmasi konsultan)") | Owner, diteruskan ke konsultan |
 
 ## Open items
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| O1 | HR-SOP-11 dan HR-SOP-12 sudah ada di disk (putaran 1) dan dicocokkan. Rotasi di HR-SOP-12 berlaku pada unit kerja dan tingkatan jabatan yang sama; HR-SOP-12 dan HR-SOP-11 sama-sama mengirim pemindahan ke unit, divisi, atau lokasi lain ke HR-SOP-13. Dokumen ini memakai rumusan HR-SOP-12 (scope, definisi Tingkatan jabatan) dan menambahkan divisi dan lokasi operasional sebagai syarat rotasi, sesuai pengecualian di HR-SOP-12. Tiga selisih tersisa untuk orkestrator: (a) definisi Unit kerja di HR-SOP-12 menaruh sub divisi NOC, SOC, serta SD dan PM dalam satu unit Operation (USULAN), sedangkan kriteria baris ini menyebut divisi dan dokumen ini memperlakukan pindah antar sub divisi sebagai mutasi. HR-SOP-12 perlu memuat pindah antar sub divisi di pengecualiannya; (b) HR-SOP-12 menulis "Atasan Langsung asal" dan "Atasan Langsung tujuan" dengan huruf kecil, dokumen ini "Atasan Langsung Asal" dan "Atasan Langsung Tujuan"; (c) HR-SOP-11 mengukur penurunan dengan "tingkat posisi" (grading, belum ditetapkan), dokumen ini mengalihkan penurunan lewat tingkatan jabatan HR-SOP-12 | Aziz (lewat orkestrator) |
+| O1 | Batas rotasi dan mutasi sudah memakai kalimat yang sama dengan HR-SOP-12 (bagian 2, sweep). Dua selisih tersisa untuk orkestrator di HR-SOP-12: (a) definisi Unit kerja HR-SOP-12 menaruh NOC, SOC, serta SD dan PM dalam satu unit Operation (USULAN); sesuai kalimat batas, pindah menetap antar sub divisi adalah mutasi dan pindah sementara yang kembali ke tugas semula adalah rotasi, sehingga kalimat itu perlu dihapus atau disesuaikan di HR-SOP-12; (b) HR-SOP-11 mengukur penurunan dengan tingkat posisi (grading, belum ditetapkan), sedangkan dokumen ini mengalihkan penurunan lewat tingkatan jabatan HR-SOP-12. Penulisan "Atasan Langsung Asal" dan "Atasan Langsung Tujuan" dengan huruf kapital di HR-SOP-12 diminta orkestrator dan tidak diubah di sini | Aziz (lewat orkestrator) |
 | O2 | Daftar lokasi operasional SINUX selain lokasi kerja utama tidak ada di sumber. Dokumen tidak membuatnya | Aziz, owner |
 | O3 | Mutasi atas permintaan karyawan dan sebagai sanksi disiplin dikecualikan (U4). Perlu keputusan apakah keduanya butuh SOP sendiri | Aziz |
 | O4 | Peraturan Perusahaan lengkap tidak dibaca. Bila memuat ketentuan mutasi, tempat kerja, atau persetujuan karyawan, ketentuan itu harus didahulukan dari butir 4.1 sampai 4.7 | Aziz, Legal |
@@ -171,6 +175,7 @@ Hitungan: 56 kemunculan "(USULAN)" menurut lint (satu butir bisa muncul di beber
 | O8 | Nama jabatan di dokumen ini mengikuti HR-ORG-01 (HR Manager). Sumber menulis HR Lead. Konfirmasi Aziz atau owner (data_conflicts) | Aziz, owner |
 | O10 | Pengajuan perubahan hak akses dan pencabutan akses lama: SNX-ISMS-SOP-02 tidak membedakan atasan asal dan tujuan. Dokumen ini menunjuk Atasan Langsung Tujuan dan batas 1 hari kerja (U14); pemilik ISMS-SOP-02 perlu mengonfirmasi | Fani |
 | O11 | Penanggap alternatif (U17) hanya dirumuskan untuk kasus pengusul sama dengan penanggap. Bila Atasan Langsung Asal berlabel menunggu konfirmasi atau tanpa pemegang, berlaku bagian 9 baris 4 | Aziz |
+| O12 | Perpindahan sementara ke unit, sub divisi, atau lokasi lain yang tidak termasuk rotasi (U21) tidak diatur HR-SOP-12 maupun dokumen ini. Perlu keputusan apakah butuh SOP atau butir sendiri | Aziz |
 | O9 | modifiedTime sumber dikutip dari prompt tugas dan tidak diukur ulang di sesi ini | Orkestrator |
 
 ## 7. Jawaban dua pertanyaan penutup
@@ -192,3 +197,15 @@ Adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Sistem: Service Hub (GLPI) dari ISMS-SOP-02; Google Drive (folder Departemen HR) berlabel USULAN. Sistem HR atau HRIS tidak disebut karena sumber hanya menyebut kompetensi "HRIS", bukan sistem yang dipakai.
 - Lokasi kerja utama: dirujuk ke HR-JA-01 butir 4.10 tanpa menyalin alamatnya; alamat itu berasal dari Peraturan Perusahaan lewat HR-JA-01 dan tidak diukur ulang di sini.
 - Pemisahan peran, wewenang jabatan asal berakhir, konfirmasi karyawan, serah terima pekerjaan, dan pengecualian bagian 9: rancangan penyusun, semua berlabel (USULAN) per butir atau lewat intro 6.1.
+
+## Sweep
+
+Putaran sweep (penghalusan sesudah DONE), instruksi /tmp/claude-0/prompts/HR-SOP-13.sweep.txt. Tiga butir diubah di specs/HR-SOP-13.json. Berkas lain tidak disentuh.
+
+| Butir | Sebelum | Sesudah |
+|---|---|---|
+| 1. Atasan Langsung Asal sama dengan Tujuan (mutasi lokasi saja), aturan pengganti di 4.3 | Aturan sudah masuk di putaran 1: butir 4.3 menunjuk Penanggap alternatif, bagian 9 baris 3, definisi, dan tabel peran. Kasus Direktur Utama sebagai Atasan Langsung Tujuan belum ditangani | Bagian 9 baris 3 ditambah: "Bila jabatan itu Direktur Utama, Direktur Utama menanggapi sendiri usulan itu (USULAN)" (U22). Butir 4.3 dan baris lain tidak berubah |
+| 2. Definisi Divisi dan rotasi bertabrakan dengan HR-SOP-12 | Divisi: "Divisi Operation beserta sub divisinya, yaitu NOC, SOC, serta SD dan PM. Susunan ini mengikuti SNX-HR-ORG-01, yang menandainya (USULAN)." Pengecualian rotasi: "perpindahan tugas atau fungsi pada unit kerja, divisi, lokasi operasional, dan tingkatan jabatan yang sama (SNX-HR-SOP-12)". Definisi Mutasi: "Pemindahan karyawan ke ..." | Divisi: "Sub divisi Operation, yaitu NOC, SOC, serta SD dan PM. SNX-HR-ORG-01 menyatakan susunan ini berstatus (USULAN)." Pengecualian rotasi: "rotasi menurut batas di bawah (SNX-HR-SOP-12); perpindahan sementara di luar batas rotasi (USULAN)". Mutasi: "Pemindahan menetap karyawan ke ...". Tujuan dan scope paragraf 1 memakai "secara menetap". Dokumen terkait SNX-HR-SOP-12: "perpindahan sementara dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula" |
+| 3. Kalimat batas rotasi dan mutasi yang seragam | Tidak ada kalimat batas; rumusan batas berbeda dari HR-SOP-12 | Bagian 2 paragraf 3 memuat kalimat dari orkestrator verbatim: "Batas rotasi dan mutasi: perpindahan sementara untuk penyegaran atau pengembangan keterampilan, dalam unit kerja dan tingkatan jabatan yang sama, dengan karyawan kembali ke tugas semula sesudah masa rotasi, adalah rotasi (SNX-HR-SOP-12). Perpindahan menetap karena kebutuhan organisasi ke unit kerja, sub divisi Operation (NOC, SOC, serta SD dan PM), atau lokasi operasional lain adalah mutasi (SNX-HR-SOP-13) (USULAN)." Nama peran sudah berkapital di dokumen ini; penetap keputusan tetap Direktur Utama |
+
+Catatan: pindah antar sub divisi NOC ke SOC kini terbaca satu arah menurut kalimat batas: menetap adalah mutasi, sementara dan kembali ke tugas semula adalah rotasi. Temuan pemeriksa lain yang tidak masuk daftar sweep (kalimat "ukuran ini (USULAN)" tanpa predikat, sinonim "setelah" dan "sesudah", retensi rekaman, empat baris rekaman identik) tidak diubah dan tetap terbuka untuk orkestrator.
