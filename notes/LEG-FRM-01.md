@@ -142,7 +142,7 @@ Pemetaan peran ke SNX-HR-ORG-01: Staff Legal dan Line Manager Legal ada di matri
 | 15 | Folder Google Drive departemen Legal sebagai lokasi formulir terisi dan lokasi kontrak (mengikuti SNX-LEG-SOP-01 butir 4.24) | Legal |
 | 16 | PIC Internal setara PIC Bisnis, dan Unit Kerja Pemohon setara Pemohon, di SNX-LEG-SOP-02 | Legal |
 | 17 | Pengecualian lingkup: kontrak vendor dan pemasok ke SNX-LEG-FRM-02; tinjauan pelindungan data yang menyeluruh ke SNX-LEG-FRM-03; padanan formulir ini dengan Contract Review Checklist di SNX-LEG-SOP-02 | Legal |
-| 18 | Pemetaan Staff Legal dan Line Manager Legal ke JA-09 dan JA-08 (K-13 di SNX-HR-ORG-01) | Aziz |
+| 18 | Pemetaan Staff Legal dan Line Manager Legal ke JA-09 dan JA-08 (K-13 di SNX-HR-ORG-01) | Aziz; ditutup W9: owner 15 Okt memutus pemetaan Legal, label USULAN dan menunggu konfirmasi dihapus |
 | 19 | Enam klausul ISO: 9001 8.2.3, 8.2.4, 7.5.3; 27001 Annex A 5.31, 5.32, 5.34 (satu label "USULAN, perlu konfirmasi konsultan") | owner (konfirmasi konsultan) |
 | 20 | Definisi Risiko hukum dan Risiko komersial di Istilah | Legal |
 | 21 | Definisi "Klien akhir" sebagai pelanggan dari pelanggan SINUX (sumber SOP memakai kata itu tanpa definisi), dan "Klien" sebagai sebutan lain pelanggan pada field Nama Klien | Legal |
@@ -246,6 +246,7 @@ Hasil uji akhir sweep (bukti mentah: /tmp/pen-LEG-FRM-01/render.out.txt, /tmp/pe
 | Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Dokumen Terkait, baris SNX-HR-ORG-01 | (JA-08 dan JA-09), menunggu konfirmasi (K-13) (USULAN). | (JA-08 dan JA-09). |
+| R2: USULAN 18, notes | baris tanpa penanda W9 | ditambah "ditutup W9" di baris itu (alasan satu baris) |
 
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.

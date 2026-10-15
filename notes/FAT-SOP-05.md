@@ -148,7 +148,7 @@ Jumlah: 17 USULAN. Di dokumen ada 27 penanda "(USULAN)" yang dihitung lint (sesu
 
 | # | Open item | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Finance Lead dan Finance Staff belum dipetakan ke jabatan atau orang (HR-ORG-01 K-13; jabatan terdekat JA-10 Finance dan JA-11 Accounting & Tax, tidak berlevel). Tanpa pemetaan, auditor tidak bisa menunjuk siapa memegang peran | owner |
+| 1 | Finance Lead dan Finance Staff belum dipetakan ke jabatan atau orang (HR-ORG-01 K-13; jabatan terdekat JA-10 Finance dan JA-11 Accounting & Tax, tidak berlevel). Tanpa pemetaan, auditor tidak bisa menunjuk siapa memegang peran; ditutup W9: dipetakan lewat definisi bagian 3 sebagai USULAN sampai jabatan Finance Lead terisi | owner |
 | 2 | Pengajuan pembayaran: sumber tidak menyebut penerima pengajuan, siapa yang melepas dana, siapa yang menyetor, batas wewenang approval, maupun form yang dipakai. Dokumen memakai Finance Lead untuk menyetujui dan mengajukan, Finance Staff untuk menyetor (USULAN) | FAT dan Samuel |
 | 3 | Tenggat statutori setor dan lapor per jenis pajak tidak ada di sumber maupun di dokumen ini; tidak ada penanganan untuk keterlambatan, denda, atau SPT pembetulan. Tahap 1 hari tidak menjamin tenggat peraturan | FAT |
 | 4 | Arti "1 day": hari kerja atau hari kalender, titik mulai (sesudah tahap sebelumnya selesai atau sejak dokumen diterima), dan apakah 1 hari masuk akal untuk SPT Tahunan PPh Badan, laba fiskal, dan PPh Pasal 21 akhir tahun | FAT |
@@ -269,6 +269,7 @@ Round perbaikan ISO-W9 (LEAD G-3 A6). Fakta, angka, dan struktur lain tetap. Ruj
 |---|---|---|
 | Blok Reviewed (meta.approval.reviewed) | Finance Lead | Amirull Yusuf Zulkarnain / Direktur |
 | Bagian 3 Definisi | Tanpa istilah Finance Lead dan Finance Staff | Dua baris baru, isi persis LEAD G-3 A6 (lihat teks di FAT-SOP-01 W9). Tidak ada kalimat pemetaan lain yang perlu diselaraskan |
+| R2: Open item 1 (baris notes) | Tanpa catatan W9 di baris | Ditambah "ditutup W9: dipetakan lewat definisi bagian 3 sebagai USULAN sampai jabatan Finance Lead terisi" |
 
 Open item:
 

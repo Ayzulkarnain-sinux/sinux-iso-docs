@@ -96,7 +96,7 @@ Pemetaan peran sumber ke nama peran HR-ORG-01 (specs/HR-ORG-01.json: Daftar Jaba
 
 | Peran di sumber | Nama di dokumen | Dasar |
 |---|---|---|
-| Line Manager Legal | Line Manager Legal | Matriks Peran HR-ORG-01: Legal & Compliance (JA-08), "(USULAN), menunggu konfirmasi (K-13)" |
+| Line Manager Legal | Line Manager Legal | Matriks Peran HR-ORG-01: Legal & Compliance (JA-08), "(USULAN), menunggu konfirmasi (K-13)"; diubah W9: pemetaan diputus owner (G-3 A5), label dan menunggu konfirmasi dihapus dari dokumen |
 | Legal Staff | Staff Legal | Matriks Peran HR-ORG-01: JA-09. Baris sumber kosong; tugas diambil dari uraian JA-09 (kutipan di bagian 2) |
 | Pemilik Dokumen/PIC | Tidak dibawa sebagai peran | Baris sumber kosong dan istilahnya tidak didefinisikan. Fungsi yang masuk akal (menetapkan klasifikasi dan akses) sudah tertulis milik Line Manager Legal di baris pertama. Open items 2 |
 | Unit IT/Keamanan Informasi | VP Tech Operation and Services | Jabatan terdekat: Matriks Peran HR-ORG-01 menaruh kontrol keamanan, akses, backup, dan perubahan teknis pada JA-04. Baris sumber kosong; satu-satunya tugas yang dibawa adalah wipe atau penghancuran media (SNX-ISMS-SOP-04), karena sumber tidak menyebut kontrol teknis lain. Pemetaan (USULAN) |
@@ -167,7 +167,7 @@ SINUX_Job_Analysis_2026 (1m91..., audit hr bagian 5):
 
 ## USULAN
 
-Lint menghitung 42 kemunculan "(USULAN)" di dokumen, termasuk baris definisi label, baris tabel Rekaman, dan label klausul. Jumlah butir keputusan: 24 (butir 24 ditambah saat sweep).
+Lint menghitung 42 kemunculan "(USULAN)" di dokumen, termasuk baris definisi label, baris tabel Rekaman, dan label klausul. Jumlah butir keputusan: 24 (butir 24 ditambah saat sweep); diubah W9: butir 22 ditutup, tersisa 23 butir terbuka.
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
@@ -192,7 +192,7 @@ Lint menghitung 42 kemunculan "(USULAN)" di dokumen, termasuk baris definisi lab
 | 19 | Pelapor pelanggaran penanganan dokumen RESTRICTED (Internal) atau SECRET = Staff Legal atau Line Manager Legal yang menemukannya | Pengecualian baris 7 | Fani (pemilik SNX-ISMS-SOP-01), bersama Legal |
 | 20 | Pelaku langkah dan pemilik rekaman ditetapkan dari pembagian peran dan SNX-HR-JA-01 | Butir 4.26; tabel Rekaman | Legal |
 | 21 | Ukuran evaluasi pelaksanaan SOP diadaptasi dari ukuran review kontrak: register dokumen legal dan ketepatan waktu pengarsipan | 6.8 langkah 1 | Legal |
-| 22 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 (K-13) | Bagian 5 | owner atau Aziz (K-13 HR-ORG-01) |
+| 22 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 (K-13) | Bagian 5 | owner atau Aziz (K-13 HR-ORG-01); ditutup W9: pemetaan diputus owner (G-3 A5), label USULAN dihapus dari dokumen |
 | 23 | Daftar klausul ISO 9001:2015 dan ISO/IEC 27001:2022 di bagian 11 | Acuan standar | konsultan |
 | 24 | Padanan istilah "dokumen rahasia" (sumber: "Dokumen rahasia tidak dikirim melalui kanal pribadi.") dengan RESTRICTED (Internal) dan SECRET | Butir 4.17 | Fani (pemilik skema SNX-ISMS-PRO-01), bersama Legal |
 
@@ -212,7 +212,7 @@ Lint menghitung 42 kemunculan "(USULAN)" di dokumen, termasuk baris definisi lab
 | 10 | SNX-LEG-REG-04 (baris 39, W7) disusun kemudian; kolomnya harus selaras dengan butir 4.2 SOP ini (ID register, kategori, judul, pihak, nomor versi, status, tingkat klasifikasi, lokasi simpan, tanggal berlaku, tanggal berakhir, tanggal pemicu, tanggal akhir masa retensi, penanda Legal Hold) | orkestrator dan Legal |
 | 11 | SNX-FAT-SOP-04 (W4) disusun paralel dan dirujuk sebagai batas scope. Periksa pembagian dokumen yang memuat keduanya, misalnya PKS yang menjadi dasar invoice (salinan di arsip FAT 10 tahun) | orkestrator |
 | 12 | Tracked change dan teks tersembunyi di docx sumber tidak diuji; download_file_content tidak dipakai. Checklist baris 38 tidak punya tautan ke sumber utama (link null) | orkestrator atau owner |
-| 13 | Nama peran Line Manager Legal dan Staff Legal menunggu K-13 di SNX-HR-ORG-01; bila nama peran berubah, render ulang | owner atau Aziz [ditutup W9] |
+| 13 | Nama peran Line Manager Legal dan Staff Legal menunggu K-13 di SNX-HR-ORG-01; bila nama peran berubah, render ulang | owner atau Aziz; ditutup W9: pemetaan JA-08 dan JA-09 diputus owner (G-3 A5), nama peran tidak berubah |
 | 14 | process_owner "Departemen Legal" mengikuti sumber, sedangkan SNX-LEG-SOP-01 dan 02 memakai "Line Manager Legal". Pilih satu bentuk untuk ketiga SOP Legal bila diinginkan | owner |
 | 15 | Hal yang tidak diatur karena sumber diam: dokumen asli hilang atau rusak, salinan dokumen legal di departemen lain saat Legal Hold, lokasi bukti penandatanganan elektronik (SNX-LEG-SOP-02 menyebut menyimpannya) | Legal |
 | 16 | Kalimat perintah di sumber yang ditujukan ke pembaca otomatis: nihil | tidak ada |

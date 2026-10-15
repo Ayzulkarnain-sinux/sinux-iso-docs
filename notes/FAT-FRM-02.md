@@ -169,3 +169,5 @@ Uji: `python3 -I tools/xlsx_patch.py /tmp/src/FAT-FRM-02.xlsx specs/FAT-FRM-02.p
 Sel B16 dan B23 tidak dibungkus teks; teks satu baris meluber ke kolom C sampai E yang kosong.
 
 Open item: 2 diubah W9 (definisi peran ditambahkan, pemetaan tetap menunggu owner). Rujukan silang diubah: nihil.
+
+R2: tidak ada perubahan spec atau sel di FAT-FRM-02. Kebersihan notes sudah terpenuhi: satu-satunya open item yang berubah di W9 (item 2) sudah bertanda "diubah W9" di barisnya; USULAN tidak ada yang ditutup atau diubah. Rujukan silang diubah: nihil.

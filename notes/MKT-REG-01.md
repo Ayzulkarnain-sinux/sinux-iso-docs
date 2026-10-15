@@ -124,16 +124,16 @@ Perintah: `grep -n "Marketing Content, Material & " context/audit/*.md` memberi 
 
 ## USULAN
 
-Spec memuat 31 kemunculan persis "(USULAN)" (satu di antaranya baris definisi label itu sendiri) dan satu label "(USULAN, perlu konfirmasi konsultan)" pada Acuan ISO. Dikelompokkan jadi 20 butir keputusan. Sesuai putaran perbaikan 1, label tidak dipasang pada keberadaan Tabel 4 dan Tabel 5 (dasarnya judul baris 57 dan Description baris 58); label ada pada pembagian cakupan dan butir yang tidak punya dasar tertulis.
+Hitungan di paragraf ini dari sebelum W9 (diubah W9: sesudah W9 lint menghitung 25 butir USULAN). Spec memuat 31 kemunculan persis "(USULAN)" (satu di antaranya baris definisi label itu sendiri) dan satu label "(USULAN, perlu konfirmasi konsultan)" pada Acuan ISO. Dikelompokkan jadi 20 butir keputusan. Sesuai putaran perbaikan 1, label tidak dipasang pada keberadaan Tabel 4 dan Tabel 5 (dasarnya judul baris 57 dan Description baris 58); label ada pada pembagian cakupan dan butir yang tidak punya dasar tertulis.
 
 | # | Butir USULAN | Di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
 | 1 | Pembagian kolom ke Tabel 1 sampai Tabel 5 dan 10 baris tersedia (field-nya dari baris 57 dan 58; pengelompokannya susunan saya) | Isi Register | owner |
-| 2 | Pembagian cakupan: register ini memuat semua field baris 57 dan 58; SNX-MKT-REG-02 menjadi register pelaksanaan campaign dan aktivitas yang merujuk tiap materi ke ID persetujuan di register ini (keputusan orkestrator) | Ruang Lingkup (baris pengecualian); Dokumen Terkait; Isi Register (kolom ID) | owner |
+| 2 | Pembagian cakupan: register ini memuat semua field baris 57 dan 58; SNX-MKT-REG-02 menjadi register pelaksanaan campaign dan aktivitas yang merujuk tiap materi ke ID persetujuan di register ini (keputusan orkestrator) | Ruang Lingkup (baris pengecualian); Dokumen Terkait; Isi Register (kolom ID) | owner ; diubah W9: A8 diputus owner; REG-02 hanya mencatat pelaksanaan Aktivitas dan memuat ID Persetujuan Materi dari register ini, label batas dihapus |
 | 3 | Satu baris per versi per materi per channel, dengan satu ID persetujuan; Tabel 1 sampai Tabel 3 memakai ID sama, Tabel 4 dan Tabel 5 memakai nomor klaim sama | Butir 4.1 | owner |
 | 4 | Brand & Marketing sebagai pencatat dan PIC bawaan; VP Commercial dapat menunjuk PIC lain | Butir 4.2, 4.3 | owner |
 | 5 | VP Commercial sebagai Approver semua materi dan Reviewer bawaan | Butir 4.4 | owner dan Samuel |
-| 6 | VP Commercial sebagai Pemilik informasi atas materi; Pemilik informasi menurunkan klasifikasi INTERNAL menjadi PUBLIC saat Approver menyetujui versi, dan penurunan tercatat di bukti persetujuan yang sama | Butir 4.5; tabel Peran; Definisi; Rekaman; Acuan ISO | Fani |
+| 6 | VP Commercial sebagai Pemilik informasi atas materi; Pemilik informasi menurunkan klasifikasi INTERNAL menjadi PUBLIC saat Approver menyetujui versi, dan penurunan tercatat di bukti persetujuan yang sama | Butir 4.5; tabel Peran; Definisi; Rekaman; Acuan ISO | Fani ; diubah W9: Pemilik informasi mencatat penurunan klasifikasi di SNX-ISMS-REG-01 mengikuti SNX-ISMS-PRO-01, bukan di bukti persetujuan; register ini hanya merujuk |
 | 7 | Persetujuan tertulis; persetujuan lisan tidak dihitung | Butir 4.6 | owner |
 | 8 | Perubahan isi memicu versi baru dan baris baru; baris lama tidak dihapus | Butir 4.8 | owner |
 | 9 | Status Ditarik; Approver memutuskan penarikan; Brand & Marketing menarik materi | Butir 4.9; Status Publikasi; Tabel 3 | owner |
@@ -143,7 +143,7 @@ Spec memuat 31 kemunculan persis "(USULAN)" (satu di antaranya baris definisi la
 | 13 | Approver tidak menyetujui versi yang memuat klaim tanpa sumber atau bukti pendukung, klaim tanpa hasil verifikasi, atau klaim yang ditolak | Butir 4.13 | owner |
 | 14 | Bukti persetujuan dan bukti verifikasi disimpan di lokasi yang sama dengan file final; Google Drive folder departemen Commercial; pemilik rekaman | Butir 4.14; Rekaman | owner |
 | 15 | Materi yang sudah terbit sebelum register berlaku dicatat sebagai Terbit, ditinjau Approver, Tanggal Persetujuan memakai tanggal peninjauan tanpa tanggal mundur, dikecualikan dari batas butir 4.7 | Butir 4.15 | owner dan Samuel |
-| 16 | Batas cakupan dokumen Marketing (keputusan orkestrator): SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja; SNX-MKT-REG-01 (register ini) = persetujuan materi eksternal dan validasi klaim; SNX-MKT-REG-02 = pelaksanaan campaign dan aktivitas yang menautkan materi ke ID persetujuan di register ini; SNX-MKT-REG-03 = hasil lead dan serah terima ke Sales. Pengecualian lain: proposal dan quotation per customer (SNX-COM-SOP-02), komunikasi insiden (SNX-OPS-SOP-04) | Ruang Lingkup; Dokumen Terkait | owner |
+| 16 | Batas cakupan dokumen Marketing (keputusan orkestrator): SNX-MKT-RPT-01 = rencana pemasaran dan tinjauan kinerja; SNX-MKT-REG-01 (register ini) = persetujuan materi eksternal dan validasi klaim; SNX-MKT-REG-02 = pelaksanaan campaign dan aktivitas yang menautkan materi ke ID persetujuan di register ini; SNX-MKT-REG-03 = hasil lead dan serah terima ke Sales. Pengecualian lain: proposal dan quotation per customer (SNX-COM-SOP-02), komunikasi insiden (SNX-OPS-SOP-04) | Ruang Lingkup; Dokumen Terkait | owner ; ditutup W9: batas dokumen Marketing sudah diputus owner (A8), label USULAN pada batas dihapus; REG-01 menjadi satu-satunya register materi, konten, dan persetujuan klaim |
 | 17 | Retensi semua rekaman "Belum ditetapkan" dan lokasi di Rekaman | Rekaman | owner dan Legal |
 | 18 | Pembagian tugas pada tabel Peran | Peran | owner |
 | 19 | VP Commercial meninjau register setiap tahun | Kesimpulan | owner |
@@ -227,3 +227,7 @@ Perbaikan putaran 1 ISO-W9 (pemeriksa buta, pemblokir rujukan butir):
 | Dokumen Terkait baris SNX-ISMS-REG-01 | "menurut SNX-ISMS-PRO-01 (butir 4.5)" terbaca sebagai PRO-01 butir 4.5 (Pelabelan) | "menurut SNX-ISMS-PRO-01 (butir 4.5 register ini)", merujuk butir 4.5 dokumen ini |
 
 Open item: tidak ada yang ditutup atau diubah pada putaran ini.
+
+### ISO-W9 R2
+
+R2 tidak mengubah spec MKT-REG-01 (butir R2 1 sampai 3 tidak menyentuh dokumen ini). Perubahan hanya pada notes: baris USULAN dan Open items yang ditutup atau diubah W9 kini memuat "ditutup W9" atau "diubah W9" di barisnya sendiri (USULAN 2, 6, 16; open item 1, 10, 11 sudah).

@@ -146,7 +146,7 @@ Jumlah: 26 butir (U26 ditambah saat sweep). Penanda "(USULAN" di spec: 34 kemunc
 | U19 | Daftar peraturan pelaksana dicatat di SNX-LEG-REG-03 | Bagian 3 butir 3; Dokumen Terkait | Legal |
 | U20 | SNX-LEG-SOP-01 prosedur 6.7 memuat hasil tinjauan yang dicatat di form ini | Dokumen Terkait | Legal |
 | U21 | SNX-LEG-FRM-01 dan SNX-LEG-FRM-02 sebagai telaah lengkap kontrak | Bagian 1; Dokumen Terkait | Legal |
-| U22 | Pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance JA-08 dan JA-09 (butir K-13 di SNX-HR-ORG-01) | Peran (paragraf penutup); Dokumen Terkait | owner |
+| U22 | Pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance JA-08 dan JA-09 (butir K-13 di SNX-HR-ORG-01) | Peran (paragraf penutup); Dokumen Terkait | owner; ditutup W9: owner 15 Okt memutus pemetaan Legal, label USULAN dan menunggu konfirmasi dihapus |
 | U23 | Peran penyetuju lembar tinjauan; Line Manager Legal memutuskannya | Peran | Legal (Line Manager Legal) |
 | U24 | Bukti yang diperiksa tetap di sistem asal dengan pemilik PIC Unit Kerja | Rekaman | Legal |
 | U25 | Daftar klausul ISO 9001:2015 dan ISO/IEC 27001:2022 | Bagian 12 | owner (konfirmasi lewat konsultan) |
@@ -163,7 +163,7 @@ Jumlah: 26 butir (U26 ditambah saat sweep). Penanda "(USULAN" di spec: 34 kemunc
 | 5 | Periode retensi dokumen pelindungan data (Kategori 7 di SNX-LEG-SOP-03, usulan 5 tahun) belum ditetapkan dan belum diperiksa terhadap UU No. 27 Tahun 2022. Kategori mana yang berlaku bagi lembar tinjauan (Kategori 4 atau 7) belum diputus (U26). Kolom Retensi di bagian 12 tertulis "Belum ditetapkan" | Legal |
 | 6 | Tiga dokumen Legal memakai tiga kosakata status berbeda (audit butir 13). Form ini memakai lima nilai sumber; penyelarasan antardokumen belum diputus | Legal |
 | 7 | Jalur penerimaan permintaan hak subjek data (F.1) tidak ditemukan di dokumen SINUX yang dibaca. Kriteria F.1 menanyakan jalur yang SINUX tetapkan; bila belum ada, aspek itu akan berstatus Perlu Perbaikan | Legal |
-| 8 | Keterkaitan form ini ke SoA (kontrol 5.31 dan 5.34, status "Perlu keputusan", pemilik ISMS Coordinator menurut audit) adalah inferensi audit. SoA di tangan konsultan; form ini belum dirujuk SoA. Jabatan ISMS Coordinator belum ditetapkan (SNX-HR-ORG-01 butir K-13) | owner |
+| 8 | Keterkaitan form ini ke SoA (kontrol 5.31 dan 5.34, status "Perlu keputusan", pemilik ISMS Coordinator menurut audit) adalah inferensi audit. SoA di tangan konsultan; form ini belum dirujuk SoA. Jabatan ISMS Coordinator belum ditetapkan (SNX-HR-ORG-01 butir K-13) | owner; diubah W9: rujukan K-13 pada jabatan ISMS Coordinator tidak lagi berlaku untuk peran Legal; K-13 kini milik peran Finance |
 | 9 | Kuesioner Keamanan butir 9 dan 10 dikutip dari salinan audit, bukan dari xlsx SNX-ISMS-FRM-03 di Drive | verifikator |
 | 10 | Titik awal "sejak diketahui" untuk 3 x 24 jam belum didefinisikan di SNX-ISMS-SOP-01 (form SNX-ISMS-FRM-02 menghitung dari waktu deteksi menurut notes/ISMS-SOP-01.md); F.3 mengikuti kata SNX-ISMS-SOP-01 | Legal |
 | 11 | Tabel temuan (bagian 9) tidak punya kolom status penyelesaian karena sumber tidak punya. Hubungan temuan ke SNX-LEG-RPT-01 (kriteria baris 46: temuan, tindakan perbaikan, penanggung jawab, status penyelesaian) belum ditetapkan | Legal |
@@ -241,6 +241,8 @@ Tidak ada kredensial, kata sandi, PIN, atau token di spec atau notes ini.
 | Blok Approval, Reviewed By | Line Manager Legal | Ester Febe Utomo / Line Manager Legal |
 | Bagian Peran, paragraf penutup | ... (JA-08, JA-09) di SNX-HR-ORG-01 (USULAN). | ... (JA-08, JA-09) di SNX-HR-ORG-01. |
 | Dokumen Terkait, baris SNX-HR-ORG-01 | Butir K-13 memuat pemetaan peran Legal ke jabatan. | Line Manager Legal dipetakan ke JA-08 dan Staff Legal ke JA-09. (Rujukan K-13 dihapus: K-13 kini milik peran Finance, bukan Legal.) |
+| R2: USULAN U22, notes | baris tanpa penanda W9 | ditambah "ditutup W9" di baris itu (alasan satu baris) |
+| R2: Open item 8, notes | baris tanpa penanda W9 | ditambah "diubah W9" di baris itu (alasan satu baris) |
 
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.

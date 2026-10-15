@@ -106,7 +106,7 @@ Dokumen memuat 31 kemunculan label "(USULAN)" ditambah satu label "(USULAN, perl
 
 | # | Butir USULAN | Pemutus yang disarankan |
 |---|---|---|
-| 1 | Line Manager Legal = Legal & Compliance (JA-08) dan Staff Legal = JA-09 (mengikuti K-13 di SNX-HR-ORG-01) | Legal |
+| 1 | Line Manager Legal = Legal & Compliance (JA-08) dan Staff Legal = JA-09 (mengikuti K-13 di SNX-HR-ORG-01) | Legal; ditutup W9: owner 15 Okt memutus pemetaan Legal, label USULAN dan menunggu konfirmasi dihapus |
 | 2 | Staff Legal sebagai Pelaksana Pemantauan | Legal |
 | 3 | Line Manager Legal sebagai pemilik dokumen dan pemeriksa laporan terisi (Ketentuan butir 11) | Legal |
 | 4 | Frekuensi laporan satu per triwulan, selaras dengan memo kepatuhan triwulanan di SNX-LEG-SOP-01 prosedur 6.7. Angka triwulan dari sumber lain, diperluas ke laporan ini | Legal |
@@ -147,7 +147,7 @@ Dokumen memuat 31 kemunculan label "(USULAN)" ditambah satu label "(USULAN, perl
 | 3 | Konsistensi skala Kategori Risiko dengan SNX-LEG-REG-02: Legal Risk Register sumbernya memakai empat kategori (skor 1 sampai 25), sedangkan SNX-LEG-SOP-01 butir 4.17 sampai 4.19 dan SNX-LEG-SOP-02 butir 4.8 sampai 4.10 memakai tiga (Tinggi, Sedang, Rendah). Spec LEG-REG-02 belum ada saat dokumen ini disusun; cek silang saat LEG-REG-02 berstatus DRAFTED | Legal |
 | 4 | Frekuensi laporan dan penetapan periode: sumber hanya punya placeholder "[Periode]". Usulan triwulan (USULAN 4) | Legal |
 | 5 | Penomoran laporan per periode dan nomor temuan: sumber menulis "Temuan Nomor : [Nomor Dokumen]" tanpa aturan. Usulan nomor urut per laporan (USULAN 14) | Legal |
-| 6 | Pemetaan peran Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 masih menunggu konfirmasi (K-13 di SNX-HR-ORG-01). Bila peta berubah, bagian Peran ikut berubah | owner |
+| 6 | Pemetaan peran Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 masih menunggu konfirmasi (K-13 di SNX-HR-ORG-01). Bila peta berubah, bagian Peran ikut berubah | owner; ditutup W9: owner 15 Okt memutus pemetaan Legal, tidak lagi menunggu konfirmasi |
 | 7 | Retensi laporan terisi dan bukti belum ditetapkan; periode retensi di SNX-LEG-SOP-03 semuanya USULAN | Legal |
 | 8 | Aturan penerimaan atau eskalasi risiko Sangat Tinggi tidak dimuat: SNX-LEG-REG-02 menyebut "pejabat yang berwenang" tanpa jabatan (matriks DoA belum terbit), sehingga dokumen ini tidak menunjuk pemutus | Samuel |
 | 9 | Kewajiban memakai laporan ini (kapan wajib dibuat, oleh siapa diminta) tidak ada di sumber | Legal |
@@ -213,6 +213,8 @@ Uji sesudah sweep (semua lulus):
 | Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Dokumen Terkait, baris SNX-HR-ORG-01 | ... Staff Legal (USULAN). | ... Staff Legal. |
+| R2: USULAN 1, notes | baris tanpa penanda W9 | ditambah "ditutup W9" di baris itu (alasan satu baris) |
+| R2: Open item 6, notes | baris tanpa penanda W9 | ditambah "ditutup W9" di baris itu (alasan satu baris) |
 
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap. Open item 6: ditutup W9: pemetaan sudah diputus owner.

@@ -88,9 +88,9 @@ Tidak ada angka baru. Angka jam shift berasal dari POL-OPS-001.
 | Ejaan Direktur Utama | Samuel Kristianto Utomo | Samuel Kristanto Utomo; badan dokumen "Direktur Utama"; blok approval "President Director" | data_conflicts |
 | CEO (jobdesk Line Manager Legal) | CEO | Direktur Utama | data_conflicts |
 | Amirull | Direktur | "Direktur (COO)" di tabel Daftar Jabatan (sebutan pertama di badan), sesudahnya "COO" (judul JA-02, atasan langsung, bawahan JA-01) | data_conflicts |
-| Aziz | HR Lead | HR Manager (JA-14, atasan JA-12, process owner) | data_conflicts, premis owner |
+| Aziz | HR Lead | HR Manager (JA-14, atasan JA-12, process owner) | data_conflicts, premis owner; diubah W9: dokumen memakai HR Lead |
 | Prepared, reviewed, approved | HR Lead, Pemegang fungsi terkait, Management / Authorized Director | Sita, Aziz, Samuel | prepared_reviewed HR, approved_by |
-| Laras | atasan langsung Direktur | "COO (garis pelaporan ke Direktur Utama menunggu konfirmasi)" | data_conflicts, kata owner |
+| Laras | atasan langsung Direktur | "COO (garis pelaporan ke Direktur Utama menunggu konfirmasi)" | data_conflicts, kata owner; diubah W9: JA-03 dan JA-04 melapor ke Direktur (COO) dan Direktur Utama, sudah diputus |
 | Aziz, garis ke atas | Direktur atau Management | "COO atau Management (menunggu konfirmasi)" | data_conflicts |
 | Nama Legal | JA-08 Ester Febe Utomo, JA-09 Alif Altamziz | dipertahankan | data_conflicts (selesai) |
 | Tiket | tidak menyebut sistem | Zammad pada JA-04 butir 3, JA-13 butir 1 dan 6 (peran Operation). GLPI tidak dipakai karena tidak ada jabatan generalist yang menyebut tiket | defaults "ticketing" |
@@ -180,7 +180,7 @@ Penjelasan pola: kata "pemahaman karyawan", "pihak terkait", "kepatuhan", "penin
 3. Singkatan (SLA, CRM, TCV, BOM/BOQ, PoC, RCA, ITSM, HRIS, TNA, COGS, AR/AP, PSAK, NDA, PKS, OSS, KBLI, NIB) tidak diuraikan karena tidak ada di sumber dan dokumen ini untuk pembaca internal. Satu-satunya yang diuraikan: APD menjadi "alat pelindung diri (APD)".
 4. Kelompok pendidikan K1 sampai K4 adalah label penyusun. Isinya kalimat sumber. Daftar jabatan tiap kelompok dicek terhadap teks sumber (JA-01 sampai 04 dan 14 = kepemimpinan; JA-05 sampai 12 = D3/S1; JA-13 = SMK/D3/S1 IT; JA-15 = sesuai kebutuhan operasional).
 5. "Management" didefinisikan sebagai unit tempat JA-01 dan JA-02 berada, dari kolom Unit / Departemen sumber (keduanya "Management"). Sumber tidak mendefinisikannya.
-6. Pelaku "HR Manager meninjau dokumen ini 12 bulan sejak tanggal efektif" diambil dari process owner; sumber hanya menulis "Next review". Pelaku "Pemegang fungsi meninjau, Management mengesahkan" dan "Management mengonfirmasi" mengikuti kalimat sumber ("oleh pemegang fungsi dan Management", "dikonfirmasi oleh manajemen").
+6. Pelaku "HR Manager meninjau dokumen ini 12 bulan sejak tanggal efektif" diambil dari process owner; sumber hanya menulis "Next review". Pelaku "Pemegang fungsi meninjau, Management mengesahkan" dan "Management mengonfirmasi" mengikuti kalimat sumber ("oleh pemegang fungsi dan Management", "dikonfirmasi oleh manajemen"). (diubah W9: pelaku kini HR Lead)
 7. Sumber mencatat peran "Reviewed by: Pemegang fungsi terkait / Department Owner". Defaults menetapkan Aziz sebagai reviewer; dokumen mengikuti defaults.
 8. Persyaratan, kompetensi, dan wewenang JA-01 sampai JA-15 disalin tanpa mengubah substansi; tidak ada butir ditambah atau dibuang. JA-14 tetap punya 11 tugas, 7 kompetensi teknis, 7 perilaku, 6 wewenang.
 9. Tabel Peran ISO hanya memuat peran yang dibahas tiga sumber ini. Peran Operation dan ISMS (Head of Operation dan seterusnya) dirujuk ke SNX-HR-ORG-01; isi SNX-HR-ORG-01 belum ada saat dokumen ini disusun (worklist: W1, QUEUED).
@@ -199,7 +199,7 @@ Hitungan sesudah putaran 1: 28 label "(USULAN)" di dokumen (sama dengan warn lin
 | # | Butir | Letak | Pemutus yang disarankan |
 |---|---|---|---|
 | U1 | "Matriks otorisasi" (JA-02, JA-14) dan "DoA" (jobdesk Legal) dibaca sebagai Authority Matrix | Definisi | Legal |
-| U2 | JA-08 = Line Manager Legal, JA-09 = Staff Legal (3 label: daftar jabatan, dua baris matriks peran) | bagian 5, 8 | Legal |
+| U2 | JA-08 = Line Manager Legal, JA-09 = Staff Legal (3 label: daftar jabatan, dua baris matriks peran) | bagian 5, 8 | Legal; ditutup W9: pemetaan Legal sudah diputus, label USULAN dihapus di daftar jabatan dan matriks peran |
 | U3 | Lingkungan dan kondisi fisik kerja per jabatan, dan kekhususan yang ikut dalam kalimat itu (pertemuan atau demo di lokasi pelanggan, event di luar jam kerja, eskalasi insiden di luar jam kerja, penempatan JA-13 pada shift atau jam kantor menurut keputusan COO); 15 label, satu per jabatan | bagian 6, baris Kondisi kerja | Aziz |
 | U10 | Jam masuk dan jam pulang mengikuti Peraturan Perusahaan (jam tidak ada di PP BAB VI) | butir 4.10 | Aziz |
 | U11 | Kualifikasi bagian 7 menggantikan kelompok K2 untuk JA-08 dan JA-09, dan masa pengalaman minimum butir 4.7 mengikuti angka bagian 7 | bagian 7, paragraf pengantar | Legal |
@@ -234,7 +234,7 @@ Hitungan sesudah putaran 1: 28 label "(USULAN)" di dokumen (sama dengan warn lin
 | 18 | Penyebutan Zammad pada JA-04 butir 3 dan JA-13 butir 1 dan 6 mengikuti kata owner 14 Okt (Zammad untuk Ops). Batas "generalist" belum dirinci | owner |
 | 19 | Tanggal efektif, tanda tangan, dan status tetap kosong atau Draft sampai Samuel menandatangani | Samuel |
 | 20 | Pola kerja JA-13 (shift atau jam kantor) dan jam shift 07:00, 15:00, 23:00 WIB menunggu keputusan COO atas POL-OPS-001 (DRAFT v0.1; pemetaan JA-13 ke NOC belum dikonfirmasi di sumber). JA-04 dan JA-02 mengikuti pola 24/7 dan P1 dari draf yang sama | owner |
-| 21 | specs/HR-ORG-01.json (DONE) menulis atasan JA-03, JA-04, JA-05, JA-08, JA-10, JA-11, JA-14 sebagai "Direktur (JA-02)" dan tidak membedakan JA-08 dan JA-09 di daftar jabatan, sedangkan dokumen ini menulis "COO" dan "COO atau Management (menunggu konfirmasi)". Perlu diselaraskan di salah satu dokumen. Saya tidak boleh menulis di spec itu | owner, Aziz |
+| 21 | specs/HR-ORG-01.json (DONE) menulis atasan JA-03, JA-04, JA-05, JA-08, JA-10, JA-11, JA-14 sebagai "Direktur (JA-02)" dan tidak membedakan JA-08 dan JA-09 di daftar jabatan, sedangkan dokumen ini menulis "COO" dan "COO atau Management (menunggu konfirmasi)". Perlu diselaraskan di salah satu dokumen. Saya tidak boleh menulis di spec itu | owner, Aziz; diubah W9: atasan JA-03 dan JA-04 kini selaras di kedua dokumen (Direktur dan Direktur Utama); atasan JA-05, JA-08, JA-10, JA-11, JA-14 tetap terbuka |
 
 ## Penanganan temuan nonblocking putaran 1 (qa/HR-JA-01.verify.r1.json)
 
@@ -302,6 +302,7 @@ Putaran perbaikan ISO-W9 (LEAD G-2 dan G-3, config/defaults.json v22). Hanya but
 | A5 Bagian 5 paragraf sesudah tabel jabatan | Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal (USULAN) berasal dari HR-JA-001, ... | Padanan JA-08 dengan Line Manager Legal dan JA-09 dengan Staff Legal berasal dari HR-JA-001, ... (label USULAN dihapus; putaran 1, selaras defaults.json v22 dan G-3 A5) |
 | A6 Matriks Finance Lead Jabatan | Belum dipetakan | Belum terisi; dijalankan Direktur (COO) sampai terisi (USULAN) |
 | A6 Matriks Finance Staff | Belum dipetakan \| Alasan sama dengan Finance Lead. | JA-10 dan JA-11 (USULAN) \| Pemegang JA-10 dan JA-11 menjalankan peran pelaksana. |
+| R2 notes kebersihan | Baris U2, open item 21, dan dua baris bagian 3 (Aziz, Laras) serta asumsi 6 belum bertanda W9 | Ditandai "ditutup W9" atau "diubah W9" di baris itu sendiri; tidak ada baris dihapus |
 
 Open item yang ditutup atau diubah (nomor tabel Open items di atas):
 
@@ -318,3 +319,4 @@ Catatan pelaksana, tidak diubah:
 - Atasan JA-03 dan JA-04 ditulis "Direktur (COO) dan Direktur Utama" mengikuti penulisan Direktur (COO) di tabel Definisi.
 - Blok Prepared dan Reviewed tetap milik HR (Sita sebagai Prepared, Aziz Priyo Widakdo / HR Lead sebagai Reviewed).
 - Uji: render_sop, lint_doc generic (pass), validate.py (PASSED), blankscan (ok), w9diff dibaca.
+- R2: spec tidak berubah untuk dokumen ini; hanya baris notes basi ditandai di tempat.

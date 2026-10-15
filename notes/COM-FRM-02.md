@@ -130,7 +130,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 | U-08 | Service Delivery Manager menyebut jabatan tim pelaksana pemenuh tiap komitmen; Business Development mencatat hasil pembahasan di Tabel 11 | Butir 4.10; Peran | Fani |
 | U-09 | Tanda tangan tiga peran di Tabel 12, dengan tanda tangan Service Delivery Manager sebagai tanda terima untuk diperiksa dan bukan keputusan gate G1 | Butir 4.13; Tabel 12 | owner dan Fani |
 | U-10 | Pemetaan peran: Business Development memegang tugas Sales dan Sales Executive; "Commercial" di POL-OPS-001 bagian 8 ketentuan 3 dibaca VP Commercial; VP Commercial menyerahkan paket (butir 4.19 SNX-COM-SOP-01 berstatus USULAN di sana) | Peran; butir 4.11 | owner |
-| U-11 | COO sebagai pemilik dokumen (formulir kosong; Process Owner "Direktur"), peninjau tahunan, dan penetap struktur kolom | Identity; Peran; butir 4.15; Kesimpulan | owner |
+| U-11 | COO sebagai pemilik dokumen (formulir kosong; Process Owner "Direktur"), peninjau tahunan, dan penetap struktur kolom; diubah W9: COO tidak lagi pemilik dokumen atau peninjau tahunan, hanya penetap struktur kolom; pemilik dan peninjau VP Commercial (A7) | Identity; Peran; butir 4.15; Kesimpulan | owner |
 | U-12 | Lokasi rekaman Folder Google Drive Departemen Commercial; pencatat Business Development; pemilik formulir terisi dan penetap lokasi rekaman VP Commercial | Peran; Rekaman baris 1; Kesimpulan | owner |
 | U-13 | Retensi Durasi kontrak + 3 tahun untuk formulir terisi (angka sumber hanya untuk rekaman rencana proyek dan checklist G1 di SNX-OPS-SOP-01; perluasan ke formulir ini) | Rekaman baris 1 | Legal dan Fani |
 | U-14 | Daftar klausul ISO 9001:2015 (7.4, 7.5.3, 8.2.3, 8.5.1) dan ISO/IEC 27001:2022 (Annex A 5.12, 5.14, 5.31, 5.33), label "(USULAN, perlu konfirmasi konsultan)" | Acuan ISO | owner, setelah konfirmasi konsultan |
@@ -141,7 +141,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 |---|---|---|
 | OI-1 | Verdict sintesis menggabungkan handover G1 ke prosedur Ops (Com 5 dan 10, Ops 7), sedangkan checklist baris 53 meminta formulir Commercial sendiri. Putuskan: tetap formulir terpisah (seperti sekarang, keputusan gate G1 tetap di SNX-OPS-FRM-01) atau dilebur ke sheet Checklist G1 | owner dan Fani |
 | OI-2 | Butir checklist G1 yang tidak diminta kriteria baris 53 tidak dimasukkan: sizing dan arsitektur yang dipakai di proposal, serta klasifikasi data pelanggan dan kebutuhan keamanan informasi (butir 8 sheet Checklist G1; PRO-OPS-001 hanya memuat tujuh butir). Putuskan apakah ditambahkan ke formulir ini atau tetap di checklist G1 | Fani |
-| OI-3 | Pemilik dokumen: Process Owner "Direktur" mengikuti aturan dokumen tanpa sumber, sedangkan SNX-COM-SOP-01 dan SNX-COM-SOP-02 menetapkan VP Commercial sebagai pemilik proses penjualan dan Sales SOP menulis "Document Owner: VP of Commercial". SNX-COM-FRM-01 memakai "Direktur" juga ditutup W9: Process Owner diputus VP Commercial (A7, rekomendasi LEAD, owner GO); blok Identity dan tabel Peran diselaraskan. | owner |
+| OI-3 | Pemilik dokumen: Process Owner "Direktur" mengikuti aturan dokumen tanpa sumber, sedangkan SNX-COM-SOP-01 dan SNX-COM-SOP-02 menetapkan VP Commercial sebagai pemilik proses penjualan dan Sales SOP menulis "Document Owner: VP of Commercial". SNX-COM-FRM-01 memakai "Direktur" juga; ditutup W9: Process Owner diputus VP Commercial (A7) | owner |
 | OI-4 | Lokasi, pemilik, dan retensi rekaman: SNX-COM-SOP-01 mencatat "belum ditetapkan", formulir ini memberi usulan (U-12, U-13). Samakan satu keputusan untuk seluruh rekaman Commercial (paket handover, PO, kontrak). Angka Durasi kontrak + 3 tahun diambil dari SNX-OPS-SOP-01 yang berstatus Draft dengan angka USULAN | owner dan Legal |
 | OI-5 | Service Delivery Manager dan Project Manager adalah jabatan usulan tanpa pemegang (K-10). Penerima handover belum punya nama, sehingga formulir belum bisa dijalankan sampai ada pemegang atau penunjukan sementara | owner dan Fani |
 | OI-6 | Tidak ada tenggat handover di sumber mana pun (antara closing, handover meeting, dan penyerahan paket). Formulir tidak memuat angka. Putuskan apakah perlu batas waktu | Fani dan owner |
@@ -149,7 +149,7 @@ Pemetaan klausul ISO (bagian Rekaman dan Acuan ISO, satu label "(USULAN, perlu k
 | OI-8 | Judul mirip dengan SNX-OPS-FRM-06 (Project Handover / BAST & Closure Report) yang mencatat penyerahan ke customer dan ke Operation. Risiko salah pakai; pertimbangkan penyelarasan judul atau penjelasan di kedua dokumen | Fani dan owner |
 | OI-9 | Kolom A baris 53 di checklist berisi "Sales Pipeline Tracker", tidak terkait Description baris itu. Dicatat sebagai data dan tidak dipakai; tanyakan apakah pemetaan baris keliru | owner |
 | OI-10 | Judul klausul ISO tidak dicocokkan dengan teks standar (UNMEASURED); konfirmasi konsultan sebelum dokumen disahkan | owner, lewat konsultan |
-| OI-11 | SNX-COM-SOP-01 butir 6.8 dan tabel rekamannya masih menyebut formulir ini sebagai calon rekaman (USULAN). Sesudah formulir ini disahkan, SNX-COM-SOP-01 perlu menyebutnya sebagai rekaman resmi | owner |
+| OI-11 | SNX-COM-SOP-01 butir 6.8 dan tabel rekamannya masih menyebut formulir ini sebagai calon rekaman (USULAN). Sesudah formulir ini disahkan, SNX-COM-SOP-01 perlu menyebutnya sebagai rekaman resmi; diubah W9: SNX-COM-SOP-01 bagian 11 kini menyebut formulir ini sebagai rekaman paket handover tanpa "calon" dan tanpa USULAN pada hubungan itu (R1 butir 9, R2); butir 6.8 SNX-COM-SOP-01 tidak memuat rujukan nomor formulir ini | owner |
 | OI-12 | Klasifikasi: SNX-ISMS-PRO-01 belum mencakup Commercial (catatan di SNX-COM-SOP-01 butir 4.13). Tingkat RESTRICTED (Internal) untuk formulir terisi belum punya dasar tertulis di SNX-ISMS-PRO-01 | Fani |
 | OI-13 | Dokumen sumber yang dipakai (Sales SOP, POL-OPS-001, PRO-OPS-001) berstatus Draft atau tanpa persetujuan; isi bisa berubah setelah disahkan. Cek ulang butir 4.6, 4.7, 4.8 saat POL-OPS-001 dan PRO-OPS-001 disahkan COO | Fani |
 
@@ -212,3 +212,5 @@ Butir 3 (A3): tidak ada atasan atau garis lapor JA-03/JA-04 di dokumen ini; tida
 
 Open item ditutup atau diubah:
 - OI-3 (pemilik dokumen Direktur vs VP Commercial) dan U-11 (COO sebagai pemilik dokumen dan peninjau tahunan): ditutup W9 (A7). COO tetap penetap struktur kolom.
+
+R2: tidak ada perubahan spec untuk dokumen ini; hanya baris open item dan USULAN yang ditandai ditutup atau diubah W9 (butir 3).

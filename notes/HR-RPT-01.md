@@ -82,17 +82,17 @@ ISO 9001:2015 7.3 (Kesadaran) tidak dimasukkan: sesi kesadaran mutu bukan penyeb
 |---|---|---|---|
 | U1 | Cakupan memuat pelatihan oleh penyelenggara luar dan sesi kesadaran ISO dan keamanan informasi | Ruang Lingkup | Aziz; konsultan untuk sisi ISO |
 | U2 | Peserta hanya karyawan SINUX; pelatihan untuk pelanggan, vendor, dan partner dikecualikan | Ruang Lingkup | Owner |
-| U3 | HR Manager menetapkan Tujuan Pembelajaran dan Kriteria Keberhasilan sebelum pelatihan dimulai | Butir 4.3, langkah 6.1 | Aziz |
+| U3 | HR Lead menetapkan Tujuan Pembelajaran dan Kriteria Keberhasilan sebelum pelatihan dimulai | Butir 4.3, langkah 6.1 | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U4 | Tanda tangan peserta pada Daftar Hadir menjadi bukti kehadiran | Butir 4.4 | Aziz |
 | U5 | Evaluasi efektivitas memakai empat aspek E1 sampai E4 beserta arti masing-masing | Butir 4.5, bagian 3 | Aziz |
-| U6 | E3 dan E4 diisi pada Tanggal Evaluasi Lanjutan yang ditentukan HR Manager tiap pelatihan | Butir 4.6 | Aziz |
+| U6 | E3 dan E4 diisi pada Tanggal Evaluasi Lanjutan yang ditentukan HR Lead tiap pelatihan | Butir 4.6 | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U7 | Tindakan pelatihan lanjutan dicatat di SNX-HR-FRM-02 | Butir 4.9, Dokumen Terkait | Aziz |
-| U8 | Peserta Tidak Hadir tidak dinilai pada E2 sampai E4, dan HR Manager memutuskan pelatihan susulan | Butir 4.10 | Aziz |
-| U9 | Pembagian tugas HR Manager, HRGA Officer, Peserta, Pelatih, Atasan langsung, dan Direktur Utama | Peran, langkah 6.1 sampai 6.19 | Aziz; Samuel untuk peran penyetuju |
+| U8 | Peserta Tidak Hadir tidak dinilai pada E2 sampai E4, dan HR Lead memutuskan pelatihan susulan | Butir 4.10 | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
+| U9 | Pembagian tugas HR Lead, HRGA Officer, Peserta, Pelatih, Atasan langsung, dan Direktur Utama | Peran, langkah 6.1 sampai 6.19 | Aziz; Samuel untuk peran penyetuju; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U10 | Daftar nilai kolom Status Kehadiran, Status Hasil, Kesimpulan Efektivitas, dan Status pada Tindak Lanjut | Bagian 3, Nilai pada Kolom Status dan Kesimpulan | Aziz |
-| U11 | Lokasi rekaman (folder Google Drive departemen Human Resources), pencatat HRGA Officer, pemilik HR Manager, bukti disimpan bersama laporan terisi | Rekaman | Aziz |
+| U11 | Lokasi rekaman (folder Google Drive departemen Human Resources), pencatat HRGA Officer, pemilik HR Lead, bukti disimpan bersama laporan terisi | Rekaman | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U12 | Jangka retensi laporan terisi dan bukti | Rekaman | Legal bersama Aziz |
-| U13 | HR Manager memakai SNX-HR-FRM-01 untuk menulis Tujuan Pembelajaran bila pelatihan menutup kesenjangan kompetensi | Dokumen Terkait | Aziz |
+| U13 | HR Lead memakai SNX-HR-FRM-01 untuk menulis Tujuan Pembelajaran bila pelatihan menutup kesenjangan kompetensi | Dokumen Terkait | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U14 | Lima klausul ISO 9001:2015 dan ISO/IEC 27001:2022 | Acuan Klausul ISO | Legal bersama konsultan (konsultan memutus; Legal mencatat) |
 
 Jumlah USULAN: 14 butir. Teks dokumen memuat 18 label "(USULAN)" karena beberapa butir diberi label di lebih dari satu kalimat; lint menghitung 18. Tidak ada angka bisnis tanpa sumber di dokumen.
@@ -103,7 +103,7 @@ Jumlah USULAN: 14 butir. Teks dokumen memuat 18 label "(USULAN)" karena beberapa
 |---|---|---|
 | 1 | Tidak ada sumber tim. Seluruh struktur berasal dari kriteria checklist, tugas JA-12 dan JA-14, dan tafsir penyusun. Aziz perlu memeriksa apakah tim sudah punya formulir kehadiran atau lembar evaluasi yang dipakai; bila ada, struktur dokumen ini disesuaikan | Aziz |
 | 2 | Lembar umpan balik peserta (E1), instrumen tes atau penilaian pelatih (E2), dan lembar penilaian atasan langsung (E3 dan E4) belum dibakukan. Dokumen ini hanya memuat kolom Metode dan Bukti yang diisi per pelatihan | Aziz |
-| 3 | Isi Kriteria Keberhasilan dan selang waktu ke Tanggal Evaluasi Lanjutan ditetapkan per pelatihan oleh HR Manager. Tidak ada angka acuan di sumber | Aziz |
+| 3 | Isi Kriteria Keberhasilan dan selang waktu ke Tanggal Evaluasi Lanjutan ditetapkan per pelatihan oleh HR Lead. Tidak ada angka acuan di sumber | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | 4 | Lokasi folder dan hak akses laporan terisi, serta jangka retensi, belum ditetapkan. SNX-ISMS-PRO-01 butir 4.15 hanya menyebut "master list dan kontrak" | Aziz untuk lokasi; Legal untuk retensi |
 | 5 | SOP Training & Development belum bernomor (checklist baris 5 tanpa berkas, T3 HOLD). Kode dan kecocokan rujukan di Ruang Lingkup dan Dokumen Terkait dicek setelah dokumen itu ada. SNX-HR-FRM-02 menulis status dokumen yang sama sebagai "dalam peninjauan", sedangkan dokumen ini menulis "belum bernomor"; samakan setelah LEAD memutus | LEAD, lalu Aziz; diubah W9: SOP Training & Development ditulis "dalam peninjauan" seragam dengan SNX-HR-FRM-02; kode tetap menunggu dokumennya bernomor |
 | 6 | SNX-HR-FRM-02 ditulis paralel (ledger IN_PROGRESS saat saya mulai). Periksa ulang kolom Kode, daftar jenis pelatihan, dan butir 4.9 bila FRM-02 diubah | LEAD |
@@ -187,7 +187,7 @@ Uji sesudah sweep: render_sop.py = ok; lint_doc.py generic = "pass": true, fails
 | B4 | Ruang Lingkup, baris tata cara identifikasi kebutuhan pelatihan | Menjadi isi SOP Training & Development (belum bernomor). | Menjadi isi SOP Training & Development (dalam peninjauan). |
 | B4 | Dokumen Terkait, baris Belum bernomor | SOP Training & Development: tata cara identifikasi ... | SOP Training & Development, dalam peninjauan: tata cara identifikasi ... |
 | B4 | Semua 15 blok table | tanpa flag | "repeat_header": true dan "cant_split": true |
-
+| R2 | Notes USULAN U3, U6, U8, U9, U11, U13 dan open item 3 | HR Manager | HR Lead, dengan catatan "diubah W9" di baris itu |
 - SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan.
 - A3: "Atasan langsung" ditulis sebagai peran generik; tidak ada JA-03 atau JA-04. Tidak ada perubahan.
 - B4 rujukan dicek terhadap kerangka: SNX-HR-JA-01 uraian JA-12 dan JA-14 (butir 6 dan 5) ada; SNX-ISMS-PRO-01 butir 4.8 dan 4.15 ada; SNX-HR-FRM-02 Tabel 1 dan butir 4.9 ada; SNX-HR-FRM-01 ada. Tidak ada rujukan yang diubah. Kode SOP Training & Development tetap "Belum bernomor" di kolom Kode, sama dengan SNX-HR-FRM-02.

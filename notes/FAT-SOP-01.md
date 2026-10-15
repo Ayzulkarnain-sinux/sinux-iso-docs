@@ -141,7 +141,7 @@ Tujuh butir bertanda "(USULAN)" di dokumen (lint menghitung tujuh, termasuk bari
 | 2 | e-Faktur Pajak terbit sebelum approval Finance Lead (butir 6.2 lalu 6.3), padahal Finance Staff dilarang menerbitkan invoice tanpa approval (butir 4.4) dan koreksi butuh Faktur Pajak Pengganti. Apakah approval dipindah sebelum e-Faktur | FAT |
 | 3 | Titik awal TOP (USULAN 2) dan lokasi pencatatan tanggal penerimaan (butir 6.4.6): sumber tidak menyebut tempatnya | FAT |
 | 4 | Tidak ada target waktu per tahap penerbitan invoice (pengajuan, e-Faktur, pemeriksaan, pengiriman). SOP Tax di folder yang sama memakai 1 hari per langkah; angka itu tidak saya pakai di sini karena lingkupnya lain | FAT |
-| 5 | Finance Lead berhalangan: pengganti tidak diatur. Finance Lead dan Finance Staff belum dipetakan ke jabatan (HR-ORG-01 K-13) | owner |
+| 5 | Finance Lead berhalangan: pengganti tidak diatur. Finance Lead dan Finance Staff belum dipetakan ke jabatan (HR-ORG-01 K-13); diubah W9: pemetaan jabatan dijawab definisi bagian 3 (USULAN), pengganti Finance Lead saat berhalangan tetap terbuka | owner |
 | 6 | Tindak lanjut invoice Overdue: "prosedur pemantauan piutang" di sumber adalah SOP Account Receivable & Collection (checklist baris 24), status on review dan belum bernomor. Dokumen menyebutnya dengan judul; kode SNX perlu ditambahkan ke bagian 2, 9, dan 11 setelah terbit | FAT |
 | 7 | Penjualan perangkat atau lisensi tidak disebut di scope sumber. Masuk SOP ini atau tidak | FAT |
 | 8 | Permohonan penagihan yang tidak lengkap: sumber hanya melarang memproses, tanpa menyebut siapa memberi tahu Project Manager dan dalam berapa lama | FAT |
@@ -196,6 +196,7 @@ Round perbaikan ISO-W9 (LEAD G-3 A6). Fakta, angka, dan struktur lain tetap. Ruj
 | Bagian 3 Definisi | Tanpa istilah Finance Lead dan Finance Staff | Dua baris baru, isi persis LEAD G-3 A6: Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN). Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN). |
 | Bagian 5, baris Finance Staff dan Finance Lead | "... Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | Kalimat itu dihapus; pemetaan ada di definisi bagian 3 |
 | Bagian 11 Dokumen terkait, baris SNX-HR-ORG-01 | "Finance Lead dan Finance Staff belum dipetakan ke jabatan (butir K-13)." | "Finance Lead dan Finance Staff didefinisikan di bagian 3." (rujukan "bagian 3" ada dan berjudul Definisi) |
+| R2: Open item 5 (baris notes) | Tanpa catatan W9 di baris | Ditambah "diubah W9: pemetaan jabatan dijawab definisi bagian 3 (USULAN), pengganti Finance Lead saat berhalangan tetap terbuka" |
 
 Open item:
 

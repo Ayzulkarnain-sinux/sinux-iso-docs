@@ -759,11 +759,11 @@
    "loops": 0,
    "usulan_count": 21,
    "open_items": [],
-   "updated_at": "2026-10-15T03:48:04Z",
+   "updated_at": "2026-10-15T04:19:10Z",
    "pen_agent": "adc9dd25179af16a9",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 18,
@@ -827,13 +827,13 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 14,
+   "usulan_count": 13,
    "open_items": [],
-   "updated_at": "2026-10-15T03:49:16Z",
+   "updated_at": "2026-10-15T04:18:53Z",
    "pen_agent": "ae9eceecd747b5a2d",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 20,
@@ -887,11 +887,11 @@
    "loops": 0,
    "usulan_count": 38,
    "open_items": [],
-   "updated_at": "2026-10-15T03:47:01Z",
+   "updated_at": "2026-10-15T04:18:18Z",
    "pen_agent": "a475d481a3c9e4aa4",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 22,
@@ -920,11 +920,11 @@
     "Sweep (c): r2 nonblocking, kasus HRGA Officer bagian 9 bertentangan dengan 4.4 (HR Manager memeriksa usulannya sendiri); serah terima 6.3 ke 6.4 belum lengkap",
     "Residu mutu (sweep nonblocking): mutasi kini bentrok dengan 4.9; pasif baru; penerima tanggapan bagian 9; berkas usulan belum didefinisikan; NOC/SOC/SD/PM tanpa definisi"
    ],
-   "updated_at": "2026-10-15T03:47:06Z",
+   "updated_at": "2026-10-15T04:18:23Z",
    "pen_agent": "a2cb5b7e1e129cb63",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 23,
@@ -952,11 +952,11 @@
     "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking)",
     "Sweep (c): syarat satu unit kerja 4.2 belum berlabel USULAN; pasif dan sinonim berganti (verify nonblocking). qa verify.json diperbaiki sintaksis saja (kurung kurawal ganda di akhir) oleh orkestrator"
    ],
-   "updated_at": "2026-10-15T03:47:12Z",
+   "updated_at": "2026-10-15T04:18:29Z",
    "pen_agent": "a03372a682640aa2e",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 24,
@@ -1028,11 +1028,11 @@
    "open_items": [
     "Sweep (b): 6.1 dan SLA baris 2 menyebut Finance Lead menjalankan 6.2-6.3 untuk dokumen pajak, tetapi 6.2 tidak punya langkah simpan softcopy pajak (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T03:47:50Z",
+   "updated_at": "2026-10-15T04:18:37Z",
    "pen_agent": "ad5b909ad28816d44",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 26,
@@ -1107,16 +1107,16 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 17,
+   "usulan_count": 19,
    "open_items": [
     "Sweep (b): pengantar 6.1-6.3 pasif tanpa pelaku; 4.15 jadi wadah USULAN; istilah Personel Commercial tidak ada di bagian 5 (verify nonblocking)",
     "Residu mutu (sweep nonblocking): pengganti Personel Commercial mempersempit cakupan (bagian 9 hanya Business Development, Conclusion tanpa Brand & Marketing)"
    ],
-   "updated_at": "2026-10-15T03:49:11Z",
+   "updated_at": "2026-10-15T04:19:04Z",
    "pen_agent": "a047bde100d8c7081",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 28,
@@ -1377,10 +1377,10 @@
    "loops": 0,
    "usulan_count": 9,
    "open_items": [],
-   "updated_at": "2026-10-15T03:49:36Z",
+   "updated_at": "2026-10-15T04:19:31Z",
    "pen_agent": "abfd60eb73168bddc",
    "ooxml": "PASSED",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 38,
@@ -1827,11 +1827,11 @@
    "open_items": [
     "Sweep (b): kesimpulan menulis HR Manager mengisi Tabel 1 dan 2, tabel Peran memberi tugas mencatat ke HRGA Officer; lihat qa/HR-FRM-02.verify.json"
    ],
-   "updated_at": "2026-10-15T03:47:28Z",
+   "updated_at": "2026-10-15T04:18:32Z",
    "pen_agent": "af534ab6b544a3ea6",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 54,
@@ -1877,11 +1877,11 @@
    "open_items": [
     "Sweep (a): rujuk SNX-FAT-SOP-06 (SOP Accounting) dan SNX-FAT-REG-01 (Billing & Collection Monitoring Register) dengan nomor sesudah W7b DONE; 6.11 dan tabel Rekaman saling menunjuk untuk lokasi bukti"
    ],
-   "updated_at": "2026-10-15T03:47:54Z",
+   "updated_at": "2026-10-15T04:18:41Z",
    "pen_agent": "a2e0550886843b182",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 56,
@@ -1902,11 +1902,11 @@
    "open_items": [
     "Sweep (a): status dalam peninjauan untuk SNX-FAT-SOP-06 diganti rujukan nomor sesudah W7b"
    ],
-   "updated_at": "2026-10-15T03:47:57Z",
+   "updated_at": "2026-10-15T04:18:45Z",
    "pen_agent": "aee3e2330d196bdfb",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 57,
@@ -1977,11 +1977,11 @@
    "open_items": [
     "Sweep (b): label USULAN kurang pada pemetaan jabatan HR-ORG-01 dan aturan Pihak=SINUX; dokumen asli vs dokumen elektronik; pasif; isi berulang"
    ],
-   "updated_at": "2026-10-15T03:48:31Z",
+   "updated_at": "2026-10-15T04:19:14Z",
    "pen_agent": "afb835975bbe2e803",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 60,
@@ -2003,11 +2003,11 @@
     "Process Owner Direktur (aturan defaults dokumen baru) vs VP Commercial di COM-SOP-01/02 (sumber); pemutus owner",
     "Sweep (a): C3.2 merujuk COM-SOP-02 butir 4.15, sumber wewenang COO ada di butir 4.7 (USULAN)"
    ],
-   "updated_at": "2026-10-15T03:48:57Z",
+   "updated_at": "2026-10-15T04:18:57Z",
    "pen_agent": "a7326440322dc022c",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 61,
@@ -2080,12 +2080,12 @@
     "Sweep (b): definisi Aktivitas dan nilai status pelaksanaan berbeda dengan MKT-REG-02; validasi klaim di REG-01 belum berlabel USULAN di dokumen ini",
     "Residu mutu (sweep nonblocking): arti Aktivitas belum sama dengan MKT-REG-02; belum Selesai ikut mencakup Dibatalkan"
    ],
-   "updated_at": "2026-10-15T03:49:21Z",
+   "updated_at": "2026-10-15T04:19:23Z",
    "pen_agent": "afb20c8cd055f9128",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 64,
@@ -2134,12 +2134,12 @@
     "Sweep (b): parafrase REG-01 butir 4.13 di 4.6 basi; Tujuan kalimat 3 menyebut berkas tersimpan di REG-01; open item 2-3 notes basi; usulan folder Marketing vs Commercial di REG-01",
     "Residu mutu (sweep nonblocking): irisan Tabel 3 dengan REG-01 dan irisan aktivitas dengan RPT-01 belum dihapus (struktur dikunci); pemutus cakupan owner"
    ],
-   "updated_at": "2026-10-15T03:49:28Z",
+   "updated_at": "2026-10-15T04:19:18Z",
    "pen_agent": "af5f5073189ee8555",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-01",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 66,
@@ -2160,11 +2160,11 @@
    "open_items": [
     "Sweep (b): pengecualian Ruang Lingkup menaruh perencanaan campaign di MKT-REG-02 sekaligus MKT-RPT-01, tanpa label USULAN; selaraskan dengan batas cakupan MKT"
    ],
-   "updated_at": "2026-10-15T03:49:32Z",
+   "updated_at": "2026-10-15T04:19:27Z",
    "pen_agent": "adc43dd2ae38a3897",
    "ooxml": "PASSED",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 67,
@@ -2433,12 +2433,12 @@
    "open_items": [
     "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
    ],
-   "updated_at": "2026-10-15T03:47:58Z",
+   "updated_at": "2026-10-15T04:18:47Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "a3d6b69aee3386660",
    "sweep": "2",
-   "w9": "R1"
+   "w9": "R2"
   },
   {
    "wl_index": 80,

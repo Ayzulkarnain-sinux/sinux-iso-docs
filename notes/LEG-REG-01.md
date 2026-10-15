@@ -105,7 +105,7 @@ Ejaan sumber yang dibakukan: "diperbaharui" menjadi "diperbarui", "mempengaruhi"
 1. Process owner "Line Manager Legal". Sumber tidak punya baris "Pemilik dokumen"; yang ada hanya "Unit Kerja: Legal dan Compliance" (nama departemen, bukan jabatan). Dipakai nama peran reviewer departemen Legal tanpa nama orang, sama dengan SNX-LEG-SOP-01 yang menulis pemilik SOP Line Manager Legal. Line Manager Legal adalah nama peran, bukan nama jabatan; pemetaan ke jabatan ada di Asumsi 4.
 2. Baris awal tabel register diisi nama jenis dokumen saja: lima dari kriteria (NIB, KBLI, Akta Pendirian, NPWP, Anggaran Dasar, urut seperti di kriteria) dan empat dari lingkup sumber (akta perubahan; surat keputusan atau penerimaan pemberitahuan; perizinan berusaha dan sertifikat standar OSS; izin sektoral). Itu nama kategori, bukan data. Nomor, tanggal, masa berlaku, status, dan penanggung jawab kosong.
 3. "Departemen Legal dan Compliance" di sumber dibaca sebagai Departemen Legal (Line Manager Legal dan Staff Legal), memakai istilah SNX-LEG-SOP-01. Fungsi Compliance berada pada jabatan Legal & Compliance menurut SNX-HR-ORG-01, jadi tidak diberi peran terpisah.
-4. Staff Legal dan Line Manager Legal adalah nama peran. Keduanya dipetakan ke jabatan Legal & Compliance JA-09 dan JA-08 menurut Matriks Peran SNX-HR-ORG-01 (butir K-13, pemetaan USULAN; atasan JA-08 menunggu konfirmasi K-03). Pemetaan itu kini tertulis di tabel Peran dan Dokumen Terkait. Atasan Line Manager Legal tidak disebut di badan dokumen.
+4. Staff Legal dan Line Manager Legal adalah nama peran. Keduanya dipetakan ke jabatan Legal & Compliance JA-09 dan JA-08 menurut Matriks Peran SNX-HR-ORG-01 (butir K-13, pemetaan USULAN; atasan JA-08 menunggu konfirmasi K-03). Pemetaan itu kini tertulis di tabel Peran dan Dokumen Terkait. Atasan Line Manager Legal tidak disebut di badan dokumen; diubah W9: pemetaan tidak lagi USULAN, pemetaan diputus owner (LEAD G-3 A5).
 5. "Penanggung jawab izin" dibuat sebagai peran, karena Staff Legal mengirim pengingat kepada penanggung jawab izin (SNX-LEG-SOP-01 prosedur 6.6) dan sumber register punya kolom Penanggung Jawab tanpa penjelasan.
 6. Angka 90 hari dari SOP Divisi Legal 4.4 butir 3 berlaku untuk register perizinan, yaitu lingkup yang sama dengan dokumen ini. Tidak dipakai untuk aktivitas lain.
 7. Tinjauan bulanan atas register izin dari Jobdesk Staff Legal (JA-09) dipakai pada Staff Legal. Kontrak di register kontrak tidak masuk dokumen ini.
@@ -118,7 +118,7 @@ Ejaan sumber yang dibakukan: "diperbaharui" menjadi "diperbarui", "mempengaruhi"
 
 | # | Butir | Letak di dokumen | Pemutus yang disarankan |
 |---|---|---|---|
-| 1 | Tiga penanda tangan: prepared Staff Legal, reviewed Line Manager Legal, approved Samuel Kristanto Utomo / President Director; sumber menulis "[Nama/Jabatan]" tanpa isi (config/defaults.json D2) | Blok Approval halaman depan | owner |
+| 1 | Tiga penanda tangan: prepared Staff Legal, reviewed Line Manager Legal, approved Samuel Kristanto Utomo / President Director; sumber menulis "[Nama/Jabatan]" tanpa isi (config/defaults.json D2) | Blok Approval halaman depan | owner; diubah W9: nama orang kini di blok Prepared dan Reviewed (config/defaults.json v22) |
 | 2 | Process owner = Line Manager Legal (sumber tanpa "Pemilik dokumen") | Identity; Peran | Legal |
 | 3 | Pembagian peran: Staff Legal mencatat, memperbarui, memantau; Line Manager Legal memeriksa isi register dan memverifikasi akta. Sumber hanya menyebut "Departemen Legal dan Compliance" | Ketentuan 1, 2; Peran | Legal |
 | 4 | Kolom Jadwal Perpanjangan (tanggal pengingat dan tanggal target pengajuan perpanjangan). Kolom dituntut kriteria; sumber tidak punya kolom itu dan tanggal target pengajuan tidak ada di sumber mana pun | Istilah; Petunjuk Pengisian 5; tabel 6.1 | Legal |
@@ -134,7 +134,7 @@ Ejaan sumber yang dibakukan: "diperbaharui" menjadi "diperbarui", "mempengaruhi"
 | 14 | Retensi register dan bukti pendukung belum ditetapkan; usulan penetapan di SNX-LEG-SOP-03 (USULAN di SNX-LEG-SOP-01 butir 4.27) | Rekaman | Legal |
 | 15 | Acuan klausul ISO: ISO 9001:2015 4.2 dan 7.5.3; ISO/IEC 27001:2022 Annex A 5.31 dan 5.33. Checklist tidak memberi acuan untuk baris ini; label "(USULAN, perlu konfirmasi konsultan)" dipasang satu kali di bagian Acuan ISO | Rekaman dan Acuan ISO | owner (setelah konfirmasi konsultan) |
 | 16 | Pemilik rekaman register dan bukti pendukung = Line Manager Legal, pencatat = Staff Legal, mengikuti SNX-LEG-SOP-03 butir 4.26 (yang sendiri USULAN); SNX-LEG-SOP-01 tabel rekaman menulis pemilik Staff Legal | Rekaman; Peran | Legal |
-| 17 | Line Manager Legal dan Staff Legal sebagai nama peran yang dipetakan ke jabatan Legal & Compliance JA-08 dan JA-09 (K-13 di SNX-HR-ORG-01) | Peran; Dokumen Terkait | Legal |
+| 17 | Line Manager Legal dan Staff Legal sebagai nama peran yang dipetakan ke jabatan Legal & Compliance JA-08 dan JA-09 (K-13 di SNX-HR-ORG-01) | Peran; Dokumen Terkait | Legal; ditutup W9: pemetaan diputus owner (LEAD G-3 A5) |
 
 ## Open items
 
@@ -178,7 +178,7 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 | "enam status", "sembilan jenis", "baris 1 sampai 9", "baris 10 dan 11" | Enam status dari sumber; sisanya struktur tabel buatan sendiri, bukan fakta |
 | Tanggal target pengajuan perpanjangan | Tidak ada di sumber; berlabel (USULAN 4) |
 | Nama orang | Hanya Samuel Kristanto Utomo di blok Approval (data baris). Badan dokumen tanpa nama orang |
-| Nama peran Line Manager Legal dan Staff Legal | specs/HR-ORG-01.json Matriks Peran (USULAN, K-13) |
+| Nama peran Line Manager Legal dan Staff Legal | specs/HR-ORG-01.json Matriks Peran (USULAN, K-13); diubah W9: pemetaan tidak lagi USULAN, pemetaan diputus owner (LEAD G-3 A5) |
 | "SK Kemenkum" | Jobdesk Staff Legal, Due Diligence |
 | "folder Google Drive departemen Legal" | SNX-LEG-SOP-01 butir 4.24 (USULAN) |
 | Kode SNX-LEG-REG-03, SNX-LEG-REG-04, SNX-LEG-SOP-03 dan deskripsinya | config/worklist.json dan config/checklist.json baris 35 dan 39 (deskripsi checklist, bukan isi dokumen final) |
@@ -233,7 +233,11 @@ Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir 
 | A5, Peran, baris Staff Legal | "... (JA-09) di SNX-HR-ORG-01 (USULAN)." | "... (JA-09) di SNX-HR-ORG-01." |
 | A5, Peran, baris Line Manager Legal | "... (JA-08) di SNX-HR-ORG-01 (USULAN)." | "... (JA-08) di SNX-HR-ORG-01." Label USULAN pada pemilik dokumen tetap |
 | A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... (JA-08 dan JA-09) (USULAN)." | "... (JA-08 dan JA-09)." |
+| R2, hygiene notes, USULAN 1 | tanpa penanda W9 | ditambah "diubah W9" pada baris itu |
+| R2, hygiene notes, USULAN 17 | tanpa penanda W9 pada baris | ditambah "ditutup W9" pada baris itu |
+| R2, hygiene notes, Asumsi 4 dan tabel sumber nama peran | "pemetaan USULAN" tanpa penanda | ditambah "diubah W9" pada baris itu |
 
 Open item:
 
 - Open item 17 (pemetaan peran ke JA-08 dan JA-09): ditutup W9: pemetaan diputus owner (LEAD G-3 A5), label USULAN pemetaan dihapus.
+- R2: baris USULAN 1 dan 17, Asumsi 4, dan baris sumber nama peran kini memuat penanda W9 di barisnya sendiri; tidak ada baris dihapus.

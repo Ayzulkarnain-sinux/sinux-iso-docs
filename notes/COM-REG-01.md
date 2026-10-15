@@ -131,8 +131,8 @@ Perintah: `grep -n "Customer Feedback & Complaint " context/audit/*.md`. Hasil: 
 | U-07 | Penilaian sementara keluhan kritis oleh Business Development dan VP Commercial sampai kriteria ada | Butir 4.10 | owner |
 | U-08 | VP Commercial mengeskalasi ke COO bila keputusan melewati wewenang menurut delegasi tertulis | Butir 4.11; Peran | owner dan Samuel |
 | U-09 | Register terisi berklasifikasi RESTRICTED (Internal) | Butir 4.12; Rekaman | Fani (pemilik SNX-ISMS-PRO-01) dan owner |
-| U-10 | Folder Google Drive departemen Commercial; pemilik register COO, pengelola VP Commercial, pencatat Business Development; pemilik tiket PIC; penyimpanan oleh Business Development | Butir 4.13; Rekaman | owner |
-| U-11 | COO sebagai pemilik register dan peninjau tahunan (process_owner "Direktur"); sama di Peran dan Rekaman | Peran; Rekaman; Kesimpulan; Identity | owner |
+| U-10 | Folder Google Drive departemen Commercial; pemilik register COO, pengelola VP Commercial, pencatat Business Development; pemilik tiket PIC; penyimpanan oleh Business Development; diubah W9: pemilik register kini VP Commercial, juga pengelola (A7); pencatat Business Development tetap | Butir 4.13; Rekaman | owner |
+| U-11 | COO sebagai pemilik register dan peninjau tahunan (process_owner "Direktur"); sama di Peran dan Rekaman; diubah W9: peninjau tahunan dan pemilik register kini VP Commercial, bukan COO (A7); process_owner "VP Commercial" | Peran; Rekaman; Kesimpulan; Identity | owner |
 | U-12 | Struktur kolom Tabel 1 sampai 4, termasuk kolom Tanggapan Customer dan 10 baris | Isi Register | owner |
 | U-13 | SNX-OPS-FRM-10 sebagai wadah analisis akar masalah untuk keluhan dari insiden layanan | Ruang Lingkup baris 2; Dokumen Terkait | Fani |
 | U-14 | Klausul ISO 9001:2015 8.2.1, 9.1.2, 10.2, 7.5.3 dan ISO/IEC 27001:2022 Annex A 5.12, label "(USULAN, perlu konfirmasi konsultan)" | Acuan ISO | konsultan lewat owner |
@@ -146,7 +146,7 @@ Perintah: `grep -n "Customer Feedback & Complaint " context/audit/*.md`. Hasil: 
 | OI-1 | Kriteria "komplain kritis" tidak ada di Sales SOP maupun SNX-COM-SOP-01. Butir 4.10 memakai penilaian sementara; kriteria tertulis (dampak, nilai kontrak, kaitan dengan SLA) perlu ditetapkan | owner |
 | OI-2 | Tidak ada tenggat penanganan, konfirmasi kepada customer, atau eskalasi keluhan di sumber mana pun. Hanya batas respons email dan WhatsApp umum yang bersumber. Dokumen tidak punya baris SLA | owner |
 | OI-3 | Retensi register dan tiket keluhan ("Belum ditetapkan" di Rekaman), serta lokasi folder Google Drive Commercial (U-10) | Legal dan owner |
-| OI-4 | process_owner "Direktur" (= COO) mengikuti aturan dokumen tanpa sumber, sedangkan SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial dari sumber. Di dokumen ini COO pemilik register dan VP Commercial pengelola; apakah pemilik disamakan dengan dokumen Commercial lain ditutup W9: Process Owner diputus VP Commercial (A7, rekomendasi LEAD, owner GO); blok Identity dan tabel Peran diselaraskan. | owner |
+| OI-4 | process_owner "Direktur" (= COO) mengikuti aturan dokumen tanpa sumber, sedangkan SNX-COM-SOP-01 dan SNX-COM-SOP-02 memakai VP Commercial dari sumber. Di dokumen ini COO pemilik register dan VP Commercial pengelola; apakah pemilik disamakan dengan dokumen Commercial lain; ditutup W9: Process Owner diputus VP Commercial (A7) | owner |
 | OI-5 | Header INTERNAL (worklist) berbeda dengan butir 4.12 (register terisi RESTRICTED (Internal)). Bila header diubah ke RESTRICTED (Internal), footer akan berlabel otomatis | owner dan Fani |
 | OI-6 | Siapa membuat tiket keluhan, apakah tiket wajib per keluhan, dan apakah Business Development punya akses ke Zammad; batas generalist di GLPI | owner |
 | OI-7 | Sintesis audit menggabungkan register keluhan dan register NC/CA (Com 12 dan 16); checklist memuat register ini terpisah dan tidak memuat dokumen NC/CA Commercial. Register dibuat sesuai checklist. Perlu keputusan apakah keluhan yang berujung tindakan korektif rinci punya wadah tersendiri | owner |
@@ -198,3 +198,5 @@ Butir 3 (A3): tidak ada atasan atau garis lapor JA-03/JA-04 di dokumen ini; tida
 
 Open item ditutup atau diubah:
 - OI-4 (pemilik register COO vs VP Commercial) dan U-10, U-11 (pemilik COO): ditutup W9 (A7).
+
+R2: tidak ada perubahan spec untuk dokumen ini; hanya baris open item dan USULAN yang ditandai ditutup atau diubah W9 (butir 3).

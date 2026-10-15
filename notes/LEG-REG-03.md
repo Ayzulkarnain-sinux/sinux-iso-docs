@@ -111,7 +111,7 @@ Teks memuat 22 penanda USULAN: 19 berpola "(USULAN)" (itu yang dihitung lint, te
 | U13 | Kolom Bidang memakai delapan area SNX-LEG-REG-02; peraturan di luar area diisi Kepatuhan Regulasi | Petunjuk butir 6 | Legal |
 | U14 | Pemetaan tiap dokumen terkait ke register ini | Dokumen Terkait | Legal |
 | U15 | Tujuh klausul ISO: ISO 9001:2015 4.2, 5.1.2, 7.5.3, 8.2.2; ISO/IEC 27001:2022 4.2, Annex A 5.31, Annex A 5.34. Judul klausul dalam bahasa Indonesia terjemahan penyusun | Acuan ISO | owner (konsultan mengonfirmasi) |
-| U16 | Pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance (JA-08 dan JA-09) di SNX-HR-ORG-01, menunggu konfirmasi K-13 | Peran; Dokumen Terkait | owner (K-13 di SNX-HR-ORG-01) |
+| U16 | Pemetaan peran Line Manager Legal dan Staff Legal ke jabatan Legal & Compliance (JA-08 dan JA-09) di SNX-HR-ORG-01, menunggu konfirmasi K-13 | Peran; Dokumen Terkait | owner (K-13 di SNX-HR-ORG-01); ditutup W9: pemetaan diputus owner (LEAD G-3 A5) |
 
 ## Open items
 
@@ -181,7 +181,9 @@ Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir 
 | meta.approval, blok Prepared dan Reviewed | Prepared "Staff Legal"; Reviewed "Line Manager Legal" | Prepared "Alif Altamziz / Staff Legal"; Reviewed "Ester Febe Utomo / Line Manager Legal" (config/defaults.json v22 prepared_reviewed.LEG) |
 | A5, Peran, paragraf penjelas | "... JA-08 dan JA-09 (USULAN). Pembuat ..." | "... JA-08 dan JA-09. Pembuat ..."; USULAN pembagian tugas mengikuti pola SNX-LEG-SOP-03 tetap |
 | A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... JA-08 dan JA-09 (USULAN). Daftar ..." | "... JA-08 dan JA-09. Daftar ..." |
+| R2, hygiene notes, U16 | tanpa penanda W9 pada baris | ditambah "ditutup W9" pada baris itu |
 
 Open item:
 
 - U16 (pemetaan peran ke JA-08 dan JA-09, menunggu konfirmasi K-13): ditutup W9: pemetaan diputus owner (LEAD G-3 A5).
+- R2: baris U16 kini memuat "ditutup W9" di barisnya sendiri; tidak ada baris dihapus.

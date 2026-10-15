@@ -111,7 +111,7 @@ Spec memuat 38 kemunculan kata USULAN: 32 label "(USULAN)" polos (hitungan lint)
 | 18 | Tujuh butir pengecualian lingkup: kebijakan internal, pemantauan periodik dan temuan, penilaian risiko hukum, penelaahan kontrak, tinjauan rinci data pribadi, pemutakhiran daftar Persyaratan, kepatuhan pihak lain | Legal |
 | 19 | Entitas afiliasi atau turunan SINUX tidak dievaluasi di laporan ini sampai ada keputusan (butir pengecualian kedelapan) | owner |
 | 20 | Kolom Bukti dari Dokumen Legal: pemetaan Bidang ke SNX-LEG-REG-01, FRM-01, FRM-02, FRM-03, dan dokumen Penanggung Jawab Kegiatan | Legal |
-| 21 | Tujuh klausul ISO 9001:2015 (8.2.2, 9.1.3, 10.2) dan ISO/IEC 27001:2022 (9.1, 10.2, Annex A 5.31, 5.34), label "(USULAN, perlu konfirmasi konsultan)". Checklist baris 36 tidak memberi acuan klausul. Pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 (K-13 di SNX-HR-ORG-01) ikut berlabel USULAN di bagian Peran | owner, diteruskan ke konsultan |
+| 21 | Tujuh klausul ISO 9001:2015 (8.2.2, 9.1.3, 10.2) dan ISO/IEC 27001:2022 (9.1, 10.2, Annex A 5.31, 5.34), label "(USULAN, perlu konfirmasi konsultan)". Checklist baris 36 tidak memberi acuan klausul. Pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 (K-13 di SNX-HR-ORG-01) ikut berlabel USULAN di bagian Peran | owner, diteruskan ke konsultan; diubah W9: pemetaan Legal tidak lagi berlabel USULAN; label USULAN klausul ISO tetap |
 
 ## 5. Asumsi (bukan USULAN berlabel, tetapi bukan dari teks sumber)
 
@@ -135,7 +135,7 @@ Spec memuat 38 kemunculan kata USULAN: 32 label "(USULAN)" polos (hitungan lint)
 | 7 | Entitas afiliasi atau turunan: SOP Divisi Legal menyatakan "Mencakup juga entitas afiliasi atau turunan (misalnya rencana pendirian PT Nusagrid) sepanjang ditugaskan kepada Divisi Legal SINUX". Dokumen ini mengecualikannya sampai ada keputusan | owner |
 | 8 | Kewajiban Penanggung Jawab Kegiatan menyerahkan Bukti ke Staff Legal belum disepakati unit mana pun dan tidak ada di sumber | owner |
 | 9 | Kecocokan dengan SNX-LEG-REG-03 saat register itu berstatus final: nilai Bidang, enam nilai Status, kolom Peninjauan Terakhir (per baris, bukan satu tanggal), dan Penanggung Jawab Kegiatan. Perubahan di sana mengubah Ketentuan butir 2 sampai 6 dan Petunjuk butir 2 sampai 4 | Legal |
-| 10 | Pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 menunggu konfirmasi (K-13 di SNX-HR-ORG-01). Bila peta berubah, bagian Peran ikut berubah | owner |
+| 10 | Pemetaan Line Manager Legal ke JA-08 dan Staff Legal ke JA-09 menunggu konfirmasi (K-13 di SNX-HR-ORG-01). Bila peta berubah, bagian Peran ikut berubah | owner; ditutup W9: owner 15 Okt memutus pemetaan Legal, tidak lagi menunggu konfirmasi |
 | 11 | Retensi laporan terisi dan Bukti belum ditetapkan. Dokumen ini menyebut Kategori 4 di SNX-LEG-SOP-03, sedangkan SNX-LEG-RPT-01 menyebut Kategori 4 atau Kategori 6; pilihan perlu diseragamkan | Legal |
 | 12 | Judul klausul ISO 8.2.2, 9.1.3, 10.2 (9001) dan 9.1, 10.2 (27001) berasal dari pengetahuan umum penyusun, tanpa berkas di repo; judul Annex A 5.31 dan 5.34 mengikuti spec Legal lain. SNX-LEG-REG-03 menulis 8.2.2 "produk dan layanan", dokumen ini dan SNX-LEG-SOP-01 memakai "produk dan jasa". Perlu satu ejaan dari konsultan | owner, diteruskan ke konsultan |
 | 13 | Sumber tidak memuat butir "Pemilik dokumen" (T2 tanpa sumber); process_owner diambil dari jabatan reviewer departemen | Legal |
@@ -196,6 +196,8 @@ Hasil uji sesudah perbaikan r1: render exit 0; lint_doc generic "pass": true, fa
 | Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Dokumen Terkait, baris SNX-HR-ORG-01 | ... Line Manager Legal dan Staff Legal (USULAN), serta unit ... | ... Line Manager Legal dan Staff Legal, serta unit ... |
+| R2: USULAN 21, notes | baris tanpa penanda W9 | ditambah "diubah W9" di baris itu (alasan satu baris) |
+| R2: Open item 10, notes | baris tanpa penanda W9 | ditambah "ditutup W9" di baris itu (alasan satu baris) |
 
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap. Open item 10: ditutup W9: pemetaan sudah diputus owner.

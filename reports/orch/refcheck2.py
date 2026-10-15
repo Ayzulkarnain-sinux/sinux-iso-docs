@@ -236,6 +236,30 @@ def main():
     print(f"rujukan: {len(rows)} kemunculan; silang unik (asal, tujuan, lokasi): {len(uniq)}; berkas dibaca: {len(blobs)} (docx {len(structs)}, xlsx {len(blobs) - len(structs)})")
     for k in sorted(c):
         print(f"  {k[0]:8s} {k[1]:16s} {c[k]}")
+    # Adjudikasi pemeriksa makna (reports/w9/refsem*.json): rujukan mesin TIDAK_ADA/DOK_TIDAK_ADA/ADA_TANPA_NOMOR yang
+    # diputus OK (rujukan ke dokumen asal sendiri) atau ke dokumen tim di luar set ditandai DIPUTUS_MAKNA dengan id buktinya.
+    adj = {}
+    import glob
+    for f in sorted(glob.glob('reports/w9/refsem*.json')):
+        for r in json.load(open(f)).get('rows', []):
+            s = r.get('sem') or {}
+            ok = s.get('verdict') == 'OK' or (s.get('verdict') == 'SALAH_TAFSIR_MESIN' and s.get('verdict_ulang') in ('OK', 'TIDAK_DAPAT_DICEK'))
+            if ok:
+                adj[(r['asal'], r['tujuan'], r['lokasi'], r['kalimat'][:400])] = r['id']
+    for r in rows:
+        k = (r['asal'], r['tujuan'], r['lokasi'], r['kalimat'][:400])
+        if r['status'] in ('TIDAK_ADA', 'DOK_TIDAK_ADA', 'ADA_TANPA_NOMOR') and k in adj:
+            r['status'] = 'DIPUTUS_MAKNA'
+            r['judul_tujuan'] = f"diputus pemeriksa makna {adj[k]}; " + r['judul_tujuan']
+    json.dump({'rows': rows, 'control': ctrl, 'control_ok': ctrl_ok}, open(f'reports/w9/refcheck_{tag}.json', 'w'), ensure_ascii=False, indent=1)
+    with open(f'reports/w9/refcheck_{tag}.tsv', 'w', encoding='utf-8') as f:
+        f.write('\t'.join(cols) + '\n')
+        for r in rows:
+            f.write('\t'.join(str(r[c]).replace('\t', ' ').replace('\n', ' ') for c in cols) + '\n')
+    c = collections.Counter((r['jenis'], r['status']) for r in rows)
+    print('sesudah adjudikasi:')
+    for k in sorted(c):
+        print(f"  {k[0]:8s} {k[1]:16s} {c[k]}")
     bad = [r for r in rows if r['status'] in ('TIDAK_ADA', 'DOK_TIDAK_ADA')]
     for r in bad:
         print(f"RUSAK {r['asal']} -> {r['tujuan']} {r['lokasi']} [{r['status']}] {r['judul_tujuan'][:80]} :: {r['kalimat'][:130]}")

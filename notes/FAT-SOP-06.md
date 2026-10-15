@@ -147,7 +147,7 @@ Di luar badan dokumen, berlabel USULAN di config/defaults.json: process_owner "F
 | 6 | Ekualisasi muncul di dua SOP: scope dokumen ini dan kebijakan 4.6 SNX-FAT-SOP-05 (keduanya tanpa langkah); PPh 22 hanya muncul di sini | FAT |
 | 7 | Nama sistem pencatatan keuangan, persetujuan perubahan CoA, dan lokasi arsip tidak disebut sumber | FAT |
 | 8 | Pengecualian scope bersifat usulan (sumber diam); belum ada keputusan tertulis apakah penagihan, persetujuan pembayaran, dan pengarsipan tetap di SOP lain | FAT |
-| 9 | Pemetaan Finance Lead dan Finance Staff ke jabatan (K-13 di SNX-HR-ORG-01) | owner |
+| 9 | Pemetaan Finance Lead dan Finance Staff ke jabatan (K-13 di SNX-HR-ORG-01); ditutup W9: dipetakan lewat definisi bagian 3 sebagai USULAN sampai jabatan Finance Lead terisi | owner |
 | 10 | Siapa menyetujui dan mendistribusikan Laporan Keuangan ke Manajemen, Pemegang Saham, Pihak Bank, Panitia Tender BUMN, dan DJP tidak ada di sumber; tidak ditulis | Samuel; FAT |
 | 11 | Hubungan piutang yang dijurnal (butir 6.1) dengan SNX-FAT-REG-01 (tracker piutang) tidak ada di sumber; SNX-FAT-REG-01 hanya dirujuk sebagai tracker piutang di luar scope (USULAN), cakupan SOP Account Receivable & Collection tidak diubah, rekonsiliasi jurnal dengan tracker tidak ditulis | FAT |
 | 12 | Acuan klausul ISO belum dicocokkan dengan teks standar | konsultan |
@@ -210,6 +210,7 @@ Round perbaikan ISO-W9 (LEAD G-3 A6). Fakta, angka, dan struktur lain tetap. Ruj
 | Blok Reviewed (meta.approval.reviewed) | Finance Lead | Amirull Yusuf Zulkarnain / Direktur |
 | Bagian 3 Definisi | Tanpa istilah Finance Lead dan Finance Staff | Dua baris baru, isi persis LEAD G-3 A6: Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN). Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN). |
 | Bagian 5, baris Finance Lead dan Finance Staff | "... Belum dipetakan ke jabatan di SNX-HR-ORG-01 (butir K-13)." | Kalimat itu dihapus; pemetaan ada di definisi bagian 3 |
+| R2: Open item 9 (baris notes) | Tanpa catatan W9 di baris | Ditambah "ditutup W9: dipetakan lewat definisi bagian 3 sebagai USULAN sampai jabatan Finance Lead terisi" |
 
 Open item:
 

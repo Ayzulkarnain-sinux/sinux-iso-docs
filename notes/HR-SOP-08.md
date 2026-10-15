@@ -148,7 +148,7 @@ Cacat tambahan yang saya temukan:
 | # | Butir USULAN di spec | Pemutus yang disarankan |
 |---|---|---|
 | U1 | Enam klausul ISO di bagian 11 (9001 5.3, 7.5.3, 8.1; 27001 Annex A 6.2, 5.33, 5.34), label "(USULAN, perlu konfirmasi konsultan)" | Konsultan, lalu owner |
-| U2 | Pemetaan istilah sumber ke jabatan: Pimpinan Perusahaan = Direktur Utama; HR = HRGA Officer; keputusan atas nama Perusahaan = HR Manager (definisi bagian 3, tabel peran) | Samuel (Pimpinan Perusahaan), Aziz (HR dan Perusahaan) |
+| U2 | Pemetaan istilah sumber ke jabatan: Pimpinan Perusahaan = Direktur Utama; HR = HRGA Officer; keputusan atas nama Perusahaan = HR Lead (definisi bagian 3, tabel peran) | Samuel (Pimpinan Perusahaan), Aziz (HR dan Perusahaan); diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U3 | Pelaku pemanggilan kembali karyawan yang sedang cuti: Atasan langsung (6.7) | Aziz |
 | U4 | Pelaku pencatatan HRGA Officer: alfa sakit tanpa surat (6.3), cuti haid (6.5), pembatalan cuti (6.7); penerima surat keterangan dokter dan penerima pemberitahuan haid (6.3, 6.5) | Aziz |
 | U5 | Pengecualian scope: hari libur resmi dan upah lembur (Pasal 22 ayat (1) sampai (3)), izin Pasal 29, pemutusan hubungan kerja (WFH berasal dari sumber) | Aziz |
@@ -158,11 +158,11 @@ Cacat tambahan yang saya temukan:
 | U9 | Urutan cuti mendesak: ajukan di sistem HR sesudah persetujuan atasan langsung (6.2 langkah 4) | Aziz |
 | U10 | Penanggung jawab pengganti dicatat pada permohonan (6.1 langkah 3) | Aziz |
 | U11 | Akibat penolakan cuti: karyawan tidak mengambil cuti (bagian 9) | Aziz |
-| U12 | HR Manager menentukan sanksi alfa, surat peringatan, dan pemotongan cuti tahunan (bagian 9, tabel peran) | Aziz, dengan Samuel |
+| U12 | HR Lead menentukan sanksi alfa, surat peringatan, dan pemotongan cuti tahunan (bagian 9, tabel peran) | Aziz, dengan Samuel; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 | U13 | Klasifikasi RESTRICTED (Internal) untuk permohonan cuti, surat dokter, dan HPL (4.37) | Aziz, dikonfirmasi owner |
-| U14 | Lokasi rekaman (sistem HR, Folder Google Drive Departemen HR), pemilik HRGA Officer, retensi ditetapkan HR Manager bersama Legal (tabel rekaman) | Aziz, dengan Legal |
-| U15 | HR Manager memeriksa kepatuhan dengan membandingkan permohonan cuti di sistem HR dengan bagian 4 (kesimpulan) | Aziz |
-| U16 | HR Manager sebagai pelaku di bagian 9 untuk cuti ibadah kedua kalinya (4.27) dan sakit berkepanjangan saat cuti tahunan (4.12); Pasal 28 ayat (3) dan Pasal 23 ayat (2) huruf k tidak menyebut pelaku | Aziz |
+| U14 | Lokasi rekaman (sistem HR, Folder Google Drive Departemen HR), pemilik HRGA Officer, retensi ditetapkan HR Lead bersama Legal (tabel rekaman) | Aziz, dengan Legal; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
+| U15 | HR Lead memeriksa kepatuhan dengan membandingkan permohonan cuti di sistem HR dengan bagian 4 (kesimpulan) | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
+| U16 | HR Lead sebagai pelaku di bagian 9 untuk cuti ibadah kedua kalinya (4.27) dan sakit berkepanjangan saat cuti tahunan (4.12); Pasal 28 ayat (3) dan Pasal 23 ayat (2) huruf k tidak menyebut pelaku | Aziz; diubah W9: HR Manager diganti HR Lead (LEAD G-3 A2) |
 
 Total: 16 butir USULAN. Label "(USULAN)" persis di dokumen terhitung 18 oleh lint (warn); 33 kemunculan kata USULAN di spec termasuk bentuk "(USULAN: ...)" dan "(USULAN pelaku)". Sesudah Sweep, alasan di dalam label sudah dipindah ke notes ini: U3 (pemanggil tidak disebut di PP - Cuti), U4 (penerima surat dokter dan penerima pemberitahuan haid tidak disebut), U8 (Pasal 34 ayat (2) huruf a tanpa label subjek), U9 (urutan tidak disebut), U11 (akibat penolakan tidak dinyatakan).
 
@@ -240,7 +240,7 @@ Tidak diubah karena di luar daftar butir Sweep (untuk keputusan orkestrator): (a
 | A2 | Langkah bagian 6 (kolom PIC dan rekaman Keputusan HR Manager, 6 kemunculan) | HR Manager | HR Lead |
 | A2 | Keterangan gambar alur bagian 7 | keputusan HR Manager (butir 6.1 dan 6.4) | keputusan HR Lead (butir 6.1 dan 6.4) |
 | A2 | Bagian 9 (4 baris), kesimpulan (2 kalimat), tabel rekaman (3 sel retensi) | HR Manager | HR Lead |
-
+| R2 | Notes USULAN U2, U12, U14, U15, U16 | HR Manager | HR Lead, dengan catatan "diubah W9" di baris itu |
 - SPV tidak ditambahkan: dokumen tidak punya kolom tingkat jabatan.
 - A3 tidak berlaku: dokumen tidak menyebut JA-03 atau JA-04. B4 tidak berlaku: tidak ada rujukan ke SNX-HR-FRM-01, FRM-02, RPT-01, atau SOP T&D. Lane diagram tidak memuat HR Manager (lane: Karyawan, Atasan langsung, HRGA Officer, Direktur Utama), jadi tidak berubah.
 

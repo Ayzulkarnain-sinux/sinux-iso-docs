@@ -124,7 +124,7 @@ Kriteria penerimaan, unsur demi unsur:
 | 12 | Lokasi lembar dan hasil telaah di folder Google Drive departemen Legal (SNX-LEG-SOP-01 butir 4.24) | Legal |
 | 13 | Kontrak pelanggan dikecualikan dari form ini dan memakai SNX-LEG-FRM-01 | Legal |
 | 14 | Butir Risiko Tinggi yang belum diputus Pejabat Berwenang berarti rekomendasi ketiga (Petunjuk butir 18) | Legal; penerimaan risiko Tinggi tetap di Samuel |
-| 15 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 (K-13 di SNX-HR-ORG-01) | Aziz |
+| 15 | Pemetaan Line Manager Legal dan Staff Legal ke JA-08 dan JA-09 (K-13 di SNX-HR-ORG-01) | Aziz; ditutup W9: owner 15 Okt memutus pemetaan Legal, label USULAN dan menunggu konfirmasi dihapus |
 | 16 | Acuan ISO: sembilan klausul (ISO 9001:2015 8.4.2, 8.4.3, 7.5.3; ISO/IEC 27001:2022 Annex A 5.19, 5.20, 5.22, 5.31, 5.34, 6.6), berlabel satu kali "(USULAN, perlu konfirmasi konsultan)" | owner, setelah konsultan |
 | 17 | Pemilik rekaman Line Manager Legal (kategori 4 untuk lembar dan kategori 1 untuk kontrak di SNX-LEG-SOP-03) dan retensi mengikuti SNX-LEG-SOP-03 | Legal |
 
@@ -201,6 +201,7 @@ Perintah: `python3 -I tools/render_sop.py template/SOP_TEMPLATE.docx specs/LEG-F
 | Tabel Peran, Staff Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Tabel Peran, Line Manager Legal | ... di SNX-HR-ORG-01, menunggu konfirmasi (K-13) (USULAN). | ... di SNX-HR-ORG-01. |
 | Dokumen Terkait, baris SNX-HR-ORG-01 | (JA-08, JA-09) (USULAN). | (JA-08, JA-09). |
+| R2: USULAN 15, notes | baris tanpa penanda W9 | ditambah "ditutup W9" di baris itu (alasan satu baris) |
 
 Open item:
 - Pemetaan Legal (USULAN K-13 di tabel USULAN dan catatan lama): ditutup W9: owner 15 Okt memutus Line Manager Legal = JA-08 Ester Febe Utomo, Staff Legal = JA-09 Alif Altamziz (LEAD G-3 A5); label USULAN dan menunggu konfirmasi pada pemetaan itu dihapus. USULAN lain tetap.

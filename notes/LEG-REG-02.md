@@ -99,7 +99,7 @@ Kode dokumen yang dirujuk di badan (12 kode, termasuk dirinya) dicek dengan skri
 
 | # | USULAN | Posisi | Pemutus yang disarankan |
 |---|---|---|---|
-| 1 | Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) di SNX-HR-ORG-01; "Legal dan Compliance" adalah pemilik dokumen | Istilah; Dokumen Terkait | Aziz (pemilik SNX-HR-ORG-01, K-13) |
+| 1 | Line Manager Legal dan Staff Legal adalah nama peran yang dipetakan ke jabatan Legal & Compliance (JA-08 dan JA-09) di SNX-HR-ORG-01; "Legal dan Compliance" adalah pemilik dokumen | Istilah; Dokumen Terkait | Aziz (pemilik SNX-HR-ORG-01, K-13); diubah W9: pemetaan peran ke JA-08 dan JA-09 diputus owner (LEAD G-3 A5); pemilik dokumen tetap USULAN |
 | 2 | "Manajemen" = Direktur Utama dan Direktur (COO), menggantikan "pejabat yang berwenang" | Istilah; Ketentuan butir 12 sampai 14 | Samuel |
 | 3 | Pengecualian lingkup: risiko keamanan informasi (SNX-ISMS-REG-02) dan risiko proyek (SNX-OPS-FRM-02) tidak dicatat; area 4 dan 5 hanya akibat hukum | Lingkup | Legal dan Fani |
 | 4 | Keterangan lima tingkat Dampak | Metode Penilaian 3.2 | Legal |
@@ -134,7 +134,7 @@ Kode dokumen yang dirujuk di badan (12 kode, termasuk dirinya) dicek dengan skri
 
 ## Asumsi
 
-1. "Departemen Legal dan Compliance" di sumber dibaca sebagai Line Manager Legal dan Staff Legal; peran tim sumber dipetakan ke nama peran di specs/HR-ORG-01.json (matriks peran: Line Manager Legal = JA-08, Staff Legal = JA-09, keduanya USULAN di sana).
+1. "Departemen Legal dan Compliance" di sumber dibaca sebagai Line Manager Legal dan Staff Legal; peran tim sumber dipetakan ke nama peran di specs/HR-ORG-01.json (matriks peran: Line Manager Legal = JA-08, Staff Legal = JA-09, keduanya USULAN di sana); diubah W9: pemetaan peran tidak lagi USULAN, pemetaan diputus owner (LEAD G-3 A5).
 2. Risiko berkategori Sedang memakai tabel Rencana Mitigasi untuk mencatat "tindakan pengendalian yang sesuai" (kategori Sedang di sumber menyebut tindakan pengendalian, tabel mitigasi sumber tidak membatasi kategori).
 3. "Unit kerja terkait" (penilaian bersama) dibaca sebagai Pemilik Risiko, karena Pemilik Risiko adalah peran unit tempat risiko timbul.
 4. Tabel mitigasi sumber dipecah dua (Rencana Mitigasi dan Pelaksanaan Mitigasi) hanya karena lebar halaman; kolom dan urutan sumber utuh.
@@ -199,7 +199,10 @@ Putaran perbaikan ISO-W9 (LEAD G-3 A5, hasil pemeriksa makna R457). Hanya butir 
 | A5, Istilah, baris Line Manager Legal | "... (JA-08) di SNX-HR-ORG-01 (USULAN)." | "... (JA-08) di SNX-HR-ORG-01." |
 | A5, Istilah, baris Staff Legal | "... (JA-09) di SNX-HR-ORG-01 (USULAN)." | "... (JA-09) di SNX-HR-ORG-01." |
 | A5, Dokumen Terkait, baris SNX-HR-ORG-01 | "... dasar pemetaan peran Line Manager Legal dan Staff Legal (USULAN)." | "... dasar pemetaan peran Line Manager Legal dan Staff Legal." |
+| R2, hygiene notes, USULAN 1 | tanpa penanda W9 pada baris | ditambah "diubah W9" pada baris itu |
+| R2, hygiene notes, Asumsi 1 | "keduanya USULAN di sana" tanpa penanda | ditambah "diubah W9" pada baris itu |
 
 Open item:
 
 - Open item 1 (pemetaan peran ke JA-08 dan JA-09): bagian pemetaan ditutup W9: diputus owner (LEAD G-3 A5). Bagian "Legal dan Compliance" sebagai pemilik dokumen tetap terbuka (pemutus Aziz).
+- R2: baris USULAN 1 dan Asumsi 1 kini memuat penanda W9 di barisnya sendiri; tidak ada baris dihapus.
