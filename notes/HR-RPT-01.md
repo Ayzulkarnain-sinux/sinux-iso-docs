@@ -145,7 +145,7 @@ Temuan pada draf pertama dan perbaikannya:
 - Draf pertama memakai "kolom Rujukan Rencana baris pelatihan itu di SNX-HR-FRM-02, dan mengosongkannya" dalam satu kalimat bertumpuk. Saya pecah jadi dua kalimat pendek (langkah 6.3). Peninjauan tahunan sempat tertulis di Peran dan di Kesimpulan; saya hapus dari Peran karena tempatnya di Kesimpulan.
 - Kelompok tiga yang tersisa: "pengetahuan, keterampilan, atau perilaku" (definisi Pelatihan dan Tujuan Pembelajaran), "materi, pelatih, dan penyelenggaraan" (E1), "nama, jabatan, dan unit" (kolom Daftar Hadir). Ketiganya adalah isi nyata, bukan tiga yang dipaksakan: tiga kelompok kompetensi sama dengan SNX-HR-FRM-01 dan tiga hal yang dinilai di umpan balik peserta. Saya biarkan dan catat di sini.
 - Sinonim: "evaluasi" dipakai untuk kegiatan dan tabel (Evaluasi Efektivitas, Tanggal Evaluasi Lanjutan) dan "menilai" untuk tindakan penilai; "pelatihan susulan" (untuk peserta Tidak Hadir) dan "pelatihan lanjutan" (untuk menutup kesenjangan) adalah dua hal berbeda. Kedua pasangan bisa terbaca sinonim; saya biarkan karena artinya berbeda dan sudah dipisah di butir 4.9 dan 4.10, tetapi verifikator perlu menilai.
-- Langkah 6.1 sampai 6.19 hampir semuanya diawali nama peran. Terbaca seragam, tetapi tiap langkah satu tindakan dan satu pelaku, sesuai RUNBOOK §6a.2. Saya biarkan. Beberapa langkah memuat dua kata kerja (6.6, 6.13, 6.14, 6.16) untuk satu keluaran yang sama; panjangnya di bawah sekitar 28 kata.
+- Langkah 6.1 sampai 6.19 hampir semuanya diawali nama peran. Terbaca seragam, tetapi tiap langkah satu tindakan dan satu pelaku, sesuai RUNBOOK §6a.2. Saya biarkan. Dua langkah memuat dua kata kerja (6.6 dan 6.16) untuk satu keluaran yang sama; panjangnya di bawah sekitar 28 kata.
 - Definisi "Pelatihan", "Peserta", dan skala nilai Hadir, Tidak Hadir bisa ditempel ke perusahaan mana pun. Itu sifat definisi dan nilai; tidak ada kalimat yang saya tambah untuk membuatnya terdengar meyakinkan, dan nilai berlabel USULAN.
 - Tidak ada pembuka generik, penutup positif, em-dash, en-dash, tebal, kutip penekanan, "tidak hanya ... tetapi juga", atau kosakata AI English. Lint gaya lulus (fails kosong).
 
@@ -157,3 +157,24 @@ Pertanyaan 2: adakah fakta, angka, nama, atau tanggal tanpa sumber?
 - Kode dan sistem: kelima kode SNX dari config/worklist.json dan specs terkait, bukan dari berkas Drive. Judul SNX-ISMS-PRO-01 dari specs/ISMS-PRO-01.json. Google Drive dari butir 4.8 SNX-ISMS-PRO-01. "Master list" dari butir 4.15 dokumen yang sama.
 - Tanpa sumber langsung: seluruh pembagian peran (U9), cakupan penyelenggara luar dan sesi awareness (U1), pengecualian pelatihan pelanggan (U2, dasar sebagian dari FRM-02), daftar nilai kolom (U10), lokasi rekaman (U11), klausul ISO beserta judulnya (U14). Semuanya berlabel USULAN di teks.
 - Sudah saya perbaiki di teks: tidak ada klaim "belum ada" untuk SOP Training & Development atau SNX-HR-FRM-02, tidak ada angka retensi, dan nilai kolom diberi label USULAN lewat satu kalimat di bawah judul tabelnya (draf pertama belum berlabel).
+
+## Sweep
+
+Putaran sweep 15 Okt 2026, butir 1 dari orkestrator: "pasif 4.5-4.7, isi bagian 4 terulang di bagian 6" (temuan nonblocking di qa/HR-RPT-01.verify.json). Fakta, angka, nama, struktur, dan label USULAN tidak berubah; kalimat bagian 4 yang pasif diberi pelaku (HRGA Officer atau HR Manager, sesuai Peran), dan langkah bagian 6 yang menyalin isi butir bagian 4 kini merujuk nomor butirnya. Satu butir diubah, 10 kalimat spec berubah (tiap sebelum dan sesudah di bawah).
+
+| Letak | Sebelum | Sesudah |
+|---|---|---|
+| 4.5 | "Setiap aspek diisi metode, bukti, dan ringkasan hasil, dan bukti disimpan bersama laporan terisi." | "HRGA Officer mencatat metode, bukti, dan ringkasan hasil tiap aspek." (penyimpanan bukti tetap di langkah 6.19 dan bagian 8) |
+| 4.6 | "E1 dan E2 diisi sesudah pelatihan selesai. E3 dan E4 diisi pada Tanggal Evaluasi Lanjutan, yang ditentukan HR Manager untuk tiap pelatihan (USULAN)." | "HRGA Officer mencatat hasil E1 dan E2 sesudah pelatihan selesai, dan hasil E3 dan E4 pada Tanggal Evaluasi Lanjutan. HR Manager menetapkan tanggal itu untuk tiap pelatihan (USULAN)." ("ditentukan" jadi "menetapkan", sama dengan butir 4.3, langkah 6.1, dan Peran) |
+| 4.7 | "Aspek yang tidak dinilai diisi Tidak Dinilai pada Ringkasan Hasil, dengan alasan di kolom Catatan. Hasil yang tidak punya bukti tidak ditulis." | "HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil untuk aspek yang tidak dinilai, dan di Status Hasil untuk peserta yang tidak dinilai, dengan alasan di kolom Catatan. HRGA Officer tidak menulis hasil yang tidak punya bukti." |
+| 6.1 | "... Tanggal Evaluasi Lanjutan sebelum pelatihan dimulai." | "... Tanggal Evaluasi Lanjutan (butir 4.3 dan 4.6)." |
+| 6.5 | "Peserta menandatangani Daftar Hadir pada hari pelatihan." | "Peserta menandatangani Daftar Hadir (butir 4.4)." |
+| 6.11 | "HRGA Officer mencatat metode, bukti, dan ringkasan hasil E1 sampai E4 di tabel Evaluasi Efektivitas per Aspek." | "HRGA Officer mengisi tabel Evaluasi Efektivitas per Aspek untuk E1 sampai E4 (butir 4.5 dan 4.6)." |
+| 6.13 | "HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil atau Status Hasil, dan alasannya di kolom Catatan, untuk aspek atau peserta yang tidak dinilai." | "HRGA Officer mengisi Tidak Dinilai untuk aspek atau peserta yang tidak dinilai (butir 4.7)." |
+| 6.14 | "HR Manager membandingkan hasil dengan Kriteria Keberhasilan, lalu menulis Kesimpulan Efektivitas, Dasar Kesimpulan, dan Kesenjangan yang ditemukan." | "HR Manager mengisi tabel Kesimpulan Efektivitas (butir 4.8)." |
+| 6.15 | "HR Manager menetapkan tindakan, penanggung jawab, dan target selesai untuk tiap Kesenjangan." | "HR Manager menetapkan tindakan atas tiap Kesenjangan (butir 4.9)." |
+| Peran, baris HRGA Officer | "(butir 4.2, 4.5, 4.9, dan 4.11)" | "(butir 4.2, 4.5 sampai 4.7, 4.9, dan 4.11)" (karena 4.6 dan 4.7 kini menyebut HRGA Officer) |
+
+Tidak diubah, sesuai batas putaran: butir nonblocking lain di verify.json (sinonim "penilaian" dan "evaluasi", bukti hadir daring, pembanding Status Hasil, status SOP Training & Development, cakupan SNX-ISMS-PRO-01, dan selarasnya SNX-HR-FRM-02 butir 4.4). Semuanya tetap tercatat di Open items atau menunggu putaran berikut; tidak ada fakta baru dan tidak ada USULAN baru.
+
+Uji sesudah sweep: render_sop.py = ok; lint_doc.py generic = "pass": true, fails kosong, satu warn (18 label USULAN); validate.py = "All validations PASSED!" (528 paragraf); reports/orch/blankscan.py = "ok 12 HR-RPT-01.docx []".

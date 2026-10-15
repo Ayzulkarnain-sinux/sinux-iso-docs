@@ -1695,10 +1695,10 @@
    "open_items": [
     "Sweep (b): istilah pengolahan A.1, approval/persetujuan, Legal tanpa definisi; E.2 dan B.4 merangkum ISMS-PRO-01 terlalu luas; baris HR-ORG-01 menyebut peran sebagai jabatan (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:58:48Z",
+   "updated_at": "2026-10-15T00:58:52Z",
    "pen_agent": "abeadc3abe601e504",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 50,
@@ -1816,7 +1816,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-HR-RPT-01",
    "out_path": "out/02_HR/SNX-HR-RPT-01 Training Attendance & Training Evaluation Report (Rev00 DRAFT).docx",
    "sources": [],
@@ -1827,7 +1827,7 @@
    "open_items": [
     "Sweep (b): pasif 4.5-4.7, isi bagian 4 terulang di bagian 6 (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:57:23Z",
+   "updated_at": "2026-10-15T00:59:24Z",
    "pen_agent": "a659092717855c2b3",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -1960,7 +1960,7 @@
    "dept": "COM",
    "action": "T2",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-COM-FRM-01",
    "out_path": "out/05_Commercial/SNX-COM-FRM-01 Customer Requirement & Order Review Record (Rev00 DRAFT).docx",
    "sources": [],
@@ -1972,9 +1972,10 @@
     "Process Owner Direktur (aturan defaults dokumen baru) vs VP Commercial di COM-SOP-01/02 (sumber); pemutus owner",
     "Sweep (a): C3.2 merujuk COM-SOP-02 butir 4.15, sumber wewenang COO ada di butir 4.7 (USULAN)"
    ],
-   "updated_at": "2026-10-15T00:10:40Z",
+   "updated_at": "2026-10-15T00:58:52Z",
    "pen_agent": "a7326440322dc022c",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 61,

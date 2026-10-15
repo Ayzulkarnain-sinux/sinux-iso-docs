@@ -252,13 +252,13 @@
      "p": "4.4 Tanda tangan peserta pada Daftar Hadir di hari pelatihan menjadi bukti kehadiran (USULAN)."
     },
     {
-     "p": "4.5 Evaluasi efektivitas memakai empat aspek, E1 sampai E4 (USULAN). Setiap aspek diisi metode, bukti, dan ringkasan hasil, dan bukti disimpan bersama laporan terisi."
+     "p": "4.5 Evaluasi efektivitas memakai empat aspek, E1 sampai E4 (USULAN). HRGA Officer mencatat metode, bukti, dan ringkasan hasil tiap aspek."
     },
     {
-     "p": "4.6 E1 dan E2 diisi sesudah pelatihan selesai. E3 dan E4 diisi pada Tanggal Evaluasi Lanjutan, yang ditentukan HR Manager untuk tiap pelatihan (USULAN)."
+     "p": "4.6 HRGA Officer mencatat hasil E1 dan E2 sesudah pelatihan selesai, dan hasil E3 dan E4 pada Tanggal Evaluasi Lanjutan. HR Manager menetapkan tanggal itu untuk tiap pelatihan (USULAN)."
     },
     {
-     "p": "4.7 Aspek yang tidak dinilai diisi Tidak Dinilai pada Ringkasan Hasil, dengan alasan di kolom Catatan. Hasil yang tidak punya bukti tidak ditulis."
+     "p": "4.7 HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil untuk aspek yang tidak dinilai, dan di Status Hasil untuk peserta yang tidak dinilai, dengan alasan di kolom Catatan. HRGA Officer tidak menulis hasil yang tidak punya bukti."
     },
     {
      "p": "4.8 HR Manager membandingkan hasil E1 sampai E4 dengan Kriteria Keberhasilan dan menetapkan Kesimpulan Efektivitas, sesuai uraian jabatan HR Manager di SNX-HR-JA-01 (JA-14 butir 5)."
@@ -297,7 +297,7 @@
        ],
        [
         "HRGA Officer",
-        "Mencatat penetapan HR Manager, data pelatihan, kehadiran, hasil evaluasi, dan tindak lanjut di laporan. Mengumpulkan bukti dan menyimpan laporan terisi (butir 4.2, 4.5, 4.9, dan 4.11)."
+        "Mencatat penetapan HR Manager, data pelatihan, kehadiran, hasil evaluasi, dan tindak lanjut di laporan. Mengumpulkan bukti dan menyimpan laporan terisi (butir 4.2, 4.5 sampai 4.7, 4.9, dan 4.11)."
        ],
        [
         "Peserta",
@@ -324,7 +324,7 @@
    "h": "Petunjuk Pengisian",
    "blocks": [
     {
-     "p": "6.1 HR Manager menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan sebelum pelatihan dimulai."
+     "p": "6.1 HR Manager menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan (butir 4.3 dan 4.6)."
     },
     {
      "p": "6.2 HRGA Officer mencatat penetapan itu dan data pelatihan di tabel Informasi Pelatihan: judul, jenis menurut daftar di SNX-HR-FRM-02, penyelenggara, pelatih, tanggal, dan lokasi atau media."
@@ -336,7 +336,7 @@
      "p": "6.4 HRGA Officer menulis nama, jabatan, dan unit peserta terdaftar di Daftar Hadir."
     },
     {
-     "p": "6.5 Peserta menandatangani Daftar Hadir pada hari pelatihan."
+     "p": "6.5 Peserta menandatangani Daftar Hadir (butir 4.4)."
     },
     {
      "p": "6.6 HRGA Officer mengisi Status Kehadiran tiap peserta dari tanda tangan itu, dan menulis alasan peserta Tidak Hadir di kolom Keterangan."
@@ -354,19 +354,19 @@
      "p": "6.10 Atasan langsung peserta menilai penerapan dan hasil pekerjaan pada Tanggal Evaluasi Lanjutan, lalu menyerahkan penilaiannya ke HRGA Officer."
     },
     {
-     "p": "6.11 HRGA Officer mencatat metode, bukti, dan ringkasan hasil E1 sampai E4 di tabel Evaluasi Efektivitas per Aspek."
+     "p": "6.11 HRGA Officer mengisi tabel Evaluasi Efektivitas per Aspek untuk E1 sampai E4 (butir 4.5 dan 4.6)."
     },
     {
      "p": "6.12 HRGA Officer mencatat hasil E2 sampai E4 tiap peserta di tabel Hasil per Peserta, dengan nama sama seperti di Daftar Hadir."
     },
     {
-     "p": "6.13 HRGA Officer menulis Tidak Dinilai di Ringkasan Hasil atau Status Hasil, dan alasannya di kolom Catatan, untuk aspek atau peserta yang tidak dinilai."
+     "p": "6.13 HRGA Officer mengisi Tidak Dinilai untuk aspek atau peserta yang tidak dinilai (butir 4.7)."
     },
     {
-     "p": "6.14 HR Manager membandingkan hasil dengan Kriteria Keberhasilan, lalu menulis Kesimpulan Efektivitas, Dasar Kesimpulan, dan Kesenjangan yang ditemukan."
+     "p": "6.14 HR Manager mengisi tabel Kesimpulan Efektivitas (butir 4.8)."
     },
     {
-     "p": "6.15 HR Manager menetapkan tindakan, penanggung jawab, dan target selesai untuk tiap Kesenjangan."
+     "p": "6.15 HR Manager menetapkan tindakan atas tiap Kesenjangan (butir 4.9)."
     },
     {
      "p": "6.16 HRGA Officer mencatat penetapan itu di tabel Tindak Lanjut, dan memperbarui kolom Status sampai Selesai."

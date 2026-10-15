@@ -1,0 +1,16 @@
+{
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  {
+   "lokasi": "Langkah 6.1 (dengan butir 4.3 dan 4.6)",
+   "masalah": "Frasa \"sebelum pelatihan dimulai\" dihapus dari 6.1 saat isi ulangan diganti rujukan butir. Untuk Tujuan Pembelajaran dan Kriteria Keberhasilan batas waktu itu tetap ada di 4.3. Untuk Tanggal Evaluasi Lanjutan, batas waktunya kini tidak tertulis eksplisit di mana pun: 4.6 hanya menulis \"HR Manager menetapkan tanggal itu untuk tiap pelatihan (USULAN)\". Urutan langkah (6.1 sebelum 6.5, tanda tangan Daftar Hadir) masih menyiratkannya, jadi makna tidak berubah secara substantif. Usul: tambahkan \"sebelum pelatihan dimulai\" di 4.6.",
+   "bukti": "Sebelum 6.1: \"HR Manager menetapkan Tujuan Pembelajaran, Kriteria Keberhasilan, dan Tanggal Evaluasi Lanjutan sebelum pelatihan dimulai.\" Sesudah 6.1: \"... dan Tanggal Evaluasi Lanjutan (butir 4.3 dan 4.6).\" 4.3: \"HR Manager menetapkan Tujuan Pembelajaran dan Kriteria Keberhasilan sebelum pelatihan dimulai\". Docx out/ memuat \"sebelum pelatihan dimulai\" 2 kali (4.3 dan Definisi Kriteria Keberhasilan), tidak ada untuk Tanggal Evaluasi Lanjutan."
+  },
+  {
+   "lokasi": "Butir 4.7, kalimat kedua",
+   "masalah": "Larangan umum \"Hasil yang tidak punya bukti tidak ditulis\" menjadi larangan untuk HRGA Officer saja. Cakupannya sedikit menyempit: HR Manager yang menulis Dasar Kesimpulan di tabel Kesimpulan Efektivitas (6.14) tidak lagi terikat secara tertulis. Tetap sejalan dengan 6.11 dan 6.12 (HRGA Officer mencatat hasil E1 sampai E4), jadi tidak memblokir.",
+   "bukti": "Sebelum: \"Hasil yang tidak punya bukti tidak ditulis.\" Sesudah: \"HRGA Officer tidak menulis hasil yang tidak punya bukti.\""
+  }
+ ]
+}
