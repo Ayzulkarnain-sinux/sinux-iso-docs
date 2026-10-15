@@ -44,7 +44,7 @@
     "Kontrol Dokumen!B36": "Finance Staff",
     "Kontrol Dokumen!B37": "Finance Lead",
     "Kontrol Dokumen!B38": "Samuel Kristanto Utomo / President Director",
-    "AR Aging!A2": "Nilai dalam IDR. Finance Staff memantau klien Gov / SOE yang lambat membayar. PPN = DPP x 12% (USULAN). Amount (IDR): Enterprise = DPP + PPN - PPh 23; Gov / SOE = DPP - PPN - PPh 22.",
+    "AR Aging!A2": "Dalam IDR. Finance Staff memantau klien Gov / SOE yang lambat membayar. PPN = DPP x 12% (USULAN). Amount (IDR): Enterprise = DPP + PPN - PPh 23; Gov / SOE = DPP - PPN - PPh 22 (menunggu konfirmasi FAT).",
     "AP Aging!A2": "All amounts IDR."
   }
 }

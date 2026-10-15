@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "AR Aging!A2 (penanda rumus Gov / SOE), butir 1",
+      "masalah": "Butir 1 dikerjakan sebagian. Instruksi meminta penanda yang memuat hitungan WAPU, atau bunyi SNX-FAT-SOP-05 persis bila SOP berbunyi lain. Yang tertulis hanya '(menunggu konfirmasi FAT)', tanpa bunyi SOP-05. Cek penyusun benar: SOP-05 tidak memuat hitungan dan tidak menyebut PPh 22, jadi kalimat 'DPP - PPh 22' memang tidak boleh diatribusikan ke SOP-05. Bunyi SOP-05 hanya dicatat di notes Open item 13. Alasan yang dicatat penyusun: kapasitas sel gabungan sekitar 205 karakter.",
+      "bukti": "Keluaran A2 (202 karakter): '... Gov / SOE = DPP - PPN - PPh 22 (menunggu konfirmasi FAT).'; specs/FAT-SOP-05.json baris 27: 'PPN Pemungut (WAPU/Kode 02) atas transaksi dengan Instansi Pemerintah atau BUMN'; grep -c 'PPh 22' specs/FAT-SOP-05.json = 0; notes bagian Sweep butir 1."
+    },
+    {
+      "lokasi": "AR Aging!A2 (kalimat pembuka)",
+      "masalah": "Ada perubahan di luar butir instruksi ('Jangan mengubah hal lain'): 'Nilai dalam IDR.' dipendekkan menjadi 'Dalam IDR.' supaya teks muat di sel. Makna tidak berubah dan alasannya tercatat di notes Sweep. Akibatnya AR Aging A2 dan AP Aging A2 ('All amounts IDR.') tetap tidak seragam, seperti temuan pemeriksa sebelumnya.",
+      "bukti": "Diff baris 59: '-Nilai dalam IDR.' menjadi '+Dalam IDR.'; AP Aging!A2 di patch: 'All amounts IDR.'."
+    }
+  ]
+}
