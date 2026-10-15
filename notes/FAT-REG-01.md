@@ -63,7 +63,7 @@ grep fileId sumber ke context/audit/*.md: nol baris. Tidak ada catatan cacat khu
 | 2, 3 | Penyusun, pemeriksa, penyetuju orang yang sama; ejaan nama Direktur Utama | Blok Pengesahan | Tiga peran berbeda (Finance Staff, Finance Lead, Samuel Kristanto Utomo / President Director); ejaan "Kristanto" |
 | 1, 6, 7, 9, 10, 13, 14 | Kontrol dokumen kosong, definisi dokumen pendukung, urutan proses, lampiran hilang, lingkup, klausul, sisa LaTeX | Tidak berlaku untuk isi register | Tidak ada tindakan |
 
-Perbaikan lintas dokumen yang berlaku: baris sampel dibuang (AR 5 dan 6, AP 6); tiga penanda tangan berbeda; PPN satu rumusan; ejaan Samuel. Tidak berlaku di berkas ini karena istilahnya tidak muncul di sheet: tiket Zammad dan GLPI, vault, kunci backup, sebutan COO, nama Fani. Tidak ada rujukan internal AI di sumber.
+Perbaikan lintas dokumen yang berlaku: baris sampel dibuang (AR 5 dan 6, AP 6; diubah W9: AP 6 dan 7, A10); tiga penanda tangan berbeda; PPN satu rumusan; ejaan Samuel. Tidak berlaku di berkas ini karena istilahnya tidak muncul di sheet: tiket Zammad dan GLPI, vault, kunci backup, sebutan COO, nama Fani. Tidak ada rujukan internal AI di sumber.
 
 ## 4. Asumsi
 
@@ -72,7 +72,7 @@ Perbaikan lintas dokumen yang berlaku: baris sampel dibuang (AR 5 dan 6, AP 6); 
 3. Tanggal draft 15 Oktober 2026 adalah tanggal hari penyusunan (tanggal sesi), bukan tanggal dari Drive, dan bukan tanggal efektif. Tidak ada tanggal mundur.
 4. Dasar tiap langkah Cara pakai (semua dari SOP Billing lewat salinan audit, pelaku Finance Staff mengikuti peran Maker di SOP itu): (1) "Update Register Penagihan: catat transaksi ke Register Penagihan dan Penjualan (AR Tracker)"; (2) "Staff Finance memperbarui Google Sheets Register Penagihan dan Penjualan secara real-time setiap perubahan status invoice"; (3) "pemantauan harian arus kas masuk via KlikBCA Bisnis" dan "memperbarui status menjadi LUNAS"; kata "mengisi Date Paid" adalah kesimpulan saya dari nama kolom, bukan kutipan; (4) "mencatat estimasi pemotongan di Register Penagihan dan merekonsiliasi saat Bukti Potong (Bupot) diterima dari klien". Langkah 4 sengaja hanya menyebut PPh 23 karena SOP tidak menyebut PPh 22.
 5. Kalimat di sumber yang berbunyi perintah ("Watch government / SOE slow-payers.") adalah isi sheet untuk pengguna, bukan arahan ke penyusun. Tidak dijalankan sebagai instruksi; isinya dibawa ke AR Aging A2 sebagai kalimat Indonesia dengan pelaku Finance Staff, peran yang memantau kas masuk di SOP Billing (USULAN 8). Tidak ada kalimat lain di sumber yang ditujukan ke penyusun atau alat.
-6. Baris AP Aging 7 ("PPN August") berisi nilai uang nyata, jadi dipertahankan walau berada di luar kriteria. Isinya tidak disalin ke notes ini.
+6. Baris AP Aging 7 ("PPN August") berisi nilai uang nyata, jadi dipertahankan walau berada di luar kriteria. Isinya tidak disalin ke notes ini. Diubah W9: baris 7 dikosongkan (A10), rumus J7, K7, M7 tetap; asumsi "dipertahankan" tidak berlaku lagi.
 
 ## USULAN
 
@@ -82,23 +82,23 @@ Perbaikan lintas dokumen yang berlaku: baris sampel dibuang (AR 5 dan 6, AP 6); 
 | 2 | Masa simpan register minimal 10 tahun. Angka 10 tahun di SOP Billing bagian 8.2 berlaku untuk berkas penagihan; register tidak disebut di kalimat itu. | Diterapkan (B14) | FAT |
 | 3 | PPN = DPP x 12%, mengganti 11% di sampel. | Diterapkan (AR Aging!A2) | FAT |
 | 4 | Aturan Amount (IDR) per jenis klien ditulis di A2 dari sampel tim agar tidak hilang saat baris sampel dikosongkan: Enterprise = DPP + PPN - PPh 23 (I5); Gov / SOE = DPP - PPN - PPh 22 (I6). Rumus dibawa persis dari sumber dan rumus Gov / SOE diberi penanda "(menunggu konfirmasi FAT)" karena hitungannya tidak terbukti cocok dengan SNX-FAT-SOP-05 (Open item 13). | Diterapkan (AR Aging!A2) | FAT |
-| 5 | Pemilik dokumen Finance Lead; Disusun Finance Staff; Diperiksa Finance Lead. | Diterapkan (B10, B36, B37, D31) | owner |
+| 5 | Pemilik dokumen Finance Lead; Disusun Finance Staff; Diperiksa Finance Lead. | Diterapkan (B10, B36, B37, D31); diubah W9: B37 kini Amirull Yusuf Zulkarnain / Direktur (A6) | owner |
 | 6 | Penyetuju Samuel Kristanto Utomo / President Director (defaults D2; pembalik: disetujui COO bila owner memutus). | Diterapkan (B11, B38) | owner atau Samuel |
 | 7 | Register ini sama dengan "Register Penagihan dan Penjualan" di SNX-FAT-SOP-01, sehingga SOP itu merujuk SNX-FAT-REG-01 pada tabel rekamannya. | Diterapkan secara tersirat di Cara pakai; SOP tidak diubah (di luar bidang tulis) | FAT |
 | 8 | Kalimat tim "Watch government / SOE slow-payers." dipindah dari AP Aging ke AR Aging dan ditulis ulang menjadi "Finance Staff memantau klien Gov / SOE yang lambat membayar." Pelaku Finance Staff mengikuti peran pemantau kas masuk di SOP Billing; sumber tidak menyebut pelaku kalimat itu. Bagian "the main cash risk at your stage" dibuang karena tidak bersumber. | Diterapkan (AR Aging!A2, AP Aging!A2) | FAT |
-| 9 | AP Aging baris 6 dikosongkan karena memuat placeholder "xxxx". Bila baris itu data nyata, pulihkan dari Drive. | Diterapkan (clear_rows) | FAT |
-| 10 | Rumus untuk Days overdue dan Status di AR Aging, seperti rumus di AP Aging. AR Aging tidak punya rumus sama sekali. | Hanya diusulkan | FAT |
-| 11 | Perluas validasi data Client type dan Status di AR Aging dari K5:L6 ke baris 5 sampai 1000 (AP memakai rentang sampai 1000). | Hanya diusulkan (alat tidak menambah validasi) | FAT |
+| 9 | AP Aging baris 6 dikosongkan karena memuat placeholder "xxxx". Bila baris itu data nyata, pulihkan dari Drive. | Diterapkan (clear_rows); diubah W9: cakupan menjadi baris 6 dan 7 (A10) | FAT |
+| 10 | Rumus untuk Days overdue dan Status di AR Aging, seperti rumus di AP Aging. AR Aging tidak punya rumus sama sekali. | Hanya diusulkan; diubah W9: rumus Days overdue AR Aging!J5:J1000 diterapkan (A10), Status tetap dropdown tanpa rumus | FAT |
+| 11 | Perluas validasi data Client type dan Status di AR Aging dari K5:L6 ke baris 5 sampai 1000 (AP memakai rentang sampai 1000). | Hanya diusulkan (alat tidak menambah validasi); ditutup W9: validasi K dan L diperluas sampai baris 1000 (A10) | FAT |
 | 12 | Pindahkan sheet AP Aging ke register utang usaha tersendiri, atau hapus bila bukan bagian SINUX. | Hanya diusulkan (alat tidak menghapus sheet) | FAT |
 | 13 | Petunjuk pengisian Action / notes untuk tindak lanjut invoice Overdue, ditulis setelah SOP Account Receivable & Collection selesai ditinjau. | Hanya diusulkan | FAT |
 | 14 | Satu daftar Status beserta ambangnya: AR Aging "On track, At risk, Overdue, Escalate, Paid, Partially Paid"; AP Aging "On Track, Overdue, Paid"; SNX-FAT-SOP-01 butir 4.13 "Draf, Terkirim, Lunas, atau Cancel". | Hanya diusulkan | FAT |
 
-Jumlah USULAN: 14 (sembilan diterapkan di berkas, lima hanya diusulkan).
+Jumlah USULAN: 14 (sembilan diterapkan di berkas, lima hanya diusulkan; diubah W9: USULAN 10 sebagian dan 11 kini diterapkan).
 
 ## Open items
 
 1. Identitas register: apakah berkas ini Lampiran 4 SOP Billing atau register berbeda dari "Register Penagihan dan Penjualan" yang dipakai SNX-FAT-SOP-01. SOP itu menyebut register dengan nama lain dan "Belum bernomor". Pemutus: FAT.
-2. Sheet AP Aging (utang usaha) ada di berkas, di luar kriteria "piutang dari customer". Dipertahankan; baris 7 berisi nilai nyata. Di sumber, teks "Gov / SOE" pada L7 berfont putih sehingga tidak terlihat. Rumus aging AP menghitung usia sejak Invoice date dan terus bertambah walau baris sudah Paid. Label A3 "TOTAL" hanya menjumlahkan baris Paid. Pemutus: FAT.
+2. Sheet AP Aging (utang usaha) ada di berkas, di luar kriteria "piutang dari customer". Dipertahankan; baris 7 berisi nilai nyata. Di sumber, teks "Gov / SOE" pada L7 berfont putih sehingga tidak terlihat. Rumus aging AP menghitung usia sejak Invoice date dan terus bertambah walau baris sudah Paid. Label A3 "TOTAL" hanya menjumlahkan baris Paid. Pemutus: FAT. **Status: diubah W9: baris 7 AP Aging dikosongkan (A10); sheet AP Aging tetap ada, keputusan FAT tetap terbuka.**
 3. Validasi data AR Aging hanya menutup K5:K6 dan L5:L6; baris 7 ke bawah tidak punya dropdown, padahal register harus memuat semua piutang. Days overdue dan Status di AR tanpa rumus. Alat patch tidak menambah validasi atau rumus. Format sel input (border) juga hanya ada di baris 5 dan 6. Pemutus: FAT; perbaikan alat: LEAD. **Status: ditutup W9: validasi K dan L, format input, dan rumus Days overdue diperpanjang sampai baris 1000 (A10), Status tetap dropdown tanpa rumus.**
 4. Tiga kosakata status (USULAN 14) dan ambang yang tidak tertulis untuk AR. Ambang AP (30, 60, 90 hari) dihitung sejak Invoice date, bukan sejak Due date, dan tidak cocok dengan TOP 14 hari di SOP Billing. Pemutus: FAT.
 5. Tarif PPN 12% (USULAN) menggantikan 11% di sampel; SOP Billing sendiri menulis 11% di satu bagian dan 12% di bagian lain. Perlu konfirmasi tarif dan dasar hitungnya. Rumus Amount klien Gov / SOE dibawa seperti sumber (PPN dikurangkan); apakah itu perlakuan PPN Pemungut yang berlaku, dan apakah 11% di sampel adalah tarif efektif dengan DPP Nilai Lain atau tarif lama, perlu diputus. Pemutus: FAT.
@@ -139,6 +139,9 @@ Uji: `python3 -I tools/xlsx_patch.py /tmp/src/FAT-REG-01.xlsx specs/FAT-REG-01.p
 | extend_validation AR Aging | K5:K6, L5:L6 | K5:K1000, L5:L1000 |
 | copy_row_style AR Aging | baris 5 dan 6 saja | gaya baris 5 disalin ke baris 7 sampai 1000 |
 | fill_formula AR Aging!J5:J1000 | kosong | =IF(D{r}="", "", TODAY() - D{r}) |
+| R2: Kontrol Dokumen!B24 | catatan Days overdue tanpa label di sel ini | label "(USULAN)" ditambahkan di akhir kalimat; teks lain tetap |
+| R2: Kontrol Dokumen!B25 | catatan Days overdue tanpa label di sel ini | label "(USULAN)" ditambahkan di akhir kalimat; teks lain tetap |
+| R2: Open item 2, Asumsi 6, USULAN 5, 9, 10, 11, jumlah USULAN, baris perbaikan lintas dokumen | tanpa tanda W9 di baris itu sendiri atau tidak akurat sesudah A10 | tiap baris memuat "diubah W9" atau "ditutup W9" beserta alasan |
 
 Sel B16 dan B23 tidak dibungkus teks; teks satu baris meluber ke kolom C sampai E yang kosong. B24 sampai B26 tidak dibungkus teks (sama seperti B16 dan B23), tiap sel satu kalimat yang muat satu baris; baris 32 tetap baris kosong tabel Riwayat revisi.
 

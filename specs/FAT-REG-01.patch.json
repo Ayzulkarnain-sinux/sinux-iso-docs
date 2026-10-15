@@ -49,8 +49,8 @@
     "AP Aging!A2": "All amounts IDR.",
     "Kontrol Dokumen!B16": "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).",
     "Kontrol Dokumen!B23": "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN).",
-    "Kontrol Dokumen!B24": "Days overdue = TODAY() dikurangi Due date, mengikuti pola rumus kolom Aging di AP Aging (AP memakai Invoice date).",
-    "Kontrol Dokumen!B25": "Nilai negatif berarti belum jatuh tempo; baris yang sudah dibayar tetap terhitung.",
+    "Kontrol Dokumen!B24": "Days overdue = TODAY() dikurangi Due date, mengikuti pola rumus kolom Aging di AP Aging (AP memakai Invoice date) (USULAN).",
+    "Kontrol Dokumen!B25": "Nilai negatif berarti belum jatuh tempo; baris yang sudah dibayar tetap terhitung (USULAN).",
     "Kontrol Dokumen!B26": "Acuan tanggal dan perlakuan invoice lunas diputus FAT (USULAN)."
   },
   "extend_validation": {

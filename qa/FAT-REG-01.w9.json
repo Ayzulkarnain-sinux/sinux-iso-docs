@@ -2,32 +2,33 @@
  "key": "FAT-REG-01",
  "cluster": "FAT-X",
  "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
- "putaran_pemeriksaan": 2,
+ "putaran_pemeriksaan": 3,
  "putaran_perbaikan": 1,
  "verdict": "PASS",
  "blocking": [],
  "nonblocking": [
-  "Tata letak Kontrol Dokumen: definisi Finance Lead ada di B16 (baris tanpa label, tepat di bawah Tujuan A15) dan definisi Finance Staff ada di B23, jadi dua definisi terpisah di dua area. B23 sampai B26 tidak punya judul, sehingga definisi Finance Staff dan catatan Days overdue tampak sebagai satu blok. Tidak ada label yang tertimpa. Perlu dicek manusia.",
-  "Catatan USULAN Days overdue dipecah ke B24, B25, dan B26 menurut kalimat. Label (USULAN) hanya ada di B26, jadi B24 dan B25 kalau dibaca sendiri tampak sebagai fakta. Teksnya tetap persis sama dengan instruksi bila disambung.",
-  "B16 dan B23 sampai B26 tidak dibungkus teks (wrap None) dan tinggi barisnya default atau 15. Teks satu baris (sekitar 120 sampai 127 karakter) meluber ke kolom C sampai E yang kosong (lebar B sampai E kira-kira 136). Di layar teks terlihat. Apakah terpotong saat dicetak atau diekspor ke PDF belum diperiksa (HUMAN-VERDICT).",
-  "Garis border sisa swatch legenda di A25 sampai A27 kini bersebelahan dengan teks catatan B25 dan B26. Ini kosmetik dan LEAD sudah memutus untuk dibiarkan.",
-  "Notes FAT-REG-01 tidak konsisten: Open item 2 ('baris 7 berisi nilai nyata') dan Asumsi 6 ('Baris AP Aging 7 ... dipertahankan') masih menyatakan baris 7 AP dipertahankan, padahal sesudah A10 baris itu dikosongkan. Statusnya tidak diperbarui. Hanya notes yang terdampak, makna dokumen tidak.",
-  "J5 sampai J1000 di AR Aging tidak punya border kiri, sedangkan K sampai M punya. Ini hasil copy_row_style dari baris 5. Kosmetik."
+  "Kontrol Dokumen B16, B23 sampai B26 tidak dibungkus teks (wrap_text None, tinggi baris bawaan sekitar 15). B16 berisi 131 karakter dan B24 berisi 123 karakter pada kolom B selebar 70, jadi teks meluber ke C sampai E yang kosong. Keterbacaan bergantung pada sel di kanannya tetap kosong; tidak ada label yang tertimpa. Notes sudah mencatat ini.",
+  "B16 (definisi Finance Lead) ada di baris tanpa label, di antara Tujuan (B15) dan Cara pakai (A17), sehingga pembaca bisa mengira B16 lanjutan Tujuan. B23 sampai B26 juga tanpa label di kolom A. Kosmetik, posisinya sesuai butir A6 (sel kosong di area keterangan/cara pakai).",
+  "Kalimat catatan USULAN 'baris yang sudah dibayar tetap terhitung' adalah pasif tanpa pelaku. Teksnya disalin persis dari butir A10, jadi bukan pelanggaran penyusun.",
+  "AP Aging mempertahankan validasi M6:M7 berupa dropdown di atas sel M7 yang berisi rumus. Ini sudah ada sebelum W9 dan W9 tidak mengubahnya.",
+  "Open item 9 di notes masih menyebut A25 sampai A27 sebagai kotak kosong bekas swatch, padahal B24 sampai B26 kini berisi catatan USULAN. Statusnya sudah 'ditutup W9', hanya uraiannya yang tidak diperbarui."
  ],
  "butir_dikerjakan": [
-  "A6: Kontrol Dokumen B37 (Diperiksa oleh) = 'Amirull Yusuf Zulkarnain / Direktur'. B36 Disusun tetap 'Finance Staff', B10 Pemilik tetap 'Finance Lead', B38 dan B11 = 'Samuel Kristanto Utomo / President Director'. Semua sesuai defaults v22 prepared_reviewed.FAT dan approved_by.all.",
-  "A6: definisi Finance Lead (B16) dan Finance Staff (B23) persis sama dengan teks instruksi, sejalan dengan data_conflicts v22 'Peran Finance Lead dan Finance Staff', dan tidak menimpa label.",
-  "A10: extend_validation AR Aging K5:K6 menjadi K5:K1000 dan L5:L6 menjadi L5:L1000, persis instruksi. Di render, DV-nya L5:L1000 dan K5:K1000.",
-  "A10: copy_row_style AR Aging dari baris 5 ke rows [7, 1000], persis. Di render, border dan number format terbawa sampai baris 1000.",
-  "A10: fill_formula AR Aging!J rows [5, 1000] dengan rumus =IF(D{r}=\"\", \"\", TODAY() - D{r}), persis. Di render ada 996 rumus (J5 sampai J1000).",
-  "A10: clear_rows AP Aging diubah menjadi [6, 7]. Isi A7, C7, D7, F7 sampai I7, dan L7 ('PPN August') hilang. Rumus J7, K7, dan M7 tetap.",
-  "A10: Status AR (kolom L) tetap dropdown dengan 0 rumus.",
-  "A10: catatan USULAN Days overdue ditambahkan di B24 sampai B26 dengan teks persis instruksi (dipecah per kalimat). Isinya cocok dengan rumus AP J ('TODAY() - C', C = Invoice date) dan AR J ('TODAY() - D', D = Due date).",
-  "Notes: bagian ISO-W9 berisi tabel perubahan. Open item 3 ditutup W9 (A10), 9 ditutup W9 (kosmetik, keputusan LEAD), 10 ditutup W9 (keterbatasan tata letak, hubungan ke SNX-FAT-SOP-01 di notes), dan 8 diubah W9. Baris open item lama tidak dihapus.",
-  "Tidak ada perubahan lain di diff teks selain butir di atas. Tidak ada rujukan silang yang diubah atau ditambah. Tidak ada fakta baru di luar teks instruksi, defaults v22, dan struktur rumus yang sudah ada."
+  "A6: Kontrol Dokumen B37 (Diperiksa) = 'Amirull Yusuf Zulkarnain / Direktur'. B36 (Disusun) tetap 'Finance Staff', B10 (Pemilik) tetap 'Finance Lead', B38 = 'Samuel Kristanto Utomo / President Director'. Ketiganya cocok dengan defaults v22 prepared_reviewed.FAT dan approved_by.all.",
+  "A6: definisi Finance Lead ditulis di B16 dan definisi Finance Staff di B23, teksnya persis dengan instruksi. JA-10 Finance dan JA-11 Accounting & Tax cocok dengan kerangka HR-JA-01 butir 6.10 dan 6.11.",
+  "A10: extend_validation AR Aging K5:K1000 dan L5:L1000. Di render, DV L5:L1000 (Status) dan K5:K1000 (Client type) sudah ada.",
+  "A10: copy_row_style AR Aging dari baris 5 ke baris 7 sampai 1000. Di render, style id baris 7 dan 1000 sama dengan baris 5, dan baris 1001 tidak tersentuh.",
+  "A10: fill_formula AR Aging J5:J1000 =IF(D{r}=\"\", \"\", TODAY() - D{r}). Diff memuat 996 baris rumus. Kolom Status (L) tetap dropdown tanpa rumus.",
+  "A10: clear_rows AP Aging menjadi [6, 7]. Isi A7, C7, D7, F7 sampai I7, dan L7 terhapus; rumus J7, K7, M7 tetap ada.",
+  "A10: catatan USULAN Days overdue ditulis di B24 sampai B26 dengan isi sesuai teks instruksi.",
+  "A10 notes: open item 3 (validasi AR) ditutup W9, open item 9 (swatch/border legenda) ditutup W9 karena kosmetik, open item 10 (Dokumen terkait) ditutup W9 karena keterbatasan tata letak.",
+  "R2-1: B24 dan B25 diberi label '(USULAN)' di akhir; B26 sudah berlabel. Teks lain tidak berubah.",
+  "R2-2: Open item 2 dan Asumsi 6 kini memuat 'diubah W9' beserta alasannya.",
+  "R2-3: baris USULAN 5, 9, 10, 11, jumlah USULAN, dan baris perbaikan lintas dokumen memuat 'diubah W9' atau 'ditutup W9' di baris itu sendiri. Tidak ada baris yang dihapus dan diff notes tidak memuat em-dash.",
+  "Tabel ISO-W9 di notes mencatat perubahan R1 dan R2 dengan tanda 'R2'. Rujukan silang yang diubah: nihil."
  ],
  "butir_tidak_dikerjakan": [],
- "grep": "Grep pada teks render /tmp/claude-0/w9/render/FAT-REG-01.xlsx (semua sheet) memberi hasil berikut. \"HR Manager\" 0 dan \"Divisi Legal\" 0, meskipun ini dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak mengikat. Em-dash 0. Frasa proses penyusunan (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun) semuanya 0. Rujukan AI internal: \"Claude\" 0, dan satu-satunya kemunculan \"AI\" berasal dari kata \"TOTAL UNPAID\" di AP Aging A4, bukan rujukan AI.",
+ "grep": "Grep atas seluruh teks render /tmp/claude-0/w9/render/FAT-REG-01.xlsx: 'HR Manager' 0 dan 'Divisi Legal' 0 (dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak berlaku tetapi hasilnya tetap nol). Em-dash 0. Frasa proses penyusunan ('dokumen sumber', 'sumber tim', 'di sumber', 'draf ini', 'belum berdokumen', 'penyusun') masing-masing 0. 'AI ' 0. Baris tambahan di diff notes/FAT-REG-01.md: em-dash 0.",
  "riwayat": [
   {
    "verdict": "FAIL",
@@ -40,6 +41,11 @@
    ]
   },
   {
+   "verdict": "PASS",
+   "blocking": []
+  },
+  {
+   "putaran": "R2",
    "verdict": "PASS",
    "blocking": []
   }
