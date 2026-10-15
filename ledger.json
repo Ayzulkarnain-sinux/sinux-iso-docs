@@ -144,7 +144,7 @@
    "dept": "HR",
    "action": "T2",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-ORG-01",
    "out_path": "out/01_Struktur_Jobdesc/SNX-HR-ORG-01 Struktur Organisasi SINUX (Rev00 DRAFT).docx",
    "sources": [
@@ -171,9 +171,10 @@
    "open_items": [
     "Checklist kini menautkan berkas 1dcziYriRHtTq8E_9QUtTVMe48xvRKNp0 yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu."
    ],
-   "updated_at": "2026-10-14T21:48:01Z",
+   "updated_at": "2026-10-15T00:38:05Z",
    "pen_agent": "aa06a366b15fbb9e5",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 2,
@@ -183,7 +184,7 @@
    "dept": "HR",
    "action": "T1",
    "mode": "generic",
-   "state": "DONE",
+   "state": "IN_PROGRESS",
    "number": "SNX-HR-JA-01",
    "out_path": "out/01_Struktur_Jobdesc/SNX-HR-JA-01 Job Analysis dan Uraian Jabatan (Rev00 DRAFT).docx",
    "sources": [
@@ -211,9 +212,10 @@
     "Checklist kini menautkan berkas 1bSxe1PtXbG9p-XFsc0hlcSxYaD2W86yO yang tidak terlihat oleh konektor (metadata not found, tidak ada di folder Dep. HR, pencarian judul nihil); dipakai sumber worklist. Minta tim membagikan berkas itu.",
     "Garis lapor JA-14 (HR Manager) belum seragam dengan bagan HR-ORG-01; selaraskan saat konfirmasi K-04 (owner atau Aziz)."
    ],
-   "updated_at": "2026-10-14T21:59:12Z",
+   "updated_at": "2026-10-15T00:38:06Z",
    "pen_agent": "ac936bff4d35bd19b",
-   "ooxml": "PASSED"
+   "ooxml": "PASSED",
+   "sweep": "1"
   },
   {
    "wl_index": 3,
@@ -762,7 +764,7 @@
    "dept": "LEG",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-SOP-02",
    "out_path": "out/04_Legal/SNX-LEG-SOP-02 Contract Review & Legal Approval (Rev00 DRAFT).docx",
    "sources": [
@@ -780,11 +782,11 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 17,
+   "usulan_count": 18,
    "open_items": [
     "Langkah persetujuan ulang Line Manager Legal sesudah revisi tidak ada di 6.6 (nonblocking verifikator); Legal konfirmasi."
    ],
-   "updated_at": "2026-10-15T00:30:55Z",
+   "updated_at": "2026-10-15T00:37:40Z",
    "pen_agent": "a8415089d8bd9e5d8",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -797,7 +799,7 @@
    "dept": "COM",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-COM-SOP-01",
    "out_path": "out/05_Commercial/SNX-COM-SOP-01 Sales Process (Rev00 DRAFT).docx",
    "sources": [
@@ -817,7 +819,7 @@
    "loops": 0,
    "usulan_count": 14,
    "open_items": [],
-   "updated_at": "2026-10-15T00:31:36Z",
+   "updated_at": "2026-10-15T00:37:45Z",
    "pen_agent": "ae9eceecd747b5a2d",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -830,7 +832,7 @@
    "dept": "HR",
    "action": "T1",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-HR-SOP-08",
    "out_path": "out/02_HR/SNX-HR-SOP-08 Company Leaves (Rev00 DRAFT).docx",
    "sources": [
@@ -845,7 +847,7 @@
    "loops": 0,
    "usulan_count": 28,
    "open_items": [],
-   "updated_at": "2026-10-15T00:32:03Z",
+   "updated_at": "2026-10-15T00:37:51Z",
    "pen_agent": "a17f18a1b07137494",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2011,8 +2013,10 @@
    "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 30,
-   "open_items": [],
-   "updated_at": "2026-10-15T00:37:31Z",
+   "open_items": [
+    "Sweep (b): definisi Aktivitas dan nilai status pelaksanaan berbeda dengan MKT-REG-02; validasi klaim di REG-01 belum berlabel USULAN di dokumen ini"
+   ],
+   "updated_at": "2026-10-15T00:37:34Z",
    "pen_agent": "afb20c8cd055f9128",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02"
@@ -2025,16 +2029,16 @@
    "dept": "MKT",
    "action": "T2",
    "mode": "generic",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-MKT-REG-01",
    "out_path": "out/06_Marketing/SNX-MKT-REG-01 Marketing Content, Material & Claims Approval Register (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
    "verify_verdict": null,
    "loops": 1,
-   "usulan_count": 28,
+   "usulan_count": 27,
    "open_items": [],
-   "updated_at": "2026-10-15T00:28:21Z",
+   "updated_at": "2026-10-15T00:37:55Z",
    "pen_agent": "a6278839497527284",
    "ooxml": "PASSED",
    "hold_verify": "MKT-REG-02"
@@ -2381,7 +2385,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "IN_PROGRESS",
    "number": "SNX-FAT-FRM-02",
    "out_path": "out/03_FAT/SNX-FAT-FRM-02 Financial Information Access Authorization Records (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2392,11 +2396,11 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": null,
-   "loops": 0,
+   "verify_verdict": "FAIL",
+   "loops": 1,
    "usulan_count": 0,
    "open_items": [],
-   "updated_at": "2026-10-15T00:31:36Z",
+   "updated_at": "2026-10-15T00:38:05Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "adee81774ba4f9731"
