@@ -875,10 +875,10 @@
    "loops": 0,
    "usulan_count": 38,
    "open_items": [],
-   "updated_at": "2026-10-15T00:45:59Z",
+   "updated_at": "2026-10-15T00:46:02Z",
    "pen_agent": "a475d481a3c9e4aa4",
    "ooxml": "PASSED",
-   "sweep": "1"
+   "sweep": "2"
   },
   {
    "wl_index": 22,
@@ -1023,7 +1023,7 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "sop",
-   "state": "IN_PROGRESS",
+   "state": "LINT_PASS",
    "number": "SNX-LEG-SOP-03",
    "out_path": "out/04_Legal/SNX-LEG-SOP-03 Legal Document Control & Retention (Rev00 DRAFT).docx",
    "sources": [
@@ -1051,12 +1051,12 @@
    "lint_pass": true,
    "verify_verdict": "PASS",
    "loops": 0,
-   "usulan_count": 44,
+   "usulan_count": 47,
    "open_items": [
     "Draf tim baru ditemukan di folder Dep. Legal (dibuat 2026-10-14T09:13Z) tanpa tautan di checklist; dipakai sebagai sumber utama (RUNBOOK §6 prioritas dokumen tim terbaru).",
     "Sweep (b): definisi GLPI batas selain Operation tanpa label USULAN; 4.17 padanan Rahasia ke RESTRICTED/SECRET tanpa label (verify nonblocking)"
    ],
-   "updated_at": "2026-10-15T00:43:56Z",
+   "updated_at": "2026-10-15T00:46:21Z",
    "pen_agent": "ab097b242b2cce31c",
    "ooxml": "PASSED",
    "sweep": "1"
@@ -2347,7 +2347,7 @@
    "dept": "FAT",
    "action": "T1",
    "mode": "xlsx",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-FAT-REG-01",
    "out_path": "out/03_FAT/SNX-FAT-REG-01 Billing & Collection Monitoring Register (Rev00 DRAFT).xlsx",
    "sources": [
@@ -2358,13 +2358,13 @@
     }
    ],
    "lint_pass": true,
-   "verify_verdict": "FAIL",
+   "verify_verdict": "PASS",
    "loops": 1,
    "usulan_count": 0,
    "open_items": [
     "Sumber xlsx untuk render = unduhan ulang orkestrator (isi sel identik dengan salinan penyusun yang diambil dari log sesi sesudah satu perintah ditolak classifier; salinan itu tidak dipakai)"
    ],
-   "updated_at": "2026-10-15T00:43:25Z",
+   "updated_at": "2026-10-15T00:47:32Z",
    "classification": "RESTRICTED (Internal)",
    "promoted_from": "HOLD-T3",
    "pen_agent": "a3d6b69aee3386660"

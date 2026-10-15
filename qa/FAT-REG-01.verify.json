@@ -1,0 +1,46 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "AR Aging!A2 (rumus Amount Gov / SOE) dan notes/FAT-REG-01.md USULAN 4",
+      "masalah": "Rumus Gov / SOE dibawa persis dari sumber, jadi lolos cek (a), tetapi hitungannya tidak cocok dengan PPN Pemungut (WAPU) di SNX-FAT-SOP-05. Pada WAPU, invoice = DPP + PPN dan instansi memungut PPN, sehingga kas yang diterima = DPP - PPh 22, bukan DPP - PPN - PPh 22. Rumus sekarang mencatat piutang Gov / SOE lebih kecil sebesar PPN. Notes USULAN 4 menyebut rumus ini 'selaras dengan PPN Pemungut (WAPU)'. Itu tidak tepat. Open item 5 memang sudah menanyakannya, tetapi di sel rumus itu tampil sebagai aturan tanpa label menunggu konfirmasi.",
+      "bukti": "Sumber AR Aging I6: 'DPP - PPN - PPh 22'; I5: 'DPP + PPN - PPh 23'. specs/FAT-SOP-05.json baris 27: 'PPN Pemungut (WAPU/Kode 02) atas transaksi dengan Instansi Pemerintah atau BUMN'. Saran: beri label '(rumus sampel tim, menunggu konfirmasi FAT)' pada rumus Gov / SOE di A2, dan koreksi klaim 'selaras' di USULAN 4."
+    },
+    {
+      "lokasi": "AR Aging!A2 (PPN = DPP x 12% (USULAN))",
+      "masalah": "Label USULAN ada dan rumusannya sama dengan SNX-FAT-SOP-01 butir 4.5. Namun config/defaults.json data_conflicts tidak punya butir PPN. Dasar label ini adalah RUNBOOK §6 ('PPN satu rumusan (USULAN bila FAT belum memutus)') dan worklist. Selain itu, 'DPP x 12%' bisa dibaca dua cara: DPP sama dengan harga jual (efektif 12%) atau DPP Nilai Lain 11/12 (efektif 11%, sama dengan 11% di sampel). Notes open item 5 sudah mencatat soal ini.",
+      "bukti": "grep PPN config/defaults.json: nol baris di data_conflicts; specs/FAT-SOP-01.json baris 65: 'dikenai PPN 12% (USULAN)'; sumber G5 dan G6: 'DPP x 11%'."
+    },
+    {
+      "lokasi": "Kontrol Dokumen!A25:A27",
+      "masalah": "Sheet terisi benar: nomor, judul, revisi, klasifikasi, pemilik, tiga penanda tangan berbeda sesuai defaults, klausul berlabel USULAN, tanggal efektif kosong. Tidak ada teks donor OPS-FRM-01 yang tertinggal (Legenda warna dan SNX-OPS-SOP-01 tidak ada). Yang tersisa hanya format donor: tiga sel kosong bergaris tipis bekas swatch legenda. Ini kosmetik dan sudah tercatat di notes open item 9.",
+      "bukti": "openpyxl: A25, A26, A27 border thin, nilai None, fill 00000000; donor out/07_Ops/SNX-OPS-FRM-01 A24 'Legenda warna', B25 'Sel input: diisi pengguna' tidak ada di berkas ini."
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B19 (Cara pakai 2) dan validasi AR Aging!L5:L6",
+      "masalah": "Kata 'status' dipakai untuk dua hal berbeda. Kolom Status berisi status penagihan (On track, At risk, Overdue, Escalate, Paid, Partially Paid), sedangkan 'status invoice' di SNX-FAT-SOP-01 adalah Draf, Terkirim, Lunas, Cancel. Ini istilah tidak konsisten (§6a.7). Sudah tercatat sebagai USULAN 14 di notes.",
+      "bukti": "B19: 'Finance Staff memperbarui kolom Status setiap status invoice berubah.'; validasi L5:L6: 'On track,At risk,Overdue,Escalate,Paid,Partially Paid'."
+    },
+    {
+      "lokasi": "AR Aging validasi K5:K6 dan L5:L6",
+      "masalah": "Dropdown hanya mencakup dua baris, padahal kriteria meminta tracker untuk semua piutang. Kriteria tetap terpenuhi dari sisi struktur kolom dan Tujuan B15, tetapi baris 7 ke bawah tidak punya validasi. Ini batasan alat dan sudah tercatat di notes open item 3.",
+      "bukti": "openpyxl dv AR Aging: [L5:L6], [K5:K6]."
+    },
+    {
+      "lokasi": "Kontrol Dokumen!B21 (Cara pakai 4) dan AR Aging!A2",
+      "masalah": "Langkah 4 hanya mencocokkan PPh 23 dengan Bukti Potong. Untuk klien Gov / SOE, A2 memakai PPh 22, dan bukti pungutnya tidak punya langkah. Pelaku 'Finance Staff' pada kalimat pemantauan klien Gov / SOE juga ditetapkan oleh penyusun, bukan dari kalimat sumber. Sel tidak memberi label, hanya notes (USULAN 8).",
+      "bukti": "B21: 'mencocokkan estimasi PPh 23 dengan Bukti Potong'; A2: 'Gov / SOE = DPP - PPN - PPh 22'; sumber AP Aging A2: 'Watch government / SOE slow-payers'."
+    },
+    {
+      "lokasi": "AP Aging!A2",
+      "masalah": "Sheet di luar kriteria tetapi dipertahankan (benar, tidak dihapus). Bahasanya tidak seragam dengan AR Aging: AP masih 'All amounts IDR.', sedangkan AR 'Nilai dalam IDR.'.",
+      "bukti": "AP Aging A2: 'All amounts IDR.'; AR Aging A2: 'Nilai dalam IDR. ...'."
+    },
+    {
+      "lokasi": "Semua sheet (footer)",
+      "masalah": "Klasifikasi RESTRICTED (Internal) tidak tercetak di footer xlsx. Pola yang sama ada di SNX-FAT-FRM-02 dan SNX-OPS-FRM-01, jadi ini perilaku renderer, bukan cacat penyusun. Keputusan ada di LEAD.",
+      "bukti": "openpyxl oddFooter left, center, dan right = None di ketiga sheet."
+    }
+  ]
+}

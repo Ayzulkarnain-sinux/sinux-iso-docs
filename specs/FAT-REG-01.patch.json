@@ -1,0 +1,50 @@
+{
+  "add_control_sheet": "out/07_Ops/SNX-OPS-FRM-01 Project Plan Scope Timeline (Rev00 DRAFT).xlsx",
+  "clear_rows": {
+    "AR Aging": [
+      5,
+      6
+    ],
+    "AP Aging": [
+      6
+    ],
+    "Kontrol Dokumen": [
+      25,
+      27
+    ]
+  },
+  "set": {
+    "Kontrol Dokumen!A1": "Billing & Collection Monitoring Register",
+    "Kontrol Dokumen!A2": "PT Strategi Integrasi Nusantara (SINUX) · Departemen Finance, Accounting & Tax",
+    "Kontrol Dokumen!B4": "SNX-FAT-REG-01",
+    "Kontrol Dokumen!B5": "Billing & Collection Monitoring Register",
+    "Kontrol Dokumen!B6": "00 (DRAFT)",
+    "Kontrol Dokumen!B7": "15 Oktober 2026",
+    "Kontrol Dokumen!B8": "Ditetapkan saat pengesahan",
+    "Kontrol Dokumen!B9": "RESTRICTED (Internal)",
+    "Kontrol Dokumen!B10": "Finance Lead",
+    "Kontrol Dokumen!B11": "Samuel Kristanto Utomo / President Director",
+    "Kontrol Dokumen!B12": "Klausul 7.5.3, 9.1.1 (USULAN, perlu konfirmasi konsultan)",
+    "Kontrol Dokumen!B13": "Annex A 5.12, 5.15, 5.33 (USULAN, perlu konfirmasi konsultan)",
+    "Kontrol Dokumen!B14": "Minimal 10 tahun (USULAN, sama dengan berkas penagihan)",
+    "Kontrol Dokumen!B15": "Mencatat semua piutang usaha dari klien SINUX di sheet AR Aging. Utang usaha di sheet AP Aging tidak termasuk.",
+    "Kontrol Dokumen!A18": "1.",
+    "Kontrol Dokumen!B18": "Finance Staff menambah satu baris di AR Aging per invoice terkirim.",
+    "Kontrol Dokumen!A19": "2.",
+    "Kontrol Dokumen!B19": "Finance Staff memperbarui kolom Status setiap status invoice berubah.",
+    "Kontrol Dokumen!A20": "3.",
+    "Kontrol Dokumen!B20": "Finance Staff mengisi Date Paid saat kas masuk dari klien terlihat di KlikBCA Bisnis.",
+    "Kontrol Dokumen!A21": "4.",
+    "Kontrol Dokumen!B21": "Finance Staff mencocokkan estimasi PPh 23 dengan Bukti Potong saat Bukti Potong diterima dari klien.",
+    "Kontrol Dokumen!A31": "00",
+    "Kontrol Dokumen!B31": "15 Oktober 2026",
+    "Kontrol Dokumen!C31": "Draft awal untuk review dan pengesahan",
+    "Kontrol Dokumen!D31": "Finance Staff",
+    "Kontrol Dokumen!E31": "Menunggu",
+    "Kontrol Dokumen!B36": "Finance Staff",
+    "Kontrol Dokumen!B37": "Finance Lead",
+    "Kontrol Dokumen!B38": "Samuel Kristanto Utomo / President Director",
+    "AR Aging!A2": "Nilai dalam IDR. Finance Staff memantau klien Gov / SOE yang lambat membayar. PPN = DPP x 12% (USULAN). Amount (IDR): Enterprise = DPP + PPN - PPh 23; Gov / SOE = DPP - PPN - PPh 22.",
+    "AP Aging!A2": "All amounts IDR."
+  }
+}

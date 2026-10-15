@@ -1,0 +1,42 @@
+{
+  "verdict": "FAIL",
+  "blocking": [
+    {
+      "lokasi": "AR Aging!A2 (kalimat kedua), dan notes/FAT-REG-01.md USULAN 4",
+      "masalah": "Rumus Amount disatukan menjadi 'Amount (IDR) = DPP + PPN - PPh 23/22' untuk semua klien. Untuk klien Gov / SOE rumus ini membalik perlakuan pajak dari sumber tim. Sumber menulis rumus terpisah yang mengurangkan PPN. Itu sejalan dengan perlakuan PPN Pemungut (WAPU) yang SINUX tetapkan sendiri untuk Instansi Pemerintah dan BUMN. Akibatnya piutang klien Gov / SOE tercatat lebih besar sebesar PPN. Label (USULAN) di sel hanya menempel pada kalimat PPN 12%, bukan pada rumus Amount. Di notes, rumus sumber disebut 'jelas salah' tanpa dasar.",
+      "bukti": "Sumber 1Z9PXCiBgb8c13TGx8BG3ajlbxNEDWMg6KaSy0mi7ehQ AR Aging: baris Enterprise I5 'DPP + PPN - PPh 23'; baris Gov / SOE (RSUD Takalar) I6 'DPP - PPN - PPh 22'. Keluaran AR Aging!A2: 'PPN = DPP x 12% (USULAN). Amount (IDR) = DPP + PPN - PPh 23/22.' Perlakuan WAPU di bahan SINUX: specs/FAT-SOP-05.json baris 27 'PPN Pemungut (WAPU/Kode 02) atas transaksi dengan Instansi Pemerintah atau BUMN'; context/audit/iso-sinux-supdocs-fat-2026-10-14.md baris 287 dan 310. Perbaikan: pakai dua rumus per Client type (Enterprise: DPP + PPN - PPh 23; Gov / SOE: DPP - PPh 22, PPN dipungut klien) dengan label (USULAN), atau beri label (USULAN) di rumus Amount dan catat di open item untuk diputus FAT."
+    }
+  ],
+  "nonblocking": [
+    {
+      "lokasi": "AR Aging!A2 (PPN 12%)",
+      "masalah": "Perlakuan PPN sudah sesuai RUNBOOK §6: satu rumusan, berlabel (USULAN), bersumber dari SOP Billing 5.2, dan tarif dicatat sebagai open item 5. Catatan untuk FAT: angka 11% di sampel tim mungkin mencerminkan tarif efektif DPP Nilai Lain 11/12, bukan salah ketik. Rumusan 'DPP x 12%' baru benar kalau DPP sudah berupa nilai lain. Pertimbangkan saat FAT memutus open item 5.",
+      "bukti": "Sumber G5/G6 'DPP x 11%'; audit FAT baris 119 'PPN 12%'; baris 247 mencatat 11% dan 12% tidak konsisten di SOP Billing."
+    },
+    {
+      "lokasi": "AP Aging (seluruh sheet)",
+      "masalah": "Sheet utang usaha berada di luar kriteria 'piutang dari customer'. Sheet ini dipertahankan karena alat melarang sheet berkurang, dan Tujuan B15 sudah mengecualikannya. Sisa cacat sumber masih ada: baris 7 'PPN August' berisi nilai nyata, teks L7 'Gov / SOE' berfont putih, label A3 'TOTAL' hanya menjumlahkan baris Paid, dan header A5 'Client' dipakai untuk utang. Semuanya sudah tercatat di open item 2.",
+      "bukti": "AP Aging!A7 'PPN August', I7 2759151, warna font L7 FFFFFFFF, B3 '=SUMIF(M6:M1000, \"Paid\", I6:I1000)'."
+    },
+    {
+      "lokasi": "AR Aging validasi data dan rumus",
+      "masalah": "Dropdown Client type dan Status hanya mencakup K5:L6. Days overdue dan Status tidak punya rumus. Kriteria tracker untuk semua piutang terpenuhi di tingkat struktur kolom, tetapi register lemah saat dipakai untuk baris 7 ke bawah. Sudah tercatat di open item 3 serta USULAN 10 dan 11.",
+      "bukti": "Validasi data AR Aging: L5:L6 dan K5:K6 saja; nol rumus di sheet."
+    },
+    {
+      "lokasi": "Kontrol Dokumen",
+      "masalah": "Semua medan terisi benar dan tidak membawa isi form donor SNX-OPS-FRM-01: nomor, judul, revisi 00 (DRAFT), tanggal draft 15 Oktober 2026 (tanggal sesi, tidak mundur), tanggal efektif tidak diisi, RESTRICTED (Internal), dan tiga penanda tangan berbeda sesuai defaults prepared_reviewed.FAT dan approved_by. Ejaan Kristanto dan sebutan President Director di blok persetujuan sudah sesuai. Klausul ISO dan masa simpan berlabel USULAN. Satu-satunya sisa donor adalah border kosong di A25:A27 (bekas swatch legenda), tanpa isi. Sudah tercatat di open item 9.",
+      "bukti": "Donor A24 'Legenda warna', B25, B27, B12 'Klausul 8.1, 8.2.2', B36 'Erik Dwi Yanto ...' tidak muncul di keluaran; keluaran B36 'Finance Staff', B37 'Finance Lead', B38 'Samuel Kristanto Utomo / President Director'."
+    },
+    {
+      "lokasi": "AR Aging!A2",
+      "masalah": "Bahasa campur dalam satu sel: kalimat tim berbahasa Inggris dan label Indonesia. 'Watch government / SOE slow-payers.' adalah kalimat perintah tanpa pelaku. Kalimat ini dipertahankan sebagai kalimat tim (T1, §6a.10), jadi bukan pelanggaran jelas.",
+      "bukti": "'All amounts IDR. Watch government / SOE slow-payers. PPN = DPP x 12% (USULAN). ...'"
+    },
+    {
+      "lokasi": "Cek batas keras dan pola bahasa",
+      "masalah": "Nihil temuan. Pemindaian sel tidak menemukan em-dash atau en-dash, rujukan internal AI, kredensial, 'hutang', baris CONTOH, maupun placeholder xxxx atau ddmmyyy. Langkah Cara pakai B18 sampai B21 berbentuk kalimat aktif dengan pelaku Finance Staff. Fakta KlikBCA Bisnis, Bukti Potong PPh 23, dan masa simpan 10 tahun cocok dengan SOP Billing di audit FAT (baris 120, 149, 166). Grep fileId di context/audit kosong, dan penanganannya sudah dijelaskan di notes bagian 3.",
+      "bukti": "Pemindaian regex atas semua sel ketiga sheet: tidak ada kecocokan."
+    }
+  ]
+}
