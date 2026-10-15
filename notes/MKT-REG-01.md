@@ -290,3 +290,18 @@ nihil (subst_diff kosong).
 - .sections[5].blocks[17].p: lengkap (satu baris per claim, ID persetujuan di kolom ID Materi)
 - .sections[5].blocks[19].p: lengkap (nama dan lokasi, tanpa isi)
 - .sections[5].blocks[23].p: dilengkapi (", tanpa isinya", disalin dari butir 4.10)
+
+### W10 audit cakupan label
+- .sections[3].blocks[3].p: diperbaiki (tambah label pada kalimat Approver; di bed1bb6 seluruh butir 4.4 satu kalimat berlabel)
+- .sections[3].blocks[4].p: OK (label tetap mencakup Pemilik informasi dan klasifikasi INTERNAL; rujukan SNX-ISMS-PRO-01 tetap tanpa label)
+- .sections[4].blocks[0].p: OK (label tetap pada pembagian tugas)
+- .sections[4].blocks[1].table.rows[0][1]: OK (pembagian tugas tabel berlabel di bed1bb6; label baru menggantikan rujukan butir)
+- .sections[4].blocks[1].table.rows[1][1]: OK (rujukan butir 4.3, 4.4, 4.5, 4.11 yang berlabel diganti fakta)
+- .sections[4].blocks[1].table.rows[6][1]: OK (rujukan butir 4.11 sampai 4.13 yang berlabel diganti)
+- .sections[4].blocks[1].table.rows[7][1]: OK (rujukan butir 4.11 dan 4.13 yang berlabel diganti)
+- .sections[4].blocks[1].table.rows[8][1]: OK (rujukan butir 4.11 sampai 4.13 yang berlabel diganti)
+- .sections[4].blocks[1].table.rows[9][1]: OK (rujukan butir 4.11 dan 4.13 yang berlabel diganti)
+- .sections[5].blocks[0].p: OK (rujukan butir 4.1 yang berlabel diganti)
+- .sections[5].blocks[6].p: OK (rujukan butir 4.14 yang berlabel diganti)
+- .sections[5].blocks[10].p: OK (rujukan butir 4.6 yang berlabel diganti)
+- .sections[6].blocks[0].p: OK (label tetap pada 10 baris dan pembagian kolom)

@@ -300,3 +300,12 @@ nihil (subst_diff kosong).
 - .sections[11].blocks[4].table.rows[4][2]: lengkap (bagian 7 diganti inventaris, kolom Klasifikasi utuh)
 - .sections[11].blocks[4].table.rows[9][2]: lengkap (bagian 3 diganti nama bagian Dasar Peninjauan, isi utuh)
 - .sections[12].blocks[0].p: lengkap (penunjuk Ketentuan 1 dibuang, periode setahun dan USULAN tetap di Ketentuan 1)
+
+### W10 audit cakupan label
+- .sections[3].blocks[0].p: diperbaiki (dipisah lagi; label hanya pada periode setahun sekali)
+- .sections[3].blocks[12].p: diperbaiki (label digeser ke kalimat pemilihan opsi seperti bed1bb6; aturan opsi tanpa label)
+- .sections[4].blocks[0].table.rows[3][1]: diperbaiki (dipisah; label hanya pada tindakan temuan dari Ketentuan butir 11, keterangan kegiatan dari butir 3 tanpa label)
+- .sections[4].blocks[1].p: OK (label tetap pada peran penyetuju lembar review)
+- .sections[10].blocks[0].table.rows[0][1]: diperbaiki (digabung lagi jadi satu kalimat berlabel, ketiga isi tercakup seperti bed1bb6)
+- .sections[11].blocks[1].table.rows[0][1]: diperbaiki (label digeser ke kalimat folder, tempat rujukan Ketentuan butir 14 di bed1bb6; klasifikasi tanpa label)
+- .sections[11].blocks[1].table.rows[1][1]: OK (label tetap pada pemilik)

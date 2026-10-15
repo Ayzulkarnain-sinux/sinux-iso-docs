@@ -211,3 +211,6 @@ nihil
 - Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
 - "bila" diganti "jika"; "menurut" diganti "sesuai"; "butuh" menjadi "memerlukan"; beberapa kalimat panjang dipecah.
 - Bagian 9 baris "Patch tidak dapat dipasang sesuai tenggat" ditulis dengan satu pelaku (Lead SOC mencatat dan meminta persetujuan), sesuai simpul alur "Catat pengecualian dan minta persetujuan".
+
+### W10 audit cakupan label
+- .definitions[22][1]: diperbaiki (definisi dipisah lagi dari kalimat berlabel; label hanya pada cara hitung hari kalender)

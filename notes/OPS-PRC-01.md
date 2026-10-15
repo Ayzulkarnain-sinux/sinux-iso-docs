@@ -252,3 +252,7 @@ nihil. Definisi Jabatan Divisi Operation, asli: "Status kelimanya (USULAN) di PO
 - .roles[8][1]: lengkap; penunjuk "(butir 6.1)" dibuang, tanggung jawab tidak berubah.
 - .procedures[0].intro[1]: lengkap; "pemilik gate G2 dan G3 ada di butir 6.2" diganti fakta dari kolom PIC butir 6.2 (G2 dinyatakan lolos oleh Project Manager, G3 oleh Head of Operation).
 - .related_documents[5][1]: lengkap; "penunjukan ini diusulkan di butir 6.1" diganti label (USULAN), status usulan tetap terbawa.
+
+### W10 audit cakupan label
+- .policy[7]: diperbaiki (dipisah lagi; batas pemakaian dengan Zammad yang belum diputus tanpa label seperti bed1bb6)
+- .related_documents[5][1]: OK (kalimat penunjuk usulan butir 6.1 diganti label)

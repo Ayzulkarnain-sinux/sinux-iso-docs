@@ -49,7 +49,7 @@
      "p": "Pencantuman suatu jenis dokumen di register tidak dengan sendirinya berarti dokumen itu wajib bagi SINUX."
     },
     {
-     "p": "Register ini tidak mencatat kontrak dengan pelanggan atau vendor, yang diatur dalam SNX-LEG-SOP-01. Register ini juga tidak memuat daftar peraturan perundang-undangan, yang dicatat di SNX-LEG-REG-03 (USULAN)."
+     "p": "Register ini tidak mencatat kontrak dengan pelanggan atau vendor, yang diatur dalam SNX-LEG-SOP-01 (USULAN). Register ini juga tidak memuat daftar peraturan perundang-undangan, yang dicatat di SNX-LEG-REG-03 (USULAN)."
     }
    ]
   },
@@ -283,7 +283,7 @@
      "p": "8. Pakai nomor baris yang sama di tabel Penerbitan, Penanggung Jawab, dan Lokasi Bukti seperti di tabel Daftar Perizinan."
     },
     {
-     "p": "9. Isi tabel Tindak Lanjut untuk setiap dokumen yang perlu ditindaklanjuti sesuai Ketentuan butir 7 dan 8, dan catat setiap pemeriksaan di tabel Catatan Pemeriksaan (USULAN)."
+     "p": "9. Isi tabel Tindak Lanjut untuk setiap dokumen yang perlu ditindaklanjuti sesuai Ketentuan butir 7 dan 8, dan catat setiap pemeriksaan di tabel Catatan Pemeriksaan."
     }
    ]
   },

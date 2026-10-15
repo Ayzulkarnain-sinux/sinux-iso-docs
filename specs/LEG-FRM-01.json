@@ -135,7 +135,7 @@
        ],
        [
         "PIC Internal",
-        "Kontak utama Unit Kerja Pemohon untuk satu kontrak; di SNX-LEG-SOP-02 disebut PIC Bisnis (USULAN)."
+        "Kontak utama Unit Kerja Pemohon untuk satu kontrak. Di SNX-LEG-SOP-02 disebut PIC Bisnis (USULAN)."
        ],
        [
         "Risiko hukum",
@@ -223,7 +223,7 @@
      "p": "6. Rekomendasi di form ini bukan Persetujuan Legal. Persetujuan Legal diberikan Line Manager Legal dan tidak menggantikan persetujuan Pejabat Berwenang (SNX-LEG-SOP-02 butir 4.2)."
     },
     {
-     "p": "7. Kontrak yang berubah material setelah Persetujuan Legal ditelaah ulang sesuai SNX-LEG-SOP-02 butir 4.14. Staff Legal memakai form baru untuk telaah ulang itu (USULAN)."
+     "p": "7. Kontrak yang berubah material setelah Persetujuan Legal ditelaah ulang sesuai SNX-LEG-SOP-02 butir 4.14, dan Staff Legal memakai form baru untuk telaah ulang itu (USULAN)."
     },
     {
      "p": "8. Form terisi disimpan Staff Legal bersama berkas kontrak di folder Google Drive Departemen Legal, dan lokasinya dicatat di tabel Lokasi Penyimpanan Dokumen (USULAN, SNX-LEG-SOP-01 butir 4.24 dan SNX-LEG-SOP-03 butir 4.8). Karena memuat nama pelanggan dan nilai kontrak, form terisi berklasifikasi RESTRICTED (Internal) sesuai SNX-ISMS-PRO-01."

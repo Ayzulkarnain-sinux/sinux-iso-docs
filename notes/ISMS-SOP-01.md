@@ -229,3 +229,7 @@ nihil
 - Sebutan pihak luar: "pelanggan" (keputusan lintas dokumen ISMS).
 - "bila" diganti "jika"; "menurut" diganti "sesuai" di beberapa kalimat; "akar yang sama" menjadi "root cause yang sama"; jembatan "Root cause analysis (analisis akar masalah)" di definisi RCA.
 - Judul klausul ISO 10.2 dan judul Annex A di iso_refs tidak diubah.
+
+### W10 audit cakupan label
+- .definitions[1][1]: OK (label tetap mencakup penerima Ack yang belum ditetapkan)
+- .policy[3]: OK (label tetap mencakup titik awal hitungan dari waktu deteksi, pengecualian tetap tanpa label)

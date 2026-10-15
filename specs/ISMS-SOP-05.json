@@ -127,7 +127,7 @@
   ],
   [
    "Tenggat",
-   "Batas waktu pemasangan patch atau penerapan mitigasi kompensasi untuk satu vulnerability sesuai prioritasnya (bagian 8), dihitung dalam hari kalender sejak Lead SOC menetapkan prioritas di ticket temuan (USULAN)."
+   "Batas waktu pemasangan patch atau penerapan mitigasi kompensasi untuk satu vulnerability sesuai prioritasnya (bagian 8). Dihitung dalam hari kalender sejak Lead SOC menetapkan prioritas di ticket temuan (USULAN)."
   ],
   [
    "Ticket temuan",

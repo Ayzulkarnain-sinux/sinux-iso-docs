@@ -241,3 +241,7 @@ nihil
 - Sebutan pihak luar: "pihak lawan" (paling sering di dokumen ini); "pelanggan" hanya untuk jenis kontrak, tidak diubah.
 - Jembatan istilah: "review (tinjauan)" di Scope, "Delegation of Authority (delegasi wewenang)" di definisi DoA, "record (rekaman)" di butir 4.19.
 - "bila" diganti "jika", "menurut" diganti "sesuai" atau "berdasarkan"; nomor butir 4.x dan 6.x serta isinya tidak bergeser (dirujuk form Legal).
+
+### W10 audit cakupan label
+- .policy[18]: OK (dua kalimat berlabel digabung, seluruh isi tetap berlabel)
+- .procedures[0].intro[1]: diperbaiki (dipisah lagi; label hanya pada pemakaian ticket GLPI)

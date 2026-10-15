@@ -285,3 +285,6 @@ nihil
 - Sebutan pihak luar: "pihak luar" dan "pihak lawan" tetap seperti bed1bb6.
 - Jembatan istilah: "review (tinjauan)" di Scope, "record (rekaman)" di definisi Dokumen Tidak Berlaku; "irama review akses biasa" menjadi "jadwal access review reguler" (glossary STYLE §5).
 - "bila" diganti "jika", "menurut" diganti "sesuai"; nomor butir 4.x dan 6.x serta isinya tidak bergeser.
+
+### W10 audit cakupan label
+- .exceptions[6][1]: OK (label tetap pada pelapor yang belum diputus)

@@ -242,3 +242,15 @@ nihil (subst_diff build kosong).
 - .sections[6].blocks[1].table.rows[0][1]: lengkap (penunjuk balik ke Ketentuan 2 dibuang, isi sumber utuh)
 - .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 18 dibuang, lokasi, pencatat, pemilik, klasifikasi, USULAN tetap)
 - .sections[7].blocks[1].table.rows[1][1]: lengkap (penunjuk Ketentuan 18 dibuang, lokasi kolom Bukti yang Diperiksa, pencatat, pemilik tetap)
+
+### W10 audit cakupan label
+- .sections[0].blocks[4].p: OK (label tetap pada kolom Bukti dari Dokumen Legal)
+- .sections[2].blocks[0].p: OK (label tetap pada frekuensi laporan)
+- .sections[3].blocks[0].table.rows[0][1]: OK (label tetap pada Pelaksana Evaluasi)
+- .sections[3].blocks[0].table.rows[1][1]: OK (label tetap pada pemilik dokumen)
+- .sections[4].blocks[1].p: OK (label baru karena rujukan Ketentuan butir 6 yang berlabel diganti fakta, hanya kalimat itu)
+- .sections[4].blocks[4].p: diperbaiki (label baru dihapus; rujukan butir 11 tetap, kalimat juga memuat alasan status yang tidak berlabel di bed1bb6)
+- .sections[4].blocks[5].p: OK (label tetap pada cara hitung baris Seluruh Bidang)
+- .sections[4].blocks[8].p: diperbaiki (dipisah; label hanya pada Persyaratan Belum Diverifikasi dari Ketentuan butir 3, isi butir 13 tanpa label)
+- .sections[7].blocks[1].table.rows[0][1]: OK (label menggantikan rujukan Ketentuan butir 18 pada folder)
+- .sections[7].blocks[1].table.rows[1][1]: diperbaiki (label ganda di akhir dihapus; cakupan sama dengan bed1bb6)

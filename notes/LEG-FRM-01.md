@@ -310,3 +310,16 @@ nihil (subst_diff kosong di reports/w10/gates/LEG-FRM-01.json).
 - .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 8 dibuang, lokasi, klasifikasi, pencatat, pemilik, USULAN tetap)
 - .sections[7].blocks[1].table.rows[1][1]: lengkap (rujukan SOP-02 4.19 beruntun dibuang, tetap tertulis di baris sebelumnya; pemilik dan USULAN tetap)
 - .sections[7].blocks[4].table.rows[1][2]: lengkap (penunjuk Ketentuan 7 dibuang, telaah ulang dengan form baru dan USULAN tetap)
+
+### W10 audit cakupan label
+- .sections[1].blocks[1].table.rows[10][1]: diperbaiki (dipisah lagi; label hanya pada sebutan PIC Bisnis)
+- .sections[2].blocks[0].p: OK (label tetap pada keputusan wajib atau tidaknya form)
+- .sections[2].blocks[4].p: OK (dua kalimat berlabel digabung, cakupan sama; pencentangan dan pemeriksaan tetap tanpa label)
+- .sections[2].blocks[6].p: diperbaiki (digabung lagi jadi satu kalimat berlabel seperti bed1bb6, telaah ulang ikut tercakup)
+- .sections[3].blocks[0].table.rows[1][1]: OK (label tetap pada pemilik form)
+- .sections[4].blocks[5].p: OK (label tetap mencakup Jenis Risiko dan Tingkat Risiko)
+- .sections[5].blocks[4].p: OK (label tetap pada aspek yang menunggu keputusan)
+- .sections[6].blocks[0].table.rows[1][1]: OK (label tetap pada pencantuman form sebagai checklist)
+- .sections[6].blocks[0].table.rows[2][1]: OK (label tetap pada kategori retensi)
+- .sections[7].blocks[1].table.rows[0][1]: OK (label tetap pada pemilik, folder dan klasifikasi tetap tanpa label)
+- .sections[7].blocks[4].table.rows[1][2]: OK (label baru karena rujukan Ketentuan butir 7 yang berlabel diganti fakta)

@@ -173,7 +173,7 @@
   "Layanan dinyatakan BAU hanya setelah G3 lolos, dan perubahan konfigurasi dijalankan melalui change request menurut SNX-OPS-SOP-02 (ISO 9001:2015 8.5).",
   "Proses pendukung ISMS berjalan bersama proses inti. Titik singgung tiap proses pendukung tercantum di tabel Dokumen terkait (ISO/IEC 27001:2022 4.4, 8.1).",
   "Data SLA berasal dari Nusametric, Overseer, dan console Nusagrid. Data SOC berasal dari Wazuh, AegisWAF, Cloudflare, dan EDR. Log backup berasal dari Acronis Cyber Protect.",
-  "Ticket pelanggan Nusagrid dicatat di Zammad. Ticket GMF dedicated dan permintaan internal dicatat di Service Hub. Change request dan Shift Log dicatat di Service Hub, sedangkan batas pemakaiannya dengan Zammad belum diputus (USULAN).",
+  "Ticket pelanggan Nusagrid dicatat di Zammad. Ticket GMF dedicated dan permintaan internal dicatat di Service Hub. Change request dan Shift Log dicatat di Service Hub (USULAN). Batas pemakaiannya dengan Zammad belum diputus.",
   "Kredensial dilarang ditulis di chat, ticket, atau dokumen. Kredensial disimpan di password manager (vault).",
   "Akses ke production dilakukan melalui Jumphost SINUX, yang merekam sesi untuk audit akses.",
   "Dokumen dan record disimpan di Google Drive SINUX dan dikendalikan sesuai SNX-ISMS-PRO-01. Record mengikuti masa simpan di dokumennya masing-masing."

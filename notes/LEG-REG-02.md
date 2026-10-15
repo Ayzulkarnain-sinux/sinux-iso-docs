@@ -234,3 +234,7 @@ nihil (subst_diff kosong).
 - .sections[4].blocks[0].table.rows[2][1]: lengkap (penunjuk balik ke Ketentuan 2, 3, 8, 9 dibuang, tugas tetap tertulis)
 - .sections[4].blocks[0].table.rows[3][1]: lengkap (penunjuk balik ke Ketentuan 12 sampai 14, 16 dibuang, tugas tetap tertulis)
 - .sections[8].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 20 dibuang, lokasi, pemilik, klasifikasi tetap)
+
+### W10 audit cakupan label
+- .sections[4].blocks[0].table.rows[1][1]: diperbaiki (dipisah per kalimat; label hanya pada isi Ketentuan butir 6 dan 19, isi butir 12 dan 13 tanpa label)
+- .sections[8].blocks[1].table.rows[0][1]: diperbaiki (label digeser ke kalimat folder, tempat rujukan Ketentuan butir 20 di bed1bb6; klasifikasi tanpa label)

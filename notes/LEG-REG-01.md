@@ -270,3 +270,8 @@ nihil (subst_diff kosong).
 - .sections[3].blocks[0].table.rows[5][1]: lengkap (penunjuk balik ke Ketentuan 10 dibuang, akses bukti dan USULAN tetap)
 - .sections[4].blocks[8].p: rujukan dikembalikan (kriteria status dokumen yang ditindaklanjuti dan isi wajib baris Tindak Lanjut: "sesuai Ketentuan butir 7 dan 8")
 - .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 10 dibuang, lokasi, pemilik, pencatat, klasifikasi, USULAN tetap)
+
+### W10 audit cakupan label
+- .sections[0].blocks[6].p: diperbaiki (tambah label pada kalimat pertama; di bed1bb6 kedua isi berada dalam satu kalimat berlabel)
+- .sections[3].blocks[0].table.rows[1][1]: OK (label tetap pada pemilik dokumen dan record)
+- .sections[4].blocks[8].p: diperbaiki (label baru dihapus; rujukan butir 7 dan 8 tetap, fakta pengganti butir 11 tidak berlabel di bed1bb6)

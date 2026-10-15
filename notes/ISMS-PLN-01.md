@@ -256,3 +256,7 @@ nihil. Label dipindah ke akhir butir: Roles Head of Operation (asli: "Memastikan
 - .procedures[4].intro[0]: pointer murni dibuang, isi tidak dinyatakan ulang (frekuensi uji tetap di tabel bagian 8).
 - .exceptions[2][1]: lengkap (salinan offline encryption key, disimpan Lead NOC, di luar password manager, label (USULAN) dari 6.4 langkah 5 ikut dibawa; SNX-ISMS-SOP-03 sudah disebut di kalimat yang sama).
 - .conclusion[0]: lengkap (jadwal review bagian 8: minimal tahunan, setelah aktivasi nyata, setelah perubahan besar pada layanan atau supplier; tanpa label).
+
+### W10 audit cakupan label
+- .exceptions[2][1]: OK (label baru karena rujukan butir 6.4 langkah 5 yang berlabel diganti fakta)
+- .exceptions[7][1]: OK (kalimat dipisah, label tetap pada penyampaian RTO, kalimat kedua tetap tanpa label)

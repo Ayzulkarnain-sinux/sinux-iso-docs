@@ -333,7 +333,7 @@
    "h": "Ketentuan Tinjauan",
    "blocks": [
     {
-     "p": "1. Staff Legal menyusun satu lembar review untuk setiap periode review, yaitu setahun sekali (USULAN)."
+     "p": "1. Staff Legal menyusun satu lembar review untuk setiap periode review. Periode review adalah setahun sekali (USULAN)."
     },
     {
      "p": "2. Saat pemeriksaan, Staff Legal memverifikasi dan memperbarui daftar di bagian Dasar Peninjauan, lalu mengisi kolom Diverifikasi Pada."
@@ -369,7 +369,7 @@
      "p": "12. Line Manager Legal memeriksa lembar review yang sudah terisi dan menulis rekomendasi di tabel Rekomendasi."
     },
     {
-     "p": "13. Line Manager Legal memilih satu opsi Kesimpulan Pemeriksaan berdasarkan status aspek. Opsi 1 dipilih jika semua aspek berstatus Sesuai atau Tidak Berlaku. Opsi 2 dipilih jika ada aspek berstatus Tidak Sesuai atau Perlu Perbaikan. Opsi 3 dipilih jika tidak ada aspek seperti itu tetapi ada yang berstatus Belum Diverifikasi (USULAN)."
+     "p": "13. Line Manager Legal memilih satu opsi Kesimpulan Pemeriksaan berdasarkan status aspek (USULAN). Opsi 1 dipilih jika semua aspek berstatus Sesuai atau Tidak Berlaku. Opsi 2 dipilih jika ada aspek berstatus Tidak Sesuai atau Perlu Perbaikan. Opsi 3 dipilih jika tidak ada aspek seperti itu tetapi ada yang berstatus Belum Diverifikasi."
     },
     {
      "p": "14. Staff Legal menyimpan lembar review terisi di folder Google Drive Departemen Legal dengan klasifikasi paling rendah RESTRICTED (Internal) (USULAN, SNX-LEG-SOP-01 butir 4.24)."
@@ -400,7 +400,7 @@
        ],
        [
         "PIC Unit Kerja",
-        "Menyampaikan keterangan kegiatan pengelolaan data di unitnya dan menjalankan tindakan atas temuan yang ditetapkan untuk jabatannya (USULAN)."
+        "Menyampaikan keterangan kegiatan pengelolaan data di unitnya. Menjalankan tindakan atas temuan yang ditetapkan untuk jabatannya (USULAN)."
        ]
       ],
       "widths_cm": [
@@ -1049,7 +1049,7 @@
       "rows": [
        [
         "SNX-LEG-SOP-01",
-        "Legal Operational. Butir 4.21 memuat kewajiban meninjau kontrak atau proyek yang melibatkan data pribadi. Butir 4.23 sampai 4.27 memuat aturan pengiriman, penyimpanan, akses, dan retensi dokumen legal. Prosedur 6.7 memuat hasil review pelindungan data pribadi yang dicatat di form ini (USULAN)."
+        "Legal Operational. Butir 4.21 memuat kewajiban meninjau kontrak atau proyek yang melibatkan data pribadi, butir 4.23 sampai 4.27 memuat aturan pengiriman, penyimpanan, akses, dan retensi dokumen legal, dan prosedur 6.7 memuat hasil review pelindungan data pribadi yang dicatat di form ini (USULAN)."
        ],
        [
         "SNX-LEG-SOP-03",
@@ -1116,7 +1116,7 @@
       "rows": [
        [
         "Lembar review terisi: inventaris, daftar evaluasi, temuan, hasil, dan persetujuan",
-        "Folder Google Drive Departemen Legal. Pemilik: Line Manager Legal, sesuai SNX-LEG-SOP-03. Klasifikasi paling rendah RESTRICTED (Internal) (USULAN).",
+        "Folder Google Drive Departemen Legal (USULAN). Pemilik: Line Manager Legal, sesuai SNX-LEG-SOP-03. Klasifikasi paling rendah RESTRICTED (Internal).",
         "Belum ditetapkan. Kategori SNX-LEG-SOP-03 untuk lembar review, Kategori 4 atau 7, belum diputuskan (USULAN)."
        ],
        [

@@ -268,7 +268,7 @@
      "p": "Isi kolom Status dengan Hijau, Kuning, atau Merah sesuai arti di tabel Istilah."
     },
     {
-     "p": "Untuk dimensi Jadwal, deviasi lebih dari 1 minggu dari baseline diberi status Merah, sama dengan ambang eskalasi ke COO di SNX-OPS-SOP-01 Bagian 6.4 (USULAN)."
+     "p": "Untuk dimensi Jadwal, deviasi lebih dari 1 minggu dari baseline diberi status Merah (USULAN). Ambang ini sama dengan ambang eskalasi ke COO di SNX-OPS-SOP-01 Bagian 6.4."
     },
     {
      "table": {

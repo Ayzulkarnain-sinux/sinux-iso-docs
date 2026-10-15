@@ -151,3 +151,6 @@ nihil (subst_diff kosong).
 - Petunjuk Pengisian ditulis sebagai kalimat perintah (0 dari 3 butir diawali nama peran).
 - Label node diagram dibuat satu baris agar gambar alur lebih pendek (19,0 cm menjadi 17,1 cm) dan bagian Isi Laporan tetap mulai di halaman 7; id, bentuk, dan edges tidak berubah.
 - Tabel isian bagian 6 diberi min_row_cm 0,9 agar cukup untuk tulisan tangan; jumlah halaman tetap 10.
+
+### W10 audit cakupan label
+- .sections[5].blocks[4].p: diperbaiki (dipisah lagi; kesamaan dengan ambang eskalasi COO tanpa label)

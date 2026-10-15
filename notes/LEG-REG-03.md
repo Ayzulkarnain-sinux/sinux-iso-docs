@@ -219,3 +219,11 @@ nihil (lihat subst_diff build; token nomor butir rujukan yang hilang sudah dicat
 - .sections[4].blocks[11].p: lengkap (penunjuk Ketentuan 11 dibuang, termasuk review tanpa perubahan dan kolom No. Baris utuh)
 - .sections[7].blocks[1].table.rows[0][1]: lengkap (penunjuk Ketentuan 13 dibuang, lokasi, pemilik, pencatat, klasifikasi, USULAN tetap)
 - .sections[8].blocks[0].p: lengkap (isi Ketentuan 9 disalin: bulanan USULAN dan saat kegiatan berubah)
+
+### W10 audit cakupan label
+- .sections[1].blocks[3].p: diperbaiki (dipisah lagi; label hanya pada keenam nilai)
+- .sections[3].blocks[0].table.rows[1][1]: OK (label tetap pada pemilik dokumen dan record)
+- .sections[3].blocks[1].p: OK (label tetap pada pembagian tugas)
+- .sections[4].blocks[9].p: OK (label baru mengikuti Ketentuan butir 9 yang diganti fakta, posisi sama dengan butir 9)
+- .sections[7].blocks[1].table.rows[0][1]: OK (label baru menggantikan rujukan Ketentuan butir 13 pada kalimat folder)
+- .sections[8].blocks[0].p: OK (label baru mengikuti Ketentuan butir 9 yang diganti fakta)

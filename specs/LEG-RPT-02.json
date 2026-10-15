@@ -391,7 +391,7 @@
      "p": "4. Di kolom No. di Register, tulis nomor baris Persyaratan di SNX-LEG-REG-03. Di kolom Persyaratan, tulis peraturan atau persyaratan beserta kewajiban bagi SINUX, persis seperti di register itu."
     },
     {
-     "p": "5. Di kolom Bukti yang Diperiksa, tulis nama dan lokasi Bukti. Isi kolom Status Kepatuhan dengan salah satu dari lima nilai di bagian Istilah. Di kolom Catatan dan Rujukan Temuan, tulis Rujukan Temuan sesuai Ketentuan butir 11 untuk status Sebagian Sesuai atau Tidak Sesuai, atau alasan status Tidak Berlaku atau Belum Diverifikasi (USULAN)."
+     "p": "5. Di kolom Bukti yang Diperiksa, tulis nama dan lokasi Bukti. Isi kolom Status Kepatuhan dengan salah satu dari lima nilai di bagian Istilah. Di kolom Catatan dan Rujukan Temuan, tulis Rujukan Temuan sesuai Ketentuan butir 11 untuk status Sebagian Sesuai atau Tidak Sesuai, atau alasan status Tidak Berlaku atau Belum Diverifikasi."
     },
     {
      "p": "6. Di Ringkasan per Bidang, isi tabel jumlah dengan banyaknya baris Daftar Evaluasi Persyaratan per Status Kepatuhan, dan tabel persentase dengan Cakupan Verifikasi serta Tingkat Kepatuhan. Hitung baris Seluruh Bidang dari semua baris Daftar Evaluasi Persyaratan, bukan dari rata-rata persentase setiap Bidang (USULAN)."
@@ -403,7 +403,7 @@
      "p": "8. Di Hasil Evaluasi, uraikan kondisi kepatuhan pada Kesimpulan Umum dari hasil pemeriksaan dan Bukti yang tersedia. Tingkat Kepatuhan yang Ditetapkan diisi Line Manager Legal dengan persentase baris Seluruh Bidang, setelah memeriksa Status Kepatuhan setiap Persyaratan."
     },
     {
-     "p": "9. Di Batasan Evaluasi, tulis Bukti yang masih diperlukan untuk Persyaratan berstatus Belum Diverifikasi, Bidang yang Tingkat Kepatuhannya dikosongkan beserta alasannya, dan Persyaratan yang masih Belum Diverifikasi di SNX-LEG-REG-03 dan tidak dihitung (USULAN)."
+     "p": "9. Di Batasan Evaluasi, tulis Bukti yang masih diperlukan untuk Persyaratan berstatus Belum Diverifikasi dan Bidang yang Tingkat Kepatuhannya dikosongkan beserta alasannya. Tulis juga Persyaratan yang masih Belum Diverifikasi di SNX-LEG-REG-03 dan tidak dihitung (USULAN)."
     },
     {
      "p": "10. Isi tabel Rekomendasi satu baris per Rekomendasi. Di kolom Pelaksana yang Disarankan, tulis nama peran atau jabatan; di kolom Rujukan, tulis nama Bidang atau No. di Register Persyaratan yang menjadi dasar."
@@ -947,7 +947,7 @@
        ],
        [
         "Bukti pemenuhan Persyaratan",
-        "Lokasi di kolom Bukti yang Diperiksa, dicatat Staff Legal. Bukti asli milik Penanggung Jawab Kegiatan di unit asalnya; salinannya di folder Google Drive Departemen Legal, jika ada, milik Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN) (USULAN).",
+        "Lokasi di kolom Bukti yang Diperiksa, dicatat Staff Legal. Bukti asli milik Penanggung Jawab Kegiatan di unit asalnya; salinannya di folder Google Drive Departemen Legal, jika ada, milik Line Manager Legal (SNX-LEG-SOP-03 butir 4.26, USULAN).",
         "Belum ditetapkan."
        ]
       ],

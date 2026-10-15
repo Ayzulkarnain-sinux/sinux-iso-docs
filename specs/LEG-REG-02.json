@@ -507,7 +507,7 @@
        ],
        [
         "Line Manager Legal",
-        "Memeriksa penilaian dan rekomendasi mitigasi, membahas dan mengeskalasi risiko ke Manajemen, serta melaporkan jumlah risiko setiap bulan (USULAN)."
+        "Memeriksa penilaian dan rekomendasi mitigasi (USULAN). Membahas dan mengeskalasi risiko ke Manajemen. Melaporkan jumlah risiko setiap bulan (USULAN)."
        ],
        [
         "Pemilik Risiko",
@@ -981,7 +981,7 @@
       "rows": [
        [
         "Register ini: tabel Identifikasi Risiko, Penilaian Risiko, Rencana Mitigasi, Pelaksanaan Mitigasi, Ringkasan Risiko, dan Riwayat Penilaian dan Status",
-        "Folder Google Drive Departemen Legal. Pemilik: Line Manager Legal, sesuai SNX-LEG-SOP-03. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN).",
+        "Folder Google Drive Departemen Legal (USULAN). Pemilik: Line Manager Legal, sesuai SNX-LEG-SOP-03. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
         "Belum ditetapkan. Usulan masa simpan register Departemen Legal disusun di SNX-LEG-SOP-03 (Kategori 6)."
        ],
        [

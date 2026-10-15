@@ -179,7 +179,7 @@
    "title": "Pengajuan dan Pencatatan Permintaan",
    "intro": [
     "Permintaan memuat sekurang-kurangnya: nama dan identitas para pihak; jenis dan tujuan kontrak; ruang lingkup transaksi atau layanan; nilai dan mekanisme pembayaran; jangka waktu yang direncanakan; tenggat yang diminta beserta alasannya; PIC Bisnis; dan draft, term sheet, proposal, atau dokumen pendukung lain yang tersedia.",
-    "Kanal resmi permintaan belum ditetapkan, sehingga langkah 1 memakai ticket GLPI (USULAN)."
+    "Kanal resmi permintaan belum ditetapkan. Langkah 1 memakai ticket GLPI (USULAN)."
    ],
    "steps": [
     [

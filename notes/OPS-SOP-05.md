@@ -192,3 +192,6 @@ nihil (build tidak mencatat selisih numbers atau usul_butir).
 - .definitions[9][1]: lengkap; ambang bagian 8 = "Saat downtime yang dihitung melewati 50% anggaran sebelum akhir bulan" (tanpa USULAN); "langkahnya ada di butir 6.4" hanya penunjuk, langkah tetap di 6.4.
 - .procedures[1].intro[0]: lengkap; memuat kedua batas bagian 8: "Pengumpulan data availability dan ticket | Paling lambat hari kerja ke-3 bulan berikutnya" (Lead NOC, tanpa USULAN) dan "Penyerahan data SLA layanan SOC | Paling lambat hari kerja ke-3 bulan berikutnya (USULAN ...)" (Lead SOC, label ikut).
 - .sla[0][2]: lengkap; butir 4.1 "Target standar availability yang dikomunikasikan adalah 99.9% per bulan" (tanpa USULAN).
+
+### W10 audit cakupan label
+- .procedures[1].intro[0]: OK (label tetap pada Service Hub; batas ke-3 tanpa label dan data SOC berlabel sesuai SLA bed1bb6)
