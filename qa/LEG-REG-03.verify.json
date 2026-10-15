@@ -1,0 +1,51 @@
+{
+  "verdict": "PASS",
+  "blocking": [],
+  "nonblocking": [
+    {
+      "lokasi": "Bagian Peran (paragraf penjelas) dan Dokumen Terkait baris SNX-HR-ORG-01",
+      "masalah": "Line Manager Legal dan Staff Legal disebut 'nama jabatan' menurut SNX-HR-ORG-01. Di HR-ORG-01 keduanya nama peran (dari SNX-LEG-SOP-01) yang dipasangkan ke jabatan Legal & Compliance (JA-08, JA-09) dengan status USULAN menunggu konfirmasi K-13. Pemasangan itu tidak ditandai USULAN di dokumen ini.",
+      "bukti": "Docx: 'Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01.' specs/HR-ORG-01.json Matriks Peran: 'Line Manager Legal | Legal & Compliance (JA-08) | Dokumen sumber SNX-LEG-SOP-01 | (USULAN), menunggu konfirmasi (K-13)'. Saran: tulis 'Nama peran ... mengikuti Matriks Peran SNX-HR-ORG-01 (USULAN)'."
+    },
+    {
+      "lokasi": "Rekaman dan Acuan ISO, tabel Rekaman baris 1",
+      "masalah": "Pemilik rekaman register = Staff Legal, sedangkan SNX-LEG-SOP-03 yang dirujuk untuk retensi Kategori 6 (register departemen Legal) menetapkan pemilik Line Manager Legal dan lokasi menurut butir 4.8. Dua dokumen Legal memberi pemilik berbeda.",
+      "bukti": "Docx: 'Folder Google Drive departemen Legal (Ketentuan butir 13). Pemilik: Staff Legal.' specs/LEG-SOP-03.json records: 'Kategori 6, dokumen internal Departemen Legal | Folder Google Drive departemen Legal (butir 4.8); pemilik Line Manager Legal'."
+    },
+    {
+      "lokasi": "Ketentuan Pengelolaan butir 7",
+      "masalah": "Pasif tanpa pelaku dan keadaan yang tidak didefinisikan: siapa yang menyatakan register selesai, dan register hidup tidak punya keadaan 'selesai' di tabel Status.",
+      "bukti": "'Line Manager Legal memeriksa kelengkapan dan keakuratan isi register sebelum register dinyatakan selesai (USULAN).'"
+    },
+    {
+      "lokasi": "Acuan ISO, baris ISO/IEC 27001:2022 Annex A 5.34",
+      "masalah": "Dua ejaan untuk satu hal dalam satu baris: 'perlindungan' dan 'Pelindungan'.",
+      "bukti": "'Annex A 5.34 Privasi dan perlindungan PII | Baris dengan Bidang Pelindungan Data Pribadi memuat persyaratan hukum pelindungan data pribadi.'"
+    },
+    {
+      "lokasi": "Istilah (Status), Peran, Isi Register, Dokumen Terkait, Acuan ISO",
+      "masalah": "Rumus kalimat 'berstatus (USULAN)' diulang lima kali sebagai kalimat tersendiri; terdengar templat. Label USULAN wajib, tetapi bisa ditempel langsung pada butirnya.",
+      "bukti": "'Keenam nilai berstatus (USULAN).'; '... mengikuti pola SNX-LEG-SOP-03 dan berstatus (USULAN).'; 'Nilai pada kolom Jenis Sumber, Bidang, dan Status berstatus (USULAN).'; 'Pemetaan tiap dokumen ke register ini berstatus (USULAN).'; 'Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan).'"
+    },
+    {
+      "lokasi": "Tujuan; Acuan ISO baris ISO 9001:2015 5.1.2",
+      "masalah": "Benda diberi kata kerja manusia dan pasif tanpa pelaku (ringan).",
+      "bukti": "'... dan daftar itu mengikuti perubahan peraturan serta perubahan kegiatan usaha.'; 'Register menjadi daftar persyaratan peraturan perundang-undangan yang berlaku, yang harus ditentukan dan dipenuhi.'"
+    },
+    {
+      "lokasi": "Isi Register; notes/LEG-REG-03.md Open items butir 2",
+      "masalah": "Kriteria Description terpenuhi secara struktur (kolom peraturan, persyaratan, relevansi ke kegiatan usaha dan operasional); daftar faktualnya kosong sesuai aturan T2. Dokumen saudara SNX-LEG-SOP-03 sudah menyebut UU Nomor 8 Tahun 1997 dan UU Nomor 27 Tahun 2022 sebagai peraturan yang relevan; open item 2 belum menunjuk keduanya sebagai calon baris pertama. HUMAN-VERDICT: apakah auditor menerima register berstruktur tanpa baris terisi pada audit perdana.",
+      "bukti": "Docx: 'Baris 1 sampai 10 disediakan dan semua sel data kosong.' specs/LEG-SOP-03.json related_documents: 'UU Nomor 8 Tahun 1997', 'UU Nomor 27 Tahun 2022'."
+    },
+    {
+      "lokasi": "Dokumen Terkait",
+      "masalah": "Register memuat Jenis Sumber Kewajiban Kontrak, tetapi SNX-LEG-SOP-02 Contract Review & Legal Approval tidak dirujuk; hanya SNX-LEG-SOP-01.",
+      "bukti": "Petunjuk butir 3: 'Kolom Jenis Sumber diisi Peraturan, Syarat Perizinan, atau Kewajiban Kontrak (USULAN).' Tabel Dokumen Terkait tidak memuat SNX-LEG-SOP-02."
+    },
+    {
+      "lokasi": "Pemeriksaan yang lulus (catatan, bukan cacat)",
+      "masalah": "Nihil temuan pada: batas keras §0 (Draft, Rev 00, tanggal efektif kosong, tanda tangan kosong, nol rujukan internal AI, nol em-dash/en-dash/kutip, nol nama pihak luar, nomor, atau tanggal); approval sesuai defaults LEG; Samuel Kristanto Utomo / President Director di Approval dan Direktur Utama di badan sesuai data_conflicts; footer RESTRICTED (Internal); peran Peran konsisten dengan nomor butir Ketentuan (Staff Legal 1, 4, 6, 8-11, 13; Line Manager Legal 5, 7; Penanggung Jawab Kegiatan 2, 3, 12); rujukan silang ke SOP-01 butir 4.24, SOP-03 Kategori 6, RPT-01 Rekomendasi butir 3, delapan area REG-02, FRM-03, REG-01 cocok dengan specs; deskripsi RPT-02 dan REG-04 cocok checklist; checklist baris 35 tanpa fileId sehingga tidak ada bagian context/audit, dijelaskan di notes bagian 5; lint generic pass.",
+      "bukti": "python3 -I tools/lint_doc.py <docx> generic: pass true, fails []; pemindaian regex pola §0 butir 6 dan tanda baca: nol hit."
+    }
+  ]
+}

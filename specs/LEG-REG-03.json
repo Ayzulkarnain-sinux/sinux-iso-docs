@@ -1,0 +1,769 @@
+{
+  "meta": {
+    "mode": "generic",
+    "doc_key": "LEG-REG-03",
+    "doc_type_cover": "REGISTER",
+    "doc_type_label": "Register",
+    "number": "SNX-LEG-REG-03",
+    "department": "Legal",
+    "title": "Legal & Regulatory Requirements Register",
+    "process_owner": "Line Manager Legal",
+    "classification": "RESTRICTED (Internal)",
+    "review_period": "YEARLY",
+    "status": "Draft",
+    "revision": "00",
+    "effective_date": "",
+    "revision_desc": "Draft awal untuk review dan pengesahan",
+    "approval": {
+      "prepared": "Staff Legal",
+      "reviewed": "Line Manager Legal",
+      "approved": "Samuel Kristanto Utomo / President Director"
+    }
+  },
+  "sections": [
+    {
+      "h": "Tujuan dan Lingkup",
+      "blocks": [
+        {
+          "h2": "Tujuan"
+        },
+        {
+          "p": "Register ini memuat daftar peraturan perundang-undangan dan persyaratan hukum yang relevan dengan kegiatan usaha dan operasional SINUX. Tiap baris memuat identitas peraturan atau persyaratan, kewajiban bagi SINUX, kegiatan atau proses yang terkena, penanggung jawabnya, dan statusnya."
+        },
+        {
+          "p": "Hasil yang dijaga: SINUX mengetahui peraturan yang mengikat kegiatannya, dan daftar itu mengikuti perubahan peraturan serta perubahan kegiatan usaha."
+        },
+        {
+          "h2": "Lingkup"
+        },
+        {
+          "p": "Register mencakup peraturan perundang-undangan yang berlaku bagi kegiatan usaha dan operasional SINUX, termasuk peraturan pelaksananya. Register juga mencakup persyaratan hukum yang bersumber dari syarat perizinan dan kewajiban dalam kontrak (USULAN)."
+        },
+        {
+          "p": "Register tidak memuat izin dan dokumen legalitas (SNX-LEG-REG-01), dokumen legal dan korporasi (SNX-LEG-REG-04), risiko hukum (SNX-LEG-REG-02), atau hasil evaluasi kepatuhan (SNX-LEG-RPT-02) (USULAN). Kontrak dengan pelanggan atau vendor diatur di SNX-LEG-SOP-01; register hanya memuat kewajiban dari kontrak itu yang mengikat SINUX."
+        }
+      ]
+    },
+    {
+      "h": "Istilah",
+      "blocks": [
+        {
+          "h2": "Istilah"
+        },
+        {
+          "table": {
+            "header": [
+              "Istilah",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "(USULAN)",
+                "Label untuk isi yang belum diputus secara tertulis oleh pimpinan SINUX."
+              ],
+              [
+                "Bidang",
+                "Kelompok peraturan menurut area risiko hukum di SNX-LEG-REG-02. Nilainya ada di Petunjuk Pengisian butir 6."
+              ],
+              [
+                "Jenis Sumber",
+                "Asal sebuah persyaratan hukum, yaitu Peraturan, Syarat Perizinan, atau Kewajiban Kontrak."
+              ],
+              [
+                "Kewajiban",
+                "Hal yang harus SINUX lakukan atau hindari menurut satu peraturan atau persyaratan hukum."
+              ],
+              [
+                "Kewajiban Kontrak",
+                "Hal yang harus SINUX lakukan atau hindari menurut kontrak dengan pelanggan, vendor, atau pihak lain."
+              ],
+              [
+                "Penanggung Jawab Kegiatan",
+                "Jabatan menurut SNX-HR-ORG-01 yang bertanggung jawab atas kegiatan atau proses yang terkena satu peraturan atau persyaratan (USULAN)."
+              ],
+              [
+                "Peninjauan",
+                "Pemeriksaan atas satu baris register: apakah peraturannya masih mengikat dan apakah isi barisnya sesuai teks terbaru."
+              ],
+              [
+                "Peraturan",
+                "Ketentuan tertulis yang diterbitkan lembaga negara atau instansi pemerintah."
+              ],
+              [
+                "Persyaratan hukum",
+                "Kewajiban yang mengikat SINUX secara hukum dan bersumber dari peraturan, syarat perizinan, atau kontrak."
+              ],
+              [
+                "Relevan",
+                "Mengikat salah satu kegiatan usaha atau proses operasional SINUX."
+              ],
+              [
+                "Syarat Perizinan",
+                "Kewajiban yang tercantum dalam sebuah izin yang SINUX miliki."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "h2": "Status"
+        },
+        {
+          "p": "Kolom Status memakai enam nilai berikut. Keenam nilai berstatus (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Status",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Berlaku",
+                "Peraturan masih mengikat dan relevan bagi SINUX, dan isi baris sesuai teks terbaru."
+              ],
+              [
+                "Perlu Diperbarui",
+                "Peraturan sudah diubah atau ada peraturan pelaksana baru, dan isi baris belum disesuaikan."
+              ],
+              [
+                "Dicabut",
+                "Peraturan sudah dicabut atau diganti peraturan lain."
+              ],
+              [
+                "Dalam Pemantauan",
+                "Peraturan atau perubahannya belum berlaku, tetapi dipantau karena dapat mengenai kegiatan SINUX."
+              ],
+              [
+                "Belum Diverifikasi",
+                "Pemeriksaan apakah peraturan masih mengikat dan relevan belum selesai."
+              ],
+              [
+                "Tidak Relevan untuk SINUX",
+                "Peraturan tidak mengikat kegiatan usaha maupun operasional SINUX menurut penetapan Line Manager Legal."
+              ]
+            ],
+            "widths_cm": [
+              5.0,
+              11.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Ketentuan Pengelolaan",
+      "blocks": [
+        {
+          "p": "1. Staff Legal mencatat satu baris di tabel Daftar Peraturan dan Persyaratan Hukum untuk tiap peraturan atau persyaratan hukum yang ia temukan atau yang disampaikan kepadanya."
+        },
+        {
+          "p": "2. Penanggung Jawab Kegiatan menyampaikan kepada Staff Legal peraturan atau persyaratan hukum yang ia ketahui mengikat kegiatannya."
+        },
+        {
+          "p": "3. Penanggung Jawab Kegiatan memberi tahu Staff Legal bila kegiatan usaha atau operasional yang ia kelola berubah."
+        },
+        {
+          "p": "4. Staff Legal mencatat kewajiban bagi SINUX, kegiatan atau proses yang terkena, dan Penanggung Jawab Kegiatan di tabel Relevansi dengan Kegiatan SINUX, dengan nomor baris yang sama."
+        },
+        {
+          "p": "5. Line Manager Legal menetapkan apakah tiap peraturan relevan bagi SINUX (USULAN)."
+        },
+        {
+          "p": "6. Staff Legal mencatat hasil penetapan itu dan perkembangan peraturan di kolom Status, memakai enam nilai pada bagian Istilah."
+        },
+        {
+          "p": "7. Line Manager Legal memeriksa kelengkapan dan keakuratan isi register sebelum register dinyatakan selesai (USULAN)."
+        },
+        {
+          "p": "8. Staff Legal memantau perubahan peraturan yang berdampak pada kegiatan usaha dan kewajiban SINUX (USULAN, SNX-LEG-RPT-01 Rekomendasi butir 3)."
+        },
+        {
+          "p": "9. Staff Legal meninjau register setiap bulan (USULAN) dan saat Penanggung Jawab Kegiatan memberi tahu perubahan kegiatan menurut butir 3."
+        },
+        {
+          "p": "10. Staff Legal memperbarui baris terkait saat peraturan diterbitkan, diubah, atau dicabut."
+        },
+        {
+          "p": "11. Staff Legal mencatat tiap perubahan, hasil peninjauan, dampaknya pada kegiatan SINUX, dan tindak lanjutnya di tabel Riwayat Perubahan dan Peninjauan."
+        },
+        {
+          "p": "12. Penanggung Jawab Kegiatan menjalankan tindak lanjut yang tercatat atas jabatannya di tabel Riwayat Perubahan dan Peninjauan (USULAN)."
+        },
+        {
+          "p": "13. Staff Legal menyimpan register dan salinan peraturan di folder Google Drive departemen Legal dengan klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01 (USULAN, SNX-LEG-SOP-01 butir 4.24)."
+        }
+      ]
+    },
+    {
+      "h": "Peran",
+      "blocks": [
+        {
+          "table": {
+            "header": [
+              "Peran",
+              "Tugas pada register ini"
+            ],
+            "rows": [
+              [
+                "Staff Legal",
+                "Mencatat peraturan, kewajiban, status, dan riwayat; memantau perubahan peraturan; meninjau dan memperbarui register; menyimpan register (Ketentuan butir 1, 4, 6, 8 sampai 11, 13)."
+              ],
+              [
+                "Line Manager Legal",
+                "Pemilik dokumen (USULAN). Menetapkan relevansi peraturan bagi SINUX dan memeriksa kelengkapan serta keakuratan register (Ketentuan butir 5 dan 7)."
+              ],
+              [
+                "Penanggung Jawab Kegiatan",
+                "Menyampaikan peraturan yang ia ketahui, memberi tahu perubahan kegiatan, dan menjalankan tindak lanjut (Ketentuan butir 2, 3, dan 12)."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              11.5
+            ]
+          }
+        },
+        {
+          "p": "Pembagian tugas antara Staff Legal dan Line Manager Legal mengikuti pola SNX-LEG-SOP-03 dan berstatus (USULAN). Nama jabatan Staff Legal dan Line Manager Legal mengikuti SNX-HR-ORG-01. Pembuat, pemeriksa, dan penyetuju dokumen ini tercantum di blok Approval pada halaman depan."
+        }
+      ]
+    },
+    {
+      "h": "Petunjuk Pengisian",
+      "blocks": [
+        {
+          "p": "1. Sel data pada tabel Isi Register kosong. Staff Legal mengisinya dari teks peraturan, izin, atau kontrak asalnya, satu baris untuk satu peraturan atau persyaratan."
+        },
+        {
+          "p": "2. Staff Legal menambah baris dengan nomor urut berikutnya pada tiga tabel pertama. Nomor baris sama di ketiganya."
+        },
+        {
+          "p": "3. Kolom Jenis Sumber diisi Peraturan, Syarat Perizinan, atau Kewajiban Kontrak (USULAN)."
+        },
+        {
+          "p": "4. Kolom Peraturan atau Persyaratan memuat jenis, nomor, tahun, dan judul peraturan persis seperti tertulis pada teksnya. Untuk Syarat Perizinan, kolom ini memuat nomor izin, dan untuk Kewajiban Kontrak, nomor kontrak."
+        },
+        {
+          "p": "5. Kolom Instansi atau Pihak Terkait memuat instansi yang menerbitkan peraturan atau izin, atau pihak lain dalam kontrak."
+        },
+        {
+          "p": "6. Kolom Bidang diisi salah satu area pada SNX-LEG-REG-02: Perizinan Berusaha, Kontrak Pelanggan, Kontrak Vendor, Pelindungan Data Pribadi, Kerahasiaan Informasi, Kepatuhan Regulasi, Kekayaan Intelektual, atau Ketenagakerjaan. Peraturan yang tidak cocok dengan area lain diisi Kepatuhan Regulasi (USULAN)."
+        },
+        {
+          "p": "7. Kolom Kewajiban bagi SINUX memuat hal yang harus SINUX lakukan atau hindari, ditulis menurut pasal atau bagian peraturan yang memuatnya. Kolom Kegiatan atau Proses yang Terkena memuat kegiatan usaha atau proses operasional SINUX yang terkena kewajiban itu, dengan kode dokumen SNX bila ada."
+        },
+        {
+          "p": "8. Kolom Penanggung Jawab Kegiatan memuat nama jabatan menurut SNX-HR-ORG-01, bukan nama orang (USULAN)."
+        },
+        {
+          "p": "9. Kolom Status memakai salah satu dari enam nilai pada bagian Istilah. Baris yang belum diperiksa diberi Belum Diverifikasi."
+        },
+        {
+          "p": "10. Kolom Tanggal Berlaku memuat tanggal peraturan mulai berlaku menurut teksnya. Kolom Peninjauan Terakhir dan Peninjauan Berikutnya memuat tanggal peninjauan menurut Ketentuan butir 9."
+        },
+        {
+          "p": "11. Kolom Lokasi Salinan memuat lokasi berkas salinan di folder Google Drive departemen Legal."
+        },
+        {
+          "p": "12. Staff Legal mengisi satu baris tabel Riwayat Perubahan dan Peninjauan untuk tiap perubahan peraturan dan tiap peninjauan, termasuk peninjauan yang tidak menemukan perubahan (Ketentuan butir 11). Kolom No. Baris memuat nomor baris pada tabel pertama."
+        }
+      ]
+    },
+    {
+      "h": "Isi Register",
+      "blocks": [
+        {
+          "p": "Baris 1 sampai 10 disediakan dan semua sel data kosong. Nilai pada kolom Jenis Sumber, Bidang, dan Status berstatus (USULAN)."
+        },
+        {
+          "h2": "Daftar Peraturan dan Persyaratan Hukum"
+        },
+        {
+          "table": {
+            "header": [
+              "No",
+              "Jenis Sumber",
+              "Peraturan atau Persyaratan",
+              "Instansi atau Pihak Terkait"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.0,
+              3.0,
+              8.0,
+              4.0
+            ]
+          }
+        },
+        {
+          "h2": "Relevansi dengan Kegiatan SINUX"
+        },
+        {
+          "table": {
+            "header": [
+              "No",
+              "Bidang",
+              "Kewajiban bagi SINUX",
+              "Kegiatan atau Proses yang Terkena",
+              "Penanggung Jawab Kegiatan"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.0,
+              2.8,
+              4.6,
+              4.4,
+              3.2
+            ]
+          }
+        },
+        {
+          "h2": "Status dan Peninjauan"
+        },
+        {
+          "table": {
+            "header": [
+              "No",
+              "Status",
+              "Tanggal Berlaku",
+              "Peninjauan Terakhir",
+              "Peninjauan Berikutnya",
+              "Lokasi Salinan"
+            ],
+            "rows": [
+              [
+                "1",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "4",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "5",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "6",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "7",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "8",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "9",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "10",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              1.0,
+              2.6,
+              2.6,
+              2.7,
+              2.9,
+              4.2
+            ]
+          }
+        },
+        {
+          "h2": "Riwayat Perubahan dan Peninjauan"
+        },
+        {
+          "table": {
+            "header": [
+              "Tanggal",
+              "No. Baris",
+              "Perubahan atau Hasil Peninjauan",
+              "Dampak dan Tindak Lanjut",
+              "Dicatat oleh"
+            ],
+            "rows": [
+              [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "widths_cm": [
+              2.4,
+              1.9,
+              4.2,
+              5.0,
+              2.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Dokumen Terkait",
+      "blocks": [
+        {
+          "p": "Pemetaan tiap dokumen ke register ini berstatus (USULAN)."
+        },
+        {
+          "table": {
+            "header": [
+              "Kode",
+              "Keterangan"
+            ],
+            "rows": [
+              [
+                "SNX-HR-ORG-01",
+                "Struktur Organisasi SINUX. Sumber nama jabatan Line Manager Legal dan Staff Legal, dan jabatan untuk kolom Penanggung Jawab Kegiatan."
+              ],
+              [
+                "SNX-ISMS-PRO-01",
+                "Information Classification & Handling. Sumber tingkat klasifikasi RESTRICTED (Internal)."
+              ],
+              [
+                "SNX-LEG-SOP-01",
+                "Legal Operational. Mengatur kontrak dengan pelanggan dan vendor. Butir 4.24 menunjuk folder Google Drive departemen Legal sebagai repositori (USULAN)."
+              ],
+              [
+                "SNX-LEG-SOP-03",
+                "Legal Document Control & Retention. Pola pembagian tugas Staff Legal mencatat dan Line Manager Legal menetapkan. Kategori 6 memuat usulan retensi dokumen internal departemen Legal."
+              ],
+              [
+                "SNX-LEG-REG-01",
+                "Company Licenses & Permits Register. Mencatat izin SINUX. Register ini mencatat syarat perizinan dan peraturan yang mendasarinya."
+              ],
+              [
+                "SNX-LEG-REG-02",
+                "Legal Risk Register. Sumber delapan area untuk kolom Bidang. Area Kepatuhan Regulasi memakai daftar di register ini."
+              ],
+              [
+                "SNX-LEG-REG-04",
+                "Company Legal Documents Register. Daftar dokumen legal dan korporasi perusahaan."
+              ],
+              [
+                "SNX-LEG-RPT-01",
+                "Legal Compliance Monitoring & Corrective Action Report. Kolom Dasar Hukum/Dokumen Acuan pada laporan itu merujuk register ini. Rekomendasi butir 3 memuat pemantauan perubahan peraturan."
+              ],
+              [
+                "SNX-LEG-RPT-02",
+                "Legal Compliance Evaluation Report. Laporan evaluasi tingkat kepatuhan terhadap peraturan dan persyaratan hukum; daftar di register ini menjadi acuannya."
+              ],
+              [
+                "SNX-LEG-FRM-03",
+                "Data Protection & Confidentiality Compliance Review. Daftar peraturan pelaksana pelindungan data pribadi dicatat di register ini."
+              ]
+            ],
+            "widths_cm": [
+              4.0,
+              12.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Rekaman dan Acuan ISO",
+      "blocks": [
+        {
+          "h2": "Rekaman"
+        },
+        {
+          "table": {
+            "header": [
+              "Rekaman",
+              "Lokasi dan pemilik",
+              "Retensi"
+            ],
+            "rows": [
+              [
+                "Register ini: tabel Daftar Peraturan dan Persyaratan Hukum, Relevansi dengan Kegiatan SINUX, Status dan Peninjauan, dan Riwayat Perubahan dan Peninjauan",
+                "Folder Google Drive departemen Legal (Ketentuan butir 13). Pemilik: Staff Legal. Klasifikasi RESTRICTED (Internal) menurut SNX-ISMS-PRO-01.",
+                "Belum ditetapkan. Usulan masa retensi dokumen internal departemen Legal ada di SNX-LEG-SOP-03 (Kategori 6)."
+              ],
+              [
+                "Salinan peraturan, izin, atau kontrak yang dirujuk register",
+                "Lokasi tertulis di kolom Lokasi Salinan. Pemilik: Staff Legal.",
+                "Belum ditetapkan."
+              ]
+            ],
+            "widths_cm": [
+              4.5,
+              7.0,
+              4.5
+            ]
+          }
+        },
+        {
+          "h2": "Acuan ISO"
+        },
+        {
+          "p": "Klausul berikut berstatus (USULAN, perlu konfirmasi konsultan)."
+        },
+        {
+          "table": {
+            "header": [
+              "Standar",
+              "Klausul",
+              "Hubungan dengan dokumen ini"
+            ],
+            "rows": [
+              [
+                "ISO 9001:2015",
+                "4.2 Memahami kebutuhan dan harapan pihak berkepentingan",
+                "Register memuat peraturan dan persyaratan hukum dari pihak berkepentingan yang relevan bagi SINUX."
+              ],
+              [
+                "ISO 9001:2015",
+                "5.1.2 Fokus pelanggan",
+                "Register menjadi daftar persyaratan peraturan perundang-undangan yang berlaku, yang harus ditentukan dan dipenuhi."
+              ],
+              [
+                "ISO 9001:2015",
+                "7.5.3 Pengendalian informasi terdokumentasi",
+                "Register disimpan di lokasi yang ditetapkan, dan perubahannya tercatat di Riwayat Perubahan dan Peninjauan."
+              ],
+              [
+                "ISO 9001:2015",
+                "8.2.2 Penentuan persyaratan untuk produk dan layanan",
+                "Kolom Kewajiban bagi SINUX dan Kegiatan atau Proses yang Terkena memuat persyaratan peraturan untuk produk dan layanan SINUX."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "4.2 Memahami kebutuhan dan harapan pihak berkepentingan",
+                "Register memuat persyaratan hukum dan peraturan yang relevan bagi sistem manajemen keamanan informasi."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.31 Persyaratan hukum, perundang-undangan, regulasi, dan kontrak",
+                "Register memuat persyaratan hukum, perundang-undangan, regulasi, dan kontrak yang teridentifikasi, dan isinya diperbarui lewat Peninjauan."
+              ],
+              [
+                "ISO/IEC 27001:2022",
+                "Annex A 5.34 Privasi dan perlindungan PII",
+                "Baris dengan Bidang Pelindungan Data Pribadi memuat persyaratan hukum pelindungan data pribadi."
+              ]
+            ],
+            "widths_cm": [
+              3.6,
+              5.4,
+              7.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h": "Kesimpulan",
+      "blocks": [
+        {
+          "p": "Register ini berstatus Draft dan baru berlaku sesudah Direktur Utama menandatangani blok Approval. Line Manager Legal meninjau dokumen ini setiap tahun, dan Staff Legal meninjau isinya menurut Ketentuan butir 9."
+        }
+      ]
+    }
+  ]
+}

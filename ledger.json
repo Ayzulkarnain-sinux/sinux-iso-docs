@@ -1819,8 +1819,10 @@
    "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 13,
-   "open_items": [],
-   "updated_at": "2026-10-14T23:58:54Z",
+   "open_items": [
+    "Sweep (a): rujuk SNX-FAT-SOP-06 (SOP Accounting) dan SNX-FAT-REG-01 (Billing & Collection Monitoring Register) dengan nomor sesudah W7b DONE; 6.11 dan tabel Rekaman saling menunjuk untuk lokasi bukti"
+   ],
+   "updated_at": "2026-10-14T23:58:56Z",
    "pen_agent": "a2e0550886843b182",
    "ooxml": "PASSED"
   },
@@ -1852,16 +1854,16 @@
    "dept": "LEG",
    "action": "T2",
    "mode": "generic",
-   "state": "LINT_PASS",
+   "state": "DONE",
    "number": "SNX-LEG-REG-03",
    "out_path": "out/04_Legal/SNX-LEG-REG-03 Legal & Regulatory Requirements Register (Rev00 DRAFT).docx",
    "sources": [],
    "lint_pass": true,
-   "verify_verdict": null,
+   "verify_verdict": "PASS",
    "loops": 0,
    "usulan_count": 20,
    "open_items": [],
-   "updated_at": "2026-10-14T23:57:48Z",
+   "updated_at": "2026-10-15T00:00:16Z",
    "pen_agent": "aa740b69850044e56",
    "ooxml": "PASSED"
   },
@@ -2510,7 +2512,10 @@
  "pending_tasks": [
   {
    "task": "Sinkronisasi rujukan nomor bagian SOP W2 di form W5 (mis. FRM-10 merujuk SOP-04 Bagian 4/6/7.5; FRM-01 merujuk SOP-01 Bagian 6.4) setelah semua SOP W2 DONE; perubahan rujukan saja, lint ulang, catat di ledger.",
-   "added": "2026-10-14T22:20Z"
+   "added": "2026-10-14T22:20Z",
+   "extra": [
+    "Sesudah W7b DONE: grep \"dalam peninjauan\" dan \"belum bernomor\" di specs/*.json untuk SOP Accounting, Billing & Collection Monitoring Register, Payment/FAT-FRM-02; ganti dengan nomor SNX-FAT-SOP-06, SNX-FAT-REG-01, SNX-FAT-FRM-02 (FAT-FRM-01 terkonfirmasi verifikator)."
+   ]
   },
   {
    "task": "Polish sweep frasa meta (dokumen sumber / di sumber / sumber tim / penyusun bila bukan peran form) di dokumen DONE: HR-JA-01, HR-ORG-01, OPS-FRM-03, OPS-FRM-06, OPS-FRM-10, OPS-PRC-01, OPS-SOP-03, dan dokumen W3+ yang terdeteksi. Ganti dengan kode/nama dokumen yang dirujuk; tanpa perubahan lain; bukti diff teks paragraf; lint ulang.",
