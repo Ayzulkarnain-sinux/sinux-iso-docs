@@ -1,0 +1,58 @@
+{
+ "key": "MKT-RPT-01",
+ "mode": "generic",
+ "out": "out/06_Marketing/SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2793,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 29,
+  "instr_items": 21,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2865,
+  "calque": [],
+  "lewat": 2,
+  "pointer": 0,
+  "usulan": 28,
+  "instr_items": 21,
+  "instr_role_start": 0,
+  "justified_cells": 21,
+  "tables_ge3_no_header": 3
+ },
+ "subst_diff": {
+  "numbers": {
+   "hilang": [
+    "8"
+   ],
+   "baru": []
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-MKT-RPT-01 Marketing Planning & Performance Review (Rev00 DRAFT).pdf",
+ "pages": 16,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Laporan",
+  "pages_bed1bb6": 16,
+  "pages_w10": 16,
+  "isi_page_bed1bb6": 11,
+  "isi_page_w10": 11
+ },
+ "pass": false,
+ "residu": {
+  "at": "2026-10-15T08:09Z",
+  "alasan": "G-4 gerbang 3: gagal kedua pemeriksa bahasa buta (r1 dan r2 FAIL: fakta yang menggantikan rujukan ke butir berlabel (USULAN) tampil tanpa label; perbaikan r1 oleh worker hanya menyasar kemunculan yang disebut pemeriksa). Spec, notes, dan out dikembalikan ke bed1bb6.",
+  "qa": [
+   "qa/MKT-RPT-01.w10.r1.json",
+   "qa/MKT-RPT-01.w10.r2.json"
+  ],
+  "percobaan_w10": "reports/w10/residu/MKT-RPT-01.w10-attempt.json"
+ }
+}

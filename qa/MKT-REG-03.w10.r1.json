@@ -1,0 +1,33 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "6.1 Cara Mengisi",
+   "masalah": "Rujukan '(butir 4.1 dan 4.3)' dihapus, lalu fakta waktu pencatatan dari butir 4.3 yang berlabel (USULAN) ditulis tanpa label.",
+   "kutipan": "6.1 Tulis satu baris di Tabel 1 untuk setiap lead pada saat lead diserahkan kepada Business Development.",
+   "usul": "6.1 Tulis satu baris di Tabel 1 untuk setiap lead pada saat lead diserahkan kepada Business Development (USULAN)."
+  },
+  {
+   "lokasi": "Tabel Butir yang dikecualikan, baris Kontak orang di lead",
+   "masalah": "Rujukan 'Aturannya ada di butir 4.15' diganti dengan isi butir 4.15 yang berlabel (USULAN), tanpa label.",
+   "kutipan": "Menjadi isi CRM. Register ini hanya memuat nama perusahaan atau institusi lead.",
+   "usul": "Menjadi isi CRM. Register ini hanya memuat nama perusahaan atau institusi lead (USULAN)."
+  }
+ ],
+ "nonblocking": [
+  "6.3: 'tanpa data kontak (butir 4.15)' menambah fakta usulan, tetapi rujukannya masih ada. Usul: tetap begitu, atau tambahkan (USULAN).",
+  "6.5, 6.9, 6.16, dan 6.17 kehilangan rujukan ke butir 4.13, 4.8, dan 4.11 yang berlabel (USULAN). Faktanya sudah ada sebelum W10.",
+  "4.10: 'VP Commercial menetapkan kriteria kualitas lead, tetapi kriteria itu belum ditetapkan' terdengar janggal karena 'menetapkan' lalu 'belum ditetapkan'. Usul: 'Kriteria kualitas lead ditetapkan VP Commercial dan sampai sekarang belum ada.'",
+  "Pola 'Hasil yang dijaga: ... Dengan begitu, ...' dipakai sama persis di REG-02 dan REG-03, sehingga terasa templated. Variasikan.",
+  "Judul kolom Tabel 4 'Tanggal Tinjauan VP Commercial' berubah menjadi 'Tanggal Review VP Commercial', konsisten dengan 6.17. PDF rapi: header berulang, sel rata kiri."
+ ],
+ "contoh_baik": [
+  "Butir dikecualikan 'Lead yang Business Development peroleh sendiri lewat prospecting' -> 'Lead yang diperoleh sendiri oleh Business Development melalui prospecting'"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "6.5 Cara Mengisi",
+   "masalah": "Rujukan (butir 4.13) dihapus. Aturan 'Tanpa campaign' berasal dari butir berlabel (USULAN), tetapi kini tampil tanpa label.",
+   "kutipan": "Tulis Tanpa campaign jika lead tidak berasal dari Aktivitas di register itu.",
+   "usul": "... jika lead tidak berasal dari Aktivitas di register itu (USULAN)."
+  },
+  {
+   "lokasi": "6.6 Cara Mengisi",
+   "masalah": "Rujukan (butir 4.4) dihapus. Tugas Brand & Marketing menulis rujukan CRM berlabel (USULAN) di 4.4, tetapi tampil tanpa label di sini.",
+   "kutipan": "6.6 Setelah Business Development mencatat lead di CRM, tulis nomor atau nama catatan lead itu di kolom Rujukan CRM.",
+   "usul": "Tambahkan (USULAN) di akhir 6.6."
+  },
+  {
+   "lokasi": "6.9 Cara Mengisi",
+   "masalah": "Rujukan (butir 4.8, berlabel USULAN) dihapus tanpa label pengganti.",
+   "kutipan": "6.9 Di kolom Feedback dari Business Development, tulis isi feedback dengan kata-kata Business Development.",
+   "usul": "Tambahkan (USULAN) di akhir 6.9."
+  },
+  {
+   "lokasi": "6.16 dan 6.17 Cara Mengisi",
+   "masalah": "Rujukan (butir 4.11, berlabel USULAN) dihapus. Penulisan tindak lanjut dan review VP Commercial kini tampil sebagai aturan final. Penyusun memberi label pada kasus sejenis di 6.1, jadi butir-butir ini tidak konsisten.",
+   "kutipan": "6.16 Di kolom Tindak Lanjut, tulis tindak lanjut atas hasil evaluasi. / 6.17 Di kolom Tanggal Review VP Commercial, tulis tanggal VP Commercial meninjau Tabel 3 dan Tabel 4.",
+   "usul": "Tambahkan (USULAN) di akhir 6.16 dan 6.17."
+  }
+ ],
+ "nonblocking": [
+  "4.16 merujuk 'tabel Record', sedangkan heading bagiannya tetap 'Rekaman'. Pertimbangkan 'tabel di bagian Rekaman'.",
+  "4.8: susunan 'menyampaikan kepada Brand & Marketing feedback atas lead yang sudah diserahkan' agak kaku. Usul: 'Business Development menyampaikan feedback kepada Brand & Marketing atas lead yang sudah diserahkan.'",
+  "Header kolom Tabel 4 berubah dari 'Tanggal Tinjauan VP Commercial' menjadi 'Tanggal Review VP Commercial'. Perubahan ini konsisten dengan 6.17 dan peta istilah §1.5. Pastikan sheet atau berkas turunan ikut berubah."
+ ],
+ "contoh_baik": [
+  "4.1 Satu baris Tabel 1 mencatat satu lead yang Brand & Marketing serahkan kepada Business Development -> ... satu lead yang diserahkan Brand & Marketing kepada Business Development."
+ ]
+}

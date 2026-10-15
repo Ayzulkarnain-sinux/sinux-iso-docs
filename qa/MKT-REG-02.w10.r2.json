@@ -1,0 +1,28 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "6.1 Cara Mengisi",
+   "masalah": "Rujukan (butir 4.1 dan 4.2) dihapus, padahal syarat waktu 'sebelum Aktivitas dijalankan' berasal dari butir 4.2 yang berlabel (USULAN). Fakta itu kini tampil tanpa label sehingga terbaca sebagai aturan final. Penyusun memberi label pada kasus sejenis di 6.2, jadi 6.1 tertinggal.",
+   "kutipan": "6.1 Tulis satu baris di Tabel 1 untuk setiap Aktivitas sebelum Aktivitas dijalankan.",
+   "usul": "6.1 Tulis satu baris di Tabel 1 untuk setiap Aktivitas sebelum Aktivitas dijalankan (USULAN)."
+  }
+ ],
+ "nonblocking": [
+  "4.11 merujuk 'tabel Record', sedangkan heading bagiannya tetap 'Rekaman'. Pertimbangkan 'tabel di bagian Rekaman' agar rujukan cocok dengan heading beku.",
+  "Tabel Peran, baris Brand & Marketing: 'Mengelola event, webinar, dan campaign sesuai uraian JA-06 butir 4.' kini terbaca sebagai tugas pada register ini. Sebelumnya kalimat itu hanya menunjuk sumber tugas. Usul: 'Tugas mengelola event, webinar, dan campaign tercantum di uraian JA-06 butir 4.'",
+  "4.5 dibuka dengan klausa panjang 'Sejalan dengan SNX-HR-JA-01, JA-06 wewenang 2 (...)'. Lebih wajar jika pelaku disebut di depan dan dasar JA-06 diletakkan di akhir.",
+  "'dari sana' dipakai dua kali (Batas dokumen dan tabel pengecualian), terasa samar. Lebih jelas: 'dari SNX-MKT-REG-01'.",
+  "6.7: label (USULAN) pada cara memisah nomor dengan koma dihapus. Ini instruksi mekanis sehingga boleh menurut STYLE §3.6, asalkan tercatat di notes. Pencatatannya tidak diperiksa karena pemeriksa dilarang membaca notes/.",
+  "PDF hal. 8: Tabel 1 terbelah, hanya baris 1 di halaman 8. Judul kolom tetap berulang di hal. 9."
+ ],
+ "contoh_baik": [
+  "Materi | Satu produk komunikasi yang SINUX pakai untuk kebutuhan eksternal -> Satu produk komunikasi yang dipakai SINUX untuk kebutuhan eksternal, misalnya satu brosur atau satu content social media."
+ ]
+}

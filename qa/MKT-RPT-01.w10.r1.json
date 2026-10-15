@@ -1,0 +1,32 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "Istilah, Status Capaian",
+   "masalah": "Rujukan 'Nilainya ada di tabel nilai di bawah' diganti dengan daftar nilainya. Tabel nilai itu berlabel 'Daftar nilai berikut belum diputuskan (USULAN)', tetapi daftar baru ini tanpa label.",
+   "kutipan": "Hasil perbandingan Realisasi dengan Target untuk satu KPI pada satu Bulan Review, yaitu Tercapai, Tidak Tercapai, atau Tidak Dinilai.",
+   "usul": "... yaitu Tercapai, Tidak Tercapai, atau Tidak Dinilai (USULAN)."
+  },
+  {
+   "lokasi": "Istilah, Hasil Pemeriksaan",
+   "masalah": "Kasusnya sama: rujukan ke tabel nilai yang berlabel (USULAN) diganti dengan nilainya tanpa label.",
+   "kutipan": "Penilaian atas sebuah Tindakan Perbaikan yang berstatus Selesai, yaitu Efektif atau Belum Efektif.",
+   "usul": "... yaitu Efektif atau Belum Efektif (USULAN)."
+  }
+ ],
+ "nonblocking": [
+  "Tabel Record, baris Marketing Plan: dua label digabung menjadi satu di akhir sel ('Folder Google Drive departemen Marketing. Pencatat: ... Pemilik: VP Commercial (USULAN).'). Ini sah menurut §3.5, tetapi cakupan label atas lokasi folder jadi kurang jelas.",
+  "4.8: kalimat yang tidak berlabel ('Realisasi dan Tanggal Review tidak diisi ...') dipindah ke depan kalimat berlabel. Arti tetap, urutan butir tetap.",
+  "6.8 dan 6.20 'Setelah itu, ... diperiksa VP Commercial, yang menandatangani baris Pemeriksa' sudah wajar. Variasi pasif di 6.15 dan 6.18 untuk peran lain sesuai §2.4.",
+  "PDF: tabel A7 Pengesahan Marketing Plan terbelah (baris Pemeriksa di halaman 13). Header berulang, tetapi sebaiknya tabel dijaga utuh. Tabel lain rapi dan sel rata kiri. Judul klausul ISO '10.2 Ketidaksesuaian dan tindakan korektif' tetap seperti versi bed1bb6 (benar)."
+ ],
+ "contoh_baik": [
+  "4.16 'Brand & Marketing menulis perubahan ... dan VP Commercial memeriksanya lagi' -> 'Perubahan atas Marketing Plan ditulis Brand & Marketing sebagai versi baru tabel A1 sampai A7 ..., lalu diperiksa lagi oleh VP Commercial.'"
+ ]
+}

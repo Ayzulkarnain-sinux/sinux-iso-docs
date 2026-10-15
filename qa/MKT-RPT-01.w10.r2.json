@@ -1,0 +1,26 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "4.8",
+   "masalah": "Kalimat larangan isi mundur adalah aturan final tanpa label. Di bed1bb6 kalimat ini ada di akhir butir, setelah label (USULAN) terakhir. Di W10 kalimat ini dipindah ke depan kalimat 'Aktivitas berstatus Dibatalkan ... (USULAN)', sehingga kini bisa terbaca masuk cakupan label dan berubah status dari aturan final menjadi usulan.",
+   "kutipan": "Realisasi dan Tanggal Review tidak diisi sebelum kejadiannya ada, dan tanggal mundur tidak dipakai. Aktivitas berstatus Dibatalkan dihitung terpisah dari yang belum Selesai: ... (USULAN).",
+   "usul": "Kembalikan kalimat 'Realisasi dan Tanggal Review tidak diisi sebelum kejadiannya ada, dan tanggal mundur tidak dipakai.' ke akhir butir 4.8, setelah '(USULAN)' terakhir."
+  }
+ ],
+ "nonblocking": [
+  "4.3: 'sesuai' dipakai dua kali beruntun ('sesuai Prioritas Penjualan, sesuai uraian jabatannya'). Usul: '... sesuai Prioritas Penjualan, mengikuti uraian jabatannya di SNX-HR-JA-01, JA-06 butir 1.'",
+  "Tabel Rekaman, baris Marketing Plan: label (USULAN) setelah 'Folder Google Drive departemen Marketing' dilebur menjadi satu label di akhir sel. Ini boleh menurut §3.5, tetapi label kini terbaca menempel pada 'Pemilik: VP Commercial'.",
+  "Istilah Status Capaian dan Hasil Pemeriksaan: kalimat penunjuk diganti daftar nilai berlabel (USULAN). Nilainya cocok dengan tabel nilai, yaitu Tercapai, Tidak Tercapai, dan Tidak Dinilai, serta Efektif dan Belum Efektif. Sudah benar.",
+  "PDF hal. 12-13: tabel A7 Pengesahan terbelah antarhalaman. Baris Pemeriksa terpisah, tetapi judul kolom berulang."
+ ],
+ "contoh_baik": [
+  "Status Capaian | ... Nilainya ada di tabel nilai di bawah. -> ... yaitu Tercapai, Tidak Tercapai, atau Tidak Dinilai (USULAN)."
+ ]
+}

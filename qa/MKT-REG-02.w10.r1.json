@@ -1,0 +1,27 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "6.2 Cara Mengisi",
+   "masalah": "Rujukan '(butir 4.3)', yang menunjuk butir berlabel (USULAN), diganti dengan faktanya ('dengan ejaan yang tetap') tanpa label. Aturan usulan jadi terbaca sebagai aturan tetap.",
+   "kutipan": "6.2 Di kolom Nama Aktivitas, tulis nama Aktivitas dengan ejaan yang tetap.",
+   "usul": "6.2 Di kolom Nama Aktivitas, tulis nama Aktivitas dengan ejaan yang tetap (USULAN)."
+  }
+ ],
+ "nonblocking": [
+  "Tabel Record, baris Register ini: 'Klasifikasi menurut butir 4.10' menjadi 'Klasifikasi: INTERNAL (butir 4.10)'. Nilai INTERNAL di butir 4.10 berlabel (USULAN), sedangkan label pengantar Rekaman hanya mencakup lokasi, pemilik, dan retensi. Rujukannya masih ada, jadi ini bukan pemblokir. Usul: tambahkan (USULAN) di akhir sel.",
+  "6.7: label (USULAN) pada pemisah koma dihapus. Ini sah sebagai instruksi format mekanis (§3.6), asal tercatat di notes. 6.1 juga kehilangan rujukan ke butir 4.2 (USULAN), tetapi faktanya sudah ada sebelum W10.",
+  "Tujuan: 'Dengan begitu, persetujuan dan validasi claim materi itu tercatat sebelum dipublikasikan.' Subjek 'dipublikasikan' kabur karena yang dipublikasikan adalah materinya. Usul: '... tercatat sebelum materi itu dipublikasikan.'",
+  "Batas dokumen: frasa 'di register ini' hilang dari 'merujuk nama Aktivitas melalui kolom Campaign Asal'. Usul: 'merujuk nama Aktivitas di register ini melalui kolom Campaign Asal'. Pembagian isi REG-01/02/03/RPT-01 tidak bergeser.",
+  "PDF: Tabel 1 terbelah setelah baris 1 (baris 2 sampai 10 pindah ke halaman 9). Header berulang, tetapi lebih rapi bila judul tabel dan baris awal dijaga tetap bersama (keep with next)."
+ ],
+ "contoh_baik": [
+  "4.8 'melapor kepada VP Commercial. VP Commercial memutuskan tindak lanjutnya' -> 'melapor kepada VP Commercial, yang memutuskan tindak lanjutnya'"
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "key": "MKT-REG-02",
+ "mode": "generic",
+ "out": "out/06_Marketing/SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 1706,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 12,
+  "instr_role_start": 0,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 1782,
+  "calque": [
+   "yang SINUX pakai"
+  ],
+  "lewat": 7,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 12,
+  "instr_role_start": 0,
+  "justified_cells": 7,
+  "tables_ge3_no_header": 12
+ },
+ "subst_diff": {
+  "usul_butir": {
+   "hilang": [
+    "6.7"
+   ],
+   "baru": [
+    "6.2"
+   ]
+  }
+ },
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-MKT-REG-02 Marketing Campaign & Activity Register (Rev00 DRAFT).pdf",
+ "pages": 11,
+ "blank": [],
+ "form": {
+  "isi_heading": "Isi Register",
+  "pages_bed1bb6": 11,
+  "pages_w10": 11,
+  "isi_page_bed1bb6": 8,
+  "isi_page_w10": 8
+ },
+ "pass": false,
+ "residu": {
+  "at": "2026-10-15T08:09Z",
+  "alasan": "G-4 gerbang 3: gagal kedua pemeriksa bahasa buta (r1 dan r2 FAIL: fakta yang menggantikan rujukan ke butir berlabel (USULAN) tampil tanpa label; perbaikan r1 oleh worker hanya menyasar kemunculan yang disebut pemeriksa). Spec, notes, dan out dikembalikan ke bed1bb6.",
+  "qa": [
+   "qa/MKT-REG-02.w10.r1.json",
+   "qa/MKT-REG-02.w10.r2.json"
+  ],
+  "percobaan_w10": "reports/w10/residu/MKT-REG-02.w10-attempt.json"
+ }
+}
