@@ -1,0 +1,51 @@
+{
+ "key": "LEG-FRM-02",
+ "mode": "generic",
+ "out": "out/04_Legal/SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).docx",
+ "fails": [],
+ "lint": "pass",
+ "ooxml": "PASSED",
+ "scan": {
+  "words": 2546,
+  "calque": [],
+  "lewat": 0,
+  "pointer": 0,
+  "usulan": 18,
+  "instr_items": 25,
+  "instr_role_start": 2,
+  "justified_cells": 0,
+  "tables_ge3_no_header": 0
+ },
+ "scan_bed1bb6": {
+  "words": 2656,
+  "calque": [],
+  "lewat": 3,
+  "pointer": 0,
+  "usulan": 17,
+  "instr_items": 25,
+  "instr_role_start": 25,
+  "justified_cells": 42,
+  "tables_ge3_no_header": 24
+ },
+ "subst_diff": {},
+ "pdf": "/tmp/claude-0/w10/pdf/new/SNX-LEG-FRM-02 Vendor - Supplier Contract Review Checklist (Rev00 DRAFT).pdf",
+ "pages": 19,
+ "blank": [],
+ "form": {
+  "isi_heading": "Informasi Kontrak",
+  "pages_bed1bb6": 19,
+  "pages_w10": 19,
+  "isi_page_bed1bb6": 8,
+  "isi_page_w10": 8
+ },
+ "pass": false,
+ "residu": {
+  "at": "2026-10-15T07:38Z",
+  "alasan": "G-4 gerbang 3: gagal kedua pemeriksa bahasa buta (r1 FAIL: kriteria butir 8.1 dan 1.3 Daftar Periksa hilang/menyempit saat dipadatkan; r2 FAIL: cakupan butir 8.1 masih menyempit). Spec, notes, dan out dikembalikan ke bed1bb6.",
+  "qa": [
+   "qa/LEG-FRM-02.w10.r1.json",
+   "qa/LEG-FRM-02.w10.r2.json"
+  ],
+  "percobaan_w10": "reports/w10/residu/LEG-FRM-02.w10-attempt.json"
+ }
+}

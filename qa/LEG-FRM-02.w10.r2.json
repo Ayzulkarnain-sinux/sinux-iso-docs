@@ -1,0 +1,23 @@
+{
+  "verdict": "FAIL",
+  "scores": {"a": 4, "b": 4, "c": 4, "d": 4},
+  "blocking": [
+    {
+      "lokasi": "Daftar Periksa Telaah Kontrak, butir 8.1 Hukum dan Penyelesaian Sengketa, kolom Hal yang Diperiksa",
+      "masalah": "Cakupan menyempit. Di bed1bb6 syarat 'SINUX dapat menerimanya' berlaku untuk ketiga hal (hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa). Di W10 anak kalimat 'yang dapat diterima SINUX' melekat pada frasa terakhir saja, sehingga keberterimaan hukum yang berlaku dan forum tidak lagi jelas ikut diperiksa.",
+      "kutipan": "bed1bb6: \"Kontrak mencantumkan hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa, dan SINUX dapat menerimanya.\" -> W10: \"Kontrak mencantumkan hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa yang dapat diterima SINUX.\"",
+      "usul": "Kontrak mencantumkan hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa, dan ketiganya dapat diterima SINUX."
+    }
+  ],
+  "nonblocking": [
+    "Kolom Hal yang Diperiksa di Daftar Periksa hanya sekitar 4 cm sehingga sel terbungkus 6 sampai 9 baris (mis. butir 2.5, 5.1). Status dan Risiko sekitar 2 cm masing-masing. Melebarkan Hal yang Diperiksa (mis. 5,5 cm) dengan mengambil dari Aspek yang Ditelaah dan Catatan/Tindak Lanjut memendekkan baris, jadi tidak menaikkan jumlah halaman (19) maupun halaman awal ISI (8).",
+    "Paragraf Petunjuk Pengisian di PDF halaman 8 masih rata kiri-kanan (spasi melebar pada butir 20 dan 25); tabel sudah rata kiri dan judul kolom berulang.",
+    "Butir Petunjuk 22 dan 23 beralih ke pasif ('Lembar diperiksa Line Manager Legal.') sedangkan 24 dan 25 tetap aktif dengan pelaku di depan; boleh menurut STYLE §2.4, tetapi gaya tiga butir terakhir tidak seragam.",
+    "Kalimat 'Kolom No memuat nomor butir yang dirujuk di bagian lain.' dihapus; dapat diterima sebagai kalimat penunjuk, pastikan tercatat di notes.",
+    "Definisi Telaah memakai 'Pemeriksaan kontrak', padahal peta wajib §1.5 mengganti 'peninjauan' menjadi review; pilihan ini tidak salah, tetapi definisi sekaligus menyebut 'review' sebagai nama di SOP induk sehingga dua istilah berdampingan.",
+    "Tabel Peran: rujukan butir Petunjuk (1 sampai 21, 5 dan 22 sampai 24, 2, 13, 25) dihapus dan 'dipetakan ke jabatan ... di SNX-HR-ORG-01' dipadatkan menjadi 'Jabatan: Legal & Compliance (JA-09)'. Kode jabatan tetap, sumber pemetaan masih tercantum di Dokumen Terkait. Tidak memblokir."
+  ],
+  "contoh_baik": [
+    "Petunjuk 4: \"Staff Legal menulis di ID Supplier kode supplier dari Daftar Supplier SNX-ISMS-FRM-03, bila Vendor/Pemasok tercatat di sana.\" -> \"Di ID Supplier, tulis kode supplier dari Daftar Supplier SNX-ISMS-FRM-03 jika Vendor/Pemasok tercatat di sana.\""
+  ]
+}

@@ -1,0 +1,34 @@
+{
+ "verdict": "FAIL",
+ "scores": {
+  "a": 4,
+  "b": 4,
+  "c": 4,
+  "d": 4
+ },
+ "blocking": [
+  {
+   "lokasi": "Daftar Periksa Telaah Kontrak, butir 8.1 Hukum dan Penyelesaian Sengketa, kolom Hal yang Diperiksa",
+   "masalah": "Kriteria pemeriksaan hilang: syarat bahwa kontrak MENCANTUMKAN hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa dihapus; tinggal syarat dapat diterima SINUX. Kontrak yang diam soal forum bisa diberi status Sesuai.",
+   "kutipan": "Sebelum: \"Kontrak mencantumkan hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa, dan SINUX dapat menerimanya.\" Sesudah: \"Hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa dapat diterima SINUX.\"",
+   "usul": "Kontrak mencantumkan hukum yang berlaku, forum, dan mekanisme penyelesaian sengketa yang dapat diterima SINUX."
+  },
+  {
+   "lokasi": "Daftar Periksa Telaah Kontrak, butir 1.3 Legalitas Vendor/Pemasok, kolom Hal yang Diperiksa",
+   "masalah": "Arti kriteria menyempit: \"izin yang relevan dengan kegiatan usahanya\" (semua izin terkait kegiatan, termasuk izin sektoral) menjadi \"izin usaha yang relevan\" (dapat dibaca hanya izin usaha).",
+   "kutipan": "Sebelum: \"Akta pendirian dan perubahan, NIB, serta izin yang relevan dengan kegiatan usahanya ada dan berlaku.\" Sesudah: \"Akta pendirian dan perubahan, NIB, dan izin usaha yang relevan tersedia dan berlaku.\"",
+   "usul": "Akta pendirian dan perubahan, NIB, serta izin yang relevan dengan kegiatan usahanya tersedia dan berlaku."
+  }
+ ],
+ "nonblocking": [
+  "Format kolom Hal yang Diperiksa tidak seragam: sebagian kalimat lengkap (1.1, 2.4, 3.2), sebagian frasa benda tanpa predikat (4.1, 4.4, 5.1-5.3, 6.1, 6.2, 6.4, 7.1-7.3). Arti tetap terbaca karena judul kolom, tetapi frasa benda sebaiknya diawali 'Kontrak mengatur ...' agar kriterianya tegas.",
+  "Lingkup: 'Telaah dilakukan berdasarkan ...' menjadi 'Kedalaman telaah disesuaikan dengan ...' menambah arti (kedalaman bervariasi). Usul: 'Telaah disesuaikan dengan jenis layanan, ...'.",
+  "Istilah Telaah: 'Review kontrak oleh Staff Legal ...; di SNX-LEG-SOP-02 disebut review.' berulang dan janggal. Usul: 'Pemeriksaan kontrak oleh Staff Legal dengan form ini sebelum penandatanganan; di SNX-LEG-SOP-02 disebut review.'",
+  "Istilah Lembar menambah frasa 'dan disimpan sebagai record (rekaman)'; tidak salah, tetapi substansi baru.",
+  "Kalimat 'Kolom No memuat nomor butir yang dirujuk di bagian lain.' dihapus; dapat diterima sebagai kalimat penunjuk.",
+  "PDF: kolom Catatan/Tindak Lanjut sempit (sekitar 2 cm) untuk tulisan tangan, dan Hal yang Diperiksa sempit sehingga baris tinggi dan halaman 11-15 menyisakan banyak ruang kosong. Rata kiri, judul kolom berulang (9.2 di hal. 16), tidak terpotong."
+ ],
+ "contoh_baik": [
+  "Petunjuk 4: 'Staff Legal menulis di ID Supplier kode supplier dari Daftar Supplier SNX-ISMS-FRM-03, bila ...' -> 'Di ID Supplier, tulis kode supplier dari Daftar Supplier SNX-ISMS-FRM-03 jika Vendor/Pemasok tercatat di sana.'"
+ ]
+}
