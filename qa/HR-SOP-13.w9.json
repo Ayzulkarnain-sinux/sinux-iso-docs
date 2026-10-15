@@ -1,0 +1,34 @@
+{
+ "key": "HR-SOP-13",
+ "cluster": "HR-SOP",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 1,
+ "putaran_perbaikan": 0,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Bagian 3, definisi Unit kerja: rujukan berubah dari 'kolom Unit pada Daftar Jabatan SNX-HR-ORG-01' menjadi 'kolom Unit pada SNX-HR-ORG-01'. Tujuannya tetap benar: SNX-HR-ORG-01 bagian 6 DAFTAR JABATAN punya kolom Unit berisi Commercial, Operation, Legal. Hanya kurang spesifik. Teksnya identik dengan definisi di specs/HR-SOP-12.json, jadi sesuai instruksi B2.",
+  "Bagian 9: dua baris lama tanpa label tidak diubah, yaitu 'Usulan tidak lengkap' dan 'Keputusan menolak usulan' ('Usulan baru untuk karyawan yang sama dimulai dari butir 6.1'). Bisa jadi isinya juga usulan. Tidak memblokir karena intro 6.1 menandai langkah 6.1-6.4 berstatus (USULAN) dan baris itu tidak tersentuh W9.",
+  "Butir 4.3 kini memuat pengecualian dua tingkat dengan kata ganti 'ia'. Kalimatnya bisa dipecah agar lebih mudah dibaca, misalnya mengganti 'ia' dengan 'Direktur Utama' (gaya, bukan cacat).",
+  "Pengecualian 4.3 (Direktur Utama mengusulkan sekaligus memutuskan bila ia Atasan Langsung Tujuan) adalah aturan baru berlabel (USULAN). Alasannya tercatat di notes/HR-SOP-13.md ## ISO-W9 dan pemutusnya Samuel/Aziz. Item ini perlu tetap masuk daftar open item.",
+  "Render terbaru ada di /tmp/claude-0/w9/render/HR-SOP-13.docx. Berkas out/02_HR/SNX-HR-SOP-13 Mutation (Rev00 DRAFT).docx masih versi sebelum W9 sampai langkah render atau commit orkestrator."
+ ],
+ "butir_dikerjakan": [
+  "A2: semua 31 kemunculan 'HR Manager' di spec diganti 'HR Lead' (jumlah di spec 4a40352 = 31, di spec sekarang = 0). Penggantian mencakup bagian Peran, PIC 6.2/6.3/6.4, SLA bagian 8, bagian 9, kesimpulan, simpul diagram e/f/h/o (dot render: 4 'HR Lead', 0 'HR Manager'), process_owner, dan blok Reviewed 'Aziz Priyo Widakdo / HR Lead'. SPV tidak ditambahkan karena dokumen tidak punya kolom tingkat jabatan (tercatat di notes).",
+  "A3: dokumen tidak menyebut atasan JA-03/JA-04 dan tidak memakainya sebagai contoh di definisi Tingkatan jabatan, jadi tidak ada perubahan. Hal ini tercatat di notes. Benar.",
+  "B2 (WAJIB): pertentangan bagian 9 dengan 4.3 hilang. 4.3 kini memuat pengecualian Direktur Utama beserta kontrol pengganti dari isi yang sudah ada (HR Lead di butir 6.2 dan 6.3), berlabel (USULAN). Bagian 9 baris 3 merujuk 'pengecualian di butir 4.3', dan rujukan itu ada dan isinya cocok. Alasan perbaikan 4.3 tercatat di notes.",
+  "B2 label bagian 9: (USULAN) dipasang pada kalimat pertama baris 3, kalimat HR Lead di baris 'Jabatan tujuan belum tercantum', dan kalimat HR Lead di baris 'Keputusan menyetujui dengan syarat'.",
+  "B2 NOC/SOC: definisi Unit kerja kini identik byte demi byte dengan specs/HR-SOP-12.json. Definisi Divisi dan kalimat batas tidak diubah.",
+  "Butir 5: kalimat 'Batas rotasi dan mutasi' identik di HR-SOP-10, 11, 12, 13 (md5 6986f721 di keempat spec). Penetap keputusan tetap Direktur Utama (4.6, 6.3).",
+  "Defaults v22: Prepared 'Sita Nadia Salsabila Widodo / HRGA Officer', Reviewed 'Aziz Priyo Widakdo / HR Lead', Approved 'Samuel Kristanto Utomo / President Director' persis prepared_reviewed.HR dan approved_by.all. Process Owner 'HR Lead' sesuai aturan process_owner (jabatan kolom reviewed HR).",
+  "Bahasa pada kalimat yang berubah: 0 em-dash, 0 en-dash, 0 frasa proses penyusunan, 0 rujukan AI internal, tidak ada pasif baru tanpa pelaku. Lint sop: fails [] (warn 63 USULAN). blankscan: ok."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Teks sesudah, diekstrak dari /tmp/claude-0/w9/render/HR-SOP-13.docx: 'HR Manager' 0 di document.xml, 0 di dot diagram, dan 0 di specs/HR-SOP-13.json (sebelumnya 31). 'HR Lead' 28 di docx ditambah 4 di diagram. 'Divisi Legal' 0 (dokumen HR, aturan Legal tidak berlaku). Em-dash 0, en-dash 0. 'Aziz Priyo Widakdo / HR Lead' 1.",
+ "riwayat": [
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}
