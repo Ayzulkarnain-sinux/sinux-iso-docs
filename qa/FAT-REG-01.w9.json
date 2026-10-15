@@ -1,0 +1,47 @@
+{
+ "key": "FAT-REG-01",
+ "cluster": "FAT-X",
+ "pemeriksa": "pemeriksa perubahan buta opus, ISO-W9",
+ "putaran_pemeriksaan": 2,
+ "putaran_perbaikan": 1,
+ "verdict": "PASS",
+ "blocking": [],
+ "nonblocking": [
+  "Tata letak Kontrol Dokumen: definisi Finance Lead ada di B16 (baris tanpa label, tepat di bawah Tujuan A15) dan definisi Finance Staff ada di B23, jadi dua definisi terpisah di dua area. B23 sampai B26 tidak punya judul, sehingga definisi Finance Staff dan catatan Days overdue tampak sebagai satu blok. Tidak ada label yang tertimpa. Perlu dicek manusia.",
+  "Catatan USULAN Days overdue dipecah ke B24, B25, dan B26 menurut kalimat. Label (USULAN) hanya ada di B26, jadi B24 dan B25 kalau dibaca sendiri tampak sebagai fakta. Teksnya tetap persis sama dengan instruksi bila disambung.",
+  "B16 dan B23 sampai B26 tidak dibungkus teks (wrap None) dan tinggi barisnya default atau 15. Teks satu baris (sekitar 120 sampai 127 karakter) meluber ke kolom C sampai E yang kosong (lebar B sampai E kira-kira 136). Di layar teks terlihat. Apakah terpotong saat dicetak atau diekspor ke PDF belum diperiksa (HUMAN-VERDICT).",
+  "Garis border sisa swatch legenda di A25 sampai A27 kini bersebelahan dengan teks catatan B25 dan B26. Ini kosmetik dan LEAD sudah memutus untuk dibiarkan.",
+  "Notes FAT-REG-01 tidak konsisten: Open item 2 ('baris 7 berisi nilai nyata') dan Asumsi 6 ('Baris AP Aging 7 ... dipertahankan') masih menyatakan baris 7 AP dipertahankan, padahal sesudah A10 baris itu dikosongkan. Statusnya tidak diperbarui. Hanya notes yang terdampak, makna dokumen tidak.",
+  "J5 sampai J1000 di AR Aging tidak punya border kiri, sedangkan K sampai M punya. Ini hasil copy_row_style dari baris 5. Kosmetik."
+ ],
+ "butir_dikerjakan": [
+  "A6: Kontrol Dokumen B37 (Diperiksa oleh) = 'Amirull Yusuf Zulkarnain / Direktur'. B36 Disusun tetap 'Finance Staff', B10 Pemilik tetap 'Finance Lead', B38 dan B11 = 'Samuel Kristanto Utomo / President Director'. Semua sesuai defaults v22 prepared_reviewed.FAT dan approved_by.all.",
+  "A6: definisi Finance Lead (B16) dan Finance Staff (B23) persis sama dengan teks instruksi, sejalan dengan data_conflicts v22 'Peran Finance Lead dan Finance Staff', dan tidak menimpa label.",
+  "A10: extend_validation AR Aging K5:K6 menjadi K5:K1000 dan L5:L6 menjadi L5:L1000, persis instruksi. Di render, DV-nya L5:L1000 dan K5:K1000.",
+  "A10: copy_row_style AR Aging dari baris 5 ke rows [7, 1000], persis. Di render, border dan number format terbawa sampai baris 1000.",
+  "A10: fill_formula AR Aging!J rows [5, 1000] dengan rumus =IF(D{r}=\"\", \"\", TODAY() - D{r}), persis. Di render ada 996 rumus (J5 sampai J1000).",
+  "A10: clear_rows AP Aging diubah menjadi [6, 7]. Isi A7, C7, D7, F7 sampai I7, dan L7 ('PPN August') hilang. Rumus J7, K7, dan M7 tetap.",
+  "A10: Status AR (kolom L) tetap dropdown dengan 0 rumus.",
+  "A10: catatan USULAN Days overdue ditambahkan di B24 sampai B26 dengan teks persis instruksi (dipecah per kalimat). Isinya cocok dengan rumus AP J ('TODAY() - C', C = Invoice date) dan AR J ('TODAY() - D', D = Due date).",
+  "Notes: bagian ISO-W9 berisi tabel perubahan. Open item 3 ditutup W9 (A10), 9 ditutup W9 (kosmetik, keputusan LEAD), 10 ditutup W9 (keterbatasan tata letak, hubungan ke SNX-FAT-SOP-01 di notes), dan 8 diubah W9. Baris open item lama tidak dihapus.",
+  "Tidak ada perubahan lain di diff teks selain butir di atas. Tidak ada rujukan silang yang diubah atau ditambah. Tidak ada fakta baru di luar teks instruksi, defaults v22, dan struktur rumus yang sudah ada."
+ ],
+ "butir_tidak_dikerjakan": [],
+ "grep": "Grep pada teks render /tmp/claude-0/w9/render/FAT-REG-01.xlsx (semua sheet) memberi hasil berikut. \"HR Manager\" 0 dan \"Divisi Legal\" 0, meskipun ini dokumen FAT, bukan HR atau Legal, jadi aturan langkah 7 tidak mengikat. Em-dash 0. Frasa proses penyusunan (dokumen sumber, sumber tim, di sumber, draf ini, belum berdokumen, penyusun) semuanya 0. Rujukan AI internal: \"Claude\" 0, dan satu-satunya kemunculan \"AI\" berasal dari kata \"TOTAL UNPAID\" di AP Aging A4, bukan rujukan AI.",
+ "riwayat": [
+  {
+   "verdict": "FAIL",
+   "blocking": [
+    {
+     "lokasi": "specs/FAT-REG-01.patch.json set \"Kontrol Dokumen!B32\" (render Kontrol Dokumen B32)",
+     "masalah": "Catatan USULAN Days overdue (A10) ditaruh di dalam tabel Riwayat revisi: baris 32 adalah baris kedua tabel itu (A32:E32 bergaris tblr, tinggi 57,45, wrap), dan B32 berada tepat di bawah header B30 \"Tanggal\". Akibatnya tabel riwayat revisi sekarang memuat baris revisi semu tanpa nomor revisi, penyusun, dan status, dengan isi kolom Tanggal berupa catatan rumus. Makna rekaman riwayat revisi (dokumen terkendali) berubah di luar instruksi. Instruksi hanya meminta sel kosong yang tidak menimpa label; sel kosong tanpa garis di luar tabel tersedia (B24, B28, B33). Perbaikan minimal: pindahkan teks dari B32 ke B24 atau B28 (beri wrap/tinggi baris agar muat) dan perbarui baris B32 di tabel ISO-W9 notes.",
+     "bukti": "Render /tmp/claude-0/w9/render/FAT-REG-01.xlsx: A30..E30 = Revisi | Tanggal | Uraian perubahan | Disusun | Disetujui (fill 1F3A5F, bergaris); A31..E31 = baris revisi 00; row 32 h=57.45, A32..E32 border tblr wrap=True, B32 = \"Days overdue = TODAY() dikurangi Due date, ...\" (261 karakter), A32/C32/D32/E32 kosong. Template donor out/07_Ops/SNX-OPS-FRM-01 menunjukkan baris 32 sebagai baris kosong tabel revisi yang sama. B24..B28 dan B33 kosong tanpa border. notes/FAT-REG-01.md ISO-W9 sendiri menulis \"B32 memakai baris riwayat revisi yang tinggi (57,45)\"."
+    }
+   ]
+  },
+  {
+   "verdict": "PASS",
+   "blocking": []
+  }
+ ]
+}

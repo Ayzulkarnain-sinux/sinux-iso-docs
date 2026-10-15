@@ -6,7 +6,8 @@
       6
     ],
     "AP Aging": [
-      6
+      6,
+      7
     ],
     "Kontrol Dokumen": [
       25,
@@ -42,9 +43,38 @@
     "Kontrol Dokumen!D31": "Finance Staff",
     "Kontrol Dokumen!E31": "Menunggu",
     "Kontrol Dokumen!B36": "Finance Staff",
-    "Kontrol Dokumen!B37": "Finance Lead",
+    "Kontrol Dokumen!B37": "Amirull Yusuf Zulkarnain / Direktur",
     "Kontrol Dokumen!B38": "Samuel Kristanto Utomo / President Director",
     "AR Aging!A2": "Dalam IDR. Finance Staff memantau klien Gov / SOE yang lambat membayar. PPN = DPP x 12% (USULAN). Amount (IDR): Enterprise = DPP + PPN - PPh 23; Gov / SOE = DPP - PPN - PPh 22 (menunggu konfirmasi FAT).",
-    "AP Aging!A2": "All amounts IDR."
+    "AP Aging!A2": "All amounts IDR.",
+    "Kontrol Dokumen!B16": "Finance Lead: peran pemeriksa dan penyetuju FAT; jabatannya belum terisi, dan sampai terisi peran ini dijalankan Direktur (USULAN).",
+    "Kontrol Dokumen!B23": "Finance Staff: peran pelaksana yang dijalankan pemegang jabatan Finance (JA-10) dan Accounting & Tax (JA-11) (USULAN).",
+    "Kontrol Dokumen!B24": "Days overdue = TODAY() dikurangi Due date, mengikuti pola rumus kolom Aging di AP Aging (AP memakai Invoice date).",
+    "Kontrol Dokumen!B25": "Nilai negatif berarti belum jatuh tempo; baris yang sudah dibayar tetap terhitung.",
+    "Kontrol Dokumen!B26": "Acuan tanggal dan perlakuan invoice lunas diputus FAT (USULAN)."
+  },
+  "extend_validation": {
+    "AR Aging": {
+      "K5:K6": "K5:K1000",
+      "L5:L6": "L5:L1000"
+    }
+  },
+  "copy_row_style": {
+    "AR Aging": {
+      "from": 5,
+      "rows": [
+        7,
+        1000
+      ]
+    }
+  },
+  "fill_formula": {
+    "AR Aging!J": {
+      "rows": [
+        5,
+        1000
+      ],
+      "formula": "=IF(D{r}=\"\", \"\", TODAY() - D{r})"
+    }
   }
 }

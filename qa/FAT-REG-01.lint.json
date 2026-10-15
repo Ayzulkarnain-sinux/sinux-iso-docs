@@ -1,1 +1,1 @@
-{"pass": true, "fails": [], "features_before": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "AR Aging": [0, 0, 2, 0, 0], "AP Aging": [0, 0, 2, 0, 8]}, "features_after": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "AR Aging": [0, 0, 2, 0, 0], "AP Aging": [0, 0, 2, 0, 8]}}
+{"pass": true, "fails": [], "features_before": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "AR Aging": [0, 0, 2, 0, 0], "AP Aging": [0, 0, 2, 0, 8]}, "features_after": {"Kontrol Dokumen": [0, 0, 0, 0, 0], "AR Aging": [0, 0, 2, 0, 996], "AP Aging": [0, 0, 2, 0, 8]}}
